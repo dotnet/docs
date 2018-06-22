@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmSchemaAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmSchemaAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EdmSchemaAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EdmSchemaAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmSchemaAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyGuid As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EdmSchemaAttribute(System::String ^ assemblyGuid);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.DataClasses.EdmSchemaAttribute : string -&gt; System.Data.Objects.DataClasses.EdmSchemaAttribute" Usage="new System.Data.Objects.DataClasses.EdmSchemaAttribute assemblyGuid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

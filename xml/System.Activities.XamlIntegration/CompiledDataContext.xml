@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.CompiledDataContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CompiledDataContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompiledDataContext abstract" />
+  <TypeSignature Language="F#" Value="type CompiledDataContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.#ctor(System.Collections.Generic.IList{System.Activities.Location})" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (locations As IList(Of Location))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CompiledDataContext(System::Collections::Generic::IList&lt;System::Activities::Location ^&gt; ^ locations);" />
+      <MemberSignature Language="F#" Value="new System.Activities.XamlIntegration.CompiledDataContext : System.Collections.Generic.IList&lt;System.Activities.Location&gt; -&gt; System.Activities.XamlIntegration.CompiledDataContext" Usage="new System.Activities.XamlIntegration.CompiledDataContext locations" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.#ctor(System.Collections.Generic.IList{System.Activities.LocationReference})" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (locationReferences As IList(Of LocationReference))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CompiledDataContext(System::Collections::Generic::IList&lt;System::Activities::LocationReference ^&gt; ^ locationReferences);" />
+      <MemberSignature Language="F#" Value="new System.Activities.XamlIntegration.CompiledDataContext : System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; -&gt; System.Activities.XamlIntegration.CompiledDataContext" Usage="new System.Activities.XamlIntegration.CompiledDataContext locationReferences" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locationReferences, class System.Activities.ActivityContext activityContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.#ctor(System.Collections.Generic.IList{System.Activities.LocationReference},System.Activities.ActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CompiledDataContext(System::Collections::Generic::IList&lt;System::Activities::LocationReference ^&gt; ^ locationReferences, System::Activities::ActivityContext ^ activityContext);" />
+      <MemberSignature Language="F#" Value="new System.Activities.XamlIntegration.CompiledDataContext : System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; * System.Activities.ActivityContext -&gt; System.Activities.XamlIntegration.CompiledDataContext" Usage="new System.Activities.XamlIntegration.CompiledDataContext (locationReferences, activityContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Activities.XamlIntegration.CompiledDataContext[] GetCompiledDataContextCache(object dataContextActivities, class System.Activities.ActivityContext activityContext, class System.Activities.Activity compiledRoot, bool forImplementation, int32 compiledDataContextCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetCompiledDataContextCache(System.Object,System.Activities.ActivityContext,System.Activities.Activity,System.Boolean,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static cli::array &lt;System::Activities::XamlIntegration::CompiledDataContext ^&gt; ^ GetCompiledDataContextCache(System::Object ^ dataContextActivities, System::Activities::ActivityContext ^ activityContext, System::Activities::Activity ^ compiledRoot, bool forImplementation, int compiledDataContextCount);" />
+      <MemberSignature Language="F#" Value="static member GetCompiledDataContextCache : obj * System.Activities.ActivityContext * System.Activities.Activity * bool * int -&gt; System.Activities.XamlIntegration.CompiledDataContext[]" Usage="System.Activities.XamlIntegration.CompiledDataContext.GetCompiledDataContextCache (dataContextActivities, activityContext, compiledRoot, forImplementation, compiledDataContextCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetDataContextActivities(System.Activities.Activity,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetDataContextActivities (compiledRoot As Activity, forImplementation As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Object ^ GetDataContextActivities(System::Activities::Activity ^ compiledRoot, bool forImplementation);" />
+      <MemberSignature Language="F#" Value="static member GetDataContextActivities : System.Activities.Activity * bool -&gt; obj" Usage="System.Activities.XamlIntegration.CompiledDataContext.GetDataContextActivities (compiledRoot, forImplementation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetLocation``1(System.Func{``0},System.Action{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocation(Of T) (getMethod As Func(Of T), setMethod As Action(Of T)) As Location(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(Func&lt;T&gt; ^ getMethod, Action&lt;T&gt; ^ setMethod);" />
+      <MemberSignature Language="F#" Value="member this.GetLocation : Func&lt;'T&gt; * Action&lt;'T&gt; -&gt; System.Activities.Location&lt;'T&gt;" Usage="compiledDataContext.GetLocation (getMethod, setMethod)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!!T&gt; GetLocation&lt;T&gt;(class System.Func`1&lt;!!T&gt; getMethod, class System.Action`1&lt;!!T&gt; setMethod, int32 expressionId, class System.Activities.Activity compiledRootActivity, class System.Activities.ActivityContext activityContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetLocation``1(System.Func{``0},System.Action{``0},System.Int32,System.Activities.Activity,System.Activities.ActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(Func&lt;T&gt; ^ getMethod, Action&lt;T&gt; ^ setMethod, int expressionId, System::Activities::Activity ^ compiledRootActivity, System::Activities::ActivityContext ^ activityContext);" />
+      <MemberSignature Language="F#" Value="member this.GetLocation : Func&lt;'T&gt; * Action&lt;'T&gt; * int * System.Activities.Activity * System.Activities.ActivityContext -&gt; System.Activities.Location&lt;'T&gt;" Usage="compiledDataContext.GetLocation (getMethod, setMethod, expressionId, compiledRootActivity, activityContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -226,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetValueTypeValues" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetValueTypeValues ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetValueTypeValues();" />
+      <MemberSignature Language="F#" Value="abstract member GetValueTypeValues : unit -&gt; unit&#xA;override this.GetValueTypeValues : unit -&gt; unit" Usage="compiledDataContext.GetValueTypeValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -246,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetVariableValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetVariableValue (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetVariableValue(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetVariableValue : int -&gt; obj" Usage="compiledDataContext.GetVariableValue index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -270,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.RewriteExpressionTree(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Protected Function RewriteExpressionTree (originalExpression As Expression) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Linq::Expressions::Expression ^ RewriteExpressionTree(System::Linq::Expressions::Expression ^ originalExpression);" />
+      <MemberSignature Language="F#" Value="member this.RewriteExpressionTree : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.Expression" Usage="compiledDataContext.RewriteExpressionTree originalExpression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -294,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.SetValueTypeValues" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetValueTypeValues ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetValueTypeValues();" />
+      <MemberSignature Language="F#" Value="abstract member SetValueTypeValues : unit -&gt; unit&#xA;override this.SetValueTypeValues : unit -&gt; unit" Usage="compiledDataContext.SetValueTypeValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -314,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.SetVariableValue(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetVariableValue (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetVariableValue(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetVariableValue : int * obj -&gt; unit" Usage="compiledDataContext.SetVariableValue (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

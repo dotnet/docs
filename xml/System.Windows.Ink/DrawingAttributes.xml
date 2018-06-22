@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.DrawingAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Class DrawingAttributes&#xA;Implements INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class DrawingAttributes : System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type DrawingAttributes = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPropertyData (propertyDataId As Guid, propertyData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPropertyData(Guid propertyDataId, System::Object ^ propertyData);" />
+      <MemberSignature Language="F#" Value="member this.AddPropertyData : Guid * obj -&gt; unit" Usage="drawingAttributes.AddPropertyData (propertyDataId, propertyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Ink.DrawingAttributes.AttributeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event AttributeChanged As PropertyDataChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::PropertyDataChangedEventHandler ^ AttributeChanged;" />
+      <MemberSignature Language="F#" Value="member this.AttributeChanged : System.Windows.Ink.PropertyDataChangedEventHandler " Usage="member this.AttributeChanged : System.Windows.Ink.PropertyDataChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As DrawingAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Ink::DrawingAttributes ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Windows.Ink.DrawingAttributes&#xA;override this.Clone : unit -&gt; System.Windows.Ink.DrawingAttributes" Usage="drawingAttributes.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color Color { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Windows.Media.Color with get, set" Usage="System.Windows.Ink.DrawingAttributes.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.ContainsPropertyData(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsPropertyData (propertyDataId As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsPropertyData(Guid propertyDataId);" />
+      <MemberSignature Language="F#" Value="member this.ContainsPropertyData : Guid -&gt; bool" Usage="drawingAttributes.ContainsPropertyData propertyDataId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="drawingAttributes.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -334,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.FitToCurve" />
       <MemberSignature Language="VB.NET" Value="Public Property FitToCurve As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FitToCurve { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FitToCurve : bool with get, set" Usage="System.Windows.Ink.DrawingAttributes.FitToCurve" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -373,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="drawingAttributes.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -395,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.GetPropertyData(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyData (propertyDataId As Guid) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyData(Guid propertyDataId);" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyData : Guid -&gt; obj" Usage="drawingAttributes.GetPropertyData propertyDataId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -437,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.GetPropertyDataIds" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyDataIds () As Guid()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Guid&gt; ^ GetPropertyDataIds();" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyDataIds : unit -&gt; Guid[]" Usage="drawingAttributes.GetPropertyDataIds " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -474,6 +485,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double with get, set" Usage="System.Windows.Ink.DrawingAttributes.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -520,6 +532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.IgnorePressure" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnorePressure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnorePressure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnorePressure : bool with get, set" Usage="System.Windows.Ink.DrawingAttributes.IgnorePressure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -559,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.IsHighlighter" />
       <MemberSignature Language="VB.NET" Value="Public Property IsHighlighter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHighlighter { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsHighlighter : bool with get, set" Usage="System.Windows.Ink.DrawingAttributes.IsHighlighter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -599,6 +613,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributes.MaxHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxHeight As Double " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly double MaxHeight;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxHeight : double" Usage="System.Windows.Ink.DrawingAttributes.MaxHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -633,6 +648,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributes.MaxWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxWidth As Double " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly double MaxWidth;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxWidth : double" Usage="System.Windows.Ink.DrawingAttributes.MaxWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -667,6 +683,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributes.MinHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinHeight As Double " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly double MinHeight;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinHeight : double" Usage="System.Windows.Ink.DrawingAttributes.MinHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -701,6 +718,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributes.MinWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinWidth As Double " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly double MinWidth;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinWidth : double" Usage="System.Windows.Ink.DrawingAttributes.MinWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -735,6 +753,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.OnAttributeChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAttributeChanged (e As PropertyDataChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAttributeChanged(System::Windows::Ink::PropertyDataChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAttributeChanged : System.Windows.Ink.PropertyDataChangedEventArgs -&gt; unit&#xA;override this.OnAttributeChanged : System.Windows.Ink.PropertyDataChangedEventArgs -&gt; unit" Usage="drawingAttributes.OnAttributeChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -772,6 +791,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="drawingAttributes.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -795,6 +815,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.OnPropertyDataChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyDataChanged (e As PropertyDataChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyDataChanged(System::Windows::Ink::PropertyDataChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventArgs -&gt; unit&#xA;override this.OnPropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventArgs -&gt; unit" Usage="drawingAttributes.OnPropertyDataChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -832,6 +853,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.op_Equality(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (first As DrawingAttributes, second As DrawingAttributes) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Ink::DrawingAttributes ^ first, System::Windows::Ink::DrawingAttributes ^ second);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Ink.DrawingAttributes * System.Windows.Ink.DrawingAttributes -&gt; bool" Usage="first = second" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -895,6 +917,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.op_Inequality(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (first As DrawingAttributes, second As DrawingAttributes) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Ink::DrawingAttributes ^ first, System::Windows::Ink::DrawingAttributes ^ second);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Ink.DrawingAttributes * System.Windows.Ink.DrawingAttributes -&gt; bool" Usage="System.Windows.Ink.DrawingAttributes.op_Inequality (first, second)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -958,6 +981,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Ink.DrawingAttributes.PropertyDataChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyDataChanged As PropertyDataChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::PropertyDataChangedEventHandler ^ PropertyDataChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventHandler " Usage="member this.PropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -987,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.RemovePropertyData(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyData (propertyDataId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyData(Guid propertyDataId);" />
+      <MemberSignature Language="F#" Value="member this.RemovePropertyData : Guid -&gt; unit" Usage="drawingAttributes.RemovePropertyData propertyDataId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1023,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.StylusTip" />
       <MemberSignature Language="VB.NET" Value="Public Property StylusTip As StylusTip" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StylusTip StylusTip { System::Windows::Ink::StylusTip get(); void set(System::Windows::Ink::StylusTip value); };" />
+      <MemberSignature Language="F#" Value="member this.StylusTip : System.Windows.Ink.StylusTip with get, set" Usage="System.Windows.Ink.DrawingAttributes.StylusTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1061,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.StylusTipTransform" />
       <MemberSignature Language="VB.NET" Value="Public Property StylusTipTransform As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Matrix StylusTipTransform { System::Windows::Media::Matrix get(); void set(System::Windows::Media::Matrix value); };" />
+      <MemberSignature Language="F#" Value="member this.StylusTipTransform : System.Windows.Media.Matrix with get, set" Usage="System.Windows.Ink.DrawingAttributes.StylusTipTransform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1105,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="System.Windows.Ink.DrawingAttributes.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

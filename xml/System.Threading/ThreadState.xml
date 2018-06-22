@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThreadState" />
   <TypeSignature Language="C++ CLI" Value="public enum class ThreadState" />
+  <TypeSignature Language="F#" Value="type ThreadState = " />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Thread</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Aborted" />
       <MemberSignature Language="VB.NET" Value="Aborted" />
       <MemberSignature Language="C++ CLI" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 256" Usage="System.Threading.ThreadState.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.AbortRequested" />
       <MemberSignature Language="VB.NET" Value="AbortRequested" />
       <MemberSignature Language="C++ CLI" Value="AbortRequested" />
+      <MemberSignature Language="F#" Value="AbortRequested = 128" Usage="System.Threading.ThreadState.AbortRequested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Background" />
       <MemberSignature Language="VB.NET" Value="Background" />
       <MemberSignature Language="C++ CLI" Value="Background" />
+      <MemberSignature Language="F#" Value="Background = 4" Usage="System.Threading.ThreadState.Background" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Running" />
       <MemberSignature Language="VB.NET" Value="Running" />
       <MemberSignature Language="C++ CLI" Value="Running" />
+      <MemberSignature Language="F#" Value="Running = 0" Usage="System.Threading.ThreadState.Running" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Stopped" />
       <MemberSignature Language="VB.NET" Value="Stopped" />
       <MemberSignature Language="C++ CLI" Value="Stopped" />
+      <MemberSignature Language="F#" Value="Stopped = 16" Usage="System.Threading.ThreadState.Stopped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.StopRequested" />
       <MemberSignature Language="VB.NET" Value="StopRequested" />
       <MemberSignature Language="C++ CLI" Value="StopRequested" />
+      <MemberSignature Language="F#" Value="StopRequested = 1" Usage="System.Threading.ThreadState.StopRequested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Suspended" />
       <MemberSignature Language="VB.NET" Value="Suspended" />
       <MemberSignature Language="C++ CLI" Value="Suspended" />
+      <MemberSignature Language="F#" Value="Suspended = 64" Usage="System.Threading.ThreadState.Suspended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.SuspendRequested" />
       <MemberSignature Language="VB.NET" Value="SuspendRequested" />
       <MemberSignature Language="C++ CLI" Value="SuspendRequested" />
+      <MemberSignature Language="F#" Value="SuspendRequested = 2" Usage="System.Threading.ThreadState.SuspendRequested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -317,6 +326,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.Unstarted" />
       <MemberSignature Language="VB.NET" Value="Unstarted" />
       <MemberSignature Language="C++ CLI" Value="Unstarted" />
+      <MemberSignature Language="F#" Value="Unstarted = 8" Usage="System.Threading.ThreadState.Unstarted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -347,6 +357,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadState.WaitSleepJoin" />
       <MemberSignature Language="VB.NET" Value="WaitSleepJoin" />
       <MemberSignature Language="C++ CLI" Value="WaitSleepJoin" />
+      <MemberSignature Language="F#" Value="WaitSleepJoin = 32" Usage="System.Threading.ThreadState.WaitSleepJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>

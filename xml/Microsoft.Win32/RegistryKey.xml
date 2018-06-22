@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryKey" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistryKey&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistryKey sealed : MarshalByRefObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type RegistryKey = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="registryKey.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSubKey (subkey As String) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubKey : string -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey subkey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSubKey (subkey As String, permissionCheck As RegistryKeyPermissionCheck) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubKey : string * Microsoft.Win32.RegistryKeyPermissionCheck -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey (subkey, permissionCheck)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -250,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSubKey (subkey As String, writable As Boolean) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, bool writable);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubKey : string * bool -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey (subkey, writable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -310,6 +315,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, class System.Security.AccessControl.RegistrySecurity registrySecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,System.Security.AccessControl.RegistrySecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, System::Security::AccessControl::RegistrySecurity ^ registrySecurity);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubKey : string * Microsoft.Win32.RegistryKeyPermissionCheck * System.Security.AccessControl.RegistrySecurity -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey (subkey, permissionCheck, registrySecurity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -381,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,System.Boolean,Microsoft.Win32.RegistryOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSubKey (subkey As String, writable As Boolean, options As RegistryOptions) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, bool writable, Microsoft::Win32::RegistryOptions options);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubKey : string * bool * Microsoft.Win32.RegistryOptions -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey (subkey, writable, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -448,6 +455,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, valuetype Microsoft.Win32.RegistryOptions registryOptions) cil managed" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, Microsoft::Win32::RegistryOptions options);" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSubKey (subkey As String, permissionCheck As RegistryKeyPermissionCheck, options As RegistryOptions) As RegistryKey" />
+      <MemberSignature Language="F#" Value="member this.CreateSubKey : string * Microsoft.Win32.RegistryKeyPermissionCheck * Microsoft.Win32.RegistryOptions -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey (subkey, permissionCheck, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -503,6 +511,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, valuetype Microsoft.Win32.RegistryOptions registryOptions, class System.Security.AccessControl.RegistrySecurity registrySecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions,System.Security.AccessControl.RegistrySecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, Microsoft::Win32::RegistryOptions registryOptions, System::Security::AccessControl::RegistrySecurity ^ registrySecurity);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubKey : string * Microsoft.Win32.RegistryKeyPermissionCheck * Microsoft.Win32.RegistryOptions * System.Security.AccessControl.RegistrySecurity -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey (subkey, permissionCheck, registryOptions, registrySecurity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -569,6 +578,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteSubKey (subkey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteSubKey(System::String ^ subkey);" />
+      <MemberSignature Language="F#" Value="member this.DeleteSubKey : string -&gt; unit" Usage="registryKey.DeleteSubKey subkey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -629,6 +639,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteSubKey (subkey As String, throwOnMissingSubKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteSubKey(System::String ^ subkey, bool throwOnMissingSubKey);" />
+      <MemberSignature Language="F#" Value="member this.DeleteSubKey : string * bool -&gt; unit" Usage="registryKey.DeleteSubKey (subkey, throwOnMissingSubKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -694,6 +705,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteSubKeyTree (subkey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteSubKeyTree(System::String ^ subkey);" />
+      <MemberSignature Language="F#" Value="member this.DeleteSubKeyTree : string -&gt; unit" Usage="registryKey.DeleteSubKeyTree subkey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -760,6 +772,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteSubKeyTree (subkey As String, throwOnMissingSubKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteSubKeyTree(System::String ^ subkey, bool throwOnMissingSubKey);" />
+      <MemberSignature Language="F#" Value="member this.DeleteSubKeyTree : string * bool -&gt; unit" Usage="registryKey.DeleteSubKeyTree (subkey, throwOnMissingSubKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -813,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.DeleteValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteValue (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteValue(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.DeleteValue : string -&gt; unit" Usage="registryKey.DeleteValue name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -869,6 +883,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.DeleteValue(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteValue (name As String, throwOnMissingValue As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteValue(System::String ^ name, bool throwOnMissingValue);" />
+      <MemberSignature Language="F#" Value="member this.DeleteValue : string * bool -&gt; unit" Usage="registryKey.DeleteValue (name, throwOnMissingValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -924,6 +939,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="registryKey.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -965,6 +981,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
+      <MemberSignature Language="F#" Value="member this.Flush : unit -&gt; unit" Usage="registryKey.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1015,6 +1032,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromHandle (handle As SafeRegistryHandle) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Win32::RegistryKey ^ FromHandle(Microsoft::Win32::SafeHandles::SafeRegistryHandle ^ handle);" />
+      <MemberSignature Language="F#" Value="static member FromHandle : Microsoft.Win32.SafeHandles.SafeRegistryHandle -&gt; Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.RegistryKey.FromHandle handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1056,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle,Microsoft.Win32.RegistryView)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromHandle (handle As SafeRegistryHandle, view As RegistryView) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Win32::RegistryKey ^ FromHandle(Microsoft::Win32::SafeHandles::SafeRegistryHandle ^ handle, Microsoft::Win32::RegistryView view);" />
+      <MemberSignature Language="F#" Value="static member FromHandle : Microsoft.Win32.SafeHandles.SafeRegistryHandle * Microsoft.Win32.RegistryView -&gt; Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.RegistryKey.FromHandle (handle, view)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1119,6 +1138,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.GetAccessControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As RegistrySecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::RegistrySecurity ^ GetAccessControl();" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.Security.AccessControl.RegistrySecurity" Usage="registryKey.GetAccessControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1156,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.GetAccessControl(System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl (includeSections As AccessControlSections) As RegistrySecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::RegistrySecurity ^ GetAccessControl(System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.RegistrySecurity" Usage="registryKey.GetAccessControl includeSections" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1196,6 +1217,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSubKeyNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetSubKeyNames();" />
+      <MemberSignature Language="F#" Value="member this.GetSubKeyNames : unit -&gt; string[]" Usage="registryKey.GetSubKeyNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1256,6 +1278,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.GetValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetValue : string -&gt; obj" Usage="registryKey.GetValue name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1325,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.GetValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (name As String, defaultValue As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::String ^ name, System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.GetValue : string * obj -&gt; obj" Usage="registryKey.GetValue (name, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1397,6 +1421,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.GetValue(System.String,System.Object,Microsoft.Win32.RegistryValueOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (name As String, defaultValue As Object, options As RegistryValueOptions) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::String ^ name, System::Object ^ defaultValue, Microsoft::Win32::RegistryValueOptions options);" />
+      <MemberSignature Language="F#" Value="member this.GetValue : string * obj * Microsoft.Win32.RegistryValueOptions -&gt; obj" Usage="registryKey.GetValue (name, defaultValue, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1473,6 +1498,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.GetValueKind(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueKind (name As String) As RegistryValueKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryValueKind GetValueKind(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetValueKind : string -&gt; Microsoft.Win32.RegistryValueKind" Usage="registryKey.GetValueKind name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1543,6 +1569,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.GetValueNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetValueNames();" />
+      <MemberSignature Language="F#" Value="member this.GetValueNames : unit -&gt; string[]" Usage="registryKey.GetValueNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1595,6 +1622,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.RegistryKey.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As SafeRegistryHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeRegistryHandle ^ Handle { Microsoft::Win32::SafeHandles::SafeRegistryHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : Microsoft.Win32.SafeHandles.SafeRegistryHandle" Usage="Microsoft.Win32.RegistryKey.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1632,6 +1660,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.RegistryKey.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Win32.RegistryKey.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1676,6 +1705,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive,Microsoft.Win32.RegistryView)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenBaseKey (hKey As RegistryHive, view As RegistryView) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Win32::RegistryKey ^ OpenBaseKey(Microsoft::Win32::RegistryHive hKey, Microsoft::Win32::RegistryView view);" />
+      <MemberSignature Language="F#" Value="static member OpenBaseKey : Microsoft.Win32.RegistryHive * Microsoft.Win32.RegistryView -&gt; Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.RegistryKey.OpenBaseKey (hKey, view)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1726,6 +1756,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenRemoteBaseKey (hKey As RegistryHive, machineName As String) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Win32::RegistryKey ^ OpenRemoteBaseKey(Microsoft::Win32::RegistryHive hKey, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member OpenRemoteBaseKey : Microsoft.Win32.RegistryHive * string -&gt; Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.RegistryKey.OpenRemoteBaseKey (hKey, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1785,6 +1816,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String,Microsoft.Win32.RegistryView)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenRemoteBaseKey (hKey As RegistryHive, machineName As String, view As RegistryView) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Win32::RegistryKey ^ OpenRemoteBaseKey(Microsoft::Win32::RegistryHive hKey, System::String ^ machineName, Microsoft::Win32::RegistryView view);" />
+      <MemberSignature Language="F#" Value="static member OpenRemoteBaseKey : Microsoft.Win32.RegistryHive * string * Microsoft.Win32.RegistryView -&gt; Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.RegistryKey.OpenRemoteBaseKey (hKey, machineName, view)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1851,6 +1883,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenSubKey (name As String) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ OpenSubKey(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.OpenSubKey : string -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.OpenSubKey name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -1914,6 +1947,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenSubKey (name As String, permissionCheck As RegistryKeyPermissionCheck) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ OpenSubKey(System::String ^ name, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck);" />
+      <MemberSignature Language="F#" Value="member this.OpenSubKey : string * Microsoft.Win32.RegistryKeyPermissionCheck -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.OpenSubKey (name, permissionCheck)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1983,6 +2017,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenSubKey (name As String, writable As Boolean) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ OpenSubKey(System::String ^ name, bool writable);" />
+      <MemberSignature Language="F#" Value="member this.OpenSubKey : string * bool -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.OpenSubKey (name, writable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -2048,6 +2083,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Security.AccessControl.RegistryRights)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenSubKey (name As String, rights As RegistryRights) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ OpenSubKey(System::String ^ name, System::Security::AccessControl::RegistryRights rights);" />
+      <MemberSignature Language="F#" Value="member this.OpenSubKey : string * System.Security.AccessControl.RegistryRights -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.OpenSubKey (name, rights)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -2098,6 +2134,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,System.Security.AccessControl.RegistryRights)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenSubKey (name As String, permissionCheck As RegistryKeyPermissionCheck, rights As RegistryRights) As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ OpenSubKey(System::String ^ name, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, System::Security::AccessControl::RegistryRights rights);" />
+      <MemberSignature Language="F#" Value="member this.OpenSubKey : string * Microsoft.Win32.RegistryKeyPermissionCheck * System.Security.AccessControl.RegistryRights -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.OpenSubKey (name, permissionCheck, rights)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2167,6 +2204,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.Security.AccessControl.RegistrySecurity registrySecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::RegistrySecurity ^ registrySecurity);" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.Security.AccessControl.RegistrySecurity -&gt; unit" Usage="registryKey.SetAccessControl registrySecurity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2229,6 +2267,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : string * obj -&gt; unit" Usage="registryKey.SetValue (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -2312,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object,Microsoft.Win32.RegistryValueKind)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (name As String, value As Object, valueKind As RegistryValueKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::String ^ name, System::Object ^ value, Microsoft::Win32::RegistryValueKind valueKind);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : string * obj * Microsoft.Win32.RegistryValueKind -&gt; unit" Usage="registryKey.SetValue (name, value, valueKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -2404,6 +2444,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.RegistryKey.SubKeyCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubKeyCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubKeyCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubKeyCount : int" Usage="Microsoft.Win32.RegistryKey.SubKeyCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -2452,6 +2493,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="registryKey.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -2496,6 +2538,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.RegistryKey.ValueCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ValueCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueCount : int" Usage="Microsoft.Win32.RegistryKey.ValueCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -2543,6 +2586,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.RegistryKey.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As RegistryView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryView View { Microsoft::Win32::RegistryView get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : Microsoft.Win32.RegistryView" Usage="Microsoft.Win32.RegistryKey.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>

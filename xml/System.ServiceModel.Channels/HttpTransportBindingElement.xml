@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpTransportBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpTransportBindingElement&#xA;Inherits TransportBindingElement&#xA;Implements IPolicyExportExtension, IWsdlExportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpTransportBindingElement : System::ServiceModel::Channels::TransportBindingElement, System::ServiceModel::Description::IPolicyExportExtension, System::ServiceModel::Description::IWsdlExportExtension" />
+  <TypeSignature Language="F#" Value="type HttpTransportBindingElement = class&#xA;    inherit TransportBindingElement&#xA;    interface IPolicyExportExtension&#xA;    interface IWsdlExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.#ctor(System.ServiceModel.Channels.HttpTransportBindingElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (elementToBeCloned As HttpTransportBindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpTransportBindingElement(System::ServiceModel::Channels::HttpTransportBindingElement ^ elementToBeCloned);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.HttpTransportBindingElement : System.ServiceModel.Channels.HttpTransportBindingElement -&gt; System.ServiceModel.Channels.HttpTransportBindingElement" Usage="new System.ServiceModel.Channels.HttpTransportBindingElement elementToBeCloned" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -159,6 +161,7 @@ public class MyBindingElement : HttpTransportBindingElement
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.AllowCookies" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowCookies As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowCookies { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowCookies : bool with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.AllowCookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -209,6 +212,7 @@ httpBindingElement.AllowCookies = true;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.AuthenticationScheme" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationScheme As AuthenticationSchemes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::AuthenticationSchemes AuthenticationScheme { System::Net::AuthenticationSchemes get(); void set(System::Net::AuthenticationSchemes value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationScheme : System.Net.AuthenticationSchemes with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.AuthenticationScheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -278,6 +282,7 @@ int odd=calc.Add(5,4);
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="httpTransportBindingElement.BuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -324,6 +329,7 @@ int odd=calc.Add(5,4);
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="httpTransportBindingElement.BuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -368,6 +374,7 @@ int odd=calc.Add(5,4);
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.BypassProxyOnLocal" />
       <MemberSignature Language="VB.NET" Value="Public Property BypassProxyOnLocal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BypassProxyOnLocal { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BypassProxyOnLocal : bool with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.BypassProxyOnLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -418,6 +425,7 @@ httpBinding.BypassProxyOnLocal = true;
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="httpTransportBindingElement.CanBuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -456,6 +464,7 @@ httpBinding.BypassProxyOnLocal = true;
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="httpTransportBindingElement.CanBuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -492,6 +501,7 @@ httpBinding.BypassProxyOnLocal = true;
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="httpTransportBindingElement.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -531,6 +541,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.DecompressionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property DecompressionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DecompressionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DecompressionEnabled : bool with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.DecompressionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -558,6 +569,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.ExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtendedProtectionPolicy As ExtendedProtectionPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ ExtendedProtectionPolicy { System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ get(); void set(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedProtectionPolicy : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.ExtendedProtectionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -579,6 +591,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="httpTransportBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -618,6 +631,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.HostNameComparisonMode" />
       <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
+      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.HostNameComparisonMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -645,6 +659,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.KeepAliveEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepAliveEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepAliveEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepAliveEnabled : bool with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.KeepAliveEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -686,6 +701,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.LegacyExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property LegacyExtendedProtectionPolicy As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LegacyExtendedProtectionPolicy { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LegacyExtendedProtectionPolicy : obj with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.LegacyExtendedProtectionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -712,6 +728,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -763,6 +780,7 @@ httpBinding.MaxBufferSize = 16384;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.MaxPendingAccepts" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingAccepts As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingAccepts { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingAccepts : int with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.MaxPendingAccepts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -795,6 +813,7 @@ httpBinding.MaxBufferSize = 16384;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.MessageHandlerFactory" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageHandlerFactory As HttpMessageHandlerFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::HttpMessageHandlerFactory ^ MessageHandlerFactory { System::ServiceModel::Channels::HttpMessageHandlerFactory ^ get(); void set(System::ServiceModel::Channels::HttpMessageHandlerFactory ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageHandlerFactory : System.ServiceModel.Channels.HttpMessageHandlerFactory with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.MessageHandlerFactory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -815,6 +834,7 @@ httpBinding.MaxBufferSize = 16384;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ProxyAddress { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProxyAddress : Uri with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -860,6 +880,7 @@ httpBinding.ProxyAddress = new Uri(http://proxyserver);
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAuthenticationScheme" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyAuthenticationScheme As AuthenticationSchemes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::AuthenticationSchemes ProxyAuthenticationScheme { System::Net::AuthenticationSchemes get(); void set(System::Net::AuthenticationSchemes value); };" />
+      <MemberSignature Language="F#" Value="member this.ProxyAuthenticationScheme : System.Net.AuthenticationSchemes with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAuthenticationScheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -903,6 +924,7 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.Realm" />
       <MemberSignature Language="VB.NET" Value="Public Property Realm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Realm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Realm : string with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.Realm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -936,6 +958,7 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.RequestInitializationTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestInitializationTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RequestInitializationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestInitializationTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.RequestInitializationTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -961,6 +984,7 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Scheme { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1007,6 +1031,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.ShouldSerializeExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeExtendedProtectionPolicy () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeExtendedProtectionPolicy();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeExtendedProtectionPolicy : unit -&gt; bool" Usage="httpTransportBindingElement.ShouldSerializeExtendedProtectionPolicy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1035,6 +1060,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.ShouldSerializeMessageHandlerFactory" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessageHandlerFactory () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMessageHandlerFactory();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessageHandlerFactory : unit -&gt; bool" Usage="httpTransportBindingElement.ShouldSerializeMessageHandlerFactory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1062,6 +1088,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.ShouldSerializeWebSocketSettings" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeWebSocketSettings () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeWebSocketSettings();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeWebSocketSettings : unit -&gt; bool" Usage="httpTransportBindingElement.ShouldSerializeWebSocketSettings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1186,6 +1213,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.TransferMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransferMode TransferMode { System::ServiceModel::TransferMode get(); void set(System::ServiceModel::TransferMode value); };" />
+      <MemberSignature Language="F#" Value="member this.TransferMode : System.ServiceModel.TransferMode with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.TransferMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1233,6 +1261,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.UnsafeConnectionNtlmAuthentication" />
       <MemberSignature Language="VB.NET" Value="Public Property UnsafeConnectionNtlmAuthentication As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnsafeConnectionNtlmAuthentication { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UnsafeConnectionNtlmAuthentication : bool with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.UnsafeConnectionNtlmAuthentication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1285,6 +1314,7 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.UpdateAuthenticationSchemes(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub UpdateAuthenticationSchemes (context As BindingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UpdateAuthenticationSchemes(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.UpdateAuthenticationSchemes : System.ServiceModel.Channels.BindingContext -&gt; unit" Usage="httpTransportBindingElement.UpdateAuthenticationSchemes context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1308,6 +1338,7 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.UseDefaultWebProxy" />
       <MemberSignature Language="VB.NET" Value="Public Property UseDefaultWebProxy As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultWebProxy { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultWebProxy : bool with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.UseDefaultWebProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1351,6 +1382,7 @@ httpBinding.UseDefaultWebProxy = false;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.WebSocketSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property WebSocketSettings As WebSocketTransportSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::WebSocketTransportSettings ^ WebSocketSettings { System::ServiceModel::Channels::WebSocketTransportSettings ^ get(); void set(System::ServiceModel::Channels::WebSocketTransportSettings ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WebSocketSettings : System.ServiceModel.Channels.WebSocketTransportSettings with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.WebSocketSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

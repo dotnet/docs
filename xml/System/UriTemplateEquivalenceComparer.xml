@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriTemplateEquivalenceComparer" />
   <TypeSignature Language="VB.NET" Value="Public Class UriTemplateEquivalenceComparer&#xA;Implements IEqualityComparer(Of UriTemplate)" />
   <TypeSignature Language="C++ CLI" Value="public ref class UriTemplateEquivalenceComparer : System::Collections::Generic::IEqualityComparer&lt;UriTemplate ^&gt;" />
+  <TypeSignature Language="F#" Value="type UriTemplateEquivalenceComparer = class&#xA;    interface IEqualityComparer&lt;UriTemplate&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateEquivalenceComparer.Equals(System.UriTemplate,System.UriTemplate)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (x As UriTemplate, y As UriTemplate) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(UriTemplate ^ x, UriTemplate ^ y);" />
+      <MemberSignature Language="F#" Value="override this.Equals : UriTemplate * UriTemplate -&gt; bool" Usage="uriTemplateEquivalenceComparer.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateEquivalenceComparer.GetHashCode(System.UriTemplate)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As UriTemplate) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(UriTemplate ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : UriTemplate -&gt; int" Usage="uriTemplateEquivalenceComparer.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>

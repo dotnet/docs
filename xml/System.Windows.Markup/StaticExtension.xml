@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.StaticExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class StaticExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class StaticExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type StaticExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.StaticExtension.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticExtension(System::String ^ member);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.StaticExtension : string -&gt; System.Windows.Markup.StaticExtension" Usage="new System.Windows.Markup.StaticExtension member" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.StaticExtension.Member" />
       <MemberSignature Language="VB.NET" Value="Public Property Member As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Windows.Markup.StaticExtension.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.StaticExtension.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ MemberType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberType : Type with get, set" Usage="System.Windows.Markup.StaticExtension.MemberType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.StaticExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="staticExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

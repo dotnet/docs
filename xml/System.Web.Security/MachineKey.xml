@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MachineKey" />
   <TypeSignature Language="VB.NET" Value="Public Class MachineKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class MachineKey abstract sealed" />
+  <TypeSignature Language="F#" Value="type MachineKey = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MachineKey.Decode(System.String,System.Web.Security.MachineKeyProtection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decode (encodedData As String, protectionOption As MachineKeyProtection) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Decode(System::String ^ encodedData, System::Web::Security::MachineKeyProtection protectionOption);" />
+      <MemberSignature Language="F#" Value="static member Decode : string * System.Web.Security.MachineKeyProtection -&gt; byte[]" Usage="System.Web.Security.MachineKey.Decode (encodedData, protectionOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MachineKey.Encode(System.Byte[],System.Web.Security.MachineKeyProtection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Encode (data As Byte(), protectionOption As MachineKeyProtection) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Encode(cli::array &lt;System::Byte&gt; ^ data, System::Web::Security::MachineKeyProtection protectionOption);" />
+      <MemberSignature Language="F#" Value="static member Encode : byte[] * System.Web.Security.MachineKeyProtection -&gt; string" Usage="System.Web.Security.MachineKey.Encode (data, protectionOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MachineKey.Protect(System.Byte[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Protect (userData As Byte(), ParamArray purposes As String()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Protect(cli::array &lt;System::Byte&gt; ^ userData, ... cli::array &lt;System::String ^&gt; ^ purposes);" />
+      <MemberSignature Language="F#" Value="static member Protect : byte[] * string[] -&gt; byte[]" Usage="System.Web.Security.MachineKey.Protect (userData, purposes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +195,7 @@ MachineKey.Unprotect(..., "Private message", "Recipient: " + username)
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MachineKey.Unprotect(System.Byte[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Unprotect (protectedData As Byte(), ParamArray purposes As String()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Unprotect(cli::array &lt;System::Byte&gt; ^ protectedData, ... cli::array &lt;System::String ^&gt; ^ purposes);" />
+      <MemberSignature Language="F#" Value="static member Unprotect : byte[] * string[] -&gt; byte[]" Usage="System.Web.Security.MachineKey.Unprotect (protectedData, purposes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSourceException" />
   <TypeSignature Language="VB.NET" Value="Public Class EventSourceException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventSourceException : Exception" />
+  <TypeSignature Language="F#" Value="type EventSourceException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSourceException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSourceException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSourceException : string -&gt; System.Diagnostics.Tracing.EventSourceException" Usage="new System.Diagnostics.Tracing.EventSourceException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSourceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventSourceException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSourceException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Diagnostics.Tracing.EventSourceException" Usage="new System.Diagnostics.Tracing.EventSourceException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSourceException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSourceException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSourceException : string * Exception -&gt; System.Diagnostics.Tracing.EventSourceException" Usage="new System.Diagnostics.Tracing.EventSourceException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

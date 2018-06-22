@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CorrelationDataDescription" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CorrelationDataDescription" />
   <TypeSignature Language="C++ CLI" Value="public ref class CorrelationDataDescription abstract" />
+  <TypeSignature Language="F#" Value="type CorrelationDataDescription = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.ServiceModel.Channels.CorrelationDataDescription.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.IsOptional" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool" Usage="System.ServiceModel.Channels.CorrelationDataDescription.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.KnownBeforeSend" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property KnownBeforeSend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool KnownBeforeSend { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.KnownBeforeSend : bool" Usage="System.ServiceModel.Channels.CorrelationDataDescription.KnownBeforeSend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.CorrelationDataDescription.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.ReceiveValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceiveValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool ReceiveValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveValue : bool" Usage="System.ServiceModel.Channels.CorrelationDataDescription.ReceiveValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.SendValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SendValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool SendValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SendValue : bool" Usage="System.ServiceModel.Channels.CorrelationDataDescription.SendValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

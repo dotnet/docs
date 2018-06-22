@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CollectionChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CollectionChangeEventHandler(sender As Object, e As CollectionChangeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CollectionChangeEventHandler(System::Object ^ sender, CollectionChangeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type CollectionChangeEventHandler = delegate of obj * CollectionChangeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.RelationshipKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum RelationshipKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class RelationshipKind" />
+  <TypeSignature Language="F#" Value="type RelationshipKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Objects.DataClasses.RelationshipKind.Association" />
       <MemberSignature Language="VB.NET" Value="Association" />
       <MemberSignature Language="C++ CLI" Value="Association" />
+      <MemberSignature Language="F#" Value="Association = 0" Usage="System.Data.Objects.DataClasses.RelationshipKind.Association" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

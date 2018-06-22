@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" />
   <TypeSignature Language="VB.NET" Value="Public Class ListBoxItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListBoxItem" />
+  <TypeSignature Language="F#" Value="type ListBoxItem = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ItemString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBoxItem(System::String ^ ItemString);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem : string -&gt; Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" Usage="new Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem ItemString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ItemString As String, ItemData As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBoxItem(System::String ^ ItemString, int ItemData);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem : string * int -&gt; Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem" Usage="new Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem (ItemString, ItemData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ItemData" />
       <MemberSignature Language="VB.NET" Value="Public ItemData As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int ItemData;" />
+      <MemberSignature Language="F#" Value="val mutable ItemData : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ItemData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ItemString" />
       <MemberSignature Language="VB.NET" Value="Public ItemString As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ItemString;" />
+      <MemberSignature Language="F#" Value="val mutable ItemString : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ItemString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListBoxItem.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="listBoxItem.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

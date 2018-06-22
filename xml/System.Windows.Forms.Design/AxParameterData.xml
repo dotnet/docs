@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxParameterData" />
   <TypeSignature Language="VB.NET" Value="Public Class AxParameterData" />
   <TypeSignature Language="C++ CLI" Value="public ref class AxParameterData" />
+  <TypeSignature Language="F#" Value="type AxParameterData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.#ctor(System.Reflection.ParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (info As ParameterInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AxParameterData(System::Reflection::ParameterInfo ^ info);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.AxParameterData : System.Reflection.ParameterInfo -&gt; System.Windows.Forms.Design.AxParameterData" Usage="new System.Windows.Forms.Design.AxParameterData info" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.#ctor(System.Reflection.ParameterInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (info As ParameterInfo, ignoreByRefs As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AxParameterData(System::Reflection::ParameterInfo ^ info, bool ignoreByRefs);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.AxParameterData : System.Reflection.ParameterInfo * bool -&gt; System.Windows.Forms.Design.AxParameterData" Usage="new System.Windows.Forms.Design.AxParameterData (info, ignoreByRefs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inname As String, typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AxParameterData(System::String ^ inname, System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.AxParameterData : string * string -&gt; System.Windows.Forms.Design.AxParameterData" Usage="new System.Windows.Forms.Design.AxParameterData (inname, typeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string inname, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.#ctor(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AxParameterData(System::String ^ inname, Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.AxParameterData : string * Type -&gt; System.Windows.Forms.Design.AxParameterData" Usage="new System.Windows.Forms.Design.AxParameterData (inname, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.Convert(System.Reflection.ParameterInfo[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (infos As ParameterInfo()) As AxParameterData()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Windows::Forms::Design::AxParameterData ^&gt; ^ Convert(cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ infos);" />
+      <MemberSignature Language="F#" Value="static member Convert : System.Reflection.ParameterInfo[] -&gt; System.Windows.Forms.Design.AxParameterData[]" Usage="System.Windows.Forms.Design.AxParameterData.Convert infos" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxParameterData.Convert(System.Reflection.ParameterInfo[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (infos As ParameterInfo(), ignoreByRefs As Boolean) As AxParameterData()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Windows::Forms::Design::AxParameterData ^&gt; ^ Convert(cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ infos, bool ignoreByRefs);" />
+      <MemberSignature Language="F#" Value="static member Convert : System.Reflection.ParameterInfo[] * bool -&gt; System.Windows.Forms.Design.AxParameterData[]" Usage="System.Windows.Forms.Design.AxParameterData.Convert (infos, ignoreByRefs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -189,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.Direction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As FieldDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::FieldDirection Direction { System::CodeDom::FieldDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.CodeDom.FieldDirection" Usage="System.Windows.Forms.Design.AxParameterData.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.IsByRef" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsByRef As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsByRef { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsByRef : bool" Usage="System.Windows.Forms.Design.AxParameterData.IsByRef" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.IsIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIn { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsIn : bool" Usage="System.Windows.Forms.Design.AxParameterData.IsIn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -255,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.IsOptional" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool" Usage="System.Windows.Forms.Design.AxParameterData.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.IsOut" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOut As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOut { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOut : bool" Usage="System.Windows.Forms.Design.AxParameterData.IsOut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -299,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.Design.AxParameterData.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -320,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.ParameterType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ParameterType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterType : Type" Usage="System.Windows.Forms.Design.AxParameterData.ParameterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -341,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.AxParameterData.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Windows.Forms.Design.AxParameterData.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

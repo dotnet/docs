@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.DurableTimerExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class DurableTimerExtension&#xA;Inherits TimerExtension&#xA;Implements IDisposable, IWorkflowInstanceExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class DurableTimerExtension : System::Activities::Statements::TimerExtension, IDisposable, System::Activities::Hosting::IWorkflowInstanceExtension" />
+  <TypeSignature Language="F#" Value="type DurableTimerExtension = class&#xA;    inherit TimerExtension&#xA;    interface IWorkflowInstanceExtension&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@ This TimerExtension has already been attached to a workflow instance.
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DurableTimerExtension.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="durableTimerExtension.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -81,6 +83,7 @@ This TimerExtension has already been attached to a workflow instance.
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DurableTimerExtension.GetAdditionalExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Iterator Overridable Function GetAdditionalExtensions () As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetAdditionalExtensions();" />
+      <MemberSignature Language="F#" Value="abstract member GetAdditionalExtensions : unit -&gt; seq&lt;obj&gt;&#xA;override this.GetAdditionalExtensions : unit -&gt; seq&lt;obj&gt;" Usage="durableTimerExtension.GetAdditionalExtensions " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions</InterfaceMember>
@@ -109,6 +112,7 @@ This TimerExtension has already been attached to a workflow instance.
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCancelTimer(class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DurableTimerExtension.OnCancelTimer(System.Activities.Bookmark)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCancelTimer(System::Activities::Bookmark ^ bookmark);" />
+      <MemberSignature Language="F#" Value="override this.OnCancelTimer : System.Activities.Bookmark -&gt; unit" Usage="durableTimerExtension.OnCancelTimer bookmark" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -131,6 +135,7 @@ This TimerExtension has already been attached to a workflow instance.
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRegisterTimer(valuetype System.TimeSpan timeout, class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DurableTimerExtension.OnRegisterTimer(System.TimeSpan,System.Activities.Bookmark)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRegisterTimer(TimeSpan timeout, System::Activities::Bookmark ^ bookmark);" />
+      <MemberSignature Language="F#" Value="override this.OnRegisterTimer : TimeSpan * System.Activities.Bookmark -&gt; unit" Usage="durableTimerExtension.OnRegisterTimer (timeout, bookmark)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -156,6 +161,7 @@ This TimerExtension has already been attached to a workflow instance.
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DurableTimerExtension.SetInstance(System.Activities.Hosting.WorkflowInstanceProxy)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetInstance (instance As WorkflowInstanceProxy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetInstance(System::Activities::Hosting::WorkflowInstanceProxy ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member SetInstance : System.Activities.Hosting.WorkflowInstanceProxy -&gt; unit&#xA;override this.SetInstance : System.Activities.Hosting.WorkflowInstanceProxy -&gt; unit" Usage="durableTimerExtension.SetInstance instance" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance(System.Activities.Hosting.WorkflowInstanceProxy)</InterfaceMember>

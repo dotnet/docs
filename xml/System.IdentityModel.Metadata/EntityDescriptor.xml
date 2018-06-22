@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.EntityDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityDescriptor&#xA;Inherits MetadataBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityDescriptor : System::IdentityModel::Metadata::MetadataBase" />
+  <TypeSignature Language="F#" Value="type EntityDescriptor = class&#xA;    inherit MetadataBase" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Metadata.EntityId entityId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.EntityDescriptor.#ctor(System.IdentityModel.Metadata.EntityId)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDescriptor(System::IdentityModel::Metadata::EntityId ^ entityId);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.EntityDescriptor : System.IdentityModel.Metadata.EntityId -&gt; System.IdentityModel.Metadata.EntityDescriptor" Usage="new System.IdentityModel.Metadata.EntityDescriptor entityId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntityDescriptor.Contacts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contacts As ICollection(Of ContactPerson)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::ContactPerson ^&gt; ^ Contacts { System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::ContactPerson ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Contacts : System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.ContactPerson&gt;" Usage="System.IdentityModel.Metadata.EntityDescriptor.Contacts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntityDescriptor.EntityId" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityId As EntityId" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::EntityId ^ EntityId { System::IdentityModel::Metadata::EntityId ^ get(); void set(System::IdentityModel::Metadata::EntityId ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntityId : System.IdentityModel.Metadata.EntityId with get, set" Usage="System.IdentityModel.Metadata.EntityDescriptor.EntityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntityDescriptor.FederationId" />
       <MemberSignature Language="VB.NET" Value="Public Property FederationId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FederationId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FederationId : string with get, set" Usage="System.IdentityModel.Metadata.EntityDescriptor.FederationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntityDescriptor.Organization" />
       <MemberSignature Language="VB.NET" Value="Public Property Organization As Organization" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::Organization ^ Organization { System::IdentityModel::Metadata::Organization ^ get(); void set(System::IdentityModel::Metadata::Organization ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Organization : System.IdentityModel.Metadata.Organization with get, set" Usage="System.IdentityModel.Metadata.EntityDescriptor.Organization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntityDescriptor.RoleDescriptors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoleDescriptors As ICollection(Of RoleDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::RoleDescriptor ^&gt; ^ RoleDescriptors { System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::RoleDescriptor ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RoleDescriptors : System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.RoleDescriptor&gt;" Usage="System.IdentityModel.Metadata.EntityDescriptor.RoleDescriptors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

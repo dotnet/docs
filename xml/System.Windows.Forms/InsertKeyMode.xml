@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InsertKeyMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum InsertKeyMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class InsertKeyMode" />
+  <TypeSignature Language="F#" Value="type InsertKeyMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Forms.InsertKeyMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 1" Usage="System.Windows.Forms.InsertKeyMode.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Overwrite" />
       <MemberSignature Language="VB.NET" Value="Overwrite" />
       <MemberSignature Language="C++ CLI" Value="Overwrite" />
+      <MemberSignature Language="F#" Value="Overwrite = 2" Usage="System.Windows.Forms.InsertKeyMode.Overwrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

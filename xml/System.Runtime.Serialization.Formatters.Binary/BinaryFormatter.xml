@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BinaryFormatter&#xA;Implements IRemotingFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryFormatter sealed : System::Runtime::Remoting::Messaging::IRemotingFormatter" />
+  <TypeSignature Language="F#" Value="type BinaryFormatter = class&#xA;    interface IRemotingFormatter&#xA;    interface IFormatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -155,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.#ctor(System.Runtime.Serialization.ISurrogateSelector,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (selector As ISurrogateSelector, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryFormatter(System::Runtime::Serialization::ISurrogateSelector ^ selector, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter : System.Runtime.Serialization.ISurrogateSelector * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" Usage="new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter (selector, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.AssemblyFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyFormat As FormatterAssemblyStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::FormatterAssemblyStyle AssemblyFormat { System::Runtime::Serialization::Formatters::FormatterAssemblyStyle get(); void set(System::Runtime::Serialization::Formatters::FormatterAssemblyStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyFormat : System.Runtime.Serialization.Formatters.FormatterAssemblyStyle with get, set" Usage="System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.AssemblyFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder" />
       <MemberSignature Language="VB.NET" Value="Public Property Binder As SerializationBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::SerializationBinder ^ Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binder : System.Runtime.Serialization.SerializationBinder with get, set" Usage="System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Binder</InterfaceMember>
@@ -270,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Context" />
       <MemberSignature Language="VB.NET" Value="Public Property Context As StreamingContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::StreamingContext Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Runtime.Serialization.StreamingContext with get, set" Usage="System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Context" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Context</InterfaceMember>
@@ -331,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializationStream As Stream) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Deserialize(System::IO::Stream ^ serializationStream);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.IO.Stream -&gt; obj&#xA;override this.Deserialize : System.IO.Stream -&gt; obj" Usage="binaryFormatter.Deserialize serializationStream" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)</InterfaceMember>
@@ -393,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializationStream As Stream, handler As HeaderHandler) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Deserialize(System::IO::Stream ^ serializationStream, System::Runtime::Remoting::Messaging::HeaderHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.IO.Stream * System.Runtime.Remoting.Messaging.HeaderHandler -&gt; obj&#xA;override this.Deserialize : System.IO.Stream * System.Runtime.Remoting.Messaging.HeaderHandler -&gt; obj" Usage="binaryFormatter.Deserialize (serializationStream, handler)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.IRemotingFormatter.Deserialize(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler)</InterfaceMember>
@@ -448,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler,System.Runtime.Remoting.Messaging.IMethodCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function DeserializeMethodResponse (serializationStream As Stream, handler As HeaderHandler, methodCallMessage As IMethodCallMessage) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ DeserializeMethodResponse(System::IO::Stream ^ serializationStream, System::Runtime::Remoting::Messaging::HeaderHandler ^ handler, System::Runtime::Remoting::Messaging::IMethodCallMessage ^ methodCallMessage);" />
+      <MemberSignature Language="F#" Value="member this.DeserializeMethodResponse : System.IO.Stream * System.Runtime.Remoting.Messaging.HeaderHandler * System.Runtime.Remoting.Messaging.IMethodCallMessage -&gt; obj" Usage="binaryFormatter.DeserializeMethodResponse (serializationStream, handler, methodCallMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -495,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.FilterLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterLevel As TypeFilterLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::TypeFilterLevel FilterLevel { System::Runtime::Serialization::Formatters::TypeFilterLevel get(); void set(System::Runtime::Serialization::Formatters::TypeFilterLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterLevel : System.Runtime.Serialization.Formatters.TypeFilterLevel with get, set" Usage="System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.FilterLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -542,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (serializationStream As Stream, graph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Serialize(System::IO::Stream ^ serializationStream, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.IO.Stream * obj -&gt; unit&#xA;override this.Serialize : System.IO.Stream * obj -&gt; unit" Usage="binaryFormatter.Serialize (serializationStream, graph)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)</InterfaceMember>
@@ -597,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object,System.Runtime.Remoting.Messaging.Header[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (serializationStream As Stream, graph As Object, headers As Header())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Serialize(System::IO::Stream ^ serializationStream, System::Object ^ graph, cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ headers);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.IO.Stream * obj * System.Runtime.Remoting.Messaging.Header[] -&gt; unit&#xA;override this.Serialize : System.IO.Stream * obj * System.Runtime.Remoting.Messaging.Header[] -&gt; unit" Usage="binaryFormatter.Serialize (serializationStream, graph, headers)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.IRemotingFormatter.Serialize(System.IO.Stream,System.Object,System.Runtime.Remoting.Messaging.Header[])</InterfaceMember>
@@ -646,6 +657,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.SurrogateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property SurrogateSelector As ISurrogateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ISurrogateSelector ^ SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SurrogateSelector : System.Runtime.Serialization.ISurrogateSelector with get, set" Usage="System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.SurrogateSelector" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.SurrogateSelector</InterfaceMember>
@@ -687,6 +699,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.TypeFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeFormat As FormatterTypeStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::FormatterTypeStyle TypeFormat { System::Runtime::Serialization::Formatters::FormatterTypeStyle get(); void set(System::Runtime::Serialization::Formatters::FormatterTypeStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeFormat : System.Runtime.Serialization.Formatters.FormatterTypeStyle with get, set" Usage="System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.TypeFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -718,6 +731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserialize(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Function UnsafeDeserialize (serializationStream As Stream, handler As HeaderHandler) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ UnsafeDeserialize(System::IO::Stream ^ serializationStream, System::Runtime::Remoting::Messaging::HeaderHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="member this.UnsafeDeserialize : System.IO.Stream * System.Runtime.Remoting.Messaging.HeaderHandler -&gt; obj" Usage="binaryFormatter.UnsafeDeserialize (serializationStream, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -771,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserializeMethodResponse(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler,System.Runtime.Remoting.Messaging.IMethodCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function UnsafeDeserializeMethodResponse (serializationStream As Stream, handler As HeaderHandler, methodCallMessage As IMethodCallMessage) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ UnsafeDeserializeMethodResponse(System::IO::Stream ^ serializationStream, System::Runtime::Remoting::Messaging::HeaderHandler ^ handler, System::Runtime::Remoting::Messaging::IMethodCallMessage ^ methodCallMessage);" />
+      <MemberSignature Language="F#" Value="member this.UnsafeDeserializeMethodResponse : System.IO.Stream * System.Runtime.Remoting.Messaging.HeaderHandler * System.Runtime.Remoting.Messaging.IMethodCallMessage -&gt; obj" Usage="binaryFormatter.UnsafeDeserializeMethodResponse (serializationStream, handler, methodCallMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

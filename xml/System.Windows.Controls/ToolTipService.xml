@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolTipService" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolTipService" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolTipService abstract sealed" />
+  <TypeSignature Language="F#" Value="type ToolTipService = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.AddToolTipClosingHandler(System.Windows.DependencyObject,System.Windows.Controls.ToolTipEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddToolTipClosingHandler (element As DependencyObject, handler As ToolTipEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddToolTipClosingHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::ToolTipEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddToolTipClosingHandler : System.Windows.DependencyObject * System.Windows.Controls.ToolTipEventHandler -&gt; unit" Usage="System.Windows.Controls.ToolTipService.AddToolTipClosingHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.AddToolTipOpeningHandler(System.Windows.DependencyObject,System.Windows.Controls.ToolTipEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddToolTipOpeningHandler (element As DependencyObject, handler As ToolTipEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddToolTipOpeningHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::ToolTipEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddToolTipOpeningHandler : System.Windows.DependencyObject * System.Windows.Controls.ToolTipEventHandler -&gt; unit" Usage="System.Windows.Controls.ToolTipService.AddToolTipOpeningHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value="see GetBetweenShowDelay, and SetBetweenShowDelay" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" />
       <MemberSignature Language="VB.NET" Value="see GetBetweenShowDelay, and SetBetweenShowDelay" />
+      <MemberSignature Language="F#" Value="see GetBetweenShowDelay, and SetBetweenShowDelay" Usage="see GetBetweenShowDelay, and SetBetweenShowDelay" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.BetweenShowDelayProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BetweenShowDelayProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BetweenShowDelayProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BetweenShowDelayProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.BetweenShowDelayProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetBetweenShowDelay(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBetweenShowDelay (element As DependencyObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetBetweenShowDelay(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetBetweenShowDelay : System.Windows.DependencyObject -&gt; int" Usage="System.Windows.Controls.ToolTipService.GetBetweenShowDelay element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetHasDropShadow(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHasDropShadow (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetHasDropShadow(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetHasDropShadow : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ToolTipService.GetHasDropShadow element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetHorizontalOffset(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHorizontalOffset (element As DependencyObject) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetHorizontalOffset(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetHorizontalOffset : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Controls.ToolTipService.GetHorizontalOffset element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -266,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetInitialShowDelay(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetInitialShowDelay (element As DependencyObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetInitialShowDelay(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetInitialShowDelay : System.Windows.DependencyObject -&gt; int" Usage="System.Windows.Controls.ToolTipService.GetInitialShowDelay element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -307,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetIsEnabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsEnabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsEnabled(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetIsEnabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ToolTipService.GetIsEnabled element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -348,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetIsOpen(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsOpen (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsOpen(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetIsOpen : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ToolTipService.GetIsOpen element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -388,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetPlacement(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlacement (element As DependencyObject) As PlacementMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::Primitives::PlacementMode GetPlacement(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPlacement : System.Windows.DependencyObject -&gt; System.Windows.Controls.Primitives.PlacementMode" Usage="System.Windows.Controls.ToolTipService.GetPlacement element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -429,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetPlacementRectangle(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlacementRectangle (element As DependencyObject) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect GetPlacementRectangle(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPlacementRectangle : System.Windows.DependencyObject -&gt; System.Windows.Rect" Usage="System.Windows.Controls.ToolTipService.GetPlacementRectangle element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -470,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetPlacementTarget(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlacementTarget (element As DependencyObject) As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::UIElement ^ GetPlacementTarget(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPlacementTarget : System.Windows.DependencyObject -&gt; System.Windows.UIElement" Usage="System.Windows.Controls.ToolTipService.GetPlacementTarget element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -511,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetShowDuration(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetShowDuration (element As DependencyObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetShowDuration(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetShowDuration : System.Windows.DependencyObject -&gt; int" Usage="System.Windows.Controls.ToolTipService.GetShowDuration element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -552,6 +567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetShowOnDisabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetShowOnDisabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetShowOnDisabled(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetShowOnDisabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ToolTipService.GetShowOnDisabled element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -593,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetToolTip(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolTip (element As DependencyObject) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetToolTip(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetToolTip : System.Windows.DependencyObject -&gt; obj" Usage="System.Windows.Controls.ToolTipService.GetToolTip element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -634,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.GetVerticalOffset(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetVerticalOffset (element As DependencyObject) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetVerticalOffset(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetVerticalOffset : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Controls.ToolTipService.GetVerticalOffset element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -677,6 +695,7 @@
       <MemberSignature Language="ILAsm" Value="see GetHasDropShadow, and SetHasDropShadow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.HasDropShadow" />
       <MemberSignature Language="VB.NET" Value="see GetHasDropShadow, and SetHasDropShadow" />
+      <MemberSignature Language="F#" Value="see GetHasDropShadow, and SetHasDropShadow" Usage="see GetHasDropShadow, and SetHasDropShadow" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -693,6 +712,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.HasDropShadowProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasDropShadowProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasDropShadowProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasDropShadowProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.HasDropShadowProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -711,6 +731,7 @@
       <MemberSignature Language="ILAsm" Value="see GetHorizontalOffset, and SetHorizontalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="see GetHorizontalOffset, and SetHorizontalOffset" />
+      <MemberSignature Language="F#" Value="see GetHorizontalOffset, and SetHorizontalOffset" Usage="see GetHorizontalOffset, and SetHorizontalOffset" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -727,6 +748,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.HorizontalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.HorizontalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -745,6 +767,7 @@
       <MemberSignature Language="ILAsm" Value="see GetInitialShowDelay, and SetInitialShowDelay" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.InitialShowDelay" />
       <MemberSignature Language="VB.NET" Value="see GetInitialShowDelay, and SetInitialShowDelay" />
+      <MemberSignature Language="F#" Value="see GetInitialShowDelay, and SetInitialShowDelay" Usage="see GetInitialShowDelay, and SetInitialShowDelay" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -761,6 +784,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.InitialShowDelayProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InitialShowDelayProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ InitialShowDelayProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InitialShowDelayProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.InitialShowDelayProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -779,6 +803,7 @@
       <MemberSignature Language="ILAsm" Value="see GetIsEnabled, and SetIsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="see GetIsEnabled, and SetIsEnabled" />
+      <MemberSignature Language="F#" Value="see GetIsEnabled, and SetIsEnabled" Usage="see GetIsEnabled, and SetIsEnabled" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -795,6 +820,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.IsEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEnabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.IsEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -814,6 +840,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.IsOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOpenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.IsOpenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -832,6 +859,7 @@
       <MemberSignature Language="ILAsm" Value="see GetPlacement, and SetPlacement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.Placement" />
       <MemberSignature Language="VB.NET" Value="see GetPlacement, and SetPlacement" />
+      <MemberSignature Language="F#" Value="see GetPlacement, and SetPlacement" Usage="see GetPlacement, and SetPlacement" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -848,6 +876,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.PlacementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.PlacementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -866,6 +895,7 @@
       <MemberSignature Language="ILAsm" Value="see GetPlacementRectangle, and SetPlacementRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.PlacementRectangle" />
       <MemberSignature Language="VB.NET" Value="see GetPlacementRectangle, and SetPlacementRectangle" />
+      <MemberSignature Language="F#" Value="see GetPlacementRectangle, and SetPlacementRectangle" Usage="see GetPlacementRectangle, and SetPlacementRectangle" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -882,6 +912,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.PlacementRectangleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementRectangleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementRectangleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementRectangleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.PlacementRectangleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -900,6 +931,7 @@
       <MemberSignature Language="ILAsm" Value="see GetPlacementTarget, and SetPlacementTarget" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.PlacementTarget" />
       <MemberSignature Language="VB.NET" Value="see GetPlacementTarget, and SetPlacementTarget" />
+      <MemberSignature Language="F#" Value="see GetPlacementTarget, and SetPlacementTarget" Usage="see GetPlacementTarget, and SetPlacementTarget" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -916,6 +948,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.PlacementTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementTargetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementTargetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.PlacementTargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -935,6 +968,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.RemoveToolTipClosingHandler(System.Windows.DependencyObject,System.Windows.Controls.ToolTipEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveToolTipClosingHandler (element As DependencyObject, handler As ToolTipEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveToolTipClosingHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::ToolTipEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveToolTipClosingHandler : System.Windows.DependencyObject * System.Windows.Controls.ToolTipEventHandler -&gt; unit" Usage="System.Windows.Controls.ToolTipService.RemoveToolTipClosingHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -960,6 +994,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.RemoveToolTipOpeningHandler(System.Windows.DependencyObject,System.Windows.Controls.ToolTipEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveToolTipOpeningHandler (element As DependencyObject, handler As ToolTipEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveToolTipOpeningHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::ToolTipEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveToolTipOpeningHandler : System.Windows.DependencyObject * System.Windows.Controls.ToolTipEventHandler -&gt; unit" Usage="System.Windows.Controls.ToolTipService.RemoveToolTipOpeningHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -985,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetBetweenShowDelay(System.Windows.DependencyObject,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetBetweenShowDelay (element As DependencyObject, value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBetweenShowDelay(System::Windows::DependencyObject ^ element, int value);" />
+      <MemberSignature Language="F#" Value="static member SetBetweenShowDelay : System.Windows.DependencyObject * int -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetBetweenShowDelay (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1022,6 +1058,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetHasDropShadow(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHasDropShadow (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHasDropShadow(System::Windows::DependencyObject ^ element, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetHasDropShadow : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetHasDropShadow (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1059,6 +1096,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetHorizontalOffset(System.Windows.DependencyObject,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHorizontalOffset (element As DependencyObject, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHorizontalOffset(System::Windows::DependencyObject ^ element, double value);" />
+      <MemberSignature Language="F#" Value="static member SetHorizontalOffset : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetHorizontalOffset (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1096,6 +1134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetInitialShowDelay(System.Windows.DependencyObject,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetInitialShowDelay (element As DependencyObject, value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetInitialShowDelay(System::Windows::DependencyObject ^ element, int value);" />
+      <MemberSignature Language="F#" Value="static member SetInitialShowDelay : System.Windows.DependencyObject * int -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetInitialShowDelay (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1133,6 +1172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetIsEnabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsEnabled (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsEnabled(System::Windows::DependencyObject ^ element, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetIsEnabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetIsEnabled (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1170,6 +1210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetPlacement(System.Windows.DependencyObject,System.Windows.Controls.Primitives.PlacementMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPlacement (element As DependencyObject, value As PlacementMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPlacement(System::Windows::DependencyObject ^ element, System::Windows::Controls::Primitives::PlacementMode value);" />
+      <MemberSignature Language="F#" Value="static member SetPlacement : System.Windows.DependencyObject * System.Windows.Controls.Primitives.PlacementMode -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetPlacement (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1207,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetPlacementRectangle(System.Windows.DependencyObject,System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPlacementRectangle (element As DependencyObject, value As Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPlacementRectangle(System::Windows::DependencyObject ^ element, System::Windows::Rect value);" />
+      <MemberSignature Language="F#" Value="static member SetPlacementRectangle : System.Windows.DependencyObject * System.Windows.Rect -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetPlacementRectangle (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1244,6 +1286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetPlacementTarget(System.Windows.DependencyObject,System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPlacementTarget (element As DependencyObject, value As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPlacementTarget(System::Windows::DependencyObject ^ element, System::Windows::UIElement ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetPlacementTarget : System.Windows.DependencyObject * System.Windows.UIElement -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetPlacementTarget (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1281,6 +1324,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetShowDuration(System.Windows.DependencyObject,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetShowDuration (element As DependencyObject, value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetShowDuration(System::Windows::DependencyObject ^ element, int value);" />
+      <MemberSignature Language="F#" Value="static member SetShowDuration : System.Windows.DependencyObject * int -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetShowDuration (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1318,6 +1362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetShowOnDisabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetShowOnDisabled (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetShowOnDisabled(System::Windows::DependencyObject ^ element, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetShowOnDisabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetShowOnDisabled (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1355,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetToolTip(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetToolTip (element As DependencyObject, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetToolTip(System::Windows::DependencyObject ^ element, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetToolTip : System.Windows.DependencyObject * obj -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetToolTip (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1397,6 +1443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTipService.SetVerticalOffset(System.Windows.DependencyObject,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetVerticalOffset (element As DependencyObject, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetVerticalOffset(System::Windows::DependencyObject ^ element, double value);" />
+      <MemberSignature Language="F#" Value="static member SetVerticalOffset : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Controls.ToolTipService.SetVerticalOffset (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1433,6 +1480,7 @@
       <MemberSignature Language="ILAsm" Value="see GetShowDuration, and SetShowDuration" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.ShowDuration" />
       <MemberSignature Language="VB.NET" Value="see GetShowDuration, and SetShowDuration" />
+      <MemberSignature Language="F#" Value="see GetShowDuration, and SetShowDuration" Usage="see GetShowDuration, and SetShowDuration" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1449,6 +1497,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.ShowDurationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowDurationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowDurationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowDurationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.ShowDurationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1467,6 +1516,7 @@
       <MemberSignature Language="ILAsm" Value="see GetShowOnDisabled, and SetShowOnDisabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" />
       <MemberSignature Language="VB.NET" Value="see GetShowOnDisabled, and SetShowOnDisabled" />
+      <MemberSignature Language="F#" Value="see GetShowOnDisabled, and SetShowOnDisabled" Usage="see GetShowOnDisabled, and SetShowOnDisabled" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1483,6 +1533,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.ShowOnDisabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowOnDisabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowOnDisabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowOnDisabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.ShowOnDisabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1501,6 +1552,7 @@
       <MemberSignature Language="ILAsm" Value="see GetToolTip, and SetToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.ToolTip" />
       <MemberSignature Language="VB.NET" Value="see GetToolTip, and SetToolTip" />
+      <MemberSignature Language="F#" Value="see GetToolTip, and SetToolTip" Usage="see GetToolTip, and SetToolTip" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1516,6 +1568,7 @@
       <MemberSignature Language="ILAsm" Value="see AddToolTipClosingHandler, and RemoveToolTipClosingHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ToolTipService.ToolTipClosing" />
       <MemberSignature Language="VB.NET" Value="see AddToolTipClosingHandler, and RemoveToolTipClosingHandler" />
+      <MemberSignature Language="F#" Value="see AddToolTipClosingHandler, and RemoveToolTipClosingHandler" Usage="see AddToolTipClosingHandler, and RemoveToolTipClosingHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1532,6 +1585,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.ToolTipClosingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipClosingEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ToolTipClosingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipClosingEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ToolTipService.ToolTipClosingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1579,6 +1633,7 @@
       <MemberSignature Language="ILAsm" Value="see AddToolTipOpeningHandler, and RemoveToolTipOpeningHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ToolTipService.ToolTipOpening" />
       <MemberSignature Language="VB.NET" Value="see AddToolTipOpeningHandler, and RemoveToolTipOpeningHandler" />
+      <MemberSignature Language="F#" Value="see AddToolTipOpeningHandler, and RemoveToolTipOpeningHandler" Usage="see AddToolTipOpeningHandler, and RemoveToolTipOpeningHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1595,6 +1650,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipOpeningEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ToolTipOpeningEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipOpeningEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ToolTipService.ToolTipOpeningEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1643,6 +1699,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.ToolTipProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.ToolTipProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1661,6 +1718,7 @@
       <MemberSignature Language="ILAsm" Value="see GetVerticalOffset, and SetVerticalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="see GetVerticalOffset, and SetVerticalOffset" />
+      <MemberSignature Language="F#" Value="see GetVerticalOffset, and SetVerticalOffset" Usage="see GetVerticalOffset, and SetVerticalOffset" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1677,6 +1735,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTipService.VerticalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTipService.VerticalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

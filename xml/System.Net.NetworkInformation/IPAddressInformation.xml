@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPAddressInformation" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IPAddressInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class IPAddressInformation abstract" />
+  <TypeSignature Language="F#" Value="type IPAddressInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformation.Address" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Address As IPAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::IPAddress ^ Address { System::Net::IPAddress ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Address : System.Net.IPAddress" Usage="System.Net.NetworkInformation.IPAddressInformation.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformation.IsDnsEligible" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDnsEligible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDnsEligible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDnsEligible : bool" Usage="System.Net.NetworkInformation.IPAddressInformation.IsDnsEligible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformation.IsTransient" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsTransient As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsTransient { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransient : bool" Usage="System.Net.NetworkInformation.IPAddressInformation.IsTransient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

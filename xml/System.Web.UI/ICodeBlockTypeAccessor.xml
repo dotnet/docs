@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ICodeBlockTypeAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICodeBlockTypeAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICodeBlockTypeAccessor" />
+  <TypeSignature Language="F#" Value="type ICodeBlockTypeAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ICodeBlockTypeAccessor.BlockType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlockType As CodeBlockType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::CodeBlockType BlockType { System::Web::UI::CodeBlockType get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlockType : System.Web.UI.CodeBlockType" Usage="System.Web.UI.ICodeBlockTypeAccessor.BlockType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MergeLocalizationDirectives&#xA;Inherits Task" />
   <TypeSignature Language="C++ CLI" Value="public ref class MergeLocalizationDirectives sealed : Microsoft::Build::Utilities::Task" />
+  <TypeSignature Language="F#" Value="type MergeLocalizationDirectives = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="mergeLocalizationDirectives.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.GeneratedLocalizationFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property GeneratedLocalizationFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ GeneratedLocalizationFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GeneratedLocalizationFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.GeneratedLocalizationFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.OutputFile" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutputFile : string with get, set" Usage="Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.OutputFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

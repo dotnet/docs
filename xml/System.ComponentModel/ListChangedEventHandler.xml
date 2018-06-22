@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ListChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ListChangedEventHandler(sender As Object, e As ListChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ListChangedEventHandler(System::Object ^ sender, ListChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ListChangedEventHandler = delegate of obj * ListChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

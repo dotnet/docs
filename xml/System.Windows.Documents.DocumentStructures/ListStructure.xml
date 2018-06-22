@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.ListStructure" />
   <TypeSignature Language="VB.NET" Value="Public Class ListStructure&#xA;Inherits SemanticBasicElement&#xA;Implements IAddChild, IEnumerable(Of ListItemStructure)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListStructure : System::Windows::Documents::DocumentStructures::SemanticBasicElement, System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::ListItemStructure ^&gt;, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type ListStructure = class&#xA;    inherit SemanticBasicElement&#xA;    interface IAddChild&#xA;    interface seq&lt;ListItemStructure&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.ListStructure.Add(System.Windows.Documents.DocumentStructures.ListItemStructure)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (listItem As ListItemStructure)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::ListItemStructure ^ listItem);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.ListItemStructure -&gt; unit" Usage="listStructure.Add listItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

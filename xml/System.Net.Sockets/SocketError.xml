@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketError" />
   <TypeSignature Language="VB.NET" Value="Public Enum SocketError" />
   <TypeSignature Language="C++ CLI" Value="public enum class SocketError" />
+  <TypeSignature Language="F#" Value="type SocketError = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AccessDenied" />
       <MemberSignature Language="VB.NET" Value="AccessDenied" />
       <MemberSignature Language="C++ CLI" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = 10013" Usage="System.Net.Sockets.SocketError.AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AddressAlreadyInUse" />
       <MemberSignature Language="VB.NET" Value="AddressAlreadyInUse" />
       <MemberSignature Language="C++ CLI" Value="AddressAlreadyInUse" />
+      <MemberSignature Language="F#" Value="AddressAlreadyInUse = 10048" Usage="System.Net.Sockets.SocketError.AddressAlreadyInUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AddressFamilyNotSupported" />
       <MemberSignature Language="VB.NET" Value="AddressFamilyNotSupported" />
       <MemberSignature Language="C++ CLI" Value="AddressFamilyNotSupported" />
+      <MemberSignature Language="F#" Value="AddressFamilyNotSupported = 10047" Usage="System.Net.Sockets.SocketError.AddressFamilyNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AddressNotAvailable" />
       <MemberSignature Language="VB.NET" Value="AddressNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="AddressNotAvailable" />
+      <MemberSignature Language="F#" Value="AddressNotAvailable = 10049" Usage="System.Net.Sockets.SocketError.AddressNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AlreadyInProgress" />
       <MemberSignature Language="VB.NET" Value="AlreadyInProgress" />
       <MemberSignature Language="C++ CLI" Value="AlreadyInProgress" />
+      <MemberSignature Language="F#" Value="AlreadyInProgress = 10037" Usage="System.Net.Sockets.SocketError.AlreadyInProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ConnectionAborted" />
       <MemberSignature Language="VB.NET" Value="ConnectionAborted" />
       <MemberSignature Language="C++ CLI" Value="ConnectionAborted" />
+      <MemberSignature Language="F#" Value="ConnectionAborted = 10053" Usage="System.Net.Sockets.SocketError.ConnectionAborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ConnectionRefused" />
       <MemberSignature Language="VB.NET" Value="ConnectionRefused" />
       <MemberSignature Language="C++ CLI" Value="ConnectionRefused" />
+      <MemberSignature Language="F#" Value="ConnectionRefused = 10061" Usage="System.Net.Sockets.SocketError.ConnectionRefused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ConnectionReset" />
       <MemberSignature Language="VB.NET" Value="ConnectionReset" />
       <MemberSignature Language="C++ CLI" Value="ConnectionReset" />
+      <MemberSignature Language="F#" Value="ConnectionReset = 10054" Usage="System.Net.Sockets.SocketError.ConnectionReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.DestinationAddressRequired" />
       <MemberSignature Language="VB.NET" Value="DestinationAddressRequired" />
       <MemberSignature Language="C++ CLI" Value="DestinationAddressRequired" />
+      <MemberSignature Language="F#" Value="DestinationAddressRequired = 10039" Usage="System.Net.Sockets.SocketError.DestinationAddressRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Disconnecting" />
       <MemberSignature Language="VB.NET" Value="Disconnecting" />
       <MemberSignature Language="C++ CLI" Value="Disconnecting" />
+      <MemberSignature Language="F#" Value="Disconnecting = 10101" Usage="System.Net.Sockets.SocketError.Disconnecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Fault" />
       <MemberSignature Language="VB.NET" Value="Fault" />
       <MemberSignature Language="C++ CLI" Value="Fault" />
+      <MemberSignature Language="F#" Value="Fault = 10014" Usage="System.Net.Sockets.SocketError.Fault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -370,6 +382,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.HostDown" />
       <MemberSignature Language="VB.NET" Value="HostDown" />
       <MemberSignature Language="C++ CLI" Value="HostDown" />
+      <MemberSignature Language="F#" Value="HostDown = 10064" Usage="System.Net.Sockets.SocketError.HostDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -400,6 +413,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.HostNotFound" />
       <MemberSignature Language="VB.NET" Value="HostNotFound" />
       <MemberSignature Language="C++ CLI" Value="HostNotFound" />
+      <MemberSignature Language="F#" Value="HostNotFound = 11001" Usage="System.Net.Sockets.SocketError.HostNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -430,6 +444,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.HostUnreachable" />
       <MemberSignature Language="VB.NET" Value="HostUnreachable" />
       <MemberSignature Language="C++ CLI" Value="HostUnreachable" />
+      <MemberSignature Language="F#" Value="HostUnreachable = 10065" Usage="System.Net.Sockets.SocketError.HostUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -460,6 +475,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.InProgress" />
       <MemberSignature Language="VB.NET" Value="InProgress" />
       <MemberSignature Language="C++ CLI" Value="InProgress" />
+      <MemberSignature Language="F#" Value="InProgress = 10036" Usage="System.Net.Sockets.SocketError.InProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -490,6 +506,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Interrupted" />
       <MemberSignature Language="VB.NET" Value="Interrupted" />
       <MemberSignature Language="C++ CLI" Value="Interrupted" />
+      <MemberSignature Language="F#" Value="Interrupted = 10004" Usage="System.Net.Sockets.SocketError.Interrupted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -520,6 +537,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.InvalidArgument" />
       <MemberSignature Language="VB.NET" Value="InvalidArgument" />
       <MemberSignature Language="C++ CLI" Value="InvalidArgument" />
+      <MemberSignature Language="F#" Value="InvalidArgument = 10022" Usage="System.Net.Sockets.SocketError.InvalidArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -550,6 +568,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.IOPending" />
       <MemberSignature Language="VB.NET" Value="IOPending" />
       <MemberSignature Language="C++ CLI" Value="IOPending" />
+      <MemberSignature Language="F#" Value="IOPending = 997" Usage="System.Net.Sockets.SocketError.IOPending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -580,6 +599,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.IsConnected" />
       <MemberSignature Language="VB.NET" Value="IsConnected" />
       <MemberSignature Language="C++ CLI" Value="IsConnected" />
+      <MemberSignature Language="F#" Value="IsConnected = 10056" Usage="System.Net.Sockets.SocketError.IsConnected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -610,6 +630,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.MessageSize" />
       <MemberSignature Language="VB.NET" Value="MessageSize" />
       <MemberSignature Language="C++ CLI" Value="MessageSize" />
+      <MemberSignature Language="F#" Value="MessageSize = 10040" Usage="System.Net.Sockets.SocketError.MessageSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -640,6 +661,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NetworkDown" />
       <MemberSignature Language="VB.NET" Value="NetworkDown" />
       <MemberSignature Language="C++ CLI" Value="NetworkDown" />
+      <MemberSignature Language="F#" Value="NetworkDown = 10050" Usage="System.Net.Sockets.SocketError.NetworkDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -670,6 +692,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NetworkReset" />
       <MemberSignature Language="VB.NET" Value="NetworkReset" />
       <MemberSignature Language="C++ CLI" Value="NetworkReset" />
+      <MemberSignature Language="F#" Value="NetworkReset = 10052" Usage="System.Net.Sockets.SocketError.NetworkReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -700,6 +723,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NetworkUnreachable" />
       <MemberSignature Language="VB.NET" Value="NetworkUnreachable" />
       <MemberSignature Language="C++ CLI" Value="NetworkUnreachable" />
+      <MemberSignature Language="F#" Value="NetworkUnreachable = 10051" Usage="System.Net.Sockets.SocketError.NetworkUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -730,6 +754,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NoBufferSpaceAvailable" />
       <MemberSignature Language="VB.NET" Value="NoBufferSpaceAvailable" />
       <MemberSignature Language="C++ CLI" Value="NoBufferSpaceAvailable" />
+      <MemberSignature Language="F#" Value="NoBufferSpaceAvailable = 10055" Usage="System.Net.Sockets.SocketError.NoBufferSpaceAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -760,6 +785,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NoData" />
       <MemberSignature Language="VB.NET" Value="NoData" />
       <MemberSignature Language="C++ CLI" Value="NoData" />
+      <MemberSignature Language="F#" Value="NoData = 11004" Usage="System.Net.Sockets.SocketError.NoData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -790,6 +816,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NoRecovery" />
       <MemberSignature Language="VB.NET" Value="NoRecovery" />
       <MemberSignature Language="C++ CLI" Value="NoRecovery" />
+      <MemberSignature Language="F#" Value="NoRecovery = 11003" Usage="System.Net.Sockets.SocketError.NoRecovery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -820,6 +847,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NotConnected" />
       <MemberSignature Language="VB.NET" Value="NotConnected" />
       <MemberSignature Language="C++ CLI" Value="NotConnected" />
+      <MemberSignature Language="F#" Value="NotConnected = 10057" Usage="System.Net.Sockets.SocketError.NotConnected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -850,6 +878,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NotInitialized" />
       <MemberSignature Language="VB.NET" Value="NotInitialized" />
       <MemberSignature Language="C++ CLI" Value="NotInitialized" />
+      <MemberSignature Language="F#" Value="NotInitialized = 10093" Usage="System.Net.Sockets.SocketError.NotInitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -880,6 +909,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NotSocket" />
       <MemberSignature Language="VB.NET" Value="NotSocket" />
       <MemberSignature Language="C++ CLI" Value="NotSocket" />
+      <MemberSignature Language="F#" Value="NotSocket = 10038" Usage="System.Net.Sockets.SocketError.NotSocket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -910,6 +940,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.OperationAborted" />
       <MemberSignature Language="VB.NET" Value="OperationAborted" />
       <MemberSignature Language="C++ CLI" Value="OperationAborted" />
+      <MemberSignature Language="F#" Value="OperationAborted = 995" Usage="System.Net.Sockets.SocketError.OperationAborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -940,6 +971,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.OperationNotSupported" />
       <MemberSignature Language="VB.NET" Value="OperationNotSupported" />
       <MemberSignature Language="C++ CLI" Value="OperationNotSupported" />
+      <MemberSignature Language="F#" Value="OperationNotSupported = 10045" Usage="System.Net.Sockets.SocketError.OperationNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -970,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProcessLimit" />
       <MemberSignature Language="VB.NET" Value="ProcessLimit" />
       <MemberSignature Language="C++ CLI" Value="ProcessLimit" />
+      <MemberSignature Language="F#" Value="ProcessLimit = 10067" Usage="System.Net.Sockets.SocketError.ProcessLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1000,6 +1033,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProtocolFamilyNotSupported" />
       <MemberSignature Language="VB.NET" Value="ProtocolFamilyNotSupported" />
       <MemberSignature Language="C++ CLI" Value="ProtocolFamilyNotSupported" />
+      <MemberSignature Language="F#" Value="ProtocolFamilyNotSupported = 10046" Usage="System.Net.Sockets.SocketError.ProtocolFamilyNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1030,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProtocolNotSupported" />
       <MemberSignature Language="VB.NET" Value="ProtocolNotSupported" />
       <MemberSignature Language="C++ CLI" Value="ProtocolNotSupported" />
+      <MemberSignature Language="F#" Value="ProtocolNotSupported = 10043" Usage="System.Net.Sockets.SocketError.ProtocolNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1060,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProtocolOption" />
       <MemberSignature Language="VB.NET" Value="ProtocolOption" />
       <MemberSignature Language="C++ CLI" Value="ProtocolOption" />
+      <MemberSignature Language="F#" Value="ProtocolOption = 10042" Usage="System.Net.Sockets.SocketError.ProtocolOption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1090,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProtocolType" />
       <MemberSignature Language="VB.NET" Value="ProtocolType" />
       <MemberSignature Language="C++ CLI" Value="ProtocolType" />
+      <MemberSignature Language="F#" Value="ProtocolType = 10041" Usage="System.Net.Sockets.SocketError.ProtocolType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1120,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Shutdown" />
       <MemberSignature Language="C++ CLI" Value="Shutdown" />
+      <MemberSignature Language="F#" Value="Shutdown = 10058" Usage="System.Net.Sockets.SocketError.Shutdown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1149,6 +1187,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError SocketError = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.SocketError" />
       <MemberSignature Language="C++ CLI" Value="SocketError" />
+      <MemberSignature Language="F#" Value="SocketError = -1" Usage="System.Net.Sockets.SocketError.SocketError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1179,6 +1218,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.SocketNotSupported" />
       <MemberSignature Language="VB.NET" Value="SocketNotSupported" />
       <MemberSignature Language="C++ CLI" Value="SocketNotSupported" />
+      <MemberSignature Language="F#" Value="SocketNotSupported = 10044" Usage="System.Net.Sockets.SocketError.SocketNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1209,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="C++ CLI" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.Net.Sockets.SocketError.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1239,6 +1280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.SystemNotReady" />
       <MemberSignature Language="VB.NET" Value="SystemNotReady" />
       <MemberSignature Language="C++ CLI" Value="SystemNotReady" />
+      <MemberSignature Language="F#" Value="SystemNotReady = 10091" Usage="System.Net.Sockets.SocketError.SystemNotReady" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1269,6 +1311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.TimedOut" />
       <MemberSignature Language="VB.NET" Value="TimedOut" />
       <MemberSignature Language="C++ CLI" Value="TimedOut" />
+      <MemberSignature Language="F#" Value="TimedOut = 10060" Usage="System.Net.Sockets.SocketError.TimedOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1299,6 +1342,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.TooManyOpenSockets" />
       <MemberSignature Language="VB.NET" Value="TooManyOpenSockets" />
       <MemberSignature Language="C++ CLI" Value="TooManyOpenSockets" />
+      <MemberSignature Language="F#" Value="TooManyOpenSockets = 10024" Usage="System.Net.Sockets.SocketError.TooManyOpenSockets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1329,6 +1373,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.TryAgain" />
       <MemberSignature Language="VB.NET" Value="TryAgain" />
       <MemberSignature Language="C++ CLI" Value="TryAgain" />
+      <MemberSignature Language="F#" Value="TryAgain = 11002" Usage="System.Net.Sockets.SocketError.TryAgain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1359,6 +1404,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.TypeNotFound" />
       <MemberSignature Language="VB.NET" Value="TypeNotFound" />
       <MemberSignature Language="C++ CLI" Value="TypeNotFound" />
+      <MemberSignature Language="F#" Value="TypeNotFound = 10109" Usage="System.Net.Sockets.SocketError.TypeNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1389,6 +1435,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.VersionNotSupported" />
       <MemberSignature Language="VB.NET" Value="VersionNotSupported" />
       <MemberSignature Language="C++ CLI" Value="VersionNotSupported" />
+      <MemberSignature Language="F#" Value="VersionNotSupported = 10092" Usage="System.Net.Sockets.SocketError.VersionNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1419,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.WouldBlock" />
       <MemberSignature Language="VB.NET" Value="WouldBlock" />
       <MemberSignature Language="C++ CLI" Value="WouldBlock" />
+      <MemberSignature Language="F#" Value="WouldBlock = 10035" Usage="System.Net.Sockets.SocketError.WouldBlock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

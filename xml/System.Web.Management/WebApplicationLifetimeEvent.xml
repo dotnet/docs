@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebApplicationLifetimeEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class WebApplicationLifetimeEvent&#xA;Inherits WebManagementEvent" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebApplicationLifetimeEvent : System::Web::Management::WebManagementEvent" />
+  <TypeSignature Language="F#" Value="type WebApplicationLifetimeEvent = class&#xA;    inherit WebManagementEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -105,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebApplicationLifetimeEvent.#ctor(System.String,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebApplicationLifetimeEvent(System::String ^ message, System::Object ^ eventSource, int eventCode);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebApplicationLifetimeEvent : string * obj * int -&gt; System.Web.Management.WebApplicationLifetimeEvent" Usage="new System.Web.Management.WebApplicationLifetimeEvent (message, eventSource, eventCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebApplicationLifetimeEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebApplicationLifetimeEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebApplicationLifetimeEvent : string * obj * int * int -&gt; System.Web.Management.WebApplicationLifetimeEvent" Usage="new System.Web.Management.WebApplicationLifetimeEvent (message, eventSource, eventCode, eventDetailCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebApplicationLifetimeEvent.IncrementPerfCounters" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub IncrementPerfCounters ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void IncrementPerfCounters();" />
+      <MemberSignature Language="F#" Value="override this.IncrementPerfCounters : unit -&gt; unit" Usage="webApplicationLifetimeEvent.IncrementPerfCounters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

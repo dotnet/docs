@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.EndpointDiscoveryBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointDiscoveryBehavior&#xA;Implements IEndpointBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointDiscoveryBehavior : System::ServiceModel::Description::IEndpointBehavior" />
+  <TypeSignature Language="F#" Value="type EndpointDiscoveryBehavior = class&#xA;    interface IEndpointBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.ContractTypeNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractTypeNames As Collection(Of XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::XmlQualifiedName ^&gt; ^ ContractTypeNames { System::Collections::ObjectModel::Collection&lt;System::Xml::XmlQualifiedName ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContractTypeNames : System.Collections.ObjectModel.Collection&lt;System.Xml.XmlQualifiedName&gt;" Usage="System.ServiceModel.Discovery.EndpointDiscoveryBehavior.ContractTypeNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As Collection(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::Linq::XElement ^&gt; ^ Extensions { System::Collections::ObjectModel::Collection&lt;System::Xml::Linq::XElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt;" Usage="System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Scopes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scopes As Collection(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ Scopes { System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scopes : System.Collections.ObjectModel.Collection&lt;Uri&gt;" Usage="System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Scopes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

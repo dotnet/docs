@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeFieldReferenceExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeFieldReferenceExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeFieldReferenceExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeFieldReferenceExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeFieldReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, fieldName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeFieldReferenceExpression(System::CodeDom::CodeExpression ^ targetObject, System::String ^ fieldName);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeFieldReferenceExpression : System.CodeDom.CodeExpression * string -&gt; System.CodeDom.CodeFieldReferenceExpression" Usage="new System.CodeDom.CodeFieldReferenceExpression (targetObject, fieldName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeFieldReferenceExpression.FieldName" />
       <MemberSignature Language="VB.NET" Value="Public Property FieldName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FieldName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FieldName : string with get, set" Usage="System.CodeDom.CodeFieldReferenceExpression.FieldName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeFieldReferenceExpression.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeFieldReferenceExpression.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

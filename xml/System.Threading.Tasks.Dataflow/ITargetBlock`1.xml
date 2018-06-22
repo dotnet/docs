@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITargetBlock(Of In TInput)&#xA;Implements IDataflowBlock" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TInput&gt;&#xA;public interface class ITargetBlock : System::Threading::Tasks::Dataflow::IDataflowBlock" />
+  <TypeSignature Language="F#" Value="type ITargetBlock&lt;'Input&gt; = interface&#xA;    interface IDataflowBlock" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus OfferMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, !TInput messageValue, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!TInput&gt; source, bool consumeToAccept) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function OfferMessage (messageHeader As DataflowMessageHeader, messageValue As TInput, source As ISourceBlock(Of In TInput), consumeToAccept As Boolean) As DataflowMessageStatus" />
+      <MemberSignature Language="F#" Value="abstract member OfferMessage : System.Threading.Tasks.Dataflow.DataflowMessageHeader * 'Input * System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Input&gt; * bool -&gt; System.Threading.Tasks.Dataflow.DataflowMessageStatus" Usage="iTargetBlock.OfferMessage (messageHeader, messageValue, source, consumeToAccept)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

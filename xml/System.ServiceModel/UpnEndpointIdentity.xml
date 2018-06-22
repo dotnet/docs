@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.UpnEndpointIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class UpnEndpointIdentity&#xA;Inherits EndpointIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class UpnEndpointIdentity : System::ServiceModel::EndpointIdentity" />
+  <TypeSignature Language="F#" Value="type UpnEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UpnEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UpnEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.UpnEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.UpnEndpointIdentity" Usage="new System.ServiceModel.UpnEndpointIdentity identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UpnEndpointIdentity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (upnName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UpnEndpointIdentity(System::String ^ upnName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.UpnEndpointIdentity : string -&gt; System.ServiceModel.UpnEndpointIdentity" Usage="new System.ServiceModel.UpnEndpointIdentity upnName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

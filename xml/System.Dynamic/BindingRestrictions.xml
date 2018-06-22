@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.BindingRestrictions" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BindingRestrictions" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingRestrictions abstract" />
+  <TypeSignature Language="F#" Value="type BindingRestrictions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.Combine(System.Collections.Generic.IList{System.Dynamic.DynamicMetaObject})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine (contributingObjects As IList(Of DynamicMetaObject)) As BindingRestrictions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Dynamic::BindingRestrictions ^ Combine(System::Collections::Generic::IList&lt;System::Dynamic::DynamicMetaObject ^&gt; ^ contributingObjects);" />
+      <MemberSignature Language="F#" Value="static member Combine : System.Collections.Generic.IList&lt;System.Dynamic.DynamicMetaObject&gt; -&gt; System.Dynamic.BindingRestrictions" Usage="System.Dynamic.BindingRestrictions.Combine contributingObjects" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Dynamic.BindingRestrictions.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As BindingRestrictions " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Dynamic::BindingRestrictions ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Dynamic.BindingRestrictions" Usage="System.Dynamic.BindingRestrictions.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Dynamic.BindingRestrictions GetExpressionRestriction(class System.Linq.Expressions.Expression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.GetExpressionRestriction(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Dynamic::BindingRestrictions ^ GetExpressionRestriction(System::Linq::Expressions::Expression ^ expression);" />
+      <MemberSignature Language="F#" Value="static member GetExpressionRestriction : System.Linq.Expressions.Expression -&gt; System.Dynamic.BindingRestrictions" Usage="System.Dynamic.BindingRestrictions.GetExpressionRestriction expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Dynamic.BindingRestrictions GetInstanceRestriction(class System.Linq.Expressions.Expression expression, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.GetInstanceRestriction(System.Linq.Expressions.Expression,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Dynamic::BindingRestrictions ^ GetInstanceRestriction(System::Linq::Expressions::Expression ^ expression, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetInstanceRestriction : System.Linq.Expressions.Expression * obj -&gt; System.Dynamic.BindingRestrictions" Usage="System.Dynamic.BindingRestrictions.GetInstanceRestriction (expression, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Dynamic.BindingRestrictions GetTypeRestriction(class System.Linq.Expressions.Expression expression, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.GetTypeRestriction(System.Linq.Expressions.Expression,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Dynamic::BindingRestrictions ^ GetTypeRestriction(System::Linq::Expressions::Expression ^ expression, Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetTypeRestriction : System.Linq.Expressions.Expression * Type -&gt; System.Dynamic.BindingRestrictions" Usage="System.Dynamic.BindingRestrictions.GetTypeRestriction (expression, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.Merge(System.Dynamic.BindingRestrictions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Merge (restrictions As BindingRestrictions) As BindingRestrictions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::BindingRestrictions ^ Merge(System::Dynamic::BindingRestrictions ^ restrictions);" />
+      <MemberSignature Language="F#" Value="member this.Merge : System.Dynamic.BindingRestrictions -&gt; System.Dynamic.BindingRestrictions" Usage="bindingRestrictions.Merge restrictions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -276,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.ToExpression" />
       <MemberSignature Language="VB.NET" Value="Public Function ToExpression () As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ ToExpression();" />
+      <MemberSignature Language="F#" Value="member this.ToExpression : unit -&gt; System.Linq.Expressions.Expression" Usage="bindingRestrictions.ToExpression " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

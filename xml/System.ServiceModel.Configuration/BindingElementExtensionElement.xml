@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BindingElementExtensionElement&#xA;Inherits ServiceModelExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingElementExtensionElement abstract : System::ServiceModel::Configuration::ServiceModelExtensionElement" />
+  <TypeSignature Language="F#" Value="type BindingElementExtensionElement = class&#xA;    inherit ServiceModelExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingElementExtensionElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit&#xA;override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="bindingElementExtensionElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingElementExtensionElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.BindingElementExtensionElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingElementExtensionElement.CreateBindingElement" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function CreateBindingElement () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::ServiceModel::Channels::BindingElement ^ CreateBindingElement();" />
+      <MemberSignature Language="F#" Value="abstract member CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="bindingElementExtensionElement.CreateBindingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingElementExtensionElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit&#xA;override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="bindingElementExtensionElement.InitializeFrom bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

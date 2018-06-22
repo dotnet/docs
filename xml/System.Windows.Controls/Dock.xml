@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Dock" />
   <TypeSignature Language="VB.NET" Value="Public Enum Dock" />
   <TypeSignature Language="C++ CLI" Value="public enum class Dock" />
+  <TypeSignature Language="F#" Value="type Dock = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Dock.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 3" Usage="System.Windows.Controls.Dock.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Dock.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 0" Usage="System.Windows.Controls.Dock.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Dock.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 2" Usage="System.Windows.Controls.Dock.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Dock.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 1" Usage="System.Windows.Controls.Dock.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.TriggerAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum TriggerAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class TriggerAction" />
+  <TypeSignature Language="F#" Value="type TriggerAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterAppRole" />
       <MemberSignature Language="VB.NET" Value="AlterAppRole" />
       <MemberSignature Language="C++ CLI" Value="AlterAppRole" />
+      <MemberSignature Language="F#" Value="AlterAppRole = 138" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterAppRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterAssembly" />
       <MemberSignature Language="VB.NET" Value="AlterAssembly" />
       <MemberSignature Language="C++ CLI" Value="AlterAssembly" />
+      <MemberSignature Language="F#" Value="AlterAssembly = 102" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterBinding" />
       <MemberSignature Language="VB.NET" Value="AlterBinding" />
       <MemberSignature Language="C++ CLI" Value="AlterBinding" />
+      <MemberSignature Language="F#" Value="AlterBinding = 175" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterFunction" />
       <MemberSignature Language="VB.NET" Value="AlterFunction" />
       <MemberSignature Language="C++ CLI" Value="AlterFunction" />
+      <MemberSignature Language="F#" Value="AlterFunction = 62" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterIndex" />
       <MemberSignature Language="VB.NET" Value="AlterIndex" />
       <MemberSignature Language="C++ CLI" Value="AlterIndex" />
+      <MemberSignature Language="F#" Value="AlterIndex = 25" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterLogin" />
       <MemberSignature Language="VB.NET" Value="AlterLogin" />
       <MemberSignature Language="C++ CLI" Value="AlterLogin" />
+      <MemberSignature Language="F#" Value="AlterLogin = 145" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterLogin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterPartitionFunction" />
       <MemberSignature Language="VB.NET" Value="AlterPartitionFunction" />
       <MemberSignature Language="C++ CLI" Value="AlterPartitionFunction" />
+      <MemberSignature Language="F#" Value="AlterPartitionFunction = 192" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterPartitionFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -172,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterPartitionScheme" />
       <MemberSignature Language="VB.NET" Value="AlterPartitionScheme" />
       <MemberSignature Language="C++ CLI" Value="AlterPartitionScheme" />
+      <MemberSignature Language="F#" Value="AlterPartitionScheme = 195" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterPartitionScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -192,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterProcedure" />
       <MemberSignature Language="VB.NET" Value="AlterProcedure" />
       <MemberSignature Language="C++ CLI" Value="AlterProcedure" />
+      <MemberSignature Language="F#" Value="AlterProcedure = 52" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -212,6 +222,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterQueue" />
       <MemberSignature Language="VB.NET" Value="AlterQueue" />
       <MemberSignature Language="C++ CLI" Value="AlterQueue" />
+      <MemberSignature Language="F#" Value="AlterQueue = 158" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -232,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterRole" />
       <MemberSignature Language="VB.NET" Value="AlterRole" />
       <MemberSignature Language="C++ CLI" Value="AlterRole" />
+      <MemberSignature Language="F#" Value="AlterRole = 135" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -252,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterRoute" />
       <MemberSignature Language="VB.NET" Value="AlterRoute" />
       <MemberSignature Language="C++ CLI" Value="AlterRoute" />
+      <MemberSignature Language="F#" Value="AlterRoute = 165" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -272,6 +285,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterSchema" />
       <MemberSignature Language="VB.NET" Value="AlterSchema" />
       <MemberSignature Language="C++ CLI" Value="AlterSchema" />
+      <MemberSignature Language="F#" Value="AlterSchema = 142" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -292,6 +306,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterService" />
       <MemberSignature Language="VB.NET" Value="AlterService" />
       <MemberSignature Language="C++ CLI" Value="AlterService" />
+      <MemberSignature Language="F#" Value="AlterService = 162" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -312,6 +327,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterTable" />
       <MemberSignature Language="VB.NET" Value="AlterTable" />
       <MemberSignature Language="C++ CLI" Value="AlterTable" />
+      <MemberSignature Language="F#" Value="AlterTable = 22" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -332,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterTrigger" />
       <MemberSignature Language="VB.NET" Value="AlterTrigger" />
       <MemberSignature Language="C++ CLI" Value="AlterTrigger" />
+      <MemberSignature Language="F#" Value="AlterTrigger = 72" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -352,6 +369,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterUser" />
       <MemberSignature Language="VB.NET" Value="AlterUser" />
       <MemberSignature Language="C++ CLI" Value="AlterUser" />
+      <MemberSignature Language="F#" Value="AlterUser = 132" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -372,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterView" />
       <MemberSignature Language="VB.NET" Value="AlterView" />
       <MemberSignature Language="C++ CLI" Value="AlterView" />
+      <MemberSignature Language="F#" Value="AlterView = 42" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -392,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateAppRole" />
       <MemberSignature Language="VB.NET" Value="CreateAppRole" />
       <MemberSignature Language="C++ CLI" Value="CreateAppRole" />
+      <MemberSignature Language="F#" Value="CreateAppRole = 137" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateAppRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -412,6 +432,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateAssembly" />
       <MemberSignature Language="VB.NET" Value="CreateAssembly" />
       <MemberSignature Language="C++ CLI" Value="CreateAssembly" />
+      <MemberSignature Language="F#" Value="CreateAssembly = 101" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -432,6 +453,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateBinding" />
       <MemberSignature Language="VB.NET" Value="CreateBinding" />
       <MemberSignature Language="C++ CLI" Value="CreateBinding" />
+      <MemberSignature Language="F#" Value="CreateBinding = 174" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -452,6 +474,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateContract" />
       <MemberSignature Language="VB.NET" Value="CreateContract" />
       <MemberSignature Language="C++ CLI" Value="CreateContract" />
+      <MemberSignature Language="F#" Value="CreateContract = 154" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateContract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -472,6 +495,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateEventNotification" />
       <MemberSignature Language="VB.NET" Value="CreateEventNotification" />
       <MemberSignature Language="C++ CLI" Value="CreateEventNotification" />
+      <MemberSignature Language="F#" Value="CreateEventNotification = 74" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateEventNotification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -492,6 +516,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateFunction" />
       <MemberSignature Language="VB.NET" Value="CreateFunction" />
       <MemberSignature Language="C++ CLI" Value="CreateFunction" />
+      <MemberSignature Language="F#" Value="CreateFunction = 61" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -512,6 +537,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateIndex" />
       <MemberSignature Language="VB.NET" Value="CreateIndex" />
       <MemberSignature Language="C++ CLI" Value="CreateIndex" />
+      <MemberSignature Language="F#" Value="CreateIndex = 24" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -532,6 +558,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateLogin" />
       <MemberSignature Language="VB.NET" Value="CreateLogin" />
       <MemberSignature Language="C++ CLI" Value="CreateLogin" />
+      <MemberSignature Language="F#" Value="CreateLogin = 144" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateLogin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -552,6 +579,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateMsgType" />
       <MemberSignature Language="VB.NET" Value="CreateMsgType" />
       <MemberSignature Language="C++ CLI" Value="CreateMsgType" />
+      <MemberSignature Language="F#" Value="CreateMsgType = 151" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateMsgType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -572,6 +600,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreatePartitionFunction" />
       <MemberSignature Language="VB.NET" Value="CreatePartitionFunction" />
       <MemberSignature Language="C++ CLI" Value="CreatePartitionFunction" />
+      <MemberSignature Language="F#" Value="CreatePartitionFunction = 191" Usage="Microsoft.SqlServer.Server.TriggerAction.CreatePartitionFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -592,6 +621,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreatePartitionScheme" />
       <MemberSignature Language="VB.NET" Value="CreatePartitionScheme" />
       <MemberSignature Language="C++ CLI" Value="CreatePartitionScheme" />
+      <MemberSignature Language="F#" Value="CreatePartitionScheme = 194" Usage="Microsoft.SqlServer.Server.TriggerAction.CreatePartitionScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -612,6 +642,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateProcedure" />
       <MemberSignature Language="VB.NET" Value="CreateProcedure" />
       <MemberSignature Language="C++ CLI" Value="CreateProcedure" />
+      <MemberSignature Language="F#" Value="CreateProcedure = 51" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -632,6 +663,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateQueue" />
       <MemberSignature Language="VB.NET" Value="CreateQueue" />
       <MemberSignature Language="C++ CLI" Value="CreateQueue" />
+      <MemberSignature Language="F#" Value="CreateQueue = 157" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -652,6 +684,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateRole" />
       <MemberSignature Language="VB.NET" Value="CreateRole" />
       <MemberSignature Language="C++ CLI" Value="CreateRole" />
+      <MemberSignature Language="F#" Value="CreateRole = 134" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -672,6 +705,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateRoute" />
       <MemberSignature Language="VB.NET" Value="CreateRoute" />
       <MemberSignature Language="C++ CLI" Value="CreateRoute" />
+      <MemberSignature Language="F#" Value="CreateRoute = 164" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -692,6 +726,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSchema" />
       <MemberSignature Language="VB.NET" Value="CreateSchema" />
       <MemberSignature Language="C++ CLI" Value="CreateSchema" />
+      <MemberSignature Language="F#" Value="CreateSchema = 141" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -712,6 +747,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSecurityExpression" />
       <MemberSignature Language="VB.NET" Value="CreateSecurityExpression" />
       <MemberSignature Language="C++ CLI" Value="CreateSecurityExpression" />
+      <MemberSignature Language="F#" Value="CreateSecurityExpression = 31" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateSecurityExpression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -732,6 +768,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateService" />
       <MemberSignature Language="VB.NET" Value="CreateService" />
       <MemberSignature Language="C++ CLI" Value="CreateService" />
+      <MemberSignature Language="F#" Value="CreateService = 161" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -752,6 +789,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSynonym" />
       <MemberSignature Language="VB.NET" Value="CreateSynonym" />
       <MemberSignature Language="C++ CLI" Value="CreateSynonym" />
+      <MemberSignature Language="F#" Value="CreateSynonym = 34" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateSynonym" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -772,6 +810,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateTable" />
       <MemberSignature Language="VB.NET" Value="CreateTable" />
       <MemberSignature Language="C++ CLI" Value="CreateTable" />
+      <MemberSignature Language="F#" Value="CreateTable = 21" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -792,6 +831,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateTrigger" />
       <MemberSignature Language="VB.NET" Value="CreateTrigger" />
       <MemberSignature Language="C++ CLI" Value="CreateTrigger" />
+      <MemberSignature Language="F#" Value="CreateTrigger = 71" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -812,6 +852,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateType" />
       <MemberSignature Language="VB.NET" Value="CreateType" />
       <MemberSignature Language="C++ CLI" Value="CreateType" />
+      <MemberSignature Language="F#" Value="CreateType = 91" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -832,6 +873,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateUser" />
       <MemberSignature Language="VB.NET" Value="CreateUser" />
       <MemberSignature Language="C++ CLI" Value="CreateUser" />
+      <MemberSignature Language="F#" Value="CreateUser = 131" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -852,6 +894,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateView" />
       <MemberSignature Language="VB.NET" Value="CreateView" />
       <MemberSignature Language="C++ CLI" Value="CreateView" />
+      <MemberSignature Language="F#" Value="CreateView = 41" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -872,6 +915,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 3" Usage="Microsoft.SqlServer.Server.TriggerAction.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -892,6 +936,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DenyObject" />
       <MemberSignature Language="VB.NET" Value="DenyObject" />
       <MemberSignature Language="C++ CLI" Value="DenyObject" />
+      <MemberSignature Language="F#" Value="DenyObject = 171" Usage="Microsoft.SqlServer.Server.TriggerAction.DenyObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -912,6 +957,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DenyStatement" />
       <MemberSignature Language="VB.NET" Value="DenyStatement" />
       <MemberSignature Language="C++ CLI" Value="DenyStatement" />
+      <MemberSignature Language="F#" Value="DenyStatement = 168" Usage="Microsoft.SqlServer.Server.TriggerAction.DenyStatement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -932,6 +978,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropAppRole" />
       <MemberSignature Language="VB.NET" Value="DropAppRole" />
       <MemberSignature Language="C++ CLI" Value="DropAppRole" />
+      <MemberSignature Language="F#" Value="DropAppRole = 139" Usage="Microsoft.SqlServer.Server.TriggerAction.DropAppRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -952,6 +999,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropAssembly" />
       <MemberSignature Language="VB.NET" Value="DropAssembly" />
       <MemberSignature Language="C++ CLI" Value="DropAssembly" />
+      <MemberSignature Language="F#" Value="DropAssembly = 103" Usage="Microsoft.SqlServer.Server.TriggerAction.DropAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -972,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropBinding" />
       <MemberSignature Language="VB.NET" Value="DropBinding" />
       <MemberSignature Language="C++ CLI" Value="DropBinding" />
+      <MemberSignature Language="F#" Value="DropBinding = 176" Usage="Microsoft.SqlServer.Server.TriggerAction.DropBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -992,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropContract" />
       <MemberSignature Language="VB.NET" Value="DropContract" />
       <MemberSignature Language="C++ CLI" Value="DropContract" />
+      <MemberSignature Language="F#" Value="DropContract = 156" Usage="Microsoft.SqlServer.Server.TriggerAction.DropContract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1012,6 +1062,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropEventNotification" />
       <MemberSignature Language="VB.NET" Value="DropEventNotification" />
       <MemberSignature Language="C++ CLI" Value="DropEventNotification" />
+      <MemberSignature Language="F#" Value="DropEventNotification = 76" Usage="Microsoft.SqlServer.Server.TriggerAction.DropEventNotification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1032,6 +1083,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropFunction" />
       <MemberSignature Language="VB.NET" Value="DropFunction" />
       <MemberSignature Language="C++ CLI" Value="DropFunction" />
+      <MemberSignature Language="F#" Value="DropFunction = 63" Usage="Microsoft.SqlServer.Server.TriggerAction.DropFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1052,6 +1104,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropIndex" />
       <MemberSignature Language="VB.NET" Value="DropIndex" />
       <MemberSignature Language="C++ CLI" Value="DropIndex" />
+      <MemberSignature Language="F#" Value="DropIndex = 26" Usage="Microsoft.SqlServer.Server.TriggerAction.DropIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1072,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropLogin" />
       <MemberSignature Language="VB.NET" Value="DropLogin" />
       <MemberSignature Language="C++ CLI" Value="DropLogin" />
+      <MemberSignature Language="F#" Value="DropLogin = 146" Usage="Microsoft.SqlServer.Server.TriggerAction.DropLogin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1092,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropMsgType" />
       <MemberSignature Language="VB.NET" Value="DropMsgType" />
       <MemberSignature Language="C++ CLI" Value="DropMsgType" />
+      <MemberSignature Language="F#" Value="DropMsgType = 153" Usage="Microsoft.SqlServer.Server.TriggerAction.DropMsgType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1112,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropPartitionFunction" />
       <MemberSignature Language="VB.NET" Value="DropPartitionFunction" />
       <MemberSignature Language="C++ CLI" Value="DropPartitionFunction" />
+      <MemberSignature Language="F#" Value="DropPartitionFunction = 193" Usage="Microsoft.SqlServer.Server.TriggerAction.DropPartitionFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1132,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropPartitionScheme" />
       <MemberSignature Language="VB.NET" Value="DropPartitionScheme" />
       <MemberSignature Language="C++ CLI" Value="DropPartitionScheme" />
+      <MemberSignature Language="F#" Value="DropPartitionScheme = 196" Usage="Microsoft.SqlServer.Server.TriggerAction.DropPartitionScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1152,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropProcedure" />
       <MemberSignature Language="VB.NET" Value="DropProcedure" />
       <MemberSignature Language="C++ CLI" Value="DropProcedure" />
+      <MemberSignature Language="F#" Value="DropProcedure = 53" Usage="Microsoft.SqlServer.Server.TriggerAction.DropProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1172,6 +1230,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropQueue" />
       <MemberSignature Language="VB.NET" Value="DropQueue" />
       <MemberSignature Language="C++ CLI" Value="DropQueue" />
+      <MemberSignature Language="F#" Value="DropQueue = 159" Usage="Microsoft.SqlServer.Server.TriggerAction.DropQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1192,6 +1251,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropRole" />
       <MemberSignature Language="VB.NET" Value="DropRole" />
       <MemberSignature Language="C++ CLI" Value="DropRole" />
+      <MemberSignature Language="F#" Value="DropRole = 136" Usage="Microsoft.SqlServer.Server.TriggerAction.DropRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1212,6 +1272,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropRoute" />
       <MemberSignature Language="VB.NET" Value="DropRoute" />
       <MemberSignature Language="C++ CLI" Value="DropRoute" />
+      <MemberSignature Language="F#" Value="DropRoute = 166" Usage="Microsoft.SqlServer.Server.TriggerAction.DropRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1232,6 +1293,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSchema" />
       <MemberSignature Language="VB.NET" Value="DropSchema" />
       <MemberSignature Language="C++ CLI" Value="DropSchema" />
+      <MemberSignature Language="F#" Value="DropSchema = 143" Usage="Microsoft.SqlServer.Server.TriggerAction.DropSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1252,6 +1314,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSecurityExpression" />
       <MemberSignature Language="VB.NET" Value="DropSecurityExpression" />
       <MemberSignature Language="C++ CLI" Value="DropSecurityExpression" />
+      <MemberSignature Language="F#" Value="DropSecurityExpression = 33" Usage="Microsoft.SqlServer.Server.TriggerAction.DropSecurityExpression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1272,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropService" />
       <MemberSignature Language="VB.NET" Value="DropService" />
       <MemberSignature Language="C++ CLI" Value="DropService" />
+      <MemberSignature Language="F#" Value="DropService = 163" Usage="Microsoft.SqlServer.Server.TriggerAction.DropService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1292,6 +1356,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSynonym" />
       <MemberSignature Language="VB.NET" Value="DropSynonym" />
       <MemberSignature Language="C++ CLI" Value="DropSynonym" />
+      <MemberSignature Language="F#" Value="DropSynonym = 36" Usage="Microsoft.SqlServer.Server.TriggerAction.DropSynonym" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1312,6 +1377,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropTable" />
       <MemberSignature Language="VB.NET" Value="DropTable" />
       <MemberSignature Language="C++ CLI" Value="DropTable" />
+      <MemberSignature Language="F#" Value="DropTable = 23" Usage="Microsoft.SqlServer.Server.TriggerAction.DropTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1332,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropTrigger" />
       <MemberSignature Language="VB.NET" Value="DropTrigger" />
       <MemberSignature Language="C++ CLI" Value="DropTrigger" />
+      <MemberSignature Language="F#" Value="DropTrigger = 73" Usage="Microsoft.SqlServer.Server.TriggerAction.DropTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1352,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropType" />
       <MemberSignature Language="VB.NET" Value="DropType" />
       <MemberSignature Language="C++ CLI" Value="DropType" />
+      <MemberSignature Language="F#" Value="DropType = 93" Usage="Microsoft.SqlServer.Server.TriggerAction.DropType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1372,6 +1440,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropUser" />
       <MemberSignature Language="VB.NET" Value="DropUser" />
       <MemberSignature Language="C++ CLI" Value="DropUser" />
+      <MemberSignature Language="F#" Value="DropUser = 133" Usage="Microsoft.SqlServer.Server.TriggerAction.DropUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1392,6 +1461,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropView" />
       <MemberSignature Language="VB.NET" Value="DropView" />
       <MemberSignature Language="C++ CLI" Value="DropView" />
+      <MemberSignature Language="F#" Value="DropView = 43" Usage="Microsoft.SqlServer.Server.TriggerAction.DropView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1412,6 +1482,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.GrantObject" />
       <MemberSignature Language="VB.NET" Value="GrantObject" />
       <MemberSignature Language="C++ CLI" Value="GrantObject" />
+      <MemberSignature Language="F#" Value="GrantObject = 170" Usage="Microsoft.SqlServer.Server.TriggerAction.GrantObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1432,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.GrantStatement" />
       <MemberSignature Language="VB.NET" Value="GrantStatement" />
       <MemberSignature Language="C++ CLI" Value="GrantStatement" />
+      <MemberSignature Language="F#" Value="GrantStatement = 167" Usage="Microsoft.SqlServer.Server.TriggerAction.GrantStatement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1452,6 +1524,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 1" Usage="Microsoft.SqlServer.Server.TriggerAction.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1472,6 +1545,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 0" Usage="Microsoft.SqlServer.Server.TriggerAction.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1492,6 +1566,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.RevokeObject" />
       <MemberSignature Language="VB.NET" Value="RevokeObject" />
       <MemberSignature Language="C++ CLI" Value="RevokeObject" />
+      <MemberSignature Language="F#" Value="RevokeObject = 172" Usage="Microsoft.SqlServer.Server.TriggerAction.RevokeObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1512,6 +1587,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.RevokeStatement" />
       <MemberSignature Language="VB.NET" Value="RevokeStatement" />
       <MemberSignature Language="C++ CLI" Value="RevokeStatement" />
+      <MemberSignature Language="F#" Value="RevokeStatement = 169" Usage="Microsoft.SqlServer.Server.TriggerAction.RevokeStatement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1532,6 +1608,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Update" />
       <MemberSignature Language="VB.NET" Value="Update" />
       <MemberSignature Language="C++ CLI" Value="Update" />
+      <MemberSignature Language="F#" Value="Update = 2" Usage="Microsoft.SqlServer.Server.TriggerAction.Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarTextAlign" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolBarTextAlign" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolBarTextAlign" />
+  <TypeSignature Language="F#" Value="type ToolBarTextAlign = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarTextAlign.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 1" Usage="System.Windows.Forms.ToolBarTextAlign.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarTextAlign.Underneath" />
       <MemberSignature Language="VB.NET" Value="Underneath" />
       <MemberSignature Language="C++ CLI" Value="Underneath" />
+      <MemberSignature Language="F#" Value="Underneath = 0" Usage="System.Windows.Forms.ToolBarTextAlign.Underneath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

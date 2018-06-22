@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlCellType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataControlCellType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataControlCellType" />
+  <TypeSignature Language="F#" Value="type DataControlCellType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCellType.DataCell" />
       <MemberSignature Language="VB.NET" Value="DataCell" />
       <MemberSignature Language="C++ CLI" Value="DataCell" />
+      <MemberSignature Language="F#" Value="DataCell = 2" Usage="System.Web.UI.WebControls.DataControlCellType.DataCell" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCellType.Footer" />
       <MemberSignature Language="VB.NET" Value="Footer" />
       <MemberSignature Language="C++ CLI" Value="Footer" />
+      <MemberSignature Language="F#" Value="Footer = 1" Usage="System.Web.UI.WebControls.DataControlCellType.Footer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCellType.Header" />
       <MemberSignature Language="VB.NET" Value="Header" />
       <MemberSignature Language="C++ CLI" Value="Header" />
+      <MemberSignature Language="F#" Value="Header = 0" Usage="System.Web.UI.WebControls.DataControlCellType.Header" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

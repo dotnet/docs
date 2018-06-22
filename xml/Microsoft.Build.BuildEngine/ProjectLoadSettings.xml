@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.ProjectLoadSettings" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProjectLoadSettings" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProjectLoadSettings" />
+  <TypeSignature Language="F#" Value="type ProjectLoadSettings = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.ProjectLoadSettings.IgnoreMissingImports" />
       <MemberSignature Language="VB.NET" Value="IgnoreMissingImports" />
       <MemberSignature Language="C++ CLI" Value="IgnoreMissingImports" />
+      <MemberSignature Language="F#" Value="IgnoreMissingImports = 1" Usage="Microsoft.Build.BuildEngine.ProjectLoadSettings.IgnoreMissingImports" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.ProjectLoadSettings.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Build.BuildEngine.ProjectLoadSettings.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

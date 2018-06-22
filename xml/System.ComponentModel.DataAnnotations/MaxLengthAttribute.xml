@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.MaxLengthAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class MaxLengthAttribute&#xA;Inherits ValidationAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MaxLengthAttribute : System::ComponentModel::DataAnnotations::ValidationAttribute" />
+  <TypeSignature Language="F#" Value="type MaxLengthAttribute = class&#xA;    inherit ValidationAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MaxLengthAttribute(int length);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.MaxLengthAttribute : int -&gt; System.ComponentModel.DataAnnotations.MaxLengthAttribute" Usage="new System.ComponentModel.DataAnnotations.MaxLengthAttribute length" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.MaxLengthAttribute.FormatErrorMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatErrorMessage (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ FormatErrorMessage(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.FormatErrorMessage : string -&gt; string" Usage="maxLengthAttribute.FormatErrorMessage name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.MaxLengthAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="maxLengthAttribute.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.MaxLengthAttribute.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.ComponentModel.DataAnnotations.MaxLengthAttribute.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

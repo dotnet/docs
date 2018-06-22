@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcTransaction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcTransaction&#xA;Inherits DbTransaction" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcTransaction sealed : System::Data::Common::DbTransaction" />
+  <TypeSignature Language="F#" Value="type OdbcTransaction = class&#xA;    inherit DbTransaction" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcTransaction.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="odbcTransaction.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcTransaction.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As OdbcConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcConnection ^ Connection { System::Data::Odbc::OdbcConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.Odbc.OdbcConnection" Usage="System.Data.Odbc.OdbcTransaction.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcTransaction.DbConnection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbConnection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection" Usage="System.Data.Odbc.OdbcTransaction.DbConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcTransaction.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="odbcTransaction.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcTransaction.IsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::IsolationLevel IsolationLevel { System::Data::IsolationLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Data.IsolationLevel" Usage="System.Data.Odbc.OdbcTransaction.IsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcTransaction.Rollback" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback();" />
+      <MemberSignature Language="F#" Value="override this.Rollback : unit -&gt; unit" Usage="odbcTransaction.Rollback " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

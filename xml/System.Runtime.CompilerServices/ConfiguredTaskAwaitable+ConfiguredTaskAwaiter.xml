@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter" />
   <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredTaskAwaitable.ConfiguredTaskAwaiter&#xA;Implements ICriticalNotifyCompletion" />
   <TypeSignature Language="C++ CLI" Value="public: value class ConfiguredTaskAwaitable::ConfiguredTaskAwaiter : System::Runtime::CompilerServices::ICriticalNotifyCompletion" />
+  <TypeSignature Language="F#" Value="type ConfiguredTaskAwaitable.ConfiguredTaskAwaiter = struct&#xA;    interface ICriticalNotifyCompletion&#xA;    interface INotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetResult ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetResult();" />
+      <MemberSignature Language="F#" Value="member this.GetResult : unit -&gt; unit" Usage="configuredTaskAwaiter.GetResult " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted (continuation As Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnCompleted(Action ^ continuation);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : Action -&gt; unit&#xA;override this.OnCompleted : Action -&gt; unit" Usage="configuredTaskAwaiter.OnCompleted continuation" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)</InterfaceMember>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnsafeOnCompleted (continuation As Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnsafeOnCompleted(Action ^ continuation);" />
+      <MemberSignature Language="F#" Value="abstract member UnsafeOnCompleted : Action -&gt; unit&#xA;override this.UnsafeOnCompleted : Action -&gt; unit" Usage="configuredTaskAwaiter.UnsafeOnCompleted continuation" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)</InterfaceMember>

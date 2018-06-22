@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearDecimalKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class LinearDecimalKeyFrame&#xA;Inherits DecimalKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinearDecimalKeyFrame : System::Windows::Media::Animation::DecimalKeyFrame" />
+  <TypeSignature Language="F#" Value="type LinearDecimalKeyFrame = class&#xA;    inherit DecimalKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDecimalKeyFrame.#ctor(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearDecimalKeyFrame(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearDecimalKeyFrame : decimal -&gt; System.Windows.Media.Animation.LinearDecimalKeyFrame" Usage="new System.Windows.Media.Animation.LinearDecimalKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Decimal value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearDecimalKeyFrame(System::Decimal value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearDecimalKeyFrame : decimal * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.LinearDecimalKeyFrame" Usage="new System.Windows.Media.Animation.LinearDecimalKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDecimalKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="linearDecimalKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDecimalKeyFrame.InterpolateValueCore(System.Decimal,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Decimal, keyFrameProgress As Double) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Decimal InterpolateValueCore(System::Decimal baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : decimal * double -&gt; decimal" Usage="linearDecimalKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

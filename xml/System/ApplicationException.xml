@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ApplicationException" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationException : Exception" />
+  <TypeSignature Language="F#" Value="type ApplicationException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ApplicationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new ApplicationException : string -&gt; ApplicationException" Usage="new System.ApplicationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ApplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ApplicationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new ApplicationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; ApplicationException" Usage="new System.ApplicationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ApplicationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new ApplicationException : string * Exception -&gt; ApplicationException" Usage="new System.ApplicationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

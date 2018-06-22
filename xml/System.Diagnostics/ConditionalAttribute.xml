@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ConditionalAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConditionalAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConditionalAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ConditionalAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConditionalAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (conditionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConditionalAttribute(System::String ^ conditionString);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.ConditionalAttribute : string -&gt; System.Diagnostics.ConditionalAttribute" Usage="new System.Diagnostics.ConditionalAttribute conditionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ConditionalAttribute.ConditionString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConditionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConditionString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionString : string" Usage="System.Diagnostics.ConditionalAttribute.ConditionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

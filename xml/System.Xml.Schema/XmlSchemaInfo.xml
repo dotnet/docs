@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaInfo&#xA;Implements IXmlSchemaInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaInfo : System::Xml::Schema::IXmlSchemaInfo" />
+  <TypeSignature Language="F#" Value="type XmlSchemaInfo = class&#xA;    interface IXmlSchemaInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInfo.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentType As XmlSchemaContentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaContentType ContentType { System::Xml::Schema::XmlSchemaContentType get(); void set(System::Xml::Schema::XmlSchemaContentType value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : System.Xml.Schema.XmlSchemaContentType with get, set" Usage="System.Xml.Schema.XmlSchemaInfo.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInfo.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool with get, set" Usage="System.Xml.Schema.XmlSchemaInfo.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInfo.IsNil" />
       <MemberSignature Language="VB.NET" Value="Public Property IsNil As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNil { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsNil : bool with get, set" Usage="System.Xml.Schema.XmlSchemaInfo.IsNil" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInfo.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberType As XmlSchemaSimpleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSimpleType ^ MemberType { System::Xml::Schema::XmlSchemaSimpleType ^ get(); void set(System::Xml::Schema::XmlSchemaSimpleType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Xml.Schema.XmlSchemaSimpleType with get, set" Usage="System.Xml.Schema.XmlSchemaInfo.MemberType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInfo.SchemaAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Property SchemaAttribute As XmlSchemaAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAttribute ^ SchemaAttribute { System::Xml::Schema::XmlSchemaAttribute ^ get(); void set(System::Xml::Schema::XmlSchemaAttribute ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaAttribute : System.Xml.Schema.XmlSchemaAttribute with get, set" Usage="System.Xml.Schema.XmlSchemaInfo.SchemaAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -279,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInfo.SchemaElement" />
       <MemberSignature Language="VB.NET" Value="Public Property SchemaElement As XmlSchemaElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaElement ^ SchemaElement { System::Xml::Schema::XmlSchemaElement ^ get(); void set(System::Xml::Schema::XmlSchemaElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaElement : System.Xml.Schema.XmlSchemaElement with get, set" Usage="System.Xml.Schema.XmlSchemaInfo.SchemaElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -327,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInfo.SchemaType" />
       <MemberSignature Language="VB.NET" Value="Public Property SchemaType As XmlSchemaType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaType ^ SchemaType { System::Xml::Schema::XmlSchemaType ^ get(); void set(System::Xml::Schema::XmlSchemaType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaType : System.Xml.Schema.XmlSchemaType with get, set" Usage="System.Xml.Schema.XmlSchemaInfo.SchemaType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -380,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInfo.Validity" />
       <MemberSignature Language="VB.NET" Value="Public Property Validity As XmlSchemaValidity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaValidity Validity { System::Xml::Schema::XmlSchemaValidity get(); void set(System::Xml::Schema::XmlSchemaValidity value); };" />
+      <MemberSignature Language="F#" Value="member this.Validity : System.Xml.Schema.XmlSchemaValidity with get, set" Usage="System.Xml.Schema.XmlSchemaInfo.Validity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

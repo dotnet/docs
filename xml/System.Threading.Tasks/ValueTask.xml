@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ValueTask" />
   <TypeSignature Language="VB.NET" Value="Public Structure ValueTask&#xA;Implements IEquatable(Of ValueTask)" />
   <TypeSignature Language="C++ CLI" Value="public value class ValueTask : IEquatable&lt;System::Threading::Tasks::ValueTask&gt;" />
+  <TypeSignature Language="F#" Value="type ValueTask = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.Task task) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.#ctor(System.Threading.Tasks.Task)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTask(System::Threading::Tasks::Task ^ task);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.ValueTask : System.Threading.Tasks.Task -&gt; System.Threading.Tasks.ValueTask" Usage="new System.Threading.Tasks.ValueTask task" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.#ctor(System.Threading.Tasks.Sources.IValueTaskSource,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As IValueTaskSource, token As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTask(System::Threading::Tasks::Sources::IValueTaskSource ^ source, short token);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.ValueTask : System.Threading.Tasks.Sources.IValueTaskSource * int16 -&gt; System.Threading.Tasks.ValueTask" Usage="new System.Threading.Tasks.ValueTask (source, token)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.AsTask" />
       <MemberSignature Language="VB.NET" Value="Public Function AsTask () As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AsTask();" />
+      <MemberSignature Language="F#" Value="member this.AsTask : unit -&gt; System.Threading.Tasks.Task" Usage="valueTask.AsTask " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.ConfigureAwait(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConfigureAwait (continueOnCapturedContext As Boolean) As ConfiguredValueTaskAwaitable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable ConfigureAwait(bool continueOnCapturedContext);" />
+      <MemberSignature Language="F#" Value="member this.ConfigureAwait : bool -&gt; System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable" Usage="valueTask.ConfigureAwait continueOnCapturedContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="valueTask.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.Equals(System.Threading.Tasks.ValueTask)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ValueTask) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Threading::Tasks::ValueTask other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Threading.Tasks.ValueTask -&gt; bool" Usage="valueTask.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As ValueTaskAwaiter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ValueTaskAwaiter GetAwaiter();" />
+      <MemberSignature Language="F#" Value="member this.GetAwaiter : unit -&gt; System.Runtime.CompilerServices.ValueTaskAwaiter" Usage="valueTask.GetAwaiter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -193,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="valueTask.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -214,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask.IsCanceled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCanceled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCanceled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCanceled : bool" Usage="System.Threading.Tasks.ValueTask.IsCanceled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -234,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.Threading.Tasks.ValueTask.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -254,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask.IsCompletedSuccessfully" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompletedSuccessfully As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompletedSuccessfully { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompletedSuccessfully : bool" Usage="System.Threading.Tasks.ValueTask.IsCompletedSuccessfully" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -274,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask.IsFaulted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFaulted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFaulted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFaulted : bool" Usage="System.Threading.Tasks.ValueTask.IsFaulted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -294,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.op_Equality(System.Threading.Tasks.ValueTask,System.Threading.Tasks.ValueTask)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ValueTask, right As ValueTask) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Threading::Tasks::ValueTask left, System::Threading::Tasks::ValueTask right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Threading.Tasks.ValueTask * System.Threading.Tasks.ValueTask -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -320,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.op_Inequality(System.Threading.Tasks.ValueTask,System.Threading.Tasks.ValueTask)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ValueTask, right As ValueTask) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Threading::Tasks::ValueTask left, System::Threading::Tasks::ValueTask right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Threading.Tasks.ValueTask * System.Threading.Tasks.ValueTask -&gt; bool" Usage="System.Threading.Tasks.ValueTask.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -346,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask.Preserve" />
       <MemberSignature Language="VB.NET" Value="Public Function Preserve () As ValueTask" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::ValueTask Preserve();" />
+      <MemberSignature Language="F#" Value="member this.Preserve : unit -&gt; System.Threading.Tasks.ValueTask" Usage="valueTask.Preserve " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

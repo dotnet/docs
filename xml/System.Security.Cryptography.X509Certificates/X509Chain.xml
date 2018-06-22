@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509Chain" />
   <TypeSignature Language="VB.NET" Value="Public Class X509Chain&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509Chain : IDisposable" />
+  <TypeSignature Language="F#" Value="type X509Chain = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Chain.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (useMachineContext As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Chain(bool useMachineContext);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Chain : bool -&gt; System.Security.Cryptography.X509Certificates.X509Chain" Usage="new System.Security.Cryptography.X509Certificates.X509Chain useMachineContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Chain.#ctor(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (chainContext As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Chain(IntPtr chainContext);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Chain : nativeint -&gt; System.Security.Cryptography.X509Certificates.X509Chain" Usage="new System.Security.Cryptography.X509Certificates.X509Chain chainContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (certificate As X509Certificate2) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="member this.Build : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="x509Chain.Build certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -266,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Chain.ChainContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChainContext As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ChainContext { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChainContext : nativeint" Usage="System.Security.Cryptography.X509Certificates.X509Chain.ChainContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -309,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Chain.ChainElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChainElements As X509ChainElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509ChainElementCollection ^ ChainElements { System::Security::Cryptography::X509Certificates::X509ChainElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChainElements : System.Security.Cryptography.X509Certificates.X509ChainElementCollection" Usage="System.Security.Cryptography.X509Certificates.X509Chain.ChainElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -359,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Chain.ChainPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property ChainPolicy As X509ChainPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509ChainPolicy ^ ChainPolicy { System::Security::Cryptography::X509Certificates::X509ChainPolicy ^ get(); void set(System::Security::Cryptography::X509Certificates::X509ChainPolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChainPolicy : System.Security.Cryptography.X509Certificates.X509ChainPolicy with get, set" Usage="System.Security.Cryptography.X509Certificates.X509Chain.ChainPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -408,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Chain.ChainStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChainStatus As X509ChainStatus()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Security::Cryptography::X509Certificates::X509ChainStatus&gt; ^ ChainStatus { cli::array &lt;System::Security::Cryptography::X509Certificates::X509ChainStatus&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChainStatus : System.Security.Cryptography.X509Certificates.X509ChainStatus[]" Usage="System.Security.Cryptography.X509Certificates.X509Chain.ChainStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -447,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Chain.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As X509Chain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509Chain ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.X509Certificates.X509Chain" Usage="System.Security.Cryptography.X509Certificates.X509Chain.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -505,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Chain.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="x509Chain.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -549,6 +559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Chain.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="x509Chain.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -594,6 +605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Chain.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!X509Chain ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="x509Chain.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -615,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Chain.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="x509Chain.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -647,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Chain.SafeHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeHandle As SafeX509ChainHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeX509ChainHandle ^ SafeHandle { Microsoft::Win32::SafeHandles::SafeX509ChainHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SafeHandle : Microsoft.Win32.SafeHandles.SafeX509ChainHandle" Usage="System.Security.Cryptography.X509Certificates.X509Chain.SafeHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

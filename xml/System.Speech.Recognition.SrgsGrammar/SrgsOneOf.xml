@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsOneOf" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsOneOf&#xA;Inherits SrgsElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsOneOf : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
+  <TypeSignature Language="F#" Value="type SrgsOneOf = class&#xA;    inherit SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +117,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsOneOf.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray items As SrgsItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsOneOf(... cli::array &lt;System::Speech::Recognition::SrgsGrammar::SrgsItem ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsOneOf : System.Speech.Recognition.SrgsGrammar.SrgsItem[] -&gt; System.Speech.Recognition.SrgsGrammar.SrgsOneOf" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsOneOf items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -185,6 +187,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsOneOf.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray items As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsOneOf(... cli::array &lt;System::String ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsOneOf : string[] -&gt; System.Speech.Recognition.SrgsGrammar.SrgsOneOf" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsOneOf items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -253,6 +256,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsOneOf.Add(System.Speech.Recognition.SrgsGrammar.SrgsItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As SrgsItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Speech::Recognition::SrgsGrammar::SrgsItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Speech.Recognition.SrgsGrammar.SrgsItem -&gt; unit" Usage="srgsOneOf.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -320,6 +324,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsOneOf.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As Collection(Of SrgsItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Speech::Recognition::SrgsGrammar::SrgsItem ^&gt; ^ Items { System::Collections::ObjectModel::Collection&lt;System::Speech::Recognition::SrgsGrammar::SrgsItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.ObjectModel.Collection&lt;System.Speech.Recognition.SrgsGrammar.SrgsItem&gt;" Usage="System.Speech.Recognition.SrgsGrammar.SrgsOneOf.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

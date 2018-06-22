@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.PropertyValueOrigin" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyValueOrigin" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyValueOrigin" />
+  <TypeSignature Language="F#" Value="type PropertyValueOrigin = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Configuration.PropertyValueOrigin.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.Inherited" />
       <MemberSignature Language="VB.NET" Value="Inherited" />
       <MemberSignature Language="C++ CLI" Value="Inherited" />
+      <MemberSignature Language="F#" Value="Inherited = 1" Usage="System.Configuration.PropertyValueOrigin.Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.SetHere" />
       <MemberSignature Language="VB.NET" Value="SetHere" />
       <MemberSignature Language="C++ CLI" Value="SetHere" />
+      <MemberSignature Language="F#" Value="SetHere = 2" Usage="System.Configuration.PropertyValueOrigin.SetHere" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

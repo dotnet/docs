@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class TransactionInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransactionInformation" />
+  <TypeSignature Language="F#" Value="type TransactionInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionInformation.CreationTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreationTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : DateTime" Usage="System.Transactions.TransactionInformation.CreationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionInformation.DistributedIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DistributedIdentifier As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid DistributedIdentifier { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.DistributedIdentifier : Guid" Usage="System.Transactions.TransactionInformation.DistributedIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionInformation.LocalIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalIdentifier As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalIdentifier { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalIdentifier : string" Usage="System.Transactions.TransactionInformation.LocalIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionInformation.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As TransactionStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::TransactionStatus Status { System::Transactions::TransactionStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Transactions.TransactionStatus" Usage="System.Transactions.TransactionInformation.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

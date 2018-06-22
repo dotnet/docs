@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.TabInfo" />
   <TypeSignature Language="VB.NET" Value="Public Structure TabInfo" />
   <TypeSignature Language="C++ CLI" Value="public value class TabInfo" />
+  <TypeSignature Language="F#" Value="type TabInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TabInfo.Column" />
       <MemberSignature Language="VB.NET" Value="Public Column As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short Column;" />
+      <MemberSignature Language="F#" Value="val mutable Column : int16" Usage="Microsoft.VisualBasic.TabInfo.Column" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

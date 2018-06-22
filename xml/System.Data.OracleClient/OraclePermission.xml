@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OraclePermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OraclePermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class OraclePermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type OraclePermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OraclePermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OraclePermission : System.Security.Permissions.PermissionState -&gt; System.Data.OracleClient.OraclePermission" Usage="new System.Data.OracleClient.OraclePermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.Add(System.String,System.String,System.Data.KeyRestrictionBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (connectionString As String, restrictions As String, behavior As KeyRestrictionBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ connectionString, System::String ^ restrictions, System::Data::KeyRestrictionBehavior behavior);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string * System.Data.KeyRestrictionBehavior -&gt; unit" Usage="oraclePermission.Add (connectionString, restrictions, behavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermission.AllowBlankPassword" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowBlankPassword As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowBlankPassword { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowBlankPassword : bool with get, set" Usage="System.Data.OracleClient.OraclePermission.AllowBlankPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission&#xA;override this.Copy : unit -&gt; System.Security.IPermission" Usage="oraclePermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="oraclePermission.FromXml securityElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="oraclePermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool&#xA;override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="oraclePermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="oraclePermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="oraclePermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="oraclePermission.Union target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.SerializationFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum SerializationFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class SerializationFormat" />
+  <TypeSignature Language="F#" Value="type SerializationFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SerializationFormat.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 1" Usage="System.Web.UI.DataVisualization.Charting.SerializationFormat.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SerializationFormat.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 0" Usage="System.Web.UI.DataVisualization.Charting.SerializationFormat.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

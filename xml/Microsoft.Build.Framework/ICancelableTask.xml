@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ICancelableTask" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICancelableTask&#xA;Implements ITask" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICancelableTask : Microsoft::Build::Framework::ITask" />
+  <TypeSignature Language="F#" Value="type ICancelableTask = interface&#xA;    interface ITask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ICancelableTask.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit" Usage="iCancelableTask.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

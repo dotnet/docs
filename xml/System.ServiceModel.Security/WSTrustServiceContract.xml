@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustServiceContract" />
   <TypeSignature Language="VB.NET" Value="Public Class WSTrustServiceContract&#xA;Implements IContractBehavior, IWsdlExportExtension, IWSTrust13AsyncContract, IWSTrust13SyncContract, IWSTrustFeb2005AsyncContract, IWSTrustFeb2005SyncContract" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSTrustServiceContract : System::ServiceModel::Description::IContractBehavior, System::ServiceModel::Description::IWsdlExportExtension, System::ServiceModel::Security::IWSTrust13AsyncContract, System::ServiceModel::Security::IWSTrust13SyncContract, System::ServiceModel::Security::IWSTrustFeb2005AsyncContract, System::ServiceModel::Security::IWSTrustFeb2005SyncContract" />
+  <TypeSignature Language="F#" Value="type WSTrustServiceContract = class&#xA;    interface IWSTrustFeb2005SyncContract&#xA;    interface IWSTrust13SyncContract&#xA;    interface IWSTrustFeb2005AsyncContract&#xA;    interface IWSTrust13AsyncContract&#xA;    interface IWsdlExportExtension&#xA;    interface IContractBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Configuration.SecurityTokenServiceConfiguration securityTokenServiceConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.#ctor(System.IdentityModel.Configuration.SecurityTokenServiceConfiguration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustServiceContract(System::IdentityModel::Configuration::SecurityTokenServiceConfiguration ^ securityTokenServiceConfiguration);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSTrustServiceContract : System.IdentityModel.Configuration.SecurityTokenServiceConfiguration -&gt; System.ServiceModel.Security.WSTrustServiceContract" Usage="new System.ServiceModel.Security.WSTrustServiceContract securityTokenServiceConfiguration" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::ContractDescription ^ contractDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
+      <MemberSignature Language="F#" Value="abstract member AddBindingParameters : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit&#xA;override this.AddBindingParameters : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit" Usage="wSTrustServiceContract.AddBindingParameters (contractDescription, endpoint, bindingParameters)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
@@ -112,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime clientRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyClientBehavior(System::ServiceModel::Description::ContractDescription ^ contractDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::ClientRuntime ^ clientRuntime);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyClientBehavior : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit&#xA;override this.ApplyClientBehavior : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit" Usage="wSTrustServiceContract.ApplyClientBehavior (contractDescription, endpoint, clientRuntime)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)</InterfaceMember>
@@ -141,6 +145,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.DispatchRuntime dispatchRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::ContractDescription ^ contractDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::DispatchRuntime ^ dispatchRuntime);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDispatchBehavior : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.DispatchRuntime -&gt; unit&#xA;override this.ApplyDispatchBehavior : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.DispatchRuntime -&gt; unit" Usage="wSTrustServiceContract.ApplyDispatchBehavior (contractDescription, endpoint, dispatchRuntime)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)</InterfaceMember>
@@ -170,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult BeginDispatchRequest(class System.ServiceModel.Security.DispatchContext dispatchContext, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginDispatchRequest(System.ServiceModel.Security.DispatchContext,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ BeginDispatchRequest(System::ServiceModel::Security::DispatchContext ^ dispatchContext, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="abstract member BeginDispatchRequest : System.ServiceModel.Security.DispatchContext * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginDispatchRequest : System.ServiceModel.Security.DispatchContext * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginDispatchRequest (dispatchContext, asyncCallback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginProcessCore(System.ServiceModel.Channels.Message,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer,System.String,System.String,System.String,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function BeginProcessCore (requestMessage As Message, requestSerializer As WSTrustRequestSerializer, responseSerializer As WSTrustResponseSerializer, requestAction As String, responseAction As String, trustNamespace As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ BeginProcessCore(System::ServiceModel::Channels::Message ^ requestMessage, System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ requestSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ responseSerializer, System::String ^ requestAction, System::String ^ responseAction, System::String ^ trustNamespace, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginProcessCore : System.ServiceModel.Channels.Message * System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer * string * string * string * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginProcessCore : System.ServiceModel.Channels.Message * System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer * string * string * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginProcessCore (requestMessage, requestSerializer, responseSerializer, requestAction, responseAction, trustNamespace, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrust13Cancel (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrust13Cancel(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrust13Cancel : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrust13Cancel : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrust13Cancel (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.BeginTrust13Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -268,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrust13CancelResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrust13CancelResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrust13CancelResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrust13CancelResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrust13CancelResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.BeginTrust13CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrust13Issue (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrust13Issue(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrust13Issue : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrust13Issue : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrust13Issue (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.BeginTrust13Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrust13IssueResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrust13IssueResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrust13IssueResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrust13IssueResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrust13IssueResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.BeginTrust13IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrust13Renew (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrust13Renew(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrust13Renew : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrust13Renew : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrust13Renew (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.BeginTrust13Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -392,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrust13RenewResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrust13RenewResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrust13RenewResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrust13RenewResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrust13RenewResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.BeginTrust13RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -423,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrust13Validate (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrust13Validate(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrust13Validate : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrust13Validate : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrust13Validate (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.BeginTrust13Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -454,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrust13ValidateResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrust13ValidateResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrust13ValidateResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrust13ValidateResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrust13ValidateResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.BeginTrust13ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -485,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005Cancel (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrustFeb2005Cancel(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005Cancel : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrustFeb2005Cancel : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrustFeb2005Cancel (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -516,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005CancelResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrustFeb2005CancelResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005CancelResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrustFeb2005CancelResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrustFeb2005CancelResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -547,6 +564,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005Issue (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrustFeb2005Issue(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005Issue : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrustFeb2005Issue : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrustFeb2005Issue (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -578,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005IssueResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrustFeb2005IssueResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005IssueResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrustFeb2005IssueResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrustFeb2005IssueResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -609,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005Renew (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrustFeb2005Renew(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005Renew : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrustFeb2005Renew : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrustFeb2005Renew (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -640,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005RenewResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrustFeb2005RenewResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005RenewResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrustFeb2005RenewResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrustFeb2005RenewResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -671,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005Validate (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrustFeb2005Validate(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005Validate : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrustFeb2005Validate : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrustFeb2005Validate (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -702,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005ValidateResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginTrustFeb2005ValidateResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005ValidateResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrustFeb2005ValidateResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="wSTrustServiceContract.BeginTrustFeb2005ValidateResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -733,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.CreateDispatchContext(System.ServiceModel.Channels.Message,System.String,System.String,System.String,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDispatchContext (requestMessage As Message, requestAction As String, responseAction As String, trustNamespace As String, requestSerializer As WSTrustRequestSerializer, responseSerializer As WSTrustResponseSerializer, serializationContext As WSTrustSerializationContext) As DispatchContext" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Security::DispatchContext ^ CreateDispatchContext(System::ServiceModel::Channels::Message ^ requestMessage, System::String ^ requestAction, System::String ^ responseAction, System::String ^ trustNamespace, System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ requestSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ responseSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ serializationContext);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDispatchContext : System.ServiceModel.Channels.Message * string * string * string * System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; System.ServiceModel.Security.DispatchContext&#xA;override this.CreateDispatchContext : System.ServiceModel.Channels.Message * string * string * string * System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; System.ServiceModel.Security.DispatchContext" Usage="wSTrustServiceContract.CreateDispatchContext (requestMessage, requestAction, responseAction, trustNamespace, requestSerializer, responseSerializer, serializationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -769,6 +793,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.CreateSerializationContext" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateSerializationContext () As WSTrustSerializationContext" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ CreateSerializationContext();" />
+      <MemberSignature Language="F#" Value="abstract member CreateSerializationContext : unit -&gt; System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext&#xA;override this.CreateSerializationContext : unit -&gt; System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" Usage="wSTrustServiceContract.CreateSerializationContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -789,6 +814,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DispatchRequest(class System.ServiceModel.Security.DispatchContext dispatchContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DispatchRequest(System::ServiceModel::Security::DispatchContext ^ dispatchContext);" />
+      <MemberSignature Language="F#" Value="abstract member DispatchRequest : System.ServiceModel.Security.DispatchContext -&gt; unit&#xA;override this.DispatchRequest : System.ServiceModel.Security.DispatchContext -&gt; unit" Usage="wSTrustServiceContract.DispatchRequest dispatchContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -812,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndDispatchRequest(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function EndDispatchRequest (ar As IAsyncResult) As DispatchContext" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Security::DispatchContext ^ EndDispatchRequest(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndDispatchRequest : IAsyncResult -&gt; System.ServiceModel.Security.DispatchContext&#xA;override this.EndDispatchRequest : IAsyncResult -&gt; System.ServiceModel.Security.DispatchContext" Usage="wSTrustServiceContract.EndDispatchRequest ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -837,6 +864,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndProcessCore(System.IAsyncResult,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function EndProcessCore (ar As IAsyncResult, requestAction As String, responseAction As String, trustNamespace As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Channels::Message ^ EndProcessCore(IAsyncResult ^ ar, System::String ^ requestAction, System::String ^ responseAction, System::String ^ trustNamespace);" />
+      <MemberSignature Language="F#" Value="abstract member EndProcessCore : IAsyncResult * string * string * string -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndProcessCore : IAsyncResult * string * string * string -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndProcessCore (ar, requestAction, responseAction, trustNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -868,6 +896,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Cancel(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrust13Cancel (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrust13Cancel(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrust13Cancel : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrust13Cancel : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrust13Cancel ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.EndTrust13Cancel(System.IAsyncResult)</InterfaceMember>
@@ -895,6 +924,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13CancelResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrust13CancelResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrust13CancelResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrust13CancelResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrust13CancelResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrust13CancelResponse ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.EndTrust13CancelResponse(System.IAsyncResult)</InterfaceMember>
@@ -922,6 +952,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Issue(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrust13Issue (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrust13Issue(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrust13Issue : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrust13Issue : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrust13Issue ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.EndTrust13Issue(System.IAsyncResult)</InterfaceMember>
@@ -949,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13IssueResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrust13IssueResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrust13IssueResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrust13IssueResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrust13IssueResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrust13IssueResponse ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.EndTrust13IssueResponse(System.IAsyncResult)</InterfaceMember>
@@ -976,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Renew(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrust13Renew (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrust13Renew(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrust13Renew : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrust13Renew : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrust13Renew ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.EndTrust13Renew(System.IAsyncResult)</InterfaceMember>
@@ -1003,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13RenewResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrust13RenewResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrust13RenewResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrust13RenewResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrust13RenewResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrust13RenewResponse ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.EndTrust13RenewResponse(System.IAsyncResult)</InterfaceMember>
@@ -1030,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Validate(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrust13Validate (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrust13Validate(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrust13Validate : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrust13Validate : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrust13Validate ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.EndTrust13Validate(System.IAsyncResult)</InterfaceMember>
@@ -1057,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13ValidateResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrust13ValidateResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrust13ValidateResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrust13ValidateResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrust13ValidateResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrust13ValidateResponse ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13AsyncContract.EndTrust13ValidateResponse(System.IAsyncResult)</InterfaceMember>
@@ -1084,6 +1120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Cancel(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005Cancel (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrustFeb2005Cancel(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005Cancel : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrustFeb2005Cancel : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrustFeb2005Cancel ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Cancel(System.IAsyncResult)</InterfaceMember>
@@ -1111,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005CancelResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005CancelResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrustFeb2005CancelResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005CancelResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrustFeb2005CancelResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrustFeb2005CancelResponse ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005CancelResponse(System.IAsyncResult)</InterfaceMember>
@@ -1138,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Issue(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005Issue (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrustFeb2005Issue(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005Issue : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrustFeb2005Issue : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrustFeb2005Issue ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Issue(System.IAsyncResult)</InterfaceMember>
@@ -1165,6 +1204,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005IssueResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005IssueResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrustFeb2005IssueResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005IssueResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrustFeb2005IssueResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrustFeb2005IssueResponse ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005IssueResponse(System.IAsyncResult)</InterfaceMember>
@@ -1192,6 +1232,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Renew(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005Renew (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrustFeb2005Renew(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005Renew : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrustFeb2005Renew : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrustFeb2005Renew ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Renew(System.IAsyncResult)</InterfaceMember>
@@ -1219,6 +1260,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005RenewResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005RenewResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrustFeb2005RenewResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005RenewResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrustFeb2005RenewResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrustFeb2005RenewResponse ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005RenewResponse(System.IAsyncResult)</InterfaceMember>
@@ -1246,6 +1288,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Validate(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005Validate (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrustFeb2005Validate(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005Validate : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrustFeb2005Validate : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrustFeb2005Validate ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Validate(System.IAsyncResult)</InterfaceMember>
@@ -1273,6 +1316,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005ValidateResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005ValidateResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ EndTrustFeb2005ValidateResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005ValidateResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message&#xA;override this.EndTrustFeb2005ValidateResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.EndTrustFeb2005ValidateResponse ar" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005ValidateResponse(System.IAsyncResult)</InterfaceMember>
@@ -1300,6 +1344,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ExportContract (exporter As WsdlExporter, context As WsdlContractConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExportContract(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlContractConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ExportContract : System.ServiceModel.Description.WsdlExporter * System.ServiceModel.Description.WsdlContractConversionContext -&gt; unit&#xA;override this.ExportContract : System.ServiceModel.Description.WsdlExporter * System.ServiceModel.Description.WsdlContractConversionContext -&gt; unit" Usage="wSTrustServiceContract.ExportContract (exporter, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)</InterfaceMember>
@@ -1335,6 +1380,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ExportEndpoint (exporter As WsdlExporter, context As WsdlEndpointConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExportEndpoint(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlEndpointConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ExportEndpoint : System.ServiceModel.Description.WsdlExporter * System.ServiceModel.Description.WsdlEndpointConversionContext -&gt; unit&#xA;override this.ExportEndpoint : System.ServiceModel.Description.WsdlExporter * System.ServiceModel.Description.WsdlEndpointConversionContext -&gt; unit" Usage="wSTrustServiceContract.ExportEndpoint (exporter, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)</InterfaceMember>
@@ -1377,6 +1423,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FixMessageElement(class System.Web.Services.Description.ServiceDescription serviceDescription, class System.Web.Services.Description.PortType portType, class System.ServiceModel.Description.WsdlEndpointConversionContext context, string operationName, class System.Xml.XmlQualifiedName inputMessageElement, class System.Xml.XmlQualifiedName outputMessageElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.FixMessageElement(System.Web.Services.Description.ServiceDescription,System.Web.Services.Description.PortType,System.ServiceModel.Description.WsdlEndpointConversionContext,System.String,System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FixMessageElement(System::Web::Services::Description::ServiceDescription ^ serviceDescription, System::Web::Services::Description::PortType ^ portType, System::ServiceModel::Description::WsdlEndpointConversionContext ^ context, System::String ^ operationName, System::Xml::XmlQualifiedName ^ inputMessageElement, System::Xml::XmlQualifiedName ^ outputMessageElement);" />
+      <MemberSignature Language="F#" Value="abstract member FixMessageElement : System.Web.Services.Description.ServiceDescription * System.Web.Services.Description.PortType * System.ServiceModel.Description.WsdlEndpointConversionContext * string * System.Xml.XmlQualifiedName * System.Xml.XmlQualifiedName -&gt; unit&#xA;override this.FixMessageElement : System.Web.Services.Description.ServiceDescription * System.Web.Services.Description.PortType * System.ServiceModel.Description.WsdlEndpointConversionContext * string * System.Xml.XmlQualifiedName * System.Xml.XmlQualifiedName -&gt; unit" Usage="wSTrustServiceContract.FixMessageElement (serviceDescription, portType, context, operationName, inputMessageElement, outputMessageElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1433,6 +1480,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.GetRstSecurityTokenResolver" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetRstSecurityTokenResolver () As SecurityTokenResolver" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Selectors::SecurityTokenResolver ^ GetRstSecurityTokenResolver();" />
+      <MemberSignature Language="F#" Value="abstract member GetRstSecurityTokenResolver : unit -&gt; System.IdentityModel.Selectors.SecurityTokenResolver&#xA;override this.GetRstSecurityTokenResolver : unit -&gt; System.IdentityModel.Selectors.SecurityTokenResolver" Usage="wSTrustServiceContract.GetRstSecurityTokenResolver " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1454,6 +1502,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenResolver GetSecurityHeaderTokenResolver(class System.ServiceModel.Channels.RequestContext requestContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.GetSecurityHeaderTokenResolver(System.ServiceModel.Channels.RequestContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Selectors::SecurityTokenResolver ^ GetSecurityHeaderTokenResolver(System::ServiceModel::Channels::RequestContext ^ requestContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetSecurityHeaderTokenResolver : System.ServiceModel.Channels.RequestContext -&gt; System.IdentityModel.Selectors.SecurityTokenResolver&#xA;override this.GetSecurityHeaderTokenResolver : System.ServiceModel.Channels.RequestContext -&gt; System.IdentityModel.Selectors.SecurityTokenResolver" Usage="wSTrustServiceContract.GetSecurityHeaderTokenResolver requestContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1487,6 +1536,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.HandleException(System.Exception,System.String,System.String,System.ServiceModel.EnvelopeVersion)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function HandleException (ex As Exception, trustNamespace As String, action As String, requestEnvelopeVersion As EnvelopeVersion) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool HandleException(Exception ^ ex, System::String ^ trustNamespace, System::String ^ action, System::ServiceModel::EnvelopeVersion ^ requestEnvelopeVersion);" />
+      <MemberSignature Language="F#" Value="abstract member HandleException : Exception * string * string * System.ServiceModel.EnvelopeVersion -&gt; bool&#xA;override this.HandleException : Exception * string * string * System.ServiceModel.EnvelopeVersion -&gt; bool" Usage="wSTrustServiceContract.HandleException (ex, trustNamespace, action, requestEnvelopeVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1517,6 +1567,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ImportSchema(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ImportSchema (exporter As WsdlExporter, context As WsdlEndpointConversionContext, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ImportSchema(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlEndpointConversionContext ^ context, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="abstract member ImportSchema : System.ServiceModel.Description.WsdlExporter * System.ServiceModel.Description.WsdlEndpointConversionContext * string -&gt; unit&#xA;override this.ImportSchema : System.ServiceModel.Description.WsdlExporter * System.ServiceModel.Description.WsdlEndpointConversionContext * string -&gt; unit" Usage="wSTrustServiceContract.ImportSchema (exporter, context, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1560,6 +1611,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.IncludeNamespace(System.ServiceModel.Description.WsdlEndpointConversionContext,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub IncludeNamespace (context As WsdlEndpointConversionContext, prefix As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void IncludeNamespace(System::ServiceModel::Description::WsdlEndpointConversionContext ^ context, System::String ^ prefix, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="abstract member IncludeNamespace : System.ServiceModel.Description.WsdlEndpointConversionContext * string * string -&gt; unit&#xA;override this.IncludeNamespace : System.ServiceModel.Description.WsdlEndpointConversionContext * string * string -&gt; unit" Usage="wSTrustServiceContract.IncludeNamespace (context, prefix, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1589,6 +1641,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessCore(System.ServiceModel.Channels.Message,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ProcessCore (requestMessage As Message, requestSerializer As WSTrustRequestSerializer, responseSerializer As WSTrustResponseSerializer, requestAction As String, responseAction As String, trustNamespace As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessCore(System::ServiceModel::Channels::Message ^ requestMessage, System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ requestSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ responseSerializer, System::String ^ requestAction, System::String ^ responseAction, System::String ^ trustNamespace);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCore : System.ServiceModel.Channels.Message * System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer * string * string * string -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessCore : System.ServiceModel.Channels.Message * System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer * string * string * string -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessCore (requestMessage, requestSerializer, responseSerializer, requestAction, responseAction, trustNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1623,6 +1676,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Cancel(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrust13Cancel(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrust13Cancel : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrust13Cancel : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrust13Cancel message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Cancel(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1649,6 +1703,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13CancelResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13CancelResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrust13CancelResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrust13CancelResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrust13CancelResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrust13CancelResponse message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13CancelResponse(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1675,6 +1730,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Issue(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Issue(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrust13Issue(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrust13Issue : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrust13Issue : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrust13Issue message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Issue(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1701,6 +1757,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13IssueResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13IssueResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrust13IssueResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrust13IssueResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrust13IssueResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrust13IssueResponse message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13IssueResponse(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1727,6 +1784,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Renew(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Renew(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrust13Renew(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrust13Renew : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrust13Renew : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrust13Renew message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Renew(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1753,6 +1811,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13RenewResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13RenewResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrust13RenewResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrust13RenewResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrust13RenewResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrust13RenewResponse message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13RenewResponse(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1779,6 +1838,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Validate(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Validate(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrust13Validate(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrust13Validate : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrust13Validate : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrust13Validate message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Validate(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1805,6 +1865,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13ValidateResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13ValidateResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrust13ValidateResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrust13ValidateResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrust13ValidateResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrust13ValidateResponse message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13ValidateResponse(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1831,6 +1892,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Cancel(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005Cancel(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005Cancel : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrustFeb2005Cancel : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrustFeb2005Cancel message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Cancel(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1857,6 +1919,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005CancelResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005CancelResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005CancelResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrustFeb2005CancelResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrustFeb2005CancelResponse message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1883,6 +1946,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Issue(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Issue(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005Issue(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005Issue : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrustFeb2005Issue : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrustFeb2005Issue message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Issue(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1909,6 +1973,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005IssueResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005IssueResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005IssueResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrustFeb2005IssueResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrustFeb2005IssueResponse message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1935,6 +2000,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Renew(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Renew(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005Renew(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005Renew : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrustFeb2005Renew : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrustFeb2005Renew message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Renew(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1961,6 +2027,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005RenewResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005RenewResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005RenewResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrustFeb2005RenewResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrustFeb2005RenewResponse message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -1987,6 +2054,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Validate(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Validate(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005Validate(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005Validate : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrustFeb2005Validate : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrustFeb2005Validate message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Validate(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -2013,6 +2081,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005ValidateResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005ValidateResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005ValidateResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessTrustFeb2005ValidateResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="wSTrustServiceContract.ProcessTrustFeb2005ValidateResponse message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message)</InterfaceMember>
@@ -2040,6 +2109,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.WSTrustServiceContract.RequestFailed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RequestFailed As EventHandler(Of WSTrustRequestProcessingErrorEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::Security::WSTrustRequestProcessingErrorEventArgs ^&gt; ^ RequestFailed;" />
+      <MemberSignature Language="F#" Value="member this.RequestFailed : EventHandler&lt;System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs&gt; " Usage="member this.RequestFailed : System.EventHandler&lt;System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -2066,6 +2136,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustServiceContract.SecurityTokenServiceConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenServiceConfiguration As SecurityTokenServiceConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::SecurityTokenServiceConfiguration ^ SecurityTokenServiceConfiguration { System::IdentityModel::Configuration::SecurityTokenServiceConfiguration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenServiceConfiguration : System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" Usage="System.ServiceModel.Security.WSTrustServiceContract.SecurityTokenServiceConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -2085,6 +2156,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::ContractDescription ^ contractDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; unit&#xA;override this.Validate : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="wSTrustServiceContract.Validate (contractDescription, endpoint)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)</InterfaceMember>
@@ -2121,6 +2193,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateDispatchContext(class System.ServiceModel.Security.DispatchContext dispatchContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ValidateDispatchContext(System.ServiceModel.Security.DispatchContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateDispatchContext(System::ServiceModel::Security::DispatchContext ^ dispatchContext);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateDispatchContext : System.ServiceModel.Security.DispatchContext -&gt; unit&#xA;override this.ValidateDispatchContext : System.ServiceModel.Security.DispatchContext -&gt; unit" Usage="wSTrustServiceContract.ValidateDispatchContext dispatchContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

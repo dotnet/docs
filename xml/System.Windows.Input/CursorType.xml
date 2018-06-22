@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CursorType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CursorType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CursorType" />
+  <TypeSignature Language="F#" Value="type CursorType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.AppStarting" />
       <MemberSignature Language="VB.NET" Value="AppStarting" />
       <MemberSignature Language="C++ CLI" Value="AppStarting" />
+      <MemberSignature Language="F#" Value="AppStarting = 3" Usage="System.Windows.Input.CursorType.AppStarting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Arrow" />
       <MemberSignature Language="VB.NET" Value="Arrow" />
       <MemberSignature Language="C++ CLI" Value="Arrow" />
+      <MemberSignature Language="F#" Value="Arrow = 2" Usage="System.Windows.Input.CursorType.Arrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ArrowCD" />
       <MemberSignature Language="VB.NET" Value="ArrowCD" />
       <MemberSignature Language="C++ CLI" Value="ArrowCD" />
+      <MemberSignature Language="F#" Value="ArrowCD = 27" Usage="System.Windows.Input.CursorType.ArrowCD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Cross" />
       <MemberSignature Language="VB.NET" Value="Cross" />
       <MemberSignature Language="C++ CLI" Value="Cross" />
+      <MemberSignature Language="F#" Value="Cross = 4" Usage="System.Windows.Input.CursorType.Cross" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Hand" />
       <MemberSignature Language="VB.NET" Value="Hand" />
       <MemberSignature Language="C++ CLI" Value="Hand" />
+      <MemberSignature Language="F#" Value="Hand = 14" Usage="System.Windows.Input.CursorType.Hand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Help" />
       <MemberSignature Language="VB.NET" Value="Help" />
       <MemberSignature Language="C++ CLI" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 5" Usage="System.Windows.Input.CursorType.Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.IBeam" />
       <MemberSignature Language="VB.NET" Value="IBeam" />
       <MemberSignature Language="C++ CLI" Value="IBeam" />
+      <MemberSignature Language="F#" Value="IBeam = 6" Usage="System.Windows.Input.CursorType.IBeam" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.No" />
       <MemberSignature Language="VB.NET" Value="No" />
       <MemberSignature Language="C++ CLI" Value="No" />
+      <MemberSignature Language="F#" Value="No = 1" Usage="System.Windows.Input.CursorType.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -183,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Input.CursorType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -202,6 +212,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Pen" />
       <MemberSignature Language="VB.NET" Value="Pen" />
       <MemberSignature Language="C++ CLI" Value="Pen" />
+      <MemberSignature Language="F#" Value="Pen = 15" Usage="System.Windows.Input.CursorType.Pen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -221,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollAll" />
       <MemberSignature Language="VB.NET" Value="ScrollAll" />
       <MemberSignature Language="C++ CLI" Value="ScrollAll" />
+      <MemberSignature Language="F#" Value="ScrollAll = 18" Usage="System.Windows.Input.CursorType.ScrollAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -240,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollE" />
       <MemberSignature Language="VB.NET" Value="ScrollE" />
       <MemberSignature Language="C++ CLI" Value="ScrollE" />
+      <MemberSignature Language="F#" Value="ScrollE = 22" Usage="System.Windows.Input.CursorType.ScrollE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +272,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollN" />
       <MemberSignature Language="VB.NET" Value="ScrollN" />
       <MemberSignature Language="C++ CLI" Value="ScrollN" />
+      <MemberSignature Language="F#" Value="ScrollN = 19" Usage="System.Windows.Input.CursorType.ScrollN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollNE" />
       <MemberSignature Language="VB.NET" Value="ScrollNE" />
       <MemberSignature Language="C++ CLI" Value="ScrollNE" />
+      <MemberSignature Language="F#" Value="ScrollNE = 24" Usage="System.Windows.Input.CursorType.ScrollNE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -297,6 +312,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollNS" />
       <MemberSignature Language="VB.NET" Value="ScrollNS" />
       <MemberSignature Language="C++ CLI" Value="ScrollNS" />
+      <MemberSignature Language="F#" Value="ScrollNS = 16" Usage="System.Windows.Input.CursorType.ScrollNS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -316,6 +332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollNW" />
       <MemberSignature Language="VB.NET" Value="ScrollNW" />
       <MemberSignature Language="C++ CLI" Value="ScrollNW" />
+      <MemberSignature Language="F#" Value="ScrollNW = 23" Usage="System.Windows.Input.CursorType.ScrollNW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -335,6 +352,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollS" />
       <MemberSignature Language="VB.NET" Value="ScrollS" />
       <MemberSignature Language="C++ CLI" Value="ScrollS" />
+      <MemberSignature Language="F#" Value="ScrollS = 20" Usage="System.Windows.Input.CursorType.ScrollS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -354,6 +372,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollSE" />
       <MemberSignature Language="VB.NET" Value="ScrollSE" />
       <MemberSignature Language="C++ CLI" Value="ScrollSE" />
+      <MemberSignature Language="F#" Value="ScrollSE = 26" Usage="System.Windows.Input.CursorType.ScrollSE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -373,6 +392,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollSW" />
       <MemberSignature Language="VB.NET" Value="ScrollSW" />
       <MemberSignature Language="C++ CLI" Value="ScrollSW" />
+      <MemberSignature Language="F#" Value="ScrollSW = 25" Usage="System.Windows.Input.CursorType.ScrollSW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -392,6 +412,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollW" />
       <MemberSignature Language="VB.NET" Value="ScrollW" />
       <MemberSignature Language="C++ CLI" Value="ScrollW" />
+      <MemberSignature Language="F#" Value="ScrollW = 21" Usage="System.Windows.Input.CursorType.ScrollW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +432,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollWE" />
       <MemberSignature Language="VB.NET" Value="ScrollWE" />
       <MemberSignature Language="C++ CLI" Value="ScrollWE" />
+      <MemberSignature Language="F#" Value="ScrollWE = 17" Usage="System.Windows.Input.CursorType.ScrollWE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -430,6 +452,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeAll" />
       <MemberSignature Language="VB.NET" Value="SizeAll" />
       <MemberSignature Language="C++ CLI" Value="SizeAll" />
+      <MemberSignature Language="F#" Value="SizeAll = 7" Usage="System.Windows.Input.CursorType.SizeAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -449,6 +472,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeNESW" />
       <MemberSignature Language="VB.NET" Value="SizeNESW" />
       <MemberSignature Language="C++ CLI" Value="SizeNESW" />
+      <MemberSignature Language="F#" Value="SizeNESW = 8" Usage="System.Windows.Input.CursorType.SizeNESW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -468,6 +492,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeNS" />
       <MemberSignature Language="VB.NET" Value="SizeNS" />
       <MemberSignature Language="C++ CLI" Value="SizeNS" />
+      <MemberSignature Language="F#" Value="SizeNS = 9" Usage="System.Windows.Input.CursorType.SizeNS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -487,6 +512,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeNWSE" />
       <MemberSignature Language="VB.NET" Value="SizeNWSE" />
       <MemberSignature Language="C++ CLI" Value="SizeNWSE" />
+      <MemberSignature Language="F#" Value="SizeNWSE = 10" Usage="System.Windows.Input.CursorType.SizeNWSE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -506,6 +532,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeWE" />
       <MemberSignature Language="VB.NET" Value="SizeWE" />
       <MemberSignature Language="C++ CLI" Value="SizeWE" />
+      <MemberSignature Language="F#" Value="SizeWE = 11" Usage="System.Windows.Input.CursorType.SizeWE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -525,6 +552,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.UpArrow" />
       <MemberSignature Language="VB.NET" Value="UpArrow" />
       <MemberSignature Language="C++ CLI" Value="UpArrow" />
+      <MemberSignature Language="F#" Value="UpArrow = 12" Usage="System.Windows.Input.CursorType.UpArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -544,6 +572,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Wait" />
       <MemberSignature Language="VB.NET" Value="Wait" />
       <MemberSignature Language="C++ CLI" Value="Wait" />
+      <MemberSignature Language="F#" Value="Wait = 13" Usage="System.Windows.Input.CursorType.Wait" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

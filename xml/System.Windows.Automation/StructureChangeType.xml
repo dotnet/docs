@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.StructureChangeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum StructureChangeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class StructureChangeType" />
+  <TypeSignature Language="F#" Value="type StructureChangeType = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildAdded" />
       <MemberSignature Language="VB.NET" Value="ChildAdded" />
       <MemberSignature Language="C++ CLI" Value="ChildAdded" />
+      <MemberSignature Language="F#" Value="ChildAdded = 0" Usage="System.Windows.Automation.StructureChangeType.ChildAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildRemoved" />
       <MemberSignature Language="VB.NET" Value="ChildRemoved" />
       <MemberSignature Language="C++ CLI" Value="ChildRemoved" />
+      <MemberSignature Language="F#" Value="ChildRemoved = 1" Usage="System.Windows.Automation.StructureChangeType.ChildRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildrenBulkAdded" />
       <MemberSignature Language="VB.NET" Value="ChildrenBulkAdded" />
       <MemberSignature Language="C++ CLI" Value="ChildrenBulkAdded" />
+      <MemberSignature Language="F#" Value="ChildrenBulkAdded = 3" Usage="System.Windows.Automation.StructureChangeType.ChildrenBulkAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildrenBulkRemoved" />
       <MemberSignature Language="VB.NET" Value="ChildrenBulkRemoved" />
       <MemberSignature Language="C++ CLI" Value="ChildrenBulkRemoved" />
+      <MemberSignature Language="F#" Value="ChildrenBulkRemoved = 4" Usage="System.Windows.Automation.StructureChangeType.ChildrenBulkRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildrenInvalidated" />
       <MemberSignature Language="VB.NET" Value="ChildrenInvalidated" />
       <MemberSignature Language="C++ CLI" Value="ChildrenInvalidated" />
+      <MemberSignature Language="F#" Value="ChildrenInvalidated = 2" Usage="System.Windows.Automation.StructureChangeType.ChildrenInvalidated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildrenReordered" />
       <MemberSignature Language="VB.NET" Value="ChildrenReordered" />
       <MemberSignature Language="C++ CLI" Value="ChildrenReordered" />
+      <MemberSignature Language="F#" Value="ChildrenReordered = 5" Usage="System.Windows.Automation.StructureChangeType.ChildrenReordered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

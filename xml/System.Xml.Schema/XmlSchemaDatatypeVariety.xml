@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaDatatypeVariety" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlSchemaDatatypeVariety" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlSchemaDatatypeVariety" />
+  <TypeSignature Language="F#" Value="type XmlSchemaDatatypeVariety = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDatatypeVariety.Atomic" />
       <MemberSignature Language="VB.NET" Value="Atomic" />
       <MemberSignature Language="C++ CLI" Value="Atomic" />
+      <MemberSignature Language="F#" Value="Atomic = 0" Usage="System.Xml.Schema.XmlSchemaDatatypeVariety.Atomic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDatatypeVariety.List" />
       <MemberSignature Language="VB.NET" Value="List" />
       <MemberSignature Language="C++ CLI" Value="List" />
+      <MemberSignature Language="F#" Value="List = 1" Usage="System.Xml.Schema.XmlSchemaDatatypeVariety.List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDatatypeVariety.Union" />
       <MemberSignature Language="VB.NET" Value="Union" />
       <MemberSignature Language="C++ CLI" Value="Union" />
+      <MemberSignature Language="F#" Value="Union = 2" Usage="System.Xml.Schema.XmlSchemaDatatypeVariety.Union" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

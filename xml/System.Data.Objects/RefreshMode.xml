@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.RefreshMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RefreshMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class RefreshMode" />
+  <TypeSignature Language="F#" Value="type RefreshMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Objects.RefreshMode.ClientWins" />
       <MemberSignature Language="VB.NET" Value="ClientWins" />
       <MemberSignature Language="C++ CLI" Value="ClientWins" />
+      <MemberSignature Language="F#" Value="ClientWins = 2" Usage="System.Data.Objects.RefreshMode.ClientWins" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Objects.RefreshMode.StoreWins" />
       <MemberSignature Language="VB.NET" Value="StoreWins" />
       <MemberSignature Language="C++ CLI" Value="StoreWins" />
+      <MemberSignature Language="F#" Value="StoreWins = 1" Usage="System.Data.Objects.RefreshMode.StoreWins" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

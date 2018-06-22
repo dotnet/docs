@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.BasicProfileViolation" />
   <TypeSignature Language="VB.NET" Value="Public Class BasicProfileViolation" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicProfileViolation" />
+  <TypeSignature Language="F#" Value="type BasicProfileViolation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolation.Claims" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Claims As WsiProfiles" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::WsiProfiles Claims { System::Web::Services::WsiProfiles get(); };" />
+      <MemberSignature Language="F#" Value="member this.Claims : System.Web.Services.WsiProfiles" Usage="System.Web.Services.Description.BasicProfileViolation.Claims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolation.Details" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Details As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Details { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Details : string" Usage="System.Web.Services.Description.BasicProfileViolation.Details" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolation.Elements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elements As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Elements { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Elements : System.Collections.Specialized.StringCollection" Usage="System.Web.Services.Description.BasicProfileViolation.Elements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolation.NormativeStatement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NormativeStatement As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NormativeStatement { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NormativeStatement : string" Usage="System.Web.Services.Description.BasicProfileViolation.NormativeStatement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolation.Recommendation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recommendation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Recommendation { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Recommendation : string" Usage="System.Web.Services.Description.BasicProfileViolation.Recommendation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolation.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="basicProfileViolation.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

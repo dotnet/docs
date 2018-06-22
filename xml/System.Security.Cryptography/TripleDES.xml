@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.TripleDES" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TripleDES&#xA;Inherits SymmetricAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class TripleDES abstract : System::Security::Cryptography::SymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type TripleDES = class&#xA;    inherit SymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -122,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDES.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As TripleDES" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::TripleDES ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.TripleDES" Usage="System.Security.Cryptography.TripleDES.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -177,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDES.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (str As String) As TripleDES" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::TripleDES ^ Create(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.TripleDES" Usage="System.Security.Cryptography.TripleDES.Create str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDES.IsWeakKey(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsWeakKey (rgbKey As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsWeakKey(cli::array &lt;System::Byte&gt; ^ rgbKey);" />
+      <MemberSignature Language="F#" Value="static member IsWeakKey : byte[] -&gt; bool" Usage="System.Security.Cryptography.TripleDES.IsWeakKey rgbKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -276,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDES.Key" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Key As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.TripleDES.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -322,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDES.LegalBlockSizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalBlockSizes As KeySizes()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalBlockSizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegalBlockSizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.TripleDES.LegalBlockSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -345,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDES.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.TripleDES.LegalKeySizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

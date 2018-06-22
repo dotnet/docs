@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.SmtpNetworkElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SmtpNetworkElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SmtpNetworkElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SmtpNetworkElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.ClientDomain" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientDomain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientDomain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientDomain : string with get, set" Usage="System.Net.Configuration.SmtpNetworkElement.ClientDomain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.DefaultCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultCredentials As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultCredentials { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultCredentials : bool with get, set" Usage="System.Net.Configuration.SmtpNetworkElement.DefaultCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.EnableSsl" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableSsl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableSsl { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableSsl : bool with get, set" Usage="System.Net.Configuration.SmtpNetworkElement.EnableSsl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.Host" />
       <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="System.Net.Configuration.SmtpNetworkElement.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.Net.Configuration.SmtpNetworkElement.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.Port" />
       <MemberSignature Language="VB.NET" Value="Public Property Port As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Port : int with get, set" Usage="System.Net.Configuration.SmtpNetworkElement.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.SmtpNetworkElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="smtpNetworkElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -265,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.SmtpNetworkElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.TargetName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetName : string with get, set" Usage="System.Net.Configuration.SmtpNetworkElement.TargetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -322,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpNetworkElement.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string with get, set" Usage="System.Net.Configuration.SmtpNetworkElement.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

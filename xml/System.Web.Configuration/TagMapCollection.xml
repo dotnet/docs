@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TagMapCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TagMapCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class TagMapCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type TagMapCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.Add(System.Web.Configuration.TagMapInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (tagMapInformation As TagMapInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::TagMapInfo ^ tagMapInformation);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.TagMapInfo -&gt; unit" Usage="tagMapCollection.Add tagMapInformation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="tagMapCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="tagMapCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="tagMapCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagMapCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TagMapInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TagMapInfo ^ default[int] { System::Web::Configuration::TagMapInfo ^ get(int index); void set(int index, System::Web::Configuration::TagMapInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.TagMapInfo with get, set" Usage="System.Web.Configuration.TagMapCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagMapCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.TagMapCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.Remove(System.Web.Configuration.TagMapInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (tagMapInformation As TagMapInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Configuration::TagMapInfo ^ tagMapInformation);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Configuration.TagMapInfo -&gt; unit" Usage="tagMapCollection.Remove tagMapInformation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

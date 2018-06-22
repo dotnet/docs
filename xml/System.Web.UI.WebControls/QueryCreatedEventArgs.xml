@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryCreatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class QueryCreatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryCreatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type QueryCreatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryCreatedEventArgs.#ctor(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (query As IQueryable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryCreatedEventArgs(System::Linq::IQueryable ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.QueryCreatedEventArgs : System.Linq.IQueryable -&gt; System.Web.UI.WebControls.QueryCreatedEventArgs" Usage="new System.Web.UI.WebControls.QueryCreatedEventArgs query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryCreatedEventArgs.Query" />
       <MemberSignature Language="VB.NET" Value="Public Property Query As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::IQueryable ^ Query { System::Linq::IQueryable ^ get(); void set(System::Linq::IQueryable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Query : System.Linq.IQueryable with get, set" Usage="System.Web.UI.WebControls.QueryCreatedEventArgs.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

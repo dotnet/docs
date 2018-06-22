@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MdbDataFileEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class MdbDataFileEditor&#xA;Inherits UrlEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class MdbDataFileEditor : System::Web::UI::Design::UrlEditor" />
+  <TypeSignature Language="F#" Value="type MdbDataFileEditor = class&#xA;    inherit UrlEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.MdbDataFileEditor.Caption" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Caption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="System.Web.UI.Design.MdbDataFileEditor.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.MdbDataFileEditor.Filter" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Filter { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string" Usage="System.Web.UI.Design.MdbDataFileEditor.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

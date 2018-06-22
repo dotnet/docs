@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.StructuralComparisons" />
   <TypeSignature Language="VB.NET" Value="Public Class StructuralComparisons" />
   <TypeSignature Language="C++ CLI" Value="public ref class StructuralComparisons abstract sealed" />
+  <TypeSignature Language="F#" Value="type StructuralComparisons = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.StructuralComparisons.StructuralComparer" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StructuralComparer As IComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::IComparer ^ StructuralComparer { System::Collections::IComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StructuralComparer : System.Collections.IComparer" Usage="System.Collections.StructuralComparisons.StructuralComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StructuralEqualityComparer As IEqualityComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::IEqualityComparer ^ StructuralEqualityComparer { System::Collections::IEqualityComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StructuralEqualityComparer : System.Collections.IEqualityComparer" Usage="System.Collections.StructuralComparisons.StructuralEqualityComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>

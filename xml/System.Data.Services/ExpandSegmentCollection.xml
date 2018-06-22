@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.ExpandSegmentCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ExpandSegmentCollection&#xA;Inherits List(Of ExpandSegment)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpandSegmentCollection : System::Collections::Generic::List&lt;System::Data::Services::ExpandSegment ^&gt;" />
+  <TypeSignature Language="F#" Value="type ExpandSegmentCollection = class&#xA;    inherit List&lt;ExpandSegment&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegmentCollection.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandSegmentCollection(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.ExpandSegmentCollection : int -&gt; System.Data.Services.ExpandSegmentCollection" Usage="new System.Data.Services.ExpandSegmentCollection capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegmentCollection.HasFilter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFilter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFilter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasFilter : bool" Usage="System.Data.Services.ExpandSegmentCollection.HasFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

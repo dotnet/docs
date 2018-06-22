@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ActiveDesignSurfaceChangedEventHandler(sender As Object, e As ActiveDesignSurfaceChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ActiveDesignSurfaceChangedEventHandler(System::Object ^ sender, ActiveDesignSurfaceChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ActiveDesignSurfaceChangedEventHandler = delegate of obj * ActiveDesignSurfaceChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

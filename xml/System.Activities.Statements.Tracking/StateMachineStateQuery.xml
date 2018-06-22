@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Tracking.StateMachineStateQuery" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateMachineStateQuery&#xA;Inherits CustomTrackingQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateMachineStateQuery sealed : System::Activities::Tracking::CustomTrackingQuery" />
+  <TypeSignature Language="F#" Value="type StateMachineStateQuery = class&#xA;    inherit CustomTrackingQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Tracking.StateMachineStateQuery.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Activities.Statements.Tracking.StateMachineStateQuery.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

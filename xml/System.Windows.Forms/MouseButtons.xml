@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MouseButtons" />
   <TypeSignature Language="VB.NET" Value="Public Enum MouseButtons" />
   <TypeSignature Language="C++ CLI" Value="public enum class MouseButtons" />
+  <TypeSignature Language="F#" Value="type MouseButtons = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 1048576" Usage="System.Windows.Forms.MouseButtons.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Middle" />
       <MemberSignature Language="VB.NET" Value="Middle" />
       <MemberSignature Language="C++ CLI" Value="Middle" />
+      <MemberSignature Language="F#" Value="Middle = 4194304" Usage="System.Windows.Forms.MouseButtons.Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.MouseButtons.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 2097152" Usage="System.Windows.Forms.MouseButtons.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.XButton1" />
       <MemberSignature Language="VB.NET" Value="XButton1" />
       <MemberSignature Language="C++ CLI" Value="XButton1" />
+      <MemberSignature Language="F#" Value="XButton1 = 8388608" Usage="System.Windows.Forms.MouseButtons.XButton1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.XButton2" />
       <MemberSignature Language="VB.NET" Value="XButton2" />
       <MemberSignature Language="C++ CLI" Value="XButton2" />
+      <MemberSignature Language="F#" Value="XButton2 = 16777216" Usage="System.Windows.Forms.MouseButtons.XButton2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

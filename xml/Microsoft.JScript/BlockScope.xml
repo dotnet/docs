@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BlockScope" />
   <TypeSignature Language="VB.NET" Value="Public Class BlockScope&#xA;Inherits ActivationObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class BlockScope : Microsoft::JScript::ActivationObject" />
+  <TypeSignature Language="F#" Value="type BlockScope = class&#xA;    inherit ActivationObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BlockScope.#ctor(Microsoft.JScript.ScriptObject,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ScriptObject, name As String, scopeId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BlockScope(Microsoft::JScript::ScriptObject ^ parent, System::String ^ name, int scopeId);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.BlockScope : Microsoft.JScript.ScriptObject * string * int -&gt; Microsoft.JScript.BlockScope" Usage="new Microsoft.JScript.BlockScope (parent, name, scopeId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BlockScope.CreateField(System.String,System.Reflection.FieldAttributes,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateField (name As String, attributeFlags As FieldAttributes, value As Object) As JSVariableField" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::JScript::JSVariableField ^ CreateField(System::String ^ name, System::Reflection::FieldAttributes attributeFlags, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.CreateField : string * System.Reflection.FieldAttributes * obj -&gt; Microsoft.JScript.JSVariableField" Usage="blockScope.CreateField (name, attributeFlags, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

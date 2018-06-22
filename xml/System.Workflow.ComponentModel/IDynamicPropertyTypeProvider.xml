@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IDynamicPropertyTypeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDynamicPropertyTypeProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="F#" Value="type IDynamicPropertyTypeProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetAccessType(System.IServiceProvider,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessType (serviceProvider As IServiceProvider, propertyName As String) As AccessTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Compiler::AccessTypes GetAccessType(IServiceProvider ^ serviceProvider, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetAccessType : IServiceProvider * string -&gt; System.Workflow.ComponentModel.Compiler.AccessTypes" Usage="iDynamicPropertyTypeProvider.GetAccessType (serviceProvider, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetPropertyType(System.IServiceProvider,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyType (serviceProvider As IServiceProvider, propertyName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetPropertyType(IServiceProvider ^ serviceProvider, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertyType : IServiceProvider * string -&gt; Type" Usage="iDynamicPropertyTypeProvider.GetPropertyType (serviceProvider, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

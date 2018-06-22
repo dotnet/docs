@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CombineMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CombineMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CombineMode" />
+  <TypeSignature Language="F#" Value="type CombineMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CombineMode.Complement" />
       <MemberSignature Language="VB.NET" Value="Complement" />
       <MemberSignature Language="C++ CLI" Value="Complement" />
+      <MemberSignature Language="F#" Value="Complement = 5" Usage="System.Drawing.Drawing2D.CombineMode.Complement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CombineMode.Exclude" />
       <MemberSignature Language="VB.NET" Value="Exclude" />
       <MemberSignature Language="C++ CLI" Value="Exclude" />
+      <MemberSignature Language="F#" Value="Exclude = 4" Usage="System.Drawing.Drawing2D.CombineMode.Exclude" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CombineMode.Intersect" />
       <MemberSignature Language="VB.NET" Value="Intersect" />
       <MemberSignature Language="C++ CLI" Value="Intersect" />
+      <MemberSignature Language="F#" Value="Intersect = 1" Usage="System.Drawing.Drawing2D.CombineMode.Intersect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CombineMode.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
       <MemberSignature Language="C++ CLI" Value="Replace" />
+      <MemberSignature Language="F#" Value="Replace = 0" Usage="System.Drawing.Drawing2D.CombineMode.Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CombineMode.Union" />
       <MemberSignature Language="VB.NET" Value="Union" />
       <MemberSignature Language="C++ CLI" Value="Union" />
+      <MemberSignature Language="F#" Value="Union = 2" Usage="System.Drawing.Drawing2D.CombineMode.Union" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CombineMode.Xor" />
       <MemberSignature Language="VB.NET" Value="Xor" />
       <MemberSignature Language="C++ CLI" Value="Xor" />
+      <MemberSignature Language="F#" Value="Xor = 3" Usage="System.Drawing.Drawing2D.CombineMode.Xor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

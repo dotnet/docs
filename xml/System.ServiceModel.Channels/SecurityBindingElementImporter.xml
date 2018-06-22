@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SecurityBindingElementImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityBindingElementImporter&#xA;Implements IPolicyImportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityBindingElementImporter : System::ServiceModel::Description::IPolicyImportExtension" />
+  <TypeSignature Language="F#" Value="type SecurityBindingElementImporter = class&#xA;    interface IPolicyImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.SecurityBindingElementImporter.MaxPolicyRedirections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxPolicyRedirections As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPolicyRedirections { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPolicyRedirections : int" Usage="System.ServiceModel.Channels.SecurityBindingElementImporter.MaxPolicyRedirections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

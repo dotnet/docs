@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectDataSource&#xA;Inherits DataSourceControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectDataSource : System::Web::UI::DataSourceControl" />
+  <TypeSignature Language="F#" Value="type ObjectDataSource = class&#xA;    inherit DataSourceControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -634,6 +635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, selectMethod As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDataSource(System::String ^ typeName, System::String ^ selectMethod);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ObjectDataSource : string * string -&gt; System.Web.UI.WebControls.ObjectDataSource" Usage="new System.Web.UI.WebControls.ObjectDataSource (typeName, selectMethod)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -666,6 +668,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.CacheDuration" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheDuration As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CacheDuration { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheDuration : int with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.CacheDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -724,6 +727,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.CacheExpirationPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheExpirationPolicy As DataSourceCacheExpiry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::DataSourceCacheExpiry CacheExpirationPolicy { System::Web::UI::DataSourceCacheExpiry get(); void set(System::Web::UI::DataSourceCacheExpiry value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheExpirationPolicy : System.Web.UI.DataSourceCacheExpiry with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.CacheExpirationPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -777,6 +781,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.CacheKeyDependency" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheKeyDependency As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheKeyDependency { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheKeyDependency : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.CacheKeyDependency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -842,6 +847,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.ConflictDetection" />
       <MemberSignature Language="VB.NET" Value="Public Property ConflictDetection As ConflictOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ConflictOptions ConflictDetection { System::Web::UI::ConflictOptions get(); void set(System::Web::UI::ConflictOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.ConflictDetection : System.Web.UI.ConflictOptions with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.ConflictDetection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -879,6 +885,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.ConvertNullToDBNull" />
       <MemberSignature Language="VB.NET" Value="Public Property ConvertNullToDBNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertNullToDBNull { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ConvertNullToDBNull : bool with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.ConvertNullToDBNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -914,6 +921,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.DataObjectTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property DataObjectTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataObjectTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataObjectTypeName : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.DataObjectTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -969,6 +977,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Delete();" />
+      <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; int" Usage="objectDataSource.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1006,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Deleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deleted As ObjectDataSourceStatusEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceStatusEventHandler ^ Deleted;" />
+      <MemberSignature Language="F#" Value="member this.Deleted : System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler " Usage="member this.Deleted : System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1057,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property DeleteMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeleteMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteMethod : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.DeleteMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1131,6 +1142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeleteParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ DeleteParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1197,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Deleting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deleting As ObjectDataSourceMethodEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceMethodEventHandler ^ Deleting;" />
+      <MemberSignature Language="F#" Value="member this.Deleting : System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler " Usage="member this.Deleting : System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1248,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.EnableCaching" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableCaching As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableCaching { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableCaching : bool with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.EnableCaching" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1308,6 +1322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.EnablePaging" />
       <MemberSignature Language="VB.NET" Value="Public Property EnablePaging As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnablePaging { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnablePaging : bool with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.EnablePaging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1368,6 +1383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterExpression : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.FilterExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1440,6 +1456,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Filtering" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Filtering As ObjectDataSourceFilteringEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceFilteringEventHandler ^ Filtering;" />
+      <MemberSignature Language="F#" Value="member this.Filtering : System.Web.UI.WebControls.ObjectDataSourceFilteringEventHandler " Usage="member this.Filtering : System.Web.UI.WebControls.ObjectDataSourceFilteringEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1475,6 +1492,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.FilterParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ FilterParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.ObjectDataSource.FilterParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1553,6 +1571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetView (viewName As String) As DataSourceView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="override this.GetView : string -&gt; System.Web.UI.DataSourceView" Usage="objectDataSource.GetView viewName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1589,6 +1608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetViewNames () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ICollection ^ GetViewNames();" />
+      <MemberSignature Language="F#" Value="override this.GetViewNames : unit -&gt; System.Collections.ICollection" Usage="objectDataSource.GetViewNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1620,6 +1640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Insert();" />
+      <MemberSignature Language="F#" Value="member this.Insert : unit -&gt; int" Usage="objectDataSource.Insert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1657,6 +1678,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Inserted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Inserted As ObjectDataSourceStatusEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceStatusEventHandler ^ Inserted;" />
+      <MemberSignature Language="F#" Value="member this.Inserted : System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler " Usage="member this.Inserted : System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1689,6 +1711,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Inserting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Inserting As ObjectDataSourceMethodEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceMethodEventHandler ^ Inserting;" />
+      <MemberSignature Language="F#" Value="member this.Inserting : System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler " Usage="member this.Inserting : System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1746,6 +1769,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.InsertMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InsertMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertMethod : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.InsertMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1829,6 +1853,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InsertParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ InsertParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InsertParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1900,6 +1925,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="objectDataSource.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1935,6 +1961,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumRowsParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MaximumRowsParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumRowsParameterName : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1993,6 +2020,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ObjectCreated As ObjectDataSourceObjectEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceObjectEventHandler ^ ObjectCreated;" />
+      <MemberSignature Language="F#" Value="member this.ObjectCreated : System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler " Usage="member this.ObjectCreated : System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2025,6 +2053,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ObjectCreating As ObjectDataSourceObjectEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceObjectEventHandler ^ ObjectCreating;" />
+      <MemberSignature Language="F#" Value="member this.ObjectCreating : System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler " Usage="member this.ObjectCreating : System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2077,6 +2106,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ObjectDisposing As ObjectDataSourceDisposingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceDisposingEventHandler ^ ObjectDisposing;" />
+      <MemberSignature Language="F#" Value="member this.ObjectDisposing : System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler " Usage="member this.ObjectDisposing : System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2142,6 +2172,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.OldValuesParameterFormatString" />
       <MemberSignature Language="VB.NET" Value="Public Property OldValuesParameterFormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldValuesParameterFormatString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OldValuesParameterFormatString : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.OldValuesParameterFormatString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2183,6 +2214,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="objectDataSource.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2220,6 +2252,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.ParsingCulture" />
       <MemberSignature Language="VB.NET" Value="Public Property ParsingCulture As ParsingCulture" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParsingCulture ParsingCulture { System::Web::UI::WebControls::ParsingCulture get(); void set(System::Web::UI::WebControls::ParsingCulture value); };" />
+      <MemberSignature Language="F#" Value="member this.ParsingCulture : System.Web.UI.WebControls.ParsingCulture with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.ParsingCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2246,6 +2279,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="objectDataSource.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2269,6 +2303,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ Select();" />
+      <MemberSignature Language="F#" Value="member this.Select : unit -&gt; System.Collections.IEnumerable" Usage="objectDataSource.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2327,6 +2362,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectCountMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectCountMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectCountMethod : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2385,6 +2421,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selected As ObjectDataSourceStatusEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceStatusEventHandler ^ Selected;" />
+      <MemberSignature Language="F#" Value="member this.Selected : System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler " Usage="member this.Selected : System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2437,6 +2474,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Selecting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selecting As ObjectDataSourceSelectingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceSelectingEventHandler ^ Selecting;" />
+      <MemberSignature Language="F#" Value="member this.Selecting : System.Web.UI.WebControls.ObjectDataSourceSelectingEventHandler " Usage="member this.Selecting : System.Web.UI.WebControls.ObjectDataSourceSelectingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2471,6 +2509,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectMethod : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2545,6 +2584,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ SelectParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2615,6 +2655,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.SortParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Property SortParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SortParameterName : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.SortParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2668,6 +2709,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.SqlCacheDependency" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SqlCacheDependency As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SqlCacheDependency { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SqlCacheDependency : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.SqlCacheDependency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2722,6 +2764,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Property StartRowIndexParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StartRowIndexParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StartRowIndexParameterName : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2780,6 +2823,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="objectDataSource.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2809,6 +2853,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2856,6 +2901,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
       <MemberSignature Language="VB.NET" Value="Public Function Update () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update();" />
+      <MemberSignature Language="F#" Value="member this.Update : unit -&gt; int" Usage="objectDataSource.Update " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2916,6 +2962,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Updated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Updated As ObjectDataSourceStatusEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceStatusEventHandler ^ Updated;" />
+      <MemberSignature Language="F#" Value="member this.Updated : System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler " Usage="member this.Updated : System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2948,6 +2995,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UpdateMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateMethod : string with get, set" Usage="System.Web.UI.WebControls.ObjectDataSource.UpdateMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3028,6 +3076,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ UpdateParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3096,6 +3145,7 @@ public void ExampleObjectDisposing(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ObjectDataSource.Updating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Updating As ObjectDataSourceMethodEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ObjectDataSourceMethodEventHandler ^ Updating;" />
+      <MemberSignature Language="F#" Value="member this.Updating : System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler " Usage="member this.Updating : System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

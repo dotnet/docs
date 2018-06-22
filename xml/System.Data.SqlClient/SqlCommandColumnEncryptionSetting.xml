@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlCommandColumnEncryptionSetting" />
   <TypeSignature Language="VB.NET" Value="Public Enum SqlCommandColumnEncryptionSetting" />
   <TypeSignature Language="C++ CLI" Value="public enum class SqlCommandColumnEncryptionSetting" />
+  <TypeSignature Language="F#" Value="type SqlCommandColumnEncryptionSetting = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlCommandColumnEncryptionSetting.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 3" Usage="System.Data.SqlClient.SqlCommandColumnEncryptionSetting.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlCommandColumnEncryptionSetting.Enabled" />
       <MemberSignature Language="VB.NET" Value="Enabled" />
       <MemberSignature Language="C++ CLI" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 1" Usage="System.Data.SqlClient.SqlCommandColumnEncryptionSetting.Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlCommandColumnEncryptionSetting.ResultSetOnly" />
       <MemberSignature Language="VB.NET" Value="ResultSetOnly" />
       <MemberSignature Language="C++ CLI" Value="ResultSetOnly" />
+      <MemberSignature Language="F#" Value="ResultSetOnly = 2" Usage="System.Data.SqlClient.SqlCommandColumnEncryptionSetting.ResultSetOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlCommandColumnEncryptionSetting.UseConnectionSetting" />
       <MemberSignature Language="VB.NET" Value="UseConnectionSetting" />
       <MemberSignature Language="C++ CLI" Value="UseConnectionSetting" />
+      <MemberSignature Language="F#" Value="UseConnectionSetting = 0" Usage="System.Data.SqlClient.SqlCommandColumnEncryptionSetting.UseConnectionSetting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

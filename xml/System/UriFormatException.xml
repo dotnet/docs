@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriFormatException" />
   <TypeSignature Language="VB.NET" Value="Public Class UriFormatException&#xA;Inherits FormatException" />
   <TypeSignature Language="C++ CLI" Value="public ref class UriFormatException : FormatException" />
+  <TypeSignature Language="F#" Value="type UriFormatException = class&#xA;    inherit FormatException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriFormatException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (textString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriFormatException(System::String ^ textString);" />
+      <MemberSignature Language="F#" Value="new UriFormatException : string -&gt; UriFormatException" Usage="new System.UriFormatException textString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; UriFormatException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new UriFormatException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; UriFormatException" Usage="new System.UriFormatException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -172,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriFormatException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (textString As String, e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriFormatException(System::String ^ textString, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new UriFormatException : string * Exception -&gt; UriFormatException" Usage="new System.UriFormatException (textString, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

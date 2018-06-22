@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ExceptionMapper" />
   <TypeSignature Language="VB.NET" Value="Public Class ExceptionMapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExceptionMapper" />
+  <TypeSignature Language="F#" Value="type ExceptionMapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExceptionMapper.FromException(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FromException (ex As Exception) As FaultException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::FaultException ^ FromException(Exception ^ ex);" />
+      <MemberSignature Language="F#" Value="abstract member FromException : Exception -&gt; System.ServiceModel.FaultException&#xA;override this.FromException : Exception -&gt; System.ServiceModel.FaultException" Usage="exceptionMapper.FromException ex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExceptionMapper.FromException(System.Exception,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FromException (ex As Exception, soapNamespace As String, trustNamespace As String) As FaultException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::FaultException ^ FromException(Exception ^ ex, System::String ^ soapNamespace, System::String ^ trustNamespace);" />
+      <MemberSignature Language="F#" Value="abstract member FromException : Exception * string * string -&gt; System.ServiceModel.FaultException&#xA;override this.FromException : Exception * string * string -&gt; System.ServiceModel.FaultException" Usage="exceptionMapper.FromException (ex, soapNamespace, trustNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExceptionMapper.HandleSecurityTokenProcessingException(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HandleSecurityTokenProcessingException (ex As Exception) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HandleSecurityTokenProcessingException(Exception ^ ex);" />
+      <MemberSignature Language="F#" Value="abstract member HandleSecurityTokenProcessingException : Exception -&gt; bool&#xA;override this.HandleSecurityTokenProcessingException : Exception -&gt; bool" Usage="exceptionMapper.HandleSecurityTokenProcessingException ex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

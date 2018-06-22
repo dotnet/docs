@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadLocal`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ThreadLocal(Of T)&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ThreadLocal : IDisposable" />
+  <TypeSignature Language="F#" Value="type ThreadLocal&lt;'T&gt; = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (trackAllValues As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(bool trackAllValues);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : bool -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; trackAllValues" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -154,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Func{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : Func&lt;'T&gt; -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; valueFactory" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -189,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Func{`0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), trackAllValues As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory, bool trackAllValues);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : Func&lt;'T&gt; * bool -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; (valueFactory, trackAllValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -244,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="threadLocal.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -292,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="threadLocal.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -330,11 +336,12 @@
       </Docs>
     </Member>
     <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="~ThreadLocal`1 ();" />
+      <MemberSignature Language="C#" Value="~ThreadLocal ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ThreadLocal`1 ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="threadLocal.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -368,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.IsValueCreated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueCreated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueCreated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValueCreated : bool" Usage="System.Threading.ThreadLocal&lt;'T&gt;.IsValueCreated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -402,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="threadLocal.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -447,6 +456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="System.Threading.ThreadLocal&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -495,6 +505,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;T&gt; ^ Values { System::Collections::Generic::IList&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.IList&lt;'T&gt;" Usage="System.Threading.ThreadLocal&lt;'T&gt;.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.GridTickTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum GridTickTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class GridTickTypes" />
+  <TypeSignature Language="F#" Value="type GridTickTypes = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Web.UI.DataVisualization.Charting.GridTickTypes.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.Gridline" />
       <MemberSignature Language="VB.NET" Value="Gridline" />
       <MemberSignature Language="C++ CLI" Value="Gridline" />
+      <MemberSignature Language="F#" Value="Gridline = 2" Usage="System.Web.UI.DataVisualization.Charting.GridTickTypes.Gridline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.GridTickTypes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.TickMark" />
       <MemberSignature Language="VB.NET" Value="TickMark" />
       <MemberSignature Language="C++ CLI" Value="TickMark" />
+      <MemberSignature Language="F#" Value="TickMark = 1" Usage="System.Web.UI.DataVisualization.Charting.GridTickTypes.TickMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

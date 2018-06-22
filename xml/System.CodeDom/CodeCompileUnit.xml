@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeCompileUnit" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeCompileUnit&#xA;Inherits CodeObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeCompileUnit : System::CodeDom::CodeObject" />
+  <TypeSignature Language="F#" Value="type CodeCompileUnit = class&#xA;    inherit CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCompileUnit.AssemblyCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyCustomAttributes As CodeAttributeDeclarationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeAttributeDeclarationCollection ^ AssemblyCustomAttributes { System::CodeDom::CodeAttributeDeclarationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyCustomAttributes : System.CodeDom.CodeAttributeDeclarationCollection" Usage="System.CodeDom.CodeCompileUnit.AssemblyCustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCompileUnit.EndDirectives" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndDirectives As CodeDirectiveCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeDirectiveCollection ^ EndDirectives { System::CodeDom::CodeDirectiveCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndDirectives : System.CodeDom.CodeDirectiveCollection" Usage="System.CodeDom.CodeCompileUnit.EndDirectives" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCompileUnit.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespaces As CodeNamespaceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeNamespaceCollection ^ Namespaces { System::CodeDom::CodeNamespaceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespaces : System.CodeDom.CodeNamespaceCollection" Usage="System.CodeDom.CodeCompileUnit.Namespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCompileUnit.ReferencedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedAssemblies As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ ReferencedAssemblies { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblies : System.Collections.Specialized.StringCollection" Usage="System.CodeDom.CodeCompileUnit.ReferencedAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCompileUnit.StartDirectives" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartDirectives As CodeDirectiveCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeDirectiveCollection ^ StartDirectives { System::CodeDom::CodeDirectiveCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartDirectives : System.CodeDom.CodeDirectiveCollection" Usage="System.CodeDom.CodeCompileUnit.StartDirectives" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

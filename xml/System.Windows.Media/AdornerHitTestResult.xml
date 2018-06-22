@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.AdornerHitTestResult" />
   <TypeSignature Language="VB.NET" Value="Public Class AdornerHitTestResult&#xA;Inherits PointHitTestResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class AdornerHitTestResult : System::Windows::Media::PointHitTestResult" />
+  <TypeSignature Language="F#" Value="type AdornerHitTestResult = class&#xA;    inherit PointHitTestResult" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.AdornerHitTestResult.Adorner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adorner As Adorner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Adorner ^ Adorner { System::Windows::Documents::Adorner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Adorner : System.Windows.Documents.Adorner" Usage="System.Windows.Media.AdornerHitTestResult.Adorner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

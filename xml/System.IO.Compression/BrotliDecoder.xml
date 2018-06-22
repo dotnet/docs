@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.BrotliDecoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure BrotliDecoder&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public value class BrotliDecoder : IDisposable" />
+  <TypeSignature Language="F#" Value="type BrotliDecoder = struct&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression.Brotli</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.BrotliDecoder.Decompress(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Decompress (source As ReadOnlySpan(Of Byte), destination As Span(Of Byte), ByRef bytesConsumed As Integer, ByRef bytesWritten As Integer) As OperationStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::OperationStatus Decompress(ReadOnlySpan&lt;System::Byte&gt; source, Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesConsumed, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="member this.Decompress : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; *  *  -&gt; System.Buffers.OperationStatus" Usage="brotliDecoder.Decompress (source, destination, bytesConsumed, bytesWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.Brotli</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.BrotliDecoder.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="brotliDecoder.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.BrotliDecoder.TryDecompress(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryDecompress (source As ReadOnlySpan(Of Byte), destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryDecompress(ReadOnlySpan&lt;System::Byte&gt; source, Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="static member TryDecompress : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; *  -&gt; bool" Usage="System.IO.Compression.BrotliDecoder.TryDecompress (source, destination, bytesWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.Brotli</AssemblyName>

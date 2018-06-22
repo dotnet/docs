@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.DataContractFormatAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataContractFormatAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataContractFormatAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DataContractFormatAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.DataContractFormatAttribute.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As OperationFormatStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::OperationFormatStyle Style { System::ServiceModel::OperationFormatStyle get(); void set(System::ServiceModel::OperationFormatStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.ServiceModel.OperationFormatStyle with get, set" Usage="System.ServiceModel.DataContractFormatAttribute.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

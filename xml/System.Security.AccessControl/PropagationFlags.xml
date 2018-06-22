@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.PropagationFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropagationFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropagationFlags" />
+  <TypeSignature Language="F#" Value="type PropagationFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.PropagationFlags.InheritOnly" />
       <MemberSignature Language="VB.NET" Value="InheritOnly" />
       <MemberSignature Language="C++ CLI" Value="InheritOnly" />
+      <MemberSignature Language="F#" Value="InheritOnly = 2" Usage="System.Security.AccessControl.PropagationFlags.InheritOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.PropagationFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.AccessControl.PropagationFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.PropagationFlags.NoPropagateInherit" />
       <MemberSignature Language="VB.NET" Value="NoPropagateInherit" />
       <MemberSignature Language="C++ CLI" Value="NoPropagateInherit" />
+      <MemberSignature Language="F#" Value="NoPropagateInherit = 1" Usage="System.Security.AccessControl.PropagationFlags.NoPropagateInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

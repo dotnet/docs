@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.WqlObjectQuery" />
   <TypeSignature Language="VB.NET" Value="Public Class WqlObjectQuery&#xA;Inherits ObjectQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class WqlObjectQuery : System::Management::ObjectQuery" />
+  <TypeSignature Language="F#" Value="type WqlObjectQuery = class&#xA;    inherit ObjectQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.WqlObjectQuery.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (query As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WqlObjectQuery(System::String ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.WqlObjectQuery : string -&gt; System.Management.WqlObjectQuery" Usage="new System.Management.WqlObjectQuery query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.WqlObjectQuery.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="wqlObjectQuery.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.WqlObjectQuery.QueryLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property QueryLanguage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ QueryLanguage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryLanguage : string" Usage="System.Management.WqlObjectQuery.QueryLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

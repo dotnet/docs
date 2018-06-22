@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.AppDomainInfoEnum" />
   <TypeSignature Language="VB.NET" Value="Public Class AppDomainInfoEnum&#xA;Implements IAppDomainInfoEnum" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppDomainInfoEnum : System::Web::Hosting::IAppDomainInfoEnum" />
+  <TypeSignature Language="F#" Value="type AppDomainInfoEnum = class&#xA;    interface IAppDomainInfoEnum" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfoEnum.Count" />
       <MemberSignature Language="VB.NET" Value="Public Function Count () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Count();" />
+      <MemberSignature Language="F#" Value="abstract member Count : unit -&gt; int&#xA;override this.Count : unit -&gt; int" Usage="appDomainInfoEnum.Count " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfoEnum.Count</InterfaceMember>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfoEnum.GetData" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData () As IAppDomainInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Hosting::IAppDomainInfo ^ GetData();" />
+      <MemberSignature Language="F#" Value="abstract member GetData : unit -&gt; System.Web.Hosting.IAppDomainInfo&#xA;override this.GetData : unit -&gt; System.Web.Hosting.IAppDomainInfo" Usage="appDomainInfoEnum.GetData " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfoEnum.GetData</InterfaceMember>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfoEnum.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="appDomainInfoEnum.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfoEnum.MoveNext</InterfaceMember>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfoEnum.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="appDomainInfoEnum.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfoEnum.Reset</InterfaceMember>

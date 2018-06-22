@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.IStoryFragmentProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStoryFragmentProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStoryFragmentProvider" />
+  <TypeSignature Language="F#" Value="type IStoryFragmentProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IStoryFragmentProvider.AddStoryFragment" />
       <MemberSignature Language="VB.NET" Value="Public Function AddStoryFragment () As XpsStructure" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsStructure ^ AddStoryFragment();" />
+      <MemberSignature Language="F#" Value="abstract member AddStoryFragment : unit -&gt; System.Windows.Xps.Packaging.XpsStructure" Usage="iStoryFragmentProvider.AddStoryFragment " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.DurableOperationContext" />
   <TypeSignature Language="VB.NET" Value="Public Class DurableOperationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class DurableOperationContext abstract sealed" />
+  <TypeSignature Language="F#" Value="type DurableOperationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.DurableOperationContext.AbortInstance" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AbortInstance ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AbortInstance();" />
+      <MemberSignature Language="F#" Value="static member AbortInstance : unit -&gt; unit" Usage="System.ServiceModel.Dispatcher.DurableOperationContext.AbortInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.DurableOperationContext.CompleteInstance" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CompleteInstance ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompleteInstance();" />
+      <MemberSignature Language="F#" Value="static member CompleteInstance : unit -&gt; unit" Usage="System.ServiceModel.Dispatcher.DurableOperationContext.CompleteInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DurableOperationContext.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid InstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.ServiceModel.Dispatcher.DurableOperationContext.InstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

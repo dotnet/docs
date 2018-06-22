@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryEntries" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryEntries&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryEntries : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type DirectoryEntries = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, schemaClassName As String) As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ Add(System::String ^ name, System::String ^ schemaClassName);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; System.DirectoryServices.DirectoryEntry" Usage="directoryEntries.Add (name, schemaClassName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -129,6 +131,7 @@ Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name)
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Find(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (name As String) As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ Find(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Find : string -&gt; System.DirectoryServices.DirectoryEntry" Usage="directoryEntries.Find name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -168,6 +171,7 @@ Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name)
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Find(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (name As String, schemaClassName As String) As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ Find(System::String ^ name, System::String ^ schemaClassName);" />
+      <MemberSignature Language="F#" Value="member this.Find : string * string -&gt; System.DirectoryServices.DirectoryEntry" Usage="directoryEntries.Find (name, schemaClassName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -310,6 +314,7 @@ int main() {
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="directoryEntries.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -335,6 +340,7 @@ int main() {
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Remove(System.DirectoryServices.DirectoryEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (entry As DirectoryEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::DirectoryServices::DirectoryEntry ^ entry);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.DirectoryServices.DirectoryEntry -&gt; unit" Usage="directoryEntries.Remove entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -493,6 +499,7 @@ int main() {
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntries.SchemaFilter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaFilter As SchemaNameCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::SchemaNameCollection ^ SchemaFilter { System::DirectoryServices::SchemaNameCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaFilter : System.DirectoryServices.SchemaNameCollection" Usage="System.DirectoryServices.DirectoryEntries.SchemaFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.AssociationSetEnd" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssociationSetEnd&#xA;Inherits MetadataItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssociationSetEnd sealed : System::Data::Metadata::Edm::MetadataItem" />
+  <TypeSignature Language="F#" Value="type AssociationSetEnd = class&#xA;    inherit MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.AssociationSetEnd.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.CorrespondingAssociationEndMember" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrespondingAssociationEndMember As AssociationEndMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::AssociationEndMember ^ CorrespondingAssociationEndMember { System::Data::Metadata::Edm::AssociationEndMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorrespondingAssociationEndMember : System.Data.Metadata.Edm.AssociationEndMember" Usage="System.Data.Metadata.Edm.AssociationSetEnd.CorrespondingAssociationEndMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.EntitySet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntitySet As EntitySet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EntitySet ^ EntitySet { System::Data::Metadata::Edm::EntitySet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySet : System.Data.Metadata.Edm.EntitySet" Usage="System.Data.Metadata.Edm.AssociationSetEnd.EntitySet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Metadata.Edm.AssociationSetEnd.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.ParentAssociationSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentAssociationSet As AssociationSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::AssociationSet ^ ParentAssociationSet { System::Data::Metadata::Edm::AssociationSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentAssociationSet : System.Data.Metadata.Edm.AssociationSet" Usage="System.Data.Metadata.Edm.AssociationSetEnd.ParentAssociationSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.Role" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Role { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : string" Usage="System.Data.Metadata.Edm.AssociationSetEnd.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -148,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.AssociationSetEnd.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="associationSetEnd.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

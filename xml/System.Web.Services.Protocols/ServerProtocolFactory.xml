@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.ServerProtocolFactory" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServerProtocolFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServerProtocolFactory abstract" />
+  <TypeSignature Language="F#" Value="type ServerProtocolFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ServerProtocolFactory.CreateIfRequestCompatible(System.Web.HttpRequest)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateIfRequestCompatible (request As HttpRequest) As ServerProtocol" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Web::Services::Protocols::ServerProtocol ^ CreateIfRequestCompatible(System::Web::HttpRequest ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member CreateIfRequestCompatible : System.Web.HttpRequest -&gt; System.Web.Services.Protocols.ServerProtocol" Usage="serverProtocolFactory.CreateIfRequestCompatible request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

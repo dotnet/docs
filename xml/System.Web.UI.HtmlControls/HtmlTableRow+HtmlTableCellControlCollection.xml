@@ -34,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection.Add(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (child As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Web::UI::Control ^ child);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Web.UI.Control -&gt; unit" Usage="htmlTableCellControlCollection.Add child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAt (index As Integer, child As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAt(int index, System::Web::UI::Control ^ child);" />
+      <MemberSignature Language="F#" Value="override this.AddAt : int * System.Web.UI.Control -&gt; unit" Usage="htmlTableCellControlCollection.AddAt (index, child)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

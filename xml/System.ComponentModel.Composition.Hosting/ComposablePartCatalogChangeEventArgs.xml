@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ComposablePartCatalogChangeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComposablePartCatalogChangeEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ComposablePartCatalogChangeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; addedDefinitions, class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; removedDefinitions, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePartDefinition},System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePartDefinition},System.ComponentModel.Composition.Hosting.AtomicComposition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComposablePartCatalogChangeEventArgs(System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ addedDefinitions, System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ removedDefinitions, System::ComponentModel::Composition::Hosting::AtomicComposition ^ atomicComposition);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs : seq&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; * seq&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; * System.ComponentModel.Composition.Hosting.AtomicComposition -&gt; System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs" Usage="new System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs (addedDefinitions, removedDefinitions, atomicComposition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs.AddedDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddedDefinitions As IEnumerable(Of ComposablePartDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ AddedDefinitions { System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddedDefinitions : seq&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;" Usage="System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs.AddedDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs.AtomicComposition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AtomicComposition As AtomicComposition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::Hosting::AtomicComposition ^ AtomicComposition { System::ComponentModel::Composition::Hosting::AtomicComposition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AtomicComposition : System.ComponentModel.Composition.Hosting.AtomicComposition" Usage="System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs.AtomicComposition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs.RemovedDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemovedDefinitions As IEnumerable(Of ComposablePartDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ RemovedDefinitions { System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemovedDefinitions : seq&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;" Usage="System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs.RemovedDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

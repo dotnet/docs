@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectListShowCommandsEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectListShowCommandsEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ObjectListShowCommandsEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.#ctor(System.Web.UI.MobileControls.ObjectListItem,System.Web.UI.MobileControls.ObjectListCommandCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As ObjectListItem, commands As ObjectListCommandCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectListShowCommandsEventArgs(System::Web::UI::MobileControls::ObjectListItem ^ item, System::Web::UI::MobileControls::ObjectListCommandCollection ^ commands);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs : System.Web.UI.MobileControls.ObjectListItem * System.Web.UI.MobileControls.ObjectListCommandCollection -&gt; System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs" Usage="new System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs (item, commands)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.Commands" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Commands As ObjectListCommandCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ObjectListCommandCollection ^ Commands { System::Web::UI::MobileControls::ObjectListCommandCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Commands : System.Web.UI.MobileControls.ObjectListCommandCollection" Usage="System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.Commands" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.ListItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListItem As ObjectListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ObjectListItem ^ ListItem { System::Web::UI::MobileControls::ObjectListItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListItem : System.Web.UI.MobileControls.ObjectListItem" Usage="System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.ListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextRunCache" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextRunCache" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextRunCache sealed" />
+  <TypeSignature Language="F#" Value="type TextRunCache = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextRunCache.Change(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Change (textSourceCharacterIndex As Integer, addition As Integer, removal As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Change(int textSourceCharacterIndex, int addition, int removal);" />
+      <MemberSignature Language="F#" Value="member this.Change : int * int * int -&gt; unit" Usage="textRunCache.Change (textSourceCharacterIndex, addition, removal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextRunCache.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : unit -&gt; unit" Usage="textRunCache.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

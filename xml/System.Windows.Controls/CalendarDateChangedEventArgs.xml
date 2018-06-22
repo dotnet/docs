@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CalendarDateChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CalendarDateChangedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CalendarDateChangedEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type CalendarDateChangedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.CalendarDateChangedEventArgs.AddedDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddedDate As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; AddedDate { Nullable&lt;DateTime&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddedDate : Nullable&lt;DateTime&gt;" Usage="System.Windows.Controls.CalendarDateChangedEventArgs.AddedDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.CalendarDateChangedEventArgs.RemovedDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemovedDate As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; RemovedDate { Nullable&lt;DateTime&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemovedDate : Nullable&lt;DateTime&gt;" Usage="System.Windows.Controls.CalendarDateChangedEventArgs.RemovedDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

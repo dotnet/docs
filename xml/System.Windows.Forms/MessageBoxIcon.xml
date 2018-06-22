@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxIcon" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxIcon" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxIcon" />
+  <TypeSignature Language="F#" Value="type MessageBoxIcon = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Asterisk" />
       <MemberSignature Language="VB.NET" Value="Asterisk" />
       <MemberSignature Language="C++ CLI" Value="Asterisk" />
+      <MemberSignature Language="F#" Value="Asterisk = 64" Usage="System.Windows.Forms.MessageBoxIcon.Asterisk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +111,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 16" Usage="System.Windows.Forms.MessageBoxIcon.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +131,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Exclamation" />
       <MemberSignature Language="VB.NET" Value="Exclamation" />
       <MemberSignature Language="C++ CLI" Value="Exclamation" />
+      <MemberSignature Language="F#" Value="Exclamation = 48" Usage="System.Windows.Forms.MessageBoxIcon.Exclamation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +151,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Hand" />
       <MemberSignature Language="VB.NET" Value="Hand" />
       <MemberSignature Language="C++ CLI" Value="Hand" />
+      <MemberSignature Language="F#" Value="Hand = 16" Usage="System.Windows.Forms.MessageBoxIcon.Hand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +171,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Information" />
       <MemberSignature Language="VB.NET" Value="Information" />
       <MemberSignature Language="C++ CLI" Value="Information" />
+      <MemberSignature Language="F#" Value="Information = 64" Usage="System.Windows.Forms.MessageBoxIcon.Information" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +191,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.MessageBoxIcon.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +211,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Question" />
       <MemberSignature Language="VB.NET" Value="Question" />
       <MemberSignature Language="C++ CLI" Value="Question" />
+      <MemberSignature Language="F#" Value="Question = 32" Usage="System.Windows.Forms.MessageBoxIcon.Question" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -223,6 +231,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Stop" />
       <MemberSignature Language="VB.NET" Value="Stop" />
       <MemberSignature Language="C++ CLI" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 16" Usage="System.Windows.Forms.MessageBoxIcon.Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -242,6 +251,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 48" Usage="System.Windows.Forms.MessageBoxIcon.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

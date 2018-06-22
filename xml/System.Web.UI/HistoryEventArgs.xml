@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HistoryEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class HistoryEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class HistoryEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type HistoryEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HistoryEventArgs.#ctor(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HistoryEventArgs(System::Collections::Specialized::NameValueCollection ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.HistoryEventArgs : System.Collections.Specialized.NameValueCollection -&gt; System.Web.UI.HistoryEventArgs" Usage="new System.Web.UI.HistoryEventArgs state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HistoryEventArgs.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ State { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Collections.Specialized.NameValueCollection" Usage="System.Web.UI.HistoryEventArgs.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

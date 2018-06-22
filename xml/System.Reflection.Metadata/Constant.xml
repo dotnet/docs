@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Constant" />
   <TypeSignature Language="VB.NET" Value="Public Structure Constant" />
   <TypeSignature Language="C++ CLI" Value="public value class Constant" />
+  <TypeSignature Language="F#" Value="type Constant = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Constant.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As EntityHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Parent { System::Reflection::Metadata::EntityHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.Constant.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Constant.TypeCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeCode As ConstantTypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::ConstantTypeCode TypeCode { System::Reflection::Metadata::ConstantTypeCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeCode : System.Reflection.Metadata.ConstantTypeCode" Usage="System.Reflection.Metadata.Constant.TypeCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Constant.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle Value { System::Reflection::Metadata::BlobHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.Constant.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

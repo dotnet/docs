@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.InvalidChannelBindingException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidChannelBindingException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidChannelBindingException : Exception" />
+  <TypeSignature Language="F#" Value="type InvalidChannelBindingException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.InvalidChannelBindingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidChannelBindingException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.InvalidChannelBindingException : string -&gt; System.ServiceModel.Channels.InvalidChannelBindingException" Usage="new System.ServiceModel.Channels.InvalidChannelBindingException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.InvalidChannelBindingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidChannelBindingException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.InvalidChannelBindingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Channels.InvalidChannelBindingException" Usage="new System.ServiceModel.Channels.InvalidChannelBindingException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.InvalidChannelBindingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidChannelBindingException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.InvalidChannelBindingException : string * Exception -&gt; System.ServiceModel.Channels.InvalidChannelBindingException" Usage="new System.ServiceModel.Channels.InvalidChannelBindingException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

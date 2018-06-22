@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.ImportCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ImportCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImportCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type ImportCollection = class&#xA;    interface IEnumerable&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ImportCollection.AddNewImport(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddNewImport (projectFile As String, condition As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNewImport(System::String ^ projectFile, System::String ^ condition);" />
+      <MemberSignature Language="F#" Value="member this.AddNewImport : string * string -&gt; unit" Usage="importCollection.AddNewImport (projectFile, condition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ImportCollection.CopyTo(Microsoft.Build.BuildEngine.Import[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Import(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;Microsoft::Build::BuildEngine::Import ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Microsoft.Build.BuildEngine.Import[] * int -&gt; unit" Usage="importCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ImportCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="importCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ImportCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Build.BuildEngine.ImportCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ImportCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="importCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ImportCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="Microsoft.Build.BuildEngine.ImportCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ImportCollection.RemoveImport(Microsoft.Build.BuildEngine.Import)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveImport (importToRemove As Import)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveImport(Microsoft::Build::BuildEngine::Import ^ importToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemoveImport : Microsoft.Build.BuildEngine.Import -&gt; unit" Usage="importCollection.RemoveImport importToRemove" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ImportCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="Microsoft.Build.BuildEngine.ImportCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

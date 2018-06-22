@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityPreviewDesigner&#xA;Inherits SequentialActivityDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityPreviewDesigner : System::Workflow::ComponentModel::Design::SequentialActivityDesigner" />
+  <TypeSignature Language="F#" Value="type ActivityPreviewDesigner = class&#xA;    inherit SequentialActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.AccessibilityObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessibilityObject As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ AccessibilityObject { System::Windows::Forms::AccessibleObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessibilityObject : System.Windows.Forms.AccessibleObject" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.AccessibilityObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ContainedDesigners" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContainedDesigners As ReadOnlyCollection(Of ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::ActivityDesigner ^&gt; ^ ContainedDesigners { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::ActivityDesigner ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainedDesigners : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.ActivityDesigner&gt;" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ContainedDesigners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.CurrentDropTarget" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property CurrentDropTarget As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int CurrentDropTarget { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentDropTarget : int with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.CurrentDropTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="activityPreviewDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.EnsureVisibleContainedDesigner(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnsureVisibleContainedDesigner (containedDesigner As ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnsureVisibleContainedDesigner(System::Workflow::ComponentModel::Design::ActivityDesigner ^ containedDesigner);" />
+      <MemberSignature Language="F#" Value="override this.EnsureVisibleContainedDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; unit" Usage="activityPreviewDesigner.EnsureVisibleContainedDesigner containedDesigner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.FirstSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FirstSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ FirstSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.FirstSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.GetConnectors" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetConnectors () As Rectangle()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::Drawing::Rectangle&gt; ^ GetConnectors();" />
+      <MemberSignature Language="F#" Value="override this.GetConnectors : unit -&gt; System.Drawing.Rectangle[]" Usage="activityPreviewDesigner.GetConnectors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.GetDropTargets(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDropTargets (dropPoint As Point) As Rectangle()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Drawing::Rectangle&gt; ^ GetDropTargets(System::Drawing::Point dropPoint);" />
+      <MemberSignature Language="F#" Value="override this.GetDropTargets : System.Drawing.Point -&gt; System.Drawing.Rectangle[]" Usage="activityPreviewDesigner.GetDropTargets dropPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.GetNextSelectableObject(System.Object,System.Workflow.ComponentModel.Design.DesignerNavigationDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextSelectableObject (obj As Object, direction As DesignerNavigationDirection) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetNextSelectableObject(System::Object ^ obj, System::Workflow::ComponentModel::Design::DesignerNavigationDirection direction);" />
+      <MemberSignature Language="F#" Value="override this.GetNextSelectableObject : obj * System.Workflow.ComponentModel.Design.DesignerNavigationDirection -&gt; obj" Usage="activityPreviewDesigner.GetNextSelectableObject (obj, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Glyphs" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Glyphs As ActivityDesignerGlyphCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Workflow::ComponentModel::Design::ActivityDesignerGlyphCollection ^ Glyphs { System::Workflow::ComponentModel::Design::ActivityDesignerGlyphCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Glyphs : System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Glyphs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -343,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.HelpText" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property HelpText As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ HelpText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpText : string with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.HelpText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -369,6 +381,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Design.HitTestInfo HitTest(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.HitTest(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Design::HitTestInfo ^ HitTest(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="override this.HitTest : System.Drawing.Point -&gt; System.Workflow.ComponentModel.Design.HitTestInfo" Usage="activityPreviewDesigner.HitTest point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -392,6 +405,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Initialize(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Initialize(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="activityPreviewDesigner.Initialize activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -422,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.IsContainedDesignerVisible(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsContainedDesignerVisible (containedDesigner As ActivityDesigner) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsContainedDesignerVisible(System::Workflow::ComponentModel::Design::ActivityDesigner ^ containedDesigner);" />
+      <MemberSignature Language="F#" Value="override this.IsContainedDesignerVisible : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; bool" Usage="activityPreviewDesigner.IsContainedDesignerVisible containedDesigner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -456,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.LastSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LastSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ LastSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.LastSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -483,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.LoadViewState(System.IO.BinaryReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (reader As BinaryReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::IO::BinaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : System.IO.BinaryReader -&gt; unit" Usage="activityPreviewDesigner.LoadViewState reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -509,6 +526,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Location" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Location As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -536,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnContainedActivitiesChanged(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContainedActivitiesChanged (listChangeArgs As ActivityCollectionChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContainedActivitiesChanged(System::Workflow::ComponentModel::ActivityCollectionChangeEventArgs ^ listChangeArgs);" />
+      <MemberSignature Language="F#" Value="override this.OnContainedActivitiesChanged : System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs -&gt; unit" Usage="activityPreviewDesigner.OnContainedActivitiesChanged listChangeArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -568,6 +587,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnDragEnter(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragEnter (e As ActivityDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragEnter(System::Workflow::ComponentModel::Design::ActivityDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragEnter : System.Workflow.ComponentModel.Design.ActivityDragEventArgs -&gt; unit" Usage="activityPreviewDesigner.OnDragEnter e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -593,6 +613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnDragOver(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragOver (e As ActivityDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Workflow::ComponentModel::Design::ActivityDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragOver : System.Workflow.ComponentModel.Design.ActivityDragEventArgs -&gt; unit" Usage="activityPreviewDesigner.OnDragOver e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -618,6 +639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnLayoutPosition(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayoutPosition (e As ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayoutPosition(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutPosition : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit" Usage="activityPreviewDesigner.OnLayoutPosition e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -643,6 +665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnLayoutSize(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnLayoutSize (e As ActivityDesignerLayoutEventArgs) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size OnLayoutSize(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutSize : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; System.Drawing.Size" Usage="activityPreviewDesigner.OnLayoutSize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -676,6 +699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDoubleClick (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDoubleClick(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDoubleClick : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="activityPreviewDesigner.OnMouseDoubleClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -706,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="activityPreviewDesigner.OnMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -736,6 +761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnMouseLeave" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave();" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : unit -&gt; unit" Usage="activityPreviewDesigner.OnMouseLeave " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -756,6 +782,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="activityPreviewDesigner.OnMouseUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -786,6 +813,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Workflow::ComponentModel::Design::ActivityDesignerPaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs -&gt; unit" Usage="activityPreviewDesigner.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -809,6 +837,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnThemeChange(System.Workflow.ComponentModel.Design.ActivityDesignerTheme)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnThemeChange (newTheme As ActivityDesignerTheme)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnThemeChange(System::Workflow::ComponentModel::Design::ActivityDesignerTheme ^ newTheme);" />
+      <MemberSignature Language="F#" Value="override this.OnThemeChange : System.Workflow.ComponentModel.Design.ActivityDesignerTheme -&gt; unit" Usage="activityPreviewDesigner.OnThemeChange newTheme" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -839,6 +868,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.PreviewedDesigner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviewedDesigner As ActivityDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::ActivityDesigner ^ PreviewedDesigner { System::Workflow::ComponentModel::Design::ActivityDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviewedDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.PreviewedDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -866,6 +896,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.RefreshDesignerActions" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RefreshDesignerActions ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RefreshDesignerActions();" />
+      <MemberSignature Language="F#" Value="override this.RefreshDesignerActions : unit -&gt; unit" Usage="activityPreviewDesigner.RefreshDesignerActions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -893,6 +924,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.RefreshPreview" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshPreview ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshPreview();" />
+      <MemberSignature Language="F#" Value="member this.RefreshPreview : unit -&gt; unit" Usage="activityPreviewDesigner.RefreshPreview " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -920,6 +952,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.SaveViewState(System.IO.BinaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SaveViewState (writer As BinaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SaveViewState(System::IO::BinaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : System.IO.BinaryWriter -&gt; unit" Usage="activityPreviewDesigner.SaveViewState writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -952,6 +985,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ShowPreview" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowPreview As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowPreview { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowPreview : bool with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.ShowPreview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -973,6 +1007,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Verbs" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Verbs As ActivityDesignerVerbCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Workflow::ComponentModel::Design::ActivityDesignerVerbCollection ^ Verbs { System::Workflow::ComponentModel::Design::ActivityDesignerVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

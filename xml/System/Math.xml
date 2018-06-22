@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Math" />
   <TypeSignature Language="VB.NET" Value="Public Class Math" />
   <TypeSignature Language="C++ CLI" Value="public ref class Math abstract sealed" />
+  <TypeSignature Language="F#" Value="type Math = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Abs(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Abs(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="static member Abs : decimal -&gt; decimal" Usage="System.Math.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Abs(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Abs(double value);" />
+      <MemberSignature Language="F#" Value="static member Abs : double -&gt; double" Usage="System.Math.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -170,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Abs(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short Abs(short value);" />
+      <MemberSignature Language="F#" Value="static member Abs : int16 -&gt; int16" Usage="System.Math.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -224,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Abs(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Abs(int value);" />
+      <MemberSignature Language="F#" Value="static member Abs : int -&gt; int" Usage="System.Math.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Abs(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Abs(long value);" />
+      <MemberSignature Language="F#" Value="static member Abs : int64 -&gt; int64" Usage="System.Math.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -332,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Abs(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As SByte) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte Abs(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member Abs : sbyte -&gt; sbyte" Usage="System.Math.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -391,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Abs(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Abs(float value);" />
+      <MemberSignature Language="F#" Value="static member Abs : single -&gt; single" Usage="System.Math.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -450,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Acos(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Acos (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Acos(double d);" />
+      <MemberSignature Language="F#" Value="static member Acos : double -&gt; double" Usage="System.Math.Acos d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -512,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Acosh(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Acosh (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Acosh(double d);" />
+      <MemberSignature Language="F#" Value="static member Acosh : double -&gt; double" Usage="System.Math.Acosh d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -536,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Asin(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Asin (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Asin(double d);" />
+      <MemberSignature Language="F#" Value="static member Asin : double -&gt; double" Usage="System.Math.Asin d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -600,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Asinh(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Asinh (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Asinh(double d);" />
+      <MemberSignature Language="F#" Value="static member Asinh : double -&gt; double" Usage="System.Math.Asinh d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -624,6 +636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Atan(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Atan (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Atan(double d);" />
+      <MemberSignature Language="F#" Value="static member Atan : double -&gt; double" Usage="System.Math.Atan d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -688,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Atan2(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Atan2 (y As Double, x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Atan2(double y, double x);" />
+      <MemberSignature Language="F#" Value="static member Atan2 : double * double -&gt; double" Usage="System.Math.Atan2 (y, x)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -770,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Atanh(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Atanh (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Atanh(double d);" />
+      <MemberSignature Language="F#" Value="static member Atanh : double -&gt; double" Usage="System.Math.Atanh d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -794,6 +809,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.BigMul(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BigMul (a As Integer, b As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long BigMul(int a, int b);" />
+      <MemberSignature Language="F#" Value="static member BigMul : int * int -&gt; int64" Usage="System.Math.BigMul (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -841,6 +857,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Cbrt(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cbrt (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Cbrt(double d);" />
+      <MemberSignature Language="F#" Value="static member Cbrt : double -&gt; double" Usage="System.Math.Cbrt d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -884,6 +901,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Ceiling(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (d As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Ceiling(System::Decimal d);" />
+      <MemberSignature Language="F#" Value="static member Ceiling : decimal -&gt; decimal" Usage="System.Math.Ceiling d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -938,6 +956,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Ceiling(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (a As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Ceiling(double a);" />
+      <MemberSignature Language="F#" Value="static member Ceiling : double -&gt; double" Usage="System.Math.Ceiling a" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -997,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Byte,System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As Byte, min As Byte, max As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Clamp(System::Byte value, System::Byte min, System::Byte max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : byte * byte * byte -&gt; byte" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1026,6 +1046,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Decimal,System.Decimal,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As Decimal, min As Decimal, max As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Clamp(System::Decimal value, System::Decimal min, System::Decimal max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : decimal * decimal * decimal -&gt; decimal" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1055,6 +1076,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As Double, min As Double, max As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Clamp(double value, double min, double max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : double * double * double -&gt; double" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1084,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Int16,System.Int16,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As Short, min As Short, max As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short Clamp(short value, short min, short max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : int16 * int16 * int16 -&gt; int16" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1113,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As Integer, min As Integer, max As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Clamp(int value, int min, int max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : int * int * int -&gt; int" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1142,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Int64,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As Long, min As Long, max As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Clamp(long value, long min, long max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : int64 * int64 * int64 -&gt; int64" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1171,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.SByte,System.SByte,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As SByte, min As SByte, max As SByte) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte Clamp(System::SByte value, System::SByte min, System::SByte max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : sbyte * sbyte * sbyte -&gt; sbyte" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1205,6 +1231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As Single, min As Single, max As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Clamp(float value, float min, float max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : single * single * single -&gt; single" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1234,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.UInt16,System.UInt16,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As UShort, min As UShort, max As UShort) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 Clamp(System::UInt16 value, System::UInt16 min, System::UInt16 max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : uint16 * uint16 * uint16 -&gt; uint16" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1268,6 +1296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.UInt32,System.UInt32,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As UInteger, min As UInteger, max As UInteger) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Clamp(System::UInt32 value, System::UInt32 min, System::UInt32 max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : uint32 * uint32 * uint32 -&gt; uint32" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1302,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.UInt64,System.UInt64,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value As ULong, min As ULong, max As ULong) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Clamp(System::UInt64 value, System::UInt64 min, System::UInt64 max);" />
+      <MemberSignature Language="F#" Value="static member Clamp : uint64 * uint64 * uint64 -&gt; uint64" Usage="System.Math.Clamp (value, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1336,6 +1366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Cos(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cos (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Cos(double d);" />
+      <MemberSignature Language="F#" Value="static member Cos : double -&gt; double" Usage="System.Math.Cos d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1396,6 +1427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Cosh(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cosh (value As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Cosh(double value);" />
+      <MemberSignature Language="F#" Value="static member Cosh : double -&gt; double" Usage="System.Math.Cosh value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1464,6 +1496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.DivRem(System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DivRem (a As Integer, b As Integer, ByRef result As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DivRem(int a, int b, [Runtime::InteropServices::Out] int % result);" />
+      <MemberSignature Language="F#" Value="static member DivRem : int * int *  -&gt; int" Usage="System.Math.DivRem (a, b, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1520,6 +1553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.DivRem(System.Int64,System.Int64,System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DivRem (a As Long, b As Long, ByRef result As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long DivRem(long a, long b, [Runtime::InteropServices::Out] long % result);" />
+      <MemberSignature Language="F#" Value="static member DivRem : int64 * int64 *  -&gt; int64" Usage="System.Math.DivRem (a, b, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1576,6 +1610,7 @@
       <MemberSignature Language="DocId" Value="F:System.Math.E" />
       <MemberSignature Language="VB.NET" Value="Public Const E As Double  = 2.71828182845905" />
       <MemberSignature Language="C++ CLI" Value="public: double E = 2.71828182845905;" />
+      <MemberSignature Language="F#" Value="val mutable E : double" Usage="System.Math.E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1625,6 +1660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Exp(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exp (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Exp(double d);" />
+      <MemberSignature Language="F#" Value="static member Exp : double -&gt; double" Usage="System.Math.Exp d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1709,6 +1745,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Floor(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Floor (d As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Floor(System::Decimal d);" />
+      <MemberSignature Language="F#" Value="static member Floor : decimal -&gt; decimal" Usage="System.Math.Floor d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1764,6 +1801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.Floor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Floor (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Floor(double d);" />
+      <MemberSignature Language="F#" Value="static member Floor : double -&gt; double" Usage="System.Math.Floor d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1823,6 +1861,7 @@
       <MemberSignature Language="DocId" Value="M:System.Math.IEEERemainder(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IEEERemainder (x As Double, y As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double IEEERemainder(double x, double y);" />
+      <MemberSignature Language="F#" Value="static member IEEERemainder : double * double -&gt; double" Usage="System.Math.IEEERemainder (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1907,6 +1946,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Log(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Log(double d);" />
+      <MemberSignature Language="F#" Value="static member Log : double -&gt; double" Usage="System.Math.Log d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1978,6 +2018,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Log(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log (a As Double, newBase As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Log(double a, double newBase);" />
+      <MemberSignature Language="F#" Value="static member Log : double * double -&gt; double" Usage="System.Math.Log (a, newBase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2116,6 +2157,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Log10(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log10 (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Log10(double d);" />
+      <MemberSignature Language="F#" Value="static member Log10 : double -&gt; double" Usage="System.Math.Log10 d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2199,6 +2241,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As Byte, val2 As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Max(System::Byte val1, System::Byte val2);" />
+      <MemberSignature Language="F#" Value="static member Max : byte * byte -&gt; byte" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2254,6 +2297,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.Decimal,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As Decimal, val2 As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Max(System::Decimal val1, System::Decimal val2);" />
+      <MemberSignature Language="F#" Value="static member Max : decimal * decimal -&gt; decimal" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2309,6 +2353,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As Double, val2 As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Max(double val1, double val2);" />
+      <MemberSignature Language="F#" Value="static member Max : double * double -&gt; double" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2364,6 +2409,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.Int16,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As Short, val2 As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short Max(short val1, short val2);" />
+      <MemberSignature Language="F#" Value="static member Max : int16 * int16 -&gt; int16" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2419,6 +2465,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As Integer, val2 As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Max(int val1, int val2);" />
+      <MemberSignature Language="F#" Value="static member Max : int * int -&gt; int" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2474,6 +2521,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As Long, val2 As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Max(long val1, long val2);" />
+      <MemberSignature Language="F#" Value="static member Max : int64 * int64 -&gt; int64" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2529,6 +2577,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.SByte,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As SByte, val2 As SByte) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte Max(System::SByte val1, System::SByte val2);" />
+      <MemberSignature Language="F#" Value="static member Max : sbyte * sbyte -&gt; sbyte" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2587,6 +2636,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As Single, val2 As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Max(float val1, float val2);" />
+      <MemberSignature Language="F#" Value="static member Max : single * single -&gt; single" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2642,6 +2692,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.UInt16,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As UShort, val2 As UShort) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 Max(System::UInt16 val1, System::UInt16 val2);" />
+      <MemberSignature Language="F#" Value="static member Max : uint16 * uint16 -&gt; uint16" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2700,6 +2751,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.UInt32,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As UInteger, val2 As UInteger) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Max(System::UInt32 val1, System::UInt32 val2);" />
+      <MemberSignature Language="F#" Value="static member Max : uint32 * uint32 -&gt; uint32" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2758,6 +2810,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Max(System.UInt64,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (val1 As ULong, val2 As ULong) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Max(System::UInt64 val1, System::UInt64 val2);" />
+      <MemberSignature Language="F#" Value="static member Max : uint64 * uint64 -&gt; uint64" Usage="System.Math.Max (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2828,6 +2881,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As Byte, val2 As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Min(System::Byte val1, System::Byte val2);" />
+      <MemberSignature Language="F#" Value="static member Min : byte * byte -&gt; byte" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2883,6 +2937,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.Decimal,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As Decimal, val2 As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Min(System::Decimal val1, System::Decimal val2);" />
+      <MemberSignature Language="F#" Value="static member Min : decimal * decimal -&gt; decimal" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2938,6 +2993,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As Double, val2 As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Min(double val1, double val2);" />
+      <MemberSignature Language="F#" Value="static member Min : double * double -&gt; double" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2993,6 +3049,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.Int16,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As Short, val2 As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short Min(short val1, short val2);" />
+      <MemberSignature Language="F#" Value="static member Min : int16 * int16 -&gt; int16" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3048,6 +3105,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As Integer, val2 As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Min(int val1, int val2);" />
+      <MemberSignature Language="F#" Value="static member Min : int * int -&gt; int" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3103,6 +3161,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As Long, val2 As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Min(long val1, long val2);" />
+      <MemberSignature Language="F#" Value="static member Min : int64 * int64 -&gt; int64" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3158,6 +3217,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.SByte,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As SByte, val2 As SByte) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte Min(System::SByte val1, System::SByte val2);" />
+      <MemberSignature Language="F#" Value="static member Min : sbyte * sbyte -&gt; sbyte" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3216,6 +3276,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As Single, val2 As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Min(float val1, float val2);" />
+      <MemberSignature Language="F#" Value="static member Min : single * single -&gt; single" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3271,6 +3332,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.UInt16,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As UShort, val2 As UShort) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 Min(System::UInt16 val1, System::UInt16 val2);" />
+      <MemberSignature Language="F#" Value="static member Min : uint16 * uint16 -&gt; uint16" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3329,6 +3391,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.UInt32,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As UInteger, val2 As UInteger) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Min(System::UInt32 val1, System::UInt32 val2);" />
+      <MemberSignature Language="F#" Value="static member Min : uint32 * uint32 -&gt; uint32" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3387,6 +3450,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Min(System.UInt64,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (val1 As ULong, val2 As ULong) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Min(System::UInt64 val1, System::UInt64 val2);" />
+      <MemberSignature Language="F#" Value="static member Min : uint64 * uint64 -&gt; uint64" Usage="System.Math.Min (val1, val2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3445,6 +3509,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="F:System.Math.PI" />
       <MemberSignature Language="VB.NET" Value="Public Const PI As Double  = 3.14159265358979" />
       <MemberSignature Language="C++ CLI" Value="public: double PI = 3.14159265358979;" />
+      <MemberSignature Language="F#" Value="val mutable PI : double" Usage="System.Math.PI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3494,6 +3559,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
       <MemberSignature Language="DocId" Value="M:System.Math.Pow(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Pow (x As Double, y As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Pow(double x, double y);" />
+      <MemberSignature Language="F#" Value="static member Pow : double * double -&gt; double" Usage="System.Math.Pow (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3834,6 +3900,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (d As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Round(System::Decimal d);" />
+      <MemberSignature Language="F#" Value="static member Round : decimal -&gt; decimal" Usage="System.Math.Round d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3884,6 +3951,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (a As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Round(double a);" />
+      <MemberSignature Language="F#" Value="static member Round : double -&gt; double" Usage="System.Math.Round a" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3944,6 +4012,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (d As Decimal, decimals As Integer) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Round(System::Decimal d, int decimals);" />
+      <MemberSignature Language="F#" Value="static member Round : decimal * int -&gt; decimal" Usage="System.Math.Round (d, decimals)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3998,6 +4067,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.MidpointRounding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (d As Decimal, mode As MidpointRounding) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Round(System::Decimal d, MidpointRounding mode);" />
+      <MemberSignature Language="F#" Value="static member Round : decimal * MidpointRounding -&gt; decimal" Usage="System.Math.Round (d, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4052,6 +4122,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (value As Double, digits As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Round(double value, int digits);" />
+      <MemberSignature Language="F#" Value="static member Round : double * int -&gt; double" Usage="System.Math.Round (value, digits)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4111,6 +4182,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.MidpointRounding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (value As Double, mode As MidpointRounding) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Round(double value, MidpointRounding mode);" />
+      <MemberSignature Language="F#" Value="static member Round : double * MidpointRounding -&gt; double" Usage="System.Math.Round (value, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4170,6 +4242,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (d As Decimal, decimals As Integer, mode As MidpointRounding) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Round(System::Decimal d, int decimals, MidpointRounding mode);" />
+      <MemberSignature Language="F#" Value="static member Round : decimal * int * MidpointRounding -&gt; decimal" Usage="System.Math.Round (d, decimals, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4228,6 +4301,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.Int32,System.MidpointRounding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (value As Double, digits As Integer, mode As MidpointRounding) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Round(double value, int digits, MidpointRounding mode);" />
+      <MemberSignature Language="F#" Value="static member Round : double * int * MidpointRounding -&gt; double" Usage="System.Math.Round (value, digits, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4303,6 +4377,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (value As Decimal) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Sign(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="static member Sign : decimal -&gt; int" Usage="System.Math.Sign value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4369,6 +4444,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (value As Double) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Sign(double value);" />
+      <MemberSignature Language="F#" Value="static member Sign : double -&gt; int" Usage="System.Math.Sign value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4437,6 +4513,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (value As Short) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Sign(short value);" />
+      <MemberSignature Language="F#" Value="static member Sign : int16 -&gt; int" Usage="System.Math.Sign value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4503,6 +4580,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (value As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Sign(int value);" />
+      <MemberSignature Language="F#" Value="static member Sign : int -&gt; int" Usage="System.Math.Sign value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4569,6 +4647,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (value As Long) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Sign(long value);" />
+      <MemberSignature Language="F#" Value="static member Sign : int64 -&gt; int" Usage="System.Math.Sign value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4635,6 +4714,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (value As SByte) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Sign(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member Sign : sbyte -&gt; int" Usage="System.Math.Sign value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4706,6 +4786,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (value As Single) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Sign(float value);" />
+      <MemberSignature Language="F#" Value="static member Sign : single -&gt; int" Usage="System.Math.Sign value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4774,6 +4855,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sin(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sin (a As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Sin(double a);" />
+      <MemberSignature Language="F#" Value="static member Sin : double -&gt; double" Usage="System.Math.Sin a" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4834,6 +4916,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sinh(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sinh (value As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Sinh(double value);" />
+      <MemberSignature Language="F#" Value="static member Sinh : double -&gt; double" Usage="System.Math.Sinh value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4892,6 +4975,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Sqrt(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sqrt (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Sqrt(double d);" />
+      <MemberSignature Language="F#" Value="static member Sqrt : double -&gt; double" Usage="System.Math.Sqrt d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4960,6 +5044,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Tan(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Tan (a As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Tan(double a);" />
+      <MemberSignature Language="F#" Value="static member Tan : double -&gt; double" Usage="System.Math.Tan a" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5018,6 +5103,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Tanh(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Tanh (value As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Tanh(double value);" />
+      <MemberSignature Language="F#" Value="static member Tanh : double -&gt; double" Usage="System.Math.Tanh value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5095,6 +5181,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Truncate(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate (d As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Truncate(System::Decimal d);" />
+      <MemberSignature Language="F#" Value="static member Truncate : decimal -&gt; decimal" Usage="System.Math.Truncate d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5150,6 +5237,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <MemberSignature Language="DocId" Value="M:System.Math.Truncate(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Truncate(double d);" />
+      <MemberSignature Language="F#" Value="static member Truncate : double -&gt; double" Usage="System.Math.Truncate d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

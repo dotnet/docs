@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintingPermissionLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintingPermissionLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintingPermissionLevel" />
+  <TypeSignature Language="F#" Value="type PrintingPermissionLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting" />
       <MemberSignature Language="VB.NET" Value="AllPrinting" />
       <MemberSignature Language="C++ CLI" Value="AllPrinting" />
+      <MemberSignature Language="F#" Value="AllPrinting = 3" Usage="System.Drawing.Printing.PrintingPermissionLevel.AllPrinting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />
       <MemberSignature Language="VB.NET" Value="DefaultPrinting" />
       <MemberSignature Language="C++ CLI" Value="DefaultPrinting" />
+      <MemberSignature Language="F#" Value="DefaultPrinting = 2" Usage="System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting" />
       <MemberSignature Language="VB.NET" Value="NoPrinting" />
       <MemberSignature Language="C++ CLI" Value="NoPrinting" />
+      <MemberSignature Language="F#" Value="NoPrinting = 0" Usage="System.Drawing.Printing.PrintingPermissionLevel.NoPrinting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" />
       <MemberSignature Language="VB.NET" Value="SafePrinting" />
       <MemberSignature Language="C++ CLI" Value="SafePrinting" />
+      <MemberSignature Language="F#" Value="SafePrinting = 1" Usage="System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

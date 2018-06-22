@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyKeyNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyKeyNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyKeyNameAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyKeyNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyKeyNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyKeyNameAttribute(System::String ^ keyName);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyKeyNameAttribute : string -&gt; System.Reflection.AssemblyKeyNameAttribute" Usage="new System.Reflection.AssemblyKeyNameAttribute keyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyKeyNameAttribute.KeyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyName : string" Usage="System.Reflection.AssemblyKeyNameAttribute.KeyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompareMethod" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompareMethod" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompareMethod" />
+  <TypeSignature Language="F#" Value="type CompareMethod = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CompareMethod.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 0" Usage="Microsoft.VisualBasic.CompareMethod.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CompareMethod.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="Microsoft.VisualBasic.CompareMethod.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

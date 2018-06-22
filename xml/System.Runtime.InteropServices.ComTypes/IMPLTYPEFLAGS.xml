@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS" />
   <TypeSignature Language="VB.NET" Value="Public Enum IMPLTYPEFLAGS" />
   <TypeSignature Language="C++ CLI" Value="public enum class IMPLTYPEFLAGS" />
+  <TypeSignature Language="F#" Value="type IMPLTYPEFLAGS = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULT" />
       <MemberSignature Language="VB.NET" Value="IMPLTYPEFLAG_FDEFAULT" />
       <MemberSignature Language="C++ CLI" Value="IMPLTYPEFLAG_FDEFAULT" />
+      <MemberSignature Language="F#" Value="IMPLTYPEFLAG_FDEFAULT = 1" Usage="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULTVTABLE" />
       <MemberSignature Language="VB.NET" Value="IMPLTYPEFLAG_FDEFAULTVTABLE" />
       <MemberSignature Language="C++ CLI" Value="IMPLTYPEFLAG_FDEFAULTVTABLE" />
+      <MemberSignature Language="F#" Value="IMPLTYPEFLAG_FDEFAULTVTABLE = 8" Usage="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULTVTABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.IMPLTYPEFLAG_FRESTRICTED" />
       <MemberSignature Language="VB.NET" Value="IMPLTYPEFLAG_FRESTRICTED" />
       <MemberSignature Language="C++ CLI" Value="IMPLTYPEFLAG_FRESTRICTED" />
+      <MemberSignature Language="F#" Value="IMPLTYPEFLAG_FRESTRICTED = 4" Usage="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.IMPLTYPEFLAG_FRESTRICTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.IMPLTYPEFLAG_FSOURCE" />
       <MemberSignature Language="VB.NET" Value="IMPLTYPEFLAG_FSOURCE" />
       <MemberSignature Language="C++ CLI" Value="IMPLTYPEFLAG_FSOURCE" />
+      <MemberSignature Language="F#" Value="IMPLTYPEFLAG_FSOURCE = 2" Usage="System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.IMPLTYPEFLAG_FSOURCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

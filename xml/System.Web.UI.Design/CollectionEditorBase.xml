@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.CollectionEditorBase" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionEditorBase&#xA;Inherits CollectionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionEditorBase : System::ComponentModel::Design::CollectionEditor" />
+  <TypeSignature Language="F#" Value="type CollectionEditorBase = class&#xA;    inherit CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.CollectionEditorBase.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionEditorBase(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.CollectionEditorBase : Type -&gt; System.Web.UI.Design.CollectionEditorBase" Usage="new System.Web.UI.Design.CollectionEditorBase type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.CollectionEditorBase.CreateCollectionForm" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionForm () As CollectionEditor.CollectionForm" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ComponentModel::Design::CollectionEditor::CollectionForm ^ CreateCollectionForm();" />
+      <MemberSignature Language="F#" Value="override this.CreateCollectionForm : unit -&gt; System.ComponentModel.Design.CollectionEditor.CollectionForm" Usage="collectionEditorBase.CreateCollectionForm " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>

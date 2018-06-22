@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.SubscribeContextCallback`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SubscribeContextCallback(Of TContextItemType)(item As TContextItemType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TContextItemType&gt;&#xA; where TContextItemType : ContextItempublic delegate void SubscribeContextCallback(TContextItemType item);" />
+  <TypeSignature Language="F#" Value="type SubscribeContextCallback&lt;'ContextItemType (requires 'ContextItemType :&gt; ContextItem)&gt; = delegate of 'ContextItemType -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

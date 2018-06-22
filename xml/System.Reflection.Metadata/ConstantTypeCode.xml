@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ConstantTypeCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConstantTypeCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConstantTypeCode" />
+  <TypeSignature Language="F#" Value="type ConstantTypeCode = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 2" Usage="System.Reflection.Metadata.ConstantTypeCode.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
       <MemberSignature Language="C++ CLI" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 5" Usage="System.Reflection.Metadata.ConstantTypeCode.Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Char" />
       <MemberSignature Language="VB.NET" Value="Char" />
       <MemberSignature Language="C++ CLI" Value="Char" />
+      <MemberSignature Language="F#" Value="Char = 3" Usage="System.Reflection.Metadata.ConstantTypeCode.Char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 13" Usage="System.Reflection.Metadata.ConstantTypeCode.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Int16" />
       <MemberSignature Language="VB.NET" Value="Int16" />
       <MemberSignature Language="C++ CLI" Value="Int16" />
+      <MemberSignature Language="F#" Value="Int16 = 6" Usage="System.Reflection.Metadata.ConstantTypeCode.Int16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Int32" />
       <MemberSignature Language="VB.NET" Value="Int32" />
       <MemberSignature Language="C++ CLI" Value="Int32" />
+      <MemberSignature Language="F#" Value="Int32 = 8" Usage="System.Reflection.Metadata.ConstantTypeCode.Int32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Int64" />
       <MemberSignature Language="VB.NET" Value="Int64" />
       <MemberSignature Language="C++ CLI" Value="Int64" />
+      <MemberSignature Language="F#" Value="Int64 = 10" Usage="System.Reflection.Metadata.ConstantTypeCode.Int64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 0" Usage="System.Reflection.Metadata.ConstantTypeCode.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.NullReference" />
       <MemberSignature Language="VB.NET" Value="NullReference" />
       <MemberSignature Language="C++ CLI" Value="NullReference" />
+      <MemberSignature Language="F#" Value="NullReference = 18" Usage="System.Reflection.Metadata.ConstantTypeCode.NullReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.SByte" />
       <MemberSignature Language="VB.NET" Value="SByte" />
       <MemberSignature Language="C++ CLI" Value="SByte" />
+      <MemberSignature Language="F#" Value="SByte = 4" Usage="System.Reflection.Metadata.ConstantTypeCode.SByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -245,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 12" Usage="System.Reflection.Metadata.ConstantTypeCode.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -267,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 14" Usage="System.Reflection.Metadata.ConstantTypeCode.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -289,6 +302,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.UInt16" />
       <MemberSignature Language="VB.NET" Value="UInt16" />
       <MemberSignature Language="C++ CLI" Value="UInt16" />
+      <MemberSignature Language="F#" Value="UInt16 = 7" Usage="System.Reflection.Metadata.ConstantTypeCode.UInt16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -311,6 +325,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.UInt32" />
       <MemberSignature Language="VB.NET" Value="UInt32" />
       <MemberSignature Language="C++ CLI" Value="UInt32" />
+      <MemberSignature Language="F#" Value="UInt32 = 9" Usage="System.Reflection.Metadata.ConstantTypeCode.UInt32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -333,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ConstantTypeCode.UInt64" />
       <MemberSignature Language="VB.NET" Value="UInt64" />
       <MemberSignature Language="C++ CLI" Value="UInt64" />
+      <MemberSignature Language="F#" Value="UInt64 = 11" Usage="System.Reflection.Metadata.ConstantTypeCode.UInt64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

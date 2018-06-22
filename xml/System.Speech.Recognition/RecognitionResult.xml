@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognitionResult" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RecognitionResult&#xA;Inherits RecognizedPhrase&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class RecognitionResult sealed : System::Speech::Recognition::RecognizedPhrase, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type RecognitionResult = class&#xA;    inherit RecognizedPhrase&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -132,6 +133,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognitionResult.Alternates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Alternates As ReadOnlyCollection(Of RecognizedPhrase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::Recognition::RecognizedPhrase ^&gt; ^ Alternates { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::Recognition::RecognizedPhrase ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Alternates : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Recognition.RecognizedPhrase&gt;" Usage="System.Speech.Recognition.RecognitionResult.Alternates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -211,6 +213,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognitionResult.Audio" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Audio As RecognizedAudio" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::RecognizedAudio ^ Audio { System::Speech::Recognition::RecognizedAudio ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Audio : System.Speech.Recognition.RecognizedAudio" Usage="System.Speech.Recognition.RecognitionResult.Audio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -288,6 +291,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.RecognitionResult.GetAudioForWordRange(System.Speech.Recognition.RecognizedWordUnit,System.Speech.Recognition.RecognizedWordUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAudioForWordRange (firstWord As RecognizedWordUnit, lastWord As RecognizedWordUnit) As RecognizedAudio" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::RecognizedAudio ^ GetAudioForWordRange(System::Speech::Recognition::RecognizedWordUnit ^ firstWord, System::Speech::Recognition::RecognizedWordUnit ^ lastWord);" />
+      <MemberSignature Language="F#" Value="member this.GetAudioForWordRange : System.Speech.Recognition.RecognizedWordUnit * System.Speech.Recognition.RecognizedWordUnit -&gt; System.Speech.Recognition.RecognizedAudio" Usage="recognitionResult.GetAudioForWordRange (firstWord, lastWord)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

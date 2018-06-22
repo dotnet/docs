@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WritingPrintTicketRequiredEventHandler(sender As Object, e As WritingPrintTicketRequiredEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WritingPrintTicketRequiredEventHandler(System::Object ^ sender, WritingPrintTicketRequiredEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WritingPrintTicketRequiredEventHandler = delegate of obj * WritingPrintTicketRequiredEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

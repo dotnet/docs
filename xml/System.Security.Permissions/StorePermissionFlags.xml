@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StorePermissionFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum StorePermissionFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class StorePermissionFlags" />
+  <TypeSignature Language="F#" Value="type StorePermissionFlags = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.AddToStore" />
       <MemberSignature Language="VB.NET" Value="AddToStore" />
       <MemberSignature Language="C++ CLI" Value="AddToStore" />
+      <MemberSignature Language="F#" Value="AddToStore = 32" Usage="System.Security.Permissions.StorePermissionFlags.AddToStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.AllFlags" />
       <MemberSignature Language="VB.NET" Value="AllFlags" />
       <MemberSignature Language="C++ CLI" Value="AllFlags" />
+      <MemberSignature Language="F#" Value="AllFlags = 247" Usage="System.Security.Permissions.StorePermissionFlags.AllFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.CreateStore" />
       <MemberSignature Language="VB.NET" Value="CreateStore" />
       <MemberSignature Language="C++ CLI" Value="CreateStore" />
+      <MemberSignature Language="F#" Value="CreateStore = 1" Usage="System.Security.Permissions.StorePermissionFlags.CreateStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.DeleteStore" />
       <MemberSignature Language="VB.NET" Value="DeleteStore" />
       <MemberSignature Language="C++ CLI" Value="DeleteStore" />
+      <MemberSignature Language="F#" Value="DeleteStore = 2" Usage="System.Security.Permissions.StorePermissionFlags.DeleteStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" />
       <MemberSignature Language="VB.NET" Value="EnumerateCertificates" />
       <MemberSignature Language="C++ CLI" Value="EnumerateCertificates" />
+      <MemberSignature Language="F#" Value="EnumerateCertificates = 128" Usage="System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.EnumerateStores" />
       <MemberSignature Language="VB.NET" Value="EnumerateStores" />
       <MemberSignature Language="C++ CLI" Value="EnumerateStores" />
+      <MemberSignature Language="F#" Value="EnumerateStores = 4" Usage="System.Security.Permissions.StorePermissionFlags.EnumerateStores" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.NoFlags" />
       <MemberSignature Language="VB.NET" Value="NoFlags" />
       <MemberSignature Language="C++ CLI" Value="NoFlags" />
+      <MemberSignature Language="F#" Value="NoFlags = 0" Usage="System.Security.Permissions.StorePermissionFlags.NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />
       <MemberSignature Language="VB.NET" Value="OpenStore" />
       <MemberSignature Language="C++ CLI" Value="OpenStore" />
+      <MemberSignature Language="F#" Value="OpenStore = 16" Usage="System.Security.Permissions.StorePermissionFlags.OpenStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.RemoveFromStore" />
       <MemberSignature Language="VB.NET" Value="RemoveFromStore" />
       <MemberSignature Language="C++ CLI" Value="RemoveFromStore" />
+      <MemberSignature Language="F#" Value="RemoveFromStore = 64" Usage="System.Security.Permissions.StorePermissionFlags.RemoveFromStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

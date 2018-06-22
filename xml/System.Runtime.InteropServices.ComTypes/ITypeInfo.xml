@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ITypeInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeInfo" />
+  <TypeSignature Language="F#" Value="type ITypeInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddressOfMember (memid As Integer, invKind As INVOKEKIND, ByRef ppv As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddressOfMember(int memid, System::Runtime::InteropServices::ComTypes::INVOKEKIND invKind, [Runtime::InteropServices::Out] IntPtr % ppv);" />
+      <MemberSignature Language="F#" Value="abstract member AddressOfMember : int * System.Runtime.InteropServices.ComTypes.INVOKEKIND *  -&gt; unit" Usage="iTypeInfo.AddressOfMember (memid, invKind, ppv)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.CreateInstance(System.Object,System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateInstance (pUnkOuter As Object, ByRef riid As Guid, ByRef ppvObj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateInstance(System::Object ^ pUnkOuter, Guid % riid, [Runtime::InteropServices::Out] System::Object ^ % ppvObj);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : obj *  *  -&gt; unit" Usage="iTypeInfo.CreateInstance (pUnkOuter, riid, ppvObj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetContainingTypeLib (ByRef ppTLB As ITypeLib, ByRef pIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetContainingTypeLib([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeLib ^ % ppTLB, [Runtime::InteropServices::Out] int % pIndex);" />
+      <MemberSignature Language="F#" Value="abstract member GetContainingTypeLib :  *  -&gt; unit" Usage="iTypeInfo.GetContainingTypeLib (ppTLB, pIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDllEntry (memid As Integer, invKind As INVOKEKIND, pBstrDllName As IntPtr, pBstrName As IntPtr, pwOrdinal As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDllEntry(int memid, System::Runtime::InteropServices::ComTypes::INVOKEKIND invKind, IntPtr pBstrDllName, IntPtr pBstrName, IntPtr pwOrdinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetDllEntry : int * System.Runtime.InteropServices.ComTypes.INVOKEKIND * nativeint * nativeint * nativeint -&gt; unit" Usage="iTypeInfo.GetDllEntry (memid, invKind, pBstrDllName, pBstrName, pwOrdinal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -250,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation (index As Integer, ByRef strName As String, ByRef strDocString As String, ByRef dwHelpContext As Integer, ByRef strHelpFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation(int index, [Runtime::InteropServices::Out] System::String ^ % strName, [Runtime::InteropServices::Out] System::String ^ % strDocString, [Runtime::InteropServices::Out] int % dwHelpContext, [Runtime::InteropServices::Out] System::String ^ % strHelpFile);" />
+      <MemberSignature Language="F#" Value="abstract member GetDocumentation : int *  *  *  *  -&gt; unit" Usage="iTypeInfo.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -303,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetFuncDesc(System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetFuncDesc (index As Integer, ByRef ppFuncDesc As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetFuncDesc(int index, [Runtime::InteropServices::Out] IntPtr % ppFuncDesc);" />
+      <MemberSignature Language="F#" Value="abstract member GetFuncDesc : int *  -&gt; unit" Usage="iTypeInfo.GetFuncDesc (index, ppFuncDesc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -352,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetIDsOfNames(System.String[],System.Int32,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetIDsOfNames (rgszNames As String(), cNames As Integer, pMemId As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetIDsOfNames(cli::array &lt;System::String ^&gt; ^ rgszNames, int cNames, cli::array &lt;int&gt; ^ pMemId);" />
+      <MemberSignature Language="F#" Value="abstract member GetIDsOfNames : string[] * int * int[] -&gt; unit" Usage="iTypeInfo.GetIDsOfNames (rgszNames, cNames, pMemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -401,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetImplTypeFlags (index As Integer, ByRef pImplTypeFlags As IMPLTYPEFLAGS)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetImplTypeFlags(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMPLTYPEFLAGS % pImplTypeFlags);" />
+      <MemberSignature Language="F#" Value="abstract member GetImplTypeFlags : int *  -&gt; unit" Usage="iTypeInfo.GetImplTypeFlags (index, pImplTypeFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -448,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetMops(System.Int32,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetMops (memid As Integer, ByRef pBstrMops As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetMops(int memid, [Runtime::InteropServices::Out] System::String ^ % pBstrMops);" />
+      <MemberSignature Language="F#" Value="abstract member GetMops : int *  -&gt; unit" Usage="iTypeInfo.GetMops (memid, pBstrMops)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -495,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetNames (memid As Integer, rgBstrNames As String(), cMaxNames As Integer, ByRef pcNames As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetNames(int memid, cli::array &lt;System::String ^&gt; ^ rgBstrNames, int cMaxNames, [Runtime::InteropServices::Out] int % pcNames);" />
+      <MemberSignature Language="F#" Value="abstract member GetNames : int * string[] * int *  -&gt; unit" Usage="iTypeInfo.GetNames (memid, rgBstrNames, cMaxNames, pcNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -546,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRefTypeInfo (hRef As Integer, ByRef ppTI As ITypeInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRefTypeInfo(int hRef, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTI);" />
+      <MemberSignature Language="F#" Value="abstract member GetRefTypeInfo : int *  -&gt; unit" Usage="iTypeInfo.GetRefTypeInfo (hRef, ppTI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -593,6 +605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeOfImplType(System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRefTypeOfImplType (index As Integer, ByRef href As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRefTypeOfImplType(int index, [Runtime::InteropServices::Out] int % href);" />
+      <MemberSignature Language="F#" Value="abstract member GetRefTypeOfImplType : int *  -&gt; unit" Usage="iTypeInfo.GetRefTypeOfImplType (index, href)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -640,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeAttr(System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeAttr (ByRef ppTypeAttr As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeAttr([Runtime::InteropServices::Out] IntPtr % ppTypeAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeAttr :  -&gt; unit" Usage="iTypeInfo.GetTypeAttr ppTypeAttr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -687,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeComp (ByRef ppTComp As ITypeComp)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeComp([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeComp ^ % ppTComp);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeComp :  -&gt; unit" Usage="iTypeInfo.GetTypeComp ppTComp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -732,6 +747,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetVarDesc(System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetVarDesc (index As Integer, ByRef ppVarDesc As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetVarDesc(int index, [Runtime::InteropServices::Out] IntPtr % ppVarDesc);" />
+      <MemberSignature Language="F#" Value="abstract member GetVarDesc : int *  -&gt; unit" Usage="iTypeInfo.GetVarDesc (index, ppVarDesc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -781,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invoke (pvInstance As Object, memid As Integer, wFlags As Short, ByRef pDispParams As DISPPARAMS, pVarResult As IntPtr, pExcepInfo As IntPtr, ByRef puArgErr As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke(System::Object ^ pvInstance, int memid, short wFlags, System::Runtime::InteropServices::ComTypes::DISPPARAMS % pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, [Runtime::InteropServices::Out] int % puArgErr);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * int * int16 *  * nativeint * nativeint *  -&gt; unit" Usage="iTypeInfo.Invoke (pvInstance, memid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -849,6 +866,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseFuncDesc(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseFuncDesc (pFuncDesc As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseFuncDesc(IntPtr pFuncDesc);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseFuncDesc : nativeint -&gt; unit" Usage="iTypeInfo.ReleaseFuncDesc pFuncDesc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -894,6 +912,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseTypeAttr(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseTypeAttr (pTypeAttr As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseTypeAttr(IntPtr pTypeAttr);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseTypeAttr : nativeint -&gt; unit" Usage="iTypeInfo.ReleaseTypeAttr pTypeAttr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -939,6 +958,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseVarDesc(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseVarDesc (pVarDesc As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseVarDesc(IntPtr pVarDesc);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseVarDesc : nativeint -&gt; unit" Usage="iTypeInfo.ReleaseVarDesc pVarDesc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

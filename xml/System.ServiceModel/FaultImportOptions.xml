@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultImportOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultImportOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultImportOptions" />
+  <TypeSignature Language="F#" Value="type FaultImportOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultImportOptions.UseMessageFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property UseMessageFormat As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseMessageFormat { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseMessageFormat : bool with get, set" Usage="System.ServiceModel.FaultImportOptions.UseMessageFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

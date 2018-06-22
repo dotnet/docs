@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryOperationContextExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscoveryOperationContextExtension&#xA;Implements IExtension(Of OperationContext)" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryOperationContextExtension : System::ServiceModel::IExtension&lt;System::ServiceModel::OperationContext ^&gt;" />
+  <TypeSignature Language="F#" Value="type DiscoveryOperationContextExtension = class&#xA;    interface IExtension&lt;OperationContext&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiscoveryMode As ServiceDiscoveryMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::ServiceDiscoveryMode DiscoveryMode { System::ServiceModel::Discovery::ServiceDiscoveryMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryMode : System.ServiceModel.Discovery.ServiceDiscoveryMode" Usage="System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiscoveryVersion As DiscoveryVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::DiscoveryVersion ^ DiscoveryVersion { System::ServiceModel::Discovery::DiscoveryVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryVersion : System.ServiceModel.Discovery.DiscoveryVersion" Usage="System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.MaxResponseDelay" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxResponseDelay As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxResponseDelay { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseDelay : TimeSpan" Usage="System.ServiceModel.Discovery.DiscoveryOperationContextExtension.MaxResponseDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

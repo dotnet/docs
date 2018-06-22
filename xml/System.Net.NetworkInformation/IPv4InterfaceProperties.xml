@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPv4InterfaceProperties" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IPv4InterfaceProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class IPv4InterfaceProperties abstract" />
+  <TypeSignature Language="F#" Value="type IPv4InterfaceProperties = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceProperties.Index" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Net.NetworkInformation.IPv4InterfaceProperties.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceProperties.IsAutomaticPrivateAddressingActive" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsAutomaticPrivateAddressingActive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsAutomaticPrivateAddressingActive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAutomaticPrivateAddressingActive : bool" Usage="System.Net.NetworkInformation.IPv4InterfaceProperties.IsAutomaticPrivateAddressingActive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -182,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceProperties.IsAutomaticPrivateAddressingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsAutomaticPrivateAddressingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsAutomaticPrivateAddressingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAutomaticPrivateAddressingEnabled : bool" Usage="System.Net.NetworkInformation.IPv4InterfaceProperties.IsAutomaticPrivateAddressingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -230,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceProperties.IsDhcpEnabled" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDhcpEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDhcpEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDhcpEnabled : bool" Usage="System.Net.NetworkInformation.IPv4InterfaceProperties.IsDhcpEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceProperties.IsForwardingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsForwardingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsForwardingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsForwardingEnabled : bool" Usage="System.Net.NetworkInformation.IPv4InterfaceProperties.IsForwardingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -326,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceProperties.Mtu" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Mtu As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Mtu { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mtu : int" Usage="System.Net.NetworkInformation.IPv4InterfaceProperties.Mtu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -373,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceProperties.UsesWins" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property UsesWins As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool UsesWins { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsesWins : bool" Usage="System.Net.NetworkInformation.IPv4InterfaceProperties.UsesWins" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

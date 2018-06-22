@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SizeKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SizeKeyFrame&#xA;Inherits Freezable&#xA;Implements IKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class SizeKeyFrame abstract : System::Windows::Freezable, System::Windows::Media::Animation::IKeyFrame" />
+  <TypeSignature Language="F#" Value="type SizeKeyFrame = class&#xA;    inherit Freezable&#xA;    interface IKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SizeKeyFrame.#ctor(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (value As Size)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SizeKeyFrame(System::Windows::Size value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SizeKeyFrame : System.Windows.Size -&gt; System.Windows.Media.Animation.SizeKeyFrame" Usage="new System.Windows.Media.Animation.SizeKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SizeKeyFrame.#ctor(System.Windows.Size,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SizeKeyFrame(System::Windows::Size value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SizeKeyFrame : System.Windows.Size * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.SizeKeyFrame" Usage="new System.Windows.Media.Animation.SizeKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SizeKeyFrame.InterpolateValue(System.Windows.Size,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function InterpolateValue (baseValue As Size, keyFrameProgress As Double) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Size InterpolateValue(System::Windows::Size baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="member this.InterpolateValue : System.Windows.Size * double -&gt; System.Windows.Size" Usage="sizeKeyFrame.InterpolateValue (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SizeKeyFrame.InterpolateValueCore(System.Windows.Size,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InterpolateValueCore (baseValue As Size, keyFrameProgress As Double) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Size InterpolateValueCore(System::Windows::Size baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="abstract member InterpolateValueCore : System.Windows.Size * double -&gt; System.Windows.Size" Usage="sizeKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SizeKeyFrame.KeyTime" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTime As KeyTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeyTime KeyTime { System::Windows::Media::Animation::KeyTime get(); void set(System::Windows::Media::Animation::KeyTime value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTime : System.Windows.Media.Animation.KeyTime with get, set" Usage="System.Windows.Media.Animation.SizeKeyFrame.KeyTime" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.KeyTime</InterfaceMember>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SizeKeyFrame.KeyTimeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTimeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTimeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyTimeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SizeKeyFrame.KeyTimeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SizeKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value" />
       <MemberSignature Language="VB.NET" Value=" Property Value As Object Implements IKeyFrame.Value" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Windows.Media.Animation.IKeyFrame.Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.SizeKeyFrame.System.Windows.Media.Animation.IKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.Value</InterfaceMember>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SizeKeyFrame.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size Value { System::Windows::Size get(); void set(System::Windows::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Size with get, set" Usage="System.Windows.Media.Animation.SizeKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SizeKeyFrame.ValueProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValueProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SizeKeyFrame.ValueProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

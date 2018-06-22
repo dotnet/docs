@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ExtractCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ExtractCollection&#xA;Inherits List(Of TrackingExtract)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExtractCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::TrackingExtract ^&gt;" />
+  <TypeSignature Language="F#" Value="type ExtractCollection = class&#xA;    inherit List&lt;TrackingExtract&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ExtractCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.TrackingExtract})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (extracts As IEnumerable(Of TrackingExtract))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtractCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::TrackingExtract ^&gt; ^ extracts);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ExtractCollection : seq&lt;System.Workflow.Runtime.Tracking.TrackingExtract&gt; -&gt; System.Workflow.Runtime.Tracking.ExtractCollection" Usage="new System.Workflow.Runtime.Tracking.ExtractCollection extracts" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InterfaceImplementedInVersionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InterfaceImplementedInVersionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type InterfaceImplementedInVersionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.#ctor(System.Type,System.Byte,System.Byte,System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (interfaceType As Type, majorVersion As Byte, minorVersion As Byte, buildVersion As Byte, revisionVersion As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InterfaceImplementedInVersionAttribute(Type ^ interfaceType, System::Byte majorVersion, System::Byte minorVersion, System::Byte buildVersion, System::Byte revisionVersion);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute : Type * byte * byte * byte * byte -&gt; System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute" Usage="new System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute (interfaceType, majorVersion, minorVersion, buildVersion, revisionVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.BuildVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildVersion As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte BuildVersion { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildVersion : byte" Usage="System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.BuildVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.InterfaceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InterfaceType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ InterfaceType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InterfaceType : Type" Usage="System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.InterfaceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.MajorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorVersion As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte MajorVersion { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.MajorVersion : byte" Usage="System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.MajorVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.MinorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorVersion As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte MinorVersion { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinorVersion : byte" Usage="System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.MinorVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.RevisionVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RevisionVersion As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte RevisionVersion { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.RevisionVersion : byte" Usage="System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.RevisionVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>

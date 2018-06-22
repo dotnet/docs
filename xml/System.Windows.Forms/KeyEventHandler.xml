@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub KeyEventHandler(sender As Object, e As KeyEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void KeyEventHandler(System::Object ^ sender, KeyEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type KeyEventHandler = delegate of obj * KeyEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

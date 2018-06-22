@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" />
   <TypeSignature Language="VB.NET" Value="Public Class TextEmbeddedObjectMetrics" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextEmbeddedObjectMetrics" />
+  <TypeSignature Language="F#" Value="type TextEmbeddedObjectMetrics = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.#ctor(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double, baseline As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEmbeddedObjectMetrics(double width, double height, double baseline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics : double * double * double -&gt; System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" Usage="new System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics (width, height, baseline)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Baseline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Baseline As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Baseline { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Baseline : double" Usage="System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Baseline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

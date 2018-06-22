@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IgnorePropertiesAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IgnorePropertiesAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IgnorePropertiesAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type IgnorePropertiesAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IgnorePropertiesAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IgnorePropertiesAttribute(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.IgnorePropertiesAttribute : string -&gt; System.Data.Services.IgnorePropertiesAttribute" Usage="new System.Data.Services.IgnorePropertiesAttribute propertyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IgnorePropertiesAttribute.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray propertyNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IgnorePropertiesAttribute(... cli::array &lt;System::String ^&gt; ^ propertyNames);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.IgnorePropertiesAttribute : string[] -&gt; System.Data.Services.IgnorePropertiesAttribute" Usage="new System.Data.Services.IgnorePropertiesAttribute propertyNames" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IgnorePropertiesAttribute.PropertyNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyNames As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ PropertyNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Data.Services.IgnorePropertiesAttribute.PropertyNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

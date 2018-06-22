@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.EventQueueName" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventQueueName&#xA;Implements IComparable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventQueueName sealed : IComparable" />
+  <TypeSignature Language="F#" Value="type EventQueueName = class&#xA;    interface IComparable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.#ctor(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (interfaceType As Type, operation As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventQueueName(Type ^ interfaceType, System::String ^ operation);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.EventQueueName : Type * string -&gt; System.Workflow.Activities.EventQueueName" Usage="new System.Workflow.Activities.EventQueueName (interfaceType, operation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.#ctor(System.Type,System.String,System.Collections.Generic.ICollection{System.Workflow.Runtime.CorrelationProperty})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (interfaceType As Type, operation As String, propertyValues As ICollection(Of CorrelationProperty))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventQueueName(Type ^ interfaceType, System::String ^ operation, System::Collections::Generic::ICollection&lt;System::Workflow::Runtime::CorrelationProperty ^&gt; ^ propertyValues);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.EventQueueName : Type * string * System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt; -&gt; System.Workflow.Activities.EventQueueName" Usage="new System.Workflow.Activities.EventQueueName (interfaceType, operation, propertyValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (toCompare As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ toCompare);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="eventQueueName.CompareTo toCompare" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -140,6 +144,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CompareTo(class System.Workflow.Activities.EventQueueName eventQueueName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.CompareTo(System.Workflow.Activities.EventQueueName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Workflow::Activities::EventQueueName ^ eventQueueName);" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : System.Workflow.Activities.EventQueueName -&gt; int" Usage="eventQueueName.CompareTo eventQueueName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="eventQueueName.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.GetCorrelationValues" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCorrelationValues () As CorrelationProperty()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Workflow::Runtime::CorrelationProperty ^&gt; ^ GetCorrelationValues();" />
+      <MemberSignature Language="F#" Value="member this.GetCorrelationValues : unit -&gt; System.Workflow.Runtime.CorrelationProperty[]" Usage="eventQueueName.GetCorrelationValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="eventQueueName.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.EventQueueName.InterfaceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InterfaceType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ InterfaceType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InterfaceType : Type" Usage="System.Workflow.Activities.EventQueueName.InterfaceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.EventQueueName.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string" Usage="System.Workflow.Activities.EventQueueName.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -278,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_Equality(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (queueKey1 As EventQueueName, queueKey2 As EventQueueName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Workflow::Activities::EventQueueName ^ queueKey1, System::Workflow::Activities::EventQueueName ^ queueKey2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Workflow.Activities.EventQueueName * System.Workflow.Activities.EventQueueName -&gt; bool" Usage="queueKey1 = queueKey2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -312,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_GreaterThan(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (queueKey1 As EventQueueName, queueKey2 As EventQueueName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Workflow::Activities::EventQueueName ^ queueKey1, System::Workflow::Activities::EventQueueName ^ queueKey2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Workflow.Activities.EventQueueName * System.Workflow.Activities.EventQueueName -&gt; bool" Usage="queueKey1 &gt; queueKey2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -343,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_Inequality(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (queueKey1 As EventQueueName, queueKey2 As EventQueueName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Workflow::Activities::EventQueueName ^ queueKey1, System::Workflow::Activities::EventQueueName ^ queueKey2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Workflow.Activities.EventQueueName * System.Workflow.Activities.EventQueueName -&gt; bool" Usage="System.Workflow.Activities.EventQueueName.op_Inequality (queueKey1, queueKey2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -372,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_LessThan(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (queueKey1 As EventQueueName, queueKey2 As EventQueueName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Workflow::Activities::EventQueueName ^ queueKey1, System::Workflow::Activities::EventQueueName ^ queueKey2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Workflow.Activities.EventQueueName * System.Workflow.Activities.EventQueueName -&gt; bool" Usage="queueKey1 &lt; queueKey2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -403,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="eventQueueName.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IHash`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHash(Of TKey, TValue)&#xA;Implements IBidirectionalContainer(Of TValue), ICloneable, ICollection" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public interface class IHash : ICloneable, Microsoft::VisualC::StlClr::Generic::IBidirectionalContainer&lt;TValue&gt;, System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type IHash&lt;'Key, 'Value&gt; = interface&#xA;    interface IBidirectionalContainer&lt;'Value&gt;&#xA;    interface ICloneable&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -46,10 +47,11 @@
   <Members>
     <Member MemberName="begin">
       <MemberSignature Language="C#" Value="public void begin (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void begin(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.begin(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function begin (ByRef  As ContainerBidirectionalIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ begin(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % );" />
+      <MemberSignature Language="F#" Value="abstract member begin :  -&gt; unit" Usage="iHash.begin " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.bucket_count" />
       <MemberSignature Language="VB.NET" Value="Public Function bucket_count () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int bucket_count();" />
+      <MemberSignature Language="F#" Value="abstract member bucket_count : unit -&gt; int" Usage="iHash.bucket_count " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void clear();" />
+      <MemberSignature Language="F#" Value="abstract member clear : unit -&gt; unit" Usage="iHash.clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.count(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function count (_Keyval As TKey) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int count(TKey _Keyval);" />
+      <MemberSignature Language="F#" Value="abstract member count : 'Key -&gt; int" Usage="iHash.count _Keyval" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.empty" />
       <MemberSignature Language="VB.NET" Value="Public Function empty () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool empty();" />
+      <MemberSignature Language="F#" Value="abstract member empty : unit -&gt; bool" Usage="iHash.empty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -192,10 +198,11 @@
     </Member>
     <Member MemberName="end">
       <MemberSignature Language="C#" Value="public void end (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void end(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.end(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function end (ByRef  As ContainerBidirectionalIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ end(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % );" />
+      <MemberSignature Language="F#" Value="abstract member end :  -&gt; unit" Usage="iHash.end " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -223,10 +230,11 @@
     </Member>
     <Member MemberName="equal_range">
       <MemberSignature Language="C#" Value="public void equal_range (ref Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&gt; , TKey _Keyval);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) equal_range(class Microsoft.VisualC.StlClr.GenericPair`2&lt;class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&gt;&amp; , !TKey _Keyval) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void equal_range(class Microsoft.VisualC.StlClr.GenericPair`2&lt;class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&gt;&amp; , !TKey _Keyval) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.equal_range(Microsoft.VisualC.StlClr.GenericPair{Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1},Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}}@,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function equal_range (ByRef  As GenericPair(Of ContainerBidirectionalIterator(Of TValue), ContainerBidirectionalIterator(Of TValue)), _Keyval As TKey) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ equal_range(Microsoft::VisualC::StlClr::GenericPair&lt;Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^&gt; ^ % , TKey _Keyval);" />
+      <MemberSignature Language="F#" Value="abstract member equal_range :  * 'Key -&gt; unit" Usage="iHash.equal_range (, _Keyval)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.erase(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function erase (_Keyval As TKey) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int erase(TKey _Keyval);" />
+      <MemberSignature Language="F#" Value="abstract member erase : 'Key -&gt; int" Usage="iHash.erase _Keyval" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -372,10 +381,11 @@
     </Member>
     <Member MemberName="find">
       <MemberSignature Language="C#" Value="public void find (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , TKey _Keyval);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) find(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , !TKey _Keyval) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void find(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , !TKey _Keyval) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.find(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function find (ByRef  As ContainerBidirectionalIterator(Of TValue), _Keyval As TKey) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ find(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , TKey _Keyval);" />
+      <MemberSignature Language="F#" Value="abstract member find :  * 'Key -&gt; unit" Usage="iHash.find (, _Keyval)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -409,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.hash_delegate" />
       <MemberSignature Language="VB.NET" Value="Public Function hash_delegate () As UnaryDelegate(Of TKey, Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::UnaryDelegate&lt;TKey, int&gt; ^ hash_delegate();" />
+      <MemberSignature Language="F#" Value="abstract member hash_delegate : unit -&gt; Microsoft.VisualC.StlClr.UnaryDelegate&lt;'Key, int&gt;" Usage="iHash.hash_delegate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -454,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.insert(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub insert (_Right As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(System::Collections::IEnumerable ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member insert : System.Collections.IEnumerable -&gt; unit" Usage="iHash.insert _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -484,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.insert(Microsoft.VisualC.StlClr.Generic.IInputIterator{`1},Microsoft.VisualC.StlClr.Generic.IInputIterator{`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub insert (_First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
+      <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; unit" Usage="iHash.insert (_First, _Last)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -512,10 +525,11 @@
     </Member>
     <Member MemberName="insert">
       <MemberSignature Language="C#" Value="public void insert (ref Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,bool&gt; , TValue _Val);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.GenericPair`2&lt;class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;, bool&gt;&amp; , !TValue _Val) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void insert(class Microsoft.VisualC.StlClr.GenericPair`2&lt;class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;, bool&gt;&amp; , !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.insert(Microsoft.VisualC.StlClr.GenericPair{Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1},System.Boolean}@,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function insert (ByRef  As GenericPair(Of ContainerBidirectionalIterator(Of TValue), Boolean), _Val As TValue) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ insert(Microsoft::VisualC::StlClr::GenericPair&lt;Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^, bool&gt; ^ % , TValue _Val);" />
+      <MemberSignature Language="F#" Value="abstract member insert :  * 'Value -&gt; unit" Usage="iHash.insert (, _Val)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -584,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.key_comp" />
       <MemberSignature Language="VB.NET" Value="Public Function key_comp () As BinaryDelegate(Of TKey, TKey, Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::BinaryDelegate&lt;TKey, TKey, bool&gt; ^ key_comp();" />
+      <MemberSignature Language="F#" Value="abstract member key_comp : unit -&gt; Microsoft.VisualC.StlClr.BinaryDelegate&lt;'Key, 'Key, bool&gt;" Usage="iHash.key_comp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -612,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.load_factor" />
       <MemberSignature Language="VB.NET" Value="Public Function load_factor () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; float load_factor();" />
+      <MemberSignature Language="F#" Value="abstract member load_factor : unit -&gt; single" Usage="iHash.load_factor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -636,10 +652,11 @@
     </Member>
     <Member MemberName="lower_bound">
       <MemberSignature Language="C#" Value="public void lower_bound (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , TKey _Keyval);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) lower_bound(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , !TKey _Keyval) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void lower_bound(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , !TKey _Keyval) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.lower_bound(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function lower_bound (ByRef  As ContainerBidirectionalIterator(Of TValue), _Keyval As TKey) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ lower_bound(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , TKey _Keyval);" />
+      <MemberSignature Language="F#" Value="abstract member lower_bound :  * 'Key -&gt; unit" Usage="iHash.lower_bound (, _Keyval)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -690,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.max_load_factor" />
       <MemberSignature Language="VB.NET" Value="Public Function max_load_factor () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; float max_load_factor();" />
+      <MemberSignature Language="F#" Value="abstract member max_load_factor : unit -&gt; single" Usage="iHash.max_load_factor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -718,6 +736,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.max_load_factor(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub max_load_factor (_Newmax As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void max_load_factor(float _Newmax);" />
+      <MemberSignature Language="F#" Value="abstract member max_load_factor : single -&gt; unit" Usage="iHash.max_load_factor _Newmax" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -744,10 +763,11 @@
     </Member>
     <Member MemberName="rbegin">
       <MemberSignature Language="C#" Value="public void rbegin (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void rbegin(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.rbegin(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`1}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function rbegin (ByRef  As ReverseBidirectionalIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ rbegin(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator&lt;TValue&gt; ^ % );" />
+      <MemberSignature Language="F#" Value="abstract member rbegin :  -&gt; unit" Usage="iHash.rbegin " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -779,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.rehash(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub rehash (_Buckets As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void rehash(int _Buckets);" />
+      <MemberSignature Language="F#" Value="abstract member rehash : int -&gt; unit" Usage="iHash.rehash _Buckets" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -805,10 +826,11 @@
     </Member>
     <Member MemberName="rend">
       <MemberSignature Language="C#" Value="public void rend (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void rend(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.rend(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`1}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function rend (ByRef  As ReverseBidirectionalIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ rend(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator&lt;TValue&gt; ^ % );" />
+      <MemberSignature Language="F#" Value="abstract member rend :  -&gt; unit" Usage="iHash.rend " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -840,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.size" />
       <MemberSignature Language="VB.NET" Value="Public Function size () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int size();" />
+      <MemberSignature Language="F#" Value="abstract member size : unit -&gt; int" Usage="iHash.size " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -868,6 +891,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.swap(Microsoft.VisualC.StlClr.IHash{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub swap (_Right As IHash(Of TKey, TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void swap(Microsoft::VisualC::StlClr::IHash&lt;TKey, TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member swap : Microsoft.VisualC.StlClr.IHash&lt;'Key, 'Value&gt; -&gt; unit" Usage="iHash.swap _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -894,10 +918,11 @@
     </Member>
     <Member MemberName="upper_bound">
       <MemberSignature Language="C#" Value="public void upper_bound (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , TKey _Keyval);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) upper_bound(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , !TKey _Keyval) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.void upper_bound(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , !TKey _Keyval) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.upper_bound(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function upper_bound (ByRef  As ContainerBidirectionalIterator(Of TValue), _Keyval As TKey) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ upper_bound(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , TKey _Keyval);" />
+      <MemberSignature Language="F#" Value="abstract member upper_bound :  * 'Key -&gt; unit" Usage="iHash.upper_bound (, _Keyval)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -931,6 +956,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.value_comp" />
       <MemberSignature Language="VB.NET" Value="Public Function value_comp () As BinaryDelegate(Of TValue, TValue, Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::BinaryDelegate&lt;TValue, TValue, bool&gt; ^ value_comp();" />
+      <MemberSignature Language="F#" Value="abstract member value_comp : unit -&gt; Microsoft.VisualC.StlClr.BinaryDelegate&lt;'Value, 'Value, bool&gt;" Usage="iHash.value_comp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

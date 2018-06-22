@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ByteKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ByteKeyFrame&#xA;Inherits Freezable&#xA;Implements IKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class ByteKeyFrame abstract : System::Windows::Freezable, System::Windows::Media::Animation::IKeyFrame" />
+  <TypeSignature Language="F#" Value="type ByteKeyFrame = class&#xA;    inherit Freezable&#xA;    interface IKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteKeyFrame.#ctor(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ByteKeyFrame(System::Byte value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ByteKeyFrame : byte -&gt; System.Windows.Media.Animation.ByteKeyFrame" Usage="new System.Windows.Media.Animation.ByteKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(unsigned int8 value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteKeyFrame.#ctor(System.Byte,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ByteKeyFrame(System::Byte value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ByteKeyFrame : byte * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.ByteKeyFrame" Usage="new System.Windows.Media.Animation.ByteKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteKeyFrame.InterpolateValue(System.Byte,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function InterpolateValue (baseValue As Byte, keyFrameProgress As Double) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Byte InterpolateValue(System::Byte baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="member this.InterpolateValue : byte * double -&gt; byte" Usage="byteKeyFrame.InterpolateValue (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteKeyFrame.InterpolateValueCore(System.Byte,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InterpolateValueCore (baseValue As Byte, keyFrameProgress As Double) As Byte" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Byte InterpolateValueCore(System::Byte baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="abstract member InterpolateValueCore : byte * double -&gt; byte" Usage="byteKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ByteKeyFrame.KeyTime" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTime As KeyTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeyTime KeyTime { System::Windows::Media::Animation::KeyTime get(); void set(System::Windows::Media::Animation::KeyTime value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTime : System.Windows.Media.Animation.KeyTime with get, set" Usage="System.Windows.Media.Animation.ByteKeyFrame.KeyTime" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.KeyTime</InterfaceMember>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ByteKeyFrame.KeyTimeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTimeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTimeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyTimeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ByteKeyFrame.KeyTimeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ByteKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value" />
       <MemberSignature Language="VB.NET" Value=" Property Value As Object Implements IKeyFrame.Value" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Windows.Media.Animation.IKeyFrame.Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.ByteKeyFrame.System.Windows.Media.Animation.IKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.Value</InterfaceMember>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ByteKeyFrame.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Value { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : byte with get, set" Usage="System.Windows.Media.Animation.ByteKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ByteKeyFrame.ValueProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValueProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ByteKeyFrame.ValueProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

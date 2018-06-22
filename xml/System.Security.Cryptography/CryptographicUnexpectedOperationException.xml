@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" />
   <TypeSignature Language="VB.NET" Value="Public Class CryptographicUnexpectedOperationException&#xA;Inherits CryptographicException" />
   <TypeSignature Language="C++ CLI" Value="public ref class CryptographicUnexpectedOperationException : System::Security::Cryptography::CryptographicException" />
+  <TypeSignature Language="F#" Value="type CryptographicUnexpectedOperationException = class&#xA;    inherit CryptographicException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -113,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicUnexpectedOperationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicUnexpectedOperationException : string -&gt; System.Security.Cryptography.CryptographicUnexpectedOperationException" Usage="new System.Security.Cryptography.CryptographicUnexpectedOperationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -163,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CryptographicUnexpectedOperationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicUnexpectedOperationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.Cryptography.CryptographicUnexpectedOperationException" Usage="new System.Security.Cryptography.CryptographicUnexpectedOperationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicUnexpectedOperationException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicUnexpectedOperationException : string * Exception -&gt; System.Security.Cryptography.CryptographicUnexpectedOperationException" Usage="new System.Security.Cryptography.CryptographicUnexpectedOperationException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (format As String, insert As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicUnexpectedOperationException(System::String ^ format, System::String ^ insert);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicUnexpectedOperationException : string * string -&gt; System.Security.Cryptography.CryptographicUnexpectedOperationException" Usage="new System.Security.Cryptography.CryptographicUnexpectedOperationException (format, insert)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

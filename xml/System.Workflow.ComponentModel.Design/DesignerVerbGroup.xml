@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerVerbGroup" />
   <TypeSignature Language="VB.NET" Value="Public Enum DesignerVerbGroup" />
   <TypeSignature Language="C++ CLI" Value="public enum class DesignerVerbGroup" />
+  <TypeSignature Language="F#" Value="type DesignerVerbGroup = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerVerbGroup.Actions" />
       <MemberSignature Language="VB.NET" Value="Actions" />
       <MemberSignature Language="C++ CLI" Value="Actions" />
+      <MemberSignature Language="F#" Value="Actions = 4" Usage="System.Workflow.ComponentModel.Design.DesignerVerbGroup.Actions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerVerbGroup.Edit" />
       <MemberSignature Language="VB.NET" Value="Edit" />
       <MemberSignature Language="C++ CLI" Value="Edit" />
+      <MemberSignature Language="F#" Value="Edit = 2" Usage="System.Workflow.ComponentModel.Design.DesignerVerbGroup.Edit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerVerbGroup.General" />
       <MemberSignature Language="VB.NET" Value="General" />
       <MemberSignature Language="C++ CLI" Value="General" />
+      <MemberSignature Language="F#" Value="General = 0" Usage="System.Workflow.ComponentModel.Design.DesignerVerbGroup.General" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerVerbGroup.Misc" />
       <MemberSignature Language="VB.NET" Value="Misc" />
       <MemberSignature Language="C++ CLI" Value="Misc" />
+      <MemberSignature Language="F#" Value="Misc = 5" Usage="System.Workflow.ComponentModel.Design.DesignerVerbGroup.Misc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerVerbGroup.Options" />
       <MemberSignature Language="VB.NET" Value="Options" />
       <MemberSignature Language="C++ CLI" Value="Options" />
+      <MemberSignature Language="F#" Value="Options = 3" Usage="System.Workflow.ComponentModel.Design.DesignerVerbGroup.Options" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerVerbGroup.View" />
       <MemberSignature Language="VB.NET" Value="View" />
       <MemberSignature Language="C++ CLI" Value="View" />
+      <MemberSignature Language="F#" Value="View = 1" Usage="System.Workflow.ComponentModel.Design.DesignerVerbGroup.View" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.DecoratedNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecoratedNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DecoratedNameAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DecoratedNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.DecoratedNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (decoratedName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoratedNameAttribute(System::String ^ decoratedName);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.DecoratedNameAttribute : string -&gt; Microsoft.VisualC.DecoratedNameAttribute" Usage="new Microsoft.VisualC.DecoratedNameAttribute decoratedName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>

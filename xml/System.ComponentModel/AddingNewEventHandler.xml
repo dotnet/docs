@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AddingNewEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AddingNewEventHandler(sender As Object, e As AddingNewEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AddingNewEventHandler(System::Object ^ sender, AddingNewEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AddingNewEventHandler = delegate of obj * AddingNewEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TriggerAction" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TriggerAction&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class TriggerAction abstract : System::Windows::DependencyObject" />
+  <TypeSignature Language="F#" Value="type TriggerAction = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

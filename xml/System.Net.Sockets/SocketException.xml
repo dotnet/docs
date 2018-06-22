@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketException" />
   <TypeSignature Language="VB.NET" Value="Public Class SocketException&#xA;Inherits Win32Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class SocketException : System::ComponentModel::Win32Exception" />
+  <TypeSignature Language="F#" Value="type SocketException = class&#xA;    inherit Win32Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketException.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketException(int errorCode);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.SocketException : int -&gt; System.Net.Sockets.SocketException" Usage="new System.Net.Sockets.SocketException errorCode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SocketException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.SocketException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.Sockets.SocketException" Usage="new System.Net.Sockets.SocketException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.Net.Sockets.SocketException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Net.Sockets.SocketException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -236,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.SocketErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocketErrorCode As SocketError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::SocketError SocketErrorCode { System::Net::Sockets::SocketError get(); };" />
+      <MemberSignature Language="F#" Value="member this.SocketErrorCode : System.Net.Sockets.SocketError" Usage="System.Net.Sockets.SocketException.SocketErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ParallelActivityDesigner&#xA;Inherits StructuredCompositeActivityDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParallelActivityDesigner : System::Workflow::ComponentModel::Design::StructuredCompositeActivityDesigner" />
+  <TypeSignature Language="F#" Value="type ParallelActivityDesigner = class&#xA;    inherit StructuredCompositeActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.CanMoveActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanMoveActivities (moveLocation As HitTestInfo, activitiesToMove As ReadOnlyCollection(Of Activity)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanMoveActivities(System::Workflow::ComponentModel::Design::HitTestInfo ^ moveLocation, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activitiesToMove);" />
+      <MemberSignature Language="F#" Value="override this.CanMoveActivities : System.Workflow.ComponentModel.Design.HitTestInfo * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; bool" Usage="parallelActivityDesigner.CanMoveActivities (moveLocation, activitiesToMove)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.CanRemoveActivities(System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRemoveActivities (activitiesToRemove As ReadOnlyCollection(Of Activity)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRemoveActivities(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activitiesToRemove);" />
+      <MemberSignature Language="F#" Value="override this.CanRemoveActivities : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; bool" Usage="parallelActivityDesigner.CanRemoveActivities activitiesToRemove" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.FirstSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FirstSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ FirstSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.ParallelActivityDesigner.FirstSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.GetDropTargets(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDropTargets (dropPoint As Point) As Rectangle()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Drawing::Rectangle&gt; ^ GetDropTargets(System::Drawing::Point dropPoint);" />
+      <MemberSignature Language="F#" Value="override this.GetDropTargets : System.Drawing.Point -&gt; System.Drawing.Rectangle[]" Usage="parallelActivityDesigner.GetDropTargets dropPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.GetNextSelectableObject(System.Object,System.Workflow.ComponentModel.Design.DesignerNavigationDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextSelectableObject (obj As Object, direction As DesignerNavigationDirection) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetNextSelectableObject(System::Object ^ obj, System::Workflow::ComponentModel::Design::DesignerNavigationDirection direction);" />
+      <MemberSignature Language="F#" Value="override this.GetNextSelectableObject : obj * System.Workflow.ComponentModel.Design.DesignerNavigationDirection -&gt; obj" Usage="parallelActivityDesigner.GetNextSelectableObject (obj, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.LastSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LastSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ LastSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.ParallelActivityDesigner.LastSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.OnCreateNewBranch" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnCreateNewBranch () As CompositeActivity" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Workflow::ComponentModel::CompositeActivity ^ OnCreateNewBranch();" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateNewBranch : unit -&gt; System.Workflow.ComponentModel.CompositeActivity&#xA;override this.OnCreateNewBranch : unit -&gt; System.Workflow.ComponentModel.CompositeActivity" Usage="parallelActivityDesigner.OnCreateNewBranch " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.OnLayoutPosition(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayoutPosition (e As ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayoutPosition(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutPosition : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit" Usage="parallelActivityDesigner.OnLayoutPosition e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -278,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.OnLayoutSize(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnLayoutSize (e As ActivityDesignerLayoutEventArgs) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size OnLayoutSize(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutSize : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; System.Drawing.Size" Usage="parallelActivityDesigner.OnLayoutSize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -302,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Workflow::ComponentModel::Design::ActivityDesignerPaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs -&gt; unit" Usage="parallelActivityDesigner.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -325,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ParallelActivityDesigner.Verbs" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Verbs As ActivityDesignerVerbCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Workflow::ComponentModel::Design::ActivityDesignerVerbCollection ^ Verbs { System::Workflow::ComponentModel::Design::ActivityDesignerVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" Usage="System.Workflow.ComponentModel.Design.ParallelActivityDesigner.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

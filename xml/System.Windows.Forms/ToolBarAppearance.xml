@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarAppearance" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolBarAppearance" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolBarAppearance" />
+  <TypeSignature Language="F#" Value="type ToolBarAppearance = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarAppearance.Flat" />
       <MemberSignature Language="VB.NET" Value="Flat" />
       <MemberSignature Language="C++ CLI" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 1" Usage="System.Windows.Forms.ToolBarAppearance.Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarAppearance.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.ToolBarAppearance.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class ChtmlSelectionListAdapter&#xA;Inherits HtmlSelectionListAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChtmlSelectionListAdapter : System::Web::UI::MobileControls::Adapters::HtmlSelectionListAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlSelectionListAdapter = class&#xA;    inherit HtmlSelectionListAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="chtmlSelectionListAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.RequiresFormTag" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresFormTag As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresFormTag { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresFormTag : bool" Usage="System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.RequiresFormTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

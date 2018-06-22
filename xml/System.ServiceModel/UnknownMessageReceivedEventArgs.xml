@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.UnknownMessageReceivedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnknownMessageReceivedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnknownMessageReceivedEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type UnknownMessageReceivedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.UnknownMessageReceivedEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Message ^ Message { System::ServiceModel::Channels::Message ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.Channels.Message" Usage="System.ServiceModel.UnknownMessageReceivedEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

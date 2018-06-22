@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.NumberFormatInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NumberFormatInfo&#xA;Implements ICloneable, IFormatProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class NumberFormatInfo sealed : ICloneable, IFormatProvider" />
+  <TypeSignature Language="F#" Value="type NumberFormatInfo = class&#xA;    interface ICloneable&#xA;    interface IFormatProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -373,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="numberFormatInfo.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -431,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrencyDecimalDigits As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrencyDecimalDigits { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrencyDecimalDigits : int with get, set" Usage="System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -492,6 +495,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrencyDecimalSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrencyDecimalSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrencyDecimalSeparator : string with get, set" Usage="System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -556,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrencyGroupSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrencyGroupSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrencyGroupSeparator : string with get, set" Usage="System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -619,6 +624,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrencyGroupSizes As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ CurrencyGroupSizes { cli::array &lt;int&gt; ^ get(); void set(cli::array &lt;int&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrencyGroupSizes : int[] with get, set" Usage="System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -689,6 +695,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrencyNegativePattern As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrencyNegativePattern { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrencyNegativePattern : int with get, set" Usage="System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -768,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrencyPositivePattern As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrencyPositivePattern { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrencyPositivePattern : int with get, set" Usage="System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -828,6 +836,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrencySymbol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrencySymbol { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrencySymbol : string with get, set" Usage="System.Globalization.NumberFormatInfo.CurrencySymbol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -889,6 +898,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrentInfo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentInfo As NumberFormatInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::NumberFormatInfo ^ CurrentInfo { System::Globalization::NumberFormatInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentInfo : System.Globalization.NumberFormatInfo" Usage="System.Globalization.NumberFormatInfo.CurrentInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -941,6 +951,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.DigitSubstitution" />
       <MemberSignature Language="VB.NET" Value="Public Property DigitSubstitution As DigitShapes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::DigitShapes DigitSubstitution { System::Globalization::DigitShapes get(); void set(System::Globalization::DigitShapes value); };" />
+      <MemberSignature Language="F#" Value="member this.DigitSubstitution : System.Globalization.DigitShapes with get, set" Usage="System.Globalization.NumberFormatInfo.DigitSubstitution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -987,6 +998,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.GetFormat(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFormat (formatType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetFormat(Type ^ formatType);" />
+      <MemberSignature Language="F#" Value="abstract member GetFormat : Type -&gt; obj&#xA;override this.GetFormat : Type -&gt; obj" Usage="numberFormatInfo.GetFormat formatType" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormatProvider.GetFormat(System.Type)</InterfaceMember>
@@ -1038,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.GetInstance(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetInstance (formatProvider As IFormatProvider) As NumberFormatInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::NumberFormatInfo ^ GetInstance(IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="static member GetInstance : IFormatProvider -&gt; System.Globalization.NumberFormatInfo" Usage="System.Globalization.NumberFormatInfo.GetInstance formatProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1097,6 +1110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.InvariantInfo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvariantInfo As NumberFormatInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::NumberFormatInfo ^ InvariantInfo { System::Globalization::NumberFormatInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvariantInfo : System.Globalization.NumberFormatInfo" Usage="System.Globalization.NumberFormatInfo.InvariantInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1148,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Globalization.NumberFormatInfo.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1197,6 +1212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
       <MemberSignature Language="VB.NET" Value="Public Property NaNSymbol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NaNSymbol { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NaNSymbol : string with get, set" Usage="System.Globalization.NumberFormatInfo.NaNSymbol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1243,6 +1259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NativeDigits" />
       <MemberSignature Language="VB.NET" Value="Public Property NativeDigits As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ NativeDigits { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NativeDigits : string[] with get, set" Usage="System.Globalization.NumberFormatInfo.NativeDigits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1316,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol" />
       <MemberSignature Language="VB.NET" Value="Public Property NegativeInfinitySymbol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NegativeInfinitySymbol { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NegativeInfinitySymbol : string with get, set" Usage="System.Globalization.NumberFormatInfo.NegativeInfinitySymbol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1362,6 +1380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NegativeSign" />
       <MemberSignature Language="VB.NET" Value="Public Property NegativeSign As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NegativeSign { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NegativeSign : string with get, set" Usage="System.Globalization.NumberFormatInfo.NegativeSign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1415,6 +1434,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberDecimalDigits As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberDecimalDigits { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberDecimalDigits : int with get, set" Usage="System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1475,6 +1495,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberDecimalSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumberDecimalSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberDecimalSeparator : string with get, set" Usage="System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1538,6 +1559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberGroupSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumberGroupSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberGroupSeparator : string with get, set" Usage="System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1600,6 +1622,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberGroupSizes As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ NumberGroupSizes { cli::array &lt;int&gt; ^ get(); void set(cli::array &lt;int&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberGroupSizes : int[] with get, set" Usage="System.Globalization.NumberFormatInfo.NumberGroupSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1677,6 +1700,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberNegativePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberNegativePattern As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberNegativePattern { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberNegativePattern : int with get, set" Usage="System.Globalization.NumberFormatInfo.NumberNegativePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1747,6 +1771,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
       <MemberSignature Language="VB.NET" Value="Public Property PercentDecimalDigits As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentDecimalDigits { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PercentDecimalDigits : int with get, set" Usage="System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1808,6 +1833,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property PercentDecimalSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PercentDecimalSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PercentDecimalSeparator : string with get, set" Usage="System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1870,6 +1896,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property PercentGroupSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PercentGroupSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PercentGroupSeparator : string with get, set" Usage="System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1931,6 +1958,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
       <MemberSignature Language="VB.NET" Value="Public Property PercentGroupSizes As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ PercentGroupSizes { cli::array &lt;int&gt; ^ get(); void set(cli::array &lt;int&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PercentGroupSizes : int[] with get, set" Usage="System.Globalization.NumberFormatInfo.PercentGroupSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2001,6 +2029,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property PercentNegativePattern As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentNegativePattern { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PercentNegativePattern : int with get, set" Usage="System.Globalization.NumberFormatInfo.PercentNegativePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2068,6 +2097,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property PercentPositivePattern As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentPositivePattern { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PercentPositivePattern : int with get, set" Usage="System.Globalization.NumberFormatInfo.PercentPositivePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2126,6 +2156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
       <MemberSignature Language="VB.NET" Value="Public Property PercentSymbol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PercentSymbol { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PercentSymbol : string with get, set" Usage="System.Globalization.NumberFormatInfo.PercentSymbol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2179,6 +2210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PerMilleSymbol" />
       <MemberSignature Language="VB.NET" Value="Public Property PerMilleSymbol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PerMilleSymbol { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PerMilleSymbol : string with get, set" Usage="System.Globalization.NumberFormatInfo.PerMilleSymbol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2226,6 +2258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol" />
       <MemberSignature Language="VB.NET" Value="Public Property PositiveInfinitySymbol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PositiveInfinitySymbol { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PositiveInfinitySymbol : string with get, set" Usage="System.Globalization.NumberFormatInfo.PositiveInfinitySymbol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2272,6 +2305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PositiveSign" />
       <MemberSignature Language="VB.NET" Value="Public Property PositiveSign As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PositiveSign { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PositiveSign : string with get, set" Usage="System.Globalization.NumberFormatInfo.PositiveSign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2317,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.ReadOnly(System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadOnly (nfi As NumberFormatInfo) As NumberFormatInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::NumberFormatInfo ^ ReadOnly(System::Globalization::NumberFormatInfo ^ nfi);" />
+      <MemberSignature Language="F#" Value="static member ReadOnly : System.Globalization.NumberFormatInfo -&gt; System.Globalization.NumberFormatInfo" Usage="System.Globalization.NumberFormatInfo.ReadOnly nfi" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

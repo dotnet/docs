@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RadioButton" />
   <TypeSignature Language="VB.NET" Value="Public Class RadioButton&#xA;Inherits ToggleButton" />
   <TypeSignature Language="C++ CLI" Value="public ref class RadioButton : System::Windows::Controls::Primitives::ToggleButton" />
+  <TypeSignature Language="F#" Value="type RadioButton = class&#xA;    inherit ToggleButton" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RadioButton.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="System.Windows.Controls.RadioButton.GroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.RadioButton.GroupNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GroupNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GroupNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GroupNameProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.RadioButton.GroupNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAccessKey (e As AccessKeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAccessKey(System::Windows::Input::AccessKeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnAccessKey : System.Windows.Input.AccessKeyEventArgs -&gt; unit" Usage="radioButton.OnAccessKey e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnChecked(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChecked (e As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChecked(System::Windows::RoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnChecked : System.Windows.RoutedEventArgs -&gt; unit" Usage="radioButton.OnChecked e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="radioButton.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnToggle" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnToggle ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnToggle();" />
+      <MemberSignature Language="F#" Value="override this.OnToggle : unit -&gt; unit" Usage="radioButton.OnToggle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

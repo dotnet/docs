@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.BorderSkin" />
   <TypeSignature Language="VB.NET" Value="Public Class BorderSkin&#xA;Inherits ChartElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BorderSkin : System::Web::UI::DataVisualization::Charting::ChartElement" />
+  <TypeSignature Language="F#" Value="type BorderSkin = class&#xA;    inherit ChartElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BackGradientStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BackGradientStyle As GradientStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::GradientStyle BackGradientStyle { System::Web::UI::DataVisualization::Charting::GradientStyle get(); void set(System::Web::UI::DataVisualization::Charting::GradientStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Web.UI.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BackHatchStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BackHatchStyle As ChartHatchStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartHatchStyle BackHatchStyle { System::Web::UI::DataVisualization::Charting::ChartHatchStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartHatchStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Web.UI.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BackImage" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackImage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImage : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BackImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BackImageAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageAlignment As ChartImageAlignmentStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartImageAlignmentStyle BackImageAlignment { System::Web::UI::DataVisualization::Charting::ChartImageAlignmentStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartImageAlignmentStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageAlignment : System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BackImageAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BackImageTransparentColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageTransparentColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackImageTransparentColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BackImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BackImageWrapMode" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageWrapMode As ChartImageWrapMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartImageWrapMode BackImageWrapMode { System::Web::UI::DataVisualization::Charting::ChartImageWrapMode get(); void set(System::Web::UI::DataVisualization::Charting::ChartImageWrapMode value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageWrapMode : System.Web.UI.DataVisualization.Charting.ChartImageWrapMode with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BackImageWrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BackSecondaryColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackSecondaryColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackSecondaryColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -358,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -398,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BorderDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderDashStyle As ChartDashStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartDashStyle BorderDashStyle { System::Web::UI::DataVisualization::Charting::ChartDashStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartDashStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderDashStyle : System.Web.UI.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BorderDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -432,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.BorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BorderWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.BorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -466,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.PageColor" />
       <MemberSignature Language="VB.NET" Value="Public Property PageColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color PageColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.PageColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.PageColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -506,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.BorderSkin.SkinStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property SkinStyle As BorderSkinStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::BorderSkinStyle SkinStyle { System::Web::UI::DataVisualization::Charting::BorderSkinStyle get(); void set(System::Web::UI::DataVisualization::Charting::BorderSkinStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.SkinStyle : System.Web.UI.DataVisualization.Charting.BorderSkinStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.BorderSkin.SkinStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptographicAttributeObject" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CryptographicAttributeObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class CryptographicAttributeObject sealed" />
+  <TypeSignature Language="F#" Value="type CryptographicAttributeObject = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObject.#ctor(System.Security.Cryptography.Oid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicAttributeObject(System::Security::Cryptography::Oid ^ oid);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicAttributeObject : System.Security.Cryptography.Oid -&gt; System.Security.Cryptography.CryptographicAttributeObject" Usage="new System.Security.Cryptography.CryptographicAttributeObject oid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid, class System.Security.Cryptography.AsnEncodedDataCollection values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObject.#ctor(System.Security.Cryptography.Oid,System.Security.Cryptography.AsnEncodedDataCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicAttributeObject(System::Security::Cryptography::Oid ^ oid, System::Security::Cryptography::AsnEncodedDataCollection ^ values);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicAttributeObject : System.Security.Cryptography.Oid * System.Security.Cryptography.AsnEncodedDataCollection -&gt; System.Security.Cryptography.CryptographicAttributeObject" Usage="new System.Security.Cryptography.CryptographicAttributeObject (oid, values)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObject.Oid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Oid As Oid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ Oid { System::Security::Cryptography::Oid ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Oid : System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.CryptographicAttributeObject.Oid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObject.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As AsnEncodedDataCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::AsnEncodedDataCollection ^ Values { System::Security::Cryptography::AsnEncodedDataCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Security.Cryptography.AsnEncodedDataCollection" Usage="System.Security.Cryptography.CryptographicAttributeObject.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

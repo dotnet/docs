@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomizeLegendEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomizeLegendEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CustomizeLegendEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (legendItems As LegendItemsCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomizeLegendEventArgs(System::Windows::Forms::DataVisualization::Charting::LegendItemsCollection ^ legendItems);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs : System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection -&gt; System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs" Usage="new System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs legendItems" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (legendItems As LegendItemsCollection, legendName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomizeLegendEventArgs(System::Windows::Forms::DataVisualization::Charting::LegendItemsCollection ^ legendItems, System::String ^ legendName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs : System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection * string -&gt; System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs" Usage="new System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs (legendItems, legendName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegendItems As LegendItemsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::LegendItemsCollection ^ LegendItems { System::Windows::Forms::DataVisualization::Charting::LegendItemsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegendItems : System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" Usage="System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegendName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegendName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegendName : string" Usage="System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

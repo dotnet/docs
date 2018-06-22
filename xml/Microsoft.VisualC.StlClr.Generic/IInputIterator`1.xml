@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInputIterator(Of TValue)&#xA;Implements IBaseIterator(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IInputIterator : Microsoft::VisualC::StlClr::Generic::IBaseIterator&lt;TValue&gt;" />
+  <TypeSignature Language="F#" Value="type IInputIterator&lt;'Value&gt; = interface&#xA;    interface IBaseIterator&lt;'Value&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IInputIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function equal_to (A_0 As IInputIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool equal_to(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ A_0);" />
+      <MemberSignature Language="F#" Value="abstract member equal_to : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="iInputIterator.equal_to A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -44,6 +46,28 @@
         <summary>Determines whether two <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> objects are equal.</summary>
         <returns>
           <see langword="true" /> if the current iterator and the specified iterator are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="get_cref">
+      <MemberSignature Language="C#" Value="public TValue get_cref ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_cref() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IInputIterator`1.get_cref" />
+      <MemberSignature Language="VB.NET" Value="Public Function get_cref () As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % get_cref();" />
+      <MemberSignature Language="F#" Value="abstract member get_cref : unit -&gt; " Usage="iInputIterator.get_cref " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

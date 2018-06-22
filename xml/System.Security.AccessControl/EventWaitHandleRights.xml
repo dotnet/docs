@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.EventWaitHandleRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventWaitHandleRights" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventWaitHandleRights" />
+  <TypeSignature Language="F#" Value="type EventWaitHandleRights = " />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.ChangePermissions" />
       <MemberSignature Language="VB.NET" Value="ChangePermissions" />
       <MemberSignature Language="C++ CLI" Value="ChangePermissions" />
+      <MemberSignature Language="F#" Value="ChangePermissions = 262144" Usage="System.Security.AccessControl.EventWaitHandleRights.ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 65536" Usage="System.Security.AccessControl.EventWaitHandleRights.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.FullControl" />
       <MemberSignature Language="VB.NET" Value="FullControl" />
       <MemberSignature Language="C++ CLI" Value="FullControl" />
+      <MemberSignature Language="F#" Value="FullControl = 2031619" Usage="System.Security.AccessControl.EventWaitHandleRights.FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.Modify" />
       <MemberSignature Language="VB.NET" Value="Modify" />
       <MemberSignature Language="C++ CLI" Value="Modify" />
+      <MemberSignature Language="F#" Value="Modify = 2" Usage="System.Security.AccessControl.EventWaitHandleRights.Modify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.ReadPermissions" />
       <MemberSignature Language="VB.NET" Value="ReadPermissions" />
       <MemberSignature Language="C++ CLI" Value="ReadPermissions" />
+      <MemberSignature Language="F#" Value="ReadPermissions = 131072" Usage="System.Security.AccessControl.EventWaitHandleRights.ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Synchronize" />
       <MemberSignature Language="C++ CLI" Value="Synchronize" />
+      <MemberSignature Language="F#" Value="Synchronize = 1048576" Usage="System.Security.AccessControl.EventWaitHandleRights.Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.EventWaitHandleRights.TakeOwnership" />
       <MemberSignature Language="VB.NET" Value="TakeOwnership" />
       <MemberSignature Language="C++ CLI" Value="TakeOwnership" />
+      <MemberSignature Language="F#" Value="TakeOwnership = 524288" Usage="System.Security.AccessControl.EventWaitHandleRights.TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>

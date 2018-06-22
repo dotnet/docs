@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringTrimming" />
   <TypeSignature Language="VB.NET" Value="Public Enum StringTrimming" />
   <TypeSignature Language="C++ CLI" Value="public enum class StringTrimming" />
+  <TypeSignature Language="F#" Value="type StringTrimming = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringTrimming.Character" />
       <MemberSignature Language="VB.NET" Value="Character" />
       <MemberSignature Language="C++ CLI" Value="Character" />
+      <MemberSignature Language="F#" Value="Character = 1" Usage="System.Drawing.StringTrimming.Character" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringTrimming.EllipsisCharacter" />
       <MemberSignature Language="VB.NET" Value="EllipsisCharacter" />
       <MemberSignature Language="C++ CLI" Value="EllipsisCharacter" />
+      <MemberSignature Language="F#" Value="EllipsisCharacter = 3" Usage="System.Drawing.StringTrimming.EllipsisCharacter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringTrimming.EllipsisPath" />
       <MemberSignature Language="VB.NET" Value="EllipsisPath" />
       <MemberSignature Language="C++ CLI" Value="EllipsisPath" />
+      <MemberSignature Language="F#" Value="EllipsisPath = 5" Usage="System.Drawing.StringTrimming.EllipsisPath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringTrimming.EllipsisWord" />
       <MemberSignature Language="VB.NET" Value="EllipsisWord" />
       <MemberSignature Language="C++ CLI" Value="EllipsisWord" />
+      <MemberSignature Language="F#" Value="EllipsisWord = 4" Usage="System.Drawing.StringTrimming.EllipsisWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringTrimming.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Drawing.StringTrimming.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringTrimming.Word" />
       <MemberSignature Language="VB.NET" Value="Word" />
       <MemberSignature Language="C++ CLI" Value="Word" />
+      <MemberSignature Language="F#" Value="Word = 2" Usage="System.Drawing.StringTrimming.Word" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.IDataServiceUpdateProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataServiceUpdateProvider&#xA;Implements IUpdatable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataServiceUpdateProvider : System::Data::Services::IUpdatable" />
+  <TypeSignature Language="F#" Value="type IDataServiceUpdateProvider = interface&#xA;    interface IUpdatable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceUpdateProvider.SetConcurrencyValues(System.Object,System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetConcurrencyValues (resourceCookie As Object, checkForEquality As Nullable(Of Boolean), concurrencyValues As IEnumerable(Of KeyValuePair(Of String, Object)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetConcurrencyValues(System::Object ^ resourceCookie, Nullable&lt;bool&gt; checkForEquality, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ concurrencyValues);" />
+      <MemberSignature Language="F#" Value="abstract member SetConcurrencyValues : obj * Nullable&lt;bool&gt; * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; unit" Usage="iDataServiceUpdateProvider.SetConcurrencyValues (resourceCookie, checkForEquality, concurrencyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

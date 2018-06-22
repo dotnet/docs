@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentProgressState" />
   <TypeSignature Language="VB.NET" Value="Public Enum DeploymentProgressState" />
   <TypeSignature Language="C++ CLI" Value="public enum class DeploymentProgressState" />
+  <TypeSignature Language="F#" Value="type DeploymentProgressState = " />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingApplicationFiles" />
       <MemberSignature Language="VB.NET" Value="DownloadingApplicationFiles" />
       <MemberSignature Language="C++ CLI" Value="DownloadingApplicationFiles" />
+      <MemberSignature Language="F#" Value="DownloadingApplicationFiles = 2" Usage="System.Deployment.Application.DeploymentProgressState.DownloadingApplicationFiles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingApplicationInformation" />
       <MemberSignature Language="VB.NET" Value="DownloadingApplicationInformation" />
       <MemberSignature Language="C++ CLI" Value="DownloadingApplicationInformation" />
+      <MemberSignature Language="F#" Value="DownloadingApplicationInformation = 1" Usage="System.Deployment.Application.DeploymentProgressState.DownloadingApplicationInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingDeploymentInformation" />
       <MemberSignature Language="VB.NET" Value="DownloadingDeploymentInformation" />
       <MemberSignature Language="C++ CLI" Value="DownloadingDeploymentInformation" />
+      <MemberSignature Language="F#" Value="DownloadingDeploymentInformation = 0" Usage="System.Deployment.Application.DeploymentProgressState.DownloadingDeploymentInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

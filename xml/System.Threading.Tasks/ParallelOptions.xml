@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ParallelOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class ParallelOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParallelOptions" />
+  <TypeSignature Language="F#" Value="type ParallelOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelOptions.CancellationToken" />
       <MemberSignature Language="VB.NET" Value="Public Property CancellationToken As CancellationToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::CancellationToken CancellationToken { System::Threading::CancellationToken get(); void set(System::Threading::CancellationToken value); };" />
+      <MemberSignature Language="F#" Value="member this.CancellationToken : System.Threading.CancellationToken with get, set" Usage="System.Threading.Tasks.ParallelOptions.CancellationToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxDegreeOfParallelism As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDegreeOfParallelism { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDegreeOfParallelism : int with get, set" Usage="System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelOptions.TaskScheduler" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskScheduler As TaskScheduler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskScheduler ^ TaskScheduler { System::Threading::Tasks::TaskScheduler ^ get(); void set(System::Threading::Tasks::TaskScheduler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TaskScheduler : System.Threading.Tasks.TaskScheduler with get, set" Usage="System.Threading.Tasks.ParallelOptions.TaskScheduler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>

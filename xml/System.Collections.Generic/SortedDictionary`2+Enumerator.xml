@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedDictionary`2.Enumerator" />
   <TypeSignature Language="VB.NET" Value="Public Structure SortedDictionary(Of TKey, TValue).Enumerator&#xA;Implements IDictionaryEnumerator, IEnumerator(Of KeyValuePair(Of TKey, TValue))" />
   <TypeSignature Language="C++ CLI" Value="public: value class SortedDictionary&lt;TKey, TValue&gt;::Enumerator : System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::IDictionaryEnumerator" />
+  <TypeSignature Language="F#" Value="type SortedDictionary&lt;'Key, 'Value&gt;.Enumerator = struct&#xA;    interface IEnumerator&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IDictionaryEnumerator&#xA;    interface IDisposable&#xA;    interface IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As KeyValuePair(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; Current { System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.Enumerator.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="enumerator.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -207,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Entry As DictionaryEntry Implements IDictionaryEnumerator.Entry" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::DictionaryEntry System.Collections.IDictionaryEnumerator.Entry { System::Collections::DictionaryEntry get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.System.Collections.IDictionaryEnumerator.Entry" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Entry</InterfaceMember>
@@ -262,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Key As Object Implements IDictionaryEnumerator.Key" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionaryEnumerator.Key { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.System.Collections.IDictionaryEnumerator.Key" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Key</InterfaceMember>
@@ -316,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Value As Object Implements IDictionaryEnumerator.Value" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionaryEnumerator.Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.System.Collections.IDictionaryEnumerator.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Value</InterfaceMember>
@@ -370,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

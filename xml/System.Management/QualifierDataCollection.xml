@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.QualifierDataCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class QualifierDataCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class QualifierDataCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type QualifierDataCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.QualifierDataCollection.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (qualifierName As String, qualifierValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ qualifierName, System::Object ^ qualifierValue);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; unit&#xA;override this.Add : string * obj -&gt; unit" Usage="qualifierDataCollection.Add (qualifierName, qualifierValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.QualifierDataCollection.Add(System.String,System.Object,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (qualifierName As String, qualifierValue As Object, isAmended As Boolean, propagatesToInstance As Boolean, propagatesToSubclass As Boolean, isOverridable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ qualifierName, System::Object ^ qualifierValue, bool isAmended, bool propagatesToInstance, bool propagatesToSubclass, bool isOverridable);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj * bool * bool * bool * bool -&gt; unit&#xA;override this.Add : string * obj * bool * bool * bool * bool -&gt; unit" Usage="qualifierDataCollection.Add (qualifierName, qualifierValue, isAmended, propagatesToInstance, propagatesToSubclass, isOverridable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.QualifierDataCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="qualifierDataCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.QualifierDataCollection.CopyTo(System.Management.QualifierData[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (qualifierArray As QualifierData(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Management::QualifierData ^&gt; ^ qualifierArray, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Management.QualifierData[] * int -&gt; unit" Usage="qualifierDataCollection.CopyTo (qualifierArray, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierDataCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Management.QualifierDataCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -242,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.QualifierDataCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As QualifierDataCollection.QualifierDataEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::QualifierDataCollection::QualifierDataEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Management.QualifierDataCollection.QualifierDataEnumerator" Usage="qualifierDataCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierDataCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Management.QualifierDataCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierDataCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(qualifierName As String) As QualifierData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::QualifierData ^ default[System::String ^] { System::Management::QualifierData ^ get(System::String ^ qualifierName); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Management.QualifierData" Usage="System.Management.QualifierDataCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -349,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.QualifierDataCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (qualifierName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ qualifierName);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="qualifierDataCollection.Remove qualifierName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -381,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierDataCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Management.QualifierDataCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

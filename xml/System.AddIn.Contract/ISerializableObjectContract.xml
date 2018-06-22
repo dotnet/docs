@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.ISerializableObjectContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISerializableObjectContract&#xA;Implements IRemoteArgumentDictionaryContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISerializableObjectContract : System::AddIn::Contract::Collections::IRemoteArgumentDictionaryContract" />
+  <TypeSignature Language="F#" Value="type ISerializableObjectContract = interface&#xA;    interface IRemoteArgumentDictionaryContract&#xA;    interface IRemoteArgumentCollectionContract&#xA;    interface IRemoteArgumentEnumerableContract&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.ISerializableObjectContract.GetCanonicalName" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCanonicalName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCanonicalName();" />
+      <MemberSignature Language="F#" Value="abstract member GetCanonicalName : unit -&gt; string" Usage="iSerializableObjectContract.GetCanonicalName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.ISerializableObjectContract.GetSerializableObjectData" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSerializableObjectData () As SerializableObjectData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::SerializableObjectData GetSerializableObjectData();" />
+      <MemberSignature Language="F#" Value="abstract member GetSerializableObjectData : unit -&gt; System.AddIn.Contract.SerializableObjectData" Usage="iSerializableObjectContract.GetSerializableObjectData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

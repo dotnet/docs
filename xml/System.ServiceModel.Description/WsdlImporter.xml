@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WsdlImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class WsdlImporter&#xA;Inherits MetadataImporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class WsdlImporter : System::ServiceModel::Description::MetadataImporter" />
+  <TypeSignature Language="F#" Value="type WsdlImporter = class&#xA;    inherit MetadataImporter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.#ctor(System.ServiceModel.Description.MetadataSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As MetadataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WsdlImporter(System::ServiceModel::Description::MetadataSet ^ metadata);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.WsdlImporter : System.ServiceModel.Description.MetadataSet -&gt; System.ServiceModel.Description.WsdlImporter" Usage="new System.ServiceModel.Description.WsdlImporter metadata" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.#ctor(System.ServiceModel.Description.MetadataSet,System.Collections.Generic.IEnumerable{System.ServiceModel.Description.IPolicyImportExtension},System.Collections.Generic.IEnumerable{System.ServiceModel.Description.IWsdlImportExtension})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As MetadataSet, policyImportExtensions As IEnumerable(Of IPolicyImportExtension), wsdlImportExtensions As IEnumerable(Of IWsdlImportExtension))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WsdlImporter(System::ServiceModel::Description::MetadataSet ^ metadata, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::IPolicyImportExtension ^&gt; ^ policyImportExtensions, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::IWsdlImportExtension ^&gt; ^ wsdlImportExtensions);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.WsdlImporter : System.ServiceModel.Description.MetadataSet * seq&lt;System.ServiceModel.Description.IPolicyImportExtension&gt; * seq&lt;System.ServiceModel.Description.IWsdlImportExtension&gt; -&gt; System.ServiceModel.Description.WsdlImporter" Usage="new System.ServiceModel.Description.WsdlImporter (metadata, policyImportExtensions, wsdlImportExtensions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.#ctor(System.ServiceModel.Description.MetadataSet,System.Collections.Generic.IEnumerable{System.ServiceModel.Description.IPolicyImportExtension},System.Collections.Generic.IEnumerable{System.ServiceModel.Description.IWsdlImportExtension},System.ServiceModel.Description.MetadataImporterQuotas)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As MetadataSet, policyImportExtensions As IEnumerable(Of IPolicyImportExtension), wsdlImportExtensions As IEnumerable(Of IWsdlImportExtension), quotas As MetadataImporterQuotas)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WsdlImporter(System::ServiceModel::Description::MetadataSet ^ metadata, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::IPolicyImportExtension ^&gt; ^ policyImportExtensions, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::IWsdlImportExtension ^&gt; ^ wsdlImportExtensions, System::ServiceModel::Description::MetadataImporterQuotas ^ quotas);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.WsdlImporter : System.ServiceModel.Description.MetadataSet * seq&lt;System.ServiceModel.Description.IPolicyImportExtension&gt; * seq&lt;System.ServiceModel.Description.IWsdlImportExtension&gt; * System.ServiceModel.Description.MetadataImporterQuotas -&gt; System.ServiceModel.Description.WsdlImporter" Usage="new System.ServiceModel.Description.WsdlImporter (metadata, policyImportExtensions, wsdlImportExtensions, quotas)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportAllBindings" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportAllBindings () As Collection(Of Binding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Channels::Binding ^&gt; ^ ImportAllBindings();" />
+      <MemberSignature Language="F#" Value="member this.ImportAllBindings : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Channels.Binding&gt;" Usage="wsdlImporter.ImportAllBindings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportAllContracts" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ImportAllContracts () As Collection(Of ContractDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ ImportAllContracts();" />
+      <MemberSignature Language="F#" Value="override this.ImportAllContracts : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ContractDescription&gt;" Usage="wsdlImporter.ImportAllContracts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportAllEndpoints" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ImportAllEndpoints () As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Description::ServiceEndpointCollection ^ ImportAllEndpoints();" />
+      <MemberSignature Language="F#" Value="override this.ImportAllEndpoints : unit -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="wsdlImporter.ImportAllEndpoints " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -287,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportBinding(System.Web.Services.Description.Binding)" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportBinding (wsdlBinding As Binding) As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Binding ^ ImportBinding(System::Web::Services::Description::Binding ^ wsdlBinding);" />
+      <MemberSignature Language="F#" Value="member this.ImportBinding : System.Web.Services.Description.Binding -&gt; System.ServiceModel.Channels.Binding" Usage="wsdlImporter.ImportBinding wsdlBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -320,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportContract(System.Web.Services.Description.PortType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportContract (wsdlPortType As PortType) As ContractDescription" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ContractDescription ^ ImportContract(System::Web::Services::Description::PortType ^ wsdlPortType);" />
+      <MemberSignature Language="F#" Value="member this.ImportContract : System.Web.Services.Description.PortType -&gt; System.ServiceModel.Description.ContractDescription" Usage="wsdlImporter.ImportContract wsdlPortType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -353,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportEndpoint(System.Web.Services.Description.Port)" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportEndpoint (wsdlPort As Port) As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ ImportEndpoint(System::Web::Services::Description::Port ^ wsdlPort);" />
+      <MemberSignature Language="F#" Value="member this.ImportEndpoint : System.Web.Services.Description.Port -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="wsdlImporter.ImportEndpoint wsdlPort" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -395,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportEndpoints(System.Web.Services.Description.Binding)" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportEndpoints (wsdlBinding As Binding) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpointCollection ^ ImportEndpoints(System::Web::Services::Description::Binding ^ wsdlBinding);" />
+      <MemberSignature Language="F#" Value="member this.ImportEndpoints : System.Web.Services.Description.Binding -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="wsdlImporter.ImportEndpoints wsdlBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -428,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportEndpoints(System.Web.Services.Description.PortType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportEndpoints (wsdlPortType As PortType) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpointCollection ^ ImportEndpoints(System::Web::Services::Description::PortType ^ wsdlPortType);" />
+      <MemberSignature Language="F#" Value="member this.ImportEndpoints : System.Web.Services.Description.PortType -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="wsdlImporter.ImportEndpoints wsdlPortType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -461,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlImporter.ImportEndpoints(System.Web.Services.Description.Service)" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportEndpoints (wsdlService As Service) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpointCollection ^ ImportEndpoints(System::Web::Services::Description::Service ^ wsdlService);" />
+      <MemberSignature Language="F#" Value="member this.ImportEndpoints : System.Web.Services.Description.Service -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="wsdlImporter.ImportEndpoints wsdlService" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -494,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlImporter.WsdlDocuments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WsdlDocuments As ServiceDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionCollection ^ WsdlDocuments { System::Web::Services::Description::ServiceDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WsdlDocuments : System.Web.Services.Description.ServiceDescriptionCollection" Usage="System.ServiceModel.Description.WsdlImporter.WsdlDocuments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -521,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlImporter.WsdlImportExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WsdlImportExtensions As KeyedByTypeCollection(Of IWsdlImportExtension)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IWsdlImportExtension ^&gt; ^ WsdlImportExtensions { System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IWsdlImportExtension ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WsdlImportExtensions : System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IWsdlImportExtension&gt;" Usage="System.ServiceModel.Description.WsdlImporter.WsdlImportExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -548,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlImporter.XmlSchemas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlSchemas As XmlSchemaSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSet ^ XmlSchemas { System::Xml::Schema::XmlSchemaSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSchemas : System.Xml.Schema.XmlSchemaSet" Usage="System.ServiceModel.Description.WsdlImporter.XmlSchemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

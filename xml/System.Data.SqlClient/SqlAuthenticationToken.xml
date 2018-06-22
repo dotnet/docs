@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlAuthenticationToken" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlAuthenticationToken" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlAuthenticationToken" />
+  <TypeSignature Language="F#" Value="type SqlAuthenticationToken = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationToken.#ctor(System.String,System.DateTimeOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (accessToken As String, expiresOn As DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlAuthenticationToken(System::String ^ accessToken, DateTimeOffset expiresOn);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlAuthenticationToken : string * DateTimeOffset -&gt; System.Data.SqlClient.SqlAuthenticationToken" Usage="new System.Data.SqlClient.SqlAuthenticationToken (accessToken, expiresOn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationToken.AccessToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessToken As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccessToken { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessToken : string" Usage="System.Data.SqlClient.SqlAuthenticationToken.AccessToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationToken.ExpiresOn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpiresOn As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset ExpiresOn { DateTimeOffset get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpiresOn : DateTimeOffset" Usage="System.Data.SqlClient.SqlAuthenticationToken.ExpiresOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

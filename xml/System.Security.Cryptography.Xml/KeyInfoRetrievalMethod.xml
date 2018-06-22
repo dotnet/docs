@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyInfoRetrievalMethod&#xA;Inherits KeyInfoClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyInfoRetrievalMethod : System::Security::Cryptography::Xml::KeyInfoClause" />
+  <TypeSignature Language="F#" Value="type KeyInfoRetrievalMethod = class&#xA;    inherit KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (strUri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoRetrievalMethod(System::String ^ strUri);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoRetrievalMethod : string -&gt; System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" Usage="new System.Security.Cryptography.Xml.KeyInfoRetrievalMethod strUri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.#ctor(System.String,System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (strUri As String, strType As String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoRetrievalMethod(System::String ^ strUri, System::String ^ strType);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoRetrievalMethod : string * string -&gt; System.Security.Cryptography.Xml.KeyInfoRetrievalMethod" Usage="new System.Security.Cryptography.Xml.KeyInfoRetrievalMethod (strUri, strType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="keyInfoRetrievalMethod.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="keyInfoRetrievalMethod.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Uri { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

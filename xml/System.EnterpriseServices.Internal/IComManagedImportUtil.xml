@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IComManagedImportUtil" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComManagedImportUtil" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComManagedImportUtil" />
+  <TypeSignature Language="F#" Value="type IComManagedImportUtil = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComManagedImportUtil.GetComponentInfo(System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetComponentInfo (assemblyPath As String, ByRef numComponents As String, ByRef componentInfo As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetComponentInfo(System::String ^ assemblyPath, [Runtime::InteropServices::Out] System::String ^ % numComponents, [Runtime::InteropServices::Out] System::String ^ % componentInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetComponentInfo : string *  *  -&gt; unit" Usage="iComManagedImportUtil.GetComponentInfo (assemblyPath, numComponents, componentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComManagedImportUtil.InstallAssembly(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (filename As String, parname As String, appname As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssembly(System::String ^ filename, System::String ^ parname, System::String ^ appname);" />
+      <MemberSignature Language="F#" Value="abstract member InstallAssembly : string * string * string -&gt; unit" Usage="iComManagedImportUtil.InstallAssembly (filename, parname, appname)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

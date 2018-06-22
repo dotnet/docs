@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchResultEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class SearchResultEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class SearchResultEntry" />
+  <TypeSignature Language="F#" Value="type SearchResultEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SearchResultEntry.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As SearchResultAttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::SearchResultAttributeCollection ^ Attributes { System::DirectoryServices::Protocols::SearchResultAttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.DirectoryServices.Protocols.SearchResultAttributeCollection" Usage="System.DirectoryServices.Protocols.SearchResultEntry.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SearchResultEntry.Controls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As DirectoryControl()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::DirectoryServices::Protocols::DirectoryControl ^&gt; ^ Controls { cli::array &lt;System::DirectoryServices::Protocols::DirectoryControl ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.DirectoryServices.Protocols.DirectoryControl[]" Usage="System.DirectoryServices.Protocols.SearchResultEntry.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SearchResultEntry.DistinguishedName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DistinguishedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DistinguishedName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DistinguishedName : string" Usage="System.DirectoryServices.Protocols.SearchResultEntry.DistinguishedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

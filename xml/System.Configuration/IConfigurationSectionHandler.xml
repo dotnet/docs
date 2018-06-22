@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConfigurationSectionHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type IConfigurationSectionHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (parent As Object, configContext As Object, section As XmlNode) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Create(System::Object ^ parent, System::Object ^ configContext, System::Xml::XmlNode ^ section);" />
+      <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="iConfigurationSectionHandler.Create (parent, configContext, section)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaType" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaType&#xA;Inherits XmlSchemaAnnotated" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaType : System::Xml::Schema::XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaType = class&#xA;    inherit XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.BaseSchemaType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseSchemaType As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BaseSchemaType { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseSchemaType : obj" Usage="System.Xml.Schema.XmlSchemaType.BaseSchemaType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.BaseXmlSchemaType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseXmlSchemaType As XmlSchemaType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaType ^ BaseXmlSchemaType { System::Xml::Schema::XmlSchemaType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseXmlSchemaType : System.Xml.Schema.XmlSchemaType" Usage="System.Xml.Schema.XmlSchemaType.BaseXmlSchemaType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.Datatype" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Datatype As XmlSchemaDatatype" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaDatatype ^ Datatype { System::Xml::Schema::XmlSchemaDatatype ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Datatype : System.Xml.Schema.XmlSchemaDatatype" Usage="System.Xml.Schema.XmlSchemaType.Datatype" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.DerivedBy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DerivedBy As XmlSchemaDerivationMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaDerivationMethod DerivedBy { System::Xml::Schema::XmlSchemaDerivationMethod get(); };" />
+      <MemberSignature Language="F#" Value="member this.DerivedBy : System.Xml.Schema.XmlSchemaDerivationMethod" Usage="System.Xml.Schema.XmlSchemaType.DerivedBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.Final" />
       <MemberSignature Language="VB.NET" Value="Public Property Final As XmlSchemaDerivationMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaDerivationMethod Final { System::Xml::Schema::XmlSchemaDerivationMethod get(); void set(System::Xml::Schema::XmlSchemaDerivationMethod value); };" />
+      <MemberSignature Language="F#" Value="member this.Final : System.Xml.Schema.XmlSchemaDerivationMethod with get, set" Usage="System.Xml.Schema.XmlSchemaType.Final" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -308,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.FinalResolved" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinalResolved As XmlSchemaDerivationMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaDerivationMethod FinalResolved { System::Xml::Schema::XmlSchemaDerivationMethod get(); };" />
+      <MemberSignature Language="F#" Value="member this.FinalResolved : System.Xml.Schema.XmlSchemaDerivationMethod" Usage="System.Xml.Schema.XmlSchemaType.FinalResolved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -360,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaType.GetBuiltInComplexType(System.Xml.Schema.XmlTypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBuiltInComplexType (typeCode As XmlTypeCode) As XmlSchemaComplexType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchemaComplexType ^ GetBuiltInComplexType(System::Xml::Schema::XmlTypeCode typeCode);" />
+      <MemberSignature Language="F#" Value="static member GetBuiltInComplexType : System.Xml.Schema.XmlTypeCode -&gt; System.Xml.Schema.XmlSchemaComplexType" Usage="System.Xml.Schema.XmlSchemaType.GetBuiltInComplexType typeCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -394,6 +402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaType.GetBuiltInComplexType(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBuiltInComplexType (qualifiedName As XmlQualifiedName) As XmlSchemaComplexType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchemaComplexType ^ GetBuiltInComplexType(System::Xml::XmlQualifiedName ^ qualifiedName);" />
+      <MemberSignature Language="F#" Value="static member GetBuiltInComplexType : System.Xml.XmlQualifiedName -&gt; System.Xml.Schema.XmlSchemaComplexType" Usage="System.Xml.Schema.XmlSchemaType.GetBuiltInComplexType qualifiedName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -439,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaType.GetBuiltInSimpleType(System.Xml.Schema.XmlTypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBuiltInSimpleType (typeCode As XmlTypeCode) As XmlSchemaSimpleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchemaSimpleType ^ GetBuiltInSimpleType(System::Xml::Schema::XmlTypeCode typeCode);" />
+      <MemberSignature Language="F#" Value="static member GetBuiltInSimpleType : System.Xml.Schema.XmlTypeCode -&gt; System.Xml.Schema.XmlSchemaSimpleType" Usage="System.Xml.Schema.XmlSchemaType.GetBuiltInSimpleType typeCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -488,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaType.GetBuiltInSimpleType(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBuiltInSimpleType (qualifiedName As XmlQualifiedName) As XmlSchemaSimpleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchemaSimpleType ^ GetBuiltInSimpleType(System::Xml::XmlQualifiedName ^ qualifiedName);" />
+      <MemberSignature Language="F#" Value="static member GetBuiltInSimpleType : System.Xml.XmlQualifiedName -&gt; System.Xml.Schema.XmlSchemaSimpleType" Usage="System.Xml.Schema.XmlSchemaType.GetBuiltInSimpleType qualifiedName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -538,6 +549,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaType.IsDerivedFrom(System.Xml.Schema.XmlSchemaType,System.Xml.Schema.XmlSchemaType,System.Xml.Schema.XmlSchemaDerivationMethod)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDerivedFrom (derivedType As XmlSchemaType, baseType As XmlSchemaType, except As XmlSchemaDerivationMethod) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDerivedFrom(System::Xml::Schema::XmlSchemaType ^ derivedType, System::Xml::Schema::XmlSchemaType ^ baseType, System::Xml::Schema::XmlSchemaDerivationMethod except);" />
+      <MemberSignature Language="F#" Value="static member IsDerivedFrom : System.Xml.Schema.XmlSchemaType * System.Xml.Schema.XmlSchemaType * System.Xml.Schema.XmlSchemaDerivationMethod -&gt; bool" Usage="System.Xml.Schema.XmlSchemaType.IsDerivedFrom (derivedType, baseType, except)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -606,6 +618,7 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.IsMixed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsMixed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMixed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsMixed : bool with get, set" Usage="System.Xml.Schema.XmlSchemaType.IsMixed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -649,6 +662,7 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Xml.Schema.XmlSchemaType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -691,6 +705,7 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.QualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QualifiedName As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ QualifiedName { System::Xml::XmlQualifiedName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QualifiedName : System.Xml.XmlQualifiedName" Usage="System.Xml.Schema.XmlSchemaType.QualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -726,6 +741,7 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaType.TypeCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeCode As XmlTypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlTypeCode TypeCode { System::Xml::Schema::XmlTypeCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeCode : System.Xml.Schema.XmlTypeCode" Usage="System.Xml.Schema.XmlSchemaType.TypeCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

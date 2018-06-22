@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.VisualTreeChangeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum VisualTreeChangeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class VisualTreeChangeType" />
+  <TypeSignature Language="F#" Value="type VisualTreeChangeType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Diagnostics.VisualTreeChangeType.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 0" Usage="System.Windows.Diagnostics.VisualTreeChangeType.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Diagnostics.VisualTreeChangeType.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
       <MemberSignature Language="C++ CLI" Value="Remove" />
+      <MemberSignature Language="F#" Value="Remove = 1" Usage="System.Windows.Diagnostics.VisualTreeChangeType.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

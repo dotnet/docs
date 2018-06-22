@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ProtocolImporter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProtocolImporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProtocolImporter abstract" />
+  <TypeSignature Language="F#" Value="type ProtocolImporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.AbstractSchemas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AbstractSchemas As XmlSchemas" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemas ^ AbstractSchemas { System::Xml::Serialization::XmlSchemas ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AbstractSchemas : System.Xml.Serialization.XmlSchemas" Usage="System.Web.Services.Description.ProtocolImporter.AbstractSchemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.AddExtensionWarningComments(System.CodeDom.CodeCommentStatementCollection,System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddExtensionWarningComments (comments As CodeCommentStatementCollection, extensions As ServiceDescriptionFormatExtensionCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddExtensionWarningComments(System::CodeDom::CodeCommentStatementCollection ^ comments, System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ extensions);" />
+      <MemberSignature Language="F#" Value="member this.AddExtensionWarningComments : System.CodeDom.CodeCommentStatementCollection * System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection -&gt; unit" Usage="protocolImporter.AddExtensionWarningComments (comments, extensions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.BeginClass" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function BeginClass () As CodeTypeDeclaration" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::CodeDom::CodeTypeDeclaration ^ BeginClass();" />
+      <MemberSignature Language="F#" Value="abstract member BeginClass : unit -&gt; System.CodeDom.CodeTypeDeclaration" Usage="protocolImporter.BeginClass " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.BeginNamespace" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub BeginNamespace ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void BeginNamespace();" />
+      <MemberSignature Language="F#" Value="abstract member BeginNamespace : unit -&gt; unit&#xA;override this.BeginNamespace : unit -&gt; unit" Usage="protocolImporter.BeginNamespace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.Binding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Binding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Binding ^ Binding { System::Web::Services::Description::Binding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.Web.Services.Description.Binding" Usage="System.Web.Services.Description.ProtocolImporter.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.ClassName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassName : string" Usage="System.Web.Services.Description.ProtocolImporter.ClassName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.ClassNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassNames As CodeIdentifiers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::CodeIdentifiers ^ ClassNames { System::Xml::Serialization::CodeIdentifiers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassNames : System.Xml.Serialization.CodeIdentifiers" Usage="System.Web.Services.Description.ProtocolImporter.ClassNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.CodeNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeNamespace As CodeNamespace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeNamespace ^ CodeNamespace { System::CodeDom::CodeNamespace ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeNamespace : System.CodeDom.CodeNamespace" Usage="System.Web.Services.Description.ProtocolImporter.CodeNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -234,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.CodeTypeDeclaration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeTypeDeclaration As CodeTypeDeclaration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeDeclaration ^ CodeTypeDeclaration { System::CodeDom::CodeTypeDeclaration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeTypeDeclaration : System.CodeDom.CodeTypeDeclaration" Usage="System.Web.Services.Description.ProtocolImporter.CodeTypeDeclaration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -254,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.ConcreteSchemas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConcreteSchemas As XmlSchemas" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemas ^ ConcreteSchemas { System::Xml::Serialization::XmlSchemas ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConcreteSchemas : System.Xml.Serialization.XmlSchemas" Usage="System.Web.Services.Description.ProtocolImporter.ConcreteSchemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -274,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.EndClass" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndClass ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndClass();" />
+      <MemberSignature Language="F#" Value="abstract member EndClass : unit -&gt; unit&#xA;override this.EndClass : unit -&gt; unit" Usage="protocolImporter.EndClass " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -301,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.EndNamespace" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndNamespace ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndNamespace();" />
+      <MemberSignature Language="F#" Value="abstract member EndNamespace : unit -&gt; unit&#xA;override this.EndNamespace : unit -&gt; unit" Usage="protocolImporter.EndNamespace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -328,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.GenerateMethod" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GenerateMethod () As CodeMemberMethod" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::CodeDom::CodeMemberMethod ^ GenerateMethod();" />
+      <MemberSignature Language="F#" Value="abstract member GenerateMethod : unit -&gt; System.CodeDom.CodeMemberMethod" Usage="protocolImporter.GenerateMethod " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -356,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.InputMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputMessage As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Message ^ InputMessage { System::Web::Services::Description::Message ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputMessage : System.Web.Services.Description.Message" Usage="System.Web.Services.Description.ProtocolImporter.InputMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -376,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.IsBindingSupported" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function IsBindingSupported () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool IsBindingSupported();" />
+      <MemberSignature Language="F#" Value="abstract member IsBindingSupported : unit -&gt; bool" Usage="protocolImporter.IsBindingSupported " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -404,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.IsOperationFlowSupported(System.Web.Services.Description.OperationFlow)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function IsOperationFlowSupported (flow As OperationFlow) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool IsOperationFlowSupported(System::Web::Services::Description::OperationFlow flow);" />
+      <MemberSignature Language="F#" Value="abstract member IsOperationFlowSupported : System.Web.Services.Description.OperationFlow -&gt; bool" Usage="protocolImporter.IsOperationFlowSupported flow" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -437,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string" Usage="System.Web.Services.Description.ProtocolImporter.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -457,6 +475,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.Operation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As Operation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Operation ^ Operation { System::Web::Services::Description::Operation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : System.Web.Services.Description.Operation" Usage="System.Web.Services.Description.ProtocolImporter.Operation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -484,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.OperationBinding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationBinding As OperationBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationBinding ^ OperationBinding { System::Web::Services::Description::OperationBinding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OperationBinding : System.Web.Services.Description.OperationBinding" Usage="System.Web.Services.Description.ProtocolImporter.OperationBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -511,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.OperationBindingSyntaxException(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OperationBindingSyntaxException (text As String) As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Exception ^ OperationBindingSyntaxException(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.OperationBindingSyntaxException : string -&gt; Exception" Usage="protocolImporter.OperationBindingSyntaxException text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -535,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.OperationSyntaxException(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OperationSyntaxException (text As String) As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Exception ^ OperationSyntaxException(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.OperationSyntaxException : string -&gt; Exception" Usage="protocolImporter.OperationSyntaxException text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -559,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.OutputMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputMessage As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Message ^ OutputMessage { System::Web::Services::Description::Message ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputMessage : System.Web.Services.Description.Message" Usage="System.Web.Services.Description.ProtocolImporter.OutputMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -579,6 +602,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.Port" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Port As Port" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Port ^ Port { System::Web::Services::Description::Port ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Port : System.Web.Services.Description.Port" Usage="System.Web.Services.Description.ProtocolImporter.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -599,6 +623,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.PortType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PortType As PortType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::PortType ^ PortType { System::Web::Services::Description::PortType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PortType : System.Web.Services.Description.PortType" Usage="System.Web.Services.Description.ProtocolImporter.PortType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -619,6 +644,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.ProtocolName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ProtocolName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ProtocolName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProtocolName : string" Usage="System.Web.Services.Description.ProtocolImporter.ProtocolName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -639,6 +665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.Schemas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schemas As XmlSchemas" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemas ^ Schemas { System::Xml::Serialization::XmlSchemas ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schemas : System.Xml.Serialization.XmlSchemas" Usage="System.Web.Services.Description.ProtocolImporter.Schemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -659,6 +686,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.Service" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Service As Service" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Service ^ Service { System::Web::Services::Description::Service ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Service : System.Web.Services.Description.Service" Usage="System.Web.Services.Description.ProtocolImporter.Service" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -679,6 +707,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.ServiceDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescriptions As ServiceDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionCollection ^ ServiceDescriptions { System::Web::Services::Description::ServiceDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceDescriptions : System.Web.Services.Description.ServiceDescriptionCollection" Usage="System.Web.Services.Description.ProtocolImporter.ServiceDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -699,6 +728,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.Style" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Style As ServiceDescriptionImportStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionImportStyle Style { System::Web::Services::Description::ServiceDescriptionImportStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Web.Services.Description.ServiceDescriptionImportStyle" Usage="System.Web.Services.Description.ProtocolImporter.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -719,6 +749,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.UnsupportedBindingWarning(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnsupportedBindingWarning (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnsupportedBindingWarning(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.UnsupportedBindingWarning : string -&gt; unit" Usage="protocolImporter.UnsupportedBindingWarning text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -742,6 +773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.UnsupportedOperationBindingWarning(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnsupportedOperationBindingWarning (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnsupportedOperationBindingWarning(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.UnsupportedOperationBindingWarning : string -&gt; unit" Usage="protocolImporter.UnsupportedOperationBindingWarning text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -765,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolImporter.UnsupportedOperationWarning(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnsupportedOperationWarning (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnsupportedOperationWarning(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.UnsupportedOperationWarning : string -&gt; unit" Usage="protocolImporter.UnsupportedOperationWarning text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -788,6 +821,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolImporter.Warnings" />
       <MemberSignature Language="VB.NET" Value="Public Property Warnings As ServiceDescriptionImportWarnings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionImportWarnings Warnings { System::Web::Services::Description::ServiceDescriptionImportWarnings get(); void set(System::Web::Services::Description::ServiceDescriptionImportWarnings value); };" />
+      <MemberSignature Language="F#" Value="member this.Warnings : System.Web.Services.Description.ServiceDescriptionImportWarnings with get, set" Usage="System.Web.Services.Description.ProtocolImporter.Warnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

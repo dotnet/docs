@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.CompositionOperation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompositionOperation&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionOperation sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type CompositionOperation = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Hosting</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddNonPrerequisiteAction(class System.Action action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionOperation.AddNonPrerequisiteAction(System.Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNonPrerequisiteAction(Action ^ action);" />
+      <MemberSignature Language="F#" Value="member this.AddNonPrerequisiteAction : Action -&gt; unit" Usage="compositionOperation.AddNonPrerequisiteAction action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPostCompositionAction(class System.Action action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionOperation.AddPostCompositionAction(System.Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPostCompositionAction(Action ^ action);" />
+      <MemberSignature Language="F#" Value="member this.AddPostCompositionAction : Action -&gt; unit" Usage="compositionOperation.AddPostCompositionAction action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionOperation.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="compositionOperation.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionOperation.Run(System.Composition.Hosting.Core.LifetimeContext,System.Composition.Hosting.Core.CompositeActivator)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Run (outermostLifetimeContext As LifetimeContext, compositionRootActivator As CompositeActivator) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Run(System::Composition::Hosting::Core::LifetimeContext ^ outermostLifetimeContext, System::Composition::Hosting::Core::CompositeActivator ^ compositionRootActivator);" />
+      <MemberSignature Language="F#" Value="static member Run : System.Composition.Hosting.Core.LifetimeContext * System.Composition.Hosting.Core.CompositeActivator -&gt; obj" Usage="System.Composition.Hosting.Core.CompositionOperation.Run (outermostLifetimeContext, compositionRootActivator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>

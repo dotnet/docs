@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.VARFLAGS" />
   <TypeSignature Language="VB.NET" Value="Public Enum VARFLAGS" />
   <TypeSignature Language="C++ CLI" Value="public enum class VARFLAGS" />
+  <TypeSignature Language="F#" Value="type VARFLAGS = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FBINDABLE" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FBINDABLE" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FBINDABLE" />
+      <MemberSignature Language="F#" Value="VARFLAG_FBINDABLE = 4" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FBINDABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDEFAULTBIND" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FDEFAULTBIND" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FDEFAULTBIND" />
+      <MemberSignature Language="F#" Value="VARFLAG_FDEFAULTBIND = 32" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDEFAULTBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDEFAULTCOLLELEM" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FDEFAULTCOLLELEM" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FDEFAULTCOLLELEM" />
+      <MemberSignature Language="F#" Value="VARFLAG_FDEFAULTCOLLELEM = 256" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDEFAULTCOLLELEM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDISPLAYBIND" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FDISPLAYBIND" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FDISPLAYBIND" />
+      <MemberSignature Language="F#" Value="VARFLAG_FDISPLAYBIND = 16" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FDISPLAYBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FHIDDEN" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FHIDDEN" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FHIDDEN" />
+      <MemberSignature Language="F#" Value="VARFLAG_FHIDDEN = 64" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FHIDDEN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FIMMEDIATEBIND" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FIMMEDIATEBIND" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FIMMEDIATEBIND" />
+      <MemberSignature Language="F#" Value="VARFLAG_FIMMEDIATEBIND = 4096" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FIMMEDIATEBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FNONBROWSABLE" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FNONBROWSABLE" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FNONBROWSABLE" />
+      <MemberSignature Language="F#" Value="VARFLAG_FNONBROWSABLE = 1024" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FNONBROWSABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREADONLY" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FREADONLY" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FREADONLY" />
+      <MemberSignature Language="F#" Value="VARFLAG_FREADONLY = 1" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREADONLY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREPLACEABLE" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FREPLACEABLE" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FREPLACEABLE" />
+      <MemberSignature Language="F#" Value="VARFLAG_FREPLACEABLE = 2048" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREPLACEABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -218,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREQUESTEDIT" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FREQUESTEDIT" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FREQUESTEDIT" />
+      <MemberSignature Language="F#" Value="VARFLAG_FREQUESTEDIT = 8" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FREQUESTEDIT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -238,6 +249,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FRESTRICTED" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FRESTRICTED" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FRESTRICTED" />
+      <MemberSignature Language="F#" Value="VARFLAG_FRESTRICTED = 128" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FRESTRICTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -258,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FSOURCE" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FSOURCE" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FSOURCE" />
+      <MemberSignature Language="F#" Value="VARFLAG_FSOURCE = 2" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FSOURCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -278,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARFLAGS.VARFLAG_FUIDEFAULT" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FUIDEFAULT" />
       <MemberSignature Language="C++ CLI" Value="VARFLAG_FUIDEFAULT" />
+      <MemberSignature Language="F#" Value="VARFLAG_FUIDEFAULT = 512" Usage="System.Runtime.InteropServices.VARFLAGS.VARFLAG_FUIDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

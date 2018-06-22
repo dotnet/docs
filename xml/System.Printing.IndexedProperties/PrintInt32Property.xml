@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintInt32Property" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintInt32Property&#xA;Inherits PrintProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintInt32Property sealed : System::Printing::IndexedProperties::PrintProperty" />
+  <TypeSignature Language="F#" Value="type PrintInt32Property = class&#xA;    inherit PrintProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintInt32Property.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintInt32Property(System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintInt32Property : string -&gt; System.Printing.IndexedProperties.PrintInt32Property" Usage="new System.Printing.IndexedProperties.PrintInt32Property attributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintInt32Property.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String, attributeValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintInt32Property(System::String ^ attributeName, System::Object ^ attributeValue);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintInt32Property : string * obj -&gt; System.Printing.IndexedProperties.PrintInt32Property" Usage="new System.Printing.IndexedProperties.PrintInt32Property (attributeName, attributeValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintInt32Property.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printInt32Property.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintInt32Property.op_Implicit(System.Printing.IndexedProperties.PrintInt32Property)~System.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintInt32Property) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator int(System::Printing::IndexedProperties::PrintInt32Property ^ attribRef);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintInt32Property -&gt; int" Usage="System.Printing.IndexedProperties.PrintInt32Property.op_Implicit attribRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -143,36 +148,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator int (System.Printing.IndexedProperties.PrintInt32Property attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Implicit(class System.Printing.IndexedProperties.PrintInt32Property modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintInt32Property.op_Implicit(System.Printing.IndexedProperties.PrintInt32Property|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Int32" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintInt32Property) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator int(System::Printing::IndexedProperties::PrintInt32Property ^ attribRef);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintInt32Property" />
-      </Parameters>
-      <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintInt32Property.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Printing.IndexedProperties.PrintInt32Property.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

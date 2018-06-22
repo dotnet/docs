@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.CertificateValidationHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class CertificateValidationHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class CertificateValidationHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type CertificateValidationHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.CertificateValidationHelper.GetValidator(Mono.Security.Interface.MonoTlsSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValidator (settings As MonoTlsSettings) As ICertificateValidator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::Security::Interface::ICertificateValidator ^ GetValidator(Mono::Security::Interface::MonoTlsSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="static member GetValidator : Mono.Security.Interface.MonoTlsSettings -&gt; Mono.Security.Interface.ICertificateValidator" Usage="Mono.Security.Interface.CertificateValidationHelper.GetValidator settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.CertificateValidationHelper.SupportsTrustAnchors" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupportsTrustAnchors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool SupportsTrustAnchors { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsTrustAnchors : bool" Usage="Mono.Security.Interface.CertificateValidationHelper.SupportsTrustAnchors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.CertificateValidationHelper.SupportsX509Chain" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupportsX509Chain As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool SupportsX509Chain { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsX509Chain : bool" Usage="Mono.Security.Interface.CertificateValidationHelper.SupportsX509Chain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

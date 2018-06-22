@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
   <TypeSignature Language="VB.NET" Value="Public Class DeviceSpecificChoice&#xA;Implements IAttributeAccessor, IParserAccessor" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeviceSpecificChoice : System::Web::UI::IAttributeAccessor, System::Web::UI::IParserAccessor" />
+  <TypeSignature Language="F#" Value="type DeviceSpecificChoice = class&#xA;    interface IParserAccessor&#xA;    interface IAttributeAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddParsedSubObject (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddParsedSubObject(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="member this.AddParsedSubObject : obj -&gt; unit" Usage="deviceSpecificChoice.AddParsedSubObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Argument" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Argument { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument : string with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Contents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contents As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Contents { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Contents : System.Collections.IDictionary" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Contents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -222,6 +227,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetAttribute (key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetAttribute(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.GetAttribute : string -&gt; string" Usage="deviceSpecificChoice.GetAttribute key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -247,6 +253,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.HasTemplates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasTemplates As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTemplates { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasTemplates : bool" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.HasTemplates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -273,6 +280,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoice.SetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetAttribute (key As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAttribute(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetAttribute : string * string -&gt; unit" Usage="deviceSpecificChoice.SetAttribute (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -391,6 +399,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Templates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Templates As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Templates { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Templates : System.Collections.IDictionary" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Templates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -416,6 +425,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoice.Xmlns" />
       <MemberSignature Language="VB.NET" Value="Public Property Xmlns As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Xmlns { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Xmlns : string with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecificChoice.Xmlns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

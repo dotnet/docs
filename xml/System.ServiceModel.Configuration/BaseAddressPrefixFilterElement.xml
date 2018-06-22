@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BaseAddressPrefixFilterElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseAddressPrefixFilterElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type BaseAddressPrefixFilterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@ http://test2.fabrikam.com/Service.svc
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prefix As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BaseAddressPrefixFilterElement(Uri ^ prefix);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.BaseAddressPrefixFilterElement : Uri -&gt; System.ServiceModel.Configuration.BaseAddressPrefixFilterElement" Usage="new System.ServiceModel.Configuration.BaseAddressPrefixFilterElement prefix" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +109,7 @@ http://test2.fabrikam.com/Service.svc
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public Property Prefix As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Prefix { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : Uri with get, set" Usage="System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +135,7 @@ http://test2.fabrikam.com/Service.svc
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.BaseAddressPrefixFilterElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

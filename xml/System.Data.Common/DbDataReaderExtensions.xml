@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataReaderExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module DbDataReaderExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbDataReaderExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type DbDataReaderExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReaderExtensions.CanGetColumnSchema(System.Data.Common.DbDataReader)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CanGetColumnSchema (reader As DbDataReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool CanGetColumnSchema(System::Data::Common::DbDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member CanGetColumnSchema : System.Data.Common.DbDataReader -&gt; bool" Usage="System.Data.Common.DbDataReaderExtensions.CanGetColumnSchema reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReaderExtensions.GetColumnSchema(System.Data.Common.DbDataReader)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetColumnSchema (reader As DbDataReader) As ReadOnlyCollection(Of DbColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Common::DbColumn ^&gt; ^ GetColumnSchema(System::Data::Common::DbDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member GetColumnSchema : System.Data.Common.DbDataReader -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.DbColumn&gt;" Usage="System.Data.Common.DbDataReaderExtensions.GetColumnSchema reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleReevaluationBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum RuleReevaluationBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class RuleReevaluationBehavior" />
+  <TypeSignature Language="F#" Value="type RuleReevaluationBehavior = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleReevaluationBehavior.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 1" Usage="System.Workflow.Activities.Rules.RuleReevaluationBehavior.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleReevaluationBehavior.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 0" Usage="System.Workflow.Activities.Rules.RuleReevaluationBehavior.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

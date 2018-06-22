@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TemplateBindingExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplateBindingExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateBindingExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type TemplateBindingExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateBindingExtension.#ctor(System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (property As DependencyProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateBindingExtension(System::Windows::DependencyProperty ^ property);" />
+      <MemberSignature Language="F#" Value="new System.Windows.TemplateBindingExtension : System.Windows.DependencyProperty -&gt; System.Windows.TemplateBindingExtension" Usage="new System.Windows.TemplateBindingExtension property" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateBindingExtension.Converter" />
       <MemberSignature Language="VB.NET" Value="Public Property Converter As IValueConverter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::IValueConverter ^ Converter { System::Windows::Data::IValueConverter ^ get(); void set(System::Windows::Data::IValueConverter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Converter : System.Windows.Data.IValueConverter with get, set" Usage="System.Windows.TemplateBindingExtension.Converter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateBindingExtension.ConverterParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property ConverterParameter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ConverterParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConverterParameter : obj with get, set" Usage="System.Windows.TemplateBindingExtension.ConverterParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateBindingExtension.Property" />
       <MemberSignature Language="VB.NET" Value="Public Property Property As DependencyProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); void set(System::Windows::DependencyProperty ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty with get, set" Usage="System.Windows.TemplateBindingExtension.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateBindingExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="templateBindingExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

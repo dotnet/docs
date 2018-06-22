@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectReadyEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectReadyEventHandler(sender As Object, e As ObjectReadyEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ObjectReadyEventHandler(System::Object ^ sender, ObjectReadyEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ObjectReadyEventHandler = delegate of obj * ObjectReadyEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

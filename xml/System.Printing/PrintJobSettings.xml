@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintJobSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintJobSettings" />
+  <TypeSignature Language="F#" Value="type PrintJobSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintJobSettings.CurrentPrintTicket" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentPrintTicket As PrintTicket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintTicket ^ CurrentPrintTicket { System::Printing::PrintTicket ^ get(); void set(System::Printing::PrintTicket ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPrintTicket : System.Printing.PrintTicket with get, set" Usage="System.Printing.PrintJobSettings.CurrentPrintTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintJobSettings.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Printing.PrintJobSettings.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

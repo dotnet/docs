@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArrayCreateExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeArrayCreateExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeArrayCreateExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeArrayCreateExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As CodeTypeReference, size As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(System::CodeDom::CodeTypeReference ^ createType, System::CodeDom::CodeExpression ^ size);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : System.CodeDom.CodeTypeReference * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As CodeTypeReference, ParamArray initializers As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(System::CodeDom::CodeTypeReference ^ createType, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ initializers);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : System.CodeDom.CodeTypeReference * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, initializers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As CodeTypeReference, size As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(System::CodeDom::CodeTypeReference ^ createType, int size);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : System.CodeDom.CodeTypeReference * int -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As String, size As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(System::String ^ createType, System::CodeDom::CodeExpression ^ size);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As String, ParamArray initializers As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(System::String ^ createType, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ initializers);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : string * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, initializers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As String, size As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(System::String ^ createType, int size);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : string * int -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -254,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.Type,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As Type, size As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(Type ^ createType, System::CodeDom::CodeExpression ^ size);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : Type * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.Type,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As Type, ParamArray initializers As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(Type ^ createType, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ initializers);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : Type * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, initializers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -312,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.Type,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As Type, size As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayCreateExpression(Type ^ createType, int size);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayCreateExpression : Type * int -&gt; System.CodeDom.CodeArrayCreateExpression" Usage="new System.CodeDom.CodeArrayCreateExpression (createType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -338,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayCreateExpression.CreateType" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ CreateType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeArrayCreateExpression.CreateType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -362,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayCreateExpression.Initializers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Initializers As CodeExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ Initializers { System::CodeDom::CodeExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Initializers : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeArrayCreateExpression.Initializers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -386,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayCreateExpression.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.CodeDom.CodeArrayCreateExpression.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -410,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayCreateExpression.SizeExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeExpression As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ SizeExpression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeExpression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeArrayCreateExpression.SizeExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

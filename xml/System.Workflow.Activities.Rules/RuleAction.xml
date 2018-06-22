@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleAction" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RuleAction" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleAction abstract" />
+  <TypeSignature Language="F#" Value="type RuleAction = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -149,6 +150,7 @@ namespace LogRuleAction
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAction.Clone" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As RuleAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Workflow::Activities::Rules::RuleAction ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Workflow.Activities.Rules.RuleAction" Usage="ruleAction.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -170,6 +172,7 @@ namespace LogRuleAction
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAction.Execute(System.Workflow.Activities.Rules.RuleExecution)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Execute (context As RuleExecution)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Execute(System::Workflow::Activities::Rules::RuleExecution ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Execute : System.Workflow.Activities.Rules.RuleExecution -&gt; unit" Usage="ruleAction.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -193,6 +196,7 @@ namespace LogRuleAction
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAction.GetSideEffects(System.Workflow.Activities.Rules.RuleValidation)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSideEffects (validation As RuleValidation) As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ GetSideEffects(System::Workflow::Activities::Rules::RuleValidation ^ validation);" />
+      <MemberSignature Language="F#" Value="abstract member GetSideEffects : System.Workflow.Activities.Rules.RuleValidation -&gt; System.Collections.Generic.ICollection&lt;string&gt;" Usage="ruleAction.GetSideEffects validation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -217,6 +221,7 @@ namespace LogRuleAction
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAction.Validate(System.Workflow.Activities.Rules.RuleValidation)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Validate (validator As RuleValidation) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Validate(System::Workflow::Activities::Rules::RuleValidation ^ validator);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.Workflow.Activities.Rules.RuleValidation -&gt; bool" Usage="ruleAction.Validate validator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

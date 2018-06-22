@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDictionary&#xA;Implements IXmlDictionary" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDictionary : System::Xml::IXmlDictionary" />
+  <TypeSignature Language="F#" Value="type XmlDictionary = class&#xA;    interface IXmlDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDictionary(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlDictionary : int -&gt; System.Xml.XmlDictionary" Usage="new System.Xml.XmlDictionary capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (value As String) As XmlDictionaryString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlDictionaryString ^ Add(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; System.Xml.XmlDictionaryString&#xA;override this.Add : string -&gt; System.Xml.XmlDictionaryString" Usage="xmlDictionary.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionary.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As IXmlDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::IXmlDictionary ^ Empty { System::Xml::IXmlDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Xml.IXmlDictionary" Usage="System.Xml.XmlDictionary.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -226,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryLookup (key As Integer, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(int key, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : int *  -&gt; bool&#xA;override this.TryLookup : int *  -&gt; bool" Usage="xmlDictionary.TryLookup (key, result)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)</InterfaceMember>
@@ -267,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryLookup (value As String, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(System::String ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : string *  -&gt; bool&#xA;override this.TryLookup : string *  -&gt; bool" Usage="xmlDictionary.TryLookup (value, result)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)</InterfaceMember>
@@ -310,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryLookup (value As XmlDictionaryString, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(System::Xml::XmlDictionaryString ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool&#xA;override this.TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool" Usage="xmlDictionary.TryLookup (value, result)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)</InterfaceMember>

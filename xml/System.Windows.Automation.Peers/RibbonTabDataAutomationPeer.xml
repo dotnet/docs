@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonTabDataAutomationPeer&#xA;Inherits SelectorItemAutomationPeer&#xA;Implements IExpandCollapseProvider, IScrollItemProvider, ISelectionItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonTabDataAutomationPeer : System::Windows::Automation::Peers::SelectorItemAutomationPeer, System::Windows::Automation::Provider::IExpandCollapseProvider, System::Windows::Automation::Provider::IScrollItemProvider, System::Windows::Automation::Provider::ISelectionItemProvider" />
+  <TypeSignature Language="F#" Value="type RibbonTabDataAutomationPeer = class&#xA;    inherit SelectorItemAutomationPeer&#xA;    interface ISelectionItemProvider&#xA;    interface IExpandCollapseProvider&#xA;    interface IScrollItemProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.RibbonAutomationPeer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Object, itemsControlPeer As RibbonAutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonTabDataAutomationPeer(System::Object ^ item, System::Windows::Automation::Peers::RibbonAutomationPeer ^ itemsControlPeer);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonTabDataAutomationPeer : obj * System.Windows.Automation.Peers.RibbonAutomationPeer -&gt; System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonTabDataAutomationPeer (item, itemsControlPeer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonTabDataAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonTabDataAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonTabDataAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ExpandCollapseState As ExpandCollapseState Implements IExpandCollapseProvider.ExpandCollapseState" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalizationCategory" />
   <TypeSignature Language="VB.NET" Value="Public Enum LocalizationCategory" />
   <TypeSignature Language="C++ CLI" Value="public enum class LocalizationCategory" />
+  <TypeSignature Language="F#" Value="type LocalizationCategory = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Button" />
       <MemberSignature Language="VB.NET" Value="Button" />
       <MemberSignature Language="C++ CLI" Value="Button" />
+      <MemberSignature Language="F#" Value="Button = 4" Usage="System.Windows.LocalizationCategory.Button" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.CheckBox" />
       <MemberSignature Language="VB.NET" Value="CheckBox" />
       <MemberSignature Language="C++ CLI" Value="CheckBox" />
+      <MemberSignature Language="F#" Value="CheckBox = 5" Usage="System.Windows.LocalizationCategory.CheckBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.ComboBox" />
       <MemberSignature Language="VB.NET" Value="ComboBox" />
       <MemberSignature Language="C++ CLI" Value="ComboBox" />
+      <MemberSignature Language="F#" Value="ComboBox = 6" Usage="System.Windows.LocalizationCategory.ComboBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Font" />
       <MemberSignature Language="VB.NET" Value="Font" />
       <MemberSignature Language="C++ CLI" Value="Font" />
+      <MemberSignature Language="F#" Value="Font = 14" Usage="System.Windows.LocalizationCategory.Font" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Hyperlink" />
       <MemberSignature Language="VB.NET" Value="Hyperlink" />
       <MemberSignature Language="C++ CLI" Value="Hyperlink" />
+      <MemberSignature Language="F#" Value="Hyperlink = 11" Usage="System.Windows.LocalizationCategory.Hyperlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
       <MemberSignature Language="C++ CLI" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 16" Usage="System.Windows.LocalizationCategory.Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 15" Usage="System.Windows.LocalizationCategory.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Label" />
       <MemberSignature Language="VB.NET" Value="Label" />
       <MemberSignature Language="C++ CLI" Value="Label" />
+      <MemberSignature Language="F#" Value="Label = 3" Usage="System.Windows.LocalizationCategory.Label" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -191,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.ListBox" />
       <MemberSignature Language="VB.NET" Value="ListBox" />
       <MemberSignature Language="C++ CLI" Value="ListBox" />
+      <MemberSignature Language="F#" Value="ListBox = 7" Usage="System.Windows.LocalizationCategory.ListBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Menu" />
       <MemberSignature Language="VB.NET" Value="Menu" />
       <MemberSignature Language="C++ CLI" Value="Menu" />
+      <MemberSignature Language="F#" Value="Menu = 8" Usage="System.Windows.LocalizationCategory.Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -229,6 +240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.NeverLocalize" />
       <MemberSignature Language="VB.NET" Value="NeverLocalize" />
       <MemberSignature Language="C++ CLI" Value="NeverLocalize" />
+      <MemberSignature Language="F#" Value="NeverLocalize = 17" Usage="System.Windows.LocalizationCategory.NeverLocalize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -248,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.LocalizationCategory.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -267,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.RadioButton" />
       <MemberSignature Language="VB.NET" Value="RadioButton" />
       <MemberSignature Language="C++ CLI" Value="RadioButton" />
+      <MemberSignature Language="F#" Value="RadioButton = 9" Usage="System.Windows.LocalizationCategory.RadioButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -286,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Windows.LocalizationCategory.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +320,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.TextFlow" />
       <MemberSignature Language="VB.NET" Value="TextFlow" />
       <MemberSignature Language="C++ CLI" Value="TextFlow" />
+      <MemberSignature Language="F#" Value="TextFlow = 12" Usage="System.Windows.LocalizationCategory.TextFlow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -324,6 +340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Title" />
       <MemberSignature Language="VB.NET" Value="Title" />
       <MemberSignature Language="C++ CLI" Value="Title" />
+      <MemberSignature Language="F#" Value="Title = 2" Usage="System.Windows.LocalizationCategory.Title" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -343,6 +360,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.ToolTip" />
       <MemberSignature Language="VB.NET" Value="ToolTip" />
       <MemberSignature Language="C++ CLI" Value="ToolTip" />
+      <MemberSignature Language="F#" Value="ToolTip = 10" Usage="System.Windows.LocalizationCategory.ToolTip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -362,6 +380,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.XmlData" />
       <MemberSignature Language="VB.NET" Value="XmlData" />
       <MemberSignature Language="C++ CLI" Value="XmlData" />
+      <MemberSignature Language="F#" Value="XmlData = 13" Usage="System.Windows.LocalizationCategory.XmlData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

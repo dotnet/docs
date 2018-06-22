@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RangeValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class RangeValidator&#xA;Inherits BaseCompareValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class RangeValidator : System::Web::UI::WebControls::BaseCompareValidator" />
+  <TypeSignature Language="F#" Value="type RangeValidator = class&#xA;    inherit BaseCompareValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RangeValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="rangeValidator.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RangeValidator.ControlPropertiesValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ControlPropertiesValid();" />
+      <MemberSignature Language="F#" Value="override this.ControlPropertiesValid : unit -&gt; bool" Usage="rangeValidator.ControlPropertiesValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RangeValidator.EvaluateIsValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
+      <MemberSignature Language="F#" Value="override this.EvaluateIsValid : unit -&gt; bool" Usage="rangeValidator.EvaluateIsValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RangeValidator.MaximumValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MaximumValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumValue : string with get, set" Usage="System.Web.UI.WebControls.RangeValidator.MaximumValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RangeValidator.MinimumValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinimumValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumValue : string with get, set" Usage="System.Web.UI.WebControls.RangeValidator.MinimumValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

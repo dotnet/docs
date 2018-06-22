@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class ImageEditor&#xA;Inherits UITypeEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageEditor : System::Drawing::Design::UITypeEditor" />
+  <TypeSignature Language="F#" Value="type ImageEditor = class&#xA;    inherit UITypeEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.CreateExtensionsString(System.String[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateExtensionsString (extensions As String(), sep As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ CreateExtensionsString(cli::array &lt;System::String ^&gt; ^ extensions, System::String ^ sep);" />
+      <MemberSignature Language="F#" Value="static member CreateExtensionsString : string[] * string -&gt; string" Usage="System.Drawing.Design.ImageEditor.CreateExtensionsString (extensions, sep)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.CreateFilterEntry(System.Drawing.Design.ImageEditor)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateFilterEntry (e As ImageEditor) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ CreateFilterEntry(System::Drawing::Design::ImageEditor ^ e);" />
+      <MemberSignature Language="F#" Value="static member CreateFilterEntry : System.Drawing.Design.ImageEditor -&gt; string" Usage="System.Drawing.Design.ImageEditor.CreateFilterEntry e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj&#xA;override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="imageEditor.EditValue (context, provider, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditStyle (context As ITypeDescriptorContext) As UITypeEditorEditStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Design::UITypeEditorEditStyle GetEditStyle(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle&#xA;override this.GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle" Usage="imageEditor.GetEditStyle context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetExtensions" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetExtensions () As String()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetExtensions();" />
+      <MemberSignature Language="F#" Value="abstract member GetExtensions : unit -&gt; string[]&#xA;override this.GetExtensions : unit -&gt; string[]" Usage="imageEditor.GetExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetFileDialogDescription" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetFileDialogDescription () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetFileDialogDescription();" />
+      <MemberSignature Language="F#" Value="abstract member GetFileDialogDescription : unit -&gt; string&#xA;override this.GetFileDialogDescription : unit -&gt; string" Usage="imageEditor.GetFileDialogDescription " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetImageExtenders" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetImageExtenders () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetImageExtenders();" />
+      <MemberSignature Language="F#" Value="abstract member GetImageExtenders : unit -&gt; Type[]&#xA;override this.GetImageExtenders : unit -&gt; Type[]" Usage="imageEditor.GetImageExtenders " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPaintValueSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPaintValueSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="imageEditor.GetPaintValueSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -278,6 +287,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Drawing.Image LoadFromStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.LoadFromStream(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Drawing::Image ^ LoadFromStream(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member LoadFromStream : System.IO.Stream -&gt; System.Drawing.Image&#xA;override this.LoadFromStream : System.IO.Stream -&gt; System.Drawing.Image" Usage="imageEditor.LoadFromStream stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -302,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaintValue (e As PaintValueEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaintValue(System::Drawing::Design::PaintValueEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member PaintValue : System.Drawing.Design.PaintValueEventArgs -&gt; unit&#xA;override this.PaintValue : System.Drawing.Design.PaintValueEventArgs -&gt; unit" Usage="imageEditor.PaintValue e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>

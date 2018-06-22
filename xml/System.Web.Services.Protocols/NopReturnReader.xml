@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.NopReturnReader" />
   <TypeSignature Language="VB.NET" Value="Public Class NopReturnReader&#xA;Inherits MimeReturnReader" />
   <TypeSignature Language="C++ CLI" Value="public ref class NopReturnReader : System::Web::Services::Protocols::MimeReturnReader" />
+  <TypeSignature Language="F#" Value="type NopReturnReader = class&#xA;    inherit MimeReturnReader" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.NopReturnReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInitializer (methodInfo As LogicalMethodInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetInitializer(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
+      <MemberSignature Language="F#" Value="override this.GetInitializer : System.Web.Services.Protocols.LogicalMethodInfo -&gt; obj" Usage="nopReturnReader.GetInitializer methodInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.NopReturnReader.Initialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (initializer As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::Object ^ initializer);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : obj -&gt; unit" Usage="nopReturnReader.Initialize initializer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.NopReturnReader.Read(System.Net.WebResponse,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (response As WebResponse, responseStream As Stream) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Read(System::Net::WebResponse ^ response, System::IO::Stream ^ responseStream);" />
+      <MemberSignature Language="F#" Value="override this.Read : System.Net.WebResponse * System.IO.Stream -&gt; obj" Usage="nopReturnReader.Read (response, responseStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

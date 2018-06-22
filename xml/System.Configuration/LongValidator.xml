@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.LongValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class LongValidator&#xA;Inherits ConfigurationValidatorBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class LongValidator : System::Configuration::ConfigurationValidatorBase" />
+  <TypeSignature Language="F#" Value="type LongValidator = class&#xA;    inherit ConfigurationValidatorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.#ctor(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Long, maxValue As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LongValidator(long minValue, long maxValue);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.LongValidator : int64 * int64 -&gt; System.Configuration.LongValidator" Usage="new System.Configuration.LongValidator (minValue, maxValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.#ctor(System.Int64,System.Int64,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Long, maxValue As Long, rangeIsExclusive As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LongValidator(long minValue, long maxValue, bool rangeIsExclusive);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.LongValidator : int64 * int64 * bool -&gt; System.Configuration.LongValidator" Usage="new System.Configuration.LongValidator (minValue, maxValue, rangeIsExclusive)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.#ctor(System.Int64,System.Int64,System.Boolean,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Long, maxValue As Long, rangeIsExclusive As Boolean, resolution As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LongValidator(long minValue, long maxValue, bool rangeIsExclusive, long resolution);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.LongValidator : int64 * int64 * bool * int64 -&gt; System.Configuration.LongValidator" Usage="new System.Configuration.LongValidator (minValue, maxValue, rangeIsExclusive, resolution)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.CanValidate(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanValidate(Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.CanValidate : Type -&gt; bool" Usage="longValidator.CanValidate type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.Validate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; unit" Usage="longValidator.Validate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

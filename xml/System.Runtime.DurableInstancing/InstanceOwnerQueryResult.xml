@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InstanceOwnerQueryResult&#xA;Inherits InstanceStoreQueryResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceOwnerQueryResult sealed : System::Runtime::DurableInstancing::InstanceStoreQueryResult" />
+  <TypeSignature Language="F#" Value="type InstanceOwnerQueryResult = class&#xA;    inherit InstanceStoreQueryResult" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceOwners As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceOwnerQueryResult(System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ instanceOwners);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceOwnerQueryResult : System.Collections.Generic.IDictionary&lt;Guid, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;&gt; -&gt; System.Runtime.DurableInstancing.InstanceOwnerQueryResult" Usage="new System.Runtime.DurableInstancing.InstanceOwnerQueryResult instanceOwners" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.#ctor(System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceOwnerId As Guid, metadata As IDictionary(Of XName, InstanceValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceOwnerQueryResult(Guid instanceOwnerId, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ metadata);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceOwnerQueryResult : Guid * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt; -&gt; System.Runtime.DurableInstancing.InstanceOwnerQueryResult" Usage="new System.Runtime.DurableInstancing.InstanceOwnerQueryResult (instanceOwnerId, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.InstanceOwners" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceOwners As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ InstanceOwners { System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceOwners : System.Collections.Generic.IDictionary&lt;Guid, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;&gt;" Usage="System.Runtime.DurableInstancing.InstanceOwnerQueryResult.InstanceOwners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

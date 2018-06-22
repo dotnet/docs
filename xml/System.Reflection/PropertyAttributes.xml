@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PropertyAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyAttributes" />
+  <TypeSignature Language="F#" Value="type PropertyAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.HasDefault" />
       <MemberSignature Language="VB.NET" Value="HasDefault" />
       <MemberSignature Language="C++ CLI" Value="HasDefault" />
+      <MemberSignature Language="F#" Value="HasDefault = 4096" Usage="System.Reflection.PropertyAttributes.HasDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.PropertyAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.Reserved2" />
       <MemberSignature Language="VB.NET" Value="Reserved2" />
       <MemberSignature Language="C++ CLI" Value="Reserved2" />
+      <MemberSignature Language="F#" Value="Reserved2 = 8192" Usage="System.Reflection.PropertyAttributes.Reserved2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.Reserved3" />
       <MemberSignature Language="VB.NET" Value="Reserved3" />
       <MemberSignature Language="C++ CLI" Value="Reserved3" />
+      <MemberSignature Language="F#" Value="Reserved3 = 16384" Usage="System.Reflection.PropertyAttributes.Reserved3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.Reserved4" />
       <MemberSignature Language="VB.NET" Value="Reserved4" />
       <MemberSignature Language="C++ CLI" Value="Reserved4" />
+      <MemberSignature Language="F#" Value="Reserved4 = 32768" Usage="System.Reflection.PropertyAttributes.Reserved4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.ReservedMask" />
       <MemberSignature Language="VB.NET" Value="ReservedMask" />
       <MemberSignature Language="C++ CLI" Value="ReservedMask" />
+      <MemberSignature Language="F#" Value="ReservedMask = 62464" Usage="System.Reflection.PropertyAttributes.ReservedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -244,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.RTSpecialName" />
       <MemberSignature Language="VB.NET" Value="RTSpecialName" />
       <MemberSignature Language="C++ CLI" Value="RTSpecialName" />
+      <MemberSignature Language="F#" Value="RTSpecialName = 1024" Usage="System.Reflection.PropertyAttributes.RTSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PropertyAttributes.SpecialName" />
       <MemberSignature Language="VB.NET" Value="SpecialName" />
       <MemberSignature Language="C++ CLI" Value="SpecialName" />
+      <MemberSignature Language="F#" Value="SpecialName = 512" Usage="System.Reflection.PropertyAttributes.SpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

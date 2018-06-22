@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataViewRowState" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataViewRowState" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataViewRowState" />
+  <TypeSignature Language="F#" Value="type DataViewRowState = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Added" />
       <MemberSignature Language="VB.NET" Value="Added" />
       <MemberSignature Language="C++ CLI" Value="Added" />
+      <MemberSignature Language="F#" Value="Added = 4" Usage="System.Data.DataViewRowState.Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.CurrentRows" />
       <MemberSignature Language="VB.NET" Value="CurrentRows" />
       <MemberSignature Language="C++ CLI" Value="CurrentRows" />
+      <MemberSignature Language="F#" Value="CurrentRows = 22" Usage="System.Data.DataViewRowState.CurrentRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Deleted" />
       <MemberSignature Language="VB.NET" Value="Deleted" />
       <MemberSignature Language="C++ CLI" Value="Deleted" />
+      <MemberSignature Language="F#" Value="Deleted = 8" Usage="System.Data.DataViewRowState.Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.ModifiedCurrent" />
       <MemberSignature Language="VB.NET" Value="ModifiedCurrent" />
       <MemberSignature Language="C++ CLI" Value="ModifiedCurrent" />
+      <MemberSignature Language="F#" Value="ModifiedCurrent = 16" Usage="System.Data.DataViewRowState.ModifiedCurrent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.ModifiedOriginal" />
       <MemberSignature Language="VB.NET" Value="ModifiedOriginal" />
       <MemberSignature Language="C++ CLI" Value="ModifiedOriginal" />
+      <MemberSignature Language="F#" Value="ModifiedOriginal = 32" Usage="System.Data.DataViewRowState.ModifiedOriginal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.DataViewRowState.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.OriginalRows" />
       <MemberSignature Language="VB.NET" Value="OriginalRows" />
       <MemberSignature Language="C++ CLI" Value="OriginalRows" />
+      <MemberSignature Language="F#" Value="OriginalRows = 42" Usage="System.Data.DataViewRowState.OriginalRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Unchanged" />
       <MemberSignature Language="VB.NET" Value="Unchanged" />
       <MemberSignature Language="C++ CLI" Value="Unchanged" />
+      <MemberSignature Language="F#" Value="Unchanged = 2" Usage="System.Data.DataViewRowState.Unchanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

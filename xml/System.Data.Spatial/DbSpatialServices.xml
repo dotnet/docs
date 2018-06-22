@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Spatial.DbSpatialServices" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbSpatialServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbSpatialServices abstract" />
+  <TypeSignature Language="F#" Value="type DbSpatialServices = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.AsBinary(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AsBinary (geographyValue As DbGeography) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ AsBinary(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member AsBinary : System.Data.Spatial.DbGeography -&gt; byte[]" Usage="dbSpatialServices.AsBinary geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.AsBinary(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AsBinary (geometryValue As DbGeometry) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ AsBinary(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member AsBinary : System.Data.Spatial.DbGeometry -&gt; byte[]" Usage="dbSpatialServices.AsBinary geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.AsGml(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AsGml (geographyValue As DbGeography) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ AsGml(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member AsGml : System.Data.Spatial.DbGeography -&gt; string" Usage="dbSpatialServices.AsGml geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.AsGml(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AsGml (geometryValue As DbGeometry) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ AsGml(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member AsGml : System.Data.Spatial.DbGeometry -&gt; string" Usage="dbSpatialServices.AsGml geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.AsText(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AsText (geographyValue As DbGeography) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ AsText(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member AsText : System.Data.Spatial.DbGeography -&gt; string" Usage="dbSpatialServices.AsText geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.AsText(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AsText (geometryValue As DbGeometry) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ AsText(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member AsText : System.Data.Spatial.DbGeometry -&gt; string" Usage="dbSpatialServices.AsText geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.AsTextIncludingElevationAndMeasure(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AsTextIncludingElevationAndMeasure (geographyValue As DbGeography) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ AsTextIncludingElevationAndMeasure(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member AsTextIncludingElevationAndMeasure : System.Data.Spatial.DbGeography -&gt; string&#xA;override this.AsTextIncludingElevationAndMeasure : System.Data.Spatial.DbGeography -&gt; string" Usage="dbSpatialServices.AsTextIncludingElevationAndMeasure geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.AsTextIncludingElevationAndMeasure(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AsTextIncludingElevationAndMeasure (geometryValue As DbGeometry) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ AsTextIncludingElevationAndMeasure(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member AsTextIncludingElevationAndMeasure : System.Data.Spatial.DbGeometry -&gt; string&#xA;override this.AsTextIncludingElevationAndMeasure : System.Data.Spatial.DbGeometry -&gt; string" Usage="dbSpatialServices.AsTextIncludingElevationAndMeasure geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -313,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Buffer(System.Data.Spatial.DbGeography,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Buffer (geographyValue As DbGeography, distance As Double) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ Buffer(System::Data::Spatial::DbGeography ^ geographyValue, double distance);" />
+      <MemberSignature Language="F#" Value="abstract member Buffer : System.Data.Spatial.DbGeography * double -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.Buffer (geographyValue, distance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -345,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Buffer(System.Data.Spatial.DbGeometry,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Buffer (geometryValue As DbGeometry, distance As Double) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ Buffer(System::Data::Spatial::DbGeometry ^ geometryValue, double distance);" />
+      <MemberSignature Language="F#" Value="abstract member Buffer : System.Data.Spatial.DbGeometry * double -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.Buffer (geometryValue, distance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -377,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Contains(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Contains (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Contains(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.Contains (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -412,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.CreateGeography(System.Data.Spatial.DbSpatialServices,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateGeography (spatialServices As DbSpatialServices, providerValue As Object) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Data::Spatial::DbGeography ^ CreateGeography(System::Data::Spatial::DbSpatialServices ^ spatialServices, System::Object ^ providerValue);" />
+      <MemberSignature Language="F#" Value="static member CreateGeography : System.Data.Spatial.DbSpatialServices * obj -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbSpatialServices.CreateGeography (spatialServices, providerValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -442,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.CreateGeometry(System.Data.Spatial.DbSpatialServices,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateGeometry (spatialServices As DbSpatialServices, providerValue As Object) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Data::Spatial::DbGeometry ^ CreateGeometry(System::Data::Spatial::DbSpatialServices ^ spatialServices, System::Object ^ providerValue);" />
+      <MemberSignature Language="F#" Value="static member CreateGeometry : System.Data.Spatial.DbSpatialServices * obj -&gt; System.Data.Spatial.DbGeometry" Usage="System.Data.Spatial.DbSpatialServices.CreateGeometry (spatialServices, providerValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -481,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.CreateProviderValue(System.Data.Spatial.DbGeographyWellKnownValue)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateProviderValue (wellKnownValue As DbGeographyWellKnownValue) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ CreateProviderValue(System::Data::Spatial::DbGeographyWellKnownValue ^ wellKnownValue);" />
+      <MemberSignature Language="F#" Value="abstract member CreateProviderValue : System.Data.Spatial.DbGeographyWellKnownValue -&gt; obj" Usage="dbSpatialServices.CreateProviderValue wellKnownValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -508,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.CreateProviderValue(System.Data.Spatial.DbGeometryWellKnownValue)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateProviderValue (wellKnownValue As DbGeometryWellKnownValue) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ CreateProviderValue(System::Data::Spatial::DbGeometryWellKnownValue ^ wellKnownValue);" />
+      <MemberSignature Language="F#" Value="abstract member CreateProviderValue : System.Data.Spatial.DbGeometryWellKnownValue -&gt; obj" Usage="dbSpatialServices.CreateProviderValue wellKnownValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -544,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.CreateWellKnownValue(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateWellKnownValue (geographyValue As DbGeography) As DbGeographyWellKnownValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeographyWellKnownValue ^ CreateWellKnownValue(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member CreateWellKnownValue : System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeographyWellKnownValue" Usage="dbSpatialServices.CreateWellKnownValue geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -574,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.CreateWellKnownValue(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateWellKnownValue (geometryValue As DbGeometry) As DbGeometryWellKnownValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometryWellKnownValue ^ CreateWellKnownValue(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member CreateWellKnownValue : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometryWellKnownValue" Usage="dbSpatialServices.CreateWellKnownValue geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -604,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Crosses(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Crosses (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Crosses(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Crosses : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.Crosses (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -639,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbSpatialServices.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As DbSpatialServices" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::Spatial::DbSpatialServices ^ Default { System::Data::Spatial::DbSpatialServices ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Data.Spatial.DbSpatialServices" Usage="System.Data.Spatial.DbSpatialServices.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -668,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Difference(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Difference (geographyValue As DbGeography, otherGeography As DbGeography) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ Difference(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ otherGeography);" />
+      <MemberSignature Language="F#" Value="abstract member Difference : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.Difference (geographyValue, otherGeography)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -702,6 +723,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Difference(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Difference (geometryValue As DbGeometry, otherGeometry As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ Difference(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Difference : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.Difference (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -745,6 +767,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Disjoint(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Disjoint (geographyValue As DbGeography, otherGeography As DbGeography) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Disjoint(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ otherGeography);" />
+      <MemberSignature Language="F#" Value="abstract member Disjoint : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; bool" Usage="dbSpatialServices.Disjoint (geographyValue, otherGeography)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -780,6 +803,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Disjoint(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Disjoint (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Disjoint(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Disjoint : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.Disjoint (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -824,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Distance(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Distance (geographyValue As DbGeography, otherGeography As DbGeography) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract double Distance(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ otherGeography);" />
+      <MemberSignature Language="F#" Value="abstract member Distance : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; double" Usage="dbSpatialServices.Distance (geographyValue, otherGeography)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -858,6 +883,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Distance(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Distance (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract double Distance(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Distance : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; double" Usage="dbSpatialServices.Distance (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -901,6 +927,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.ElementAt(System.Data.Spatial.DbGeography,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ElementAt (geographyValue As DbGeography, index As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ ElementAt(System::Data::Spatial::DbGeography ^ geographyValue, int index);" />
+      <MemberSignature Language="F#" Value="abstract member ElementAt : System.Data.Spatial.DbGeography * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.ElementAt (geographyValue, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -933,6 +960,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.ElementAt(System.Data.Spatial.DbGeometry,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ElementAt (geometryValue As DbGeometry, index As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ ElementAt(System::Data::Spatial::DbGeometry ^ geometryValue, int index);" />
+      <MemberSignature Language="F#" Value="abstract member ElementAt : System.Data.Spatial.DbGeometry * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.ElementAt (geometryValue, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -965,6 +993,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyCollectionFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyCollectionFromBinary (geographyCollectionWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyCollectionFromBinary(cli::array &lt;System::Byte&gt; ^ geographyCollectionWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyCollectionFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyCollectionFromBinary (geographyCollectionWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -997,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyCollectionFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyCollectionFromText (geographyCollectionWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyCollectionFromText(System::String ^ geographyCollectionWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyCollectionFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyCollectionFromText (geographyCollectionWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1038,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyFromBinary(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyFromBinary (wellKnownBinary As Byte()) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyFromBinary(cli::array &lt;System::Byte&gt; ^ wellKnownBinary);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyFromBinary : byte[] -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyFromBinary wellKnownBinary" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1065,6 +1096,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyFromBinary (wellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyFromBinary(cli::array &lt;System::Byte&gt; ^ wellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyFromBinary (wellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1106,6 +1138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyFromGml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyFromGml (geographyMarkup As String) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyFromGml(System::String ^ geographyMarkup);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyFromGml : string -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyFromGml geographyMarkup" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1133,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyFromGml(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyFromGml (geographyMarkup As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyFromGml(System::String ^ geographyMarkup, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyFromGml : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyFromGml (geographyMarkup, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1165,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyFromProviderValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyFromProviderValue (providerValue As Object) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyFromProviderValue(System::Object ^ providerValue);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyFromProviderValue : obj -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyFromProviderValue providerValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1204,6 +1239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyFromText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyFromText (wellKnownText As String) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyFromText(System::String ^ wellKnownText);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyFromText : string -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyFromText wellKnownText" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1231,6 +1267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyFromText (wellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyFromText(System::String ^ wellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyFromText (wellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1263,6 +1300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyLineFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyLineFromBinary (lineWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyLineFromBinary(cli::array &lt;System::Byte&gt; ^ lineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyLineFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyLineFromBinary (lineWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1295,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyLineFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyLineFromText (lineWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyLineFromText(System::String ^ lineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyLineFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyLineFromText (lineWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1327,6 +1366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyMultiLineFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyMultiLineFromBinary (multiLineWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyMultiLineFromBinary(cli::array &lt;System::Byte&gt; ^ multiLineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyMultiLineFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyMultiLineFromBinary (multiLineWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1353,6 +1393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyMultiLineFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyMultiLineFromText (multiLineWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyMultiLineFromText(System::String ^ multiLineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyMultiLineFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyMultiLineFromText (multiLineWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1379,6 +1420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyMultiPointFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyMultiPointFromBinary (multiPointWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyMultiPointFromBinary(cli::array &lt;System::Byte&gt; ^ multiPointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyMultiPointFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyMultiPointFromBinary (multiPointWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1405,6 +1447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyMultiPointFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyMultiPointFromText (multiPointWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyMultiPointFromText(System::String ^ multiPointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyMultiPointFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyMultiPointFromText (multiPointWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1431,6 +1474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyMultiPolygonFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyMultiPolygonFromBinary (multiPolygonWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyMultiPolygonFromBinary(cli::array &lt;System::Byte&gt; ^ multiPolygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyMultiPolygonFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyMultiPolygonFromBinary (multiPolygonWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1457,6 +1501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyMultiPolygonFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyMultiPolygonFromText (multiPolygonWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyMultiPolygonFromText(System::String ^ multiPolygonWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyMultiPolygonFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyMultiPolygonFromText (multiPolygonWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1483,6 +1528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyPointFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyPointFromBinary (pointWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyPointFromBinary(cli::array &lt;System::Byte&gt; ^ pointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyPointFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyPointFromBinary (pointWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1515,6 +1561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyPointFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyPointFromText (pointWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyPointFromText(System::String ^ pointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyPointFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyPointFromText (pointWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1547,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyPolygonFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyPolygonFromBinary (polygonWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyPolygonFromBinary(cli::array &lt;System::Byte&gt; ^ polygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyPolygonFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyPolygonFromBinary (polygonWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1579,6 +1627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeographyPolygonFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeographyPolygonFromText (polygonWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GeographyPolygonFromText(System::String ^ polygonWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeographyPolygonFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GeographyPolygonFromText (polygonWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1611,6 +1660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryCollectionFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryCollectionFromBinary (geometryCollectionWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryCollectionFromBinary(cli::array &lt;System::Byte&gt; ^ geometryCollectionWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryCollectionFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryCollectionFromBinary (geometryCollectionWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1643,6 +1693,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryCollectionFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryCollectionFromText (geometryCollectionWellKnownText As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryCollectionFromText(System::String ^ geometryCollectionWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryCollectionFromText : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryCollectionFromText (geometryCollectionWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1684,6 +1735,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryFromBinary(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryFromBinary (wellKnownBinary As Byte()) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryFromBinary(cli::array &lt;System::Byte&gt; ^ wellKnownBinary);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryFromBinary : byte[] -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryFromBinary wellKnownBinary" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1711,6 +1763,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryFromBinary (wellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryFromBinary(cli::array &lt;System::Byte&gt; ^ wellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryFromBinary (wellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1752,6 +1805,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryFromGml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryFromGml (geometryMarkup As String) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryFromGml(System::String ^ geometryMarkup);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryFromGml : string -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryFromGml geometryMarkup" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1779,6 +1833,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryFromGml(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryFromGml (geometryMarkup As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryFromGml(System::String ^ geometryMarkup, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryFromGml : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryFromGml (geometryMarkup, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1811,6 +1866,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryFromProviderValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryFromProviderValue (providerValue As Object) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryFromProviderValue(System::Object ^ providerValue);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryFromProviderValue : obj -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryFromProviderValue providerValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1850,6 +1906,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryFromText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryFromText (wellKnownText As String) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryFromText(System::String ^ wellKnownText);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryFromText : string -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryFromText wellKnownText" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1877,6 +1934,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryFromText (wellKnownText As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryFromText(System::String ^ wellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryFromText : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryFromText (wellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1909,6 +1967,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryLineFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryLineFromBinary (lineWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryLineFromBinary(cli::array &lt;System::Byte&gt; ^ lineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryLineFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryLineFromBinary (lineWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1941,6 +2000,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryLineFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryLineFromText (lineWellKnownText As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryLineFromText(System::String ^ lineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryLineFromText : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryLineFromText (lineWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1973,6 +2033,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryMultiLineFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryMultiLineFromBinary (multiLineWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryMultiLineFromBinary(cli::array &lt;System::Byte&gt; ^ multiLineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryMultiLineFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryMultiLineFromBinary (multiLineWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1999,6 +2060,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryMultiLineFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryMultiLineFromText (multiLineWellKnownText As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryMultiLineFromText(System::String ^ multiLineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryMultiLineFromText : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryMultiLineFromText (multiLineWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2025,6 +2087,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryMultiPointFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryMultiPointFromBinary (multiPointWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryMultiPointFromBinary(cli::array &lt;System::Byte&gt; ^ multiPointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryMultiPointFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryMultiPointFromBinary (multiPointWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2051,6 +2114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryMultiPointFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryMultiPointFromText (multiPointWellKnownText As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryMultiPointFromText(System::String ^ multiPointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryMultiPointFromText : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryMultiPointFromText (multiPointWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2077,6 +2141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryMultiPolygonFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryMultiPolygonFromBinary (multiPolygonWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryMultiPolygonFromBinary(cli::array &lt;System::Byte&gt; ^ multiPolygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryMultiPolygonFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryMultiPolygonFromBinary (multiPolygonWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2103,6 +2168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryMultiPolygonFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryMultiPolygonFromText (multiPolygonKnownText As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryMultiPolygonFromText(System::String ^ multiPolygonKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryMultiPolygonFromText : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryMultiPolygonFromText (multiPolygonKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2129,6 +2195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryPointFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryPointFromBinary (pointWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryPointFromBinary(cli::array &lt;System::Byte&gt; ^ pointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryPointFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryPointFromBinary (pointWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2161,6 +2228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryPointFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryPointFromText (pointWellKnownText As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryPointFromText(System::String ^ pointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryPointFromText : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryPointFromText (pointWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2193,6 +2261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryPolygonFromBinary(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryPolygonFromBinary (polygonWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryPolygonFromBinary(cli::array &lt;System::Byte&gt; ^ polygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryPolygonFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryPolygonFromBinary (polygonWellKnownBinary, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2225,6 +2294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GeometryPolygonFromText(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GeometryPolygonFromText (polygonWellKnownText As String, coordinateSystemId As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GeometryPolygonFromText(System::String ^ polygonWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="F#" Value="abstract member GeometryPolygonFromText : string * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GeometryPolygonFromText (polygonWellKnownText, coordinateSystemId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2266,6 +2336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetArea(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetArea (geographyValue As DbGeography) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetArea(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetArea : System.Data.Spatial.DbGeography -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetArea geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2296,6 +2367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetArea(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetArea (geometryValue As DbGeometry) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetArea(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetArea : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetArea geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2326,6 +2398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetBoundary(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBoundary (geometryValue As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetBoundary(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetBoundary : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GetBoundary geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2350,6 +2423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetCentroid(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCentroid (geometryValue As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetCentroid(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetCentroid : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GetCentroid geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2380,6 +2454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetConvexHull(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetConvexHull (geometryValue As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetConvexHull(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetConvexHull : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GetConvexHull geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2413,6 +2488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetCoordinateSystemId(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCoordinateSystemId (geographyValue As DbGeography) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetCoordinateSystemId(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetCoordinateSystemId : System.Data.Spatial.DbGeography -&gt; int" Usage="dbSpatialServices.GetCoordinateSystemId geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2437,6 +2513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetCoordinateSystemId(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCoordinateSystemId (geometryValue As DbGeometry) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetCoordinateSystemId(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetCoordinateSystemId : System.Data.Spatial.DbGeometry -&gt; int" Usage="dbSpatialServices.GetCoordinateSystemId geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2470,6 +2547,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetDimension(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDimension (geographyValue As DbGeography) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetDimension(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetDimension : System.Data.Spatial.DbGeography -&gt; int" Usage="dbSpatialServices.GetDimension geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2500,6 +2578,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetDimension(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDimension (geometryValue As DbGeometry) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetDimension(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetDimension : System.Data.Spatial.DbGeometry -&gt; int" Usage="dbSpatialServices.GetDimension geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2539,6 +2618,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetElementCount(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetElementCount (geographyValue As DbGeography) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;int&gt; GetElementCount(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetElementCount : System.Data.Spatial.DbGeography -&gt; Nullable&lt;int&gt;" Usage="dbSpatialServices.GetElementCount geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2569,6 +2649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetElementCount(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetElementCount (geometryValue As DbGeometry) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;int&gt; GetElementCount(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetElementCount : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;int&gt;" Usage="dbSpatialServices.GetElementCount geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2608,6 +2689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetElevation(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetElevation (geographyValue As DbGeography) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetElevation(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetElevation : System.Data.Spatial.DbGeography -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetElevation geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2638,6 +2720,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetElevation(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetElevation (geometryValue As DbGeometry) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetElevation(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetElevation : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetElevation geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2677,6 +2760,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetEndPoint(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEndPoint (geographyValue As DbGeography) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GetEndPoint(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetEndPoint : System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GetEndPoint geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2707,6 +2791,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetEndPoint(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEndPoint (geometryValue As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetEndPoint(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetEndPoint : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GetEndPoint geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2737,6 +2822,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetEnvelope(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEnvelope (geometryValue As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetEnvelope(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetEnvelope : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GetEnvelope geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2767,6 +2853,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetExteriorRing(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetExteriorRing (geometryValue As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetExteriorRing(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetExteriorRing : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GetExteriorRing geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2797,6 +2884,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetInteriorRingCount(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInteriorRingCount (geometryValue As DbGeometry) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;int&gt; GetInteriorRingCount(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetInteriorRingCount : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;int&gt;" Usage="dbSpatialServices.GetInteriorRingCount geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2836,6 +2924,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetIsClosed(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIsClosed (geographyValue As DbGeography) As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;bool&gt; GetIsClosed(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetIsClosed : System.Data.Spatial.DbGeography -&gt; Nullable&lt;bool&gt;" Usage="dbSpatialServices.GetIsClosed geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2867,6 +2956,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetIsClosed(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIsClosed (geometryValue As DbGeometry) As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;bool&gt; GetIsClosed(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetIsClosed : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;bool&gt;" Usage="dbSpatialServices.GetIsClosed geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2907,6 +2997,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetIsEmpty(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIsEmpty (geographyValue As DbGeography) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool GetIsEmpty(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetIsEmpty : System.Data.Spatial.DbGeography -&gt; bool" Usage="dbSpatialServices.GetIsEmpty geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2932,6 +3023,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetIsEmpty(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIsEmpty (geometryValue As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool GetIsEmpty(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetIsEmpty : System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.GetIsEmpty geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2957,6 +3049,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetIsRing(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIsRing (geometryValue As DbGeometry) As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;bool&gt; GetIsRing(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetIsRing : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;bool&gt;" Usage="dbSpatialServices.GetIsRing geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2988,6 +3081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetIsSimple(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIsSimple (geometryValue As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool GetIsSimple(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetIsSimple : System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.GetIsSimple geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3013,6 +3107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetIsValid(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIsValid (geometryValue As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool GetIsValid(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetIsValid : System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.GetIsValid geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3038,6 +3133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetLatitude(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLatitude (geographyValue As DbGeography) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetLatitude(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetLatitude : System.Data.Spatial.DbGeography -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetLatitude geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3077,6 +3173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetLength(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLength (geographyValue As DbGeography) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetLength(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetLength : System.Data.Spatial.DbGeography -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetLength geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3107,6 +3204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetLength(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLength (geometryValue As DbGeometry) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetLength(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetLength : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetLength geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3137,6 +3235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetLongitude(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLongitude (geographyValue As DbGeography) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetLongitude(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetLongitude : System.Data.Spatial.DbGeography -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetLongitude geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3176,6 +3275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetMeasure(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMeasure (geographyValue As DbGeography) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetMeasure(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetMeasure : System.Data.Spatial.DbGeography -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetMeasure geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3206,6 +3306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetMeasure(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMeasure (geometryValue As DbGeometry) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetMeasure(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetMeasure : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetMeasure geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3245,6 +3346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetPointCount(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPointCount (geographyValue As DbGeography) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;int&gt; GetPointCount(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetPointCount : System.Data.Spatial.DbGeography -&gt; Nullable&lt;int&gt;" Usage="dbSpatialServices.GetPointCount geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3275,6 +3377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetPointCount(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPointCount (geometryValue As DbGeometry) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;int&gt; GetPointCount(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetPointCount : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;int&gt;" Usage="dbSpatialServices.GetPointCount geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3303,6 +3406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetPointOnSurface(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPointOnSurface (geometryValue As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetPointOnSurface(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetPointOnSurface : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GetPointOnSurface geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3342,6 +3446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetSpatialTypeName(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSpatialTypeName (geographyValue As DbGeography) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetSpatialTypeName(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetSpatialTypeName : System.Data.Spatial.DbGeography -&gt; string" Usage="dbSpatialServices.GetSpatialTypeName geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3366,6 +3471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetSpatialTypeName(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSpatialTypeName (geometryValue As DbGeometry) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetSpatialTypeName(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetSpatialTypeName : System.Data.Spatial.DbGeometry -&gt; string" Usage="dbSpatialServices.GetSpatialTypeName geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3399,6 +3505,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetStartPoint(System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetStartPoint (geographyValue As DbGeography) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GetStartPoint(System::Data::Spatial::DbGeography ^ geographyValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetStartPoint : System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.GetStartPoint geographyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3429,6 +3536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetStartPoint(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetStartPoint (geometryValue As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetStartPoint(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetStartPoint : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.GetStartPoint geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3459,6 +3567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetXCoordinate(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetXCoordinate (geometryValue As DbGeometry) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetXCoordinate(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetXCoordinate : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetXCoordinate geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3489,6 +3598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.GetYCoordinate(System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetYCoordinate (geometryValue As DbGeometry) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Nullable&lt;double&gt; GetYCoordinate(System::Data::Spatial::DbGeometry ^ geometryValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetYCoordinate : System.Data.Spatial.DbGeometry -&gt; Nullable&lt;double&gt;" Usage="dbSpatialServices.GetYCoordinate geometryValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3519,6 +3629,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.InteriorRingAt(System.Data.Spatial.DbGeometry,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function InteriorRingAt (geometryValue As DbGeometry, index As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ InteriorRingAt(System::Data::Spatial::DbGeometry ^ geometryValue, int index);" />
+      <MemberSignature Language="F#" Value="abstract member InteriorRingAt : System.Data.Spatial.DbGeometry * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.InteriorRingAt (geometryValue, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3560,6 +3671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Intersection(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Intersection (geographyValue As DbGeography, otherGeography As DbGeography) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ Intersection(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ otherGeography);" />
+      <MemberSignature Language="F#" Value="abstract member Intersection : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.Intersection (geographyValue, otherGeography)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3594,6 +3706,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Intersection(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Intersection (geometryValue As DbGeometry, otherGeometry As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ Intersection(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Intersection : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.Intersection (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3637,6 +3750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Intersects(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Intersects (geographyValue As DbGeography, otherGeography As DbGeography) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Intersects(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ otherGeography);" />
+      <MemberSignature Language="F#" Value="abstract member Intersects : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; bool" Usage="dbSpatialServices.Intersects (geographyValue, otherGeography)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3672,6 +3786,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Intersects(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Intersects (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Intersects(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Intersects : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.Intersects (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3707,6 +3822,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Overlaps(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Overlaps (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Overlaps(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Overlaps : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.Overlaps (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3751,6 +3867,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.PointAt(System.Data.Spatial.DbGeography,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function PointAt (geographyValue As DbGeography, index As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ PointAt(System::Data::Spatial::DbGeography ^ geographyValue, int index);" />
+      <MemberSignature Language="F#" Value="abstract member PointAt : System.Data.Spatial.DbGeography * int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.PointAt (geographyValue, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3783,6 +3900,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.PointAt(System.Data.Spatial.DbGeometry,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function PointAt (geometryValue As DbGeometry, index As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ PointAt(System::Data::Spatial::DbGeometry ^ geometryValue, int index);" />
+      <MemberSignature Language="F#" Value="abstract member PointAt : System.Data.Spatial.DbGeometry * int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.PointAt (geometryValue, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3815,6 +3933,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Relate(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Relate (geometryValue As DbGeometry, otherGeometry As DbGeometry, matrix As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Relate(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry, System::String ^ matrix);" />
+      <MemberSignature Language="F#" Value="abstract member Relate : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry * string -&gt; bool" Usage="dbSpatialServices.Relate (geometryValue, otherGeometry, matrix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3862,6 +3981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.SpatialEquals(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SpatialEquals (geographyValue As DbGeography, otherGeography As DbGeography) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool SpatialEquals(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ otherGeography);" />
+      <MemberSignature Language="F#" Value="abstract member SpatialEquals : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; bool" Usage="dbSpatialServices.SpatialEquals (geographyValue, otherGeography)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3897,6 +4017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.SpatialEquals(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SpatialEquals (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool SpatialEquals(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member SpatialEquals : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.SpatialEquals (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3941,6 +4062,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.SymmetricDifference(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SymmetricDifference (geographyValue As DbGeography, otherGeography As DbGeography) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ SymmetricDifference(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ otherGeography);" />
+      <MemberSignature Language="F#" Value="abstract member SymmetricDifference : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.SymmetricDifference (geographyValue, otherGeography)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3975,6 +4097,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.SymmetricDifference(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SymmetricDifference (geometryValue As DbGeometry, otherGeometry As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ SymmetricDifference(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member SymmetricDifference : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.SymmetricDifference (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4009,6 +4132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Touches(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Touches (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Touches(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Touches : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.Touches (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4053,6 +4177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Union(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Union (geographyValue As DbGeography, otherGeography As DbGeography) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ Union(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ otherGeography);" />
+      <MemberSignature Language="F#" Value="abstract member Union : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialServices.Union (geographyValue, otherGeography)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4087,6 +4212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Union(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Union (geometryValue As DbGeometry, otherGeometry As DbGeometry) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ Union(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Union : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialServices.Union (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4121,6 +4247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialServices.Within(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Within (geometryValue As DbGeometry, otherGeometry As DbGeometry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Within(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ otherGeometry);" />
+      <MemberSignature Language="F#" Value="abstract member Within : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; bool" Usage="dbSpatialServices.Within (geometryValue, otherGeometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

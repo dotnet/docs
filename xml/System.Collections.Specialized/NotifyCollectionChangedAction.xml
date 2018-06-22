@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NotifyCollectionChangedAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum NotifyCollectionChangedAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class NotifyCollectionChangedAction" />
+  <TypeSignature Language="F#" Value="type NotifyCollectionChangedAction = " />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 0" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />
       <MemberSignature Language="VB.NET" Value="Move" />
       <MemberSignature Language="C++ CLI" Value="Move" />
+      <MemberSignature Language="F#" Value="Move = 3" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Move" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
       <MemberSignature Language="C++ CLI" Value="Remove" />
+      <MemberSignature Language="F#" Value="Remove = 1" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
       <MemberSignature Language="C++ CLI" Value="Replace" />
+      <MemberSignature Language="F#" Value="Replace = 2" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />
       <MemberSignature Language="VB.NET" Value="Reset" />
       <MemberSignature Language="C++ CLI" Value="Reset" />
+      <MemberSignature Language="F#" Value="Reset = 4" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

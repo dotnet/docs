@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.OutputCacheUtility" />
   <TypeSignature Language="VB.NET" Value="Public Class OutputCacheUtility" />
   <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheUtility abstract sealed" />
+  <TypeSignature Language="F#" Value="type OutputCacheUtility = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.CreateCacheDependency(System.Web.HttpResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCacheDependency (response As HttpResponse) As CacheDependency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Caching::CacheDependency ^ CreateCacheDependency(System::Web::HttpResponse ^ response);" />
+      <MemberSignature Language="F#" Value="static member CreateCacheDependency : System.Web.HttpResponse -&gt; System.Web.Caching.CacheDependency" Usage="System.Web.Caching.OutputCacheUtility.CreateCacheDependency response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.FlushKernelCache(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub FlushKernelCache (cacheKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FlushKernelCache(System::String ^ cacheKey);" />
+      <MemberSignature Language="F#" Value="static member FlushKernelCache : string -&gt; unit" Usage="System.Web.Caching.OutputCacheUtility.FlushKernelCache cacheKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.GetContentBuffers(System.Web.HttpResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetContentBuffers (response As HttpResponse) As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ GetContentBuffers(System::Web::HttpResponse ^ response);" />
+      <MemberSignature Language="F#" Value="static member GetContentBuffers : System.Web.HttpResponse -&gt; System.Collections.ArrayList" Usage="System.Web.Caching.OutputCacheUtility.GetContentBuffers response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.GetValidationCallbacks(System.Web.HttpResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValidationCallbacks (response As HttpResponse) As IEnumerable(Of KeyValuePair(Of HttpCacheValidateHandler, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::Web::HttpCacheValidateHandler ^, System::Object ^&gt;&gt; ^ GetValidationCallbacks(System::Web::HttpResponse ^ response);" />
+      <MemberSignature Language="F#" Value="static member GetValidationCallbacks : System.Web.HttpResponse -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;System.Web.HttpCacheValidateHandler, obj&gt;&gt;" Usage="System.Web.Caching.OutputCacheUtility.GetValidationCallbacks response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.SetContentBuffers(System.Web.HttpResponse,System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetContentBuffers (response As HttpResponse, buffers As ArrayList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetContentBuffers(System::Web::HttpResponse ^ response, System::Collections::ArrayList ^ buffers);" />
+      <MemberSignature Language="F#" Value="static member SetContentBuffers : System.Web.HttpResponse * System.Collections.ArrayList -&gt; unit" Usage="System.Web.Caching.OutputCacheUtility.SetContentBuffers (response, buffers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.SetupKernelCaching(System.String,System.Web.HttpResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetupKernelCaching (originalCacheUrl As String, response As HttpResponse) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ SetupKernelCaching(System::String ^ originalCacheUrl, System::Web::HttpResponse ^ response);" />
+      <MemberSignature Language="F#" Value="static member SetupKernelCaching : string * System.Web.HttpResponse -&gt; string" Usage="System.Web.Caching.OutputCacheUtility.SetupKernelCaching (originalCacheUrl, response)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

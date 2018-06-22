@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AxHost.TypeLibraryTimeStampAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public: ref class AxHost::TypeLibraryTimeStampAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AxHost.TypeLibraryTimeStampAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (timestamp As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeLibraryTimeStampAttribute(System::String ^ timestamp);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute : string -&gt; System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute" Usage="new System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute timestamp" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Value { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : DateTime" Usage="System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

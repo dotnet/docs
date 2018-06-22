@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenShare" />
   <TypeSignature Language="VB.NET" Value="Public Enum OpenShare" />
   <TypeSignature Language="C++ CLI" Value="public enum class OpenShare" />
+  <TypeSignature Language="F#" Value="type OpenShare = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = -1" Usage="Microsoft.VisualBasic.OpenShare.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.LockRead" />
       <MemberSignature Language="VB.NET" Value="LockRead" />
       <MemberSignature Language="C++ CLI" Value="LockRead" />
+      <MemberSignature Language="F#" Value="LockRead = 2" Usage="Microsoft.VisualBasic.OpenShare.LockRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.LockReadWrite" />
       <MemberSignature Language="VB.NET" Value="LockReadWrite" />
       <MemberSignature Language="C++ CLI" Value="LockReadWrite" />
+      <MemberSignature Language="F#" Value="LockReadWrite = 0" Usage="Microsoft.VisualBasic.OpenShare.LockReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.LockWrite" />
       <MemberSignature Language="VB.NET" Value="LockWrite" />
       <MemberSignature Language="C++ CLI" Value="LockWrite" />
+      <MemberSignature Language="F#" Value="LockWrite = 1" Usage="Microsoft.VisualBasic.OpenShare.LockWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.Shared" />
       <MemberSignature Language="VB.NET" Value="Shared" />
       <MemberSignature Language="C++ CLI" Value="Shared" />
+      <MemberSignature Language="F#" Value="Shared = 3" Usage="Microsoft.VisualBasic.OpenShare.Shared" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

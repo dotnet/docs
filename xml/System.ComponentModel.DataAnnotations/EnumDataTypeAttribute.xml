@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.EnumDataTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumDataTypeAttribute&#xA;Inherits DataTypeAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumDataTypeAttribute sealed : System::ComponentModel::DataAnnotations::DataTypeAttribute" />
+  <TypeSignature Language="F#" Value="type EnumDataTypeAttribute = class&#xA;    inherit DataTypeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.EnumDataTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enumType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumDataTypeAttribute(Type ^ enumType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.EnumDataTypeAttribute : Type -&gt; System.ComponentModel.DataAnnotations.EnumDataTypeAttribute" Usage="new System.ComponentModel.DataAnnotations.EnumDataTypeAttribute enumType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -111,6 +113,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.EnumDataTypeAttribute.EnumType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnumType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ EnumType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnumType : Type" Usage="System.ComponentModel.DataAnnotations.EnumDataTypeAttribute.EnumType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -137,6 +140,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.EnumDataTypeAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="enumDataTypeAttribute.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

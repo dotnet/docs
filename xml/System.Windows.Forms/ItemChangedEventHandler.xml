@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ItemChangedEventHandler(sender As Object, e As ItemChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ItemChangedEventHandler(System::Object ^ sender, ItemChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ItemChangedEventHandler = delegate of obj * ItemChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

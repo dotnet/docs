@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleRowUpdatingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OracleRowUpdatingEventArgs&#xA;Inherits RowUpdatingEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class OracleRowUpdatingEventArgs sealed : System::Data::Common::RowUpdatingEventArgs" />
+  <TypeSignature Language="F#" Value="type OracleRowUpdatingEventArgs = class&#xA;    inherit RowUpdatingEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRow row, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleRowUpdatingEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleRowUpdatingEventArgs(System::Data::DataRow ^ row, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleRowUpdatingEventArgs : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.OracleClient.OracleRowUpdatingEventArgs" Usage="new System.Data.OracleClient.OracleRowUpdatingEventArgs (row, command, statementType, tableMapping)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleRowUpdatingEventArgs.BaseCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property BaseCommand As IDbCommand" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::IDbCommand ^ BaseCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseCommand : System.Data.IDbCommand with get, set" Usage="System.Data.OracleClient.OracleRowUpdatingEventArgs.BaseCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleRowUpdatingEventArgs.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As OracleCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OracleClient::OracleCommand ^ Command { System::Data::OracleClient::OracleCommand ^ get(); void set(System::Data::OracleClient::OracleCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Data.OracleClient.OracleCommand with get, set" Usage="System.Data.OracleClient.OracleRowUpdatingEventArgs.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ExpiredSecurityTokenException" />
   <TypeSignature Language="VB.NET" Value="Public Class ExpiredSecurityTokenException&#xA;Inherits MessageSecurityException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpiredSecurityTokenException : System::ServiceModel::Security::MessageSecurityException" />
+  <TypeSignature Language="F#" Value="type ExpiredSecurityTokenException = class&#xA;    inherit MessageSecurityException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ExpiredSecurityTokenException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpiredSecurityTokenException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.ExpiredSecurityTokenException : string -&gt; System.ServiceModel.Security.ExpiredSecurityTokenException" Usage="new System.ServiceModel.Security.ExpiredSecurityTokenException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ExpiredSecurityTokenException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExpiredSecurityTokenException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.ExpiredSecurityTokenException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Security.ExpiredSecurityTokenException" Usage="new System.ServiceModel.Security.ExpiredSecurityTokenException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ExpiredSecurityTokenException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpiredSecurityTokenException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.ExpiredSecurityTokenException : string * Exception -&gt; System.ServiceModel.Security.ExpiredSecurityTokenException" Usage="new System.ServiceModel.Security.ExpiredSecurityTokenException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

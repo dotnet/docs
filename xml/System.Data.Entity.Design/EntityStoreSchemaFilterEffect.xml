@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaFilterEffect" />
   <TypeSignature Language="VB.NET" Value="Public Enum EntityStoreSchemaFilterEffect" />
   <TypeSignature Language="C++ CLI" Value="public enum class EntityStoreSchemaFilterEffect" />
+  <TypeSignature Language="F#" Value="type EntityStoreSchemaFilterEffect = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterEffect.Allow" />
       <MemberSignature Language="VB.NET" Value="Allow" />
       <MemberSignature Language="C++ CLI" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 0" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEffect.Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterEffect.Exclude" />
       <MemberSignature Language="VB.NET" Value="Exclude" />
       <MemberSignature Language="C++ CLI" Value="Exclude" />
+      <MemberSignature Language="F#" Value="Exclude = 1" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEffect.Exclude" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

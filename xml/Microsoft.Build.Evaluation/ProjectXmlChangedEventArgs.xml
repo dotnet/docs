@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectXmlChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectXmlChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectXmlChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ProjectXmlChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectXmlChangedEventArgs.ProjectXml" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectXml As ProjectRootElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectRootElement ^ ProjectXml { Microsoft::Build::Construction::ProjectRootElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectXml : Microsoft.Build.Construction.ProjectRootElement" Usage="Microsoft.Build.Evaluation.ProjectXmlChangedEventArgs.ProjectXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectXmlChangedEventArgs.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reason { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : string" Usage="Microsoft.Build.Evaluation.ProjectXmlChangedEventArgs.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.InternalsVisibleToAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InternalsVisibleToAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalsVisibleToAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type InternalsVisibleToAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -122,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.InternalsVisibleToAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalsVisibleToAttribute(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.InternalsVisibleToAttribute : string -&gt; System.Runtime.CompilerServices.InternalsVisibleToAttribute" Usage="new System.Runtime.CompilerServices.InternalsVisibleToAttribute assemblyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -215,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.InternalsVisibleToAttribute.AllInternalsVisible" />
       <MemberSignature Language="VB.NET" Value="Public Property AllInternalsVisible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllInternalsVisible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllInternalsVisible : bool with get, set" Usage="System.Runtime.CompilerServices.InternalsVisibleToAttribute.AllInternalsVisible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -245,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.InternalsVisibleToAttribute.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string" Usage="System.Runtime.CompilerServices.InternalsVisibleToAttribute.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

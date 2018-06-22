@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IDataBoundItemControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataBoundItemControl&#xA;Implements IDataBoundControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataBoundItemControl : System::Web::UI::WebControls::IDataBoundControl" />
+  <TypeSignature Language="F#" Value="type IDataBoundItemControl = interface&#xA;    interface IDataBoundControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundItemControl.DataKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataKey As DataKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKey ^ DataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataKey : System.Web.UI.WebControls.DataKey" Usage="System.Web.UI.WebControls.IDataBoundItemControl.DataKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundItemControl.Mode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As DataBoundControlMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataBoundControlMode Mode { System::Web::UI::WebControls::DataBoundControlMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.WebControls.DataBoundControlMode" Usage="System.Web.UI.WebControls.IDataBoundItemControl.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

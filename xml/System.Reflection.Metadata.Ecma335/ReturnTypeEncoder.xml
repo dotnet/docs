@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ReturnTypeEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure ReturnTypeEncoder" />
   <TypeSignature Language="C++ CLI" Value="public value class ReturnTypeEncoder" />
+  <TypeSignature Language="F#" Value="type ReturnTypeEncoder = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ReturnTypeEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReturnTypeEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.ReturnTypeEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.ReturnTypeEncoder" Usage="new System.Reflection.Metadata.Ecma335.ReturnTypeEncoder builder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ReturnTypeEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.ReturnTypeEncoder.Builder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ReturnTypeEncoder.CustomModifiers" />
       <MemberSignature Language="VB.NET" Value="Public Function CustomModifiers () As CustomModifiersEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::CustomModifiersEncoder CustomModifiers();" />
+      <MemberSignature Language="F#" Value="member this.CustomModifiers : unit -&gt; System.Reflection.Metadata.Ecma335.CustomModifiersEncoder" Usage="returnTypeEncoder.CustomModifiers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder Type(bool isByRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ReturnTypeEncoder.Type(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Type (Optional isByRef As Boolean = false) As SignatureTypeEncoder" />
+      <MemberSignature Language="F#" Value="member this.Type : bool -&gt; System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" Usage="returnTypeEncoder.Type isByRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ReturnTypeEncoder.TypedReference" />
       <MemberSignature Language="VB.NET" Value="Public Sub TypedReference ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TypedReference();" />
+      <MemberSignature Language="F#" Value="member this.TypedReference : unit -&gt; unit" Usage="returnTypeEncoder.TypedReference " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ReturnTypeEncoder.Void" />
       <MemberSignature Language="VB.NET" Value="Public Sub Void ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Void();" />
+      <MemberSignature Language="F#" Value="member this.Void : unit -&gt; unit" Usage="returnTypeEncoder.Void " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

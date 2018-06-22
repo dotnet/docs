@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ViewStateService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ViewStateService" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewStateService abstract" />
+  <TypeSignature Language="F#" Value="type ViewStateService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveViewState(class System.Activities.Presentation.Model.ModelItem modelItem, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ViewStateService.RemoveViewState(System.Activities.Presentation.Model.ModelItem,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool RemoveViewState(System::Activities::Presentation::Model::ModelItem ^ modelItem, System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveViewState : System.Activities.Presentation.Model.ModelItem * string -&gt; bool" Usage="viewStateService.RemoveViewState (modelItem, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; RetrieveAllViewState(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ViewStateService.RetrieveAllViewState(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ RetrieveAllViewState(System::Activities::Presentation::Model::ModelItem ^ modelItem);" />
+      <MemberSignature Language="F#" Value="abstract member RetrieveAllViewState : System.Activities.Presentation.Model.ModelItem -&gt; System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="viewStateService.RetrieveAllViewState modelItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object RetrieveViewState(class System.Activities.Presentation.Model.ModelItem modelItem, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ViewStateService.RetrieveViewState(System.Activities.Presentation.Model.ModelItem,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ RetrieveViewState(System::Activities::Presentation::Model::ModelItem ^ modelItem, System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member RetrieveViewState : System.Activities.Presentation.Model.ModelItem * string -&gt; obj" Usage="viewStateService.RetrieveViewState (modelItem, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StoreViewState(class System.Activities.Presentation.Model.ModelItem modelItem, string key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ViewStateService.StoreViewState(System.Activities.Presentation.Model.ModelItem,System.String,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StoreViewState(System::Activities::Presentation::Model::ModelItem ^ modelItem, System::String ^ key, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member StoreViewState : System.Activities.Presentation.Model.ModelItem * string * obj -&gt; unit" Usage="viewStateService.StoreViewState (modelItem, key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StoreViewStateWithUndo(class System.Activities.Presentation.Model.ModelItem modelItem, string key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ViewStateService.StoreViewStateWithUndo(System.Activities.Presentation.Model.ModelItem,System.String,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StoreViewStateWithUndo(System::Activities::Presentation::Model::ModelItem ^ modelItem, System::String ^ key, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member StoreViewStateWithUndo : System.Activities.Presentation.Model.ModelItem * string * obj -&gt; unit" Usage="viewStateService.StoreViewStateWithUndo (modelItem, key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.ViewStateService.UndoableViewStateChanged" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Event UndoableViewStateChanged As ViewStateChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract event System::Activities::Presentation::View::ViewStateChangedEventHandler ^ UndoableViewStateChanged;" />
+      <MemberSignature Language="F#" Value="member this.UndoableViewStateChanged : System.Activities.Presentation.View.ViewStateChangedEventHandler " Usage="member this.UndoableViewStateChanged : System.Activities.Presentation.View.ViewStateChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.ViewStateService.ViewStateChanged" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Event ViewStateChanged As ViewStateChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract event System::Activities::Presentation::View::ViewStateChangedEventHandler ^ ViewStateChanged;" />
+      <MemberSignature Language="F#" Value="member this.ViewStateChanged : System.Activities.Presentation.View.ViewStateChangedEventHandler " Usage="member this.ViewStateChanged : System.Activities.Presentation.View.ViewStateChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

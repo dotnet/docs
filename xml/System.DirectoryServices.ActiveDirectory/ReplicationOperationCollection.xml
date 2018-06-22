@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ReplicationOperationCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReplicationOperationCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReplicationOperationCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection.Contains(System.DirectoryServices.ActiveDirectory.ReplicationOperation)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (operation As ReplicationOperation) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ReplicationOperation ^ operation);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ReplicationOperation -&gt; bool" Usage="replicationOperationCollection.Contains operation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ReplicationOperation[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (operations As ReplicationOperation(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ReplicationOperation ^&gt; ^ operations, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ReplicationOperation[] * int -&gt; unit" Usage="replicationOperationCollection.CopyTo (operations, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ReplicationOperation)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (operation As ReplicationOperation) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ReplicationOperation ^ operation);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ReplicationOperation -&gt; int" Usage="replicationOperationCollection.IndexOf operation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ReplicationOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReplicationOperation ^ default[int] { System::DirectoryServices::ActiveDirectory::ReplicationOperation ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ReplicationOperation" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelPoolSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class ChannelPoolSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelPoolSettings" />
+  <TypeSignature Language="F#" Value="type ChannelPoolSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelPoolSettings.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.ChannelPoolSettings.IdleTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelPoolSettings.LeaseTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LeaseTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan LeaseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.LeaseTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.ChannelPoolSettings.LeaseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelPoolSettings.MaxOutboundChannelsPerEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxOutboundChannelsPerEndpoint As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxOutboundChannelsPerEndpoint { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxOutboundChannelsPerEndpoint : int with get, set" Usage="System.ServiceModel.Channels.ChannelPoolSettings.MaxOutboundChannelsPerEndpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

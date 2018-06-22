@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackUriHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class PackUriHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackUriHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type PackUriHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ComparePackUri (firstPackUri As Uri, secondPackUri As Uri) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ComparePackUri(Uri ^ firstPackUri, Uri ^ secondPackUri);" />
+      <MemberSignature Language="F#" Value="static member ComparePackUri : Uri * Uri -&gt; int" Usage="System.IO.Packaging.PackUriHelper.ComparePackUri (firstPackUri, secondPackUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ComparePartUri (firstPartUri As Uri, secondPartUri As Uri) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ComparePartUri(Uri ^ firstPartUri, Uri ^ secondPartUri);" />
+      <MemberSignature Language="F#" Value="static member ComparePartUri : Uri * Uri -&gt; int" Usage="System.IO.Packaging.PackUriHelper.ComparePartUri (firstPartUri, secondPartUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.Create(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (packageUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ Create(Uri ^ packageUri);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.Create packageUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -233,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (packageUri As Uri, partUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ Create(Uri ^ packageUri, Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri * Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.Create (packageUri, partUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -300,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (packageUri As Uri, partUri As Uri, fragment As String) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ Create(Uri ^ packageUri, Uri ^ partUri, System::String ^ fragment);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri * Uri * string -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.Create (packageUri, partUri, fragment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -378,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePartUri (partUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ CreatePartUri(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member CreatePartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.CreatePartUri partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -435,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNormalizedPartUri (partUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetNormalizedPartUri(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member GetNormalizedPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetNormalizedPartUri partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -478,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPackageUri (packUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetPackageUri(Uri ^ packUri);" />
+      <MemberSignature Language="F#" Value="static member GetPackageUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetPackageUri packUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -519,6 +528,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPartUri (packUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetPartUri(Uri ^ packUri);" />
+      <MemberSignature Language="F#" Value="static member GetPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetPartUri packUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -563,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRelationshipPartUri (partUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetRelationshipPartUri(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member GetRelationshipPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetRelationshipPartUri partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -620,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRelativeUri (sourcePartUri As Uri, targetPartUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetRelativeUri(Uri ^ sourcePartUri, Uri ^ targetPartUri);" />
+      <MemberSignature Language="F#" Value="static member GetRelativeUri : Uri * Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetRelativeUri (sourcePartUri, targetPartUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -667,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSourcePartUriFromRelationshipPartUri (relationshipPartUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetSourcePartUriFromRelationshipPartUri(Uri ^ relationshipPartUri);" />
+      <MemberSignature Language="F#" Value="static member GetSourcePartUriFromRelationshipPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri relationshipPartUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -722,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsRelationshipPartUri (partUri As Uri) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsRelationshipPartUri(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member IsRelationshipPartUri : Uri -&gt; bool" Usage="System.IO.Packaging.PackUriHelper.IsRelationshipPartUri partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -762,6 +776,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResolvePartUri (sourcePartUri As Uri, targetUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ ResolvePartUri(Uri ^ sourcePartUri, Uri ^ targetUri);" />
+      <MemberSignature Language="F#" Value="static member ResolvePartUri : Uri * Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.ResolvePartUri (sourcePartUri, targetUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -827,6 +842,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.PackUriHelper.UriSchemePack" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UriSchemePack As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ UriSchemePack;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UriSchemePack : string" Usage="System.IO.Packaging.PackUriHelper.UriSchemePack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

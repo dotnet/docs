@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.StyleSimulations" />
   <TypeSignature Language="VB.NET" Value="Public Enum StyleSimulations" />
   <TypeSignature Language="C++ CLI" Value="public enum class StyleSimulations" />
+  <TypeSignature Language="F#" Value="type StyleSimulations = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.BoldItalicSimulation" />
       <MemberSignature Language="VB.NET" Value="BoldItalicSimulation" />
       <MemberSignature Language="C++ CLI" Value="BoldItalicSimulation" />
+      <MemberSignature Language="F#" Value="BoldItalicSimulation = 3" Usage="System.Windows.Media.StyleSimulations.BoldItalicSimulation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.BoldSimulation" />
       <MemberSignature Language="VB.NET" Value="BoldSimulation" />
       <MemberSignature Language="C++ CLI" Value="BoldSimulation" />
+      <MemberSignature Language="F#" Value="BoldSimulation = 1" Usage="System.Windows.Media.StyleSimulations.BoldSimulation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.ItalicSimulation" />
       <MemberSignature Language="VB.NET" Value="ItalicSimulation" />
       <MemberSignature Language="C++ CLI" Value="ItalicSimulation" />
+      <MemberSignature Language="F#" Value="ItalicSimulation = 2" Usage="System.Windows.Media.StyleSimulations.ItalicSimulation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Media.StyleSimulations.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

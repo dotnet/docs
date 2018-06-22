@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlNamespaceResolver" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlNamespaceResolver" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlNamespaceResolver" />
+  <TypeSignature Language="F#" Value="type IXamlNamespaceResolver = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNamespaceResolver.GetNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespace (prefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetNamespace(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespace : string -&gt; string" Usage="iXamlNamespaceResolver.GetNamespace prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNamespaceResolver.GetNamespacePrefixes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespacePrefixes () As IEnumerable(Of NamespaceDeclaration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xaml::NamespaceDeclaration ^&gt; ^ GetNamespacePrefixes();" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespacePrefixes : unit -&gt; seq&lt;System.Xaml.NamespaceDeclaration&gt;" Usage="iXamlNamespaceResolver.GetNamespacePrefixes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

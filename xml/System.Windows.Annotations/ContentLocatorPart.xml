@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorPart" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentLocatorPart" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentLocatorPart sealed" />
+  <TypeSignature Language="F#" Value="type ContentLocatorPart = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorPart.#ctor(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (partType As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentLocatorPart(System::Xml::XmlQualifiedName ^ partType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.ContentLocatorPart : System.Xml.XmlQualifiedName -&gt; System.Windows.Annotations.ContentLocatorPart" Usage="new System.Windows.Annotations.ContentLocatorPart partType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorPart.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; obj" Usage="contentLocatorPart.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorPart.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="contentLocatorPart.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorPart.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="contentLocatorPart.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.ContentLocatorPart.NameValuePairs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameValuePairs As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ NameValuePairs { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameValuePairs : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Windows.Annotations.ContentLocatorPart.NameValuePairs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.ContentLocatorPart.PartType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartType As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ PartType { System::Xml::XmlQualifiedName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartType : System.Xml.XmlQualifiedName" Usage="System.Windows.Annotations.ContentLocatorPart.PartType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

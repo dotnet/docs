@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.HotSpotCollectionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class HotSpotCollectionEditor&#xA;Inherits CollectionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class HotSpotCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
+  <TypeSignature Language="F#" Value="type HotSpotCollectionEditor = class&#xA;    inherit CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HotSpotCollectionEditor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.HotSpotCollectionEditor : Type -&gt; System.Web.UI.Design.WebControls.HotSpotCollectionEditor" Usage="new System.Web.UI.Design.WebControls.HotSpotCollectionEditor type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CanSelectMultipleInstances" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanSelectMultipleInstances () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanSelectMultipleInstances();" />
+      <MemberSignature Language="F#" Value="override this.CanSelectMultipleInstances : unit -&gt; bool" Usage="hotSpotCollectionEditor.CanSelectMultipleInstances " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CreateNewItemTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewItemTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ CreateNewItemTypes();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewItemTypes : unit -&gt; Type[]" Usage="hotSpotCollectionEditor.CreateNewItemTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.HelpTopic" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HelpTopic As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ HelpTopic { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpTopic : string" Usage="System.Web.UI.Design.WebControls.HotSpotCollectionEditor.HelpTopic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

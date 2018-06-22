@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.DynamicUpdateMapExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicUpdateMapExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicUpdateMapExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type DynamicUpdateMapExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.DynamicUpdateMapExtension.#ctor(System.Activities.DynamicUpdate.DynamicUpdateMap)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (updateMap As DynamicUpdateMap)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicUpdateMapExtension(System::Activities::DynamicUpdate::DynamicUpdateMap ^ updateMap);" />
+      <MemberSignature Language="F#" Value="new System.Activities.XamlIntegration.DynamicUpdateMapExtension : System.Activities.DynamicUpdate.DynamicUpdateMap -&gt; System.Activities.XamlIntegration.DynamicUpdateMapExtension" Usage="new System.Activities.XamlIntegration.DynamicUpdateMapExtension updateMap" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.DynamicUpdateMapExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="dynamicUpdateMapExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.DynamicUpdateMapExtension.UpdateMap" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateMap As DynamicUpdateMap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DynamicUpdate::DynamicUpdateMap ^ UpdateMap { System::Activities::DynamicUpdate::DynamicUpdateMap ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateMap : System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.XamlIntegration.DynamicUpdateMapExtension.UpdateMap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.DynamicUpdateMapExtension.XmlContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlContent As IXmlSerializable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::IXmlSerializable ^ XmlContent { System::Xml::Serialization::IXmlSerializable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlContent : System.Xml.Serialization.IXmlSerializable" Usage="System.Activities.XamlIntegration.DynamicUpdateMapExtension.XmlContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

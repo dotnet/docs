@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.RecipientInfo" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RecipientInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class RecipientInfo abstract" />
+  <TypeSignature Language="F#" Value="type RecipientInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.RecipientInfo.EncryptedKey" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EncryptedKey As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property cli::array &lt;System::Byte&gt; ^ EncryptedKey { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptedKey : byte[]" Usage="System.Security.Cryptography.Pkcs.RecipientInfo.EncryptedKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.RecipientInfo.KeyEncryptionAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property KeyEncryptionAlgorithm As AlgorithmIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ KeyEncryptionAlgorithm { System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyEncryptionAlgorithm : System.Security.Cryptography.Pkcs.AlgorithmIdentifier" Usage="System.Security.Cryptography.Pkcs.RecipientInfo.KeyEncryptionAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.RecipientInfo.RecipientIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RecipientIdentifier As SubjectIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Security::Cryptography::Pkcs::SubjectIdentifier ^ RecipientIdentifier { System::Security::Cryptography::Pkcs::SubjectIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecipientIdentifier : System.Security.Cryptography.Pkcs.SubjectIdentifier" Usage="System.Security.Cryptography.Pkcs.RecipientInfo.RecipientIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.RecipientInfo.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As RecipientInfoType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::RecipientInfoType Type { System::Security::Cryptography::Pkcs::RecipientInfoType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Security.Cryptography.Pkcs.RecipientInfoType" Usage="System.Security.Cryptography.Pkcs.RecipientInfo.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.RecipientInfo.Version" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Version As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Version { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Security.Cryptography.Pkcs.RecipientInfo.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.MessageQueryCollection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageQueryCollection&#xA;Inherits Collection(Of MessageQuery)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQueryCollection abstract : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Dispatcher::MessageQuery ^&gt;" />
+  <TypeSignature Language="F#" Value="type MessageQueryCollection = class&#xA;    inherit Collection&lt;MessageQuery&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.ServiceModel.Dispatcher.MessageQuery, !!TResult&gt;&gt; Evaluate&lt;TResult&gt;(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryCollection.Evaluate``1(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TResult&gt;&gt; ^ Evaluate(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : System.ServiceModel.Channels.Message -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Result&gt;&gt;" Usage="messageQueryCollection.Evaluate message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryCollection.Evaluate``1(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Evaluate(Of TResult) (buffer As MessageBuffer) As IEnumerable(Of KeyValuePair(Of MessageQuery, TResult))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TResult&gt;&gt; ^ Evaluate(System::ServiceModel::Channels::MessageBuffer ^ buffer);" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : System.ServiceModel.Channels.MessageBuffer -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Result&gt;&gt;" Usage="messageQueryCollection.Evaluate buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

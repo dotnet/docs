@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MsmqTransportBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MsmqTransportBindingElement&#xA;Inherits MsmqBindingElementBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MsmqTransportBindingElement sealed : System::ServiceModel::Channels::MsmqBindingElementBase" />
+  <TypeSignature Language="F#" Value="type MsmqTransportBindingElement = class&#xA;    inherit MsmqBindingElementBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="msmqTransportBindingElement.BuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="msmqTransportBindingElement.BuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="msmqTransportBindingElement.CanBuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="msmqTransportBindingElement.CanBuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -226,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="msmqTransportBindingElement.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqTransportBindingElement.MaxPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPoolSize : int with get, set" Usage="System.ServiceModel.Channels.MsmqTransportBindingElement.MaxPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -287,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqTransportBindingElement.QueueTransferProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Property QueueTransferProtocol As QueueTransferProtocol" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::QueueTransferProtocol QueueTransferProtocol { System::ServiceModel::QueueTransferProtocol get(); void set(System::ServiceModel::QueueTransferProtocol value); };" />
+      <MemberSignature Language="F#" Value="member this.QueueTransferProtocol : System.ServiceModel.QueueTransferProtocol with get, set" Usage="System.ServiceModel.Channels.MsmqTransportBindingElement.QueueTransferProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -320,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqTransportBindingElement.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Scheme { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.ServiceModel.Channels.MsmqTransportBindingElement.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -354,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property UseActiveDirectory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseActiveDirectory { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseActiveDirectory : bool with get, set" Usage="System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

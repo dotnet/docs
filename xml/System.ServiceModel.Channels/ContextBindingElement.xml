@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ContextBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextBindingElement&#xA;Inherits BindingElement&#xA;Implements IContextBindingElement, IPolicyExportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextBindingElement : System::ServiceModel::Channels::BindingElement, System::ServiceModel::Channels::IContextBindingElement, System::ServiceModel::Description::IPolicyExportExtension" />
+  <TypeSignature Language="F#" Value="type ContextBindingElement = class&#xA;    inherit BindingElement&#xA;    interface IPolicyExportExtension&#xA;    interface IContextBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Security.ProtectionLevel protectionLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.#ctor(System.Net.Security.ProtectionLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextBindingElement(System::Net::Security::ProtectionLevel protectionLevel);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ContextBindingElement : System.Net.Security.ProtectionLevel -&gt; System.ServiceModel.Channels.ContextBindingElement" Usage="new System.ServiceModel.Channels.ContextBindingElement protectionLevel" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Security.ProtectionLevel protectionLevel, valuetype System.ServiceModel.Channels.ContextExchangeMechanism contextExchangeMechanism) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.#ctor(System.Net.Security.ProtectionLevel,System.ServiceModel.Channels.ContextExchangeMechanism)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextBindingElement(System::Net::Security::ProtectionLevel protectionLevel, System::ServiceModel::Channels::ContextExchangeMechanism contextExchangeMechanism);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ContextBindingElement : System.Net.Security.ProtectionLevel * System.ServiceModel.Channels.ContextExchangeMechanism -&gt; System.ServiceModel.Channels.ContextBindingElement" Usage="new System.ServiceModel.Channels.ContextBindingElement (protectionLevel, contextExchangeMechanism)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Security.ProtectionLevel protectionLevel, valuetype System.ServiceModel.Channels.ContextExchangeMechanism contextExchangeMechanism, class System.Uri clientCallbackAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.#ctor(System.Net.Security.ProtectionLevel,System.ServiceModel.Channels.ContextExchangeMechanism,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextBindingElement(System::Net::Security::ProtectionLevel protectionLevel, System::ServiceModel::Channels::ContextExchangeMechanism contextExchangeMechanism, Uri ^ clientCallbackAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ContextBindingElement : System.Net.Security.ProtectionLevel * System.ServiceModel.Channels.ContextExchangeMechanism * Uri -&gt; System.ServiceModel.Channels.ContextBindingElement" Usage="new System.ServiceModel.Channels.ContextBindingElement (protectionLevel, contextExchangeMechanism, clientCallbackAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Security.ProtectionLevel protectionLevel, valuetype System.ServiceModel.Channels.ContextExchangeMechanism contextExchangeMechanism, class System.Uri clientCallbackAddress, bool contextManagementEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.#ctor(System.Net.Security.ProtectionLevel,System.ServiceModel.Channels.ContextExchangeMechanism,System.Uri,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextBindingElement(System::Net::Security::ProtectionLevel protectionLevel, System::ServiceModel::Channels::ContextExchangeMechanism contextExchangeMechanism, Uri ^ clientCallbackAddress, bool contextManagementEnabled);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ContextBindingElement : System.Net.Security.ProtectionLevel * System.ServiceModel.Channels.ContextExchangeMechanism * Uri * bool -&gt; System.ServiceModel.Channels.ContextBindingElement" Usage="new System.ServiceModel.Channels.ContextBindingElement (protectionLevel, contextExchangeMechanism, clientCallbackAddress, contextManagementEnabled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="contextBindingElement.BuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="contextBindingElement.BuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="contextBindingElement.CanBuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="contextBindingElement.CanBuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -311,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ContextBindingElement.ClientCallbackAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCallbackAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ClientCallbackAddress { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCallbackAddress : Uri with get, set" Usage="System.ServiceModel.Channels.ContextBindingElement.ClientCallbackAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -336,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="contextBindingElement.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -366,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextExchangeMechanism As ContextExchangeMechanism" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::ContextExchangeMechanism ContextExchangeMechanism { System::ServiceModel::Channels::ContextExchangeMechanism get(); void set(System::ServiceModel::Channels::ContextExchangeMechanism value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextExchangeMechanism : System.ServiceModel.Channels.ContextExchangeMechanism with get, set" Usage="System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ContextBindingElement.ContextManagementEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextManagementEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContextManagementEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextManagementEnabled : bool with get, set" Usage="System.ServiceModel.Channels.ContextBindingElement.ContextManagementEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -418,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ExportPolicy (exporter As MetadataExporter, context As PolicyConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ExportPolicy : System.ServiceModel.Description.MetadataExporter * System.ServiceModel.Description.PolicyConversionContext -&gt; unit&#xA;override this.ExportPolicy : System.ServiceModel.Description.MetadataExporter * System.ServiceModel.Description.PolicyConversionContext -&gt; unit" Usage="contextBindingElement.ExportPolicy (exporter, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
@@ -448,6 +462,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="contextBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -482,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ContextBindingElement.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.Channels.ContextBindingElement.ProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

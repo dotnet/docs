@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerPresenceInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerPresenceInfo" />
+  <TypeSignature Language="F#" Value="type PeerPresenceInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.#ctor(System.Net.PeerToPeer.Collaboration.PeerPresenceStatus,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (presenceStatus As PeerPresenceStatus, description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerPresenceInfo(System::Net::PeerToPeer::Collaboration::PeerPresenceStatus presenceStatus, System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.Collaboration.PeerPresenceInfo : System.Net.PeerToPeer.Collaboration.PeerPresenceStatus * string -&gt; System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" Usage="new System.Net.PeerToPeer.Collaboration.PeerPresenceInfo (presenceStatus, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.DescriptiveText" />
       <MemberSignature Language="VB.NET" Value="Public Property DescriptiveText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DescriptiveText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DescriptiveText : string with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.DescriptiveText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property PresenceStatus As PeerPresenceStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerPresenceStatus PresenceStatus { System::Net::PeerToPeer::Collaboration::PeerPresenceStatus get(); void set(System::Net::PeerToPeer::Collaboration::PeerPresenceStatus value); };" />
+      <MemberSignature Language="F#" Value="member this.PresenceStatus : System.Net.PeerToPeer.Collaboration.PeerPresenceStatus with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

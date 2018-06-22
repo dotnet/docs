@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurfaceEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignSurfaceEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignSurfaceEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DesignSurfaceEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceEventArgs.#ctor(System.ComponentModel.Design.DesignSurface)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (surface As DesignSurface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignSurfaceEventArgs(System::ComponentModel::Design::DesignSurface ^ surface);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignSurfaceEventArgs : System.ComponentModel.Design.DesignSurface -&gt; System.ComponentModel.Design.DesignSurfaceEventArgs" Usage="new System.ComponentModel.Design.DesignSurfaceEventArgs surface" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceEventArgs.Surface" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Surface As DesignSurface" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignSurface ^ Surface { System::ComponentModel::Design::DesignSurface ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Surface : System.ComponentModel.Design.DesignSurface" Usage="System.ComponentModel.Design.DesignSurfaceEventArgs.Surface" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

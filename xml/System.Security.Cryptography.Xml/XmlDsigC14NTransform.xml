@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.XmlDsigC14NTransform" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDsigC14NTransform&#xA;Inherits Transform" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDsigC14NTransform : System::Security::Cryptography::Xml::Transform" />
+  <TypeSignature Language="F#" Value="type XmlDsigC14NTransform = class&#xA;    inherit Transform" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NTransform.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (includeComments As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigC14NTransform(bool includeComments);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.XmlDsigC14NTransform : bool -&gt; System.Security.Cryptography.Xml.XmlDsigC14NTransform" Usage="new System.Security.Cryptography.Xml.XmlDsigC14NTransform includeComments" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NTransform.GetDigestedOutput(System.Security.Cryptography.HashAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDigestedOutput (hash As HashAlgorithm) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetDigestedOutput(System::Security::Cryptography::HashAlgorithm ^ hash);" />
+      <MemberSignature Language="F#" Value="override this.GetDigestedOutput : System.Security.Cryptography.HashAlgorithm -&gt; byte[]" Usage="xmlDsigC14NTransform.GetDigestedOutput hash" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -171,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NTransform.GetInnerXml" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetInnerXml () As XmlNodeList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Xml::XmlNodeList ^ GetInnerXml();" />
+      <MemberSignature Language="F#" Value="override this.GetInnerXml : unit -&gt; System.Xml.XmlNodeList" Usage="xmlDsigC14NTransform.GetInnerXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NTransform.GetOutput" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOutput () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetOutput();" />
+      <MemberSignature Language="F#" Value="override this.GetOutput : unit -&gt; obj" Usage="xmlDsigC14NTransform.GetOutput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -245,6 +250,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetOutput(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NTransform.GetOutput(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetOutput(Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.GetOutput : Type -&gt; obj" Usage="xmlDsigC14NTransform.GetOutput type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -290,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.XmlDsigC14NTransform.InputTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property InputTypes As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;Type ^&gt; ^ InputTypes { cli::array &lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputTypes : Type[]" Usage="System.Security.Cryptography.Xml.XmlDsigC14NTransform.InputTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -330,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NTransform.LoadInnerXml(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadInnerXml (nodeList As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadInnerXml(System::Xml::XmlNodeList ^ nodeList);" />
+      <MemberSignature Language="F#" Value="override this.LoadInnerXml : System.Xml.XmlNodeList -&gt; unit" Usage="xmlDsigC14NTransform.LoadInnerXml nodeList" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -364,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NTransform.LoadInput(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadInput (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadInput(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.LoadInput : obj -&gt; unit" Usage="xmlDsigC14NTransform.LoadInput obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -408,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.XmlDsigC14NTransform.OutputTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OutputTypes As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;Type ^&gt; ^ OutputTypes { cli::array &lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputTypes : Type[]" Usage="System.Security.Cryptography.Xml.XmlDsigC14NTransform.OutputTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

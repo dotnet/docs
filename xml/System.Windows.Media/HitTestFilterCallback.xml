@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestFilterCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function HitTestFilterCallback(potentialHitTestTarget As DependencyObject) As HitTestFilterBehavior " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Windows::Media::HitTestFilterBehavior HitTestFilterCallback(DependencyObject ^ potentialHitTestTarget);" />
+  <TypeSignature Language="F#" Value="type HitTestFilterCallback = delegate of DependencyObject -&gt; HitTestFilterBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

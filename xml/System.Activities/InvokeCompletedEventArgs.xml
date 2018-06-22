@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.InvokeCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InvokeCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvokeCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type InvokeCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.InvokeCompletedEventArgs.Outputs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Outputs As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Outputs { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Outputs : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.InvokeCompletedEventArgs.Outputs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

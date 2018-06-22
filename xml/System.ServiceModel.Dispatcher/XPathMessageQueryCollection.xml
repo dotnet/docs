@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.XPathMessageQueryCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class XPathMessageQueryCollection&#xA;Inherits MessageQueryCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageQueryCollection : System::ServiceModel::Dispatcher::MessageQueryCollection" />
+  <TypeSignature Language="F#" Value="type XPathMessageQueryCollection = class&#xA;    inherit MessageQueryCollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.ServiceModel.Dispatcher.MessageQuery, !!TResult&gt;&gt; Evaluate&lt;TResult&gt;(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageQueryCollection.Evaluate``1(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; override System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TResult&gt;&gt; ^ Evaluate(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.ServiceModel.Channels.Message -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Result&gt;&gt;" Usage="xPathMessageQueryCollection.Evaluate message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageQueryCollection.Evaluate``1(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Evaluate(Of TResult) (buffer As MessageBuffer) As IEnumerable(Of KeyValuePair(Of MessageQuery, TResult))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; override System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TResult&gt;&gt; ^ Evaluate(System::ServiceModel::Channels::MessageBuffer ^ buffer);" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.ServiceModel.Channels.MessageBuffer -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Result&gt;&gt;" Usage="xPathMessageQueryCollection.Evaluate buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageQueryCollection.InsertItem(System.Int32,System.ServiceModel.Dispatcher.MessageQuery)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As MessageQuery)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ServiceModel::Dispatcher::MessageQuery ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.ServiceModel.Dispatcher.MessageQuery -&gt; unit" Usage="xPathMessageQueryCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageQueryCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="xPathMessageQueryCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageQueryCollection.SetItem(System.Int32,System.ServiceModel.Dispatcher.MessageQuery)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As MessageQuery)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ServiceModel::Dispatcher::MessageQuery ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.ServiceModel.Dispatcher.MessageQuery -&gt; unit" Usage="xPathMessageQueryCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteArgumentDictionaryEnumeratorContract&#xA;Implements IRemoteArgumentEnumeratorContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteArgumentDictionaryEnumeratorContract : System::AddIn::Contract::Collections::IRemoteArgumentEnumeratorContract" />
+  <TypeSignature Language="F#" Value="type IRemoteArgumentDictionaryEnumeratorContract = interface&#xA;    interface IRemoteArgumentEnumeratorContract&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract.GetEntry" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEntry () As RemoteArgumentDictionaryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::RemoteArgumentDictionaryEntry GetEntry();" />
+      <MemberSignature Language="F#" Value="abstract member GetEntry : unit -&gt; System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" Usage="iRemoteArgumentDictionaryEnumeratorContract.GetEntry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract.GetKey" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey () As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument GetKey();" />
+      <MemberSignature Language="F#" Value="abstract member GetKey : unit -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteArgumentDictionaryEnumeratorContract.GetKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract.GetValue" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue () As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument GetValue();" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : unit -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteArgumentDictionaryEnumeratorContract.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

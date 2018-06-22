@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ListViewVirtualItemsSelectionRangeChangedEventHandler(sender As Object, e As ListViewVirtualItemsSelectionRangeChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ListViewVirtualItemsSelectionRangeChangedEventHandler(System::Object ^ sender, ListViewVirtualItemsSelectionRangeChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ListViewVirtualItemsSelectionRangeChangedEventHandler = delegate of obj * ListViewVirtualItemsSelectionRangeChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

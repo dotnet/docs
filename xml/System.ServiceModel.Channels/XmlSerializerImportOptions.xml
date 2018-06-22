@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.XmlSerializerImportOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSerializerImportOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerImportOptions" />
+  <TypeSignature Language="F#" Value="type XmlSerializerImportOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeCompileUnit codeCompileUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.XmlSerializerImportOptions.#ctor(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerImportOptions(System::CodeDom::CodeCompileUnit ^ codeCompileUnit);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.XmlSerializerImportOptions : System.CodeDom.CodeCompileUnit -&gt; System.ServiceModel.Channels.XmlSerializerImportOptions" Usage="new System.ServiceModel.Channels.XmlSerializerImportOptions codeCompileUnit" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.XmlSerializerImportOptions.ClrNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property ClrNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClrNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClrNamespace : string with get, set" Usage="System.ServiceModel.Channels.XmlSerializerImportOptions.ClrNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.XmlSerializerImportOptions.CodeCompileUnit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeCompileUnit As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeCompileUnit ^ CodeCompileUnit { System::CodeDom::CodeCompileUnit ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeCompileUnit : System.CodeDom.CodeCompileUnit" Usage="System.ServiceModel.Channels.XmlSerializerImportOptions.CodeCompileUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.XmlSerializerImportOptions.CodeProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property CodeProvider As CodeDomProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::CodeDomProvider ^ CodeProvider { System::CodeDom::Compiler::CodeDomProvider ^ get(); void set(System::CodeDom::Compiler::CodeDomProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CodeProvider : System.CodeDom.Compiler.CodeDomProvider with get, set" Usage="System.ServiceModel.Channels.XmlSerializerImportOptions.CodeProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.XmlSerializerImportOptions.WebReferenceOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property WebReferenceOptions As WebReferenceOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::WebReferenceOptions ^ WebReferenceOptions { System::Web::Services::Description::WebReferenceOptions ^ get(); void set(System::Web::Services::Description::WebReferenceOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WebReferenceOptions : System.Web.Services.Description.WebReferenceOptions with get, set" Usage="System.ServiceModel.Channels.XmlSerializerImportOptions.WebReferenceOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

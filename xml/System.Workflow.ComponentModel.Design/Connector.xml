@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.Connector" />
   <TypeSignature Language="VB.NET" Value="Public Class Connector&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Connector : IDisposable" />
+  <TypeSignature Language="F#" Value="type Connector = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.#ctor(System.Workflow.ComponentModel.Design.ConnectionPoint,System.Workflow.ComponentModel.Design.ConnectionPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As ConnectionPoint, target As ConnectionPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Connector(System::Workflow::ComponentModel::Design::ConnectionPoint ^ source, System::Workflow::ComponentModel::Design::ConnectionPoint ^ target);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.Connector : System.Workflow.ComponentModel.Design.ConnectionPoint * System.Workflow.ComponentModel.Design.ConnectionPoint -&gt; System.Workflow.ComponentModel.Design.Connector" Usage="new System.Workflow.ComponentModel.Design.Connector (source, target)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.AccessibilityObject" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AccessibilityObject As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ AccessibilityObject { System::Windows::Forms::AccessibleObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessibilityObject : System.Windows.Forms.AccessibleObject" Usage="System.Workflow.ComponentModel.Design.Connector.AccessibilityObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Workflow.ComponentModel.Design.Connector.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ConnectorModified" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectorModified As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConnectorModified { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectorModified : bool" Usage="System.Workflow.ComponentModel.Design.Connector.ConnectorModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ConnectorSegments" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConnectorSegments As ReadOnlyCollection(Of Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Drawing::Point&gt; ^ ConnectorSegments { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Drawing::Point&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectorSegments : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Drawing.Point&gt;" Usage="System.Workflow.ComponentModel.Design.Connector.ConnectorSegments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="connector.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -183,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ExcludedRoutingRectangles" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property ExcludedRoutingRectangles As ICollection(Of Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::Generic::ICollection&lt;System::Drawing::Rectangle&gt; ^ ExcludedRoutingRectangles { System::Collections::Generic::ICollection&lt;System::Drawing::Rectangle&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExcludedRoutingRectangles : System.Collections.Generic.ICollection&lt;System.Drawing.Rectangle&gt;" Usage="System.Workflow.ComponentModel.Design.Connector.ExcludedRoutingRectangles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -203,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="connector.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -224,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="connector.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -254,6 +264,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HitTest(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.HitTest(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HitTest(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="abstract member HitTest : System.Drawing.Point -&gt; bool&#xA;override this.HitTest : System.Drawing.Point -&gt; bool" Usage="connector.HitTest point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -286,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : unit -&gt; unit" Usage="connector.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -312,6 +324,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Offset(valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.Offset(System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Offset(System::Drawing::Size size);" />
+      <MemberSignature Language="F#" Value="abstract member Offset : System.Drawing.Size -&gt; unit&#xA;override this.Offset : System.Drawing.Size -&gt; unit" Usage="connector.Offset size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -335,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.OnLayout(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnLayout (e As ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnLayout(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLayout : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit&#xA;override this.OnLayout : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit" Usage="connector.OnLayout e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -365,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnPaint (e As ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnPaint(System::Workflow::ComponentModel::Design::ActivityDesignerPaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPaint : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs -&gt; unit&#xA;override this.OnPaint : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs -&gt; unit" Usage="connector.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -388,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.OnPaintEdited(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs,System.Drawing.Point[],System.Drawing.Point[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnPaintEdited (e As ActivityDesignerPaintEventArgs, segments As Point(), segmentEditPoints As Point())" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnPaintEdited(System::Workflow::ComponentModel::Design::ActivityDesignerPaintEventArgs ^ e, cli::array &lt;System::Drawing::Point&gt; ^ segments, cli::array &lt;System::Drawing::Point&gt; ^ segmentEditPoints);" />
+      <MemberSignature Language="F#" Value="abstract member OnPaintEdited : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs * System.Drawing.Point[] * System.Drawing.Point[] -&gt; unit&#xA;override this.OnPaintEdited : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs * System.Drawing.Point[] * System.Drawing.Point[] -&gt; unit" Usage="connector.OnPaintEdited (e, segments, segmentEditPoints)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -422,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.OnPaintSelected(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs,System.Boolean,System.Drawing.Point[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnPaintSelected (e As ActivityDesignerPaintEventArgs, primarySelection As Boolean, segmentEditPoints As Point())" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnPaintSelected(System::Workflow::ComponentModel::Design::ActivityDesignerPaintEventArgs ^ e, bool primarySelection, cli::array &lt;System::Drawing::Point&gt; ^ segmentEditPoints);" />
+      <MemberSignature Language="F#" Value="abstract member OnPaintSelected : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs * bool * System.Drawing.Point[] -&gt; unit&#xA;override this.OnPaintSelected : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs * bool * System.Drawing.Point[] -&gt; unit" Usage="connector.OnPaintSelected (e, primarySelection, segmentEditPoints)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -449,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ParentDesigner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentDesigner As FreeformActivityDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::FreeformActivityDesigner ^ ParentDesigner { System::Workflow::ComponentModel::Design::FreeformActivityDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentDesigner : System.Workflow.ComponentModel.Design.FreeformActivityDesigner" Usage="System.Workflow.ComponentModel.Design.Connector.ParentDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -469,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ParentView" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ParentView As WorkflowView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::ComponentModel::Design::WorkflowView ^ ParentView { System::Workflow::ComponentModel::Design::WorkflowView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentView : System.Workflow.ComponentModel.Design.WorkflowView" Usage="System.Workflow.ComponentModel.Design.Connector.ParentView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -496,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.PerformLayout" />
       <MemberSignature Language="VB.NET" Value="Protected Sub PerformLayout ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void PerformLayout();" />
+      <MemberSignature Language="F#" Value="member this.PerformLayout : unit -&gt; unit" Usage="connector.PerformLayout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -523,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.SetConnectorSegments(System.Collections.Generic.ICollection{System.Drawing.Point})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub SetConnectorSegments (segments As ICollection(Of Point))" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void SetConnectorSegments(System::Collections::Generic::ICollection&lt;System::Drawing::Point&gt; ^ segments);" />
+      <MemberSignature Language="F#" Value="member this.SetConnectorSegments : System.Collections.Generic.ICollection&lt;System.Drawing.Point&gt; -&gt; unit" Usage="connector.SetConnectorSegments segments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -546,6 +567,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As ConnectionPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::ConnectionPoint ^ Source { System::Workflow::ComponentModel::Design::ConnectionPoint ^ get(); void set(System::Workflow::ComponentModel::Design::ConnectionPoint ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : System.Workflow.ComponentModel.Design.ConnectionPoint with get, set" Usage="System.Workflow.ComponentModel.Design.Connector.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -597,6 +619,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As ConnectionPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::ConnectionPoint ^ Target { System::Workflow::ComponentModel::Design::ConnectionPoint ^ get(); void set(System::Workflow::ComponentModel::Design::ConnectionPoint ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Workflow.ComponentModel.Design.ConnectionPoint with get, set" Usage="System.Workflow.ComponentModel.Design.Connector.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

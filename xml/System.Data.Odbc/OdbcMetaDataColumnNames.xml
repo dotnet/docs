@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcMetaDataColumnNames" />
   <TypeSignature Language="VB.NET" Value="Public Class OdbcMetaDataColumnNames" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcMetaDataColumnNames abstract sealed" />
+  <TypeSignature Language="F#" Value="type OdbcMetaDataColumnNames = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataColumnNames.BooleanFalseLiteral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BooleanFalseLiteral As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BooleanFalseLiteral;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BooleanFalseLiteral : string" Usage="System.Data.Odbc.OdbcMetaDataColumnNames.BooleanFalseLiteral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataColumnNames.BooleanTrueLiteral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BooleanTrueLiteral As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BooleanTrueLiteral;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BooleanTrueLiteral : string" Usage="System.Data.Odbc.OdbcMetaDataColumnNames.BooleanTrueLiteral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataColumnNames.SQLType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SQLType As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SQLType;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SQLType : string" Usage="System.Data.Odbc.OdbcMetaDataColumnNames.SQLType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

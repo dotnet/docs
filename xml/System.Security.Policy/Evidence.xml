@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.Evidence" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Evidence&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class Evidence sealed : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type Evidence = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -105,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.#ctor(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Evidence(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.Evidence : System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence" Usage="new System.Security.Policy.Evidence evidence" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.#ctor(System.Object[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hostEvidence As Object(), assemblyEvidence As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Evidence(cli::array &lt;System::Object ^&gt; ^ hostEvidence, cli::array &lt;System::Object ^&gt; ^ assemblyEvidence);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.Evidence : obj[] * obj[] -&gt; System.Security.Policy.Evidence" Usage="new System.Security.Policy.Evidence (hostEvidence, assemblyEvidence)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -185,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.#ctor(System.Security.Policy.EvidenceBase[],System.Security.Policy.EvidenceBase[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hostEvidence As EvidenceBase(), assemblyEvidence As EvidenceBase())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Evidence(cli::array &lt;System::Security::Policy::EvidenceBase ^&gt; ^ hostEvidence, cli::array &lt;System::Security::Policy::EvidenceBase ^&gt; ^ assemblyEvidence);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.Evidence : System.Security.Policy.EvidenceBase[] * System.Security.Policy.EvidenceBase[] -&gt; System.Security.Policy.Evidence" Usage="new System.Security.Policy.Evidence (hostEvidence, assemblyEvidence)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.AddAssembly(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAssembly (id As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAssembly(System::Object ^ id);" />
+      <MemberSignature Language="F#" Value="member this.AddAssembly : obj -&gt; unit" Usage="evidence.AddAssembly id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -274,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.AddAssemblyEvidence``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAssemblyEvidence(Of T As EvidenceBase) (evidence As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Security::Policy::EvidenceBase void AddAssemblyEvidence(T evidence);" />
+      <MemberSignature Language="F#" Value="member this.AddAssemblyEvidence : 'T -&gt; unit (requires 'T :&gt; System.Security.Policy.EvidenceBase)" Usage="evidence.AddAssemblyEvidence evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -326,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.AddHost(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHost (id As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHost(System::Object ^ id);" />
+      <MemberSignature Language="F#" Value="member this.AddHost : obj -&gt; unit" Usage="evidence.AddHost id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -383,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.AddHostEvidence``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHostEvidence(Of T As EvidenceBase) (evidence As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Security::Policy::EvidenceBase void AddHostEvidence(T evidence);" />
+      <MemberSignature Language="F#" Value="member this.AddHostEvidence : 'T -&gt; unit (requires 'T :&gt; System.Security.Policy.EvidenceBase)" Usage="evidence.AddHostEvidence evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -433,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="evidence.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -480,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::Evidence ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Security.Policy.Evidence" Usage="evidence.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -517,6 +527,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="evidence.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -570,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Policy.Evidence.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -614,6 +626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetAssemblyEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssemblyEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetAssemblyEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetAssemblyEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="evidence.GetAssemblyEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -651,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetAssemblyEvidence``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssemblyEvidence(Of T As EvidenceBase) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Security::Policy::EvidenceBase T GetAssemblyEvidence();" />
+      <MemberSignature Language="F#" Value="member this.GetAssemblyEvidence : unit -&gt; 'T (requires 'T :&gt; System.Security.Policy.EvidenceBase)" Usage="evidence.GetAssemblyEvidence " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -696,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="evidence.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -741,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetHostEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHostEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetHostEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetHostEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="evidence.GetHostEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -778,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetHostEvidence``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHostEvidence(Of T As EvidenceBase) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Security::Policy::EvidenceBase T GetHostEvidence();" />
+      <MemberSignature Language="F#" Value="member this.GetHostEvidence : unit -&gt; 'T (requires 'T :&gt; System.Security.Policy.EvidenceBase)" Usage="evidence.GetHostEvidence " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -823,6 +840,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Security.Policy.Evidence.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -855,6 +873,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Security.Policy.Evidence.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -890,6 +909,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool with get, set" Usage="System.Security.Policy.Evidence.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -927,6 +947,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Merge(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.Merge(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Merge(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="member this.Merge : System.Security.Policy.Evidence -&gt; unit" Usage="evidence.Merge evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -978,6 +999,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.RemoveType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveType (t As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveType(Type ^ t);" />
+      <MemberSignature Language="F#" Value="member this.RemoveType : Type -&gt; unit" Usage="evidence.RemoveType t" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1030,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Security.Policy.Evidence.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

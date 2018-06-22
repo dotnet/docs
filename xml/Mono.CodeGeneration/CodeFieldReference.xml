@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeFieldReference" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeFieldReference&#xA;Inherits CodeValueReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeFieldReference : Mono::CodeGeneration::CodeValueReference" />
+  <TypeSignature Language="F#" Value="type CodeFieldReference = class&#xA;    inherit CodeValueReference" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.#ctor(System.Reflection.FieldInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (field As FieldInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeFieldReference(System::Reflection::FieldInfo ^ field);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeFieldReference : System.Reflection.FieldInfo -&gt; Mono.CodeGeneration.CodeFieldReference" Usage="new Mono.CodeGeneration.CodeFieldReference field" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.#ctor(Mono.CodeGeneration.CodeExpression,System.Reflection.FieldInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As CodeExpression, field As FieldInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeFieldReference(Mono::CodeGeneration::CodeExpression ^ target, System::Reflection::FieldInfo ^ field);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeFieldReference : Mono.CodeGeneration.CodeExpression * System.Reflection.FieldInfo -&gt; Mono.CodeGeneration.CodeFieldReference" Usage="new Mono.CodeGeneration.CodeFieldReference (target, field)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeFieldReference.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.GenerateSet(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateSet (gen As ILGenerator, value As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateSet(System::Reflection::Emit::ILGenerator ^ gen, Mono::CodeGeneration::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="override this.GenerateSet : System.Reflection.Emit.ILGenerator * Mono.CodeGeneration.CodeExpression -&gt; unit" Usage="codeFieldReference.GenerateSet (gen, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeFieldReference.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFieldReference.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeFieldReference.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

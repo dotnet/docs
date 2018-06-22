@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.IEqualityComparer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEqualityComparer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEqualityComparer" />
+  <TypeSignature Language="F#" Value="type IEqualityComparer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (x As Object, y As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ x, System::Object ^ y);" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj * obj -&gt; bool" Usage="iEqualityComparer.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : obj -&gt; int" Usage="iEqualityComparer.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

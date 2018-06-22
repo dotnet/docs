@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.WinHttpHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class WinHttpHandler&#xA;Inherits HttpMessageHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class WinHttpHandler : System::Net::Http::HttpMessageHandler" />
+  <TypeSignature Language="F#" Value="type WinHttpHandler = class&#xA;    inherit HttpMessageHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.AutomaticDecompression" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticDecompression As DecompressionMethods" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::DecompressionMethods AutomaticDecompression { System::Net::DecompressionMethods get(); void set(System::Net::DecompressionMethods value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticDecompression : System.Net.DecompressionMethods with get, set" Usage="System.Net.Http.WinHttpHandler.AutomaticDecompression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.AutomaticRedirection" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticRedirection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticRedirection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticRedirection : bool with get, set" Usage="System.Net.Http.WinHttpHandler.AutomaticRedirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckCertificateRevocationList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckCertificateRevocationList { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckCertificateRevocationList : bool with get, set" Usage="System.Net.Http.WinHttpHandler.CheckCertificateRevocationList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.ClientCertificateOption" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCertificateOption As ClientCertificateOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::ClientCertificateOption ClientCertificateOption { System::Net::Http::ClientCertificateOption get(); void set(System::Net::Http::ClientCertificateOption value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificateOption : System.Net.Http.ClientCertificateOption with get, set" Usage="System.Net.Http.WinHttpHandler.ClientCertificateOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.ClientCertificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificates As X509Certificate2Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificates : System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.Net.Http.WinHttpHandler.ClientCertificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.CookieContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieContainer As CookieContainer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::CookieContainer ^ CookieContainer { System::Net::CookieContainer ^ get(); void set(System::Net::CookieContainer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieContainer : System.Net.CookieContainer with get, set" Usage="System.Net.Http.WinHttpHandler.CookieContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -240,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.CookieUsePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieUsePolicy As CookieUsePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::CookieUsePolicy CookieUsePolicy { System::Net::Http::CookieUsePolicy get(); void set(System::Net::Http::CookieUsePolicy value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieUsePolicy : System.Net.Http.CookieUsePolicy with get, set" Usage="System.Net.Http.WinHttpHandler.CookieUsePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.DefaultProxyCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProxyCredentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ DefaultProxyCredentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProxyCredentials : System.Net.ICredentials with get, set" Usage="System.Net.Http.WinHttpHandler.DefaultProxyCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -312,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.WinHttpHandler.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="winHttpHandler.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -338,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.MaxAutomaticRedirections" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxAutomaticRedirections As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxAutomaticRedirections { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxAutomaticRedirections : int with get, set" Usage="System.Net.Http.WinHttpHandler.MaxAutomaticRedirections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -368,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.MaxConnectionsPerServer" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConnectionsPerServer As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConnectionsPerServer { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConnectionsPerServer : int with get, set" Usage="System.Net.Http.WinHttpHandler.MaxConnectionsPerServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -398,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.MaxResponseDrainSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxResponseDrainSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResponseDrainSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseDrainSize : int with get, set" Usage="System.Net.Http.WinHttpHandler.MaxResponseDrainSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -428,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.MaxResponseHeadersLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxResponseHeadersLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResponseHeadersLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseHeadersLength : int with get, set" Usage="System.Net.Http.WinHttpHandler.MaxResponseHeadersLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -458,6 +472,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.PreAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public Property PreAuthenticate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreAuthenticate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreAuthenticate : bool with get, set" Usage="System.Net.Http.WinHttpHandler.PreAuthenticate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -488,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Net.Http.WinHttpHandler.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -511,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.Proxy" />
       <MemberSignature Language="VB.NET" Value="Public Property Proxy As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.Net.Http.WinHttpHandler.Proxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -541,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.ReceiveDataTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveDataTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReceiveDataTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveDataTimeout : TimeSpan with get, set" Usage="System.Net.Http.WinHttpHandler.ReceiveDataTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -571,6 +589,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.ReceiveHeadersTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveHeadersTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReceiveHeadersTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveHeadersTimeout : TimeSpan with get, set" Usage="System.Net.Http.WinHttpHandler.ReceiveHeadersTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -600,6 +619,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Net.Http.HttpResponseMessage&gt; SendAsync(class System.Net.Http.HttpRequestMessage request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.WinHttpHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Threading::Tasks::Task&lt;System::Net::Http::HttpResponseMessage ^&gt; ^ SendAsync(System::Net::Http::HttpRequestMessage ^ request, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;" Usage="winHttpHandler.SendAsync (request, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -629,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.SendTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property SendTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SendTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.SendTimeout : TimeSpan with get, set" Usage="System.Net.Http.WinHttpHandler.SendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -659,6 +680,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.ServerCertificateValidationCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerCertificateValidationCallback As Func(Of HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Net::Http::HttpRequestMessage ^, System::Security::Cryptography::X509Certificates::X509Certificate2 ^, System::Security::Cryptography::X509Certificates::X509Chain ^, System::Net::Security::SslPolicyErrors, bool&gt; ^ ServerCertificateValidationCallback { Func&lt;System::Net::Http::HttpRequestMessage ^, System::Security::Cryptography::X509Certificates::X509Certificate2 ^, System::Security::Cryptography::X509Certificates::X509Chain ^, System::Net::Security::SslPolicyErrors, bool&gt; ^ get(); void set(Func&lt;System::Net::Http::HttpRequestMessage ^, System::Security::Cryptography::X509Certificates::X509Certificate2 ^, System::Security::Cryptography::X509Certificates::X509Chain ^, System::Net::Security::SslPolicyErrors, bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerCertificateValidationCallback : Func&lt;System.Net.Http.HttpRequestMessage, System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography.X509Certificates.X509Chain, System.Net.Security.SslPolicyErrors, bool&gt; with get, set" Usage="System.Net.Http.WinHttpHandler.ServerCertificateValidationCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -689,6 +711,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.ServerCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerCredentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ ServerCredentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerCredentials : System.Net.ICredentials with get, set" Usage="System.Net.Http.WinHttpHandler.ServerCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -719,6 +742,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.SslProtocols" />
       <MemberSignature Language="VB.NET" Value="Public Property SslProtocols As SslProtocols" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::SslProtocols SslProtocols { System::Security::Authentication::SslProtocols get(); void set(System::Security::Authentication::SslProtocols value); };" />
+      <MemberSignature Language="F#" Value="member this.SslProtocols : System.Security.Authentication.SslProtocols with get, set" Usage="System.Net.Http.WinHttpHandler.SslProtocols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -749,6 +773,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WinHttpHandler.WindowsProxyUsePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowsProxyUsePolicy As WindowsProxyUsePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::WindowsProxyUsePolicy WindowsProxyUsePolicy { System::Net::Http::WindowsProxyUsePolicy get(); void set(System::Net::Http::WindowsProxyUsePolicy value); };" />
+      <MemberSignature Language="F#" Value="member this.WindowsProxyUsePolicy : System.Net.Http.WindowsProxyUsePolicy with get, set" Usage="System.Net.Http.WinHttpHandler.WindowsProxyUsePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>

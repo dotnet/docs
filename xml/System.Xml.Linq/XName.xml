@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XName" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XName&#xA;Implements IEquatable(Of XName), ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class XName sealed : IEquatable&lt;System::Xml::Linq::XName ^&gt;, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type XName = class&#xA;    interface IEquatable&lt;XName&gt;&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -165,6 +166,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="xName.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -235,6 +237,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Get (expandedName As String) As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XName ^ Get(System::String ^ expandedName);" />
+      <MemberSignature Language="F#" Value="static member Get : string -&gt; System.Xml.Linq.XName" Usage="System.Xml.Linq.XName.Get expandedName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -323,6 +326,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.Get(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Get (localName As String, namespaceName As String) As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XName ^ Get(System::String ^ localName, System::String ^ namespaceName);" />
+      <MemberSignature Language="F#" Value="static member Get : string * string -&gt; System.Xml.Linq.XName" Usage="System.Xml.Linq.XName.Get (localName, namespaceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -412,6 +416,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="xName.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -452,6 +457,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XName.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.Linq.XName.LocalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -526,6 +532,7 @@ http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XName.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As XNamespace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XNamespace ^ Namespace { System::Xml::Linq::XNamespace ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : System.Xml.Linq.XNamespace" Usage="System.Xml.Linq.XName.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -599,6 +606,7 @@ http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XName.NamespaceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="System.Xml.Linq.XName.NamespaceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -666,6 +674,7 @@ http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.op_Equality(System.Xml.Linq.XName,System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As XName, right As XName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Xml::Linq::XName ^ left, System::Xml::Linq::XName ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Xml.Linq.XName * System.Xml.Linq.XName -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -747,6 +756,7 @@ True
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.op_Implicit(System.String)~System.Xml.Linq.XName" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (expandedName As String) As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Xml::Linq::XName ^(System::String ^ expandedName);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; System.Xml.Linq.XName" Usage="System.Xml.Linq.XName.op_Implicit expandedName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -832,6 +842,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.op_Inequality(System.Xml.Linq.XName,System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As XName, right As XName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Xml::Linq::XName ^ left, System::Xml::Linq::XName ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Xml.Linq.XName * System.Xml.Linq.XName -&gt; bool" Usage="System.Xml.Linq.XName.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -997,6 +1008,7 @@ False
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xName.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

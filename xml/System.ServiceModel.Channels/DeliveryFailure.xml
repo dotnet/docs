@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.DeliveryFailure" />
   <TypeSignature Language="VB.NET" Value="Public Enum DeliveryFailure" />
   <TypeSignature Language="C++ CLI" Value="public enum class DeliveryFailure" />
+  <TypeSignature Language="F#" Value="type DeliveryFailure = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.AccessDenied" />
       <MemberSignature Language="VB.NET" Value="AccessDenied" />
       <MemberSignature Language="C++ CLI" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = 32772" Usage="System.ServiceModel.Channels.DeliveryFailure.AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.BadDestinationQueue" />
       <MemberSignature Language="VB.NET" Value="BadDestinationQueue" />
       <MemberSignature Language="C++ CLI" Value="BadDestinationQueue" />
+      <MemberSignature Language="F#" Value="BadDestinationQueue = 32768" Usage="System.ServiceModel.Channels.DeliveryFailure.BadDestinationQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.BadEncryption" />
       <MemberSignature Language="VB.NET" Value="BadEncryption" />
       <MemberSignature Language="C++ CLI" Value="BadEncryption" />
+      <MemberSignature Language="F#" Value="BadEncryption = 32775" Usage="System.ServiceModel.Channels.DeliveryFailure.BadEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.BadSignature" />
       <MemberSignature Language="VB.NET" Value="BadSignature" />
       <MemberSignature Language="C++ CLI" Value="BadSignature" />
+      <MemberSignature Language="F#" Value="BadSignature = 32774" Usage="System.ServiceModel.Channels.DeliveryFailure.BadSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.CouldNotEncrypt" />
       <MemberSignature Language="VB.NET" Value="CouldNotEncrypt" />
       <MemberSignature Language="C++ CLI" Value="CouldNotEncrypt" />
+      <MemberSignature Language="F#" Value="CouldNotEncrypt = 32776" Usage="System.ServiceModel.Channels.DeliveryFailure.CouldNotEncrypt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.HopCountExceeded" />
       <MemberSignature Language="VB.NET" Value="HopCountExceeded" />
       <MemberSignature Language="C++ CLI" Value="HopCountExceeded" />
+      <MemberSignature Language="F#" Value="HopCountExceeded = 32773" Usage="System.ServiceModel.Channels.DeliveryFailure.HopCountExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.NotTransactionalMessage" />
       <MemberSignature Language="VB.NET" Value="NotTransactionalMessage" />
       <MemberSignature Language="C++ CLI" Value="NotTransactionalMessage" />
+      <MemberSignature Language="F#" Value="NotTransactionalMessage = 32778" Usage="System.ServiceModel.Channels.DeliveryFailure.NotTransactionalMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.NotTransactionalQueue" />
       <MemberSignature Language="VB.NET" Value="NotTransactionalQueue" />
       <MemberSignature Language="C++ CLI" Value="NotTransactionalQueue" />
+      <MemberSignature Language="F#" Value="NotTransactionalQueue = 32777" Usage="System.ServiceModel.Channels.DeliveryFailure.NotTransactionalQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -189,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.Purged" />
       <MemberSignature Language="VB.NET" Value="Purged" />
       <MemberSignature Language="C++ CLI" Value="Purged" />
+      <MemberSignature Language="F#" Value="Purged = 32769" Usage="System.ServiceModel.Channels.DeliveryFailure.Purged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -208,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.QueueDeleted" />
       <MemberSignature Language="VB.NET" Value="QueueDeleted" />
       <MemberSignature Language="C++ CLI" Value="QueueDeleted" />
+      <MemberSignature Language="F#" Value="QueueDeleted = 49152" Usage="System.ServiceModel.Channels.DeliveryFailure.QueueDeleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -227,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.QueueExceedMaximumSize" />
       <MemberSignature Language="VB.NET" Value="QueueExceedMaximumSize" />
       <MemberSignature Language="C++ CLI" Value="QueueExceedMaximumSize" />
+      <MemberSignature Language="F#" Value="QueueExceedMaximumSize = 32771" Usage="System.ServiceModel.Channels.DeliveryFailure.QueueExceedMaximumSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -246,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.QueuePurged" />
       <MemberSignature Language="VB.NET" Value="QueuePurged" />
       <MemberSignature Language="C++ CLI" Value="QueuePurged" />
+      <MemberSignature Language="F#" Value="QueuePurged = 49153" Usage="System.ServiceModel.Channels.DeliveryFailure.QueuePurged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -265,6 +278,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.ReachQueueTimeout" />
       <MemberSignature Language="VB.NET" Value="ReachQueueTimeout" />
       <MemberSignature Language="C++ CLI" Value="ReachQueueTimeout" />
+      <MemberSignature Language="F#" Value="ReachQueueTimeout = 32770" Usage="System.ServiceModel.Channels.DeliveryFailure.ReachQueueTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -284,6 +298,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.ReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value="ReceiveTimeout" />
       <MemberSignature Language="C++ CLI" Value="ReceiveTimeout" />
+      <MemberSignature Language="F#" Value="ReceiveTimeout = 49154" Usage="System.ServiceModel.Channels.DeliveryFailure.ReceiveTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -303,6 +318,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.ServiceModel.Channels.DeliveryFailure.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

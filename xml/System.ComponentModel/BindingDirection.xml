@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindingDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum BindingDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class BindingDirection" />
+  <TypeSignature Language="F#" Value="type BindingDirection = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindingDirection.OneWay" />
       <MemberSignature Language="VB.NET" Value="OneWay" />
       <MemberSignature Language="C++ CLI" Value="OneWay" />
+      <MemberSignature Language="F#" Value="OneWay = 0" Usage="System.ComponentModel.BindingDirection.OneWay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindingDirection.TwoWay" />
       <MemberSignature Language="VB.NET" Value="TwoWay" />
       <MemberSignature Language="C++ CLI" Value="TwoWay" />
+      <MemberSignature Language="F#" Value="TwoWay = 1" Usage="System.ComponentModel.BindingDirection.TwoWay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

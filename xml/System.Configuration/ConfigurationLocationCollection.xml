@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationLocationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationLocationCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationLocationCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ConfigurationLocationCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationLocationCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ConfigurationLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationLocation ^ default[int] { System::Configuration::ConfigurationLocation ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Configuration.ConfigurationLocation" Usage="System.Configuration.ConfigurationLocationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

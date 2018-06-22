@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkElementFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class FrameworkElementFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkElementFactory" />
+  <TypeSignature Language="F#" Value="type FrameworkElementFactory = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkElementFactory(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkElementFactory : string -&gt; System.Windows.FrameworkElementFactory" Usage="new System.Windows.FrameworkElementFactory text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkElementFactory(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkElementFactory : Type -&gt; System.Windows.FrameworkElementFactory" Usage="new System.Windows.FrameworkElementFactory type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.#ctor(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkElementFactory(Type ^ type, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkElementFactory : Type * string -&gt; System.Windows.FrameworkElementFactory" Usage="new System.Windows.FrameworkElementFactory (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddHandler(class System.Windows.RoutedEvent routedEvent, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.AddHandler(System.Windows.RoutedEvent,System.Delegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHandler(System::Windows::RoutedEvent ^ routedEvent, Delegate ^ handler);" />
+      <MemberSignature Language="F#" Value="member this.AddHandler : System.Windows.RoutedEvent * Delegate -&gt; unit" Usage="frameworkElementFactory.AddHandler (routedEvent, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddHandler(class System.Windows.RoutedEvent routedEvent, class System.Delegate handler, bool handledEventsToo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.AddHandler(System.Windows.RoutedEvent,System.Delegate,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHandler(System::Windows::RoutedEvent ^ routedEvent, Delegate ^ handler, bool handledEventsToo);" />
+      <MemberSignature Language="F#" Value="member this.AddHandler : System.Windows.RoutedEvent * Delegate * bool -&gt; unit" Usage="frameworkElementFactory.AddHandler (routedEvent, handler, handledEventsToo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.AppendChild(System.Windows.FrameworkElementFactory)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendChild (child As FrameworkElementFactory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendChild(System::Windows::FrameworkElementFactory ^ child);" />
+      <MemberSignature Language="F#" Value="member this.AppendChild : System.Windows.FrameworkElementFactory -&gt; unit" Usage="frameworkElementFactory.AppendChild child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkElementFactory.FirstChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstChild As FrameworkElementFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FrameworkElementFactory ^ FirstChild { System::Windows::FrameworkElementFactory ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstChild : System.Windows.FrameworkElementFactory" Usage="System.Windows.FrameworkElementFactory.FirstChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -223,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkElementFactory.IsSealed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Windows.FrameworkElementFactory.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkElementFactory.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.FrameworkElementFactory.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkElementFactory.NextSibling" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSibling As FrameworkElementFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FrameworkElementFactory ^ NextSibling { System::Windows::FrameworkElementFactory ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextSibling : System.Windows.FrameworkElementFactory" Usage="System.Windows.FrameworkElementFactory.NextSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -284,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkElementFactory.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As FrameworkElementFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FrameworkElementFactory ^ Parent { System::Windows::FrameworkElementFactory ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.FrameworkElementFactory" Usage="System.Windows.FrameworkElementFactory.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveHandler(class System.Windows.RoutedEvent routedEvent, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.RemoveHandler(System.Windows.RoutedEvent,System.Delegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveHandler(System::Windows::RoutedEvent ^ routedEvent, Delegate ^ handler);" />
+      <MemberSignature Language="F#" Value="member this.RemoveHandler : System.Windows.RoutedEvent * Delegate -&gt; unit" Usage="frameworkElementFactory.RemoveHandler (routedEvent, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -328,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.SetBinding(System.Windows.DependencyProperty,System.Windows.Data.BindingBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBinding (dp As DependencyProperty, binding As BindingBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBinding(System::Windows::DependencyProperty ^ dp, System::Windows::Data::BindingBase ^ binding);" />
+      <MemberSignature Language="F#" Value="member this.SetBinding : System.Windows.DependencyProperty * System.Windows.Data.BindingBase -&gt; unit" Usage="frameworkElementFactory.SetBinding (dp, binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -353,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.SetResourceReference(System.Windows.DependencyProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResourceReference (dp As DependencyProperty, name As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResourceReference(System::Windows::DependencyProperty ^ dp, System::Object ^ name);" />
+      <MemberSignature Language="F#" Value="member this.SetResourceReference : System.Windows.DependencyProperty * obj -&gt; unit" Usage="frameworkElementFactory.SetResourceReference (dp, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -378,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkElementFactory.SetValue(System.Windows.DependencyProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (dp As DependencyProperty, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Windows::DependencyProperty ^ dp, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : System.Windows.DependencyProperty * obj -&gt; unit" Usage="frameworkElementFactory.SetValue (dp, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -403,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkElementFactory.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.FrameworkElementFactory.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -423,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkElementFactory.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Windows.FrameworkElementFactory.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

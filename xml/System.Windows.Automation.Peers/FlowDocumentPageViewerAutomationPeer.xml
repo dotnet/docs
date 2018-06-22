@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class FlowDocumentPageViewerAutomationPeer&#xA;Inherits DocumentViewerBaseAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlowDocumentPageViewerAutomationPeer : System::Windows::Automation::Peers::DocumentViewerBaseAutomationPeer" />
+  <TypeSignature Language="F#" Value="type FlowDocumentPageViewerAutomationPeer = class&#xA;    inherit DocumentViewerBaseAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer.#ctor(System.Windows.Controls.FlowDocumentPageViewer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As FlowDocumentPageViewer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlowDocumentPageViewerAutomationPeer(System::Windows::Controls::FlowDocumentPageViewer ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer : System.Windows.Controls.FlowDocumentPageViewer -&gt; System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer" Usage="new System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="flowDocumentPageViewerAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="flowDocumentPageViewerAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.ConstructionCall" />
   <TypeSignature Language="VB.NET" Value="Public Class ConstructionCall&#xA;Inherits MethodCall&#xA;Implements IConstructionCallMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConstructionCall : System::Runtime::Remoting::Messaging::MethodCall, System::Runtime::Remoting::Activation::IConstructionCallMessage" />
+  <TypeSignature Language="F#" Value="type ConstructionCall = class&#xA;    inherit MethodCall&#xA;    interface IConstructionCallMessage&#xA;    interface IMessage&#xA;    interface IMethodCallMessage&#xA;    interface IMethodMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.ConstructionCall.#ctor(System.Runtime.Remoting.Messaging.Header[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (headers As Header())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstructionCall(cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ headers);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Messaging.ConstructionCall : System.Runtime.Remoting.Messaging.Header[] -&gt; System.Runtime.Remoting.Messaging.ConstructionCall" Usage="new System.Runtime.Remoting.Messaging.ConstructionCall headers" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.ConstructionCall.#ctor(System.Runtime.Remoting.Messaging.IMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As IMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstructionCall(System::Runtime::Remoting::Messaging::IMessage ^ m);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Messaging.ConstructionCall : System.Runtime.Remoting.Messaging.IMessage -&gt; System.Runtime.Remoting.Messaging.ConstructionCall" Usage="new System.Runtime.Remoting.Messaging.ConstructionCall m" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.ConstructionCall.ActivationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ActivationType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivationType : Type" Usage="System.Runtime.Remoting.Messaging.ConstructionCall.ActivationType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Activation.IConstructionCallMessage.ActivationType</InterfaceMember>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.ConstructionCall.ActivationTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivationTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivationTypeName : string" Usage="System.Runtime.Remoting.Messaging.ConstructionCall.ActivationTypeName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Activation.IConstructionCallMessage.ActivationTypeName</InterfaceMember>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.ConstructionCall.Activator" />
       <MemberSignature Language="VB.NET" Value="Public Property Activator As IActivator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Activation::IActivator ^ Activator { System::Runtime::Remoting::Activation::IActivator ^ get(); void set(System::Runtime::Remoting::Activation::IActivator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Activator : System.Runtime.Remoting.Activation.IActivator with get, set" Usage="System.Runtime.Remoting.Messaging.ConstructionCall.Activator" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Activation.IConstructionCallMessage.Activator</InterfaceMember>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.ConstructionCall.CallSiteActivationAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallSiteActivationAttributes As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ CallSiteActivationAttributes { cli::array &lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallSiteActivationAttributes : obj[]" Usage="System.Runtime.Remoting.Messaging.ConstructionCall.CallSiteActivationAttributes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Activation.IConstructionCallMessage.CallSiteActivationAttributes</InterfaceMember>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.ConstructionCall.ContextProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextProperties As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ ContextProperties { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextProperties : System.Collections.IList" Usage="System.Runtime.Remoting.Messaging.ConstructionCall.ContextProperties" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Activation.IConstructionCallMessage.ContextProperties</InterfaceMember>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.ConstructionCall.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="constructionCall.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.ConstructionCall.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Runtime.Remoting.Messaging.ConstructionCall.Properties" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMessage.Properties</InterfaceMember>

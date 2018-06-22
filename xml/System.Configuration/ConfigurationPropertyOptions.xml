@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationPropertyOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationPropertyOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationPropertyOptions" />
+  <TypeSignature Language="F#" Value="type ConfigurationPropertyOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationPropertyOptions.IsAssemblyStringTransformationRequired" />
       <MemberSignature Language="VB.NET" Value="IsAssemblyStringTransformationRequired" />
       <MemberSignature Language="C++ CLI" Value="IsAssemblyStringTransformationRequired" />
+      <MemberSignature Language="F#" Value="IsAssemblyStringTransformationRequired = 16" Usage="System.Configuration.ConfigurationPropertyOptions.IsAssemblyStringTransformationRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection" />
       <MemberSignature Language="VB.NET" Value="IsDefaultCollection" />
       <MemberSignature Language="C++ CLI" Value="IsDefaultCollection" />
+      <MemberSignature Language="F#" Value="IsDefaultCollection = 1" Usage="System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationPropertyOptions.IsKey" />
       <MemberSignature Language="VB.NET" Value="IsKey" />
       <MemberSignature Language="C++ CLI" Value="IsKey" />
+      <MemberSignature Language="F#" Value="IsKey = 4" Usage="System.Configuration.ConfigurationPropertyOptions.IsKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationPropertyOptions.IsRequired" />
       <MemberSignature Language="VB.NET" Value="IsRequired" />
       <MemberSignature Language="C++ CLI" Value="IsRequired" />
+      <MemberSignature Language="F#" Value="IsRequired = 2" Usage="System.Configuration.ConfigurationPropertyOptions.IsRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationPropertyOptions.IsTypeStringTransformationRequired" />
       <MemberSignature Language="VB.NET" Value="IsTypeStringTransformationRequired" />
       <MemberSignature Language="C++ CLI" Value="IsTypeStringTransformationRequired" />
+      <MemberSignature Language="F#" Value="IsTypeStringTransformationRequired = 8" Usage="System.Configuration.ConfigurationPropertyOptions.IsTypeStringTransformationRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationPropertyOptions.IsVersionCheckRequired" />
       <MemberSignature Language="VB.NET" Value="IsVersionCheckRequired" />
       <MemberSignature Language="C++ CLI" Value="IsVersionCheckRequired" />
+      <MemberSignature Language="F#" Value="IsVersionCheckRequired = 32" Usage="System.Configuration.ConfigurationPropertyOptions.IsVersionCheckRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationPropertyOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Configuration.ConfigurationPropertyOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

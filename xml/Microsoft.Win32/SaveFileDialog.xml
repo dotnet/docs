@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SaveFileDialog" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SaveFileDialog&#xA;Inherits FileDialog" />
   <TypeSignature Language="C++ CLI" Value="public ref class SaveFileDialog sealed : Microsoft::Win32::FileDialog" />
+  <TypeSignature Language="F#" Value="type SaveFileDialog = class&#xA;    inherit FileDialog" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SaveFileDialog.CreatePrompt" />
       <MemberSignature Language="VB.NET" Value="Public Property CreatePrompt As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreatePrompt { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CreatePrompt : bool with get, set" Usage="Microsoft.Win32.SaveFileDialog.CreatePrompt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SaveFileDialog.OpenFile" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFile () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenFile();" />
+      <MemberSignature Language="F#" Value="member this.OpenFile : unit -&gt; System.IO.Stream" Usage="saveFileDialog.OpenFile " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SaveFileDialog.OverwritePrompt" />
       <MemberSignature Language="VB.NET" Value="Public Property OverwritePrompt As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OverwritePrompt { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OverwritePrompt : bool with get, set" Usage="Microsoft.Win32.SaveFileDialog.OverwritePrompt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SaveFileDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="saveFileDialog.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

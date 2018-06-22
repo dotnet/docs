@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.LanguageOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum LanguageOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class LanguageOptions" />
+  <TypeSignature Language="F#" Value="type LanguageOptions = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.LanguageOptions.CaseInsensitive" />
       <MemberSignature Language="VB.NET" Value="CaseInsensitive" />
       <MemberSignature Language="C++ CLI" Value="CaseInsensitive" />
+      <MemberSignature Language="F#" Value="CaseInsensitive = 1" Usage="System.CodeDom.Compiler.LanguageOptions.CaseInsensitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.LanguageOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.CodeDom.Compiler.LanguageOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

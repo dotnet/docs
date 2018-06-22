@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.ThreadMessageEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ThreadMessageEventHandler(ByRef msg As MSG, ByRef handled As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ThreadMessageEventHandler(MSG % msg, bool % handled);" />
+  <TypeSignature Language="F#" Value="type ThreadMessageEventHandler = delegate of  *  -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

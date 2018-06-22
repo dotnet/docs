@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndSourceHook" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function HwndSourceHook(hwnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As IntPtr, ByRef handled As Boolean) As IntPtr " />
   <TypeSignature Language="C++ CLI" Value="public delegate IntPtr HwndSourceHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, bool % handled);" />
+  <TypeSignature Language="F#" Value="type HwndSourceHook = delegate of nativeint * int * nativeint * nativeint *  -&gt; nativeint" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

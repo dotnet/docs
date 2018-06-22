@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ImpersonationLevelOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImpersonationLevelOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImpersonationLevelOption" />
+  <TypeSignature Language="F#" Value="type ImpersonationLevelOption = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Anonymous" />
       <MemberSignature Language="VB.NET" Value="Anonymous" />
       <MemberSignature Language="C++ CLI" Value="Anonymous" />
+      <MemberSignature Language="F#" Value="Anonymous = 1" Usage="System.EnterpriseServices.ImpersonationLevelOption.Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.EnterpriseServices.ImpersonationLevelOption.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Delegate" />
       <MemberSignature Language="VB.NET" Value="Delegate" />
       <MemberSignature Language="C++ CLI" Value="Delegate" />
+      <MemberSignature Language="F#" Value="Delegate = 4" Usage="System.EnterpriseServices.ImpersonationLevelOption.Delegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Identify" />
       <MemberSignature Language="VB.NET" Value="Identify" />
       <MemberSignature Language="C++ CLI" Value="Identify" />
+      <MemberSignature Language="F#" Value="Identify = 2" Usage="System.EnterpriseServices.ImpersonationLevelOption.Identify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Impersonate" />
       <MemberSignature Language="VB.NET" Value="Impersonate" />
       <MemberSignature Language="C++ CLI" Value="Impersonate" />
+      <MemberSignature Language="F#" Value="Impersonate = 3" Usage="System.EnterpriseServices.ImpersonationLevelOption.Impersonate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

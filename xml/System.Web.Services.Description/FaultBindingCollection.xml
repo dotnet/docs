@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.FaultBindingCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FaultBindingCollection&#xA;Inherits ServiceDescriptionBaseCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultBindingCollection sealed : System::Web::Services::Description::ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="F#" Value="type FaultBindingCollection = class&#xA;    inherit ServiceDescriptionBaseCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.Add(System.Web.Services.Description.FaultBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (bindingOperationFault As FaultBinding) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Description::FaultBinding ^ bindingOperationFault);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Description.FaultBinding -&gt; int" Usage="faultBindingCollection.Add bindingOperationFault" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.Contains(System.Web.Services.Description.FaultBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (bindingOperationFault As FaultBinding) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::FaultBinding ^ bindingOperationFault);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Services.Description.FaultBinding -&gt; bool" Usage="faultBindingCollection.Contains bindingOperationFault" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.CopyTo(System.Web.Services.Description.FaultBinding[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As FaultBinding(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::FaultBinding ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Services.Description.FaultBinding[] * int -&gt; unit" Usage="faultBindingCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.GetKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKey (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKey(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.GetKey : obj -&gt; string" Usage="faultBindingCollection.GetKey value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.IndexOf(System.Web.Services.Description.FaultBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (bindingOperationFault As FaultBinding) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::FaultBinding ^ bindingOperationFault);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Description.FaultBinding -&gt; int" Usage="faultBindingCollection.IndexOf bindingOperationFault" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.Insert(System.Int32,System.Web.Services.Description.FaultBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, bindingOperationFault As FaultBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::FaultBinding ^ bindingOperationFault);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.Services.Description.FaultBinding -&gt; unit" Usage="faultBindingCollection.Insert (index, bindingOperationFault)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.FaultBindingCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As FaultBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::FaultBinding ^ default[int] { System::Web::Services::Description::FaultBinding ^ get(int index); void set(int index, System::Web::Services::Description::FaultBinding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Description.FaultBinding with get, set" Usage="System.Web.Services.Description.FaultBindingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -300,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.FaultBindingCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As FaultBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::FaultBinding ^ default[System::String ^] { System::Web::Services::Description::FaultBinding ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Services.Description.FaultBinding" Usage="System.Web.Services.Description.FaultBindingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -336,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.Remove(System.Web.Services.Description.FaultBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (bindingOperationFault As FaultBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::FaultBinding ^ bindingOperationFault);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Description.FaultBinding -&gt; unit" Usage="faultBindingCollection.Remove bindingOperationFault" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.SetParent(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParent (value As Object, parent As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParent(System::Object ^ value, System::Object ^ parent);" />
+      <MemberSignature Language="F#" Value="override this.SetParent : obj * obj -&gt; unit" Usage="faultBindingCollection.SetParent (value, parent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

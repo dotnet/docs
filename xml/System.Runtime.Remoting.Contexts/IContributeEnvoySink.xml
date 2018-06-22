@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IContributeEnvoySink" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContributeEnvoySink" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContributeEnvoySink" />
+  <TypeSignature Language="F#" Value="type IContributeEnvoySink = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContributeEnvoySink.GetEnvoySink(System.MarshalByRefObject,System.Runtime.Remoting.Messaging.IMessageSink)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnvoySink (obj As MarshalByRefObject, nextSink As IMessageSink) As IMessageSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::Messaging::IMessageSink ^ GetEnvoySink(MarshalByRefObject ^ obj, System::Runtime::Remoting::Messaging::IMessageSink ^ nextSink);" />
+      <MemberSignature Language="F#" Value="abstract member GetEnvoySink : MarshalByRefObject * System.Runtime.Remoting.Messaging.IMessageSink -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="iContributeEnvoySink.GetEnvoySink (obj, nextSink)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

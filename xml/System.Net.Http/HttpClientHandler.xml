@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpClientHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpClientHandler&#xA;Inherits HttpMessageHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpClientHandler : System::Net::Http::HttpMessageHandler" />
+  <TypeSignature Language="F#" Value="type HttpClientHandler = class&#xA;    inherit HttpMessageHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@ AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.AllowAutoRedirect" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowAutoRedirect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowAutoRedirect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowAutoRedirect : bool with get, set" Usage="System.Net.Http.HttpClientHandler.AllowAutoRedirect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -121,6 +123,7 @@ AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.AutomaticDecompression" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticDecompression As DecompressionMethods" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::DecompressionMethods AutomaticDecompression { System::Net::DecompressionMethods get(); void set(System::Net::DecompressionMethods value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticDecompression : System.Net.DecompressionMethods with get, set" Usage="System.Net.Http.HttpClientHandler.AutomaticDecompression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -160,6 +163,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckCertificateRevocationList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckCertificateRevocationList { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckCertificateRevocationList : bool with get, set" Usage="System.Net.Http.HttpClientHandler.CheckCertificateRevocationList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -190,6 +194,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.ClientCertificateOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCertificateOptions As ClientCertificateOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::ClientCertificateOption ClientCertificateOptions { System::Net::Http::ClientCertificateOption get(); void set(System::Net::Http::ClientCertificateOption value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificateOptions : System.Net.Http.ClientCertificateOption with get, set" Usage="System.Net.Http.HttpClientHandler.ClientCertificateOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -218,6 +223,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.ClientCertificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificates As X509CertificateCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificates : System.Security.Cryptography.X509Certificates.X509CertificateCollection" Usage="System.Net.Http.HttpClientHandler.ClientCertificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -246,6 +252,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.CookieContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieContainer As CookieContainer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::CookieContainer ^ CookieContainer { System::Net::CookieContainer ^ get(); void set(System::Net::CookieContainer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieContainer : System.Net.CookieContainer with get, set" Usage="System.Net.Http.HttpClientHandler.CookieContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -283,6 +290,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Property Credentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.Http.HttpClientHandler.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -311,6 +319,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DangerousAcceptAnyServerCertificateValidator As Func(Of HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Func&lt;System::Net::Http::HttpRequestMessage ^, System::Security::Cryptography::X509Certificates::X509Certificate2 ^, System::Security::Cryptography::X509Certificates::X509Chain ^, System::Net::Security::SslPolicyErrors, bool&gt; ^ DangerousAcceptAnyServerCertificateValidator { Func&lt;System::Net::Http::HttpRequestMessage ^, System::Security::Cryptography::X509Certificates::X509Certificate2 ^, System::Security::Cryptography::X509Certificates::X509Chain ^, System::Net::Security::SslPolicyErrors, bool&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DangerousAcceptAnyServerCertificateValidator : Func&lt;System.Net.Http.HttpRequestMessage, System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography.X509Certificates.X509Chain, System.Net.Security.SslPolicyErrors, bool&gt;" Usage="System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -349,6 +358,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.DefaultProxyCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProxyCredentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ DefaultProxyCredentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProxyCredentials : System.Net.ICredentials with get, set" Usage="System.Net.Http.HttpClientHandler.DefaultProxyCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -377,6 +387,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpClientHandler.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="httpClientHandler.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -418,6 +429,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.MaxAutomaticRedirections" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxAutomaticRedirections As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxAutomaticRedirections { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxAutomaticRedirections : int with get, set" Usage="System.Net.Http.HttpClientHandler.MaxAutomaticRedirections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -453,6 +465,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.MaxConnectionsPerServer" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConnectionsPerServer As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConnectionsPerServer { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConnectionsPerServer : int with get, set" Usage="System.Net.Http.HttpClientHandler.MaxConnectionsPerServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -481,6 +494,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxRequestContentBufferSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxRequestContentBufferSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxRequestContentBufferSize : int64 with get, set" Usage="System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -516,6 +530,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.MaxResponseHeadersLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxResponseHeadersLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResponseHeadersLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseHeadersLength : int with get, set" Usage="System.Net.Http.HttpClientHandler.MaxResponseHeadersLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -544,6 +559,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.PreAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public Property PreAuthenticate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreAuthenticate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreAuthenticate : bool with get, set" Usage="System.Net.Http.HttpClientHandler.PreAuthenticate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -584,6 +600,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Net.Http.HttpClientHandler.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -612,6 +629,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.Proxy" />
       <MemberSignature Language="VB.NET" Value="Public Property Proxy As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.Net.Http.HttpClientHandler.Proxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -658,6 +676,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Net.Http.HttpResponseMessage&gt; SendAsync(class System.Net.Http.HttpRequestMessage request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Threading::Tasks::Task&lt;System::Net::Http::HttpResponseMessage ^&gt; ^ SendAsync(System::Net::Http::HttpRequestMessage ^ request, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;" Usage="httpClientHandler.SendAsync (request, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -708,6 +727,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.ServerCertificateCustomValidationCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerCertificateCustomValidationCallback As Func(Of HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Net::Http::HttpRequestMessage ^, System::Security::Cryptography::X509Certificates::X509Certificate2 ^, System::Security::Cryptography::X509Certificates::X509Chain ^, System::Net::Security::SslPolicyErrors, bool&gt; ^ ServerCertificateCustomValidationCallback { Func&lt;System::Net::Http::HttpRequestMessage ^, System::Security::Cryptography::X509Certificates::X509Certificate2 ^, System::Security::Cryptography::X509Certificates::X509Chain ^, System::Net::Security::SslPolicyErrors, bool&gt; ^ get(); void set(Func&lt;System::Net::Http::HttpRequestMessage ^, System::Security::Cryptography::X509Certificates::X509Certificate2 ^, System::Security::Cryptography::X509Certificates::X509Chain ^, System::Net::Security::SslPolicyErrors, bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerCertificateCustomValidationCallback : Func&lt;System.Net.Http.HttpRequestMessage, System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography.X509Certificates.X509Chain, System.Net.Security.SslPolicyErrors, bool&gt; with get, set" Usage="System.Net.Http.HttpClientHandler.ServerCertificateCustomValidationCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -736,6 +756,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.SslProtocols" />
       <MemberSignature Language="VB.NET" Value="Public Property SslProtocols As SslProtocols" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::SslProtocols SslProtocols { System::Security::Authentication::SslProtocols get(); void set(System::Security::Authentication::SslProtocols value); };" />
+      <MemberSignature Language="F#" Value="member this.SslProtocols : System.Security.Authentication.SslProtocols with get, set" Usage="System.Net.Http.HttpClientHandler.SslProtocols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -765,6 +786,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.SupportsAutomaticDecompression" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsAutomaticDecompression As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAutomaticDecompression { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsAutomaticDecompression : bool" Usage="System.Net.Http.HttpClientHandler.SupportsAutomaticDecompression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -794,6 +816,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.SupportsProxy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsProxy As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsProxy { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsProxy : bool" Usage="System.Net.Http.HttpClientHandler.SupportsProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -823,6 +846,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsRedirectConfiguration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsRedirectConfiguration { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsRedirectConfiguration : bool" Usage="System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -852,6 +876,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.UseCookies" />
       <MemberSignature Language="VB.NET" Value="Public Property UseCookies As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCookies { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseCookies : bool with get, set" Usage="System.Net.Http.HttpClientHandler.UseCookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -881,6 +906,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.UseDefaultCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property UseDefaultCredentials As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.Net.Http.HttpClientHandler.UseDefaultCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -917,6 +943,7 @@ handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousA
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClientHandler.UseProxy" />
       <MemberSignature Language="VB.NET" Value="Public Property UseProxy As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseProxy { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseProxy : bool with get, set" Usage="System.Net.Http.HttpClientHandler.UseProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageDigitalSignatureManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PackageDigitalSignatureManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackageDigitalSignatureManager sealed" />
+  <TypeSignature Language="F#" Value="type PackageDigitalSignatureManager = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.#ctor(System.IO.Packaging.Package)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PackageDigitalSignatureManager(System::IO::Packaging::Package ^ package);" />
+      <MemberSignature Language="F#" Value="new System.IO.Packaging.PackageDigitalSignatureManager : System.IO.Packaging.Package -&gt; System.IO.Packaging.PackageDigitalSignatureManager" Usage="new System.IO.Packaging.PackageDigitalSignatureManager package" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.CertificateOption" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateOption As CertificateEmbeddingOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::CertificateEmbeddingOption CertificateOption { System::IO::Packaging::CertificateEmbeddingOption get(); void set(System::IO::Packaging::CertificateEmbeddingOption value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateOption : System.IO.Packaging.CertificateEmbeddingOption with get, set" Usage="System.IO.Packaging.PackageDigitalSignatureManager.CertificateOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.Countersign" />
       <MemberSignature Language="VB.NET" Value="Public Function Countersign () As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ Countersign();" />
+      <MemberSignature Language="F#" Value="member this.Countersign : unit -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.Countersign " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.Countersign(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Function Countersign (certificate As X509Certificate) As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ Countersign(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
+      <MemberSignature Language="F#" Value="member this.Countersign : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.Countersign certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.Countersign(System.Security.Cryptography.X509Certificates.X509Certificate,System.Collections.Generic.IEnumerable{System.Uri})" />
       <MemberSignature Language="VB.NET" Value="Public Function Countersign (certificate As X509Certificate, signatures As IEnumerable(Of Uri)) As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ Countersign(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate, System::Collections::Generic::IEnumerable&lt;Uri ^&gt; ^ signatures);" />
+      <MemberSignature Language="F#" Value="member this.Countersign : System.Security.Cryptography.X509Certificates.X509Certificate * seq&lt;Uri&gt; -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.Countersign (certificate, signatures)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.DefaultHashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultHashAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ DefaultHashAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultHashAlgorithm : string" Usage="System.IO.Packaging.PackageDigitalSignatureManager.DefaultHashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.GetSignature(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSignature (signatureUri As Uri) As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ GetSignature(Uri ^ signatureUri);" />
+      <MemberSignature Language="F#" Value="member this.GetSignature : Uri -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.GetSignature signatureUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -261,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.HashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property HashAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : string with get, set" Usage="System.IO.Packaging.PackageDigitalSignatureManager.HashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.Packaging.PackageDigitalSignatureManager.InvalidSignatureEvent" />
       <MemberSignature Language="VB.NET" Value="Public Event InvalidSignatureEvent As InvalidSignatureEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::Packaging::InvalidSignatureEventHandler ^ InvalidSignatureEvent;" />
+      <MemberSignature Language="F#" Value="member this.InvalidSignatureEvent : System.IO.Packaging.InvalidSignatureEventHandler " Usage="member this.InvalidSignatureEvent : System.IO.Packaging.InvalidSignatureEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.IsSigned" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSigned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSigned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSigned : bool" Usage="System.IO.Packaging.PackageDigitalSignatureManager.IsSigned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -353,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.ParentWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property ParentWindow As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ParentWindow { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.ParentWindow : nativeint with get, set" Usage="System.IO.Packaging.PackageDigitalSignatureManager.ParentWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -380,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.RemoveAllSignatures" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllSignatures ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllSignatures();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAllSignatures : unit -&gt; unit" Usage="packageDigitalSignatureManager.RemoveAllSignatures " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -410,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.RemoveSignature(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveSignature (signatureUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveSignature(Uri ^ signatureUri);" />
+      <MemberSignature Language="F#" Value="member this.RemoveSignature : Uri -&gt; unit" Usage="packageDigitalSignatureManager.RemoveSignature signatureUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -462,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.Sign(System.Collections.Generic.IEnumerable{System.Uri})" />
       <MemberSignature Language="VB.NET" Value="Public Function Sign (parts As IEnumerable(Of Uri)) As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ Sign(System::Collections::Generic::IEnumerable&lt;Uri ^&gt; ^ parts);" />
+      <MemberSignature Language="F#" Value="member this.Sign : seq&lt;Uri&gt; -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.Sign parts" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -503,6 +518,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.Sign(System.Collections.Generic.IEnumerable{System.Uri},System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Function Sign (parts As IEnumerable(Of Uri), certificate As X509Certificate) As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ Sign(System::Collections::Generic::IEnumerable&lt;Uri ^&gt; ^ parts, System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
+      <MemberSignature Language="F#" Value="member this.Sign : seq&lt;Uri&gt; * System.Security.Cryptography.X509Certificates.X509Certificate -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.Sign (parts, certificate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -539,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.Sign(System.Collections.Generic.IEnumerable{System.Uri},System.Security.Cryptography.X509Certificates.X509Certificate,System.Collections.Generic.IEnumerable{System.IO.Packaging.PackageRelationshipSelector})" />
       <MemberSignature Language="VB.NET" Value="Public Function Sign (parts As IEnumerable(Of Uri), certificate As X509Certificate, relationshipSelectors As IEnumerable(Of PackageRelationshipSelector)) As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ Sign(System::Collections::Generic::IEnumerable&lt;Uri ^&gt; ^ parts, System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate, System::Collections::Generic::IEnumerable&lt;System::IO::Packaging::PackageRelationshipSelector ^&gt; ^ relationshipSelectors);" />
+      <MemberSignature Language="F#" Value="member this.Sign : seq&lt;Uri&gt; * System.Security.Cryptography.X509Certificates.X509Certificate * seq&lt;System.IO.Packaging.PackageRelationshipSelector&gt; -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.Sign (parts, certificate, relationshipSelectors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -583,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.Sign(System.Collections.Generic.IEnumerable{System.Uri},System.Security.Cryptography.X509Certificates.X509Certificate,System.Collections.Generic.IEnumerable{System.IO.Packaging.PackageRelationshipSelector},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Sign (parts As IEnumerable(Of Uri), certificate As X509Certificate, relationshipSelectors As IEnumerable(Of PackageRelationshipSelector), signatureId As String) As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ Sign(System::Collections::Generic::IEnumerable&lt;Uri ^&gt; ^ parts, System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate, System::Collections::Generic::IEnumerable&lt;System::IO::Packaging::PackageRelationshipSelector ^&gt; ^ relationshipSelectors, System::String ^ signatureId);" />
+      <MemberSignature Language="F#" Value="member this.Sign : seq&lt;Uri&gt; * System.Security.Cryptography.X509Certificates.X509Certificate * seq&lt;System.IO.Packaging.PackageRelationshipSelector&gt; * string -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.Sign (parts, certificate, relationshipSelectors, signatureId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -633,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.Sign(System.Collections.Generic.IEnumerable{System.Uri},System.Security.Cryptography.X509Certificates.X509Certificate,System.Collections.Generic.IEnumerable{System.IO.Packaging.PackageRelationshipSelector},System.String,System.Collections.Generic.IEnumerable{System.Security.Cryptography.Xml.DataObject},System.Collections.Generic.IEnumerable{System.Security.Cryptography.Xml.Reference})" />
       <MemberSignature Language="VB.NET" Value="Public Function Sign (parts As IEnumerable(Of Uri), certificate As X509Certificate, relationshipSelectors As IEnumerable(Of PackageRelationshipSelector), signatureId As String, signatureObjects As IEnumerable(Of DataObject), objectReferences As IEnumerable(Of Reference)) As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageDigitalSignature ^ Sign(System::Collections::Generic::IEnumerable&lt;Uri ^&gt; ^ parts, System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate, System::Collections::Generic::IEnumerable&lt;System::IO::Packaging::PackageRelationshipSelector ^&gt; ^ relationshipSelectors, System::String ^ signatureId, System::Collections::Generic::IEnumerable&lt;System::Security::Cryptography::Xml::DataObject ^&gt; ^ signatureObjects, System::Collections::Generic::IEnumerable&lt;System::Security::Cryptography::Xml::Reference ^&gt; ^ objectReferences);" />
+      <MemberSignature Language="F#" Value="member this.Sign : seq&lt;Uri&gt; * System.Security.Cryptography.X509Certificates.X509Certificate * seq&lt;System.IO.Packaging.PackageRelationshipSelector&gt; * string * seq&lt;System.Security.Cryptography.Xml.DataObject&gt; * seq&lt;System.Security.Cryptography.Xml.Reference&gt; -&gt; System.IO.Packaging.PackageDigitalSignature" Usage="packageDigitalSignatureManager.Sign (parts, certificate, relationshipSelectors, signatureId, signatureObjects, objectReferences)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -692,6 +711,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.SignatureOrigin" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureOrigin As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SignatureOrigin { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureOrigin : Uri" Usage="System.IO.Packaging.PackageDigitalSignatureManager.SignatureOrigin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -719,6 +739,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.SignatureOriginRelationshipType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SignatureOriginRelationshipType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SignatureOriginRelationshipType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureOriginRelationshipType : string" Usage="System.IO.Packaging.PackageDigitalSignatureManager.SignatureOriginRelationshipType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -739,6 +760,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.Signatures" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signatures As ReadOnlyCollection(Of PackageDigitalSignature)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IO::Packaging::PackageDigitalSignature ^&gt; ^ Signatures { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IO::Packaging::PackageDigitalSignature ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signatures : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IO.Packaging.PackageDigitalSignature&gt;" Usage="System.IO.Packaging.PackageDigitalSignatureManager.Signatures" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -759,6 +781,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.TimeFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimeFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TimeFormat : string with get, set" Usage="System.IO.Packaging.PackageDigitalSignatureManager.TimeFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -811,6 +834,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageDigitalSignatureManager.TransformMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransformMapping As Dictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ TransformMapping { System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformMapping : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="System.IO.Packaging.PackageDigitalSignatureManager.TransformMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -845,6 +869,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifyCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyCertificate (certificate As X509Certificate) As X509ChainStatusFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509ChainStatusFlags VerifyCertificate(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
+      <MemberSignature Language="F#" Value="static member VerifyCertificate : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; System.Security.Cryptography.X509Certificates.X509ChainStatusFlags" Usage="System.IO.Packaging.PackageDigitalSignatureManager.VerifyCertificate certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -876,6 +901,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function VerifySignatures (exitOnFailure As Boolean) As VerifyResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::VerifyResult VerifySignatures(bool exitOnFailure);" />
+      <MemberSignature Language="F#" Value="member this.VerifySignatures : bool -&gt; System.IO.Packaging.VerifyResult" Usage="packageDigitalSignatureManager.VerifySignatures exitOnFailure" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

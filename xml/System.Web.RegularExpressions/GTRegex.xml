@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.GTRegex" />
   <TypeSignature Language="VB.NET" Value="Public Class GTRegex&#xA;Inherits Regex" />
   <TypeSignature Language="C++ CLI" Value="public ref class GTRegex : System::Text::RegularExpressions::Regex" />
+  <TypeSignature Language="F#" Value="type GTRegex = class&#xA;    inherit Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.GTRegex.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GTRegex(TimeSpan A_1);" />
+      <MemberSignature Language="F#" Value="new System.Web.RegularExpressions.GTRegex : TimeSpan -&gt; System.Web.RegularExpressions.GTRegex" Usage="new System.Web.RegularExpressions.GTRegex A_1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.UseKey" />
   <TypeSignature Language="VB.NET" Value="Public Class UseKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class UseKey" />
+  <TypeSignature Language="F#" Value="type UseKey = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.UseKey.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ski As SecurityKeyIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UseKey(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ski);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.UseKey : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.IdentityModel.Protocols.WSTrust.UseKey" Usage="new System.IdentityModel.Protocols.WSTrust.UseKey ski" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.UseKey.#ctor(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UseKey(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.UseKey : System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Protocols.WSTrust.UseKey" Usage="new System.IdentityModel.Protocols.WSTrust.UseKey token" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.UseKey.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ski As SecurityKeyIdentifier, token As SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UseKey(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ski, System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.UseKey : System.IdentityModel.Tokens.SecurityKeyIdentifier * System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Protocols.WSTrust.UseKey" Usage="new System.IdentityModel.Protocols.WSTrust.UseKey (ski, token)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.UseKey.SecurityKeyIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityKeyIdentifier As SecurityKeyIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifier ^ SecurityKeyIdentifier { System::IdentityModel::Tokens::SecurityKeyIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityKeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="System.IdentityModel.Protocols.WSTrust.UseKey.SecurityKeyIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.UseKey.Token" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ Token { System::IdentityModel::Tokens::SecurityToken ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Token : System.IdentityModel.Tokens.SecurityToken" Usage="System.IdentityModel.Protocols.WSTrust.UseKey.Token" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

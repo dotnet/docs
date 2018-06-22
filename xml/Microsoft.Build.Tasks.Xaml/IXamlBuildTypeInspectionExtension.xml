@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.IXamlBuildTypeInspectionExtension" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlBuildTypeInspectionExtension" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlBuildTypeInspectionExtension" />
+  <TypeSignature Language="F#" Value="type IXamlBuildTypeInspectionExtension = interface" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.IXamlBuildTypeInspectionExtension.Execute(Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function Execute (buildContext As XamlBuildTypeInspectionExtensionContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Execute(Microsoft::Build::Tasks::Xaml::XamlBuildTypeInspectionExtensionContext ^ buildContext);" />
+      <MemberSignature Language="F#" Value="abstract member Execute : Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext -&gt; bool" Usage="iXamlBuildTypeInspectionExtension.Execute buildContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

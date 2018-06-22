@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ICustomFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICustomFormatter" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICustomFormatter" />
+  <TypeSignature Language="F#" Value="type ICustomFormatter = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function Format (format As String, arg As Object, formatProvider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Format(System::String ^ format, System::Object ^ arg, IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="abstract member Format : string * obj * IFormatProvider -&gt; string" Usage="iCustomFormatter.Format (format, arg, formatProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

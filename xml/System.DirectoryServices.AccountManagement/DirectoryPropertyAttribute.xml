@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectoryPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryPropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DirectoryPropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (schemaAttributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryPropertyAttribute(System::String ^ schemaAttributeName);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute : string -&gt; System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute" Usage="new System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute schemaAttributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.Context" />
       <MemberSignature Language="VB.NET" Value="Public Property Context As Nullable(Of ContextType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::DirectoryServices::AccountManagement::ContextType&gt; Context { Nullable&lt;System::DirectoryServices::AccountManagement::ContextType&gt; get(); void set(Nullable&lt;System::DirectoryServices::AccountManagement::ContextType&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : Nullable&lt;System.DirectoryServices.AccountManagement.ContextType&gt; with get, set" Usage="System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.SchemaAttributeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaAttributeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaAttributeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaAttributeName : string" Usage="System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.SchemaAttributeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IPolicyImportExtension" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPolicyImportExtension" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPolicyImportExtension" />
+  <TypeSignature Language="F#" Value="type IPolicyImportExtension = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportPolicy (importer As MetadataImporter, context As PolicyConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ImportPolicy(System::ServiceModel::Description::MetadataImporter ^ importer, System::ServiceModel::Description::PolicyConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ImportPolicy : System.ServiceModel.Description.MetadataImporter * System.ServiceModel.Description.PolicyConversionContext -&gt; unit" Usage="iPolicyImportExtension.ImportPolicy (importer, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

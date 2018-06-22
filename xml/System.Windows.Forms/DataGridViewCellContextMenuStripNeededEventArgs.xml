@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCellContextMenuStripNeededEventArgs&#xA;Inherits DataGridViewCellEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCellContextMenuStripNeededEventArgs : System::Windows::Forms::DataGridViewCellEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellContextMenuStripNeededEventArgs = class&#xA;    inherit DataGridViewCellEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (columnIndex As Integer, rowIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCellContextMenuStripNeededEventArgs(int columnIndex, int rowIndex);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs : int * int -&gt; System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs" Usage="new System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs (columnIndex, rowIndex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextMenuStrip As ContextMenuStrip" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ContextMenuStrip ^ ContextMenuStrip { System::Windows::Forms::ContextMenuStrip ^ get(); void set(System::Windows::Forms::ContextMenuStrip ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

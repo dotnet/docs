@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventOpcode" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventOpcode" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventOpcode sealed" />
+  <TypeSignature Language="F#" Value="type EventOpcode = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventOpcode.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Diagnostics.Eventing.Reader.EventOpcode.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventOpcode.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.Eventing.Reader.EventOpcode.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventOpcode.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int" Usage="System.Diagnostics.Eventing.Reader.EventOpcode.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

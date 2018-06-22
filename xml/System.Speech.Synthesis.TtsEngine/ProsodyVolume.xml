@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ProsodyVolume" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProsodyVolume" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProsodyVolume" />
+  <TypeSignature Language="F#" Value="type ProsodyVolume = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = -1" Usage="System.Speech.Synthesis.TtsEngine.ProsodyVolume.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.ExtraLoud" />
       <MemberSignature Language="VB.NET" Value="ExtraLoud" />
       <MemberSignature Language="C++ CLI" Value="ExtraLoud" />
+      <MemberSignature Language="F#" Value="ExtraLoud = -7" Usage="System.Speech.Synthesis.TtsEngine.ProsodyVolume.ExtraLoud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.ExtraSoft" />
       <MemberSignature Language="VB.NET" Value="ExtraSoft" />
       <MemberSignature Language="C++ CLI" Value="ExtraSoft" />
+      <MemberSignature Language="F#" Value="ExtraSoft = -3" Usage="System.Speech.Synthesis.TtsEngine.ProsodyVolume.ExtraSoft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Loud" />
       <MemberSignature Language="VB.NET" Value="Loud" />
       <MemberSignature Language="C++ CLI" Value="Loud" />
+      <MemberSignature Language="F#" Value="Loud = -6" Usage="System.Speech.Synthesis.TtsEngine.ProsodyVolume.Loud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = -5" Usage="System.Speech.Synthesis.TtsEngine.ProsodyVolume.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Silent" />
       <MemberSignature Language="VB.NET" Value="Silent" />
       <MemberSignature Language="C++ CLI" Value="Silent" />
+      <MemberSignature Language="F#" Value="Silent = -2" Usage="System.Speech.Synthesis.TtsEngine.ProsodyVolume.Silent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Soft" />
       <MemberSignature Language="VB.NET" Value="Soft" />
       <MemberSignature Language="C++ CLI" Value="Soft" />
+      <MemberSignature Language="F#" Value="Soft = -4" Usage="System.Speech.Synthesis.TtsEngine.ProsodyVolume.Soft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

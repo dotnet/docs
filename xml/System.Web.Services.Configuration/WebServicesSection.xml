@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.WebServicesSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebServicesSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebServicesSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type WebServicesSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.ConformanceWarnings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConformanceWarnings As WsiProfilesElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::WsiProfilesElementCollection ^ ConformanceWarnings { System::Web::Services::Configuration::WsiProfilesElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConformanceWarnings : System.Web.Services.Configuration.WsiProfilesElementCollection" Usage="System.Web.Services.Configuration.WebServicesSection.ConformanceWarnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As WebServicesSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Services::Configuration::WebServicesSection ^ Current { System::Web::Services::Configuration::WebServicesSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Web.Services.Configuration.WebServicesSection" Usage="System.Web.Services.Configuration.WebServicesSection.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.Diagnostics" />
       <MemberSignature Language="VB.NET" Value="Public Property Diagnostics As DiagnosticsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::DiagnosticsElement ^ Diagnostics { System::Web::Services::Configuration::DiagnosticsElement ^ get(); void set(System::Web::Services::Configuration::DiagnosticsElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Diagnostics : System.Web.Services.Configuration.DiagnosticsElement with get, set" Usage="System.Web.Services.Configuration.WebServicesSection.Diagnostics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.EnabledProtocols" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnabledProtocols As WebServiceProtocols" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::WebServiceProtocols EnabledProtocols { System::Web::Services::Configuration::WebServiceProtocols get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnabledProtocols : System.Web.Services.Configuration.WebServiceProtocols" Usage="System.Web.Services.Configuration.WebServicesSection.EnabledProtocols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WebServicesSection.GetSection(System.Configuration.Configuration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSection (config As Configuration) As WebServicesSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Configuration::WebServicesSection ^ GetSection(System::Configuration::Configuration ^ config);" />
+      <MemberSignature Language="F#" Value="static member GetSection : System.Configuration.Configuration -&gt; System.Web.Services.Configuration.WebServicesSection" Usage="System.Web.Services.Configuration.WebServicesSection.GetSection config" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WebServicesSection.InitializeDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeDefault ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeDefault();" />
+      <MemberSignature Language="F#" Value="override this.InitializeDefault : unit -&gt; unit" Usage="webServicesSection.InitializeDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Services.Configuration.WebServicesSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -191,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.Protocols" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protocols As ProtocolElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::ProtocolElementCollection ^ Protocols { System::Web::Services::Configuration::ProtocolElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Protocols : System.Web.Services.Configuration.ProtocolElementCollection" Usage="System.Web.Services.Configuration.WebServicesSection.Protocols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -223,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WebServicesSection.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="webServicesSection.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.ServiceDescriptionFormatExtensionTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescriptionFormatExtensionTypes As TypeElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::TypeElementCollection ^ ServiceDescriptionFormatExtensionTypes { System::Web::Services::Configuration::TypeElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceDescriptionFormatExtensionTypes : System.Web.Services.Configuration.TypeElementCollection" Usage="System.Web.Services.Configuration.WebServicesSection.ServiceDescriptionFormatExtensionTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -271,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapEnvelopeProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapEnvelopeProcessing As SoapEnvelopeProcessingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::SoapEnvelopeProcessingElement ^ SoapEnvelopeProcessing { System::Web::Services::Configuration::SoapEnvelopeProcessingElement ^ get(); void set(System::Web::Services::Configuration::SoapEnvelopeProcessingElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapEnvelopeProcessing : System.Web.Services.Configuration.SoapEnvelopeProcessingElement with get, set" Usage="System.Web.Services.Configuration.WebServicesSection.SoapEnvelopeProcessing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -296,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapExtensionImporterTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapExtensionImporterTypes As TypeElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::TypeElementCollection ^ SoapExtensionImporterTypes { System::Web::Services::Configuration::TypeElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoapExtensionImporterTypes : System.Web.Services.Configuration.TypeElementCollection" Usage="System.Web.Services.Configuration.WebServicesSection.SoapExtensionImporterTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -321,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapExtensionReflectorTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapExtensionReflectorTypes As TypeElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::TypeElementCollection ^ SoapExtensionReflectorTypes { System::Web::Services::Configuration::TypeElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoapExtensionReflectorTypes : System.Web.Services.Configuration.TypeElementCollection" Usage="System.Web.Services.Configuration.WebServicesSection.SoapExtensionReflectorTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -346,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapExtensionTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapExtensionTypes As SoapExtensionTypeElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::SoapExtensionTypeElementCollection ^ SoapExtensionTypes { System::Web::Services::Configuration::SoapExtensionTypeElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoapExtensionTypes : System.Web.Services.Configuration.SoapExtensionTypeElementCollection" Usage="System.Web.Services.Configuration.WebServicesSection.SoapExtensionTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -371,6 +386,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapServerProtocolFactoryType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapServerProtocolFactoryType As TypeElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::TypeElement ^ SoapServerProtocolFactoryType { System::Web::Services::Configuration::TypeElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoapServerProtocolFactoryType : System.Web.Services.Configuration.TypeElement" Usage="System.Web.Services.Configuration.WebServicesSection.SoapServerProtocolFactoryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -396,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapTransportImporterTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapTransportImporterTypes As TypeElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::TypeElementCollection ^ SoapTransportImporterTypes { System::Web::Services::Configuration::TypeElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoapTransportImporterTypes : System.Web.Services.Configuration.TypeElementCollection" Usage="System.Web.Services.Configuration.WebServicesSection.SoapTransportImporterTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -421,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.WsdlHelpGenerator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WsdlHelpGenerator As WsdlHelpGeneratorElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::WsdlHelpGeneratorElement ^ WsdlHelpGenerator { System::Web::Services::Configuration::WsdlHelpGeneratorElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WsdlHelpGenerator : System.Web.Services.Configuration.WsdlHelpGeneratorElement" Usage="System.Web.Services.Configuration.WebServicesSection.WsdlHelpGenerator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

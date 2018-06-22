@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigSystem" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInternalConfigSystem" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInternalConfigSystem" />
+  <TypeSignature Language="F#" Value="type IInternalConfigSystem = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigSystem.GetSection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSection (configKey As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSection(System::String ^ configKey);" />
+      <MemberSignature Language="F#" Value="abstract member GetSection : string -&gt; obj" Usage="iInternalConfigSystem.GetSection configKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigSystem.RefreshConfig(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshConfig (sectionName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshConfig(System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="abstract member RefreshConfig : string -&gt; unit" Usage="iInternalConfigSystem.RefreshConfig sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigSystem.SupportsUserConfig" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsUserConfig As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsUserConfig { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsUserConfig : bool" Usage="System.Configuration.Internal.IInternalConfigSystem.SupportsUserConfig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

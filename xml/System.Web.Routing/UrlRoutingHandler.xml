@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.UrlRoutingHandler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UrlRoutingHandler&#xA;Implements IHttpHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class UrlRoutingHandler abstract : System::Web::IHttpHandler" />
+  <TypeSignature Language="F#" Value="type UrlRoutingHandler = class&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.UrlRoutingHandler.IsReusable" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsReusable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.Routing.UrlRoutingHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
@@ -112,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext httpContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.UrlRoutingHandler.ProcessRequest(System.Web.HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="urlRoutingHandler.ProcessRequest httpContext" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.UrlRoutingHandler.ProcessRequest(System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ProcessRequest (httpContext As HttpContextBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessRequest(System::Web::HttpContextBase ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContextBase -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContextBase -&gt; unit" Usage="urlRoutingHandler.ProcessRequest httpContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.UrlRoutingHandler.RouteCollection" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteCollection As RouteCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteCollection ^ RouteCollection { System::Web::Routing::RouteCollection ^ get(); void set(System::Web::Routing::RouteCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteCollection : System.Web.Routing.RouteCollection with get, set" Usage="System.Web.Routing.UrlRoutingHandler.RouteCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.UrlRoutingHandler.System#Web#IHttpHandler#IsReusable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.Routing.UrlRoutingHandler.System.Web.IHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
@@ -248,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.UrlRoutingHandler.VerifyAndProcessRequest(System.Web.IHttpHandler,System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub VerifyAndProcessRequest (httpHandler As IHttpHandler, httpContext As HttpContextBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void VerifyAndProcessRequest(System::Web::IHttpHandler ^ httpHandler, System::Web::HttpContextBase ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member VerifyAndProcessRequest : System.Web.IHttpHandler * System.Web.HttpContextBase -&gt; unit" Usage="urlRoutingHandler.VerifyAndProcessRequest (httpHandler, httpContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

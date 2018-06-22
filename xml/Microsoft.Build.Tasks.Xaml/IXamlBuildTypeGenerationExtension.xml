@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlBuildTypeGenerationExtension" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlBuildTypeGenerationExtension" />
+  <TypeSignature Language="F#" Value="type IXamlBuildTypeGenerationExtension = interface" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute(class Microsoft.Build.Tasks.Xaml.ClassData classData, class Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext buildContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension.Execute(Microsoft.Build.Tasks.Xaml.ClassData,Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Execute(Microsoft::Build::Tasks::Xaml::ClassData ^ classData, Microsoft::Build::Tasks::Xaml::XamlBuildTypeGenerationExtensionContext ^ buildContext);" />
+      <MemberSignature Language="F#" Value="abstract member Execute : Microsoft.Build.Tasks.Xaml.ClassData * Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext -&gt; bool" Usage="iXamlBuildTypeGenerationExtension.Execute (classData, buildContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

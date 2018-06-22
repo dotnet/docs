@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContextMenu" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextMenu&#xA;Inherits Menu" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextMenu : System::Windows::Forms::Menu" />
+  <TypeSignature Language="F#" Value="type ContextMenu = class&#xA;    inherit Menu" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.#ctor(System.Windows.Forms.MenuItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (menuItems As MenuItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextMenu(cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ menuItems);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ContextMenu : System.Windows.Forms.MenuItem[] -&gt; System.Windows.Forms.ContextMenu" Usage="new System.Windows.Forms.ContextMenu menuItems" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ContextMenu.Collapse" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Collapse As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Collapse;" />
+      <MemberSignature Language="F#" Value="member this.Collapse : EventHandler " Usage="member this.Collapse : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.OnCollapse(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnCollapse (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnCollapse(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollapse : EventArgs -&gt; unit&#xA;override this.OnCollapse : EventArgs -&gt; unit" Usage="contextMenu.OnCollapse e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.OnPopup(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnPopup (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnPopup(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPopup : EventArgs -&gt; unit&#xA;override this.OnPopup : EventArgs -&gt; unit" Usage="contextMenu.OnPopup e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ContextMenu.Popup" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Popup As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Popup;" />
+      <MemberSignature Language="F#" Value="member this.Popup : EventHandler " Usage="member this.Popup : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -243,6 +249,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData, class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys,System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData, System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys * System.Windows.Forms.Control -&gt; bool" Usage="contextMenu.ProcessCmdKey (msg, keyData, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContextMenu.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeft As RightToLeft" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::RightToLeft RightToLeft { System::Windows::Forms::RightToLeft get(); void set(System::Windows::Forms::RightToLeft value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeft : System.Windows.Forms.RightToLeft with get, set" Usage="System.Windows.Forms.ContextMenu.RightToLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -332,6 +340,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(class System.Windows.Forms.Control control, valuetype System.Drawing.Point pos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.Show(System.Windows.Forms.Control,System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::Windows::Forms::Control ^ control, System::Drawing::Point pos);" />
+      <MemberSignature Language="F#" Value="member this.Show : System.Windows.Forms.Control * System.Drawing.Point -&gt; unit" Usage="contextMenu.Show (control, pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -374,6 +383,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(class System.Windows.Forms.Control control, valuetype System.Drawing.Point pos, valuetype System.Windows.Forms.LeftRightAlignment alignment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.Show(System.Windows.Forms.Control,System.Drawing.Point,System.Windows.Forms.LeftRightAlignment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::Windows::Forms::Control ^ control, System::Drawing::Point pos, System::Windows::Forms::LeftRightAlignment alignment);" />
+      <MemberSignature Language="F#" Value="member this.Show : System.Windows.Forms.Control * System.Drawing.Point * System.Windows.Forms.LeftRightAlignment -&gt; unit" Usage="contextMenu.Show (control, pos, alignment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -401,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContextMenu.SourceControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceControl As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ SourceControl { System::Windows::Forms::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceControl : System.Windows.Forms.Control" Usage="System.Windows.Forms.ContextMenu.SourceControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ConcurrencyMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConcurrencyMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConcurrencyMode" />
+  <TypeSignature Language="F#" Value="type ConcurrencyMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ConcurrencyMode.Fixed" />
       <MemberSignature Language="VB.NET" Value="Fixed" />
       <MemberSignature Language="C++ CLI" Value="Fixed" />
+      <MemberSignature Language="F#" Value="Fixed = 1" Usage="System.Data.Metadata.Edm.ConcurrencyMode.Fixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ConcurrencyMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Metadata.Edm.ConcurrencyMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

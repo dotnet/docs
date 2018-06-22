@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Class XpsSignatureDefinition" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsSignatureDefinition" />
+  <TypeSignature Language="F#" Value="type XpsSignatureDefinition = class" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsSignatureDefinition.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Xps.Packaging.XpsSignatureDefinition.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsSignatureDefinition.HasBeenModified" />
       <MemberSignature Language="VB.NET" Value="Public Property HasBeenModified As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasBeenModified { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasBeenModified : bool with get, set" Usage="System.Windows.Xps.Packaging.XpsSignatureDefinition.HasBeenModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsSignatureDefinition.Intent" />
       <MemberSignature Language="VB.NET" Value="Public Property Intent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Intent { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Intent : string with get, set" Usage="System.Windows.Xps.Packaging.XpsSignatureDefinition.Intent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsSignatureDefinition.RequestedSigner" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestedSigner As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestedSigner { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedSigner : string with get, set" Usage="System.Windows.Xps.Packaging.XpsSignatureDefinition.RequestedSigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsSignatureDefinition.SignBy" />
       <MemberSignature Language="VB.NET" Value="Public Property SignBy As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; SignBy { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.SignBy : Nullable&lt;DateTime&gt; with get, set" Usage="System.Windows.Xps.Packaging.XpsSignatureDefinition.SignBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsSignatureDefinition.SigningLocale" />
       <MemberSignature Language="VB.NET" Value="Public Property SigningLocale As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SigningLocale { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SigningLocale : string with get, set" Usage="System.Windows.Xps.Packaging.XpsSignatureDefinition.SigningLocale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsSignatureDefinition.SpotId" />
       <MemberSignature Language="VB.NET" Value="Public Property SpotId As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Guid&gt; SpotId { Nullable&lt;Guid&gt; get(); void set(Nullable&lt;Guid&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.SpotId : Nullable&lt;Guid&gt; with get, set" Usage="System.Windows.Xps.Packaging.XpsSignatureDefinition.SpotId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsSignatureDefinition.SpotLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property SpotLocation As SpotLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Packaging::SpotLocation ^ SpotLocation { System::Windows::Xps::Packaging::SpotLocation ^ get(); void set(System::Windows::Xps::Packaging::SpotLocation ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SpotLocation : System.Windows.Xps.Packaging.SpotLocation with get, set" Usage="System.Windows.Xps.Packaging.XpsSignatureDefinition.SpotLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

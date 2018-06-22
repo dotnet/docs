@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub NetworkAvailabilityChangedEventHandler(sender As Object, e As NetworkAvailabilityEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void NetworkAvailabilityChangedEventHandler(System::Object ^ sender, NetworkAvailabilityEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type NetworkAvailabilityChangedEventHandler = delegate of obj * NetworkAvailabilityEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

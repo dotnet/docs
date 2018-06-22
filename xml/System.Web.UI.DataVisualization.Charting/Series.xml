@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Series" />
   <TypeSignature Language="VB.NET" Value="Public Class Series&#xA;Inherits DataPointCustomProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class Series : System::Web::UI::DataVisualization::Charting::DataPointCustomProperties" />
+  <TypeSignature Language="F#" Value="type Series = class&#xA;    inherit DataPointCustomProperties" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Series(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.Series : string -&gt; System.Web.UI.DataVisualization.Charting.Series" Usage="new System.Web.UI.DataVisualization.Charting.Series name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, yValues As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Series(System::String ^ name, int yValues);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.Series : string * int -&gt; System.Web.UI.DataVisualization.Charting.Series" Usage="new System.Web.UI.DataVisualization.Charting.Series (name, yValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.AxisLabel" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AxisLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AxisLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AxisLabel : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.AxisLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ChartArea" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartArea As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChartArea { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartArea : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.ChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -242,6 +247,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ChartType" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartType As SeriesChartType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::SeriesChartType ChartType { System::Web::UI::DataVisualization::Charting::SeriesChartType get(); void set(System::Web::UI::DataVisualization::Charting::SeriesChartType value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartType : System.Web.UI.DataVisualization.Charting.SeriesChartType with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.ChartType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -283,6 +289,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ChartTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChartTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartTypeName : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.ChartTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -329,6 +336,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="series.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -353,6 +361,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property EmptyPointStyle As DataPointCustomProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::DataPointCustomProperties ^ EmptyPointStyle { System::Web::UI::DataVisualization::Charting::DataPointCustomProperties ^ get(); void set(System::Web::UI::DataVisualization::Charting::DataPointCustomProperties ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EmptyPointStyle : System.Web.UI.DataVisualization.Charting.DataPointCustomProperties with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -399,6 +408,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -444,6 +454,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.IsXValueIndexed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsXValueIndexed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsXValueIndexed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsXValueIndexed : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.IsXValueIndexed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -490,6 +501,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Legend" />
       <MemberSignature Language="VB.NET" Value="Public Property Legend As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Legend { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Legend : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.Legend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -530,6 +542,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.MarkerStep" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerStep As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerStep { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerStep : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.MarkerStep" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -567,6 +580,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -606,6 +620,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Palette" />
       <MemberSignature Language="VB.NET" Value="Public Property Palette As ChartColorPalette" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartColorPalette Palette { System::Web::UI::DataVisualization::Charting::ChartColorPalette get(); void set(System::Web::UI::DataVisualization::Charting::ChartColorPalette value); };" />
+      <MemberSignature Language="F#" Value="member this.Palette : System.Web.UI.DataVisualization.Charting.ChartColorPalette with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.Palette" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -657,6 +672,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Points" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Points As DataPointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::DataPointCollection ^ Points { System::Web::UI::DataVisualization::Charting::DataPointCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Points : System.Web.UI.DataVisualization.Charting.DataPointCollection" Usage="System.Web.UI.DataVisualization.Charting.Series.Points" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -698,6 +714,7 @@ public void CreateSecondLegend()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ShadowColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ShadowColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ShadowColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.ShadowColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -761,6 +778,7 @@ public void SetSeriesShadow()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ShadowOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property ShadowOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ShadowOffset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowOffset : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.ShadowOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -816,6 +834,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.SmartLabelStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property SmartLabelStyle As SmartLabelStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::SmartLabelStyle ^ SmartLabelStyle { System::Web::UI::DataVisualization::Charting::SmartLabelStyle ^ get(); void set(System::Web::UI::DataVisualization::Charting::SmartLabelStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SmartLabelStyle : System.Web.UI.DataVisualization.Charting.SmartLabelStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.SmartLabelStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -856,6 +875,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.Sort(System.Collections.Generic.IComparer{System.Web.UI.DataVisualization.Charting.DataPoint})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (comparer As IComparer(Of DataPoint))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Collections::Generic::IComparer&lt;System::Web::UI::DataVisualization::Charting::DataPoint ^&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; -&gt; unit" Usage="series.Sort comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -878,6 +898,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.Sort(System.Web.UI.DataVisualization.Charting.PointSortOrder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Web::UI::DataVisualization::Charting::PointSortOrder pointSortOrder);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Web.UI.DataVisualization.Charting.PointSortOrder -&gt; unit" Usage="series.Sort pointSortOrder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -900,6 +921,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.Sort(System.Web.UI.DataVisualization.Charting.PointSortOrder,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Web::UI::DataVisualization::Charting::PointSortOrder pointSortOrder, System::String ^ sortBy);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Web.UI.DataVisualization.Charting.PointSortOrder * string -&gt; unit" Usage="series.Sort (pointSortOrder, sortBy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -925,6 +947,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.XAxisType" />
       <MemberSignature Language="VB.NET" Value="Public Property XAxisType As AxisType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::AxisType XAxisType { System::Web::UI::DataVisualization::Charting::AxisType get(); void set(System::Web::UI::DataVisualization::Charting::AxisType value); };" />
+      <MemberSignature Language="F#" Value="member this.XAxisType : System.Web.UI.DataVisualization.Charting.AxisType with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.XAxisType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -962,6 +985,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.XValueMember" />
       <MemberSignature Language="VB.NET" Value="Public Property XValueMember As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XValueMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XValueMember : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.XValueMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1000,6 +1024,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.XValueType" />
       <MemberSignature Language="VB.NET" Value="Public Property XValueType As ChartValueType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartValueType XValueType { System::Web::UI::DataVisualization::Charting::ChartValueType get(); void set(System::Web::UI::DataVisualization::Charting::ChartValueType value); };" />
+      <MemberSignature Language="F#" Value="member this.XValueType : System.Web.UI.DataVisualization.Charting.ChartValueType with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.XValueType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1047,6 +1072,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.YAxisType" />
       <MemberSignature Language="VB.NET" Value="Public Property YAxisType As AxisType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::AxisType YAxisType { System::Web::UI::DataVisualization::Charting::AxisType get(); void set(System::Web::UI::DataVisualization::Charting::AxisType value); };" />
+      <MemberSignature Language="F#" Value="member this.YAxisType : System.Web.UI.DataVisualization.Charting.AxisType with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.YAxisType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1086,6 +1112,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.YValueMembers" />
       <MemberSignature Language="VB.NET" Value="Public Property YValueMembers As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ YValueMembers { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.YValueMembers : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.YValueMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1127,6 +1154,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.YValuesPerPoint" />
       <MemberSignature Language="VB.NET" Value="Public Property YValuesPerPoint As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int YValuesPerPoint { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.YValuesPerPoint : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.YValuesPerPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1167,6 +1195,7 @@ public void SetSeriesShadowOffset ()
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.YValueType" />
       <MemberSignature Language="VB.NET" Value="Public Property YValueType As ChartValueType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartValueType YValueType { System::Web::UI::DataVisualization::Charting::ChartValueType get(); void set(System::Web::UI::DataVisualization::Charting::ChartValueType value); };" />
+      <MemberSignature Language="F#" Value="member this.YValueType : System.Web.UI.DataVisualization.Charting.ChartValueType with get, set" Usage="System.Web.UI.DataVisualization.Charting.Series.YValueType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

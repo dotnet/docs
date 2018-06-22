@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionStartedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TransactionStartedEventHandler(sender As Object, e As TransactionEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TransactionStartedEventHandler(System::Object ^ sender, TransactionEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TransactionStartedEventHandler = delegate of obj * TransactionEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

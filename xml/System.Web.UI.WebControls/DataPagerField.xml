@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerField" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataPagerField&#xA;Implements IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataPagerField abstract : System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type DataPagerField = class&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function CloneField () As DataPagerField" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Web::UI::WebControls::DataPagerField ^ CloneField();" />
+      <MemberSignature Language="F#" Value="member this.CloneField : unit -&gt; System.Web.UI.WebControls.DataPagerField" Usage="dataPagerField.CloneField " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CopyProperties (newField As DataPagerField)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CopyProperties(System::Web::UI::WebControls::DataPagerField ^ newField);" />
+      <MemberSignature Language="F#" Value="abstract member CopyProperties : System.Web.UI.WebControls.DataPagerField -&gt; unit&#xA;override this.CopyProperties : System.Web.UI.WebControls.DataPagerField -&gt; unit" Usage="dataPagerField.CopyProperties newField" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.CreateDataPagers(System.Web.UI.WebControls.DataPagerFieldItem,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CreateDataPagers (container As DataPagerFieldItem, startRowIndex As Integer, maximumRows As Integer, totalRowCount As Integer, fieldIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CreateDataPagers(System::Web::UI::WebControls::DataPagerFieldItem ^ container, int startRowIndex, int maximumRows, int totalRowCount, int fieldIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDataPagers : System.Web.UI.WebControls.DataPagerFieldItem * int * int * int * int -&gt; unit" Usage="dataPagerField.CreateDataPagers (container, startRowIndex, maximumRows, totalRowCount, fieldIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.CreateField" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateField () As DataPagerField" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Web::UI::WebControls::DataPagerField ^ CreateField();" />
+      <MemberSignature Language="F#" Value="abstract member CreateField : unit -&gt; System.Web.UI.WebControls.DataPagerField" Usage="dataPagerField.CreateField " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.DataPager" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DataPager As DataPager" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::DataPager ^ DataPager { System::Web::UI::WebControls::DataPager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataPager : System.Web.UI.WebControls.DataPager" Usage="System.Web.UI.WebControls.DataPagerField.DataPager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.GetQueryStringNavigateUrl(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetQueryStringNavigateUrl (pageNumber As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetQueryStringNavigateUrl(int pageNumber);" />
+      <MemberSignature Language="F#" Value="member this.GetQueryStringNavigateUrl : int -&gt; string" Usage="dataPagerField.GetQueryStringNavigateUrl pageNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -287,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub HandleEvent (e As CommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void HandleEvent(System::Web::UI::WebControls::CommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member HandleEvent : System.Web.UI.WebControls.CommandEventArgs -&gt; unit" Usage="dataPagerField.HandleEvent e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -317,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.DataPagerField.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -342,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="dataPagerField.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.OnFieldChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFieldChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFieldChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnFieldChanged : unit -&gt; unit&#xA;override this.OnFieldChanged : unit -&gt; unit" Usage="dataPagerField.OnFieldChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -410,6 +421,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.QueryStringHandled" />
       <MemberSignature Language="VB.NET" Value="Protected Property QueryStringHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool QueryStringHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.QueryStringHandled : bool with get, set" Usage="System.Web.UI.WebControls.DataPagerField.QueryStringHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -440,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.QueryStringValue" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property QueryStringValue As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ QueryStringValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryStringValue : string" Usage="System.Web.UI.WebControls.DataPagerField.QueryStringValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -473,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="dataPagerField.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -507,6 +521,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataPagerField.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -628,6 +643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="dataPagerField.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -659,6 +675,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.ViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ViewState As StateBag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::StateBag ^ ViewState { System::Web::UI::StateBag ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewState : System.Web.UI.StateBag" Usage="System.Web.UI.WebControls.DataPagerField.ViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -694,6 +711,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.DataPagerField.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

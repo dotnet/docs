@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComEventsHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class ComEventsHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComEventsHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type ComEventsHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComEventsHelper.Combine(System.Object,System.Guid,System.Int32,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Combine (rcw As Object, iid As Guid, dispid As Integer, d As Delegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Combine(System::Object ^ rcw, Guid iid, int dispid, Delegate ^ d);" />
+      <MemberSignature Language="F#" Value="static member Combine : obj * Guid * int * Delegate -&gt; unit" Usage="System.Runtime.InteropServices.ComEventsHelper.Combine (rcw, iid, dispid, d)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComEventsHelper.Remove(System.Object,System.Guid,System.Int32,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Remove (rcw As Object, iid As Guid, dispid As Integer, d As Delegate) As Delegate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Delegate ^ Remove(System::Object ^ rcw, Guid iid, int dispid, Delegate ^ d);" />
+      <MemberSignature Language="F#" Value="static member Remove : obj * Guid * int * Delegate -&gt; Delegate" Usage="System.Runtime.InteropServices.ComEventsHelper.Remove (rcw, iid, dispid, d)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

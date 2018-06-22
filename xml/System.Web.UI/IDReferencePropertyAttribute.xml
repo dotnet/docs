@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IDReferencePropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IDReferencePropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IDReferencePropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type IDReferencePropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IDReferencePropertyAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (referencedControlType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDReferencePropertyAttribute(Type ^ referencedControlType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.IDReferencePropertyAttribute : Type -&gt; System.Web.UI.IDReferencePropertyAttribute" Usage="new System.Web.UI.IDReferencePropertyAttribute referencedControlType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IDReferencePropertyAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="iDReferencePropertyAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IDReferencePropertyAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="iDReferencePropertyAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDReferencePropertyAttribute.ReferencedControlType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedControlType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReferencedControlType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedControlType : Type" Usage="System.Web.UI.IDReferencePropertyAttribute.ReferencedControlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

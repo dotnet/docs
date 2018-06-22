@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ContextBindingElementImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextBindingElementImporter&#xA;Implements IPolicyImportExtension, IWsdlImportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextBindingElementImporter : System::ServiceModel::Description::IPolicyImportExtension, System::ServiceModel::Description::IWsdlImportExtension" />
+  <TypeSignature Language="F#" Value="type ContextBindingElementImporter = class&#xA;    interface IPolicyImportExtension&#xA;    interface IWsdlImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElementImporter.BeforeImport(System.Web.Services.Description.ServiceDescriptionCollection,System.Xml.Schema.XmlSchemaSet,System.Collections.Generic.ICollection{System.Xml.XmlElement})" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeforeImport (wsdlDocuments As ServiceDescriptionCollection, xmlSchemas As XmlSchemaSet, policy As ICollection(Of XmlElement))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeforeImport(System::Web::Services::Description::ServiceDescriptionCollection ^ wsdlDocuments, System::Xml::Schema::XmlSchemaSet ^ xmlSchemas, System::Collections::Generic::ICollection&lt;System::Xml::XmlElement ^&gt; ^ policy);" />
+      <MemberSignature Language="F#" Value="abstract member BeforeImport : System.Web.Services.Description.ServiceDescriptionCollection * System.Xml.Schema.XmlSchemaSet * System.Collections.Generic.ICollection&lt;System.Xml.XmlElement&gt; -&gt; unit&#xA;override this.BeforeImport : System.Web.Services.Description.ServiceDescriptionCollection * System.Xml.Schema.XmlSchemaSet * System.Collections.Generic.ICollection&lt;System.Xml.XmlElement&gt; -&gt; unit" Usage="contextBindingElementImporter.BeforeImport (wsdlDocuments, xmlSchemas, policy)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport(System.Web.Services.Description.ServiceDescriptionCollection,System.Xml.Schema.XmlSchemaSet,System.Collections.Generic.ICollection{System.Xml.XmlElement})</InterfaceMember>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElementImporter.ImportContract(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlContractConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportContract (importer As WsdlImporter, context As WsdlContractConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportContract(System::ServiceModel::Description::WsdlImporter ^ importer, System::ServiceModel::Description::WsdlContractConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ImportContract : System.ServiceModel.Description.WsdlImporter * System.ServiceModel.Description.WsdlContractConversionContext -&gt; unit&#xA;override this.ImportContract : System.ServiceModel.Description.WsdlImporter * System.ServiceModel.Description.WsdlContractConversionContext -&gt; unit" Usage="contextBindingElementImporter.ImportContract (importer, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.ImportContract(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlContractConversionContext)</InterfaceMember>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElementImporter.ImportEndpoint(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlEndpointConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportEndpoint (importer As WsdlImporter, context As WsdlEndpointConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportEndpoint(System::ServiceModel::Description::WsdlImporter ^ importer, System::ServiceModel::Description::WsdlEndpointConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ImportEndpoint : System.ServiceModel.Description.WsdlImporter * System.ServiceModel.Description.WsdlEndpointConversionContext -&gt; unit&#xA;override this.ImportEndpoint : System.ServiceModel.Description.WsdlImporter * System.ServiceModel.Description.WsdlEndpointConversionContext -&gt; unit" Usage="contextBindingElementImporter.ImportEndpoint (importer, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlEndpointConversionContext)</InterfaceMember>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextBindingElementImporter.ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ImportPolicy (importer As MetadataImporter, context As PolicyConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportPolicy(System::ServiceModel::Description::MetadataImporter ^ importer, System::ServiceModel::Description::PolicyConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ImportPolicy : System.ServiceModel.Description.MetadataImporter * System.ServiceModel.Description.PolicyConversionContext -&gt; unit&#xA;override this.ImportPolicy : System.ServiceModel.Description.MetadataImporter * System.ServiceModel.Description.PolicyConversionContext -&gt; unit" Usage="contextBindingElementImporter.ImportPolicy (importer, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>

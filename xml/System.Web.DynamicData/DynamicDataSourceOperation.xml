@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicDataSourceOperation" />
   <TypeSignature Language="VB.NET" Value="Public Enum DynamicDataSourceOperation" />
   <TypeSignature Language="C++ CLI" Value="public enum class DynamicDataSourceOperation" />
+  <TypeSignature Language="F#" Value="type DynamicDataSourceOperation = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.ContextCreate" />
       <MemberSignature Language="VB.NET" Value="ContextCreate" />
       <MemberSignature Language="C++ CLI" Value="ContextCreate" />
+      <MemberSignature Language="F#" Value="ContextCreate = 4" Usage="System.Web.DynamicData.DynamicDataSourceOperation.ContextCreate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 0" Usage="System.Web.DynamicData.DynamicDataSourceOperation.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 1" Usage="System.Web.DynamicData.DynamicDataSourceOperation.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.Select" />
       <MemberSignature Language="VB.NET" Value="Select" />
       <MemberSignature Language="C++ CLI" Value="Select" />
+      <MemberSignature Language="F#" Value="Select = 2" Usage="System.Web.DynamicData.DynamicDataSourceOperation.Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.Update" />
       <MemberSignature Language="VB.NET" Value="Update" />
       <MemberSignature Language="C++ CLI" Value="Update" />
+      <MemberSignature Language="F#" Value="Update = 3" Usage="System.Web.DynamicData.DynamicDataSourceOperation.Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

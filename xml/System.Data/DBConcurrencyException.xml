@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DBConcurrencyException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DBConcurrencyException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DBConcurrencyException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type DBConcurrencyException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DBConcurrencyException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.DBConcurrencyException : string -&gt; System.Data.DBConcurrencyException" Usage="new System.Data.DBConcurrencyException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DBConcurrencyException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Data.DBConcurrencyException : string * Exception -&gt; System.Data.DBConcurrencyException" Usage="new System.Data.DBConcurrencyException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.#ctor(System.String,System.Exception,System.Data.DataRow[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, dataRows As DataRow())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DBConcurrencyException(System::String ^ message, Exception ^ inner, cli::array &lt;System::Data::DataRow ^&gt; ^ dataRows);" />
+      <MemberSignature Language="F#" Value="new System.Data.DBConcurrencyException : string * Exception * System.Data.DataRow[] -&gt; System.Data.DBConcurrencyException" Usage="new System.Data.DBConcurrencyException (message, inner, dataRows)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.CopyToRows(System.Data.DataRow[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyToRows (array As DataRow())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyToRows(cli::array &lt;System::Data::DataRow ^&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="member this.CopyToRows : System.Data.DataRow[] -&gt; unit" Usage="dBConcurrencyException.CopyToRows array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.CopyToRows(System.Data.DataRow[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyToRows (array As DataRow(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyToRows(cli::array &lt;System::Data::DataRow ^&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="member this.CopyToRows : System.Data.DataRow[] * int -&gt; unit" Usage="dBConcurrencyException.CopyToRows (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netcore-2.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" FrameworkAlternate="netcore-2.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" FrameworkAlternate="netcore-2.1" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="dBConcurrencyException.GetObjectData (si, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -321,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DBConcurrencyException.Row" />
       <MemberSignature Language="VB.NET" Value="Public Property Row As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ Row { System::Data::DataRow ^ get(); void set(System::Data::DataRow ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Data.DataRow with get, set" Usage="System.Data.DBConcurrencyException.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -362,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DBConcurrencyException.RowCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowCount : int" Usage="System.Data.DBConcurrencyException.RowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

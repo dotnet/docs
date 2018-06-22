@@ -59,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.Fixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationFixupCallback,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (o As Object, callback As XmlSerializationFixupCallback, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Fixup(System::Object ^ o, System::Xml::Serialization::XmlSerializationFixupCallback ^ callback, int count);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializationReader.Fixup : obj * System.Xml.Serialization.XmlSerializationFixupCallback * int -&gt; System.Xml.Serialization.XmlSerializationReader.Fixup" Usage="new System.Xml.Serialization.XmlSerializationReader.Fixup (o, callback, count)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.Fixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationFixupCallback,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (o As Object, callback As XmlSerializationFixupCallback, ids As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Fixup(System::Object ^ o, System::Xml::Serialization::XmlSerializationFixupCallback ^ callback, cli::array &lt;System::String ^&gt; ^ ids);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializationReader.Fixup : obj * System.Xml.Serialization.XmlSerializationFixupCallback * string[] -&gt; System.Xml.Serialization.XmlSerializationReader.Fixup" Usage="new System.Xml.Serialization.XmlSerializationReader.Fixup (o, callback, ids)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Callback" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callback As XmlSerializationFixupCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSerializationFixupCallback ^ Callback { System::Xml::Serialization::XmlSerializationFixupCallback ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Callback : System.Xml.Serialization.XmlSerializationFixupCallback" Usage="System.Xml.Serialization.XmlSerializationReader.Fixup.Callback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Ids" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ids As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Ids { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ids : string[]" Usage="System.Xml.Serialization.XmlSerializationReader.Fixup.Ids" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.Fixup.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Source { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : obj with get, set" Usage="System.Xml.Serialization.XmlSerializationReader.Fixup.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

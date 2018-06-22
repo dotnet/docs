@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GiveFeedbackEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub GiveFeedbackEventHandler(sender As Object, e As GiveFeedbackEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void GiveFeedbackEventHandler(System::Object ^ sender, GiveFeedbackEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type GiveFeedbackEventHandler = delegate of obj * GiveFeedbackEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

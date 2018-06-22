@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.UdpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class UdpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of UdpBinding, UdpBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class UdpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::UdpBinding ^, System::ServiceModel::Configuration::UdpBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type UdpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;UdpBinding, UdpBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

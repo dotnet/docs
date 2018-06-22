@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.TrustVersion" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrustVersion" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrustVersion abstract" />
+  <TypeSignature Language="F#" Value="type TrustVersion = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.TrustVersion.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As TrustVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::TrustVersion ^ Default { System::ServiceModel::Security::TrustVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.ServiceModel.Security.TrustVersion" Usage="System.ServiceModel.Security.TrustVersion.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.TrustVersion.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As XmlDictionaryString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ Namespace { System::Xml::XmlDictionaryString ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : System.Xml.XmlDictionaryString" Usage="System.ServiceModel.Security.TrustVersion.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.TrustVersion.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prefix As XmlDictionaryString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ Prefix { System::Xml::XmlDictionaryString ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : System.Xml.XmlDictionaryString" Usage="System.ServiceModel.Security.TrustVersion.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.TrustVersion.WSTrust13" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSTrust13 As TrustVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::TrustVersion ^ WSTrust13 { System::ServiceModel::Security::TrustVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSTrust13 : System.ServiceModel.Security.TrustVersion" Usage="System.ServiceModel.Security.TrustVersion.WSTrust13" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.TrustVersion.WSTrustFeb2005" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSTrustFeb2005 As TrustVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::TrustVersion ^ WSTrustFeb2005 { System::ServiceModel::Security::TrustVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSTrustFeb2005 : System.ServiceModel.Security.TrustVersion" Usage="System.ServiceModel.Security.TrustVersion.WSTrustFeb2005" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

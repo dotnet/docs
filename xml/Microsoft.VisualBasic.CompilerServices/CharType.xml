@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.CharType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CharType" />
   <TypeSignature Language="C++ CLI" Value="public ref class CharType sealed" />
+  <TypeSignature Language="F#" Value="type CharType = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.CharType.FromObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static char FromObject(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj -&gt; char" Usage="Microsoft.VisualBasic.CompilerServices.CharType.FromObject Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.CharType.FromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static char FromString(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; char" Usage="Microsoft.VisualBasic.CompilerServices.CharType.FromString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

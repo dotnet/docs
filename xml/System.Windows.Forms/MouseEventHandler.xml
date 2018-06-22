@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MouseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub MouseEventHandler(sender As Object, e As MouseEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void MouseEventHandler(System::Object ^ sender, MouseEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type MouseEventHandler = delegate of obj * MouseEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

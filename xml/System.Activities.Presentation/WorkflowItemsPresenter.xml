@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowItemsPresenter" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowItemsPresenter&#xA;Inherits ContentControl&#xA;Implements IMultipleDragEnabledCompositeView" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowItemsPresenter : System::Windows::Controls::ContentControl, System::Activities::Presentation::IMultipleDragEnabledCompositeView" />
+  <TypeSignature Language="F#" Value="type WorkflowItemsPresenter = class&#xA;    inherit ContentControl&#xA;    interface IMultipleDragEnabledCompositeView&#xA;    interface ICompositeView" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.AllowedItemType" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowedItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ AllowedItemType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedItemType : Type with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.AllowedItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.AllowedItemTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AllowedItemTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AllowedItemTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AllowedItemTypeProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.AllowedItemTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.CanPasteItems(System.Collections.Generic.List{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function CanPasteItems (itemsToPaste As List(Of Object)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanPasteItems(System::Collections::Generic::List&lt;System::Object ^&gt; ^ itemsToPaste);" />
+      <MemberSignature Language="F#" Value="abstract member CanPasteItems : System.Collections.Generic.List&lt;obj&gt; -&gt; bool&#xA;override this.CanPasteItems : System.Collections.Generic.List&lt;obj&gt; -&gt; bool" Usage="workflowItemsPresenter.CanPasteItems itemsToPaste" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.ICompositeView.CanPasteItems(System.Collections.Generic.List{System.Object})</InterfaceMember>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.DroppingTypeResolvingOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property DroppingTypeResolvingOptions As TypeResolvingOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::View::TypeResolvingOptions ^ DroppingTypeResolvingOptions { System::Activities::Presentation::View::TypeResolvingOptions ^ get(); void set(System::Activities::Presentation::View::TypeResolvingOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DroppingTypeResolvingOptions : System.Activities.Presentation.View.TypeResolvingOptions with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.DroppingTypeResolvingOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.DroppingTypeResolvingOptionsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DroppingTypeResolvingOptionsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DroppingTypeResolvingOptionsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DroppingTypeResolvingOptionsProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.DroppingTypeResolvingOptionsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.FooterTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property FooterTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ FooterTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FooterTemplate : System.Windows.DataTemplate with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.FooterTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.FooterTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FooterTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FooterTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FooterTemplateProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.FooterTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ HeaderTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Windows.DataTemplate with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.HeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.HeaderTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.HeaderTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -270,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.HintText" />
       <MemberSignature Language="VB.NET" Value="Public Property HintText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HintText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HintText : string with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.HintText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -290,6 +301,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.HintTextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HintTextProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HintTextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HintTextProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.HintTextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -309,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.IndexProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IndexProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IndexProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndexProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.IndexProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -328,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.IsDefaultContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDefaultContainer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefaultContainer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefaultContainer : bool with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.IsDefaultContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -349,6 +363,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.IsDefaultContainerProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDefaultContainerProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDefaultContainerProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDefaultContainerProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.IsDefaultContainerProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -368,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.Items" />
       <MemberSignature Language="VB.NET" Value="Public Property Items As ModelItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::ModelItemCollection ^ Items { System::Activities::Presentation::Model::ModelItemCollection ^ get(); void set(System::Activities::Presentation::Model::ModelItemCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Activities.Presentation.Model.ModelItemCollection with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -388,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemsPanel As ItemsPanelTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemsPanelTemplate ^ ItemsPanel { System::Windows::Controls::ItemsPanelTemplate ^ get(); void set(System::Windows::Controls::ItemsPanelTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsPanel : System.Windows.Controls.ItemsPanelTemplate with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -408,6 +425,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsPanelProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemsPanelProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsPanelProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanelProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -449,6 +467,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.ItemsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.ItemsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -468,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="workflowItemsPresenter.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -489,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnDragEnter(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragEnter (e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragEnter(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragEnter : System.Windows.DragEventArgs -&gt; unit" Usage="workflowItemsPresenter.OnDragEnter e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -512,6 +533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnDragOver(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragOver (e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragOver : System.Windows.DragEventArgs -&gt; unit" Usage="workflowItemsPresenter.OnDragOver e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -535,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnDrop(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDrop (e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDrop(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDrop : System.Windows.DragEventArgs -&gt; unit" Usage="workflowItemsPresenter.OnDrop e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -558,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnInitialized(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInitialized : EventArgs -&gt; unit" Usage="workflowItemsPresenter.OnInitialized e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -580,6 +604,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemMoved(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemMoved(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnItemMoved(System::Activities::Presentation::Model::ModelItem ^ modelItem);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemMoved : System.Activities.Presentation.Model.ModelItem -&gt; unit&#xA;override this.OnItemMoved : System.Activities.Presentation.Model.ModelItem -&gt; unit" Usage="workflowItemsPresenter.OnItemMoved modelItem" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.ICompositeView.OnItemMoved(System.Activities.Presentation.Model.ModelItem)</InterfaceMember>
@@ -613,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsCopied(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
       <MemberSignature Language="VB.NET" Value="Public Function OnItemsCopied (itemsToCopy As List(Of ModelItem)) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ OnItemsCopied(System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ itemsToCopy);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsCopied : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; obj&#xA;override this.OnItemsCopied : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; obj" Usage="workflowItemsPresenter.OnItemsCopied itemsToCopy" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.ICompositeView.OnItemsCopied(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})</InterfaceMember>
@@ -640,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsCut(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
       <MemberSignature Language="VB.NET" Value="Public Function OnItemsCut (itemsToCut As List(Of ModelItem)) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ OnItemsCut(System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ itemsToCut);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsCut : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; obj&#xA;override this.OnItemsCut : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; obj" Usage="workflowItemsPresenter.OnItemsCut itemsToCut" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.ICompositeView.OnItemsCut(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})</InterfaceMember>
@@ -667,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsDelete(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnItemsDelete (itemsToDelete As List(Of ModelItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnItemsDelete(System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ itemsToDelete);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsDelete : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; unit&#xA;override this.OnItemsDelete : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; unit" Usage="workflowItemsPresenter.OnItemsDelete itemsToDelete" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.ICompositeView.OnItemsDelete(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})</InterfaceMember>
@@ -693,6 +721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsMoved(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnItemsMoved (movedItems As List(Of ModelItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnItemsMoved(System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ movedItems);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsMoved : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; unit&#xA;override this.OnItemsMoved : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; unit" Usage="workflowItemsPresenter.OnItemsMoved movedItems" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.IMultipleDragEnabledCompositeView.OnItemsMoved(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})</InterfaceMember>
@@ -719,6 +748,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsPasted(System.Collections.Generic.List{System.Object},System.Collections.Generic.List{System.Object},System.Windows.Point,System.Activities.Presentation.WorkflowViewElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnItemsPasted (itemsToPaste As List(Of Object), metaData As List(Of Object), pastePoint As Point, pastePointReference As WorkflowViewElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnItemsPasted(System::Collections::Generic::List&lt;System::Object ^&gt; ^ itemsToPaste, System::Collections::Generic::List&lt;System::Object ^&gt; ^ metaData, System::Windows::Point pastePoint, System::Activities::Presentation::WorkflowViewElement ^ pastePointReference);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsPasted : System.Collections.Generic.List&lt;obj&gt; * System.Collections.Generic.List&lt;obj&gt; * System.Windows.Point * System.Activities.Presentation.WorkflowViewElement -&gt; unit&#xA;override this.OnItemsPasted : System.Collections.Generic.List&lt;obj&gt; * System.Collections.Generic.List&lt;obj&gt; * System.Windows.Point * System.Activities.Presentation.WorkflowViewElement -&gt; unit" Usage="workflowItemsPresenter.OnItemsPasted (itemsToPaste, metaData, pastePoint, pastePointReference)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.ICompositeView.OnItemsPasted(System.Collections.Generic.List{System.Object},System.Collections.Generic.List{System.Object},System.Windows.Point,System.Activities.Presentation.WorkflowViewElement)</InterfaceMember>
@@ -751,6 +781,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.SortSelectedItems(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
       <MemberSignature Language="VB.NET" Value="Public Function SortSelectedItems (selectedItems As List(Of ModelItem)) As List(Of ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ SortSelectedItems(System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ selectedItems);" />
+      <MemberSignature Language="F#" Value="abstract member SortSelectedItems : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;&#xA;override this.SortSelectedItems : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="workflowItemsPresenter.SortSelectedItems selectedItems" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.IMultipleDragEnabledCompositeView.SortSelectedItems(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})</InterfaceMember>
@@ -778,6 +809,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property SpacerTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ SpacerTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SpacerTemplate : System.Windows.DataTemplate with get, set" Usage="System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -798,6 +830,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SpacerTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SpacerTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SpacerTemplateProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

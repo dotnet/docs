@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SecurityTokenReceivedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenReceivedEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenReceivedEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SecurityTokenReceivedEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken securityToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.#ctor(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenReceivedEventArgs(System::IdentityModel::Tokens::SecurityToken ^ securityToken);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SecurityTokenReceivedEventArgs : System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Services.SecurityTokenReceivedEventArgs" Usage="new System.IdentityModel.Services.SecurityTokenReceivedEventArgs securityToken" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken securityToken, string signInContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.#ctor(System.IdentityModel.Tokens.SecurityToken,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenReceivedEventArgs(System::IdentityModel::Tokens::SecurityToken ^ securityToken, System::String ^ signInContext);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SecurityTokenReceivedEventArgs : System.IdentityModel.Tokens.SecurityToken * string -&gt; System.IdentityModel.Services.SecurityTokenReceivedEventArgs" Usage="new System.IdentityModel.Services.SecurityTokenReceivedEventArgs (securityToken, signInContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SecurityToken" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityToken As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ SecurityToken { System::IdentityModel::Tokens::SecurityToken ^ get(); void set(System::IdentityModel::Tokens::SecurityToken ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityToken : System.IdentityModel.Tokens.SecurityToken with get, set" Usage="System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SecurityToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SignInContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignInContext As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignInContext { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignInContext : string" Usage="System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SignInContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

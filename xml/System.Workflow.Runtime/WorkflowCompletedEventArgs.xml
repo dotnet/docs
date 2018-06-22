@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowCompletedEventArgs&#xA;Inherits WorkflowEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowCompletedEventArgs : System::Workflow::Runtime::WorkflowEventArgs" />
+  <TypeSignature Language="F#" Value="type WorkflowCompletedEventArgs = class&#xA;    inherit WorkflowEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowCompletedEventArgs.OutputParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputParameters As Dictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ OutputParameters { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputParameters : System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="System.Workflow.Runtime.WorkflowCompletedEventArgs.OutputParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowCompletedEventArgs.WorkflowDefinition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowDefinition As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ WorkflowDefinition { System::Workflow::ComponentModel::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowDefinition : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.Runtime.WorkflowCompletedEventArgs.WorkflowDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

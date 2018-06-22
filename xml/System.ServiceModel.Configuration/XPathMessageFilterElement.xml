@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.XPathMessageFilterElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XPathMessageFilterElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageFilterElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type XPathMessageFilterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XPathMessageFilterElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="xPathMessageFilterElement.DeserializeElement (reader, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XPathMessageFilterElement.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As XPathMessageFilter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::XPathMessageFilter ^ Filter { System::ServiceModel::Dispatcher::XPathMessageFilter ^ get(); void set(System::ServiceModel::Dispatcher::XPathMessageFilter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.ServiceModel.Dispatcher.XPathMessageFilter with get, set" Usage="System.ServiceModel.Configuration.XPathMessageFilterElement.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XPathMessageFilterElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.XPathMessageFilterElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XPathMessageFilterElement.SerializeToXmlElement(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeToXmlElement (writer As XmlWriter, elementName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeToXmlElement(System::Xml::XmlWriter ^ writer, System::String ^ elementName);" />
+      <MemberSignature Language="F#" Value="override this.SerializeToXmlElement : System.Xml.XmlWriter * string -&gt; bool" Usage="xPathMessageFilterElement.SerializeToXmlElement (writer, elementName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

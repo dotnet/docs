@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange" />
   <TypeSignature Language="VB.NET" Value="Public Class CultureSpecificCharacterBufferRange" />
   <TypeSignature Language="C++ CLI" Value="public ref class CultureSpecificCharacterBufferRange" />
+  <TypeSignature Language="F#" Value="type CultureSpecificCharacterBufferRange = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Globalization.CultureInfo culture, valuetype System.Windows.Media.TextFormatting.CharacterBufferRange characterBufferRange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange.#ctor(System.Globalization.CultureInfo,System.Windows.Media.TextFormatting.CharacterBufferRange)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureSpecificCharacterBufferRange(System::Globalization::CultureInfo ^ culture, System::Windows::Media::TextFormatting::CharacterBufferRange characterBufferRange);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange : System.Globalization.CultureInfo * System.Windows.Media.TextFormatting.CharacterBufferRange -&gt; System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange" Usage="new System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange (culture, characterBufferRange)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange.CharacterBufferRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharacterBufferRange As CharacterBufferRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::CharacterBufferRange CharacterBufferRange { System::Windows::Media::TextFormatting::CharacterBufferRange get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterBufferRange : System.Windows.Media.TextFormatting.CharacterBufferRange" Usage="System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange.CharacterBufferRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange.CultureInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureInfo As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CultureInfo { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CultureInfo : System.Globalization.CultureInfo" Usage="System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange.CultureInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

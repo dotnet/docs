@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationFocusChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AutomationFocusChangedEventArgs&#xA;Inherits AutomationEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AutomationFocusChangedEventArgs : System::Windows::Automation::AutomationEventArgs" />
+  <TypeSignature Language="F#" Value="type AutomationFocusChangedEventArgs = class&#xA;    inherit AutomationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationFocusChangedEventArgs.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (idObject As Integer, idChild As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AutomationFocusChangedEventArgs(int idObject, int idChild);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.AutomationFocusChangedEventArgs : int * int -&gt; System.Windows.Automation.AutomationFocusChangedEventArgs" Usage="new System.Windows.Automation.AutomationFocusChangedEventArgs (idObject, idChild)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationFocusChangedEventArgs.ChildId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChildId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildId : int" Usage="System.Windows.Automation.AutomationFocusChangedEventArgs.ChildId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationFocusChangedEventArgs.ObjectId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ObjectId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectId : int" Usage="System.Windows.Automation.AutomationFocusChangedEventArgs.ObjectId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

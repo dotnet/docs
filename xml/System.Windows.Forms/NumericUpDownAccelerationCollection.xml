@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class NumericUpDownAccelerationCollection&#xA;Inherits MarshalByRefObject&#xA;Implements ICollection(Of NumericUpDownAcceleration), IEnumerable(Of NumericUpDownAcceleration)" />
   <TypeSignature Language="C++ CLI" Value="public ref class NumericUpDownAccelerationCollection : MarshalByRefObject, System::Collections::Generic::ICollection&lt;System::Windows::Forms::NumericUpDownAcceleration ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Forms::NumericUpDownAcceleration ^&gt;" />
+  <TypeSignature Language="F#" Value="type NumericUpDownAccelerationCollection = class&#xA;    inherit MarshalByRefObject&#xA;    interface ICollection&lt;NumericUpDownAcceleration&gt;&#xA;    interface seq&lt;NumericUpDownAcceleration&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.Add(System.Windows.Forms.NumericUpDownAcceleration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (acceleration As NumericUpDownAcceleration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Forms::NumericUpDownAcceleration ^ acceleration);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Forms.NumericUpDownAcceleration -&gt; unit&#xA;override this.Add : System.Windows.Forms.NumericUpDownAcceleration -&gt; unit" Usage="numericUpDownAccelerationCollection.Add acceleration" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.AddRange(System.Windows.Forms.NumericUpDownAcceleration[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (ParamArray accelerations As NumericUpDownAcceleration())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(... cli::array &lt;System::Windows::Forms::NumericUpDownAcceleration ^&gt; ^ accelerations);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.NumericUpDownAcceleration[] -&gt; unit" Usage="numericUpDownAccelerationCollection.AddRange accelerations" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="numericUpDownAccelerationCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.Contains(System.Windows.Forms.NumericUpDownAcceleration)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (acceleration As NumericUpDownAcceleration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Forms::NumericUpDownAcceleration ^ acceleration);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.Forms.NumericUpDownAcceleration -&gt; bool&#xA;override this.Contains : System.Windows.Forms.NumericUpDownAcceleration -&gt; bool" Usage="numericUpDownAccelerationCollection.Contains acceleration" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.CopyTo(System.Windows.Forms.NumericUpDownAcceleration[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As NumericUpDownAcceleration(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Forms::NumericUpDownAcceleration ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Windows.Forms.NumericUpDownAcceleration[] * int -&gt; unit&#xA;override this.CopyTo : System.Windows.Forms.NumericUpDownAcceleration[] * int -&gt; unit" Usage="numericUpDownAccelerationCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAccelerationCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.NumericUpDownAccelerationCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -240,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAccelerationCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.NumericUpDownAccelerationCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAccelerationCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As NumericUpDownAcceleration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::NumericUpDownAcceleration ^ default[int] { System::Windows::Forms::NumericUpDownAcceleration ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.NumericUpDownAcceleration" Usage="System.Windows.Forms.NumericUpDownAccelerationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.Remove(System.Windows.Forms.NumericUpDownAcceleration)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (acceleration As NumericUpDownAcceleration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Forms::NumericUpDownAcceleration ^ acceleration);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Forms.NumericUpDownAcceleration -&gt; bool&#xA;override this.Remove : System.Windows.Forms.NumericUpDownAcceleration -&gt; bool" Usage="numericUpDownAccelerationCollection.Remove acceleration" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.InstallContext" />
   <TypeSignature Language="VB.NET" Value="Public Class InstallContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstallContext" />
+  <TypeSignature Language="F#" Value="type InstallContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.#ctor(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (logFilePath As String, commandLine As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstallContext(System::String ^ logFilePath, cli::array &lt;System::String ^&gt; ^ commandLine);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.Install.InstallContext : string * string[] -&gt; System.Configuration.Install.InstallContext" Usage="new System.Configuration.Install.InstallContext (logFilePath, commandLine)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.IsParameterTrue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsParameterTrue (paramName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsParameterTrue(System::String ^ paramName);" />
+      <MemberSignature Language="F#" Value="member this.IsParameterTrue : string -&gt; bool" Usage="installContext.IsParameterTrue paramName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.LogMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LogMessage (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogMessage(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.LogMessage : string -&gt; unit" Usage="installContext.LogMessage message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -229,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.InstallContext.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As StringDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringDictionary ^ Parameters { System::Collections::Specialized::StringDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Specialized.StringDictionary" Usage="System.Configuration.Install.InstallContext.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -268,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.ParseCommandLine(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function ParseCommandLine (args As String()) As StringDictionary" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Collections::Specialized::StringDictionary ^ ParseCommandLine(cli::array &lt;System::String ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member ParseCommandLine : string[] -&gt; System.Collections.Specialized.StringDictionary" Usage="System.Configuration.Install.InstallContext.ParseCommandLine args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

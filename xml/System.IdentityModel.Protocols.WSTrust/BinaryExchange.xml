@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.BinaryExchange" />
   <TypeSignature Language="VB.NET" Value="Public Class BinaryExchange" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryExchange" />
+  <TypeSignature Language="F#" Value="type BinaryExchange = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.BinaryExchange.#ctor(System.Byte[],System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binaryData As Byte(), valueType As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryExchange(cli::array &lt;System::Byte&gt; ^ binaryData, Uri ^ valueType);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.BinaryExchange : byte[] * Uri -&gt; System.IdentityModel.Protocols.WSTrust.BinaryExchange" Usage="new System.IdentityModel.Protocols.WSTrust.BinaryExchange (binaryData, valueType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.BinaryExchange.#ctor(System.Byte[],System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binaryData As Byte(), valueType As Uri, encodingType As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryExchange(cli::array &lt;System::Byte&gt; ^ binaryData, Uri ^ valueType, Uri ^ encodingType);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.BinaryExchange : byte[] * Uri * Uri -&gt; System.IdentityModel.Protocols.WSTrust.BinaryExchange" Usage="new System.IdentityModel.Protocols.WSTrust.BinaryExchange (binaryData, valueType, encodingType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BinaryData As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ BinaryData { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinaryData : byte[]" Usage="System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncodingType As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ EncodingType { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncodingType : Uri" Usage="System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueType As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ValueType { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueType : Uri" Usage="System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

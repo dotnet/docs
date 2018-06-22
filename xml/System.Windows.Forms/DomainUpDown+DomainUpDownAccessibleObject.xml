@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class DomainUpDown.DomainUpDownAccessibleObject&#xA;Inherits Control.ControlAccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public: ref class DomainUpDown::DomainUpDownAccessibleObject : System::Windows::Forms::Control::ControlAccessibleObject" />
+  <TypeSignature Language="F#" Value="type DomainUpDown.DomainUpDownAccessibleObject = class&#xA;    inherit Control.ControlAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.#ctor(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DomainUpDownAccessibleObject(System::Windows::Forms::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject : System.Windows.Forms.Control -&gt; System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject" Usage="new System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.GetChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChild (index As Integer) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetChild : int -&gt; System.Windows.Forms.AccessibleObject" Usage="domainUpDownAccessibleObject.GetChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
+      <MemberSignature Language="F#" Value="override this.GetChildCount : unit -&gt; int" Usage="domainUpDownAccessibleObject.GetChildCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -156,6 +161,7 @@ In order to get the accessibility improvements introduced with .NET Framework 4.
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.Role" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

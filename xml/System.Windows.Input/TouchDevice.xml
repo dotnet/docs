@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchDevice" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TouchDevice&#xA;Inherits InputDevice&#xA;Implements IManipulator" />
   <TypeSignature Language="C++ CLI" Value="public ref class TouchDevice abstract : System::Windows::Input::InputDevice, System::Windows::Input::IManipulator" />
+  <TypeSignature Language="F#" Value="type TouchDevice = class&#xA;    inherit InputDevice&#xA;    interface IManipulator" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (deviceId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TouchDevice(int deviceId);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.TouchDevice : int -&gt; System.Windows.Input.TouchDevice" Usage="new System.Windows.Input.TouchDevice deviceId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Activate" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="member this.Activate : unit -&gt; unit" Usage="touchDevice.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Activated" />
       <MemberSignature Language="VB.NET" Value="Public Event Activated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activated;" />
+      <MemberSignature Language="F#" Value="member this.Activated : EventHandler " Usage="member this.Activated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.ActiveSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ActiveSource As PresentationSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::PresentationSource ^ ActiveSource { System::Windows::PresentationSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveSource : System.Windows.PresentationSource" Usage="System.Windows.Input.TouchDevice.ActiveSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Capture(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function Capture (element As IInputElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Capture(System::Windows::IInputElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Capture : System.Windows.IInputElement -&gt; bool" Usage="touchDevice.Capture element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Capture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Capture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Capture(System::Windows::IInputElement ^ element, System::Windows::Input::CaptureMode captureMode);" />
+      <MemberSignature Language="F#" Value="member this.Capture : System.Windows.IInputElement * System.Windows.Input.CaptureMode -&gt; bool" Usage="touchDevice.Capture (element, captureMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.Captured" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Captured As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ Captured { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Captured : System.Windows.IInputElement" Usage="System.Windows.Input.TouchDevice.Captured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.CaptureMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CaptureMode As CaptureMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::CaptureMode CaptureMode { System::Windows::Input::CaptureMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaptureMode : System.Windows.Input.CaptureMode" Usage="System.Windows.Input.TouchDevice.CaptureMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Deactivate" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Deactivate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Deactivate();" />
+      <MemberSignature Language="F#" Value="member this.Deactivate : unit -&gt; unit" Usage="touchDevice.Deactivate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -324,6 +334,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Deactivated" />
       <MemberSignature Language="VB.NET" Value="Public Event Deactivated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivated;" />
+      <MemberSignature Language="F#" Value="member this.Deactivated : EventHandler " Usage="member this.Deactivated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.DirectlyOver" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectlyOver As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ DirectlyOver { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectlyOver : System.Windows.IInputElement" Usage="System.Windows.Input.TouchDevice.DirectlyOver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -364,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.GetIntermediateTouchPoints(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIntermediateTouchPoints (relativeTo As IInputElement) As TouchPointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Input::TouchPointCollection ^ GetIntermediateTouchPoints(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="abstract member GetIntermediateTouchPoints : System.Windows.IInputElement -&gt; System.Windows.Input.TouchPointCollection" Usage="touchDevice.GetIntermediateTouchPoints relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -388,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.GetTouchPoint(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTouchPoint (relativeTo As IInputElement) As TouchPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Input::TouchPoint ^ GetTouchPoint(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="abstract member GetTouchPoint : System.Windows.IInputElement -&gt; System.Windows.Input.TouchPoint" Usage="touchDevice.GetTouchPoint relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -412,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Windows.Input.TouchDevice.Id" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Input.IManipulator.Id</InterfaceMember>
@@ -452,6 +467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.IsActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsActive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsActive : bool" Usage="System.Windows.Input.TouchDevice.IsActive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -472,6 +488,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCapture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.OnCapture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCapture(System::Windows::IInputElement ^ element, System::Windows::Input::CaptureMode captureMode);" />
+      <MemberSignature Language="F#" Value="abstract member OnCapture : System.Windows.IInputElement * System.Windows.Input.CaptureMode -&gt; unit&#xA;override this.OnCapture : System.Windows.IInputElement * System.Windows.Input.CaptureMode -&gt; unit" Usage="touchDevice.OnCapture (element, captureMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -504,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.OnManipulationEnded(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnManipulationEnded (cancel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnManipulationEnded(bool cancel);" />
+      <MemberSignature Language="F#" Value="abstract member OnManipulationEnded : bool -&gt; unit&#xA;override this.OnManipulationEnded : bool -&gt; unit" Usage="touchDevice.OnManipulationEnded cancel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -534,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.OnManipulationStarted" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnManipulationStarted ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnManipulationStarted();" />
+      <MemberSignature Language="F#" Value="abstract member OnManipulationStarted : unit -&gt; unit&#xA;override this.OnManipulationStarted : unit -&gt; unit" Usage="touchDevice.OnManipulationStarted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -562,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.ReportDown" />
       <MemberSignature Language="VB.NET" Value="Protected Function ReportDown () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool ReportDown();" />
+      <MemberSignature Language="F#" Value="member this.ReportDown : unit -&gt; bool" Usage="touchDevice.ReportDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -594,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.ReportMove" />
       <MemberSignature Language="VB.NET" Value="Protected Function ReportMove () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool ReportMove();" />
+      <MemberSignature Language="F#" Value="member this.ReportMove : unit -&gt; bool" Usage="touchDevice.ReportMove " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -626,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.ReportUp" />
       <MemberSignature Language="VB.NET" Value="Protected Function ReportUp () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool ReportUp();" />
+      <MemberSignature Language="F#" Value="member this.ReportUp : unit -&gt; bool" Usage="touchDevice.ReportUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -658,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.SetActiveSource(System.Windows.PresentationSource)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetActiveSource (activeSource As PresentationSource)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetActiveSource(System::Windows::PresentationSource ^ activeSource);" />
+      <MemberSignature Language="F#" Value="member this.SetActiveSource : System.Windows.PresentationSource -&gt; unit" Usage="touchDevice.SetActiveSource activeSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -686,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Synchronize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Synchronize();" />
+      <MemberSignature Language="F#" Value="member this.Synchronize : unit -&gt; unit" Usage="touchDevice.Synchronize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -752,6 +776,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.System#Windows#Input#IManipulator#Id" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Id As Integer Implements IManipulator.Id" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Input.IManipulator.Id { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Input.TouchDevice.System.Windows.Input.IManipulator.Id" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Input.IManipulator.Id</InterfaceMember>
@@ -821,6 +846,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.Target" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Target As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ Target { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.IInputElement" Usage="System.Windows.Input.TouchDevice.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -841,6 +867,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Updated" />
       <MemberSignature Language="VB.NET" Value="Public Event Updated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Updated;" />
+      <MemberSignature Language="F#" Value="member this.Updated : EventHandler " Usage="member this.Updated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Windows.Input.IManipulator.Updated</InterfaceMember>

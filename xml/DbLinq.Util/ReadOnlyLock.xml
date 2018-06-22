@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:DbLinq.Util.ReadOnlyLock" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadOnlyLock&#xA;Inherits BaseLock" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyLock : DbLinq::Util::BaseLock" />
+  <TypeSignature Language="F#" Value="type ReadOnlyLock = class&#xA;    inherit BaseLock" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.ReadOnlyLock.#ctor(System.Threading.ReaderWriterLockSlim)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (locks As ReaderWriterLockSlim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyLock(System::Threading::ReaderWriterLockSlim ^ locks);" />
+      <MemberSignature Language="F#" Value="new DbLinq.Util.ReadOnlyLock : System.Threading.ReaderWriterLockSlim -&gt; DbLinq.Util.ReadOnlyLock" Usage="new DbLinq.Util.ReadOnlyLock locks" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.ReadOnlyLock.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="readOnlyLock.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

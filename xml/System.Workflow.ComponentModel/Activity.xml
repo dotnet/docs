@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="VB.NET" Value="Public Class Activity&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class Activity : System::Workflow::ComponentModel::DependencyObject" />
+  <TypeSignature Language="F#" Value="type Activity = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,6 +148,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Activity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Activity : string -&gt; System.Workflow.ComponentModel.Activity" Usage="new System.Workflow.ComponentModel.Activity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -169,6 +171,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.ActivityContextGuidProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ActivityContextGuidProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ActivityContextGuidProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ActivityContextGuidProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Activity.ActivityContextGuidProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -195,6 +198,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function Cancel (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Workflow::ComponentModel::ActivityExecutionStatus Cancel(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus&#xA;override this.Cancel : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="activity.Cancel executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -219,6 +223,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Canceling" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Canceling As EventHandler(Of ActivityExecutionStatusChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt; ^ Canceling;" />
+      <MemberSignature Language="F#" Value="member this.Canceling : EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " Usage="member this.Canceling : System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -258,6 +263,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.CancelingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CancelingEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CancelingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CancelingEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Activity.CancelingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -286,6 +292,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Activity ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Workflow.ComponentModel.Activity" Usage="activity.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -314,6 +321,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Closed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As EventHandler(Of ActivityExecutionStatusChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt; ^ Closed;" />
+      <MemberSignature Language="F#" Value="member this.Closed : EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " Usage="member this.Closed : System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -353,6 +361,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.ClosedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClosedEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ClosedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClosedEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Activity.ClosedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -381,6 +390,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Compensating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Compensating As EventHandler(Of ActivityExecutionStatusChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt; ^ Compensating;" />
+      <MemberSignature Language="F#" Value="member this.Compensating : EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " Usage="member this.Compensating : System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -420,6 +430,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.CompensatingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CompensatingEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CompensatingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CompensatingEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Activity.CompensatingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -448,6 +459,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Workflow.ComponentModel.Activity.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -486,6 +498,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Workflow.ComponentModel.Activity.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -524,6 +537,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="abstract member Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus&#xA;override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="activity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -565,6 +579,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Executing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Executing As EventHandler(Of ActivityExecutionStatusChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt; ^ Executing;" />
+      <MemberSignature Language="F#" Value="member this.Executing : EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " Usage="member this.Executing : System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -604,6 +619,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.ExecutingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExecutingEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ExecutingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExecutingEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Activity.ExecutingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -632,6 +648,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.ExecutionResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionResult As ActivityExecutionResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityExecutionResult ExecutionResult { System::Workflow::ComponentModel::ActivityExecutionResult get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecutionResult : System.Workflow.ComponentModel.ActivityExecutionResult" Usage="System.Workflow.ComponentModel.Activity.ExecutionResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -667,6 +684,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.ExecutionStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionStatus As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityExecutionStatus ExecutionStatus { System::Workflow::ComponentModel::ActivityExecutionStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecutionStatus : System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="System.Workflow.ComponentModel.Activity.ExecutionStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -702,6 +720,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.Faulting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Faulting As EventHandler(Of ActivityExecutionStatusChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt; ^ Faulting;" />
+      <MemberSignature Language="F#" Value="member this.Faulting : EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " Usage="member this.Faulting : System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -736,6 +755,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.FaultingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FaultingEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ FaultingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FaultingEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Activity.FaultingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -781,6 +801,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.GetActivityByName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActivityByName (activityQualifiedName As String) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Activity ^ GetActivityByName(System::String ^ activityQualifiedName);" />
+      <MemberSignature Language="F#" Value="member this.GetActivityByName : string -&gt; System.Workflow.ComponentModel.Activity" Usage="activity.GetActivityByName activityQualifiedName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -814,6 +835,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.GetActivityByName(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActivityByName (activityQualifiedName As String, withinThisActivityOnly As Boolean) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Activity ^ GetActivityByName(System::String ^ activityQualifiedName, bool withinThisActivityOnly);" />
+      <MemberSignature Language="F#" Value="member this.GetActivityByName : string * bool -&gt; System.Workflow.ComponentModel.Activity" Usage="activity.GetActivityByName (activityQualifiedName, withinThisActivityOnly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -850,6 +872,7 @@ public class SendEmail : Activity
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus HandleFault(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.HandleFault(System.Workflow.ComponentModel.ActivityExecutionContext,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Workflow::ComponentModel::ActivityExecutionStatus HandleFault(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="abstract member HandleFault : System.Workflow.ComponentModel.ActivityExecutionContext * Exception -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus&#xA;override this.HandleFault : System.Workflow.ComponentModel.ActivityExecutionContext * Exception -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="activity.HandleFault (executionContext, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -885,6 +908,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Initialize(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : IServiceProvider -&gt; unit&#xA;override this.Initialize : IServiceProvider -&gt; unit" Usage="activity.Initialize provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -919,6 +943,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Invoke``1(System.EventHandler{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub Invoke(Of T As EventArgs) (handler As EventHandler(Of T), e As T)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : EventArgs void Invoke(EventHandler&lt;T&gt; ^ handler, T e);" />
+      <MemberSignature Language="F#" Value="member this.Invoke : EventHandler&lt;'T (requires 'T :&gt; EventArgs)&gt; * 'T -&gt; unit (requires 'T :&gt; EventArgs)" Usage="activity.Invoke (handler, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -952,6 +977,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Invoke``1(System.Workflow.ComponentModel.IActivityEventListener{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub Invoke(Of T As EventArgs) (eventListener As IActivityEventListener(Of T), e As T)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : EventArgs void Invoke(System::Workflow::ComponentModel::IActivityEventListener&lt;T&gt; ^ eventListener, T e);" />
+      <MemberSignature Language="F#" Value="member this.Invoke : System.Workflow.ComponentModel.IActivityEventListener&lt;'T (requires 'T :&gt; EventArgs)&gt; * 'T -&gt; unit (requires 'T :&gt; EventArgs)" Usage="activity.Invoke (eventListener, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -985,6 +1011,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.IsDynamicActivity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDynamicActivity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDynamicActivity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDynamicActivity : bool" Usage="System.Workflow.ComponentModel.Activity.IsDynamicActivity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1031,6 +1058,7 @@ public class SendEmail : Activity
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.Activity Load(class System.IO.Stream stream, class System.Workflow.ComponentModel.Activity outerActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Load(System.IO.Stream,System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::Activity ^ Load(System::IO::Stream ^ stream, System::Workflow::ComponentModel::Activity ^ outerActivity);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream * System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Activity" Usage="System.Workflow.ComponentModel.Activity.Load (stream, outerActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1067,6 +1095,7 @@ public class SendEmail : Activity
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.Activity Load(class System.IO.Stream stream, class System.Workflow.ComponentModel.Activity outerActivity, class System.Runtime.Serialization.IFormatter formatter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Load(System.IO.Stream,System.Workflow.ComponentModel.Activity,System.Runtime.Serialization.IFormatter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::Activity ^ Load(System::IO::Stream ^ stream, System::Workflow::ComponentModel::Activity ^ outerActivity, System::Runtime::Serialization::IFormatter ^ formatter);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream * System.Workflow.ComponentModel.Activity * System.Runtime.Serialization.IFormatter -&gt; System.Workflow.ComponentModel.Activity" Usage="System.Workflow.ComponentModel.Activity.Load (stream, outerActivity, formatter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1106,6 +1135,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.ComponentModel.Activity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1159,6 +1189,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.OnActivityExecutionContextLoad(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnActivityExecutionContextLoad (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnActivityExecutionContextLoad(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivityExecutionContextLoad : IServiceProvider -&gt; unit&#xA;override this.OnActivityExecutionContextLoad : IServiceProvider -&gt; unit" Usage="activity.OnActivityExecutionContextLoad provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1182,6 +1213,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.OnActivityExecutionContextUnload(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnActivityExecutionContextUnload (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnActivityExecutionContextUnload(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivityExecutionContextUnload : IServiceProvider -&gt; unit&#xA;override this.OnActivityExecutionContextUnload : IServiceProvider -&gt; unit" Usage="activity.OnActivityExecutionContextUnload provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1205,6 +1237,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.OnClosed(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosed (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosed(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member OnClosed : IServiceProvider -&gt; unit&#xA;override this.OnClosed : IServiceProvider -&gt; unit" Usage="activity.OnClosed provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1235,6 +1268,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As CompositeActivity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::CompositeActivity ^ Parent { System::Workflow::ComponentModel::CompositeActivity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Workflow.ComponentModel.CompositeActivity" Usage="System.Workflow.ComponentModel.Activity.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1270,6 +1304,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.QualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QualifiedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QualifiedName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QualifiedName : string" Usage="System.Workflow.ComponentModel.Activity.QualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1305,6 +1340,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.RaiseEvent(System.Workflow.ComponentModel.DependencyProperty,System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub RaiseEvent (dependencyEvent As DependencyProperty, sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void RaiseEvent(System::Workflow::ComponentModel::DependencyProperty ^ dependencyEvent, System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.RaiseEvent : System.Workflow.ComponentModel.DependencyProperty * obj * EventArgs -&gt; unit" Usage="activity.RaiseEvent (dependencyEvent, sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1344,6 +1380,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.RaiseGenericEvent``1(System.Workflow.ComponentModel.DependencyProperty,System.Object,``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub RaiseGenericEvent(Of T As EventArgs) (dependencyEvent As DependencyProperty, sender As Object, e As T)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : EventArgs void RaiseGenericEvent(System::Workflow::ComponentModel::DependencyProperty ^ dependencyEvent, System::Object ^ sender, T e);" />
+      <MemberSignature Language="F#" Value="member this.RaiseGenericEvent : System.Workflow.ComponentModel.DependencyProperty * obj * 'T -&gt; unit (requires 'T :&gt; EventArgs)" Usage="activity.RaiseGenericEvent (dependencyEvent, sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1379,6 +1416,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.RegisterForStatusChange(System.Workflow.ComponentModel.DependencyProperty,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterForStatusChange (dependencyProp As DependencyProperty, activityStatusChangeListener As IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForStatusChange(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProp, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt; ^ activityStatusChangeListener);" />
+      <MemberSignature Language="F#" Value="member this.RegisterForStatusChange : System.Workflow.ComponentModel.DependencyProperty * System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; -&gt; unit" Usage="activity.RegisterForStatusChange (dependencyProp, activityStatusChangeListener)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1426,6 +1464,7 @@ public class SendEmail : Activity
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Save(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream -&gt; unit" Usage="activity.Save stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1450,6 +1489,7 @@ public class SendEmail : Activity
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, class System.Runtime.Serialization.IFormatter formatter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Save(System.IO.Stream,System.Runtime.Serialization.IFormatter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::Runtime::Serialization::IFormatter ^ formatter);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream * System.Runtime.Serialization.IFormatter -&gt; unit" Usage="activity.Save (stream, formatter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1485,6 +1525,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Activity.StatusChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event StatusChanged As EventHandler(Of ActivityExecutionStatusChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt; ^ StatusChanged;" />
+      <MemberSignature Language="F#" Value="member this.StatusChanged : EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " Usage="member this.StatusChanged : System.EventHandler&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1527,6 +1568,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Activity.StatusChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StatusChangedEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ StatusChangedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StatusChangedEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Activity.StatusChangedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1555,6 +1597,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activity.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1592,6 +1635,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.TrackData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub TrackData (userData As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TrackData(System::Object ^ userData);" />
+      <MemberSignature Language="F#" Value="member this.TrackData : obj -&gt; unit" Usage="activity.TrackData userData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1628,6 +1672,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.TrackData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub TrackData (userDataKey As String, userData As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TrackData(System::String ^ userDataKey, System::Object ^ userData);" />
+      <MemberSignature Language="F#" Value="member this.TrackData : string * obj -&gt; unit" Usage="activity.TrackData (userDataKey, userData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1656,6 +1701,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.Uninitialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Uninitialize (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Uninitialize(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member Uninitialize : IServiceProvider -&gt; unit&#xA;override this.Uninitialize : IServiceProvider -&gt; unit" Usage="activity.Uninitialize provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1688,6 +1734,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Activity.UnregisterForStatusChange(System.Workflow.ComponentModel.DependencyProperty,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterForStatusChange (dependencyProp As DependencyProperty, activityStatusChangeListener As IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterForStatusChange(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProp, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt; ^ activityStatusChangeListener);" />
+      <MemberSignature Language="F#" Value="member this.UnregisterForStatusChange : System.Workflow.ComponentModel.DependencyProperty * System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt; -&gt; unit" Usage="activity.UnregisterForStatusChange (dependencyProp, activityStatusChangeListener)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1727,6 +1774,7 @@ public class SendEmail : Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Activity.WorkflowInstanceId" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WorkflowInstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Guid WorkflowInstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowInstanceId : Guid" Usage="System.Workflow.ComponentModel.Activity.WorkflowInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

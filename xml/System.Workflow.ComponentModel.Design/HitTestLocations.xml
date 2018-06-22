@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.HitTestLocations" />
   <TypeSignature Language="VB.NET" Value="Public Enum HitTestLocations" />
   <TypeSignature Language="C++ CLI" Value="public enum class HitTestLocations" />
+  <TypeSignature Language="F#" Value="type HitTestLocations = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.ActionArea" />
       <MemberSignature Language="VB.NET" Value="ActionArea" />
       <MemberSignature Language="C++ CLI" Value="ActionArea" />
+      <MemberSignature Language="F#" Value="ActionArea = 2" Usage="System.Workflow.ComponentModel.Design.HitTestLocations.ActionArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 32" Usage="System.Workflow.ComponentModel.Design.HitTestLocations.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Connector" />
       <MemberSignature Language="VB.NET" Value="Connector" />
       <MemberSignature Language="C++ CLI" Value="Connector" />
+      <MemberSignature Language="F#" Value="Connector = 64" Usage="System.Workflow.ComponentModel.Design.HitTestLocations.Connector" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Designer" />
       <MemberSignature Language="VB.NET" Value="Designer" />
       <MemberSignature Language="C++ CLI" Value="Designer" />
+      <MemberSignature Language="F#" Value="Designer = 1" Usage="System.Workflow.ComponentModel.Design.HitTestLocations.Designer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 4" Usage="System.Workflow.ComponentModel.Design.HitTestLocations.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Workflow.ComponentModel.Design.HitTestLocations.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -163,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 16" Usage="System.Workflow.ComponentModel.Design.HitTestLocations.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -182,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 8" Usage="System.Workflow.ComponentModel.Design.HitTestLocations.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

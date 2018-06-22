@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.AssemblyContextControlItem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyContextControlItem&#xA;Inherits ContextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyContextControlItem sealed : System::Activities::Presentation::ContextItem" />
+  <TypeSignature Language="F#" Value="type AssemblyContextControlItem = class&#xA;    inherit ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.AssemblyContextControlItem.AllAssemblyNamesInContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllAssemblyNamesInContext As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ AllAssemblyNamesInContext { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllAssemblyNamesInContext : seq&lt;string&gt;" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.AllAssemblyNamesInContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly GetAssembly(class System.Reflection.AssemblyName assemblyName, class System.Activities.Presentation.Hosting.IMultiTargetingSupportService multiTargetingService) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetAssembly(System.Reflection.AssemblyName,System.Activities.Presentation.Hosting.IMultiTargetingSupportService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Assembly ^ GetAssembly(System::Reflection::AssemblyName ^ assemblyName, System::Activities::Presentation::Hosting::IMultiTargetingSupportService ^ multiTargetingService);" />
+      <MemberSignature Language="F#" Value="static member GetAssembly : System.Reflection.AssemblyName * System.Activities.Presentation.Hosting.IMultiTargetingSupportService -&gt; System.Reflection.Assembly" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetAssembly (assemblyName, multiTargetingService)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetEnvironmentAssemblies(System.Activities.Presentation.Hosting.IMultiTargetingSupportService)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnvironmentAssemblies (multiTargetingService As IMultiTargetingSupportService) As IEnumerable(Of Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ GetEnvironmentAssemblies(System::Activities::Presentation::Hosting::IMultiTargetingSupportService ^ multiTargetingService);" />
+      <MemberSignature Language="F#" Value="member this.GetEnvironmentAssemblies : System.Activities.Presentation.Hosting.IMultiTargetingSupportService -&gt; seq&lt;System.Reflection.Assembly&gt;" Usage="assemblyContextControlItem.GetEnvironmentAssemblies multiTargetingService" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetEnvironmentAssemblyNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnvironmentAssemblyNames () As IEnumerable(Of AssemblyName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Reflection::AssemblyName ^&gt; ^ GetEnvironmentAssemblyNames();" />
+      <MemberSignature Language="F#" Value="member this.GetEnvironmentAssemblyNames : unit -&gt; seq&lt;System.Reflection.AssemblyName&gt;" Usage="assemblyContextControlItem.GetEnvironmentAssemblyNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.AssemblyContextControlItem.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.AssemblyContextControlItem.LocalAssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalAssemblyName As AssemblyName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyName ^ LocalAssemblyName { System::Reflection::AssemblyName ^ get(); void set(System::Reflection::AssemblyName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LocalAssemblyName : System.Reflection.AssemblyName with get, set" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.LocalAssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.AssemblyContextControlItem.ReferencedAssemblyNames" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferencedAssemblyNames As IList(Of AssemblyName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Reflection::AssemblyName ^&gt; ^ ReferencedAssemblyNames { System::Collections::Generic::IList&lt;System::Reflection::AssemblyName ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::Reflection::AssemblyName ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblyNames : System.Collections.Generic.IList&lt;System.Reflection.AssemblyName&gt; with get, set" Usage="System.Activities.Presentation.Hosting.AssemblyContextControlItem.ReferencedAssemblyNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

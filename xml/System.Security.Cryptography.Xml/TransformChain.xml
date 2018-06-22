@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.TransformChain" />
   <TypeSignature Language="VB.NET" Value="Public Class TransformChain" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransformChain" />
+  <TypeSignature Language="F#" Value="type TransformChain = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Security.Cryptography.Xml.Transform transform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.TransformChain.Add(System.Security.Cryptography.Xml.Transform)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Security::Cryptography::Xml::Transform ^ transform);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Security.Cryptography.Xml.Transform -&gt; unit" Usage="transformChain.Add transform" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.TransformChain.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Cryptography.Xml.TransformChain.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.TransformChain.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="transformChain.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.TransformChain.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::Transform ^ default[int] { System::Security::Cryptography::Xml::Transform ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Security.Cryptography.Xml.Transform" Usage="System.Security.Cryptography.Xml.TransformChain.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

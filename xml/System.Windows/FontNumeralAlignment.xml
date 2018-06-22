@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontNumeralAlignment" />
   <TypeSignature Language="VB.NET" Value="Public Enum FontNumeralAlignment" />
   <TypeSignature Language="C++ CLI" Value="public enum class FontNumeralAlignment" />
+  <TypeSignature Language="F#" Value="type FontNumeralAlignment = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@ Example of proportional and tabbed figures
       <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralAlignment.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.FontNumeralAlignment.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +65,7 @@ Example of proportional and tabbed figures
       <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralAlignment.Proportional" />
       <MemberSignature Language="VB.NET" Value="Proportional" />
       <MemberSignature Language="C++ CLI" Value="Proportional" />
+      <MemberSignature Language="F#" Value="Proportional = 1" Usage="System.Windows.FontNumeralAlignment.Proportional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +85,7 @@ Example of proportional and tabbed figures
       <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralAlignment.Tabular" />
       <MemberSignature Language="VB.NET" Value="Tabular" />
       <MemberSignature Language="C++ CLI" Value="Tabular" />
+      <MemberSignature Language="F#" Value="Tabular = 2" Usage="System.Windows.FontNumeralAlignment.Tabular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

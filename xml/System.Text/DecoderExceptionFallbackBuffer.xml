@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderExceptionFallbackBuffer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecoderExceptionFallbackBuffer&#xA;Inherits DecoderFallbackBuffer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DecoderExceptionFallbackBuffer sealed : System::Text::DecoderFallbackBuffer" />
+  <TypeSignature Language="F#" Value="type DecoderExceptionFallbackBuffer = class&#xA;    inherit DecoderFallbackBuffer" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallbackBuffer.Fallback(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Fallback (bytesUnknown As Byte(), index As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Fallback(cli::array &lt;System::Byte&gt; ^ bytesUnknown, int index);" />
+      <MemberSignature Language="F#" Value="override this.Fallback : byte[] * int -&gt; bool" Usage="decoderExceptionFallbackBuffer.Fallback (bytesUnknown, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallbackBuffer.GetNextChar" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextChar () As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetNextChar();" />
+      <MemberSignature Language="F#" Value="override this.GetNextChar : unit -&gt; char" Usage="decoderExceptionFallbackBuffer.GetNextChar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallbackBuffer.MovePrevious" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MovePrevious () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MovePrevious();" />
+      <MemberSignature Language="F#" Value="override this.MovePrevious : unit -&gt; bool" Usage="decoderExceptionFallbackBuffer.MovePrevious " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderExceptionFallbackBuffer.Remaining" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Remaining As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Remaining { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Remaining : int" Usage="System.Text.DecoderExceptionFallbackBuffer.Remaining" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

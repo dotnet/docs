@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbErrorCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbErrorCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class OleDbErrorCollection sealed : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type OleDbErrorCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbErrorCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="oleDbErrorCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbErrorCollection.CopyTo(System.Data.OleDb.OleDbError[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As OleDbError(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::OleDb::OleDbError ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Data.OleDb.OleDbError[] * int -&gt; unit" Usage="oleDbErrorCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbErrorCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.OleDb.OleDbErrorCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbErrorCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="oleDbErrorCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbErrorCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As OleDbError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OleDb::OleDbError ^ default[int] { System::Data::OleDb::OleDbError ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.OleDb.OleDbError" Usage="System.Data.OleDb.OleDbErrorCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -233,6 +239,7 @@ public void DisplayOleDbErrorCollection(OleDbException myException)
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbErrorCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.OleDb.OleDbErrorCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -264,6 +271,7 @@ public void DisplayOleDbErrorCollection(OleDbException myException)
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbErrorCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.OleDb.OleDbErrorCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

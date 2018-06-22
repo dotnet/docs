@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.SubscribeServiceCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SubscribeServiceCallback(serviceType As Type, serviceInstance As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SubscribeServiceCallback(Type ^ serviceType, System::Object ^ serviceInstance);" />
+  <TypeSignature Language="F#" Value="type SubscribeServiceCallback = delegate of Type * obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

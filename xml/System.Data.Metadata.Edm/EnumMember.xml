@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EnumMember" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumMember&#xA;Inherits MetadataItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumMember sealed : System::Data::Metadata::Edm::MetadataItem" />
+  <TypeSignature Language="F#" Value="type EnumMember = class&#xA;    inherit MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumMember.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.EnumMember.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumMember.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Metadata.Edm.EnumMember.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EnumMember.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="enumMember.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumMember.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Data.Metadata.Edm.EnumMember.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

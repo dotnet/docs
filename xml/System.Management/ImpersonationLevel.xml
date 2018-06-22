@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ImpersonationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImpersonationLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImpersonationLevel" />
+  <TypeSignature Language="F#" Value="type ImpersonationLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ImpersonationLevel.Anonymous" />
       <MemberSignature Language="VB.NET" Value="Anonymous" />
       <MemberSignature Language="C++ CLI" Value="Anonymous" />
+      <MemberSignature Language="F#" Value="Anonymous = 1" Usage="System.Management.ImpersonationLevel.Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ImpersonationLevel.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Management.ImpersonationLevel.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ImpersonationLevel.Delegate" />
       <MemberSignature Language="VB.NET" Value="Delegate" />
       <MemberSignature Language="C++ CLI" Value="Delegate" />
+      <MemberSignature Language="F#" Value="Delegate = 4" Usage="System.Management.ImpersonationLevel.Delegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ImpersonationLevel.Identify" />
       <MemberSignature Language="VB.NET" Value="Identify" />
       <MemberSignature Language="C++ CLI" Value="Identify" />
+      <MemberSignature Language="F#" Value="Identify = 2" Usage="System.Management.ImpersonationLevel.Identify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ImpersonationLevel.Impersonate" />
       <MemberSignature Language="VB.NET" Value="Impersonate" />
       <MemberSignature Language="C++ CLI" Value="Impersonate" />
+      <MemberSignature Language="F#" Value="Impersonate = 3" Usage="System.Management.ImpersonationLevel.Impersonate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

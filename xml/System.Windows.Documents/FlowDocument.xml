@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.FlowDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class FlowDocument&#xA;Inherits FrameworkContentElement&#xA;Implements IAddChild, IDocumentPaginatorSource, IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlowDocument : System::Windows::FrameworkContentElement, IServiceProvider, System::Windows::Documents::IDocumentPaginatorSource, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type FlowDocument = class&#xA;    inherit FrameworkContentElement&#xA;    interface IDocumentPaginatorSource&#xA;    interface IServiceProvider&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.Block block) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.FlowDocument.#ctor(System.Windows.Documents.Block)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlowDocument(System::Windows::Documents::Block ^ block);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.FlowDocument : System.Windows.Documents.Block -&gt; System.Windows.Documents.FlowDocument" Usage="new System.Windows.Documents.FlowDocument block" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.Background" />
       <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Documents.FlowDocument.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.BackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.BackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.Blocks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Blocks As BlockCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::BlockCollection ^ Blocks { System::Windows::Documents::BlockCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Blocks : System.Windows.Documents.BlockCollection" Usage="System.Windows.Documents.FlowDocument.Blocks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.ColumnGap" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnGap As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ColumnGap { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnGap : double with get, set" Usage="System.Windows.Documents.FlowDocument.ColumnGap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -326,6 +332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.ColumnGapProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnGapProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnGapProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnGapProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.ColumnGapProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -345,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.ColumnRuleBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnRuleBrush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ ColumnRuleBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnRuleBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Documents.FlowDocument.ColumnRuleBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -396,6 +404,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.ColumnRuleBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnRuleBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnRuleBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnRuleBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.ColumnRuleBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -415,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.ColumnRuleWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnRuleWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ColumnRuleWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnRuleWidth : double with get, set" Usage="System.Windows.Documents.FlowDocument.ColumnRuleWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -499,6 +509,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.ColumnRuleWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnRuleWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnRuleWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnRuleWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.ColumnRuleWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -518,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.ColumnWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ColumnWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnWidth : double with get, set" Usage="System.Windows.Documents.FlowDocument.ColumnWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -607,6 +619,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.ColumnWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.ColumnWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -626,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.ContentEnd" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentEnd As TextPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextPointer ^ ContentEnd { System::Windows::Documents::TextPointer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentEnd : System.Windows.Documents.TextPointer" Usage="System.Windows.Documents.FlowDocument.ContentEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -664,6 +678,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.ContentStart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentStart As TextPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextPointer ^ ContentStart { System::Windows::Documents::TextPointer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentStart : System.Windows.Documents.TextPointer" Usage="System.Windows.Documents.FlowDocument.ContentStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -702,6 +717,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.FlowDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FlowDirection FlowDirection { System::Windows::FlowDirection get(); void set(System::Windows::FlowDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : System.Windows.FlowDirection with get, set" Usage="System.Windows.Documents.FlowDocument.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -754,6 +770,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.FlowDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FlowDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FlowDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlowDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.FlowDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -773,6 +790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.FontFamily" />
       <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FontFamily ^ FontFamily { System::Windows::Media::FontFamily ^ get(); void set(System::Windows::Media::FontFamily ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : System.Windows.Media.FontFamily with get, set" Usage="System.Windows.Documents.FlowDocument.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -856,6 +874,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.FontFamilyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontFamilyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -875,6 +894,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.FontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FontSize { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="System.Windows.Documents.FlowDocument.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -957,6 +977,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.FontSizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontSizeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -976,6 +997,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.FontStretch" />
       <MemberSignature Language="VB.NET" Value="Public Property FontStretch As FontStretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStretch FontStretch { System::Windows::FontStretch get(); void set(System::Windows::FontStretch value); };" />
+      <MemberSignature Language="F#" Value="member this.FontStretch : System.Windows.FontStretch with get, set" Usage="System.Windows.Documents.FlowDocument.FontStretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1023,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.FontStretchProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStretchProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontStretchProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.FontStretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1042,6 +1065,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.FontStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FontStyle As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle FontStyle { System::Windows::FontStyle get(); void set(System::Windows::FontStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : System.Windows.FontStyle with get, set" Usage="System.Windows.Documents.FlowDocument.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1089,6 +1113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.FontStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.FontStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1108,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.FontWeight" />
       <MemberSignature Language="VB.NET" Value="Public Property FontWeight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight FontWeight { System::Windows::FontWeight get(); void set(System::Windows::FontWeight value); };" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : System.Windows.FontWeight with get, set" Usage="System.Windows.Documents.FlowDocument.FontWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1155,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.FontWeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontWeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontWeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontWeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.FontWeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1174,6 +1201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.Foreground" />
       <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Foreground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Foreground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Documents.FlowDocument.Foreground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1223,6 +1251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.ForegroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForegroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.ForegroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1242,6 +1271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.IsColumnWidthFlexible" />
       <MemberSignature Language="VB.NET" Value="Public Property IsColumnWidthFlexible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsColumnWidthFlexible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsColumnWidthFlexible : bool with get, set" Usage="System.Windows.Documents.FlowDocument.IsColumnWidthFlexible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1294,6 +1324,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.IsColumnWidthFlexibleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsColumnWidthFlexibleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsColumnWidthFlexibleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsColumnWidthFlexibleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.IsColumnWidthFlexibleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1313,6 +1344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.IsEnabledCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsEnabledCore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsEnabledCore { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabledCore : bool" Usage="System.Windows.Documents.FlowDocument.IsEnabledCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1333,6 +1365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.IsHyphenationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsHyphenationEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHyphenationEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsHyphenationEnabled : bool with get, set" Usage="System.Windows.Documents.FlowDocument.IsHyphenationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1389,6 +1422,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.IsHyphenationEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHyphenationEnabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsHyphenationEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsHyphenationEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.IsHyphenationEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1408,6 +1442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.IsOptimalParagraphEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOptimalParagraphEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOptimalParagraphEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOptimalParagraphEnabled : bool with get, set" Usage="System.Windows.Documents.FlowDocument.IsOptimalParagraphEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1464,6 +1499,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.IsOptimalParagraphEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOptimalParagraphEnabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsOptimalParagraphEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOptimalParagraphEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.IsOptimalParagraphEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1483,6 +1519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.LineHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property LineHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LineHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.LineHeight : double with get, set" Usage="System.Windows.Documents.FlowDocument.LineHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1579,6 +1616,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.LineHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.LineHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1598,6 +1636,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.LineStackingStrategy" />
       <MemberSignature Language="VB.NET" Value="Public Property LineStackingStrategy As LineStackingStrategy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::LineStackingStrategy LineStackingStrategy { System::Windows::LineStackingStrategy get(); void set(System::Windows::LineStackingStrategy value); };" />
+      <MemberSignature Language="F#" Value="member this.LineStackingStrategy : System.Windows.LineStackingStrategy with get, set" Usage="System.Windows.Documents.FlowDocument.LineStackingStrategy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1643,6 +1682,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.LineStackingStrategyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineStackingStrategyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineStackingStrategyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineStackingStrategyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.LineStackingStrategyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1662,6 +1702,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Documents.FlowDocument.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1682,6 +1723,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.MaxPageHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPageHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxPageHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPageHeight : double with get, set" Usage="System.Windows.Documents.FlowDocument.MaxPageHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1763,6 +1805,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.MaxPageHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxPageHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxPageHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxPageHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.MaxPageHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1782,6 +1825,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.MaxPageWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPageWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxPageWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPageWidth : double with get, set" Usage="System.Windows.Documents.FlowDocument.MaxPageWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1863,6 +1907,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.MaxPageWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxPageWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxPageWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxPageWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.MaxPageWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1882,6 +1927,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.MinPageHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property MinPageHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinPageHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MinPageHeight : double with get, set" Usage="System.Windows.Documents.FlowDocument.MinPageHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1963,6 +2009,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.MinPageHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinPageHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinPageHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinPageHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.MinPageHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1982,6 +2029,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.MinPageWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MinPageWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinPageWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MinPageWidth : double with get, set" Usage="System.Windows.Documents.FlowDocument.MinPageWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2063,6 +2111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.MinPageWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinPageWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinPageWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinPageWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.MinPageWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2082,6 +2131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.FlowDocument.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="flowDocument.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2110,6 +2160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.FlowDocument.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="flowDocument.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2141,6 +2192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.PageHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property PageHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PageHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PageHeight : double with get, set" Usage="System.Windows.Documents.FlowDocument.PageHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2225,6 +2277,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.PageHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PageHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PageHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PageHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.PageHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2244,6 +2297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.PagePadding" />
       <MemberSignature Language="VB.NET" Value="Public Property PagePadding As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness PagePadding { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
+      <MemberSignature Language="F#" Value="member this.PagePadding : System.Windows.Thickness with get, set" Usage="System.Windows.Documents.FlowDocument.PagePadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2332,6 +2386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.PagePaddingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PagePaddingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PagePaddingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PagePaddingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.PagePaddingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2351,6 +2406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.PageWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property PageWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PageWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PageWidth : double with get, set" Usage="System.Windows.Documents.FlowDocument.PageWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2435,6 +2491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.PageWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PageWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PageWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PageWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.PageWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2454,6 +2511,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.FlowDocument.SetDpi(System.Windows.DpiScale)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDpi (dpiInfo As DpiScale)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDpi(System::Windows::DpiScale dpiInfo);" />
+      <MemberSignature Language="F#" Value="member this.SetDpi : System.Windows.DpiScale -&gt; unit" Usage="flowDocument.SetDpi dpiInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2512,6 +2570,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.System#Windows#Documents#IDocumentPaginatorSource#DocumentPaginator" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DocumentPaginator As DocumentPaginator Implements IDocumentPaginatorSource.DocumentPaginator" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Documents::DocumentPaginator ^ System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator { System::Windows::Documents::DocumentPaginator ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Documents.FlowDocument.System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator</InterfaceMember>
@@ -2587,6 +2646,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.TextAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TextAlignment As TextAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextAlignment TextAlignment { System::Windows::TextAlignment get(); void set(System::Windows::TextAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.TextAlignment : System.Windows.TextAlignment with get, set" Usage="System.Windows.Documents.FlowDocument.TextAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2645,6 +2705,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.TextAlignmentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextAlignmentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextAlignmentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextAlignmentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.TextAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2664,6 +2725,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.TextEffects" />
       <MemberSignature Language="VB.NET" Value="Public Property TextEffects As TextEffectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextEffectCollection ^ TextEffects { System::Windows::Media::TextEffectCollection ^ get(); void set(System::Windows::Media::TextEffectCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextEffects : System.Windows.Media.TextEffectCollection with get, set" Usage="System.Windows.Documents.FlowDocument.TextEffects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2698,6 +2760,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FlowDocument.TextEffectsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextEffectsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextEffectsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextEffectsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FlowDocument.TextEffectsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2717,6 +2780,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FlowDocument.Typography" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Typography As Typography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Typography ^ Typography { System::Windows::Documents::Typography ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Typography : System.Windows.Documents.Typography" Usage="System.Windows.Documents.FlowDocument.Typography" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

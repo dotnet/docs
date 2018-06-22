@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum LineAnchorCapStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class LineAnchorCapStyle" />
+  <TypeSignature Language="F#" Value="type LineAnchorCapStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.Arrow" />
       <MemberSignature Language="VB.NET" Value="Arrow" />
       <MemberSignature Language="C++ CLI" Value="Arrow" />
+      <MemberSignature Language="F#" Value="Arrow = 1" Usage="System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.Arrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.Diamond" />
       <MemberSignature Language="VB.NET" Value="Diamond" />
       <MemberSignature Language="C++ CLI" Value="Diamond" />
+      <MemberSignature Language="F#" Value="Diamond = 2" Usage="System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.Diamond" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.Round" />
       <MemberSignature Language="VB.NET" Value="Round" />
       <MemberSignature Language="C++ CLI" Value="Round" />
+      <MemberSignature Language="F#" Value="Round = 4" Usage="System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.Round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.Square" />
       <MemberSignature Language="VB.NET" Value="Square" />
       <MemberSignature Language="C++ CLI" Value="Square" />
+      <MemberSignature Language="F#" Value="Square = 3" Usage="System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle.Square" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

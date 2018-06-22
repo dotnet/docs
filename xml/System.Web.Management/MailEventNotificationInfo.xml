@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.MailEventNotificationInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MailEventNotificationInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class MailEventNotificationInfo sealed" />
+  <TypeSignature Language="F#" Value="type MailEventNotificationInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.Events" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Events As WebBaseEventCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebBaseEventCollection ^ Events { System::Web::Management::WebBaseEventCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Events : System.Web.Management.WebBaseEventCollection" Usage="System.Web.Management.MailEventNotificationInfo.Events" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.EventsDiscardedByBuffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsDiscardedByBuffer As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsDiscardedByBuffer { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventsDiscardedByBuffer : int" Usage="System.Web.Management.MailEventNotificationInfo.EventsDiscardedByBuffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.EventsDiscardedDueToMessageLimit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsDiscardedDueToMessageLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsDiscardedDueToMessageLimit { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventsDiscardedDueToMessageLimit : int" Usage="System.Web.Management.MailEventNotificationInfo.EventsDiscardedDueToMessageLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.EventsInBuffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsInBuffer As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsInBuffer { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventsInBuffer : int" Usage="System.Web.Management.MailEventNotificationInfo.EventsInBuffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.EventsInNotification" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsInNotification As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsInNotification { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventsInNotification : int" Usage="System.Web.Management.MailEventNotificationInfo.EventsInNotification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.EventsRemaining" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsRemaining As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsRemaining { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventsRemaining : int" Usage="System.Web.Management.MailEventNotificationInfo.EventsRemaining" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.LastNotificationUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastNotificationUtc As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastNotificationUtc { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastNotificationUtc : DateTime" Usage="System.Web.Management.MailEventNotificationInfo.LastNotificationUtc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As MailMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailMessage ^ Message { System::Net::Mail::MailMessage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.Net.Mail.MailMessage" Usage="System.Web.Management.MailEventNotificationInfo.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.MessageSequence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageSequence As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MessageSequence { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageSequence : int" Usage="System.Web.Management.MailEventNotificationInfo.MessageSequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.MessagesInNotification" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessagesInNotification As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MessagesInNotification { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessagesInNotification : int" Usage="System.Web.Management.MailEventNotificationInfo.MessagesInNotification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.NotificationSequence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotificationSequence As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NotificationSequence { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NotificationSequence : int" Usage="System.Web.Management.MailEventNotificationInfo.NotificationSequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -316,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.MailEventNotificationInfo.NotificationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotificationType As EventNotificationType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::EventNotificationType NotificationType { System::Web::Management::EventNotificationType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NotificationType : System.Web.Management.EventNotificationType" Usage="System.Web.Management.MailEventNotificationInfo.NotificationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

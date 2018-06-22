@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Subject" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2Subject" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2Subject" />
+  <TypeSignature Language="F#" Value="type Saml2Subject = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Subject.#ctor(System.IdentityModel.Tokens.Saml2NameIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nameId As Saml2NameIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Subject(System::IdentityModel::Tokens::Saml2NameIdentifier ^ nameId);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Subject : System.IdentityModel.Tokens.Saml2NameIdentifier -&gt; System.IdentityModel.Tokens.Saml2Subject" Usage="new System.IdentityModel.Tokens.Saml2Subject nameId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Subject.#ctor(System.IdentityModel.Tokens.Saml2SubjectConfirmation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subjectConfirmation As Saml2SubjectConfirmation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Subject(System::IdentityModel::Tokens::Saml2SubjectConfirmation ^ subjectConfirmation);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Subject : System.IdentityModel.Tokens.Saml2SubjectConfirmation -&gt; System.IdentityModel.Tokens.Saml2Subject" Usage="new System.IdentityModel.Tokens.Saml2Subject subjectConfirmation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Subject.NameId" />
       <MemberSignature Language="VB.NET" Value="Public Property NameId As Saml2NameIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2NameIdentifier ^ NameId { System::IdentityModel::Tokens::Saml2NameIdentifier ^ get(); void set(System::IdentityModel::Tokens::Saml2NameIdentifier ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NameId : System.IdentityModel.Tokens.Saml2NameIdentifier with get, set" Usage="System.IdentityModel.Tokens.Saml2Subject.NameId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Subject.SubjectConfirmations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectConfirmations As Collection(Of Saml2SubjectConfirmation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2SubjectConfirmation ^&gt; ^ SubjectConfirmations { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2SubjectConfirmation ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectConfirmations : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2SubjectConfirmation&gt;" Usage="System.IdentityModel.Tokens.Saml2Subject.SubjectConfirmations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

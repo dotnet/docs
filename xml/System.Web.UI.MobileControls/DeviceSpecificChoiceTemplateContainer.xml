@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class DeviceSpecificChoiceTemplateContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeviceSpecificChoiceTemplateContainer" />
+  <TypeSignature Language="F#" Value="type DeviceSpecificChoiceTemplateContainer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer.Template" />
       <MemberSignature Language="VB.NET" Value="Public Property Template As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ITemplate ^ Template { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Template : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer.Template" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

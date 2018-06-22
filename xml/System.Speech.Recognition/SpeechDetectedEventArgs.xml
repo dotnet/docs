@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SpeechDetectedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpeechDetectedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SpeechDetectedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@ _recognizer.SpeechDetected +=
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SpeechDetectedEventArgs.AudioPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioPosition As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AudioPosition { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.AudioPosition : TimeSpan" Usage="System.Speech.Recognition.SpeechDetectedEventArgs.AudioPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

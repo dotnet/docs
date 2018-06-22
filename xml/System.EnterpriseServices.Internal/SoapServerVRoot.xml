@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.SoapServerVRoot" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapServerVRoot&#xA;Implements ISoapServerVRoot" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapServerVRoot sealed : System::EnterpriseServices::Internal::ISoapServerVRoot" />
+  <TypeSignature Language="F#" Value="type SoapServerVRoot = class&#xA;    interface ISoapServerVRoot" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateVirtualRootEx (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, homePage As String, discoFile As String, secureSockets As String, authentication As String, operation As String, ByRef baseUrl As String, ByRef virtualRoot As String, ByRef physicalPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CreateVirtualRootEx(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, System::String ^ homePage, System::String ^ discoFile, System::String ^ secureSockets, System::String ^ authentication, System::String ^ operation, [Runtime::InteropServices::Out] System::String ^ % baseUrl, [Runtime::InteropServices::Out] System::String ^ % virtualRoot, [Runtime::InteropServices::Out] System::String ^ % physicalPath);" />
+      <MemberSignature Language="F#" Value="abstract member CreateVirtualRootEx : string * string * string * string * string * string * string * string *  *  *  -&gt; unit&#xA;override this.CreateVirtualRootEx : string * string * string * string * string * string * string * string *  *  *  -&gt; unit" Usage="soapServerVRoot.CreateVirtualRootEx (rootWebServer, inBaseUrl, inVirtualRoot, homePage, discoFile, secureSockets, authentication, operation, baseUrl, virtualRoot, physicalPath)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapServerVRoot.DeleteVirtualRootEx(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteVirtualRootEx (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteVirtualRootEx(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteVirtualRootEx : string * string * string -&gt; unit&#xA;override this.DeleteVirtualRootEx : string * string * string -&gt; unit" Usage="soapServerVRoot.DeleteVirtualRootEx (rootWebServer, inBaseUrl, inVirtualRoot)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.DeleteVirtualRootEx(System.String,System.String,System.String)</InterfaceMember>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetVirtualRootStatus (RootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef Exists As String, ByRef SSL As String, ByRef WindowsAuth As String, ByRef Anonymous As String, ByRef HomePage As String, ByRef DiscoFile As String, ByRef PhysicalPath As String, ByRef BaseUrl As String, ByRef VirtualRoot As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetVirtualRootStatus(System::String ^ RootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % Exists, [Runtime::InteropServices::Out] System::String ^ % SSL, [Runtime::InteropServices::Out] System::String ^ % WindowsAuth, [Runtime::InteropServices::Out] System::String ^ % Anonymous, [Runtime::InteropServices::Out] System::String ^ % HomePage, [Runtime::InteropServices::Out] System::String ^ % DiscoFile, [Runtime::InteropServices::Out] System::String ^ % PhysicalPath, [Runtime::InteropServices::Out] System::String ^ % BaseUrl, [Runtime::InteropServices::Out] System::String ^ % VirtualRoot);" />
+      <MemberSignature Language="F#" Value="abstract member GetVirtualRootStatus : string * string * string *  *  *  *  *  *  *  *  *  -&gt; unit&#xA;override this.GetVirtualRootStatus : string * string * string *  *  *  *  *  *  *  *  *  -&gt; unit" Usage="soapServerVRoot.GetVirtualRootStatus (RootWebServer, inBaseUrl, inVirtualRoot, Exists, SSL, WindowsAuth, Anonymous, HomePage, DiscoFile, PhysicalPath, BaseUrl, VirtualRoot)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>

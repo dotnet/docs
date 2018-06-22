@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.MemoryPool`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemoryPool(Of T)&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class MemoryPool abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type MemoryPool&lt;'T&gt; = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryPool`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="memoryPool.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryPool`1.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit" Usage="memoryPool.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.MemoryPool`1.MaxBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MaxBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int MaxBufferSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferSize : int" Usage="System.Buffers.MemoryPool&lt;'T&gt;.MaxBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Buffers.IMemoryOwner`1&lt;!T&gt; Rent(int32 minBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryPool`1.Rent(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Rent (Optional minBufferSize As Integer = -1) As IMemoryOwner(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member Rent : int -&gt; System.Buffers.IMemoryOwner&lt;'T&gt;" Usage="memoryPool.Rent minBufferSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.MemoryPool`1.Shared" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shared As MemoryPool(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Buffers::MemoryPool&lt;T&gt; ^ Shared { System::Buffers::MemoryPool&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shared : System.Buffers.MemoryPool&lt;'T&gt;" Usage="System.Buffers.MemoryPool&lt;'T&gt;.Shared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

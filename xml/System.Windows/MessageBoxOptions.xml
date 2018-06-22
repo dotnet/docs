@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.MessageBoxOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxOptions" />
+  <TypeSignature Language="F#" Value="type MessageBoxOptions = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxOptions.DefaultDesktopOnly" />
       <MemberSignature Language="VB.NET" Value="DefaultDesktopOnly" />
       <MemberSignature Language="C++ CLI" Value="DefaultDesktopOnly" />
+      <MemberSignature Language="F#" Value="DefaultDesktopOnly = 131072" Usage="System.Windows.MessageBoxOptions.DefaultDesktopOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.MessageBoxOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxOptions.RightAlign" />
       <MemberSignature Language="VB.NET" Value="RightAlign" />
       <MemberSignature Language="C++ CLI" Value="RightAlign" />
+      <MemberSignature Language="F#" Value="RightAlign = 524288" Usage="System.Windows.MessageBoxOptions.RightAlign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxOptions.RtlReading" />
       <MemberSignature Language="VB.NET" Value="RtlReading" />
       <MemberSignature Language="C++ CLI" Value="RtlReading" />
+      <MemberSignature Language="F#" Value="RtlReading = 1048576" Usage="System.Windows.MessageBoxOptions.RtlReading" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxOptions.ServiceNotification" />
       <MemberSignature Language="VB.NET" Value="ServiceNotification" />
       <MemberSignature Language="C++ CLI" Value="ServiceNotification" />
+      <MemberSignature Language="F#" Value="ServiceNotification = 2097152" Usage="System.Windows.MessageBoxOptions.ServiceNotification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

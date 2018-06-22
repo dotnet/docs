@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.TextExpressionCompilerError" />
   <TypeSignature Language="VB.NET" Value="Public Class TextExpressionCompilerError" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextExpressionCompilerError" />
+  <TypeSignature Language="F#" Value="type TextExpressionCompilerError = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerError.IsWarning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWarning { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : bool" Usage="System.Activities.XamlIntegration.TextExpressionCompilerError.IsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerError.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Activities.XamlIntegration.TextExpressionCompilerError.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerError.Number" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Number As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Number { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Number : string" Usage="System.Activities.XamlIntegration.TextExpressionCompilerError.Number" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerError.SourceLineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceLineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SourceLineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceLineNumber : int" Usage="System.Activities.XamlIntegration.TextExpressionCompilerError.SourceLineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

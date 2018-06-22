@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherOperationStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum DispatcherOperationStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class DispatcherOperationStatus" />
+  <TypeSignature Language="F#" Value="type DispatcherOperationStatus = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Threading.DispatcherOperationStatus.Aborted" />
       <MemberSignature Language="VB.NET" Value="Aborted" />
       <MemberSignature Language="C++ CLI" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 1" Usage="System.Windows.Threading.DispatcherOperationStatus.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Threading.DispatcherOperationStatus.Completed" />
       <MemberSignature Language="VB.NET" Value="Completed" />
       <MemberSignature Language="C++ CLI" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 2" Usage="System.Windows.Threading.DispatcherOperationStatus.Completed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Threading.DispatcherOperationStatus.Executing" />
       <MemberSignature Language="VB.NET" Value="Executing" />
       <MemberSignature Language="C++ CLI" Value="Executing" />
+      <MemberSignature Language="F#" Value="Executing = 3" Usage="System.Windows.Threading.DispatcherOperationStatus.Executing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Threading.DispatcherOperationStatus.Pending" />
       <MemberSignature Language="VB.NET" Value="Pending" />
       <MemberSignature Language="C++ CLI" Value="Pending" />
+      <MemberSignature Language="F#" Value="Pending = 0" Usage="System.Windows.Threading.DispatcherOperationStatus.Pending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

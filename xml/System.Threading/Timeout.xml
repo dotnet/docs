@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Timeout" />
   <TypeSignature Language="VB.NET" Value="Public Class Timeout" />
   <TypeSignature Language="C++ CLI" Value="public ref class Timeout abstract sealed" />
+  <TypeSignature Language="F#" Value="type Timeout = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Timeout.Infinite" />
       <MemberSignature Language="VB.NET" Value="Public Const Infinite As Integer  = -1" />
       <MemberSignature Language="C++ CLI" Value="public: int Infinite = -1;" />
+      <MemberSignature Language="F#" Value="val mutable Infinite : int" Usage="System.Threading.Timeout.Infinite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Timeout.InfiniteTimeSpan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InfiniteTimeSpan As TimeSpan " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan InfiniteTimeSpan;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InfiniteTimeSpan : TimeSpan" Usage="System.Threading.Timeout.InfiniteTimeSpan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

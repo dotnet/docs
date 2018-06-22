@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseErrorEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class WebBaseErrorEvent&#xA;Inherits WebManagementEvent" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebBaseErrorEvent : System::Web::Management::WebManagementEvent" />
+  <TypeSignature Language="F#" Value="type WebBaseErrorEvent = class&#xA;    inherit WebManagementEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.#ctor(System.String,System.Object,System.Int32,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebBaseErrorEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebBaseErrorEvent : string * obj * int * Exception -&gt; System.Web.Management.WebBaseErrorEvent" Usage="new System.Web.Management.WebBaseErrorEvent (message, eventSource, eventCode, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.#ctor(System.String,System.Object,System.Int32,System.Int32,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer, e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebBaseErrorEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebBaseErrorEvent : string * obj * int * int * Exception -&gt; System.Web.Management.WebBaseErrorEvent" Usage="new System.Web.Management.WebBaseErrorEvent (message, eventSource, eventCode, eventDetailCode, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseErrorEvent.ErrorException" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorException As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ ErrorException { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorException : Exception" Usage="System.Web.Management.WebBaseErrorEvent.ErrorException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.IncrementPerfCounters" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub IncrementPerfCounters ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void IncrementPerfCounters();" />
+      <MemberSignature Language="F#" Value="override this.IncrementPerfCounters : unit -&gt; unit" Usage="webBaseErrorEvent.IncrementPerfCounters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ProxyDataContractResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class ProxyDataContractResolver&#xA;Inherits DataContractResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProxyDataContractResolver : System::Runtime::Serialization::DataContractResolver" />
+  <TypeSignature Language="F#" Value="type ProxyDataContractResolver = class&#xA;    inherit DataContractResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ProxyDataContractResolver.ResolveName(System.String,System.String,System.Type,System.Runtime.Serialization.DataContractResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ResolveName (typeName As String, typeNamespace As String, declaredType As Type, knownTypeResolver As DataContractResolver) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ ResolveName(System::String ^ typeName, System::String ^ typeNamespace, Type ^ declaredType, System::Runtime::Serialization::DataContractResolver ^ knownTypeResolver);" />
+      <MemberSignature Language="F#" Value="override this.ResolveName : string * string * Type * System.Runtime.Serialization.DataContractResolver -&gt; Type" Usage="proxyDataContractResolver.ResolveName (typeName, typeNamespace, declaredType, knownTypeResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ProxyDataContractResolver.TryResolveType(System.Type,System.Type,System.Runtime.Serialization.DataContractResolver,System.Xml.XmlDictionaryString@,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryResolveType (dataContractType As Type, declaredType As Type, knownTypeResolver As DataContractResolver, ByRef typeName As XmlDictionaryString, ByRef typeNamespace As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryResolveType(Type ^ dataContractType, Type ^ declaredType, System::Runtime::Serialization::DataContractResolver ^ knownTypeResolver, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % typeName, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % typeNamespace);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveType : Type * Type * System.Runtime.Serialization.DataContractResolver *  *  -&gt; bool" Usage="proxyDataContractResolver.TryResolveType (dataContractType, declaredType, knownTypeResolver, typeName, typeNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

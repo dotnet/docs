@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.KernelType" />
   <TypeSignature Language="VB.NET" Value="Public Enum KernelType" />
   <TypeSignature Language="C++ CLI" Value="public enum class KernelType" />
+  <TypeSignature Language="F#" Value="type KernelType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.KernelType.Box" />
       <MemberSignature Language="VB.NET" Value="Box" />
       <MemberSignature Language="C++ CLI" Value="Box" />
+      <MemberSignature Language="F#" Value="Box = 1" Usage="System.Windows.Media.Effects.KernelType.Box" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.KernelType.Gaussian" />
       <MemberSignature Language="VB.NET" Value="Gaussian" />
       <MemberSignature Language="C++ CLI" Value="Gaussian" />
+      <MemberSignature Language="F#" Value="Gaussian = 0" Usage="System.Windows.Media.Effects.KernelType.Gaussian" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

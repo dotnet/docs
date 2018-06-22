@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Exceptions.InvalidToolsetDefinitionException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidToolsetDefinitionException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidToolsetDefinitionException : Exception" />
+  <TypeSignature Language="F#" Value="type InvalidToolsetDefinitionException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidToolsetDefinitionException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException : string -&gt; Microsoft.Build.Exceptions.InvalidToolsetDefinitionException" Usage="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidToolsetDefinitionException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.Build.Exceptions.InvalidToolsetDefinitionException" Usage="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidToolsetDefinitionException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException : string * Exception -&gt; Microsoft.Build.Exceptions.InvalidToolsetDefinitionException" Usage="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidToolsetDefinitionException(System::String ^ message, System::String ^ errorCode);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException : string * string -&gt; Microsoft.Build.Exceptions.InvalidToolsetDefinitionException" Usage="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException (message, errorCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.#ctor(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidToolsetDefinitionException(System::String ^ message, System::String ^ errorCode, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException : string * string * Exception -&gt; Microsoft.Build.Exceptions.InvalidToolsetDefinitionException" Usage="new Microsoft.Build.Exceptions.InvalidToolsetDefinitionException (message, errorCode, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorCode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : string" Usage="Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="invalidToolsetDefinitionException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

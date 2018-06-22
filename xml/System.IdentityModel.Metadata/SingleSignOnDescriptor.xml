@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.SingleSignOnDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class SingleSignOnDescriptor&#xA;Inherits RoleDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class SingleSignOnDescriptor : System::IdentityModel::Metadata::RoleDescriptor" />
+  <TypeSignature Language="F#" Value="type SingleSignOnDescriptor = class&#xA;    inherit RoleDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SingleSignOnDescriptor.ArtifactResolutionServices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArtifactResolutionServices As IndexedProtocolEndpointDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::IndexedProtocolEndpointDictionary ^ ArtifactResolutionServices { System::IdentityModel::Metadata::IndexedProtocolEndpointDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArtifactResolutionServices : System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" Usage="System.IdentityModel.Metadata.SingleSignOnDescriptor.ArtifactResolutionServices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SingleSignOnDescriptor.NameIdentifierFormats" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameIdentifierFormats As ICollection(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ NameIdentifierFormats { System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameIdentifierFormats : System.Collections.Generic.ICollection&lt;Uri&gt;" Usage="System.IdentityModel.Metadata.SingleSignOnDescriptor.NameIdentifierFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SingleSignOnDescriptor.SingleLogoutServices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingleLogoutServices As Collection(Of ProtocolEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Metadata::ProtocolEndpoint ^&gt; ^ SingleLogoutServices { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Metadata::ProtocolEndpoint ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingleLogoutServices : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.ProtocolEndpoint&gt;" Usage="System.IdentityModel.Metadata.SingleSignOnDescriptor.SingleLogoutServices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

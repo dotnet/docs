@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module AssemblyExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type AssemblyExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type[] GetExportedTypes(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyExtensions.GetExportedTypes(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;Type ^&gt; ^ GetExportedTypes(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="static member GetExportedTypes : System.Reflection.Assembly -&gt; Type[]" Usage="System.Reflection.AssemblyExtensions.GetExportedTypes assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Module[] GetModules(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyExtensions.GetModules(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::Module ^&gt; ^ GetModules(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="static member GetModules : System.Reflection.Assembly -&gt; System.Reflection.Module[]" Usage="System.Reflection.AssemblyExtensions.GetModules assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type[] GetTypes(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyExtensions.GetTypes(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;Type ^&gt; ^ GetTypes(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="static member GetTypes : System.Reflection.Assembly -&gt; Type[]" Usage="System.Reflection.AssemblyExtensions.GetTypes assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>

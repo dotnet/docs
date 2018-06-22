@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginFailureAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum LoginFailureAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class LoginFailureAction" />
+  <TypeSignature Language="F#" Value="type LoginFailureAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LoginFailureAction.RedirectToLoginPage" />
       <MemberSignature Language="VB.NET" Value="RedirectToLoginPage" />
       <MemberSignature Language="C++ CLI" Value="RedirectToLoginPage" />
+      <MemberSignature Language="F#" Value="RedirectToLoginPage = 1" Usage="System.Web.UI.WebControls.LoginFailureAction.RedirectToLoginPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LoginFailureAction.Refresh" />
       <MemberSignature Language="VB.NET" Value="Refresh" />
       <MemberSignature Language="C++ CLI" Value="Refresh" />
+      <MemberSignature Language="F#" Value="Refresh = 0" Usage="System.Web.UI.WebControls.LoginFailureAction.Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

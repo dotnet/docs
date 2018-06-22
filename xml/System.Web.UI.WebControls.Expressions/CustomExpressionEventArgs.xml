@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomExpressionEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomExpressionEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CustomExpressionEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.#ctor(System.Linq.IQueryable,System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As IQueryable, values As IDictionary(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomExpressionEventArgs(System::Linq::IQueryable ^ source, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs : System.Linq.IQueryable * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs" Usage="new System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs (source, values)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.Query" />
       <MemberSignature Language="VB.NET" Value="Public Property Query As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::IQueryable ^ Query { System::Linq::IQueryable ^ get(); void set(System::Linq::IQueryable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Query : System.Linq.IQueryable with get, set" Usage="System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Values { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

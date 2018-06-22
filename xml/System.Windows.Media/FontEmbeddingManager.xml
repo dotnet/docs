@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FontEmbeddingManager" />
   <TypeSignature Language="VB.NET" Value="Public Class FontEmbeddingManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class FontEmbeddingManager" />
+  <TypeSignature Language="F#" Value="type FontEmbeddingManager = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontEmbeddingManager.GetUsedGlyphs(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUsedGlyphs (glyphTypeface As Uri) As ICollection(Of UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::ICollection&lt;System::UInt16&gt; ^ GetUsedGlyphs(Uri ^ glyphTypeface);" />
+      <MemberSignature Language="F#" Value="member this.GetUsedGlyphs : Uri -&gt; System.Collections.Generic.ICollection&lt;uint16&gt;" Usage="fontEmbeddingManager.GetUsedGlyphs glyphTypeface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontEmbeddingManager.GlyphTypefaceUris" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlyphTypefaceUris As ICollection(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ GlyphTypefaceUris { System::Collections::Generic::ICollection&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlyphTypefaceUris : System.Collections.Generic.ICollection&lt;Uri&gt;" Usage="System.Windows.Media.FontEmbeddingManager.GlyphTypefaceUris" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RecordUsage(class System.Windows.Media.GlyphRun glyphRun) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontEmbeddingManager.RecordUsage(System.Windows.Media.GlyphRun)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RecordUsage(System::Windows::Media::GlyphRun ^ glyphRun);" />
+      <MemberSignature Language="F#" Value="member this.RecordUsage : System.Windows.Media.GlyphRun -&gt; unit" Usage="fontEmbeddingManager.RecordUsage glyphRun" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

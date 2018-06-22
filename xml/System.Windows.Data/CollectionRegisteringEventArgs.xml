@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionRegisteringEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionRegisteringEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionRegisteringEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CollectionRegisteringEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionRegisteringEventArgs.Collection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Collection As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Collection { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Collection : System.Collections.IEnumerable" Usage="System.Windows.Data.CollectionRegisteringEventArgs.Collection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionRegisteringEventArgs.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="System.Windows.Data.CollectionRegisteringEventArgs.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

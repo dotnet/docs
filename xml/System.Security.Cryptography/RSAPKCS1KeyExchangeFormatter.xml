@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class RSAPKCS1KeyExchangeFormatter&#xA;Inherits AsymmetricKeyExchangeFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class RSAPKCS1KeyExchangeFormatter : System::Security::Cryptography::AsymmetricKeyExchangeFormatter" />
+  <TypeSignature Language="F#" Value="type RSAPKCS1KeyExchangeFormatter = class&#xA;    inherit AsymmetricKeyExchangeFormatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RSAPKCS1KeyExchangeFormatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter" Usage="new System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.CreateKeyExchange(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKeyExchange (rgbData As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ CreateKeyExchange(cli::array &lt;System::Byte&gt; ^ rgbData);" />
+      <MemberSignature Language="F#" Value="override this.CreateKeyExchange : byte[] -&gt; byte[]" Usage="rSAPKCS1KeyExchangeFormatter.CreateKeyExchange rgbData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.CreateKeyExchange(System.Byte[],System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKeyExchange (rgbData As Byte(), symAlgType As Type) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ CreateKeyExchange(cli::array &lt;System::Byte&gt; ^ rgbData, Type ^ symAlgType);" />
+      <MemberSignature Language="F#" Value="override this.CreateKeyExchange : byte[] * Type -&gt; byte[]" Usage="rSAPKCS1KeyExchangeFormatter.CreateKeyExchange (rgbData, symAlgType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -239,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parameters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Parameters { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string" Usage="System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.Rng" />
       <MemberSignature Language="VB.NET" Value="Public Property Rng As RandomNumberGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::RandomNumberGenerator ^ Rng { System::Security::Cryptography::RandomNumberGenerator ^ get(); void set(System::Security::Cryptography::RandomNumberGenerator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Rng : System.Security.Cryptography.RandomNumberGenerator with get, set" Usage="System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.Rng" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -313,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetKey (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
+      <MemberSignature Language="F#" Value="override this.SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="rSAPKCS1KeyExchangeFormatter.SetKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

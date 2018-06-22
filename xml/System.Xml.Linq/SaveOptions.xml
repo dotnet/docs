@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.SaveOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum SaveOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class SaveOptions" />
+  <TypeSignature Language="F#" Value="type SaveOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@ Console.WriteLine(str)
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.SaveOptions.DisableFormatting" />
       <MemberSignature Language="VB.NET" Value="DisableFormatting" />
       <MemberSignature Language="C++ CLI" Value="DisableFormatting" />
+      <MemberSignature Language="F#" Value="DisableFormatting = 1" Usage="System.Xml.Linq.SaveOptions.DisableFormatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -127,6 +129,7 @@ Console.WriteLine(str)
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.SaveOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Linq.SaveOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -158,6 +161,7 @@ Console.WriteLine(str)
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.SaveOptions.OmitDuplicateNamespaces" />
       <MemberSignature Language="VB.NET" Value="OmitDuplicateNamespaces" />
       <MemberSignature Language="C++ CLI" Value="OmitDuplicateNamespaces" />
+      <MemberSignature Language="F#" Value="OmitDuplicateNamespaces = 2" Usage="System.Xml.Linq.SaveOptions.OmitDuplicateNamespaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

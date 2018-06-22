@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.CheckoutException" />
   <TypeSignature Language="VB.NET" Value="Public Class CheckoutException&#xA;Inherits ExternalException" />
   <TypeSignature Language="C++ CLI" Value="public ref class CheckoutException : System::Runtime::InteropServices::ExternalException" />
+  <TypeSignature Language="F#" Value="type CheckoutException = class&#xA;    inherit ExternalException" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CheckoutException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CheckoutException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.CheckoutException : string -&gt; System.ComponentModel.Design.CheckoutException" Usage="new System.ComponentModel.Design.CheckoutException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CheckoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CheckoutException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.CheckoutException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ComponentModel.Design.CheckoutException" Usage="new System.ComponentModel.Design.CheckoutException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CheckoutException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CheckoutException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.CheckoutException : string * Exception -&gt; System.ComponentModel.Design.CheckoutException" Usage="new System.ComponentModel.Design.CheckoutException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CheckoutException.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CheckoutException(System::String ^ message, int errorCode);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.CheckoutException : string * int -&gt; System.ComponentModel.Design.CheckoutException" Usage="new System.ComponentModel.Design.CheckoutException (message, errorCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.CheckoutException.Canceled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Canceled As CheckoutException " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CheckoutException ^ Canceled;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Canceled : System.ComponentModel.Design.CheckoutException" Usage="System.ComponentModel.Design.CheckoutException.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

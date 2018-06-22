@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContentPresenter" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentPresenter&#xA;Inherits FrameworkElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentPresenter : System::Windows::FrameworkElement" />
+  <TypeSignature Language="F#" Value="type ContentPresenter = class&#xA;    inherit FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentPresenter.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="contentPresenter.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentPresenter.ChooseTemplate" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ChooseTemplate () As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::DataTemplate ^ ChooseTemplate();" />
+      <MemberSignature Language="F#" Value="abstract member ChooseTemplate : unit -&gt; System.Windows.DataTemplate&#xA;override this.ChooseTemplate : unit -&gt; System.Windows.DataTemplate" Usage="contentPresenter.ChooseTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentPresenter.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Content { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : obj with get, set" Usage="System.Windows.Controls.ContentPresenter.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentPresenter.ContentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentPresenter.ContentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentPresenter.ContentSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentSource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentSource { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentSource : string with get, set" Usage="System.Windows.Controls.ContentPresenter.ContentSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentPresenter.ContentSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentPresenter.ContentSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentPresenter.ContentStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentStringFormat : string with get, set" Usage="System.Windows.Controls.ContentPresenter.ContentStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentPresenter.ContentStringFormatProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentStringFormatProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentStringFormatProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentPresenter.ContentStringFormatProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentPresenter.ContentTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ ContentTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.ContentPresenter.ContentTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -377,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentPresenter.ContentTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentPresenter.ContentTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -396,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentPresenter.ContentTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ ContentTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.ContentPresenter.ContentTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -436,6 +448,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentPresenter.ContentTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentPresenter.ContentTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -455,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentPresenter.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="contentPresenter.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -480,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentPresenter.OnContentStringFormatChanged(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentStringFormatChanged (oldContentStringFormat As String, newContentStringFormat As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentStringFormatChanged(System::String ^ oldContentStringFormat, System::String ^ newContentStringFormat);" />
+      <MemberSignature Language="F#" Value="abstract member OnContentStringFormatChanged : string * string -&gt; unit&#xA;override this.OnContentStringFormatChanged : string * string -&gt; unit" Usage="contentPresenter.OnContentStringFormatChanged (oldContentStringFormat, newContentStringFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -505,6 +520,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentPresenter.OnContentTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentTemplateChanged (oldContentTemplate As DataTemplate, newContentTemplate As DataTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentTemplateChanged(System::Windows::DataTemplate ^ oldContentTemplate, System::Windows::DataTemplate ^ newContentTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member OnContentTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit&#xA;override this.OnContentTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit" Usage="contentPresenter.OnContentTemplateChanged (oldContentTemplate, newContentTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -530,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentPresenter.OnContentTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentTemplateSelectorChanged (oldContentTemplateSelector As DataTemplateSelector, newContentTemplateSelector As DataTemplateSelector)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentTemplateSelectorChanged(System::Windows::Controls::DataTemplateSelector ^ oldContentTemplateSelector, System::Windows::Controls::DataTemplateSelector ^ newContentTemplateSelector);" />
+      <MemberSignature Language="F#" Value="abstract member OnContentTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit&#xA;override this.OnContentTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit" Usage="contentPresenter.OnContentTemplateSelectorChanged (oldContentTemplateSelector, newContentTemplateSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -555,6 +572,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentPresenter.OnTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTemplateChanged (oldTemplate As DataTemplate, newTemplate As DataTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTemplateChanged(System::Windows::DataTemplate ^ oldTemplate, System::Windows::DataTemplate ^ newTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member OnTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit&#xA;override this.OnTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit" Usage="contentPresenter.OnTemplateChanged (oldTemplate, newTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -580,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentPresenter.RecognizesAccessKey" />
       <MemberSignature Language="VB.NET" Value="Public Property RecognizesAccessKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RecognizesAccessKey { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RecognizesAccessKey : bool with get, set" Usage="System.Windows.Controls.ContentPresenter.RecognizesAccessKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -625,6 +644,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentPresenter.RecognizesAccessKeyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RecognizesAccessKeyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RecognizesAccessKeyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RecognizesAccessKeyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentPresenter.RecognizesAccessKeyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -644,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentPresenter.ShouldSerializeContentTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeContentTemplateSelector () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeContentTemplateSelector();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeContentTemplateSelector : unit -&gt; bool" Usage="contentPresenter.ShouldSerializeContentTemplateSelector " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

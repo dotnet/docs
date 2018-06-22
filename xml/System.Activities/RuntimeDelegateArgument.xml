@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.RuntimeDelegateArgument" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuntimeDelegateArgument" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuntimeDelegateArgument sealed" />
+  <TypeSignature Language="F#" Value="type RuntimeDelegateArgument = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, valuetype System.Activities.ArgumentDirection direction, class System.Activities.DelegateArgument boundArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeDelegateArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection,System.Activities.DelegateArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeDelegateArgument(System::String ^ name, Type ^ type, System::Activities::ArgumentDirection direction, System::Activities::DelegateArgument ^ boundArgument);" />
+      <MemberSignature Language="F#" Value="new System.Activities.RuntimeDelegateArgument : string * Type * System.Activities.ArgumentDirection * System.Activities.DelegateArgument -&gt; System.Activities.RuntimeDelegateArgument" Usage="new System.Activities.RuntimeDelegateArgument (name, type, direction, boundArgument)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeDelegateArgument.BoundArgument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundArgument As DelegateArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateArgument ^ BoundArgument { System::Activities::DelegateArgument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BoundArgument : System.Activities.DelegateArgument" Usage="System.Activities.RuntimeDelegateArgument.BoundArgument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeDelegateArgument.Direction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As ArgumentDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ArgumentDirection Direction { System::Activities::ArgumentDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Activities.ArgumentDirection" Usage="System.Activities.RuntimeDelegateArgument.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeDelegateArgument.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Activities.RuntimeDelegateArgument.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeDelegateArgument.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Activities.RuntimeDelegateArgument.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

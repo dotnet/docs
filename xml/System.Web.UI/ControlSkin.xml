@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlSkin" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlSkin" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlSkin" />
+  <TypeSignature Language="F#" Value="type ControlSkin = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlSkin.#ctor(System.Type,System.Web.UI.ControlSkinDelegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (controlType As Type, themeDelegate As ControlSkinDelegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlSkin(Type ^ controlType, System::Web::UI::ControlSkinDelegate ^ themeDelegate);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ControlSkin : Type * System.Web.UI.ControlSkinDelegate -&gt; System.Web.UI.ControlSkin" Usage="new System.Web.UI.ControlSkin (controlType, themeDelegate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplySkin(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlSkin.ApplySkin(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplySkin(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.ApplySkin : System.Web.UI.Control -&gt; unit" Usage="controlSkin.ApplySkin control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlSkin.ControlType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ControlType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlType : Type" Usage="System.Web.UI.ControlSkin.ControlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

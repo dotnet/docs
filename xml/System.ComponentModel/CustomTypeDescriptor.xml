@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CustomTypeDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CustomTypeDescriptor&#xA;Implements ICustomTypeDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomTypeDescriptor abstract : System::ComponentModel::ICustomTypeDescriptor" />
+  <TypeSignature Language="F#" Value="type CustomTypeDescriptor = class&#xA;    interface ICustomTypeDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (parent As ICustomTypeDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomTypeDescriptor(System::ComponentModel::ICustomTypeDescriptor ^ parent);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.CustomTypeDescriptor : System.ComponentModel.ICustomTypeDescriptor -&gt; System.ComponentModel.CustomTypeDescriptor" Usage="new System.ComponentModel.CustomTypeDescriptor parent" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttributes () As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::AttributeCollection ^ GetAttributes();" />
+      <MemberSignature Language="F#" Value="abstract member GetAttributes : unit -&gt; System.ComponentModel.AttributeCollection&#xA;override this.GetAttributes : unit -&gt; System.ComponentModel.AttributeCollection" Usage="customTypeDescriptor.GetAttributes " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes</InterfaceMember>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetClassName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetClassName();" />
+      <MemberSignature Language="F#" Value="abstract member GetClassName : unit -&gt; string&#xA;override this.GetClassName : unit -&gt; string" Usage="customTypeDescriptor.GetClassName " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetClassName</InterfaceMember>
@@ -239,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetComponentName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComponentName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetComponentName();" />
+      <MemberSignature Language="F#" Value="abstract member GetComponentName : unit -&gt; string&#xA;override this.GetComponentName : unit -&gt; string" Usage="customTypeDescriptor.GetComponentName " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName</InterfaceMember>
@@ -283,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetConverter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConverter () As TypeConverter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::TypeConverter ^ GetConverter();" />
+      <MemberSignature Language="F#" Value="abstract member GetConverter : unit -&gt; System.ComponentModel.TypeConverter&#xA;override this.GetConverter : unit -&gt; System.ComponentModel.TypeConverter" Usage="customTypeDescriptor.GetConverter " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetConverter</InterfaceMember>
@@ -328,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultEvent () As EventDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptor ^ GetDefaultEvent();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultEvent : unit -&gt; System.ComponentModel.EventDescriptor&#xA;override this.GetDefaultEvent : unit -&gt; System.ComponentModel.EventDescriptor" Usage="customTypeDescriptor.GetDefaultEvent " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent</InterfaceMember>
@@ -373,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultProperty () As PropertyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultProperty : unit -&gt; System.ComponentModel.PropertyDescriptor&#xA;override this.GetDefaultProperty : unit -&gt; System.ComponentModel.PropertyDescriptor" Usage="customTypeDescriptor.GetDefaultProperty " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty</InterfaceMember>
@@ -418,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEditor (editorBaseType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetEditor(Type ^ editorBaseType);" />
+      <MemberSignature Language="F#" Value="abstract member GetEditor : Type -&gt; obj&#xA;override this.GetEditor : Type -&gt; obj" Usage="customTypeDescriptor.GetEditor editorBaseType" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)</InterfaceMember>
@@ -482,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEvents () As EventDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptorCollection ^ GetEvents();" />
+      <MemberSignature Language="F#" Value="abstract member GetEvents : unit -&gt; System.ComponentModel.EventDescriptorCollection&#xA;override this.GetEvents : unit -&gt; System.ComponentModel.EventDescriptorCollection" Usage="customTypeDescriptor.GetEvents " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents</InterfaceMember>
@@ -528,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEvents (attributes As Attribute()) As EventDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptorCollection ^ GetEvents(cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member GetEvents : Attribute[] -&gt; System.ComponentModel.EventDescriptorCollection&#xA;override this.GetEvents : Attribute[] -&gt; System.ComponentModel.EventDescriptorCollection" Usage="customTypeDescriptor.GetEvents attributes" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])</InterfaceMember>
@@ -596,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties () As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetProperties();" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="customTypeDescriptor.GetProperties " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties</InterfaceMember>
@@ -643,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetProperties(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="customTypeDescriptor.GetProperties attributes" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])</InterfaceMember>
@@ -696,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPropertyOwner (pd As PropertyDescriptor) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetPropertyOwner(System::ComponentModel::PropertyDescriptor ^ pd);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertyOwner : System.ComponentModel.PropertyDescriptor -&gt; obj&#xA;override this.GetPropertyOwner : System.ComponentModel.PropertyDescriptor -&gt; obj" Usage="customTypeDescriptor.GetPropertyOwner pd" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)</InterfaceMember>

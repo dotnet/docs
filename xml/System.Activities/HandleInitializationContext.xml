@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.HandleInitializationContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HandleInitializationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class HandleInitializationContext sealed" />
+  <TypeSignature Language="F#" Value="type HandleInitializationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.HandleInitializationContext.CreateAndInitializeHandle``1" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateAndInitializeHandle(Of THandle As Handle) () As THandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename THandle&gt;&#xA; where THandle : System::Activities::Handle THandle CreateAndInitializeHandle();" />
+      <MemberSignature Language="F#" Value="member this.CreateAndInitializeHandle : unit -&gt; 'Handle (requires 'Handle :&gt; System.Activities.Handle)" Usage="handleInitializationContext.CreateAndInitializeHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.HandleInitializationContext.GetExtension``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExtension(Of T As Class) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T GetExtension();" />
+      <MemberSignature Language="F#" Value="member this.GetExtension : unit -&gt; 'T (requires 'T : null)" Usage="handleInitializationContext.GetExtension " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninitializeHandle(class System.Activities.Handle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.HandleInitializationContext.UninitializeHandle(System.Activities.Handle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UninitializeHandle(System::Activities::Handle ^ handle);" />
+      <MemberSignature Language="F#" Value="member this.UninitializeHandle : System.Activities.Handle -&gt; unit" Usage="handleInitializationContext.UninitializeHandle handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

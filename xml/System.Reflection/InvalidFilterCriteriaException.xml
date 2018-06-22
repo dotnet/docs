@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.InvalidFilterCriteriaException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidFilterCriteriaException&#xA;Inherits ApplicationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidFilterCriteriaException : ApplicationException" />
+  <TypeSignature Language="F#" Value="type InvalidFilterCriteriaException = class&#xA;    inherit ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -107,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.InvalidFilterCriteriaException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidFilterCriteriaException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.InvalidFilterCriteriaException : string -&gt; System.Reflection.InvalidFilterCriteriaException" Usage="new System.Reflection.InvalidFilterCriteriaException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -155,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.InvalidFilterCriteriaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidFilterCriteriaException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.InvalidFilterCriteriaException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Reflection.InvalidFilterCriteriaException" Usage="new System.Reflection.InvalidFilterCriteriaException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.InvalidFilterCriteriaException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidFilterCriteriaException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.InvalidFilterCriteriaException : string * Exception -&gt; System.Reflection.InvalidFilterCriteriaException" Usage="new System.Reflection.InvalidFilterCriteriaException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

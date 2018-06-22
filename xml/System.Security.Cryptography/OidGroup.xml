@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.OidGroup" />
   <TypeSignature Language="VB.NET" Value="Public Enum OidGroup" />
   <TypeSignature Language="C++ CLI" Value="public enum class OidGroup" />
+  <TypeSignature Language="F#" Value="type OidGroup = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Security.Cryptography.OidGroup.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.Attribute" />
       <MemberSignature Language="VB.NET" Value="Attribute" />
       <MemberSignature Language="C++ CLI" Value="Attribute" />
+      <MemberSignature Language="F#" Value="Attribute = 5" Usage="System.Security.Cryptography.OidGroup.Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.EncryptionAlgorithm" />
       <MemberSignature Language="VB.NET" Value="EncryptionAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="EncryptionAlgorithm" />
+      <MemberSignature Language="F#" Value="EncryptionAlgorithm = 2" Usage="System.Security.Cryptography.OidGroup.EncryptionAlgorithm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.EnhancedKeyUsage" />
       <MemberSignature Language="VB.NET" Value="EnhancedKeyUsage" />
       <MemberSignature Language="C++ CLI" Value="EnhancedKeyUsage" />
+      <MemberSignature Language="F#" Value="EnhancedKeyUsage = 7" Usage="System.Security.Cryptography.OidGroup.EnhancedKeyUsage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.ExtensionOrAttribute" />
       <MemberSignature Language="VB.NET" Value="ExtensionOrAttribute" />
       <MemberSignature Language="C++ CLI" Value="ExtensionOrAttribute" />
+      <MemberSignature Language="F#" Value="ExtensionOrAttribute = 6" Usage="System.Security.Cryptography.OidGroup.ExtensionOrAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.HashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="HashAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="HashAlgorithm" />
+      <MemberSignature Language="F#" Value="HashAlgorithm = 1" Usage="System.Security.Cryptography.OidGroup.HashAlgorithm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.KeyDerivationFunction" />
       <MemberSignature Language="VB.NET" Value="KeyDerivationFunction" />
       <MemberSignature Language="C++ CLI" Value="KeyDerivationFunction" />
+      <MemberSignature Language="F#" Value="KeyDerivationFunction = 10" Usage="System.Security.Cryptography.OidGroup.KeyDerivationFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.Policy" />
       <MemberSignature Language="VB.NET" Value="Policy" />
       <MemberSignature Language="C++ CLI" Value="Policy" />
+      <MemberSignature Language="F#" Value="Policy = 8" Usage="System.Security.Cryptography.OidGroup.Policy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.PublicKeyAlgorithm" />
       <MemberSignature Language="VB.NET" Value="PublicKeyAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="PublicKeyAlgorithm" />
+      <MemberSignature Language="F#" Value="PublicKeyAlgorithm = 3" Usage="System.Security.Cryptography.OidGroup.PublicKeyAlgorithm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.SignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="SignatureAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="SignatureAlgorithm" />
+      <MemberSignature Language="F#" Value="SignatureAlgorithm = 4" Usage="System.Security.Cryptography.OidGroup.SignatureAlgorithm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.OidGroup.Template" />
       <MemberSignature Language="VB.NET" Value="Template" />
       <MemberSignature Language="C++ CLI" Value="Template" />
+      <MemberSignature Language="F#" Value="Template = 9" Usage="System.Security.Cryptography.OidGroup.Template" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>

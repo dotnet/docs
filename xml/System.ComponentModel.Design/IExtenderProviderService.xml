@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IExtenderProviderService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtenderProviderService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExtenderProviderService" />
+  <TypeSignature Language="F#" Value="type IExtenderProviderService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IExtenderProviderService.AddExtenderProvider(System.ComponentModel.IExtenderProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddExtenderProvider (provider As IExtenderProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddExtenderProvider(System::ComponentModel::IExtenderProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member AddExtenderProvider : System.ComponentModel.IExtenderProvider -&gt; unit" Usage="iExtenderProviderService.AddExtenderProvider provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IExtenderProviderService.RemoveExtenderProvider(System.ComponentModel.IExtenderProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveExtenderProvider (provider As IExtenderProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveExtenderProvider(System::ComponentModel::IExtenderProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveExtenderProvider : System.ComponentModel.IExtenderProvider -&gt; unit" Usage="iExtenderProviderService.RemoveExtenderProvider provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

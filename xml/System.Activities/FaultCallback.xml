@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.FaultCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FaultCallback(faultContext As NativeActivityFaultContext, propagatedException As Exception, propagatedFrom As ActivityInstance)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FaultCallback(NativeActivityFaultContext ^ faultContext, Exception ^ propagatedException, ActivityInstance ^ propagatedFrom);" />
+  <TypeSignature Language="F#" Value="type FaultCallback = delegate of NativeActivityFaultContext * Exception * ActivityInstance -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

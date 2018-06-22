@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridParentRowsLabelStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridParentRowsLabelStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridParentRowsLabelStyle" />
+  <TypeSignature Language="F#" Value="type DataGridParentRowsLabelStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="C++ CLI" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 3" Usage="System.Windows.Forms.DataGridParentRowsLabelStyle.Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.ColumnName" />
       <MemberSignature Language="VB.NET" Value="ColumnName" />
       <MemberSignature Language="C++ CLI" Value="ColumnName" />
+      <MemberSignature Language="F#" Value="ColumnName = 2" Usage="System.Windows.Forms.DataGridParentRowsLabelStyle.ColumnName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGridParentRowsLabelStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.TableName" />
       <MemberSignature Language="VB.NET" Value="TableName" />
       <MemberSignature Language="C++ CLI" Value="TableName" />
+      <MemberSignature Language="F#" Value="TableName = 1" Usage="System.Windows.Forms.DataGridParentRowsLabelStyle.TableName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

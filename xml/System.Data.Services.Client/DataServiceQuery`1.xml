@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceQuery`1" />
   <TypeSignature Language="VB.NET" Value="Public Class DataServiceQuery(Of TElement)&#xA;Inherits DataServiceQuery&#xA;Implements IEnumerable(Of TElement), IQueryable(Of TElement)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TElement&gt;&#xA;public ref class DataServiceQuery : System::Data::Services::Client::DataServiceQuery, System::Collections::Generic::IEnumerable&lt;TElement&gt;, System::Linq::IQueryable&lt;TElement&gt;" />
+  <TypeSignature Language="F#" Value="type DataServiceQuery&lt;'Element&gt; = class&#xA;    inherit DataServiceQuery&#xA;    interface IQueryable&lt;'Element&gt;&#xA;    interface seq&lt;'Element&gt;&#xA;    interface IEnumerable&#xA;    interface IQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery`1.AddQueryOption(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddQueryOption (name As String, value As Object) As DataServiceQuery(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceQuery&lt;TElement&gt; ^ AddQueryOption(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddQueryOption : string * obj -&gt; System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;" Usage="dataServiceQuery.AddQueryOption (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery`1.BeginExecute(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginExecute (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecute(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginExecute : AsyncCallback * obj -&gt; IAsyncResult" Usage="dataServiceQuery.BeginExecute (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceQuery`1.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementType : Type" Usage="System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery`1.EndExecute(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndExecute (asyncResult As IAsyncResult) As IEnumerable(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;TElement&gt; ^ EndExecute(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="override this.EndExecute : IAsyncResult -&gt; seq&lt;'Element&gt;" Usage="dataServiceQuery.EndExecute asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery`1.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Function Execute () As IEnumerable(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;TElement&gt; ^ Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; seq&lt;'Element&gt;" Usage="dataServiceQuery.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery`1.Expand(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Expand (path As String) As DataServiceQuery(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceQuery&lt;TElement&gt; ^ Expand(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.Expand : string -&gt; System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;" Usage="dataServiceQuery.Expand path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceQuery`1.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Expression As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Linq.Expressions.Expression" Usage="System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;TElement&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Element&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Element&gt;" Usage="dataServiceQuery.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery`1.IncludeTotalCount" />
       <MemberSignature Language="VB.NET" Value="Public Function IncludeTotalCount () As DataServiceQuery(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceQuery&lt;TElement&gt; ^ IncludeTotalCount();" />
+      <MemberSignature Language="F#" Value="member this.IncludeTotalCount : unit -&gt; System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;" Usage="dataServiceQuery.IncludeTotalCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -317,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceQuery`1.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Provider As IQueryProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::IQueryProvider ^ Provider { System::Linq::IQueryProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Linq.IQueryProvider" Usage="System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceQuery`1.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequestUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;.RequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -393,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataServiceQuery.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

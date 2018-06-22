@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TreeNodeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TreeNodeEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type TreeNodeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeEventArgs.#ctor(System.Web.UI.WebControls.TreeNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (node As TreeNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNodeEventArgs(System::Web::UI::WebControls::TreeNode ^ node);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNodeEventArgs : System.Web.UI.WebControls.TreeNode -&gt; System.Web.UI.WebControls.TreeNodeEventArgs" Usage="new System.Web.UI.WebControls.TreeNodeEventArgs node" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeEventArgs.Node" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Node As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TreeNode ^ Node { System::Web::UI::WebControls::TreeNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Node : System.Web.UI.WebControls.TreeNode" Usage="System.Web.UI.WebControls.TreeNodeEventArgs.Node" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

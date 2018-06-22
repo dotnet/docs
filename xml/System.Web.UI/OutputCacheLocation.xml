@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.OutputCacheLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum OutputCacheLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class OutputCacheLocation" />
+  <TypeSignature Language="F#" Value="type OutputCacheLocation = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="C++ CLI" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 0" Usage="System.Web.UI.OutputCacheLocation.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.Client" />
       <MemberSignature Language="VB.NET" Value="Client" />
       <MemberSignature Language="C++ CLI" Value="Client" />
+      <MemberSignature Language="F#" Value="Client = 1" Usage="System.Web.UI.OutputCacheLocation.Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.Downstream" />
       <MemberSignature Language="VB.NET" Value="Downstream" />
       <MemberSignature Language="C++ CLI" Value="Downstream" />
+      <MemberSignature Language="F#" Value="Downstream = 2" Usage="System.Web.UI.OutputCacheLocation.Downstream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 4" Usage="System.Web.UI.OutputCacheLocation.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.Server" />
       <MemberSignature Language="VB.NET" Value="Server" />
       <MemberSignature Language="C++ CLI" Value="Server" />
+      <MemberSignature Language="F#" Value="Server = 3" Usage="System.Web.UI.OutputCacheLocation.Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.OutputCacheLocation.ServerAndClient" />
       <MemberSignature Language="VB.NET" Value="ServerAndClient" />
       <MemberSignature Language="C++ CLI" Value="ServerAndClient" />
+      <MemberSignature Language="F#" Value="ServerAndClient = 5" Usage="System.Web.UI.OutputCacheLocation.ServerAndClient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

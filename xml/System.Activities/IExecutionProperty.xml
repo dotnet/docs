@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.IExecutionProperty" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExecutionProperty" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExecutionProperty" />
+  <TypeSignature Language="F#" Value="type IExecutionProperty = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.IExecutionProperty.CleanupWorkflowThread" />
       <MemberSignature Language="VB.NET" Value="Public Sub CleanupWorkflowThread ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CleanupWorkflowThread();" />
+      <MemberSignature Language="F#" Value="abstract member CleanupWorkflowThread : unit -&gt; unit" Usage="iExecutionProperty.CleanupWorkflowThread " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.IExecutionProperty.SetupWorkflowThread" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetupWorkflowThread ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetupWorkflowThread();" />
+      <MemberSignature Language="F#" Value="abstract member SetupWorkflowThread : unit -&gt; unit" Usage="iExecutionProperty.SetupWorkflowThread " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

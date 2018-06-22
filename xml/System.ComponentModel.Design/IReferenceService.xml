@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IReferenceService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IReferenceService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IReferenceService" />
+  <TypeSignature Language="F#" Value="type IReferenceService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetComponent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetComponent (reference As Object) As IComponent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::IComponent ^ GetComponent(System::Object ^ reference);" />
+      <MemberSignature Language="F#" Value="abstract member GetComponent : obj -&gt; System.ComponentModel.IComponent" Usage="iReferenceService.GetComponent reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetName(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetName (reference As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetName(System::Object ^ reference);" />
+      <MemberSignature Language="F#" Value="abstract member GetName : obj -&gt; string" Usage="iReferenceService.GetName reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReference (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetReference(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetReference : string -&gt; obj" Usage="iReferenceService.GetReference name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReferences" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReferences () As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetReferences();" />
+      <MemberSignature Language="F#" Value="abstract member GetReferences : unit -&gt; obj[]" Usage="iReferenceService.GetReferences " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReferences(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReferences (baseType As Type) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetReferences(Type ^ baseType);" />
+      <MemberSignature Language="F#" Value="abstract member GetReferences : Type -&gt; obj[]" Usage="iReferenceService.GetReferences baseType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ConsoleKey" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConsoleKey" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConsoleKey" />
+  <TypeSignature Language="F#" Value="type ConsoleKey = " />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.A" />
       <MemberSignature Language="VB.NET" Value="A" />
       <MemberSignature Language="C++ CLI" Value="A" />
+      <MemberSignature Language="F#" Value="A = 65" Usage="System.ConsoleKey.A" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 107" Usage="System.ConsoleKey.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Applications" />
       <MemberSignature Language="VB.NET" Value="Applications" />
       <MemberSignature Language="C++ CLI" Value="Applications" />
+      <MemberSignature Language="F#" Value="Applications = 93" Usage="System.ConsoleKey.Applications" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Attention" />
       <MemberSignature Language="VB.NET" Value="Attention" />
       <MemberSignature Language="C++ CLI" Value="Attention" />
+      <MemberSignature Language="F#" Value="Attention = 246" Usage="System.ConsoleKey.Attention" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.B" />
       <MemberSignature Language="VB.NET" Value="B" />
       <MemberSignature Language="C++ CLI" Value="B" />
+      <MemberSignature Language="F#" Value="B = 66" Usage="System.ConsoleKey.B" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Backspace" />
       <MemberSignature Language="VB.NET" Value="Backspace" />
       <MemberSignature Language="C++ CLI" Value="Backspace" />
+      <MemberSignature Language="F#" Value="Backspace = 8" Usage="System.ConsoleKey.Backspace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserBack" />
       <MemberSignature Language="VB.NET" Value="BrowserBack" />
       <MemberSignature Language="C++ CLI" Value="BrowserBack" />
+      <MemberSignature Language="F#" Value="BrowserBack = 166" Usage="System.ConsoleKey.BrowserBack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserFavorites" />
       <MemberSignature Language="VB.NET" Value="BrowserFavorites" />
       <MemberSignature Language="C++ CLI" Value="BrowserFavorites" />
+      <MemberSignature Language="F#" Value="BrowserFavorites = 171" Usage="System.ConsoleKey.BrowserFavorites" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -285,6 +294,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserForward" />
       <MemberSignature Language="VB.NET" Value="BrowserForward" />
       <MemberSignature Language="C++ CLI" Value="BrowserForward" />
+      <MemberSignature Language="F#" Value="BrowserForward = 167" Usage="System.ConsoleKey.BrowserForward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -314,6 +324,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserHome" />
       <MemberSignature Language="VB.NET" Value="BrowserHome" />
       <MemberSignature Language="C++ CLI" Value="BrowserHome" />
+      <MemberSignature Language="F#" Value="BrowserHome = 172" Usage="System.ConsoleKey.BrowserHome" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -343,6 +354,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserRefresh" />
       <MemberSignature Language="VB.NET" Value="BrowserRefresh" />
       <MemberSignature Language="C++ CLI" Value="BrowserRefresh" />
+      <MemberSignature Language="F#" Value="BrowserRefresh = 168" Usage="System.ConsoleKey.BrowserRefresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -372,6 +384,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserSearch" />
       <MemberSignature Language="VB.NET" Value="BrowserSearch" />
       <MemberSignature Language="C++ CLI" Value="BrowserSearch" />
+      <MemberSignature Language="F#" Value="BrowserSearch = 170" Usage="System.ConsoleKey.BrowserSearch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -401,6 +414,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserStop" />
       <MemberSignature Language="VB.NET" Value="BrowserStop" />
       <MemberSignature Language="C++ CLI" Value="BrowserStop" />
+      <MemberSignature Language="F#" Value="BrowserStop = 169" Usage="System.ConsoleKey.BrowserStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -430,6 +444,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.C" />
       <MemberSignature Language="VB.NET" Value="C" />
       <MemberSignature Language="C++ CLI" Value="C" />
+      <MemberSignature Language="F#" Value="C = 67" Usage="System.ConsoleKey.C" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -460,6 +475,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Clear" />
       <MemberSignature Language="VB.NET" Value="Clear" />
       <MemberSignature Language="C++ CLI" Value="Clear" />
+      <MemberSignature Language="F#" Value="Clear = 12" Usage="System.ConsoleKey.Clear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -490,6 +506,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.CrSel" />
       <MemberSignature Language="VB.NET" Value="CrSel" />
       <MemberSignature Language="C++ CLI" Value="CrSel" />
+      <MemberSignature Language="F#" Value="CrSel = 247" Usage="System.ConsoleKey.CrSel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -519,6 +536,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D" />
       <MemberSignature Language="VB.NET" Value="D" />
       <MemberSignature Language="C++ CLI" Value="D" />
+      <MemberSignature Language="F#" Value="D = 68" Usage="System.ConsoleKey.D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -549,6 +567,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D0" />
       <MemberSignature Language="VB.NET" Value="D0" />
       <MemberSignature Language="C++ CLI" Value="D0" />
+      <MemberSignature Language="F#" Value="D0 = 48" Usage="System.ConsoleKey.D0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -579,6 +598,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D1" />
       <MemberSignature Language="VB.NET" Value="D1" />
       <MemberSignature Language="C++ CLI" Value="D1" />
+      <MemberSignature Language="F#" Value="D1 = 49" Usage="System.ConsoleKey.D1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -609,6 +629,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D2" />
       <MemberSignature Language="VB.NET" Value="D2" />
       <MemberSignature Language="C++ CLI" Value="D2" />
+      <MemberSignature Language="F#" Value="D2 = 50" Usage="System.ConsoleKey.D2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -639,6 +660,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D3" />
       <MemberSignature Language="VB.NET" Value="D3" />
       <MemberSignature Language="C++ CLI" Value="D3" />
+      <MemberSignature Language="F#" Value="D3 = 51" Usage="System.ConsoleKey.D3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -669,6 +691,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D4" />
       <MemberSignature Language="VB.NET" Value="D4" />
       <MemberSignature Language="C++ CLI" Value="D4" />
+      <MemberSignature Language="F#" Value="D4 = 52" Usage="System.ConsoleKey.D4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -699,6 +722,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D5" />
       <MemberSignature Language="VB.NET" Value="D5" />
       <MemberSignature Language="C++ CLI" Value="D5" />
+      <MemberSignature Language="F#" Value="D5 = 53" Usage="System.ConsoleKey.D5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -729,6 +753,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D6" />
       <MemberSignature Language="VB.NET" Value="D6" />
       <MemberSignature Language="C++ CLI" Value="D6" />
+      <MemberSignature Language="F#" Value="D6 = 54" Usage="System.ConsoleKey.D6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -759,6 +784,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D7" />
       <MemberSignature Language="VB.NET" Value="D7" />
       <MemberSignature Language="C++ CLI" Value="D7" />
+      <MemberSignature Language="F#" Value="D7 = 55" Usage="System.ConsoleKey.D7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -789,6 +815,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D8" />
       <MemberSignature Language="VB.NET" Value="D8" />
       <MemberSignature Language="C++ CLI" Value="D8" />
+      <MemberSignature Language="F#" Value="D8 = 56" Usage="System.ConsoleKey.D8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -819,6 +846,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D9" />
       <MemberSignature Language="VB.NET" Value="D9" />
       <MemberSignature Language="C++ CLI" Value="D9" />
+      <MemberSignature Language="F#" Value="D9 = 57" Usage="System.ConsoleKey.D9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -849,6 +877,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="C++ CLI" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 110" Usage="System.ConsoleKey.Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -879,6 +908,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 46" Usage="System.ConsoleKey.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -909,6 +939,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Divide" />
       <MemberSignature Language="VB.NET" Value="Divide" />
       <MemberSignature Language="C++ CLI" Value="Divide" />
+      <MemberSignature Language="F#" Value="Divide = 111" Usage="System.ConsoleKey.Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -939,6 +970,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.DownArrow" />
       <MemberSignature Language="VB.NET" Value="DownArrow" />
       <MemberSignature Language="C++ CLI" Value="DownArrow" />
+      <MemberSignature Language="F#" Value="DownArrow = 40" Usage="System.ConsoleKey.DownArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -969,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.E" />
       <MemberSignature Language="VB.NET" Value="E" />
       <MemberSignature Language="C++ CLI" Value="E" />
+      <MemberSignature Language="F#" Value="E = 69" Usage="System.ConsoleKey.E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -999,6 +1032,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.End" />
       <MemberSignature Language="VB.NET" Value="End" />
       <MemberSignature Language="C++ CLI" Value="End" />
+      <MemberSignature Language="F#" Value="End = 35" Usage="System.ConsoleKey.End" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1029,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Enter" />
       <MemberSignature Language="VB.NET" Value="Enter" />
       <MemberSignature Language="C++ CLI" Value="Enter" />
+      <MemberSignature Language="F#" Value="Enter = 13" Usage="System.ConsoleKey.Enter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1059,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.EraseEndOfFile" />
       <MemberSignature Language="VB.NET" Value="EraseEndOfFile" />
       <MemberSignature Language="C++ CLI" Value="EraseEndOfFile" />
+      <MemberSignature Language="F#" Value="EraseEndOfFile = 249" Usage="System.ConsoleKey.EraseEndOfFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1088,6 +1124,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Escape" />
       <MemberSignature Language="VB.NET" Value="Escape" />
       <MemberSignature Language="C++ CLI" Value="Escape" />
+      <MemberSignature Language="F#" Value="Escape = 27" Usage="System.ConsoleKey.Escape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1118,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Execute" />
       <MemberSignature Language="VB.NET" Value="Execute" />
       <MemberSignature Language="C++ CLI" Value="Execute" />
+      <MemberSignature Language="F#" Value="Execute = 43" Usage="System.ConsoleKey.Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1148,6 +1186,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.ExSel" />
       <MemberSignature Language="VB.NET" Value="ExSel" />
       <MemberSignature Language="C++ CLI" Value="ExSel" />
+      <MemberSignature Language="F#" Value="ExSel = 248" Usage="System.ConsoleKey.ExSel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1177,6 +1216,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F" />
       <MemberSignature Language="VB.NET" Value="F" />
       <MemberSignature Language="C++ CLI" Value="F" />
+      <MemberSignature Language="F#" Value="F = 70" Usage="System.ConsoleKey.F" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1207,6 +1247,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F1" />
       <MemberSignature Language="VB.NET" Value="F1" />
       <MemberSignature Language="C++ CLI" Value="F1" />
+      <MemberSignature Language="F#" Value="F1 = 112" Usage="System.ConsoleKey.F1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1237,6 +1278,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F10" />
       <MemberSignature Language="VB.NET" Value="F10" />
       <MemberSignature Language="C++ CLI" Value="F10" />
+      <MemberSignature Language="F#" Value="F10 = 121" Usage="System.ConsoleKey.F10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1267,6 +1309,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F11" />
       <MemberSignature Language="VB.NET" Value="F11" />
       <MemberSignature Language="C++ CLI" Value="F11" />
+      <MemberSignature Language="F#" Value="F11 = 122" Usage="System.ConsoleKey.F11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1297,6 +1340,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F12" />
       <MemberSignature Language="VB.NET" Value="F12" />
       <MemberSignature Language="C++ CLI" Value="F12" />
+      <MemberSignature Language="F#" Value="F12 = 123" Usage="System.ConsoleKey.F12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1327,6 +1371,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F13" />
       <MemberSignature Language="VB.NET" Value="F13" />
       <MemberSignature Language="C++ CLI" Value="F13" />
+      <MemberSignature Language="F#" Value="F13 = 124" Usage="System.ConsoleKey.F13" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1357,6 +1402,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F14" />
       <MemberSignature Language="VB.NET" Value="F14" />
       <MemberSignature Language="C++ CLI" Value="F14" />
+      <MemberSignature Language="F#" Value="F14 = 125" Usage="System.ConsoleKey.F14" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1387,6 +1433,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F15" />
       <MemberSignature Language="VB.NET" Value="F15" />
       <MemberSignature Language="C++ CLI" Value="F15" />
+      <MemberSignature Language="F#" Value="F15 = 126" Usage="System.ConsoleKey.F15" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1417,6 +1464,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F16" />
       <MemberSignature Language="VB.NET" Value="F16" />
       <MemberSignature Language="C++ CLI" Value="F16" />
+      <MemberSignature Language="F#" Value="F16 = 127" Usage="System.ConsoleKey.F16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1447,6 +1495,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F17" />
       <MemberSignature Language="VB.NET" Value="F17" />
       <MemberSignature Language="C++ CLI" Value="F17" />
+      <MemberSignature Language="F#" Value="F17 = 128" Usage="System.ConsoleKey.F17" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1477,6 +1526,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F18" />
       <MemberSignature Language="VB.NET" Value="F18" />
       <MemberSignature Language="C++ CLI" Value="F18" />
+      <MemberSignature Language="F#" Value="F18 = 129" Usage="System.ConsoleKey.F18" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1507,6 +1557,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F19" />
       <MemberSignature Language="VB.NET" Value="F19" />
       <MemberSignature Language="C++ CLI" Value="F19" />
+      <MemberSignature Language="F#" Value="F19 = 130" Usage="System.ConsoleKey.F19" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1537,6 +1588,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F2" />
       <MemberSignature Language="VB.NET" Value="F2" />
       <MemberSignature Language="C++ CLI" Value="F2" />
+      <MemberSignature Language="F#" Value="F2 = 113" Usage="System.ConsoleKey.F2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1567,6 +1619,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F20" />
       <MemberSignature Language="VB.NET" Value="F20" />
       <MemberSignature Language="C++ CLI" Value="F20" />
+      <MemberSignature Language="F#" Value="F20 = 131" Usage="System.ConsoleKey.F20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1597,6 +1650,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F21" />
       <MemberSignature Language="VB.NET" Value="F21" />
       <MemberSignature Language="C++ CLI" Value="F21" />
+      <MemberSignature Language="F#" Value="F21 = 132" Usage="System.ConsoleKey.F21" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1627,6 +1681,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F22" />
       <MemberSignature Language="VB.NET" Value="F22" />
       <MemberSignature Language="C++ CLI" Value="F22" />
+      <MemberSignature Language="F#" Value="F22 = 133" Usage="System.ConsoleKey.F22" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1657,6 +1712,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F23" />
       <MemberSignature Language="VB.NET" Value="F23" />
       <MemberSignature Language="C++ CLI" Value="F23" />
+      <MemberSignature Language="F#" Value="F23 = 134" Usage="System.ConsoleKey.F23" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1687,6 +1743,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F24" />
       <MemberSignature Language="VB.NET" Value="F24" />
       <MemberSignature Language="C++ CLI" Value="F24" />
+      <MemberSignature Language="F#" Value="F24 = 135" Usage="System.ConsoleKey.F24" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1717,6 +1774,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F3" />
       <MemberSignature Language="VB.NET" Value="F3" />
       <MemberSignature Language="C++ CLI" Value="F3" />
+      <MemberSignature Language="F#" Value="F3 = 114" Usage="System.ConsoleKey.F3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1747,6 +1805,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F4" />
       <MemberSignature Language="VB.NET" Value="F4" />
       <MemberSignature Language="C++ CLI" Value="F4" />
+      <MemberSignature Language="F#" Value="F4 = 115" Usage="System.ConsoleKey.F4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1777,6 +1836,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F5" />
       <MemberSignature Language="VB.NET" Value="F5" />
       <MemberSignature Language="C++ CLI" Value="F5" />
+      <MemberSignature Language="F#" Value="F5 = 116" Usage="System.ConsoleKey.F5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1807,6 +1867,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F6" />
       <MemberSignature Language="VB.NET" Value="F6" />
       <MemberSignature Language="C++ CLI" Value="F6" />
+      <MemberSignature Language="F#" Value="F6 = 117" Usage="System.ConsoleKey.F6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1837,6 +1898,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F7" />
       <MemberSignature Language="VB.NET" Value="F7" />
       <MemberSignature Language="C++ CLI" Value="F7" />
+      <MemberSignature Language="F#" Value="F7 = 118" Usage="System.ConsoleKey.F7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1867,6 +1929,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F8" />
       <MemberSignature Language="VB.NET" Value="F8" />
       <MemberSignature Language="C++ CLI" Value="F8" />
+      <MemberSignature Language="F#" Value="F8 = 119" Usage="System.ConsoleKey.F8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1897,6 +1960,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F9" />
       <MemberSignature Language="VB.NET" Value="F9" />
       <MemberSignature Language="C++ CLI" Value="F9" />
+      <MemberSignature Language="F#" Value="F9 = 120" Usage="System.ConsoleKey.F9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1927,6 +1991,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.G" />
       <MemberSignature Language="VB.NET" Value="G" />
       <MemberSignature Language="C++ CLI" Value="G" />
+      <MemberSignature Language="F#" Value="G = 71" Usage="System.ConsoleKey.G" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1957,6 +2022,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.H" />
       <MemberSignature Language="VB.NET" Value="H" />
       <MemberSignature Language="C++ CLI" Value="H" />
+      <MemberSignature Language="F#" Value="H = 72" Usage="System.ConsoleKey.H" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1987,6 +2053,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Help" />
       <MemberSignature Language="VB.NET" Value="Help" />
       <MemberSignature Language="C++ CLI" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 47" Usage="System.ConsoleKey.Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2017,6 +2084,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Home" />
       <MemberSignature Language="VB.NET" Value="Home" />
       <MemberSignature Language="C++ CLI" Value="Home" />
+      <MemberSignature Language="F#" Value="Home = 36" Usage="System.ConsoleKey.Home" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2047,6 +2115,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.I" />
       <MemberSignature Language="VB.NET" Value="I" />
       <MemberSignature Language="C++ CLI" Value="I" />
+      <MemberSignature Language="F#" Value="I = 73" Usage="System.ConsoleKey.I" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2077,6 +2146,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 45" Usage="System.ConsoleKey.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2107,6 +2177,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.J" />
       <MemberSignature Language="VB.NET" Value="J" />
       <MemberSignature Language="C++ CLI" Value="J" />
+      <MemberSignature Language="F#" Value="J = 74" Usage="System.ConsoleKey.J" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2137,6 +2208,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.K" />
       <MemberSignature Language="VB.NET" Value="K" />
       <MemberSignature Language="C++ CLI" Value="K" />
+      <MemberSignature Language="F#" Value="K = 75" Usage="System.ConsoleKey.K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2167,6 +2239,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.L" />
       <MemberSignature Language="VB.NET" Value="L" />
       <MemberSignature Language="C++ CLI" Value="L" />
+      <MemberSignature Language="F#" Value="L = 76" Usage="System.ConsoleKey.L" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2197,6 +2270,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LaunchApp1" />
       <MemberSignature Language="VB.NET" Value="LaunchApp1" />
       <MemberSignature Language="C++ CLI" Value="LaunchApp1" />
+      <MemberSignature Language="F#" Value="LaunchApp1 = 182" Usage="System.ConsoleKey.LaunchApp1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2226,6 +2300,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LaunchApp2" />
       <MemberSignature Language="VB.NET" Value="LaunchApp2" />
       <MemberSignature Language="C++ CLI" Value="LaunchApp2" />
+      <MemberSignature Language="F#" Value="LaunchApp2 = 183" Usage="System.ConsoleKey.LaunchApp2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2255,6 +2330,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LaunchMail" />
       <MemberSignature Language="VB.NET" Value="LaunchMail" />
       <MemberSignature Language="C++ CLI" Value="LaunchMail" />
+      <MemberSignature Language="F#" Value="LaunchMail = 180" Usage="System.ConsoleKey.LaunchMail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2284,6 +2360,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LaunchMediaSelect" />
       <MemberSignature Language="VB.NET" Value="LaunchMediaSelect" />
       <MemberSignature Language="C++ CLI" Value="LaunchMediaSelect" />
+      <MemberSignature Language="F#" Value="LaunchMediaSelect = 181" Usage="System.ConsoleKey.LaunchMediaSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2313,6 +2390,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LeftArrow" />
       <MemberSignature Language="VB.NET" Value="LeftArrow" />
       <MemberSignature Language="C++ CLI" Value="LeftArrow" />
+      <MemberSignature Language="F#" Value="LeftArrow = 37" Usage="System.ConsoleKey.LeftArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2343,6 +2421,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LeftWindows" />
       <MemberSignature Language="VB.NET" Value="LeftWindows" />
       <MemberSignature Language="C++ CLI" Value="LeftWindows" />
+      <MemberSignature Language="F#" Value="LeftWindows = 91" Usage="System.ConsoleKey.LeftWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2372,6 +2451,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.M" />
       <MemberSignature Language="VB.NET" Value="M" />
       <MemberSignature Language="C++ CLI" Value="M" />
+      <MemberSignature Language="F#" Value="M = 77" Usage="System.ConsoleKey.M" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2402,6 +2482,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.MediaNext" />
       <MemberSignature Language="VB.NET" Value="MediaNext" />
       <MemberSignature Language="C++ CLI" Value="MediaNext" />
+      <MemberSignature Language="F#" Value="MediaNext = 176" Usage="System.ConsoleKey.MediaNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2431,6 +2512,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.MediaPlay" />
       <MemberSignature Language="VB.NET" Value="MediaPlay" />
       <MemberSignature Language="C++ CLI" Value="MediaPlay" />
+      <MemberSignature Language="F#" Value="MediaPlay = 179" Usage="System.ConsoleKey.MediaPlay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2460,6 +2542,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.MediaPrevious" />
       <MemberSignature Language="VB.NET" Value="MediaPrevious" />
       <MemberSignature Language="C++ CLI" Value="MediaPrevious" />
+      <MemberSignature Language="F#" Value="MediaPrevious = 177" Usage="System.ConsoleKey.MediaPrevious" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2489,6 +2572,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.MediaStop" />
       <MemberSignature Language="VB.NET" Value="MediaStop" />
       <MemberSignature Language="C++ CLI" Value="MediaStop" />
+      <MemberSignature Language="F#" Value="MediaStop = 178" Usage="System.ConsoleKey.MediaStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2518,6 +2602,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Multiply" />
       <MemberSignature Language="VB.NET" Value="Multiply" />
       <MemberSignature Language="C++ CLI" Value="Multiply" />
+      <MemberSignature Language="F#" Value="Multiply = 106" Usage="System.ConsoleKey.Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2548,6 +2633,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.N" />
       <MemberSignature Language="VB.NET" Value="N" />
       <MemberSignature Language="C++ CLI" Value="N" />
+      <MemberSignature Language="F#" Value="N = 78" Usage="System.ConsoleKey.N" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2578,6 +2664,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NoName" />
       <MemberSignature Language="VB.NET" Value="NoName" />
       <MemberSignature Language="C++ CLI" Value="NoName" />
+      <MemberSignature Language="F#" Value="NoName = 252" Usage="System.ConsoleKey.NoName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2607,6 +2694,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad0" />
       <MemberSignature Language="VB.NET" Value="NumPad0" />
       <MemberSignature Language="C++ CLI" Value="NumPad0" />
+      <MemberSignature Language="F#" Value="NumPad0 = 96" Usage="System.ConsoleKey.NumPad0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2637,6 +2725,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad1" />
       <MemberSignature Language="VB.NET" Value="NumPad1" />
       <MemberSignature Language="C++ CLI" Value="NumPad1" />
+      <MemberSignature Language="F#" Value="NumPad1 = 97" Usage="System.ConsoleKey.NumPad1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2667,6 +2756,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad2" />
       <MemberSignature Language="VB.NET" Value="NumPad2" />
       <MemberSignature Language="C++ CLI" Value="NumPad2" />
+      <MemberSignature Language="F#" Value="NumPad2 = 98" Usage="System.ConsoleKey.NumPad2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2697,6 +2787,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad3" />
       <MemberSignature Language="VB.NET" Value="NumPad3" />
       <MemberSignature Language="C++ CLI" Value="NumPad3" />
+      <MemberSignature Language="F#" Value="NumPad3 = 99" Usage="System.ConsoleKey.NumPad3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2727,6 +2818,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad4" />
       <MemberSignature Language="VB.NET" Value="NumPad4" />
       <MemberSignature Language="C++ CLI" Value="NumPad4" />
+      <MemberSignature Language="F#" Value="NumPad4 = 100" Usage="System.ConsoleKey.NumPad4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2757,6 +2849,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad5" />
       <MemberSignature Language="VB.NET" Value="NumPad5" />
       <MemberSignature Language="C++ CLI" Value="NumPad5" />
+      <MemberSignature Language="F#" Value="NumPad5 = 101" Usage="System.ConsoleKey.NumPad5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2787,6 +2880,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad6" />
       <MemberSignature Language="VB.NET" Value="NumPad6" />
       <MemberSignature Language="C++ CLI" Value="NumPad6" />
+      <MemberSignature Language="F#" Value="NumPad6 = 102" Usage="System.ConsoleKey.NumPad6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2817,6 +2911,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad7" />
       <MemberSignature Language="VB.NET" Value="NumPad7" />
       <MemberSignature Language="C++ CLI" Value="NumPad7" />
+      <MemberSignature Language="F#" Value="NumPad7 = 103" Usage="System.ConsoleKey.NumPad7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2847,6 +2942,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad8" />
       <MemberSignature Language="VB.NET" Value="NumPad8" />
       <MemberSignature Language="C++ CLI" Value="NumPad8" />
+      <MemberSignature Language="F#" Value="NumPad8 = 104" Usage="System.ConsoleKey.NumPad8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2877,6 +2973,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad9" />
       <MemberSignature Language="VB.NET" Value="NumPad9" />
       <MemberSignature Language="C++ CLI" Value="NumPad9" />
+      <MemberSignature Language="F#" Value="NumPad9 = 105" Usage="System.ConsoleKey.NumPad9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2907,6 +3004,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.O" />
       <MemberSignature Language="VB.NET" Value="O" />
       <MemberSignature Language="C++ CLI" Value="O" />
+      <MemberSignature Language="F#" Value="O = 79" Usage="System.ConsoleKey.O" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2937,6 +3035,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem1" />
       <MemberSignature Language="VB.NET" Value="Oem1" />
       <MemberSignature Language="C++ CLI" Value="Oem1" />
+      <MemberSignature Language="F#" Value="Oem1 = 186" Usage="System.ConsoleKey.Oem1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2967,6 +3066,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem102" />
       <MemberSignature Language="VB.NET" Value="Oem102" />
       <MemberSignature Language="C++ CLI" Value="Oem102" />
+      <MemberSignature Language="F#" Value="Oem102 = 226" Usage="System.ConsoleKey.Oem102" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2996,6 +3096,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem2" />
       <MemberSignature Language="VB.NET" Value="Oem2" />
       <MemberSignature Language="C++ CLI" Value="Oem2" />
+      <MemberSignature Language="F#" Value="Oem2 = 191" Usage="System.ConsoleKey.Oem2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3026,6 +3127,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem3" />
       <MemberSignature Language="VB.NET" Value="Oem3" />
       <MemberSignature Language="C++ CLI" Value="Oem3" />
+      <MemberSignature Language="F#" Value="Oem3 = 192" Usage="System.ConsoleKey.Oem3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3056,6 +3158,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem4" />
       <MemberSignature Language="VB.NET" Value="Oem4" />
       <MemberSignature Language="C++ CLI" Value="Oem4" />
+      <MemberSignature Language="F#" Value="Oem4 = 219" Usage="System.ConsoleKey.Oem4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3086,6 +3189,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem5" />
       <MemberSignature Language="VB.NET" Value="Oem5" />
       <MemberSignature Language="C++ CLI" Value="Oem5" />
+      <MemberSignature Language="F#" Value="Oem5 = 220" Usage="System.ConsoleKey.Oem5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3116,6 +3220,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem6" />
       <MemberSignature Language="VB.NET" Value="Oem6" />
       <MemberSignature Language="C++ CLI" Value="Oem6" />
+      <MemberSignature Language="F#" Value="Oem6 = 221" Usage="System.ConsoleKey.Oem6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3146,6 +3251,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem7" />
       <MemberSignature Language="VB.NET" Value="Oem7" />
       <MemberSignature Language="C++ CLI" Value="Oem7" />
+      <MemberSignature Language="F#" Value="Oem7 = 222" Usage="System.ConsoleKey.Oem7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3176,6 +3282,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem8" />
       <MemberSignature Language="VB.NET" Value="Oem8" />
       <MemberSignature Language="C++ CLI" Value="Oem8" />
+      <MemberSignature Language="F#" Value="Oem8 = 223" Usage="System.ConsoleKey.Oem8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3206,6 +3313,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemClear" />
       <MemberSignature Language="VB.NET" Value="OemClear" />
       <MemberSignature Language="C++ CLI" Value="OemClear" />
+      <MemberSignature Language="F#" Value="OemClear = 254" Usage="System.ConsoleKey.OemClear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3236,6 +3344,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemComma" />
       <MemberSignature Language="VB.NET" Value="OemComma" />
       <MemberSignature Language="C++ CLI" Value="OemComma" />
+      <MemberSignature Language="F#" Value="OemComma = 188" Usage="System.ConsoleKey.OemComma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3266,6 +3375,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemMinus" />
       <MemberSignature Language="VB.NET" Value="OemMinus" />
       <MemberSignature Language="C++ CLI" Value="OemMinus" />
+      <MemberSignature Language="F#" Value="OemMinus = 189" Usage="System.ConsoleKey.OemMinus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3296,6 +3406,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemPeriod" />
       <MemberSignature Language="VB.NET" Value="OemPeriod" />
       <MemberSignature Language="C++ CLI" Value="OemPeriod" />
+      <MemberSignature Language="F#" Value="OemPeriod = 190" Usage="System.ConsoleKey.OemPeriod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3326,6 +3437,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemPlus" />
       <MemberSignature Language="VB.NET" Value="OemPlus" />
       <MemberSignature Language="C++ CLI" Value="OemPlus" />
+      <MemberSignature Language="F#" Value="OemPlus = 187" Usage="System.ConsoleKey.OemPlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3356,6 +3468,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.P" />
       <MemberSignature Language="VB.NET" Value="P" />
       <MemberSignature Language="C++ CLI" Value="P" />
+      <MemberSignature Language="F#" Value="P = 80" Usage="System.ConsoleKey.P" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3386,6 +3499,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Pa1" />
       <MemberSignature Language="VB.NET" Value="Pa1" />
       <MemberSignature Language="C++ CLI" Value="Pa1" />
+      <MemberSignature Language="F#" Value="Pa1 = 253" Usage="System.ConsoleKey.Pa1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3415,6 +3529,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Packet" />
       <MemberSignature Language="VB.NET" Value="Packet" />
       <MemberSignature Language="C++ CLI" Value="Packet" />
+      <MemberSignature Language="F#" Value="Packet = 231" Usage="System.ConsoleKey.Packet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3444,6 +3559,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.PageDown" />
       <MemberSignature Language="VB.NET" Value="PageDown" />
       <MemberSignature Language="C++ CLI" Value="PageDown" />
+      <MemberSignature Language="F#" Value="PageDown = 34" Usage="System.ConsoleKey.PageDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3474,6 +3590,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.PageUp" />
       <MemberSignature Language="VB.NET" Value="PageUp" />
       <MemberSignature Language="C++ CLI" Value="PageUp" />
+      <MemberSignature Language="F#" Value="PageUp = 33" Usage="System.ConsoleKey.PageUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3504,6 +3621,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Pause" />
       <MemberSignature Language="VB.NET" Value="Pause" />
       <MemberSignature Language="C++ CLI" Value="Pause" />
+      <MemberSignature Language="F#" Value="Pause = 19" Usage="System.ConsoleKey.Pause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3534,6 +3652,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Play" />
       <MemberSignature Language="VB.NET" Value="Play" />
       <MemberSignature Language="C++ CLI" Value="Play" />
+      <MemberSignature Language="F#" Value="Play = 250" Usage="System.ConsoleKey.Play" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3563,6 +3682,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Print" />
       <MemberSignature Language="VB.NET" Value="Print" />
       <MemberSignature Language="C++ CLI" Value="Print" />
+      <MemberSignature Language="F#" Value="Print = 42" Usage="System.ConsoleKey.Print" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3593,6 +3713,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.PrintScreen" />
       <MemberSignature Language="VB.NET" Value="PrintScreen" />
       <MemberSignature Language="C++ CLI" Value="PrintScreen" />
+      <MemberSignature Language="F#" Value="PrintScreen = 44" Usage="System.ConsoleKey.PrintScreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3623,6 +3744,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Process" />
       <MemberSignature Language="VB.NET" Value="Process" />
       <MemberSignature Language="C++ CLI" Value="Process" />
+      <MemberSignature Language="F#" Value="Process = 229" Usage="System.ConsoleKey.Process" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3652,6 +3774,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Q" />
       <MemberSignature Language="VB.NET" Value="Q" />
       <MemberSignature Language="C++ CLI" Value="Q" />
+      <MemberSignature Language="F#" Value="Q = 81" Usage="System.ConsoleKey.Q" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3682,6 +3805,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.R" />
       <MemberSignature Language="VB.NET" Value="R" />
       <MemberSignature Language="C++ CLI" Value="R" />
+      <MemberSignature Language="F#" Value="R = 82" Usage="System.ConsoleKey.R" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3712,6 +3836,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.RightArrow" />
       <MemberSignature Language="VB.NET" Value="RightArrow" />
       <MemberSignature Language="C++ CLI" Value="RightArrow" />
+      <MemberSignature Language="F#" Value="RightArrow = 39" Usage="System.ConsoleKey.RightArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3742,6 +3867,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.RightWindows" />
       <MemberSignature Language="VB.NET" Value="RightWindows" />
       <MemberSignature Language="C++ CLI" Value="RightWindows" />
+      <MemberSignature Language="F#" Value="RightWindows = 92" Usage="System.ConsoleKey.RightWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3771,6 +3897,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.S" />
       <MemberSignature Language="VB.NET" Value="S" />
       <MemberSignature Language="C++ CLI" Value="S" />
+      <MemberSignature Language="F#" Value="S = 83" Usage="System.ConsoleKey.S" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3801,6 +3928,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Select" />
       <MemberSignature Language="VB.NET" Value="Select" />
       <MemberSignature Language="C++ CLI" Value="Select" />
+      <MemberSignature Language="F#" Value="Select = 41" Usage="System.ConsoleKey.Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3831,6 +3959,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Separator" />
       <MemberSignature Language="VB.NET" Value="Separator" />
       <MemberSignature Language="C++ CLI" Value="Separator" />
+      <MemberSignature Language="F#" Value="Separator = 108" Usage="System.ConsoleKey.Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3861,6 +3990,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Sleep" />
       <MemberSignature Language="VB.NET" Value="Sleep" />
       <MemberSignature Language="C++ CLI" Value="Sleep" />
+      <MemberSignature Language="F#" Value="Sleep = 95" Usage="System.ConsoleKey.Sleep" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3891,6 +4021,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Spacebar" />
       <MemberSignature Language="VB.NET" Value="Spacebar" />
       <MemberSignature Language="C++ CLI" Value="Spacebar" />
+      <MemberSignature Language="F#" Value="Spacebar = 32" Usage="System.ConsoleKey.Spacebar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3921,6 +4052,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Subtract" />
       <MemberSignature Language="VB.NET" Value="Subtract" />
       <MemberSignature Language="C++ CLI" Value="Subtract" />
+      <MemberSignature Language="F#" Value="Subtract = 109" Usage="System.ConsoleKey.Subtract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3951,6 +4083,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.T" />
       <MemberSignature Language="VB.NET" Value="T" />
       <MemberSignature Language="C++ CLI" Value="T" />
+      <MemberSignature Language="F#" Value="T = 84" Usage="System.ConsoleKey.T" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3981,6 +4114,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Tab" />
       <MemberSignature Language="VB.NET" Value="Tab" />
       <MemberSignature Language="C++ CLI" Value="Tab" />
+      <MemberSignature Language="F#" Value="Tab = 9" Usage="System.ConsoleKey.Tab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4011,6 +4145,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.U" />
       <MemberSignature Language="VB.NET" Value="U" />
       <MemberSignature Language="C++ CLI" Value="U" />
+      <MemberSignature Language="F#" Value="U = 85" Usage="System.ConsoleKey.U" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4041,6 +4176,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.UpArrow" />
       <MemberSignature Language="VB.NET" Value="UpArrow" />
       <MemberSignature Language="C++ CLI" Value="UpArrow" />
+      <MemberSignature Language="F#" Value="UpArrow = 38" Usage="System.ConsoleKey.UpArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4071,6 +4207,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.V" />
       <MemberSignature Language="VB.NET" Value="V" />
       <MemberSignature Language="C++ CLI" Value="V" />
+      <MemberSignature Language="F#" Value="V = 86" Usage="System.ConsoleKey.V" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4101,6 +4238,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.VolumeDown" />
       <MemberSignature Language="VB.NET" Value="VolumeDown" />
       <MemberSignature Language="C++ CLI" Value="VolumeDown" />
+      <MemberSignature Language="F#" Value="VolumeDown = 174" Usage="System.ConsoleKey.VolumeDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4130,6 +4268,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.VolumeMute" />
       <MemberSignature Language="VB.NET" Value="VolumeMute" />
       <MemberSignature Language="C++ CLI" Value="VolumeMute" />
+      <MemberSignature Language="F#" Value="VolumeMute = 173" Usage="System.ConsoleKey.VolumeMute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4159,6 +4298,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.VolumeUp" />
       <MemberSignature Language="VB.NET" Value="VolumeUp" />
       <MemberSignature Language="C++ CLI" Value="VolumeUp" />
+      <MemberSignature Language="F#" Value="VolumeUp = 175" Usage="System.ConsoleKey.VolumeUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4188,6 +4328,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.W" />
       <MemberSignature Language="VB.NET" Value="W" />
       <MemberSignature Language="C++ CLI" Value="W" />
+      <MemberSignature Language="F#" Value="W = 87" Usage="System.ConsoleKey.W" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4218,6 +4359,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.X" />
       <MemberSignature Language="VB.NET" Value="X" />
       <MemberSignature Language="C++ CLI" Value="X" />
+      <MemberSignature Language="F#" Value="X = 88" Usage="System.ConsoleKey.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4248,6 +4390,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Y" />
       <MemberSignature Language="VB.NET" Value="Y" />
       <MemberSignature Language="C++ CLI" Value="Y" />
+      <MemberSignature Language="F#" Value="Y = 89" Usage="System.ConsoleKey.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4278,6 +4421,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Z" />
       <MemberSignature Language="VB.NET" Value="Z" />
       <MemberSignature Language="C++ CLI" Value="Z" />
+      <MemberSignature Language="F#" Value="Z = 90" Usage="System.ConsoleKey.Z" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4308,6 +4452,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Zoom" />
       <MemberSignature Language="VB.NET" Value="Zoom" />
       <MemberSignature Language="C++ CLI" Value="Zoom" />
+      <MemberSignature Language="F#" Value="Zoom = 251" Usage="System.ConsoleKey.Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

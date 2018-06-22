@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Hosting.ApplicationActivator" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationActivator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationActivator" />
+  <TypeSignature Language="F#" Value="type ApplicationActivator = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.ActivationContext activationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ApplicationActivator.CreateInstance(System.ActivationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::ObjectHandle ^ CreateInstance(ActivationContext ^ activationContext);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : ActivationContext -&gt; System.Runtime.Remoting.ObjectHandle&#xA;override this.CreateInstance : ActivationContext -&gt; System.Runtime.Remoting.ObjectHandle" Usage="applicationActivator.CreateInstance activationContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.ActivationContext activationContext, string[] activationCustomData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ApplicationActivator.CreateInstance(System.ActivationContext,System.String[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::ObjectHandle ^ CreateInstance(ActivationContext ^ activationContext, cli::array &lt;System::String ^&gt; ^ activationCustomData);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : ActivationContext * string[] -&gt; System.Runtime.Remoting.ObjectHandle&#xA;override this.CreateInstance : ActivationContext * string[] -&gt; System.Runtime.Remoting.ObjectHandle" Usage="applicationActivator.CreateInstance (activationContext, activationCustomData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper(System.AppDomainSetup)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateInstanceHelper (adSetup As AppDomainSetup) As ObjectHandle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstanceHelper(AppDomainSetup ^ adSetup);" />
+      <MemberSignature Language="F#" Value="static member CreateInstanceHelper : AppDomainSetup -&gt; System.Runtime.Remoting.ObjectHandle" Usage="System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper adSetup" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

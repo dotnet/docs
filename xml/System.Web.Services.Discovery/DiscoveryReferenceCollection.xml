@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryReferenceCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryReferenceCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryReferenceCollection sealed : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type DiscoveryReferenceCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryReferenceCollection.Add(System.Web.Services.Discovery.DiscoveryReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As DiscoveryReference) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Discovery::DiscoveryReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Discovery.DiscoveryReference -&gt; int" Usage="discoveryReferenceCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryReferenceCollection.Contains(System.Web.Services.Discovery.DiscoveryReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As DiscoveryReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Discovery::DiscoveryReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Services.Discovery.DiscoveryReference -&gt; bool" Usage="discoveryReferenceCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryReferenceCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(i As Integer) As DiscoveryReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Discovery::DiscoveryReference ^ default[int] { System::Web::Services::Discovery::DiscoveryReference ^ get(int i); void set(int i, System::Web::Services::Discovery::DiscoveryReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Discovery.DiscoveryReference with get, set" Usage="System.Web.Services.Discovery.DiscoveryReferenceCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryReferenceCollection.Remove(System.Web.Services.Discovery.DiscoveryReference)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DiscoveryReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Discovery::DiscoveryReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Discovery.DiscoveryReference -&gt; unit" Usage="discoveryReferenceCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

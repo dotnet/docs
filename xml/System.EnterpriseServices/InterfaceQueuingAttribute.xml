@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.InterfaceQueuingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InterfaceQueuingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InterfaceQueuingAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type InterfaceQueuingAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.InterfaceQueuingAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InterfaceQueuingAttribute(bool enabled);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.InterfaceQueuingAttribute : bool -&gt; System.EnterpriseServices.InterfaceQueuingAttribute" Usage="new System.EnterpriseServices.InterfaceQueuingAttribute enabled" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.InterfaceQueuingAttribute.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.EnterpriseServices.InterfaceQueuingAttribute.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.InterfaceQueuingAttribute.Interface" />
       <MemberSignature Language="VB.NET" Value="Public Property Interface As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Interface { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Interface : string with get, set" Usage="System.EnterpriseServices.InterfaceQueuingAttribute.Interface" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

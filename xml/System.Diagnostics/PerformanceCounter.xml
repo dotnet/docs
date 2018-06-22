@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PerformanceCounter&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounter sealed : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type PerformanceCounter = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -210,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String, readOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName, bool readOnly);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string * bool -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName, readOnly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -298,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String, instanceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName, System::String ^ instanceName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string * string -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName, instanceName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -376,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String, instanceName As String, readOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName, System::String ^ instanceName, bool readOnly);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string * string * bool -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName, instanceName, readOnly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -468,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String, instanceName As String, machineName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName, System::String ^ instanceName, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string * string * string -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName, instanceName, machineName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -557,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="performanceCounter.BeginInit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -591,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.CategoryName" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryName : string with get, set" Usage="System.Diagnostics.PerformanceCounter.CategoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -654,6 +662,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="performanceCounter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -685,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.CloseSharedResources" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CloseSharedResources ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CloseSharedResources();" />
+      <MemberSignature Language="F#" Value="static member CloseSharedResources : unit -&gt; unit" Usage="System.Diagnostics.PerformanceCounter.CloseSharedResources " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -710,6 +720,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.CounterHelp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterHelp As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CounterHelp { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CounterHelp : string" Usage="System.Diagnostics.PerformanceCounter.CounterHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -775,6 +786,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.CounterName" />
       <MemberSignature Language="VB.NET" Value="Public Property CounterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CounterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CounterName : string with get, set" Usage="System.Diagnostics.PerformanceCounter.CounterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -831,6 +843,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.CounterType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterType As PerformanceCounterType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterType CounterType { System::Diagnostics::PerformanceCounterType get(); };" />
+      <MemberSignature Language="F#" Value="member this.CounterType : System.Diagnostics.PerformanceCounterType" Usage="System.Diagnostics.PerformanceCounter.CounterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -899,6 +912,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.Decrement" />
       <MemberSignature Language="VB.NET" Value="Public Function Decrement () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long Decrement();" />
+      <MemberSignature Language="F#" Value="member this.Decrement : unit -&gt; int64" Usage="performanceCounter.Decrement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -950,6 +964,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounter.DefaultFileMappingSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared DefaultFileMappingSize As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: static int DefaultFileMappingSize;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultFileMappingSize : int" Usage="System.Diagnostics.PerformanceCounter.DefaultFileMappingSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -978,6 +993,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="performanceCounter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1001,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="performanceCounter.EndInit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -1036,6 +1053,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.Increment" />
       <MemberSignature Language="VB.NET" Value="Public Function Increment () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long Increment();" />
+      <MemberSignature Language="F#" Value="member this.Increment : unit -&gt; int64" Usage="performanceCounter.Increment " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1087,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.IncrementBy(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function IncrementBy (value As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long IncrementBy(long value);" />
+      <MemberSignature Language="F#" Value="member this.IncrementBy : int64 -&gt; int64" Usage="performanceCounter.IncrementBy value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1155,6 +1174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.InstanceLifetime" />
       <MemberSignature Language="VB.NET" Value="Public Property InstanceLifetime As PerformanceCounterInstanceLifetime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterInstanceLifetime InstanceLifetime { System::Diagnostics::PerformanceCounterInstanceLifetime get(); void set(System::Diagnostics::PerformanceCounterInstanceLifetime value); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceLifetime : System.Diagnostics.PerformanceCounterInstanceLifetime with get, set" Usage="System.Diagnostics.PerformanceCounter.InstanceLifetime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1200,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.InstanceName" />
       <MemberSignature Language="VB.NET" Value="Public Property InstanceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InstanceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceName : string with get, set" Usage="System.Diagnostics.PerformanceCounter.InstanceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1279,6 +1300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Diagnostics.PerformanceCounter.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1328,6 +1350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.NextSample" />
       <MemberSignature Language="VB.NET" Value="Public Function NextSample () As CounterSample" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::CounterSample NextSample();" />
+      <MemberSignature Language="F#" Value="member this.NextSample : unit -&gt; System.Diagnostics.CounterSample" Usage="performanceCounter.NextSample " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1388,6 +1411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.NextValue" />
       <MemberSignature Language="VB.NET" Value="Public Function NextValue () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; float NextValue();" />
+      <MemberSignature Language="F#" Value="member this.NextValue : unit -&gt; single" Usage="performanceCounter.NextValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1439,6 +1463,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.RawValue" />
       <MemberSignature Language="VB.NET" Value="Public Property RawValue As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RawValue { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.RawValue : int64 with get, set" Usage="System.Diagnostics.PerformanceCounter.RawValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1520,6 +1545,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Diagnostics.PerformanceCounter.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1563,6 +1589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.RemoveInstance" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveInstance ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveInstance();" />
+      <MemberSignature Language="F#" Value="member this.RemoveInstance : unit -&gt; unit" Usage="performanceCounter.RemoveInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

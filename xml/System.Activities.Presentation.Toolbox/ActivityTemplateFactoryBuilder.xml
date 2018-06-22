@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityTemplateFactoryBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityTemplateFactoryBuilder sealed" />
+  <TypeSignature Language="F#" Value="type ActivityTemplateFactoryBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Implementation" />
       <MemberSignature Language="VB.NET" Value="Public Property Implementation As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Implementation { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Implementation : obj with get, set" Usage="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Implementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.TargetType" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetType : Type with get, set" Usage="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.TargetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

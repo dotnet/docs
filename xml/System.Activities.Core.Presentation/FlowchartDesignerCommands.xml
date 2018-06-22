@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.FlowchartDesignerCommands" />
   <TypeSignature Language="VB.NET" Value="Public Class FlowchartDesignerCommands" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlowchartDesignerCommands abstract sealed" />
+  <TypeSignature Language="F#" Value="type FlowchartDesignerCommands = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Core.Presentation.FlowchartDesignerCommands.ConnectNodesCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConnectNodesCommand As RoutedCommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedCommand ^ ConnectNodesCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ConnectNodesCommand : System.Windows.Input.RoutedCommand" Usage="System.Activities.Core.Presentation.FlowchartDesignerCommands.ConnectNodesCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>

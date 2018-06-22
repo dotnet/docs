@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.AuthenticatedStream" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AuthenticatedStream&#xA;Inherits Stream" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthenticatedStream abstract : System::IO::Stream" />
+  <TypeSignature Language="F#" Value="type AuthenticatedStream = class&#xA;    inherit Stream" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.AuthenticatedStream.#ctor(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (innerStream As Stream, leaveInnerStreamOpen As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AuthenticatedStream(System::IO::Stream ^ innerStream, bool leaveInnerStreamOpen);" />
+      <MemberSignature Language="F#" Value="new System.Net.Security.AuthenticatedStream : System.IO.Stream * bool -&gt; System.Net.Security.AuthenticatedStream" Usage="new System.Net.Security.AuthenticatedStream (innerStream, leaveInnerStreamOpen)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.AuthenticatedStream.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="authenticatedStream.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.AuthenticatedStream.InnerStream" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InnerStream As Stream" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::IO::Stream ^ InnerStream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InnerStream : System.IO.Stream" Usage="System.Net.Security.AuthenticatedStream.InnerStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.AuthenticatedStream.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsAuthenticated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Net.Security.AuthenticatedStream.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.AuthenticatedStream.IsEncrypted" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsEncrypted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsEncrypted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEncrypted : bool" Usage="System.Net.Security.AuthenticatedStream.IsEncrypted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -286,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.AuthenticatedStream.IsMutuallyAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsMutuallyAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsMutuallyAuthenticated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMutuallyAuthenticated : bool" Usage="System.Net.Security.AuthenticatedStream.IsMutuallyAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -333,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.AuthenticatedStream.IsServer" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsServer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsServer { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsServer : bool" Usage="System.Net.Security.AuthenticatedStream.IsServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -380,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.AuthenticatedStream.IsSigned" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsSigned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsSigned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSigned : bool" Usage="System.Net.Security.AuthenticatedStream.IsSigned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -427,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.AuthenticatedStream.LeaveInnerStreamOpen" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeaveInnerStreamOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LeaveInnerStreamOpen { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.LeaveInnerStreamOpen : bool" Usage="System.Net.Security.AuthenticatedStream.LeaveInnerStreamOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>

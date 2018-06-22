@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.EditorBrowsableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EditorBrowsableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditorBrowsableAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EditorBrowsableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorBrowsableAttribute.#ctor(System.ComponentModel.EditorBrowsableState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As EditorBrowsableState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EditorBrowsableAttribute(System::ComponentModel::EditorBrowsableState state);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EditorBrowsableAttribute : System.ComponentModel.EditorBrowsableState -&gt; System.ComponentModel.EditorBrowsableAttribute" Usage="new System.ComponentModel.EditorBrowsableAttribute state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -149,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorBrowsableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="editorBrowsableAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -190,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EditorBrowsableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="editorBrowsableAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -226,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EditorBrowsableAttribute.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As EditorBrowsableState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::EditorBrowsableState State { System::ComponentModel::EditorBrowsableState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.ComponentModel.EditorBrowsableState" Usage="System.ComponentModel.EditorBrowsableAttribute.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

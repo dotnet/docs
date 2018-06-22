@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryClientBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClientBindingElement&#xA;Inherits BindingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClientBindingElement sealed : System::ServiceModel::Channels::BindingElement" />
+  <TypeSignature Language="F#" Value="type DiscoveryClientBindingElement = class&#xA;    inherit BindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryEndpointProvider discoveryEndpointProvider, class System.ServiceModel.Discovery.FindCriteria findCriteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClientBindingElement.#ctor(System.ServiceModel.Discovery.DiscoveryEndpointProvider,System.ServiceModel.Discovery.FindCriteria)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryClientBindingElement(System::ServiceModel::Discovery::DiscoveryEndpointProvider ^ discoveryEndpointProvider, System::ServiceModel::Discovery::FindCriteria ^ findCriteria);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryClientBindingElement : System.ServiceModel.Discovery.DiscoveryEndpointProvider * System.ServiceModel.Discovery.FindCriteria -&gt; System.ServiceModel.Discovery.DiscoveryClientBindingElement" Usage="new System.ServiceModel.Discovery.DiscoveryClientBindingElement (discoveryEndpointProvider, findCriteria)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClientBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="discoveryClientBindingElement.BuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClientBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="discoveryClientBindingElement.BuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClientBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="discoveryClientBindingElement.CanBuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClientBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="discoveryClientBindingElement.CanBuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClientBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="discoveryClientBindingElement.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointAddress" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DiscoveryEndpointAddress As EndpointAddress " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ServiceModel::EndpointAddress ^ DiscoveryEndpointAddress;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DiscoveryEndpointAddress : System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property DiscoveryEndpointProvider As DiscoveryEndpointProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::DiscoveryEndpointProvider ^ DiscoveryEndpointProvider { System::ServiceModel::Discovery::DiscoveryEndpointProvider ^ get(); void set(System::ServiceModel::Discovery::DiscoveryEndpointProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryEndpointProvider : System.ServiceModel.Discovery.DiscoveryEndpointProvider with get, set" Usage="System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria" />
       <MemberSignature Language="VB.NET" Value="Public Property FindCriteria As FindCriteria" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::FindCriteria ^ FindCriteria { System::ServiceModel::Discovery::FindCriteria ^ get(); void set(System::ServiceModel::Discovery::FindCriteria ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FindCriteria : System.ServiceModel.Discovery.FindCriteria with get, set" Usage="System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -288,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClientBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="discoveryClientBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

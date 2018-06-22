@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerCommandSet" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerCommandSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerCommandSet" />
+  <TypeSignature Language="F#" Value="type DesignerCommandSet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCommandSet.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.ComponentModel.Design.DesignerCommandSet.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerCommandSet.GetCommands(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCommands (name As String) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ICollection ^ GetCommands(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetCommands : string -&gt; System.Collections.ICollection&#xA;override this.GetCommands : string -&gt; System.Collections.ICollection" Usage="designerCommandSet.GetCommands name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCommandSet.Verbs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Verbs As DesignerVerbCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : System.ComponentModel.Design.DesignerVerbCollection" Usage="System.ComponentModel.Design.DesignerCommandSet.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

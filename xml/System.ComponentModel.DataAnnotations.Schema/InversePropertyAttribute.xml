@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class InversePropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InversePropertyAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type InversePropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (property As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InversePropertyAttribute(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute : string -&gt; System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute" Usage="new System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute property" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute.Property" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Property As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Property { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Property : string" Usage="System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

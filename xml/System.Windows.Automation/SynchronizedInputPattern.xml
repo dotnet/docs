@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SynchronizedInputPattern" />
   <TypeSignature Language="VB.NET" Value="Public Class SynchronizedInputPattern&#xA;Inherits BasePattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class SynchronizedInputPattern : System::Windows::Automation::BasePattern" />
+  <TypeSignature Language="F#" Value="type SynchronizedInputPattern = class&#xA;    inherit BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.SynchronizedInputPattern.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; unit" Usage="synchronizedInputPattern.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputPattern.InputDiscardedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputDiscardedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InputDiscardedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InputDiscardedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SynchronizedInputPattern.InputDiscardedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputPattern.InputReachedOtherElementEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputReachedOtherElementEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InputReachedOtherElementEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InputReachedOtherElementEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SynchronizedInputPattern.InputReachedOtherElementEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputPattern.InputReachedTargetEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputReachedTargetEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InputReachedTargetEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InputReachedTargetEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SynchronizedInputPattern.InputReachedTargetEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputPattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.SynchronizedInputPattern.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.SynchronizedInputPattern.StartListening(System.Windows.Automation.SynchronizedInputType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartListening (inputType As SynchronizedInputType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartListening(System::Windows::Automation::SynchronizedInputType inputType);" />
+      <MemberSignature Language="F#" Value="member this.StartListening : System.Windows.Automation.SynchronizedInputType -&gt; unit" Usage="synchronizedInputPattern.StartListening inputType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

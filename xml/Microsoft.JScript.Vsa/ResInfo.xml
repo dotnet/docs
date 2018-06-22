@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.ResInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ResInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResInfo" />
+  <TypeSignature Language="F#" Value="type ResInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.ResInfo.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resinfo As String, isLinked As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResInfo(System::String ^ resinfo, bool isLinked);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.ResInfo : string * bool -&gt; Microsoft.JScript.Vsa.ResInfo" Usage="new Microsoft.JScript.Vsa.ResInfo (resinfo, isLinked)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.ResInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String, name As String, isPublic As Boolean, isLinked As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResInfo(System::String ^ filename, System::String ^ name, bool isPublic, bool isLinked);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.ResInfo : string * string * bool * bool -&gt; Microsoft.JScript.Vsa.ResInfo" Usage="new Microsoft.JScript.Vsa.ResInfo (filename, name, isPublic, isLinked)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.filename" />
       <MemberSignature Language="VB.NET" Value="Public filename As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ filename;" />
+      <MemberSignature Language="F#" Value="val mutable filename : string" Usage="Microsoft.JScript.Vsa.ResInfo.filename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.fullpath" />
       <MemberSignature Language="VB.NET" Value="Public fullpath As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ fullpath;" />
+      <MemberSignature Language="F#" Value="val mutable fullpath : string" Usage="Microsoft.JScript.Vsa.ResInfo.fullpath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.isLinked" />
       <MemberSignature Language="VB.NET" Value="Public isLinked As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool isLinked;" />
+      <MemberSignature Language="F#" Value="val mutable isLinked : bool" Usage="Microsoft.JScript.Vsa.ResInfo.isLinked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.isPublic" />
       <MemberSignature Language="VB.NET" Value="Public isPublic As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool isPublic;" />
+      <MemberSignature Language="F#" Value="val mutable isPublic : bool" Usage="Microsoft.JScript.Vsa.ResInfo.isPublic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.name" />
       <MemberSignature Language="VB.NET" Value="Public name As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ name;" />
+      <MemberSignature Language="F#" Value="val mutable name : string" Usage="Microsoft.JScript.Vsa.ResInfo.name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

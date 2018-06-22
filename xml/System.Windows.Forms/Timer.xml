@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Timer" />
   <TypeSignature Language="VB.NET" Value="Public Class Timer&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class Timer : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type Timer = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Timer.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer(System::ComponentModel::IContainer ^ container);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Timer : System.ComponentModel.IContainer -&gt; System.Windows.Forms.Timer" Usage="new System.Windows.Forms.Timer container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Timer.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="timer.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Timer.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.Timer.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Timer.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Interval { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Interval : int with get, set" Usage="System.Windows.Forms.Timer.Interval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Timer.OnTick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTick (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTick(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnTick : EventArgs -&gt; unit&#xA;override this.OnTick : EventArgs -&gt; unit" Usage="timer.OnTick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Timer.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="timer.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -315,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Timer.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="timer.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -357,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Timer.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.Timer.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -391,6 +400,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Timer.Tick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Tick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Tick;" />
+      <MemberSignature Language="F#" Value="member this.Tick : EventHandler " Usage="member this.Tick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -428,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Timer.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="timer.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

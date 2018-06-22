@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.IInputLanguageSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInputLanguageSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInputLanguageSource" />
+  <TypeSignature Language="F#" Value="type IInputLanguageSource = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.IInputLanguageSource.CurrentInputLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentInputLanguage As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CurrentInputLanguage { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentInputLanguage : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Input.IInputLanguageSource.CurrentInputLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.IInputLanguageSource.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit" Usage="iInputLanguageSource.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.IInputLanguageSource.InputLanguageList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputLanguageList As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ InputLanguageList { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputLanguageList : System.Collections.IEnumerable" Usage="System.Windows.Input.IInputLanguageSource.InputLanguageList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.IInputLanguageSource.Uninitialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Uninitialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Uninitialize();" />
+      <MemberSignature Language="F#" Value="abstract member Uninitialize : unit -&gt; unit" Usage="iInputLanguageSource.Uninitialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

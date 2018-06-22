@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityCollection&#xA;Inherits List(Of Activity)&#xA;Implements ICollection(Of Activity), IEnumerable(Of Activity), IList, IList(Of Activity)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityCollection sealed : System::Collections::Generic::List&lt;System::Workflow::ComponentModel::Activity ^&gt;, System::Collections::Generic::ICollection&lt;System::Workflow::ComponentModel::Activity ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::Activity ^&gt;, System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::Activity ^&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type ActivityCollection = class&#xA;    inherit List&lt;Activity&gt;&#xA;    interface IList&lt;Activity&gt;&#xA;    interface ICollection&lt;Activity&gt;&#xA;    interface seq&lt;Activity&gt;&#xA;    interface IEnumerable&#xA;    interface IList&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.#ctor(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityCollection(System::Workflow::ComponentModel::Activity ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.ActivityCollection : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.ActivityCollection" Usage="new System.Workflow.ComponentModel.ActivityCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.Add(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Workflow::ComponentModel::Activity ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="activityCollection.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="activityCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.Contains(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As Activity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Workflow::ComponentModel::Activity ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="activityCollection.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Workflow.ComponentModel.ActivityCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerator&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Workflow.ComponentModel.Activity&gt;" Usage="activityCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.IndexOf(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As Activity) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Workflow::ComponentModel::Activity ^ item);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Workflow.ComponentModel.Activity -&gt; int" Usage="activityCollection.IndexOf item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.Insert(System.Int32,System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Workflow::ComponentModel::Activity ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="activityCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -339,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ default[int] { System::Workflow::ComponentModel::Activity ^ get(int index); void set(int index, System::Workflow::ComponentModel::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Workflow.ComponentModel.Activity with get, set" Usage="System.Workflow.ComponentModel.ActivityCollection.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -370,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ default[System::String ^] { System::Workflow::ComponentModel::Activity ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.ComponentModel.ActivityCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -401,6 +412,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.ActivityCollection.ListChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ListChanged As EventHandler(Of ActivityCollectionChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::ActivityCollectionChangeEventArgs ^&gt; ^ ListChanged;" />
+      <MemberSignature Language="F#" Value="member this.ListChanged : EventHandler&lt;System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs&gt; " Usage="member this.ListChanged : System.EventHandler&lt;System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -429,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.Remove(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As Activity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::Workflow::ComponentModel::Activity ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="activityCollection.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -464,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="activityCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
@@ -632,6 +646,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.System#Collections#Generic#ICollection&lt;System#Workflow#ComponentModel#Activity&gt;#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection(Of Activity).Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ActivityCollection.System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -655,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.System#Collections#Generic#ICollection&lt;System#Workflow#ComponentModel#Activity&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of Activity).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ActivityCollection.System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -838,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.System#Collections#Generic#IList&lt;System#Workflow#ComponentModel#Activity&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Activity Implements IList(Of Activity).Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Workflow::ComponentModel::Activity ^ System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;.Item[int] { System::Workflow::ComponentModel::Activity ^ get(int index); void set(int index, System::Workflow::ComponentModel::Activity ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ActivityCollection.System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -940,6 +957,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ActivityCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -975,6 +993,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ActivityCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1173,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ActivityCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1204,6 +1224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ActivityCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1227,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ActivityCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

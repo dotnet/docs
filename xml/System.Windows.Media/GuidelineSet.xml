@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GuidelineSet" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GuidelineSet&#xA;Inherits Animatable" />
   <TypeSignature Language="C++ CLI" Value="public ref class GuidelineSet sealed : System::Windows::Media::Animation::Animatable" />
+  <TypeSignature Language="F#" Value="type GuidelineSet = class&#xA;    inherit Animatable&#xA;    interface DUCE.IResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GuidelineSet.#ctor(System.Double[],System.Double[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (guidelinesX As Double(), guidelinesY As Double())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GuidelineSet(cli::array &lt;double&gt; ^ guidelinesX, cli::array &lt;double&gt; ^ guidelinesY);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GuidelineSet : double[] * double[] -&gt; System.Windows.Media.GuidelineSet" Usage="new System.Windows.Media.GuidelineSet (guidelinesX, guidelinesY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GuidelineSet.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As GuidelineSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GuidelineSet ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.GuidelineSet" Usage="guidelineSet.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GuidelineSet.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As GuidelineSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GuidelineSet ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.GuidelineSet" Usage="guidelineSet.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GuidelineSet.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="guidelineSet.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GuidelineSet.GuidelinesX" />
       <MemberSignature Language="VB.NET" Value="Public Property GuidelinesX As DoubleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DoubleCollection ^ GuidelinesX { System::Windows::Media::DoubleCollection ^ get(); void set(System::Windows::Media::DoubleCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GuidelinesX : System.Windows.Media.DoubleCollection with get, set" Usage="System.Windows.Media.GuidelineSet.GuidelinesX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GuidelineSet.GuidelinesXProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GuidelinesXProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GuidelinesXProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GuidelinesXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GuidelineSet.GuidelinesXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GuidelineSet.GuidelinesY" />
       <MemberSignature Language="VB.NET" Value="Public Property GuidelinesY As DoubleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DoubleCollection ^ GuidelinesY { System::Windows::Media::DoubleCollection ^ get(); void set(System::Windows::Media::DoubleCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GuidelinesY : System.Windows.Media.DoubleCollection with get, set" Usage="System.Windows.Media.GuidelineSet.GuidelinesY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GuidelineSet.GuidelinesYProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GuidelinesYProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GuidelinesYProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GuidelinesYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GuidelineSet.GuidelinesYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

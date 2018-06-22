@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XData" />
   <TypeSignature Language="C++ CLI" Value="public ref class XData sealed" />
+  <TypeSignature Language="F#" Value="type XData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XData.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Markup.XData.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XData.XmlReader" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlReader As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ XmlReader { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlReader : obj with get, set" Usage="System.Windows.Markup.XData.XmlReader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

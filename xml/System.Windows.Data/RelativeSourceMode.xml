@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.RelativeSourceMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RelativeSourceMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class RelativeSourceMode" />
+  <TypeSignature Language="F#" Value="type RelativeSourceMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.RelativeSourceMode.FindAncestor" />
       <MemberSignature Language="VB.NET" Value="FindAncestor" />
       <MemberSignature Language="C++ CLI" Value="FindAncestor" />
+      <MemberSignature Language="F#" Value="FindAncestor = 3" Usage="System.Windows.Data.RelativeSourceMode.FindAncestor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.RelativeSourceMode.PreviousData" />
       <MemberSignature Language="VB.NET" Value="PreviousData" />
       <MemberSignature Language="C++ CLI" Value="PreviousData" />
+      <MemberSignature Language="F#" Value="PreviousData = 0" Usage="System.Windows.Data.RelativeSourceMode.PreviousData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.RelativeSourceMode.Self" />
       <MemberSignature Language="VB.NET" Value="Self" />
       <MemberSignature Language="C++ CLI" Value="Self" />
+      <MemberSignature Language="F#" Value="Self = 2" Usage="System.Windows.Data.RelativeSourceMode.Self" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.RelativeSourceMode.TemplatedParent" />
       <MemberSignature Language="VB.NET" Value="TemplatedParent" />
       <MemberSignature Language="C++ CLI" Value="TemplatedParent" />
+      <MemberSignature Language="F#" Value="TemplatedParent = 1" Usage="System.Windows.Data.RelativeSourceMode.TemplatedParent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ForestTrustRelationshipCollisionCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ForestTrustRelationshipCollisionCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ForestTrustRelationshipCollisionCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection.Contains(System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (collision As ForestTrustRelationshipCollision) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ForestTrustRelationshipCollision ^ collision);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision -&gt; bool" Usage="forestTrustRelationshipCollisionCollection.Contains collision" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ForestTrustRelationshipCollision(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ForestTrustRelationshipCollision ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision[] * int -&gt; unit" Usage="forestTrustRelationshipCollisionCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (collision As ForestTrustRelationshipCollision) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ForestTrustRelationshipCollision ^ collision);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision -&gt; int" Usage="forestTrustRelationshipCollisionCollection.IndexOf collision" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ForestTrustRelationshipCollision" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ForestTrustRelationshipCollision ^ default[int] { System::DirectoryServices::ActiveDirectory::ForestTrustRelationshipCollision ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollisionCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DllNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class DllNotFoundException&#xA;Inherits TypeLoadException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DllNotFoundException : TypeLoadException" />
+  <TypeSignature Language="F#" Value="type DllNotFoundException = class&#xA;    inherit TypeLoadException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.DllNotFoundException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DllNotFoundException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new DllNotFoundException : string -&gt; DllNotFoundException" Usage="new System.DllNotFoundException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -162,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.DllNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DllNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new DllNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; DllNotFoundException" Usage="new System.DllNotFoundException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -194,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.DllNotFoundException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DllNotFoundException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new DllNotFoundException : string * Exception -&gt; DllNotFoundException" Usage="new System.DllNotFoundException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

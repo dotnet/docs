@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.FirstMatchCodeGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FirstMatchCodeGroup&#xA;Inherits CodeGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class FirstMatchCodeGroup sealed : System::Security::Policy::CodeGroup" />
+  <TypeSignature Language="F#" Value="type FirstMatchCodeGroup = class&#xA;    inherit CodeGroup" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.FirstMatchCodeGroup.#ctor(System.Security.Policy.IMembershipCondition,System.Security.Policy.PolicyStatement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (membershipCondition As IMembershipCondition, policy As PolicyStatement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FirstMatchCodeGroup(System::Security::Policy::IMembershipCondition ^ membershipCondition, System::Security::Policy::PolicyStatement ^ policy);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.FirstMatchCodeGroup : System.Security.Policy.IMembershipCondition * System.Security.Policy.PolicyStatement -&gt; System.Security.Policy.FirstMatchCodeGroup" Usage="new System.Security.Policy.FirstMatchCodeGroup (membershipCondition, policy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.FirstMatchCodeGroup.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As CodeGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.Policy.CodeGroup" Usage="firstMatchCodeGroup.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.FirstMatchCodeGroup.MergeLogic" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MergeLogic As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MergeLogic { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MergeLogic : string" Usage="System.Security.Policy.FirstMatchCodeGroup.MergeLogic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.FirstMatchCodeGroup.Resolve(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="override this.Resolve : System.Security.Policy.Evidence -&gt; System.Security.Policy.PolicyStatement" Usage="firstMatchCodeGroup.Resolve evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.FirstMatchCodeGroup.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="override this.ResolveMatchingCodeGroups : System.Security.Policy.Evidence -&gt; System.Security.Policy.CodeGroup" Usage="firstMatchCodeGroup.ResolveMatchingCodeGroups evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

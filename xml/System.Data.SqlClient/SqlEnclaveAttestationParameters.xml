@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlEnclaveAttestationParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlEnclaveAttestationParameters" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlEnclaveAttestationParameters" />
+  <TypeSignature Language="F#" Value="type SqlEnclaveAttestationParameters = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlEnclaveAttestationParameters.#ctor(System.Int32,System.Byte[],System.Security.Cryptography.ECDiffieHellmanCng)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As Integer, input As Byte(), clientDiffieHellmanKey As ECDiffieHellmanCng)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlEnclaveAttestationParameters(int protocol, cli::array &lt;System::Byte&gt; ^ input, System::Security::Cryptography::ECDiffieHellmanCng ^ clientDiffieHellmanKey);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlEnclaveAttestationParameters : int * byte[] * System.Security.Cryptography.ECDiffieHellmanCng -&gt; System.Data.SqlClient.SqlEnclaveAttestationParameters" Usage="new System.Data.SqlClient.SqlEnclaveAttestationParameters (protocol, input, clientDiffieHellmanKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlEnclaveAttestationParameters.ClientDiffieHellmanKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientDiffieHellmanKey As ECDiffieHellmanCng" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::ECDiffieHellmanCng ^ ClientDiffieHellmanKey { System::Security::Cryptography::ECDiffieHellmanCng ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientDiffieHellmanKey : System.Security.Cryptography.ECDiffieHellmanCng" Usage="System.Data.SqlClient.SqlEnclaveAttestationParameters.ClientDiffieHellmanKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlEnclaveAttestationParameters.GetInput" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInput () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetInput();" />
+      <MemberSignature Language="F#" Value="member this.GetInput : unit -&gt; byte[]" Usage="sqlEnclaveAttestationParameters.GetInput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlEnclaveAttestationParameters.Protocol" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protocol As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Protocol { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Protocol : int" Usage="System.Data.SqlClient.SqlEnclaveAttestationParameters.Protocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

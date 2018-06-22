@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SecurityCriticalAction" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SecurityCriticalAction()" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SecurityCriticalAction();" />
+  <TypeSignature Language="F#" Value="type SecurityCriticalAction = delegate of unit -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

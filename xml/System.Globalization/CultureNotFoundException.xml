@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.CultureNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class CultureNotFoundException&#xA;Inherits ArgumentException" />
   <TypeSignature Language="C++ CLI" Value="public ref class CultureNotFoundException : ArgumentException" />
+  <TypeSignature Language="F#" Value="type CultureNotFoundException = class&#xA;    inherit ArgumentException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -164,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CultureNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * Exception -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -249,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ paramName, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * string -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (paramName, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -297,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.Int32,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, invalidCultureId As Integer, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ message, int invalidCultureId, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * int * Exception -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (message, invalidCultureId, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -340,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String, invalidCultureId As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ paramName, int invalidCultureId, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * int * string -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (paramName, invalidCultureId, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -385,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, invalidCultureName As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ message, System::String ^ invalidCultureName, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * string * Exception -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (message, invalidCultureName, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -433,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String, invalidCultureName As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ paramName, System::String ^ invalidCultureName, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * string * string -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (paramName, invalidCultureName, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -483,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="cultureNotFoundException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -538,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureNotFoundException.InvalidCultureId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InvalidCultureId As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;int&gt; InvalidCultureId { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvalidCultureId : Nullable&lt;int&gt;" Usage="System.Globalization.CultureNotFoundException.InvalidCultureId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -575,6 +586,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureNotFoundException.InvalidCultureName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InvalidCultureName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InvalidCultureName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvalidCultureName : string" Usage="System.Globalization.CultureNotFoundException.InvalidCultureName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -617,6 +629,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureNotFoundException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Globalization.CultureNotFoundException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

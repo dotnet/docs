@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandlerFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpRemotingHandlerFactory&#xA;Implements IHttpHandlerFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpRemotingHandlerFactory : System::Web::IHttpHandlerFactory" />
+  <TypeSignature Language="F#" Value="type HttpRemotingHandlerFactory = class&#xA;    interface IHttpHandlerFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpRemotingHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHandler (context As HttpContext, verb As String, url As String, filePath As String) As IHttpHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::IHttpHandler ^ GetHandler(System::Web::HttpContext ^ context, System::String ^ verb, System::String ^ url, System::String ^ filePath);" />
+      <MemberSignature Language="F#" Value="abstract member GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler&#xA;override this.GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler" Usage="httpRemotingHandlerFactory.GetHandler (context, verb, url, filePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpRemotingHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseHandler (handler As IHttpHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseHandler(System::Web::IHttpHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHandler : System.Web.IHttpHandler -&gt; unit&#xA;override this.ReleaseHandler : System.Web.IHttpHandler -&gt; unit" Usage="httpRemotingHandlerFactory.ReleaseHandler handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ITreeDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITreeDesigner&#xA;Implements IDesigner, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITreeDesigner : IDisposable, System::ComponentModel::Design::IDesigner" />
+  <TypeSignature Language="F#" Value="type ITreeDesigner = interface&#xA;    interface IDesigner&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ITreeDesigner.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Children { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Collections.ICollection" Usage="System.ComponentModel.Design.ITreeDesigner.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ITreeDesigner.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As IDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::IDesigner ^ Parent { System::ComponentModel::Design::IDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.ComponentModel.Design.IDesigner" Usage="System.ComponentModel.Design.ITreeDesigner.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

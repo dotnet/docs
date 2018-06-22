@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.TrackingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TrackingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TrackingMode" />
+  <TypeSignature Language="F#" Value="type TrackingMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.TrackingMode.AutoChangeTracking" />
       <MemberSignature Language="VB.NET" Value="AutoChangeTracking" />
       <MemberSignature Language="C++ CLI" Value="AutoChangeTracking" />
+      <MemberSignature Language="F#" Value="AutoChangeTracking = 1" Usage="System.Data.Services.Client.TrackingMode.AutoChangeTracking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.TrackingMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Services.Client.TrackingMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

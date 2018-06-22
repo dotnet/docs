@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketMessageType" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebSocketMessageType" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebSocketMessageType" />
+  <TypeSignature Language="F#" Value="type WebSocketMessageType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketMessageType.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 1" Usage="System.Net.WebSockets.WebSocketMessageType.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketMessageType.Close" />
       <MemberSignature Language="VB.NET" Value="Close" />
       <MemberSignature Language="C++ CLI" Value="Close" />
+      <MemberSignature Language="F#" Value="Close = 2" Usage="System.Net.WebSockets.WebSocketMessageType.Close" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketMessageType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Net.WebSockets.WebSocketMessageType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>

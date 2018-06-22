@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientRegExpPrototype" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientRegExpPrototype&#xA;Inherits RegExpPrototype" />
   <TypeSignature Language="C++ CLI" Value="public ref class LenientRegExpPrototype sealed : Microsoft::JScript::RegExpPrototype" />
+  <TypeSignature Language="F#" Value="type LenientRegExpPrototype = class&#xA;    inherit RegExpPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.compile" />
       <MemberSignature Language="VB.NET" Value="Public compile As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ compile;" />
+      <MemberSignature Language="F#" Value="val mutable compile : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.compile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.exec" />
       <MemberSignature Language="VB.NET" Value="Public exec As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ exec;" />
+      <MemberSignature Language="F#" Value="val mutable exec : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.exec" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.test" />
       <MemberSignature Language="VB.NET" Value="Public test As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ test;" />
+      <MemberSignature Language="F#" Value="val mutable test : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.test" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.toString" />
       <MemberSignature Language="VB.NET" Value="Public toString As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
+      <MemberSignature Language="F#" Value="val mutable toString : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

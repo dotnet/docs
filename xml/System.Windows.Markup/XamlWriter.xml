@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlWriter abstract sealed" />
+  <TypeSignature Language="F#" Value="type XamlWriter = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlWriter.Save(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Save (obj As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Save(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member Save : obj -&gt; string" Usage="System.Windows.Markup.XamlWriter.Save obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Save(object obj, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlWriter.Save(System.Object,System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::Object ^ obj, System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member Save : obj * System.IO.Stream -&gt; unit" Usage="System.Windows.Markup.XamlWriter.Save (obj, stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlWriter.Save(System.Object,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Save (obj As Object, writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::Object ^ obj, System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="static member Save : obj * System.IO.TextWriter -&gt; unit" Usage="System.Windows.Markup.XamlWriter.Save (obj, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlWriter.Save(System.Object,System.Windows.Markup.XamlDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Save (obj As Object, manager As XamlDesignerSerializationManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::Object ^ obj, System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="static member Save : obj * System.Windows.Markup.XamlDesignerSerializationManager -&gt; unit" Usage="System.Windows.Markup.XamlWriter.Save (obj, manager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Save(object obj, class System.Xml.XmlWriter xmlWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlWriter.Save(System.Object,System.Xml.XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::Object ^ obj, System::Xml::XmlWriter ^ xmlWriter);" />
+      <MemberSignature Language="F#" Value="static member Save : obj * System.Xml.XmlWriter -&gt; unit" Usage="System.Windows.Markup.XamlWriter.Save (obj, xmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAdphManager" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAdphManager" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAdphManager" />
+  <TypeSignature Language="F#" Value="type IAdphManager = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAdphManager.StartAppDomainProtocolListenerChannel(System.String,System.String,System.Web.Hosting.IListenerChannelCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartAppDomainProtocolListenerChannel (appId As String, protocolId As String, listenerChannelCallback As IListenerChannelCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartAppDomainProtocolListenerChannel(System::String ^ appId, System::String ^ protocolId, System::Web::Hosting::IListenerChannelCallback ^ listenerChannelCallback);" />
+      <MemberSignature Language="F#" Value="abstract member StartAppDomainProtocolListenerChannel : string * string * System.Web.Hosting.IListenerChannelCallback -&gt; unit" Usage="iAdphManager.StartAppDomainProtocolListenerChannel (appId, protocolId, listenerChannelCallback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAdphManager.StopAppDomainProtocol(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopAppDomainProtocol (appId As String, protocolId As String, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopAppDomainProtocol(System::String ^ appId, System::String ^ protocolId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopAppDomainProtocol : string * string * bool -&gt; unit" Usage="iAdphManager.StopAppDomainProtocol (appId, protocolId, immediate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAdphManager.StopAppDomainProtocolListenerChannel(System.String,System.String,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopAppDomainProtocolListenerChannel (appId As String, protocolId As String, listenerChannelId As Integer, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopAppDomainProtocolListenerChannel(System::String ^ appId, System::String ^ protocolId, int listenerChannelId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopAppDomainProtocolListenerChannel : string * string * int * bool -&gt; unit" Usage="iAdphManager.StopAppDomainProtocolListenerChannel (appId, protocolId, listenerChannelId, immediate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

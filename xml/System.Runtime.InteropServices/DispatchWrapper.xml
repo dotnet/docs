@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DispatchWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DispatchWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispatchWrapper sealed" />
+  <TypeSignature Language="F#" Value="type DispatchWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.DispatchWrapper.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatchWrapper(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.DispatchWrapper : obj -&gt; System.Runtime.InteropServices.DispatchWrapper" Usage="new System.Runtime.InteropServices.DispatchWrapper obj" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.DispatchWrapper.WrappedObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrappedObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WrappedObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WrappedObject : obj" Usage="System.Runtime.InteropServices.DispatchWrapper.WrappedObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

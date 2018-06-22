@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.FilterableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FilterableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilterableAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type FilterableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilterableAttribute(bool filterable);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.FilterableAttribute : bool -&gt; System.Web.UI.FilterableAttribute" Usage="new System.Web.UI.FilterableAttribute filterable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As FilterableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::FilterableAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.FilterableAttribute" Usage="System.Web.UI.FilterableAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="filterableAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.FilterableAttribute.Filterable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filterable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Filterable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filterable : bool" Usage="System.Web.UI.FilterableAttribute.Filterable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="filterableAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="filterableAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsObjectFilterable(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsObjectFilterable (instance As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsObjectFilterable(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member IsObjectFilterable : obj -&gt; bool" Usage="System.Web.UI.FilterableAttribute.IsObjectFilterable instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +308,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPropertyFilterable(class System.ComponentModel.PropertyDescriptor propertyDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsPropertyFilterable(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPropertyFilterable(System::ComponentModel::PropertyDescriptor ^ propertyDescriptor);" />
+      <MemberSignature Language="F#" Value="static member IsPropertyFilterable : System.ComponentModel.PropertyDescriptor -&gt; bool" Usage="System.Web.UI.FilterableAttribute.IsPropertyFilterable propertyDescriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -336,6 +345,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTypeFilterable(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsTypeFilterable(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsTypeFilterable(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member IsTypeFilterable : Type -&gt; bool" Usage="System.Web.UI.FilterableAttribute.IsTypeFilterable type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -374,6 +384,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As FilterableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::FilterableAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.Web.UI.FilterableAttribute" Usage="System.Web.UI.FilterableAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -403,6 +414,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As FilterableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::FilterableAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.Web.UI.FilterableAttribute" Usage="System.Web.UI.FilterableAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.LocalizationExtenderProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class LocalizationExtenderProvider&#xA;Implements IDisposable, IExtenderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalizationExtenderProvider : IDisposable, System::ComponentModel::IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type LocalizationExtenderProvider = class&#xA;    interface IExtenderProvider&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.#ctor(System.ComponentModel.ISite,System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As ISite, baseComponent As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizationExtenderProvider(System::ComponentModel::ISite ^ serviceProvider, System::ComponentModel::IComponent ^ baseComponent);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.LocalizationExtenderProvider : System.ComponentModel.ISite * System.ComponentModel.IComponent -&gt; System.ComponentModel.Design.LocalizationExtenderProvider" Usage="new System.ComponentModel.Design.LocalizationExtenderProvider (serviceProvider, baseComponent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="localizationExtenderProvider.CanExtend o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="localizationExtenderProvider.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="localizationExtenderProvider.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.GetLanguage(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLanguage (o As Object) As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Globalization::CultureInfo ^ GetLanguage(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="member this.GetLanguage : obj -&gt; System.Globalization.CultureInfo" Usage="localizationExtenderProvider.GetLanguage o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.GetLoadLanguage(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLoadLanguage (o As Object) As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Globalization::CultureInfo ^ GetLoadLanguage(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="member this.GetLoadLanguage : obj -&gt; System.Globalization.CultureInfo" Usage="localizationExtenderProvider.GetLoadLanguage o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -288,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.GetLocalizable(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalizable (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetLocalizable(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="member this.GetLocalizable : obj -&gt; bool" Usage="localizationExtenderProvider.GetLocalizable o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -321,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.ResetLanguage(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetLanguage (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetLanguage(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="member this.ResetLanguage : obj -&gt; unit" Usage="localizationExtenderProvider.ResetLanguage o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -351,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.SetLanguage(System.Object,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLanguage (o As Object, language As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLanguage(System::Object ^ o, System::Globalization::CultureInfo ^ language);" />
+      <MemberSignature Language="F#" Value="member this.SetLanguage : obj * System.Globalization.CultureInfo -&gt; unit" Usage="localizationExtenderProvider.SetLanguage (o, language)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -376,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.SetLocalizable(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLocalizable (o As Object, localizable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalizable(System::Object ^ o, bool localizable);" />
+      <MemberSignature Language="F#" Value="member this.SetLocalizable : obj * bool -&gt; unit" Usage="localizationExtenderProvider.SetLocalizable (o, localizable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -402,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.LocalizationExtenderProvider.ShouldSerializeLanguage(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeLanguage (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeLanguage(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeLanguage : obj -&gt; bool" Usage="localizationExtenderProvider.ShouldSerializeLanguage o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

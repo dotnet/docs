@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.TitleCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class TitleCollection&#xA;Inherits ChartNamedElementCollection(Of Title)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TitleCollection : System::Windows::Forms::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::Title ^&gt;" />
+  <TypeSignature Language="F#" Value="type TitleCollection = class&#xA;    inherit ChartNamedElementCollection&lt;Title&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.TitleCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String) As Title" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataVisualization::Charting::Title ^ Add(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; System.Windows.Forms.DataVisualization.Charting.Title" Usage="titleCollection.Add name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ContourPointChangeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContourPointChangeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContourPointChangeType" />
+  <TypeSignature Language="F#" Value="type ContourPointChangeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ContourPointChangeType.Hz" />
       <MemberSignature Language="VB.NET" Value="Hz" />
       <MemberSignature Language="C++ CLI" Value="Hz" />
+      <MemberSignature Language="F#" Value="Hz = 0" Usage="System.Speech.Synthesis.TtsEngine.ContourPointChangeType.Hz" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ContourPointChangeType.Percentage" />
       <MemberSignature Language="VB.NET" Value="Percentage" />
       <MemberSignature Language="C++ CLI" Value="Percentage" />
+      <MemberSignature Language="F#" Value="Percentage = 1" Usage="System.Speech.Synthesis.TtsEngine.ContourPointChangeType.Percentage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

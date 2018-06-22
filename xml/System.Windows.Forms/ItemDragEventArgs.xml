@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemDragEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ItemDragEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemDragEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ItemDragEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ItemDragEventArgs.#ctor(System.Windows.Forms.MouseButtons)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (button As MouseButtons)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemDragEventArgs(System::Windows::Forms::MouseButtons button);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ItemDragEventArgs : System.Windows.Forms.MouseButtons -&gt; System.Windows.Forms.ItemDragEventArgs" Usage="new System.Windows.Forms.ItemDragEventArgs button" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ItemDragEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (button As MouseButtons, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemDragEventArgs(System::Windows::Forms::MouseButtons button, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ItemDragEventArgs : System.Windows.Forms.MouseButtons * obj -&gt; System.Windows.Forms.ItemDragEventArgs" Usage="new System.Windows.Forms.ItemDragEventArgs (button, item)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ItemDragEventArgs.Button" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Button As MouseButtons" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MouseButtons Button { System::Windows::Forms::MouseButtons get(); };" />
+      <MemberSignature Language="F#" Value="member this.Button : System.Windows.Forms.MouseButtons" Usage="System.Windows.Forms.ItemDragEventArgs.Button" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ItemDragEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : obj" Usage="System.Windows.Forms.ItemDragEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

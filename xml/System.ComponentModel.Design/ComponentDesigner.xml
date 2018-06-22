@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentDesigner&#xA;Implements IComponentInitializer, IDesigner, IDesignerFilter, IDisposable, ITreeDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentDesigner : IDisposable, System::ComponentModel::Design::IComponentInitializer, System::ComponentModel::Design::IDesigner, System::ComponentModel::Design::IDesignerFilter, System::ComponentModel::Design::ITreeDesigner" />
+  <TypeSignature Language="F#" Value="type ComponentDesigner = class&#xA;    interface ITreeDesigner&#xA;    interface IDesigner&#xA;    interface IDisposable&#xA;    interface IDesignerFilter&#xA;    interface IComponentInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.ComponentModel.Design.ComponentDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.AssociatedComponents" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AssociatedComponents As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ AssociatedComponents { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssociatedComponents : System.Collections.ICollection" Usage="System.ComponentModel.Design.ComponentDesigner.AssociatedComponents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.Component" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Component As IComponent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ Component { System::ComponentModel::IComponent ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Component : System.ComponentModel.IComponent" Usage="System.ComponentModel.Design.ComponentDesigner.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="componentDesigner.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="componentDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="abstract member DoDefaultAction : unit -&gt; unit&#xA;override this.DoDefaultAction : unit -&gt; unit" Usage="componentDesigner.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ComponentDesigner ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="componentDesigner.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="componentDesigner.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -350,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.InheritanceAttribute" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property InheritanceAttribute As InheritanceAttribute" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::ComponentModel::InheritanceAttribute ^ InheritanceAttribute { System::ComponentModel::InheritanceAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InheritanceAttribute : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.Design.ComponentDesigner.InheritanceAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -370,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.Inherited" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Inherited As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool Inherited { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inherited : bool" Usage="System.ComponentModel.Design.ComponentDesigner.Inherited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -391,6 +402,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.ComponentModel.IComponent -&gt; unit&#xA;override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="componentDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -423,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.InitializeExistingComponent(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitializeExistingComponent (defaultValues As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeExistingComponent(System::Collections::IDictionary ^ defaultValues);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeExistingComponent : System.Collections.IDictionary -&gt; unit&#xA;override this.InitializeExistingComponent : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.InitializeExistingComponent defaultValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -457,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.InitializeNewComponent(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitializeNewComponent (defaultValues As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeNewComponent(System::Collections::IDictionary ^ defaultValues);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeNewComponent : System.Collections.IDictionary -&gt; unit&#xA;override this.InitializeNewComponent : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.InitializeNewComponent defaultValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -491,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.InitializeNonDefault" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitializeNonDefault ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeNonDefault();" />
+      <MemberSignature Language="F#" Value="abstract member InitializeNonDefault : unit -&gt; unit&#xA;override this.InitializeNonDefault : unit -&gt; unit" Usage="componentDesigner.InitializeNonDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -523,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.InvokeGetInheritanceAttribute(System.ComponentModel.Design.ComponentDesigner)" />
       <MemberSignature Language="VB.NET" Value="Protected Function InvokeGetInheritanceAttribute (toInvoke As ComponentDesigner) As InheritanceAttribute" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::ComponentModel::InheritanceAttribute ^ InvokeGetInheritanceAttribute(System::ComponentModel::Design::ComponentDesigner ^ toInvoke);" />
+      <MemberSignature Language="F#" Value="member this.InvokeGetInheritanceAttribute : System.ComponentModel.Design.ComponentDesigner -&gt; System.ComponentModel.InheritanceAttribute" Usage="componentDesigner.InvokeGetInheritanceAttribute toInvoke" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -549,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.OnSetComponentDefaults" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnSetComponentDefaults ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnSetComponentDefaults();" />
+      <MemberSignature Language="F#" Value="abstract member OnSetComponentDefaults : unit -&gt; unit&#xA;override this.OnSetComponentDefaults : unit -&gt; unit" Usage="componentDesigner.OnSetComponentDefaults " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -585,6 +602,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.ParentComponent" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ParentComponent As IComponent" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::ComponentModel::IComponent ^ ParentComponent { System::ComponentModel::IComponent ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentComponent : System.ComponentModel.IComponent" Usage="System.ComponentModel.Design.ComponentDesigner.ParentComponent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -612,6 +630,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.PostFilterAttributes(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostFilterAttributes (attributes As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterAttributes(System::Collections::IDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member PostFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterAttributes attributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -649,6 +668,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostFilterEvents (events As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterEvents(System::Collections::IDictionary ^ events);" />
+      <MemberSignature Language="F#" Value="abstract member PostFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterEvents events" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -686,6 +706,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.PostFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member PostFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -724,6 +745,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.PreFilterAttributes(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PreFilterAttributes (attributes As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterAttributes(System::Collections::IDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member PreFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterAttributes attributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -761,6 +783,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.PreFilterEvents(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PreFilterEvents (events As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterEvents(System::Collections::IDictionary ^ events);" />
+      <MemberSignature Language="F#" Value="abstract member PreFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterEvents events" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -798,6 +821,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member PreFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -835,6 +859,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.RaiseComponentChanged(System.ComponentModel.MemberDescriptor,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseComponentChanged (member As MemberDescriptor, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseComponentChanged(System::ComponentModel::MemberDescriptor ^ member, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="member this.RaiseComponentChanged : System.ComponentModel.MemberDescriptor * obj * obj -&gt; unit" Usage="componentDesigner.RaiseComponentChanged (member, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -871,6 +896,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.RaiseComponentChanging(System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseComponentChanging (member As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseComponentChanging(System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="member this.RaiseComponentChanging : System.ComponentModel.MemberDescriptor -&gt; unit" Usage="componentDesigner.RaiseComponentChanging member" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -903,6 +929,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.ShadowProperties" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ShadowProperties As ComponentDesigner.ShadowPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::ComponentDesigner::ShadowPropertyCollection ^ ShadowProperties { System::ComponentModel::Design::ComponentDesigner::ShadowPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowProperties : System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection" Usage="System.ComponentModel.Design.ComponentDesigner.ShadowProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1103,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.System#ComponentModel#Design#ITreeDesigner#Children" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Children As ICollection Implements ITreeDesigner.Children" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.ComponentModel.Design.ITreeDesigner.Children { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.ComponentDesigner.System.ComponentModel.Design.ITreeDesigner.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1130,6 +1158,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.System#ComponentModel#Design#ITreeDesigner#Parent" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Parent As IDesigner Implements ITreeDesigner.Parent" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::IDesigner ^ System.ComponentModel.Design.ITreeDesigner.Parent { System::ComponentModel::Design::IDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.ComponentDesigner.System.ComponentModel.Design.ITreeDesigner.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1157,6 +1186,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Verbs As DesignerVerbCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : System.ComponentModel.Design.DesignerVerbCollection" Usage="System.ComponentModel.Design.ComponentDesigner.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

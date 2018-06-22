@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.HashAlgorithmType" />
   <TypeSignature Language="VB.NET" Value="Public Enum HashAlgorithmType" />
   <TypeSignature Language="C++ CLI" Value="public enum class HashAlgorithmType" />
+  <TypeSignature Language="F#" Value="type HashAlgorithmType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Md5" />
       <MemberSignature Language="VB.NET" Value="Md5" />
       <MemberSignature Language="C++ CLI" Value="Md5" />
+      <MemberSignature Language="F#" Value="Md5 = 1" Usage="Mono.Security.Interface.HashAlgorithmType.Md5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Md5Sha1" />
       <MemberSignature Language="VB.NET" Value="Md5Sha1" />
       <MemberSignature Language="C++ CLI" Value="Md5Sha1" />
+      <MemberSignature Language="F#" Value="Md5Sha1 = 254" Usage="Mono.Security.Interface.HashAlgorithmType.Md5Sha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Mono.Security.Interface.HashAlgorithmType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha1" />
       <MemberSignature Language="VB.NET" Value="Sha1" />
       <MemberSignature Language="C++ CLI" Value="Sha1" />
+      <MemberSignature Language="F#" Value="Sha1 = 2" Usage="Mono.Security.Interface.HashAlgorithmType.Sha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha224" />
       <MemberSignature Language="VB.NET" Value="Sha224" />
       <MemberSignature Language="C++ CLI" Value="Sha224" />
+      <MemberSignature Language="F#" Value="Sha224 = 3" Usage="Mono.Security.Interface.HashAlgorithmType.Sha224" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha256" />
       <MemberSignature Language="VB.NET" Value="Sha256" />
       <MemberSignature Language="C++ CLI" Value="Sha256" />
+      <MemberSignature Language="F#" Value="Sha256 = 4" Usage="Mono.Security.Interface.HashAlgorithmType.Sha256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha384" />
       <MemberSignature Language="VB.NET" Value="Sha384" />
       <MemberSignature Language="C++ CLI" Value="Sha384" />
+      <MemberSignature Language="F#" Value="Sha384 = 5" Usage="Mono.Security.Interface.HashAlgorithmType.Sha384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha512" />
       <MemberSignature Language="VB.NET" Value="Sha512" />
       <MemberSignature Language="C++ CLI" Value="Sha512" />
+      <MemberSignature Language="F#" Value="Sha512 = 6" Usage="Mono.Security.Interface.HashAlgorithmType.Sha512" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 255" Usage="Mono.Security.Interface.HashAlgorithmType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class HideDisabledControlAdapter&#xA;Inherits WebControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class HideDisabledControlAdapter : System::Web::UI::WebControls::Adapters::WebControlAdapter" />
+  <TypeSignature Language="F#" Value="type HideDisabledControlAdapter = class&#xA;    inherit WebControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="hideDisabledControlAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

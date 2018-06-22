@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceDebugElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceDebugElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceDebugElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type ServiceDebugElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.ServiceDebugElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceDebugElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="serviceDebugElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceDebugElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="serviceDebugElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageBinding" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpHelpPageBinding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HttpHelpPageBinding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpHelpPageBinding : string with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageBindingConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpHelpPageBindingConfiguration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HttpHelpPageBindingConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpHelpPageBindingConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageBindingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpHelpPageEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpHelpPageEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpHelpPageEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpHelpPageUrl As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ HttpHelpPageUrl { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpHelpPageUrl : Uri with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageBinding" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpsHelpPageBinding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HttpsHelpPageBinding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsHelpPageBinding : string with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -314,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageBindingConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpsHelpPageBindingConfiguration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HttpsHelpPageBindingConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsHelpPageBindingConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageBindingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -342,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpsHelpPageEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpsHelpPageEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsHelpPageEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -383,6 +394,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpsHelpPageUrl As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ HttpsHelpPageUrl { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsHelpPageUrl : Uri with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -423,6 +435,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.IncludeExceptionDetailInFaults" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeExceptionDetailInFaults { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.ServiceModel.Configuration.ServiceDebugElement.IncludeExceptionDetailInFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -459,6 +472,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceDebugElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServiceDebugElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

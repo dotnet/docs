@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.NewLineHandling" />
   <TypeSignature Language="VB.NET" Value="Public Enum NewLineHandling" />
   <TypeSignature Language="C++ CLI" Value="public enum class NewLineHandling" />
+  <TypeSignature Language="F#" Value="type NewLineHandling = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.NewLineHandling.Entitize" />
       <MemberSignature Language="VB.NET" Value="Entitize" />
       <MemberSignature Language="C++ CLI" Value="Entitize" />
+      <MemberSignature Language="F#" Value="Entitize = 1" Usage="System.Xml.NewLineHandling.Entitize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.NewLineHandling.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Xml.NewLineHandling.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.NewLineHandling.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
       <MemberSignature Language="C++ CLI" Value="Replace" />
+      <MemberSignature Language="F#" Value="Replace = 0" Usage="System.Xml.NewLineHandling.Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

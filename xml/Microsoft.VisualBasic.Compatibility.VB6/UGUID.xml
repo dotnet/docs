@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.UGUID" />
   <TypeSignature Language="VB.NET" Value="Public Structure UGUID" />
   <TypeSignature Language="C++ CLI" Value="public value class UGUID" />
+  <TypeSignature Language="F#" Value="type UGUID = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.UGUID.guid" />
       <MemberSignature Language="VB.NET" Value="Public guid As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: Guid guid;" />
+      <MemberSignature Language="F#" Value="val mutable guid : Guid" Usage="Microsoft.VisualBasic.Compatibility.VB6.UGUID.guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

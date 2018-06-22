@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.ListCollectionView" />
   <TypeSignature Language="VB.NET" Value="Public Class ListCollectionView&#xA;Inherits CollectionView&#xA;Implements ICollectionViewLiveShaping, IComparer, IEditableCollectionView, IEditableCollectionViewAddNewItem, IItemProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListCollectionView : System::Windows::Data::CollectionView, System::Collections::IComparer, System::ComponentModel::ICollectionViewLiveShaping, System::ComponentModel::IEditableCollectionView, System::ComponentModel::IEditableCollectionViewAddNewItem, System::ComponentModel::IItemProperties" />
+  <TypeSignature Language="F#" Value="type ListCollectionView = class&#xA;    inherit CollectionView&#xA;    interface IComparer&#xA;    interface IEditableCollectionViewAddNewItem&#xA;    interface IEditableCollectionView&#xA;    interface ICollectionViewLiveShaping&#xA;    interface IItemProperties" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.#ctor(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (list As IList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListCollectionView(System::Collections::IList ^ list);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Data.ListCollectionView : System.Collections.IList -&gt; System.Windows.Data.ListCollectionView" Usage="new System.Windows.Data.ListCollectionView list" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.ActiveComparer" />
       <MemberSignature Language="VB.NET" Value="Protected Property ActiveComparer As IComparer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::IComparer ^ ActiveComparer { System::Collections::IComparer ^ get(); void set(System::Collections::IComparer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveComparer : System.Collections.IComparer with get, set" Usage="System.Windows.Data.ListCollectionView.ActiveComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.ActiveFilter" />
       <MemberSignature Language="VB.NET" Value="Protected Property ActiveFilter As Predicate(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Predicate&lt;System::Object ^&gt; ^ ActiveFilter { Predicate&lt;System::Object ^&gt; ^ get(); void set(Predicate&lt;System::Object ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveFilter : Predicate&lt;obj&gt; with get, set" Usage="System.Windows.Data.ListCollectionView.ActiveFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.AddNew" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNew () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ AddNew();" />
+      <MemberSignature Language="F#" Value="abstract member AddNew : unit -&gt; obj&#xA;override this.AddNew : unit -&gt; obj" Usage="listCollectionView.AddNew " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.AddNewItem(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewItem (newItem As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ AddNewItem(System::Object ^ newItem);" />
+      <MemberSignature Language="F#" Value="abstract member AddNewItem : obj -&gt; obj&#xA;override this.AddNewItem : obj -&gt; obj" Usage="listCollectionView.AddNewItem newItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanAddNew" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanAddNew As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanAddNew { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanAddNew : bool" Usage="System.Windows.Data.ListCollectionView.CanAddNew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanAddNewItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanAddNewItem As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanAddNewItem { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanAddNewItem : bool" Usage="System.Windows.Data.ListCollectionView.CanAddNewItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -230,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanCancelEdit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanCancelEdit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCancelEdit { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanCancelEdit : bool" Usage="System.Windows.Data.ListCollectionView.CanCancelEdit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.CancelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CancelEdit();" />
+      <MemberSignature Language="F#" Value="abstract member CancelEdit : unit -&gt; unit&#xA;override this.CancelEdit : unit -&gt; unit" Usage="listCollectionView.CancelEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -287,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.CancelNew" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelNew ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CancelNew();" />
+      <MemberSignature Language="F#" Value="abstract member CancelNew : unit -&gt; unit&#xA;override this.CancelNew : unit -&gt; unit" Usage="listCollectionView.CancelNew " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -308,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanChangeLiveFiltering" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveFiltering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveFiltering { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveFiltering : bool" Usage="System.Windows.Data.ListCollectionView.CanChangeLiveFiltering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -329,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanChangeLiveGrouping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveGrouping As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveGrouping { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveGrouping : bool" Usage="System.Windows.Data.ListCollectionView.CanChangeLiveGrouping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -350,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanChangeLiveSorting" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveSorting As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveSorting { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveSorting : bool" Usage="System.Windows.Data.ListCollectionView.CanChangeLiveSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -371,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanFilter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanFilter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanFilter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanFilter : bool" Usage="System.Windows.Data.ListCollectionView.CanFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -398,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanGroup As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanGroup { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanGroup : bool" Usage="System.Windows.Data.ListCollectionView.CanGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -419,6 +435,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanRemove" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRemove As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRemove { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRemove : bool" Usage="System.Windows.Data.ListCollectionView.CanRemove" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -448,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CanSort" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSort As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSort : bool" Usage="System.Windows.Data.ListCollectionView.CanSort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -468,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.CommitEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub CommitEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CommitEdit();" />
+      <MemberSignature Language="F#" Value="abstract member CommitEdit : unit -&gt; unit&#xA;override this.CommitEdit : unit -&gt; unit" Usage="listCollectionView.CommitEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -489,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.CommitNew" />
       <MemberSignature Language="VB.NET" Value="Public Sub CommitNew ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CommitNew();" />
+      <MemberSignature Language="F#" Value="abstract member CommitNew : unit -&gt; unit&#xA;override this.CommitNew : unit -&gt; unit" Usage="listCollectionView.CommitNew " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -517,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.Compare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Compare (o1 As Object, o2 As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Compare(System::Object ^ o1, System::Object ^ o2);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : obj * obj -&gt; int&#xA;override this.Compare : obj * obj -&gt; int" Usage="listCollectionView.Compare (o1, o2)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>
@@ -546,6 +567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Contains(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.Contains : obj -&gt; bool" Usage="listCollectionView.Contains item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -578,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Data.ListCollectionView.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -619,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CurrentAddItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentAddItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CurrentAddItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentAddItem : obj" Usage="System.Windows.Data.ListCollectionView.CurrentAddItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -640,6 +664,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CurrentEditItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentEditItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CurrentEditItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentEditItem : obj" Usage="System.Windows.Data.ListCollectionView.CurrentEditItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -661,6 +686,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.CustomSort" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomSort As IComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IComparer ^ CustomSort { System::Collections::IComparer ^ get(); void set(System::Collections::IComparer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomSort : System.Collections.IComparer with get, set" Usage="System.Windows.Data.ListCollectionView.CustomSort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -691,6 +717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.EditItem(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EditItem (item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EditItem(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member EditItem : obj -&gt; unit&#xA;override this.EditItem : obj -&gt; unit" Usage="listCollectionView.EditItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -715,6 +742,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Filter As Predicate(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Predicate&lt;System::Object ^&gt; ^ Filter { Predicate&lt;System::Object ^&gt; ^ get(); void set(Predicate&lt;System::Object ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : Predicate&lt;obj&gt; with get, set" Usage="System.Windows.Data.ListCollectionView.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -735,6 +763,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listCollectionView.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -763,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.GetItemAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetItemAt (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetItemAt(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetItemAt : int -&gt; obj" Usage="listCollectionView.GetItemAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -795,6 +825,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.GroupBySelector" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GroupBySelector As GroupDescriptionSelectorCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Data::GroupDescriptionSelectorCallback ^ GroupBySelector { System::Windows::Data::GroupDescriptionSelectorCallback ^ get(); void set(System::Windows::Data::GroupDescriptionSelectorCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupBySelector : System.Windows.Data.GroupDescriptionSelectorCallback with get, set" Usage="System.Windows.Data.ListCollectionView.GroupBySelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -821,6 +852,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.GroupDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property GroupDescriptions As ObservableCollection(Of GroupDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ GroupDescriptions { System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupDescriptions : System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt;" Usage="System.Windows.Data.ListCollectionView.GroupDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -861,6 +893,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.Groups" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Groups As ReadOnlyObservableCollection(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Object ^&gt; ^ Groups { System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Groups : System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;obj&gt;" Usage="System.Windows.Data.ListCollectionView.Groups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -890,6 +923,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IndexOf (item As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int IndexOf(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : obj -&gt; int" Usage="listCollectionView.IndexOf item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -914,6 +948,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.InternalContains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function InternalContains (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool InternalContains(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="member this.InternalContains : obj -&gt; bool" Usage="listCollectionView.InternalContains item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -939,6 +974,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.InternalCount" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InternalCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int InternalCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InternalCount : int" Usage="System.Windows.Data.ListCollectionView.InternalCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -959,6 +995,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.InternalGetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Protected Function InternalGetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::IEnumerator ^ InternalGetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.InternalGetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listCollectionView.InternalGetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -980,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.InternalIndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function InternalIndexOf (item As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; int InternalIndexOf(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="member this.InternalIndexOf : obj -&gt; int" Usage="listCollectionView.InternalIndexOf item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1004,6 +1042,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.InternalItemAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function InternalItemAt (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ InternalItemAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.InternalItemAt : int -&gt; obj" Usage="listCollectionView.InternalItemAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1028,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.InternalList" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InternalList As IList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::IList ^ InternalList { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InternalList : System.Collections.IList" Usage="System.Windows.Data.ListCollectionView.InternalList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1048,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.IsAddingNew" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAddingNew As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAddingNew { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAddingNew : bool" Usage="System.Windows.Data.ListCollectionView.IsAddingNew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1077,6 +1118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.IsDataInGroupOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDataInGroupOrder As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataInGroupOrder { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDataInGroupOrder : bool with get, set" Usage="System.Windows.Data.ListCollectionView.IsDataInGroupOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1109,6 +1151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.IsEditingItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEditingItem As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEditingItem { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEditingItem : bool" Usage="System.Windows.Data.ListCollectionView.IsEditingItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1138,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.Data.ListCollectionView.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1159,6 +1203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.IsGrouping" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsGrouping As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsGrouping { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsGrouping : bool" Usage="System.Windows.Data.ListCollectionView.IsGrouping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1180,6 +1225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.IsLiveFiltering" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLiveFiltering As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveFiltering { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveFiltering : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.Data.ListCollectionView.IsLiveFiltering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1203,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.IsLiveGrouping" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLiveGrouping As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveGrouping { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveGrouping : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.Data.ListCollectionView.IsLiveGrouping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1226,6 +1273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.IsLiveSorting" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLiveSorting As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveSorting { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveSorting : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.Data.ListCollectionView.IsLiveSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1249,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.ItemProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemProperties As ReadOnlyCollection(Of ItemPropertyInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ ItemProperties { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemProperties : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.ItemPropertyInfo&gt;" Usage="System.Windows.Data.ListCollectionView.ItemProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1269,6 +1318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.LiveFilteringProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveFilteringProperties As ObservableCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveFilteringProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LiveFilteringProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Data.ListCollectionView.LiveFilteringProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1289,6 +1339,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.LiveGroupingProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveGroupingProperties As ObservableCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveGroupingProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LiveGroupingProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Data.ListCollectionView.LiveGroupingProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1309,6 +1360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.LiveSortingProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveSortingProperties As ObservableCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveSortingProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LiveSortingProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Data.ListCollectionView.LiveSortingProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1329,6 +1381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.MoveCurrentToPosition(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveCurrentToPosition (position As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveCurrentToPosition(int position);" />
+      <MemberSignature Language="F#" Value="override this.MoveCurrentToPosition : int -&gt; bool" Usage="listCollectionView.MoveCurrentToPosition position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1355,6 +1408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.NewItemPlaceholderPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property NewItemPlaceholderPosition As NewItemPlaceholderPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::NewItemPlaceholderPosition NewItemPlaceholderPosition { System::ComponentModel::NewItemPlaceholderPosition get(); void set(System::ComponentModel::NewItemPlaceholderPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.NewItemPlaceholderPosition : System.ComponentModel.NewItemPlaceholderPosition with get, set" Usage="System.Windows.Data.ListCollectionView.NewItemPlaceholderPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1375,6 +1429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.OnAllowsCrossThreadChangesChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAllowsCrossThreadChangesChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAllowsCrossThreadChangesChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnAllowsCrossThreadChangesChanged : unit -&gt; unit" Usage="listCollectionView.OnAllowsCrossThreadChangesChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1395,6 +1450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.OnBeginChangeLogging(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBeginChangeLogging (args As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBeginChangeLogging(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="override this.OnBeginChangeLogging : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="listCollectionView.OnBeginChangeLogging args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1431,6 +1487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.PassesFilter(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function PassesFilter (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool PassesFilter(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.PassesFilter : obj -&gt; bool" Usage="listCollectionView.PassesFilter item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1463,6 +1520,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.ProcessCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ProcessCollectionChanged (args As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ProcessCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="listCollectionView.ProcessCollectionChanged args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1487,6 +1545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.RefreshOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RefreshOverride ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RefreshOverride();" />
+      <MemberSignature Language="F#" Value="override this.RefreshOverride : unit -&gt; unit" Usage="listCollectionView.RefreshOverride " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1508,6 +1567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="listCollectionView.Remove item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1539,6 +1599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ListCollectionView.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="listCollectionView.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1572,6 +1633,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.SortDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SortDescriptions As SortDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::SortDescriptionCollection ^ SortDescriptions { System::ComponentModel::SortDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.SortDescriptionCollection" Usage="System.Windows.Data.ListCollectionView.SortDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1630,6 +1692,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ListCollectionView.UsesLocalArray" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property UsesLocalArray As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool UsesLocalArray { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsesLocalArray : bool" Usage="System.Windows.Data.ListCollectionView.UsesLocalArray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

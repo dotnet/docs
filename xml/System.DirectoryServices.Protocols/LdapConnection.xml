@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.LdapConnection" />
   <TypeSignature Language="VB.NET" Value="Public Class LdapConnection&#xA;Inherits DirectoryConnection&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class LdapConnection : System::DirectoryServices::Protocols::DirectoryConnection, IDisposable" />
+  <TypeSignature Language="F#" Value="type LdapConnection = class&#xA;    inherit DirectoryConnection&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.#ctor(System.DirectoryServices.Protocols.LdapDirectoryIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identifier As LdapDirectoryIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapConnection(System::DirectoryServices::Protocols::LdapDirectoryIdentifier ^ identifier);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapConnection : System.DirectoryServices.Protocols.LdapDirectoryIdentifier -&gt; System.DirectoryServices.Protocols.LdapConnection" Usage="new System.DirectoryServices.Protocols.LdapConnection identifier" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapConnection(System::String ^ server);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapConnection : string -&gt; System.DirectoryServices.Protocols.LdapConnection" Usage="new System.DirectoryServices.Protocols.LdapConnection server" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.#ctor(System.DirectoryServices.Protocols.LdapDirectoryIdentifier,System.Net.NetworkCredential)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identifier As LdapDirectoryIdentifier, credential As NetworkCredential)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapConnection(System::DirectoryServices::Protocols::LdapDirectoryIdentifier ^ identifier, System::Net::NetworkCredential ^ credential);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapConnection : System.DirectoryServices.Protocols.LdapDirectoryIdentifier * System.Net.NetworkCredential -&gt; System.DirectoryServices.Protocols.LdapConnection" Usage="new System.DirectoryServices.Protocols.LdapConnection (identifier, credential)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.LdapDirectoryIdentifier identifier, class System.Net.NetworkCredential credential, valuetype System.DirectoryServices.Protocols.AuthType authType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.#ctor(System.DirectoryServices.Protocols.LdapDirectoryIdentifier,System.Net.NetworkCredential,System.DirectoryServices.Protocols.AuthType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapConnection(System::DirectoryServices::Protocols::LdapDirectoryIdentifier ^ identifier, System::Net::NetworkCredential ^ credential, System::DirectoryServices::Protocols::AuthType authType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapConnection : System.DirectoryServices.Protocols.LdapDirectoryIdentifier * System.Net.NetworkCredential * System.DirectoryServices.Protocols.AuthType -&gt; System.DirectoryServices.Protocols.LdapConnection" Usage="new System.DirectoryServices.Protocols.LdapConnection (identifier, credential, authType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.Abort(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.Abort : IAsyncResult -&gt; unit" Usage="ldapConnection.Abort asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapConnection.AuthType" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthType As AuthType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::AuthType AuthType { System::DirectoryServices::Protocols::AuthType get(); void set(System::DirectoryServices::Protocols::AuthType value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthType : System.DirectoryServices.Protocols.AuthType with get, set" Usage="System.DirectoryServices.Protocols.LdapConnection.AuthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapConnection.AutoBind" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoBind As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoBind { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoBind : bool with get, set" Usage="System.DirectoryServices.Protocols.LdapConnection.AutoBind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -230,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest(System.DirectoryServices.Protocols.DirectoryRequest,System.DirectoryServices.Protocols.PartialResultProcessing,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSendRequest (request As DirectoryRequest, partialMode As PartialResultProcessing, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendRequest(System::DirectoryServices::Protocols::DirectoryRequest ^ request, System::DirectoryServices::Protocols::PartialResultProcessing partialMode, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSendRequest : System.DirectoryServices.Protocols.DirectoryRequest * System.DirectoryServices.Protocols.PartialResultProcessing * AsyncCallback * obj -&gt; IAsyncResult" Usage="ldapConnection.BeginSendRequest (request, partialMode, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest(System.DirectoryServices.Protocols.DirectoryRequest,System.TimeSpan,System.DirectoryServices.Protocols.PartialResultProcessing,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSendRequest (request As DirectoryRequest, requestTimeout As TimeSpan, partialMode As PartialResultProcessing, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendRequest(System::DirectoryServices::Protocols::DirectoryRequest ^ request, TimeSpan requestTimeout, System::DirectoryServices::Protocols::PartialResultProcessing partialMode, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSendRequest : System.DirectoryServices.Protocols.DirectoryRequest * TimeSpan * System.DirectoryServices.Protocols.PartialResultProcessing * AsyncCallback * obj -&gt; IAsyncResult" Usage="ldapConnection.BeginSendRequest (request, requestTimeout, partialMode, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -320,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.Bind" />
       <MemberSignature Language="VB.NET" Value="Public Sub Bind ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Bind();" />
+      <MemberSignature Language="F#" Value="member this.Bind : unit -&gt; unit" Usage="ldapConnection.Bind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -347,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.Bind(System.Net.NetworkCredential)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Bind (newCredential As NetworkCredential)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Bind(System::Net::NetworkCredential ^ newCredential);" />
+      <MemberSignature Language="F#" Value="member this.Bind : System.Net.NetworkCredential -&gt; unit" Usage="ldapConnection.Bind newCredential" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -377,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapConnection.Credential" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Credential As NetworkCredential" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::NetworkCredential ^ Credential {  void set(System::Net::NetworkCredential ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credential : System.Net.NetworkCredential" Usage="System.DirectoryServices.Protocols.LdapConnection.Credential" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -411,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="ldapConnection.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -435,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="ldapConnection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -460,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.EndSendRequest(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndSendRequest (asyncResult As IAsyncResult) As DirectoryResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::Protocols::DirectoryResponse ^ EndSendRequest(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndSendRequest : IAsyncResult -&gt; System.DirectoryServices.Protocols.DirectoryResponse" Usage="ldapConnection.EndSendRequest asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -492,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!LdapConnection ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="ldapConnection.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -513,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.GetPartialResults(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPartialResults (asyncResult As IAsyncResult) As PartialResultsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::Protocols::PartialResultsCollection ^ GetPartialResults(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.GetPartialResults : IAsyncResult -&gt; System.DirectoryServices.Protocols.PartialResultsCollection" Usage="ldapConnection.GetPartialResults asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -555,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.SendRequest(System.DirectoryServices.Protocols.DirectoryRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SendRequest (request As DirectoryRequest) As DirectoryResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::Protocols::DirectoryResponse ^ SendRequest(System::DirectoryServices::Protocols::DirectoryRequest ^ request);" />
+      <MemberSignature Language="F#" Value="override this.SendRequest : System.DirectoryServices.Protocols.DirectoryRequest -&gt; System.DirectoryServices.Protocols.DirectoryResponse" Usage="ldapConnection.SendRequest request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -589,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapConnection.SendRequest(System.DirectoryServices.Protocols.DirectoryRequest,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendRequest (request As DirectoryRequest, requestTimeout As TimeSpan) As DirectoryResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::Protocols::DirectoryResponse ^ SendRequest(System::DirectoryServices::Protocols::DirectoryRequest ^ request, TimeSpan requestTimeout);" />
+      <MemberSignature Language="F#" Value="override this.SendRequest : System.DirectoryServices.Protocols.DirectoryRequest * TimeSpan -&gt; System.DirectoryServices.Protocols.DirectoryResponse" Usage="ldapConnection.SendRequest (request, requestTimeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -625,6 +645,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapConnection.SessionOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionOptions As LdapSessionOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::LdapSessionOptions ^ SessionOptions { System::DirectoryServices::Protocols::LdapSessionOptions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionOptions : System.DirectoryServices.Protocols.LdapSessionOptions" Usage="System.DirectoryServices.Protocols.LdapConnection.SessionOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -653,6 +674,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapConnection.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Timeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property TimeSpan Timeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.DirectoryServices.Protocols.LdapConnection.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.StateManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateManager&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateManager sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type StateManager = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.StateManager.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="stateManager.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.StateManager.Exit(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Exit (threadIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exit(int threadIndex);" />
+      <MemberSignature Language="F#" Value="member this.Exit : int -&gt; unit" Usage="stateManager.Exit threadIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

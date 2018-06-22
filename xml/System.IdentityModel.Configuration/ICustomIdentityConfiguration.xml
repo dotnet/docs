@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICustomIdentityConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICustomIdentityConfiguration" />
+  <TypeSignature Language="F#" Value="type ICustomIdentityConfiguration = interface" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadCustomConfiguration (nodeList As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodeList);" />
+      <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="iCustomIdentityConfiguration.LoadCustomConfiguration nodeList" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

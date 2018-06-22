@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationSecurityManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationSecurityManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationSecurityManager abstract sealed" />
+  <TypeSignature Language="F#" Value="type ApplicationSecurityManager = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityManager.ApplicationTrustManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationTrustManager As IApplicationTrustManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Policy::IApplicationTrustManager ^ ApplicationTrustManager { System::Security::Policy::IApplicationTrustManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationTrustManager : System.Security.Policy.IApplicationTrustManager" Usage="System.Security.Policy.ApplicationSecurityManager.ApplicationTrustManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DetermineApplicationTrust(class System.ActivationContext activationContext, class System.Security.Policy.TrustManagerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationSecurityManager.DetermineApplicationTrust(System.ActivationContext,System.Security.Policy.TrustManagerContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DetermineApplicationTrust(ActivationContext ^ activationContext, System::Security::Policy::TrustManagerContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member DetermineApplicationTrust : ActivationContext * System.Security.Policy.TrustManagerContext -&gt; bool" Usage="System.Security.Policy.ApplicationSecurityManager.DetermineApplicationTrust (activationContext, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityManager.UserApplicationTrusts" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserApplicationTrusts As ApplicationTrustCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Policy::ApplicationTrustCollection ^ UserApplicationTrusts { System::Security::Policy::ApplicationTrustCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserApplicationTrusts : System.Security.Policy.ApplicationTrustCollection" Usage="System.Security.Policy.ApplicationSecurityManager.UserApplicationTrusts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

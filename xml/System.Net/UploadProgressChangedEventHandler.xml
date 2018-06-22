@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.UploadProgressChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub UploadProgressChangedEventHandler(sender As Object, e As UploadProgressChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void UploadProgressChangedEventHandler(System::Object ^ sender, UploadProgressChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type UploadProgressChangedEventHandler = delegate of obj * UploadProgressChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

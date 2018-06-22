@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IWsdlExportExtension" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWsdlExportExtension" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWsdlExportExtension" />
+  <TypeSignature Language="F#" Value="type IWsdlExportExtension = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExportContract (exporter As WsdlExporter, context As WsdlContractConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportContract(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlContractConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ExportContract : System.ServiceModel.Description.WsdlExporter * System.ServiceModel.Description.WsdlContractConversionContext -&gt; unit" Usage="iWsdlExportExtension.ExportContract (exporter, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExportEndpoint (exporter As WsdlExporter, context As WsdlEndpointConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportEndpoint(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlEndpointConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ExportEndpoint : System.ServiceModel.Description.WsdlExporter * System.ServiceModel.Description.WsdlEndpointConversionContext -&gt; unit" Usage="iWsdlExportExtension.ExportEndpoint (exporter, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

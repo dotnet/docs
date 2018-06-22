@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FillRule" />
   <TypeSignature Language="VB.NET" Value="Public Enum FillRule" />
   <TypeSignature Language="C++ CLI" Value="public enum class FillRule" />
+  <TypeSignature Language="F#" Value="type FillRule = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.FillRule.EvenOdd" />
       <MemberSignature Language="VB.NET" Value="EvenOdd" />
       <MemberSignature Language="C++ CLI" Value="EvenOdd" />
+      <MemberSignature Language="F#" Value="EvenOdd = 0" Usage="System.Windows.Media.FillRule.EvenOdd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.FillRule.Nonzero" />
       <MemberSignature Language="VB.NET" Value="Nonzero" />
       <MemberSignature Language="C++ CLI" Value="Nonzero" />
+      <MemberSignature Language="F#" Value="Nonzero = 1" Usage="System.Windows.Media.FillRule.Nonzero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Services.RemotingService" />
   <TypeSignature Language="VB.NET" Value="Public Class RemotingService&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class RemotingService : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type RemotingService = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Services.RemotingService.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As HttpApplicationState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpApplicationState ^ Application { System::Web::HttpApplicationState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : System.Web.HttpApplicationState" Usage="System.Runtime.Remoting.Services.RemotingService.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Services.RemotingService.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Runtime.Remoting.Services.RemotingService.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Services.RemotingService.Server" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As HttpServerUtility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpServerUtility ^ Server { System::Web::HttpServerUtility ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Server : System.Web.HttpServerUtility" Usage="System.Runtime.Remoting.Services.RemotingService.Server" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Services.RemotingService.Session" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As HttpSessionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SessionState::HttpSessionState ^ Session { System::Web::SessionState::HttpSessionState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Session : System.Web.SessionState.HttpSessionState" Usage="System.Runtime.Remoting.Services.RemotingService.Session" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Services.RemotingService.User" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As IPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal" Usage="System.Runtime.Remoting.Services.RemotingService.User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

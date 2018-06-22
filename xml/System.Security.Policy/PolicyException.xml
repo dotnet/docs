@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyException" />
   <TypeSignature Language="VB.NET" Value="Public Class PolicyException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class PolicyException : SystemException" />
+  <TypeSignature Language="F#" Value="type PolicyException = class&#xA;    inherit SystemException&#xA;    interface _Exception" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.PolicyException : string -&gt; System.Security.Policy.PolicyException" Usage="new System.Security.Policy.PolicyException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PolicyException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.PolicyException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.Policy.PolicyException" Usage="new System.Security.Policy.PolicyException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyException(System::String ^ message, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.PolicyException : string * Exception -&gt; System.Security.Policy.PolicyException" Usage="new System.Security.Policy.PolicyException (message, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PanningMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PanningMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PanningMode" />
+  <TypeSignature Language="F#" Value="type PanningMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="C++ CLI" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 3" Usage="System.Windows.Controls.PanningMode.Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.HorizontalFirst" />
       <MemberSignature Language="VB.NET" Value="HorizontalFirst" />
       <MemberSignature Language="C++ CLI" Value="HorizontalFirst" />
+      <MemberSignature Language="F#" Value="HorizontalFirst = 4" Usage="System.Windows.Controls.PanningMode.HorizontalFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.HorizontalOnly" />
       <MemberSignature Language="VB.NET" Value="HorizontalOnly" />
       <MemberSignature Language="C++ CLI" Value="HorizontalOnly" />
+      <MemberSignature Language="F#" Value="HorizontalOnly = 1" Usage="System.Windows.Controls.PanningMode.HorizontalOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.PanningMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.VerticalFirst" />
       <MemberSignature Language="VB.NET" Value="VerticalFirst" />
       <MemberSignature Language="C++ CLI" Value="VerticalFirst" />
+      <MemberSignature Language="F#" Value="VerticalFirst = 5" Usage="System.Windows.Controls.PanningMode.VerticalFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.VerticalOnly" />
       <MemberSignature Language="VB.NET" Value="VerticalOnly" />
       <MemberSignature Language="C++ CLI" Value="VerticalOnly" />
+      <MemberSignature Language="F#" Value="VerticalOnly = 2" Usage="System.Windows.Controls.PanningMode.VerticalOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

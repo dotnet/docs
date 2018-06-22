@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.InvalidCastException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidCastException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidCastException : SystemException" />
+  <TypeSignature Language="F#" Value="type InvalidCastException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -208,6 +209,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
       <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidCastException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new InvalidCastException : string -&gt; InvalidCastException" Usage="new System.InvalidCastException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -256,6 +258,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
       <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidCastException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new InvalidCastException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; InvalidCastException" Usage="new System.InvalidCastException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,6 +298,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
       <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidCastException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new InvalidCastException : string * Exception -&gt; InvalidCastException" Usage="new System.InvalidCastException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -346,6 +350,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
       <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidCastException(System::String ^ message, int errorCode);" />
+      <MemberSignature Language="F#" Value="new InvalidCastException : string * int -&gt; InvalidCastException" Usage="new System.InvalidCastException (message, errorCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

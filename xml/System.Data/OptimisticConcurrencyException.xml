@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OptimisticConcurrencyException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OptimisticConcurrencyException&#xA;Inherits UpdateException" />
   <TypeSignature Language="C++ CLI" Value="public ref class OptimisticConcurrencyException sealed : System::Data::UpdateException" />
+  <TypeSignature Language="F#" Value="type OptimisticConcurrencyException = class&#xA;    inherit UpdateException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OptimisticConcurrencyException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OptimisticConcurrencyException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.OptimisticConcurrencyException : string -&gt; System.Data.OptimisticConcurrencyException" Usage="new System.Data.OptimisticConcurrencyException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OptimisticConcurrencyException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OptimisticConcurrencyException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.OptimisticConcurrencyException : string * Exception -&gt; System.Data.OptimisticConcurrencyException" Usage="new System.Data.OptimisticConcurrencyException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OptimisticConcurrencyException.#ctor(System.String,System.Exception,System.Collections.Generic.IEnumerable{System.Data.Objects.ObjectStateEntry})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, stateEntries As IEnumerable(Of ObjectStateEntry))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OptimisticConcurrencyException(System::String ^ message, Exception ^ innerException, System::Collections::Generic::IEnumerable&lt;System::Data::Objects::ObjectStateEntry ^&gt; ^ stateEntries);" />
+      <MemberSignature Language="F#" Value="new System.Data.OptimisticConcurrencyException : string * Exception * seq&lt;System.Data.Objects.ObjectStateEntry&gt; -&gt; System.Data.OptimisticConcurrencyException" Usage="new System.Data.OptimisticConcurrencyException (message, innerException, stateEntries)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

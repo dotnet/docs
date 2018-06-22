@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.OpenFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum OpenFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class OpenFlags" />
+  <TypeSignature Language="F#" Value="type OpenFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.IncludeArchived" />
       <MemberSignature Language="VB.NET" Value="IncludeArchived" />
       <MemberSignature Language="C++ CLI" Value="IncludeArchived" />
+      <MemberSignature Language="F#" Value="IncludeArchived = 8" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.IncludeArchived" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.MaxAllowed" />
       <MemberSignature Language="VB.NET" Value="MaxAllowed" />
       <MemberSignature Language="C++ CLI" Value="MaxAllowed" />
+      <MemberSignature Language="F#" Value="MaxAllowed = 2" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.MaxAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly" />
       <MemberSignature Language="VB.NET" Value="OpenExistingOnly" />
       <MemberSignature Language="C++ CLI" Value="OpenExistingOnly" />
+      <MemberSignature Language="F#" Value="OpenExistingOnly = 4" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="ReadOnly" />
       <MemberSignature Language="C++ CLI" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 0" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.ReadWrite" />
       <MemberSignature Language="VB.NET" Value="ReadWrite" />
       <MemberSignature Language="C++ CLI" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 1" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

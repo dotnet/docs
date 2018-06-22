@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.Directives.DirectiveRegistry" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectiveRegistry" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectiveRegistry abstract sealed" />
+  <TypeSignature Language="F#" Value="type DirectiveRegistry = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.Directives.DirectiveRegistry.GetDirectives(System.Version,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDirectives (frameworkVersion As Version, extension As String) As ReadOnlyCollection(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;Type ^&gt; ^ GetDirectives(Version ^ frameworkVersion, System::String ^ extension);" />
+      <MemberSignature Language="F#" Value="static member GetDirectives : Version * string -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Type&gt;" Usage="System.Web.UI.Design.Directives.DirectiveRegistry.GetDirectives (frameworkVersion, extension)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.HostServices" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostServices sealed" />
+  <TypeSignature Language="F#" Value="type HostServices = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.CompilerServices.HostServices.VBHost" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property VBHost As IVbHost" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::VisualBasic::CompilerServices::IVbHost ^ VBHost { Microsoft::VisualBasic::CompilerServices::IVbHost ^ get(); void set(Microsoft::VisualBasic::CompilerServices::IVbHost ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VBHost : Microsoft.VisualBasic.CompilerServices.IVbHost with get, set" Usage="Microsoft.VisualBasic.CompilerServices.HostServices.VBHost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

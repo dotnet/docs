@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidatorDisplay" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidatorDisplay" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValidatorDisplay" />
+  <TypeSignature Language="F#" Value="type ValidatorDisplay = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidatorDisplay.Dynamic" />
       <MemberSignature Language="VB.NET" Value="Dynamic" />
       <MemberSignature Language="C++ CLI" Value="Dynamic" />
+      <MemberSignature Language="F#" Value="Dynamic = 2" Usage="System.Web.UI.WebControls.ValidatorDisplay.Dynamic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidatorDisplay.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.WebControls.ValidatorDisplay.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidatorDisplay.Static" />
       <MemberSignature Language="VB.NET" Value="Static" />
       <MemberSignature Language="C++ CLI" Value="Static" />
+      <MemberSignature Language="F#" Value="Static = 1" Usage="System.Web.UI.WebControls.ValidatorDisplay.Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ContentOperations" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentOperations" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentOperations abstract sealed" />
+  <TypeSignature Language="F#" Value="type ContentOperations = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ContentOperations.GetParent(System.Windows.ContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetParent (reference As ContentElement) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetParent(System::Windows::ContentElement ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetParent : System.Windows.ContentElement -&gt; System.Windows.DependencyObject" Usage="System.Windows.ContentOperations.GetParent reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ContentOperations.SetParent(System.Windows.ContentElement,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetParent (reference As ContentElement, parent As DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetParent(System::Windows::ContentElement ^ reference, System::Windows::DependencyObject ^ parent);" />
+      <MemberSignature Language="F#" Value="static member SetParent : System.Windows.ContentElement * System.Windows.DependencyObject -&gt; unit" Usage="System.Windows.ContentOperations.SetParent (reference, parent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

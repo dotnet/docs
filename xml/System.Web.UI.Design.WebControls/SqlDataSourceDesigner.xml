@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlDataSourceDesigner&#xA;Inherits DataSourceDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceDesigner : System::Web::UI::Design::DataSourceDesigner" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceDesigner = class&#xA;    inherit DataSourceDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanConfigure" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanConfigure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanConfigure { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanConfigure : bool" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanConfigure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRefreshSchema As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRefreshSchema : bool" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.Configure" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Configure ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Configure();" />
+      <MemberSignature Language="F#" Value="override this.Configure : unit -&gt; unit" Usage="sqlDataSourceDesigner.Configure " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CreateView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateView (viewName As String) As SqlDesignerDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::Design::WebControls::SqlDesignerDataSourceView ^ CreateView(System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="abstract member CreateView : string -&gt; System.Web.UI.Design.WebControls.SqlDesignerDataSourceView&#xA;override this.CreateView : string -&gt; System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" Usage="sqlDataSourceDesigner.CreateView viewName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery" />
       <MemberSignature Language="VB.NET" Value="Public Property DeleteQuery As DataSourceOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation DeleteQuery { System::Web::UI::DataSourceOperation get(); void set(System::Web::UI::DataSourceOperation value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteQuery : System.Web.UI.DataSourceOperation with get, set" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeriveParameters(System.String,System.Data.Common.DbCommand)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DeriveParameters (providerName As String, command As DbCommand)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DeriveParameters(System::String ^ providerName, System::Data::Common::DbCommand ^ command);" />
+      <MemberSignature Language="F#" Value="abstract member DeriveParameters : string * System.Data.Common.DbCommand -&gt; unit&#xA;override this.DeriveParameters : string * System.Data.Common.DbCommand -&gt; unit" Usage="sqlDataSourceDesigner.DeriveParameters (providerName, command)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.GetConnectionString" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetConnectionString () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetConnectionString();" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionString : unit -&gt; string&#xA;override this.GetConnectionString : unit -&gt; string" Usage="sqlDataSourceDesigner.GetConnectionString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -265,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetView (viewName As String) As DesignerDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Design::DesignerDataSourceView ^ GetView(System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="override this.GetView : string -&gt; System.Web.UI.Design.DesignerDataSourceView" Usage="sqlDataSourceDesigner.GetView viewName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetViewNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetViewNames();" />
+      <MemberSignature Language="F#" Value="override this.GetViewNames : unit -&gt; string[]" Usage="sqlDataSourceDesigner.GetViewNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -310,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.InferParameterNames(System.ComponentModel.Design.Data.DesignerDataConnection,System.String,System.Web.UI.WebControls.SqlDataSourceCommandType)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function InferParameterNames (connection As DesignerDataConnection, commandText As String, commandType As SqlDataSourceCommandType) As Parameter()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::Web::UI::WebControls::Parameter ^&gt; ^ InferParameterNames(System::ComponentModel::Design::Data::DesignerDataConnection ^ connection, System::String ^ commandText, System::Web::UI::WebControls::SqlDataSourceCommandType commandType);" />
+      <MemberSignature Language="F#" Value="abstract member InferParameterNames : System.ComponentModel.Design.Data.DesignerDataConnection * string * System.Web.UI.WebControls.SqlDataSourceCommandType -&gt; System.Web.UI.WebControls.Parameter[]&#xA;override this.InferParameterNames : System.ComponentModel.Design.Data.DesignerDataConnection * string * System.Web.UI.WebControls.SqlDataSourceCommandType -&gt; System.Web.UI.WebControls.Parameter[]" Usage="sqlDataSourceDesigner.InferParameterNames (connection, commandText, commandType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -340,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.InsertQuery" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertQuery As DataSourceOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation InsertQuery { System::Web::UI::DataSourceOperation get(); void set(System::Web::UI::DataSourceOperation value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertQuery : System.Web.UI.DataSourceOperation with get, set" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.InsertQuery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -388,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="sqlDataSourceDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -411,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string with get, set" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -439,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.RefreshSchema(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RefreshSchema (preferSilent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RefreshSchema(bool preferSilent);" />
+      <MemberSignature Language="F#" Value="override this.RefreshSchema : bool -&gt; unit" Usage="sqlDataSourceDesigner.RefreshSchema preferSilent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -471,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectCommand As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectCommand { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectCommand : string with get, set" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -499,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectQuery" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectQuery As DataSourceOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation SelectQuery { System::Web::UI::DataSourceOperation get(); void set(System::Web::UI::DataSourceOperation value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectQuery : System.Web.UI.DataSourceOperation with get, set" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectQuery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -547,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.UpdateQuery" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateQuery As DataSourceOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation UpdateQuery { System::Web::UI::DataSourceOperation get(); void set(System::Web::UI::DataSourceOperation value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateQuery : System.Web.UI.DataSourceOperation with get, set" Usage="System.Web.UI.Design.WebControls.SqlDataSourceDesigner.UpdateQuery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

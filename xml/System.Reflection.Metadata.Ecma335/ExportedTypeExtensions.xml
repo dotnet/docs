@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ExportedTypeExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module ExportedTypeExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExportedTypeExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type ExportedTypeExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTypeDefinitionId(valuetype System.Reflection.Metadata.ExportedType exportedType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExportedTypeExtensions.GetTypeDefinitionId(System.Reflection.Metadata.ExportedType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetTypeDefinitionId(System::Reflection::Metadata::ExportedType exportedType);" />
+      <MemberSignature Language="F#" Value="static member GetTypeDefinitionId : System.Reflection.Metadata.ExportedType -&gt; int" Usage="System.Reflection.Metadata.Ecma335.ExportedTypeExtensions.GetTypeDefinitionId exportedType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

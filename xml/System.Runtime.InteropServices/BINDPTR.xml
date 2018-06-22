@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.BINDPTR" />
   <TypeSignature Language="VB.NET" Value="Public Structure BINDPTR" />
   <TypeSignature Language="C++ CLI" Value="public value class BINDPTR" />
+  <TypeSignature Language="F#" Value="type BINDPTR = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BINDPTR.lpfuncdesc" />
       <MemberSignature Language="VB.NET" Value="Public lpfuncdesc As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr lpfuncdesc;" />
+      <MemberSignature Language="F#" Value="val mutable lpfuncdesc : nativeint" Usage="System.Runtime.InteropServices.BINDPTR.lpfuncdesc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BINDPTR.lptcomp" />
       <MemberSignature Language="VB.NET" Value="Public lptcomp As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr lptcomp;" />
+      <MemberSignature Language="F#" Value="val mutable lptcomp : nativeint" Usage="System.Runtime.InteropServices.BINDPTR.lptcomp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BINDPTR.lpvardesc" />
       <MemberSignature Language="VB.NET" Value="Public lpvardesc As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr lpvardesc;" />
+      <MemberSignature Language="F#" Value="val mutable lpvardesc : nativeint" Usage="System.Runtime.InteropServices.BINDPTR.lpvardesc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

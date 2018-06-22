@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.InsufficientMemoryException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InsufficientMemoryException&#xA;Inherits OutOfMemoryException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InsufficientMemoryException sealed : OutOfMemoryException" />
+  <TypeSignature Language="F#" Value="type InsufficientMemoryException = class&#xA;    inherit OutOfMemoryException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.InsufficientMemoryException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InsufficientMemoryException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new InsufficientMemoryException : string -&gt; InsufficientMemoryException" Usage="new System.InsufficientMemoryException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.InsufficientMemoryException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InsufficientMemoryException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new InsufficientMemoryException : string * Exception -&gt; InsufficientMemoryException" Usage="new System.InsufficientMemoryException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.IPermission" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPermission&#xA;Implements ISecurityEncodable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPermission : System::Security::ISecurityEncodable" />
+  <TypeSignature Language="F#" Value="type IPermission = interface&#xA;    interface ISecurityEncodable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission" Usage="iPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IPermission.Demand" />
       <MemberSignature Language="VB.NET" Value="Public Sub Demand ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Demand();" />
+      <MemberSignature Language="F#" Value="abstract member Demand : unit -&gt; unit" Usage="iPermission.Demand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="iPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -216,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="iPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="iPermission.Union target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessControlActions" />
   <TypeSignature Language="VB.NET" Value="Public Enum AccessControlActions" />
   <TypeSignature Language="C++ CLI" Value="public enum class AccessControlActions" />
+  <TypeSignature Language="F#" Value="type AccessControlActions = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlActions.Change" />
       <MemberSignature Language="VB.NET" Value="Change" />
       <MemberSignature Language="C++ CLI" Value="Change" />
+      <MemberSignature Language="F#" Value="Change = 2" Usage="System.Security.AccessControl.AccessControlActions.Change" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlActions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.AccessControl.AccessControlActions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlActions.View" />
       <MemberSignature Language="VB.NET" Value="View" />
       <MemberSignature Language="C++ CLI" Value="View" />
+      <MemberSignature Language="F#" Value="View = 1" Usage="System.Security.AccessControl.AccessControlActions.View" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.LowPhysicalMemoryInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LowPhysicalMemoryInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class LowPhysicalMemoryInfo sealed" />
+  <TypeSignature Language="F#" Value="type LowPhysicalMemoryInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryInfo.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (currentPercentUsed As Integer, percentLimit As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LowPhysicalMemoryInfo(int currentPercentUsed, int percentLimit);" />
+      <MemberSignature Language="F#" Value="new System.Web.Hosting.LowPhysicalMemoryInfo : int * int -&gt; System.Web.Hosting.LowPhysicalMemoryInfo" Usage="new System.Web.Hosting.LowPhysicalMemoryInfo (currentPercentUsed, percentLimit)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.LowPhysicalMemoryInfo.CurrentPercentUsed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentPercentUsed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentPercentUsed { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPercentUsed : int" Usage="System.Web.Hosting.LowPhysicalMemoryInfo.CurrentPercentUsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.LowPhysicalMemoryInfo.PercentLimit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PercentLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentLimit { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PercentLimit : int" Usage="System.Web.Hosting.LowPhysicalMemoryInfo.PercentLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.LowPhysicalMemoryInfo.RequestGC" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestGC As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequestGC { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestGC : bool with get, set" Usage="System.Web.Hosting.LowPhysicalMemoryInfo.RequestGC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

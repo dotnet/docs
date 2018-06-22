@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IAutoFieldGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAutoFieldGenerator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAutoFieldGenerator" />
+  <TypeSignature Language="F#" Value="type IAutoFieldGenerator = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GenerateFields(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IAutoFieldGenerator.GenerateFields(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GenerateFields(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateFields : System.Web.UI.Control -&gt; System.Collections.ICollection" Usage="iAutoFieldGenerator.GenerateFields control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

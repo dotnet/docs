@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.HelpContextType" />
   <TypeSignature Language="VB.NET" Value="Public Enum HelpContextType" />
   <TypeSignature Language="C++ CLI" Value="public enum class HelpContextType" />
+  <TypeSignature Language="F#" Value="type HelpContextType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Ambient" />
       <MemberSignature Language="VB.NET" Value="Ambient" />
       <MemberSignature Language="C++ CLI" Value="Ambient" />
+      <MemberSignature Language="F#" Value="Ambient = 0" Usage="System.ComponentModel.Design.HelpContextType.Ambient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Selection" />
       <MemberSignature Language="VB.NET" Value="Selection" />
       <MemberSignature Language="C++ CLI" Value="Selection" />
+      <MemberSignature Language="F#" Value="Selection = 2" Usage="System.ComponentModel.Design.HelpContextType.Selection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.ToolWindowSelection" />
       <MemberSignature Language="VB.NET" Value="ToolWindowSelection" />
       <MemberSignature Language="C++ CLI" Value="ToolWindowSelection" />
+      <MemberSignature Language="F#" Value="ToolWindowSelection = 3" Usage="System.ComponentModel.Design.HelpContextType.ToolWindowSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Window" />
       <MemberSignature Language="VB.NET" Value="Window" />
       <MemberSignature Language="C++ CLI" Value="Window" />
+      <MemberSignature Language="F#" Value="Window = 1" Usage="System.ComponentModel.Design.HelpContextType.Window" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

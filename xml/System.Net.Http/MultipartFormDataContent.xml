@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.MultipartFormDataContent" />
   <TypeSignature Language="VB.NET" Value="Public Class MultipartFormDataContent&#xA;Inherits MultipartContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class MultipartFormDataContent : System::Net::Http::MultipartContent" />
+  <TypeSignature Language="F#" Value="type MultipartFormDataContent = class&#xA;    inherit MultipartContent" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartFormDataContent.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (boundary As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipartFormDataContent(System::String ^ boundary);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.MultipartFormDataContent : string -&gt; System.Net.Http.MultipartFormDataContent" Usage="new System.Net.Http.MultipartFormDataContent boundary" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (content As HttpContent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Net::Http::HttpContent ^ content);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Net.Http.HttpContent -&gt; unit" Usage="multipartFormDataContent.Add content" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (content As HttpContent, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::Http::HttpContent ^ content, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Net.Http.HttpContent * string -&gt; unit" Usage="multipartFormDataContent.Add (content, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (content As HttpContent, name As String, fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::Http::HttpContent ^ content, System::String ^ name, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Net.Http.HttpContent * string * string -&gt; unit" Usage="multipartFormDataContent.Add (content, name, fileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

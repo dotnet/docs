@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class AtomPub10ServiceDocumentFormatter&#xA;Inherits ServiceDocumentFormatter&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class AtomPub10ServiceDocumentFormatter : System::ServiceModel::Syndication::ServiceDocumentFormatter, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type AtomPub10ServiceDocumentFormatter = class&#xA;    inherit ServiceDocumentFormatter&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.#ctor(System.ServiceModel.Syndication.ServiceDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (documentToWrite As ServiceDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomPub10ServiceDocumentFormatter(System::ServiceModel::Syndication::ServiceDocument ^ documentToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter : System.ServiceModel.Syndication.ServiceDocument -&gt; System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter" Usage="new System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter documentToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (documentTypeToCreate As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomPub10ServiceDocumentFormatter(Type ^ documentTypeToCreate);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter : Type -&gt; System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter" Usage="new System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter documentTypeToCreate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRead (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRead(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanRead : System.Xml.XmlReader -&gt; bool" Usage="atomPub10ServiceDocumentFormatter.CanRead reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.CreateDocumentInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDocumentInstance () As ServiceDocument" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::ServiceDocument ^ CreateDocumentInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateDocumentInstance : unit -&gt; System.ServiceModel.Syndication.ServiceDocument" Usage="atomPub10ServiceDocumentFormatter.CreateDocumentInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReadFrom (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadFrom(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.ReadFrom : System.Xml.XmlReader -&gt; unit" Usage="atomPub10ServiceDocumentFormatter.ReadFrom reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -341,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -365,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="atomPub10ServiceDocumentFormatter.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

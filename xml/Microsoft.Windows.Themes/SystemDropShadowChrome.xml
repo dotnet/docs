@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.SystemDropShadowChrome" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemDropShadowChrome&#xA;Inherits Decorator" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemDropShadowChrome sealed : System::Windows::Controls::Decorator" />
+  <TypeSignature Language="F#" Value="type SystemDropShadowChrome = class&#xA;    inherit Decorator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Aero</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -104,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.SystemDropShadowChrome.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color Color { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Windows.Media.Color with get, set" Usage="Microsoft.Windows.Themes.SystemDropShadowChrome.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.SystemDropShadowChrome.ColorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColorProperty : System.Windows.DependencyProperty" Usage="Microsoft.Windows.Themes.SystemDropShadowChrome.ColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -197,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.SystemDropShadowChrome.CornerRadius" />
       <MemberSignature Language="VB.NET" Value="Public Property CornerRadius As CornerRadius" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::CornerRadius CornerRadius { System::Windows::CornerRadius get(); void set(System::Windows::CornerRadius value); };" />
+      <MemberSignature Language="F#" Value="member this.CornerRadius : System.Windows.CornerRadius with get, set" Usage="Microsoft.Windows.Themes.SystemDropShadowChrome.CornerRadius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -251,6 +255,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.SystemDropShadowChrome.CornerRadiusProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CornerRadiusProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CornerRadiusProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CornerRadiusProperty : System.Windows.DependencyProperty" Usage="Microsoft.Windows.Themes.SystemDropShadowChrome.CornerRadiusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -289,6 +294,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.SystemDropShadowChrome.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="systemDropShadowChrome.OnRender drawingContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>

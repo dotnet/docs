@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IErrorHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IErrorHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class IErrorHandler" />
+  <TypeSignature Language="F#" Value="type IErrorHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IErrorHandler.OnCompilerError(Microsoft.JScript.IVsaFullErrorInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function OnCompilerError (error As IVsaFullErrorInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool OnCompilerError(Microsoft::JScript::IVsaFullErrorInfo ^ error);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompilerError : Microsoft.JScript.IVsaFullErrorInfo -&gt; bool" Usage="iErrorHandler.OnCompilerError error" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

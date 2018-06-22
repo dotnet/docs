@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataSource" />
+  <TypeSignature Language="F#" Value="type IDataSource = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.IDataSource.DataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Event DataSourceChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IDataSource.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetView (viewName As String) As DataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="abstract member GetView : string -&gt; System.Web.UI.DataSourceView" Usage="iDataSource.GetView viewName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IDataSource.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetViewNames () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetViewNames();" />
+      <MemberSignature Language="F#" Value="abstract member GetViewNames : unit -&gt; System.Collections.ICollection" Usage="iDataSource.GetViewNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

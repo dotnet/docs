@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EdmType" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EdmType&#xA;Inherits GlobalItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class EdmType abstract : System::Data::Metadata::Edm::GlobalItem" />
+  <TypeSignature Language="F#" Value="type EdmType = class&#xA;    inherit GlobalItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmType.Abstract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Abstract As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Abstract { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Abstract : bool" Usage="System.Data.Metadata.Edm.EdmType.Abstract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmType.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseType As EdmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmType ^ BaseType { System::Data::Metadata::Edm::EdmType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseType : System.Data.Metadata.Edm.EdmType" Usage="System.Data.Metadata.Edm.EdmType.BaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmType.FullName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.Data.Metadata.Edm.EdmType.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EdmType.GetCollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCollectionType () As CollectionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::CollectionType ^ GetCollectionType();" />
+      <MemberSignature Language="F#" Value="member this.GetCollectionType : unit -&gt; System.Data.Metadata.Edm.CollectionType" Usage="edmType.GetCollectionType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmType.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Metadata.Edm.EdmType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmType.NamespaceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="System.Data.Metadata.Edm.EdmType.NamespaceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EdmType.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="edmType.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

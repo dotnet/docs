@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementConfigurationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementConfigurationAttribute&#xA;Inherits ManagementMemberAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementConfigurationAttribute sealed : System::Management::Instrumentation::ManagementMemberAttribute" />
+  <TypeSignature Language="F#" Value="type ManagementConfigurationAttribute = class&#xA;    inherit ManagementMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@ public double ReadableWritableProperty
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementConfigurationAttribute.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As ManagementConfigurationType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::Instrumentation::ManagementConfigurationType Mode { System::Management::Instrumentation::ManagementConfigurationType get(); void set(System::Management::Instrumentation::ManagementConfigurationType value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Management.Instrumentation.ManagementConfigurationType with get, set" Usage="System.Management.Instrumentation.ManagementConfigurationAttribute.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -100,6 +102,7 @@ public double ReadableWritableProperty
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementConfigurationAttribute.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Property Schema As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Schema { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : Type with get, set" Usage="System.Management.Instrumentation.ManagementConfigurationAttribute.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlHistory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HtmlHistory&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlHistory sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type HtmlHistory = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Back(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Back (numberBack As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Back(int numberBack);" />
+      <MemberSignature Language="F#" Value="member this.Back : int -&gt; unit" Usage="htmlHistory.Back numberBack" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="htmlHistory.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlHistory.DomHistory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomHistory As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DomHistory { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DomHistory : obj" Usage="System.Windows.Forms.HtmlHistory.DomHistory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Forward(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Forward (numberForward As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Forward(int numberForward);" />
+      <MemberSignature Language="F#" Value="member this.Forward : int -&gt; unit" Usage="htmlHistory.Forward numberForward" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Go(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Go (relativePosition As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Go(int relativePosition);" />
+      <MemberSignature Language="F#" Value="member this.Go : int -&gt; unit" Usage="htmlHistory.Go relativePosition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Go(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Go (urlString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Go(System::String ^ urlString);" />
+      <MemberSignature Language="F#" Value="member this.Go : string -&gt; unit" Usage="htmlHistory.Go urlString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Go(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Go (url As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Go(Uri ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Go : Uri -&gt; unit" Usage="htmlHistory.Go url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlHistory.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Forms.HtmlHistory.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

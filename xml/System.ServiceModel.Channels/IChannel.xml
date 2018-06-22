@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IChannel" />
   <TypeSignature Language="VB.NET" Value="Public Interface IChannel&#xA;Implements ICommunicationObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IChannel : System::ServiceModel::ICommunicationObject" />
+  <TypeSignature Language="F#" Value="type IChannel = interface&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannel.GetProperty``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of T As Class) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T GetProperty();" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : unit -&gt; 'T (requires 'T : null)" Usage="iChannel.GetProperty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlImplementation" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlImplementation" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlImplementation" />
+  <TypeSignature Language="F#" Value="type XmlImplementation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.#ctor(System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nt As XmlNameTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlImplementation(System::Xml::XmlNameTable ^ nt);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlImplementation : System.Xml.XmlNameTable -&gt; System.Xml.XmlImplementation" Usage="new System.Xml.XmlImplementation nt" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.CreateDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDocument () As XmlDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlDocument ^ CreateDocument();" />
+      <MemberSignature Language="F#" Value="abstract member CreateDocument : unit -&gt; System.Xml.XmlDocument&#xA;override this.CreateDocument : unit -&gt; System.Xml.XmlDocument" Usage="xmlImplementation.CreateDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.HasFeature(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function HasFeature (strFeature As String, strVersion As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasFeature(System::String ^ strFeature, System::String ^ strVersion);" />
+      <MemberSignature Language="F#" Value="member this.HasFeature : string * string -&gt; bool" Usage="xmlImplementation.HasFeature (strFeature, strVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>

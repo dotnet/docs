@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.DataChangedEventManager" />
   <TypeSignature Language="VB.NET" Value="Public Class DataChangedEventManager&#xA;Inherits WeakEventManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataChangedEventManager : System::Windows::WeakEventManager" />
+  <TypeSignature Language="F#" Value="type DataChangedEventManager = class&#xA;    inherit WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.AddHandler(System.Windows.Data.DataSourceProvider,System.EventHandler{System.EventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As DataSourceProvider, handler As EventHandler(Of EventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(System::Windows::Data::DataSourceProvider ^ source, EventHandler&lt;EventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddHandler : System.Windows.Data.DataSourceProvider * EventHandler&lt;EventArgs&gt; -&gt; unit" Usage="System.Windows.Data.DataChangedEventManager.AddHandler (source, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.AddListener(System.Windows.Data.DataSourceProvider,System.Windows.IWeakEventListener)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddListener (source As DataSourceProvider, listener As IWeakEventListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddListener(System::Windows::Data::DataSourceProvider ^ source, System::Windows::IWeakEventListener ^ listener);" />
+      <MemberSignature Language="F#" Value="static member AddListener : System.Windows.Data.DataSourceProvider * System.Windows.IWeakEventListener -&gt; unit" Usage="System.Windows.Data.DataChangedEventManager.AddListener (source, listener)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.NewListenerList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::WeakEventManager::ListenerList ^ NewListenerList();" />
+      <MemberSignature Language="F#" Value="abstract member NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList&#xA;override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="dataChangedEventManager.NewListenerList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.RemoveHandler(System.Windows.Data.DataSourceProvider,System.EventHandler{System.EventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As DataSourceProvider, handler As EventHandler(Of EventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(System::Windows::Data::DataSourceProvider ^ source, EventHandler&lt;EventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveHandler : System.Windows.Data.DataSourceProvider * EventHandler&lt;EventArgs&gt; -&gt; unit" Usage="System.Windows.Data.DataChangedEventManager.RemoveHandler (source, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.RemoveListener(System.Windows.Data.DataSourceProvider,System.Windows.IWeakEventListener)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveListener (source As DataSourceProvider, listener As IWeakEventListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveListener(System::Windows::Data::DataSourceProvider ^ source, System::Windows::IWeakEventListener ^ listener);" />
+      <MemberSignature Language="F#" Value="static member RemoveListener : System.Windows.Data.DataSourceProvider * System.Windows.IWeakEventListener -&gt; unit" Usage="System.Windows.Data.DataChangedEventManager.RemoveListener (source, listener)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="dataChangedEventManager.StartListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="dataChangedEventManager.StopListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.RelativeSource" />
   <TypeSignature Language="VB.NET" Value="Public Class RelativeSource&#xA;Inherits MarkupExtension&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class RelativeSource : System::Windows::Markup::MarkupExtension, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type RelativeSource = class&#xA;    inherit MarkupExtension&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.RelativeSource.#ctor(System.Windows.Data.RelativeSourceMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mode As RelativeSourceMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RelativeSource(System::Windows::Data::RelativeSourceMode mode);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Data.RelativeSource : System.Windows.Data.RelativeSourceMode -&gt; System.Windows.Data.RelativeSource" Usage="new System.Windows.Data.RelativeSource mode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.RelativeSource.#ctor(System.Windows.Data.RelativeSourceMode,System.Type,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mode As RelativeSourceMode, ancestorType As Type, ancestorLevel As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RelativeSource(System::Windows::Data::RelativeSourceMode mode, Type ^ ancestorType, int ancestorLevel);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Data.RelativeSource : System.Windows.Data.RelativeSourceMode * Type * int -&gt; System.Windows.Data.RelativeSource" Usage="new System.Windows.Data.RelativeSource (mode, ancestorType, ancestorLevel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.RelativeSource.AncestorLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property AncestorLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AncestorLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AncestorLevel : int with get, set" Usage="System.Windows.Data.RelativeSource.AncestorLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.RelativeSource.AncestorType" />
       <MemberSignature Language="VB.NET" Value="Public Property AncestorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ AncestorType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AncestorType : Type with get, set" Usage="System.Windows.Data.RelativeSource.AncestorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.RelativeSource.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As RelativeSourceMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::RelativeSourceMode Mode { System::Windows::Data::RelativeSourceMode get(); void set(System::Windows::Data::RelativeSourceMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Windows.Data.RelativeSourceMode with get, set" Usage="System.Windows.Data.RelativeSource.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -267,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.RelativeSource.PreviousData" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PreviousData As RelativeSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Data::RelativeSource ^ PreviousData { System::Windows::Data::RelativeSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousData : System.Windows.Data.RelativeSource" Usage="System.Windows.Data.RelativeSource.PreviousData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -300,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.RelativeSource.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="relativeSource.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -331,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.RelativeSource.Self" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Self As RelativeSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Data::RelativeSource ^ Self { System::Windows::Data::RelativeSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Self : System.Windows.Data.RelativeSource" Usage="System.Windows.Data.RelativeSource.Self" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -371,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.RelativeSource.ShouldSerializeAncestorLevel" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeAncestorLevel () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeAncestorLevel();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeAncestorLevel : unit -&gt; bool" Usage="relativeSource.ShouldSerializeAncestorLevel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -405,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.RelativeSource.ShouldSerializeAncestorType" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeAncestorType () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeAncestorType();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeAncestorType : unit -&gt; bool" Usage="relativeSource.ShouldSerializeAncestorType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -481,6 +492,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.RelativeSource.TemplatedParent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplatedParent As RelativeSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Data::RelativeSource ^ TemplatedParent { System::Windows::Data::RelativeSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplatedParent : System.Windows.Data.RelativeSource" Usage="System.Windows.Data.RelativeSource.TemplatedParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

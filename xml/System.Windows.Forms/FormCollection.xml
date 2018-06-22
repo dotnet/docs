@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class FormCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type FormCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FormCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Form ^ default[int] { System::Windows::Forms::Form ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.Form" Usage="System.Windows.Forms.FormCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FormCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Form ^ default[System::String ^] { System::Windows::Forms::Form ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.Form" Usage="System.Windows.Forms.FormCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

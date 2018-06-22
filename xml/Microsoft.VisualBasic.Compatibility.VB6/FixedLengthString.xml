@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" />
   <TypeSignature Language="VB.NET" Value="Public Class FixedLengthString" />
   <TypeSignature Language="C++ CLI" Value="public ref class FixedLengthString" />
+  <TypeSignature Language="F#" Value="type FixedLengthString = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (MaxChars As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FixedLengthString(int MaxChars);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString : int -&gt; Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" Usage="new Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString MaxChars" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -116,6 +118,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (MaxChars As Integer, InitialValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FixedLengthString(int MaxChars, System::String ^ InitialValue);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString : int * string -&gt; Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" Usage="new Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString (MaxChars, InitialValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -169,6 +172,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_nMaxChars" />
       <MemberSignature Language="VB.NET" Value="Protected m_nMaxChars As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected: int m_nMaxChars;" />
+      <MemberSignature Language="F#" Value="val mutable m_nMaxChars : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_nMaxChars" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -195,6 +199,7 @@ End Sub
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_strValue" />
       <MemberSignature Language="VB.NET" Value="Protected m_strValue As String " />
       <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_strValue;" />
+      <MemberSignature Language="F#" Value="val mutable m_strValue : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_strValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -221,6 +226,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fixedLengthString.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -271,6 +277,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

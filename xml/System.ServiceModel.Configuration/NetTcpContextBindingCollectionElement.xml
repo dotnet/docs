@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetTcpContextBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetTcpContextBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetTcpContextBinding, NetTcpContextBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetTcpContextBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetTcpContextBinding ^, System::ServiceModel::Configuration::NetTcpContextBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type NetTcpContextBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;NetTcpContextBinding, NetTcpContextBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

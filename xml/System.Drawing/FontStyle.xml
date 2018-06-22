@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.FontStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum FontStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class FontStyle" />
+  <TypeSignature Language="F#" Value="type FontStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Bold" />
       <MemberSignature Language="VB.NET" Value="Bold" />
       <MemberSignature Language="C++ CLI" Value="Bold" />
+      <MemberSignature Language="F#" Value="Bold = 1" Usage="System.Drawing.FontStyle.Bold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Italic" />
       <MemberSignature Language="VB.NET" Value="Italic" />
       <MemberSignature Language="C++ CLI" Value="Italic" />
+      <MemberSignature Language="F#" Value="Italic = 2" Usage="System.Drawing.FontStyle.Italic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Regular" />
       <MemberSignature Language="VB.NET" Value="Regular" />
       <MemberSignature Language="C++ CLI" Value="Regular" />
+      <MemberSignature Language="F#" Value="Regular = 0" Usage="System.Drawing.FontStyle.Regular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Strikeout" />
       <MemberSignature Language="VB.NET" Value="Strikeout" />
       <MemberSignature Language="C++ CLI" Value="Strikeout" />
+      <MemberSignature Language="F#" Value="Strikeout = 8" Usage="System.Drawing.FontStyle.Strikeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Underline" />
       <MemberSignature Language="VB.NET" Value="Underline" />
       <MemberSignature Language="C++ CLI" Value="Underline" />
+      <MemberSignature Language="F#" Value="Underline = 4" Usage="System.Drawing.FontStyle.Underline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

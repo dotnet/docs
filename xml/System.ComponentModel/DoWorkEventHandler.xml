@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DoWorkEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DoWorkEventHandler(sender As Object, e As DoWorkEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DoWorkEventHandler(System::Object ^ sender, DoWorkEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DoWorkEventHandler = delegate of obj * DoWorkEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

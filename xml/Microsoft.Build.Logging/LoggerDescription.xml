@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.LoggerDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class LoggerDescription" />
   <TypeSignature Language="C++ CLI" Value="public ref class LoggerDescription" />
+  <TypeSignature Language="F#" Value="type LoggerDescription = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.LoggerDescription.#ctor(System.String,System.String,System.String,System.String,Microsoft.Build.Framework.LoggerVerbosity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (loggerClassName As String, loggerAssemblyName As String, loggerAssemblyFile As String, loggerSwitchParameters As String, verbosity As LoggerVerbosity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LoggerDescription(System::String ^ loggerClassName, System::String ^ loggerAssemblyName, System::String ^ loggerAssemblyFile, System::String ^ loggerSwitchParameters, Microsoft::Build::Framework::LoggerVerbosity verbosity);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Logging.LoggerDescription : string * string * string * string * Microsoft.Build.Framework.LoggerVerbosity -&gt; Microsoft.Build.Logging.LoggerDescription" Usage="new Microsoft.Build.Logging.LoggerDescription (loggerClassName, loggerAssemblyName, loggerAssemblyFile, loggerSwitchParameters, verbosity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.LoggerDescription.CreateLogger" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateLogger () As ILogger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Framework::ILogger ^ CreateLogger();" />
+      <MemberSignature Language="F#" Value="member this.CreateLogger : unit -&gt; Microsoft.Build.Framework.ILogger" Usage="loggerDescription.CreateLogger " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.LoggerDescription.LoggerSwitchParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoggerSwitchParameters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoggerSwitchParameters { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoggerSwitchParameters : string" Usage="Microsoft.Build.Logging.LoggerDescription.LoggerSwitchParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.LoggerDescription.Verbosity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Verbosity As LoggerVerbosity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbosity : Microsoft.Build.Framework.LoggerVerbosity" Usage="Microsoft.Build.Logging.LoggerDescription.Verbosity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

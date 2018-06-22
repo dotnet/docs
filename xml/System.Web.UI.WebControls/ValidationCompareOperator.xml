@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidationCompareOperator" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationCompareOperator" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValidationCompareOperator" />
+  <TypeSignature Language="F#" Value="type ValidationCompareOperator = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.DataTypeCheck" />
       <MemberSignature Language="VB.NET" Value="DataTypeCheck" />
       <MemberSignature Language="C++ CLI" Value="DataTypeCheck" />
+      <MemberSignature Language="F#" Value="DataTypeCheck = 6" Usage="System.Web.UI.WebControls.ValidationCompareOperator.DataTypeCheck" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.Equal" />
       <MemberSignature Language="VB.NET" Value="Equal" />
       <MemberSignature Language="C++ CLI" Value="Equal" />
+      <MemberSignature Language="F#" Value="Equal = 0" Usage="System.Web.UI.WebControls.ValidationCompareOperator.Equal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.GreaterThan" />
       <MemberSignature Language="VB.NET" Value="GreaterThan" />
       <MemberSignature Language="C++ CLI" Value="GreaterThan" />
+      <MemberSignature Language="F#" Value="GreaterThan = 2" Usage="System.Web.UI.WebControls.ValidationCompareOperator.GreaterThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.GreaterThanEqual" />
       <MemberSignature Language="VB.NET" Value="GreaterThanEqual" />
       <MemberSignature Language="C++ CLI" Value="GreaterThanEqual" />
+      <MemberSignature Language="F#" Value="GreaterThanEqual = 3" Usage="System.Web.UI.WebControls.ValidationCompareOperator.GreaterThanEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.LessThan" />
       <MemberSignature Language="VB.NET" Value="LessThan" />
       <MemberSignature Language="C++ CLI" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 4" Usage="System.Web.UI.WebControls.ValidationCompareOperator.LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.LessThanEqual" />
       <MemberSignature Language="VB.NET" Value="LessThanEqual" />
       <MemberSignature Language="C++ CLI" Value="LessThanEqual" />
+      <MemberSignature Language="F#" Value="LessThanEqual = 5" Usage="System.Web.UI.WebControls.ValidationCompareOperator.LessThanEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.NotEqual" />
       <MemberSignature Language="VB.NET" Value="NotEqual" />
       <MemberSignature Language="C++ CLI" Value="NotEqual" />
+      <MemberSignature Language="F#" Value="NotEqual = 1" Usage="System.Web.UI.WebControls.ValidationCompareOperator.NotEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ConsoleCancelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConsoleCancelEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConsoleCancelEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ConsoleCancelEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.ConsoleCancelEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.ConsoleCancelEventArgs.Cancel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.ConsoleCancelEventArgs.SpecialKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpecialKey As ConsoleSpecialKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ConsoleSpecialKey SpecialKey { ConsoleSpecialKey get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpecialKey : ConsoleSpecialKey" Usage="System.ConsoleCancelEventArgs.SpecialKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>

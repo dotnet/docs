@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlFieldCell" />
   <TypeSignature Language="VB.NET" Value="Public Class DataControlFieldCell&#xA;Inherits TableCell" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataControlFieldCell : System::Web::UI::WebControls::TableCell" />
+  <TypeSignature Language="F#" Value="type DataControlFieldCell = class&#xA;    inherit TableCell" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCell.#ctor(System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (containingField As DataControlField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataControlFieldCell(System::Web::UI::WebControls::DataControlField ^ containingField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataControlFieldCell : System.Web.UI.WebControls.DataControlField -&gt; System.Web.UI.WebControls.DataControlFieldCell" Usage="new System.Web.UI.WebControls.DataControlFieldCell containingField" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCell.#ctor(System.Web.UI.HtmlTextWriterTag,System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (tagKey As HtmlTextWriterTag, containingField As DataControlField)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataControlFieldCell(System::Web::UI::HtmlTextWriterTag tagKey, System::Web::UI::WebControls::DataControlField ^ containingField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataControlFieldCell : System.Web.UI.HtmlTextWriterTag * System.Web.UI.WebControls.DataControlField -&gt; System.Web.UI.WebControls.DataControlFieldCell" Usage="new System.Web.UI.WebControls.DataControlFieldCell (tagKey, containingField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataControlFieldCell.ContainingField" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainingField As DataControlField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataControlField ^ ContainingField { System::Web::UI::WebControls::DataControlField ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainingField : System.Web.UI.WebControls.DataControlField" Usage="System.Web.UI.WebControls.DataControlFieldCell.ContainingField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataControlFieldCell.ValidateRequestMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ValidateRequestMode As ValidateRequestMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ValidateRequestMode ValidateRequestMode { System::Web::UI::ValidateRequestMode get(); void set(System::Web::UI::ValidateRequestMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateRequestMode : System.Web.UI.ValidateRequestMode with get, set" Usage="System.Web.UI.WebControls.DataControlFieldCell.ValidateRequestMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

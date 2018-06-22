@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityDataSourceChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type EntityDataSourceChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ObjectContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectContext ^ Context { System::Data::Objects::ObjectContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Objects.ObjectContext" Usage="System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Entity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entity As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Entity { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Entity : obj" Usage="System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Entity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSourceChangedEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>

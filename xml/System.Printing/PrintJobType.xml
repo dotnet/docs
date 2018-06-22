@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintJobType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintJobType" />
+  <TypeSignature Language="F#" Value="type PrintJobType = " />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.Legacy" />
       <MemberSignature Language="VB.NET" Value="Legacy" />
       <MemberSignature Language="C++ CLI" Value="Legacy" />
+      <MemberSignature Language="F#" Value="Legacy = 2" Usage="System.Printing.PrintJobType.Legacy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Printing.PrintJobType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.Xps" />
       <MemberSignature Language="VB.NET" Value="Xps" />
       <MemberSignature Language="C++ CLI" Value="Xps" />
+      <MemberSignature Language="F#" Value="Xps = 1" Usage="System.Printing.PrintJobType.Xps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

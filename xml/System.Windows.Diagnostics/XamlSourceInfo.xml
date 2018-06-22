@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.XamlSourceInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlSourceInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlSourceInfo" />
+  <TypeSignature Language="F#" Value="type XamlSourceInfo = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.XamlSourceInfo.#ctor(System.Uri,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri, lineNumber As Integer, linePosition As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSourceInfo(Uri ^ sourceUri, int lineNumber, int linePosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Diagnostics.XamlSourceInfo : Uri * int * int -&gt; System.Windows.Diagnostics.XamlSourceInfo" Usage="new System.Windows.Diagnostics.XamlSourceInfo (sourceUri, lineNumber, linePosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.XamlSourceInfo.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Windows.Diagnostics.XamlSourceInfo.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.XamlSourceInfo.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Windows.Diagnostics.XamlSourceInfo.LinePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.XamlSourceInfo.SourceUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : Uri" Usage="System.Windows.Diagnostics.XamlSourceInfo.SourceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.DirectoryInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectoryInfo&#xA;Inherits FileSystemInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryInfo sealed : System::IO::FileSystemInfo" />
+  <TypeSignature Language="F#" Value="type DirectoryInfo = class&#xA;    inherit FileSystemInfo" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryInfo(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.IO.DirectoryInfo : string -&gt; System.IO.DirectoryInfo" Usage="new System.IO.DirectoryInfo path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -156,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.Create" />
       <MemberSignature Language="VB.NET" Value="Public Sub Create ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create();" />
+      <MemberSignature Language="F#" Value="member this.Create : unit -&gt; unit" Usage="directoryInfo.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -206,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Create(class System.Security.AccessControl.DirectorySecurity directorySecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.Create(System.Security.AccessControl.DirectorySecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create(System::Security::AccessControl::DirectorySecurity ^ directorySecurity);" />
+      <MemberSignature Language="F#" Value="member this.Create : System.Security.AccessControl.DirectorySecurity -&gt; unit" Usage="directoryInfo.Create directorySecurity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -261,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.CreateSubdirectory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSubdirectory (path As String) As DirectoryInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::DirectoryInfo ^ CreateSubdirectory(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubdirectory : string -&gt; System.IO.DirectoryInfo" Usage="directoryInfo.CreateSubdirectory path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -332,6 +337,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.DirectoryInfo CreateSubdirectory(string path, class System.Security.AccessControl.DirectorySecurity directorySecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.CreateSubdirectory(System.String,System.Security.AccessControl.DirectorySecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::DirectoryInfo ^ CreateSubdirectory(System::String ^ path, System::Security::AccessControl::DirectorySecurity ^ directorySecurity);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubdirectory : string * System.Security.AccessControl.DirectorySecurity -&gt; System.IO.DirectoryInfo" Usage="directoryInfo.CreateSubdirectory (path, directorySecurity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -397,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Delete();" />
+      <MemberSignature Language="F#" Value="override this.Delete : unit -&gt; unit" Usage="directoryInfo.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -457,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.Delete(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (recursive As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(bool recursive);" />
+      <MemberSignature Language="F#" Value="override this.Delete : bool -&gt; unit" Usage="directoryInfo.Delete recursive" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -537,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateDirectories" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumerateDirectories () As IEnumerable(Of DirectoryInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::DirectoryInfo ^&gt; ^ EnumerateDirectories();" />
+      <MemberSignature Language="F#" Value="member this.EnumerateDirectories : unit -&gt; seq&lt;System.IO.DirectoryInfo&gt;" Usage="directoryInfo.EnumerateDirectories " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -612,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateDirectories(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumerateDirectories (searchPattern As String) As IEnumerable(Of DirectoryInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::DirectoryInfo ^&gt; ^ EnumerateDirectories(System::String ^ searchPattern);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateDirectories : string -&gt; seq&lt;System.IO.DirectoryInfo&gt;" Usage="directoryInfo.EnumerateDirectories searchPattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -690,6 +700,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.DirectoryInfo&gt; EnumerateDirectories(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::DirectoryInfo ^&gt; ^ EnumerateDirectories(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateDirectories : string * System.IO.EnumerationOptions -&gt; seq&lt;System.IO.DirectoryInfo&gt;" Usage="directoryInfo.EnumerateDirectories (searchPattern, enumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -715,6 +726,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.DirectoryInfo&gt; EnumerateDirectories(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.SearchOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::DirectoryInfo ^&gt; ^ EnumerateDirectories(System::String ^ searchPattern, System::IO::SearchOption searchOption);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateDirectories : string * System.IO.SearchOption -&gt; seq&lt;System.IO.DirectoryInfo&gt;" Usage="directoryInfo.EnumerateDirectories (searchPattern, searchOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -816,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFiles" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumerateFiles () As IEnumerable(Of FileInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileInfo ^&gt; ^ EnumerateFiles();" />
+      <MemberSignature Language="F#" Value="member this.EnumerateFiles : unit -&gt; seq&lt;System.IO.FileInfo&gt;" Usage="directoryInfo.EnumerateFiles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -898,6 +911,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFiles(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumerateFiles (searchPattern As String) As IEnumerable(Of FileInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileInfo ^&gt; ^ EnumerateFiles(System::String ^ searchPattern);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateFiles : string -&gt; seq&lt;System.IO.FileInfo&gt;" Usage="directoryInfo.EnumerateFiles searchPattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -986,6 +1000,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.FileInfo&gt; EnumerateFiles(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileInfo ^&gt; ^ EnumerateFiles(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateFiles : string * System.IO.EnumerationOptions -&gt; seq&lt;System.IO.FileInfo&gt;" Usage="directoryInfo.EnumerateFiles (searchPattern, enumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1011,6 +1026,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.FileInfo&gt; EnumerateFiles(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.SearchOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileInfo ^&gt; ^ EnumerateFiles(System::String ^ searchPattern, System::IO::SearchOption searchOption);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateFiles : string * System.IO.SearchOption -&gt; seq&lt;System.IO.FileInfo&gt;" Usage="directoryInfo.EnumerateFiles (searchPattern, searchOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1114,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumerateFileSystemInfos () As IEnumerable(Of FileSystemInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileSystemInfo ^&gt; ^ EnumerateFileSystemInfos();" />
+      <MemberSignature Language="F#" Value="member this.EnumerateFileSystemInfos : unit -&gt; seq&lt;System.IO.FileSystemInfo&gt;" Usage="directoryInfo.EnumerateFileSystemInfos " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1180,6 +1197,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumerateFileSystemInfos (searchPattern As String) As IEnumerable(Of FileSystemInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileSystemInfo ^&gt; ^ EnumerateFileSystemInfos(System::String ^ searchPattern);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateFileSystemInfos : string -&gt; seq&lt;System.IO.FileSystemInfo&gt;" Usage="directoryInfo.EnumerateFileSystemInfos searchPattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1259,6 +1277,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.FileSystemInfo&gt; EnumerateFileSystemInfos(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileSystemInfo ^&gt; ^ EnumerateFileSystemInfos(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateFileSystemInfos : string * System.IO.EnumerationOptions -&gt; seq&lt;System.IO.FileSystemInfo&gt;" Usage="directoryInfo.EnumerateFileSystemInfos (searchPattern, enumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1284,6 +1303,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.FileSystemInfo&gt; EnumerateFileSystemInfos(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.SearchOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::FileSystemInfo ^&gt; ^ EnumerateFileSystemInfos(System::String ^ searchPattern, System::IO::SearchOption searchOption);" />
+      <MemberSignature Language="F#" Value="member this.EnumerateFileSystemInfos : string * System.IO.SearchOption -&gt; seq&lt;System.IO.FileSystemInfo&gt;" Usage="directoryInfo.EnumerateFileSystemInfos (searchPattern, searchOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1368,6 +1388,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DirectoryInfo.Exists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Exists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Exists { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exists : bool" Usage="System.IO.DirectoryInfo.Exists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1416,6 +1437,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DirectoryInfo.FullName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.IO.DirectoryInfo.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1461,6 +1483,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetAccessControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As DirectorySecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::DirectorySecurity ^ GetAccessControl();" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.Security.AccessControl.DirectorySecurity" Usage="directoryInfo.GetAccessControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1516,6 +1539,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetAccessControl(System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl (includeSections As AccessControlSections) As DirectorySecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::DirectorySecurity ^ GetAccessControl(System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.DirectorySecurity" Usage="directoryInfo.GetAccessControl includeSections" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1587,6 +1611,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetDirectories" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDirectories () As DirectoryInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::DirectoryInfo ^&gt; ^ GetDirectories();" />
+      <MemberSignature Language="F#" Value="member this.GetDirectories : unit -&gt; System.IO.DirectoryInfo[]" Usage="directoryInfo.GetDirectories " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1655,6 +1680,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetDirectories(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDirectories (searchPattern As String) As DirectoryInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::DirectoryInfo ^&gt; ^ GetDirectories(System::String ^ searchPattern);" />
+      <MemberSignature Language="F#" Value="member this.GetDirectories : string -&gt; System.IO.DirectoryInfo[]" Usage="directoryInfo.GetDirectories searchPattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1735,6 +1761,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.DirectoryInfo[] GetDirectories(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::DirectoryInfo ^&gt; ^ GetDirectories(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberSignature Language="F#" Value="member this.GetDirectories : string * System.IO.EnumerationOptions -&gt; System.IO.DirectoryInfo[]" Usage="directoryInfo.GetDirectories (searchPattern, enumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1760,6 +1787,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.DirectoryInfo[] GetDirectories(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.SearchOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::DirectoryInfo ^&gt; ^ GetDirectories(System::String ^ searchPattern, System::IO::SearchOption searchOption);" />
+      <MemberSignature Language="F#" Value="member this.GetDirectories : string * System.IO.SearchOption -&gt; System.IO.DirectoryInfo[]" Usage="directoryInfo.GetDirectories (searchPattern, searchOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1857,6 +1885,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFiles" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFiles () As FileInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileInfo ^&gt; ^ GetFiles();" />
+      <MemberSignature Language="F#" Value="member this.GetFiles : unit -&gt; System.IO.FileInfo[]" Usage="directoryInfo.GetFiles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1934,6 +1963,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFiles(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFiles (searchPattern As String) As FileInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileInfo ^&gt; ^ GetFiles(System::String ^ searchPattern);" />
+      <MemberSignature Language="F#" Value="member this.GetFiles : string -&gt; System.IO.FileInfo[]" Usage="directoryInfo.GetFiles searchPattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2042,6 +2072,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.FileInfo[] GetFiles(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFiles(System.String,System.IO.EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileInfo ^&gt; ^ GetFiles(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberSignature Language="F#" Value="member this.GetFiles : string * System.IO.EnumerationOptions -&gt; System.IO.FileInfo[]" Usage="directoryInfo.GetFiles (searchPattern, enumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2067,6 +2098,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.FileInfo[] GetFiles(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFiles(System.String,System.IO.SearchOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileInfo ^&gt; ^ GetFiles(System::String ^ searchPattern, System::IO::SearchOption searchOption);" />
+      <MemberSignature Language="F#" Value="member this.GetFiles : string * System.IO.SearchOption -&gt; System.IO.FileInfo[]" Usage="directoryInfo.GetFiles (searchPattern, searchOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2191,6 +2223,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFileSystemInfos" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFileSystemInfos () As FileSystemInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileSystemInfo ^&gt; ^ GetFileSystemInfos();" />
+      <MemberSignature Language="F#" Value="member this.GetFileSystemInfos : unit -&gt; System.IO.FileSystemInfo[]" Usage="directoryInfo.GetFileSystemInfos " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2259,6 +2292,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFileSystemInfos (searchPattern As String) As FileSystemInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileSystemInfo ^&gt; ^ GetFileSystemInfos(System::String ^ searchPattern);" />
+      <MemberSignature Language="F#" Value="member this.GetFileSystemInfos : string -&gt; System.IO.FileSystemInfo[]" Usage="directoryInfo.GetFileSystemInfos searchPattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2348,6 +2382,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.FileSystemInfo[] GetFileSystemInfos(string searchPattern, class System.IO.EnumerationOptions enumerationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String,System.IO.EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileSystemInfo ^&gt; ^ GetFileSystemInfos(System::String ^ searchPattern, System::IO::EnumerationOptions ^ enumerationOptions);" />
+      <MemberSignature Language="F#" Value="member this.GetFileSystemInfos : string * System.IO.EnumerationOptions -&gt; System.IO.FileSystemInfo[]" Usage="directoryInfo.GetFileSystemInfos (searchPattern, enumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2373,6 +2408,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.FileSystemInfo[] GetFileSystemInfos(string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String,System.IO.SearchOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::FileSystemInfo ^&gt; ^ GetFileSystemInfos(System::String ^ searchPattern, System::IO::SearchOption searchOption);" />
+      <MemberSignature Language="F#" Value="member this.GetFileSystemInfos : string * System.IO.SearchOption -&gt; System.IO.FileSystemInfo[]" Usage="directoryInfo.GetFileSystemInfos (searchPattern, searchOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2451,6 +2487,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.MoveTo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveTo (destDirName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveTo(System::String ^ destDirName);" />
+      <MemberSignature Language="F#" Value="member this.MoveTo : string -&gt; unit" Usage="directoryInfo.MoveTo destDirName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2525,6 +2562,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DirectoryInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.DirectoryInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2577,6 +2615,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DirectoryInfo.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As DirectoryInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::DirectoryInfo ^ Parent { System::IO::DirectoryInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.IO.DirectoryInfo" Usage="System.IO.DirectoryInfo.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2626,6 +2665,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DirectoryInfo.Root" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As DirectoryInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::DirectoryInfo ^ Root { System::IO::DirectoryInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Root : System.IO.DirectoryInfo" Usage="System.IO.DirectoryInfo.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2668,6 +2708,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.Security.AccessControl.DirectorySecurity directorySecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.SetAccessControl(System.Security.AccessControl.DirectorySecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::DirectorySecurity ^ directorySecurity);" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.Security.AccessControl.DirectorySecurity -&gt; unit" Usage="directoryInfo.SetAccessControl directorySecurity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2732,6 +2773,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="directoryInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

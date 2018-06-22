@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcPermissionAttribute&#xA;Inherits DBDataPermissionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcPermissionAttribute sealed : System::Data::Common::DBDataPermissionAttribute" />
+  <TypeSignature Language="F#" Value="type OdbcPermissionAttribute = class&#xA;    inherit DBDataPermissionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Data.Odbc.OdbcPermissionAttribute" Usage="new System.Data.Odbc.OdbcPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="odbcPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IDesignerVerbProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerVerbProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerVerbProvider" />
+  <TypeSignature Language="F#" Value="type IDesignerVerbProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection GetVerbs(class System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IDesignerVerbProvider.GetVerbs(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Design::ActivityDesignerVerbCollection ^ GetVerbs(System::Workflow::ComponentModel::Design::ActivityDesigner ^ activityDesigner);" />
+      <MemberSignature Language="F#" Value="abstract member GetVerbs : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" Usage="iDesignerVerbProvider.GetVerbs activityDesigner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

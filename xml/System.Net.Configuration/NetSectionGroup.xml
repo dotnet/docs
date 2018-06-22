@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.NetSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
+  <TypeSignature Language="F#" Value="type NetSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.NetSectionGroup.AuthenticationModules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationModules As AuthenticationModulesSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::AuthenticationModulesSection ^ AuthenticationModules { System::Net::Configuration::AuthenticationModulesSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationModules : System.Net.Configuration.AuthenticationModulesSection" Usage="System.Net.Configuration.NetSectionGroup.AuthenticationModules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.NetSectionGroup.ConnectionManagement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionManagement As ConnectionManagementSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ConnectionManagementSection ^ ConnectionManagement { System::Net::Configuration::ConnectionManagementSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionManagement : System.Net.Configuration.ConnectionManagementSection" Usage="System.Net.Configuration.NetSectionGroup.ConnectionManagement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.NetSectionGroup.DefaultProxy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultProxy As DefaultProxySection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::DefaultProxySection ^ DefaultProxy { System::Net::Configuration::DefaultProxySection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProxy : System.Net.Configuration.DefaultProxySection" Usage="System.Net.Configuration.NetSectionGroup.DefaultProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.NetSectionGroup.GetSectionGroup(System.Configuration.Configuration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSectionGroup (config As Configuration) As NetSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Configuration::NetSectionGroup ^ GetSectionGroup(System::Configuration::Configuration ^ config);" />
+      <MemberSignature Language="F#" Value="static member GetSectionGroup : System.Configuration.Configuration -&gt; System.Net.Configuration.NetSectionGroup" Usage="System.Net.Configuration.NetSectionGroup.GetSectionGroup config" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.NetSectionGroup.MailSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MailSettings As MailSettingsSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::MailSettingsSectionGroup ^ MailSettings { System::Net::Configuration::MailSettingsSectionGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MailSettings : System.Net.Configuration.MailSettingsSectionGroup" Usage="System.Net.Configuration.NetSectionGroup.MailSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.NetSectionGroup.RequestCaching" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestCaching As RequestCachingSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::RequestCachingSection ^ RequestCaching { System::Net::Configuration::RequestCachingSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestCaching : System.Net.Configuration.RequestCachingSection" Usage="System.Net.Configuration.NetSectionGroup.RequestCaching" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.NetSectionGroup.Settings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As SettingsSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::SettingsSection ^ Settings { System::Net::Configuration::SettingsSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Settings : System.Net.Configuration.SettingsSection" Usage="System.Net.Configuration.NetSectionGroup.Settings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.NetSectionGroup.WebRequestModules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebRequestModules As WebRequestModulesSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::WebRequestModulesSection ^ WebRequestModules { System::Net::Configuration::WebRequestModulesSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebRequestModules : System.Net.Configuration.WebRequestModulesSection" Usage="System.Net.Configuration.NetSectionGroup.WebRequestModules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

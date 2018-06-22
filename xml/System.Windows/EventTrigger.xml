@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.EventTrigger" />
   <TypeSignature Language="VB.NET" Value="Public Class EventTrigger&#xA;Inherits TriggerBase&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventTrigger : System::Windows::TriggerBase, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type EventTrigger = class&#xA;    inherit TriggerBase&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.RoutedEvent routedEvent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.#ctor(System.Windows.RoutedEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventTrigger(System::Windows::RoutedEvent ^ routedEvent);" />
+      <MemberSignature Language="F#" Value="new System.Windows.EventTrigger : System.Windows.RoutedEvent -&gt; System.Windows.EventTrigger" Usage="new System.Windows.EventTrigger routedEvent" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.EventTrigger.Actions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Actions As TriggerActionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TriggerActionCollection ^ Actions { System::Windows::TriggerActionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Actions : System.Windows.TriggerActionCollection" Usage="System.Windows.EventTrigger.Actions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddChild (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddChild(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit&#xA;override this.AddChild : obj -&gt; unit" Usage="eventTrigger.AddChild value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit&#xA;override this.AddText : string -&gt; unit" Usage="eventTrigger.AddText text" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.EventTrigger.RoutedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Property RoutedEvent As RoutedEvent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::RoutedEvent ^ RoutedEvent { System::Windows::RoutedEvent ^ get(); void set(System::Windows::RoutedEvent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RoutedEvent : System.Windows.RoutedEvent with get, set" Usage="System.Windows.EventTrigger.RoutedEvent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.ShouldSerializeActions" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeActions () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeActions();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeActions : unit -&gt; bool" Usage="eventTrigger.ShouldSerializeActions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.EventTrigger.SourceName" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceName : string with get, set" Usage="System.Windows.EventTrigger.SourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

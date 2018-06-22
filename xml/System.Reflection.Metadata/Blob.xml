@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Blob" />
   <TypeSignature Language="VB.NET" Value="Public Structure Blob" />
   <TypeSignature Language="C++ CLI" Value="public value class Blob" />
+  <TypeSignature Language="F#" Value="type Blob = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Blob.GetBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBytes () As ArraySegment(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;System::Byte&gt; GetBytes();" />
+      <MemberSignature Language="F#" Value="member this.GetBytes : unit -&gt; ArraySegment&lt;byte&gt;" Usage="blob.GetBytes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Blob.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.Reflection.Metadata.Blob.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Blob.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Reflection.Metadata.Blob.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

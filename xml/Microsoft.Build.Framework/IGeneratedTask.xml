@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IGeneratedTask" />
   <TypeSignature Language="VB.NET" Value="Public Interface IGeneratedTask&#xA;Implements ITask" />
   <TypeSignature Language="C++ CLI" Value="public interface class IGeneratedTask : Microsoft::Build::Framework::ITask" />
+  <TypeSignature Language="F#" Value="type IGeneratedTask = interface&#xA;    interface ITask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IGeneratedTask.GetPropertyValue(Microsoft.Build.Framework.TaskPropertyInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValue (property As TaskPropertyInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyValue(Microsoft::Build::Framework::TaskPropertyInfo ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertyValue : Microsoft.Build.Framework.TaskPropertyInfo -&gt; obj" Usage="iGeneratedTask.GetPropertyValue property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IGeneratedTask.SetPropertyValue(Microsoft.Build.Framework.TaskPropertyInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPropertyValue (property As TaskPropertyInfo, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPropertyValue(Microsoft::Build::Framework::TaskPropertyInfo ^ property, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetPropertyValue : Microsoft.Build.Framework.TaskPropertyInfo * obj -&gt; unit" Usage="iGeneratedTask.SetPropertyValue (property, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

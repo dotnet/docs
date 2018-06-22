@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.AsyncPostBackErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AsyncPostBackErrorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncPostBackErrorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AsyncPostBackErrorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.AsyncPostBackErrorEventArgs.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncPostBackErrorEventArgs(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.AsyncPostBackErrorEventArgs : Exception -&gt; System.Web.UI.AsyncPostBackErrorEventArgs" Usage="new System.Web.UI.AsyncPostBackErrorEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.AsyncPostBackErrorEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.AsyncPostBackErrorEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

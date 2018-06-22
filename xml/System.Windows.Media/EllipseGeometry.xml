@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.EllipseGeometry" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EllipseGeometry&#xA;Inherits Geometry" />
   <TypeSignature Language="C++ CLI" Value="public ref class EllipseGeometry sealed : System::Windows::Media::Geometry" />
+  <TypeSignature Language="F#" Value="type EllipseGeometry = class&#xA;    inherit Geometry" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.#ctor(System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EllipseGeometry(System::Windows::Rect rect);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.EllipseGeometry : System.Windows.Rect -&gt; System.Windows.Media.EllipseGeometry" Usage="new System.Windows.Media.EllipseGeometry rect" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +99,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.#ctor(System.Windows.Point,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (center As Point, radiusX As Double, radiusY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EllipseGeometry(System::Windows::Point center, double radiusX, double radiusY);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.EllipseGeometry : System.Windows.Point * double * double -&gt; System.Windows.Media.EllipseGeometry" Usage="new System.Windows.Media.EllipseGeometry (center, radiusX, radiusY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +123,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point center, float64 radiusX, float64 radiusY, class System.Windows.Media.Transform transform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.#ctor(System.Windows.Point,System.Double,System.Double,System.Windows.Media.Transform)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EllipseGeometry(System::Windows::Point center, double radiusX, double radiusY, System::Windows::Media::Transform ^ transform);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.EllipseGeometry : System.Windows.Point * double * double * System.Windows.Media.Transform -&gt; System.Windows.Media.EllipseGeometry" Usage="new System.Windows.Media.EllipseGeometry (center, radiusX, radiusY, transform)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +150,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.EllipseGeometry.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Rect Bounds { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Windows.Rect" Usage="System.Windows.Media.EllipseGeometry.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +171,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.EllipseGeometry.Center" />
       <MemberSignature Language="VB.NET" Value="Public Property Center As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Center { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Center : System.Windows.Point with get, set" Usage="System.Windows.Media.EllipseGeometry.Center" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -200,6 +206,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.EllipseGeometry.CenterProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CenterProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.EllipseGeometry.CenterProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -219,6 +226,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As EllipseGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::EllipseGeometry ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.EllipseGeometry" Usage="ellipseGeometry.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +257,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As EllipseGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::EllipseGeometry ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.EllipseGeometry" Usage="ellipseGeometry.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -279,6 +288,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="ellipseGeometry.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +310,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.GetArea(System.Double,System.Windows.Media.ToleranceType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetArea (tolerance As Double, type As ToleranceType) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetArea(double tolerance, System::Windows::Media::ToleranceType type);" />
+      <MemberSignature Language="F#" Value="override this.GetArea : double * System.Windows.Media.ToleranceType -&gt; double" Usage="ellipseGeometry.GetArea (tolerance, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +344,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEmpty () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEmpty();" />
+      <MemberSignature Language="F#" Value="override this.IsEmpty : unit -&gt; bool" Usage="ellipseGeometry.IsEmpty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -355,6 +367,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.EllipseGeometry.MayHaveCurves" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MayHaveCurves () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MayHaveCurves();" />
+      <MemberSignature Language="F#" Value="override this.MayHaveCurves : unit -&gt; bool" Usage="ellipseGeometry.MayHaveCurves " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -377,6 +390,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.EllipseGeometry.RadiusX" />
       <MemberSignature Language="VB.NET" Value="Public Property RadiusX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RadiusX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.RadiusX : double with get, set" Usage="System.Windows.Media.EllipseGeometry.RadiusX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +425,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.EllipseGeometry.RadiusXProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusXProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RadiusXProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RadiusXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.EllipseGeometry.RadiusXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -430,6 +445,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.EllipseGeometry.RadiusY" />
       <MemberSignature Language="VB.NET" Value="Public Property RadiusY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RadiusY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.RadiusY : double with get, set" Usage="System.Windows.Media.EllipseGeometry.RadiusY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -464,6 +480,7 @@ Two EllipseGeometry objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.EllipseGeometry.RadiusYProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusYProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RadiusYProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RadiusYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.EllipseGeometry.RadiusYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

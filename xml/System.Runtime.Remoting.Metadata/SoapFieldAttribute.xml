@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.SoapFieldAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapFieldAttribute&#xA;Inherits SoapAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapFieldAttribute sealed : System::Runtime::Remoting::Metadata::SoapAttribute" />
+  <TypeSignature Language="F#" Value="type SoapFieldAttribute = class&#xA;    inherit SoapAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.SoapFieldAttribute.IsInteropXmlElement" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInteropXmlElement () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInteropXmlElement();" />
+      <MemberSignature Language="F#" Value="member this.IsInteropXmlElement : unit -&gt; bool" Usage="soapFieldAttribute.IsInteropXmlElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapFieldAttribute.Order" />
       <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="System.Runtime.Remoting.Metadata.SoapFieldAttribute.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapFieldAttribute.XmlElementName" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlElementName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlElementName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlElementName : string with get, set" Usage="System.Runtime.Remoting.Metadata.SoapFieldAttribute.XmlElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

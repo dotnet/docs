@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentDocumentDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentDocumentDesigner&#xA;Inherits ComponentDesigner&#xA;Implements IDisposable, IRootDesigner, IToolboxUser, ITypeDescriptorFilterService" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentDocumentDesigner : System::ComponentModel::Design::ComponentDesigner, IDisposable, System::ComponentModel::Design::IRootDesigner, System::ComponentModel::Design::ITypeDescriptorFilterService, System::Drawing::Design::IToolboxUser" />
+  <TypeSignature Language="F#" Value="type ComponentDocumentDesigner = class&#xA;    inherit ComponentDesigner&#xA;    interface IRootDesigner&#xA;    interface IDesigner&#xA;    interface IDisposable&#xA;    interface IToolboxUser&#xA;    interface ITypeDescriptorFilterService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentDocumentDesigner.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ Control { System::Windows::Forms::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Windows.Forms.Control" Usage="System.Windows.Forms.Design.ComponentDocumentDesigner.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentDocumentDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="componentDocumentDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentDocumentDesigner.GetToolSupported(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetToolSupported (tool As ToolboxItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool GetToolSupported(System::Drawing::Design::ToolboxItem ^ tool);" />
+      <MemberSignature Language="F#" Value="abstract member GetToolSupported : System.Drawing.Design.ToolboxItem -&gt; bool&#xA;override this.GetToolSupported : System.Drawing.Design.ToolboxItem -&gt; bool" Usage="componentDocumentDesigner.GetToolSupported tool" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentDocumentDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="componentDocumentDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentDocumentDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="componentDocumentDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentDocumentDesigner.System#ComponentModel#Design#IRootDesigner#SupportedTechnologies" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportedTechnologies As ViewTechnology() Implements IRootDesigner.SupportedTechnologies" />
       <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ System.ComponentModel.Design.IRootDesigner.SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.Design.ComponentDocumentDesigner.System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -441,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentDocumentDesigner.TrayAutoArrange" />
       <MemberSignature Language="VB.NET" Value="Public Property TrayAutoArrange As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrayAutoArrange { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TrayAutoArrange : bool with get, set" Usage="System.Windows.Forms.Design.ComponentDocumentDesigner.TrayAutoArrange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -462,6 +470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentDocumentDesigner.TrayLargeIcon" />
       <MemberSignature Language="VB.NET" Value="Public Property TrayLargeIcon As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrayLargeIcon { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TrayLargeIcon : bool with get, set" Usage="System.Windows.Forms.Design.ComponentDocumentDesigner.TrayLargeIcon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

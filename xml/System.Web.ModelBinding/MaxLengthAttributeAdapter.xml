@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.MaxLengthAttributeAdapter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MaxLengthAttributeAdapter&#xA;Inherits DataAnnotationsModelValidator(Of MaxLengthAttribute)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MaxLengthAttributeAdapter sealed : System::Web::ModelBinding::DataAnnotationsModelValidator&lt;System::ComponentModel::DataAnnotations::MaxLengthAttribute ^&gt;" />
+  <TypeSignature Language="F#" Value="type MaxLengthAttributeAdapter = class&#xA;    inherit DataAnnotationsModelValidator&lt;MaxLengthAttribute&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MaxLengthAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.MaxLengthAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As MaxLengthAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MaxLengthAttributeAdapter(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, System::ComponentModel::DataAnnotations::MaxLengthAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.MaxLengthAttributeAdapter : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext * System.ComponentModel.DataAnnotations.MaxLengthAttribute -&gt; System.Web.ModelBinding.MaxLengthAttributeAdapter" Usage="new System.Web.ModelBinding.MaxLengthAttributeAdapter (metadata, context, attribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MaxLengthAttributeAdapter.GetLocalizedErrorMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLocalizedErrorMessage (errorMessage As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetLocalizedErrorMessage(System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="override this.GetLocalizedErrorMessage : string -&gt; string" Usage="maxLengthAttributeAdapter.GetLocalizedErrorMessage errorMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

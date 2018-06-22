@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.PropertyDataChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyDataChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyDataChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type PropertyDataChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.PropertyDataChangedEventArgs.#ctor(System.Guid,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyGuid As Guid, newValue As Object, previousValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyDataChangedEventArgs(Guid propertyGuid, System::Object ^ newValue, System::Object ^ previousValue);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Ink.PropertyDataChangedEventArgs : Guid * obj * obj -&gt; System.Windows.Ink.PropertyDataChangedEventArgs" Usage="new System.Windows.Ink.PropertyDataChangedEventArgs (propertyGuid, newValue, previousValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.PropertyDataChangedEventArgs.NewValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewValue : obj" Usage="System.Windows.Ink.PropertyDataChangedEventArgs.NewValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.PropertyDataChangedEventArgs.PreviousValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PreviousValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousValue : obj" Usage="System.Windows.Ink.PropertyDataChangedEventArgs.PreviousValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.PropertyDataChangedEventArgs.PropertyGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid PropertyGuid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyGuid : Guid" Usage="System.Windows.Ink.PropertyDataChangedEventArgs.PropertyGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

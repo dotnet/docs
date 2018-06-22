@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRangeValueProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRangeValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRangeValueProvider" />
+  <TypeSignature Language="F#" Value="type IRangeValueProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LargeChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LargeChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.LargeChange : double" Usage="System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRangeValueProvider.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Maximum { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : double" Usage="System.Windows.Automation.Provider.IRangeValueProvider.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRangeValueProvider.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minimum As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Minimum { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Minimum : double" Usage="System.Windows.Automation.Provider.IRangeValueProvider.Minimum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRangeValueProvider.SetValue(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(double value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : double -&gt; unit" Usage="iRangeValueProvider.SetValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmallChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SmallChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallChange : double" Usage="System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRangeValueProvider.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : double" Usage="System.Windows.Automation.Provider.IRangeValueProvider.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

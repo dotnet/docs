@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Atom10FeedFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class Atom10FeedFormatter&#xA;Inherits SyndicationFeedFormatter&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Atom10FeedFormatter : System::ServiceModel::Syndication::SyndicationFeedFormatter, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type Atom10FeedFormatter = class&#xA;    inherit SyndicationFeedFormatter&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.#ctor(System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (feedToWrite As SyndicationFeed)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10FeedFormatter(System::ServiceModel::Syndication::SyndicationFeed ^ feedToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Atom10FeedFormatter : System.ServiceModel.Syndication.SyndicationFeed -&gt; System.ServiceModel.Syndication.Atom10FeedFormatter" Usage="new System.ServiceModel.Syndication.Atom10FeedFormatter feedToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (feedTypeToCreate As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10FeedFormatter(Type ^ feedTypeToCreate);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Atom10FeedFormatter : Type -&gt; System.ServiceModel.Syndication.Atom10FeedFormatter" Usage="new System.ServiceModel.Syndication.Atom10FeedFormatter feedTypeToCreate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRead (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRead(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanRead : System.Xml.XmlReader -&gt; bool" Usage="atom10FeedFormatter.CanRead reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -210,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.CreateFeedInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateFeedInstance () As SyndicationFeed" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationFeed ^ CreateFeedInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateFeedInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationFeed" Usage="atom10FeedFormatter.CreateFeedInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10FeedFormatter.FeedType" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property FeedType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ FeedType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FeedType : Type" Usage="System.ServiceModel.Syndication.Atom10FeedFormatter.FeedType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -266,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10FeedFormatter.PreserveAttributeExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveAttributeExtensions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveAttributeExtensions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreserveAttributeExtensions : bool with get, set" Usage="System.ServiceModel.Syndication.Atom10FeedFormatter.PreserveAttributeExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -297,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10FeedFormatter.PreserveElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveElementExtensions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveElementExtensions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreserveElementExtensions : bool with get, set" Usage="System.ServiceModel.Syndication.Atom10FeedFormatter.PreserveElementExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -328,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReadFrom (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadFrom(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.ReadFrom : System.Xml.XmlReader -&gt; unit" Usage="atom10FeedFormatter.ReadFrom reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -365,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.ReadItem(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadItem (reader As XmlReader, feed As SyndicationFeed) As SyndicationItem" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Syndication::SyndicationItem ^ ReadItem(System::Xml::XmlReader ^ reader, System::ServiceModel::Syndication::SyndicationFeed ^ feed);" />
+      <MemberSignature Language="F#" Value="abstract member ReadItem : System.Xml.XmlReader * System.ServiceModel.Syndication.SyndicationFeed -&gt; System.ServiceModel.Syndication.SyndicationItem&#xA;override this.ReadItem : System.Xml.XmlReader * System.ServiceModel.Syndication.SyndicationFeed -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="atom10FeedFormatter.ReadItem (reader, feed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -402,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.ReadItems(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationFeed,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadItems (reader As XmlReader, feed As SyndicationFeed, ByRef areAllItemsRead As Boolean) As IEnumerable(Of SyndicationItem)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Syndication::SyndicationItem ^&gt; ^ ReadItems(System::Xml::XmlReader ^ reader, System::ServiceModel::Syndication::SyndicationFeed ^ feed, [Runtime::InteropServices::Out] bool % areAllItemsRead);" />
+      <MemberSignature Language="F#" Value="abstract member ReadItems : System.Xml.XmlReader * System.ServiceModel.Syndication.SyndicationFeed *  -&gt; seq&lt;System.ServiceModel.Syndication.SyndicationItem&gt;&#xA;override this.ReadItems : System.Xml.XmlReader * System.ServiceModel.Syndication.SyndicationFeed *  -&gt; seq&lt;System.ServiceModel.Syndication.SyndicationItem&gt;" Usage="atom10FeedFormatter.ReadItems (reader, feed, areAllItemsRead)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -537,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10FeedFormatter.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.ServiceModel.Syndication.Atom10FeedFormatter.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -568,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.WriteItem(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationItem,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteItem (writer As XmlWriter, item As SyndicationItem, feedBaseUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteItem(System::Xml::XmlWriter ^ writer, System::ServiceModel::Syndication::SyndicationItem ^ item, Uri ^ feedBaseUri);" />
+      <MemberSignature Language="F#" Value="abstract member WriteItem : System.Xml.XmlWriter * System.ServiceModel.Syndication.SyndicationItem * Uri -&gt; unit&#xA;override this.WriteItem : System.Xml.XmlWriter * System.ServiceModel.Syndication.SyndicationItem * Uri -&gt; unit" Usage="atom10FeedFormatter.WriteItem (writer, item, feedBaseUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -606,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.WriteItems(System.Xml.XmlWriter,System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.SyndicationItem},System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteItems (writer As XmlWriter, items As IEnumerable(Of SyndicationItem), feedBaseUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteItems(System::Xml::XmlWriter ^ writer, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Syndication::SyndicationItem ^&gt; ^ items, Uri ^ feedBaseUri);" />
+      <MemberSignature Language="F#" Value="abstract member WriteItems : System.Xml.XmlWriter * seq&lt;System.ServiceModel.Syndication.SyndicationItem&gt; * Uri -&gt; unit&#xA;override this.WriteItems : System.Xml.XmlWriter * seq&lt;System.ServiceModel.Syndication.SyndicationItem&gt; * Uri -&gt; unit" Usage="atom10FeedFormatter.WriteItems (writer, items, feedBaseUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -644,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="atom10FeedFormatter.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

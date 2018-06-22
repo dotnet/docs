@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.CodeBlockType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CodeBlockType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CodeBlockType" />
+  <TypeSignature Language="F#" Value="type CodeBlockType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeBlockType.Code" />
       <MemberSignature Language="VB.NET" Value="Code" />
       <MemberSignature Language="C++ CLI" Value="Code" />
+      <MemberSignature Language="F#" Value="Code = 0" Usage="System.Web.UI.CodeBlockType.Code" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeBlockType.DataBinding" />
       <MemberSignature Language="VB.NET" Value="DataBinding" />
       <MemberSignature Language="C++ CLI" Value="DataBinding" />
+      <MemberSignature Language="F#" Value="DataBinding = 2" Usage="System.Web.UI.CodeBlockType.DataBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeBlockType.EncodedExpression" />
       <MemberSignature Language="VB.NET" Value="EncodedExpression" />
       <MemberSignature Language="C++ CLI" Value="EncodedExpression" />
+      <MemberSignature Language="F#" Value="EncodedExpression = 3" Usage="System.Web.UI.CodeBlockType.EncodedExpression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeBlockType.Expression" />
       <MemberSignature Language="VB.NET" Value="Expression" />
       <MemberSignature Language="C++ CLI" Value="Expression" />
+      <MemberSignature Language="F#" Value="Expression = 1" Usage="System.Web.UI.CodeBlockType.Expression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ExitEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ExitEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExitEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ExitEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ExitEventArgs.ApplicationExitCode" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationExitCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ApplicationExitCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationExitCode : int with get, set" Usage="System.Windows.ExitEventArgs.ApplicationExitCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

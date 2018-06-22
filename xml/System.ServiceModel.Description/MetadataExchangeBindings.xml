@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataExchangeBindings" />
   <TypeSignature Language="VB.NET" Value="Public Class MetadataExchangeBindings" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataExchangeBindings abstract sealed" />
+  <TypeSignature Language="F#" Value="type MetadataExchangeBindings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpBinding" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMexHttpBinding () As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Binding ^ CreateMexHttpBinding();" />
+      <MemberSignature Language="F#" Value="static member CreateMexHttpBinding : unit -&gt; System.ServiceModel.Channels.Binding" Usage="System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMexHttpsBinding () As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Binding ^ CreateMexHttpsBinding();" />
+      <MemberSignature Language="F#" Value="static member CreateMexHttpsBinding : unit -&gt; System.ServiceModel.Channels.Binding" Usage="System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexNamedPipeBinding" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMexNamedPipeBinding () As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Binding ^ CreateMexNamedPipeBinding();" />
+      <MemberSignature Language="F#" Value="static member CreateMexNamedPipeBinding : unit -&gt; System.ServiceModel.Channels.Binding" Usage="System.ServiceModel.Description.MetadataExchangeBindings.CreateMexNamedPipeBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexTcpBinding" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMexTcpBinding () As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Binding ^ CreateMexTcpBinding();" />
+      <MemberSignature Language="F#" Value="static member CreateMexTcpBinding : unit -&gt; System.ServiceModel.Channels.Binding" Usage="System.ServiceModel.Description.MetadataExchangeBindings.CreateMexTcpBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

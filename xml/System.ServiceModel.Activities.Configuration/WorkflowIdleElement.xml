@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.WorkflowIdleElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowIdleElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowIdleElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type WorkflowIdleElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.WorkflowIdleElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Activities.Configuration.WorkflowIdleElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.WorkflowIdleElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="workflowIdleElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.WorkflowIdleElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Configuration.WorkflowIdleElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.WorkflowIdleElement.TimeToPersist" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeToPersist As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeToPersist { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.TimeToPersist : TimeSpan with get, set" Usage="System.ServiceModel.Activities.Configuration.WorkflowIdleElement.TimeToPersist" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.WorkflowIdleElement.TimeToUnload" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeToUnload As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeToUnload { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.TimeToUnload : TimeSpan with get, set" Usage="System.ServiceModel.Activities.Configuration.WorkflowIdleElement.TimeToUnload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

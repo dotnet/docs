@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeTypeDelegate&#xA;Inherits CodeTypeDeclaration" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeDelegate : System::CodeDom::CodeTypeDeclaration" />
+  <TypeSignature Language="F#" Value="type CodeTypeDelegate = class&#xA;    inherit CodeTypeDeclaration" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDelegate.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeDelegate(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeDelegate : string -&gt; System.CodeDom.CodeTypeDelegate" Usage="new System.CodeDom.CodeTypeDelegate name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeDelegate.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeParameterDeclarationExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeParameterDeclarationExpressionCollection ^ Parameters { System::CodeDom::CodeParameterDeclarationExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.CodeDom.CodeParameterDeclarationExpressionCollection" Usage="System.CodeDom.CodeTypeDelegate.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeDelegate.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ ReturnType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeTypeDelegate.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

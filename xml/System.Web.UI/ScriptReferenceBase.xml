@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReferenceBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScriptReferenceBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptReferenceBase abstract" />
+  <TypeSignature Language="F#" Value="type ScriptReferenceBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetUrl(class System.Web.UI.ScriptManager scriptManager, bool zip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.GetUrl(System.Web.UI.ScriptManager,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::String ^ GetUrl(System::Web::UI::ScriptManager ^ scriptManager, bool zip);" />
+      <MemberSignature Language="F#" Value="abstract member GetUrl : System.Web.UI.ScriptManager * bool -&gt; string" Usage="scriptReferenceBase.GetUrl (scriptManager, zip)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsAjaxFrameworkScript(class System.Web.UI.ScriptManager scriptManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.IsAjaxFrameworkScript(System.Web.UI.ScriptManager)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool IsAjaxFrameworkScript(System::Web::UI::ScriptManager ^ scriptManager);" />
+      <MemberSignature Language="F#" Value="abstract member IsAjaxFrameworkScript : System.Web.UI.ScriptManager -&gt; bool&#xA;override this.IsAjaxFrameworkScript : System.Web.UI.ScriptManager -&gt; bool" Usage="scriptReferenceBase.IsAjaxFrameworkScript scriptManager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.IsFromSystemWebExtensions" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function IsFromSystemWebExtensions () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool IsFromSystemWebExtensions();" />
+      <MemberSignature Language="F#" Value="abstract member IsFromSystemWebExtensions : unit -&gt; bool" Usage="scriptReferenceBase.IsFromSystemWebExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyScriptLoaded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyScriptLoaded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyScriptLoaded : bool with get, set" Usage="System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -170,6 +175,7 @@ if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.UI.ScriptReferenceBase.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -204,6 +210,7 @@ if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.ReplaceExtension(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function ReplaceExtension (pathOrName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ ReplaceExtension(System::String ^ pathOrName);" />
+      <MemberSignature Language="F#" Value="static member ReplaceExtension : string -&gt; string" Usage="System.Web.UI.ScriptReferenceBase.ReplaceExtension pathOrName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -235,6 +242,7 @@ if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.ResourceUICultures" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceUICultures As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ResourceUICultures { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceUICultures : string[] with get, set" Usage="System.Web.UI.ScriptReferenceBase.ResourceUICultures" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -272,6 +280,7 @@ if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.ScriptMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ScriptMode As ScriptMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ScriptMode ScriptMode { System::Web::UI::ScriptMode get(); void set(System::Web::UI::ScriptMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptMode : System.Web.UI.ScriptMode with get, set" Usage="System.Web.UI.ScriptReferenceBase.ScriptMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

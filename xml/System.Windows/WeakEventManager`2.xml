@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.WeakEventManager`2" />
   <TypeSignature Language="VB.NET" Value="Public Class WeakEventManager(Of TEventSource, TEventArgs)&#xA;Inherits WeakEventManager" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEventSource, typename TEventArgs&gt;&#xA; where TEventArgs : EventArgspublic ref class WeakEventManager : System::Windows::WeakEventManager" />
+  <TypeSignature Language="F#" Value="type WeakEventManager&lt;'EventSource, 'EventArgs (requires 'EventArgs :&gt; EventArgs)&gt; = class&#xA;    inherit WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.AddHandler(`0,System.String,System.EventHandler{`1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As TEventSource, eventName As String, handler As EventHandler(Of TEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(TEventSource source, System::String ^ eventName, EventHandler&lt;TEventArgs&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddHandler : 'EventSource * string * EventHandler&lt;'EventArgs (requires 'EventArgs :&gt; EventArgs)&gt; -&gt; unit" Usage="System.Windows.WeakEventManager&lt;'EventSource, 'EventArgs (requires 'EventArgs :&gt; System.EventArgs)&gt;.AddHandler (source, eventName, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.NewListenerList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
+      <MemberSignature Language="F#" Value="override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="weakEventManager.NewListenerList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.RemoveHandler(`0,System.String,System.EventHandler{`1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As TEventSource, eventName As String, handler As EventHandler(Of TEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(TEventSource source, System::String ^ eventName, EventHandler&lt;TEventArgs&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveHandler : 'EventSource * string * EventHandler&lt;'EventArgs (requires 'EventArgs :&gt; EventArgs)&gt; -&gt; unit" Usage="System.Windows.WeakEventManager&lt;'EventSource, 'EventArgs (requires 'EventArgs :&gt; System.EventArgs)&gt;.RemoveHandler (source, eventName, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="override this.StartListening : obj -&gt; unit" Usage="weakEventManager.StartListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="override this.StopListening : obj -&gt; unit" Usage="weakEventManager.StopListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

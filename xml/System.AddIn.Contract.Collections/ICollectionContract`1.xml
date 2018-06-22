@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.ICollectionContract`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICollectionContract(Of C)&#xA;Implements IEnumerableContract(Of C)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename C&gt;&#xA; where C : IContractpublic interface class ICollectionContract : System::AddIn::Contract::Collections::IEnumerableContract&lt;C&gt;" />
+  <TypeSignature Language="F#" Value="type ICollectionContract&lt;'C (requires 'C :&gt; IContract)&gt; = interface&#xA;    interface IEnumerableContract&lt;'C (requires 'C :&gt; IContract)&gt;&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.ICollectionContract`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As C)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(C item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'C -&gt; unit" Usage="iCollectionContract.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.ICollectionContract`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="iCollectionContract.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.ICollectionContract`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As C) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(C item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'C -&gt; bool" Usage="iCollectionContract.Contains item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.ICollectionContract`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As C(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;C&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'C[] * int -&gt; unit" Usage="iCollectionContract.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.ICollectionContract`1.GetCount" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCount();" />
+      <MemberSignature Language="F#" Value="abstract member GetCount : unit -&gt; int" Usage="iCollectionContract.GetCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.ICollectionContract`1.GetIsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIsReadOnly () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetIsReadOnly();" />
+      <MemberSignature Language="F#" Value="abstract member GetIsReadOnly : unit -&gt; bool" Usage="iCollectionContract.GetIsReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.ICollectionContract`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As C) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(C item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'C -&gt; bool" Usage="iCollectionContract.Remove item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

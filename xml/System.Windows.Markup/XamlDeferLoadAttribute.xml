@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlDeferLoadAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XamlDeferLoadAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlDeferLoadAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XamlDeferLoadAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlDeferLoadAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (loaderType As String, contentType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDeferLoadAttribute(System::String ^ loaderType, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XamlDeferLoadAttribute : string * string -&gt; System.Windows.Markup.XamlDeferLoadAttribute" Usage="new System.Windows.Markup.XamlDeferLoadAttribute (loaderType, contentType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlDeferLoadAttribute.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (loaderType As Type, contentType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDeferLoadAttribute(Type ^ loaderType, Type ^ contentType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XamlDeferLoadAttribute : Type * Type -&gt; System.Windows.Markup.XamlDeferLoadAttribute" Usage="new System.Windows.Markup.XamlDeferLoadAttribute (loaderType, contentType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDeferLoadAttribute.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContentType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : Type" Usage="System.Windows.Markup.XamlDeferLoadAttribute.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDeferLoadAttribute.ContentTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentTypeName : string" Usage="System.Windows.Markup.XamlDeferLoadAttribute.ContentTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDeferLoadAttribute.LoaderType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoaderType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ LoaderType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoaderType : Type" Usage="System.Windows.Markup.XamlDeferLoadAttribute.LoaderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDeferLoadAttribute.LoaderTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoaderTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoaderTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoaderTypeName : string" Usage="System.Windows.Markup.XamlDeferLoadAttribute.LoaderTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

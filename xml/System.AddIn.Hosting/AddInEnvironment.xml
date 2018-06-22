@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInEnvironment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddInEnvironment" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddInEnvironment sealed" />
+  <TypeSignature Language="F#" Value="type AddInEnvironment = class" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.AppDomain appDomain) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInEnvironment.#ctor(System.AppDomain)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AddInEnvironment(AppDomain ^ appDomain);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Hosting.AddInEnvironment : AppDomain -&gt; System.AddIn.Hosting.AddInEnvironment" Usage="new System.AddIn.Hosting.AddInEnvironment appDomain" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInEnvironment.Process" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Process As AddInProcess" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::AddIn::Hosting::AddInProcess ^ Process { System::AddIn::Hosting::AddInProcess ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Process : System.AddIn.Hosting.AddInProcess" Usage="System.AddIn.Hosting.AddInEnvironment.Process" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

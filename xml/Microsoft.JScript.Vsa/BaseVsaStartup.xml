@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.BaseVsaStartup" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseVsaStartup" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseVsaStartup abstract" />
+  <TypeSignature Language="F#" Value="type BaseVsaStartup = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaStartup.SetSite(Microsoft.JScript.Vsa.IJSVsaSite)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSite (site As IJSVsaSite)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSite(Microsoft::JScript::Vsa::IJSVsaSite ^ site);" />
+      <MemberSignature Language="F#" Value="member this.SetSite : Microsoft.JScript.Vsa.IJSVsaSite -&gt; unit" Usage="baseVsaStartup.SetSite site" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaStartup.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit" Usage="baseVsaStartup.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaStartup.site" />
       <MemberSignature Language="VB.NET" Value="Protected site As IJSVsaSite " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::Vsa::IJSVsaSite ^ site;" />
+      <MemberSignature Language="F#" Value="val mutable site : Microsoft.JScript.Vsa.IJSVsaSite" Usage="Microsoft.JScript.Vsa.BaseVsaStartup.site" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaStartup.Startup" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Startup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Startup();" />
+      <MemberSignature Language="F#" Value="abstract member Startup : unit -&gt; unit" Usage="baseVsaStartup.Startup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

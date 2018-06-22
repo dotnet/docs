@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SpeechSynthesizer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SpeechSynthesizer&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpeechSynthesizer sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type SpeechSynthesizer = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +117,7 @@ namespace SampleSynthesis
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLexicon(class System.Uri uri, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon(System.Uri,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLexicon(Uri ^ uri, System::String ^ mediaType);" />
+      <MemberSignature Language="F#" Value="member this.AddLexicon : Uri * string -&gt; unit" Usage="speechSynthesizer.AddLexicon (uri, mediaType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -221,6 +223,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BookmarkReached As EventHandler(Of BookmarkReachedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Synthesis::BookmarkReachedEventArgs ^&gt; ^ BookmarkReached;" />
+      <MemberSignature Language="F#" Value="member this.BookmarkReached : EventHandler&lt;System.Speech.Synthesis.BookmarkReachedEventArgs&gt; " Usage="member this.BookmarkReached : System.EventHandler&lt;System.Speech.Synthesis.BookmarkReachedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -312,6 +315,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="speechSynthesizer.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -335,6 +339,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!SpeechSynthesizer ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="speechSynthesizer.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -355,6 +360,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.GetCurrentlySpokenPrompt" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentlySpokenPrompt () As Prompt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Synthesis::Prompt ^ GetCurrentlySpokenPrompt();" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentlySpokenPrompt : unit -&gt; System.Speech.Synthesis.Prompt" Usage="speechSynthesizer.GetCurrentlySpokenPrompt " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -404,6 +410,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInstalledVoices () As ReadOnlyCollection(Of InstalledVoice)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::Synthesis::InstalledVoice ^&gt; ^ GetInstalledVoices();" />
+      <MemberSignature Language="F#" Value="member this.GetInstalledVoices : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Synthesis.InstalledVoice&gt;" Usage="speechSynthesizer.GetInstalledVoices " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -503,6 +510,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInstalledVoices (culture As CultureInfo) As ReadOnlyCollection(Of InstalledVoice)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::Synthesis::InstalledVoice ^&gt; ^ GetInstalledVoices(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.GetInstalledVoices : System.Globalization.CultureInfo -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Synthesis.InstalledVoice&gt;" Usage="speechSynthesizer.GetInstalledVoices culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -599,6 +607,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Pause" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
+      <MemberSignature Language="F#" Value="member this.Pause : unit -&gt; unit" Usage="speechSynthesizer.Pause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -622,6 +631,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PhonemeReached As EventHandler(Of PhonemeReachedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Synthesis::PhonemeReachedEventArgs ^&gt; ^ PhonemeReached;" />
+      <MemberSignature Language="F#" Value="member this.PhonemeReached : EventHandler&lt;System.Speech.Synthesis.PhonemeReachedEventArgs&gt; " Usage="member this.PhonemeReached : System.EventHandler&lt;System.Speech.Synthesis.PhonemeReachedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -653,6 +663,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeechSynthesizer.Rate" />
       <MemberSignature Language="VB.NET" Value="Public Property Rate As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rate { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Rate : int with get, set" Usage="System.Speech.Synthesis.SpeechSynthesizer.Rate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -713,6 +724,7 @@ namespace SampleSynthesis
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveLexicon(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.RemoveLexicon(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveLexicon(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="member this.RemoveLexicon : Uri -&gt; unit" Usage="speechSynthesizer.RemoveLexicon uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -744,6 +756,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Resume" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resume ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume();" />
+      <MemberSignature Language="F#" Value="member this.Resume : unit -&gt; unit" Usage="speechSynthesizer.Resume " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -767,6 +780,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectVoice (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectVoice(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.SelectVoice : string -&gt; unit" Usage="speechSynthesizer.SelectVoice name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -824,6 +838,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectVoiceByHints (gender As VoiceGender)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectVoiceByHints(System::Speech::Synthesis::VoiceGender gender);" />
+      <MemberSignature Language="F#" Value="member this.SelectVoiceByHints : System.Speech.Synthesis.VoiceGender -&gt; unit" Usage="speechSynthesizer.SelectVoiceByHints gender" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -863,6 +878,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender,System.Speech.Synthesis.VoiceAge)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectVoiceByHints (gender As VoiceGender, age As VoiceAge)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectVoiceByHints(System::Speech::Synthesis::VoiceGender gender, System::Speech::Synthesis::VoiceAge age);" />
+      <MemberSignature Language="F#" Value="member this.SelectVoiceByHints : System.Speech.Synthesis.VoiceGender * System.Speech.Synthesis.VoiceAge -&gt; unit" Usage="speechSynthesizer.SelectVoiceByHints (gender, age)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -905,6 +921,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender,System.Speech.Synthesis.VoiceAge,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectVoiceByHints (gender As VoiceGender, age As VoiceAge, voiceAlternate As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectVoiceByHints(System::Speech::Synthesis::VoiceGender gender, System::Speech::Synthesis::VoiceAge age, int voiceAlternate);" />
+      <MemberSignature Language="F#" Value="member this.SelectVoiceByHints : System.Speech.Synthesis.VoiceGender * System.Speech.Synthesis.VoiceAge * int -&gt; unit" Usage="speechSynthesizer.SelectVoiceByHints (gender, age, voiceAlternate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -949,6 +966,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender,System.Speech.Synthesis.VoiceAge,System.Int32,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectVoiceByHints (gender As VoiceGender, age As VoiceAge, voiceAlternate As Integer, culture As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectVoiceByHints(System::Speech::Synthesis::VoiceGender gender, System::Speech::Synthesis::VoiceAge age, int voiceAlternate, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.SelectVoiceByHints : System.Speech.Synthesis.VoiceGender * System.Speech.Synthesis.VoiceAge * int * System.Globalization.CultureInfo -&gt; unit" Usage="speechSynthesizer.SelectVoiceByHints (gender, age, voiceAlternate, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1006,6 +1024,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream(System.IO.Stream,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOutputToAudioStream (audioDestination As Stream, formatInfo As SpeechAudioFormatInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutputToAudioStream(System::IO::Stream ^ audioDestination, System::Speech::AudioFormat::SpeechAudioFormatInfo ^ formatInfo);" />
+      <MemberSignature Language="F#" Value="member this.SetOutputToAudioStream : System.IO.Stream * System.Speech.AudioFormat.SpeechAudioFormatInfo -&gt; unit" Usage="speechSynthesizer.SetOutputToAudioStream (audioDestination, formatInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1040,6 +1059,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOutputToDefaultAudioDevice ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutputToDefaultAudioDevice();" />
+      <MemberSignature Language="F#" Value="member this.SetOutputToDefaultAudioDevice : unit -&gt; unit" Usage="speechSynthesizer.SetOutputToDefaultAudioDevice " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1105,6 +1125,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOutputToNull ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutputToNull();" />
+      <MemberSignature Language="F#" Value="member this.SetOutputToNull : unit -&gt; unit" Usage="speechSynthesizer.SetOutputToNull " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1153,6 +1174,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOutputToWaveFile (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutputToWaveFile(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.SetOutputToWaveFile : string -&gt; unit" Usage="speechSynthesizer.SetOutputToWaveFile path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1239,6 +1261,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile(System.String,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOutputToWaveFile (path As String, formatInfo As SpeechAudioFormatInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutputToWaveFile(System::String ^ path, System::Speech::AudioFormat::SpeechAudioFormatInfo ^ formatInfo);" />
+      <MemberSignature Language="F#" Value="member this.SetOutputToWaveFile : string * System.Speech.AudioFormat.SpeechAudioFormatInfo -&gt; unit" Usage="speechSynthesizer.SetOutputToWaveFile (path, formatInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1318,6 +1341,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOutputToWaveStream (audioDestination As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutputToWaveStream(System::IO::Stream ^ audioDestination);" />
+      <MemberSignature Language="F#" Value="member this.SetOutputToWaveStream : System.IO.Stream -&gt; unit" Usage="speechSynthesizer.SetOutputToWaveStream audioDestination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1434,6 +1458,7 @@ namespace SampleSynthesis
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Speak(class System.Speech.Synthesis.Prompt prompt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Speak(System.Speech.Synthesis.Prompt)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Speak(System::Speech::Synthesis::Prompt ^ prompt);" />
+      <MemberSignature Language="F#" Value="member this.Speak : System.Speech.Synthesis.Prompt -&gt; unit" Usage="speechSynthesizer.Speak prompt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1502,6 +1527,7 @@ namespace SampleSynthesis
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Speak(class System.Speech.Synthesis.PromptBuilder promptBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Speak(System.Speech.Synthesis.PromptBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Speak(System::Speech::Synthesis::PromptBuilder ^ promptBuilder);" />
+      <MemberSignature Language="F#" Value="member this.Speak : System.Speech.Synthesis.PromptBuilder -&gt; unit" Usage="speechSynthesizer.Speak promptBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1572,6 +1598,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Speak(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Speak (textToSpeak As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Speak(System::String ^ textToSpeak);" />
+      <MemberSignature Language="F#" Value="member this.Speak : string -&gt; unit" Usage="speechSynthesizer.Speak textToSpeak" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1682,6 +1709,7 @@ namespace SampleSynthesis
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SpeakAsync(class System.Speech.Synthesis.Prompt prompt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync(System.Speech.Synthesis.Prompt)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SpeakAsync(System::Speech::Synthesis::Prompt ^ prompt);" />
+      <MemberSignature Language="F#" Value="member this.SpeakAsync : System.Speech.Synthesis.Prompt -&gt; unit" Usage="speechSynthesizer.SpeakAsync prompt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1751,6 +1779,7 @@ namespace SampleSynthesis
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Synthesis.Prompt SpeakAsync(class System.Speech.Synthesis.PromptBuilder promptBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync(System.Speech.Synthesis.PromptBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Synthesis::Prompt ^ SpeakAsync(System::Speech::Synthesis::PromptBuilder ^ promptBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SpeakAsync : System.Speech.Synthesis.PromptBuilder -&gt; System.Speech.Synthesis.Prompt" Usage="speechSynthesizer.SpeakAsync promptBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1821,6 +1850,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SpeakAsync (textToSpeak As String) As Prompt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Synthesis::Prompt ^ SpeakAsync(System::String ^ textToSpeak);" />
+      <MemberSignature Language="F#" Value="member this.SpeakAsync : string -&gt; System.Speech.Synthesis.Prompt" Usage="speechSynthesizer.SpeakAsync textToSpeak" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1886,6 +1916,7 @@ namespace SampleSynthesis
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SpeakAsyncCancel(class System.Speech.Synthesis.Prompt prompt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel(System.Speech.Synthesis.Prompt)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SpeakAsyncCancel(System::Speech::Synthesis::Prompt ^ prompt);" />
+      <MemberSignature Language="F#" Value="member this.SpeakAsyncCancel : System.Speech.Synthesis.Prompt -&gt; unit" Usage="speechSynthesizer.SpeakAsyncCancel prompt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1925,6 +1956,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub SpeakAsyncCancelAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SpeakAsyncCancelAll();" />
+      <MemberSignature Language="F#" Value="member this.SpeakAsyncCancelAll : unit -&gt; unit" Usage="speechSynthesizer.SpeakAsyncCancelAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2022,6 +2054,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SpeakCompleted As EventHandler(Of SpeakCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Synthesis::SpeakCompletedEventArgs ^&gt; ^ SpeakCompleted;" />
+      <MemberSignature Language="F#" Value="member this.SpeakCompleted : EventHandler&lt;System.Speech.Synthesis.SpeakCompletedEventArgs&gt; " Usage="member this.SpeakCompleted : System.EventHandler&lt;System.Speech.Synthesis.SpeakCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2051,6 +2084,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SpeakProgress As EventHandler(Of SpeakProgressEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Synthesis::SpeakProgressEventArgs ^&gt; ^ SpeakProgress;" />
+      <MemberSignature Language="F#" Value="member this.SpeakProgress : EventHandler&lt;System.Speech.Synthesis.SpeakProgressEventArgs&gt; " Usage="member this.SpeakProgress : System.EventHandler&lt;System.Speech.Synthesis.SpeakProgressEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2078,6 +2112,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SpeakSsml (textToSpeak As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SpeakSsml(System::String ^ textToSpeak);" />
+      <MemberSignature Language="F#" Value="member this.SpeakSsml : string -&gt; unit" Usage="speechSynthesizer.SpeakSsml textToSpeak" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2168,6 +2203,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SpeakSsmlAsync (textToSpeak As String) As Prompt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Synthesis::Prompt ^ SpeakSsmlAsync(System::String ^ textToSpeak);" />
+      <MemberSignature Language="F#" Value="member this.SpeakSsmlAsync : string -&gt; System.Speech.Synthesis.Prompt" Usage="speechSynthesizer.SpeakSsmlAsync textToSpeak" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2260,6 +2296,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SpeakStarted As EventHandler(Of SpeakStartedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Synthesis::SpeakStartedEventArgs ^&gt; ^ SpeakStarted;" />
+      <MemberSignature Language="F#" Value="member this.SpeakStarted : EventHandler&lt;System.Speech.Synthesis.SpeakStartedEventArgs&gt; " Usage="member this.SpeakStarted : System.EventHandler&lt;System.Speech.Synthesis.SpeakStartedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2289,6 +2326,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeechSynthesizer.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As SynthesizerState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::SynthesizerState State { System::Speech::Synthesis::SynthesizerState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Speech.Synthesis.SynthesizerState" Usage="System.Speech.Synthesis.SpeechSynthesizer.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2370,6 +2408,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.StateChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event StateChanged As EventHandler(Of StateChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Synthesis::StateChangedEventArgs ^&gt; ^ StateChanged;" />
+      <MemberSignature Language="F#" Value="member this.StateChanged : EventHandler&lt;System.Speech.Synthesis.StateChangedEventArgs&gt; " Usage="member this.StateChanged : System.EventHandler&lt;System.Speech.Synthesis.StateChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2399,6 +2438,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event VisemeReached As EventHandler(Of VisemeReachedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Synthesis::VisemeReachedEventArgs ^&gt; ^ VisemeReached;" />
+      <MemberSignature Language="F#" Value="member this.VisemeReached : EventHandler&lt;System.Speech.Synthesis.VisemeReachedEventArgs&gt; " Usage="member this.VisemeReached : System.EventHandler&lt;System.Speech.Synthesis.VisemeReachedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2457,6 +2497,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeechSynthesizer.Voice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Voice As VoiceInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::VoiceInfo ^ Voice { System::Speech::Synthesis::VoiceInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Voice : System.Speech.Synthesis.VoiceInfo" Usage="System.Speech.Synthesis.SpeechSynthesizer.Voice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2555,6 +2596,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event VoiceChange As EventHandler(Of VoiceChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Synthesis::VoiceChangeEventArgs ^&gt; ^ VoiceChange;" />
+      <MemberSignature Language="F#" Value="member this.VoiceChange : EventHandler&lt;System.Speech.Synthesis.VoiceChangeEventArgs&gt; " Usage="member this.VoiceChange : System.EventHandler&lt;System.Speech.Synthesis.VoiceChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2584,6 +2626,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeechSynthesizer.Volume" />
       <MemberSignature Language="VB.NET" Value="Public Property Volume As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Volume { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Volume : int with get, set" Usage="System.Speech.Synthesis.SpeechSynthesizer.Volume" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowPageSetupDialog&#xA;Inherits Form" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowPageSetupDialog sealed : System::Windows::Forms::Form" />
+  <TypeSignature Language="F#" Value="type WorkflowPageSetupDialog = class&#xA;    inherit Form" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowPageSetupDialog(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog : IServiceProvider -&gt; System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog" Usage="new System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog serviceProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="workflowPageSetupDialog.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHelpRequested (hlpevent As HelpEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHelpRequested(System::Windows::Forms::HelpEventArgs ^ hlpevent);" />
+      <MemberSignature Language="F#" Value="override this.OnHelpRequested : System.Windows.Forms.HelpEventArgs -&gt; unit" Usage="workflowPageSetupDialog.OnHelpRequested hlpevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

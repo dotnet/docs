@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.PersistenceProviderElement" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistenceProviderElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistenceProviderElement : System::ServiceModel::Configuration::BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type PersistenceProviderElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.PersistenceProviderElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.PersistenceProviderElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.PersistenceProviderElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="persistenceProviderElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.PersistenceProviderElement.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsModified();" />
+      <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="persistenceProviderElement.IsModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.PersistenceProviderElement.OnDeserializeUnrecognizedAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedAttribute (name As String, value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedAttribute(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.OnDeserializeUnrecognizedAttribute : string * string -&gt; bool" Usage="persistenceProviderElement.OnDeserializeUnrecognizedAttribute (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.PersistenceProviderElement.PersistenceOperationTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property PersistenceOperationTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PersistenceOperationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.PersistenceOperationTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.PersistenceProviderElement.PersistenceOperationTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.PersistenceProviderElement.PersistenceProviderArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PersistenceProviderArguments As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ PersistenceProviderArguments { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PersistenceProviderArguments : System.Collections.Specialized.NameValueCollection" Usage="System.ServiceModel.Configuration.PersistenceProviderElement.PersistenceProviderArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.PersistenceProviderElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="persistenceProviderElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.PersistenceProviderElement.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeElement (writer As XmlWriter, serializeCollectionKey As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeElement(System::Xml::XmlWriter ^ writer, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.SerializeElement : System.Xml.XmlWriter * bool -&gt; bool" Usage="persistenceProviderElement.SerializeElement (writer, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -248,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.PersistenceProviderElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.ServiceModel.Configuration.PersistenceProviderElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -276,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.PersistenceProviderElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" />
+      <MemberSignature Language="F#" Value="override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="persistenceProviderElement.Unmerge (sourceElement, parentElement, saveMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

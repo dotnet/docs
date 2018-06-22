@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DataControlReferenceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DataControlReferenceCollection&#xA;Inherits Collection(Of DataControlReference)" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataControlReferenceCollection : System::Collections::ObjectModel::Collection&lt;System::Web::DynamicData::DataControlReference ^&gt;" />
+  <TypeSignature Language="F#" Value="type DataControlReferenceCollection = class&#xA;    inherit Collection&lt;DataControlReference&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReferenceCollection.#ctor(System.Web.DynamicData.DynamicDataManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DynamicDataManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataControlReferenceCollection(System::Web::DynamicData::DynamicDataManager ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.DataControlReferenceCollection : System.Web.DynamicData.DynamicDataManager -&gt; System.Web.DynamicData.DataControlReferenceCollection" Usage="new System.Web.DynamicData.DataControlReferenceCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReferenceCollection.InsertItem(System.Int32,System.Web.DynamicData.DataControlReference)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As DataControlReference)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Web::DynamicData::DataControlReference ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Web.DynamicData.DataControlReference -&gt; unit" Usage="dataControlReferenceCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DataControlReferenceCollection.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As DynamicDataManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::DynamicDataManager ^ Owner { System::Web::DynamicData::DynamicDataManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Web.DynamicData.DynamicDataManager" Usage="System.Web.DynamicData.DataControlReferenceCollection.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReferenceCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="dataControlReferenceCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReferenceCollection.SetItem(System.Int32,System.Web.DynamicData.DataControlReference)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As DataControlReference)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Web::DynamicData::DataControlReference ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Web.DynamicData.DataControlReference -&gt; unit" Usage="dataControlReferenceCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

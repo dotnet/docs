@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.CoffHeader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CoffHeader" />
   <TypeSignature Language="C++ CLI" Value="public ref class CoffHeader sealed" />
+  <TypeSignature Language="F#" Value="type CoffHeader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CoffHeader.Characteristics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Characteristics As Characteristics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::Characteristics Characteristics { System::Reflection::PortableExecutable::Characteristics get(); };" />
+      <MemberSignature Language="F#" Value="member this.Characteristics : System.Reflection.PortableExecutable.Characteristics" Usage="System.Reflection.PortableExecutable.CoffHeader.Characteristics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CoffHeader.Machine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Machine As Machine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::Machine Machine { System::Reflection::PortableExecutable::Machine get(); };" />
+      <MemberSignature Language="F#" Value="member this.Machine : System.Reflection.PortableExecutable.Machine" Usage="System.Reflection.PortableExecutable.CoffHeader.Machine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CoffHeader.NumberOfSections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfSections As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short NumberOfSections { short get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberOfSections : int16" Usage="System.Reflection.PortableExecutable.CoffHeader.NumberOfSections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CoffHeader.NumberOfSymbols" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfSymbols As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfSymbols { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberOfSymbols : int" Usage="System.Reflection.PortableExecutable.CoffHeader.NumberOfSymbols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CoffHeader.PointerToSymbolTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointerToSymbolTable As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointerToSymbolTable { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PointerToSymbolTable : int" Usage="System.Reflection.PortableExecutable.CoffHeader.PointerToSymbolTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CoffHeader.SizeOfOptionalHeader" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfOptionalHeader As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short SizeOfOptionalHeader { short get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfOptionalHeader : int16" Usage="System.Reflection.PortableExecutable.CoffHeader.SizeOfOptionalHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CoffHeader.TimeDateStamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeDateStamp As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimeDateStamp { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeDateStamp : int" Usage="System.Reflection.PortableExecutable.CoffHeader.TimeDateStamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

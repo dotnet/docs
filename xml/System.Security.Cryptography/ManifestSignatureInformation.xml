@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ManifestSignatureInformation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManifestSignatureInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManifestSignatureInformation sealed" />
+  <TypeSignature Language="F#" Value="type ManifestSignatureInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ManifestSignatureInformation.AuthenticodeSignature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticodeSignature As AuthenticodeSignatureInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::AuthenticodeSignatureInformation ^ AuthenticodeSignature { System::Security::Cryptography::X509Certificates::AuthenticodeSignatureInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticodeSignature : System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation" Usage="System.Security.Cryptography.ManifestSignatureInformation.AuthenticodeSignature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ManifestSignatureInformation.Manifest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manifest As ManifestKinds" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::ManifestKinds Manifest { System::Security::ManifestKinds get(); };" />
+      <MemberSignature Language="F#" Value="member this.Manifest : System.Security.ManifestKinds" Usage="System.Security.Cryptography.ManifestSignatureInformation.Manifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ManifestSignatureInformation.StrongNameSignature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StrongNameSignature As StrongNameSignatureInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::StrongNameSignatureInformation ^ StrongNameSignature { System::Security::Cryptography::StrongNameSignatureInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StrongNameSignature : System.Security.Cryptography.StrongNameSignatureInformation" Usage="System.Security.Cryptography.ManifestSignatureInformation.StrongNameSignature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature(System.ActivationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VerifySignature (application As ActivationContext) As ManifestSignatureInformationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ManifestSignatureInformationCollection ^ VerifySignature(ActivationContext ^ application);" />
+      <MemberSignature Language="F#" Value="static member VerifySignature : ActivationContext -&gt; System.Security.Cryptography.ManifestSignatureInformationCollection" Usage="System.Security.Cryptography.ManifestSignatureInformation.VerifySignature application" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature(System.ActivationContext,System.Security.ManifestKinds)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VerifySignature (application As ActivationContext, manifests As ManifestKinds) As ManifestSignatureInformationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ManifestSignatureInformationCollection ^ VerifySignature(ActivationContext ^ application, System::Security::ManifestKinds manifests);" />
+      <MemberSignature Language="F#" Value="static member VerifySignature : ActivationContext * System.Security.ManifestKinds -&gt; System.Security.Cryptography.ManifestSignatureInformationCollection" Usage="System.Security.Cryptography.ManifestSignatureInformation.VerifySignature (application, manifests)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature(System.ActivationContext,System.Security.ManifestKinds,System.Security.Cryptography.X509Certificates.X509RevocationFlag,System.Security.Cryptography.X509Certificates.X509RevocationMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VerifySignature (application As ActivationContext, manifests As ManifestKinds, revocationFlag As X509RevocationFlag, revocationMode As X509RevocationMode) As ManifestSignatureInformationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ManifestSignatureInformationCollection ^ VerifySignature(ActivationContext ^ application, System::Security::ManifestKinds manifests, System::Security::Cryptography::X509Certificates::X509RevocationFlag revocationFlag, System::Security::Cryptography::X509Certificates::X509RevocationMode revocationMode);" />
+      <MemberSignature Language="F#" Value="static member VerifySignature : ActivationContext * System.Security.ManifestKinds * System.Security.Cryptography.X509Certificates.X509RevocationFlag * System.Security.Cryptography.X509Certificates.X509RevocationMode -&gt; System.Security.Cryptography.ManifestSignatureInformationCollection" Usage="System.Security.Cryptography.ManifestSignatureInformation.VerifySignature (application, manifests, revocationFlag, revocationMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

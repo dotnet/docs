@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpClient" />
   <TypeSignature Language="VB.NET" Value="Public Class SmtpClient&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SmtpClient : IDisposable" />
+  <TypeSignature Language="F#" Value="type SmtpClient = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -153,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (host As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpClient(System::String ^ host);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpClient : string -&gt; System.Net.Mail.SmtpClient" Usage="new System.Net.Mail.SmtpClient host" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -201,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (host As String, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpClient(System::String ^ host, int port);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpClient : string * int -&gt; System.Net.Mail.SmtpClient" Usage="new System.Net.Mail.SmtpClient (host, port)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -253,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.ClientCertificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificates As X509CertificateCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificates : System.Security.Cryptography.X509Certificates.X509CertificateCollection" Usage="System.Net.Mail.SmtpClient.ClientCertificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Property Credentials As ICredentialsByHost" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentialsByHost ^ Credentials { System::Net::ICredentialsByHost ^ get(); void set(System::Net::ICredentialsByHost ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentialsByHost with get, set" Usage="System.Net.Mail.SmtpClient.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -356,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.DeliveryFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DeliveryFormat As SmtpDeliveryFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::SmtpDeliveryFormat DeliveryFormat { System::Net::Mail::SmtpDeliveryFormat get(); void set(System::Net::Mail::SmtpDeliveryFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DeliveryFormat : System.Net.Mail.SmtpDeliveryFormat with get, set" Usage="System.Net.Mail.SmtpClient.DeliveryFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -388,6 +394,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.DeliveryMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property DeliveryMethod As SmtpDeliveryMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::SmtpDeliveryMethod DeliveryMethod { System::Net::Mail::SmtpDeliveryMethod get(); void set(System::Net::Mail::SmtpDeliveryMethod value); };" />
+      <MemberSignature Language="F#" Value="member this.DeliveryMethod : System.Net.Mail.SmtpDeliveryMethod with get, set" Usage="System.Net.Mail.SmtpClient.DeliveryMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -459,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="smtpClient.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -516,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="smtpClient.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -579,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.EnableSsl" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableSsl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableSsl { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableSsl : bool with get, set" Usage="System.Net.Mail.SmtpClient.EnableSsl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -638,6 +648,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.Host" />
       <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="System.Net.Mail.SmtpClient.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -692,6 +703,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnSendCompleted (e As AsyncCompletedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnSendCompleted(System::ComponentModel::AsyncCompletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnSendCompleted : System.ComponentModel.AsyncCompletedEventArgs -&gt; unit" Usage="smtpClient.OnSendCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -737,6 +749,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.PickupDirectoryLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property PickupDirectoryLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PickupDirectoryLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PickupDirectoryLocation : string with get, set" Usage="System.Net.Mail.SmtpClient.PickupDirectoryLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -778,6 +791,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.Port" />
       <MemberSignature Language="VB.NET" Value="Public Property Port As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Port : int with get, set" Usage="System.Net.Mail.SmtpClient.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -840,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Send(System.Net.Mail.MailMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (message As MailMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Net::Mail::MailMessage ^ message);" />
+      <MemberSignature Language="F#" Value="member this.Send : System.Net.Mail.MailMessage -&gt; unit" Usage="smtpClient.Send message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -942,14 +957,15 @@
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public void Send (string from, string recipients, string subject, string body);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(string from, string recipients, string subject, string body) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Send(System.String,System.String,System.String,System.String)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Send(System.String,System.String,System.String,System.String)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (from As String, recipients As String, subject As String, body As String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::String ^ from, System::String ^ recipients, System::String ^ subject, System::String ^ body);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public void Send (string from, string to, string subject, string body);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(string from, string to, string subject, string body) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Send(System.String,System.String,System.String,System.String)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Send(System.String,System.String,System.String,System.String)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (from As String, to As String, subject As String, body As String)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::String ^ from, System::String ^ to, System::String ^ subject, System::String ^ body);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Send : string * string * string * string -&gt; unit" Usage="smtpClient.Send (from, to, subject, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1067,6 +1083,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsync(System.Net.Mail.MailMessage,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (message As MailMessage, userToken As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::Net::Mail::MailMessage ^ message, System::Object ^ userToken);" />
+      <MemberSignature Language="F#" Value="member this.SendAsync : System.Net.Mail.MailMessage * obj -&gt; unit" Usage="smtpClient.SendAsync (message, userToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1180,14 +1197,15 @@
     <Member MemberName="SendAsync">
       <MemberSignature Language="C#" Value="public void SendAsync (string from, string recipients, string subject, string body, object userToken);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string from, string recipients, string subject, string body, object userToken) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsync(System.String,System.String,System.String,System.String,System.Object)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsync(System.String,System.String,System.String,System.String,System.Object)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (from As String, recipients As String, subject As String, body As String, userToken As Object)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ from, System::String ^ recipients, System::String ^ subject, System::String ^ body, System::Object ^ userToken);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public void SendAsync (string from, string to, string subject, string body, object userToken);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string from, string to, string subject, string body, object userToken) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsync(System.String,System.String,System.String,System.String,System.Object)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsync(System.String,System.String,System.String,System.String,System.Object)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (from As String, to As String, subject As String, body As String, userToken As Object)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ from, System::String ^ to, System::String ^ subject, System::String ^ body, System::Object ^ userToken);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.SendAsync : string * string * string * string * obj -&gt; unit" Usage="smtpClient.SendAsync (from, to, subject, body, userToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1305,6 +1323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsyncCancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendAsyncCancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsyncCancel();" />
+      <MemberSignature Language="F#" Value="member this.SendAsyncCancel : unit -&gt; unit" Usage="smtpClient.SendAsyncCancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1352,6 +1371,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.Mail.SmtpClient.SendCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SendCompleted As SendCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::Mail::SendCompletedEventHandler ^ SendCompleted;" />
+      <MemberSignature Language="F#" Value="member this.SendCompleted : System.Net.Mail.SendCompletedEventHandler " Usage="member this.SendCompleted : System.Net.Mail.SendCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1409,6 +1429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendMailAsync(System.Net.Mail.MailMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendMailAsync (message As MailMessage) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SendMailAsync(System::Net::Mail::MailMessage ^ message);" />
+      <MemberSignature Language="F#" Value="member this.SendMailAsync : System.Net.Mail.MailMessage -&gt; System.Threading.Tasks.Task" Usage="smtpClient.SendMailAsync message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1454,6 +1475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendMailAsync(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendMailAsync (from As String, recipients As String, subject As String, body As String) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SendMailAsync(System::String ^ from, System::String ^ recipients, System::String ^ subject, System::String ^ body);" />
+      <MemberSignature Language="F#" Value="member this.SendMailAsync : string * string * string * string -&gt; System.Threading.Tasks.Task" Usage="smtpClient.SendMailAsync (from, recipients, subject, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1515,6 +1537,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.ServicePoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicePoint As ServicePoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ServicePoint ^ ServicePoint { System::Net::ServicePoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServicePoint : System.Net.ServicePoint" Usage="System.Net.Mail.SmtpClient.ServicePoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1571,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.TargetName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetName : string with get, set" Usage="System.Net.Mail.SmtpClient.TargetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1613,6 +1637,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Net.Mail.SmtpClient.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1662,6 +1687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpClient.UseDefaultCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property UseDefaultCredentials As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.Net.Mail.SmtpClient.UseDefaultCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

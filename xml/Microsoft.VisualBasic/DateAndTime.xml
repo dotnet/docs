@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DateAndTime" />
   <TypeSignature Language="VB.NET" Value="Public Module DateAndTime" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateAndTime sealed" />
+  <TypeSignature Language="F#" Value="type DateAndTime = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@ thisDate = Today
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.DateAdd(Microsoft.VisualBasic.DateInterval,System.Double,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function DateAdd (Interval As DateInterval, Number As Double, DateValue As DateTime) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime DateAdd(Microsoft::VisualBasic::DateInterval Interval, double Number, DateTime DateValue);" />
+      <MemberSignature Language="F#" Value="static member DateAdd : Microsoft.VisualBasic.DateInterval * double * DateTime -&gt; DateTime" Usage="Microsoft.VisualBasic.DateAndTime.DateAdd (Interval, Number, DateValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -143,6 +145,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.DateAdd(System.String,System.Double,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function DateAdd (Interval As String, Number As Double, DateValue As Object) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime DateAdd(System::String ^ Interval, double Number, System::Object ^ DateValue);" />
+      <MemberSignature Language="F#" Value="static member DateAdd : string * double * obj -&gt; DateTime" Usage="Microsoft.VisualBasic.DateAndTime.DateAdd (Interval, Number, DateValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -240,6 +243,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       <MemberSignature Language="ILAsm" Value=".method public static int64 DateDiff(valuetype Microsoft.VisualBasic.DateInterval Interval, valuetype System.DateTime Date1, valuetype System.DateTime Date2, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek, valuetype Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.DateDiff(Microsoft.VisualBasic.DateInterval,System.DateTime,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
       <MemberSignature Language="VB.NET" Value="Public Function DateDiff (Interval As DateInterval, Date1 As DateTime, Date2 As DateTime, Optional DayOfWeek As FirstDayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Optional WeekOfYear As FirstWeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1) As Long" />
+      <MemberSignature Language="F#" Value="static member DateDiff : Microsoft.VisualBasic.DateInterval * DateTime * DateTime * Microsoft.VisualBasic.FirstDayOfWeek * Microsoft.VisualBasic.FirstWeekOfYear -&gt; int64" Usage="Microsoft.VisualBasic.DateAndTime.DateDiff (Interval, Date1, Date2, DayOfWeek, WeekOfYear)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -361,6 +365,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       <MemberSignature Language="ILAsm" Value=".method public static int64 DateDiff(string Interval, object Date1, object Date2, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek, valuetype Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.DateDiff(System.String,System.Object,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
       <MemberSignature Language="VB.NET" Value="Public Function DateDiff (Interval As String, Date1 As Object, Date2 As Object, Optional DayOfWeek As FirstDayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Optional WeekOfYear As FirstWeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1) As Long" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * obj * obj * Microsoft.VisualBasic.FirstDayOfWeek * Microsoft.VisualBasic.FirstWeekOfYear -&gt; int64" Usage="Microsoft.VisualBasic.DateAndTime.DateDiff (Interval, Date1, Date2, DayOfWeek, WeekOfYear)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -491,6 +496,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       <MemberSignature Language="ILAsm" Value=".method public static int32 DatePart(valuetype Microsoft.VisualBasic.DateInterval Interval, valuetype System.DateTime DateValue, valuetype Microsoft.VisualBasic.FirstDayOfWeek FirstDayOfWeekValue, valuetype Microsoft.VisualBasic.FirstWeekOfYear FirstWeekOfYearValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.DatePart(Microsoft.VisualBasic.DateInterval,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
       <MemberSignature Language="VB.NET" Value="Public Function DatePart (Interval As DateInterval, DateValue As DateTime, Optional FirstDayOfWeekValue As FirstDayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Optional FirstWeekOfYearValue As FirstWeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1) As Integer" />
+      <MemberSignature Language="F#" Value="static member DatePart : Microsoft.VisualBasic.DateInterval * DateTime * Microsoft.VisualBasic.FirstDayOfWeek * Microsoft.VisualBasic.FirstWeekOfYear -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.DatePart (Interval, DateValue, FirstDayOfWeekValue, FirstWeekOfYearValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -594,6 +600,7 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
       <MemberSignature Language="ILAsm" Value=".method public static int32 DatePart(string Interval, object DateValue, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek, valuetype Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.DatePart(System.String,System.Object,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
       <MemberSignature Language="VB.NET" Value="Public Function DatePart (Interval As String, DateValue As Object, Optional DayOfWeek As FirstDayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Optional WeekOfYear As FirstWeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1) As Integer" />
+      <MemberSignature Language="F#" Value="static member DatePart : string * obj * Microsoft.VisualBasic.FirstDayOfWeek * Microsoft.VisualBasic.FirstWeekOfYear -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.DatePart (Interval, DateValue, DayOfWeek, WeekOfYear)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -698,6 +705,7 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.DateSerial(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function DateSerial (Year As Integer, Month As Integer, Day As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime DateSerial(int Year, int Month, int Day);" />
+      <MemberSignature Language="F#" Value="static member DateSerial : int * int * int -&gt; DateTime" Usage="Microsoft.VisualBasic.DateAndTime.DateSerial (Year, Month, Day)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -783,6 +791,7 @@ Dim NewDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.DateAndTime.DateString" />
       <MemberSignature Language="VB.NET" Value="Public Property DateString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ DateString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DateString : string with get, set" Usage="Microsoft.VisualBasic.DateAndTime.DateString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -837,6 +846,7 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.DateValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DateValue (StringDate As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime DateValue(System::String ^ StringDate);" />
+      <MemberSignature Language="F#" Value="static member DateValue : string -&gt; DateTime" Usage="Microsoft.VisualBasic.DateAndTime.DateValue StringDate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -893,6 +903,7 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Day (DateValue As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Day(DateTime DateValue);" />
+      <MemberSignature Language="F#" Value="static member Day : DateTime -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.Day DateValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -947,6 +958,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.Hour(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Hour (TimeValue As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Hour(DateTime TimeValue);" />
+      <MemberSignature Language="F#" Value="static member Hour : DateTime -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.Hour TimeValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -995,6 +1007,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.Minute(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Minute (TimeValue As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Minute(DateTime TimeValue);" />
+      <MemberSignature Language="F#" Value="static member Minute : DateTime -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.Minute TimeValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1043,6 +1056,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.Month(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Month (DateValue As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Month(DateTime DateValue);" />
+      <MemberSignature Language="F#" Value="static member Month : DateTime -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.Month DateValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1089,6 +1103,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="ILAsm" Value=".method public static string MonthName(int32 Month, bool Abbreviate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.MonthName(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function MonthName (Month As Integer, Optional Abbreviate As Boolean = false) As String" />
+      <MemberSignature Language="F#" Value="static member MonthName : int * bool -&gt; string" Usage="Microsoft.VisualBasic.DateAndTime.MonthName (Month, Abbreviate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1140,6 +1155,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.DateAndTime.Now" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Now As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property DateTime Now { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Now : DateTime" Usage="Microsoft.VisualBasic.DateAndTime.Now" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1182,6 +1198,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.Second(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Second (TimeValue As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Second(DateTime TimeValue);" />
+      <MemberSignature Language="F#" Value="static member Second : DateTime -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.Second TimeValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1230,6 +1247,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.DateAndTime.TimeOfDay" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeOfDay As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property DateTime TimeOfDay { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.TimeOfDay : DateTime with get, set" Usage="Microsoft.VisualBasic.DateAndTime.TimeOfDay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1273,6 +1291,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.DateAndTime.Timer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timer As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double Timer { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timer : double" Usage="Microsoft.VisualBasic.DateAndTime.Timer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1317,6 +1336,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.TimeSerial(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function TimeSerial (Hour As Integer, Minute As Integer, Second As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime TimeSerial(int Hour, int Minute, int Second);" />
+      <MemberSignature Language="F#" Value="static member TimeSerial : int * int * int -&gt; DateTime" Usage="Microsoft.VisualBasic.DateAndTime.TimeSerial (Hour, Minute, Second)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1391,6 +1411,7 @@ Dim newDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.DateAndTime.TimeString" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TimeString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TimeString : string with get, set" Usage="Microsoft.VisualBasic.DateAndTime.TimeString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1443,6 +1464,7 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.TimeValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TimeValue (StringTime As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime TimeValue(System::String ^ StringTime);" />
+      <MemberSignature Language="F#" Value="static member TimeValue : string -&gt; DateTime" Usage="Microsoft.VisualBasic.DateAndTime.TimeValue StringTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1493,6 +1515,7 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.DateAndTime.Today" />
       <MemberSignature Language="VB.NET" Value="Public Property Today As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property DateTime Today { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.Today : DateTime with get, set" Usage="Microsoft.VisualBasic.DateAndTime.Today" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1536,6 +1559,7 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       <MemberSignature Language="ILAsm" Value=".method public static int32 Weekday(valuetype System.DateTime DateValue, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
       <MemberSignature Language="VB.NET" Value="Public Function Weekday (DateValue As DateTime, Optional DayOfWeek As FirstDayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday) As Integer" />
+      <MemberSignature Language="F#" Value="static member Weekday : DateTime * Microsoft.VisualBasic.FirstDayOfWeek -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.Weekday (DateValue, DayOfWeek)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1600,6 +1624,7 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       <MemberSignature Language="ILAsm" Value=".method public static string WeekdayName(int32 Weekday, bool Abbreviate, valuetype Microsoft.VisualBasic.FirstDayOfWeek FirstDayOfWeekValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.WeekdayName(System.Int32,System.Boolean,Microsoft.VisualBasic.FirstDayOfWeek)" />
       <MemberSignature Language="VB.NET" Value="Public Function WeekdayName (Weekday As Integer, Optional Abbreviate As Boolean = false, Optional FirstDayOfWeekValue As FirstDayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.System) As String" />
+      <MemberSignature Language="F#" Value="static member WeekdayName : int * bool * Microsoft.VisualBasic.FirstDayOfWeek -&gt; string" Usage="Microsoft.VisualBasic.DateAndTime.WeekdayName (Weekday, Abbreviate, FirstDayOfWeekValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1667,6 +1692,7 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Year (DateValue As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Year(DateTime DateValue);" />
+      <MemberSignature Language="F#" Value="static member Year : DateTime -&gt; int" Usage="Microsoft.VisualBasic.DateAndTime.Year DateValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

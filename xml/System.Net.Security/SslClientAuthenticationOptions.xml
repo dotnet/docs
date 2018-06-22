@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.SslClientAuthenticationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class SslClientAuthenticationOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class SslClientAuthenticationOptions" />
+  <TypeSignature Language="F#" Value="type SslClientAuthenticationOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.AllowRenegotiation" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowRenegotiation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowRenegotiation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowRenegotiation : bool with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.AllowRenegotiation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.ApplicationProtocols" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationProtocols As List(Of SslApplicationProtocol)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Net::Security::SslApplicationProtocol&gt; ^ ApplicationProtocols { System::Collections::Generic::List&lt;System::Net::Security::SslApplicationProtocol&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::Net::Security::SslApplicationProtocol&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationProtocols : System.Collections.Generic.List&lt;System.Net.Security.SslApplicationProtocol&gt; with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.ApplicationProtocols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateRevocationCheckMode As X509RevocationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode CertificateRevocationCheckMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateRevocationCheckMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCertificates As X509CertificateCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); void set(System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificates : System.Security.Cryptography.X509Certificates.X509CertificateCollection with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.ClientCertificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols" />
       <MemberSignature Language="VB.NET" Value="Public Property EnabledSslProtocols As SslProtocols" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::SslProtocols EnabledSslProtocols { System::Security::Authentication::SslProtocols get(); void set(System::Security::Authentication::SslProtocols value); };" />
+      <MemberSignature Language="F#" Value="member this.EnabledSslProtocols : System.Security.Authentication.SslProtocols with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptionPolicy As EncryptionPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::EncryptionPolicy EncryptionPolicy { System::Net::Security::EncryptionPolicy get(); void set(System::Net::Security::EncryptionPolicy value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionPolicy : System.Net.Security.EncryptionPolicy with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.LocalCertificateSelectionCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalCertificateSelectionCallback As LocalCertificateSelectionCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::LocalCertificateSelectionCallback ^ LocalCertificateSelectionCallback { System::Net::Security::LocalCertificateSelectionCallback ^ get(); void set(System::Net::Security::LocalCertificateSelectionCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LocalCertificateSelectionCallback : System.Net.Security.LocalCertificateSelectionCallback with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.LocalCertificateSelectionCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -180,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoteCertificateValidationCallback As RemoteCertificateValidationCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::RemoteCertificateValidationCallback ^ RemoteCertificateValidationCallback { System::Net::Security::RemoteCertificateValidationCallback ^ get(); void set(System::Net::Security::RemoteCertificateValidationCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RemoteCertificateValidationCallback : System.Net.Security.RemoteCertificateValidationCallback with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -200,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslClientAuthenticationOptions.TargetHost" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetHost As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetHost { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetHost : string with get, set" Usage="System.Net.Security.SslClientAuthenticationOptions.TargetHost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>

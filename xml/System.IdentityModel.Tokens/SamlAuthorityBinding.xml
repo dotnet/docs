@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAuthorityBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class SamlAuthorityBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class SamlAuthorityBinding" />
+  <TypeSignature Language="F#" Value="type SamlAuthorityBinding = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorityBinding.#ctor(System.Xml.XmlQualifiedName,System.String,System.String)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (kind As XmlQualifiedName, binding As String, location As String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAuthorityBinding(System::Xml::XmlQualifiedName ^ kind, System::String ^ binding, System::String ^ location);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthorityBinding : System.Xml.XmlQualifiedName * string * string -&gt; System.IdentityModel.Tokens.SamlAuthorityBinding" Usage="new System.IdentityModel.Tokens.SamlAuthorityBinding (kind, binding, location)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthorityKind As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ AuthorityKind { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthorityKind : System.Xml.XmlQualifiedName with get, set" Usage="System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Binding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : string with get, set" Usage="System.IdentityModel.Tokens.SamlAuthorityBinding.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorityBinding.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="System.IdentityModel.Tokens.SamlAuthorityBinding.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorityBinding.MakeReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.MakeReadOnly : unit -&gt; unit" Usage="samlAuthorityBinding.MakeReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorityBinding.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlDictionaryReader * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlDictionaryReader * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; unit" Usage="samlAuthorityBinding.ReadXml (reader, samlSerializer, keyInfoSerializer, outOfBandTokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorityBinding.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlDictionaryWriter ^ writer, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlDictionaryWriter * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlDictionaryWriter * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; unit" Usage="samlAuthorityBinding.WriteXml (writer, samlSerializer, keyInfoSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

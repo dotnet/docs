@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityFunc`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityFunc(Of T, TResult)&#xA;Inherits ActivityDelegate" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T, typename TResult&gt;&#xA;public ref class ActivityFunc sealed : System::Activities::ActivityDelegate" />
+  <TypeSignature Language="F#" Value="type ActivityFunc&lt;'T, 'Result&gt; = class&#xA;    inherit ActivityDelegate" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`2.Argument" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument As DelegateInArgument(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T&gt; ^ Argument { System::Activities::DelegateInArgument&lt;T&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument : System.Activities.DelegateInArgument&lt;'T&gt; with get, set" Usage="System.Activities.ActivityFunc&lt;'T, 'Result&gt;.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityFunc`2.GetResultArgument" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetResultArgument () As DelegateOutArgument" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::DelegateOutArgument ^ GetResultArgument();" />
+      <MemberSignature Language="F#" Value="override this.GetResultArgument : unit -&gt; System.Activities.DelegateOutArgument" Usage="activityFunc.GetResultArgument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`2.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As DelegateOutArgument(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateOutArgument&lt;TResult&gt; ^ Result { System::Activities::DelegateOutArgument&lt;TResult&gt; ^ get(); void set(System::Activities::DelegateOutArgument&lt;TResult&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.Activities.DelegateOutArgument&lt;'Result&gt; with get, set" Usage="System.Activities.ActivityFunc&lt;'T, 'Result&gt;.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

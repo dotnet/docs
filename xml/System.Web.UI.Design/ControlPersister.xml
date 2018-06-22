@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ControlPersister" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlPersister" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlPersister sealed" />
+  <TypeSignature Language="F#" Value="type ControlPersister = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PersistControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlPersister.PersistControl(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PersistControl(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="static member PersistControl : System.Web.UI.Control -&gt; string" Usage="System.Web.UI.Design.ControlPersister.PersistControl control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PersistControl(class System.IO.TextWriter sw, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlPersister.PersistControl(System.IO.TextWriter,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PersistControl(System::IO::TextWriter ^ sw, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="static member PersistControl : System.IO.TextWriter * System.Web.UI.Control -&gt; unit" Usage="System.Web.UI.Design.ControlPersister.PersistControl (sw, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PersistControl(class System.Web.UI.Control control, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlPersister.PersistControl(System.Web.UI.Control,System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PersistControl(System::Web::UI::Control ^ control, System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="static member PersistControl : System.Web.UI.Control * System.ComponentModel.Design.IDesignerHost -&gt; string" Usage="System.Web.UI.Design.ControlPersister.PersistControl (control, host)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PersistControl(class System.IO.TextWriter sw, class System.Web.UI.Control control, class System.ComponentModel.Design.IDesignerHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlPersister.PersistControl(System.IO.TextWriter,System.Web.UI.Control,System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PersistControl(System::IO::TextWriter ^ sw, System::Web::UI::Control ^ control, System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="static member PersistControl : System.IO.TextWriter * System.Web.UI.Control * System.ComponentModel.Design.IDesignerHost -&gt; unit" Usage="System.Web.UI.Design.ControlPersister.PersistControl (sw, control, host)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlPersister.PersistInnerProperties(System.Object,System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PersistInnerProperties (component As Object, host As IDesignerHost) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PersistInnerProperties(System::Object ^ component, System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="static member PersistInnerProperties : obj * System.ComponentModel.Design.IDesignerHost -&gt; string" Usage="System.Web.UI.Design.ControlPersister.PersistInnerProperties (component, host)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlPersister.PersistInnerProperties(System.IO.TextWriter,System.Object,System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PersistInnerProperties (sw As TextWriter, component As Object, host As IDesignerHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PersistInnerProperties(System::IO::TextWriter ^ sw, System::Object ^ component, System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="static member PersistInnerProperties : System.IO.TextWriter * obj * System.ComponentModel.Design.IDesignerHost -&gt; unit" Usage="System.Web.UI.Design.ControlPersister.PersistInnerProperties (sw, component, host)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -282,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlPersister.PersistTemplate(System.Web.UI.ITemplate,System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PersistTemplate (template As ITemplate, host As IDesignerHost) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PersistTemplate(System::Web::UI::ITemplate ^ template, System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="static member PersistTemplate : System.Web.UI.ITemplate * System.ComponentModel.Design.IDesignerHost -&gt; string" Usage="System.Web.UI.Design.ControlPersister.PersistTemplate (template, host)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -318,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlPersister.PersistTemplate(System.IO.TextWriter,System.Web.UI.ITemplate,System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PersistTemplate (writer As TextWriter, template As ITemplate, host As IDesignerHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PersistTemplate(System::IO::TextWriter ^ writer, System::Web::UI::ITemplate ^ template, System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="static member PersistTemplate : System.IO.TextWriter * System.Web.UI.ITemplate * System.ComponentModel.Design.IDesignerHost -&gt; unit" Usage="System.Web.UI.Design.ControlPersister.PersistTemplate (writer, template, host)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

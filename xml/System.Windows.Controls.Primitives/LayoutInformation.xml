@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.LayoutInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class LayoutInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class LayoutInformation abstract sealed" />
+  <TypeSignature Language="F#" Value="type LayoutInformation = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutClip(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLayoutClip (element As FrameworkElement) As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Geometry ^ GetLayoutClip(System::Windows::FrameworkElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetLayoutClip : System.Windows.FrameworkElement -&gt; System.Windows.Media.Geometry" Usage="System.Windows.Controls.Primitives.LayoutInformation.GetLayoutClip element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.UIElement GetLayoutExceptionElement(class System.Windows.Threading.Dispatcher dispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutExceptionElement(System.Windows.Threading.Dispatcher)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::UIElement ^ GetLayoutExceptionElement(System::Windows::Threading::Dispatcher ^ dispatcher);" />
+      <MemberSignature Language="F#" Value="static member GetLayoutExceptionElement : System.Windows.Threading.Dispatcher -&gt; System.Windows.UIElement" Usage="System.Windows.Controls.Primitives.LayoutInformation.GetLayoutExceptionElement dispatcher" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLayoutSlot (element As FrameworkElement) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect GetLayoutSlot(System::Windows::FrameworkElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetLayoutSlot : System.Windows.FrameworkElement -&gt; System.Windows.Rect" Usage="System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

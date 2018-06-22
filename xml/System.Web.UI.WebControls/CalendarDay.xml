@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CalendarDay" />
   <TypeSignature Language="VB.NET" Value="Public Class CalendarDay" />
   <TypeSignature Language="C++ CLI" Value="public ref class CalendarDay" />
+  <TypeSignature Language="F#" Value="type CalendarDay = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CalendarDay.#ctor(System.DateTime,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (date As DateTime, isWeekend As Boolean, isToday As Boolean, isSelected As Boolean, isOtherMonth As Boolean, dayNumberText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarDay(DateTime date, bool isWeekend, bool isToday, bool isSelected, bool isOtherMonth, System::String ^ dayNumberText);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.CalendarDay : DateTime * bool * bool * bool * bool * string -&gt; System.Web.UI.WebControls.CalendarDay" Usage="new System.Web.UI.WebControls.CalendarDay (date, isWeekend, isToday, isSelected, isOtherMonth, dayNumberText)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CalendarDay.Date" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : DateTime" Usage="System.Web.UI.WebControls.CalendarDay.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CalendarDay.DayNumberText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayNumberText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DayNumberText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DayNumberText : string" Usage="System.Web.UI.WebControls.CalendarDay.DayNumberText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOtherMonth As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOtherMonth { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOtherMonth : bool" Usage="System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSelectable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelectable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSelectable : bool with get, set" Usage="System.Web.UI.WebControls.CalendarDay.IsSelectable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSelected : bool" Usage="System.Web.UI.WebControls.CalendarDay.IsSelected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsToday As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsToday { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsToday : bool" Usage="System.Web.UI.WebControls.CalendarDay.IsToday" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWeekend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWeekend { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsWeekend : bool" Usage="System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

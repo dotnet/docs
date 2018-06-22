@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.TupleElementNamesAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TupleElementNamesAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TupleElementNamesAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TupleElementNamesAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ValueTuple</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.TupleElementNamesAttribute.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transformNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TupleElementNamesAttribute(cli::array &lt;System::String ^&gt; ^ transformNames);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.TupleElementNamesAttribute : string[] -&gt; System.Runtime.CompilerServices.TupleElementNamesAttribute" Usage="new System.Runtime.CompilerServices.TupleElementNamesAttribute transformNames" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.TupleElementNamesAttribute.TransformNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransformNames As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ TransformNames { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformNames : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Runtime.CompilerServices.TupleElementNamesAttribute.TransformNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>

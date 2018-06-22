@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TouchEventArgs&#xA;Inherits InputEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TouchEventArgs : System::Windows::Input::InputEventArgs" />
+  <TypeSignature Language="F#" Value="type TouchEventArgs = class&#xA;    inherit InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.TouchDevice touchDevice, int32 timestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchEventArgs.#ctor(System.Windows.Input.TouchDevice,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TouchEventArgs(System::Windows::Input::TouchDevice ^ touchDevice, int timestamp);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.TouchEventArgs : System.Windows.Input.TouchDevice * int -&gt; System.Windows.Input.TouchEventArgs" Usage="new System.Windows.Input.TouchEventArgs (touchDevice, timestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchEventArgs.GetIntermediateTouchPoints(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIntermediateTouchPoints (relativeTo As IInputElement) As TouchPointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::TouchPointCollection ^ GetIntermediateTouchPoints(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="member this.GetIntermediateTouchPoints : System.Windows.IInputElement -&gt; System.Windows.Input.TouchPointCollection" Usage="touchEventArgs.GetIntermediateTouchPoints relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchEventArgs.GetTouchPoint(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTouchPoint (relativeTo As IInputElement) As TouchPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::TouchPoint ^ GetTouchPoint(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="member this.GetTouchPoint : System.Windows.IInputElement -&gt; System.Windows.Input.TouchPoint" Usage="touchEventArgs.GetTouchPoint relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="touchEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchEventArgs.TouchDevice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TouchDevice As TouchDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::TouchDevice ^ TouchDevice { System::Windows::Input::TouchDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TouchDevice : System.Windows.Input.TouchDevice" Usage="System.Windows.Input.TouchEventArgs.TouchDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

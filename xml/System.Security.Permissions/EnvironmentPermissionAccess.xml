@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.EnvironmentPermissionAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum EnvironmentPermissionAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class EnvironmentPermissionAccess" />
+  <TypeSignature Language="F#" Value="type EnvironmentPermissionAccess = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.EnvironmentPermissionAccess.AllAccess" />
       <MemberSignature Language="VB.NET" Value="AllAccess" />
       <MemberSignature Language="C++ CLI" Value="AllAccess" />
+      <MemberSignature Language="F#" Value="AllAccess = 3" Usage="System.Security.Permissions.EnvironmentPermissionAccess.AllAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.EnvironmentPermissionAccess.NoAccess" />
       <MemberSignature Language="VB.NET" Value="NoAccess" />
       <MemberSignature Language="C++ CLI" Value="NoAccess" />
+      <MemberSignature Language="F#" Value="NoAccess = 0" Usage="System.Security.Permissions.EnvironmentPermissionAccess.NoAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.Security.Permissions.EnvironmentPermissionAccess.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.EnvironmentPermissionAccess.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.Security.Permissions.EnvironmentPermissionAccess.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

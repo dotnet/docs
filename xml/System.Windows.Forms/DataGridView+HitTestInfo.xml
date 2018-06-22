@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridView.HitTestInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridView.HitTestInfo" />
   <TypeSignature Language="C++ CLI" Value="public: ref class DataGridView::HitTestInfo sealed" />
+  <TypeSignature Language="F#" Value="type DataGridView.HitTestInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnX" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnX As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnX { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnX : int" Usage="System.Windows.Forms.DataGridView.HitTestInfo.ColumnX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="hitTestInfo.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="hitTestInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridView.HitTestInfo.Nowhere" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Nowhere As DataGridView.HitTestInfo " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::DataGridView::HitTestInfo ^ Nowhere;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Nowhere : System.Windows.Forms.DataGridView.HitTestInfo" Usage="System.Windows.Forms.DataGridView.HitTestInfo.Nowhere" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Windows.Forms.DataGridView.HitTestInfo.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.RowY" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowY As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowY { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowY : int" Usage="System.Windows.Forms.DataGridView.HitTestInfo.RowY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -226,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="hitTestInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As DataGridViewHitTestType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewHitTestType Type { System::Windows::Forms::DataGridViewHitTestType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Windows.Forms.DataGridViewHitTestType" Usage="System.Windows.Forms.DataGridView.HitTestInfo.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

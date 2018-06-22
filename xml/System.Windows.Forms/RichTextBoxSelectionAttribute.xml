@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxSelectionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Enum RichTextBoxSelectionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public enum class RichTextBoxSelectionAttribute" />
+  <TypeSignature Language="F#" Value="type RichTextBoxSelectionAttribute = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxSelectionAttribute.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1" Usage="System.Windows.Forms.RichTextBoxSelectionAttribute.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxSelectionAttribute.Mixed" />
       <MemberSignature Language="VB.NET" Value="Mixed" />
       <MemberSignature Language="C++ CLI" Value="Mixed" />
+      <MemberSignature Language="F#" Value="Mixed = -1" Usage="System.Windows.Forms.RichTextBoxSelectionAttribute.Mixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxSelectionAttribute.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.RichTextBoxSelectionAttribute.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

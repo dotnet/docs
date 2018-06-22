@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataObjectEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataObjectEventArgs abstract : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type DataObjectEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectEventArgs.CancelCommand" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelCommand ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelCommand();" />
+      <MemberSignature Language="F#" Value="member this.CancelCommand : unit -&gt; unit" Usage="dataObjectEventArgs.CancelCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectEventArgs.CommandCancelled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandCancelled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CommandCancelled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandCancelled : bool" Usage="System.Windows.DataObjectEventArgs.CommandCancelled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectEventArgs.IsDragDrop" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDragDrop As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDragDrop { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDragDrop : bool" Usage="System.Windows.DataObjectEventArgs.IsDragDrop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

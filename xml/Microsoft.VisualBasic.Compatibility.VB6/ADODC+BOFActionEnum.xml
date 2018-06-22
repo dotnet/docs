@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOFActionEnum" />
   <TypeSignature Language="VB.NET" Value="Public Enum ADODC.BOFActionEnum" />
   <TypeSignature Language="C++ CLI" Value="public: enum class ADODC::BOFActionEnum" />
+  <TypeSignature Language="F#" Value="type ADODC.BOFActionEnum = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOFActionEnum.adDoMoveFirst" />
       <MemberSignature Language="VB.NET" Value="adDoMoveFirst" />
       <MemberSignature Language="C++ CLI" Value="adDoMoveFirst" />
+      <MemberSignature Language="F#" Value="adDoMoveFirst = 0" Usage="Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOFActionEnum.adDoMoveFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOFActionEnum.adStayBOF" />
       <MemberSignature Language="VB.NET" Value="adStayBOF" />
       <MemberSignature Language="C++ CLI" Value="adStayBOF" />
+      <MemberSignature Language="F#" Value="adStayBOF = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.ADODC.BOFActionEnum.adStayBOF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

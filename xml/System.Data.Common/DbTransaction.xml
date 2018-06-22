@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbTransaction" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbTransaction&#xA;Inherits MarshalByRefObject&#xA;Implements IDbTransaction, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbTransaction abstract : MarshalByRefObject, IDisposable, System::Data::IDbTransaction" />
+  <TypeSignature Language="F#" Value="type DbTransaction = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDbTransaction&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbTransaction.Commit" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Commit();" />
+      <MemberSignature Language="F#" Value="abstract member Commit : unit -&gt; unit" Usage="dbTransaction.Commit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbTransaction.Commit</InterfaceMember>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbTransaction.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbConnection ^ Connection { System::Data::Common::DbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.Common.DbConnection" Usage="System.Data.Common.DbTransaction.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbTransaction.DbConnection" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property DbConnection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection" Usage="System.Data.Common.DbTransaction.DbConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbTransaction.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="dbTransaction.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -238,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbTransaction.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dbTransaction.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -279,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbTransaction.IsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::IsolationLevel IsolationLevel { System::Data::IsolationLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Data.IsolationLevel" Usage="System.Data.Common.DbTransaction.IsolationLevel" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbTransaction.IsolationLevel</InterfaceMember>
@@ -313,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbTransaction.Rollback" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Rollback ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Rollback();" />
+      <MemberSignature Language="F#" Value="abstract member Rollback : unit -&gt; unit" Usage="dbTransaction.Rollback " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbTransaction.Rollback</InterfaceMember>
@@ -347,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbTransaction.System#Data#IDbTransaction#Connection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Connection As IDbConnection Implements IDbTransaction.Connection" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::IDbConnection ^ System.Data.IDbTransaction.Connection { System::Data::IDbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DbTransaction.System.Data.IDbTransaction.Connection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbTransaction.Connection</InterfaceMember>

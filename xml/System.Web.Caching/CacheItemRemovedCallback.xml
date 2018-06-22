@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemRemovedCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CacheItemRemovedCallback(key As String, value As Object, reason As CacheItemRemovedReason)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CacheItemRemovedCallback(System::String ^ key, System::Object ^ value, CacheItemRemovedReason reason);" />
+  <TypeSignature Language="F#" Value="type CacheItemRemovedCallback = delegate of string * obj * CacheItemRemovedReason -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamUpgradeAcceptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamUpgradeAcceptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamUpgradeAcceptor abstract" />
+  <TypeSignature Language="F#" Value="type StreamUpgradeAcceptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream AcceptUpgrade(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.AcceptUpgrade(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ AcceptUpgrade(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member AcceptUpgrade : System.IO.Stream -&gt; System.IO.Stream&#xA;override this.AcceptUpgrade : System.IO.Stream -&gt; System.IO.Stream" Usage="streamUpgradeAcceptor.AcceptUpgrade stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAcceptUpgrade(class System.IO.Stream stream, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.BeginAcceptUpgrade(System.IO.Stream,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginAcceptUpgrade(System::IO::Stream ^ stream, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAcceptUpgrade : System.IO.Stream * AsyncCallback * obj -&gt; IAsyncResult" Usage="streamUpgradeAcceptor.BeginAcceptUpgrade (stream, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CanUpgrade (contentType As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CanUpgrade(System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="abstract member CanUpgrade : string -&gt; bool" Usage="streamUpgradeAcceptor.CanUpgrade contentType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.EndAcceptUpgrade(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function EndAcceptUpgrade (result As IAsyncResult) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::Stream ^ EndAcceptUpgrade(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndAcceptUpgrade : IAsyncResult -&gt; System.IO.Stream" Usage="streamUpgradeAcceptor.EndAcceptUpgrade result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

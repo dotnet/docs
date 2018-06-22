@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Numerics.Vector" />
   <TypeSignature Language="VB.NET" Value="Public Class Vector" />
   <TypeSignature Language="C++ CLI" Value="public ref class Vector abstract sealed" />
+  <TypeSignature Language="F#" Value="type Vector = class" />
   <AssemblyInfo>
     <AssemblyName>System.Numerics.Vectors</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Abs``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs(Of T As Structure) (value As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Abs(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member Abs : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Add``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Add(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Add (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AndNot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AndNot(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; AndNot(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member AndNot : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AndNot (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorByte``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorByte(Of T As Structure) (value As Vector(Of T)) As Vector(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;System::Byte&gt; AsVectorByte(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorByte : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;byte&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorDouble``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorDouble(Of T As Structure) (value As Vector(Of T)) As Vector(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;double&gt; AsVectorDouble(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorDouble : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;double&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorInt16``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorInt16(Of T As Structure) (value As Vector(Of T)) As Vector(Of Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;short&gt; AsVectorInt16(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorInt16 : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;int16&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorInt16 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -294,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorInt32``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorInt32(Of T As Structure) (value As Vector(Of T)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;int&gt; AsVectorInt32(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorInt32 : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;int&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -337,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorInt64``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorInt64(Of T As Structure) (value As Vector(Of T)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;long&gt; AsVectorInt64(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorInt64 : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;int64&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -380,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorSByte``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorSByte(Of T As Structure) (value As Vector(Of T)) As Vector(Of SByte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;System::SByte&gt; AsVectorSByte(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorSByte : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;sbyte&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorSByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -428,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorSingle``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorSingle(Of T As Structure) (value As Vector(Of T)) As Vector(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;float&gt; AsVectorSingle(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorSingle : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;single&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorSingle value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -471,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorUInt16``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorUInt16(Of T As Structure) (value As Vector(Of T)) As Vector(Of UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;System::UInt16&gt; AsVectorUInt16(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorUInt16 : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;uint16&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorUInt16 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -519,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorUInt32``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorUInt32(Of T As Structure) (value As Vector(Of T)) As Vector(Of UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;System::UInt32&gt; AsVectorUInt32(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorUInt32 : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;uint32&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorUInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -567,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.AsVectorUInt64``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsVectorUInt64(Of T As Structure) (value As Vector(Of T)) As Vector(Of ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;System::UInt64&gt; AsVectorUInt64(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member AsVectorUInt64 : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;uint64&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.AsVectorUInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -615,6 +629,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.BitwiseAnd``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BitwiseAnd(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; BitwiseAnd(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member BitwiseAnd : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.BitwiseAnd (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -660,6 +675,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.BitwiseOr``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BitwiseOr(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; BitwiseOr(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member BitwiseOr : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.BitwiseOr (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -705,6 +721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalSelect (condition As Vector(Of Integer), left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;float&gt; ConditionalSelect(System::Numerics::Vector&lt;int&gt; condition, System::Numerics::Vector&lt;float&gt; left, System::Numerics::Vector&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member ConditionalSelect : System.Numerics.Vector&lt;int&gt; * System.Numerics.Vector&lt;single&gt; * System.Numerics.Vector&lt;single&gt; -&gt; System.Numerics.Vector&lt;single&gt;" Usage="System.Numerics.Vector.ConditionalSelect (condition, left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -742,6 +759,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalSelect (condition As Vector(Of Long), left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;double&gt; ConditionalSelect(System::Numerics::Vector&lt;long&gt; condition, System::Numerics::Vector&lt;double&gt; left, System::Numerics::Vector&lt;double&gt; right);" />
+      <MemberSignature Language="F#" Value="static member ConditionalSelect : System.Numerics.Vector&lt;int64&gt; * System.Numerics.Vector&lt;double&gt; * System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;double&gt;" Usage="System.Numerics.Vector.ConditionalSelect (condition, left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -779,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConditionalSelect``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalSelect(Of T As Structure) (condition As Vector(Of T), left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; ConditionalSelect(System::Numerics::Vector&lt;T&gt; condition, System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member ConditionalSelect : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.ConditionalSelect (condition, left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -826,6 +845,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConvertToDouble(System.Numerics.Vector{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToDouble (value As Vector(Of Long)) As Vector(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;double&gt; ConvertToDouble(System::Numerics::Vector&lt;long&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToDouble : System.Numerics.Vector&lt;int64&gt; -&gt; System.Numerics.Vector&lt;double&gt;" Usage="System.Numerics.Vector.ConvertToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -851,6 +871,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConvertToDouble(System.Numerics.Vector{System.UInt64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToDouble (value As Vector(Of ULong)) As Vector(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;double&gt; ConvertToDouble(System::Numerics::Vector&lt;System::UInt64&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToDouble : System.Numerics.Vector&lt;uint64&gt; -&gt; System.Numerics.Vector&lt;double&gt;" Usage="System.Numerics.Vector.ConvertToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -881,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConvertToInt32(System.Numerics.Vector{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToInt32 (value As Vector(Of Single)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; ConvertToInt32(System::Numerics::Vector&lt;float&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToInt32 : System.Numerics.Vector&lt;single&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.ConvertToInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -906,6 +928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConvertToInt64(System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToInt64 (value As Vector(Of Double)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; ConvertToInt64(System::Numerics::Vector&lt;double&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToInt64 : System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.ConvertToInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -931,6 +954,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConvertToSingle(System.Numerics.Vector{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToSingle (value As Vector(Of Integer)) As Vector(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;float&gt; ConvertToSingle(System::Numerics::Vector&lt;int&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToSingle : System.Numerics.Vector&lt;int&gt; -&gt; System.Numerics.Vector&lt;single&gt;" Usage="System.Numerics.Vector.ConvertToSingle value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -956,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConvertToSingle(System.Numerics.Vector{System.UInt32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToSingle (value As Vector(Of UInteger)) As Vector(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;float&gt; ConvertToSingle(System::Numerics::Vector&lt;System::UInt32&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToSingle : System.Numerics.Vector&lt;uint32&gt; -&gt; System.Numerics.Vector&lt;single&gt;" Usage="System.Numerics.Vector.ConvertToSingle value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -986,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConvertToUInt32(System.Numerics.Vector{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToUInt32 (value As Vector(Of Single)) As Vector(Of UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;System::UInt32&gt; ConvertToUInt32(System::Numerics::Vector&lt;float&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToUInt32 : System.Numerics.Vector&lt;single&gt; -&gt; System.Numerics.Vector&lt;uint32&gt;" Usage="System.Numerics.Vector.ConvertToUInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1016,6 +1042,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.ConvertToUInt64(System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToUInt64 (value As Vector(Of Double)) As Vector(Of ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;System::UInt64&gt; ConvertToUInt64(System::Numerics::Vector&lt;double&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToUInt64 : System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;uint64&gt;" Usage="System.Numerics.Vector.ConvertToUInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1046,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Divide``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Divide(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Divide (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1091,6 +1119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Dot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dot(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static T Dot(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Dot : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; 'T (requires 'T : struct)" Usage="System.Numerics.Vector.Dot (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1136,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Equals(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; Equals(System::Numerics::Vector&lt;double&gt; left, System::Numerics::Vector&lt;double&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Numerics.Vector&lt;double&gt; * System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.Equals (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1171,6 +1201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Equals(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; Equals(System::Numerics::Vector&lt;int&gt; left, System::Numerics::Vector&lt;int&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Numerics.Vector&lt;int&gt; * System.Numerics.Vector&lt;int&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.Equals (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1206,6 +1237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Equals(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; Equals(System::Numerics::Vector&lt;long&gt; left, System::Numerics::Vector&lt;long&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Numerics.Vector&lt;int64&gt; * System.Numerics.Vector&lt;int64&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.Equals (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1241,6 +1273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Equals(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; Equals(System::Numerics::Vector&lt;float&gt; left, System::Numerics::Vector&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Numerics.Vector&lt;single&gt; * System.Numerics.Vector&lt;single&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.Equals (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1276,6 +1309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Equals``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Equals(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Equals (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1321,6 +1355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.EqualsAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EqualsAll(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool EqualsAll(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member EqualsAll : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.EqualsAll (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1367,6 +1402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.EqualsAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EqualsAny(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool EqualsAny(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member EqualsAny : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.EqualsAny (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1413,6 +1449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; GreaterThan(System::Numerics::Vector&lt;double&gt; left, System::Numerics::Vector&lt;double&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Numerics.Vector&lt;double&gt; * System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.GreaterThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1448,6 +1485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; GreaterThan(System::Numerics::Vector&lt;int&gt; left, System::Numerics::Vector&lt;int&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Numerics.Vector&lt;int&gt; * System.Numerics.Vector&lt;int&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.GreaterThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1483,6 +1521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; GreaterThan(System::Numerics::Vector&lt;long&gt; left, System::Numerics::Vector&lt;long&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Numerics.Vector&lt;int64&gt; * System.Numerics.Vector&lt;int64&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.GreaterThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1518,6 +1557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; GreaterThan(System::Numerics::Vector&lt;float&gt; left, System::Numerics::Vector&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Numerics.Vector&lt;single&gt; * System.Numerics.Vector&lt;single&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.GreaterThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1553,6 +1593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; GreaterThan(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.GreaterThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1598,6 +1639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanAll(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool GreaterThanAll(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanAll : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.GreaterThanAll (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1644,6 +1686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanAny(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool GreaterThanAny(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanAny : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.GreaterThanAny (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1690,6 +1733,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; GreaterThanOrEqual(System::Numerics::Vector&lt;double&gt; left, System::Numerics::Vector&lt;double&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Numerics.Vector&lt;double&gt; * System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.GreaterThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1725,6 +1769,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; GreaterThanOrEqual(System::Numerics::Vector&lt;int&gt; left, System::Numerics::Vector&lt;int&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Numerics.Vector&lt;int&gt; * System.Numerics.Vector&lt;int&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.GreaterThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1760,6 +1805,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; GreaterThanOrEqual(System::Numerics::Vector&lt;long&gt; left, System::Numerics::Vector&lt;long&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Numerics.Vector&lt;int64&gt; * System.Numerics.Vector&lt;int64&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.GreaterThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1795,6 +1841,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; GreaterThanOrEqual(System::Numerics::Vector&lt;float&gt; left, System::Numerics::Vector&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Numerics.Vector&lt;single&gt; * System.Numerics.Vector&lt;single&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.GreaterThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1830,6 +1877,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; GreaterThanOrEqual(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.GreaterThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1875,6 +1923,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqualAll(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool GreaterThanOrEqualAll(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqualAll : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.GreaterThanOrEqualAll (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1921,6 +1970,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.GreaterThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqualAny(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool GreaterThanOrEqualAny(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqualAny : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.GreaterThanOrEqualAny (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1967,6 +2017,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector.IsHardwareAccelerated" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsHardwareAccelerated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsHardwareAccelerated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHardwareAccelerated : bool" Usage="System.Numerics.Vector.IsHardwareAccelerated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2004,6 +2055,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; LessThan(System::Numerics::Vector&lt;double&gt; left, System::Numerics::Vector&lt;double&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Numerics.Vector&lt;double&gt; * System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.LessThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2039,6 +2091,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; LessThan(System::Numerics::Vector&lt;int&gt; left, System::Numerics::Vector&lt;int&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Numerics.Vector&lt;int&gt; * System.Numerics.Vector&lt;int&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.LessThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2074,6 +2127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; LessThan(System::Numerics::Vector&lt;long&gt; left, System::Numerics::Vector&lt;long&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Numerics.Vector&lt;int64&gt; * System.Numerics.Vector&lt;int64&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.LessThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2109,6 +2163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; LessThan(System::Numerics::Vector&lt;float&gt; left, System::Numerics::Vector&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Numerics.Vector&lt;single&gt; * System.Numerics.Vector&lt;single&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.LessThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2144,6 +2199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; LessThan(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.LessThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2189,6 +2245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanAll(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool LessThanAll(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanAll : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.LessThanAll (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2235,6 +2292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanAny(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool LessThanAny(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanAny : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.LessThanAny (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2281,6 +2339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; LessThanOrEqual(System::Numerics::Vector&lt;double&gt; left, System::Numerics::Vector&lt;double&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Numerics.Vector&lt;double&gt; * System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.LessThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2316,6 +2375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; LessThanOrEqual(System::Numerics::Vector&lt;int&gt; left, System::Numerics::Vector&lt;int&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Numerics.Vector&lt;int&gt; * System.Numerics.Vector&lt;int&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.LessThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2351,6 +2411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;long&gt; LessThanOrEqual(System::Numerics::Vector&lt;long&gt; left, System::Numerics::Vector&lt;long&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Numerics.Vector&lt;int64&gt; * System.Numerics.Vector&lt;int64&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector.LessThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2386,6 +2447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; LessThanOrEqual(System::Numerics::Vector&lt;float&gt; left, System::Numerics::Vector&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Numerics.Vector&lt;single&gt; * System.Numerics.Vector&lt;single&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.LessThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2421,6 +2483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; LessThanOrEqual(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.LessThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2466,6 +2529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqualAll(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool LessThanOrEqualAll(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqualAll : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.LessThanOrEqualAll (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2512,6 +2576,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.LessThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqualAny(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool LessThanOrEqualAny(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqualAny : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Numerics.Vector.LessThanOrEqualAny (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2558,6 +2623,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Max``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Max(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Max : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Max (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2603,6 +2669,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Min``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Min(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Min : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Min (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2648,6 +2715,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Multiply``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Multiply(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Multiply (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2693,6 +2761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Multiply``1(System.Numerics.Vector{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply(Of T As Structure) (left As Vector(Of T), right As T) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Multiply(System::Numerics::Vector&lt;T&gt; left, T right);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * 'T -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Multiply (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2738,6 +2807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Multiply``1(``0,System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply(Of T As Structure) (left As T, right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Multiply(T left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Multiply : 'T * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Multiply (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2783,6 +2853,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Narrow(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Narrow (source1 As Vector(Of Double), source2 As Vector(Of Double)) As Vector(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;float&gt; Narrow(System::Numerics::Vector&lt;double&gt; source1, System::Numerics::Vector&lt;double&gt; source2);" />
+      <MemberSignature Language="F#" Value="static member Narrow : System.Numerics.Vector&lt;double&gt; * System.Numerics.Vector&lt;double&gt; -&gt; System.Numerics.Vector&lt;single&gt;" Usage="System.Numerics.Vector.Narrow (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2810,6 +2881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Narrow(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Narrow (source1 As Vector(Of Short), source2 As Vector(Of Short)) As Vector(Of SByte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;System::SByte&gt; Narrow(System::Numerics::Vector&lt;short&gt; source1, System::Numerics::Vector&lt;short&gt; source2);" />
+      <MemberSignature Language="F#" Value="static member Narrow : System.Numerics.Vector&lt;int16&gt; * System.Numerics.Vector&lt;int16&gt; -&gt; System.Numerics.Vector&lt;sbyte&gt;" Usage="System.Numerics.Vector.Narrow (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2842,6 +2914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Narrow(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Narrow (source1 As Vector(Of Integer), source2 As Vector(Of Integer)) As Vector(Of Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;short&gt; Narrow(System::Numerics::Vector&lt;int&gt; source1, System::Numerics::Vector&lt;int&gt; source2);" />
+      <MemberSignature Language="F#" Value="static member Narrow : System.Numerics.Vector&lt;int&gt; * System.Numerics.Vector&lt;int&gt; -&gt; System.Numerics.Vector&lt;int16&gt;" Usage="System.Numerics.Vector.Narrow (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2869,6 +2942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Narrow(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Narrow (source1 As Vector(Of Long), source2 As Vector(Of Long)) As Vector(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;int&gt; Narrow(System::Numerics::Vector&lt;long&gt; source1, System::Numerics::Vector&lt;long&gt; source2);" />
+      <MemberSignature Language="F#" Value="static member Narrow : System.Numerics.Vector&lt;int64&gt; * System.Numerics.Vector&lt;int64&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector.Narrow (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2896,6 +2970,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Narrow(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Narrow (source1 As Vector(Of UShort), source2 As Vector(Of UShort)) As Vector(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;System::Byte&gt; Narrow(System::Numerics::Vector&lt;System::UInt16&gt; source1, System::Numerics::Vector&lt;System::UInt16&gt; source2);" />
+      <MemberSignature Language="F#" Value="static member Narrow : System.Numerics.Vector&lt;uint16&gt; * System.Numerics.Vector&lt;uint16&gt; -&gt; System.Numerics.Vector&lt;byte&gt;" Usage="System.Numerics.Vector.Narrow (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2928,6 +3003,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Narrow(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Narrow (source1 As Vector(Of UInteger), source2 As Vector(Of UInteger)) As Vector(Of UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;System::UInt16&gt; Narrow(System::Numerics::Vector&lt;System::UInt32&gt; source1, System::Numerics::Vector&lt;System::UInt32&gt; source2);" />
+      <MemberSignature Language="F#" Value="static member Narrow : System.Numerics.Vector&lt;uint32&gt; * System.Numerics.Vector&lt;uint32&gt; -&gt; System.Numerics.Vector&lt;uint16&gt;" Usage="System.Numerics.Vector.Narrow (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2960,6 +3036,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Narrow(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Narrow (source1 As Vector(Of ULong), source2 As Vector(Of ULong)) As Vector(Of UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;System::UInt32&gt; Narrow(System::Numerics::Vector&lt;System::UInt64&gt; source1, System::Numerics::Vector&lt;System::UInt64&gt; source2);" />
+      <MemberSignature Language="F#" Value="static member Narrow : System.Numerics.Vector&lt;uint64&gt; * System.Numerics.Vector&lt;uint64&gt; -&gt; System.Numerics.Vector&lt;uint32&gt;" Usage="System.Numerics.Vector.Narrow (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2992,6 +3069,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Negate``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Negate(Of T As Structure) (value As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Negate(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member Negate : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Negate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3035,6 +3113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.OnesComplement``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OnesComplement(Of T As Structure) (value As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; OnesComplement(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member OnesComplement : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.OnesComplement value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3078,6 +3157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.SquareRoot``1(System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SquareRoot(Of T As Structure) (value As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; SquareRoot(System::Numerics::Vector&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SquareRoot : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.SquareRoot value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3121,6 +3201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Subtract``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Subtract(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Subtract (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3166,6 +3247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.UInt16}@,System.Numerics.Vector{System.UInt16}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Widen (source As Vector(Of Byte), ByRef dest1 As Vector(Of UShort), ByRef dest2 As Vector(Of UShort))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Widen(System::Numerics::Vector&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;System::UInt16&gt; % dest1, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;System::UInt16&gt; % dest2);" />
+      <MemberSignature Language="F#" Value="static member Widen : System.Numerics.Vector&lt;byte&gt; *  *  -&gt; unit" Usage="System.Numerics.Vector.Widen (source, dest1, dest2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3199,6 +3281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int32}@,System.Numerics.Vector{System.Int32}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Widen (source As Vector(Of Short), ByRef dest1 As Vector(Of Integer), ByRef dest2 As Vector(Of Integer))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Widen(System::Numerics::Vector&lt;short&gt; source, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;int&gt; % dest1, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;int&gt; % dest2);" />
+      <MemberSignature Language="F#" Value="static member Widen : System.Numerics.Vector&lt;int16&gt; *  *  -&gt; unit" Usage="System.Numerics.Vector.Widen (source, dest1, dest2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3227,6 +3310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int64}@,System.Numerics.Vector{System.Int64}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Widen (source As Vector(Of Integer), ByRef dest1 As Vector(Of Long), ByRef dest2 As Vector(Of Long))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Widen(System::Numerics::Vector&lt;int&gt; source, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;long&gt; % dest1, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;long&gt; % dest2);" />
+      <MemberSignature Language="F#" Value="static member Widen : System.Numerics.Vector&lt;int&gt; *  *  -&gt; unit" Usage="System.Numerics.Vector.Widen (source, dest1, dest2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3255,6 +3339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.Int16}@,System.Numerics.Vector{System.Int16}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Widen (source As Vector(Of SByte), ByRef dest1 As Vector(Of Short), ByRef dest2 As Vector(Of Short))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Widen(System::Numerics::Vector&lt;System::SByte&gt; source, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;short&gt; % dest1, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;short&gt; % dest2);" />
+      <MemberSignature Language="F#" Value="static member Widen : System.Numerics.Vector&lt;sbyte&gt; *  *  -&gt; unit" Usage="System.Numerics.Vector.Widen (source, dest1, dest2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3288,6 +3373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Double}@,System.Numerics.Vector{System.Double}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Widen (source As Vector(Of Single), ByRef dest1 As Vector(Of Double), ByRef dest2 As Vector(Of Double))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Widen(System::Numerics::Vector&lt;float&gt; source, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;double&gt; % dest1, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;double&gt; % dest2);" />
+      <MemberSignature Language="F#" Value="static member Widen : System.Numerics.Vector&lt;single&gt; *  *  -&gt; unit" Usage="System.Numerics.Vector.Widen (source, dest1, dest2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3316,6 +3402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt32}@,System.Numerics.Vector{System.UInt32}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Widen (source As Vector(Of UShort), ByRef dest1 As Vector(Of UInteger), ByRef dest2 As Vector(Of UInteger))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Widen(System::Numerics::Vector&lt;System::UInt16&gt; source, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;System::UInt32&gt; % dest1, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;System::UInt32&gt; % dest2);" />
+      <MemberSignature Language="F#" Value="static member Widen : System.Numerics.Vector&lt;uint16&gt; *  *  -&gt; unit" Usage="System.Numerics.Vector.Widen (source, dest1, dest2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3349,6 +3436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt64}@,System.Numerics.Vector{System.UInt64}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Widen (source As Vector(Of UInteger), ByRef dest1 As Vector(Of ULong), ByRef dest2 As Vector(Of ULong))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Widen(System::Numerics::Vector&lt;System::UInt32&gt; source, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;System::UInt64&gt; % dest1, [Runtime::InteropServices::Out] System::Numerics::Vector&lt;System::UInt64&gt; % dest2);" />
+      <MemberSignature Language="F#" Value="static member Widen : System.Numerics.Vector&lt;uint32&gt; *  *  -&gt; unit" Usage="System.Numerics.Vector.Widen (source, dest1, dest2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -3382,6 +3470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Xor``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Xor(Of T As Structure) (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static System::Numerics::Vector&lt;T&gt; Xor(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Xor : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="System.Numerics.Vector.Xor (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.Validator" />
   <TypeSignature Language="VB.NET" Value="Public Class Validator" />
   <TypeSignature Language="C++ CLI" Value="public ref class Validator" />
+  <TypeSignature Language="F#" Value="type Validator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.Validator.GetFullPropertyName(System.Workflow.ComponentModel.Compiler.ValidationManager)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetFullPropertyName (manager As ValidationManager) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetFullPropertyName(System::Workflow::ComponentModel::Compiler::ValidationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="member this.GetFullPropertyName : System.Workflow.ComponentModel.Compiler.ValidationManager -&gt; string" Usage="validator.GetFullPropertyName manager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.Validator.Validate(System.Workflow.ComponentModel.Compiler.ValidationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Validate (manager As ValidationManager, obj As Object) As ValidationErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Validate(System::Workflow::ComponentModel::Compiler::ValidationManager ^ manager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.Workflow.ComponentModel.Compiler.ValidationManager * obj -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection&#xA;override this.Validate : System.Workflow.ComponentModel.Compiler.ValidationManager * obj -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="validator.Validate (manager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Workflow.ComponentModel.Compiler.ValidationError ValidateActivityChange(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.ComponentModel.ActivityChangeAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.Validator.ValidateActivityChange(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.ActivityChangeAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Workflow::ComponentModel::Compiler::ValidationError ^ ValidateActivityChange(System::Workflow::ComponentModel::Activity ^ activity, System::Workflow::ComponentModel::ActivityChangeAction ^ action);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateActivityChange : System.Workflow.ComponentModel.Activity * System.Workflow.ComponentModel.ActivityChangeAction -&gt; System.Workflow.ComponentModel.Compiler.ValidationError&#xA;override this.ValidateActivityChange : System.Workflow.ComponentModel.Activity * System.Workflow.ComponentModel.ActivityChangeAction -&gt; System.Workflow.ComponentModel.Compiler.ValidationError" Usage="validator.ValidateActivityChange (activity, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.Validator.ValidateProperties(System.Workflow.ComponentModel.Compiler.ValidationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ValidateProperties (manager As ValidationManager, obj As Object) As ValidationErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ ValidateProperties(System::Workflow::ComponentModel::Compiler::ValidationManager ^ manager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateProperties : System.Workflow.ComponentModel.Compiler.ValidationManager * obj -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection&#xA;override this.ValidateProperties : System.Workflow.ComponentModel.Compiler.ValidationManager * obj -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="validator.ValidateProperties (manager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateProperty(class System.Reflection.PropertyInfo propertyInfo, object propertyOwner, object propertyValue, class System.Workflow.ComponentModel.Compiler.ValidationManager manager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.Validator.ValidateProperty(System.Reflection.PropertyInfo,System.Object,System.Object,System.Workflow.ComponentModel.Compiler.ValidationManager)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ ValidateProperty(System::Reflection::PropertyInfo ^ propertyInfo, System::Object ^ propertyOwner, System::Object ^ propertyValue, System::Workflow::ComponentModel::Compiler::ValidationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="member this.ValidateProperty : System.Reflection.PropertyInfo * obj * obj * System.Workflow.ComponentModel.Compiler.ValidationManager -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="validator.ValidateProperty (propertyInfo, propertyOwner, propertyValue, manager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ICollectionView" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICollectionView&#xA;Implements IEnumerable, INotifyCollectionChanged" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICollectionView : System::Collections::IEnumerable, System::Collections::Specialized::INotifyCollectionChanged" />
+  <TypeSignature Language="F#" Value="type ICollectionView = interface&#xA;    interface IEnumerable&#xA;    interface INotifyCollectionChanged" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.CanFilter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanFilter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanFilter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanFilter : bool" Usage="System.ComponentModel.ICollectionView.CanFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.CanGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGroup As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGroup { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanGroup : bool" Usage="System.ComponentModel.ICollectionView.CanGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.CanSort" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanSort As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanSort { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSort : bool" Usage="System.ComponentModel.ICollectionView.CanSort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool" Usage="iCollectionView.Contains item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.ComponentModel.ICollectionView.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.ICollectionView.CurrentChanged" />
       <MemberSignature Language="VB.NET" Value="Event CurrentChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentChanged;" />
+      <MemberSignature Language="F#" Value="member this.CurrentChanged : EventHandler " Usage="member this.CurrentChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.ICollectionView.CurrentChanging" />
       <MemberSignature Language="VB.NET" Value="Event CurrentChanging As CurrentChangingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CurrentChangingEventHandler ^ CurrentChanging;" />
+      <MemberSignature Language="F#" Value="member this.CurrentChanging : System.ComponentModel.CurrentChangingEventHandler " Usage="member this.CurrentChanging : System.ComponentModel.CurrentChangingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -210,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.CurrentItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CurrentItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentItem : obj" Usage="System.ComponentModel.ICollectionView.CurrentItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -231,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.CurrentPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentPosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentPosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPosition : int" Usage="System.ComponentModel.ICollectionView.CurrentPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -252,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.DeferRefresh" />
       <MemberSignature Language="VB.NET" Value="Public Function DeferRefresh () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ DeferRefresh();" />
+      <MemberSignature Language="F#" Value="abstract member DeferRefresh : unit -&gt; IDisposable" Usage="iCollectionView.DeferRefresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -274,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As Predicate(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Predicate&lt;System::Object ^&gt; ^ Filter { Predicate&lt;System::Object ^&gt; ^ get(); void set(Predicate&lt;System::Object ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : Predicate&lt;obj&gt; with get, set" Usage="System.ComponentModel.ICollectionView.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -295,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.GroupDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupDescriptions As ObservableCollection(Of GroupDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ GroupDescriptions { System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupDescriptions : System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt;" Usage="System.ComponentModel.ICollectionView.GroupDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -316,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.Groups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Groups As ReadOnlyObservableCollection(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Object ^&gt; ^ Groups { System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Groups : System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;obj&gt;" Usage="System.ComponentModel.ICollectionView.Groups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -337,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.IsCurrentAfterLast" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCurrentAfterLast As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCurrentAfterLast { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCurrentAfterLast : bool" Usage="System.ComponentModel.ICollectionView.IsCurrentAfterLast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -358,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.IsCurrentBeforeFirst" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCurrentBeforeFirst As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCurrentBeforeFirst { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCurrentBeforeFirst : bool" Usage="System.ComponentModel.ICollectionView.IsCurrentBeforeFirst" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -379,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.ComponentModel.ICollectionView.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -400,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.MoveCurrentTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveCurrentTo (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveCurrentTo(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member MoveCurrentTo : obj -&gt; bool" Usage="iCollectionView.MoveCurrentTo item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -426,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.MoveCurrentToFirst" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveCurrentToFirst () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveCurrentToFirst();" />
+      <MemberSignature Language="F#" Value="abstract member MoveCurrentToFirst : unit -&gt; bool" Usage="iCollectionView.MoveCurrentToFirst " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -449,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.MoveCurrentToLast" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveCurrentToLast () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveCurrentToLast();" />
+      <MemberSignature Language="F#" Value="abstract member MoveCurrentToLast : unit -&gt; bool" Usage="iCollectionView.MoveCurrentToLast " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -472,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.MoveCurrentToNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveCurrentToNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveCurrentToNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveCurrentToNext : unit -&gt; bool" Usage="iCollectionView.MoveCurrentToNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -495,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.MoveCurrentToPosition(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveCurrentToPosition (position As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveCurrentToPosition(int position);" />
+      <MemberSignature Language="F#" Value="abstract member MoveCurrentToPosition : int -&gt; bool" Usage="iCollectionView.MoveCurrentToPosition position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -521,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.MoveCurrentToPrevious" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveCurrentToPrevious () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveCurrentToPrevious();" />
+      <MemberSignature Language="F#" Value="abstract member MoveCurrentToPrevious : unit -&gt; bool" Usage="iCollectionView.MoveCurrentToPrevious " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -544,6 +567,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICollectionView.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="F#" Value="abstract member Refresh : unit -&gt; unit" Usage="iCollectionView.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -565,6 +589,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.SortDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortDescriptions As SortDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::SortDescriptionCollection ^ SortDescriptions { System::ComponentModel::SortDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.SortDescriptionCollection" Usage="System.ComponentModel.ICollectionView.SortDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -586,6 +611,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionView.SourceCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceCollection As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ SourceCollection { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceCollection : System.Collections.IEnumerable" Usage="System.ComponentModel.ICollectionView.SourceCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewInsertEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DetailsViewInsertEventHandler(sender As Object, e As DetailsViewInsertEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DetailsViewInsertEventHandler(System::Object ^ sender, DetailsViewInsertEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DetailsViewInsertEventHandler = delegate of obj * DetailsViewInsertEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.SaveChangesOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum SaveChangesOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class SaveChangesOptions" />
+  <TypeSignature Language="F#" Value="type SaveChangesOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.SaveChangesOptions.Batch" />
       <MemberSignature Language="VB.NET" Value="Batch" />
       <MemberSignature Language="C++ CLI" Value="Batch" />
+      <MemberSignature Language="F#" Value="Batch = 1" Usage="System.Data.Services.Client.SaveChangesOptions.Batch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.SaveChangesOptions.ContinueOnError" />
       <MemberSignature Language="VB.NET" Value="ContinueOnError" />
       <MemberSignature Language="C++ CLI" Value="ContinueOnError" />
+      <MemberSignature Language="F#" Value="ContinueOnError = 2" Usage="System.Data.Services.Client.SaveChangesOptions.ContinueOnError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.SaveChangesOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Services.Client.SaveChangesOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.SaveChangesOptions.ReplaceOnUpdate" />
       <MemberSignature Language="VB.NET" Value="ReplaceOnUpdate" />
       <MemberSignature Language="C++ CLI" Value="ReplaceOnUpdate" />
+      <MemberSignature Language="F#" Value="ReplaceOnUpdate = 4" Usage="System.Data.Services.Client.SaveChangesOptions.ReplaceOnUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

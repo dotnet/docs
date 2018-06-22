@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RepeaterCommandEventArgs&#xA;Inherits CommandEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RepeaterCommandEventArgs : System::Web::UI::WebControls::CommandEventArgs" />
+  <TypeSignature Language="F#" Value="type RepeaterCommandEventArgs = class&#xA;    inherit CommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RepeaterCommandEventArgs.#ctor(System.Web.UI.WebControls.RepeaterItem,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As RepeaterItem, commandSource As Object, originalArgs As CommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RepeaterCommandEventArgs(System::Web::UI::WebControls::RepeaterItem ^ item, System::Object ^ commandSource, System::Web::UI::WebControls::CommandEventArgs ^ originalArgs);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.RepeaterCommandEventArgs : System.Web.UI.WebControls.RepeaterItem * obj * System.Web.UI.WebControls.CommandEventArgs -&gt; System.Web.UI.WebControls.RepeaterCommandEventArgs" Usage="new System.Web.UI.WebControls.RepeaterCommandEventArgs (item, commandSource, originalArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeaterCommandEventArgs.CommandSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandSource { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandSource : obj" Usage="System.Web.UI.WebControls.RepeaterCommandEventArgs.CommandSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeaterCommandEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As RepeaterItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::RepeaterItem ^ Item { System::Web::UI::WebControls::RepeaterItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Web.UI.WebControls.RepeaterItem" Usage="System.Web.UI.WebControls.RepeaterCommandEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueuePermissionEntryCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQueuePermissionEntryCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQueuePermissionEntryCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type MessageQueuePermissionEntryCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.Add(System.Messaging.MessageQueuePermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As MessageQueuePermissionEntry) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Messaging::MessageQueuePermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Messaging.MessageQueuePermissionEntry -&gt; int" Usage="messageQueuePermissionEntryCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.AddRange(System.Messaging.MessageQueuePermissionEntry[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As MessageQueuePermissionEntry())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Messaging::MessageQueuePermissionEntry ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Messaging.MessageQueuePermissionEntry[] -&gt; unit" Usage="messageQueuePermissionEntryCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.AddRange(System.Messaging.MessageQueuePermissionEntryCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As MessageQueuePermissionEntryCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Messaging::MessageQueuePermissionEntryCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Messaging.MessageQueuePermissionEntryCollection -&gt; unit" Usage="messageQueuePermissionEntryCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.Contains(System.Messaging.MessageQueuePermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As MessageQueuePermissionEntry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Messaging::MessageQueuePermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Messaging.MessageQueuePermissionEntry -&gt; bool" Usage="messageQueuePermissionEntryCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.CopyTo(System.Messaging.MessageQueuePermissionEntry[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MessageQueuePermissionEntry(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Messaging::MessageQueuePermissionEntry ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Messaging.MessageQueuePermissionEntry[] * int -&gt; unit" Usage="messageQueuePermissionEntryCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.IndexOf(System.Messaging.MessageQueuePermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As MessageQueuePermissionEntry) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Messaging::MessageQueuePermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Messaging.MessageQueuePermissionEntry -&gt; int" Usage="messageQueuePermissionEntryCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.Insert(System.Int32,System.Messaging.MessageQueuePermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As MessageQueuePermissionEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Messaging::MessageQueuePermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Messaging.MessageQueuePermissionEntry -&gt; unit" Usage="messageQueuePermissionEntryCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -286,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionEntryCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As MessageQueuePermissionEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::MessageQueuePermissionEntry ^ default[int] { System::Messaging::MessageQueuePermissionEntry ^ get(int index); void set(int index, System::Messaging::MessageQueuePermissionEntry ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Messaging.MessageQueuePermissionEntry with get, set" Usage="System.Messaging.MessageQueuePermissionEntryCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -320,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
+      <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="messageQueuePermissionEntryCollection.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -340,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="messageQueuePermissionEntryCollection.OnInsert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -365,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="messageQueuePermissionEntryCollection.OnRemove (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -390,6 +402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="messageQueuePermissionEntryCollection.OnSet (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -417,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.Remove(System.Messaging.MessageQueuePermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As MessageQueuePermissionEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Messaging::MessageQueuePermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Messaging.MessageQueuePermissionEntry -&gt; unit" Usage="messageQueuePermissionEntryCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlCachePolicy" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlCachePolicy" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlCachePolicy sealed" />
+  <TypeSignature Language="F#" Value="type ControlCachePolicy = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.Cached" />
       <MemberSignature Language="VB.NET" Value="Public Property Cached As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cached { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Cached : bool with get, set" Usage="System.Web.UI.ControlCachePolicy.Cached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.Dependency" />
       <MemberSignature Language="VB.NET" Value="Public Property Dependency As CacheDependency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Caching::CacheDependency ^ Dependency { System::Web::Caching::CacheDependency ^ get(); void set(System::Web::Caching::CacheDependency ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Dependency : System.Web.Caching.CacheDependency with get, set" Usage="System.Web.UI.ControlCachePolicy.Dependency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.Duration" />
       <MemberSignature Language="VB.NET" Value="Public Property Duration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Duration : TimeSpan with get, set" Usage="System.Web.UI.ControlCachePolicy.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string with get, set" Usage="System.Web.UI.ControlCachePolicy.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCachePolicy.SetExpires(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetExpires (expirationTime As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetExpires(DateTime expirationTime);" />
+      <MemberSignature Language="F#" Value="member this.SetExpires : DateTime -&gt; unit" Usage="controlCachePolicy.SetExpires expirationTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCachePolicy.SetSlidingExpiration(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSlidingExpiration (useSlidingExpiration As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSlidingExpiration(bool useSlidingExpiration);" />
+      <MemberSignature Language="F#" Value="member this.SetSlidingExpiration : bool -&gt; unit" Usage="controlCachePolicy.SetSlidingExpiration useSlidingExpiration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCachePolicy.SetVaryByCustom(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetVaryByCustom (varyByCustom As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetVaryByCustom(System::String ^ varyByCustom);" />
+      <MemberSignature Language="F#" Value="member this.SetVaryByCustom : string -&gt; unit" Usage="controlCachePolicy.SetVaryByCustom varyByCustom" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.SupportsCaching" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsCaching As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsCaching { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsCaching : bool" Usage="System.Web.UI.ControlCachePolicy.SupportsCaching" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.VaryByControl" />
       <MemberSignature Language="VB.NET" Value="Public Property VaryByControl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByControl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VaryByControl : string with get, set" Usage="System.Web.UI.ControlCachePolicy.VaryByControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.VaryByParams" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VaryByParams As HttpCacheVaryByParams" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCacheVaryByParams ^ VaryByParams { System::Web::HttpCacheVaryByParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VaryByParams : System.Web.HttpCacheVaryByParams" Usage="System.Web.UI.ControlCachePolicy.VaryByParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

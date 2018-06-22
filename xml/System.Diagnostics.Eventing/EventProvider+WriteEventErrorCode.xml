@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventProvider.WriteEventErrorCode" />
   <TypeSignature Language="C++ CLI" Value="public: enum class EventProvider::WriteEventErrorCode" />
+  <TypeSignature Language="F#" Value="type EventProvider.WriteEventErrorCode = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.EventTooBig" />
       <MemberSignature Language="VB.NET" Value="EventTooBig" />
       <MemberSignature Language="C++ CLI" Value="EventTooBig" />
+      <MemberSignature Language="F#" Value="EventTooBig = 2" Usage="System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.EventTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.NoError" />
       <MemberSignature Language="VB.NET" Value="NoError" />
       <MemberSignature Language="C++ CLI" Value="NoError" />
+      <MemberSignature Language="F#" Value="NoError = 0" Usage="System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.NoError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.NoFreeBuffers" />
       <MemberSignature Language="VB.NET" Value="NoFreeBuffers" />
       <MemberSignature Language="C++ CLI" Value="NoFreeBuffers" />
+      <MemberSignature Language="F#" Value="NoFreeBuffers = 1" Usage="System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.NoFreeBuffers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

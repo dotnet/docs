@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHttpDispatchOperationSelector&#xA;Implements IDispatchOperationSelector" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebHttpDispatchOperationSelector : System::ServiceModel::Dispatcher::IDispatchOperationSelector" />
+  <TypeSignature Language="F#" Value="type WebHttpDispatchOperationSelector = class&#xA;    interface IDispatchOperationSelector" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpDispatchOperationSelector(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" Usage="new System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector endpoint" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.GetUriTemplate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUriTemplate (operationName As String) As UriTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual UriTemplate ^ GetUriTemplate(System::String ^ operationName);" />
+      <MemberSignature Language="F#" Value="abstract member GetUriTemplate : string -&gt; UriTemplate&#xA;override this.GetUriTemplate : string -&gt; UriTemplate" Usage="webHttpDispatchOperationSelector.GetUriTemplate operationName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.HttpOperationNamePropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Const HttpOperationNamePropertyName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ HttpOperationNamePropertyName;" />
+      <MemberSignature Language="F#" Value="val mutable HttpOperationNamePropertyName : string" Usage="System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.HttpOperationNamePropertyName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.HttpOperationSelectorUriMatchedPropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Const HttpOperationSelectorUriMatchedPropertyName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ HttpOperationSelectorUriMatchedPropertyName;" />
+      <MemberSignature Language="F#" Value="val mutable HttpOperationSelectorUriMatchedPropertyName : string" Usage="System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.HttpOperationSelectorUriMatchedPropertyName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectOperation (ByRef message As Message) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ SelectOperation(System::ServiceModel::Channels::Message ^ % message);" />
+      <MemberSignature Language="F#" Value="abstract member SelectOperation :  -&gt; string&#xA;override this.SelectOperation :  -&gt; string" Usage="webHttpDispatchOperationSelector.SelectOperation message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)</InterfaceMember>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SelectOperation (ByRef message As Message, ByRef uriMatched As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ SelectOperation(System::ServiceModel::Channels::Message ^ % message, [Runtime::InteropServices::Out] bool % uriMatched);" />
+      <MemberSignature Language="F#" Value="abstract member SelectOperation :  *  -&gt; string&#xA;override this.SelectOperation :  *  -&gt; string" Usage="webHttpDispatchOperationSelector.SelectOperation (message, uriMatched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

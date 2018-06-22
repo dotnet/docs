@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeProvider" />
+  <TypeSignature Language="F#" Value="type ITypeProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ITypeProvider.GetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetType : string -&gt; Type" Usage="iTypeProvider.GetType name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ITypeProvider.GetType(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String, throwOnError As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ name, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="abstract member GetType : string * bool -&gt; Type" Usage="iTypeProvider.GetType (name, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ITypeProvider.GetTypes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Type ^&gt; ^ GetTypes();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypes : unit -&gt; Type[]" Usage="iTypeProvider.GetTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ITypeProvider.LocalAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalAssembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ LocalAssembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalAssembly : System.Reflection.Assembly" Usage="System.Workflow.ComponentModel.Compiler.ITypeProvider.LocalAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ITypeProvider.ReferencedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedAssemblies As ICollection(Of Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Reflection::Assembly ^&gt; ^ ReferencedAssemblies { System::Collections::Generic::ICollection&lt;System::Reflection::Assembly ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblies : System.Collections.Generic.ICollection&lt;System.Reflection.Assembly&gt;" Usage="System.Workflow.ComponentModel.Compiler.ITypeProvider.ReferencedAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ITypeProvider.TypeLoadErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeLoadErrors As IDictionary(Of Object, Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Object ^, Exception ^&gt; ^ TypeLoadErrors { System::Collections::Generic::IDictionary&lt;System::Object ^, Exception ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeLoadErrors : System.Collections.Generic.IDictionary&lt;obj, Exception&gt;" Usage="System.Workflow.ComponentModel.Compiler.ITypeProvider.TypeLoadErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Compiler.ITypeProvider.TypeLoadErrorsChanged" />
       <MemberSignature Language="VB.NET" Value="Event TypeLoadErrorsChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TypeLoadErrorsChanged;" />
+      <MemberSignature Language="F#" Value="member this.TypeLoadErrorsChanged : EventHandler " Usage="member this.TypeLoadErrorsChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Compiler.ITypeProvider.TypesChanged" />
       <MemberSignature Language="VB.NET" Value="Event TypesChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TypesChanged;" />
+      <MemberSignature Language="F#" Value="member this.TypesChanged : EventHandler " Usage="member this.TypesChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

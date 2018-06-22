@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ModuleExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module ModuleExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModuleExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type ModuleExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetModuleVersionId(class System.Reflection.Module module) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ModuleExtensions.GetModuleVersionId(System.Reflection.Module)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Guid GetModuleVersionId(System::Reflection::Module ^ module);" />
+      <MemberSignature Language="F#" Value="static member GetModuleVersionId : System.Reflection.Module -&gt; Guid" Usage="System.Reflection.ModuleExtensions.GetModuleVersionId module" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasModuleVersionId(class System.Reflection.Module module) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ModuleExtensions.HasModuleVersionId(System.Reflection.Module)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasModuleVersionId(System::Reflection::Module ^ module);" />
+      <MemberSignature Language="F#" Value="static member HasModuleVersionId : System.Reflection.Module -&gt; bool" Usage="System.Reflection.ModuleExtensions.HasModuleVersionId module" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>

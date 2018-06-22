@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationFixupCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlSerializationFixupCallback(fixup As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void XmlSerializationFixupCallback(System::Object ^ fixup);" />
+  <TypeSignature Language="F#" Value="type XmlSerializationFixupCallback = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

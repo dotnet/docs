@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.BeginEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function BeginEventHandler(sender As Object, e As EventArgs, cb As AsyncCallback, extraData As Object) As IAsyncResult " />
   <TypeSignature Language="C++ CLI" Value="public delegate IAsyncResult ^ BeginEventHandler(System::Object ^ sender, EventArgs ^ e, AsyncCallback ^ cb, System::Object ^ extraData);" />
+  <TypeSignature Language="F#" Value="type BeginEventHandler = delegate of obj * EventArgs * AsyncCallback * obj -&gt; IAsyncResult" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

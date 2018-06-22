@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.EnumeratorPrototype" />
   <TypeSignature Language="VB.NET" Value="Public Class EnumeratorPrototype&#xA;Inherits JSObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumeratorPrototype : Microsoft::JScript::JSObject" />
+  <TypeSignature Language="F#" Value="type EnumeratorPrototype = class&#xA;    inherit JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorPrototype.atEnd(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function atEnd (thisob As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool atEnd(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member atEnd : obj -&gt; bool" Usage="Microsoft.JScript.EnumeratorPrototype.atEnd thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.EnumeratorPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property constructor As EnumeratorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::EnumeratorConstructor ^ constructor { Microsoft::JScript::EnumeratorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.constructor : Microsoft.JScript.EnumeratorConstructor" Usage="Microsoft.JScript.EnumeratorPrototype.constructor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorPrototype.item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function item (thisob As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ item(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member item : obj -&gt; obj" Usage="Microsoft.JScript.EnumeratorPrototype.item thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorPrototype.moveFirst(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub moveFirst (thisob As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void moveFirst(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member moveFirst : obj -&gt; unit" Usage="Microsoft.JScript.EnumeratorPrototype.moveFirst thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorPrototype.moveNext(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub moveNext (thisob As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void moveNext(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member moveNext : obj -&gt; unit" Usage="Microsoft.JScript.EnumeratorPrototype.moveNext thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

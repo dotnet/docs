@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherHookEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DispatcherHookEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispatcherHookEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type DispatcherHookEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherHookEventArgs.#ctor(System.Windows.Threading.DispatcherOperation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operation As DispatcherOperation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherHookEventArgs(System::Windows::Threading::DispatcherOperation ^ operation);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherHookEventArgs : System.Windows.Threading.DispatcherOperation -&gt; System.Windows.Threading.DispatcherHookEventArgs" Usage="new System.Windows.Threading.DispatcherHookEventArgs operation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherHookEventArgs.Dispatcher" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dispatcher As Dispatcher" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::Dispatcher ^ Dispatcher { System::Windows::Threading::Dispatcher ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Dispatcher : System.Windows.Threading.Dispatcher" Usage="System.Windows.Threading.DispatcherHookEventArgs.Dispatcher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherHookEventArgs.Operation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As DispatcherOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::DispatcherOperation ^ Operation { System::Windows::Threading::DispatcherOperation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : System.Windows.Threading.DispatcherOperation" Usage="System.Windows.Threading.DispatcherHookEventArgs.Operation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

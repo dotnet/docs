@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CanExecuteChangedEventManager" />
   <TypeSignature Language="VB.NET" Value="Public Class CanExecuteChangedEventManager&#xA;Inherits WeakEventManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class CanExecuteChangedEventManager : System::Windows::WeakEventManager" />
+  <TypeSignature Language="F#" Value="type CanExecuteChangedEventManager = class&#xA;    inherit WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.AddHandler(System.Windows.Input.ICommand,System.EventHandler{System.EventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As ICommand, handler As EventHandler(Of EventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(System::Windows::Input::ICommand ^ source, EventHandler&lt;EventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddHandler : System.Windows.Input.ICommand * EventHandler&lt;EventArgs&gt; -&gt; unit" Usage="System.Windows.Input.CanExecuteChangedEventManager.AddHandler (source, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.NewListenerList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::WeakEventManager::ListenerList ^ NewListenerList();" />
+      <MemberSignature Language="F#" Value="abstract member NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList&#xA;override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="canExecuteChangedEventManager.NewListenerList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.Purge(System.Object,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Purge (source As Object, data As Object, purgeAll As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool Purge(System::Object ^ source, System::Object ^ data, bool purgeAll);" />
+      <MemberSignature Language="F#" Value="abstract member Purge : obj * obj * bool -&gt; bool&#xA;override this.Purge : obj * obj * bool -&gt; bool" Usage="canExecuteChangedEventManager.Purge (source, data, purgeAll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.RemoveHandler(System.Windows.Input.ICommand,System.EventHandler{System.EventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As ICommand, handler As EventHandler(Of EventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(System::Windows::Input::ICommand ^ source, EventHandler&lt;EventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveHandler : System.Windows.Input.ICommand * EventHandler&lt;EventArgs&gt; -&gt; unit" Usage="System.Windows.Input.CanExecuteChangedEventManager.RemoveHandler (source, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="canExecuteChangedEventManager.StartListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="canExecuteChangedEventManager.StopListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

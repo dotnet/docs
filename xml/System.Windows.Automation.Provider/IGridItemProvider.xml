@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IGridItemProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IGridItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IGridItemProvider" />
+  <TypeSignature Language="F#" Value="type IGridItemProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IGridItemProvider.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : int" Usage="System.Windows.Automation.Provider.IGridItemProvider.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnSpan As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnSpan { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnSpan : int" Usage="System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainingGrid As IRawElementProviderSimple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Provider::IRawElementProviderSimple ^ ContainingGrid { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainingGrid : System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IGridItemProvider.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Row { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : int" Usage="System.Windows.Automation.Provider.IGridItemProvider.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IGridItemProvider.RowSpan" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowSpan As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowSpan { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowSpan : int" Usage="System.Windows.Automation.Provider.IGridItemProvider.RowSpan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

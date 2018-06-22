@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbType" />
   <TypeSignature Language="VB.NET" Value="Public Enum OleDbType" />
   <TypeSignature Language="C++ CLI" Value="public enum class OleDbType" />
+  <TypeSignature Language="F#" Value="type OleDbType = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.BigInt" />
       <MemberSignature Language="VB.NET" Value="BigInt" />
       <MemberSignature Language="C++ CLI" Value="BigInt" />
+      <MemberSignature Language="F#" Value="BigInt = 20" Usage="System.Data.OleDb.OleDbType.BigInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 128" Usage="System.Data.OleDb.OleDbType.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 11" Usage="System.Data.OleDb.OleDbType.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.BSTR" />
       <MemberSignature Language="VB.NET" Value="BSTR" />
       <MemberSignature Language="C++ CLI" Value="BSTR" />
+      <MemberSignature Language="F#" Value="BSTR = 8" Usage="System.Data.OleDb.OleDbType.BSTR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Char" />
       <MemberSignature Language="VB.NET" Value="Char" />
       <MemberSignature Language="C++ CLI" Value="Char" />
+      <MemberSignature Language="F#" Value="Char = 129" Usage="System.Data.OleDb.OleDbType.Char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Currency" />
       <MemberSignature Language="VB.NET" Value="Currency" />
       <MemberSignature Language="C++ CLI" Value="Currency" />
+      <MemberSignature Language="F#" Value="Currency = 6" Usage="System.Data.OleDb.OleDbType.Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 7" Usage="System.Data.OleDb.OleDbType.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.DBDate" />
       <MemberSignature Language="VB.NET" Value="DBDate" />
       <MemberSignature Language="C++ CLI" Value="DBDate" />
+      <MemberSignature Language="F#" Value="DBDate = 133" Usage="System.Data.OleDb.OleDbType.DBDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.DBTime" />
       <MemberSignature Language="VB.NET" Value="DBTime" />
       <MemberSignature Language="C++ CLI" Value="DBTime" />
+      <MemberSignature Language="F#" Value="DBTime = 134" Usage="System.Data.OleDb.OleDbType.DBTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -210,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.DBTimeStamp" />
       <MemberSignature Language="VB.NET" Value="DBTimeStamp" />
       <MemberSignature Language="C++ CLI" Value="DBTimeStamp" />
+      <MemberSignature Language="F#" Value="DBTimeStamp = 135" Usage="System.Data.OleDb.OleDbType.DBTimeStamp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -230,6 +241,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="C++ CLI" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 14" Usage="System.Data.OleDb.OleDbType.Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -250,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 5" Usage="System.Data.OleDb.OleDbType.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -270,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Empty" />
       <MemberSignature Language="VB.NET" Value="Empty" />
       <MemberSignature Language="C++ CLI" Value="Empty" />
+      <MemberSignature Language="F#" Value="Empty = 0" Usage="System.Data.OleDb.OleDbType.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -290,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 10" Usage="System.Data.OleDb.OleDbType.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -310,6 +325,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Filetime" />
       <MemberSignature Language="VB.NET" Value="Filetime" />
       <MemberSignature Language="C++ CLI" Value="Filetime" />
+      <MemberSignature Language="F#" Value="Filetime = 64" Usage="System.Data.OleDb.OleDbType.Filetime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -330,6 +346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Guid" />
       <MemberSignature Language="VB.NET" Value="Guid" />
       <MemberSignature Language="C++ CLI" Value="Guid" />
+      <MemberSignature Language="F#" Value="Guid = 72" Usage="System.Data.OleDb.OleDbType.Guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -350,6 +367,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.IDispatch" />
       <MemberSignature Language="VB.NET" Value="IDispatch" />
       <MemberSignature Language="C++ CLI" Value="IDispatch" />
+      <MemberSignature Language="F#" Value="IDispatch = 9" Usage="System.Data.OleDb.OleDbType.IDispatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -378,6 +396,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Integer" />
       <MemberSignature Language="VB.NET" Value="Integer" />
       <MemberSignature Language="C++ CLI" Value="Integer" />
+      <MemberSignature Language="F#" Value="Integer = 3" Usage="System.Data.OleDb.OleDbType.Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -398,6 +417,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.IUnknown" />
       <MemberSignature Language="VB.NET" Value="IUnknown" />
       <MemberSignature Language="C++ CLI" Value="IUnknown" />
+      <MemberSignature Language="F#" Value="IUnknown = 13" Usage="System.Data.OleDb.OleDbType.IUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -426,6 +446,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.LongVarBinary" />
       <MemberSignature Language="VB.NET" Value="LongVarBinary" />
       <MemberSignature Language="C++ CLI" Value="LongVarBinary" />
+      <MemberSignature Language="F#" Value="LongVarBinary = 205" Usage="System.Data.OleDb.OleDbType.LongVarBinary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -446,6 +467,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.LongVarChar" />
       <MemberSignature Language="VB.NET" Value="LongVarChar" />
       <MemberSignature Language="C++ CLI" Value="LongVarChar" />
+      <MemberSignature Language="F#" Value="LongVarChar = 201" Usage="System.Data.OleDb.OleDbType.LongVarChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -466,6 +488,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.LongVarWChar" />
       <MemberSignature Language="VB.NET" Value="LongVarWChar" />
       <MemberSignature Language="C++ CLI" Value="LongVarWChar" />
+      <MemberSignature Language="F#" Value="LongVarWChar = 203" Usage="System.Data.OleDb.OleDbType.LongVarWChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -486,6 +509,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Numeric" />
       <MemberSignature Language="VB.NET" Value="Numeric" />
       <MemberSignature Language="C++ CLI" Value="Numeric" />
+      <MemberSignature Language="F#" Value="Numeric = 131" Usage="System.Data.OleDb.OleDbType.Numeric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -506,6 +530,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.PropVariant" />
       <MemberSignature Language="VB.NET" Value="PropVariant" />
       <MemberSignature Language="C++ CLI" Value="PropVariant" />
+      <MemberSignature Language="F#" Value="PropVariant = 138" Usage="System.Data.OleDb.OleDbType.PropVariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -526,6 +551,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 4" Usage="System.Data.OleDb.OleDbType.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -546,6 +572,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.SmallInt" />
       <MemberSignature Language="VB.NET" Value="SmallInt" />
       <MemberSignature Language="C++ CLI" Value="SmallInt" />
+      <MemberSignature Language="F#" Value="SmallInt = 2" Usage="System.Data.OleDb.OleDbType.SmallInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -566,6 +593,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.TinyInt" />
       <MemberSignature Language="VB.NET" Value="TinyInt" />
       <MemberSignature Language="C++ CLI" Value="TinyInt" />
+      <MemberSignature Language="F#" Value="TinyInt = 16" Usage="System.Data.OleDb.OleDbType.TinyInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -586,6 +614,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.UnsignedBigInt" />
       <MemberSignature Language="VB.NET" Value="UnsignedBigInt" />
       <MemberSignature Language="C++ CLI" Value="UnsignedBigInt" />
+      <MemberSignature Language="F#" Value="UnsignedBigInt = 21" Usage="System.Data.OleDb.OleDbType.UnsignedBigInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -606,6 +635,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.UnsignedInt" />
       <MemberSignature Language="VB.NET" Value="UnsignedInt" />
       <MemberSignature Language="C++ CLI" Value="UnsignedInt" />
+      <MemberSignature Language="F#" Value="UnsignedInt = 19" Usage="System.Data.OleDb.OleDbType.UnsignedInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -626,6 +656,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.UnsignedSmallInt" />
       <MemberSignature Language="VB.NET" Value="UnsignedSmallInt" />
       <MemberSignature Language="C++ CLI" Value="UnsignedSmallInt" />
+      <MemberSignature Language="F#" Value="UnsignedSmallInt = 18" Usage="System.Data.OleDb.OleDbType.UnsignedSmallInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -646,6 +677,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.UnsignedTinyInt" />
       <MemberSignature Language="VB.NET" Value="UnsignedTinyInt" />
       <MemberSignature Language="C++ CLI" Value="UnsignedTinyInt" />
+      <MemberSignature Language="F#" Value="UnsignedTinyInt = 17" Usage="System.Data.OleDb.OleDbType.UnsignedTinyInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -666,6 +698,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.VarBinary" />
       <MemberSignature Language="VB.NET" Value="VarBinary" />
       <MemberSignature Language="C++ CLI" Value="VarBinary" />
+      <MemberSignature Language="F#" Value="VarBinary = 204" Usage="System.Data.OleDb.OleDbType.VarBinary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -686,6 +719,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.VarChar" />
       <MemberSignature Language="VB.NET" Value="VarChar" />
       <MemberSignature Language="C++ CLI" Value="VarChar" />
+      <MemberSignature Language="F#" Value="VarChar = 200" Usage="System.Data.OleDb.OleDbType.VarChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -706,6 +740,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.Variant" />
       <MemberSignature Language="VB.NET" Value="Variant" />
       <MemberSignature Language="C++ CLI" Value="Variant" />
+      <MemberSignature Language="F#" Value="Variant = 12" Usage="System.Data.OleDb.OleDbType.Variant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -726,6 +761,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.VarNumeric" />
       <MemberSignature Language="VB.NET" Value="VarNumeric" />
       <MemberSignature Language="C++ CLI" Value="VarNumeric" />
+      <MemberSignature Language="F#" Value="VarNumeric = 139" Usage="System.Data.OleDb.OleDbType.VarNumeric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -746,6 +782,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.VarWChar" />
       <MemberSignature Language="VB.NET" Value="VarWChar" />
       <MemberSignature Language="C++ CLI" Value="VarWChar" />
+      <MemberSignature Language="F#" Value="VarWChar = 202" Usage="System.Data.OleDb.OleDbType.VarWChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -766,6 +803,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbType.WChar" />
       <MemberSignature Language="VB.NET" Value="WChar" />
       <MemberSignature Language="C++ CLI" Value="WChar" />
+      <MemberSignature Language="F#" Value="WChar = 130" Usage="System.Data.OleDb.OleDbType.WChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

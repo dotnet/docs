@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsToken" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsToken&#xA;Inherits SrgsElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsToken : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
+  <TypeSignature Language="F#" Value="type SrgsToken = class&#xA;    inherit SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsToken.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsToken(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsToken : string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsToken" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsToken text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Display" />
       <MemberSignature Language="VB.NET" Value="Public Property Display As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Display { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Display : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsToken.Display" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation" />
       <MemberSignature Language="VB.NET" Value="Public Property Pronunciation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pronunciation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Pronunciation : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -217,6 +221,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsToken.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerGeometry" />
   <TypeSignature Language="VB.NET" Value="Public Enum DesignerGeometry" />
   <TypeSignature Language="C++ CLI" Value="public enum class DesignerGeometry" />
+  <TypeSignature Language="F#" Value="type DesignerGeometry = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGeometry.Rectangle" />
       <MemberSignature Language="VB.NET" Value="Rectangle" />
       <MemberSignature Language="C++ CLI" Value="Rectangle" />
+      <MemberSignature Language="F#" Value="Rectangle = 0" Usage="System.Workflow.ComponentModel.Design.DesignerGeometry.Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGeometry.RoundedRectangle" />
       <MemberSignature Language="VB.NET" Value="RoundedRectangle" />
       <MemberSignature Language="C++ CLI" Value="RoundedRectangle" />
+      <MemberSignature Language="F#" Value="RoundedRectangle = 1" Usage="System.Workflow.ComponentModel.Design.DesignerGeometry.RoundedRectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

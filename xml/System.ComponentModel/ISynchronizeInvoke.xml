@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ISynchronizeInvoke" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISynchronizeInvoke" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISynchronizeInvoke" />
+  <TypeSignature Language="F#" Value="type ISynchronizeInvoke = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ISynchronizeInvoke.BeginInvoke(System.Delegate,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginInvoke (method As Delegate, args As Object()) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginInvoke(Delegate ^ method, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member BeginInvoke : Delegate * obj[] -&gt; IAsyncResult" Usage="iSynchronizeInvoke.BeginInvoke (method, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ISynchronizeInvoke.EndInvoke(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndInvoke (result As IAsyncResult) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ EndInvoke(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndInvoke : IAsyncResult -&gt; obj" Usage="iSynchronizeInvoke.EndInvoke result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ISynchronizeInvoke.Invoke(System.Delegate,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (method As Delegate, args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(Delegate ^ method, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : Delegate * obj[] -&gt; obj" Usage="iSynchronizeInvoke.Invoke (method, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ISynchronizeInvoke.InvokeRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvokeRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InvokeRequired { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvokeRequired : bool" Usage="System.ComponentModel.ISynchronizeInvoke.InvokeRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

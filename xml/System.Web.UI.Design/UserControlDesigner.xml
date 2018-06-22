@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.UserControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class UserControlDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserControlDesigner : System::Web::UI::Design::ControlDesigner" />
+  <TypeSignature Language="F#" Value="type UserControlDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.UserControlDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlDesigner.AllowResize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AllowResize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowResize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowResize : bool" Usage="System.Web.UI.Design.UserControlDesigner.AllowResize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UserControlDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="userControlDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

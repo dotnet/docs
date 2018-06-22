@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.MethodRental" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MethodRental&#xA;Implements _MethodRental" />
   <TypeSignature Language="C++ CLI" Value="public ref class MethodRental sealed : System::Runtime::InteropServices::_MethodRental" />
+  <TypeSignature Language="F#" Value="type MethodRental = class&#xA;    interface _MethodRental" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.MethodRental.JitImmediate" />
       <MemberSignature Language="VB.NET" Value="Public Const JitImmediate As Integer  = 1" />
       <MemberSignature Language="C++ CLI" Value="public: int JitImmediate = 1;" />
+      <MemberSignature Language="F#" Value="val mutable JitImmediate : int" Usage="System.Reflection.Emit.MethodRental.JitImmediate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.MethodRental.JitOnDemand" />
       <MemberSignature Language="VB.NET" Value="Public Const JitOnDemand As Integer  = 0" />
       <MemberSignature Language="C++ CLI" Value="public: int JitOnDemand = 0;" />
+      <MemberSignature Language="F#" Value="val mutable JitOnDemand : int" Usage="System.Reflection.Emit.MethodRental.JitOnDemand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodRental.SwapMethodBody(System.Type,System.Int32,System.IntPtr,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SwapMethodBody (cls As Type, methodtoken As Integer, rgIL As IntPtr, methodSize As Integer, flags As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SwapMethodBody(Type ^ cls, int methodtoken, IntPtr rgIL, int methodSize, int flags);" />
+      <MemberSignature Language="F#" Value="static member SwapMethodBody : Type * int * nativeint * int * int -&gt; unit" Usage="System.Reflection.Emit.MethodRental.SwapMethodBody (cls, methodtoken, rgIL, methodSize, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

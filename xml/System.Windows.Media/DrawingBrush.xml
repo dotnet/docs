@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.DrawingBrush" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DrawingBrush&#xA;Inherits TileBrush" />
   <TypeSignature Language="C++ CLI" Value="public ref class DrawingBrush sealed : System::Windows::Media::TileBrush" />
+  <TypeSignature Language="F#" Value="type DrawingBrush = class&#xA;    inherit TileBrush" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@ Shapes and text painted with a drawing brush
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Drawing drawing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingBrush.#ctor(System.Windows.Media.Drawing)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DrawingBrush(System::Windows::Media::Drawing ^ drawing);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.DrawingBrush : System.Windows.Media.Drawing -&gt; System.Windows.Media.DrawingBrush" Usage="new System.Windows.Media.DrawingBrush drawing" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +82,7 @@ Shapes and text painted with a drawing brush
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingBrush.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As DrawingBrush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::DrawingBrush ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.DrawingBrush" Usage="drawingBrush.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -110,6 +113,7 @@ Shapes and text painted with a drawing brush
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingBrush.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As DrawingBrush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::DrawingBrush ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.DrawingBrush" Usage="drawingBrush.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -140,6 +144,7 @@ Shapes and text painted with a drawing brush
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingBrush.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="drawingBrush.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -161,6 +166,7 @@ Shapes and text painted with a drawing brush
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.DrawingBrush.Drawing" />
       <MemberSignature Language="VB.NET" Value="Public Property Drawing As Drawing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Drawing ^ Drawing { System::Windows::Media::Drawing ^ get(); void set(System::Windows::Media::Drawing ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Drawing : System.Windows.Media.Drawing with get, set" Usage="System.Windows.Media.DrawingBrush.Drawing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +201,7 @@ Shapes and text painted with a drawing brush
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.DrawingBrush.DrawingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DrawingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DrawingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DrawingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.DrawingBrush.DrawingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -214,6 +221,7 @@ Shapes and text painted with a drawing brush
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingBrush.GetContentBounds(System.Windows.Rect@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetContentBounds (ByRef contentBounds As Rect)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetContentBounds([Runtime::InteropServices::Out] System::Windows::Rect % contentBounds);" />
+      <MemberSignature Language="F#" Value="override this.GetContentBounds :  -&gt; unit" Usage="drawingBrush.GetContentBounds contentBounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

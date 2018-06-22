@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.ClientCertificateOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ClientCertificateOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class ClientCertificateOption" />
+  <TypeSignature Language="F#" Value="type ClientCertificateOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Http.ClientCertificateOption.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Net.Http.ClientCertificateOption.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Http.ClientCertificateOption.Manual" />
       <MemberSignature Language="VB.NET" Value="Manual" />
       <MemberSignature Language="C++ CLI" Value="Manual" />
+      <MemberSignature Language="F#" Value="Manual = 0" Usage="System.Net.Http.ClientCertificateOption.Manual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

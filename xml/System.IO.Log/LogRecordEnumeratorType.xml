@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogRecordEnumeratorType" />
   <TypeSignature Language="VB.NET" Value="Public Enum LogRecordEnumeratorType" />
   <TypeSignature Language="C++ CLI" Value="public enum class LogRecordEnumeratorType" />
+  <TypeSignature Language="F#" Value="type LogRecordEnumeratorType = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogRecordEnumeratorType.Next" />
       <MemberSignature Language="VB.NET" Value="Next" />
       <MemberSignature Language="C++ CLI" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 2" Usage="System.IO.Log.LogRecordEnumeratorType.Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogRecordEnumeratorType.Previous" />
       <MemberSignature Language="VB.NET" Value="Previous" />
       <MemberSignature Language="C++ CLI" Value="Previous" />
+      <MemberSignature Language="F#" Value="Previous = 1" Usage="System.IO.Log.LogRecordEnumeratorType.Previous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogRecordEnumeratorType.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="C++ CLI" Value="User" />
+      <MemberSignature Language="F#" Value="User = 0" Usage="System.IO.Log.LogRecordEnumeratorType.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

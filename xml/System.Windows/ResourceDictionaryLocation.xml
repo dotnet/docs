@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ResourceDictionaryLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResourceDictionaryLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class ResourceDictionaryLocation" />
+  <TypeSignature Language="F#" Value="type ResourceDictionaryLocation = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ResourceDictionaryLocation.ExternalAssembly" />
       <MemberSignature Language="VB.NET" Value="ExternalAssembly" />
       <MemberSignature Language="C++ CLI" Value="ExternalAssembly" />
+      <MemberSignature Language="F#" Value="ExternalAssembly = 2" Usage="System.Windows.ResourceDictionaryLocation.ExternalAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ResourceDictionaryLocation.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.ResourceDictionaryLocation.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ResourceDictionaryLocation.SourceAssembly" />
       <MemberSignature Language="VB.NET" Value="SourceAssembly" />
       <MemberSignature Language="C++ CLI" Value="SourceAssembly" />
+      <MemberSignature Language="F#" Value="SourceAssembly = 1" Usage="System.Windows.ResourceDictionaryLocation.SourceAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignerOptionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerOptionService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerOptionService" />
+  <TypeSignature Language="F#" Value="type IDesignerOptionService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerOptionService.GetOptionValue(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOptionValue (pageName As String, valueName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOptionValue(System::String ^ pageName, System::String ^ valueName);" />
+      <MemberSignature Language="F#" Value="abstract member GetOptionValue : string * string -&gt; obj" Usage="iDesignerOptionService.GetOptionValue (pageName, valueName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerOptionService.SetOptionValue(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOptionValue (pageName As String, valueName As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOptionValue(System::String ^ pageName, System::String ^ valueName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetOptionValue : string * string * obj -&gt; unit" Usage="iDesignerOptionService.SetOptionValue (pageName, valueName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

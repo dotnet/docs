@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxDefaultButton" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxDefaultButton" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxDefaultButton" />
+  <TypeSignature Language="F#" Value="type MessageBoxDefaultButton = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxDefaultButton.Button1" />
       <MemberSignature Language="VB.NET" Value="Button1" />
       <MemberSignature Language="C++ CLI" Value="Button1" />
+      <MemberSignature Language="F#" Value="Button1 = 0" Usage="System.Windows.Forms.MessageBoxDefaultButton.Button1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxDefaultButton.Button2" />
       <MemberSignature Language="VB.NET" Value="Button2" />
       <MemberSignature Language="C++ CLI" Value="Button2" />
+      <MemberSignature Language="F#" Value="Button2 = 256" Usage="System.Windows.Forms.MessageBoxDefaultButton.Button2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxDefaultButton.Button3" />
       <MemberSignature Language="VB.NET" Value="Button3" />
       <MemberSignature Language="C++ CLI" Value="Button3" />
+      <MemberSignature Language="F#" Value="Button3 = 512" Usage="System.Windows.Forms.MessageBoxDefaultButton.Button3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

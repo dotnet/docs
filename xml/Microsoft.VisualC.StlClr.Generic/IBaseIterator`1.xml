@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IBaseIterator`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBaseIterator(Of TValue)&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IBaseIterator : ICloneable" />
+  <TypeSignature Language="F#" Value="type IBaseIterator&lt;'Value&gt; = interface&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IBaseIterator`1.container" />
       <MemberSignature Language="VB.NET" Value="Public Function container () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ container();" />
+      <MemberSignature Language="F#" Value="abstract member container : unit -&gt; obj" Usage="iBaseIterator.container " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -43,12 +45,57 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="get_bias">
+      <MemberSignature Language="C#" Value="public int get_bias ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 get_bias() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IBaseIterator`1.get_bias" />
+      <MemberSignature Language="VB.NET" Value="Public Function get_bias () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int get_bias();" />
+      <MemberSignature Language="F#" Value="abstract member get_bias : unit -&gt; int" Usage="iBaseIterator.get_bias " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="get_node">
+      <MemberSignature Language="C#" Value="public object get_node ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object get_node() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IBaseIterator`1.get_node" />
+      <MemberSignature Language="VB.NET" Value="Public Function get_node () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ get_node();" />
+      <MemberSignature Language="F#" Value="abstract member get_node : unit -&gt; obj" Usage="iBaseIterator.get_node " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="next">
       <MemberSignature Language="C#" Value="public void next ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void next() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IBaseIterator`1.next" />
       <MemberSignature Language="VB.NET" Value="Public Sub next ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void next();" />
+      <MemberSignature Language="F#" Value="abstract member next : unit -&gt; unit" Usage="iBaseIterator.next " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -69,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IBaseIterator`1.valid" />
       <MemberSignature Language="VB.NET" Value="Public Function valid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool valid();" />
+      <MemberSignature Language="F#" Value="abstract member valid : unit -&gt; bool" Usage="iBaseIterator.valid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

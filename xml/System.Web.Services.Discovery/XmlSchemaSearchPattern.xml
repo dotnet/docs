@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.XmlSchemaSearchPattern" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSchemaSearchPattern&#xA;Inherits DiscoverySearchPattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaSearchPattern sealed : System::Web::Services::Discovery::DiscoverySearchPattern" />
+  <TypeSignature Language="F#" Value="type XmlSchemaSearchPattern = class&#xA;    inherit DiscoverySearchPattern" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.XmlSchemaSearchPattern.GetDiscoveryReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDiscoveryReference (filename As String) As DiscoveryReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Services::Discovery::DiscoveryReference ^ GetDiscoveryReference(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="override this.GetDiscoveryReference : string -&gt; System.Web.Services.Discovery.DiscoveryReference" Usage="xmlSchemaSearchPattern.GetDiscoveryReference filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.XmlSchemaSearchPattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Pattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Pattern { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pattern : string" Usage="System.Web.Services.Discovery.XmlSchemaSearchPattern.Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

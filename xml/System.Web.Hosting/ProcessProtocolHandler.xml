@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ProcessProtocolHandler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProcessProtocolHandler&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessProtocolHandler abstract : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type ProcessProtocolHandler = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="processProtocolHandler.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StartListenerChannel(System.Web.Hosting.IListenerChannelCallback,System.Web.Hosting.IAdphManager)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StartListenerChannel (listenerChannelCallback As IListenerChannelCallback, AdphManager As IAdphManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StartListenerChannel(System::Web::Hosting::IListenerChannelCallback ^ listenerChannelCallback, System::Web::Hosting::IAdphManager ^ AdphManager);" />
+      <MemberSignature Language="F#" Value="abstract member StartListenerChannel : System.Web.Hosting.IListenerChannelCallback * System.Web.Hosting.IAdphManager -&gt; unit" Usage="processProtocolHandler.StartListenerChannel (listenerChannelCallback, AdphManager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StopListenerChannel(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StopListenerChannel (listenerChannelId As Integer, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StopListenerChannel(int listenerChannelId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopListenerChannel : int * bool -&gt; unit" Usage="processProtocolHandler.StopListenerChannel (listenerChannelId, immediate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessProtocolHandler.StopProtocol(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StopProtocol (immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StopProtocol(bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopProtocol : bool -&gt; unit" Usage="processProtocolHandler.StopProtocol immediate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

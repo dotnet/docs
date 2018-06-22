@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketError" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebSocketError" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebSocketError" />
+  <TypeSignature Language="F#" Value="type WebSocketError = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.ConnectionClosedPrematurely" />
       <MemberSignature Language="VB.NET" Value="ConnectionClosedPrematurely" />
       <MemberSignature Language="C++ CLI" Value="ConnectionClosedPrematurely" />
+      <MemberSignature Language="F#" Value="ConnectionClosedPrematurely = 8" Usage="System.Net.WebSockets.WebSocketError.ConnectionClosedPrematurely" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.Faulted" />
       <MemberSignature Language="VB.NET" Value="Faulted" />
       <MemberSignature Language="C++ CLI" Value="Faulted" />
+      <MemberSignature Language="F#" Value="Faulted = 2" Usage="System.Net.WebSockets.WebSocketError.Faulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.HeaderError" />
       <MemberSignature Language="VB.NET" Value="HeaderError" />
       <MemberSignature Language="C++ CLI" Value="HeaderError" />
+      <MemberSignature Language="F#" Value="HeaderError = 7" Usage="System.Net.WebSockets.WebSocketError.HeaderError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.InvalidMessageType" />
       <MemberSignature Language="VB.NET" Value="InvalidMessageType" />
       <MemberSignature Language="C++ CLI" Value="InvalidMessageType" />
+      <MemberSignature Language="F#" Value="InvalidMessageType = 1" Usage="System.Net.WebSockets.WebSocketError.InvalidMessageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.InvalidState" />
       <MemberSignature Language="VB.NET" Value="InvalidState" />
       <MemberSignature Language="C++ CLI" Value="InvalidState" />
+      <MemberSignature Language="F#" Value="InvalidState = 9" Usage="System.Net.WebSockets.WebSocketError.InvalidState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.NativeError" />
       <MemberSignature Language="VB.NET" Value="NativeError" />
       <MemberSignature Language="C++ CLI" Value="NativeError" />
+      <MemberSignature Language="F#" Value="NativeError = 3" Usage="System.Net.WebSockets.WebSocketError.NativeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.NotAWebSocket" />
       <MemberSignature Language="VB.NET" Value="NotAWebSocket" />
       <MemberSignature Language="C++ CLI" Value="NotAWebSocket" />
+      <MemberSignature Language="F#" Value="NotAWebSocket = 4" Usage="System.Net.WebSockets.WebSocketError.NotAWebSocket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="C++ CLI" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.Net.WebSockets.WebSocketError.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.UnsupportedProtocol" />
       <MemberSignature Language="VB.NET" Value="UnsupportedProtocol" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedProtocol" />
+      <MemberSignature Language="F#" Value="UnsupportedProtocol = 6" Usage="System.Net.WebSockets.WebSocketError.UnsupportedProtocol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.UnsupportedVersion" />
       <MemberSignature Language="VB.NET" Value="UnsupportedVersion" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedVersion" />
+      <MemberSignature Language="F#" Value="UnsupportedVersion = 5" Usage="System.Net.WebSockets.WebSocketError.UnsupportedVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>

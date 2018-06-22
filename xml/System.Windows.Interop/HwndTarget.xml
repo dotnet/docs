@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndTarget" />
   <TypeSignature Language="VB.NET" Value="Public Class HwndTarget&#xA;Inherits CompositionTarget" />
   <TypeSignature Language="C++ CLI" Value="public ref class HwndTarget : System::Windows::Media::CompositionTarget" />
+  <TypeSignature Language="F#" Value="type HwndTarget = class&#xA;    inherit CompositionTarget" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndTarget.#ctor(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hwnd As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HwndTarget(IntPtr hwnd);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Interop.HwndTarget : nativeint -&gt; System.Windows.Interop.HwndTarget" Usage="new System.Windows.Interop.HwndTarget hwnd" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.BackgroundColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackgroundColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color BackgroundColor { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundColor : System.Windows.Media.Color with get, set" Usage="System.Windows.Interop.HwndTarget.BackgroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndTarget.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="hwndTarget.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.RenderMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RenderMode As RenderMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Interop::RenderMode RenderMode { System::Windows::Interop::RenderMode get(); void set(System::Windows::Interop::RenderMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderMode : System.Windows.Interop.RenderMode with get, set" Usage="System.Windows.Interop.HwndTarget.RenderMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.RootVisual" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property RootVisual As Visual" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Visual ^ RootVisual {  void set(System::Windows::Media::Visual ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootVisual : System.Windows.Media.Visual" Usage="System.Windows.Interop.HwndTarget.RootVisual" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.TransformFromDevice" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TransformFromDevice As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix TransformFromDevice { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformFromDevice : System.Windows.Media.Matrix" Usage="System.Windows.Interop.HwndTarget.TransformFromDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.TransformToDevice" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TransformToDevice As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix TransformToDevice { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformToDevice : System.Windows.Media.Matrix" Usage="System.Windows.Interop.HwndTarget.TransformToDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.UsesPerPixelOpacity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsesPerPixelOpacity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UsesPerPixelOpacity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsesPerPixelOpacity : bool" Usage="System.Windows.Interop.HwndTarget.UsesPerPixelOpacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

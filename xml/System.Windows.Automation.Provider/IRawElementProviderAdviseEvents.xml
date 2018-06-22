@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderAdviseEvents&#xA;Implements IRawElementProviderSimple" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderAdviseEvents : System::Windows::Automation::Provider::IRawElementProviderSimple" />
+  <TypeSignature Language="F#" Value="type IRawElementProviderAdviseEvents = interface&#xA;    interface IRawElementProviderSimple" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventAdded(System.Int32,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AdviseEventAdded (eventId As Integer, properties As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdviseEventAdded(int eventId, cli::array &lt;int&gt; ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member AdviseEventAdded : int * int[] -&gt; unit" Usage="iRawElementProviderAdviseEvents.AdviseEventAdded (eventId, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventRemoved(System.Int32,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AdviseEventRemoved (eventId As Integer, properties As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdviseEventRemoved(int eventId, cli::array &lt;int&gt; ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member AdviseEventRemoved : int * int[] -&gt; unit" Usage="iRawElementProviderAdviseEvents.AdviseEventRemoved (eventId, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

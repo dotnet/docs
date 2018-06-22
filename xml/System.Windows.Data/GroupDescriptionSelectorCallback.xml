@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.GroupDescriptionSelectorCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function GroupDescriptionSelectorCallback(group As CollectionViewGroup, level As Integer) As GroupDescription " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::ComponentModel::GroupDescription ^ GroupDescriptionSelectorCallback(CollectionViewGroup ^ group, int level);" />
+  <TypeSignature Language="F#" Value="type GroupDescriptionSelectorCallback = delegate of CollectionViewGroup * int -&gt; GroupDescription" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

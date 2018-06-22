@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SafeHandleMinusOneIsInvalid&#xA;Inherits SafeHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class SafeHandleMinusOneIsInvalid abstract : System::Runtime::InteropServices::SafeHandle" />
+  <TypeSignature Language="F#" Value="type SafeHandleMinusOneIsInvalid = class&#xA;    inherit SafeHandle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (ownsHandle As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SafeHandleMinusOneIsInvalid(bool ownsHandle);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid : bool -&gt; Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid" Usage="new Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid ownsHandle" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid.IsInvalid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

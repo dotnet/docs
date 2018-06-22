@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CallType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CallType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CallType" />
+  <TypeSignature Language="F#" Value="type CallType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CallType.Get" />
       <MemberSignature Language="VB.NET" Value="Get" />
       <MemberSignature Language="C++ CLI" Value="Get" />
+      <MemberSignature Language="F#" Value="Get = 2" Usage="Microsoft.VisualBasic.CallType.Get" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CallType.Let" />
       <MemberSignature Language="VB.NET" Value="Let" />
       <MemberSignature Language="C++ CLI" Value="Let" />
+      <MemberSignature Language="F#" Value="Let = 4" Usage="Microsoft.VisualBasic.CallType.Let" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CallType.Method" />
       <MemberSignature Language="VB.NET" Value="Method" />
       <MemberSignature Language="C++ CLI" Value="Method" />
+      <MemberSignature Language="F#" Value="Method = 1" Usage="Microsoft.VisualBasic.CallType.Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CallType.Set" />
       <MemberSignature Language="VB.NET" Value="Set" />
       <MemberSignature Language="C++ CLI" Value="Set" />
+      <MemberSignature Language="F#" Value="Set = 8" Usage="Microsoft.VisualBasic.CallType.Set" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

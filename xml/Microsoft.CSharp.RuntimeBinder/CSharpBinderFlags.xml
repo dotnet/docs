@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum CSharpBinderFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class CSharpBinderFlags" />
+  <TypeSignature Language="F#" Value="type CSharpBinderFlags = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.CSharp</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.BinaryOperationLogical" />
       <MemberSignature Language="VB.NET" Value="BinaryOperationLogical" />
       <MemberSignature Language="C++ CLI" Value="BinaryOperationLogical" />
+      <MemberSignature Language="F#" Value="BinaryOperationLogical = 8" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.BinaryOperationLogical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.CheckedContext" />
       <MemberSignature Language="VB.NET" Value="CheckedContext" />
       <MemberSignature Language="C++ CLI" Value="CheckedContext" />
+      <MemberSignature Language="F#" Value="CheckedContext = 1" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.CheckedContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ConvertArrayIndex" />
       <MemberSignature Language="VB.NET" Value="ConvertArrayIndex" />
       <MemberSignature Language="C++ CLI" Value="ConvertArrayIndex" />
+      <MemberSignature Language="F#" Value="ConvertArrayIndex = 32" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ConvertArrayIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ConvertExplicit" />
       <MemberSignature Language="VB.NET" Value="ConvertExplicit" />
       <MemberSignature Language="C++ CLI" Value="ConvertExplicit" />
+      <MemberSignature Language="F#" Value="ConvertExplicit = 16" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ConvertExplicit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.InvokeSimpleName" />
       <MemberSignature Language="VB.NET" Value="InvokeSimpleName" />
       <MemberSignature Language="C++ CLI" Value="InvokeSimpleName" />
+      <MemberSignature Language="F#" Value="InvokeSimpleName = 2" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.InvokeSimpleName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.InvokeSpecialName" />
       <MemberSignature Language="VB.NET" Value="InvokeSpecialName" />
       <MemberSignature Language="C++ CLI" Value="InvokeSpecialName" />
+      <MemberSignature Language="F#" Value="InvokeSpecialName = 4" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.InvokeSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -176,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ResultDiscarded" />
       <MemberSignature Language="VB.NET" Value="ResultDiscarded" />
       <MemberSignature Language="C++ CLI" Value="ResultDiscarded" />
+      <MemberSignature Language="F#" Value="ResultDiscarded = 256" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ResultDiscarded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -197,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ResultIndexed" />
       <MemberSignature Language="VB.NET" Value="ResultIndexed" />
       <MemberSignature Language="C++ CLI" Value="ResultIndexed" />
+      <MemberSignature Language="F#" Value="ResultIndexed = 64" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ResultIndexed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -218,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ValueFromCompoundAssignment" />
       <MemberSignature Language="VB.NET" Value="ValueFromCompoundAssignment" />
       <MemberSignature Language="C++ CLI" Value="ValueFromCompoundAssignment" />
+      <MemberSignature Language="F#" Value="ValueFromCompoundAssignment = 128" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ValueFromCompoundAssignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>

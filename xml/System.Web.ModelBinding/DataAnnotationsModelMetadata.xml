@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class DataAnnotationsModelMetadata&#xA;Inherits ModelMetadata" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataAnnotationsModelMetadata : System::Web::ModelBinding::ModelMetadata" />
+  <TypeSignature Language="F#" Value="type DataAnnotationsModelMetadata = class&#xA;    inherit ModelMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.DataAnnotationsModelMetadataProvider provider, class System.Type containerType, class System.Func`1&lt;object&gt; modelAccessor, class System.Type modelType, string propertyName, class System.ComponentModel.DataAnnotations.DisplayColumnAttribute displayColumnAttribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelMetadata.#ctor(System.Web.ModelBinding.DataAnnotationsModelMetadataProvider,System.Type,System.Func{System.Object},System.Type,System.String,System.ComponentModel.DataAnnotations.DisplayColumnAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataAnnotationsModelMetadata(System::Web::ModelBinding::DataAnnotationsModelMetadataProvider ^ provider, Type ^ containerType, Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ modelType, System::String ^ propertyName, System::ComponentModel::DataAnnotations::DisplayColumnAttribute ^ displayColumnAttribute);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.DataAnnotationsModelMetadata : System.Web.ModelBinding.DataAnnotationsModelMetadataProvider * Type * Func&lt;obj&gt; * Type * string * System.ComponentModel.DataAnnotations.DisplayColumnAttribute -&gt; System.Web.ModelBinding.DataAnnotationsModelMetadata" Usage="new System.Web.ModelBinding.DataAnnotationsModelMetadata (provider, containerType, modelAccessor, modelType, propertyName, displayColumnAttribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelMetadata.GetSimpleDisplayText" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSimpleDisplayText () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetSimpleDisplayText();" />
+      <MemberSignature Language="F#" Value="override this.GetSimpleDisplayText : unit -&gt; string" Usage="dataAnnotationsModelMetadata.GetSimpleDisplayText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

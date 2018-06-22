@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Content" />
   <TypeSignature Language="VB.NET" Value="Public Class Content&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class Content : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type Content = class&#xA;    inherit Control&#xA;    interface INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Content.ContentPlaceHolderID" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentPlaceHolderID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentPlaceHolderID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentPlaceHolderID : string with get, set" Usage="System.Web.UI.WebControls.Content.ContentPlaceHolderID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -174,6 +176,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.DataBinding" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataBinding As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataBinding;" />
+      <MemberSignature Language="F#" Value="member this.DataBinding : EventHandler " Usage="member this.DataBinding : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +213,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.Disposed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Disposed;" />
+      <MemberSignature Language="F#" Value="member this.Disposed : EventHandler " Usage="member this.Disposed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +250,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.Init" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Init As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Init;" />
+      <MemberSignature Language="F#" Value="member this.Init : EventHandler " Usage="member this.Init : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -282,6 +287,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.Load" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Load As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Load;" />
+      <MemberSignature Language="F#" Value="member this.Load : EventHandler " Usage="member this.Load : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -318,6 +324,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.PreRender" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PreRender As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreRender;" />
+      <MemberSignature Language="F#" Value="member this.PreRender : EventHandler " Usage="member this.PreRender : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +361,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.Unload" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unload As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Unload;" />
+      <MemberSignature Language="F#" Value="member this.Unload : EventHandler " Usage="member this.Unload : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

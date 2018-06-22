@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyHashAlgorithm" />
   <TypeSignature Language="VB.NET" Value="Public Enum AssemblyHashAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public enum class AssemblyHashAlgorithm" />
+  <TypeSignature Language="F#" Value="type AssemblyHashAlgorithm = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyHashAlgorithm.MD5" />
       <MemberSignature Language="VB.NET" Value="MD5" />
       <MemberSignature Language="C++ CLI" Value="MD5" />
+      <MemberSignature Language="F#" Value="MD5 = 32771" Usage="System.Reflection.AssemblyHashAlgorithm.MD5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyHashAlgorithm.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.AssemblyHashAlgorithm.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyHashAlgorithm.Sha1" />
       <MemberSignature Language="VB.NET" Value="Sha1" />
       <MemberSignature Language="C++ CLI" Value="Sha1" />
+      <MemberSignature Language="F#" Value="Sha1 = 32772" Usage="System.Reflection.AssemblyHashAlgorithm.Sha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyHashAlgorithm.Sha256" />
       <MemberSignature Language="VB.NET" Value="Sha256" />
       <MemberSignature Language="C++ CLI" Value="Sha256" />
+      <MemberSignature Language="F#" Value="Sha256 = 32780" Usage="System.Reflection.AssemblyHashAlgorithm.Sha256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyHashAlgorithm.Sha384" />
       <MemberSignature Language="VB.NET" Value="Sha384" />
       <MemberSignature Language="C++ CLI" Value="Sha384" />
+      <MemberSignature Language="F#" Value="Sha384 = 32781" Usage="System.Reflection.AssemblyHashAlgorithm.Sha384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyHashAlgorithm.Sha512" />
       <MemberSignature Language="VB.NET" Value="Sha512" />
       <MemberSignature Language="C++ CLI" Value="Sha512" />
+      <MemberSignature Language="F#" Value="Sha512 = 32782" Usage="System.Reflection.AssemblyHashAlgorithm.Sha512" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

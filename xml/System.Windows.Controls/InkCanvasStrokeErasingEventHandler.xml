@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokeErasingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InkCanvasStrokeErasingEventHandler(sender As Object, e As InkCanvasStrokeErasingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InkCanvasStrokeErasingEventHandler(System::Object ^ sender, InkCanvasStrokeErasingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InkCanvasStrokeErasingEventHandler = delegate of obj * InkCanvasStrokeErasingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

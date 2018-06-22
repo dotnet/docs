@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub NetworkAvailableEventHandler(sender As Object, e As NetworkAvailableEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void NetworkAvailableEventHandler(System::Object ^ sender, NetworkAvailableEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type NetworkAvailableEventHandler = delegate of obj * NetworkAvailableEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

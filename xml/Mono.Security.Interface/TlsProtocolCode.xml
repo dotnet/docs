@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.TlsProtocolCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TlsProtocolCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TlsProtocolCode" />
+  <TypeSignature Language="F#" Value="type TlsProtocolCode = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocolCode.Tls10" />
       <MemberSignature Language="VB.NET" Value="Tls10" />
       <MemberSignature Language="C++ CLI" Value="Tls10" />
+      <MemberSignature Language="F#" Value="Tls10 = 769" Usage="Mono.Security.Interface.TlsProtocolCode.Tls10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocolCode.Tls11" />
       <MemberSignature Language="VB.NET" Value="Tls11" />
       <MemberSignature Language="C++ CLI" Value="Tls11" />
+      <MemberSignature Language="F#" Value="Tls11 = 770" Usage="Mono.Security.Interface.TlsProtocolCode.Tls11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocolCode.Tls12" />
       <MemberSignature Language="VB.NET" Value="Tls12" />
       <MemberSignature Language="C++ CLI" Value="Tls12" />
+      <MemberSignature Language="F#" Value="Tls12 = 771" Usage="Mono.Security.Interface.TlsProtocolCode.Tls12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

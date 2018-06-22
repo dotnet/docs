@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapOperationBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapOperationBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapOperationBinding : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type SoapOperationBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapOperationBinding.SoapAction" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoapAction { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapAction : string with get, set" Usage="System.Web.Services.Description.SoapOperationBinding.SoapAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapOperationBinding.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As SoapBindingStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapBindingStyle Style { System::Web::Services::Description::SoapBindingStyle get(); void set(System::Web::Services::Description::SoapBindingStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Web.Services.Description.SoapBindingStyle with get, set" Usage="System.Web.Services.Description.SoapOperationBinding.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

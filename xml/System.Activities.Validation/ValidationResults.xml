@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Validation.ValidationResults" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidationResults" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationResults" />
+  <TypeSignature Language="F#" Value="type ValidationResults = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.ValidationResults.#ctor(System.Collections.Generic.IList{System.Activities.Validation.ValidationError})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (allValidationErrors As IList(Of ValidationError))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationResults(System::Collections::Generic::IList&lt;System::Activities::Validation::ValidationError ^&gt; ^ allValidationErrors);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Validation.ValidationResults : System.Collections.Generic.IList&lt;System.Activities.Validation.ValidationError&gt; -&gt; System.Activities.Validation.ValidationResults" Usage="new System.Activities.Validation.ValidationResults allValidationErrors" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationResults.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As ReadOnlyCollection(Of ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Validation::ValidationError ^&gt; ^ Errors { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Validation::ValidationError ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Validation.ValidationError&gt;" Usage="System.Activities.Validation.ValidationResults.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.ValidationResults.Warnings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Warnings As ReadOnlyCollection(Of ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Validation::ValidationError ^&gt; ^ Warnings { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Validation::ValidationError ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Warnings : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Validation.ValidationError&gt;" Usage="System.Activities.Validation.ValidationResults.Warnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

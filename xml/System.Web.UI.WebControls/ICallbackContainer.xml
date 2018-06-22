@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ICallbackContainer" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICallbackContainer" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICallbackContainer" />
+  <TypeSignature Language="F#" Value="type ICallbackContainer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCallbackScript (buttonControl As IButtonControl, argument As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCallbackScript(System::Web::UI::WebControls::IButtonControl ^ buttonControl, System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="abstract member GetCallbackScript : System.Web.UI.WebControls.IButtonControl * string -&gt; string" Usage="iCallbackContainer.GetCallbackScript (buttonControl, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

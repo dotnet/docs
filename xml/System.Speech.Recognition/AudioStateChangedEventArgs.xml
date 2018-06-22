@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.AudioStateChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AudioStateChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AudioStateChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AudioStateChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@ void sre_AudioStateChanged(object sender, AudioStateChangedEventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioState As AudioState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::AudioState AudioState { System::Speech::Recognition::AudioState get(); };" />
+      <MemberSignature Language="F#" Value="member this.AudioState : System.Speech.Recognition.AudioState" Usage="System.Speech.Recognition.AudioStateChangedEventArgs.AudioState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

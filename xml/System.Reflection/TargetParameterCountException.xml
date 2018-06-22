@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.TargetParameterCountException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TargetParameterCountException&#xA;Inherits ApplicationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class TargetParameterCountException sealed : ApplicationException" />
+  <TypeSignature Language="F#" Value="type TargetParameterCountException = class&#xA;    inherit ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TargetParameterCountException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetParameterCountException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.TargetParameterCountException : string -&gt; System.Reflection.TargetParameterCountException" Usage="new System.Reflection.TargetParameterCountException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -157,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TargetParameterCountException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetParameterCountException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.TargetParameterCountException : string * Exception -&gt; System.Reflection.TargetParameterCountException" Usage="new System.Reflection.TargetParameterCountException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

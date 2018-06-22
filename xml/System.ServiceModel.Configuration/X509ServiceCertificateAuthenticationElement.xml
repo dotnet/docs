@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509ServiceCertificateAuthenticationElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509ServiceCertificateAuthenticationElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type X509ServiceCertificateAuthenticationElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.CertificateValidationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateValidationMode As X509CertificateValidationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::X509CertificateValidationMode CertificateValidationMode { System::ServiceModel::Security::X509CertificateValidationMode get(); void set(System::ServiceModel::Security::X509CertificateValidationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidationMode : System.ServiceModel.Security.X509CertificateValidationMode with get, set" Usage="System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.CertificateValidationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.Copy(System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As X509ServiceCertificateAuthenticationElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::X509ServiceCertificateAuthenticationElement ^ from);" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement -&gt; unit" Usage="x509ServiceCertificateAuthenticationElement.Copy from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.CustomCertificateValidatorType" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomCertificateValidatorType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomCertificateValidatorType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomCertificateValidatorType : string with get, set" Usage="System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.CustomCertificateValidatorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.RevocationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RevocationMode As X509RevocationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode RevocationMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.RevocationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.TrustedStoreLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property TrustedStoreLocation As StoreLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation TrustedStoreLocation { System::Security::Cryptography::X509Certificates::StoreLocation get(); void set(System::Security::Cryptography::X509Certificates::StoreLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.TrustedStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation with get, set" Usage="System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.TrustedStoreLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

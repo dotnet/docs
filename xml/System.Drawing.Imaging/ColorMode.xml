@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ColorMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ColorMode" />
+  <TypeSignature Language="F#" Value="type ColorMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMode.Argb32Mode" />
       <MemberSignature Language="VB.NET" Value="Argb32Mode" />
       <MemberSignature Language="C++ CLI" Value="Argb32Mode" />
+      <MemberSignature Language="F#" Value="Argb32Mode = 0" Usage="System.Drawing.Imaging.ColorMode.Argb32Mode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMode.Argb64Mode" />
       <MemberSignature Language="VB.NET" Value="Argb64Mode" />
       <MemberSignature Language="C++ CLI" Value="Argb64Mode" />
+      <MemberSignature Language="F#" Value="Argb64Mode = 1" Usage="System.Drawing.Imaging.ColorMode.Argb64Mode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

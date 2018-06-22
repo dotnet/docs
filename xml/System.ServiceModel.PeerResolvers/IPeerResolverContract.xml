@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.IPeerResolverContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPeerResolverContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPeerResolverContract" />
+  <TypeSignature Language="F#" Value="type IPeerResolverContract = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.IPeerResolverContract.GetServiceSettings" />
       <MemberSignature Language="VB.NET" Value="Public Function GetServiceSettings () As ServiceSettingsResponseInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::PeerResolvers::ServiceSettingsResponseInfo ^ GetServiceSettings();" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceSettings : unit -&gt; System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo" Usage="iPeerResolverContract.GetServiceSettings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.RefreshResponseInfo Refresh(class System.ServiceModel.PeerResolvers.RefreshInfo refreshInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Refresh(System.ServiceModel.PeerResolvers.RefreshInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::PeerResolvers::RefreshResponseInfo ^ Refresh(System::ServiceModel::PeerResolvers::RefreshInfo ^ refreshInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Refresh : System.ServiceModel.PeerResolvers.RefreshInfo -&gt; System.ServiceModel.PeerResolvers.RefreshResponseInfo" Usage="iPeerResolverContract.Refresh refreshInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.RegisterResponseInfo Register(class System.ServiceModel.PeerResolvers.RegisterInfo registerInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Register(System.ServiceModel.PeerResolvers.RegisterInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::PeerResolvers::RegisterResponseInfo ^ Register(System::ServiceModel::PeerResolvers::RegisterInfo ^ registerInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Register : System.ServiceModel.PeerResolvers.RegisterInfo -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo" Usage="iPeerResolverContract.Register registerInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.ResolveResponseInfo Resolve(class System.ServiceModel.PeerResolvers.ResolveInfo resolveInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Resolve(System.ServiceModel.PeerResolvers.ResolveInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::PeerResolvers::ResolveResponseInfo ^ Resolve(System::ServiceModel::PeerResolvers::ResolveInfo ^ resolveInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : System.ServiceModel.PeerResolvers.ResolveInfo -&gt; System.ServiceModel.PeerResolvers.ResolveResponseInfo" Usage="iPeerResolverContract.Resolve resolveInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unregister(class System.ServiceModel.PeerResolvers.UnregisterInfo unregisterInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Unregister(System.ServiceModel.PeerResolvers.UnregisterInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unregister(System::ServiceModel::PeerResolvers::UnregisterInfo ^ unregisterInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Unregister : System.ServiceModel.PeerResolvers.UnregisterInfo -&gt; unit" Usage="iPeerResolverContract.Unregister unregisterInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.RegisterResponseInfo Update(class System.ServiceModel.PeerResolvers.UpdateInfo updateInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Update(System.ServiceModel.PeerResolvers.UpdateInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::PeerResolvers::RegisterResponseInfo ^ Update(System::ServiceModel::PeerResolvers::UpdateInfo ^ updateInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Update : System.ServiceModel.PeerResolvers.UpdateInfo -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo" Usage="iPeerResolverContract.Update updateInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

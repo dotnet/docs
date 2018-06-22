@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SchemaImporterExtensionElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SchemaImporterExtensionElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SchemaImporterExtensionElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SchemaImporterExtensionElement(System::String ^ name, System::String ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.Configuration.SchemaImporterExtensionElement : string * string -&gt; System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" Usage="new System.Xml.Serialization.Configuration.SchemaImporterExtensionElement (name, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.#ctor(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SchemaImporterExtensionElement(System::String ^ name, Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.Configuration.SchemaImporterExtensionElement : string * Type -&gt; System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" Usage="new System.Xml.Serialization.Configuration.SchemaImporterExtensionElement (name, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventCommandEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EventCommandEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventCommandEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type EventCommandEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventCommandEventArgs.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Arguments { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Diagnostics.Tracing.EventCommandEventArgs.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventCommandEventArgs.Command" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Command As EventCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventCommand Command { System::Diagnostics::Tracing::EventCommand get(); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Diagnostics.Tracing.EventCommand" Usage="System.Diagnostics.Tracing.EventCommandEventArgs.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function DisableEvent (eventId As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DisableEvent(int eventId);" />
+      <MemberSignature Language="F#" Value="member this.DisableEvent : int -&gt; bool" Usage="eventCommandEventArgs.DisableEvent eventId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnableEvent (eventId As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EnableEvent(int eventId);" />
+      <MemberSignature Language="F#" Value="member this.EnableEvent : int -&gt; bool" Usage="eventCommandEventArgs.EnableEvent eventId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

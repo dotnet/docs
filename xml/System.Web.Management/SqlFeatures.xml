@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlFeatures" />
   <TypeSignature Language="VB.NET" Value="Public Enum SqlFeatures" />
   <TypeSignature Language="C++ CLI" Value="public enum class SqlFeatures" />
+  <TypeSignature Language="F#" Value="type SqlFeatures = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1073741855" Usage="System.Web.Management.SqlFeatures.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Membership" />
       <MemberSignature Language="VB.NET" Value="Membership" />
       <MemberSignature Language="C++ CLI" Value="Membership" />
+      <MemberSignature Language="F#" Value="Membership = 1" Usage="System.Web.Management.SqlFeatures.Membership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Management.SqlFeatures.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Personalization" />
       <MemberSignature Language="VB.NET" Value="Personalization" />
       <MemberSignature Language="C++ CLI" Value="Personalization" />
+      <MemberSignature Language="F#" Value="Personalization = 8" Usage="System.Web.Management.SqlFeatures.Personalization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Profile" />
       <MemberSignature Language="VB.NET" Value="Profile" />
       <MemberSignature Language="C++ CLI" Value="Profile" />
+      <MemberSignature Language="F#" Value="Profile = 2" Usage="System.Web.Management.SqlFeatures.Profile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.RoleManager" />
       <MemberSignature Language="VB.NET" Value="RoleManager" />
       <MemberSignature Language="C++ CLI" Value="RoleManager" />
+      <MemberSignature Language="F#" Value="RoleManager = 4" Usage="System.Web.Management.SqlFeatures.RoleManager" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.SqlWebEventProvider" />
       <MemberSignature Language="VB.NET" Value="SqlWebEventProvider" />
       <MemberSignature Language="C++ CLI" Value="SqlWebEventProvider" />
+      <MemberSignature Language="F#" Value="SqlWebEventProvider = 16" Usage="System.Web.Management.SqlFeatures.SqlWebEventProvider" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

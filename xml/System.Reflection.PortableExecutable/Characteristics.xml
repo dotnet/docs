@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.Characteristics" />
   <TypeSignature Language="VB.NET" Value="Public Enum Characteristics" />
   <TypeSignature Language="C++ CLI" Value="public enum class Characteristics" />
+  <TypeSignature Language="F#" Value="type Characteristics = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.AggressiveWSTrim" />
       <MemberSignature Language="VB.NET" Value="AggressiveWSTrim" />
       <MemberSignature Language="C++ CLI" Value="AggressiveWSTrim" />
+      <MemberSignature Language="F#" Value="AggressiveWSTrim = 16" Usage="System.Reflection.PortableExecutable.Characteristics.AggressiveWSTrim" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.Bit32Machine" />
       <MemberSignature Language="VB.NET" Value="Bit32Machine" />
       <MemberSignature Language="C++ CLI" Value="Bit32Machine" />
+      <MemberSignature Language="F#" Value="Bit32Machine = 256" Usage="System.Reflection.PortableExecutable.Characteristics.Bit32Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.BytesReversedHi" />
       <MemberSignature Language="VB.NET" Value="BytesReversedHi" />
       <MemberSignature Language="C++ CLI" Value="BytesReversedHi" />
+      <MemberSignature Language="F#" Value="BytesReversedHi = 32768" Usage="System.Reflection.PortableExecutable.Characteristics.BytesReversedHi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.BytesReversedLo" />
       <MemberSignature Language="VB.NET" Value="BytesReversedLo" />
       <MemberSignature Language="C++ CLI" Value="BytesReversedLo" />
+      <MemberSignature Language="F#" Value="BytesReversedLo = 128" Usage="System.Reflection.PortableExecutable.Characteristics.BytesReversedLo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.DebugStripped" />
       <MemberSignature Language="VB.NET" Value="DebugStripped" />
       <MemberSignature Language="C++ CLI" Value="DebugStripped" />
+      <MemberSignature Language="F#" Value="DebugStripped = 512" Usage="System.Reflection.PortableExecutable.Characteristics.DebugStripped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.Dll" />
       <MemberSignature Language="VB.NET" Value="Dll" />
       <MemberSignature Language="C++ CLI" Value="Dll" />
+      <MemberSignature Language="F#" Value="Dll = 8192" Usage="System.Reflection.PortableExecutable.Characteristics.Dll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.ExecutableImage" />
       <MemberSignature Language="VB.NET" Value="ExecutableImage" />
       <MemberSignature Language="C++ CLI" Value="ExecutableImage" />
+      <MemberSignature Language="F#" Value="ExecutableImage = 2" Usage="System.Reflection.PortableExecutable.Characteristics.ExecutableImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.LargeAddressAware" />
       <MemberSignature Language="VB.NET" Value="LargeAddressAware" />
       <MemberSignature Language="C++ CLI" Value="LargeAddressAware" />
+      <MemberSignature Language="F#" Value="LargeAddressAware = 32" Usage="System.Reflection.PortableExecutable.Characteristics.LargeAddressAware" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.LineNumsStripped" />
       <MemberSignature Language="VB.NET" Value="LineNumsStripped" />
       <MemberSignature Language="C++ CLI" Value="LineNumsStripped" />
+      <MemberSignature Language="F#" Value="LineNumsStripped = 4" Usage="System.Reflection.PortableExecutable.Characteristics.LineNumsStripped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.LocalSymsStripped" />
       <MemberSignature Language="VB.NET" Value="LocalSymsStripped" />
       <MemberSignature Language="C++ CLI" Value="LocalSymsStripped" />
+      <MemberSignature Language="F#" Value="LocalSymsStripped = 8" Usage="System.Reflection.PortableExecutable.Characteristics.LocalSymsStripped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -245,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.NetRunFromSwap" />
       <MemberSignature Language="VB.NET" Value="NetRunFromSwap" />
       <MemberSignature Language="C++ CLI" Value="NetRunFromSwap" />
+      <MemberSignature Language="F#" Value="NetRunFromSwap = 2048" Usage="System.Reflection.PortableExecutable.Characteristics.NetRunFromSwap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -267,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.RelocsStripped" />
       <MemberSignature Language="VB.NET" Value="RelocsStripped" />
       <MemberSignature Language="C++ CLI" Value="RelocsStripped" />
+      <MemberSignature Language="F#" Value="RelocsStripped = 1" Usage="System.Reflection.PortableExecutable.Characteristics.RelocsStripped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -289,6 +302,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.RemovableRunFromSwap" />
       <MemberSignature Language="VB.NET" Value="RemovableRunFromSwap" />
       <MemberSignature Language="C++ CLI" Value="RemovableRunFromSwap" />
+      <MemberSignature Language="F#" Value="RemovableRunFromSwap = 1024" Usage="System.Reflection.PortableExecutable.Characteristics.RemovableRunFromSwap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -311,6 +325,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 4096" Usage="System.Reflection.PortableExecutable.Characteristics.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -333,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Characteristics.UpSystemOnly" />
       <MemberSignature Language="VB.NET" Value="UpSystemOnly" />
       <MemberSignature Language="C++ CLI" Value="UpSystemOnly" />
+      <MemberSignature Language="F#" Value="UpSystemOnly = 16384" Usage="System.Reflection.PortableExecutable.Characteristics.UpSystemOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

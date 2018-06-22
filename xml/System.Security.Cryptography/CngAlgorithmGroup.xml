@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngAlgorithmGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CngAlgorithmGroup&#xA;Implements IEquatable(Of CngAlgorithmGroup)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CngAlgorithmGroup sealed : IEquatable&lt;System::Security::Cryptography::CngAlgorithmGroup ^&gt;" />
+  <TypeSignature Language="F#" Value="type CngAlgorithmGroup = class&#xA;    interface IEquatable&lt;CngAlgorithmGroup&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithmGroup.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (algorithmGroup As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CngAlgorithmGroup(System::String ^ algorithmGroup);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CngAlgorithmGroup : string -&gt; System.Security.Cryptography.CngAlgorithmGroup" Usage="new System.Security.Cryptography.CngAlgorithmGroup algorithmGroup" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngAlgorithmGroup.AlgorithmGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlgorithmGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlgorithmGroup { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmGroup : string" Usage="System.Security.Cryptography.CngAlgorithmGroup.AlgorithmGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngAlgorithmGroup.DiffieHellman" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DiffieHellman As CngAlgorithmGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::CngAlgorithmGroup ^ DiffieHellman { System::Security::Cryptography::CngAlgorithmGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DiffieHellman : System.Security.Cryptography.CngAlgorithmGroup" Usage="System.Security.Cryptography.CngAlgorithmGroup.DiffieHellman" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngAlgorithmGroup.Dsa" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Dsa As CngAlgorithmGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::CngAlgorithmGroup ^ Dsa { System::Security::Cryptography::CngAlgorithmGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Dsa : System.Security.Cryptography.CngAlgorithmGroup" Usage="System.Security.Cryptography.CngAlgorithmGroup.Dsa" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngAlgorithmGroup.ECDiffieHellman" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ECDiffieHellman As CngAlgorithmGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::CngAlgorithmGroup ^ ECDiffieHellman { System::Security::Cryptography::CngAlgorithmGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ECDiffieHellman : System.Security.Cryptography.CngAlgorithmGroup" Usage="System.Security.Cryptography.CngAlgorithmGroup.ECDiffieHellman" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngAlgorithmGroup.ECDsa" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ECDsa As CngAlgorithmGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::CngAlgorithmGroup ^ ECDsa { System::Security::Cryptography::CngAlgorithmGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ECDsa : System.Security.Cryptography.CngAlgorithmGroup" Usage="System.Security.Cryptography.CngAlgorithmGroup.ECDsa" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithmGroup.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cngAlgorithmGroup.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -288,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithmGroup.Equals(System.Security.Cryptography.CngAlgorithmGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As CngAlgorithmGroup) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Security::Cryptography::CngAlgorithmGroup ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Security.Cryptography.CngAlgorithmGroup -&gt; bool" Usage="cngAlgorithmGroup.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -326,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithmGroup.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cngAlgorithmGroup.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -357,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithmGroup.op_Equality(System.Security.Cryptography.CngAlgorithmGroup,System.Security.Cryptography.CngAlgorithmGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CngAlgorithmGroup, right As CngAlgorithmGroup) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::Cryptography::CngAlgorithmGroup ^ left, System::Security::Cryptography::CngAlgorithmGroup ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Security.Cryptography.CngAlgorithmGroup * System.Security.Cryptography.CngAlgorithmGroup -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -394,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithmGroup.op_Inequality(System.Security.Cryptography.CngAlgorithmGroup,System.Security.Cryptography.CngAlgorithmGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CngAlgorithmGroup, right As CngAlgorithmGroup) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::Cryptography::CngAlgorithmGroup ^ left, System::Security::Cryptography::CngAlgorithmGroup ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Security.Cryptography.CngAlgorithmGroup * System.Security.Cryptography.CngAlgorithmGroup -&gt; bool" Usage="System.Security.Cryptography.CngAlgorithmGroup.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -431,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngAlgorithmGroup.Rsa" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rsa As CngAlgorithmGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::CngAlgorithmGroup ^ Rsa { System::Security::Cryptography::CngAlgorithmGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rsa : System.Security.Cryptography.CngAlgorithmGroup" Usage="System.Security.Cryptography.CngAlgorithmGroup.Rsa" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -461,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithmGroup.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cngAlgorithmGroup.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

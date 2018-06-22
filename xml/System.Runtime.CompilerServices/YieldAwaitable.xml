@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.YieldAwaitable" />
   <TypeSignature Language="VB.NET" Value="Public Structure YieldAwaitable" />
   <TypeSignature Language="C++ CLI" Value="public value class YieldAwaitable" />
+  <TypeSignature Language="F#" Value="type YieldAwaitable = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.YieldAwaitable.GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As YieldAwaitable.YieldAwaiter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::YieldAwaitable::YieldAwaiter GetAwaiter();" />
+      <MemberSignature Language="F#" Value="member this.GetAwaiter : unit -&gt; System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter" Usage="yieldAwaitable.GetAwaiter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

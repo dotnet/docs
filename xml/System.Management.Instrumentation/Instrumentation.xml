@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.Instrumentation" />
   <TypeSignature Language="VB.NET" Value="Public Class Instrumentation" />
   <TypeSignature Language="C++ CLI" Value="public ref class Instrumentation" />
+  <TypeSignature Language="F#" Value="type Instrumentation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Fire(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Fire (eventData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Fire(System::Object ^ eventData);" />
+      <MemberSignature Language="F#" Value="static member Fire : obj -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.Fire eventData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.IsAssemblyRegistered(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsAssemblyRegistered (assemblyToRegister As Assembly) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsAssemblyRegistered(System::Reflection::Assembly ^ assemblyToRegister);" />
+      <MemberSignature Language="F#" Value="static member IsAssemblyRegistered : System.Reflection.Assembly -&gt; bool" Usage="System.Management.Instrumentation.Instrumentation.IsAssemblyRegistered assemblyToRegister" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Publish(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Publish (instanceData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Publish(System::Object ^ instanceData);" />
+      <MemberSignature Language="F#" Value="static member Publish : obj -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.Publish instanceData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.RegisterAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterAssembly (assemblyToRegister As Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterAssembly(System::Reflection::Assembly ^ assemblyToRegister);" />
+      <MemberSignature Language="F#" Value="static member RegisterAssembly : System.Reflection.Assembly -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.RegisterAssembly assemblyToRegister" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Revoke(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Revoke (instanceData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Revoke(System::Object ^ instanceData);" />
+      <MemberSignature Language="F#" Value="static member Revoke : obj -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.Revoke instanceData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.SetBatchSize(System.Type,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetBatchSize (instrumentationClass As Type, batchSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBatchSize(Type ^ instrumentationClass, int batchSize);" />
+      <MemberSignature Language="F#" Value="static member SetBatchSize : Type * int -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.SetBatchSize (instrumentationClass, batchSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestResultCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function HitTestResultCallback(result As HitTestResult) As HitTestResultBehavior " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Windows::Media::HitTestResultBehavior HitTestResultCallback(HitTestResult ^ result);" />
+  <TypeSignature Language="F#" Value="type HitTestResultCallback = delegate of HitTestResult -&gt; HitTestResultBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

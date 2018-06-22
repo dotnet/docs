@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.UndoUnit" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UndoUnit" />
   <TypeSignature Language="C++ CLI" Value="public ref class UndoUnit abstract" />
+  <TypeSignature Language="F#" Value="type UndoUnit = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoUnit.#ctor(System.Activities.Presentation.EditingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (context As EditingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; UndoUnit(System::Activities::Presentation::EditingContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.UndoUnit : System.Activities.Presentation.EditingContext -&gt; System.Activities.Presentation.UndoUnit" Usage="new System.Activities.Presentation.UndoUnit context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoUnit.ApplyGlobalState" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ApplyGlobalState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ApplyGlobalState();" />
+      <MemberSignature Language="F#" Value="member this.ApplyGlobalState : unit -&gt; unit" Usage="undoUnit.ApplyGlobalState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.UndoUnit.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Activities.Presentation.UndoUnit.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoUnit.Redo" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Redo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Redo();" />
+      <MemberSignature Language="F#" Value="abstract member Redo : unit -&gt; unit" Usage="undoUnit.Redo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoUnit.SaveGlobalState" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SaveGlobalState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SaveGlobalState();" />
+      <MemberSignature Language="F#" Value="member this.SaveGlobalState : unit -&gt; unit" Usage="undoUnit.SaveGlobalState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoUnit.Undo" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Undo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Undo();" />
+      <MemberSignature Language="F#" Value="abstract member Undo : unit -&gt; unit" Usage="undoUnit.Undo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

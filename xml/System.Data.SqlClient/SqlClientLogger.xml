@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientLogger" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlClientLogger" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlClientLogger" />
+  <TypeSignature Language="F#" Value="type SqlClientLogger = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlClientLogger.IsLoggingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoggingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoggingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLoggingEnabled : bool" Usage="System.Data.SqlClient.SqlClientLogger.IsLoggingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientLogger.LogAssert(System.Boolean,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LogAssert (value As Boolean, type As String, method As String, message As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool LogAssert(bool value, System::String ^ type, System::String ^ method, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.LogAssert : bool * string * string * string -&gt; bool" Usage="sqlClientLogger.LogAssert (value, type, method, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientLogger.LogError(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LogError (type As String, method As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogError(System::String ^ type, System::String ^ method, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.LogError : string * string * string -&gt; unit" Usage="sqlClientLogger.LogError (type, method, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientLogger.LogInfo(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LogInfo (type As String, method As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogInfo(System::String ^ type, System::String ^ method, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.LogInfo : string * string * string -&gt; unit" Usage="sqlClientLogger.LogInfo (type, method, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

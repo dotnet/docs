@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectedGridItemChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SelectedGridItemChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SelectedGridItemChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SelectedGridItemChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SelectedGridItemChangedEventArgs.#ctor(System.Windows.Forms.GridItem,System.Windows.Forms.GridItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oldSel As GridItem, newSel As GridItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectedGridItemChangedEventArgs(System::Windows::Forms::GridItem ^ oldSel, System::Windows::Forms::GridItem ^ newSel);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.SelectedGridItemChangedEventArgs : System.Windows.Forms.GridItem * System.Windows.Forms.GridItem -&gt; System.Windows.Forms.SelectedGridItemChangedEventArgs" Usage="new System.Windows.Forms.SelectedGridItemChangedEventArgs (oldSel, newSel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SelectedGridItemChangedEventArgs.NewSelection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewSelection As GridItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::GridItem ^ NewSelection { System::Windows::Forms::GridItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewSelection : System.Windows.Forms.GridItem" Usage="System.Windows.Forms.SelectedGridItemChangedEventArgs.NewSelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SelectedGridItemChangedEventArgs.OldSelection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldSelection As GridItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::GridItem ^ OldSelection { System::Windows::Forms::GridItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldSelection : System.Windows.Forms.GridItem" Usage="System.Windows.Forms.SelectedGridItemChangedEventArgs.OldSelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

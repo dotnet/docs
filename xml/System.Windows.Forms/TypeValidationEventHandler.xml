@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TypeValidationEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TypeValidationEventHandler(sender As Object, e As TypeValidationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TypeValidationEventHandler(System::Object ^ sender, TypeValidationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TypeValidationEventHandler = delegate of obj * TypeValidationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LineBreakCondition" />
   <TypeSignature Language="VB.NET" Value="Public Enum LineBreakCondition" />
   <TypeSignature Language="C++ CLI" Value="public enum class LineBreakCondition" />
+  <TypeSignature Language="F#" Value="type LineBreakCondition = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LineBreakCondition.BreakAlways" />
       <MemberSignature Language="VB.NET" Value="BreakAlways" />
       <MemberSignature Language="C++ CLI" Value="BreakAlways" />
+      <MemberSignature Language="F#" Value="BreakAlways = 3" Usage="System.Windows.LineBreakCondition.BreakAlways" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LineBreakCondition.BreakDesired" />
       <MemberSignature Language="VB.NET" Value="BreakDesired" />
       <MemberSignature Language="C++ CLI" Value="BreakDesired" />
+      <MemberSignature Language="F#" Value="BreakDesired = 0" Usage="System.Windows.LineBreakCondition.BreakDesired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LineBreakCondition.BreakPossible" />
       <MemberSignature Language="VB.NET" Value="BreakPossible" />
       <MemberSignature Language="C++ CLI" Value="BreakPossible" />
+      <MemberSignature Language="F#" Value="BreakPossible = 1" Usage="System.Windows.LineBreakCondition.BreakPossible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LineBreakCondition.BreakRestrained" />
       <MemberSignature Language="VB.NET" Value="BreakRestrained" />
       <MemberSignature Language="C++ CLI" Value="BreakRestrained" />
+      <MemberSignature Language="F#" Value="BreakRestrained = 2" Usage="System.Windows.LineBreakCondition.BreakRestrained" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

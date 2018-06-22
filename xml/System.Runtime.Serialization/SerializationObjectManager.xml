@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SerializationObjectManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SerializationObjectManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerializationObjectManager sealed" />
+  <TypeSignature Language="F#" Value="type SerializationObjectManager = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationObjectManager.#ctor(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializationObjectManager(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.SerializationObjectManager : System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Serialization.SerializationObjectManager" Usage="new System.Runtime.Serialization.SerializationObjectManager context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationObjectManager.RaiseOnSerializedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseOnSerializedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseOnSerializedEvent();" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnSerializedEvent : unit -&gt; unit" Usage="serializationObjectManager.RaiseOnSerializedEvent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationObjectManager.RegisterObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterObject (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObject(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="member this.RegisterObject : obj -&gt; unit" Usage="serializationObjectManager.RegisterObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

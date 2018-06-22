@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientRuntimeCompatBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientRuntimeCompatBase" />
+  <TypeSignature Language="F#" Value="type ClientRuntimeCompatBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.MessageInspectors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageInspectors As IList(Of IClientMessageInspector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::ServiceModel::Dispatcher::IClientMessageInspector ^&gt; ^ MessageInspectors { System::Collections::Generic::IList&lt;System::ServiceModel::Dispatcher::IClientMessageInspector ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageInspectors : System.Collections.Generic.IList&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.MessageInspectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.Operations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As KeyedCollection(Of String, ClientOperation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::ServiceModel::Dispatcher::ClientOperation ^&gt; ^ Operations { System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::ServiceModel::Dispatcher::ClientOperation ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Operations : System.Collections.ObjectModel.KeyedCollection&lt;string, System.ServiceModel.Dispatcher.ClientOperation&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.Operations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

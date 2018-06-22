@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectedCellsChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SelectedCellsChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SelectedCellsChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SelectedCellsChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedCellsChangedEventArgs.#ctor(System.Collections.Generic.List{System.Windows.Controls.DataGridCellInfo},System.Collections.Generic.List{System.Windows.Controls.DataGridCellInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (addedCells As List(Of DataGridCellInfo), removedCells As List(Of DataGridCellInfo))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectedCellsChangedEventArgs(System::Collections::Generic::List&lt;System::Windows::Controls::DataGridCellInfo&gt; ^ addedCells, System::Collections::Generic::List&lt;System::Windows::Controls::DataGridCellInfo&gt; ^ removedCells);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.SelectedCellsChangedEventArgs : System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt; * System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt; -&gt; System.Windows.Controls.SelectedCellsChangedEventArgs" Usage="new System.Windows.Controls.SelectedCellsChangedEventArgs (addedCells, removedCells)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedCellsChangedEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.Windows.Controls.DataGridCellInfo},System.Collections.ObjectModel.ReadOnlyCollection{System.Windows.Controls.DataGridCellInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (addedCells As ReadOnlyCollection(Of DataGridCellInfo), removedCells As ReadOnlyCollection(Of DataGridCellInfo))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectedCellsChangedEventArgs(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::DataGridCellInfo&gt; ^ addedCells, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::DataGridCellInfo&gt; ^ removedCells);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.SelectedCellsChangedEventArgs : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt; * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt; -&gt; System.Windows.Controls.SelectedCellsChangedEventArgs" Usage="new System.Windows.Controls.SelectedCellsChangedEventArgs (addedCells, removedCells)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SelectedCellsChangedEventArgs.AddedCells" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddedCells As IList(Of DataGridCellInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Windows::Controls::DataGridCellInfo&gt; ^ AddedCells { System::Collections::Generic::IList&lt;System::Windows::Controls::DataGridCellInfo&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddedCells : System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt;" Usage="System.Windows.Controls.SelectedCellsChangedEventArgs.AddedCells" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SelectedCellsChangedEventArgs.RemovedCells" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemovedCells As IList(Of DataGridCellInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Windows::Controls::DataGridCellInfo&gt; ^ RemovedCells { System::Collections::Generic::IList&lt;System::Windows::Controls::DataGridCellInfo&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemovedCells : System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt;" Usage="System.Windows.Controls.SelectedCellsChangedEventArgs.RemovedCells" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

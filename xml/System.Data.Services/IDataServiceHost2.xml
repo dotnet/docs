@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IDataServiceHost2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataServiceHost2&#xA;Implements IDataServiceHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataServiceHost2 : System::Data::Services::IDataServiceHost" />
+  <TypeSignature Language="F#" Value="type IDataServiceHost2 = interface&#xA;    interface IDataServiceHost" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost2.RequestHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestHeaders As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ RequestHeaders { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestHeaders : System.Net.WebHeaderCollection" Usage="System.Data.Services.IDataServiceHost2.RequestHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost2.ResponseHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseHeaders As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ ResponseHeaders { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseHeaders : System.Net.WebHeaderCollection" Usage="System.Data.Services.IDataServiceHost2.ResponseHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

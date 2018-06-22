@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenManager" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityTokenManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenManager abstract" />
+  <TypeSignature Language="F#" Value="type SecurityTokenManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator(System.IdentityModel.Selectors.SecurityTokenRequirement,System.IdentityModel.Selectors.SecurityTokenResolver@)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenAuthenticator (requirement As SecurityTokenRequirement, ByRef resolver As SecurityTokenResolver) As SecurityTokenAuthenticator" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenAuthenticator ^ CreateSecurityTokenAuthenticator(System::IdentityModel::Selectors::SecurityTokenRequirement ^ requirement, [Runtime::InteropServices::Out] System::IdentityModel::Selectors::SecurityTokenResolver ^ % resolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenAuthenticator : System.IdentityModel.Selectors.SecurityTokenRequirement *  -&gt; System.IdentityModel.Selectors.SecurityTokenAuthenticator" Usage="securityTokenManager.CreateSecurityTokenAuthenticator (requirement, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider(System.IdentityModel.Selectors.SecurityTokenRequirement)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenProvider (requirement As SecurityTokenRequirement) As SecurityTokenProvider" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenProvider ^ CreateSecurityTokenProvider(System::IdentityModel::Selectors::SecurityTokenRequirement ^ requirement);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenProvider : System.IdentityModel.Selectors.SecurityTokenRequirement -&gt; System.IdentityModel.Selectors.SecurityTokenProvider" Usage="securityTokenManager.CreateSecurityTokenProvider requirement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenSerializer(System.IdentityModel.Selectors.SecurityTokenVersion)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenSerializer (version As SecurityTokenVersion) As SecurityTokenSerializer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenSerializer ^ CreateSecurityTokenSerializer(System::IdentityModel::Selectors::SecurityTokenVersion ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenSerializer : System.IdentityModel.Selectors.SecurityTokenVersion -&gt; System.IdentityModel.Selectors.SecurityTokenSerializer" Usage="securityTokenManager.CreateSecurityTokenSerializer version" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

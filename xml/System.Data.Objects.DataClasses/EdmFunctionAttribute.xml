@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmFunctionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmFunctionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EdmFunctionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EdmFunctionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmFunctionAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (namespaceName As String, functionName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EdmFunctionAttribute(System::String ^ namespaceName, System::String ^ functionName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.DataClasses.EdmFunctionAttribute : string * string -&gt; System.Data.Objects.DataClasses.EdmFunctionAttribute" Usage="new System.Data.Objects.DataClasses.EdmFunctionAttribute (namespaceName, functionName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FunctionName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FunctionName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FunctionName : string" Usage="System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

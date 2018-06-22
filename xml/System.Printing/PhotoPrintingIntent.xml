@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PhotoPrintingIntent" />
   <TypeSignature Language="VB.NET" Value="Public Enum PhotoPrintingIntent" />
   <TypeSignature Language="C++ CLI" Value="public enum class PhotoPrintingIntent" />
+  <TypeSignature Language="F#" Value="type PhotoPrintingIntent = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Printing.PhotoPrintingIntent.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.PhotoBest" />
       <MemberSignature Language="VB.NET" Value="PhotoBest" />
       <MemberSignature Language="C++ CLI" Value="PhotoBest" />
+      <MemberSignature Language="F#" Value="PhotoBest = 2" Usage="System.Printing.PhotoPrintingIntent.PhotoBest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.PhotoDraft" />
       <MemberSignature Language="VB.NET" Value="PhotoDraft" />
       <MemberSignature Language="C++ CLI" Value="PhotoDraft" />
+      <MemberSignature Language="F#" Value="PhotoDraft = 3" Usage="System.Printing.PhotoPrintingIntent.PhotoDraft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.PhotoStandard" />
       <MemberSignature Language="VB.NET" Value="PhotoStandard" />
       <MemberSignature Language="C++ CLI" Value="PhotoStandard" />
+      <MemberSignature Language="F#" Value="PhotoStandard = 4" Usage="System.Printing.PhotoPrintingIntent.PhotoStandard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.PhotoPrintingIntent.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

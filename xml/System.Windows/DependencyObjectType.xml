@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyObjectType" />
   <TypeSignature Language="VB.NET" Value="Public Class DependencyObjectType" />
   <TypeSignature Language="C++ CLI" Value="public ref class DependencyObjectType" />
+  <TypeSignature Language="F#" Value="type DependencyObjectType = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyObjectType.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseType As DependencyObjectType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObjectType ^ BaseType { System::Windows::DependencyObjectType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseType : System.Windows.DependencyObjectType" Usage="System.Windows.DependencyObjectType.BaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObjectType.FromSystemType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromSystemType (systemType As Type) As DependencyObjectType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObjectType ^ FromSystemType(Type ^ systemType);" />
+      <MemberSignature Language="F#" Value="static member FromSystemType : Type -&gt; System.Windows.DependencyObjectType" Usage="System.Windows.DependencyObjectType.FromSystemType systemType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObjectType.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dependencyObjectType.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyObjectType.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Windows.DependencyObjectType.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInstanceOfType(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObjectType.IsInstanceOfType(System.Windows.DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInstanceOfType(System::Windows::DependencyObject ^ dependencyObject);" />
+      <MemberSignature Language="F#" Value="member this.IsInstanceOfType : System.Windows.DependencyObject -&gt; bool" Usage="dependencyObjectType.IsInstanceOfType dependencyObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsSubclassOf(class System.Windows.DependencyObjectType dependencyObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyObjectType.IsSubclassOf(System.Windows.DependencyObjectType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSubclassOf(System::Windows::DependencyObjectType ^ dependencyObjectType);" />
+      <MemberSignature Language="F#" Value="member this.IsSubclassOf : System.Windows.DependencyObjectType -&gt; bool" Usage="dependencyObjectType.IsSubclassOf dependencyObjectType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyObjectType.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.DependencyObjectType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -230,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyObjectType.SystemType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ SystemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SystemType : Type" Usage="System.Windows.DependencyObjectType.SystemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.InterfaceImplementation" />
   <TypeSignature Language="VB.NET" Value="Public Structure InterfaceImplementation" />
   <TypeSignature Language="C++ CLI" Value="public value class InterfaceImplementation" />
+  <TypeSignature Language="F#" Value="type InterfaceImplementation = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.InterfaceImplementation.GetCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : unit -&gt; System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="interfaceImplementation.GetCustomAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.InterfaceImplementation.Interface" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interface As EntityHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Interface { System::Reflection::Metadata::EntityHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Interface : System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.InterfaceImplementation.Interface" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

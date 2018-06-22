@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDirectionExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeDirectionExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeDirectionExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeDirectionExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectionExpression.#ctor(System.CodeDom.FieldDirection,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (direction As FieldDirection, expression As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirectionExpression(System::CodeDom::FieldDirection direction, System::CodeDom::CodeExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeDirectionExpression : System.CodeDom.FieldDirection * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeDirectionExpression" Usage="new System.CodeDom.CodeDirectionExpression (direction, expression)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDirectionExpression.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Property Direction As FieldDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::FieldDirection Direction { System::CodeDom::FieldDirection get(); void set(System::CodeDom::FieldDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.CodeDom.FieldDirection with get, set" Usage="System.CodeDom.CodeDirectionExpression.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDirectionExpression.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Expression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeDirectionExpression.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

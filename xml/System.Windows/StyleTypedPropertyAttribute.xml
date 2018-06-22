@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.StyleTypedPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StyleTypedPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class StyleTypedPropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type StyleTypedPropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.StyleTypedPropertyAttribute.Property" />
       <MemberSignature Language="VB.NET" Value="Public Property Property As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Property { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Property : string with get, set" Usage="System.Windows.StyleTypedPropertyAttribute.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.StyleTypedPropertyAttribute.StyleTargetType" />
       <MemberSignature Language="VB.NET" Value="Public Property StyleTargetType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ StyleTargetType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StyleTargetType : Type with get, set" Usage="System.Windows.StyleTypedPropertyAttribute.StyleTargetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

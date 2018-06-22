@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.VersionNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class VersionNotFoundException&#xA;Inherits DataException" />
   <TypeSignature Language="C++ CLI" Value="public ref class VersionNotFoundException : System::Data::DataException" />
+  <TypeSignature Language="F#" Value="type VersionNotFoundException = class&#xA;    inherit DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.VersionNotFoundException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VersionNotFoundException(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="new System.Data.VersionNotFoundException : string -&gt; System.Data.VersionNotFoundException" Usage="new System.Data.VersionNotFoundException s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.VersionNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; VersionNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Data.VersionNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.VersionNotFoundException" Usage="new System.Data.VersionNotFoundException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.VersionNotFoundException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VersionNotFoundException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.VersionNotFoundException : string * Exception -&gt; System.Data.VersionNotFoundException" Usage="new System.Data.VersionNotFoundException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

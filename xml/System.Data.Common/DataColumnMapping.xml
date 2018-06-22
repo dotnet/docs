@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataColumnMapping" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataColumnMapping&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IColumnMapping" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataColumnMapping sealed : MarshalByRefObject, ICloneable, System::Data::IColumnMapping" />
+  <TypeSignature Language="F#" Value="type DataColumnMapping = class&#xA;    inherit MarshalByRefObject&#xA;    interface IColumnMapping&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -107,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMapping.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumn As String, dataSetColumn As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumnMapping(System::String ^ sourceColumn, System::String ^ dataSetColumn);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DataColumnMapping : string * string -&gt; System.Data.Common.DataColumnMapping" Usage="new System.Data.Common.DataColumnMapping (sourceColumn, dataSetColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -149,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMapping.DataSetColumn" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSetColumn As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSetColumn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSetColumn : string with get, set" Usage="System.Data.Common.DataColumnMapping.DataSetColumn" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IColumnMapping.DataSetColumn</InterfaceMember>
@@ -206,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn GetDataColumnBySchemaAction(class System.Data.DataTable dataTable, class System.Type dataType, valuetype System.Data.MissingSchemaAction schemaAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMapping.GetDataColumnBySchemaAction(System.Data.DataTable,System.Type,System.Data.MissingSchemaAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataColumn ^ GetDataColumnBySchemaAction(System::Data::DataTable ^ dataTable, Type ^ dataType, System::Data::MissingSchemaAction schemaAction);" />
+      <MemberSignature Language="F#" Value="member this.GetDataColumnBySchemaAction : System.Data.DataTable * Type * System.Data.MissingSchemaAction -&gt; System.Data.DataColumn" Usage="dataColumnMapping.GetDataColumnBySchemaAction (dataTable, dataType, schemaAction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -248,6 +252,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataColumn GetDataColumnBySchemaAction(string sourceColumn, string dataSetColumn, class System.Data.DataTable dataTable, class System.Type dataType, valuetype System.Data.MissingSchemaAction schemaAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMapping.GetDataColumnBySchemaAction(System.String,System.String,System.Data.DataTable,System.Type,System.Data.MissingSchemaAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DataColumn ^ GetDataColumnBySchemaAction(System::String ^ sourceColumn, System::String ^ dataSetColumn, System::Data::DataTable ^ dataTable, Type ^ dataType, System::Data::MissingSchemaAction schemaAction);" />
+      <MemberSignature Language="F#" Value="static member GetDataColumnBySchemaAction : string * string * System.Data.DataTable * Type * System.Data.MissingSchemaAction -&gt; System.Data.DataColumn" Usage="System.Data.Common.DataColumnMapping.GetDataColumnBySchemaAction (sourceColumn, dataSetColumn, dataTable, dataType, schemaAction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -295,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMapping.SourceColumn" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceColumn As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.Common.DataColumnMapping.SourceColumn" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IColumnMapping.SourceColumn</InterfaceMember>
@@ -386,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMapping.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataColumnMapping.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

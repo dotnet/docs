@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.IndexedProtocolEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class IndexedProtocolEndpoint&#xA;Inherits ProtocolEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class IndexedProtocolEndpoint : System::IdentityModel::Metadata::ProtocolEndpoint" />
+  <TypeSignature Language="F#" Value="type IndexedProtocolEndpoint = class&#xA;    inherit ProtocolEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.IndexedProtocolEndpoint.#ctor(System.Int32,System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (index As Integer, binding As Uri, location As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IndexedProtocolEndpoint(int index, Uri ^ binding, Uri ^ location);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.IndexedProtocolEndpoint : int * Uri * Uri -&gt; System.IdentityModel.Metadata.IndexedProtocolEndpoint" Usage="new System.IdentityModel.Metadata.IndexedProtocolEndpoint (index, binding, location)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.IndexedProtocolEndpoint.Index" />
       <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int with get, set" Usage="System.IdentityModel.Metadata.IndexedProtocolEndpoint.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.IndexedProtocolEndpoint.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDefault As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsDefault { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : Nullable&lt;bool&gt; with get, set" Usage="System.IdentityModel.Metadata.IndexedProtocolEndpoint.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

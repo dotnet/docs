@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridViewColumnCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewColumnCollection&#xA;Inherits ObservableCollection(Of GridViewColumn)" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewColumnCollection : System::Collections::ObjectModel::ObservableCollection&lt;System::Windows::Controls::GridViewColumn ^&gt;" />
+  <TypeSignature Language="F#" Value="type GridViewColumnCollection = class&#xA;    inherit ObservableCollection&lt;GridViewColumn&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumnCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="abstract member ClearItems : unit -&gt; unit&#xA;override this.ClearItems : unit -&gt; unit" Usage="gridViewColumnCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumnCollection.InsertItem(System.Int32,System.Windows.Controls.GridViewColumn)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, column As GridViewColumn)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Windows::Controls::GridViewColumn ^ column);" />
+      <MemberSignature Language="F#" Value="abstract member InsertItem : int * System.Windows.Controls.GridViewColumn -&gt; unit&#xA;override this.InsertItem : int * System.Windows.Controls.GridViewColumn -&gt; unit" Usage="gridViewColumnCollection.InsertItem (index, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumnCollection.MoveItem(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub MoveItem (oldIndex As Integer, newIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void MoveItem(int oldIndex, int newIndex);" />
+      <MemberSignature Language="F#" Value="abstract member MoveItem : int * int -&gt; unit&#xA;override this.MoveItem : int * int -&gt; unit" Usage="gridViewColumnCollection.MoveItem (oldIndex, newIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumnCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCollectionChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="gridViewColumnCollection.OnCollectionChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumnCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveItem : int -&gt; unit&#xA;override this.RemoveItem : int -&gt; unit" Usage="gridViewColumnCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumnCollection.SetItem(System.Int32,System.Windows.Controls.GridViewColumn)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, column As GridViewColumn)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Windows::Controls::GridViewColumn ^ column);" />
+      <MemberSignature Language="F#" Value="abstract member SetItem : int * System.Windows.Controls.GridViewColumn -&gt; unit&#xA;override this.SetItem : int * System.Windows.Controls.GridViewColumn -&gt; unit" Usage="gridViewColumnCollection.SetItem (index, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

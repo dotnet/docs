@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SiteMapResolveEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function SiteMapResolveEventHandler(sender As Object, e As SiteMapResolveEventArgs) As SiteMapNode " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Web::SiteMapNode ^ SiteMapResolveEventHandler(System::Object ^ sender, SiteMapResolveEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SiteMapResolveEventHandler = delegate of obj * SiteMapResolveEventArgs -&gt; SiteMapNode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

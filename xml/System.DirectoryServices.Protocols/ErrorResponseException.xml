@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ErrorResponseException" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorResponseException&#xA;Inherits DirectoryException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorResponseException : System::DirectoryServices::Protocols::DirectoryException" />
+  <TypeSignature Language="F#" Value="type ErrorResponseException = class&#xA;    inherit DirectoryException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ErrorResponseException.#ctor(System.DirectoryServices.Protocols.DsmlErrorResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (response As DsmlErrorResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorResponseException(System::DirectoryServices::Protocols::DsmlErrorResponse ^ response);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ErrorResponseException : System.DirectoryServices.Protocols.DsmlErrorResponse -&gt; System.DirectoryServices.Protocols.ErrorResponseException" Usage="new System.DirectoryServices.Protocols.ErrorResponseException response" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ErrorResponseException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorResponseException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ErrorResponseException : string -&gt; System.DirectoryServices.Protocols.ErrorResponseException" Usage="new System.DirectoryServices.Protocols.ErrorResponseException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ErrorResponseException.#ctor(System.DirectoryServices.Protocols.DsmlErrorResponse,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (response As DsmlErrorResponse, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorResponseException(System::DirectoryServices::Protocols::DsmlErrorResponse ^ response, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ErrorResponseException : System.DirectoryServices.Protocols.DsmlErrorResponse * string -&gt; System.DirectoryServices.Protocols.ErrorResponseException" Usage="new System.DirectoryServices.Protocols.ErrorResponseException (response, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ErrorResponseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ErrorResponseException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ErrorResponseException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.Protocols.ErrorResponseException" Usage="new System.DirectoryServices.Protocols.ErrorResponseException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ErrorResponseException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorResponseException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ErrorResponseException : string * Exception -&gt; System.DirectoryServices.Protocols.ErrorResponseException" Usage="new System.DirectoryServices.Protocols.ErrorResponseException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ErrorResponseException.#ctor(System.DirectoryServices.Protocols.DsmlErrorResponse,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (response As DsmlErrorResponse, message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorResponseException(System::DirectoryServices::Protocols::DsmlErrorResponse ^ response, System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ErrorResponseException : System.DirectoryServices.Protocols.DsmlErrorResponse * string * Exception -&gt; System.DirectoryServices.Protocols.ErrorResponseException" Usage="new System.DirectoryServices.Protocols.ErrorResponseException (response, message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ErrorResponseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="errorResponseException.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.ErrorResponseException.Response" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As DsmlErrorResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DsmlErrorResponse ^ Response { System::DirectoryServices::Protocols::DsmlErrorResponse ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Response : System.DirectoryServices.Protocols.DsmlErrorResponse" Usage="System.DirectoryServices.Protocols.ErrorResponseException.Response" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

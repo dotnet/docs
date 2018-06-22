@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.GenericModelBinderProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GenericModelBinderProvider&#xA;Inherits ModelBinderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenericModelBinderProvider sealed : System::Web::ModelBinding::ModelBinderProvider" />
+  <TypeSignature Language="F#" Value="type GenericModelBinderProvider = class&#xA;    inherit ModelBinderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.GenericModelBinderProvider.#ctor(System.Type,System.Func{System.Type[],System.Web.ModelBinding.IModelBinder})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (modelType As Type, modelBinderFactory As Func(Of Type(), IModelBinder))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericModelBinderProvider(Type ^ modelType, Func&lt;cli::array &lt;Type ^&gt; ^, System::Web::ModelBinding::IModelBinder ^&gt; ^ modelBinderFactory);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.GenericModelBinderProvider : Type * Func&lt;Type[], System.Web.ModelBinding.IModelBinder&gt; -&gt; System.Web.ModelBinding.GenericModelBinderProvider" Usage="new System.Web.ModelBinding.GenericModelBinderProvider (modelType, modelBinderFactory)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.GenericModelBinderProvider.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (modelType As Type, modelBinderType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericModelBinderProvider(Type ^ modelType, Type ^ modelBinderType);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.GenericModelBinderProvider : Type * Type -&gt; System.Web.ModelBinding.GenericModelBinderProvider" Usage="new System.Web.ModelBinding.GenericModelBinderProvider (modelType, modelBinderType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.GenericModelBinderProvider.#ctor(System.Type,System.Web.ModelBinding.IModelBinder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (modelType As Type, modelBinder As IModelBinder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericModelBinderProvider(Type ^ modelType, System::Web::ModelBinding::IModelBinder ^ modelBinder);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.GenericModelBinderProvider : Type * System.Web.ModelBinding.IModelBinder -&gt; System.Web.ModelBinding.GenericModelBinderProvider" Usage="new System.Web.ModelBinding.GenericModelBinderProvider (modelType, modelBinder)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ModelBinding.IModelBinder GetBinder(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.GenericModelBinderProvider.GetBinder(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ModelBinding::IModelBinder ^ GetBinder(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
+      <MemberSignature Language="F#" Value="override this.GetBinder : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; System.Web.ModelBinding.IModelBinder" Usage="genericModelBinderProvider.GetBinder (modelBindingExecutionContext, bindingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.GenericModelBinderProvider.ModelType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ModelType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelType : Type" Usage="System.Web.ModelBinding.GenericModelBinderProvider.ModelType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.GenericModelBinderProvider.SuppressPrefixCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressPrefixCheck As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressPrefixCheck { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressPrefixCheck : bool with get, set" Usage="System.Web.ModelBinding.GenericModelBinderProvider.SuppressPrefixCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.ArgumentDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum ArgumentDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class ArgumentDirection" />
+  <TypeSignature Language="F#" Value="type ArgumentDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <MemberSignature Language="DocId" Value="F:System.Activities.ArgumentDirection.In" />
       <MemberSignature Language="VB.NET" Value="In" />
       <MemberSignature Language="C++ CLI" Value="In" />
+      <MemberSignature Language="F#" Value="In = 0" Usage="System.Activities.ArgumentDirection.In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +54,7 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <MemberSignature Language="DocId" Value="F:System.Activities.ArgumentDirection.InOut" />
       <MemberSignature Language="VB.NET" Value="InOut" />
       <MemberSignature Language="C++ CLI" Value="InOut" />
+      <MemberSignature Language="F#" Value="InOut = 2" Usage="System.Activities.ArgumentDirection.InOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +74,7 @@ Argument a = Argument.Create(typeof(string), ArgumentDirection.In);
       <MemberSignature Language="DocId" Value="F:System.Activities.ArgumentDirection.Out" />
       <MemberSignature Language="VB.NET" Value="Out" />
       <MemberSignature Language="C++ CLI" Value="Out" />
+      <MemberSignature Language="F#" Value="Out = 1" Usage="System.Activities.ArgumentDirection.Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

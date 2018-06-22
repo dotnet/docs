@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask" />
   <TypeSignature Language="VB.NET" Value="Public Class ReportDeferredValidationErrorsTask&#xA;Inherits Task" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReportDeferredValidationErrorsTask : Microsoft::Build::Utilities::Task" />
+  <TypeSignature Language="F#" Value="type ReportDeferredValidationErrorsTask = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Activities.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask.DeferredValidationErrorsFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Property DeferredValidationErrorsFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeferredValidationErrorsFilePath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeferredValidationErrorsFilePath : string with get, set" Usage="Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask.DeferredValidationErrorsFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="reportDeferredValidationErrorsTask.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripDropDownDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripDropDownDirection" />
+  <TypeSignature Language="F#" Value="type ToolStripDropDownDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownDirection.AboveLeft" />
       <MemberSignature Language="VB.NET" Value="AboveLeft" />
       <MemberSignature Language="C++ CLI" Value="AboveLeft" />
+      <MemberSignature Language="F#" Value="AboveLeft = 0" Usage="System.Windows.Forms.ToolStripDropDownDirection.AboveLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownDirection.AboveRight" />
       <MemberSignature Language="VB.NET" Value="AboveRight" />
       <MemberSignature Language="C++ CLI" Value="AboveRight" />
+      <MemberSignature Language="F#" Value="AboveRight = 1" Usage="System.Windows.Forms.ToolStripDropDownDirection.AboveRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownDirection.BelowLeft" />
       <MemberSignature Language="VB.NET" Value="BelowLeft" />
       <MemberSignature Language="C++ CLI" Value="BelowLeft" />
+      <MemberSignature Language="F#" Value="BelowLeft = 2" Usage="System.Windows.Forms.ToolStripDropDownDirection.BelowLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownDirection.BelowRight" />
       <MemberSignature Language="VB.NET" Value="BelowRight" />
       <MemberSignature Language="C++ CLI" Value="BelowRight" />
+      <MemberSignature Language="F#" Value="BelowRight = 3" Usage="System.Windows.Forms.ToolStripDropDownDirection.BelowRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownDirection.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 7" Usage="System.Windows.Forms.ToolStripDropDownDirection.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownDirection.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 4" Usage="System.Windows.Forms.ToolStripDropDownDirection.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownDirection.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 5" Usage="System.Windows.Forms.ToolStripDropDownDirection.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

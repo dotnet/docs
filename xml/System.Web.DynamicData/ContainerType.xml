@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ContainerType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContainerType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContainerType" />
+  <TypeSignature Language="F#" Value="type ContainerType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ContainerType.Item" />
       <MemberSignature Language="VB.NET" Value="Item" />
       <MemberSignature Language="C++ CLI" Value="Item" />
+      <MemberSignature Language="F#" Value="Item = 1" Usage="System.Web.DynamicData.ContainerType.Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ContainerType.List" />
       <MemberSignature Language="VB.NET" Value="List" />
       <MemberSignature Language="C++ CLI" Value="List" />
+      <MemberSignature Language="F#" Value="List = 0" Usage="System.Web.DynamicData.ContainerType.List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

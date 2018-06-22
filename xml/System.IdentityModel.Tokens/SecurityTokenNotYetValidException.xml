@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenNotYetValidException" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenNotYetValidException&#xA;Inherits SecurityTokenValidationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenNotYetValidException : System::IdentityModel::Tokens::SecurityTokenValidationException" />
+  <TypeSignature Language="F#" Value="type SecurityTokenNotYetValidException = class&#xA;    inherit SecurityTokenValidationException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenNotYetValidException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenNotYetValidException : string -&gt; System.IdentityModel.Tokens.SecurityTokenNotYetValidException" Usage="new System.IdentityModel.Tokens.SecurityTokenNotYetValidException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenNotYetValidException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenNotYetValidException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Tokens.SecurityTokenNotYetValidException" Usage="new System.IdentityModel.Tokens.SecurityTokenNotYetValidException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.String,System.Exception)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenNotYetValidException(System::String ^ message, Exception ^ innerException);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenNotYetValidException : string * Exception -&gt; System.IdentityModel.Tokens.SecurityTokenNotYetValidException" Usage="new System.IdentityModel.Tokens.SecurityTokenNotYetValidException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemsPresenter" />
   <TypeSignature Language="VB.NET" Value="Public Class ItemsPresenter&#xA;Inherits FrameworkElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemsPresenter : System::Windows::FrameworkElement" />
+  <TypeSignature Language="F#" Value="type ItemsPresenter = class&#xA;    inherit FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPresenter.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="itemsPresenter.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPresenter.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="itemsPresenter.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPresenter.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="itemsPresenter.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPresenter.OnTemplateChanged(System.Windows.Controls.ItemsPanelTemplate,System.Windows.Controls.ItemsPanelTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTemplateChanged (oldTemplate As ItemsPanelTemplate, newTemplate As ItemsPanelTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTemplateChanged(System::Windows::Controls::ItemsPanelTemplate ^ oldTemplate, System::Windows::Controls::ItemsPanelTemplate ^ newTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member OnTemplateChanged : System.Windows.Controls.ItemsPanelTemplate * System.Windows.Controls.ItemsPanelTemplate -&gt; unit&#xA;override this.OnTemplateChanged : System.Windows.Controls.ItemsPanelTemplate * System.Windows.Controls.ItemsPanelTemplate -&gt; unit" Usage="itemsPresenter.OnTemplateChanged (oldTemplate, newTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

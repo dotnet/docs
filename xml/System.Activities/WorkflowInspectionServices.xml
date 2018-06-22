@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowInspectionServices" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowInspectionServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInspectionServices abstract sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowInspectionServices = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CacheMetadata(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CacheMetadata (rootActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CacheMetadata(System::Activities::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="static member CacheMetadata : System.Activities.Activity -&gt; unit" Usage="System.Activities.WorkflowInspectionServices.CacheMetadata rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CacheMetadata(System.Activities.Activity,System.Activities.LocationReferenceEnvironment)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CacheMetadata (rootActivity As Activity, hostEnvironment As LocationReferenceEnvironment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CacheMetadata(System::Activities::Activity ^ rootActivity, System::Activities::LocationReferenceEnvironment ^ hostEnvironment);" />
+      <MemberSignature Language="F#" Value="static member CacheMetadata : System.Activities.Activity * System.Activities.LocationReferenceEnvironment -&gt; unit" Usage="System.Activities.WorkflowInspectionServices.CacheMetadata (rootActivity, hostEnvironment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanInduceIdle(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CanInduceIdle(System.Activities.Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CanInduceIdle(System::Activities::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="static member CanInduceIdle : System.Activities.Activity -&gt; bool" Usage="System.Activities.WorkflowInspectionServices.CanInduceIdle activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Activity&gt; GetActivities(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.GetActivities(System.Activities.Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Activities::Activity ^&gt; ^ GetActivities(System::Activities::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="static member GetActivities : System.Activities.Activity -&gt; seq&lt;System.Activities.Activity&gt;" Usage="System.Activities.WorkflowInspectionServices.GetActivities activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Version GetImplementationVersion(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.GetImplementationVersion(System.Activities.Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Version ^ GetImplementationVersion(System::Activities::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="static member GetImplementationVersion : System.Activities.Activity -&gt; Version" Usage="System.Activities.WorkflowInspectionServices.GetImplementationVersion activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.Resolve(System.Activities.Activity,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (root As Activity, id As String) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity ^ Resolve(System::Activities::Activity ^ root, System::String ^ id);" />
+      <MemberSignature Language="F#" Value="static member Resolve : System.Activities.Activity * string -&gt; System.Activities.Activity" Usage="System.Activities.WorkflowInspectionServices.Resolve (root, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

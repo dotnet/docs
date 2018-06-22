@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.SynchronizationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SynchronizationAttribute&#xA;Inherits ContextAttribute&#xA;Implements IContributeClientContextSink, IContributeServerContextSink" />
   <TypeSignature Language="C++ CLI" Value="public ref class SynchronizationAttribute : System::Runtime::Remoting::Contexts::ContextAttribute, System::Runtime::Remoting::Contexts::IContributeClientContextSink, System::Runtime::Remoting::Contexts::IContributeServerContextSink" />
+  <TypeSignature Language="F#" Value="type SynchronizationAttribute = class&#xA;    inherit ContextAttribute&#xA;    interface IContributeClientContextSink&#xA;    interface IContributeServerContextSink" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reEntrant As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizationAttribute(bool reEntrant);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Contexts.SynchronizationAttribute : bool -&gt; System.Runtime.Remoting.Contexts.SynchronizationAttribute" Usage="new System.Runtime.Remoting.Contexts.SynchronizationAttribute reEntrant" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flag As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizationAttribute(int flag);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Contexts.SynchronizationAttribute : int -&gt; System.Runtime.Remoting.Contexts.SynchronizationAttribute" Usage="new System.Runtime.Remoting.Contexts.SynchronizationAttribute flag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flag As Integer, reEntrant As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizationAttribute(int flag, bool reEntrant);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Contexts.SynchronizationAttribute : int * bool -&gt; System.Runtime.Remoting.Contexts.SynchronizationAttribute" Usage="new System.Runtime.Remoting.Contexts.SynchronizationAttribute (flag, reEntrant)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetClientContextSink(System.Runtime.Remoting.Messaging.IMessageSink)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientContextSink (nextSink As IMessageSink) As IMessageSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Messaging::IMessageSink ^ GetClientContextSink(System::Runtime::Remoting::Messaging::IMessageSink ^ nextSink);" />
+      <MemberSignature Language="F#" Value="abstract member GetClientContextSink : System.Runtime.Remoting.Messaging.IMessageSink -&gt; System.Runtime.Remoting.Messaging.IMessageSink&#xA;override this.GetClientContextSink : System.Runtime.Remoting.Messaging.IMessageSink -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="synchronizationAttribute.GetClientContextSink nextSink" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContributeClientContextSink.GetClientContextSink(System.Runtime.Remoting.Messaging.IMessageSink)</InterfaceMember>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetPropertiesForNewContext (ctorMsg As IConstructionCallMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetPropertiesForNewContext(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ ctorMsg);" />
+      <MemberSignature Language="F#" Value="override this.GetPropertiesForNewContext : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; unit" Usage="synchronizationAttribute.GetPropertiesForNewContext ctorMsg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -243,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetServerContextSink(System.Runtime.Remoting.Messaging.IMessageSink)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetServerContextSink (nextSink As IMessageSink) As IMessageSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Messaging::IMessageSink ^ GetServerContextSink(System::Runtime::Remoting::Messaging::IMessageSink ^ nextSink);" />
+      <MemberSignature Language="F#" Value="abstract member GetServerContextSink : System.Runtime.Remoting.Messaging.IMessageSink -&gt; System.Runtime.Remoting.Messaging.IMessageSink&#xA;override this.GetServerContextSink : System.Runtime.Remoting.Messaging.IMessageSink -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="synchronizationAttribute.GetServerContextSink nextSink" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContributeServerContextSink.GetServerContextSink(System.Runtime.Remoting.Messaging.IMessageSink)</InterfaceMember>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.SynchronizationAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsContextOK (ctx As Context, msg As IConstructionCallMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsContextOK(System::Runtime::Remoting::Contexts::Context ^ ctx, System::Runtime::Remoting::Activation::IConstructionCallMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="override this.IsContextOK : System.Runtime.Remoting.Contexts.Context * System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; bool" Usage="synchronizationAttribute.IsContextOK (ctx, msg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -312,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.SynchronizationAttribute.IsReEntrant" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReEntrant As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReEntrant { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReEntrant : bool" Usage="System.Runtime.Remoting.Contexts.SynchronizationAttribute.IsReEntrant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.SynchronizationAttribute.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Locked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool with get, set" Usage="System.Runtime.Remoting.Contexts.SynchronizationAttribute.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -368,6 +378,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Contexts.SynchronizationAttribute.NOT_SUPPORTED" />
       <MemberSignature Language="VB.NET" Value="Public Const NOT_SUPPORTED As Integer  = 1" />
       <MemberSignature Language="C++ CLI" Value="public: int NOT_SUPPORTED = 1;" />
+      <MemberSignature Language="F#" Value="val mutable NOT_SUPPORTED : int" Usage="System.Runtime.Remoting.Contexts.SynchronizationAttribute.NOT_SUPPORTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -389,6 +400,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED" />
       <MemberSignature Language="VB.NET" Value="Public Const REQUIRED As Integer  = 4" />
       <MemberSignature Language="C++ CLI" Value="public: int REQUIRED = 4;" />
+      <MemberSignature Language="F#" Value="val mutable REQUIRED : int" Usage="System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -410,6 +422,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW" />
       <MemberSignature Language="VB.NET" Value="Public Const REQUIRES_NEW As Integer  = 8" />
       <MemberSignature Language="C++ CLI" Value="public: int REQUIRES_NEW = 8;" />
+      <MemberSignature Language="F#" Value="val mutable REQUIRES_NEW : int" Usage="System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -431,6 +444,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED" />
       <MemberSignature Language="VB.NET" Value="Public Const SUPPORTED As Integer  = 2" />
       <MemberSignature Language="C++ CLI" Value="public: int SUPPORTED = 2;" />
+      <MemberSignature Language="F#" Value="val mutable SUPPORTED : int" Usage="System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

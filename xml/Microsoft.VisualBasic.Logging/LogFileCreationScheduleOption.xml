@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum LogFileCreationScheduleOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class LogFileCreationScheduleOption" />
+  <TypeSignature Language="F#" Value="type LogFileCreationScheduleOption = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Daily" />
       <MemberSignature Language="VB.NET" Value="Daily" />
       <MemberSignature Language="C++ CLI" Value="Daily" />
+      <MemberSignature Language="F#" Value="Daily = 1" Usage="Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Daily" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Weekly" />
       <MemberSignature Language="VB.NET" Value="Weekly" />
       <MemberSignature Language="C++ CLI" Value="Weekly" />
+      <MemberSignature Language="F#" Value="Weekly = 2" Usage="Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Weekly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

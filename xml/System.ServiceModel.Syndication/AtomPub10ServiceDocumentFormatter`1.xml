@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1" />
   <TypeSignature Language="VB.NET" Value="Public Class AtomPub10ServiceDocumentFormatter(Of TServiceDocument)&#xA;Inherits AtomPub10ServiceDocumentFormatter" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TServiceDocument&gt;&#xA; where TServiceDocument : ServiceDocumentgcnew()public ref class AtomPub10ServiceDocumentFormatter : System::ServiceModel::Syndication::AtomPub10ServiceDocumentFormatter" />
+  <TypeSignature Language="F#" Value="type AtomPub10ServiceDocumentFormatter&lt;'ServiceDocument (requires 'ServiceDocument :&gt; ServiceDocument and 'ServiceDocument : (new : unit -&gt; 'ServiceDocument))&gt; = class&#xA;    inherit AtomPub10ServiceDocumentFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (documentToWrite As TServiceDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomPub10ServiceDocumentFormatter(TServiceDocument documentToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter&lt;'ServiceDocument (requires 'ServiceDocument :&gt; System.ServiceModel.Syndication.ServiceDocument and 'ServiceDocument : (new : unit -&gt; 'ServiceDocument))&gt; : 'ServiceDocument -&gt; System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter&lt;'ServiceDocument (requires 'ServiceDocument :&gt; System.ServiceModel.Syndication.ServiceDocument and 'ServiceDocument : (new : unit -&gt; 'ServiceDocument))&gt;" Usage="new System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter&lt;'ServiceDocument (requires 'ServiceDocument :&gt; System.ServiceModel.Syndication.ServiceDocument and 'ServiceDocument : (new : unit -&gt; 'ServiceDocument))&gt; documentToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1.CreateDocumentInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDocumentInstance () As ServiceDocument" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::ServiceDocument ^ CreateDocumentInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateDocumentInstance : unit -&gt; System.ServiceModel.Syndication.ServiceDocument" Usage="atomPub10ServiceDocumentFormatter.CreateDocumentInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

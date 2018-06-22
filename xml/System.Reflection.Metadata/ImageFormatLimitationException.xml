@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ImageFormatLimitationException" />
   <TypeSignature Language="VB.NET" Value="Public Class ImageFormatLimitationException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageFormatLimitationException : Exception" />
+  <TypeSignature Language="F#" Value="type ImageFormatLimitationException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ImageFormatLimitationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageFormatLimitationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.ImageFormatLimitationException : string -&gt; System.Reflection.Metadata.ImageFormatLimitationException" Usage="new System.Reflection.Metadata.ImageFormatLimitationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ImageFormatLimitationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageFormatLimitationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.ImageFormatLimitationException : string * Exception -&gt; System.Reflection.Metadata.ImageFormatLimitationException" Usage="new System.Reflection.Metadata.ImageFormatLimitationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

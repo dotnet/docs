@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.IInstance" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInstance" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInstance" />
+  <TypeSignature Language="F#" Value="type IInstance = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.IInstance.Published" />
       <MemberSignature Language="VB.NET" Value="Public Property Published As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Published { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Published : bool with get, set" Usage="System.Management.Instrumentation.IInstance.Published" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

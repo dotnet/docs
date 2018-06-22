@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.RegistrationContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistrationContext sealed" />
+  <TypeSignature Language="F#" Value="type RegistrationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RegistrationContext.FindProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindProperty (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindProperty(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.FindProperty : string -&gt; obj" Usage="registrationContext.FindProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SessionSecurityTokenResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class SessionSecurityTokenResolver&#xA;Inherits SecurityTokenResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionSecurityTokenResolver : System::IdentityModel::Selectors::SecurityTokenResolver" />
+  <TypeSignature Language="F#" Value="type SessionSecurityTokenResolver = class&#xA;    inherit SecurityTokenResolver" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenResolver.#ctor(System.IdentityModel.Tokens.SessionSecurityTokenCache,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokenCache As SessionSecurityTokenCache, endpointId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSecurityTokenResolver(System::IdentityModel::Tokens::SessionSecurityTokenCache ^ tokenCache, System::String ^ endpointId);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SessionSecurityTokenResolver : System.IdentityModel.Tokens.SessionSecurityTokenCache * string -&gt; System.IdentityModel.Services.SessionSecurityTokenResolver" Usage="new System.IdentityModel.Services.SessionSecurityTokenResolver (tokenCache, endpointId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenResolver.TryResolveSecurityKeyCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKey@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveSecurityKeyCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef key As SecurityKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveSecurityKeyCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityKey ^ % key);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveSecurityKeyCore : System.IdentityModel.Tokens.SecurityKeyIdentifierClause *  -&gt; bool" Usage="sessionSecurityTokenResolver.TryResolveSecurityKeyCore (keyIdentifierClause, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifier As SecurityKeyIdentifier, ByRef token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveTokenCore : System.IdentityModel.Tokens.SecurityKeyIdentifier *  -&gt; bool" Usage="sessionSecurityTokenResolver.TryResolveTokenCore (keyIdentifier, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityToken@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveTokenCore : System.IdentityModel.Tokens.SecurityKeyIdentifierClause *  -&gt; bool" Usage="sessionSecurityTokenResolver.TryResolveTokenCore (keyIdentifierClause, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

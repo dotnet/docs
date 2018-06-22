@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ComposablePartExportProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class ComposablePartExportProvider&#xA;Inherits ExportProvider&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComposablePartExportProvider : System::ComponentModel::Composition::Hosting::ExportProvider, IDisposable" />
+  <TypeSignature Language="F#" Value="type ComposablePartExportProvider = class&#xA;    inherit ExportProvider&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isThreadSafe As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComposablePartExportProvider(bool isThreadSafe);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.ComposablePartExportProvider : bool -&gt; System.ComponentModel.Composition.Hosting.ComposablePartExportProvider" Usage="new System.ComponentModel.Composition.Hosting.ComposablePartExportProvider isThreadSafe" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.#ctor(System.ComponentModel.Composition.Hosting.CompositionOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComposablePartExportProvider(System::ComponentModel::Composition::Hosting::CompositionOptions compositionOptions);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.ComposablePartExportProvider : System.ComponentModel.Composition.Hosting.CompositionOptions -&gt; System.ComponentModel.Composition.Hosting.ComposablePartExportProvider" Usage="new System.ComponentModel.Composition.Hosting.ComposablePartExportProvider compositionOptions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.Compose(System.ComponentModel.Composition.Hosting.CompositionBatch)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Compose (batch As CompositionBatch)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Compose(System::ComponentModel::Composition::Hosting::CompositionBatch ^ batch);" />
+      <MemberSignature Language="F#" Value="member this.Compose : System.ComponentModel.Composition.Hosting.CompositionBatch -&gt; unit" Usage="composablePartExportProvider.Compose batch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="composablePartExportProvider.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="composablePartExportProvider.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.Export&gt; GetExportsCore(class System.ComponentModel.Composition.Primitives.ImportDefinition definition, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.GetExportsCore(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::Export ^&gt; ^ GetExportsCore(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition, System::ComponentModel::Composition::Hosting::AtomicComposition ^ atomicComposition);" />
+      <MemberSignature Language="F#" Value="override this.GetExportsCore : System.ComponentModel.Composition.Primitives.ImportDefinition * System.ComponentModel.Composition.Hosting.AtomicComposition -&gt; seq&lt;System.ComponentModel.Composition.Primitives.Export&gt;" Usage="composablePartExportProvider.GetExportsCore (definition, atomicComposition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.SourceProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceProvider As ExportProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::Hosting::ExportProvider ^ SourceProvider { System::ComponentModel::Composition::Hosting::ExportProvider ^ get(); void set(System::ComponentModel::Composition::Hosting::ExportProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceProvider : System.ComponentModel.Composition.Hosting.ExportProvider with get, set" Usage="System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.SourceProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

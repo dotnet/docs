@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingNavigator" />
   <TypeSignature Language="VB.NET" Value="Public Class BindingNavigator&#xA;Inherits ToolStrip&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingNavigator : System::Windows::Forms::ToolStrip, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type BindingNavigator = class&#xA;    inherit ToolStrip&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (addStandardItems As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingNavigator(bool addStandardItems);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.BindingNavigator : bool -&gt; System.Windows.Forms.BindingNavigator" Usage="new System.Windows.Forms.BindingNavigator addStandardItems" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingNavigator(System::ComponentModel::IContainer ^ container);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.BindingNavigator : System.ComponentModel.IContainer -&gt; System.Windows.Forms.BindingNavigator" Usage="new System.Windows.Forms.BindingNavigator container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.BindingSource bindingSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.#ctor(System.Windows.Forms.BindingSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingNavigator(System::Windows::Forms::BindingSource ^ bindingSource);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.BindingNavigator : System.Windows.Forms.BindingSource -&gt; System.Windows.Forms.BindingNavigator" Usage="new System.Windows.Forms.BindingNavigator bindingSource" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -213,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.AddNewItem" />
       <MemberSignature Language="VB.NET" Value="Public Property AddNewItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ AddNewItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AddNewItem : System.Windows.Forms.ToolStripItem with get, set" Usage="System.Windows.Forms.BindingNavigator.AddNewItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.AddStandardItems" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddStandardItems ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddStandardItems();" />
+      <MemberSignature Language="F#" Value="abstract member AddStandardItems : unit -&gt; unit&#xA;override this.AddStandardItems : unit -&gt; unit" Usage="bindingNavigator.AddStandardItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -291,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="bindingNavigator.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -324,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.BindingSource" />
       <MemberSignature Language="VB.NET" Value="Public Property BindingSource As BindingSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BindingSource ^ BindingSource { System::Windows::Forms::BindingSource ^ get(); void set(System::Windows::Forms::BindingSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BindingSource : System.Windows.Forms.BindingSource with get, set" Usage="System.Windows.Forms.BindingNavigator.BindingSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -371,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.CountItem" />
       <MemberSignature Language="VB.NET" Value="Public Property CountItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ CountItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CountItem : System.Windows.Forms.ToolStripItem with get, set" Usage="System.Windows.Forms.BindingNavigator.CountItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -411,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.CountItemFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property CountItemFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CountItemFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CountItemFormat : string with get, set" Usage="System.Windows.Forms.BindingNavigator.CountItemFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -443,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.DeleteItem" />
       <MemberSignature Language="VB.NET" Value="Public Property DeleteItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ DeleteItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteItem : System.Windows.Forms.ToolStripItem with get, set" Usage="System.Windows.Forms.BindingNavigator.DeleteItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -486,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="bindingNavigator.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -525,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="bindingNavigator.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -558,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.MoveFirstItem" />
       <MemberSignature Language="VB.NET" Value="Public Property MoveFirstItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ MoveFirstItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MoveFirstItem : System.Windows.Forms.ToolStripItem with get, set" Usage="System.Windows.Forms.BindingNavigator.MoveFirstItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -602,6 +616,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.MoveLastItem" />
       <MemberSignature Language="VB.NET" Value="Public Property MoveLastItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ MoveLastItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MoveLastItem : System.Windows.Forms.ToolStripItem with get, set" Usage="System.Windows.Forms.BindingNavigator.MoveLastItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -646,6 +661,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.MoveNextItem" />
       <MemberSignature Language="VB.NET" Value="Public Property MoveNextItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ MoveNextItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MoveNextItem : System.Windows.Forms.ToolStripItem with get, set" Usage="System.Windows.Forms.BindingNavigator.MoveNextItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -690,6 +706,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.MovePreviousItem" />
       <MemberSignature Language="VB.NET" Value="Public Property MovePreviousItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ MovePreviousItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MovePreviousItem : System.Windows.Forms.ToolStripItem with get, set" Usage="System.Windows.Forms.BindingNavigator.MovePreviousItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -734,6 +751,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.OnRefreshItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRefreshItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRefreshItems();" />
+      <MemberSignature Language="F#" Value="abstract member OnRefreshItems : unit -&gt; unit&#xA;override this.OnRefreshItems : unit -&gt; unit" Usage="bindingNavigator.OnRefreshItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -776,6 +794,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingNavigator.PositionItem" />
       <MemberSignature Language="VB.NET" Value="Public Property PositionItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ PositionItem { System::Windows::Forms::ToolStripItem ^ get(); void set(System::Windows::Forms::ToolStripItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PositionItem : System.Windows.Forms.ToolStripItem with get, set" Usage="System.Windows.Forms.BindingNavigator.PositionItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -817,6 +836,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingNavigator.RefreshItems" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RefreshItems As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RefreshItems;" />
+      <MemberSignature Language="F#" Value="member this.RefreshItems : EventHandler " Usage="member this.RefreshItems : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -856,6 +876,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.RefreshItemsCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RefreshItemsCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RefreshItemsCore();" />
+      <MemberSignature Language="F#" Value="abstract member RefreshItemsCore : unit -&gt; unit&#xA;override this.RefreshItemsCore : unit -&gt; unit" Usage="bindingNavigator.RefreshItemsCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -888,6 +909,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingNavigator.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Function Validate () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Validate();" />
+      <MemberSignature Language="F#" Value="member this.Validate : unit -&gt; bool" Usage="bindingNavigator.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataSetDateTime" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataSetDateTime" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataSetDateTime" />
+  <TypeSignature Language="F#" Value="type DataSetDateTime = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataSetDateTime.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="C++ CLI" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 1" Usage="System.Data.DataSetDateTime.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataSetDateTime.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 2" Usage="System.Data.DataSetDateTime.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataSetDateTime.UnspecifiedLocal" />
       <MemberSignature Language="VB.NET" Value="UnspecifiedLocal" />
       <MemberSignature Language="C++ CLI" Value="UnspecifiedLocal" />
+      <MemberSignature Language="F#" Value="UnspecifiedLocal = 3" Usage="System.Data.DataSetDateTime.UnspecifiedLocal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataSetDateTime.Utc" />
       <MemberSignature Language="VB.NET" Value="Utc" />
       <MemberSignature Language="C++ CLI" Value="Utc" />
+      <MemberSignature Language="F#" Value="Utc = 4" Usage="System.Data.DataSetDateTime.Utc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

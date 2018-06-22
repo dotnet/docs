@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.PropertyReferenceExtension`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyReferenceExtension(Of T)&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class PropertyReferenceExtension sealed : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type PropertyReferenceExtension&lt;'T&gt; = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.PropertyReferenceExtension`1.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.Activities.XamlIntegration.PropertyReferenceExtension&lt;'T&gt;.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.PropertyReferenceExtension`1.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="propertyReferenceExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

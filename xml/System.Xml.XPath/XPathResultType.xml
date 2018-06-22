@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathResultType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XPathResultType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XPathResultType" />
+  <TypeSignature Language="F#" Value="type XPathResultType = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="C++ CLI" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 5" Usage="System.Xml.XPath.XPathResultType.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 2" Usage="System.Xml.XPath.XPathResultType.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 6" Usage="System.Xml.XPath.XPathResultType.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Navigator" />
       <MemberSignature Language="VB.NET" Value="Navigator" />
       <MemberSignature Language="C++ CLI" Value="Navigator" />
+      <MemberSignature Language="F#" Value="Navigator = 1" Usage="System.Xml.XPath.XPathResultType.Navigator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.NodeSet" />
       <MemberSignature Language="VB.NET" Value="NodeSet" />
       <MemberSignature Language="C++ CLI" Value="NodeSet" />
+      <MemberSignature Language="F#" Value="NodeSet = 3" Usage="System.Xml.XPath.XPathResultType.NodeSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Number" />
       <MemberSignature Language="VB.NET" Value="Number" />
       <MemberSignature Language="C++ CLI" Value="Number" />
+      <MemberSignature Language="F#" Value="Number = 0" Usage="System.Xml.XPath.XPathResultType.Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 1" Usage="System.Xml.XPath.XPathResultType.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>

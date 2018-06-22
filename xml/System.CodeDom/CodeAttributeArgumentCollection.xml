@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAttributeArgumentCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeAttributeArgumentCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeAttributeArgumentCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CodeAttributeArgumentCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.#ctor(System.CodeDom.CodeAttributeArgument[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeAttributeArgument())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeArgumentCollection(cli::array &lt;System::CodeDom::CodeAttributeArgument ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttributeArgumentCollection : System.CodeDom.CodeAttributeArgument[] -&gt; System.CodeDom.CodeAttributeArgumentCollection" Usage="new System.CodeDom.CodeAttributeArgumentCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.#ctor(System.CodeDom.CodeAttributeArgumentCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeAttributeArgumentCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeArgumentCollection(System::CodeDom::CodeAttributeArgumentCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttributeArgumentCollection : System.CodeDom.CodeAttributeArgumentCollection -&gt; System.CodeDom.CodeAttributeArgumentCollection" Usage="new System.CodeDom.CodeAttributeArgumentCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.Add(System.CodeDom.CodeAttributeArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeAttributeArgument) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeAttributeArgument ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.CodeAttributeArgument -&gt; int" Usage="codeAttributeArgumentCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.AddRange(System.CodeDom.CodeAttributeArgument[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeAttributeArgument())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeAttributeArgument ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeAttributeArgument[] -&gt; unit" Usage="codeAttributeArgumentCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.AddRange(System.CodeDom.CodeAttributeArgumentCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeAttributeArgumentCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeAttributeArgumentCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeAttributeArgumentCollection -&gt; unit" Usage="codeAttributeArgumentCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.Contains(System.CodeDom.CodeAttributeArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeAttributeArgument) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeAttributeArgument ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.CodeAttributeArgument -&gt; bool" Usage="codeAttributeArgumentCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -304,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.CopyTo(System.CodeDom.CodeAttributeArgument[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeAttributeArgument(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeAttributeArgument ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.CodeAttributeArgument[] * int -&gt; unit" Usage="codeAttributeArgumentCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -351,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.IndexOf(System.CodeDom.CodeAttributeArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeAttributeArgument) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeAttributeArgument ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.CodeAttributeArgument -&gt; int" Usage="codeAttributeArgumentCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -391,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.Insert(System.Int32,System.CodeDom.CodeAttributeArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeAttributeArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeAttributeArgument ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.CodeAttributeArgument -&gt; unit" Usage="codeAttributeArgumentCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -431,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttributeArgumentCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeAttributeArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeAttributeArgument ^ default[int] { System::CodeDom::CodeAttributeArgument ^ get(int index); void set(int index, System::CodeDom::CodeAttributeArgument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.CodeAttributeArgument with get, set" Usage="System.CodeDom.CodeAttributeArgumentCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -467,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgumentCollection.Remove(System.CodeDom.CodeAttributeArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeAttributeArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeAttributeArgument ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.CodeAttributeArgument -&gt; unit" Usage="codeAttributeArgumentCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

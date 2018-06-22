@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintPort" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintPort&#xA;Inherits PrintSystemObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintPort sealed : System::Printing::PrintSystemObject" />
+  <TypeSignature Language="F#" Value="type PrintPort = class&#xA;    inherit PrintSystemObject" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintPort.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="printPort.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintPort.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printPort.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintPort.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="printPort.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

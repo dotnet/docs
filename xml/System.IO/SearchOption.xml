@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.SearchOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum SearchOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class SearchOption" />
+  <TypeSignature Language="F#" Value="type SearchOption = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.SearchOption.AllDirectories" />
       <MemberSignature Language="VB.NET" Value="AllDirectories" />
       <MemberSignature Language="C++ CLI" Value="AllDirectories" />
+      <MemberSignature Language="F#" Value="AllDirectories = 1" Usage="System.IO.SearchOption.AllDirectories" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.SearchOption.TopDirectoryOnly" />
       <MemberSignature Language="VB.NET" Value="TopDirectoryOnly" />
       <MemberSignature Language="C++ CLI" Value="TopDirectoryOnly" />
+      <MemberSignature Language="F#" Value="TopDirectoryOnly = 0" Usage="System.IO.SearchOption.TopDirectoryOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

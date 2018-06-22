@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaValidity" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlSchemaValidity" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlSchemaValidity" />
+  <TypeSignature Language="F#" Value="type XmlSchemaValidity = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidity.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 2" Usage="System.Xml.Schema.XmlSchemaValidity.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidity.NotKnown" />
       <MemberSignature Language="VB.NET" Value="NotKnown" />
       <MemberSignature Language="C++ CLI" Value="NotKnown" />
+      <MemberSignature Language="F#" Value="NotKnown = 0" Usage="System.Xml.Schema.XmlSchemaValidity.NotKnown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidity.Valid" />
       <MemberSignature Language="VB.NET" Value="Valid" />
       <MemberSignature Language="C++ CLI" Value="Valid" />
+      <MemberSignature Language="F#" Value="Valid = 1" Usage="System.Xml.Schema.XmlSchemaValidity.Valid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

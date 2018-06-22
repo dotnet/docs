@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IColorizeText" />
   <TypeSignature Language="VB.NET" Value="Public Interface IColorizeText" />
   <TypeSignature Language="C++ CLI" Value="public interface class IColorizeText" />
+  <TypeSignature Language="F#" Value="type IColorizeText = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IColorizeText.Colorize(System.String,Microsoft.JScript.SourceState)" />
       <MemberSignature Language="VB.NET" Value="Public Function Colorize (sourceCode As String, state As SourceState) As ITokenEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ITokenEnumerator ^ Colorize(System::String ^ sourceCode, Microsoft::JScript::SourceState state);" />
+      <MemberSignature Language="F#" Value="abstract member Colorize : string * Microsoft.JScript.SourceState -&gt; Microsoft.JScript.ITokenEnumerator" Usage="iColorizeText.Colorize (sourceCode, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IColorizeText.GetStateForText(System.String,Microsoft.JScript.SourceState)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStateForText (sourceCode As String, currentState As SourceState) As SourceState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::SourceState GetStateForText(System::String ^ sourceCode, Microsoft::JScript::SourceState currentState);" />
+      <MemberSignature Language="F#" Value="abstract member GetStateForText : string * Microsoft.JScript.SourceState -&gt; Microsoft.JScript.SourceState" Usage="iColorizeText.GetStateForText (sourceCode, currentState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ProxyElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProxyElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProxyElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ProxyElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.AutoDetect" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoDetect As ProxyElement.AutoDetectValues" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ProxyElement::AutoDetectValues AutoDetect { System::Net::Configuration::ProxyElement::AutoDetectValues get(); void set(System::Net::Configuration::ProxyElement::AutoDetectValues value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoDetect : System.Net.Configuration.ProxyElement.AutoDetectValues with get, set" Usage="System.Net.Configuration.ProxyElement.AutoDetect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.BypassOnLocal" />
       <MemberSignature Language="VB.NET" Value="Public Property BypassOnLocal As ProxyElement.BypassOnLocalValues" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ProxyElement::BypassOnLocalValues BypassOnLocal { System::Net::Configuration::ProxyElement::BypassOnLocalValues get(); void set(System::Net::Configuration::ProxyElement::BypassOnLocalValues value); };" />
+      <MemberSignature Language="F#" Value="member this.BypassOnLocal : System.Net.Configuration.ProxyElement.BypassOnLocalValues with get, set" Usage="System.Net.Configuration.ProxyElement.BypassOnLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.ProxyElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.ProxyAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ProxyAddress { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProxyAddress : Uri with get, set" Usage="System.Net.Configuration.ProxyElement.ProxyAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.ScriptLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property ScriptLocation As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ScriptLocation { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptLocation : Uri with get, set" Usage="System.Net.Configuration.ProxyElement.ScriptLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ProxyElement.UseSystemDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property UseSystemDefault As ProxyElement.UseSystemDefaultValues" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ProxyElement::UseSystemDefaultValues UseSystemDefault { System::Net::Configuration::ProxyElement::UseSystemDefaultValues get(); void set(System::Net::Configuration::ProxyElement::UseSystemDefaultValues value); };" />
+      <MemberSignature Language="F#" Value="member this.UseSystemDefault : System.Net.Configuration.ProxyElement.UseSystemDefaultValues with get, set" Usage="System.Net.Configuration.ProxyElement.UseSystemDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

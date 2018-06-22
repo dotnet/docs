@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXFileRef" />
   <TypeSignature Language="VB.NET" Value="Public Class ResXFileRef" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResXFileRef" />
+  <TypeSignature Language="F#" Value="type ResXFileRef = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXFileRef.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXFileRef(System::String ^ fileName, System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXFileRef : string * string -&gt; System.Resources.ResXFileRef" Usage="new System.Resources.ResXFileRef (fileName, typeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXFileRef.#ctor(System.String,System.String,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, typeName As String, textFileEncoding As Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXFileRef(System::String ^ fileName, System::String ^ typeName, System::Text::Encoding ^ textFileEncoding);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXFileRef : string * string * System.Text.Encoding -&gt; System.Resources.ResXFileRef" Usage="new System.Resources.ResXFileRef (fileName, typeName, textFileEncoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXFileRef.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Resources.ResXFileRef.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXFileRef.TextFileEncoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFileEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ TextFileEncoding { System::Text::Encoding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextFileEncoding : System.Text.Encoding" Usage="System.Resources.ResXFileRef.TextFileEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXFileRef.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="resXFileRef.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXFileRef.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Resources.ResXFileRef.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

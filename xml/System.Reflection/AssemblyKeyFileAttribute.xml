@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyKeyFileAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyKeyFileAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyKeyFileAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyKeyFileAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@ sn -k TestPublicKey.snk
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyKeyFileAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyKeyFileAttribute(System::String ^ keyFile);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyKeyFileAttribute : string -&gt; System.Reflection.AssemblyKeyFileAttribute" Usage="new System.Reflection.AssemblyKeyFileAttribute keyFile" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -118,6 +120,7 @@ sn -k TestPublicKey.snk
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyKeyFileAttribute.KeyFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFile : string" Usage="System.Reflection.AssemblyKeyFileAttribute.KeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

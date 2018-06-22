@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2AuthenticationContext" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2AuthenticationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2AuthenticationContext" />
+  <TypeSignature Language="F#" Value="type Saml2AuthenticationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AuthenticationContext.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (classReference As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2AuthenticationContext(Uri ^ classReference);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AuthenticationContext : Uri -&gt; System.IdentityModel.Tokens.Saml2AuthenticationContext" Usage="new System.IdentityModel.Tokens.Saml2AuthenticationContext classReference" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AuthenticationContext.#ctor(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (classReference As Uri, declarationReference As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2AuthenticationContext(Uri ^ classReference, Uri ^ declarationReference);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AuthenticationContext : Uri * Uri -&gt; System.IdentityModel.Tokens.Saml2AuthenticationContext" Usage="new System.IdentityModel.Tokens.Saml2AuthenticationContext (classReference, declarationReference)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationContext.AuthenticatingAuthorities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticatingAuthorities As Collection(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ AuthenticatingAuthorities { System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticatingAuthorities : System.Collections.ObjectModel.Collection&lt;Uri&gt;" Usage="System.IdentityModel.Tokens.Saml2AuthenticationContext.AuthenticatingAuthorities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationContext.ClassReference" />
       <MemberSignature Language="VB.NET" Value="Public Property ClassReference As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ClassReference { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClassReference : Uri with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationContext.ClassReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationContext.DeclarationReference" />
       <MemberSignature Language="VB.NET" Value="Public Property DeclarationReference As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ DeclarationReference { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeclarationReference : Uri with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationContext.DeclarationReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

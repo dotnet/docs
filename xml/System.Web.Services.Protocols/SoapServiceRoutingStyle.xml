@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum SoapServiceRoutingStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class SoapServiceRoutingStyle" />
+  <TypeSignature Language="F#" Value="type SoapServiceRoutingStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapServiceRoutingStyle.RequestElement" />
       <MemberSignature Language="VB.NET" Value="RequestElement" />
       <MemberSignature Language="C++ CLI" Value="RequestElement" />
+      <MemberSignature Language="F#" Value="RequestElement = 1" Usage="System.Web.Services.Protocols.SoapServiceRoutingStyle.RequestElement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapServiceRoutingStyle.SoapAction" />
       <MemberSignature Language="VB.NET" Value="SoapAction" />
       <MemberSignature Language="C++ CLI" Value="SoapAction" />
+      <MemberSignature Language="F#" Value="SoapAction = 0" Usage="System.Web.Services.Protocols.SoapServiceRoutingStyle.SoapAction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

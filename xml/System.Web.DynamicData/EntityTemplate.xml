@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.EntityTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityTemplate&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityTemplate : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type EntityTemplate = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplate.ItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.DynamicData.EntityTemplate.ItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

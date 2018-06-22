@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WS2007FederationHttpBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class WS2007FederationHttpBinding&#xA;Inherits WSFederationHttpBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class WS2007FederationHttpBinding : System::ServiceModel::WSFederationHttpBinding" />
+  <TypeSignature Language="F#" Value="type WS2007FederationHttpBinding = class&#xA;    inherit WSFederationHttpBinding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As WSFederationHttpSecurityMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBinding(System::ServiceModel::WSFederationHttpSecurityMode securityMode);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WS2007FederationHttpBinding : System.ServiceModel.WSFederationHttpSecurityMode -&gt; System.ServiceModel.WS2007FederationHttpBinding" Usage="new System.ServiceModel.WS2007FederationHttpBinding securityMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBinding(System::String ^ configName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WS2007FederationHttpBinding : string -&gt; System.ServiceModel.WS2007FederationHttpBinding" Usage="new System.ServiceModel.WS2007FederationHttpBinding configName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As WSFederationHttpSecurityMode, reliableSessionEnabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBinding(System::ServiceModel::WSFederationHttpSecurityMode securityMode, bool reliableSessionEnabled);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WS2007FederationHttpBinding : System.ServiceModel.WSFederationHttpSecurityMode * bool -&gt; System.ServiceModel.WS2007FederationHttpBinding" Usage="new System.ServiceModel.WS2007FederationHttpBinding (securityMode, reliableSessionEnabled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WS2007FederationHttpBinding.CreateMessageSecurity" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateMessageSecurity () As SecurityBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::SecurityBindingElement ^ CreateMessageSecurity();" />
+      <MemberSignature Language="F#" Value="override this.CreateMessageSecurity : unit -&gt; System.ServiceModel.Channels.SecurityBindingElement" Usage="wS2007FederationHttpBinding.CreateMessageSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

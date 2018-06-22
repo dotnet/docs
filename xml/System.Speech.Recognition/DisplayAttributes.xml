@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.DisplayAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum DisplayAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class DisplayAttributes" />
+  <TypeSignature Language="F#" Value="type DisplayAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.ConsumeLeadingSpaces" />
       <MemberSignature Language="VB.NET" Value="ConsumeLeadingSpaces" />
       <MemberSignature Language="C++ CLI" Value="ConsumeLeadingSpaces" />
+      <MemberSignature Language="F#" Value="ConsumeLeadingSpaces = 16" Usage="System.Speech.Recognition.DisplayAttributes.ConsumeLeadingSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -117,6 +119,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Speech.Recognition.DisplayAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -136,6 +139,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.OneTrailingSpace" />
       <MemberSignature Language="VB.NET" Value="OneTrailingSpace" />
       <MemberSignature Language="C++ CLI" Value="OneTrailingSpace" />
+      <MemberSignature Language="F#" Value="OneTrailingSpace = 4" Usage="System.Speech.Recognition.DisplayAttributes.OneTrailingSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -155,6 +159,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.TwoTrailingSpaces" />
       <MemberSignature Language="VB.NET" Value="TwoTrailingSpaces" />
       <MemberSignature Language="C++ CLI" Value="TwoTrailingSpaces" />
+      <MemberSignature Language="F#" Value="TwoTrailingSpaces = 8" Usage="System.Speech.Recognition.DisplayAttributes.TwoTrailingSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -174,6 +179,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.ZeroTrailingSpaces" />
       <MemberSignature Language="VB.NET" Value="ZeroTrailingSpaces" />
       <MemberSignature Language="C++ CLI" Value="ZeroTrailingSpaces" />
+      <MemberSignature Language="F#" Value="ZeroTrailingSpaces = 2" Usage="System.Speech.Recognition.DisplayAttributes.ZeroTrailingSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

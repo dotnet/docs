@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CONNECTDATA" />
   <TypeSignature Language="VB.NET" Value="Public Structure CONNECTDATA" />
   <TypeSignature Language="C++ CLI" Value="public value class CONNECTDATA" />
+  <TypeSignature Language="F#" Value="type CONNECTDATA = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CONNECTDATA.dwCookie" />
       <MemberSignature Language="VB.NET" Value="Public dwCookie As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int dwCookie;" />
+      <MemberSignature Language="F#" Value="val mutable dwCookie : int" Usage="System.Runtime.InteropServices.CONNECTDATA.dwCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CONNECTDATA.pUnk" />
       <MemberSignature Language="VB.NET" Value="Public pUnk As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ pUnk;" />
+      <MemberSignature Language="F#" Value="val mutable pUnk : obj" Usage="System.Runtime.InteropServices.CONNECTDATA.pUnk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

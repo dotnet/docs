@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricAlgorithm" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsymmetricAlgorithm&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsymmetricAlgorithm abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type AsymmetricAlgorithm = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="asymmetricAlgorithm.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As AsymmetricAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::AsymmetricAlgorithm ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.AsymmetricAlgorithm" Usage="System.Security.Cryptography.AsymmetricAlgorithm.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As AsymmetricAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::AsymmetricAlgorithm ^ Create(System::String ^ algName);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.AsymmetricAlgorithm" Usage="System.Security.Cryptography.AsymmetricAlgorithm.Create algName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -302,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="asymmetricAlgorithm.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -348,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="asymmetricAlgorithm.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -398,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.FromXmlString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub FromXmlString (xmlString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXmlString(System::String ^ xmlString);" />
+      <MemberSignature Language="F#" Value="abstract member FromXmlString : string -&gt; unit&#xA;override this.FromXmlString : string -&gt; unit" Usage="asymmetricAlgorithm.FromXmlString xmlString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -442,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricAlgorithm.KeyExchangeAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property KeyExchangeAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyExchangeAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyExchangeAlgorithm : string" Usage="System.Security.Cryptography.AsymmetricAlgorithm.KeyExchangeAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -483,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricAlgorithm.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property KeySize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySize : int with get, set" Usage="System.Security.Cryptography.AsymmetricAlgorithm.KeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -531,6 +540,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.AsymmetricAlgorithm.KeySizeValue" />
       <MemberSignature Language="VB.NET" Value="Protected KeySizeValue As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected: int KeySizeValue;" />
+      <MemberSignature Language="F#" Value="val mutable KeySizeValue : int" Usage="System.Security.Cryptography.AsymmetricAlgorithm.KeySizeValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -570,6 +580,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LegalKeySizes As KeySizes()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -617,6 +628,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizesValue" />
       <MemberSignature Language="VB.NET" Value="Protected LegalKeySizesValue As KeySizes() " />
       <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizesValue;" />
+      <MemberSignature Language="F#" Value="val mutable LegalKeySizesValue : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizesValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -656,6 +668,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricAlgorithm.SignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SignatureAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SignatureAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureAlgorithm : string" Usage="System.Security.Cryptography.AsymmetricAlgorithm.SignatureAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -697,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.ToXmlString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToXmlString (includePrivateParameters As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToXmlString(bool includePrivateParameters);" />
+      <MemberSignature Language="F#" Value="abstract member ToXmlString : bool -&gt; string&#xA;override this.ToXmlString : bool -&gt; string" Usage="asymmetricAlgorithm.ToXmlString includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TreeNodeEventHandler(sender As Object, e As TreeNodeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TreeNodeEventHandler(System::Object ^ sender, TreeNodeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TreeNodeEventHandler = delegate of obj * TreeNodeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

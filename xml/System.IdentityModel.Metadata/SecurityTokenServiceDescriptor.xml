@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenServiceDescriptor&#xA;Inherits WebServiceDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenServiceDescriptor : System::IdentityModel::Metadata::WebServiceDescriptor" />
+  <TypeSignature Language="F#" Value="type SecurityTokenServiceDescriptor = class&#xA;    inherit WebServiceDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.PassiveRequestorEndpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PassiveRequestorEndpoints As Collection(Of EndpointReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ PassiveRequestorEndpoints { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PassiveRequestorEndpoints : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;" Usage="System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.PassiveRequestorEndpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.SecurityTokenServiceEndpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenServiceEndpoints As Collection(Of EndpointReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ SecurityTokenServiceEndpoints { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenServiceEndpoints : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;" Usage="System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.SecurityTokenServiceEndpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

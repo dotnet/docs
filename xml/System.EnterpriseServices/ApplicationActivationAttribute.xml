@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ApplicationActivationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationActivationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationActivationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ApplicationActivationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ApplicationActivationAttribute.#ctor(System.EnterpriseServices.ActivationOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (opt As ActivationOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationActivationAttribute(System::EnterpriseServices::ActivationOption opt);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ApplicationActivationAttribute : System.EnterpriseServices.ActivationOption -&gt; System.EnterpriseServices.ApplicationActivationAttribute" Usage="new System.EnterpriseServices.ApplicationActivationAttribute opt" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationActivationAttribute.SoapMailbox" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapMailbox As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoapMailbox { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapMailbox : string with get, set" Usage="System.EnterpriseServices.ApplicationActivationAttribute.SoapMailbox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationActivationAttribute.SoapVRoot" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapVRoot As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoapVRoot { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapVRoot : string with get, set" Usage="System.EnterpriseServices.ApplicationActivationAttribute.SoapVRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationActivationAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As ActivationOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::ActivationOption Value { System::EnterpriseServices::ActivationOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.EnterpriseServices.ActivationOption" Usage="System.EnterpriseServices.ApplicationActivationAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

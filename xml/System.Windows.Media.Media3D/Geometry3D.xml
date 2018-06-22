@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Geometry3D" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Geometry3D&#xA;Inherits Animatable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Geometry3D abstract : System::Windows::Media::Animation::Animatable" />
+  <TypeSignature Language="F#" Value="type Geometry3D = class&#xA;    inherit Animatable&#xA;    interface DUCE.IResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Geometry3D.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Bounds As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Media3D::Rect3D Bounds { System::Windows::Media::Media3D::Rect3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.Geometry3D.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Geometry3D.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Geometry3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Geometry3D ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.Geometry3D" Usage="geometry3D.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Geometry3D.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Geometry3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Geometry3D ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.Geometry3D" Usage="geometry3D.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

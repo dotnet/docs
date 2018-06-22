@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormWindowState" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormWindowState" />
   <TypeSignature Language="C++ CLI" Value="public enum class FormWindowState" />
+  <TypeSignature Language="F#" Value="type FormWindowState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormWindowState.Maximized" />
       <MemberSignature Language="VB.NET" Value="Maximized" />
       <MemberSignature Language="C++ CLI" Value="Maximized" />
+      <MemberSignature Language="F#" Value="Maximized = 2" Usage="System.Windows.Forms.FormWindowState.Maximized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormWindowState.Minimized" />
       <MemberSignature Language="VB.NET" Value="Minimized" />
       <MemberSignature Language="C++ CLI" Value="Minimized" />
+      <MemberSignature Language="F#" Value="Minimized = 1" Usage="System.Windows.Forms.FormWindowState.Minimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormWindowState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.FormWindowState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

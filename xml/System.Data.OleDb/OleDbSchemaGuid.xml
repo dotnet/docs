@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbSchemaGuid" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbSchemaGuid" />
   <TypeSignature Language="C++ CLI" Value="public ref class OleDbSchemaGuid sealed" />
+  <TypeSignature Language="F#" Value="type OleDbSchemaGuid = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Assertions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Assertions As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Assertions;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Assertions : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Assertions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Catalogs" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Catalogs As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Catalogs;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Catalogs : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Catalogs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Character_Sets" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Character_Sets As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Character_Sets;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Character_Sets : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Character_Sets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Check_Constraints" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Check_Constraints As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Check_Constraints;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Check_Constraints : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Check_Constraints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Check_Constraints_By_Table" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Check_Constraints_By_Table As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Check_Constraints_By_Table;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Check_Constraints_By_Table : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Check_Constraints_By_Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Collations" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Collations As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Collations;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Collations : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Collations" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -240,6 +247,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Column_Domain_Usage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Column_Domain_Usage As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Column_Domain_Usage;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Column_Domain_Usage : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Column_Domain_Usage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -273,6 +281,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Column_Privileges" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Column_Privileges As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Column_Privileges;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Column_Privileges : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Column_Privileges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -308,6 +317,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Columns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Columns As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Columns;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Columns : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Columns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -341,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Constraint_Column_Usage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Constraint_Column_Usage As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Constraint_Column_Usage;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Constraint_Column_Usage : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Constraint_Column_Usage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -377,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Constraint_Table_Usage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Constraint_Table_Usage As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Constraint_Table_Usage;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Constraint_Table_Usage : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Constraint_Table_Usage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -412,6 +424,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.DbInfoKeywords" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DbInfoKeywords As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid DbInfoKeywords;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DbInfoKeywords : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.DbInfoKeywords" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -438,6 +451,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.DbInfoLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DbInfoLiterals As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid DbInfoLiterals;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DbInfoLiterals : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.DbInfoLiterals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -466,6 +480,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Foreign_Keys" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Foreign_Keys As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Foreign_Keys;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Foreign_Keys : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Foreign_Keys" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -501,6 +516,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Indexes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Indexes As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Indexes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Indexes : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Indexes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -535,6 +551,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Key_Column_Usage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Key_Column_Usage As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Key_Column_Usage;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Key_Column_Usage : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Key_Column_Usage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -571,6 +588,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Primary_Keys" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Primary_Keys As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Primary_Keys;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Primary_Keys : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Primary_Keys" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -603,6 +621,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Procedure_Columns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Procedure_Columns As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Procedure_Columns;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Procedure_Columns : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Procedure_Columns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -639,6 +658,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Procedure_Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Procedure_Parameters As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Procedure_Parameters;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Procedure_Parameters : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Procedure_Parameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -672,6 +692,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Procedures" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Procedures As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Procedures;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Procedures : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Procedures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -705,6 +726,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Provider_Types" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Provider_Types As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Provider_Types;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Provider_Types : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Provider_Types" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -736,6 +758,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Referential_Constraints" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Referential_Constraints As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Referential_Constraints;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Referential_Constraints : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Referential_Constraints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -768,6 +791,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.SchemaGuids" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SchemaGuids As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid SchemaGuids;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SchemaGuids : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.SchemaGuids" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -794,6 +818,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Schemata" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Schemata As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Schemata;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Schemata : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Schemata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -826,6 +851,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Sql_Languages" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Sql_Languages As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Sql_Languages;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Sql_Languages : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Sql_Languages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -862,6 +888,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Statistics" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Statistics As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Statistics;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Statistics : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Statistics" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -894,6 +921,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Table_Constraints" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Table_Constraints As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Table_Constraints;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Table_Constraints : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Table_Constraints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -930,6 +958,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Table_Privileges" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Table_Privileges As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Table_Privileges;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Table_Privileges : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Table_Privileges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -964,6 +993,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Table_Statistics" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Table_Statistics As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Table_Statistics;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Table_Statistics : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Table_Statistics" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1000,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Tables" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tables As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Tables;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Tables : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Tables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1033,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Tables_Info" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tables_Info As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Tables_Info;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Tables_Info : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Tables_Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1066,6 +1098,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Translations" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Translations As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Translations;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Translations : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Translations" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1098,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Trustee" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Trustee As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Trustee;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Trustee : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Trustee" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1131,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Usage_Privileges" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Usage_Privileges As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Usage_Privileges;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Usage_Privileges : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Usage_Privileges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1166,6 +1201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.View_Column_Usage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly View_Column_Usage As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid View_Column_Usage;" />
+      <MemberSignature Language="F#" Value=" staticval mutable View_Column_Usage : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.View_Column_Usage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1198,6 +1234,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.View_Table_Usage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly View_Table_Usage As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid View_Table_Usage;" />
+      <MemberSignature Language="F#" Value=" staticval mutable View_Table_Usage : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.View_Table_Usage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1230,6 +1267,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Views" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Views As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Views;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Views : Guid" Usage="System.Data.OleDb.OleDbSchemaGuid.Views" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ReplicationNeighborCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReplicationNeighborCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReplicationNeighborCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.Contains(System.DirectoryServices.ActiveDirectory.ReplicationNeighbor)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (neighbor As ReplicationNeighbor) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^ neighbor);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor -&gt; bool" Usage="replicationNeighborCollection.Contains neighbor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ReplicationNeighbor[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (neighbors As ReplicationNeighbor(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^&gt; ^ neighbors, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor[] * int -&gt; unit" Usage="replicationNeighborCollection.CopyTo (neighbors, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ReplicationNeighbor)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (neighbor As ReplicationNeighbor) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^ neighbor);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor -&gt; int" Usage="replicationNeighborCollection.IndexOf neighbor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ReplicationNeighbor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^ default[int] { System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogReader" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogReader&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogReader : IDisposable" />
+  <TypeSignature Language="F#" Value="type EventLogReader = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventQuery As EventLogQuery)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogReader(System::Diagnostics::Eventing::Reader::EventLogQuery ^ eventQuery);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogReader : System.Diagnostics.Eventing.Reader.EventLogQuery -&gt; System.Diagnostics.Eventing.Reader.EventLogReader" Usage="new System.Diagnostics.Eventing.Reader.EventLogReader eventQuery" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogReader(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogReader : string -&gt; System.Diagnostics.Eventing.Reader.EventLogReader" Usage="new System.Diagnostics.Eventing.Reader.EventLogReader path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventQuery As EventLogQuery, bookmark As EventBookmark)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogReader(System::Diagnostics::Eventing::Reader::EventLogQuery ^ eventQuery, System::Diagnostics::Eventing::Reader::EventBookmark ^ bookmark);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogReader : System.Diagnostics.Eventing.Reader.EventLogQuery * System.Diagnostics.Eventing.Reader.EventBookmark -&gt; System.Diagnostics.Eventing.Reader.EventLogReader" Usage="new System.Diagnostics.Eventing.Reader.EventLogReader (eventQuery, bookmark)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogReader(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogReader : string * System.Diagnostics.Eventing.Reader.PathType -&gt; System.Diagnostics.Eventing.Reader.EventLogReader" Usage="new System.Diagnostics.Eventing.Reader.EventLogReader (path, pathType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize" />
       <MemberSignature Language="VB.NET" Value="Public Property BatchSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BatchSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BatchSize : int with get, set" Usage="System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelReading ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelReading();" />
+      <MemberSignature Language="F#" Value="member this.CancelReading : unit -&gt; unit" Usage="eventLogReader.CancelReading " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventLogReader.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eventLogReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogStatus As IList(Of EventLogStatus)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLogStatus ^&gt; ^ LogStatus { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLogStatus ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogStatus : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventLogStatus&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadEvent () As EventRecord" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Eventing::Reader::EventRecord ^ ReadEvent();" />
+      <MemberSignature Language="F#" Value="member this.ReadEvent : unit -&gt; System.Diagnostics.Eventing.Reader.EventRecord" Usage="eventLogReader.ReadEvent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadEvent (timeout As TimeSpan) As EventRecord" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Eventing::Reader::EventRecord ^ ReadEvent(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.ReadEvent : TimeSpan -&gt; System.Diagnostics.Eventing.Reader.EventRecord" Usage="eventLogReader.ReadEvent timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -360,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (bookmark As EventBookmark)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(System::Diagnostics::Eventing::Reader::EventBookmark ^ bookmark);" />
+      <MemberSignature Language="F#" Value="member this.Seek : System.Diagnostics.Eventing.Reader.EventBookmark -&gt; unit" Usage="eventLogReader.Seek bookmark" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (bookmark As EventBookmark, offset As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(System::Diagnostics::Eventing::Reader::EventBookmark ^ bookmark, long offset);" />
+      <MemberSignature Language="F#" Value="member this.Seek : System.Diagnostics.Eventing.Reader.EventBookmark * int64 -&gt; unit" Usage="eventLogReader.Seek (bookmark, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.IO.SeekOrigin,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (origin As SeekOrigin, offset As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(System::IO::SeekOrigin origin, long offset);" />
+      <MemberSignature Language="F#" Value="member this.Seek : System.IO.SeekOrigin * int64 -&gt; unit" Usage="eventLogReader.Seek (origin, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

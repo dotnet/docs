@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NumericUnary" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NumericUnary&#xA;Inherits UnaryOp" />
   <TypeSignature Language="C++ CLI" Value="public ref class NumericUnary sealed : Microsoft::JScript::UnaryOp" />
+  <TypeSignature Language="F#" Value="type NumericUnary = class&#xA;    inherit UnaryOp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumericUnary.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operatorTok As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NumericUnary(int operatorTok);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.NumericUnary : int -&gt; Microsoft.JScript.NumericUnary" Usage="new Microsoft.JScript.NumericUnary operatorTok" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumericUnary.EvaluateUnary(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function EvaluateUnary (v As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ EvaluateUnary(System::Object ^ v);" />
+      <MemberSignature Language="F#" Value="member this.EvaluateUnary : obj -&gt; obj" Usage="numericUnary.EvaluateUnary v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

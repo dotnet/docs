@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeItem" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeItem abstract" />
+  <TypeSignature Language="F#" Value="type CodeItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeItem.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="abstract member Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeItem.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeItem.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="abstract member PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeItem.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpValidationStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpValidationStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class HttpValidationStatus" />
+  <TypeSignature Language="F#" Value="type HttpValidationStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpValidationStatus.IgnoreThisRequest" />
       <MemberSignature Language="VB.NET" Value="IgnoreThisRequest" />
       <MemberSignature Language="C++ CLI" Value="IgnoreThisRequest" />
+      <MemberSignature Language="F#" Value="IgnoreThisRequest = 2" Usage="System.Web.HttpValidationStatus.IgnoreThisRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpValidationStatus.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 1" Usage="System.Web.HttpValidationStatus.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpValidationStatus.Valid" />
       <MemberSignature Language="VB.NET" Value="Valid" />
       <MemberSignature Language="C++ CLI" Value="Valid" />
+      <MemberSignature Language="F#" Value="Valid = 3" Usage="System.Web.HttpValidationStatus.Valid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

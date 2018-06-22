@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebMessageEncodingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebMessageEncodingElement&#xA;Inherits BindingElementExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebMessageEncodingElement sealed : System::ServiceModel::Configuration::BindingElementExtensionElement" />
+  <TypeSignature Language="F#" Value="type WebMessageEncodingElement = class&#xA;    inherit BindingElementExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -104,6 +105,7 @@ static void Main(string[] args)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebMessageEncodingElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="webMessageEncodingElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -127,6 +129,7 @@ static void Main(string[] args)
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebMessageEncodingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.WebMessageEncodingElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -161,6 +164,7 @@ static void Main(string[] args)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebMessageEncodingElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="webMessageEncodingElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -184,6 +188,7 @@ static void Main(string[] args)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebMessageEncodingElement.CreateBindingElement" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBindingElement () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::BindingElement ^ CreateBindingElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="webMessageEncodingElement.CreateBindingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -205,6 +210,7 @@ static void Main(string[] args)
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebMessageEncodingElement.MaxReadPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReadPoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxReadPoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxReadPoolSize : int with get, set" Usage="System.ServiceModel.Configuration.WebMessageEncodingElement.MaxReadPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -255,6 +261,7 @@ static void Main(string[] args)
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebMessageEncodingElement.MaxWritePoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxWritePoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxWritePoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxWritePoolSize : int with get, set" Usage="System.ServiceModel.Configuration.WebMessageEncodingElement.MaxWritePoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -304,6 +311,7 @@ static void Main(string[] args)
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebMessageEncodingElement.ReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderQuotas As XmlDictionaryReaderQuotasElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ ReaderQuotas { System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement" Usage="System.ServiceModel.Configuration.WebMessageEncodingElement.ReaderQuotas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -345,6 +353,7 @@ Console.WriteLine("The max depth of the reader Quotas is: {0}", webMessageReader
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebMessageEncodingElement.WebContentTypeMapperType" />
       <MemberSignature Language="VB.NET" Value="Public Property WebContentTypeMapperType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WebContentTypeMapperType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WebContentTypeMapperType : string with get, set" Usage="System.ServiceModel.Configuration.WebMessageEncodingElement.WebContentTypeMapperType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -380,6 +389,7 @@ Console.WriteLine("The max depth of the reader Quotas is: {0}", webMessageReader
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebMessageEncodingElement.WriteEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ WriteEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WriteEncoding : System.Text.Encoding with get, set" Usage="System.ServiceModel.Configuration.WebMessageEncodingElement.WriteEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

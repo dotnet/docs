@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceInstallerDialog&#xA;Inherits Form" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceInstallerDialog : System::Windows::Forms::Form" />
+  <TypeSignature Language="F#" Value="type ServiceInstallerDialog = class&#xA;    inherit Form" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.Design.ServiceInstallerDialog.Main" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Main ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Main();" />
+      <MemberSignature Language="F#" Value="static member Main : unit -&gt; unit" Usage="System.ServiceProcess.Design.ServiceInstallerDialog.Main " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.Design.ServiceInstallerDialog.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.ServiceProcess.Design.ServiceInstallerDialog.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.Design.ServiceInstallerDialog.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As ServiceInstallerDialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::Design::ServiceInstallerDialogResult Result { System::ServiceProcess::Design::ServiceInstallerDialogResult get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.ServiceProcess.Design.ServiceInstallerDialogResult" Usage="System.ServiceProcess.Design.ServiceInstallerDialog.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.Design.ServiceInstallerDialog.Username" />
       <MemberSignature Language="VB.NET" Value="Public Property Username As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Username { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Username : string with get, set" Usage="System.ServiceProcess.Design.ServiceInstallerDialog.Username" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>

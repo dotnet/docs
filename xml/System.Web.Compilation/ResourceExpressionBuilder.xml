@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ResourceExpressionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceExpressionBuilder&#xA;Inherits ExpressionBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceExpressionBuilder : System::Web::Compilation::ExpressionBuilder" />
+  <TypeSignature Language="F#" Value="type ResourceExpressionBuilder = class&#xA;    inherit ExpressionBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (target As Object, entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::Object ^ target, System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.EvaluateExpression : obj * System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; obj" Usage="resourceExpressionBuilder.EvaluateExpression (target, entry, parsedData, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCodeExpression (entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::CodeExpression ^ GetCodeExpression(System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetCodeExpression : System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; System.CodeDom.CodeExpression" Usage="resourceExpressionBuilder.GetCodeExpression (entry, parsedData, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.ParseExpression(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseExpression (expression As String) As ResourceExpressionFields" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Compilation::ResourceExpressionFields ^ ParseExpression(System::String ^ expression);" />
+      <MemberSignature Language="F#" Value="static member ParseExpression : string -&gt; System.Web.Compilation.ResourceExpressionFields" Usage="System.Web.Compilation.ResourceExpressionBuilder.ParseExpression expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ParseExpression (expression As String, propertyType As Type, context As ExpressionBuilderContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ParseExpression(System::String ^ expression, Type ^ propertyType, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ParseExpression : string * Type * System.Web.Compilation.ExpressionBuilderContext -&gt; obj" Usage="resourceExpressionBuilder.ParseExpression (expression, propertyType, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ResourceExpressionBuilder.SupportsEvaluate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsEvaluate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsEvaluate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsEvaluate : bool" Usage="System.Web.Compilation.ResourceExpressionBuilder.SupportsEvaluate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

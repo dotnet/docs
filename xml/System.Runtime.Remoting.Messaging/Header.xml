@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.Header" />
   <TypeSignature Language="VB.NET" Value="Public Class Header" />
   <TypeSignature Language="C++ CLI" Value="public ref class Header" />
+  <TypeSignature Language="F#" Value="type Header = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.Header.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Name As String, _Value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Header(System::String ^ _Name, System::Object ^ _Value);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Messaging.Header : string * obj -&gt; System.Runtime.Remoting.Messaging.Header" Usage="new System.Runtime.Remoting.Messaging.Header (_Name, _Value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.Header.#ctor(System.String,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Name As String, _Value As Object, _MustUnderstand As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Header(System::String ^ _Name, System::Object ^ _Value, bool _MustUnderstand);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Messaging.Header : string * obj * bool -&gt; System.Runtime.Remoting.Messaging.Header" Usage="new System.Runtime.Remoting.Messaging.Header (_Name, _Value, _MustUnderstand)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.Header.#ctor(System.String,System.Object,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Name As String, _Value As Object, _MustUnderstand As Boolean, _HeaderNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Header(System::String ^ _Name, System::Object ^ _Value, bool _MustUnderstand, System::String ^ _HeaderNamespace);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Messaging.Header : string * obj * bool * string -&gt; System.Runtime.Remoting.Messaging.Header" Usage="new System.Runtime.Remoting.Messaging.Header (_Name, _Value, _MustUnderstand, _HeaderNamespace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Messaging.Header.HeaderNamespace" />
       <MemberSignature Language="VB.NET" Value="Public HeaderNamespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ HeaderNamespace;" />
+      <MemberSignature Language="F#" Value="val mutable HeaderNamespace : string" Usage="System.Runtime.Remoting.Messaging.Header.HeaderNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Messaging.Header.MustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public MustUnderstand As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool MustUnderstand;" />
+      <MemberSignature Language="F#" Value="val mutable MustUnderstand : bool" Usage="System.Runtime.Remoting.Messaging.Header.MustUnderstand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Messaging.Header.Name" />
       <MemberSignature Language="VB.NET" Value="Public Name As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Name;" />
+      <MemberSignature Language="F#" Value="val mutable Name : string" Usage="System.Runtime.Remoting.Messaging.Header.Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Messaging.Header.Value" />
       <MemberSignature Language="VB.NET" Value="Public Value As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ Value;" />
+      <MemberSignature Language="F#" Value="val mutable Value : obj" Usage="System.Runtime.Remoting.Messaging.Header.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementBindAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementBindAttribute&#xA;Inherits ManagementNewInstanceAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementBindAttribute sealed : System::Management::Instrumentation::ManagementNewInstanceAttribute" />
+  <TypeSignature Language="F#" Value="type ManagementBindAttribute = class&#xA;    inherit ManagementNewInstanceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@ public ClassConstructor(int Id)
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementBindAttribute.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Property Schema As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Schema { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : Type with get, set" Usage="System.Management.Instrumentation.ManagementBindAttribute.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

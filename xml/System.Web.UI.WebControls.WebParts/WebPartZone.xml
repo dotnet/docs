@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
   <TypeSignature Language="VB.NET" Value="Public Class WebPartZone&#xA;Inherits WebPartZoneBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartZone : System::Web::UI::WebControls::WebParts::WebPartZoneBase" />
+  <TypeSignature Language="F#" Value="type WebPartZone = class&#xA;    inherit WebPartZoneBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZone.GetInitialWebParts" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetInitialWebParts () As WebPartCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Web::UI::WebControls::WebParts::WebPartCollection ^ GetInitialWebParts();" />
+      <MemberSignature Language="F#" Value="override this.GetInitialWebParts : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartCollection" Usage="webPartZone.GetInitialWebParts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZone.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="webPartZone.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ZoneTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ZoneTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ZoneTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

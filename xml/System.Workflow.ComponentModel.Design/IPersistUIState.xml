@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IPersistUIState" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPersistUIState" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPersistUIState" />
+  <TypeSignature Language="F#" Value="type IPersistUIState = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IPersistUIState.LoadViewState(System.IO.BinaryReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadViewState (reader As BinaryReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadViewState(System::IO::BinaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : System.IO.BinaryReader -&gt; unit" Usage="iPersistUIState.LoadViewState reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IPersistUIState.SaveViewState(System.IO.BinaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveViewState (writer As BinaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveViewState(System::IO::BinaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : System.IO.BinaryWriter -&gt; unit" Usage="iPersistUIState.SaveViewState writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

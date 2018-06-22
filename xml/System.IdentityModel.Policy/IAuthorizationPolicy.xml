@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.IAuthorizationPolicy" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAuthorizationPolicy&#xA;Implements IAuthorizationComponent" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAuthorizationPolicy : System::IdentityModel::Policy::IAuthorizationComponent" />
+  <TypeSignature Language="F#" Value="type IAuthorizationPolicy = interface&#xA;    interface IAuthorizationComponent" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Evaluate(class System.IdentityModel.Policy.EvaluationContext evaluationContext, object&amp; state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate(System.IdentityModel.Policy.EvaluationContext,System.Object@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Evaluate(System::IdentityModel::Policy::EvaluationContext ^ evaluationContext, System::Object ^ % state);" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : System.IdentityModel.Policy.EvaluationContext *  -&gt; bool" Usage="iAuthorizationPolicy.Evaluate (evaluationContext, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.IAuthorizationPolicy.Issuer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Issuer As ClaimSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Claims::ClaimSet ^ Issuer { System::IdentityModel::Claims::ClaimSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Issuer : System.IdentityModel.Claims.ClaimSet" Usage="System.IdentityModel.Policy.IAuthorizationPolicy.Issuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

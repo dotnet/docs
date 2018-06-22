@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.ISecurityPolicyEncodable" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISecurityPolicyEncodable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISecurityPolicyEncodable" />
+  <TypeSignature Language="F#" Value="type ISecurityPolicyEncodable = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ISecurityPolicyEncodable.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement, level As PolicyLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXml(System::Security::SecurityElement ^ e, System::Security::Policy::PolicyLevel ^ level);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit" Usage="iSecurityPolicyEncodable.FromXml (e, level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ISecurityPolicyEncodable.ToXml(System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml (level As PolicyLevel) As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ ToXml(System::Security::Policy::PolicyLevel ^ level);" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement" Usage="iSecurityPolicyEncodable.ToXml level" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

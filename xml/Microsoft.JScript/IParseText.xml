@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IParseText" />
   <TypeSignature Language="VB.NET" Value="Public Interface IParseText" />
   <TypeSignature Language="C++ CLI" Value="public interface class IParseText" />
+  <TypeSignature Language="F#" Value="type IParseText = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IParseText.Parse(System.String,Microsoft.JScript.IErrorHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Parse (code As String, error As IErrorHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Parse(System::String ^ code, Microsoft::JScript::IErrorHandler ^ error);" />
+      <MemberSignature Language="F#" Value="abstract member Parse : string * Microsoft.JScript.IErrorHandler -&gt; unit" Usage="iParseText.Parse (code, error)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapNodeItemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SiteMapNodeItemEventHandler(sender As Object, e As SiteMapNodeItemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SiteMapNodeItemEventHandler(System::Object ^ sender, SiteMapNodeItemEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SiteMapNodeItemEventHandler = delegate of obj * SiteMapNodeItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

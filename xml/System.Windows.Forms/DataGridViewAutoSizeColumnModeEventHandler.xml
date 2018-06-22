@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewAutoSizeColumnModeEventHandler(sender As Object, e As DataGridViewAutoSizeColumnModeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewAutoSizeColumnModeEventHandler(System::Object ^ sender, DataGridViewAutoSizeColumnModeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewAutoSizeColumnModeEventHandler = delegate of obj * DataGridViewAutoSizeColumnModeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

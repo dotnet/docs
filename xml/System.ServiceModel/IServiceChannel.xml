@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IServiceChannel" />
   <TypeSignature Language="VB.NET" Value="Public Interface IServiceChannel&#xA;Implements IContextChannel, IExtensibleObject(Of IContextChannel)" />
   <TypeSignature Language="C++ CLI" Value="public interface class IServiceChannel : System::ServiceModel::IContextChannel, System::ServiceModel::IExtensibleObject&lt;System::ServiceModel::IContextChannel ^&gt;" />
+  <TypeSignature Language="F#" Value="type IServiceChannel = interface&#xA;    interface IContextChannel&#xA;    interface IChannel&#xA;    interface ICommunicationObject&#xA;    interface IExtensibleObject&lt;IContextChannel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IServiceChannel.ListenUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListenUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ListenUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListenUri : Uri" Usage="System.ServiceModel.IServiceChannel.ListenUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

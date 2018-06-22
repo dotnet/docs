@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridClipboardCopyMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridClipboardCopyMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridClipboardCopyMode" />
+  <TypeSignature Language="F#" Value="type DataGridClipboardCopyMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridClipboardCopyMode.ExcludeHeader" />
       <MemberSignature Language="VB.NET" Value="ExcludeHeader" />
       <MemberSignature Language="C++ CLI" Value="ExcludeHeader" />
+      <MemberSignature Language="F#" Value="ExcludeHeader = 1" Usage="System.Windows.Controls.DataGridClipboardCopyMode.ExcludeHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridClipboardCopyMode.IncludeHeader" />
       <MemberSignature Language="VB.NET" Value="IncludeHeader" />
       <MemberSignature Language="C++ CLI" Value="IncludeHeader" />
+      <MemberSignature Language="F#" Value="IncludeHeader = 2" Usage="System.Windows.Controls.DataGridClipboardCopyMode.IncludeHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridClipboardCopyMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.DataGridClipboardCopyMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlDecimal" />
   <TypeSignature Language="VB.NET" Value="Public Structure SqlDecimal&#xA;Implements IComparable, INullable, IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public value class SqlDecimal : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type SqlDecimal = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.#ctor(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDecimal(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDecimal : decimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="new System.Data.SqlTypes.SqlDecimal value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dVal As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDecimal(double dVal);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDecimal : double -&gt; System.Data.SqlTypes.SqlDecimal" Usage="new System.Data.SqlTypes.SqlDecimal dVal" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDecimal(int value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDecimal : int -&gt; System.Data.SqlTypes.SqlDecimal" Usage="new System.Data.SqlTypes.SqlDecimal value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDecimal(long value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDecimal : int64 -&gt; System.Data.SqlTypes.SqlDecimal" Usage="new System.Data.SqlTypes.SqlDecimal value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.#ctor(System.Byte,System.Byte,System.Boolean,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bPrecision As Byte, bScale As Byte, fPositive As Boolean, bits As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDecimal(System::Byte bPrecision, System::Byte bScale, bool fPositive, cli::array &lt;int&gt; ^ bits);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDecimal : byte * byte * bool * int[] -&gt; System.Data.SqlTypes.SqlDecimal" Usage="new System.Data.SqlTypes.SqlDecimal (bPrecision, bScale, fPositive, bits)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.#ctor(System.Byte,System.Byte,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bPrecision As Byte, bScale As Byte, fPositive As Boolean, data1 As Integer, data2 As Integer, data3 As Integer, data4 As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDecimal(System::Byte bPrecision, System::Byte bScale, bool fPositive, int data1, int data2, int data3, int data4);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDecimal : byte * byte * bool * int * int * int * int -&gt; System.Data.SqlTypes.SqlDecimal" Usage="new System.Data.SqlTypes.SqlDecimal (bPrecision, bScale, fPositive, data1, data2, data3, data4)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Abs(System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (n As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Abs(System::Data::SqlTypes::SqlDecimal n);" />
+      <MemberSignature Language="F#" Value="static member Abs : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Abs n" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -328,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Add(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (x As SqlDecimal, y As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Add(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Add (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -368,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.AdjustScale(System.Data.SqlTypes.SqlDecimal,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AdjustScale (n As SqlDecimal, digits As Integer, fRound As Boolean) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal AdjustScale(System::Data::SqlTypes::SqlDecimal n, int digits, bool fRound);" />
+      <MemberSignature Language="F#" Value="static member AdjustScale : System.Data.SqlTypes.SqlDecimal * int * bool -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.AdjustScale (n, digits, fRound)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -410,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.BinData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BinData As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ BinData { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinData : byte[]" Usage="System.Data.SqlTypes.SqlDecimal.BinData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -444,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Ceiling(System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (n As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Ceiling(System::Data::SqlTypes::SqlDecimal n);" />
+      <MemberSignature Language="F#" Value="static member Ceiling : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Ceiling n" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -491,6 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.CompareTo(System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As SqlDecimal) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlDecimal value);" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : System.Data.SqlTypes.SqlDecimal -&gt; int" Usage="sqlDecimal.CompareTo value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -551,6 +564,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="sqlDecimal.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -614,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ConvertToPrecScale(System.Data.SqlTypes.SqlDecimal,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToPrecScale (n As SqlDecimal, precision As Integer, scale As Integer) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal ConvertToPrecScale(System::Data::SqlTypes::SqlDecimal n, int precision, int scale);" />
+      <MemberSignature Language="F#" Value="static member ConvertToPrecScale : System.Data.SqlTypes.SqlDecimal * int * int -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.ConvertToPrecScale (n, precision, scale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -656,6 +671,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.Data" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ Data { cli::array &lt;int&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Data : int[]" Usage="System.Data.SqlTypes.SqlDecimal.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -690,6 +706,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (x As SqlDecimal, y As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Divide(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Divide (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -739,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sqlDecimal.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -778,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Equals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDecimal.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -819,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Floor(System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Floor (n As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Floor(System::Data::SqlTypes::SqlDecimal n);" />
+      <MemberSignature Language="F#" Value="static member Floor : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Floor n" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -857,6 +877,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sqlDecimal.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -892,6 +913,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlDecimal.GetXsdType schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -926,6 +948,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.GreaterThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDecimal.GreaterThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -966,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.GreaterThanOrEqual(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDecimal.GreaterThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1006,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlDecimal.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -1051,6 +1076,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.IsPositive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPositive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPositive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPositive : bool" Usage="System.Data.SqlTypes.SqlDecimal.IsPositive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1086,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.LessThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDecimal.LessThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1126,6 +1153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.LessThanOrEqual(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDecimal.LessThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1166,6 +1194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDecimal.MaxPrecision" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxPrecision As Byte " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Byte MaxPrecision;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxPrecision : byte" Usage="System.Data.SqlTypes.SqlDecimal.MaxPrecision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1206,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDecimal.MaxScale" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxScale As Byte " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Byte MaxScale;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxScale : byte" Usage="System.Data.SqlTypes.SqlDecimal.MaxScale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1239,6 +1269,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDecimal.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As SqlDecimal " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDecimal MaxValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxValue : System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.MaxValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1279,6 +1310,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDecimal.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As SqlDecimal " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDecimal MinValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinValue : System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.MinValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1319,6 +1351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Multiply(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (x As SqlDecimal, y As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Multiply(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Multiply (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1359,6 +1392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDecimal.NotEquals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1399,6 +1433,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDecimal.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SqlDecimal " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDecimal Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1439,6 +1474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Addition(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As SqlDecimal, y As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal operator +(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="x + y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1481,6 +1517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Division(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator / (x As SqlDecimal, y As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal operator /(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="x / y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1523,6 +1560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Equality(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1574,6 +1612,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlBoolean) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlBoolean x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBoolean -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1614,6 +1653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Decimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDecimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Decimal(System::Data::SqlTypes::SqlDecimal x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDecimal -&gt; decimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1652,6 +1692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDouble) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlDouble x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDouble -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1692,6 +1733,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlSingle) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlSingle x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlSingle -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1732,6 +1774,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlString) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlString x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1772,6 +1815,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Double)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As Double) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlDecimal(double x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : double -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1812,6 +1856,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_GreaterThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1854,6 +1899,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1905,6 +1951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlByte) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlByte x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlByte -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1945,6 +1992,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlInt16) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlInt16 x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlInt16 -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1985,6 +2033,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlInt32) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlInt32 x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2025,6 +2074,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlInt64) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlInt64 x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2065,6 +2115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlMoney) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDecimal(System::Data::SqlTypes::SqlMoney x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlMoney -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2105,6 +2156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Decimal)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As Decimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDecimal(System::Decimal x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : decimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2143,6 +2195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Int64)~System.Data.SqlTypes.SqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As Long) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDecimal(long x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int64 -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2183,6 +2236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Inequality(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDecimal.op_Inequality (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2225,6 +2279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_LessThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2267,6 +2322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_LessThanOrEqual(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As SqlDecimal, y As SqlDecimal) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2309,6 +2365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Multiply(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (x As SqlDecimal, y As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal operator *(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="x * y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2351,6 +2408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Subtraction(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (x As SqlDecimal, y As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal operator -(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="x - y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2393,6 +2451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_UnaryNegation(System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (x As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal operator -(System::Data::SqlTypes::SqlDecimal x);" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="- x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2431,6 +2490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Parse s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2469,6 +2529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Power(System.Data.SqlTypes.SqlDecimal,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Power (n As SqlDecimal, exp As Double) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Power(System::Data::SqlTypes::SqlDecimal n, double exp);" />
+      <MemberSignature Language="F#" Value="static member Power : System.Data.SqlTypes.SqlDecimal * double -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Power (n, exp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2509,6 +2570,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.Precision" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Precision As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Precision { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Precision : byte" Usage="System.Data.SqlTypes.SqlDecimal.Precision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2543,6 +2605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Round(System.Data.SqlTypes.SqlDecimal,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (n As SqlDecimal, position As Integer) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Round(System::Data::SqlTypes::SqlDecimal n, int position);" />
+      <MemberSignature Language="F#" Value="static member Round : System.Data.SqlTypes.SqlDecimal * int -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Round (n, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2583,6 +2646,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.Scale" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scale As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Scale { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scale : byte" Usage="System.Data.SqlTypes.SqlDecimal.Scale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2617,6 +2681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Sign(System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (n As SqlDecimal) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Sign(System::Data::SqlTypes::SqlDecimal n);" />
+      <MemberSignature Language="F#" Value="static member Sign : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlDecimal.Sign n" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2655,6 +2720,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Subtract(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (x As SqlDecimal, y As SqlDecimal) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Subtract(System::Data::SqlTypes::SqlDecimal x, System::Data::SqlTypes::SqlDecimal y);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Data.SqlTypes.SqlDecimal * System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Subtract (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2805,6 +2871,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToDouble" />
       <MemberSignature Language="VB.NET" Value="Public Function ToDouble () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double ToDouble();" />
+      <MemberSignature Language="F#" Value="member this.ToDouble : unit -&gt; double" Usage="sqlDecimal.ToDouble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2840,6 +2907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlBoolean () As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlBoolean ToSqlBoolean();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlBoolean : unit -&gt; System.Data.SqlTypes.SqlBoolean" Usage="sqlDecimal.ToSqlBoolean " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2876,6 +2944,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlByte" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlByte () As SqlByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlByte ToSqlByte();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlByte : unit -&gt; System.Data.SqlTypes.SqlByte" Usage="sqlDecimal.ToSqlByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2911,6 +2980,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlDouble" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDouble () As SqlDouble" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDouble ToSqlDouble();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlDouble : unit -&gt; System.Data.SqlTypes.SqlDouble" Usage="sqlDecimal.ToSqlDouble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2946,6 +3016,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlInt16" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt16 () As SqlInt16" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt16 ToSqlInt16();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlInt16 : unit -&gt; System.Data.SqlTypes.SqlInt16" Usage="sqlDecimal.ToSqlInt16 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2981,6 +3052,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt32 () As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt32 ToSqlInt32();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlInt32 : unit -&gt; System.Data.SqlTypes.SqlInt32" Usage="sqlDecimal.ToSqlInt32 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3016,6 +3088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlInt64" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt64 () As SqlInt64" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt64 ToSqlInt64();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlInt64 : unit -&gt; System.Data.SqlTypes.SqlInt64" Usage="sqlDecimal.ToSqlInt64 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3051,6 +3124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlMoney" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlMoney () As SqlMoney" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlMoney ToSqlMoney();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlMoney : unit -&gt; System.Data.SqlTypes.SqlMoney" Usage="sqlDecimal.ToSqlMoney " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3086,6 +3160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlSingle" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlSingle () As SqlSingle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlSingle ToSqlSingle();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlSingle : unit -&gt; System.Data.SqlTypes.SqlSingle" Usage="sqlDecimal.ToSqlSingle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3121,6 +3196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToSqlString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlString () As SqlString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString ToSqlString();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlString : unit -&gt; System.Data.SqlTypes.SqlString" Usage="sqlDecimal.ToSqlString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3156,6 +3232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlDecimal.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3191,6 +3268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.Truncate(System.Data.SqlTypes.SqlDecimal,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate (n As SqlDecimal, position As Integer) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDecimal Truncate(System::Data::SqlTypes::SqlDecimal n, int position);" />
+      <MemberSignature Language="F#" Value="static member Truncate : System.Data.SqlTypes.SqlDecimal * int -&gt; System.Data.SqlTypes.SqlDecimal" Usage="System.Data.SqlTypes.SqlDecimal.Truncate (n, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3231,6 +3309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDecimal.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal Value { System::Decimal get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : decimal" Usage="System.Data.SqlTypes.SqlDecimal.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceDescriptionBaseCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceDescriptionBaseCollection abstract : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type ServiceDescriptionBaseCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.GetKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetKey (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetKey(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GetKey : obj -&gt; string&#xA;override this.GetKey : obj -&gt; string" Usage="serviceDescriptionBaseCollection.GetKey value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
+      <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="serviceDescriptionBaseCollection.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsertComplete : int * obj -&gt; unit&#xA;override this.OnInsertComplete : int * obj -&gt; unit" Usage="serviceDescriptionBaseCollection.OnInsertComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="serviceDescriptionBaseCollection.OnRemove (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="serviceDescriptionBaseCollection.OnSet (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionBaseCollection.SetParent(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetParent (value As Object, parent As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetParent(System::Object ^ value, System::Object ^ parent);" />
+      <MemberSignature Language="F#" Value="abstract member SetParent : obj * obj -&gt; unit&#xA;override this.SetParent : obj * obj -&gt; unit" Usage="serviceDescriptionBaseCollection.SetParent (value, parent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionBaseCollection.Table" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Table As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::IDictionary ^ Table { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Collections.IDictionary" Usage="System.Web.Services.Description.ServiceDescriptionBaseCollection.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

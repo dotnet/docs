@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogPermissionEntryCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogPermissionEntryCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogPermissionEntryCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type EventLogPermissionEntryCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.Add(System.Diagnostics.EventLogPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As EventLogPermissionEntry) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Diagnostics::EventLogPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Diagnostics.EventLogPermissionEntry -&gt; int" Usage="eventLogPermissionEntryCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.AddRange(System.Diagnostics.EventLogPermissionEntry[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As EventLogPermissionEntry())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Diagnostics::EventLogPermissionEntry ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Diagnostics.EventLogPermissionEntry[] -&gt; unit" Usage="eventLogPermissionEntryCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.AddRange(System.Diagnostics.EventLogPermissionEntryCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As EventLogPermissionEntryCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Diagnostics::EventLogPermissionEntryCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Diagnostics.EventLogPermissionEntryCollection -&gt; unit" Usage="eventLogPermissionEntryCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.Contains(System.Diagnostics.EventLogPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As EventLogPermissionEntry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Diagnostics::EventLogPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Diagnostics.EventLogPermissionEntry -&gt; bool" Usage="eventLogPermissionEntryCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.CopyTo(System.Diagnostics.EventLogPermissionEntry[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As EventLogPermissionEntry(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Diagnostics::EventLogPermissionEntry ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Diagnostics.EventLogPermissionEntry[] * int -&gt; unit" Usage="eventLogPermissionEntryCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.IndexOf(System.Diagnostics.EventLogPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As EventLogPermissionEntry) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Diagnostics::EventLogPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Diagnostics.EventLogPermissionEntry -&gt; int" Usage="eventLogPermissionEntryCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.Insert(System.Int32,System.Diagnostics.EventLogPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As EventLogPermissionEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Diagnostics::EventLogPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Diagnostics.EventLogPermissionEntry -&gt; unit" Usage="eventLogPermissionEntryCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogPermissionEntryCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As EventLogPermissionEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogPermissionEntry ^ default[int] { System::Diagnostics::EventLogPermissionEntry ^ get(int index); void set(int index, System::Diagnostics::EventLogPermissionEntry ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Diagnostics.EventLogPermissionEntry with get, set" Usage="System.Diagnostics.EventLogPermissionEntryCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
+      <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="eventLogPermissionEntryCollection.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="eventLogPermissionEntryCollection.OnInsert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="eventLogPermissionEntryCollection.OnRemove (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="eventLogPermissionEntryCollection.OnSet (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -383,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntryCollection.Remove(System.Diagnostics.EventLogPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As EventLogPermissionEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Diagnostics::EventLogPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Diagnostics.EventLogPermissionEntry -&gt; unit" Usage="eventLogPermissionEntryCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

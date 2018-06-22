@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendParametersContent" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendParametersContent&#xA;Inherits SendContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendParametersContent sealed : System::ServiceModel::Activities::SendContent" />
+  <TypeSignature Language="F#" Value="type SendParametersContent = class&#xA;    inherit SendContent" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendParametersContent.#ctor(System.Collections.Generic.IDictionary{System.String,System.Activities.InArgument})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As IDictionary(Of String, InArgument))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SendParametersContent(System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::InArgument ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.SendParametersContent : System.Collections.Generic.IDictionary&lt;string, System.Activities.InArgument&gt; -&gt; System.ServiceModel.Activities.SendParametersContent" Usage="new System.ServiceModel.Activities.SendParametersContent parameters" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendParametersContent.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As IDictionary(Of String, InArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::InArgument ^&gt; ^ Parameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::InArgument ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.IDictionary&lt;string, System.Activities.InArgument&gt;" Usage="System.ServiceModel.Activities.SendParametersContent.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

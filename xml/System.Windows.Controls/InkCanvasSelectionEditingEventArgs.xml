@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasSelectionEditingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InkCanvasSelectionEditingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InkCanvasSelectionEditingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type InkCanvasSelectionEditingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.NewRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Property NewRectangle As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect NewRectangle { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
+      <MemberSignature Language="F#" Value="member this.NewRectangle : System.Windows.Rect with get, set" Usage="System.Windows.Controls.InkCanvasSelectionEditingEventArgs.NewRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.OldRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldRectangle As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect OldRectangle { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldRectangle : System.Windows.Rect" Usage="System.Windows.Controls.InkCanvasSelectionEditingEventArgs.OldRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.IDocumentPaginatorSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDocumentPaginatorSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDocumentPaginatorSource" />
+  <TypeSignature Language="F#" Value="type IDocumentPaginatorSource = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentPaginator As DocumentPaginator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::DocumentPaginator ^ DocumentPaginator { System::Windows::Documents::DocumentPaginator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentPaginator : System.Windows.Documents.DocumentPaginator" Usage="System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

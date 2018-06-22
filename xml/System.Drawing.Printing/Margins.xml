@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.Margins" />
   <TypeSignature Language="VB.NET" Value="Public Class Margins&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Margins : ICloneable" />
+  <TypeSignature Language="F#" Value="type Margins = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (left As Integer, right As Integer, top As Integer, bottom As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Margins(int left, int right, int top, int bottom);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.Margins : int * int * int * int -&gt; System.Drawing.Printing.Margins" Usage="new System.Drawing.Printing.Margins (left, right, top, bottom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.Margins.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public Property Bottom As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : int with get, set" Usage="System.Drawing.Printing.Margins.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -177,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="margins.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="margins.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="margins.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.Margins.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="System.Drawing.Printing.Margins.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.op_Equality(System.Drawing.Printing.Margins,System.Drawing.Printing.Margins)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (m1 As Margins, m2 As Margins) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::Printing::Margins ^ m1, System::Drawing::Printing::Margins ^ m2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Drawing.Printing.Margins * System.Drawing.Printing.Margins -&gt; bool" Usage="m1 = m2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -320,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.op_Inequality(System.Drawing.Printing.Margins,System.Drawing.Printing.Margins)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (m1 As Margins, m2 As Margins) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::Printing::Margins ^ m1, System::Drawing::Printing::Margins ^ m2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Drawing.Printing.Margins * System.Drawing.Printing.Margins -&gt; bool" Usage="System.Drawing.Printing.Margins.op_Inequality (m1, m2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -349,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.Margins.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Right : int with get, set" Usage="System.Drawing.Printing.Margins.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -391,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.Margins.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="System.Drawing.Printing.Margins.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -433,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="margins.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

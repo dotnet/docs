@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Input.IPreviewCommand" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPreviewCommand&#xA;Implements ICommand" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPreviewCommand : System::Windows::Input::ICommand" />
+  <TypeSignature Language="F#" Value="type IPreviewCommand = interface&#xA;    interface ICommand" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Input.IPreviewCommand.CancelPreview" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelPreview ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelPreview();" />
+      <MemberSignature Language="F#" Value="abstract member CancelPreview : unit -&gt; unit" Usage="iPreviewCommand.CancelPreview " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Input.IPreviewCommand.Preview(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Preview (parameter As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Preview(System::Object ^ parameter);" />
+      <MemberSignature Language="F#" Value="abstract member Preview : obj -&gt; unit" Usage="iPreviewCommand.Preview parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

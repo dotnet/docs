@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ChartPaintEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChartPaintEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ChartPaintEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.Chart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Chart As Chart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::Chart ^ Chart { System::Windows::Forms::DataVisualization::Charting::Chart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chart : System.Windows.Forms.DataVisualization.Charting.Chart" Usage="System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.Chart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.ChartElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartElement As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartElement { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartElement : obj" Usage="System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.ChartElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartGraphics As ChartGraphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartGraphics ^ ChartGraphics { System::Windows::Forms::DataVisualization::Charting::ChartGraphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartGraphics : System.Windows.Forms.DataVisualization.Charting.ChartGraphics" Usage="System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.Position" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As ElementPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ElementPosition ^ Position { System::Windows::Forms::DataVisualization::Charting::ElementPosition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Windows.Forms.DataVisualization.Charting.ElementPosition" Usage="System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

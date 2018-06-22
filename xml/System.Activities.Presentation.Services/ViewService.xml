@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ViewService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ViewService" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewService abstract" />
+  <TypeSignature Language="F#" Value="type ViewService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.GetModel(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetModel (view As DependencyObject) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ GetModel(System::Windows::DependencyObject ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member GetModel : System.Windows.DependencyObject -&gt; System.Activities.Presentation.Model.ModelItem" Usage="viewService.GetModel view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.GetView(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetView (model As ModelItem) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::DependencyObject ^ GetView(System::Activities::Presentation::Model::ModelItem ^ model);" />
+      <MemberSignature Language="F#" Value="abstract member GetView : System.Activities.Presentation.Model.ModelItem -&gt; System.Windows.DependencyObject" Usage="viewService.GetView model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

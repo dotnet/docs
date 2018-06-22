@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IEnumString" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumString" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEnumString" />
+  <TypeSignature Language="F#" Value="type IEnumString = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumString.Clone(System.Runtime.InteropServices.ComTypes.IEnumString@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As IEnumString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumString ^ % ppenum);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumString.Clone ppenum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumString.Next(System.Int32,System.String[],System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgelt As String(), pceltFetched As IntPtr) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, cli::array &lt;System::String ^&gt; ^ rgelt, IntPtr pceltFetched);" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * string[] * nativeint -&gt; int" Usage="iEnumString.Next (celt, rgelt, pceltFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumString.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iEnumString.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumString.Skip(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; int" Usage="iEnumString.Skip celt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

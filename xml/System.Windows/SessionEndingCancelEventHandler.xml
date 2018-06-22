@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SessionEndingCancelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SessionEndingCancelEventHandler(sender As Object, e As SessionEndingCancelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SessionEndingCancelEventHandler(System::Object ^ sender, SessionEndingCancelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SessionEndingCancelEventHandler = delegate of obj * SessionEndingCancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

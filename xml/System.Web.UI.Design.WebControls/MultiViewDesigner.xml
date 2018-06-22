@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MultiViewDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class MultiViewDesigner&#xA;Inherits ContainerControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class MultiViewDesigner : System::Web::UI::Design::ContainerControlDesigner" />
+  <TypeSignature Language="F#" Value="type MultiViewDesigner = class&#xA;    inherit ContainerControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.MultiViewDesigner.NoWrap" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property NoWrap As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool NoWrap { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.NoWrap : bool" Usage="System.Web.UI.Design.WebControls.MultiViewDesigner.NoWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

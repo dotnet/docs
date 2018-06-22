@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyContentType" />
   <TypeSignature Language="VB.NET" Value="Public Enum AssemblyContentType" />
   <TypeSignature Language="C++ CLI" Value="public enum class AssemblyContentType" />
+  <TypeSignature Language="F#" Value="type AssemblyContentType = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyContentType.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Reflection.AssemblyContentType.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyContentType.WindowsRuntime" />
       <MemberSignature Language="VB.NET" Value="WindowsRuntime" />
       <MemberSignature Language="C++ CLI" Value="WindowsRuntime" />
+      <MemberSignature Language="F#" Value="WindowsRuntime = 1" Usage="System.Reflection.AssemblyContentType.WindowsRuntime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

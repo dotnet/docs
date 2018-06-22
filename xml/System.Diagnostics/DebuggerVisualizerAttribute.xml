@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggerVisualizerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggerVisualizerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DebuggerVisualizerAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DebuggerVisualizerAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerVisualizerAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visualizerTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerVisualizerAttribute(System::String ^ visualizerTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerVisualizerAttribute : string -&gt; System.Diagnostics.DebuggerVisualizerAttribute" Usage="new System.Diagnostics.DebuggerVisualizerAttribute visualizerTypeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerVisualizerAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visualizer As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerVisualizerAttribute(Type ^ visualizer);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerVisualizerAttribute : Type -&gt; System.Diagnostics.DebuggerVisualizerAttribute" Usage="new System.Diagnostics.DebuggerVisualizerAttribute visualizer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerVisualizerAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visualizerTypeName As String, visualizerObjectSourceTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerVisualizerAttribute(System::String ^ visualizerTypeName, System::String ^ visualizerObjectSourceTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerVisualizerAttribute : string * string -&gt; System.Diagnostics.DebuggerVisualizerAttribute" Usage="new System.Diagnostics.DebuggerVisualizerAttribute (visualizerTypeName, visualizerObjectSourceTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerVisualizerAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visualizerTypeName As String, visualizerObjectSource As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerVisualizerAttribute(System::String ^ visualizerTypeName, Type ^ visualizerObjectSource);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerVisualizerAttribute : string * Type -&gt; System.Diagnostics.DebuggerVisualizerAttribute" Usage="new System.Diagnostics.DebuggerVisualizerAttribute (visualizerTypeName, visualizerObjectSource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerVisualizerAttribute.#ctor(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visualizer As Type, visualizerObjectSourceTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerVisualizerAttribute(Type ^ visualizer, System::String ^ visualizerObjectSourceTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerVisualizerAttribute : Type * string -&gt; System.Diagnostics.DebuggerVisualizerAttribute" Usage="new System.Diagnostics.DebuggerVisualizerAttribute (visualizer, visualizerObjectSourceTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerVisualizerAttribute.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visualizer As Type, visualizerObjectSource As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerVisualizerAttribute(Type ^ visualizer, Type ^ visualizerObjectSource);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerVisualizerAttribute : Type * Type -&gt; System.Diagnostics.DebuggerVisualizerAttribute" Usage="new System.Diagnostics.DebuggerVisualizerAttribute (visualizer, visualizerObjectSource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -299,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerVisualizerAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Diagnostics.DebuggerVisualizerAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -329,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerVisualizerAttribute.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Target { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : Type with get, set" Usage="System.Diagnostics.DebuggerVisualizerAttribute.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -360,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerVisualizerAttribute.TargetTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetTypeName : string with get, set" Usage="System.Diagnostics.DebuggerVisualizerAttribute.TargetTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -397,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerVisualizerAttribute.VisualizerObjectSourceTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisualizerObjectSourceTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VisualizerObjectSourceTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualizerObjectSourceTypeName : string" Usage="System.Diagnostics.DebuggerVisualizerAttribute.VisualizerObjectSourceTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -436,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerVisualizerAttribute.VisualizerTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisualizerTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VisualizerTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualizerTypeName : string" Usage="System.Diagnostics.DebuggerVisualizerAttribute.VisualizerTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

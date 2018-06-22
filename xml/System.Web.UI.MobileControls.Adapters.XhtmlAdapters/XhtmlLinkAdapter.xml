@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLinkAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class XhtmlLinkAdapter&#xA;Inherits XhtmlControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XhtmlLinkAdapter : System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type XhtmlLinkAdapter = class&#xA;    inherit XhtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLinkAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As Link" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Link ^ Control { System::Web::UI::MobileControls::Link ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.Link" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLinkAdapter.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLinkAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlLinkAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

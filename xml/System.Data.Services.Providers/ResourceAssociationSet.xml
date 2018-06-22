@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceAssociationSet" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourceAssociationSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceAssociationSet sealed" />
+  <TypeSignature Language="F#" Value="type ResourceAssociationSet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceAssociationSet.#ctor(System.String,System.Data.Services.Providers.ResourceAssociationSetEnd,System.Data.Services.Providers.ResourceAssociationSetEnd)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, end1 As ResourceAssociationSetEnd, end2 As ResourceAssociationSetEnd)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceAssociationSet(System::String ^ name, System::Data::Services::Providers::ResourceAssociationSetEnd ^ end1, System::Data::Services::Providers::ResourceAssociationSetEnd ^ end2);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Providers.ResourceAssociationSet : string * System.Data.Services.Providers.ResourceAssociationSetEnd * System.Data.Services.Providers.ResourceAssociationSetEnd -&gt; System.Data.Services.Providers.ResourceAssociationSet" Usage="new System.Data.Services.Providers.ResourceAssociationSet (name, end1, end2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSet.End1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End1 As ResourceAssociationSetEnd" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourceAssociationSetEnd ^ End1 { System::Data::Services::Providers::ResourceAssociationSetEnd ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.End1 : System.Data.Services.Providers.ResourceAssociationSetEnd" Usage="System.Data.Services.Providers.ResourceAssociationSet.End1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSet.End2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End2 As ResourceAssociationSetEnd" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourceAssociationSetEnd ^ End2 { System::Data::Services::Providers::ResourceAssociationSetEnd ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.End2 : System.Data.Services.Providers.ResourceAssociationSetEnd" Usage="System.Data.Services.Providers.ResourceAssociationSet.End2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSet.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Services.Providers.ResourceAssociationSet.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

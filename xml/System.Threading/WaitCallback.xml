@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.WaitCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WaitCallback(state As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WaitCallback(System::Object ^ state);" />
+  <TypeSignature Language="F#" Value="type WaitCallback = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.ThreadPool</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

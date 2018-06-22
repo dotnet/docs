@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum TreeViewAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class TreeViewAction" />
+  <TypeSignature Language="F#" Value="type TreeViewAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.ByKeyboard" />
       <MemberSignature Language="VB.NET" Value="ByKeyboard" />
       <MemberSignature Language="C++ CLI" Value="ByKeyboard" />
+      <MemberSignature Language="F#" Value="ByKeyboard = 1" Usage="System.Windows.Forms.TreeViewAction.ByKeyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.ByMouse" />
       <MemberSignature Language="VB.NET" Value="ByMouse" />
       <MemberSignature Language="C++ CLI" Value="ByMouse" />
+      <MemberSignature Language="F#" Value="ByMouse = 2" Usage="System.Windows.Forms.TreeViewAction.ByMouse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Collapse" />
       <MemberSignature Language="VB.NET" Value="Collapse" />
       <MemberSignature Language="C++ CLI" Value="Collapse" />
+      <MemberSignature Language="F#" Value="Collapse = 3" Usage="System.Windows.Forms.TreeViewAction.Collapse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Expand" />
       <MemberSignature Language="VB.NET" Value="Expand" />
       <MemberSignature Language="C++ CLI" Value="Expand" />
+      <MemberSignature Language="F#" Value="Expand = 4" Usage="System.Windows.Forms.TreeViewAction.Expand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Windows.Forms.TreeViewAction.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

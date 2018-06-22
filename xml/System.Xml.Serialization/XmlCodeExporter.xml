@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlCodeExporter" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlCodeExporter&#xA;Inherits CodeExporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlCodeExporter : System::Xml::Serialization::CodeExporter" />
+  <TypeSignature Language="F#" Value="type XmlCodeExporter = class&#xA;    inherit CodeExporter" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeNamespace codeNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.#ctor(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlCodeExporter(System::CodeDom::CodeNamespace ^ codeNamespace);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlCodeExporter : System.CodeDom.CodeNamespace -&gt; System.Xml.Serialization.XmlCodeExporter" Usage="new System.Xml.Serialization.XmlCodeExporter codeNamespace" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeNamespace codeNamespace, class System.CodeDom.CodeCompileUnit codeCompileUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.#ctor(System.CodeDom.CodeNamespace,System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlCodeExporter(System::CodeDom::CodeNamespace ^ codeNamespace, System::CodeDom::CodeCompileUnit ^ codeCompileUnit);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlCodeExporter : System.CodeDom.CodeNamespace * System.CodeDom.CodeCompileUnit -&gt; System.Xml.Serialization.XmlCodeExporter" Usage="new System.Xml.Serialization.XmlCodeExporter (codeNamespace, codeCompileUnit)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeNamespace codeNamespace, class System.CodeDom.CodeCompileUnit codeCompileUnit, valuetype System.Xml.Serialization.CodeGenerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.#ctor(System.CodeDom.CodeNamespace,System.CodeDom.CodeCompileUnit,System.Xml.Serialization.CodeGenerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlCodeExporter(System::CodeDom::CodeNamespace ^ codeNamespace, System::CodeDom::CodeCompileUnit ^ codeCompileUnit, System::Xml::Serialization::CodeGenerationOptions options);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlCodeExporter : System.CodeDom.CodeNamespace * System.CodeDom.CodeCompileUnit * System.Xml.Serialization.CodeGenerationOptions -&gt; System.Xml.Serialization.XmlCodeExporter" Usage="new System.Xml.Serialization.XmlCodeExporter (codeNamespace, codeCompileUnit, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeNamespace codeNamespace, class System.CodeDom.CodeCompileUnit codeCompileUnit, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.Collections.Hashtable mappings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.#ctor(System.CodeDom.CodeNamespace,System.CodeDom.CodeCompileUnit,System.Xml.Serialization.CodeGenerationOptions,System.Collections.Hashtable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlCodeExporter(System::CodeDom::CodeNamespace ^ codeNamespace, System::CodeDom::CodeCompileUnit ^ codeCompileUnit, System::Xml::Serialization::CodeGenerationOptions options, System::Collections::Hashtable ^ mappings);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlCodeExporter : System.CodeDom.CodeNamespace * System.CodeDom.CodeCompileUnit * System.Xml.Serialization.CodeGenerationOptions * System.Collections.Hashtable -&gt; System.Xml.Serialization.XmlCodeExporter" Usage="new System.Xml.Serialization.XmlCodeExporter (codeNamespace, codeCompileUnit, options, mappings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeNamespace codeNamespace, class System.CodeDom.CodeCompileUnit codeCompileUnit, class System.CodeDom.Compiler.CodeDomProvider codeProvider, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.Collections.Hashtable mappings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.#ctor(System.CodeDom.CodeNamespace,System.CodeDom.CodeCompileUnit,System.CodeDom.Compiler.CodeDomProvider,System.Xml.Serialization.CodeGenerationOptions,System.Collections.Hashtable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlCodeExporter(System::CodeDom::CodeNamespace ^ codeNamespace, System::CodeDom::CodeCompileUnit ^ codeCompileUnit, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, System::Xml::Serialization::CodeGenerationOptions options, System::Collections::Hashtable ^ mappings);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlCodeExporter : System.CodeDom.CodeNamespace * System.CodeDom.CodeCompileUnit * System.CodeDom.Compiler.CodeDomProvider * System.Xml.Serialization.CodeGenerationOptions * System.Collections.Hashtable -&gt; System.Xml.Serialization.XmlCodeExporter" Usage="new System.Xml.Serialization.XmlCodeExporter (codeNamespace, codeCompileUnit, codeProvider, options, mappings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.AddMappingMetadata(System.CodeDom.CodeAttributeDeclarationCollection,System.Xml.Serialization.XmlMemberMapping,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddMappingMetadata (metadata As CodeAttributeDeclarationCollection, member As XmlMemberMapping, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMappingMetadata(System::CodeDom::CodeAttributeDeclarationCollection ^ metadata, System::Xml::Serialization::XmlMemberMapping ^ member, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.AddMappingMetadata : System.CodeDom.CodeAttributeDeclarationCollection * System.Xml.Serialization.XmlMemberMapping * string -&gt; unit" Usage="xmlCodeExporter.AddMappingMetadata (metadata, member, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.AddMappingMetadata(System.CodeDom.CodeAttributeDeclarationCollection,System.Xml.Serialization.XmlTypeMapping,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddMappingMetadata (metadata As CodeAttributeDeclarationCollection, mapping As XmlTypeMapping, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMappingMetadata(System::CodeDom::CodeAttributeDeclarationCollection ^ metadata, System::Xml::Serialization::XmlTypeMapping ^ mapping, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.AddMappingMetadata : System.CodeDom.CodeAttributeDeclarationCollection * System.Xml.Serialization.XmlTypeMapping * string -&gt; unit" Usage="xmlCodeExporter.AddMappingMetadata (metadata, mapping, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -272,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.AddMappingMetadata(System.CodeDom.CodeAttributeDeclarationCollection,System.Xml.Serialization.XmlMemberMapping,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddMappingMetadata (metadata As CodeAttributeDeclarationCollection, member As XmlMemberMapping, ns As String, forceUseMemberName As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMappingMetadata(System::CodeDom::CodeAttributeDeclarationCollection ^ metadata, System::Xml::Serialization::XmlMemberMapping ^ member, System::String ^ ns, bool forceUseMemberName);" />
+      <MemberSignature Language="F#" Value="member this.AddMappingMetadata : System.CodeDom.CodeAttributeDeclarationCollection * System.Xml.Serialization.XmlMemberMapping * string * bool -&gt; unit" Usage="xmlCodeExporter.AddMappingMetadata (metadata, member, ns, forceUseMemberName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -308,6 +317,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportMembersMapping(class System.Xml.Serialization.XmlMembersMapping xmlMembersMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.ExportMembersMapping(System.Xml.Serialization.XmlMembersMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportMembersMapping(System::Xml::Serialization::XmlMembersMapping ^ xmlMembersMapping);" />
+      <MemberSignature Language="F#" Value="member this.ExportMembersMapping : System.Xml.Serialization.XmlMembersMapping -&gt; unit" Usage="xmlCodeExporter.ExportMembersMapping xmlMembersMapping" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -338,6 +348,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportTypeMapping(class System.Xml.Serialization.XmlTypeMapping xmlTypeMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlCodeExporter.ExportTypeMapping(System.Xml.Serialization.XmlTypeMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportTypeMapping(System::Xml::Serialization::XmlTypeMapping ^ xmlTypeMapping);" />
+      <MemberSignature Language="F#" Value="member this.ExportTypeMapping : System.Xml.Serialization.XmlTypeMapping -&gt; unit" Usage="xmlCodeExporter.ExportTypeMapping xmlTypeMapping" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.LockCookie" />
   <TypeSignature Language="VB.NET" Value="Public Structure LockCookie" />
   <TypeSignature Language="C++ CLI" Value="public value class LockCookie" />
+  <TypeSignature Language="F#" Value="type LockCookie = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.LockCookie.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="lockCookie.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.LockCookie.Equals(System.Threading.LockCookie)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As LockCookie) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Threading::LockCookie obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Threading.LockCookie -&gt; bool" Usage="lockCookie.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.LockCookie.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="lockCookie.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.LockCookie.op_Equality(System.Threading.LockCookie,System.Threading.LockCookie)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As LockCookie, b As LockCookie) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Threading::LockCookie a, System::Threading::LockCookie b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Threading.LockCookie * System.Threading.LockCookie -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.LockCookie.op_Inequality(System.Threading.LockCookie,System.Threading.LockCookie)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As LockCookie, b As LockCookie) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Threading::LockCookie a, System::Threading::LockCookie b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Threading.LockCookie * System.Threading.LockCookie -&gt; bool" Usage="System.Threading.LockCookie.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

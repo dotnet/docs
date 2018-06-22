@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class FileAccess" />
+  <TypeSignature Language="F#" Value="type FileAccess = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAccess.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.IO.FileAccess.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAccess.ReadWrite" />
       <MemberSignature Language="VB.NET" Value="ReadWrite" />
       <MemberSignature Language="C++ CLI" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 3" Usage="System.IO.FileAccess.ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAccess.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.IO.FileAccess.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>

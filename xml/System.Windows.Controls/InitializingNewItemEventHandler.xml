@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InitializingNewItemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InitializingNewItemEventHandler(sender As Object, e As InitializingNewItemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InitializingNewItemEventHandler(System::Object ^ sender, InitializingNewItemEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InitializingNewItemEventHandler = delegate of obj * InitializingNewItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

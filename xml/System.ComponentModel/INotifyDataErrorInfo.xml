@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.INotifyDataErrorInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface INotifyDataErrorInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class INotifyDataErrorInfo" />
+  <TypeSignature Language="F#" Value="type INotifyDataErrorInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" />
       <MemberSignature Language="VB.NET" Value="Event ErrorsChanged As EventHandler(Of DataErrorsChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::DataErrorsChangedEventArgs ^&gt; ^ ErrorsChanged;" />
+      <MemberSignature Language="F#" Value="member this.ErrorsChanged : EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt; " Usage="member this.ErrorsChanged : System.EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.INotifyDataErrorInfo.GetErrors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetErrors (propertyName As String) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetErrors(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetErrors : string -&gt; System.Collections.IEnumerable" Usage="iNotifyDataErrorInfo.GetErrors propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.INotifyDataErrorInfo.HasErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasErrors : bool" Usage="System.ComponentModel.INotifyDataErrorInfo.HasErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

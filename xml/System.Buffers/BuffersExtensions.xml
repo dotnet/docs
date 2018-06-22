@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.BuffersExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module BuffersExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuffersExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type BuffersExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo(Of T) (ByRef source As ReadOnlySequence(Of T), destination As Span(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(System::Buffers::ReadOnlySequence&lt;T&gt; % source, Span&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="static member CopyTo :  * Span&lt;'T&gt; -&gt; unit" Usage="System.Buffers.BuffersExtensions.CopyTo (source, destination)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0}@,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function PositionOf(Of T As IEquatable(Of T)) (ByRef source As ReadOnlySequence(Of T), value As T) As Nullable(Of SequencePosition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;SequencePosition&gt; PositionOf(System::Buffers::ReadOnlySequence&lt;T&gt; % source, T value);" />
+      <MemberSignature Language="F#" Value="static member PositionOf :  * 'T -&gt; Nullable&lt;SequencePosition&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.Buffers.BuffersExtensions.PositionOf (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToArray(Of T) (ByRef sequence As ReadOnlySequence(Of T)) As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;T&gt; ^ ToArray(System::Buffers::ReadOnlySequence&lt;T&gt; % sequence);" />
+      <MemberSignature Language="F#" Value="static member ToArray :  -&gt; 'T[]" Usage="System.Buffers.BuffersExtensions.ToArray sequence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.BuffersExtensions.Write``1(System.Buffers.IBufferWriter{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write(Of T) (writer As IBufferWriter(Of T), value As ReadOnlySpan(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Write(System::Buffers::IBufferWriter&lt;T&gt; ^ writer, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member Write : System.Buffers.IBufferWriter&lt;'T&gt; * ReadOnlySpan&lt;'T&gt; -&gt; unit" Usage="System.Buffers.BuffersExtensions.Write (writer, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

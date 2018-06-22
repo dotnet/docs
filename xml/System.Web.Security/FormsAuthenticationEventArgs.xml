@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsAuthenticationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormsAuthenticationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormsAuthenticationEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type FormsAuthenticationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthenticationEventArgs.#ctor(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormsAuthenticationEventArgs(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.FormsAuthenticationEventArgs : System.Web.HttpContext -&gt; System.Web.Security.FormsAuthenticationEventArgs" Usage="new System.Web.Security.FormsAuthenticationEventArgs context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthenticationEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Security.FormsAuthenticationEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthenticationEventArgs.User" />
       <MemberSignature Language="VB.NET" Value="Public Property User As IPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal with get, set" Usage="System.Web.Security.FormsAuthenticationEventArgs.User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

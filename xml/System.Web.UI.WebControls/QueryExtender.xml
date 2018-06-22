@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryExtender" />
   <TypeSignature Language="VB.NET" Value="Public Class QueryExtender&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryExtender : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type QueryExtender = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -218,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryExtender.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataSource As IQueryableDataSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::IQueryableDataSource ^ DataSource { System::Web::UI::WebControls::IQueryableDataSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : System.Web.UI.WebControls.IQueryableDataSource" Usage="System.Web.UI.WebControls.QueryExtender.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -254,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryExtender.Expressions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expressions As DataSourceExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Expressions::DataSourceExpressionCollection ^ Expressions { System::Web::UI::WebControls::Expressions::DataSourceExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expressions : System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" Usage="System.Web.UI.WebControls.QueryExtender.Expressions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -282,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryExtender.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="queryExtender.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -305,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryExtender.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="queryExtender.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -328,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryExtender.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="queryExtender.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -349,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryExtender.TargetControlID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TargetControlID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TargetControlID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetControlID : string with get, set" Usage="System.Web.UI.WebControls.QueryExtender.TargetControlID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -380,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryExtender.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="queryExtender.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

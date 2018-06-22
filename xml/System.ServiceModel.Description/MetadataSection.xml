@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataSection" />
   <TypeSignature Language="VB.NET" Value="Public Class MetadataSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataSection" />
+  <TypeSignature Language="F#" Value="type MetadataSection = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSection.#ctor(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dialect As String, identifier As String, metadata As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataSection(System::String ^ dialect, System::String ^ identifier, System::Object ^ metadata);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.MetadataSection : string * string * obj -&gt; System.ServiceModel.Description.MetadataSection" Usage="new System.ServiceModel.Description.MetadataSection (dialect, identifier, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSection.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As Collection(Of XmlAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::XmlAttribute ^&gt; ^ Attributes { System::Collections::ObjectModel::Collection&lt;System::Xml::XmlAttribute ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.ObjectModel.Collection&lt;System.Xml.XmlAttribute&gt;" Usage="System.ServiceModel.Description.MetadataSection.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSection.CreateFromPolicy(System.Xml.XmlElement,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromPolicy (policy As XmlElement, identifier As String) As MetadataSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::MetadataSection ^ CreateFromPolicy(System::Xml::XmlElement ^ policy, System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="static member CreateFromPolicy : System.Xml.XmlElement * string -&gt; System.ServiceModel.Description.MetadataSection" Usage="System.ServiceModel.Description.MetadataSection.CreateFromPolicy (policy, identifier)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSection.CreateFromSchema(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromSchema (schema As XmlSchema) As MetadataSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::MetadataSection ^ CreateFromSchema(System::Xml::Schema::XmlSchema ^ schema);" />
+      <MemberSignature Language="F#" Value="static member CreateFromSchema : System.Xml.Schema.XmlSchema -&gt; System.ServiceModel.Description.MetadataSection" Usage="System.ServiceModel.Description.MetadataSection.CreateFromSchema schema" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.MetadataSection CreateFromServiceDescription(class System.Web.Services.Description.ServiceDescription serviceDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSection.CreateFromServiceDescription(System.Web.Services.Description.ServiceDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::MetadataSection ^ CreateFromServiceDescription(System::Web::Services::Description::ServiceDescription ^ serviceDescription);" />
+      <MemberSignature Language="F#" Value="static member CreateFromServiceDescription : System.Web.Services.Description.ServiceDescription -&gt; System.ServiceModel.Description.MetadataSection" Usage="System.ServiceModel.Description.MetadataSection.CreateFromServiceDescription serviceDescription" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSection.Dialect" />
       <MemberSignature Language="VB.NET" Value="Public Property Dialect As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Dialect { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Dialect : string with get, set" Usage="System.ServiceModel.Description.MetadataSection.Dialect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSection.Identifier" />
       <MemberSignature Language="VB.NET" Value="Public Property Identifier As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Identifier { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Identifier : string with get, set" Usage="System.ServiceModel.Description.MetadataSection.Identifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -324,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSection.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Metadata { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : obj with get, set" Usage="System.ServiceModel.Description.MetadataSection.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -379,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSection.MetadataExchangeDialect" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MetadataExchangeDialect As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MetadataExchangeDialect { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataExchangeDialect : string" Usage="System.ServiceModel.Description.MetadataSection.MetadataExchangeDialect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -406,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSection.PolicyDialect" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PolicyDialect As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PolicyDialect { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PolicyDialect : string" Usage="System.ServiceModel.Description.MetadataSection.PolicyDialect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -433,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSection.ServiceDescriptionDialect" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ServiceDescriptionDialect As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ServiceDescriptionDialect { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceDescriptionDialect : string" Usage="System.ServiceModel.Description.MetadataSection.ServiceDescriptionDialect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -460,6 +472,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSection.XmlSchemaDialect" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XmlSchemaDialect As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XmlSchemaDialect { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSchemaDialect : string" Usage="System.ServiceModel.Description.MetadataSection.XmlSchemaDialect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

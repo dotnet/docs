@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Numerics.Matrix4x4" />
   <TypeSignature Language="VB.NET" Value="Public Structure Matrix4x4&#xA;Implements IEquatable(Of Matrix4x4)" />
   <TypeSignature Language="C++ CLI" Value="public value class Matrix4x4 : IEquatable&lt;System::Numerics::Matrix4x4&gt;" />
+  <TypeSignature Language="F#" Value="type Matrix4x4 = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Numerics.Vectors</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.#ctor(System.Numerics.Matrix3x2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Matrix3x2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Matrix4x4(System::Numerics::Matrix3x2 value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Matrix4x4 : System.Numerics.Matrix3x2 -&gt; System.Numerics.Matrix4x4" Usage="new System.Numerics.Matrix4x4 value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m11 As Single, m12 As Single, m13 As Single, m14 As Single, m21 As Single, m22 As Single, m23 As Single, m24 As Single, m31 As Single, m32 As Single, m33 As Single, m34 As Single, m41 As Single, m42 As Single, m43 As Single, m44 As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Matrix4x4(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Matrix4x4 : single * single * single * single * single * single * single * single * single * single * single * single * single * single * single * single -&gt; System.Numerics.Matrix4x4" Usage="new System.Numerics.Matrix4x4 (m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Add(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (value1 As Matrix4x4, value2 As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 Add(System::Numerics::Matrix4x4 value1, System::Numerics::Matrix4x4 value2);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Add (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBillboard (objectPosition As Vector3, cameraPosition As Vector3, cameraUpVector As Vector3, cameraForwardVector As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateBillboard(System::Numerics::Vector3 objectPosition, System::Numerics::Vector3 cameraPosition, System::Numerics::Vector3 cameraUpVector, System::Numerics::Vector3 cameraForwardVector);" />
+      <MemberSignature Language="F#" Value="static member CreateBillboard : System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateBillboard (objectPosition, cameraPosition, cameraUpVector, cameraForwardVector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateConstrainedBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateConstrainedBillboard (objectPosition As Vector3, cameraPosition As Vector3, rotateAxis As Vector3, cameraForwardVector As Vector3, objectForwardVector As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateConstrainedBillboard(System::Numerics::Vector3 objectPosition, System::Numerics::Vector3 cameraPosition, System::Numerics::Vector3 rotateAxis, System::Numerics::Vector3 cameraForwardVector, System::Numerics::Vector3 objectForwardVector);" />
+      <MemberSignature Language="F#" Value="static member CreateConstrainedBillboard : System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateConstrainedBillboard (objectPosition, cameraPosition, rotateAxis, cameraForwardVector, objectForwardVector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateFromAxisAngle(System.Numerics.Vector3,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromAxisAngle (axis As Vector3, angle As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateFromAxisAngle(System::Numerics::Vector3 axis, float angle);" />
+      <MemberSignature Language="F#" Value="static member CreateFromAxisAngle : System.Numerics.Vector3 * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateFromAxisAngle (axis, angle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -320,6 +327,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateFromQuaternion(valuetype System.Numerics.Quaternion quaternion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateFromQuaternion(System.Numerics.Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateFromQuaternion(System::Numerics::Quaternion quaternion);" />
+      <MemberSignature Language="F#" Value="static member CreateFromQuaternion : System.Numerics.Quaternion -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateFromQuaternion quaternion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -356,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromYawPitchRoll (yaw As Single, pitch As Single, roll As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateFromYawPitchRoll(float yaw, float pitch, float roll);" />
+      <MemberSignature Language="F#" Value="static member CreateFromYawPitchRoll : single * single * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateFromYawPitchRoll (yaw, pitch, roll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -396,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateLookAt(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateLookAt (cameraPosition As Vector3, cameraTarget As Vector3, cameraUpVector As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateLookAt(System::Numerics::Vector3 cameraPosition, System::Numerics::Vector3 cameraTarget, System::Numerics::Vector3 cameraUpVector);" />
+      <MemberSignature Language="F#" Value="static member CreateLookAt : System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateLookAt (cameraPosition, cameraTarget, cameraUpVector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -436,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateOrthographic(System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOrthographic (width As Single, height As Single, zNearPlane As Single, zFarPlane As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateOrthographic(float width, float height, float zNearPlane, float zFarPlane);" />
+      <MemberSignature Language="F#" Value="static member CreateOrthographic : single * single * single * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateOrthographic (width, height, zNearPlane, zFarPlane)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -478,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateOrthographicOffCenter(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOrthographicOffCenter (left As Single, right As Single, bottom As Single, top As Single, zNearPlane As Single, zFarPlane As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateOrthographicOffCenter(float left, float right, float bottom, float top, float zNearPlane, float zFarPlane);" />
+      <MemberSignature Language="F#" Value="static member CreateOrthographicOffCenter : single * single * single * single * single * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateOrthographicOffCenter (left, right, bottom, top, zNearPlane, zFarPlane)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -524,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreatePerspective(System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePerspective (width As Single, height As Single, nearPlaneDistance As Single, farPlaneDistance As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreatePerspective(float width, float height, float nearPlaneDistance, float farPlaneDistance);" />
+      <MemberSignature Language="F#" Value="static member CreatePerspective : single * single * single * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreatePerspective (width, height, nearPlaneDistance, farPlaneDistance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -576,6 +589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreatePerspectiveFieldOfView(System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePerspectiveFieldOfView (fieldOfView As Single, aspectRatio As Single, nearPlaneDistance As Single, farPlaneDistance As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreatePerspectiveFieldOfView(float fieldOfView, float aspectRatio, float nearPlaneDistance, float farPlaneDistance);" />
+      <MemberSignature Language="F#" Value="static member CreatePerspectiveFieldOfView : single * single * single * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreatePerspectiveFieldOfView (fieldOfView, aspectRatio, nearPlaneDistance, farPlaneDistance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -634,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreatePerspectiveOffCenter(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePerspectiveOffCenter (left As Single, right As Single, bottom As Single, top As Single, nearPlaneDistance As Single, farPlaneDistance As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreatePerspectiveOffCenter(float left, float right, float bottom, float top, float nearPlaneDistance, float farPlaneDistance);" />
+      <MemberSignature Language="F#" Value="static member CreatePerspectiveOffCenter : single * single * single * single * single * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreatePerspectiveOffCenter (left, right, bottom, top, nearPlaneDistance, farPlaneDistance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -690,6 +705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateReflection(System.Numerics.Plane)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReflection (value As Plane) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateReflection(System::Numerics::Plane value);" />
+      <MemberSignature Language="F#" Value="static member CreateReflection : System.Numerics.Plane -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateReflection value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -737,6 +753,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationX(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRotationX (radians As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateRotationX(float radians);" />
+      <MemberSignature Language="F#" Value="static member CreateRotationX : single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateRotationX radians" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -773,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationX(System.Single,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRotationX (radians As Single, centerPoint As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateRotationX(float radians, System::Numerics::Vector3 centerPoint);" />
+      <MemberSignature Language="F#" Value="static member CreateRotationX : single * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateRotationX (radians, centerPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -822,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationY(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRotationY (radians As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateRotationY(float radians);" />
+      <MemberSignature Language="F#" Value="static member CreateRotationY : single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateRotationY radians" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -858,6 +877,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationY(System.Single,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRotationY (radians As Single, centerPoint As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateRotationY(float radians, System::Numerics::Vector3 centerPoint);" />
+      <MemberSignature Language="F#" Value="static member CreateRotationY : single * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateRotationY (radians, centerPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -907,6 +927,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationZ(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRotationZ (radians As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateRotationZ(float radians);" />
+      <MemberSignature Language="F#" Value="static member CreateRotationZ : single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateRotationZ radians" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -943,6 +964,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationZ(System.Single,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRotationZ (radians As Single, centerPoint As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateRotationZ(float radians, System::Numerics::Vector3 centerPoint);" />
+      <MemberSignature Language="F#" Value="static member CreateRotationZ : single * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateRotationZ (radians, centerPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -992,6 +1014,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (scales As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateScale(System::Numerics::Vector3 scales);" />
+      <MemberSignature Language="F#" Value="static member CreateScale : System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateScale scales" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1028,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (scale As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateScale(float scale);" />
+      <MemberSignature Language="F#" Value="static member CreateScale : single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateScale scale" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1064,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (scales As Vector3, centerPoint As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateScale(System::Numerics::Vector3 scales, System::Numerics::Vector3 centerPoint);" />
+      <MemberSignature Language="F#" Value="static member CreateScale : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateScale (scales, centerPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1102,6 +1127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (scale As Single, centerPoint As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateScale(float scale, System::Numerics::Vector3 centerPoint);" />
+      <MemberSignature Language="F#" Value="static member CreateScale : single * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateScale (scale, centerPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1140,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (xScale As Single, yScale As Single, zScale As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateScale(float xScale, float yScale, float zScale);" />
+      <MemberSignature Language="F#" Value="static member CreateScale : single * single * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateScale (xScale, yScale, zScale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1180,6 +1207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Single,System.Single,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (xScale As Single, yScale As Single, zScale As Single, centerPoint As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateScale(float xScale, float yScale, float zScale, System::Numerics::Vector3 centerPoint);" />
+      <MemberSignature Language="F#" Value="static member CreateScale : single * single * single * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateScale (xScale, yScale, zScale, centerPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1221,6 +1249,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateShadow(valuetype System.Numerics.Vector3 lightDirection, valuetype System.Numerics.Plane plane) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateShadow(System.Numerics.Vector3,System.Numerics.Plane)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateShadow(System::Numerics::Vector3 lightDirection, System::Numerics::Plane plane);" />
+      <MemberSignature Language="F#" Value="static member CreateShadow : System.Numerics.Vector3 * System.Numerics.Plane -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateShadow (lightDirection, plane)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1270,6 +1299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateTranslation(System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTranslation (position As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateTranslation(System::Numerics::Vector3 position);" />
+      <MemberSignature Language="F#" Value="static member CreateTranslation : System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateTranslation position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1306,6 +1336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateTranslation(System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTranslation (xPosition As Single, yPosition As Single, zPosition As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateTranslation(float xPosition, float yPosition, float zPosition);" />
+      <MemberSignature Language="F#" Value="static member CreateTranslation : single * single * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateTranslation (xPosition, yPosition, zPosition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1346,6 +1377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateWorld(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWorld (position As Vector3, forward As Vector3, up As Vector3) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 CreateWorld(System::Numerics::Vector3 position, System::Numerics::Vector3 forward, System::Numerics::Vector3 up);" />
+      <MemberSignature Language="F#" Value="static member CreateWorld : System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.CreateWorld (position, forward, up)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1393,6 +1425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Decompose(System.Numerics.Matrix4x4,System.Numerics.Vector3@,System.Numerics.Quaternion@,System.Numerics.Vector3@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decompose (matrix As Matrix4x4, ByRef scale As Vector3, ByRef rotation As Quaternion, ByRef translation As Vector3) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Decompose(System::Numerics::Matrix4x4 matrix, [Runtime::InteropServices::Out] System::Numerics::Vector3 % scale, [Runtime::InteropServices::Out] System::Numerics::Quaternion % rotation, [Runtime::InteropServices::Out] System::Numerics::Vector3 % translation);" />
+      <MemberSignature Language="F#" Value="static member Decompose : System.Numerics.Matrix4x4 *  *  *  -&gt; bool" Usage="System.Numerics.Matrix4x4.Decompose (matrix, scale, rotation, translation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1452,6 +1485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Equals(System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Matrix4x4) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Numerics::Matrix4x4 other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Numerics.Matrix4x4 -&gt; bool" Usage="matrix4x4.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -1492,6 +1526,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="matrix4x4.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1536,6 +1571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.GetDeterminant" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeterminant () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetDeterminant();" />
+      <MemberSignature Language="F#" Value="member this.GetDeterminant : unit -&gt; single" Usage="matrix4x4.GetDeterminant " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1569,6 +1605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="matrix4x4.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1602,6 +1639,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix4x4.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Matrix4x4 Identity { System::Numerics::Matrix4x4 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1634,6 +1672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Invert(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invert (matrix As Matrix4x4, ByRef result As Matrix4x4) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Invert(System::Numerics::Matrix4x4 matrix, [Runtime::InteropServices::Out] System::Numerics::Matrix4x4 % result);" />
+      <MemberSignature Language="F#" Value="static member Invert : System.Numerics.Matrix4x4 *  -&gt; bool" Usage="System.Numerics.Matrix4x4.Invert (matrix, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1673,6 +1712,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix4x4.IsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIdentity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIdentity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsIdentity : bool" Usage="System.Numerics.Matrix4x4.IsIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1706,6 +1746,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Lerp(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Lerp (matrix1 As Matrix4x4, matrix2 As Matrix4x4, amount As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 Lerp(System::Numerics::Matrix4x4 matrix1, System::Numerics::Matrix4x4 matrix2, float amount);" />
+      <MemberSignature Language="F#" Value="static member Lerp : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Lerp (matrix1, matrix2, amount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1746,6 +1787,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M11" />
       <MemberSignature Language="VB.NET" Value="Public M11 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M11;" />
+      <MemberSignature Language="F#" Value="val mutable M11 : single" Usage="System.Numerics.Matrix4x4.M11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1777,6 +1819,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M12" />
       <MemberSignature Language="VB.NET" Value="Public M12 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M12;" />
+      <MemberSignature Language="F#" Value="val mutable M12 : single" Usage="System.Numerics.Matrix4x4.M12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1808,6 +1851,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M13" />
       <MemberSignature Language="VB.NET" Value="Public M13 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M13;" />
+      <MemberSignature Language="F#" Value="val mutable M13 : single" Usage="System.Numerics.Matrix4x4.M13" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1839,6 +1883,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M14" />
       <MemberSignature Language="VB.NET" Value="Public M14 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M14;" />
+      <MemberSignature Language="F#" Value="val mutable M14 : single" Usage="System.Numerics.Matrix4x4.M14" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1870,6 +1915,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M21" />
       <MemberSignature Language="VB.NET" Value="Public M21 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M21;" />
+      <MemberSignature Language="F#" Value="val mutable M21 : single" Usage="System.Numerics.Matrix4x4.M21" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1901,6 +1947,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M22" />
       <MemberSignature Language="VB.NET" Value="Public M22 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M22;" />
+      <MemberSignature Language="F#" Value="val mutable M22 : single" Usage="System.Numerics.Matrix4x4.M22" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1932,6 +1979,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M23" />
       <MemberSignature Language="VB.NET" Value="Public M23 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M23;" />
+      <MemberSignature Language="F#" Value="val mutable M23 : single" Usage="System.Numerics.Matrix4x4.M23" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1963,6 +2011,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M24" />
       <MemberSignature Language="VB.NET" Value="Public M24 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M24;" />
+      <MemberSignature Language="F#" Value="val mutable M24 : single" Usage="System.Numerics.Matrix4x4.M24" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1994,6 +2043,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M31" />
       <MemberSignature Language="VB.NET" Value="Public M31 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M31;" />
+      <MemberSignature Language="F#" Value="val mutable M31 : single" Usage="System.Numerics.Matrix4x4.M31" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2025,6 +2075,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M32" />
       <MemberSignature Language="VB.NET" Value="Public M32 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M32;" />
+      <MemberSignature Language="F#" Value="val mutable M32 : single" Usage="System.Numerics.Matrix4x4.M32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2056,6 +2107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M33" />
       <MemberSignature Language="VB.NET" Value="Public M33 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M33;" />
+      <MemberSignature Language="F#" Value="val mutable M33 : single" Usage="System.Numerics.Matrix4x4.M33" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2087,6 +2139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M34" />
       <MemberSignature Language="VB.NET" Value="Public M34 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M34;" />
+      <MemberSignature Language="F#" Value="val mutable M34 : single" Usage="System.Numerics.Matrix4x4.M34" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2118,6 +2171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M41" />
       <MemberSignature Language="VB.NET" Value="Public M41 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M41;" />
+      <MemberSignature Language="F#" Value="val mutable M41 : single" Usage="System.Numerics.Matrix4x4.M41" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2149,6 +2203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M42" />
       <MemberSignature Language="VB.NET" Value="Public M42 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M42;" />
+      <MemberSignature Language="F#" Value="val mutable M42 : single" Usage="System.Numerics.Matrix4x4.M42" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2180,6 +2235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M43" />
       <MemberSignature Language="VB.NET" Value="Public M43 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M43;" />
+      <MemberSignature Language="F#" Value="val mutable M43 : single" Usage="System.Numerics.Matrix4x4.M43" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2211,6 +2267,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M44" />
       <MemberSignature Language="VB.NET" Value="Public M44 As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float M44;" />
+      <MemberSignature Language="F#" Value="val mutable M44 : single" Usage="System.Numerics.Matrix4x4.M44" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2253,6 +2310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Multiply(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (value1 As Matrix4x4, value2 As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 Multiply(System::Numerics::Matrix4x4 value1, System::Numerics::Matrix4x4 value2);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Multiply (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2291,6 +2349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Multiply(System.Numerics.Matrix4x4,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (value1 As Matrix4x4, value2 As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 Multiply(System::Numerics::Matrix4x4 value1, float value2);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Matrix4x4 * single -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Multiply (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2329,6 +2388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Negate(System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Negate (value As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 Negate(System::Numerics::Matrix4x4 value);" />
+      <MemberSignature Language="F#" Value="static member Negate : System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Negate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2365,6 +2425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Addition(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (value1 As Matrix4x4, value2 As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 operator +(System::Numerics::Matrix4x4 value1, System::Numerics::Matrix4x4 value2);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="value1 + value2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2410,6 +2471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Equality(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (value1 As Matrix4x4, value2 As Matrix4x4) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::Matrix4x4 value1, System::Numerics::Matrix4x4 value2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 -&gt; bool" Usage="value1 = value2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2456,6 +2518,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Inequality(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (value1 As Matrix4x4, value2 As Matrix4x4) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::Matrix4x4 value1, System::Numerics::Matrix4x4 value2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 -&gt; bool" Usage="System.Numerics.Matrix4x4.op_Inequality (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2506,6 +2569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Multiply(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (value1 As Matrix4x4, value2 As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 operator *(System::Numerics::Matrix4x4 value1, System::Numerics::Matrix4x4 value2);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="value1 * value2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2551,6 +2615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Multiply(System.Numerics.Matrix4x4,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (value1 As Matrix4x4, value2 As Single) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 operator *(System::Numerics::Matrix4x4 value1, float value2);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Matrix4x4 * single -&gt; System.Numerics.Matrix4x4" Usage="value1 * value2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2596,6 +2661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Subtraction(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (value1 As Matrix4x4, value2 As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 operator -(System::Numerics::Matrix4x4 value1, System::Numerics::Matrix4x4 value2);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="value1 - value2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2641,6 +2707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_UnaryNegation(System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (value As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 operator -(System::Numerics::Matrix4x4 value);" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="- value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2677,6 +2744,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Subtract(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (value1 As Matrix4x4, value2 As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 Subtract(System::Numerics::Matrix4x4 value1, System::Numerics::Matrix4x4 value2);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Numerics.Matrix4x4 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Subtract (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2715,6 +2783,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="matrix4x4.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2755,6 +2824,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Transform(System.Numerics.Matrix4x4,System.Numerics.Quaternion)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Transform (value As Matrix4x4, rotation As Quaternion) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 Transform(System::Numerics::Matrix4x4 value, System::Numerics::Quaternion rotation);" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Numerics.Matrix4x4 * System.Numerics.Quaternion -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Transform (value, rotation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2793,6 +2863,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix4x4.Translation" />
       <MemberSignature Language="VB.NET" Value="Public Property Translation As Vector3" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Numerics::Vector3 Translation { System::Numerics::Vector3 get(); void set(System::Numerics::Vector3 value); };" />
+      <MemberSignature Language="F#" Value="member this.Translation : System.Numerics.Vector3 with get, set" Usage="System.Numerics.Matrix4x4.Translation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2825,6 +2896,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Transpose(System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Transpose (matrix As Matrix4x4) As Matrix4x4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix4x4 Transpose(System::Numerics::Matrix4x4 matrix);" />
+      <MemberSignature Language="F#" Value="static member Transpose : System.Numerics.Matrix4x4 -&gt; System.Numerics.Matrix4x4" Usage="System.Numerics.Matrix4x4.Transpose matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>

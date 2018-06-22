@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SmtpSpecifiedPickupDirectoryElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SmtpSpecifiedPickupDirectoryElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SmtpSpecifiedPickupDirectoryElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement.PickupDirectoryLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property PickupDirectoryLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PickupDirectoryLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PickupDirectoryLocation : string with get, set" Usage="System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement.PickupDirectoryLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

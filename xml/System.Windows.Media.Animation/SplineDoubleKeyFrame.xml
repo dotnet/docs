@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineDoubleKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class SplineDoubleKeyFrame&#xA;Inherits DoubleKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class SplineDoubleKeyFrame : System::Windows::Media::Animation::DoubleKeyFrame" />
+  <TypeSignature Language="F#" Value="type SplineDoubleKeyFrame = class&#xA;    inherit DoubleKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineDoubleKeyFrame.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineDoubleKeyFrame(double value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineDoubleKeyFrame : double -&gt; System.Windows.Media.Animation.SplineDoubleKeyFrame" Usage="new System.Windows.Media.Animation.SplineDoubleKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineDoubleKeyFrame.#ctor(System.Double,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineDoubleKeyFrame(double value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineDoubleKeyFrame : double * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.SplineDoubleKeyFrame" Usage="new System.Windows.Media.Animation.SplineDoubleKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.KeySpline keySpline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineDoubleKeyFrame.#ctor(System.Double,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineDoubleKeyFrame(double value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::KeySpline ^ keySpline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineDoubleKeyFrame : double * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.KeySpline -&gt; System.Windows.Media.Animation.SplineDoubleKeyFrame" Usage="new System.Windows.Media.Animation.SplineDoubleKeyFrame (value, keyTime, keySpline)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineDoubleKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="splineDoubleKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineDoubleKeyFrame.InterpolateValueCore(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Double, keyFrameProgress As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double InterpolateValueCore(double baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : double * double -&gt; double" Usage="splineDoubleKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SplineDoubleKeyFrame.KeySpline" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySpline As KeySpline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeySpline ^ KeySpline { System::Windows::Media::Animation::KeySpline ^ get(); void set(System::Windows::Media::Animation::KeySpline ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySpline : System.Windows.Media.Animation.KeySpline with get, set" Usage="System.Windows.Media.Animation.SplineDoubleKeyFrame.KeySpline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SplineDoubleKeyFrame.KeySplineProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeySplineProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeySplineProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeySplineProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SplineDoubleKeyFrame.KeySplineProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

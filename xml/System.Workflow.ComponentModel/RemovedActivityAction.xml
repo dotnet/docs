@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.RemovedActivityAction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RemovedActivityAction&#xA;Inherits ActivityChangeAction" />
   <TypeSignature Language="C++ CLI" Value="public ref class RemovedActivityAction sealed : System::Workflow::ComponentModel::ActivityChangeAction" />
+  <TypeSignature Language="F#" Value="type RemovedActivityAction = class&#xA;    inherit ActivityChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.RemovedActivityAction.#ctor(System.Int32,System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.CompositeActivity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (removedActivityIndex As Integer, originalActivity As Activity, clonedParentActivity As CompositeActivity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemovedActivityAction(int removedActivityIndex, System::Workflow::ComponentModel::Activity ^ originalActivity, System::Workflow::ComponentModel::CompositeActivity ^ clonedParentActivity);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.RemovedActivityAction : int * System.Workflow.ComponentModel.Activity * System.Workflow.ComponentModel.CompositeActivity -&gt; System.Workflow.ComponentModel.RemovedActivityAction" Usage="new System.Workflow.ComponentModel.RemovedActivityAction (removedActivityIndex, originalActivity, clonedParentActivity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.RemovedActivityAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ApplyTo (rootActivity As Activity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="override this.ApplyTo : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="removedActivityAction.ApplyTo rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.RemovedActivityAction.OriginalRemovedActivity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalRemovedActivity As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ OriginalRemovedActivity { System::Workflow::ComponentModel::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalRemovedActivity : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.ComponentModel.RemovedActivityAction.OriginalRemovedActivity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.RemovedActivityAction.RemovedActivityIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemovedActivityIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RemovedActivityIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemovedActivityIndex : int" Usage="System.Workflow.ComponentModel.RemovedActivityAction.RemovedActivityIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.RemovedActivityAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ValidateChanges (contextActivity As Activity) As ValidationErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ ValidateChanges(System::Workflow::ComponentModel::Activity ^ contextActivity);" />
+      <MemberSignature Language="F#" Value="override this.ValidateChanges : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="removedActivityAction.ValidateChanges contextActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

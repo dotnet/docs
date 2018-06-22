@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.Part" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Part&#xA;Inherits Panel&#xA;Implements ICompositeControlDesignerAccessor, INamingContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class Part abstract : System::Web::UI::WebControls::Panel, System::Web::UI::INamingContainer, System::Web::UI::WebControls::ICompositeControlDesignerAccessor" />
+  <TypeSignature Language="F#" Value="type Part = class&#xA;    inherit Panel&#xA;    interface INamingContainer&#xA;    interface ICompositeControlDesignerAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.ChromeState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ChromeState As PartChromeState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::PartChromeState ChromeState { System::Web::UI::WebControls::WebParts::PartChromeState get(); void set(System::Web::UI::WebControls::WebParts::PartChromeState value); };" />
+      <MemberSignature Language="F#" Value="member this.ChromeState : System.Web.UI.WebControls.WebParts.PartChromeState with get, set" Usage="System.Web.UI.WebControls.WebParts.Part.ChromeState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ChromeType As PartChromeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::PartChromeType ChromeType { System::Web::UI::WebControls::WebParts::PartChromeType get(); void set(System::Web::UI::WebControls::WebParts::PartChromeType value); };" />
+      <MemberSignature Language="F#" Value="member this.ChromeType : System.Web.UI.WebControls.WebParts.PartChromeType with get, set" Usage="System.Web.UI.WebControls.WebParts.Part.ChromeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.WebParts.Part.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.Part.DataBind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DataBind ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
+      <MemberSignature Language="F#" Value="override this.DataBind : unit -&gt; unit" Usage="part.DataBind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Web.UI.WebControls.WebParts.Part.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -308,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.WebControls.WebParts.Part.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnWidthChangingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ColumnWidthChangingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ColumnWidthChangingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ColumnWidthChangingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnWidthChangingEventArgs.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (columnIndex As Integer, newWidth As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnWidthChangingEventArgs(int columnIndex, int newWidth);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ColumnWidthChangingEventArgs : int * int -&gt; System.Windows.Forms.ColumnWidthChangingEventArgs" Usage="new System.Windows.Forms.ColumnWidthChangingEventArgs (columnIndex, newWidth)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnWidthChangingEventArgs.#ctor(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (columnIndex As Integer, newWidth As Integer, cancel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnWidthChangingEventArgs(int columnIndex, int newWidth, bool cancel);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ColumnWidthChangingEventArgs : int * int * bool -&gt; System.Windows.Forms.ColumnWidthChangingEventArgs" Usage="new System.Windows.Forms.ColumnWidthChangingEventArgs (columnIndex, newWidth, cancel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnWidthChangingEventArgs.ColumnIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="System.Windows.Forms.ColumnWidthChangingEventArgs.ColumnIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnWidthChangingEventArgs.NewWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property NewWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NewWidth : int with get, set" Usage="System.Windows.Forms.ColumnWidthChangingEventArgs.NewWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

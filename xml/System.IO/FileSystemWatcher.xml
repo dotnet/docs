@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileSystemWatcher" />
   <TypeSignature Language="VB.NET" Value="Public Class FileSystemWatcher&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileSystemWatcher : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type FileSystemWatcher = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -207,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemWatcher(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileSystemWatcher : string -&gt; System.IO.FileSystemWatcher" Usage="new System.IO.FileSystemWatcher path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -270,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, filter As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemWatcher(System::String ^ path, System::String ^ filter);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileSystemWatcher : string * string -&gt; System.IO.FileSystemWatcher" Usage="new System.IO.FileSystemWatcher (path, filter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -339,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="fileSystemWatcher.BeginInit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -380,6 +384,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Changed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As FileSystemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::FileSystemEventHandler ^ Changed;" />
+      <MemberSignature Language="F#" Value="member this.Changed : System.IO.FileSystemEventHandler " Usage="member this.Changed : System.IO.FileSystemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -447,6 +452,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Created" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Created As FileSystemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::FileSystemEventHandler ^ Created;" />
+      <MemberSignature Language="F#" Value="member this.Created : System.IO.FileSystemEventHandler " Usage="member this.Created : System.IO.FileSystemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -512,6 +518,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Deleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deleted As FileSystemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::FileSystemEventHandler ^ Deleted;" />
+      <MemberSignature Language="F#" Value="member this.Deleted : System.IO.FileSystemEventHandler " Usage="member this.Deleted : System.IO.FileSystemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -575,6 +582,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="fileSystemWatcher.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -602,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="fileSystemWatcher.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -652,6 +661,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.EnableRaisingEvents" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableRaisingEvents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableRaisingEvents { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableRaisingEvents : bool with get, set" Usage="System.IO.FileSystemWatcher.EnableRaisingEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -720,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="fileSystemWatcher.EndInit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -761,6 +772,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Error" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Error As ErrorEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::ErrorEventHandler ^ Error;" />
+      <MemberSignature Language="F#" Value="member this.Error : System.IO.ErrorEventHandler " Usage="member this.Error : System.IO.ErrorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -814,6 +826,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.IO.FileSystemWatcher.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -895,6 +908,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!FileSystemWatcher ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="fileSystemWatcher.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -915,6 +929,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.IncludeSubdirectories" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeSubdirectories As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeSubdirectories { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeSubdirectories : bool with get, set" Usage="System.IO.FileSystemWatcher.IncludeSubdirectories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -976,6 +991,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.InternalBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property InternalBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InternalBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.InternalBufferSize : int with get, set" Usage="System.IO.FileSystemWatcher.InternalBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1029,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.NotifyFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyFilter As NotifyFilters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::NotifyFilters NotifyFilter { System::IO::NotifyFilters get(); void set(System::IO::NotifyFilters value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyFilter : System.IO.NotifyFilters with get, set" Usage="System.IO.FileSystemWatcher.NotifyFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1094,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnChanged(System.IO.FileSystemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnChanged (e As FileSystemEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnChanged(System::IO::FileSystemEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnChanged : System.IO.FileSystemEventArgs -&gt; unit" Usage="fileSystemWatcher.OnChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1148,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnCreated (e As FileSystemEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnCreated(System::IO::FileSystemEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnCreated : System.IO.FileSystemEventArgs -&gt; unit" Usage="fileSystemWatcher.OnCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1202,6 +1221,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnDeleted (e As FileSystemEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnDeleted(System::IO::FileSystemEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnDeleted : System.IO.FileSystemEventArgs -&gt; unit" Usage="fileSystemWatcher.OnDeleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1254,6 +1274,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnError (e As ErrorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnError(System::IO::ErrorEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnError : System.IO.ErrorEventArgs -&gt; unit" Usage="fileSystemWatcher.OnError e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1304,6 +1325,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.OnRenamed(System.IO.RenamedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnRenamed (e As RenamedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnRenamed(System::IO::RenamedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnRenamed : System.IO.RenamedEventArgs -&gt; unit" Usage="fileSystemWatcher.OnRenamed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1353,6 +1375,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.IO.FileSystemWatcher.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1437,6 +1460,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.FileSystemWatcher.Renamed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Renamed As RenamedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::RenamedEventHandler ^ Renamed;" />
+      <MemberSignature Language="F#" Value="member this.Renamed : System.IO.RenamedEventHandler " Usage="member this.Renamed : System.IO.RenamedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1503,6 +1527,7 @@ Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.Site" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.IO.FileSystemWatcher.Site" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1545,6 +1570,7 @@ Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemWatcher.SynchronizingObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SynchronizingObject : System.ComponentModel.ISynchronizeInvoke with get, set" Usage="System.IO.FileSystemWatcher.SynchronizingObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1608,6 +1634,7 @@ Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes)" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitForChanged (changeType As WatcherChangeTypes) As WaitForChangedResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::WaitForChangedResult WaitForChanged(System::IO::WatcherChangeTypes changeType);" />
+      <MemberSignature Language="F#" Value="member this.WaitForChanged : System.IO.WatcherChangeTypes -&gt; System.IO.WaitForChangedResult" Usage="fileSystemWatcher.WaitForChanged changeType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -1656,6 +1683,7 @@ Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitForChanged (changeType As WatcherChangeTypes, timeout As Integer) As WaitForChangedResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::WaitForChangedResult WaitForChanged(System::IO::WatcherChangeTypes changeType, int timeout);" />
+      <MemberSignature Language="F#" Value="member this.WaitForChanged : System.IO.WatcherChangeTypes * int -&gt; System.IO.WaitForChangedResult" Usage="fileSystemWatcher.WaitForChanged (changeType, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>

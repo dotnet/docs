@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.IMemoryOwner`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMemoryOwner(Of T)&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IMemoryOwner : IDisposable" />
+  <TypeSignature Language="F#" Value="type IMemoryOwner&lt;'T&gt; = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.IMemoryOwner`1.Memory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Memory As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Memory&lt;T&gt; Memory { Memory&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Memory : Memory&lt;'T&gt;" Usage="System.Buffers.IMemoryOwner&lt;'T&gt;.Memory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

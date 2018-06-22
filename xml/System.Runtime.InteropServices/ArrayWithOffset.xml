@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ArrayWithOffset" />
   <TypeSignature Language="VB.NET" Value="Public Structure ArrayWithOffset" />
   <TypeSignature Language="C++ CLI" Value="public value class ArrayWithOffset" />
+  <TypeSignature Language="F#" Value="type ArrayWithOffset = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.#ctor(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As Object, offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayWithOffset(System::Object ^ array, int offset);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ArrayWithOffset : obj * int -&gt; System.Runtime.InteropServices.ArrayWithOffset" Usage="new System.Runtime.InteropServices.ArrayWithOffset (array, offset)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="arrayWithOffset.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Runtime.InteropServices.ArrayWithOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As ArrayWithOffset) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Runtime::InteropServices::ArrayWithOffset obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Runtime.InteropServices.ArrayWithOffset -&gt; bool" Usage="arrayWithOffset.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.GetArray" />
       <MemberSignature Language="VB.NET" Value="Public Function GetArray () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetArray();" />
+      <MemberSignature Language="F#" Value="member this.GetArray : unit -&gt; obj" Usage="arrayWithOffset.GetArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="arrayWithOffset.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.GetOffset" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOffset () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetOffset();" />
+      <MemberSignature Language="F#" Value="member this.GetOffset : unit -&gt; int" Usage="arrayWithOffset.GetOffset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.op_Equality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As ArrayWithOffset, b As ArrayWithOffset) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Runtime::InteropServices::ArrayWithOffset a, System::Runtime::InteropServices::ArrayWithOffset b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Runtime.InteropServices.ArrayWithOffset * System.Runtime.InteropServices.ArrayWithOffset -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As ArrayWithOffset, b As ArrayWithOffset) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Runtime::InteropServices::ArrayWithOffset a, System::Runtime::InteropServices::ArrayWithOffset b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Runtime.InteropServices.ArrayWithOffset * System.Runtime.InteropServices.ArrayWithOffset -&gt; bool" Usage="System.Runtime.InteropServices.ArrayWithOffset.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

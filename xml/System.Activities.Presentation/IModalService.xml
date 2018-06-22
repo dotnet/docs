@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IModalService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IModalService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IModalService" />
+  <TypeSignature Language="F#" Value="type IModalService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IModalService.SetModalState(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetModalState (isModal As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetModalState(bool isModal);" />
+      <MemberSignature Language="F#" Value="abstract member SetModalState : bool -&gt; unit" Usage="iModalService.SetModalState isModal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

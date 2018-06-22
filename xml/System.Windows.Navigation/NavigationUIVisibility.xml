@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationUIVisibility" />
   <TypeSignature Language="VB.NET" Value="Public Enum NavigationUIVisibility" />
   <TypeSignature Language="C++ CLI" Value="public enum class NavigationUIVisibility" />
+  <TypeSignature Language="F#" Value="type NavigationUIVisibility = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationUIVisibility.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 0" Usage="System.Windows.Navigation.NavigationUIVisibility.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationUIVisibility.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
       <MemberSignature Language="C++ CLI" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 2" Usage="System.Windows.Navigation.NavigationUIVisibility.Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationUIVisibility.Visible" />
       <MemberSignature Language="VB.NET" Value="Visible" />
       <MemberSignature Language="C++ CLI" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 1" Usage="System.Windows.Navigation.NavigationUIVisibility.Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

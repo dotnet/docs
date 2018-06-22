@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.Type1Message" />
   <TypeSignature Language="VB.NET" Value="Public Class Type1Message&#xA;Inherits MessageBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class Type1Message : Mono::Security::Protocol::Ntlm::MessageBase" />
+  <TypeSignature Language="F#" Value="type Type1Message = class&#xA;    inherit MessageBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.Type1Message.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type1Message(cli::array &lt;System::Byte&gt; ^ message);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Protocol.Ntlm.Type1Message : byte[] -&gt; Mono.Security.Protocol.Ntlm.Type1Message" Usage="new Mono.Security.Protocol.Ntlm.Type1Message message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.Type1Message.Decode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Decode (message As Byte())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Decode(cli::array &lt;System::Byte&gt; ^ message);" />
+      <MemberSignature Language="F#" Value="override this.Decode : byte[] -&gt; unit" Usage="type1Message.Decode message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type1Message.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="Mono.Security.Protocol.Ntlm.Type1Message.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.Type1Message.GetBytes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetBytes();" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : unit -&gt; byte[]" Usage="type1Message.GetBytes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type1Message.Host" />
       <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="Mono.Security.Protocol.Ntlm.Type1Message.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

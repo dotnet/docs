@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Binary" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Binary&#xA;Implements IEquatable(Of Binary)" />
   <TypeSignature Language="C++ CLI" Value="public ref class Binary sealed : IEquatable&lt;System::Data::Linq::Binary ^&gt;" />
+  <TypeSignature Language="F#" Value="type Binary = class&#xA;    interface IEquatable&lt;Binary&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Binary(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.Binary : byte[] -&gt; System.Data.Linq.Binary" Usage="new System.Data.Linq.Binary value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.Equals(System.Data.Linq.Binary)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Binary) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Data::Linq::Binary ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Data.Linq.Binary -&gt; bool" Usage="binary.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="binary.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="binary.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Binary.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Data.Linq.Binary.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.op_Equality(System.Data.Linq.Binary,System.Data.Linq.Binary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (binary1 As Binary, binary2 As Binary) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Data::Linq::Binary ^ binary1, System::Data::Linq::Binary ^ binary2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.Linq.Binary * System.Data.Linq.Binary -&gt; bool" Usage="binary1 = binary2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.op_Implicit(System.Byte[])~System.Data.Linq.Binary" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Byte()) As Binary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Linq::Binary ^(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : byte[] -&gt; System.Data.Linq.Binary" Usage="System.Data.Linq.Binary.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.op_Inequality(System.Data.Linq.Binary,System.Data.Linq.Binary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (binary1 As Binary, binary2 As Binary) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Data::Linq::Binary ^ binary1, System::Data::Linq::Binary ^ binary2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.Linq.Binary * System.Data.Linq.Binary -&gt; bool" Usage="System.Data.Linq.Binary.op_Inequality (binary1, binary2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -261,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; byte[]" Usage="binary.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="binary.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

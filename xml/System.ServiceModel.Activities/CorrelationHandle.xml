@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.CorrelationHandle" />
   <TypeSignature Language="VB.NET" Value="Public Class CorrelationHandle&#xA;Inherits Handle" />
   <TypeSignature Language="C++ CLI" Value="public ref class CorrelationHandle : System::Activities::Handle" />
+  <TypeSignature Language="F#" Value="type CorrelationHandle = class&#xA;    inherit Handle" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationHandle.OnInitialize(System.Activities.HandleInitializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialize (context As HandleInitializationContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialize(System::Activities::HandleInitializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.OnInitialize : System.Activities.HandleInitializationContext -&gt; unit" Usage="correlationHandle.OnInitialize context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationHandle.OnUninitialize(System.Activities.HandleInitializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnUninitialize (context As HandleInitializationContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUninitialize(System::Activities::HandleInitializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.OnUninitialize : System.Activities.HandleInitializationContext -&gt; unit" Usage="correlationHandle.OnUninitialize context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

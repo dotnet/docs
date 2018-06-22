@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.BreakLineStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum BreakLineStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class BreakLineStyle" />
+  <TypeSignature Language="F#" Value="type BreakLineStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BreakLineStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.BreakLineStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BreakLineStyle.Ragged" />
       <MemberSignature Language="VB.NET" Value="Ragged" />
       <MemberSignature Language="C++ CLI" Value="Ragged" />
+      <MemberSignature Language="F#" Value="Ragged = 3" Usage="System.Web.UI.DataVisualization.Charting.BreakLineStyle.Ragged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BreakLineStyle.Straight" />
       <MemberSignature Language="VB.NET" Value="Straight" />
       <MemberSignature Language="C++ CLI" Value="Straight" />
+      <MemberSignature Language="F#" Value="Straight = 1" Usage="System.Web.UI.DataVisualization.Charting.BreakLineStyle.Straight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.BreakLineStyle.Wave" />
       <MemberSignature Language="VB.NET" Value="Wave" />
       <MemberSignature Language="C++ CLI" Value="Wave" />
+      <MemberSignature Language="F#" Value="Wave = 2" Usage="System.Web.UI.DataVisualization.Charting.BreakLineStyle.Wave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

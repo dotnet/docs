@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.ConcurrentStack`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ConcurrentStack(Of T)&#xA;Implements IEnumerable(Of T), IProducerConsumerCollection(Of T), IReadOnlyCollection(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ConcurrentStack : System::Collections::Concurrent::IProducerConsumerCollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ConcurrentStack&lt;'T&gt; = class&#xA;    interface IProducerConsumerCollection&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentStack(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentStack&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Collections.Concurrent.ConcurrentStack&lt;'T&gt;" Usage="new System.Collections.Concurrent.ConcurrentStack&lt;'T&gt; collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -149,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="concurrentStack.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="concurrentStack.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Concurrent.IProducerConsumerCollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -225,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentStack`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Concurrent.ConcurrentStack&lt;'T&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
@@ -266,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;" Usage="concurrentStack.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -308,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentStack`1.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Collections.Concurrent.ConcurrentStack&lt;'T&gt;.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -348,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.Push(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Push (item As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Push(T item);" />
+      <MemberSignature Language="F#" Value="member this.Push : 'T -&gt; unit" Usage="concurrentStack.Push item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -393,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.PushRange(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub PushRange (items As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushRange(cli::array &lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="member this.PushRange : 'T[] -&gt; unit" Usage="concurrentStack.PushRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -438,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.PushRange(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PushRange (items As T(), startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushRange(cli::array &lt;T&gt; ^ items, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.PushRange : 'T[] * int * int -&gt; unit" Usage="concurrentStack.PushRange (items, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -625,6 +635,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentStack&lt;'T&gt;.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -659,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentStack&lt;'T&gt;.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -736,6 +748,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;T&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="abstract member ToArray : unit -&gt; 'T[]&#xA;override this.ToArray : unit -&gt; 'T[]" Usage="concurrentStack.ToArray " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Concurrent.IProducerConsumerCollection`1.ToArray</InterfaceMember>
@@ -771,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.TryPeek(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryPeek (ByRef result As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryPeek([Runtime::InteropServices::Out] T % result);" />
+      <MemberSignature Language="F#" Value="member this.TryPeek :  -&gt; bool" Usage="concurrentStack.TryPeek result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -806,6 +820,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.TryPop(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryPop (ByRef result As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryPop([Runtime::InteropServices::Out] T % result);" />
+      <MemberSignature Language="F#" Value="member this.TryPop :  -&gt; bool" Usage="concurrentStack.TryPop result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -859,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.TryPopRange(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Function TryPopRange (items As T()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int TryPopRange(cli::array &lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="member this.TryPopRange : 'T[] -&gt; int" Usage="concurrentStack.TryPopRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -905,6 +921,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.TryPopRange(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryPopRange (items As T(), startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int TryPopRange(cli::array &lt;T&gt; ^ items, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.TryPopRange : 'T[] * int * int -&gt; int" Usage="concurrentStack.TryPopRange (items, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormBorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormBorderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class FormBorderStyle" />
+  <TypeSignature Language="F#" Value="type FormBorderStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.Fixed3D" />
       <MemberSignature Language="VB.NET" Value="Fixed3D" />
       <MemberSignature Language="C++ CLI" Value="Fixed3D" />
+      <MemberSignature Language="F#" Value="Fixed3D = 2" Usage="System.Windows.Forms.FormBorderStyle.Fixed3D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedDialog" />
       <MemberSignature Language="VB.NET" Value="FixedDialog" />
       <MemberSignature Language="C++ CLI" Value="FixedDialog" />
+      <MemberSignature Language="F#" Value="FixedDialog = 3" Usage="System.Windows.Forms.FormBorderStyle.FixedDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedSingle" />
       <MemberSignature Language="VB.NET" Value="FixedSingle" />
       <MemberSignature Language="C++ CLI" Value="FixedSingle" />
+      <MemberSignature Language="F#" Value="FixedSingle = 1" Usage="System.Windows.Forms.FormBorderStyle.FixedSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedToolWindow" />
       <MemberSignature Language="VB.NET" Value="FixedToolWindow" />
       <MemberSignature Language="C++ CLI" Value="FixedToolWindow" />
+      <MemberSignature Language="F#" Value="FixedToolWindow = 5" Usage="System.Windows.Forms.FormBorderStyle.FixedToolWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.FormBorderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.Sizable" />
       <MemberSignature Language="VB.NET" Value="Sizable" />
       <MemberSignature Language="C++ CLI" Value="Sizable" />
+      <MemberSignature Language="F#" Value="Sizable = 4" Usage="System.Windows.Forms.FormBorderStyle.Sizable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.SizableToolWindow" />
       <MemberSignature Language="VB.NET" Value="SizableToolWindow" />
       <MemberSignature Language="C++ CLI" Value="SizableToolWindow" />
+      <MemberSignature Language="F#" Value="SizableToolWindow = 6" Usage="System.Windows.Forms.FormBorderStyle.SizableToolWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

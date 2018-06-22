@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.IAssemblyPostProcessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAssemblyPostProcessor&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAssemblyPostProcessor : IDisposable" />
+  <TypeSignature Language="F#" Value="type IAssemblyPostProcessor = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.IAssemblyPostProcessor.PostProcessAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PostProcessAssembly (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PostProcessAssembly(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member PostProcessAssembly : string -&gt; unit" Usage="iAssemblyPostProcessor.PostProcessAssembly path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

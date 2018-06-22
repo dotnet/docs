@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IFormattable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFormattable" />
+  <TypeSignature Language="F#" Value="type IFormattable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, formatProvider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format, IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="abstract member ToString : string * IFormatProvider -&gt; string" Usage="iFormattable.ToString (format, formatProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

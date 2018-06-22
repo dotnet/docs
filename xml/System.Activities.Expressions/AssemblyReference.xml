@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.AssemblyReference" />
   <TypeSignature Language="VB.NET" Value="Public Class AssemblyReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyReference" />
+  <TypeSignature Language="F#" Value="type AssemblyReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.AssemblyReference.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Property Assembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); void set(System::Reflection::Assembly ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly with get, set" Usage="System.Activities.Expressions.AssemblyReference.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.AssemblyReference.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As AssemblyName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyName ^ AssemblyName { System::Reflection::AssemblyName ^ get(); void set(System::Reflection::AssemblyName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : System.Reflection.AssemblyName with get, set" Usage="System.Activities.Expressions.AssemblyReference.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.AssemblyReference.LoadAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadAssembly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadAssembly();" />
+      <MemberSignature Language="F#" Value="member this.LoadAssembly : unit -&gt; unit" Usage="assemblyReference.LoadAssembly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Expressions.AssemblyReference op_Implicit(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.AssemblyReference.op_Implicit(System.Reflection.Assembly)~System.Activities.Expressions.AssemblyReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::Expressions::AssemblyReference ^(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Reflection.Assembly -&gt; System.Activities.Expressions.AssemblyReference" Usage="System.Activities.Expressions.AssemblyReference.op_Implicit assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Expressions.AssemblyReference op_Implicit(class System.Reflection.AssemblyName assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.AssemblyReference.op_Implicit(System.Reflection.AssemblyName)~System.Activities.Expressions.AssemblyReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::Expressions::AssemblyReference ^(System::Reflection::AssemblyName ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Reflection.AssemblyName -&gt; System.Activities.Expressions.AssemblyReference" Usage="System.Activities.Expressions.AssemblyReference.op_Implicit assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.DrawingAttributesReplacedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DrawingAttributesReplacedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DrawingAttributesReplacedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DrawingAttributesReplacedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributesReplacedEventArgs.#ctor(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newDrawingAttributes As DrawingAttributes, previousDrawingAttributes As DrawingAttributes)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DrawingAttributesReplacedEventArgs(System::Windows::Ink::DrawingAttributes ^ newDrawingAttributes, System::Windows::Ink::DrawingAttributes ^ previousDrawingAttributes);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Ink.DrawingAttributesReplacedEventArgs : System.Windows.Ink.DrawingAttributes * System.Windows.Ink.DrawingAttributes -&gt; System.Windows.Ink.DrawingAttributesReplacedEventArgs" Usage="new System.Windows.Ink.DrawingAttributesReplacedEventArgs (newDrawingAttributes, previousDrawingAttributes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributesReplacedEventArgs.NewDrawingAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewDrawingAttributes As DrawingAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::DrawingAttributes ^ NewDrawingAttributes { System::Windows::Ink::DrawingAttributes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewDrawingAttributes : System.Windows.Ink.DrawingAttributes" Usage="System.Windows.Ink.DrawingAttributesReplacedEventArgs.NewDrawingAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributesReplacedEventArgs.PreviousDrawingAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousDrawingAttributes As DrawingAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::DrawingAttributes ^ PreviousDrawingAttributes { System::Windows::Ink::DrawingAttributes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousDrawingAttributes : System.Windows.Ink.DrawingAttributes" Usage="System.Windows.Ink.DrawingAttributesReplacedEventArgs.PreviousDrawingAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

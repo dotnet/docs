@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlDataSourceView&#xA;Inherits DataSourceView&#xA;Implements IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceView : System::Web::UI::DataSourceView, System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceView = class&#xA;    inherit DataSourceView&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.#ctor(System.Web.UI.WebControls.SqlDataSource,System.String,System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As SqlDataSource, name As String, context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataSourceView(System::Web::UI::WebControls::SqlDataSource ^ owner, System::String ^ name, System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SqlDataSourceView : System.Web.UI.WebControls.SqlDataSource * string * System.Web.HttpContext -&gt; System.Web.UI.WebControls.SqlDataSourceView" Usage="new System.Web.UI.WebControls.SqlDataSourceView (owner, name, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CancelSelectOnNullParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property CancelSelectOnNullParameter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CancelSelectOnNullParameter { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelSelectOnNullParameter : bool with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.CancelSelectOnNullParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanDelete" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanDelete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanDelete { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanDelete : bool" Usage="System.Web.UI.WebControls.SqlDataSourceView.CanDelete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanInsert" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanInsert As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanInsert { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanInsert : bool" Usage="System.Web.UI.WebControls.SqlDataSourceView.CanInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanPage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanPage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanPage { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanPage : bool" Usage="System.Web.UI.WebControls.SqlDataSourceView.CanPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanRetrieveTotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRetrieveTotalRowCount As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRetrieveTotalRowCount { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRetrieveTotalRowCount : bool" Usage="System.Web.UI.WebControls.SqlDataSourceView.CanRetrieveTotalRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanSort" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSort As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSort : bool" Usage="System.Web.UI.WebControls.SqlDataSourceView.CanSort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -299,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanUpdate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanUpdate : bool" Usage="System.Web.UI.WebControls.SqlDataSourceView.CanUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" />
       <MemberSignature Language="VB.NET" Value="Public Property ConflictDetection As ConflictOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ConflictOptions ConflictDetection { System::Web::UI::ConflictOptions get(); void set(System::Web::UI::ConflictOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.ConflictDetection : System.Web.UI.ConflictOptions with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -362,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete (keys As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Delete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
+      <MemberSignature Language="F#" Value="override this.Delete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="sqlDataSourceView.Delete (keys, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -403,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property DeleteCommand As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeleteCommand { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteCommand : string with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -447,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommandType" />
       <MemberSignature Language="VB.NET" Value="Public Property DeleteCommandType As SqlDataSourceCommandType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SqlDataSourceCommandType DeleteCommandType { System::Web::UI::WebControls::SqlDataSourceCommandType get(); void set(System::Web::UI::WebControls::SqlDataSourceCommandType value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteCommandType : System.Web.UI.WebControls.SqlDataSourceCommandType with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.DeleteCommandType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -478,6 +491,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Deleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deleted As SqlDataSourceStatusEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceStatusEventHandler ^ Deleted;" />
+      <MemberSignature Language="F#" Value="member this.Deleted : System.Web.UI.WebControls.SqlDataSourceStatusEventHandler " Usage="member this.Deleted : System.Web.UI.WebControls.SqlDataSourceStatusEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -510,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeleteParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ DeleteParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -564,6 +579,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Deleting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deleting As SqlDataSourceCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceCommandEventHandler ^ Deleting;" />
+      <MemberSignature Language="F#" Value="member this.Deleting : System.Web.UI.WebControls.SqlDataSourceCommandEventHandler " Usage="member this.Deleting : System.Web.UI.WebControls.SqlDataSourceCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -606,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDelete (keys As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteDelete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteDelete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="sqlDataSourceView.ExecuteDelete (keys, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -663,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteInsert (values As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteInsert(System::Collections::IDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteInsert : System.Collections.IDictionary -&gt; int" Usage="sqlDataSourceView.ExecuteInsert values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -704,6 +722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ExecuteSelect (arguments As DataSourceSelectArguments) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Collections::IEnumerable ^ ExecuteSelect(System::Web::UI::DataSourceSelectArguments ^ arguments);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteSelect : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable" Usage="sqlDataSourceView.ExecuteSelect arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -765,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteUpdate (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteUpdate(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteUpdate : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="sqlDataSourceView.ExecuteUpdate (keys, values, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -816,6 +836,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterExpression : string with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.FilterExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -863,6 +884,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Filtering" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Filtering As SqlDataSourceFilteringEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceFilteringEventHandler ^ Filtering;" />
+      <MemberSignature Language="F#" Value="member this.Filtering : System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler " Usage="member this.Filtering : System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -895,6 +917,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ FilterParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.SqlDataSourceView.FilterParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -946,6 +969,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.Insert(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (values As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Insert(System::Collections::IDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="override this.Insert : System.Collections.IDictionary -&gt; int" Usage="sqlDataSourceView.Insert values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -982,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertCommand As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InsertCommand { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertCommand : string with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1037,6 +1062,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommandType" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertCommandType As SqlDataSourceCommandType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SqlDataSourceCommandType InsertCommandType { System::Web::UI::WebControls::SqlDataSourceCommandType get(); void set(System::Web::UI::WebControls::SqlDataSourceCommandType value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertCommandType : System.Web.UI.WebControls.SqlDataSourceCommandType with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.InsertCommandType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1080,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Inserted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Inserted As SqlDataSourceStatusEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceStatusEventHandler ^ Inserted;" />
+      <MemberSignature Language="F#" Value="member this.Inserted : System.Web.UI.WebControls.SqlDataSourceStatusEventHandler " Usage="member this.Inserted : System.Web.UI.WebControls.SqlDataSourceStatusEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1126,6 +1153,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Inserting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Inserting As SqlDataSourceCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceCommandEventHandler ^ Inserting;" />
+      <MemberSignature Language="F#" Value="member this.Inserting : System.Web.UI.WebControls.SqlDataSourceCommandEventHandler " Usage="member this.Inserting : System.Web.UI.WebControls.SqlDataSourceCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1174,6 +1202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InsertParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ InsertParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InsertParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.SqlDataSourceView.InsertParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1225,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.SqlDataSourceView.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -1252,6 +1282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="sqlDataSourceView.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -1290,6 +1321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString" />
       <MemberSignature Language="VB.NET" Value="Public Property OldValuesParameterFormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldValuesParameterFormatString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OldValuesParameterFormatString : string with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1327,6 +1359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeleted (e As SqlDataSourceStatusEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeleted(System::Web::UI::WebControls::SqlDataSourceStatusEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeleted : System.Web.UI.WebControls.SqlDataSourceStatusEventArgs -&gt; unit&#xA;override this.OnDeleted : System.Web.UI.WebControls.SqlDataSourceStatusEventArgs -&gt; unit" Usage="sqlDataSourceView.OnDeleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1362,6 +1395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeleting (e As SqlDataSourceCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeleting(System::Web::UI::WebControls::SqlDataSourceCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeleting : System.Web.UI.WebControls.SqlDataSourceCommandEventArgs -&gt; unit&#xA;override this.OnDeleting : System.Web.UI.WebControls.SqlDataSourceCommandEventArgs -&gt; unit" Usage="sqlDataSourceView.OnDeleting e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1405,6 +1439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnFiltering(System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFiltering (e As SqlDataSourceFilteringEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFiltering(System::Web::UI::WebControls::SqlDataSourceFilteringEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnFiltering : System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs -&gt; unit&#xA;override this.OnFiltering : System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs -&gt; unit" Usage="sqlDataSourceView.OnFiltering e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1440,6 +1475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInserted (e As SqlDataSourceStatusEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInserted(System::Web::UI::WebControls::SqlDataSourceStatusEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInserted : System.Web.UI.WebControls.SqlDataSourceStatusEventArgs -&gt; unit&#xA;override this.OnInserted : System.Web.UI.WebControls.SqlDataSourceStatusEventArgs -&gt; unit" Usage="sqlDataSourceView.OnInserted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1489,6 +1525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInserting (e As SqlDataSourceCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInserting(System::Web::UI::WebControls::SqlDataSourceCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInserting : System.Web.UI.WebControls.SqlDataSourceCommandEventArgs -&gt; unit&#xA;override this.OnInserting : System.Web.UI.WebControls.SqlDataSourceCommandEventArgs -&gt; unit" Usage="sqlDataSourceView.OnInserting e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1538,6 +1575,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelected(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelected (e As SqlDataSourceStatusEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelected(System::Web::UI::WebControls::SqlDataSourceStatusEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSelected : System.Web.UI.WebControls.SqlDataSourceStatusEventArgs -&gt; unit&#xA;override this.OnSelected : System.Web.UI.WebControls.SqlDataSourceStatusEventArgs -&gt; unit" Usage="sqlDataSourceView.OnSelected e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1573,6 +1611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelecting (e As SqlDataSourceSelectingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelecting(System::Web::UI::WebControls::SqlDataSourceSelectingEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSelecting : System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs -&gt; unit&#xA;override this.OnSelecting : System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs -&gt; unit" Usage="sqlDataSourceView.OnSelecting e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1608,6 +1647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUpdated (e As SqlDataSourceStatusEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUpdated(System::Web::UI::WebControls::SqlDataSourceStatusEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnUpdated : System.Web.UI.WebControls.SqlDataSourceStatusEventArgs -&gt; unit&#xA;override this.OnUpdated : System.Web.UI.WebControls.SqlDataSourceStatusEventArgs -&gt; unit" Usage="sqlDataSourceView.OnUpdated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1651,6 +1691,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUpdating (e As SqlDataSourceCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUpdating(System::Web::UI::WebControls::SqlDataSourceCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnUpdating : System.Web.UI.WebControls.SqlDataSourceCommandEventArgs -&gt; unit&#xA;override this.OnUpdating : System.Web.UI.WebControls.SqlDataSourceCommandEventArgs -&gt; unit" Usage="sqlDataSourceView.OnUpdating e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1694,6 +1735,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.ParameterPrefix" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ParameterPrefix As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ParameterPrefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterPrefix : string" Usage="System.Web.UI.WebControls.SqlDataSourceView.ParameterPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1725,6 +1767,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.RaiseUnsupportedCapabilityError(System.Web.UI.DataSourceCapabilities)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RaiseUnsupportedCapabilityError (capability As DataSourceCapabilities)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RaiseUnsupportedCapabilityError(System::Web::UI::DataSourceCapabilities capability);" />
+      <MemberSignature Language="F#" Value="override this.RaiseUnsupportedCapabilityError : System.Web.UI.DataSourceCapabilities -&gt; unit" Usage="sqlDataSourceView.RaiseUnsupportedCapabilityError capability" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1759,6 +1802,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="sqlDataSourceView.SaveViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -1797,6 +1841,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
       <MemberSignature Language="VB.NET" Value="Public Function Select (arguments As DataSourceSelectArguments) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ Select(System::Web::UI::DataSourceSelectArguments ^ arguments);" />
+      <MemberSignature Language="F#" Value="override this.Select : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable" Usage="sqlDataSourceView.Select arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1835,6 +1880,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectCommand As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectCommand { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectCommand : string with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.SelectCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1887,6 +1933,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommandType" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectCommandType As SqlDataSourceCommandType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SqlDataSourceCommandType SelectCommandType { System::Web::UI::WebControls::SqlDataSourceCommandType get(); void set(System::Web::UI::WebControls::SqlDataSourceCommandType value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectCommandType : System.Web.UI.WebControls.SqlDataSourceCommandType with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.SelectCommandType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1926,6 +1973,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selected As SqlDataSourceStatusEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceStatusEventHandler ^ Selected;" />
+      <MemberSignature Language="F#" Value="member this.Selected : System.Web.UI.WebControls.SqlDataSourceStatusEventHandler " Usage="member this.Selected : System.Web.UI.WebControls.SqlDataSourceStatusEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1957,6 +2005,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Selecting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selecting As SqlDataSourceSelectingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceSelectingEventHandler ^ Selecting;" />
+      <MemberSignature Language="F#" Value="member this.Selecting : System.Web.UI.WebControls.SqlDataSourceSelectingEventHandler " Usage="member this.Selecting : System.Web.UI.WebControls.SqlDataSourceSelectingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1989,6 +2038,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ SelectParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.SqlDataSourceView.SelectParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2032,6 +2082,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Property SortParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SortParameterName : string with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.SortParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2065,6 +2116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.SqlDataSourceView.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -2195,6 +2247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="sqlDataSourceView.TrackViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -2218,6 +2271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
+      <MemberSignature Language="F#" Value="override this.Update : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="sqlDataSourceView.Update (keys, values, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2266,6 +2320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateCommand As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UpdateCommand { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateCommand : string with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2315,6 +2370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommandType" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateCommandType As SqlDataSourceCommandType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SqlDataSourceCommandType UpdateCommandType { System::Web::UI::WebControls::SqlDataSourceCommandType get(); void set(System::Web::UI::WebControls::SqlDataSourceCommandType value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateCommandType : System.Web.UI.WebControls.SqlDataSourceCommandType with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceView.UpdateCommandType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2346,6 +2402,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Updated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Updated As SqlDataSourceStatusEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceStatusEventHandler ^ Updated;" />
+      <MemberSignature Language="F#" Value="member this.Updated : System.Web.UI.WebControls.SqlDataSourceStatusEventHandler " Usage="member this.Updated : System.Web.UI.WebControls.SqlDataSourceStatusEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2386,6 +2443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ UpdateParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2439,6 +2497,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Updating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Updating As SqlDataSourceCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::SqlDataSourceCommandEventHandler ^ Updating;" />
+      <MemberSignature Language="F#" Value="member this.Updating : System.Web.UI.WebControls.SqlDataSourceCommandEventHandler " Usage="member this.Updating : System.Web.UI.WebControls.SqlDataSourceCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

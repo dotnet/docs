@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.EventWaitHandleAuditRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventWaitHandleAuditRule&#xA;Inherits AuditRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventWaitHandleAuditRule sealed : System::Security::AccessControl::AuditRule" />
+  <TypeSignature Language="F#" Value="type EventWaitHandleAuditRule = class&#xA;    inherit AuditRule" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.EventWaitHandleAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, eventRights As EventWaitHandleRights, flags As AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandleAuditRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::EventWaitHandleRights eventRights, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.EventWaitHandleAuditRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.EventWaitHandleRights * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.EventWaitHandleAuditRule" Usage="new System.Security.AccessControl.EventWaitHandleAuditRule (identity, eventRights, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.EventWaitHandleAuditRule.EventWaitHandleRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventWaitHandleRights As EventWaitHandleRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::EventWaitHandleRights EventWaitHandleRights { System::Security::AccessControl::EventWaitHandleRights get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventWaitHandleRights : System.Security.AccessControl.EventWaitHandleRights" Usage="System.Security.AccessControl.EventWaitHandleAuditRule.EventWaitHandleRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>

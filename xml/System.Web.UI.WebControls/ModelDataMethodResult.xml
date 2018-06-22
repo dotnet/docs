@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ModelDataMethodResult" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelDataMethodResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelDataMethodResult" />
+  <TypeSignature Language="F#" Value="type ModelDataMethodResult = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataMethodResult.#ctor(System.Object,System.Collections.Specialized.OrderedDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (returnValue As Object, outputParameters As OrderedDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelDataMethodResult(System::Object ^ returnValue, System::Collections::Specialized::OrderedDictionary ^ outputParameters);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ModelDataMethodResult : obj * System.Collections.Specialized.OrderedDictionary -&gt; System.Web.UI.WebControls.ModelDataMethodResult" Usage="new System.Web.UI.WebControls.ModelDataMethodResult (returnValue, outputParameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataMethodResult.OutputParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputParameters As OrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::OrderedDictionary ^ OutputParameters { System::Collections::Specialized::OrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputParameters : System.Collections.Specialized.OrderedDictionary" Usage="System.Web.UI.WebControls.ModelDataMethodResult.OutputParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataMethodResult.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ReturnValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnValue : obj" Usage="System.Web.UI.WebControls.ModelDataMethodResult.ReturnValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

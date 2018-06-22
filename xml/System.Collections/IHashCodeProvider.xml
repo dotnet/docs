@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.IHashCodeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHashCodeProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHashCodeProvider" />
+  <TypeSignature Language="F#" Value="type IHashCodeProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IHashCodeProvider.GetHashCode(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : obj -&gt; int" Usage="iHashCodeProvider.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

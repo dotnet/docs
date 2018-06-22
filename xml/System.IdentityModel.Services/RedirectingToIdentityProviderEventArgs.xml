@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RedirectingToIdentityProviderEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RedirectingToIdentityProviderEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type RedirectingToIdentityProviderEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Services.SignInRequestMessage signInRequestMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.#ctor(System.IdentityModel.Services.SignInRequestMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RedirectingToIdentityProviderEventArgs(System::IdentityModel::Services::SignInRequestMessage ^ signInRequestMessage);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs : System.IdentityModel.Services.SignInRequestMessage -&gt; System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs" Usage="new System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs signInRequestMessage" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property SignInRequestMessage As SignInRequestMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::SignInRequestMessage ^ SignInRequestMessage { System::IdentityModel::Services::SignInRequestMessage ^ get(); void set(System::IdentityModel::Services::SignInRequestMessage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SignInRequestMessage : System.IdentityModel.Services.SignInRequestMessage with get, set" Usage="System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

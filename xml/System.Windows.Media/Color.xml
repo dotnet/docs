@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Color" />
   <TypeSignature Language="VB.NET" Value="Public Structure Color&#xA;Implements IEquatable(Of Color), IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Color : IEquatable&lt;System::Windows::Media::Color&gt;, IFormattable" />
+  <TypeSignature Language="F#" Value="type Color = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.A" />
       <MemberSignature Language="VB.NET" Value="Public Property A As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte A { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.A : byte with get, set" Usage="System.Windows.Media.Color.A" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Add(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (color1 As Color, color2 As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color Add(System::Windows::Media::Color color1, System::Windows::Media::Color color2);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Windows.Media.Color * System.Windows.Media.Color -&gt; System.Windows.Media.Color" Usage="System.Windows.Media.Color.Add (color1, color2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.AreClose(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AreClose (color1 As Color, color2 As Color) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool AreClose(System::Windows::Media::Color color1, System::Windows::Media::Color color2);" />
+      <MemberSignature Language="F#" Value="static member AreClose : System.Windows.Media.Color * System.Windows.Media.Color -&gt; bool" Usage="System.Windows.Media.Color.AreClose (color1, color2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -224,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.B" />
       <MemberSignature Language="VB.NET" Value="Public Property B As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte B { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.B : byte with get, set" Usage="System.Windows.Media.Color.B" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Clamp" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clamp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clamp();" />
+      <MemberSignature Language="F#" Value="member this.Clamp : unit -&gt; unit" Usage="color.Clamp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ColorContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColorContext As ColorContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ColorContext ^ ColorContext { System::Windows::Media::ColorContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColorContext : System.Windows.Media.ColorContext" Usage="System.Windows.Media.Color.ColorContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="color.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +358,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Media.Color color) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Equals(System.Windows.Media.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Media::Color color);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.Color -&gt; bool" Usage="color.Equals color" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -378,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Equals(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (color1 As Color, color2 As Color) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Color color1, System::Windows::Media::Color color2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Media.Color * System.Windows.Media.Color -&gt; bool" Usage="System.Windows.Media.Color.Equals (color1, color2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -417,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromArgb (a As Byte, r As Byte, g As Byte, b As Byte) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color FromArgb(System::Byte a, System::Byte r, System::Byte g, System::Byte b);" />
+      <MemberSignature Language="F#" Value="static member FromArgb : byte * byte * byte * byte -&gt; System.Windows.Media.Color" Usage="System.Windows.Media.Color.FromArgb (a, r, g, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -466,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromAValues(System.Single,System.Single[],System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromAValues (a As Single, values As Single(), profileUri As Uri) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color FromAValues(float a, cli::array &lt;float&gt; ^ values, Uri ^ profileUri);" />
+      <MemberSignature Language="F#" Value="static member FromAValues : single * single[] * Uri -&gt; System.Windows.Media.Color" Usage="System.Windows.Media.Color.FromAValues (a, values, profileUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -509,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromRgb(System.Byte,System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromRgb (r As Byte, g As Byte, b As Byte) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color FromRgb(System::Byte r, System::Byte g, System::Byte b);" />
+      <MemberSignature Language="F#" Value="static member FromRgb : byte * byte * byte -&gt; System.Windows.Media.Color" Usage="System.Windows.Media.Color.FromRgb (r, g, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -560,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromScRgb(System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromScRgb (a As Single, r As Single, g As Single, b As Single) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color FromScRgb(float a, float r, float g, float b);" />
+      <MemberSignature Language="F#" Value="static member FromScRgb : single * single * single * single -&gt; System.Windows.Media.Color" Usage="System.Windows.Media.Color.FromScRgb (a, r, g, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -607,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromValues(System.Single[],System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromValues (values As Single(), profileUri As Uri) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color FromValues(cli::array &lt;float&gt; ^ values, Uri ^ profileUri);" />
+      <MemberSignature Language="F#" Value="static member FromValues : single[] * Uri -&gt; System.Windows.Media.Color" Usage="System.Windows.Media.Color.FromValues (values, profileUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -648,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.G" />
       <MemberSignature Language="VB.NET" Value="Public Property G As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte G { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.G : byte with get, set" Usage="System.Windows.Media.Color.G" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -675,6 +691,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="color.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -696,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.GetNativeColorValues" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNativeColorValues () As Single()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;float&gt; ^ GetNativeColorValues();" />
+      <MemberSignature Language="F#" Value="member this.GetNativeColorValues : unit -&gt; single[]" Usage="color.GetNativeColorValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -716,6 +734,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color Multiply(valuetype System.Windows.Media.Color color, float32 coefficient) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Multiply(System.Windows.Media.Color,System.Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color Multiply(System::Windows::Media::Color color, float coefficient);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Windows.Media.Color * single -&gt; System.Windows.Media.Color" Usage="System.Windows.Media.Color.Multiply (color, coefficient)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -743,6 +762,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Addition(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (color1 As Color, color2 As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color operator +(System::Windows::Media::Color color1, System::Windows::Media::Color color2);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Windows.Media.Color * System.Windows.Media.Color -&gt; System.Windows.Media.Color" Usage="color1 + color2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -776,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Equality(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (color1 As Color, color2 As Color) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Color color1, System::Windows::Media::Color color2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.Color * System.Windows.Media.Color -&gt; bool" Usage="color1 = color2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -815,6 +836,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Inequality(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (color1 As Color, color2 As Color) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Color color1, System::Windows::Media::Color color2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.Color * System.Windows.Media.Color -&gt; bool" Usage="System.Windows.Media.Color.op_Inequality (color1, color2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -853,6 +875,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Color op_Multiply(valuetype System.Windows.Media.Color color, float32 coefficient) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Multiply(System.Windows.Media.Color,System.Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color operator *(System::Windows::Media::Color color, float coefficient);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Windows.Media.Color * single -&gt; System.Windows.Media.Color" Usage="color * coefficient" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -882,6 +905,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Subtraction(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (color1 As Color, color2 As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color operator -(System::Windows::Media::Color color1, System::Windows::Media::Color color2);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Windows.Media.Color * System.Windows.Media.Color -&gt; System.Windows.Media.Color" Usage="color1 - color2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -915,6 +939,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.R" />
       <MemberSignature Language="VB.NET" Value="Public Property R As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte R { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.R : byte with get, set" Usage="System.Windows.Media.Color.R" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -942,6 +967,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ScA" />
       <MemberSignature Language="VB.NET" Value="Public Property ScA As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ScA { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ScA : single with get, set" Usage="System.Windows.Media.Color.ScA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -971,6 +997,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ScB" />
       <MemberSignature Language="VB.NET" Value="Public Property ScB As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ScB { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ScB : single with get, set" Usage="System.Windows.Media.Color.ScB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -998,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ScG" />
       <MemberSignature Language="VB.NET" Value="Public Property ScG As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ScG { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ScG : single with get, set" Usage="System.Windows.Media.Color.ScG" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1025,6 +1053,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ScR" />
       <MemberSignature Language="VB.NET" Value="Public Property ScR As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ScR { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ScR : single with get, set" Usage="System.Windows.Media.Color.ScR" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1052,6 +1081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Subtract(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (color1 As Color, color2 As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Color Subtract(System::Windows::Media::Color color1, System::Windows::Media::Color color2);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Windows.Media.Color * System.Windows.Media.Color -&gt; System.Windows.Media.Color" Usage="System.Windows.Media.Color.Subtract (color1, color2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1132,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="color.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1153,6 +1184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="color.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ItemsChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ItemsChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemsChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ItemsChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ItemsChangedEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As NotifyCollectionChangedAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NotifyCollectionChangedAction Action { System::Collections::Specialized::NotifyCollectionChangedAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Collections.Specialized.NotifyCollectionChangedAction" Usage="System.Windows.Controls.Primitives.ItemsChangedEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ItemsChangedEventArgs.ItemCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemCount : int" Usage="System.Windows.Controls.Primitives.ItemsChangedEventArgs.ItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ItemsChangedEventArgs.ItemUICount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemUICount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemUICount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemUICount : int" Usage="System.Windows.Controls.Primitives.ItemsChangedEventArgs.ItemUICount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ItemsChangedEventArgs.OldPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldPosition As GeneratorPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::GeneratorPosition OldPosition { System::Windows::Controls::Primitives::GeneratorPosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldPosition : System.Windows.Controls.Primitives.GeneratorPosition" Usage="System.Windows.Controls.Primitives.ItemsChangedEventArgs.OldPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ItemsChangedEventArgs.Position" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As GeneratorPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::GeneratorPosition Position { System::Windows::Controls::Primitives::GeneratorPosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Windows.Controls.Primitives.GeneratorPosition" Usage="System.Windows.Controls.Primitives.ItemsChangedEventArgs.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

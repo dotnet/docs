@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapAttributeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapAttributeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapAttributeAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type SoapAttributeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -119,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapAttributeAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapAttributeAttribute(System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapAttributeAttribute : string -&gt; System.Xml.Serialization.SoapAttributeAttribute" Usage="new System.Xml.Serialization.SoapAttributeAttribute attributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -160,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributeAttribute.AttributeName" />
       <MemberSignature Language="VB.NET" Value="Public Property AttributeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeName : string with get, set" Usage="System.Xml.Serialization.SoapAttributeAttribute.AttributeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -206,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributeAttribute.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : string with get, set" Usage="System.Xml.Serialization.SoapAttributeAttribute.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -312,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributeAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.SoapAttributeAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

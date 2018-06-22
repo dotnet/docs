@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.MiscellaneousBitsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MiscellaneousBitsAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MiscellaneousBitsAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MiscellaneousBitsAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.MiscellaneousBitsAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (miscellaneousBits As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MiscellaneousBitsAttribute(int miscellaneousBits);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.MiscellaneousBitsAttribute : int -&gt; Microsoft.VisualC.MiscellaneousBitsAttribute" Usage="new Microsoft.VisualC.MiscellaneousBitsAttribute miscellaneousBits" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualC.MiscellaneousBitsAttribute.m_dwAttrs" />
       <MemberSignature Language="VB.NET" Value="Public m_dwAttrs As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int m_dwAttrs;" />
+      <MemberSignature Language="F#" Value="val mutable m_dwAttrs : int" Usage="Microsoft.VisualC.MiscellaneousBitsAttribute.m_dwAttrs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>

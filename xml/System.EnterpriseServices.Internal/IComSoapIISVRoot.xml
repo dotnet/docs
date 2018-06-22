@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IComSoapIISVRoot" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComSoapIISVRoot" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComSoapIISVRoot" />
+  <TypeSignature Language="F#" Value="type IComSoapIISVRoot = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Create(System.String,System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Create (RootWeb As String, PhysicalDirectory As String, VirtualDirectory As String, ByRef Error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create(System::String ^ RootWeb, System::String ^ PhysicalDirectory, System::String ^ VirtualDirectory, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member Create : string * string * string *  -&gt; unit" Usage="iComSoapIISVRoot.Create (RootWeb, PhysicalDirectory, VirtualDirectory, Error)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(System.String,System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (RootWeb As String, PhysicalDirectory As String, VirtualDirectory As String, ByRef Error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::String ^ RootWeb, System::String ^ PhysicalDirectory, System::String ^ VirtualDirectory, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member Delete : string * string * string *  -&gt; unit" Usage="iComSoapIISVRoot.Delete (RootWeb, PhysicalDirectory, VirtualDirectory, Error)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

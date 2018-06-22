@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripDropDown.ToolStripDropDownAccessibleObject&#xA;Inherits ToolStrip.ToolStripAccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ToolStripDropDown::ToolStripDropDownAccessibleObject : System::Windows::Forms::ToolStrip::ToolStripAccessibleObject" />
+  <TypeSignature Language="F#" Value="type ToolStripDropDown.ToolStripDropDownAccessibleObject = class&#xA;    inherit ToolStrip.ToolStripAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject.#ctor(System.Windows.Forms.ToolStripDropDown)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ToolStripDropDown)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownAccessibleObject(System::Windows::Forms::ToolStripDropDown ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject : System.Windows.Forms.ToolStripDropDown -&gt; System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject" Usage="new System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject.Role" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

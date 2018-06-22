@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LegendItemOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum LegendItemOrder" />
   <TypeSignature Language="C++ CLI" Value="public enum class LegendItemOrder" />
+  <TypeSignature Language="F#" Value="type LegendItemOrder = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.ReversedSeriesOrder" />
       <MemberSignature Language="VB.NET" Value="ReversedSeriesOrder" />
       <MemberSignature Language="C++ CLI" Value="ReversedSeriesOrder" />
+      <MemberSignature Language="F#" Value="ReversedSeriesOrder = 2" Usage="System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.ReversedSeriesOrder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder" />
       <MemberSignature Language="VB.NET" Value="SameAsSeriesOrder" />
       <MemberSignature Language="C++ CLI" Value="SameAsSeriesOrder" />
+      <MemberSignature Language="F#" Value="SameAsSeriesOrder = 1" Usage="System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonFilterMenuButton" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonFilterMenuButton&#xA;Inherits RibbonMenuButton" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonFilterMenuButton : System::Windows::Controls::Ribbon::RibbonMenuButton" />
+  <TypeSignature Language="F#" Value="type RibbonFilterMenuButton = class&#xA;    inherit RibbonMenuButton" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonFilterMenuButton.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonFilterMenuButton.OnActivatingKeyTip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonFilterMenuButton.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonFilterMenuButton.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonFilterMenuButton.OnDismissPopup(System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDismissPopup (e As RibbonDismissPopupEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDismissPopup(System::Windows::Controls::Ribbon::RibbonDismissPopupEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDismissPopup : System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs -&gt; unit" Usage="ribbonFilterMenuButton.OnDismissPopup e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

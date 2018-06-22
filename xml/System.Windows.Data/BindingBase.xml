@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BindingBase&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingBase abstract : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type BindingBase = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.BindingGroupName" />
       <MemberSignature Language="VB.NET" Value="Public Property BindingGroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BindingGroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BindingGroupName : string with get, set" Usage="System.Windows.Data.BindingBase.BindingGroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.Delay" />
       <MemberSignature Language="VB.NET" Value="Public Property Delay As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Delay { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Delay : int with get, set" Usage="System.Windows.Data.BindingBase.Delay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.FallbackValue" />
       <MemberSignature Language="VB.NET" Value="Public Property FallbackValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ FallbackValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FallbackValue : obj with get, set" Usage="System.Windows.Data.BindingBase.FallbackValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingBase.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="bindingBase.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingBase.ShouldSerializeFallbackValue" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeFallbackValue () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeFallbackValue();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeFallbackValue : unit -&gt; bool" Usage="bindingBase.ShouldSerializeFallbackValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingBase.ShouldSerializeTargetNullValue" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTargetNullValue () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTargetNullValue();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTargetNullValue : unit -&gt; bool" Usage="bindingBase.ShouldSerializeTargetNullValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.StringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property StringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StringFormat : string with get, set" Usage="System.Windows.Data.BindingBase.StringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -328,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingBase.TargetNullValue" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetNullValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TargetNullValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetNullValue : obj with get, set" Usage="System.Windows.Data.BindingBase.TargetNullValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

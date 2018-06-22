@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.LogicalMethodTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum LogicalMethodTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class LogicalMethodTypes" />
+  <TypeSignature Language="F#" Value="type LogicalMethodTypes = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.LogicalMethodTypes.Async" />
       <MemberSignature Language="VB.NET" Value="Async" />
       <MemberSignature Language="C++ CLI" Value="Async" />
+      <MemberSignature Language="F#" Value="Async = 2" Usage="System.Web.Services.Protocols.LogicalMethodTypes.Async" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.LogicalMethodTypes.Sync" />
       <MemberSignature Language="VB.NET" Value="Sync" />
       <MemberSignature Language="C++ CLI" Value="Sync" />
+      <MemberSignature Language="F#" Value="Sync = 1" Usage="System.Web.Services.Protocols.LogicalMethodTypes.Sync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

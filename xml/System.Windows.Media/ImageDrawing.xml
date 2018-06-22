@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ImageDrawing" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageDrawing&#xA;Inherits Drawing" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageDrawing sealed : System::Windows::Media::Drawing" />
+  <TypeSignature Language="F#" Value="type ImageDrawing = class&#xA;    inherit Drawing" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.ImageSource imageSource, valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.#ctor(System.Windows.Media.ImageSource,System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageDrawing(System::Windows::Media::ImageSource ^ imageSource, System::Windows::Rect rect);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.ImageDrawing : System.Windows.Media.ImageSource * System.Windows.Rect -&gt; System.Windows.Media.ImageDrawing" Usage="new System.Windows.Media.ImageDrawing (imageSource, rect)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ImageDrawing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ImageDrawing ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.ImageDrawing" Usage="imageDrawing.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As ImageDrawing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ImageDrawing ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.ImageDrawing" Usage="imageDrawing.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="imageDrawing.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ImageDrawing.ImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageSource As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Media.ImageDrawing.ImageSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ImageDrawing.ImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ImageDrawing.ImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ImageDrawing.Rect" />
       <MemberSignature Language="VB.NET" Value="Public Property Rect As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Rect { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
+      <MemberSignature Language="F#" Value="member this.Rect : System.Windows.Rect with get, set" Usage="System.Windows.Media.ImageDrawing.Rect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -266,6 +274,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ImageDrawing.RectProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RectProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RectProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RectProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ImageDrawing.RectProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

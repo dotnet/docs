@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.DpapiProtectedConfigurationProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DpapiProtectedConfigurationProvider&#xA;Inherits ProtectedConfigurationProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DpapiProtectedConfigurationProvider sealed : System::Configuration::ProtectedConfigurationProvider" />
+  <TypeSignature Language="F#" Value="type DpapiProtectedConfigurationProvider = class&#xA;    inherit ProtectedConfigurationProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Decrypt(System.Xml.XmlNode)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decrypt (encrypted_node As XmlNode) As XmlNode" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ Decrypt(System::Xml::XmlNode ^ encrypted_node);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Decrypt : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="dpapiProtectedConfigurationProvider.Decrypt encrypted_node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -155,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Encrypt(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encrypt (node As XmlNode) As XmlNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ Encrypt(System::Xml::XmlNode ^ node);" />
+      <MemberSignature Language="F#" Value="override this.Encrypt : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="dpapiProtectedConfigurationProvider.Encrypt node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -183,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, configurationValues As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ configurationValues);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="dpapiProtectedConfigurationProvider.Initialize (name, configurationValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.DpapiProtectedConfigurationProvider.UseMachineProtection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseMachineProtection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseMachineProtection { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UseMachineProtection : bool" Usage="System.Configuration.DpapiProtectedConfigurationProvider.UseMachineProtection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

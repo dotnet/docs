@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.AppDomainFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AppDomainFactory&#xA;Implements IAppDomainFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppDomainFactory sealed : System::Web::Hosting::IAppDomainFactory" />
+  <TypeSignature Language="F#" Value="type AppDomainFactory = class&#xA;    interface IAppDomainFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainFactory.Create(System.String,System.String,System.String,System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (module As String, typeName As String, appId As String, appPath As String, strUrlOfAppOrigin As String, iZone As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::String ^ module, System::String ^ typeName, System::String ^ appId, System::String ^ appPath, System::String ^ strUrlOfAppOrigin, int iZone);" />
+      <MemberSignature Language="F#" Value="abstract member Create : string * string * string * string * string * int -&gt; obj&#xA;override this.Create : string * string * string * string * string * int -&gt; obj" Usage="appDomainFactory.Create (module, typeName, appId, appPath, strUrlOfAppOrigin, iZone)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainFactory.Create(System.String,System.String,System.String,System.String,System.String,System.Int32)</InterfaceMember>

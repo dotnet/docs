@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewItemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DrawListViewItemEventHandler(sender As Object, e As DrawListViewItemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DrawListViewItemEventHandler(System::Object ^ sender, DrawListViewItemEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DrawListViewItemEventHandler = delegate of obj * DrawListViewItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DisplayAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DisplayAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DisplayAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DisplayAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoGenerateField As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateField { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoGenerateField : bool with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoGenerateFilter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateFilter { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoGenerateFilter : bool with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -180,6 +183,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -252,6 +256,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateField" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAutoGenerateField () As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;bool&gt; GetAutoGenerateField();" />
+      <MemberSignature Language="F#" Value="member this.GetAutoGenerateField : unit -&gt; Nullable&lt;bool&gt;" Usage="displayAttribute.GetAutoGenerateField " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -279,6 +284,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateFilter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAutoGenerateFilter () As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;bool&gt; GetAutoGenerateFilter();" />
+      <MemberSignature Language="F#" Value="member this.GetAutoGenerateFilter : unit -&gt; Nullable&lt;bool&gt;" Usage="displayAttribute.GetAutoGenerateFilter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -306,6 +312,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDescription () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDescription();" />
+      <MemberSignature Language="F#" Value="member this.GetDescription : unit -&gt; string" Usage="displayAttribute.GetDescription " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -341,6 +348,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetGroupName" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGroupName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetGroupName();" />
+      <MemberSignature Language="F#" Value="member this.GetGroupName : unit -&gt; string" Usage="displayAttribute.GetGroupName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -368,6 +376,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetName" />
       <MemberSignature Language="VB.NET" Value="Public Function GetName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetName();" />
+      <MemberSignature Language="F#" Value="member this.GetName : unit -&gt; string" Usage="displayAttribute.GetName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -403,6 +412,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetOrder" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrder () As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;int&gt; GetOrder();" />
+      <MemberSignature Language="F#" Value="member this.GetOrder : unit -&gt; Nullable&lt;int&gt;" Usage="displayAttribute.GetOrder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -437,6 +447,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetPrompt" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrompt () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPrompt();" />
+      <MemberSignature Language="F#" Value="member this.GetPrompt : unit -&gt; string" Usage="displayAttribute.GetPrompt " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -471,6 +482,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetShortName" />
       <MemberSignature Language="VB.NET" Value="Public Function GetShortName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetShortName();" />
+      <MemberSignature Language="F#" Value="member this.GetShortName : unit -&gt; string" Usage="displayAttribute.GetShortName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -505,6 +517,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -538,6 +551,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -610,6 +624,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Order" />
       <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -680,6 +695,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" />
       <MemberSignature Language="VB.NET" Value="Public Property Prompt As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prompt { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Prompt : string with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -750,6 +766,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ResourceType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceType : Type with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -783,6 +800,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" />
       <MemberSignature Language="VB.NET" Value="Public Property ShortName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShortName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShortName : string with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

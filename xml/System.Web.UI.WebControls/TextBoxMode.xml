@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TextBoxMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextBoxMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextBoxMode" />
+  <TypeSignature Language="F#" Value="type TextBoxMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Color" />
       <MemberSignature Language="VB.NET" Value="Color" />
       <MemberSignature Language="C++ CLI" Value="Color" />
+      <MemberSignature Language="F#" Value="Color = 3" Usage="System.Web.UI.WebControls.TextBoxMode.Color" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 4" Usage="System.Web.UI.WebControls.TextBoxMode.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.DateTime" />
       <MemberSignature Language="VB.NET" Value="DateTime" />
       <MemberSignature Language="C++ CLI" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 5" Usage="System.Web.UI.WebControls.TextBoxMode.DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.DateTimeLocal" />
       <MemberSignature Language="VB.NET" Value="DateTimeLocal" />
       <MemberSignature Language="C++ CLI" Value="DateTimeLocal" />
+      <MemberSignature Language="F#" Value="DateTimeLocal = 6" Usage="System.Web.UI.WebControls.TextBoxMode.DateTimeLocal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Email" />
       <MemberSignature Language="VB.NET" Value="Email" />
       <MemberSignature Language="C++ CLI" Value="Email" />
+      <MemberSignature Language="F#" Value="Email = 7" Usage="System.Web.UI.WebControls.TextBoxMode.Email" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Month" />
       <MemberSignature Language="VB.NET" Value="Month" />
       <MemberSignature Language="C++ CLI" Value="Month" />
+      <MemberSignature Language="F#" Value="Month = 8" Usage="System.Web.UI.WebControls.TextBoxMode.Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.MultiLine" />
       <MemberSignature Language="VB.NET" Value="MultiLine" />
       <MemberSignature Language="C++ CLI" Value="MultiLine" />
+      <MemberSignature Language="F#" Value="MultiLine = 1" Usage="System.Web.UI.WebControls.TextBoxMode.MultiLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Number" />
       <MemberSignature Language="VB.NET" Value="Number" />
       <MemberSignature Language="C++ CLI" Value="Number" />
+      <MemberSignature Language="F#" Value="Number = 9" Usage="System.Web.UI.WebControls.TextBoxMode.Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Password" />
       <MemberSignature Language="VB.NET" Value="Password" />
       <MemberSignature Language="C++ CLI" Value="Password" />
+      <MemberSignature Language="F#" Value="Password = 2" Usage="System.Web.UI.WebControls.TextBoxMode.Password" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Phone" />
       <MemberSignature Language="VB.NET" Value="Phone" />
       <MemberSignature Language="C++ CLI" Value="Phone" />
+      <MemberSignature Language="F#" Value="Phone = 12" Usage="System.Web.UI.WebControls.TextBoxMode.Phone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Range" />
       <MemberSignature Language="VB.NET" Value="Range" />
       <MemberSignature Language="C++ CLI" Value="Range" />
+      <MemberSignature Language="F#" Value="Range = 10" Usage="System.Web.UI.WebControls.TextBoxMode.Range" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -248,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Search" />
       <MemberSignature Language="VB.NET" Value="Search" />
       <MemberSignature Language="C++ CLI" Value="Search" />
+      <MemberSignature Language="F#" Value="Search = 11" Usage="System.Web.UI.WebControls.TextBoxMode.Search" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.SingleLine" />
       <MemberSignature Language="VB.NET" Value="SingleLine" />
       <MemberSignature Language="C++ CLI" Value="SingleLine" />
+      <MemberSignature Language="F#" Value="SingleLine = 0" Usage="System.Web.UI.WebControls.TextBoxMode.SingleLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -286,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Time" />
       <MemberSignature Language="VB.NET" Value="Time" />
       <MemberSignature Language="C++ CLI" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 13" Usage="System.Web.UI.WebControls.TextBoxMode.Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -305,6 +320,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Url" />
       <MemberSignature Language="VB.NET" Value="Url" />
       <MemberSignature Language="C++ CLI" Value="Url" />
+      <MemberSignature Language="F#" Value="Url = 14" Usage="System.Web.UI.WebControls.TextBoxMode.Url" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Week" />
       <MemberSignature Language="VB.NET" Value="Week" />
       <MemberSignature Language="C++ CLI" Value="Week" />
+      <MemberSignature Language="F#" Value="Week = 15" Usage="System.Web.UI.WebControls.TextBoxMode.Week" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

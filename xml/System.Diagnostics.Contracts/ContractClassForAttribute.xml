@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractClassForAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractClassForAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContractClassForAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ContractClassForAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractClassForAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeContractsAreFor As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractClassForAttribute(Type ^ typeContractsAreFor);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Contracts.ContractClassForAttribute : Type -&gt; System.Diagnostics.Contracts.ContractClassForAttribute" Usage="new System.Diagnostics.Contracts.ContractClassForAttribute typeContractsAreFor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractClassForAttribute.TypeContractsAreFor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeContractsAreFor As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TypeContractsAreFor { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeContractsAreFor : Type" Usage="System.Diagnostics.Contracts.ContractClassForAttribute.TypeContractsAreFor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

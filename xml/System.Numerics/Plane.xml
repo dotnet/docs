@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Numerics.Plane" />
   <TypeSignature Language="VB.NET" Value="Public Structure Plane&#xA;Implements IEquatable(Of Plane)" />
   <TypeSignature Language="C++ CLI" Value="public value class Plane : IEquatable&lt;System::Numerics::Plane&gt;" />
+  <TypeSignature Language="F#" Value="type Plane = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Numerics.Vectors</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.#ctor(System.Numerics.Vector4)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Vector4)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Plane(System::Numerics::Vector4 value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Plane : System.Numerics.Vector4 -&gt; System.Numerics.Plane" Usage="new System.Numerics.Plane value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.#ctor(System.Numerics.Vector3,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (normal As Vector3, d As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Plane(System::Numerics::Vector3 normal, float d);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Plane : System.Numerics.Vector3 * single -&gt; System.Numerics.Plane" Usage="new System.Numerics.Plane (normal, d)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Single, y As Single, z As Single, d As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Plane(float x, float y, float z, float d);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Plane : single * single * single * single -&gt; System.Numerics.Plane" Usage="new System.Numerics.Plane (x, y, z, d)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.CreateFromVertices(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromVertices (point1 As Vector3, point2 As Vector3, point3 As Vector3) As Plane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Plane CreateFromVertices(System::Numerics::Vector3 point1, System::Numerics::Vector3 point2, System::Numerics::Vector3 point3);" />
+      <MemberSignature Language="F#" Value="static member CreateFromVertices : System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Plane" Usage="System.Numerics.Plane.CreateFromVertices (point1, point2, point3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Plane.D" />
       <MemberSignature Language="VB.NET" Value="Public D As Single " />
       <MemberSignature Language="C++ CLI" Value="public: float D;" />
+      <MemberSignature Language="F#" Value="val mutable D : single" Usage="System.Numerics.Plane.D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Dot(valuetype System.Numerics.Plane plane, valuetype System.Numerics.Vector4 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.Dot(System.Numerics.Plane,System.Numerics.Vector4)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Dot(System::Numerics::Plane plane, System::Numerics::Vector4 value);" />
+      <MemberSignature Language="F#" Value="static member Dot : System.Numerics.Plane * System.Numerics.Vector4 -&gt; single" Usage="System.Numerics.Plane.Dot (plane, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -269,6 +276,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 DotCoordinate(valuetype System.Numerics.Plane plane, valuetype System.Numerics.Vector3 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.DotCoordinate(System.Numerics.Plane,System.Numerics.Vector3)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float DotCoordinate(System::Numerics::Plane plane, System::Numerics::Vector3 value);" />
+      <MemberSignature Language="F#" Value="static member DotCoordinate : System.Numerics.Plane * System.Numerics.Vector3 -&gt; single" Usage="System.Numerics.Plane.DotCoordinate (plane, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -306,6 +314,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 DotNormal(valuetype System.Numerics.Plane plane, valuetype System.Numerics.Vector3 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.DotNormal(System.Numerics.Plane,System.Numerics.Vector3)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float DotNormal(System::Numerics::Plane plane, System::Numerics::Vector3 value);" />
+      <MemberSignature Language="F#" Value="static member DotNormal : System.Numerics.Plane * System.Numerics.Vector3 -&gt; single" Usage="System.Numerics.Plane.DotNormal (plane, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.Equals(System.Numerics.Plane)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Plane) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Numerics::Plane other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Numerics.Plane -&gt; bool" Usage="plane.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -402,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="plane.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -446,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="plane.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -479,6 +491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Plane.Normal" />
       <MemberSignature Language="VB.NET" Value="Public Normal As Vector3 " />
       <MemberSignature Language="C++ CLI" Value="public: System::Numerics::Vector3 Normal;" />
+      <MemberSignature Language="F#" Value="val mutable Normal : System.Numerics.Vector3" Usage="System.Numerics.Plane.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -510,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.Normalize(System.Numerics.Plane)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Normalize (value As Plane) As Plane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Plane Normalize(System::Numerics::Plane value);" />
+      <MemberSignature Language="F#" Value="static member Normalize : System.Numerics.Plane -&gt; System.Numerics.Plane" Usage="System.Numerics.Plane.Normalize value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -546,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.op_Equality(System.Numerics.Plane,System.Numerics.Plane)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (value1 As Plane, value2 As Plane) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::Plane value1, System::Numerics::Plane value2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Numerics.Plane * System.Numerics.Plane -&gt; bool" Usage="value1 = value2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -594,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.op_Inequality(System.Numerics.Plane,System.Numerics.Plane)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (value1 As Plane, value2 As Plane) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::Plane value1, System::Numerics::Plane value2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Numerics.Plane * System.Numerics.Plane -&gt; bool" Usage="System.Numerics.Plane.op_Inequality (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -640,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="plane.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -690,6 +707,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Plane Transform(valuetype System.Numerics.Plane plane, valuetype System.Numerics.Matrix4x4 matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.Transform(System.Numerics.Plane,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Plane Transform(System::Numerics::Plane plane, System::Numerics::Matrix4x4 matrix);" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Numerics.Plane * System.Numerics.Matrix4x4 -&gt; System.Numerics.Plane" Usage="System.Numerics.Plane.Transform (plane, matrix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -734,6 +752,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Plane Transform(valuetype System.Numerics.Plane plane, valuetype System.Numerics.Quaternion rotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Plane.Transform(System.Numerics.Plane,System.Numerics.Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Plane Transform(System::Numerics::Plane plane, System::Numerics::Quaternion rotation);" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Numerics.Plane * System.Numerics.Quaternion -&gt; System.Numerics.Plane" Usage="System.Numerics.Plane.Transform (plane, rotation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>

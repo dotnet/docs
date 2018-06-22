@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ExpandCollapsePatternIdentifiers" />
   <TypeSignature Language="VB.NET" Value="Public Class ExpandCollapsePatternIdentifiers" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpandCollapsePatternIdentifiers abstract sealed" />
+  <TypeSignature Language="F#" Value="type ExpandCollapsePatternIdentifiers = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ExpandCollapsePatternIdentifiers.ExpandCollapseStateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpandCollapseStateProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ExpandCollapseStateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExpandCollapseStateProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.ExpandCollapsePatternIdentifiers.ExpandCollapseStateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ExpandCollapsePatternIdentifiers.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.ExpandCollapsePatternIdentifiers.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

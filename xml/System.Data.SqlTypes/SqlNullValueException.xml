@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlNullValueException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlNullValueException&#xA;Inherits SqlTypeException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlNullValueException sealed : System::Data::SqlTypes::SqlTypeException" />
+  <TypeSignature Language="F#" Value="type SqlNullValueException = class&#xA;    inherit SqlTypeException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlNullValueException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNullValueException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlNullValueException : string -&gt; System.Data.SqlTypes.SqlNullValueException" Usage="new System.Data.SqlTypes.SqlNullValueException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlNullValueException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNullValueException(System::String ^ message, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlNullValueException : string * Exception -&gt; System.Data.SqlTypes.SqlNullValueException" Usage="new System.Data.SqlTypes.SqlNullValueException (message, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlTextWriterInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXmlTextWriterInitializer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXmlTextWriterInitializer" />
+  <TypeSignature Language="F#" Value="type IXmlTextWriterInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutput(class System.IO.Stream stream, class System.Text.Encoding encoding, bool ownsStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlTextWriterInitializer.SetOutput(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutput(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool ownsStream);" />
+      <MemberSignature Language="F#" Value="abstract member SetOutput : System.IO.Stream * System.Text.Encoding * bool -&gt; unit" Usage="iXmlTextWriterInitializer.SetOutput (stream, encoding, ownsStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Environment.SpecialFolderOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum Environment.SpecialFolderOption" />
   <TypeSignature Language="C++ CLI" Value="public: enum class Environment::SpecialFolderOption" />
+  <TypeSignature Language="F#" Value="type Environment.SpecialFolderOption = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolderOption.Create" />
       <MemberSignature Language="VB.NET" Value="Create" />
       <MemberSignature Language="C++ CLI" Value="Create" />
+      <MemberSignature Language="F#" Value="Create = 32768" Usage="System.Environment.SpecialFolderOption.Create" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolderOption.DoNotVerify" />
       <MemberSignature Language="VB.NET" Value="DoNotVerify" />
       <MemberSignature Language="C++ CLI" Value="DoNotVerify" />
+      <MemberSignature Language="F#" Value="DoNotVerify = 16384" Usage="System.Environment.SpecialFolderOption.DoNotVerify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolderOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Environment.SpecialFolderOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

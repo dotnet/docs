@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ITaskFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITaskFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITaskFactory" />
+  <TypeSignature Language="F#" Value="type ITaskFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskFactory.CleanupTask(Microsoft.Build.Framework.ITask)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CleanupTask (task As ITask)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CleanupTask(Microsoft::Build::Framework::ITask ^ task);" />
+      <MemberSignature Language="F#" Value="abstract member CleanupTask : Microsoft.Build.Framework.ITask -&gt; unit" Usage="iTaskFactory.CleanupTask task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskFactory.CreateTask(Microsoft.Build.Framework.IBuildEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateTask (taskFactoryLoggingHost As IBuildEngine) As ITask" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Framework::ITask ^ CreateTask(Microsoft::Build::Framework::IBuildEngine ^ taskFactoryLoggingHost);" />
+      <MemberSignature Language="F#" Value="abstract member CreateTask : Microsoft.Build.Framework.IBuildEngine -&gt; Microsoft.Build.Framework.ITask" Usage="iTaskFactory.CreateTask taskFactoryLoggingHost" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskFactory.FactoryName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FactoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FactoryName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FactoryName : string" Usage="Microsoft.Build.Framework.ITaskFactory.FactoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskFactory.GetTaskParameters" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTaskParameters () As TaskPropertyInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Microsoft::Build::Framework::TaskPropertyInfo ^&gt; ^ GetTaskParameters();" />
+      <MemberSignature Language="F#" Value="abstract member GetTaskParameters : unit -&gt; Microsoft.Build.Framework.TaskPropertyInfo[]" Usage="iTaskFactory.GetTaskParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskFactory.Initialize(System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.Build.Framework.TaskPropertyInfo},System.String,Microsoft.Build.Framework.IBuildEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Function Initialize (taskName As String, parameterGroup As IDictionary(Of String, TaskPropertyInfo), taskBody As String, taskFactoryLoggingHost As IBuildEngine) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Initialize(System::String ^ taskName, System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Framework::TaskPropertyInfo ^&gt; ^ parameterGroup, System::String ^ taskBody, Microsoft::Build::Framework::IBuildEngine ^ taskFactoryLoggingHost);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : string * System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Framework.TaskPropertyInfo&gt; * string * Microsoft.Build.Framework.IBuildEngine -&gt; bool" Usage="iTaskFactory.Initialize (taskName, parameterGroup, taskBody, taskFactoryLoggingHost)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskFactory.TaskType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TaskType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskType : Type" Usage="Microsoft.Build.Framework.ITaskFactory.TaskType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

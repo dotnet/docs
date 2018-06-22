@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.MemberChangeConflict" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemberChangeConflict" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberChangeConflict sealed" />
+  <TypeSignature Language="F#" Value="type MemberChangeConflict = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.MemberChangeConflict.CurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CurrentValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentValue : obj" Usage="System.Data.Linq.MemberChangeConflict.CurrentValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.MemberChangeConflict.DatabaseValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DatabaseValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DatabaseValue : obj" Usage="System.Data.Linq.MemberChangeConflict.DatabaseValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.MemberChangeConflict.IsModified" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsModified As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsModified { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsModified : bool" Usage="System.Data.Linq.MemberChangeConflict.IsModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.MemberChangeConflict.IsResolved" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsResolved As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResolved { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsResolved : bool" Usage="System.Data.Linq.MemberChangeConflict.IsResolved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.MemberChangeConflict.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ Member { System::Reflection::MemberInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Reflection.MemberInfo" Usage="System.Data.Linq.MemberChangeConflict.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.MemberChangeConflict.OriginalValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OriginalValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalValue : obj" Usage="System.Data.Linq.MemberChangeConflict.OriginalValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resolve(valuetype System.Data.Linq.RefreshMode refreshMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.MemberChangeConflict.Resolve(System.Data.Linq.RefreshMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve(System::Data::Linq::RefreshMode refreshMode);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Data.Linq.RefreshMode -&gt; unit" Usage="memberChangeConflict.Resolve refreshMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.MemberChangeConflict.Resolve(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resolve (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : obj -&gt; unit" Usage="memberChangeConflict.Resolve value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

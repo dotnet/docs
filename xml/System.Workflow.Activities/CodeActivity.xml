@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CodeActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeActivity&#xA;Inherits Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeActivity sealed : System::Workflow::ComponentModel::Activity" />
+  <TypeSignature Language="F#" Value="type CodeActivity = class&#xA;    inherit Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@ this.Airline = new CodeActivity();
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CodeActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.CodeActivity : string -&gt; System.Workflow.Activities.CodeActivity" Usage="new System.Workflow.Activities.CodeActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -122,6 +124,7 @@ this.Airline = new CodeActivity();
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CodeActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="codeActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -146,6 +149,7 @@ this.Airline = new CodeActivity();
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.CodeActivity.ExecuteCode" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ExecuteCode As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ExecuteCode;" />
+      <MemberSignature Language="F#" Value="member this.ExecuteCode : EventHandler " Usage="member this.ExecuteCode : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -180,6 +184,7 @@ this.Airline = new CodeActivity();
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.CodeActivity.ExecuteCodeEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExecuteCodeEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ExecuteCodeEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExecuteCodeEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.CodeActivity.ExecuteCodeEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

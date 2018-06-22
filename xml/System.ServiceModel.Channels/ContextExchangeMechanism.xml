@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ContextExchangeMechanism" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContextExchangeMechanism" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContextExchangeMechanism" />
+  <TypeSignature Language="F#" Value="type ContextExchangeMechanism = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader" />
       <MemberSignature Language="VB.NET" Value="ContextSoapHeader" />
       <MemberSignature Language="C++ CLI" Value="ContextSoapHeader" />
+      <MemberSignature Language="F#" Value="ContextSoapHeader = 0" Usage="System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ContextExchangeMechanism.HttpCookie" />
       <MemberSignature Language="VB.NET" Value="HttpCookie" />
       <MemberSignature Language="C++ CLI" Value="HttpCookie" />
+      <MemberSignature Language="F#" Value="HttpCookie = 1" Usage="System.ServiceModel.Channels.ContextExchangeMechanism.HttpCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

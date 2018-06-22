@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SchemaType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SchemaType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SchemaType" />
+  <TypeSignature Language="F#" Value="type SchemaType = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SchemaType.Mapped" />
       <MemberSignature Language="VB.NET" Value="Mapped" />
       <MemberSignature Language="C++ CLI" Value="Mapped" />
+      <MemberSignature Language="F#" Value="Mapped = 2" Usage="System.Data.SchemaType.Mapped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SchemaType.Source" />
       <MemberSignature Language="VB.NET" Value="Source" />
       <MemberSignature Language="C++ CLI" Value="Source" />
+      <MemberSignature Language="F#" Value="Source = 1" Usage="System.Data.SchemaType.Source" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

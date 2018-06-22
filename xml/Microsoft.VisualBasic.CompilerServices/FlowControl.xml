@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.FlowControl" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FlowControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlowControl sealed" />
+  <TypeSignature Language="F#" Value="type FlowControl = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.CheckForSyncLockOnValueType(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CheckForSyncLockOnValueType (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CheckForSyncLockOnValueType(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member CheckForSyncLockOnValueType : obj -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.CheckForSyncLockOnValueType obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachInArr(System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEachInArr (ary As Array) As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerator ^ ForEachInArr(Array ^ ary);" />
+      <MemberSignature Language="F#" Value="static member ForEachInArr : Array -&gt; System.Collections.IEnumerator" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachInArr ary" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachInObj(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEachInObj (obj As Object) As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerator ^ ForEachInObj(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member ForEachInObj : obj -&gt; System.Collections.IEnumerator" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachInObj obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachNextObj(System.Object@,System.Collections.IEnumerator)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEachNextObj (ByRef obj As Object, enumerator As IEnumerator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForEachNextObj(System::Object ^ % obj, System::Collections::IEnumerator ^ enumerator);" />
+      <MemberSignature Language="F#" Value="static member ForEachNextObj :  * System.Collections.IEnumerator -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachNextObj (obj, enumerator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForLoopInitObj(System.Object,System.Object,System.Object,System.Object,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForLoopInitObj (Counter As Object, Start As Object, Limit As Object, StepValue As Object, ByRef LoopForResult As Object, ByRef CounterResult As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForLoopInitObj(System::Object ^ Counter, System::Object ^ Start, System::Object ^ Limit, System::Object ^ StepValue, System::Object ^ % LoopForResult, System::Object ^ % CounterResult);" />
+      <MemberSignature Language="F#" Value="static member ForLoopInitObj : obj * obj * obj * obj *  *  -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.ForLoopInitObj (Counter, Start, Limit, StepValue, LoopForResult, CounterResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckDec(System.Decimal,System.Decimal,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForNextCheckDec (count As Decimal, limit As Decimal, StepValue As Decimal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForNextCheckDec(System::Decimal count, System::Decimal limit, System::Decimal StepValue);" />
+      <MemberSignature Language="F#" Value="static member ForNextCheckDec : decimal * decimal * decimal -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckDec (count, limit, StepValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -246,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckObj(System.Object,System.Object,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForNextCheckObj (Counter As Object, LoopObj As Object, ByRef CounterResult As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForNextCheckObj(System::Object ^ Counter, System::Object ^ LoopObj, System::Object ^ % CounterResult);" />
+      <MemberSignature Language="F#" Value="static member ForNextCheckObj : obj * obj *  -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckObj (Counter, LoopObj, CounterResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckR4(System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForNextCheckR4 (count As Single, limit As Single, StepValue As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForNextCheckR4(float count, float limit, float StepValue);" />
+      <MemberSignature Language="F#" Value="static member ForNextCheckR4 : single * single * single -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckR4 (count, limit, StepValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -320,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckR8(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForNextCheckR8 (count As Double, limit As Double, StepValue As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForNextCheckR8(double count, double limit, double StepValue);" />
+      <MemberSignature Language="F#" Value="static member ForNextCheckR8 : double * double * double -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckR8 (count, limit, StepValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

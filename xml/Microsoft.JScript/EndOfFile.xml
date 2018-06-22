@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.EndOfFile" />
   <TypeSignature Language="VB.NET" Value="Public Class EndOfFile&#xA;Inherits ParserException" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndOfFile : Microsoft::JScript::ParserException" />
+  <TypeSignature Language="F#" Value="type EndOfFile = class&#xA;    inherit ParserException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class NetworkAvailableEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetworkAvailableEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type NetworkAvailableEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (networkAvailable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkAvailableEventArgs(bool networkAvailable);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs : bool -&gt; Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs" Usage="new Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs networkAvailable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.IsNetworkAvailable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNetworkAvailable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNetworkAvailable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNetworkAvailable : bool" Usage="Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.IsNetworkAvailable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

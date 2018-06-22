@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectorySynchronizationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum DirectorySynchronizationOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class DirectorySynchronizationOptions" />
+  <TypeSignature Language="F#" Value="type DirectorySynchronizationOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.IncrementalValues" />
       <MemberSignature Language="VB.NET" Value="IncrementalValues" />
       <MemberSignature Language="C++ CLI" Value="IncrementalValues" />
+      <MemberSignature Language="F#" Value="IncrementalValues = 2147483648" Usage="System.DirectoryServices.DirectorySynchronizationOptions.IncrementalValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.DirectorySynchronizationOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.ObjectSecurity" />
       <MemberSignature Language="VB.NET" Value="ObjectSecurity" />
       <MemberSignature Language="C++ CLI" Value="ObjectSecurity" />
+      <MemberSignature Language="F#" Value="ObjectSecurity = 1" Usage="System.DirectoryServices.DirectorySynchronizationOptions.ObjectSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.ParentsFirst" />
       <MemberSignature Language="VB.NET" Value="ParentsFirst" />
       <MemberSignature Language="C++ CLI" Value="ParentsFirst" />
+      <MemberSignature Language="F#" Value="ParentsFirst = 2048" Usage="System.DirectoryServices.DirectorySynchronizationOptions.ParentsFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectorySynchronizationOptions.PublicDataOnly" />
       <MemberSignature Language="VB.NET" Value="PublicDataOnly" />
       <MemberSignature Language="C++ CLI" Value="PublicDataOnly" />
+      <MemberSignature Language="F#" Value="PublicDataOnly = 8192" Usage="System.DirectoryServices.DirectorySynchronizationOptions.PublicDataOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

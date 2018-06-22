@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationRule" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ValidationRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationRule abstract" />
+  <TypeSignature Language="F#" Value="type ValidationRule = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Controls.ValidationStep validationStep, bool validatesOnTargetUpdated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationRule.#ctor(System.Windows.Controls.ValidationStep,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ValidationRule(System::Windows::Controls::ValidationStep validationStep, bool validatesOnTargetUpdated);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.ValidationRule : System.Windows.Controls.ValidationStep * bool -&gt; System.Windows.Controls.ValidationRule" Usage="new System.Windows.Controls.ValidationRule (validationStep, validatesOnTargetUpdated)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Controls.ValidationResult Validate(object value, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Controls::ValidationResult ^ Validate(System::Object ^ value, System::Globalization::CultureInfo ^ cultureInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : obj * System.Globalization.CultureInfo -&gt; System.Windows.Controls.ValidationResult" Usage="validationRule.Validate (value, cultureInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Controls.ValidationResult Validate(object value, class System.Globalization.CultureInfo cultureInfo, class System.Windows.Data.BindingExpressionBase owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo,System.Windows.Data.BindingExpressionBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Controls::ValidationResult ^ Validate(System::Object ^ value, System::Globalization::CultureInfo ^ cultureInfo, System::Windows::Data::BindingExpressionBase ^ owner);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : obj * System.Globalization.CultureInfo * System.Windows.Data.BindingExpressionBase -&gt; System.Windows.Controls.ValidationResult&#xA;override this.Validate : obj * System.Globalization.CultureInfo * System.Windows.Data.BindingExpressionBase -&gt; System.Windows.Controls.ValidationResult" Usage="validationRule.Validate (value, cultureInfo, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Controls.ValidationResult Validate(object value, class System.Globalization.CultureInfo cultureInfo, class System.Windows.Data.BindingGroup owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo,System.Windows.Data.BindingGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Controls::ValidationResult ^ Validate(System::Object ^ value, System::Globalization::CultureInfo ^ cultureInfo, System::Windows::Data::BindingGroup ^ owner);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : obj * System.Globalization.CultureInfo * System.Windows.Data.BindingGroup -&gt; System.Windows.Controls.ValidationResult&#xA;override this.Validate : obj * System.Globalization.CultureInfo * System.Windows.Data.BindingGroup -&gt; System.Windows.Controls.ValidationResult" Usage="validationRule.Validate (value, cultureInfo, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationRule.ValidatesOnTargetUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnTargetUpdated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnTargetUpdated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatesOnTargetUpdated : bool with get, set" Usage="System.Windows.Controls.ValidationRule.ValidatesOnTargetUpdated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationRule.ValidationStep" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidationStep As ValidationStep" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ValidationStep ValidationStep { System::Windows::Controls::ValidationStep get(); void set(System::Windows::Controls::ValidationStep value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationStep : System.Windows.Controls.ValidationStep with get, set" Usage="System.Windows.Controls.ValidationRule.ValidationStep" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

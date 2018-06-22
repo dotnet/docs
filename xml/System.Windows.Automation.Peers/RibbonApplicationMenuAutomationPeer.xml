@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonApplicationMenuAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonApplicationMenuAutomationPeer&#xA;Inherits RibbonMenuButtonAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonApplicationMenuAutomationPeer : System::Windows::Automation::Peers::RibbonMenuButtonAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonApplicationMenuAutomationPeer = class&#xA;    inherit RibbonMenuButtonAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonApplicationMenuAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonApplicationMenu)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonApplicationMenu)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonApplicationMenuAutomationPeer(System::Windows::Controls::Ribbon::RibbonApplicationMenu ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonApplicationMenuAutomationPeer : System.Windows.Controls.Ribbon.RibbonApplicationMenu -&gt; System.Windows.Automation.Peers.RibbonApplicationMenuAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonApplicationMenuAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonApplicationMenuAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="ribbonApplicationMenuAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

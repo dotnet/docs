@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Queryable" />
   <TypeSignature Language="VB.NET" Value="Public Module Queryable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Queryable abstract sealed" />
+  <TypeSignature Language="F#" Value="type Queryable = class" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Queryable</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Aggregate``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``0,``0}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Aggregate(Of TSource) (source As IQueryable(Of TSource), func As Expression(Of Func(Of TSource, TSource, TSource))) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource Aggregate(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TSource, TSource&gt; ^&gt; ^ func);" />
+      <MemberSignature Language="F#" Value="static member Aggregate : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Source, 'Source&gt;&gt; -&gt; 'Source" Usage="System.Linq.Queryable.Aggregate (source, func)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Aggregate``2(System.Linq.IQueryable{``0},``1,System.Linq.Expressions.Expression{System.Func{``1,``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Aggregate(Of TSource, TAccumulate) (source As IQueryable(Of TSource), seed As TAccumulate, func As Expression(Of Func(Of TAccumulate, TSource, TAccumulate))) As TAccumulate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TAccumulate&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TAccumulate Aggregate(System::Linq::IQueryable&lt;TSource&gt; ^ source, TAccumulate seed, System::Linq::Expressions::Expression&lt;Func&lt;TAccumulate, TSource, TAccumulate&gt; ^&gt; ^ func);" />
+      <MemberSignature Language="F#" Value="static member Aggregate : System.Linq.IQueryable&lt;'Source&gt; * 'Accumulate * System.Linq.Expressions.Expression&lt;Func&lt;'Accumulate, 'Source, 'Accumulate&gt;&gt; -&gt; 'Accumulate" Usage="System.Linq.Queryable.Aggregate (source, seed, func)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Aggregate``3(System.Linq.IQueryable{``0},``1,System.Linq.Expressions.Expression{System.Func{``1,``0,``1}},System.Linq.Expressions.Expression{System.Func{``1,``2}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Aggregate(Of TSource, TAccumulate, TResult) (source As IQueryable(Of TSource), seed As TAccumulate, func As Expression(Of Func(Of TAccumulate, TSource, TAccumulate)), selector As Expression(Of Func(Of TAccumulate, TResult))) As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TAccumulate, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TResult Aggregate(System::Linq::IQueryable&lt;TSource&gt; ^ source, TAccumulate seed, System::Linq::Expressions::Expression&lt;Func&lt;TAccumulate, TSource, TAccumulate&gt; ^&gt; ^ func, System::Linq::Expressions::Expression&lt;Func&lt;TAccumulate, TResult&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Aggregate : System.Linq.IQueryable&lt;'Source&gt; * 'Accumulate * System.Linq.Expressions.Expression&lt;Func&lt;'Accumulate, 'Source, 'Accumulate&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Accumulate, 'Result&gt;&gt; -&gt; 'Result" Usage="System.Linq.Queryable.Aggregate (source, seed, func, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -249,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.All``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function All(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool All(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member All : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; bool" Usage="System.Linq.Queryable.All (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -326,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Any``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Any(Of TSource) (source As IQueryable(Of TSource)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Any(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Any : System.Linq.IQueryable&lt;'Source&gt; -&gt; bool" Usage="System.Linq.Queryable.Any source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -389,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Any``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Any(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Any(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Any : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; bool" Usage="System.Linq.Queryable.Any (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -451,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Append``1(System.Linq.IQueryable{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Append(Of TSource) (source As IQueryable(Of TSource), element As TSource) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Append(System::Linq::IQueryable&lt;TSource&gt; ^ source, TSource element);" />
+      <MemberSignature Language="F#" Value="static member Append : System.Linq.IQueryable&lt;'Source&gt; * 'Source -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Append (source, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -481,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsQueryable (source As IEnumerable) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable ^ AsQueryable(System::Collections::IEnumerable ^ source);" />
+      <MemberSignature Language="F#" Value="static member AsQueryable : System.Collections.IEnumerable -&gt; System.Linq.IQueryable" Usage="System.Linq.Queryable.AsQueryable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -528,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.AsQueryable``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsQueryable(Of TElement) (source As IEnumerable(Of TElement)) As IQueryable(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TElement&gt; ^ AsQueryable(System::Collections::Generic::IEnumerable&lt;TElement&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member AsQueryable : seq&lt;'Element&gt; -&gt; System.Linq.IQueryable&lt;'Element&gt;" Usage="System.Linq.Queryable.AsQueryable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -593,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Decimal)) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Decimal Average(System::Linq::IQueryable&lt;System::Decimal&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;decimal&gt; -&gt; decimal" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -650,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Double)) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double Average(System::Linq::IQueryable&lt;double&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;double&gt; -&gt; double" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -707,6 +719,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Integer)) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double Average(System::Linq::IQueryable&lt;int&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;int&gt; -&gt; double" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -762,6 +775,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Long)) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double Average(System::Linq::IQueryable&lt;long&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;int64&gt; -&gt; double" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -819,6 +833,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Nullable{System.Decimal}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Nullable(Of Decimal))) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;System::Decimal&gt; Average(System::Linq::IQueryable&lt;Nullable&lt;System::Decimal&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;Nullable&lt;decimal&gt;&gt; -&gt; Nullable&lt;decimal&gt;" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -874,6 +889,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Nullable{System.Double}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Nullable(Of Double))) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;double&gt; Average(System::Linq::IQueryable&lt;Nullable&lt;double&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;Nullable&lt;double&gt;&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -929,6 +945,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Nullable{System.Int32}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Nullable(Of Integer))) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;double&gt; Average(System::Linq::IQueryable&lt;Nullable&lt;int&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;Nullable&lt;int&gt;&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -984,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Nullable{System.Int64}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Nullable(Of Long))) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;double&gt; Average(System::Linq::IQueryable&lt;Nullable&lt;long&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;Nullable&lt;int64&gt;&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1037,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Nullable{System.Single}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Nullable(Of Single))) As Nullable(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;float&gt; Average(System::Linq::IQueryable&lt;Nullable&lt;float&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;Nullable&lt;single&gt;&gt; -&gt; Nullable&lt;single&gt;" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1092,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average(System.Linq.IQueryable{System.Single})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average (source As IQueryable(Of Single)) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static float Average(System::Linq::IQueryable&lt;float&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;single&gt; -&gt; single" Usage="System.Linq.Queryable.Average source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1149,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Decimal}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Decimal))) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Decimal Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, System::Decimal&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, decimal&gt;&gt; -&gt; decimal" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1214,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Double}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Double))) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, double&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, double&gt;&gt; -&gt; double" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1279,6 +1301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int32}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Integer))) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, int&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int&gt;&gt; -&gt; double" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1342,6 +1365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int64}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Long))) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, long&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int64&gt;&gt; -&gt; double" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1407,6 +1431,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Decimal}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Decimal)))) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;System::Decimal&gt; Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;System::Decimal&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;decimal&gt;&gt;&gt; -&gt; Nullable&lt;decimal&gt;" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1470,6 +1495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Double}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Double)))) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;double&gt; Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;double&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;double&gt;&gt;&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1533,6 +1559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Int32}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Integer)))) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;double&gt; Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;int&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;int&gt;&gt;&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1596,6 +1623,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Int64}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Long)))) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;double&gt; Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;long&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;int64&gt;&gt;&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1659,6 +1687,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Single}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Single)))) As Nullable(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;float&gt; Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;float&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;single&gt;&gt;&gt; -&gt; Nullable&lt;single&gt;" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1722,6 +1751,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Average``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Single}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Average(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Single))) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static float Average(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, float&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Average : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, single&gt;&gt; -&gt; single" Usage="System.Linq.Queryable.Average (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1787,6 +1817,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Cast``1(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Cast(Of TResult) (source As IQueryable) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ Cast(System::Linq::IQueryable ^ source);" />
+      <MemberSignature Language="F#" Value="static member Cast : System.Linq.IQueryable -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.Cast source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1845,6 +1876,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Concat``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Concat(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Concat(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2);" />
+      <MemberSignature Language="F#" Value="static member Concat : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Concat (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1914,6 +1946,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Contains``1(System.Linq.IQueryable{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Contains(Of TSource) (source As IQueryable(Of TSource), item As TSource) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Contains(System::Linq::IQueryable&lt;TSource&gt; ^ source, TSource item);" />
+      <MemberSignature Language="F#" Value="static member Contains : System.Linq.IQueryable&lt;'Source&gt; * 'Source -&gt; bool" Usage="System.Linq.Queryable.Contains (source, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -1974,6 +2007,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Contains``1(System.Linq.IQueryable{``0},``0,System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Contains(Of TSource) (source As IQueryable(Of TSource), item As TSource, comparer As IEqualityComparer(Of TSource)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Contains(System::Linq::IQueryable&lt;TSource&gt; ^ source, TSource item, System::Collections::Generic::IEqualityComparer&lt;TSource&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member Contains : System.Linq.IQueryable&lt;'Source&gt; * 'Source * System.Collections.Generic.IEqualityComparer&lt;'Source&gt; -&gt; bool" Usage="System.Linq.Queryable.Contains (source, item, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2038,6 +2072,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Count``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Count(Of TSource) (source As IQueryable(Of TSource)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int Count(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Count : System.Linq.IQueryable&lt;'Source&gt; -&gt; int" Usage="System.Linq.Queryable.Count source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2096,6 +2131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Count``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Count(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int Count(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Count : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; int" Usage="System.Linq.Queryable.Count (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2168,6 +2204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.DefaultIfEmpty``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DefaultIfEmpty(Of TSource) (source As IQueryable(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ DefaultIfEmpty(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member DefaultIfEmpty : System.Linq.IQueryable&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.DefaultIfEmpty source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2225,6 +2262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.DefaultIfEmpty``1(System.Linq.IQueryable{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DefaultIfEmpty(Of TSource) (source As IQueryable(Of TSource), defaultValue As TSource) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ DefaultIfEmpty(System::Linq::IQueryable&lt;TSource&gt; ^ source, TSource defaultValue);" />
+      <MemberSignature Language="F#" Value="static member DefaultIfEmpty : System.Linq.IQueryable&lt;'Source&gt; * 'Source -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.DefaultIfEmpty (source, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2294,6 +2332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Distinct``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Distinct(Of TSource) (source As IQueryable(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Distinct(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Distinct : System.Linq.IQueryable&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Distinct source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2351,6 +2390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Distinct``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Distinct(Of TSource) (source As IQueryable(Of TSource), comparer As IEqualityComparer(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Distinct(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Collections::Generic::IEqualityComparer&lt;TSource&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member Distinct : System.Linq.IQueryable&lt;'Source&gt; * System.Collections.Generic.IEqualityComparer&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Distinct (source, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2402,6 +2442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.ElementAt``1(System.Linq.IQueryable{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ElementAt(Of TSource) (source As IQueryable(Of TSource), index As Integer) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource ElementAt(System::Linq::IQueryable&lt;TSource&gt; ^ source, int index);" />
+      <MemberSignature Language="F#" Value="static member ElementAt : System.Linq.IQueryable&lt;'Source&gt; * int -&gt; 'Source" Usage="System.Linq.Queryable.ElementAt (source, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2463,6 +2504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.ElementAtOrDefault``1(System.Linq.IQueryable{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ElementAtOrDefault(Of TSource) (source As IQueryable(Of TSource), index As Integer) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource ElementAtOrDefault(System::Linq::IQueryable&lt;TSource&gt; ^ source, int index);" />
+      <MemberSignature Language="F#" Value="static member ElementAtOrDefault : System.Linq.IQueryable&lt;'Source&gt; * int -&gt; 'Source" Usage="System.Linq.Queryable.ElementAtOrDefault (source, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2533,6 +2575,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Except``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Except(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Except(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2);" />
+      <MemberSignature Language="F#" Value="static member Except : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Except (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2592,6 +2635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Except``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Except(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource), comparer As IEqualityComparer(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Except(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2, System::Collections::Generic::IEqualityComparer&lt;TSource&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member Except : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; * System.Collections.Generic.IEqualityComparer&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Except (source1, source2, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2655,6 +2699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.First``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function First(Of TSource) (source As IQueryable(Of TSource)) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource First(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member First : System.Linq.IQueryable&lt;'Source&gt; -&gt; 'Source" Usage="System.Linq.Queryable.First source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2713,6 +2758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.First``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function First(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource First(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member First : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; 'Source" Usage="System.Linq.Queryable.First (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2789,6 +2835,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.FirstOrDefault``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FirstOrDefault(Of TSource) (source As IQueryable(Of TSource)) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource FirstOrDefault(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member FirstOrDefault : System.Linq.IQueryable&lt;'Source&gt; -&gt; 'Source" Usage="System.Linq.Queryable.FirstOrDefault source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2854,6 +2901,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.FirstOrDefault``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FirstOrDefault(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource FirstOrDefault(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member FirstOrDefault : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; 'Source" Usage="System.Linq.Queryable.FirstOrDefault (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2926,6 +2974,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy(Of TSource, TKey) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey))) As IQueryable(Of IGrouping(Of TKey, TSource))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;System::Linq::IGrouping&lt;TKey, TSource&gt; ^&gt; ^ GroupBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; -&gt; System.Linq.IQueryable&lt;System.Linq.IGrouping&lt;'Key, 'Source&gt;&gt;" Usage="System.Linq.Queryable.GroupBy (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -2989,6 +3038,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy(Of TSource, TKey) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), comparer As IEqualityComparer(Of TKey)) As IQueryable(Of IGrouping(Of TKey, TSource))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;System::Linq::IGrouping&lt;TKey, TSource&gt; ^&gt; ^ GroupBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Linq.IQueryable&lt;System.Linq.IGrouping&lt;'Key, 'Source&gt;&gt;" Usage="System.Linq.Queryable.GroupBy (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3046,6 +3096,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupBy``3(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Linq.Expressions.Expression{System.Func{``0,``2}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy(Of TSource, TKey, TElement) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), elementSelector As Expression(Of Func(Of TSource, TElement))) As IQueryable(Of IGrouping(Of TKey, TElement))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TElement&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;System::Linq::IGrouping&lt;TKey, TElement&gt; ^&gt; ^ GroupBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TElement&gt; ^&gt; ^ elementSelector);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Element&gt;&gt; -&gt; System.Linq.IQueryable&lt;System.Linq.IGrouping&lt;'Key, 'Element&gt;&gt;" Usage="System.Linq.Queryable.GroupBy (source, keySelector, elementSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3113,6 +3164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupBy``3(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Linq.Expressions.Expression{System.Func{``0,``2}},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy(Of TSource, TKey, TElement) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), elementSelector As Expression(Of Func(Of TSource, TElement)), comparer As IEqualityComparer(Of TKey)) As IQueryable(Of IGrouping(Of TKey, TElement))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TElement&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;System::Linq::IGrouping&lt;TKey, TElement&gt; ^&gt; ^ GroupBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TElement&gt; ^&gt; ^ elementSelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Element&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Linq.IQueryable&lt;System.Linq.IGrouping&lt;'Key, 'Element&gt;&gt;" Usage="System.Linq.Queryable.GroupBy (source, keySelector, elementSelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3174,6 +3226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupBy``3(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Linq.Expressions.Expression{System.Func{``1,System.Collections.Generic.IEnumerable{``0},``2}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy(Of TSource, TKey, TResult) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), resultSelector As Expression(Of Func(Of TKey, IEnumerable(Of TSource), TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ GroupBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Linq::Expressions::Expression&lt;Func&lt;TKey, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^, TResult&gt; ^&gt; ^ resultSelector);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Key, seq&lt;'Source&gt;, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.GroupBy (source, keySelector, resultSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3241,6 +3294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupBy``3(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Linq.Expressions.Expression{System.Func{``1,System.Collections.Generic.IEnumerable{``0},``2}},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy(Of TSource, TKey, TResult) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), resultSelector As Expression(Of Func(Of TKey, IEnumerable(Of TSource), TResult)), comparer As IEqualityComparer(Of TKey)) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ GroupBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Linq::Expressions::Expression&lt;Func&lt;TKey, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^, TResult&gt; ^&gt; ^ resultSelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Key, seq&lt;'Source&gt;, 'Result&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.GroupBy (source, keySelector, resultSelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3302,6 +3356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupBy``4(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Linq.Expressions.Expression{System.Func{``0,``2}},System.Linq.Expressions.Expression{System.Func{``1,System.Collections.Generic.IEnumerable{``2},``3}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy(Of TSource, TKey, TElement, TResult) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), elementSelector As Expression(Of Func(Of TSource, TElement)), resultSelector As Expression(Of Func(Of TKey, IEnumerable(Of TElement), TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TElement, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ GroupBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TElement&gt; ^&gt; ^ elementSelector, System::Linq::Expressions::Expression&lt;Func&lt;TKey, System::Collections::Generic::IEnumerable&lt;TElement&gt; ^, TResult&gt; ^&gt; ^ resultSelector);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Element&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Key, seq&lt;'Element&gt;, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.GroupBy (source, keySelector, elementSelector, resultSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3373,6 +3428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupBy``4(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Linq.Expressions.Expression{System.Func{``0,``2}},System.Linq.Expressions.Expression{System.Func{``1,System.Collections.Generic.IEnumerable{``2},``3}},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy(Of TSource, TKey, TElement, TResult) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), elementSelector As Expression(Of Func(Of TSource, TElement)), resultSelector As Expression(Of Func(Of TKey, IEnumerable(Of TElement), TResult)), comparer As IEqualityComparer(Of TKey)) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TElement, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ GroupBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TElement&gt; ^&gt; ^ elementSelector, System::Linq::Expressions::Expression&lt;Func&lt;TKey, System::Collections::Generic::IEnumerable&lt;TElement&gt; ^, TResult&gt; ^&gt; ^ resultSelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Element&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Key, seq&lt;'Element&gt;, 'Result&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.GroupBy (source, keySelector, elementSelector, resultSelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3448,6 +3504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupJoin``4(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``1},System.Linq.Expressions.Expression{System.Func{``0,``2}},System.Linq.Expressions.Expression{System.Func{``1,``2}},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{``1},``3}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupJoin(Of TOuter, TInner, TKey, TResult) (outer As IQueryable(Of TOuter), inner As IEnumerable(Of TInner), outerKeySelector As Expression(Of Func(Of TOuter, TKey)), innerKeySelector As Expression(Of Func(Of TInner, TKey)), resultSelector As Expression(Of Func(Of TOuter, IEnumerable(Of TInner), TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOuter, typename TInner, typename TKey, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ GroupJoin(System::Linq::IQueryable&lt;TOuter&gt; ^ outer, System::Collections::Generic::IEnumerable&lt;TInner&gt; ^ inner, System::Linq::Expressions::Expression&lt;Func&lt;TOuter, TKey&gt; ^&gt; ^ outerKeySelector, System::Linq::Expressions::Expression&lt;Func&lt;TInner, TKey&gt; ^&gt; ^ innerKeySelector, System::Linq::Expressions::Expression&lt;Func&lt;TOuter, System::Collections::Generic::IEnumerable&lt;TInner&gt; ^, TResult&gt; ^&gt; ^ resultSelector);" />
+      <MemberSignature Language="F#" Value="static member GroupJoin : System.Linq.IQueryable&lt;'Outer&gt; * seq&lt;'Inner&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Outer, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Inner, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Outer, seq&lt;'Inner&gt;, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.GroupJoin (outer, inner, outerKeySelector, innerKeySelector, resultSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3521,6 +3578,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.GroupJoin``4(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``1},System.Linq.Expressions.Expression{System.Func{``0,``2}},System.Linq.Expressions.Expression{System.Func{``1,``2}},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{``1},``3}},System.Collections.Generic.IEqualityComparer{``2})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupJoin(Of TOuter, TInner, TKey, TResult) (outer As IQueryable(Of TOuter), inner As IEnumerable(Of TInner), outerKeySelector As Expression(Of Func(Of TOuter, TKey)), innerKeySelector As Expression(Of Func(Of TInner, TKey)), resultSelector As Expression(Of Func(Of TOuter, IEnumerable(Of TInner), TResult)), comparer As IEqualityComparer(Of TKey)) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOuter, typename TInner, typename TKey, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ GroupJoin(System::Linq::IQueryable&lt;TOuter&gt; ^ outer, System::Collections::Generic::IEnumerable&lt;TInner&gt; ^ inner, System::Linq::Expressions::Expression&lt;Func&lt;TOuter, TKey&gt; ^&gt; ^ outerKeySelector, System::Linq::Expressions::Expression&lt;Func&lt;TInner, TKey&gt; ^&gt; ^ innerKeySelector, System::Linq::Expressions::Expression&lt;Func&lt;TOuter, System::Collections::Generic::IEnumerable&lt;TInner&gt; ^, TResult&gt; ^&gt; ^ resultSelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member GroupJoin : System.Linq.IQueryable&lt;'Outer&gt; * seq&lt;'Inner&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Outer, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Inner, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Outer, seq&lt;'Inner&gt;, 'Result&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.GroupJoin (outer, inner, outerKeySelector, innerKeySelector, resultSelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3598,6 +3656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Intersect``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Intersect(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Intersect(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2);" />
+      <MemberSignature Language="F#" Value="static member Intersect : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Intersect (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3657,6 +3716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Intersect``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Intersect(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource), comparer As IEqualityComparer(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Intersect(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2, System::Collections::Generic::IEqualityComparer&lt;TSource&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member Intersect : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; * System.Collections.Generic.IEqualityComparer&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Intersect (source1, source2, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3720,6 +3780,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Join``4(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``1},System.Linq.Expressions.Expression{System.Func{``0,``2}},System.Linq.Expressions.Expression{System.Func{``1,``2}},System.Linq.Expressions.Expression{System.Func{``0,``1,``3}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Join(Of TOuter, TInner, TKey, TResult) (outer As IQueryable(Of TOuter), inner As IEnumerable(Of TInner), outerKeySelector As Expression(Of Func(Of TOuter, TKey)), innerKeySelector As Expression(Of Func(Of TInner, TKey)), resultSelector As Expression(Of Func(Of TOuter, TInner, TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOuter, typename TInner, typename TKey, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ Join(System::Linq::IQueryable&lt;TOuter&gt; ^ outer, System::Collections::Generic::IEnumerable&lt;TInner&gt; ^ inner, System::Linq::Expressions::Expression&lt;Func&lt;TOuter, TKey&gt; ^&gt; ^ outerKeySelector, System::Linq::Expressions::Expression&lt;Func&lt;TInner, TKey&gt; ^&gt; ^ innerKeySelector, System::Linq::Expressions::Expression&lt;Func&lt;TOuter, TInner, TResult&gt; ^&gt; ^ resultSelector);" />
+      <MemberSignature Language="F#" Value="static member Join : System.Linq.IQueryable&lt;'Outer&gt; * seq&lt;'Inner&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Outer, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Inner, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Outer, 'Inner, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.Join (outer, inner, outerKeySelector, innerKeySelector, resultSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3793,6 +3854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Join``4(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``1},System.Linq.Expressions.Expression{System.Func{``0,``2}},System.Linq.Expressions.Expression{System.Func{``1,``2}},System.Linq.Expressions.Expression{System.Func{``0,``1,``3}},System.Collections.Generic.IEqualityComparer{``2})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Join(Of TOuter, TInner, TKey, TResult) (outer As IQueryable(Of TOuter), inner As IEnumerable(Of TInner), outerKeySelector As Expression(Of Func(Of TOuter, TKey)), innerKeySelector As Expression(Of Func(Of TInner, TKey)), resultSelector As Expression(Of Func(Of TOuter, TInner, TResult)), comparer As IEqualityComparer(Of TKey)) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOuter, typename TInner, typename TKey, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ Join(System::Linq::IQueryable&lt;TOuter&gt; ^ outer, System::Collections::Generic::IEnumerable&lt;TInner&gt; ^ inner, System::Linq::Expressions::Expression&lt;Func&lt;TOuter, TKey&gt; ^&gt; ^ outerKeySelector, System::Linq::Expressions::Expression&lt;Func&lt;TInner, TKey&gt; ^&gt; ^ innerKeySelector, System::Linq::Expressions::Expression&lt;Func&lt;TOuter, TInner, TResult&gt; ^&gt; ^ resultSelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member Join : System.Linq.IQueryable&lt;'Outer&gt; * seq&lt;'Inner&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Outer, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Inner, 'Key&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Outer, 'Inner, 'Result&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.Join (outer, inner, outerKeySelector, innerKeySelector, resultSelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3870,6 +3932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Last``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Last(Of TSource) (source As IQueryable(Of TSource)) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource Last(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Last : System.Linq.IQueryable&lt;'Source&gt; -&gt; 'Source" Usage="System.Linq.Queryable.Last source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -3928,6 +3991,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Last``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Last(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource Last(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Last : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; 'Source" Usage="System.Linq.Queryable.Last (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4004,6 +4068,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.LastOrDefault``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastOrDefault(Of TSource) (source As IQueryable(Of TSource)) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource LastOrDefault(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member LastOrDefault : System.Linq.IQueryable&lt;'Source&gt; -&gt; 'Source" Usage="System.Linq.Queryable.LastOrDefault source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4069,6 +4134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.LastOrDefault``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastOrDefault(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource LastOrDefault(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member LastOrDefault : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; 'Source" Usage="System.Linq.Queryable.LastOrDefault (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4141,6 +4207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.LongCount``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LongCount(Of TSource) (source As IQueryable(Of TSource)) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static long LongCount(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member LongCount : System.Linq.IQueryable&lt;'Source&gt; -&gt; int64" Usage="System.Linq.Queryable.LongCount source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4199,6 +4266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.LongCount``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LongCount(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static long LongCount(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member LongCount : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; int64" Usage="System.Linq.Queryable.LongCount (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4261,6 +4329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Max``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Max(Of TSource) (source As IQueryable(Of TSource)) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource Max(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Max : System.Linq.IQueryable&lt;'Source&gt; -&gt; 'Source" Usage="System.Linq.Queryable.Max source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4318,6 +4387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Max``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Max(Of TSource, TResult) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, TResult))) As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TResult Max(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TResult&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Max : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Result&gt;&gt; -&gt; 'Result" Usage="System.Linq.Queryable.Max (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4381,6 +4451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Min``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Min(Of TSource) (source As IQueryable(Of TSource)) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource Min(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Min : System.Linq.IQueryable&lt;'Source&gt; -&gt; 'Source" Usage="System.Linq.Queryable.Min source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4438,6 +4509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Min``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Min(Of TSource, TResult) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, TResult))) As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TResult Min(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TResult&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Min : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Result&gt;&gt; -&gt; 'Result" Usage="System.Linq.Queryable.Min (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4501,6 +4573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.OfType``1(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OfType(Of TResult) (source As IQueryable) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ OfType(System::Linq::IQueryable ^ source);" />
+      <MemberSignature Language="F#" Value="static member OfType : System.Linq.IQueryable -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.OfType source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4568,6 +4641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.OrderBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy(Of TSource, TKey) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey))) As IOrderedQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IOrderedQueryable&lt;TSource&gt; ^ OrderBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member OrderBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; -&gt; System.Linq.IOrderedQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.OrderBy (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4631,6 +4705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.OrderBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy(Of TSource, TKey) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), comparer As IComparer(Of TKey)) As IOrderedQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IOrderedQueryable&lt;TSource&gt; ^ OrderBy(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member OrderBy : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Linq.IOrderedQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.OrderBy (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4698,6 +4773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.OrderByDescending``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending(Of TSource, TKey) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey))) As IOrderedQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IOrderedQueryable&lt;TSource&gt; ^ OrderByDescending(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member OrderByDescending : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; -&gt; System.Linq.IOrderedQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.OrderByDescending (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4753,6 +4829,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.OrderByDescending``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending(Of TSource, TKey) (source As IQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), comparer As IComparer(Of TKey)) As IOrderedQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IOrderedQueryable&lt;TSource&gt; ^ OrderByDescending(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member OrderByDescending : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Linq.IOrderedQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.OrderByDescending (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4818,6 +4895,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Prepend``1(System.Linq.IQueryable{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Prepend(Of TSource) (source As IQueryable(Of TSource), element As TSource) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Prepend(System::Linq::IQueryable&lt;TSource&gt; ^ source, TSource element);" />
+      <MemberSignature Language="F#" Value="static member Prepend : System.Linq.IQueryable&lt;'Source&gt; * 'Source -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Prepend (source, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4848,6 +4926,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Reverse``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Reverse(Of TSource) (source As IQueryable(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Reverse(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Reverse : System.Linq.IQueryable&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Reverse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4915,6 +4994,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Select``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int32,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Select(Of TSource, TResult) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Integer, TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ Select(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, int, TResult&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Select : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.Select (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -4978,6 +5058,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Select``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Select(Of TSource, TResult) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ Select(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TResult&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Select : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.Select (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5051,6 +5132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SelectMany``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{``1}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectMany(Of TSource, TResult) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, IEnumerable(Of TResult)))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ SelectMany(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, System::Collections::Generic::IEnumerable&lt;TResult&gt; ^&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member SelectMany : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, seq&lt;'Result&gt;&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.SelectMany (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5114,6 +5196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SelectMany``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int32,System.Collections.Generic.IEnumerable{``1}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectMany(Of TSource, TResult) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Integer, IEnumerable(Of TResult)))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ SelectMany(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, int, System::Collections::Generic::IEnumerable&lt;TResult&gt; ^&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member SelectMany : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int, seq&lt;'Result&gt;&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.SelectMany (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5177,6 +5260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SelectMany``3(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{``1}}},System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectMany(Of TSource, TCollection, TResult) (source As IQueryable(Of TSource), collectionSelector As Expression(Of Func(Of TSource, IEnumerable(Of TCollection))), resultSelector As Expression(Of Func(Of TSource, TCollection, TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TCollection, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ SelectMany(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, System::Collections::Generic::IEnumerable&lt;TCollection&gt; ^&gt; ^&gt; ^ collectionSelector, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TCollection, TResult&gt; ^&gt; ^ resultSelector);" />
+      <MemberSignature Language="F#" Value="static member SelectMany : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, seq&lt;'Collection&gt;&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Collection, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.SelectMany (source, collectionSelector, resultSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5244,6 +5328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SelectMany``3(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int32,System.Collections.Generic.IEnumerable{``1}}},System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectMany(Of TSource, TCollection, TResult) (source As IQueryable(Of TSource), collectionSelector As Expression(Of Func(Of TSource, Integer, IEnumerable(Of TCollection))), resultSelector As Expression(Of Func(Of TSource, TCollection, TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TCollection, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ SelectMany(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, int, System::Collections::Generic::IEnumerable&lt;TCollection&gt; ^&gt; ^&gt; ^ collectionSelector, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TCollection, TResult&gt; ^&gt; ^ resultSelector);" />
+      <MemberSignature Language="F#" Value="static member SelectMany : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int, seq&lt;'Collection&gt;&gt;&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Collection, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.SelectMany (source, collectionSelector, resultSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5313,6 +5398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SequenceEqual``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SequenceEqual(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool SequenceEqual(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2);" />
+      <MemberSignature Language="F#" Value="static member SequenceEqual : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; -&gt; bool" Usage="System.Linq.Queryable.SequenceEqual (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5378,6 +5464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SequenceEqual``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SequenceEqual(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource), comparer As IEqualityComparer(Of TSource)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool SequenceEqual(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2, System::Collections::Generic::IEqualityComparer&lt;TSource&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member SequenceEqual : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; * System.Collections.Generic.IEqualityComparer&lt;'Source&gt; -&gt; bool" Usage="System.Linq.Queryable.SequenceEqual (source1, source2, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5442,6 +5529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Single``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Single(Of TSource) (source As IQueryable(Of TSource)) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource Single(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Single : System.Linq.IQueryable&lt;'Source&gt; -&gt; 'Source" Usage="System.Linq.Queryable.Single source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5501,6 +5589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Single``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Single(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource Single(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Single : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; 'Source" Usage="System.Linq.Queryable.Single (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5581,6 +5670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SingleOrDefault``1(System.Linq.IQueryable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SingleOrDefault(Of TSource) (source As IQueryable(Of TSource)) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource SingleOrDefault(System::Linq::IQueryable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member SingleOrDefault : System.Linq.IQueryable&lt;'Source&gt; -&gt; 'Source" Usage="System.Linq.Queryable.SingleOrDefault source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5647,6 +5737,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SingleOrDefault``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SingleOrDefault(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As TSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TSource SingleOrDefault(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member SingleOrDefault : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; 'Source" Usage="System.Linq.Queryable.SingleOrDefault (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5709,6 +5800,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Skip``1(System.Linq.IQueryable{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Skip(Of TSource) (source As IQueryable(Of TSource), count As Integer) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Skip(System::Linq::IQueryable&lt;TSource&gt; ^ source, int count);" />
+      <MemberSignature Language="F#" Value="static member Skip : System.Linq.IQueryable&lt;'Source&gt; * int -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Skip (source, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5768,6 +5860,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SkipLast``1(System.Linq.IQueryable{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SkipLast(Of TSource) (source As IQueryable(Of TSource), count As Integer) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ SkipLast(System::Linq::IQueryable&lt;TSource&gt; ^ source, int count);" />
+      <MemberSignature Language="F#" Value="static member SkipLast : System.Linq.IQueryable&lt;'Source&gt; * int -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.SkipLast (source, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5808,6 +5901,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SkipWhile``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SkipWhile(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ SkipWhile(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member SkipWhile : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.SkipWhile (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5869,6 +5963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SkipWhile``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int32,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SkipWhile(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Integer, Boolean))) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ SkipWhile(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, int, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member SkipWhile : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int, bool&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.SkipWhile (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5940,6 +6035,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Decimal)) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Decimal Sum(System::Linq::IQueryable&lt;System::Decimal&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;decimal&gt; -&gt; decimal" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -5996,6 +6092,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Double)) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double Sum(System::Linq::IQueryable&lt;double&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;double&gt; -&gt; double" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6051,6 +6148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Integer)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int Sum(System::Linq::IQueryable&lt;int&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;int&gt; -&gt; int" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6107,6 +6205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Long)) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static long Sum(System::Linq::IQueryable&lt;long&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;int64&gt; -&gt; int64" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6163,6 +6262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Nullable{System.Decimal}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Nullable(Of Decimal))) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;System::Decimal&gt; Sum(System::Linq::IQueryable&lt;Nullable&lt;System::Decimal&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;Nullable&lt;decimal&gt;&gt; -&gt; Nullable&lt;decimal&gt;" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6219,6 +6319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Nullable{System.Double}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Nullable(Of Double))) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;double&gt; Sum(System::Linq::IQueryable&lt;Nullable&lt;double&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;Nullable&lt;double&gt;&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6274,6 +6375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Nullable{System.Int32}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Nullable(Of Integer))) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;int&gt; Sum(System::Linq::IQueryable&lt;Nullable&lt;int&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;Nullable&lt;int&gt;&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6330,6 +6432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Nullable{System.Int64}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Nullable(Of Long))) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;long&gt; Sum(System::Linq::IQueryable&lt;Nullable&lt;long&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;Nullable&lt;int64&gt;&gt; -&gt; Nullable&lt;int64&gt;" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6386,6 +6489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Nullable{System.Single}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Nullable(Of Single))) As Nullable(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;float&gt; Sum(System::Linq::IQueryable&lt;Nullable&lt;float&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;Nullable&lt;single&gt;&gt; -&gt; Nullable&lt;single&gt;" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6439,6 +6543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum(System.Linq.IQueryable{System.Single})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum (source As IQueryable(Of Single)) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static float Sum(System::Linq::IQueryable&lt;float&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;single&gt; -&gt; single" Usage="System.Linq.Queryable.Sum source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6492,6 +6597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Decimal}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Decimal))) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Decimal Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, System::Decimal&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, decimal&gt;&gt; -&gt; decimal" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6556,6 +6662,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Double}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Double))) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, double&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, double&gt;&gt; -&gt; double" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6619,6 +6726,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int32}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Integer))) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, int&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int&gt;&gt; -&gt; int" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6683,6 +6791,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int64}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Long))) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static long Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, long&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int64&gt;&gt; -&gt; int64" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6747,6 +6856,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Decimal}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Decimal)))) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;System::Decimal&gt; Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;System::Decimal&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;decimal&gt;&gt;&gt; -&gt; Nullable&lt;decimal&gt;" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6811,6 +6921,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Double}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Double)))) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;double&gt; Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;double&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;double&gt;&gt;&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6874,6 +6985,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Int32}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Integer)))) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;int&gt; Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;int&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;int&gt;&gt;&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -6938,6 +7050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Int64}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Long)))) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;long&gt; Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;long&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;int64&gt;&gt;&gt; -&gt; Nullable&lt;int64&gt;" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7002,6 +7115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Single}}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Nullable(Of Single)))) As Nullable(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Nullable&lt;float&gt; Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, Nullable&lt;float&gt;&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, Nullable&lt;single&gt;&gt;&gt; -&gt; Nullable&lt;single&gt;" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7065,6 +7179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Sum``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Single}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sum(Of TSource) (source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, Single))) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static float Sum(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, float&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Sum : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, single&gt;&gt; -&gt; single" Usage="System.Linq.Queryable.Sum (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7128,6 +7243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Take``1(System.Linq.IQueryable{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Take(Of TSource) (source As IQueryable(Of TSource), count As Integer) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Take(System::Linq::IQueryable&lt;TSource&gt; ^ source, int count);" />
+      <MemberSignature Language="F#" Value="static member Take : System.Linq.IQueryable&lt;'Source&gt; * int -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Take (source, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7187,6 +7303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.TakeLast``1(System.Linq.IQueryable{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TakeLast(Of TSource) (source As IQueryable(Of TSource), count As Integer) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ TakeLast(System::Linq::IQueryable&lt;TSource&gt; ^ source, int count);" />
+      <MemberSignature Language="F#" Value="static member TakeLast : System.Linq.IQueryable&lt;'Source&gt; * int -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.TakeLast (source, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7227,6 +7344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.TakeWhile``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TakeWhile(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ TakeWhile(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member TakeWhile : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.TakeWhile (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7288,6 +7406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.TakeWhile``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int32,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TakeWhile(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Integer, Boolean))) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ TakeWhile(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, int, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member TakeWhile : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int, bool&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.TakeWhile (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7359,6 +7478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.ThenBy``2(System.Linq.IOrderedQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenBy(Of TSource, TKey) (source As IOrderedQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey))) As IOrderedQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IOrderedQueryable&lt;TSource&gt; ^ ThenBy(System::Linq::IOrderedQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member ThenBy : System.Linq.IOrderedQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; -&gt; System.Linq.IOrderedQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.ThenBy (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7422,6 +7542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.ThenBy``2(System.Linq.IOrderedQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenBy(Of TSource, TKey) (source As IOrderedQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), comparer As IComparer(Of TKey)) As IOrderedQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IOrderedQueryable&lt;TSource&gt; ^ ThenBy(System::Linq::IOrderedQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member ThenBy : System.Linq.IOrderedQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Linq.IOrderedQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.ThenBy (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7489,6 +7610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.ThenByDescending``2(System.Linq.IOrderedQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenByDescending(Of TSource, TKey) (source As IOrderedQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey))) As IOrderedQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IOrderedQueryable&lt;TSource&gt; ^ ThenByDescending(System::Linq::IOrderedQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member ThenByDescending : System.Linq.IOrderedQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; -&gt; System.Linq.IOrderedQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.ThenByDescending (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7544,6 +7666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.ThenByDescending``2(System.Linq.IOrderedQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenByDescending(Of TSource, TKey) (source As IOrderedQueryable(Of TSource), keySelector As Expression(Of Func(Of TSource, TKey)), comparer As IComparer(Of TKey)) As IOrderedQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IOrderedQueryable&lt;TSource&gt; ^ ThenByDescending(System::Linq::IOrderedQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, TKey&gt; ^&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member ThenByDescending : System.Linq.IOrderedQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, 'Key&gt;&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Linq.IOrderedQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.ThenByDescending (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7619,6 +7742,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Union``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Union(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Union(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Union (source1, source2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7678,6 +7802,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Union``1(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Union(Of TSource) (source1 As IQueryable(Of TSource), source2 As IEnumerable(Of TSource), comparer As IEqualityComparer(Of TSource)) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Union(System::Linq::IQueryable&lt;TSource&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source2, System::Collections::Generic::IEqualityComparer&lt;TSource&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Linq.IQueryable&lt;'Source&gt; * seq&lt;'Source&gt; * System.Collections.Generic.IEqualityComparer&lt;'Source&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Union (source1, source2, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7741,6 +7866,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Where``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean))) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Where(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Where : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, bool&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Where (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7802,6 +7928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Where``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Int32,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of TSource) (source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Integer, Boolean))) As IQueryable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TSource&gt; ^ Where(System::Linq::IQueryable&lt;TSource&gt; ^ source, System::Linq::Expressions::Expression&lt;Func&lt;TSource, int, bool&gt; ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Where : System.Linq.IQueryable&lt;'Source&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'Source, int, bool&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Source&gt;" Usage="System.Linq.Queryable.Where (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -7863,6 +7990,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Zip``3(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``1},System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Zip(Of TFirst, TSecond, TResult) (source1 As IQueryable(Of TFirst), source2 As IEnumerable(Of TSecond), resultSelector As Expression(Of Func(Of TFirst, TSecond, TResult))) As IQueryable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TFirst, typename TSecond, typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;TResult&gt; ^ Zip(System::Linq::IQueryable&lt;TFirst&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSecond&gt; ^ source2, System::Linq::Expressions::Expression&lt;Func&lt;TFirst, TSecond, TResult&gt; ^&gt; ^ resultSelector);" />
+      <MemberSignature Language="F#" Value="static member Zip : System.Linq.IQueryable&lt;'First&gt; * seq&lt;'Second&gt; * System.Linq.Expressions.Expression&lt;Func&lt;'First, 'Second, 'Result&gt;&gt; -&gt; System.Linq.IQueryable&lt;'Result&gt;" Usage="System.Linq.Queryable.Zip (source1, source2, resultSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>

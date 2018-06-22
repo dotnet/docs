@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine4" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBuildEngine4&#xA;Implements IBuildEngine3" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBuildEngine4 : Microsoft::Build::Framework::IBuildEngine3" />
+  <TypeSignature Language="F#" Value="type IBuildEngine4 = interface&#xA;    interface IBuildEngine3&#xA;    interface IBuildEngine2&#xA;    interface IBuildEngine" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine4.GetRegisteredTaskObject(System.Object,Microsoft.Build.Framework.RegisteredTaskObjectLifetime)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredTaskObject (key As Object, lifetime As RegisteredTaskObjectLifetime) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetRegisteredTaskObject(System::Object ^ key, Microsoft::Build::Framework::RegisteredTaskObjectLifetime lifetime);" />
+      <MemberSignature Language="F#" Value="abstract member GetRegisteredTaskObject : obj * Microsoft.Build.Framework.RegisteredTaskObjectLifetime -&gt; obj" Usage="iBuildEngine4.GetRegisteredTaskObject (key, lifetime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine4.RegisterTaskObject(System.Object,System.Object,Microsoft.Build.Framework.RegisteredTaskObjectLifetime,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterTaskObject (key As Object, obj As Object, lifetime As RegisteredTaskObjectLifetime, allowEarlyCollection As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterTaskObject(System::Object ^ key, System::Object ^ obj, Microsoft::Build::Framework::RegisteredTaskObjectLifetime lifetime, bool allowEarlyCollection);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterTaskObject : obj * obj * Microsoft.Build.Framework.RegisteredTaskObjectLifetime * bool -&gt; unit" Usage="iBuildEngine4.RegisterTaskObject (key, obj, lifetime, allowEarlyCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine4.UnregisterTaskObject(System.Object,Microsoft.Build.Framework.RegisteredTaskObjectLifetime)" />
       <MemberSignature Language="VB.NET" Value="Public Function UnregisterTaskObject (key As Object, lifetime As RegisteredTaskObjectLifetime) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ UnregisterTaskObject(System::Object ^ key, Microsoft::Build::Framework::RegisteredTaskObjectLifetime lifetime);" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterTaskObject : obj * Microsoft.Build.Framework.RegisteredTaskObjectLifetime -&gt; obj" Usage="iBuildEngine4.UnregisterTaskObject (key, lifetime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

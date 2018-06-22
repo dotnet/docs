@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.PKCS1MaskGenerationMethod" />
   <TypeSignature Language="VB.NET" Value="Public Class PKCS1MaskGenerationMethod&#xA;Inherits MaskGenerationMethod" />
   <TypeSignature Language="C++ CLI" Value="public ref class PKCS1MaskGenerationMethod : System::Security::Cryptography::MaskGenerationMethod" />
+  <TypeSignature Language="F#" Value="type PKCS1MaskGenerationMethod = class&#xA;    inherit MaskGenerationMethod" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.PKCS1MaskGenerationMethod.GenerateMask(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GenerateMask (rgbSeed As Byte(), cbReturn As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GenerateMask(cli::array &lt;System::Byte&gt; ^ rgbSeed, int cbReturn);" />
+      <MemberSignature Language="F#" Value="override this.GenerateMask : byte[] * int -&gt; byte[]" Usage="pKCS1MaskGenerationMethod.GenerateMask (rgbSeed, cbReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.PKCS1MaskGenerationMethod.HashName" />
       <MemberSignature Language="VB.NET" Value="Public Property HashName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HashName : string with get, set" Usage="System.Security.Cryptography.PKCS1MaskGenerationMethod.HashName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

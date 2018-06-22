@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.Encodings.Web.TextEncoderSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class TextEncoderSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextEncoderSettings" />
+  <TypeSignature Language="F#" Value="type TextEncoderSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encodings.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Encodings.Web.TextEncoderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As TextEncoderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEncoderSettings(System::Text::Encodings::Web::TextEncoderSettings ^ other);" />
+      <MemberSignature Language="F#" Value="new System.Text.Encodings.Web.TextEncoderSettings : System.Text.Encodings.Web.TextEncoderSettings -&gt; System.Text.Encodings.Web.TextEncoderSettings" Usage="new System.Text.Encodings.Web.TextEncoderSettings other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Unicode.UnicodeRange[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray allowedRanges As UnicodeRange())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEncoderSettings(... cli::array &lt;System::Text::Unicode::UnicodeRange ^&gt; ^ allowedRanges);" />
+      <MemberSignature Language="F#" Value="new System.Text.Encodings.Web.TextEncoderSettings : System.Text.Unicode.UnicodeRange[] -&gt; System.Text.Encodings.Web.TextEncoderSettings" Usage="new System.Text.Encodings.Web.TextEncoderSettings allowedRanges" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.AllowCharacter(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AllowCharacter (character As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AllowCharacter(char character);" />
+      <MemberSignature Language="F#" Value="abstract member AllowCharacter : char -&gt; unit&#xA;override this.AllowCharacter : char -&gt; unit" Usage="textEncoderSettings.AllowCharacter character" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.AllowCharacters(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AllowCharacters (ParamArray characters As Char())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AllowCharacters(... cli::array &lt;char&gt; ^ characters);" />
+      <MemberSignature Language="F#" Value="abstract member AllowCharacters : char[] -&gt; unit&#xA;override this.AllowCharacters : char[] -&gt; unit" Usage="textEncoderSettings.AllowCharacters characters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.AllowCodePoints(System.Collections.Generic.IEnumerable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AllowCodePoints (codePoints As IEnumerable(Of Integer))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AllowCodePoints(System::Collections::Generic::IEnumerable&lt;int&gt; ^ codePoints);" />
+      <MemberSignature Language="F#" Value="abstract member AllowCodePoints : seq&lt;int&gt; -&gt; unit&#xA;override this.AllowCodePoints : seq&lt;int&gt; -&gt; unit" Usage="textEncoderSettings.AllowCodePoints codePoints" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.AllowRange(System.Text.Unicode.UnicodeRange)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AllowRange (range As UnicodeRange)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AllowRange(System::Text::Unicode::UnicodeRange ^ range);" />
+      <MemberSignature Language="F#" Value="abstract member AllowRange : System.Text.Unicode.UnicodeRange -&gt; unit&#xA;override this.AllowRange : System.Text.Unicode.UnicodeRange -&gt; unit" Usage="textEncoderSettings.AllowRange range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.AllowRanges(System.Text.Unicode.UnicodeRange[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AllowRanges (ParamArray ranges As UnicodeRange())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AllowRanges(... cli::array &lt;System::Text::Unicode::UnicodeRange ^&gt; ^ ranges);" />
+      <MemberSignature Language="F#" Value="abstract member AllowRanges : System.Text.Unicode.UnicodeRange[] -&gt; unit&#xA;override this.AllowRanges : System.Text.Unicode.UnicodeRange[] -&gt; unit" Usage="textEncoderSettings.AllowRanges ranges" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="textEncoderSettings.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacter(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ForbidCharacter (character As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ForbidCharacter(char character);" />
+      <MemberSignature Language="F#" Value="abstract member ForbidCharacter : char -&gt; unit&#xA;override this.ForbidCharacter : char -&gt; unit" Usage="textEncoderSettings.ForbidCharacter character" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacters(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ForbidCharacters (ParamArray characters As Char())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ForbidCharacters(... cli::array &lt;char&gt; ^ characters);" />
+      <MemberSignature Language="F#" Value="abstract member ForbidCharacters : char[] -&gt; unit&#xA;override this.ForbidCharacters : char[] -&gt; unit" Usage="textEncoderSettings.ForbidCharacters characters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -327,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidRange(System.Text.Unicode.UnicodeRange)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ForbidRange (range As UnicodeRange)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ForbidRange(System::Text::Unicode::UnicodeRange ^ range);" />
+      <MemberSignature Language="F#" Value="abstract member ForbidRange : System.Text.Unicode.UnicodeRange -&gt; unit&#xA;override this.ForbidRange : System.Text.Unicode.UnicodeRange -&gt; unit" Usage="textEncoderSettings.ForbidRange range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidRanges(System.Text.Unicode.UnicodeRange[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ForbidRanges (ParamArray ranges As UnicodeRange())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ForbidRanges(... cli::array &lt;System::Text::Unicode::UnicodeRange ^&gt; ^ ranges);" />
+      <MemberSignature Language="F#" Value="abstract member ForbidRanges : System.Text.Unicode.UnicodeRange[] -&gt; unit&#xA;override this.ForbidRanges : System.Text.Unicode.UnicodeRange[] -&gt; unit" Usage="textEncoderSettings.ForbidRanges ranges" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -387,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.GetAllowedCodePoints" />
       <MemberSignature Language="VB.NET" Value="Public Iterator Overridable Function GetAllowedCodePoints () As IEnumerable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;int&gt; ^ GetAllowedCodePoints();" />
+      <MemberSignature Language="F#" Value="abstract member GetAllowedCodePoints : unit -&gt; seq&lt;int&gt;&#xA;override this.GetAllowedCodePoints : unit -&gt; seq&lt;int&gt;" Usage="textEncoderSettings.GetAllowedCodePoints " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>

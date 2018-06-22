@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.Toolset" />
   <TypeSignature Language="VB.NET" Value="Public Class Toolset" />
   <TypeSignature Language="C++ CLI" Value="public ref class Toolset" />
+  <TypeSignature Language="F#" Value="type Toolset = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolsVersion, string toolsPath, class Microsoft.Build.Evaluation.ProjectCollection projectCollection, string msbuildOverrideTasksPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.#ctor(System.String,System.String,Microsoft.Build.Evaluation.ProjectCollection,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Toolset(System::String ^ toolsVersion, System::String ^ toolsPath, Microsoft::Build::Evaluation::ProjectCollection ^ projectCollection, System::String ^ msbuildOverrideTasksPath);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Evaluation.Toolset : string * string * Microsoft.Build.Evaluation.ProjectCollection * string -&gt; Microsoft.Build.Evaluation.Toolset" Usage="new Microsoft.Build.Evaluation.Toolset (toolsVersion, toolsPath, projectCollection, msbuildOverrideTasksPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolsVersion, string toolsPath, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; buildProperties, class Microsoft.Build.Evaluation.ProjectCollection projectCollection, string msbuildOverrideTasksPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.#ctor(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Build.Evaluation.ProjectCollection,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Toolset(System::String ^ toolsVersion, System::String ^ toolsPath, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ buildProperties, Microsoft::Build::Evaluation::ProjectCollection ^ projectCollection, System::String ^ msbuildOverrideTasksPath);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Evaluation.Toolset : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Build.Evaluation.ProjectCollection * string -&gt; Microsoft.Build.Evaluation.Toolset" Usage="new Microsoft.Build.Evaluation.Toolset (toolsVersion, toolsPath, buildProperties, projectCollection, msbuildOverrideTasksPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolsVersion, string toolsPath, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; buildProperties, class Microsoft.Build.Evaluation.ProjectCollection projectCollection, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Build.Evaluation.SubToolset&gt; subToolsets, string msbuildOverrideTasksPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.#ctor(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Build.Evaluation.ProjectCollection,System.Collections.Generic.IDictionary{System.String,Microsoft.Build.Evaluation.SubToolset},System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Toolset(System::String ^ toolsVersion, System::String ^ toolsPath, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ buildProperties, Microsoft::Build::Evaluation::ProjectCollection ^ projectCollection, System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Evaluation::SubToolset ^&gt; ^ subToolsets, System::String ^ msbuildOverrideTasksPath);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Evaluation.Toolset : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Build.Evaluation.ProjectCollection * System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Evaluation.SubToolset&gt; * string -&gt; Microsoft.Build.Evaluation.Toolset" Usage="new Microsoft.Build.Evaluation.Toolset (toolsVersion, toolsPath, buildProperties, projectCollection, subToolsets, msbuildOverrideTasksPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.DefaultSubToolsetVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultSubToolsetVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultSubToolsetVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSubToolsetVersion : string" Usage="Microsoft.Build.Evaluation.Toolset.DefaultSubToolsetVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.GenerateSubToolsetVersion" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateSubToolsetVersion () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateSubToolsetVersion();" />
+      <MemberSignature Language="F#" Value="member this.GenerateSubToolsetVersion : unit -&gt; string" Usage="toolset.GenerateSubToolsetVersion " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.GenerateSubToolsetVersion(System.Collections.Generic.IDictionary{System.String,System.String},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateSubToolsetVersion (overrideGlobalProperties As IDictionary(Of String, String), solutionVersion As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateSubToolsetVersion(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ overrideGlobalProperties, int solutionVersion);" />
+      <MemberSignature Language="F#" Value="member this.GenerateSubToolsetVersion : System.Collections.Generic.IDictionary&lt;string, string&gt; * int -&gt; string" Usage="toolset.GenerateSubToolsetVersion (overrideGlobalProperties, solutionVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.GetProperty(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperty (propertyName As String, subToolsetVersion As String) As ProjectPropertyInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::ProjectPropertyInstance ^ GetProperty(System::String ^ propertyName, System::String ^ subToolsetVersion);" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string * string -&gt; Microsoft.Build.Execution.ProjectPropertyInstance" Usage="toolset.GetProperty (propertyName, subToolsetVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of String, ProjectPropertyInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::ProjectPropertyInstance ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::ProjectPropertyInstance ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Execution.ProjectPropertyInstance&gt;" Usage="Microsoft.Build.Evaluation.Toolset.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.SubToolsets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubToolsets As IDictionary(Of String, SubToolset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Evaluation::SubToolset ^&gt; ^ SubToolsets { System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Evaluation::SubToolset ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubToolsets : System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Evaluation.SubToolset&gt;" Usage="Microsoft.Build.Evaluation.Toolset.SubToolsets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.ToolsPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolsPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolsPath : string" Usage="Microsoft.Build.Evaluation.Toolset.ToolsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.ToolsVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolsVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolsVersion : string" Usage="Microsoft.Build.Evaluation.Toolset.ToolsVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

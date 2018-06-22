@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.AdornerDecorator" />
   <TypeSignature Language="VB.NET" Value="Public Class AdornerDecorator&#xA;Inherits Decorator" />
   <TypeSignature Language="C++ CLI" Value="public ref class AdornerDecorator : System::Windows::Controls::Decorator" />
+  <TypeSignature Language="F#" Value="type AdornerDecorator = class&#xA;    inherit Decorator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.AdornerDecorator.AdornerLayer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdornerLayer As AdornerLayer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::AdornerLayer ^ AdornerLayer { System::Windows::Documents::AdornerLayer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdornerLayer : System.Windows.Documents.AdornerLayer" Usage="System.Windows.Documents.AdornerDecorator.AdornerLayer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerDecorator.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="adornerDecorator.ArrangeOverride finalSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.AdornerDecorator.Child" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Child As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::UIElement ^ Child { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Child : System.Windows.UIElement with get, set" Usage="System.Windows.Documents.AdornerDecorator.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerDecorator.GetVisualChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="adornerDecorator.GetVisualChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerDecorator.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="adornerDecorator.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.AdornerDecorator.VisualChildrenCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Documents.AdornerDecorator.VisualChildrenCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

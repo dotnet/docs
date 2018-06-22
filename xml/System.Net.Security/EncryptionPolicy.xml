@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.EncryptionPolicy" />
   <TypeSignature Language="VB.NET" Value="Public Enum EncryptionPolicy" />
   <TypeSignature Language="C++ CLI" Value="public enum class EncryptionPolicy" />
+  <TypeSignature Language="F#" Value="type EncryptionPolicy = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.EncryptionPolicy.AllowNoEncryption" />
       <MemberSignature Language="VB.NET" Value="AllowNoEncryption" />
       <MemberSignature Language="C++ CLI" Value="AllowNoEncryption" />
+      <MemberSignature Language="F#" Value="AllowNoEncryption = 1" Usage="System.Net.Security.EncryptionPolicy.AllowNoEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.EncryptionPolicy.NoEncryption" />
       <MemberSignature Language="VB.NET" Value="NoEncryption" />
       <MemberSignature Language="C++ CLI" Value="NoEncryption" />
+      <MemberSignature Language="F#" Value="NoEncryption = 2" Usage="System.Net.Security.EncryptionPolicy.NoEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.EncryptionPolicy.RequireEncryption" />
       <MemberSignature Language="VB.NET" Value="RequireEncryption" />
       <MemberSignature Language="C++ CLI" Value="RequireEncryption" />
+      <MemberSignature Language="F#" Value="RequireEncryption = 0" Usage="System.Net.Security.EncryptionPolicy.RequireEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.BinaryReader" />
   <TypeSignature Language="VB.NET" Value="Public Class BinaryReader&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryReader : IDisposable" />
+  <TypeSignature Language="F#" Value="type BinaryReader = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (input As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryReader(System::IO::Stream ^ input);" />
+      <MemberSignature Language="F#" Value="new System.IO.BinaryReader : System.IO.Stream -&gt; System.IO.BinaryReader" Usage="new System.IO.BinaryReader input" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream input, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryReader(System::IO::Stream ^ input, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="new System.IO.BinaryReader : System.IO.Stream * System.Text.Encoding -&gt; System.IO.BinaryReader" Usage="new System.IO.BinaryReader (input, encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream input, class System.Text.Encoding encoding, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryReader(System::IO::Stream ^ input, System::Text::Encoding ^ encoding, bool leaveOpen);" />
+      <MemberSignature Language="F#" Value="new System.IO.BinaryReader : System.IO.Stream * System.Text.Encoding * bool -&gt; System.IO.BinaryReader" Usage="new System.IO.BinaryReader (input, encoding, leaveOpen)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.BinaryReader.BaseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.BinaryReader.BaseStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="binaryReader.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -328,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="binaryReader.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -379,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="binaryReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -434,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.FillBuffer(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub FillBuffer (numBytes As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FillBuffer(int numBytes);" />
+      <MemberSignature Language="F#" Value="abstract member FillBuffer : int -&gt; unit&#xA;override this.FillBuffer : int -&gt; unit" Usage="binaryReader.FillBuffer numBytes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -485,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.PeekChar" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function PeekChar () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int PeekChar();" />
+      <MemberSignature Language="F#" Value="abstract member PeekChar : unit -&gt; int&#xA;override this.PeekChar : unit -&gt; int" Usage="binaryReader.PeekChar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -544,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Read () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read();" />
+      <MemberSignature Language="F#" Value="abstract member Read : unit -&gt; int&#xA;override this.Read : unit -&gt; int" Usage="binaryReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -602,6 +613,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read(System.Span{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Read (buffer As Span(Of Byte)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read(Span&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="F#" Value="abstract member Read : Span&lt;byte&gt; -&gt; int&#xA;override this.Read : Span&lt;byte&gt; -&gt; int" Usage="binaryReader.Read buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -626,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read(System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Read (buffer As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read(Span&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="abstract member Read : Span&lt;char&gt; -&gt; int&#xA;override this.Read : Span&lt;char&gt; -&gt; int" Usage="binaryReader.Read buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -650,6 +663,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Read (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Read : byte[] * int * int -&gt; int&#xA;override this.Read : byte[] * int * int -&gt; int" Usage="binaryReader.Read (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -727,6 +741,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Read (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Read : char[] * int * int -&gt; int&#xA;override this.Read : char[] * int * int -&gt; int" Usage="binaryReader.Read (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -805,6 +820,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read7BitEncodedInt" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function Read7BitEncodedInt () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; int Read7BitEncodedInt();" />
+      <MemberSignature Language="F#" Value="member this.Read7BitEncodedInt : unit -&gt; int" Usage="binaryReader.Read7BitEncodedInt " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -857,6 +873,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadBoolean () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadBoolean();" />
+      <MemberSignature Language="F#" Value="abstract member ReadBoolean : unit -&gt; bool&#xA;override this.ReadBoolean : unit -&gt; bool" Usage="binaryReader.ReadBoolean " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -915,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadByte" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadByte () As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Byte ReadByte();" />
+      <MemberSignature Language="F#" Value="abstract member ReadByte : unit -&gt; byte&#xA;override this.ReadByte : unit -&gt; byte" Usage="binaryReader.ReadByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -981,6 +999,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadBytes(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadBytes (count As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ ReadBytes(int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadBytes : int -&gt; byte[]&#xA;override this.ReadBytes : int -&gt; byte[]" Usage="binaryReader.ReadBytes count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1049,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadChar" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadChar () As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual char ReadChar();" />
+      <MemberSignature Language="F#" Value="abstract member ReadChar : unit -&gt; char&#xA;override this.ReadChar : unit -&gt; char" Usage="binaryReader.ReadChar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1117,6 +1137,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadChars(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadChars (count As Integer) As Char()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;char&gt; ^ ReadChars(int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadChars : int -&gt; char[]&#xA;override this.ReadChars : int -&gt; char[]" Usage="binaryReader.ReadChars count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1186,6 +1207,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadDecimal () As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Decimal ReadDecimal();" />
+      <MemberSignature Language="F#" Value="abstract member ReadDecimal : unit -&gt; decimal&#xA;override this.ReadDecimal : unit -&gt; decimal" Usage="binaryReader.ReadDecimal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1235,6 +1257,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadDouble" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadDouble () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double ReadDouble();" />
+      <MemberSignature Language="F#" Value="abstract member ReadDouble : unit -&gt; double&#xA;override this.ReadDouble : unit -&gt; double" Usage="binaryReader.ReadDouble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1300,6 +1323,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt16" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadInt16 () As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual short ReadInt16();" />
+      <MemberSignature Language="F#" Value="abstract member ReadInt16 : unit -&gt; int16&#xA;override this.ReadInt16 : unit -&gt; int16" Usage="binaryReader.ReadInt16 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1351,6 +1375,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt32" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadInt32 () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadInt32();" />
+      <MemberSignature Language="F#" Value="abstract member ReadInt32 : unit -&gt; int&#xA;override this.ReadInt32 : unit -&gt; int" Usage="binaryReader.ReadInt32 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1410,6 +1435,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt64" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadInt64 () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long ReadInt64();" />
+      <MemberSignature Language="F#" Value="abstract member ReadInt64 : unit -&gt; int64&#xA;override this.ReadInt64 : unit -&gt; int64" Usage="binaryReader.ReadInt64 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1461,6 +1487,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadSByte" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadSByte () As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::SByte ReadSByte();" />
+      <MemberSignature Language="F#" Value="abstract member ReadSByte : unit -&gt; sbyte&#xA;override this.ReadSByte : unit -&gt; sbyte" Usage="binaryReader.ReadSByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1515,6 +1542,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadSingle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadSingle () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual float ReadSingle();" />
+      <MemberSignature Language="F#" Value="abstract member ReadSingle : unit -&gt; single&#xA;override this.ReadSingle : unit -&gt; single" Usage="binaryReader.ReadSingle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1579,6 +1607,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadString();" />
+      <MemberSignature Language="F#" Value="abstract member ReadString : unit -&gt; string&#xA;override this.ReadString : unit -&gt; string" Usage="binaryReader.ReadString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1636,6 +1665,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt16" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadUInt16 () As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::UInt16 ReadUInt16();" />
+      <MemberSignature Language="F#" Value="abstract member ReadUInt16 : unit -&gt; uint16&#xA;override this.ReadUInt16 : unit -&gt; uint16" Usage="binaryReader.ReadUInt16 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1692,6 +1722,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt32" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadUInt32 () As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::UInt32 ReadUInt32();" />
+      <MemberSignature Language="F#" Value="abstract member ReadUInt32 : unit -&gt; uint32&#xA;override this.ReadUInt32 : unit -&gt; uint32" Usage="binaryReader.ReadUInt32 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1748,6 +1779,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt64" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadUInt64 () As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::UInt64 ReadUInt64();" />
+      <MemberSignature Language="F#" Value="abstract member ReadUInt64 : unit -&gt; uint64&#xA;override this.ReadUInt64 : unit -&gt; uint64" Usage="binaryReader.ReadUInt64 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>

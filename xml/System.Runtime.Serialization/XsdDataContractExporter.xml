@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XsdDataContractExporter" />
   <TypeSignature Language="VB.NET" Value="Public Class XsdDataContractExporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XsdDataContractExporter" />
+  <TypeSignature Language="F#" Value="type XsdDataContractExporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -108,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.#ctor(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (schemas As XmlSchemaSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XsdDataContractExporter(System::Xml::Schema::XmlSchemaSet ^ schemas);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.XsdDataContractExporter : System.Xml.Schema.XmlSchemaSet -&gt; System.Runtime.Serialization.XsdDataContractExporter" Usage="new System.Runtime.Serialization.XsdDataContractExporter schemas" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -163,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.CanExport(System.Collections.Generic.ICollection{System.Reflection.Assembly})" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExport (assemblies As ICollection(Of Assembly)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExport(System::Collections::Generic::ICollection&lt;System::Reflection::Assembly ^&gt; ^ assemblies);" />
+      <MemberSignature Language="F#" Value="member this.CanExport : System.Collections.Generic.ICollection&lt;System.Reflection.Assembly&gt; -&gt; bool" Usage="xsdDataContractExporter.CanExport assemblies" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -198,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.CanExport(System.Collections.Generic.ICollection{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExport (types As ICollection(Of Type)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExport(System::Collections::Generic::ICollection&lt;Type ^&gt; ^ types);" />
+      <MemberSignature Language="F#" Value="member this.CanExport : System.Collections.Generic.ICollection&lt;Type&gt; -&gt; bool" Usage="xsdDataContractExporter.CanExport types" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -232,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanExport(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.CanExport(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExport(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.CanExport : Type -&gt; bool" Usage="xsdDataContractExporter.CanExport type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -297,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.Export(System.Collections.Generic.ICollection{System.Reflection.Assembly})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Export (assemblies As ICollection(Of Assembly))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Export(System::Collections::Generic::ICollection&lt;System::Reflection::Assembly ^&gt; ^ assemblies);" />
+      <MemberSignature Language="F#" Value="member this.Export : System.Collections.Generic.ICollection&lt;System.Reflection.Assembly&gt; -&gt; unit" Usage="xsdDataContractExporter.Export assemblies" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -332,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.Export(System.Collections.Generic.ICollection{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Export (types As ICollection(Of Type))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Export(System::Collections::Generic::ICollection&lt;Type ^&gt; ^ types);" />
+      <MemberSignature Language="F#" Value="member this.Export : System.Collections.Generic.ICollection&lt;Type&gt; -&gt; unit" Usage="xsdDataContractExporter.Export types" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -366,6 +373,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Export(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.Export(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Export(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.Export : Type -&gt; unit" Usage="xsdDataContractExporter.Export type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -406,6 +414,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlQualifiedName GetRootElementName(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.GetRootElementName(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlQualifiedName ^ GetRootElementName(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetRootElementName : Type -&gt; System.Xml.XmlQualifiedName" Usage="xsdDataContractExporter.GetRootElementName type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -440,6 +449,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchemaType GetSchemaType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.GetSchemaType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchemaType ^ GetSchemaType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetSchemaType : Type -&gt; System.Xml.Schema.XmlSchemaType" Usage="xsdDataContractExporter.GetSchemaType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -481,6 +491,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlQualifiedName GetSchemaTypeName(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractExporter.GetSchemaTypeName(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlQualifiedName ^ GetSchemaTypeName(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetSchemaTypeName : Type -&gt; System.Xml.XmlQualifiedName" Usage="xsdDataContractExporter.GetSchemaTypeName type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -516,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.XsdDataContractExporter.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As ExportOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ExportOptions ^ Options { System::Runtime::Serialization::ExportOptions ^ get(); void set(System::Runtime::Serialization::ExportOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Runtime.Serialization.ExportOptions with get, set" Usage="System.Runtime.Serialization.XsdDataContractExporter.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -546,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.XsdDataContractExporter.Schemas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schemas As XmlSchemaSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSet ^ Schemas { System::Xml::Schema::XmlSchemaSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schemas : System.Xml.Schema.XmlSchemaSet" Usage="System.Runtime.Serialization.XsdDataContractExporter.Schemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

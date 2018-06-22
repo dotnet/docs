@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.AuthorizationPolicyTypeElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthorizationPolicyTypeElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationPolicyTypeElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type AuthorizationPolicyTypeElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (policyType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthorizationPolicyTypeElement(System::String ^ policyType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.AuthorizationPolicyTypeElement : string -&gt; System.ServiceModel.Configuration.AuthorizationPolicyTypeElement" Usage="new System.ServiceModel.Configuration.AuthorizationPolicyTypeElement policyType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.PolicyType" />
       <MemberSignature Language="VB.NET" Value="Public Property PolicyType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PolicyType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PolicyType : string with get, set" Usage="System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.PolicyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

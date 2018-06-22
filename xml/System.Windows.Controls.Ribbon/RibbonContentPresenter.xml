@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonContentPresenter" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonContentPresenter&#xA;Inherits ContentPresenter" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonContentPresenter : System::Windows::Controls::ContentPresenter" />
+  <TypeSignature Language="F#" Value="type RibbonContentPresenter = class&#xA;    inherit ContentPresenter" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonContentPresenter.ControlSizeDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlSizeDefinition As RibbonControlSizeDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ ControlSizeDefinition { System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlSizeDefinition : System.Windows.Controls.Ribbon.RibbonControlSizeDefinition with get, set" Usage="System.Windows.Controls.Ribbon.RibbonContentPresenter.ControlSizeDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonContentPresenter.ControlSizeDefinitionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlSizeDefinitionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ControlSizeDefinitionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonContentPresenter.ControlSizeDefinitionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInControlGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInControlGroup As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInControlGroup { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInControlGroup : bool" Usage="System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInControlGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInControlGroupProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInControlGroupProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInControlGroupProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInControlGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInControlGroupProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInQuickAccessToolBar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInQuickAccessToolBar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInQuickAccessToolBar { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInQuickAccessToolBar : bool" Usage="System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInQuickAccessToolBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInQuickAccessToolBarProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInQuickAccessToolBarProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInQuickAccessToolBarProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInQuickAccessToolBarProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInQuickAccessToolBarProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContentPresenter.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonContentPresenter.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContentPresenter.OnTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTemplateChanged (oldTemplate As DataTemplate, newTemplate As DataTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTemplateChanged(System::Windows::DataTemplate ^ oldTemplate, System::Windows::DataTemplate ^ newTemplate);" />
+      <MemberSignature Language="F#" Value="override this.OnTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit" Usage="ribbonContentPresenter.OnTemplateChanged (oldTemplate, newTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

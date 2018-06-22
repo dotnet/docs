@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentLocatorGroup&#xA;Inherits ContentLocatorBase&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentLocatorGroup sealed : System::Windows::Annotations::ContentLocatorBase, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type ContentLocatorGroup = class&#xA;    inherit ContentLocatorBase&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorGroup.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="contentLocatorGroup.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorGroup.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchema () As XmlSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
+      <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="contentLocatorGroup.GetSchema " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.ContentLocatorGroup.Locators" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Locators As Collection(Of ContentLocator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::ContentLocator ^&gt; ^ Locators { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::ContentLocator ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Locators : System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.ContentLocator&gt;" Usage="System.Windows.Annotations.ContentLocatorGroup.Locators" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorGroup.ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXml (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="contentLocatorGroup.ReadXml reader" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorGroup.WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="contentLocatorGroup.WriteXml writer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>

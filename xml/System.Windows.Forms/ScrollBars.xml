@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollBars" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollBars" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollBars" />
+  <TypeSignature Language="F#" Value="type ScrollBars = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollBars.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="C++ CLI" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 3" Usage="System.Windows.Forms.ScrollBars.Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollBars.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 1" Usage="System.Windows.Forms.ScrollBars.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollBars.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.ScrollBars.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollBars.Vertical" />
       <MemberSignature Language="VB.NET" Value="Vertical" />
       <MemberSignature Language="C++ CLI" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 2" Usage="System.Windows.Forms.ScrollBars.Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

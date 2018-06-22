@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymBinder" />
   <TypeSignature Language="VB.NET" Value="Public Class SymBinder&#xA;Inherits SymBinderBase&#xA;Implements IDisposable, ISymbolBinder, ISymbolBinder1" />
   <TypeSignature Language="C++ CLI" Value="public ref class SymBinder : System::Diagnostics::SymbolStore::SymBinderBase, IDisposable, System::Diagnostics::SymbolStore::ISymbolBinder, System::Diagnostics::SymbolStore::ISymbolBinder1" />
+  <TypeSignature Language="F#" Value="type SymBinder = class&#xA;    inherit SymBinderBase&#xA;    interface ISymbolBinder&#xA;    interface ISymbolBinder1&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="symBinder.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="symBinder.Dispose A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!SymBinder ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="symBinder.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.GetReader(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetReader (importer As Integer, filename As String, searchPath As String) As ISymbolReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolReader ^ GetReader(int importer, System::String ^ filename, System::String ^ searchPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetReader : int * string * string -&gt; System.Diagnostics.SymbolStore.ISymbolReader&#xA;override this.GetReader : int * string * string -&gt; System.Diagnostics.SymbolStore.ISymbolReader" Usage="symBinder.GetReader (importer, filename, searchPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.GetReader(System.IntPtr,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetReader (importer As IntPtr, filename As String, searchPath As String) As ISymbolReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolReader ^ GetReader(IntPtr importer, System::String ^ filename, System::String ^ searchPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetReader : nativeint * string * string -&gt; System.Diagnostics.SymbolStore.ISymbolReader&#xA;override this.GetReader : nativeint * string * string -&gt; System.Diagnostics.SymbolStore.ISymbolReader" Usage="symBinder.GetReader (importer, filename, searchPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>

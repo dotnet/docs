@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectoryAccessRule" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectoryAccessRule&#xA;Inherits ObjectAccessRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryAccessRule : System::Security::AccessControl::ObjectAccessRule" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryAccessRule = class&#xA;    inherit ObjectAccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, adRights As ActiveDirectoryRights, type As AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAccessRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAccessRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AccessControlType -&gt; System.DirectoryServices.ActiveDirectoryAccessRule" Usage="new System.DirectoryServices.ActiveDirectoryAccessRule (identity, adRights, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AccessControlType,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, adRights As ActiveDirectoryRights, type As AccessControlType, inheritanceType As ActiveDirectorySecurityInheritance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAccessRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAccessRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AccessControlType * System.DirectoryServices.ActiveDirectorySecurityInheritance -&gt; System.DirectoryServices.ActiveDirectoryAccessRule" Usage="new System.DirectoryServices.ActiveDirectoryAccessRule (identity, adRights, type, inheritanceType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AccessControlType,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, adRights As ActiveDirectoryRights, type As AccessControlType, objectType As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAccessRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AccessControlType type, Guid objectType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAccessRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AccessControlType * Guid -&gt; System.DirectoryServices.ActiveDirectoryAccessRule" Usage="new System.DirectoryServices.ActiveDirectoryAccessRule (identity, adRights, type, objectType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AccessControlType,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, adRights As ActiveDirectoryRights, type As AccessControlType, inheritanceType As ActiveDirectorySecurityInheritance, inheritedObjectType As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAccessRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAccessRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AccessControlType * System.DirectoryServices.ActiveDirectorySecurityInheritance * Guid -&gt; System.DirectoryServices.ActiveDirectoryAccessRule" Usage="new System.DirectoryServices.ActiveDirectoryAccessRule (identity, adRights, type, inheritanceType, inheritedObjectType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AccessControlType,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, adRights As ActiveDirectoryRights, type As AccessControlType, objectType As Guid, inheritanceType As ActiveDirectorySecurityInheritance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAccessRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AccessControlType type, Guid objectType, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAccessRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AccessControlType * Guid * System.DirectoryServices.ActiveDirectorySecurityInheritance -&gt; System.DirectoryServices.ActiveDirectoryAccessRule" Usage="new System.DirectoryServices.ActiveDirectoryAccessRule (identity, adRights, type, objectType, inheritanceType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AccessControlType,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, adRights As ActiveDirectoryRights, type As AccessControlType, objectType As Guid, inheritanceType As ActiveDirectorySecurityInheritance, inheritedObjectType As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAccessRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AccessControlType type, Guid objectType, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAccessRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AccessControlType * Guid * System.DirectoryServices.ActiveDirectorySecurityInheritance * Guid -&gt; System.DirectoryServices.ActiveDirectoryAccessRule" Usage="new System.DirectoryServices.ActiveDirectoryAccessRule (identity, adRights, type, objectType, inheritanceType, inheritedObjectType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectoryAccessRule.ActiveDirectoryRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveDirectoryRights As ActiveDirectoryRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectoryRights ActiveDirectoryRights { System::DirectoryServices::ActiveDirectoryRights get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveDirectoryRights : System.DirectoryServices.ActiveDirectoryRights" Usage="System.DirectoryServices.ActiveDirectoryAccessRule.ActiveDirectoryRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectoryAccessRule.InheritanceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritanceType As ActiveDirectorySecurityInheritance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectorySecurityInheritance InheritanceType { System::DirectoryServices::ActiveDirectorySecurityInheritance get(); };" />
+      <MemberSignature Language="F#" Value="member this.InheritanceType : System.DirectoryServices.ActiveDirectorySecurityInheritance" Usage="System.DirectoryServices.ActiveDirectoryAccessRule.InheritanceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceKeyNotReadyException" />
   <TypeSignature Language="VB.NET" Value="Public Class InstanceKeyNotReadyException&#xA;Inherits InstancePersistenceCommandException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceKeyNotReadyException : System::Runtime::DurableInstancing::InstancePersistenceCommandException" />
+  <TypeSignature Language="F#" Value="type InstanceKeyNotReadyException = class&#xA;    inherit InstancePersistenceCommandException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyNotReadyException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceKeyNotReadyException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException : string -&gt; System.Runtime.DurableInstancing.InstanceKeyNotReadyException" Usage="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyNotReadyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstanceKeyNotReadyException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.DurableInstancing.InstanceKeyNotReadyException" Usage="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyNotReadyException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceKeyNotReadyException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException : string * Exception -&gt; System.Runtime.DurableInstancing.InstanceKeyNotReadyException" Usage="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, class System.Runtime.DurableInstancing.InstanceKey instanceKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyNotReadyException.#ctor(System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceKeyNotReadyException(System::Xml::Linq::XName ^ commandName, System::Runtime::DurableInstancing::InstanceKey ^ instanceKey);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException : System.Xml.Linq.XName * System.Runtime.DurableInstancing.InstanceKey -&gt; System.Runtime.DurableInstancing.InstanceKeyNotReadyException" Usage="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException (commandName, instanceKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, class System.Runtime.DurableInstancing.InstanceKey instanceKey, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyNotReadyException.#ctor(System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceKey,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceKeyNotReadyException(System::Xml::Linq::XName ^ commandName, System::Runtime::DurableInstancing::InstanceKey ^ instanceKey, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException : System.Xml.Linq.XName * System.Runtime.DurableInstancing.InstanceKey * Exception -&gt; System.Runtime.DurableInstancing.InstanceKeyNotReadyException" Usage="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException (commandName, instanceKey, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, valuetype System.Guid instanceId, class System.Runtime.DurableInstancing.InstanceKey instanceKey, string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyNotReadyException.#ctor(System.Xml.Linq.XName,System.Guid,System.Runtime.DurableInstancing.InstanceKey,System.String,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceKeyNotReadyException(System::Xml::Linq::XName ^ commandName, Guid instanceId, System::Runtime::DurableInstancing::InstanceKey ^ instanceKey, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException : System.Xml.Linq.XName * Guid * System.Runtime.DurableInstancing.InstanceKey * string * Exception -&gt; System.Runtime.DurableInstancing.InstanceKeyNotReadyException" Usage="new System.Runtime.DurableInstancing.InstanceKeyNotReadyException (commandName, instanceId, instanceKey, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -189,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyNotReadyException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="instanceKeyNotReadyException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyNotReadyException.InstanceKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKey As InstanceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceKey ^ InstanceKey { System::Runtime::DurableInstancing::InstanceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceKey : System.Runtime.DurableInstancing.InstanceKey" Usage="System.Runtime.DurableInstancing.InstanceKeyNotReadyException.InstanceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.CipherSuiteCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CipherSuiteCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CipherSuiteCode" />
+  <TypeSignature Language="F#" Value="type CipherSuiteCode = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA = 25" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_EXPORT_WITH_RC4_40_MD5" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_EXPORT_WITH_RC4_40_MD5" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_EXPORT_WITH_RC4_40_MD5" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_EXPORT_WITH_RC4_40_MD5 = 23" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_EXPORT_WITH_RC4_40_MD5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_3DES_EDE_CBC_SHA = 27" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_AES_128_CBC_SHA = 52" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_AES_128_CBC_SHA256 = 108" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_AES_128_GCM_SHA256 = 166" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_AES_256_CBC_SHA = 58" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_AES_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_AES_256_CBC_SHA256 = 109" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_AES_256_GCM_SHA384 = 167" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA = 70" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -217,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256 = 191" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -236,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256 = 49284" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA = 137" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256 = 197" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -293,6 +308,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384 = 49285" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -312,6 +328,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_DES_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_DES_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_DES_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_DES_CBC_SHA = 26" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_DES_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -331,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_RC4_128_MD5" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_RC4_128_MD5" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_RC4_128_MD5" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_RC4_128_MD5 = 24" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_RC4_128_MD5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -350,6 +368,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_anon_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_anon_WITH_SEED_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_anon_WITH_SEED_CBC_SHA = 155" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_anon_WITH_SEED_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -369,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA = 11" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -388,6 +408,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA = 13" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -407,6 +428,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_AES_128_CBC_SHA = 48" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -426,6 +448,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_AES_128_CBC_SHA256 = 62" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -445,6 +468,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_AES_128_GCM_SHA256 = 164" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -464,6 +488,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_AES_256_CBC_SHA = 54" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -483,6 +508,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_AES_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_AES_256_CBC_SHA256 = 104" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -502,6 +528,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_AES_256_GCM_SHA384 = 165" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -521,6 +548,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA = 66" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -540,6 +568,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA256 = 187" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -559,6 +588,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_CAMELLIA_128_GCM_SHA256 = 49282" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -578,6 +608,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA = 133" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -597,6 +628,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA256 = 193" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -616,6 +648,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_CAMELLIA_256_GCM_SHA384 = 49283" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -635,6 +668,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_DES_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_DES_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_DES_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_DES_CBC_SHA = 12" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_DES_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -654,6 +688,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_DSS_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_DSS_WITH_SEED_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_DSS_WITH_SEED_CBC_SHA = 151" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_DSS_WITH_SEED_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -673,6 +708,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA = 14" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -692,6 +728,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA = 16" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -711,6 +748,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_AES_128_CBC_SHA = 49" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -730,6 +768,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_AES_128_CBC_SHA256 = 63" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -749,6 +788,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_AES_128_GCM_SHA256 = 160" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -768,6 +808,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_AES_256_CBC_SHA = 55" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -787,6 +828,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_AES_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_AES_256_CBC_SHA256 = 105" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -806,6 +848,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_AES_256_GCM_SHA384 = 161" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -825,6 +868,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA = 67" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -844,6 +888,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA256 = 188" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -863,6 +908,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_CAMELLIA_128_GCM_SHA256 = 49278" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -882,6 +928,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA = 134" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -901,6 +948,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA256 = 194" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -920,6 +968,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_CAMELLIA_256_GCM_SHA384 = 49279" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -939,6 +988,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_DES_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_DES_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_DES_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_DES_CBC_SHA = 15" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_DES_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -958,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DH_RSA_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DH_RSA_WITH_SEED_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DH_RSA_WITH_SEED_CBC_SHA = 152" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DH_RSA_WITH_SEED_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -977,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA = 17" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -996,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA = 19" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1015,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_AES_128_CBC_SHA = 50" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1034,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_AES_128_CBC_SHA256 = 64" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1053,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_AES_128_GCM_SHA256 = 162" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1072,6 +1128,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_AES_256_CBC_SHA = 56" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1091,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_AES_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_AES_256_CBC_SHA256 = 106" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1110,6 +1168,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_AES_256_GCM_SHA384 = 163" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1129,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA = 68" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1148,6 +1208,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256 = 189" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1167,6 +1228,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_CAMELLIA_128_GCM_SHA256 = 49280" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1186,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA = 135" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1205,6 +1268,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256 = 195" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1224,6 +1288,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_CAMELLIA_256_GCM_SHA384 = 49281" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1243,6 +1308,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_DES_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_DES_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_DES_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_DES_CBC_SHA = 18" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_DES_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1262,6 +1328,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_DSS_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_DSS_WITH_SEED_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_DSS_WITH_SEED_CBC_SHA = 153" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_DSS_WITH_SEED_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1281,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA = 143" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1300,6 +1368,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_AES_128_CBC_SHA = 144" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1319,6 +1388,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_AES_128_CBC_SHA256 = 178" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1338,6 +1408,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_128_CCM" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_AES_128_CCM" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_AES_128_CCM" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_AES_128_CCM = 49318" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_128_CCM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1357,6 +1428,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_AES_128_GCM_SHA256 = 170" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1376,6 +1448,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_AES_256_CBC_SHA = 145" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1395,6 +1468,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_AES_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_AES_256_CBC_SHA384 = 179" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1414,6 +1488,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_256_CCM" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_AES_256_CCM" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_AES_256_CCM" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_AES_256_CCM = 49319" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_256_CCM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1433,6 +1508,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_AES_256_GCM_SHA384 = 171" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1452,6 +1528,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256 = 49302" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1471,6 +1548,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256 = 49296" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1490,6 +1568,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384 = 49303" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1509,6 +1588,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384 = 49297" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1528,6 +1608,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_ESTREAM_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_ESTREAM_SALSA20_SHA1 = 58396" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1547,6 +1628,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_NULL_SHA = 45" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1566,6 +1648,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_NULL_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_NULL_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_NULL_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_NULL_SHA256 = 180" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_NULL_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1585,6 +1668,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_NULL_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_NULL_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_NULL_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_NULL_SHA384 = 181" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_NULL_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1604,6 +1688,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_RC4_128_SHA = 142" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1623,6 +1708,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_PSK_WITH_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_PSK_WITH_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_DHE_PSK_WITH_SALSA20_SHA1 = 58397" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_PSK_WITH_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1642,6 +1728,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA = 20" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1661,6 +1748,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA = 22" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1680,6 +1768,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_128_CBC_SHA = 51" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1699,6 +1788,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 = 103" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1718,6 +1808,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_CCM" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_128_CCM" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_128_CCM" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_128_CCM = 49310" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_CCM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1737,6 +1828,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_CCM_8" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_128_CCM_8" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_128_CCM_8" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_128_CCM_8 = 49314" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_CCM_8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1756,6 +1848,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 = 158" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1775,6 +1868,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_256_CBC_SHA = 57" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1794,6 +1888,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 = 107" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1813,6 +1908,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_CCM" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_256_CCM" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_256_CCM" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_256_CCM = 49311" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_CCM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1832,6 +1928,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_CCM_8" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_256_CCM_8" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_256_CCM_8" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_256_CCM_8 = 49315" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_CCM_8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1851,6 +1948,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 = 159" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1870,6 +1968,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA = 69" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1889,6 +1988,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256 = 190" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1908,6 +2008,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256 = 49276" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1927,6 +2028,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA = 136" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1946,6 +2048,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256 = 196" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1965,6 +2068,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384 = 49277" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1984,6 +2088,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256 = 52245" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2003,6 +2108,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_DES_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_DES_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_DES_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_DES_CBC_SHA = 21" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_DES_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2022,6 +2128,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_ESTREAM_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_ESTREAM_SALSA20_SHA1 = 58398" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2041,6 +2148,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_SALSA20_SHA1 = 58399" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2060,6 +2168,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_DHE_RSA_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_DHE_RSA_WITH_SEED_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_DHE_RSA_WITH_SEED_CBC_SHA = 154" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_DHE_RSA_WITH_SEED_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2079,6 +2188,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA = 49175" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2098,6 +2208,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_anon_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_anon_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_anon_WITH_AES_128_CBC_SHA = 49176" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2117,6 +2228,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_anon_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_anon_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_anon_WITH_AES_256_CBC_SHA = 49177" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2136,6 +2248,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_anon_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_anon_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_anon_WITH_NULL_SHA = 49173" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2155,6 +2268,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_anon_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_anon_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_anon_WITH_RC4_128_SHA = 49174" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_anon_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2174,6 +2288,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA = 49155" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2193,6 +2308,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA = 49156" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2212,6 +2328,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256 = 49189" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2231,6 +2348,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256 = 49197" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2250,6 +2368,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA = 49157" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2269,6 +2388,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384 = 49190" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2288,6 +2408,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384 = 49198" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2307,6 +2428,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256 = 49268" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2326,6 +2448,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256 = 49288" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2345,6 +2468,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384 = 49269" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2364,6 +2488,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384 = 49289" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2383,6 +2508,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_NULL_SHA = 49153" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2402,6 +2528,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_ECDSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_ECDSA_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_ECDSA_WITH_RC4_128_SHA = 49154" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_ECDSA_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2421,6 +2548,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA = 49165" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2440,6 +2568,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_AES_128_CBC_SHA = 49166" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2459,6 +2588,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256 = 49193" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2478,6 +2608,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256 = 49201" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2497,6 +2628,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_AES_256_CBC_SHA = 49167" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2516,6 +2648,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384 = 49194" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2535,6 +2668,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384 = 49202" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2554,6 +2688,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256 = 49272" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2573,6 +2708,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256 = 49292" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2592,6 +2728,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384 = 49273" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2611,6 +2748,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384 = 49293" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2630,6 +2768,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_NULL_SHA = 49163" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2649,6 +2788,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDH_RSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDH_RSA_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDH_RSA_WITH_RC4_128_SHA = 49164" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDH_RSA_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2668,6 +2808,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA = 49160" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2687,6 +2828,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA = 49161" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2706,6 +2848,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 = 49187" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2725,6 +2868,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 = 49195" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2744,6 +2888,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA = 49162" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2763,6 +2908,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 = 49188" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2782,6 +2928,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 = 49196" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2801,6 +2948,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256 = 49266" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2820,6 +2968,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256 = 49286" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2839,6 +2988,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384 = 49267" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2858,6 +3008,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384 = 49287" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2877,6 +3028,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 = 52244" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2896,6 +3048,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_ESTREAM_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_ESTREAM_SALSA20_SHA1 = 58388" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2915,6 +3068,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_NULL_SHA = 49158" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2934,6 +3088,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_RC4_128_SHA = 49159" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2953,6 +3108,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_ECDSA_WITH_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_ECDSA_WITH_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_ECDSA_WITH_SALSA20_SHA1 = 58389" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_ECDSA_WITH_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2972,6 +3128,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA = 49204" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2991,6 +3148,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA = 49205" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3010,6 +3168,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256 = 49207" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3029,6 +3188,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA = 49206" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3048,6 +3208,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384 = 49208" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3067,6 +3228,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256 = 49306" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3086,6 +3248,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384 = 49307" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3105,6 +3268,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_ESTREAM_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_ESTREAM_SALSA20_SHA1 = 58392" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3124,6 +3288,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_NULL_SHA = 49209" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3143,6 +3308,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_NULL_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_NULL_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_NULL_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_NULL_SHA256 = 49210" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_NULL_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3162,6 +3328,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_NULL_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_NULL_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_NULL_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_NULL_SHA384 = 49211" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_NULL_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3181,6 +3348,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_RC4_128_SHA = 49203" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3200,6 +3368,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_PSK_WITH_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_PSK_WITH_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_PSK_WITH_SALSA20_SHA1 = 58393" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_PSK_WITH_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3219,6 +3388,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA = 49170" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3238,6 +3408,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA = 49171" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3257,6 +3428,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 = 49191" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3276,6 +3448,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 = 49199" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3295,6 +3468,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA = 49172" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3314,6 +3488,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 = 49192" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3333,6 +3508,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 = 49200" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3352,6 +3528,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256 = 49270" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3371,6 +3548,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256 = 49290" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3390,6 +3568,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384 = 49271" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3409,6 +3588,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384 = 49291" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3428,6 +3608,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 = 52243" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3447,6 +3628,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_ESTREAM_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_ESTREAM_SALSA20_SHA1 = 58386" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3466,6 +3648,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_NULL_SHA = 49168" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3485,6 +3668,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_RC4_128_SHA = 49169" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3504,6 +3688,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_ECDHE_RSA_WITH_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_ECDHE_RSA_WITH_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_ECDHE_RSA_WITH_SALSA20_SHA1 = 58387" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_ECDHE_RSA_WITH_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3523,6 +3708,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_EMPTY_RENEGOTIATION_INFO_SCSV" />
       <MemberSignature Language="VB.NET" Value="TLS_EMPTY_RENEGOTIATION_INFO_SCSV" />
       <MemberSignature Language="C++ CLI" Value="TLS_EMPTY_RENEGOTIATION_INFO_SCSV" />
+      <MemberSignature Language="F#" Value="TLS_EMPTY_RENEGOTIATION_INFO_SCSV = 255" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_EMPTY_RENEGOTIATION_INFO_SCSV" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3542,6 +3728,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_FALLBACK_SCSV" />
       <MemberSignature Language="VB.NET" Value="TLS_FALLBACK_SCSV" />
       <MemberSignature Language="C++ CLI" Value="TLS_FALLBACK_SCSV" />
+      <MemberSignature Language="F#" Value="TLS_FALLBACK_SCSV = 22016" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_FALLBACK_SCSV" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3561,6 +3748,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_NULL_WITH_NULL_NULL" />
       <MemberSignature Language="VB.NET" Value="TLS_NULL_WITH_NULL_NULL" />
       <MemberSignature Language="C++ CLI" Value="TLS_NULL_WITH_NULL_NULL" />
+      <MemberSignature Language="F#" Value="TLS_NULL_WITH_NULL_NULL = 0" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_NULL_WITH_NULL_NULL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3580,6 +3768,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_DHE_WITH_AES_128_CCM_8" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_DHE_WITH_AES_128_CCM_8" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_DHE_WITH_AES_128_CCM_8" />
+      <MemberSignature Language="F#" Value="TLS_PSK_DHE_WITH_AES_128_CCM_8 = 49322" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_DHE_WITH_AES_128_CCM_8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3599,6 +3788,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_DHE_WITH_AES_256_CCM_8" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_DHE_WITH_AES_256_CCM_8" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_DHE_WITH_AES_256_CCM_8" />
+      <MemberSignature Language="F#" Value="TLS_PSK_DHE_WITH_AES_256_CCM_8 = 49323" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_DHE_WITH_AES_256_CCM_8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3618,6 +3808,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_3DES_EDE_CBC_SHA = 139" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3637,6 +3828,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_128_CBC_SHA = 140" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3656,6 +3848,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_128_CBC_SHA256 = 174" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3675,6 +3868,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_CCM" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_128_CCM" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_128_CCM" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_128_CCM = 49316" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_CCM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3694,6 +3888,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_CCM_8" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_128_CCM_8" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_128_CCM_8" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_128_CCM_8 = 49320" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_CCM_8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3713,6 +3908,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_128_GCM_SHA256 = 168" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3732,6 +3928,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_256_CBC_SHA = 141" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3751,6 +3948,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_256_CBC_SHA384 = 175" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3770,6 +3968,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_CCM" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_256_CCM" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_256_CCM" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_256_CCM = 49317" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_CCM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3789,6 +3988,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_CCM_8" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_256_CCM_8" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_256_CCM_8" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_256_CCM_8 = 49321" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_CCM_8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3808,6 +4008,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_AES_256_GCM_SHA384 = 169" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3827,6 +4028,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256 = 49300" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3846,6 +4048,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256 = 49294" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3865,6 +4068,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384 = 49301" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3884,6 +4088,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384 = 49295" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3903,6 +4108,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_ESTREAM_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_ESTREAM_SALSA20_SHA1 = 58390" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3922,6 +4128,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_NULL_SHA = 44" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3941,6 +4148,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_NULL_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_NULL_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_NULL_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_NULL_SHA256 = 176" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_NULL_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3960,6 +4168,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_NULL_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_NULL_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_NULL_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_NULL_SHA384 = 177" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_NULL_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3979,6 +4188,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_RC4_128_SHA = 138" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3998,6 +4208,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_PSK_WITH_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_PSK_WITH_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_PSK_WITH_SALSA20_SHA1 = 58391" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_PSK_WITH_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4017,6 +4228,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_EXPORT_WITH_DES40_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_EXPORT_WITH_DES40_CBC_SHA = 8" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_EXPORT_WITH_DES40_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4036,6 +4248,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5" />
+      <MemberSignature Language="F#" Value="TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 = 6" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4055,6 +4268,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_EXPORT_WITH_RC4_40_MD5" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_EXPORT_WITH_RC4_40_MD5" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_EXPORT_WITH_RC4_40_MD5" />
+      <MemberSignature Language="F#" Value="TLS_RSA_EXPORT_WITH_RC4_40_MD5 = 3" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_EXPORT_WITH_RC4_40_MD5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4074,6 +4288,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA = 147" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4093,6 +4308,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_AES_128_CBC_SHA = 148" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4112,6 +4328,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_AES_128_CBC_SHA256 = 182" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4131,6 +4348,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_AES_128_GCM_SHA256 = 172" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4150,6 +4368,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_AES_256_CBC_SHA = 149" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4169,6 +4388,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_AES_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_AES_256_CBC_SHA384 = 183" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4188,6 +4408,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_AES_256_GCM_SHA384 = 173" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4207,6 +4428,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256 = 49304" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4226,6 +4448,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256 = 49298" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4245,6 +4468,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384 = 49305" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4264,6 +4488,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384 = 49299" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4283,6 +4508,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_ESTREAM_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_ESTREAM_SALSA20_SHA1 = 58394" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4302,6 +4528,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_NULL_SHA = 46" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4321,6 +4548,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_NULL_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_NULL_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_NULL_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_NULL_SHA256 = 184" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_NULL_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4340,6 +4568,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_NULL_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_NULL_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_NULL_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_NULL_SHA384 = 185" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_NULL_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4359,6 +4588,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_RC4_128_SHA = 146" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4378,6 +4608,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_PSK_WITH_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_PSK_WITH_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_RSA_PSK_WITH_SALSA20_SHA1 = 58395" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_PSK_WITH_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4397,6 +4628,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_3DES_EDE_CBC_SHA = 10" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4416,6 +4648,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_128_CBC_SHA = 47" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4435,6 +4668,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_128_CBC_SHA256 = 60" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4454,6 +4688,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_CCM" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_128_CCM" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_128_CCM" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_128_CCM = 49308" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_CCM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4473,6 +4708,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_CCM_8" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_128_CCM_8" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_128_CCM_8" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_128_CCM_8 = 49312" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_CCM_8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4492,6 +4728,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_128_GCM_SHA256 = 156" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4511,6 +4748,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_256_CBC_SHA = 53" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4530,6 +4768,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_256_CBC_SHA256 = 61" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4549,6 +4788,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_CCM" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_256_CCM" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_256_CCM" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_256_CCM = 49309" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_CCM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4568,6 +4808,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_CCM_8" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_256_CCM_8" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_256_CCM_8" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_256_CCM_8 = 49313" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_CCM_8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4587,6 +4828,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_AES_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_AES_256_GCM_SHA384 = 157" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_AES_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4606,6 +4848,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_CAMELLIA_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_CAMELLIA_128_CBC_SHA = 65" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4625,6 +4868,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256 = 186" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4644,6 +4888,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256 = 49274" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4663,6 +4908,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_CAMELLIA_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_CAMELLIA_256_CBC_SHA = 132" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4682,6 +4928,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256 = 192" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4701,6 +4948,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384 = 49275" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4720,6 +4968,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_DES_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_DES_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_DES_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_DES_CBC_SHA = 9" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_DES_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4739,6 +4988,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_ESTREAM_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_ESTREAM_SALSA20_SHA1 = 58384" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_ESTREAM_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4758,6 +5008,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_IDEA_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_IDEA_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_IDEA_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_IDEA_CBC_SHA = 7" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_IDEA_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4777,6 +5028,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_NULL_MD5" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_NULL_MD5" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_NULL_MD5" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_NULL_MD5 = 1" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_NULL_MD5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4796,6 +5048,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_NULL_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_NULL_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_NULL_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_NULL_SHA = 2" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_NULL_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4815,6 +5068,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_NULL_SHA256" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_NULL_SHA256" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_NULL_SHA256" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_NULL_SHA256 = 59" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_NULL_SHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4834,6 +5088,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_RC4_128_MD5" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_RC4_128_MD5" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_RC4_128_MD5" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_RC4_128_MD5 = 4" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_RC4_128_MD5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4853,6 +5108,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_RC4_128_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_RC4_128_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_RC4_128_SHA = 5" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_RC4_128_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4872,6 +5128,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_SALSA20_SHA1" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_SALSA20_SHA1" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_SALSA20_SHA1" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_SALSA20_SHA1 = 58385" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_SALSA20_SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4891,6 +5148,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_RSA_WITH_SEED_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_RSA_WITH_SEED_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_RSA_WITH_SEED_CBC_SHA = 150" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_RSA_WITH_SEED_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4910,6 +5168,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_DSS_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_DSS_WITH_3DES_EDE_CBC_SHA = 49180" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_DSS_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4929,6 +5188,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_DSS_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_DSS_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_DSS_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_DSS_WITH_AES_128_CBC_SHA = 49183" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_DSS_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4948,6 +5208,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_DSS_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_DSS_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_DSS_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_DSS_WITH_AES_256_CBC_SHA = 49186" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_DSS_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4967,6 +5228,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_RSA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_RSA_WITH_3DES_EDE_CBC_SHA = 49179" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_RSA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4986,6 +5248,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_RSA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_RSA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_RSA_WITH_AES_128_CBC_SHA = 49182" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_RSA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5005,6 +5268,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_RSA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_RSA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_RSA_WITH_AES_256_CBC_SHA = 49185" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_RSA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5024,6 +5288,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA = 49178" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5043,6 +5308,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_WITH_AES_128_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_WITH_AES_128_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_WITH_AES_128_CBC_SHA = 49181" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_WITH_AES_128_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5062,6 +5328,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="VB.NET" Value="TLS_SRP_SHA_WITH_AES_256_CBC_SHA" />
       <MemberSignature Language="C++ CLI" Value="TLS_SRP_SHA_WITH_AES_256_CBC_SHA" />
+      <MemberSignature Language="F#" Value="TLS_SRP_SHA_WITH_AES_256_CBC_SHA = 49184" Usage="Mono.Security.Interface.CipherSuiteCode.TLS_SRP_SHA_WITH_AES_256_CBC_SHA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

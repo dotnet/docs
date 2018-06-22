@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseDataEnvironment&#xA;Implements DataSource, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseDataEnvironment abstract : IDisposable, msdatasrc::DataSource" />
+  <TypeSignature Language="F#" Value="type BaseDataEnvironment = class&#xA;    interface DataSource&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.addDataSourceListener(msdatasrc.DataSourceListener)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub addDataSourceListener (ds As DataSourceListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void addDataSourceListener(msdatasrc::DataSourceListener ^ ds) = msdatasrc::DataSource::addDataSourceListener;" />
+      <MemberSignature Language="F#" Value="abstract member addDataSourceListener : msdatasrc.DataSourceListener -&gt; unit&#xA;override this.addDataSourceListener : msdatasrc.DataSourceListener -&gt; unit" Usage="baseDataEnvironment.addDataSourceListener ds" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:msdatasrc.DataSource.addDataSourceListener(msdatasrc.DataSourceListener)</InterfaceMember>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Commands" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Commands As Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Collection ^ Commands { Microsoft::VisualBasic::Collection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Commands : Microsoft.VisualBasic.Collection" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Commands" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Commands(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Commands(lpVar As Object) As Command" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::Command ^ Commands[System::Object ^] { ADODB::Command ^ get(System::Object ^ lpVar); };" />
+      <MemberSignature Language="F#" Value="member this.Commands(obj) : ADODB.Command" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Commands" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Connections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connections As Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Collection ^ Connections { Microsoft::VisualBasic::Collection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connections : Microsoft.VisualBasic.Collection" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Connections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Connections(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connections(lpVar As Object) As Connection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::Connection ^ Connections[System::Object ^] { ADODB::Connection ^ get(System::Object ^ lpVar); };" />
+      <MemberSignature Language="F#" Value="member this.Connections(obj) : ADODB.Connection" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Connections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose() = IDisposable::Dispose;" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="baseDataEnvironment.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -304,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="baseDataEnvironment.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!BaseDataEnvironment ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="baseDataEnvironment.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -368,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.getDataMember(System.String,System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function getDataMember (strDataMember As String, ByRef Id As Guid) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ getDataMember(System::String ^ strDataMember, Guid % Id) = msdatasrc::DataSource::getDataMember;" />
+      <MemberSignature Language="F#" Value="abstract member getDataMember : string *  -&gt; obj&#xA;override this.getDataMember : string *  -&gt; obj" Usage="baseDataEnvironment.getDataMember (strDataMember, Id)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:msdatasrc.DataSource.getDataMember(System.String,System.Guid@)</InterfaceMember>
@@ -406,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.GetDataMemberCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataMemberCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetDataMemberCount() = msdatasrc::DataSource::getDataMemberCount;" />
+      <MemberSignature Language="F#" Value="abstract member GetDataMemberCount : unit -&gt; int&#xA;override this.GetDataMemberCount : unit -&gt; int" Usage="baseDataEnvironment.GetDataMemberCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -438,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.GetDataMemberName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataMemberName (Index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetDataMemberName(int Index) = msdatasrc::DataSource::getDataMemberName;" />
+      <MemberSignature Language="F#" Value="abstract member GetDataMemberName : int -&gt; string&#xA;override this.GetDataMemberName : int -&gt; string" Usage="baseDataEnvironment.GetDataMemberName Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -474,6 +486,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.m_Commands" />
       <MemberSignature Language="VB.NET" Value="Protected m_Commands As Collection " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::VisualBasic::Collection ^ m_Commands;" />
+      <MemberSignature Language="F#" Value="val mutable m_Commands : Microsoft.VisualBasic.Collection" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.m_Commands" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -500,6 +513,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.m_Connections" />
       <MemberSignature Language="VB.NET" Value="Protected m_Connections As Collection " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::VisualBasic::Collection ^ m_Connections;" />
+      <MemberSignature Language="F#" Value="val mutable m_Connections : Microsoft.VisualBasic.Collection" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.m_Connections" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -526,6 +540,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.m_NonRSReturningCommands" />
       <MemberSignature Language="VB.NET" Value="Protected m_NonRSReturningCommands As Collection " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::VisualBasic::Collection ^ m_NonRSReturningCommands;" />
+      <MemberSignature Language="F#" Value="val mutable m_NonRSReturningCommands : Microsoft.VisualBasic.Collection" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.m_NonRSReturningCommands" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -552,6 +567,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.m_Recordsets" />
       <MemberSignature Language="VB.NET" Value="Protected m_Recordsets As Collection " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::VisualBasic::Collection ^ m_Recordsets;" />
+      <MemberSignature Language="F#" Value="val mutable m_Recordsets : Microsoft.VisualBasic.Collection" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.m_Recordsets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -578,6 +594,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Object" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -616,6 +633,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Recordsets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recordsets As Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Collection ^ Recordsets { Microsoft::VisualBasic::Collection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Recordsets : Microsoft.VisualBasic.Collection" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Recordsets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -645,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Recordsets(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recordsets(lpVar As Object) As Recordset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ADODB::Recordset ^ Recordsets[System::Object ^] { ADODB::Recordset ^ get(System::Object ^ lpVar); };" />
+      <MemberSignature Language="F#" Value="member this.Recordsets(obj) : ADODB.Recordset" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Recordsets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -683,6 +702,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.removeDataSourceListener(msdatasrc.DataSourceListener)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub removeDataSourceListener (ds As DataSourceListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void removeDataSourceListener(msdatasrc::DataSourceListener ^ ds) = msdatasrc::DataSource::removeDataSourceListener;" />
+      <MemberSignature Language="F#" Value="abstract member removeDataSourceListener : msdatasrc.DataSourceListener -&gt; unit&#xA;override this.removeDataSourceListener : msdatasrc.DataSourceListener -&gt; unit" Usage="baseDataEnvironment.removeDataSourceListener ds" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:msdatasrc.DataSource.removeDataSourceListener(msdatasrc.DataSourceListener)</InterfaceMember>

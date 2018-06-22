@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseWheelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub MouseWheelEventHandler(sender As Object, e As MouseWheelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void MouseWheelEventHandler(System::Object ^ sender, MouseWheelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type MouseWheelEventHandler = delegate of obj * MouseWheelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

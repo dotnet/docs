@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistStreamTypeWrapper&#xA;Implements IExtensibleDataObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistStreamTypeWrapper : System::Runtime::Serialization::IExtensibleDataObject" />
+  <TypeSignature Language="F#" Value="type PersistStreamTypeWrapper = class&#xA;    interface IExtensibleDataObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.ExtensionData" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtensionData As ExtensionDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ExtensionDataObject ^ ExtensionData { System::Runtime::Serialization::ExtensionDataObject ^ get(); void set(System::Runtime::Serialization::ExtensionDataObject ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExtensionData : System.Runtime.Serialization.ExtensionDataObject with get, set" Usage="System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.ExtensionData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData</InterfaceMember>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.GetObject``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObject(Of T) (ByRef obj As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void GetObject(T % obj);" />
+      <MemberSignature Language="F#" Value="member this.GetObject :  -&gt; unit" Usage="persistStreamTypeWrapper.GetObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.SetObject``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetObject(Of T) (obj As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void SetObject(T obj);" />
+      <MemberSignature Language="F#" Value="member this.SetObject : 'T -&gt; unit" Usage="persistStreamTypeWrapper.SetObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

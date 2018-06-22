@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintServerException" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintServerException&#xA;Inherits PrintSystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintServerException : System::Printing::PrintSystemException" />
+  <TypeSignature Language="F#" Value="type PrintServerException = class&#xA;    inherit PrintSystemException" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintServerException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintServerException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintServerException : string -&gt; System.Printing.PrintServerException" Usage="new System.Printing.PrintServerException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintServerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintServerException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintServerException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Printing.PrintServerException" Usage="new System.Printing.PrintServerException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintServerException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintServerException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintServerException : string * Exception -&gt; System.Printing.PrintServerException" Usage="new System.Printing.PrintServerException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintServerException.#ctor(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, serverName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintServerException(int errorCode, System::String ^ message, System::String ^ serverName);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintServerException : int * string * string -&gt; System.Printing.PrintServerException" Usage="new System.Printing.PrintServerException (errorCode, message, serverName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintServerException.#ctor(System.Int32,System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, serverName As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintServerException(int errorCode, System::String ^ message, System::String ^ serverName, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintServerException : int * string * string * Exception -&gt; System.Printing.PrintServerException" Usage="new System.Printing.PrintServerException (errorCode, message, serverName, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintServerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="printServerException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintServerException.ServerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerName : string" Usage="System.Printing.PrintServerException.ServerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

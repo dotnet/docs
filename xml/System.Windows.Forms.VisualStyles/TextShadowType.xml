@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TextShadowType" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextShadowType" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextShadowType" />
+  <TypeSignature Language="F#" Value="type TextShadowType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextShadowType.Continuous" />
       <MemberSignature Language="VB.NET" Value="Continuous" />
       <MemberSignature Language="C++ CLI" Value="Continuous" />
+      <MemberSignature Language="F#" Value="Continuous = 2" Usage="System.Windows.Forms.VisualStyles.TextShadowType.Continuous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextShadowType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.VisualStyles.TextShadowType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextShadowType.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 1" Usage="System.Windows.Forms.VisualStyles.TextShadowType.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

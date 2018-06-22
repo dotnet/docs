@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BatteryChargeStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum BatteryChargeStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class BatteryChargeStatus" />
+  <TypeSignature Language="F#" Value="type BatteryChargeStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.Charging" />
       <MemberSignature Language="VB.NET" Value="Charging" />
       <MemberSignature Language="C++ CLI" Value="Charging" />
+      <MemberSignature Language="F#" Value="Charging = 8" Usage="System.Windows.Forms.BatteryChargeStatus.Charging" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.Critical" />
       <MemberSignature Language="VB.NET" Value="Critical" />
       <MemberSignature Language="C++ CLI" Value="Critical" />
+      <MemberSignature Language="F#" Value="Critical = 4" Usage="System.Windows.Forms.BatteryChargeStatus.Critical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 1" Usage="System.Windows.Forms.BatteryChargeStatus.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.Low" />
       <MemberSignature Language="VB.NET" Value="Low" />
       <MemberSignature Language="C++ CLI" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = 2" Usage="System.Windows.Forms.BatteryChargeStatus.Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.NoSystemBattery" />
       <MemberSignature Language="VB.NET" Value="NoSystemBattery" />
       <MemberSignature Language="C++ CLI" Value="NoSystemBattery" />
+      <MemberSignature Language="F#" Value="NoSystemBattery = 128" Usage="System.Windows.Forms.BatteryChargeStatus.NoSystemBattery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 255" Usage="System.Windows.Forms.BatteryChargeStatus.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

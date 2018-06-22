@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaObjectCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaObjectCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaObjectCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type XmlSchemaObjectCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.#ctor(System.Xml.Schema.XmlSchemaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parent As XmlSchemaObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaObjectCollection(System::Xml::Schema::XmlSchemaObject ^ parent);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaObjectCollection : System.Xml.Schema.XmlSchemaObject -&gt; System.Xml.Schema.XmlSchemaObjectCollection" Usage="new System.Xml.Schema.XmlSchemaObjectCollection parent" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.Add(System.Xml.Schema.XmlSchemaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (item As XmlSchemaObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Xml::Schema::XmlSchemaObject ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Xml.Schema.XmlSchemaObject -&gt; int" Usage="xmlSchemaObjectCollection.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -181,6 +184,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.Contains(System.Xml.Schema.XmlSchemaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As XmlSchemaObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Xml::Schema::XmlSchemaObject ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Xml.Schema.XmlSchemaObject -&gt; bool" Usage="xmlSchemaObjectCollection.Contains item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -216,6 +220,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.CopyTo(System.Xml.Schema.XmlSchemaObject[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As XmlSchemaObject(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Xml::Schema::XmlSchemaObject ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Xml.Schema.XmlSchemaObject[] * int -&gt; unit" Usage="xmlSchemaObjectCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -275,6 +280,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As XmlSchemaObjectEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchemaObjectEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Xml.Schema.XmlSchemaObjectEnumerator" Usage="xmlSchemaObjectCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -306,6 +312,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.IndexOf(System.Xml.Schema.XmlSchemaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As XmlSchemaObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Xml::Schema::XmlSchemaObject ^ item);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Xml.Schema.XmlSchemaObject -&gt; int" Usage="xmlSchemaObjectCollection.IndexOf item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -340,6 +347,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.Insert(System.Int32,System.Xml.Schema.XmlSchemaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As XmlSchemaObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Xml::Schema::XmlSchemaObject ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Xml.Schema.XmlSchemaObject -&gt; unit" Usage="xmlSchemaObjectCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -392,6 +400,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaObjectCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As XmlSchemaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::XmlSchemaObject ^ default[int] { System::Xml::Schema::XmlSchemaObject ^ get(int index); void set(int index, System::Xml::Schema::XmlSchemaObject ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Xml.Schema.XmlSchemaObject with get, set" Usage="System.Xml.Schema.XmlSchemaObjectCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -426,6 +435,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
+      <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="xmlSchemaObjectCollection.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -457,6 +467,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnInsert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -493,6 +504,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnRemove (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -529,6 +541,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnSet (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -567,6 +580,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.Remove(System.Xml.Schema.XmlSchemaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (item As XmlSchemaObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Xml::Schema::XmlSchemaObject ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Xml.Schema.XmlSchemaObject -&gt; unit" Usage="xmlSchemaObjectCollection.Remove item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

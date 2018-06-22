@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.HostProtectionException" />
   <TypeSignature Language="VB.NET" Value="Public Class HostProtectionException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostProtectionException : SystemException" />
+  <TypeSignature Language="F#" Value="type HostProtectionException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostProtectionException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HostProtectionException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Security.HostProtectionException : string -&gt; System.Security.HostProtectionException" Usage="new System.Security.HostProtectionException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostProtectionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; HostProtectionException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Security.HostProtectionException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.HostProtectionException" Usage="new System.Security.HostProtectionException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostProtectionException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HostProtectionException(System::String ^ message, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Security.HostProtectionException : string * Exception -&gt; System.Security.HostProtectionException" Usage="new System.Security.HostProtectionException (message, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostProtectionException.#ctor(System.String,System.Security.Permissions.HostProtectionResource,System.Security.Permissions.HostProtectionResource)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, protectedResources As HostProtectionResource, demandedResources As HostProtectionResource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HostProtectionException(System::String ^ message, System::Security::Permissions::HostProtectionResource protectedResources, System::Security::Permissions::HostProtectionResource demandedResources);" />
+      <MemberSignature Language="F#" Value="new System.Security.HostProtectionException : string * System.Security.Permissions.HostProtectionResource * System.Security.Permissions.HostProtectionResource -&gt; System.Security.HostProtectionException" Usage="new System.Security.HostProtectionException (message, protectedResources, demandedResources)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.HostProtectionException.DemandedResources" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DemandedResources As HostProtectionResource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::HostProtectionResource DemandedResources { System::Security::Permissions::HostProtectionResource get(); };" />
+      <MemberSignature Language="F#" Value="member this.DemandedResources : System.Security.Permissions.HostProtectionResource" Usage="System.Security.HostProtectionException.DemandedResources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostProtectionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="hostProtectionException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -293,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.HostProtectionException.ProtectedResources" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtectedResources As HostProtectionResource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::HostProtectionResource ProtectedResources { System::Security::Permissions::HostProtectionResource get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProtectedResources : System.Security.Permissions.HostProtectionResource" Usage="System.Security.HostProtectionException.ProtectedResources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -325,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostProtectionException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="hostProtectionException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

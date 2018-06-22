@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowParameterBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowParameterBinding&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowParameterBinding sealed : System::Workflow::ComponentModel::DependencyObject" />
+  <TypeSignature Language="F#" Value="type WorkflowParameterBinding = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBinding.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowParameterBinding(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.WorkflowParameterBinding : string -&gt; System.Workflow.ComponentModel.WorkflowParameterBinding" Usage="new System.Workflow.ComponentModel.WorkflowParameterBinding parameterName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.WorkflowParameterBinding.ParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterName : string with get, set" Usage="System.Workflow.ComponentModel.WorkflowParameterBinding.ParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.WorkflowParameterBinding.ParameterNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParameterNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ParameterNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ParameterNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.WorkflowParameterBinding.ParameterNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.WorkflowParameterBinding.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Workflow.ComponentModel.WorkflowParameterBinding.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ValueProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

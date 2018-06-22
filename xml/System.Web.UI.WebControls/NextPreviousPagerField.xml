@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.NextPreviousPagerField" />
   <TypeSignature Language="VB.NET" Value="Public Class NextPreviousPagerField&#xA;Inherits DataPagerField" />
   <TypeSignature Language="C++ CLI" Value="public ref class NextPreviousPagerField : System::Web::UI::WebControls::DataPagerField" />
+  <TypeSignature Language="F#" Value="type NextPreviousPagerField = class&#xA;    inherit DataPagerField" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass" />
       <MemberSignature Language="VB.NET" Value="Public Property ButtonCssClass As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ButtonCssClass { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonCssClass : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -150,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Property ButtonType As ButtonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ButtonType ButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -216,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyProperties (newField As DataPagerField)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CopyProperties(System::Web::UI::WebControls::DataPagerField ^ newField);" />
+      <MemberSignature Language="F#" Value="override this.CopyProperties : System.Web.UI.WebControls.DataPagerField -&gt; unit" Usage="nextPreviousPagerField.CopyProperties newField" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -253,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateDataPagers(System.Web.UI.WebControls.DataPagerFieldItem,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateDataPagers (container As DataPagerFieldItem, startRowIndex As Integer, maximumRows As Integer, totalRowCount As Integer, fieldIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateDataPagers(System::Web::UI::WebControls::DataPagerFieldItem ^ container, int startRowIndex, int maximumRows, int totalRowCount, int fieldIndex);" />
+      <MemberSignature Language="F#" Value="override this.CreateDataPagers : System.Web.UI.WebControls.DataPagerFieldItem * int * int * int * int -&gt; unit" Usage="nextPreviousPagerField.CreateDataPagers (container, startRowIndex, maximumRows, totalRowCount, fieldIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -294,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateField" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateField () As DataPagerField" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::DataPagerField ^ CreateField();" />
+      <MemberSignature Language="F#" Value="override this.CreateField : unit -&gt; System.Web.UI.WebControls.DataPagerField" Usage="nextPreviousPagerField.CreateField " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -327,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="nextPreviousPagerField.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -359,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstPageImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FirstPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstPageImageUrl : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -418,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FirstPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstPageText : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -471,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="nextPreviousPagerField.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -492,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub HandleEvent (e As CommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void HandleEvent(System::Web::UI::WebControls::CommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.HandleEvent : System.Web.UI.WebControls.CommandEventArgs -&gt; unit" Usage="nextPreviousPagerField.HandleEvent e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -535,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property LastPageImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LastPageImageUrl : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -594,6 +606,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property LastPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LastPageText : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.LastPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -647,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NextPageImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextPageImageUrl : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -706,6 +720,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property NextPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextPageText : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.NextPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -759,6 +774,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviousPageImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousPageImageUrl : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -818,6 +834,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviousPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousPageText : string with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -871,6 +888,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.RenderDisabledButtonsAsLabels" />
       <MemberSignature Language="VB.NET" Value="Public Property RenderDisabledButtonsAsLabels As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderDisabledButtonsAsLabels { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderDisabledButtonsAsLabels : bool with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.RenderDisabledButtonsAsLabels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -915,6 +933,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.RenderNonBreakingSpacesBetweenControls" />
       <MemberSignature Language="VB.NET" Value="Public Property RenderNonBreakingSpacesBetweenControls As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderNonBreakingSpacesBetweenControls { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderNonBreakingSpacesBetweenControls : bool with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.RenderNonBreakingSpacesBetweenControls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -954,6 +973,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowFirstPageButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFirstPageButton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFirstPageButton : bool with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1005,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowLastPageButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowLastPageButton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowLastPageButton : bool with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1056,6 +1077,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowNextPageButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowNextPageButton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowNextPageButton : bool with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1107,6 +1129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowPreviousPageButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowPreviousPageButton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowPreviousPageButton : bool with get, set" Usage="System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

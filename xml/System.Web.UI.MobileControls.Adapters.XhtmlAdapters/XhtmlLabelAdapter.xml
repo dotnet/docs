@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class XhtmlLabelAdapter&#xA;Inherits XhtmlControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XhtmlLabelAdapter : System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type XhtmlLabelAdapter = class&#xA;    inherit XhtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Label" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Label ^ Control { System::Web::UI::MobileControls::Label ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.Label" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlLabelAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

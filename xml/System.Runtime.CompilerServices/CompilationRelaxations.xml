@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CompilationRelaxations" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompilationRelaxations" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompilationRelaxations" />
+  <TypeSignature Language="F#" Value="type CompilationRelaxations = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning" />
       <MemberSignature Language="VB.NET" Value="NoStringInterning" />
       <MemberSignature Language="C++ CLI" Value="NoStringInterning" />
+      <MemberSignature Language="F#" Value="NoStringInterning = 8" Usage="System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

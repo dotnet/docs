@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ITypeDescriptorFilterService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeDescriptorFilterService" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeDescriptorFilterService" />
+  <TypeSignature Language="F#" Value="type ITypeDescriptorFilterService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterAttributes(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function FilterAttributes (component As IComponent, attributes As IDictionary) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FilterAttributes(System::ComponentModel::IComponent ^ component, System::Collections::IDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member FilterAttributes : System.ComponentModel.IComponent * System.Collections.IDictionary -&gt; bool" Usage="iTypeDescriptorFilterService.FilterAttributes (component, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterEvents(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function FilterEvents (component As IComponent, events As IDictionary) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FilterEvents(System::ComponentModel::IComponent ^ component, System::Collections::IDictionary ^ events);" />
+      <MemberSignature Language="F#" Value="abstract member FilterEvents : System.ComponentModel.IComponent * System.Collections.IDictionary -&gt; bool" Usage="iTypeDescriptorFilterService.FilterEvents (component, events)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterProperties(System.ComponentModel.IComponent,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function FilterProperties (component As IComponent, properties As IDictionary) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FilterProperties(System::ComponentModel::IComponent ^ component, System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member FilterProperties : System.ComponentModel.IComponent * System.Collections.IDictionary -&gt; bool" Usage="iTypeDescriptorFilterService.FilterProperties (component, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum WorkflowDebuggerSteppingOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class WorkflowDebuggerSteppingOption" />
+  <TypeSignature Language="F#" Value="type WorkflowDebuggerSteppingOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption.Concurrent" />
       <MemberSignature Language="VB.NET" Value="Concurrent" />
       <MemberSignature Language="C++ CLI" Value="Concurrent" />
+      <MemberSignature Language="F#" Value="Concurrent = 1" Usage="System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption.Concurrent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption.Sequential" />
       <MemberSignature Language="VB.NET" Value="Sequential" />
       <MemberSignature Language="C++ CLI" Value="Sequential" />
+      <MemberSignature Language="F#" Value="Sequential = 0" Usage="System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption.Sequential" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

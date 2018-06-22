@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Keyboard" />
   <TypeSignature Language="VB.NET" Value="Public Class Keyboard" />
   <TypeSignature Language="C++ CLI" Value="public ref class Keyboard" />
+  <TypeSignature Language="F#" Value="type Keyboard = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.AltKeyDown" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AltKeyDown As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AltKeyDown { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AltKeyDown : bool" Usage="Microsoft.VisualBasic.Devices.Keyboard.AltKeyDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.CapsLock" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapsLock As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CapsLock { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CapsLock : bool" Usage="Microsoft.VisualBasic.Devices.Keyboard.CapsLock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -175,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.CtrlKeyDown" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CtrlKeyDown As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CtrlKeyDown { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CtrlKeyDown : bool" Usage="Microsoft.VisualBasic.Devices.Keyboard.CtrlKeyDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -223,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.NumLock" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumLock As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NumLock { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumLock : bool" Usage="Microsoft.VisualBasic.Devices.Keyboard.NumLock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -275,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.ScrollLock" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScrollLock As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ScrollLock { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollLock : bool" Usage="Microsoft.VisualBasic.Devices.Keyboard.ScrollLock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -336,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Keyboard.SendKeys(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendKeys (keys As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendKeys(System::String ^ keys);" />
+      <MemberSignature Language="F#" Value="member this.SendKeys : string -&gt; unit" Usage="keyboard.SendKeys keys" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -432,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Keyboard.SendKeys(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendKeys (keys As String, wait As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendKeys(System::String ^ keys, bool wait);" />
+      <MemberSignature Language="F#" Value="member this.SendKeys : string * bool -&gt; unit" Usage="keyboard.SendKeys (keys, wait)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -530,6 +538,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.ShiftKeyDown" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShiftKeyDown As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShiftKeyDown { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShiftKeyDown : bool" Usage="Microsoft.VisualBasic.Devices.Keyboard.ShiftKeyDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

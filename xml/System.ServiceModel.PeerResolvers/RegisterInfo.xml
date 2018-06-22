@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.RegisterInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class RegisterInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegisterInfo" />
+  <TypeSignature Language="F#" Value="type RegisterInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RegisterInfo.#ctor(System.Guid,System.String,System.ServiceModel.PeerNodeAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (client As Guid, meshId As String, address As PeerNodeAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegisterInfo(Guid client, System::String ^ meshId, System::ServiceModel::PeerNodeAddress ^ address);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.PeerResolvers.RegisterInfo : Guid * string * System.ServiceModel.PeerNodeAddress -&gt; System.ServiceModel.PeerResolvers.RegisterInfo" Usage="new System.ServiceModel.PeerResolvers.RegisterInfo (client, meshId, address)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RegisterInfo.ClientId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ClientId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientId : Guid" Usage="System.ServiceModel.PeerResolvers.RegisterInfo.ClientId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RegisterInfo.HasBody" />
       <MemberSignature Language="VB.NET" Value="Public Function HasBody () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasBody();" />
+      <MemberSignature Language="F#" Value="member this.HasBody : unit -&gt; bool" Usage="registerInfo.HasBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RegisterInfo.MeshId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeshId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MeshId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeshId : string" Usage="System.ServiceModel.PeerResolvers.RegisterInfo.MeshId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RegisterInfo.NodeAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeAddress As PeerNodeAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerNodeAddress ^ NodeAddress { System::ServiceModel::PeerNodeAddress ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeAddress : System.ServiceModel.PeerNodeAddress" Usage="System.ServiceModel.PeerResolvers.RegisterInfo.NodeAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

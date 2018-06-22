@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.AudioLevelUpdatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AudioLevelUpdatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AudioLevelUpdatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AudioLevelUpdatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@ void sre_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.AudioLevelUpdatedEventArgs.AudioLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AudioLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AudioLevel : int" Usage="System.Speech.Recognition.AudioLevelUpdatedEventArgs.AudioLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

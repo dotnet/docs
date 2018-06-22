@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.NamespaceDefinitionHandle" />
   <TypeSignature Language="VB.NET" Value="Public Structure NamespaceDefinitionHandle&#xA;Implements IEquatable(Of NamespaceDefinitionHandle)" />
   <TypeSignature Language="C++ CLI" Value="public value class NamespaceDefinitionHandle : IEquatable&lt;System::Reflection::Metadata::NamespaceDefinitionHandle&gt;" />
+  <TypeSignature Language="F#" Value="type NamespaceDefinitionHandle = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.NamespaceDefinitionHandle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="namespaceDefinitionHandle.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.NamespaceDefinitionHandle.Equals(System.Reflection.Metadata.NamespaceDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As NamespaceDefinitionHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::NamespaceDefinitionHandle other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.NamespaceDefinitionHandle -&gt; bool" Usage="namespaceDefinitionHandle.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.NamespaceDefinitionHandle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="namespaceDefinitionHandle.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinitionHandle.IsNil" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNil As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNil { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNil : bool" Usage="System.Reflection.Metadata.NamespaceDefinitionHandle.IsNil" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.NamespaceDefinitionHandle.op_Equality(System.Reflection.Metadata.NamespaceDefinitionHandle,System.Reflection.Metadata.NamespaceDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As NamespaceDefinitionHandle, right As NamespaceDefinitionHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Metadata::NamespaceDefinitionHandle left, System::Reflection::Metadata::NamespaceDefinitionHandle right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Metadata.NamespaceDefinitionHandle * System.Reflection.Metadata.NamespaceDefinitionHandle -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.NamespaceDefinitionHandle op_Explicit(valuetype System.Reflection.Metadata.Handle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.NamespaceDefinitionHandle.op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.NamespaceDefinitionHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Reflection::Metadata::NamespaceDefinitionHandle(System::Reflection::Metadata::Handle handle);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Reflection.Metadata.Handle -&gt; System.Reflection.Metadata.NamespaceDefinitionHandle" Usage="System.Reflection.Metadata.NamespaceDefinitionHandle.op_Explicit handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.Handle op_Implicit(valuetype System.Reflection.Metadata.NamespaceDefinitionHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.NamespaceDefinitionHandle.op_Implicit(System.Reflection.Metadata.NamespaceDefinitionHandle)~System.Reflection.Metadata.Handle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Reflection::Metadata::Handle(System::Reflection::Metadata::NamespaceDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Reflection.Metadata.NamespaceDefinitionHandle -&gt; System.Reflection.Metadata.Handle" Usage="System.Reflection.Metadata.NamespaceDefinitionHandle.op_Implicit handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.NamespaceDefinitionHandle.op_Inequality(System.Reflection.Metadata.NamespaceDefinitionHandle,System.Reflection.Metadata.NamespaceDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As NamespaceDefinitionHandle, right As NamespaceDefinitionHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Metadata::NamespaceDefinitionHandle left, System::Reflection::Metadata::NamespaceDefinitionHandle right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Metadata.NamespaceDefinitionHandle * System.Reflection.Metadata.NamespaceDefinitionHandle -&gt; bool" Usage="System.Reflection.Metadata.NamespaceDefinitionHandle.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

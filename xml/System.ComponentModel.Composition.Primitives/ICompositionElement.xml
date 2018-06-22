@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.ICompositionElement" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICompositionElement" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICompositionElement" />
+  <TypeSignature Language="F#" Value="type ICompositionElement = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ICompositionElement.Origin" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origin As ICompositionElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::Primitives::ICompositionElement ^ Origin { System::ComponentModel::Composition::Primitives::ICompositionElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Origin : System.ComponentModel.Composition.Primitives.ICompositionElement" Usage="System.ComponentModel.Composition.Primitives.ICompositionElement.Origin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

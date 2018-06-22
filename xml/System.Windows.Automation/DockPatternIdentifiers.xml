@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.DockPatternIdentifiers" />
   <TypeSignature Language="VB.NET" Value="Public Class DockPatternIdentifiers" />
   <TypeSignature Language="C++ CLI" Value="public ref class DockPatternIdentifiers abstract sealed" />
+  <TypeSignature Language="F#" Value="type DockPatternIdentifiers = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPatternIdentifiers.DockPositionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DockPositionProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ DockPositionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DockPositionProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.DockPatternIdentifiers.DockPositionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPatternIdentifiers.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.DockPatternIdentifiers.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

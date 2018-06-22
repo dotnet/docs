@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsDescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsDescriptionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsDescriptionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SettingsDescriptionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsDescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsDescriptionAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsDescriptionAttribute : string -&gt; System.Configuration.SettingsDescriptionAttribute" Usage="new System.Configuration.SettingsDescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsDescriptionAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Configuration.SettingsDescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

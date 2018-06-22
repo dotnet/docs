@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.LCIDConversionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LCIDConversionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class LCIDConversionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type LCIDConversionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.LCIDConversionAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LCIDConversionAttribute(int lcid);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.LCIDConversionAttribute : int -&gt; System.Runtime.InteropServices.LCIDConversionAttribute" Usage="new System.Runtime.InteropServices.LCIDConversionAttribute lcid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.LCIDConversionAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int" Usage="System.Runtime.InteropServices.LCIDConversionAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

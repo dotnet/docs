@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingManagerDataErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class BindingManagerDataErrorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingManagerDataErrorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type BindingManagerDataErrorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerDataErrorEventArgs.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingManagerDataErrorEventArgs(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.BindingManagerDataErrorEventArgs : Exception -&gt; System.Windows.Forms.BindingManagerDataErrorEventArgs" Usage="new System.Windows.Forms.BindingManagerDataErrorEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerDataErrorEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Windows.Forms.BindingManagerDataErrorEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

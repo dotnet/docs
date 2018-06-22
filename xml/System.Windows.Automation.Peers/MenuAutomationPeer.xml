@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.MenuAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class MenuAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type MenuAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuAutomationPeer.#ctor(System.Windows.Controls.Menu)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Menu)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuAutomationPeer(System::Windows::Controls::Menu ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.MenuAutomationPeer : System.Windows.Controls.Menu -&gt; System.Windows.Automation.Peers.MenuAutomationPeer" Usage="new System.Windows.Automation.Peers.MenuAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="menuAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="menuAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuAutomationPeer.IsContentElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="menuAutomationPeer.IsContentElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

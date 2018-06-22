@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.UndoAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum UndoAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class UndoAction" />
+  <TypeSignature Language="F#" Value="type UndoAction = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Clear" />
       <MemberSignature Language="VB.NET" Value="Clear" />
       <MemberSignature Language="C++ CLI" Value="Clear" />
+      <MemberSignature Language="F#" Value="Clear = 4" Usage="System.Windows.Controls.UndoAction.Clear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Create" />
       <MemberSignature Language="VB.NET" Value="Create" />
       <MemberSignature Language="C++ CLI" Value="Create" />
+      <MemberSignature Language="F#" Value="Create = 5" Usage="System.Windows.Controls.UndoAction.Create" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Merge" />
       <MemberSignature Language="VB.NET" Value="Merge" />
       <MemberSignature Language="C++ CLI" Value="Merge" />
+      <MemberSignature Language="F#" Value="Merge = 1" Usage="System.Windows.Controls.UndoAction.Merge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.UndoAction.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Redo" />
       <MemberSignature Language="VB.NET" Value="Redo" />
       <MemberSignature Language="C++ CLI" Value="Redo" />
+      <MemberSignature Language="F#" Value="Redo = 3" Usage="System.Windows.Controls.UndoAction.Redo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Undo" />
       <MemberSignature Language="VB.NET" Value="Undo" />
       <MemberSignature Language="C++ CLI" Value="Undo" />
+      <MemberSignature Language="F#" Value="Undo = 2" Usage="System.Windows.Controls.UndoAction.Undo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

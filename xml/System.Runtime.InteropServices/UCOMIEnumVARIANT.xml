@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIEnumVARIANT" />
   <TypeSignature Language="VB.NET" Value="Public Interface UCOMIEnumVARIANT" />
   <TypeSignature Language="C++ CLI" Value="public interface class UCOMIEnumVARIANT" />
+  <TypeSignature Language="F#" Value="type UCOMIEnumVARIANT = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumVARIANT.Clone(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ppenum As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone(int ppenum);" />
+      <MemberSignature Language="F#" Value="abstract member Clone : int -&gt; unit" Usage="uCOMIEnumVARIANT.Clone ppenum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumVARIANT.Next(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgvar As Integer, pceltFetched As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, int rgvar, int pceltFetched);" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * int * int -&gt; int" Usage="uCOMIEnumVARIANT.Next (celt, rgvar, pceltFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumVARIANT.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Function Reset () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; int" Usage="uCOMIEnumVARIANT.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumVARIANT.Skip(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; int" Usage="uCOMIEnumVARIANT.Skip celt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

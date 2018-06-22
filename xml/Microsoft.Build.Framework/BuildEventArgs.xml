@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BuildEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildEventArgs abstract : EventArgs" />
+  <TypeSignature Language="F#" Value="type BuildEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventArgs.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildEventArgs : string * string * string -&gt; Microsoft.Build.Framework.BuildEventArgs" Usage="new Microsoft.Build.Framework.BuildEventArgs (message, helpKeyword, senderName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventArgs.#ctor(System.String,System.String,System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildEventArgs : string * string * string * DateTime -&gt; Microsoft.Build.Framework.BuildEventArgs" Usage="new Microsoft.Build.Framework.BuildEventArgs (message, helpKeyword, senderName, eventTimestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventArgs.BuildEventContext" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildEventContext As BuildEventContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::BuildEventContext ^ BuildEventContext { Microsoft::Build::Framework::BuildEventContext ^ get(); void set(Microsoft::Build::Framework::BuildEventContext ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildEventContext : Microsoft.Build.Framework.BuildEventContext with get, set" Usage="Microsoft.Build.Framework.BuildEventArgs.BuildEventContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpKeyword As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property System::String ^ Message {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string with get, set" Usage="Microsoft.Build.Framework.BuildEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SenderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SenderName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SenderName : string" Usage="Microsoft.Build.Framework.BuildEventArgs.SenderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventArgs.ThreadId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ThreadId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadId : int" Usage="Microsoft.Build.Framework.BuildEventArgs.ThreadId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventArgs.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Timestamp { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : DateTime" Usage="Microsoft.Build.Framework.BuildEventArgs.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

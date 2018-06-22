@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IssuedTokenServiceElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IssuedTokenServiceElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class IssuedTokenServiceElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type IssuedTokenServiceElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowedAudienceUris" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedAudienceUris As AllowedAudienceUriElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::AllowedAudienceUriElementCollection ^ AllowedAudienceUris { System::ServiceModel::Configuration::AllowedAudienceUriElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedAudienceUris : System.ServiceModel.Configuration.AllowedAudienceUriElementCollection" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowedAudienceUris" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowUntrustedRsaIssuers" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowUntrustedRsaIssuers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowUntrustedRsaIssuers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowUntrustedRsaIssuers : bool with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowUntrustedRsaIssuers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.AudienceUriMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AudienceUriMode As AudienceUriMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::AudienceUriMode AudienceUriMode { System::IdentityModel::Selectors::AudienceUriMode get(); void set(System::IdentityModel::Selectors::AudienceUriMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AudienceUriMode : System.IdentityModel.Selectors.AudienceUriMode with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.AudienceUriMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.CertificateValidationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateValidationMode As X509CertificateValidationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::X509CertificateValidationMode CertificateValidationMode { System::ServiceModel::Security::X509CertificateValidationMode get(); void set(System::ServiceModel::Security::X509CertificateValidationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidationMode : System.ServiceModel.Security.X509CertificateValidationMode with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.CertificateValidationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.IssuedTokenServiceElement.Copy(System.ServiceModel.Configuration.IssuedTokenServiceElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As IssuedTokenServiceElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::IssuedTokenServiceElement ^ from);" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.IssuedTokenServiceElement -&gt; unit" Usage="issuedTokenServiceElement.Copy from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.CustomCertificateValidatorType" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomCertificateValidatorType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomCertificateValidatorType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomCertificateValidatorType : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.CustomCertificateValidatorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KnownCertificates As X509CertificateTrustedIssuerElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::X509CertificateTrustedIssuerElementCollection ^ KnownCertificates { System::ServiceModel::Configuration::X509CertificateTrustedIssuerElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KnownCertificates : System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.RevocationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RevocationMode As X509RevocationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode RevocationMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.RevocationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.SamlSerializerType" />
       <MemberSignature Language="VB.NET" Value="Public Property SamlSerializerType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SamlSerializerType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SamlSerializerType : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.SamlSerializerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenServiceElement.TrustedStoreLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property TrustedStoreLocation As StoreLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation TrustedStoreLocation { System::Security::Cryptography::X509Certificates::StoreLocation get(); void set(System::Security::Cryptography::X509Certificates::StoreLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.TrustedStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenServiceElement.TrustedStoreLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

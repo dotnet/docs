@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.UserTrackPoint" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UserTrackPoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserTrackPoint sealed" />
+  <TypeSignature Language="F#" Value="type UserTrackPoint = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotations As TrackingAnnotationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ Annotations { System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Annotations : System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" Usage="System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExcludedLocations As UserTrackingLocationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::UserTrackingLocationCollection ^ ExcludedLocations { System::Workflow::Runtime::Tracking::UserTrackingLocationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExcludedLocations : System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" Usage="System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extracts As ExtractCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::ExtractCollection ^ Extracts { System::Workflow::Runtime::Tracking::ExtractCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extracts : System.Workflow.Runtime.Tracking.ExtractCollection" Usage="System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchingLocations As UserTrackingLocationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::UserTrackingLocationCollection ^ MatchingLocations { System::Workflow::Runtime::Tracking::UserTrackingLocationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MatchingLocations : System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" Usage="System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

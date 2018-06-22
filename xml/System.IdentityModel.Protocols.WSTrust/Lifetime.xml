@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.Lifetime" />
   <TypeSignature Language="VB.NET" Value="Public Class Lifetime" />
   <TypeSignature Language="C++ CLI" Value="public ref class Lifetime" />
+  <TypeSignature Language="F#" Value="type Lifetime = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Lifetime.#ctor(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (created As DateTime, expires As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lifetime(DateTime created, DateTime expires);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.Lifetime : DateTime * DateTime -&gt; System.IdentityModel.Protocols.WSTrust.Lifetime" Usage="new System.IdentityModel.Protocols.WSTrust.Lifetime (created, expires)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Lifetime.#ctor(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (created As Nullable(Of DateTime), expires As Nullable(Of DateTime))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lifetime(Nullable&lt;DateTime&gt; created, Nullable&lt;DateTime&gt; expires);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.Lifetime : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; System.IdentityModel.Protocols.WSTrust.Lifetime" Usage="new System.IdentityModel.Protocols.WSTrust.Lifetime (created, expires)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Lifetime.Created" />
       <MemberSignature Language="VB.NET" Value="Public Property Created As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; Created { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Created : Nullable&lt;DateTime&gt; with get, set" Usage="System.IdentityModel.Protocols.WSTrust.Lifetime.Created" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Lifetime.Expires" />
       <MemberSignature Language="VB.NET" Value="Public Property Expires As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; Expires { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Expires : Nullable&lt;DateTime&gt; with get, set" Usage="System.IdentityModel.Protocols.WSTrust.Lifetime.Expires" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControl.TabPageCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class TabControl.TabPageCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public: ref class TabControl::TabPageCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type TabControl.TabPageCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.#ctor(System.Windows.Forms.TabControl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As TabControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TabPageCollection(System::Windows::Forms::TabControl ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TabControl.TabPageCollection : System.Windows.Forms.TabControl -&gt; System.Windows.Forms.TabControl.TabPageCollection" Usage="new System.Windows.Forms.TabControl.TabPageCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; unit" Usage="tabPageCollection.Add text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Add(System.Windows.Forms.TabPage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As TabPage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Forms::TabPage ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Forms.TabPage -&gt; unit" Usage="tabPageCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="tabPageCollection.Add (key, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Add(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, text As String, imageIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::String ^ text, int imageIndex);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string * int -&gt; unit" Usage="tabPageCollection.Add (key, text, imageIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Add(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, text As String, imageKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::String ^ text, System::String ^ imageKey);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string * string -&gt; unit" Usage="tabPageCollection.Add (key, text, imageKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -246,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.AddRange(System.Windows.Forms.TabPage[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (pages As TabPage())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Windows::Forms::TabPage ^&gt; ^ pages);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.TabPage[] -&gt; unit" Usage="tabPageCollection.AddRange pages" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="tabPageCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -324,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Contains(System.Windows.Forms.TabPage)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (page As TabPage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::TabPage ^ page);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.TabPage -&gt; bool" Usage="tabPageCollection.Contains page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -367,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="tabPageCollection.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -401,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPageCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.TabControl.TabPageCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -442,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tabPageCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -480,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.IndexOf(System.Windows.Forms.TabPage)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (page As TabPage) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::TabPage ^ page);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.TabPage -&gt; int" Usage="tabPageCollection.IndexOf page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -521,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.IndexOfKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOfKey : string -&gt; int&#xA;override this.IndexOfKey : string -&gt; int" Usage="tabPageCollection.IndexOfKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -563,6 +578,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; unit" Usage="tabPageCollection.Insert (index, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -594,6 +610,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Forms.TabPage tabPage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Insert(System.Int32,System.Windows.Forms.TabPage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Forms::TabPage ^ tabPage);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.TabPage -&gt; unit" Usage="tabPageCollection.Insert (index, tabPage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -626,6 +643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Insert(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As String, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ key, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * string -&gt; unit" Usage="tabPageCollection.Insert (index, key, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -662,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Insert(System.Int32,System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As String, text As String, imageIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ key, System::String ^ text, int imageIndex);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * string * int -&gt; unit" Usage="tabPageCollection.Insert (index, key, text, imageIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -702,6 +721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Insert(System.Int32,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As String, text As String, imageKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ key, System::String ^ text, System::String ^ imageKey);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * string * string -&gt; unit" Usage="tabPageCollection.Insert (index, key, text, imageKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -742,6 +762,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPageCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.TabControl.TabPageCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -787,6 +808,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPageCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As TabPage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::TabPage ^ default[int] { System::Windows::Forms::TabPage ^ get(int index); void set(int index, System::Windows::Forms::TabPage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.TabPage with get, set" Usage="System.Windows.Forms.TabControl.TabPageCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -818,6 +840,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPageCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As TabPage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::TabPage ^ default[System::String ^] { System::Windows::Forms::TabPage ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.TabPage" Usage="System.Windows.Forms.TabControl.TabPageCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -851,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.Remove(System.Windows.Forms.TabPage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As TabPage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Forms::TabPage ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Forms.TabPage -&gt; unit" Usage="tabPageCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -891,6 +915,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="tabPageCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -933,6 +958,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.TabPageCollection.RemoveByKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveByKey (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveByKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveByKey : string -&gt; unit&#xA;override this.RemoveByKey : string -&gt; unit" Usage="tabPageCollection.RemoveByKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1009,6 +1035,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPageCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.TabControl.TabPageCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1040,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPageCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.TabControl.TabPageCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1216,6 +1244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPageCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.TabControl.TabPageCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1247,6 +1276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPageCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.TabControl.TabPageCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

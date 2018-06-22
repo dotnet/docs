@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.BooleanSwitch" />
   <TypeSignature Language="VB.NET" Value="Public Class BooleanSwitch&#xA;Inherits Switch" />
   <TypeSignature Language="C++ CLI" Value="public ref class BooleanSwitch : System::Diagnostics::Switch" />
+  <TypeSignature Language="F#" Value="type BooleanSwitch = class&#xA;    inherit Switch" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -105,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.BooleanSwitch.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BooleanSwitch(System::String ^ displayName, System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.BooleanSwitch : string * string -&gt; System.Diagnostics.BooleanSwitch" Usage="new System.Diagnostics.BooleanSwitch (displayName, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -176,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.BooleanSwitch.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, description As String, defaultSwitchValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BooleanSwitch(System::String ^ displayName, System::String ^ description, System::String ^ defaultSwitchValue);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.BooleanSwitch : string * string * string -&gt; System.Diagnostics.BooleanSwitch" Usage="new System.Diagnostics.BooleanSwitch (displayName, description, defaultSwitchValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -218,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.BooleanSwitch.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Diagnostics.BooleanSwitch.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -275,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.BooleanSwitch.OnValueChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValueChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValueChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnValueChanged : unit -&gt; unit" Usage="booleanSwitch.OnValueChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

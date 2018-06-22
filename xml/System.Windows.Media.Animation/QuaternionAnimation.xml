@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.QuaternionAnimation" />
   <TypeSignature Language="VB.NET" Value="Public Class QuaternionAnimation&#xA;Inherits QuaternionAnimationBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class QuaternionAnimation : System::Windows::Media::Animation::QuaternionAnimationBase" />
+  <TypeSignature Language="F#" Value="type QuaternionAnimation = class&#xA;    inherit QuaternionAnimationBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuaternionAnimation.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QuaternionAnimation(System::Windows::Media::Media3D::Quaternion toValue, System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.QuaternionAnimation : System.Windows.Media.Media3D.Quaternion * System.Windows.Duration -&gt; System.Windows.Media.Animation.QuaternionAnimation" Usage="new System.Windows.Media.Animation.QuaternionAnimation (toValue, duration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuaternionAnimation.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QuaternionAnimation(System::Windows::Media::Media3D::Quaternion toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.QuaternionAnimation : System.Windows.Media.Media3D.Quaternion * System.Windows.Duration * System.Windows.Media.Animation.FillBehavior -&gt; System.Windows.Media.Animation.QuaternionAnimation" Usage="new System.Windows.Media.Animation.QuaternionAnimation (toValue, duration, fillBehavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion fromValue, valuetype System.Windows.Media.Media3D.Quaternion toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuaternionAnimation.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion,System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QuaternionAnimation(System::Windows::Media::Media3D::Quaternion fromValue, System::Windows::Media::Media3D::Quaternion toValue, System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.QuaternionAnimation : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Media3D.Quaternion * System.Windows.Duration -&gt; System.Windows.Media.Animation.QuaternionAnimation" Usage="new System.Windows.Media.Animation.QuaternionAnimation (fromValue, toValue, duration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion fromValue, valuetype System.Windows.Media.Media3D.Quaternion toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuaternionAnimation.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QuaternionAnimation(System::Windows::Media::Media3D::Quaternion fromValue, System::Windows::Media::Media3D::Quaternion toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.QuaternionAnimation : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Media3D.Quaternion * System.Windows.Duration * System.Windows.Media.Animation.FillBehavior -&gt; System.Windows.Media.Animation.QuaternionAnimation" Usage="new System.Windows.Media.Animation.QuaternionAnimation (fromValue, toValue, duration, fillBehavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.QuaternionAnimation.By" />
       <MemberSignature Language="VB.NET" Value="Public Property By As Nullable(Of Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; By { Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; get(); void set(Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.By : Nullable&lt;System.Windows.Media.Media3D.Quaternion&gt; with get, set" Usage="System.Windows.Media.Animation.QuaternionAnimation.By" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.QuaternionAnimation.ByProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ByProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ByProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ByProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.QuaternionAnimation.ByProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuaternionAnimation.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As QuaternionAnimation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::QuaternionAnimation ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.QuaternionAnimation" Usage="quaternionAnimation.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuaternionAnimation.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="quaternionAnimation.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -322,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.QuaternionAnimation.EasingFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.Media.Animation.QuaternionAnimation.EasingFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +360,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.QuaternionAnimation.EasingFunctionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EasingFunctionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.QuaternionAnimation.EasingFunctionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -370,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.QuaternionAnimation.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As Nullable(Of Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; From { Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; get(); void set(Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.From : Nullable&lt;System.Windows.Media.Media3D.Quaternion&gt; with get, set" Usage="System.Windows.Media.Animation.QuaternionAnimation.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -437,6 +449,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.QuaternionAnimation.FromProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FromProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FromProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.QuaternionAnimation.FromProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -455,6 +468,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Media3D.Quaternion GetCurrentValueCore(valuetype System.Windows.Media.Media3D.Quaternion defaultOriginValue, valuetype System.Windows.Media.Media3D.Quaternion defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuaternionAnimation.GetCurrentValueCore(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Quaternion GetCurrentValueCore(System::Windows::Media::Media3D::Quaternion defaultOriginValue, System::Windows::Media::Media3D::Quaternion defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueCore : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Media.Media3D.Quaternion" Usage="quaternionAnimation.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -492,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.QuaternionAnimation.IsAdditive" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAdditive : bool with get, set" Usage="System.Windows.Media.Animation.QuaternionAnimation.IsAdditive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -531,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.QuaternionAnimation.IsCumulative" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCumulative : bool with get, set" Usage="System.Windows.Media.Animation.QuaternionAnimation.IsCumulative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -570,6 +586,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.QuaternionAnimation.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As Nullable(Of Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; To { Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; get(); void set(Nullable&lt;System::Windows::Media::Media3D::Quaternion&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.To : Nullable&lt;System.Windows.Media.Media3D.Quaternion&gt; with get, set" Usage="System.Windows.Media.Animation.QuaternionAnimation.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -637,6 +654,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.QuaternionAnimation.ToProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.QuaternionAnimation.ToProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -656,6 +674,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.QuaternionAnimation.UseShortestPath" />
       <MemberSignature Language="VB.NET" Value="Public Property UseShortestPath As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseShortestPath { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseShortestPath : bool with get, set" Usage="System.Windows.Media.Animation.QuaternionAnimation.UseShortestPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -690,6 +709,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.QuaternionAnimation.UseShortestPathProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UseShortestPathProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UseShortestPathProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UseShortestPathProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.QuaternionAnimation.UseShortestPathProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

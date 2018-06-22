@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RequiredAttributeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequiredAttributeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequiredAttributeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type RequiredAttributeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RequiredAttributeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (requiredContract As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequiredAttributeAttribute(Type ^ requiredContract);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.RequiredAttributeAttribute : Type -&gt; System.Runtime.CompilerServices.RequiredAttributeAttribute" Usage="new System.Runtime.CompilerServices.RequiredAttributeAttribute requiredContract" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.RequiredAttributeAttribute.RequiredContract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiredContract As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ RequiredContract { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiredContract : Type" Usage="System.Runtime.CompilerServices.RequiredAttributeAttribute.RequiredContract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>

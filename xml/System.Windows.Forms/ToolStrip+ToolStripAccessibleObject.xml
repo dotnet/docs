@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStrip.ToolStripAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStrip.ToolStripAccessibleObject&#xA;Inherits Control.ControlAccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ToolStrip::ToolStripAccessibleObject : System::Windows::Forms::Control::ControlAccessibleObject" />
+  <TypeSignature Language="F#" Value="type ToolStrip.ToolStripAccessibleObject = class&#xA;    inherit Control.ControlAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ToolStripAccessibleObject.#ctor(System.Windows.Forms.ToolStrip)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ToolStrip)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripAccessibleObject(System::Windows::Forms::ToolStrip ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStrip.ToolStripAccessibleObject : System.Windows.Forms.ToolStrip -&gt; System.Windows.Forms.ToolStrip.ToolStripAccessibleObject" Usage="new System.Windows.Forms.ToolStrip.ToolStripAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ToolStripAccessibleObject.GetChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChild (index As Integer) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetChild : int -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStripAccessibleObject.GetChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ToolStripAccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
+      <MemberSignature Language="F#" Value="override this.GetChildCount : unit -&gt; int" Usage="toolStripAccessibleObject.GetChildCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ToolStripAccessibleObject.HitTest(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function HitTest (x As Integer, y As Integer) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ HitTest(int x, int y);" />
+      <MemberSignature Language="F#" Value="override this.HitTest : int * int -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStripAccessibleObject.HitTest (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStrip.ToolStripAccessibleObject.Role" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.ToolStrip.ToolStripAccessibleObject.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

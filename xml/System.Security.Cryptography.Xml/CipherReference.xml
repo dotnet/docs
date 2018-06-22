@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.CipherReference" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CipherReference&#xA;Inherits EncryptedReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class CipherReference sealed : System::Security::Cryptography::Xml::EncryptedReference" />
+  <TypeSignature Language="F#" Value="type CipherReference = class&#xA;    inherit EncryptedReference" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +112,7 @@ EncryptedXml exml = new EncryptedXml(doc, ev);
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherReference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherReference(System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.CipherReference : string -&gt; System.Security.Cryptography.Xml.CipherReference" Usage="new System.Security.Cryptography.Xml.CipherReference uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -176,6 +178,7 @@ EncryptedXml exml = new EncryptedXml(doc, ev);
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherReference.#ctor(System.String,System.Security.Cryptography.Xml.TransformChain)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uri As String, tc As TransformChain)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherReference(System::String ^ uri, System::Security::Cryptography::Xml::TransformChain ^ tc);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.CipherReference : string * System.Security.Cryptography.Xml.TransformChain -&gt; System.Security.Cryptography.Xml.CipherReference" Usage="new System.Security.Cryptography.Xml.CipherReference (uri, tc)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -220,6 +223,7 @@ EncryptedXml exml = new EncryptedXml(doc, ev);
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherReference.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="cipherReference.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -262,6 +266,7 @@ EncryptedXml exml = new EncryptedXml(doc, ev);
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherReference.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="cipherReference.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

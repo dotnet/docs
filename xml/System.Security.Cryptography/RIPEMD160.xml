@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RIPEMD160" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RIPEMD160&#xA;Inherits HashAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class RIPEMD160 abstract : System::Security::Cryptography::HashAlgorithm" />
+  <TypeSignature Language="F#" Value="type RIPEMD160 = class&#xA;    inherit HashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As RIPEMD160" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RIPEMD160 ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.RIPEMD160" Usage="System.Security.Cryptography.RIPEMD160.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (hashName As String) As RIPEMD160" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RIPEMD160 ^ Create(System::String ^ hashName);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.RIPEMD160" Usage="System.Security.Cryptography.RIPEMD160.Create hashName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

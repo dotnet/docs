@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Brush" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Brush&#xA;Inherits Animatable&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Brush abstract : System::Windows::Media::Animation::Animatable, IFormattable" />
+  <TypeSignature Language="F#" Value="type Brush = class&#xA;    inherit Animatable&#xA;    interface IFormattable&#xA;    interface DUCE.IResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Brush.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Brush ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Brush" Usage="brush.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Brush.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Brush ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Brush" Usage="brush.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brush.Opacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Opacity As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Opacity { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Opacity : double with get, set" Usage="System.Windows.Media.Brush.Opacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Brush.OpacityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OpacityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OpacityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OpacityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Brush.OpacityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brush.RelativeTransform" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeTransform As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Transform ^ RelativeTransform { System::Windows::Media::Transform ^ get(); void set(System::Windows::Media::Transform ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeTransform : System.Windows.Media.Transform with get, set" Usage="System.Windows.Media.Brush.RelativeTransform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Brush.RelativeTransformProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RelativeTransformProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RelativeTransformProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RelativeTransformProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Brush.RelativeTransformProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -319,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Brush.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="brush.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -340,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Brush.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.ToString : IFormatProvider -&gt; string" Usage="brush.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -364,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brush.Transform" />
       <MemberSignature Language="VB.NET" Value="Public Property Transform As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Transform ^ Transform { System::Windows::Media::Transform ^ get(); void set(System::Windows::Media::Transform ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Transform with get, set" Usage="System.Windows.Media.Brush.Transform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -392,6 +402,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Brush.TransformProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TransformProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TransformProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TransformProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Brush.TransformProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

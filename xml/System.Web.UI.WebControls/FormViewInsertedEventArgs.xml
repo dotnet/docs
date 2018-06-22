@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewInsertedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FormViewInsertedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormViewInsertedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type FormViewInsertedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewInsertedEventArgs.#ctor(System.Int32,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (affectedRows As Integer, e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormViewInsertedEventArgs(int affectedRows, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FormViewInsertedEventArgs : int * Exception -&gt; System.Web.UI.WebControls.FormViewInsertedEventArgs" Usage="new System.Web.UI.WebControls.FormViewInsertedEventArgs (affectedRows, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedRows As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AffectedRows { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AffectedRows : int" Usage="System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepInInsertMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepInInsertMode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepInInsertMode : bool with get, set" Usage="System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Values { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

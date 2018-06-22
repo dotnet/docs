@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.SocketPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocketPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SocketPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type SocketPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.SocketPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Net.SocketPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Net.SocketPermissionAttribute" Usage="new System.Net.SocketPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.SocketPermissionAttribute.Access" />
       <MemberSignature Language="VB.NET" Value="Public Property Access As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Access { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Access : string with get, set" Usage="System.Net.SocketPermissionAttribute.Access" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.SocketPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="socketPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.SocketPermissionAttribute.Host" />
       <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="System.Net.SocketPermissionAttribute.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.SocketPermissionAttribute.Port" />
       <MemberSignature Language="VB.NET" Value="Public Property Port As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Port { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Port : string with get, set" Usage="System.Net.SocketPermissionAttribute.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.SocketPermissionAttribute.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Transport { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : string with get, set" Usage="System.Net.SocketPermissionAttribute.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

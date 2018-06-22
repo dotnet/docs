@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RegisteredDisposeScript" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegisteredDisposeScript" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegisteredDisposeScript sealed" />
+  <TypeSignature Language="F#" Value="type RegisteredDisposeScript = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredDisposeScript.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ Control { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.Control" Usage="System.Web.UI.RegisteredDisposeScript.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredDisposeScript.Script" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Script As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Script { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Script : string" Usage="System.Web.UI.RegisteredDisposeScript.Script" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

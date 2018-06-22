@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IHierarchyData" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHierarchyData" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHierarchyData" />
+  <TypeSignature Language="F#" Value="type IHierarchyData = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchyData.GetChildren" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As IHierarchicalEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::IHierarchicalEnumerable ^ GetChildren();" />
+      <MemberSignature Language="F#" Value="abstract member GetChildren : unit -&gt; System.Web.UI.IHierarchicalEnumerable" Usage="iHierarchyData.GetChildren " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchyData.GetParent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParent () As IHierarchyData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::IHierarchyData ^ GetParent();" />
+      <MemberSignature Language="F#" Value="abstract member GetParent : unit -&gt; System.Web.UI.IHierarchyData" Usage="iHierarchyData.GetParent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IHierarchyData.HasChildren" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChildren As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasChildren { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasChildren : bool" Usage="System.Web.UI.IHierarchyData.HasChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IHierarchyData.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : obj" Usage="System.Web.UI.IHierarchyData.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IHierarchyData.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Web.UI.IHierarchyData.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IHierarchyData.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.Web.UI.IHierarchyData.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

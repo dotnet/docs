@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.ColorResetter" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ColorResetter()" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ColorResetter();" />
+  <TypeSignature Language="F#" Value="type ColorResetter = delegate of unit -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

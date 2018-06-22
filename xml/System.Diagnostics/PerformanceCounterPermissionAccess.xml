@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermissionAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum PerformanceCounterPermissionAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class PerformanceCounterPermissionAccess" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterPermissionAccess = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />
       <MemberSignature Language="VB.NET" Value="Administer" />
       <MemberSignature Language="C++ CLI" Value="Administer" />
+      <MemberSignature Language="F#" Value="Administer = 7" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Browse" />
       <MemberSignature Language="VB.NET" Value="Browse" />
       <MemberSignature Language="C++ CLI" Value="Browse" />
+      <MemberSignature Language="F#" Value="Browse = 1" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Browse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Instrument" />
       <MemberSignature Language="VB.NET" Value="Instrument" />
       <MemberSignature Language="C++ CLI" Value="Instrument" />
+      <MemberSignature Language="F#" Value="Instrument = 3" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Instrument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

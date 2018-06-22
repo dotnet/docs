@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.DynamicUpdateInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicUpdateInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicUpdateInfo abstract sealed" />
+  <TypeSignature Language="F#" Value="type DynamicUpdateInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.GetMapItem(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMapItem (instance As Object) As DynamicUpdateMapItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMapItem ^ GetMapItem(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetMapItem : obj -&gt; System.Activities.DynamicUpdate.DynamicUpdateMapItem" Usage="System.Activities.DynamicUpdate.DynamicUpdateInfo.GetMapItem instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.GetOriginalActivityBuilder(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOriginalActivityBuilder (instance As Object) As ActivityBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::ActivityBuilder ^ GetOriginalActivityBuilder(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetOriginalActivityBuilder : obj -&gt; System.Activities.ActivityBuilder" Usage="System.Activities.DynamicUpdate.DynamicUpdateInfo.GetOriginalActivityBuilder instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.GetOriginalDefinition(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOriginalDefinition (instance As Object) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity ^ GetOriginalDefinition(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetOriginalDefinition : obj -&gt; System.Activities.Activity" Usage="System.Activities.DynamicUpdate.DynamicUpdateInfo.GetOriginalDefinition instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.SetMapItem(System.Object,System.Activities.DynamicUpdate.DynamicUpdateMapItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetMapItem (instance As Object, mapItem As DynamicUpdateMapItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetMapItem(System::Object ^ instance, System::Activities::DynamicUpdate::DynamicUpdateMapItem ^ mapItem);" />
+      <MemberSignature Language="F#" Value="static member SetMapItem : obj * System.Activities.DynamicUpdate.DynamicUpdateMapItem -&gt; unit" Usage="System.Activities.DynamicUpdate.DynamicUpdateInfo.SetMapItem (instance, mapItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.SetOriginalActivityBuilder(System.Object,System.Activities.ActivityBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetOriginalActivityBuilder (instance As Object, originalActivityBuilder As ActivityBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetOriginalActivityBuilder(System::Object ^ instance, System::Activities::ActivityBuilder ^ originalActivityBuilder);" />
+      <MemberSignature Language="F#" Value="static member SetOriginalActivityBuilder : obj * System.Activities.ActivityBuilder -&gt; unit" Usage="System.Activities.DynamicUpdate.DynamicUpdateInfo.SetOriginalActivityBuilder (instance, originalActivityBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.SetOriginalDefinition(System.Object,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetOriginalDefinition (instance As Object, originalDefinition As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetOriginalDefinition(System::Object ^ instance, System::Activities::Activity ^ originalDefinition);" />
+      <MemberSignature Language="F#" Value="static member SetOriginalDefinition : obj * System.Activities.Activity -&gt; unit" Usage="System.Activities.DynamicUpdate.DynamicUpdateInfo.SetOriginalDefinition (instance, originalDefinition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

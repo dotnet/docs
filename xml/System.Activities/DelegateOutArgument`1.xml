@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DelegateOutArgument`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DelegateOutArgument(Of T)&#xA;Inherits DelegateOutArgument" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class DelegateOutArgument sealed : System::Activities::DelegateOutArgument" />
+  <TypeSignature Language="F#" Value="type DelegateOutArgument&lt;'T&gt; = class&#xA;    inherit DelegateOutArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DelegateOutArgument(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Activities.DelegateOutArgument&lt;'T&gt; : string -&gt; System.Activities.DelegateOutArgument&lt;'T&gt;" Usage="new System.Activities.DelegateOutArgument&lt;'T&gt; name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.Get(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Get(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Get : System.Activities.ActivityContext -&gt; 'T" Usage="delegateOutArgument.Get context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.GetLocation(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocation (context As ActivityContext) As Location(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetLocation : System.Activities.ActivityContext -&gt; System.Activities.Location&lt;'T&gt;" Usage="delegateOutArgument.GetLocation context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.Set(System.Activities.ActivityContext,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, T value);" />
+      <MemberSignature Language="F#" Value="member this.Set : System.Activities.ActivityContext * 'T -&gt; unit" Usage="delegateOutArgument.Set (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DelegateOutArgument`1.TypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TypeCore As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ TypeCore { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeCore : Type" Usage="System.Activities.DelegateOutArgument&lt;'T&gt;.TypeCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.RemotingException" />
   <TypeSignature Language="VB.NET" Value="Public Class RemotingException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class RemotingException : SystemException" />
+  <TypeSignature Language="F#" Value="type RemotingException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingException : string -&gt; System.Runtime.Remoting.RemotingException" Usage="new System.Runtime.Remoting.RemotingException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; RemotingException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Remoting.RemotingException" Usage="new System.Runtime.Remoting.RemotingException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, InnerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingException(System::String ^ message, Exception ^ InnerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingException : string * Exception -&gt; System.Runtime.Remoting.RemotingException" Usage="new System.Runtime.Remoting.RemotingException (message, InnerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class XhtmlObjectListAdapter&#xA;Inherits XhtmlControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XhtmlObjectListAdapter : System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type XhtmlObjectListAdapter = class&#xA;    inherit XhtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.BackToList" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly BackToList As String " />
       <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ BackToList;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackToList : string" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.BackToList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As ObjectList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::ObjectList ^ Control { System::Web::UI::MobileControls::ObjectList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.ObjectList" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.CreateTemplatedUI(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateTemplatedUI (doDataBind As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateTemplatedUI(bool doDataBind);" />
+      <MemberSignature Language="F#" Value="override this.CreateTemplatedUI : bool -&gt; unit" Usage="xhtmlObjectListAdapter.CreateTemplatedUI doDataBind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.HandlePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function HandlePostBackEvent (eventArgument As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HandlePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="override this.HandlePostBackEvent : string -&gt; bool" Usage="xhtmlObjectListAdapter.HandlePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.HasCommands" />
       <MemberSignature Language="VB.NET" Value="Protected Function HasCommands () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasCommands();" />
+      <MemberSignature Language="F#" Value="member this.HasCommands : unit -&gt; bool" Usage="xhtmlObjectListAdapter.HasCommands " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.HasDefaultCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Function HasDefaultCommand () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasDefaultCommand();" />
+      <MemberSignature Language="F#" Value="member this.HasDefaultCommand : unit -&gt; bool" Usage="xhtmlObjectListAdapter.HasDefaultCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.HasItemDetails" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function HasItemDetails () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool HasItemDetails();" />
+      <MemberSignature Language="F#" Value="abstract member HasItemDetails : unit -&gt; bool&#xA;override this.HasItemDetails : unit -&gt; bool" Usage="xhtmlObjectListAdapter.HasItemDetails " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.OnlyHasDefaultCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Function OnlyHasDefaultCommand () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool OnlyHasDefaultCommand();" />
+      <MemberSignature Language="F#" Value="member this.OnlyHasDefaultCommand : unit -&gt; bool" Usage="xhtmlObjectListAdapter.OnlyHasDefaultCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="xhtmlObjectListAdapter.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -293,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlObjectListAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -316,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.RenderItemDetails(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.ObjectListItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemDetails (writer As XhtmlMobileTextWriter, item As ObjectListItem)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemDetails(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::ObjectListItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member RenderItemDetails : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit&#xA;override this.RenderItemDetails : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit" Usage="xhtmlObjectListAdapter.RenderItemDetails (writer, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -349,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.RenderItemsList(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemsList (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemsList(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderItemsList : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.RenderItemsList : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlObjectListAdapter.RenderItemsList writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -380,6 +393,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.ShowMore" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly ShowMore As String " />
       <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ ShowMore;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowMore : string" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.ShowMore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -407,6 +421,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.ShowMoreFormat" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly ShowMoreFormat As String " />
       <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ ShowMoreFormat;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowMoreFormat : string" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.ShowMoreFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ReceiveMessageContent" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReceiveMessageContent&#xA;Inherits ReceiveContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReceiveMessageContent sealed : System::ServiceModel::Activities::ReceiveContent" />
+  <TypeSignature Language="F#" Value="type ReceiveMessageContent = class&#xA;    inherit ReceiveContent" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveMessageContent.#ctor(System.Activities.OutArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As OutArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReceiveMessageContent(System::Activities::OutArgument ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.ReceiveMessageContent : System.Activities.OutArgument -&gt; System.ServiceModel.Activities.ReceiveMessageContent" Usage="new System.ServiceModel.Activities.ReceiveMessageContent message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveMessageContent.#ctor(System.Activities.OutArgument,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As OutArgument, declaredMessageType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReceiveMessageContent(System::Activities::OutArgument ^ message, Type ^ declaredMessageType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.ReceiveMessageContent : System.Activities.OutArgument * Type -&gt; System.ServiceModel.Activities.ReceiveMessageContent" Usage="new System.ServiceModel.Activities.ReceiveMessageContent (message, declaredMessageType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveMessageContent.DeclaredMessageType" />
       <MemberSignature Language="VB.NET" Value="Public Property DeclaredMessageType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaredMessageType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaredMessageType : Type with get, set" Usage="System.ServiceModel.Activities.ReceiveMessageContent.DeclaredMessageType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveMessageContent.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As OutArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::OutArgument ^ Message { System::Activities::OutArgument ^ get(); void set(System::Activities::OutArgument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.Activities.OutArgument with get, set" Usage="System.ServiceModel.Activities.ReceiveMessageContent.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveMessageContent.ShouldSerializeDeclaredMessageType" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDeclaredMessageType () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDeclaredMessageType();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeDeclaredMessageType : unit -&gt; bool" Usage="receiveMessageContent.ShouldSerializeDeclaredMessageType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

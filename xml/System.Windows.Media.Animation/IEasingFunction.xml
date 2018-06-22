@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.IEasingFunction" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEasingFunction" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEasingFunction" />
+  <TypeSignature Language="F#" Value="type IEasingFunction = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.IEasingFunction.Ease(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Ease (normalizedTime As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double Ease(double normalizedTime);" />
+      <MemberSignature Language="F#" Value="abstract member Ease : double -&gt; double" Usage="iEasingFunction.Ease normalizedTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

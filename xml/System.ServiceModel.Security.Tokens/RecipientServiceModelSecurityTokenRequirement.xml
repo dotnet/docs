@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RecipientServiceModelSecurityTokenRequirement&#xA;Inherits ServiceModelSecurityTokenRequirement" />
   <TypeSignature Language="C++ CLI" Value="public ref class RecipientServiceModelSecurityTokenRequirement sealed : System::ServiceModel::Security::Tokens::ServiceModelSecurityTokenRequirement" />
+  <TypeSignature Language="F#" Value="type RecipientServiceModelSecurityTokenRequirement = class&#xA;    inherit ServiceModelSecurityTokenRequirement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.AuditLogLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property AuditLogLocation As AuditLogLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::AuditLogLocation AuditLogLocation { System::ServiceModel::AuditLogLocation get(); void set(System::ServiceModel::AuditLogLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.AuditLogLocation : System.ServiceModel.AuditLogLocation with get, set" Usage="System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.AuditLogLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.ListenUri" />
       <MemberSignature Language="VB.NET" Value="Public Property ListenUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ListenUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ListenUri : Uri with get, set" Usage="System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.ListenUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.MessageAuthenticationAuditLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageAuthenticationAuditLevel As AuditLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::AuditLevel MessageAuthenticationAuditLevel { System::ServiceModel::AuditLevel get(); void set(System::ServiceModel::AuditLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageAuthenticationAuditLevel : System.ServiceModel.AuditLevel with get, set" Usage="System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.MessageAuthenticationAuditLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.SuppressAuditFailure" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressAuditFailure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressAuditFailure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressAuditFailure : bool with get, set" Usage="System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.SuppressAuditFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="recipientServiceModelSecurityTokenRequirement.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

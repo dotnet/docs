@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.Text.Utf8Formatter" />
   <TypeSignature Language="VB.NET" Value="Public Class Utf8Formatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class Utf8Formatter abstract sealed" />
+  <TypeSignature Language="F#" Value="type Utf8Formatter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(bool value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Boolean,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Boolean, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : bool * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(unsigned int8 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Byte,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Byte, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : byte * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(valuetype System.DateTime value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.DateTime,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As DateTime, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : DateTime * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(valuetype System.DateTimeOffset value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.DateTimeOffset,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As DateTimeOffset, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : DateTimeOffset * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(valuetype System.Decimal value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Decimal,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Decimal, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : decimal * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(float64 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Double,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Double, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : double * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(valuetype System.Guid value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Guid,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Guid, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : Guid * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(int16 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Int16,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Short, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : int16 * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(int32 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Int32,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Integer, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : int * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -293,6 +303,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(int64 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Int64,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Long, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : int64 * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(int8 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.SByte,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As SByte, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : sbyte * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -358,6 +370,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(float32 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.Single,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As Single, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : single * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -388,6 +401,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(valuetype System.TimeSpan value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.TimeSpan,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As TimeSpan, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : TimeSpan * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -418,6 +432,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(unsigned int16 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.UInt16,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As UShort, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : uint16 * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -453,6 +468,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(unsigned int32 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.UInt32,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As UInteger, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : uint32 * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -488,6 +504,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFormat(unsigned int64 value, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, valuetype System.Buffers.StandardFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Utf8Formatter.TryFormat(System.UInt64,System.Span{System.Byte},System.Int32@,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryFormat (value As ULong, destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional format As StandardFormat = null) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFormat : uint64 * Span&lt;byte&gt; *  * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.Text.Utf8Formatter.TryFormat (value, destination, bytesWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

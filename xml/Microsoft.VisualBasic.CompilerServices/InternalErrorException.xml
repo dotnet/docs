@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.InternalErrorException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InternalErrorException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalErrorException sealed : Exception" />
+  <TypeSignature Language="F#" Value="type InternalErrorException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalErrorException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.CompilerServices.InternalErrorException : string -&gt; Microsoft.VisualBasic.CompilerServices.InternalErrorException" Usage="new Microsoft.VisualBasic.CompilerServices.InternalErrorException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalErrorException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.CompilerServices.InternalErrorException : string * Exception -&gt; Microsoft.VisualBasic.CompilerServices.InternalErrorException" Usage="new Microsoft.VisualBasic.CompilerServices.InternalErrorException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

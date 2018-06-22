@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointIdentityExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointIdentityExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointIdentityExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type EndpointIdentityExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentityExtension.#ctor(System.ServiceModel.EndpointIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As EndpointIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointIdentityExtension(System::ServiceModel::EndpointIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointIdentityExtension : System.ServiceModel.EndpointIdentity -&gt; System.ServiceModel.EndpointIdentityExtension" Usage="new System.ServiceModel.EndpointIdentityExtension identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointIdentityExtension.ClaimResource" />
       <MemberSignature Language="VB.NET" Value="Public Property ClaimResource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ClaimResource { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimResource : obj with get, set" Usage="System.ServiceModel.EndpointIdentityExtension.ClaimResource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointIdentityExtension.ClaimRight" />
       <MemberSignature Language="VB.NET" Value="Public Property ClaimRight As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClaimRight { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimRight : string with get, set" Usage="System.ServiceModel.EndpointIdentityExtension.ClaimRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointIdentityExtension.ClaimType" />
       <MemberSignature Language="VB.NET" Value="Public Property ClaimType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClaimType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimType : string with get, set" Usage="System.ServiceModel.EndpointIdentityExtension.ClaimType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentityExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="endpointIdentityExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

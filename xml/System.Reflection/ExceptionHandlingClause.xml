@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ExceptionHandlingClause" />
   <TypeSignature Language="VB.NET" Value="Public Class ExceptionHandlingClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExceptionHandlingClause" />
+  <TypeSignature Language="F#" Value="type ExceptionHandlingClause = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.CatchType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CatchType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ CatchType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CatchType : Type" Usage="System.Reflection.ExceptionHandlingClause.CatchType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.FilterOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FilterOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FilterOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterOffset : int" Usage="System.Reflection.ExceptionHandlingClause.FilterOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -214,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Flags As ExceptionHandlingClauseOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ExceptionHandlingClauseOptions Flags { System::Reflection::ExceptionHandlingClauseOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Reflection.ExceptionHandlingClauseOptions" Usage="System.Reflection.ExceptionHandlingClause.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.HandlerLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HandlerLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int HandlerLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandlerLength : int" Usage="System.Reflection.ExceptionHandlingClause.HandlerLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -339,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.HandlerOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HandlerOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int HandlerOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandlerOffset : int" Usage="System.Reflection.ExceptionHandlingClause.HandlerOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -401,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ExceptionHandlingClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="exceptionHandlingClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -432,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.TryLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TryLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TryLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TryLength : int" Usage="System.Reflection.ExceptionHandlingClause.TryLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -495,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.TryOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TryOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TryOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TryOffset : int" Usage="System.Reflection.ExceptionHandlingClause.TryOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

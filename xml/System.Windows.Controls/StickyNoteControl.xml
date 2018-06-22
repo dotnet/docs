@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StickyNoteControl" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StickyNoteControl&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class StickyNoteControl sealed : System::Windows::Controls::Control" />
+  <TypeSignature Language="F#" Value="type StickyNoteControl = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.AnchorInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnchorInfo As IAnchorInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Annotations::IAnchorInfo ^ AnchorInfo { System::Windows::Annotations::IAnchorInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorInfo : System.Windows.Annotations.IAnchorInfo" Usage="System.Windows.Controls.StickyNoteControl.AnchorInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.Author" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Author As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Author { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Author : string" Usage="System.Windows.Controls.StickyNoteControl.Author" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.AuthorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AuthorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AuthorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AuthorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.AuthorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontFamily" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptionFontFamily As FontFamily" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FontFamily ^ CaptionFontFamily { System::Windows::Media::FontFamily ^ get(); void set(System::Windows::Media::FontFamily ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontFamily : System.Windows.Media.FontFamily with get, set" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontFamilyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CaptionFontFamilyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CaptionFontFamilyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CaptionFontFamilyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptionFontSize As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CaptionFontSize { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontSize : double with get, set" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontSizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CaptionFontSizeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CaptionFontSizeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CaptionFontSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -286,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontStretch" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptionFontStretch As FontStretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStretch CaptionFontStretch { System::Windows::FontStretch get(); void set(System::Windows::FontStretch value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontStretch : System.Windows.FontStretch with get, set" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontStretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontStretchProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CaptionFontStretchProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CaptionFontStretchProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CaptionFontStretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontStretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -340,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptionFontStyle As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle CaptionFontStyle { System::Windows::FontStyle get(); void set(System::Windows::FontStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontStyle : System.Windows.FontStyle with get, set" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -375,6 +386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CaptionFontStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CaptionFontStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CaptionFontStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -394,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontWeight" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptionFontWeight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight CaptionFontWeight { System::Windows::FontWeight get(); void set(System::Windows::FontWeight value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontWeight : System.Windows.FontWeight with get, set" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -429,6 +442,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontWeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CaptionFontWeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CaptionFontWeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CaptionFontWeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.CaptionFontWeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -448,6 +462,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.DeleteNoteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DeleteNoteCommand As RoutedCommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedCommand ^ DeleteNoteCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DeleteNoteCommand : System.Windows.Input.RoutedCommand" Usage="System.Windows.Controls.StickyNoteControl.DeleteNoteCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -467,6 +482,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.InkCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InkCommand As RoutedCommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedCommand ^ InkCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InkCommand : System.Windows.Input.RoutedCommand" Usage="System.Windows.Controls.StickyNoteControl.InkCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -493,6 +509,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.InkSchemaName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InkSchemaName As XmlQualifiedName " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::XmlQualifiedName ^ InkSchemaName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InkSchemaName : System.Xml.XmlQualifiedName" Usage="System.Windows.Controls.StickyNoteControl.InkSchemaName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -512,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.IsActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsActive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsActive : bool" Usage="System.Windows.Controls.StickyNoteControl.IsActive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -548,6 +566,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.IsActiveProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsActiveProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsActiveProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsActiveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.IsActiveProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -574,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.IsExpanded" />
       <MemberSignature Language="VB.NET" Value="Public Property IsExpanded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExpanded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsExpanded : bool with get, set" Usage="System.Windows.Controls.StickyNoteControl.IsExpanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -610,6 +630,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.IsExpandedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsExpandedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsExpandedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsExpandedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.IsExpandedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -636,6 +657,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.IsMouseOverAnchor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMouseOverAnchor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMouseOverAnchor { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMouseOverAnchor : bool" Usage="System.Windows.Controls.StickyNoteControl.IsMouseOverAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -672,6 +694,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.IsMouseOverAnchorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsMouseOverAnchorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsMouseOverAnchorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsMouseOverAnchorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.IsMouseOverAnchorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -698,6 +721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StickyNoteControl.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="stickyNoteControl.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -725,6 +749,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StickyNoteControl.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotKeyboardFocus (args As KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="override this.OnGotKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="stickyNoteControl.OnGotKeyboardFocus args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -748,6 +773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StickyNoteControl.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsKeyboardFocusWithinChanged (args As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsKeyboardFocusWithinChanged(System::Windows::DependencyPropertyChangedEventArgs args);" />
+      <MemberSignature Language="F#" Value="override this.OnIsKeyboardFocusWithinChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="stickyNoteControl.OnIsKeyboardFocusWithinChanged args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -771,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StickyNoteControl.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTemplateChanged (oldTemplate As ControlTemplate, newTemplate As ControlTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTemplateChanged(System::Windows::Controls::ControlTemplate ^ oldTemplate, System::Windows::Controls::ControlTemplate ^ newTemplate);" />
+      <MemberSignature Language="F#" Value="override this.OnTemplateChanged : System.Windows.Controls.ControlTemplate * System.Windows.Controls.ControlTemplate -&gt; unit" Usage="stickyNoteControl.OnTemplateChanged (oldTemplate, newTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -796,6 +823,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.PenWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property PenWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PenWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PenWidth : double with get, set" Usage="System.Windows.Controls.StickyNoteControl.PenWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -831,6 +859,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.PenWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PenWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PenWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PenWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.PenWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -850,6 +879,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.StickyNoteType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StickyNoteType As StickyNoteType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::StickyNoteType StickyNoteType { System::Windows::Controls::StickyNoteType get(); };" />
+      <MemberSignature Language="F#" Value="member this.StickyNoteType : System.Windows.Controls.StickyNoteType" Usage="System.Windows.Controls.StickyNoteControl.StickyNoteType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -887,6 +917,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.StickyNoteTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StickyNoteTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StickyNoteTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StickyNoteTypeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.StickyNoteControl.StickyNoteTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -913,6 +944,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.TextSchemaName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextSchemaName As XmlQualifiedName " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::XmlQualifiedName ^ TextSchemaName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextSchemaName : System.Xml.XmlQualifiedName" Usage="System.Windows.Controls.StickyNoteControl.TextSchemaName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

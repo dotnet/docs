@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ResolvedImport" />
   <TypeSignature Language="VB.NET" Value="Public Structure ResolvedImport" />
   <TypeSignature Language="C++ CLI" Value="public value class ResolvedImport" />
+  <TypeSignature Language="F#" Value="type ResolvedImport = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ResolvedImport.ImportedProject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportedProject As ProjectRootElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectRootElement ^ ImportedProject { Microsoft::Build::Construction::ProjectRootElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportedProject : Microsoft.Build.Construction.ProjectRootElement" Usage="Microsoft.Build.Evaluation.ResolvedImport.ImportedProject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ResolvedImport.ImportingElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportingElement As ProjectImportElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectImportElement ^ ImportingElement { Microsoft::Build::Construction::ProjectImportElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportingElement : Microsoft.Build.Construction.ProjectImportElement" Usage="Microsoft.Build.Evaluation.ResolvedImport.ImportingElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ResolvedImport.IsImported" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImported : bool" Usage="Microsoft.Build.Evaluation.ResolvedImport.IsImported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

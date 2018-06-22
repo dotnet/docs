@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class AccessibleObject&#xA;Inherits StandardOleMarshalObject&#xA;Implements IAccessible, IReflect" />
   <TypeSignature Language="C++ CLI" Value="public ref class AccessibleObject : System::Runtime::InteropServices::StandardOleMarshalObject, Accessibility::IAccessible, System::Reflection::IReflect" />
+  <TypeSignature Language="F#" Value="type AccessibleObject = class&#xA;    inherit StandardOleMarshalObject&#xA;    interface IReflect&#xA;    interface IAccessible" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Accessibility#IAccessible#accChildCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property accChildCount As Integer Implements IAccessible.accChildCount" />
       <MemberSignature Language="C++ CLI" Value="property int Accessibility.IAccessible.accChildCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.AccessibleObject.Accessibility.IAccessible.accChildCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Accessibility.IAccessible.accChildCount</InterfaceMember>
@@ -156,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Accessibility#IAccessible#accFocus" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property accFocus As Object Implements IAccessible.accFocus" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ Accessibility.IAccessible.accFocus { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.AccessibleObject.Accessibility.IAccessible.accFocus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Accessibility.IAccessible.accFocus</InterfaceMember>
@@ -322,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Accessibility#IAccessible#accParent" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property accParent As Object Implements IAccessible.accParent" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ Accessibility.IAccessible.accParent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.AccessibleObject.Accessibility.IAccessible.accParent" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Accessibility.IAccessible.accParent</InterfaceMember>
@@ -398,6 +402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Accessibility#IAccessible#accSelection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property accSelection As Object Implements IAccessible.accSelection" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ Accessibility.IAccessible.accSelection { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.AccessibleObject.Accessibility.IAccessible.accSelection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Accessibility.IAccessible.accSelection</InterfaceMember>
@@ -765,6 +770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.AccessibleObject.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -816,6 +822,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DefaultAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Windows.Forms.AccessibleObject.DefaultAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -856,6 +863,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Windows.Forms.AccessibleObject.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -896,6 +904,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="abstract member DoDefaultAction : unit -&gt; unit&#xA;override this.DoDefaultAction : unit -&gt; unit" Usage="accessibleObject.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -927,6 +936,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.GetChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChild (index As Integer) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::AccessibleObject ^ GetChild(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetChild : int -&gt; System.Windows.Forms.AccessibleObject&#xA;override this.GetChild : int -&gt; System.Windows.Forms.AccessibleObject" Usage="accessibleObject.GetChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -967,6 +977,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChildCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetChildCount();" />
+      <MemberSignature Language="F#" Value="abstract member GetChildCount : unit -&gt; int&#xA;override this.GetChildCount : unit -&gt; int" Usage="accessibleObject.GetChildCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1004,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.GetFocused" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFocused () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::AccessibleObject ^ GetFocused();" />
+      <MemberSignature Language="F#" Value="abstract member GetFocused : unit -&gt; System.Windows.Forms.AccessibleObject&#xA;override this.GetFocused : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="accessibleObject.GetFocused " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1039,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.GetHelpTopic(System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHelpTopic (ByRef fileName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHelpTopic([Runtime::InteropServices::Out] System::String ^ % fileName);" />
+      <MemberSignature Language="F#" Value="abstract member GetHelpTopic :  -&gt; int&#xA;override this.GetHelpTopic :  -&gt; int" Usage="accessibleObject.GetHelpTopic fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1076,6 +1089,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.GetSelected" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSelected () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::AccessibleObject ^ GetSelected();" />
+      <MemberSignature Language="F#" Value="abstract member GetSelected : unit -&gt; System.Windows.Forms.AccessibleObject&#xA;override this.GetSelected : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="accessibleObject.GetSelected " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1101,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Help" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Help As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Help { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Help : string" Usage="System.Windows.Forms.AccessibleObject.Help" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1134,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.HitTest(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HitTest (x As Integer, y As Integer) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::AccessibleObject ^ HitTest(int x, int y);" />
+      <MemberSignature Language="F#" Value="abstract member HitTest : int * int -&gt; System.Windows.Forms.AccessibleObject&#xA;override this.HitTest : int * int -&gt; System.Windows.Forms.AccessibleObject" Usage="accessibleObject.HitTest (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1171,6 +1187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property KeyboardShortcut As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyboardShortcut { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardShortcut : string" Usage="System.Windows.Forms.AccessibleObject.KeyboardShortcut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1211,6 +1228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.AccessibleObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1264,6 +1282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Navigate (navdir As AccessibleNavigation) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::AccessibleObject ^ Navigate(System::Windows::Forms::AccessibleNavigation navdir);" />
+      <MemberSignature Language="F#" Value="abstract member Navigate : System.Windows.Forms.AccessibleNavigation -&gt; System.Windows.Forms.AccessibleObject&#xA;override this.Navigate : System.Windows.Forms.AccessibleNavigation -&gt; System.Windows.Forms.AccessibleObject" Usage="accessibleObject.Navigate navdir" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1310,6 +1329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Parent As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ Parent { System::Windows::Forms::AccessibleObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.AccessibleObject.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1355,6 +1375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Role" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Role As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.AccessibleObject.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1405,6 +1426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.Select(System.Windows.Forms.AccessibleSelection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Select (flags As AccessibleSelection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Select(System::Windows::Forms::AccessibleSelection flags);" />
+      <MemberSignature Language="F#" Value="abstract member Select : System.Windows.Forms.AccessibleSelection -&gt; unit&#xA;override this.Select : System.Windows.Forms.AccessibleSelection -&gt; unit" Usage="accessibleObject.Select flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1461,6 +1483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.State" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property State As AccessibleStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Windows.Forms.AccessibleObject.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1933,6 +1956,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.System#Reflection#IReflect#UnderlyingSystemType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property UnderlyingSystemType As Type Implements IReflect.UnderlyingSystemType" />
       <MemberSignature Language="C++ CLI" Value="property Type ^ System.Reflection.IReflect.UnderlyingSystemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.AccessibleObject.System.Reflection.IReflect.UnderlyingSystemType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Reflection.IReflect.UnderlyingSystemType</InterfaceMember>
@@ -1972,6 +1996,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.UseStdAccessibleObjects(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub UseStdAccessibleObjects (handle As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UseStdAccessibleObjects(IntPtr handle);" />
+      <MemberSignature Language="F#" Value="member this.UseStdAccessibleObjects : nativeint -&gt; unit" Usage="accessibleObject.UseStdAccessibleObjects handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2004,6 +2029,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.UseStdAccessibleObjects(System.IntPtr,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub UseStdAccessibleObjects (handle As IntPtr, objid As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UseStdAccessibleObjects(IntPtr handle, int objid);" />
+      <MemberSignature Language="F#" Value="member this.UseStdAccessibleObjects : nativeint * int -&gt; unit" Usage="accessibleObject.UseStdAccessibleObjects (handle, objid)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2055,6 +2081,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AccessibleObject.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Windows.Forms.AccessibleObject.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

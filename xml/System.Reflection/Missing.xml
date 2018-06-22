@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Missing" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Missing&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Missing sealed : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type Missing = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Missing.Value" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Value As Missing " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Missing ^ Value;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Value : System.Reflection.Missing" Usage="System.Reflection.Missing.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

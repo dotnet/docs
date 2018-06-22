@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ArgIterator" />
   <TypeSignature Language="VB.NET" Value="Public Structure ArgIterator" />
   <TypeSignature Language="C++ CLI" Value="public value class ArgIterator" />
+  <TypeSignature Language="F#" Value="type ArgIterator = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.#ctor(System.RuntimeArgumentHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (arglist As RuntimeArgumentHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgIterator(RuntimeArgumentHandle arglist);" />
+      <MemberSignature Language="F#" Value="new ArgIterator : RuntimeArgumentHandle -&gt; ArgIterator" Usage="new System.ArgIterator arglist" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.RuntimeArgumentHandle arglist, void* ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.#ctor(System.RuntimeArgumentHandle,System.Void*)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgIterator(RuntimeArgumentHandle arglist, void* ptr);" />
+      <MemberSignature Language="F#" Value="new ArgIterator : RuntimeArgumentHandle * nativeptr&lt;unit&gt; -&gt; ArgIterator" Usage="new System.ArgIterator (arglist, ptr)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.End" />
       <MemberSignature Language="VB.NET" Value="Public Sub End ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void End();" />
+      <MemberSignature Language="F#" Value="member this.End : unit -&gt; unit" Usage="argIterator.End " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="argIterator.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="argIterator.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.GetNextArg" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextArg () As TypedReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedReference GetNextArg();" />
+      <MemberSignature Language="F#" Value="member this.GetNextArg : unit -&gt; TypedReference" Usage="argIterator.GetNextArg " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.GetNextArg(System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextArg (rth As RuntimeTypeHandle) As TypedReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedReference GetNextArg(RuntimeTypeHandle rth);" />
+      <MemberSignature Language="F#" Value="member this.GetNextArg : RuntimeTypeHandle -&gt; TypedReference" Usage="argIterator.GetNextArg rth" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -300,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.GetNextArgType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextArgType () As RuntimeTypeHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeTypeHandle GetNextArgType();" />
+      <MemberSignature Language="F#" Value="member this.GetNextArgType : unit -&gt; RuntimeTypeHandle" Usage="argIterator.GetNextArgType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -335,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgIterator.GetRemainingCount" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRemainingCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRemainingCount();" />
+      <MemberSignature Language="F#" Value="member this.GetRemainingCount : unit -&gt; int" Usage="argIterator.GetRemainingCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

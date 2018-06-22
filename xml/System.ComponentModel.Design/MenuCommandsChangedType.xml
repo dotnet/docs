@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.MenuCommandsChangedType" />
   <TypeSignature Language="VB.NET" Value="Public Enum MenuCommandsChangedType" />
   <TypeSignature Language="C++ CLI" Value="public enum class MenuCommandsChangedType" />
+  <TypeSignature Language="F#" Value="type MenuCommandsChangedType = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandAdded" />
       <MemberSignature Language="VB.NET" Value="CommandAdded" />
       <MemberSignature Language="C++ CLI" Value="CommandAdded" />
+      <MemberSignature Language="F#" Value="CommandAdded = 0" Usage="System.ComponentModel.Design.MenuCommandsChangedType.CommandAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandChanged" />
       <MemberSignature Language="VB.NET" Value="CommandChanged" />
       <MemberSignature Language="C++ CLI" Value="CommandChanged" />
+      <MemberSignature Language="F#" Value="CommandChanged = 2" Usage="System.ComponentModel.Design.MenuCommandsChangedType.CommandChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandRemoved" />
       <MemberSignature Language="VB.NET" Value="CommandRemoved" />
       <MemberSignature Language="C++ CLI" Value="CommandRemoved" />
+      <MemberSignature Language="F#" Value="CommandRemoved = 1" Usage="System.ComponentModel.Design.MenuCommandsChangedType.CommandRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

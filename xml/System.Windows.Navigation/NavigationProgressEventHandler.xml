@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationProgressEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub NavigationProgressEventHandler(sender As Object, e As NavigationProgressEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void NavigationProgressEventHandler(System::Object ^ sender, NavigationProgressEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type NavigationProgressEventHandler = delegate of obj * NavigationProgressEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

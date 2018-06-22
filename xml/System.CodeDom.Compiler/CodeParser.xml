@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeParser" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeParser&#xA;Implements ICodeParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeParser abstract : System::CodeDom::Compiler::ICodeParser" />
+  <TypeSignature Language="F#" Value="type CodeParser = class&#xA;    interface ICodeParser" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeParser.Parse(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Parse (codeStream As TextReader) As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::CodeDom::CodeCompileUnit ^ Parse(System::IO::TextReader ^ codeStream);" />
+      <MemberSignature Language="F#" Value="abstract member Parse : System.IO.TextReader -&gt; System.CodeDom.CodeCompileUnit" Usage="codeParser.Parse codeStream" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeParser.Parse(System.IO.TextReader)</InterfaceMember>

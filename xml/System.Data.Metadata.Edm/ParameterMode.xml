@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ParameterMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ParameterMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ParameterMode" />
+  <TypeSignature Language="F#" Value="type ParameterMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.In" />
       <MemberSignature Language="VB.NET" Value="In" />
       <MemberSignature Language="C++ CLI" Value="In" />
+      <MemberSignature Language="F#" Value="In = 0" Usage="System.Data.Metadata.Edm.ParameterMode.In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.InOut" />
       <MemberSignature Language="VB.NET" Value="InOut" />
       <MemberSignature Language="C++ CLI" Value="InOut" />
+      <MemberSignature Language="F#" Value="InOut = 2" Usage="System.Data.Metadata.Edm.ParameterMode.InOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.Out" />
       <MemberSignature Language="VB.NET" Value="Out" />
       <MemberSignature Language="C++ CLI" Value="Out" />
+      <MemberSignature Language="F#" Value="Out = 1" Usage="System.Data.Metadata.Edm.ParameterMode.Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="ReturnValue" />
       <MemberSignature Language="C++ CLI" Value="ReturnValue" />
+      <MemberSignature Language="F#" Value="ReturnValue = 3" Usage="System.Data.Metadata.Edm.ParameterMode.ReturnValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

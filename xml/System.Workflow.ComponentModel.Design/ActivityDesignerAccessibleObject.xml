@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityDesignerAccessibleObject&#xA;Inherits AccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerAccessibleObject : System::Windows::Forms::AccessibleObject" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerAccessibleObject = class&#xA;    inherit AccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.#ctor(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerAccessibleObject(System::Workflow::ComponentModel::Design::ActivityDesigner ^ activityDesigner);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject" Usage="new System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject activityDesigner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.ActivityDesigner" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ActivityDesigner As ActivityDesigner" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::ComponentModel::Design::ActivityDesigner ^ ActivityDesigner { System::Workflow::ComponentModel::Design::ActivityDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.ActivityDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.DefaultAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="activityDesignerAccessibleObject.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="activityDesignerAccessibleObject.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Help" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Help As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Help { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Help : string" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Help" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -221,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -250,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Navigate (navdir As AccessibleNavigation) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ Navigate(System::Windows::Forms::AccessibleNavigation navdir);" />
+      <MemberSignature Language="F#" Value="override this.Navigate : System.Windows.Forms.AccessibleNavigation -&gt; System.Windows.Forms.AccessibleObject" Usage="activityDesignerAccessibleObject.Navigate navdir" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -274,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parent As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ Parent { System::Windows::Forms::AccessibleObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.AccessibleObject" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -294,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Role" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -321,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.Select(System.Windows.Forms.AccessibleSelection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Select (flags As AccessibleSelection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Select(System::Windows::Forms::AccessibleSelection flags);" />
+      <MemberSignature Language="F#" Value="override this.Select : System.Windows.Forms.AccessibleSelection -&gt; unit" Usage="activityDesignerAccessibleObject.Select flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -344,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

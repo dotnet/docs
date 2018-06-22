@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelBinding&#xA;Inherits SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelBinding abstract : Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="F#" Value="type ChannelBinding = class&#xA;    inherit SafeHandleZeroOrMinusOneIsInvalid" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ChannelBinding.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (ownsHandle As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelBinding(bool ownsHandle);" />
+      <MemberSignature Language="F#" Value="new System.Security.Authentication.ExtendedProtection.ChannelBinding : bool -&gt; System.Security.Authentication.ExtendedProtection.ChannelBinding" Usage="new System.Security.Authentication.ExtendedProtection.ChannelBinding ownsHandle" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ChannelBinding.Size" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.Security.Authentication.ExtendedProtection.ChannelBinding.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

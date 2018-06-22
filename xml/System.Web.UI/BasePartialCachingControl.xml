@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BasePartialCachingControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BasePartialCachingControl&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasePartialCachingControl abstract : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type BasePartialCachingControl = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BasePartialCachingControl.CachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CachePolicy As ControlCachePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ControlCachePolicy ^ CachePolicy { System::Web::UI::ControlCachePolicy ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CachePolicy : System.Web.UI.ControlCachePolicy" Usage="System.Web.UI.BasePartialCachingControl.CachePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BasePartialCachingControl.Dependency" />
       <MemberSignature Language="VB.NET" Value="Public Property Dependency As CacheDependency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Caching::CacheDependency ^ Dependency { System::Web::Caching::CacheDependency ^ get(); void set(System::Web::Caching::CacheDependency ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Dependency : System.Web.Caching.CacheDependency with get, set" Usage="System.Web.UI.BasePartialCachingControl.Dependency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.BasePartialCachingControl.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="basePartialCachingControl.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.BasePartialCachingControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (output As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="basePartialCachingControl.Render output" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

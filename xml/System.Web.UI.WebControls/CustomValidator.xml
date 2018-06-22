@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CustomValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomValidator&#xA;Inherits BaseValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomValidator : System::Web::UI::WebControls::BaseValidator" />
+  <TypeSignature Language="F#" Value="type CustomValidator = class&#xA;    inherit BaseValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -142,6 +143,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CustomValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="customValidator.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +182,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CustomValidator.ClientValidationFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientValidationFunction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientValidationFunction { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientValidationFunction : string with get, set" Usage="System.Web.UI.WebControls.CustomValidator.ClientValidationFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,6 +239,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CustomValidator.ControlPropertiesValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ControlPropertiesValid();" />
+      <MemberSignature Language="F#" Value="override this.ControlPropertiesValid : unit -&gt; bool" Usage="customValidator.ControlPropertiesValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +274,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CustomValidator.EvaluateIsValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
+      <MemberSignature Language="F#" Value="override this.EvaluateIsValid : unit -&gt; bool" Usage="customValidator.EvaluateIsValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -307,6 +312,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnServerValidate (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnServerValidate(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnServerValidate : string -&gt; bool&#xA;override this.OnServerValidate : string -&gt; bool" Usage="customValidator.OnServerValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,6 +364,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.CustomValidator.ServerValidate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ServerValidate As ServerValidateEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ServerValidateEventHandler ^ ServerValidate;" />
+      <MemberSignature Language="F#" Value="member this.ServerValidate : System.Web.UI.WebControls.ServerValidateEventHandler " Usage="member this.ServerValidate : System.Web.UI.WebControls.ServerValidateEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -399,6 +406,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CustomValidator.ValidateEmptyText" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateEmptyText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateEmptyText { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateEmptyText : bool with get, set" Usage="System.Web.UI.WebControls.CustomValidator.ValidateEmptyText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

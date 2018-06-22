@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SpeakProgressEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SpeakProgressEventArgs&#xA;Inherits PromptEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpeakProgressEventArgs : System::Speech::Synthesis::PromptEventArgs" />
+  <TypeSignature Language="F#" Value="type SpeakProgressEventArgs = class&#xA;    inherit PromptEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeakProgressEventArgs.AudioPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioPosition As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AudioPosition { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.AudioPosition : TimeSpan" Usage="System.Speech.Synthesis.SpeakProgressEventArgs.AudioPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -125,6 +127,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharacterCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CharacterCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterCount : int" Usage="System.Speech.Synthesis.SpeakProgressEventArgs.CharacterCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -152,6 +155,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharacterPosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CharacterPosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterPosition : int" Usage="System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -286,6 +290,7 @@ showers. </p>
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeakProgressEventArgs.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Speech.Synthesis.SpeakProgressEventArgs.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

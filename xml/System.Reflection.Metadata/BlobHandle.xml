@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobHandle" />
   <TypeSignature Language="VB.NET" Value="Public Structure BlobHandle&#xA;Implements IEquatable(Of BlobHandle)" />
   <TypeSignature Language="C++ CLI" Value="public value class BlobHandle : IEquatable&lt;System::Reflection::Metadata::BlobHandle&gt;" />
+  <TypeSignature Language="F#" Value="type BlobHandle = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobHandle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="blobHandle.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobHandle.Equals(System.Reflection.Metadata.BlobHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As BlobHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::BlobHandle other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.BlobHandle -&gt; bool" Usage="blobHandle.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobHandle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="blobHandle.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobHandle.IsNil" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNil As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNil { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNil : bool" Usage="System.Reflection.Metadata.BlobHandle.IsNil" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobHandle.op_Equality(System.Reflection.Metadata.BlobHandle,System.Reflection.Metadata.BlobHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As BlobHandle, right As BlobHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Metadata::BlobHandle left, System::Reflection::Metadata::BlobHandle right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Metadata.BlobHandle * System.Reflection.Metadata.BlobHandle -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.BlobHandle op_Explicit(valuetype System.Reflection.Metadata.Handle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobHandle.op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Reflection::Metadata::BlobHandle(System::Reflection::Metadata::Handle handle);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Reflection.Metadata.Handle -&gt; System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.BlobHandle.op_Explicit handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.Handle op_Implicit(valuetype System.Reflection.Metadata.BlobHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobHandle.op_Implicit(System.Reflection.Metadata.BlobHandle)~System.Reflection.Metadata.Handle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Reflection::Metadata::Handle(System::Reflection::Metadata::BlobHandle handle);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Reflection.Metadata.BlobHandle -&gt; System.Reflection.Metadata.Handle" Usage="System.Reflection.Metadata.BlobHandle.op_Implicit handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobHandle.op_Inequality(System.Reflection.Metadata.BlobHandle,System.Reflection.Metadata.BlobHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As BlobHandle, right As BlobHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Metadata::BlobHandle left, System::Reflection::Metadata::BlobHandle right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Metadata.BlobHandle * System.Reflection.Metadata.BlobHandle -&gt; bool" Usage="System.Reflection.Metadata.BlobHandle.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

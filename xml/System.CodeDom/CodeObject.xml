@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeObject" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeObject" />
+  <TypeSignature Language="F#" Value="type CodeObject = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeObject.UserData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserData : System.Collections.IDictionary" Usage="System.CodeDom.CodeObject.UserData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

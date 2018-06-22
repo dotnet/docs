@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.CodeIdentifiers" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeIdentifiers" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeIdentifiers" />
+  <TypeSignature Language="F#" Value="type CodeIdentifiers = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (caseSensitive As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeIdentifiers(bool caseSensitive);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.CodeIdentifiers : bool -&gt; System.Xml.Serialization.CodeIdentifiers" Usage="new System.Xml.Serialization.CodeIdentifiers caseSensitive" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (identifier As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ identifier, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * obj -&gt; unit" Usage="codeIdentifiers.Add (identifier, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.AddReserved(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddReserved (identifier As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddReserved(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="member this.AddReserved : string -&gt; unit" Usage="codeIdentifiers.AddReserved identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.AddUnique(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddUnique (identifier As String, value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AddUnique(System::String ^ identifier, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddUnique : string * obj -&gt; string" Usage="codeIdentifiers.AddUnique (identifier, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="codeIdentifiers.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -291,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.IsInUse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInUse (identifier As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInUse(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="member this.IsInUse : string -&gt; bool" Usage="codeIdentifiers.IsInUse identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -336,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.MakeRightCase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MakeRightCase (identifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ MakeRightCase(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="member this.MakeRightCase : string -&gt; string" Usage="codeIdentifiers.MakeRightCase identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -378,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.MakeUnique(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MakeUnique (identifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ MakeUnique(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="member this.MakeUnique : string -&gt; string" Usage="codeIdentifiers.MakeUnique identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -422,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (identifier As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="codeIdentifiers.Remove identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -463,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.RemoveReserved(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveReserved (identifier As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveReserved(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="member this.RemoveReserved : string -&gt; unit" Usage="codeIdentifiers.RemoveReserved identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -503,6 +514,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ToArray(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifiers.ToArray(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ToArray(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.ToArray : Type -&gt; obj" Usage="codeIdentifiers.ToArray type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -545,6 +557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.CodeIdentifiers.UseCamelCasing" />
       <MemberSignature Language="VB.NET" Value="Public Property UseCamelCasing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCamelCasing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseCamelCasing : bool with get, set" Usage="System.Xml.Serialization.CodeIdentifiers.UseCamelCasing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.FilterElement" />
   <TypeSignature Language="VB.NET" Value="Public Class FilterElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilterElement : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FilterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.CustomType" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomType : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.CustomType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.Filter1" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter1 As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter1 { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter1 : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.Filter1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.Filter2" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter2 As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter2 { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter2 : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.Filter2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.FilterData" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterData As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterData { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterData : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.FilterData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.FilterType" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterType As FilterType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Routing::Configuration::FilterType FilterType { System::ServiceModel::Routing::Configuration::FilterType get(); void set(System::ServiceModel::Routing::Configuration::FilterType value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterType : System.ServiceModel.Routing.Configuration.FilterType with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.FilterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ToolBarOverflowPanel" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolBarOverflowPanel&#xA;Inherits Panel" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolBarOverflowPanel : System::Windows::Controls::Panel" />
+  <TypeSignature Language="F#" Value="type ToolBarOverflowPanel = class&#xA;    inherit Panel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToolBarOverflowPanel.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeBounds As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeBounds);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="toolBarOverflowPanel.ArrangeOverride arrangeBounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToolBarOverflowPanel.CreateUIElementCollection(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateUIElementCollection (logicalParent As FrameworkElement) As UIElementCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Controls::UIElementCollection ^ CreateUIElementCollection(System::Windows::FrameworkElement ^ logicalParent);" />
+      <MemberSignature Language="F#" Value="override this.CreateUIElementCollection : System.Windows.FrameworkElement -&gt; System.Windows.Controls.UIElementCollection" Usage="toolBarOverflowPanel.CreateUIElementCollection logicalParent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToolBarOverflowPanel.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="toolBarOverflowPanel.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ToolBarOverflowPanel.WrapWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double WrapWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapWidth : double with get, set" Usage="System.Windows.Controls.Primitives.ToolBarOverflowPanel.WrapWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ToolBarOverflowPanel.WrapWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WrapWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WrapWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable WrapWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.ToolBarOverflowPanel.WrapWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAParameters" />
   <TypeSignature Language="VB.NET" Value="Public Structure RSAParameters" />
   <TypeSignature Language="C++ CLI" Value="public value class RSAParameters" />
+  <TypeSignature Language="F#" Value="type RSAParameters = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAParameters.D" />
       <MemberSignature Language="VB.NET" Value="Public D As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ D;" />
+      <MemberSignature Language="F#" Value="val mutable D : byte[]" Usage="System.Security.Cryptography.RSAParameters.D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAParameters.DP" />
       <MemberSignature Language="VB.NET" Value="Public DP As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ DP;" />
+      <MemberSignature Language="F#" Value="val mutable DP : byte[]" Usage="System.Security.Cryptography.RSAParameters.DP" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAParameters.DQ" />
       <MemberSignature Language="VB.NET" Value="Public DQ As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ DQ;" />
+      <MemberSignature Language="F#" Value="val mutable DQ : byte[]" Usage="System.Security.Cryptography.RSAParameters.DQ" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAParameters.Exponent" />
       <MemberSignature Language="VB.NET" Value="Public Exponent As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Exponent;" />
+      <MemberSignature Language="F#" Value="val mutable Exponent : byte[]" Usage="System.Security.Cryptography.RSAParameters.Exponent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAParameters.InverseQ" />
       <MemberSignature Language="VB.NET" Value="Public InverseQ As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ InverseQ;" />
+      <MemberSignature Language="F#" Value="val mutable InverseQ : byte[]" Usage="System.Security.Cryptography.RSAParameters.InverseQ" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAParameters.Modulus" />
       <MemberSignature Language="VB.NET" Value="Public Modulus As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Modulus;" />
+      <MemberSignature Language="F#" Value="val mutable Modulus : byte[]" Usage="System.Security.Cryptography.RSAParameters.Modulus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAParameters.P" />
       <MemberSignature Language="VB.NET" Value="Public P As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ P;" />
+      <MemberSignature Language="F#" Value="val mutable P : byte[]" Usage="System.Security.Cryptography.RSAParameters.P" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSAParameters.Q" />
       <MemberSignature Language="VB.NET" Value="Public Q As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Q;" />
+      <MemberSignature Language="F#" Value="val mutable Q : byte[]" Usage="System.Security.Cryptography.RSAParameters.Q" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

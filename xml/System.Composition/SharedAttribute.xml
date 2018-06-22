@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.SharedAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SharedAttribute&#xA;Inherits PartMetadataAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SharedAttribute : System::Composition::PartMetadataAttribute" />
+  <TypeSignature Language="F#" Value="type SharedAttribute = class&#xA;    inherit PartMetadataAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.SharedAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sharingBoundaryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SharedAttribute(System::String ^ sharingBoundaryName);" />
+      <MemberSignature Language="F#" Value="new System.Composition.SharedAttribute : string -&gt; System.Composition.SharedAttribute" Usage="new System.Composition.SharedAttribute sharingBoundaryName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.SharedAttribute.SharingBoundary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharingBoundary As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharingBoundary { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharingBoundary : string" Usage="System.Composition.SharedAttribute.SharingBoundary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.DefaultAuthenticationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultAuthenticationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultAuthenticationEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type DefaultAuthenticationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.DefaultAuthenticationEventArgs.#ctor(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultAuthenticationEventArgs(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.DefaultAuthenticationEventArgs : System.Web.HttpContext -&gt; System.Web.Security.DefaultAuthenticationEventArgs" Usage="new System.Web.Security.DefaultAuthenticationEventArgs context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.DefaultAuthenticationEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Security.DefaultAuthenticationEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

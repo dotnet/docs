@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.OperationParameterInfoCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationParameterInfoCollection&#xA;Inherits List(Of OperationParameterInfo)&#xA;Implements ICollection(Of OperationParameterInfo), IEnumerable(Of OperationParameterInfo), IList, IList(Of OperationParameterInfo)" />
   <TypeSignature Language="C++ CLI" Value="public ref class OperationParameterInfoCollection sealed : System::Collections::Generic::List&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::ICollection&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::IList&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type OperationParameterInfoCollection = class&#xA;    inherit List&lt;OperationParameterInfo&gt;&#xA;    interface IList&lt;OperationParameterInfo&gt;&#xA;    interface ICollection&lt;OperationParameterInfo&gt;&#xA;    interface seq&lt;OperationParameterInfo&gt;&#xA;    interface IEnumerable&#xA;    interface IList&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.#ctor(System.Workflow.Activities.OperationInfoBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As OperationInfoBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationParameterInfoCollection(System::Workflow::Activities::OperationInfoBase ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.OperationParameterInfoCollection : System.Workflow.Activities.OperationInfoBase -&gt; System.Workflow.Activities.OperationParameterInfoCollection" Usage="new System.Workflow.Activities.OperationParameterInfoCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.Add(System.Workflow.Activities.OperationParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As OperationParameterInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Workflow::Activities::OperationParameterInfo ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Workflow.Activities.OperationParameterInfo -&gt; unit" Usage="operationParameterInfoCollection.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="operationParameterInfoCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.Contains(System.Workflow.Activities.OperationParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As OperationParameterInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Workflow::Activities::OperationParameterInfo ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Workflow.Activities.OperationParameterInfo -&gt; bool" Usage="operationParameterInfoCollection.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Workflow.Activities.OperationParameterInfoCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of OperationParameterInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerator&lt;System::Workflow::Activities::OperationParameterInfo ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Workflow.Activities.OperationParameterInfo&gt;" Usage="operationParameterInfoCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.IndexOf(System.Workflow.Activities.OperationParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As OperationParameterInfo) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Workflow::Activities::OperationParameterInfo ^ item);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Workflow.Activities.OperationParameterInfo -&gt; int" Usage="operationParameterInfoCollection.IndexOf item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.Insert(System.Int32,System.Workflow.Activities.OperationParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As OperationParameterInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Workflow::Activities::OperationParameterInfo ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Workflow.Activities.OperationParameterInfo -&gt; unit" Usage="operationParameterInfoCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As OperationParameterInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::OperationParameterInfo ^ default[int] { System::Workflow::Activities::OperationParameterInfo ^ get(int index); void set(int index, System::Workflow::Activities::OperationParameterInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Workflow.Activities.OperationParameterInfo with get, set" Usage="System.Workflow.Activities.OperationParameterInfoCollection.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As OperationParameterInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::OperationParameterInfo ^ default[System::String ^] { System::Workflow::Activities::OperationParameterInfo ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Workflow.Activities.OperationParameterInfo" Usage="System.Workflow.Activities.OperationParameterInfoCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -342,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.Remove(System.Workflow.Activities.OperationParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As OperationParameterInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::Workflow::Activities::OperationParameterInfo ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Workflow.Activities.OperationParameterInfo -&gt; bool" Usage="operationParameterInfoCollection.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -370,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationParameterInfoCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="operationParameterInfoCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
@@ -499,6 +512,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#Generic#ICollection&lt;System#Workflow#Activities#OperationParameterInfo&gt;#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection(Of OperationParameterInfo).Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.Generic.ICollection&lt;System.Workflow.Activities.OperationParameterInfo&gt;.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.OperationParameterInfoCollection.System.Collections.Generic.ICollection&lt;System.Workflow.Activities.OperationParameterInfo&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -522,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#Generic#ICollection&lt;System#Workflow#Activities#OperationParameterInfo&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of OperationParameterInfo).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Workflow.Activities.OperationParameterInfo&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.OperationParameterInfoCollection.System.Collections.Generic.ICollection&lt;System.Workflow.Activities.OperationParameterInfo&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -653,6 +668,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#Generic#IList&lt;System#Workflow#Activities#OperationParameterInfo&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As OperationParameterInfo Implements IList(Of OperationParameterInfo).Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Workflow::Activities::OperationParameterInfo ^ System.Collections.Generic.IList&lt;System.Workflow.Activities.OperationParameterInfo&gt;.Item[int] { System::Workflow::Activities::OperationParameterInfo ^ get(int index); void set(int index, System::Workflow::Activities::OperationParameterInfo ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.OperationParameterInfoCollection.System.Collections.Generic.IList&lt;System.Workflow.Activities.OperationParameterInfo&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -733,6 +749,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.OperationParameterInfoCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -757,6 +774,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.OperationParameterInfoCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -937,6 +955,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.OperationParameterInfoCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -961,6 +980,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.OperationParameterInfoCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -985,6 +1005,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.OperationParameterInfoCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

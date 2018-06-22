@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.DispatchProxy" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DispatchProxy" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispatchProxy abstract" />
+  <TypeSignature Language="F#" Value="type DispatchProxy = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.DispatchProxy</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.DispatchProxy.Create``2" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T, TProxy) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TProxy&gt;&#xA; where TProxy : System::Reflection::DispatchProxy static T Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; 'T (requires 'Proxy :&gt; System.Reflection.DispatchProxy)" Usage="System.Reflection.DispatchProxy.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.DispatchProxy</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.DispatchProxy.Invoke(System.Reflection.MethodInfo,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function Invoke (targetMethod As MethodInfo, args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ Invoke(System::Reflection::MethodInfo ^ targetMethod, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : System.Reflection.MethodInfo * obj[] -&gt; obj" Usage="dispatchProxy.Invoke (targetMethod, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.DispatchProxy</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.UserControlFileEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class UserControlFileEditor&#xA;Inherits UrlEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserControlFileEditor : System::Web::UI::Design::UrlEditor" />
+  <TypeSignature Language="F#" Value="type UserControlFileEditor = class&#xA;    inherit UrlEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlFileEditor.Caption" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Caption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="System.Web.UI.Design.UserControlFileEditor.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlFileEditor.Filter" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Filter { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string" Usage="System.Web.UI.Design.UserControlFileEditor.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

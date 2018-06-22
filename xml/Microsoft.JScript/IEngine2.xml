@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IEngine2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEngine2" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEngine2" />
+  <TypeSignature Language="F#" Value="type IEngine2 = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.Clone(System.AppDomain)" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone (domain As AppDomain) As IJSVsaEngine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Vsa::IJSVsaEngine ^ Clone(AppDomain ^ domain);" />
+      <MemberSignature Language="F#" Value="abstract member Clone : AppDomain -&gt; Microsoft.JScript.Vsa.IJSVsaEngine" Usage="iEngine2.Clone domain" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.CompileEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Function CompileEmpty () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CompileEmpty();" />
+      <MemberSignature Language="F#" Value="abstract member CompileEmpty : unit -&gt; bool" Usage="iEngine2.CompileEmpty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.ConnectEvents" />
       <MemberSignature Language="VB.NET" Value="Public Sub ConnectEvents ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ConnectEvents();" />
+      <MemberSignature Language="F#" Value="abstract member ConnectEvents : unit -&gt; unit" Usage="iEngine2.ConnectEvents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.DisconnectEvents" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisconnectEvents ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisconnectEvents();" />
+      <MemberSignature Language="F#" Value="abstract member DisconnectEvents : unit -&gt; unit" Usage="iEngine2.DisconnectEvents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.GetAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssembly () As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ GetAssembly();" />
+      <MemberSignature Language="F#" Value="abstract member GetAssembly : unit -&gt; System.Reflection.Assembly" Usage="iEngine2.GetAssembly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.GetGlobalScope" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGlobalScope () As IVsaScriptScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::IVsaScriptScope ^ GetGlobalScope();" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalScope : unit -&gt; Microsoft.JScript.IVsaScriptScope" Usage="iEngine2.GetGlobalScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -170,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.GetModule" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModule () As Module" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Module ^ GetModule();" />
+      <MemberSignature Language="F#" Value="abstract member GetModule : unit -&gt; System.Reflection.Module" Usage="iEngine2.GetModule " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -193,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.InitVsaEngine(System.String,Microsoft.JScript.Vsa.IJSVsaSite)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitVsaEngine (rootMoniker As String, site As IJSVsaSite)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitVsaEngine(System::String ^ rootMoniker, Microsoft::JScript::Vsa::IJSVsaSite ^ site);" />
+      <MemberSignature Language="F#" Value="abstract member InitVsaEngine : string * Microsoft.JScript.Vsa.IJSVsaSite -&gt; unit" Usage="iEngine2.InitVsaEngine (rootMoniker, site)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -220,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.Interrupt" />
       <MemberSignature Language="VB.NET" Value="Public Sub Interrupt ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Interrupt();" />
+      <MemberSignature Language="F#" Value="abstract member Interrupt : unit -&gt; unit" Usage="iEngine2.Interrupt " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -249,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.RegisterEventSource(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterEventSource (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterEventSource(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterEventSource : string -&gt; unit" Usage="iEngine2.RegisterEventSource name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -274,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.Restart" />
       <MemberSignature Language="VB.NET" Value="Public Sub Restart ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Restart();" />
+      <MemberSignature Language="F#" Value="abstract member Restart : unit -&gt; unit" Usage="iEngine2.Restart " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -296,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.Run(System.AppDomain)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Run (domain As AppDomain)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Run(AppDomain ^ domain);" />
+      <MemberSignature Language="F#" Value="abstract member Run : AppDomain -&gt; unit" Usage="iEngine2.Run domain" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -321,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.RunEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Sub RunEmpty ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunEmpty();" />
+      <MemberSignature Language="F#" Value="abstract member RunEmpty : unit -&gt; unit" Usage="iEngine2.RunEmpty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

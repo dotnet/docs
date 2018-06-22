@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveComReference" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResolveComReference&#xA;Inherits AppDomainIsolatedTaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveComReference sealed : Microsoft::Build::Tasks::AppDomainIsolatedTaskExtension" />
+  <TypeSignature Language="F#" Value="type ResolveComReference = class&#xA;    inherit AppDomainIsolatedTaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.DelaySign" />
       <MemberSignature Language="VB.NET" Value="Public Property DelaySign As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DelaySign { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DelaySign : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.DelaySign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.EnvironmentVariables" />
       <MemberSignature Language="VB.NET" Value="Public Property EnvironmentVariables As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ EnvironmentVariables { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EnvironmentVariables : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.EnvironmentVariables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveComReference.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="resolveComReference.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.ExecuteAsTool" />
       <MemberSignature Language="VB.NET" Value="Public Property ExecuteAsTool As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExecuteAsTool { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExecuteAsTool : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.ExecuteAsTool" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.IncludeVersionInInteropName" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeVersionInInteropName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeVersionInInteropName { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeVersionInInteropName : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.IncludeVersionInInteropName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.KeyContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyContainer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyContainer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyContainer : string with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.KeyContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.KeyFile" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFile : string with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.KeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -199,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.NoClassMembers" />
       <MemberSignature Language="VB.NET" Value="Public Property NoClassMembers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoClassMembers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NoClassMembers : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.NoClassMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -221,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.ResolvedAssemblyReferences" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedAssemblyReferences As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResolvedAssemblyReferences { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedAssemblyReferences : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.ResolvedAssemblyReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -242,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.ResolvedFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResolvedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.ResolvedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -268,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.ResolvedModules" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedModules As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResolvedModules { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedModules : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.ResolvedModules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -294,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.SdkToolsPath" />
       <MemberSignature Language="VB.NET" Value="Public Property SdkToolsPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SdkToolsPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SdkToolsPath : string with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.SdkToolsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -315,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.Silent" />
       <MemberSignature Language="VB.NET" Value="Public Property Silent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Silent { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Silent : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.Silent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -336,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.StateFile" />
       <MemberSignature Language="VB.NET" Value="Public Property StateFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StateFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StateFile : string with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.StateFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -357,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.TargetFrameworkVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkVersion : string with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.TargetFrameworkVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -378,6 +394,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.TargetProcessorArchitecture" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetProcessorArchitecture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetProcessorArchitecture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetProcessorArchitecture : string with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.TargetProcessorArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -399,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.TypeLibFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeLibFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ TypeLibFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeLibFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.TypeLibFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -427,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.TypeLibNames" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeLibNames As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ TypeLibNames { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeLibNames : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.TypeLibNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -455,6 +474,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveComReference.WrapperOutputDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapperOutputDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WrapperOutputDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapperOutputDirectory : string with get, set" Usage="Microsoft.Build.Tasks.ResolveComReference.WrapperOutputDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

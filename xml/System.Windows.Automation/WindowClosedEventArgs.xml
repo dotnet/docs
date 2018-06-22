@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowClosedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowClosedEventArgs&#xA;Inherits AutomationEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowClosedEventArgs sealed : System::Windows::Automation::AutomationEventArgs" />
+  <TypeSignature Language="F#" Value="type WindowClosedEventArgs = class&#xA;    inherit AutomationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.WindowClosedEventArgs.#ctor(System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (runtimeId As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowClosedEventArgs(cli::array &lt;int&gt; ^ runtimeId);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.WindowClosedEventArgs : int[] -&gt; System.Windows.Automation.WindowClosedEventArgs" Usage="new System.Windows.Automation.WindowClosedEventArgs runtimeId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.WindowClosedEventArgs.GetRuntimeId" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeId () As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetRuntimeId();" />
+      <MemberSignature Language="F#" Value="member this.GetRuntimeId : unit -&gt; int[]" Usage="windowClosedEventArgs.GetRuntimeId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.InstanceLockedExceptionAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum InstanceLockedExceptionAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class InstanceLockedExceptionAction" />
+  <TypeSignature Language="F#" Value="type InstanceLockedExceptionAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceLockedExceptionAction.AggressiveRetry" />
       <MemberSignature Language="VB.NET" Value="AggressiveRetry" />
       <MemberSignature Language="C++ CLI" Value="AggressiveRetry" />
+      <MemberSignature Language="F#" Value="AggressiveRetry = 2" Usage="System.Activities.DurableInstancing.InstanceLockedExceptionAction.AggressiveRetry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceLockedExceptionAction.BasicRetry" />
       <MemberSignature Language="VB.NET" Value="BasicRetry" />
       <MemberSignature Language="C++ CLI" Value="BasicRetry" />
+      <MemberSignature Language="F#" Value="BasicRetry = 1" Usage="System.Activities.DurableInstancing.InstanceLockedExceptionAction.BasicRetry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry" />
       <MemberSignature Language="VB.NET" Value="NoRetry" />
       <MemberSignature Language="C++ CLI" Value="NoRetry" />
+      <MemberSignature Language="F#" Value="NoRetry = 0" Usage="System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>

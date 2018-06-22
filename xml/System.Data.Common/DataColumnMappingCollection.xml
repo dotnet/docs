@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataColumnMappingCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataColumnMappingCollection&#xA;Inherits MarshalByRefObject&#xA;Implements IColumnMappingCollection, IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataColumnMappingCollection sealed : MarshalByRefObject, System::Collections::IList, System::Data::IColumnMappingCollection" />
+  <TypeSignature Language="F#" Value="type DataColumnMappingCollection = class&#xA;    inherit MarshalByRefObject&#xA;    interface IColumnMappingCollection&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; int&#xA;override this.Add : obj -&gt; int" Usage="dataColumnMappingCollection.Add value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -145,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (sourceColumn As String, dataSetColumn As String) As DataColumnMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DataColumnMapping ^ Add(System::String ^ sourceColumn, System::String ^ dataSetColumn);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; System.Data.Common.DataColumnMapping" Usage="dataColumnMappingCollection.Add (sourceColumn, dataSetColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -201,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.AddRange(System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(Array ^ values);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : Array -&gt; unit" Usage="dataColumnMappingCollection.AddRange values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.AddRange(System.Data.Common.DataColumnMapping[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As DataColumnMapping())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Data::Common::DataColumnMapping ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Data.Common.DataColumnMapping[] -&gt; unit" Usage="dataColumnMappingCollection.AddRange values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -267,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="dataColumnMappingCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -320,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="dataColumnMappingCollection.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -369,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool&#xA;override this.Contains : string -&gt; bool" Usage="dataColumnMappingCollection.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IColumnMappingCollection.Contains(System.String)</InterfaceMember>
@@ -426,6 +434,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="dataColumnMappingCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -464,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.CopyTo(System.Data.Common.DataColumnMapping[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataColumnMapping(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::Common::DataColumnMapping ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Data.Common.DataColumnMapping[] * int -&gt; unit" Usage="dataColumnMappingCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -499,6 +509,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.Common.DataColumnMappingCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -550,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.GetByDataSetColumn(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetByDataSetColumn (value As String) As DataColumnMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DataColumnMapping ^ GetByDataSetColumn(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.GetByDataSetColumn : string -&gt; System.Data.Common.DataColumnMapping" Usage="dataColumnMappingCollection.GetByDataSetColumn value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -594,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.GetColumnMappingBySchemaAction(System.Data.Common.DataColumnMappingCollection,System.String,System.Data.MissingMappingAction)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetColumnMappingBySchemaAction (columnMappings As DataColumnMappingCollection, sourceColumn As String, mappingAction As MissingMappingAction) As DataColumnMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DataColumnMapping ^ GetColumnMappingBySchemaAction(System::Data::Common::DataColumnMappingCollection ^ columnMappings, System::String ^ sourceColumn, System::Data::MissingMappingAction mappingAction);" />
+      <MemberSignature Language="F#" Value="static member GetColumnMappingBySchemaAction : System.Data.Common.DataColumnMappingCollection * string * System.Data.MissingMappingAction -&gt; System.Data.Common.DataColumnMapping" Usage="System.Data.Common.DataColumnMappingCollection.GetColumnMappingBySchemaAction (columnMappings, sourceColumn, mappingAction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -660,6 +673,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataColumn GetDataColumn(class System.Data.Common.DataColumnMappingCollection columnMappings, string sourceColumn, class System.Type dataType, class System.Data.DataTable dataTable, valuetype System.Data.MissingMappingAction mappingAction, valuetype System.Data.MissingSchemaAction schemaAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.GetDataColumn(System.Data.Common.DataColumnMappingCollection,System.String,System.Type,System.Data.DataTable,System.Data.MissingMappingAction,System.Data.MissingSchemaAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DataColumn ^ GetDataColumn(System::Data::Common::DataColumnMappingCollection ^ columnMappings, System::String ^ sourceColumn, Type ^ dataType, System::Data::DataTable ^ dataTable, System::Data::MissingMappingAction mappingAction, System::Data::MissingSchemaAction schemaAction);" />
+      <MemberSignature Language="F#" Value="static member GetDataColumn : System.Data.Common.DataColumnMappingCollection * string * Type * System.Data.DataTable * System.Data.MissingMappingAction * System.Data.MissingSchemaAction -&gt; System.Data.DataColumn" Usage="System.Data.Common.DataColumnMappingCollection.GetDataColumn (columnMappings, sourceColumn, dataType, dataTable, mappingAction, schemaAction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -710,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="dataColumnMappingCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -754,6 +769,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : obj -&gt; int&#xA;override this.IndexOf : obj -&gt; int" Usage="dataColumnMappingCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -801,6 +817,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (sourceColumn As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ sourceColumn);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : string -&gt; int&#xA;override this.IndexOf : string -&gt; int" Usage="dataColumnMappingCollection.IndexOf sourceColumn" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IColumnMappingCollection.IndexOf(System.String)</InterfaceMember>
@@ -848,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.IndexOfDataSetColumn(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOfDataSetColumn (dataSetColumn As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfDataSetColumn(System::String ^ dataSetColumn);" />
+      <MemberSignature Language="F#" Value="member this.IndexOfDataSetColumn : string -&gt; int" Usage="dataColumnMappingCollection.IndexOfDataSetColumn dataSetColumn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -902,6 +920,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Insert(System.Int32,System.Data.Common.DataColumnMapping)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As DataColumnMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Data::Common::DataColumnMapping ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Data.Common.DataColumnMapping -&gt; unit" Usage="dataColumnMappingCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -937,6 +956,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * obj -&gt; unit&#xA;override this.Insert : int * obj -&gt; unit" Usage="dataColumnMappingCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -985,6 +1005,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DataColumnMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataColumnMapping ^ default[int] { System::Data::Common::DataColumnMapping ^ get(int index); void set(int index, System::Data::Common::DataColumnMapping ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.Common.DataColumnMapping with get, set" Usage="System.Data.Common.DataColumnMappingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1037,6 +1058,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(sourceColumn As String) As DataColumnMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataColumnMapping ^ default[System::String ^] { System::Data::Common::DataColumnMapping ^ get(System::String ^ sourceColumn); void set(System::String ^ sourceColumn, System::Data::Common::DataColumnMapping ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Data.Common.DataColumnMapping with get, set" Usage="System.Data.Common.DataColumnMappingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1099,6 +1121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Remove(System.Data.Common.DataColumnMapping)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DataColumnMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::Common::DataColumnMapping ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Data.Common.DataColumnMapping -&gt; unit" Usage="dataColumnMappingCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1132,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="dataColumnMappingCollection.Remove value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
@@ -1190,6 +1214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="dataColumnMappingCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -1237,6 +1262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataColumnMappingCollection.RemoveAt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (sourceColumn As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(System::String ^ sourceColumn);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : string -&gt; unit&#xA;override this.RemoveAt : string -&gt; unit" Usage="dataColumnMappingCollection.RemoveAt sourceColumn" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IColumnMappingCollection.RemoveAt(System.String)</InterfaceMember>
@@ -1284,6 +1310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DataColumnMappingCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1327,6 +1354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DataColumnMappingCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1369,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DataColumnMappingCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1412,6 +1441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DataColumnMappingCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1455,6 +1485,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DataColumnMappingCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1595,6 +1626,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataColumnMappingCollection.System#Data#IColumnMappingCollection#Item(System.String)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As String) As Object Implements IColumnMappingCollection.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Data.IColumnMappingCollection.Item[System::String ^] { System::Object ^ get(System::String ^ index); void set(System::String ^ index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DataColumnMappingCollection.System.Data.IColumnMappingCollection.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IColumnMappingCollection.Item(System.String)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectLoadSettings" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProjectLoadSettings" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProjectLoadSettings" />
+  <TypeSignature Language="F#" Value="type ProjectLoadSettings = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectLoadSettings.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Build.Evaluation.ProjectLoadSettings.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectLoadSettings.IgnoreMissingImports" />
       <MemberSignature Language="VB.NET" Value="IgnoreMissingImports" />
       <MemberSignature Language="C++ CLI" Value="IgnoreMissingImports" />
+      <MemberSignature Language="F#" Value="IgnoreMissingImports = 1" Usage="Microsoft.Build.Evaluation.ProjectLoadSettings.IgnoreMissingImports" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectLoadSettings.RecordDuplicateButNotCircularImports" />
       <MemberSignature Language="VB.NET" Value="RecordDuplicateButNotCircularImports" />
       <MemberSignature Language="C++ CLI" Value="RecordDuplicateButNotCircularImports" />
+      <MemberSignature Language="F#" Value="RecordDuplicateButNotCircularImports = 2" Usage="Microsoft.Build.Evaluation.ProjectLoadSettings.RecordDuplicateButNotCircularImports" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectLoadSettings.RejectCircularImports" />
       <MemberSignature Language="VB.NET" Value="RejectCircularImports" />
       <MemberSignature Language="C++ CLI" Value="RejectCircularImports" />
+      <MemberSignature Language="F#" Value="RejectCircularImports = 4" Usage="Microsoft.Build.Evaluation.ProjectLoadSettings.RejectCircularImports" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

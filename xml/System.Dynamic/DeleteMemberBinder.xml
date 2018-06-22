@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.DeleteMemberBinder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DeleteMemberBinder&#xA;Inherits DynamicMetaObjectBinder" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeleteMemberBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
+  <TypeSignature Language="F#" Value="type DeleteMemberBinder = class&#xA;    inherit DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DeleteMemberBinder.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, ignoreCase As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DeleteMemberBinder(System::String ^ name, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="new System.Dynamic.DeleteMemberBinder : string * bool -&gt; System.Dynamic.DeleteMemberBinder" Usage="new System.Dynamic.DeleteMemberBinder (name, ignoreCase)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DeleteMemberBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="override this.Bind : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="deleteMemberBinder.Bind (target, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DeleteMemberBinder.FallbackDeleteMember(System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function FallbackDeleteMember (target As DynamicMetaObject) As DynamicMetaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackDeleteMember(System::Dynamic::DynamicMetaObject ^ target);" />
+      <MemberSignature Language="F#" Value="member this.FallbackDeleteMember : System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="deleteMemberBinder.FallbackDeleteMember target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DeleteMemberBinder.FallbackDeleteMember(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackDeleteMember (target As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackDeleteMember(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
+      <MemberSignature Language="F#" Value="abstract member FallbackDeleteMember : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="deleteMemberBinder.FallbackDeleteMember (target, errorSuggestion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DeleteMemberBinder.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoreCase As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreCase { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreCase : bool" Usage="System.Dynamic.DeleteMemberBinder.IgnoreCase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DeleteMemberBinder.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Dynamic.DeleteMemberBinder.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -268,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DeleteMemberBinder.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Dynamic.DeleteMemberBinder.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

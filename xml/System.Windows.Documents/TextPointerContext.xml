@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextPointerContext" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextPointerContext" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextPointerContext" />
+  <TypeSignature Language="F#" Value="type TextPointerContext = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.ElementEnd" />
       <MemberSignature Language="VB.NET" Value="ElementEnd" />
       <MemberSignature Language="C++ CLI" Value="ElementEnd" />
+      <MemberSignature Language="F#" Value="ElementEnd = 4" Usage="System.Windows.Documents.TextPointerContext.ElementEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.ElementStart" />
       <MemberSignature Language="VB.NET" Value="ElementStart" />
       <MemberSignature Language="C++ CLI" Value="ElementStart" />
+      <MemberSignature Language="F#" Value="ElementStart = 3" Usage="System.Windows.Documents.TextPointerContext.ElementStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.EmbeddedElement" />
       <MemberSignature Language="VB.NET" Value="EmbeddedElement" />
       <MemberSignature Language="C++ CLI" Value="EmbeddedElement" />
+      <MemberSignature Language="F#" Value="EmbeddedElement = 2" Usage="System.Windows.Documents.TextPointerContext.EmbeddedElement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Documents.TextPointerContext.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Windows.Documents.TextPointerContext.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

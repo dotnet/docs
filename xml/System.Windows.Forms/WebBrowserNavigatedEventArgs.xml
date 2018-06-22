@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserNavigatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WebBrowserNavigatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebBrowserNavigatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WebBrowserNavigatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserNavigatedEventArgs.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserNavigatedEventArgs(Uri ^ url);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.WebBrowserNavigatedEventArgs : Uri -&gt; System.Windows.Forms.WebBrowserNavigatedEventArgs" Usage="new System.Windows.Forms.WebBrowserNavigatedEventArgs url" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserNavigatedEventArgs.Url" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Url { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.Windows.Forms.WebBrowserNavigatedEventArgs.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

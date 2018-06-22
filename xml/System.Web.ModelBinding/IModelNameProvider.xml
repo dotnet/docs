@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IModelNameProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IModelNameProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IModelNameProvider" />
+  <TypeSignature Language="F#" Value="type IModelNameProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IModelNameProvider.GetModelName" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModelName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetModelName();" />
+      <MemberSignature Language="F#" Value="abstract member GetModelName : unit -&gt; string" Usage="iModelNameProvider.GetModelName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

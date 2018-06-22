@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.UserPreferenceCategory" />
   <TypeSignature Language="VB.NET" Value="Public Enum UserPreferenceCategory" />
   <TypeSignature Language="C++ CLI" Value="public enum class UserPreferenceCategory" />
+  <TypeSignature Language="F#" Value="type UserPreferenceCategory = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Accessibility" />
       <MemberSignature Language="VB.NET" Value="Accessibility" />
       <MemberSignature Language="C++ CLI" Value="Accessibility" />
+      <MemberSignature Language="F#" Value="Accessibility = 1" Usage="Microsoft.Win32.UserPreferenceCategory.Accessibility" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Color" />
       <MemberSignature Language="VB.NET" Value="Color" />
       <MemberSignature Language="C++ CLI" Value="Color" />
+      <MemberSignature Language="F#" Value="Color = 2" Usage="Microsoft.Win32.UserPreferenceCategory.Color" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Desktop" />
       <MemberSignature Language="VB.NET" Value="Desktop" />
       <MemberSignature Language="C++ CLI" Value="Desktop" />
+      <MemberSignature Language="F#" Value="Desktop = 3" Usage="Microsoft.Win32.UserPreferenceCategory.Desktop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.General" />
       <MemberSignature Language="VB.NET" Value="General" />
       <MemberSignature Language="C++ CLI" Value="General" />
+      <MemberSignature Language="F#" Value="General = 4" Usage="Microsoft.Win32.UserPreferenceCategory.General" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Icon" />
       <MemberSignature Language="VB.NET" Value="Icon" />
       <MemberSignature Language="C++ CLI" Value="Icon" />
+      <MemberSignature Language="F#" Value="Icon = 5" Usage="Microsoft.Win32.UserPreferenceCategory.Icon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Keyboard" />
       <MemberSignature Language="VB.NET" Value="Keyboard" />
       <MemberSignature Language="C++ CLI" Value="Keyboard" />
+      <MemberSignature Language="F#" Value="Keyboard = 6" Usage="Microsoft.Win32.UserPreferenceCategory.Keyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Locale" />
       <MemberSignature Language="VB.NET" Value="Locale" />
       <MemberSignature Language="C++ CLI" Value="Locale" />
+      <MemberSignature Language="F#" Value="Locale = 13" Usage="Microsoft.Win32.UserPreferenceCategory.Locale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Menu" />
       <MemberSignature Language="VB.NET" Value="Menu" />
       <MemberSignature Language="C++ CLI" Value="Menu" />
+      <MemberSignature Language="F#" Value="Menu = 7" Usage="Microsoft.Win32.UserPreferenceCategory.Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Mouse" />
       <MemberSignature Language="VB.NET" Value="Mouse" />
       <MemberSignature Language="C++ CLI" Value="Mouse" />
+      <MemberSignature Language="F#" Value="Mouse = 8" Usage="Microsoft.Win32.UserPreferenceCategory.Mouse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,6 +219,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Policy" />
       <MemberSignature Language="VB.NET" Value="Policy" />
       <MemberSignature Language="C++ CLI" Value="Policy" />
+      <MemberSignature Language="F#" Value="Policy = 9" Usage="Microsoft.Win32.UserPreferenceCategory.Policy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -228,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Power" />
       <MemberSignature Language="VB.NET" Value="Power" />
       <MemberSignature Language="C++ CLI" Value="Power" />
+      <MemberSignature Language="F#" Value="Power = 10" Usage="Microsoft.Win32.UserPreferenceCategory.Power" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +259,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Screensaver" />
       <MemberSignature Language="VB.NET" Value="Screensaver" />
       <MemberSignature Language="C++ CLI" Value="Screensaver" />
+      <MemberSignature Language="F#" Value="Screensaver = 11" Usage="Microsoft.Win32.UserPreferenceCategory.Screensaver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.VisualStyle" />
       <MemberSignature Language="VB.NET" Value="VisualStyle" />
       <MemberSignature Language="C++ CLI" Value="VisualStyle" />
+      <MemberSignature Language="F#" Value="VisualStyle = 14" Usage="Microsoft.Win32.UserPreferenceCategory.VisualStyle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,6 +299,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Window" />
       <MemberSignature Language="VB.NET" Value="Window" />
       <MemberSignature Language="C++ CLI" Value="Window" />
+      <MemberSignature Language="F#" Value="Window = 12" Usage="Microsoft.Win32.UserPreferenceCategory.Window" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

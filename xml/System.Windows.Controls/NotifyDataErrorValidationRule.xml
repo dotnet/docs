@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.NotifyDataErrorValidationRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NotifyDataErrorValidationRule&#xA;Inherits ValidationRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class NotifyDataErrorValidationRule sealed : System::Windows::Controls::ValidationRule" />
+  <TypeSignature Language="F#" Value="type NotifyDataErrorValidationRule = class&#xA;    inherit ValidationRule" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Controls.ValidationResult Validate(object value, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.NotifyDataErrorValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Controls::ValidationResult ^ Validate(System::Object ^ value, System::Globalization::CultureInfo ^ cultureInfo);" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj * System.Globalization.CultureInfo -&gt; System.Windows.Controls.ValidationResult" Usage="notifyDataErrorValidationRule.Validate (value, cultureInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

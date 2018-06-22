@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.HtmlTextBoxAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlTextBoxAdapter&#xA;Inherits HtmlControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlTextBoxAdapter : System::Web::UI::MobileControls::Adapters::HtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type HtmlTextBoxAdapter = class&#xA;    inherit HtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlTextBoxAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As TextBox" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::TextBox ^ Control { System::Web::UI::MobileControls::TextBox ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.TextBox" Usage="System.Web.UI.MobileControls.Adapters.HtmlTextBoxAdapter.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlTextBoxAdapter.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="htmlTextBoxAdapter.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlTextBoxAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlTextBoxAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlTextBoxAdapter.RenderAsHiddenInputField(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAsHiddenInputField (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAsHiddenInputField(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderAsHiddenInputField : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlTextBoxAdapter.RenderAsHiddenInputField writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

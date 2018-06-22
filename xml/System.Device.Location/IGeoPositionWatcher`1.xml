@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Device.Location.IGeoPositionWatcher`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IGeoPositionWatcher(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IGeoPositionWatcher" />
+  <TypeSignature Language="F#" Value="type IGeoPositionWatcher&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Device.Location.IGeoPositionWatcher`1.Position" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As GeoPosition(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Device::Location::GeoPosition&lt;T&gt; ^ Position { System::Device::Location::GeoPosition&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Device.Location.GeoPosition&lt;'T&gt;" Usage="System.Device.Location.IGeoPositionWatcher&lt;'T&gt;.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="E:System.Device.Location.IGeoPositionWatcher`1.PositionChanged" />
       <MemberSignature Language="VB.NET" Value="Event PositionChanged As EventHandler(Of GeoPositionChangedEventArgs(Of T)) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Device::Location::GeoPositionChangedEventArgs&lt;T&gt; ^&gt; ^ PositionChanged;" />
+      <MemberSignature Language="F#" Value="member this.PositionChanged : EventHandler&lt;System.Device.Location.GeoPositionChangedEventArgs&lt;'T&gt;&gt; " Usage="member this.PositionChanged : System.EventHandler&lt;System.Device.Location.GeoPositionChangedEventArgs&lt;'T&gt;&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="abstract member Start : unit -&gt; unit" Usage="iGeoPositionWatcher.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Start(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start (suppressPermissionPrompt As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(bool suppressPermissionPrompt);" />
+      <MemberSignature Language="F#" Value="abstract member Start : bool -&gt; unit" Usage="iGeoPositionWatcher.Start suppressPermissionPrompt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Device.Location.IGeoPositionWatcher`1.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As GeoPositionStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Device::Location::GeoPositionStatus Status { System::Device::Location::GeoPositionStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Device.Location.GeoPositionStatus" Usage="System.Device.Location.IGeoPositionWatcher&lt;'T&gt;.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="E:System.Device.Location.IGeoPositionWatcher`1.StatusChanged" />
       <MemberSignature Language="VB.NET" Value="Event StatusChanged As EventHandler(Of GeoPositionStatusChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Device::Location::GeoPositionStatusChangedEventArgs ^&gt; ^ StatusChanged;" />
+      <MemberSignature Language="F#" Value="member this.StatusChanged : EventHandler&lt;System.Device.Location.GeoPositionStatusChangedEventArgs&gt; " Usage="member this.StatusChanged : System.EventHandler&lt;System.Device.Location.GeoPositionStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit" Usage="iGeoPositionWatcher.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -188,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.TryStart(System.Boolean,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryStart (suppressPermissionPrompt As Boolean, timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryStart(bool suppressPermissionPrompt, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member TryStart : bool * TimeSpan -&gt; bool" Usage="iGeoPositionWatcher.TryStart (suppressPermissionPrompt, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.KoreanCalendar" />
   <TypeSignature Language="VB.NET" Value="Public Class KoreanCalendar&#xA;Inherits Calendar" />
   <TypeSignature Language="C++ CLI" Value="public ref class KoreanCalendar : System::Globalization::Calendar" />
+  <TypeSignature Language="F#" Value="type KoreanCalendar = class&#xA;    inherit Calendar" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization.Calendars</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.AddMonths(System.DateTime,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddMonths (time As DateTime, months As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime AddMonths(DateTime time, int months);" />
+      <MemberSignature Language="F#" Value="override this.AddMonths : DateTime * int -&gt; DateTime" Usage="koreanCalendar.AddMonths (time, months)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -194,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.AddYears(System.DateTime,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddYears (time As DateTime, years As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime AddYears(DateTime time, int years);" />
+      <MemberSignature Language="F#" Value="override this.AddYears : DateTime * int -&gt; DateTime" Usage="koreanCalendar.AddYears (time, years)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -269,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanCalendar.AlgorithmType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AlgorithmType As CalendarAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CalendarAlgorithmType AlgorithmType { System::Globalization::CalendarAlgorithmType get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmType : System.Globalization.CalendarAlgorithmType" Usage="System.Globalization.KoreanCalendar.AlgorithmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -314,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanCalendar.Eras" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Eras As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;int&gt; ^ Eras { cli::array &lt;int&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Eras : int[]" Usage="System.Globalization.KoreanCalendar.Eras" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -357,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetDayOfMonth(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfMonth (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDayOfMonth(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetDayOfMonth : DateTime -&gt; int" Usage="koreanCalendar.GetDayOfMonth time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -413,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetDayOfWeek(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfWeek (time As DateTime) As DayOfWeek" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DayOfWeek GetDayOfWeek(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetDayOfWeek : DateTime -&gt; DayOfWeek" Usage="koreanCalendar.GetDayOfWeek time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -485,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetDayOfYear(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfYear (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDayOfYear(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetDayOfYear : DateTime -&gt; int" Usage="koreanCalendar.GetDayOfYear time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -546,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDaysInMonth (year As Integer, month As Integer, era As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDaysInMonth(int year, int month, int era);" />
+      <MemberSignature Language="F#" Value="override this.GetDaysInMonth : int * int * int -&gt; int" Usage="koreanCalendar.GetDaysInMonth (year, month, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -619,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetDaysInYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDaysInYear (year As Integer, era As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDaysInYear(int year, int era);" />
+      <MemberSignature Language="F#" Value="override this.GetDaysInYear : int * int -&gt; int" Usage="koreanCalendar.GetDaysInYear (year, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -686,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetEra(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEra (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetEra(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetEra : DateTime -&gt; int" Usage="koreanCalendar.GetEra time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -754,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetLeapMonth(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLeapMonth (year As Integer, era As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetLeapMonth(int year, int era);" />
+      <MemberSignature Language="F#" Value="override this.GetLeapMonth : int * int -&gt; int" Usage="koreanCalendar.GetLeapMonth (year, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -806,6 +818,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetMonth(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMonth (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMonth(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetMonth : DateTime -&gt; int" Usage="koreanCalendar.GetMonth time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -866,6 +879,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMonthsInYear (year As Integer, era As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMonthsInYear(int year, int era);" />
+      <MemberSignature Language="F#" Value="override this.GetMonthsInYear : int * int -&gt; int" Usage="koreanCalendar.GetMonthsInYear (year, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -928,6 +942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetWeekOfYear (time As DateTime, rule As CalendarWeekRule, firstDayOfWeek As DayOfWeek) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetWeekOfYear(DateTime time, System::Globalization::CalendarWeekRule rule, DayOfWeek firstDayOfWeek);" />
+      <MemberSignature Language="F#" Value="override this.GetWeekOfYear : DateTime * System.Globalization.CalendarWeekRule * DayOfWeek -&gt; int" Usage="koreanCalendar.GetWeekOfYear (time, rule, firstDayOfWeek)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1005,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.GetYear(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetYear (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetYear(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetYear : DateTime -&gt; int" Usage="koreanCalendar.GetYear time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1065,6 +1081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapDay (year As Integer, month As Integer, day As Integer, era As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapDay(int year, int month, int day, int era);" />
+      <MemberSignature Language="F#" Value="override this.IsLeapDay : int * int * int * int -&gt; bool" Usage="koreanCalendar.IsLeapDay (year, month, day, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1149,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapMonth (year As Integer, month As Integer, era As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapMonth(int year, int month, int era);" />
+      <MemberSignature Language="F#" Value="override this.IsLeapMonth : int * int * int -&gt; bool" Usage="koreanCalendar.IsLeapMonth (year, month, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1225,6 +1243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.IsLeapYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapYear (year As Integer, era As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapYear(int year, int era);" />
+      <MemberSignature Language="F#" Value="override this.IsLeapYear : int * int -&gt; bool" Usage="koreanCalendar.IsLeapYear (year, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1293,6 +1312,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.KoreanCalendar.KoreanEra" />
       <MemberSignature Language="VB.NET" Value="Public Const KoreanEra As Integer  = 1" />
       <MemberSignature Language="C++ CLI" Value="public: int KoreanEra = 1;" />
+      <MemberSignature Language="F#" Value="val mutable KoreanEra : int" Usage="System.Globalization.KoreanCalendar.KoreanEra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1332,6 +1352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanCalendar.MaxSupportedDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxSupportedDateTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MaxSupportedDateTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxSupportedDateTime : DateTime" Usage="System.Globalization.KoreanCalendar.MaxSupportedDateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1382,6 +1403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanCalendar.MinSupportedDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinSupportedDateTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MinSupportedDateTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinSupportedDateTime : DateTime" Usage="System.Globalization.KoreanCalendar.MinSupportedDateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1432,6 +1454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToDateTime (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer, era As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime ToDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, int era);" />
+      <MemberSignature Language="F#" Value="override this.ToDateTime : int * int * int * int * int * int * int * int -&gt; DateTime" Usage="koreanCalendar.ToDateTime (year, month, day, hour, minute, second, millisecond, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1520,6 +1543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanCalendar.ToFourDigitYear(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToFourDigitYear (year As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ToFourDigitYear(int year);" />
+      <MemberSignature Language="F#" Value="override this.ToFourDigitYear : int -&gt; int" Usage="koreanCalendar.ToFourDigitYear year" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1570,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanCalendar.TwoDigitYearMax" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property TwoDigitYearMax As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TwoDigitYearMax { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TwoDigitYearMax : int with get, set" Usage="System.Globalization.KoreanCalendar.TwoDigitYearMax" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>

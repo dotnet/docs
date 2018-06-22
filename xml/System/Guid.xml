@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Guid" />
   <TypeSignature Language="VB.NET" Value="Public Structure Guid&#xA;Implements IComparable, IComparable(Of Guid), IEquatable(Of Guid), IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Guid : IComparable, IComparable&lt;Guid&gt;, IEquatable&lt;Guid&gt;, IFormattable" />
+  <TypeSignature Language="F#" Value="type Guid = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (b As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid(cli::array &lt;System::Byte&gt; ^ b);" />
+      <MemberSignature Language="F#" Value="new Guid : byte[] -&gt; Guid" Usage="new System.Guid b" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.#ctor(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (b As ReadOnlySpan(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid(ReadOnlySpan&lt;System::Byte&gt; b);" />
+      <MemberSignature Language="F#" Value="new Guid : ReadOnlySpan&lt;byte&gt; -&gt; Guid" Usage="new System.Guid b" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (g As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid(System::String ^ g);" />
+      <MemberSignature Language="F#" Value="new Guid : string -&gt; Guid" Usage="new System.Guid g" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -235,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (a As Integer, b As Short, c As Short, d As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid(int a, short b, short c, cli::array &lt;System::Byte&gt; ^ d);" />
+      <MemberSignature Language="F#" Value="new Guid : int * int16 * int16 * byte[] -&gt; Guid" Usage="new System.Guid (a, b, c, d)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -286,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (a As Integer, b As Short, c As Short, d As Byte, e As Byte, f As Byte, g As Byte, h As Byte, i As Byte, j As Byte, k As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid(int a, short b, short c, System::Byte d, System::Byte e, System::Byte f, System::Byte g, System::Byte h, System::Byte i, System::Byte j, System::Byte k);" />
+      <MemberSignature Language="F#" Value="new Guid : int * int16 * int16 * byte * byte * byte * byte * byte * byte * byte * byte -&gt; Guid" Usage="new System.Guid (a, b, c, d, e, f, g, h, i, j, k)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -355,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.#ctor(System.UInt32,System.UInt16,System.UInt16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (a As UInteger, b As UShort, c As UShort, d As Byte, e As Byte, f As Byte, g As Byte, h As Byte, i As Byte, j As Byte, k As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid(System::UInt32 a, System::UInt16 b, System::UInt16 c, System::Byte d, System::Byte e, System::Byte f, System::Byte g, System::Byte h, System::Byte i, System::Byte j, System::Byte k);" />
+      <MemberSignature Language="F#" Value="new Guid : uint32 * uint16 * uint16 * byte * byte * byte * byte * byte * byte * byte * byte -&gt; Guid" Usage="new System.Guid (a, b, c, d, e, f, g, h, i, j, k)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -437,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.CompareTo(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Guid) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(Guid value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : Guid -&gt; int&#xA;override this.CompareTo : Guid -&gt; int" Usage="guid.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -525,6 +533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="guid.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -611,6 +620,7 @@
       <MemberSignature Language="DocId" Value="F:System.Guid.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : Guid" Usage="System.Guid.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -667,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.Equals(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (g As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(Guid g);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Guid -&gt; bool" Usage="guid.Equals g" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -720,6 +731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="guid.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -766,6 +778,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="guid.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -801,6 +814,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.NewGuid" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NewGuid () As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid NewGuid();" />
+      <MemberSignature Language="F#" Value="static member NewGuid : unit -&gt; Guid" Usage="System.Guid.NewGuid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -851,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.op_Equality(System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As Guid, b As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Guid a, Guid b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Guid * Guid -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -902,6 +917,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.op_Inequality(System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As Guid, b As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Guid a, Guid b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Guid * Guid -&gt; bool" Usage="System.Guid.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -945,6 +961,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.Parse(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As ReadOnlySpan(Of Char)) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid Parse(ReadOnlySpan&lt;char&gt; input);" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; -&gt; Guid" Usage="System.Guid.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -969,6 +986,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid Parse(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; Guid" Usage="System.Guid.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1048,6 +1066,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.ParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseExact (input As ReadOnlySpan(Of Char), format As ReadOnlySpan(Of Char)) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid ParseExact(ReadOnlySpan&lt;char&gt; input, ReadOnlySpan&lt;char&gt; format);" />
+      <MemberSignature Language="F#" Value="static member ParseExact : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; -&gt; Guid" Usage="System.Guid.ParseExact (input, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1074,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.ParseExact(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseExact (input As String, format As String) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid ParseExact(System::String ^ input, System::String ^ format);" />
+      <MemberSignature Language="F#" Value="static member ParseExact : string * string -&gt; Guid" Usage="System.Guid.ParseExact (input, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1204,6 +1224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.ToByteArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToByteArray () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ToByteArray();" />
+      <MemberSignature Language="F#" Value="member this.ToByteArray : unit -&gt; byte[]" Usage="guid.ToByteArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1269,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="guid.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1315,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="guid.ToString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1371,6 +1394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="guid.ToString (format, provider)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
@@ -1436,6 +1460,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFormat(valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten, valuetype System.ReadOnlySpan`1&lt;char&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Guid.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFormat (destination As Span(Of Char), ByRef charsWritten As Integer, Optional format As ReadOnlySpan(Of Char) = null) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryFormat : Span&lt;char&gt; *  * ReadOnlySpan&lt;char&gt; -&gt; bool" Usage="guid.TryFormat (destination, charsWritten, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1464,6 +1489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.TryParse(System.ReadOnlySpan{System.Char},System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As ReadOnlySpan(Of Char), ByRef result As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; input, [Runtime::InteropServices::Out] Guid % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="System.Guid.TryParse (input, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1490,6 +1516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.TryParse(System.String,System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef result As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] Guid % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Guid.TryParse (input, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1555,6 +1582,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.TryParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseExact (input As ReadOnlySpan(Of Char), format As ReadOnlySpan(Of Char), ByRef result As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseExact(ReadOnlySpan&lt;char&gt; input, ReadOnlySpan&lt;char&gt; format, [Runtime::InteropServices::Out] Guid % result);" />
+      <MemberSignature Language="F#" Value="static member TryParseExact : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="System.Guid.TryParseExact (input, format, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1583,6 +1611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.TryParseExact(System.String,System.String,System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseExact (input As String, format As String, ByRef result As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseExact(System::String ^ input, System::String ^ format, [Runtime::InteropServices::Out] Guid % result);" />
+      <MemberSignature Language="F#" Value="static member TryParseExact : string * string *  -&gt; bool" Usage="System.Guid.TryParseExact (input, format, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1652,6 +1681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Guid.TryWriteBytes(System.Span{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Function TryWriteBytes (destination As Span(Of Byte)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryWriteBytes(Span&lt;System::Byte&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.TryWriteBytes : Span&lt;byte&gt; -&gt; bool" Usage="guid.TryWriteBytes destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

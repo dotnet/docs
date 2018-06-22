@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BatchedJoinBlock(Of T1, T2)&#xA;Implements IReceivableSourceBlock(Of Tuple(Of IList(Of T1), IList(Of T2))), ISourceBlock(Of Tuple(Of IList(Of T1), IList(Of T2)))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1, typename T2&gt;&#xA;public ref class BatchedJoinBlock sealed : System::Threading::Tasks::Dataflow::IReceivableSourceBlock&lt;Tuple&lt;System::Collections::Generic::IList&lt;T1&gt; ^, System::Collections::Generic::IList&lt;T2&gt; ^&gt; ^&gt;, System::Threading::Tasks::Dataflow::ISourceBlock&lt;Tuple&lt;System::Collections::Generic::IList&lt;T1&gt; ^, System::Collections::Generic::IList&lt;T2&gt; ^&gt; ^&gt;" />
+  <TypeSignature Language="F#" Value="type BatchedJoinBlock&lt;'T1, 'T2&gt; = class&#xA;    interface IDataflowBlock&#xA;    interface IReceivableSourceBlock&lt;IList&lt;'T1&gt; * IList&lt;'T2&gt;&gt;&#xA;    interface ISourceBlock&lt;IList&lt;'T1&gt; * IList&lt;'T2&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (batchSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BatchedJoinBlock(int batchSize);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt; : int -&gt; System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt;" Usage="new System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt; batchSize" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.#ctor(System.Int32,System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (batchSize As Integer, dataflowBlockOptions As GroupingDataflowBlockOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BatchedJoinBlock(int batchSize, System::Threading::Tasks::Dataflow::GroupingDataflowBlockOptions ^ dataflowBlockOptions);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt; : int * System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions -&gt; System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt;" Usage="new System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt; (batchSize, dataflowBlockOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.BatchSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BatchSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BatchSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BatchSize : int" Usage="System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt;.BatchSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Complete();" />
+      <MemberSignature Language="F#" Value="abstract member Complete : unit -&gt; unit&#xA;override this.Complete : unit -&gt; unit" Usage="batchedJoinBlock.Complete " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.IDataflowBlock.Complete</InterfaceMember>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.Completion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Completion As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task ^ Completion { System::Threading::Tasks::Task ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Completion : System.Threading.Tasks.Task" Usage="System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt;.Completion" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion</InterfaceMember>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}},System.Threading.Tasks.Dataflow.DataflowLinkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function LinkTo (target As ITargetBlock(Of Tuple(Of IList(Of T1), IList(Of T2))), linkOptions As DataflowLinkOptions) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ LinkTo(System::Threading::Tasks::Dataflow::ITargetBlock&lt;Tuple&lt;System::Collections::Generic::IList&lt;T1&gt; ^, System::Collections::Generic::IList&lt;T2&gt; ^&gt; ^&gt; ^ target, System::Threading::Tasks::Dataflow::DataflowLinkOptions ^ linkOptions);" />
+      <MemberSignature Language="F#" Value="abstract member LinkTo : System.Threading.Tasks.Dataflow.ITargetBlock&lt;System.Collections.Generic.IList&lt;'T1&gt; * System.Collections.Generic.IList&lt;'T2&gt;&gt; * System.Threading.Tasks.Dataflow.DataflowLinkOptions -&gt; IDisposable&#xA;override this.LinkTo : System.Threading.Tasks.Dataflow.ITargetBlock&lt;System.Collections.Generic.IList&lt;'T1&gt; * System.Collections.Generic.IList&lt;'T2&gt;&gt; * System.Threading.Tasks.Dataflow.DataflowLinkOptions -&gt; IDisposable" Usage="batchedJoinBlock.LinkTo (target, linkOptions)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)</InterfaceMember>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.OutputCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OutputCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputCount : int" Usage="System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt;.OutputCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -369,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.Target1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target1 As ITargetBlock(Of T1)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Dataflow::ITargetBlock&lt;T1&gt; ^ Target1 { System::Threading::Tasks::Dataflow::ITargetBlock&lt;T1&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target1 : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'T1&gt;" Usage="System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt;.Target1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -392,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.Target2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target2 As ITargetBlock(Of T2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Dataflow::ITargetBlock&lt;T2&gt; ^ Target2 { System::Threading::Tasks::Dataflow::ITargetBlock&lt;T2&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target2 : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'T2&gt;" Usage="System.Threading.Tasks.Dataflow.BatchedJoinBlock&lt;'T1, 'T2&gt;.Target2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -415,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="batchedJoinBlock.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -446,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.TryReceive(System.Predicate{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}},System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReceive (filter As Predicate(Of Tuple(Of IList(Of T1), IList(Of T2))), ByRef item As Tuple(Of IList(Of T1), IList(Of T2))) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryReceive(Predicate&lt;Tuple&lt;System::Collections::Generic::IList&lt;T1&gt; ^, System::Collections::Generic::IList&lt;T2&gt; ^&gt; ^&gt; ^ filter, [Runtime::InteropServices::Out] Tuple&lt;System::Collections::Generic::IList&lt;T1&gt; ^, System::Collections::Generic::IList&lt;T2&gt; ^&gt; ^ % item);" />
+      <MemberSignature Language="F#" Value="abstract member TryReceive : Predicate&lt;System.Collections.Generic.IList&lt;'T1&gt; * System.Collections.Generic.IList&lt;'T2&gt;&gt; *  -&gt; bool&#xA;override this.TryReceive : Predicate&lt;System.Collections.Generic.IList&lt;'T1&gt; * System.Collections.Generic.IList&lt;'T2&gt;&gt; *  -&gt; bool" Usage="batchedJoinBlock.TryReceive (filter, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -485,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.TryReceiveAll(System.Collections.Generic.IList{System.Tuple{System.Collections.Generic.IList{`0},System.Collections.Generic.IList{`1}}}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReceiveAll (ByRef items As IList(Of Tuple(Of IList(Of T1), IList(Of T2)))) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryReceiveAll([Runtime::InteropServices::Out] System::Collections::Generic::IList&lt;Tuple&lt;System::Collections::Generic::IList&lt;T1&gt; ^, System::Collections::Generic::IList&lt;T2&gt; ^&gt; ^&gt; ^ % items);" />
+      <MemberSignature Language="F#" Value="abstract member TryReceiveAll :  -&gt; bool&#xA;override this.TryReceiveAll :  -&gt; bool" Usage="batchedJoinBlock.TryReceiveAll items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

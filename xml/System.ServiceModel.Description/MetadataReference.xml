@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataReference" />
   <TypeSignature Language="VB.NET" Value="Public Class MetadataReference&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataReference : System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type MetadataReference = class&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataReference.#ctor(System.ServiceModel.EndpointAddress,System.ServiceModel.Channels.AddressingVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress, addressVersion As AddressingVersion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataReference(System::ServiceModel::EndpointAddress ^ address, System::ServiceModel::Channels::AddressingVersion ^ addressVersion);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.MetadataReference : System.ServiceModel.EndpointAddress * System.ServiceModel.Channels.AddressingVersion -&gt; System.ServiceModel.Description.MetadataReference" Usage="new System.ServiceModel.Description.MetadataReference (address, addressVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataReference.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ Address { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Description.MetadataReference.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataReference.AddressVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property AddressVersion As AddressingVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::AddressingVersion ^ AddressVersion { System::ServiceModel::Channels::AddressingVersion ^ get(); void set(System::ServiceModel::Channels::AddressingVersion ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AddressVersion : System.ServiceModel.Channels.AddressingVersion with get, set" Usage="System.ServiceModel.Description.MetadataReference.AddressVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

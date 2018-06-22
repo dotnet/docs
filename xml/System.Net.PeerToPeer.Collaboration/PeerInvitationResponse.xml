@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerInvitationResponse" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerInvitationResponse" />
+  <TypeSignature Language="F#" Value="type PeerInvitationResponse = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse.PeerInvitationResponseType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerInvitationResponseType As PeerInvitationResponseType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerInvitationResponseType PeerInvitationResponseType { System::Net::PeerToPeer::Collaboration::PeerInvitationResponseType get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerInvitationResponseType : System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" Usage="System.Net.PeerToPeer.Collaboration.PeerInvitationResponse.PeerInvitationResponseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

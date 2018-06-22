@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceSwitch" />
   <TypeSignature Language="VB.NET" Value="Public Class TraceSwitch&#xA;Inherits Switch" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraceSwitch : System::Diagnostics::Switch" />
+  <TypeSignature Language="F#" Value="type TraceSwitch = class&#xA;    inherit Switch" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSwitch.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceSwitch(System::String ^ displayName, System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TraceSwitch : string * string -&gt; System.Diagnostics.TraceSwitch" Usage="new System.Diagnostics.TraceSwitch (displayName, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -191,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSwitch.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, description As String, defaultSwitchValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceSwitch(System::String ^ displayName, System::String ^ description, System::String ^ defaultSwitchValue);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TraceSwitch : string * string * string -&gt; System.Diagnostics.TraceSwitch" Usage="new System.Diagnostics.TraceSwitch (displayName, description, defaultSwitchValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -233,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSwitch.Level" />
       <MemberSignature Language="VB.NET" Value="Public Property Level As TraceLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::TraceLevel Level { System::Diagnostics::TraceLevel get(); void set(System::Diagnostics::TraceLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Diagnostics.TraceLevel with get, set" Usage="System.Diagnostics.TraceSwitch.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -308,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSwitch.OnSwitchSettingChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSwitchSettingChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSwitchSettingChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnSwitchSettingChanged : unit -&gt; unit" Usage="traceSwitch.OnSwitchSettingChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -352,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSwitch.OnValueChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValueChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValueChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnValueChanged : unit -&gt; unit" Usage="traceSwitch.OnValueChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -393,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSwitch.TraceError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TraceError { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TraceError : bool" Usage="System.Diagnostics.TraceSwitch.TraceError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -446,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSwitch.TraceInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TraceInfo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TraceInfo : bool" Usage="System.Diagnostics.TraceSwitch.TraceInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -499,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSwitch.TraceVerbose" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceVerbose As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TraceVerbose { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TraceVerbose : bool" Usage="System.Diagnostics.TraceSwitch.TraceVerbose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -552,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSwitch.TraceWarning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TraceWarning { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TraceWarning : bool" Usage="System.Diagnostics.TraceSwitch.TraceWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

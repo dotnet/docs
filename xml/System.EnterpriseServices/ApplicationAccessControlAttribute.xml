@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ApplicationAccessControlAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationAccessControlAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationAccessControlAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ApplicationAccessControlAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ApplicationAccessControlAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationAccessControlAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ApplicationAccessControlAttribute : bool -&gt; System.EnterpriseServices.ApplicationAccessControlAttribute" Usage="new System.EnterpriseServices.ApplicationAccessControlAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationAccessControlAttribute.AccessChecksLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property AccessChecksLevel As AccessChecksLevelOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::AccessChecksLevelOption AccessChecksLevel { System::EnterpriseServices::AccessChecksLevelOption get(); void set(System::EnterpriseServices::AccessChecksLevelOption value); };" />
+      <MemberSignature Language="F#" Value="member this.AccessChecksLevel : System.EnterpriseServices.AccessChecksLevelOption with get, set" Usage="System.EnterpriseServices.ApplicationAccessControlAttribute.AccessChecksLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationAccessControlAttribute.Authentication" />
       <MemberSignature Language="VB.NET" Value="Public Property Authentication As AuthenticationOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::AuthenticationOption Authentication { System::EnterpriseServices::AuthenticationOption get(); void set(System::EnterpriseServices::AuthenticationOption value); };" />
+      <MemberSignature Language="F#" Value="member this.Authentication : System.EnterpriseServices.AuthenticationOption with get, set" Usage="System.EnterpriseServices.ApplicationAccessControlAttribute.Authentication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationAccessControlAttribute.ImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ImpersonationLevel As ImpersonationLevelOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::ImpersonationLevelOption ImpersonationLevel { System::EnterpriseServices::ImpersonationLevelOption get(); void set(System::EnterpriseServices::ImpersonationLevelOption value); };" />
+      <MemberSignature Language="F#" Value="member this.ImpersonationLevel : System.EnterpriseServices.ImpersonationLevelOption with get, set" Usage="System.EnterpriseServices.ApplicationAccessControlAttribute.ImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationAccessControlAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool with get, set" Usage="System.EnterpriseServices.ApplicationAccessControlAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

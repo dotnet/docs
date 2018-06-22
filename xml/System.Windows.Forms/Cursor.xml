@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Cursor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Cursor&#xA;Implements IDisposable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Cursor sealed : IDisposable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type Cursor = class&#xA;    interface IDisposable&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.#ctor(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Cursor(IntPtr handle);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Cursor : nativeint -&gt; System.Windows.Forms.Cursor" Usage="new System.Windows.Forms.Cursor handle" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Cursor(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Cursor : System.IO.Stream -&gt; System.Windows.Forms.Cursor" Usage="new System.Windows.Forms.Cursor stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Cursor(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Cursor : string -&gt; System.Windows.Forms.Cursor" Usage="new System.Windows.Forms.Cursor fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string resource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.#ctor(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Cursor(Type ^ type, System::String ^ resource);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Cursor : Type * string -&gt; System.Windows.Forms.Cursor" Usage="new System.Windows.Forms.Cursor (type, resource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -253,6 +258,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Clip" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Clip As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Rectangle Clip { System::Drawing::Rectangle get(); void set(System::Drawing::Rectangle value); };" />
+      <MemberSignature Language="F#" Value="member this.Clip : System.Drawing.Rectangle with get, set" Usage="System.Windows.Forms.Cursor.Clip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -290,6 +296,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.CopyHandle" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyHandle () As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr CopyHandle();" />
+      <MemberSignature Language="F#" Value="member this.CopyHandle : unit -&gt; nativeint" Usage="cursor.CopyHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -321,6 +328,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Current As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ Current { System::Windows::Forms::Cursor ^ get(); void set(System::Windows::Forms::Cursor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Forms.Cursor with get, set" Usage="System.Windows.Forms.Cursor.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -350,6 +358,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="cursor.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -392,6 +401,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Draw(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Draw (g As Graphics, targetRect As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Draw(System::Drawing::Graphics ^ g, System::Drawing::Rectangle targetRect);" />
+      <MemberSignature Language="F#" Value="member this.Draw : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="cursor.Draw (g, targetRect)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -434,6 +444,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.DrawStretched(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawStretched (g As Graphics, targetRect As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawStretched(System::Drawing::Graphics ^ g, System::Drawing::Rectangle targetRect);" />
+      <MemberSignature Language="F#" Value="member this.DrawStretched : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="cursor.DrawStretched (g, targetRect)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -476,6 +487,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cursor.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -512,6 +524,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!Cursor ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="cursor.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -532,6 +545,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cursor.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -554,6 +568,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Forms.Cursor.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -592,6 +607,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Hide" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Hide ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Hide();" />
+      <MemberSignature Language="F#" Value="static member Hide : unit -&gt; unit" Usage="System.Windows.Forms.Cursor.Hide " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -630,6 +646,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.HotSpot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HotSpot As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point HotSpot { System::Drawing::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.HotSpot : System.Drawing.Point" Usage="System.Windows.Forms.Cursor.HotSpot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -657,6 +674,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.op_Equality(System.Windows.Forms.Cursor,System.Windows.Forms.Cursor)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Cursor, right As Cursor) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::Cursor ^ left, System::Windows::Forms::Cursor ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.Cursor * System.Windows.Forms.Cursor -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -696,6 +714,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.op_Inequality(System.Windows.Forms.Cursor,System.Windows.Forms.Cursor)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Cursor, right As Cursor) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::Cursor ^ left, System::Windows::Forms::Cursor ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.Cursor * System.Windows.Forms.Cursor -&gt; bool" Usage="System.Windows.Forms.Cursor.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -735,6 +754,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Position" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Position As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Point Position { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Drawing.Point with get, set" Usage="System.Windows.Forms.Cursor.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -772,6 +792,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Show" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Show ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Show();" />
+      <MemberSignature Language="F#" Value="static member Show : unit -&gt; unit" Usage="System.Windows.Forms.Cursor.Show " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -809,6 +830,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size" Usage="System.Windows.Forms.Cursor.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -869,6 +891,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.Cursor.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -903,6 +926,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cursor.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

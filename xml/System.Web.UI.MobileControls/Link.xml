@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Link" />
   <TypeSignature Language="VB.NET" Value="Public Class Link&#xA;Inherits TextControl&#xA;Implements IPostBackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class Link : System::Web::UI::MobileControls::TextControl, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type Link = class&#xA;    inherit TextControl&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Link.AddLinkedForms(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddLinkedForms (linkedForms As IList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddLinkedForms(System::Collections::IList ^ linkedForms);" />
+      <MemberSignature Language="F#" Value="override this.AddLinkedForms : System.Collections.IList -&gt; unit" Usage="link.AddLinkedForms linkedForms" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Link.NavigateUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.MobileControls.Link.NavigateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Link.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaisePostBackEvent (argument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostBackEvent(System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="member this.RaisePostBackEvent : string -&gt; unit" Usage="link.RaisePostBackEvent argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Link.SoftkeyLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property SoftkeyLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoftkeyLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoftkeyLabel : string with get, set" Usage="System.Web.UI.MobileControls.Link.SoftkeyLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

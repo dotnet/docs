@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.TtsEventId" />
   <TypeSignature Language="VB.NET" Value="Public Enum TtsEventId" />
   <TypeSignature Language="C++ CLI" Value="public enum class TtsEventId" />
+  <TypeSignature Language="F#" Value="type TtsEventId = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.AudioLevel" />
       <MemberSignature Language="VB.NET" Value="AudioLevel" />
       <MemberSignature Language="C++ CLI" Value="AudioLevel" />
+      <MemberSignature Language="F#" Value="AudioLevel = 9" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.AudioLevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -121,6 +123,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.Bookmark" />
       <MemberSignature Language="VB.NET" Value="Bookmark" />
       <MemberSignature Language="C++ CLI" Value="Bookmark" />
+      <MemberSignature Language="F#" Value="Bookmark = 4" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.Bookmark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -140,6 +143,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.EndInputStream" />
       <MemberSignature Language="VB.NET" Value="EndInputStream" />
       <MemberSignature Language="C++ CLI" Value="EndInputStream" />
+      <MemberSignature Language="F#" Value="EndInputStream = 2" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.EndInputStream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -159,6 +163,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.Phoneme" />
       <MemberSignature Language="VB.NET" Value="Phoneme" />
       <MemberSignature Language="C++ CLI" Value="Phoneme" />
+      <MemberSignature Language="F#" Value="Phoneme = 6" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.Phoneme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -178,6 +183,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.SentenceBoundary" />
       <MemberSignature Language="VB.NET" Value="SentenceBoundary" />
       <MemberSignature Language="C++ CLI" Value="SentenceBoundary" />
+      <MemberSignature Language="F#" Value="SentenceBoundary = 7" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.SentenceBoundary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -197,6 +203,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.StartInputStream" />
       <MemberSignature Language="VB.NET" Value="StartInputStream" />
       <MemberSignature Language="C++ CLI" Value="StartInputStream" />
+      <MemberSignature Language="F#" Value="StartInputStream = 1" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.StartInputStream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -216,6 +223,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.Viseme" />
       <MemberSignature Language="VB.NET" Value="Viseme" />
       <MemberSignature Language="C++ CLI" Value="Viseme" />
+      <MemberSignature Language="F#" Value="Viseme = 8" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.Viseme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -235,6 +243,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.VoiceChange" />
       <MemberSignature Language="VB.NET" Value="VoiceChange" />
       <MemberSignature Language="C++ CLI" Value="VoiceChange" />
+      <MemberSignature Language="F#" Value="VoiceChange = 3" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.VoiceChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -254,6 +263,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEventId.WordBoundary" />
       <MemberSignature Language="VB.NET" Value="WordBoundary" />
       <MemberSignature Language="C++ CLI" Value="WordBoundary" />
+      <MemberSignature Language="F#" Value="WordBoundary = 5" Usage="System.Speech.Synthesis.TtsEngine.TtsEventId.WordBoundary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

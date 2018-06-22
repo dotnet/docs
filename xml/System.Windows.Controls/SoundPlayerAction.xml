@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SoundPlayerAction" />
   <TypeSignature Language="VB.NET" Value="Public Class SoundPlayerAction&#xA;Inherits TriggerAction&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoundPlayerAction : System::Windows::TriggerAction, IDisposable" />
+  <TypeSignature Language="F#" Value="type SoundPlayerAction = class&#xA;    inherit TriggerAction&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SoundPlayerAction.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="soundPlayerAction.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SoundPlayerAction.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Controls.SoundPlayerAction.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SoundPlayerAction.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.SoundPlayerAction.SourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

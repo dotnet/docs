@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UserControl" />
   <TypeSignature Language="VB.NET" Value="Public Class UserControl&#xA;Inherits TemplateControl&#xA;Implements IAttributeAccessor, IUserControlDesignerAccessor" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserControl : System::Web::UI::TemplateControl, System::Web::UI::IAttributeAccessor, System::Web::UI::IUserControlDesignerAccessor" />
+  <TypeSignature Language="F#" Value="type UserControl = class&#xA;    inherit TemplateControl&#xA;    interface IAttributeAccessor&#xA;    interface INamingContainer&#xA;    interface IUserControlDesignerAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As HttpApplicationState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpApplicationState ^ Application { System::Web::HttpApplicationState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : System.Web.HttpApplicationState" Usage="System.Web.UI.UserControl.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AttributeCollection ^ Attributes { System::Web::UI::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Web.UI.AttributeCollection" Usage="System.Web.UI.UserControl.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Cache" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cache As Cache" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Caching::Cache ^ Cache { System::Web::Caching::Cache ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cache : System.Web.Caching.Cache" Usage="System.Web.UI.UserControl.Cache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.CachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CachePolicy As ControlCachePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ControlCachePolicy ^ CachePolicy { System::Web::UI::ControlCachePolicy ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CachePolicy : System.Web.UI.ControlCachePolicy" Usage="System.Web.UI.UserControl.CachePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -290,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.DesignerInitialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub DesignerInitialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DesignerInitialize();" />
+      <MemberSignature Language="F#" Value="member this.DesignerInitialize : unit -&gt; unit" Usage="userControl.DesignerInitialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,6 +331,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InitializeAsUserControl(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.InitializeAsUserControl(System.Web.UI.Page)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeAsUserControl(System::Web::UI::Page ^ page);" />
+      <MemberSignature Language="F#" Value="member this.InitializeAsUserControl : System.Web.UI.Page -&gt; unit" Usage="userControl.InitializeAsUserControl page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.IsPostBack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPostBack As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPostBack { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPostBack : bool" Usage="System.Web.UI.UserControl.IsPostBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -403,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="userControl.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -445,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.MapPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MapPath (virtualPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ MapPath(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="member this.MapPath : string -&gt; string" Usage="userControl.MapPath virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -485,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="userControl.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -517,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Request" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Request As HttpRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpRequest ^ Request { System::Web::HttpRequest ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Request : System.Web.HttpRequest" Usage="System.Web.UI.UserControl.Request" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Response" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As HttpResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpResponse ^ Response { System::Web::HttpResponse ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Response : System.Web.HttpResponse" Usage="System.Web.UI.UserControl.Response" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -597,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="userControl.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -635,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Server" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As HttpServerUtility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpServerUtility ^ Server { System::Web::HttpServerUtility ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Server : System.Web.HttpServerUtility" Usage="System.Web.UI.UserControl.Server" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -680,6 +695,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Session" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As HttpSessionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SessionState::HttpSessionState ^ Session { System::Web::SessionState::HttpSessionState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Session : System.Web.SessionState.HttpSessionState" Usage="System.Web.UI.UserControl.Session" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -793,6 +809,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.System#Web#UI#IUserControlDesignerAccessor#InnerText" />
       <MemberSignature Language="VB.NET" Value=" Property InnerText As String Implements IUserControlDesignerAccessor.InnerText" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.IUserControlDesignerAccessor.InnerText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.UserControl.System.Web.UI.IUserControlDesignerAccessor.InnerText" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IUserControlDesignerAccessor.InnerText</InterfaceMember>
@@ -817,6 +834,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.System#Web#UI#IUserControlDesignerAccessor#TagName" />
       <MemberSignature Language="VB.NET" Value=" Property TagName As String Implements IUserControlDesignerAccessor.TagName" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.IUserControlDesignerAccessor.TagName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.UserControl.System.Web.UI.IUserControlDesignerAccessor.TagName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IUserControlDesignerAccessor.TagName</InterfaceMember>
@@ -841,6 +859,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Trace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trace As TraceContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::TraceContext ^ Trace { System::Web::TraceContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Trace : System.Web.TraceContext" Usage="System.Web.UI.UserControl.Trace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -889,6 +908,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.TryUpdateModel``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryUpdateModel(Of TModel As Class) (model As TModel) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual bool TryUpdateModel(TModel model);" />
+      <MemberSignature Language="F#" Value="abstract member TryUpdateModel : 'Model -&gt; bool (requires 'Model : null)&#xA;override this.TryUpdateModel : 'Model -&gt; bool (requires 'Model : null)" Usage="userControl.TryUpdateModel model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -929,6 +949,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.TryUpdateModel``1(``0,System.Web.ModelBinding.IValueProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryUpdateModel(Of TModel As Class) (model As TModel, valueProvider As IValueProvider) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual bool TryUpdateModel(TModel model, System::Web::ModelBinding::IValueProvider ^ valueProvider);" />
+      <MemberSignature Language="F#" Value="abstract member TryUpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; bool (requires 'Model : null)&#xA;override this.TryUpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; bool (requires 'Model : null)" Usage="userControl.TryUpdateModel (model, valueProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -980,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.UpdateModel``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateModel(Of TModel As Class) (model As TModel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual void UpdateModel(TModel model);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateModel : 'Model -&gt; unit (requires 'Model : null)&#xA;override this.UpdateModel : 'Model -&gt; unit (requires 'Model : null)" Usage="userControl.UpdateModel model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1012,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.UpdateModel``1(``0,System.Web.ModelBinding.IValueProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateModel(Of TModel As Class) (model As TModel, valueProvider As IValueProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual void UpdateModel(TModel model, System::Web::ModelBinding::IValueProvider ^ valueProvider);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; unit (requires 'Model : null)&#xA;override this.UpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; unit (requires 'Model : null)" Usage="userControl.UpdateModel (model, valueProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

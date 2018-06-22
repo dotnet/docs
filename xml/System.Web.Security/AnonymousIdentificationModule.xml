@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AnonymousIdentificationModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnonymousIdentificationModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnonymousIdentificationModule sealed : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type AnonymousIdentificationModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AnonymousIdentificationModule.ClearAnonymousIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearAnonymousIdentifier ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearAnonymousIdentifier();" />
+      <MemberSignature Language="F#" Value="static member ClearAnonymousIdentifier : unit -&gt; unit" Usage="System.Web.Security.AnonymousIdentificationModule.ClearAnonymousIdentifier " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Security.AnonymousIdentificationModule.Creating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Creating As AnonymousIdentificationEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Security::AnonymousIdentificationEventHandler ^ Creating;" />
+      <MemberSignature Language="F#" Value="member this.Creating : System.Web.Security.AnonymousIdentificationEventHandler " Usage="member this.Creating : System.Web.Security.AnonymousIdentificationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AnonymousIdentificationModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="anonymousIdentificationModule.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.AnonymousIdentificationModule.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Enabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool" Usage="System.Web.Security.AnonymousIdentificationModule.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AnonymousIdentificationModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (app As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="anonymousIdentificationModule.Init app" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RelatedImageListAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RelatedImageListAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RelatedImageListAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type RelatedImageListAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RelatedImageListAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relatedImageList As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RelatedImageListAttribute(System::String ^ relatedImageList);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.RelatedImageListAttribute : string -&gt; System.Windows.Forms.RelatedImageListAttribute" Usage="new System.Windows.Forms.RelatedImageListAttribute relatedImageList" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RelatedImageListAttribute.RelatedImageList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedImageList As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelatedImageList { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedImageList : string" Usage="System.Windows.Forms.RelatedImageListAttribute.RelatedImageList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

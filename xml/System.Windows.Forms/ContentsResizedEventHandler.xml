@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContentsResizedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ContentsResizedEventHandler(sender As Object, e As ContentsResizedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ContentsResizedEventHandler(System::Object ^ sender, ContentsResizedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ContentsResizedEventHandler = delegate of obj * ContentsResizedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

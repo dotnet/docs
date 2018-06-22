@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.StatementCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StatementCompletedEventHandler(sender As Object, e As StatementCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StatementCompletedEventHandler(System::Object ^ sender, StatementCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StatementCompletedEventHandler = delegate of obj * StatementCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

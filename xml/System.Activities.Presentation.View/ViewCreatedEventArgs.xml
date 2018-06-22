@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ViewCreatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ViewCreatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewCreatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ViewCreatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ViewCreatedEventArgs.#ctor(System.Activities.Presentation.WorkflowViewElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (view As WorkflowViewElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewCreatedEventArgs(System::Activities::Presentation::WorkflowViewElement ^ view);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.ViewCreatedEventArgs : System.Activities.Presentation.WorkflowViewElement -&gt; System.Activities.Presentation.View.ViewCreatedEventArgs" Usage="new System.Activities.Presentation.View.ViewCreatedEventArgs view" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ViewCreatedEventArgs.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As WorkflowViewElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::WorkflowViewElement ^ View { System::Activities::Presentation::WorkflowViewElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : System.Activities.Presentation.WorkflowViewElement" Usage="System.Activities.Presentation.View.ViewCreatedEventArgs.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

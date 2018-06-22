@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SynchronizedInputPatternIdentifiers" />
   <TypeSignature Language="VB.NET" Value="Public Class SynchronizedInputPatternIdentifiers" />
   <TypeSignature Language="C++ CLI" Value="public ref class SynchronizedInputPatternIdentifiers abstract sealed" />
+  <TypeSignature Language="F#" Value="type SynchronizedInputPatternIdentifiers = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputDiscardedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputDiscardedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InputDiscardedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InputDiscardedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputDiscardedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedOtherElementEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputReachedOtherElementEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InputReachedOtherElementEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InputReachedOtherElementEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedOtherElementEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedTargetEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputReachedTargetEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InputReachedTargetEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InputReachedTargetEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedTargetEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.SynchronizedInputPatternIdentifiers.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveKeySource" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveKeySource&#xA;Inherits TaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveKeySource : Microsoft::Build::Tasks::TaskExtension" />
+  <TypeSignature Language="F#" Value="type ResolveKeySource = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.AutoClosePasswordPromptShow" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoClosePasswordPromptShow As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoClosePasswordPromptShow { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoClosePasswordPromptShow : int with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.AutoClosePasswordPromptShow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.AutoClosePasswordPromptTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoClosePasswordPromptTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoClosePasswordPromptTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoClosePasswordPromptTimeout : int with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.AutoClosePasswordPromptTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.CertificateFile" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CertificateFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateFile : string with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.CertificateFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.CertificateThumbprint" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateThumbprint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CertificateThumbprint { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateThumbprint : string with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.CertificateThumbprint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveKeySource.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="resolveKeySource.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.KeyFile" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFile : string with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.KeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.ResolvedKeyContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedKeyContainer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResolvedKeyContainer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedKeyContainer : string with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.ResolvedKeyContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -210,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.ResolvedKeyFile" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedKeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResolvedKeyFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedKeyFile : string with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.ResolvedKeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.ResolvedThumbprint" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedThumbprint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResolvedThumbprint { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedThumbprint : string with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.ResolvedThumbprint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -262,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.ShowImportDialogDespitePreviousFailures" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowImportDialogDespitePreviousFailures As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowImportDialogDespitePreviousFailures { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowImportDialogDespitePreviousFailures : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.ShowImportDialogDespitePreviousFailures" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -291,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.SuppressAutoClosePasswordPrompt" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressAutoClosePasswordPrompt As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressAutoClosePasswordPrompt { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressAutoClosePasswordPrompt : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveKeySource.SuppressAutoClosePasswordPrompt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

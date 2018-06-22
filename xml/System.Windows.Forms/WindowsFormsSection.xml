@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WindowsFormsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsFormsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type WindowsFormsSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WindowsFormsSection.JitDebugging" />
       <MemberSignature Language="VB.NET" Value="Public Property JitDebugging As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool JitDebugging { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.JitDebugging : bool with get, set" Usage="System.Windows.Forms.WindowsFormsSection.JitDebugging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WindowsFormsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Windows.Forms.WindowsFormsSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

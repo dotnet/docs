@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.FlushIntention" />
   <TypeSignature Language="VB.NET" Value="Public Enum FlushIntention" />
   <TypeSignature Language="C++ CLI" Value="public enum class FlushIntention" />
+  <TypeSignature Language="F#" Value="type FlushIntention = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.FlushIntention.Flush" />
       <MemberSignature Language="VB.NET" Value="Flush" />
       <MemberSignature Language="C++ CLI" Value="Flush" />
+      <MemberSignature Language="F#" Value="Flush = 0" Usage="System.Drawing.Drawing2D.FlushIntention.Flush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.FlushIntention.Sync" />
       <MemberSignature Language="VB.NET" Value="Sync" />
       <MemberSignature Language="C++ CLI" Value="Sync" />
+      <MemberSignature Language="F#" Value="Sync = 1" Usage="System.Drawing.Drawing2D.FlushIntention.Sync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

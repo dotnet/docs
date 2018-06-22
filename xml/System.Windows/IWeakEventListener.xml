@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.IWeakEventListener" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWeakEventListener" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWeakEventListener" />
+  <TypeSignature Language="F#" Value="type IWeakEventListener = interface" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveWeakEvent : Type * obj * EventArgs -&gt; bool" Usage="iWeakEventListener.ReceiveWeakEvent (managerType, sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

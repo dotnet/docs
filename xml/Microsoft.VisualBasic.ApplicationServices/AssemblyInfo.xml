@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class AssemblyInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyInfo" />
+  <TypeSignature Language="F#" Value="type AssemblyInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.#ctor(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (currentAssembly As Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyInfo(System::Reflection::Assembly ^ currentAssembly);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.AssemblyInfo : System.Reflection.Assembly -&gt; Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" Usage="new Microsoft.VisualBasic.ApplicationServices.AssemblyInfo currentAssembly" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.CompanyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompanyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompanyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompanyName : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.CompanyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Copyright" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Copyright As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Copyright { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Copyright : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Copyright" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.DirectoryPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectoryPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectoryPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectoryPath : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.DirectoryPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -312,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.LoadedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoadedAssemblies As ReadOnlyCollection(Of Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Reflection::Assembly ^&gt; ^ LoadedAssemblies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Reflection::Assembly ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoadedAssemblies : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Reflection.Assembly&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.LoadedAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -365,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.ProductName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProductName : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.ProductName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -415,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.StackTrace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StackTrace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StackTrace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StackTrace : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.StackTrace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -483,6 +493,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Title" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -533,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Trademark" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trademark As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Trademark { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Trademark : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Trademark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -583,6 +595,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -637,6 +650,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.WorkingSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkingSet As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long WorkingSet { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkingSet : int64" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.WorkingSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

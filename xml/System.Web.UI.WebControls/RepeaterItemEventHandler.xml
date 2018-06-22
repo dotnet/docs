@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RepeaterItemEventHandler(sender As Object, e As RepeaterItemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RepeaterItemEventHandler(System::Object ^ sender, RepeaterItemEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type RepeaterItemEventHandler = delegate of obj * RepeaterItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownClosingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripDropDownClosingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripDropDownClosingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ToolStripDropDownClosingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownClosingEventArgs.#ctor(System.Windows.Forms.ToolStripDropDownCloseReason)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As ToolStripDropDownCloseReason)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownClosingEventArgs(System::Windows::Forms::ToolStripDropDownCloseReason reason);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDownClosingEventArgs : System.Windows.Forms.ToolStripDropDownCloseReason -&gt; System.Windows.Forms.ToolStripDropDownClosingEventArgs" Usage="new System.Windows.Forms.ToolStripDropDownClosingEventArgs reason" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripDropDownClosingEventArgs.CloseReason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CloseReason As ToolStripDropDownCloseReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripDropDownCloseReason CloseReason { System::Windows::Forms::ToolStripDropDownCloseReason get(); };" />
+      <MemberSignature Language="F#" Value="member this.CloseReason : System.Windows.Forms.ToolStripDropDownCloseReason" Usage="System.Windows.Forms.ToolStripDropDownClosingEventArgs.CloseReason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

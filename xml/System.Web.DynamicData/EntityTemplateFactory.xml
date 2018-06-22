@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.EntityTemplateFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityTemplateFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityTemplateFactory" />
+  <TypeSignature Language="F#" Value="type EntityTemplateFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.BuildEntityTemplateVirtualPath(System.String,System.Web.UI.WebControls.DataBoundControlMode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildEntityTemplateVirtualPath (templateName As String, mode As DataBoundControlMode) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ BuildEntityTemplateVirtualPath(System::String ^ templateName, System::Web::UI::WebControls::DataBoundControlMode mode);" />
+      <MemberSignature Language="F#" Value="abstract member BuildEntityTemplateVirtualPath : string * System.Web.UI.WebControls.DataBoundControlMode -&gt; string&#xA;override this.BuildEntityTemplateVirtualPath : string * System.Web.UI.WebControls.DataBoundControlMode -&gt; string" Usage="entityTemplateFactory.BuildEntityTemplateVirtualPath (templateName, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.CreateEntityTemplate(System.Web.DynamicData.MetaTable,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateEntityTemplate (table As MetaTable, mode As DataBoundControlMode, uiHint As String) As EntityTemplateUserControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::DynamicData::EntityTemplateUserControl ^ CreateEntityTemplate(System::Web::DynamicData::MetaTable ^ table, System::Web::UI::WebControls::DataBoundControlMode mode, System::String ^ uiHint);" />
+      <MemberSignature Language="F#" Value="abstract member CreateEntityTemplate : System.Web.DynamicData.MetaTable * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; System.Web.DynamicData.EntityTemplateUserControl&#xA;override this.CreateEntityTemplate : System.Web.DynamicData.MetaTable * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; System.Web.DynamicData.EntityTemplateUserControl" Usage="entityTemplateFactory.CreateEntityTemplate (table, mode, uiHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.GetEntityTemplateVirtualPath(System.Web.DynamicData.MetaTable,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityTemplateVirtualPath (table As MetaTable, mode As DataBoundControlMode, uiHint As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetEntityTemplateVirtualPath(System::Web::DynamicData::MetaTable ^ table, System::Web::UI::WebControls::DataBoundControlMode mode, System::String ^ uiHint);" />
+      <MemberSignature Language="F#" Value="abstract member GetEntityTemplateVirtualPath : System.Web.DynamicData.MetaTable * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; string&#xA;override this.GetEntityTemplateVirtualPath : System.Web.DynamicData.MetaTable * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; string" Usage="entityTemplateFactory.GetEntityTemplateVirtualPath (table, mode, uiHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

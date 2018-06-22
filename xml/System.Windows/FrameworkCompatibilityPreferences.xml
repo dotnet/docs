@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkCompatibilityPreferences" />
   <TypeSignature Language="VB.NET" Value="Public Class FrameworkCompatibilityPreferences" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkCompatibilityPreferences abstract sealed" />
+  <TypeSignature Language="F#" Value="type FrameworkCompatibilityPreferences = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property AreInactiveSelectionHighlightBrushKeysSupported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AreInactiveSelectionHighlightBrushKeysSupported { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AreInactiveSelectionHighlightBrushKeysSupported : bool with get, set" Usage="System.Windows.FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property KeepTextBoxDisplaySynchronizedWithTextProperty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool KeepTextBoxDisplaySynchronizedWithTextProperty { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepTextBoxDisplaySynchronizedWithTextProperty : bool with get, set" Usage="System.Windows.FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.ShouldThrowOnCopyOrCutFailure" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ShouldThrowOnCopyOrCutFailure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ShouldThrowOnCopyOrCutFailure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldThrowOnCopyOrCutFailure : bool with get, set" Usage="System.Windows.FrameworkCompatibilityPreferences.ShouldThrowOnCopyOrCutFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

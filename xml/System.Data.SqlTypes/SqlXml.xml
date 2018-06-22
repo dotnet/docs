@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlXml" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlXml&#xA;Implements INullable, IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlXml sealed : System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type SqlXml = class&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlXml.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlXml(System::IO::Stream ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlXml : System.IO.Stream -&gt; System.Data.SqlTypes.SqlXml" Usage="new System.Data.SqlTypes.SqlXml value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlXml.#ctor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlXml(System::Xml::XmlReader ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlXml : System.Xml.XmlReader -&gt; System.Data.SqlTypes.SqlXml" Usage="new System.Data.SqlTypes.SqlXml value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -171,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlXml.CreateReader" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateReader () As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ CreateReader();" />
+      <MemberSignature Language="F#" Value="member this.CreateReader : unit -&gt; System.Xml.XmlReader" Usage="sqlXml.CreateReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlXml.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlXml.GetXsdType schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -248,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlXml.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlXml.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -286,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlXml.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Null As SqlXml" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::SqlTypes::SqlXml ^ Null { System::Data::SqlTypes::SqlXml ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Null : System.Data.SqlTypes.SqlXml" Usage="System.Data.SqlTypes.SqlXml.Null" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -447,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlXml.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Data.SqlTypes.SqlXml.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

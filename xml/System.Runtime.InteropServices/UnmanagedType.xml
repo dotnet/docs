@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UnmanagedType" />
   <TypeSignature Language="VB.NET" Value="Public Enum UnmanagedType" />
   <TypeSignature Language="C++ CLI" Value="public enum class UnmanagedType" />
+  <TypeSignature Language="F#" Value="type UnmanagedType = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.AnsiBStr" />
       <MemberSignature Language="VB.NET" Value="AnsiBStr" />
       <MemberSignature Language="C++ CLI" Value="AnsiBStr" />
+      <MemberSignature Language="F#" Value="AnsiBStr = 35" Usage="System.Runtime.InteropServices.UnmanagedType.AnsiBStr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.AsAny" />
       <MemberSignature Language="VB.NET" Value="AsAny" />
       <MemberSignature Language="C++ CLI" Value="AsAny" />
+      <MemberSignature Language="F#" Value="AsAny = 40" Usage="System.Runtime.InteropServices.UnmanagedType.AsAny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.Bool" />
       <MemberSignature Language="VB.NET" Value="Bool" />
       <MemberSignature Language="C++ CLI" Value="Bool" />
+      <MemberSignature Language="F#" Value="Bool = 2" Usage="System.Runtime.InteropServices.UnmanagedType.Bool" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.BStr" />
       <MemberSignature Language="VB.NET" Value="BStr" />
       <MemberSignature Language="C++ CLI" Value="BStr" />
+      <MemberSignature Language="F#" Value="BStr = 19" Usage="System.Runtime.InteropServices.UnmanagedType.BStr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.ByValArray" />
       <MemberSignature Language="VB.NET" Value="ByValArray" />
       <MemberSignature Language="C++ CLI" Value="ByValArray" />
+      <MemberSignature Language="F#" Value="ByValArray = 30" Usage="System.Runtime.InteropServices.UnmanagedType.ByValArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.ByValTStr" />
       <MemberSignature Language="VB.NET" Value="ByValTStr" />
       <MemberSignature Language="C++ CLI" Value="ByValTStr" />
+      <MemberSignature Language="F#" Value="ByValTStr = 23" Usage="System.Runtime.InteropServices.UnmanagedType.ByValTStr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.Currency" />
       <MemberSignature Language="VB.NET" Value="Currency" />
       <MemberSignature Language="C++ CLI" Value="Currency" />
+      <MemberSignature Language="F#" Value="Currency = 15" Usage="System.Runtime.InteropServices.UnmanagedType.Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.CustomMarshaler" />
       <MemberSignature Language="VB.NET" Value="CustomMarshaler" />
       <MemberSignature Language="C++ CLI" Value="CustomMarshaler" />
+      <MemberSignature Language="F#" Value="CustomMarshaler = 44" Usage="System.Runtime.InteropServices.UnmanagedType.CustomMarshaler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -337,6 +346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 45" Usage="System.Runtime.InteropServices.UnmanagedType.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.FunctionPtr" />
       <MemberSignature Language="VB.NET" Value="FunctionPtr" />
       <MemberSignature Language="C++ CLI" Value="FunctionPtr" />
+      <MemberSignature Language="F#" Value="FunctionPtr = 38" Usage="System.Runtime.InteropServices.UnmanagedType.FunctionPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -405,6 +416,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.HString" />
       <MemberSignature Language="VB.NET" Value="HString" />
       <MemberSignature Language="C++ CLI" Value="HString" />
+      <MemberSignature Language="F#" Value="HString = 47" Usage="System.Runtime.InteropServices.UnmanagedType.HString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -444,6 +456,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.I1" />
       <MemberSignature Language="VB.NET" Value="I1" />
       <MemberSignature Language="C++ CLI" Value="I1" />
+      <MemberSignature Language="F#" Value="I1 = 3" Usage="System.Runtime.InteropServices.UnmanagedType.I1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -478,6 +491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.I2" />
       <MemberSignature Language="VB.NET" Value="I2" />
       <MemberSignature Language="C++ CLI" Value="I2" />
+      <MemberSignature Language="F#" Value="I2 = 5" Usage="System.Runtime.InteropServices.UnmanagedType.I2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -512,6 +526,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.I4" />
       <MemberSignature Language="VB.NET" Value="I4" />
       <MemberSignature Language="C++ CLI" Value="I4" />
+      <MemberSignature Language="F#" Value="I4 = 7" Usage="System.Runtime.InteropServices.UnmanagedType.I4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -546,6 +561,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.I8" />
       <MemberSignature Language="VB.NET" Value="I8" />
       <MemberSignature Language="C++ CLI" Value="I8" />
+      <MemberSignature Language="F#" Value="I8 = 9" Usage="System.Runtime.InteropServices.UnmanagedType.I8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -580,6 +596,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.IDispatch" />
       <MemberSignature Language="VB.NET" Value="IDispatch" />
       <MemberSignature Language="C++ CLI" Value="IDispatch" />
+      <MemberSignature Language="F#" Value="IDispatch = 26" Usage="System.Runtime.InteropServices.UnmanagedType.IDispatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -614,6 +631,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.IInspectable" />
       <MemberSignature Language="VB.NET" Value="IInspectable" />
       <MemberSignature Language="C++ CLI" Value="IInspectable" />
+      <MemberSignature Language="F#" Value="IInspectable = 46" Usage="System.Runtime.InteropServices.UnmanagedType.IInspectable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -653,6 +671,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.Interface" />
       <MemberSignature Language="VB.NET" Value="Interface" />
       <MemberSignature Language="C++ CLI" Value="Interface" />
+      <MemberSignature Language="F#" Value="Interface = 28" Usage="System.Runtime.InteropServices.UnmanagedType.Interface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -687,6 +706,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.IUnknown" />
       <MemberSignature Language="VB.NET" Value="IUnknown" />
       <MemberSignature Language="C++ CLI" Value="IUnknown" />
+      <MemberSignature Language="F#" Value="IUnknown = 25" Usage="System.Runtime.InteropServices.UnmanagedType.IUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -721,6 +741,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.LPArray" />
       <MemberSignature Language="VB.NET" Value="LPArray" />
       <MemberSignature Language="C++ CLI" Value="LPArray" />
+      <MemberSignature Language="F#" Value="LPArray = 42" Usage="System.Runtime.InteropServices.UnmanagedType.LPArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -755,6 +776,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.LPStr" />
       <MemberSignature Language="VB.NET" Value="LPStr" />
       <MemberSignature Language="C++ CLI" Value="LPStr" />
+      <MemberSignature Language="F#" Value="LPStr = 20" Usage="System.Runtime.InteropServices.UnmanagedType.LPStr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -789,6 +811,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.LPStruct" />
       <MemberSignature Language="VB.NET" Value="LPStruct" />
       <MemberSignature Language="C++ CLI" Value="LPStruct" />
+      <MemberSignature Language="F#" Value="LPStruct = 43" Usage="System.Runtime.InteropServices.UnmanagedType.LPStruct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -823,6 +846,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.LPTStr" />
       <MemberSignature Language="VB.NET" Value="LPTStr" />
       <MemberSignature Language="C++ CLI" Value="LPTStr" />
+      <MemberSignature Language="F#" Value="LPTStr = 22" Usage="System.Runtime.InteropServices.UnmanagedType.LPTStr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -857,6 +881,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.LPUTF8Str" />
       <MemberSignature Language="VB.NET" Value="LPUTF8Str" />
       <MemberSignature Language="C++ CLI" Value="LPUTF8Str" />
+      <MemberSignature Language="F#" Value="LPUTF8Str = 48" Usage="System.Runtime.InteropServices.UnmanagedType.LPUTF8Str" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -887,6 +912,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.LPWStr" />
       <MemberSignature Language="VB.NET" Value="LPWStr" />
       <MemberSignature Language="C++ CLI" Value="LPWStr" />
+      <MemberSignature Language="F#" Value="LPWStr = 21" Usage="System.Runtime.InteropServices.UnmanagedType.LPWStr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -929,6 +955,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.R4" />
       <MemberSignature Language="VB.NET" Value="R4" />
       <MemberSignature Language="C++ CLI" Value="R4" />
+      <MemberSignature Language="F#" Value="R4 = 11" Usage="System.Runtime.InteropServices.UnmanagedType.R4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -963,6 +990,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.R8" />
       <MemberSignature Language="VB.NET" Value="R8" />
       <MemberSignature Language="C++ CLI" Value="R8" />
+      <MemberSignature Language="F#" Value="R8 = 12" Usage="System.Runtime.InteropServices.UnmanagedType.R8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -997,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.SafeArray" />
       <MemberSignature Language="VB.NET" Value="SafeArray" />
       <MemberSignature Language="C++ CLI" Value="SafeArray" />
+      <MemberSignature Language="F#" Value="SafeArray = 29" Usage="System.Runtime.InteropServices.UnmanagedType.SafeArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1031,6 +1060,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.Struct" />
       <MemberSignature Language="VB.NET" Value="Struct" />
       <MemberSignature Language="C++ CLI" Value="Struct" />
+      <MemberSignature Language="F#" Value="Struct = 27" Usage="System.Runtime.InteropServices.UnmanagedType.Struct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1065,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.SysInt" />
       <MemberSignature Language="VB.NET" Value="SysInt" />
       <MemberSignature Language="C++ CLI" Value="SysInt" />
+      <MemberSignature Language="F#" Value="SysInt = 31" Usage="System.Runtime.InteropServices.UnmanagedType.SysInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1099,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.SysUInt" />
       <MemberSignature Language="VB.NET" Value="SysUInt" />
       <MemberSignature Language="C++ CLI" Value="SysUInt" />
+      <MemberSignature Language="F#" Value="SysUInt = 32" Usage="System.Runtime.InteropServices.UnmanagedType.SysUInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1133,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.TBStr" />
       <MemberSignature Language="VB.NET" Value="TBStr" />
       <MemberSignature Language="C++ CLI" Value="TBStr" />
+      <MemberSignature Language="F#" Value="TBStr = 36" Usage="System.Runtime.InteropServices.UnmanagedType.TBStr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1167,6 +1200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.U1" />
       <MemberSignature Language="VB.NET" Value="U1" />
       <MemberSignature Language="C++ CLI" Value="U1" />
+      <MemberSignature Language="F#" Value="U1 = 4" Usage="System.Runtime.InteropServices.UnmanagedType.U1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1201,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.U2" />
       <MemberSignature Language="VB.NET" Value="U2" />
       <MemberSignature Language="C++ CLI" Value="U2" />
+      <MemberSignature Language="F#" Value="U2 = 6" Usage="System.Runtime.InteropServices.UnmanagedType.U2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1235,6 +1270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.U4" />
       <MemberSignature Language="VB.NET" Value="U4" />
       <MemberSignature Language="C++ CLI" Value="U4" />
+      <MemberSignature Language="F#" Value="U4 = 8" Usage="System.Runtime.InteropServices.UnmanagedType.U4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1269,6 +1305,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.U8" />
       <MemberSignature Language="VB.NET" Value="U8" />
       <MemberSignature Language="C++ CLI" Value="U8" />
+      <MemberSignature Language="F#" Value="U8 = 10" Usage="System.Runtime.InteropServices.UnmanagedType.U8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1303,6 +1340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.VariantBool" />
       <MemberSignature Language="VB.NET" Value="VariantBool" />
       <MemberSignature Language="C++ CLI" Value="VariantBool" />
+      <MemberSignature Language="F#" Value="VariantBool = 37" Usage="System.Runtime.InteropServices.UnmanagedType.VariantBool" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1337,6 +1375,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.UnmanagedType.VBByRefStr" />
       <MemberSignature Language="VB.NET" Value="VBByRefStr" />
       <MemberSignature Language="C++ CLI" Value="VBByRefStr" />
+      <MemberSignature Language="F#" Value="VBByRefStr = 34" Usage="System.Runtime.InteropServices.UnmanagedType.VBByRefStr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

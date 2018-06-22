@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.WindowChrome" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowChrome&#xA;Inherits Freezable" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowChrome : System::Windows::Freezable" />
+  <TypeSignature Language="F#" Value="type WindowChrome = class&#xA;    inherit Freezable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -160,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.CaptionHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptionHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CaptionHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionHeight : double with get, set" Usage="System.Windows.Shell.WindowChrome.CaptionHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.CaptionHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CaptionHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CaptionHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CaptionHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.CaptionHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.CornerRadius" />
       <MemberSignature Language="VB.NET" Value="Public Property CornerRadius As CornerRadius" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::CornerRadius CornerRadius { System::Windows::CornerRadius get(); void set(System::Windows::CornerRadius value); };" />
+      <MemberSignature Language="F#" Value="member this.CornerRadius : System.Windows.CornerRadius with get, set" Usage="System.Windows.Shell.WindowChrome.CornerRadius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -253,6 +257,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.CornerRadiusProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CornerRadiusProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CornerRadiusProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CornerRadiusProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.CornerRadiusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -272,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="windowChrome.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -294,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.GetIsHitTestVisibleInChrome(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsHitTestVisibleInChrome (inputElement As IInputElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsHitTestVisibleInChrome(System::Windows::IInputElement ^ inputElement);" />
+      <MemberSignature Language="F#" Value="static member GetIsHitTestVisibleInChrome : System.Windows.IInputElement -&gt; bool" Usage="System.Windows.Shell.WindowChrome.GetIsHitTestVisibleInChrome inputElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -322,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.GetResizeGripDirection(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetResizeGripDirection (inputElement As IInputElement) As ResizeGripDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Shell::ResizeGripDirection GetResizeGripDirection(System::Windows::IInputElement ^ inputElement);" />
+      <MemberSignature Language="F#" Value="static member GetResizeGripDirection : System.Windows.IInputElement -&gt; System.Windows.Shell.ResizeGripDirection" Usage="System.Windows.Shell.WindowChrome.GetResizeGripDirection inputElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -349,6 +357,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Shell.WindowChrome GetWindowChrome(class System.Windows.Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.GetWindowChrome(System.Windows.Window)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Shell::WindowChrome ^ GetWindowChrome(System::Windows::Window ^ window);" />
+      <MemberSignature Language="F#" Value="static member GetWindowChrome : System.Windows.Window -&gt; System.Windows.Shell.WindowChrome" Usage="System.Windows.Shell.WindowChrome.GetWindowChrome window" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -375,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GlassFrameCompleteThickness As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Thickness GlassFrameCompleteThickness { System::Windows::Thickness get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlassFrameCompleteThickness : System.Windows.Thickness" Usage="System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -402,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.GlassFrameThickness" />
       <MemberSignature Language="VB.NET" Value="Public Property GlassFrameThickness As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness GlassFrameThickness { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
+      <MemberSignature Language="F#" Value="member this.GlassFrameThickness : System.Windows.Thickness with get, set" Usage="System.Windows.Shell.WindowChrome.GlassFrameThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -441,6 +452,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.GlassFrameThicknessProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GlassFrameThicknessProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GlassFrameThicknessProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GlassFrameThicknessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.GlassFrameThicknessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -460,6 +472,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChromeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHitTestVisibleInChromeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsHitTestVisibleInChromeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsHitTestVisibleInChromeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.IsHitTestVisibleInChromeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -479,6 +492,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.NonClientFrameEdges" />
       <MemberSignature Language="VB.NET" Value="Public Property NonClientFrameEdges As NonClientFrameEdges" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Shell::NonClientFrameEdges NonClientFrameEdges { System::Windows::Shell::NonClientFrameEdges get(); void set(System::Windows::Shell::NonClientFrameEdges value); };" />
+      <MemberSignature Language="F#" Value="member this.NonClientFrameEdges : System.Windows.Shell.NonClientFrameEdges with get, set" Usage="System.Windows.Shell.WindowChrome.NonClientFrameEdges" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -516,6 +530,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.NonClientFrameEdgesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NonClientFrameEdgesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NonClientFrameEdgesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NonClientFrameEdgesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.NonClientFrameEdgesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -535,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.ResizeBorderThickness" />
       <MemberSignature Language="VB.NET" Value="Public Property ResizeBorderThickness As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness ResizeBorderThickness { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
+      <MemberSignature Language="F#" Value="member this.ResizeBorderThickness : System.Windows.Thickness with get, set" Usage="System.Windows.Shell.WindowChrome.ResizeBorderThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -574,6 +590,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.ResizeBorderThicknessProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResizeBorderThicknessProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ResizeBorderThicknessProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResizeBorderThicknessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.ResizeBorderThicknessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -593,6 +610,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.ResizeGripDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResizeGripDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ResizeGripDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResizeGripDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.ResizeGripDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -612,6 +630,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.SetIsHitTestVisibleInChrome(System.Windows.IInputElement,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsHitTestVisibleInChrome (inputElement As IInputElement, hitTestVisible As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsHitTestVisibleInChrome(System::Windows::IInputElement ^ inputElement, bool hitTestVisible);" />
+      <MemberSignature Language="F#" Value="static member SetIsHitTestVisibleInChrome : System.Windows.IInputElement * bool -&gt; unit" Usage="System.Windows.Shell.WindowChrome.SetIsHitTestVisibleInChrome (inputElement, hitTestVisible)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -641,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.SetResizeGripDirection(System.Windows.IInputElement,System.Windows.Shell.ResizeGripDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetResizeGripDirection (inputElement As IInputElement, direction As ResizeGripDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetResizeGripDirection(System::Windows::IInputElement ^ inputElement, System::Windows::Shell::ResizeGripDirection direction);" />
+      <MemberSignature Language="F#" Value="static member SetResizeGripDirection : System.Windows.IInputElement * System.Windows.Shell.ResizeGripDirection -&gt; unit" Usage="System.Windows.Shell.WindowChrome.SetResizeGripDirection (inputElement, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -669,6 +689,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetWindowChrome(class System.Windows.Window window, class System.Windows.Shell.WindowChrome chrome) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.SetWindowChrome(System.Windows.Window,System.Windows.Shell.WindowChrome)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetWindowChrome(System::Windows::Window ^ window, System::Windows::Shell::WindowChrome ^ chrome);" />
+      <MemberSignature Language="F#" Value="static member SetWindowChrome : System.Windows.Window * System.Windows.Shell.WindowChrome -&gt; unit" Usage="System.Windows.Shell.WindowChrome.SetWindowChrome (window, chrome)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -696,6 +717,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.UseAeroCaptionButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAeroCaptionButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAeroCaptionButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseAeroCaptionButtons : bool with get, set" Usage="System.Windows.Shell.WindowChrome.UseAeroCaptionButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -736,6 +758,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.UseAeroCaptionButtonsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UseAeroCaptionButtonsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UseAeroCaptionButtonsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UseAeroCaptionButtonsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.UseAeroCaptionButtonsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -754,6 +777,7 @@
       <MemberSignature Language="ILAsm" Value="see GetWindowChrome, and SetWindowChrome" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.WindowChrome" />
       <MemberSignature Language="VB.NET" Value="see GetWindowChrome, and SetWindowChrome" />
+      <MemberSignature Language="F#" Value="see GetWindowChrome, and SetWindowChrome" Usage="see GetWindowChrome, and SetWindowChrome" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -770,6 +794,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.WindowChromeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowChromeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WindowChromeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowChromeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shell.WindowChrome.WindowChromeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

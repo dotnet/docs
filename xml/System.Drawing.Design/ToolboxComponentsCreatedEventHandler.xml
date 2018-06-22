@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxComponentsCreatedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolboxComponentsCreatedEventHandler(sender As Object, e As ToolboxComponentsCreatedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ToolboxComponentsCreatedEventHandler(System::Object ^ sender, ToolboxComponentsCreatedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ToolboxComponentsCreatedEventHandler = delegate of obj * ToolboxComponentsCreatedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.DataAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataAttribute abstract : Attribute" />
+  <TypeSignature Language="F#" Value="type DataAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.DataAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Data.Linq.Mapping.DataAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.DataAttribute.Storage" />
       <MemberSignature Language="VB.NET" Value="Public Property Storage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Storage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Storage : string with get, set" Usage="System.Data.Linq.Mapping.DataAttribute.Storage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

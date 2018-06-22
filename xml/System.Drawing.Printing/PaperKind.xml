@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum PaperKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class PaperKind" />
+  <TypeSignature Language="F#" Value="type PaperKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A2" />
       <MemberSignature Language="VB.NET" Value="A2" />
       <MemberSignature Language="C++ CLI" Value="A2" />
+      <MemberSignature Language="F#" Value="A2 = 66" Usage="System.Drawing.Printing.PaperKind.A2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3" />
       <MemberSignature Language="VB.NET" Value="A3" />
       <MemberSignature Language="C++ CLI" Value="A3" />
+      <MemberSignature Language="F#" Value="A3 = 8" Usage="System.Drawing.Printing.PaperKind.A3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3Extra" />
       <MemberSignature Language="VB.NET" Value="A3Extra" />
       <MemberSignature Language="C++ CLI" Value="A3Extra" />
+      <MemberSignature Language="F#" Value="A3Extra = 63" Usage="System.Drawing.Printing.PaperKind.A3Extra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3ExtraTransverse" />
       <MemberSignature Language="VB.NET" Value="A3ExtraTransverse" />
       <MemberSignature Language="C++ CLI" Value="A3ExtraTransverse" />
+      <MemberSignature Language="F#" Value="A3ExtraTransverse = 68" Usage="System.Drawing.Printing.PaperKind.A3ExtraTransverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3Rotated" />
       <MemberSignature Language="VB.NET" Value="A3Rotated" />
       <MemberSignature Language="C++ CLI" Value="A3Rotated" />
+      <MemberSignature Language="F#" Value="A3Rotated = 76" Usage="System.Drawing.Printing.PaperKind.A3Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3Transverse" />
       <MemberSignature Language="VB.NET" Value="A3Transverse" />
       <MemberSignature Language="C++ CLI" Value="A3Transverse" />
+      <MemberSignature Language="F#" Value="A3Transverse = 67" Usage="System.Drawing.Printing.PaperKind.A3Transverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4" />
       <MemberSignature Language="VB.NET" Value="A4" />
       <MemberSignature Language="C++ CLI" Value="A4" />
+      <MemberSignature Language="F#" Value="A4 = 9" Usage="System.Drawing.Printing.PaperKind.A4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Extra" />
       <MemberSignature Language="VB.NET" Value="A4Extra" />
       <MemberSignature Language="C++ CLI" Value="A4Extra" />
+      <MemberSignature Language="F#" Value="A4Extra = 53" Usage="System.Drawing.Printing.PaperKind.A4Extra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -182,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Plus" />
       <MemberSignature Language="VB.NET" Value="A4Plus" />
       <MemberSignature Language="C++ CLI" Value="A4Plus" />
+      <MemberSignature Language="F#" Value="A4Plus = 60" Usage="System.Drawing.Printing.PaperKind.A4Plus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -201,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Rotated" />
       <MemberSignature Language="VB.NET" Value="A4Rotated" />
       <MemberSignature Language="C++ CLI" Value="A4Rotated" />
+      <MemberSignature Language="F#" Value="A4Rotated = 77" Usage="System.Drawing.Printing.PaperKind.A4Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -220,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Small" />
       <MemberSignature Language="VB.NET" Value="A4Small" />
       <MemberSignature Language="C++ CLI" Value="A4Small" />
+      <MemberSignature Language="F#" Value="A4Small = 10" Usage="System.Drawing.Printing.PaperKind.A4Small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -239,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Transverse" />
       <MemberSignature Language="VB.NET" Value="A4Transverse" />
       <MemberSignature Language="C++ CLI" Value="A4Transverse" />
+      <MemberSignature Language="F#" Value="A4Transverse = 55" Usage="System.Drawing.Printing.PaperKind.A4Transverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -258,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A5" />
       <MemberSignature Language="VB.NET" Value="A5" />
       <MemberSignature Language="C++ CLI" Value="A5" />
+      <MemberSignature Language="F#" Value="A5 = 11" Usage="System.Drawing.Printing.PaperKind.A5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -277,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A5Extra" />
       <MemberSignature Language="VB.NET" Value="A5Extra" />
       <MemberSignature Language="C++ CLI" Value="A5Extra" />
+      <MemberSignature Language="F#" Value="A5Extra = 64" Usage="System.Drawing.Printing.PaperKind.A5Extra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -296,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A5Rotated" />
       <MemberSignature Language="VB.NET" Value="A5Rotated" />
       <MemberSignature Language="C++ CLI" Value="A5Rotated" />
+      <MemberSignature Language="F#" Value="A5Rotated = 78" Usage="System.Drawing.Printing.PaperKind.A5Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -315,6 +331,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A5Transverse" />
       <MemberSignature Language="VB.NET" Value="A5Transverse" />
       <MemberSignature Language="C++ CLI" Value="A5Transverse" />
+      <MemberSignature Language="F#" Value="A5Transverse = 61" Usage="System.Drawing.Printing.PaperKind.A5Transverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -334,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A6" />
       <MemberSignature Language="VB.NET" Value="A6" />
       <MemberSignature Language="C++ CLI" Value="A6" />
+      <MemberSignature Language="F#" Value="A6 = 70" Usage="System.Drawing.Printing.PaperKind.A6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -353,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A6Rotated" />
       <MemberSignature Language="VB.NET" Value="A6Rotated" />
       <MemberSignature Language="C++ CLI" Value="A6Rotated" />
+      <MemberSignature Language="F#" Value="A6Rotated = 83" Usage="System.Drawing.Printing.PaperKind.A6Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -372,6 +391,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.APlus" />
       <MemberSignature Language="VB.NET" Value="APlus" />
       <MemberSignature Language="C++ CLI" Value="APlus" />
+      <MemberSignature Language="F#" Value="APlus = 57" Usage="System.Drawing.Printing.PaperKind.APlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -391,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B4" />
       <MemberSignature Language="VB.NET" Value="B4" />
       <MemberSignature Language="C++ CLI" Value="B4" />
+      <MemberSignature Language="F#" Value="B4 = 12" Usage="System.Drawing.Printing.PaperKind.B4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -410,6 +431,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B4Envelope" />
       <MemberSignature Language="VB.NET" Value="B4Envelope" />
       <MemberSignature Language="C++ CLI" Value="B4Envelope" />
+      <MemberSignature Language="F#" Value="B4Envelope = 33" Usage="System.Drawing.Printing.PaperKind.B4Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -429,6 +451,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B4JisRotated" />
       <MemberSignature Language="VB.NET" Value="B4JisRotated" />
       <MemberSignature Language="C++ CLI" Value="B4JisRotated" />
+      <MemberSignature Language="F#" Value="B4JisRotated = 79" Usage="System.Drawing.Printing.PaperKind.B4JisRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -448,6 +471,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5" />
       <MemberSignature Language="VB.NET" Value="B5" />
       <MemberSignature Language="C++ CLI" Value="B5" />
+      <MemberSignature Language="F#" Value="B5 = 13" Usage="System.Drawing.Printing.PaperKind.B5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -467,6 +491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5Envelope" />
       <MemberSignature Language="VB.NET" Value="B5Envelope" />
       <MemberSignature Language="C++ CLI" Value="B5Envelope" />
+      <MemberSignature Language="F#" Value="B5Envelope = 34" Usage="System.Drawing.Printing.PaperKind.B5Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -486,6 +511,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5Extra" />
       <MemberSignature Language="VB.NET" Value="B5Extra" />
       <MemberSignature Language="C++ CLI" Value="B5Extra" />
+      <MemberSignature Language="F#" Value="B5Extra = 65" Usage="System.Drawing.Printing.PaperKind.B5Extra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -505,6 +531,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5JisRotated" />
       <MemberSignature Language="VB.NET" Value="B5JisRotated" />
       <MemberSignature Language="C++ CLI" Value="B5JisRotated" />
+      <MemberSignature Language="F#" Value="B5JisRotated = 80" Usage="System.Drawing.Printing.PaperKind.B5JisRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -524,6 +551,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5Transverse" />
       <MemberSignature Language="VB.NET" Value="B5Transverse" />
       <MemberSignature Language="C++ CLI" Value="B5Transverse" />
+      <MemberSignature Language="F#" Value="B5Transverse = 62" Usage="System.Drawing.Printing.PaperKind.B5Transverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -543,6 +571,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B6Envelope" />
       <MemberSignature Language="VB.NET" Value="B6Envelope" />
       <MemberSignature Language="C++ CLI" Value="B6Envelope" />
+      <MemberSignature Language="F#" Value="B6Envelope = 35" Usage="System.Drawing.Printing.PaperKind.B6Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -562,6 +591,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B6Jis" />
       <MemberSignature Language="VB.NET" Value="B6Jis" />
       <MemberSignature Language="C++ CLI" Value="B6Jis" />
+      <MemberSignature Language="F#" Value="B6Jis = 88" Usage="System.Drawing.Printing.PaperKind.B6Jis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -581,6 +611,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B6JisRotated" />
       <MemberSignature Language="VB.NET" Value="B6JisRotated" />
       <MemberSignature Language="C++ CLI" Value="B6JisRotated" />
+      <MemberSignature Language="F#" Value="B6JisRotated = 89" Usage="System.Drawing.Printing.PaperKind.B6JisRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -600,6 +631,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.BPlus" />
       <MemberSignature Language="VB.NET" Value="BPlus" />
       <MemberSignature Language="C++ CLI" Value="BPlus" />
+      <MemberSignature Language="F#" Value="BPlus = 58" Usage="System.Drawing.Printing.PaperKind.BPlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -619,6 +651,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C3Envelope" />
       <MemberSignature Language="VB.NET" Value="C3Envelope" />
       <MemberSignature Language="C++ CLI" Value="C3Envelope" />
+      <MemberSignature Language="F#" Value="C3Envelope = 29" Usage="System.Drawing.Printing.PaperKind.C3Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -638,6 +671,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C4Envelope" />
       <MemberSignature Language="VB.NET" Value="C4Envelope" />
       <MemberSignature Language="C++ CLI" Value="C4Envelope" />
+      <MemberSignature Language="F#" Value="C4Envelope = 30" Usage="System.Drawing.Printing.PaperKind.C4Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -657,6 +691,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C5Envelope" />
       <MemberSignature Language="VB.NET" Value="C5Envelope" />
       <MemberSignature Language="C++ CLI" Value="C5Envelope" />
+      <MemberSignature Language="F#" Value="C5Envelope = 28" Usage="System.Drawing.Printing.PaperKind.C5Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -676,6 +711,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C65Envelope" />
       <MemberSignature Language="VB.NET" Value="C65Envelope" />
       <MemberSignature Language="C++ CLI" Value="C65Envelope" />
+      <MemberSignature Language="F#" Value="C65Envelope = 32" Usage="System.Drawing.Printing.PaperKind.C65Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -695,6 +731,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C6Envelope" />
       <MemberSignature Language="VB.NET" Value="C6Envelope" />
       <MemberSignature Language="C++ CLI" Value="C6Envelope" />
+      <MemberSignature Language="F#" Value="C6Envelope = 31" Usage="System.Drawing.Printing.PaperKind.C6Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -714,6 +751,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.CSheet" />
       <MemberSignature Language="VB.NET" Value="CSheet" />
       <MemberSignature Language="C++ CLI" Value="CSheet" />
+      <MemberSignature Language="F#" Value="CSheet = 24" Usage="System.Drawing.Printing.PaperKind.CSheet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -733,6 +771,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 0" Usage="System.Drawing.Printing.PaperKind.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -752,6 +791,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.DLEnvelope" />
       <MemberSignature Language="VB.NET" Value="DLEnvelope" />
       <MemberSignature Language="C++ CLI" Value="DLEnvelope" />
+      <MemberSignature Language="F#" Value="DLEnvelope = 27" Usage="System.Drawing.Printing.PaperKind.DLEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -771,6 +811,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.DSheet" />
       <MemberSignature Language="VB.NET" Value="DSheet" />
       <MemberSignature Language="C++ CLI" Value="DSheet" />
+      <MemberSignature Language="F#" Value="DSheet = 25" Usage="System.Drawing.Printing.PaperKind.DSheet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -790,6 +831,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.ESheet" />
       <MemberSignature Language="VB.NET" Value="ESheet" />
       <MemberSignature Language="C++ CLI" Value="ESheet" />
+      <MemberSignature Language="F#" Value="ESheet = 26" Usage="System.Drawing.Printing.PaperKind.ESheet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -809,6 +851,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Executive" />
       <MemberSignature Language="VB.NET" Value="Executive" />
       <MemberSignature Language="C++ CLI" Value="Executive" />
+      <MemberSignature Language="F#" Value="Executive = 7" Usage="System.Drawing.Printing.PaperKind.Executive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -828,6 +871,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Folio" />
       <MemberSignature Language="VB.NET" Value="Folio" />
       <MemberSignature Language="C++ CLI" Value="Folio" />
+      <MemberSignature Language="F#" Value="Folio = 14" Usage="System.Drawing.Printing.PaperKind.Folio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -847,6 +891,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.GermanLegalFanfold" />
       <MemberSignature Language="VB.NET" Value="GermanLegalFanfold" />
       <MemberSignature Language="C++ CLI" Value="GermanLegalFanfold" />
+      <MemberSignature Language="F#" Value="GermanLegalFanfold = 41" Usage="System.Drawing.Printing.PaperKind.GermanLegalFanfold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -866,6 +911,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.GermanStandardFanfold" />
       <MemberSignature Language="VB.NET" Value="GermanStandardFanfold" />
       <MemberSignature Language="C++ CLI" Value="GermanStandardFanfold" />
+      <MemberSignature Language="F#" Value="GermanStandardFanfold = 40" Usage="System.Drawing.Printing.PaperKind.GermanStandardFanfold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -885,6 +931,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.InviteEnvelope" />
       <MemberSignature Language="VB.NET" Value="InviteEnvelope" />
       <MemberSignature Language="C++ CLI" Value="InviteEnvelope" />
+      <MemberSignature Language="F#" Value="InviteEnvelope = 47" Usage="System.Drawing.Printing.PaperKind.InviteEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -904,6 +951,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.IsoB4" />
       <MemberSignature Language="VB.NET" Value="IsoB4" />
       <MemberSignature Language="C++ CLI" Value="IsoB4" />
+      <MemberSignature Language="F#" Value="IsoB4 = 42" Usage="System.Drawing.Printing.PaperKind.IsoB4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -923,6 +971,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.ItalyEnvelope" />
       <MemberSignature Language="VB.NET" Value="ItalyEnvelope" />
       <MemberSignature Language="C++ CLI" Value="ItalyEnvelope" />
+      <MemberSignature Language="F#" Value="ItalyEnvelope = 36" Usage="System.Drawing.Printing.PaperKind.ItalyEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -942,6 +991,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseDoublePostcard" />
       <MemberSignature Language="VB.NET" Value="JapaneseDoublePostcard" />
       <MemberSignature Language="C++ CLI" Value="JapaneseDoublePostcard" />
+      <MemberSignature Language="F#" Value="JapaneseDoublePostcard = 69" Usage="System.Drawing.Printing.PaperKind.JapaneseDoublePostcard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -961,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseDoublePostcardRotated" />
       <MemberSignature Language="VB.NET" Value="JapaneseDoublePostcardRotated" />
       <MemberSignature Language="C++ CLI" Value="JapaneseDoublePostcardRotated" />
+      <MemberSignature Language="F#" Value="JapaneseDoublePostcardRotated = 82" Usage="System.Drawing.Printing.PaperKind.JapaneseDoublePostcardRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -980,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeChouNumber3" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeChouNumber3" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeChouNumber3 = 73" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -999,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3Rotated" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeChouNumber3Rotated" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeChouNumber3Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeChouNumber3Rotated = 86" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1018,6 +1071,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeChouNumber4" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeChouNumber4" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeChouNumber4 = 74" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1037,6 +1091,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4Rotated" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeChouNumber4Rotated" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeChouNumber4Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeChouNumber4Rotated = 87" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1056,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeKakuNumber2" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeKakuNumber2" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeKakuNumber2 = 71" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1075,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2Rotated" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeKakuNumber2Rotated" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeKakuNumber2Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeKakuNumber2Rotated = 84" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1094,6 +1151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeKakuNumber3" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeKakuNumber3" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeKakuNumber3 = 72" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1113,6 +1171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3Rotated" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeKakuNumber3Rotated" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeKakuNumber3Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeKakuNumber3Rotated = 85" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1132,6 +1191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeYouNumber4" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeYouNumber4" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeYouNumber4 = 91" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1151,6 +1211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4Rotated" />
       <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeYouNumber4Rotated" />
       <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeYouNumber4Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeYouNumber4Rotated = 92" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1170,6 +1231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapanesePostcard" />
       <MemberSignature Language="VB.NET" Value="JapanesePostcard" />
       <MemberSignature Language="C++ CLI" Value="JapanesePostcard" />
+      <MemberSignature Language="F#" Value="JapanesePostcard = 43" Usage="System.Drawing.Printing.PaperKind.JapanesePostcard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1189,6 +1251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapanesePostcardRotated" />
       <MemberSignature Language="VB.NET" Value="JapanesePostcardRotated" />
       <MemberSignature Language="C++ CLI" Value="JapanesePostcardRotated" />
+      <MemberSignature Language="F#" Value="JapanesePostcardRotated = 81" Usage="System.Drawing.Printing.PaperKind.JapanesePostcardRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1208,6 +1271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Ledger" />
       <MemberSignature Language="VB.NET" Value="Ledger" />
       <MemberSignature Language="C++ CLI" Value="Ledger" />
+      <MemberSignature Language="F#" Value="Ledger = 4" Usage="System.Drawing.Printing.PaperKind.Ledger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1227,6 +1291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Legal" />
       <MemberSignature Language="VB.NET" Value="Legal" />
       <MemberSignature Language="C++ CLI" Value="Legal" />
+      <MemberSignature Language="F#" Value="Legal = 5" Usage="System.Drawing.Printing.PaperKind.Legal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1246,6 +1311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LegalExtra" />
       <MemberSignature Language="VB.NET" Value="LegalExtra" />
       <MemberSignature Language="C++ CLI" Value="LegalExtra" />
+      <MemberSignature Language="F#" Value="LegalExtra = 51" Usage="System.Drawing.Printing.PaperKind.LegalExtra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1265,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Letter" />
       <MemberSignature Language="VB.NET" Value="Letter" />
       <MemberSignature Language="C++ CLI" Value="Letter" />
+      <MemberSignature Language="F#" Value="Letter = 1" Usage="System.Drawing.Printing.PaperKind.Letter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1284,6 +1351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterExtra" />
       <MemberSignature Language="VB.NET" Value="LetterExtra" />
       <MemberSignature Language="C++ CLI" Value="LetterExtra" />
+      <MemberSignature Language="F#" Value="LetterExtra = 50" Usage="System.Drawing.Printing.PaperKind.LetterExtra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1303,6 +1371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterExtraTransverse" />
       <MemberSignature Language="VB.NET" Value="LetterExtraTransverse" />
       <MemberSignature Language="C++ CLI" Value="LetterExtraTransverse" />
+      <MemberSignature Language="F#" Value="LetterExtraTransverse = 56" Usage="System.Drawing.Printing.PaperKind.LetterExtraTransverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1322,6 +1391,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterPlus" />
       <MemberSignature Language="VB.NET" Value="LetterPlus" />
       <MemberSignature Language="C++ CLI" Value="LetterPlus" />
+      <MemberSignature Language="F#" Value="LetterPlus = 59" Usage="System.Drawing.Printing.PaperKind.LetterPlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1341,6 +1411,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterRotated" />
       <MemberSignature Language="VB.NET" Value="LetterRotated" />
       <MemberSignature Language="C++ CLI" Value="LetterRotated" />
+      <MemberSignature Language="F#" Value="LetterRotated = 75" Usage="System.Drawing.Printing.PaperKind.LetterRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1360,6 +1431,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterSmall" />
       <MemberSignature Language="VB.NET" Value="LetterSmall" />
       <MemberSignature Language="C++ CLI" Value="LetterSmall" />
+      <MemberSignature Language="F#" Value="LetterSmall = 2" Usage="System.Drawing.Printing.PaperKind.LetterSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1379,6 +1451,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterTransverse" />
       <MemberSignature Language="VB.NET" Value="LetterTransverse" />
       <MemberSignature Language="C++ CLI" Value="LetterTransverse" />
+      <MemberSignature Language="F#" Value="LetterTransverse = 54" Usage="System.Drawing.Printing.PaperKind.LetterTransverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1398,6 +1471,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.MonarchEnvelope" />
       <MemberSignature Language="VB.NET" Value="MonarchEnvelope" />
       <MemberSignature Language="C++ CLI" Value="MonarchEnvelope" />
+      <MemberSignature Language="F#" Value="MonarchEnvelope = 37" Usage="System.Drawing.Printing.PaperKind.MonarchEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1417,6 +1491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Note" />
       <MemberSignature Language="VB.NET" Value="Note" />
       <MemberSignature Language="C++ CLI" Value="Note" />
+      <MemberSignature Language="F#" Value="Note = 18" Usage="System.Drawing.Printing.PaperKind.Note" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1436,6 +1511,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number10Envelope" />
       <MemberSignature Language="VB.NET" Value="Number10Envelope" />
       <MemberSignature Language="C++ CLI" Value="Number10Envelope" />
+      <MemberSignature Language="F#" Value="Number10Envelope = 20" Usage="System.Drawing.Printing.PaperKind.Number10Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1455,6 +1531,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number11Envelope" />
       <MemberSignature Language="VB.NET" Value="Number11Envelope" />
       <MemberSignature Language="C++ CLI" Value="Number11Envelope" />
+      <MemberSignature Language="F#" Value="Number11Envelope = 21" Usage="System.Drawing.Printing.PaperKind.Number11Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1474,6 +1551,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number12Envelope" />
       <MemberSignature Language="VB.NET" Value="Number12Envelope" />
       <MemberSignature Language="C++ CLI" Value="Number12Envelope" />
+      <MemberSignature Language="F#" Value="Number12Envelope = 22" Usage="System.Drawing.Printing.PaperKind.Number12Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1493,6 +1571,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number14Envelope" />
       <MemberSignature Language="VB.NET" Value="Number14Envelope" />
       <MemberSignature Language="C++ CLI" Value="Number14Envelope" />
+      <MemberSignature Language="F#" Value="Number14Envelope = 23" Usage="System.Drawing.Printing.PaperKind.Number14Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1512,6 +1591,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number9Envelope" />
       <MemberSignature Language="VB.NET" Value="Number9Envelope" />
       <MemberSignature Language="C++ CLI" Value="Number9Envelope" />
+      <MemberSignature Language="F#" Value="Number9Envelope = 19" Usage="System.Drawing.Printing.PaperKind.Number9Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1531,6 +1611,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PersonalEnvelope" />
       <MemberSignature Language="VB.NET" Value="PersonalEnvelope" />
       <MemberSignature Language="C++ CLI" Value="PersonalEnvelope" />
+      <MemberSignature Language="F#" Value="PersonalEnvelope = 38" Usage="System.Drawing.Printing.PaperKind.PersonalEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1550,6 +1631,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc16K" />
       <MemberSignature Language="VB.NET" Value="Prc16K" />
       <MemberSignature Language="C++ CLI" Value="Prc16K" />
+      <MemberSignature Language="F#" Value="Prc16K = 93" Usage="System.Drawing.Printing.PaperKind.Prc16K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1569,6 +1651,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc16KRotated" />
       <MemberSignature Language="VB.NET" Value="Prc16KRotated" />
       <MemberSignature Language="C++ CLI" Value="Prc16KRotated" />
+      <MemberSignature Language="F#" Value="Prc16KRotated = 106" Usage="System.Drawing.Printing.PaperKind.Prc16KRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1588,6 +1671,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc32K" />
       <MemberSignature Language="VB.NET" Value="Prc32K" />
       <MemberSignature Language="C++ CLI" Value="Prc32K" />
+      <MemberSignature Language="F#" Value="Prc32K = 94" Usage="System.Drawing.Printing.PaperKind.Prc32K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1607,6 +1691,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc32KBig" />
       <MemberSignature Language="VB.NET" Value="Prc32KBig" />
       <MemberSignature Language="C++ CLI" Value="Prc32KBig" />
+      <MemberSignature Language="F#" Value="Prc32KBig = 95" Usage="System.Drawing.Printing.PaperKind.Prc32KBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1626,6 +1711,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc32KBigRotated" />
       <MemberSignature Language="VB.NET" Value="Prc32KBigRotated" />
       <MemberSignature Language="C++ CLI" Value="Prc32KBigRotated" />
+      <MemberSignature Language="F#" Value="Prc32KBigRotated = 108" Usage="System.Drawing.Printing.PaperKind.Prc32KBigRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1645,6 +1731,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc32KRotated" />
       <MemberSignature Language="VB.NET" Value="Prc32KRotated" />
       <MemberSignature Language="C++ CLI" Value="Prc32KRotated" />
+      <MemberSignature Language="F#" Value="Prc32KRotated = 107" Usage="System.Drawing.Printing.PaperKind.Prc32KRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1664,6 +1751,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber1" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber1" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber1 = 96" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1683,6 +1771,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber10" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber10" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber10 = 105" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1702,6 +1791,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber10Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber10Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber10Rotated = 118" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1721,6 +1811,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber1Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber1Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber1Rotated = 109" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1740,6 +1831,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber2" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber2" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber2 = 97" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1759,6 +1851,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber2Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber2Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber2Rotated = 110" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1778,6 +1871,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber3" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber3" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber3 = 98" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1797,6 +1891,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber3Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber3Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber3Rotated = 111" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1816,6 +1911,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber4" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber4" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber4 = 99" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1835,6 +1931,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber4Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber4Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber4Rotated = 112" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1854,6 +1951,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber5" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber5" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber5 = 100" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1873,6 +1971,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber5Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber5Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber5Rotated = 113" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1892,6 +1991,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber6" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber6" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber6 = 101" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1911,6 +2011,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber6Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber6Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber6Rotated = 114" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1930,6 +2031,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber7" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber7" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber7 = 102" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1949,6 +2051,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber7Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber7Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber7Rotated = 115" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1968,6 +2071,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber8" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber8" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber8 = 103" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1987,6 +2091,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber8Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber8Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber8Rotated = 116" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2006,6 +2111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber9" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber9" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber9 = 104" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2025,6 +2131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9Rotated" />
       <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber9Rotated" />
       <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber9Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber9Rotated = 117" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2044,6 +2151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Quarto" />
       <MemberSignature Language="VB.NET" Value="Quarto" />
       <MemberSignature Language="C++ CLI" Value="Quarto" />
+      <MemberSignature Language="F#" Value="Quarto = 15" Usage="System.Drawing.Printing.PaperKind.Quarto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2063,6 +2171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard10x11" />
       <MemberSignature Language="VB.NET" Value="Standard10x11" />
       <MemberSignature Language="C++ CLI" Value="Standard10x11" />
+      <MemberSignature Language="F#" Value="Standard10x11 = 45" Usage="System.Drawing.Printing.PaperKind.Standard10x11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2082,6 +2191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard10x14" />
       <MemberSignature Language="VB.NET" Value="Standard10x14" />
       <MemberSignature Language="C++ CLI" Value="Standard10x14" />
+      <MemberSignature Language="F#" Value="Standard10x14 = 16" Usage="System.Drawing.Printing.PaperKind.Standard10x14" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2101,6 +2211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard11x17" />
       <MemberSignature Language="VB.NET" Value="Standard11x17" />
       <MemberSignature Language="C++ CLI" Value="Standard11x17" />
+      <MemberSignature Language="F#" Value="Standard11x17 = 17" Usage="System.Drawing.Printing.PaperKind.Standard11x17" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2120,6 +2231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard12x11" />
       <MemberSignature Language="VB.NET" Value="Standard12x11" />
       <MemberSignature Language="C++ CLI" Value="Standard12x11" />
+      <MemberSignature Language="F#" Value="Standard12x11 = 90" Usage="System.Drawing.Printing.PaperKind.Standard12x11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2139,6 +2251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard15x11" />
       <MemberSignature Language="VB.NET" Value="Standard15x11" />
       <MemberSignature Language="C++ CLI" Value="Standard15x11" />
+      <MemberSignature Language="F#" Value="Standard15x11 = 46" Usage="System.Drawing.Printing.PaperKind.Standard15x11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2158,6 +2271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard9x11" />
       <MemberSignature Language="VB.NET" Value="Standard9x11" />
       <MemberSignature Language="C++ CLI" Value="Standard9x11" />
+      <MemberSignature Language="F#" Value="Standard9x11 = 44" Usage="System.Drawing.Printing.PaperKind.Standard9x11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2177,6 +2291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Statement" />
       <MemberSignature Language="VB.NET" Value="Statement" />
       <MemberSignature Language="C++ CLI" Value="Statement" />
+      <MemberSignature Language="F#" Value="Statement = 6" Usage="System.Drawing.Printing.PaperKind.Statement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2196,6 +2311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Tabloid" />
       <MemberSignature Language="VB.NET" Value="Tabloid" />
       <MemberSignature Language="C++ CLI" Value="Tabloid" />
+      <MemberSignature Language="F#" Value="Tabloid = 3" Usage="System.Drawing.Printing.PaperKind.Tabloid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2215,6 +2331,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.TabloidExtra" />
       <MemberSignature Language="VB.NET" Value="TabloidExtra" />
       <MemberSignature Language="C++ CLI" Value="TabloidExtra" />
+      <MemberSignature Language="F#" Value="TabloidExtra = 52" Usage="System.Drawing.Printing.PaperKind.TabloidExtra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2234,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.USStandardFanfold" />
       <MemberSignature Language="VB.NET" Value="USStandardFanfold" />
       <MemberSignature Language="C++ CLI" Value="USStandardFanfold" />
+      <MemberSignature Language="F#" Value="USStandardFanfold = 39" Usage="System.Drawing.Printing.PaperKind.USStandardFanfold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

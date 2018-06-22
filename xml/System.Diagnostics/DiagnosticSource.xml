@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DiagnosticSource" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DiagnosticSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiagnosticSource abstract" />
+  <TypeSignature Language="F#" Value="type DiagnosticSource = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticSource.IsEnabled(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsEnabled (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsEnabled(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member IsEnabled : string -&gt; bool" Usage="diagnosticSource.IsEnabled name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEnabled(string name, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticSource.IsEnabled(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEnabled (name As String, arg1 As Object, Optional arg2 As Object = null) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsEnabled : string * obj * obj -&gt; bool&#xA;override this.IsEnabled : string * obj * obj -&gt; bool" Usage="diagnosticSource.IsEnabled (name, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.Activity StartActivity(class System.Diagnostics.Activity activity, object args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticSource.StartActivity(System.Diagnostics.Activity,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Activity ^ StartActivity(System::Diagnostics::Activity ^ activity, System::Object ^ args);" />
+      <MemberSignature Language="F#" Value="member this.StartActivity : System.Diagnostics.Activity * obj -&gt; System.Diagnostics.Activity" Usage="diagnosticSource.StartActivity (activity, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StopActivity(class System.Diagnostics.Activity activity, object args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticSource.StopActivity(System.Diagnostics.Activity,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopActivity(System::Diagnostics::Activity ^ activity, System::Object ^ args);" />
+      <MemberSignature Language="F#" Value="member this.StopActivity : System.Diagnostics.Activity * obj -&gt; unit" Usage="diagnosticSource.StopActivity (activity, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticSource.Write(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Write (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Write(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : string * obj -&gt; unit" Usage="diagnosticSource.Write (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>

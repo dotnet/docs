@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.NoNullAllowedException" />
   <TypeSignature Language="VB.NET" Value="Public Class NoNullAllowedException&#xA;Inherits DataException" />
   <TypeSignature Language="C++ CLI" Value="public ref class NoNullAllowedException : System::Data::DataException" />
+  <TypeSignature Language="F#" Value="type NoNullAllowedException = class&#xA;    inherit DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.NoNullAllowedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NoNullAllowedException(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="new System.Data.NoNullAllowedException : string -&gt; System.Data.NoNullAllowedException" Usage="new System.Data.NoNullAllowedException s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.NoNullAllowedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NoNullAllowedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Data.NoNullAllowedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.NoNullAllowedException" Usage="new System.Data.NoNullAllowedException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.NoNullAllowedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NoNullAllowedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.NoNullAllowedException : string * Exception -&gt; System.Data.NoNullAllowedException" Usage="new System.Data.NoNullAllowedException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

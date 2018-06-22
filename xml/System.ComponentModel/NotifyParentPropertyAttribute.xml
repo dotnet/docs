@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.NotifyParentPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NotifyParentPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class NotifyParentPropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type NotifyParentPropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.NotifyParentPropertyAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (notifyParent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyParentPropertyAttribute(bool notifyParent);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.NotifyParentPropertyAttribute : bool -&gt; System.ComponentModel.NotifyParentPropertyAttribute" Usage="new System.ComponentModel.NotifyParentPropertyAttribute notifyParent" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.NotifyParentPropertyAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As NotifyParentPropertyAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::NotifyParentPropertyAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.NotifyParentPropertyAttribute" Usage="System.ComponentModel.NotifyParentPropertyAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.NotifyParentPropertyAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="notifyParentPropertyAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.NotifyParentPropertyAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="notifyParentPropertyAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.NotifyParentPropertyAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="notifyParentPropertyAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.NotifyParentPropertyAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As NotifyParentPropertyAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::NotifyParentPropertyAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.NotifyParentPropertyAttribute" Usage="System.ComponentModel.NotifyParentPropertyAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.NotifyParentPropertyAttribute.NotifyParent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotifyParent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyParent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyParent : bool" Usage="System.ComponentModel.NotifyParentPropertyAttribute.NotifyParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -299,6 +307,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.NotifyParentPropertyAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As NotifyParentPropertyAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::NotifyParentPropertyAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.NotifyParentPropertyAttribute" Usage="System.ComponentModel.NotifyParentPropertyAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

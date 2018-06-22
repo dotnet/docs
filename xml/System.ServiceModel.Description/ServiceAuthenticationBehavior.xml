@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceAuthenticationBehavior" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceAuthenticationBehavior&#xA;Implements IServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceAuthenticationBehavior sealed : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type ServiceAuthenticationBehavior = class&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceAuthenticationBehavior.AuthenticationSchemes" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationSchemes As AuthenticationSchemes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::AuthenticationSchemes AuthenticationSchemes { System::Net::AuthenticationSchemes get(); void set(System::Net::AuthenticationSchemes value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationSchemes : System.Net.AuthenticationSchemes with get, set" Usage="System.ServiceModel.Description.ServiceAuthenticationBehavior.AuthenticationSchemes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceAuthenticationBehavior.ServiceAuthenticationManager" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceAuthenticationManager As ServiceAuthenticationManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceAuthenticationManager ^ ServiceAuthenticationManager { System::ServiceModel::ServiceAuthenticationManager ^ get(); void set(System::ServiceModel::ServiceAuthenticationManager ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceAuthenticationManager : System.ServiceModel.ServiceAuthenticationManager with get, set" Usage="System.ServiceModel.Description.ServiceAuthenticationBehavior.ServiceAuthenticationManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceAuthenticationBehavior.ShouldSerializeAuthenticationSchemes" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeAuthenticationSchemes () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeAuthenticationSchemes();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeAuthenticationSchemes : unit -&gt; bool" Usage="serviceAuthenticationBehavior.ShouldSerializeAuthenticationSchemes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceAuthenticationBehavior.ShouldSerializeServiceAuthenticationManager" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeServiceAuthenticationManager () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeServiceAuthenticationManager();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeServiceAuthenticationManager : unit -&gt; bool" Usage="serviceAuthenticationBehavior.ShouldSerializeServiceAuthenticationManager " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

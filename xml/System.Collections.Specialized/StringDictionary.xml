@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.StringDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class StringDictionary&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringDictionary : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type StringDictionary = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Specialized</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -113,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringDictionary.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (key As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; unit&#xA;override this.Add : string * string -&gt; unit" Usage="stringDictionary.Add (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -172,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringDictionary.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="stringDictionary.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -220,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringDictionary.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="stringDictionary.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -277,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringDictionary.ContainsValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsValue (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsValue(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsValue : string -&gt; bool&#xA;override this.ContainsValue : string -&gt; bool" Usage="stringDictionary.ContainsValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -332,6 +337,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringDictionary.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="stringDictionary.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -398,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.StringDictionary.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Specialized.StringDictionary.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -442,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringDictionary.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="stringDictionary.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -507,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.StringDictionary.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Collections.Specialized.StringDictionary.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -559,6 +568,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.StringDictionary.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); void set(System::String ^ key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Collections.Specialized.StringDictionary.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -618,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.StringDictionary.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Collections.Specialized.StringDictionary.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -669,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringDictionary.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="stringDictionary.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -726,6 +738,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.StringDictionary.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Collections.Specialized.StringDictionary.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -777,6 +790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.StringDictionary.Values" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Values As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Collections.Specialized.StringDictionary.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ContentPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentPropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ContentPropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ContentPropertyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentPropertyAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ContentPropertyAttribute : string -&gt; System.Windows.Markup.ContentPropertyAttribute" Usage="new System.Windows.Markup.ContentPropertyAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ContentPropertyAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Markup.ContentPropertyAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

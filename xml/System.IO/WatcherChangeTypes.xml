@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.WatcherChangeTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum WatcherChangeTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class WatcherChangeTypes" />
+  <TypeSignature Language="F#" Value="type WatcherChangeTypes = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.WatcherChangeTypes.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 15" Usage="System.IO.WatcherChangeTypes.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.WatcherChangeTypes.Changed" />
       <MemberSignature Language="VB.NET" Value="Changed" />
       <MemberSignature Language="C++ CLI" Value="Changed" />
+      <MemberSignature Language="F#" Value="Changed = 4" Usage="System.IO.WatcherChangeTypes.Changed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.WatcherChangeTypes.Created" />
       <MemberSignature Language="VB.NET" Value="Created" />
       <MemberSignature Language="C++ CLI" Value="Created" />
+      <MemberSignature Language="F#" Value="Created = 1" Usage="System.IO.WatcherChangeTypes.Created" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.WatcherChangeTypes.Deleted" />
       <MemberSignature Language="VB.NET" Value="Deleted" />
       <MemberSignature Language="C++ CLI" Value="Deleted" />
+      <MemberSignature Language="F#" Value="Deleted = 2" Usage="System.IO.WatcherChangeTypes.Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.WatcherChangeTypes.Renamed" />
       <MemberSignature Language="VB.NET" Value="Renamed" />
       <MemberSignature Language="C++ CLI" Value="Renamed" />
+      <MemberSignature Language="F#" Value="Renamed = 8" Usage="System.IO.WatcherChangeTypes.Renamed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>

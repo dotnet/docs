@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMemberMethod" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeMemberMethod&#xA;Inherits CodeTypeMember" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeMemberMethod : System::CodeDom::CodeTypeMember" />
+  <TypeSignature Language="F#" Value="type CodeMemberMethod = class&#xA;    inherit CodeTypeMember" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.ImplementationTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImplementationTypes As CodeTypeReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceCollection ^ ImplementationTypes { System::CodeDom::CodeTypeReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImplementationTypes : System.CodeDom.CodeTypeReferenceCollection" Usage="System.CodeDom.CodeMemberMethod.ImplementationTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeParameterDeclarationExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeParameterDeclarationExpressionCollection ^ Parameters { System::CodeDom::CodeParameterDeclarationExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.CodeDom.CodeParameterDeclarationExpressionCollection" Usage="System.CodeDom.CodeMemberMethod.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeMemberMethod.PopulateImplementationTypes" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PopulateImplementationTypes As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PopulateImplementationTypes;" />
+      <MemberSignature Language="F#" Value="member this.PopulateImplementationTypes : EventHandler " Usage="member this.PopulateImplementationTypes : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeMemberMethod.PopulateParameters" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PopulateParameters As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PopulateParameters;" />
+      <MemberSignature Language="F#" Value="member this.PopulateParameters : EventHandler " Usage="member this.PopulateParameters : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeMemberMethod.PopulateStatements" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PopulateStatements As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PopulateStatements;" />
+      <MemberSignature Language="F#" Value="member this.PopulateStatements : EventHandler " Usage="member this.PopulateStatements : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.PrivateImplementationType" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivateImplementationType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ PrivateImplementationType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrivateImplementationType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeMemberMethod.PrivateImplementationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ ReturnType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeMemberMethod.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.ReturnTypeCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnTypeCustomAttributes As CodeAttributeDeclarationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeAttributeDeclarationCollection ^ ReturnTypeCustomAttributes { System::CodeDom::CodeAttributeDeclarationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnTypeCustomAttributes : System.CodeDom.CodeAttributeDeclarationCollection" Usage="System.CodeDom.CodeMemberMethod.ReturnTypeCustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.Statements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Statements As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ Statements { System::CodeDom::CodeStatementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Statements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeMemberMethod.Statements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -324,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberMethod.TypeParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeParameters As CodeTypeParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeParameterCollection ^ TypeParameters { System::CodeDom::CodeTypeParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeParameters : System.CodeDom.CodeTypeParameterCollection" Usage="System.CodeDom.CodeMemberMethod.TypeParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewColumnHeaderCell&#xA;Inherits DataGridViewHeaderCell" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewColumnHeaderCell : System::Windows::Forms::DataGridViewHeaderCell" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnHeaderCell = class&#xA;    inherit DataGridViewHeaderCell" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="dataGridViewColumnHeaderCell.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridViewColumnHeaderCell.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.GetClipboardContent(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClipboardContent (rowIndex As Integer, firstCell As Boolean, lastCell As Boolean, inFirstRow As Boolean, inLastRow As Boolean, format As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetClipboardContent(int rowIndex, bool firstCell, bool lastCell, bool inFirstRow, bool inLastRow, System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.GetClipboardContent : int * bool * bool * bool * bool * string -&gt; obj" Usage="dataGridViewColumnHeaderCell.GetClipboardContent (rowIndex, firstCell, lastCell, inFirstRow, inLastRow, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Rectangle GetContentBounds(class System.Drawing.Graphics graphics, class System.Windows.Forms.DataGridViewCellStyle cellStyle, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Rectangle GetContentBounds(System::Drawing::Graphics ^ graphics, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, int rowIndex);" />
+      <MemberSignature Language="F#" Value="override this.GetContentBounds : System.Drawing.Graphics * System.Windows.Forms.DataGridViewCellStyle * int -&gt; System.Drawing.Rectangle" Usage="dataGridViewColumnHeaderCell.GetContentBounds (graphics, cellStyle, rowIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.GetInheritedContextMenuStrip(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInheritedContextMenuStrip (rowIndex As Integer) As ContextMenuStrip" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::ContextMenuStrip ^ GetInheritedContextMenuStrip(int rowIndex);" />
+      <MemberSignature Language="F#" Value="override this.GetInheritedContextMenuStrip : int -&gt; System.Windows.Forms.ContextMenuStrip" Usage="dataGridViewColumnHeaderCell.GetInheritedContextMenuStrip rowIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.GetInheritedStyle(System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInheritedStyle (inheritedCellStyle As DataGridViewCellStyle, rowIndex As Integer, includeColors As Boolean) As DataGridViewCellStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::DataGridViewCellStyle ^ GetInheritedStyle(System::Windows::Forms::DataGridViewCellStyle ^ inheritedCellStyle, int rowIndex, bool includeColors);" />
+      <MemberSignature Language="F#" Value="override this.GetInheritedStyle : System.Windows.Forms.DataGridViewCellStyle * int * bool -&gt; System.Windows.Forms.DataGridViewCellStyle" Usage="dataGridViewColumnHeaderCell.GetInheritedStyle (inheritedCellStyle, rowIndex, includeColors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -278,6 +285,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(class System.Drawing.Graphics graphics, class System.Windows.Forms.DataGridViewCellStyle cellStyle, int32 rowIndex, valuetype System.Drawing.Size constraintSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Graphics ^ graphics, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, int rowIndex, System::Drawing::Size constraintSize);" />
+      <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Graphics * System.Windows.Forms.DataGridViewCellStyle * int * System.Drawing.Size -&gt; System.Drawing.Size" Usage="dataGridViewColumnHeaderCell.GetPreferredSize (graphics, cellStyle, rowIndex, constraintSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetValue (rowIndex As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetValue(int rowIndex);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="dataGridViewColumnHeaderCell.GetValue rowIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -339,6 +348,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Paint(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle cellBounds, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewElementStates dataGridViewElementState, object value, object formattedValue, string errorText, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.Windows.Forms.DataGridViewAdvancedBorderStyle advancedBorderStyle, valuetype System.Windows.Forms.DataGridViewPaintParts paintParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Paint(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipBounds, System::Drawing::Rectangle cellBounds, int rowIndex, System::Windows::Forms::DataGridViewElementStates dataGridViewElementState, System::Object ^ value, System::Object ^ formattedValue, System::String ^ errorText, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ advancedBorderStyle, System::Windows::Forms::DataGridViewPaintParts paintParts);" />
+      <MemberSignature Language="F#" Value="override this.Paint : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * obj * obj * string * System.Windows.Forms.DataGridViewCellStyle * System.Windows.Forms.DataGridViewAdvancedBorderStyle * System.Windows.Forms.DataGridViewPaintParts -&gt; unit" Usage="dataGridViewColumnHeaderCell.Paint (graphics, clipBounds, cellBounds, rowIndex, dataGridViewElementState, value, formattedValue, errorText, cellStyle, advancedBorderStyle, paintParts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.SetValue(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SetValue (rowIndex As Integer, value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SetValue(int rowIndex, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.SetValue : int * obj -&gt; bool" Usage="dataGridViewColumnHeaderCell.SetValue (rowIndex, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -415,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property SortGlyphDirection As SortOrder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SortOrder SortGlyphDirection { System::Windows::Forms::SortOrder get(); void set(System::Windows::Forms::SortOrder value); };" />
+      <MemberSignature Language="F#" Value="member this.SortGlyphDirection : System.Windows.Forms.SortOrder with get, set" Usage="System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -464,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnHeaderCell.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewColumnHeaderCell.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

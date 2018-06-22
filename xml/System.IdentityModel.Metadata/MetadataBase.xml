@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.MetadataBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetadataBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataBase abstract" />
+  <TypeSignature Language="F#" Value="type MetadataBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataBase.SigningCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property SigningCredentials As SigningCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SigningCredentials ^ SigningCredentials { System::IdentityModel::Tokens::SigningCredentials ^ get(); void set(System::IdentityModel::Tokens::SigningCredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SigningCredentials : System.IdentityModel.Tokens.SigningCredentials with get, set" Usage="System.IdentityModel.Metadata.MetadataBase.SigningCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

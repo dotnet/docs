@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.MustRunInClientContextAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MustRunInClientContextAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MustRunInClientContextAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MustRunInClientContextAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.MustRunInClientContextAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MustRunInClientContextAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.MustRunInClientContextAttribute : bool -&gt; System.EnterpriseServices.MustRunInClientContextAttribute" Usage="new System.EnterpriseServices.MustRunInClientContextAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.MustRunInClientContextAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.EnterpriseServices.MustRunInClientContextAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

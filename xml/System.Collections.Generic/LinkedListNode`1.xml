@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.LinkedListNode`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LinkedListNode(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class LinkedListNode sealed" />
+  <TypeSignature Language="F#" Value="type LinkedListNode&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedListNode`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedListNode(T value);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.LinkedListNode&lt;'T&gt; : 'T -&gt; System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="new System.Collections.Generic.LinkedListNode&lt;'T&gt; value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedListNode`1.List" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property List As LinkedList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::LinkedList&lt;T&gt; ^ List { System::Collections::Generic::LinkedList&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.Generic.LinkedList&lt;'T&gt;" Usage="System.Collections.Generic.LinkedListNode&lt;'T&gt;.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedListNode`1.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As LinkedListNode(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::LinkedListNode&lt;T&gt; ^ Next { System::Collections::Generic::LinkedListNode&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="System.Collections.Generic.LinkedListNode&lt;'T&gt;.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedListNode`1.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As LinkedListNode(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::LinkedListNode&lt;T&gt; ^ Previous { System::Collections::Generic::LinkedListNode&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="System.Collections.Generic.LinkedListNode&lt;'T&gt;.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedListNode`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="System.Collections.Generic.LinkedListNode&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationAuthorChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AnnotationAuthorChangedEventHandler(sender As Object, e As AnnotationAuthorChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AnnotationAuthorChangedEventHandler(System::Object ^ sender, AnnotationAuthorChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AnnotationAuthorChangedEventHandler = delegate of obj * AnnotationAuthorChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

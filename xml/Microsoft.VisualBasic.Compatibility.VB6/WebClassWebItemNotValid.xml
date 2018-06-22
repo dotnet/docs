@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid" />
   <TypeSignature Language="VB.NET" Value="Public Class WebClassWebItemNotValid&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebClassWebItemNotValid : Exception" />
+  <TypeSignature Language="F#" Value="type WebClassWebItemNotValid = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebClassWebItemNotValid(System::String ^ itemName);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid : string -&gt; Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid" Usage="new Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid itemName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

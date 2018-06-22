@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageQuerySet" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQuerySet&#xA;Inherits Dictionary(Of String, MessageQuery)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQuerySet : System::Collections::Generic::Dictionary&lt;System::String ^, System::ServiceModel::Dispatcher::MessageQuery ^&gt;" />
+  <TypeSignature Language="F#" Value="type MessageQuerySet = class&#xA;    inherit Dictionary&lt;string, MessageQuery&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageQuerySet.#ctor(System.ServiceModel.Dispatcher.MessageQueryTable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (queryTable As MessageQueryTable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQuerySet(System::ServiceModel::Dispatcher::MessageQueryTable&lt;System::String ^&gt; ^ queryTable);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.MessageQuerySet : System.ServiceModel.Dispatcher.MessageQueryTable&lt;string&gt; -&gt; System.ServiceModel.MessageQuerySet" Usage="new System.ServiceModel.MessageQuerySet queryTable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageQuerySet.GetMessageQueryTable" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMessageQueryTable () As MessageQueryTable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Dispatcher::MessageQueryTable&lt;System::String ^&gt; ^ GetMessageQueryTable();" />
+      <MemberSignature Language="F#" Value="member this.GetMessageQueryTable : unit -&gt; System.ServiceModel.Dispatcher.MessageQueryTable&lt;string&gt;" Usage="messageQuerySet.GetMessageQueryTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageQuerySet.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.MessageQuerySet.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

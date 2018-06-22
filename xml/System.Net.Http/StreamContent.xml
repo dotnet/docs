@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.StreamContent" />
   <TypeSignature Language="VB.NET" Value="Public Class StreamContent&#xA;Inherits HttpContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamContent : System::Net::Http::HttpContent" />
+  <TypeSignature Language="F#" Value="type StreamContent = class&#xA;    inherit HttpContent" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamContent(System::IO::Stream ^ content);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StreamContent : System.IO.Stream -&gt; System.Net.Http.StreamContent" Usage="new System.Net.Http.StreamContent content" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.#ctor(System.IO.Stream,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As Stream, bufferSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamContent(System::IO::Stream ^ content, int bufferSize);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StreamContent : System.IO.Stream * int -&gt; System.Net.Http.StreamContent" Usage="new System.Net.Http.StreamContent (content, bufferSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.CreateContentReadStreamAsync" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateContentReadStreamAsync () As Task(Of Stream)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ CreateContentReadStreamAsync();" />
+      <MemberSignature Language="F#" Value="override this.CreateContentReadStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="streamContent.CreateContentReadStreamAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="streamContent.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Threading.Tasks.Task SerializeToStreamAsync(class System.IO.Stream stream, class System.Net.TransportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Threading::Tasks::Task ^ SerializeToStreamAsync(System::IO::Stream ^ stream, System::Net::TransportContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.SerializeToStreamAsync : System.IO.Stream * System.Net.TransportContext -&gt; System.Threading.Tasks.Task" Usage="streamContent.SerializeToStreamAsync (stream, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.TryComputeLength(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryComputeLength (ByRef length As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryComputeLength([Runtime::InteropServices::Out] long % length);" />
+      <MemberSignature Language="F#" Value="override this.TryComputeLength :  -&gt; bool" Usage="streamContent.TryComputeLength length" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

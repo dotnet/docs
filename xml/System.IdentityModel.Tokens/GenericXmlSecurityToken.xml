@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" />
   <TypeSignature Language="VB.NET" Value="Public Class GenericXmlSecurityToken&#xA;Inherits SecurityToken" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenericXmlSecurityToken : System::IdentityModel::Tokens::SecurityToken" />
+  <TypeSignature Language="F#" Value="type GenericXmlSecurityToken = class&#xA;    inherit SecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityToken.#ctor(System.Xml.XmlElement,System.IdentityModel.Tokens.SecurityToken,System.DateTime,System.DateTime,System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokenXml As XmlElement, proofToken As SecurityToken, effectiveTime As DateTime, expirationTime As DateTime, internalTokenReference As SecurityKeyIdentifierClause, externalTokenReference As SecurityKeyIdentifierClause, authorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericXmlSecurityToken(System::Xml::XmlElement ^ tokenXml, System::IdentityModel::Tokens::SecurityToken ^ proofToken, DateTime effectiveTime, DateTime expirationTime, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ internalTokenReference, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ externalTokenReference, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authorizationPolicies);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.GenericXmlSecurityToken : System.Xml.XmlElement * System.IdentityModel.Tokens.SecurityToken * DateTime * DateTime * System.IdentityModel.Tokens.SecurityKeyIdentifierClause * System.IdentityModel.Tokens.SecurityKeyIdentifierClause * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; -&gt; System.IdentityModel.Tokens.GenericXmlSecurityToken" Usage="new System.IdentityModel.Tokens.GenericXmlSecurityToken (tokenXml, proofToken, effectiveTime, expirationTime, internalTokenReference, externalTokenReference, authorizationPolicies)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.AuthorizationPolicies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ AuthorizationPolicies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthorizationPolicies : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.AuthorizationPolicies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityToken.CanCreateKeyIdentifierClause``1" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanCreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::IdentityModel::Tokens::SecurityKeyIdentifierClause override bool CanCreateKeyIdentifierClause();" />
+      <MemberSignature Language="F#" Value="override this.CanCreateKeyIdentifierClause : unit -&gt; bool (requires 'T :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" Usage="genericXmlSecurityToken.CanCreateKeyIdentifierClause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityToken.CreateKeyIdentifierClause``1" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::IdentityModel::Tokens::SecurityKeyIdentifierClause override T CreateKeyIdentifierClause();" />
+      <MemberSignature Language="F#" Value="override this.CreateKeyIdentifierClause : unit -&gt; 'T (requires 'T :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" Usage="genericXmlSecurityToken.CreateKeyIdentifierClause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExternalTokenReference As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ExternalTokenReference { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExternalTokenReference : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.Id" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InternalTokenReference As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ InternalTokenReference { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InternalTokenReference : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MatchesKeyIdentifierClause (skiClause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MatchesKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ skiClause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.MatchesKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="genericXmlSecurityToken.MatchesKeyIdentifierClause skiClause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.ProofToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProofToken As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ ProofToken { System::IdentityModel::Tokens::SecurityToken ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProofToken : System.IdentityModel.Tokens.SecurityToken" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.ProofToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -308,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.SecurityKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecurityKeys As ReadOnlyCollection(Of SecurityKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ SecurityKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityKeys : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.SecurityKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -335,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.TokenXml" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenXml As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ TokenXml { System::Xml::XmlElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenXml : System.Xml.XmlElement" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.TokenXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -362,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityToken.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="genericXmlSecurityToken.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidFrom As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidFrom { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidFrom : DateTime" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -419,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidTo" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidTo As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidTo { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidTo : DateTime" Usage="System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

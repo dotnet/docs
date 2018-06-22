@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyValueChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyValueChangedEventHandler(s As Object, e As PropertyValueChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PropertyValueChangedEventHandler(System::Object ^ s, PropertyValueChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PropertyValueChangedEventHandler = delegate of obj * PropertyValueChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

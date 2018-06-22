@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AllowPartiallyTrustedCallersAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AllowPartiallyTrustedCallersAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AllowPartiallyTrustedCallersAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AllowPartiallyTrustedCallersAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AllowPartiallyTrustedCallersAttribute.PartialTrustVisibilityLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property PartialTrustVisibilityLevel As PartialTrustVisibilityLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PartialTrustVisibilityLevel PartialTrustVisibilityLevel { System::Security::PartialTrustVisibilityLevel get(); void set(System::Security::PartialTrustVisibilityLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.PartialTrustVisibilityLevel : System.Security.PartialTrustVisibilityLevel with get, set" Usage="System.Security.AllowPartiallyTrustedCallersAttribute.PartialTrustVisibilityLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

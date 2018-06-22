@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.StringProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringProperty&#xA;Inherits BaseProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringProperty sealed : Microsoft::Build::Framework::XamlTypes::BaseProperty" />
+  <TypeSignature Language="F#" Value="type StringProperty = class&#xA;    inherit BaseProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.StringProperty.Subtype" />
       <MemberSignature Language="VB.NET" Value="Public Property Subtype As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subtype { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subtype : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.StringProperty.Subtype" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

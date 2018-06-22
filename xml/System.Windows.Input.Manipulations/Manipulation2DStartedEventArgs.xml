@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class Manipulation2DStartedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class Manipulation2DStartedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type Manipulation2DStartedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginX" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginX As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float OriginX { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginX : single" Usage="System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginY" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginY As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float OriginY { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginY : single" Usage="System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>

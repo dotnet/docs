@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemBoundsPortion" />
   <TypeSignature Language="VB.NET" Value="Public Enum ItemBoundsPortion" />
   <TypeSignature Language="C++ CLI" Value="public enum class ItemBoundsPortion" />
+  <TypeSignature Language="F#" Value="type ItemBoundsPortion = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemBoundsPortion.Entire" />
       <MemberSignature Language="VB.NET" Value="Entire" />
       <MemberSignature Language="C++ CLI" Value="Entire" />
+      <MemberSignature Language="F#" Value="Entire = 0" Usage="System.Windows.Forms.ItemBoundsPortion.Entire" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemBoundsPortion.Icon" />
       <MemberSignature Language="VB.NET" Value="Icon" />
       <MemberSignature Language="C++ CLI" Value="Icon" />
+      <MemberSignature Language="F#" Value="Icon = 1" Usage="System.Windows.Forms.ItemBoundsPortion.Icon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemBoundsPortion.ItemOnly" />
       <MemberSignature Language="VB.NET" Value="ItemOnly" />
       <MemberSignature Language="C++ CLI" Value="ItemOnly" />
+      <MemberSignature Language="F#" Value="ItemOnly = 3" Usage="System.Windows.Forms.ItemBoundsPortion.ItemOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemBoundsPortion.Label" />
       <MemberSignature Language="VB.NET" Value="Label" />
       <MemberSignature Language="C++ CLI" Value="Label" />
+      <MemberSignature Language="F#" Value="Label = 2" Usage="System.Windows.Forms.ItemBoundsPortion.Label" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

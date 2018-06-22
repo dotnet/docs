@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CommunicationObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CommunicationObject&#xA;Implements ICommunicationObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommunicationObject abstract : System::ServiceModel::ICommunicationObject" />
+  <TypeSignature Language="F#" Value="type CommunicationObject = class&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (mutex As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CommunicationObject(System::Object ^ mutex);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CommunicationObject : obj -&gt; System.ServiceModel.Channels.CommunicationObject" Usage="new System.ServiceModel.Channels.CommunicationObject mutex" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" />
+      <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="communicationObject.Abort " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Abort</InterfaceMember>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.BeginClose(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginClose (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginClose(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginClose : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginClose : AsyncCallback * obj -&gt; IAsyncResult" Usage="communicationObject.BeginClose (callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)</InterfaceMember>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="communicationObject.BeginClose (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -257,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.BeginOpen(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginOpen (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginOpen(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginOpen : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginOpen : AsyncCallback * obj -&gt; IAsyncResult" Usage="communicationObject.BeginOpen (callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback,System.Object)</InterfaceMember>
@@ -306,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginOpen : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginOpen : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="communicationObject.BeginOpen (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -367,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="communicationObject.Close " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
@@ -412,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.Close(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Close : TimeSpan -&gt; unit&#xA;override this.Close : TimeSpan -&gt; unit" Usage="communicationObject.Close timeout" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)</InterfaceMember>
@@ -460,6 +469,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Channels.CommunicationObject.Closed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Closed;" />
+      <MemberSignature Language="F#" Value="member this.Closed : EventHandler " Usage="member this.Closed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closed</InterfaceMember>
@@ -496,6 +506,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Channels.CommunicationObject.Closing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closing As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Closing;" />
+      <MemberSignature Language="F#" Value="member this.Closing : EventHandler " Usage="member this.Closing : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closing</InterfaceMember>
@@ -532,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CommunicationObject.DefaultCloseTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property DefaultCloseTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultCloseTimeout : TimeSpan" Usage="System.ServiceModel.Channels.CommunicationObject.DefaultCloseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -559,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CommunicationObject.DefaultOpenTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property DefaultOpenTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultOpenTimeout : TimeSpan" Usage="System.ServiceModel.Channels.CommunicationObject.DefaultOpenTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -586,6 +599,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.EndClose(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndClose (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndClose(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndClose : IAsyncResult -&gt; unit&#xA;override this.EndClose : IAsyncResult -&gt; unit" Usage="communicationObject.EndClose result" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)</InterfaceMember>
@@ -630,6 +644,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.EndOpen(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndOpen (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndOpen(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndOpen : IAsyncResult -&gt; unit&#xA;override this.EndOpen : IAsyncResult -&gt; unit" Usage="communicationObject.EndOpen result" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)</InterfaceMember>
@@ -674,6 +689,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.Fault" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Fault ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Fault();" />
+      <MemberSignature Language="F#" Value="member this.Fault : unit -&gt; unit" Usage="communicationObject.Fault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -708,6 +724,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Channels.CommunicationObject.Faulted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Faulted As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Faulted;" />
+      <MemberSignature Language="F#" Value="member this.Faulted : EventHandler " Usage="member this.Faulted : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Faulted</InterfaceMember>
@@ -744,6 +761,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.GetCommunicationObjectType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCommunicationObjectType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetCommunicationObjectType();" />
+      <MemberSignature Language="F#" Value="abstract member GetCommunicationObjectType : unit -&gt; Type&#xA;override this.GetCommunicationObjectType : unit -&gt; Type" Usage="communicationObject.GetCommunicationObjectType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -772,6 +790,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CommunicationObject.IsDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsDisposed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDisposed : bool" Usage="System.ServiceModel.Channels.CommunicationObject.IsDisposed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -807,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnAbort" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnAbort ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnAbort();" />
+      <MemberSignature Language="F#" Value="abstract member OnAbort : unit -&gt; unit" Usage="communicationObject.OnAbort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -841,6 +861,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnBeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ OnBeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="communicationObject.OnBeginClose (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -889,6 +910,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnBeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ OnBeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginOpen : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="communicationObject.OnBeginOpen (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -935,6 +957,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnClose(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnClose (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnClose(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member OnClose : TimeSpan -&gt; unit" Usage="communicationObject.OnClose timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -978,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnClosed" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosed();" />
+      <MemberSignature Language="F#" Value="abstract member OnClosed : unit -&gt; unit&#xA;override this.OnClosed : unit -&gt; unit" Usage="communicationObject.OnClosed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1014,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnClosing" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosing ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosing();" />
+      <MemberSignature Language="F#" Value="abstract member OnClosing : unit -&gt; unit&#xA;override this.OnClosing : unit -&gt; unit" Usage="communicationObject.OnClosing " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1048,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnEndClose(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnEndClose (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnEndClose(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndClose : IAsyncResult -&gt; unit" Usage="communicationObject.OnEndClose result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1089,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnEndOpen(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnEndOpen (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnEndOpen(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndOpen : IAsyncResult -&gt; unit" Usage="communicationObject.OnEndOpen result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1130,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnFaulted" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFaulted ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFaulted();" />
+      <MemberSignature Language="F#" Value="abstract member OnFaulted : unit -&gt; unit&#xA;override this.OnFaulted : unit -&gt; unit" Usage="communicationObject.OnFaulted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1164,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnOpen(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnOpen (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnOpen(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member OnOpen : TimeSpan -&gt; unit" Usage="communicationObject.OnOpen timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1207,6 +1236,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnOpened" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnOpened ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnOpened();" />
+      <MemberSignature Language="F#" Value="abstract member OnOpened : unit -&gt; unit&#xA;override this.OnOpened : unit -&gt; unit" Usage="communicationObject.OnOpened " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1241,6 +1271,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.OnOpening" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnOpening ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnOpening();" />
+      <MemberSignature Language="F#" Value="abstract member OnOpening : unit -&gt; unit&#xA;override this.OnOpening : unit -&gt; unit" Usage="communicationObject.OnOpening " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1293,6 +1324,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit&#xA;override this.Open : unit -&gt; unit" Usage="communicationObject.Open " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
@@ -1347,6 +1379,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.Open(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Open : TimeSpan -&gt; unit&#xA;override this.Open : TimeSpan -&gt; unit" Usage="communicationObject.Open timeout" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)</InterfaceMember>
@@ -1397,6 +1430,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Channels.CommunicationObject.Opened" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Opened As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Opened;" />
+      <MemberSignature Language="F#" Value="member this.Opened : EventHandler " Usage="member this.Opened : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opened</InterfaceMember>
@@ -1433,6 +1467,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Channels.CommunicationObject.Opening" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Opening As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Opening;" />
+      <MemberSignature Language="F#" Value="member this.Opening : EventHandler " Usage="member this.Opening : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opening</InterfaceMember>
@@ -1469,6 +1504,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CommunicationObject.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As CommunicationState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::CommunicationState State { System::ServiceModel::CommunicationState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.ServiceModel.CommunicationState" Usage="System.ServiceModel.Channels.CommunicationObject.State" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.ICommunicationObject.State</InterfaceMember>
@@ -1499,6 +1535,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CommunicationObject.ThisLock" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ThisLock As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ ThisLock { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThisLock : obj" Usage="System.ServiceModel.Channels.CommunicationObject.ThisLock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1526,6 +1563,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfDisposed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfDisposed();" />
+      <MemberSignature Language="F#" Value="member this.ThrowIfDisposed : unit -&gt; unit" Usage="communicationObject.ThrowIfDisposed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1556,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrImmutable" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfDisposedOrImmutable ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfDisposedOrImmutable();" />
+      <MemberSignature Language="F#" Value="member this.ThrowIfDisposedOrImmutable : unit -&gt; unit" Usage="communicationObject.ThrowIfDisposedOrImmutable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1587,6 +1626,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfDisposedOrNotOpen ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfDisposedOrNotOpen();" />
+      <MemberSignature Language="F#" Value="member this.ThrowIfDisposedOrNotOpen : unit -&gt; unit" Usage="communicationObject.ThrowIfDisposedOrNotOpen " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

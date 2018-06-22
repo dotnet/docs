@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ChannelProtectionRequirements" />
   <TypeSignature Language="VB.NET" Value="Public Class ChannelProtectionRequirements" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelProtectionRequirements" />
+  <TypeSignature Language="F#" Value="type ChannelProtectionRequirements = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.#ctor(System.ServiceModel.Security.ChannelProtectionRequirements)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As ChannelProtectionRequirements)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelProtectionRequirements(System::ServiceModel::Security::ChannelProtectionRequirements ^ other);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.ChannelProtectionRequirements : System.ServiceModel.Security.ChannelProtectionRequirements -&gt; System.ServiceModel.Security.ChannelProtectionRequirements" Usage="new System.ServiceModel.Security.ChannelProtectionRequirements other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.Add(System.ServiceModel.Security.ChannelProtectionRequirements)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (protectionRequirements As ChannelProtectionRequirements)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Security::ChannelProtectionRequirements ^ protectionRequirements);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Security.ChannelProtectionRequirements -&gt; unit" Usage="channelProtectionRequirements.Add protectionRequirements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.Add(System.ServiceModel.Security.ChannelProtectionRequirements,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (protectionRequirements As ChannelProtectionRequirements, channelScopeOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Security::ChannelProtectionRequirements ^ protectionRequirements, bool channelScopeOnly);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Security.ChannelProtectionRequirements * bool -&gt; unit" Usage="channelProtectionRequirements.Add (protectionRequirements, channelScopeOnly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.CreateInverse" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInverse () As ChannelProtectionRequirements" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Security::ChannelProtectionRequirements ^ CreateInverse();" />
+      <MemberSignature Language="F#" Value="member this.CreateInverse : unit -&gt; System.ServiceModel.Security.ChannelProtectionRequirements" Usage="channelProtectionRequirements.CreateInverse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingEncryptionParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingEncryptionParts As ScopedMessagePartSpecification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::ScopedMessagePartSpecification ^ IncomingEncryptionParts { System::ServiceModel::Security::ScopedMessagePartSpecification ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncomingEncryptionParts : System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.IncomingEncryptionParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingSignatureParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingSignatureParts As ScopedMessagePartSpecification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::ScopedMessagePartSpecification ^ IncomingSignatureParts { System::ServiceModel::Security::ScopedMessagePartSpecification ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncomingSignatureParts : System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.IncomingSignatureParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.MakeReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.MakeReadOnly : unit -&gt; unit" Usage="channelProtectionRequirements.MakeReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingEncryptionParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingEncryptionParts As ScopedMessagePartSpecification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::ScopedMessagePartSpecification ^ OutgoingEncryptionParts { System::ServiceModel::Security::ScopedMessagePartSpecification ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutgoingEncryptionParts : System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingEncryptionParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -335,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingSignatureParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingSignatureParts As ScopedMessagePartSpecification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::ScopedMessagePartSpecification ^ OutgoingSignatureParts { System::ServiceModel::Security::ScopedMessagePartSpecification ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutgoingSignatureParts : System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingSignatureParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.CalloutStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum CalloutStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class CalloutStyle" />
+  <TypeSignature Language="F#" Value="type CalloutStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Borderline" />
       <MemberSignature Language="VB.NET" Value="Borderline" />
       <MemberSignature Language="C++ CLI" Value="Borderline" />
+      <MemberSignature Language="F#" Value="Borderline = 1" Usage="System.Web.UI.DataVisualization.Charting.CalloutStyle.Borderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Cloud" />
       <MemberSignature Language="VB.NET" Value="Cloud" />
       <MemberSignature Language="C++ CLI" Value="Cloud" />
+      <MemberSignature Language="F#" Value="Cloud = 2" Usage="System.Web.UI.DataVisualization.Charting.CalloutStyle.Cloud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Ellipse" />
       <MemberSignature Language="VB.NET" Value="Ellipse" />
       <MemberSignature Language="C++ CLI" Value="Ellipse" />
+      <MemberSignature Language="F#" Value="Ellipse = 5" Usage="System.Web.UI.DataVisualization.Charting.CalloutStyle.Ellipse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Perspective" />
       <MemberSignature Language="VB.NET" Value="Perspective" />
       <MemberSignature Language="C++ CLI" Value="Perspective" />
+      <MemberSignature Language="F#" Value="Perspective = 6" Usage="System.Web.UI.DataVisualization.Charting.CalloutStyle.Perspective" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.Rectangle" />
       <MemberSignature Language="VB.NET" Value="Rectangle" />
       <MemberSignature Language="C++ CLI" Value="Rectangle" />
+      <MemberSignature Language="F#" Value="Rectangle = 3" Usage="System.Web.UI.DataVisualization.Charting.CalloutStyle.Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.RoundedRectangle" />
       <MemberSignature Language="VB.NET" Value="RoundedRectangle" />
       <MemberSignature Language="C++ CLI" Value="RoundedRectangle" />
+      <MemberSignature Language="F#" Value="RoundedRectangle = 4" Usage="System.Web.UI.DataVisualization.Charting.CalloutStyle.RoundedRectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.CalloutStyle.SimpleLine" />
       <MemberSignature Language="VB.NET" Value="SimpleLine" />
       <MemberSignature Language="C++ CLI" Value="SimpleLine" />
+      <MemberSignature Language="F#" Value="SimpleLine = 0" Usage="System.Web.UI.DataVisualization.Charting.CalloutStyle.SimpleLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonRadioButtonAutomationPeer&#xA;Inherits RadioButtonAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonRadioButtonAutomationPeer : System::Windows::Automation::Peers::RadioButtonAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonRadioButtonAutomationPeer = class&#xA;    inherit RadioButtonAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonRadioButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonRadioButton)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonRadioButtonAutomationPeer(System::Windows::Controls::Ribbon::RibbonRadioButton ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer : System.Windows.Controls.Ribbon.RibbonRadioButton -&gt; System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer.GetAccessKeyCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAccessKeyCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAccessKeyCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAccessKeyCore : unit -&gt; string" Usage="ribbonRadioButtonAutomationPeer.GetAccessKeyCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonRadioButtonAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer.GetHelpTextCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="ribbonRadioButtonAutomationPeer.GetHelpTextCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonRadioButtonAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="ribbonRadioButtonAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

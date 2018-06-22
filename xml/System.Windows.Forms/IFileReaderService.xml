@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IFileReaderService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFileReaderService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFileReaderService" />
+  <TypeSignature Language="F#" Value="type IFileReaderService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IFileReaderService.OpenFileFromSource(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFileFromSource (relativePath As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenFileFromSource(System::String ^ relativePath);" />
+      <MemberSignature Language="F#" Value="abstract member OpenFileFromSource : string -&gt; System.IO.Stream" Usage="iFileReaderService.OpenFileFromSource relativePath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

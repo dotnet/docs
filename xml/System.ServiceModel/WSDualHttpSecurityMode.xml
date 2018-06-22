@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSDualHttpSecurityMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum WSDualHttpSecurityMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class WSDualHttpSecurityMode" />
+  <TypeSignature Language="F#" Value="type WSDualHttpSecurityMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSDualHttpSecurityMode.Message" />
       <MemberSignature Language="VB.NET" Value="Message" />
       <MemberSignature Language="C++ CLI" Value="Message" />
+      <MemberSignature Language="F#" Value="Message = 1" Usage="System.ServiceModel.WSDualHttpSecurityMode.Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSDualHttpSecurityMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.WSDualHttpSecurityMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.AffineTransform3D" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AffineTransform3D&#xA;Inherits Transform3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class AffineTransform3D abstract : System::Windows::Media::Media3D::Transform3D" />
+  <TypeSignature Language="F#" Value="type AffineTransform3D = class&#xA;    inherit Transform3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AffineTransform3D.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As AffineTransform3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::AffineTransform3D ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.AffineTransform3D" Usage="affineTransform3D.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AffineTransform3D.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As AffineTransform3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::AffineTransform3D ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.AffineTransform3D" Usage="affineTransform3D.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.AffineTransform3D.IsAffine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAffine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAffine { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAffine : bool" Usage="System.Windows.Media.Media3D.AffineTransform3D.IsAffine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessRule`1" />
   <TypeSignature Language="VB.NET" Value="Public Class AccessRule(Of T)&#xA;Inherits AccessRule" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : value classpublic ref class AccessRule : System::Security::AccessControl::AccessRule" />
+  <TypeSignature Language="F#" Value="type AccessRule&lt;'T (requires 'T : struct)&gt; = class&#xA;    inherit AccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AccessRule`1.#ctor(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, rights As T, type As AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessRule(System::Security::Principal::IdentityReference ^ identity, T rights, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt; : System.Security.Principal.IdentityReference * 'T * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt;" Usage="new System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt; (identity, rights, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AccessRule`1.#ctor(System.String,`0,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As String, rights As T, type As AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessRule(System::String ^ identity, T rights, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt; : string * 'T * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt;" Usage="new System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt; (identity, rights, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, !T rights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AccessRule`1.#ctor(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessRule(System::Security::Principal::IdentityReference ^ identity, T rights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt; : System.Security.Principal.IdentityReference * 'T * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt;" Usage="new System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt; (identity, rights, inheritanceFlags, propagationFlags, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, !T rights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AccessRule`1.#ctor(System.String,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessRule(System::String ^ identity, T rights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt; : string * 'T * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt;" Usage="new System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt; (identity, rights, inheritanceFlags, propagationFlags, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AccessRule`1.Rights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rights As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Rights { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rights : 'T" Usage="System.Security.AccessControl.AccessRule&lt;'T (requires 'T : struct)&gt;.Rights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

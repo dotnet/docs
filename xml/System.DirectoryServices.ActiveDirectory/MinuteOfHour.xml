@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.MinuteOfHour" />
   <TypeSignature Language="VB.NET" Value="Public Enum MinuteOfHour" />
   <TypeSignature Language="C++ CLI" Value="public enum class MinuteOfHour" />
+  <TypeSignature Language="F#" Value="type MinuteOfHour = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.MinuteOfHour.Fifteen" />
       <MemberSignature Language="VB.NET" Value="Fifteen" />
       <MemberSignature Language="C++ CLI" Value="Fifteen" />
+      <MemberSignature Language="F#" Value="Fifteen = 15" Usage="System.DirectoryServices.ActiveDirectory.MinuteOfHour.Fifteen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.MinuteOfHour.FortyFive" />
       <MemberSignature Language="VB.NET" Value="FortyFive" />
       <MemberSignature Language="C++ CLI" Value="FortyFive" />
+      <MemberSignature Language="F#" Value="FortyFive = 45" Usage="System.DirectoryServices.ActiveDirectory.MinuteOfHour.FortyFive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.MinuteOfHour.Thirty" />
       <MemberSignature Language="VB.NET" Value="Thirty" />
       <MemberSignature Language="C++ CLI" Value="Thirty" />
+      <MemberSignature Language="F#" Value="Thirty = 30" Usage="System.DirectoryServices.ActiveDirectory.MinuteOfHour.Thirty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.MinuteOfHour.Zero" />
       <MemberSignature Language="VB.NET" Value="Zero" />
       <MemberSignature Language="C++ CLI" Value="Zero" />
+      <MemberSignature Language="F#" Value="Zero = 0" Usage="System.DirectoryServices.ActiveDirectory.MinuteOfHour.Zero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

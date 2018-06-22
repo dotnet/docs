@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.IOCompletionCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub IOCompletionCallback(errorCode As UInteger, numBytes As UInteger, pOVERLAP As NativeOverlapped*)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void IOCompletionCallback(System::UInt32 errorCode, System::UInt32 numBytes, NativeOverlapped* pOVERLAP);" />
+  <TypeSignature Language="F#" Value="type IOCompletionCallback = delegate of uint32 * uint32 * nativeptr&lt;NativeOverlapped&gt; -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Overlapped</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>

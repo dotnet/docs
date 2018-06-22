@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.MailMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class MailMessage&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MailMessage : IDisposable" />
+  <TypeSignature Language="F#" Value="type MailMessage = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -156,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.#ctor(System.Net.Mail.MailAddress,System.Net.Mail.MailAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (from As MailAddress, to As MailAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MailMessage(System::Net::Mail::MailAddress ^ from, System::Net::Mail::MailAddress ^ to);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.MailMessage : System.Net.Mail.MailAddress * System.Net.Mail.MailAddress -&gt; System.Net.Mail.MailMessage" Usage="new System.Net.Mail.MailMessage (from, to)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (from As String, to As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MailMessage(System::String ^ from, System::String ^ to);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.MailMessage : string * string -&gt; System.Net.Mail.MailMessage" Usage="new System.Net.Mail.MailMessage (from, to)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -272,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (from As String, to As String, subject As String, body As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MailMessage(System::String ^ from, System::String ^ to, System::String ^ subject, System::String ^ body);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.MailMessage : string * string * string * string -&gt; System.Net.Mail.MailMessage" Usage="new System.Net.Mail.MailMessage (from, to, subject, body)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -346,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.AlternateViews" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlternateViews As AlternateViewCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::AlternateViewCollection ^ AlternateViews { System::Net::Mail::AlternateViewCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlternateViews : System.Net.Mail.AlternateViewCollection" Usage="System.Net.Mail.MailMessage.AlternateViews" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -394,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Attachments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attachments As AttachmentCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::AttachmentCollection ^ Attachments { System::Net::Mail::AttachmentCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attachments : System.Net.Mail.AttachmentCollection" Usage="System.Net.Mail.MailMessage.Attachments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -442,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Bcc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bcc As MailAddressCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailAddressCollection ^ Bcc { System::Net::Mail::MailAddressCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bcc : System.Net.Mail.MailAddressCollection" Usage="System.Net.Mail.MailMessage.Bcc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -490,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Body" />
       <MemberSignature Language="VB.NET" Value="Public Property Body As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Body { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Body : string with get, set" Usage="System.Net.Mail.MailMessage.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -537,6 +545,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.BodyEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property BodyEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ BodyEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BodyEncoding : System.Text.Encoding with get, set" Usage="System.Net.Mail.MailMessage.BodyEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -589,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.BodyTransferEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property BodyTransferEncoding As TransferEncoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mime::TransferEncoding BodyTransferEncoding { System::Net::Mime::TransferEncoding get(); void set(System::Net::Mime::TransferEncoding value); };" />
+      <MemberSignature Language="F#" Value="member this.BodyTransferEncoding : System.Net.Mime.TransferEncoding with get, set" Usage="System.Net.Mail.MailMessage.BodyTransferEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -621,6 +631,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.CC" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CC As MailAddressCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailAddressCollection ^ CC { System::Net::Mail::MailAddressCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CC : System.Net.Mail.MailAddressCollection" Usage="System.Net.Mail.MailMessage.CC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -667,6 +678,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.DeliveryNotificationOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property DeliveryNotificationOptions As DeliveryNotificationOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::DeliveryNotificationOptions DeliveryNotificationOptions { System::Net::Mail::DeliveryNotificationOptions get(); void set(System::Net::Mail::DeliveryNotificationOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.DeliveryNotificationOptions : System.Net.Mail.DeliveryNotificationOptions with get, set" Usage="System.Net.Mail.MailMessage.DeliveryNotificationOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -707,6 +719,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="mailMessage.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -755,6 +768,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="mailMessage.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -804,6 +818,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As MailAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailAddress ^ From { System::Net::Mail::MailAddress ^ get(); void set(System::Net::Mail::MailAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.From : System.Net.Mail.MailAddress with get, set" Usage="System.Net.Mail.MailMessage.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -849,6 +864,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ Headers { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Specialized.NameValueCollection" Usage="System.Net.Mail.MailMessage.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -946,6 +962,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.HeadersEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property HeadersEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ HeadersEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeadersEncoding : System.Text.Encoding with get, set" Usage="System.Net.Mail.MailMessage.HeadersEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -989,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.IsBodyHtml" />
       <MemberSignature Language="VB.NET" Value="Public Property IsBodyHtml As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBodyHtml { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsBodyHtml : bool with get, set" Usage="System.Net.Mail.MailMessage.IsBodyHtml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1020,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As MailPriority" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailPriority Priority { System::Net::Mail::MailPriority get(); void set(System::Net::Mail::MailPriority value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : System.Net.Mail.MailPriority with get, set" Usage="System.Net.Mail.MailMessage.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1050,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.ReplyTo" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplyTo As MailAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailAddress ^ ReplyTo { System::Net::Mail::MailAddress ^ get(); void set(System::Net::Mail::MailAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplyTo : System.Net.Mail.MailAddress with get, set" Usage="System.Net.Mail.MailMessage.ReplyTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1092,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.ReplyToList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplyToList As MailAddressCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailAddressCollection ^ ReplyToList { System::Net::Mail::MailAddressCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReplyToList : System.Net.Mail.MailAddressCollection" Usage="System.Net.Mail.MailMessage.ReplyToList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1131,6 +1152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Sender" />
       <MemberSignature Language="VB.NET" Value="Public Property Sender As MailAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailAddress ^ Sender { System::Net::Mail::MailAddress ^ get(); void set(System::Net::Mail::MailAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Sender : System.Net.Mail.MailAddress with get, set" Usage="System.Net.Mail.MailMessage.Sender" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1168,6 +1190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Subject" />
       <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="System.Net.Mail.MailMessage.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1213,6 +1236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.SubjectEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property SubjectEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ SubjectEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectEncoding : System.Text.Encoding with get, set" Usage="System.Net.Mail.MailMessage.SubjectEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1263,6 +1287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.To" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property To As MailAddressCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailAddressCollection ^ To { System::Net::Mail::MailAddressCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.To : System.Net.Mail.MailAddressCollection" Usage="System.Net.Mail.MailMessage.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ImageClickEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageClickEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageClickEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ImageClickEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ImageClickEventArgs.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageClickEventArgs(int x, int y);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ImageClickEventArgs : int * int -&gt; System.Web.UI.ImageClickEventArgs" Usage="new System.Web.UI.ImageClickEventArgs (x, y)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ImageClickEventArgs.#ctor(System.Int32,System.Int32,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer, xRaw As Double, yRaw As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageClickEventArgs(int x, int y, double xRaw, double yRaw);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ImageClickEventArgs : int * int * double * double -&gt; System.Web.UI.ImageClickEventArgs" Usage="new System.Web.UI.ImageClickEventArgs (x, y, xRaw, yRaw)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ImageClickEventArgs.X" />
       <MemberSignature Language="VB.NET" Value="Public X As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int X;" />
+      <MemberSignature Language="F#" Value="val mutable X : int" Usage="System.Web.UI.ImageClickEventArgs.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ImageClickEventArgs.XRaw" />
       <MemberSignature Language="VB.NET" Value="Public XRaw As Double " />
       <MemberSignature Language="C++ CLI" Value="public: double XRaw;" />
+      <MemberSignature Language="F#" Value="val mutable XRaw : double" Usage="System.Web.UI.ImageClickEventArgs.XRaw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ImageClickEventArgs.Y" />
       <MemberSignature Language="VB.NET" Value="Public Y As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int Y;" />
+      <MemberSignature Language="F#" Value="val mutable Y : int" Usage="System.Web.UI.ImageClickEventArgs.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ImageClickEventArgs.YRaw" />
       <MemberSignature Language="VB.NET" Value="Public YRaw As Double " />
       <MemberSignature Language="C++ CLI" Value="public: double YRaw;" />
+      <MemberSignature Language="F#" Value="val mutable YRaw : double" Usage="System.Web.UI.ImageClickEventArgs.YRaw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

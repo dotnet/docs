@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.KeyedHashAlgorithm" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class KeyedHashAlgorithm&#xA;Inherits HashAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyedHashAlgorithm abstract : System::Security::Cryptography::HashAlgorithm" />
+  <TypeSignature Language="F#" Value="type KeyedHashAlgorithm = class&#xA;    inherit HashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -103,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As KeyedHashAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::KeyedHashAlgorithm ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.KeyedHashAlgorithm" Usage="System.Security.Cryptography.KeyedHashAlgorithm.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As KeyedHashAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::KeyedHashAlgorithm ^ Create(System::String ^ algName);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.KeyedHashAlgorithm" Usage="System.Security.Cryptography.KeyedHashAlgorithm.Create algName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="keyedHashAlgorithm.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -270,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.KeyedHashAlgorithm.Key" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Key As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.KeyedHashAlgorithm.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -318,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.KeyedHashAlgorithm.KeyValue" />
       <MemberSignature Language="VB.NET" Value="Protected KeyValue As Byte() " />
       <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Byte&gt; ^ KeyValue;" />
+      <MemberSignature Language="F#" Value="val mutable KeyValue : byte[]" Usage="System.Security.Cryptography.KeyedHashAlgorithm.KeyValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

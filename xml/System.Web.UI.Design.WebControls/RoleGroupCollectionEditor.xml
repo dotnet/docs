@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.RoleGroupCollectionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class RoleGroupCollectionEditor&#xA;Inherits CollectionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoleGroupCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
+  <TypeSignature Language="F#" Value="type RoleGroupCollectionEditor = class&#xA;    inherit CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RoleGroupCollectionEditor.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RoleGroupCollectionEditor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.RoleGroupCollectionEditor : Type -&gt; System.Web.UI.Design.WebControls.RoleGroupCollectionEditor" Usage="new System.Web.UI.Design.WebControls.RoleGroupCollectionEditor type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RoleGroupCollectionEditor.CanSelectMultipleInstances" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanSelectMultipleInstances () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanSelectMultipleInstances();" />
+      <MemberSignature Language="F#" Value="override this.CanSelectMultipleInstances : unit -&gt; bool" Usage="roleGroupCollectionEditor.CanSelectMultipleInstances " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlTextWriterTag" />
   <TypeSignature Language="VB.NET" Value="Public Enum HtmlTextWriterTag" />
   <TypeSignature Language="C++ CLI" Value="public enum class HtmlTextWriterTag" />
+  <TypeSignature Language="F#" Value="type HtmlTextWriterTag = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.A" />
       <MemberSignature Language="VB.NET" Value="A" />
       <MemberSignature Language="C++ CLI" Value="A" />
+      <MemberSignature Language="F#" Value="A = 1" Usage="System.Web.UI.HtmlTextWriterTag.A" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Acronym" />
       <MemberSignature Language="VB.NET" Value="Acronym" />
       <MemberSignature Language="C++ CLI" Value="Acronym" />
+      <MemberSignature Language="F#" Value="Acronym = 2" Usage="System.Web.UI.HtmlTextWriterTag.Acronym" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Address" />
       <MemberSignature Language="VB.NET" Value="Address" />
       <MemberSignature Language="C++ CLI" Value="Address" />
+      <MemberSignature Language="F#" Value="Address = 3" Usage="System.Web.UI.HtmlTextWriterTag.Address" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Area" />
       <MemberSignature Language="VB.NET" Value="Area" />
       <MemberSignature Language="C++ CLI" Value="Area" />
+      <MemberSignature Language="F#" Value="Area = 4" Usage="System.Web.UI.HtmlTextWriterTag.Area" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.B" />
       <MemberSignature Language="VB.NET" Value="B" />
       <MemberSignature Language="C++ CLI" Value="B" />
+      <MemberSignature Language="F#" Value="B = 5" Usage="System.Web.UI.HtmlTextWriterTag.B" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Base" />
       <MemberSignature Language="VB.NET" Value="Base" />
       <MemberSignature Language="C++ CLI" Value="Base" />
+      <MemberSignature Language="F#" Value="Base = 6" Usage="System.Web.UI.HtmlTextWriterTag.Base" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Basefont" />
       <MemberSignature Language="VB.NET" Value="Basefont" />
       <MemberSignature Language="C++ CLI" Value="Basefont" />
+      <MemberSignature Language="F#" Value="Basefont = 7" Usage="System.Web.UI.HtmlTextWriterTag.Basefont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Bdo" />
       <MemberSignature Language="VB.NET" Value="Bdo" />
       <MemberSignature Language="C++ CLI" Value="Bdo" />
+      <MemberSignature Language="F#" Value="Bdo = 8" Usage="System.Web.UI.HtmlTextWriterTag.Bdo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Bgsound" />
       <MemberSignature Language="VB.NET" Value="Bgsound" />
       <MemberSignature Language="C++ CLI" Value="Bgsound" />
+      <MemberSignature Language="F#" Value="Bgsound = 9" Usage="System.Web.UI.HtmlTextWriterTag.Bgsound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Big" />
       <MemberSignature Language="VB.NET" Value="Big" />
       <MemberSignature Language="C++ CLI" Value="Big" />
+      <MemberSignature Language="F#" Value="Big = 10" Usage="System.Web.UI.HtmlTextWriterTag.Big" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Blockquote" />
       <MemberSignature Language="VB.NET" Value="Blockquote" />
       <MemberSignature Language="C++ CLI" Value="Blockquote" />
+      <MemberSignature Language="F#" Value="Blockquote = 11" Usage="System.Web.UI.HtmlTextWriterTag.Blockquote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -248,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Body" />
       <MemberSignature Language="VB.NET" Value="Body" />
       <MemberSignature Language="C++ CLI" Value="Body" />
+      <MemberSignature Language="F#" Value="Body = 12" Usage="System.Web.UI.HtmlTextWriterTag.Body" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Br" />
       <MemberSignature Language="VB.NET" Value="Br" />
       <MemberSignature Language="C++ CLI" Value="Br" />
+      <MemberSignature Language="F#" Value="Br = 13" Usage="System.Web.UI.HtmlTextWriterTag.Br" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -286,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Button" />
       <MemberSignature Language="VB.NET" Value="Button" />
       <MemberSignature Language="C++ CLI" Value="Button" />
+      <MemberSignature Language="F#" Value="Button = 14" Usage="System.Web.UI.HtmlTextWriterTag.Button" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -305,6 +320,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Caption" />
       <MemberSignature Language="VB.NET" Value="Caption" />
       <MemberSignature Language="C++ CLI" Value="Caption" />
+      <MemberSignature Language="F#" Value="Caption = 15" Usage="System.Web.UI.HtmlTextWriterTag.Caption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Center" />
       <MemberSignature Language="VB.NET" Value="Center" />
       <MemberSignature Language="C++ CLI" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 16" Usage="System.Web.UI.HtmlTextWriterTag.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -343,6 +360,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Cite" />
       <MemberSignature Language="VB.NET" Value="Cite" />
       <MemberSignature Language="C++ CLI" Value="Cite" />
+      <MemberSignature Language="F#" Value="Cite = 17" Usage="System.Web.UI.HtmlTextWriterTag.Cite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -362,6 +380,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Code" />
       <MemberSignature Language="VB.NET" Value="Code" />
       <MemberSignature Language="C++ CLI" Value="Code" />
+      <MemberSignature Language="F#" Value="Code = 18" Usage="System.Web.UI.HtmlTextWriterTag.Code" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -381,6 +400,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Col" />
       <MemberSignature Language="VB.NET" Value="Col" />
       <MemberSignature Language="C++ CLI" Value="Col" />
+      <MemberSignature Language="F#" Value="Col = 19" Usage="System.Web.UI.HtmlTextWriterTag.Col" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -400,6 +420,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Colgroup" />
       <MemberSignature Language="VB.NET" Value="Colgroup" />
       <MemberSignature Language="C++ CLI" Value="Colgroup" />
+      <MemberSignature Language="F#" Value="Colgroup = 20" Usage="System.Web.UI.HtmlTextWriterTag.Colgroup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -419,6 +440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Dd" />
       <MemberSignature Language="VB.NET" Value="Dd" />
       <MemberSignature Language="C++ CLI" Value="Dd" />
+      <MemberSignature Language="F#" Value="Dd = 21" Usage="System.Web.UI.HtmlTextWriterTag.Dd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -438,6 +460,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Del" />
       <MemberSignature Language="VB.NET" Value="Del" />
       <MemberSignature Language="C++ CLI" Value="Del" />
+      <MemberSignature Language="F#" Value="Del = 22" Usage="System.Web.UI.HtmlTextWriterTag.Del" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -457,6 +480,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Dfn" />
       <MemberSignature Language="VB.NET" Value="Dfn" />
       <MemberSignature Language="C++ CLI" Value="Dfn" />
+      <MemberSignature Language="F#" Value="Dfn = 23" Usage="System.Web.UI.HtmlTextWriterTag.Dfn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -476,6 +500,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Dir" />
       <MemberSignature Language="VB.NET" Value="Dir" />
       <MemberSignature Language="C++ CLI" Value="Dir" />
+      <MemberSignature Language="F#" Value="Dir = 24" Usage="System.Web.UI.HtmlTextWriterTag.Dir" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,6 +520,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Div" />
       <MemberSignature Language="VB.NET" Value="Div" />
       <MemberSignature Language="C++ CLI" Value="Div" />
+      <MemberSignature Language="F#" Value="Div = 25" Usage="System.Web.UI.HtmlTextWriterTag.Div" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -514,6 +540,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Dl" />
       <MemberSignature Language="VB.NET" Value="Dl" />
       <MemberSignature Language="C++ CLI" Value="Dl" />
+      <MemberSignature Language="F#" Value="Dl = 26" Usage="System.Web.UI.HtmlTextWriterTag.Dl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -533,6 +560,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Dt" />
       <MemberSignature Language="VB.NET" Value="Dt" />
       <MemberSignature Language="C++ CLI" Value="Dt" />
+      <MemberSignature Language="F#" Value="Dt = 27" Usage="System.Web.UI.HtmlTextWriterTag.Dt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -552,6 +580,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Em" />
       <MemberSignature Language="VB.NET" Value="Em" />
       <MemberSignature Language="C++ CLI" Value="Em" />
+      <MemberSignature Language="F#" Value="Em = 28" Usage="System.Web.UI.HtmlTextWriterTag.Em" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -571,6 +600,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Embed" />
       <MemberSignature Language="VB.NET" Value="Embed" />
       <MemberSignature Language="C++ CLI" Value="Embed" />
+      <MemberSignature Language="F#" Value="Embed = 29" Usage="System.Web.UI.HtmlTextWriterTag.Embed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -590,6 +620,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Fieldset" />
       <MemberSignature Language="VB.NET" Value="Fieldset" />
       <MemberSignature Language="C++ CLI" Value="Fieldset" />
+      <MemberSignature Language="F#" Value="Fieldset = 30" Usage="System.Web.UI.HtmlTextWriterTag.Fieldset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -609,6 +640,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Font" />
       <MemberSignature Language="VB.NET" Value="Font" />
       <MemberSignature Language="C++ CLI" Value="Font" />
+      <MemberSignature Language="F#" Value="Font = 31" Usage="System.Web.UI.HtmlTextWriterTag.Font" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -628,6 +660,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Form" />
       <MemberSignature Language="VB.NET" Value="Form" />
       <MemberSignature Language="C++ CLI" Value="Form" />
+      <MemberSignature Language="F#" Value="Form = 32" Usage="System.Web.UI.HtmlTextWriterTag.Form" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -647,6 +680,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Frame" />
       <MemberSignature Language="VB.NET" Value="Frame" />
       <MemberSignature Language="C++ CLI" Value="Frame" />
+      <MemberSignature Language="F#" Value="Frame = 33" Usage="System.Web.UI.HtmlTextWriterTag.Frame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -666,6 +700,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Frameset" />
       <MemberSignature Language="VB.NET" Value="Frameset" />
       <MemberSignature Language="C++ CLI" Value="Frameset" />
+      <MemberSignature Language="F#" Value="Frameset = 34" Usage="System.Web.UI.HtmlTextWriterTag.Frameset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -685,6 +720,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.H1" />
       <MemberSignature Language="VB.NET" Value="H1" />
       <MemberSignature Language="C++ CLI" Value="H1" />
+      <MemberSignature Language="F#" Value="H1 = 35" Usage="System.Web.UI.HtmlTextWriterTag.H1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -704,6 +740,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.H2" />
       <MemberSignature Language="VB.NET" Value="H2" />
       <MemberSignature Language="C++ CLI" Value="H2" />
+      <MemberSignature Language="F#" Value="H2 = 36" Usage="System.Web.UI.HtmlTextWriterTag.H2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -723,6 +760,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.H3" />
       <MemberSignature Language="VB.NET" Value="H3" />
       <MemberSignature Language="C++ CLI" Value="H3" />
+      <MemberSignature Language="F#" Value="H3 = 37" Usage="System.Web.UI.HtmlTextWriterTag.H3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -742,6 +780,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.H4" />
       <MemberSignature Language="VB.NET" Value="H4" />
       <MemberSignature Language="C++ CLI" Value="H4" />
+      <MemberSignature Language="F#" Value="H4 = 38" Usage="System.Web.UI.HtmlTextWriterTag.H4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -761,6 +800,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.H5" />
       <MemberSignature Language="VB.NET" Value="H5" />
       <MemberSignature Language="C++ CLI" Value="H5" />
+      <MemberSignature Language="F#" Value="H5 = 39" Usage="System.Web.UI.HtmlTextWriterTag.H5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -780,6 +820,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.H6" />
       <MemberSignature Language="VB.NET" Value="H6" />
       <MemberSignature Language="C++ CLI" Value="H6" />
+      <MemberSignature Language="F#" Value="H6 = 40" Usage="System.Web.UI.HtmlTextWriterTag.H6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -799,6 +840,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Head" />
       <MemberSignature Language="VB.NET" Value="Head" />
       <MemberSignature Language="C++ CLI" Value="Head" />
+      <MemberSignature Language="F#" Value="Head = 41" Usage="System.Web.UI.HtmlTextWriterTag.Head" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -818,6 +860,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Hr" />
       <MemberSignature Language="VB.NET" Value="Hr" />
       <MemberSignature Language="C++ CLI" Value="Hr" />
+      <MemberSignature Language="F#" Value="Hr = 42" Usage="System.Web.UI.HtmlTextWriterTag.Hr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -837,6 +880,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Html" />
       <MemberSignature Language="VB.NET" Value="Html" />
       <MemberSignature Language="C++ CLI" Value="Html" />
+      <MemberSignature Language="F#" Value="Html = 43" Usage="System.Web.UI.HtmlTextWriterTag.Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -856,6 +900,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.I" />
       <MemberSignature Language="VB.NET" Value="I" />
       <MemberSignature Language="C++ CLI" Value="I" />
+      <MemberSignature Language="F#" Value="I = 44" Usage="System.Web.UI.HtmlTextWriterTag.I" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -875,6 +920,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Iframe" />
       <MemberSignature Language="VB.NET" Value="Iframe" />
       <MemberSignature Language="C++ CLI" Value="Iframe" />
+      <MemberSignature Language="F#" Value="Iframe = 45" Usage="System.Web.UI.HtmlTextWriterTag.Iframe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -894,6 +940,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Img" />
       <MemberSignature Language="VB.NET" Value="Img" />
       <MemberSignature Language="C++ CLI" Value="Img" />
+      <MemberSignature Language="F#" Value="Img = 46" Usage="System.Web.UI.HtmlTextWriterTag.Img" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -913,6 +960,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Input" />
       <MemberSignature Language="VB.NET" Value="Input" />
       <MemberSignature Language="C++ CLI" Value="Input" />
+      <MemberSignature Language="F#" Value="Input = 47" Usage="System.Web.UI.HtmlTextWriterTag.Input" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -932,6 +980,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Ins" />
       <MemberSignature Language="VB.NET" Value="Ins" />
       <MemberSignature Language="C++ CLI" Value="Ins" />
+      <MemberSignature Language="F#" Value="Ins = 48" Usage="System.Web.UI.HtmlTextWriterTag.Ins" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -951,6 +1000,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Isindex" />
       <MemberSignature Language="VB.NET" Value="Isindex" />
       <MemberSignature Language="C++ CLI" Value="Isindex" />
+      <MemberSignature Language="F#" Value="Isindex = 49" Usage="System.Web.UI.HtmlTextWriterTag.Isindex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -970,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Kbd" />
       <MemberSignature Language="VB.NET" Value="Kbd" />
       <MemberSignature Language="C++ CLI" Value="Kbd" />
+      <MemberSignature Language="F#" Value="Kbd = 50" Usage="System.Web.UI.HtmlTextWriterTag.Kbd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -989,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Label" />
       <MemberSignature Language="VB.NET" Value="Label" />
       <MemberSignature Language="C++ CLI" Value="Label" />
+      <MemberSignature Language="F#" Value="Label = 51" Usage="System.Web.UI.HtmlTextWriterTag.Label" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1008,6 +1060,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Legend" />
       <MemberSignature Language="VB.NET" Value="Legend" />
       <MemberSignature Language="C++ CLI" Value="Legend" />
+      <MemberSignature Language="F#" Value="Legend = 52" Usage="System.Web.UI.HtmlTextWriterTag.Legend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1027,6 +1080,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Li" />
       <MemberSignature Language="VB.NET" Value="Li" />
       <MemberSignature Language="C++ CLI" Value="Li" />
+      <MemberSignature Language="F#" Value="Li = 53" Usage="System.Web.UI.HtmlTextWriterTag.Li" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1046,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Link" />
       <MemberSignature Language="VB.NET" Value="Link" />
       <MemberSignature Language="C++ CLI" Value="Link" />
+      <MemberSignature Language="F#" Value="Link = 54" Usage="System.Web.UI.HtmlTextWriterTag.Link" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1065,6 +1120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Map" />
       <MemberSignature Language="VB.NET" Value="Map" />
       <MemberSignature Language="C++ CLI" Value="Map" />
+      <MemberSignature Language="F#" Value="Map = 55" Usage="System.Web.UI.HtmlTextWriterTag.Map" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1084,6 +1140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Marquee" />
       <MemberSignature Language="VB.NET" Value="Marquee" />
       <MemberSignature Language="C++ CLI" Value="Marquee" />
+      <MemberSignature Language="F#" Value="Marquee = 56" Usage="System.Web.UI.HtmlTextWriterTag.Marquee" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1103,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Menu" />
       <MemberSignature Language="VB.NET" Value="Menu" />
       <MemberSignature Language="C++ CLI" Value="Menu" />
+      <MemberSignature Language="F#" Value="Menu = 57" Usage="System.Web.UI.HtmlTextWriterTag.Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1122,6 +1180,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Meta" />
       <MemberSignature Language="VB.NET" Value="Meta" />
       <MemberSignature Language="C++ CLI" Value="Meta" />
+      <MemberSignature Language="F#" Value="Meta = 58" Usage="System.Web.UI.HtmlTextWriterTag.Meta" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1141,6 +1200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Nobr" />
       <MemberSignature Language="VB.NET" Value="Nobr" />
       <MemberSignature Language="C++ CLI" Value="Nobr" />
+      <MemberSignature Language="F#" Value="Nobr = 59" Usage="System.Web.UI.HtmlTextWriterTag.Nobr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1160,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Noframes" />
       <MemberSignature Language="VB.NET" Value="Noframes" />
       <MemberSignature Language="C++ CLI" Value="Noframes" />
+      <MemberSignature Language="F#" Value="Noframes = 60" Usage="System.Web.UI.HtmlTextWriterTag.Noframes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1179,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Noscript" />
       <MemberSignature Language="VB.NET" Value="Noscript" />
       <MemberSignature Language="C++ CLI" Value="Noscript" />
+      <MemberSignature Language="F#" Value="Noscript = 61" Usage="System.Web.UI.HtmlTextWriterTag.Noscript" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1198,6 +1260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Object" />
       <MemberSignature Language="VB.NET" Value="Object" />
       <MemberSignature Language="C++ CLI" Value="Object" />
+      <MemberSignature Language="F#" Value="Object = 62" Usage="System.Web.UI.HtmlTextWriterTag.Object" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1217,6 +1280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Ol" />
       <MemberSignature Language="VB.NET" Value="Ol" />
       <MemberSignature Language="C++ CLI" Value="Ol" />
+      <MemberSignature Language="F#" Value="Ol = 63" Usage="System.Web.UI.HtmlTextWriterTag.Ol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1236,6 +1300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Option" />
       <MemberSignature Language="VB.NET" Value="Option" />
       <MemberSignature Language="C++ CLI" Value="Option" />
+      <MemberSignature Language="F#" Value="Option = 64" Usage="System.Web.UI.HtmlTextWriterTag.Option" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1255,6 +1320,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.P" />
       <MemberSignature Language="VB.NET" Value="P" />
       <MemberSignature Language="C++ CLI" Value="P" />
+      <MemberSignature Language="F#" Value="P = 65" Usage="System.Web.UI.HtmlTextWriterTag.P" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1274,6 +1340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Param" />
       <MemberSignature Language="VB.NET" Value="Param" />
       <MemberSignature Language="C++ CLI" Value="Param" />
+      <MemberSignature Language="F#" Value="Param = 66" Usage="System.Web.UI.HtmlTextWriterTag.Param" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1293,6 +1360,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Pre" />
       <MemberSignature Language="VB.NET" Value="Pre" />
       <MemberSignature Language="C++ CLI" Value="Pre" />
+      <MemberSignature Language="F#" Value="Pre = 67" Usage="System.Web.UI.HtmlTextWriterTag.Pre" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1312,6 +1380,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Q" />
       <MemberSignature Language="VB.NET" Value="Q" />
       <MemberSignature Language="C++ CLI" Value="Q" />
+      <MemberSignature Language="F#" Value="Q = 68" Usage="System.Web.UI.HtmlTextWriterTag.Q" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1331,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Rt" />
       <MemberSignature Language="VB.NET" Value="Rt" />
       <MemberSignature Language="C++ CLI" Value="Rt" />
+      <MemberSignature Language="F#" Value="Rt = 69" Usage="System.Web.UI.HtmlTextWriterTag.Rt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1350,6 +1420,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Ruby" />
       <MemberSignature Language="VB.NET" Value="Ruby" />
       <MemberSignature Language="C++ CLI" Value="Ruby" />
+      <MemberSignature Language="F#" Value="Ruby = 70" Usage="System.Web.UI.HtmlTextWriterTag.Ruby" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1369,6 +1440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.S" />
       <MemberSignature Language="VB.NET" Value="S" />
       <MemberSignature Language="C++ CLI" Value="S" />
+      <MemberSignature Language="F#" Value="S = 71" Usage="System.Web.UI.HtmlTextWriterTag.S" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1388,6 +1460,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Samp" />
       <MemberSignature Language="VB.NET" Value="Samp" />
       <MemberSignature Language="C++ CLI" Value="Samp" />
+      <MemberSignature Language="F#" Value="Samp = 72" Usage="System.Web.UI.HtmlTextWriterTag.Samp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1407,6 +1480,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Script" />
       <MemberSignature Language="VB.NET" Value="Script" />
       <MemberSignature Language="C++ CLI" Value="Script" />
+      <MemberSignature Language="F#" Value="Script = 73" Usage="System.Web.UI.HtmlTextWriterTag.Script" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1426,6 +1500,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Select" />
       <MemberSignature Language="VB.NET" Value="Select" />
       <MemberSignature Language="C++ CLI" Value="Select" />
+      <MemberSignature Language="F#" Value="Select = 74" Usage="System.Web.UI.HtmlTextWriterTag.Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1445,6 +1520,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Small" />
       <MemberSignature Language="VB.NET" Value="Small" />
       <MemberSignature Language="C++ CLI" Value="Small" />
+      <MemberSignature Language="F#" Value="Small = 75" Usage="System.Web.UI.HtmlTextWriterTag.Small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1464,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Span" />
       <MemberSignature Language="VB.NET" Value="Span" />
       <MemberSignature Language="C++ CLI" Value="Span" />
+      <MemberSignature Language="F#" Value="Span = 76" Usage="System.Web.UI.HtmlTextWriterTag.Span" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1483,6 +1560,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Strike" />
       <MemberSignature Language="VB.NET" Value="Strike" />
       <MemberSignature Language="C++ CLI" Value="Strike" />
+      <MemberSignature Language="F#" Value="Strike = 77" Usage="System.Web.UI.HtmlTextWriterTag.Strike" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1502,6 +1580,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Strong" />
       <MemberSignature Language="VB.NET" Value="Strong" />
       <MemberSignature Language="C++ CLI" Value="Strong" />
+      <MemberSignature Language="F#" Value="Strong = 78" Usage="System.Web.UI.HtmlTextWriterTag.Strong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1521,6 +1600,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Style" />
       <MemberSignature Language="VB.NET" Value="Style" />
       <MemberSignature Language="C++ CLI" Value="Style" />
+      <MemberSignature Language="F#" Value="Style = 79" Usage="System.Web.UI.HtmlTextWriterTag.Style" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1540,6 +1620,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Sub" />
       <MemberSignature Language="VB.NET" Value="Sub" />
       <MemberSignature Language="C++ CLI" Value="Sub" />
+      <MemberSignature Language="F#" Value="Sub = 80" Usage="System.Web.UI.HtmlTextWriterTag.Sub" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1559,6 +1640,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Sup" />
       <MemberSignature Language="VB.NET" Value="Sup" />
       <MemberSignature Language="C++ CLI" Value="Sup" />
+      <MemberSignature Language="F#" Value="Sup = 81" Usage="System.Web.UI.HtmlTextWriterTag.Sup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1578,6 +1660,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Table" />
       <MemberSignature Language="VB.NET" Value="Table" />
       <MemberSignature Language="C++ CLI" Value="Table" />
+      <MemberSignature Language="F#" Value="Table = 82" Usage="System.Web.UI.HtmlTextWriterTag.Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1597,6 +1680,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Tbody" />
       <MemberSignature Language="VB.NET" Value="Tbody" />
       <MemberSignature Language="C++ CLI" Value="Tbody" />
+      <MemberSignature Language="F#" Value="Tbody = 83" Usage="System.Web.UI.HtmlTextWriterTag.Tbody" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1616,6 +1700,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Td" />
       <MemberSignature Language="VB.NET" Value="Td" />
       <MemberSignature Language="C++ CLI" Value="Td" />
+      <MemberSignature Language="F#" Value="Td = 84" Usage="System.Web.UI.HtmlTextWriterTag.Td" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1635,6 +1720,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Textarea" />
       <MemberSignature Language="VB.NET" Value="Textarea" />
       <MemberSignature Language="C++ CLI" Value="Textarea" />
+      <MemberSignature Language="F#" Value="Textarea = 85" Usage="System.Web.UI.HtmlTextWriterTag.Textarea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1654,6 +1740,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Tfoot" />
       <MemberSignature Language="VB.NET" Value="Tfoot" />
       <MemberSignature Language="C++ CLI" Value="Tfoot" />
+      <MemberSignature Language="F#" Value="Tfoot = 86" Usage="System.Web.UI.HtmlTextWriterTag.Tfoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1673,6 +1760,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Th" />
       <MemberSignature Language="VB.NET" Value="Th" />
       <MemberSignature Language="C++ CLI" Value="Th" />
+      <MemberSignature Language="F#" Value="Th = 87" Usage="System.Web.UI.HtmlTextWriterTag.Th" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1692,6 +1780,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Thead" />
       <MemberSignature Language="VB.NET" Value="Thead" />
       <MemberSignature Language="C++ CLI" Value="Thead" />
+      <MemberSignature Language="F#" Value="Thead = 88" Usage="System.Web.UI.HtmlTextWriterTag.Thead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1711,6 +1800,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Title" />
       <MemberSignature Language="VB.NET" Value="Title" />
       <MemberSignature Language="C++ CLI" Value="Title" />
+      <MemberSignature Language="F#" Value="Title = 89" Usage="System.Web.UI.HtmlTextWriterTag.Title" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1730,6 +1820,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Tr" />
       <MemberSignature Language="VB.NET" Value="Tr" />
       <MemberSignature Language="C++ CLI" Value="Tr" />
+      <MemberSignature Language="F#" Value="Tr = 90" Usage="System.Web.UI.HtmlTextWriterTag.Tr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1749,6 +1840,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Tt" />
       <MemberSignature Language="VB.NET" Value="Tt" />
       <MemberSignature Language="C++ CLI" Value="Tt" />
+      <MemberSignature Language="F#" Value="Tt = 91" Usage="System.Web.UI.HtmlTextWriterTag.Tt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1768,6 +1860,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.U" />
       <MemberSignature Language="VB.NET" Value="U" />
       <MemberSignature Language="C++ CLI" Value="U" />
+      <MemberSignature Language="F#" Value="U = 92" Usage="System.Web.UI.HtmlTextWriterTag.U" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1787,6 +1880,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Ul" />
       <MemberSignature Language="VB.NET" Value="Ul" />
       <MemberSignature Language="C++ CLI" Value="Ul" />
+      <MemberSignature Language="F#" Value="Ul = 93" Usage="System.Web.UI.HtmlTextWriterTag.Ul" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1806,6 +1900,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Web.UI.HtmlTextWriterTag.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1825,6 +1920,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Var" />
       <MemberSignature Language="VB.NET" Value="Var" />
       <MemberSignature Language="C++ CLI" Value="Var" />
+      <MemberSignature Language="F#" Value="Var = 94" Usage="System.Web.UI.HtmlTextWriterTag.Var" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1844,6 +1940,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Wbr" />
       <MemberSignature Language="VB.NET" Value="Wbr" />
       <MemberSignature Language="C++ CLI" Value="Wbr" />
+      <MemberSignature Language="F#" Value="Wbr = 95" Usage="System.Web.UI.HtmlTextWriterTag.Wbr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1863,6 +1960,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterTag.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 96" Usage="System.Web.UI.HtmlTextWriterTag.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

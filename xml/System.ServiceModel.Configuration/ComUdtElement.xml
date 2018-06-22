@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComUdtElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComUdtElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComUdtElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ComUdtElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComUdtElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeDefID As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComUdtElement(System::String ^ typeDefID);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ComUdtElement : string -&gt; System.ServiceModel.Configuration.ComUdtElement" Usage="new System.ServiceModel.Configuration.ComUdtElement typeDefID" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.ComUdtElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ComUdtElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeDefID" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeDefID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeDefID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeDefID : string with get, set" Usage="System.ServiceModel.Configuration.ComUdtElement.TypeDefID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeLibID" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeLibID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeLibID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeLibID : string with get, set" Usage="System.ServiceModel.Configuration.ComUdtElement.TypeLibID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeLibVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeLibVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeLibVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeLibVersion : string with get, set" Usage="System.ServiceModel.Configuration.ComUdtElement.TypeLibVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

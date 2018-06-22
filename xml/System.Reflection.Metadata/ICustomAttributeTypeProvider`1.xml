@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ICustomAttributeTypeProvider`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICustomAttributeTypeProvider(Of TType)&#xA;Implements ISimpleTypeProvider(Of TType), ISZArrayTypeProvider(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public interface class ICustomAttributeTypeProvider : System::Reflection::Metadata::ISimpleTypeProvider&lt;TType&gt;, System::Reflection::Metadata::ISZArrayTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="F#" Value="type ICustomAttributeTypeProvider&lt;'ype&gt; = interface&#xA;    interface ISimpleTypeProvider&lt;'ype&gt;&#xA;    interface ISZArrayTypeProvider&lt;'ype&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ICustomAttributeTypeProvider`1.GetSystemType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSystemType () As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetSystemType();" />
+      <MemberSignature Language="F#" Value="abstract member GetSystemType : unit -&gt; 'ype" Usage="iCustomAttributeTypeProvider.GetSystemType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ICustomAttributeTypeProvider`1.GetTypeFromSerializedName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeFromSerializedName (name As String) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetTypeFromSerializedName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeFromSerializedName : string -&gt; 'ype" Usage="iCustomAttributeTypeProvider.GetTypeFromSerializedName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ICustomAttributeTypeProvider`1.GetUnderlyingEnumType(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnderlyingEnumType (type As TType) As PrimitiveTypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::PrimitiveTypeCode GetUnderlyingEnumType(TType type);" />
+      <MemberSignature Language="F#" Value="abstract member GetUnderlyingEnumType : 'ype -&gt; System.Reflection.Metadata.PrimitiveTypeCode" Usage="iCustomAttributeTypeProvider.GetUnderlyingEnumType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ICustomAttributeTypeProvider`1.IsSystemType(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSystemType (type As TType) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSystemType(TType type);" />
+      <MemberSignature Language="F#" Value="abstract member IsSystemType : 'ype -&gt; bool" Usage="iCustomAttributeTypeProvider.IsSystemType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

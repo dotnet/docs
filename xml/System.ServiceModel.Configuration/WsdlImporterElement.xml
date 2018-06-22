@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WsdlImporterElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WsdlImporterElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WsdlImporterElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WsdlImporterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WsdlImporterElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WsdlImporterElement(System::String ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WsdlImporterElement : string -&gt; System.ServiceModel.Configuration.WsdlImporterElement" Usage="new System.ServiceModel.Configuration.WsdlImporterElement type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WsdlImporterElement.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WsdlImporterElement(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WsdlImporterElement : Type -&gt; System.ServiceModel.Configuration.WsdlImporterElement" Usage="new System.ServiceModel.Configuration.WsdlImporterElement type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WsdlImporterElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WsdlImporterElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WsdlImporterElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.ServiceModel.Configuration.WsdlImporterElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

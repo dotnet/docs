@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.StrongNameMembershipCondition" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StrongNameMembershipCondition&#xA;Implements IMembershipCondition" />
   <TypeSignature Language="C++ CLI" Value="public ref class StrongNameMembershipCondition sealed : System::Security::Policy::IMembershipCondition" />
+  <TypeSignature Language="F#" Value="type StrongNameMembershipCondition = class&#xA;    interface IMembershipCondition&#xA;    interface ISecurityEncodable&#xA;    interface ISecurityPolicyEncodable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Permissions.StrongNamePublicKeyBlob blob, string name, class System.Version version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.#ctor(System.Security.Permissions.StrongNamePublicKeyBlob,System.String,System.Version)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongNameMembershipCondition(System::Security::Permissions::StrongNamePublicKeyBlob ^ blob, System::String ^ name, Version ^ version);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.StrongNameMembershipCondition : System.Security.Permissions.StrongNamePublicKeyBlob * string * Version -&gt; System.Security.Policy.StrongNameMembershipCondition" Usage="new System.Security.Policy.StrongNameMembershipCondition (blob, name, version)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Check(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.Check(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Check(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member Check : System.Security.Policy.Evidence -&gt; bool&#xA;override this.Check : System.Security.Policy.Evidence -&gt; bool" Usage="strongNameMembershipCondition.Check evidence" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Check(System.Security.Policy.Evidence)</InterfaceMember>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As IMembershipCondition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::IMembershipCondition ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.Policy.IMembershipCondition&#xA;override this.Copy : unit -&gt; System.Security.Policy.IMembershipCondition" Usage="strongNameMembershipCondition.Copy " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Copy</InterfaceMember>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="strongNameMembershipCondition.Equals o" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Equals(System.Object)</InterfaceMember>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="strongNameMembershipCondition.FromXml e" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement, level As PolicyLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ e, System::Security::Policy::PolicyLevel ^ level);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit" Usage="strongNameMembershipCondition.FromXml (e, level)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)</InterfaceMember>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="strongNameMembershipCondition.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.StrongNameMembershipCondition.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Security.Policy.StrongNameMembershipCondition.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -338,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.StrongNameMembershipCondition.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public Property PublicKey As StrongNamePublicKeyBlob" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::StrongNamePublicKeyBlob ^ PublicKey { System::Security::Permissions::StrongNamePublicKeyBlob ^ get(); void set(System::Security::Permissions::StrongNamePublicKeyBlob ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : System.Security.Permissions.StrongNamePublicKeyBlob with get, set" Usage="System.Security.Policy.StrongNameMembershipCondition.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -373,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="strongNameMembershipCondition.ToString " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.ToString</InterfaceMember>
@@ -412,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="strongNameMembershipCondition.ToXml " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
@@ -441,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml (level As PolicyLevel) As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml(System::Security::Policy::PolicyLevel ^ level);" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement&#xA;override this.ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement" Usage="strongNameMembershipCondition.ToXml level" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.ToXml(System.Security.Policy.PolicyLevel)</InterfaceMember>
@@ -473,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.StrongNameMembershipCondition.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version with get, set" Usage="System.Security.Policy.StrongNameMembershipCondition.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DownloadFileGroupCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DownloadFileGroupCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DownloadFileGroupCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type DownloadFileGroupCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadFileGroupCompletedEventArgs.Group" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Group As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Group { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Group : string" Usage="System.Deployment.Application.DownloadFileGroupCompletedEventArgs.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

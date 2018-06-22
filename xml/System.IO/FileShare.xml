@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileShare" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileShare" />
   <TypeSignature Language="C++ CLI" Value="public enum class FileShare" />
+  <TypeSignature Language="F#" Value="type FileShare = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileShare.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 4" Usage="System.IO.FileShare.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileShare.Inheritable" />
       <MemberSignature Language="VB.NET" Value="Inheritable" />
       <MemberSignature Language="C++ CLI" Value="Inheritable" />
+      <MemberSignature Language="F#" Value="Inheritable = 16" Usage="System.IO.FileShare.Inheritable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileShare.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.FileShare.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileShare.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.IO.FileShare.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileShare.ReadWrite" />
       <MemberSignature Language="VB.NET" Value="ReadWrite" />
       <MemberSignature Language="C++ CLI" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 3" Usage="System.IO.FileShare.ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileShare.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.IO.FileShare.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>

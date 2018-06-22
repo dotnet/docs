@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationResult" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidationResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationResult" />
+  <TypeSignature Language="F#" Value="type ValidationResult = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.#ctor(System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isValid As Boolean, errorContent As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationResult(bool isValid, System::Object ^ errorContent);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.ValidationResult : bool * obj -&gt; System.Windows.Controls.ValidationResult" Usage="new System.Windows.Controls.ValidationResult (isValid, errorContent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="validationResult.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationResult.ErrorContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorContent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ErrorContent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorContent : obj" Usage="System.Windows.Controls.ValidationResult.ErrorContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="validationResult.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationResult.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Windows.Controls.ValidationResult.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.op_Equality(System.Windows.Controls.ValidationResult,System.Windows.Controls.ValidationResult)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ValidationResult, right As ValidationResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::ValidationResult ^ left, System::Windows::Controls::ValidationResult ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.ValidationResult * System.Windows.Controls.ValidationResult -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.op_Inequality(System.Windows.Controls.ValidationResult,System.Windows.Controls.ValidationResult)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ValidationResult, right As ValidationResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::ValidationResult ^ left, System::Windows::Controls::ValidationResult ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.ValidationResult * System.Windows.Controls.ValidationResult -&gt; bool" Usage="System.Windows.Controls.ValidationResult.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -268,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationResult.ValidResult" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ValidResult As ValidationResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::ValidationResult ^ ValidResult { System::Windows::Controls::ValidationResult ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidResult : System.Windows.Controls.ValidationResult" Usage="System.Windows.Controls.ValidationResult.ValidResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

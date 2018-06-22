@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.CommonObjectSecurity" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CommonObjectSecurity&#xA;Inherits ObjectSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommonObjectSecurity abstract : System::Security::AccessControl::ObjectSecurity" />
+  <TypeSignature Language="F#" Value="type CommonObjectSecurity = class&#xA;    inherit ObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (isContainer As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CommonObjectSecurity(bool isContainer);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.CommonObjectSecurity : bool -&gt; System.Security.AccessControl.CommonObjectSecurity" Usage="new System.Security.AccessControl.CommonObjectSecurity isContainer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.AddAccessRule(System.Security.AccessControl.AccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddAccessRule (rule As AccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddAccessRule(System::Security::AccessControl::AccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.AddAccessRule : System.Security.AccessControl.AccessRule -&gt; unit" Usage="commonObjectSecurity.AddAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.AddAuditRule(System.Security.AccessControl.AuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddAuditRule (rule As AuditRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddAuditRule(System::Security::AccessControl::AuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.AddAuditRule : System.Security.AccessControl.AuditRule -&gt; unit" Usage="commonObjectSecurity.AddAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessRules (includeExplicit As Boolean, includeInherited As Boolean, targetType As Type) As AuthorizationRuleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::AuthorizationRuleCollection ^ GetAccessRules(bool includeExplicit, bool includeInherited, Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="member this.GetAccessRules : bool * bool * Type -&gt; System.Security.AccessControl.AuthorizationRuleCollection" Usage="commonObjectSecurity.GetAccessRules (includeExplicit, includeInherited, targetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.GetAuditRules(System.Boolean,System.Boolean,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAuditRules (includeExplicit As Boolean, includeInherited As Boolean, targetType As Type) As AuthorizationRuleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::AuthorizationRuleCollection ^ GetAuditRules(bool includeExplicit, bool includeInherited, Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="member this.GetAuditRules : bool * bool * Type -&gt; System.Security.AccessControl.AuthorizationRuleCollection" Usage="commonObjectSecurity.GetAuditRules (includeExplicit, includeInherited, targetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ModifyAccess (modification As AccessControlModification, rule As AccessRule, ByRef modified As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ModifyAccess(System::Security::AccessControl::AccessControlModification modification, System::Security::AccessControl::AccessRule ^ rule, [Runtime::InteropServices::Out] bool % modified);" />
+      <MemberSignature Language="F#" Value="override this.ModifyAccess : System.Security.AccessControl.AccessControlModification * System.Security.AccessControl.AccessRule *  -&gt; bool" Usage="commonObjectSecurity.ModifyAccess (modification, rule, modified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ModifyAudit (modification As AccessControlModification, rule As AuditRule, ByRef modified As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ModifyAudit(System::Security::AccessControl::AccessControlModification modification, System::Security::AccessControl::AuditRule ^ rule, [Runtime::InteropServices::Out] bool % modified);" />
+      <MemberSignature Language="F#" Value="override this.ModifyAudit : System.Security.AccessControl.AccessControlModification * System.Security.AccessControl.AuditRule *  -&gt; bool" Usage="commonObjectSecurity.ModifyAudit (modification, rule, modified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule(System.Security.AccessControl.AccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Function RemoveAccessRule (rule As AccessRule) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool RemoveAccessRule(System::Security::AccessControl::AccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessRule : System.Security.AccessControl.AccessRule -&gt; bool" Usage="commonObjectSecurity.RemoveAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.AccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAccessRuleAll (rule As AccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::AccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessRuleAll : System.Security.AccessControl.AccessRule -&gt; unit" Usage="commonObjectSecurity.RemoveAccessRuleAll rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -359,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.AccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAccessRuleSpecific (rule As AccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::AccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessRuleSpecific : System.Security.AccessControl.AccessRule -&gt; unit" Usage="commonObjectSecurity.RemoveAccessRuleSpecific rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -395,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule(System.Security.AccessControl.AuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Function RemoveAuditRule (rule As AuditRule) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool RemoveAuditRule(System::Security::AccessControl::AuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAuditRule : System.Security.AccessControl.AuditRule -&gt; bool" Usage="commonObjectSecurity.RemoveAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -435,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.AuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAuditRuleAll (rule As AuditRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::AuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAuditRuleAll : System.Security.AccessControl.AuditRule -&gt; unit" Usage="commonObjectSecurity.RemoveAuditRuleAll rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -464,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.AuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAuditRuleSpecific (rule As AuditRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::AuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAuditRuleSpecific : System.Security.AccessControl.AuditRule -&gt; unit" Usage="commonObjectSecurity.RemoveAuditRuleSpecific rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -493,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule(System.Security.AccessControl.AccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ResetAccessRule (rule As AccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ResetAccessRule(System::Security::AccessControl::AccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.ResetAccessRule : System.Security.AccessControl.AccessRule -&gt; unit" Usage="commonObjectSecurity.ResetAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -529,6 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.SetAccessRule(System.Security.AccessControl.AccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetAccessRule (rule As AccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAccessRule(System::Security::AccessControl::AccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.SetAccessRule : System.Security.AccessControl.AccessRule -&gt; unit" Usage="commonObjectSecurity.SetAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -565,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.SetAuditRule(System.Security.AccessControl.AuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetAuditRule (rule As AuditRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAuditRule(System::Security::AccessControl::AuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.SetAuditRule : System.Security.AccessControl.AuditRule -&gt; unit" Usage="commonObjectSecurity.SetAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

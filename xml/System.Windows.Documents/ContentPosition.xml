@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.ContentPosition" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContentPosition" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentPosition abstract" />
+  <TypeSignature Language="F#" Value="type ContentPosition = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.ContentPosition.Missing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Missing As ContentPosition " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Documents::ContentPosition ^ Missing;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Missing : System.Windows.Documents.ContentPosition" Usage="System.Windows.Documents.ContentPosition.Missing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

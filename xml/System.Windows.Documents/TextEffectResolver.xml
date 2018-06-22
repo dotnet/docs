@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextEffectResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class TextEffectResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextEffectResolver abstract sealed" />
+  <TypeSignature Language="F#" Value="type TextEffectResolver = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextEffectResolver.Resolve(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer,System.Windows.Media.TextEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (startPosition As TextPointer, endPosition As TextPointer, effect As TextEffect) As TextEffectTarget()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Windows::Documents::TextEffectTarget ^&gt; ^ Resolve(System::Windows::Documents::TextPointer ^ startPosition, System::Windows::Documents::TextPointer ^ endPosition, System::Windows::Media::TextEffect ^ effect);" />
+      <MemberSignature Language="F#" Value="static member Resolve : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer * System.Windows.Media.TextEffect -&gt; System.Windows.Documents.TextEffectTarget[]" Usage="System.Windows.Documents.TextEffectResolver.Resolve (startPosition, endPosition, effect)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

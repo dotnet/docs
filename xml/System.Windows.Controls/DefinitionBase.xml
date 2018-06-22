@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DefinitionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DefinitionBase&#xA;Inherits FrameworkContentElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefinitionBase abstract : System::Windows::FrameworkContentElement" />
+  <TypeSignature Language="F#" Value="type DefinitionBase = class&#xA;    inherit FrameworkContentElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DefinitionBase.SharedSizeGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property SharedSizeGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharedSizeGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SharedSizeGroup : string with get, set" Usage="System.Windows.Controls.DefinitionBase.SharedSizeGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DefinitionBase.SharedSizeGroupProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SharedSizeGroupProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SharedSizeGroupProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SharedSizeGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DefinitionBase.SharedSizeGroupProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

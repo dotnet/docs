@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXpsFixedDocumentSequenceWriter" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXpsFixedDocumentSequenceWriter" />
+  <TypeSignature Language="F#" Value="type IXpsFixedDocumentSequenceWriter = interface" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.AddFixedDocument" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFixedDocument () As IXpsFixedDocumentWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::IXpsFixedDocumentWriter ^ AddFixedDocument();" />
+      <MemberSignature Language="F#" Value="abstract member AddFixedDocument : unit -&gt; System.Windows.Xps.Packaging.IXpsFixedDocumentWriter" Usage="iXpsFixedDocumentSequenceWriter.AddFixedDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddThumbnail (imageType As XpsImageType) As XpsThumbnail" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsThumbnail ^ AddThumbnail(System::Windows::Xps::Packaging::XpsImageType imageType);" />
+      <MemberSignature Language="F#" Value="abstract member AddThumbnail : System.Windows.Xps.Packaging.XpsImageType -&gt; System.Windows.Xps.Packaging.XpsThumbnail" Usage="iXpsFixedDocumentSequenceWriter.AddThumbnail imageType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
+      <MemberSignature Language="F#" Value="abstract member Commit : unit -&gt; unit" Usage="iXpsFixedDocumentSequenceWriter.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.PrintTicket" />
       <MemberSignature Language="VB.NET" Value="Public Property PrintTicket As PrintTicket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintTicket ^ PrintTicket {  void set(System::Printing::PrintTicket ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrintTicket : System.Printing.PrintTicket" Usage="System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.PrintTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

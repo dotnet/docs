@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IComponentEditorPageSite" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComponentEditorPageSite" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComponentEditorPageSite" />
+  <TypeSignature Language="F#" Value="type IComponentEditorPageSite = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IComponentEditorPageSite.GetControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetControl () As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Control ^ GetControl();" />
+      <MemberSignature Language="F#" Value="abstract member GetControl : unit -&gt; System.Windows.Forms.Control" Usage="iComponentEditorPageSite.GetControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IComponentEditorPageSite.SetDirty" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDirty ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDirty();" />
+      <MemberSignature Language="F#" Value="abstract member SetDirty : unit -&gt; unit" Usage="iComponentEditorPageSite.SetDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

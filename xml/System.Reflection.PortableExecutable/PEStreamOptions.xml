@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEStreamOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum PEStreamOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class PEStreamOptions" />
+  <TypeSignature Language="F#" Value="type PEStreamOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEStreamOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Reflection.PortableExecutable.PEStreamOptions.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEStreamOptions.IsLoadedImage" />
       <MemberSignature Language="VB.NET" Value="IsLoadedImage" />
       <MemberSignature Language="C++ CLI" Value="IsLoadedImage" />
+      <MemberSignature Language="F#" Value="IsLoadedImage = 8" Usage="System.Reflection.PortableExecutable.PEStreamOptions.IsLoadedImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen" />
       <MemberSignature Language="VB.NET" Value="LeaveOpen" />
       <MemberSignature Language="C++ CLI" Value="LeaveOpen" />
+      <MemberSignature Language="F#" Value="LeaveOpen = 1" Usage="System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage" />
       <MemberSignature Language="VB.NET" Value="PrefetchEntireImage" />
       <MemberSignature Language="C++ CLI" Value="PrefetchEntireImage" />
+      <MemberSignature Language="F#" Value="PrefetchEntireImage = 4" Usage="System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata" />
       <MemberSignature Language="VB.NET" Value="PrefetchMetadata" />
       <MemberSignature Language="C++ CLI" Value="PrefetchMetadata" />
+      <MemberSignature Language="F#" Value="PrefetchMetadata = 2" Usage="System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

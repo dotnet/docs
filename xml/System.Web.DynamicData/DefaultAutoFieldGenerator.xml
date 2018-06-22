@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DefaultAutoFieldGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class DefaultAutoFieldGenerator&#xA;Implements IAutoFieldGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultAutoFieldGenerator : System::Web::UI::IAutoFieldGenerator" />
+  <TypeSignature Language="F#" Value="type DefaultAutoFieldGenerator = class&#xA;    interface IAutoFieldGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DefaultAutoFieldGenerator.#ctor(System.Web.DynamicData.MetaTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (table As MetaTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultAutoFieldGenerator(System::Web::DynamicData::MetaTable ^ table);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.DefaultAutoFieldGenerator : System.Web.DynamicData.MetaTable -&gt; System.Web.DynamicData.DefaultAutoFieldGenerator" Usage="new System.Web.DynamicData.DefaultAutoFieldGenerator table" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.DynamicData.DynamicField CreateField(class System.Web.DynamicData.MetaColumn column, valuetype System.Web.DynamicData.ContainerType containerType, valuetype System.Web.UI.WebControls.DataBoundControlMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DefaultAutoFieldGenerator.CreateField(System.Web.DynamicData.MetaColumn,System.Web.DynamicData.ContainerType,System.Web.UI.WebControls.DataBoundControlMode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::DynamicData::DynamicField ^ CreateField(System::Web::DynamicData::MetaColumn ^ column, System::Web::DynamicData::ContainerType containerType, System::Web::UI::WebControls::DataBoundControlMode mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateField : System.Web.DynamicData.MetaColumn * System.Web.DynamicData.ContainerType * System.Web.UI.WebControls.DataBoundControlMode -&gt; System.Web.DynamicData.DynamicField&#xA;override this.CreateField : System.Web.DynamicData.MetaColumn * System.Web.DynamicData.ContainerType * System.Web.UI.WebControls.DataBoundControlMode -&gt; System.Web.DynamicData.DynamicField" Usage="defaultAutoFieldGenerator.CreateField (column, containerType, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GenerateFields(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DefaultAutoFieldGenerator.GenerateFields(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ICollection ^ GenerateFields(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateFields : System.Web.UI.Control -&gt; System.Collections.ICollection&#xA;override this.GenerateFields : System.Web.UI.Control -&gt; System.Collections.ICollection" Usage="defaultAutoFieldGenerator.GenerateFields control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

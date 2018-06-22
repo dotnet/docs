@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.IDesignerLoaderHost2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerLoaderHost2&#xA;Implements IDesignerLoaderHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerLoaderHost2 : System::ComponentModel::Design::Serialization::IDesignerLoaderHost" />
+  <TypeSignature Language="F#" Value="type IDesignerLoaderHost2 = interface&#xA;    interface IDesignerLoaderHost&#xA;    interface IDesignerHost&#xA;    interface IServiceContainer&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.IDesignerLoaderHost2.CanReloadWithErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property CanReloadWithErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanReloadWithErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanReloadWithErrors : bool with get, set" Usage="System.ComponentModel.Design.Serialization.IDesignerLoaderHost2.CanReloadWithErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.IDesignerLoaderHost2.IgnoreErrorsDuringReload" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreErrorsDuringReload As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreErrorsDuringReload { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreErrorsDuringReload : bool with get, set" Usage="System.ComponentModel.Design.Serialization.IDesignerLoaderHost2.IgnoreErrorsDuringReload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

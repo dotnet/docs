@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoTlsProviderFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class MonoTlsProviderFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class MonoTlsProviderFactory abstract sealed" />
+  <TypeSignature Language="F#" Value="type MonoTlsProviderFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.HttpListener CreateHttpListener(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, class Mono.Security.Interface.MonoTlsProvider provider, class Mono.Security.Interface.MonoTlsSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.CreateHttpListener(System.Security.Cryptography.X509Certificates.X509Certificate,Mono.Security.Interface.MonoTlsProvider,Mono.Security.Interface.MonoTlsSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHttpListener (certificate As X509Certificate, Optional provider As MonoTlsProvider = null, Optional settings As MonoTlsSettings = null) As HttpListener" />
+      <MemberSignature Language="F#" Value="static member CreateHttpListener : System.Security.Cryptography.X509Certificates.X509Certificate * Mono.Security.Interface.MonoTlsProvider * Mono.Security.Interface.MonoTlsSettings -&gt; System.Net.HttpListener" Usage="Mono.Security.Interface.MonoTlsProviderFactory.CreateHttpListener (certificate, provider, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.HttpWebRequest CreateHttpsRequest(class System.Uri requestUri, class Mono.Security.Interface.MonoTlsProvider provider, class Mono.Security.Interface.MonoTlsSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.CreateHttpsRequest(System.Uri,Mono.Security.Interface.MonoTlsProvider,Mono.Security.Interface.MonoTlsSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHttpsRequest (requestUri As Uri, provider As MonoTlsProvider, Optional settings As MonoTlsSettings = null) As HttpWebRequest" />
+      <MemberSignature Language="F#" Value="static member CreateHttpsRequest : Uri * Mono.Security.Interface.MonoTlsProvider * Mono.Security.Interface.MonoTlsSettings -&gt; System.Net.HttpWebRequest" Usage="Mono.Security.Interface.MonoTlsProviderFactory.CreateHttpsRequest (requestUri, provider, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.GetDefaultProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultProvider () As MonoTlsProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::Security::Interface::MonoTlsProvider ^ GetDefaultProvider();" />
+      <MemberSignature Language="F#" Value="static member GetDefaultProvider : unit -&gt; Mono.Security.Interface.MonoTlsProvider" Usage="Mono.Security.Interface.MonoTlsProviderFactory.GetDefaultProvider " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.GetMonoSslStream(System.Net.Security.SslStream)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMonoSslStream (stream As SslStream) As IMonoSslStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::Security::Interface::IMonoSslStream ^ GetMonoSslStream(System::Net::Security::SslStream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member GetMonoSslStream : System.Net.Security.SslStream -&gt; Mono.Security.Interface.IMonoSslStream" Usage="Mono.Security.Interface.MonoTlsProviderFactory.GetMonoSslStream stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.GetProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetProvider () As MonoTlsProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::Security::Interface::MonoTlsProvider ^ GetProvider();" />
+      <MemberSignature Language="F#" Value="static member GetProvider : unit -&gt; Mono.Security.Interface.MonoTlsProvider" Usage="Mono.Security.Interface.MonoTlsProviderFactory.GetProvider " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.GetProvider(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetProvider (provider As String) As MonoTlsProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::Security::Interface::MonoTlsProvider ^ GetProvider(System::String ^ provider);" />
+      <MemberSignature Language="F#" Value="static member GetProvider : string -&gt; Mono.Security.Interface.MonoTlsProvider" Usage="Mono.Security.Interface.MonoTlsProviderFactory.GetProvider provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Initialize();" />
+      <MemberSignature Language="F#" Value="static member Initialize : unit -&gt; unit" Usage="Mono.Security.Interface.MonoTlsProviderFactory.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.Initialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Initialize (provider As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Initialize(System::String ^ provider);" />
+      <MemberSignature Language="F#" Value="static member Initialize : string -&gt; unit" Usage="Mono.Security.Interface.MonoTlsProviderFactory.Initialize provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsProviderFactory.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsInitialized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="Mono.Security.Interface.MonoTlsProviderFactory.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.IsProviderSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsProviderSupported (provider As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsProviderSupported(System::String ^ provider);" />
+      <MemberSignature Language="F#" Value="static member IsProviderSupported : string -&gt; bool" Usage="Mono.Security.Interface.MonoTlsProviderFactory.IsProviderSupported provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -259,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.SetDefaultProvider(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDefaultProvider (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDefaultProvider(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member SetDefaultProvider : string -&gt; unit" Usage="Mono.Security.Interface.MonoTlsProviderFactory.SetDefaultProvider name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

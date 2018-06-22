@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.UnicodeDecodingConformance" />
   <TypeSignature Language="VB.NET" Value="Public Enum UnicodeDecodingConformance" />
   <TypeSignature Language="C++ CLI" Value="public enum class UnicodeDecodingConformance" />
+  <TypeSignature Language="F#" Value="type UnicodeDecodingConformance = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeDecodingConformance.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Net.Configuration.UnicodeDecodingConformance.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeDecodingConformance.Compat" />
       <MemberSignature Language="VB.NET" Value="Compat" />
       <MemberSignature Language="C++ CLI" Value="Compat" />
+      <MemberSignature Language="F#" Value="Compat = 2" Usage="System.Net.Configuration.UnicodeDecodingConformance.Compat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeDecodingConformance.Loose" />
       <MemberSignature Language="VB.NET" Value="Loose" />
       <MemberSignature Language="C++ CLI" Value="Loose" />
+      <MemberSignature Language="F#" Value="Loose = 3" Usage="System.Net.Configuration.UnicodeDecodingConformance.Loose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeDecodingConformance.Strict" />
       <MemberSignature Language="VB.NET" Value="Strict" />
       <MemberSignature Language="C++ CLI" Value="Strict" />
+      <MemberSignature Language="F#" Value="Strict = 1" Usage="System.Net.Configuration.UnicodeDecodingConformance.Strict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IInheritanceService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInheritanceService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInheritanceService" />
+  <TypeSignature Language="F#" Value="type IInheritanceService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents(System.ComponentModel.IComponent,System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddInheritedComponents (component As IComponent, container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddInheritedComponents(System::ComponentModel::IComponent ^ component, System::ComponentModel::IContainer ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member AddInheritedComponents : System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit" Usage="iInheritanceService.AddInheritedComponents (component, container)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInheritanceAttribute (component As IComponent) As InheritanceAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::InheritanceAttribute ^ GetInheritanceAttribute(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member GetInheritanceAttribute : System.ComponentModel.IComponent -&gt; System.ComponentModel.InheritanceAttribute" Usage="iInheritanceService.GetInheritanceAttribute component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

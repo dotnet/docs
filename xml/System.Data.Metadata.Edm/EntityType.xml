@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EntityType" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityType&#xA;Inherits EntityTypeBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityType : System::Data::Metadata::Edm::EntityTypeBase" />
+  <TypeSignature Language="F#" Value="type EntityType = class&#xA;    inherit EntityTypeBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityType.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.EntityType.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EntityType.GetReferenceType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReferenceType () As RefType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::RefType ^ GetReferenceType();" />
+      <MemberSignature Language="F#" Value="member this.GetReferenceType : unit -&gt; System.Data.Metadata.Edm.RefType" Usage="entityType.GetReferenceType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityType.NavigationProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationProperties As ReadOnlyMetadataCollection(Of NavigationProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::NavigationProperty ^&gt; ^ NavigationProperties { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::NavigationProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavigationProperties : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.NavigationProperty&gt;" Usage="System.Data.Metadata.Edm.EntityType.NavigationProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityType.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As ReadOnlyMetadataCollection(Of EdmProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ Properties { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmProperty&gt;" Usage="System.Data.Metadata.Edm.EntityType.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

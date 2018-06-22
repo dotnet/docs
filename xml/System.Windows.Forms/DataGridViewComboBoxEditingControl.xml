@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewComboBoxEditingControl&#xA;Inherits ComboBox&#xA;Implements IDataGridViewEditingControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewComboBoxEditingControl : System::Windows::Forms::ComboBox, System::Windows::Forms::IDataGridViewEditingControl" />
+  <TypeSignature Language="F#" Value="type DataGridViewComboBoxEditingControl = class&#xA;    inherit ComboBox&#xA;    interface IDataGridViewEditingControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyCellStyleToEditingControl(class System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxEditingControl.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyCellStyleToEditingControl(System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyCellStyleToEditingControl : System.Windows.Forms.DataGridViewCellStyle -&gt; unit&#xA;override this.ApplyCellStyleToEditingControl : System.Windows.Forms.DataGridViewCellStyle -&gt; unit" Usage="dataGridViewComboBoxEditingControl.ApplyCellStyleToEditingControl dataGridViewCellStyle" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataGridViewEditingControl.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)</InterfaceMember>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxEditingControl.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridViewComboBoxEditingControl.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlDataGridView" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditingControlDataGridView As DataGridView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridView ^ EditingControlDataGridView { System::Windows::Forms::DataGridView ^ get(); void set(System::Windows::Forms::DataGridView ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EditingControlDataGridView : System.Windows.Forms.DataGridView with get, set" Usage="System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlDataGridView" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlDataGridView</InterfaceMember>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlFormattedValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditingControlFormattedValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ EditingControlFormattedValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EditingControlFormattedValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlFormattedValue" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlFormattedValue</InterfaceMember>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlRowIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditingControlRowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EditingControlRowIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EditingControlRowIndex : int with get, set" Usage="System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlRowIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlRowIndex</InterfaceMember>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlValueChanged" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditingControlValueChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EditingControlValueChanged { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EditingControlValueChanged : bool with get, set" Usage="System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlValueChanged" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlValueChanged</InterfaceMember>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EditingControlWantsInputKey (keyData As Keys, dataGridViewWantsInputKey As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EditingControlWantsInputKey(System::Windows::Forms::Keys keyData, bool dataGridViewWantsInputKey);" />
+      <MemberSignature Language="F#" Value="abstract member EditingControlWantsInputKey : System.Windows.Forms.Keys * bool -&gt; bool&#xA;override this.EditingControlWantsInputKey : System.Windows.Forms.Keys * bool -&gt; bool" Usage="dataGridViewComboBoxEditingControl.EditingControlWantsInputKey (keyData, dataGridViewWantsInputKey)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataGridViewEditingControl.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)</InterfaceMember>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingPanelCursor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EditingPanelCursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ EditingPanelCursor { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditingPanelCursor : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.DataGridViewComboBoxEditingControl.EditingPanelCursor" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingPanelCursor</InterfaceMember>
@@ -357,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxEditingControl.GetEditingControlFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEditingControlFormattedValue (context As DataGridViewDataErrorContexts) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetEditingControlFormattedValue(System::Windows::Forms::DataGridViewDataErrorContexts context);" />
+      <MemberSignature Language="F#" Value="abstract member GetEditingControlFormattedValue : System.Windows.Forms.DataGridViewDataErrorContexts -&gt; obj&#xA;override this.GetEditingControlFormattedValue : System.Windows.Forms.DataGridViewDataErrorContexts -&gt; obj" Usage="dataGridViewComboBoxEditingControl.GetEditingControlFormattedValue context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataGridViewEditingControl.GetEditingControlFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)</InterfaceMember>
@@ -386,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxEditingControl.OnSelectedIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedIndexChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedIndexChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="dataGridViewComboBoxEditingControl.OnSelectedIndexChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -410,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxEditingControl.PrepareEditingControlForEdit(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub PrepareEditingControlForEdit (selectAll As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PrepareEditingControlForEdit(bool selectAll);" />
+      <MemberSignature Language="F#" Value="abstract member PrepareEditingControlForEdit : bool -&gt; unit&#xA;override this.PrepareEditingControlForEdit : bool -&gt; unit" Usage="dataGridViewComboBoxEditingControl.PrepareEditingControlForEdit selectAll" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataGridViewEditingControl.PrepareEditingControlForEdit(System.Boolean)</InterfaceMember>
@@ -438,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxEditingControl.RepositionEditingControlOnValueChange" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RepositionEditingControlOnValueChange As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RepositionEditingControlOnValueChange { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RepositionEditingControlOnValueChange : bool" Usage="System.Windows.Forms.DataGridViewComboBoxEditingControl.RepositionEditingControlOnValueChange" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.RepositionEditingControlOnValueChange</InterfaceMember>

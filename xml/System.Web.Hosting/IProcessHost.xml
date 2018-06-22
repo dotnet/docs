@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessHost" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProcessHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProcessHost" />
+  <TypeSignature Language="F#" Value="type IProcessHost = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumerateAppDomains (ByRef appDomainInfoEnum As IAppDomainInfoEnum)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumerateAppDomains([Runtime::InteropServices::Out] System::Web::Hosting::IAppDomainInfoEnum ^ % appDomainInfoEnum);" />
+      <MemberSignature Language="F#" Value="abstract member EnumerateAppDomains :  -&gt; unit" Usage="iProcessHost.EnumerateAppDomains appDomainInfoEnum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit" Usage="iProcessHost.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.ShutdownApplication(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShutdownApplication (appId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShutdownApplication(System::String ^ appId);" />
+      <MemberSignature Language="F#" Value="abstract member ShutdownApplication : string -&gt; unit" Usage="iProcessHost.ShutdownApplication appId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.StartApplication(System.String,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartApplication (appId As String, appPath As String, ByRef runtimeInterface As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartApplication(System::String ^ appId, System::String ^ appPath, [Runtime::InteropServices::Out] System::Object ^ % runtimeInterface);" />
+      <MemberSignature Language="F#" Value="abstract member StartApplication : string * string *  -&gt; unit" Usage="iProcessHost.StartApplication (appId, appPath, runtimeInterface)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.UdpSingleSourceMulticastClient" />
   <TypeSignature Language="VB.NET" Value="Public Class UdpSingleSourceMulticastClient&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class UdpSingleSourceMulticastClient : IDisposable" />
+  <TypeSignature Language="F#" Value="type UdpSingleSourceMulticastClient = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.#ctor(System.Net.IPAddress,System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceAddress As IPAddress, groupAddress As IPAddress, localPort As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpSingleSourceMulticastClient(System::Net::IPAddress ^ sourceAddress, System::Net::IPAddress ^ groupAddress, int localPort);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpSingleSourceMulticastClient : System.Net.IPAddress * System.Net.IPAddress * int -&gt; System.Net.Sockets.UdpSingleSourceMulticastClient" Usage="new System.Net.Sockets.UdpSingleSourceMulticastClient (sourceAddress, groupAddress, localPort)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.BeginJoinGroup(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginJoinGroup (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginJoinGroup(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginJoinGroup : AsyncCallback * obj -&gt; IAsyncResult" Usage="udpSingleSourceMulticastClient.BeginJoinGroup (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.BeginReceiveFromSource(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceiveFromSource (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceiveFromSource(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginReceiveFromSource : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpSingleSourceMulticastClient.BeginReceiveFromSource (buffer, offset, count, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -227,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.BeginSendToSource(System.Byte[],System.Int32,System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSendToSource (buffer As Byte(), offset As Integer, count As Integer, remotePort As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendToSource(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, int remotePort, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSendToSource : byte[] * int * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpSingleSourceMulticastClient.BeginSendToSource (buffer, offset, count, remotePort, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -311,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="udpSingleSourceMulticastClient.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -351,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.EndJoinGroup(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndJoinGroup (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndJoinGroup(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndJoinGroup : IAsyncResult -&gt; unit" Usage="udpSingleSourceMulticastClient.EndJoinGroup result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -397,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.EndReceiveFromSource(System.IAsyncResult,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndReceiveFromSource (result As IAsyncResult, ByRef sourcePort As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceiveFromSource(IAsyncResult ^ result, [Runtime::InteropServices::Out] int % sourcePort);" />
+      <MemberSignature Language="F#" Value="member this.EndReceiveFromSource : IAsyncResult *  -&gt; int" Usage="udpSingleSourceMulticastClient.EndReceiveFromSource (result, sourcePort)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -447,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.EndSendToSource(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndSendToSource (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSendToSource(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndSendToSource : IAsyncResult -&gt; unit" Usage="udpSingleSourceMulticastClient.EndSendToSource result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -492,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpSingleSourceMulticastClient.ReceiveBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReceiveBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveBufferSize : int with get, set" Usage="System.Net.Sockets.UdpSingleSourceMulticastClient.ReceiveBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -534,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpSingleSourceMulticastClient.SendBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property SendBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SendBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SendBufferSize : int with get, set" Usage="System.Net.Sockets.UdpSingleSourceMulticastClient.SendBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

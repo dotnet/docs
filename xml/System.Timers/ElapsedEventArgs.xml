@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Timers.ElapsedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ElapsedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ElapsedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ElapsedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Timers.ElapsedEventArgs.SignalTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignalTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime SignalTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignalTime : DateTime" Usage="System.Timers.ElapsedEventArgs.SignalTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

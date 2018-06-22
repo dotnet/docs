@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectOnErrorElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectOnErrorElement&#xA;Inherits ProjectElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectOnErrorElement : Microsoft::Build::Construction::ProjectElement" />
+  <TypeSignature Language="F#" Value="type ProjectOnErrorElement = class&#xA;    inherit ProjectElement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOnErrorElement.ExecuteTargetsAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Property ExecuteTargetsAttribute As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExecuteTargetsAttribute { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExecuteTargetsAttribute : string with get, set" Usage="Microsoft.Build.Construction.ProjectOnErrorElement.ExecuteTargetsAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOnErrorElement.ExecuteTargetsLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecuteTargetsLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ExecuteTargetsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecuteTargetsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectOnErrorElement.ExecuteTargetsLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

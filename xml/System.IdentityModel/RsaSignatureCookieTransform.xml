@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.RsaSignatureCookieTransform" />
   <TypeSignature Language="VB.NET" Value="Public Class RsaSignatureCookieTransform&#xA;Inherits CookieTransform" />
   <TypeSignature Language="C++ CLI" Value="public ref class RsaSignatureCookieTransform : System::IdentityModel::CookieTransform" />
+  <TypeSignature Language="F#" Value="type RsaSignatureCookieTransform = class&#xA;    inherit CookieTransform" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.RsaSignatureCookieTransform.#ctor(System.Security.Cryptography.RSA)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As RSA)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaSignatureCookieTransform(System::Security::Cryptography::RSA ^ key);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.RsaSignatureCookieTransform : System.Security.Cryptography.RSA -&gt; System.IdentityModel.RsaSignatureCookieTransform" Usage="new System.IdentityModel.RsaSignatureCookieTransform key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.RsaSignatureCookieTransform.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaSignatureCookieTransform(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.RsaSignatureCookieTransform : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.IdentityModel.RsaSignatureCookieTransform" Usage="new System.IdentityModel.RsaSignatureCookieTransform certificate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.RsaSignatureCookieTransform.Decode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decode (encoded As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Decode(cli::array &lt;System::Byte&gt; ^ encoded);" />
+      <MemberSignature Language="F#" Value="override this.Decode : byte[] -&gt; byte[]" Usage="rsaSignatureCookieTransform.Decode encoded" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.RsaSignatureCookieTransform.Encode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encode (value As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Encode(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Encode : byte[] -&gt; byte[]" Usage="rsaSignatureCookieTransform.Encode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.RsaSignatureCookieTransform.HashName" />
       <MemberSignature Language="VB.NET" Value="Public Property HashName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HashName : string with get, set" Usage="System.IdentityModel.RsaSignatureCookieTransform.HashName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.RsaSignatureCookieTransform.SigningKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SigningKey As RSA" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::RSA ^ SigningKey { System::Security::Cryptography::RSA ^ get(); void set(System::Security::Cryptography::RSA ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SigningKey : System.Security.Cryptography.RSA with get, set" Usage="System.IdentityModel.RsaSignatureCookieTransform.SigningKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -244,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.RsaSignatureCookieTransform.VerificationKeys" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property VerificationKeys As ReadOnlyCollection(Of RSA)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Cryptography::RSA ^&gt; ^ VerificationKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Cryptography::RSA ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerificationKeys : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.RSA&gt;" Usage="System.IdentityModel.RsaSignatureCookieTransform.VerificationKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

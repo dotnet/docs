@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementConfigurationType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ManagementConfigurationType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ManagementConfigurationType" />
+  <TypeSignature Language="F#" Value="type ManagementConfigurationType = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementConfigurationType.Apply" />
       <MemberSignature Language="VB.NET" Value="Apply" />
       <MemberSignature Language="C++ CLI" Value="Apply" />
+      <MemberSignature Language="F#" Value="Apply = 0" Usage="System.Management.Instrumentation.ManagementConfigurationType.Apply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementConfigurationType.OnCommit" />
       <MemberSignature Language="VB.NET" Value="OnCommit" />
       <MemberSignature Language="C++ CLI" Value="OnCommit" />
+      <MemberSignature Language="F#" Value="OnCommit = 1" Usage="System.Management.Instrumentation.ManagementConfigurationType.OnCommit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

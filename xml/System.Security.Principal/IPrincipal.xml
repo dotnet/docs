@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.IPrincipal" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPrincipal" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPrincipal" />
+  <TypeSignature Language="F#" Value="type IPrincipal = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IPrincipal.Identity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As IIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IIdentity ^ Identity { System::Security::Principal::IIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Security.Principal.IIdentity" Usage="System.Security.Principal.IPrincipal.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IPrincipal.IsInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInRole(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="abstract member IsInRole : string -&gt; bool" Usage="iPrincipal.IsInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>

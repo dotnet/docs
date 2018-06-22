@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PageOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum PageOrder" />
   <TypeSignature Language="C++ CLI" Value="public enum class PageOrder" />
+  <TypeSignature Language="F#" Value="type PageOrder = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Reverse" />
       <MemberSignature Language="VB.NET" Value="Reverse" />
       <MemberSignature Language="C++ CLI" Value="Reverse" />
+      <MemberSignature Language="F#" Value="Reverse = 2" Usage="System.Printing.PageOrder.Reverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Standard" />
       <MemberSignature Language="VB.NET" Value="Standard" />
       <MemberSignature Language="C++ CLI" Value="Standard" />
+      <MemberSignature Language="F#" Value="Standard = 1" Usage="System.Printing.PageOrder.Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.PageOrder.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

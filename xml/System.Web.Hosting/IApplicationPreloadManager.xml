@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IApplicationPreloadManager" />
   <TypeSignature Language="VB.NET" Value="Public Interface IApplicationPreloadManager" />
   <TypeSignature Language="C++ CLI" Value="public interface class IApplicationPreloadManager" />
+  <TypeSignature Language="F#" Value="type IApplicationPreloadManager = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadState(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetApplicationPreloadState (context As String, appId As String, enabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetApplicationPreloadState(System::String ^ context, System::String ^ appId, bool enabled);" />
+      <MemberSignature Language="F#" Value="abstract member SetApplicationPreloadState : string * string * bool -&gt; unit" Usage="iApplicationPreloadManager.SetApplicationPreloadState (context, appId, enabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadUtil(System.Web.Hosting.IApplicationPreloadUtil)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetApplicationPreloadUtil (preloadUtil As IApplicationPreloadUtil)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetApplicationPreloadUtil(System::Web::Hosting::IApplicationPreloadUtil ^ preloadUtil);" />
+      <MemberSignature Language="F#" Value="abstract member SetApplicationPreloadUtil : System.Web.Hosting.IApplicationPreloadUtil -&gt; unit" Usage="iApplicationPreloadManager.SetApplicationPreloadUtil preloadUtil" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

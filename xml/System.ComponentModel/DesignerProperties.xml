@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerProperties abstract sealed" />
+  <TypeSignature Language="F#" Value="type DesignerProperties = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerProperties.GetIsInDesignMode(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsInDesignMode (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsInDesignMode(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetIsInDesignMode : System.Windows.DependencyObject -&gt; bool" Usage="System.ComponentModel.DesignerProperties.GetIsInDesignMode element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value="see GetIsInDesignMode, and SetIsInDesignMode" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignerProperties.IsInDesignMode" />
       <MemberSignature Language="VB.NET" Value="see GetIsInDesignMode, and SetIsInDesignMode" />
+      <MemberSignature Language="F#" Value="see GetIsInDesignMode, and SetIsInDesignMode" Usage="see GetIsInDesignMode, and SetIsInDesignMode" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerProperties.IsInDesignModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInDesignModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInDesignModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInDesignModeProperty : System.Windows.DependencyProperty" Usage="System.ComponentModel.DesignerProperties.IsInDesignModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerProperties.SetIsInDesignMode(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsInDesignMode (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsInDesignMode(System::Windows::DependencyObject ^ element, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetIsInDesignMode : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.ComponentModel.DesignerProperties.SetIsInDesignMode (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

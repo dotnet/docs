@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.UsingTask" />
   <TypeSignature Language="VB.NET" Value="Public Class UsingTask" />
   <TypeSignature Language="C++ CLI" Value="public ref class UsingTask" />
+  <TypeSignature Language="F#" Value="type UsingTask = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.UsingTask.AssemblyFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyFile : string" Usage="Microsoft.Build.BuildEngine.UsingTask.AssemblyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.UsingTask.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string" Usage="Microsoft.Build.BuildEngine.UsingTask.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.UsingTask.Condition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string" Usage="Microsoft.Build.BuildEngine.UsingTask.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.UsingTask.IsImported" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImported : bool" Usage="Microsoft.Build.BuildEngine.UsingTask.IsImported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.UsingTask.TaskName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TaskName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskName : string" Usage="Microsoft.Build.BuildEngine.UsingTask.TaskName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Span" />
   <TypeSignature Language="VB.NET" Value="Public Class Span&#xA;Inherits Inline" />
   <TypeSignature Language="C++ CLI" Value="public ref class Span : System::Windows::Documents::Inline" />
+  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit Inline" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Span.#ctor(System.Windows.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Span(System::Windows::Documents::Inline ^ childInline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Span : System.Windows.Documents.Inline -&gt; System.Windows.Documents.Span" Usage="new System.Windows.Documents.Span childInline" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Span.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline, insertionPosition As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Span(System::Windows::Documents::Inline ^ childInline, System::Windows::Documents::TextPointer ^ insertionPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Span : System.Windows.Documents.Inline * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Span" Usage="new System.Windows.Documents.Span (childInline, insertionPosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Span.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As TextPointer, end As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Span(System::Windows::Documents::TextPointer ^ start, System::Windows::Documents::TextPointer ^ end);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Span : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Span" Usage="new System.Windows.Documents.Span (start, end)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Span.Inlines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inlines As InlineCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::InlineCollection ^ Inlines { System::Windows::Documents::InlineCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inlines : System.Windows.Documents.InlineCollection" Usage="System.Windows.Documents.Span.Inlines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Span.ShouldSerializeInlines(System.Windows.Markup.XamlDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeInlines (manager As XamlDesignerSerializationManager) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeInlines(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeInlines : System.Windows.Markup.XamlDesignerSerializationManager -&gt; bool" Usage="span.ShouldSerializeInlines manager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

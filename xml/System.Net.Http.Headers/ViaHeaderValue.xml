@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.ViaHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class ViaHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViaHeaderValue : ICloneable" />
+  <TypeSignature Language="F#" Value="type ViaHeaderValue = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (protocolVersion As String, receivedBy As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViaHeaderValue(System::String ^ protocolVersion, System::String ^ receivedBy);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.ViaHeaderValue : string * string -&gt; System.Net.Http.Headers.ViaHeaderValue" Usage="new System.Net.Http.Headers.ViaHeaderValue (protocolVersion, receivedBy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (protocolVersion As String, receivedBy As String, protocolName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViaHeaderValue(System::String ^ protocolVersion, System::String ^ receivedBy, System::String ^ protocolName);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.ViaHeaderValue : string * string * string -&gt; System.Net.Http.Headers.ViaHeaderValue" Usage="new System.Net.Http.Headers.ViaHeaderValue (protocolVersion, receivedBy, protocolName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (protocolVersion As String, receivedBy As String, protocolName As String, comment As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViaHeaderValue(System::String ^ protocolVersion, System::String ^ receivedBy, System::String ^ protocolName, System::String ^ comment);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.ViaHeaderValue : string * string * string * string -&gt; System.Net.Http.Headers.ViaHeaderValue" Usage="new System.Net.Http.Headers.ViaHeaderValue (protocolVersion, receivedBy, protocolName, comment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ViaHeaderValue.Comment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comment As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Comment : string" Usage="System.Net.Http.Headers.ViaHeaderValue.Comment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ViaHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="viaHeaderValue.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ViaHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="viaHeaderValue.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ViaHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As ViaHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::ViaHeaderValue ^ Parse(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.ViaHeaderValue" Usage="System.Net.Http.Headers.ViaHeaderValue.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -278,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ViaHeaderValue.ProtocolName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtocolName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProtocolName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProtocolName : string" Usage="System.Net.Http.Headers.ViaHeaderValue.ProtocolName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -306,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtocolVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProtocolVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProtocolVersion : string" Usage="System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -334,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ViaHeaderValue.ReceivedBy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReceivedBy As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReceivedBy { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReceivedBy : string" Usage="System.Net.Http.Headers.ViaHeaderValue.ReceivedBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -399,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ViaHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="viaHeaderValue.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -428,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ViaHeaderValue.TryParse(System.String,System.Net.Http.Headers.ViaHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As ViaHeaderValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::ViaHeaderValue ^ % parsedValue);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.ViaHeaderValue.TryParse (input, parsedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

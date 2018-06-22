@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointAddressAugust2004" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointAddressAugust2004&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointAddressAugust2004 : System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type EndpointAddressAugust2004 = class&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressAugust2004.FromEndpointAddress(System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromEndpointAddress (address As EndpointAddress) As EndpointAddressAugust2004" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointAddressAugust2004 ^ FromEndpointAddress(System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="static member FromEndpointAddress : System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.EndpointAddressAugust2004" Usage="System.ServiceModel.EndpointAddressAugust2004.FromEndpointAddress address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlQualifiedName GetSchema(class System.Xml.Schema.XmlSchemaSet xmlSchemaSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressAugust2004.GetSchema(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetSchema(System::Xml::Schema::XmlSchemaSet ^ xmlSchemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetSchema : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.ServiceModel.EndpointAddressAugust2004.GetSchema xmlSchemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressAugust2004.ToEndpointAddress" />
       <MemberSignature Language="VB.NET" Value="Public Function ToEndpointAddress () As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::EndpointAddress ^ ToEndpointAddress();" />
+      <MemberSignature Language="F#" Value="member this.ToEndpointAddress : unit -&gt; System.ServiceModel.EndpointAddress" Usage="endpointAddressAugust2004.ToEndpointAddress " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

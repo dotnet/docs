@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlReader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlReader&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlReader abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type XmlReader = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -402,6 +403,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.AttributeCount" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AttributeCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int AttributeCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeCount : int" Usage="System.Xml.XmlReader.AttributeCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -451,6 +453,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.BaseURI" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BaseURI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ BaseURI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseURI : string" Usage="System.Xml.XmlReader.BaseURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -492,6 +495,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.CanReadBinaryContent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanReadBinaryContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReadBinaryContent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanReadBinaryContent : bool" Usage="System.Xml.XmlReader.CanReadBinaryContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -536,6 +540,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.CanReadValueChunk" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanReadValueChunk As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReadValueChunk { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanReadValueChunk : bool" Usage="System.Xml.XmlReader.CanReadValueChunk" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -580,6 +585,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.CanResolveEntity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanResolveEntity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanResolveEntity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanResolveEntity : bool" Usage="System.Xml.XmlReader.CanResolveEntity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -622,6 +628,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="xmlReader.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -763,6 +770,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (input As Stream) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::IO::Stream ^ input);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -828,6 +836,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (input As TextReader) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::IO::TextReader ^ input);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.TextReader -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -890,6 +899,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (inputUri As String) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::String ^ inputUri);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create inputUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -963,6 +973,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.IO.Stream,System.Xml.XmlReaderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (input As Stream, settings As XmlReaderSettings) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::IO::Stream ^ input, System::Xml::XmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.Xml.XmlReaderSettings -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (input, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1028,6 +1039,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.IO.TextReader,System.Xml.XmlReaderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (input As TextReader, settings As XmlReaderSettings) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::IO::TextReader ^ input, System::Xml::XmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.TextReader * System.Xml.XmlReaderSettings -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (input, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1091,6 +1103,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.String,System.Xml.XmlReaderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (inputUri As String, settings As XmlReaderSettings) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::String ^ inputUri, System::Xml::XmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="static member Create : string * System.Xml.XmlReaderSettings -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (inputUri, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1166,6 +1179,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.Xml.XmlReader,System.Xml.XmlReaderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (reader As XmlReader, settings As XmlReaderSettings) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::Xml::XmlReader ^ reader, System::Xml::XmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Xml.XmlReader * System.Xml.XmlReaderSettings -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (reader, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1246,6 +1260,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.IO.Stream,System.Xml.XmlReaderSettings,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (input As Stream, settings As XmlReaderSettings, baseUri As String) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::IO::Stream ^ input, System::Xml::XmlReaderSettings ^ settings, System::String ^ baseUri);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.Xml.XmlReaderSettings * string -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (input, settings, baseUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1312,6 +1327,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.IO.Stream,System.Xml.XmlReaderSettings,System.Xml.XmlParserContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (input As Stream, settings As XmlReaderSettings, inputContext As XmlParserContext) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::IO::Stream ^ input, System::Xml::XmlReaderSettings ^ settings, System::Xml::XmlParserContext ^ inputContext);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.Xml.XmlReaderSettings * System.Xml.XmlParserContext -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (input, settings, inputContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1381,6 +1397,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.IO.TextReader,System.Xml.XmlReaderSettings,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (input As TextReader, settings As XmlReaderSettings, baseUri As String) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::IO::TextReader ^ input, System::Xml::XmlReaderSettings ^ settings, System::String ^ baseUri);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.TextReader * System.Xml.XmlReaderSettings * string -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (input, settings, baseUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1445,6 +1462,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.IO.TextReader,System.Xml.XmlReaderSettings,System.Xml.XmlParserContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (input As TextReader, settings As XmlReaderSettings, inputContext As XmlParserContext) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::IO::TextReader ^ input, System::Xml::XmlReaderSettings ^ settings, System::Xml::XmlParserContext ^ inputContext);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.TextReader * System.Xml.XmlReaderSettings * System.Xml.XmlParserContext -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (input, settings, inputContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1521,6 +1539,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Create(System.String,System.Xml.XmlReaderSettings,System.Xml.XmlParserContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (inputUri As String, settings As XmlReaderSettings, inputContext As XmlParserContext) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ Create(System::String ^ inputUri, System::Xml::XmlReaderSettings ^ settings, System::Xml::XmlParserContext ^ inputContext);" />
+      <MemberSignature Language="F#" Value="static member Create : string * System.Xml.XmlReaderSettings * System.Xml.XmlParserContext -&gt; System.Xml.XmlReader" Usage="System.Xml.XmlReader.Create (inputUri, settings, inputContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1583,6 +1602,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.Depth" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Xml.XmlReader.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1637,6 +1657,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="xmlReader.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1674,6 +1695,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="xmlReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1712,6 +1734,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.EOF" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EOF As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool EOF { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EOF : bool" Usage="System.Xml.XmlReader.EOF" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1760,6 +1783,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.GetAttribute(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAttribute (i As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetAttribute(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : int -&gt; string" Usage="xmlReader.GetAttribute i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1810,6 +1834,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAttribute (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : string -&gt; string" Usage="xmlReader.GetAttribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1867,6 +1892,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.GetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAttribute (name As String, namespaceURI As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetAttribute(System::String ^ name, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : string * string -&gt; string" Usage="xmlReader.GetAttribute (name, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1936,6 +1962,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.GetValueAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValueAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetValueAsync();" />
+      <MemberSignature Language="F#" Value="abstract member GetValueAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.GetValueAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="xmlReader.GetValueAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1978,6 +2005,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.HasAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasAttributes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasAttributes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasAttributes : bool" Usage="System.Xml.XmlReader.HasAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2023,6 +2051,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.HasValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="System.Xml.XmlReader.HasValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2082,6 +2111,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.Xml.XmlReader.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2180,6 +2210,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.IsEmptyElement" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsEmptyElement As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsEmptyElement { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmptyElement : bool" Usage="System.Xml.XmlReader.IsEmptyElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2242,6 +2273,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.IsName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsName (str As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsName(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member IsName : string -&gt; bool" Usage="System.Xml.XmlReader.IsName str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2288,6 +2320,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.IsNameToken(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNameToken (str As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNameToken(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member IsNameToken : string -&gt; bool" Usage="System.Xml.XmlReader.IsNameToken str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2347,6 +2380,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.IsStartElement" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsStartElement () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsStartElement();" />
+      <MemberSignature Language="F#" Value="abstract member IsStartElement : unit -&gt; bool&#xA;override this.IsStartElement : unit -&gt; bool" Usage="xmlReader.IsStartElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2404,6 +2438,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.IsStartElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsStartElement (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsStartElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member IsStartElement : string -&gt; bool&#xA;override this.IsStartElement : string -&gt; bool" Usage="xmlReader.IsStartElement name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2460,6 +2495,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.IsStartElement(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsStartElement (localname As String, ns As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsStartElement(System::String ^ localname, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="abstract member IsStartElement : string * string -&gt; bool&#xA;override this.IsStartElement : string * string -&gt; bool" Usage="xmlReader.IsStartElement (localname, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2523,6 +2559,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(i As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[int] { System::String ^ get(int i); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : string" Usage="System.Xml.XmlReader.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2577,6 +2614,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.Xml.XmlReader.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2633,6 +2671,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.Item(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String, namespaceURI As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[System::String ^, System::String ^] { System::String ^ get(System::String ^ name, System::String ^ namespaceURI); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string * string) : string" Usage="System.Xml.XmlReader.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2681,6 +2720,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property LocalName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ LocalName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlReader.LocalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2732,6 +2772,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.LookupNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function LookupNamespace (prefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ LookupNamespace(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="abstract member LookupNamespace : string -&gt; string" Usage="xmlReader.LookupNamespace prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2798,6 +2839,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.MoveToAttribute(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub MoveToAttribute (i As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MoveToAttribute(int i);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToAttribute : int -&gt; unit&#xA;override this.MoveToAttribute : int -&gt; unit" Usage="xmlReader.MoveToAttribute i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2846,6 +2888,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.MoveToAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToAttribute (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToAttribute : string -&gt; bool" Usage="xmlReader.MoveToAttribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2893,6 +2936,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.MoveToAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToAttribute (name As String, ns As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToAttribute(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToAttribute : string * string -&gt; bool" Usage="xmlReader.MoveToAttribute (name, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2942,6 +2986,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.MoveToContent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MoveToContent () As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNodeType MoveToContent();" />
+      <MemberSignature Language="F#" Value="abstract member MoveToContent : unit -&gt; System.Xml.XmlNodeType&#xA;override this.MoveToContent : unit -&gt; System.Xml.XmlNodeType" Usage="xmlReader.MoveToContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3024,6 +3069,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.MoveToContentAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MoveToContentAsync () As Task(Of XmlNodeType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Xml::XmlNodeType&gt; ^ MoveToContentAsync();" />
+      <MemberSignature Language="F#" Value="abstract member MoveToContentAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Xml.XmlNodeType&gt;&#xA;override this.MoveToContentAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Xml.XmlNodeType&gt;" Usage="xmlReader.MoveToContentAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3074,6 +3120,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.MoveToElement" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToElement () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToElement();" />
+      <MemberSignature Language="F#" Value="abstract member MoveToElement : unit -&gt; bool" Usage="xmlReader.MoveToElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3125,6 +3172,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.MoveToFirstAttribute" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToFirstAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToFirstAttribute();" />
+      <MemberSignature Language="F#" Value="abstract member MoveToFirstAttribute : unit -&gt; bool" Usage="xmlReader.MoveToFirstAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3171,6 +3219,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.MoveToNextAttribute" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToNextAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToNextAttribute();" />
+      <MemberSignature Language="F#" Value="abstract member MoveToNextAttribute : unit -&gt; bool" Usage="xmlReader.MoveToNextAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3222,6 +3271,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlReader.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3291,6 +3341,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.NamespaceURI" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NamespaceURI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ NamespaceURI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceURI : string" Usage="System.Xml.XmlReader.NamespaceURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3344,6 +3395,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.NameTable" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NameTable As XmlNameTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::XmlNameTable ^ NameTable { System::Xml::XmlNameTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable" Usage="System.Xml.XmlReader.NameTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3386,6 +3438,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlReader.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3434,6 +3487,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Prefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Prefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string" Usage="System.Xml.XmlReader.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3482,6 +3536,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.QuoteChar" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QuoteChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property char QuoteChar { char get(); };" />
+      <MemberSignature Language="F#" Value="member this.QuoteChar : char" Usage="System.Xml.XmlReader.QuoteChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3520,6 +3575,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Read();" />
+      <MemberSignature Language="F#" Value="abstract member Read : unit -&gt; bool" Usage="xmlReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3586,6 +3642,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadAsync () As Task(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;bool&gt; ^ ReadAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.ReadAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="xmlReader.ReadAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3629,6 +3686,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadAttributeValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ReadAttributeValue () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ReadAttributeValue();" />
+      <MemberSignature Language="F#" Value="abstract member ReadAttributeValue : unit -&gt; bool" Usage="xmlReader.ReadAttributeValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3676,6 +3734,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAs(System.Type,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAs (returnType As Type, namespaceResolver As IXmlNamespaceResolver) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadContentAs(Type ^ returnType, System::Xml::IXmlNamespaceResolver ^ namespaceResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAs : Type * System.Xml.IXmlNamespaceResolver -&gt; obj&#xA;override this.ReadContentAs : Type * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="xmlReader.ReadContentAs (returnType, namespaceResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3779,6 +3838,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsAsync(System.Type,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsAsync (returnType As Type, namespaceResolver As IXmlNamespaceResolver) As Task(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ ReadContentAsAsync(Type ^ returnType, System::Xml::IXmlNamespaceResolver ^ namespaceResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsAsync : Type * System.Xml.IXmlNamespaceResolver -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.ReadContentAsAsync : Type * System.Xml.IXmlNamespaceResolver -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="xmlReader.ReadContentAsAsync (returnType, namespaceResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3834,6 +3894,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsBase64 (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadContentAsBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsBase64 : byte[] * int * int -&gt; int&#xA;override this.ReadContentAsBase64 : byte[] * int * int -&gt; int" Usage="xmlReader.ReadContentAsBase64 (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3901,6 +3962,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsBase64Async(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsBase64Async (buffer As Byte(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ReadContentAsBase64Async(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsBase64Async : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ReadContentAsBase64Async : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="xmlReader.ReadContentAsBase64Async (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3950,6 +4012,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsBinHex (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadContentAsBinHex(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsBinHex : byte[] * int * int -&gt; int&#xA;override this.ReadContentAsBinHex : byte[] * int * int -&gt; int" Usage="xmlReader.ReadContentAsBinHex (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4017,6 +4080,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsBinHexAsync(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsBinHexAsync (buffer As Byte(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ReadContentAsBinHexAsync(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsBinHexAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ReadContentAsBinHexAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="xmlReader.ReadContentAsBinHexAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4066,6 +4130,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsBoolean () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadContentAsBoolean();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsBoolean : unit -&gt; bool&#xA;override this.ReadContentAsBoolean : unit -&gt; bool" Usage="xmlReader.ReadContentAsBoolean " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4136,6 +4201,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsDateTime () As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime ReadContentAsDateTime();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsDateTime : unit -&gt; DateTime&#xA;override this.ReadContentAsDateTime : unit -&gt; DateTime" Usage="xmlReader.ReadContentAsDateTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4194,6 +4260,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsDateTimeOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsDateTimeOffset () As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTimeOffset ReadContentAsDateTimeOffset();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsDateTimeOffset : unit -&gt; DateTimeOffset&#xA;override this.ReadContentAsDateTimeOffset : unit -&gt; DateTimeOffset" Usage="xmlReader.ReadContentAsDateTimeOffset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4229,6 +4296,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsDecimal () As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Decimal ReadContentAsDecimal();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsDecimal : unit -&gt; decimal&#xA;override this.ReadContentAsDecimal : unit -&gt; decimal" Usage="xmlReader.ReadContentAsDecimal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4287,6 +4355,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsDouble" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsDouble () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double ReadContentAsDouble();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsDouble : unit -&gt; double&#xA;override this.ReadContentAsDouble : unit -&gt; double" Usage="xmlReader.ReadContentAsDouble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4345,6 +4414,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsFloat" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsFloat () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual float ReadContentAsFloat();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsFloat : unit -&gt; single&#xA;override this.ReadContentAsFloat : unit -&gt; single" Usage="xmlReader.ReadContentAsFloat " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4403,6 +4473,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsInt" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsInt () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadContentAsInt();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsInt : unit -&gt; int&#xA;override this.ReadContentAsInt : unit -&gt; int" Usage="xmlReader.ReadContentAsInt " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4461,6 +4532,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsLong" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsLong () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long ReadContentAsLong();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsLong : unit -&gt; int64&#xA;override this.ReadContentAsLong : unit -&gt; int64" Usage="xmlReader.ReadContentAsLong " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4519,6 +4591,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsObject" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadContentAsObject();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsObject : unit -&gt; obj&#xA;override this.ReadContentAsObject : unit -&gt; obj" Usage="xmlReader.ReadContentAsObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4584,6 +4657,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsObjectAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsObjectAsync () As Task(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ ReadContentAsObjectAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsObjectAsync : unit -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.ReadContentAsObjectAsync : unit -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="xmlReader.ReadContentAsObjectAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4634,6 +4708,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadContentAsString();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsString : unit -&gt; string&#xA;override this.ReadContentAsString : unit -&gt; string" Usage="xmlReader.ReadContentAsString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4694,6 +4769,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadContentAsStringAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadContentAsStringAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadContentAsStringAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadContentAsStringAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.ReadContentAsStringAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="xmlReader.ReadContentAsStringAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4749,6 +4825,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAs(System.Type,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAs (returnType As Type, namespaceResolver As IXmlNamespaceResolver) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadElementContentAs(Type ^ returnType, System::Xml::IXmlNamespaceResolver ^ namespaceResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAs : Type * System.Xml.IXmlNamespaceResolver -&gt; obj&#xA;override this.ReadElementContentAs : Type * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="xmlReader.ReadElementContentAs (returnType, namespaceResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4821,6 +4898,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAs(System.Type,System.Xml.IXmlNamespaceResolver,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAs (returnType As Type, namespaceResolver As IXmlNamespaceResolver, localName As String, namespaceURI As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadElementContentAs(Type ^ returnType, System::Xml::IXmlNamespaceResolver ^ namespaceResolver, System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAs : Type * System.Xml.IXmlNamespaceResolver * string * string -&gt; obj&#xA;override this.ReadElementContentAs : Type * System.Xml.IXmlNamespaceResolver * string * string -&gt; obj" Usage="xmlReader.ReadElementContentAs (returnType, namespaceResolver, localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4884,6 +4962,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsAsync(System.Type,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsAsync (returnType As Type, namespaceResolver As IXmlNamespaceResolver) As Task(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ ReadElementContentAsAsync(Type ^ returnType, System::Xml::IXmlNamespaceResolver ^ namespaceResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsAsync : Type * System.Xml.IXmlNamespaceResolver -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.ReadElementContentAsAsync : Type * System.Xml.IXmlNamespaceResolver -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="xmlReader.ReadElementContentAsAsync (returnType, namespaceResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4939,6 +5018,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsBase64 (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadElementContentAsBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsBase64 : byte[] * int * int -&gt; int&#xA;override this.ReadElementContentAsBase64 : byte[] * int * int -&gt; int" Usage="xmlReader.ReadElementContentAsBase64 (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5012,6 +5092,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsBase64Async(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsBase64Async (buffer As Byte(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ReadElementContentAsBase64Async(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsBase64Async : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ReadElementContentAsBase64Async : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="xmlReader.ReadElementContentAsBase64Async (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5061,6 +5142,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsBinHex (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadElementContentAsBinHex(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsBinHex : byte[] * int * int -&gt; int&#xA;override this.ReadElementContentAsBinHex : byte[] * int * int -&gt; int" Usage="xmlReader.ReadElementContentAsBinHex (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5134,6 +5216,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsBinHexAsync(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsBinHexAsync (buffer As Byte(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ReadElementContentAsBinHexAsync(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsBinHexAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ReadElementContentAsBinHexAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="xmlReader.ReadElementContentAsBinHexAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5196,6 +5279,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsBoolean () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadElementContentAsBoolean();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsBoolean : unit -&gt; bool&#xA;override this.ReadElementContentAsBoolean : unit -&gt; bool" Usage="xmlReader.ReadElementContentAsBoolean " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5248,6 +5332,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsBoolean(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsBoolean (localName As String, namespaceURI As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadElementContentAsBoolean(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsBoolean : string * string -&gt; bool&#xA;override this.ReadElementContentAsBoolean : string * string -&gt; bool" Usage="xmlReader.ReadElementContentAsBoolean (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5317,6 +5402,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsDateTime () As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime ReadElementContentAsDateTime();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsDateTime : unit -&gt; DateTime&#xA;override this.ReadElementContentAsDateTime : unit -&gt; DateTime" Usage="xmlReader.ReadElementContentAsDateTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -5381,6 +5467,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsDateTime(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsDateTime (localName As String, namespaceURI As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime ReadElementContentAsDateTime(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsDateTime : string * string -&gt; DateTime&#xA;override this.ReadElementContentAsDateTime : string * string -&gt; DateTime" Usage="xmlReader.ReadElementContentAsDateTime (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -5452,6 +5539,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsDecimal () As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Decimal ReadElementContentAsDecimal();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsDecimal : unit -&gt; decimal&#xA;override this.ReadElementContentAsDecimal : unit -&gt; decimal" Usage="xmlReader.ReadElementContentAsDecimal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5504,6 +5592,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsDecimal(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsDecimal (localName As String, namespaceURI As String) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Decimal ReadElementContentAsDecimal(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsDecimal : string * string -&gt; decimal&#xA;override this.ReadElementContentAsDecimal : string * string -&gt; decimal" Usage="xmlReader.ReadElementContentAsDecimal (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5575,6 +5664,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsDouble" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsDouble () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double ReadElementContentAsDouble();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsDouble : unit -&gt; double&#xA;override this.ReadElementContentAsDouble : unit -&gt; double" Usage="xmlReader.ReadElementContentAsDouble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5639,6 +5729,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsDouble(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsDouble (localName As String, namespaceURI As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double ReadElementContentAsDouble(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsDouble : string * string -&gt; double&#xA;override this.ReadElementContentAsDouble : string * string -&gt; double" Usage="xmlReader.ReadElementContentAsDouble (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5710,6 +5801,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsFloat" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsFloat () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual float ReadElementContentAsFloat();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsFloat : unit -&gt; single&#xA;override this.ReadElementContentAsFloat : unit -&gt; single" Usage="xmlReader.ReadElementContentAsFloat " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5762,6 +5854,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsFloat(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsFloat (localName As String, namespaceURI As String) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual float ReadElementContentAsFloat(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsFloat : string * string -&gt; single&#xA;override this.ReadElementContentAsFloat : string * string -&gt; single" Usage="xmlReader.ReadElementContentAsFloat (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5833,6 +5926,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsInt" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsInt () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadElementContentAsInt();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsInt : unit -&gt; int&#xA;override this.ReadElementContentAsInt : unit -&gt; int" Usage="xmlReader.ReadElementContentAsInt " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5885,6 +5979,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsInt(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsInt (localName As String, namespaceURI As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadElementContentAsInt(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsInt : string * string -&gt; int&#xA;override this.ReadElementContentAsInt : string * string -&gt; int" Usage="xmlReader.ReadElementContentAsInt (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5956,6 +6051,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsLong" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsLong () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long ReadElementContentAsLong();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsLong : unit -&gt; int64&#xA;override this.ReadElementContentAsLong : unit -&gt; int64" Usage="xmlReader.ReadElementContentAsLong " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6020,6 +6116,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsLong(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsLong (localName As String, namespaceURI As String) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long ReadElementContentAsLong(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsLong : string * string -&gt; int64&#xA;override this.ReadElementContentAsLong : string * string -&gt; int64" Usage="xmlReader.ReadElementContentAsLong (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6091,6 +6188,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsObject" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadElementContentAsObject();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsObject : unit -&gt; obj&#xA;override this.ReadElementContentAsObject : unit -&gt; obj" Usage="xmlReader.ReadElementContentAsObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6161,6 +6259,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsObject(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsObject (localName As String, namespaceURI As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadElementContentAsObject(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsObject : string * string -&gt; obj&#xA;override this.ReadElementContentAsObject : string * string -&gt; obj" Usage="xmlReader.ReadElementContentAsObject (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6217,6 +6316,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsObjectAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsObjectAsync () As Task(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ ReadElementContentAsObjectAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsObjectAsync : unit -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.ReadElementContentAsObjectAsync : unit -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="xmlReader.ReadElementContentAsObjectAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6280,6 +6380,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadElementContentAsString();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsString : unit -&gt; string&#xA;override this.ReadElementContentAsString : unit -&gt; string" Usage="xmlReader.ReadElementContentAsString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6344,6 +6445,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsString (localName As String, namespaceURI As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadElementContentAsString(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsString : string * string -&gt; string&#xA;override this.ReadElementContentAsString : string * string -&gt; string" Usage="xmlReader.ReadElementContentAsString (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6412,6 +6514,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementContentAsStringAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementContentAsStringAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadElementContentAsStringAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementContentAsStringAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.ReadElementContentAsStringAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="xmlReader.ReadElementContentAsStringAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6481,6 +6584,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadElementString();" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementString : unit -&gt; string&#xA;override this.ReadElementString : unit -&gt; string" Usage="xmlReader.ReadElementString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -6526,6 +6630,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementString (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadElementString(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementString : string -&gt; string&#xA;override this.ReadElementString : string -&gt; string" Usage="xmlReader.ReadElementString name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -6574,6 +6679,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadElementString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadElementString (localname As String, ns As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadElementString(System::String ^ localname, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="abstract member ReadElementString : string * string -&gt; string&#xA;override this.ReadElementString : string * string -&gt; string" Usage="xmlReader.ReadElementString (localname, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -6624,6 +6730,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadEndElement" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReadEndElement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadEndElement();" />
+      <MemberSignature Language="F#" Value="abstract member ReadEndElement : unit -&gt; unit&#xA;override this.ReadEndElement : unit -&gt; unit" Usage="xmlReader.ReadEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6674,6 +6781,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadInnerXml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadInnerXml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadInnerXml();" />
+      <MemberSignature Language="F#" Value="abstract member ReadInnerXml : unit -&gt; string&#xA;override this.ReadInnerXml : unit -&gt; string" Usage="xmlReader.ReadInnerXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6754,6 +6862,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadInnerXmlAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadInnerXmlAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadInnerXmlAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadInnerXmlAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.ReadInnerXmlAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="xmlReader.ReadInnerXmlAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6804,6 +6913,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadOuterXml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadOuterXml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadOuterXml();" />
+      <MemberSignature Language="F#" Value="abstract member ReadOuterXml : unit -&gt; string&#xA;override this.ReadOuterXml : unit -&gt; string" Usage="xmlReader.ReadOuterXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6874,6 +6984,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadOuterXmlAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadOuterXmlAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadOuterXmlAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadOuterXmlAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.ReadOuterXmlAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="xmlReader.ReadOuterXmlAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6937,6 +7048,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadStartElement" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReadStartElement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadStartElement();" />
+      <MemberSignature Language="F#" Value="abstract member ReadStartElement : unit -&gt; unit&#xA;override this.ReadStartElement : unit -&gt; unit" Usage="xmlReader.ReadStartElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -6980,6 +7092,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadStartElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReadStartElement (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadStartElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ReadStartElement : string -&gt; unit&#xA;override this.ReadStartElement : string -&gt; unit" Usage="xmlReader.ReadStartElement name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7042,6 +7155,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadStartElement(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReadStartElement (localname As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadStartElement(System::String ^ localname, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="abstract member ReadStartElement : string * string -&gt; unit&#xA;override this.ReadStartElement : string * string -&gt; unit" Usage="xmlReader.ReadStartElement (localname, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7094,6 +7208,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.ReadState" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReadState As ReadState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::ReadState ReadState { System::Xml::ReadState get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReadState : System.Xml.ReadState" Usage="System.Xml.XmlReader.ReadState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7145,6 +7260,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadString();" />
+      <MemberSignature Language="F#" Value="abstract member ReadString : unit -&gt; string&#xA;override this.ReadString : unit -&gt; string" Usage="xmlReader.ReadString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -7190,6 +7306,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadSubtree" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadSubtree () As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlReader ^ ReadSubtree();" />
+      <MemberSignature Language="F#" Value="abstract member ReadSubtree : unit -&gt; System.Xml.XmlReader&#xA;override this.ReadSubtree : unit -&gt; System.Xml.XmlReader" Usage="xmlReader.ReadSubtree " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7285,6 +7402,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadToDescendant(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToDescendant (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadToDescendant(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ReadToDescendant : string -&gt; bool&#xA;override this.ReadToDescendant : string -&gt; bool" Usage="xmlReader.ReadToDescendant name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7341,6 +7459,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadToDescendant(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToDescendant (localName As String, namespaceURI As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadToDescendant(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadToDescendant : string * string -&gt; bool&#xA;override this.ReadToDescendant : string * string -&gt; bool" Usage="xmlReader.ReadToDescendant (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7398,6 +7517,7 @@ public class Sample
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadToFollowing(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToFollowing (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadToFollowing(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ReadToFollowing : string -&gt; bool&#xA;override this.ReadToFollowing : string -&gt; bool" Usage="xmlReader.ReadToFollowing name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7464,6 +7584,7 @@ reader.ReadToFollowing("item");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadToFollowing(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToFollowing (localName As String, namespaceURI As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadToFollowing(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadToFollowing : string * string -&gt; bool&#xA;override this.ReadToFollowing : string * string -&gt; bool" Usage="xmlReader.ReadToFollowing (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7545,6 +7666,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadToNextSibling(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToNextSibling (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadToNextSibling(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ReadToNextSibling : string -&gt; bool&#xA;override this.ReadToNextSibling : string -&gt; bool" Usage="xmlReader.ReadToNextSibling name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7602,6 +7724,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadToNextSibling(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToNextSibling (localName As String, namespaceURI As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadToNextSibling(System::String ^ localName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member ReadToNextSibling : string * string -&gt; bool&#xA;override this.ReadToNextSibling : string * string -&gt; bool" Usage="xmlReader.ReadToNextSibling (localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7653,6 +7776,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadValueChunk(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadValueChunk (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadValueChunk(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadValueChunk : char[] * int * int -&gt; int&#xA;override this.ReadValueChunk : char[] * int * int -&gt; int" Usage="xmlReader.ReadValueChunk (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7718,6 +7842,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ReadValueChunkAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadValueChunkAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ReadValueChunkAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadValueChunkAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ReadValueChunkAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="xmlReader.ReadValueChunkAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7767,6 +7892,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.ResolveEntity" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ResolveEntity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ResolveEntity();" />
+      <MemberSignature Language="F#" Value="abstract member ResolveEntity : unit -&gt; unit" Usage="xmlReader.ResolveEntity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7813,6 +7939,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.SchemaInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SchemaInfo As IXmlSchemaInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::IXmlSchemaInfo ^ SchemaInfo { System::Xml::Schema::IXmlSchemaInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaInfo : System.Xml.Schema.IXmlSchemaInfo" Usage="System.Xml.XmlReader.SchemaInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -7860,6 +7987,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.Settings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Settings As XmlReaderSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlReaderSettings ^ Settings { System::Xml::XmlReaderSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Settings : System.Xml.XmlReaderSettings" Usage="System.Xml.XmlReader.Settings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7905,6 +8033,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.Skip" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Skip ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Skip();" />
+      <MemberSignature Language="F#" Value="abstract member Skip : unit -&gt; unit&#xA;override this.Skip : unit -&gt; unit" Usage="xmlReader.Skip " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -7988,6 +8117,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReader.SkipAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SkipAsync () As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ SkipAsync();" />
+      <MemberSignature Language="F#" Value="abstract member SkipAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.SkipAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlReader.SkipAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -8030,6 +8160,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Xml.XmlReader.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -8107,6 +8238,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.ValueType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ValueType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ValueType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueType : Type" Usage="System.Xml.XmlReader.ValueType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -8155,6 +8287,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.XmlLang" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XmlLang As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XmlLang { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlLang : string" Usage="System.Xml.XmlReader.XmlLang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -8210,6 +8343,7 @@ reader.ReadToFollowing("item", "urn:1");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReader.XmlSpace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XmlSpace As XmlSpace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlSpace XmlSpace { System::Xml::XmlSpace get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSpace : System.Xml.XmlSpace" Usage="System.Xml.XmlReader.XmlSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

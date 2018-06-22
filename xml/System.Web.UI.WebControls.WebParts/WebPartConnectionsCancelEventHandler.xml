@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WebPartConnectionsCancelEventHandler(sender As Object, e As WebPartConnectionsCancelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WebPartConnectionsCancelEventHandler(System::Object ^ sender, WebPartConnectionsCancelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WebPartConnectionsCancelEventHandler = delegate of obj * WebPartConnectionsCancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

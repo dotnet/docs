@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextImageRelation" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextImageRelation" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextImageRelation" />
+  <TypeSignature Language="F#" Value="type TextImageRelation = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextImageRelation.ImageAboveText" />
       <MemberSignature Language="VB.NET" Value="ImageAboveText" />
       <MemberSignature Language="C++ CLI" Value="ImageAboveText" />
+      <MemberSignature Language="F#" Value="ImageAboveText = 1" Usage="System.Windows.Forms.TextImageRelation.ImageAboveText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextImageRelation.ImageBeforeText" />
       <MemberSignature Language="VB.NET" Value="ImageBeforeText" />
       <MemberSignature Language="C++ CLI" Value="ImageBeforeText" />
+      <MemberSignature Language="F#" Value="ImageBeforeText = 4" Usage="System.Windows.Forms.TextImageRelation.ImageBeforeText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextImageRelation.Overlay" />
       <MemberSignature Language="VB.NET" Value="Overlay" />
       <MemberSignature Language="C++ CLI" Value="Overlay" />
+      <MemberSignature Language="F#" Value="Overlay = 0" Usage="System.Windows.Forms.TextImageRelation.Overlay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextImageRelation.TextAboveImage" />
       <MemberSignature Language="VB.NET" Value="TextAboveImage" />
       <MemberSignature Language="C++ CLI" Value="TextAboveImage" />
+      <MemberSignature Language="F#" Value="TextAboveImage = 2" Usage="System.Windows.Forms.TextImageRelation.TextAboveImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextImageRelation.TextBeforeImage" />
       <MemberSignature Language="VB.NET" Value="TextBeforeImage" />
       <MemberSignature Language="C++ CLI" Value="TextBeforeImage" />
+      <MemberSignature Language="F#" Value="TextBeforeImage = 8" Usage="System.Windows.Forms.TextImageRelation.TextBeforeImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

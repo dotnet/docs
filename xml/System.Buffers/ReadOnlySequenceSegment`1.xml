@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.ReadOnlySequenceSegment`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ReadOnlySequenceSegment(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ReadOnlySequenceSegment abstract" />
+  <TypeSignature Language="F#" Value="type ReadOnlySequenceSegment&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequenceSegment`1.Memory" />
       <MemberSignature Language="VB.NET" Value="Public Property Memory As ReadOnlyMemory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:  property ReadOnlyMemory&lt;T&gt; Memory {  public:&#xA;ReadOnlyMemory&lt;T&gt; get(); protected:&#xA; void set(ReadOnlyMemory&lt;T&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Memory : ReadOnlyMemory&lt;'T&gt; with get, set" Usage="System.Buffers.ReadOnlySequenceSegment&lt;'T&gt;.Memory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequenceSegment`1.Next" />
       <MemberSignature Language="VB.NET" Value="Public Property Next As ReadOnlySequenceSegment(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ Next {  public:&#xA;System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ get(); protected:&#xA; void set(System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Next : System.Buffers.ReadOnlySequenceSegment&lt;'T&gt; with get, set" Usage="System.Buffers.ReadOnlySequenceSegment&lt;'T&gt;.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequenceSegment`1.RunningIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property RunningIndex As Long" />
       <MemberSignature Language="C++ CLI" Value="public:  property long RunningIndex {  public:&#xA;long get(); protected:&#xA; void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.RunningIndex : int64 with get, set" Usage="System.Buffers.ReadOnlySequenceSegment&lt;'T&gt;.RunningIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum" />
   <TypeSignature Language="VB.NET" Value="Public Enum ADODC.EOFActionEnum" />
   <TypeSignature Language="C++ CLI" Value="public: enum class ADODC::EOFActionEnum" />
+  <TypeSignature Language="F#" Value="type ADODC.EOFActionEnum = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum.adDoAddNew" />
       <MemberSignature Language="VB.NET" Value="adDoAddNew" />
       <MemberSignature Language="C++ CLI" Value="adDoAddNew" />
+      <MemberSignature Language="F#" Value="adDoAddNew = 2" Usage="Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum.adDoAddNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum.adDoMoveLast" />
       <MemberSignature Language="VB.NET" Value="adDoMoveLast" />
       <MemberSignature Language="C++ CLI" Value="adDoMoveLast" />
+      <MemberSignature Language="F#" Value="adDoMoveLast = 0" Usage="Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum.adDoMoveLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum.adStayEOF" />
       <MemberSignature Language="VB.NET" Value="adStayEOF" />
       <MemberSignature Language="C++ CLI" Value="adStayEOF" />
+      <MemberSignature Language="F#" Value="adStayEOF = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.ADODC.EOFActionEnum.adStayEOF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

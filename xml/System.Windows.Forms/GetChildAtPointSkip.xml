@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GetChildAtPointSkip" />
   <TypeSignature Language="VB.NET" Value="Public Enum GetChildAtPointSkip" />
   <TypeSignature Language="C++ CLI" Value="public enum class GetChildAtPointSkip" />
+  <TypeSignature Language="F#" Value="type GetChildAtPointSkip = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GetChildAtPointSkip.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 2" Usage="System.Windows.Forms.GetChildAtPointSkip.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GetChildAtPointSkip.Invisible" />
       <MemberSignature Language="VB.NET" Value="Invisible" />
       <MemberSignature Language="C++ CLI" Value="Invisible" />
+      <MemberSignature Language="F#" Value="Invisible = 1" Usage="System.Windows.Forms.GetChildAtPointSkip.Invisible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GetChildAtPointSkip.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.GetChildAtPointSkip.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GetChildAtPointSkip.Transparent" />
       <MemberSignature Language="VB.NET" Value="Transparent" />
       <MemberSignature Language="C++ CLI" Value="Transparent" />
+      <MemberSignature Language="F#" Value="Transparent = 4" Usage="System.Windows.Forms.GetChildAtPointSkip.Transparent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

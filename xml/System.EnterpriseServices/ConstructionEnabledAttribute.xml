@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ConstructionEnabledAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConstructionEnabledAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConstructionEnabledAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ConstructionEnabledAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ConstructionEnabledAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstructionEnabledAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ConstructionEnabledAttribute : bool -&gt; System.EnterpriseServices.ConstructionEnabledAttribute" Usage="new System.EnterpriseServices.ConstructionEnabledAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ConstructionEnabledAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Default : string with get, set" Usage="System.EnterpriseServices.ConstructionEnabledAttribute.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ConstructionEnabledAttribute.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.EnterpriseServices.ConstructionEnabledAttribute.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

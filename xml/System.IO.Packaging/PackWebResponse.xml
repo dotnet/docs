@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackWebResponse" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PackWebResponse&#xA;Inherits WebResponse" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackWebResponse sealed : System::Net::WebResponse" />
+  <TypeSignature Language="F#" Value="type PackWebResponse = class&#xA;    inherit WebResponse" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebResponse.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="packWebResponse.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebResponse.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContentLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int64" Usage="System.IO.Packaging.PackWebResponse.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebResponse.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.IO.Packaging.PackWebResponse.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebResponse.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="packWebResponse.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebResponse.GetResponseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResponseStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetResponseStream();" />
+      <MemberSignature Language="F#" Value="abstract member GetResponseStream : unit -&gt; System.IO.Stream&#xA;override this.GetResponseStream : unit -&gt; System.IO.Stream" Usage="packWebResponse.GetResponseStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebResponse.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Headers As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.IO.Packaging.PackWebResponse.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebResponse.InnerResponse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerResponse As WebResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebResponse ^ InnerResponse { System::Net::WebResponse ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InnerResponse : System.Net.WebResponse" Usage="System.IO.Packaging.PackWebResponse.InnerResponse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebResponse.IsFromCache" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsFromCache As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFromCache { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFromCache : bool" Usage="System.IO.Packaging.PackWebResponse.IsFromCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebResponse.ResponseUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ResponseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ ResponseUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseUri : Uri" Usage="System.IO.Packaging.PackWebResponse.ResponseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

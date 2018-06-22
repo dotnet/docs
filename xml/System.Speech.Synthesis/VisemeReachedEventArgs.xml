@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.VisemeReachedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class VisemeReachedEventArgs&#xA;Inherits PromptEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisemeReachedEventArgs : System::Speech::Synthesis::PromptEventArgs" />
+  <TypeSignature Language="F#" Value="type VisemeReachedEventArgs = class&#xA;    inherit PromptEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.VisemeReachedEventArgs.AudioPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioPosition As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AudioPosition { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.AudioPosition : TimeSpan" Usage="System.Speech.Synthesis.VisemeReachedEventArgs.AudioPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.VisemeReachedEventArgs.Duration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.Duration : TimeSpan" Usage="System.Speech.Synthesis.VisemeReachedEventArgs.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.VisemeReachedEventArgs.Emphasis" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Emphasis As SynthesizerEmphasis" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::SynthesizerEmphasis Emphasis { System::Speech::Synthesis::SynthesizerEmphasis get(); };" />
+      <MemberSignature Language="F#" Value="member this.Emphasis : System.Speech.Synthesis.SynthesizerEmphasis" Usage="System.Speech.Synthesis.VisemeReachedEventArgs.Emphasis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.VisemeReachedEventArgs.NextViseme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextViseme As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NextViseme { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextViseme : int" Usage="System.Speech.Synthesis.VisemeReachedEventArgs.NextViseme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.VisemeReachedEventArgs.Viseme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Viseme As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Viseme { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Viseme : int" Usage="System.Speech.Synthesis.VisemeReachedEventArgs.Viseme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

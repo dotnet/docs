@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ProgressChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ProgressChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProgressChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ProgressChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ProgressChangedEventArgs.#ctor(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (progressPercentage As Integer, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProgressChangedEventArgs(int progressPercentage, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ProgressChangedEventArgs : int * obj -&gt; System.ComponentModel.ProgressChangedEventArgs" Usage="new System.ComponentModel.ProgressChangedEventArgs (progressPercentage, userState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgressPercentage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProgressPercentage { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProgressPercentage : int" Usage="System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProgressChangedEventArgs.UserState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserState As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserState { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserState : obj" Usage="System.ComponentModel.ProgressChangedEventArgs.UserState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

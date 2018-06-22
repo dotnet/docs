@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.SeriesChartType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SeriesChartType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SeriesChartType" />
+  <TypeSignature Language="F#" Value="type SeriesChartType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Area" />
       <MemberSignature Language="VB.NET" Value="Area" />
       <MemberSignature Language="C++ CLI" Value="Area" />
+      <MemberSignature Language="F#" Value="Area = 13" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Area" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Bar" />
       <MemberSignature Language="VB.NET" Value="Bar" />
       <MemberSignature Language="C++ CLI" Value="Bar" />
+      <MemberSignature Language="F#" Value="Bar = 7" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Bar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.BoxPlot" />
       <MemberSignature Language="VB.NET" Value="BoxPlot" />
       <MemberSignature Language="C++ CLI" Value="BoxPlot" />
+      <MemberSignature Language="F#" Value="BoxPlot = 28" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.BoxPlot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Bubble" />
       <MemberSignature Language="VB.NET" Value="Bubble" />
       <MemberSignature Language="C++ CLI" Value="Bubble" />
+      <MemberSignature Language="F#" Value="Bubble = 2" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Bubble" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Candlestick" />
       <MemberSignature Language="VB.NET" Value="Candlestick" />
       <MemberSignature Language="C++ CLI" Value="Candlestick" />
+      <MemberSignature Language="F#" Value="Candlestick = 20" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Candlestick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Column" />
       <MemberSignature Language="VB.NET" Value="Column" />
       <MemberSignature Language="C++ CLI" Value="Column" />
+      <MemberSignature Language="F#" Value="Column = 10" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Column" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Doughnut" />
       <MemberSignature Language="VB.NET" Value="Doughnut" />
       <MemberSignature Language="C++ CLI" Value="Doughnut" />
+      <MemberSignature Language="F#" Value="Doughnut = 18" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Doughnut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.ErrorBar" />
       <MemberSignature Language="VB.NET" Value="ErrorBar" />
       <MemberSignature Language="C++ CLI" Value="ErrorBar" />
+      <MemberSignature Language="F#" Value="ErrorBar = 27" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.ErrorBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.FastLine" />
       <MemberSignature Language="VB.NET" Value="FastLine" />
       <MemberSignature Language="C++ CLI" Value="FastLine" />
+      <MemberSignature Language="F#" Value="FastLine = 6" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.FastLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -193,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.FastPoint" />
       <MemberSignature Language="VB.NET" Value="FastPoint" />
       <MemberSignature Language="C++ CLI" Value="FastPoint" />
+      <MemberSignature Language="F#" Value="FastPoint = 1" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.FastPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -212,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Funnel" />
       <MemberSignature Language="VB.NET" Value="Funnel" />
       <MemberSignature Language="C++ CLI" Value="Funnel" />
+      <MemberSignature Language="F#" Value="Funnel = 33" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Funnel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -231,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Kagi" />
       <MemberSignature Language="VB.NET" Value="Kagi" />
       <MemberSignature Language="C++ CLI" Value="Kagi" />
+      <MemberSignature Language="F#" Value="Kagi = 31" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Kagi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -250,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Line" />
       <MemberSignature Language="VB.NET" Value="Line" />
       <MemberSignature Language="C++ CLI" Value="Line" />
+      <MemberSignature Language="F#" Value="Line = 3" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Line" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -269,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Pie" />
       <MemberSignature Language="VB.NET" Value="Pie" />
       <MemberSignature Language="C++ CLI" Value="Pie" />
+      <MemberSignature Language="F#" Value="Pie = 17" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Pie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -288,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Point" />
       <MemberSignature Language="VB.NET" Value="Point" />
       <MemberSignature Language="C++ CLI" Value="Point" />
+      <MemberSignature Language="F#" Value="Point = 0" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Point" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -307,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.PointAndFigure" />
       <MemberSignature Language="VB.NET" Value="PointAndFigure" />
       <MemberSignature Language="C++ CLI" Value="PointAndFigure" />
+      <MemberSignature Language="F#" Value="PointAndFigure = 32" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.PointAndFigure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -326,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Polar" />
       <MemberSignature Language="VB.NET" Value="Polar" />
       <MemberSignature Language="C++ CLI" Value="Polar" />
+      <MemberSignature Language="F#" Value="Polar = 26" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Polar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -345,6 +363,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Pyramid" />
       <MemberSignature Language="VB.NET" Value="Pyramid" />
       <MemberSignature Language="C++ CLI" Value="Pyramid" />
+      <MemberSignature Language="F#" Value="Pyramid = 34" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Pyramid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -364,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Radar" />
       <MemberSignature Language="VB.NET" Value="Radar" />
       <MemberSignature Language="C++ CLI" Value="Radar" />
+      <MemberSignature Language="F#" Value="Radar = 25" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Radar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -383,6 +403,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Range" />
       <MemberSignature Language="VB.NET" Value="Range" />
       <MemberSignature Language="C++ CLI" Value="Range" />
+      <MemberSignature Language="F#" Value="Range = 21" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Range" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -402,6 +423,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.RangeBar" />
       <MemberSignature Language="VB.NET" Value="RangeBar" />
       <MemberSignature Language="C++ CLI" Value="RangeBar" />
+      <MemberSignature Language="F#" Value="RangeBar = 23" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.RangeBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -421,6 +443,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.RangeColumn" />
       <MemberSignature Language="VB.NET" Value="RangeColumn" />
       <MemberSignature Language="C++ CLI" Value="RangeColumn" />
+      <MemberSignature Language="F#" Value="RangeColumn = 24" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.RangeColumn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -440,6 +463,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Renko" />
       <MemberSignature Language="VB.NET" Value="Renko" />
       <MemberSignature Language="C++ CLI" Value="Renko" />
+      <MemberSignature Language="F#" Value="Renko = 29" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Renko" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -459,6 +483,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Spline" />
       <MemberSignature Language="VB.NET" Value="Spline" />
       <MemberSignature Language="C++ CLI" Value="Spline" />
+      <MemberSignature Language="F#" Value="Spline = 4" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Spline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -478,6 +503,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.SplineArea" />
       <MemberSignature Language="VB.NET" Value="SplineArea" />
       <MemberSignature Language="C++ CLI" Value="SplineArea" />
+      <MemberSignature Language="F#" Value="SplineArea = 14" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.SplineArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -497,6 +523,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.SplineRange" />
       <MemberSignature Language="VB.NET" Value="SplineRange" />
       <MemberSignature Language="C++ CLI" Value="SplineRange" />
+      <MemberSignature Language="F#" Value="SplineRange = 22" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.SplineRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -516,6 +543,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedArea" />
       <MemberSignature Language="VB.NET" Value="StackedArea" />
       <MemberSignature Language="C++ CLI" Value="StackedArea" />
+      <MemberSignature Language="F#" Value="StackedArea = 15" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -535,6 +563,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedArea100" />
       <MemberSignature Language="VB.NET" Value="StackedArea100" />
       <MemberSignature Language="C++ CLI" Value="StackedArea100" />
+      <MemberSignature Language="F#" Value="StackedArea100 = 16" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedArea100" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -554,6 +583,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedBar" />
       <MemberSignature Language="VB.NET" Value="StackedBar" />
       <MemberSignature Language="C++ CLI" Value="StackedBar" />
+      <MemberSignature Language="F#" Value="StackedBar = 8" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -573,6 +603,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedBar100" />
       <MemberSignature Language="VB.NET" Value="StackedBar100" />
       <MemberSignature Language="C++ CLI" Value="StackedBar100" />
+      <MemberSignature Language="F#" Value="StackedBar100 = 9" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedBar100" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -592,6 +623,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedColumn" />
       <MemberSignature Language="VB.NET" Value="StackedColumn" />
       <MemberSignature Language="C++ CLI" Value="StackedColumn" />
+      <MemberSignature Language="F#" Value="StackedColumn = 11" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedColumn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -611,6 +643,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedColumn100" />
       <MemberSignature Language="VB.NET" Value="StackedColumn100" />
       <MemberSignature Language="C++ CLI" Value="StackedColumn100" />
+      <MemberSignature Language="F#" Value="StackedColumn100 = 12" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.StackedColumn100" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -630,6 +663,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.StepLine" />
       <MemberSignature Language="VB.NET" Value="StepLine" />
       <MemberSignature Language="C++ CLI" Value="StepLine" />
+      <MemberSignature Language="F#" Value="StepLine = 5" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.StepLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -649,6 +683,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Stock" />
       <MemberSignature Language="VB.NET" Value="Stock" />
       <MemberSignature Language="C++ CLI" Value="Stock" />
+      <MemberSignature Language="F#" Value="Stock = 19" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.Stock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -668,6 +703,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.ThreeLineBreak" />
       <MemberSignature Language="VB.NET" Value="ThreeLineBreak" />
       <MemberSignature Language="C++ CLI" Value="ThreeLineBreak" />
+      <MemberSignature Language="F#" Value="ThreeLineBreak = 30" Usage="System.Web.UI.DataVisualization.Charting.SeriesChartType.ThreeLineBreak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IProvideValueTarget" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProvideValueTarget" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProvideValueTarget" />
+  <TypeSignature Language="F#" Value="type IProvideValueTarget = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.IProvideValueTarget.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TargetObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : obj" Usage="System.Windows.Markup.IProvideValueTarget.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.IProvideValueTarget.TargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetProperty As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TargetProperty { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetProperty : obj" Usage="System.Windows.Markup.IProvideValueTarget.TargetProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

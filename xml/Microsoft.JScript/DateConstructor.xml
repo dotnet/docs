@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.DateConstructor" />
   <TypeSignature Language="VB.NET" Value="Public Class DateConstructor&#xA;Inherits ScriptFunction" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateConstructor : Microsoft::JScript::ScriptFunction" />
+  <TypeSignature Language="F#" Value="type DateConstructor = class&#xA;    inherit ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DateConstructor.CreateInstance(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (ParamArray args As Object()) As DateObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::DateObject ^ CreateInstance(... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : obj[] -&gt; Microsoft.JScript.DateObject" Usage="dateConstructor.CreateInstance args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DateConstructor.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Invoke();" />
+      <MemberSignature Language="F#" Value="override this.Invoke : unit -&gt; string" Usage="dateConstructor.Invoke " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DateConstructor.parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function parse (str As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double parse(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member parse : string -&gt; double" Usage="Microsoft.JScript.DateConstructor.parse str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UTC (year As Object, month As Object, date As Object, hours As Object, minutes As Object, seconds As Object, ms As Object) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double UTC(System::Object ^ year, System::Object ^ month, System::Object ^ date, System::Object ^ hours, System::Object ^ minutes, System::Object ^ seconds, System::Object ^ ms);" />
+      <MemberSignature Language="F#" Value="static member UTC : obj * obj * obj * obj * obj * obj * obj -&gt; double" Usage="Microsoft.JScript.DateConstructor.UTC (year, month, date, hours, minutes, seconds, ms)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

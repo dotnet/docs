@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.Encodings.Web.HtmlEncoder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HtmlEncoder&#xA;Inherits TextEncoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlEncoder abstract : System::Text::Encodings::Web::TextEncoder" />
+  <TypeSignature Language="F#" Value="type HtmlEncoder = class&#xA;    inherit TextEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encodings.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.HtmlEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (settings As TextEncoderSettings) As HtmlEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encodings::Web::HtmlEncoder ^ Create(System::Text::Encodings::Web::TextEncoderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Text.Encodings.Web.TextEncoderSettings -&gt; System.Text.Encodings.Web.HtmlEncoder" Usage="System.Text.Encodings.Web.HtmlEncoder.Create settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.HtmlEncoder.Create(System.Text.Unicode.UnicodeRange[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (ParamArray allowedRanges As UnicodeRange()) As HtmlEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encodings::Web::HtmlEncoder ^ Create(... cli::array &lt;System::Text::Unicode::UnicodeRange ^&gt; ^ allowedRanges);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Text.Unicode.UnicodeRange[] -&gt; System.Text.Encodings.Web.HtmlEncoder" Usage="System.Text.Encodings.Web.HtmlEncoder.Create allowedRanges" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encodings.Web.HtmlEncoder.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As HtmlEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encodings::Web::HtmlEncoder ^ Default { System::Text::Encodings::Web::HtmlEncoder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Text.Encodings.Web.HtmlEncoder" Usage="System.Text.Encodings.Web.HtmlEncoder.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>

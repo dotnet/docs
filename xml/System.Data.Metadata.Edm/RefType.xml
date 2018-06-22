@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RefType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RefType&#xA;Inherits EdmType" />
   <TypeSignature Language="C++ CLI" Value="public ref class RefType sealed : System::Data::Metadata::Edm::EdmType" />
+  <TypeSignature Language="F#" Value="type RefType = class&#xA;    inherit EdmType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RefType.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.RefType.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RefType.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementType As EntityTypeBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EntityTypeBase ^ ElementType { System::Data::Metadata::Edm::EntityTypeBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementType : System.Data.Metadata.Edm.EntityTypeBase" Usage="System.Data.Metadata.Edm.RefType.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

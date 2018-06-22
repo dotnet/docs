@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.IMonoSslStream" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMonoSslStream&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMonoSslStream : IDisposable" />
+  <TypeSignature Language="F#" Value="type IMonoSslStream = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.AuthenticateAsClient(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AuthenticateAsClient (targetHost As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AuthenticateAsClient(System::String ^ targetHost);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsClient : string -&gt; unit" Usage="iMonoSslStream.AuthenticateAsClient targetHost" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.AuthenticateAsClient(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Security.Authentication.SslProtocols,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AuthenticateAsClient (targetHost As String, clientCertificates As X509CertificateCollection, enabledSslProtocols As SslProtocols, checkCertificateRevocation As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AuthenticateAsClient(System::String ^ targetHost, System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ clientCertificates, System::Security::Authentication::SslProtocols enabledSslProtocols, bool checkCertificateRevocation);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsClient : string * System.Security.Cryptography.X509Certificates.X509CertificateCollection * System.Security.Authentication.SslProtocols * bool -&gt; unit" Usage="iMonoSslStream.AuthenticateAsClient (targetHost, clientCertificates, enabledSslProtocols, checkCertificateRevocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.AuthenticateAsClientAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AuthenticateAsClientAsync (targetHost As String) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsClientAsync(System::String ^ targetHost);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsClientAsync : string -&gt; System.Threading.Tasks.Task" Usage="iMonoSslStream.AuthenticateAsClientAsync targetHost" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.AuthenticateAsClientAsync(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Security.Authentication.SslProtocols,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AuthenticateAsClientAsync (targetHost As String, clientCertificates As X509CertificateCollection, enabledSslProtocols As SslProtocols, checkCertificateRevocation As Boolean) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsClientAsync(System::String ^ targetHost, System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ clientCertificates, System::Security::Authentication::SslProtocols enabledSslProtocols, bool checkCertificateRevocation);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsClientAsync : string * System.Security.Cryptography.X509Certificates.X509CertificateCollection * System.Security.Authentication.SslProtocols * bool -&gt; System.Threading.Tasks.Task" Usage="iMonoSslStream.AuthenticateAsClientAsync (targetHost, clientCertificates, enabledSslProtocols, checkCertificateRevocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AuthenticateAsServer (serverCertificate As X509Certificate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AuthenticateAsServer(System::Security::Cryptography::X509Certificates::X509Certificate ^ serverCertificate);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsServer : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; unit" Usage="iMonoSslStream.AuthenticateAsServer serverCertificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AuthenticateAsServer (serverCertificate As X509Certificate, clientCertificateRequired As Boolean, enabledSslProtocols As SslProtocols, checkCertificateRevocation As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AuthenticateAsServer(System::Security::Cryptography::X509Certificates::X509Certificate ^ serverCertificate, bool clientCertificateRequired, System::Security::Authentication::SslProtocols enabledSslProtocols, bool checkCertificateRevocation);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsServer : System.Security.Cryptography.X509Certificates.X509Certificate * bool * System.Security.Authentication.SslProtocols * bool -&gt; unit" Usage="iMonoSslStream.AuthenticateAsServer (serverCertificate, clientCertificateRequired, enabledSslProtocols, checkCertificateRevocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.AuthenticateAsServerAsync(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Function AuthenticateAsServerAsync (serverCertificate As X509Certificate) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Security::Cryptography::X509Certificates::X509Certificate ^ serverCertificate);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsServerAsync : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; System.Threading.Tasks.Task" Usage="iMonoSslStream.AuthenticateAsServerAsync serverCertificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.AuthenticateAsServerAsync(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AuthenticateAsServerAsync (serverCertificate As X509Certificate, clientCertificateRequired As Boolean, enabledSslProtocols As SslProtocols, checkCertificateRevocation As Boolean) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Security::Cryptography::X509Certificates::X509Certificate ^ serverCertificate, bool clientCertificateRequired, System::Security::Authentication::SslProtocols enabledSslProtocols, bool checkCertificateRevocation);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsServerAsync : System.Security.Cryptography.X509Certificates.X509Certificate * bool * System.Security.Authentication.SslProtocols * bool -&gt; System.Threading.Tasks.Task" Usage="iMonoSslStream.AuthenticateAsServerAsync (serverCertificate, clientCertificateRequired, enabledSslProtocols, checkCertificateRevocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.AuthenticatedStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticatedStream As AuthenticatedStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::AuthenticatedStream ^ AuthenticatedStream { System::Net::Security::AuthenticatedStream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticatedStream : System.Net.Security.AuthenticatedStream" Usage="Mono.Security.Interface.IMonoSslStream.AuthenticatedStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,6 +265,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsClient(string targetHost, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.BeginAuthenticateAsClient(System.String,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAuthenticateAsClient(System::String ^ targetHost, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsClient : string * AsyncCallback * obj -&gt; IAsyncResult" Usage="iMonoSslStream.BeginAuthenticateAsClient (targetHost, asyncCallback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +293,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsClient(string targetHost, class System.Security.Cryptography.X509Certificates.X509CertificateCollection clientCertificates, valuetype System.Security.Authentication.SslProtocols enabledSslProtocols, bool checkCertificateRevocation, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.BeginAuthenticateAsClient(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Security.Authentication.SslProtocols,System.Boolean,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAuthenticateAsClient(System::String ^ targetHost, System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ clientCertificates, System::Security::Authentication::SslProtocols enabledSslProtocols, bool checkCertificateRevocation, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsClient : string * System.Security.Cryptography.X509Certificates.X509CertificateCollection * System.Security.Authentication.SslProtocols * bool * AsyncCallback * obj -&gt; IAsyncResult" Usage="iMonoSslStream.BeginAuthenticateAsClient (targetHost, clientCertificates, enabledSslProtocols, checkCertificateRevocation, asyncCallback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -315,6 +327,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsServer(class System.Security.Cryptography.X509Certificates.X509Certificate serverCertificate, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.BeginAuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAuthenticateAsServer(System::Security::Cryptography::X509Certificates::X509Certificate ^ serverCertificate, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsServer : System.Security.Cryptography.X509Certificates.X509Certificate * AsyncCallback * obj -&gt; IAsyncResult" Usage="iMonoSslStream.BeginAuthenticateAsServer (serverCertificate, asyncCallback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -342,6 +355,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsServer(class System.Security.Cryptography.X509Certificates.X509Certificate serverCertificate, bool clientCertificateRequired, valuetype System.Security.Authentication.SslProtocols enabledSslProtocols, bool checkCertificateRevocation, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.BeginAuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAuthenticateAsServer(System::Security::Cryptography::X509Certificates::X509Certificate ^ serverCertificate, bool clientCertificateRequired, System::Security::Authentication::SslProtocols enabledSslProtocols, bool checkCertificateRevocation, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsServer : System.Security.Cryptography.X509Certificates.X509Certificate * bool * System.Security.Authentication.SslProtocols * bool * AsyncCallback * obj -&gt; IAsyncResult" Usage="iMonoSslStream.BeginAuthenticateAsServer (serverCertificate, clientCertificateRequired, enabledSslProtocols, checkCertificateRevocation, asyncCallback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -375,6 +389,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="abstract member BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="iMonoSslStream.BeginRead (buffer, offset, count, asyncCallback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -406,6 +421,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="abstract member BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="iMonoSslStream.BeginWrite (buffer, offset, count, asyncCallback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -438,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRead { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="Mono.Security.Interface.IMonoSslStream.CanRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -458,6 +475,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.CanTimeout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanTimeout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanTimeout { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanTimeout : bool" Usage="Mono.Security.Interface.IMonoSslStream.CanTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -478,6 +496,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanWrite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="Mono.Security.Interface.IMonoSslStream.CanWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -498,6 +517,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.CheckCertRevocationStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckCertRevocationStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckCertRevocationStatus { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckCertRevocationStatus : bool" Usage="Mono.Security.Interface.IMonoSslStream.CheckCertRevocationStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -518,6 +538,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.CipherAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CipherAlgorithm As CipherAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::CipherAlgorithmType CipherAlgorithm { System::Security::Authentication::CipherAlgorithmType get(); };" />
+      <MemberSignature Language="F#" Value="member this.CipherAlgorithm : System.Security.Authentication.CipherAlgorithmType" Usage="Mono.Security.Interface.IMonoSslStream.CipherAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -538,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.CipherStrength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CipherStrength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CipherStrength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CipherStrength : int" Usage="Mono.Security.Interface.IMonoSslStream.CipherStrength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -558,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.EndAuthenticateAsClient(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndAuthenticateAsClient (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndAuthenticateAsClient(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="abstract member EndAuthenticateAsClient : IAsyncResult -&gt; unit" Usage="iMonoSslStream.EndAuthenticateAsClient asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -581,6 +604,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.EndAuthenticateAsServer(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndAuthenticateAsServer (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndAuthenticateAsServer(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="abstract member EndAuthenticateAsServer : IAsyncResult -&gt; unit" Usage="iMonoSslStream.EndAuthenticateAsServer asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -604,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.EndRead(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndRead (asyncResult As IAsyncResult) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndRead(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="abstract member EndRead : IAsyncResult -&gt; int" Usage="iMonoSslStream.EndRead asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -628,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.EndWrite(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndWrite (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndWrite(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="abstract member EndWrite : IAsyncResult -&gt; unit" Usage="iMonoSslStream.EndWrite asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -651,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="iMonoSslStream.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -671,6 +698,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.GetConnectionInfo" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConnectionInfo () As MonoTlsConnectionInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::Security::Interface::MonoTlsConnectionInfo ^ GetConnectionInfo();" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionInfo : unit -&gt; Mono.Security.Interface.MonoTlsConnectionInfo" Usage="iMonoSslStream.GetConnectionInfo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -692,6 +720,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.HashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithm As HashAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::HashAlgorithmType HashAlgorithm { System::Security::Authentication::HashAlgorithmType get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : System.Security.Authentication.HashAlgorithmType" Usage="Mono.Security.Interface.IMonoSslStream.HashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -712,6 +741,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.HashStrength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashStrength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HashStrength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashStrength : int" Usage="Mono.Security.Interface.IMonoSslStream.HashStrength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -732,6 +762,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.InternalLocalCertificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InternalLocalCertificate As X509Certificate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate ^ InternalLocalCertificate { System::Security::Cryptography::X509Certificates::X509Certificate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InternalLocalCertificate : System.Security.Cryptography.X509Certificates.X509Certificate" Usage="Mono.Security.Interface.IMonoSslStream.InternalLocalCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -752,6 +783,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuthenticated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="Mono.Security.Interface.IMonoSslStream.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -772,6 +804,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.IsEncrypted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEncrypted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEncrypted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEncrypted : bool" Usage="Mono.Security.Interface.IMonoSslStream.IsEncrypted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -792,6 +825,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.IsMutuallyAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMutuallyAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMutuallyAuthenticated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMutuallyAuthenticated : bool" Usage="Mono.Security.Interface.IMonoSslStream.IsMutuallyAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -812,6 +846,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.IsServer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsServer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsServer { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsServer : bool" Usage="Mono.Security.Interface.IMonoSslStream.IsServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -832,6 +867,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.IsSigned" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSigned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSigned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSigned : bool" Usage="Mono.Security.Interface.IMonoSslStream.IsSigned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -852,6 +888,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.KeyExchangeAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyExchangeAlgorithm As ExchangeAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExchangeAlgorithmType KeyExchangeAlgorithm { System::Security::Authentication::ExchangeAlgorithmType get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyExchangeAlgorithm : System.Security.Authentication.ExchangeAlgorithmType" Usage="Mono.Security.Interface.IMonoSslStream.KeyExchangeAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -872,6 +909,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.KeyExchangeStrength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyExchangeStrength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyExchangeStrength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyExchangeStrength : int" Usage="Mono.Security.Interface.IMonoSslStream.KeyExchangeStrength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -892,6 +930,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="Mono.Security.Interface.IMonoSslStream.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -912,6 +951,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.LocalCertificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalCertificate As X509Certificate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate ^ LocalCertificate { System::Security::Cryptography::X509Certificates::X509Certificate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalCertificate : System.Security.Cryptography.X509Certificates.X509Certificate" Usage="Mono.Security.Interface.IMonoSslStream.LocalCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -932,6 +972,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.Position" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Position { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : int64" Usage="Mono.Security.Interface.IMonoSslStream.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -952,6 +993,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As MonoTlsProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::MonoTlsProvider ^ Provider { Mono::Security::Interface::MonoTlsProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : Mono.Security.Interface.MonoTlsProvider" Usage="Mono.Security.Interface.IMonoSslStream.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -972,6 +1014,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Read : byte[] * int * int -&gt; int" Usage="iMonoSslStream.Read (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1000,6 +1043,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.ReadTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReadTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadTimeout : int with get, set" Usage="Mono.Security.Interface.IMonoSslStream.ReadTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1020,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.RemoteCertificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteCertificate As X509Certificate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate ^ RemoteCertificate { System::Security::Cryptography::X509Certificates::X509Certificate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemoteCertificate : System.Security.Cryptography.X509Certificates.X509Certificate" Usage="Mono.Security.Interface.IMonoSslStream.RemoteCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1040,6 +1085,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLength (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLength(long value);" />
+      <MemberSignature Language="F#" Value="abstract member SetLength : int64 -&gt; unit" Usage="iMonoSslStream.SetLength value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1063,6 +1109,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.SslProtocol" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SslProtocol As SslProtocols" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::SslProtocols SslProtocol { System::Security::Authentication::SslProtocols get(); };" />
+      <MemberSignature Language="F#" Value="member this.SslProtocol : System.Security.Authentication.SslProtocols" Usage="Mono.Security.Interface.IMonoSslStream.SslProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1083,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.TransportContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransportContext As TransportContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::TransportContext ^ TransportContext { System::Net::TransportContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransportContext : System.Net.TransportContext" Usage="Mono.Security.Interface.IMonoSslStream.TransportContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1103,6 +1151,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.Write(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (buffer As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ buffer);" />
+      <MemberSignature Language="F#" Value="abstract member Write : byte[] -&gt; unit" Usage="iMonoSslStream.Write buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1126,6 +1175,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.IMonoSslStream.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Write : byte[] * int * int -&gt; unit" Usage="iMonoSslStream.Write (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1153,6 +1203,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IMonoSslStream.WriteTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WriteTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WriteTimeout : int with get, set" Usage="Mono.Security.Interface.IMonoSslStream.WriteTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

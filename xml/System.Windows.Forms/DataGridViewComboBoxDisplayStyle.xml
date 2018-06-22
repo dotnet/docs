@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxDisplayStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewComboBoxDisplayStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewComboBoxDisplayStyle" />
+  <TypeSignature Language="F#" Value="type DataGridViewComboBoxDisplayStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox" />
       <MemberSignature Language="VB.NET" Value="ComboBox" />
       <MemberSignature Language="C++ CLI" Value="ComboBox" />
+      <MemberSignature Language="F#" Value="ComboBox = 0" Usage="System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.DropDownButton" />
       <MemberSignature Language="VB.NET" Value="DropDownButton" />
       <MemberSignature Language="C++ CLI" Value="DropDownButton" />
+      <MemberSignature Language="F#" Value="DropDownButton = 1" Usage="System.Windows.Forms.DataGridViewComboBoxDisplayStyle.DropDownButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing" />
       <MemberSignature Language="VB.NET" Value="Nothing" />
       <MemberSignature Language="C++ CLI" Value="Nothing" />
+      <MemberSignature Language="F#" Value="Nothing = 2" Usage="System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

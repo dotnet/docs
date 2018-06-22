@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IRemotingFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemotingFormatter&#xA;Implements IFormatter" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemotingFormatter : System::Runtime::Serialization::IFormatter" />
+  <TypeSignature Language="F#" Value="type IRemotingFormatter = interface&#xA;    interface IFormatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IRemotingFormatter.Deserialize(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializationStream As Stream, handler As HeaderHandler) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::IO::Stream ^ serializationStream, System::Runtime::Remoting::Messaging::HeaderHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.IO.Stream * System.Runtime.Remoting.Messaging.HeaderHandler -&gt; obj" Usage="iRemotingFormatter.Deserialize (serializationStream, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IRemotingFormatter.Serialize(System.IO.Stream,System.Object,System.Runtime.Remoting.Messaging.Header[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (serializationStream As Stream, graph As Object, headers As Header())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::IO::Stream ^ serializationStream, System::Object ^ graph, cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ headers);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.IO.Stream * obj * System.Runtime.Remoting.Messaging.Header[] -&gt; unit" Usage="iRemotingFormatter.Serialize (serializationStream, graph, headers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

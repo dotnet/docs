@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.MethodInvoker" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MethodInvoker" />
   <TypeSignature Language="C++ CLI" Value="public ref class MethodInvoker abstract" />
+  <TypeSignature Language="F#" Value="type MethodInvoker = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MethodInvoker.Invoke(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Invoke (thisob As Object, parameters As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Invoke(System::Object ^ thisob, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * obj[] -&gt; obj" Usage="methodInvoker.Invoke (thisob, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

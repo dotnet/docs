@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.ErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ErrorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.ErrorEventArgs.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorEventArgs(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.IO.ErrorEventArgs : Exception -&gt; System.IO.ErrorEventArgs" Usage="new System.IO.ErrorEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.ErrorEventArgs.GetException" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetException () As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Exception ^ GetException();" />
+      <MemberSignature Language="F#" Value="abstract member GetException : unit -&gt; Exception&#xA;override this.GetException : unit -&gt; Exception" Usage="errorEventArgs.GetException " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>

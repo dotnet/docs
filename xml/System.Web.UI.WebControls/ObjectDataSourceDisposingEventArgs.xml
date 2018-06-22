@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectDataSourceDisposingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectDataSourceDisposingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ObjectDataSourceDisposingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (objectInstance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDataSourceDisposingEventArgs(System::Object ^ objectInstance);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs : obj -&gt; System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs" Usage="new System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs objectInstance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs.ObjectInstance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectInstance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectInstance { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectInstance : obj" Usage="System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs.ObjectInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

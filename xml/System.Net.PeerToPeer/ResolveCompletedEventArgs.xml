@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.ResolveCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type ResolveCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.PeerToPeer.PeerNameRecordCollection peerNameRecordCollection, class System.Exception error, bool canceled, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.ResolveCompletedEventArgs.#ctor(System.Net.PeerToPeer.PeerNameRecordCollection,System.Exception,System.Boolean,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveCompletedEventArgs(System::Net::PeerToPeer::PeerNameRecordCollection ^ peerNameRecordCollection, Exception ^ error, bool canceled, System::Object ^ userToken);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.ResolveCompletedEventArgs : System.Net.PeerToPeer.PeerNameRecordCollection * Exception * bool * obj -&gt; System.Net.PeerToPeer.ResolveCompletedEventArgs" Usage="new System.Net.PeerToPeer.ResolveCompletedEventArgs (peerNameRecordCollection, error, canceled, userToken)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.ResolveCompletedEventArgs.PeerNameRecordCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerNameRecordCollection As PeerNameRecordCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::PeerNameRecordCollection ^ PeerNameRecordCollection { System::Net::PeerToPeer::PeerNameRecordCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerNameRecordCollection : System.Net.PeerToPeer.PeerNameRecordCollection" Usage="System.Net.PeerToPeer.ResolveCompletedEventArgs.PeerNameRecordCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

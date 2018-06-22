@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingValueElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingValueElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingValueElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SettingValueElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingValueElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="settingValueElement.DeserializeElement (reader, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingValueElement.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (settingValue As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ settingValue);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="settingValueElement.Equals settingValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingValueElement.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="settingValueElement.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingValueElement.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsModified();" />
+      <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="settingValueElement.IsModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingValueElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.SettingValueElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingValueElement.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="settingValueElement.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingValueElement.ResetModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ResetModified ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ResetModified();" />
+      <MemberSignature Language="F#" Value="override this.ResetModified : unit -&gt; unit" Usage="settingValueElement.ResetModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingValueElement.SerializeToXmlElement(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeToXmlElement (writer As XmlWriter, elementName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeToXmlElement(System::Xml::XmlWriter ^ writer, System::String ^ elementName);" />
+      <MemberSignature Language="F#" Value="override this.SerializeToXmlElement : System.Xml.XmlWriter * string -&gt; bool" Usage="settingValueElement.SerializeToXmlElement (writer, elementName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingValueElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" />
+      <MemberSignature Language="F#" Value="override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="settingValueElement.Unmerge (sourceElement, parentElement, saveMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -307,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingValueElement.ValueXml" />
       <MemberSignature Language="VB.NET" Value="Public Property ValueXml As XmlNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNode ^ ValueXml { System::Xml::XmlNode ^ get(); void set(System::Xml::XmlNode ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValueXml : System.Xml.XmlNode with get, set" Usage="System.Configuration.SettingValueElement.ValueXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationStartedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManipulationStartedEventArgs&#xA;Inherits InputEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManipulationStartedEventArgs sealed : System::Windows::Input::InputEventArgs" />
+  <TypeSignature Language="F#" Value="type ManipulationStartedEventArgs = class&#xA;    inherit InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationStartedEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Function Cancel () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Cancel();" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; bool" Usage="manipulationStartedEventArgs.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationStartedEventArgs.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
+      <MemberSignature Language="F#" Value="member this.Complete : unit -&gt; unit" Usage="manipulationStartedEventArgs.Complete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationStartedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="manipulationStartedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationStartedEventArgs.ManipulationContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManipulationContainer As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ ManipulationContainer { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManipulationContainer : System.Windows.IInputElement" Usage="System.Windows.Input.ManipulationStartedEventArgs.ManipulationContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationStartedEventArgs.ManipulationOrigin" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManipulationOrigin As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point ManipulationOrigin { System::Windows::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManipulationOrigin : System.Windows.Point" Usage="System.Windows.Input.ManipulationStartedEventArgs.ManipulationOrigin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationStartedEventArgs.Manipulators" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manipulators As IEnumerable(Of IManipulator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ Manipulators { System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Manipulators : seq&lt;System.Windows.Input.IManipulator&gt;" Usage="System.Windows.Input.ManipulationStartedEventArgs.Manipulators" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

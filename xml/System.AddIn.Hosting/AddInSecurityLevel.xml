@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInSecurityLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum AddInSecurityLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class AddInSecurityLevel" />
+  <TypeSignature Language="F#" Value="type AddInSecurityLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.FullTrust" />
       <MemberSignature Language="VB.NET" Value="FullTrust" />
       <MemberSignature Language="C++ CLI" Value="FullTrust" />
+      <MemberSignature Language="F#" Value="FullTrust = 2" Usage="System.AddIn.Hosting.AddInSecurityLevel.FullTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Host" />
       <MemberSignature Language="VB.NET" Value="Host" />
       <MemberSignature Language="C++ CLI" Value="Host" />
+      <MemberSignature Language="F#" Value="Host = 3" Usage="System.AddIn.Hosting.AddInSecurityLevel.Host" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Internet" />
       <MemberSignature Language="VB.NET" Value="Internet" />
       <MemberSignature Language="C++ CLI" Value="Internet" />
+      <MemberSignature Language="F#" Value="Internet = 0" Usage="System.AddIn.Hosting.AddInSecurityLevel.Internet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Intranet" />
       <MemberSignature Language="VB.NET" Value="Intranet" />
       <MemberSignature Language="C++ CLI" Value="Intranet" />
+      <MemberSignature Language="F#" Value="Intranet = 1" Usage="System.AddIn.Hosting.AddInSecurityLevel.Intranet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

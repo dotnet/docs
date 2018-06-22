@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowDebugger" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowDebugger" />
+  <TypeSignature Language="F#" Value="type IWorkflowDebugger = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.ActivityStatusChanged(System.Guid,System.Guid,System.Guid,System.String,System.String,System.Workflow.ComponentModel.ActivityExecutionStatus,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ActivityStatusChanged (programId As Guid, scheduleTypeId As Guid, instanceId As Guid, activityQualifiedName As String, hierarchicalActivityId As String, status As ActivityExecutionStatus, stateReaderId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivityStatusChanged(Guid programId, Guid scheduleTypeId, Guid instanceId, System::String ^ activityQualifiedName, System::String ^ hierarchicalActivityId, System::Workflow::ComponentModel::ActivityExecutionStatus status, int stateReaderId);" />
+      <MemberSignature Language="F#" Value="abstract member ActivityStatusChanged : Guid * Guid * Guid * string * string * System.Workflow.ComponentModel.ActivityExecutionStatus * int -&gt; unit" Usage="iWorkflowDebugger.ActivityStatusChanged (programId, scheduleTypeId, instanceId, activityQualifiedName, hierarchicalActivityId, status, stateReaderId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.AssemblyLoaded(System.Guid,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoaded (programId As Guid, assemblyPath As String, fromGlobalAssemblyCache As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoaded(Guid programId, System::String ^ assemblyPath, bool fromGlobalAssemblyCache);" />
+      <MemberSignature Language="F#" Value="abstract member AssemblyLoaded : Guid * string * bool -&gt; unit" Usage="iWorkflowDebugger.AssemblyLoaded (programId, assemblyPath, fromGlobalAssemblyCache)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.BeforeActivityStatusChanged(System.Guid,System.Guid,System.Guid,System.String,System.String,System.Workflow.ComponentModel.ActivityExecutionStatus,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeforeActivityStatusChanged (programId As Guid, scheduleTypeId As Guid, instanceId As Guid, activityQualifiedName As String, hierarchicalActivityId As String, status As ActivityExecutionStatus, stateReaderId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeforeActivityStatusChanged(Guid programId, Guid scheduleTypeId, Guid instanceId, System::String ^ activityQualifiedName, System::String ^ hierarchicalActivityId, System::Workflow::ComponentModel::ActivityExecutionStatus status, int stateReaderId);" />
+      <MemberSignature Language="F#" Value="abstract member BeforeActivityStatusChanged : Guid * Guid * Guid * string * string * System.Workflow.ComponentModel.ActivityExecutionStatus * int -&gt; unit" Usage="iWorkflowDebugger.BeforeActivityStatusChanged (programId, scheduleTypeId, instanceId, activityQualifiedName, hierarchicalActivityId, status, stateReaderId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.BeforeHandlerInvoked(System.Guid,System.Guid,System.String,System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeforeHandlerInvoked (programId As Guid, scheduleTypeId As Guid, activityQualifiedName As String, handlerMethod As ActivityHandlerDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeforeHandlerInvoked(Guid programId, Guid scheduleTypeId, System::String ^ activityQualifiedName, System::Workflow::Runtime::DebugEngine::ActivityHandlerDescriptor handlerMethod);" />
+      <MemberSignature Language="F#" Value="abstract member BeforeHandlerInvoked : Guid * Guid * string * System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor -&gt; unit" Usage="iWorkflowDebugger.BeforeHandlerInvoked (programId, scheduleTypeId, activityQualifiedName, handlerMethod)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.HandlerInvoked(System.Guid,System.Guid,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub HandlerInvoked (programId As Guid, instanceId As Guid, threadId As Integer, activityQualifiedName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void HandlerInvoked(Guid programId, Guid instanceId, int threadId, System::String ^ activityQualifiedName);" />
+      <MemberSignature Language="F#" Value="abstract member HandlerInvoked : Guid * Guid * int * string -&gt; unit" Usage="iWorkflowDebugger.HandlerInvoked (programId, instanceId, threadId, activityQualifiedName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.InstanceCompleted(System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstanceCompleted (programId As Guid, instanceId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstanceCompleted(Guid programId, Guid instanceId);" />
+      <MemberSignature Language="F#" Value="abstract member InstanceCompleted : Guid * Guid -&gt; unit" Usage="iWorkflowDebugger.InstanceCompleted (programId, instanceId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.InstanceCreated(System.Guid,System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstanceCreated (programId As Guid, instanceId As Guid, scheduleTypeId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstanceCreated(Guid programId, Guid instanceId, Guid scheduleTypeId);" />
+      <MemberSignature Language="F#" Value="abstract member InstanceCreated : Guid * Guid * Guid -&gt; unit" Usage="iWorkflowDebugger.InstanceCreated (programId, instanceId, scheduleTypeId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.InstanceDynamicallyUpdated(System.Guid,System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstanceDynamicallyUpdated (programId As Guid, instanceId As Guid, scheduleTypeId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstanceDynamicallyUpdated(Guid programId, Guid instanceId, Guid scheduleTypeId);" />
+      <MemberSignature Language="F#" Value="abstract member InstanceDynamicallyUpdated : Guid * Guid * Guid -&gt; unit" Usage="iWorkflowDebugger.InstanceDynamicallyUpdated (programId, instanceId, scheduleTypeId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.ScheduleTypeLoaded(System.Guid,System.Guid,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScheduleTypeLoaded (programId As Guid, scheduleTypeId As Guid, assemblyFullName As String, fileName As String, md5Digest As String, isDynamic As Boolean, scheduleNamespace As String, scheduleName As String, workflowMarkup As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleTypeLoaded(Guid programId, Guid scheduleTypeId, System::String ^ assemblyFullName, System::String ^ fileName, System::String ^ md5Digest, bool isDynamic, System::String ^ scheduleNamespace, System::String ^ scheduleName, System::String ^ workflowMarkup);" />
+      <MemberSignature Language="F#" Value="abstract member ScheduleTypeLoaded : Guid * Guid * string * string * string * bool * string * string * string -&gt; unit" Usage="iWorkflowDebugger.ScheduleTypeLoaded (programId, scheduleTypeId, assemblyFullName, fileName, md5Digest, isDynamic, scheduleNamespace, scheduleName, workflowMarkup)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.SetInitialActivityStatus(System.Guid,System.Guid,System.Guid,System.String,System.String,System.Workflow.ComponentModel.ActivityExecutionStatus,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetInitialActivityStatus (programId As Guid, scheduleTypeId As Guid, instanceId As Guid, activityQualifiedName As String, hierarchicalActivityId As String, status As ActivityExecutionStatus, stateReaderId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInitialActivityStatus(Guid programId, Guid scheduleTypeId, Guid instanceId, System::String ^ activityQualifiedName, System::String ^ hierarchicalActivityId, System::Workflow::ComponentModel::ActivityExecutionStatus status, int stateReaderId);" />
+      <MemberSignature Language="F#" Value="abstract member SetInitialActivityStatus : Guid * Guid * Guid * string * string * System.Workflow.ComponentModel.ActivityExecutionStatus * int -&gt; unit" Usage="iWorkflowDebugger.SetInitialActivityStatus (programId, scheduleTypeId, instanceId, activityQualifiedName, hierarchicalActivityId, status, stateReaderId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -351,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebugger.UpdateHandlerMethodsForActivity(System.Guid,System.Guid,System.String,System.Collections.Generic.List{System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor})" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateHandlerMethodsForActivity (programId As Guid, scheduleTypeId As Guid, activityQualifiedName As String, handlerMethods As List(Of ActivityHandlerDescriptor))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateHandlerMethodsForActivity(Guid programId, Guid scheduleTypeId, System::String ^ activityQualifiedName, System::Collections::Generic::List&lt;System::Workflow::Runtime::DebugEngine::ActivityHandlerDescriptor&gt; ^ handlerMethods);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateHandlerMethodsForActivity : Guid * Guid * string * System.Collections.Generic.List&lt;System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor&gt; -&gt; unit" Usage="iWorkflowDebugger.UpdateHandlerMethodsForActivity (programId, scheduleTypeId, activityQualifiedName, handlerMethods)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

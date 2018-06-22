@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IFieldTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFieldTemplate" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFieldTemplate" />
+  <TypeSignature Language="F#" Value="type IFieldTemplate = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFieldTemplate.SetHost(System.Web.DynamicData.IFieldTemplateHost)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetHost (host As IFieldTemplateHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHost(System::Web::DynamicData::IFieldTemplateHost ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member SetHost : System.Web.DynamicData.IFieldTemplateHost -&gt; unit" Usage="iFieldTemplate.SetHost host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Module ImmutableDictionary" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImmutableDictionary abstract sealed" />
+  <TypeSignature Language="F#" Value="type ImmutableDictionary = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.Contains``2(System.Collections.Immutable.IImmutableDictionary{``0,``1},``0,``1)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Contains(Of TKey, TValue) (map As IImmutableDictionary(Of TKey, TValue), key As TKey, value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Contains(System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ map, TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="static member Contains : System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt; * 'Key * 'Value -&gt; bool" Usage="System.Collections.Immutable.ImmutableDictionary.Contains (map, key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.Create``2" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of TKey, TValue) () As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.Create``2(System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of TKey, TValue) (keyComparer As IEqualityComparer(Of TKey)) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ Create(System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.Create keyComparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.Create``2(System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of TKey, TValue) (keyComparer As IEqualityComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ Create(System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.Create (keyComparer, valueComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.CreateBuilder``2" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of TKey, TValue) () As ImmutableDictionary(Of TKey, TValue).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt;::Builder ^ CreateBuilder();" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : unit -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder" Usage="System.Collections.Immutable.ImmutableDictionary.CreateBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.CreateBuilder``2(System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of TKey, TValue) (keyComparer As IEqualityComparer(Of TKey)) As ImmutableDictionary(Of TKey, TValue).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt;::Builder ^ CreateBuilder(System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder" Usage="System.Collections.Immutable.ImmutableDictionary.CreateBuilder keyComparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.CreateBuilder``2(System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of TKey, TValue) (keyComparer As IEqualityComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableDictionary(Of TKey, TValue).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt;::Builder ^ CreateBuilder(System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;.Builder" Usage="System.Collections.Immutable.ImmutableDictionary.CreateBuilder (keyComparer, valueComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.CreateRange``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of TKey, TValue) (items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ CreateRange(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.CreateRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.CreateRange``2(System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of TKey, TValue) (keyComparer As IEqualityComparer(Of TKey), items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ CreateRange(System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.CreateRange (keyComparer, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -331,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.CreateRange``2(System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IEqualityComparer{``1},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of TKey, TValue) (keyComparer As IEqualityComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue), items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ CreateRange(System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; * seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.CreateRange (keyComparer, valueComparer, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -368,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.GetValueOrDefault``2(System.Collections.Immutable.IImmutableDictionary{``0,``1},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValueOrDefault(Of TKey, TValue) (dictionary As IImmutableDictionary(Of TKey, TValue), key As TKey) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TValue GetValueOrDefault(System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ dictionary, TKey key);" />
+      <MemberSignature Language="F#" Value="static member GetValueOrDefault : System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt; * 'Key -&gt; 'Value" Usage="System.Collections.Immutable.ImmutableDictionary.GetValueOrDefault (dictionary, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -403,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.GetValueOrDefault``2(System.Collections.Immutable.IImmutableDictionary{``0,``1},``0,``1)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValueOrDefault(Of TKey, TValue) (dictionary As IImmutableDictionary(Of TKey, TValue), key As TKey, defaultValue As TValue) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TValue GetValueOrDefault(System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ dictionary, TKey key, TValue defaultValue);" />
+      <MemberSignature Language="F#" Value="static member GetValueOrDefault : System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt; * 'Key * 'Value -&gt; 'Value" Usage="System.Collections.Immutable.ImmutableDictionary.GetValueOrDefault (dictionary, key, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableDictionary(Of TKey, TValue) (source As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ ToImmutableDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableDictionary : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -473,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableDictionary(Of TKey, TValue) (source As IEnumerable(Of KeyValuePair(Of TKey, TValue)), keyComparer As IEqualityComparer(Of TKey)) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ ToImmutableDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ source, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableDictionary : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary (source, keyComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -508,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableDictionary(Of TKey, TValue) (source As IEnumerable(Of KeyValuePair(Of TKey, TValue)), keyComparer As IEqualityComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ ToImmutableDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ source, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableDictionary : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary (source, keyComparer, valueComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -545,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableDictionary(Of TSource, TKey) (source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey)) As ImmutableDictionary(Of TKey, TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TSource&gt; ^ ToImmutableDictionary(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TSource, TKey&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Source&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -580,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableDictionary(Of TSource, TKey) (source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey), keyComparer As IEqualityComparer(Of TKey)) As ImmutableDictionary(Of TKey, TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TSource&gt; ^ ToImmutableDictionary(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TSource, TKey&gt; ^ keySelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Source&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary (source, keySelector, keyComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -617,6 +635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableDictionary(Of TSource, TKey, TValue) (source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey), elementSelector As Func(Of TSource, TValue)) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ ToImmutableDictionary(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TSource, TKey&gt; ^ keySelector, Func&lt;TSource, TValue&gt; ^ elementSelector);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; * Func&lt;'Source, 'Value&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary (source, keySelector, elementSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -656,6 +675,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableDictionary(Of TSource, TKey, TValue) (source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey), elementSelector As Func(Of TSource, TValue), keyComparer As IEqualityComparer(Of TKey)) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ ToImmutableDictionary(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TSource, TKey&gt; ^ keySelector, Func&lt;TSource, TValue&gt; ^ elementSelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; * Func&lt;'Source, 'Value&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary (source, keySelector, elementSelector, keyComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -697,6 +717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},System.Collections.Generic.IEqualityComparer{``1},System.Collections.Generic.IEqualityComparer{``2})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableDictionary(Of TSource, TKey, TValue) (source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey), elementSelector As Func(Of TSource, TValue), keyComparer As IEqualityComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ ToImmutableDictionary(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TSource, TKey&gt; ^ keySelector, Func&lt;TSource, TValue&gt; ^ elementSelector, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; * Func&lt;'Source, 'Value&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary (source, keySelector, elementSelector, keyComparer, valueComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

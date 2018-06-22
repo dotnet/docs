@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.VerticalAlign" />
   <TypeSignature Language="VB.NET" Value="Public Enum VerticalAlign" />
   <TypeSignature Language="C++ CLI" Value="public enum class VerticalAlign" />
+  <TypeSignature Language="F#" Value="type VerticalAlign = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.VerticalAlign.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 3" Usage="System.Web.UI.WebControls.VerticalAlign.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.VerticalAlign.Middle" />
       <MemberSignature Language="VB.NET" Value="Middle" />
       <MemberSignature Language="C++ CLI" Value="Middle" />
+      <MemberSignature Language="F#" Value="Middle = 2" Usage="System.Web.UI.WebControls.VerticalAlign.Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.VerticalAlign.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.WebControls.VerticalAlign.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.VerticalAlign.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 1" Usage="System.Web.UI.WebControls.VerticalAlign.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.AttributedModelServices" />
   <TypeSignature Language="VB.NET" Value="Public Module AttributedModelServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributedModelServices abstract sealed" />
+  <TypeSignature Language="F#" Value="type AttributedModelServices = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.AddExportedValue``1(System.ComponentModel.Composition.Hosting.CompositionBatch,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddExportedValue(Of T) (batch As CompositionBatch, exportedValue As T) As ComposablePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ComponentModel::Composition::Primitives::ComposablePart ^ AddExportedValue(System::ComponentModel::Composition::Hosting::CompositionBatch ^ batch, T exportedValue);" />
+      <MemberSignature Language="F#" Value="static member AddExportedValue : System.ComponentModel.Composition.Hosting.CompositionBatch * 'T -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="System.ComponentModel.Composition.AttributedModelServices.AddExportedValue (batch, exportedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.AddExportedValue``1(System.ComponentModel.Composition.Hosting.CompositionBatch,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddExportedValue(Of T) (batch As CompositionBatch, contractName As String, exportedValue As T) As ComposablePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ComponentModel::Composition::Primitives::ComposablePart ^ AddExportedValue(System::ComponentModel::Composition::Hosting::CompositionBatch ^ batch, System::String ^ contractName, T exportedValue);" />
+      <MemberSignature Language="F#" Value="static member AddExportedValue : System.ComponentModel.Composition.Hosting.CompositionBatch * string * 'T -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="System.ComponentModel.Composition.AttributedModelServices.AddExportedValue (batch, contractName, exportedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.AddPart(System.ComponentModel.Composition.Hosting.CompositionBatch,System.Object)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddPart (batch As CompositionBatch, attributedPart As Object) As ComposablePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ComponentModel::Composition::Primitives::ComposablePart ^ AddPart(System::ComponentModel::Composition::Hosting::CompositionBatch ^ batch, System::Object ^ attributedPart);" />
+      <MemberSignature Language="F#" Value="static member AddPart : System.ComponentModel.Composition.Hosting.CompositionBatch * obj -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="System.ComponentModel.Composition.AttributedModelServices.AddPart (batch, attributedPart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.ComposeExportedValue``1(System.ComponentModel.Composition.Hosting.CompositionContainer,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ComposeExportedValue(Of T) (container As CompositionContainer, exportedValue As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ComposeExportedValue(System::ComponentModel::Composition::Hosting::CompositionContainer ^ container, T exportedValue);" />
+      <MemberSignature Language="F#" Value="static member ComposeExportedValue : System.ComponentModel.Composition.Hosting.CompositionContainer * 'T -&gt; unit" Usage="System.ComponentModel.Composition.AttributedModelServices.ComposeExportedValue (container, exportedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.ComposeExportedValue``1(System.ComponentModel.Composition.Hosting.CompositionContainer,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ComposeExportedValue(Of T) (container As CompositionContainer, contractName As String, exportedValue As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ComposeExportedValue(System::ComponentModel::Composition::Hosting::CompositionContainer ^ container, System::String ^ contractName, T exportedValue);" />
+      <MemberSignature Language="F#" Value="static member ComposeExportedValue : System.ComponentModel.Composition.Hosting.CompositionContainer * string * 'T -&gt; unit" Usage="System.ComponentModel.Composition.AttributedModelServices.ComposeExportedValue (container, contractName, exportedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.ComposeParts(System.ComponentModel.Composition.Hosting.CompositionContainer,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ComposeParts (container As CompositionContainer, ParamArray attributedParts As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ComposeParts(System::ComponentModel::Composition::Hosting::CompositionContainer ^ container, ... cli::array &lt;System::Object ^&gt; ^ attributedParts);" />
+      <MemberSignature Language="F#" Value="static member ComposeParts : System.ComponentModel.Composition.Hosting.CompositionContainer * obj[] -&gt; unit" Usage="System.ComponentModel.Composition.AttributedModelServices.ComposeParts (container, attributedParts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.CreatePart(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreatePart (attributedPart As Object) As ComposablePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::Composition::Primitives::ComposablePart ^ CreatePart(System::Object ^ attributedPart);" />
+      <MemberSignature Language="F#" Value="static member CreatePart : obj -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="System.ComponentModel.Composition.AttributedModelServices.CreatePart attributedPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -264,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.CreatePart(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreatePart (partDefinition As ComposablePartDefinition, attributedPart As Object) As ComposablePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::Composition::Primitives::ComposablePart ^ CreatePart(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ partDefinition, System::Object ^ attributedPart);" />
+      <MemberSignature Language="F#" Value="static member CreatePart : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * obj -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="System.ComponentModel.Composition.AttributedModelServices.CreatePart (partDefinition, attributedPart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -290,6 +299,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ComposablePart CreatePart(object attributedPart, class System.Reflection.ReflectionContext reflectionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.CreatePart(System.Object,System.Reflection.ReflectionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::Composition::Primitives::ComposablePart ^ CreatePart(System::Object ^ attributedPart, System::Reflection::ReflectionContext ^ reflectionContext);" />
+      <MemberSignature Language="F#" Value="static member CreatePart : obj * System.Reflection.ReflectionContext -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="System.ComponentModel.Composition.AttributedModelServices.CreatePart (attributedPart, reflectionContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -328,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ComposablePartDefinition CreatePartDefinition(class System.Type type, class System.ComponentModel.Composition.Primitives.ICompositionElement origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.CreatePartDefinition(System.Type,System.ComponentModel.Composition.Primitives.ICompositionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ CreatePartDefinition(Type ^ type, System::ComponentModel::Composition::Primitives::ICompositionElement ^ origin);" />
+      <MemberSignature Language="F#" Value="static member CreatePartDefinition : Type * System.ComponentModel.Composition.Primitives.ICompositionElement -&gt; System.ComponentModel.Composition.Primitives.ComposablePartDefinition" Usage="System.ComponentModel.Composition.AttributedModelServices.CreatePartDefinition (type, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -354,6 +365,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ComposablePartDefinition CreatePartDefinition(class System.Type type, class System.ComponentModel.Composition.Primitives.ICompositionElement origin, bool ensureIsDiscoverable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.CreatePartDefinition(System.Type,System.ComponentModel.Composition.Primitives.ICompositionElement,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ CreatePartDefinition(Type ^ type, System::ComponentModel::Composition::Primitives::ICompositionElement ^ origin, bool ensureIsDiscoverable);" />
+      <MemberSignature Language="F#" Value="static member CreatePartDefinition : Type * System.ComponentModel.Composition.Primitives.ICompositionElement * bool -&gt; System.ComponentModel.Composition.Primitives.ComposablePartDefinition" Usage="System.ComponentModel.Composition.AttributedModelServices.CreatePartDefinition (type, origin, ensureIsDiscoverable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -383,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.Exports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Exports (part As ComposablePartDefinition, contractType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Exports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="static member Exports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * Type -&gt; bool" Usage="System.ComponentModel.Composition.AttributedModelServices.Exports (part, contractType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -411,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.Exports``1(System.ComponentModel.Composition.Primitives.ComposablePartDefinition)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Exports(Of T) (part As ComposablePartDefinition) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Exports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part);" />
+      <MemberSignature Language="F#" Value="static member Exports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition -&gt; bool" Usage="System.ComponentModel.Composition.AttributedModelServices.Exports part" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -440,6 +454,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetContractName(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.GetContractName(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetContractName(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetContractName : Type -&gt; string" Usage="System.ComponentModel.Composition.AttributedModelServices.GetContractName type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -465,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.GetMetadataView``1(System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadataView(Of TMetadataView) (metadata As IDictionary(Of String, Object)) As TMetadataView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TMetadataView&gt;&#xA; static TMetadataView GetMetadataView(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ metadata);" />
+      <MemberSignature Language="F#" Value="static member GetMetadataView : System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; 'MetadataView" Usage="System.ComponentModel.Composition.AttributedModelServices.GetMetadataView metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -504,6 +520,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.GetTypeIdentity(System.Reflection.MethodInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeIdentity (method As MethodInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTypeIdentity(System::Reflection::MethodInfo ^ method);" />
+      <MemberSignature Language="F#" Value="static member GetTypeIdentity : System.Reflection.MethodInfo -&gt; string" Usage="System.ComponentModel.Composition.AttributedModelServices.GetTypeIdentity method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -528,6 +545,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTypeIdentity(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.GetTypeIdentity(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTypeIdentity(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetTypeIdentity : Type -&gt; string" Usage="System.ComponentModel.Composition.AttributedModelServices.GetTypeIdentity type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -563,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.Imports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Imports (part As ComposablePartDefinition, contractType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Imports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="static member Imports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * Type -&gt; bool" Usage="System.ComponentModel.Composition.AttributedModelServices.Imports (part, contractType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -590,6 +609,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Imports(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, class System.Type contractType, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality importCardinality) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.Imports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Type,System.ComponentModel.Composition.Primitives.ImportCardinality)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Imports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, Type ^ contractType, System::ComponentModel::Composition::Primitives::ImportCardinality importCardinality);" />
+      <MemberSignature Language="F#" Value="static member Imports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * Type * System.ComponentModel.Composition.Primitives.ImportCardinality -&gt; bool" Usage="System.ComponentModel.Composition.AttributedModelServices.Imports (part, contractType, importCardinality)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -620,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.Imports``1(System.ComponentModel.Composition.Primitives.ComposablePartDefinition)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Imports(Of T) (part As ComposablePartDefinition) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Imports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part);" />
+      <MemberSignature Language="F#" Value="static member Imports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition -&gt; bool" Usage="System.ComponentModel.Composition.AttributedModelServices.Imports part" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -649,6 +670,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Imports&lt;T&gt;(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality importCardinality) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.Imports``1(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.ComponentModel.Composition.Primitives.ImportCardinality)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Imports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, System::ComponentModel::Composition::Primitives::ImportCardinality importCardinality);" />
+      <MemberSignature Language="F#" Value="static member Imports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * System.ComponentModel.Composition.Primitives.ImportCardinality -&gt; bool" Usage="System.ComponentModel.Composition.AttributedModelServices.Imports (part, importCardinality)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -691,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.SatisfyImportsOnce(System.ComponentModel.Composition.ICompositionService,System.Object)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SatisfyImportsOnce (compositionService As ICompositionService, attributedPart As Object) As ComposablePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ComponentModel::Composition::Primitives::ComposablePart ^ SatisfyImportsOnce(System::ComponentModel::Composition::ICompositionService ^ compositionService, System::Object ^ attributedPart);" />
+      <MemberSignature Language="F#" Value="static member SatisfyImportsOnce : System.ComponentModel.Composition.ICompositionService * obj -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="System.ComponentModel.Composition.AttributedModelServices.SatisfyImportsOnce (compositionService, attributedPart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -724,6 +747,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ComposablePart SatisfyImportsOnce(class System.ComponentModel.Composition.ICompositionService compositionService, object attributedPart, class System.Reflection.ReflectionContext reflectionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.SatisfyImportsOnce(System.ComponentModel.Composition.ICompositionService,System.Object,System.Reflection.ReflectionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ComponentModel::Composition::Primitives::ComposablePart ^ SatisfyImportsOnce(System::ComponentModel::Composition::ICompositionService ^ compositionService, System::Object ^ attributedPart, System::Reflection::ReflectionContext ^ reflectionContext);" />
+      <MemberSignature Language="F#" Value="static member SatisfyImportsOnce : System.ComponentModel.Composition.ICompositionService * obj * System.Reflection.ReflectionContext -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="System.ComponentModel.Composition.AttributedModelServices.SatisfyImportsOnce (compositionService, attributedPart, reflectionContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

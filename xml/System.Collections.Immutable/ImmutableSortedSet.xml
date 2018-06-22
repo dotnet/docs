@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableSortedSet" />
   <TypeSignature Language="VB.NET" Value="Public Module ImmutableSortedSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImmutableSortedSet abstract sealed" />
+  <TypeSignature Language="F#" Value="type ImmutableSortedSet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.Create``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) () As ImmutableSortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt; ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.Create``1(System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (comparer As IComparer(Of T)) As ImmutableSortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt; ^ Create(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.Create comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.Create``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (item As T) As ImmutableSortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt; ^ Create(T item);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.Create item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.Create``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (ParamArray items As T()) As ImmutableSortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt; ^ Create(... cli::array &lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T[] -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.Create items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.Create``1(System.Collections.Generic.IComparer{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (comparer As IComparer(Of T), item As T) As ImmutableSortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt; ^ Create(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer, T item);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IComparer&lt;'T&gt; * 'T -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.Create (comparer, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.Create``1(System.Collections.Generic.IComparer{``0},``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (comparer As IComparer(Of T), ParamArray items As T()) As ImmutableSortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt; ^ Create(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer, ... cli::array &lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IComparer&lt;'T&gt; * 'T[] -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.Create (comparer, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.CreateBuilder``1" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of T) () As ImmutableSortedSet(Of T).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt;::Builder ^ CreateBuilder();" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : unit -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.Builder" Usage="System.Collections.Immutable.ImmutableSortedSet.CreateBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.CreateBuilder``1(System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of T) (comparer As IComparer(Of T)) As ImmutableSortedSet(Of T).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt;::Builder ^ CreateBuilder(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : System.Collections.Generic.IComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.Builder" Usage="System.Collections.Immutable.ImmutableSortedSet.CreateBuilder comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -287,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.CreateRange``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of T) (items As IEnumerable(Of T)) As ImmutableSortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt; ^ CreateRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.CreateRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.CreateRange``1(System.Collections.Generic.IComparer{``0},System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of T) (comparer As IComparer(Of T), items As IEnumerable(Of T)) As ImmutableSortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;T&gt; ^ CreateRange(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer, System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : System.Collections.Generic.IComparer&lt;'T&gt; * seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.CreateRange (comparer, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -351,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.ToImmutableSortedSet``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableSortedSet(Of TSource) (source As IEnumerable(Of TSource)) As ImmutableSortedSet(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;TSource&gt; ^ ToImmutableSortedSet(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableSortedSet : seq&lt;'Source&gt; -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'Source&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.ToImmutableSortedSet source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -382,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet.ToImmutableSortedSet``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableSortedSet(Of TSource) (source As IEnumerable(Of TSource), comparer As IComparer(Of TSource)) As ImmutableSortedSet(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableSortedSet&lt;TSource&gt; ^ ToImmutableSortedSet(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, System::Collections::Generic::IComparer&lt;TSource&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableSortedSet : seq&lt;'Source&gt; * System.Collections.Generic.IComparer&lt;'Source&gt; -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'Source&gt;" Usage="System.Collections.Immutable.ImmutableSortedSet.ToImmutableSortedSet (source, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

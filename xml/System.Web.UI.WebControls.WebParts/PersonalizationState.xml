@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationState" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PersonalizationState" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersonalizationState abstract" />
+  <TypeSignature Language="F#" Value="type PersonalizationState = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.#ctor(System.Web.UI.WebControls.WebParts.WebPartManager)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PersonalizationState(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.PersonalizationState : System.Web.UI.WebControls.WebParts.WebPartManager -&gt; System.Web.UI.WebControls.WebParts.PersonalizationState" Usage="new System.Web.UI.WebControls.WebParts.PersonalizationState webPartManager" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.ApplyWebPartManagerPersonalization" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ApplyWebPartManagerPersonalization ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ApplyWebPartManagerPersonalization();" />
+      <MemberSignature Language="F#" Value="abstract member ApplyWebPartManagerPersonalization : unit -&gt; unit" Usage="personalizationState.ApplyWebPartManagerPersonalization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyWebPartPersonalization(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.ApplyWebPartPersonalization(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ApplyWebPartPersonalization(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyWebPartPersonalization : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="personalizationState.ApplyWebPartPersonalization webPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.ExtractWebPartManagerPersonalization" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ExtractWebPartManagerPersonalization ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ExtractWebPartManagerPersonalization();" />
+      <MemberSignature Language="F#" Value="abstract member ExtractWebPartManagerPersonalization : unit -&gt; unit" Usage="personalizationState.ExtractWebPartManagerPersonalization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExtractWebPartPersonalization(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.ExtractWebPartPersonalization(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ExtractWebPartPersonalization(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="abstract member ExtractWebPartPersonalization : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="personalizationState.ExtractWebPartPersonalization webPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.GetAuthorizationFilter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAuthorizationFilter (webPartID As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetAuthorizationFilter(System::String ^ webPartID);" />
+      <MemberSignature Language="F#" Value="abstract member GetAuthorizationFilter : string -&gt; string" Usage="personalizationState.GetAuthorizationFilter webPartID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationState.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool" Usage="System.Web.UI.WebControls.WebParts.PersonalizationState.IsDirty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationState.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Web.UI.WebControls.WebParts.PersonalizationState.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.SetDirty" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetDirty ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetDirty();" />
+      <MemberSignature Language="F#" Value="member this.SetDirty : unit -&gt; unit" Usage="personalizationState.SetDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -293,6 +303,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetWebPartDirty(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.SetWebPartDirty(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetWebPartDirty(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="abstract member SetWebPartDirty : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="personalizationState.SetWebPartDirty webPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.SetWebPartManagerDirty" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetWebPartManagerDirty ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetWebPartManagerDirty();" />
+      <MemberSignature Language="F#" Value="abstract member SetWebPartManagerDirty : unit -&gt; unit" Usage="personalizationState.SetWebPartManagerDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +363,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ValidateWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationState.ValidateWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ValidateWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="member this.ValidateWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="personalizationState.ValidateWebPart webPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -387,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationState.WebPartManager" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebPartManager As WebPartManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartManager ^ WebPartManager { System::Web::UI::WebControls::WebParts::WebPartManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebPartManager : System.Web.UI.WebControls.WebParts.WebPartManager" Usage="System.Web.UI.WebControls.WebParts.PersonalizationState.WebPartManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.DropShadowBitmapEffect" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DropShadowBitmapEffect&#xA;Inherits BitmapEffect" />
   <TypeSignature Language="C++ CLI" Value="public ref class DropShadowBitmapEffect sealed : System::Windows::Media::Effects::BitmapEffect" />
+  <TypeSignature Language="F#" Value="type DropShadowBitmapEffect = class&#xA;    inherit BitmapEffect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowBitmapEffect.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As DropShadowBitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::DropShadowBitmapEffect ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.DropShadowBitmapEffect" Usage="dropShadowBitmapEffect.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowBitmapEffect.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As DropShadowBitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::DropShadowBitmapEffect ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.DropShadowBitmapEffect" Usage="dropShadowBitmapEffect.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowBitmapEffect.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color Color { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Windows.Media.Color with get, set" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowBitmapEffect.ColorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.ColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowBitmapEffect.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="dropShadowBitmapEffect.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowBitmapEffect.CreateUnmanagedEffect" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateUnmanagedEffect () As SafeHandle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Runtime::InteropServices::SafeHandle ^ CreateUnmanagedEffect();" />
+      <MemberSignature Language="F#" Value="override this.CreateUnmanagedEffect : unit -&gt; System.Runtime.InteropServices.SafeHandle" Usage="dropShadowBitmapEffect.CreateUnmanagedEffect " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowBitmapEffect.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Property Direction As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Direction { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : double with get, set" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowBitmapEffect.DirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.DirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowBitmapEffect.Noise" />
       <MemberSignature Language="VB.NET" Value="Public Property Noise As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Noise { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Noise : double with get, set" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.Noise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -319,6 +329,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowBitmapEffect.NoiseProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NoiseProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NoiseProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NoiseProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.NoiseProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowBitmapEffect.Opacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Opacity As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Opacity { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Opacity : double with get, set" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.Opacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -377,6 +389,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowBitmapEffect.OpacityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OpacityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OpacityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OpacityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.OpacityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -396,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowBitmapEffect.ShadowDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property ShadowDepth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ShadowDepth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowDepth : double with get, set" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.ShadowDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -433,6 +447,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowBitmapEffect.ShadowDepthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShadowDepthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShadowDepthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShadowDepthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.ShadowDepthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -452,6 +467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowBitmapEffect.Softness" />
       <MemberSignature Language="VB.NET" Value="Public Property Softness As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Softness { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Softness : double with get, set" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.Softness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -489,6 +505,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowBitmapEffect.SoftnessProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SoftnessProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SoftnessProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SoftnessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.DropShadowBitmapEffect.SoftnessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -508,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowBitmapEffect.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateUnmanagedPropertyState (unmanagedEffect As SafeHandle)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateUnmanagedPropertyState(System::Runtime::InteropServices::SafeHandle ^ unmanagedEffect);" />
+      <MemberSignature Language="F#" Value="override this.UpdateUnmanagedPropertyState : System.Runtime.InteropServices.SafeHandle -&gt; unit" Usage="dropShadowBitmapEffect.UpdateUnmanagedPropertyState unmanagedEffect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

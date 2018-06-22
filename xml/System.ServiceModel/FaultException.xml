@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultException" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultException&#xA;Inherits CommunicationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultException : System::ServiceModel::CommunicationException" />
+  <TypeSignature Language="F#" Value="type FaultException = class&#xA;    inherit CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.Channels.MessageFault)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fault As MessageFault)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::Channels::MessageFault ^ fault);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.Channels.MessageFault -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException fault" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As FaultReason)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.FaultReason -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException reason" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FaultException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.Channels.MessageFault,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fault As MessageFault, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::Channels::MessageFault ^ fault, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.Channels.MessageFault * string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (fault, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason,System.ServiceModel.FaultCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As FaultReason, code As FaultCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason, System::ServiceModel::FaultCode ^ code);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.FaultReason * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (reason, code)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ msg);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException msg" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason,System.ServiceModel.FaultCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As FaultReason, code As FaultCode, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason, System::ServiceModel::FaultCode ^ code, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.FaultReason * System.ServiceModel.FaultCode * string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (reason, code, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -273,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String,System.ServiceModel.FaultCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As String, code As FaultCode, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason, System::ServiceModel::FaultCode ^ code, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string * System.ServiceModel.FaultCode * string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (reason, code, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -302,6 +311,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg, class System.ServiceModel.FaultCode code) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, code As FaultCode)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ msg, System::ServiceModel::FaultCode ^ code);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (msg, code)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -327,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string" Usage="System.ServiceModel.FaultException.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -354,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException.Code" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Code As FaultCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::FaultCode ^ Code { System::ServiceModel::FaultCode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Code : System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultException.Code" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -390,6 +402,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultException CreateFault(class System.ServiceModel.Channels.MessageFault messageFault, class System.Type[] faultDetailTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.CreateFault(System.ServiceModel.Channels.MessageFault,System.Type[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultException ^ CreateFault(System::ServiceModel::Channels::MessageFault ^ messageFault, ... cli::array &lt;Type ^&gt; ^ faultDetailTypes);" />
+      <MemberSignature Language="F#" Value="static member CreateFault : System.ServiceModel.Channels.MessageFault * Type[] -&gt; System.ServiceModel.FaultException" Usage="System.ServiceModel.FaultException.CreateFault (messageFault, faultDetailTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -435,6 +448,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultException CreateFault(class System.ServiceModel.Channels.MessageFault messageFault, string action, class System.Type[] faultDetailTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.CreateFault(System.ServiceModel.Channels.MessageFault,System.String,System.Type[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultException ^ CreateFault(System::ServiceModel::Channels::MessageFault ^ messageFault, System::String ^ action, ... cli::array &lt;Type ^&gt; ^ faultDetailTypes);" />
+      <MemberSignature Language="F#" Value="static member CreateFault : System.ServiceModel.Channels.MessageFault * string * Type[] -&gt; System.ServiceModel.FaultException" Usage="System.ServiceModel.FaultException.CreateFault (messageFault, action, faultDetailTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -483,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.CreateMessageFault" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateMessageFault () As MessageFault" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::MessageFault ^ CreateMessageFault();" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageFault : unit -&gt; System.ServiceModel.Channels.MessageFault&#xA;override this.CreateMessageFault : unit -&gt; System.ServiceModel.Channels.MessageFault" Usage="faultException.CreateMessageFault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -511,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="faultException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -537,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ServiceModel.FaultException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -564,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As FaultReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::FaultReason ^ Reason { System::ServiceModel::FaultReason ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : System.ServiceModel.FaultReason" Usage="System.ServiceModel.FaultException.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

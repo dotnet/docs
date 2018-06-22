@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class CreateUserWizardStepCollectionEditor&#xA;Inherits WizardStepCollectionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class CreateUserWizardStepCollectionEditor : System::Web::UI::Design::WebControls::WizardStepCollectionEditor" />
+  <TypeSignature Language="F#" Value="type CreateUserWizardStepCollectionEditor = class&#xA;    inherit WizardStepCollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateUserWizardStepCollectionEditor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor : Type -&gt; System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor" Usage="new System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.CanRemoveInstance(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanRemoveInstance (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanRemoveInstance(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.CanRemoveInstance : obj -&gt; bool" Usage="createUserWizardStepCollectionEditor.CanRemoveInstance value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.CreateCollectionForm" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionForm () As CollectionEditor.CollectionForm" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ComponentModel::Design::CollectionEditor::CollectionForm ^ CreateCollectionForm();" />
+      <MemberSignature Language="F#" Value="override this.CreateCollectionForm : unit -&gt; System.ComponentModel.Design.CollectionEditor.CollectionForm" Usage="createUserWizardStepCollectionEditor.CreateCollectionForm " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.HelpTopic" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HelpTopic As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ HelpTopic { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpTopic : string" Usage="System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.HelpTopic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

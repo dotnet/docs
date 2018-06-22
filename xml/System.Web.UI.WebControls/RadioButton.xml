@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RadioButton" />
   <TypeSignature Language="VB.NET" Value="Public Class RadioButton&#xA;Inherits CheckBox" />
   <TypeSignature Language="C++ CLI" Value="public ref class RadioButton : System::Web::UI::WebControls::CheckBox" />
+  <TypeSignature Language="F#" Value="type RadioButton = class&#xA;    inherit CheckBox&#xA;    interface IPostBackDataHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -141,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButton.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="System.Web.UI.WebControls.RadioButton.GroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButton.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
+      <MemberSignature Language="F#" Value="override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="radioButton.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
@@ -228,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButton.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="radioButton.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -258,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButton.RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RaisePostDataChangedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RaisePostDataChangedEvent();" />
+      <MemberSignature Language="F#" Value="override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="radioButton.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>

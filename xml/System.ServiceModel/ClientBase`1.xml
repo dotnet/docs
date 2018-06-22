@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ClientBase(Of TChannel)&#xA;Implements ICommunicationObject, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA; where TChannel : classpublic ref class ClientBase abstract : IDisposable, System::ServiceModel::ICommunicationObject" />
+  <TypeSignature Language="F#" Value="type ClientBase&lt;'Channel (requires 'Channel : null)&gt; = class&#xA;    interface IDisposable&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -132,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; endpoint" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::String ^ endpointConfigurationName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; endpointConfigurationName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; instance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -263,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -301,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String, remoteAddress As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -344,6 +351,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpoint As ServiceEndpoint)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -373,6 +381,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -409,6 +418,7 @@
       <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -441,6 +451,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -482,6 +493,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As String)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -519,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" />
+      <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="clientBase.Abort " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Abort</InterfaceMember>
@@ -556,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.CacheSetting" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CacheSetting As CacheSetting" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::CacheSetting CacheSetting { System::ServiceModel::CacheSetting get(); void set(System::ServiceModel::CacheSetting value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheSetting : System.ServiceModel.CacheSetting with get, set" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.CacheSetting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -576,6 +590,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.Channel" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Channel As TChannel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property TChannel Channel { TChannel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Channel : 'Channel" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.Channel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -603,6 +618,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelFactory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelFactory As ChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ChannelFactory&lt;TChannel&gt; ^ ChannelFactory { System::ServiceModel::ChannelFactory&lt;TChannel&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelFactory : System.ServiceModel.ChannelFactory&lt;'Channel (requires 'Channel : null)&gt;" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.ChannelFactory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -637,6 +653,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ClientCredentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCredentials As ClientCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ClientCredentials ^ ClientCredentials { System::ServiceModel::Description::ClientCredentials ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCredentials : System.ServiceModel.Description.ClientCredentials" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.ClientCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -680,6 +697,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="clientBase.Close " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
@@ -711,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.CreateChannel" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateChannel () As TChannel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual TChannel CreateChannel();" />
+      <MemberSignature Language="F#" Value="abstract member CreateChannel : unit -&gt; 'Channel&#xA;override this.CreateChannel : unit -&gt; 'Channel" Usage="clientBase.CreateChannel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -746,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.DisplayInitializationUI" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisplayInitializationUI ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisplayInitializationUI();" />
+      <MemberSignature Language="F#" Value="member this.DisplayInitializationUI : unit -&gt; unit" Usage="clientBase.DisplayInitializationUI " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -775,6 +795,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.Endpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceEndpoint ^ Endpoint { System::ServiceModel::Description::ServiceEndpoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : System.ServiceModel.Description.ServiceEndpoint" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.Endpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -810,6 +831,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.GetDefaultValueForInitialization``1" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetDefaultValueForInitialization(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; T GetDefaultValueForInitialization();" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultValueForInitialization : unit -&gt; 'T" Usage="clientBase.GetDefaultValueForInitialization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -842,6 +864,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.InnerChannel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerChannel As IClientChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IClientChannel ^ InnerChannel { System::ServiceModel::IClientChannel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InnerChannel : System.ServiceModel.IClientChannel" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.InnerChannel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -875,6 +898,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InvokeAsync(class System.ServiceModel.ClientBase`1/BeginOperationDelegate&lt;!TChannel&gt; beginOperationDelegate, object[] inValues, class System.ServiceModel.ClientBase`1/EndOperationDelegate&lt;!TChannel&gt; endOperationDelegate, class System.Threading.SendOrPostCallback operationCompletedCallback, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase`1.BeginOperationDelegate{`0},System.Object[],System.ServiceModel.ClientBase`1.EndOperationDelegate{`0},System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvokeAsync(System::ServiceModel::ClientBase&lt;TChannel&gt;::BeginOperationDelegate ^ beginOperationDelegate, cli::array &lt;System::Object ^&gt; ^ inValues, System::ServiceModel::ClientBase&lt;TChannel&gt;::EndOperationDelegate ^ endOperationDelegate, System::Threading::SendOrPostCallback ^ operationCompletedCallback, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.BeginOperationDelegate * obj[] * System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.EndOperationDelegate * System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="clientBase.InvokeAsync (beginOperationDelegate, inValues, endOperationDelegate, operationCompletedCallback, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -920,6 +944,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit&#xA;override this.Open : unit -&gt; unit" Usage="clientBase.Open " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
@@ -951,6 +976,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As CommunicationState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::CommunicationState State { System::ServiceModel::CommunicationState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.ServiceModel.CommunicationState" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.State" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.ICommunicationObject.State</InterfaceMember>

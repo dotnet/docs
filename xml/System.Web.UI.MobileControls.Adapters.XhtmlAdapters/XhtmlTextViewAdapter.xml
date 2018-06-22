@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class XhtmlTextViewAdapter&#xA;Inherits XhtmlControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XhtmlTextViewAdapter : System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type XhtmlTextViewAdapter = class&#xA;    inherit XhtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As TextView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::TextView ^ Control { System::Web::UI::MobileControls::TextView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.TextView" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlTextViewAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.RenderElement(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RenderElement (writer As XhtmlMobileTextWriter, index As Integer, beginSubstring As Integer, endSubstring As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderElement(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, int index, int beginSubstring, int endSubstring);" />
+      <MemberSignature Language="F#" Value="member this.RenderElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * int * int * int -&gt; unit" Usage="xhtmlTextViewAdapter.RenderElement (writer, index, beginSubstring, endSubstring)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

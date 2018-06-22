@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.OnChangedCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OnChangedCallback(state As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void OnChangedCallback(System::Object ^ state);" />
+  <TypeSignature Language="F#" Value="type OnChangedCallback = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

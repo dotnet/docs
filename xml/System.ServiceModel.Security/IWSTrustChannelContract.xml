@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrustChannelContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWSTrustChannelContract&#xA;Implements IWSTrustContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWSTrustChannelContract : System::ServiceModel::Security::IWSTrustContract" />
+  <TypeSignature Language="F#" Value="type IWSTrustChannelContract = interface&#xA;    interface IWSTrustContract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginCancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginCancel (request As RequestSecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCancel(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginCancel : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustChannelContract.BeginCancel (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginIssue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginIssue (request As RequestSecurityToken, callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginIssue(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, AsyncCallback ^ callback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="abstract member BeginIssue : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustChannelContract.BeginIssue (request, callback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginRenew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginRenew (request As RequestSecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRenew(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginRenew : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustChannelContract.BeginRenew (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginValidate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginValidate (request As RequestSecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginValidate(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginValidate : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustChannelContract.BeginValidate (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Cancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function Cancel (request As RequestSecurityToken) As RequestSecurityTokenResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ Cancel(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken -&gt; System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" Usage="iWSTrustChannelContract.Cancel request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndCancel (result As IAsyncResult, ByRef response As RequestSecurityTokenResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCancel(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % response);" />
+      <MemberSignature Language="F#" Value="abstract member EndCancel : IAsyncResult *  -&gt; unit" Usage="iWSTrustChannelContract.EndCancel (result, response)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndIssue (result As IAsyncResult, ByRef response As RequestSecurityTokenResponse) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ EndIssue(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % response);" />
+      <MemberSignature Language="F#" Value="abstract member EndIssue : IAsyncResult *  -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="iWSTrustChannelContract.EndIssue (result, response)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndRenew (result As IAsyncResult, ByRef response As RequestSecurityTokenResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndRenew(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % response);" />
+      <MemberSignature Language="F#" Value="abstract member EndRenew : IAsyncResult *  -&gt; unit" Usage="iWSTrustChannelContract.EndRenew (result, response)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndValidate (result As IAsyncResult, ByRef response As RequestSecurityTokenResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndValidate(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % response);" />
+      <MemberSignature Language="F#" Value="abstract member EndValidate : IAsyncResult *  -&gt; unit" Usage="iWSTrustChannelContract.EndValidate (result, response)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -278,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function Issue (request As RequestSecurityToken) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ Issue(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member Issue : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="iWSTrustChannelContract.Issue request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -302,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Issue (request As RequestSecurityToken, ByRef response As RequestSecurityTokenResponse) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ Issue(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, [Runtime::InteropServices::Out] System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ % response);" />
+      <MemberSignature Language="F#" Value="abstract member Issue : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken *  -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="iWSTrustChannelContract.Issue (request, response)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -328,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Renew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function Renew (request As RequestSecurityToken) As RequestSecurityTokenResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ Renew(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member Renew : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken -&gt; System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" Usage="iWSTrustChannelContract.Renew request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -352,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Validate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function Validate (request As RequestSecurityToken) As RequestSecurityTokenResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ Validate(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken -&gt; System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" Usage="iWSTrustChannelContract.Validate request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.FormattableStringFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class FormattableStringFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormattableStringFactory abstract sealed" />
+  <TypeSignature Language="F#" Value="type FormattableStringFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.FormattableStringFactory.Create(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (format As String, ParamArray arguments As Object()) As FormattableString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static FormattableString ^ Create(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member Create : string * obj[] -&gt; FormattableString" Usage="System.Runtime.CompilerServices.FormattableStringFactory.Create (format, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

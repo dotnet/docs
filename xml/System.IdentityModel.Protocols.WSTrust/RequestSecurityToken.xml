@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestSecurityToken&#xA;Inherits WSTrustMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestSecurityToken : System::IdentityModel::Protocols::WSTrust::WSTrustMessage" />
+  <TypeSignature Language="F#" Value="type RequestSecurityToken = class&#xA;    inherit WSTrustMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (requestType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestSecurityToken(System::String ^ requestType);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestSecurityToken : string -&gt; System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" Usage="new System.IdentityModel.Protocols.WSTrust.RequestSecurityToken requestType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (requestType As String, keyType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestSecurityToken(System::String ^ requestType, System::String ^ keyType);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestSecurityToken : string * string -&gt; System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" Usage="new System.IdentityModel.Protocols.WSTrust.RequestSecurityToken (requestType, keyType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ActAs" />
       <MemberSignature Language="VB.NET" Value="Public Property ActAs As SecurityTokenElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenElement ^ ActAs { System::IdentityModel::Tokens::SecurityTokenElement ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActAs : System.IdentityModel.Tokens.SecurityTokenElement with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ActAs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.AdditionalContext" />
       <MemberSignature Language="VB.NET" Value="Public Property AdditionalContext As AdditionalContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::AdditionalContext ^ AdditionalContext { System::IdentityModel::Protocols::WSTrust::AdditionalContext ^ get(); void set(System::IdentityModel::Protocols::WSTrust::AdditionalContext ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AdditionalContext : System.IdentityModel.Protocols.WSTrust.AdditionalContext with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.AdditionalContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.CancelTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property CancelTarget As SecurityTokenElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenElement ^ CancelTarget { System::IdentityModel::Tokens::SecurityTokenElement ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelTarget : System.IdentityModel.Tokens.SecurityTokenElement with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.CancelTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Claims" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Claims As RequestClaimCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::RequestClaimCollection ^ Claims { System::IdentityModel::Protocols::WSTrust::RequestClaimCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Claims : System.IdentityModel.Protocols.WSTrust.RequestClaimCollection" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Claims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ComputedKeyAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property ComputedKeyAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ComputedKeyAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ComputedKeyAlgorithm : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ComputedKeyAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -284,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Delegatable" />
       <MemberSignature Language="VB.NET" Value="Public Property Delegatable As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Delegatable { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Delegatable : Nullable&lt;bool&gt; with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Delegatable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -312,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.DelegateTo" />
       <MemberSignature Language="VB.NET" Value="Public Property DelegateTo As SecurityTokenElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenElement ^ DelegateTo { System::IdentityModel::Tokens::SecurityTokenElement ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DelegateTo : System.IdentityModel.Tokens.SecurityTokenElement with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.DelegateTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -339,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Encryption" />
       <MemberSignature Language="VB.NET" Value="Public Property Encryption As SecurityTokenElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenElement ^ Encryption { System::IdentityModel::Tokens::SecurityTokenElement ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Encryption : System.IdentityModel.Tokens.SecurityTokenElement with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Encryption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -366,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Forwardable" />
       <MemberSignature Language="VB.NET" Value="Public Property Forwardable As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Forwardable { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Forwardable : Nullable&lt;bool&gt; with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Forwardable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -394,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Issuer" />
       <MemberSignature Language="VB.NET" Value="Public Property Issuer As EndpointReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::EndpointReference ^ Issuer { System::IdentityModel::Protocols::WSTrust::EndpointReference ^ get(); void set(System::IdentityModel::Protocols::WSTrust::EndpointReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Issuer : System.IdentityModel.Protocols.WSTrust.EndpointReference with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Issuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -421,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.OnBehalfOf" />
       <MemberSignature Language="VB.NET" Value="Public Property OnBehalfOf As SecurityTokenElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenElement ^ OnBehalfOf { System::IdentityModel::Tokens::SecurityTokenElement ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OnBehalfOf : System.IdentityModel.Tokens.SecurityTokenElement with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.OnBehalfOf" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -448,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Participants" />
       <MemberSignature Language="VB.NET" Value="Public Property Participants As Participants" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::Participants ^ Participants { System::IdentityModel::Protocols::WSTrust::Participants ^ get(); void set(System::IdentityModel::Protocols::WSTrust::Participants ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Participants : System.IdentityModel.Protocols.WSTrust.Participants with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Participants" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -475,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ProofEncryption" />
       <MemberSignature Language="VB.NET" Value="Public Property ProofEncryption As SecurityTokenElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenElement ^ ProofEncryption { System::IdentityModel::Tokens::SecurityTokenElement ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProofEncryption : System.IdentityModel.Tokens.SecurityTokenElement with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ProofEncryption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -502,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Renewing" />
       <MemberSignature Language="VB.NET" Value="Public Property Renewing As Renewing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::Renewing ^ Renewing { System::IdentityModel::Protocols::WSTrust::Renewing ^ get(); void set(System::IdentityModel::Protocols::WSTrust::Renewing ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Renewing : System.IdentityModel.Protocols.WSTrust.Renewing with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Renewing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -529,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.RenewTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property RenewTarget As SecurityTokenElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenElement ^ RenewTarget { System::IdentityModel::Tokens::SecurityTokenElement ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RenewTarget : System.IdentityModel.Tokens.SecurityTokenElement with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.RenewTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -556,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.SecondaryParameters" />
       <MemberSignature Language="VB.NET" Value="Public Property SecondaryParameters As RequestSecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ SecondaryParameters { System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ get(); void set(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecondaryParameters : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.SecondaryParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -583,6 +602,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ValidateTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateTarget As SecurityTokenElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenElement ^ ValidateTarget { System::IdentityModel::Tokens::SecurityTokenElement ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateTarget : System.IdentityModel.Tokens.SecurityTokenElement with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ValidateTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

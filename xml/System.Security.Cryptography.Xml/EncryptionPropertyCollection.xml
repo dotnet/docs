@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncryptionPropertyCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class EncryptionPropertyCollection sealed : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type EncryptionPropertyCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.Add(System.Security.Cryptography.Xml.EncryptionProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As EncryptionProperty) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Security::Cryptography::Xml::EncryptionProperty ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Security.Cryptography.Xml.EncryptionProperty -&gt; int" Usage="encryptionPropertyCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="encryptionPropertyCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.Contains(System.Security.Cryptography.Xml.EncryptionProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As EncryptionProperty) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Security::Cryptography::Xml::EncryptionProperty ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Security.Cryptography.Xml.EncryptionProperty -&gt; bool" Usage="encryptionPropertyCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="encryptionPropertyCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.CopyTo(System.Security.Cryptography.Xml.EncryptionProperty[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As EncryptionProperty(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Security::Cryptography::Xml::EncryptionProperty ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Security.Cryptography.Xml.EncryptionProperty[] * int -&gt; unit" Usage="encryptionPropertyCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -242,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionPropertyCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Cryptography.Xml.EncryptionPropertyCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="encryptionPropertyCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.IndexOf(System.Security.Cryptography.Xml.EncryptionProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As EncryptionProperty) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Security::Cryptography::Xml::EncryptionProperty ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Security.Cryptography.Xml.EncryptionProperty -&gt; int" Usage="encryptionPropertyCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -342,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.Insert(System.Int32,System.Security.Cryptography.Xml.EncryptionProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As EncryptionProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Security::Cryptography::Xml::EncryptionProperty ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Security.Cryptography.Xml.EncryptionProperty -&gt; unit" Usage="encryptionPropertyCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionPropertyCollection.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Security.Cryptography.Xml.EncryptionPropertyCollection.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -408,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionPropertyCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Security.Cryptography.Xml.EncryptionPropertyCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -445,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionPropertyCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Security.Cryptography.Xml.EncryptionPropertyCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -473,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Item (index As Integer) As EncryptionProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::Xml::EncryptionProperty ^ Item(int index);" />
+      <MemberSignature Language="F#" Value="member this.Item : int -&gt; System.Security.Cryptography.Xml.EncryptionProperty" Usage="encryptionPropertyCollection.Item index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -501,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionPropertyCollection.ItemOf(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property ItemOf(index As Integer) As EncryptionProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::EncryptionProperty ^ default[int] { System::Security::Cryptography::Xml::EncryptionProperty ^ get(int index); void set(int index, System::Security::Cryptography::Xml::EncryptionProperty ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemOf(int) : System.Security.Cryptography.Xml.EncryptionProperty with get, set" Usage="System.Security.Cryptography.Xml.EncryptionPropertyCollection.ItemOf" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -529,6 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.Remove(System.Security.Cryptography.Xml.EncryptionProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As EncryptionProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Security::Cryptography::Xml::EncryptionProperty ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Security.Cryptography.Xml.EncryptionProperty -&gt; unit" Usage="encryptionPropertyCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -556,6 +572,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionPropertyCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="encryptionPropertyCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -586,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionPropertyCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Security.Cryptography.Xml.EncryptionPropertyCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -747,6 +765,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionPropertyCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Security.Cryptography.Xml.EncryptionPropertyCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

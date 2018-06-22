@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.UnhandledExceptionAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum UnhandledExceptionAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class UnhandledExceptionAction" />
+  <TypeSignature Language="F#" Value="type UnhandledExceptionAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.UnhandledExceptionAction.Abort" />
       <MemberSignature Language="VB.NET" Value="Abort" />
       <MemberSignature Language="C++ CLI" Value="Abort" />
+      <MemberSignature Language="F#" Value="Abort = 0" Usage="System.Activities.UnhandledExceptionAction.Abort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.UnhandledExceptionAction.Cancel" />
       <MemberSignature Language="VB.NET" Value="Cancel" />
       <MemberSignature Language="C++ CLI" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 1" Usage="System.Activities.UnhandledExceptionAction.Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.UnhandledExceptionAction.Terminate" />
       <MemberSignature Language="VB.NET" Value="Terminate" />
       <MemberSignature Language="C++ CLI" Value="Terminate" />
+      <MemberSignature Language="F#" Value="Terminate = 2" Usage="System.Activities.UnhandledExceptionAction.Terminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

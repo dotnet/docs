@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionTextItem" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerActionTextItem&#xA;Inherits DesignerActionItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionTextItem : System::ComponentModel::Design::DesignerActionItem" />
+  <TypeSignature Language="F#" Value="type DesignerActionTextItem = class&#xA;    inherit DesignerActionItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionTextItem.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionTextItem(System::String ^ displayName, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionTextItem : string * string -&gt; System.ComponentModel.Design.DesignerActionTextItem" Usage="new System.ComponentModel.Design.DesignerActionTextItem (displayName, category)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

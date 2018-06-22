@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum LinkBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class LinkBehavior" />
+  <TypeSignature Language="F#" Value="type LinkBehavior = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkBehavior.AlwaysUnderline" />
       <MemberSignature Language="VB.NET" Value="AlwaysUnderline" />
       <MemberSignature Language="C++ CLI" Value="AlwaysUnderline" />
+      <MemberSignature Language="F#" Value="AlwaysUnderline = 1" Usage="System.Windows.Forms.LinkBehavior.AlwaysUnderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkBehavior.HoverUnderline" />
       <MemberSignature Language="VB.NET" Value="HoverUnderline" />
       <MemberSignature Language="C++ CLI" Value="HoverUnderline" />
+      <MemberSignature Language="F#" Value="HoverUnderline = 2" Usage="System.Windows.Forms.LinkBehavior.HoverUnderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkBehavior.NeverUnderline" />
       <MemberSignature Language="VB.NET" Value="NeverUnderline" />
       <MemberSignature Language="C++ CLI" Value="NeverUnderline" />
+      <MemberSignature Language="F#" Value="NeverUnderline = 3" Usage="System.Windows.Forms.LinkBehavior.NeverUnderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkBehavior.SystemDefault" />
       <MemberSignature Language="VB.NET" Value="SystemDefault" />
       <MemberSignature Language="C++ CLI" Value="SystemDefault" />
+      <MemberSignature Language="F#" Value="SystemDefault = 0" Usage="System.Windows.Forms.LinkBehavior.SystemDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.AudienceUriModeValidationHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class AudienceUriModeValidationHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class AudienceUriModeValidationHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type AudienceUriModeValidationHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.AudienceUriModeValidationHelper.IsDefined(System.IdentityModel.Selectors.AudienceUriMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (validationMode As AudienceUriMode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::IdentityModel::Selectors::AudienceUriMode validationMode);" />
+      <MemberSignature Language="F#" Value="static member IsDefined : System.IdentityModel.Selectors.AudienceUriMode -&gt; bool" Usage="System.IdentityModel.Selectors.AudienceUriModeValidationHelper.IsDefined validationMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

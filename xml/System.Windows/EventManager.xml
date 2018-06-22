@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.EventManager" />
   <TypeSignature Language="VB.NET" Value="Public Class EventManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventManager abstract sealed" />
+  <TypeSignature Language="F#" Value="type EventManager = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.GetRoutedEvents" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRoutedEvents () As RoutedEvent()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Windows::RoutedEvent ^&gt; ^ GetRoutedEvents();" />
+      <MemberSignature Language="F#" Value="static member GetRoutedEvents : unit -&gt; System.Windows.RoutedEvent[]" Usage="System.Windows.EventManager.GetRoutedEvents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.GetRoutedEventsForOwner(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRoutedEventsForOwner (ownerType As Type) As RoutedEvent()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Windows::RoutedEvent ^&gt; ^ GetRoutedEventsForOwner(Type ^ ownerType);" />
+      <MemberSignature Language="F#" Value="static member GetRoutedEventsForOwner : Type -&gt; System.Windows.RoutedEvent[]" Usage="System.Windows.EventManager.GetRoutedEventsForOwner ownerType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClassHandler(class System.Type classType, class System.Windows.RoutedEvent routedEvent, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.RegisterClassHandler(System.Type,System.Windows.RoutedEvent,System.Delegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClassHandler(Type ^ classType, System::Windows::RoutedEvent ^ routedEvent, Delegate ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RegisterClassHandler : Type * System.Windows.RoutedEvent * Delegate -&gt; unit" Usage="System.Windows.EventManager.RegisterClassHandler (classType, routedEvent, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClassHandler(class System.Type classType, class System.Windows.RoutedEvent routedEvent, class System.Delegate handler, bool handledEventsToo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.RegisterClassHandler(System.Type,System.Windows.RoutedEvent,System.Delegate,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClassHandler(Type ^ classType, System::Windows::RoutedEvent ^ routedEvent, Delegate ^ handler, bool handledEventsToo);" />
+      <MemberSignature Language="F#" Value="static member RegisterClassHandler : Type * System.Windows.RoutedEvent * Delegate * bool -&gt; unit" Usage="System.Windows.EventManager.RegisterClassHandler (classType, routedEvent, handler, handledEventsToo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.RoutedEvent RegisterRoutedEvent(string name, valuetype System.Windows.RoutingStrategy routingStrategy, class System.Type handlerType, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventManager.RegisterRoutedEvent(System.String,System.Windows.RoutingStrategy,System.Type,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::RoutedEvent ^ RegisterRoutedEvent(System::String ^ name, System::Windows::RoutingStrategy routingStrategy, Type ^ handlerType, Type ^ ownerType);" />
+      <MemberSignature Language="F#" Value="static member RegisterRoutedEvent : string * System.Windows.RoutingStrategy * Type * Type -&gt; System.Windows.RoutedEvent" Usage="System.Windows.EventManager.RegisterRoutedEvent (name, routingStrategy, handlerType, ownerType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

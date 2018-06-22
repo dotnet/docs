@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Docking" />
   <TypeSignature Language="VB.NET" Value="Public Enum Docking" />
   <TypeSignature Language="C++ CLI" Value="public enum class Docking" />
+  <TypeSignature Language="F#" Value="type Docking = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.Docking.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 2" Usage="System.Web.UI.DataVisualization.Charting.Docking.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.Docking.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 3" Usage="System.Web.UI.DataVisualization.Charting.Docking.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.Docking.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 1" Usage="System.Web.UI.DataVisualization.Charting.Docking.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.Docking.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Web.UI.DataVisualization.Charting.Docking.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WSTrustRequestProcessingErrorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSTrustRequestProcessingErrorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WSTrustRequestProcessingErrorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string requestType, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustRequestProcessingErrorEventArgs(System::String ^ requestType, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs : string * Exception -&gt; System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs" Usage="new System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs (requestType, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs.RequestType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestType : string" Usage="System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs.RequestType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

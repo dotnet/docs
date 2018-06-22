@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UrlPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UrlPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class UrlPropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type UrlPropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UrlPropertyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filter As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UrlPropertyAttribute(System::String ^ filter);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.UrlPropertyAttribute : string -&gt; System.Web.UI.UrlPropertyAttribute" Usage="new System.Web.UI.UrlPropertyAttribute filter" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UrlPropertyAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="urlPropertyAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UrlPropertyAttribute.Filter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string" Usage="System.Web.UI.UrlPropertyAttribute.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UrlPropertyAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="urlPropertyAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

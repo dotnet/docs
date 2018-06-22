@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.QueryStringValueProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QueryStringValueProvider&#xA;Inherits NameValueCollectionValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryStringValueProvider sealed : System::Web::ModelBinding::NameValueCollectionValueProvider" />
+  <TypeSignature Language="F#" Value="type QueryStringValueProvider = class&#xA;    inherit NameValueCollectionValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.QueryStringValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryStringValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.QueryStringValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.QueryStringValueProvider" Usage="new System.Web.ModelBinding.QueryStringValueProvider modelBindingExecutionContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

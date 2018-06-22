@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MetadataKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum MetadataKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class MetadataKind" />
+  <TypeSignature Language="F#" Value="type MetadataKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataKind.Ecma335" />
       <MemberSignature Language="VB.NET" Value="Ecma335" />
       <MemberSignature Language="C++ CLI" Value="Ecma335" />
+      <MemberSignature Language="F#" Value="Ecma335 = 0" Usage="System.Reflection.Metadata.MetadataKind.Ecma335" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataKind.ManagedWindowsMetadata" />
       <MemberSignature Language="VB.NET" Value="ManagedWindowsMetadata" />
       <MemberSignature Language="C++ CLI" Value="ManagedWindowsMetadata" />
+      <MemberSignature Language="F#" Value="ManagedWindowsMetadata = 2" Usage="System.Reflection.Metadata.MetadataKind.ManagedWindowsMetadata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataKind.WindowsMetadata" />
       <MemberSignature Language="VB.NET" Value="WindowsMetadata" />
       <MemberSignature Language="C++ CLI" Value="WindowsMetadata" />
+      <MemberSignature Language="F#" Value="WindowsMetadata = 1" Usage="System.Reflection.Metadata.MetadataKind.WindowsMetadata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

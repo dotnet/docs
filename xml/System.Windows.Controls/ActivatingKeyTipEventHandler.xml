@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ActivatingKeyTipEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ActivatingKeyTipEventHandler(sender As Object, e As ActivatingKeyTipEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ActivatingKeyTipEventHandler(System::Object ^ sender, ActivatingKeyTipEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ActivatingKeyTipEventHandler = delegate of obj * ActivatingKeyTipEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

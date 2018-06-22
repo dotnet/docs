@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.IChartStorageHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IChartStorageHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class IChartStorageHandler" />
+  <TypeSignature Language="F#" Value="type IChartStorageHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.IChartStorageHandler.Delete(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Delete : string -&gt; unit" Usage="iChartStorageHandler.Delete key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.IChartStorageHandler.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Exists (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Exists : string -&gt; bool" Usage="iChartStorageHandler.Exists key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.IChartStorageHandler.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (key As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Load(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Load : string -&gt; byte[]" Usage="iChartStorageHandler.Load key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.IChartStorageHandler.Save(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (key As String, data As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ key, cli::array &lt;System::Byte&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member Save : string * byte[] -&gt; unit" Usage="iChartStorageHandler.Save (key, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

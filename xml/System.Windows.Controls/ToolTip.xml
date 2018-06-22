@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolTip" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolTip&#xA;Inherits ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolTip : System::Windows::Controls::ContentControl" />
+  <TypeSignature Language="F#" Value="type ToolTip = class&#xA;    inherit ContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ToolTip.Closed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Closed;" />
+      <MemberSignature Language="F#" Value="member this.Closed : System.Windows.RoutedEventHandler " Usage="member this.Closed : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.ClosedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClosedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ClosedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClosedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ToolTip.ClosedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.CustomPopupPlacementCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomPopupPlacementCallback As CustomPopupPlacementCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ CustomPopupPlacementCallback { System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ get(); void set(System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomPopupPlacementCallback : System.Windows.Controls.Primitives.CustomPopupPlacementCallback with get, set" Usage="System.Windows.Controls.ToolTip.CustomPopupPlacementCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.CustomPopupPlacementCallbackProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CustomPopupPlacementCallbackProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CustomPopupPlacementCallbackProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomPopupPlacementCallbackProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.CustomPopupPlacementCallbackProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.HasDropShadow" />
       <MemberSignature Language="VB.NET" Value="Public Property HasDropShadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDropShadow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasDropShadow : bool with get, set" Usage="System.Windows.Controls.ToolTip.HasDropShadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +285,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.HasDropShadowProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasDropShadowProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasDropShadowProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasDropShadowProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.HasDropShadowProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double with get, set" Usage="System.Windows.Controls.ToolTip.HorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +365,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.HorizontalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.HorizontalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -376,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.IsOpen" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool with get, set" Usage="System.Windows.Controls.ToolTip.IsOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -426,6 +436,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.IsOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOpenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.IsOpenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -445,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTip.OnClosed(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosed (e As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosed(System::Windows::RoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClosed : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnClosed : System.Windows.RoutedEventArgs -&gt; unit" Usage="toolTip.OnClosed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -470,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTip.OnContentChanged(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContentChanged (oldContent As Object, newContent As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContentChanged(System::Object ^ oldContent, System::Object ^ newContent);" />
+      <MemberSignature Language="F#" Value="override this.OnContentChanged : obj * obj -&gt; unit" Usage="toolTip.OnContentChanged (oldContent, newContent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -495,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTip.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="toolTip.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -516,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTip.OnOpened(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnOpened (e As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnOpened(System::Windows::RoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnOpened : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnOpened : System.Windows.RoutedEventArgs -&gt; unit" Usage="toolTip.OnOpened e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -541,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolTip.OnVisualParentChanged(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnVisualParentChanged (oldParent As DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualParentChanged(System::Windows::DependencyObject ^ oldParent);" />
+      <MemberSignature Language="F#" Value="override this.OnVisualParentChanged : System.Windows.DependencyObject -&gt; unit" Usage="toolTip.OnVisualParentChanged oldParent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -564,6 +580,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ToolTip.Opened" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Opened As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Opened;" />
+      <MemberSignature Language="F#" Value="member this.Opened : System.Windows.RoutedEventHandler " Usage="member this.Opened : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -612,6 +629,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.OpenedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OpenedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ OpenedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OpenedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ToolTip.OpenedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -631,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.Placement" />
       <MemberSignature Language="VB.NET" Value="Public Property Placement As PlacementMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::PlacementMode Placement { System::Windows::Controls::Primitives::PlacementMode get(); void set(System::Windows::Controls::Primitives::PlacementMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Placement : System.Windows.Controls.Primitives.PlacementMode with get, set" Usage="System.Windows.Controls.ToolTip.Placement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -688,6 +707,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.PlacementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.PlacementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -707,6 +727,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.PlacementRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Property PlacementRectangle As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect PlacementRectangle { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
+      <MemberSignature Language="F#" Value="member this.PlacementRectangle : System.Windows.Rect with get, set" Usage="System.Windows.Controls.ToolTip.PlacementRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -765,6 +786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.PlacementRectangleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementRectangleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementRectangleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementRectangleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.PlacementRectangleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -784,6 +806,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.PlacementTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property PlacementTarget As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ PlacementTarget { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PlacementTarget : System.Windows.UIElement with get, set" Usage="System.Windows.Controls.ToolTip.PlacementTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -844,6 +867,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.PlacementTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementTargetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementTargetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.PlacementTargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -863,6 +887,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.StaysOpen" />
       <MemberSignature Language="VB.NET" Value="Public Property StaysOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StaysOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.StaysOpen : bool with get, set" Usage="System.Windows.Controls.ToolTip.StaysOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -908,6 +933,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.StaysOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StaysOpenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StaysOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StaysOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.StaysOpenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -927,6 +953,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTip.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double with get, set" Usage="System.Windows.Controls.ToolTip.VerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -986,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolTip.VerticalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolTip.VerticalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

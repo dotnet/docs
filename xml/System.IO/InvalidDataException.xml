@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.InvalidDataException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvalidDataException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidDataException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type InvalidDataException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.InvalidDataException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidDataException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IO.InvalidDataException : string -&gt; System.IO.InvalidDataException" Usage="new System.IO.InvalidDataException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -155,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.InvalidDataException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidDataException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.InvalidDataException : string * Exception -&gt; System.IO.InvalidDataException" Usage="new System.IO.InvalidDataException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>

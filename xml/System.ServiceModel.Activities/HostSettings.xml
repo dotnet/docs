@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.HostSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostSettings sealed" />
+  <TypeSignature Language="F#" Value="type HostSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.HostSettings.IncludeExceptionDetailInFaults" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeExceptionDetailInFaults { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.ServiceModel.Activities.HostSettings.IncludeExceptionDetailInFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.HostSettings.ScopeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ScopeName As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ ScopeName { System::Xml::Linq::XName ^ get(); void set(System::Xml::Linq::XName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScopeName : System.Xml.Linq.XName with get, set" Usage="System.ServiceModel.Activities.HostSettings.ScopeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.HostSettings.UseNoPersistHandle" />
       <MemberSignature Language="VB.NET" Value="Public Property UseNoPersistHandle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseNoPersistHandle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseNoPersistHandle : bool with get, set" Usage="System.ServiceModel.Activities.HostSettings.UseNoPersistHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.XmlSerializerOperationBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSerializerOperationBehavior&#xA;Implements IOperationBehavior, IWsdlExportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerOperationBehavior : System::ServiceModel::Description::IOperationBehavior, System::ServiceModel::Description::IWsdlExportExtension" />
+  <TypeSignature Language="F#" Value="type XmlSerializerOperationBehavior = class&#xA;    interface IOperationBehavior&#xA;    interface IWsdlExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.XmlSerializerOperationBehavior.#ctor(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operation As OperationDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerOperationBehavior(System::ServiceModel::Description::OperationDescription ^ operation);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.XmlSerializerOperationBehavior : System.ServiceModel.Description.OperationDescription -&gt; System.ServiceModel.Description.XmlSerializerOperationBehavior" Usage="new System.ServiceModel.Description.XmlSerializerOperationBehavior operation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.XmlSerializerOperationBehavior.#ctor(System.ServiceModel.Description.OperationDescription,System.ServiceModel.XmlSerializerFormatAttribute)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operation As OperationDescription, format As XmlSerializerFormatAttribute)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerOperationBehavior(System::ServiceModel::Description::OperationDescription ^ operation, System::ServiceModel::XmlSerializerFormatAttribute ^ format);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.XmlSerializerOperationBehavior : System.ServiceModel.Description.OperationDescription * System.ServiceModel.XmlSerializerFormatAttribute -&gt; System.ServiceModel.Description.XmlSerializerOperationBehavior" Usage="new System.ServiceModel.Description.XmlSerializerOperationBehavior (operation, format)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.XmlSerializerOperationBehavior.GetXmlMappings" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXmlMappings () As Collection(Of XmlMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::Xml::Serialization::XmlMapping ^&gt; ^ GetXmlMappings();" />
+      <MemberSignature Language="F#" Value="member this.GetXmlMappings : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.Xml.Serialization.XmlMapping&gt;" Usage="xmlSerializerOperationBehavior.GetXmlMappings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -374,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.XmlSerializerOperationBehavior.XmlSerializerFormatAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlSerializerFormatAttribute As XmlSerializerFormatAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::XmlSerializerFormatAttribute ^ XmlSerializerFormatAttribute { System::ServiceModel::XmlSerializerFormatAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSerializerFormatAttribute : System.ServiceModel.XmlSerializerFormatAttribute" Usage="System.ServiceModel.Description.XmlSerializerOperationBehavior.XmlSerializerFormatAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

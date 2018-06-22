@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControlCancelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TabControlCancelEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TabControlCancelEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type TabControlCancelEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.TabPage tabPage, int32 tabPageIndex, bool cancel, valuetype System.Windows.Forms.TabControlAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControlCancelEventArgs.#ctor(System.Windows.Forms.TabPage,System.Int32,System.Boolean,System.Windows.Forms.TabControlAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TabControlCancelEventArgs(System::Windows::Forms::TabPage ^ tabPage, int tabPageIndex, bool cancel, System::Windows::Forms::TabControlAction action);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TabControlCancelEventArgs : System.Windows.Forms.TabPage * int * bool * System.Windows.Forms.TabControlAction -&gt; System.Windows.Forms.TabControlCancelEventArgs" Usage="new System.Windows.Forms.TabControlCancelEventArgs (tabPage, tabPageIndex, cancel, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControlCancelEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As TabControlAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TabControlAction Action { System::Windows::Forms::TabControlAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Windows.Forms.TabControlAction" Usage="System.Windows.Forms.TabControlCancelEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControlCancelEventArgs.TabPage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabPage As TabPage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TabPage ^ TabPage { System::Windows::Forms::TabPage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabPage : System.Windows.Forms.TabPage" Usage="System.Windows.Forms.TabControlCancelEventArgs.TabPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControlCancelEventArgs.TabPageIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabPageIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabPageIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabPageIndex : int" Usage="System.Windows.Forms.TabControlCancelEventArgs.TabPageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

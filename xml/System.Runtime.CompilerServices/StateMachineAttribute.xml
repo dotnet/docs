@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.StateMachineAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class StateMachineAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateMachineAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type StateMachineAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.StateMachineAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (stateMachineType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StateMachineAttribute(Type ^ stateMachineType);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.StateMachineAttribute : Type -&gt; System.Runtime.CompilerServices.StateMachineAttribute" Usage="new System.Runtime.CompilerServices.StateMachineAttribute stateMachineType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.StateMachineAttribute.StateMachineType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateMachineType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ StateMachineType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StateMachineType : Type" Usage="System.Runtime.CompilerServices.StateMachineAttribute.StateMachineType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

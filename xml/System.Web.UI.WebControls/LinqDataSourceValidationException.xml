@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceValidationException" />
   <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceValidationException&#xA;Inherits Exception&#xA;Implements IDynamicValidatorException" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceValidationException : Exception, System::Web::DynamicData::IDynamicValidatorException" />
+  <TypeSignature Language="F#" Value="type LinqDataSourceValidationException = class&#xA;    inherit Exception&#xA;    interface IDynamicValidatorException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +117,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceValidationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceValidationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceValidationException : string -&gt; System.Web.UI.WebControls.LinqDataSourceValidationException" Usage="new System.Web.UI.WebControls.LinqDataSourceValidationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -148,6 +150,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; LinqDataSourceValidationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceValidationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Web.UI.WebControls.LinqDataSourceValidationException" Usage="new System.Web.UI.WebControls.LinqDataSourceValidationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -177,6 +180,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceValidationException.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.Exception})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerExceptions As IDictionary(Of String, Exception))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceValidationException(System::String ^ message, System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ innerExceptions);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceValidationException : string * System.Collections.Generic.IDictionary&lt;string, Exception&gt; -&gt; System.Web.UI.WebControls.LinqDataSourceValidationException" Usage="new System.Web.UI.WebControls.LinqDataSourceValidationException (message, innerExceptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -199,6 +203,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceValidationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceValidationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceValidationException : string * Exception -&gt; System.Web.UI.WebControls.LinqDataSourceValidationException" Usage="new System.Web.UI.WebControls.LinqDataSourceValidationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -228,6 +233,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="linqDataSourceValidationException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -268,6 +274,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceValidationException.InnerExceptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerExceptions As IDictionary(Of String, Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ InnerExceptions { System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InnerExceptions : System.Collections.Generic.IDictionary&lt;string, Exception&gt;" Usage="System.Web.UI.WebControls.LinqDataSourceValidationException.InnerExceptions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicValidatorException.InnerExceptions</InterfaceMember>

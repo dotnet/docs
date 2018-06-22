@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ProfessionalColors" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfessionalColors" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfessionalColors sealed" />
+  <TypeSignature Language="F#" Value="type ProfessionalColors = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonCheckedGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonCheckedGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonCheckedGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonCheckedGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientMiddle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonCheckedGradientMiddle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonCheckedGradientMiddle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientMiddle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedHighlight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonCheckedHighlight As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonCheckedHighlight { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedHighlight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonCheckedHighlight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedHighlightBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonCheckedHighlightBorder As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonCheckedHighlightBorder { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedHighlightBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonCheckedHighlightBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonPressedBorder As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonPressedBorder { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonPressedBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonPressedGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonPressedGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonPressedGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonPressedGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonPressedGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonPressedGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientMiddle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonPressedGradientMiddle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonPressedGradientMiddle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonPressedGradientMiddle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedHighlight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonPressedHighlight As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonPressedHighlight { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedHighlight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonPressedHighlight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedHighlightBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonPressedHighlightBorder As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonPressedHighlightBorder { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedHighlightBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonPressedHighlightBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -244,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonSelectedBorder As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonSelectedBorder { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonSelectedBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonSelectedGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonSelectedGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -284,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonSelectedGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonSelectedGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -304,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientMiddle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonSelectedGradientMiddle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonSelectedGradientMiddle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientMiddle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -324,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedHighlight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonSelectedHighlight As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonSelectedHighlight { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedHighlight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonSelectedHighlight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -344,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedHighlightBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonSelectedHighlightBorder As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ButtonSelectedHighlightBorder { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedHighlightBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ButtonSelectedHighlightBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -364,6 +382,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.CheckBackground" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CheckBackground As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color CheckBackground { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckBackground : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.CheckBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -384,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.CheckPressedBackground" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CheckPressedBackground As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color CheckPressedBackground { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckPressedBackground : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.CheckPressedBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -404,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.CheckSelectedBackground" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CheckSelectedBackground As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color CheckSelectedBackground { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckSelectedBackground : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.CheckSelectedBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -424,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.GripDark" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GripDark As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color GripDark { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.GripDark : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.GripDark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -444,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.GripLight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GripLight As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color GripLight { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.GripLight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.GripLight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -464,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImageMarginGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ImageMarginGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ImageMarginGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -491,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImageMarginGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ImageMarginGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ImageMarginGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -518,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginGradientMiddle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImageMarginGradientMiddle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ImageMarginGradientMiddle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ImageMarginGradientMiddle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImageMarginRevealedGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ImageMarginRevealedGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginRevealedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -572,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImageMarginRevealedGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ImageMarginRevealedGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginRevealedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -599,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientMiddle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImageMarginRevealedGradientMiddle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ImageMarginRevealedGradientMiddle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginRevealedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientMiddle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -626,6 +655,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuBorder As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuBorder { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -646,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuItemBorder As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuItemBorder { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuItemBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuItemBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -666,6 +697,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuItemPressedGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuItemPressedGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuItemPressedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -686,6 +718,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuItemPressedGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuItemPressedGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuItemPressedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -706,6 +739,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientMiddle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuItemPressedGradientMiddle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuItemPressedGradientMiddle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuItemPressedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientMiddle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -726,6 +760,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemSelected" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuItemSelected As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuItemSelected { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuItemSelected : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuItemSelected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -746,6 +781,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemSelectedGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuItemSelectedGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuItemSelectedGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuItemSelectedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuItemSelectedGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -766,6 +802,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemSelectedGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuItemSelectedGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuItemSelectedGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuItemSelectedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuItemSelectedGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -786,6 +823,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuStripGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuStripGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuStripGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuStripGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuStripGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -806,6 +844,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuStripGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuStripGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MenuStripGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuStripGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.MenuStripGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -826,6 +865,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.OverflowButtonGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OverflowButtonGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color OverflowButtonGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OverflowButtonGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.OverflowButtonGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -846,6 +886,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.OverflowButtonGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OverflowButtonGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color OverflowButtonGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OverflowButtonGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.OverflowButtonGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -866,6 +907,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.OverflowButtonGradientMiddle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OverflowButtonGradientMiddle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color OverflowButtonGradientMiddle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OverflowButtonGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.OverflowButtonGradientMiddle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -886,6 +928,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.RaftingContainerGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RaftingContainerGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color RaftingContainerGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.RaftingContainerGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.RaftingContainerGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -906,6 +949,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.RaftingContainerGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RaftingContainerGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color RaftingContainerGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.RaftingContainerGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.RaftingContainerGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -926,6 +970,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.SeparatorDark" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeparatorDark As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SeparatorDark { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeparatorDark : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.SeparatorDark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -946,6 +991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.SeparatorLight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeparatorLight As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SeparatorLight { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeparatorLight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.SeparatorLight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -966,6 +1012,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.StatusStripGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusStripGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color StatusStripGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatusStripGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.StatusStripGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -986,6 +1033,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.StatusStripGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusStripGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color StatusStripGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatusStripGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.StatusStripGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1006,6 +1054,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripBorder As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripBorder { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1026,6 +1075,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripContentPanelGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripContentPanelGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripContentPanelGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripContentPanelGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripContentPanelGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1046,6 +1096,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripContentPanelGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripContentPanelGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripContentPanelGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripContentPanelGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripContentPanelGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1066,6 +1117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripDropDownBackground" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDropDownBackground As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripDropDownBackground { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDropDownBackground : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripDropDownBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1086,6 +1138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1106,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1126,6 +1180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripGradientMiddle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripGradientMiddle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripGradientMiddle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripGradientMiddle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1146,6 +1201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripPanelGradientBegin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripPanelGradientBegin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripPanelGradientBegin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripPanelGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripPanelGradientBegin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1166,6 +1222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripPanelGradientEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripPanelGradientEnd As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ToolStripPanelGradientEnd { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripPanelGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColors.ToolStripPanelGradientEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

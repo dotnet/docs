@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IResourceService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IResourceService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IResourceService" />
+  <TypeSignature Language="F#" Value="type IResourceService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IResourceService.GetResourceReader(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResourceReader (info As CultureInfo) As IResourceReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceReader ^ GetResourceReader(System::Globalization::CultureInfo ^ info);" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceReader : System.Globalization.CultureInfo -&gt; System.Resources.IResourceReader" Usage="iResourceService.GetResourceReader info" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IResourceService.GetResourceWriter(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResourceWriter (info As CultureInfo) As IResourceWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceWriter ^ GetResourceWriter(System::Globalization::CultureInfo ^ info);" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceWriter : System.Globalization.CultureInfo -&gt; System.Resources.IResourceWriter" Usage="iResourceService.GetResourceWriter info" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

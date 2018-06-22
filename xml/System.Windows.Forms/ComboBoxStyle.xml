@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBoxStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ComboBoxStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ComboBoxStyle" />
+  <TypeSignature Language="F#" Value="type ComboBoxStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.DropDown" />
       <MemberSignature Language="VB.NET" Value="DropDown" />
       <MemberSignature Language="C++ CLI" Value="DropDown" />
+      <MemberSignature Language="F#" Value="DropDown = 1" Usage="System.Windows.Forms.ComboBoxStyle.DropDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.DropDownList" />
       <MemberSignature Language="VB.NET" Value="DropDownList" />
       <MemberSignature Language="C++ CLI" Value="DropDownList" />
+      <MemberSignature Language="F#" Value="DropDownList = 2" Usage="System.Windows.Forms.ComboBoxStyle.DropDownList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.Simple" />
       <MemberSignature Language="VB.NET" Value="Simple" />
       <MemberSignature Language="C++ CLI" Value="Simple" />
+      <MemberSignature Language="F#" Value="Simple = 0" Usage="System.Windows.Forms.ComboBoxStyle.Simple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

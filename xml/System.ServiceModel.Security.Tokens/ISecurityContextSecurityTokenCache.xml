@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISecurityContextSecurityTokenCache" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISecurityContextSecurityTokenCache" />
+  <TypeSignature Language="F#" Value="type ISecurityContextSecurityTokenCache = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache.AddContext(System.ServiceModel.Security.Tokens.SecurityContextSecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddContext (token As SecurityContextSecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddContext(System::ServiceModel::Security::Tokens::SecurityContextSecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="abstract member AddContext : System.ServiceModel.Security.Tokens.SecurityContextSecurityToken -&gt; unit" Usage="iSecurityContextSecurityTokenCache.AddContext token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache.ClearContexts" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearContexts ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearContexts();" />
+      <MemberSignature Language="F#" Value="abstract member ClearContexts : unit -&gt; unit" Usage="iSecurityContextSecurityTokenCache.ClearContexts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache.GetAllContexts(System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllContexts (contextId As UniqueId) As Collection(Of SecurityContextSecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityContextSecurityToken ^&gt; ^ GetAllContexts(System::Xml::UniqueId ^ contextId);" />
+      <MemberSignature Language="F#" Value="abstract member GetAllContexts : System.Xml.UniqueId -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.Tokens.SecurityContextSecurityToken&gt;" Usage="iSecurityContextSecurityTokenCache.GetAllContexts contextId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache.GetContext(System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContext (contextId As UniqueId, generation As UniqueId) As SecurityContextSecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Security::Tokens::SecurityContextSecurityToken ^ GetContext(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation);" />
+      <MemberSignature Language="F#" Value="abstract member GetContext : System.Xml.UniqueId * System.Xml.UniqueId -&gt; System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" Usage="iSecurityContextSecurityTokenCache.GetContext (contextId, generation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache.RemoveAllContexts(System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllContexts (contextId As UniqueId)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllContexts(System::Xml::UniqueId ^ contextId);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAllContexts : System.Xml.UniqueId -&gt; unit" Usage="iSecurityContextSecurityTokenCache.RemoveAllContexts contextId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache.RemoveContext(System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveContext (contextId As UniqueId, generation As UniqueId)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveContext(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveContext : System.Xml.UniqueId * System.Xml.UniqueId -&gt; unit" Usage="iSecurityContextSecurityTokenCache.RemoveContext (contextId, generation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache.TryAddContext(System.ServiceModel.Security.Tokens.SecurityContextSecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAddContext (token As SecurityContextSecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAddContext(System::ServiceModel::Security::Tokens::SecurityContextSecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="abstract member TryAddContext : System.ServiceModel.Security.Tokens.SecurityContextSecurityToken -&gt; bool" Usage="iSecurityContextSecurityTokenCache.TryAddContext token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -190,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ISecurityContextSecurityTokenCache.UpdateContextCachingTime(System.ServiceModel.Security.Tokens.SecurityContextSecurityToken,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateContextCachingTime (context As SecurityContextSecurityToken, expirationTime As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateContextCachingTime(System::ServiceModel::Security::Tokens::SecurityContextSecurityToken ^ context, DateTime expirationTime);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateContextCachingTime : System.ServiceModel.Security.Tokens.SecurityContextSecurityToken * DateTime -&gt; unit" Usage="iSecurityContextSecurityTokenCache.UpdateContextCachingTime (context, expirationTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

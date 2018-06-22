@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BindingManagerBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingManagerBase abstract" />
+  <TypeSignature Language="F#" Value="type BindingManagerBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.AddNew" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddNew ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddNew();" />
+      <MemberSignature Language="F#" Value="abstract member AddNew : unit -&gt; unit" Usage="bindingManagerBase.AddNew " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BindingComplete As BindingCompleteEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::BindingCompleteEventHandler ^ BindingComplete;" />
+      <MemberSignature Language="F#" Value="member this.BindingComplete : System.Windows.Forms.BindingCompleteEventHandler " Usage="member this.BindingComplete : System.Windows.Forms.BindingCompleteEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.Bindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindings As BindingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BindingsCollection ^ Bindings { System::Windows::Forms::BindingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bindings : System.Windows.Forms.BindingsCollection" Usage="System.Windows.Forms.BindingManagerBase.Bindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CancelCurrentEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CancelCurrentEdit();" />
+      <MemberSignature Language="F#" Value="abstract member CancelCurrentEdit : unit -&gt; unit" Usage="bindingManagerBase.CancelCurrentEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.Count" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.BindingManagerBase.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.Current" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Current As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : obj" Usage="System.Windows.Forms.BindingManagerBase.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -322,6 +329,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentChanged;" />
+      <MemberSignature Language="F#" Value="member this.CurrentChanged : EventHandler " Usage="member this.CurrentChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -363,6 +371,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentItemChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentItemChanged;" />
+      <MemberSignature Language="F#" Value="member this.CurrentItemChanged : EventHandler " Usage="member this.CurrentItemChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -402,6 +411,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.DataError" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataError As BindingManagerDataErrorEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::BindingManagerDataErrorEventHandler ^ DataError;" />
+      <MemberSignature Language="F#" Value="member this.DataError : System.Windows.Forms.BindingManagerDataErrorEventHandler " Usage="member this.DataError : System.Windows.Forms.BindingManagerDataErrorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -440,6 +450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.EndCurrentEdit" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndCurrentEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndCurrentEdit();" />
+      <MemberSignature Language="F#" Value="abstract member EndCurrentEdit : unit -&gt; unit" Usage="bindingManagerBase.EndCurrentEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -486,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.GetItemProperties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemProperties () As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties();" />
+      <MemberSignature Language="F#" Value="abstract member GetItemProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetItemProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="bindingManagerBase.GetItemProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -519,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.GetItemProperties(System.Collections.ArrayList,System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetItemProperties (dataSources As ArrayList, listAccessors As ArrayList) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties(System::Collections::ArrayList ^ dataSources, System::Collections::ArrayList ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="abstract member GetItemProperties : System.Collections.ArrayList * System.Collections.ArrayList -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetItemProperties : System.Collections.ArrayList * System.Collections.ArrayList -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="bindingManagerBase.GetItemProperties (dataSources, listAccessors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -553,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.GetItemProperties(System.Type,System.Int32,System.Collections.ArrayList,System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetItemProperties (listType As Type, offset As Integer, dataSources As ArrayList, listAccessors As ArrayList) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties(Type ^ listType, int offset, System::Collections::ArrayList ^ dataSources, System::Collections::ArrayList ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="abstract member GetItemProperties : Type * int * System.Collections.ArrayList * System.Collections.ArrayList -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetItemProperties : Type * int * System.Collections.ArrayList * System.Collections.ArrayList -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="bindingManagerBase.GetItemProperties (listType, offset, dataSources, listAccessors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -600,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.GetListName(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetListName (listAccessors As ArrayList) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::String ^ GetListName(System::Collections::ArrayList ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="abstract member GetListName : System.Collections.ArrayList -&gt; string" Usage="bindingManagerBase.GetListName listAccessors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -624,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.IsBindingSuspended" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBindingSuspended As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBindingSuspended { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBindingSuspended : bool" Usage="System.Windows.Forms.BindingManagerBase.IsBindingSuspended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -645,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub OnBindingComplete (args As BindingCompleteEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void OnBindingComplete(System::Windows::Forms::BindingCompleteEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="member this.OnBindingComplete : System.Windows.Forms.BindingCompleteEventArgs -&gt; unit" Usage="bindingManagerBase.OnBindingComplete args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -680,6 +697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub OnCurrentChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void OnCurrentChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCurrentChanged : EventArgs -&gt; unit" Usage="bindingManagerBase.OnCurrentChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -719,6 +737,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BindingManagerBase.onCurrentChangedHandler" />
       <MemberSignature Language="VB.NET" Value="Protected onCurrentChangedHandler As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected: EventHandler ^ onCurrentChangedHandler;" />
+      <MemberSignature Language="F#" Value="val mutable onCurrentChangedHandler : EventHandler" Usage="System.Windows.Forms.BindingManagerBase.onCurrentChangedHandler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -739,6 +758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub OnCurrentItemChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void OnCurrentItemChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCurrentItemChanged : EventArgs -&gt; unit" Usage="bindingManagerBase.OnCurrentItemChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -777,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.OnDataError(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub OnDataError (e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void OnDataError(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnDataError : Exception -&gt; unit" Usage="bindingManagerBase.OnDataError e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -812,6 +833,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BindingManagerBase.onPositionChangedHandler" />
       <MemberSignature Language="VB.NET" Value="Protected onPositionChangedHandler As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected: EventHandler ^ onPositionChangedHandler;" />
+      <MemberSignature Language="F#" Value="val mutable onPositionChangedHandler : EventHandler" Usage="System.Windows.Forms.BindingManagerBase.onPositionChangedHandler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -832,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.Position" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Position As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Position { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : int with get, set" Usage="System.Windows.Forms.BindingManagerBase.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -873,6 +896,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PositionChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PositionChanged;" />
+      <MemberSignature Language="F#" Value="member this.PositionChanged : EventHandler " Usage="member this.PositionChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -908,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.PullData" />
       <MemberSignature Language="VB.NET" Value="Protected Sub PullData ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void PullData();" />
+      <MemberSignature Language="F#" Value="member this.PullData : unit -&gt; unit" Usage="bindingManagerBase.PullData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -939,6 +964,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.PushData" />
       <MemberSignature Language="VB.NET" Value="Protected Sub PushData ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void PushData();" />
+      <MemberSignature Language="F#" Value="member this.PushData : unit -&gt; unit" Usage="bindingManagerBase.PushData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -971,6 +997,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit" Usage="bindingManagerBase.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1013,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ResumeBinding ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ResumeBinding();" />
+      <MemberSignature Language="F#" Value="abstract member ResumeBinding : unit -&gt; unit" Usage="bindingManagerBase.ResumeBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1051,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.SuspendBinding" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SuspendBinding ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SuspendBinding();" />
+      <MemberSignature Language="F#" Value="abstract member SuspendBinding : unit -&gt; unit" Usage="bindingManagerBase.SuspendBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1089,6 +1118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub UpdateIsBinding ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void UpdateIsBinding();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateIsBinding : unit -&gt; unit" Usage="bindingManagerBase.UpdateIsBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.FilterTableCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class FilterTableCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilterTableCollection : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type FilterTableCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.FilterTableCollection.Add(System.ServiceModel.Routing.Configuration.FilterTableEntryCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As FilterTableEntryCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Routing::Configuration::FilterTableEntryCollection ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Routing.Configuration.FilterTableEntryCollection -&gt; unit" Usage="filterTableCollection.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.FilterTableCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="filterTableCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.FilterTableCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="filterTableCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.FilterTableCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="filterTableCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterTableCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As FilterTableEntryCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Routing::Configuration::FilterTableEntryCollection ^ default[System::String ^] { System::ServiceModel::Routing::Configuration::FilterTableEntryCollection ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.ServiceModel.Routing.Configuration.FilterTableEntryCollection" Usage="System.ServiceModel.Routing.Configuration.FilterTableCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.FilterTableCollection.Remove(System.ServiceModel.Routing.Configuration.FilterTableEntryCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As FilterTableEntryCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ServiceModel::Routing::Configuration::FilterTableEntryCollection ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.ServiceModel.Routing.Configuration.FilterTableEntryCollection -&gt; unit" Usage="filterTableCollection.Remove element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

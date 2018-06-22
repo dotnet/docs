@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ProjectCollection.ProjectAddedEventHandler(sender As Object, e As ProjectCollection.ProjectAddedToProjectCollectionEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ProjectCollection::ProjectAddedEventHandler(System::Object ^ sender, ProjectCollection::ProjectAddedToProjectCollectionEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ProjectCollection.ProjectAddedEventHandler = delegate of obj * ProjectCollection.ProjectAddedToProjectCollectionEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ProfileEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileEventArgs.#ctor(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileEventArgs(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.Profile.ProfileEventArgs : System.Web.HttpContext -&gt; System.Web.Profile.ProfileEventArgs" Usage="new System.Web.Profile.ProfileEventArgs context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Profile.ProfileEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileEventArgs.Profile" />
       <MemberSignature Language="VB.NET" Value="Public Property Profile As ProfileBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Profile::ProfileBase ^ Profile { System::Web::Profile::ProfileBase ^ get(); void set(System::Web::Profile::ProfileBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Profile : System.Web.Profile.ProfileBase with get, set" Usage="System.Web.Profile.ProfileEventArgs.Profile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

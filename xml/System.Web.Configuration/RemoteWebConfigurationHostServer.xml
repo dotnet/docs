@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RemoteWebConfigurationHostServer" />
   <TypeSignature Language="VB.NET" Value="Public Class RemoteWebConfigurationHostServer&#xA;Implements IRemoteWebConfigurationHostServer" />
   <TypeSignature Language="C++ CLI" Value="public ref class RemoteWebConfigurationHostServer : System::Web::Configuration::IRemoteWebConfigurationHostServer" />
+  <TypeSignature Language="F#" Value="type RemoteWebConfigurationHostServer = class&#xA;    interface IRemoteWebConfigurationHostServer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RemoteWebConfigurationHostServer.DoEncryptOrDecrypt(System.Boolean,System.String,System.String,System.String,System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function DoEncryptOrDecrypt (doEncrypt As Boolean, xmlString As String, protectionProviderName As String, protectionProviderType As String, paramKeys As String(), paramValues As String()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ DoEncryptOrDecrypt(bool doEncrypt, System::String ^ xmlString, System::String ^ protectionProviderName, System::String ^ protectionProviderType, cli::array &lt;System::String ^&gt; ^ paramKeys, cli::array &lt;System::String ^&gt; ^ paramValues);" />
+      <MemberSignature Language="F#" Value="abstract member DoEncryptOrDecrypt : bool * string * string * string * string[] * string[] -&gt; string&#xA;override this.DoEncryptOrDecrypt : bool * string * string * string * string[] * string[] -&gt; string" Usage="remoteWebConfigurationHostServer.DoEncryptOrDecrypt (doEncrypt, xmlString, protectionProviderName, protectionProviderType, paramKeys, paramValues)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.DoEncryptOrDecrypt(System.Boolean,System.String,System.String,System.String,System.String[],System.String[])</InterfaceMember>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (fileName As String, getReadTimeOnly As Boolean, ByRef readTime As Long) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetData(System::String ^ fileName, bool getReadTimeOnly, [Runtime::InteropServices::Out] long % readTime);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : string * bool *  -&gt; byte[]&#xA;override this.GetData : string * bool *  -&gt; byte[]" Usage="remoteWebConfigurationHostServer.GetData (fileName, getReadTimeOnly, readTime)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64@)</InterfaceMember>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean@,System.Int64@,System.Int64@,System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetFileDetails (name As String, ByRef exists As Boolean, ByRef size As Long, ByRef createDate As Long, ByRef lastWriteDate As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetFileDetails(System::String ^ name, [Runtime::InteropServices::Out] bool % exists, [Runtime::InteropServices::Out] long % size, [Runtime::InteropServices::Out] long % createDate, [Runtime::InteropServices::Out] long % lastWriteDate);" />
+      <MemberSignature Language="F#" Value="abstract member GetFileDetails : string *  *  *  *  -&gt; unit&#xA;override this.GetFileDetails : string *  *  *  *  -&gt; unit" Usage="remoteWebConfigurationHostServer.GetFileDetails (name, exists, size, createDate, lastWriteDate)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean@,System.Int64@,System.Int64@,System.Int64@)</InterfaceMember>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RemoteWebConfigurationHostServer.GetFilePaths(System.Int32,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFilePaths (webLevelAsInt As Integer, path As String, site As String, locationSubPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFilePaths(int webLevelAsInt, System::String ^ path, System::String ^ site, System::String ^ locationSubPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetFilePaths : int * string * string * string -&gt; string&#xA;override this.GetFilePaths : int * string * string * string -&gt; string" Usage="remoteWebConfigurationHostServer.GetFilePaths (webLevelAsInt, path, site, locationSubPath)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFilePaths(System.Int32,System.String,System.String,System.String)</InterfaceMember>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteData (fileName As String, templateFileName As String, data As Byte(), ByRef readTime As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteData(System::String ^ fileName, System::String ^ templateFileName, cli::array &lt;System::Byte&gt; ^ data, long % readTime);" />
+      <MemberSignature Language="F#" Value="abstract member WriteData : string * string * byte[] *  -&gt; unit&#xA;override this.WriteData : string * string * byte[] *  -&gt; unit" Usage="remoteWebConfigurationHostServer.WriteData (fileName, templateFileName, data, readTime)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64@)</InterfaceMember>

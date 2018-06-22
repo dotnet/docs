@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.ReservationCollection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ReservationCollection&#xA;Implements ICollection(Of Long), IEnumerable(Of Long)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReservationCollection abstract : System::Collections::Generic::ICollection&lt;long&gt;, System::Collections::Generic::IEnumerable&lt;long&gt;" />
+  <TypeSignature Language="F#" Value="type ReservationCollection = class&#xA;    interface ICollection&lt;int64&gt;&#xA;    interface seq&lt;int64&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.Add(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (size As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(long size);" />
+      <MemberSignature Language="F#" Value="abstract member Add : int64 -&gt; unit&#xA;override this.Add : int64 -&gt; unit" Usage="reservationCollection.Add size" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -164,6 +166,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="reservationCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -194,6 +197,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.Contains(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (size As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(long size);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : int64 -&gt; bool&#xA;override this.Contains : int64 -&gt; bool" Usage="reservationCollection.Contains size" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -225,6 +229,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.CopyTo(System.Int64[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Long(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;long&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : int64[] * int -&gt; unit&#xA;override this.CopyTo : int64[] * int -&gt; unit" Usage="reservationCollection.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -262,6 +267,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="P:System.IO.Log.ReservationCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.IO.Log.ReservationCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -285,6 +291,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ReservationCollection ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="reservationCollection.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -305,6 +312,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.FreeReservation(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub FreeReservation (size As Long)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void FreeReservation(long size);" />
+      <MemberSignature Language="F#" Value="abstract member FreeReservation : int64 -&gt; unit" Usage="reservationCollection.FreeReservation size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -333,6 +341,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.GetBestMatchingReservation(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetBestMatchingReservation (size As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; long GetBestMatchingReservation(long size);" />
+      <MemberSignature Language="F#" Value="member this.GetBestMatchingReservation : int64 -&gt; int64" Usage="reservationCollection.GetBestMatchingReservation size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -364,6 +373,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;long&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;int64&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;int64&gt;" Usage="reservationCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -398,6 +408,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="P:System.IO.Log.ReservationCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.IO.Log.ReservationCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -428,6 +439,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.MakeReservation(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub MakeReservation (size As Long)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void MakeReservation(long size);" />
+      <MemberSignature Language="F#" Value="abstract member MakeReservation : int64 -&gt; unit" Usage="reservationCollection.MakeReservation size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -454,6 +466,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.Remove(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(long item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : int64 -&gt; bool&#xA;override this.Remove : int64 -&gt; bool" Usage="reservationCollection.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -511,6 +524,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.ReservationFreed(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ReservationFreed (size As Long)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ReservationFreed(long size);" />
+      <MemberSignature Language="F#" Value="member this.ReservationFreed : int64 -&gt; unit" Usage="reservationCollection.ReservationFreed size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -541,6 +555,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberSignature Language="DocId" Value="M:System.IO.Log.ReservationCollection.ReservationMade(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ReservationMade (size As Long)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ReservationMade(long size);" />
+      <MemberSignature Language="F#" Value="member this.ReservationMade : int64 -&gt; unit" Usage="reservationCollection.ReservationMade size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

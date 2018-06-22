@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Argument" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Argument" />
   <TypeSignature Language="C++ CLI" Value="public ref class Argument abstract" />
+  <TypeSignature Language="F#" Value="type Argument = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Argument.ArgumentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgumentType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ArgumentType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArgumentType : Type" Usage="System.Activities.Argument.ArgumentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Argument Create(class System.Type type, valuetype System.Activities.ArgumentDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.Create(System.Type,System.Activities.ArgumentDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Argument ^ Create(Type ^ type, System::Activities::ArgumentDirection direction);" />
+      <MemberSignature Language="F#" Value="static member Create : Type * System.Activities.ArgumentDirection -&gt; System.Activities.Argument" Usage="System.Activities.Argument.Create (type, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.CreateReference(System.Activities.Argument,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReference (argumentToReference As Argument, referencedArgumentName As String) As Argument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Argument ^ CreateReference(System::Activities::Argument ^ argumentToReference, System::String ^ referencedArgumentName);" />
+      <MemberSignature Language="F#" Value="static member CreateReference : System.Activities.Argument * string -&gt; System.Activities.Argument" Usage="System.Activities.Argument.CreateReference (argumentToReference, referencedArgumentName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Argument.Direction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As ArgumentDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ArgumentDirection Direction { System::Activities::ArgumentDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Activities.ArgumentDirection" Usage="System.Activities.Argument.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Argument.EvaluationOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property EvaluationOrder As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EvaluationOrder { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluationOrder : int with get, set" Usage="System.Activities.Argument.EvaluationOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Argument.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As ActivityWithResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityWithResult ^ Expression { System::Activities::ActivityWithResult ^ get(); void set(System::Activities::ActivityWithResult ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Activities.ActivityWithResult with get, set" Usage="System.Activities.Argument.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.Get(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Get(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Get : System.Activities.ActivityContext -&gt; obj" Usage="argument.Get context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -199,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.Get``1(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get(Of T) (context As ActivityContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Get(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Get : System.Activities.ActivityContext -&gt; 'T" Usage="argument.Get context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -227,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.GetLocation(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocation (context As ActivityContext) As Location" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Location ^ GetLocation(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.GetLocation : System.Activities.ActivityContext -&gt; System.Activities.Location" Usage="argument.GetLocation context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -251,6 +261,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Argument.ResultValue" />
       <MemberSignature Language="VB.NET" Value="Public Const ResultValue As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ResultValue;" />
+      <MemberSignature Language="F#" Value="val mutable ResultValue : string" Usage="System.Activities.Argument.ResultValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.Set(System.Activities.ActivityContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Set : System.Activities.ActivityContext * obj -&gt; unit" Usage="argument.Set (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -302,6 +314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Argument.UnspecifiedEvaluationOrder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnspecifiedEvaluationOrder As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly int UnspecifiedEvaluationOrder;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnspecifiedEvaluationOrder : int" Usage="System.Activities.Argument.UnspecifiedEvaluationOrder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

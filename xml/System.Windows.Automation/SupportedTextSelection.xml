@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SupportedTextSelection" />
   <TypeSignature Language="VB.NET" Value="Public Enum SupportedTextSelection" />
   <TypeSignature Language="C++ CLI" Value="public enum class SupportedTextSelection" />
+  <TypeSignature Language="F#" Value="type SupportedTextSelection = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SupportedTextSelection.Multiple" />
       <MemberSignature Language="VB.NET" Value="Multiple" />
       <MemberSignature Language="C++ CLI" Value="Multiple" />
+      <MemberSignature Language="F#" Value="Multiple = 2" Usage="System.Windows.Automation.SupportedTextSelection.Multiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SupportedTextSelection.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Automation.SupportedTextSelection.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SupportedTextSelection.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 1" Usage="System.Windows.Automation.SupportedTextSelection.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.GenericAce" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class GenericAce" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenericAce abstract" />
+  <TypeSignature Language="F#" Value="type GenericAce = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AceFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property AceFlags As AceFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::AceFlags AceFlags { System::Security::AccessControl::AceFlags get(); void set(System::Security::AccessControl::AceFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.AceFlags : System.Security.AccessControl.AceFlags with get, set" Usage="System.Security.AccessControl.GenericAce.AceFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AceType As AceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::AceType AceType { System::Security::AccessControl::AceType get(); };" />
+      <MemberSignature Language="F#" Value="member this.AceType : System.Security.AccessControl.AceType" Usage="System.Security.AccessControl.GenericAce.AceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AuditFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuditFlags As AuditFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::AuditFlags AuditFlags { System::Security::AccessControl::AuditFlags get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuditFlags : System.Security.AccessControl.AuditFlags" Usage="System.Security.AccessControl.GenericAce.AuditFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.BinaryLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BinaryLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int BinaryLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinaryLength : int" Usage="System.Security.AccessControl.GenericAce.BinaryLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As GenericAce" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::GenericAce ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; System.Security.AccessControl.GenericAce" Usage="genericAce.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromBinaryForm (binaryForm As Byte(), offset As Integer) As GenericAce" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::AccessControl::GenericAce ^ CreateFromBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
+      <MemberSignature Language="F#" Value="static member CreateFromBinaryForm : byte[] * int -&gt; System.Security.AccessControl.GenericAce" Usage="System.Security.AccessControl.GenericAce.CreateFromBinaryForm (binaryForm, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="genericAce.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub GetBinaryForm (binaryForm As Byte(), offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GetBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
+      <MemberSignature Language="F#" Value="abstract member GetBinaryForm : byte[] * int -&gt; unit" Usage="genericAce.GetBinaryForm (binaryForm, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="genericAce.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -297,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.InheritanceFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritanceFlags As InheritanceFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::InheritanceFlags InheritanceFlags { System::Security::AccessControl::InheritanceFlags get(); };" />
+      <MemberSignature Language="F#" Value="member this.InheritanceFlags : System.Security.AccessControl.InheritanceFlags" Usage="System.Security.AccessControl.GenericAce.InheritanceFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.IsInherited" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInherited As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInherited { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInherited : bool" Usage="System.Security.AccessControl.GenericAce.IsInherited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -350,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Equality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As GenericAce, right As GenericAce) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::AccessControl::GenericAce ^ left, System::Security::AccessControl::GenericAce ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Security.AccessControl.GenericAce * System.Security.AccessControl.GenericAce -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -385,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Inequality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As GenericAce, right As GenericAce) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::AccessControl::GenericAce ^ left, System::Security::AccessControl::GenericAce ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Security.AccessControl.GenericAce * System.Security.AccessControl.GenericAce -&gt; bool" Usage="System.Security.AccessControl.GenericAce.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -420,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.PropagationFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropagationFlags As PropagationFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::PropagationFlags PropagationFlags { System::Security::AccessControl::PropagationFlags get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropagationFlags : System.Security.AccessControl.PropagationFlags" Usage="System.Security.AccessControl.GenericAce.PropagationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

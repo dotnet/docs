@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.OpCode" />
   <TypeSignature Language="VB.NET" Value="Public Structure OpCode" />
   <TypeSignature Language="C++ CLI" Value="public value class OpCode" />
+  <TypeSignature Language="F#" Value="type OpCode = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCode.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="opCode.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCode.Equals(System.Reflection.Emit.OpCode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As OpCode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Reflection::Emit::OpCode obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Emit.OpCode -&gt; bool" Usage="opCode.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.OpCode.FlowControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FlowControl As FlowControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::FlowControl FlowControl { System::Reflection::Emit::FlowControl get(); };" />
+      <MemberSignature Language="F#" Value="member this.FlowControl : System.Reflection.Emit.FlowControl" Usage="System.Reflection.Emit.OpCode.FlowControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCode.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="opCode.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.OpCode.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Emit.OpCode.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCode.op_Equality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As OpCode, b As OpCode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Emit::OpCode a, System::Reflection::Emit::OpCode b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Emit.OpCode * System.Reflection.Emit.OpCode -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCode.op_Inequality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As OpCode, b As OpCode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Emit::OpCode a, System::Reflection::Emit::OpCode b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Emit.OpCode * System.Reflection.Emit.OpCode -&gt; bool" Usage="System.Reflection.Emit.OpCode.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.OpCode.OpCodeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpCodeType As OpCodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::OpCodeType OpCodeType { System::Reflection::Emit::OpCodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpCodeType : System.Reflection.Emit.OpCodeType" Usage="System.Reflection.Emit.OpCode.OpCodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -333,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.OpCode.OperandType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperandType As OperandType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::OperandType OperandType { System::Reflection::Emit::OperandType get(); };" />
+      <MemberSignature Language="F#" Value="member this.OperandType : System.Reflection.Emit.OperandType" Usage="System.Reflection.Emit.OpCode.OperandType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -364,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.OpCode.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.Reflection.Emit.OpCode.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -395,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.OpCode.StackBehaviourPop" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StackBehaviourPop As StackBehaviour" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::StackBehaviour StackBehaviourPop { System::Reflection::Emit::StackBehaviour get(); };" />
+      <MemberSignature Language="F#" Value="member this.StackBehaviourPop : System.Reflection.Emit.StackBehaviour" Usage="System.Reflection.Emit.OpCode.StackBehaviourPop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -426,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.OpCode.StackBehaviourPush" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StackBehaviourPush As StackBehaviour" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::StackBehaviour StackBehaviourPush { System::Reflection::Emit::StackBehaviour get(); };" />
+      <MemberSignature Language="F#" Value="member this.StackBehaviourPush : System.Reflection.Emit.StackBehaviour" Usage="System.Reflection.Emit.OpCode.StackBehaviourPush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -457,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCode.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="opCode.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -489,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.OpCode.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Value { short get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int16" Usage="System.Reflection.Emit.OpCode.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

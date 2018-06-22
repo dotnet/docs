@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsProtectionEnum" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormsProtectionEnum" />
   <TypeSignature Language="C++ CLI" Value="public enum class FormsProtectionEnum" />
+  <TypeSignature Language="F#" Value="type FormsProtectionEnum = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Web.Configuration.FormsProtectionEnum.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.Encryption" />
       <MemberSignature Language="VB.NET" Value="Encryption" />
       <MemberSignature Language="C++ CLI" Value="Encryption" />
+      <MemberSignature Language="F#" Value="Encryption = 2" Usage="System.Web.Configuration.FormsProtectionEnum.Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Web.Configuration.FormsProtectionEnum.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.Validation" />
       <MemberSignature Language="VB.NET" Value="Validation" />
       <MemberSignature Language="C++ CLI" Value="Validation" />
+      <MemberSignature Language="F#" Value="Validation = 3" Usage="System.Web.Configuration.FormsProtectionEnum.Validation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

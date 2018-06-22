@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EntityReference`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityReference(Of TEntity)&#xA;Inherits EntityReference" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic ref class EntityReference sealed : System::Data::Objects::DataClasses::EntityReference" />
+  <TypeSignature Language="F#" Value="type EntityReference&lt;'Entity (requires 'Entity : null)&gt; = class&#xA;    inherit EntityReference" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.Attach(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(TEntity entity);" />
+      <MemberSignature Language="F#" Value="override this.Attach : 'Entity -&gt; unit" Usage="entityReference.Attach entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.CreateSourceQuery" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSourceQuery () As ObjectQuery(Of TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;TEntity&gt; ^ CreateSourceQuery();" />
+      <MemberSignature Language="F#" Value="override this.CreateSourceQuery : unit -&gt; System.Data.Objects.ObjectQuery&lt;'Entity (requires 'Entity : null)&gt;" Usage="entityReference.CreateSourceQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.Load(System.Data.Objects.MergeOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Load(System::Data::Objects::MergeOption mergeOption);" />
+      <MemberSignature Language="F#" Value="override this.Load : System.Data.Objects.MergeOption -&gt; unit" Usage="entityReference.Load mergeOption" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -197,6 +201,7 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.OnRefDeserialized(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnRefDeserialized (context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnRefDeserialized(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="member this.OnRefDeserialized : System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="entityReference.OnRefDeserialized context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -231,6 +236,7 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.OnSerializing(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSerializing (context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSerializing(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="member this.OnSerializing : System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="entityReference.OnSerializing context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -265,6 +271,7 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityReference`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As TEntity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TEntity Value { TEntity get(); void set(TEntity value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'Entity with get, set" Usage="System.Data.Objects.DataClasses.EntityReference&lt;'Entity (requires 'Entity : null)&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

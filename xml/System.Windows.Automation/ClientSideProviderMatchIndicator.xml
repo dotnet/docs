@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSideProviderMatchIndicator" />
   <TypeSignature Language="VB.NET" Value="Public Enum ClientSideProviderMatchIndicator" />
   <TypeSignature Language="C++ CLI" Value="public enum class ClientSideProviderMatchIndicator" />
+  <TypeSignature Language="F#" Value="type ClientSideProviderMatchIndicator = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ClientSideProviderMatchIndicator.AllowSubstringMatch" />
       <MemberSignature Language="VB.NET" Value="AllowSubstringMatch" />
       <MemberSignature Language="C++ CLI" Value="AllowSubstringMatch" />
+      <MemberSignature Language="F#" Value="AllowSubstringMatch = 1" Usage="System.Windows.Automation.ClientSideProviderMatchIndicator.AllowSubstringMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ClientSideProviderMatchIndicator.DisallowBaseClassNameMatch" />
       <MemberSignature Language="VB.NET" Value="DisallowBaseClassNameMatch" />
       <MemberSignature Language="C++ CLI" Value="DisallowBaseClassNameMatch" />
+      <MemberSignature Language="F#" Value="DisallowBaseClassNameMatch = 2" Usage="System.Windows.Automation.ClientSideProviderMatchIndicator.DisallowBaseClassNameMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ClientSideProviderMatchIndicator.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Automation.ClientSideProviderMatchIndicator.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

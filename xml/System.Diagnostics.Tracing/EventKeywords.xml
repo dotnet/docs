@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventKeywords" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventKeywords" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventKeywords" />
+  <TypeSignature Language="F#" Value="type EventKeywords = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = -1" Usage="System.Diagnostics.Tracing.EventKeywords.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.AuditFailure" />
       <MemberSignature Language="VB.NET" Value="AuditFailure" />
       <MemberSignature Language="C++ CLI" Value="AuditFailure" />
+      <MemberSignature Language="F#" Value="AuditFailure = 4503599627370496" Usage="System.Diagnostics.Tracing.EventKeywords.AuditFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.AuditSuccess" />
       <MemberSignature Language="VB.NET" Value="AuditSuccess" />
       <MemberSignature Language="C++ CLI" Value="AuditSuccess" />
+      <MemberSignature Language="F#" Value="AuditSuccess = 9007199254740992" Usage="System.Diagnostics.Tracing.EventKeywords.AuditSuccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.CorrelationHint" />
       <MemberSignature Language="VB.NET" Value="CorrelationHint" />
       <MemberSignature Language="C++ CLI" Value="CorrelationHint" />
+      <MemberSignature Language="F#" Value="CorrelationHint = 4503599627370496" Usage="System.Diagnostics.Tracing.EventKeywords.CorrelationHint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.EventLogClassic" />
       <MemberSignature Language="VB.NET" Value="EventLogClassic" />
       <MemberSignature Language="C++ CLI" Value="EventLogClassic" />
+      <MemberSignature Language="F#" Value="EventLogClassic = 36028797018963968" Usage="System.Diagnostics.Tracing.EventKeywords.EventLogClassic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.MicrosoftTelemetry" />
       <MemberSignature Language="VB.NET" Value="MicrosoftTelemetry" />
       <MemberSignature Language="C++ CLI" Value="MicrosoftTelemetry" />
+      <MemberSignature Language="F#" Value="MicrosoftTelemetry = 562949953421312" Usage="System.Diagnostics.Tracing.EventKeywords.MicrosoftTelemetry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.Tracing.EventKeywords.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.Sqm" />
       <MemberSignature Language="VB.NET" Value="Sqm" />
       <MemberSignature Language="C++ CLI" Value="Sqm" />
+      <MemberSignature Language="F#" Value="Sqm = 2251799813685248" Usage="System.Diagnostics.Tracing.EventKeywords.Sqm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -314,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.WdiContext" />
       <MemberSignature Language="VB.NET" Value="WdiContext" />
       <MemberSignature Language="C++ CLI" Value="WdiContext" />
+      <MemberSignature Language="F#" Value="WdiContext = 562949953421312" Usage="System.Diagnostics.Tracing.EventKeywords.WdiContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -347,6 +357,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.WdiDiagnostic" />
       <MemberSignature Language="VB.NET" Value="WdiDiagnostic" />
       <MemberSignature Language="C++ CLI" Value="WdiDiagnostic" />
+      <MemberSignature Language="F#" Value="WdiDiagnostic = 1125899906842624" Usage="System.Diagnostics.Tracing.EventKeywords.WdiDiagnostic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

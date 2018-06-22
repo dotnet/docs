@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.SoapServerTlb" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapServerTlb&#xA;Implements ISoapServerTlb" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapServerTlb sealed : System::EnterpriseServices::Internal::ISoapServerTlb" />
+  <TypeSignature Language="F#" Value="type SoapServerTlb = class&#xA;    interface ISoapServerTlb" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddServerTlb (progId As String, classId As String, interfaceId As String, srcTlbPath As String, rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, clientActivated As String, wellKnown As String, discoFile As String, operation As String, ByRef strAssemblyName As String, ByRef typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddServerTlb(System::String ^ progId, System::String ^ classId, System::String ^ interfaceId, System::String ^ srcTlbPath, System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, System::String ^ clientActivated, System::String ^ wellKnown, System::String ^ discoFile, System::String ^ operation, [Runtime::InteropServices::Out] System::String ^ % strAssemblyName, [Runtime::InteropServices::Out] System::String ^ % typeName);" />
+      <MemberSignature Language="F#" Value="abstract member AddServerTlb : string * string * string * string * string * string * string * string * string * string * string *  *  -&gt; unit&#xA;override this.AddServerTlb : string * string * string * string * string * string * string * string * string * string * string *  *  -&gt; unit" Usage="soapServerTlb.AddServerTlb (progId, classId, interfaceId, srcTlbPath, rootWebServer, inBaseUrl, inVirtualRoot, clientActivated, wellKnown, discoFile, operation, strAssemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)</InterfaceMember>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapServerTlb.DeleteServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteServerTlb (progId As String, classId As String, interfaceId As String, srcTlbPath As String, rootWebServer As String, baseUrl As String, virtualRoot As String, operation As String, assemblyName As String, typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteServerTlb(System::String ^ progId, System::String ^ classId, System::String ^ interfaceId, System::String ^ srcTlbPath, System::String ^ rootWebServer, System::String ^ baseUrl, System::String ^ virtualRoot, System::String ^ operation, System::String ^ assemblyName, System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteServerTlb : string * string * string * string * string * string * string * string * string * string -&gt; unit&#xA;override this.DeleteServerTlb : string * string * string * string * string * string * string * string * string * string -&gt; unit" Usage="soapServerTlb.DeleteServerTlb (progId, classId, interfaceId, srcTlbPath, rootWebServer, baseUrl, virtualRoot, operation, assemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapServerTlb.DeleteServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>

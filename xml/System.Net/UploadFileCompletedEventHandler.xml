@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.UploadFileCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub UploadFileCompletedEventHandler(sender As Object, e As UploadFileCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void UploadFileCompletedEventHandler(System::Object ^ sender, UploadFileCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type UploadFileCompletedEventHandler = delegate of obj * UploadFileCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

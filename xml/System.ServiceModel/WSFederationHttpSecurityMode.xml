@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSFederationHttpSecurityMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum WSFederationHttpSecurityMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class WSFederationHttpSecurityMode" />
+  <TypeSignature Language="F#" Value="type WSFederationHttpSecurityMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSFederationHttpSecurityMode.Message" />
       <MemberSignature Language="VB.NET" Value="Message" />
       <MemberSignature Language="C++ CLI" Value="Message" />
+      <MemberSignature Language="F#" Value="Message = 1" Usage="System.ServiceModel.WSFederationHttpSecurityMode.Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSFederationHttpSecurityMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.WSFederationHttpSecurityMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential" />
       <MemberSignature Language="VB.NET" Value="TransportWithMessageCredential" />
       <MemberSignature Language="C++ CLI" Value="TransportWithMessageCredential" />
+      <MemberSignature Language="F#" Value="TransportWithMessageCredential = 2" Usage="System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

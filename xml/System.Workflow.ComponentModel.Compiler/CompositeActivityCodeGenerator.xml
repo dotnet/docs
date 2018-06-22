@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositeActivityCodeGenerator&#xA;Inherits ActivityCodeGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositeActivityCodeGenerator : System::Workflow::ComponentModel::Compiler::ActivityCodeGenerator" />
+  <TypeSignature Language="F#" Value="type CompositeActivityCodeGenerator = class&#xA;    inherit ActivityCodeGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator.GenerateCode(System.Workflow.ComponentModel.Compiler.CodeGenerationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateCode (manager As CodeGenerationManager, obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Workflow::ComponentModel::Compiler::CodeGenerationManager ^ manager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GenerateCode : System.Workflow.ComponentModel.Compiler.CodeGenerationManager * obj -&gt; unit" Usage="compositeActivityCodeGenerator.GenerateCode (manager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterInstaller" />
   <TypeSignature Language="VB.NET" Value="Public Class PerformanceCounterInstaller&#xA;Inherits ComponentInstaller" />
   <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounterInstaller : System::Configuration::Install::ComponentInstaller" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterInstaller = class&#xA;    inherit ComponentInstaller" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterInstaller.CategoryHelp" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryHelp As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryHelp { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryHelp : string with get, set" Usage="System.Diagnostics.PerformanceCounterInstaller.CategoryHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterInstaller.CategoryName" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryName : string with get, set" Usage="System.Diagnostics.PerformanceCounterInstaller.CategoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterInstaller.CategoryType" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryType As PerformanceCounterCategoryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterCategoryType CategoryType { System::Diagnostics::PerformanceCounterCategoryType get(); void set(System::Diagnostics::PerformanceCounterCategoryType value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryType : System.Diagnostics.PerformanceCounterCategoryType with get, set" Usage="System.Diagnostics.PerformanceCounterInstaller.CategoryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterInstaller.CopyFromComponent(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFromComponent (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFromComponent(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.CopyFromComponent : System.ComponentModel.IComponent -&gt; unit" Usage="performanceCounterInstaller.CopyFromComponent component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterInstaller.Counters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Counters As CounterCreationDataCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::CounterCreationDataCollection ^ Counters { System::Diagnostics::CounterCreationDataCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Counters : System.Diagnostics.CounterCreationDataCollection" Usage="System.Diagnostics.PerformanceCounterInstaller.Counters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterInstaller.Install(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Install (stateSaver As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Install(System::Collections::IDictionary ^ stateSaver);" />
+      <MemberSignature Language="F#" Value="override this.Install : System.Collections.IDictionary -&gt; unit" Usage="performanceCounterInstaller.Install stateSaver" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -244,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterInstaller.Rollback(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Rollback : System.Collections.IDictionary -&gt; unit" Usage="performanceCounterInstaller.Rollback savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterInstaller.Uninstall(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Uninstall (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Uninstall(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Uninstall : System.Collections.IDictionary -&gt; unit" Usage="performanceCounterInstaller.Uninstall savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -290,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterInstaller.UninstallAction" />
       <MemberSignature Language="VB.NET" Value="Public Property UninstallAction As UninstallAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Install::UninstallAction UninstallAction { System::Configuration::Install::UninstallAction get(); void set(System::Configuration::Install::UninstallAction value); };" />
+      <MemberSignature Language="F#" Value="member this.UninstallAction : System.Configuration.Install.UninstallAction with get, set" Usage="System.Diagnostics.PerformanceCounterInstaller.UninstallAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

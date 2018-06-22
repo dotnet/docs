@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.DeviceFilterElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeviceFilterElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeviceFilterElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type DeviceFilterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElement.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, compareName As String, argument As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceFilterElement(System::String ^ name, System::String ^ compareName, System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="new System.Web.Mobile.DeviceFilterElement : string * string * string -&gt; System.Web.Mobile.DeviceFilterElement" Usage="new System.Web.Mobile.DeviceFilterElement (name, compareName, argument)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElement.#ctor(System.String,System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, filterClass As Type, method As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceFilterElement(System::String ^ name, Type ^ filterClass, System::String ^ method);" />
+      <MemberSignature Language="F#" Value="new System.Web.Mobile.DeviceFilterElement : string * Type * string -&gt; System.Web.Mobile.DeviceFilterElement" Usage="new System.Web.Mobile.DeviceFilterElement (name, filterClass, method)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Argument" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Argument { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument : string with get, set" Usage="System.Web.Mobile.DeviceFilterElement.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Compare" />
       <MemberSignature Language="VB.NET" Value="Public Property Compare As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Compare { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Compare : string with get, set" Usage="System.Web.Mobile.DeviceFilterElement.Compare" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.ElementProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementProperty : System.Configuration.ConfigurationElementProperty" Usage="System.Web.Mobile.DeviceFilterElement.ElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.FilterClass" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterClass As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ FilterClass { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterClass : Type with get, set" Usage="System.Web.Mobile.DeviceFilterElement.FilterClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Method" />
       <MemberSignature Language="VB.NET" Value="Public Property Method As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.Web.Mobile.DeviceFilterElement.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -268,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.Mobile.DeviceFilterElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Mobile.DeviceFilterElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

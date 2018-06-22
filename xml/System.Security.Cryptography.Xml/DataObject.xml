@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.DataObject" />
   <TypeSignature Language="VB.NET" Value="Public Class DataObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataObject" />
+  <TypeSignature Language="F#" Value="type DataObject = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -103,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataObject.#ctor(System.String,System.String,System.String,System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, mimeType As String, encoding As String, data As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObject(System::String ^ id, System::String ^ mimeType, System::String ^ encoding, System::Xml::XmlElement ^ data);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.DataObject : string * string * string * System.Xml.XmlElement -&gt; System.Security.Cryptography.Xml.DataObject" Usage="new System.Security.Cryptography.Xml.DataObject (id, mimeType, encoding, data)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DataObject.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As XmlNodeList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNodeList ^ Data { System::Xml::XmlNodeList ^ get(); void set(System::Xml::XmlNodeList ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : System.Xml.XmlNodeList with get, set" Usage="System.Security.Cryptography.Xml.DataObject.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DataObject.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="System.Security.Cryptography.Xml.DataObject.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -219,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataObject.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="member this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="dataObject.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DataObject.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Security.Cryptography.Xml.DataObject.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -297,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataObject.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
+      <MemberSignature Language="F#" Value="member this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="dataObject.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -332,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DataObject.MimeType" />
       <MemberSignature Language="VB.NET" Value="Public Property MimeType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MimeType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MimeType : string with get, set" Usage="System.Security.Cryptography.Xml.DataObject.MimeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

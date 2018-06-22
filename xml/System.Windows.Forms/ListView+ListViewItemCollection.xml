@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView.ListViewItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ListView.ListViewItemCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ListView::ListViewItemCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type ListView.ListViewItemCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.#ctor(System.Windows.Forms.ListView)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ListView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItemCollection(System::Windows::Forms::ListView ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ListView.ListViewItemCollection : System.Windows.Forms.ListView -&gt; System.Windows.Forms.ListView.ListViewItemCollection" Usage="new System.Windows.Forms.ListView.ListViewItemCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (text As String) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ListViewItem ^ Add(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; System.Windows.Forms.ListViewItem&#xA;override this.Add : string -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Add text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.Windows.Forms.ListViewItem)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (value As ListViewItem) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ListViewItem ^ Add(System::Windows::Forms::ListViewItem ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Forms.ListViewItem -&gt; System.Windows.Forms.ListViewItem&#xA;override this.Add : System.Windows.Forms.ListViewItem -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (text As String, imageIndex As Integer) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ListViewItem ^ Add(System::String ^ text, int imageIndex);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * int -&gt; System.Windows.Forms.ListViewItem&#xA;override this.Add : string * int -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Add (text, imageIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (text As String, imageKey As String) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ListViewItem ^ Add(System::String ^ text, System::String ^ imageKey);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; System.Windows.Forms.ListViewItem&#xA;override this.Add : string * string -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Add (text, imageKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (key As String, text As String, imageIndex As Integer) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ListViewItem ^ Add(System::String ^ key, System::String ^ text, int imageIndex);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * int -&gt; System.Windows.Forms.ListViewItem&#xA;override this.Add : string * string * int -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Add (key, text, imageIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (key As String, text As String, imageKey As String) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ListViewItem ^ Add(System::String ^ key, System::String ^ text, System::String ^ imageKey);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * string -&gt; System.Windows.Forms.ListViewItem&#xA;override this.Add : string * string * string -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Add (key, text, imageKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListView.ListViewItemCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (items As ListView.ListViewItemCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Windows::Forms::ListView::ListViewItemCollection ^ items);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ListView.ListViewItemCollection -&gt; unit" Usage="listViewItemCollection.AddRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -352,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (items As ListViewItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Windows::Forms::ListViewItem ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ListViewItem[] -&gt; unit" Usage="listViewItemCollection.AddRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -416,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="listViewItemCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -448,6 +459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Contains(System.Windows.Forms.ListViewItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As ListViewItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::ListViewItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.ListViewItem -&gt; bool" Usage="listViewItemCollection.Contains item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -481,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="listViewItemCollection.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -513,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (dest As Array, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ dest, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="listViewItemCollection.CopyTo (dest, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -548,6 +562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.ListView.ListViewItemCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -583,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Find(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (key As String, searchAllSubItems As Boolean) As ListViewItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Forms::ListViewItem ^&gt; ^ Find(System::String ^ key, bool searchAllSubItems);" />
+      <MemberSignature Language="F#" Value="member this.Find : string * bool -&gt; System.Windows.Forms.ListViewItem[]" Usage="listViewItemCollection.Find (key, searchAllSubItems)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -617,6 +633,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listViewItemCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -649,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.IndexOf(System.Windows.Forms.ListViewItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As ListViewItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::ListViewItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.ListViewItem -&gt; int" Usage="listViewItemCollection.IndexOf item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -681,6 +699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.IndexOfKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOfKey : string -&gt; int&#xA;override this.IndexOfKey : string -&gt; int" Usage="listViewItemCollection.IndexOfKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -725,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, text As String) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ Insert(int index, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Insert (index, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -766,6 +786,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, item As ListViewItem) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ Insert(int index, System::Windows::Forms::ListViewItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.ListViewItem -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -807,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, text As String, imageIndex As Integer) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ Insert(int index, System::String ^ text, int imageIndex);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * int -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Insert (index, text, imageIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -852,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, text As String, imageKey As String) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ Insert(int index, System::String ^ text, System::String ^ imageKey);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * string -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Insert (index, text, imageKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -881,6 +904,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Insert (index As Integer, key As String, text As String, imageIndex As Integer) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ListViewItem ^ Insert(int index, System::String ^ key, System::String ^ text, int imageIndex);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * string * string * int -&gt; System.Windows.Forms.ListViewItem&#xA;override this.Insert : int * string * string * int -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Insert (index, key, text, imageIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -919,6 +943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Insert (index As Integer, key As String, text As String, imageKey As String) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ListViewItem ^ Insert(int index, System::String ^ key, System::String ^ text, System::String ^ imageKey);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * string * string * string -&gt; System.Windows.Forms.ListViewItem&#xA;override this.Insert : int * string * string * string -&gt; System.Windows.Forms.ListViewItem" Usage="listViewItemCollection.Insert (index, key, text, imageKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -957,6 +982,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.ListView.ListViewItemCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -997,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ListViewItem ^ default[int] { System::Windows::Forms::ListViewItem ^ get(int index); void set(int index, System::Windows::Forms::ListViewItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.ListViewItem with get, set" Usage="System.Windows.Forms.ListView.ListViewItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1030,6 +1057,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ListViewItem ^ default[System::String ^] { System::Windows::Forms::ListViewItem ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.ListViewItem" Usage="System.Windows.Forms.ListView.ListViewItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1061,6 +1089,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.Remove(System.Windows.Forms.ListViewItem)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (item As ListViewItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Windows::Forms::ListViewItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Forms.ListViewItem -&gt; unit&#xA;override this.Remove : System.Windows.Forms.ListViewItem -&gt; unit" Usage="listViewItemCollection.Remove item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1094,6 +1123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="listViewItemCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -1130,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.RemoveByKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveByKey (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveByKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveByKey : string -&gt; unit&#xA;override this.RemoveByKey : string -&gt; unit" Usage="listViewItemCollection.RemoveByKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1160,6 +1191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ListViewItemCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1184,6 +1216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ListViewItemCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1332,6 +1365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ListViewItemCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1356,6 +1390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ListViewItemCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

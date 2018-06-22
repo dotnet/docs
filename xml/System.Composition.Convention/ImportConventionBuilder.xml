@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.ImportConventionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImportConventionBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImportConventionBuilder sealed" />
+  <TypeSignature Language="F#" Value="type ImportConventionBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Convention</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ImportConventionBuilder.AddMetadataConstraint(System.String,System.Func{System.Type,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMetadataConstraint (name As String, getConstraintValueFromPartType As Func(Of Type, Object)) As ImportConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::ImportConventionBuilder ^ AddMetadataConstraint(System::String ^ name, Func&lt;Type ^, System::Object ^&gt; ^ getConstraintValueFromPartType);" />
+      <MemberSignature Language="F#" Value="member this.AddMetadataConstraint : string * Func&lt;Type, obj&gt; -&gt; System.Composition.Convention.ImportConventionBuilder" Usage="importConventionBuilder.AddMetadataConstraint (name, getConstraintValueFromPartType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ImportConventionBuilder.AddMetadataConstraint(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMetadataConstraint (name As String, value As Object) As ImportConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::ImportConventionBuilder ^ AddMetadataConstraint(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddMetadataConstraint : string * obj -&gt; System.Composition.Convention.ImportConventionBuilder" Usage="importConventionBuilder.AddMetadataConstraint (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ImportConventionBuilder.AllowDefault" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowDefault () As ImportConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::ImportConventionBuilder ^ AllowDefault();" />
+      <MemberSignature Language="F#" Value="member this.AllowDefault : unit -&gt; System.Composition.Convention.ImportConventionBuilder" Usage="importConventionBuilder.AllowDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ImportConventionBuilder.AsContractName(System.Func{System.Type,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function AsContractName (getContractNameFromPartType As Func(Of Type, String)) As ImportConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::ImportConventionBuilder ^ AsContractName(Func&lt;Type ^, System::String ^&gt; ^ getContractNameFromPartType);" />
+      <MemberSignature Language="F#" Value="member this.AsContractName : Func&lt;Type, string&gt; -&gt; System.Composition.Convention.ImportConventionBuilder" Usage="importConventionBuilder.AsContractName getContractNameFromPartType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ImportConventionBuilder.AsContractName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AsContractName (contractName As String) As ImportConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::ImportConventionBuilder ^ AsContractName(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.AsContractName : string -&gt; System.Composition.Convention.ImportConventionBuilder" Usage="importConventionBuilder.AsContractName contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ImportConventionBuilder.AsMany" />
       <MemberSignature Language="VB.NET" Value="Public Function AsMany () As ImportConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::ImportConventionBuilder ^ AsMany();" />
+      <MemberSignature Language="F#" Value="member this.AsMany : unit -&gt; System.Composition.Convention.ImportConventionBuilder" Usage="importConventionBuilder.AsMany " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ImportConventionBuilder.AsMany(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AsMany (isMany As Boolean) As ImportConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::ImportConventionBuilder ^ AsMany(bool isMany);" />
+      <MemberSignature Language="F#" Value="member this.AsMany : bool -&gt; System.Composition.Convention.ImportConventionBuilder" Usage="importConventionBuilder.AsMany isMany" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>

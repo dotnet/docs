@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbXmlEnabledProviderManifest" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbXmlEnabledProviderManifest&#xA;Inherits DbProviderManifest" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbXmlEnabledProviderManifest abstract : System::Data::Common::DbProviderManifest" />
+  <TypeSignature Language="F#" Value="type DbXmlEnabledProviderManifest = class&#xA;    inherit DbProviderManifest" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbXmlEnabledProviderManifest.#ctor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DbXmlEnabledProviderManifest(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DbXmlEnabledProviderManifest : System.Xml.XmlReader -&gt; System.Data.Common.DbXmlEnabledProviderManifest" Usage="new System.Data.Common.DbXmlEnabledProviderManifest reader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbXmlEnabledProviderManifest.GetFacetDescriptions(System.Data.Metadata.Edm.EdmType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFacetDescriptions (type As EdmType) As ReadOnlyCollection(Of FacetDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::FacetDescription ^&gt; ^ GetFacetDescriptions(System::Data::Metadata::Edm::EdmType ^ type);" />
+      <MemberSignature Language="F#" Value="override this.GetFacetDescriptions : System.Data.Metadata.Edm.EdmType -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt;" Usage="dbXmlEnabledProviderManifest.GetFacetDescriptions type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbXmlEnabledProviderManifest.GetStoreFunctions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStoreFunctions () As ReadOnlyCollection(Of EdmFunction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::EdmFunction ^&gt; ^ GetStoreFunctions();" />
+      <MemberSignature Language="F#" Value="override this.GetStoreFunctions : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;" Usage="dbXmlEnabledProviderManifest.GetStoreFunctions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbXmlEnabledProviderManifest.GetStoreTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStoreTypes () As ReadOnlyCollection(Of PrimitiveType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ GetStoreTypes();" />
+      <MemberSignature Language="F#" Value="override this.GetStoreTypes : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt;" Usage="dbXmlEnabledProviderManifest.GetStoreTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbXmlEnabledProviderManifest.NamespaceName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NamespaceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NamespaceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="System.Data.Common.DbXmlEnabledProviderManifest.NamespaceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbXmlEnabledProviderManifest.StoreTypeNameToEdmPrimitiveType" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property StoreTypeNameToEdmPrimitiveType As Dictionary(Of String, PrimitiveType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ StoreTypeNameToEdmPrimitiveType { System::Collections::Generic::Dictionary&lt;System::String ^, System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StoreTypeNameToEdmPrimitiveType : System.Collections.Generic.Dictionary&lt;string, System.Data.Metadata.Edm.PrimitiveType&gt;" Usage="System.Data.Common.DbXmlEnabledProviderManifest.StoreTypeNameToEdmPrimitiveType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbXmlEnabledProviderManifest.StoreTypeNameToStorePrimitiveType" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property StoreTypeNameToStorePrimitiveType As Dictionary(Of String, PrimitiveType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ StoreTypeNameToStorePrimitiveType { System::Collections::Generic::Dictionary&lt;System::String ^, System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StoreTypeNameToStorePrimitiveType : System.Collections.Generic.Dictionary&lt;string, System.Data.Metadata.Edm.PrimitiveType&gt;" Usage="System.Data.Common.DbXmlEnabledProviderManifest.StoreTypeNameToStorePrimitiveType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

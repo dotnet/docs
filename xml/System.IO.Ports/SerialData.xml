@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialData" />
   <TypeSignature Language="VB.NET" Value="Public Enum SerialData" />
   <TypeSignature Language="C++ CLI" Value="public enum class SerialData" />
+  <TypeSignature Language="F#" Value="type SerialData = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialData.Chars" />
       <MemberSignature Language="VB.NET" Value="Chars" />
       <MemberSignature Language="C++ CLI" Value="Chars" />
+      <MemberSignature Language="F#" Value="Chars = 1" Usage="System.IO.Ports.SerialData.Chars" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialData.Eof" />
       <MemberSignature Language="VB.NET" Value="Eof" />
       <MemberSignature Language="C++ CLI" Value="Eof" />
+      <MemberSignature Language="F#" Value="Eof = 2" Usage="System.IO.Ports.SerialData.Eof" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

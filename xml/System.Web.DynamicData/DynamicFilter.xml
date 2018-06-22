@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicFilter" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicFilter&#xA;Inherits Control&#xA;Implements IFilterExpressionProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicFilter : System::Web::UI::Control, System::Web::DynamicData::IFilterExpressionProvider" />
+  <TypeSignature Language="F#" Value="type DynamicFilter = class&#xA;    inherit Control&#xA;    interface IFilterExpressionProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -144,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.Column" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Column As MetaColumn" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Web.DynamicData.MetaColumn" Usage="System.Web.DynamicData.DynamicFilter.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -171,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.DataField" />
       <MemberSignature Language="VB.NET" Value="Public Property DataField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataField : string with get, set" Usage="System.Web.DynamicData.DynamicFilter.DataField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -211,6 +214,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.DynamicData.DynamicFilter.FilterChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event FilterChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FilterChanged;" />
+      <MemberSignature Language="F#" Value="member this.FilterChanged : EventHandler " Usage="member this.FilterChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -245,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.FilterTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterTemplate As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ FilterTemplate { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterTemplate : System.Web.UI.Control" Usage="System.Web.DynamicData.DynamicFilter.FilterTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -280,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.FilterUIHint" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterUIHint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterUIHint { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterUIHint : string with get, set" Usage="System.Web.DynamicData.DynamicFilter.FilterUIHint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -331,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dynamicFilter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

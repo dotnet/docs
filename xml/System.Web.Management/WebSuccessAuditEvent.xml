@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebSuccessAuditEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class WebSuccessAuditEvent&#xA;Inherits WebAuditEvent" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebSuccessAuditEvent : System::Web::Management::WebAuditEvent" />
+  <TypeSignature Language="F#" Value="type WebSuccessAuditEvent = class&#xA;    inherit WebAuditEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -103,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebSuccessAuditEvent.#ctor(System.String,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebSuccessAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebSuccessAuditEvent : string * obj * int -&gt; System.Web.Management.WebSuccessAuditEvent" Usage="new System.Web.Management.WebSuccessAuditEvent (message, eventSource, eventCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebSuccessAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebSuccessAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebSuccessAuditEvent : string * obj * int * int -&gt; System.Web.Management.WebSuccessAuditEvent" Usage="new System.Web.Management.WebSuccessAuditEvent (message, eventSource, eventCode, eventDetailCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebSuccessAuditEvent.IncrementPerfCounters" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub IncrementPerfCounters ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void IncrementPerfCounters();" />
+      <MemberSignature Language="F#" Value="override this.IncrementPerfCounters : unit -&gt; unit" Usage="webSuccessAuditEvent.IncrementPerfCounters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

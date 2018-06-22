@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EditorPart&#xA;Inherits Part" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditorPart abstract : System::Web::UI::WebControls::WebParts::Part" />
+  <TypeSignature Language="F#" Value="type EditorPart = class&#xA;    inherit Part" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ApplyChanges () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ApplyChanges();" />
+      <MemberSignature Language="F#" Value="abstract member ApplyChanges : unit -&gt; bool" Usage="editorPart.ApplyChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.Display" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Display As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Display { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Display : bool" Usage="System.Web.UI.WebControls.WebParts.EditorPart.Display" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.DisplayTitle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayTitle { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayTitle : string" Usage="System.Web.UI.WebControls.WebParts.EditorPart.DisplayTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -240,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.GetDesignModeState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDesignModeState () As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IDictionary ^ GetDesignModeState();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignModeState : unit -&gt; System.Collections.IDictionary" Usage="editorPart.GetDesignModeState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="editorPart.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.SetDesignModeState(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDesignModeState (data As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDesignModeState(System::Collections::IDictionary ^ data);" />
+      <MemberSignature Language="F#" Value="override this.SetDesignModeState : System.Collections.IDictionary -&gt; unit" Usage="editorPart.SetDesignModeState data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SyncChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SyncChanges();" />
+      <MemberSignature Language="F#" Value="abstract member SyncChanges : unit -&gt; unit" Usage="editorPart.SyncChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -376,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.WebPartManager" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WebPartManager As WebPartManager" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPartManager ^ WebPartManager { System::Web::UI::WebControls::WebParts::WebPartManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebPartManager : System.Web.UI.WebControls.WebParts.WebPartManager" Usage="System.Web.UI.WebControls.WebParts.EditorPart.WebPartManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -403,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WebPartToEdit As WebPart" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ WebPartToEdit { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebPartToEdit : System.Web.UI.WebControls.WebParts.WebPart" Usage="System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -435,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.Zone" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Zone As EditorZoneBase" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::EditorZoneBase ^ Zone { System::Web::UI::WebControls::WebParts::EditorZoneBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zone : System.Web.UI.WebControls.WebParts.EditorZoneBase" Usage="System.Web.UI.WebControls.WebParts.EditorPart.Zone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

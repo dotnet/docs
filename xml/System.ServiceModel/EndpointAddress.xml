@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointAddress" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointAddress" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointAddress" />
+  <TypeSignature Language="F#" Value="type EndpointAddress = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddress(System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointAddress : string -&gt; System.ServiceModel.EndpointAddress" Usage="new System.ServiceModel.EndpointAddress uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, class System.ServiceModel.Channels.AddressHeader[] addressHeaders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.#ctor(System.Uri,System.ServiceModel.Channels.AddressHeader[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddress(Uri ^ uri, ... cli::array &lt;System::ServiceModel::Channels::AddressHeader ^&gt; ^ addressHeaders);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointAddress : Uri * System.ServiceModel.Channels.AddressHeader[] -&gt; System.ServiceModel.EndpointAddress" Usage="new System.ServiceModel.EndpointAddress (uri, addressHeaders)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, class System.ServiceModel.EndpointIdentity identity, class System.ServiceModel.Channels.AddressHeader[] addressHeaders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.#ctor(System.Uri,System.ServiceModel.EndpointIdentity,System.ServiceModel.Channels.AddressHeader[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddress(Uri ^ uri, System::ServiceModel::EndpointIdentity ^ identity, ... cli::array &lt;System::ServiceModel::Channels::AddressHeader ^&gt; ^ addressHeaders);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointAddress : Uri * System.ServiceModel.EndpointIdentity * System.ServiceModel.Channels.AddressHeader[] -&gt; System.ServiceModel.EndpointAddress" Usage="new System.ServiceModel.EndpointAddress (uri, identity, addressHeaders)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, class System.ServiceModel.EndpointIdentity identity, class System.ServiceModel.Channels.AddressHeaderCollection headers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.#ctor(System.Uri,System.ServiceModel.EndpointIdentity,System.ServiceModel.Channels.AddressHeaderCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddress(Uri ^ uri, System::ServiceModel::EndpointIdentity ^ identity, System::ServiceModel::Channels::AddressHeaderCollection ^ headers);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointAddress : Uri * System.ServiceModel.EndpointIdentity * System.ServiceModel.Channels.AddressHeaderCollection -&gt; System.ServiceModel.EndpointAddress" Usage="new System.ServiceModel.EndpointAddress (uri, identity, headers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, class System.ServiceModel.EndpointIdentity identity, class System.ServiceModel.Channels.AddressHeaderCollection headers, class System.Xml.XmlDictionaryReader metadataReader, class System.Xml.XmlDictionaryReader extensionReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.#ctor(System.Uri,System.ServiceModel.EndpointIdentity,System.ServiceModel.Channels.AddressHeaderCollection,System.Xml.XmlDictionaryReader,System.Xml.XmlDictionaryReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddress(Uri ^ uri, System::ServiceModel::EndpointIdentity ^ identity, System::ServiceModel::Channels::AddressHeaderCollection ^ headers, System::Xml::XmlDictionaryReader ^ metadataReader, System::Xml::XmlDictionaryReader ^ extensionReader);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointAddress : Uri * System.ServiceModel.EndpointIdentity * System.ServiceModel.Channels.AddressHeaderCollection * System.Xml.XmlDictionaryReader * System.Xml.XmlDictionaryReader -&gt; System.ServiceModel.EndpointAddress" Usage="new System.ServiceModel.EndpointAddress (uri, identity, headers, metadataReader, extensionReader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -257,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddress.AnonymousUri" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnonymousUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Uri ^ AnonymousUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnonymousUri : Uri" Usage="System.ServiceModel.EndpointAddress.AnonymousUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -301,6 +308,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyTo(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.ApplyTo(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyTo(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="member this.ApplyTo : System.ServiceModel.Channels.Message -&gt; unit" Usage="endpointAddress.ApplyTo message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -347,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="endpointAddress.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -386,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="endpointAddress.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -426,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.GetReaderAtExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtExtensions () As XmlDictionaryReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtExtensions();" />
+      <MemberSignature Language="F#" Value="member this.GetReaderAtExtensions : unit -&gt; System.Xml.XmlDictionaryReader" Usage="endpointAddress.GetReaderAtExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -460,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.GetReaderAtMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtMetadata () As XmlDictionaryReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtMetadata();" />
+      <MemberSignature Language="F#" Value="member this.GetReaderAtMetadata : unit -&gt; System.Xml.XmlDictionaryReader" Usage="endpointAddress.GetReaderAtMetadata " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -489,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddress.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As AddressHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::AddressHeaderCollection ^ Headers { System::ServiceModel::Channels::AddressHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.ServiceModel.Channels.AddressHeaderCollection" Usage="System.ServiceModel.EndpointAddress.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -523,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddress.Identity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointIdentity ^ Identity { System::ServiceModel::EndpointIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointAddress.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -562,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddress.IsAnonymous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAnonymous As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAnonymous { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAnonymous : bool" Usage="System.ServiceModel.EndpointAddress.IsAnonymous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -606,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddress.IsNone" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNone As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNone { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNone : bool" Usage="System.ServiceModel.EndpointAddress.IsNone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -646,6 +662,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddress.NoneUri" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NoneUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Uri ^ NoneUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NoneUri : Uri" Usage="System.ServiceModel.EndpointAddress.NoneUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -685,6 +702,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.op_Equality(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (address1 As EndpointAddress, address2 As EndpointAddress) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::ServiceModel::EndpointAddress ^ address1, System::ServiceModel::EndpointAddress ^ address2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.ServiceModel.EndpointAddress * System.ServiceModel.EndpointAddress -&gt; bool" Usage="address1 = address2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -726,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.op_Inequality(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (address1 As EndpointAddress, address2 As EndpointAddress) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::ServiceModel::EndpointAddress ^ address1, System::ServiceModel::EndpointAddress ^ address2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.ServiceModel.EndpointAddress * System.ServiceModel.EndpointAddress -&gt; bool" Usage="System.ServiceModel.EndpointAddress.op_Inequality (address1, address2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -777,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.ReadFrom(System.Xml.XmlDictionaryReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadFrom (reader As XmlDictionaryReader) As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointAddress ^ ReadFrom(System::Xml::XmlDictionaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.Xml.XmlDictionaryReader -&gt; System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.EndpointAddress.ReadFrom reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -810,6 +830,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointAddress ReadFrom(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlDictionaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.ReadFrom(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlDictionaryReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointAddress ^ ReadFrom(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlDictionaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlDictionaryReader -&gt; System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.EndpointAddress.ReadFrom (addressingVersion, reader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -849,6 +870,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointAddress ReadFrom(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.ReadFrom(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointAddress ^ ReadFrom(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlReader -&gt; System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.EndpointAddress.ReadFrom (addressingVersion, reader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -885,6 +907,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.ReadFrom(System.Xml.XmlDictionaryReader,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadFrom (reader As XmlDictionaryReader, localName As XmlDictionaryString, ns As XmlDictionaryString) As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointAddress ^ ReadFrom(System::Xml::XmlDictionaryReader ^ reader, System::Xml::XmlDictionaryString ^ localName, System::Xml::XmlDictionaryString ^ ns);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.Xml.XmlDictionaryReader * System.Xml.XmlDictionaryString * System.Xml.XmlDictionaryString -&gt; System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.EndpointAddress.ReadFrom (reader, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -922,6 +945,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointAddress ReadFrom(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlDictionaryReader reader, class System.Xml.XmlDictionaryString localName, class System.Xml.XmlDictionaryString ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.ReadFrom(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlDictionaryReader,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointAddress ^ ReadFrom(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlDictionaryReader ^ reader, System::Xml::XmlDictionaryString ^ localName, System::Xml::XmlDictionaryString ^ ns);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlDictionaryReader * System.Xml.XmlDictionaryString * System.Xml.XmlDictionaryString -&gt; System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.EndpointAddress.ReadFrom (addressingVersion, reader, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -959,6 +983,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointAddress ReadFrom(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlReader reader, string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.ReadFrom(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlReader,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointAddress ^ ReadFrom(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlReader ^ reader, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlReader * string * string -&gt; System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.EndpointAddress.ReadFrom (addressingVersion, reader, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -997,6 +1022,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="endpointAddress.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1032,6 +1058,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddress.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.ServiceModel.EndpointAddress.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1080,6 +1107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteContentsTo(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.WriteContentsTo(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteContentsTo(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteContentsTo : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlDictionaryWriter -&gt; unit" Usage="endpointAddress.WriteContentsTo (addressingVersion, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1120,6 +1148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteContentsTo(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.WriteContentsTo(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteContentsTo(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteContentsTo : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlWriter -&gt; unit" Usage="endpointAddress.WriteContentsTo (addressingVersion, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1164,6 +1193,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.WriteTo(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteTo : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlDictionaryWriter -&gt; unit" Usage="endpointAddress.WriteTo (addressingVersion, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1198,6 +1228,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.WriteTo(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteTo : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlWriter -&gt; unit" Usage="endpointAddress.WriteTo (addressingVersion, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1235,6 +1266,7 @@
       <MemberSignature Language="C#" Value="public void WriteTo (System.ServiceModel.Channels.AddressingVersion addressingVersion, System.Xml.XmlDictionaryWriter writer, System.Xml.XmlDictionaryString localname, System.Xml.XmlDictionaryString ns);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlDictionaryWriter writer, class System.Xml.XmlDictionaryString localname, class System.Xml.XmlDictionaryString ns) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlDictionaryWriter ^ writer, System::Xml::XmlDictionaryString ^ localname, System::Xml::XmlDictionaryString ^ ns);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.WriteTo : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlDictionaryWriter * System.Xml.XmlDictionaryString * System.Xml.XmlDictionaryString -&gt; unit" Usage="endpointAddress.WriteTo (addressingVersion, writer, localname, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1277,6 +1309,7 @@
       <MemberSignature Language="C#" Value="public void WriteTo (System.ServiceModel.Channels.AddressingVersion addressingVersion, System.Xml.XmlWriter writer, string localname, string ns);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.ServiceModel.Channels.AddressingVersion addressingVersion, class System.Xml.XmlWriter writer, string localname, string ns) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::ServiceModel::Channels::AddressingVersion ^ addressingVersion, System::Xml::XmlWriter ^ writer, System::String ^ localname, System::String ^ ns);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.WriteTo : System.ServiceModel.Channels.AddressingVersion * System.Xml.XmlWriter * string * string -&gt; unit" Usage="endpointAddress.WriteTo (addressingVersion, writer, localname, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

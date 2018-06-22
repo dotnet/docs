@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.INativeHandleContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface INativeHandleContract&#xA;Implements IContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class INativeHandleContract : System::AddIn::Contract::IContract" />
+  <TypeSignature Language="F#" Value="type INativeHandleContract = interface&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.INativeHandleContract.GetHandle" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHandle () As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHandle();" />
+      <MemberSignature Language="F#" Value="abstract member GetHandle : unit -&gt; nativeint" Usage="iNativeHandleContract.GetHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

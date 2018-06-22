@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.SessionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SessionAttribute&#xA;Inherits ValueProviderSourceAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionAttribute sealed : System::Web::ModelBinding::ValueProviderSourceAttribute" />
+  <TypeSignature Language="F#" Value="type SessionAttribute = class&#xA;    inherit ValueProviderSourceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SessionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.SessionAttribute : string -&gt; System.Web.ModelBinding.SessionAttribute" Usage="new System.Web.ModelBinding.SessionAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SessionAttribute.GetModelName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetModelName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetModelName();" />
+      <MemberSignature Language="F#" Value="override this.GetModelName : unit -&gt; string" Usage="sessionAttribute.GetModelName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ModelBinding.IValueProvider GetValueProvider(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SessionAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ModelBinding::IValueProvider ^ GetValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="override this.GetValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.IValueProvider" Usage="sessionAttribute.GetValueProvider modelBindingExecutionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.SessionAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.ModelBinding.SessionAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

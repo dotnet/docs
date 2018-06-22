@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.RecognitionConfidence" />
   <TypeSignature Language="VB.NET" Value="Public Enum RecognitionConfidence" />
   <TypeSignature Language="C++ CLI" Value="public enum class RecognitionConfidence" />
+  <TypeSignature Language="F#" Value="type RecognitionConfidence = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Intermediate" />
       <MemberSignature Language="VB.NET" Value="Intermediate" />
       <MemberSignature Language="C++ CLI" Value="Intermediate" />
+      <MemberSignature Language="F#" Value="Intermediate = 1" Usage="System.Windows.Ink.RecognitionConfidence.Intermediate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Poor" />
       <MemberSignature Language="VB.NET" Value="Poor" />
       <MemberSignature Language="C++ CLI" Value="Poor" />
+      <MemberSignature Language="F#" Value="Poor = 2" Usage="System.Windows.Ink.RecognitionConfidence.Poor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Strong" />
       <MemberSignature Language="VB.NET" Value="Strong" />
       <MemberSignature Language="C++ CLI" Value="Strong" />
+      <MemberSignature Language="F#" Value="Strong = 0" Usage="System.Windows.Ink.RecognitionConfidence.Strong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ServiceCreatorCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ServiceCreatorCallback(container As IServiceContainer, serviceType As Type) As Object " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ ServiceCreatorCallback(IServiceContainer ^ container, Type ^ serviceType);" />
+  <TypeSignature Language="F#" Value="type ServiceCreatorCallback = delegate of IServiceContainer * Type -&gt; obj" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

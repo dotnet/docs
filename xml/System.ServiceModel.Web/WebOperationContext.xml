@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebOperationContext" />
   <TypeSignature Language="VB.NET" Value="Public Class WebOperationContext&#xA;Implements IExtension(Of OperationContext)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebOperationContext : System::ServiceModel::IExtension&lt;System::ServiceModel::OperationContext ^&gt;" />
+  <TypeSignature Language="F#" Value="type WebOperationContext = class&#xA;    interface IExtension&lt;OperationContext&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operation As OperationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebOperationContext(System::ServiceModel::OperationContext ^ operation);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebOperationContext : System.ServiceModel.OperationContext -&gt; System.ServiceModel.Web.WebOperationContext" Usage="new System.ServiceModel.Web.WebOperationContext operation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (context As OperationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Attach(System::ServiceModel::OperationContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : System.ServiceModel.OperationContext -&gt; unit&#xA;override this.Attach : System.ServiceModel.OperationContext -&gt; unit" Usage="webOperationContext.Attach context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.IExtension`1.Attach(`0)</InterfaceMember>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.ServiceDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateAtom10Response (document As ServiceDocument) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateAtom10Response(System::ServiceModel::Syndication::ServiceDocument ^ document);" />
+      <MemberSignature Language="F#" Value="member this.CreateAtom10Response : System.ServiceModel.Syndication.ServiceDocument -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateAtom10Response document" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateAtom10Response (feed As SyndicationFeed) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateAtom10Response(System::ServiceModel::Syndication::SyndicationFeed ^ feed);" />
+      <MemberSignature Language="F#" Value="member this.CreateAtom10Response : System.ServiceModel.Syndication.SyndicationFeed -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateAtom10Response feed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateAtom10Response (item As SyndicationItem) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateAtom10Response(System::ServiceModel::Syndication::SyndicationItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.CreateAtom10Response : System.ServiceModel.Syndication.SyndicationItem -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateAtom10Response item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateJsonResponse``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateJsonResponse(Of T) (instance As T) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ServiceModel::Channels::Message ^ CreateJsonResponse(T instance);" />
+      <MemberSignature Language="F#" Value="member this.CreateJsonResponse : 'T -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateJsonResponse instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateJsonResponse``1(``0,System.Runtime.Serialization.Json.DataContractJsonSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateJsonResponse(Of T) (instance As T, serializer As DataContractJsonSerializer) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ServiceModel::Channels::Message ^ CreateJsonResponse(T instance, System::Runtime::Serialization::Json::DataContractJsonSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="member this.CreateJsonResponse : 'T * System.Runtime.Serialization.Json.DataContractJsonSerializer -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateJsonResponse (instance, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.Action{System.IO.Stream},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateStreamResponse (streamWriter As Action(Of Stream), contentType As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateStreamResponse(Action&lt;System::IO::Stream ^&gt; ^ streamWriter, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="member this.CreateStreamResponse : Action&lt;System.IO.Stream&gt; * string -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateStreamResponse (streamWriter, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.Message CreateStreamResponse(class System.IO.Stream stream, string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.IO.Stream,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateStreamResponse(System::IO::Stream ^ stream, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="member this.CreateStreamResponse : System.IO.Stream * string -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateStreamResponse (stream, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.ServiceModel.Channels.StreamBodyWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateStreamResponse (bodyWriter As StreamBodyWriter, contentType As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateStreamResponse(System::ServiceModel::Channels::StreamBodyWriter ^ bodyWriter, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="member this.CreateStreamResponse : System.ServiceModel.Channels.StreamBodyWriter * string -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateStreamResponse (bodyWriter, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -333,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateTextResponse (text As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateTextResponse(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.CreateTextResponse : string -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateTextResponse text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.Action{System.IO.TextWriter},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateTextResponse (textWriter As Action(Of TextWriter), contentType As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateTextResponse(Action&lt;System::IO::TextWriter ^&gt; ^ textWriter, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="member this.CreateTextResponse : Action&lt;System.IO.TextWriter&gt; * string -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateTextResponse (textWriter, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -383,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateTextResponse (text As String, contentType As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateTextResponse(System::String ^ text, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="member this.CreateTextResponse : string * string -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateTextResponse (text, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -408,6 +422,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.Message CreateTextResponse(class System.Action`1&lt;class System.IO.TextWriter&gt; textWriter, string contentType, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.Action{System.IO.TextWriter},System.String,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateTextResponse(Action&lt;System::IO::TextWriter ^&gt; ^ textWriter, System::String ^ contentType, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="member this.CreateTextResponse : Action&lt;System.IO.TextWriter&gt; * string * System.Text.Encoding -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateTextResponse (textWriter, contentType, encoding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -435,6 +450,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.Message CreateTextResponse(string text, string contentType, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.String,System.String,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateTextResponse(System::String ^ text, System::String ^ contentType, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="member this.CreateTextResponse : string * string * System.Text.Encoding -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateTextResponse (text, contentType, encoding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -472,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateXmlResponse(System.Xml.Linq.XDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateXmlResponse (document As XDocument) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateXmlResponse(System::Xml::Linq::XDocument ^ document);" />
+      <MemberSignature Language="F#" Value="member this.CreateXmlResponse : System.Xml.Linq.XDocument -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateXmlResponse document" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -496,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateXmlResponse(System.Xml.Linq.XElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateXmlResponse (element As XElement) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ CreateXmlResponse(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.CreateXmlResponse : System.Xml.Linq.XElement -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateXmlResponse element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -520,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateXmlResponse``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateXmlResponse(Of T) (instance As T) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ServiceModel::Channels::Message ^ CreateXmlResponse(T instance);" />
+      <MemberSignature Language="F#" Value="member this.CreateXmlResponse : 'T -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateXmlResponse instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -548,6 +567,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateXmlResponse``1(``0,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateXmlResponse(Of T) (instance As T, serializer As XmlObjectSerializer) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ServiceModel::Channels::Message ^ CreateXmlResponse(T instance, System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="member this.CreateXmlResponse : 'T * System.Runtime.Serialization.XmlObjectSerializer -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateXmlResponse (instance, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -578,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.CreateXmlResponse``1(``0,System.Xml.Serialization.XmlSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateXmlResponse(Of T) (instance As T, serializer As XmlSerializer) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ServiceModel::Channels::Message ^ CreateXmlResponse(T instance, System::Xml::Serialization::XmlSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="member this.CreateXmlResponse : 'T * System.Xml.Serialization.XmlSerializer -&gt; System.ServiceModel.Channels.Message" Usage="webOperationContext.CreateXmlResponse (instance, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -608,6 +629,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebOperationContext.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As WebOperationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Web::WebOperationContext ^ Current { System::ServiceModel::Web::WebOperationContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.ServiceModel.Web.WebOperationContext" Usage="System.ServiceModel.Web.WebOperationContext.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -638,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (context As OperationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Detach(System::ServiceModel::OperationContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Detach : System.ServiceModel.OperationContext -&gt; unit&#xA;override this.Detach : System.ServiceModel.OperationContext -&gt; unit" Usage="webOperationContext.Detach context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.IExtension`1.Detach(`0)</InterfaceMember>
@@ -664,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.GetUriTemplate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUriTemplate (operationName As String) As UriTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate ^ GetUriTemplate(System::String ^ operationName);" />
+      <MemberSignature Language="F#" Value="member this.GetUriTemplate : string -&gt; UriTemplate" Usage="webOperationContext.GetUriTemplate operationName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -688,6 +712,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebOperationContext.IncomingRequest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingRequest As IncomingWebRequestContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::IncomingWebRequestContext ^ IncomingRequest { System::ServiceModel::Web::IncomingWebRequestContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncomingRequest : System.ServiceModel.Web.IncomingWebRequestContext" Usage="System.ServiceModel.Web.WebOperationContext.IncomingRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -718,6 +743,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebOperationContext.IncomingResponse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingResponse As IncomingWebResponseContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::IncomingWebResponseContext ^ IncomingResponse { System::ServiceModel::Web::IncomingWebResponseContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncomingResponse : System.ServiceModel.Web.IncomingWebResponseContext" Usage="System.ServiceModel.Web.WebOperationContext.IncomingResponse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -749,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebOperationContext.OutgoingRequest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingRequest As OutgoingWebRequestContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::OutgoingWebRequestContext ^ OutgoingRequest { System::ServiceModel::Web::OutgoingWebRequestContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutgoingRequest : System.ServiceModel.Web.OutgoingWebRequestContext" Usage="System.ServiceModel.Web.WebOperationContext.OutgoingRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -780,6 +807,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebOperationContext.OutgoingResponse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingResponse As OutgoingWebResponseContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::OutgoingWebResponseContext ^ OutgoingResponse { System::ServiceModel::Web::OutgoingWebResponseContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutgoingResponse : System.ServiceModel.Web.OutgoingWebResponseContext" Usage="System.ServiceModel.Web.WebOperationContext.OutgoingResponse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

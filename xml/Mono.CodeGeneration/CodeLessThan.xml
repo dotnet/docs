@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeLessThan" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeLessThan&#xA;Inherits CodeBinaryComparison" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeLessThan : Mono::CodeGeneration::CodeBinaryComparison" />
+  <TypeSignature Language="F#" Value="type CodeLessThan = class&#xA;    inherit CodeBinaryComparison" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeLessThan.#ctor(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exp1 As CodeExpression, exp2 As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeLessThan(Mono::CodeGeneration::CodeExpression ^ exp1, Mono::CodeGeneration::CodeExpression ^ exp2);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeLessThan : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeLessThan" Usage="new Mono.CodeGeneration.CodeLessThan (exp1, exp2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeLessThan.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeLessThan.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateForBranch(class System.Reflection.Emit.ILGenerator gen, valuetype System.Reflection.Emit.Label label, bool branchCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeLessThan.GenerateForBranch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateForBranch(System::Reflection::Emit::ILGenerator ^ gen, System::Reflection::Emit::Label label, bool branchCase);" />
+      <MemberSignature Language="F#" Value="override this.GenerateForBranch : System.Reflection.Emit.ILGenerator * System.Reflection.Emit.Label * bool -&gt; unit" Usage="codeLessThan.GenerateForBranch (gen, label, branchCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

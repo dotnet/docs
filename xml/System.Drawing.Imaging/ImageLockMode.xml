@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageLockMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImageLockMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImageLockMode" />
+  <TypeSignature Language="F#" Value="type ImageLockMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageLockMode.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="ReadOnly" />
       <MemberSignature Language="C++ CLI" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="System.Drawing.Imaging.ImageLockMode.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageLockMode.ReadWrite" />
       <MemberSignature Language="VB.NET" Value="ReadWrite" />
       <MemberSignature Language="C++ CLI" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 3" Usage="System.Drawing.Imaging.ImageLockMode.ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageLockMode.UserInputBuffer" />
       <MemberSignature Language="VB.NET" Value="UserInputBuffer" />
       <MemberSignature Language="C++ CLI" Value="UserInputBuffer" />
+      <MemberSignature Language="F#" Value="UserInputBuffer = 4" Usage="System.Drawing.Imaging.ImageLockMode.UserInputBuffer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageLockMode.WriteOnly" />
       <MemberSignature Language="VB.NET" Value="WriteOnly" />
       <MemberSignature Language="C++ CLI" Value="WriteOnly" />
+      <MemberSignature Language="F#" Value="WriteOnly = 2" Usage="System.Drawing.Imaging.ImageLockMode.WriteOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

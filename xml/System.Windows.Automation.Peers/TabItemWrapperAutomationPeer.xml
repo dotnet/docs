@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TabItemWrapperAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class TabItemWrapperAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class TabItemWrapperAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type TabItemWrapperAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabItemWrapperAutomationPeer.#ctor(System.Windows.Controls.TabItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As TabItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TabItemWrapperAutomationPeer(System::Windows::Controls::TabItem ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.TabItemWrapperAutomationPeer : System.Windows.Controls.TabItem -&gt; System.Windows.Automation.Peers.TabItemWrapperAutomationPeer" Usage="new System.Windows.Automation.Peers.TabItemWrapperAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

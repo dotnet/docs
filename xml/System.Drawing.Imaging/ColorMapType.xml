@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorMapType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ColorMapType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ColorMapType" />
+  <TypeSignature Language="F#" Value="type ColorMapType = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMapType.Brush" />
       <MemberSignature Language="VB.NET" Value="Brush" />
       <MemberSignature Language="C++ CLI" Value="Brush" />
+      <MemberSignature Language="F#" Value="Brush = 1" Usage="System.Drawing.Imaging.ColorMapType.Brush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMapType.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Drawing.Imaging.ColorMapType.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IUIService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IUIService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IUIService" />
+  <TypeSignature Language="F#" Value="type IUIService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.CanShowComponentEditor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanShowComponentEditor (component As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanShowComponentEditor(System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member CanShowComponentEditor : obj -&gt; bool" Usage="iUIService.CanShowComponentEditor component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.GetDialogOwnerWindow" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDialogOwnerWindow () As IWin32Window" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::IWin32Window ^ GetDialogOwnerWindow();" />
+      <MemberSignature Language="F#" Value="abstract member GetDialogOwnerWindow : unit -&gt; System.Windows.Forms.IWin32Window" Usage="iUIService.GetDialogOwnerWindow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.SetUIDirty" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUIDirty ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetUIDirty();" />
+      <MemberSignature Language="F#" Value="abstract member SetUIDirty : unit -&gt; unit" Usage="iUIService.SetUIDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowComponentEditor(System.Object,System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowComponentEditor (component As Object, parent As IWin32Window) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShowComponentEditor(System::Object ^ component, System::Windows::Forms::IWin32Window ^ parent);" />
+      <MemberSignature Language="F#" Value="abstract member ShowComponentEditor : obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="iUIService.ShowComponentEditor (component, parent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult ShowDialog(class System.Windows.Forms.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowDialog(System.Windows.Forms.Form)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DialogResult ShowDialog(System::Windows::Forms::Form ^ form);" />
+      <MemberSignature Language="F#" Value="abstract member ShowDialog : System.Windows.Forms.Form -&gt; System.Windows.Forms.DialogResult" Usage="iUIService.ShowDialog form" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowError(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowError (ex As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowError(Exception ^ ex);" />
+      <MemberSignature Language="F#" Value="abstract member ShowError : Exception -&gt; unit" Usage="iUIService.ShowError ex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -243,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowError(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowError (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowError(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ShowError : string -&gt; unit" Usage="iUIService.ShowError message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -273,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowError(System.Exception,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowError (ex As Exception, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowError(Exception ^ ex, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ShowError : Exception * string -&gt; unit" Usage="iUIService.ShowError (ex, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowMessage (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowMessage(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ShowMessage : string -&gt; unit" Usage="iUIService.ShowMessage message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -362,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowMessage(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowMessage (message As String, caption As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowMessage(System::String ^ message, System::String ^ caption);" />
+      <MemberSignature Language="F#" Value="abstract member ShowMessage : string * string -&gt; unit" Usage="iUIService.ShowMessage (message, caption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -403,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowMessage(System.String,System.String,System.Windows.Forms.MessageBoxButtons)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowMessage (message As String, caption As String, buttons As MessageBoxButtons) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DialogResult ShowMessage(System::String ^ message, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons);" />
+      <MemberSignature Language="F#" Value="abstract member ShowMessage : string * string * System.Windows.Forms.MessageBoxButtons -&gt; System.Windows.Forms.DialogResult" Usage="iUIService.ShowMessage (message, caption, buttons)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -449,6 +461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IUIService.ShowToolWindow(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowToolWindow (toolWindow As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShowToolWindow(Guid toolWindow);" />
+      <MemberSignature Language="F#" Value="abstract member ShowToolWindow : Guid -&gt; bool" Usage="iUIService.ShowToolWindow toolWindow" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -486,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.IUIService.Styles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Styles As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Styles { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Styles : System.Collections.IDictionary" Usage="System.Windows.Forms.Design.IUIService.Styles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

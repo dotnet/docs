@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class StrokeCollection&#xA;Inherits Collection(Of Stroke)&#xA;Implements INotifyCollectionChanged, INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class StrokeCollection : System::Collections::ObjectModel::Collection&lt;System::Windows::Ink::Stroke ^&gt;, System::Collections::Specialized::INotifyCollectionChanged, System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type StrokeCollection = class&#xA;    inherit Collection&lt;Stroke&gt;&#xA;    interface INotifyPropertyChanged&#xA;    interface INotifyCollectionChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Ink.Stroke})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (strokes As IEnumerable(Of Stroke))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StrokeCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Ink::Stroke ^&gt; ^ strokes);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Ink.StrokeCollection : seq&lt;System.Windows.Ink.Stroke&gt; -&gt; System.Windows.Ink.StrokeCollection" Usage="new System.Windows.Ink.StrokeCollection strokes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StrokeCollection(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Ink.StrokeCollection : System.IO.Stream -&gt; System.Windows.Ink.StrokeCollection" Usage="new System.Windows.Ink.StrokeCollection stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Add(System.Windows.Ink.StrokeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (strokes As StrokeCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Ink::StrokeCollection ^ strokes);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Windows.Ink.StrokeCollection -&gt; unit" Usage="strokeCollection.Add strokes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.AddPropertyData(System.Guid,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPropertyData (propertyDataId As Guid, propertyData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPropertyData(Guid propertyDataId, System::Object ^ propertyData);" />
+      <MemberSignature Language="F#" Value="member this.AddPropertyData : Guid * obj -&gt; unit" Usage="strokeCollection.AddPropertyData (propertyDataId, propertyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -254,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="strokeCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Clip(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clip (lassoPoints As IEnumerable(Of Point))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clip(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ lassoPoints);" />
+      <MemberSignature Language="F#" Value="member this.Clip : seq&lt;System.Windows.Point&gt; -&gt; unit" Usage="strokeCollection.Clip lassoPoints" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -323,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Clip(System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clip (bounds As Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clip(System::Windows::Rect bounds);" />
+      <MemberSignature Language="F#" Value="member this.Clip : System.Windows.Rect -&gt; unit" Usage="strokeCollection.Clip bounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -361,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Ink::StrokeCollection ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Windows.Ink.StrokeCollection&#xA;override this.Clone : unit -&gt; System.Windows.Ink.StrokeCollection" Usage="strokeCollection.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -401,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.ContainsPropertyData(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsPropertyData (propertyDataId As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsPropertyData(Guid propertyDataId);" />
+      <MemberSignature Language="F#" Value="member this.ContainsPropertyData : Guid -&gt; bool" Usage="strokeCollection.ContainsPropertyData propertyDataId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -436,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Draw(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Draw (context As DrawingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Draw(System::Windows::Media::DrawingContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Draw : System.Windows.Media.DrawingContext -&gt; unit" Usage="strokeCollection.Draw context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -478,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Erase(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Erase (lassoPoints As IEnumerable(Of Point))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Erase(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ lassoPoints);" />
+      <MemberSignature Language="F#" Value="member this.Erase : seq&lt;System.Windows.Point&gt; -&gt; unit" Usage="strokeCollection.Erase lassoPoints" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -520,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Erase(System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Erase (bounds As Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Erase(System::Windows::Rect bounds);" />
+      <MemberSignature Language="F#" Value="member this.Erase : System.Windows.Rect -&gt; unit" Usage="strokeCollection.Erase bounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -560,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Erase(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Windows.Ink.StylusShape)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Erase (eraserPath As IEnumerable(Of Point), eraserShape As StylusShape)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Erase(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ eraserPath, System::Windows::Ink::StylusShape ^ eraserShape);" />
+      <MemberSignature Language="F#" Value="member this.Erase : seq&lt;System.Windows.Point&gt; * System.Windows.Ink.StylusShape -&gt; unit" Usage="strokeCollection.Erase (eraserPath, eraserShape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -602,6 +616,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetBounds" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBounds () As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect GetBounds();" />
+      <MemberSignature Language="F#" Value="member this.GetBounds : unit -&gt; System.Windows.Rect" Usage="strokeCollection.GetBounds " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -638,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetIncrementalLassoHitTester(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIncrementalLassoHitTester (percentageWithinLasso As Integer) As IncrementalLassoHitTester" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::IncrementalLassoHitTester ^ GetIncrementalLassoHitTester(int percentageWithinLasso);" />
+      <MemberSignature Language="F#" Value="member this.GetIncrementalLassoHitTester : int -&gt; System.Windows.Ink.IncrementalLassoHitTester" Usage="strokeCollection.GetIncrementalLassoHitTester percentageWithinLasso" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -677,6 +693,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester(System.Windows.Ink.StylusShape)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIncrementalStrokeHitTester (eraserShape As StylusShape) As IncrementalStrokeHitTester" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::IncrementalStrokeHitTester ^ GetIncrementalStrokeHitTester(System::Windows::Ink::StylusShape ^ eraserShape);" />
+      <MemberSignature Language="F#" Value="member this.GetIncrementalStrokeHitTester : System.Windows.Ink.StylusShape -&gt; System.Windows.Ink.IncrementalStrokeHitTester" Usage="strokeCollection.GetIncrementalStrokeHitTester eraserShape" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -716,6 +733,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetPropertyData(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyData (propertyDataId As Guid) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyData(Guid propertyDataId);" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyData : Guid -&gt; obj" Usage="strokeCollection.GetPropertyData propertyDataId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -757,6 +775,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetPropertyDataIds" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyDataIds () As Guid()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Guid&gt; ^ GetPropertyDataIds();" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyDataIds : unit -&gt; Guid[]" Usage="strokeCollection.GetPropertyDataIds " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -796,6 +815,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection HitTest(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ HitTest(System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : System.Windows.Point -&gt; System.Windows.Ink.StrokeCollection" Usage="strokeCollection.HitTest point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -830,6 +850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function HitTest (lassoPoints As IEnumerable(Of Point), percentageWithinLasso As Integer) As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ HitTest(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ lassoPoints, int percentageWithinLasso);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : seq&lt;System.Windows.Point&gt; * int -&gt; System.Windows.Ink.StrokeCollection" Usage="strokeCollection.HitTest (lassoPoints, percentageWithinLasso)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -875,6 +896,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection HitTest(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; path, class System.Windows.Ink.StylusShape stylusShape) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Windows.Ink.StylusShape)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ HitTest(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ path, System::Windows::Ink::StylusShape ^ stylusShape);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : seq&lt;System.Windows.Point&gt; * System.Windows.Ink.StylusShape -&gt; System.Windows.Ink.StrokeCollection" Usage="strokeCollection.HitTest (path, stylusShape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -910,6 +932,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection HitTest(valuetype System.Windows.Point point, float64 diameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Point,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ HitTest(System::Windows::Point point, double diameter);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : System.Windows.Point * double -&gt; System.Windows.Ink.StrokeCollection" Usage="strokeCollection.HitTest (point, diameter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -946,6 +969,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Rect,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function HitTest (bounds As Rect, percentageWithinBounds As Integer) As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ HitTest(System::Windows::Rect bounds, int percentageWithinBounds);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : System.Windows.Rect * int -&gt; System.Windows.Ink.StrokeCollection" Usage="strokeCollection.HitTest (bounds, percentageWithinBounds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -981,6 +1005,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Ink.Stroke stroke) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.IndexOf(System.Windows.Ink.Stroke)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Ink::Stroke ^ stroke);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : System.Windows.Ink.Stroke -&gt; int" Usage="strokeCollection.IndexOf stroke" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1012,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.StrokeCollection.InkSerializedFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InkSerializedFormat As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ InkSerializedFormat;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InkSerializedFormat : string" Usage="System.Windows.Ink.StrokeCollection.InkSerializedFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1045,6 +1071,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Windows.Ink.Stroke stroke) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.InsertItem(System.Int32,System.Windows.Ink.Stroke)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Windows::Ink::Stroke ^ stroke);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Windows.Ink.Stroke -&gt; unit" Usage="strokeCollection.InsertItem (index, stroke)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1070,6 +1097,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="strokeCollection.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1093,6 +1121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.OnPropertyDataChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyDataChanged (e As PropertyDataChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyDataChanged(System::Windows::Ink::PropertyDataChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventArgs -&gt; unit&#xA;override this.OnPropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventArgs -&gt; unit" Usage="strokeCollection.OnPropertyDataChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1116,6 +1145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.OnStrokesChanged(System.Windows.Ink.StrokeCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStrokesChanged (e As StrokeCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStrokesChanged(System::Windows::Ink::StrokeCollectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnStrokesChanged : System.Windows.Ink.StrokeCollectionChangedEventArgs -&gt; unit&#xA;override this.OnStrokesChanged : System.Windows.Ink.StrokeCollectionChangedEventArgs -&gt; unit" Usage="strokeCollection.OnStrokesChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1151,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Ink.StrokeCollection.PropertyDataChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyDataChanged As PropertyDataChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::PropertyDataChangedEventHandler ^ PropertyDataChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventHandler " Usage="member this.PropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1180,6 +1211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Remove(System.Windows.Ink.StrokeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (strokes As StrokeCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Ink::StrokeCollection ^ strokes);" />
+      <MemberSignature Language="F#" Value="override this.Remove : System.Windows.Ink.StrokeCollection -&gt; unit" Usage="strokeCollection.Remove strokes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1218,6 +1250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="strokeCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1241,6 +1274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.RemovePropertyData(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyData (propertyDataId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyData(Guid propertyDataId);" />
+      <MemberSignature Language="F#" Value="member this.RemovePropertyData : Guid -&gt; unit" Usage="strokeCollection.RemovePropertyData propertyDataId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1283,6 +1317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Replace(System.Windows.Ink.Stroke,System.Windows.Ink.StrokeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Replace (strokeToReplace As Stroke, strokesToReplaceWith As StrokeCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Replace(System::Windows::Ink::Stroke ^ strokeToReplace, System::Windows::Ink::StrokeCollection ^ strokesToReplaceWith);" />
+      <MemberSignature Language="F#" Value="member this.Replace : System.Windows.Ink.Stroke * System.Windows.Ink.StrokeCollection -&gt; unit" Usage="strokeCollection.Replace (strokeToReplace, strokesToReplaceWith)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1333,6 +1368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Replace(System.Windows.Ink.StrokeCollection,System.Windows.Ink.StrokeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Replace (strokesToReplace As StrokeCollection, strokesToReplaceWith As StrokeCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Replace(System::Windows::Ink::StrokeCollection ^ strokesToReplace, System::Windows::Ink::StrokeCollection ^ strokesToReplaceWith);" />
+      <MemberSignature Language="F#" Value="member this.Replace : System.Windows.Ink.StrokeCollection * System.Windows.Ink.StrokeCollection -&gt; unit" Usage="strokeCollection.Replace (strokesToReplace, strokesToReplaceWith)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1395,6 +1431,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Save(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream -&gt; unit" Usage="strokeCollection.Save stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1432,6 +1469,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.Stream stream, bool compress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Save(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save(System::IO::Stream ^ stream, bool compress);" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.IO.Stream * bool -&gt; unit&#xA;override this.Save : System.IO.Stream * bool -&gt; unit" Usage="strokeCollection.Save (stream, compress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1472,6 +1510,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Windows.Ink.Stroke stroke) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.SetItem(System.Int32,System.Windows.Ink.Stroke)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Windows::Ink::Stroke ^ stroke);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Windows.Ink.Stroke -&gt; unit" Usage="strokeCollection.SetItem (index, stroke)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1497,6 +1536,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Ink.StrokeCollection.StrokesChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event StrokesChanged As StrokeCollectionChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::StrokeCollectionChangedEventHandler ^ StrokesChanged;" />
+      <MemberSignature Language="F#" Value="member this.StrokesChanged : System.Windows.Ink.StrokeCollectionChangedEventHandler " Usage="member this.StrokesChanged : System.Windows.Ink.StrokeCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1526,6 +1566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Transform(System.Windows.Media.Matrix,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (transformMatrix As Matrix, applyToStylusTip As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Windows::Media::Matrix transformMatrix, bool applyToStylusTip);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Matrix * bool -&gt; unit" Usage="strokeCollection.Transform (transformMatrix, applyToStylusTip)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

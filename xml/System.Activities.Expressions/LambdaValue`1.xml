@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.LambdaValue`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LambdaValue(Of TResult)&#xA;Inherits CodeActivity(Of TResult)&#xA;Implements IValueSerializableExpression" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class LambdaValue sealed : System::Activities::CodeActivity&lt;TResult&gt;, System::Activities::XamlIntegration::IValueSerializableExpression" />
+  <TypeSignature Language="F#" Value="type LambdaValue&lt;'Result&gt; = class&#xA;    inherit CodeActivity&lt;'Result&gt;&#xA;    interface IValueSerializableExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lambdaValue As Expression(Of Func(Of ActivityContext, TResult)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LambdaValue(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, TResult&gt; ^&gt; ^ lambdaValue);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Expressions.LambdaValue&lt;'Result&gt; : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'Result&gt;&gt; -&gt; System.Activities.Expressions.LambdaValue&lt;'Result&gt;" Usage="new System.Activities.Expressions.LambdaValue&lt;'Result&gt; lambdaValue" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="lambdaValue.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.CanConvertToString(System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanConvertToString (context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanConvertToString(System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; bool&#xA;override this.CanConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="lambdaValue.CanConvertToString context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.XamlIntegration.IValueSerializableExpression.CanConvertToString(System.Windows.Markup.IValueSerializerContext)</InterfaceMember>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.ConvertToString(System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToString (context As IValueSerializerContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ConvertToString(System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; string&#xA;override this.ConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="lambdaValue.ConvertToString context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.XamlIntegration.IValueSerializableExpression.ConvertToString(System.Windows.Markup.IValueSerializerContext)</InterfaceMember>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As TResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TResult Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'Result" Usage="lambdaValue.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

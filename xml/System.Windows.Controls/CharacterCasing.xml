@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CharacterCasing" />
   <TypeSignature Language="VB.NET" Value="Public Enum CharacterCasing" />
   <TypeSignature Language="C++ CLI" Value="public enum class CharacterCasing" />
+  <TypeSignature Language="F#" Value="type CharacterCasing = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CharacterCasing.Lower" />
       <MemberSignature Language="VB.NET" Value="Lower" />
       <MemberSignature Language="C++ CLI" Value="Lower" />
+      <MemberSignature Language="F#" Value="Lower = 1" Usage="System.Windows.Controls.CharacterCasing.Lower" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CharacterCasing.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Controls.CharacterCasing.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CharacterCasing.Upper" />
       <MemberSignature Language="VB.NET" Value="Upper" />
       <MemberSignature Language="C++ CLI" Value="Upper" />
+      <MemberSignature Language="F#" Value="Upper = 2" Usage="System.Windows.Controls.CharacterCasing.Upper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509ChainElement" />
   <TypeSignature Language="VB.NET" Value="Public Class X509ChainElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509ChainElement" />
+  <TypeSignature Language="F#" Value="type X509ChainElement = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainElement.Certificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ Certificate { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Certificate : System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="System.Security.Cryptography.X509Certificates.X509ChainElement.Certificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainElement.ChainElementStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChainElementStatus As X509ChainStatus()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Security::Cryptography::X509Certificates::X509ChainStatus&gt; ^ ChainElementStatus { cli::array &lt;System::Security::Cryptography::X509Certificates::X509ChainStatus&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChainElementStatus : System.Security.Cryptography.X509Certificates.X509ChainStatus[]" Usage="System.Security.Cryptography.X509Certificates.X509ChainElement.ChainElementStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainElement.Information" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Information As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Information { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Information : string" Usage="System.Security.Cryptography.X509Certificates.X509ChainElement.Information" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

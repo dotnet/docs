@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.KeyTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyTypes" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyTypes abstract sealed" />
+  <TypeSignature Language="F#" Value="type KeyTypes = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Asymmetric" />
       <MemberSignature Language="VB.NET" Value="Public Const Asymmetric As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Asymmetric;" />
+      <MemberSignature Language="F#" Value="val mutable Asymmetric : string" Usage="System.IdentityModel.Protocols.WSTrust.KeyTypes.Asymmetric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Bearer" />
       <MemberSignature Language="VB.NET" Value="Public Const Bearer As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Bearer;" />
+      <MemberSignature Language="F#" Value="val mutable Bearer : string" Usage="System.IdentityModel.Protocols.WSTrust.KeyTypes.Bearer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Symmetric" />
       <MemberSignature Language="VB.NET" Value="Public Const Symmetric As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Symmetric;" />
+      <MemberSignature Language="F#" Value="val mutable Symmetric : string" Usage="System.IdentityModel.Protocols.WSTrust.KeyTypes.Symmetric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

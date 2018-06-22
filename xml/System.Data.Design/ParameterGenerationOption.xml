@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Design.ParameterGenerationOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ParameterGenerationOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class ParameterGenerationOption" />
+  <TypeSignature Language="F#" Value="type ParameterGenerationOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Design.ParameterGenerationOption.ClrTypes" />
       <MemberSignature Language="VB.NET" Value="ClrTypes" />
       <MemberSignature Language="C++ CLI" Value="ClrTypes" />
+      <MemberSignature Language="F#" Value="ClrTypes = 0" Usage="System.Data.Design.ParameterGenerationOption.ClrTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Design.ParameterGenerationOption.Objects" />
       <MemberSignature Language="VB.NET" Value="Objects" />
       <MemberSignature Language="C++ CLI" Value="Objects" />
+      <MemberSignature Language="F#" Value="Objects = 2" Usage="System.Data.Design.ParameterGenerationOption.Objects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Design.ParameterGenerationOption.SqlTypes" />
       <MemberSignature Language="VB.NET" Value="SqlTypes" />
       <MemberSignature Language="C++ CLI" Value="SqlTypes" />
+      <MemberSignature Language="F#" Value="SqlTypes = 1" Usage="System.Data.Design.ParameterGenerationOption.SqlTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

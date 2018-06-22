@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessagePropagationFilter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PeerMessagePropagationFilter" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerMessagePropagationFilter abstract" />
+  <TypeSignature Language="F#" Value="type PeerMessagePropagationFilter = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.ServiceModel.PeerMessagePropagation ShouldMessagePropagate(class System.ServiceModel.Channels.Message message, valuetype System.ServiceModel.PeerMessageOrigination origination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerMessagePropagationFilter.ShouldMessagePropagate(System.ServiceModel.Channels.Message,System.ServiceModel.PeerMessageOrigination)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::PeerMessagePropagation ShouldMessagePropagate(System::ServiceModel::Channels::Message ^ message, System::ServiceModel::PeerMessageOrigination origination);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldMessagePropagate : System.ServiceModel.Channels.Message * System.ServiceModel.PeerMessageOrigination -&gt; System.ServiceModel.PeerMessagePropagation" Usage="peerMessagePropagationFilter.ShouldMessagePropagate (message, origination)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

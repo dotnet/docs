@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.LocalizedEntryCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Class LocalizedEntryCollection(Of T)&#xA;Inherits KeyedCollection(Of CultureInfo, T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : LocalizedEntrypublic ref class LocalizedEntryCollection : System::Collections::ObjectModel::KeyedCollection&lt;System::Globalization::CultureInfo ^, T&gt;" />
+  <TypeSignature Language="F#" Value="type LocalizedEntryCollection&lt;'T (requires 'T :&gt; LocalizedEntry)&gt; = class&#xA;    inherit KeyedCollection&lt;CultureInfo, 'T (requires 'T :&gt; LocalizedEntry)&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedEntryCollection`1.GetKeyForItem(`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As T) As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Globalization::CultureInfo ^ GetKeyForItem(T item);" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : 'T -&gt; System.Globalization.CultureInfo&#xA;override this.GetKeyForItem : 'T -&gt; System.Globalization.CultureInfo" Usage="localizedEntryCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

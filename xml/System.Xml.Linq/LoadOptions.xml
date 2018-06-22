@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.LoadOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum LoadOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class LoadOptions" />
+  <TypeSignature Language="F#" Value="type LoadOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -151,6 +152,7 @@ Root                1    2
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.LoadOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Linq.LoadOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -182,6 +184,7 @@ Root                1    2
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.LoadOptions.PreserveWhitespace" />
       <MemberSignature Language="VB.NET" Value="PreserveWhitespace" />
       <MemberSignature Language="C++ CLI" Value="PreserveWhitespace" />
+      <MemberSignature Language="F#" Value="PreserveWhitespace = 1" Usage="System.Xml.Linq.LoadOptions.PreserveWhitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -213,6 +216,7 @@ Root                1    2
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.LoadOptions.SetBaseUri" />
       <MemberSignature Language="VB.NET" Value="SetBaseUri" />
       <MemberSignature Language="C++ CLI" Value="SetBaseUri" />
+      <MemberSignature Language="F#" Value="SetBaseUri = 2" Usage="System.Xml.Linq.LoadOptions.SetBaseUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -244,6 +248,7 @@ Root                1    2
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.LoadOptions.SetLineInfo" />
       <MemberSignature Language="VB.NET" Value="SetLineInfo" />
       <MemberSignature Language="C++ CLI" Value="SetLineInfo" />
+      <MemberSignature Language="F#" Value="SetLineInfo = 4" Usage="System.Xml.Linq.LoadOptions.SetLineInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

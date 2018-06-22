@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.DictionarySectionHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class DictionarySectionHandler&#xA;Implements IConfigurationSectionHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class DictionarySectionHandler : System::Configuration::IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type DictionarySectionHandler = class&#xA;    interface IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.DictionarySectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (parent As Object, context As Object, section As XmlNode) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::Object ^ parent, System::Object ^ context, System::Xml::XmlNode ^ section);" />
+      <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="dictionarySectionHandler.Create (parent, context, section)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)</InterfaceMember>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.DictionarySectionHandler.KeyAttributeName" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property KeyAttributeName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ KeyAttributeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyAttributeName : string" Usage="System.Configuration.DictionarySectionHandler.KeyAttributeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.DictionarySectionHandler.ValueAttributeName" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ValueAttributeName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ValueAttributeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueAttributeName : string" Usage="System.Configuration.DictionarySectionHandler.ValueAttributeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Nullable`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure Nullable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : value classpublic value class Nullable" />
+  <TypeSignature Language="F#" Value="type Nullable&lt;'T (requires 'T : struct)&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable(T value);" />
+      <MemberSignature Language="F#" Value="new Nullable&lt;'T (requires 'T : struct)&gt; : 'T -&gt; Nullable&lt;'T (requires 'T : struct)&gt;" Usage="new System.Nullable&lt;'T (requires 'T : struct)&gt; value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="nullable.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -205,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="nullable.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -253,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.GetValueOrDefault" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueOrDefault () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T GetValueOrDefault();" />
+      <MemberSignature Language="F#" Value="member this.GetValueOrDefault : unit -&gt; 'T" Usage="nullable.GetValueOrDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -304,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.GetValueOrDefault(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueOrDefault (defaultValue As T) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T GetValueOrDefault(T defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.GetValueOrDefault : 'T -&gt; 'T" Usage="nullable.GetValueOrDefault defaultValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -358,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Nullable`1.HasValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="System.Nullable&lt;'T (requires 'T : struct)&gt;.HasValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -408,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.op_Explicit(System.Nullable{`0})~`0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Nullable(Of T)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator T(Nullable&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; 'T" Usage="System.Nullable&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -461,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.op_Implicit(`0)~System.Nullable{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As T) As Nullable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Nullable&lt;T&gt;(T value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'T -&gt; Nullable&lt;'T (requires 'T : struct)&gt;" Usage="System.Nullable&lt;'T (requires 'T : struct)&gt;.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -508,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="nullable.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -558,6 +568,7 @@
       <MemberSignature Language="DocId" Value="P:System.Nullable`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="System.Nullable&lt;'T (requires 'T : struct)&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

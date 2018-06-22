@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRelationCollection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataRelationCollection&#xA;Inherits InternalDataCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataRelationCollection abstract : System::Data::InternalDataCollectionBase" />
+  <TypeSignature Language="F#" Value="type DataRelationCollection = class&#xA;    inherit InternalDataCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Add(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (relation As DataRelation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Data.DataRelation -&gt; unit" Usage="dataRelationCollection.Add relation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Add(System.Data.DataColumn,System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (parentColumn As DataColumn, childColumn As DataColumn) As DataRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataRelation ^ Add(System::Data::DataColumn ^ parentColumn, System::Data::DataColumn ^ childColumn);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Data.DataColumn * System.Data.DataColumn -&gt; System.Data.DataRelation&#xA;override this.Add : System.Data.DataColumn * System.Data.DataColumn -&gt; System.Data.DataRelation" Usage="dataRelationCollection.Add (parentColumn, childColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Add(System.Data.DataColumn[],System.Data.DataColumn[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (parentColumns As DataColumn(), childColumns As DataColumn()) As DataRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataRelation ^ Add(cli::array &lt;System::Data::DataColumn ^&gt; ^ parentColumns, cli::array &lt;System::Data::DataColumn ^&gt; ^ childColumns);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Data.DataColumn[] * System.Data.DataColumn[] -&gt; System.Data.DataRelation&#xA;override this.Add : System.Data.DataColumn[] * System.Data.DataColumn[] -&gt; System.Data.DataRelation" Usage="dataRelationCollection.Add (parentColumns, childColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -231,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Add(System.String,System.Data.DataColumn,System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (name As String, parentColumn As DataColumn, childColumn As DataColumn) As DataRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataRelation ^ Add(System::String ^ name, System::Data::DataColumn ^ parentColumn, System::Data::DataColumn ^ childColumn);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Data.DataColumn * System.Data.DataColumn -&gt; System.Data.DataRelation&#xA;override this.Add : string * System.Data.DataColumn * System.Data.DataColumn -&gt; System.Data.DataRelation" Usage="dataRelationCollection.Add (name, parentColumn, childColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -276,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Add(System.String,System.Data.DataColumn[],System.Data.DataColumn[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (name As String, parentColumns As DataColumn(), childColumns As DataColumn()) As DataRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataRelation ^ Add(System::String ^ name, cli::array &lt;System::Data::DataColumn ^&gt; ^ parentColumns, cli::array &lt;System::Data::DataColumn ^&gt; ^ childColumns);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Data.DataColumn[] * System.Data.DataColumn[] -&gt; System.Data.DataRelation&#xA;override this.Add : string * System.Data.DataColumn[] * System.Data.DataColumn[] -&gt; System.Data.DataRelation" Usage="dataRelationCollection.Add (name, parentColumns, childColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -333,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Add(System.String,System.Data.DataColumn,System.Data.DataColumn,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (name As String, parentColumn As DataColumn, childColumn As DataColumn, createConstraints As Boolean) As DataRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataRelation ^ Add(System::String ^ name, System::Data::DataColumn ^ parentColumn, System::Data::DataColumn ^ childColumn, bool createConstraints);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Data.DataColumn * System.Data.DataColumn * bool -&gt; System.Data.DataRelation&#xA;override this.Add : string * System.Data.DataColumn * System.Data.DataColumn * bool -&gt; System.Data.DataRelation" Usage="dataRelationCollection.Add (name, parentColumn, childColumn, createConstraints)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -381,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Add(System.String,System.Data.DataColumn[],System.Data.DataColumn[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (name As String, parentColumns As DataColumn(), childColumns As DataColumn(), createConstraints As Boolean) As DataRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataRelation ^ Add(System::String ^ name, cli::array &lt;System::Data::DataColumn ^&gt; ^ parentColumns, cli::array &lt;System::Data::DataColumn ^&gt; ^ childColumns, bool createConstraints);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Data.DataColumn[] * System.Data.DataColumn[] * bool -&gt; System.Data.DataRelation&#xA;override this.Add : string * System.Data.DataColumn[] * System.Data.DataColumn[] * bool -&gt; System.Data.DataRelation" Usage="dataRelationCollection.Add (name, parentColumns, childColumns, createConstraints)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -433,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.AddCore(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddCore (relation As DataRelation)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddCore(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="F#" Value="abstract member AddCore : System.Data.DataRelation -&gt; unit&#xA;override this.AddCore : System.Data.DataRelation -&gt; unit" Usage="dataRelationCollection.AddCore relation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -469,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.AddRange(System.Data.DataRelation[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (relations As DataRelation())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(cli::array &lt;System::Data::DataRelation ^&gt; ^ relations);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Data.DataRelation[] -&gt; unit&#xA;override this.AddRange : System.Data.DataRelation[] -&gt; unit" Usage="dataRelationCollection.AddRange relations" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -515,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.CanRemove(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanRemove (relation As DataRelation) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanRemove(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="F#" Value="abstract member CanRemove : System.Data.DataRelation -&gt; bool&#xA;override this.CanRemove : System.Data.DataRelation -&gt; bool" Usage="dataRelationCollection.CanRemove relation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -550,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="dataRelationCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -580,6 +592,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.DataRelationCollection.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanged As CollectionChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -609,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool&#xA;override this.Contains : string -&gt; bool" Usage="dataRelationCollection.Contains name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -644,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.CopyTo(System.Data.DataRelation[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataRelation(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::DataRelation ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.DataRelation[] * int -&gt; unit" Usage="dataRelationCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -679,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.GetDataSet" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetDataSet () As DataSet" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::DataSet ^ GetDataSet();" />
+      <MemberSignature Language="F#" Value="abstract member GetDataSet : unit -&gt; System.Data.DataSet" Usage="dataRelationCollection.GetDataSet " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -720,6 +736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.IndexOf(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (relation As DataRelation) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Data.DataRelation -&gt; int&#xA;override this.IndexOf : System.Data.DataRelation -&gt; int" Usage="dataRelationCollection.IndexOf relation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -754,6 +771,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (relationName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ relationName);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : string -&gt; int&#xA;override this.IndexOf : string -&gt; int" Usage="dataRelationCollection.IndexOf relationName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -798,6 +816,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelationCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(index As Integer) As DataRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::DataRelation ^ default[int] { System::Data::DataRelation ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.DataRelation" Usage="System.Data.DataRelationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -833,6 +852,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelationCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(name As String) As DataRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::DataRelation ^ default[System::String ^] { System::Data::DataRelation ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Data.DataRelation" Usage="System.Data.DataRelationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -867,6 +887,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (ccevent As CollectionChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="dataRelationCollection.OnCollectionChanged ccevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -910,6 +931,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.OnCollectionChanging(System.ComponentModel.CollectionChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanging (ccevent As CollectionChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanging(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanging : System.ComponentModel.CollectionChangeEventArgs -&gt; unit&#xA;override this.OnCollectionChanging : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="dataRelationCollection.OnCollectionChanging ccevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -963,6 +985,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Remove(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (relation As DataRelation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Data.DataRelation -&gt; unit" Usage="dataRelationCollection.Remove relation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1005,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="dataRelationCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1046,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="dataRelationCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1087,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelationCollection.RemoveCore(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RemoveCore (relation As DataRelation)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RemoveCore(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveCore : System.Data.DataRelation -&gt; unit&#xA;override this.RemoveCore : System.Data.DataRelation -&gt; unit" Usage="dataRelationCollection.RemoveCore relation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

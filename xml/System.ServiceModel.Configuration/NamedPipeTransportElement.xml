@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NamedPipeTransportElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeTransportElement&#xA;Inherits ConnectionOrientedTransportElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamedPipeTransportElement sealed : System::ServiceModel::Configuration::ConnectionOrientedTransportElement" />
+  <TypeSignature Language="F#" Value="type NamedPipeTransportElement = class&#xA;    inherit ConnectionOrientedTransportElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NamedPipeTransportElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="namedPipeTransportElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedPipeTransportElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.NamedPipeTransportElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedPipeTransportElement.ConnectionPoolSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionPoolSettings As NamedPipeConnectionPoolSettingsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::NamedPipeConnectionPoolSettingsElement ^ ConnectionPoolSettings { System::ServiceModel::Configuration::NamedPipeConnectionPoolSettingsElement ^ get(); void set(System::ServiceModel::Configuration::NamedPipeConnectionPoolSettingsElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionPoolSettings : System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement with get, set" Usage="System.ServiceModel.Configuration.NamedPipeTransportElement.ConnectionPoolSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NamedPipeTransportElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="namedPipeTransportElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NamedPipeTransportElement.CreateDefaultBindingElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDefaultBindingElement () As TransportBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::TransportBindingElement ^ CreateDefaultBindingElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateDefaultBindingElement : unit -&gt; System.ServiceModel.Channels.TransportBindingElement" Usage="namedPipeTransportElement.CreateDefaultBindingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NamedPipeTransportElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="namedPipeTransportElement.InitializeFrom bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedPipeTransportElement.PipeSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property PipeSettings As NamedPipeSettingsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::NamedPipeSettingsElement ^ PipeSettings { System::ServiceModel::Configuration::NamedPipeSettingsElement ^ get(); void set(System::ServiceModel::Configuration::NamedPipeSettingsElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PipeSettings : System.ServiceModel.Configuration.NamedPipeSettingsElement with get, set" Usage="System.ServiceModel.Configuration.NamedPipeTransportElement.PipeSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -199,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedPipeTransportElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NamedPipeTransportElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

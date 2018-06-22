@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.FlowDocumentReaderViewingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum FlowDocumentReaderViewingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class FlowDocumentReaderViewingMode" />
+  <TypeSignature Language="F#" Value="type FlowDocumentReaderViewingMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Page" />
       <MemberSignature Language="VB.NET" Value="Page" />
       <MemberSignature Language="C++ CLI" Value="Page" />
+      <MemberSignature Language="F#" Value="Page = 0" Usage="System.Windows.Controls.FlowDocumentReaderViewingMode.Page" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll" />
       <MemberSignature Language="VB.NET" Value="Scroll" />
       <MemberSignature Language="C++ CLI" Value="Scroll" />
+      <MemberSignature Language="F#" Value="Scroll = 2" Usage="System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.TwoPage" />
       <MemberSignature Language="VB.NET" Value="TwoPage" />
       <MemberSignature Language="C++ CLI" Value="TwoPage" />
+      <MemberSignature Language="F#" Value="TwoPage = 1" Usage="System.Windows.Controls.FlowDocumentReaderViewingMode.TwoPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseWheelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class MouseWheelEventArgs&#xA;Inherits MouseEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class MouseWheelEventArgs : System::Windows::Input::MouseEventArgs" />
+  <TypeSignature Language="F#" Value="type MouseWheelEventArgs = class&#xA;    inherit MouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseWheelEventArgs.#ctor(System.Windows.Input.MouseDevice,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mouse As MouseDevice, timestamp As Integer, delta As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MouseWheelEventArgs(System::Windows::Input::MouseDevice ^ mouse, int timestamp, int delta);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.MouseWheelEventArgs : System.Windows.Input.MouseDevice * int * int -&gt; System.Windows.Input.MouseWheelEventArgs" Usage="new System.Windows.Input.MouseWheelEventArgs (mouse, timestamp, delta)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseWheelEventArgs.Delta" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Delta As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Delta { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Delta : int" Usage="System.Windows.Input.MouseWheelEventArgs.Delta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseWheelEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="mouseWheelEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

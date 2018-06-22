@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.MetadataServices.MetaData" />
   <TypeSignature Language="VB.NET" Value="Public Class MetaData" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetaData" />
+  <TypeSignature Language="F#" Value="type MetaData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceFileToAssemblyFile(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ConvertCodeSourceFileToAssemblyFile (codePath As String, assemblyPath As String, strongNameFilename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertCodeSourceFileToAssemblyFile(System::String ^ codePath, System::String ^ assemblyPath, System::String ^ strongNameFilename);" />
+      <MemberSignature Language="F#" Value="static member ConvertCodeSourceFileToAssemblyFile : string * string * string -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceFileToAssemblyFile (codePath, assemblyPath, strongNameFilename)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceStreamToAssemblyFile(System.Collections.ArrayList,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ConvertCodeSourceStreamToAssemblyFile (outCodeStreamList As ArrayList, assemblyPath As String, strongNameFilename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertCodeSourceStreamToAssemblyFile(System::Collections::ArrayList ^ outCodeStreamList, System::String ^ assemblyPath, System::String ^ strongNameFilename);" />
+      <MemberSignature Language="F#" Value="static member ConvertCodeSourceStreamToAssemblyFile : System.Collections.ArrayList * string * string -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceStreamToAssemblyFile (outCodeStreamList, assemblyPath, strongNameFilename)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ConvertSchemaStreamToCodeSourceStream (clientProxy As Boolean, outputDirectory As String, inputStream As Stream, outCodeStreamList As ArrayList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, System::String ^ outputDirectory, System::IO::Stream ^ inputStream, System::Collections::ArrayList ^ outCodeStreamList);" />
+      <MemberSignature Language="F#" Value="static member ConvertSchemaStreamToCodeSourceStream : bool * string * System.IO.Stream * System.Collections.ArrayList -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream (clientProxy, outputDirectory, inputStream, outCodeStreamList)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ConvertSchemaStreamToCodeSourceStream (clientProxy As Boolean, outputDirectory As String, inputStream As Stream, outCodeStreamList As ArrayList, proxyUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, System::String ^ outputDirectory, System::IO::Stream ^ inputStream, System::Collections::ArrayList ^ outCodeStreamList, System::String ^ proxyUrl);" />
+      <MemberSignature Language="F#" Value="static member ConvertSchemaStreamToCodeSourceStream : bool * string * System.IO.Stream * System.Collections.ArrayList * string -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream (clientProxy, outputDirectory, inputStream, outCodeStreamList, proxyUrl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ConvertSchemaStreamToCodeSourceStream (clientProxy As Boolean, outputDirectory As String, inputStream As Stream, outCodeStreamList As ArrayList, proxyUrl As String, proxyNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, System::String ^ outputDirectory, System::IO::Stream ^ inputStream, System::Collections::ArrayList ^ outCodeStreamList, System::String ^ proxyUrl, System::String ^ proxyNamespace);" />
+      <MemberSignature Language="F#" Value="static member ConvertSchemaStreamToCodeSourceStream : bool * string * System.IO.Stream * System.Collections.ArrayList * string * string -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream (clientProxy, outputDirectory, inputStream, outCodeStreamList, proxyUrl, proxyNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -267,6 +273,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToFile(class System.Runtime.Remoting.MetadataServices.ServiceType[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile(System.Runtime.Remoting.MetadataServices.ServiceType[],System.Runtime.Remoting.MetadataServices.SdlType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertTypesToSchemaToFile(cli::array &lt;System::Runtime::Remoting::MetadataServices::ServiceType ^&gt; ^ types, System::Runtime::Remoting::MetadataServices::SdlType sdlType, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member ConvertTypesToSchemaToFile : System.Runtime.Remoting.MetadataServices.ServiceType[] * System.Runtime.Remoting.MetadataServices.SdlType * string -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile (types, sdlType, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -303,6 +310,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToFile(class System.Type[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile(System.Type[],System.Runtime.Remoting.MetadataServices.SdlType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertTypesToSchemaToFile(cli::array &lt;Type ^&gt; ^ types, System::Runtime::Remoting::MetadataServices::SdlType sdlType, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member ConvertTypesToSchemaToFile : Type[] * System.Runtime.Remoting.MetadataServices.SdlType * string -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile (types, sdlType, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -356,6 +364,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToStream(class System.Runtime.Remoting.MetadataServices.ServiceType[] serviceTypes, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, class System.IO.Stream outputStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream(System.Runtime.Remoting.MetadataServices.ServiceType[],System.Runtime.Remoting.MetadataServices.SdlType,System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertTypesToSchemaToStream(cli::array &lt;System::Runtime::Remoting::MetadataServices::ServiceType ^&gt; ^ serviceTypes, System::Runtime::Remoting::MetadataServices::SdlType sdlType, System::IO::Stream ^ outputStream);" />
+      <MemberSignature Language="F#" Value="static member ConvertTypesToSchemaToStream : System.Runtime.Remoting.MetadataServices.ServiceType[] * System.Runtime.Remoting.MetadataServices.SdlType * System.IO.Stream -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream (serviceTypes, sdlType, outputStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -389,6 +398,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToStream(class System.Type[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, class System.IO.Stream outputStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream(System.Type[],System.Runtime.Remoting.MetadataServices.SdlType,System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConvertTypesToSchemaToStream(cli::array &lt;Type ^&gt; ^ types, System::Runtime::Remoting::MetadataServices::SdlType sdlType, System::IO::Stream ^ outputStream);" />
+      <MemberSignature Language="F#" Value="static member ConvertTypesToSchemaToStream : Type[] * System.Runtime.Remoting.MetadataServices.SdlType * System.IO.Stream -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream (types, sdlType, outputStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -427,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RetrieveSchemaFromUrlToFile (url As String, path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RetrieveSchemaFromUrlToFile(System::String ^ url, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member RetrieveSchemaFromUrlToFile : string * string -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToFile (url, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -461,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToStream(System.String,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RetrieveSchemaFromUrlToStream (url As String, outputStream As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RetrieveSchemaFromUrlToStream(System::String ^ url, System::IO::Stream ^ outputStream);" />
+      <MemberSignature Language="F#" Value="static member RetrieveSchemaFromUrlToStream : string * System.IO.Stream -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToStream (url, outputStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -486,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.SaveStreamToFile(System.IO.Stream,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SaveStreamToFile (inputStream As Stream, path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SaveStreamToFile(System::IO::Stream ^ inputStream, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member SaveStreamToFile : System.IO.Stream * string -&gt; unit" Usage="System.Runtime.Remoting.MetadataServices.MetaData.SaveStreamToFile (inputStream, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

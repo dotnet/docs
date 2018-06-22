@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IPphManager" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPphManager" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPphManager" />
+  <TypeSignature Language="F#" Value="type IPphManager = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IPphManager.StartProcessProtocolListenerChannel(System.String,System.Web.Hosting.IListenerChannelCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartProcessProtocolListenerChannel (protocolId As String, listenerChannelCallback As IListenerChannelCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartProcessProtocolListenerChannel(System::String ^ protocolId, System::Web::Hosting::IListenerChannelCallback ^ listenerChannelCallback);" />
+      <MemberSignature Language="F#" Value="abstract member StartProcessProtocolListenerChannel : string * System.Web.Hosting.IListenerChannelCallback -&gt; unit" Usage="iPphManager.StartProcessProtocolListenerChannel (protocolId, listenerChannelCallback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IPphManager.StopProcessProtocol(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopProcessProtocol (protocolId As String, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopProcessProtocol(System::String ^ protocolId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopProcessProtocol : string * bool -&gt; unit" Usage="iPphManager.StopProcessProtocol (protocolId, immediate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IPphManager.StopProcessProtocolListenerChannel(System.String,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopProcessProtocolListenerChannel (protocolId As String, listenerChannelId As Integer, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopProcessProtocolListenerChannel(System::String ^ protocolId, int listenerChannelId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopProcessProtocolListenerChannel : string * int * bool -&gt; unit" Usage="iPphManager.StopProcessProtocolListenerChannel (protocolId, listenerChannelId, immediate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

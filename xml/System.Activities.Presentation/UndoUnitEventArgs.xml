@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.UndoUnitEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class UndoUnitEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class UndoUnitEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type UndoUnitEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.UndoUnitEventArgs.UndoUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property UndoUnit As UndoUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::UndoUnit ^ UndoUnit { System::Activities::Presentation::UndoUnit ^ get(); void set(System::Activities::Presentation::UndoUnit ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UndoUnit : System.Activities.Presentation.UndoUnit with get, set" Usage="System.Activities.Presentation.UndoUnitEventArgs.UndoUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

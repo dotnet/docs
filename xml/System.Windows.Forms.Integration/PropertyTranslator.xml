@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyTranslator" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyTranslator(host As Object, propertyName As String, value As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PropertyTranslator(System::Object ^ host, System::String ^ propertyName, System::Object ^ value);" />
+  <TypeSignature Language="F#" Value="type PropertyTranslator = delegate of obj * string * obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

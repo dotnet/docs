@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapAddressBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapAddressBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapAddressBinding : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type SoapAddressBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapAddressBinding.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="System.Web.Services.Description.SoapAddressBinding.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

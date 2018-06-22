@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqException" />
   <TypeSignature Language="VB.NET" Value="Public Class MsmqException&#xA;Inherits ExternalException" />
   <TypeSignature Language="C++ CLI" Value="public ref class MsmqException : System::Runtime::InteropServices::ExternalException" />
+  <TypeSignature Language="F#" Value="type MsmqException = class&#xA;    inherit ExternalException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.MsmqException : string -&gt; System.ServiceModel.MsmqException" Usage="new System.ServiceModel.MsmqException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MsmqException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.MsmqException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.MsmqException" Usage="new System.ServiceModel.MsmqException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.MsmqException : string * Exception -&gt; System.ServiceModel.MsmqException" Usage="new System.ServiceModel.MsmqException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, error As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqException(System::String ^ message, int error);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.MsmqException : string * int -&gt; System.ServiceModel.MsmqException" Usage="new System.ServiceModel.MsmqException (message, error)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

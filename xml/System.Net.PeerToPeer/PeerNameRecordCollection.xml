@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameRecordCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerNameRecordCollection&#xA;Inherits Collection(Of PeerNameRecord)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerNameRecordCollection : System::Collections::ObjectModel::Collection&lt;System::Net::PeerToPeer::PeerNameRecord ^&gt;" />
+  <TypeSignature Language="F#" Value="type PeerNameRecordCollection = class&#xA;    inherit Collection&lt;PeerNameRecord&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecordCollection.InsertItem(System.Int32,System.Net.PeerToPeer.PeerNameRecord)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As PeerNameRecord)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::PeerToPeer::PeerNameRecord ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.PeerToPeer.PeerNameRecord -&gt; unit" Usage="peerNameRecordCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecordCollection.SetItem(System.Int32,System.Net.PeerToPeer.PeerNameRecord)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As PeerNameRecord)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::PeerToPeer::PeerNameRecord ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.PeerToPeer.PeerNameRecord -&gt; unit" Usage="peerNameRecordCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

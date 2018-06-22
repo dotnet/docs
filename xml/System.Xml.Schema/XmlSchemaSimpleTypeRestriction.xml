@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSimpleTypeRestriction" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaSimpleTypeRestriction&#xA;Inherits XmlSchemaSimpleTypeContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaSimpleTypeRestriction : System::Xml::Schema::XmlSchemaSimpleTypeContent" />
+  <TypeSignature Language="F#" Value="type XmlSchemaSimpleTypeRestriction = class&#xA;    inherit XmlSchemaSimpleTypeContent" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseType As XmlSchemaSimpleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSimpleType ^ BaseType { System::Xml::Schema::XmlSchemaSimpleType ^ get(); void set(System::Xml::Schema::XmlSchemaSimpleType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseType : System.Xml.Schema.XmlSchemaSimpleType with get, set" Usage="System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseTypeName As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ BaseTypeName { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseTypeName : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.Facets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Facets As XmlSchemaObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectCollection ^ Facets { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Facets : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaSimpleTypeRestriction.Facets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

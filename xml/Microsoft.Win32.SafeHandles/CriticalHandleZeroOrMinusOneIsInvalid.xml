@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CriticalHandleZeroOrMinusOneIsInvalid&#xA;Inherits CriticalHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class CriticalHandleZeroOrMinusOneIsInvalid abstract : System::Runtime::InteropServices::CriticalHandle" />
+  <TypeSignature Language="F#" Value="type CriticalHandleZeroOrMinusOneIsInvalid = class&#xA;    inherit CriticalHandle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid.IsInvalid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

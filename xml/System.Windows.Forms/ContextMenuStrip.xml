@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContextMenuStrip" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextMenuStrip&#xA;Inherits ToolStripDropDownMenu" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextMenuStrip : System::Windows::Forms::ToolStripDropDownMenu" />
+  <TypeSignature Language="F#" Value="type ContextMenuStrip = class&#xA;    inherit ToolStripDropDownMenu" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenuStrip.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextMenuStrip(System::ComponentModel::IContainer ^ container);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ContextMenuStrip : System.ComponentModel.IContainer -&gt; System.Windows.Forms.ContextMenuStrip" Usage="new System.Windows.Forms.ContextMenuStrip container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenuStrip.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="contextMenuStrip.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenuStrip.SetVisibleCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetVisibleCore (visible As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetVisibleCore(bool visible);" />
+      <MemberSignature Language="F#" Value="override this.SetVisibleCore : bool -&gt; unit" Usage="contextMenuStrip.SetVisibleCore visible" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContextMenuStrip.SourceControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceControl As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ SourceControl { System::Windows::Forms::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceControl : System.Windows.Forms.Control" Usage="System.Windows.Forms.ContextMenuStrip.SourceControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

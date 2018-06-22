@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.EditorReuseAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EditorReuseAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditorReuseAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EditorReuseAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.EditorReuseAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reuseEditor As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EditorReuseAttribute(bool reuseEditor);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.PropertyEditing.EditorReuseAttribute : bool -&gt; System.Activities.Presentation.PropertyEditing.EditorReuseAttribute" Usage="new System.Activities.Presentation.PropertyEditing.EditorReuseAttribute reuseEditor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.EditorReuseAttribute.ReuseEditor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReuseEditor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReuseEditor { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReuseEditor : bool" Usage="System.Activities.Presentation.PropertyEditing.EditorReuseAttribute.ReuseEditor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

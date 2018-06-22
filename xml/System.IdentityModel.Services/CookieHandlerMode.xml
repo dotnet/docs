@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.CookieHandlerMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CookieHandlerMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CookieHandlerMode" />
+  <TypeSignature Language="F#" Value="type CookieHandlerMode = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.CookieHandlerMode.Chunked" />
       <MemberSignature Language="VB.NET" Value="Chunked" />
       <MemberSignature Language="C++ CLI" Value="Chunked" />
+      <MemberSignature Language="F#" Value="Chunked = 1" Usage="System.IdentityModel.Services.CookieHandlerMode.Chunked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.CookieHandlerMode.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 2" Usage="System.IdentityModel.Services.CookieHandlerMode.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.CookieHandlerMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.IdentityModel.Services.CookieHandlerMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

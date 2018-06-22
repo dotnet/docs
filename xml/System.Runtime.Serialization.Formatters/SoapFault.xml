@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.SoapFault" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapFault&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapFault sealed : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type SoapFault = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string faultCode, string faultString, string faultActor, class System.Runtime.Serialization.Formatters.ServerFault serverFault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.SoapFault.#ctor(System.String,System.String,System.String,System.Runtime.Serialization.Formatters.ServerFault)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapFault(System::String ^ faultCode, System::String ^ faultString, System::String ^ faultActor, System::Runtime::Serialization::Formatters::ServerFault ^ serverFault);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Formatters.SoapFault : string * string * string * System.Runtime.Serialization.Formatters.ServerFault -&gt; System.Runtime.Serialization.Formatters.SoapFault" Usage="new System.Runtime.Serialization.Formatters.SoapFault (faultCode, faultString, faultActor, serverFault)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapFault.Detail" />
       <MemberSignature Language="VB.NET" Value="Public Property Detail As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Detail { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Detail : obj with get, set" Usage="System.Runtime.Serialization.Formatters.SoapFault.Detail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapFault.FaultActor" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultActor As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FaultActor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultActor : string with get, set" Usage="System.Runtime.Serialization.Formatters.SoapFault.FaultActor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapFault.FaultCode" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultCode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FaultCode { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultCode : string with get, set" Usage="System.Runtime.Serialization.Formatters.SoapFault.FaultCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapFault.FaultString" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FaultString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultString : string with get, set" Usage="System.Runtime.Serialization.Formatters.SoapFault.FaultString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.SoapFault.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="soapFault.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

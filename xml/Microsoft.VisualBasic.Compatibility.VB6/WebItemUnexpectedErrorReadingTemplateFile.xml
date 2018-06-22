@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebItemUnexpectedErrorReadingTemplateFile" />
   <TypeSignature Language="VB.NET" Value="Public Class WebItemUnexpectedErrorReadingTemplateFile&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebItemUnexpectedErrorReadingTemplateFile : Exception" />
+  <TypeSignature Language="F#" Value="type WebItemUnexpectedErrorReadingTemplateFile = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebItemUnexpectedErrorReadingTemplateFile.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (innerMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebItemUnexpectedErrorReadingTemplateFile(System::String ^ innerMessage);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.WebItemUnexpectedErrorReadingTemplateFile : string -&gt; Microsoft.VisualBasic.Compatibility.VB6.WebItemUnexpectedErrorReadingTemplateFile" Usage="new Microsoft.VisualBasic.Compatibility.VB6.WebItemUnexpectedErrorReadingTemplateFile innerMessage" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

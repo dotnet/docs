@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IDLFLAG" />
   <TypeSignature Language="VB.NET" Value="Public Enum IDLFLAG" />
   <TypeSignature Language="C++ CLI" Value="public enum class IDLFLAG" />
+  <TypeSignature Language="F#" Value="type IDLFLAG = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FIN" />
       <MemberSignature Language="VB.NET" Value="IDLFLAG_FIN" />
       <MemberSignature Language="C++ CLI" Value="IDLFLAG_FIN" />
+      <MemberSignature Language="F#" Value="IDLFLAG_FIN = 1" Usage="System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FIN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FLCID" />
       <MemberSignature Language="VB.NET" Value="IDLFLAG_FLCID" />
       <MemberSignature Language="C++ CLI" Value="IDLFLAG_FLCID" />
+      <MemberSignature Language="F#" Value="IDLFLAG_FLCID = 4" Usage="System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FLCID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FOUT" />
       <MemberSignature Language="VB.NET" Value="IDLFLAG_FOUT" />
       <MemberSignature Language="C++ CLI" Value="IDLFLAG_FOUT" />
+      <MemberSignature Language="F#" Value="IDLFLAG_FOUT = 2" Usage="System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FOUT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FRETVAL" />
       <MemberSignature Language="VB.NET" Value="IDLFLAG_FRETVAL" />
       <MemberSignature Language="C++ CLI" Value="IDLFLAG_FRETVAL" />
+      <MemberSignature Language="F#" Value="IDLFLAG_FRETVAL = 8" Usage="System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FRETVAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_NONE" />
       <MemberSignature Language="VB.NET" Value="IDLFLAG_NONE" />
       <MemberSignature Language="C++ CLI" Value="IDLFLAG_NONE" />
+      <MemberSignature Language="F#" Value="IDLFLAG_NONE = 0" Usage="System.Runtime.InteropServices.IDLFLAG.IDLFLAG_NONE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

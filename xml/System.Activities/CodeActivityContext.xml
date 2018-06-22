@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.CodeActivityContext" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeActivityContext&#xA;Inherits ActivityContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeActivityContext : System::Activities::ActivityContext" />
+  <TypeSignature Language="F#" Value="type CodeActivityContext = class&#xA;    inherit ActivityContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityContext.GetProperty``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of THandle As Handle) () As THandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename THandle&gt;&#xA; where THandle : System::Activities::Handle THandle GetProperty();" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : unit -&gt; 'Handle (requires 'Handle :&gt; System.Activities.Handle)" Usage="codeActivityContext.GetProperty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityContext.Track(System.Activities.Tracking.CustomTrackingRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Track (record As CustomTrackingRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Track(System::Activities::Tracking::CustomTrackingRecord ^ record);" />
+      <MemberSignature Language="F#" Value="member this.Track : System.Activities.Tracking.CustomTrackingRecord -&gt; unit" Usage="codeActivityContext.Track record" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

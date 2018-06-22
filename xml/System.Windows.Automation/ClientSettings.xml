@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientSettings abstract sealed" />
+  <TypeSignature Language="F#" Value="type ClientSettings = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientSideProviderAssembly(class System.Reflection.AssemblyName assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly(System.Reflection.AssemblyName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientSideProviderAssembly(System::Reflection::AssemblyName ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="static member RegisterClientSideProviderAssembly : System.Reflection.AssemblyName -&gt; unit" Usage="System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ClientSettings.RegisterClientSideProviders(System.Windows.Automation.ClientSideProviderDescription[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterClientSideProviders (clientSideProviderDescription As ClientSideProviderDescription())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientSideProviders(cli::array &lt;System::Windows::Automation::ClientSideProviderDescription&gt; ^ clientSideProviderDescription);" />
+      <MemberSignature Language="F#" Value="static member RegisterClientSideProviders : System.Windows.Automation.ClientSideProviderDescription[] -&gt; unit" Usage="System.Windows.Automation.ClientSettings.RegisterClientSideProviders clientSideProviderDescription" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

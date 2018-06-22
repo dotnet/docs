@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryRemovedReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum CacheEntryRemovedReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class CacheEntryRemovedReason" />
+  <TypeSignature Language="F#" Value="type CacheEntryRemovedReason = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.CacheSpecificEviction" />
       <MemberSignature Language="VB.NET" Value="CacheSpecificEviction" />
       <MemberSignature Language="C++ CLI" Value="CacheSpecificEviction" />
+      <MemberSignature Language="F#" Value="CacheSpecificEviction = 4" Usage="System.Runtime.Caching.CacheEntryRemovedReason.CacheSpecificEviction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.ChangeMonitorChanged" />
       <MemberSignature Language="VB.NET" Value="ChangeMonitorChanged" />
       <MemberSignature Language="C++ CLI" Value="ChangeMonitorChanged" />
+      <MemberSignature Language="F#" Value="ChangeMonitorChanged = 3" Usage="System.Runtime.Caching.CacheEntryRemovedReason.ChangeMonitorChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Evicted" />
       <MemberSignature Language="VB.NET" Value="Evicted" />
       <MemberSignature Language="C++ CLI" Value="Evicted" />
+      <MemberSignature Language="F#" Value="Evicted = 2" Usage="System.Runtime.Caching.CacheEntryRemovedReason.Evicted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Expired" />
       <MemberSignature Language="VB.NET" Value="Expired" />
       <MemberSignature Language="C++ CLI" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 1" Usage="System.Runtime.Caching.CacheEntryRemovedReason.Expired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Removed" />
       <MemberSignature Language="VB.NET" Value="Removed" />
       <MemberSignature Language="C++ CLI" Value="Removed" />
+      <MemberSignature Language="F#" Value="Removed = 0" Usage="System.Runtime.Caching.CacheEntryRemovedReason.Removed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

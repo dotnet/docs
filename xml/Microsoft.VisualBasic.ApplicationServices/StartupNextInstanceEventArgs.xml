@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StartupNextInstanceEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StartupNextInstanceEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type StartupNextInstanceEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.String},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (args As ReadOnlyCollection(Of String), bringToForegroundFlag As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StartupNextInstanceEventArgs(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ args, bool bringToForegroundFlag);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; * bool -&gt; Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" Usage="new Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs (args, bringToForegroundFlag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground" />
       <MemberSignature Language="VB.NET" Value="Public Property BringToForeground As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BringToForeground { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BringToForeground : bool with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.CommandLine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandLine As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ CommandLine { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandLine : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.CommandLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

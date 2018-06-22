@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.AudioPlayMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum AudioPlayMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class AudioPlayMode" />
+  <TypeSignature Language="F#" Value="type AudioPlayMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AudioPlayMode.Background" />
       <MemberSignature Language="VB.NET" Value="Background" />
       <MemberSignature Language="C++ CLI" Value="Background" />
+      <MemberSignature Language="F#" Value="Background = 1" Usage="Microsoft.VisualBasic.AudioPlayMode.Background" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AudioPlayMode.BackgroundLoop" />
       <MemberSignature Language="VB.NET" Value="BackgroundLoop" />
       <MemberSignature Language="C++ CLI" Value="BackgroundLoop" />
+      <MemberSignature Language="F#" Value="BackgroundLoop = 2" Usage="Microsoft.VisualBasic.AudioPlayMode.BackgroundLoop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AudioPlayMode.WaitToComplete" />
       <MemberSignature Language="VB.NET" Value="WaitToComplete" />
       <MemberSignature Language="C++ CLI" Value="WaitToComplete" />
+      <MemberSignature Language="F#" Value="WaitToComplete = 0" Usage="Microsoft.VisualBasic.AudioPlayMode.WaitToComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

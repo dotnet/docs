@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataExporter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetadataExporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataExporter abstract" />
+  <TypeSignature Language="F#" Value="type MetadataExporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataExporter.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As Collection(Of MetadataConversionError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MetadataConversionError ^&gt; ^ Errors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MetadataConversionError ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MetadataConversionError&gt;" Usage="System.ServiceModel.Description.MetadataExporter.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataExporter.ExportContract(System.ServiceModel.Description.ContractDescription)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ExportContract (contract As ContractDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ExportContract(System::ServiceModel::Description::ContractDescription ^ contract);" />
+      <MemberSignature Language="F#" Value="abstract member ExportContract : System.ServiceModel.Description.ContractDescription -&gt; unit" Usage="metadataExporter.ExportContract contract" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataExporter.ExportEndpoint(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ExportEndpoint (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ExportEndpoint(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member ExportEndpoint : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="metadataExporter.ExportEndpoint endpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataExporter.ExportPolicy(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function ExportPolicy (endpoint As ServiceEndpoint) As PolicyConversionContext" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::ServiceModel::Description::PolicyConversionContext ^ ExportPolicy(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="member this.ExportPolicy : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Description.PolicyConversionContext" Usage="metadataExporter.ExportPolicy endpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataExporter.GetGeneratedMetadata" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetGeneratedMetadata () As MetadataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Description::MetadataSet ^ GetGeneratedMetadata();" />
+      <MemberSignature Language="F#" Value="abstract member GetGeneratedMetadata : unit -&gt; System.ServiceModel.Description.MetadataSet" Usage="metadataExporter.GetGeneratedMetadata " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataExporter.PolicyVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property PolicyVersion As PolicyVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::PolicyVersion ^ PolicyVersion { System::ServiceModel::Description::PolicyVersion ^ get(); void set(System::ServiceModel::Description::PolicyVersion ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PolicyVersion : System.ServiceModel.Description.PolicyVersion with get, set" Usage="System.ServiceModel.Description.MetadataExporter.PolicyVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataExporter.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Dictionary(Of Object, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Object ^, System::Object ^&gt; ^ State { System::Collections::Generic::Dictionary&lt;System::Object ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Collections.Generic.Dictionary&lt;obj, obj&gt;" Usage="System.ServiceModel.Description.MetadataExporter.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

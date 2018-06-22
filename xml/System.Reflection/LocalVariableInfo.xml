@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.LocalVariableInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class LocalVariableInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalVariableInfo" />
+  <TypeSignature Language="F#" Value="type LocalVariableInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.IsPinned" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsPinned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPinned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPinned : bool" Usage="System.Reflection.LocalVariableInfo.IsPinned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -159,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.LocalIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LocalIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LocalIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalIndex : int" Usage="System.Reflection.LocalVariableInfo.LocalIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -202,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.LocalType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LocalType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ LocalType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalType : Type" Usage="System.Reflection.LocalVariableInfo.LocalType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -238,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.LocalVariableInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="localVariableInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

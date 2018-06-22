@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseButton" />
   <TypeSignature Language="VB.NET" Value="Public Enum MouseButton" />
   <TypeSignature Language="C++ CLI" Value="public enum class MouseButton" />
+  <TypeSignature Language="F#" Value="type MouseButton = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseButton.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 0" Usage="System.Windows.Input.MouseButton.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseButton.Middle" />
       <MemberSignature Language="VB.NET" Value="Middle" />
       <MemberSignature Language="C++ CLI" Value="Middle" />
+      <MemberSignature Language="F#" Value="Middle = 1" Usage="System.Windows.Input.MouseButton.Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseButton.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 2" Usage="System.Windows.Input.MouseButton.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseButton.XButton1" />
       <MemberSignature Language="VB.NET" Value="XButton1" />
       <MemberSignature Language="C++ CLI" Value="XButton1" />
+      <MemberSignature Language="F#" Value="XButton1 = 3" Usage="System.Windows.Input.MouseButton.XButton1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseButton.XButton2" />
       <MemberSignature Language="VB.NET" Value="XButton2" />
       <MemberSignature Language="C++ CLI" Value="XButton2" />
+      <MemberSignature Language="F#" Value="XButton2 = 4" Usage="System.Windows.Input.MouseButton.XButton2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

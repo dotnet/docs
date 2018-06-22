@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WritingPrintTicketRequiredEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WritingPrintTicketRequiredEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WritingPrintTicketRequiredEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Xps.Serialization.PrintTicketLevel printTicketLevel, int32 sequence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.#ctor(System.Windows.Xps.Serialization.PrintTicketLevel,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WritingPrintTicketRequiredEventArgs(System::Windows::Xps::Serialization::PrintTicketLevel printTicketLevel, int sequence);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs : System.Windows.Xps.Serialization.PrintTicketLevel * int -&gt; System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs" Usage="new System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs (printTicketLevel, sequence)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentPrintTicket As PrintTicket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintTicket ^ CurrentPrintTicket { System::Printing::PrintTicket ^ get(); void set(System::Printing::PrintTicket ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPrintTicket : System.Printing.PrintTicket with get, set" Usage="System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentPrintTicketLevel As PrintTicketLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Serialization::PrintTicketLevel CurrentPrintTicketLevel { System::Windows::Xps::Serialization::PrintTicketLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPrintTicketLevel : System.Windows.Xps.Serialization.PrintTicketLevel" Usage="System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sequence As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Sequence { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sequence : int" Usage="System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

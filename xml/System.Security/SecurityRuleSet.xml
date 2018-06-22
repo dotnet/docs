@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityRuleSet" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityRuleSet" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityRuleSet" />
+  <TypeSignature Language="F#" Value="type SecurityRuleSet = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityRuleSet.Level1" />
       <MemberSignature Language="VB.NET" Value="Level1" />
       <MemberSignature Language="C++ CLI" Value="Level1" />
+      <MemberSignature Language="F#" Value="Level1 = 1" Usage="System.Security.SecurityRuleSet.Level1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityRuleSet.Level2" />
       <MemberSignature Language="VB.NET" Value="Level2" />
       <MemberSignature Language="C++ CLI" Value="Level2" />
+      <MemberSignature Language="F#" Value="Level2 = 2" Usage="System.Security.SecurityRuleSet.Level2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityRuleSet.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.SecurityRuleSet.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

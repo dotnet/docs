@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialPinChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SerialPinChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerialPinChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SerialPinChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPinChangedEventArgs.EventType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As SerialPinChange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Ports::SerialPinChange EventType { System::IO::Ports::SerialPinChange get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventType : System.IO.Ports.SerialPinChange" Usage="System.IO.Ports.SerialPinChangedEventArgs.EventType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

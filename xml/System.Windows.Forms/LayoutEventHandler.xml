@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LayoutEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub LayoutEventHandler(sender As Object, e As LayoutEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void LayoutEventHandler(System::Object ^ sender, LayoutEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LayoutEventHandler = delegate of obj * LayoutEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

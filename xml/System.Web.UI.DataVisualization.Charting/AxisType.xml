@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AxisType" />
   <TypeSignature Language="VB.NET" Value="Public Enum AxisType" />
   <TypeSignature Language="C++ CLI" Value="public enum class AxisType" />
+  <TypeSignature Language="F#" Value="type AxisType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisType.Primary" />
       <MemberSignature Language="VB.NET" Value="Primary" />
       <MemberSignature Language="C++ CLI" Value="Primary" />
+      <MemberSignature Language="F#" Value="Primary = 0" Usage="System.Web.UI.DataVisualization.Charting.AxisType.Primary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisType.Secondary" />
       <MemberSignature Language="VB.NET" Value="Secondary" />
       <MemberSignature Language="C++ CLI" Value="Secondary" />
+      <MemberSignature Language="F#" Value="Secondary = 1" Usage="System.Web.UI.DataVisualization.Charting.AxisType.Secondary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.AddressHeaderCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddressHeaderCollectionElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddressHeaderCollectionElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type AddressHeaderCollectionElement = class&#xA;    inherit ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.AddressHeaderCollectionElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="addressHeaderCollectionElement.DeserializeElement (reader, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.AddressHeaderCollectionElement.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Property Headers As AddressHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::AddressHeaderCollection ^ Headers { System::ServiceModel::Channels::AddressHeaderCollection ^ get(); void set(System::ServiceModel::Channels::AddressHeaderCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.ServiceModel.Channels.AddressHeaderCollection with get, set" Usage="System.ServiceModel.Configuration.AddressHeaderCollectionElement.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.AddressHeaderCollectionElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.AddressHeaderCollectionElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.AddressHeaderCollectionElement.SerializeToXmlElement(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeToXmlElement (writer As XmlWriter, elementName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeToXmlElement(System::Xml::XmlWriter ^ writer, System::String ^ elementName);" />
+      <MemberSignature Language="F#" Value="override this.SerializeToXmlElement : System.Xml.XmlWriter * string -&gt; bool" Usage="addressHeaderCollectionElement.SerializeToXmlElement (writer, elementName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

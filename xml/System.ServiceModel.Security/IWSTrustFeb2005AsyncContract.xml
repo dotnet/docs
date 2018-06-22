@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWSTrustFeb2005AsyncContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWSTrustFeb2005AsyncContract" />
+  <TypeSignature Language="F#" Value="type IWSTrustFeb2005AsyncContract = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005Cancel (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTrustFeb2005Cancel(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005Cancel : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustFeb2005AsyncContract.BeginTrustFeb2005Cancel (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005CancelResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTrustFeb2005CancelResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005CancelResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustFeb2005AsyncContract.BeginTrustFeb2005CancelResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005Issue (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTrustFeb2005Issue(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005Issue : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustFeb2005AsyncContract.BeginTrustFeb2005Issue (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005IssueResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTrustFeb2005IssueResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005IssueResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustFeb2005AsyncContract.BeginTrustFeb2005IssueResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005Renew (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTrustFeb2005Renew(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005Renew : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustFeb2005AsyncContract.BeginTrustFeb2005Renew (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005RenewResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTrustFeb2005RenewResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005RenewResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustFeb2005AsyncContract.BeginTrustFeb2005RenewResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005Validate (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTrustFeb2005Validate(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005Validate : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustFeb2005AsyncContract.BeginTrustFeb2005Validate (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTrustFeb2005ValidateResponse (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTrustFeb2005ValidateResponse(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrustFeb2005ValidateResponse : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWSTrustFeb2005AsyncContract.BeginTrustFeb2005ValidateResponse (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -289,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Cancel(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005Cancel (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndTrustFeb2005Cancel(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005Cancel : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005AsyncContract.EndTrustFeb2005Cancel ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -313,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005CancelResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005CancelResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndTrustFeb2005CancelResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005CancelResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005AsyncContract.EndTrustFeb2005CancelResponse ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -337,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Issue(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005Issue (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndTrustFeb2005Issue(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005Issue : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005AsyncContract.EndTrustFeb2005Issue ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -361,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005IssueResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005IssueResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndTrustFeb2005IssueResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005IssueResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005AsyncContract.EndTrustFeb2005IssueResponse ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -385,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Renew(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005Renew (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndTrustFeb2005Renew(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005Renew : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005AsyncContract.EndTrustFeb2005Renew ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -409,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005RenewResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005RenewResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndTrustFeb2005RenewResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005RenewResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005AsyncContract.EndTrustFeb2005RenewResponse ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -433,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Validate(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005Validate (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndTrustFeb2005Validate(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005Validate : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005AsyncContract.EndTrustFeb2005Validate ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -457,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005ValidateResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTrustFeb2005ValidateResponse (ar As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndTrustFeb2005ValidateResponse(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrustFeb2005ValidateResponse : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005AsyncContract.EndTrustFeb2005ValidateResponse ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

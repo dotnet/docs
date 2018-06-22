@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.InternalConfigEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InternalConfigEventHandler(sender As Object, e As InternalConfigEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InternalConfigEventHandler(System::Object ^ sender, InternalConfigEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InternalConfigEventHandler = delegate of obj * InternalConfigEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

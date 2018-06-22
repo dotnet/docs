@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Pick" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pick&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class Pick sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type Pick = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Pick.Branches" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Branches As Collection(Of PickBranch)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Statements::PickBranch ^&gt; ^ Branches { System::Collections::ObjectModel::Collection&lt;System::Activities::Statements::PickBranch ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Branches : System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.PickBranch&gt;" Usage="System.Activities.Statements.Pick.Branches" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="pick.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.Cancel(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Cancel (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Cancel(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Cancel : System.Activities.NativeActivityContext -&gt; unit" Usage="pick.Cancel context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Pick.CanInduceIdle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanInduceIdle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanInduceIdle { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanInduceIdle : bool" Usage="System.Activities.Statements.Pick.CanInduceIdle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="pick.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="pick.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.UpdateInstance(System.Activities.DynamicUpdate.NativeActivityUpdateContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateInstance (updateContext As NativeActivityUpdateContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateInstance(System::Activities::DynamicUpdate::NativeActivityUpdateContext ^ updateContext);" />
+      <MemberSignature Language="F#" Value="override this.UpdateInstance : System.Activities.DynamicUpdate.NativeActivityUpdateContext -&gt; unit" Usage="pick.UpdateInstance updateContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBuildResults" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBuildResults" />
+  <TypeSignature Language="F#" Value="type IBuildResults = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.ComponentFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComponentFiles As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ComponentFiles { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComponentFiles : string[]" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.ComponentFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.KeyFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFile : string" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.KeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.Messages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Messages As BuildMessage()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::Bootstrapper::BuildMessage ^&gt; ^ Messages { cli::array &lt;Microsoft::Build::Tasks::Deployment::Bootstrapper::BuildMessage ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Messages : Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage[]" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.Messages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Succeeded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Succeeded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Succeeded : bool" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.Succeeded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

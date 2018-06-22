@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationValidatorBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConfigurationValidatorBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationValidatorBase abstract" />
+  <TypeSignature Language="F#" Value="type ConfigurationValidatorBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationValidatorBase.CanValidate(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanValidate(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member CanValidate : Type -&gt; bool&#xA;override this.CanValidate : Type -&gt; bool" Usage="configurationValidatorBase.CanValidate type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationValidatorBase.Validate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Validate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Validate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : obj -&gt; unit" Usage="configurationValidatorBase.Validate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

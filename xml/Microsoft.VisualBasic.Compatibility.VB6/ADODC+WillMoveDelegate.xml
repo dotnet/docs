@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillMoveDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.WillMoveDelegate(adReason As EventReasonEnum, ByRef adStatus As EventStatusEnum, pRecordset As Recordset)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::WillMoveDelegate(EventReasonEnum adReason, EventStatusEnum % adStatus, Recordset ^ pRecordset);" />
+  <TypeSignature Language="F#" Value="type ADODC.WillMoveDelegate = delegate of EventReasonEnum *  * Recordset -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

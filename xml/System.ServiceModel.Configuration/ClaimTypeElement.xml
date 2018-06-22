@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ClaimTypeElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClaimTypeElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimTypeElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ClaimTypeElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClaimTypeElement.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, isOptional As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimTypeElement(System::String ^ claimType, bool isOptional);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ClaimTypeElement : string * bool -&gt; System.ServiceModel.Configuration.ClaimTypeElement" Usage="new System.ServiceModel.Configuration.ClaimTypeElement (claimType, isOptional)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClaimTypeElement.ClaimType" />
       <MemberSignature Language="VB.NET" Value="Public Property ClaimType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClaimType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimType : string with get, set" Usage="System.ServiceModel.Configuration.ClaimTypeElement.ClaimType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClaimTypeElement.IsOptional" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOptional { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool with get, set" Usage="System.ServiceModel.Configuration.ClaimTypeElement.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClaimTypeElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ClaimTypeElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

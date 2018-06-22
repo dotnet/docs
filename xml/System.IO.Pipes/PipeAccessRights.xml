@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeAccessRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum PipeAccessRights" />
   <TypeSignature Language="C++ CLI" Value="public enum class PipeAccessRights" />
+  <TypeSignature Language="F#" Value="type PipeAccessRights = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.AccessSystemSecurity" />
       <MemberSignature Language="VB.NET" Value="AccessSystemSecurity" />
       <MemberSignature Language="C++ CLI" Value="AccessSystemSecurity" />
+      <MemberSignature Language="F#" Value="AccessSystemSecurity = 16777216" Usage="System.IO.Pipes.PipeAccessRights.AccessSystemSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.ChangePermissions" />
       <MemberSignature Language="VB.NET" Value="ChangePermissions" />
       <MemberSignature Language="C++ CLI" Value="ChangePermissions" />
+      <MemberSignature Language="F#" Value="ChangePermissions = 262144" Usage="System.IO.Pipes.PipeAccessRights.ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.CreateNewInstance" />
       <MemberSignature Language="VB.NET" Value="CreateNewInstance" />
       <MemberSignature Language="C++ CLI" Value="CreateNewInstance" />
+      <MemberSignature Language="F#" Value="CreateNewInstance = 4" Usage="System.IO.Pipes.PipeAccessRights.CreateNewInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 65536" Usage="System.IO.Pipes.PipeAccessRights.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.FullControl" />
       <MemberSignature Language="VB.NET" Value="FullControl" />
       <MemberSignature Language="C++ CLI" Value="FullControl" />
+      <MemberSignature Language="F#" Value="FullControl = 2032031" Usage="System.IO.Pipes.PipeAccessRights.FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 131209" Usage="System.IO.Pipes.PipeAccessRights.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.ReadAttributes" />
       <MemberSignature Language="VB.NET" Value="ReadAttributes" />
       <MemberSignature Language="C++ CLI" Value="ReadAttributes" />
+      <MemberSignature Language="F#" Value="ReadAttributes = 128" Usage="System.IO.Pipes.PipeAccessRights.ReadAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.ReadData" />
       <MemberSignature Language="VB.NET" Value="ReadData" />
       <MemberSignature Language="C++ CLI" Value="ReadData" />
+      <MemberSignature Language="F#" Value="ReadData = 1" Usage="System.IO.Pipes.PipeAccessRights.ReadData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.ReadExtendedAttributes" />
       <MemberSignature Language="VB.NET" Value="ReadExtendedAttributes" />
       <MemberSignature Language="C++ CLI" Value="ReadExtendedAttributes" />
+      <MemberSignature Language="F#" Value="ReadExtendedAttributes = 8" Usage="System.IO.Pipes.PipeAccessRights.ReadExtendedAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -269,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.ReadPermissions" />
       <MemberSignature Language="VB.NET" Value="ReadPermissions" />
       <MemberSignature Language="C++ CLI" Value="ReadPermissions" />
+      <MemberSignature Language="F#" Value="ReadPermissions = 131072" Usage="System.IO.Pipes.PipeAccessRights.ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -294,6 +305,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.ReadWrite" />
       <MemberSignature Language="VB.NET" Value="ReadWrite" />
       <MemberSignature Language="C++ CLI" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 131483" Usage="System.IO.Pipes.PipeAccessRights.ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -319,6 +331,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Synchronize" />
       <MemberSignature Language="C++ CLI" Value="Synchronize" />
+      <MemberSignature Language="F#" Value="Synchronize = 1048576" Usage="System.IO.Pipes.PipeAccessRights.Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -354,6 +367,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.TakeOwnership" />
       <MemberSignature Language="VB.NET" Value="TakeOwnership" />
       <MemberSignature Language="C++ CLI" Value="TakeOwnership" />
+      <MemberSignature Language="F#" Value="TakeOwnership = 524288" Usage="System.IO.Pipes.PipeAccessRights.TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -379,6 +393,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 274" Usage="System.IO.Pipes.PipeAccessRights.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -404,6 +419,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.WriteAttributes" />
       <MemberSignature Language="VB.NET" Value="WriteAttributes" />
       <MemberSignature Language="C++ CLI" Value="WriteAttributes" />
+      <MemberSignature Language="F#" Value="WriteAttributes = 256" Usage="System.IO.Pipes.PipeAccessRights.WriteAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -429,6 +445,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.WriteData" />
       <MemberSignature Language="VB.NET" Value="WriteData" />
       <MemberSignature Language="C++ CLI" Value="WriteData" />
+      <MemberSignature Language="F#" Value="WriteData = 2" Usage="System.IO.Pipes.PipeAccessRights.WriteData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -454,6 +471,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeAccessRights.WriteExtendedAttributes" />
       <MemberSignature Language="VB.NET" Value="WriteExtendedAttributes" />
       <MemberSignature Language="C++ CLI" Value="WriteExtendedAttributes" />
+      <MemberSignature Language="F#" Value="WriteExtendedAttributes = 16" Usage="System.IO.Pipes.PipeAccessRights.WriteExtendedAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>

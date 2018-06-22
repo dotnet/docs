@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebApplication" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebApplication&#xA;Implements IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebApplication : IServiceProvider" />
+  <TypeSignature Language="F#" Value="type IWebApplication = interface&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebApplication.GetProjectItemFromUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProjectItemFromUrl (appRelativeUrl As String) As IProjectItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::IProjectItem ^ GetProjectItemFromUrl(System::String ^ appRelativeUrl);" />
+      <MemberSignature Language="F#" Value="abstract member GetProjectItemFromUrl : string -&gt; System.Web.UI.Design.IProjectItem" Usage="iWebApplication.GetProjectItemFromUrl appRelativeUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebApplication.OpenWebConfiguration(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWebConfiguration (isReadOnly As Boolean) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::Configuration ^ OpenWebConfiguration(bool isReadOnly);" />
+      <MemberSignature Language="F#" Value="abstract member OpenWebConfiguration : bool -&gt; System.Configuration.Configuration" Usage="iWebApplication.OpenWebConfiguration isReadOnly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IWebApplication.RootProjectItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootProjectItem As IProjectItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IProjectItem ^ RootProjectItem { System::Web::UI::Design::IProjectItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootProjectItem : System.Web.UI.Design.IProjectItem" Usage="System.Web.UI.Design.IWebApplication.RootProjectItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ObjectChangeConflict" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectChangeConflict" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectChangeConflict sealed" />
+  <TypeSignature Language="F#" Value="type ObjectChangeConflict = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ObjectChangeConflict.IsDeleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDeleted : bool" Usage="System.Data.Linq.ObjectChangeConflict.IsDeleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ObjectChangeConflict.IsResolved" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsResolved As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResolved { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsResolved : bool" Usage="System.Data.Linq.ObjectChangeConflict.IsResolved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ObjectChangeConflict.MemberConflicts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberConflicts As ReadOnlyCollection(Of MemberChangeConflict)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Linq::MemberChangeConflict ^&gt; ^ MemberConflicts { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Linq::MemberChangeConflict ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberConflicts : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.MemberChangeConflict&gt;" Usage="System.Data.Linq.ObjectChangeConflict.MemberConflicts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ObjectChangeConflict.Object" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="System.Data.Linq.ObjectChangeConflict.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ObjectChangeConflict.Resolve" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resolve ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve();" />
+      <MemberSignature Language="F#" Value="member this.Resolve : unit -&gt; unit" Usage="objectChangeConflict.Resolve " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resolve(valuetype System.Data.Linq.RefreshMode refreshMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ObjectChangeConflict.Resolve(System.Data.Linq.RefreshMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve(System::Data::Linq::RefreshMode refreshMode);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Data.Linq.RefreshMode -&gt; unit" Usage="objectChangeConflict.Resolve refreshMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resolve(valuetype System.Data.Linq.RefreshMode refreshMode, bool autoResolveDeletes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ObjectChangeConflict.Resolve(System.Data.Linq.RefreshMode,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve(System::Data::Linq::RefreshMode refreshMode, bool autoResolveDeletes);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Data.Linq.RefreshMode * bool -&gt; unit" Usage="objectChangeConflict.Resolve (refreshMode, autoResolveDeletes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

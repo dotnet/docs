@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ModelProviders.TableProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TableProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableProvider abstract" />
+  <TypeSignature Language="F#" Value="type TableProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.#ctor(System.Web.DynamicData.ModelProviders.DataModelProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (model As DataModelProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TableProvider(System::Web::DynamicData::ModelProviders::DataModelProvider ^ model);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.ModelProviders.TableProvider : System.Web.DynamicData.ModelProviders.DataModelProvider -&gt; System.Web.DynamicData.ModelProviders.TableProvider" Usage="new System.Web.DynamicData.ModelProviders.TableProvider model" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.TableProvider.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.Web.DynamicData.ModelProviders.TableProvider.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.CanDelete(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanDelete (principal As IPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanDelete(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member CanDelete : System.Security.Principal.IPrincipal -&gt; bool&#xA;override this.CanDelete : System.Security.Principal.IPrincipal -&gt; bool" Usage="tableProvider.CanDelete principal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.CanInsert(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanInsert (principal As IPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanInsert(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member CanInsert : System.Security.Principal.IPrincipal -&gt; bool&#xA;override this.CanInsert : System.Security.Principal.IPrincipal -&gt; bool" Usage="tableProvider.CanInsert principal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.CanRead(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanRead (principal As IPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanRead(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member CanRead : System.Security.Principal.IPrincipal -&gt; bool&#xA;override this.CanRead : System.Security.Principal.IPrincipal -&gt; bool" Usage="tableProvider.CanRead principal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.CanUpdate(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanUpdate (principal As IPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanUpdate(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member CanUpdate : System.Security.Principal.IPrincipal -&gt; bool&#xA;override this.CanUpdate : System.Security.Principal.IPrincipal -&gt; bool" Usage="tableProvider.CanUpdate principal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -170,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.TableProvider.Columns" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Columns As ReadOnlyCollection(Of ColumnProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::DynamicData::ModelProviders::ColumnProvider ^&gt; ^ Columns { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::DynamicData::ModelProviders::ColumnProvider ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.DynamicData.ModelProviders.ColumnProvider&gt;" Usage="System.Web.DynamicData.ModelProviders.TableProvider.Columns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -190,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.TableProvider.DataContextPropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataContextPropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property System::String ^ DataContextPropertyName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataContextPropertyName : string with get, set" Usage="System.Web.DynamicData.ModelProviders.TableProvider.DataContextPropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -210,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.TableProvider.DataModel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataModel As DataModelProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::ModelProviders::DataModelProvider ^ DataModel { System::Web::DynamicData::ModelProviders::DataModelProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataModel : System.Web.DynamicData.ModelProviders.DataModelProvider" Usage="System.Web.DynamicData.ModelProviders.TableProvider.DataModel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -237,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.TableProvider.EntityType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EntityType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property Type ^ EntityType {  public:&#xA;Type ^ get(); protected:&#xA; void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntityType : Type with get, set" Usage="System.Web.DynamicData.ModelProviders.TableProvider.EntityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -257,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.EvaluateForeignKey(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EvaluateForeignKey (row As Object, foreignKeyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ EvaluateForeignKey(System::Object ^ row, System::String ^ foreignKeyName);" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateForeignKey : obj * string -&gt; obj&#xA;override this.EvaluateForeignKey : obj * string -&gt; obj" Usage="tableProvider.EvaluateForeignKey (row, foreignKeyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -283,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.GetQuery(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetQuery (context As Object) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Linq::IQueryable ^ GetQuery(System::Object ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetQuery : obj -&gt; System.Linq.IQueryable" Usage="tableProvider.GetQuery context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -307,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.GetTypeDescriptor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDescriptor () As ICustomTypeDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeDescriptor : unit -&gt; System.ComponentModel.ICustomTypeDescriptor&#xA;override this.GetTypeDescriptor : unit -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="tableProvider.GetTypeDescriptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -328,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.TableProvider.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property System::String ^ Name {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.DynamicData.ModelProviders.TableProvider.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -355,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.TableProvider.ParentEntityType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ParentEntityType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property Type ^ ParentEntityType {  public:&#xA;Type ^ get(); protected:&#xA; void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParentEntityType : Type with get, set" Usage="System.Web.DynamicData.ModelProviders.TableProvider.ParentEntityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -375,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.TableProvider.RootEntityType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RootEntityType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property Type ^ RootEntityType {  public:&#xA;Type ^ get(); protected:&#xA; void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootEntityType : Type with get, set" Usage="System.Web.DynamicData.ModelProviders.TableProvider.RootEntityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -395,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.TableProvider.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="tableProvider.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

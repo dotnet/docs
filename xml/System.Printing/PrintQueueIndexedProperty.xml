@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueIndexedProperty" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintQueueIndexedProperty" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintQueueIndexedProperty" />
+  <TypeSignature Language="F#" Value="type PrintQueueIndexedProperty = " />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.AveragePagesPerMinute" />
       <MemberSignature Language="VB.NET" Value="AveragePagesPerMinute" />
       <MemberSignature Language="C++ CLI" Value="AveragePagesPerMinute" />
+      <MemberSignature Language="F#" Value="AveragePagesPerMinute = 9" Usage="System.Printing.PrintQueueIndexedProperty.AveragePagesPerMinute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Comment" />
       <MemberSignature Language="VB.NET" Value="Comment" />
       <MemberSignature Language="C++ CLI" Value="Comment" />
+      <MemberSignature Language="F#" Value="Comment = 2" Usage="System.Printing.PrintQueueIndexedProperty.Comment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.DefaultPrintTicket" />
       <MemberSignature Language="VB.NET" Value="DefaultPrintTicket" />
       <MemberSignature Language="C++ CLI" Value="DefaultPrintTicket" />
+      <MemberSignature Language="F#" Value="DefaultPrintTicket = 19" Usage="System.Printing.PrintQueueIndexedProperty.DefaultPrintTicket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.DefaultPriority" />
       <MemberSignature Language="VB.NET" Value="DefaultPriority" />
       <MemberSignature Language="C++ CLI" Value="DefaultPriority" />
+      <MemberSignature Language="F#" Value="DefaultPriority = 6" Usage="System.Printing.PrintQueueIndexedProperty.DefaultPriority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Description" />
       <MemberSignature Language="VB.NET" Value="Description" />
       <MemberSignature Language="C++ CLI" Value="Description" />
+      <MemberSignature Language="F#" Value="Description = 4" Usage="System.Printing.PrintQueueIndexedProperty.Description" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.HostingPrintServer" />
       <MemberSignature Language="VB.NET" Value="HostingPrintServer" />
       <MemberSignature Language="C++ CLI" Value="HostingPrintServer" />
+      <MemberSignature Language="F#" Value="HostingPrintServer = 15" Usage="System.Printing.PrintQueueIndexedProperty.HostingPrintServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Location" />
       <MemberSignature Language="VB.NET" Value="Location" />
       <MemberSignature Language="C++ CLI" Value="Location" />
+      <MemberSignature Language="F#" Value="Location = 3" Usage="System.Printing.PrintQueueIndexedProperty.Location" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Name" />
       <MemberSignature Language="C++ CLI" Value="Name" />
+      <MemberSignature Language="F#" Value="Name = 0" Usage="System.Printing.PrintQueueIndexedProperty.Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.NumberOfJobs" />
       <MemberSignature Language="VB.NET" Value="NumberOfJobs" />
       <MemberSignature Language="C++ CLI" Value="NumberOfJobs" />
+      <MemberSignature Language="F#" Value="NumberOfJobs = 10" Usage="System.Printing.PrintQueueIndexedProperty.NumberOfJobs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -193,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Priority" />
       <MemberSignature Language="VB.NET" Value="Priority" />
       <MemberSignature Language="C++ CLI" Value="Priority" />
+      <MemberSignature Language="F#" Value="Priority = 5" Usage="System.Printing.PrintQueueIndexedProperty.Priority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -212,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueueAttributes" />
       <MemberSignature Language="VB.NET" Value="QueueAttributes" />
       <MemberSignature Language="C++ CLI" Value="QueueAttributes" />
+      <MemberSignature Language="F#" Value="QueueAttributes = 11" Usage="System.Printing.PrintQueueIndexedProperty.QueueAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -231,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueueDriver" />
       <MemberSignature Language="VB.NET" Value="QueueDriver" />
       <MemberSignature Language="C++ CLI" Value="QueueDriver" />
+      <MemberSignature Language="F#" Value="QueueDriver = 12" Usage="System.Printing.PrintQueueIndexedProperty.QueueDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -250,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueuePort" />
       <MemberSignature Language="VB.NET" Value="QueuePort" />
       <MemberSignature Language="C++ CLI" Value="QueuePort" />
+      <MemberSignature Language="F#" Value="QueuePort = 13" Usage="System.Printing.PrintQueueIndexedProperty.QueuePort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -269,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueuePrintProcessor" />
       <MemberSignature Language="VB.NET" Value="QueuePrintProcessor" />
       <MemberSignature Language="C++ CLI" Value="QueuePrintProcessor" />
+      <MemberSignature Language="F#" Value="QueuePrintProcessor = 14" Usage="System.Printing.PrintQueueIndexedProperty.QueuePrintProcessor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -288,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueueStatus" />
       <MemberSignature Language="VB.NET" Value="QueueStatus" />
       <MemberSignature Language="C++ CLI" Value="QueueStatus" />
+      <MemberSignature Language="F#" Value="QueueStatus = 16" Usage="System.Printing.PrintQueueIndexedProperty.QueueStatus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -307,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.SeparatorFile" />
       <MemberSignature Language="VB.NET" Value="SeparatorFile" />
       <MemberSignature Language="C++ CLI" Value="SeparatorFile" />
+      <MemberSignature Language="F#" Value="SeparatorFile = 17" Usage="System.Printing.PrintQueueIndexedProperty.SeparatorFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -326,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.ShareName" />
       <MemberSignature Language="VB.NET" Value="ShareName" />
       <MemberSignature Language="C++ CLI" Value="ShareName" />
+      <MemberSignature Language="F#" Value="ShareName = 1" Usage="System.Printing.PrintQueueIndexedProperty.ShareName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -345,6 +363,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.StartTimeOfDay" />
       <MemberSignature Language="VB.NET" Value="StartTimeOfDay" />
       <MemberSignature Language="C++ CLI" Value="StartTimeOfDay" />
+      <MemberSignature Language="F#" Value="StartTimeOfDay = 7" Usage="System.Printing.PrintQueueIndexedProperty.StartTimeOfDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -364,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.UntilTimeOfDay" />
       <MemberSignature Language="VB.NET" Value="UntilTimeOfDay" />
       <MemberSignature Language="C++ CLI" Value="UntilTimeOfDay" />
+      <MemberSignature Language="F#" Value="UntilTimeOfDay = 8" Usage="System.Printing.PrintQueueIndexedProperty.UntilTimeOfDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -383,6 +403,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.UserPrintTicket" />
       <MemberSignature Language="VB.NET" Value="UserPrintTicket" />
       <MemberSignature Language="C++ CLI" Value="UserPrintTicket" />
+      <MemberSignature Language="F#" Value="UserPrintTicket = 18" Usage="System.Printing.PrintQueueIndexedProperty.UserPrintTicket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

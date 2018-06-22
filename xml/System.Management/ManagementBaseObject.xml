@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementBaseObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementBaseObject&#xA;Inherits Component&#xA;Implements ICloneable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementBaseObject : System::ComponentModel::Component, ICloneable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type ManagementBaseObject = class&#xA;    inherit Component&#xA;    interface ICloneable&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementBaseObject(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementBaseObject : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Management.ManagementBaseObject" Usage="new System.Management.ManagementBaseObject (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.ClassPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ClassPath As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::ManagementPath ^ ClassPath { System::Management::ManagementPath ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassPath : System.Management.ManagementPath" Usage="System.Management.ManagementBaseObject.ClassPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="managementBaseObject.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject,System.Management.ComparisonSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (otherObject As ManagementBaseObject, settings As ComparisonSettings) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CompareTo(System::Management::ManagementBaseObject ^ otherObject, System::Management::ComparisonSettings settings);" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : System.Management.ManagementBaseObject * System.Management.ComparisonSettings -&gt; bool" Usage="managementBaseObject.CompareTo (otherObject, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="member this.Dispose : unit -&gt; unit" Usage="managementBaseObject.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="managementBaseObject.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="managementBaseObject.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -262,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="managementBaseObject.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetPropertyQualifierValue(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyQualifierValue (propertyName As String, qualifierName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyQualifierValue(System::String ^ propertyName, System::String ^ qualifierName);" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyQualifierValue : string * string -&gt; obj" Usage="managementBaseObject.GetPropertyQualifierValue (propertyName, qualifierName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -342,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetPropertyValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValue (propertyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyValue(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyValue : string -&gt; obj" Usage="managementBaseObject.GetPropertyValue propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -383,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetQualifierValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetQualifierValue (qualifierName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetQualifierValue(System::String ^ qualifierName);" />
+      <MemberSignature Language="F#" Value="member this.GetQualifierValue : string -&gt; obj" Usage="managementBaseObject.GetQualifierValue qualifierName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -424,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetText (format As TextFormat) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText(System::Management::TextFormat format);" />
+      <MemberSignature Language="F#" Value="member this.GetText : System.Management.TextFormat -&gt; string" Usage="managementBaseObject.GetText format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -466,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(propertyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Management.ManagementBaseObject.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -510,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.op_Explicit(System.Management.ManagementBaseObject)~System.IntPtr" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (managementObject As ManagementBaseObject) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator IntPtr(System::Management::ManagementBaseObject ^ managementObject);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Management.ManagementBaseObject -&gt; nativeint" Usage="System.Management.ManagementBaseObject.op_Explicit managementObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -544,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Properties As PropertyDataCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::PropertyDataCollection ^ Properties { System::Management::PropertyDataCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Management.PropertyDataCollection" Usage="System.Management.ManagementBaseObject.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -584,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Qualifiers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Qualifiers As QualifierDataCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::QualifierDataCollection ^ Qualifiers { System::Management::QualifierDataCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Qualifiers : System.Management.QualifierDataCollection" Usage="System.Management.ManagementBaseObject.Qualifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -624,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPropertyQualifierValue (propertyName As String, qualifierName As String, qualifierValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPropertyQualifierValue(System::String ^ propertyName, System::String ^ qualifierName, System::Object ^ qualifierValue);" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyQualifierValue : string * string * obj -&gt; unit" Usage="managementBaseObject.SetPropertyQualifierValue (propertyName, qualifierName, qualifierValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -660,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetPropertyValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPropertyValue (propertyName As String, propertyValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPropertyValue(System::String ^ propertyName, System::Object ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyValue : string * obj -&gt; unit" Usage="managementBaseObject.SetPropertyValue (propertyName, propertyValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -694,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetQualifierValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetQualifierValue (qualifierName As String, qualifierValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetQualifierValue(System::String ^ qualifierName, System::Object ^ qualifierValue);" />
+      <MemberSignature Language="F#" Value="member this.SetQualifierValue : string * obj -&gt; unit" Usage="managementBaseObject.SetQualifierValue (qualifierName, qualifierValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -758,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.SystemProperties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SystemProperties As PropertyDataCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::PropertyDataCollection ^ SystemProperties { System::Management::PropertyDataCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SystemProperties : System.Management.PropertyDataCollection" Usage="System.Management.ManagementBaseObject.SystemProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

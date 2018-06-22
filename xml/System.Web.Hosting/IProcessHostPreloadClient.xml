@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessHostPreloadClient" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProcessHostPreloadClient" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProcessHostPreloadClient" />
+  <TypeSignature Language="F#" Value="type IProcessHostPreloadClient = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostPreloadClient.Preload(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Preload (parameters As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Preload(cli::array &lt;System::String ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member Preload : string[] -&gt; unit" Usage="iProcessHostPreloadClient.Preload parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

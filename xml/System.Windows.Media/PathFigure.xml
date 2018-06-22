@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PathFigure" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PathFigure&#xA;Inherits Animatable&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PathFigure sealed : System::Windows::Media::Animation::Animatable, IFormattable" />
+  <TypeSignature Language="F#" Value="type PathFigure = class&#xA;    inherit Animatable&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.#ctor(System.Windows.Point,System.Collections.Generic.IEnumerable{System.Windows.Media.PathSegment},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As Point, segments As IEnumerable(Of PathSegment), closed As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PathFigure(System::Windows::Point start, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::PathSegment ^&gt; ^ segments, bool closed);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.PathFigure : System.Windows.Point * seq&lt;System.Windows.Media.PathSegment&gt; * bool -&gt; System.Windows.Media.PathFigure" Usage="new System.Windows.Media.PathFigure (start, segments, closed)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As PathFigure" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathFigure ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.PathFigure" Usage="pathFigure.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PathFigure" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathFigure ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.PathFigure" Usage="pathFigure.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="pathFigure.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.GetFlattenedPathFigure" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFlattenedPathFigure () As PathFigure" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathFigure ^ GetFlattenedPathFigure();" />
+      <MemberSignature Language="F#" Value="member this.GetFlattenedPathFigure : unit -&gt; System.Windows.Media.PathFigure" Usage="pathFigure.GetFlattenedPathFigure " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.GetFlattenedPathFigure(System.Double,System.Windows.Media.ToleranceType)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFlattenedPathFigure (tolerance As Double, type As ToleranceType) As PathFigure" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathFigure ^ GetFlattenedPathFigure(double tolerance, System::Windows::Media::ToleranceType type);" />
+      <MemberSignature Language="F#" Value="member this.GetFlattenedPathFigure : double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.PathFigure" Usage="pathFigure.GetFlattenedPathFigure (tolerance, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathFigure.IsClosed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsClosed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClosed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : bool with get, set" Usage="System.Windows.Media.PathFigure.IsClosed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -306,6 +314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathFigure.IsClosedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsClosedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsClosedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsClosedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.PathFigure.IsClosedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -325,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathFigure.IsFilled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsFilled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFilled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsFilled : bool with get, set" Usage="System.Windows.Media.PathFigure.IsFilled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -365,6 +375,7 @@ IsFilled Example
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathFigure.IsFilledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsFilledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsFilledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsFilledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.PathFigure.IsFilledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -384,6 +395,7 @@ IsFilled Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.MayHaveCurves" />
       <MemberSignature Language="VB.NET" Value="Public Function MayHaveCurves () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MayHaveCurves();" />
+      <MemberSignature Language="F#" Value="member this.MayHaveCurves : unit -&gt; bool" Usage="pathFigure.MayHaveCurves " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -406,6 +418,7 @@ IsFilled Example
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathFigure.Segments" />
       <MemberSignature Language="VB.NET" Value="Public Property Segments As PathSegmentCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PathSegmentCollection ^ Segments { System::Windows::Media::PathSegmentCollection ^ get(); void set(System::Windows::Media::PathSegmentCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Segments : System.Windows.Media.PathSegmentCollection with get, set" Usage="System.Windows.Media.PathFigure.Segments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -456,6 +469,7 @@ IsFilled Example
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathFigure.SegmentsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SegmentsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SegmentsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SegmentsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.PathFigure.SegmentsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -475,6 +489,7 @@ IsFilled Example
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathFigure.StartPoint" />
       <MemberSignature Language="VB.NET" Value="Public Property StartPoint As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point StartPoint { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.StartPoint : System.Windows.Point with get, set" Usage="System.Windows.Media.PathFigure.StartPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -509,6 +524,7 @@ IsFilled Example
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathFigure.StartPointProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartPointProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StartPointProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartPointProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.PathFigure.StartPointProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -582,6 +598,7 @@ IsFilled Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="pathFigure.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -610,6 +627,7 @@ IsFilled Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathFigure.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.ToString : IFormatProvider -&gt; string" Usage="pathFigure.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

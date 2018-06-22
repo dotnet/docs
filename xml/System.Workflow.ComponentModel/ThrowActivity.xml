@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ThrowActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThrowActivity&#xA;Inherits Activity&#xA;Implements IDynamicPropertyTypeProvider, ITypeFilterProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThrowActivity sealed : System::Workflow::ComponentModel::Activity, System::Workflow::ComponentModel::Design::ITypeFilterProvider, System::Workflow::ComponentModel::IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="F#" Value="type ThrowActivity = class&#xA;    inherit Activity&#xA;    interface ITypeFilterProvider&#xA;    interface IDynamicPropertyTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ThrowActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThrowActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.ThrowActivity : string -&gt; System.Workflow.ComponentModel.ThrowActivity" Usage="new System.Workflow.ComponentModel.ThrowActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ThrowActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides NotOverridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="throwActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ThrowActivity.Fault" />
       <MemberSignature Language="VB.NET" Value="Public Property Fault As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Fault { Exception ^ get(); void set(Exception ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Fault : Exception with get, set" Usage="System.Workflow.ComponentModel.ThrowActivity.Fault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ThrowActivity.FaultProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FaultProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ FaultProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FaultProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.ThrowActivity.FaultProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ThrowActivity.FaultType" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ FaultType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultType : Type with get, set" Usage="System.Workflow.ComponentModel.ThrowActivity.FaultType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ThrowActivity.FaultTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FaultTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ FaultTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FaultTypeProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.ThrowActivity.FaultTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ThrowActivity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="throwActivity.Initialize provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ThrowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#FilterDescription" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property FilterDescription As String Implements ITypeFilterProvider.FilterDescription" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.ThrowActivity.System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription</InterfaceMember>

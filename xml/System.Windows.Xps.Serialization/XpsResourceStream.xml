@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsResourceStream" />
   <TypeSignature Language="VB.NET" Value="Public Class XpsResourceStream" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsResourceStream" />
+  <TypeSignature Language="F#" Value="type XpsResourceStream = class" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsResourceStream.#ctor(System.IO.Stream,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsResourceStream(System::IO::Stream ^ stream, Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsResourceStream : System.IO.Stream * Uri -&gt; System.Windows.Xps.Serialization.XpsResourceStream" Usage="new System.Windows.Xps.Serialization.XpsResourceStream (stream, uri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsResourceStream.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize();" />
+      <MemberSignature Language="F#" Value="member this.Initialize : unit -&gt; unit" Usage="xpsResourceStream.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsResourceStream.Stream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Stream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Stream : System.IO.Stream" Usage="System.Windows.Xps.Serialization.XpsResourceStream.Stream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsResourceStream.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Xps.Serialization.XpsResourceStream.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

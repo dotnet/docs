@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LightStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum LightStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class LightStyle" />
+  <TypeSignature Language="F#" Value="type LightStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LightStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataVisualization.Charting.LightStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic" />
       <MemberSignature Language="VB.NET" Value="Realistic" />
       <MemberSignature Language="C++ CLI" Value="Realistic" />
+      <MemberSignature Language="F#" Value="Realistic = 2" Usage="System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LightStyle.Simplistic" />
       <MemberSignature Language="VB.NET" Value="Simplistic" />
       <MemberSignature Language="C++ CLI" Value="Simplistic" />
+      <MemberSignature Language="F#" Value="Simplistic = 1" Usage="System.Windows.Forms.DataVisualization.Charting.LightStyle.Simplistic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

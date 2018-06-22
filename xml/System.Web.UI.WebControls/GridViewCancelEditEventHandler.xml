@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewCancelEditEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub GridViewCancelEditEventHandler(sender As Object, e As GridViewCancelEditEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void GridViewCancelEditEventHandler(System::Object ^ sender, GridViewCancelEditEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type GridViewCancelEditEventHandler = delegate of obj * GridViewCancelEditEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DereferenceAlias" />
   <TypeSignature Language="VB.NET" Value="Public Enum DereferenceAlias" />
   <TypeSignature Language="C++ CLI" Value="public enum class DereferenceAlias" />
+  <TypeSignature Language="F#" Value="type DereferenceAlias = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DereferenceAlias.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 3" Usage="System.DirectoryServices.Protocols.DereferenceAlias.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DereferenceAlias.FindingBaseObject" />
       <MemberSignature Language="VB.NET" Value="FindingBaseObject" />
       <MemberSignature Language="C++ CLI" Value="FindingBaseObject" />
+      <MemberSignature Language="F#" Value="FindingBaseObject = 2" Usage="System.DirectoryServices.Protocols.DereferenceAlias.FindingBaseObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DereferenceAlias.InSearching" />
       <MemberSignature Language="VB.NET" Value="InSearching" />
       <MemberSignature Language="C++ CLI" Value="InSearching" />
+      <MemberSignature Language="F#" Value="InSearching = 1" Usage="System.DirectoryServices.Protocols.DereferenceAlias.InSearching" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DereferenceAlias.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 0" Usage="System.DirectoryServices.Protocols.DereferenceAlias.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.VisualDiagnostics" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualDiagnostics" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualDiagnostics abstract sealed" />
+  <TypeSignature Language="F#" Value="type VisualDiagnostics = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.VisualDiagnostics.DisableVisualTreeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DisableVisualTreeChanged ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisableVisualTreeChanged();" />
+      <MemberSignature Language="F#" Value="static member DisableVisualTreeChanged : unit -&gt; unit" Usage="System.Windows.Diagnostics.VisualDiagnostics.DisableVisualTreeChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +59,7 @@ This method is for diagnostic use only. Microsoft does not support the use of th
       <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.VisualDiagnostics.EnableVisualTreeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableVisualTreeChanged ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableVisualTreeChanged();" />
+      <MemberSignature Language="F#" Value="static member EnableVisualTreeChanged : unit -&gt; unit" Usage="System.Windows.Diagnostics.VisualDiagnostics.EnableVisualTreeChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +89,7 @@ Microsoft does not support the use of this method in a production application un
       <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXamlSourceInfo (obj As Object) As XamlSourceInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Diagnostics::XamlSourceInfo ^ GetXamlSourceInfo(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member GetXamlSourceInfo : obj -&gt; System.Windows.Diagnostics.XamlSourceInfo" Usage="System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +123,7 @@ Microsoft does not support the use of this method in a production application un
       <MemberSignature Language="DocId" Value="E:System.Windows.Diagnostics.VisualDiagnostics.VisualTreeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event VisualTreeChanged As EventHandler(Of VisualTreeChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Windows::Diagnostics::VisualTreeChangeEventArgs ^&gt; ^ VisualTreeChanged;" />
+      <MemberSignature Language="F#" Value="member this.VisualTreeChanged : EventHandler&lt;System.Windows.Diagnostics.VisualTreeChangeEventArgs&gt; " Usage="member this.VisualTreeChanged : System.EventHandler&lt;System.Windows.Diagnostics.VisualTreeChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

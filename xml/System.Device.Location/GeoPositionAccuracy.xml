@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPositionAccuracy" />
   <TypeSignature Language="VB.NET" Value="Public Enum GeoPositionAccuracy" />
   <TypeSignature Language="C++ CLI" Value="public enum class GeoPositionAccuracy" />
+  <TypeSignature Language="F#" Value="type GeoPositionAccuracy = " />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionAccuracy.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Device.Location.GeoPositionAccuracy.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionAccuracy.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 1" Usage="System.Device.Location.GeoPositionAccuracy.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>

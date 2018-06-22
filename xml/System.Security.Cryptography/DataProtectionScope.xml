@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DataProtectionScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataProtectionScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataProtectionScope" />
+  <TypeSignature Language="F#" Value="type DataProtectionScope = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DataProtectionScope.CurrentUser" />
       <MemberSignature Language="VB.NET" Value="CurrentUser" />
       <MemberSignature Language="C++ CLI" Value="CurrentUser" />
+      <MemberSignature Language="F#" Value="CurrentUser = 0" Usage="System.Security.Cryptography.DataProtectionScope.CurrentUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DataProtectionScope.LocalMachine" />
       <MemberSignature Language="VB.NET" Value="LocalMachine" />
       <MemberSignature Language="C++ CLI" Value="LocalMachine" />
+      <MemberSignature Language="F#" Value="LocalMachine = 1" Usage="System.Security.Cryptography.DataProtectionScope.LocalMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>

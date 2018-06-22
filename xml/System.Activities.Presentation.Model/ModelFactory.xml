@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelFactory abstract sealed" />
+  <TypeSignature Language="F#" Value="type ModelFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelFactory.CreateItem(System.Activities.Presentation.EditingContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateItem (context As EditingContext, item As Object) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::Model::ModelItem ^ CreateItem(System::Activities::Presentation::EditingContext ^ context, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="static member CreateItem : System.Activities.Presentation.EditingContext * obj -&gt; System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelFactory.CreateItem (context, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelFactory.CreateItem(System.Activities.Presentation.EditingContext,System.Type,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateItem (context As EditingContext, itemType As Type, ParamArray arguments As Object()) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::Model::ModelItem ^ CreateItem(System::Activities::Presentation::EditingContext ^ context, Type ^ itemType, ... cli::array &lt;System::Object ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member CreateItem : System.Activities.Presentation.EditingContext * Type * obj[] -&gt; System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelFactory.CreateItem (context, itemType, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelFactory.CreateItem(System.Activities.Presentation.EditingContext,System.Type,System.Activities.Presentation.Model.CreateOptions,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateItem (context As EditingContext, itemType As Type, options As CreateOptions, ParamArray arguments As Object()) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::Model::ModelItem ^ CreateItem(System::Activities::Presentation::EditingContext ^ context, Type ^ itemType, System::Activities::Presentation::Model::CreateOptions options, ... cli::array &lt;System::Object ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member CreateItem : System.Activities.Presentation.EditingContext * Type * System.Activities.Presentation.Model.CreateOptions * obj[] -&gt; System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelFactory.CreateItem (context, itemType, options, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.ModelItem CreateStaticMemberItem(class System.Activities.Presentation.EditingContext context, class System.Type type, string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelFactory.CreateStaticMemberItem(System.Activities.Presentation.EditingContext,System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::Model::ModelItem ^ CreateStaticMemberItem(System::Activities::Presentation::EditingContext ^ context, Type ^ type, System::String ^ memberName);" />
+      <MemberSignature Language="F#" Value="static member CreateStaticMemberItem : System.Activities.Presentation.EditingContext * Type * string -&gt; System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelFactory.CreateStaticMemberItem (context, type, memberName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

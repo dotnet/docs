@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.EnvelopedSignatureWriter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnvelopedSignatureWriter&#xA;Inherits DelegatingXmlDictionaryWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnvelopedSignatureWriter sealed : System::IdentityModel::DelegatingXmlDictionaryWriter" />
+  <TypeSignature Language="F#" Value="type EnvelopedSignatureWriter = class&#xA;    inherit DelegatingXmlDictionaryWriter" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlWriter innerWriter, class System.IdentityModel.Tokens.SigningCredentials signingCredentials, string referenceId, class System.IdentityModel.Selectors.SecurityTokenSerializer securityTokenSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureWriter.#ctor(System.Xml.XmlWriter,System.IdentityModel.Tokens.SigningCredentials,System.String,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedSignatureWriter(System::Xml::XmlWriter ^ innerWriter, System::IdentityModel::Tokens::SigningCredentials ^ signingCredentials, System::String ^ referenceId, System::IdentityModel::Selectors::SecurityTokenSerializer ^ securityTokenSerializer);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.EnvelopedSignatureWriter : System.Xml.XmlWriter * System.IdentityModel.Tokens.SigningCredentials * string * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; System.IdentityModel.EnvelopedSignatureWriter" Usage="new System.IdentityModel.EnvelopedSignatureWriter (innerWriter, signingCredentials, referenceId, securityTokenSerializer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="envelopedSignatureWriter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureWriter.WriteEndElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndElement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndElement();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndElement : unit -&gt; unit" Usage="envelopedSignatureWriter.WriteEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureWriter.WriteFullEndElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFullEndElement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFullEndElement();" />
+      <MemberSignature Language="F#" Value="override this.WriteFullEndElement : unit -&gt; unit" Usage="envelopedSignatureWriter.WriteFullEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteSignature ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteSignature();" />
+      <MemberSignature Language="F#" Value="member this.WriteSignature : unit -&gt; unit" Usage="envelopedSignatureWriter.WriteSignature " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureWriter.WriteStartElement(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartElement (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartElement(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartElement : string * string * string -&gt; unit" Usage="envelopedSignatureWriter.WriteStartElement (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

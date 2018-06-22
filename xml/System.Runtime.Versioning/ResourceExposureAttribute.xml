@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.ResourceExposureAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourceExposureAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceExposureAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ResourceExposureAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.ResourceExposureAttribute.#ctor(System.Runtime.Versioning.ResourceScope)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exposureLevel As ResourceScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceExposureAttribute(System::Runtime::Versioning::ResourceScope exposureLevel);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Versioning.ResourceExposureAttribute : System.Runtime.Versioning.ResourceScope -&gt; System.Runtime.Versioning.ResourceExposureAttribute" Usage="new System.Runtime.Versioning.ResourceExposureAttribute exposureLevel" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.ResourceExposureAttribute.ResourceExposureLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceExposureLevel As ResourceScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Versioning::ResourceScope ResourceExposureLevel { System::Runtime::Versioning::ResourceScope get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceExposureLevel : System.Runtime.Versioning.ResourceScope" Usage="System.Runtime.Versioning.ResourceExposureAttribute.ResourceExposureLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

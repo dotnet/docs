@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlType" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlType&#xA;Implements IEquatable(Of XamlType)" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlType : IEquatable&lt;System::Xaml::XamlType ^&gt;" />
+  <TypeSignature Language="F#" Value="type XamlType = class&#xA;    interface IEquatable&lt;XamlType&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.#ctor(System.Type,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (underlyingType As Type, schemaContext As XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlType(Type ^ underlyingType, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlType : Type * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlType" Usage="new System.Xaml.XamlType (underlyingType, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.#ctor(System.String,System.Collections.Generic.IList{System.Xaml.XamlType},System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (typeName As String, typeArguments As IList(Of XamlType), schemaContext As XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlType(System::String ^ typeName, System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ typeArguments, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlType : string * System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlType" Usage="new System.Xaml.XamlType (typeName, typeArguments, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.#ctor(System.Type,System.Xaml.XamlSchemaContext,System.Xaml.Schema.XamlTypeInvoker)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (underlyingType As Type, schemaContext As XamlSchemaContext, invoker As XamlTypeInvoker)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlType(Type ^ underlyingType, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::Schema::XamlTypeInvoker ^ invoker);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlType : Type * System.Xaml.XamlSchemaContext * System.Xaml.Schema.XamlTypeInvoker -&gt; System.Xaml.XamlType" Usage="new System.Xaml.XamlType (underlyingType, schemaContext, invoker)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.#ctor(System.String,System.String,System.Collections.Generic.IList{System.Xaml.XamlType},System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (unknownTypeNamespace As String, unknownTypeName As String, typeArguments As IList(Of XamlType), schemaContext As XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlType(System::String ^ unknownTypeNamespace, System::String ^ unknownTypeName, System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ typeArguments, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlType : string * string * System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlType" Usage="new System.Xaml.XamlType (unknownTypeNamespace, unknownTypeName, typeArguments, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.AllowedContentTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedContentTypes As IList(Of XamlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ AllowedContentTypes { System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedContentTypes : System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" Usage="System.Xaml.XamlType.AllowedContentTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseType As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ BaseType { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseType : System.Xaml.XamlType" Usage="System.Xaml.XamlType.BaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanAssignTo(class System.Xaml.XamlType xamlType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.CanAssignTo(System.Xaml.XamlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanAssignTo(System::Xaml::XamlType ^ xamlType);" />
+      <MemberSignature Language="F#" Value="abstract member CanAssignTo : System.Xaml.XamlType -&gt; bool&#xA;override this.CanAssignTo : System.Xaml.XamlType -&gt; bool" Usage="xamlType.CanAssignTo xamlType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -260,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ConstructionRequiresArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConstructionRequiresArguments As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConstructionRequiresArguments { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConstructionRequiresArguments : bool" Usage="System.Xaml.XamlType.ConstructionRequiresArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -288,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ContentProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentProperty As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlMember ^ ContentProperty { System::Xaml::XamlMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentProperty : System.Xaml.XamlMember" Usage="System.Xaml.XamlType.ContentProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -320,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ContentWrappers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentWrappers As IList(Of XamlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ ContentWrappers { System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentWrappers : System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" Usage="System.Xaml.XamlType.ContentWrappers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -353,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.DeferringLoader" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeferringLoader As XamlValueConverter(Of XamlDeferringLoader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Schema::XamlValueConverter&lt;System::Xaml::XamlDeferringLoader ^&gt; ^ DeferringLoader { System::Xaml::Schema::XamlValueConverter&lt;System::Xaml::XamlDeferringLoader ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeferringLoader : System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;" Usage="System.Xaml.XamlType.DeferringLoader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -391,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="xamlType.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -416,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.Equals(System.Xaml.XamlType)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As XamlType) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Xaml::XamlType ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Xaml.XamlType -&gt; bool" Usage="xamlType.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -444,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetAliasedProperty(System.Xaml.XamlDirective)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAliasedProperty (directive As XamlDirective) As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xaml::XamlMember ^ GetAliasedProperty(System::Xaml::XamlDirective ^ directive);" />
+      <MemberSignature Language="F#" Value="member this.GetAliasedProperty : System.Xaml.XamlDirective -&gt; System.Xaml.XamlMember" Usage="xamlType.GetAliasedProperty directive" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -475,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetAllAttachableMembers" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllAttachableMembers () As ICollection(Of XamlMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::ICollection&lt;System::Xaml::XamlMember ^&gt; ^ GetAllAttachableMembers();" />
+      <MemberSignature Language="F#" Value="member this.GetAllAttachableMembers : unit -&gt; System.Collections.Generic.ICollection&lt;System.Xaml.XamlMember&gt;" Usage="xamlType.GetAllAttachableMembers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -505,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetAllMembers" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllMembers () As ICollection(Of XamlMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::ICollection&lt;System::Xaml::XamlMember ^&gt; ^ GetAllMembers();" />
+      <MemberSignature Language="F#" Value="member this.GetAllMembers : unit -&gt; System.Collections.Generic.ICollection&lt;System.Xaml.XamlMember&gt;" Usage="xamlType.GetAllMembers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -533,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetAttachableMember(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAttachableMember (name As String) As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xaml::XamlMember ^ GetAttachableMember(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetAttachableMember : string -&gt; System.Xaml.XamlMember" Usage="xamlType.GetAttachableMember name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -567,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="xamlType.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -588,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetMember(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMember (name As String) As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xaml::XamlMember ^ GetMember(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetMember : string -&gt; System.Xaml.XamlMember" Usage="xamlType.GetMember name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -624,6 +644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetPositionalParameters(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPositionalParameters (parameterCount As Integer) As IList(Of XamlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ GetPositionalParameters(int parameterCount);" />
+      <MemberSignature Language="F#" Value="member this.GetPositionalParameters : int -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" Usage="xamlType.GetPositionalParameters parameterCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -659,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetXamlNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetXamlNamespaces () As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetXamlNamespaces();" />
+      <MemberSignature Language="F#" Value="abstract member GetXamlNamespaces : unit -&gt; System.Collections.Generic.IList&lt;string&gt;&#xA;override this.GetXamlNamespaces : unit -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="xamlType.GetXamlNamespaces " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -689,6 +711,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.Invoker" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Invoker As XamlTypeInvoker" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Schema::XamlTypeInvoker ^ Invoker { System::Xaml::Schema::XamlTypeInvoker ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Invoker : System.Xaml.Schema.XamlTypeInvoker" Usage="System.Xaml.XamlType.Invoker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -718,6 +741,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsAmbient" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAmbient As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAmbient { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAmbient : bool" Usage="System.Xaml.XamlType.IsAmbient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -746,6 +770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsArray" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsArray As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsArray { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsArray : bool" Usage="System.Xaml.XamlType.IsArray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -774,6 +799,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCollection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCollection { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCollection : bool" Usage="System.Xaml.XamlType.IsCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -802,6 +828,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsConstructible" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConstructible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConstructible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConstructible : bool" Usage="System.Xaml.XamlType.IsConstructible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -833,6 +860,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDictionary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDictionary { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDictionary : bool" Usage="System.Xaml.XamlType.IsDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -863,6 +891,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsGeneric" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsGeneric As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsGeneric { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsGeneric : bool" Usage="System.Xaml.XamlType.IsGeneric" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -891,6 +920,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsMarkupExtension" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMarkupExtension As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMarkupExtension { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMarkupExtension : bool" Usage="System.Xaml.XamlType.IsMarkupExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -921,6 +951,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsNameScope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNameScope As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNameScope { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNameScope : bool" Usage="System.Xaml.XamlType.IsNameScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -953,6 +984,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsNameValid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNameValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNameValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNameValid : bool" Usage="System.Xaml.XamlType.IsNameValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -974,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNullable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool" Usage="System.Xaml.XamlType.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1004,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsPublic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPublic : bool" Usage="System.Xaml.XamlType.IsPublic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1035,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsUnknown" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUnknown As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnknown { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsUnknown : bool" Usage="System.Xaml.XamlType.IsUnknown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1065,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsUsableDuringInitialization" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUsableDuringInitialization As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUsableDuringInitialization { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsUsableDuringInitialization : bool" Usage="System.Xaml.XamlType.IsUsableDuringInitialization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1097,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsWhitespaceSignificantCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWhitespaceSignificantCollection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWhitespaceSignificantCollection { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsWhitespaceSignificantCollection : bool" Usage="System.Xaml.XamlType.IsWhitespaceSignificantCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1125,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsXData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsXData As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsXData { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsXData : bool" Usage="System.Xaml.XamlType.IsXData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1155,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ ItemType { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : System.Xaml.XamlType" Usage="System.Xaml.XamlType.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1184,6 +1223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.KeyType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyType As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ KeyType { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyType : System.Xaml.XamlType" Usage="System.Xaml.XamlType.KeyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1213,6 +1253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAliasedProperty(System.Xaml.XamlDirective)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupAliasedProperty (directive As XamlDirective) As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlMember ^ LookupAliasedProperty(System::Xaml::XamlDirective ^ directive);" />
+      <MemberSignature Language="F#" Value="abstract member LookupAliasedProperty : System.Xaml.XamlDirective -&gt; System.Xaml.XamlMember&#xA;override this.LookupAliasedProperty : System.Xaml.XamlDirective -&gt; System.Xaml.XamlMember" Usage="xamlType.LookupAliasedProperty directive" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1250,6 +1291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAllAttachableMembers" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupAllAttachableMembers () As IEnumerable(Of XamlMember)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Xaml::XamlMember ^&gt; ^ LookupAllAttachableMembers();" />
+      <MemberSignature Language="F#" Value="abstract member LookupAllAttachableMembers : unit -&gt; seq&lt;System.Xaml.XamlMember&gt;&#xA;override this.LookupAllAttachableMembers : unit -&gt; seq&lt;System.Xaml.XamlMember&gt;" Usage="xamlType.LookupAllAttachableMembers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1284,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAllMembers" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupAllMembers () As IEnumerable(Of XamlMember)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Xaml::XamlMember ^&gt; ^ LookupAllMembers();" />
+      <MemberSignature Language="F#" Value="abstract member LookupAllMembers : unit -&gt; seq&lt;System.Xaml.XamlMember&gt;&#xA;override this.LookupAllMembers : unit -&gt; seq&lt;System.Xaml.XamlMember&gt;" Usage="xamlType.LookupAllMembers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1320,6 +1363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAllowedContentTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupAllowedContentTypes () As IList(Of XamlType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ LookupAllowedContentTypes();" />
+      <MemberSignature Language="F#" Value="abstract member LookupAllowedContentTypes : unit -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;&#xA;override this.LookupAllowedContentTypes : unit -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" Usage="xamlType.LookupAllowedContentTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1354,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAttachableMember(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupAttachableMember (name As String) As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlMember ^ LookupAttachableMember(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member LookupAttachableMember : string -&gt; System.Xaml.XamlMember&#xA;override this.LookupAttachableMember : string -&gt; System.Xaml.XamlMember" Usage="xamlType.LookupAttachableMember name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1392,6 +1437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupBaseType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupBaseType () As XamlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlType ^ LookupBaseType();" />
+      <MemberSignature Language="F#" Value="abstract member LookupBaseType : unit -&gt; System.Xaml.XamlType&#xA;override this.LookupBaseType : unit -&gt; System.Xaml.XamlType" Usage="xamlType.LookupBaseType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1427,6 +1473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupCollectionKind" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupCollectionKind () As XamlCollectionKind" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlCollectionKind LookupCollectionKind();" />
+      <MemberSignature Language="F#" Value="abstract member LookupCollectionKind : unit -&gt; System.Xaml.Schema.XamlCollectionKind&#xA;override this.LookupCollectionKind : unit -&gt; System.Xaml.Schema.XamlCollectionKind" Usage="xamlType.LookupCollectionKind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1459,6 +1506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupConstructionRequiresArguments" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupConstructionRequiresArguments () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupConstructionRequiresArguments();" />
+      <MemberSignature Language="F#" Value="abstract member LookupConstructionRequiresArguments : unit -&gt; bool&#xA;override this.LookupConstructionRequiresArguments : unit -&gt; bool" Usage="xamlType.LookupConstructionRequiresArguments " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1492,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupContentProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupContentProperty () As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlMember ^ LookupContentProperty();" />
+      <MemberSignature Language="F#" Value="abstract member LookupContentProperty : unit -&gt; System.Xaml.XamlMember&#xA;override this.LookupContentProperty : unit -&gt; System.Xaml.XamlMember" Usage="xamlType.LookupContentProperty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1525,6 +1574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupContentWrappers" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupContentWrappers () As IList(Of XamlType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ LookupContentWrappers();" />
+      <MemberSignature Language="F#" Value="abstract member LookupContentWrappers : unit -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;&#xA;override this.LookupContentWrappers : unit -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" Usage="xamlType.LookupContentWrappers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1555,6 +1605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupCustomAttributeProvider" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupCustomAttributeProvider () As ICustomAttributeProvider" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Reflection::ICustomAttributeProvider ^ LookupCustomAttributeProvider();" />
+      <MemberSignature Language="F#" Value="abstract member LookupCustomAttributeProvider : unit -&gt; System.Reflection.ICustomAttributeProvider&#xA;override this.LookupCustomAttributeProvider : unit -&gt; System.Reflection.ICustomAttributeProvider" Usage="xamlType.LookupCustomAttributeProvider " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1585,6 +1636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupDeferringLoader" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupDeferringLoader () As XamlValueConverter(Of XamlDeferringLoader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlValueConverter&lt;System::Xaml::XamlDeferringLoader ^&gt; ^ LookupDeferringLoader();" />
+      <MemberSignature Language="F#" Value="abstract member LookupDeferringLoader : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;&#xA;override this.LookupDeferringLoader : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;" Usage="xamlType.LookupDeferringLoader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1615,6 +1667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupInvoker" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupInvoker () As XamlTypeInvoker" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlTypeInvoker ^ LookupInvoker();" />
+      <MemberSignature Language="F#" Value="abstract member LookupInvoker : unit -&gt; System.Xaml.Schema.XamlTypeInvoker&#xA;override this.LookupInvoker : unit -&gt; System.Xaml.Schema.XamlTypeInvoker" Usage="xamlType.LookupInvoker " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1647,6 +1700,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsAmbient" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsAmbient () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsAmbient();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsAmbient : unit -&gt; bool&#xA;override this.LookupIsAmbient : unit -&gt; bool" Usage="xamlType.LookupIsAmbient " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1680,6 +1734,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsConstructible" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsConstructible () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsConstructible();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsConstructible : unit -&gt; bool&#xA;override this.LookupIsConstructible : unit -&gt; bool" Usage="xamlType.LookupIsConstructible " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1713,6 +1768,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsMarkupExtension" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsMarkupExtension () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsMarkupExtension();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsMarkupExtension : unit -&gt; bool&#xA;override this.LookupIsMarkupExtension : unit -&gt; bool" Usage="xamlType.LookupIsMarkupExtension " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1750,6 +1806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsNameScope" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsNameScope () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsNameScope();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsNameScope : unit -&gt; bool&#xA;override this.LookupIsNameScope : unit -&gt; bool" Usage="xamlType.LookupIsNameScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1786,6 +1843,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsNullable" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsNullable () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsNullable();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsNullable : unit -&gt; bool&#xA;override this.LookupIsNullable : unit -&gt; bool" Usage="xamlType.LookupIsNullable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1819,6 +1877,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsPublic" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsPublic () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsPublic();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsPublic : unit -&gt; bool&#xA;override this.LookupIsPublic : unit -&gt; bool" Usage="xamlType.LookupIsPublic " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1855,6 +1914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsUnknown" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsUnknown () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsUnknown();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsUnknown : unit -&gt; bool&#xA;override this.LookupIsUnknown : unit -&gt; bool" Usage="xamlType.LookupIsUnknown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1888,6 +1948,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsWhitespaceSignificantCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsWhitespaceSignificantCollection () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsWhitespaceSignificantCollection();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsWhitespaceSignificantCollection : unit -&gt; bool&#xA;override this.LookupIsWhitespaceSignificantCollection : unit -&gt; bool" Usage="xamlType.LookupIsWhitespaceSignificantCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1921,6 +1982,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsXData" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsXData () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsXData();" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsXData : unit -&gt; bool&#xA;override this.LookupIsXData : unit -&gt; bool" Usage="xamlType.LookupIsXData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1954,6 +2016,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupItemType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupItemType () As XamlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlType ^ LookupItemType();" />
+      <MemberSignature Language="F#" Value="abstract member LookupItemType : unit -&gt; System.Xaml.XamlType&#xA;override this.LookupItemType : unit -&gt; System.Xaml.XamlType" Usage="xamlType.LookupItemType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1986,6 +2049,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupKeyType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupKeyType () As XamlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlType ^ LookupKeyType();" />
+      <MemberSignature Language="F#" Value="abstract member LookupKeyType : unit -&gt; System.Xaml.XamlType&#xA;override this.LookupKeyType : unit -&gt; System.Xaml.XamlType" Usage="xamlType.LookupKeyType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2018,6 +2082,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupMarkupExtensionReturnType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupMarkupExtensionReturnType () As XamlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlType ^ LookupMarkupExtensionReturnType();" />
+      <MemberSignature Language="F#" Value="abstract member LookupMarkupExtensionReturnType : unit -&gt; System.Xaml.XamlType&#xA;override this.LookupMarkupExtensionReturnType : unit -&gt; System.Xaml.XamlType" Usage="xamlType.LookupMarkupExtensionReturnType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2050,6 +2115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupMember(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupMember (name As String, skipReadOnlyCheck As Boolean) As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlMember ^ LookupMember(System::String ^ name, bool skipReadOnlyCheck);" />
+      <MemberSignature Language="F#" Value="abstract member LookupMember : string * bool -&gt; System.Xaml.XamlMember&#xA;override this.LookupMember : string * bool -&gt; System.Xaml.XamlMember" Usage="xamlType.LookupMember (name, skipReadOnlyCheck)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2091,6 +2157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupPositionalParameters(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupPositionalParameters (parameterCount As Integer) As IList(Of XamlType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ LookupPositionalParameters(int parameterCount);" />
+      <MemberSignature Language="F#" Value="abstract member LookupPositionalParameters : int -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;&#xA;override this.LookupPositionalParameters : int -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" Usage="xamlType.LookupPositionalParameters parameterCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2128,6 +2195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupSetMarkupExtensionHandler" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupSetMarkupExtensionHandler () As EventHandler(Of XamlSetMarkupExtensionEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual EventHandler&lt;System::Windows::Markup::XamlSetMarkupExtensionEventArgs ^&gt; ^ LookupSetMarkupExtensionHandler();" />
+      <MemberSignature Language="F#" Value="abstract member LookupSetMarkupExtensionHandler : unit -&gt; EventHandler&lt;System.Windows.Markup.XamlSetMarkupExtensionEventArgs&gt;&#xA;override this.LookupSetMarkupExtensionHandler : unit -&gt; EventHandler&lt;System.Windows.Markup.XamlSetMarkupExtensionEventArgs&gt;" Usage="xamlType.LookupSetMarkupExtensionHandler " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2156,6 +2224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupSetTypeConverterHandler" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupSetTypeConverterHandler () As EventHandler(Of XamlSetTypeConverterEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual EventHandler&lt;System::Windows::Markup::XamlSetTypeConverterEventArgs ^&gt; ^ LookupSetTypeConverterHandler();" />
+      <MemberSignature Language="F#" Value="abstract member LookupSetTypeConverterHandler : unit -&gt; EventHandler&lt;System.Windows.Markup.XamlSetTypeConverterEventArgs&gt;&#xA;override this.LookupSetTypeConverterHandler : unit -&gt; EventHandler&lt;System.Windows.Markup.XamlSetTypeConverterEventArgs&gt;" Usage="xamlType.LookupSetTypeConverterHandler " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2184,6 +2253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupTrimSurroundingWhitespace" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupTrimSurroundingWhitespace () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupTrimSurroundingWhitespace();" />
+      <MemberSignature Language="F#" Value="abstract member LookupTrimSurroundingWhitespace : unit -&gt; bool&#xA;override this.LookupTrimSurroundingWhitespace : unit -&gt; bool" Usage="xamlType.LookupTrimSurroundingWhitespace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2215,6 +2285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupTypeConverter" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupTypeConverter () As XamlValueConverter(Of TypeConverter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlValueConverter&lt;System::ComponentModel::TypeConverter ^&gt; ^ LookupTypeConverter();" />
+      <MemberSignature Language="F#" Value="abstract member LookupTypeConverter : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;&#xA;override this.LookupTypeConverter : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;" Usage="xamlType.LookupTypeConverter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2247,6 +2318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupUnderlyingType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupUnderlyingType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ LookupUnderlyingType();" />
+      <MemberSignature Language="F#" Value="abstract member LookupUnderlyingType : unit -&gt; Type&#xA;override this.LookupUnderlyingType : unit -&gt; Type" Usage="xamlType.LookupUnderlyingType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2279,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupUsableDuringInitialization" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupUsableDuringInitialization () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupUsableDuringInitialization();" />
+      <MemberSignature Language="F#" Value="abstract member LookupUsableDuringInitialization : unit -&gt; bool&#xA;override this.LookupUsableDuringInitialization : unit -&gt; bool" Usage="xamlType.LookupUsableDuringInitialization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2314,6 +2387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupValueSerializer" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupValueSerializer () As XamlValueConverter(Of ValueSerializer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlValueConverter&lt;System::Windows::Markup::ValueSerializer ^&gt; ^ LookupValueSerializer();" />
+      <MemberSignature Language="F#" Value="abstract member LookupValueSerializer : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;&#xA;override this.LookupValueSerializer : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;" Usage="xamlType.LookupValueSerializer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2346,6 +2420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.MarkupExtensionReturnType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MarkupExtensionReturnType As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ MarkupExtensionReturnType { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MarkupExtensionReturnType : System.Xaml.XamlType" Usage="System.Xaml.XamlType.MarkupExtensionReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2375,6 +2450,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xaml.XamlType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2402,6 +2478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.op_Equality(System.Xaml.XamlType,System.Xaml.XamlType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (xamlType1 As XamlType, xamlType2 As XamlType) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Xaml::XamlType ^ xamlType1, System::Xaml::XamlType ^ xamlType2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Xaml.XamlType * System.Xaml.XamlType -&gt; bool" Usage="xamlType1 = xamlType2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2429,6 +2506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.op_Inequality(System.Xaml.XamlType,System.Xaml.XamlType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (xamlType1 As XamlType, xamlType2 As XamlType) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Xaml::XamlType ^ xamlType1, System::Xaml::XamlType ^ xamlType2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Xaml.XamlType * System.Xaml.XamlType -&gt; bool" Usage="System.Xaml.XamlType.op_Inequality (xamlType1, xamlType2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2456,6 +2534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.PreferredXamlNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredXamlNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreferredXamlNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredXamlNamespace : string" Usage="System.Xaml.XamlType.PreferredXamlNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2483,6 +2562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.SchemaContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaContext As XamlSchemaContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaContext : System.Xaml.XamlSchemaContext" Usage="System.Xaml.XamlType.SchemaContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2510,6 +2590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xamlType.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2538,6 +2619,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.TrimSurroundingWhitespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrimSurroundingWhitespace As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrimSurroundingWhitespace { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrimSurroundingWhitespace : bool" Usage="System.Xaml.XamlType.TrimSurroundingWhitespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2566,6 +2648,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.TypeArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeArguments As IList(Of XamlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ TypeArguments { System::Collections::Generic::IList&lt;System::Xaml::XamlType ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeArguments : System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" Usage="System.Xaml.XamlType.TypeArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2593,6 +2676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.TypeConverter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeConverter As XamlValueConverter(Of TypeConverter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Schema::XamlValueConverter&lt;System::ComponentModel::TypeConverter ^&gt; ^ TypeConverter { System::Xaml::Schema::XamlValueConverter&lt;System::ComponentModel::TypeConverter ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeConverter : System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;" Usage="System.Xaml.XamlType.TypeConverter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2620,6 +2704,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.UnderlyingType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlyingType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ UnderlyingType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnderlyingType : Type" Usage="System.Xaml.XamlType.UnderlyingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -2645,6 +2730,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ValueSerializer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueSerializer As XamlValueConverter(Of ValueSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Schema::XamlValueConverter&lt;System::Windows::Markup::ValueSerializer ^&gt; ^ ValueSerializer { System::Xaml::Schema::XamlValueConverter&lt;System::Windows::Markup::ValueSerializer ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueSerializer : System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;" Usage="System.Xaml.XamlType.ValueSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

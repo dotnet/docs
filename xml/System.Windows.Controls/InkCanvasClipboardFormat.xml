@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasClipboardFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum InkCanvasClipboardFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class InkCanvasClipboardFormat" />
+  <TypeSignature Language="F#" Value="type InkCanvasClipboardFormat = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.InkSerializedFormat" />
       <MemberSignature Language="VB.NET" Value="InkSerializedFormat" />
       <MemberSignature Language="C++ CLI" Value="InkSerializedFormat" />
+      <MemberSignature Language="F#" Value="InkSerializedFormat = 0" Usage="System.Windows.Controls.InkCanvasClipboardFormat.InkSerializedFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Windows.Controls.InkCanvasClipboardFormat.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.Xaml" />
       <MemberSignature Language="VB.NET" Value="Xaml" />
       <MemberSignature Language="C++ CLI" Value="Xaml" />
+      <MemberSignature Language="F#" Value="Xaml = 2" Usage="System.Windows.Controls.InkCanvasClipboardFormat.Xaml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpTaskAsyncHandler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpTaskAsyncHandler&#xA;Implements IHttpAsyncHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpTaskAsyncHandler abstract : System::Web::IHttpAsyncHandler" />
+  <TypeSignature Language="F#" Value="type HttpTaskAsyncHandler = class&#xA;    interface IHttpAsyncHandler&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpTaskAsyncHandler.IsReusable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReusable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.HttpTaskAsyncHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpTaskAsyncHandler.ProcessRequest(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ProcessRequest (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="httpTaskAsyncHandler.ProcessRequest context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ProcessRequestAsync (context As HttpContext) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task ^ ProcessRequestAsync(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequestAsync : System.Web.HttpContext -&gt; System.Threading.Tasks.Task" Usage="httpTaskAsyncHandler.ProcessRequestAsync context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

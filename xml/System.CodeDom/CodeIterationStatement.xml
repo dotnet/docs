@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeIterationStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeIterationStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeIterationStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeIterationStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeIterationStatement.#ctor(System.CodeDom.CodeStatement,System.CodeDom.CodeExpression,System.CodeDom.CodeStatement,System.CodeDom.CodeStatement[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initStatement As CodeStatement, testExpression As CodeExpression, incrementStatement As CodeStatement, ParamArray statements As CodeStatement())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeIterationStatement(System::CodeDom::CodeStatement ^ initStatement, System::CodeDom::CodeExpression ^ testExpression, System::CodeDom::CodeStatement ^ incrementStatement, ... cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ statements);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeIterationStatement : System.CodeDom.CodeStatement * System.CodeDom.CodeExpression * System.CodeDom.CodeStatement * System.CodeDom.CodeStatement[] -&gt; System.CodeDom.CodeIterationStatement" Usage="new System.CodeDom.CodeIterationStatement (initStatement, testExpression, incrementStatement, statements)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeIterationStatement.IncrementStatement" />
       <MemberSignature Language="VB.NET" Value="Public Property IncrementStatement As CodeStatement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatement ^ IncrementStatement { System::CodeDom::CodeStatement ^ get(); void set(System::CodeDom::CodeStatement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IncrementStatement : System.CodeDom.CodeStatement with get, set" Usage="System.CodeDom.CodeIterationStatement.IncrementStatement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeIterationStatement.InitStatement" />
       <MemberSignature Language="VB.NET" Value="Public Property InitStatement As CodeStatement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatement ^ InitStatement { System::CodeDom::CodeStatement ^ get(); void set(System::CodeDom::CodeStatement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InitStatement : System.CodeDom.CodeStatement with get, set" Usage="System.CodeDom.CodeIterationStatement.InitStatement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeIterationStatement.Statements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Statements As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ Statements { System::CodeDom::CodeStatementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Statements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeIterationStatement.Statements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeIterationStatement.TestExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property TestExpression As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TestExpression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TestExpression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeIterationStatement.TestExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

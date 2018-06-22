@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IIntegratedHelpService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IIntegratedHelpService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IIntegratedHelpService" />
+  <TypeSignature Language="F#" Value="type IIntegratedHelpService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IIntegratedHelpService.AddContextAttribute(System.String,System.String,System.ComponentModel.Design.HelpKeywordType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddContextAttribute (name As String, value As String, keywordType As HelpKeywordType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddContextAttribute(System::String ^ name, System::String ^ value, System::ComponentModel::Design::HelpKeywordType keywordType);" />
+      <MemberSignature Language="F#" Value="abstract member AddContextAttribute : string * string * System.ComponentModel.Design.HelpKeywordType -&gt; unit" Usage="iIntegratedHelpService.AddContextAttribute (name, value, keywordType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IIntegratedHelpService.RemoveContextAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveContextAttribute (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveContextAttribute(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveContextAttribute : string * string -&gt; unit" Usage="iIntegratedHelpService.RemoveContextAttribute (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IIntegratedHelpService.ShowHelpFromKeyword(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowHelpFromKeyword (helpKeyword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowHelpFromKeyword(System::String ^ helpKeyword);" />
+      <MemberSignature Language="F#" Value="abstract member ShowHelpFromKeyword : string -&gt; unit" Usage="iIntegratedHelpService.ShowHelpFromKeyword helpKeyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IIntegratedHelpService.ShowHelpFromUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowHelpFromUrl (helpUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowHelpFromUrl(System::String ^ helpUrl);" />
+      <MemberSignature Language="F#" Value="abstract member ShowHelpFromUrl : string -&gt; unit" Usage="iIntegratedHelpService.ShowHelpFromUrl helpUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

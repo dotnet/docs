@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.BrushMappingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum BrushMappingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class BrushMappingMode" />
+  <TypeSignature Language="F#" Value="type BrushMappingMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BrushMappingMode.Absolute" />
       <MemberSignature Language="VB.NET" Value="Absolute" />
       <MemberSignature Language="C++ CLI" Value="Absolute" />
+      <MemberSignature Language="F#" Value="Absolute = 0" Usage="System.Windows.Media.BrushMappingMode.Absolute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox" />
       <MemberSignature Language="VB.NET" Value="RelativeToBoundingBox" />
       <MemberSignature Language="C++ CLI" Value="RelativeToBoundingBox" />
+      <MemberSignature Language="F#" Value="RelativeToBoundingBox = 1" Usage="System.Windows.Media.BrushMappingMode.RelativeToBoundingBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

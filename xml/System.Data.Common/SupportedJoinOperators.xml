@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.SupportedJoinOperators" />
   <TypeSignature Language="VB.NET" Value="Public Enum SupportedJoinOperators" />
   <TypeSignature Language="C++ CLI" Value="public enum class SupportedJoinOperators" />
+  <TypeSignature Language="F#" Value="type SupportedJoinOperators = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.FullOuter" />
       <MemberSignature Language="VB.NET" Value="FullOuter" />
       <MemberSignature Language="C++ CLI" Value="FullOuter" />
+      <MemberSignature Language="F#" Value="FullOuter = 8" Usage="System.Data.Common.SupportedJoinOperators.FullOuter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.Inner" />
       <MemberSignature Language="VB.NET" Value="Inner" />
       <MemberSignature Language="C++ CLI" Value="Inner" />
+      <MemberSignature Language="F#" Value="Inner = 1" Usage="System.Data.Common.SupportedJoinOperators.Inner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.LeftOuter" />
       <MemberSignature Language="VB.NET" Value="LeftOuter" />
       <MemberSignature Language="C++ CLI" Value="LeftOuter" />
+      <MemberSignature Language="F#" Value="LeftOuter = 2" Usage="System.Data.Common.SupportedJoinOperators.LeftOuter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Common.SupportedJoinOperators.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.RightOuter" />
       <MemberSignature Language="VB.NET" Value="RightOuter" />
       <MemberSignature Language="C++ CLI" Value="RightOuter" />
+      <MemberSignature Language="F#" Value="RightOuter = 4" Usage="System.Data.Common.SupportedJoinOperators.RightOuter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

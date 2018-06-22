@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IteratorStateMachineAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IteratorStateMachineAttribute&#xA;Inherits StateMachineAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IteratorStateMachineAttribute sealed : System::Runtime::CompilerServices::StateMachineAttribute" />
+  <TypeSignature Language="F#" Value="type IteratorStateMachineAttribute = class&#xA;    inherit StateMachineAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IteratorStateMachineAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (stateMachineType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IteratorStateMachineAttribute(Type ^ stateMachineType);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.IteratorStateMachineAttribute : Type -&gt; System.Runtime.CompilerServices.IteratorStateMachineAttribute" Usage="new System.Runtime.CompilerServices.IteratorStateMachineAttribute stateMachineType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

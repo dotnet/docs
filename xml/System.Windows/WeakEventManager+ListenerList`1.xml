@@ -56,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList`1.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListenerList(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Windows.WeakEventManager.ListenerList&lt;'EventArgs (requires 'EventArgs :&gt; EventArgs)&gt; : int -&gt; System.Windows.WeakEventManager.ListenerList&lt;'EventArgs (requires 'EventArgs :&gt; EventArgs)&gt;" Usage="new System.Windows.WeakEventManager.ListenerList&lt;'EventArgs (requires 'EventArgs :&gt; System.EventArgs)&gt; capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -75,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.WeakEventManager/ListenerList Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList`1.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As WeakEventManager.ListenerList" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="listenerList.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList`1.DeliverEvent(System.Object,System.EventArgs,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeliverEvent (sender As Object, e As EventArgs, managerType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeliverEvent(System::Object ^ sender, EventArgs ^ e, Type ^ managerType);" />
+      <MemberSignature Language="F#" Value="override this.DeliverEvent : obj * EventArgs * Type -&gt; bool" Usage="listenerList.DeliverEvent (sender, e, managerType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

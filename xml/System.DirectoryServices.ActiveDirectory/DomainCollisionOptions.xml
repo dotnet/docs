@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum DomainCollisionOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class DomainCollisionOptions" />
+  <TypeSignature Language="F#" Value="type DomainCollisionOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.NetBiosNameDisabledByAdmin" />
       <MemberSignature Language="VB.NET" Value="NetBiosNameDisabledByAdmin" />
       <MemberSignature Language="C++ CLI" Value="NetBiosNameDisabledByAdmin" />
+      <MemberSignature Language="F#" Value="NetBiosNameDisabledByAdmin = 4" Usage="System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.NetBiosNameDisabledByAdmin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.NetBiosNameDisabledByConflict" />
       <MemberSignature Language="VB.NET" Value="NetBiosNameDisabledByConflict" />
       <MemberSignature Language="C++ CLI" Value="NetBiosNameDisabledByConflict" />
+      <MemberSignature Language="F#" Value="NetBiosNameDisabledByConflict = 8" Usage="System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.NetBiosNameDisabledByConflict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.SidDisabledByAdmin" />
       <MemberSignature Language="VB.NET" Value="SidDisabledByAdmin" />
       <MemberSignature Language="C++ CLI" Value="SidDisabledByAdmin" />
+      <MemberSignature Language="F#" Value="SidDisabledByAdmin = 1" Usage="System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.SidDisabledByAdmin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.SidDisabledByConflict" />
       <MemberSignature Language="VB.NET" Value="SidDisabledByConflict" />
       <MemberSignature Language="C++ CLI" Value="SidDisabledByConflict" />
+      <MemberSignature Language="F#" Value="SidDisabledByConflict = 2" Usage="System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.SidDisabledByConflict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

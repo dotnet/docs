@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.UnicodeEncodingConformance" />
   <TypeSignature Language="VB.NET" Value="Public Enum UnicodeEncodingConformance" />
   <TypeSignature Language="C++ CLI" Value="public enum class UnicodeEncodingConformance" />
+  <TypeSignature Language="F#" Value="type UnicodeEncodingConformance = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeEncodingConformance.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Net.Configuration.UnicodeEncodingConformance.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeEncodingConformance.Compat" />
       <MemberSignature Language="VB.NET" Value="Compat" />
       <MemberSignature Language="C++ CLI" Value="Compat" />
+      <MemberSignature Language="F#" Value="Compat = 2" Usage="System.Net.Configuration.UnicodeEncodingConformance.Compat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeEncodingConformance.Strict" />
       <MemberSignature Language="VB.NET" Value="Strict" />
       <MemberSignature Language="C++ CLI" Value="Strict" />
+      <MemberSignature Language="F#" Value="Strict = 1" Usage="System.Net.Configuration.UnicodeEncodingConformance.Strict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

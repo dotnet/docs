@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.IObjectListFieldCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface IObjectListFieldCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public interface class IObjectListFieldCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type IObjectListFieldCollection = interface&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IObjectListFieldCollection.GetAll" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAll () As ObjectListField()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::MobileControls::ObjectListField ^&gt; ^ GetAll();" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : unit -&gt; System.Web.UI.MobileControls.ObjectListField[]" Usage="iObjectListFieldCollection.GetAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IObjectListFieldCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (fieldIDOrTitle As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ fieldIDOrTitle);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : string -&gt; int" Usage="iObjectListFieldCollection.IndexOf fieldIDOrTitle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (field As ObjectListField) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::MobileControls::ObjectListField ^ field);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Web.UI.MobileControls.ObjectListField -&gt; int" Usage="iObjectListFieldCollection.IndexOf field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.IObjectListFieldCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ObjectListField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ObjectListField ^ default[int] { System::Web::UI::MobileControls::ObjectListField ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.MobileControls.ObjectListField" Usage="System.Web.UI.MobileControls.IObjectListFieldCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

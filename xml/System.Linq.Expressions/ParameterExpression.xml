@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.ParameterExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class ParameterExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParameterExpression : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type ParameterExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ParameterExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="parameterExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.ParameterExpression.IsByRef" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsByRef As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsByRef { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsByRef : bool" Usage="System.Linq.Expressions.ParameterExpression.IsByRef" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.ParameterExpression.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Linq.Expressions.ParameterExpression.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.ParameterExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.ParameterExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.ParameterExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.ParameterExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

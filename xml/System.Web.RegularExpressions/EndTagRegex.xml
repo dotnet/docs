@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.EndTagRegex" />
   <TypeSignature Language="VB.NET" Value="Public Class EndTagRegex&#xA;Inherits Regex" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndTagRegex : System::Text::RegularExpressions::Regex" />
+  <TypeSignature Language="F#" Value="type EndTagRegex = class&#xA;    inherit Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.EndTagRegex.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndTagRegex(TimeSpan A_1);" />
+      <MemberSignature Language="F#" Value="new System.Web.RegularExpressions.EndTagRegex : TimeSpan -&gt; System.Web.RegularExpressions.EndTagRegex" Usage="new System.Web.RegularExpressions.EndTagRegex A_1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>

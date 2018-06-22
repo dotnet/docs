@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapBindingStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum SoapBindingStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class SoapBindingStyle" />
+  <TypeSignature Language="F#" Value="type SoapBindingStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingStyle.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.Services.Description.SoapBindingStyle.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingStyle.Document" />
       <MemberSignature Language="VB.NET" Value="Document" />
       <MemberSignature Language="C++ CLI" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 1" Usage="System.Web.Services.Description.SoapBindingStyle.Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingStyle.Rpc" />
       <MemberSignature Language="VB.NET" Value="Rpc" />
       <MemberSignature Language="C++ CLI" Value="Rpc" />
+      <MemberSignature Language="F#" Value="Rpc = 2" Usage="System.Web.Services.Description.SoapBindingStyle.Rpc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

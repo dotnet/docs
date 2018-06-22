@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TemplateBindingExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplateBindingExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateBindingExpression : System::Windows::Expression" />
+  <TypeSignature Language="F#" Value="type TemplateBindingExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateBindingExpression.TemplateBindingExtension" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplateBindingExtension As TemplateBindingExtension" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TemplateBindingExtension ^ TemplateBindingExtension { System::Windows::TemplateBindingExtension ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplateBindingExtension : System.Windows.TemplateBindingExtension" Usage="System.Windows.TemplateBindingExpression.TemplateBindingExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

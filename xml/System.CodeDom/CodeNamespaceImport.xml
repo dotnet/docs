@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeNamespaceImport" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeNamespaceImport&#xA;Inherits CodeObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeNamespaceImport : System::CodeDom::CodeObject" />
+  <TypeSignature Language="F#" Value="type CodeNamespaceImport = class&#xA;    inherit CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceImport.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nameSpace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNamespaceImport(System::String ^ nameSpace);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeNamespaceImport : string -&gt; System.CodeDom.CodeNamespaceImport" Usage="new System.CodeDom.CodeNamespaceImport nameSpace" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespaceImport.LinePragma" />
       <MemberSignature Language="VB.NET" Value="Public Property LinePragma As CodeLinePragma" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeLinePragma ^ LinePragma { System::CodeDom::CodeLinePragma ^ get(); void set(System::CodeDom::CodeLinePragma ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LinePragma : System.CodeDom.CodeLinePragma with get, set" Usage="System.CodeDom.CodeNamespaceImport.LinePragma" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespaceImport.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.CodeDom.CodeNamespaceImport.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

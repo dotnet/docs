@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InitiatorServiceModelSecurityTokenRequirement&#xA;Inherits ServiceModelSecurityTokenRequirement" />
   <TypeSignature Language="C++ CLI" Value="public ref class InitiatorServiceModelSecurityTokenRequirement sealed : System::ServiceModel::Security::Tokens::ServiceModelSecurityTokenRequirement" />
+  <TypeSignature Language="F#" Value="type InitiatorServiceModelSecurityTokenRequirement = class&#xA;    inherit ServiceModelSecurityTokenRequirement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.TargetAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetAddress As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ TargetAddress { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetAddress : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.TargetAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="initiatorServiceModelSecurityTokenRequirement.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.Via" />
       <MemberSignature Language="VB.NET" Value="Public Property Via As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Via { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Via : Uri with get, set" Usage="System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.Via" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

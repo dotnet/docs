@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.TimerExtension" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TimerExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class TimerExtension abstract" />
+  <TypeSignature Language="F#" Value="type TimerExtension = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelTimer(class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TimerExtension.CancelTimer(System.Activities.Bookmark)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelTimer(System::Activities::Bookmark ^ bookmark);" />
+      <MemberSignature Language="F#" Value="member this.CancelTimer : System.Activities.Bookmark -&gt; unit" Usage="timerExtension.CancelTimer bookmark" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCancelTimer(class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TimerExtension.OnCancelTimer(System.Activities.Bookmark)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnCancelTimer(System::Activities::Bookmark ^ bookmark);" />
+      <MemberSignature Language="F#" Value="abstract member OnCancelTimer : System.Activities.Bookmark -&gt; unit" Usage="timerExtension.OnCancelTimer bookmark" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRegisterTimer(valuetype System.TimeSpan timeout, class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TimerExtension.OnRegisterTimer(System.TimeSpan,System.Activities.Bookmark)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnRegisterTimer(TimeSpan timeout, System::Activities::Bookmark ^ bookmark);" />
+      <MemberSignature Language="F#" Value="abstract member OnRegisterTimer : TimeSpan * System.Activities.Bookmark -&gt; unit" Usage="timerExtension.OnRegisterTimer (timeout, bookmark)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterTimer(valuetype System.TimeSpan timeout, class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TimerExtension.RegisterTimer(System.TimeSpan,System.Activities.Bookmark)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterTimer(TimeSpan timeout, System::Activities::Bookmark ^ bookmark);" />
+      <MemberSignature Language="F#" Value="member this.RegisterTimer : TimeSpan * System.Activities.Bookmark -&gt; unit" Usage="timerExtension.RegisterTimer (timeout, bookmark)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.RequestNavigateEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestNavigateEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestNavigateEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type RequestNavigateEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, string target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.RequestNavigateEventArgs.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestNavigateEventArgs(Uri ^ uri, System::String ^ target);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Navigation.RequestNavigateEventArgs : Uri * string -&gt; System.Windows.Navigation.RequestNavigateEventArgs" Usage="new System.Windows.Navigation.RequestNavigateEventArgs (uri, target)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.RequestNavigateEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="requestNavigateEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.RequestNavigateEventArgs.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string" Usage="System.Windows.Navigation.RequestNavigateEventArgs.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.RequestNavigateEventArgs.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Navigation.RequestNavigateEventArgs.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

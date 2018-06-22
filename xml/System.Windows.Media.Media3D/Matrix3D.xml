@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Matrix3D" />
   <TypeSignature Language="VB.NET" Value="Public Structure Matrix3D&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Matrix3D : IFormattable" />
+  <TypeSignature Language="F#" Value="type Matrix3D = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -150,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m11 As Double, m12 As Double, m13 As Double, m14 As Double, m21 As Double, m22 As Double, m23 As Double, m24 As Double, m31 As Double, m32 As Double, m33 As Double, m34 As Double, offsetX As Double, offsetY As Double, offsetZ As Double, m44 As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Matrix3D(double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double offsetX, double offsetY, double offsetZ, double m44);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.Matrix3D : double * double * double * double * double * double * double * double * double * double * double * double * double * double * double * double -&gt; System.Windows.Media.Media3D.Matrix3D" Usage="new System.Windows.Media.Media3D.Matrix3D (m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, offsetX, offsetY, offsetZ, m44)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -200,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Append(System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (matrix As Matrix3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::Windows::Media::Media3D::Matrix3D matrix);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Windows.Media.Media3D.Matrix3D -&gt; unit" Usage="matrix3D.Append matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,6 +256,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.Determinant" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Determinant As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Determinant { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Determinant : double" Usage="System.Windows.Media.Media3D.Matrix3D.Determinant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +286,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="matrix3D.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -307,6 +312,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Equals(System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Matrix3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::Media3D::Matrix3D value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.Media3D.Matrix3D -&gt; bool" Usage="matrix3D.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -332,6 +338,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Equals(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (matrix1 As Matrix3D, matrix2 As Matrix3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Media3D::Matrix3D matrix1, System::Windows::Media::Media3D::Matrix3D matrix2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Media.Media3D.Matrix3D * System.Windows.Media.Media3D.Matrix3D -&gt; bool" Usage="System.Windows.Media.Media3D.Matrix3D.Equals (matrix1, matrix2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -359,6 +366,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="matrix3D.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -380,6 +388,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.HasInverse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasInverse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasInverse { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasInverse : bool" Usage="System.Windows.Media.Media3D.Matrix3D.HasInverse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -401,6 +410,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As Matrix3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Media3D::Matrix3D Identity { System::Windows::Media::Media3D::Matrix3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Windows.Media.Media3D.Matrix3D" Usage="System.Windows.Media.Media3D.Matrix3D.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -428,6 +438,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Invert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invert();" />
+      <MemberSignature Language="F#" Value="member this.Invert : unit -&gt; unit" Usage="matrix3D.Invert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -456,6 +467,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.IsAffine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAffine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAffine { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAffine : bool" Usage="System.Windows.Media.Media3D.Matrix3D.IsAffine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -477,6 +489,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.IsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIdentity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIdentity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsIdentity : bool" Usage="System.Windows.Media.Media3D.Matrix3D.IsIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -505,6 +518,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M11" />
       <MemberSignature Language="VB.NET" Value="Public Property M11 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M11 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M11 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -525,6 +539,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M12" />
       <MemberSignature Language="VB.NET" Value="Public Property M12 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M12 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M12 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M12" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -545,6 +560,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M13" />
       <MemberSignature Language="VB.NET" Value="Public Property M13 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M13 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M13 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M13" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -565,6 +581,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M14" />
       <MemberSignature Language="VB.NET" Value="Public Property M14 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M14 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M14 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M14" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -585,6 +602,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M21" />
       <MemberSignature Language="VB.NET" Value="Public Property M21 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M21 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M21 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M21" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -605,6 +623,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M22" />
       <MemberSignature Language="VB.NET" Value="Public Property M22 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M22 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M22 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M22" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -625,6 +644,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M23" />
       <MemberSignature Language="VB.NET" Value="Public Property M23 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M23 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M23 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M23" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -645,6 +665,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M24" />
       <MemberSignature Language="VB.NET" Value="Public Property M24 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M24 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M24 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M24" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -665,6 +686,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M31" />
       <MemberSignature Language="VB.NET" Value="Public Property M31 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M31 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M31 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M31" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -685,6 +707,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M32" />
       <MemberSignature Language="VB.NET" Value="Public Property M32 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M32 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M32 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M32" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -705,6 +728,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M33" />
       <MemberSignature Language="VB.NET" Value="Public Property M33 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M33 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M33 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M33" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -725,6 +749,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M34" />
       <MemberSignature Language="VB.NET" Value="Public Property M34 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M34 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M34 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M34" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -745,6 +770,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M44" />
       <MemberSignature Language="VB.NET" Value="Public Property M44 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M44 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M44 : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.M44" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -765,6 +791,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Multiply(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (matrix1 As Matrix3D, matrix2 As Matrix3D) As Matrix3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Matrix3D Multiply(System::Windows::Media::Media3D::Matrix3D matrix1, System::Windows::Media::Media3D::Matrix3D matrix2);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Windows.Media.Media3D.Matrix3D * System.Windows.Media.Media3D.Matrix3D -&gt; System.Windows.Media.Media3D.Matrix3D" Usage="System.Windows.Media.Media3D.Matrix3D.Multiply (matrix1, matrix2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -792,6 +819,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.OffsetX" />
       <MemberSignature Language="VB.NET" Value="Public Property OffsetX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetX : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.OffsetX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -812,6 +840,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.OffsetY" />
       <MemberSignature Language="VB.NET" Value="Public Property OffsetY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetY : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.OffsetY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -832,6 +861,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.OffsetZ" />
       <MemberSignature Language="VB.NET" Value="Public Property OffsetZ As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetZ { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetZ : double with get, set" Usage="System.Windows.Media.Media3D.Matrix3D.OffsetZ" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -852,6 +882,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.op_Equality(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (matrix1 As Matrix3D, matrix2 As Matrix3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Media3D::Matrix3D matrix1, System::Windows::Media::Media3D::Matrix3D matrix2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.Media3D.Matrix3D * System.Windows.Media.Media3D.Matrix3D -&gt; bool" Usage="matrix1 = matrix2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -886,6 +917,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.op_Inequality(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (matrix1 As Matrix3D, matrix2 As Matrix3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Media3D::Matrix3D matrix1, System::Windows::Media::Media3D::Matrix3D matrix2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.Media3D.Matrix3D * System.Windows.Media.Media3D.Matrix3D -&gt; bool" Usage="System.Windows.Media.Media3D.Matrix3D.op_Inequality (matrix1, matrix2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -920,6 +952,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.op_Multiply(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (matrix1 As Matrix3D, matrix2 As Matrix3D) As Matrix3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Matrix3D operator *(System::Windows::Media::Media3D::Matrix3D matrix1, System::Windows::Media::Media3D::Matrix3D matrix2);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Windows.Media.Media3D.Matrix3D * System.Windows.Media.Media3D.Matrix3D -&gt; System.Windows.Media.Media3D.Matrix3D" Usage="matrix1 * matrix2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -947,6 +980,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Matrix3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Matrix3D Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Media.Media3D.Matrix3D" Usage="System.Windows.Media.Media3D.Matrix3D.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -971,6 +1005,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Prepend(System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Prepend (matrix As Matrix3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Prepend(System::Windows::Media::Media3D::Matrix3D matrix);" />
+      <MemberSignature Language="F#" Value="member this.Prepend : System.Windows.Media.Media3D.Matrix3D -&gt; unit" Usage="matrix3D.Prepend matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -993,6 +1028,7 @@ P' = C.Transform(P);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rotate(valuetype System.Windows.Media.Media3D.Quaternion quaternion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Rotate(System.Windows.Media.Media3D.Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rotate(System::Windows::Media::Media3D::Quaternion quaternion);" />
+      <MemberSignature Language="F#" Value="member this.Rotate : System.Windows.Media.Media3D.Quaternion -&gt; unit" Usage="matrix3D.Rotate quaternion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1016,6 +1052,7 @@ P' = C.Transform(P);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateAt(valuetype System.Windows.Media.Media3D.Quaternion quaternion, valuetype System.Windows.Media.Media3D.Point3D center) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.RotateAt(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateAt(System::Windows::Media::Media3D::Quaternion quaternion, System::Windows::Media::Media3D::Point3D center);" />
+      <MemberSignature Language="F#" Value="member this.RotateAt : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Media3D.Point3D -&gt; unit" Usage="matrix3D.RotateAt (quaternion, center)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1041,6 +1078,7 @@ P' = C.Transform(P);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateAtPrepend(valuetype System.Windows.Media.Media3D.Quaternion quaternion, valuetype System.Windows.Media.Media3D.Point3D center) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.RotateAtPrepend(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateAtPrepend(System::Windows::Media::Media3D::Quaternion quaternion, System::Windows::Media::Media3D::Point3D center);" />
+      <MemberSignature Language="F#" Value="member this.RotateAtPrepend : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Media3D.Point3D -&gt; unit" Usage="matrix3D.RotateAtPrepend (quaternion, center)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1066,6 +1104,7 @@ P' = C.Transform(P);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotatePrepend(valuetype System.Windows.Media.Media3D.Quaternion quaternion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.RotatePrepend(System.Windows.Media.Media3D.Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotatePrepend(System::Windows::Media::Media3D::Quaternion quaternion);" />
+      <MemberSignature Language="F#" Value="member this.RotatePrepend : System.Windows.Media.Media3D.Quaternion -&gt; unit" Usage="matrix3D.RotatePrepend quaternion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1089,6 +1128,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Scale(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Scale (scale As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Scale(System::Windows::Media::Media3D::Vector3D scale);" />
+      <MemberSignature Language="F#" Value="member this.Scale : System.Windows.Media.Media3D.Vector3D -&gt; unit" Usage="matrix3D.Scale scale" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1112,6 +1152,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ScaleAt(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleAt (scale As Vector3D, center As Point3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScaleAt(System::Windows::Media::Media3D::Vector3D scale, System::Windows::Media::Media3D::Point3D center);" />
+      <MemberSignature Language="F#" Value="member this.ScaleAt : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Point3D -&gt; unit" Usage="matrix3D.ScaleAt (scale, center)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1137,6 +1178,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ScaleAtPrepend(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleAtPrepend (scale As Vector3D, center As Point3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScaleAtPrepend(System::Windows::Media::Media3D::Vector3D scale, System::Windows::Media::Media3D::Point3D center);" />
+      <MemberSignature Language="F#" Value="member this.ScaleAtPrepend : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Point3D -&gt; unit" Usage="matrix3D.ScaleAtPrepend (scale, center)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1163,6 +1205,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ScalePrepend(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScalePrepend (scale As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScalePrepend(System::Windows::Media::Media3D::Vector3D scale);" />
+      <MemberSignature Language="F#" Value="member this.ScalePrepend : System.Windows.Media.Media3D.Vector3D -&gt; unit" Usage="matrix3D.ScalePrepend scale" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1186,6 +1229,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.SetIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIdentity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIdentity();" />
+      <MemberSignature Language="F#" Value="member this.SetIdentity : unit -&gt; unit" Usage="matrix3D.SetIdentity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1259,6 +1303,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="matrix3D.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1280,6 +1325,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="matrix3D.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1313,6 +1359,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Transform (point As Point3D) As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Point3D Transform(System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Media.Media3D.Point3D" Usage="matrix3D.Transform point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1338,6 +1385,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Point3D[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (points As Point3D())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Point3D&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Media3D.Point3D[] -&gt; unit" Usage="matrix3D.Transform points" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1362,6 +1410,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Point4D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Transform (point As Point4D) As Point4D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Point4D Transform(System::Windows::Media::Media3D::Point4D point);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Media3D.Point4D -&gt; System.Windows.Media.Media3D.Point4D" Usage="matrix3D.Transform point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1387,6 +1436,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Point4D[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (points As Point4D())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Point4D&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Media3D.Point4D[] -&gt; unit" Usage="matrix3D.Transform points" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1411,6 +1461,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Transform (vector As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Vector3D Transform(System::Windows::Media::Media3D::Vector3D vector);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="matrix3D.Transform vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1436,6 +1487,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Vector3D[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (vectors As Vector3D())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Vector3D&gt; ^ vectors);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Media3D.Vector3D[] -&gt; unit" Usage="matrix3D.Transform vectors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1460,6 +1512,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Translate(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Translate (offset As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Translate(System::Windows::Media::Media3D::Vector3D offset);" />
+      <MemberSignature Language="F#" Value="member this.Translate : System.Windows.Media.Media3D.Vector3D -&gt; unit" Usage="matrix3D.Translate offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1484,6 +1537,7 @@ P' = C.Transform(P);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.TranslatePrepend(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TranslatePrepend (offset As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TranslatePrepend(System::Windows::Media::Media3D::Vector3D offset);" />
+      <MemberSignature Language="F#" Value="member this.TranslatePrepend : System.Windows.Media.Media3D.Vector3D -&gt; unit" Usage="matrix3D.TranslatePrepend offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IParserAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IParserAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IParserAccessor" />
+  <TypeSignature Language="F#" Value="type IParserAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddParsedSubObject (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddParsedSubObject(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member AddParsedSubObject : obj -&gt; unit" Usage="iParserAccessor.AddParsedSubObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

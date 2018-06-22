@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ISendMessageCallback" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISendMessageCallback" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISendMessageCallback" />
+  <TypeSignature Language="F#" Value="type ISendMessageCallback = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnSendMessage(class System.ServiceModel.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ISendMessageCallback.OnSendMessage(System.ServiceModel.OperationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSendMessage(System::ServiceModel::OperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member OnSendMessage : System.ServiceModel.OperationContext -&gt; unit" Usage="iSendMessageCallback.OnSendMessage operationContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

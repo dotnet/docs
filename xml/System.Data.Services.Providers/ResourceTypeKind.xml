@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceTypeKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResourceTypeKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class ResourceTypeKind" />
+  <TypeSignature Language="F#" Value="type ResourceTypeKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourceTypeKind.ComplexType" />
       <MemberSignature Language="VB.NET" Value="ComplexType" />
       <MemberSignature Language="C++ CLI" Value="ComplexType" />
+      <MemberSignature Language="F#" Value="ComplexType = 1" Usage="System.Data.Services.Providers.ResourceTypeKind.ComplexType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourceTypeKind.EntityType" />
       <MemberSignature Language="VB.NET" Value="EntityType" />
       <MemberSignature Language="C++ CLI" Value="EntityType" />
+      <MemberSignature Language="F#" Value="EntityType = 0" Usage="System.Data.Services.Providers.ResourceTypeKind.EntityType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourceTypeKind.Primitive" />
       <MemberSignature Language="VB.NET" Value="Primitive" />
       <MemberSignature Language="C++ CLI" Value="Primitive" />
+      <MemberSignature Language="F#" Value="Primitive = 2" Usage="System.Data.Services.Providers.ResourceTypeKind.Primitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRowsetInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRowsetInfo" />
+  <TypeSignature Language="F#" Value="type IRowsetInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetProperties(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[],System.Int32@,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetProperties (cPropertyIDSets As Integer, rgPropertyIDSets As DBPROPIDSET(), ByRef cPropertySets As Integer, ByRef prgPropertySets As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetProperties(int cPropertyIDSets, cli::array &lt;Microsoft::VisualBasic::Compatibility::VB6::DBPROPIDSET&gt; ^ rgPropertyIDSets, [Runtime::InteropServices::Out] int % cPropertySets, [Runtime::InteropServices::Out] IntPtr % prgPropertySets);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : int * Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[] *  *  -&gt; unit" Usage="iRowsetInfo.GetProperties (cPropertyIDSets, rgPropertyIDSets, cPropertySets, prgPropertySets)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetReferencedRowset(System.Int32,System.Guid,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetReferencedRowset (iOrdinal As Integer, riid As Guid, ByRef referencedRowset As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetReferencedRowset(int iOrdinal, Guid riid, [Runtime::InteropServices::Out] System::Object ^ % referencedRowset);" />
+      <MemberSignature Language="F#" Value="abstract member GetReferencedRowset : int * Guid *  -&gt; unit" Usage="iRowsetInfo.GetReferencedRowset (iOrdinal, riid, referencedRowset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetSpecification(System.Guid,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetSpecification (riid As Guid, ByRef specification As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSpecification(Guid riid, [Runtime::InteropServices::Out] System::Object ^ % specification);" />
+      <MemberSignature Language="F#" Value="abstract member GetSpecification : Guid *  -&gt; unit" Usage="iRowsetInfo.GetSpecification (riid, specification)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

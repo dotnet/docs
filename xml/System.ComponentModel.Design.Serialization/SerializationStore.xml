@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.SerializationStore" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SerializationStore&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerializationStore abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type SerializationStore = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializationStore.Close" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="serializationStore.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializationStore.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="serializationStore.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.SerializationStore.Errors" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Errors As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ICollection ^ Errors { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Collections.ICollection" Usage="System.ComponentModel.Design.Serialization.SerializationStore.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializationStore.Save(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Save(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.IO.Stream -&gt; unit" Usage="serializationStore.Save stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

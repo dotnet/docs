@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.HwndDpiChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub HwndDpiChangedEventHandler(sender As Object, e As HwndDpiChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void HwndDpiChangedEventHandler(System::Object ^ sender, HwndDpiChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type HwndDpiChangedEventHandler = delegate of obj * HwndDpiChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

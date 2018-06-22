@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NameValueCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class NameValueCollection&#xA;Inherits NameObjectCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class NameValueCollection : System::Collections::Specialized::NameObjectCollectionBase" />
+  <TypeSignature Language="F#" Value="type NameValueCollection = class&#xA;    inherit NameObjectCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Specialized</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -128,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.#ctor(System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueCollection(System::Collections::IEqualityComparer ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameValueCollection : System.Collections.IEqualityComparer -&gt; System.Collections.Specialized.NameValueCollection" Usage="new System.Collections.Specialized.NameValueCollection equalityComparer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -173,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.#ctor(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (col As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueCollection(System::Collections::Specialized::NameValueCollection ^ col);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameValueCollection : System.Collections.Specialized.NameValueCollection -&gt; System.Collections.Specialized.NameValueCollection" Usage="new System.Collections.Specialized.NameValueCollection col" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -225,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueCollection(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameValueCollection : int -&gt; System.Collections.Specialized.NameValueCollection" Usage="new System.Collections.Specialized.NameValueCollection capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -275,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hashProvider As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueCollection(System::Collections::IHashCodeProvider ^ hashProvider, System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameValueCollection : System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Specialized.NameValueCollection" Usage="new System.Collections.Specialized.NameValueCollection (hashProvider, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -331,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.#ctor(System.Int32,System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueCollection(int capacity, System::Collections::IEqualityComparer ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameValueCollection : int * System.Collections.IEqualityComparer -&gt; System.Collections.Specialized.NameValueCollection" Usage="new System.Collections.Specialized.NameValueCollection (capacity, equalityComparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -380,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.#ctor(System.Int32,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, col As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueCollection(int capacity, System::Collections::Specialized::NameValueCollection ^ col);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameValueCollection : int * System.Collections.Specialized.NameValueCollection -&gt; System.Collections.Specialized.NameValueCollection" Usage="new System.Collections.Specialized.NameValueCollection (capacity, col)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -434,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NameValueCollection(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameValueCollection : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Collections.Specialized.NameValueCollection" Usage="new System.Collections.Specialized.NameValueCollection (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -476,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, hashProvider As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueCollection(int capacity, System::Collections::IHashCodeProvider ^ hashProvider, System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameValueCollection : int * System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Specialized.NameValueCollection" Usage="new System.Collections.Specialized.NameValueCollection (capacity, hashProvider, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -544,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.Add(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (c As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Collections::Specialized::NameValueCollection ^ c);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="nameValueCollection.Add c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -593,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; unit&#xA;override this.Add : string * string -&gt; unit" Usage="nameValueCollection.Add (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -641,6 +652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Collections.Specialized.NameValueCollection.AllKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -685,6 +697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="nameValueCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -725,6 +738,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (dest As Array, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Array ^ dest, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Array * int -&gt; unit" Usage="nameValueCollection.CopyTo (dest, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -793,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Get(int index);" />
+      <MemberSignature Language="F#" Value="abstract member Get : int -&gt; string&#xA;override this.Get : int -&gt; string" Usage="nameValueCollection.Get index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -839,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Get(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member Get : string -&gt; string&#xA;override this.Get : string -&gt; string" Usage="nameValueCollection.Get name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -887,6 +903,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKey (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetKey(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetKey : int -&gt; string&#xA;override this.GetKey : int -&gt; string" Usage="nameValueCollection.GetKey index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -942,6 +959,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.GetValues(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValues (index As Integer) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetValues(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetValues : int -&gt; string[]&#xA;override this.GetValues : int -&gt; string[]" Usage="nameValueCollection.GetValues index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -988,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.GetValues(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValues (name As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetValues(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetValues : string -&gt; string[]&#xA;override this.GetValues : string -&gt; string[]" Usage="nameValueCollection.GetValues name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1036,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.HasKeys" />
       <MemberSignature Language="VB.NET" Value="Public Function HasKeys () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasKeys();" />
+      <MemberSignature Language="F#" Value="member this.HasKeys : unit -&gt; bool" Usage="nameValueCollection.HasKeys " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1076,6 +1096,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.InvalidateCachedArrays" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InvalidateCachedArrays ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvalidateCachedArrays();" />
+      <MemberSignature Language="F#" Value="member this.InvalidateCachedArrays : unit -&gt; unit" Usage="nameValueCollection.InvalidateCachedArrays " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1127,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameValueCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[int] { System::String ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : string" Usage="System.Collections.Specialized.NameValueCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1178,6 +1200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameValueCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ name); void set(System::String ^ name, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Collections.Specialized.NameValueCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1233,6 +1256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="nameValueCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1279,6 +1303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameValueCollection.Set(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Set (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Set(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Set : string * string -&gt; unit&#xA;override this.Set : string * string -&gt; unit" Usage="nameValueCollection.Set (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>

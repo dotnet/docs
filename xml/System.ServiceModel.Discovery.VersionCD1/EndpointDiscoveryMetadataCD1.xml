@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointDiscoveryMetadataCD1&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointDiscoveryMetadataCD1 : System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type EndpointDiscoveryMetadataCD1 = class&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1 FromEndpointDiscoveryMetadata(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.FromEndpointDiscoveryMetadata(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Discovery::VersionCD1::EndpointDiscoveryMetadataCD1 ^ FromEndpointDiscoveryMetadata(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ endpointDiscoveryMetadata);" />
+      <MemberSignature Language="F#" Value="static member FromEndpointDiscoveryMetadata : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1" Usage="System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.FromEndpointDiscoveryMetadata endpointDiscoveryMetadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchema () As XmlSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
+      <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="endpointDiscoveryMetadataCD1.GetSchema " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.GetSchema(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSchema (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetSchema(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetSchema : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.GetSchema schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXml (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="endpointDiscoveryMetadataCD1.ReadXml reader" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.ToEndpointDiscoveryMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Function ToEndpointDiscoveryMetadata () As EndpointDiscoveryMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ ToEndpointDiscoveryMetadata();" />
+      <MemberSignature Language="F#" Value="member this.ToEndpointDiscoveryMetadata : unit -&gt; System.ServiceModel.Discovery.EndpointDiscoveryMetadata" Usage="endpointDiscoveryMetadataCD1.ToEndpointDiscoveryMetadata " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="endpointDiscoveryMetadataCD1.WriteXml writer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityAction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityAction&#xA;Inherits ActivityDelegate" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityAction sealed : System::Activities::ActivityDelegate" />
+  <TypeSignature Language="F#" Value="type ActivityAction = class&#xA;    inherit ActivityDelegate" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

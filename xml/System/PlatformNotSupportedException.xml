@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.PlatformNotSupportedException" />
   <TypeSignature Language="VB.NET" Value="Public Class PlatformNotSupportedException&#xA;Inherits NotSupportedException" />
   <TypeSignature Language="C++ CLI" Value="public ref class PlatformNotSupportedException : NotSupportedException" />
+  <TypeSignature Language="F#" Value="type PlatformNotSupportedException = class&#xA;    inherit NotSupportedException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.PlatformNotSupportedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PlatformNotSupportedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new PlatformNotSupportedException : string -&gt; PlatformNotSupportedException" Usage="new System.PlatformNotSupportedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -152,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.PlatformNotSupportedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PlatformNotSupportedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new PlatformNotSupportedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; PlatformNotSupportedException" Usage="new System.PlatformNotSupportedException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.PlatformNotSupportedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PlatformNotSupportedException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new PlatformNotSupportedException : string * Exception -&gt; PlatformNotSupportedException" Usage="new System.PlatformNotSupportedException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

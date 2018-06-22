@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TextComposition" />
   <TypeSignature Language="VB.NET" Value="Public Class TextComposition&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextComposition : System::Windows::Threading::DispatcherObject" />
+  <TypeSignature Language="F#" Value="type TextComposition = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.InputManager inputManager, class System.Windows.IInputElement source, string resultText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TextComposition.#ctor(System.Windows.Input.InputManager,System.Windows.IInputElement,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextComposition(System::Windows::Input::InputManager ^ inputManager, System::Windows::IInputElement ^ source, System::String ^ resultText);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.TextComposition : System.Windows.Input.InputManager * System.Windows.IInputElement * string -&gt; System.Windows.Input.TextComposition" Usage="new System.Windows.Input.TextComposition (inputManager, source, resultText)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.InputManager inputManager, class System.Windows.IInputElement source, string resultText, valuetype System.Windows.Input.TextCompositionAutoComplete autoComplete) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TextComposition.#ctor(System.Windows.Input.InputManager,System.Windows.IInputElement,System.String,System.Windows.Input.TextCompositionAutoComplete)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextComposition(System::Windows::Input::InputManager ^ inputManager, System::Windows::IInputElement ^ source, System::String ^ resultText, System::Windows::Input::TextCompositionAutoComplete autoComplete);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.TextComposition : System.Windows.Input.InputManager * System.Windows.IInputElement * string * System.Windows.Input.TextCompositionAutoComplete -&gt; System.Windows.Input.TextComposition" Usage="new System.Windows.Input.TextComposition (inputManager, source, resultText, autoComplete)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TextComposition.AutoComplete" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoComplete As TextCompositionAutoComplete" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::TextCompositionAutoComplete AutoComplete { System::Windows::Input::TextCompositionAutoComplete get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoComplete : System.Windows.Input.TextCompositionAutoComplete" Usage="System.Windows.Input.TextComposition.AutoComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TextComposition.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Complete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Complete();" />
+      <MemberSignature Language="F#" Value="abstract member Complete : unit -&gt; unit&#xA;override this.Complete : unit -&gt; unit" Usage="textComposition.Complete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TextComposition.CompositionText" />
       <MemberSignature Language="VB.NET" Value="Public Property CompositionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ CompositionText {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CompositionText : string with get, set" Usage="System.Windows.Input.TextComposition.CompositionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TextComposition.ControlText" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlText As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ ControlText {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlText : string with get, set" Usage="System.Windows.Input.TextComposition.ControlText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TextComposition.SystemCompositionText" />
       <MemberSignature Language="VB.NET" Value="Public Property SystemCompositionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ SystemCompositionText {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SystemCompositionText : string with get, set" Usage="System.Windows.Input.TextComposition.SystemCompositionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TextComposition.SystemText" />
       <MemberSignature Language="VB.NET" Value="Public Property SystemText As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ SystemText {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SystemText : string with get, set" Usage="System.Windows.Input.TextComposition.SystemText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TextComposition.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ Text {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Input.TextComposition.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

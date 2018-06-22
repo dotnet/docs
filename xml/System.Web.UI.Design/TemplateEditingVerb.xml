@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateEditingVerb" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplateEditingVerb&#xA;Inherits DesignerVerb&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateEditingVerb : System::ComponentModel::Design::DesignerVerb, IDisposable" />
+  <TypeSignature Language="F#" Value="type TemplateEditingVerb = class&#xA;    inherit DesignerVerb&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateEditingVerb(System::String ^ text, int index);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.TemplateEditingVerb : string * int -&gt; System.Web.UI.Design.TemplateEditingVerb" Usage="new System.Web.UI.Design.TemplateEditingVerb (text, index)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32,System.Web.UI.Design.TemplatedControlDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, index As Integer, designer As TemplatedControlDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateEditingVerb(System::String ^ text, int index, System::Web::UI::Design::TemplatedControlDesigner ^ designer);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.TemplateEditingVerb : string * int * System.Web.UI.Design.TemplatedControlDesigner -&gt; System.Web.UI.Design.TemplateEditingVerb" Usage="new System.Web.UI.Design.TemplateEditingVerb (text, index, designer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="templateEditingVerb.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="templateEditingVerb.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!TemplateEditingVerb ()" />
+      <MemberSignature Language="F#" Value="abstract member Finalize : unit -&gt; unit&#xA;override this.Finalize : unit -&gt; unit" Usage="templateEditingVerb.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateEditingVerb.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Web.UI.Design.TemplateEditingVerb.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

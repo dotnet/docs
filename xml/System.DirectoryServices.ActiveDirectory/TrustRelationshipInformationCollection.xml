@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class TrustRelationshipInformationCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrustRelationshipInformationCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type TrustRelationshipInformationCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.Contains(System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (information As TrustRelationshipInformation) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ information);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation -&gt; bool" Usage="trustRelationshipInformationCollection.Contains information" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.CopyTo(System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TrustRelationshipInformation(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation[] * int -&gt; unit" Usage="trustRelationshipInformationCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.IndexOf(System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (information As TrustRelationshipInformation) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ information);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation -&gt; int" Usage="trustRelationshipInformationCollection.IndexOf information" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As TrustRelationshipInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ default[int] { System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" Usage="System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

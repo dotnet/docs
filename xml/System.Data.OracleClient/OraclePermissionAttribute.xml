@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OraclePermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OraclePermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class OraclePermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type OraclePermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OraclePermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OraclePermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Data.OracleClient.OraclePermissionAttribute" Usage="new System.Data.OracleClient.OraclePermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermissionAttribute.AllowBlankPassword" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowBlankPassword As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowBlankPassword { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowBlankPassword : bool with get, set" Usage="System.Data.OracleClient.OraclePermissionAttribute.AllowBlankPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermissionAttribute.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.OracleClient.OraclePermissionAttribute.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="oraclePermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermissionAttribute.KeyRestrictionBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyRestrictionBehavior As KeyRestrictionBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::KeyRestrictionBehavior KeyRestrictionBehavior { System::Data::KeyRestrictionBehavior get(); void set(System::Data::KeyRestrictionBehavior value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyRestrictionBehavior : System.Data.KeyRestrictionBehavior with get, set" Usage="System.Data.OracleClient.OraclePermissionAttribute.KeyRestrictionBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermissionAttribute.KeyRestrictions" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyRestrictions As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyRestrictions { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyRestrictions : string with get, set" Usage="System.Data.OracleClient.OraclePermissionAttribute.KeyRestrictions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermissionAttribute.ShouldSerializeConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeConnectionString () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeConnectionString();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeConnectionString : unit -&gt; bool" Usage="oraclePermissionAttribute.ShouldSerializeConnectionString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermissionAttribute.ShouldSerializeKeyRestrictions" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeKeyRestrictions () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeKeyRestrictions();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeKeyRestrictions : unit -&gt; bool" Usage="oraclePermissionAttribute.ShouldSerializeKeyRestrictions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

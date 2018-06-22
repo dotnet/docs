@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderFactory" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbProviderFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbProviderFactory abstract" />
+  <TypeSignature Language="F#" Value="type DbProviderFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbProviderFactory.CanCreateDataSourceEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanCreateDataSourceEnumerator As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCreateDataSourceEnumerator { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanCreateDataSourceEnumerator : bool" Usage="System.Data.Common.DbProviderFactory.CanCreateDataSourceEnumerator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactory.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbCommand ^ CreateCommand();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCommand : unit -&gt; System.Data.Common.DbCommand&#xA;override this.CreateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbProviderFactory.CreateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactory.CreateCommandBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateCommandBuilder () As DbCommandBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbCommandBuilder ^ CreateCommandBuilder();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCommandBuilder : unit -&gt; System.Data.Common.DbCommandBuilder&#xA;override this.CreateCommandBuilder : unit -&gt; System.Data.Common.DbCommandBuilder" Usage="dbProviderFactory.CreateCommandBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactory.CreateConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateConnection () As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbConnection ^ CreateConnection();" />
+      <MemberSignature Language="F#" Value="abstract member CreateConnection : unit -&gt; System.Data.Common.DbConnection&#xA;override this.CreateConnection : unit -&gt; System.Data.Common.DbConnection" Usage="dbProviderFactory.CreateConnection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactory.CreateConnectionStringBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateConnectionStringBuilder () As DbConnectionStringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbConnectionStringBuilder ^ CreateConnectionStringBuilder();" />
+      <MemberSignature Language="F#" Value="abstract member CreateConnectionStringBuilder : unit -&gt; System.Data.Common.DbConnectionStringBuilder&#xA;override this.CreateConnectionStringBuilder : unit -&gt; System.Data.Common.DbConnectionStringBuilder" Usage="dbProviderFactory.CreateConnectionStringBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactory.CreateDataAdapter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDataAdapter () As DbDataAdapter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbDataAdapter ^ CreateDataAdapter();" />
+      <MemberSignature Language="F#" Value="abstract member CreateDataAdapter : unit -&gt; System.Data.Common.DbDataAdapter&#xA;override this.CreateDataAdapter : unit -&gt; System.Data.Common.DbDataAdapter" Usage="dbProviderFactory.CreateDataAdapter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactory.CreateDataSourceEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDataSourceEnumerator () As DbDataSourceEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbDataSourceEnumerator ^ CreateDataSourceEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member CreateDataSourceEnumerator : unit -&gt; System.Data.Common.DbDataSourceEnumerator&#xA;override this.CreateDataSourceEnumerator : unit -&gt; System.Data.Common.DbDataSourceEnumerator" Usage="dbProviderFactory.CreateDataSourceEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactory.CreateParameter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateParameter () As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbParameter ^ CreateParameter();" />
+      <MemberSignature Language="F#" Value="abstract member CreateParameter : unit -&gt; System.Data.Common.DbParameter&#xA;override this.CreateParameter : unit -&gt; System.Data.Common.DbParameter" Usage="dbProviderFactory.CreateParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreatePermission (state As PermissionState) As CodeAccessPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::CodeAccessPermission ^ CreatePermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission&#xA;override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="dbProviderFactory.CreatePermission state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlDictionaryReaderQuotasElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDictionaryReaderQuotasElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type XmlDictionaryReaderQuotasElement = class&#xA;    inherit ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxArrayLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxArrayLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxArrayLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxArrayLength : int with get, set" Usage="System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxArrayLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxBytesPerRead" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBytesPerRead As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBytesPerRead { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBytesPerRead : int with get, set" Usage="System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxBytesPerRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxDepth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDepth : int with get, set" Usage="System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxNameTableCharCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxNameTableCharCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxNameTableCharCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxNameTableCharCount : int with get, set" Usage="System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxNameTableCharCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxStringContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxStringContentLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxStringContentLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxStringContentLength : int with get, set" Usage="System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.MaxStringContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

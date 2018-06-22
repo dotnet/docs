@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ReasonSessionEnding" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReasonSessionEnding" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReasonSessionEnding" />
+  <TypeSignature Language="F#" Value="type ReasonSessionEnding = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ReasonSessionEnding.Logoff" />
       <MemberSignature Language="VB.NET" Value="Logoff" />
       <MemberSignature Language="C++ CLI" Value="Logoff" />
+      <MemberSignature Language="F#" Value="Logoff = 0" Usage="System.Windows.ReasonSessionEnding.Logoff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ReasonSessionEnding.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Shutdown" />
       <MemberSignature Language="C++ CLI" Value="Shutdown" />
+      <MemberSignature Language="F#" Value="Shutdown = 1" Usage="System.Windows.ReasonSessionEnding.Shutdown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

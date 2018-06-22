@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NamedPipeSettingsElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeSettingsElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamedPipeSettingsElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type NamedPipeSettingsElement = class&#xA;    inherit ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedPipeSettingsElement.ApplicationContainerSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationContainerSettings As ApplicationContainerSettingsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ApplicationContainerSettingsElement ^ ApplicationContainerSettings { System::ServiceModel::Configuration::ApplicationContainerSettingsElement ^ get(); void set(System::ServiceModel::Configuration::ApplicationContainerSettingsElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationContainerSettings : System.ServiceModel.Configuration.ApplicationContainerSettingsElement with get, set" Usage="System.ServiceModel.Configuration.NamedPipeSettingsElement.ApplicationContainerSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedPipeSettingsElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NamedPipeSettingsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

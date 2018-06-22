@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IWebSocketCloseDetails" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebSocketCloseDetails" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebSocketCloseDetails" />
+  <TypeSignature Language="F#" Value="type IWebSocketCloseDetails = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IWebSocketCloseDetails.InputCloseStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputCloseStatus As Nullable(Of WebSocketCloseStatus)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Net::WebSockets::WebSocketCloseStatus&gt; InputCloseStatus { Nullable&lt;System::Net::WebSockets::WebSocketCloseStatus&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputCloseStatus : Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt;" Usage="System.ServiceModel.Channels.IWebSocketCloseDetails.InputCloseStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IWebSocketCloseDetails.InputCloseStatusDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputCloseStatusDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputCloseStatusDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputCloseStatusDescription : string" Usage="System.ServiceModel.Channels.IWebSocketCloseDetails.InputCloseStatusDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IWebSocketCloseDetails.SetOutputCloseStatus(System.Net.WebSockets.WebSocketCloseStatus,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOutputCloseStatus (closeStatus As WebSocketCloseStatus, closeStatusDescription As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutputCloseStatus(System::Net::WebSockets::WebSocketCloseStatus closeStatus, System::String ^ closeStatusDescription);" />
+      <MemberSignature Language="F#" Value="abstract member SetOutputCloseStatus : System.Net.WebSockets.WebSocketCloseStatus * string -&gt; unit" Usage="iWebSocketCloseDetails.SetOutputCloseStatus (closeStatus, closeStatusDescription)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

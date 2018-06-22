@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClientResultCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClientResultCollection sealed : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type DiscoveryClientResultCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientResultCollection.Add(System.Web.Services.Discovery.DiscoveryClientResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As DiscoveryClientResult) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Discovery::DiscoveryClientResult ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Discovery.DiscoveryClientResult -&gt; int" Usage="discoveryClientResultCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientResultCollection.Contains(System.Web.Services.Discovery.DiscoveryClientResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As DiscoveryClientResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Discovery::DiscoveryClientResult ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Services.Discovery.DiscoveryClientResult -&gt; bool" Usage="discoveryClientResultCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResultCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(i As Integer) As DiscoveryClientResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Discovery::DiscoveryClientResult ^ default[int] { System::Web::Services::Discovery::DiscoveryClientResult ^ get(int i); void set(int i, System::Web::Services::Discovery::DiscoveryClientResult ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Discovery.DiscoveryClientResult with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientResultCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientResultCollection.Remove(System.Web.Services.Discovery.DiscoveryClientResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DiscoveryClientResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Discovery::DiscoveryClientResult ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Discovery.DiscoveryClientResult -&gt; unit" Usage="discoveryClientResultCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

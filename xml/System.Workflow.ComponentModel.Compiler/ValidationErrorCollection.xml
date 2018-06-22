@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValidationErrorCollection&#xA;Inherits Collection(Of ValidationError)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationErrorCollection sealed : System::Collections::ObjectModel::Collection&lt;System::Workflow::ComponentModel::Compiler::ValidationError ^&gt;" />
+  <TypeSignature Language="F#" Value="type ValidationErrorCollection = class&#xA;    inherit Collection&lt;ValidationError&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Compiler.ValidationError})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As IEnumerable(Of ValidationError))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationErrorCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::Compiler::ValidationError ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.ValidationErrorCollection : seq&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt; -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="new System.Workflow.ComponentModel.Compiler.ValidationErrorCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.#ctor(System.Workflow.ComponentModel.Compiler.ValidationErrorCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ValidationErrorCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationErrorCollection(System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.ValidationErrorCollection : System.Workflow.ComponentModel.Compiler.ValidationErrorCollection -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="new System.Workflow.ComponentModel.Compiler.ValidationErrorCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.AddRange(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Compiler.ValidationError})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As IEnumerable(Of ValidationError))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::Compiler::ValidationError ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : seq&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt; -&gt; unit" Usage="validationErrorCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.HasErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasErrors : bool" Usage="System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.HasErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.HasWarnings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasWarnings As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasWarnings { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasWarnings : bool" Usage="System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.HasWarnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.InsertItem(System.Int32,System.Workflow.ComponentModel.Compiler.ValidationError)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Workflow::ComponentModel::Compiler::ValidationError ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Workflow.ComponentModel.Compiler.ValidationError -&gt; unit" Usage="validationErrorCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.SetItem(System.Int32,System.Workflow.ComponentModel.Compiler.ValidationError)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Workflow::ComponentModel::Compiler::ValidationError ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Workflow.ComponentModel.Compiler.ValidationError -&gt; unit" Usage="validationErrorCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -284,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As ValidationError()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Workflow::ComponentModel::Compiler::ValidationError ^&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; System.Workflow.ComponentModel.Compiler.ValidationError[]" Usage="validationErrorCollection.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

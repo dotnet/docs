@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.SslPolicyErrors" />
   <TypeSignature Language="VB.NET" Value="Public Enum SslPolicyErrors" />
   <TypeSignature Language="C++ CLI" Value="public enum class SslPolicyErrors" />
+  <TypeSignature Language="F#" Value="type SslPolicyErrors = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.SslPolicyErrors.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.Security.SslPolicyErrors.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.SslPolicyErrors.RemoteCertificateChainErrors" />
       <MemberSignature Language="VB.NET" Value="RemoteCertificateChainErrors" />
       <MemberSignature Language="C++ CLI" Value="RemoteCertificateChainErrors" />
+      <MemberSignature Language="F#" Value="RemoteCertificateChainErrors = 4" Usage="System.Net.Security.SslPolicyErrors.RemoteCertificateChainErrors" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.SslPolicyErrors.RemoteCertificateNameMismatch" />
       <MemberSignature Language="VB.NET" Value="RemoteCertificateNameMismatch" />
       <MemberSignature Language="C++ CLI" Value="RemoteCertificateNameMismatch" />
+      <MemberSignature Language="F#" Value="RemoteCertificateNameMismatch = 2" Usage="System.Net.Security.SslPolicyErrors.RemoteCertificateNameMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.SslPolicyErrors.RemoteCertificateNotAvailable" />
       <MemberSignature Language="VB.NET" Value="RemoteCertificateNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="RemoteCertificateNotAvailable" />
+      <MemberSignature Language="F#" Value="RemoteCertificateNotAvailable = 1" Usage="System.Net.Security.SslPolicyErrors.RemoteCertificateNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

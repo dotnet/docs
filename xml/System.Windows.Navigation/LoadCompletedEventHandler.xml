@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.LoadCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub LoadCompletedEventHandler(sender As Object, e As NavigationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void LoadCompletedEventHandler(System::Object ^ sender, NavigationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LoadCompletedEventHandler = delegate of obj * NavigationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

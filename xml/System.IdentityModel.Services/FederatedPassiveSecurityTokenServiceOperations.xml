@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations" />
   <TypeSignature Language="VB.NET" Value="Public Class FederatedPassiveSecurityTokenServiceOperations" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederatedPassiveSecurityTokenServiceOperations abstract sealed" />
+  <TypeSignature Language="F#" Value="type FederatedPassiveSecurityTokenServiceOperations = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest(System.Web.HttpRequest,System.Security.Claims.ClaimsPrincipal,System.IdentityModel.SecurityTokenService,System.Web.HttpResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ProcessRequest (request As HttpRequest, principal As ClaimsPrincipal, sts As SecurityTokenService, response As HttpResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ProcessRequest(System::Web::HttpRequest ^ request, System::Security::Claims::ClaimsPrincipal ^ principal, System::IdentityModel::SecurityTokenService ^ sts, System::Web::HttpResponse ^ response);" />
+      <MemberSignature Language="F#" Value="static member ProcessRequest : System.Web.HttpRequest * System.Security.Claims.ClaimsPrincipal * System.IdentityModel.SecurityTokenService * System.Web.HttpResponse -&gt; unit" Usage="System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest (request, principal, sts, response)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest(System.Web.HttpRequest,System.Security.Claims.ClaimsPrincipal,System.IdentityModel.SecurityTokenService,System.Web.HttpResponse,System.IdentityModel.Services.WSFederationSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ProcessRequest (request As HttpRequest, principal As ClaimsPrincipal, sts As SecurityTokenService, response As HttpResponse, federationSerializer As WSFederationSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ProcessRequest(System::Web::HttpRequest ^ request, System::Security::Claims::ClaimsPrincipal ^ principal, System::IdentityModel::SecurityTokenService ^ sts, System::Web::HttpResponse ^ response, System::IdentityModel::Services::WSFederationSerializer ^ federationSerializer);" />
+      <MemberSignature Language="F#" Value="static member ProcessRequest : System.Web.HttpRequest * System.Security.Claims.ClaimsPrincipal * System.IdentityModel.SecurityTokenService * System.Web.HttpResponse * System.IdentityModel.Services.WSFederationSerializer -&gt; unit" Usage="System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessRequest (request, principal, sts, response, federationSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignInRequest(System.IdentityModel.Services.SignInRequestMessage,System.Security.Claims.ClaimsPrincipal,System.IdentityModel.SecurityTokenService)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ProcessSignInRequest (requestMessage As SignInRequestMessage, principal As ClaimsPrincipal, sts As SecurityTokenService) As SignInResponseMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Services::SignInResponseMessage ^ ProcessSignInRequest(System::IdentityModel::Services::SignInRequestMessage ^ requestMessage, System::Security::Claims::ClaimsPrincipal ^ principal, System::IdentityModel::SecurityTokenService ^ sts);" />
+      <MemberSignature Language="F#" Value="static member ProcessSignInRequest : System.IdentityModel.Services.SignInRequestMessage * System.Security.Claims.ClaimsPrincipal * System.IdentityModel.SecurityTokenService -&gt; System.IdentityModel.Services.SignInResponseMessage" Usage="System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignInRequest (requestMessage, principal, sts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignInRequest(System.IdentityModel.Services.SignInRequestMessage,System.Security.Claims.ClaimsPrincipal,System.IdentityModel.SecurityTokenService,System.IdentityModel.Services.WSFederationSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ProcessSignInRequest (requestMessage As SignInRequestMessage, principal As ClaimsPrincipal, sts As SecurityTokenService, federationSerializer As WSFederationSerializer) As SignInResponseMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Services::SignInResponseMessage ^ ProcessSignInRequest(System::IdentityModel::Services::SignInRequestMessage ^ requestMessage, System::Security::Claims::ClaimsPrincipal ^ principal, System::IdentityModel::SecurityTokenService ^ sts, System::IdentityModel::Services::WSFederationSerializer ^ federationSerializer);" />
+      <MemberSignature Language="F#" Value="static member ProcessSignInRequest : System.IdentityModel.Services.SignInRequestMessage * System.Security.Claims.ClaimsPrincipal * System.IdentityModel.SecurityTokenService * System.IdentityModel.Services.WSFederationSerializer -&gt; System.IdentityModel.Services.SignInResponseMessage" Usage="System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignInRequest (requestMessage, principal, sts, federationSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ProcessSignInResponse(class System.IdentityModel.Services.SignInResponseMessage signInResponseMessage, class System.Web.HttpResponse httpResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignInResponse(System.IdentityModel.Services.SignInResponseMessage,System.Web.HttpResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ProcessSignInResponse(System::IdentityModel::Services::SignInResponseMessage ^ signInResponseMessage, System::Web::HttpResponse ^ httpResponse);" />
+      <MemberSignature Language="F#" Value="static member ProcessSignInResponse : System.IdentityModel.Services.SignInResponseMessage * System.Web.HttpResponse -&gt; unit" Usage="System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignInResponse (signInResponseMessage, httpResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -268,6 +274,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ProcessSignOutRequest(class System.IdentityModel.Services.FederationMessage requestMessage, class System.Security.Claims.ClaimsPrincipal principal, string reply, class System.Web.HttpResponse httpResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignOutRequest(System.IdentityModel.Services.FederationMessage,System.Security.Claims.ClaimsPrincipal,System.String,System.Web.HttpResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ProcessSignOutRequest(System::IdentityModel::Services::FederationMessage ^ requestMessage, System::Security::Claims::ClaimsPrincipal ^ principal, System::String ^ reply, System::Web::HttpResponse ^ httpResponse);" />
+      <MemberSignature Language="F#" Value="static member ProcessSignOutRequest : System.IdentityModel.Services.FederationMessage * System.Security.Claims.ClaimsPrincipal * string * System.Web.HttpResponse -&gt; unit" Usage="System.IdentityModel.Services.FederatedPassiveSecurityTokenServiceOperations.ProcessSignOutRequest (requestMessage, principal, reply, httpResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

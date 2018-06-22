@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlArea" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlArea&#xA;Inherits HtmlControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlArea : System::Web::UI::HtmlControls::HtmlControl" />
+  <TypeSignature Language="F#" Value="type HtmlArea = class&#xA;    inherit HtmlControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlArea.Href" />
       <MemberSignature Language="VB.NET" Value="Public Property Href As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Href { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Href : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlArea.Href" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlArea.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlArea.RenderAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

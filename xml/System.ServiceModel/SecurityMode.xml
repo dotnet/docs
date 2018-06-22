@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.SecurityMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityMode" />
+  <TypeSignature Language="F#" Value="type SecurityMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.SecurityMode.Message" />
       <MemberSignature Language="VB.NET" Value="Message" />
       <MemberSignature Language="C++ CLI" Value="Message" />
+      <MemberSignature Language="F#" Value="Message = 2" Usage="System.ServiceModel.SecurityMode.Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.SecurityMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.SecurityMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.SecurityMode.Transport" />
       <MemberSignature Language="VB.NET" Value="Transport" />
       <MemberSignature Language="C++ CLI" Value="Transport" />
+      <MemberSignature Language="F#" Value="Transport = 1" Usage="System.ServiceModel.SecurityMode.Transport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.SecurityMode.TransportWithMessageCredential" />
       <MemberSignature Language="VB.NET" Value="TransportWithMessageCredential" />
       <MemberSignature Language="C++ CLI" Value="TransportWithMessageCredential" />
+      <MemberSignature Language="F#" Value="TransportWithMessageCredential = 3" Usage="System.ServiceModel.SecurityMode.TransportWithMessageCredential" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

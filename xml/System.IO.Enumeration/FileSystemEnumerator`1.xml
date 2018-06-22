@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Enumeration.FileSystemEnumerator`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FileSystemEnumerator(Of TResult)&#xA;Inherits CriticalFinalizerObject&#xA;Implements IEnumerator(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class FileSystemEnumerator abstract : System::Runtime::ConstrainedExecution::CriticalFinalizerObject, System::Collections::Generic::IEnumerator&lt;TResult&gt;" />
+  <TypeSignature Language="F#" Value="type FileSystemEnumerator&lt;'Result&gt; = class&#xA;    inherit CriticalFinalizerObject&#xA;    interface IEnumerator&lt;'Result&gt;&#xA;    interface IEnumerator&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string directory, class System.IO.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.#ctor(System.String,System.IO.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (directory As String, Optional options As EnumerationOptions = null)" />
+      <MemberSignature Language="F#" Value="new System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt; : string * System.IO.EnumerationOptions -&gt; System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt;" Usage="new System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt; (directory, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.ContinueOnError(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ContinueOnError (error As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ContinueOnError(int error);" />
+      <MemberSignature Language="F#" Value="abstract member ContinueOnError : int -&gt; bool&#xA;override this.ContinueOnError : int -&gt; bool" Usage="fileSystemEnumerator.ContinueOnError error" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Enumeration.FileSystemEnumerator`1.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TResult Current { TResult get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : 'Result" Usage="System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt;.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="fileSystemEnumerator.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="fileSystemEnumerator.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="fileSystemEnumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.OnDirectoryFinished(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDirectoryFinished (directory As ReadOnlySpan(Of Char))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDirectoryFinished(ReadOnlySpan&lt;char&gt; directory);" />
+      <MemberSignature Language="F#" Value="abstract member OnDirectoryFinished : ReadOnlySpan&lt;char&gt; -&gt; unit&#xA;override this.OnDirectoryFinished : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="fileSystemEnumerator.OnDirectoryFinished directory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="fileSystemEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.ShouldIncludeEntry(System.IO.Enumeration.FileSystemEntry@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldIncludeEntry (ByRef entry As FileSystemEntry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldIncludeEntry(System::IO::Enumeration::FileSystemEntry % entry);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldIncludeEntry :  -&gt; bool&#xA;override this.ShouldIncludeEntry :  -&gt; bool" Usage="fileSystemEnumerator.ShouldIncludeEntry entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -239,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.ShouldRecurseIntoEntry(System.IO.Enumeration.FileSystemEntry@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldRecurseIntoEntry (ByRef entry As FileSystemEntry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldRecurseIntoEntry(System::IO::Enumeration::FileSystemEntry % entry);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldRecurseIntoEntry :  -&gt; bool&#xA;override this.ShouldRecurseIntoEntry :  -&gt; bool" Usage="fileSystemEnumerator.ShouldRecurseIntoEntry entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -263,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Enumeration.FileSystemEnumerator`1.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt;.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
@@ -286,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.TransformEntry(System.IO.Enumeration.FileSystemEntry@)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function TransformEntry (ByRef entry As FileSystemEntry) As TResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TResult TransformEntry(System::IO::Enumeration::FileSystemEntry % entry);" />
+      <MemberSignature Language="F#" Value="abstract member TransformEntry :  -&gt; 'Result" Usage="fileSystemEnumerator.TransformEntry entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageEnumerator&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable, IEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageEnumerator : MarshalByRefObject, IDisposable, System::Collections::IEnumerator" />
+  <TypeSignature Language="F#" Value="type MessageEnumerator = class&#xA;    inherit MarshalByRefObject&#xA;    interface IEnumerator&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="messageEnumerator.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageEnumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::Message ^ Current { System::Messaging::Message ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Messaging.Message" Usage="System.Messaging.MessageEnumerator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageEnumerator.CursorHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CursorHandle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr CursorHandle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorHandle : nativeint" Usage="System.Messaging.MessageEnumerator.CursorHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="messageEnumerator.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="messageEnumerator.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!MessageEnumerator ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="messageEnumerator.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="messageEnumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.MoveNext(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext (timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.MoveNext : TimeSpan -&gt; bool" Usage="messageEnumerator.MoveNext timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -363,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent () As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent();" />
+      <MemberSignature Language="F#" Value="member this.RemoveCurrent : unit -&gt; System.Messaging.Message" Usage="messageEnumerator.RemoveCurrent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -399,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.RemoveCurrent : System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageEnumerator.RemoveCurrent transaction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -440,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.RemoveCurrent : System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageEnumerator.RemoveCurrent transactionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -483,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (timeout As TimeSpan) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.RemoveCurrent : TimeSpan -&gt; System.Messaging.Message" Usage="messageEnumerator.RemoveCurrent timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -524,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.TimeSpan,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (timeout As TimeSpan, transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(TimeSpan timeout, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.RemoveCurrent : TimeSpan * System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageEnumerator.RemoveCurrent (timeout, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -569,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.TimeSpan,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (timeout As TimeSpan, transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(TimeSpan timeout, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.RemoveCurrent : TimeSpan * System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageEnumerator.RemoveCurrent (timeout, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -616,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="messageEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
@@ -650,6 +666,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageEnumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Messaging.MessageEnumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

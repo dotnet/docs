@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.RefreshInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class RefreshInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class RefreshInfo" />
+  <TypeSignature Language="F#" Value="type RefreshInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RefreshInfo.#ctor(System.String,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (meshId As String, regId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RefreshInfo(System::String ^ meshId, Guid regId);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.PeerResolvers.RefreshInfo : string * Guid -&gt; System.ServiceModel.PeerResolvers.RefreshInfo" Usage="new System.ServiceModel.PeerResolvers.RefreshInfo (meshId, regId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RefreshInfo.HasBody" />
       <MemberSignature Language="VB.NET" Value="Public Function HasBody () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasBody();" />
+      <MemberSignature Language="F#" Value="member this.HasBody : unit -&gt; bool" Usage="refreshInfo.HasBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RefreshInfo.MeshId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeshId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MeshId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeshId : string" Usage="System.ServiceModel.PeerResolvers.RefreshInfo.MeshId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RefreshInfo.RegistrationId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistrationId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid RegistrationId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.RegistrationId : Guid" Usage="System.ServiceModel.PeerResolvers.RefreshInfo.RegistrationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

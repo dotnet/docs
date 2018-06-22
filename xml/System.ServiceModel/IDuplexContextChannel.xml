@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IDuplexContextChannel" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDuplexContextChannel&#xA;Implements IContextChannel, IExtensibleObject(Of IContextChannel)" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDuplexContextChannel : System::ServiceModel::IContextChannel, System::ServiceModel::IExtensibleObject&lt;System::ServiceModel::IContextChannel ^&gt;" />
+  <TypeSignature Language="F#" Value="type IDuplexContextChannel = interface&#xA;    interface IContextChannel&#xA;    interface IChannel&#xA;    interface ICommunicationObject&#xA;    interface IExtensibleObject&lt;IContextChannel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IDuplexContextChannel.AutomaticInputSessionShutdown" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticInputSessionShutdown As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticInputSessionShutdown { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticInputSessionShutdown : bool with get, set" Usage="System.ServiceModel.IDuplexContextChannel.AutomaticInputSessionShutdown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IDuplexContextChannel.BeginCloseOutputSession(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginCloseOutputSession (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCloseOutputSession(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginCloseOutputSession : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iDuplexContextChannel.BeginCloseOutputSession (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IDuplexContextChannel.CallbackInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property CallbackInstance As InstanceContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::InstanceContext ^ CallbackInstance { System::ServiceModel::InstanceContext ^ get(); void set(System::ServiceModel::InstanceContext ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CallbackInstance : System.ServiceModel.InstanceContext with get, set" Usage="System.ServiceModel.IDuplexContextChannel.CallbackInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IDuplexContextChannel.CloseOutputSession(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseOutputSession (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseOutputSession(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member CloseOutputSession : TimeSpan -&gt; unit" Usage="iDuplexContextChannel.CloseOutputSession timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IDuplexContextChannel.EndCloseOutputSession(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndCloseOutputSession (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCloseOutputSession(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndCloseOutputSession : IAsyncResult -&gt; unit" Usage="iDuplexContextChannel.EndCloseOutputSession result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

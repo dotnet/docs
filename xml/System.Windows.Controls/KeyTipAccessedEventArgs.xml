@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipAccessedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyTipAccessedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyTipAccessedEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type KeyTipAccessedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipAccessedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="keyTipAccessedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.KeyTipAccessedEventArgs.TargetKeyTipScope" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetKeyTipScope As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ TargetKeyTipScope { System::Windows::DependencyObject ^ get(); void set(System::Windows::DependencyObject ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetKeyTipScope : System.Windows.DependencyObject with get, set" Usage="System.Windows.Controls.KeyTipAccessedEventArgs.TargetKeyTipScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

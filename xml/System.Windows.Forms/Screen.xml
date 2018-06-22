@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Screen" />
   <TypeSignature Language="VB.NET" Value="Public Class Screen" />
   <TypeSignature Language="C++ CLI" Value="public ref class Screen" />
+  <TypeSignature Language="F#" Value="type Screen = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.AllScreens" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AllScreens As Screen()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property cli::array &lt;System::Windows::Forms::Screen ^&gt; ^ AllScreens { cli::array &lt;System::Windows::Forms::Screen ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllScreens : System.Windows.Forms.Screen[]" Usage="System.Windows.Forms.Screen.AllScreens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.BitsPerPixel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BitsPerPixel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BitsPerPixel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BitsPerPixel : int" Usage="System.Windows.Forms.Screen.BitsPerPixel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.Screen.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.DeviceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeviceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeviceName : string" Usage="System.Windows.Forms.Screen.DeviceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="screen.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.Screen FromControl(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.FromControl(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Screen ^ FromControl(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="static member FromControl : System.Windows.Forms.Control -&gt; System.Windows.Forms.Screen" Usage="System.Windows.Forms.Screen.FromControl control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.FromHandle(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromHandle (hwnd As IntPtr) As Screen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Screen ^ FromHandle(IntPtr hwnd);" />
+      <MemberSignature Language="F#" Value="static member FromHandle : nativeint -&gt; System.Windows.Forms.Screen" Usage="System.Windows.Forms.Screen.FromHandle hwnd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.Screen FromPoint(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.FromPoint(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Screen ^ FromPoint(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="static member FromPoint : System.Drawing.Point -&gt; System.Windows.Forms.Screen" Usage="System.Windows.Forms.Screen.FromPoint point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.FromRectangle(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromRectangle (rect As Rectangle) As Screen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Screen ^ FromRectangle(System::Drawing::Rectangle rect);" />
+      <MemberSignature Language="F#" Value="static member FromRectangle : System.Drawing.Rectangle -&gt; System.Windows.Forms.Screen" Usage="System.Windows.Forms.Screen.FromRectangle rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetBounds(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBounds (pt As Point) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle GetBounds(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="static member GetBounds : System.Drawing.Point -&gt; System.Drawing.Rectangle" Usage="System.Windows.Forms.Screen.GetBounds pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -304,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetBounds(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBounds (rect As Rectangle) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle GetBounds(System::Drawing::Rectangle rect);" />
+      <MemberSignature Language="F#" Value="static member GetBounds : System.Drawing.Rectangle -&gt; System.Drawing.Rectangle" Usage="System.Windows.Forms.Screen.GetBounds rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -328,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetBounds(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBounds (ctl As Control) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle GetBounds(System::Windows::Forms::Control ^ ctl);" />
+      <MemberSignature Language="F#" Value="static member GetBounds : System.Windows.Forms.Control -&gt; System.Drawing.Rectangle" Usage="System.Windows.Forms.Screen.GetBounds ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -352,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="screen.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -389,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetWorkingArea(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetWorkingArea (pt As Point) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle GetWorkingArea(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="static member GetWorkingArea : System.Drawing.Point -&gt; System.Drawing.Rectangle" Usage="System.Windows.Forms.Screen.GetWorkingArea pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -424,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetWorkingArea(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetWorkingArea (rect As Rectangle) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle GetWorkingArea(System::Drawing::Rectangle rect);" />
+      <MemberSignature Language="F#" Value="static member GetWorkingArea : System.Drawing.Rectangle -&gt; System.Drawing.Rectangle" Usage="System.Windows.Forms.Screen.GetWorkingArea rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -448,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetWorkingArea(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetWorkingArea (ctl As Control) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle GetWorkingArea(System::Windows::Forms::Control ^ ctl);" />
+      <MemberSignature Language="F#" Value="static member GetWorkingArea : System.Windows.Forms.Control -&gt; System.Drawing.Rectangle" Usage="System.Windows.Forms.Screen.GetWorkingArea ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -472,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.Primary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Primary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Primary { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Primary : bool" Usage="System.Windows.Forms.Screen.Primary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -493,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.PrimaryScreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryScreen As Screen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Screen ^ PrimaryScreen { System::Windows::Forms::Screen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryScreen : System.Windows.Forms.Screen" Usage="System.Windows.Forms.Screen.PrimaryScreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -529,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="screen.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -550,6 +570,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.WorkingArea" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkingArea As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle WorkingArea { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkingArea : System.Drawing.Rectangle" Usage="System.Windows.Forms.Screen.WorkingArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.MemberBindingType" />
   <TypeSignature Language="VB.NET" Value="Public Enum MemberBindingType" />
   <TypeSignature Language="C++ CLI" Value="public enum class MemberBindingType" />
+  <TypeSignature Language="F#" Value="type MemberBindingType = " />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.MemberBindingType.Assignment" />
       <MemberSignature Language="VB.NET" Value="Assignment" />
       <MemberSignature Language="C++ CLI" Value="Assignment" />
+      <MemberSignature Language="F#" Value="Assignment = 0" Usage="System.Linq.Expressions.MemberBindingType.Assignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.MemberBindingType.ListBinding" />
       <MemberSignature Language="VB.NET" Value="ListBinding" />
       <MemberSignature Language="C++ CLI" Value="ListBinding" />
+      <MemberSignature Language="F#" Value="ListBinding = 2" Usage="System.Linq.Expressions.MemberBindingType.ListBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.MemberBindingType.MemberBinding" />
       <MemberSignature Language="VB.NET" Value="MemberBinding" />
       <MemberSignature Language="C++ CLI" Value="MemberBinding" />
+      <MemberSignature Language="F#" Value="MemberBinding = 1" Usage="System.Linq.Expressions.MemberBindingType.MemberBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

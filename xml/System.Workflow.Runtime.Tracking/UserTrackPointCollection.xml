@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.UserTrackPointCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class UserTrackPointCollection&#xA;Inherits List(Of UserTrackPoint)" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserTrackPointCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::UserTrackPoint ^&gt;" />
+  <TypeSignature Language="F#" Value="type UserTrackPointCollection = class&#xA;    inherit List&lt;UserTrackPoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.UserTrackPointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.UserTrackPoint})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (points As IEnumerable(Of UserTrackPoint))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserTrackPointCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::UserTrackPoint ^&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.UserTrackPointCollection : seq&lt;System.Workflow.Runtime.Tracking.UserTrackPoint&gt; -&gt; System.Workflow.Runtime.Tracking.UserTrackPointCollection" Usage="new System.Workflow.Runtime.Tracking.UserTrackPointCollection points" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

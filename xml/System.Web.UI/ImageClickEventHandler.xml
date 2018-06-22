@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ImageClickEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ImageClickEventHandler(sender As Object, e As ImageClickEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ImageClickEventHandler(System::Object ^ sender, ImageClickEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ImageClickEventHandler = delegate of obj * ImageClickEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

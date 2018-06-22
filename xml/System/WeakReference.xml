@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.WeakReference" />
   <TypeSignature Language="VB.NET" Value="Public Class WeakReference&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class WeakReference : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type WeakReference = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WeakReference(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="new WeakReference : obj -&gt; WeakReference" Usage="new System.WeakReference target" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference.#ctor(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As Object, trackResurrection As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WeakReference(System::Object ^ target, bool trackResurrection);" />
+      <MemberSignature Language="F#" Value="new WeakReference : obj * bool -&gt; WeakReference" Usage="new System.WeakReference (target, trackResurrection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WeakReference(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new WeakReference : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; WeakReference" Usage="new System.WeakReference (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!WeakReference ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="weakReference.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -264,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="weakReference.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -316,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.WeakReference.IsAlive" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsAlive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAlive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAlive : bool" Usage="System.WeakReference.IsAlive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -360,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.WeakReference.Target" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Target As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Target { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : obj with get, set" Usage="System.WeakReference.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -413,6 +421,7 @@
       <MemberSignature Language="DocId" Value="P:System.WeakReference.TrackResurrection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TrackResurrection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool TrackResurrection { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrackResurrection : bool" Usage="System.WeakReference.TrackResurrection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

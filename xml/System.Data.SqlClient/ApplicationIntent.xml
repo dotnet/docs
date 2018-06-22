@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.ApplicationIntent" />
   <TypeSignature Language="VB.NET" Value="Public Enum ApplicationIntent" />
   <TypeSignature Language="C++ CLI" Value="public enum class ApplicationIntent" />
+  <TypeSignature Language="F#" Value="type ApplicationIntent = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.ApplicationIntent.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="ReadOnly" />
       <MemberSignature Language="C++ CLI" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="System.Data.SqlClient.ApplicationIntent.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.ApplicationIntent.ReadWrite" />
       <MemberSignature Language="VB.NET" Value="ReadWrite" />
       <MemberSignature Language="C++ CLI" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 0" Usage="System.Data.SqlClient.ApplicationIntent.ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

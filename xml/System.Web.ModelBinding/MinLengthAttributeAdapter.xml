@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.MinLengthAttributeAdapter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MinLengthAttributeAdapter&#xA;Inherits DataAnnotationsModelValidator(Of MinLengthAttribute)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MinLengthAttributeAdapter sealed : System::Web::ModelBinding::DataAnnotationsModelValidator&lt;System::ComponentModel::DataAnnotations::MinLengthAttribute ^&gt;" />
+  <TypeSignature Language="F#" Value="type MinLengthAttributeAdapter = class&#xA;    inherit DataAnnotationsModelValidator&lt;MinLengthAttribute&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MinLengthAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.MinLengthAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As MinLengthAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MinLengthAttributeAdapter(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, System::ComponentModel::DataAnnotations::MinLengthAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.MinLengthAttributeAdapter : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext * System.ComponentModel.DataAnnotations.MinLengthAttribute -&gt; System.Web.ModelBinding.MinLengthAttributeAdapter" Usage="new System.Web.ModelBinding.MinLengthAttributeAdapter (metadata, context, attribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MinLengthAttributeAdapter.GetLocalizedErrorMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLocalizedErrorMessage (errorMessage As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetLocalizedErrorMessage(System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="override this.GetLocalizedErrorMessage : string -&gt; string" Usage="minLengthAttributeAdapter.GetLocalizedErrorMessage errorMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

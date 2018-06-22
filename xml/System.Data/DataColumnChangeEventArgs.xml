@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataColumnChangeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataColumnChangeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataColumnChangeEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataColumnChangeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnChangeEventArgs.#ctor(System.Data.DataRow,System.Data.DataColumn,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (row As DataRow, column As DataColumn, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumnChangeEventArgs(System::Data::DataRow ^ row, System::Data::DataColumn ^ column, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataColumnChangeEventArgs : System.Data.DataRow * System.Data.DataColumn * obj -&gt; System.Data.DataColumnChangeEventArgs" Usage="new System.Data.DataColumnChangeEventArgs (row, column, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnChangeEventArgs.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataColumn ^ Column { System::Data::DataColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Data.DataColumn" Usage="System.Data.DataColumnChangeEventArgs.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnChangeEventArgs.ProposedValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ProposedValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProposedValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProposedValue : obj with get, set" Usage="System.Data.DataColumnChangeEventArgs.ProposedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnChangeEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ Row { System::Data::DataRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Data.DataRow" Usage="System.Data.DataColumnChangeEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

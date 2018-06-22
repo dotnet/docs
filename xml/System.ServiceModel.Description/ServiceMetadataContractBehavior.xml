@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceMetadataContractBehavior" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceMetadataContractBehavior&#xA;Implements IContractBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceMetadataContractBehavior sealed : System::ServiceModel::Description::IContractBehavior" />
+  <TypeSignature Language="F#" Value="type ServiceMetadataContractBehavior = class&#xA;    interface IContractBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceMetadataContractBehavior.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadataGenerationDisabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceMetadataContractBehavior(bool metadataGenerationDisabled);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceMetadataContractBehavior : bool -&gt; System.ServiceModel.Description.ServiceMetadataContractBehavior" Usage="new System.ServiceModel.Description.ServiceMetadataContractBehavior metadataGenerationDisabled" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataContractBehavior.MetadataGenerationDisabled" />
       <MemberSignature Language="VB.NET" Value="Public Property MetadataGenerationDisabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MetadataGenerationDisabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataGenerationDisabled : bool with get, set" Usage="System.ServiceModel.Description.ServiceMetadataContractBehavior.MetadataGenerationDisabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

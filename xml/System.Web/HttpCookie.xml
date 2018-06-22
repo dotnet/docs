@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCookie" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCookie" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpCookie sealed" />
+  <TypeSignature Language="F#" Value="type HttpCookie = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCookie.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCookie(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpCookie : string -&gt; System.Web.HttpCookie" Usage="new System.Web.HttpCookie name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCookie.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCookie(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpCookie : string * string -&gt; System.Web.HttpCookie" Usage="new System.Web.HttpCookie (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Web.HttpCookie.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Expires" />
       <MemberSignature Language="VB.NET" Value="Public Property Expires As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Expires { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.Expires : DateTime with get, set" Usage="System.Web.HttpCookie.Expires" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.HasKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasKeys As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasKeys { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasKeys : bool" Usage="System.Web.HttpCookie.HasKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.HttpOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpOnly : bool with get, set" Usage="System.Web.HttpCookie.HttpOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); void set(System::String ^ key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Web.HttpCookie.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.HttpCookie.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.HttpCookie.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -345,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.SameSite" />
       <MemberSignature Language="VB.NET" Value="Public Property SameSite As SameSiteMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SameSiteMode SameSite { System::Web::SameSiteMode get(); void set(System::Web::SameSiteMode value); };" />
+      <MemberSignature Language="F#" Value="member this.SameSite : System.Web.SameSiteMode with get, set" Usage="System.Web.HttpCookie.SameSite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -365,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Secure" />
       <MemberSignature Language="VB.NET" Value="Public Property Secure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Secure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Secure : bool with get, set" Usage="System.Web.HttpCookie.Secure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -403,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Shareable" />
       <MemberSignature Language="VB.NET" Value="Public Property Shareable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shareable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Shareable : bool with get, set" Usage="System.Web.HttpCookie.Shareable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCookie.TryParse(System.String,System.Web.HttpCookie@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef result As HttpCookie) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Web::HttpCookie ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Web.HttpCookie.TryParse (input, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -458,6 +472,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Web.HttpCookie.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -488,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCookie.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ Values { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpCookie.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PrimitiveType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrimitiveType&#xA;Inherits SimpleType" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrimitiveType sealed : System::Data::Metadata::Edm::SimpleType" />
+  <TypeSignature Language="F#" Value="type PrimitiveType = class&#xA;    inherit SimpleType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.PrimitiveType.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.ClrEquivalentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClrEquivalentType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ClrEquivalentType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClrEquivalentType : Type" Usage="System.Data.Metadata.Edm.PrimitiveType.ClrEquivalentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.FacetDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FacetDescriptions As ReadOnlyCollection(Of FacetDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::FacetDescription ^&gt; ^ FacetDescriptions { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::FacetDescription ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FacetDescriptions : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt;" Usage="System.Data.Metadata.Edm.PrimitiveType.FacetDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEdmPrimitiveType () As EdmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::EdmType ^ GetEdmPrimitiveType();" />
+      <MemberSignature Language="F#" Value="member this.GetEdmPrimitiveType : unit -&gt; System.Data.Metadata.Edm.EdmType" Usage="primitiveType.GetEdmPrimitiveType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.PrimitiveType GetEdmPrimitiveType(valuetype System.Data.Metadata.Edm.PrimitiveTypeKind primitiveTypeKind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType(System.Data.Metadata.Edm.PrimitiveTypeKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::PrimitiveType ^ GetEdmPrimitiveType(System::Data::Metadata::Edm::PrimitiveTypeKind primitiveTypeKind);" />
+      <MemberSignature Language="F#" Value="static member GetEdmPrimitiveType : System.Data.Metadata.Edm.PrimitiveTypeKind -&gt; System.Data.Metadata.Edm.PrimitiveType" Usage="System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType primitiveTypeKind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveTypes" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEdmPrimitiveTypes () As ReadOnlyCollection(Of PrimitiveType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ GetEdmPrimitiveTypes();" />
+      <MemberSignature Language="F#" Value="static member GetEdmPrimitiveTypes : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt;" Usage="System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.PrimitiveTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimitiveTypeKind As PrimitiveTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::PrimitiveTypeKind PrimitiveTypeKind { System::Data::Metadata::Edm::PrimitiveTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimitiveTypeKind : System.Data.Metadata.Edm.PrimitiveTypeKind" Usage="System.Data.Metadata.Edm.PrimitiveType.PrimitiveTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

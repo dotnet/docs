@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.NotFiniteNumberException" />
   <TypeSignature Language="VB.NET" Value="Public Class NotFiniteNumberException&#xA;Inherits ArithmeticException" />
   <TypeSignature Language="C++ CLI" Value="public ref class NotFiniteNumberException : ArithmeticException" />
+  <TypeSignature Language="F#" Value="type NotFiniteNumberException = class&#xA;    inherit ArithmeticException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -103,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.NotFiniteNumberException.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (offendingNumber As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NotFiniteNumberException(double offendingNumber);" />
+      <MemberSignature Language="F#" Value="new NotFiniteNumberException : double -&gt; NotFiniteNumberException" Usage="new System.NotFiniteNumberException offendingNumber" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.NotFiniteNumberException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NotFiniteNumberException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new NotFiniteNumberException : string -&gt; NotFiniteNumberException" Usage="new System.NotFiniteNumberException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.NotFiniteNumberException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NotFiniteNumberException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new NotFiniteNumberException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; NotFiniteNumberException" Usage="new System.NotFiniteNumberException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.NotFiniteNumberException.#ctor(System.String,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, offendingNumber As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NotFiniteNumberException(System::String ^ message, double offendingNumber);" />
+      <MemberSignature Language="F#" Value="new NotFiniteNumberException : string * double -&gt; NotFiniteNumberException" Usage="new System.NotFiniteNumberException (message, offendingNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.NotFiniteNumberException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NotFiniteNumberException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new NotFiniteNumberException : string * Exception -&gt; NotFiniteNumberException" Usage="new System.NotFiniteNumberException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -323,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.NotFiniteNumberException.#ctor(System.String,System.Double,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, offendingNumber As Double, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NotFiniteNumberException(System::String ^ message, double offendingNumber, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new NotFiniteNumberException : string * double * Exception -&gt; NotFiniteNumberException" Usage="new System.NotFiniteNumberException (message, offendingNumber, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -373,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.NotFiniteNumberException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="notFiniteNumberException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -426,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.NotFiniteNumberException.OffendingNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OffendingNumber As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffendingNumber { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.OffendingNumber : double" Usage="System.NotFiniteNumberException.OffendingNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

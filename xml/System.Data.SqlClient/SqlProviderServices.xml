@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlProviderServices" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlProviderServices&#xA;Inherits DbProviderServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlProviderServices sealed : System::Data::Common::DbProviderServices" />
+  <TypeSignature Language="F#" Value="type SqlProviderServices = class&#xA;    inherit DbProviderServices" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.CreateDbCommandDefinition(System.Data.Common.DbProviderManifest,System.Data.Common.CommandTrees.DbCommandTree)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbCommandDefinition (providerManifest As DbProviderManifest, commandTree As DbCommandTree) As DbCommandDefinition" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbCommandDefinition ^ CreateDbCommandDefinition(System::Data::Common::DbProviderManifest ^ providerManifest, System::Data::Common::CommandTrees::DbCommandTree ^ commandTree);" />
+      <MemberSignature Language="F#" Value="override this.CreateDbCommandDefinition : System.Data.Common.DbProviderManifest * System.Data.Common.CommandTrees.DbCommandTree -&gt; System.Data.Common.DbCommandDefinition" Usage="sqlProviderServices.CreateDbCommandDefinition (providerManifest, commandTree)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DbCreateDatabase(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbCreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DbCreateDatabase(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
+      <MemberSignature Language="F#" Value="override this.DbCreateDatabase : System.Data.Common.DbConnection * Nullable&lt;int&gt; * System.Data.Metadata.Edm.StoreItemCollection -&gt; unit" Usage="sqlProviderServices.DbCreateDatabase (connection, commandTimeout, storeItemCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string DbCreateDatabaseScript(string providerManifestToken, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbCreateDatabaseScript(System.String,System.Data.Metadata.Edm.StoreItemCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ DbCreateDatabaseScript(System::String ^ providerManifestToken, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
+      <MemberSignature Language="F#" Value="override this.DbCreateDatabaseScript : string * System.Data.Metadata.Edm.StoreItemCollection -&gt; string" Usage="sqlProviderServices.DbCreateDatabaseScript (providerManifestToken, storeItemCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool DbDatabaseExists(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbDatabaseExists(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool DbDatabaseExists(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
+      <MemberSignature Language="F#" Value="override this.DbDatabaseExists : System.Data.Common.DbConnection * Nullable&lt;int&gt; * System.Data.Metadata.Edm.StoreItemCollection -&gt; bool" Usage="sqlProviderServices.DbDatabaseExists (connection, commandTimeout, storeItemCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DbDeleteDatabase(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbDeleteDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DbDeleteDatabase(System::Data::Common::DbConnection ^ connection, Nullable&lt;int&gt; commandTimeout, System::Data::Metadata::Edm::StoreItemCollection ^ storeItemCollection);" />
+      <MemberSignature Language="F#" Value="override this.DbDeleteDatabase : System.Data.Common.DbConnection * Nullable&lt;int&gt; * System.Data.Metadata.Edm.StoreItemCollection -&gt; unit" Usage="sqlProviderServices.DbDeleteDatabase (connection, commandTimeout, storeItemCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbGetSpatialServices(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function DbGetSpatialServices (versionHint As String) As DbSpatialServices" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Spatial::DbSpatialServices ^ DbGetSpatialServices(System::String ^ versionHint);" />
+      <MemberSignature Language="F#" Value="override this.DbGetSpatialServices : string -&gt; System.Data.Spatial.DbSpatialServices" Usage="sqlProviderServices.DbGetSpatialServices versionHint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.GetDbProviderManifest(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbProviderManifest (versionHint As String) As DbProviderManifest" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbProviderManifest ^ GetDbProviderManifest(System::String ^ versionHint);" />
+      <MemberSignature Language="F#" Value="override this.GetDbProviderManifest : string -&gt; System.Data.Common.DbProviderManifest" Usage="sqlProviderServices.GetDbProviderManifest versionHint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(System.Data.Common.DbConnection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbProviderManifestToken (connection As DbConnection) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetDbProviderManifestToken(System::Data::Common::DbConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="override this.GetDbProviderManifestToken : System.Data.Common.DbConnection -&gt; string" Usage="sqlProviderServices.GetDbProviderManifestToken connection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.GetDbSpatialDataReader(System.Data.Common.DbDataReader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbSpatialDataReader (fromReader As DbDataReader, versionHint As String) As DbSpatialDataReader" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Spatial::DbSpatialDataReader ^ GetDbSpatialDataReader(System::Data::Common::DbDataReader ^ fromReader, System::String ^ versionHint);" />
+      <MemberSignature Language="F#" Value="override this.GetDbSpatialDataReader : System.Data.Common.DbDataReader * string -&gt; System.Data.Spatial.DbSpatialDataReader" Usage="sqlProviderServices.GetDbSpatialDataReader (fromReader, versionHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.SetDbParameterValue(System.Data.Common.DbParameter,System.Data.Metadata.Edm.TypeUsage,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDbParameterValue (parameter As DbParameter, parameterType As TypeUsage, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDbParameterValue(System::Data::Common::DbParameter ^ parameter, System::Data::Metadata::Edm::TypeUsage ^ parameterType, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.SetDbParameterValue : System.Data.Common.DbParameter * System.Data.Metadata.Edm.TypeUsage * obj -&gt; unit" Usage="sqlProviderServices.SetDbParameterValue (parameter, parameterType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -283,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlProviderServices.SingletonInstance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SingletonInstance As SqlProviderServices" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::SqlClient::SqlProviderServices ^ SingletonInstance { System::Data::SqlClient::SqlProviderServices ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstance : System.Data.SqlClient.SqlProviderServices" Usage="System.Data.SqlClient.SqlProviderServices.SingletonInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

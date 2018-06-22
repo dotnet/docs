@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ArrayExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class ArrayExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArrayExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type ArrayExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor(System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elements As Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayExtension(Array ^ elements);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ArrayExtension : Array -&gt; System.Windows.Markup.ArrayExtension" Usage="new System.Windows.Markup.ArrayExtension elements" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (arrayType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayExtension(Type ^ arrayType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ArrayExtension : Type -&gt; System.Windows.Markup.ArrayExtension" Usage="new System.Windows.Markup.ArrayExtension arrayType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddChild (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddChild(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddChild : obj -&gt; unit" Usage="arrayExtension.AddChild value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.AddText : string -&gt; unit" Usage="arrayExtension.AddText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ArrayExtension.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Items { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.IList" Usage="System.Windows.Markup.ArrayExtension.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="arrayExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -269,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ArrayExtension.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Windows.Markup.ArrayExtension.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragStartedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DragStartedEventHandler(sender As Object, e As DragStartedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DragStartedEventHandler(System::Object ^ sender, DragStartedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DragStartedEventHandler = delegate of obj * DragStartedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

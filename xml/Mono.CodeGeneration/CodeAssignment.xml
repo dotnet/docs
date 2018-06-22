@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeAssignment" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeAssignment&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeAssignment : Mono::CodeGeneration::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeAssignment = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeAssignment.#ctor(Mono.CodeGeneration.CodeValueReference,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (var As CodeValueReference, exp As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAssignment(Mono::CodeGeneration::CodeValueReference ^ var, Mono::CodeGeneration::CodeExpression ^ exp);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeAssignment : Mono.CodeGeneration.CodeValueReference * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeAssignment" Usage="new Mono.CodeGeneration.CodeAssignment (var, exp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeAssignment.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeAssignment.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeAssignment.GenerateAsStatement(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateAsStatement (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateAsStatement(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.GenerateAsStatement : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeAssignment.GenerateAsStatement gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeAssignment.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeAssignment.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeAssignment.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeAssignment.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

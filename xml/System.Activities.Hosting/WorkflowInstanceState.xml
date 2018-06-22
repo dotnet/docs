@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstanceState" />
   <TypeSignature Language="VB.NET" Value="Public Enum WorkflowInstanceState" />
   <TypeSignature Language="C++ CLI" Value="public enum class WorkflowInstanceState" />
+  <TypeSignature Language="F#" Value="type WorkflowInstanceState = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Aborted" />
       <MemberSignature Language="VB.NET" Value="Aborted" />
       <MemberSignature Language="C++ CLI" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 3" Usage="System.Activities.Hosting.WorkflowInstanceState.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Complete" />
       <MemberSignature Language="VB.NET" Value="Complete" />
       <MemberSignature Language="C++ CLI" Value="Complete" />
+      <MemberSignature Language="F#" Value="Complete = 2" Usage="System.Activities.Hosting.WorkflowInstanceState.Complete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Idle" />
       <MemberSignature Language="VB.NET" Value="Idle" />
       <MemberSignature Language="C++ CLI" Value="Idle" />
+      <MemberSignature Language="F#" Value="Idle = 0" Usage="System.Activities.Hosting.WorkflowInstanceState.Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Runnable" />
       <MemberSignature Language="VB.NET" Value="Runnable" />
       <MemberSignature Language="C++ CLI" Value="Runnable" />
+      <MemberSignature Language="F#" Value="Runnable = 1" Usage="System.Activities.Hosting.WorkflowInstanceState.Runnable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

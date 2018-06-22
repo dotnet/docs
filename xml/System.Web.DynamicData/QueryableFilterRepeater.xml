@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.QueryableFilterRepeater" />
   <TypeSignature Language="VB.NET" Value="Public Class QueryableFilterRepeater&#xA;Inherits Control&#xA;Implements IFilterExpressionProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryableFilterRepeater : System::Web::UI::Control, System::Web::DynamicData::IFilterExpressionProvider" />
+  <TypeSignature Language="F#" Value="type QueryableFilterRepeater = class&#xA;    inherit Control&#xA;    interface IFilterExpressionProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -146,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterRepeater.DynamicFilterContainerId" />
       <MemberSignature Language="VB.NET" Value="Public Property DynamicFilterContainerId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicFilterContainerId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DynamicFilterContainerId : string with get, set" Usage="System.Web.DynamicData.QueryableFilterRepeater.DynamicFilterContainerId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -187,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -236,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterRepeater.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="queryableFilterRepeater.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

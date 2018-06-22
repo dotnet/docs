@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Nullable" />
   <TypeSignature Language="VB.NET" Value="Public Class Nullable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Nullable abstract sealed" />
+  <TypeSignature Language="F#" Value="type Nullable = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable.Compare``1(System.Nullable{``0},System.Nullable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare(Of T As Structure) (n1 As Nullable(Of T), n2 As Nullable(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static int Compare(Nullable&lt;T&gt; n1, Nullable&lt;T&gt; n2);" />
+      <MemberSignature Language="F#" Value="static member Compare : Nullable&lt;'T (requires 'T : struct)&gt; * Nullable&lt;'T (requires 'T : struct)&gt; -&gt; int (requires 'T : struct)" Usage="System.Nullable.Compare (n1, n2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable.Equals``1(System.Nullable{``0},System.Nullable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals(Of T As Structure) (n1 As Nullable(Of T), n2 As Nullable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool Equals(Nullable&lt;T&gt; n1, Nullable&lt;T&gt; n2);" />
+      <MemberSignature Language="F#" Value="static member Equals : Nullable&lt;'T (requires 'T : struct)&gt; * Nullable&lt;'T (requires 'T : struct)&gt; -&gt; bool (requires 'T : struct)" Usage="System.Nullable.Equals (n1, n2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -208,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Nullable.GetUnderlyingType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnderlyingType (nullableType As Type) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetUnderlyingType(Type ^ nullableType);" />
+      <MemberSignature Language="F#" Value="static member GetUnderlyingType : Type -&gt; Type" Usage="System.Nullable.GetUnderlyingType nullableType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

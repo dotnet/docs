@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2SubjectConfirmationData" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2SubjectConfirmationData" />
+  <TypeSignature Language="F#" Value="type Saml2SubjectConfirmationData = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : string with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmationData.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.InResponseTo" />
       <MemberSignature Language="VB.NET" Value="Public Property InResponseTo As Saml2Id" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Id ^ InResponseTo { System::IdentityModel::Tokens::Saml2Id ^ get(); void set(System::IdentityModel::Tokens::Saml2Id ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InResponseTo : System.IdentityModel.Tokens.Saml2Id with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmationData.InResponseTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.KeyIdentifiers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyIdentifiers As Collection(Of SecurityKeyIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::SecurityKeyIdentifier ^&gt; ^ KeyIdentifiers { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::SecurityKeyIdentifier ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyIdentifiers : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.SecurityKeyIdentifier&gt;" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmationData.KeyIdentifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.NotBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property NotBefore As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NotBefore { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.NotBefore : Nullable&lt;DateTime&gt; with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmationData.NotBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.NotOnOrAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property NotOnOrAfter As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NotOnOrAfter { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.NotOnOrAfter : Nullable&lt;DateTime&gt; with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmationData.NotOnOrAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.Recipient" />
       <MemberSignature Language="VB.NET" Value="Public Property Recipient As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Recipient { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Recipient : Uri with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmationData.Recipient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseDevice" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MouseDevice&#xA;Inherits InputDevice" />
   <TypeSignature Language="C++ CLI" Value="public ref class MouseDevice abstract : System::Windows::Input::InputDevice" />
+  <TypeSignature Language="F#" Value="type MouseDevice = class&#xA;    inherit InputDevice" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.ActiveSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActiveSource As PresentationSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::PresentationSource ^ ActiveSource { System::Windows::PresentationSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveSource : System.Windows.PresentationSource" Usage="System.Windows.Input.MouseDevice.ActiveSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.Capture(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function Capture (element As IInputElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Capture(System::Windows::IInputElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Capture : System.Windows.IInputElement -&gt; bool" Usage="mouseDevice.Capture element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Capture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.Capture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Capture(System::Windows::IInputElement ^ element, System::Windows::Input::CaptureMode captureMode);" />
+      <MemberSignature Language="F#" Value="member this.Capture : System.Windows.IInputElement * System.Windows.Input.CaptureMode -&gt; bool" Usage="mouseDevice.Capture (element, captureMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.Captured" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Captured As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ Captured { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Captured : System.Windows.IInputElement" Usage="System.Windows.Input.MouseDevice.Captured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.DirectlyOver" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectlyOver As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ DirectlyOver { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectlyOver : System.Windows.IInputElement" Usage="System.Windows.Input.MouseDevice.DirectlyOver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Windows.Input.MouseButtonState GetButtonState(valuetype System.Windows.Input.MouseButton mouseButton) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetButtonState(System.Windows.Input.MouseButton)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Input::MouseButtonState GetButtonState(System::Windows::Input::MouseButton mouseButton);" />
+      <MemberSignature Language="F#" Value="member this.GetButtonState : System.Windows.Input.MouseButton -&gt; System.Windows.Input.MouseButtonState" Usage="mouseDevice.GetButtonState mouseButton" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetClientPosition" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetClientPosition () As Point" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Point GetClientPosition();" />
+      <MemberSignature Language="F#" Value="member this.GetClientPosition : unit -&gt; System.Windows.Point" Usage="mouseDevice.GetClientPosition " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -286,6 +294,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Windows.Point GetClientPosition(class System.Windows.PresentationSource presentationSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetClientPosition(System.Windows.PresentationSource)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Point GetClientPosition(System::Windows::PresentationSource ^ presentationSource);" />
+      <MemberSignature Language="F#" Value="member this.GetClientPosition : System.Windows.PresentationSource -&gt; System.Windows.Point" Usage="mouseDevice.GetClientPosition presentationSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetPosition(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (relativeTo As IInputElement) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point GetPosition(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="member this.GetPosition : System.Windows.IInputElement -&gt; System.Windows.Point" Usage="mouseDevice.GetPosition relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -348,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetScreenPosition" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetScreenPosition () As Point" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Point GetScreenPosition();" />
+      <MemberSignature Language="F#" Value="member this.GetScreenPosition : unit -&gt; System.Windows.Point" Usage="mouseDevice.GetScreenPosition " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -369,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.LeftButton" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeftButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState LeftButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.LeftButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseDevice.LeftButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.MiddleButton" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MiddleButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState MiddleButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.MiddleButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseDevice.MiddleButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.OverrideCursor" />
       <MemberSignature Language="VB.NET" Value="Public Property OverrideCursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Cursor ^ OverrideCursor { System::Windows::Input::Cursor ^ get(); void set(System::Windows::Input::Cursor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OverrideCursor : System.Windows.Input.Cursor with get, set" Usage="System.Windows.Input.MouseDevice.OverrideCursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -442,6 +456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.RightButton" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RightButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState RightButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.RightButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseDevice.RightButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -461,6 +476,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SetCursor(class System.Windows.Input.Cursor cursor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.SetCursor(System.Windows.Input.Cursor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetCursor(System::Windows::Input::Cursor ^ cursor);" />
+      <MemberSignature Language="F#" Value="member this.SetCursor : System.Windows.Input.Cursor -&gt; bool" Usage="mouseDevice.SetCursor cursor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -498,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Synchronize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Synchronize();" />
+      <MemberSignature Language="F#" Value="member this.Synchronize : unit -&gt; unit" Usage="mouseDevice.Synchronize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -530,6 +547,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.Target" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Target As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::IInputElement ^ Target { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.IInputElement" Usage="System.Windows.Input.MouseDevice.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -557,6 +575,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.UpdateCursor" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateCursor ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateCursor();" />
+      <MemberSignature Language="F#" Value="member this.UpdateCursor : unit -&gt; unit" Usage="mouseDevice.UpdateCursor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -577,6 +596,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.XButton1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XButton1 As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState XButton1 { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.XButton1 : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseDevice.XButton1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -597,6 +617,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.XButton2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XButton2 As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState XButton2 { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.XButton2 : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseDevice.XButton2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

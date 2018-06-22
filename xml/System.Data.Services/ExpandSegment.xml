@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.ExpandSegment" />
   <TypeSignature Language="VB.NET" Value="Public Class ExpandSegment" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpandSegment" />
+  <TypeSignature Language="F#" Value="type ExpandSegment = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegment.#ctor(System.String,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, filter As Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandSegment(System::String ^ name, System::Linq::Expressions::Expression ^ filter);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.ExpandSegment : string * System.Linq.Expressions.Expression -&gt; System.Data.Services.ExpandSegment" Usage="new System.Data.Services.ExpandSegment (name, filter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -71,6 +73,7 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.ExpandedProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpandedProperty As ResourceProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourceProperty ^ ExpandedProperty { System::Data::Services::Providers::ResourceProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpandedProperty : System.Data.Services.Providers.ResourceProperty" Usage="System.Data.Services.ExpandSegment.ExpandedProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -91,6 +94,7 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.Filter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filter As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Filter { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Linq.Expressions.Expression" Usage="System.Data.Services.ExpandSegment.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -111,6 +115,7 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.HasFilter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFilter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFilter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasFilter : bool" Usage="System.Data.Services.ExpandSegment.HasFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -131,6 +136,7 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.MaxResultsExpected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxResultsExpected As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResultsExpected { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResultsExpected : int" Usage="System.Data.Services.ExpandSegment.MaxResultsExpected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -158,6 +164,7 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Services.ExpandSegment.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -178,6 +185,7 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegment.PathHasFilter(System.Collections.Generic.IEnumerable{System.Data.Services.ExpandSegment})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PathHasFilter (path As IEnumerable(Of ExpandSegment)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool PathHasFilter(System::Collections::Generic::IEnumerable&lt;System::Data::Services::ExpandSegment ^&gt; ^ path);" />
+      <MemberSignature Language="F#" Value="static member PathHasFilter : seq&lt;System.Data.Services.ExpandSegment&gt; -&gt; bool" Usage="System.Data.Services.ExpandSegment.PathHasFilter path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityScheduledQueryElement&#xA;Inherits TrackingQueryElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityScheduledQueryElement : System::ServiceModel::Activities::Tracking::Configuration::TrackingQueryElement" />
+  <TypeSignature Language="F#" Value="type ActivityScheduledQueryElement = class&#xA;    inherit TrackingQueryElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement.ActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityName : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement.ActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement.ChildActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property ChildActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChildActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChildActivityName : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement.ChildActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement.NewTrackingQuery" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewTrackingQuery () As TrackingQuery" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Tracking::TrackingQuery ^ NewTrackingQuery();" />
+      <MemberSignature Language="F#" Value="override this.NewTrackingQuery : unit -&gt; System.Activities.Tracking.TrackingQuery" Usage="activityScheduledQueryElement.NewTrackingQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

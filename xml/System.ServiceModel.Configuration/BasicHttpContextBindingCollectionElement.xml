@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BasicHttpContextBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class BasicHttpContextBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of BasicHttpContextBinding, BasicHttpContextBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicHttpContextBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::BasicHttpContextBinding ^, System::ServiceModel::Configuration::BasicHttpContextBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type BasicHttpContextBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;BasicHttpContextBinding, BasicHttpContextBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

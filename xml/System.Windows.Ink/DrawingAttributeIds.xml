@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.DrawingAttributeIds" />
   <TypeSignature Language="VB.NET" Value="Public Class DrawingAttributeIds" />
   <TypeSignature Language="C++ CLI" Value="public ref class DrawingAttributeIds abstract sealed" />
+  <TypeSignature Language="F#" Value="type DrawingAttributeIds = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributeIds.Color" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Color As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Color;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Color : Guid" Usage="System.Windows.Ink.DrawingAttributeIds.Color" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributeIds.DrawingFlags" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DrawingFlags As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid DrawingFlags;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DrawingFlags : Guid" Usage="System.Windows.Ink.DrawingAttributeIds.DrawingFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributeIds.IsHighlighter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHighlighter As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid IsHighlighter;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsHighlighter : Guid" Usage="System.Windows.Ink.DrawingAttributeIds.IsHighlighter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributeIds.StylusHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusHeight As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid StylusHeight;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StylusHeight : Guid" Usage="System.Windows.Ink.DrawingAttributeIds.StylusHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributeIds.StylusTip" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusTip As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid StylusTip;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StylusTip : Guid" Usage="System.Windows.Ink.DrawingAttributeIds.StylusTip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributeIds.StylusTipTransform" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusTipTransform As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid StylusTipTransform;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StylusTipTransform : Guid" Usage="System.Windows.Ink.DrawingAttributeIds.StylusTipTransform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributeIds.StylusWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusWidth As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid StylusWidth;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StylusWidth : Guid" Usage="System.Windows.Ink.DrawingAttributeIds.StylusWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

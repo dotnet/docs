@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeBinaryOperatorType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CodeBinaryOperatorType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CodeBinaryOperatorType" />
+  <TypeSignature Language="F#" Value="type CodeBinaryOperatorType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 0" Usage="System.CodeDom.CodeBinaryOperatorType.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Assign" />
       <MemberSignature Language="VB.NET" Value="Assign" />
       <MemberSignature Language="C++ CLI" Value="Assign" />
+      <MemberSignature Language="F#" Value="Assign = 5" Usage="System.CodeDom.CodeBinaryOperatorType.Assign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.BitwiseAnd" />
       <MemberSignature Language="VB.NET" Value="BitwiseAnd" />
       <MemberSignature Language="C++ CLI" Value="BitwiseAnd" />
+      <MemberSignature Language="F#" Value="BitwiseAnd = 10" Usage="System.CodeDom.CodeBinaryOperatorType.BitwiseAnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.BitwiseOr" />
       <MemberSignature Language="VB.NET" Value="BitwiseOr" />
       <MemberSignature Language="C++ CLI" Value="BitwiseOr" />
+      <MemberSignature Language="F#" Value="BitwiseOr = 9" Usage="System.CodeDom.CodeBinaryOperatorType.BitwiseOr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.BooleanAnd" />
       <MemberSignature Language="VB.NET" Value="BooleanAnd" />
       <MemberSignature Language="C++ CLI" Value="BooleanAnd" />
+      <MemberSignature Language="F#" Value="BooleanAnd = 12" Usage="System.CodeDom.CodeBinaryOperatorType.BooleanAnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.BooleanOr" />
       <MemberSignature Language="VB.NET" Value="BooleanOr" />
       <MemberSignature Language="C++ CLI" Value="BooleanOr" />
+      <MemberSignature Language="F#" Value="BooleanOr = 11" Usage="System.CodeDom.CodeBinaryOperatorType.BooleanOr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Divide" />
       <MemberSignature Language="VB.NET" Value="Divide" />
       <MemberSignature Language="C++ CLI" Value="Divide" />
+      <MemberSignature Language="F#" Value="Divide = 3" Usage="System.CodeDom.CodeBinaryOperatorType.Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.GreaterThan" />
       <MemberSignature Language="VB.NET" Value="GreaterThan" />
       <MemberSignature Language="C++ CLI" Value="GreaterThan" />
+      <MemberSignature Language="F#" Value="GreaterThan = 15" Usage="System.CodeDom.CodeBinaryOperatorType.GreaterThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -223,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.GreaterThanOrEqual" />
       <MemberSignature Language="VB.NET" Value="GreaterThanOrEqual" />
       <MemberSignature Language="C++ CLI" Value="GreaterThanOrEqual" />
+      <MemberSignature Language="F#" Value="GreaterThanOrEqual = 16" Usage="System.CodeDom.CodeBinaryOperatorType.GreaterThanOrEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.IdentityEquality" />
       <MemberSignature Language="VB.NET" Value="IdentityEquality" />
       <MemberSignature Language="C++ CLI" Value="IdentityEquality" />
+      <MemberSignature Language="F#" Value="IdentityEquality = 7" Usage="System.CodeDom.CodeBinaryOperatorType.IdentityEquality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.IdentityInequality" />
       <MemberSignature Language="VB.NET" Value="IdentityInequality" />
       <MemberSignature Language="C++ CLI" Value="IdentityInequality" />
+      <MemberSignature Language="F#" Value="IdentityInequality = 6" Usage="System.CodeDom.CodeBinaryOperatorType.IdentityInequality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.LessThan" />
       <MemberSignature Language="VB.NET" Value="LessThan" />
       <MemberSignature Language="C++ CLI" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 13" Usage="System.CodeDom.CodeBinaryOperatorType.LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -315,6 +328,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.LessThanOrEqual" />
       <MemberSignature Language="VB.NET" Value="LessThanOrEqual" />
       <MemberSignature Language="C++ CLI" Value="LessThanOrEqual" />
+      <MemberSignature Language="F#" Value="LessThanOrEqual = 14" Usage="System.CodeDom.CodeBinaryOperatorType.LessThanOrEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -338,6 +352,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Modulus" />
       <MemberSignature Language="VB.NET" Value="Modulus" />
       <MemberSignature Language="C++ CLI" Value="Modulus" />
+      <MemberSignature Language="F#" Value="Modulus = 4" Usage="System.CodeDom.CodeBinaryOperatorType.Modulus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -361,6 +376,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Multiply" />
       <MemberSignature Language="VB.NET" Value="Multiply" />
       <MemberSignature Language="C++ CLI" Value="Multiply" />
+      <MemberSignature Language="F#" Value="Multiply = 2" Usage="System.CodeDom.CodeBinaryOperatorType.Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -384,6 +400,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Subtract" />
       <MemberSignature Language="VB.NET" Value="Subtract" />
       <MemberSignature Language="C++ CLI" Value="Subtract" />
+      <MemberSignature Language="F#" Value="Subtract = 1" Usage="System.CodeDom.CodeBinaryOperatorType.Subtract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -407,6 +424,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.ValueEquality" />
       <MemberSignature Language="VB.NET" Value="ValueEquality" />
       <MemberSignature Language="C++ CLI" Value="ValueEquality" />
+      <MemberSignature Language="F#" Value="ValueEquality = 8" Usage="System.CodeDom.CodeBinaryOperatorType.ValueEquality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

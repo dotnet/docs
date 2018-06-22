@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbArithmeticExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbArithmeticExpression&#xA;Inherits DbExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbArithmeticExpression sealed : System::Data::Common::CommandTrees::DbExpression" />
+  <TypeSignature Language="F#" Value="type DbArithmeticExpression = class&#xA;    inherit DbExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbArithmeticExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Accept (visitor As DbExpressionVisitor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Accept(System::Data::Common::CommandTrees::DbExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Data.Common.CommandTrees.DbExpressionVisitor -&gt; unit" Usage="dbArithmeticExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbArithmeticExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResultType) (visitor As DbExpressionVisitor(Of TResultType)) As TResultType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; override TResultType Accept(System::Data::Common::CommandTrees::DbExpressionVisitor&lt;TResultType&gt; ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Data.Common.CommandTrees.DbExpressionVisitor&lt;'ResultType&gt; -&gt; 'ResultType" Usage="dbArithmeticExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbArithmeticExpression.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As IList(Of DbExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ Arguments { System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Usage="System.Data.Common.CommandTrees.DbArithmeticExpression.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IChannelFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IChannelFactory(Of TChannel)&#xA;Implements IChannelFactory" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA;public interface class IChannelFactory : System::ServiceModel::Channels::IChannelFactory" />
+  <TypeSignature Language="F#" Value="type IChannelFactory&lt;'Channel&gt; = interface&#xA;    interface IChannelFactory&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChannel (to As EndpointAddress) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannel(System::ServiceModel::EndpointAddress ^ to);" />
+      <MemberSignature Language="F#" Value="abstract member CreateChannel : System.ServiceModel.EndpointAddress -&gt; 'Channel" Usage="iChannelFactory.CreateChannel to" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChannel (to As EndpointAddress, via As Uri) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannel(System::ServiceModel::EndpointAddress ^ to, Uri ^ via);" />
+      <MemberSignature Language="F#" Value="abstract member CreateChannel : System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="iChannelFactory.CreateChannel (to, via)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

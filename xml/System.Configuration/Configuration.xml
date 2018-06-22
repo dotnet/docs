@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Configuration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Configuration" />
   <TypeSignature Language="C++ CLI" Value="public ref class Configuration sealed" />
+  <TypeSignature Language="F#" Value="type Configuration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.AppSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppSettings As AppSettingsSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::AppSettingsSection ^ AppSettings { System::Configuration::AppSettingsSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppSettings : System.Configuration.AppSettingsSection" Usage="System.Configuration.Configuration.AppSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.AssemblyStringTransformer" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyStringTransformer As Func(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::String ^, System::String ^&gt; ^ AssemblyStringTransformer { Func&lt;System::String ^, System::String ^&gt; ^ get(); void set(Func&lt;System::String ^, System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyStringTransformer : Func&lt;string, string&gt; with get, set" Usage="System.Configuration.Configuration.AssemblyStringTransformer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.ConnectionStrings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionStrings As ConnectionStringsSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConnectionStringsSection ^ ConnectionStrings { System::Configuration::ConnectionStringsSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionStrings : System.Configuration.ConnectionStringsSection" Usage="System.Configuration.Configuration.ConnectionStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.EvaluationContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluationContext As ContextInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ContextInformation ^ EvaluationContext { System::Configuration::ContextInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluationContext : System.Configuration.ContextInformation" Usage="System.Configuration.Configuration.EvaluationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.FilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilePath : string" Usage="System.Configuration.Configuration.FilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -282,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSection(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSection (path As String) As ConfigurationSection" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSection ^ GetSection(System::String ^ path);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.GetSection : string -&gt; System.Configuration.ConfigurationSection" Usage="configuration.GetSection path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -331,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSectionGroup(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSectionGroup (path As String) As ConfigurationSectionGroup" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSectionGroup ^ GetSectionGroup(System::String ^ path);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.GetSectionGroup : string -&gt; System.Configuration.ConfigurationSectionGroup" Usage="configuration.GetSectionGroup path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -368,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.HasFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFile As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFile { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasFile : bool" Usage="System.Configuration.Configuration.HasFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -410,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.Locations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Locations As ConfigurationLocationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationLocationCollection ^ Locations { System::Configuration::ConfigurationLocationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Locations : System.Configuration.ConfigurationLocationCollection" Usage="System.Configuration.Configuration.Locations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -441,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.NamespaceDeclared" />
       <MemberSignature Language="VB.NET" Value="Public Property NamespaceDeclared As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NamespaceDeclared { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceDeclared : bool with get, set" Usage="System.Configuration.Configuration.NamespaceDeclared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -473,6 +484,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.RootSectionGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootSectionGroup As ConfigurationSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionGroup ^ RootSectionGroup { System::Configuration::ConfigurationSectionGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootSectionGroup : System.Configuration.ConfigurationSectionGroup" Usage="System.Configuration.Configuration.RootSectionGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -506,6 +518,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="member this.Save : unit -&gt; unit" Usage="configuration.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -551,6 +564,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (mode As ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Configuration::ConfigurationSaveMode mode);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.Save mode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -611,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (mode As ConfigurationSaveMode, forceUpdateAll As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Configuration::ConfigurationSaveMode mode, bool forceUpdateAll);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.Save (mode, forceUpdateAll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -672,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string -&gt; unit" Usage="configuration.SaveAs filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -721,6 +737,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, mode As ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename, System::Configuration::ConfigurationSaveMode mode);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.SaveAs (filename, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -772,6 +789,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, mode As ConfigurationSaveMode, forceUpdateAll As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename, System::Configuration::ConfigurationSaveMode mode, bool forceUpdateAll);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.SaveAs (filename, mode, forceUpdateAll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -828,6 +846,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.SectionGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionGroups As ConfigurationSectionGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionGroupCollection ^ SectionGroups { System::Configuration::ConfigurationSectionGroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SectionGroups : System.Configuration.ConfigurationSectionGroupCollection" Usage="System.Configuration.Configuration.SectionGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -867,6 +886,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.Sections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sections As ConfigurationSectionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionCollection ^ Sections { System::Configuration::ConfigurationSectionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sections : System.Configuration.ConfigurationSectionCollection" Usage="System.Configuration.Configuration.Sections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -906,6 +926,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.TargetFramework" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFramework As FrameworkName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Versioning::FrameworkName ^ TargetFramework { System::Runtime::Versioning::FrameworkName ^ get(); void set(System::Runtime::Versioning::FrameworkName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFramework : System.Runtime.Versioning.FrameworkName with get, set" Usage="System.Configuration.Configuration.TargetFramework" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -939,6 +960,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Configuration.TypeStringTransformer" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeStringTransformer As Func(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::String ^, System::String ^&gt; ^ TypeStringTransformer { Func&lt;System::String ^, System::String ^&gt; ^ get(); void set(Func&lt;System::String ^, System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeStringTransformer : Func&lt;string, string&gt; with get, set" Usage="System.Configuration.Configuration.TypeStringTransformer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

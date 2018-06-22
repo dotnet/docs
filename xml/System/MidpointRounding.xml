@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.MidpointRounding" />
   <TypeSignature Language="VB.NET" Value="Public Enum MidpointRounding" />
   <TypeSignature Language="C++ CLI" Value="public enum class MidpointRounding" />
+  <TypeSignature Language="F#" Value="type MidpointRounding = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.MidpointRounding.AwayFromZero" />
       <MemberSignature Language="VB.NET" Value="AwayFromZero" />
       <MemberSignature Language="C++ CLI" Value="AwayFromZero" />
+      <MemberSignature Language="F#" Value="AwayFromZero = 1" Usage="System.MidpointRounding.AwayFromZero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.MidpointRounding.ToEven" />
       <MemberSignature Language="VB.NET" Value="ToEven" />
       <MemberSignature Language="C++ CLI" Value="ToEven" />
+      <MemberSignature Language="F#" Value="ToEven = 0" Usage="System.MidpointRounding.ToEven" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

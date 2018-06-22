@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.DirectiveRegex" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectiveRegex&#xA;Inherits Regex" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectiveRegex : System::Text::RegularExpressions::Regex" />
+  <TypeSignature Language="F#" Value="type DirectiveRegex = class&#xA;    inherit Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.DirectiveRegex.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectiveRegex(TimeSpan A_1);" />
+      <MemberSignature Language="F#" Value="new System.Web.RegularExpressions.DirectiveRegex : TimeSpan -&gt; System.Web.RegularExpressions.DirectiveRegex" Usage="new System.Web.RegularExpressions.DirectiveRegex A_1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>

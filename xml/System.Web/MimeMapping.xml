@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.MimeMapping" />
   <TypeSignature Language="VB.NET" Value="Public Class MimeMapping" />
   <TypeSignature Language="C++ CLI" Value="public ref class MimeMapping abstract sealed" />
+  <TypeSignature Language="F#" Value="type MimeMapping = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.MimeMapping.GetMimeMapping(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMimeMapping (fileName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetMimeMapping(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="static member GetMimeMapping : string -&gt; string" Usage="System.Web.MimeMapping.GetMimeMapping fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

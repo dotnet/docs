@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuildManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildManager sealed" />
+  <TypeSignature Language="F#" Value="type BuildManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.AddCompilationDependency(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddCompilationDependency (dependency As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddCompilationDependency(System::String ^ dependency);" />
+      <MemberSignature Language="F#" Value="static member AddCompilationDependency : string -&gt; unit" Usage="System.Web.Compilation.BuildManager.AddCompilationDependency dependency" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddReferencedAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.AddReferencedAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddReferencedAssembly(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="static member AddReferencedAssembly : System.Reflection.Assembly -&gt; unit" Usage="System.Web.Compilation.BuildManager.AddReferencedAssembly assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.BatchCompilationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property BatchCompilationEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Nullable&lt;bool&gt; BatchCompilationEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.BatchCompilationEnabled : Nullable&lt;bool&gt; with get, set" Usage="System.Web.Compilation.BuildManager.BatchCompilationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.CodeAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CodeAssemblies As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::IList ^ CodeAssemblies { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeAssemblies : System.Collections.IList" Usage="System.Web.Compilation.BuildManager.CodeAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.CreateCachedFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCachedFile (fileName As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ CreateCachedFile(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="static member CreateCachedFile : string -&gt; System.IO.Stream" Usage="System.Web.Compilation.BuildManager.CreateCachedFile fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstanceFromVirtualPath (virtualPath As String, requiredBaseType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateInstanceFromVirtualPath(System::String ^ virtualPath, Type ^ requiredBaseType);" />
+      <MemberSignature Language="F#" Value="static member CreateInstanceFromVirtualPath : string * Type -&gt; obj" Usage="System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath (virtualPath, requiredBaseType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet(System.Web.HttpContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCachedBuildDependencySet (context As HttpContext, virtualPath As String) As BuildDependencySet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Compilation::BuildDependencySet ^ GetCachedBuildDependencySet(System::Web::HttpContext ^ context, System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="static member GetCachedBuildDependencySet : System.Web.HttpContext * string -&gt; System.Web.Compilation.BuildDependencySet" Usage="System.Web.Compilation.BuildManager.GetCachedBuildDependencySet (context, virtualPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet(System.Web.HttpContext,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCachedBuildDependencySet (context As HttpContext, virtualPath As String, ensureIsUpToDate As Boolean) As BuildDependencySet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Compilation::BuildDependencySet ^ GetCachedBuildDependencySet(System::Web::HttpContext ^ context, System::String ^ virtualPath, bool ensureIsUpToDate);" />
+      <MemberSignature Language="F#" Value="static member GetCachedBuildDependencySet : System.Web.HttpContext * string * bool -&gt; System.Web.Compilation.BuildDependencySet" Usage="System.Web.Compilation.BuildManager.GetCachedBuildDependencySet (context, virtualPath, ensureIsUpToDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCompiledAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompiledAssembly (virtualPath As String) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Assembly ^ GetCompiledAssembly(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="static member GetCompiledAssembly : string -&gt; System.Reflection.Assembly" Usage="System.Web.Compilation.BuildManager.GetCompiledAssembly virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -322,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCompiledCustomString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompiledCustomString (virtualPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetCompiledCustomString(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="static member GetCompiledCustomString : string -&gt; string" Usage="System.Web.Compilation.BuildManager.GetCompiledCustomString virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -347,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCompiledType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompiledType (virtualPath As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetCompiledType(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="static member GetCompiledType : string -&gt; Type" Usage="System.Web.Compilation.BuildManager.GetCompiledType virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetGlobalAsaxType" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetGlobalAsaxType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetGlobalAsaxType();" />
+      <MemberSignature Language="F#" Value="static member GetGlobalAsaxType : unit -&gt; Type" Usage="System.Web.Compilation.BuildManager.GetGlobalAsaxType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -404,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetObjectFactory(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectFactory (virtualPath As String, throwIfNotFound As Boolean) As IWebObjectFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Util::IWebObjectFactory ^ GetObjectFactory(System::String ^ virtualPath, bool throwIfNotFound);" />
+      <MemberSignature Language="F#" Value="static member GetObjectFactory : string * bool -&gt; System.Web.Util.IWebObjectFactory" Usage="System.Web.Compilation.BuildManager.GetObjectFactory (virtualPath, throwIfNotFound)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -455,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetReferencedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReferencedAssemblies () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ICollection ^ GetReferencedAssemblies();" />
+      <MemberSignature Language="F#" Value="static member GetReferencedAssemblies : unit -&gt; System.Collections.ICollection" Usage="System.Web.Compilation.BuildManager.GetReferencedAssemblies " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -502,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetType(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetType (typeName As String, throwOnError As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetType(System::String ^ typeName, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="static member GetType : string * bool -&gt; Type" Usage="System.Web.Compilation.BuildManager.GetType (typeName, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -546,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetType(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetType (typeName As String, throwOnError As Boolean, ignoreCase As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetType(System::String ^ typeName, bool throwOnError, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="static member GetType : string * bool * bool -&gt; Type" Usage="System.Web.Compilation.BuildManager.GetType (typeName, throwOnError, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -593,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetVirtualPathDependencies(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetVirtualPathDependencies (virtualPath As String) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ICollection ^ GetVirtualPathDependencies(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="static member GetVirtualPathDependencies : string -&gt; System.Collections.ICollection" Usage="System.Web.Compilation.BuildManager.GetVirtualPathDependencies virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -617,6 +635,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.IsPrecompiledApp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsPrecompiledApp As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsPrecompiledApp { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPrecompiledApp : bool" Usage="System.Web.Compilation.BuildManager.IsPrecompiledApp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -638,6 +657,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.IsUpdatablePrecompiledApp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsUpdatablePrecompiledApp As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsUpdatablePrecompiledApp { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsUpdatablePrecompiledApp : bool" Usage="System.Web.Compilation.BuildManager.IsUpdatablePrecompiledApp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -659,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.ReadCachedFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadCachedFile (fileName As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ ReadCachedFile(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="static member ReadCachedFile : string -&gt; System.IO.Stream" Usage="System.Web.Compilation.BuildManager.ReadCachedFile fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -692,6 +713,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.TargetFramework" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TargetFramework As FrameworkName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::Versioning::FrameworkName ^ TargetFramework { System::Runtime::Versioning::FrameworkName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFramework : System.Runtime.Versioning.FrameworkName" Usage="System.Web.Compilation.BuildManager.TargetFramework" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

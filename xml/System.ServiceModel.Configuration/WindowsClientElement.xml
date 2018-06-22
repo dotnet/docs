@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WindowsClientElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsClientElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsClientElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WindowsClientElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsClientElement.AllowedImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowedImpersonationLevel As TokenImpersonationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel AllowedImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); void set(System::Security::Principal::TokenImpersonationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedImpersonationLevel : System.Security.Principal.TokenImpersonationLevel with get, set" Usage="System.ServiceModel.Configuration.WindowsClientElement.AllowedImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsClientElement.AllowNtlm" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowNtlm As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowNtlm { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowNtlm : bool with get, set" Usage="System.ServiceModel.Configuration.WindowsClientElement.AllowNtlm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WindowsClientElement.Copy(System.ServiceModel.Configuration.WindowsClientElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As WindowsClientElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::WindowsClientElement ^ from);" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.WindowsClientElement -&gt; unit" Usage="windowsClientElement.Copy from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsClientElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WindowsClientElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

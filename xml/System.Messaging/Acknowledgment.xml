@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.Acknowledgment" />
   <TypeSignature Language="VB.NET" Value="Public Enum Acknowledgment" />
   <TypeSignature Language="C++ CLI" Value="public enum class Acknowledgment" />
+  <TypeSignature Language="F#" Value="type Acknowledgment = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.AccessDenied" />
       <MemberSignature Language="VB.NET" Value="AccessDenied" />
       <MemberSignature Language="C++ CLI" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = 32772" Usage="System.Messaging.Acknowledgment.AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.BadDestinationQueue" />
       <MemberSignature Language="VB.NET" Value="BadDestinationQueue" />
       <MemberSignature Language="C++ CLI" Value="BadDestinationQueue" />
+      <MemberSignature Language="F#" Value="BadDestinationQueue = 32768" Usage="System.Messaging.Acknowledgment.BadDestinationQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.BadEncryption" />
       <MemberSignature Language="VB.NET" Value="BadEncryption" />
       <MemberSignature Language="C++ CLI" Value="BadEncryption" />
+      <MemberSignature Language="F#" Value="BadEncryption = 32775" Usage="System.Messaging.Acknowledgment.BadEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.BadSignature" />
       <MemberSignature Language="VB.NET" Value="BadSignature" />
       <MemberSignature Language="C++ CLI" Value="BadSignature" />
+      <MemberSignature Language="F#" Value="BadSignature = 32774" Usage="System.Messaging.Acknowledgment.BadSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.CouldNotEncrypt" />
       <MemberSignature Language="VB.NET" Value="CouldNotEncrypt" />
       <MemberSignature Language="C++ CLI" Value="CouldNotEncrypt" />
+      <MemberSignature Language="F#" Value="CouldNotEncrypt = 32776" Usage="System.Messaging.Acknowledgment.CouldNotEncrypt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -139,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.HopCountExceeded" />
       <MemberSignature Language="VB.NET" Value="HopCountExceeded" />
       <MemberSignature Language="C++ CLI" Value="HopCountExceeded" />
+      <MemberSignature Language="F#" Value="HopCountExceeded = 32773" Usage="System.Messaging.Acknowledgment.HopCountExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -166,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.Acknowledgment.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -185,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.NotTransactionalMessage" />
       <MemberSignature Language="VB.NET" Value="NotTransactionalMessage" />
       <MemberSignature Language="C++ CLI" Value="NotTransactionalMessage" />
+      <MemberSignature Language="F#" Value="NotTransactionalMessage = 32778" Usage="System.Messaging.Acknowledgment.NotTransactionalMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -204,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.NotTransactionalQueue" />
       <MemberSignature Language="VB.NET" Value="NotTransactionalQueue" />
       <MemberSignature Language="C++ CLI" Value="NotTransactionalQueue" />
+      <MemberSignature Language="F#" Value="NotTransactionalQueue = 32777" Usage="System.Messaging.Acknowledgment.NotTransactionalQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.Purged" />
       <MemberSignature Language="VB.NET" Value="Purged" />
       <MemberSignature Language="C++ CLI" Value="Purged" />
+      <MemberSignature Language="F#" Value="Purged = 32769" Usage="System.Messaging.Acknowledgment.Purged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -242,6 +253,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.QueueDeleted" />
       <MemberSignature Language="VB.NET" Value="QueueDeleted" />
       <MemberSignature Language="C++ CLI" Value="QueueDeleted" />
+      <MemberSignature Language="F#" Value="QueueDeleted = 49152" Usage="System.Messaging.Acknowledgment.QueueDeleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -261,6 +273,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.QueueExceedMaximumSize" />
       <MemberSignature Language="VB.NET" Value="QueueExceedMaximumSize" />
       <MemberSignature Language="C++ CLI" Value="QueueExceedMaximumSize" />
+      <MemberSignature Language="F#" Value="QueueExceedMaximumSize = 32771" Usage="System.Messaging.Acknowledgment.QueueExceedMaximumSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -280,6 +293,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.QueuePurged" />
       <MemberSignature Language="VB.NET" Value="QueuePurged" />
       <MemberSignature Language="C++ CLI" Value="QueuePurged" />
+      <MemberSignature Language="F#" Value="QueuePurged = 49153" Usage="System.Messaging.Acknowledgment.QueuePurged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -299,6 +313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.ReachQueue" />
       <MemberSignature Language="VB.NET" Value="ReachQueue" />
       <MemberSignature Language="C++ CLI" Value="ReachQueue" />
+      <MemberSignature Language="F#" Value="ReachQueue = 2" Usage="System.Messaging.Acknowledgment.ReachQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -318,6 +333,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.ReachQueueTimeout" />
       <MemberSignature Language="VB.NET" Value="ReachQueueTimeout" />
       <MemberSignature Language="C++ CLI" Value="ReachQueueTimeout" />
+      <MemberSignature Language="F#" Value="ReachQueueTimeout = 32770" Usage="System.Messaging.Acknowledgment.ReachQueueTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -337,6 +353,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.Receive" />
       <MemberSignature Language="VB.NET" Value="Receive" />
       <MemberSignature Language="C++ CLI" Value="Receive" />
+      <MemberSignature Language="F#" Value="Receive = 16384" Usage="System.Messaging.Acknowledgment.Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -356,6 +373,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.ReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value="ReceiveTimeout" />
       <MemberSignature Language="C++ CLI" Value="ReceiveTimeout" />
+      <MemberSignature Language="F#" Value="ReceiveTimeout = 49154" Usage="System.Messaging.Acknowledgment.ReceiveTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

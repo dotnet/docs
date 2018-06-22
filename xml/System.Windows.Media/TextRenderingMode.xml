@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextRenderingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextRenderingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextRenderingMode" />
+  <TypeSignature Language="F#" Value="type TextRenderingMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Aliased" />
       <MemberSignature Language="VB.NET" Value="Aliased" />
       <MemberSignature Language="C++ CLI" Value="Aliased" />
+      <MemberSignature Language="F#" Value="Aliased = 1" Usage="System.Windows.Media.TextRenderingMode.Aliased" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Media.TextRenderingMode.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.ClearType" />
       <MemberSignature Language="VB.NET" Value="ClearType" />
       <MemberSignature Language="C++ CLI" Value="ClearType" />
+      <MemberSignature Language="F#" Value="ClearType = 3" Usage="System.Windows.Media.TextRenderingMode.ClearType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Grayscale" />
       <MemberSignature Language="VB.NET" Value="Grayscale" />
       <MemberSignature Language="C++ CLI" Value="Grayscale" />
+      <MemberSignature Language="F#" Value="Grayscale = 2" Usage="System.Windows.Media.TextRenderingMode.Grayscale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

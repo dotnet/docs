@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextElementEditingBehaviorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextElementEditingBehaviorAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextElementEditingBehaviorAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TextElementEditingBehaviorAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMergeable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMergeable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsMergeable : bool with get, set" Usage="System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTypographicOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTypographicOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsTypographicOnly : bool with get, set" Usage="System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

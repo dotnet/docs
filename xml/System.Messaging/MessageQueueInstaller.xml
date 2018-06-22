@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueInstaller" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQueueInstaller&#xA;Inherits ComponentInstaller" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQueueInstaller : System::Configuration::Install::ComponentInstaller" />
+  <TypeSignature Language="F#" Value="type MessageQueueInstaller = class&#xA;    inherit ComponentInstaller" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueInstaller.#ctor(System.Messaging.MessageQueue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (componentToCopy As MessageQueue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueueInstaller(System::Messaging::MessageQueue ^ componentToCopy);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueueInstaller : System.Messaging.MessageQueue -&gt; System.Messaging.MessageQueueInstaller" Usage="new System.Messaging.MessageQueueInstaller componentToCopy" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.Authenticate" />
       <MemberSignature Language="VB.NET" Value="Public Property Authenticate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Authenticate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Authenticate : bool with get, set" Usage="System.Messaging.MessageQueueInstaller.Authenticate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.BasePriority" />
       <MemberSignature Language="VB.NET" Value="Public Property BasePriority As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short BasePriority { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.BasePriority : int16 with get, set" Usage="System.Messaging.MessageQueueInstaller.BasePriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.Category" />
       <MemberSignature Language="VB.NET" Value="Public Property Category As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Category { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.Category : Guid with get, set" Usage="System.Messaging.MessageQueueInstaller.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueInstaller.Commit(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Commit : System.Collections.IDictionary -&gt; unit" Usage="messageQueueInstaller.Commit savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueInstaller.CopyFromComponent(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFromComponent (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFromComponent(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.CopyFromComponent : System.ComponentModel.IComponent -&gt; unit" Usage="messageQueueInstaller.CopyFromComponent component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.EncryptionRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptionRequired As EncryptionRequired" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::EncryptionRequired EncryptionRequired { System::Messaging::EncryptionRequired get(); void set(System::Messaging::EncryptionRequired value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionRequired : System.Messaging.EncryptionRequired with get, set" Usage="System.Messaging.MessageQueueInstaller.EncryptionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueInstaller.Install(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Install (stateSaver As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Install(System::Collections::IDictionary ^ stateSaver);" />
+      <MemberSignature Language="F#" Value="override this.Install : System.Collections.IDictionary -&gt; unit" Usage="messageQueueInstaller.Install stateSaver" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueInstaller.IsEquivalentInstaller(System.Configuration.Install.ComponentInstaller)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEquivalentInstaller (otherInstaller As ComponentInstaller) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEquivalentInstaller(System::Configuration::Install::ComponentInstaller ^ otherInstaller);" />
+      <MemberSignature Language="F#" Value="override this.IsEquivalentInstaller : System.Configuration.Install.ComponentInstaller -&gt; bool" Usage="messageQueueInstaller.IsEquivalentInstaller otherInstaller" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -366,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Messaging.MessageQueueInstaller.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -399,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.MaximumJournalSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumJournalSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumJournalSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumJournalSize : int64 with get, set" Usage="System.Messaging.MessageQueueInstaller.MaximumJournalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -430,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.MaximumQueueSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumQueueSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumQueueSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumQueueSize : int64 with get, set" Usage="System.Messaging.MessageQueueInstaller.MaximumQueueSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -457,6 +470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.MulticastAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property MulticastAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MulticastAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MulticastAddress : string with get, set" Usage="System.Messaging.MessageQueueInstaller.MulticastAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -488,6 +502,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Messaging.MessageQueueInstaller.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -551,6 +566,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.Permissions" />
       <MemberSignature Language="VB.NET" Value="Public Property Permissions As AccessControlList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::AccessControlList ^ Permissions { System::Messaging::AccessControlList ^ get(); void set(System::Messaging::AccessControlList ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Permissions : System.Messaging.AccessControlList with get, set" Usage="System.Messaging.MessageQueueInstaller.Permissions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -635,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueInstaller.Rollback(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Rollback : System.Collections.IDictionary -&gt; unit" Usage="messageQueueInstaller.Rollback savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -673,6 +690,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.Transactional" />
       <MemberSignature Language="VB.NET" Value="Public Property Transactional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Transactional { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Transactional : bool with get, set" Usage="System.Messaging.MessageQueueInstaller.Transactional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -706,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueInstaller.Uninstall(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Uninstall (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Uninstall(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Uninstall : System.Collections.IDictionary -&gt; unit" Usage="messageQueueInstaller.Uninstall savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -742,6 +761,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.UninstallAction" />
       <MemberSignature Language="VB.NET" Value="Public Property UninstallAction As UninstallAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Install::UninstallAction UninstallAction { System::Configuration::Install::UninstallAction get(); void set(System::Configuration::Install::UninstallAction value); };" />
+      <MemberSignature Language="F#" Value="member this.UninstallAction : System.Configuration.Install.UninstallAction with get, set" Usage="System.Messaging.MessageQueueInstaller.UninstallAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -775,6 +795,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueInstaller.UseJournalQueue" />
       <MemberSignature Language="VB.NET" Value="Public Property UseJournalQueue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseJournalQueue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseJournalQueue : bool with get, set" Usage="System.Messaging.MessageQueueInstaller.UseJournalQueue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

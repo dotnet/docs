@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IdentityElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IdentityElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class IdentityElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type IdentityElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IdentityElement.Certificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As CertificateElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::CertificateElement ^ Certificate { System::ServiceModel::Configuration::CertificateElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Certificate : System.ServiceModel.Configuration.CertificateElement" Usage="System.ServiceModel.Configuration.IdentityElement.Certificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IdentityElement.CertificateReference" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateReference As CertificateReferenceElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::CertificateReferenceElement ^ CertificateReference { System::ServiceModel::Configuration::CertificateReferenceElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateReference : System.ServiceModel.Configuration.CertificateReferenceElement" Usage="System.ServiceModel.Configuration.IdentityElement.CertificateReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IdentityElement.Dns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dns As DnsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::DnsElement ^ Dns { System::ServiceModel::Configuration::DnsElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Dns : System.ServiceModel.Configuration.DnsElement" Usage="System.ServiceModel.Configuration.IdentityElement.Dns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.IdentityElement.InitializeFrom(System.ServiceModel.EndpointIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitializeFrom (identity As EndpointIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeFrom(System::ServiceModel::EndpointIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="member this.InitializeFrom : System.ServiceModel.EndpointIdentity -&gt; unit" Usage="identityElement.InitializeFrom identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IdentityElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.IdentityElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IdentityElement.Rsa" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rsa As RsaElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::RsaElement ^ Rsa { System::ServiceModel::Configuration::RsaElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rsa : System.ServiceModel.Configuration.RsaElement" Usage="System.ServiceModel.Configuration.IdentityElement.Rsa" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IdentityElement.ServicePrincipalName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicePrincipalName As ServicePrincipalNameElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServicePrincipalNameElement ^ ServicePrincipalName { System::ServiceModel::Configuration::ServicePrincipalNameElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServicePrincipalName : System.ServiceModel.Configuration.ServicePrincipalNameElement" Usage="System.ServiceModel.Configuration.IdentityElement.ServicePrincipalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -210,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IdentityElement.UserPrincipalName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserPrincipalName As UserPrincipalNameElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::UserPrincipalNameElement ^ UserPrincipalName { System::ServiceModel::Configuration::UserPrincipalNameElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserPrincipalName : System.ServiceModel.Configuration.UserPrincipalNameElement" Usage="System.ServiceModel.Configuration.IdentityElement.UserPrincipalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowHeightInfoNeededEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewRowHeightInfoNeededEventHandler(sender As Object, e As DataGridViewRowHeightInfoNeededEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewRowHeightInfoNeededEventHandler(System::Object ^ sender, DataGridViewRowHeightInfoNeededEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowHeightInfoNeededEventHandler = delegate of obj * DataGridViewRowHeightInfoNeededEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

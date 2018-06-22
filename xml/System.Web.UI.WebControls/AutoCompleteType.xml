@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AutoCompleteType" />
   <TypeSignature Language="VB.NET" Value="Public Enum AutoCompleteType" />
   <TypeSignature Language="C++ CLI" Value="public enum class AutoCompleteType" />
+  <TypeSignature Language="F#" Value="type AutoCompleteType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessCity" />
       <MemberSignature Language="VB.NET" Value="BusinessCity" />
       <MemberSignature Language="C++ CLI" Value="BusinessCity" />
+      <MemberSignature Language="F#" Value="BusinessCity = 23" Usage="System.Web.UI.WebControls.AutoCompleteType.BusinessCity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessCountryRegion" />
       <MemberSignature Language="VB.NET" Value="BusinessCountryRegion" />
       <MemberSignature Language="C++ CLI" Value="BusinessCountryRegion" />
+      <MemberSignature Language="F#" Value="BusinessCountryRegion = 24" Usage="System.Web.UI.WebControls.AutoCompleteType.BusinessCountryRegion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessFax" />
       <MemberSignature Language="VB.NET" Value="BusinessFax" />
       <MemberSignature Language="C++ CLI" Value="BusinessFax" />
+      <MemberSignature Language="F#" Value="BusinessFax = 25" Usage="System.Web.UI.WebControls.AutoCompleteType.BusinessFax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessPhone" />
       <MemberSignature Language="VB.NET" Value="BusinessPhone" />
       <MemberSignature Language="C++ CLI" Value="BusinessPhone" />
+      <MemberSignature Language="F#" Value="BusinessPhone = 26" Usage="System.Web.UI.WebControls.AutoCompleteType.BusinessPhone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessState" />
       <MemberSignature Language="VB.NET" Value="BusinessState" />
       <MemberSignature Language="C++ CLI" Value="BusinessState" />
+      <MemberSignature Language="F#" Value="BusinessState = 27" Usage="System.Web.UI.WebControls.AutoCompleteType.BusinessState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessStreetAddress" />
       <MemberSignature Language="VB.NET" Value="BusinessStreetAddress" />
       <MemberSignature Language="C++ CLI" Value="BusinessStreetAddress" />
+      <MemberSignature Language="F#" Value="BusinessStreetAddress = 28" Usage="System.Web.UI.WebControls.AutoCompleteType.BusinessStreetAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessUrl" />
       <MemberSignature Language="VB.NET" Value="BusinessUrl" />
       <MemberSignature Language="C++ CLI" Value="BusinessUrl" />
+      <MemberSignature Language="F#" Value="BusinessUrl = 29" Usage="System.Web.UI.WebControls.AutoCompleteType.BusinessUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessZipCode" />
       <MemberSignature Language="VB.NET" Value="BusinessZipCode" />
       <MemberSignature Language="C++ CLI" Value="BusinessZipCode" />
+      <MemberSignature Language="F#" Value="BusinessZipCode = 30" Usage="System.Web.UI.WebControls.AutoCompleteType.BusinessZipCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +214,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Cellular" />
       <MemberSignature Language="VB.NET" Value="Cellular" />
       <MemberSignature Language="C++ CLI" Value="Cellular" />
+      <MemberSignature Language="F#" Value="Cellular = 2" Usage="System.Web.UI.WebControls.AutoCompleteType.Cellular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Company" />
       <MemberSignature Language="VB.NET" Value="Company" />
       <MemberSignature Language="C++ CLI" Value="Company" />
+      <MemberSignature Language="F#" Value="Company = 3" Usage="System.Web.UI.WebControls.AutoCompleteType.Company" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,6 +254,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Department" />
       <MemberSignature Language="VB.NET" Value="Department" />
       <MemberSignature Language="C++ CLI" Value="Department" />
+      <MemberSignature Language="F#" Value="Department = 4" Usage="System.Web.UI.WebControls.AutoCompleteType.Department" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +274,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 1" Usage="System.Web.UI.WebControls.AutoCompleteType.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,6 +294,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.DisplayName" />
       <MemberSignature Language="VB.NET" Value="DisplayName" />
       <MemberSignature Language="C++ CLI" Value="DisplayName" />
+      <MemberSignature Language="F#" Value="DisplayName = 5" Usage="System.Web.UI.WebControls.AutoCompleteType.DisplayName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Email" />
       <MemberSignature Language="VB.NET" Value="Email" />
       <MemberSignature Language="C++ CLI" Value="Email" />
+      <MemberSignature Language="F#" Value="Email = 6" Usage="System.Web.UI.WebControls.AutoCompleteType.Email" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +334,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Enabled" />
       <MemberSignature Language="VB.NET" Value="Enabled" />
       <MemberSignature Language="C++ CLI" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 32" Usage="System.Web.UI.WebControls.AutoCompleteType.Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -338,6 +354,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.FirstName" />
       <MemberSignature Language="VB.NET" Value="FirstName" />
       <MemberSignature Language="C++ CLI" Value="FirstName" />
+      <MemberSignature Language="F#" Value="FirstName = 7" Usage="System.Web.UI.WebControls.AutoCompleteType.FirstName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -357,6 +374,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Gender" />
       <MemberSignature Language="VB.NET" Value="Gender" />
       <MemberSignature Language="C++ CLI" Value="Gender" />
+      <MemberSignature Language="F#" Value="Gender = 8" Usage="System.Web.UI.WebControls.AutoCompleteType.Gender" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -376,6 +394,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeCity" />
       <MemberSignature Language="VB.NET" Value="HomeCity" />
       <MemberSignature Language="C++ CLI" Value="HomeCity" />
+      <MemberSignature Language="F#" Value="HomeCity = 9" Usage="System.Web.UI.WebControls.AutoCompleteType.HomeCity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -395,6 +414,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeCountryRegion" />
       <MemberSignature Language="VB.NET" Value="HomeCountryRegion" />
       <MemberSignature Language="C++ CLI" Value="HomeCountryRegion" />
+      <MemberSignature Language="F#" Value="HomeCountryRegion = 10" Usage="System.Web.UI.WebControls.AutoCompleteType.HomeCountryRegion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +434,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeFax" />
       <MemberSignature Language="VB.NET" Value="HomeFax" />
       <MemberSignature Language="C++ CLI" Value="HomeFax" />
+      <MemberSignature Language="F#" Value="HomeFax = 11" Usage="System.Web.UI.WebControls.AutoCompleteType.HomeFax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -433,6 +454,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Homepage" />
       <MemberSignature Language="VB.NET" Value="Homepage" />
       <MemberSignature Language="C++ CLI" Value="Homepage" />
+      <MemberSignature Language="F#" Value="Homepage = 16" Usage="System.Web.UI.WebControls.AutoCompleteType.Homepage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -452,6 +474,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomePhone" />
       <MemberSignature Language="VB.NET" Value="HomePhone" />
       <MemberSignature Language="C++ CLI" Value="HomePhone" />
+      <MemberSignature Language="F#" Value="HomePhone = 12" Usage="System.Web.UI.WebControls.AutoCompleteType.HomePhone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -471,6 +494,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeState" />
       <MemberSignature Language="VB.NET" Value="HomeState" />
       <MemberSignature Language="C++ CLI" Value="HomeState" />
+      <MemberSignature Language="F#" Value="HomeState = 13" Usage="System.Web.UI.WebControls.AutoCompleteType.HomeState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,6 +514,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeStreetAddress" />
       <MemberSignature Language="VB.NET" Value="HomeStreetAddress" />
       <MemberSignature Language="C++ CLI" Value="HomeStreetAddress" />
+      <MemberSignature Language="F#" Value="HomeStreetAddress = 14" Usage="System.Web.UI.WebControls.AutoCompleteType.HomeStreetAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -509,6 +534,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeZipCode" />
       <MemberSignature Language="VB.NET" Value="HomeZipCode" />
       <MemberSignature Language="C++ CLI" Value="HomeZipCode" />
+      <MemberSignature Language="F#" Value="HomeZipCode = 15" Usage="System.Web.UI.WebControls.AutoCompleteType.HomeZipCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -528,6 +554,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.JobTitle" />
       <MemberSignature Language="VB.NET" Value="JobTitle" />
       <MemberSignature Language="C++ CLI" Value="JobTitle" />
+      <MemberSignature Language="F#" Value="JobTitle = 17" Usage="System.Web.UI.WebControls.AutoCompleteType.JobTitle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -547,6 +574,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.LastName" />
       <MemberSignature Language="VB.NET" Value="LastName" />
       <MemberSignature Language="C++ CLI" Value="LastName" />
+      <MemberSignature Language="F#" Value="LastName = 18" Usage="System.Web.UI.WebControls.AutoCompleteType.LastName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -566,6 +594,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.MiddleName" />
       <MemberSignature Language="VB.NET" Value="MiddleName" />
       <MemberSignature Language="C++ CLI" Value="MiddleName" />
+      <MemberSignature Language="F#" Value="MiddleName = 19" Usage="System.Web.UI.WebControls.AutoCompleteType.MiddleName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -585,6 +614,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.WebControls.AutoCompleteType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -604,6 +634,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Notes" />
       <MemberSignature Language="VB.NET" Value="Notes" />
       <MemberSignature Language="C++ CLI" Value="Notes" />
+      <MemberSignature Language="F#" Value="Notes = 20" Usage="System.Web.UI.WebControls.AutoCompleteType.Notes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -623,6 +654,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Office" />
       <MemberSignature Language="VB.NET" Value="Office" />
       <MemberSignature Language="C++ CLI" Value="Office" />
+      <MemberSignature Language="F#" Value="Office = 21" Usage="System.Web.UI.WebControls.AutoCompleteType.Office" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -642,6 +674,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Pager" />
       <MemberSignature Language="VB.NET" Value="Pager" />
       <MemberSignature Language="C++ CLI" Value="Pager" />
+      <MemberSignature Language="F#" Value="Pager = 22" Usage="System.Web.UI.WebControls.AutoCompleteType.Pager" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -661,6 +694,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Search" />
       <MemberSignature Language="VB.NET" Value="Search" />
       <MemberSignature Language="C++ CLI" Value="Search" />
+      <MemberSignature Language="F#" Value="Search = 31" Usage="System.Web.UI.WebControls.AutoCompleteType.Search" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

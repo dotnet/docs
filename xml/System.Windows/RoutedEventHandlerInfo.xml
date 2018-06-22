@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.RoutedEventHandlerInfo" />
   <TypeSignature Language="VB.NET" Value="Public Structure RoutedEventHandlerInfo" />
   <TypeSignature Language="C++ CLI" Value="public value class RoutedEventHandlerInfo" />
+  <TypeSignature Language="F#" Value="type RoutedEventHandlerInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventHandlerInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="routedEventHandlerInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventHandlerInfo.Equals(System.Windows.RoutedEventHandlerInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (handlerInfo As RoutedEventHandlerInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::RoutedEventHandlerInfo handlerInfo);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.RoutedEventHandlerInfo -&gt; bool" Usage="routedEventHandlerInfo.Equals handlerInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventHandlerInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="routedEventHandlerInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEventHandlerInfo.Handler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handler As Delegate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Delegate ^ Handler { Delegate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handler : Delegate" Usage="System.Windows.RoutedEventHandlerInfo.Handler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEventHandlerInfo.InvokeHandledEventsToo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvokeHandledEventsToo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InvokeHandledEventsToo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvokeHandledEventsToo : bool" Usage="System.Windows.RoutedEventHandlerInfo.InvokeHandledEventsToo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventHandlerInfo.op_Equality(System.Windows.RoutedEventHandlerInfo,System.Windows.RoutedEventHandlerInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (handlerInfo1 As RoutedEventHandlerInfo, handlerInfo2 As RoutedEventHandlerInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::RoutedEventHandlerInfo handlerInfo1, System::Windows::RoutedEventHandlerInfo handlerInfo2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.RoutedEventHandlerInfo * System.Windows.RoutedEventHandlerInfo -&gt; bool" Usage="handlerInfo1 = handlerInfo2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventHandlerInfo.op_Inequality(System.Windows.RoutedEventHandlerInfo,System.Windows.RoutedEventHandlerInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (handlerInfo1 As RoutedEventHandlerInfo, handlerInfo2 As RoutedEventHandlerInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::RoutedEventHandlerInfo handlerInfo1, System::Windows::RoutedEventHandlerInfo handlerInfo2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.RoutedEventHandlerInfo * System.Windows.RoutedEventHandlerInfo -&gt; bool" Usage="System.Windows.RoutedEventHandlerInfo.op_Inequality (handlerInfo1, handlerInfo2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

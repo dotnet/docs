@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.MessageBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageBase abstract" />
+  <TypeSignature Language="F#" Value="type MessageBase = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.MessageBase.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (messageType As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageBase(int messageType);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Protocol.Ntlm.MessageBase : int -&gt; Mono.Security.Protocol.Ntlm.MessageBase" Usage="new Mono.Security.Protocol.Ntlm.MessageBase messageType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.MessageBase.CheckHeader(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Function CheckHeader (message As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool CheckHeader(cli::array &lt;System::Byte&gt; ^ message);" />
+      <MemberSignature Language="F#" Value="member this.CheckHeader : byte[] -&gt; bool" Usage="messageBase.CheckHeader message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.MessageBase.Decode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Decode (message As Byte())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Decode(cli::array &lt;System::Byte&gt; ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Decode : byte[] -&gt; unit&#xA;override this.Decode : byte[] -&gt; unit" Usage="messageBase.Decode message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.MessageBase.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Property Flags As NtlmFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Protocol::Ntlm::NtlmFlags Flags { Mono::Security::Protocol::Ntlm::NtlmFlags get(); void set(Mono::Security::Protocol::Ntlm::NtlmFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : Mono.Security.Protocol.Ntlm.NtlmFlags with get, set" Usage="Mono.Security.Protocol.Ntlm.MessageBase.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.MessageBase.GetBytes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBytes () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ GetBytes();" />
+      <MemberSignature Language="F#" Value="abstract member GetBytes : unit -&gt; byte[]" Usage="messageBase.GetBytes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.MessageBase.PrepareMessage(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function PrepareMessage (messageSize As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Byte&gt; ^ PrepareMessage(int messageSize);" />
+      <MemberSignature Language="F#" Value="member this.PrepareMessage : int -&gt; byte[]" Usage="messageBase.PrepareMessage messageSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.MessageBase.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : int" Usage="Mono.Security.Protocol.Ntlm.MessageBase.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationItem" />
   <TypeSignature Language="VB.NET" Value="Public Class SyndicationItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class SyndicationItem" />
+  <TypeSignature Language="F#" Value="type SyndicationItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -108,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (source As SyndicationItem)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SyndicationItem(System::ServiceModel::Syndication::SyndicationItem ^ source);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : System.ServiceModel.Syndication.SyndicationItem -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem source" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.String,System.Uri)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As String, feedAlternateLink As Uri)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::String ^ content, Uri ^ feedAlternateLink);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * string * Uri -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, feedAlternateLink)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.ServiceModel.Syndication.SyndicationContent,System.Uri,System.String,System.DateTimeOffset)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As SyndicationContent, feedAlternateLink As Uri, id As String, lastUpdatedTime As DateTimeOffset)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::ServiceModel::Syndication::SyndicationContent ^ content, Uri ^ feedAlternateLink, System::String ^ id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * System.ServiceModel.Syndication.SyndicationContent * Uri * string * DateTimeOffset -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, feedAlternateLink, id, lastUpdatedTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.String,System.Uri,System.String,System.DateTimeOffset)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As String, feedAlternateLink As Uri, id As String, lastUpdatedTime As DateTimeOffset)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::String ^ content, Uri ^ feedAlternateLink, System::String ^ id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * string * Uri * string * DateTimeOffset -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, feedAlternateLink, id, lastUpdatedTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -276,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.AddPermalink(System.Uri)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPermalink (link As Uri)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermalink(Uri ^ link);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.AddPermalink : Uri -&gt; unit" Usage="syndicationItem.AddPermalink link" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -320,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.AttributeExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeExtensions As Dictionary(Of XmlQualifiedName, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ AttributeExtensions { System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeExtensions : System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName, string&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.AttributeExtensions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Syndication.ISyndicationElement.AttributeExtensions</InterfaceMember>
@@ -370,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Authors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authors As Collection(Of SyndicationPerson)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ Authors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Authors : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.Authors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -419,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.BaseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -453,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Categories" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Categories As Collection(Of SyndicationCategory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ Categories { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Categories : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.Categories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -500,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As SyndicationItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Syndication::SyndicationItem ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationItem&#xA;override this.Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="syndicationItem.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -535,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As SyndicationContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationContent ^ Content { System::ServiceModel::Syndication::SyndicationContent ^ get(); void set(System::ServiceModel::Syndication::SyndicationContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.ServiceModel.Syndication.SyndicationContent with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -630,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Contributors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contributors As Collection(Of SyndicationPerson)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ Contributors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Contributors : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.Contributors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -679,6 +692,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Copyright" />
       <MemberSignature Language="VB.NET" Value="Public Property Copyright As TextSyndicationContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Copyright { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Copyright : System.ServiceModel.Syndication.TextSyndicationContent with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Copyright" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -730,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.CreateCategory" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateCategory () As SyndicationCategory" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationCategory ^ CreateCategory();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCategory : unit -&gt; System.ServiceModel.Syndication.SyndicationCategory&#xA;override this.CreateCategory : unit -&gt; System.ServiceModel.Syndication.SyndicationCategory" Usage="syndicationItem.CreateCategory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -762,6 +777,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.CreateLink" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateLink () As SyndicationLink" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationLink ^ CreateLink();" />
+      <MemberSignature Language="F#" Value="abstract member CreateLink : unit -&gt; System.ServiceModel.Syndication.SyndicationLink&#xA;override this.CreateLink : unit -&gt; System.ServiceModel.Syndication.SyndicationLink" Usage="syndicationItem.CreateLink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -794,6 +810,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.CreatePerson" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreatePerson () As SyndicationPerson" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationPerson ^ CreatePerson();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePerson : unit -&gt; System.ServiceModel.Syndication.SyndicationPerson&#xA;override this.CreatePerson : unit -&gt; System.ServiceModel.Syndication.SyndicationPerson" Usage="syndicationItem.CreatePerson " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -826,6 +843,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.ElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementExtensions As SyndicationElementExtensionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ ElementExtensions { System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementExtensions : System.ServiceModel.Syndication.SyndicationElementExtensionCollection" Usage="System.ServiceModel.Syndication.SyndicationItem.ElementExtensions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Syndication.ISyndicationElement.ElementExtensions</InterfaceMember>
@@ -874,6 +892,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.GetAtom10Formatter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAtom10Formatter () As Atom10ItemFormatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Atom10ItemFormatter ^ GetAtom10Formatter();" />
+      <MemberSignature Language="F#" Value="member this.GetAtom10Formatter : unit -&gt; System.ServiceModel.Syndication.Atom10ItemFormatter" Usage="syndicationItem.GetAtom10Formatter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -918,6 +937,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.GetRss20Formatter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRss20Formatter () As Rss20ItemFormatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Rss20ItemFormatter ^ GetRss20Formatter();" />
+      <MemberSignature Language="F#" Value="member this.GetRss20Formatter : unit -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="syndicationItem.GetRss20Formatter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -953,6 +973,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.GetRss20Formatter(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRss20Formatter (serializeExtensionsAsAtom As Boolean) As Rss20ItemFormatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Rss20ItemFormatter ^ GetRss20Formatter(bool serializeExtensionsAsAtom);" />
+      <MemberSignature Language="F#" Value="member this.GetRss20Formatter : bool -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="syndicationItem.GetRss20Formatter serializeExtensionsAsAtom" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -996,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1047,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.LastUpdatedTime" />
       <MemberSignature Language="VB.NET" Value="Public Property LastUpdatedTime As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset LastUpdatedTime { DateTimeOffset get(); void set(DateTimeOffset value); };" />
+      <MemberSignature Language="F#" Value="member this.LastUpdatedTime : DateTimeOffset with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.LastUpdatedTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1098,6 +1121,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Links" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Links As Collection(Of SyndicationLink)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationLink ^&gt; ^ Links { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationLink ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Links : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationLink&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.Links" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1145,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.Load(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader) As SyndicationItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::SyndicationItem ^ Load(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="System.ServiceModel.Syndication.SyndicationItem.Load reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1184,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.Load``1(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load(Of TSyndicationItem As {SyndicationItemNew}) (reader As XmlReader) As TSyndicationItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSyndicationItem&gt;&#xA; where TSyndicationItem : System::ServiceModel::Syndication::SyndicationItemgcnew() static TSyndicationItem Load(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader -&gt; 'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))" Usage="System.ServiceModel.Syndication.SyndicationItem.Load reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1236,6 +1262,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.PublishDate" />
       <MemberSignature Language="VB.NET" Value="Public Property PublishDate As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset PublishDate { DateTimeOffset get(); void set(DateTimeOffset value); };" />
+      <MemberSignature Language="F#" Value="member this.PublishDate : DateTimeOffset with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.PublishDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1287,6 +1314,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.SaveAsAtom10(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAsAtom10 (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAsAtom10(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.SaveAsAtom10 : System.Xml.XmlWriter -&gt; unit" Usage="syndicationItem.SaveAsAtom10 writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1324,6 +1352,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.SaveAsRss20(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAsRss20 (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAsRss20(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.SaveAsRss20 : System.Xml.XmlWriter -&gt; unit" Usage="syndicationItem.SaveAsRss20 writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1361,6 +1390,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.SourceFeed" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceFeed As SyndicationFeed" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationFeed ^ SourceFeed { System::ServiceModel::Syndication::SyndicationFeed ^ get(); void set(System::ServiceModel::Syndication::SyndicationFeed ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceFeed : System.ServiceModel.Syndication.SyndicationFeed with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.SourceFeed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1403,6 +1433,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Summary" />
       <MemberSignature Language="VB.NET" Value="Public Property Summary As TextSyndicationContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Summary { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Summary : System.ServiceModel.Syndication.TextSyndicationContent with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Summary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1450,6 +1481,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As TextSyndicationContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Title { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : System.ServiceModel.Syndication.TextSyndicationContent with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1497,6 +1529,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.TryParseAttribute(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseAttribute (name As String, ns As String, value As String, version As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseAttribute(System::String ^ name, System::String ^ ns, System::String ^ value, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member TryParseAttribute : string * string * string * string -&gt; bool&#xA;override this.TryParseAttribute : string * string * string * string -&gt; bool" Usage="syndicationItem.TryParseAttribute (name, ns, value, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1539,6 +1572,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.TryParseContent(System.Xml.XmlReader,System.String,System.String,System.ServiceModel.Syndication.SyndicationContent@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseContent (reader As XmlReader, contentType As String, version As String, ByRef content As SyndicationContent) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseContent(System::Xml::XmlReader ^ reader, System::String ^ contentType, System::String ^ version, [Runtime::InteropServices::Out] System::ServiceModel::Syndication::SyndicationContent ^ % content);" />
+      <MemberSignature Language="F#" Value="abstract member TryParseContent : System.Xml.XmlReader * string * string *  -&gt; bool&#xA;override this.TryParseContent : System.Xml.XmlReader * string * string *  -&gt; bool" Usage="syndicationItem.TryParseContent (reader, contentType, version, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1580,6 +1614,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.TryParseElement(System.Xml.XmlReader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseElement (reader As XmlReader, version As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseElement(System::Xml::XmlReader ^ reader, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member TryParseElement : System.Xml.XmlReader * string -&gt; bool&#xA;override this.TryParseElement : System.Xml.XmlReader * string -&gt; bool" Usage="syndicationItem.TryParseElement (reader, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1618,6 +1653,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteAttributeExtensions (writer As XmlWriter, version As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteAttributeExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member WriteAttributeExtensions : System.Xml.XmlWriter * string -&gt; unit&#xA;override this.WriteAttributeExtensions : System.Xml.XmlWriter * string -&gt; unit" Usage="syndicationItem.WriteAttributeExtensions (writer, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1654,6 +1690,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteElementExtensions (writer As XmlWriter, version As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteElementExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member WriteElementExtensions : System.Xml.XmlWriter * string -&gt; unit&#xA;override this.WriteElementExtensions : System.Xml.XmlWriter * string -&gt; unit" Usage="syndicationItem.WriteElementExtensions (writer, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

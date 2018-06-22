@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ObjectCreationDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ObjectCreationDelegate(aggregator As IntPtr) As IntPtr " />
   <TypeSignature Language="C++ CLI" Value="public delegate IntPtr ObjectCreationDelegate(IntPtr aggregator);" />
+  <TypeSignature Language="F#" Value="type ObjectCreationDelegate = delegate of nativeint -&gt; nativeint" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BitmapEffectInput" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapEffectInput&#xA;Inherits Animatable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapEffectInput sealed : System::Windows::Media::Animation::Animatable" />
+  <TypeSignature Language="F#" Value="type BitmapEffectInput = class&#xA;    inherit Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.#ctor(System.Windows.Media.Imaging.BitmapSource)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (input As BitmapSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapEffectInput(System::Windows::Media::Imaging::BitmapSource ^ input);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Effects.BitmapEffectInput : System.Windows.Media.Imaging.BitmapSource -&gt; System.Windows.Media.Effects.BitmapEffectInput" Usage="new System.Windows.Media.Effects.BitmapEffectInput input" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffect" />
       <MemberSignature Language="VB.NET" Value="Public Property AreaToApplyEffect As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect AreaToApplyEffect { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
+      <MemberSignature Language="F#" Value="member this.AreaToApplyEffect : System.Windows.Rect with get, set" Usage="System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AreaToApplyEffectProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AreaToApplyEffectProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AreaToApplyEffectProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnits" />
       <MemberSignature Language="VB.NET" Value="Public Property AreaToApplyEffectUnits As BrushMappingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::BrushMappingMode AreaToApplyEffectUnits { System::Windows::Media::BrushMappingMode get(); void set(System::Windows::Media::BrushMappingMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AreaToApplyEffectUnits : System.Windows.Media.BrushMappingMode with get, set" Usage="System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnitsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AreaToApplyEffectUnitsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AreaToApplyEffectUnitsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AreaToApplyEffectUnitsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnitsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapEffectInput" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectInput ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BitmapEffectInput" Usage="bitmapEffectInput.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapEffectInput" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectInput ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BitmapEffectInput" Usage="bitmapEffectInput.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectInput.ContextInputSource" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextInputSource As BitmapSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapSource ^ ContextInputSource { System::Windows::Media::Imaging::BitmapSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextInputSource : System.Windows.Media.Imaging.BitmapSource" Usage="System.Windows.Media.Effects.BitmapEffectInput.ContextInputSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bitmapEffectInput.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -288,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectInput.Input" />
       <MemberSignature Language="VB.NET" Value="Public Property Input As BitmapSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::BitmapSource ^ Input { System::Windows::Media::Imaging::BitmapSource ^ get(); void set(System::Windows::Media::Imaging::BitmapSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Input : System.Windows.Media.Imaging.BitmapSource with get, set" Usage="System.Windows.Media.Effects.BitmapEffectInput.Input" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BitmapEffectInput.InputProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ InputProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InputProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BitmapEffectInput.InputProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -342,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectInput.ShouldSerializeInput" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeInput () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeInput();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeInput : unit -&gt; bool" Usage="bitmapEffectInput.ShouldSerializeInput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

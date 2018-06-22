@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.RotateFlipType" />
   <TypeSignature Language="VB.NET" Value="Public Enum RotateFlipType" />
   <TypeSignature Language="C++ CLI" Value="public enum class RotateFlipType" />
+  <TypeSignature Language="F#" Value="type RotateFlipType = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate180FlipNone" />
       <MemberSignature Language="VB.NET" Value="Rotate180FlipNone" />
       <MemberSignature Language="C++ CLI" Value="Rotate180FlipNone" />
+      <MemberSignature Language="F#" Value="Rotate180FlipNone = 2" Usage="System.Drawing.RotateFlipType.Rotate180FlipNone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate180FlipX" />
       <MemberSignature Language="VB.NET" Value="Rotate180FlipX" />
       <MemberSignature Language="C++ CLI" Value="Rotate180FlipX" />
+      <MemberSignature Language="F#" Value="Rotate180FlipX = 6" Usage="System.Drawing.RotateFlipType.Rotate180FlipX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate180FlipXY" />
       <MemberSignature Language="VB.NET" Value="Rotate180FlipXY" />
       <MemberSignature Language="C++ CLI" Value="Rotate180FlipXY" />
+      <MemberSignature Language="F#" Value="Rotate180FlipXY = 0" Usage="System.Drawing.RotateFlipType.Rotate180FlipXY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate180FlipY" />
       <MemberSignature Language="VB.NET" Value="Rotate180FlipY" />
       <MemberSignature Language="C++ CLI" Value="Rotate180FlipY" />
+      <MemberSignature Language="F#" Value="Rotate180FlipY = 4" Usage="System.Drawing.RotateFlipType.Rotate180FlipY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate270FlipNone" />
       <MemberSignature Language="VB.NET" Value="Rotate270FlipNone" />
       <MemberSignature Language="C++ CLI" Value="Rotate270FlipNone" />
+      <MemberSignature Language="F#" Value="Rotate270FlipNone = 3" Usage="System.Drawing.RotateFlipType.Rotate270FlipNone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate270FlipX" />
       <MemberSignature Language="VB.NET" Value="Rotate270FlipX" />
       <MemberSignature Language="C++ CLI" Value="Rotate270FlipX" />
+      <MemberSignature Language="F#" Value="Rotate270FlipX = 7" Usage="System.Drawing.RotateFlipType.Rotate270FlipX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -154,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate270FlipXY" />
       <MemberSignature Language="VB.NET" Value="Rotate270FlipXY" />
       <MemberSignature Language="C++ CLI" Value="Rotate270FlipXY" />
+      <MemberSignature Language="F#" Value="Rotate270FlipXY = 1" Usage="System.Drawing.RotateFlipType.Rotate270FlipXY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -173,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate270FlipY" />
       <MemberSignature Language="VB.NET" Value="Rotate270FlipY" />
       <MemberSignature Language="C++ CLI" Value="Rotate270FlipY" />
+      <MemberSignature Language="F#" Value="Rotate270FlipY = 5" Usage="System.Drawing.RotateFlipType.Rotate270FlipY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -192,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate90FlipNone" />
       <MemberSignature Language="VB.NET" Value="Rotate90FlipNone" />
       <MemberSignature Language="C++ CLI" Value="Rotate90FlipNone" />
+      <MemberSignature Language="F#" Value="Rotate90FlipNone = 1" Usage="System.Drawing.RotateFlipType.Rotate90FlipNone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -211,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate90FlipX" />
       <MemberSignature Language="VB.NET" Value="Rotate90FlipX" />
       <MemberSignature Language="C++ CLI" Value="Rotate90FlipX" />
+      <MemberSignature Language="F#" Value="Rotate90FlipX = 5" Usage="System.Drawing.RotateFlipType.Rotate90FlipX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -230,6 +241,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate90FlipXY" />
       <MemberSignature Language="VB.NET" Value="Rotate90FlipXY" />
       <MemberSignature Language="C++ CLI" Value="Rotate90FlipXY" />
+      <MemberSignature Language="F#" Value="Rotate90FlipXY = 3" Usage="System.Drawing.RotateFlipType.Rotate90FlipXY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -249,6 +261,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate90FlipY" />
       <MemberSignature Language="VB.NET" Value="Rotate90FlipY" />
       <MemberSignature Language="C++ CLI" Value="Rotate90FlipY" />
+      <MemberSignature Language="F#" Value="Rotate90FlipY = 7" Usage="System.Drawing.RotateFlipType.Rotate90FlipY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -268,6 +281,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.RotateNoneFlipNone" />
       <MemberSignature Language="VB.NET" Value="RotateNoneFlipNone" />
       <MemberSignature Language="C++ CLI" Value="RotateNoneFlipNone" />
+      <MemberSignature Language="F#" Value="RotateNoneFlipNone = 0" Usage="System.Drawing.RotateFlipType.RotateNoneFlipNone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -287,6 +301,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.RotateNoneFlipX" />
       <MemberSignature Language="VB.NET" Value="RotateNoneFlipX" />
       <MemberSignature Language="C++ CLI" Value="RotateNoneFlipX" />
+      <MemberSignature Language="F#" Value="RotateNoneFlipX = 4" Usage="System.Drawing.RotateFlipType.RotateNoneFlipX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -306,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.RotateNoneFlipXY" />
       <MemberSignature Language="VB.NET" Value="RotateNoneFlipXY" />
       <MemberSignature Language="C++ CLI" Value="RotateNoneFlipXY" />
+      <MemberSignature Language="F#" Value="RotateNoneFlipXY = 2" Usage="System.Drawing.RotateFlipType.RotateNoneFlipXY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -325,6 +341,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.RotateNoneFlipY" />
       <MemberSignature Language="VB.NET" Value="RotateNoneFlipY" />
       <MemberSignature Language="C++ CLI" Value="RotateNoneFlipY" />
+      <MemberSignature Language="F#" Value="RotateNoneFlipY = 6" Usage="System.Drawing.RotateFlipType.RotateNoneFlipY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SubMenuStyleCollection&#xA;Inherits StateManagedCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class SubMenuStyleCollection : System::Web::UI::StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type SubMenuStyleCollection = class&#xA;    inherit StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.Add(System.Web.UI.WebControls.SubMenuStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (style As SubMenuStyle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::SubMenuStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.SubMenuStyle -&gt; int" Usage="subMenuStyleCollection.Add style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.Contains(System.Web.UI.WebControls.SubMenuStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (style As SubMenuStyle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::SubMenuStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.SubMenuStyle -&gt; bool" Usage="subMenuStyleCollection.Contains style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.CopyTo(System.Web.UI.WebControls.SubMenuStyle[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (styleArray As SubMenuStyle(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::SubMenuStyle ^&gt; ^ styleArray, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.UI.WebControls.SubMenuStyle[] * int -&gt; unit" Usage="subMenuStyleCollection.CopyTo (styleArray, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="subMenuStyleCollection.CreateKnownType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="subMenuStyleCollection.GetKnownTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.IndexOf(System.Web.UI.WebControls.SubMenuStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (style As SubMenuStyle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::SubMenuStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.SubMenuStyle -&gt; int" Usage="subMenuStyleCollection.IndexOf style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.Insert(System.Int32,System.Web.UI.WebControls.SubMenuStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, style As SubMenuStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::SubMenuStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.SubMenuStyle -&gt; unit" Usage="subMenuStyleCollection.Insert (index, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SubMenuStyleCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(i As Integer) As SubMenuStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SubMenuStyle ^ default[int] { System::Web::UI::WebControls::SubMenuStyle ^ get(int i); void set(int i, System::Web::UI::WebControls::SubMenuStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.SubMenuStyle with get, set" Usage="System.Web.UI.WebControls.SubMenuStyleCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.OnInsert : int * obj -&gt; unit" Usage="subMenuStyleCollection.OnInsert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.Remove(System.Web.UI.WebControls.SubMenuStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (style As SubMenuStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::SubMenuStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.SubMenuStyle -&gt; unit" Usage="subMenuStyleCollection.Remove style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -397,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="subMenuStyleCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -437,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SubMenuStyleCollection.SetDirtyObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="subMenuStyleCollection.SetDirtyObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

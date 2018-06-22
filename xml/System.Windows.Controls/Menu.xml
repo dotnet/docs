@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Menu" />
   <TypeSignature Language="VB.NET" Value="Public Class Menu&#xA;Inherits MenuBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class Menu : System::Windows::Controls::Primitives::MenuBase" />
+  <TypeSignature Language="F#" Value="type Menu = class&#xA;    inherit MenuBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Menu.HandleMouseButton(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HandleMouseButton (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HandleMouseButton(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.HandleMouseButton : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="menu.HandleMouseButton e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Menu.IsMainMenu" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMainMenu As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMainMenu { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsMainMenu : bool with get, set" Usage="System.Windows.Controls.Menu.IsMainMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Menu.IsMainMenuProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsMainMenuProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsMainMenuProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsMainMenuProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Menu.IsMainMenuProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Menu.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="menu.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Menu.OnInitialized(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInitialized : EventArgs -&gt; unit" Usage="menu.OnInitialized e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Menu.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="menu.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Menu.OnTextInput(System.Windows.Input.TextCompositionEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextInput (e As TextCompositionEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextInput(System::Windows::Input::TextCompositionEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnTextInput : System.Windows.Input.TextCompositionEventArgs -&gt; unit" Usage="menu.OnTextInput e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Menu.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="menu.PrepareContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

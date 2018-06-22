@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.CharUnicodeInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class CharUnicodeInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class CharUnicodeInfo abstract sealed" />
+  <TypeSignature Language="F#" Value="type CharUnicodeInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetDecimalDigitValue(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDecimalDigitValue (ch As Char) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDecimalDigitValue(char ch);" />
+      <MemberSignature Language="F#" Value="static member GetDecimalDigitValue : char -&gt; int" Usage="System.Globalization.CharUnicodeInfo.GetDecimalDigitValue ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -185,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetDecimalDigitValue(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDecimalDigitValue (s As String, index As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDecimalDigitValue(System::String ^ s, int index);" />
+      <MemberSignature Language="F#" Value="static member GetDecimalDigitValue : string * int -&gt; int" Usage="System.Globalization.CharUnicodeInfo.GetDecimalDigitValue (s, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetDigitValue(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDigitValue (ch As Char) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDigitValue(char ch);" />
+      <MemberSignature Language="F#" Value="static member GetDigitValue : char -&gt; int" Usage="System.Globalization.CharUnicodeInfo.GetDigitValue ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -313,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetDigitValue(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDigitValue (s As String, index As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDigitValue(System::String ^ s, int index);" />
+      <MemberSignature Language="F#" Value="static member GetDigitValue : string * int -&gt; int" Usage="System.Globalization.CharUnicodeInfo.GetDigitValue (s, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -385,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetNumericValue(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumericValue (ch As Char) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetNumericValue(char ch);" />
+      <MemberSignature Language="F#" Value="static member GetNumericValue : char -&gt; double" Usage="System.Globalization.CharUnicodeInfo.GetNumericValue ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -449,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetNumericValue(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumericValue (s As String, index As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetNumericValue(System::String ^ s, int index);" />
+      <MemberSignature Language="F#" Value="static member GetNumericValue : string * int -&gt; double" Usage="System.Globalization.CharUnicodeInfo.GetNumericValue (s, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -529,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (ch As Char) As UnicodeCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(char ch);" />
+      <MemberSignature Language="F#" Value="static member GetUnicodeCategory : char -&gt; System.Globalization.UnicodeCategory" Usage="System.Globalization.CharUnicodeInfo.GetUnicodeCategory ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -592,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (codePoint As Integer) As UnicodeCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(int codePoint);" />
+      <MemberSignature Language="F#" Value="static member GetUnicodeCategory : int -&gt; System.Globalization.UnicodeCategory" Usage="System.Globalization.CharUnicodeInfo.GetUnicodeCategory codePoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -616,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (s As String, index As Integer) As UnicodeCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(System::String ^ s, int index);" />
+      <MemberSignature Language="F#" Value="static member GetUnicodeCategory : string * int -&gt; System.Globalization.UnicodeCategory" Usage="System.Globalization.CharUnicodeInfo.GetUnicodeCategory (s, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

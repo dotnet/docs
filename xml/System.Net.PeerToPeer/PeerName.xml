@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerName" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerName&#xA;Implements IEquatable(Of PeerName), ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerName : IEquatable&lt;System::Net::PeerToPeer::PeerName ^&gt;, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type PeerName = class&#xA;    interface ISerializable&#xA;    interface IEquatable&lt;PeerName&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (remotePeerName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerName(System::String ^ remotePeerName);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.PeerName : string -&gt; System.Net.PeerToPeer.PeerName" Usage="new System.Net.PeerToPeer.PeerName remotePeerName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PeerName(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.PeerName : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.PeerToPeer.PeerName" Usage="new System.Net.PeerToPeer.PeerName (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string classifier, valuetype System.Net.PeerToPeer.PeerNameType peerNameType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.#ctor(System.String,System.Net.PeerToPeer.PeerNameType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerName(System::String ^ classifier, System::Net::PeerToPeer::PeerNameType peerNameType);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.PeerName : string * System.Net.PeerToPeer.PeerNameType -&gt; System.Net.PeerToPeer.PeerName" Usage="new System.Net.PeerToPeer.PeerName (classifier, peerNameType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerName.Authority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authority As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Authority { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Authority : string" Usage="System.Net.PeerToPeer.PeerName.Authority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerName.Classifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Classifier As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Classifier { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Classifier : string" Usage="System.Net.PeerToPeer.PeerName.Classifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.CreateFromPeerHostName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromPeerHostName (peerHostName As String) As PeerName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::PeerToPeer::PeerName ^ CreateFromPeerHostName(System::String ^ peerHostName);" />
+      <MemberSignature Language="F#" Value="static member CreateFromPeerHostName : string -&gt; System.Net.PeerToPeer.PeerName" Usage="System.Net.PeerToPeer.PeerName.CreateFromPeerHostName peerHostName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.PeerToPeer.PeerName CreateRelativePeerName(class System.Net.PeerToPeer.PeerName peerName, string classifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.CreateRelativePeerName(System.Net.PeerToPeer.PeerName,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::PeerToPeer::PeerName ^ CreateRelativePeerName(System::Net::PeerToPeer::PeerName ^ peerName, System::String ^ classifier);" />
+      <MemberSignature Language="F#" Value="static member CreateRelativePeerName : System.Net.PeerToPeer.PeerName * string -&gt; System.Net.PeerToPeer.PeerName" Usage="System.Net.PeerToPeer.PeerName.CreateRelativePeerName (peerName, classifier)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -317,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.Equals(System.Net.PeerToPeer.PeerName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PeerName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Net::PeerToPeer::PeerName ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Net.PeerToPeer.PeerName -&gt; bool" Usage="peerName.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -356,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="peerName.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -389,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="peerName.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -418,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="peerName.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -454,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerName.IsSecured" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSecured As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecured { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecured : bool" Usage="System.Net.PeerToPeer.PeerName.IsSecured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -490,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerName.PeerHostName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerHostName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PeerHostName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerHostName : string" Usage="System.Net.PeerToPeer.PeerName.PeerHostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -560,6 +574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerName.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="peerName.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

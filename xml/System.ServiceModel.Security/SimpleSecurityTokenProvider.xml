@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SimpleSecurityTokenProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SimpleSecurityTokenProvider&#xA;Inherits SecurityTokenProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SimpleSecurityTokenProvider : System::IdentityModel::Selectors::SecurityTokenProvider" />
+  <TypeSignature Language="F#" Value="type SimpleSecurityTokenProvider = class&#xA;    inherit SecurityTokenProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SimpleSecurityTokenProvider.#ctor(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Selectors.SecurityTokenRequirement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken, tokenRequirement As SecurityTokenRequirement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SimpleSecurityTokenProvider(System::IdentityModel::Tokens::SecurityToken ^ token, System::IdentityModel::Selectors::SecurityTokenRequirement ^ tokenRequirement);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SimpleSecurityTokenProvider : System.IdentityModel.Tokens.SecurityToken * System.IdentityModel.Selectors.SecurityTokenRequirement -&gt; System.ServiceModel.Security.SimpleSecurityTokenProvider" Usage="new System.ServiceModel.Security.SimpleSecurityTokenProvider (token, tokenRequirement)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SimpleSecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.GetTokenCore : TimeSpan -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="simpleSecurityTokenProvider.GetTokenCore timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

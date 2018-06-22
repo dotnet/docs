@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.ManipulationPivot2D" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManipulationPivot2D&#xA;Inherits ManipulationParameters2D" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManipulationPivot2D sealed : System::Windows::Input::Manipulations::ManipulationParameters2D" />
+  <TypeSignature Language="F#" Value="type ManipulationPivot2D = class&#xA;    inherit ManipulationParameters2D" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationPivot2D.Radius" />
       <MemberSignature Language="VB.NET" Value="Public Property Radius As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Radius { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Radius : single with get, set" Usage="System.Windows.Input.Manipulations.ManipulationPivot2D.Radius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationPivot2D.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float X { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.X : single with get, set" Usage="System.Windows.Input.Manipulations.ManipulationPivot2D.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationPivot2D.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Y { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : single with get, set" Usage="System.Windows.Input.Manipulations.ManipulationPivot2D.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>

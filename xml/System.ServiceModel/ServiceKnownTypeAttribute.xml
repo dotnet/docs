@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceKnownTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceKnownTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceKnownTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ServiceKnownTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (methodName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(System::String ^ methodName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ServiceKnownTypeAttribute : string -&gt; System.ServiceModel.ServiceKnownTypeAttribute" Usage="new System.ServiceModel.ServiceKnownTypeAttribute methodName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ServiceKnownTypeAttribute : Type -&gt; System.ServiceModel.ServiceKnownTypeAttribute" Usage="new System.ServiceModel.ServiceKnownTypeAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (methodName As String, declaringType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(System::String ^ methodName, Type ^ declaringType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ServiceKnownTypeAttribute : string * Type -&gt; System.ServiceModel.ServiceKnownTypeAttribute" Usage="new System.ServiceModel.ServiceKnownTypeAttribute (methodName, declaringType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.ServiceModel.ServiceKnownTypeAttribute.DeclaringType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string" Usage="System.ServiceModel.ServiceKnownTypeAttribute.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.ServiceModel.ServiceKnownTypeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DoWorkEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DoWorkEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DoWorkEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type DoWorkEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DoWorkEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (argument As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DoWorkEventArgs(System::Object ^ argument);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DoWorkEventArgs : obj -&gt; System.ComponentModel.DoWorkEventArgs" Usage="new System.ComponentModel.DoWorkEventArgs argument" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DoWorkEventArgs.Argument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Argument As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Argument { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Argument : obj" Usage="System.ComponentModel.DoWorkEventArgs.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DoWorkEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.ComponentModel.DoWorkEventArgs.Cancel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DoWorkEventArgs.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Result { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : obj with get, set" Usage="System.ComponentModel.DoWorkEventArgs.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlChars" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlChars&#xA;Implements INullable, ISerializable, IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlChars sealed : System::Data::SqlTypes::INullable, System::Runtime::Serialization::ISerializable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type SqlChars = class&#xA;    interface INullable&#xA;    interface IXmlSerializable&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.#ctor(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (buffer As Char())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlChars(cli::array &lt;char&gt; ^ buffer);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlChars : char[] -&gt; System.Data.SqlTypes.SqlChars" Usage="new System.Data.SqlTypes.SqlChars buffer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.#ctor(System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SqlString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlChars(System::Data::SqlTypes::SqlString value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlChars : System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlChars" Usage="new System.Data.SqlTypes.SqlChars value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -201,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlChars.Buffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buffer As Char()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;char&gt; ^ Buffer { cli::array &lt;char&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buffer : char[]" Usage="System.Data.SqlTypes.SqlChars.Buffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -244,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlChars.GetXsdType schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlChars.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlChars.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -323,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlChars.Item(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(offset As Long) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[long] { char get(long offset); void set(long offset, char value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int64) : char with get, set" Usage="System.Data.SqlTypes.SqlChars.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -361,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlChars.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Data.SqlTypes.SqlChars.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -406,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlChars.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxLength { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLength : int64" Usage="System.Data.SqlTypes.SqlChars.MaxLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -449,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlChars.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Null As SqlChars" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::SqlTypes::SqlChars ^ Null { System::Data::SqlTypes::SqlChars ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Null : System.Data.SqlTypes.SqlChars" Usage="System.Data.SqlTypes.SqlChars.Null" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -492,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.op_Explicit(System.Data.SqlTypes.SqlChars)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As SqlChars) As SqlString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlChars ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlChars -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlChars.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -532,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlChars" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As SqlString) As SqlChars" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlChars ^(System::Data::SqlTypes::SqlString value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlChars" Usage="System.Data.SqlTypes.SqlChars.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -572,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.Read(System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read (offset As Long, buffer As Char(), offsetInBuffer As Integer, count As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long Read(long offset, cli::array &lt;char&gt; ^ buffer, int offsetInBuffer, int count);" />
+      <MemberSignature Language="F#" Value="member this.Read : int64 * char[] * int * int -&gt; int64" Usage="sqlChars.Read (offset, buffer, offsetInBuffer, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -629,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLength (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLength(long value);" />
+      <MemberSignature Language="F#" Value="member this.SetLength : int64 -&gt; unit" Usage="sqlChars.SetLength value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -673,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.SetNull" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetNull ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetNull();" />
+      <MemberSignature Language="F#" Value="member this.SetNull : unit -&gt; unit" Usage="sqlChars.SetNull " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -707,6 +722,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlChars.Storage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Storage As StorageState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlTypes::StorageState Storage { System::Data::SqlTypes::StorageState get(); };" />
+      <MemberSignature Language="F#" Value="member this.Storage : System.Data.SqlTypes.StorageState" Usage="System.Data.SqlTypes.SqlChars.Storage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -885,6 +901,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.ToSqlString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlString () As SqlString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString ToSqlString();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlString : unit -&gt; System.Data.SqlTypes.SqlString" Usage="sqlChars.ToSqlString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -920,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlChars.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Char()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;char&gt; ^ Value { cli::array &lt;char&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : char[]" Usage="System.Data.SqlTypes.SqlChars.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -961,6 +979,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlChars.Write(System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (offset As Long, buffer As Char(), offsetInBuffer As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(long offset, cli::array &lt;char&gt; ^ buffer, int offsetInBuffer, int count);" />
+      <MemberSignature Language="F#" Value="member this.Write : int64 * char[] * int * int -&gt; unit" Usage="sqlChars.Write (offset, buffer, offsetInBuffer, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

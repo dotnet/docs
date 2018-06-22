@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbColumn" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbColumn abstract" />
+  <TypeSignature Language="F#" Value="type DbColumn = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.AllowDBNull" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowDBNull As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; AllowDBNull {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowDBNull : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.AllowDBNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.BaseCatalogName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseCatalogName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ BaseCatalogName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseCatalogName : string with get, set" Usage="System.Data.Common.DbColumn.BaseCatalogName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.BaseColumnName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseColumnName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ BaseColumnName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseColumnName : string with get, set" Usage="System.Data.Common.DbColumn.BaseColumnName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.BaseSchemaName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseSchemaName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ BaseSchemaName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseSchemaName : string with get, set" Usage="System.Data.Common.DbColumn.BaseSchemaName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.BaseServerName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseServerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ BaseServerName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseServerName : string with get, set" Usage="System.Data.Common.DbColumn.BaseServerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.BaseTableName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseTableName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ BaseTableName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseTableName : string with get, set" Usage="System.Data.Common.DbColumn.BaseTableName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.ColumnName" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ ColumnName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnName : string with get, set" Usage="System.Data.Common.DbColumn.ColumnName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.ColumnOrdinal" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnOrdinal As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;int&gt; ColumnOrdinal {  public:&#xA;Nullable&lt;int&gt; get(); protected:&#xA; void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnOrdinal : Nullable&lt;int&gt; with get, set" Usage="System.Data.Common.DbColumn.ColumnOrdinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.ColumnSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnSize As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;int&gt; ColumnSize {  public:&#xA;Nullable&lt;int&gt; get(); protected:&#xA; void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnSize : Nullable&lt;int&gt; with get, set" Usage="System.Data.Common.DbColumn.ColumnSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -335,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:  property Type ^ DataType {  public:&#xA;Type ^ get(); protected:&#xA; void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : Type with get, set" Usage="System.Data.Common.DbColumn.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -365,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.DataTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property DataTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ DataTypeName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataTypeName : string with get, set" Usage="System.Data.Common.DbColumn.DataTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -395,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsAliased" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAliased As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsAliased {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAliased : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsAliased" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -425,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsAutoIncrement" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAutoIncrement As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsAutoIncrement {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAutoIncrement : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsAutoIncrement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -455,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property IsExpression As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsExpression {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsExpression : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -485,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsHidden" />
       <MemberSignature Language="VB.NET" Value="Public Property IsHidden As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsHidden {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsHidden : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsHidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -515,6 +531,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Property IsIdentity As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsIdentity {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsIdentity : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -545,6 +562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsKey" />
       <MemberSignature Language="VB.NET" Value="Public Property IsKey As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsKey {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsKey : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -575,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsLong" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLong As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsLong {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLong : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsLong" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -605,6 +624,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsReadOnly {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -635,6 +655,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.IsUnique" />
       <MemberSignature Language="VB.NET" Value="Public Property IsUnique As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;bool&gt; IsUnique {  public:&#xA;Nullable&lt;bool&gt; get(); protected:&#xA; void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsUnique : Nullable&lt;bool&gt; with get, set" Usage="System.Data.Common.DbColumn.IsUnique" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -665,6 +686,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(property As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ property); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.Common.DbColumn.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -699,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.NumericPrecision" />
       <MemberSignature Language="VB.NET" Value="Public Property NumericPrecision As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;int&gt; NumericPrecision {  public:&#xA;Nullable&lt;int&gt; get(); protected:&#xA; void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.NumericPrecision : Nullable&lt;int&gt; with get, set" Usage="System.Data.Common.DbColumn.NumericPrecision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -729,6 +752,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.NumericScale" />
       <MemberSignature Language="VB.NET" Value="Public Property NumericScale As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:  property Nullable&lt;int&gt; NumericScale {  public:&#xA;Nullable&lt;int&gt; get(); protected:&#xA; void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.NumericScale : Nullable&lt;int&gt; with get, set" Usage="System.Data.Common.DbColumn.NumericScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -759,6 +783,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbColumn.UdtAssemblyQualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public Property UdtAssemblyQualifiedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ UdtAssemblyQualifiedName {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UdtAssemblyQualifiedName : string with get, set" Usage="System.Data.Common.DbColumn.UdtAssemblyQualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

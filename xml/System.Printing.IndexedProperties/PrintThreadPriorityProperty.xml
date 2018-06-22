@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintThreadPriorityProperty&#xA;Inherits PrintProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintThreadPriorityProperty sealed : System::Printing::IndexedProperties::PrintProperty" />
+  <TypeSignature Language="F#" Value="type PrintThreadPriorityProperty = class&#xA;    inherit PrintProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintThreadPriorityProperty(System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintThreadPriorityProperty : string -&gt; System.Printing.IndexedProperties.PrintThreadPriorityProperty" Usage="new System.Printing.IndexedProperties.PrintThreadPriorityProperty attributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String, attributeValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintThreadPriorityProperty(System::String ^ attributeName, System::Object ^ attributeValue);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintThreadPriorityProperty : string * obj -&gt; System.Printing.IndexedProperties.PrintThreadPriorityProperty" Usage="new System.Printing.IndexedProperties.PrintThreadPriorityProperty (attributeName, attributeValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printThreadPriorityProperty.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.op_Implicit(System.Printing.IndexedProperties.PrintThreadPriorityProperty)~System.Threading.ThreadPriority" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintThreadPriorityProperty) As ThreadPriority" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Threading::ThreadPriority(System::Printing::IndexedProperties::PrintThreadPriorityProperty ^ attribRef);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintThreadPriorityProperty -&gt; System.Threading.ThreadPriority" Usage="System.Printing.IndexedProperties.PrintThreadPriorityProperty.op_Implicit attribRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -144,36 +149,13 @@
         <ReturnType>System.Object</ReturnType>
       </Docs>
     </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.Threading.ThreadPriority (System.Printing.IndexedProperties.PrintThreadPriorityProperty attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Threading.ThreadPriority op_Implicit(class System.Printing.IndexedProperties.PrintThreadPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.op_Implicit(System.Printing.IndexedProperties.PrintThreadPriorityProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Threading.ThreadPriority" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintThreadPriorityProperty) As ThreadPriority" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Threading::ThreadPriority(System::Printing::IndexedProperties::PrintThreadPriorityProperty ^ attribRef);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.ThreadPriority</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintThreadPriorityProperty" />
-      </Parameters>
-      <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintThreadPriorityProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Printing.IndexedProperties.PrintThreadPriorityProperty.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

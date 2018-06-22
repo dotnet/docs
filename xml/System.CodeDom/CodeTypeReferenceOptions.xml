@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeReferenceOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum CodeTypeReferenceOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class CodeTypeReferenceOptions" />
+  <TypeSignature Language="F#" Value="type CodeTypeReferenceOptions = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeTypeReferenceOptions.GenericTypeParameter" />
       <MemberSignature Language="VB.NET" Value="GenericTypeParameter" />
       <MemberSignature Language="C++ CLI" Value="GenericTypeParameter" />
+      <MemberSignature Language="F#" Value="GenericTypeParameter = 2" Usage="System.CodeDom.CodeTypeReferenceOptions.GenericTypeParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeTypeReferenceOptions.GlobalReference" />
       <MemberSignature Language="VB.NET" Value="GlobalReference" />
       <MemberSignature Language="C++ CLI" Value="GlobalReference" />
+      <MemberSignature Language="F#" Value="GlobalReference = 1" Usage="System.CodeDom.CodeTypeReferenceOptions.GlobalReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

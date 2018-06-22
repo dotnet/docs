@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IStateFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStateFormatter" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStateFormatter" />
+  <TypeSignature Language="F#" Value="type IStateFormatter = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IStateFormatter.Deserialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializedState As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::String ^ serializedState);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : string -&gt; obj" Usage="iStateFormatter.Deserialize serializedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IStateFormatter.Serialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Serialize (state As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Serialize(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : obj -&gt; string" Usage="iStateFormatter.Serialize state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

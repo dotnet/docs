@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ClientIDMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ClientIDMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ClientIDMode" />
+  <TypeSignature Language="F#" Value="type ClientIDMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ClientIDMode.AutoID" />
       <MemberSignature Language="VB.NET" Value="AutoID" />
       <MemberSignature Language="C++ CLI" Value="AutoID" />
+      <MemberSignature Language="F#" Value="AutoID = 1" Usage="System.Web.UI.ClientIDMode.AutoID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ClientIDMode.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 0" Usage="System.Web.UI.ClientIDMode.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ClientIDMode.Predictable" />
       <MemberSignature Language="VB.NET" Value="Predictable" />
       <MemberSignature Language="C++ CLI" Value="Predictable" />
+      <MemberSignature Language="F#" Value="Predictable = 2" Usage="System.Web.UI.ClientIDMode.Predictable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ClientIDMode.Static" />
       <MemberSignature Language="VB.NET" Value="Static" />
       <MemberSignature Language="C++ CLI" Value="Static" />
+      <MemberSignature Language="F#" Value="Static = 3" Usage="System.Web.UI.ClientIDMode.Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

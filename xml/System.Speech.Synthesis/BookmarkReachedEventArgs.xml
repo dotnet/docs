@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.BookmarkReachedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class BookmarkReachedEventArgs&#xA;Inherits PromptEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class BookmarkReachedEventArgs : System::Speech::Synthesis::PromptEventArgs" />
+  <TypeSignature Language="F#" Value="type BookmarkReachedEventArgs = class&#xA;    inherit PromptEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.BookmarkReachedEventArgs.AudioPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioPosition As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AudioPosition { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.AudioPosition : TimeSpan" Usage="System.Speech.Synthesis.BookmarkReachedEventArgs.AudioPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -113,6 +115,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.BookmarkReachedEventArgs.Bookmark" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bookmark As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Bookmark { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bookmark : string" Usage="System.Speech.Synthesis.BookmarkReachedEventArgs.Bookmark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

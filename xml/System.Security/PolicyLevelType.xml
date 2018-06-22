@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.PolicyLevelType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PolicyLevelType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PolicyLevelType" />
+  <TypeSignature Language="F#" Value="type PolicyLevelType = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.PolicyLevelType.AppDomain" />
       <MemberSignature Language="VB.NET" Value="AppDomain" />
       <MemberSignature Language="C++ CLI" Value="AppDomain" />
+      <MemberSignature Language="F#" Value="AppDomain = 3" Usage="System.Security.PolicyLevelType.AppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.PolicyLevelType.Enterprise" />
       <MemberSignature Language="VB.NET" Value="Enterprise" />
       <MemberSignature Language="C++ CLI" Value="Enterprise" />
+      <MemberSignature Language="F#" Value="Enterprise = 2" Usage="System.Security.PolicyLevelType.Enterprise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.PolicyLevelType.Machine" />
       <MemberSignature Language="VB.NET" Value="Machine" />
       <MemberSignature Language="C++ CLI" Value="Machine" />
+      <MemberSignature Language="F#" Value="Machine = 1" Usage="System.Security.PolicyLevelType.Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.PolicyLevelType.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="C++ CLI" Value="User" />
+      <MemberSignature Language="F#" Value="User = 0" Usage="System.Security.PolicyLevelType.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

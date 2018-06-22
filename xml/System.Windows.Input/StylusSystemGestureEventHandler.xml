@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusSystemGestureEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StylusSystemGestureEventHandler(sender As Object, e As StylusSystemGestureEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StylusSystemGestureEventHandler(System::Object ^ sender, StylusSystemGestureEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StylusSystemGestureEventHandler = delegate of obj * StylusSystemGestureEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

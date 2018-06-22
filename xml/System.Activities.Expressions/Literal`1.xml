@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.Literal`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Literal(Of T)&#xA;Inherits CodeActivity(Of T)&#xA;Implements IValueSerializableExpression" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Literal sealed : System::Activities::CodeActivity&lt;T&gt;, System::Activities::XamlIntegration::IValueSerializableExpression" />
+  <TypeSignature Language="F#" Value="type Literal&lt;'T&gt; = class&#xA;    inherit CodeActivity&lt;'T&gt;&#xA;    interface IValueSerializableExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Literal`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Literal(T value);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Expressions.Literal&lt;'T&gt; : 'T -&gt; System.Activities.Expressions.Literal&lt;'T&gt;" Usage="new System.Activities.Expressions.Literal&lt;'T&gt; value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Literal`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="literal.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Literal`1.CanConvertToString(System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanConvertToString (context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanConvertToString(System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; bool&#xA;override this.CanConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="literal.CanConvertToString context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.XamlIntegration.IValueSerializableExpression.CanConvertToString(System.Windows.Markup.IValueSerializerContext)</InterfaceMember>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Literal`1.ConvertToString(System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToString (context As IValueSerializerContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ConvertToString(System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; string&#xA;override this.ConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="literal.ConvertToString context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.XamlIntegration.IValueSerializableExpression.ConvertToString(System.Windows.Markup.IValueSerializerContext)</InterfaceMember>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Literal`1.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As T" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override T Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'T" Usage="literal.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Literal`1.ShouldSerializeValue" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeValue () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeValue();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeValue : unit -&gt; bool" Usage="literal.ShouldSerializeValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Literal`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="literal.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.Literal`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="System.Activities.Expressions.Literal&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

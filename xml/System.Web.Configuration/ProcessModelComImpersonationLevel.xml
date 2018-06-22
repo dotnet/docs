@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProcessModelComImpersonationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProcessModelComImpersonationLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProcessModelComImpersonationLevel" />
+  <TypeSignature Language="F#" Value="type ProcessModelComImpersonationLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComImpersonationLevel.Anonymous" />
       <MemberSignature Language="VB.NET" Value="Anonymous" />
       <MemberSignature Language="C++ CLI" Value="Anonymous" />
+      <MemberSignature Language="F#" Value="Anonymous = 1" Usage="System.Web.Configuration.ProcessModelComImpersonationLevel.Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComImpersonationLevel.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.Configuration.ProcessModelComImpersonationLevel.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComImpersonationLevel.Delegate" />
       <MemberSignature Language="VB.NET" Value="Delegate" />
       <MemberSignature Language="C++ CLI" Value="Delegate" />
+      <MemberSignature Language="F#" Value="Delegate = 2" Usage="System.Web.Configuration.ProcessModelComImpersonationLevel.Delegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComImpersonationLevel.Identify" />
       <MemberSignature Language="VB.NET" Value="Identify" />
       <MemberSignature Language="C++ CLI" Value="Identify" />
+      <MemberSignature Language="F#" Value="Identify = 3" Usage="System.Web.Configuration.ProcessModelComImpersonationLevel.Identify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComImpersonationLevel.Impersonate" />
       <MemberSignature Language="VB.NET" Value="Impersonate" />
       <MemberSignature Language="C++ CLI" Value="Impersonate" />
+      <MemberSignature Language="F#" Value="Impersonate = 4" Usage="System.Web.Configuration.ProcessModelComImpersonationLevel.Impersonate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CoordinateSpace" />
   <TypeSignature Language="VB.NET" Value="Public Enum CoordinateSpace" />
   <TypeSignature Language="C++ CLI" Value="public enum class CoordinateSpace" />
+  <TypeSignature Language="F#" Value="type CoordinateSpace = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CoordinateSpace.Device" />
       <MemberSignature Language="VB.NET" Value="Device" />
       <MemberSignature Language="C++ CLI" Value="Device" />
+      <MemberSignature Language="F#" Value="Device = 2" Usage="System.Drawing.Drawing2D.CoordinateSpace.Device" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CoordinateSpace.Page" />
       <MemberSignature Language="VB.NET" Value="Page" />
       <MemberSignature Language="C++ CLI" Value="Page" />
+      <MemberSignature Language="F#" Value="Page = 1" Usage="System.Drawing.Drawing2D.CoordinateSpace.Page" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CoordinateSpace.World" />
       <MemberSignature Language="VB.NET" Value="World" />
       <MemberSignature Language="C++ CLI" Value="World" />
+      <MemberSignature Language="F#" Value="World = 0" Usage="System.Drawing.Drawing2D.CoordinateSpace.World" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

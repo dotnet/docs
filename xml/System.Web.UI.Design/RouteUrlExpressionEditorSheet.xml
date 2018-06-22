@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.RouteUrlExpressionEditorSheet" />
   <TypeSignature Language="VB.NET" Value="Public Class RouteUrlExpressionEditorSheet&#xA;Inherits ExpressionEditorSheet" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteUrlExpressionEditorSheet : System::Web::UI::Design::ExpressionEditorSheet" />
+  <TypeSignature Language="F#" Value="type RouteUrlExpressionEditorSheet = class&#xA;    inherit ExpressionEditorSheet" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.RouteUrlExpressionEditorSheet.#ctor(System.String,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As String, serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteUrlExpressionEditorSheet(System::String ^ expression, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.RouteUrlExpressionEditorSheet : string * IServiceProvider -&gt; System.Web.UI.Design.RouteUrlExpressionEditorSheet" Usage="new System.Web.UI.Design.RouteUrlExpressionEditorSheet (expression, serviceProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.RouteUrlExpressionEditorSheet.GetExpression" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExpression () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetExpression();" />
+      <MemberSignature Language="F#" Value="override this.GetExpression : unit -&gt; string" Usage="routeUrlExpressionEditorSheet.GetExpression " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.RouteUrlExpressionEditorSheet.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Web.UI.Design.RouteUrlExpressionEditorSheet.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.RouteUrlExpressionEditorSheet.RouteName" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RouteName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteName : string with get, set" Usage="System.Web.UI.Design.RouteUrlExpressionEditorSheet.RouteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.RouteUrlExpressionEditorSheet.RouteValues" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteValues As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RouteValues { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteValues : string with get, set" Usage="System.Web.UI.Design.RouteUrlExpressionEditorSheet.RouteValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

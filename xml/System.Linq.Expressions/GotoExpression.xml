@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.GotoExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GotoExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class GotoExpression sealed : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type GotoExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.GotoExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="gotoExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.GotoExpression.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As GotoExpressionKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::GotoExpressionKind Kind { System::Linq::Expressions::GotoExpressionKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : System.Linq.Expressions.GotoExpressionKind" Usage="System.Linq.Expressions.GotoExpression.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.GotoExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.GotoExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.GotoExpression.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As LabelTarget" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::LabelTarget ^ Target { System::Linq::Expressions::LabelTarget ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Linq.Expressions.LabelTarget" Usage="System.Linq.Expressions.GotoExpression.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.GotoExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.GotoExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.GotoExpression.Update(System.Linq.Expressions.LabelTarget,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (target As LabelTarget, value As Expression) As GotoExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::GotoExpression ^ Update(System::Linq::Expressions::LabelTarget ^ target, System::Linq::Expressions::Expression ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.LabelTarget * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.GotoExpression" Usage="gotoExpression.Update (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.GotoExpression.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Value { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.GotoExpression.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

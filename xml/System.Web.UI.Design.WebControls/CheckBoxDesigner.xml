@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CheckBoxDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class CheckBoxDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class CheckBoxDesigner : System::Web::UI::Design::ControlDesigner" />
+  <TypeSignature Language="F#" Value="type CheckBoxDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="checkBoxDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

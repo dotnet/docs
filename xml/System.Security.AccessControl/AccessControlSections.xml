@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessControlSections" />
   <TypeSignature Language="VB.NET" Value="Public Enum AccessControlSections" />
   <TypeSignature Language="C++ CLI" Value="public enum class AccessControlSections" />
+  <TypeSignature Language="F#" Value="type AccessControlSections = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.Access" />
       <MemberSignature Language="VB.NET" Value="Access" />
       <MemberSignature Language="C++ CLI" Value="Access" />
+      <MemberSignature Language="F#" Value="Access = 2" Usage="System.Security.AccessControl.AccessControlSections.Access" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 15" Usage="System.Security.AccessControl.AccessControlSections.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.Audit" />
       <MemberSignature Language="VB.NET" Value="Audit" />
       <MemberSignature Language="C++ CLI" Value="Audit" />
+      <MemberSignature Language="F#" Value="Audit = 1" Usage="System.Security.AccessControl.AccessControlSections.Audit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.Group" />
       <MemberSignature Language="VB.NET" Value="Group" />
       <MemberSignature Language="C++ CLI" Value="Group" />
+      <MemberSignature Language="F#" Value="Group = 8" Usage="System.Security.AccessControl.AccessControlSections.Group" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.AccessControl.AccessControlSections.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.Owner" />
       <MemberSignature Language="VB.NET" Value="Owner" />
       <MemberSignature Language="C++ CLI" Value="Owner" />
+      <MemberSignature Language="F#" Value="Owner = 4" Usage="System.Security.AccessControl.AccessControlSections.Owner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

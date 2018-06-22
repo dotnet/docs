@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Graphics.DrawImageAbort" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function Graphics.DrawImageAbort(callbackdata As IntPtr) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public: delegate bool Graphics::DrawImageAbort(IntPtr callbackdata);" />
+  <TypeSignature Language="F#" Value="type Graphics.DrawImageAbort = delegate of nativeint -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class X509IssuerSerialKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509IssuerSerialKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type X509IssuerSerialKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509IssuerSerialKeyIdentifierClause(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause certificate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (issuerName As String, issuerSerialNumber As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509IssuerSerialKeyIdentifierClause(System::String ^ issuerName, System::String ^ issuerSerialNumber);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause : string * string -&gt; System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause (issuerName, issuerSerialNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerName : string" Usage="System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerSerialNumber As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerSerialNumber { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerSerialNumber : string" Usage="System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (certificate As X509Certificate2) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="x509IssuerSerialKeyIdentifierClause.Matches certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="x509IssuerSerialKeyIdentifierClause.Matches clause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (issuerName As String, issuerSerialNumber As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::String ^ issuerName, System::String ^ issuerSerialNumber);" />
+      <MemberSignature Language="F#" Value="override this.Matches : string * string -&gt; bool" Usage="x509IssuerSerialKeyIdentifierClause.Matches (issuerName, issuerSerialNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="x509IssuerSerialKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

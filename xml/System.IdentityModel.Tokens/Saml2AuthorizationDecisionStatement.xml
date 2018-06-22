@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2AuthorizationDecisionStatement&#xA;Inherits Saml2Statement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2AuthorizationDecisionStatement : System::IdentityModel::Tokens::Saml2Statement" />
+  <TypeSignature Language="F#" Value="type Saml2AuthorizationDecisionStatement = class&#xA;    inherit Saml2Statement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.#ctor(System.Uri,System.IdentityModel.Tokens.SamlAccessDecision)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resource As Uri, decision As SamlAccessDecision)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2AuthorizationDecisionStatement(Uri ^ resource, System::IdentityModel::Tokens::SamlAccessDecision decision);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement : Uri * System.IdentityModel.Tokens.SamlAccessDecision -&gt; System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" Usage="new System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement (resource, decision)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.#ctor(System.Uri,System.IdentityModel.Tokens.SamlAccessDecision,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.Saml2Action})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resource As Uri, decision As SamlAccessDecision, actions As IEnumerable(Of Saml2Action))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2AuthorizationDecisionStatement(Uri ^ resource, System::IdentityModel::Tokens::SamlAccessDecision decision, System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::Saml2Action ^&gt; ^ actions);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement : Uri * System.IdentityModel.Tokens.SamlAccessDecision * seq&lt;System.IdentityModel.Tokens.Saml2Action&gt; -&gt; System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" Usage="new System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement (resource, decision, actions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Actions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Actions As Collection(Of Saml2Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Action ^&gt; ^ Actions { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Action ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Actions : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Action&gt;" Usage="System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Actions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Decision" />
       <MemberSignature Language="VB.NET" Value="Public Property Decision As SamlAccessDecision" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SamlAccessDecision Decision { System::IdentityModel::Tokens::SamlAccessDecision get(); void set(System::IdentityModel::Tokens::SamlAccessDecision value); };" />
+      <MemberSignature Language="F#" Value="member this.Decision : System.IdentityModel.Tokens.SamlAccessDecision with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Decision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.EmptyResource" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EmptyResource As Uri " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Uri ^ EmptyResource;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EmptyResource : Uri" Usage="System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.EmptyResource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Evidence" />
       <MemberSignature Language="VB.NET" Value="Public Property Evidence As Saml2Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Evidence ^ Evidence { System::IdentityModel::Tokens::Saml2Evidence ^ get(); void set(System::IdentityModel::Tokens::Saml2Evidence ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Evidence : System.IdentityModel.Tokens.Saml2Evidence with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Evidence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Resource" />
       <MemberSignature Language="VB.NET" Value="Public Property Resource As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Resource { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Resource : Uri with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Resource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

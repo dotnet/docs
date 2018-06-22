@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.CustomExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomExpression&#xA;Inherits ParameterDataSourceExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomExpression : System::Web::UI::WebControls::Expressions::ParameterDataSourceExpression" />
+  <TypeSignature Language="F#" Value="type CustomExpression = class&#xA;    inherit ParameterDataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.CustomExpression.GetQueryable(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="customExpression.GetQueryable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Expressions.CustomExpression.Querying" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Querying As EventHandler(Of CustomExpressionEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::Expressions::CustomExpressionEventArgs ^&gt; ^ Querying;" />
+      <MemberSignature Language="F#" Value="member this.Querying : EventHandler&lt;System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs&gt; " Usage="member this.Querying : System.EventHandler&lt;System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

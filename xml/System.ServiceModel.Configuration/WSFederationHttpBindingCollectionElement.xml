@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSFederationHttpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WSFederationHttpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of WSFederationHttpBinding, WSFederationHttpBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSFederationHttpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::WSFederationHttpBinding ^, System::ServiceModel::Configuration::WSFederationHttpBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type WSFederationHttpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;WSFederationHttpBinding, WSFederationHttpBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

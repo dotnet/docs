@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.IPinnable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPinnable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPinnable" />
+  <TypeSignature Language="F#" Value="type IPinnable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.IPinnable.Pin(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Pin (elementIndex As Integer) As MemoryHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::MemoryHandle Pin(int elementIndex);" />
+      <MemberSignature Language="F#" Value="abstract member Pin : int -&gt; System.Buffers.MemoryHandle" Usage="iPinnable.Pin elementIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.IPinnable.Unpin" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unpin ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unpin();" />
+      <MemberSignature Language="F#" Value="abstract member Unpin : unit -&gt; unit" Usage="iPinnable.Unpin " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

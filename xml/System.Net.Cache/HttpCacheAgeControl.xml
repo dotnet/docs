@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.HttpCacheAgeControl" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpCacheAgeControl" />
   <TypeSignature Language="C++ CLI" Value="public enum class HttpCacheAgeControl" />
+  <TypeSignature Language="F#" Value="type HttpCacheAgeControl = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MaxAge" />
       <MemberSignature Language="VB.NET" Value="MaxAge" />
       <MemberSignature Language="C++ CLI" Value="MaxAge" />
+      <MemberSignature Language="F#" Value="MaxAge = 2" Usage="System.Net.Cache.HttpCacheAgeControl.MaxAge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale" />
       <MemberSignature Language="VB.NET" Value="MaxAgeAndMaxStale" />
       <MemberSignature Language="C++ CLI" Value="MaxAgeAndMaxStale" />
+      <MemberSignature Language="F#" Value="MaxAgeAndMaxStale = 6" Usage="System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh" />
       <MemberSignature Language="VB.NET" Value="MaxAgeAndMinFresh" />
       <MemberSignature Language="C++ CLI" Value="MaxAgeAndMinFresh" />
+      <MemberSignature Language="F#" Value="MaxAgeAndMinFresh = 3" Usage="System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MaxStale" />
       <MemberSignature Language="VB.NET" Value="MaxStale" />
       <MemberSignature Language="C++ CLI" Value="MaxStale" />
+      <MemberSignature Language="F#" Value="MaxStale = 4" Usage="System.Net.Cache.HttpCacheAgeControl.MaxStale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.MinFresh" />
       <MemberSignature Language="VB.NET" Value="MinFresh" />
       <MemberSignature Language="C++ CLI" Value="MinFresh" />
+      <MemberSignature Language="F#" Value="MinFresh = 1" Usage="System.Net.Cache.HttpCacheAgeControl.MinFresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpCacheAgeControl.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.Cache.HttpCacheAgeControl.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

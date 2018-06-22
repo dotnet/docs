@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ImeConversionModeValues" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImeConversionModeValues" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImeConversionModeValues" />
+  <TypeSignature Language="F#" Value="type ImeConversionModeValues = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Alphanumeric" />
       <MemberSignature Language="VB.NET" Value="Alphanumeric" />
       <MemberSignature Language="C++ CLI" Value="Alphanumeric" />
+      <MemberSignature Language="F#" Value="Alphanumeric = 512" Usage="System.Windows.Input.ImeConversionModeValues.Alphanumeric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.CharCode" />
       <MemberSignature Language="VB.NET" Value="CharCode" />
       <MemberSignature Language="C++ CLI" Value="CharCode" />
+      <MemberSignature Language="F#" Value="CharCode = 16" Usage="System.Windows.Input.ImeConversionModeValues.CharCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.DoNotCare" />
       <MemberSignature Language="VB.NET" Value="DoNotCare" />
       <MemberSignature Language="C++ CLI" Value="DoNotCare" />
+      <MemberSignature Language="F#" Value="DoNotCare = -2147483648" Usage="System.Windows.Input.ImeConversionModeValues.DoNotCare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Eudc" />
       <MemberSignature Language="VB.NET" Value="Eudc" />
       <MemberSignature Language="C++ CLI" Value="Eudc" />
+      <MemberSignature Language="F#" Value="Eudc = 64" Usage="System.Windows.Input.ImeConversionModeValues.Eudc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Fixed" />
       <MemberSignature Language="VB.NET" Value="Fixed" />
       <MemberSignature Language="C++ CLI" Value="Fixed" />
+      <MemberSignature Language="F#" Value="Fixed = 256" Usage="System.Windows.Input.ImeConversionModeValues.Fixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.FullShape" />
       <MemberSignature Language="VB.NET" Value="FullShape" />
       <MemberSignature Language="C++ CLI" Value="FullShape" />
+      <MemberSignature Language="F#" Value="FullShape = 4" Usage="System.Windows.Input.ImeConversionModeValues.FullShape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -142,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Katakana" />
       <MemberSignature Language="VB.NET" Value="Katakana" />
       <MemberSignature Language="C++ CLI" Value="Katakana" />
+      <MemberSignature Language="F#" Value="Katakana = 2" Usage="System.Windows.Input.ImeConversionModeValues.Katakana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -161,6 +169,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Native" />
       <MemberSignature Language="VB.NET" Value="Native" />
       <MemberSignature Language="C++ CLI" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 1" Usage="System.Windows.Input.ImeConversionModeValues.Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -180,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.NoConversion" />
       <MemberSignature Language="VB.NET" Value="NoConversion" />
       <MemberSignature Language="C++ CLI" Value="NoConversion" />
+      <MemberSignature Language="F#" Value="NoConversion = 32" Usage="System.Windows.Input.ImeConversionModeValues.NoConversion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +209,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Roman" />
       <MemberSignature Language="VB.NET" Value="Roman" />
       <MemberSignature Language="C++ CLI" Value="Roman" />
+      <MemberSignature Language="F#" Value="Roman = 8" Usage="System.Windows.Input.ImeConversionModeValues.Roman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -218,6 +229,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Symbol" />
       <MemberSignature Language="VB.NET" Value="Symbol" />
       <MemberSignature Language="C++ CLI" Value="Symbol" />
+      <MemberSignature Language="F#" Value="Symbol = 128" Usage="System.Windows.Input.ImeConversionModeValues.Symbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

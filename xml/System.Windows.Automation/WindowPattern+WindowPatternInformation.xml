@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowPattern.WindowPatternInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure WindowPattern.WindowPatternInformation" />
   <TypeSignature Language="C++ CLI" Value="public: value class WindowPattern::WindowPatternInformation" />
+  <TypeSignature Language="F#" Value="type WindowPattern.WindowPatternInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMaximize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanMaximize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanMaximize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanMaximize : bool" Usage="System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMaximize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMinimize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanMinimize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanMinimize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanMinimize : bool" Usage="System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMinimize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.IsModal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsModal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsModal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsModal : bool" Usage="System.Windows.Automation.WindowPattern.WindowPatternInformation.IsModal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.IsTopmost" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTopmost As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTopmost { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTopmost : bool" Usage="System.Windows.Automation.WindowPattern.WindowPatternInformation.IsTopmost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowInteractionState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowInteractionState As WindowInteractionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::WindowInteractionState WindowInteractionState { System::Windows::Automation::WindowInteractionState get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowInteractionState : System.Windows.Automation.WindowInteractionState" Usage="System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowInteractionState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowVisualState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowVisualState As WindowVisualState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::WindowVisualState WindowVisualState { System::Windows::Automation::WindowVisualState get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowVisualState : System.Windows.Automation.WindowVisualState" Usage="System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowVisualState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

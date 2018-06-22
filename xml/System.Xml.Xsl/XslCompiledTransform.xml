@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XslCompiledTransform" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XslCompiledTransform" />
   <TypeSignature Language="C++ CLI" Value="public ref class XslCompiledTransform sealed" />
+  <TypeSignature Language="F#" Value="type XslCompiledTransform = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -125,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enableDebug As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XslCompiledTransform(bool enableDebug);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Xsl.XslCompiledTransform : bool -&gt; System.Xml.Xsl.XslCompiledTransform" Usage="new System.Xml.Xsl.XslCompiledTransform enableDebug" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -180,6 +182,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.CodeDom.Compiler.CompilerErrorCollection CompileToType(class System.Xml.XmlReader stylesheet, class System.Xml.Xsl.XsltSettings settings, class System.Xml.XmlResolver stylesheetResolver, bool debug, class System.Reflection.Emit.TypeBuilder typeBuilder, string scriptAssemblyPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.CompileToType(System.Xml.XmlReader,System.Xml.Xsl.XsltSettings,System.Xml.XmlResolver,System.Boolean,System.Reflection.Emit.TypeBuilder,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::Compiler::CompilerErrorCollection ^ CompileToType(System::Xml::XmlReader ^ stylesheet, System::Xml::Xsl::XsltSettings ^ settings, System::Xml::XmlResolver ^ stylesheetResolver, bool debug, System::Reflection::Emit::TypeBuilder ^ typeBuilder, System::String ^ scriptAssemblyPath);" />
+      <MemberSignature Language="F#" Value="static member CompileToType : System.Xml.XmlReader * System.Xml.Xsl.XsltSettings * System.Xml.XmlResolver * bool * System.Reflection.Emit.TypeBuilder * string -&gt; System.CodeDom.Compiler.CompilerErrorCollection" Usage="System.Xml.Xsl.XslCompiledTransform.CompileToType (stylesheet, settings, stylesheetResolver, debug, typeBuilder, scriptAssemblyPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -242,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (stylesheetUri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ stylesheetUri);" />
+      <MemberSignature Language="F#" Value="member this.Load : string -&gt; unit" Usage="xslCompiledTransform.Load stylesheetUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -314,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Load(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (compiledStylesheet As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(Type ^ compiledStylesheet);" />
+      <MemberSignature Language="F#" Value="member this.Load : Type -&gt; unit" Usage="xslCompiledTransform.Load compiledStylesheet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -373,6 +378,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Load(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (stylesheet As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Xml::XmlReader ^ stylesheet);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Xml.XmlReader -&gt; unit" Usage="xslCompiledTransform.Load stylesheet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -435,6 +441,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Load(System.Xml.XPath.IXPathNavigable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (stylesheet As IXPathNavigable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Xml::XPath::IXPathNavigable ^ stylesheet);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Xml.XPath.IXPathNavigable -&gt; unit" Usage="xslCompiledTransform.Load stylesheet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -495,6 +502,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Load(System.Reflection.MethodInfo,System.Byte[],System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (executeMethod As MethodInfo, queryData As Byte(), earlyBoundTypes As Type())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Reflection::MethodInfo ^ executeMethod, cli::array &lt;System::Byte&gt; ^ queryData, cli::array &lt;Type ^&gt; ^ earlyBoundTypes);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Reflection.MethodInfo * byte[] * Type[] -&gt; unit" Usage="xslCompiledTransform.Load (executeMethod, queryData, earlyBoundTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -572,6 +580,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Load(System.String,System.Xml.Xsl.XsltSettings,System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (stylesheetUri As String, settings As XsltSettings, stylesheetResolver As XmlResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ stylesheetUri, System::Xml::Xsl::XsltSettings ^ settings, System::Xml::XmlResolver ^ stylesheetResolver);" />
+      <MemberSignature Language="F#" Value="member this.Load : string * System.Xml.Xsl.XsltSettings * System.Xml.XmlResolver -&gt; unit" Usage="xslCompiledTransform.Load (stylesheetUri, settings, stylesheetResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -638,6 +647,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Load(System.Xml.XmlReader,System.Xml.Xsl.XsltSettings,System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (stylesheet As XmlReader, settings As XsltSettings, stylesheetResolver As XmlResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Xml::XmlReader ^ stylesheet, System::Xml::Xsl::XsltSettings ^ settings, System::Xml::XmlResolver ^ stylesheetResolver);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Xml.XmlReader * System.Xml.Xsl.XsltSettings * System.Xml.XmlResolver -&gt; unit" Usage="xslCompiledTransform.Load (stylesheet, settings, stylesheetResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -694,6 +704,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Load(System.Xml.XPath.IXPathNavigable,System.Xml.Xsl.XsltSettings,System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (stylesheet As IXPathNavigable, settings As XsltSettings, stylesheetResolver As XmlResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Xml::XPath::IXPathNavigable ^ stylesheet, System::Xml::Xsl::XsltSettings ^ settings, System::Xml::XmlResolver ^ stylesheetResolver);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Xml.XPath.IXPathNavigable * System.Xml.Xsl.XsltSettings * System.Xml.XmlResolver -&gt; unit" Usage="xslCompiledTransform.Load (stylesheet, settings, stylesheetResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -748,6 +759,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XslCompiledTransform.OutputSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputSettings As XmlWriterSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlWriterSettings ^ OutputSettings { System::Xml::XmlWriterSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputSettings : System.Xml.XmlWriterSettings" Usage="System.Xml.Xsl.XslCompiledTransform.OutputSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -803,6 +815,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XslCompiledTransform.TemporaryFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemporaryFiles As TempFileCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::TempFileCollection ^ TemporaryFiles { System::CodeDom::Compiler::TempFileCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemporaryFiles : System.CodeDom.Compiler.TempFileCollection" Usage="System.Xml.Xsl.XslCompiledTransform.TemporaryFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -861,6 +874,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (inputUri As String, resultsFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::String ^ inputUri, System::String ^ resultsFile);" />
+      <MemberSignature Language="F#" Value="member this.Transform : string * string -&gt; unit" Usage="xslCompiledTransform.Transform (inputUri, resultsFile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -935,6 +949,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.String,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (inputUri As String, results As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::String ^ inputUri, System::Xml::XmlWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : string * System.Xml.XmlWriter -&gt; unit" Usage="xslCompiledTransform.Transform (inputUri, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1002,6 +1017,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XmlReader,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As XmlReader, results As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XmlReader ^ input, System::Xml::XmlWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XmlReader * System.Xml.XmlWriter -&gt; unit" Usage="xslCompiledTransform.Transform (input, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1056,6 +1072,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XPath.IXPathNavigable,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As IXPathNavigable, results As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XPath::IXPathNavigable ^ input, System::Xml::XmlWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XPath.IXPathNavigable * System.Xml.XmlWriter -&gt; unit" Usage="xslCompiledTransform.Transform (input, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1120,6 +1137,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.String,System.Xml.Xsl.XsltArgumentList,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (inputUri As String, arguments As XsltArgumentList, results As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::String ^ inputUri, System::Xml::Xsl::XsltArgumentList ^ arguments, System::IO::Stream ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : string * System.Xml.Xsl.XsltArgumentList * System.IO.Stream -&gt; unit" Usage="xslCompiledTransform.Transform (inputUri, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1177,6 +1195,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.String,System.Xml.Xsl.XsltArgumentList,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (inputUri As String, arguments As XsltArgumentList, results As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::String ^ inputUri, System::Xml::Xsl::XsltArgumentList ^ arguments, System::IO::TextWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : string * System.Xml.Xsl.XsltArgumentList * System.IO.TextWriter -&gt; unit" Usage="xslCompiledTransform.Transform (inputUri, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1242,6 +1261,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.String,System.Xml.Xsl.XsltArgumentList,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (inputUri As String, arguments As XsltArgumentList, results As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::String ^ inputUri, System::Xml::Xsl::XsltArgumentList ^ arguments, System::Xml::XmlWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : string * System.Xml.Xsl.XsltArgumentList * System.Xml.XmlWriter -&gt; unit" Usage="xslCompiledTransform.Transform (inputUri, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1319,6 +1339,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XmlReader,System.Xml.Xsl.XsltArgumentList,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As XmlReader, arguments As XsltArgumentList, results As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XmlReader ^ input, System::Xml::Xsl::XsltArgumentList ^ arguments, System::IO::Stream ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XmlReader * System.Xml.Xsl.XsltArgumentList * System.IO.Stream -&gt; unit" Usage="xslCompiledTransform.Transform (input, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1365,6 +1386,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XmlReader,System.Xml.Xsl.XsltArgumentList,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As XmlReader, arguments As XsltArgumentList, results As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XmlReader ^ input, System::Xml::Xsl::XsltArgumentList ^ arguments, System::IO::TextWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XmlReader * System.Xml.Xsl.XsltArgumentList * System.IO.TextWriter -&gt; unit" Usage="xslCompiledTransform.Transform (input, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1411,6 +1433,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XmlReader,System.Xml.Xsl.XsltArgumentList,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As XmlReader, arguments As XsltArgumentList, results As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XmlReader ^ input, System::Xml::Xsl::XsltArgumentList ^ arguments, System::Xml::XmlWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XmlReader * System.Xml.Xsl.XsltArgumentList * System.Xml.XmlWriter -&gt; unit" Usage="xslCompiledTransform.Transform (input, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1459,6 +1482,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XPath.IXPathNavigable,System.Xml.Xsl.XsltArgumentList,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As IXPathNavigable, arguments As XsltArgumentList, results As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XPath::IXPathNavigable ^ input, System::Xml::Xsl::XsltArgumentList ^ arguments, System::IO::Stream ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XPath.IXPathNavigable * System.Xml.Xsl.XsltArgumentList * System.IO.Stream -&gt; unit" Usage="xslCompiledTransform.Transform (input, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1523,6 +1547,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XPath.IXPathNavigable,System.Xml.Xsl.XsltArgumentList,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As IXPathNavigable, arguments As XsltArgumentList, results As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XPath::IXPathNavigable ^ input, System::Xml::Xsl::XsltArgumentList ^ arguments, System::IO::TextWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XPath.IXPathNavigable * System.Xml.Xsl.XsltArgumentList * System.IO.TextWriter -&gt; unit" Usage="xslCompiledTransform.Transform (input, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1579,6 +1604,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XPath.IXPathNavigable,System.Xml.Xsl.XsltArgumentList,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As IXPathNavigable, arguments As XsltArgumentList, results As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XPath::IXPathNavigable ^ input, System::Xml::Xsl::XsltArgumentList ^ arguments, System::Xml::XmlWriter ^ results);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XPath.IXPathNavigable * System.Xml.Xsl.XsltArgumentList * System.Xml.XmlWriter -&gt; unit" Usage="xslCompiledTransform.Transform (input, arguments, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1637,6 +1663,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XmlReader,System.Xml.Xsl.XsltArgumentList,System.Xml.XmlWriter,System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As XmlReader, arguments As XsltArgumentList, results As XmlWriter, documentResolver As XmlResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XmlReader ^ input, System::Xml::Xsl::XsltArgumentList ^ arguments, System::Xml::XmlWriter ^ results, System::Xml::XmlResolver ^ documentResolver);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XmlReader * System.Xml.Xsl.XsltArgumentList * System.Xml.XmlWriter * System.Xml.XmlResolver -&gt; unit" Usage="xslCompiledTransform.Transform (input, arguments, results, documentResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1690,6 +1717,7 @@ xslt.Load(typeof(bookOrders));
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.Xml.XPath.IXPathNavigable,System.Xml.Xsl.XsltArgumentList,System.Xml.XmlWriter,System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (input As IXPathNavigable, arguments As XsltArgumentList, results As XmlWriter, documentResolver As XmlResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Xml::XPath::IXPathNavigable ^ input, System::Xml::Xsl::XsltArgumentList ^ arguments, System::Xml::XmlWriter ^ results, System::Xml::XmlResolver ^ documentResolver);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Xml.XPath.IXPathNavigable * System.Xml.Xsl.XsltArgumentList * System.Xml.XmlWriter * System.Xml.XmlResolver -&gt; unit" Usage="xslCompiledTransform.Transform (input, arguments, results, documentResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

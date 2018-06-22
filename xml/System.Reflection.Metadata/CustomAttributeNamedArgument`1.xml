@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.CustomAttributeNamedArgument`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure CustomAttributeNamedArgument(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public value class CustomAttributeNamedArgument" />
+  <TypeSignature Language="F#" Value="type CustomAttributeNamedArgument&lt;'ype&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.CustomAttributeNamedArgument`1.#ctor(System.String,System.Reflection.Metadata.CustomAttributeNamedArgumentKind,`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, kind As CustomAttributeNamedArgumentKind, type As TType, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeNamedArgument(System::String ^ name, System::Reflection::Metadata::CustomAttributeNamedArgumentKind kind, TType type, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.CustomAttributeNamedArgument&lt;'ype&gt; : string * System.Reflection.Metadata.CustomAttributeNamedArgumentKind * 'ype * obj -&gt; System.Reflection.Metadata.CustomAttributeNamedArgument&lt;'ype&gt;" Usage="new System.Reflection.Metadata.CustomAttributeNamedArgument&lt;'ype&gt; (name, kind, type, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeNamedArgument`1.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As CustomAttributeNamedArgumentKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::CustomAttributeNamedArgumentKind Kind { System::Reflection::Metadata::CustomAttributeNamedArgumentKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : System.Reflection.Metadata.CustomAttributeNamedArgumentKind" Usage="System.Reflection.Metadata.CustomAttributeNamedArgument&lt;'ype&gt;.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeNamedArgument`1.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Metadata.CustomAttributeNamedArgument&lt;'ype&gt;.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeNamedArgument`1.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TType Type { TType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : 'ype" Usage="System.Reflection.Metadata.CustomAttributeNamedArgument&lt;'ype&gt;.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeNamedArgument`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Reflection.Metadata.CustomAttributeNamedArgument&lt;'ype&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

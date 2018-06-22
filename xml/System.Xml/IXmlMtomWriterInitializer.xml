@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlMtomWriterInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXmlMtomWriterInitializer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXmlMtomWriterInitializer" />
+  <TypeSignature Language="F#" Value="type IXmlMtomWriterInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutput(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 maxSizeInBytes, string startInfo, string boundary, string startUri, bool writeMessageHeaders, bool ownsStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlMtomWriterInitializer.SetOutput(System.IO.Stream,System.Text.Encoding,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOutput(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, int maxSizeInBytes, System::String ^ startInfo, System::String ^ boundary, System::String ^ startUri, bool writeMessageHeaders, bool ownsStream);" />
+      <MemberSignature Language="F#" Value="abstract member SetOutput : System.IO.Stream * System.Text.Encoding * int * string * string * string * bool * bool -&gt; unit" Usage="iXmlMtomWriterInitializer.SetOutput (stream, encoding, maxSizeInBytes, startInfo, boundary, startUri, writeMessageHeaders, ownsStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

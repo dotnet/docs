@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceRoute" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceRoute&#xA;Inherits Route" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceRoute : System::Web::Routing::Route" />
+  <TypeSignature Language="F#" Value="type ServiceRoute = class&#xA;    inherit Route" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceRoute.#ctor(System.String,System.ServiceModel.Activation.ServiceHostFactoryBase,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (routePrefix As String, serviceHostFactory As ServiceHostFactoryBase, serviceType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceRoute(System::String ^ routePrefix, System::ServiceModel::Activation::ServiceHostFactoryBase ^ serviceHostFactory, Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activation.ServiceRoute : string * System.ServiceModel.Activation.ServiceHostFactoryBase * Type -&gt; System.ServiceModel.Activation.ServiceRoute" Usage="new System.ServiceModel.Activation.ServiceRoute (routePrefix, serviceHostFactory, serviceType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>

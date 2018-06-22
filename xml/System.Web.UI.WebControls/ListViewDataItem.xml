@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDataItem" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewDataItem&#xA;Inherits ListViewItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewDataItem : System::Web::UI::WebControls::ListViewItem" />
+  <TypeSignature Language="F#" Value="type ListViewDataItem = class&#xA;    inherit ListViewItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDataItem.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataItemIndex As Integer, displayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewDataItem(int dataItemIndex, int displayIndex);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewDataItem : int * int -&gt; System.Web.UI.WebControls.ListViewDataItem" Usage="new System.Web.UI.WebControls.ListViewDataItem (dataItemIndex, displayIndex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataItem { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj with get, set" Usage="System.Web.UI.WebControls.ListViewDataItem.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DataItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DataItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItemIndex : int" Usage="System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DisplayIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DisplayIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayIndex : int" Usage="System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDataItem.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="listViewDataItem.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

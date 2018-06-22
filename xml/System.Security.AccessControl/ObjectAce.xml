@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ObjectAce" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectAce&#xA;Inherits QualifiedAce" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectAce sealed : System::Security::AccessControl::QualifiedAce" />
+  <TypeSignature Language="F#" Value="type ObjectAce = class&#xA;    inherit QualifiedAce" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.AccessControl.AceFlags aceFlags, valuetype System.Security.AccessControl.AceQualifier qualifier, int32 accessMask, class System.Security.Principal.SecurityIdentifier sid, valuetype System.Security.AccessControl.ObjectAceFlags flags, valuetype System.Guid type, valuetype System.Guid inheritedType, bool isCallback, unsigned int8[] opaque) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.ObjectAce.#ctor(System.Security.AccessControl.AceFlags,System.Security.AccessControl.AceQualifier,System.Int32,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid,System.Boolean,System.Byte[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectAce(System::Security::AccessControl::AceFlags aceFlags, System::Security::AccessControl::AceQualifier qualifier, int accessMask, System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAceFlags flags, Guid type, Guid inheritedType, bool isCallback, cli::array &lt;System::Byte&gt; ^ opaque);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.ObjectAce : System.Security.AccessControl.AceFlags * System.Security.AccessControl.AceQualifier * int * System.Security.Principal.SecurityIdentifier * System.Security.AccessControl.ObjectAceFlags * Guid * Guid * bool * byte[] -&gt; System.Security.AccessControl.ObjectAce" Usage="new System.Security.AccessControl.ObjectAce (aceFlags, qualifier, accessMask, sid, flags, type, inheritedType, isCallback, opaque)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAce.BinaryLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BinaryLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BinaryLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinaryLength : int" Usage="System.Security.AccessControl.ObjectAce.BinaryLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.ObjectAce.GetBinaryForm(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetBinaryForm (binaryForm As Byte(), offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
+      <MemberSignature Language="F#" Value="override this.GetBinaryForm : byte[] * int -&gt; unit" Usage="objectAce.GetBinaryForm (binaryForm, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAce.InheritedObjectAceType" />
       <MemberSignature Language="VB.NET" Value="Public Property InheritedObjectAceType As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InheritedObjectAceType { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.InheritedObjectAceType : Guid with get, set" Usage="System.Security.AccessControl.ObjectAce.InheritedObjectAceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.ObjectAce.MaxOpaqueLength(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MaxOpaqueLength (isCallback As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MaxOpaqueLength(bool isCallback);" />
+      <MemberSignature Language="F#" Value="static member MaxOpaqueLength : bool -&gt; int" Usage="System.Security.AccessControl.ObjectAce.MaxOpaqueLength isCallback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAce.ObjectAceFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property ObjectAceFlags As ObjectAceFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::ObjectAceFlags ObjectAceFlags { System::Security::AccessControl::ObjectAceFlags get(); void set(System::Security::AccessControl::ObjectAceFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectAceFlags : System.Security.AccessControl.ObjectAceFlags with get, set" Usage="System.Security.AccessControl.ObjectAce.ObjectAceFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAce.ObjectAceType" />
       <MemberSignature Language="VB.NET" Value="Public Property ObjectAceType As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ObjectAceType { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectAceType : Guid with get, set" Usage="System.Security.AccessControl.ObjectAce.ObjectAceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

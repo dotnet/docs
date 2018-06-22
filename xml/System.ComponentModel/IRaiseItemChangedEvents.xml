@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IRaiseItemChangedEvents" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRaiseItemChangedEvents" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRaiseItemChangedEvents" />
+  <TypeSignature Language="F#" Value="type IRaiseItemChangedEvents = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RaisesItemChangedEvents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RaisesItemChangedEvents { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RaisesItemChangedEvents : bool" Usage="System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

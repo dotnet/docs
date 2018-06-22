@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.StreamInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class StreamInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamInfo" />
+  <TypeSignature Language="F#" Value="type StreamInfo = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.CompressionOption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompressionOption As CompressionOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::CompressionOption CompressionOption { System::IO::Packaging::CompressionOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompressionOption : System.IO.Packaging.CompressionOption" Usage="System.IO.Packaging.StreamInfo.CompressionOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.EncryptionOption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptionOption As EncryptionOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::EncryptionOption EncryptionOption { System::IO::Packaging::EncryptionOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionOption : System.IO.Packaging.EncryptionOption" Usage="System.IO.Packaging.StreamInfo.EncryptionOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream();" />
+      <MemberSignature Language="F#" Value="member this.GetStream : unit -&gt; System.IO.Stream" Usage="streamInfo.GetStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStream (mode As FileMode) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream(System::IO::FileMode mode);" />
+      <MemberSignature Language="F#" Value="member this.GetStream : System.IO.FileMode -&gt; System.IO.Stream" Usage="streamInfo.GetStream mode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStream (mode As FileMode, access As FileAccess) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream(System::IO::FileMode mode, System::IO::FileAccess access);" />
+      <MemberSignature Language="F#" Value="member this.GetStream : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="streamInfo.GetStream (mode, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.Packaging.StreamInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

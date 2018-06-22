@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.XACTTRANSINFO" />
   <TypeSignature Language="VB.NET" Value="Public Structure XACTTRANSINFO" />
   <TypeSignature Language="C++ CLI" Value="public value class XACTTRANSINFO" />
+  <TypeSignature Language="F#" Value="type XACTTRANSINFO = struct" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfRMSupported" />
       <MemberSignature Language="VB.NET" Value="Public grfRMSupported As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfRMSupported;" />
+      <MemberSignature Language="F#" Value="val mutable grfRMSupported : int" Usage="System.EnterpriseServices.XACTTRANSINFO.grfRMSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfRMSupportedRetaining" />
       <MemberSignature Language="VB.NET" Value="Public grfRMSupportedRetaining As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfRMSupportedRetaining;" />
+      <MemberSignature Language="F#" Value="val mutable grfRMSupportedRetaining : int" Usage="System.EnterpriseServices.XACTTRANSINFO.grfRMSupportedRetaining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfTCSupported" />
       <MemberSignature Language="VB.NET" Value="Public grfTCSupported As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfTCSupported;" />
+      <MemberSignature Language="F#" Value="val mutable grfTCSupported : int" Usage="System.EnterpriseServices.XACTTRANSINFO.grfTCSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfTCSupportedRetaining" />
       <MemberSignature Language="VB.NET" Value="Public grfTCSupportedRetaining As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfTCSupportedRetaining;" />
+      <MemberSignature Language="F#" Value="val mutable grfTCSupportedRetaining : int" Usage="System.EnterpriseServices.XACTTRANSINFO.grfTCSupportedRetaining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.isoFlags" />
       <MemberSignature Language="VB.NET" Value="Public isoFlags As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int isoFlags;" />
+      <MemberSignature Language="F#" Value="val mutable isoFlags : int" Usage="System.EnterpriseServices.XACTTRANSINFO.isoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.isoLevel" />
       <MemberSignature Language="VB.NET" Value="Public isoLevel As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int isoLevel;" />
+      <MemberSignature Language="F#" Value="val mutable isoLevel : int" Usage="System.EnterpriseServices.XACTTRANSINFO.isoLevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.uow" />
       <MemberSignature Language="VB.NET" Value="Public uow As BOID " />
       <MemberSignature Language="C++ CLI" Value="public: System::EnterpriseServices::BOID uow;" />
+      <MemberSignature Language="F#" Value="val mutable uow : System.EnterpriseServices.BOID" Usage="System.EnterpriseServices.XACTTRANSINFO.uow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

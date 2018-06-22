@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IDispatchMessageInspector" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDispatchMessageInspector" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDispatchMessageInspector" />
+  <TypeSignature Language="F#" Value="type IDispatchMessageInspector = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AfterReceiveRequest(class System.ServiceModel.Channels.Message&amp; request, class System.ServiceModel.IClientChannel channel, class System.ServiceModel.InstanceContext instanceContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IDispatchMessageInspector.AfterReceiveRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel,System.ServiceModel.InstanceContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AfterReceiveRequest(System::ServiceModel::Channels::Message ^ % request, System::ServiceModel::IClientChannel ^ channel, System::ServiceModel::InstanceContext ^ instanceContext);" />
+      <MemberSignature Language="F#" Value="abstract member AfterReceiveRequest :  * System.ServiceModel.IClientChannel * System.ServiceModel.InstanceContext -&gt; obj" Usage="iDispatchMessageInspector.AfterReceiveRequest (request, channel, instanceContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IDispatchMessageInspector.BeforeSendReply(System.ServiceModel.Channels.Message@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeforeSendReply (ByRef reply As Message, correlationState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeforeSendReply(System::ServiceModel::Channels::Message ^ % reply, System::Object ^ correlationState);" />
+      <MemberSignature Language="F#" Value="abstract member BeforeSendReply :  * obj -&gt; unit" Usage="iDispatchMessageInspector.BeforeSendReply (reply, correlationState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

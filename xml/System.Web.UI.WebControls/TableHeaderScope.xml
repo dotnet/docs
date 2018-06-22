@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableHeaderScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum TableHeaderScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class TableHeaderScope" />
+  <TypeSignature Language="F#" Value="type TableHeaderScope = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.Column" />
       <MemberSignature Language="VB.NET" Value="Column" />
       <MemberSignature Language="C++ CLI" Value="Column" />
+      <MemberSignature Language="F#" Value="Column = 2" Usage="System.Web.UI.WebControls.TableHeaderScope.Column" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.WebControls.TableHeaderScope.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.Row" />
       <MemberSignature Language="VB.NET" Value="Row" />
       <MemberSignature Language="C++ CLI" Value="Row" />
+      <MemberSignature Language="F#" Value="Row = 1" Usage="System.Web.UI.WebControls.TableHeaderScope.Row" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

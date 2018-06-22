@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.RepeatBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Structure RepeatBehavior&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class RepeatBehavior : IFormattable" />
+  <TypeSignature Language="F#" Value="type RepeatBehavior = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (count As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RepeatBehavior(double count);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.RepeatBehavior : double -&gt; System.Windows.Media.Animation.RepeatBehavior" Usage="new System.Windows.Media.Animation.RepeatBehavior count" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (duration As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RepeatBehavior(TimeSpan duration);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.RepeatBehavior : TimeSpan -&gt; System.Windows.Media.Animation.RepeatBehavior" Usage="new System.Windows.Media.Animation.RepeatBehavior duration" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Count { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : double" Usage="System.Windows.Media.Animation.RepeatBehavior.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.Duration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.Duration : TimeSpan" Usage="System.Windows.Media.Animation.RepeatBehavior.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="repeatBehavior.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.Equals(System.Windows.Media.Animation.RepeatBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::Animation::RepeatBehavior repeatBehavior);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.Animation.RepeatBehavior -&gt; bool" Usage="repeatBehavior.Equals repeatBehavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.Equals(System.Windows.Media.Animation.RepeatBehavior,System.Windows.Media.Animation.RepeatBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (repeatBehavior1 As RepeatBehavior, repeatBehavior2 As RepeatBehavior) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Animation::RepeatBehavior repeatBehavior1, System::Windows::Media::Animation::RepeatBehavior repeatBehavior2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Media.Animation.RepeatBehavior * System.Windows.Media.Animation.RepeatBehavior -&gt; bool" Usage="System.Windows.Media.Animation.RepeatBehavior.Equals (repeatBehavior1, repeatBehavior2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.Forever" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Forever As RepeatBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Animation::RepeatBehavior Forever { System::Windows::Media::Animation::RepeatBehavior get(); };" />
+      <MemberSignature Language="F#" Value="member this.Forever : System.Windows.Media.Animation.RepeatBehavior" Usage="System.Windows.Media.Animation.RepeatBehavior.Forever" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="repeatBehavior.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -342,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.HasCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasCount As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasCount { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasCount : bool" Usage="System.Windows.Media.Animation.RepeatBehavior.HasCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -363,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.HasDuration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDuration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDuration { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasDuration : bool" Usage="System.Windows.Media.Animation.RepeatBehavior.HasDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -384,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.op_Equality(System.Windows.Media.Animation.RepeatBehavior,System.Windows.Media.Animation.RepeatBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (repeatBehavior1 As RepeatBehavior, repeatBehavior2 As RepeatBehavior) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Animation::RepeatBehavior repeatBehavior1, System::Windows::Media::Animation::RepeatBehavior repeatBehavior2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.Animation.RepeatBehavior * System.Windows.Media.Animation.RepeatBehavior -&gt; bool" Usage="repeatBehavior1 = repeatBehavior2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.op_Inequality(System.Windows.Media.Animation.RepeatBehavior,System.Windows.Media.Animation.RepeatBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (repeatBehavior1 As RepeatBehavior, repeatBehavior2 As RepeatBehavior) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Animation::RepeatBehavior repeatBehavior1, System::Windows::Media::Animation::RepeatBehavior repeatBehavior2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.Animation.RepeatBehavior * System.Windows.Media.Animation.RepeatBehavior -&gt; bool" Usage="System.Windows.Media.Animation.RepeatBehavior.op_Inequality (repeatBehavior1, repeatBehavior2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -484,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="repeatBehavior.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -505,6 +520,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (formatProvider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="repeatBehavior.ToString formatProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

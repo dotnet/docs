@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceContextEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceContextEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceContextEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type LinqDataSourceContextEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.#ctor(System.Web.UI.DataSourceOperation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operation As DataSourceOperation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceContextEventArgs(System::Web::UI::DataSourceOperation operation);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceContextEventArgs : System.Web.UI.DataSourceOperation -&gt; System.Web.UI.WebControls.LinqDataSourceContextEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceContextEventArgs operation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property ObjectInstance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectInstance { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectInstance : obj with get, set" Usage="System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.Operation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As DataSourceOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation Operation { System::Web::UI::DataSourceOperation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : System.Web.UI.DataSourceOperation" Usage="System.Web.UI.WebControls.LinqDataSourceContextEventArgs.Operation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

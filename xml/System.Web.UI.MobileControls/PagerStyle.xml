@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.PagerStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class PagerStyle&#xA;Inherits Style" />
   <TypeSignature Language="C++ CLI" Value="public ref class PagerStyle : System::Web::UI::MobileControls::Style" />
+  <TypeSignature Language="F#" Value="type PagerStyle = class&#xA;    inherit Style" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetNextPageText(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextPageText (currentPageIndex As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetNextPageText(int currentPageIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetNextPageText : int -&gt; string" Usage="pagerStyle.GetNextPageText currentPageIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetPageLabelText(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPageLabelText (currentPageIndex As Integer, pageCount As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPageLabelText(int currentPageIndex, int pageCount);" />
+      <MemberSignature Language="F#" Value="member this.GetPageLabelText : int * int -&gt; string" Usage="pagerStyle.GetPageLabelText (currentPageIndex, pageCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetPreviousPageText(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPreviousPageText (currentPageIndex As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPreviousPageText(int currentPageIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetPreviousPageText : int -&gt; string" Usage="pagerStyle.GetPreviousPageText currentPageIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property NextPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextPageText : string with get, set" Usage="System.Web.UI.MobileControls.PagerStyle.NextPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -222,6 +227,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.NextPageTextKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NextPageTextKey As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ NextPageTextKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NextPageTextKey : obj" Usage="System.Web.UI.MobileControls.PagerStyle.NextPageTextKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -243,6 +249,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property PageLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PageLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PageLabel : string with get, set" Usage="System.Web.UI.MobileControls.PagerStyle.PageLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -314,6 +321,7 @@ void Page_Load(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.PageLabelKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PageLabelKey As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ PageLabelKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PageLabelKey : obj" Usage="System.Web.UI.MobileControls.PagerStyle.PageLabelKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -335,6 +343,7 @@ void Page_Load(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviousPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousPageText : string with get, set" Usage="System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -398,6 +407,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.PreviousPageTextKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviousPageTextKey As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ PreviousPageTextKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviousPageTextKey : obj" Usage="System.Web.UI.MobileControls.PagerStyle.PreviousPageTextKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

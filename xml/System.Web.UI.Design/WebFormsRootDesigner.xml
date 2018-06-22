@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebFormsRootDesigner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebFormsRootDesigner&#xA;Implements IDesigner, IDesignerFilter, IDisposable, IRootDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebFormsRootDesigner abstract : IDisposable, System::ComponentModel::Design::IDesigner, System::ComponentModel::Design::IDesignerFilter, System::ComponentModel::Design::IRootDesigner" />
+  <TypeSignature Language="F#" Value="type WebFormsRootDesigner = class&#xA;    interface IRootDesigner&#xA;    interface IDesigner&#xA;    interface IDisposable&#xA;    interface IDesignerFilter" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.AddClientScriptToDocument(System.Web.UI.Design.ClientScriptItem)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddClientScriptToDocument (scriptItem As ClientScriptItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddClientScriptToDocument(System::Web::UI::Design::ClientScriptItem ^ scriptItem);" />
+      <MemberSignature Language="F#" Value="abstract member AddClientScriptToDocument : System.Web.UI.Design.ClientScriptItem -&gt; unit" Usage="webFormsRootDesigner.AddClientScriptToDocument scriptItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.AddControlToDocument(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Design.ControlLocation)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AddControlToDocument (newControl As Control, referenceControl As Control, location As ControlLocation) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ AddControlToDocument(System::Web::UI::Control ^ newControl, System::Web::UI::Control ^ referenceControl, System::Web::UI::Design::ControlLocation location);" />
+      <MemberSignature Language="F#" Value="abstract member AddControlToDocument : System.Web.UI.Control * System.Web.UI.Control * System.Web.UI.Design.ControlLocation -&gt; string" Usage="webFormsRootDesigner.AddControlToDocument (newControl, referenceControl, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.Component" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Component As IComponent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::IComponent ^ Component { System::ComponentModel::IComponent ^ get(); void set(System::ComponentModel::IComponent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Component : System.ComponentModel.IComponent with get, set" Usage="System.Web.UI.Design.WebFormsRootDesigner.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.CreateDesignerActionService(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDesignerActionService (serviceProvider As IServiceProvider) As DesignerActionService" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::Design::DesignerActionService ^ CreateDesignerActionService(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDesignerActionService : IServiceProvider -&gt; System.ComponentModel.Design.DesignerActionService&#xA;override this.CreateDesignerActionService : IServiceProvider -&gt; System.ComponentModel.Design.DesignerActionService" Usage="webFormsRootDesigner.CreateDesignerActionService serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.CreateUrlResolutionService" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateUrlResolutionService () As IUrlResolutionService" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::IUrlResolutionService ^ CreateUrlResolutionService();" />
+      <MemberSignature Language="F#" Value="abstract member CreateUrlResolutionService : unit -&gt; System.Web.UI.IUrlResolutionService&#xA;override this.CreateUrlResolutionService : unit -&gt; System.Web.UI.IUrlResolutionService" Usage="webFormsRootDesigner.CreateUrlResolutionService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.CurrentCulture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentCulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CurrentCulture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentCulture : System.Globalization.CultureInfo" Usage="System.Web.UI.Design.WebFormsRootDesigner.CurrentCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="webFormsRootDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.DocumentUrl" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DocumentUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DocumentUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentUrl : string" Usage="System.Web.UI.Design.WebFormsRootDesigner.DocumentUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!WebFormsRootDesigner ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="webFormsRootDesigner.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -290,6 +300,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateEmptyDesignTimeHtml(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.GenerateEmptyDesignTimeHtml(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GenerateEmptyDesignTimeHtml(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateEmptyDesignTimeHtml : System.Web.UI.Control -&gt; string&#xA;override this.GenerateEmptyDesignTimeHtml : System.Web.UI.Control -&gt; string" Usage="webFormsRootDesigner.GenerateEmptyDesignTimeHtml control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -320,6 +331,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateErrorDesignTimeHtml(class System.Web.UI.Control control, class System.Exception e, string errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.GenerateErrorDesignTimeHtml(System.Web.UI.Control,System.Exception,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GenerateErrorDesignTimeHtml(System::Web::UI::Control ^ control, Exception ^ e, System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateErrorDesignTimeHtml : System.Web.UI.Control * Exception * string -&gt; string&#xA;override this.GenerateErrorDesignTimeHtml : System.Web.UI.Control * Exception * string -&gt; string" Usage="webFormsRootDesigner.GenerateErrorDesignTimeHtml (control, e, errorMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -360,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.GetClientScriptsInDocument" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetClientScriptsInDocument () As ClientScriptItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::Design::ClientScriptItemCollection ^ GetClientScriptsInDocument();" />
+      <MemberSignature Language="F#" Value="abstract member GetClientScriptsInDocument : unit -&gt; System.Web.UI.Design.ClientScriptItemCollection" Usage="webFormsRootDesigner.GetClientScriptsInDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -380,6 +393,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void GetControlViewAndTag(class System.Web.UI.Control control, [out] class System.Web.UI.Design.IControlDesignerView&amp; view, [out] class System.Web.UI.Design.IControlDesignerTag&amp; tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.GetControlViewAndTag(System.Web.UI.Control,System.Web.UI.Design.IControlDesignerView@,System.Web.UI.Design.IControlDesignerTag@)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void GetControlViewAndTag(System::Web::UI::Control ^ control, [Runtime::InteropServices::Out] System::Web::UI::Design::IControlDesignerView ^ % view, [Runtime::InteropServices::Out] System::Web::UI::Design::IControlDesignerTag ^ % tag);" />
+      <MemberSignature Language="F#" Value="abstract member GetControlViewAndTag : System.Web.UI.Control *  *  -&gt; unit" Usage="webFormsRootDesigner.GetControlViewAndTag (control, view, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -407,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="webFormsRootDesigner.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -430,6 +445,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetView(valuetype System.ComponentModel.Design.ViewTechnology viewTechnology) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.GetView(System.ComponentModel.Design.ViewTechnology)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetView(System::ComponentModel::Design::ViewTechnology viewTechnology);" />
+      <MemberSignature Language="F#" Value="member this.GetView : System.ComponentModel.Design.ViewTechnology -&gt; obj" Usage="webFormsRootDesigner.GetView viewTechnology" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -454,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.ComponentModel.IComponent -&gt; unit&#xA;override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="webFormsRootDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -477,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.IsDesignerViewLocked" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDesignerViewLocked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDesignerViewLocked { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDesignerViewLocked : bool" Usage="System.Web.UI.Design.WebFormsRootDesigner.IsDesignerViewLocked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -498,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.IsLoading" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsLoading As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsLoading { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLoading : bool" Usage="System.Web.UI.Design.WebFormsRootDesigner.IsLoading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -519,6 +538,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.WebFormsRootDesigner.LoadComplete" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LoadComplete As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LoadComplete;" />
+      <MemberSignature Language="F#" Value="member this.LoadComplete : EventHandler " Usage="member this.LoadComplete : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -539,6 +559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.OnLoadComplete(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoadComplete (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoadComplete(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoadComplete : EventArgs -&gt; unit&#xA;override this.OnLoadComplete : EventArgs -&gt; unit" Usage="webFormsRootDesigner.OnLoadComplete e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -563,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.PostFilterAttributes(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostFilterAttributes (attributes As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterAttributes(System::Collections::IDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member PostFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="webFormsRootDesigner.PostFilterAttributes attributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -586,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.PostFilterEvents(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostFilterEvents (events As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterEvents(System::Collections::IDictionary ^ events);" />
+      <MemberSignature Language="F#" Value="abstract member PostFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="webFormsRootDesigner.PostFilterEvents events" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -609,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.PostFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member PostFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="webFormsRootDesigner.PostFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -632,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.PreFilterAttributes(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PreFilterAttributes (attributes As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterAttributes(System::Collections::IDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member PreFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="webFormsRootDesigner.PreFilterAttributes attributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -655,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.PreFilterEvents(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PreFilterEvents (events As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterEvents(System::Collections::IDictionary ^ events);" />
+      <MemberSignature Language="F#" Value="abstract member PreFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="webFormsRootDesigner.PreFilterEvents events" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -678,6 +704,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member PreFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="webFormsRootDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -701,6 +728,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.ReferenceManager" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReferenceManager As WebFormsReferenceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Web::UI::Design::WebFormsReferenceManager ^ ReferenceManager { System::Web::UI::Design::WebFormsReferenceManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceManager : System.Web.UI.Design.WebFormsReferenceManager" Usage="System.Web.UI.Design.WebFormsRootDesigner.ReferenceManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -721,6 +749,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.RemoveClientScriptFromDocument(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveClientScriptFromDocument (clientScriptId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveClientScriptFromDocument(System::String ^ clientScriptId);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveClientScriptFromDocument : string -&gt; unit" Usage="webFormsRootDesigner.RemoveClientScriptFromDocument clientScriptId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -744,6 +773,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveControlFromDocument(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.RemoveControlFromDocument(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveControlFromDocument(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveControlFromDocument : System.Web.UI.Control -&gt; unit" Usage="webFormsRootDesigner.RemoveControlFromDocument control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -767,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.ResolveUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveUrl (relativeUrl As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveUrl(System::String ^ relativeUrl);" />
+      <MemberSignature Language="F#" Value="member this.ResolveUrl : string -&gt; string" Usage="webFormsRootDesigner.ResolveUrl relativeUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -792,6 +823,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetControlID(class System.Web.UI.Control control, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsRootDesigner.SetControlID(System.Web.UI.Control,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetControlID(System::Web::UI::Control ^ control, System::String ^ id);" />
+      <MemberSignature Language="F#" Value="abstract member SetControlID : System.Web.UI.Control * string -&gt; unit&#xA;override this.SetControlID : System.Web.UI.Control * string -&gt; unit" Usage="webFormsRootDesigner.SetControlID (control, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -817,6 +849,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.SupportedTechnologies" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SupportedTechnologies As ViewTechnology()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedTechnologies : System.ComponentModel.Design.ViewTechnology[]" Usage="System.Web.UI.Design.WebFormsRootDesigner.SupportedTechnologies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -864,6 +897,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.System#ComponentModel#Design#IDesigner#Verbs" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Verbs As DesignerVerbCollection Implements IDesigner.Verbs" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::DesignerVerbCollection ^ System.ComponentModel.Design.IDesigner.Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebFormsRootDesigner.System.ComponentModel.Design.IDesigner.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1101,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.System#ComponentModel#Design#IRootDesigner#SupportedTechnologies" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportedTechnologies As ViewTechnology() Implements IRootDesigner.SupportedTechnologies" />
       <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ System.ComponentModel.Design.IRootDesigner.SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebFormsRootDesigner.System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1158,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebFormsRootDesigner.Verbs" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Verbs As DesignerVerbCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : System.ComponentModel.Design.DesignerVerbCollection" Usage="System.Web.UI.Design.WebFormsRootDesigner.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

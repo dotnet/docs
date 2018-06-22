@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RibbonDismissPopupEventHandler(sender As Object, e As RibbonDismissPopupEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RibbonDismissPopupEventHandler(System::Object ^ sender, RibbonDismissPopupEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type RibbonDismissPopupEventHandler = delegate of obj * RibbonDismissPopupEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormClosedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FormClosedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormClosedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type FormClosedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.CloseReason closeReason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FormClosedEventArgs.#ctor(System.Windows.Forms.CloseReason)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormClosedEventArgs(System::Windows::Forms::CloseReason closeReason);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.FormClosedEventArgs : System.Windows.Forms.CloseReason -&gt; System.Windows.Forms.FormClosedEventArgs" Usage="new System.Windows.Forms.FormClosedEventArgs closeReason" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FormClosedEventArgs.CloseReason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CloseReason As CloseReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::CloseReason CloseReason { System::Windows::Forms::CloseReason get(); };" />
+      <MemberSignature Language="F#" Value="member this.CloseReason : System.Windows.Forms.CloseReason" Usage="System.Windows.Forms.FormClosedEventArgs.CloseReason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

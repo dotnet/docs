@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LabelEditEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LabelEditEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LabelEditEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type LabelEditEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LabelEditEventArgs.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LabelEditEventArgs(int item);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.LabelEditEventArgs : int -&gt; System.Windows.Forms.LabelEditEventArgs" Usage="new System.Windows.Forms.LabelEditEventArgs item" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LabelEditEventArgs.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Integer, label As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LabelEditEventArgs(int item, System::String ^ label);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.LabelEditEventArgs : int * string -&gt; System.Windows.Forms.LabelEditEventArgs" Usage="new System.Windows.Forms.LabelEditEventArgs (item, label)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LabelEditEventArgs.CancelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Property CancelEdit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CancelEdit { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelEdit : bool with get, set" Usage="System.Windows.Forms.LabelEditEventArgs.CancelEdit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LabelEditEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Item { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : int" Usage="System.Windows.Forms.LabelEditEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LabelEditEventArgs.Label" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string" Usage="System.Windows.Forms.LabelEditEventArgs.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

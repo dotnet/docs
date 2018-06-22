@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeRegionDirective" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeRegionDirective&#xA;Inherits CodeDirective" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeRegionDirective : System::CodeDom::CodeDirective" />
+  <TypeSignature Language="F#" Value="type CodeRegionDirective = class&#xA;    inherit CodeDirective" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeRegionDirective.#ctor(System.CodeDom.CodeRegionMode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (regionMode As CodeRegionMode, regionText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeRegionDirective(System::CodeDom::CodeRegionMode regionMode, System::String ^ regionText);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeRegionDirective : System.CodeDom.CodeRegionMode * string -&gt; System.CodeDom.CodeRegionDirective" Usage="new System.CodeDom.CodeRegionDirective (regionMode, regionText)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeRegionDirective.RegionMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RegionMode As CodeRegionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeRegionMode RegionMode { System::CodeDom::CodeRegionMode get(); void set(System::CodeDom::CodeRegionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RegionMode : System.CodeDom.CodeRegionMode with get, set" Usage="System.CodeDom.CodeRegionDirective.RegionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeRegionDirective.RegionText" />
       <MemberSignature Language="VB.NET" Value="Public Property RegionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RegionText : string with get, set" Usage="System.CodeDom.CodeRegionDirective.RegionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

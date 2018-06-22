@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.HandoffBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum HandoffBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class HandoffBehavior" />
+  <TypeSignature Language="F#" Value="type HandoffBehavior = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.HandoffBehavior.Compose" />
       <MemberSignature Language="VB.NET" Value="Compose" />
       <MemberSignature Language="C++ CLI" Value="Compose" />
+      <MemberSignature Language="F#" Value="Compose = 1" Usage="System.Windows.Media.Animation.HandoffBehavior.Compose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" />
       <MemberSignature Language="VB.NET" Value="SnapshotAndReplace" />
       <MemberSignature Language="C++ CLI" Value="SnapshotAndReplace" />
+      <MemberSignature Language="F#" Value="SnapshotAndReplace = 0" Usage="System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.MethodCall" />
   <TypeSignature Language="VB.NET" Value="Public Class MethodCall&#xA;Implements IMethodCallMessage, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MethodCall : System::Runtime::Remoting::Messaging::IMethodCallMessage, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type MethodCall = class&#xA;    interface IMethodCallMessage&#xA;    interface IMethodMessage&#xA;    interface IMessage&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.#ctor(System.Runtime.Remoting.Messaging.Header[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (h1 As Header())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MethodCall(cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ h1);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Messaging.MethodCall : System.Runtime.Remoting.Messaging.Header[] -&gt; System.Runtime.Remoting.Messaging.MethodCall" Usage="new System.Runtime.Remoting.Messaging.MethodCall h1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.#ctor(System.Runtime.Remoting.Messaging.IMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As IMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MethodCall(System::Runtime::Remoting::Messaging::IMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Messaging.MethodCall : System.Runtime.Remoting.Messaging.IMessage -&gt; System.Runtime.Remoting.Messaging.MethodCall" Usage="new System.Runtime.Remoting.Messaging.MethodCall msg" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.ArgCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ArgCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArgCount : int" Usage="System.Runtime.Remoting.Messaging.MethodCall.ArgCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodMessage.ArgCount</InterfaceMember>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.Args" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Args As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ Args { cli::array &lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Args : obj[]" Usage="System.Runtime.Remoting.Messaging.MethodCall.Args" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodMessage.Args</InterfaceMember>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Messaging.MethodCall.ExternalProperties" />
       <MemberSignature Language="VB.NET" Value="Protected ExternalProperties As IDictionary " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::IDictionary ^ ExternalProperties;" />
+      <MemberSignature Language="F#" Value="val mutable ExternalProperties : System.Collections.IDictionary" Usage="System.Runtime.Remoting.Messaging.MethodCall.ExternalProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.GetArg(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetArg (argNum As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetArg(int argNum);" />
+      <MemberSignature Language="F#" Value="abstract member GetArg : int -&gt; obj&#xA;override this.GetArg : int -&gt; obj" Usage="methodCall.GetArg argNum" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.IMethodMessage.GetArg(System.Int32)</InterfaceMember>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.GetArgName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetArgName (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetArgName(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetArgName : int -&gt; string&#xA;override this.GetArgName : int -&gt; string" Usage="methodCall.GetArgName index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.IMethodMessage.GetArgName(System.Int32)</InterfaceMember>
@@ -284,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.GetInArg(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInArg (argNum As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetInArg(int argNum);" />
+      <MemberSignature Language="F#" Value="abstract member GetInArg : int -&gt; obj&#xA;override this.GetInArg : int -&gt; obj" Usage="methodCall.GetInArg argNum" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArg(System.Int32)</InterfaceMember>
@@ -320,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.GetInArgName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInArgName (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetInArgName(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetInArgName : int -&gt; string&#xA;override this.GetInArgName : int -&gt; string" Usage="methodCall.GetInArgName index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArgName(System.Int32)</InterfaceMember>
@@ -356,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="methodCall.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -393,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.HasVarArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasVarArgs As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasVarArgs { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasVarArgs : bool" Usage="System.Runtime.Remoting.Messaging.MethodCall.HasVarArgs" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodMessage.HasVarArgs</InterfaceMember>
@@ -426,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.HeaderHandler(System.Runtime.Remoting.Messaging.Header[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HeaderHandler (h As Header()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ HeaderHandler(cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ h);" />
+      <MemberSignature Language="F#" Value="abstract member HeaderHandler : System.Runtime.Remoting.Messaging.Header[] -&gt; obj&#xA;override this.HeaderHandler : System.Runtime.Remoting.Messaging.Header[] -&gt; obj" Usage="methodCall.HeaderHandler h" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -459,6 +472,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.InArgCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InArgCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InArgCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InArgCount : int" Usage="System.Runtime.Remoting.Messaging.MethodCall.InArgCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgCount</InterfaceMember>
@@ -491,6 +505,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.InArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InArgs As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ InArgs { cli::array &lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InArgs : obj[]" Usage="System.Runtime.Remoting.Messaging.MethodCall.InArgs" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgs</InterfaceMember>
@@ -523,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.Init" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Init ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init();" />
+      <MemberSignature Language="F#" Value="abstract member Init : unit -&gt; unit&#xA;override this.Init : unit -&gt; unit" Usage="methodCall.Init " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -545,6 +561,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Messaging.MethodCall.InternalProperties" />
       <MemberSignature Language="VB.NET" Value="Protected InternalProperties As IDictionary " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::IDictionary ^ InternalProperties;" />
+      <MemberSignature Language="F#" Value="val mutable InternalProperties : System.Collections.IDictionary" Usage="System.Runtime.Remoting.Messaging.MethodCall.InternalProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -566,6 +583,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.LogicalCallContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalCallContext As LogicalCallContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Messaging::LogicalCallContext ^ LogicalCallContext { System::Runtime::Remoting::Messaging::LogicalCallContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalCallContext : System.Runtime.Remoting.Messaging.LogicalCallContext" Usage="System.Runtime.Remoting.Messaging.MethodCall.LogicalCallContext" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodMessage.LogicalCallContext</InterfaceMember>
@@ -598,6 +616,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.MethodBase" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodBase As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodBase ^ MethodBase { System::Reflection::MethodBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodBase : System.Reflection.MethodBase" Usage="System.Runtime.Remoting.Messaging.MethodCall.MethodBase" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodMessage.MethodBase</InterfaceMember>
@@ -630,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string" Usage="System.Runtime.Remoting.Messaging.MethodCall.MethodName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodMessage.MethodName</InterfaceMember>
@@ -662,6 +682,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.MethodSignature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodSignature As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ MethodSignature { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodSignature : obj" Usage="System.Runtime.Remoting.Messaging.MethodCall.MethodSignature" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodMessage.MethodSignature</InterfaceMember>
@@ -694,6 +715,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Runtime.Remoting.Messaging.MethodCall.Properties" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMessage.Properties</InterfaceMember>
@@ -726,6 +748,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.ResolveMethod" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveMethod ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveMethod();" />
+      <MemberSignature Language="F#" Value="member this.ResolveMethod : unit -&gt; unit" Usage="methodCall.ResolveMethod " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -755,6 +778,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.MethodCall.RootSetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RootSetObjectData (info As SerializationInfo, ctx As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RootSetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext ctx);" />
+      <MemberSignature Language="F#" Value="abstract member RootSetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.RootSetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="methodCall.RootSetObjectData (info, ctx)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.ISerializationRootObject.RootSetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -792,6 +816,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Runtime.Remoting.Messaging.MethodCall.TypeName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IMethodMessage.TypeName</InterfaceMember>
@@ -817,6 +842,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.MethodCall.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Uri { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="System.Runtime.Remoting.Messaging.MethodCall.Uri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Messaging.IInternalMessage.Uri</InterfaceMember>

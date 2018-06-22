@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetBiosNodeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum NetBiosNodeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class NetBiosNodeType" />
+  <TypeSignature Language="F#" Value="type NetBiosNodeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetBiosNodeType.Broadcast" />
       <MemberSignature Language="VB.NET" Value="Broadcast" />
       <MemberSignature Language="C++ CLI" Value="Broadcast" />
+      <MemberSignature Language="F#" Value="Broadcast = 1" Usage="System.Net.NetworkInformation.NetBiosNodeType.Broadcast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetBiosNodeType.Hybrid" />
       <MemberSignature Language="VB.NET" Value="Hybrid" />
       <MemberSignature Language="C++ CLI" Value="Hybrid" />
+      <MemberSignature Language="F#" Value="Hybrid = 8" Usage="System.Net.NetworkInformation.NetBiosNodeType.Hybrid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetBiosNodeType.Mixed" />
       <MemberSignature Language="VB.NET" Value="Mixed" />
       <MemberSignature Language="C++ CLI" Value="Mixed" />
+      <MemberSignature Language="F#" Value="Mixed = 4" Usage="System.Net.NetworkInformation.NetBiosNodeType.Mixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetBiosNodeType.Peer2Peer" />
       <MemberSignature Language="VB.NET" Value="Peer2Peer" />
       <MemberSignature Language="C++ CLI" Value="Peer2Peer" />
+      <MemberSignature Language="F#" Value="Peer2Peer = 2" Usage="System.Net.NetworkInformation.NetBiosNodeType.Peer2Peer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetBiosNodeType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Net.NetworkInformation.NetBiosNodeType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

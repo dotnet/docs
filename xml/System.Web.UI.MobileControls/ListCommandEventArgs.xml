@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ListCommandEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ListCommandEventArgs&#xA;Inherits CommandEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListCommandEventArgs : System::Web::UI::WebControls::CommandEventArgs" />
+  <TypeSignature Language="F#" Value="type ListCommandEventArgs = class&#xA;    inherit CommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ListCommandEventArgs.#ctor(System.Web.UI.MobileControls.MobileListItem,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As MobileListItem, commandSource As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListCommandEventArgs(System::Web::UI::MobileControls::MobileListItem ^ item, System::Object ^ commandSource);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ListCommandEventArgs : System.Web.UI.MobileControls.MobileListItem * obj -&gt; System.Web.UI.MobileControls.ListCommandEventArgs" Usage="new System.Web.UI.MobileControls.ListCommandEventArgs (item, commandSource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ListCommandEventArgs.#ctor(System.Web.UI.MobileControls.MobileListItem,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As MobileListItem, commandSource As Object, originalArgs As CommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListCommandEventArgs(System::Web::UI::MobileControls::MobileListItem ^ item, System::Object ^ commandSource, System::Web::UI::WebControls::CommandEventArgs ^ originalArgs);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ListCommandEventArgs : System.Web.UI.MobileControls.MobileListItem * obj * System.Web.UI.WebControls.CommandEventArgs -&gt; System.Web.UI.MobileControls.ListCommandEventArgs" Usage="new System.Web.UI.MobileControls.ListCommandEventArgs (item, commandSource, originalArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ListCommandEventArgs.CommandSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandSource { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandSource : obj" Usage="System.Web.UI.MobileControls.ListCommandEventArgs.CommandSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListCommandEventArgs.DefaultCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly DefaultCommand As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ DefaultCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultCommand : string" Usage="System.Web.UI.MobileControls.ListCommandEventArgs.DefaultCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ListCommandEventArgs.ListItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListItem As MobileListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobileListItem ^ ListItem { System::Web::UI::MobileControls::MobileListItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListItem : System.Web.UI.MobileControls.MobileListItem" Usage="System.Web.UI.MobileControls.ListCommandEventArgs.ListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

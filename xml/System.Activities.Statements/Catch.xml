@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Catch" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Catch" />
   <TypeSignature Language="C++ CLI" Value="public ref class Catch abstract" />
+  <TypeSignature Language="F#" Value="type Catch = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Catch.ExceptionType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ExceptionType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ExceptionType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionType : Type" Usage="System.Activities.Statements.Catch.ExceptionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

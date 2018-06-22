@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.FormattableString" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FormattableString&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormattableString abstract : IFormattable" />
+  <TypeSignature Language="F#" Value="type FormattableString = class&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.FormattableString.ArgumentCount" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ArgumentCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int ArgumentCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArgumentCount : int" Usage="System.FormattableString.ArgumentCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.FormattableString.Format" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Format As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Format { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="System.FormattableString.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.FormattableString.GetArgument(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetArgument (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetArgument(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetArgument : int -&gt; obj" Usage="formattableString.GetArgument index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.FormattableString.GetArguments" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetArguments () As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Object ^&gt; ^ GetArguments();" />
+      <MemberSignature Language="F#" Value="abstract member GetArguments : unit -&gt; obj[]" Usage="formattableString.GetArguments " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -236,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.FormattableString.Invariant(System.FormattableString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invariant (formattable As FormattableString) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Invariant(FormattableString ^ formattable);" />
+      <MemberSignature Language="F#" Value="static member Invariant : FormattableString -&gt; string" Usage="System.FormattableString.Invariant formattable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -352,6 +358,7 @@ Invariant($"{{ lat = {latitude}; lon = {longitude} }}")
       <MemberSignature Language="DocId" Value="M:System.FormattableString.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="formattableString.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -385,6 +392,7 @@ Invariant($"{{ lat = {latitude}; lon = {longitude} }}")
       <MemberSignature Language="DocId" Value="M:System.FormattableString.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ToString (formatProvider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ToString(IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="formattableString.ToString formatProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LeftRightAlignment" />
   <TypeSignature Language="VB.NET" Value="Public Enum LeftRightAlignment" />
   <TypeSignature Language="C++ CLI" Value="public enum class LeftRightAlignment" />
+  <TypeSignature Language="F#" Value="type LeftRightAlignment = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LeftRightAlignment.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 0" Usage="System.Windows.Forms.LeftRightAlignment.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LeftRightAlignment.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 1" Usage="System.Windows.Forms.LeftRightAlignment.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

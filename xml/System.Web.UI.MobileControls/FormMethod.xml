@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.FormMethod" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormMethod" />
   <TypeSignature Language="C++ CLI" Value="public enum class FormMethod" />
+  <TypeSignature Language="F#" Value="type FormMethod = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.FormMethod.Get" />
       <MemberSignature Language="VB.NET" Value="Get" />
       <MemberSignature Language="C++ CLI" Value="Get" />
+      <MemberSignature Language="F#" Value="Get = 0" Usage="System.Web.UI.MobileControls.FormMethod.Get" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.FormMethod.Post" />
       <MemberSignature Language="VB.NET" Value="Post" />
       <MemberSignature Language="C++ CLI" Value="Post" />
+      <MemberSignature Language="F#" Value="Post = 1" Usage="System.Web.UI.MobileControls.FormMethod.Post" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

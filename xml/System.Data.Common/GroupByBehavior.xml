@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.GroupByBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum GroupByBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class GroupByBehavior" />
+  <TypeSignature Language="F#" Value="type GroupByBehavior = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.ExactMatch" />
       <MemberSignature Language="VB.NET" Value="ExactMatch" />
       <MemberSignature Language="C++ CLI" Value="ExactMatch" />
+      <MemberSignature Language="F#" Value="ExactMatch = 4" Usage="System.Data.Common.GroupByBehavior.ExactMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.MustContainAll" />
       <MemberSignature Language="VB.NET" Value="MustContainAll" />
       <MemberSignature Language="C++ CLI" Value="MustContainAll" />
+      <MemberSignature Language="F#" Value="MustContainAll = 3" Usage="System.Data.Common.GroupByBehavior.MustContainAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.NotSupported" />
       <MemberSignature Language="VB.NET" Value="NotSupported" />
       <MemberSignature Language="C++ CLI" Value="NotSupported" />
+      <MemberSignature Language="F#" Value="NotSupported = 1" Usage="System.Data.Common.GroupByBehavior.NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Data.Common.GroupByBehavior.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.Unrelated" />
       <MemberSignature Language="VB.NET" Value="Unrelated" />
       <MemberSignature Language="C++ CLI" Value="Unrelated" />
+      <MemberSignature Language="F#" Value="Unrelated = 2" Usage="System.Data.Common.GroupByBehavior.Unrelated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

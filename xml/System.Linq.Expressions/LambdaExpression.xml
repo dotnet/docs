@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.LambdaExpression" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class LambdaExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class LambdaExpression abstract : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type LambdaExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LambdaExpression.Body" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Body As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Body { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.LambdaExpression.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LambdaExpression.Compile" />
       <MemberSignature Language="VB.NET" Value="Public Function Compile () As Delegate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Delegate ^ Compile();" />
+      <MemberSignature Language="F#" Value="member this.Compile : unit -&gt; Delegate" Usage="lambdaExpression.Compile " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LambdaExpression.Compile(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compile (preferInterpretation As Boolean) As Delegate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Delegate ^ Compile(bool preferInterpretation);" />
+      <MemberSignature Language="F#" Value="member this.Compile : bool -&gt; Delegate" Usage="lambdaExpression.Compile preferInterpretation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Delegate Compile(class System.Runtime.CompilerServices.DebugInfoGenerator debugInfoGenerator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LambdaExpression.Compile(System.Runtime.CompilerServices.DebugInfoGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Delegate ^ Compile(System::Runtime::CompilerServices::DebugInfoGenerator ^ debugInfoGenerator);" />
+      <MemberSignature Language="F#" Value="member this.Compile : System.Runtime.CompilerServices.DebugInfoGenerator -&gt; Delegate" Usage="lambdaExpression.Compile debugInfoGenerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.Emit.MethodBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CompileToMethod (method As MethodBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompileToMethod(System::Reflection::Emit::MethodBuilder ^ method);" />
+      <MemberSignature Language="F#" Value="member this.CompileToMethod : System.Reflection.Emit.MethodBuilder -&gt; unit" Usage="lambdaExpression.CompileToMethod method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -248,6 +254,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompileToMethod(class System.Reflection.Emit.MethodBuilder method, class System.Runtime.CompilerServices.DebugInfoGenerator debugInfoGenerator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.Emit.MethodBuilder,System.Runtime.CompilerServices.DebugInfoGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompileToMethod(System::Reflection::Emit::MethodBuilder ^ method, System::Runtime::CompilerServices::DebugInfoGenerator ^ debugInfoGenerator);" />
+      <MemberSignature Language="F#" Value="member this.CompileToMethod : System.Reflection.Emit.MethodBuilder * System.Runtime.CompilerServices.DebugInfoGenerator -&gt; unit" Usage="lambdaExpression.CompileToMethod (method, debugInfoGenerator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LambdaExpression.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Linq.Expressions.LambdaExpression.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LambdaExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.LambdaExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -347,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LambdaExpression.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ReadOnlyCollection(Of ParameterExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ Parameters { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.ParameterExpression&gt;" Usage="System.Linq.Expressions.LambdaExpression.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -380,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LambdaExpression.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Linq.Expressions.LambdaExpression.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -413,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LambdaExpression.TailCall" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TailCall As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TailCall { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TailCall : bool" Usage="System.Linq.Expressions.LambdaExpression.TailCall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -446,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LambdaExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.LambdaExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

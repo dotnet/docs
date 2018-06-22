@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.LoadHint" />
   <TypeSignature Language="VB.NET" Value="Public Enum LoadHint" />
   <TypeSignature Language="C++ CLI" Value="public enum class LoadHint" />
+  <TypeSignature Language="F#" Value="type LoadHint = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.LoadHint.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 1" Usage="System.Runtime.CompilerServices.LoadHint.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.LoadHint.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Runtime.CompilerServices.LoadHint.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.LoadHint.Sometimes" />
       <MemberSignature Language="VB.NET" Value="Sometimes" />
       <MemberSignature Language="C++ CLI" Value="Sometimes" />
+      <MemberSignature Language="F#" Value="Sometimes = 2" Usage="System.Runtime.CompilerServices.LoadHint.Sometimes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

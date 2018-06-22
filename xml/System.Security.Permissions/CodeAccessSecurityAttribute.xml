@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeAccessSecurityAttribute&#xA;Inherits SecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeAccessSecurityAttribute abstract : System::Security::Permissions::SecurityAttribute" />
+  <TypeSignature Language="F#" Value="type CodeAccessSecurityAttribute = class&#xA;    inherit SecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.CodeAccessSecurityAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeAccessSecurityAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.CodeAccessSecurityAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.CodeAccessSecurityAttribute" Usage="new System.Security.Permissions.CodeAccessSecurityAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

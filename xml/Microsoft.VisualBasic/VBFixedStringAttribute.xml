@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VBFixedStringAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class VBFixedStringAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type VBFixedStringAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBFixedStringAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VBFixedStringAttribute(int Length);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.VBFixedStringAttribute : int -&gt; Microsoft.VisualBasic.VBFixedStringAttribute" Usage="new Microsoft.VisualBasic.VBFixedStringAttribute Length" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.VBFixedStringAttribute.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="Microsoft.VisualBasic.VBFixedStringAttribute.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

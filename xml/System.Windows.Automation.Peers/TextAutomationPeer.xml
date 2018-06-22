@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TextAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextAutomationPeer abstract : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type TextAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextAutomationPeer.#ctor(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextAutomationPeer(System::Windows::FrameworkElement ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.TextAutomationPeer : System.Windows.FrameworkElement -&gt; System.Windows.Automation.Peers.TextAutomationPeer" Usage="new System.Windows.Automation.Peers.TextAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="textAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CreatingModelDataSourceEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CreatingModelDataSourceEventHandler(sender As Object, e As CreatingModelDataSourceEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CreatingModelDataSourceEventHandler(System::Object ^ sender, CreatingModelDataSourceEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type CreatingModelDataSourceEventHandler = delegate of obj * CreatingModelDataSourceEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

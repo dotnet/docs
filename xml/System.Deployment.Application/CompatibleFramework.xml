@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.CompatibleFramework" />
   <TypeSignature Language="VB.NET" Value="Public Class CompatibleFramework" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompatibleFramework" />
+  <TypeSignature Language="F#" Value="type CompatibleFramework = class" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFramework.Profile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Profile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Profile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Profile : string" Usage="System.Deployment.Application.CompatibleFramework.Profile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFramework.SupportedRuntime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedRuntime As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SupportedRuntime { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedRuntime : string" Usage="System.Deployment.Application.CompatibleFramework.SupportedRuntime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFramework.TargetVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetVersion : string" Usage="System.Deployment.Application.CompatibleFramework.TargetVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

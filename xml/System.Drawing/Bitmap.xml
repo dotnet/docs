@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Bitmap" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Bitmap&#xA;Inherits Image" />
   <TypeSignature Language="C++ CLI" Value="public ref class Bitmap sealed : System::Drawing::Image" />
+  <TypeSignature Language="F#" Value="type Bitmap = class&#xA;    inherit Image" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.Drawing.Image)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (original As Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(System::Drawing::Image ^ original);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : System.Drawing.Image -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap original" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : System.IO.Stream -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : string -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap filename" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.Drawing.Image,System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (original As Image, newSize As Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(System::Drawing::Image ^ original, System::Drawing::Size newSize);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : System.Drawing.Image * System.Drawing.Size -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (original, newSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(int width, int height);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : int * int -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, bool useIcm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(System::IO::Stream ^ stream, bool useIcm);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : System.IO.Stream * bool -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (stream, useIcm)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -249,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String, useIcm As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(System::String ^ filename, bool useIcm);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : string * bool -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (filename, useIcm)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -290,6 +298,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string resource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(Type ^ type, System::String ^ resource);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : Type * string -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (type, resource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -328,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.Drawing.Image,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (original As Image, width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(System::Drawing::Image ^ original, int width, int height);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : System.Drawing.Image * int * int -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (original, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -353,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Drawing.Graphics)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Integer, height As Integer, g As Graphics)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(int width, int height, System::Drawing::Graphics ^ g);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : int * int * System.Drawing.Graphics -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (width, height, g)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -386,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Integer, height As Integer, format As PixelFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(int width, int height, System::Drawing::Imaging::PixelFormat format);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : int * int * System.Drawing.Imaging.PixelFormat -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (width, height, format)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -411,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Integer, height As Integer, stride As Integer, format As PixelFormat, scan0 As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bitmap(int width, int height, int stride, System::Drawing::Imaging::PixelFormat format, IntPtr scan0);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Bitmap : int * int * int * System.Drawing.Imaging.PixelFormat * nativeint -&gt; System.Drawing.Bitmap" Usage="new System.Drawing.Bitmap (width, height, stride, format, scan0)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -465,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.Clone(System.Drawing.Rectangle,System.Drawing.Imaging.PixelFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone (rect As Rectangle, format As PixelFormat) As Bitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Bitmap ^ Clone(System::Drawing::Rectangle rect, System::Drawing::Imaging::PixelFormat format);" />
+      <MemberSignature Language="F#" Value="override this.Clone : System.Drawing.Rectangle * System.Drawing.Imaging.PixelFormat -&gt; System.Drawing.Bitmap" Usage="bitmap.Clone (rect, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -515,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.Clone(System.Drawing.RectangleF,System.Drawing.Imaging.PixelFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone (rect As RectangleF, format As PixelFormat) As Bitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Bitmap ^ Clone(System::Drawing::RectangleF rect, System::Drawing::Imaging::PixelFormat format);" />
+      <MemberSignature Language="F#" Value="override this.Clone : System.Drawing.RectangleF * System.Drawing.Imaging.PixelFormat -&gt; System.Drawing.Bitmap" Usage="bitmap.Clone (rect, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -561,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.FromHicon(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromHicon (hicon As IntPtr) As Bitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Bitmap ^ FromHicon(IntPtr hicon);" />
+      <MemberSignature Language="F#" Value="static member FromHicon : nativeint -&gt; System.Drawing.Bitmap" Usage="System.Drawing.Bitmap.FromHicon hicon" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -603,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.FromResource(System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromResource (hinstance As IntPtr, bitmapName As String) As Bitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Bitmap ^ FromResource(IntPtr hinstance, System::String ^ bitmapName);" />
+      <MemberSignature Language="F#" Value="static member FromResource : nativeint * string -&gt; System.Drawing.Bitmap" Usage="System.Drawing.Bitmap.FromResource (hinstance, bitmapName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -646,6 +663,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.GetHbitmap" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHbitmap () As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHbitmap();" />
+      <MemberSignature Language="F#" Value="member this.GetHbitmap : unit -&gt; nativeint" Usage="bitmap.GetHbitmap " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -691,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.GetHbitmap(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHbitmap (background As Color) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHbitmap(System::Drawing::Color background);" />
+      <MemberSignature Language="F#" Value="member this.GetHbitmap : System.Drawing.Color -&gt; nativeint" Usage="bitmap.GetHbitmap background" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -739,6 +758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.GetHicon" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHicon () As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHicon();" />
+      <MemberSignature Language="F#" Value="member this.GetHicon : unit -&gt; nativeint" Usage="bitmap.GetHicon " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -791,6 +811,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.GetPixel(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPixel (x As Integer, y As Integer) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Color GetPixel(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.GetPixel : int * int -&gt; System.Drawing.Color" Usage="bitmap.GetPixel (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -844,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function LockBits (rect As Rectangle, flags As ImageLockMode, format As PixelFormat) As BitmapData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Imaging::BitmapData ^ LockBits(System::Drawing::Rectangle rect, System::Drawing::Imaging::ImageLockMode flags, System::Drawing::Imaging::PixelFormat format);" />
+      <MemberSignature Language="F#" Value="member this.LockBits : System.Drawing.Rectangle * System.Drawing.Imaging.ImageLockMode * System.Drawing.Imaging.PixelFormat -&gt; System.Drawing.Imaging.BitmapData" Usage="bitmap.LockBits (rect, flags, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -897,6 +919,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Imaging.BitmapData LockBits(valuetype System.Drawing.Rectangle rect, valuetype System.Drawing.Imaging.ImageLockMode flags, valuetype System.Drawing.Imaging.PixelFormat format, class System.Drawing.Imaging.BitmapData bitmapData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat,System.Drawing.Imaging.BitmapData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Imaging::BitmapData ^ LockBits(System::Drawing::Rectangle rect, System::Drawing::Imaging::ImageLockMode flags, System::Drawing::Imaging::PixelFormat format, System::Drawing::Imaging::BitmapData ^ bitmapData);" />
+      <MemberSignature Language="F#" Value="member this.LockBits : System.Drawing.Rectangle * System.Drawing.Imaging.ImageLockMode * System.Drawing.Imaging.PixelFormat * System.Drawing.Imaging.BitmapData -&gt; System.Drawing.Imaging.BitmapData" Usage="bitmap.LockBits (rect, flags, format, bitmapData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -954,6 +977,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.MakeTransparent" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeTransparent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeTransparent();" />
+      <MemberSignature Language="F#" Value="member this.MakeTransparent : unit -&gt; unit" Usage="bitmap.MakeTransparent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -994,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.MakeTransparent(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeTransparent (transparentColor As Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeTransparent(System::Drawing::Color transparentColor);" />
+      <MemberSignature Language="F#" Value="member this.MakeTransparent : System.Drawing.Color -&gt; unit" Usage="bitmap.MakeTransparent transparentColor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1040,6 +1065,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPixel(int32 x, int32 y, valuetype System.Drawing.Color color) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.SetPixel(System.Int32,System.Int32,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPixel(int x, int y, System::Drawing::Color color);" />
+      <MemberSignature Language="F#" Value="member this.SetPixel : int * int * System.Drawing.Color -&gt; unit" Usage="bitmap.SetPixel (x, y, color)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1090,6 +1116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.SetResolution(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResolution (xDpi As Single, yDpi As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResolution(float xDpi, float yDpi);" />
+      <MemberSignature Language="F#" Value="member this.SetResolution : single * single -&gt; unit" Usage="bitmap.SetResolution (xDpi, yDpi)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1130,6 +1157,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnlockBits(class System.Drawing.Imaging.BitmapData bitmapdata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Bitmap.UnlockBits(System.Drawing.Imaging.BitmapData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnlockBits(System::Drawing::Imaging::BitmapData ^ bitmapdata);" />
+      <MemberSignature Language="F#" Value="member this.UnlockBits : System.Drawing.Imaging.BitmapData -&gt; unit" Usage="bitmap.UnlockBits bitmapdata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

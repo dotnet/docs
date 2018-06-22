@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Proxies.RealProxy" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RealProxy" />
   <TypeSignature Language="C++ CLI" Value="public ref class RealProxy abstract" />
+  <TypeSignature Language="F#" Value="type RealProxy = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (classToProxy As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; RealProxy(Type ^ classToProxy);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Proxies.RealProxy : Type -&gt; System.Runtime.Remoting.Proxies.RealProxy" Usage="new System.Runtime.Remoting.Proxies.RealProxy classToProxy" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.#ctor(System.Type,System.IntPtr,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (classToProxy As Type, stub As IntPtr, stubData As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; RealProxy(Type ^ classToProxy, IntPtr stub, System::Object ^ stubData);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Proxies.RealProxy : Type * nativeint * obj -&gt; System.Runtime.Remoting.Proxies.RealProxy" Usage="new System.Runtime.Remoting.Proxies.RealProxy (classToProxy, stub, stubData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.AttachServer(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AttachServer (s As MarshalByRefObject)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AttachServer(MarshalByRefObject ^ s);" />
+      <MemberSignature Language="F#" Value="member this.AttachServer : MarshalByRefObject -&gt; unit" Usage="realProxy.AttachServer s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.CreateObjRef(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateObjRef (requestedType As Type) As ObjRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::ObjRef ^ CreateObjRef(Type ^ requestedType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateObjRef : Type -&gt; System.Runtime.Remoting.ObjRef&#xA;override this.CreateObjRef : Type -&gt; System.Runtime.Remoting.ObjRef" Usage="realProxy.CreateObjRef requestedType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.DetachServer" />
       <MemberSignature Language="VB.NET" Value="Protected Function DetachServer () As MarshalByRefObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MarshalByRefObject ^ DetachServer();" />
+      <MemberSignature Language="F#" Value="member this.DetachServer : unit -&gt; MarshalByRefObject" Usage="realProxy.DetachServer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.GetCOMIUnknown(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCOMIUnknown (fIsMarshalled As Boolean) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IntPtr GetCOMIUnknown(bool fIsMarshalled);" />
+      <MemberSignature Language="F#" Value="abstract member GetCOMIUnknown : bool -&gt; nativeint&#xA;override this.GetCOMIUnknown : bool -&gt; nativeint" Usage="realProxy.GetCOMIUnknown fIsMarshalled" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="realProxy.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.GetProxiedType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProxiedType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetProxiedType();" />
+      <MemberSignature Language="F#" Value="member this.GetProxiedType : unit -&gt; Type" Usage="realProxy.GetProxiedType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -365,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.GetStubData(System.Runtime.Remoting.Proxies.RealProxy)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStubData (rp As RealProxy) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetStubData(System::Runtime::Remoting::Proxies::RealProxy ^ rp);" />
+      <MemberSignature Language="F#" Value="static member GetStubData : System.Runtime.Remoting.Proxies.RealProxy -&gt; obj" Usage="System.Runtime.Remoting.Proxies.RealProxy.GetStubData rp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -406,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.GetTransparentProxy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTransparentProxy () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetTransparentProxy();" />
+      <MemberSignature Language="F#" Value="abstract member GetTransparentProxy : unit -&gt; obj&#xA;override this.GetTransparentProxy : unit -&gt; obj" Usage="realProxy.GetTransparentProxy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -437,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.GetUnwrappedServer" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetUnwrappedServer () As MarshalByRefObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MarshalByRefObject ^ GetUnwrappedServer();" />
+      <MemberSignature Language="F#" Value="member this.GetUnwrappedServer : unit -&gt; MarshalByRefObject" Usage="realProxy.GetUnwrappedServer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -468,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.InitializeServerObject(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function InitializeServerObject (ctorMsg As IConstructionCallMessage) As IConstructionReturnMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::Activation::IConstructionReturnMessage ^ InitializeServerObject(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ ctorMsg);" />
+      <MemberSignature Language="F#" Value="member this.InitializeServerObject : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; System.Runtime.Remoting.Activation.IConstructionReturnMessage" Usage="realProxy.InitializeServerObject ctorMsg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -514,6 +527,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.Invoke(System.Runtime.Remoting.Messaging.IMessage)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Invoke (msg As IMessage) As IMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Runtime::Remoting::Messaging::IMessage ^ Invoke(System::Runtime::Remoting::Messaging::IMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : System.Runtime.Remoting.Messaging.IMessage -&gt; System.Runtime.Remoting.Messaging.IMessage" Usage="realProxy.Invoke msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -555,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.SetCOMIUnknown(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetCOMIUnknown (i As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetCOMIUnknown(IntPtr i);" />
+      <MemberSignature Language="F#" Value="abstract member SetCOMIUnknown : nativeint -&gt; unit&#xA;override this.SetCOMIUnknown : nativeint -&gt; unit" Usage="realProxy.SetCOMIUnknown i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -595,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.SetStubData(System.Runtime.Remoting.Proxies.RealProxy,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStubData (rp As RealProxy, stubData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStubData(System::Runtime::Remoting::Proxies::RealProxy ^ rp, System::Object ^ stubData);" />
+      <MemberSignature Language="F#" Value="static member SetStubData : System.Runtime.Remoting.Proxies.RealProxy * obj -&gt; unit" Usage="System.Runtime.Remoting.Proxies.RealProxy.SetStubData (rp, stubData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -637,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SupportsInterface (ByRef iid As Guid) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IntPtr SupportsInterface(Guid % iid);" />
+      <MemberSignature Language="F#" Value="abstract member SupportsInterface :  -&gt; nativeint&#xA;override this.SupportsInterface :  -&gt; nativeint" Usage="realProxy.SupportsInterface iid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

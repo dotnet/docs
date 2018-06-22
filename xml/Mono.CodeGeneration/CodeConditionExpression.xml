@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeConditionExpression" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeConditionExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeConditionExpression abstract : Mono::CodeGeneration::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeConditionExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateForBranch(class System.Reflection.Emit.ILGenerator gen, valuetype System.Reflection.Emit.Label label, bool jumpCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeConditionExpression.GenerateForBranch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GenerateForBranch(System::Reflection::Emit::ILGenerator ^ gen, System::Reflection::Emit::Label label, bool jumpCase);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateForBranch : System.Reflection.Emit.ILGenerator * System.Reflection.Emit.Label * bool -&gt; unit&#xA;override this.GenerateForBranch : System.Reflection.Emit.ILGenerator * System.Reflection.Emit.Label * bool -&gt; unit" Usage="codeConditionExpression.GenerateForBranch (gen, label, jumpCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

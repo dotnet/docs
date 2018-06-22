@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.CodedIndex" />
   <TypeSignature Language="VB.NET" Value="Public Class CodedIndex" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodedIndex abstract sealed" />
+  <TypeSignature Language="F#" Value="type CodedIndex = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.CustomAttributeType(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CustomAttributeType (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CustomAttributeType(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member CustomAttributeType : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.CustomAttributeType handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.HasConstant(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HasConstant (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int HasConstant(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member HasConstant : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.HasConstant handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.HasCustomAttribute(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HasCustomAttribute (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int HasCustomAttribute(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member HasCustomAttribute : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.HasCustomAttribute handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.HasCustomDebugInformation(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HasCustomDebugInformation (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int HasCustomDebugInformation(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member HasCustomDebugInformation : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.HasCustomDebugInformation handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.HasDeclSecurity(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HasDeclSecurity (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int HasDeclSecurity(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member HasDeclSecurity : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.HasDeclSecurity handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.HasFieldMarshal(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HasFieldMarshal (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int HasFieldMarshal(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member HasFieldMarshal : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.HasFieldMarshal handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.HasSemantics(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HasSemantics (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int HasSemantics(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member HasSemantics : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.HasSemantics handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.Implementation(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Implementation (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Implementation(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member Implementation : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.Implementation handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.MemberForwarded(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MemberForwarded (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MemberForwarded(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member MemberForwarded : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.MemberForwarded handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -259,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.MemberRefParent(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MemberRefParent (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MemberRefParent(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member MemberRefParent : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.MemberRefParent handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -285,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.MethodDefOrRef(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MethodDefOrRef (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MethodDefOrRef(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member MethodDefOrRef : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.MethodDefOrRef handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -311,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.ResolutionScope(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResolutionScope (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResolutionScope(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member ResolutionScope : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.ResolutionScope handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -337,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.TypeDefOrRef(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TypeDefOrRef (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int TypeDefOrRef(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member TypeDefOrRef : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.TypeDefOrRef handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -363,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.TypeDefOrRefOrSpec(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TypeDefOrRefOrSpec (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int TypeDefOrRefOrSpec(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member TypeDefOrRefOrSpec : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.TypeDefOrRefOrSpec handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -389,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CodedIndex.TypeOrMethodDef(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TypeOrMethodDef (handle As EntityHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int TypeOrMethodDef(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="static member TypeOrMethodDef : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="System.Reflection.Metadata.Ecma335.CodedIndex.TypeOrMethodDef handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

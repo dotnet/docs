@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintJobStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintJobStatus" />
+  <TypeSignature Language="F#" Value="type PrintJobStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Blocked" />
       <MemberSignature Language="VB.NET" Value="Blocked" />
       <MemberSignature Language="C++ CLI" Value="Blocked" />
+      <MemberSignature Language="F#" Value="Blocked = 512" Usage="System.Printing.PrintJobStatus.Blocked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Completed" />
       <MemberSignature Language="VB.NET" Value="Completed" />
       <MemberSignature Language="C++ CLI" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 4096" Usage="System.Printing.PrintJobStatus.Completed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Deleted" />
       <MemberSignature Language="VB.NET" Value="Deleted" />
       <MemberSignature Language="C++ CLI" Value="Deleted" />
+      <MemberSignature Language="F#" Value="Deleted = 256" Usage="System.Printing.PrintJobStatus.Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Deleting" />
       <MemberSignature Language="VB.NET" Value="Deleting" />
       <MemberSignature Language="C++ CLI" Value="Deleting" />
+      <MemberSignature Language="F#" Value="Deleting = 4" Usage="System.Printing.PrintJobStatus.Deleting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 2" Usage="System.Printing.PrintJobStatus.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Printing.PrintJobStatus.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -159,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Offline" />
       <MemberSignature Language="VB.NET" Value="Offline" />
       <MemberSignature Language="C++ CLI" Value="Offline" />
+      <MemberSignature Language="F#" Value="Offline = 32" Usage="System.Printing.PrintJobStatus.Offline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -178,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.PaperOut" />
       <MemberSignature Language="VB.NET" Value="PaperOut" />
       <MemberSignature Language="C++ CLI" Value="PaperOut" />
+      <MemberSignature Language="F#" Value="PaperOut = 64" Usage="System.Printing.PrintJobStatus.PaperOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -197,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Paused" />
       <MemberSignature Language="VB.NET" Value="Paused" />
       <MemberSignature Language="C++ CLI" Value="Paused" />
+      <MemberSignature Language="F#" Value="Paused = 1" Usage="System.Printing.PrintJobStatus.Paused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -216,6 +226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Printed" />
       <MemberSignature Language="VB.NET" Value="Printed" />
       <MemberSignature Language="C++ CLI" Value="Printed" />
+      <MemberSignature Language="F#" Value="Printed = 128" Usage="System.Printing.PrintJobStatus.Printed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -235,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Printing" />
       <MemberSignature Language="VB.NET" Value="Printing" />
       <MemberSignature Language="C++ CLI" Value="Printing" />
+      <MemberSignature Language="F#" Value="Printing = 16" Usage="System.Printing.PrintJobStatus.Printing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -254,6 +266,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Restarted" />
       <MemberSignature Language="VB.NET" Value="Restarted" />
       <MemberSignature Language="C++ CLI" Value="Restarted" />
+      <MemberSignature Language="F#" Value="Restarted = 2048" Usage="System.Printing.PrintJobStatus.Restarted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -273,6 +286,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Retained" />
       <MemberSignature Language="VB.NET" Value="Retained" />
       <MemberSignature Language="C++ CLI" Value="Retained" />
+      <MemberSignature Language="F#" Value="Retained = 8192" Usage="System.Printing.PrintJobStatus.Retained" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -292,6 +306,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Spooling" />
       <MemberSignature Language="VB.NET" Value="Spooling" />
       <MemberSignature Language="C++ CLI" Value="Spooling" />
+      <MemberSignature Language="F#" Value="Spooling = 8" Usage="System.Printing.PrintJobStatus.Spooling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -311,6 +326,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.UserIntervention" />
       <MemberSignature Language="VB.NET" Value="UserIntervention" />
       <MemberSignature Language="C++ CLI" Value="UserIntervention" />
+      <MemberSignature Language="F#" Value="UserIntervention = 1024" Usage="System.Printing.PrintJobStatus.UserIntervention" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

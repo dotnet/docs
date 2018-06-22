@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewRow" />
   <TypeSignature Language="VB.NET" Value="Public Class FormViewRow&#xA;Inherits TableRow" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormViewRow : System::Web::UI::WebControls::TableRow" />
+  <TypeSignature Language="F#" Value="type FormViewRow = class&#xA;    inherit TableRow" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewRow.#ctor(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemIndex As Integer, rowType As DataControlRowType, rowState As DataControlRowState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormViewRow(int itemIndex, System::Web::UI::WebControls::DataControlRowType rowType, System::Web::UI::WebControls::DataControlRowState rowState);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FormViewRow : int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.FormViewRow" Usage="new System.Web.UI.WebControls.FormViewRow (itemIndex, rowType, rowState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewRow.ItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemIndex : int" Usage="System.Web.UI.WebControls.FormViewRow.ItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewRow.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="formViewRow.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewRow.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="formViewRow.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewRow.RowState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RowState As DataControlRowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataControlRowState RowState { System::Web::UI::WebControls::DataControlRowState get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowState : System.Web.UI.WebControls.DataControlRowState" Usage="System.Web.UI.WebControls.FormViewRow.RowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewRow.RowType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RowType As DataControlRowType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataControlRowType RowType { System::Web::UI::WebControls::DataControlRowType get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowType : System.Web.UI.WebControls.DataControlRowType" Usage="System.Web.UI.WebControls.FormViewRow.RowType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

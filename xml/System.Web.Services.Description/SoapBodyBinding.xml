@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapBodyBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapBodyBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapBodyBinding : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type SoapBodyBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Parts" />
       <MemberSignature Language="VB.NET" Value="Public Property Parts As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Parts { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Parts : string[] with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.Parts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.PartsString" />
       <MemberSignature Language="VB.NET" Value="Public Property PartsString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PartsString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PartsString : string with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.PartsString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -233,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Use" />
       <MemberSignature Language="VB.NET" Value="Public Property Use As SoapBindingUse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapBindingUse Use { System::Web::Services::Description::SoapBindingUse get(); void set(System::Web::Services::Description::SoapBindingUse value); };" />
+      <MemberSignature Language="F#" Value="member this.Use : System.Web.Services.Description.SoapBindingUse with get, set" Usage="System.Web.Services.Description.SoapBodyBinding.Use" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

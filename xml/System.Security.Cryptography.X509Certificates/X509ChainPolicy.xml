@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509ChainPolicy" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509ChainPolicy" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509ChainPolicy sealed" />
+  <TypeSignature Language="F#" Value="type X509ChainPolicy = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainPolicy.ApplicationPolicy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationPolicy As OidCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::OidCollection ^ ApplicationPolicy { System::Security::Cryptography::OidCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationPolicy : System.Security.Cryptography.OidCollection" Usage="System.Security.Cryptography.X509Certificates.X509ChainPolicy.ApplicationPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainPolicy.CertificatePolicy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificatePolicy As OidCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::OidCollection ^ CertificatePolicy { System::Security::Cryptography::OidCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CertificatePolicy : System.Security.Cryptography.OidCollection" Usage="System.Security.Cryptography.X509Certificates.X509ChainPolicy.CertificatePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainPolicy.ExtraStore" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtraStore As X509Certificate2Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ ExtraStore { System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraStore : System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.Security.Cryptography.X509Certificates.X509ChainPolicy.ExtraStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -217,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509ChainPolicy.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="x509ChainPolicy.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -256,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationFlag" />
       <MemberSignature Language="VB.NET" Value="Public Property RevocationFlag As X509RevocationFlag" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationFlag RevocationFlag { System::Security::Cryptography::X509Certificates::X509RevocationFlag get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationFlag value); };" />
+      <MemberSignature Language="F#" Value="member this.RevocationFlag : System.Security.Cryptography.X509Certificates.X509RevocationFlag with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationFlag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -305,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RevocationMode As X509RevocationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode RevocationMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -354,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainPolicy.UrlRetrievalTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property UrlRetrievalTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan UrlRetrievalTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.UrlRetrievalTimeout : TimeSpan with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainPolicy.UrlRetrievalTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -393,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property VerificationFlags As X509VerificationFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509VerificationFlags VerificationFlags { System::Security::Cryptography::X509Certificates::X509VerificationFlags get(); void set(System::Security::Cryptography::X509Certificates::X509VerificationFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.VerificationFlags : System.Security.Cryptography.X509Certificates.X509VerificationFlags with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -442,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime" />
       <MemberSignature Language="VB.NET" Value="Public Property VerificationTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime VerificationTime { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.VerificationTime : DateTime with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectoryServerDownException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryServerDownException : Exception" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryServerDownException = class&#xA;    inherit Exception&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryServerDownException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException : string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException" Usage="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActiveDirectoryServerDownException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException" Usage="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryServerDownException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException : string * Exception -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException" Usage="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.#ctor(System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As Integer, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryServerDownException(System::String ^ message, int errorCode, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException : string * int * string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException" Usage="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException (message, errorCode, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.#ctor(System.String,System.Exception,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, errorCode As Integer, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryServerDownException(System::String ^ message, Exception ^ inner, int errorCode, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException : string * Exception * int * string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException" Usage="new System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException (message, inner, errorCode, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="activeDirectoryServerDownException.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -246,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

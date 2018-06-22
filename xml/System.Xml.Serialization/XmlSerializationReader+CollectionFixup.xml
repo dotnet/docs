@@ -46,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationCollectionFixupCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As Object, callback As XmlSerializationCollectionFixupCallback, collectionItems As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionFixup(System::Object ^ collection, System::Xml::Serialization::XmlSerializationCollectionFixupCallback ^ callback, System::Object ^ collectionItems);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializationReader.CollectionFixup : obj * System.Xml.Serialization.XmlSerializationCollectionFixupCallback * obj -&gt; System.Xml.Serialization.XmlSerializationReader.CollectionFixup" Usage="new System.Xml.Serialization.XmlSerializationReader.CollectionFixup (collection, callback, collectionItems)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Callback" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callback As XmlSerializationCollectionFixupCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSerializationCollectionFixupCallback ^ Callback { System::Xml::Serialization::XmlSerializationCollectionFixupCallback ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Callback : System.Xml.Serialization.XmlSerializationCollectionFixupCallback" Usage="System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Callback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Collection As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Collection { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Collection : obj" Usage="System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CollectionItems As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CollectionItems { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CollectionItems : obj" Usage="System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

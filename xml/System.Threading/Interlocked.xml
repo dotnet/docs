@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Interlocked" />
   <TypeSignature Language="VB.NET" Value="Public Class Interlocked" />
   <TypeSignature Language="C++ CLI" Value="public ref class Interlocked abstract sealed" />
+  <TypeSignature Language="F#" Value="type Interlocked = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.Int32@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (ByRef location1 As Integer, value As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Add(int % location1, int value);" />
+      <MemberSignature Language="F#" Value="static member Add :  * int -&gt; int" Usage="System.Threading.Interlocked.Add (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.Int64@,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (ByRef location1 As Long, value As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Add(long % location1, long value);" />
+      <MemberSignature Language="F#" Value="static member Add :  * int64 -&gt; int64" Usage="System.Threading.Interlocked.Add (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -193,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Double@,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Double, value As Double, comparand As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double CompareExchange(double % location1, double value, double comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * double * double -&gt; double" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -251,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Int32@,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Integer, value As Integer, comparand As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareExchange(int % location1, int value, int comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * int * int -&gt; int" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -316,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Int64@,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Long, value As Long, comparand As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long CompareExchange(long % location1, long value, long comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * int64 * int64 -&gt; int64" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -364,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.IntPtr@,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As IntPtr, value As IntPtr, comparand As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CompareExchange(IntPtr % location1, IntPtr value, IntPtr comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * nativeint * nativeint -&gt; nativeint" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -420,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Object@,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Object, value As Object, comparand As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareExchange(System::Object ^ % location1, System::Object ^ value, System::Object ^ comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * obj * obj -&gt; obj" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -478,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Single@,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Single, value As Single, comparand As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float CompareExchange(float % location1, float value, float comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * single * single -&gt; single" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -536,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange``1(``0@,``0,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange(Of T As Class) (ByRef location1 As T, value As T, comparand As T) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T CompareExchange(T % location1, T value, T comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * 'T * 'T -&gt; 'T (requires 'T : null)" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -616,6 +626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decrement (ByRef location As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Decrement(int % location);" />
+      <MemberSignature Language="F#" Value="static member Decrement :  -&gt; int" Usage="System.Threading.Interlocked.Decrement location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -678,6 +689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decrement (ByRef location As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Decrement(long % location);" />
+      <MemberSignature Language="F#" Value="static member Decrement :  -&gt; int64" Usage="System.Threading.Interlocked.Decrement location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -738,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Double@,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Double, value As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Exchange(double % location1, double value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * double -&gt; double" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -777,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Int32@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Integer, value As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Exchange(int % location1, int value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * int -&gt; int" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -832,6 +846,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Int64@,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Long, value As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Exchange(long % location1, long value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * int64 -&gt; int64" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -871,6 +886,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.IntPtr@,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As IntPtr, value As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Exchange(IntPtr % location1, IntPtr value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * nativeint -&gt; nativeint" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -915,6 +931,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Object@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Object, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Exchange(System::Object ^ % location1, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * obj -&gt; obj" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -967,6 +984,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Single@,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Single, value As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Exchange(float % location1, float value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * single -&gt; single" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1006,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange``1(``0@,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange(Of T As Class) (ByRef location1 As T, value As T) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T Exchange(T % location1, T value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * 'T -&gt; 'T (requires 'T : null)" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1081,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Increment (ByRef location As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Increment(int % location);" />
+      <MemberSignature Language="F#" Value="static member Increment :  -&gt; int" Usage="System.Threading.Interlocked.Increment location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1143,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Increment (ByRef location As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Increment(long % location);" />
+      <MemberSignature Language="F#" Value="static member Increment :  -&gt; int64" Usage="System.Threading.Interlocked.Increment location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1197,6 +1218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.MemoryBarrier" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MemoryBarrier ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrier();" />
+      <MemberSignature Language="F#" Value="static member MemoryBarrier : unit -&gt; unit" Usage="System.Threading.Interlocked.MemoryBarrier " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1240,6 +1262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.MemoryBarrierProcessWide" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MemoryBarrierProcessWide ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrierProcessWide();" />
+      <MemberSignature Language="F#" Value="static member MemoryBarrierProcessWide : unit -&gt; unit" Usage="System.Threading.Interlocked.MemoryBarrierProcessWide " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1261,6 +1284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Read(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Read(long % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; int64" Usage="System.Threading.Interlocked.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

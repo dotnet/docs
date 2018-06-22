@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ScriptManagerDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptManagerDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptManagerDesigner : System::Web::UI::Design::ControlDesigner" />
+  <TypeSignature Language="F#" Value="type ScriptManagerDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetApplicationServices(class System.Web.UI.ScriptManager scriptManager, class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptManagerProxy&gt; proxies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ScriptManagerDesigner.GetApplicationServices(System.Web.UI.ScriptManager,System.Collections.Generic.IEnumerable{System.Web.UI.ScriptManagerProxy})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetApplicationServices(System::Web::UI::ScriptManager ^ scriptManager, System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptManagerProxy ^&gt; ^ proxies);" />
+      <MemberSignature Language="F#" Value="static member GetApplicationServices : System.Web.UI.ScriptManager * seq&lt;System.Web.UI.ScriptManagerProxy&gt; -&gt; string" Usage="System.Web.UI.Design.ScriptManagerDesigner.GetApplicationServices (scriptManager, proxies)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ScriptManagerDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="scriptManagerDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetProxyScript(class System.Web.UI.ScriptManager scriptManager, class System.Web.UI.ServiceReference serviceReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ScriptManagerDesigner.GetProxyScript(System.Web.UI.ScriptManager,System.Web.UI.ServiceReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetProxyScript(System::Web::UI::ScriptManager ^ scriptManager, System::Web::UI::ServiceReference ^ serviceReference);" />
+      <MemberSignature Language="F#" Value="static member GetProxyScript : System.Web.UI.ScriptManager * System.Web.UI.ServiceReference -&gt; string" Usage="System.Web.UI.Design.ScriptManagerDesigner.GetProxyScript (scriptManager, serviceReference)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetProxyUrl(class System.Web.UI.ScriptManager scriptManager, class System.Web.UI.ServiceReference serviceReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ScriptManagerDesigner.GetProxyUrl(System.Web.UI.ScriptManager,System.Web.UI.ServiceReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetProxyUrl(System::Web::UI::ScriptManager ^ scriptManager, System::Web::UI::ServiceReference ^ serviceReference);" />
+      <MemberSignature Language="F#" Value="static member GetProxyUrl : System.Web.UI.ScriptManager * System.Web.UI.ServiceReference -&gt; string" Usage="System.Web.UI.Design.ScriptManagerDesigner.GetProxyUrl (scriptManager, serviceReference)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetScriptFromWebResource(class System.Reflection.Assembly assembly, string resourceName, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ScriptManagerDesigner.GetScriptFromWebResource(System.Reflection.Assembly,System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetScriptFromWebResource(System::Reflection::Assembly ^ assembly, System::String ^ resourceName, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member GetScriptFromWebResource : System.Reflection.Assembly * string * System.Globalization.CultureInfo -&gt; string" Usage="System.Web.UI.Design.ScriptManagerDesigner.GetScriptFromWebResource (assembly, resourceName, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Web.UI.ScriptReference&gt; GetScriptReferences(class System.Web.UI.ScriptManager scriptManager, class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptManagerProxy&gt; proxies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ScriptManagerDesigner.GetScriptReferences(System.Web.UI.ScriptManager,System.Collections.Generic.IEnumerable{System.Web.UI.ScriptManagerProxy})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::ScriptReference ^&gt; ^ GetScriptReferences(System::Web::UI::ScriptManager ^ scriptManager, System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptManagerProxy ^&gt; ^ proxies);" />
+      <MemberSignature Language="F#" Value="static member GetScriptReferences : System.Web.UI.ScriptManager * seq&lt;System.Web.UI.ScriptManagerProxy&gt; -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.ScriptReference&gt;" Usage="System.Web.UI.Design.ScriptManagerDesigner.GetScriptReferences (scriptManager, proxies)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Web.UI.ServiceReference&gt; GetServiceReferences(class System.Web.UI.ScriptManager scriptManager, class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptManagerProxy&gt; proxies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ScriptManagerDesigner.GetServiceReferences(System.Web.UI.ScriptManager,System.Collections.Generic.IEnumerable{System.Web.UI.ScriptManagerProxy})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::ServiceReference ^&gt; ^ GetServiceReferences(System::Web::UI::ScriptManager ^ scriptManager, System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptManagerProxy ^&gt; ^ proxies);" />
+      <MemberSignature Language="F#" Value="static member GetServiceReferences : System.Web.UI.ScriptManager * seq&lt;System.Web.UI.ScriptManagerProxy&gt; -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.ServiceReference&gt;" Usage="System.Web.UI.Design.ScriptManagerDesigner.GetServiceReferences (scriptManager, proxies)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ScriptManagerDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="scriptManagerDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>

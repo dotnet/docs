@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.FederationConfigurationElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FederationConfigurationElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederationConfigurationElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FederationConfigurationElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElement.CookieHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieHandler As CookieHandlerElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::CookieHandlerElement ^ CookieHandler { System::IdentityModel::Services::CookieHandlerElement ^ get(); void set(System::IdentityModel::Services::CookieHandlerElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieHandler : System.IdentityModel.Services.CookieHandlerElement with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationElement.CookieHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElement.CustomElement" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomElement As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ CustomElement { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomElement : System.Xml.XmlElement with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationElement.CustomElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElement.IdentityConfigurationName" />
       <MemberSignature Language="VB.NET" Value="Public Property IdentityConfigurationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IdentityConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IdentityConfigurationName : string with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationElement.IdentityConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElement.IsConfigured" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConfigured As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConfigured { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConfigured : bool" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationElement.IsConfigured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElement.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedElement (elementName As String, reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedElement(System::String ^ elementName, System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool" Usage="federationConfigurationElement.OnDeserializeUnrecognizedElement (elementName, reader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElement.ServiceCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceCertificate As ServiceCertificateElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::ServiceCertificateElement ^ ServiceCertificate { System::IdentityModel::Services::ServiceCertificateElement ^ get(); void set(System::IdentityModel::Services::ServiceCertificateElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceCertificate : System.IdentityModel.Services.ServiceCertificateElement with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationElement.ServiceCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElement.WsFederation" />
       <MemberSignature Language="VB.NET" Value="Public Property WsFederation As WSFederationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::Configuration::WSFederationElement ^ WsFederation { System::IdentityModel::Services::Configuration::WSFederationElement ^ get(); void set(System::IdentityModel::Services::Configuration::WSFederationElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WsFederation : System.IdentityModel.Services.Configuration.WSFederationElement with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationElement.WsFederation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

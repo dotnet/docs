@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityTrackingLocationCollection&#xA;Inherits List(Of ActivityTrackingLocation)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityTrackingLocationCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::ActivityTrackingLocation ^&gt;" />
+  <TypeSignature Language="F#" Value="type ActivityTrackingLocationCollection = class&#xA;    inherit List&lt;ActivityTrackingLocation&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.ActivityTrackingLocation})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (locations As IEnumerable(Of ActivityTrackingLocation))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocationCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::ActivityTrackingLocation ^&gt; ^ locations);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection : seq&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt; -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection locations" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

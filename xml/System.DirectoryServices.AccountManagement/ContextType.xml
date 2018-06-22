@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.ContextType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContextType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContextType" />
+  <TypeSignature Language="F#" Value="type ContextType = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" />
       <MemberSignature Language="VB.NET" Value="ApplicationDirectory" />
       <MemberSignature Language="C++ CLI" Value="ApplicationDirectory" />
+      <MemberSignature Language="F#" Value="ApplicationDirectory = 2" Usage="System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextType.Domain" />
       <MemberSignature Language="VB.NET" Value="Domain" />
       <MemberSignature Language="C++ CLI" Value="Domain" />
+      <MemberSignature Language="F#" Value="Domain = 1" Usage="System.DirectoryServices.AccountManagement.ContextType.Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextType.Machine" />
       <MemberSignature Language="VB.NET" Value="Machine" />
       <MemberSignature Language="C++ CLI" Value="Machine" />
+      <MemberSignature Language="F#" Value="Machine = 0" Usage="System.DirectoryServices.AccountManagement.ContextType.Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

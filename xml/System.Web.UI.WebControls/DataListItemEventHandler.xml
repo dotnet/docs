@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataListItemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataListItemEventHandler(sender As Object, e As DataListItemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataListItemEventHandler(System::Object ^ sender, DataListItemEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataListItemEventHandler = delegate of obj * DataListItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

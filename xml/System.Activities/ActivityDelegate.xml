@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityDelegate" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityDelegate" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDelegate abstract" />
+  <TypeSignature Language="F#" Value="type ActivityDelegate = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityDelegate.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Activities.ActivityDelegate.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.GetResultArgument" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetResultArgument () As DelegateOutArgument" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Activities::DelegateOutArgument ^ GetResultArgument();" />
+      <MemberSignature Language="F#" Value="abstract member GetResultArgument : unit -&gt; System.Activities.DelegateOutArgument&#xA;override this.GetResultArgument : unit -&gt; System.Activities.DelegateOutArgument" Usage="activityDelegate.GetResultArgument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityDelegate.Handler" />
       <MemberSignature Language="VB.NET" Value="Public Property Handler As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Handler { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Handler : System.Activities.Activity with get, set" Usage="System.Activities.ActivityDelegate.Handler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.OnGetRuntimeDelegateArguments(System.Collections.Generic.IList{System.Activities.RuntimeDelegateArgument})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnGetRuntimeDelegateArguments (runtimeDelegateArguments As IList(Of RuntimeDelegateArgument))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGetRuntimeDelegateArguments(System::Collections::Generic::IList&lt;System::Activities::RuntimeDelegateArgument ^&gt; ^ runtimeDelegateArguments);" />
+      <MemberSignature Language="F#" Value="abstract member OnGetRuntimeDelegateArguments : System.Collections.Generic.IList&lt;System.Activities.RuntimeDelegateArgument&gt; -&gt; unit&#xA;override this.OnGetRuntimeDelegateArguments : System.Collections.Generic.IList&lt;System.Activities.RuntimeDelegateArgument&gt; -&gt; unit" Usage="activityDelegate.OnGetRuntimeDelegateArguments runtimeDelegateArguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.ShouldSerializeDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDisplayName () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDisplayName();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeDisplayName : unit -&gt; bool" Usage="activityDelegate.ShouldSerializeDisplayName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activityDelegate.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

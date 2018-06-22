@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlBulkCopy" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlBulkCopy&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlBulkCopy sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type SqlBulkCopy = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connection As SqlConnection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopy(System::Data::SqlClient::SqlConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopy : System.Data.SqlClient.SqlConnection -&gt; System.Data.SqlClient.SqlBulkCopy" Usage="new System.Data.SqlClient.SqlBulkCopy connection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopy(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopy : string -&gt; System.Data.SqlClient.SqlBulkCopy" Usage="new System.Data.SqlClient.SqlBulkCopy connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -171,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.String,System.Data.SqlClient.SqlBulkCopyOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String, copyOptions As SqlBulkCopyOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopy(System::String ^ connectionString, System::Data::SqlClient::SqlBulkCopyOptions copyOptions);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopy : string * System.Data.SqlClient.SqlBulkCopyOptions -&gt; System.Data.SqlClient.SqlBulkCopy" Usage="new System.Data.SqlClient.SqlBulkCopy (connectionString, copyOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -221,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlBulkCopyOptions,System.Data.SqlClient.SqlTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connection As SqlConnection, copyOptions As SqlBulkCopyOptions, externalTransaction As SqlTransaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopy(System::Data::SqlClient::SqlConnection ^ connection, System::Data::SqlClient::SqlBulkCopyOptions copyOptions, System::Data::SqlClient::SqlTransaction ^ externalTransaction);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopy : System.Data.SqlClient.SqlConnection * System.Data.SqlClient.SqlBulkCopyOptions * System.Data.SqlClient.SqlTransaction -&gt; System.Data.SqlClient.SqlBulkCopy" Usage="new System.Data.SqlClient.SqlBulkCopy (connection, copyOptions, externalTransaction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -264,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopy.BatchSize" />
       <MemberSignature Language="VB.NET" Value="Public Property BatchSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BatchSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BatchSize : int with get, set" Usage="System.Data.SqlClient.SqlBulkCopy.BatchSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -320,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopy.BulkCopyTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property BulkCopyTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BulkCopyTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BulkCopyTimeout : int with get, set" Usage="System.Data.SqlClient.SqlBulkCopy.BulkCopyTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -370,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="sqlBulkCopy.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -422,6 +430,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopy.ColumnMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnMappings As SqlBulkCopyColumnMappingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlBulkCopyColumnMappingCollection ^ ColumnMappings { System::Data::SqlClient::SqlBulkCopyColumnMappingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnMappings : System.Data.SqlClient.SqlBulkCopyColumnMappingCollection" Usage="System.Data.SqlClient.SqlBulkCopy.ColumnMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -462,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" />
       <MemberSignature Language="VB.NET" Value="Public Property DestinationTableName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DestinationTableName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DestinationTableName : string with get, set" Usage="System.Data.SqlClient.SqlBulkCopy.DestinationTableName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -518,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopy.EnableStreaming" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableStreaming As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableStreaming { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableStreaming : bool with get, set" Usage="System.Data.SqlClient.SqlBulkCopy.EnableStreaming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -556,6 +567,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopy.NotifyAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyAfter As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NotifyAfter { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyAfter : int with get, set" Usage="System.Data.SqlClient.SqlBulkCopy.NotifyAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -608,6 +620,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SqlRowsCopied As SqlRowsCopiedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::SqlClient::SqlRowsCopiedEventHandler ^ SqlRowsCopied;" />
+      <MemberSignature Language="F#" Value="member this.SqlRowsCopied : System.Data.SqlClient.SqlRowsCopiedEventHandler " Usage="member this.SqlRowsCopied : System.Data.SqlClient.SqlRowsCopiedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -723,6 +736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.Common.DbDataReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteToServer (reader As DbDataReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToServer(System::Data::Common::DbDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServer : System.Data.Common.DbDataReader -&gt; unit" Usage="sqlBulkCopy.WriteToServer reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -756,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.DataRow[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteToServer (rows As DataRow())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToServer(cli::array &lt;System::Data::DataRow ^&gt; ^ rows);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServer : System.Data.DataRow[] -&gt; unit" Usage="sqlBulkCopy.WriteToServer rows" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -806,6 +821,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteToServer (table As DataTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToServer(System::Data::DataTable ^ table);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServer : System.Data.DataTable -&gt; unit" Usage="sqlBulkCopy.WriteToServer table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -858,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.IDataReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteToServer (reader As IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToServer(System::Data::IDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServer : System.Data.IDataReader -&gt; unit" Usage="sqlBulkCopy.WriteToServer reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -910,6 +927,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.DataTable,System.Data.DataRowState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteToServer (table As DataTable, rowState As DataRowState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToServer(System::Data::DataTable ^ table, System::Data::DataRowState rowState);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServer : System.Data.DataTable * System.Data.DataRowState -&gt; unit" Usage="sqlBulkCopy.WriteToServer (table, rowState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -997,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteToServerAsync (reader As DbDataReader) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(System::Data::Common::DbDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.Common.DbDataReader -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1031,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.DataRow[])" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteToServerAsync (rows As DataRow()) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(cli::array &lt;System::Data::DataRow ^&gt; ^ rows);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.DataRow[] -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync rows" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1080,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteToServerAsync (table As DataTable) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(System::Data::DataTable ^ table);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.DataTable -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1129,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.IDataReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteToServerAsync (reader As IDataReader) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(System::Data::IDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.IDataReader -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1181,6 +1203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteToServerAsync(class System.Data.Common.DbDataReader reader, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(System::Data::Common::DbDataReader ^ reader, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.Common.DbDataReader * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync (reader, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1216,6 +1239,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteToServerAsync(class System.Data.DataRow[] rows, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.DataRow[],System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(cli::array &lt;System::Data::DataRow ^&gt; ^ rows, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.DataRow[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync (rows, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1269,6 +1293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.DataTable,System.Data.DataRowState)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteToServerAsync (table As DataTable, rowState As DataRowState) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(System::Data::DataTable ^ table, System::Data::DataRowState rowState);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.DataTable * System.Data.DataRowState -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync (table, rowState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1319,6 +1344,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteToServerAsync(class System.Data.DataTable table, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.DataTable,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(System::Data::DataTable ^ table, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.DataTable * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync (table, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1371,6 +1397,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteToServerAsync(class System.Data.IDataReader reader, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.IDataReader,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(System::Data::IDataReader ^ reader, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.IDataReader * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync (reader, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1427,6 +1454,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteToServerAsync(class System.Data.DataTable table, valuetype System.Data.DataRowState rowState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.DataTable,System.Data.DataRowState,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteToServerAsync(System::Data::DataTable ^ table, System::Data::DataRowState rowState, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.WriteToServerAsync : System.Data.DataTable * System.Data.DataRowState * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sqlBulkCopy.WriteToServerAsync (table, rowState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

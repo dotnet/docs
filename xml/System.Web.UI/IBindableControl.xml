@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IBindableControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBindableControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBindableControl" />
+  <TypeSignature Language="F#" Value="type IBindableControl = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IBindableControl.ExtractValues(System.Collections.Specialized.IOrderedDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExtractValues (dictionary As IOrderedDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExtractValues(System::Collections::Specialized::IOrderedDictionary ^ dictionary);" />
+      <MemberSignature Language="F#" Value="abstract member ExtractValues : System.Collections.Specialized.IOrderedDictionary -&gt; unit" Usage="iBindableControl.ExtractValues dictionary" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

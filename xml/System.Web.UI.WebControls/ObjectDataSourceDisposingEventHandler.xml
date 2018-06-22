@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectDataSourceDisposingEventHandler(sender As Object, e As ObjectDataSourceDisposingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ObjectDataSourceDisposingEventHandler(System::Object ^ sender, ObjectDataSourceDisposingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ObjectDataSourceDisposingEventHandler = delegate of obj * ObjectDataSourceDisposingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

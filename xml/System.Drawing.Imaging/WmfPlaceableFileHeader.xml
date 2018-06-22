@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.WmfPlaceableFileHeader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WmfPlaceableFileHeader" />
   <TypeSignature Language="C++ CLI" Value="public ref class WmfPlaceableFileHeader sealed" />
+  <TypeSignature Language="F#" Value="type WmfPlaceableFileHeader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.BboxBottom" />
       <MemberSignature Language="VB.NET" Value="Public Property BboxBottom As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short BboxBottom { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.BboxBottom : int16 with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.BboxBottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.BboxLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property BboxLeft As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short BboxLeft { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.BboxLeft : int16 with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.BboxLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.BboxRight" />
       <MemberSignature Language="VB.NET" Value="Public Property BboxRight As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short BboxRight { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.BboxRight : int16 with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.BboxRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.BboxTop" />
       <MemberSignature Language="VB.NET" Value="Public Property BboxTop As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short BboxTop { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.BboxTop : int16 with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.BboxTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.Checksum" />
       <MemberSignature Language="VB.NET" Value="Public Property Checksum As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Checksum { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.Checksum : int16 with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.Checksum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.Hmf" />
       <MemberSignature Language="VB.NET" Value="Public Property Hmf As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Hmf { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.Hmf : int16 with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.Hmf" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.Inch" />
       <MemberSignature Language="VB.NET" Value="Public Property Inch As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Inch { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.Inch : int16 with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.Inch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.Key" />
       <MemberSignature Language="VB.NET" Value="Public Property Key As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Key { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : int with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.WmfPlaceableFileHeader.Reserved" />
       <MemberSignature Language="VB.NET" Value="Public Property Reserved As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Reserved { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Reserved : int with get, set" Usage="System.Drawing.Imaging.WmfPlaceableFileHeader.Reserved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

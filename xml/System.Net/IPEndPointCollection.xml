@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IPEndPointCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class IPEndPointCollection&#xA;Inherits Collection(Of IPEndPoint)" />
   <TypeSignature Language="C++ CLI" Value="public ref class IPEndPointCollection : System::Collections::ObjectModel::Collection&lt;System::Net::IPEndPoint ^&gt;" />
+  <TypeSignature Language="F#" Value="type IPEndPointCollection = class&#xA;    inherit Collection&lt;IPEndPoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPointCollection.InsertItem(System.Int32,System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As IPEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::IPEndPoint ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.IPEndPoint -&gt; unit" Usage="iPEndPointCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPointCollection.SetItem(System.Int32,System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As IPEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::IPEndPoint ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.IPEndPoint -&gt; unit" Usage="iPEndPointCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

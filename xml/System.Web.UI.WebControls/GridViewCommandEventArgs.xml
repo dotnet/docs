@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewCommandEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewCommandEventArgs&#xA;Inherits CommandEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewCommandEventArgs : System::Web::UI::WebControls::CommandEventArgs" />
+  <TypeSignature Language="F#" Value="type GridViewCommandEventArgs = class&#xA;    inherit CommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewCommandEventArgs.#ctor(System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandSource As Object, originalArgs As CommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewCommandEventArgs(System::Object ^ commandSource, System::Web::UI::WebControls::CommandEventArgs ^ originalArgs);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.GridViewCommandEventArgs : obj * System.Web.UI.WebControls.CommandEventArgs -&gt; System.Web.UI.WebControls.GridViewCommandEventArgs" Usage="new System.Web.UI.WebControls.GridViewCommandEventArgs (commandSource, originalArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewCommandEventArgs.#ctor(System.Web.UI.WebControls.GridViewRow,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (row As GridViewRow, commandSource As Object, originalArgs As CommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewCommandEventArgs(System::Web::UI::WebControls::GridViewRow ^ row, System::Object ^ commandSource, System::Web::UI::WebControls::CommandEventArgs ^ originalArgs);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.GridViewCommandEventArgs : System.Web.UI.WebControls.GridViewRow * obj * System.Web.UI.WebControls.CommandEventArgs -&gt; System.Web.UI.WebControls.GridViewCommandEventArgs" Usage="new System.Web.UI.WebControls.GridViewCommandEventArgs (row, commandSource, originalArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandSource { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandSource : obj" Usage="System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewCommandEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Web.UI.WebControls.GridViewCommandEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

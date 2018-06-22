@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TriggerBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TriggerBase&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class TriggerBase abstract : System::Windows::DependencyObject" />
+  <TypeSignature Language="F#" Value="type TriggerBase = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TriggerBase.EnterActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnterActions As TriggerActionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TriggerActionCollection ^ EnterActions { System::Windows::TriggerActionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnterActions : System.Windows.TriggerActionCollection" Usage="System.Windows.TriggerBase.EnterActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TriggerBase.ExitActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExitActions As TriggerActionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TriggerActionCollection ^ ExitActions { System::Windows::TriggerActionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExitActions : System.Windows.TriggerActionCollection" Usage="System.Windows.TriggerBase.ExitActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

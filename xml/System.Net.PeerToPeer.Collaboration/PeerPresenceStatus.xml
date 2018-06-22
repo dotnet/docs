@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum PeerPresenceStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class PeerPresenceStatus" />
+  <TypeSignature Language="F#" Value="type PeerPresenceStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Away" />
       <MemberSignature Language="VB.NET" Value="Away" />
       <MemberSignature Language="C++ CLI" Value="Away" />
+      <MemberSignature Language="F#" Value="Away = 2" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Away" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.BeRightBack" />
       <MemberSignature Language="VB.NET" Value="BeRightBack" />
       <MemberSignature Language="C++ CLI" Value="BeRightBack" />
+      <MemberSignature Language="F#" Value="BeRightBack = 3" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.BeRightBack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Busy" />
       <MemberSignature Language="VB.NET" Value="Busy" />
       <MemberSignature Language="C++ CLI" Value="Busy" />
+      <MemberSignature Language="F#" Value="Busy = 5" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Busy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Idle" />
       <MemberSignature Language="VB.NET" Value="Idle" />
       <MemberSignature Language="C++ CLI" Value="Idle" />
+      <MemberSignature Language="F#" Value="Idle = 4" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Offline" />
       <MemberSignature Language="VB.NET" Value="Offline" />
       <MemberSignature Language="C++ CLI" Value="Offline" />
+      <MemberSignature Language="F#" Value="Offline = 0" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Offline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Online" />
       <MemberSignature Language="VB.NET" Value="Online" />
       <MemberSignature Language="C++ CLI" Value="Online" />
+      <MemberSignature Language="F#" Value="Online = 7" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.Online" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.OnThePhone" />
       <MemberSignature Language="VB.NET" Value="OnThePhone" />
       <MemberSignature Language="C++ CLI" Value="OnThePhone" />
+      <MemberSignature Language="F#" Value="OnThePhone = 6" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.OnThePhone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -166,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.OutToLunch" />
       <MemberSignature Language="VB.NET" Value="OutToLunch" />
       <MemberSignature Language="C++ CLI" Value="OutToLunch" />
+      <MemberSignature Language="F#" Value="OutToLunch = 1" Usage="System.Net.PeerToPeer.Collaboration.PeerPresenceStatus.OutToLunch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

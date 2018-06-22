@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAccessDecision" />
   <TypeSignature Language="VB.NET" Value="Public Enum SamlAccessDecision" />
   <TypeSignature Language="C++ CLI" Value="public enum class SamlAccessDecision" />
+  <TypeSignature Language="F#" Value="type SamlAccessDecision = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SamlAccessDecision.Deny" />
       <MemberSignature Language="VB.NET" Value="Deny" />
       <MemberSignature Language="C++ CLI" Value="Deny" />
+      <MemberSignature Language="F#" Value="Deny = 1" Usage="System.IdentityModel.Tokens.SamlAccessDecision.Deny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SamlAccessDecision.Indeterminate" />
       <MemberSignature Language="VB.NET" Value="Indeterminate" />
       <MemberSignature Language="C++ CLI" Value="Indeterminate" />
+      <MemberSignature Language="F#" Value="Indeterminate = 2" Usage="System.IdentityModel.Tokens.SamlAccessDecision.Indeterminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SamlAccessDecision.Permit" />
       <MemberSignature Language="VB.NET" Value="Permit" />
       <MemberSignature Language="C++ CLI" Value="Permit" />
+      <MemberSignature Language="F#" Value="Permit = 0" Usage="System.IdentityModel.Tokens.SamlAccessDecision.Permit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

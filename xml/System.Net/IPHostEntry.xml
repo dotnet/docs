@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IPHostEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class IPHostEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class IPHostEntry" />
+  <TypeSignature Language="F#" Value="type IPHostEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NameResolution</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPHostEntry.AddressList" />
       <MemberSignature Language="VB.NET" Value="Public Property AddressList As IPAddress()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Net::IPAddress ^&gt; ^ AddressList { cli::array &lt;System::Net::IPAddress ^&gt; ^ get(); void set(cli::array &lt;System::Net::IPAddress ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AddressList : System.Net.IPAddress[] with get, set" Usage="System.Net.IPHostEntry.AddressList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPHostEntry.Aliases" />
       <MemberSignature Language="VB.NET" Value="Public Property Aliases As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Aliases { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Aliases : string[] with get, set" Usage="System.Net.IPHostEntry.Aliases" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPHostEntry.HostName" />
       <MemberSignature Language="VB.NET" Value="Public Property HostName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HostName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HostName : string with get, set" Usage="System.Net.IPHostEntry.HostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>

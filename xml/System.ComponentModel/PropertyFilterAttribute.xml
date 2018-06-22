@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyFilterAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyFilterAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyFilterAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type PropertyFilterAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyFilterAttribute.#ctor(System.ComponentModel.PropertyFilterOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filter As PropertyFilterOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyFilterAttribute(System::ComponentModel::PropertyFilterOptions filter);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyFilterAttribute : System.ComponentModel.PropertyFilterOptions -&gt; System.ComponentModel.PropertyFilterAttribute" Usage="new System.ComponentModel.PropertyFilterAttribute filter" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As PropertyFilterAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::PropertyFilterAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.PropertyFilterAttribute" Usage="System.ComponentModel.PropertyFilterAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyFilterAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="propertyFilterAttribute.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyFilterAttribute.Filter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filter As PropertyFilterOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::PropertyFilterOptions Filter { System::ComponentModel::PropertyFilterOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.ComponentModel.PropertyFilterOptions" Usage="System.ComponentModel.PropertyFilterAttribute.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyFilterAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="propertyFilterAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyFilterAttribute.Match(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Match : obj -&gt; bool" Usage="propertyFilterAttribute.Match value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceModelConfigurationElementCollection(Of ConfigurationElementType)&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename ConfigurationElementType&gt;&#xA; where ConfigurationElementType : ConfigurationElementgcnew()public ref class ServiceModelConfigurationElementCollection abstract : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type ServiceModelConfigurationElementCollection&lt;'ConfigurationElementType (requires 'ConfigurationElementType :&gt; ConfigurationElement and 'ConfigurationElementType : (new : unit -&gt; 'ConfigurationElementType))&gt; = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As ConfigurationElementType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(ConfigurationElementType element);" />
+      <MemberSignature Language="F#" Value="member this.Add : 'ConfigurationElementType -&gt; unit" Usage="serviceModelConfigurationElementCollection.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.BaseAdd(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BaseAdd (element As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BaseAdd(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.BaseAdd : System.Configuration.ConfigurationElement -&gt; unit" Usage="serviceModelConfigurationElementCollection.BaseAdd element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="serviceModelConfigurationElementCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;'ConfigurationElementType (requires 'ConfigurationElementType :&gt; System.Configuration.ConfigurationElement and 'ConfigurationElementType : (new : unit -&gt; 'ConfigurationElementType))&gt;.CollectionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.ContainsKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : obj -&gt; bool&#xA;override this.ContainsKey : obj -&gt; bool" Usage="serviceModelConfigurationElementCollection.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ConfigurationElementType(), start As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;ConfigurationElementType&gt; ^ array, int start);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : 'ConfigurationElementType[] * int -&gt; unit" Usage="serviceModelConfigurationElementCollection.CopyTo (array, start)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="serviceModelConfigurationElementCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;'ConfigurationElementType (requires 'ConfigurationElementType :&gt; System.Configuration.ConfigurationElement and 'ConfigurationElementType : (new : unit -&gt; 'ConfigurationElementType))&gt;.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -220,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.IndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As ConfigurationElementType) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(ConfigurationElementType element);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : 'ConfigurationElementType -&gt; int" Usage="serviceModelConfigurationElementCollection.IndexOf element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -255,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ConfigurationElementType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ConfigurationElementType default[int] { ConfigurationElementType get(int index); void set(int index, ConfigurationElementType value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'ConfigurationElementType with get, set" Usage="System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;'ConfigurationElementType (requires 'ConfigurationElementType :&gt; System.Configuration.ConfigurationElement and 'ConfigurationElementType : (new : unit -&gt; 'ConfigurationElementType))&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -281,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(key As Object) As ConfigurationElementType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property ConfigurationElementType default[System::Object ^] { ConfigurationElementType get(System::Object ^ key); void set(System::Object ^ key, ConfigurationElementType value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : 'ConfigurationElementType with get, set" Usage="System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;'ConfigurationElementType (requires 'ConfigurationElementType :&gt; System.Configuration.ConfigurationElement and 'ConfigurationElementType : (new : unit -&gt; 'ConfigurationElementType))&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -309,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As ConfigurationElementType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(ConfigurationElementType element);" />
+      <MemberSignature Language="F#" Value="member this.Remove : 'ConfigurationElementType -&gt; unit" Usage="serviceModelConfigurationElementCollection.Remove element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -347,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="serviceModelConfigurationElementCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -376,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.RemoveAt(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (key As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : obj -&gt; unit" Usage="serviceModelConfigurationElementCollection.RemoveAt key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DbUpdatableDataRecord" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbUpdatableDataRecord&#xA;Inherits DbDataRecord&#xA;Implements IExtendedDataRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbUpdatableDataRecord abstract : System::Data::Common::DbDataRecord, System::Data::IExtendedDataRecord" />
+  <TypeSignature Language="F#" Value="type DbUpdatableDataRecord = class&#xA;    inherit DbDataRecord&#xA;    interface IExtendedDataRecord&#xA;    interface IDataRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DbUpdatableDataRecord.DataRecordInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataRecordInfo As DataRecordInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Common::DataRecordInfo ^ DataRecordInfo { System::Data::Common::DataRecordInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataRecordInfo : System.Data.Common.DataRecordInfo" Usage="System.Data.Objects.DbUpdatableDataRecord.DataRecordInfo" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IExtendedDataRecord.DataRecordInfo</InterfaceMember>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DbUpdatableDataRecord.FieldCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.Objects.DbUpdatableDataRecord.FieldCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.FieldCount</InterfaceMember>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoolean (ordinal As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetBoolean : int -&gt; bool" Usage="dbUpdatableDataRecord.GetBoolean ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetBoolean(System.Int32)</InterfaceMember>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByte (ordinal As Integer) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetByte : int -&gt; byte" Usage="dbUpdatableDataRecord.GetByte ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetByte(System.Int32)</InterfaceMember>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (ordinal As Integer, dataIndex As Long, buffer As Byte(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int ordinal, long dataIndex, cli::array &lt;System::Byte&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="dbUpdatableDataRecord.GetBytes (ordinal, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)</InterfaceMember>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetChar(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChar (ordinal As Integer) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetChar : int -&gt; char" Usage="dbUpdatableDataRecord.GetChar ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetChar(System.Int32)</InterfaceMember>
@@ -189,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (ordinal As Integer, dataIndex As Long, buffer As Char(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int ordinal, long dataIndex, cli::array &lt;char&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="dbUpdatableDataRecord.GetChars (ordinal, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)</InterfaceMember>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetDataReader(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataReader (i As Integer) As DbDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbDataReader ^ GetDataReader(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataReader : int -&gt; System.Data.Common.DbDataReader&#xA;override this.GetDataReader : int -&gt; System.Data.Common.DbDataReader" Usage="dbUpdatableDataRecord.GetDataReader i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IExtendedDataRecord.GetDataReader(System.Int32)</InterfaceMember>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetDataRecord(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataRecord (ordinal As Integer) As DbDataRecord" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbDataRecord ^ GetDataRecord(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataRecord : int -&gt; System.Data.Common.DbDataRecord&#xA;override this.GetDataRecord : int -&gt; System.Data.Common.DbDataRecord" Usage="dbUpdatableDataRecord.GetDataRecord ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IExtendedDataRecord.GetDataRecord(System.Int32)</InterfaceMember>
@@ -278,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetDataTypeName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataTypeName (ordinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDataTypeName : int -&gt; string" Usage="dbUpdatableDataRecord.GetDataTypeName ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDataTypeName(System.Int32)</InterfaceMember>
@@ -305,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDateTime (ordinal As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDateTime : int -&gt; DateTime" Usage="dbUpdatableDataRecord.GetDateTime ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDateTime(System.Int32)</InterfaceMember>
@@ -332,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetDbDataReader(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbDataReader (ordinal As Integer) As DbDataReader" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbDataReader ^ GetDbDataReader(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDbDataReader : int -&gt; System.Data.Common.DbDataReader" Usage="dbUpdatableDataRecord.GetDbDataReader ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -356,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecimal (ordinal As Integer) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDecimal : int -&gt; decimal" Usage="dbUpdatableDataRecord.GetDecimal ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDecimal(System.Int32)</InterfaceMember>
@@ -383,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDouble (ordinal As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDouble : int -&gt; double" Usage="dbUpdatableDataRecord.GetDouble ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDouble(System.Int32)</InterfaceMember>
@@ -410,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldType (ordinal As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetFieldType : int -&gt; Type" Usage="dbUpdatableDataRecord.GetFieldType ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetFieldType(System.Int32)</InterfaceMember>
@@ -437,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetFloat(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFloat (ordinal As Integer) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetFloat : int -&gt; single" Usage="dbUpdatableDataRecord.GetFloat ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetFloat(System.Int32)</InterfaceMember>
@@ -464,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGuid (ordinal As Integer) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetGuid : int -&gt; Guid" Usage="dbUpdatableDataRecord.GetGuid ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetGuid(System.Int32)</InterfaceMember>
@@ -491,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt16 (ordinal As Integer) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt16 : int -&gt; int16" Usage="dbUpdatableDataRecord.GetInt16 ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt16(System.Int32)</InterfaceMember>
@@ -518,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt32 (ordinal As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt32 : int -&gt; int" Usage="dbUpdatableDataRecord.GetInt32 ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt32(System.Int32)</InterfaceMember>
@@ -545,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt64 (ordinal As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt64 : int -&gt; int64" Usage="dbUpdatableDataRecord.GetInt64 ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt64(System.Int32)</InterfaceMember>
@@ -572,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (ordinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetName : int -&gt; string" Usage="dbUpdatableDataRecord.GetName ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetName(System.Int32)</InterfaceMember>
@@ -599,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetOrdinal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOrdinal (name As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetOrdinal : string -&gt; int" Usage="dbUpdatableDataRecord.GetOrdinal name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetOrdinal(System.String)</InterfaceMember>
@@ -626,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetRecordValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetRecordValue (ordinal As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ GetRecordValue(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetRecordValue : int -&gt; obj" Usage="dbUpdatableDataRecord.GetRecordValue ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -650,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (ordinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetString : int -&gt; string" Usage="dbUpdatableDataRecord.GetString ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetString(System.Int32)</InterfaceMember>
@@ -677,6 +702,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (ordinal As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="dbUpdatableDataRecord.GetValue ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetValue(System.Int32)</InterfaceMember>
@@ -704,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.GetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.GetValues : obj[] -&gt; int" Usage="dbUpdatableDataRecord.GetValues values" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetValues(System.Object[])</InterfaceMember>
@@ -731,6 +758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.IsDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDBNull (ordinal As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.IsDBNull : int -&gt; bool" Usage="dbUpdatableDataRecord.IsDBNull ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.IsDBNull(System.Int32)</InterfaceMember>
@@ -768,6 +796,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DbUpdatableDataRecord.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(ordinal As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int ordinal); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.Objects.DbUpdatableDataRecord.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.Item(System.Int32)</InterfaceMember>
@@ -795,6 +824,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DbUpdatableDataRecord.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.Objects.DbUpdatableDataRecord.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.Item(System.String)</InterfaceMember>
@@ -822,6 +852,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetBoolean(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBoolean (ordinal As Integer, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBoolean(int ordinal, bool value);" />
+      <MemberSignature Language="F#" Value="member this.SetBoolean : int * bool -&gt; unit" Usage="dbUpdatableDataRecord.SetBoolean (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -847,6 +878,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetByte(System.Int32,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetByte (ordinal As Integer, value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetByte(int ordinal, System::Byte value);" />
+      <MemberSignature Language="F#" Value="member this.SetByte : int * byte -&gt; unit" Usage="dbUpdatableDataRecord.SetByte (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -872,6 +904,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetChar(System.Int32,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetChar (ordinal As Integer, value As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetChar(int ordinal, char value);" />
+      <MemberSignature Language="F#" Value="member this.SetChar : int * char -&gt; unit" Usage="dbUpdatableDataRecord.SetChar (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -897,6 +930,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetDataRecord(System.Int32,System.Data.IDataRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDataRecord (ordinal As Integer, value As IDataRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDataRecord(int ordinal, System::Data::IDataRecord ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetDataRecord : int * System.Data.IDataRecord -&gt; unit" Usage="dbUpdatableDataRecord.SetDataRecord (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -922,6 +956,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetDateTime(System.Int32,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDateTime (ordinal As Integer, value As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDateTime(int ordinal, DateTime value);" />
+      <MemberSignature Language="F#" Value="member this.SetDateTime : int * DateTime -&gt; unit" Usage="dbUpdatableDataRecord.SetDateTime (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -947,6 +982,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDBNull (ordinal As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDBNull(int ordinal);" />
+      <MemberSignature Language="F#" Value="member this.SetDBNull : int -&gt; unit" Usage="dbUpdatableDataRecord.SetDBNull ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -970,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetDecimal(System.Int32,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDecimal (ordinal As Integer, value As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDecimal(int ordinal, System::Decimal value);" />
+      <MemberSignature Language="F#" Value="member this.SetDecimal : int * decimal -&gt; unit" Usage="dbUpdatableDataRecord.SetDecimal (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -995,6 +1032,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetDouble(System.Int32,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDouble (ordinal As Integer, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDouble(int ordinal, double value);" />
+      <MemberSignature Language="F#" Value="member this.SetDouble : int * double -&gt; unit" Usage="dbUpdatableDataRecord.SetDouble (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1020,6 +1058,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetFloat(System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFloat (ordinal As Integer, value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFloat(int ordinal, float value);" />
+      <MemberSignature Language="F#" Value="member this.SetFloat : int * single -&gt; unit" Usage="dbUpdatableDataRecord.SetFloat (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1045,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetGuid(System.Int32,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetGuid (ordinal As Integer, value As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetGuid(int ordinal, Guid value);" />
+      <MemberSignature Language="F#" Value="member this.SetGuid : int * Guid -&gt; unit" Usage="dbUpdatableDataRecord.SetGuid (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1070,6 +1110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetInt16(System.Int32,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetInt16 (ordinal As Integer, value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInt16(int ordinal, short value);" />
+      <MemberSignature Language="F#" Value="member this.SetInt16 : int * int16 -&gt; unit" Usage="dbUpdatableDataRecord.SetInt16 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1095,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetInt32(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetInt32 (ordinal As Integer, value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInt32(int ordinal, int value);" />
+      <MemberSignature Language="F#" Value="member this.SetInt32 : int * int -&gt; unit" Usage="dbUpdatableDataRecord.SetInt32 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1120,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetInt64(System.Int32,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetInt64 (ordinal As Integer, value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInt64(int ordinal, long value);" />
+      <MemberSignature Language="F#" Value="member this.SetInt64 : int * int64 -&gt; unit" Usage="dbUpdatableDataRecord.SetInt64 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1145,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetRecordValue(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub SetRecordValue (ordinal As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void SetRecordValue(int ordinal, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetRecordValue : int * obj -&gt; unit" Usage="dbUpdatableDataRecord.SetRecordValue (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1170,6 +1214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetString(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetString (ordinal As Integer, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetString(int ordinal, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetString : int * string -&gt; unit" Usage="dbUpdatableDataRecord.SetString (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1195,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetValue(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (ordinal As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(int ordinal, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : int * obj -&gt; unit" Usage="dbUpdatableDataRecord.SetValue (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1220,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SetValues (ParamArray values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int SetValues(... cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.SetValues : obj[] -&gt; int" Usage="dbUpdatableDataRecord.SetValues values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

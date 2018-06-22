@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildEventContext" />
   <TypeSignature Language="VB.NET" Value="Public Class BuildEventContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildEventContext" />
+  <TypeSignature Language="F#" Value="type BuildEventContext = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nodeId As Integer, targetId As Integer, projectContextId As Integer, taskId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildEventContext(int nodeId, int targetId, int projectContextId, int taskId);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildEventContext : int * int * int * int -&gt; Microsoft.Build.Framework.BuildEventContext" Usage="new Microsoft.Build.Framework.BuildEventContext (nodeId, targetId, projectContextId, taskId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nodeId As Integer, projectInstanceId As Integer, projectContextId As Integer, targetId As Integer, taskId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildEventContext(int nodeId, int projectInstanceId, int projectContextId, int targetId, int taskId);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildEventContext : int * int * int * int * int -&gt; Microsoft.Build.Framework.BuildEventContext" Usage="new Microsoft.Build.Framework.BuildEventContext (nodeId, projectInstanceId, projectContextId, targetId, taskId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (submissionId As Integer, nodeId As Integer, projectInstanceId As Integer, projectContextId As Integer, targetId As Integer, taskId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildEventContext(int submissionId, int nodeId, int projectInstanceId, int projectContextId, int targetId, int taskId);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildEventContext : int * int * int * int * int * int -&gt; Microsoft.Build.Framework.BuildEventContext" Usage="new Microsoft.Build.Framework.BuildEventContext (submissionId, nodeId, projectInstanceId, projectContextId, targetId, taskId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventContext.BuildRequestId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildRequestId As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BuildRequestId { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildRequestId : int64" Usage="Microsoft.Build.Framework.BuildEventContext.BuildRequestId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="buildEventContext.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="buildEventContext.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -189,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventContext.Invalid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Invalid As BuildEventContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Build::Framework::BuildEventContext ^ Invalid { Microsoft::Build::Framework::BuildEventContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Invalid : Microsoft.Build.Framework.BuildEventContext" Usage="Microsoft.Build.Framework.BuildEventContext.Invalid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -210,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.BuildEventContext.InvalidNodeId" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidNodeId As Integer  = -2" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidNodeId = -2;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidNodeId : int" Usage="Microsoft.Build.Framework.BuildEventContext.InvalidNodeId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.BuildEventContext.InvalidProjectContextId" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidProjectContextId As Integer  = -2" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidProjectContextId = -2;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidProjectContextId : int" Usage="Microsoft.Build.Framework.BuildEventContext.InvalidProjectContextId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.BuildEventContext.InvalidProjectInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidProjectInstanceId As Integer  = -1" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidProjectInstanceId = -1;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidProjectInstanceId : int" Usage="Microsoft.Build.Framework.BuildEventContext.InvalidProjectInstanceId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.BuildEventContext.InvalidSubmissionId" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidSubmissionId As Integer  = -1" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidSubmissionId = -1;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidSubmissionId : int" Usage="Microsoft.Build.Framework.BuildEventContext.InvalidSubmissionId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -297,6 +309,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.BuildEventContext.InvalidTargetId" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidTargetId As Integer  = -1" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidTargetId = -1;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidTargetId : int" Usage="Microsoft.Build.Framework.BuildEventContext.InvalidTargetId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -317,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.BuildEventContext.InvalidTaskId" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidTaskId As Integer  = -1" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidTaskId = -1;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidTaskId : int" Usage="Microsoft.Build.Framework.BuildEventContext.InvalidTaskId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -337,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventContext.NodeId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeId : int" Usage="Microsoft.Build.Framework.BuildEventContext.NodeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -357,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.op_Equality(Microsoft.Build.Framework.BuildEventContext,Microsoft.Build.Framework.BuildEventContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As BuildEventContext, right As BuildEventContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Microsoft::Build::Framework::BuildEventContext ^ left, Microsoft::Build::Framework::BuildEventContext ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Microsoft.Build.Framework.BuildEventContext * Microsoft.Build.Framework.BuildEventContext -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -383,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.op_Inequality(Microsoft.Build.Framework.BuildEventContext,Microsoft.Build.Framework.BuildEventContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As BuildEventContext, right As BuildEventContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Microsoft::Build::Framework::BuildEventContext ^ left, Microsoft::Build::Framework::BuildEventContext ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Microsoft.Build.Framework.BuildEventContext * Microsoft.Build.Framework.BuildEventContext -&gt; bool" Usage="Microsoft.Build.Framework.BuildEventContext.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -409,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventContext.ProjectContextId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectContextId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProjectContextId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectContextId : int" Usage="Microsoft.Build.Framework.BuildEventContext.ProjectContextId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -429,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventContext.ProjectInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectInstanceId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProjectInstanceId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectInstanceId : int" Usage="Microsoft.Build.Framework.BuildEventContext.ProjectInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -449,6 +468,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventContext.SubmissionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmissionId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubmissionId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmissionId : int" Usage="Microsoft.Build.Framework.BuildEventContext.SubmissionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -469,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventContext.TargetId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TargetId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetId : int" Usage="Microsoft.Build.Framework.BuildEventContext.TargetId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -489,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildEventContext.TaskId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TaskId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskId : int" Usage="Microsoft.Build.Framework.BuildEventContext.TaskId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

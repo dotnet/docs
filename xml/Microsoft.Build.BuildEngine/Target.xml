@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Target" />
   <TypeSignature Language="VB.NET" Value="Public Class Target&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Target : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Target = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Target.AddNewTask(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewTask (taskName As String) As BuildTask" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildTask ^ AddNewTask(System::String ^ taskName);" />
+      <MemberSignature Language="F#" Value="member this.AddNewTask : string -&gt; Microsoft.Build.BuildEngine.BuildTask" Usage="target.AddNewTask taskName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.BuildEngine.Target.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.DependsOnTargets" />
       <MemberSignature Language="VB.NET" Value="Public Property DependsOnTargets As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DependsOnTargets { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DependsOnTargets : string with get, set" Usage="Microsoft.Build.BuildEngine.Target.DependsOnTargets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Target.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="target.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.Inputs" />
       <MemberSignature Language="VB.NET" Value="Public Property Inputs As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Inputs { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Inputs : string with get, set" Usage="Microsoft.Build.BuildEngine.Target.Inputs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.IsImported" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImported : bool" Usage="Microsoft.Build.BuildEngine.Target.IsImported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.BuildEngine.Target.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -197,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.Outputs" />
       <MemberSignature Language="VB.NET" Value="Public Property Outputs As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Outputs { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Outputs : string with get, set" Usage="Microsoft.Build.BuildEngine.Target.Outputs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -224,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Target.RemoveTask(Microsoft.Build.BuildEngine.BuildTask)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveTask (taskElement As BuildTask)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveTask(Microsoft::Build::BuildEngine::BuildTask ^ taskElement);" />
+      <MemberSignature Language="F#" Value="member this.RemoveTask : Microsoft.Build.BuildEngine.BuildTask -&gt; unit" Usage="target.RemoveTask taskElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailability" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripItemDesignerAvailability" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripItemDesignerAvailability" />
+  <TypeSignature Language="F#" Value="type ToolStripItemDesignerAvailability = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 15" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ContextMenuStrip" />
       <MemberSignature Language="VB.NET" Value="ContextMenuStrip" />
       <MemberSignature Language="C++ CLI" Value="ContextMenuStrip" />
+      <MemberSignature Language="F#" Value="ContextMenuStrip = 4" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ContextMenuStrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.MenuStrip" />
       <MemberSignature Language="VB.NET" Value="MenuStrip" />
       <MemberSignature Language="C++ CLI" Value="MenuStrip" />
+      <MemberSignature Language="F#" Value="MenuStrip = 2" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.MenuStrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.StatusStrip" />
       <MemberSignature Language="VB.NET" Value="StatusStrip" />
       <MemberSignature Language="C++ CLI" Value="StatusStrip" />
+      <MemberSignature Language="F#" Value="StatusStrip = 8" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.StatusStrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ToolStrip" />
       <MemberSignature Language="VB.NET" Value="ToolStrip" />
       <MemberSignature Language="C++ CLI" Value="ToolStrip" />
+      <MemberSignature Language="F#" Value="ToolStrip = 1" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ToolStrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

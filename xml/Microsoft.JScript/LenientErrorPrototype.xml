@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientErrorPrototype" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientErrorPrototype&#xA;Inherits ErrorPrototype" />
   <TypeSignature Language="C++ CLI" Value="public ref class LenientErrorPrototype sealed : Microsoft::JScript::ErrorPrototype" />
+  <TypeSignature Language="F#" Value="type LenientErrorPrototype = class&#xA;    inherit ErrorPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientErrorPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientErrorPrototype.constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientErrorPrototype.name" />
       <MemberSignature Language="VB.NET" Value="Public name As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ name;" />
+      <MemberSignature Language="F#" Value="val mutable name : obj" Usage="Microsoft.JScript.LenientErrorPrototype.name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientErrorPrototype.toString" />
       <MemberSignature Language="VB.NET" Value="Public toString As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
+      <MemberSignature Language="F#" Value="val mutable toString : obj" Usage="Microsoft.JScript.LenientErrorPrototype.toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

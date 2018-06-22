@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum InputMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class InputMode" />
+  <TypeSignature Language="F#" Value="type InputMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMode.Foreground" />
       <MemberSignature Language="VB.NET" Value="Foreground" />
       <MemberSignature Language="C++ CLI" Value="Foreground" />
+      <MemberSignature Language="F#" Value="Foreground = 0" Usage="System.Windows.Input.InputMode.Foreground" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMode.Sink" />
       <MemberSignature Language="VB.NET" Value="Sink" />
       <MemberSignature Language="C++ CLI" Value="Sink" />
+      <MemberSignature Language="F#" Value="Sink = 1" Usage="System.Windows.Input.InputMode.Sink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

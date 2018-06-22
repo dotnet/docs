@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ProfileValueProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileValueProvider&#xA;Inherits SimpleValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileValueProvider sealed : System::Web::ModelBinding::SimpleValueProvider" />
+  <TypeSignature Language="F#" Value="type ProfileValueProvider = class&#xA;    inherit SimpleValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ProfileValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ProfileValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.ProfileValueProvider" Usage="new System.Web.ModelBinding.ProfileValueProvider modelBindingExecutionContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ProfileValueProvider.FetchValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FetchValue (key As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ FetchValue(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="override this.FetchValue : string -&gt; obj" Usage="profileValueProvider.FetchValue key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

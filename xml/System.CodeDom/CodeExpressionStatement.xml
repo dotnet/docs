@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeExpressionStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeExpressionStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeExpressionStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeExpressionStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionStatement.#ctor(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeExpressionStatement(System::CodeDom::CodeExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeExpressionStatement : System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeExpressionStatement" Usage="new System.CodeDom.CodeExpressionStatement expression" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeExpressionStatement.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Expression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeExpressionStatement.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

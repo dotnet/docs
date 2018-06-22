@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Timeline" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Timeline&#xA;Inherits Animatable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Timeline abstract : System::Windows::Media::Animation::Animatable" />
+  <TypeSignature Language="F#" Value="type Timeline = class&#xA;    inherit Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (beginTime As Nullable(Of TimeSpan))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Timeline(Nullable&lt;TimeSpan&gt; beginTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.Timeline : Nullable&lt;TimeSpan&gt; -&gt; System.Windows.Media.Animation.Timeline" Usage="new System.Windows.Media.Animation.Timeline beginTime" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Timeline(Nullable&lt;TimeSpan&gt; beginTime, System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.Timeline : Nullable&lt;TimeSpan&gt; * System.Windows.Duration -&gt; System.Windows.Media.Animation.Timeline" Usage="new System.Windows.Media.Animation.Timeline (beginTime, duration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration,System.Windows.Media.Animation.RepeatBehavior)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Timeline(Nullable&lt;TimeSpan&gt; beginTime, System::Windows::Duration duration, System::Windows::Media::Animation::RepeatBehavior repeatBehavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.Timeline : Nullable&lt;TimeSpan&gt; * System.Windows.Duration * System.Windows.Media.Animation.RepeatBehavior -&gt; System.Windows.Media.Animation.Timeline" Usage="new System.Windows.Media.Animation.Timeline (beginTime, duration, repeatBehavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.AccelerationRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property AccelerationRatio As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double AccelerationRatio { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.AccelerationRatio : double with get, set" Usage="System.Windows.Media.Animation.Timeline.AccelerationRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.AccelerationRatioProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AccelerationRatioProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AccelerationRatioProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AccelerationRatioProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.AccelerationRatioProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.AllocateClock" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function AllocateClock () As Clock" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Windows::Media::Animation::Clock ^ AllocateClock();" />
+      <MemberSignature Language="F#" Value="abstract member AllocateClock : unit -&gt; System.Windows.Media.Animation.Clock&#xA;override this.AllocateClock : unit -&gt; System.Windows.Media.Animation.Clock" Usage="timeline.AllocateClock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.AutoReverse" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoReverse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoReverse { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoReverse : bool with get, set" Usage="System.Windows.Media.Animation.Timeline.AutoReverse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.AutoReverseProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutoReverseProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AutoReverseProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AutoReverseProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.AutoReverseProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.BeginTime" />
       <MemberSignature Language="VB.NET" Value="Public Property BeginTime As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; BeginTime { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.BeginTime : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Windows.Media.Animation.Timeline.BeginTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -430,6 +440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.BeginTimeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BeginTimeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BeginTimeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BeginTimeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.BeginTimeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -449,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Timeline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Timeline ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.Timeline" Usage="timeline.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -481,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Timeline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Timeline ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Animation.Timeline" Usage="timeline.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -513,6 +526,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Timeline.Completed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Completed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Completed;" />
+      <MemberSignature Language="F#" Value="member this.Completed : EventHandler " Usage="member this.Completed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -563,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.CreateClock" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateClock () As Clock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Clock ^ CreateClock();" />
+      <MemberSignature Language="F#" Value="member this.CreateClock : unit -&gt; System.Windows.Media.Animation.Clock" Usage="timeline.CreateClock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -591,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.CreateClock(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateClock (hasControllableRoot As Boolean) As Clock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Clock ^ CreateClock(bool hasControllableRoot);" />
+      <MemberSignature Language="F#" Value="member this.CreateClock : bool -&gt; System.Windows.Media.Animation.Clock" Usage="timeline.CreateClock hasControllableRoot" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -623,6 +639,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentGlobalSpeedInvalidated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentGlobalSpeedInvalidated;" />
+      <MemberSignature Language="F#" Value="member this.CurrentGlobalSpeedInvalidated : EventHandler " Usage="member this.CurrentGlobalSpeedInvalidated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -676,6 +693,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentStateInvalidated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentStateInvalidated;" />
+      <MemberSignature Language="F#" Value="member this.CurrentStateInvalidated : EventHandler " Usage="member this.CurrentStateInvalidated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -713,6 +731,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Timeline.CurrentTimeInvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentTimeInvalidated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentTimeInvalidated;" />
+      <MemberSignature Language="F#" Value="member this.CurrentTimeInvalidated : EventHandler " Usage="member this.CurrentTimeInvalidated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -751,6 +770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.DecelerationRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property DecelerationRatio As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DecelerationRatio { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.DecelerationRatio : double with get, set" Usage="System.Windows.Media.Animation.Timeline.DecelerationRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -790,6 +810,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.DecelerationRatioProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DecelerationRatioProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DecelerationRatioProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DecelerationRatioProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.DecelerationRatioProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -809,6 +830,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.DesiredFrameRateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DesiredFrameRateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DesiredFrameRateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DesiredFrameRateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.DesiredFrameRateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -828,6 +850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.Duration" />
       <MemberSignature Language="VB.NET" Value="Public Property Duration As Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Duration Duration { System::Windows::Duration get(); void set(System::Windows::Duration value); };" />
+      <MemberSignature Language="F#" Value="member this.Duration : System.Windows.Duration with get, set" Usage="System.Windows.Media.Animation.Timeline.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -926,6 +949,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.DurationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DurationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DurationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DurationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.DurationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -945,6 +969,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.FillBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property FillBehavior As FillBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::FillBehavior FillBehavior { System::Windows::Media::Animation::FillBehavior get(); void set(System::Windows::Media::Animation::FillBehavior value); };" />
+      <MemberSignature Language="F#" Value="member this.FillBehavior : System.Windows.Media.Animation.FillBehavior with get, set" Usage="System.Windows.Media.Animation.Timeline.FillBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -986,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.FillBehaviorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FillBehaviorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FillBehaviorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FillBehaviorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.FillBehaviorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1005,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="timeline.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1046,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="timeline.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1080,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="timeline.GetCurrentValueAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1111,6 +1140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; GetDesiredFrameRate(class System.Windows.Media.Animation.Timeline timeline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.GetDesiredFrameRate(System.Windows.Media.Animation.Timeline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; GetDesiredFrameRate(System::Windows::Media::Animation::Timeline ^ timeline);" />
+      <MemberSignature Language="F#" Value="static member GetDesiredFrameRate : System.Windows.Media.Animation.Timeline -&gt; Nullable&lt;int&gt;" Usage="System.Windows.Media.Animation.Timeline.GetDesiredFrameRate timeline" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1142,6 +1172,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance valuetype System.Windows.Duration GetNaturalDuration(class System.Windows.Media.Animation.Clock clock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.GetNaturalDuration(System.Windows.Media.Animation.Clock)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Windows::Duration GetNaturalDuration(System::Windows::Media::Animation::Clock ^ clock);" />
+      <MemberSignature Language="F#" Value="member this.GetNaturalDuration : System.Windows.Media.Animation.Clock -&gt; System.Windows.Duration" Usage="timeline.GetNaturalDuration clock" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1178,6 +1209,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Windows.Duration GetNaturalDurationCore(class System.Windows.Media.Animation.Clock clock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Duration GetNaturalDurationCore(System::Windows::Media::Animation::Clock ^ clock);" />
+      <MemberSignature Language="F#" Value="abstract member GetNaturalDurationCore : System.Windows.Media.Animation.Clock -&gt; System.Windows.Duration&#xA;override this.GetNaturalDurationCore : System.Windows.Media.Animation.Clock -&gt; System.Windows.Duration" Usage="timeline.GetNaturalDurationCore clock" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1213,6 +1245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Media.Animation.Timeline.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1241,6 +1274,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.NameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NameProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.NameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1260,6 +1294,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Timeline.RemoveRequested" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RemoveRequested As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RemoveRequested;" />
+      <MemberSignature Language="F#" Value="member this.RemoveRequested : EventHandler " Usage="member this.RemoveRequested : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1291,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatBehavior As RepeatBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::RepeatBehavior RepeatBehavior { System::Windows::Media::Animation::RepeatBehavior get(); void set(System::Windows::Media::Animation::RepeatBehavior value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatBehavior : System.Windows.Media.Animation.RepeatBehavior with get, set" Usage="System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1331,6 +1367,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.RepeatBehaviorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RepeatBehaviorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RepeatBehaviorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RepeatBehaviorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.RepeatBehaviorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1349,6 +1386,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDesiredFrameRate(class System.Windows.Media.Animation.Timeline timeline, valuetype System.Nullable`1&lt;int32&gt; desiredFrameRate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Timeline.SetDesiredFrameRate(System.Windows.Media.Animation.Timeline,System.Nullable{System.Int32})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDesiredFrameRate(System::Windows::Media::Animation::Timeline ^ timeline, Nullable&lt;int&gt; desiredFrameRate);" />
+      <MemberSignature Language="F#" Value="static member SetDesiredFrameRate : System.Windows.Media.Animation.Timeline * Nullable&lt;int&gt; -&gt; unit" Usage="System.Windows.Media.Animation.Timeline.SetDesiredFrameRate (timeline, desiredFrameRate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1382,6 +1420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Timeline.SpeedRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property SpeedRatio As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SpeedRatio { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SpeedRatio : double with get, set" Usage="System.Windows.Media.Animation.Timeline.SpeedRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1433,6 +1472,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Timeline.SpeedRatioProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SpeedRatioProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SpeedRatioProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SpeedRatioProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Timeline.SpeedRatioProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

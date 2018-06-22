@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ExpandDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExpandDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class ExpandDirection" />
+  <TypeSignature Language="F#" Value="type ExpandDirection = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ExpandDirection.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 0" Usage="System.Windows.Controls.ExpandDirection.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ExpandDirection.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 2" Usage="System.Windows.Controls.ExpandDirection.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ExpandDirection.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 3" Usage="System.Windows.Controls.ExpandDirection.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ExpandDirection.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 1" Usage="System.Windows.Controls.ExpandDirection.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

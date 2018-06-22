@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.ComposablePart" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComposablePart" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComposablePart abstract" />
+  <TypeSignature Language="F#" Value="type ComposablePart = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ComposablePart.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit&#xA;override this.Activate : unit -&gt; unit" Usage="composablePart.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ComposablePart.ExportDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ExportDefinitions As IEnumerable(Of ExportDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ExportDefinition ^&gt; ^ ExportDefinitions { System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ExportDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExportDefinitions : seq&lt;System.ComponentModel.Composition.Primitives.ExportDefinition&gt;" Usage="System.ComponentModel.Composition.Primitives.ComposablePart.ExportDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ComposablePart.GetExportedValue(System.ComponentModel.Composition.Primitives.ExportDefinition)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetExportedValue (definition As ExportDefinition) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetExportedValue(System::ComponentModel::Composition::Primitives::ExportDefinition ^ definition);" />
+      <MemberSignature Language="F#" Value="abstract member GetExportedValue : System.ComponentModel.Composition.Primitives.ExportDefinition -&gt; obj" Usage="composablePart.GetExportedValue definition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ComposablePart.ImportDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ImportDefinitions As IEnumerable(Of ImportDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ImportDefinition ^&gt; ^ ImportDefinitions { System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ImportDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportDefinitions : seq&lt;System.ComponentModel.Composition.Primitives.ImportDefinition&gt;" Usage="System.ComponentModel.Composition.Primitives.ComposablePart.ImportDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ComposablePart.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Metadata As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Metadata { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.ComponentModel.Composition.Primitives.ComposablePart.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ComposablePart.SetImport(System.ComponentModel.Composition.Primitives.ImportDefinition,System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.Export})" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetImport (definition As ImportDefinition, exports As IEnumerable(Of Export))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetImport(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition, System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::Export ^&gt; ^ exports);" />
+      <MemberSignature Language="F#" Value="abstract member SetImport : System.ComponentModel.Composition.Primitives.ImportDefinition * seq&lt;System.ComponentModel.Composition.Primitives.Export&gt; -&gt; unit" Usage="composablePart.SetImport (definition, exports)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

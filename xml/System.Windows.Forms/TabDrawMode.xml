@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabDrawMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TabDrawMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TabDrawMode" />
+  <TypeSignature Language="F#" Value="type TabDrawMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabDrawMode.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.TabDrawMode.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabDrawMode.OwnerDrawFixed" />
       <MemberSignature Language="VB.NET" Value="OwnerDrawFixed" />
       <MemberSignature Language="C++ CLI" Value="OwnerDrawFixed" />
+      <MemberSignature Language="F#" Value="OwnerDrawFixed = 1" Usage="System.Windows.Forms.TabDrawMode.OwnerDrawFixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

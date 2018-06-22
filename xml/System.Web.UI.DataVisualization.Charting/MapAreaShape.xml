@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.MapAreaShape" />
   <TypeSignature Language="VB.NET" Value="Public Enum MapAreaShape" />
   <TypeSignature Language="C++ CLI" Value="public enum class MapAreaShape" />
+  <TypeSignature Language="F#" Value="type MapAreaShape = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.MapAreaShape.Circle" />
       <MemberSignature Language="VB.NET" Value="Circle" />
       <MemberSignature Language="C++ CLI" Value="Circle" />
+      <MemberSignature Language="F#" Value="Circle = 1" Usage="System.Web.UI.DataVisualization.Charting.MapAreaShape.Circle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.MapAreaShape.Polygon" />
       <MemberSignature Language="VB.NET" Value="Polygon" />
       <MemberSignature Language="C++ CLI" Value="Polygon" />
+      <MemberSignature Language="F#" Value="Polygon = 2" Usage="System.Web.UI.DataVisualization.Charting.MapAreaShape.Polygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.MapAreaShape.Rectangle" />
       <MemberSignature Language="VB.NET" Value="Rectangle" />
       <MemberSignature Language="C++ CLI" Value="Rectangle" />
+      <MemberSignature Language="F#" Value="Rectangle = 0" Usage="System.Web.UI.DataVisualization.Charting.MapAreaShape.Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

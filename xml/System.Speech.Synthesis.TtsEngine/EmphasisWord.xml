@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.EmphasisWord" />
   <TypeSignature Language="VB.NET" Value="Public Enum EmphasisWord" />
   <TypeSignature Language="C++ CLI" Value="public enum class EmphasisWord" />
+  <TypeSignature Language="F#" Value="type EmphasisWord = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Speech.Synthesis.TtsEngine.EmphasisWord.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.Moderate" />
       <MemberSignature Language="VB.NET" Value="Moderate" />
       <MemberSignature Language="C++ CLI" Value="Moderate" />
+      <MemberSignature Language="F#" Value="Moderate = 2" Usage="System.Speech.Synthesis.TtsEngine.EmphasisWord.Moderate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 3" Usage="System.Speech.Synthesis.TtsEngine.EmphasisWord.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.Reduced" />
       <MemberSignature Language="VB.NET" Value="Reduced" />
       <MemberSignature Language="C++ CLI" Value="Reduced" />
+      <MemberSignature Language="F#" Value="Reduced = 4" Usage="System.Speech.Synthesis.TtsEngine.EmphasisWord.Reduced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.Strong" />
       <MemberSignature Language="VB.NET" Value="Strong" />
       <MemberSignature Language="C++ CLI" Value="Strong" />
+      <MemberSignature Language="F#" Value="Strong = 1" Usage="System.Speech.Synthesis.TtsEngine.EmphasisWord.Strong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

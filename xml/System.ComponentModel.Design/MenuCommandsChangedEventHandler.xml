@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.MenuCommandsChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub MenuCommandsChangedEventHandler(sender As Object, e As MenuCommandsChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void MenuCommandsChangedEventHandler(System::Object ^ sender, MenuCommandsChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type MenuCommandsChangedEventHandler = delegate of obj * MenuCommandsChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

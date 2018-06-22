@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X500DistinguishedName" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X500DistinguishedName&#xA;Inherits AsnEncodedData" />
   <TypeSignature Language="C++ CLI" Value="public ref class X500DistinguishedName sealed : System::Security::Cryptography::AsnEncodedData" />
+  <TypeSignature Language="F#" Value="type X500DistinguishedName = class&#xA;    inherit AsnEncodedData" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encodedDistinguishedName As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X500DistinguishedName(cli::array &lt;System::Byte&gt; ^ encodedDistinguishedName);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X500DistinguishedName : byte[] -&gt; System.Security.Cryptography.X509Certificates.X500DistinguishedName" Usage="new System.Security.Cryptography.X509Certificates.X500DistinguishedName encodedDistinguishedName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encodedDistinguishedName As AsnEncodedData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X500DistinguishedName(System::Security::Cryptography::AsnEncodedData ^ encodedDistinguishedName);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X500DistinguishedName : System.Security.Cryptography.AsnEncodedData -&gt; System.Security.Cryptography.X509Certificates.X500DistinguishedName" Usage="new System.Security.Cryptography.X509Certificates.X500DistinguishedName encodedDistinguishedName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.Security.Cryptography.X509Certificates.X500DistinguishedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (distinguishedName As X500DistinguishedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X500DistinguishedName(System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ distinguishedName);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X500DistinguishedName : System.Security.Cryptography.X509Certificates.X500DistinguishedName -&gt; System.Security.Cryptography.X509Certificates.X500DistinguishedName" Usage="new System.Security.Cryptography.X509Certificates.X500DistinguishedName distinguishedName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -232,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (distinguishedName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X500DistinguishedName(System::String ^ distinguishedName);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X500DistinguishedName : string -&gt; System.Security.Cryptography.X509Certificates.X500DistinguishedName" Usage="new System.Security.Cryptography.X509Certificates.X500DistinguishedName distinguishedName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -280,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.String,System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (distinguishedName As String, flag As X500DistinguishedNameFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X500DistinguishedName(System::String ^ distinguishedName, System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags flag);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X500DistinguishedName : string * System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags -&gt; System.Security.Cryptography.X509Certificates.X500DistinguishedName" Usage="new System.Security.Cryptography.X509Certificates.X500DistinguishedName (distinguishedName, flag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -330,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.Decode(System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Function Decode (flag As X500DistinguishedNameFlags) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Decode(System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags flag);" />
+      <MemberSignature Language="F#" Value="member this.Decode : System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags -&gt; string" Usage="x500DistinguishedName.Decode flag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -383,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.Format(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Format (multiLine As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Format(bool multiLine);" />
+      <MemberSignature Language="F#" Value="override this.Format : bool -&gt; string" Usage="x500DistinguishedName.Format multiLine" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -436,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X500DistinguishedName.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedName.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

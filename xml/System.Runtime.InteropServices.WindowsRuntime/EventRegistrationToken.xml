@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken" />
   <TypeSignature Language="VB.NET" Value="Public Structure EventRegistrationToken" />
   <TypeSignature Language="C++ CLI" Value="public value class EventRegistrationToken" />
+  <TypeSignature Language="F#" Value="type EventRegistrationToken = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="eventRegistrationToken.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="eventRegistrationToken.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.op_Equality(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken,System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As EventRegistrationToken, right As EventRegistrationToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken left, System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken * System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.op_Inequality(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken,System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As EventRegistrationToken, right As EventRegistrationToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken left, System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken * System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken -&gt; bool" Usage="System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>

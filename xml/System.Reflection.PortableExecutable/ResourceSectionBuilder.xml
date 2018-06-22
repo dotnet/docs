@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.ResourceSectionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResourceSectionBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceSectionBuilder abstract" />
+  <TypeSignature Language="F#" Value="type ResourceSectionBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ResourceSectionBuilder.Serialize(System.Reflection.Metadata.BlobBuilder,System.Reflection.PortableExecutable.SectionLocation)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Serialize (builder As BlobBuilder, location As SectionLocation)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Serialize(System::Reflection::Metadata::BlobBuilder ^ builder, System::Reflection::PortableExecutable::SectionLocation location);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.Reflection.Metadata.BlobBuilder * System.Reflection.PortableExecutable.SectionLocation -&gt; unit" Usage="resourceSectionBuilder.Serialize (builder, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

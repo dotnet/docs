@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ResolveEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ResolveEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ResolveEventArgs.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveEventArgs(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new ResolveEventArgs : string -&gt; ResolveEventArgs" Usage="new System.ResolveEventArgs name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.ResolveEventArgs.#ctor(System.String,System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, requestingAssembly As Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveEventArgs(System::String ^ name, System::Reflection::Assembly ^ requestingAssembly);" />
+      <MemberSignature Language="F#" Value="new ResolveEventArgs : string * System.Reflection.Assembly -&gt; ResolveEventArgs" Usage="new System.ResolveEventArgs (name, requestingAssembly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ResolveEventArgs.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ResolveEventArgs.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.ResolveEventArgs.RequestingAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestingAssembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ RequestingAssembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestingAssembly : System.Reflection.Assembly" Usage="System.ResolveEventArgs.RequestingAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

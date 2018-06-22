@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECParameters" />
   <TypeSignature Language="VB.NET" Value="Public Structure ECParameters" />
   <TypeSignature Language="C++ CLI" Value="public value class ECParameters" />
+  <TypeSignature Language="F#" Value="type ECParameters = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECParameters.Curve" />
       <MemberSignature Language="VB.NET" Value="Public Curve As ECCurve " />
       <MemberSignature Language="C++ CLI" Value="public: System::Security::Cryptography::ECCurve Curve;" />
+      <MemberSignature Language="F#" Value="val mutable Curve : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECParameters.Curve" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECParameters.D" />
       <MemberSignature Language="VB.NET" Value="Public D As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ D;" />
+      <MemberSignature Language="F#" Value="val mutable D : byte[]" Usage="System.Security.Cryptography.ECParameters.D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECParameters.Q" />
       <MemberSignature Language="VB.NET" Value="Public Q As ECPoint " />
       <MemberSignature Language="C++ CLI" Value="public: System::Security::Cryptography::ECPoint Q;" />
+      <MemberSignature Language="F#" Value="val mutable Q : System.Security.Cryptography.ECPoint" Usage="System.Security.Cryptography.ECParameters.Q" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECParameters.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate();" />
+      <MemberSignature Language="F#" Value="member this.Validate : unit -&gt; unit" Usage="eCParameters.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

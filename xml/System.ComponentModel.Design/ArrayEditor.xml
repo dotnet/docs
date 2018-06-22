@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ArrayEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class ArrayEditor&#xA;Inherits CollectionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArrayEditor : System::ComponentModel::Design::CollectionEditor" />
+  <TypeSignature Language="F#" Value="type ArrayEditor = class&#xA;    inherit CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ArrayEditor.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayEditor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ArrayEditor : Type -&gt; System.ComponentModel.Design.ArrayEditor" Usage="new System.ComponentModel.Design.ArrayEditor type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ArrayEditor.CreateCollectionItemType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionItemType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ CreateCollectionItemType();" />
+      <MemberSignature Language="F#" Value="override this.CreateCollectionItemType : unit -&gt; Type" Usage="arrayEditor.CreateCollectionItemType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ArrayEditor.GetItems(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetItems (editValue As Object) As Object()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetItems(System::Object ^ editValue);" />
+      <MemberSignature Language="F#" Value="override this.GetItems : obj -&gt; obj[]" Usage="arrayEditor.GetItems editValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ArrayEditor.SetItems(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SetItems (editValue As Object, value As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SetItems(System::Object ^ editValue, cli::array &lt;System::Object ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="override this.SetItems : obj * obj[] -&gt; obj" Usage="arrayEditor.SetItems (editValue, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

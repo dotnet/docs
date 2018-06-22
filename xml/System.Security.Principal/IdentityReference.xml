@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.IdentityReference" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IdentityReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class IdentityReference abstract" />
+  <TypeSignature Language="F#" Value="type IdentityReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="identityReference.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="identityReference.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.IsValidTargetType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsValidTargetType (targetType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsValidTargetType(Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidTargetType : Type -&gt; bool" Usage="identityReference.IsValidTargetType targetType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.op_Equality(System.Security.Principal.IdentityReference,System.Security.Principal.IdentityReference)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As IdentityReference, right As IdentityReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::Principal::IdentityReference ^ left, System::Security::Principal::IdentityReference ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Security.Principal.IdentityReference * System.Security.Principal.IdentityReference -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.op_Inequality(System.Security.Principal.IdentityReference,System.Security.Principal.IdentityReference)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As IdentityReference, right As IdentityReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::Principal::IdentityReference ^ left, System::Security::Principal::IdentityReference ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Security.Principal.IdentityReference * System.Security.Principal.IdentityReference -&gt; bool" Usage="System.Security.Principal.IdentityReference.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.ToString" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="identityReference.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.Translate(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Translate (targetType As Type) As IdentityReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Principal::IdentityReference ^ Translate(Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="abstract member Translate : Type -&gt; System.Security.Principal.IdentityReference" Usage="identityReference.Translate targetType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityReference.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Security.Principal.IdentityReference.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>

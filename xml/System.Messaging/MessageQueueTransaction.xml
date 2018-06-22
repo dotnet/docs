@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueTransaction" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQueueTransaction&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQueueTransaction : IDisposable" />
+  <TypeSignature Language="F#" Value="type MessageQueueTransaction = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
+      <MemberSignature Language="F#" Value="member this.Abort : unit -&gt; unit" Usage="messageQueueTransaction.Abort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Begin" />
       <MemberSignature Language="VB.NET" Value="Public Sub Begin ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin();" />
+      <MemberSignature Language="F#" Value="member this.Begin : unit -&gt; unit" Usage="messageQueueTransaction.Begin " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
+      <MemberSignature Language="F#" Value="member this.Commit : unit -&gt; unit" Usage="messageQueueTransaction.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="messageQueueTransaction.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="messageQueueTransaction.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!MessageQueueTransaction ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="messageQueueTransaction.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -287,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueTransaction.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As MessageQueueTransactionStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::MessageQueueTransactionStatus Status { System::Messaging::MessageQueueTransactionStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Messaging.MessageQueueTransactionStatus" Usage="System.Messaging.MessageQueueTransaction.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

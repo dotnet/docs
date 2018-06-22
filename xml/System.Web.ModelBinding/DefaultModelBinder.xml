@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DefaultModelBinder" />
   <TypeSignature Language="VB.NET" Value="Public Class DefaultModelBinder&#xA;Implements IModelBinder" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultModelBinder : System::Web::ModelBinding::IModelBinder" />
+  <TypeSignature Language="F#" Value="type DefaultModelBinder = class&#xA;    interface IModelBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BindModel(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DefaultModelBinder.BindModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool BindModel(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
+      <MemberSignature Language="F#" Value="abstract member BindModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; bool&#xA;override this.BindModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; bool" Usage="defaultModelBinder.BindModel (modelBindingExecutionContext, bindingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.ModelBinding.IModelBinder.BindModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)</InterfaceMember>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.DefaultModelBinder.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ModelBinderProviderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelBinderProviderCollection ^ Providers { System::Web::ModelBinding::ModelBinderProviderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.ModelBinding.ModelBinderProviderCollection" Usage="System.Web.ModelBinding.DefaultModelBinder.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

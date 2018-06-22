@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.VirtualPathData" />
   <TypeSignature Language="VB.NET" Value="Public Class VirtualPathData" />
   <TypeSignature Language="C++ CLI" Value="public ref class VirtualPathData" />
+  <TypeSignature Language="F#" Value="type VirtualPathData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.VirtualPathData.#ctor(System.Web.Routing.RouteBase,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (route As RouteBase, virtualPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualPathData(System::Web::Routing::RouteBase ^ route, System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.VirtualPathData : System.Web.Routing.RouteBase * string -&gt; System.Web.Routing.VirtualPathData" Usage="new System.Web.Routing.VirtualPathData (route, virtualPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.VirtualPathData.DataTokens" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTokens As RouteValueDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteValueDictionary ^ DataTokens { System::Web::Routing::RouteValueDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataTokens : System.Web.Routing.RouteValueDictionary" Usage="System.Web.Routing.VirtualPathData.DataTokens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.VirtualPathData.Route" />
       <MemberSignature Language="VB.NET" Value="Public Property Route As RouteBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteBase ^ Route { System::Web::Routing::RouteBase ^ get(); void set(System::Web::Routing::RouteBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Route : System.Web.Routing.RouteBase with get, set" Usage="System.Web.Routing.VirtualPathData.Route" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.VirtualPathData.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public Property VirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string with get, set" Usage="System.Web.Routing.VirtualPathData.VirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.MultipleViewPatternIdentifiers" />
   <TypeSignature Language="VB.NET" Value="Public Class MultipleViewPatternIdentifiers" />
   <TypeSignature Language="C++ CLI" Value="public ref class MultipleViewPatternIdentifiers abstract sealed" />
+  <TypeSignature Language="F#" Value="type MultipleViewPatternIdentifiers = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.MultipleViewPatternIdentifiers.CurrentViewProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CurrentViewProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ CurrentViewProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CurrentViewProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.MultipleViewPatternIdentifiers.CurrentViewProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.MultipleViewPatternIdentifiers.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.MultipleViewPatternIdentifiers.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.MultipleViewPatternIdentifiers.SupportedViewsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SupportedViewsProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ SupportedViewsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SupportedViewsProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.MultipleViewPatternIdentifiers.SupportedViewsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

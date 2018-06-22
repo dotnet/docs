@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridRowEditEndingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridRowEditEndingEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridRowEditEndingEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridRowEditEndingEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRowEditEndingEventArgs.#ctor(System.Windows.Controls.DataGridRow,System.Windows.Controls.DataGridEditAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (row As DataGridRow, editAction As DataGridEditAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridRowEditEndingEventArgs(System::Windows::Controls::DataGridRow ^ row, System::Windows::Controls::DataGridEditAction editAction);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridRowEditEndingEventArgs : System.Windows.Controls.DataGridRow * System.Windows.Controls.DataGridEditAction -&gt; System.Windows.Controls.DataGridRowEditEndingEventArgs" Usage="new System.Windows.Controls.DataGridRowEditEndingEventArgs (row, editAction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowEditEndingEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.Windows.Controls.DataGridRowEditEndingEventArgs.Cancel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowEditEndingEventArgs.EditAction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditAction As DataGridEditAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridEditAction EditAction { System::Windows::Controls::DataGridEditAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditAction : System.Windows.Controls.DataGridEditAction" Usage="System.Windows.Controls.DataGridRowEditEndingEventArgs.EditAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowEditEndingEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataGridRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridRow ^ Row { System::Windows::Controls::DataGridRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Windows.Controls.DataGridRow" Usage="System.Windows.Controls.DataGridRowEditEndingEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

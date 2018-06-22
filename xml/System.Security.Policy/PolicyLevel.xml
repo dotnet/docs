@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyLevel" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolicyLevel" />
   <TypeSignature Language="C++ CLI" Value="public ref class PolicyLevel sealed" />
+  <TypeSignature Language="F#" Value="type PolicyLevel = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddFullTrustAssembly(System.Security.Policy.StrongName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFullTrustAssembly (sn As StrongName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFullTrustAssembly(System::Security::Policy::StrongName ^ sn);" />
+      <MemberSignature Language="F#" Value="member this.AddFullTrustAssembly : System.Security.Policy.StrongName -&gt; unit" Usage="policyLevel.AddFullTrustAssembly sn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddFullTrustAssembly(System.Security.Policy.StrongNameMembershipCondition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFullTrustAssembly (snMC As StrongNameMembershipCondition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFullTrustAssembly(System::Security::Policy::StrongNameMembershipCondition ^ snMC);" />
+      <MemberSignature Language="F#" Value="member this.AddFullTrustAssembly : System.Security.Policy.StrongNameMembershipCondition -&gt; unit" Usage="policyLevel.AddFullTrustAssembly snMC" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddNamedPermissionSet(System.Security.NamedPermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddNamedPermissionSet (permSet As NamedPermissionSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
+      <MemberSignature Language="F#" Value="member this.AddNamedPermissionSet : System.Security.NamedPermissionSet -&gt; unit" Usage="policyLevel.AddNamedPermissionSet permSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ChangeNamedPermissionSet(System.String,System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function ChangeNamedPermissionSet (name As String, pSet As PermissionSet) As NamedPermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ ChangeNamedPermissionSet(System::String ^ name, System::Security::PermissionSet ^ pSet);" />
+      <MemberSignature Language="F#" Value="member this.ChangeNamedPermissionSet : string * System.Security.PermissionSet -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.ChangeNamedPermissionSet (name, pSet)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.CreateAppDomainLevel" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAppDomainLevel () As PolicyLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::PolicyLevel ^ CreateAppDomainLevel();" />
+      <MemberSignature Language="F#" Value="static member CreateAppDomainLevel : unit -&gt; System.Security.Policy.PolicyLevel" Usage="System.Security.Policy.PolicyLevel.CreateAppDomainLevel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXml(System::Security::SecurityElement ^ e);" />
+      <MemberSignature Language="F#" Value="member this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="policyLevel.FromXml e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -294,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.FullTrustAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullTrustAssemblies As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ FullTrustAssemblies { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullTrustAssemblies : System.Collections.IList" Usage="System.Security.Policy.PolicyLevel.FullTrustAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -333,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.GetNamedPermissionSet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamedPermissionSet (name As String) As NamedPermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ GetNamedPermissionSet(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetNamedPermissionSet : string -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.GetNamedPermissionSet name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -364,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.Label" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string" Usage="System.Security.Policy.PolicyLevel.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -396,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.NamedPermissionSets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamedPermissionSets As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ NamedPermissionSets { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamedPermissionSets : System.Collections.IList" Usage="System.Security.Policy.PolicyLevel.NamedPermissionSets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -421,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Recover" />
       <MemberSignature Language="VB.NET" Value="Public Sub Recover ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Recover();" />
+      <MemberSignature Language="F#" Value="member this.Recover : unit -&gt; unit" Usage="policyLevel.Recover " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -466,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveFullTrustAssembly(System.Security.Policy.StrongName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFullTrustAssembly (sn As StrongName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFullTrustAssembly(System::Security::Policy::StrongName ^ sn);" />
+      <MemberSignature Language="F#" Value="member this.RemoveFullTrustAssembly : System.Security.Policy.StrongName -&gt; unit" Usage="policyLevel.RemoveFullTrustAssembly sn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -508,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveFullTrustAssembly(System.Security.Policy.StrongNameMembershipCondition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFullTrustAssembly (snMC As StrongNameMembershipCondition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFullTrustAssembly(System::Security::Policy::StrongNameMembershipCondition ^ snMC);" />
+      <MemberSignature Language="F#" Value="member this.RemoveFullTrustAssembly : System.Security.Policy.StrongNameMembershipCondition -&gt; unit" Usage="policyLevel.RemoveFullTrustAssembly snMC" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -560,6 +574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveNamedPermissionSet(System.Security.NamedPermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveNamedPermissionSet (permSet As NamedPermissionSet) As NamedPermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ RemoveNamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
+      <MemberSignature Language="F#" Value="member this.RemoveNamedPermissionSet : System.Security.NamedPermissionSet -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.RemoveNamedPermissionSet permSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -591,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveNamedPermissionSet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveNamedPermissionSet (name As String) As NamedPermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ RemoveNamedPermissionSet(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.RemoveNamedPermissionSet : string -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.RemoveNamedPermissionSet name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -627,6 +643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="policyLevel.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -658,6 +675,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Resolve(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Security.Policy.Evidence -&gt; System.Security.Policy.PolicyStatement" Usage="policyLevel.Resolve evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -706,6 +724,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="member this.ResolveMatchingCodeGroups : System.Security.Policy.Evidence -&gt; System.Security.Policy.CodeGroup" Usage="policyLevel.ResolveMatchingCodeGroups evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -746,6 +765,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.RootCodeGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property RootCodeGroup As CodeGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::CodeGroup ^ RootCodeGroup { System::Security::Policy::CodeGroup ^ get(); void set(System::Security::Policy::CodeGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootCodeGroup : System.Security.Policy.CodeGroup with get, set" Usage="System.Security.Policy.PolicyLevel.RootCodeGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -779,6 +799,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.StoreLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoreLocation { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StoreLocation : string" Usage="System.Security.Policy.PolicyLevel.StoreLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -816,6 +837,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="member this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="policyLevel.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -842,6 +864,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As PolicyLevelType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PolicyLevelType Type { System::Security::PolicyLevelType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Security.PolicyLevelType" Usage="System.Security.Policy.PolicyLevel.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

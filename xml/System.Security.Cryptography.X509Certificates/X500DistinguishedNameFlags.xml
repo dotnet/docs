@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum X500DistinguishedNameFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class X500DistinguishedNameFlags" />
+  <TypeSignature Language="F#" Value="type X500DistinguishedNameFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.DoNotUsePlusSign" />
       <MemberSignature Language="VB.NET" Value="DoNotUsePlusSign" />
       <MemberSignature Language="C++ CLI" Value="DoNotUsePlusSign" />
+      <MemberSignature Language="F#" Value="DoNotUsePlusSign = 32" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.DoNotUsePlusSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.DoNotUseQuotes" />
       <MemberSignature Language="VB.NET" Value="DoNotUseQuotes" />
       <MemberSignature Language="C++ CLI" Value="DoNotUseQuotes" />
+      <MemberSignature Language="F#" Value="DoNotUseQuotes = 64" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.DoNotUseQuotes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.ForceUTF8Encoding" />
       <MemberSignature Language="VB.NET" Value="ForceUTF8Encoding" />
       <MemberSignature Language="C++ CLI" Value="ForceUTF8Encoding" />
+      <MemberSignature Language="F#" Value="ForceUTF8Encoding = 16384" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.ForceUTF8Encoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.Reversed" />
       <MemberSignature Language="VB.NET" Value="Reversed" />
       <MemberSignature Language="C++ CLI" Value="Reversed" />
+      <MemberSignature Language="F#" Value="Reversed = 1" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.Reversed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseCommas" />
       <MemberSignature Language="VB.NET" Value="UseCommas" />
       <MemberSignature Language="C++ CLI" Value="UseCommas" />
+      <MemberSignature Language="F#" Value="UseCommas = 128" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseCommas" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -243,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseNewLines" />
       <MemberSignature Language="VB.NET" Value="UseNewLines" />
       <MemberSignature Language="C++ CLI" Value="UseNewLines" />
+      <MemberSignature Language="F#" Value="UseNewLines = 256" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseNewLines" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseSemicolons" />
       <MemberSignature Language="VB.NET" Value="UseSemicolons" />
       <MemberSignature Language="C++ CLI" Value="UseSemicolons" />
+      <MemberSignature Language="F#" Value="UseSemicolons = 16" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseSemicolons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseT61Encoding" />
       <MemberSignature Language="VB.NET" Value="UseT61Encoding" />
       <MemberSignature Language="C++ CLI" Value="UseT61Encoding" />
+      <MemberSignature Language="F#" Value="UseT61Encoding = 8192" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseT61Encoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -336,6 +346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseUTF8Encoding" />
       <MemberSignature Language="VB.NET" Value="UseUTF8Encoding" />
       <MemberSignature Language="C++ CLI" Value="UseUTF8Encoding" />
+      <MemberSignature Language="F#" Value="UseUTF8Encoding = 4096" Usage="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseUTF8Encoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

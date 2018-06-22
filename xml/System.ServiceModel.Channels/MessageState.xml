@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageState" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageState" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageState" />
+  <TypeSignature Language="F#" Value="type MessageState = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Closed" />
       <MemberSignature Language="VB.NET" Value="Closed" />
       <MemberSignature Language="C++ CLI" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 4" Usage="System.ServiceModel.Channels.MessageState.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Copied" />
       <MemberSignature Language="VB.NET" Value="Copied" />
       <MemberSignature Language="C++ CLI" Value="Copied" />
+      <MemberSignature Language="F#" Value="Copied = 3" Usage="System.ServiceModel.Channels.MessageState.Copied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Created" />
       <MemberSignature Language="VB.NET" Value="Created" />
       <MemberSignature Language="C++ CLI" Value="Created" />
+      <MemberSignature Language="F#" Value="Created = 0" Usage="System.ServiceModel.Channels.MessageState.Created" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.ServiceModel.Channels.MessageState.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Written" />
       <MemberSignature Language="VB.NET" Value="Written" />
       <MemberSignature Language="C++ CLI" Value="Written" />
+      <MemberSignature Language="F#" Value="Written = 2" Usage="System.ServiceModel.Channels.MessageState.Written" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

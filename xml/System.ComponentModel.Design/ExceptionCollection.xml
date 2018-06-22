@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ExceptionCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExceptionCollection&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExceptionCollection sealed : Exception" />
+  <TypeSignature Language="F#" Value="type ExceptionCollection = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ExceptionCollection.#ctor(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exceptions As ArrayList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExceptionCollection(System::Collections::ArrayList ^ exceptions);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ExceptionCollection : System.Collections.ArrayList -&gt; System.ComponentModel.Design.ExceptionCollection" Usage="new System.ComponentModel.Design.ExceptionCollection exceptions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ExceptionCollection.Exceptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exceptions As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ Exceptions { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exceptions : System.Collections.ArrayList" Usage="System.ComponentModel.Design.ExceptionCollection.Exceptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ExceptionCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="exceptionCollection.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

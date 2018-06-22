@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapMessageStage" />
   <TypeSignature Language="VB.NET" Value="Public Enum SoapMessageStage" />
   <TypeSignature Language="C++ CLI" Value="public enum class SoapMessageStage" />
+  <TypeSignature Language="F#" Value="type SoapMessageStage = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize" />
       <MemberSignature Language="VB.NET" Value="AfterDeserialize" />
       <MemberSignature Language="C++ CLI" Value="AfterDeserialize" />
+      <MemberSignature Language="F#" Value="AfterDeserialize = 8" Usage="System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapMessageStage.AfterSerialize" />
       <MemberSignature Language="VB.NET" Value="AfterSerialize" />
       <MemberSignature Language="C++ CLI" Value="AfterSerialize" />
+      <MemberSignature Language="F#" Value="AfterSerialize = 2" Usage="System.Web.Services.Protocols.SoapMessageStage.AfterSerialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize" />
       <MemberSignature Language="VB.NET" Value="BeforeDeserialize" />
       <MemberSignature Language="C++ CLI" Value="BeforeDeserialize" />
+      <MemberSignature Language="F#" Value="BeforeDeserialize = 4" Usage="System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize" />
       <MemberSignature Language="VB.NET" Value="BeforeSerialize" />
       <MemberSignature Language="C++ CLI" Value="BeforeSerialize" />
+      <MemberSignature Language="F#" Value="BeforeSerialize = 1" Usage="System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

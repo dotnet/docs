@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExpressionResult" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RuleExpressionResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleExpressionResult abstract" />
+  <TypeSignature Language="F#" Value="type RuleExpressionResult = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExpressionResult.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Workflow.Activities.Rules.RuleExpressionResult.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

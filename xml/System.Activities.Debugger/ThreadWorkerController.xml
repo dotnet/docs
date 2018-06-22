@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.ThreadWorkerController" />
   <TypeSignature Language="VB.NET" Value="Public Class ThreadWorkerController" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThreadWorkerController" />
+  <TypeSignature Language="F#" Value="type ThreadWorkerController = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.ThreadWorkerController.IslandWorker(System.Activities.Debugger.ThreadWorkerController)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IslandWorker (controller As ThreadWorkerController)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void IslandWorker(System::Activities::Debugger::ThreadWorkerController ^ controller);" />
+      <MemberSignature Language="F#" Value="static member IslandWorker : System.Activities.Debugger.ThreadWorkerController -&gt; unit" Usage="System.Activities.Debugger.ThreadWorkerController.IslandWorker controller" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

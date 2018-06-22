@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.StreamingContextStates" />
   <TypeSignature Language="VB.NET" Value="Public Enum StreamingContextStates" />
   <TypeSignature Language="C++ CLI" Value="public enum class StreamingContextStates" />
+  <TypeSignature Language="F#" Value="type StreamingContextStates = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 255" Usage="System.Runtime.Serialization.StreamingContextStates.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.Clone" />
       <MemberSignature Language="VB.NET" Value="Clone" />
       <MemberSignature Language="C++ CLI" Value="Clone" />
+      <MemberSignature Language="F#" Value="Clone = 64" Usage="System.Runtime.Serialization.StreamingContextStates.Clone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.CrossAppDomain" />
       <MemberSignature Language="VB.NET" Value="CrossAppDomain" />
       <MemberSignature Language="C++ CLI" Value="CrossAppDomain" />
+      <MemberSignature Language="F#" Value="CrossAppDomain = 128" Usage="System.Runtime.Serialization.StreamingContextStates.CrossAppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.CrossMachine" />
       <MemberSignature Language="VB.NET" Value="CrossMachine" />
       <MemberSignature Language="C++ CLI" Value="CrossMachine" />
+      <MemberSignature Language="F#" Value="CrossMachine = 2" Usage="System.Runtime.Serialization.StreamingContextStates.CrossMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.CrossProcess" />
       <MemberSignature Language="VB.NET" Value="CrossProcess" />
       <MemberSignature Language="C++ CLI" Value="CrossProcess" />
+      <MemberSignature Language="F#" Value="CrossProcess = 1" Usage="System.Runtime.Serialization.StreamingContextStates.CrossProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.File" />
       <MemberSignature Language="VB.NET" Value="File" />
       <MemberSignature Language="C++ CLI" Value="File" />
+      <MemberSignature Language="F#" Value="File = 4" Usage="System.Runtime.Serialization.StreamingContextStates.File" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.Other" />
       <MemberSignature Language="VB.NET" Value="Other" />
       <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 32" Usage="System.Runtime.Serialization.StreamingContextStates.Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.Persistence" />
       <MemberSignature Language="VB.NET" Value="Persistence" />
       <MemberSignature Language="C++ CLI" Value="Persistence" />
+      <MemberSignature Language="F#" Value="Persistence = 8" Usage="System.Runtime.Serialization.StreamingContextStates.Persistence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.Remoting" />
       <MemberSignature Language="VB.NET" Value="Remoting" />
       <MemberSignature Language="C++ CLI" Value="Remoting" />
+      <MemberSignature Language="F#" Value="Remoting = 16" Usage="System.Runtime.Serialization.StreamingContextStates.Remoting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

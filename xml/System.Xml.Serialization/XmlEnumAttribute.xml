@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlEnumAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlEnumAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlEnumAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlEnumAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -136,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlEnumAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlEnumAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlEnumAttribute : string -&gt; System.Xml.Serialization.XmlEnumAttribute" Usage="new System.Xml.Serialization.XmlEnumAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -191,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlEnumAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Xml.Serialization.XmlEnumAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

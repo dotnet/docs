@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckState" />
   <TypeSignature Language="VB.NET" Value="Public Enum CheckState" />
   <TypeSignature Language="C++ CLI" Value="public enum class CheckState" />
+  <TypeSignature Language="F#" Value="type CheckState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CheckState.Checked" />
       <MemberSignature Language="VB.NET" Value="Checked" />
       <MemberSignature Language="C++ CLI" Value="Checked" />
+      <MemberSignature Language="F#" Value="Checked = 1" Usage="System.Windows.Forms.CheckState.Checked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CheckState.Indeterminate" />
       <MemberSignature Language="VB.NET" Value="Indeterminate" />
       <MemberSignature Language="C++ CLI" Value="Indeterminate" />
+      <MemberSignature Language="F#" Value="Indeterminate = 2" Usage="System.Windows.Forms.CheckState.Indeterminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CheckState.Unchecked" />
       <MemberSignature Language="VB.NET" Value="Unchecked" />
       <MemberSignature Language="C++ CLI" Value="Unchecked" />
+      <MemberSignature Language="F#" Value="Unchecked = 0" Usage="System.Windows.Forms.CheckState.Unchecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

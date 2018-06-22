@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class XpsSerializationCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsSerializationCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type XpsSerializationCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool canceled, object state, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs.#ctor(System.Boolean,System.Object,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsSerializationCompletedEventArgs(bool canceled, System::Object ^ state, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs : bool * obj * Exception -&gt; System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs" Usage="new System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs (canceled, state, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

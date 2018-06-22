@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class WebEventFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebEventFormatter" />
+  <TypeSignature Language="F#" Value="type WebEventFormatter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventFormatter.AppendLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendLine (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendLine(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.AppendLine : string -&gt; unit" Usage="webEventFormatter.AppendLine s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventFormatter.IndentationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property IndentationLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndentationLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.IndentationLevel : int with get, set" Usage="System.Web.Management.WebEventFormatter.IndentationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventFormatter.TabSize" />
       <MemberSignature Language="VB.NET" Value="Public Property TabSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TabSize : int with get, set" Usage="System.Web.Management.WebEventFormatter.TabSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventFormatter.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="webEventFormatter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

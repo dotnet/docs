@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Accessibility.AnnoScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum AnnoScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class AnnoScope" />
+  <TypeSignature Language="F#" Value="type AnnoScope = " />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:Accessibility.AnnoScope.ANNO_CONTAINER" />
       <MemberSignature Language="VB.NET" Value="ANNO_CONTAINER" />
       <MemberSignature Language="C++ CLI" Value="ANNO_CONTAINER" />
+      <MemberSignature Language="F#" Value="ANNO_CONTAINER = 1" Usage="Accessibility.AnnoScope.ANNO_CONTAINER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Accessibility.AnnoScope.ANNO_THIS" />
       <MemberSignature Language="VB.NET" Value="ANNO_THIS" />
       <MemberSignature Language="C++ CLI" Value="ANNO_THIS" />
+      <MemberSignature Language="F#" Value="ANNO_THIS = 0" Usage="Accessibility.AnnoScope.ANNO_THIS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

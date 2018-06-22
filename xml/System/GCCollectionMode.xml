@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.GCCollectionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum GCCollectionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class GCCollectionMode" />
+  <TypeSignature Language="F#" Value="type GCCollectionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCCollectionMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.GCCollectionMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCCollectionMode.Forced" />
       <MemberSignature Language="VB.NET" Value="Forced" />
       <MemberSignature Language="C++ CLI" Value="Forced" />
+      <MemberSignature Language="F#" Value="Forced = 1" Usage="System.GCCollectionMode.Forced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCCollectionMode.Optimized" />
       <MemberSignature Language="VB.NET" Value="Optimized" />
       <MemberSignature Language="C++ CLI" Value="Optimized" />
+      <MemberSignature Language="F#" Value="Optimized = 2" Usage="System.GCCollectionMode.Optimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

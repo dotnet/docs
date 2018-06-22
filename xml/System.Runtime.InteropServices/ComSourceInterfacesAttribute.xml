@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComSourceInterfacesAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComSourceInterfacesAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ComSourceInterfacesAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComSourceInterfacesAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceInterfaces As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComSourceInterfacesAttribute(System::String ^ sourceInterfaces);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComSourceInterfacesAttribute : string -&gt; System.Runtime.InteropServices.ComSourceInterfacesAttribute" Usage="new System.Runtime.InteropServices.ComSourceInterfacesAttribute sourceInterfaces" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComSourceInterfacesAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceInterface As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComSourceInterfacesAttribute(Type ^ sourceInterface);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComSourceInterfacesAttribute : Type -&gt; System.Runtime.InteropServices.ComSourceInterfacesAttribute" Usage="new System.Runtime.InteropServices.ComSourceInterfacesAttribute sourceInterface" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComSourceInterfacesAttribute.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceInterface1 As Type, sourceInterface2 As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComSourceInterfacesAttribute(Type ^ sourceInterface1, Type ^ sourceInterface2);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComSourceInterfacesAttribute : Type * Type -&gt; System.Runtime.InteropServices.ComSourceInterfacesAttribute" Usage="new System.Runtime.InteropServices.ComSourceInterfacesAttribute (sourceInterface1, sourceInterface2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComSourceInterfacesAttribute.#ctor(System.Type,System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceInterface1 As Type, sourceInterface2 As Type, sourceInterface3 As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComSourceInterfacesAttribute(Type ^ sourceInterface1, Type ^ sourceInterface2, Type ^ sourceInterface3);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComSourceInterfacesAttribute : Type * Type * Type -&gt; System.Runtime.InteropServices.ComSourceInterfacesAttribute" Usage="new System.Runtime.InteropServices.ComSourceInterfacesAttribute (sourceInterface1, sourceInterface2, sourceInterface3)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -252,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComSourceInterfacesAttribute.#ctor(System.Type,System.Type,System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceInterface1 As Type, sourceInterface2 As Type, sourceInterface3 As Type, sourceInterface4 As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComSourceInterfacesAttribute(Type ^ sourceInterface1, Type ^ sourceInterface2, Type ^ sourceInterface3, Type ^ sourceInterface4);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComSourceInterfacesAttribute : Type * Type * Type * Type -&gt; System.Runtime.InteropServices.ComSourceInterfacesAttribute" Usage="new System.Runtime.InteropServices.ComSourceInterfacesAttribute (sourceInterface1, sourceInterface2, sourceInterface3, sourceInterface4)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -300,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComSourceInterfacesAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Runtime.InteropServices.ComSourceInterfacesAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

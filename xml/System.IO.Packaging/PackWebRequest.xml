@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackWebRequest" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PackWebRequest&#xA;Inherits WebRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackWebRequest sealed : System::Net::WebRequest" />
+  <TypeSignature Language="F#" Value="type PackWebRequest = class&#xA;    inherit WebRequest" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.CachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CachePolicy As RequestCachePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Cache::RequestCachePolicy ^ CachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CachePolicy : System.Net.Cache.RequestCachePolicy with get, set" Usage="System.IO.Packaging.PackWebRequest.CachePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.ConnectionGroupName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionGroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionGroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionGroupName : string with get, set" Usage="System.IO.Packaging.PackWebRequest.ConnectionGroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ContentLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int64 with get, set" Usage="System.IO.Packaging.PackWebRequest.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.IO.Packaging.PackWebRequest.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Credentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.IO.Packaging.PackWebRequest.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequest.GetInnerRequest" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInnerRequest () As WebRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::WebRequest ^ GetInnerRequest();" />
+      <MemberSignature Language="F#" Value="member this.GetInnerRequest : unit -&gt; System.Net.WebRequest" Usage="packWebRequest.GetInnerRequest " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequest.GetRequestStream" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRequestStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetRequestStream();" />
+      <MemberSignature Language="F#" Value="abstract member GetRequestStream : unit -&gt; System.IO.Stream&#xA;override this.GetRequestStream : unit -&gt; System.IO.Stream" Usage="packWebRequest.GetRequestStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequest.GetResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResponse () As WebResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::WebResponse ^ GetResponse();" />
+      <MemberSignature Language="F#" Value="abstract member GetResponse : unit -&gt; System.Net.WebResponse&#xA;override this.GetResponse : unit -&gt; System.Net.WebResponse" Usage="packWebRequest.GetResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Headers As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); void set(System::Net::WebHeaderCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection with get, set" Usage="System.IO.Packaging.PackWebRequest.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -308,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Method" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Method As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.IO.Packaging.PackWebRequest.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -337,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.PreAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property PreAuthenticate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool PreAuthenticate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreAuthenticate : bool with get, set" Usage="System.IO.Packaging.PackWebRequest.PreAuthenticate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -367,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Proxy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Proxy As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.IO.Packaging.PackWebRequest.Proxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -402,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequestUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.IO.Packaging.PackWebRequest.RequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -423,6 +437,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.IO.Packaging.PackWebRequest.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -452,6 +467,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.UseDefaultCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property UseDefaultCredentials As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.IO.Packaging.PackWebRequest.UseDefaultCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

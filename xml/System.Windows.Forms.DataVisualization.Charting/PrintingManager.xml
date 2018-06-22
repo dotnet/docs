@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.PrintingManager" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintingManager&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintingManager : IDisposable" />
+  <TypeSignature Language="F#" Value="type PrintingManager = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.#ctor(System.ComponentModel.Design.IServiceContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (container As IServiceContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintingManager(System::ComponentModel::Design::IServiceContainer ^ container);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.PrintingManager : System.ComponentModel.Design.IServiceContainer -&gt; System.Windows.Forms.DataVisualization.Charting.PrintingManager" Usage="new System.Windows.Forms.DataVisualization.Charting.PrintingManager container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="printingManager.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="printingManager.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.PageSetup" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageSetup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageSetup();" />
+      <MemberSignature Language="F#" Value="member this.PageSetup : unit -&gt; unit" Usage="printingManager.PageSetup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.Print(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Print (showPrintDialog As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Print(bool showPrintDialog);" />
+      <MemberSignature Language="F#" Value="member this.Print : bool -&gt; unit" Usage="printingManager.Print showPrintDialog" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintDocument" />
       <MemberSignature Language="VB.NET" Value="Public Property PrintDocument As PrintDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintDocument ^ PrintDocument { System::Drawing::Printing::PrintDocument ^ get(); void set(System::Drawing::Printing::PrintDocument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrintDocument : System.Drawing.Printing.PrintDocument with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrintPaint(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintPaint(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrintPaint(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle position);" />
+      <MemberSignature Language="F#" Value="member this.PrintPaint : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="printingManager.PrintPaint (graphics, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintPreview" />
       <MemberSignature Language="VB.NET" Value="Public Sub PrintPreview ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrintPreview();" />
+      <MemberSignature Language="F#" Value="member this.PrintPreview : unit -&gt; unit" Usage="printingManager.PrintPreview " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

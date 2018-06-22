@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.ExportBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExportBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExportBuilder sealed" />
+  <TypeSignature Language="F#" Value="type ExportBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ExportBuilder.AddMetadata(System.String,System.Func{System.Type,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMetadata (name As String, itemFunc As Func(Of Type, Object)) As ExportBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ExportBuilder ^ AddMetadata(System::String ^ name, Func&lt;Type ^, System::Object ^&gt; ^ itemFunc);" />
+      <MemberSignature Language="F#" Value="member this.AddMetadata : string * Func&lt;Type, obj&gt; -&gt; System.ComponentModel.Composition.Registration.ExportBuilder" Usage="exportBuilder.AddMetadata (name, itemFunc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ExportBuilder.AddMetadata(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMetadata (name As String, value As Object) As ExportBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ExportBuilder ^ AddMetadata(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddMetadata : string * obj -&gt; System.ComponentModel.Composition.Registration.ExportBuilder" Usage="exportBuilder.AddMetadata (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ExportBuilder.AsContractName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AsContractName (contractName As String) As ExportBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ExportBuilder ^ AsContractName(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.AsContractName : string -&gt; System.ComponentModel.Composition.Registration.ExportBuilder" Usage="exportBuilder.AsContractName contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ExportBuilder AsContractType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ExportBuilder.AsContractType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ExportBuilder ^ AsContractType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.AsContractType : Type -&gt; System.ComponentModel.Composition.Registration.ExportBuilder" Usage="exportBuilder.AsContractType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ExportBuilder.AsContractType``1" />
       <MemberSignature Language="VB.NET" Value="Public Function AsContractType(Of T) () As ExportBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::ExportBuilder ^ AsContractType();" />
+      <MemberSignature Language="F#" Value="member this.AsContractType : unit -&gt; System.ComponentModel.Composition.Registration.ExportBuilder" Usage="exportBuilder.AsContractType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ExportBuilder.Inherited" />
       <MemberSignature Language="VB.NET" Value="Public Function Inherited () As ExportBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ExportBuilder ^ Inherited();" />
+      <MemberSignature Language="F#" Value="member this.Inherited : unit -&gt; System.ComponentModel.Composition.Registration.ExportBuilder" Usage="exportBuilder.Inherited " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>

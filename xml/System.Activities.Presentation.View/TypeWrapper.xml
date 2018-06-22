@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.TypeWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeWrapper sealed" />
+  <TypeSignature Language="F#" Value="type TypeWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeWrapper.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Activities.Presentation.View.TypeWrapper.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeWrapper.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="typeWrapper.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeWrapper.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="typeWrapper.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeWrapper.IsTypeDefinition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTypeDefinition As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTypeDefinition { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTypeDefinition : bool" Usage="System.Activities.Presentation.View.TypeWrapper.IsTypeDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeWrapper.Tag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj" Usage="System.Activities.Presentation.View.TypeWrapper.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeWrapper.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="typeWrapper.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeWrapper.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Activities.Presentation.View.TypeWrapper.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

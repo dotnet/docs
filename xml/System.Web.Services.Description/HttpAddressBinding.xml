@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.HttpAddressBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpAddressBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpAddressBinding sealed : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type HttpAddressBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.HttpAddressBinding.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="System.Web.Services.Description.HttpAddressBinding.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Random" />
   <TypeSignature Language="VB.NET" Value="Public Class Random" />
   <TypeSignature Language="C++ CLI" Value="public ref class Random" />
+  <TypeSignature Language="F#" Value="type Random = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -385,6 +386,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="DocId" Value="M:System.Random.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Seed As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Random(int Seed);" />
+      <MemberSignature Language="F#" Value="new Random : int -&gt; Random" Usage="new System.Random Seed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -453,6 +455,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="DocId" Value="M:System.Random.Next" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Next () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Next();" />
+      <MemberSignature Language="F#" Value="abstract member Next : unit -&gt; int&#xA;override this.Next : unit -&gt; int" Usage="random.Next " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -513,6 +516,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="DocId" Value="M:System.Random.Next(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Next (maxValue As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Next(int maxValue);" />
+      <MemberSignature Language="F#" Value="abstract member Next : int -&gt; int&#xA;override this.Next : int -&gt; int" Usage="random.Next maxValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -575,6 +579,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="DocId" Value="M:System.Random.Next(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Next (minValue As Integer, maxValue As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Next(int minValue, int maxValue);" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * int -&gt; int&#xA;override this.Next : int * int -&gt; int" Usage="random.Next (minValue, maxValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -644,6 +649,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="DocId" Value="M:System.Random.NextBytes(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub NextBytes (buffer As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NextBytes(cli::array &lt;System::Byte&gt; ^ buffer);" />
+      <MemberSignature Language="F#" Value="abstract member NextBytes : byte[] -&gt; unit&#xA;override this.NextBytes : byte[] -&gt; unit" Usage="random.NextBytes buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -704,6 +710,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="DocId" Value="M:System.Random.NextBytes(System.Span{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub NextBytes (buffer As Span(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NextBytes(Span&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="F#" Value="abstract member NextBytes : Span&lt;byte&gt; -&gt; unit&#xA;override this.NextBytes : Span&lt;byte&gt; -&gt; unit" Usage="random.NextBytes buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -727,6 +734,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="DocId" Value="M:System.Random.NextDouble" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NextDouble () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double NextDouble();" />
+      <MemberSignature Language="F#" Value="abstract member NextDouble : unit -&gt; double&#xA;override this.NextDouble : unit -&gt; double" Usage="random.NextDouble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -786,6 +794,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="DocId" Value="M:System.Random.Sample" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Sample () As Double" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual double Sample();" />
+      <MemberSignature Language="F#" Value="abstract member Sample : unit -&gt; double&#xA;override this.Sample : unit -&gt; double" Usage="random.Sample " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

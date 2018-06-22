@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableClearEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataTableClearEventHandler(sender As Object, e As DataTableClearEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataTableClearEventHandler(System::Object ^ sender, DataTableClearEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataTableClearEventHandler = delegate of obj * DataTableClearEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

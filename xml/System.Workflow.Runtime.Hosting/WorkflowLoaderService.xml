@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowLoaderService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowLoaderService&#xA;Inherits WorkflowRuntimeService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowLoaderService abstract : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
+  <TypeSignature Language="F#" Value="type WorkflowLoaderService = class&#xA;    inherit WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowLoaderService.CreateInstance(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function CreateInstance (workflowType As Type) As Activity" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::ComponentModel::Activity ^ CreateInstance(Type ^ workflowType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : Type -&gt; System.Workflow.ComponentModel.Activity" Usage="workflowLoaderService.CreateInstance workflowType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowLoaderService.CreateInstance(System.Xml.XmlReader,System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function CreateInstance (workflowDefinitionReader As XmlReader, rulesReader As XmlReader) As Activity" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::ComponentModel::Activity ^ CreateInstance(System::Xml::XmlReader ^ workflowDefinitionReader, System::Xml::XmlReader ^ rulesReader);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : System.Xml.XmlReader * System.Xml.XmlReader -&gt; System.Workflow.ComponentModel.Activity" Usage="workflowLoaderService.CreateInstance (workflowDefinitionReader, rulesReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

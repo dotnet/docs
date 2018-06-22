@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowFileItem" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowFileItem&#xA;Inherits ContextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowFileItem : System::Activities::Presentation::ContextItem" />
+  <TypeSignature Language="F#" Value="type WorkflowFileItem = class&#xA;    inherit ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowFileItem.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.WorkflowFileItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowFileItem.LoadedFile" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadedFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoadedFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadedFile : string with get, set" Usage="System.Activities.Presentation.WorkflowFileItem.LoadedFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

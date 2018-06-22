@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementCreateAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementCreateAttribute&#xA;Inherits ManagementNewInstanceAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementCreateAttribute sealed : System::Management::Instrumentation::ManagementNewInstanceAttribute" />
+  <TypeSignature Language="F#" Value="type ManagementCreateAttribute = class&#xA;    inherit ManagementNewInstanceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UnknownWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnknownWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnknownWrapper sealed" />
+  <TypeSignature Language="F#" Value="type UnknownWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@ int MyMethod(Object o); //Managed signature
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UnknownWrapper.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnknownWrapper(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.UnknownWrapper : obj -&gt; System.Runtime.InteropServices.UnknownWrapper" Usage="new System.Runtime.InteropServices.UnknownWrapper obj" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -93,6 +95,7 @@ int MyMethod(Object o); //Managed signature
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.UnknownWrapper.WrappedObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrappedObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WrappedObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WrappedObject : obj" Usage="System.Runtime.InteropServices.UnknownWrapper.WrappedObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

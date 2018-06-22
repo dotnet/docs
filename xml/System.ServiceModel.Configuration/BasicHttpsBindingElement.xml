@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BasicHttpsBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class BasicHttpsBindingElement&#xA;Inherits HttpBindingBaseElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicHttpsBindingElement : System::ServiceModel::Configuration::HttpBindingBaseElement" />
+  <TypeSignature Language="F#" Value="type BasicHttpsBindingElement = class&#xA;    inherit HttpBindingBaseElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BasicHttpsBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicHttpsBindingElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.BasicHttpsBindingElement : string -&gt; System.ServiceModel.Configuration.BasicHttpsBindingElement" Usage="new System.ServiceModel.Configuration.BasicHttpsBindingElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BasicHttpsBindingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.BasicHttpsBindingElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BasicHttpsBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit" Usage="basicHttpsBindingElement.InitializeFrom binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BasicHttpsBindingElement.MessageEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageEncoding As WSMessageEncoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WSMessageEncoding MessageEncoding { System::ServiceModel::WSMessageEncoding get(); void set(System::ServiceModel::WSMessageEncoding value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageEncoding : System.ServiceModel.WSMessageEncoding with get, set" Usage="System.ServiceModel.Configuration.BasicHttpsBindingElement.MessageEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BasicHttpsBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="basicHttpsBindingElement.OnApplyConfiguration binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BasicHttpsBindingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.BasicHttpsBindingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BasicHttpsBindingElement.Security" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Security As BasicHttpsSecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::BasicHttpsSecurityElement ^ Security { System::ServiceModel::Configuration::BasicHttpsSecurityElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.Configuration.BasicHttpsSecurityElement" Usage="System.ServiceModel.Configuration.BasicHttpsBindingElement.Security" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

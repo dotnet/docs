@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WebPartDisplayModeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartDisplayModeEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WebPartDisplayModeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPartDisplayMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oldDisplayMode As WebPartDisplayMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartDisplayModeEventArgs(System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ oldDisplayMode);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs : System.Web.UI.WebControls.WebParts.WebPartDisplayMode -&gt; System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" Usage="new System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs oldDisplayMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs.OldDisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Property OldDisplayMode As WebPartDisplayMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ OldDisplayMode { System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ get(); void set(System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OldDisplayMode : System.Web.UI.WebControls.WebParts.WebPartDisplayMode with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs.OldDisplayMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

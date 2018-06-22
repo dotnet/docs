@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BufferManager" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BufferManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class BufferManager abstract" />
+  <TypeSignature Language="F#" Value="type BufferManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BufferManager.Clear" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="bufferManager.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BufferManager.CreateBufferManager(System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBufferManager (maxBufferPoolSize As Long, maxBufferSize As Integer) As BufferManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::BufferManager ^ CreateBufferManager(long maxBufferPoolSize, int maxBufferSize);" />
+      <MemberSignature Language="F#" Value="static member CreateBufferManager : int64 * int -&gt; System.ServiceModel.Channels.BufferManager" Usage="System.ServiceModel.Channels.BufferManager.CreateBufferManager (maxBufferPoolSize, maxBufferSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BufferManager.ReturnBuffer(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ReturnBuffer (buffer As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ReturnBuffer(cli::array &lt;System::Byte&gt; ^ buffer);" />
+      <MemberSignature Language="F#" Value="abstract member ReturnBuffer : byte[] -&gt; unit" Usage="bufferManager.ReturnBuffer buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BufferManager.TakeBuffer(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function TakeBuffer (bufferSize As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ TakeBuffer(int bufferSize);" />
+      <MemberSignature Language="F#" Value="abstract member TakeBuffer : int -&gt; byte[]" Usage="bufferManager.TakeBuffer bufferSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.FlowDocumentPageViewer" />
   <TypeSignature Language="VB.NET" Value="Public Class FlowDocumentPageViewer&#xA;Inherits DocumentViewerBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlowDocumentPageViewer : System::Windows::Controls::Primitives::DocumentViewerBase" />
+  <TypeSignature Language="F#" Value="type FlowDocumentPageViewer = class&#xA;    inherit DocumentViewerBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoom" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanDecreaseZoom As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanDecreaseZoom { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanDecreaseZoom : bool" Usage="System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoomProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanDecreaseZoomProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanDecreaseZoomProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanDecreaseZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoomPropertyKey" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CanDecreaseZoomPropertyKey As DependencyPropertyKey " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Windows::DependencyPropertyKey ^ CanDecreaseZoomPropertyKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanDecreaseZoomPropertyKey : System.Windows.DependencyPropertyKey" Usage="System.Windows.Controls.FlowDocumentPageViewer.CanDecreaseZoomPropertyKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoom" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanIncreaseZoom As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanIncreaseZoom { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanIncreaseZoom : bool" Usage="System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoomProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanIncreaseZoomProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanIncreaseZoomProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanIncreaseZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoomPropertyKey" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CanIncreaseZoomPropertyKey As DependencyPropertyKey " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Windows::DependencyPropertyKey ^ CanIncreaseZoomPropertyKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanIncreaseZoomPropertyKey : System.Windows.DependencyPropertyKey" Usage="System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoomPropertyKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.DecreaseZoom" />
       <MemberSignature Language="VB.NET" Value="Public Sub DecreaseZoom ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DecreaseZoom();" />
+      <MemberSignature Language="F#" Value="member this.DecreaseZoom : unit -&gt; unit" Usage="flowDocumentPageViewer.DecreaseZoom " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.Find" />
       <MemberSignature Language="VB.NET" Value="Public Sub Find ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Find();" />
+      <MemberSignature Language="F#" Value="override this.Find : unit -&gt; unit" Usage="flowDocumentPageViewer.Find " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -322,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.IncreaseZoom" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncreaseZoom ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncreaseZoom();" />
+      <MemberSignature Language="F#" Value="member this.IncreaseZoom : unit -&gt; unit" Usage="flowDocumentPageViewer.IncreaseZoom " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.IsInactiveSelectionHighlightEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInactiveSelectionHighlightEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInactiveSelectionHighlightEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInactiveSelectionHighlightEnabled : bool with get, set" Usage="System.Windows.Controls.FlowDocumentPageViewer.IsInactiveSelectionHighlightEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -394,6 +405,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.IsInactiveSelectionHighlightEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInactiveSelectionHighlightEnabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInactiveSelectionHighlightEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInactiveSelectionHighlightEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.IsInactiveSelectionHighlightEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -413,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.IsSelectionActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelectionActive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelectionActive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSelectionActive : bool" Usage="System.Windows.Controls.FlowDocumentPageViewer.IsSelectionActive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -450,6 +463,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.IsSelectionActiveProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionActiveProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectionActiveProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectionActiveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.IsSelectionActiveProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -469,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.MaxZoom" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxZoom As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxZoom { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxZoom : double with get, set" Usage="System.Windows.Controls.FlowDocumentPageViewer.MaxZoom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -520,6 +535,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.MaxZoomProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxZoomProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxZoomProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.MaxZoomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -539,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.MinZoom" />
       <MemberSignature Language="VB.NET" Value="Public Property MinZoom As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinZoom { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MinZoom : double with get, set" Usage="System.Windows.Controls.FlowDocumentPageViewer.MinZoom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -590,6 +607,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.MinZoomProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinZoomProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinZoomProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.MinZoomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -609,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="flowDocumentPageViewer.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -638,6 +657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnCancelPrintCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCancelPrintCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCancelPrintCommand();" />
+      <MemberSignature Language="F#" Value="override this.OnCancelPrintCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnCancelPrintCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -665,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContextMenuOpening (e As ContextMenuEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContextMenuOpening(System::Windows::Controls::ContextMenuEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnContextMenuOpening : System.Windows.Controls.ContextMenuEventArgs -&gt; unit" Usage="flowDocumentPageViewer.OnContextMenuOpening e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -697,6 +718,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="flowDocumentPageViewer.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -718,6 +740,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnDecreaseZoomCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDecreaseZoomCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDecreaseZoomCommand();" />
+      <MemberSignature Language="F#" Value="abstract member OnDecreaseZoomCommand : unit -&gt; unit&#xA;override this.OnDecreaseZoomCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnDecreaseZoomCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -745,6 +768,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnDocumentChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDocumentChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDocumentChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnDocumentChanged : unit -&gt; unit" Usage="flowDocumentPageViewer.OnDocumentChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -772,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnFindCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFindCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFindCommand();" />
+      <MemberSignature Language="F#" Value="abstract member OnFindCommand : unit -&gt; unit&#xA;override this.OnFindCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnFindCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -799,6 +824,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnFirstPageCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFirstPageCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFirstPageCommand();" />
+      <MemberSignature Language="F#" Value="override this.OnFirstPageCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnFirstPageCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -828,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnGoToPageCommand(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGoToPageCommand (pageNumber As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGoToPageCommand(int pageNumber);" />
+      <MemberSignature Language="F#" Value="override this.OnGoToPageCommand : int -&gt; unit" Usage="flowDocumentPageViewer.OnGoToPageCommand pageNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -860,6 +887,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnIncreaseZoomCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnIncreaseZoomCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnIncreaseZoomCommand();" />
+      <MemberSignature Language="F#" Value="abstract member OnIncreaseZoomCommand : unit -&gt; unit&#xA;override this.OnIncreaseZoomCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnIncreaseZoomCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -887,6 +915,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="flowDocumentPageViewer.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -925,6 +954,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnLastPageCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLastPageCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLastPageCommand();" />
+      <MemberSignature Language="F#" Value="override this.OnLastPageCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnLastPageCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -954,6 +984,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseWheelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Input::MouseWheelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseWheel : System.Windows.Input.MouseWheelEventArgs -&gt; unit" Usage="flowDocumentPageViewer.OnMouseWheel e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -986,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnNextPageCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnNextPageCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnNextPageCommand();" />
+      <MemberSignature Language="F#" Value="override this.OnNextPageCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnNextPageCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1015,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnPageViewsChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPageViewsChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPageViewsChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnPageViewsChanged : unit -&gt; unit" Usage="flowDocumentPageViewer.OnPageViewsChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1044,6 +1077,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnPreviousPageCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviousPageCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviousPageCommand();" />
+      <MemberSignature Language="F#" Value="override this.OnPreviousPageCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnPreviousPageCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1073,6 +1107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnPrintCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPrintCommand ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPrintCommand();" />
+      <MemberSignature Language="F#" Value="override this.OnPrintCommand : unit -&gt; unit" Usage="flowDocumentPageViewer.OnPrintCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1100,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentPageViewer.OnPrintCompleted" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPrintCompleted ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPrintCompleted();" />
+      <MemberSignature Language="F#" Value="abstract member OnPrintCompleted : unit -&gt; unit&#xA;override this.OnPrintCompleted : unit -&gt; unit" Usage="flowDocumentPageViewer.OnPrintCompleted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1120,6 +1156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.Selection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As TextSelection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextSelection ^ Selection { System::Windows::Documents::TextSelection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Selection : System.Windows.Documents.TextSelection" Usage="System.Windows.Controls.FlowDocumentPageViewer.Selection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1156,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionBrush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ SelectionBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1190,6 +1228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.SelectionBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.SelectionBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1209,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacity" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionOpacity As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SelectionOpacity { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionOpacity : double with get, set" Usage="System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1243,6 +1283,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionOpacityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionOpacityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionOpacityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1262,6 +1303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.Zoom" />
       <MemberSignature Language="VB.NET" Value="Public Property Zoom As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Zoom { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Zoom : double with get, set" Usage="System.Windows.Controls.FlowDocumentPageViewer.Zoom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1311,6 +1353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrement" />
       <MemberSignature Language="VB.NET" Value="Public Property ZoomIncrement As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ZoomIncrement { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ZoomIncrement : double with get, set" Usage="System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1362,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ZoomIncrementProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ZoomIncrementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ZoomIncrementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.ZoomIncrementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1381,6 +1425,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentPageViewer.ZoomProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ZoomProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ZoomProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentPageViewer.ZoomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

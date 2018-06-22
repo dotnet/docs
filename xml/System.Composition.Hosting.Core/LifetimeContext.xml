@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.LifetimeContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LifetimeContext&#xA;Inherits CompositionContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class LifetimeContext sealed : System::Composition::CompositionContext, IDisposable" />
+  <TypeSignature Language="F#" Value="type LifetimeContext = class&#xA;    inherit CompositionContext&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Hosting</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -39,6 +40,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.LifetimeContext.AddBoundInstance(System.IDisposable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBoundInstance (instance As IDisposable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBoundInstance(IDisposable ^ instance);" />
+      <MemberSignature Language="F#" Value="member this.AddBoundInstance : IDisposable -&gt; unit" Usage="lifetimeContext.AddBoundInstance instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -64,6 +66,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.LifetimeContext.AllocateSharingId" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AllocateSharingId () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int AllocateSharingId();" />
+      <MemberSignature Language="F#" Value="static member AllocateSharingId : unit -&gt; int" Usage="System.Composition.Hosting.Core.LifetimeContext.AllocateSharingId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -86,6 +89,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.LifetimeContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="lifetimeContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -110,6 +114,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.LifetimeContext.FindContextWithin(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindContextWithin (sharingBoundary As String) As LifetimeContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::Core::LifetimeContext ^ FindContextWithin(System::String ^ sharingBoundary);" />
+      <MemberSignature Language="F#" Value="member this.FindContextWithin : string -&gt; System.Composition.Hosting.Core.LifetimeContext" Usage="lifetimeContext.FindContextWithin sharingBoundary" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -142,6 +147,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.LifetimeContext.GetOrCreate(System.Int32,System.Composition.Hosting.Core.CompositionOperation,System.Composition.Hosting.Core.CompositeActivator)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrCreate (sharingId As Integer, operation As CompositionOperation, creator As CompositeActivator) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOrCreate(int sharingId, System::Composition::Hosting::Core::CompositionOperation ^ operation, System::Composition::Hosting::Core::CompositeActivator ^ creator);" />
+      <MemberSignature Language="F#" Value="member this.GetOrCreate : int * System.Composition.Hosting.Core.CompositionOperation * System.Composition.Hosting.Core.CompositeActivator -&gt; obj" Usage="lifetimeContext.GetOrCreate (sharingId, operation, creator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -178,6 +184,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.LifetimeContext.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="lifetimeContext.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -200,6 +207,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.LifetimeContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetExport (contract As CompositionContract, ByRef export As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryGetExport(System::Composition::Hosting::Core::CompositionContract ^ contract, [Runtime::InteropServices::Out] System::Object ^ % export);" />
+      <MemberSignature Language="F#" Value="override this.TryGetExport : System.Composition.Hosting.Core.CompositionContract *  -&gt; bool" Usage="lifetimeContext.TryGetExport (contract, export)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>

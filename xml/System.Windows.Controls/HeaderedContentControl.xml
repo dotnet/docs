@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.HeaderedContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Class HeaderedContentControl&#xA;Inherits ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class HeaderedContentControl : System::Windows::Controls::ContentControl" />
+  <TypeSignature Language="F#" Value="type HeaderedContentControl = class&#xA;    inherit ContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HeaderedContentControl.HasHeader" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasHeader { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasHeader : bool" Usage="System.Windows.Controls.HeaderedContentControl.HasHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -125,6 +127,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.HeaderedContentControl.HasHeaderProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasHeaderProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasHeaderProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasHeaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.HeaderedContentControl.HasHeaderProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,6 +147,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HeaderedContentControl.Header" />
       <MemberSignature Language="VB.NET" Value="Public Property Header As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Header { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="System.Windows.Controls.HeaderedContentControl.Header" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -207,6 +211,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.HeaderedContentControl.HeaderProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.HeaderedContentControl.HeaderProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -226,6 +231,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HeaderedContentControl.HeaderStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderStringFormat : string with get, set" Usage="System.Windows.Controls.HeaderedContentControl.HeaderStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -278,6 +284,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.HeaderedContentControl.HeaderStringFormatProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStringFormatProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderStringFormatProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.HeaderedContentControl.HeaderStringFormatProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -297,6 +304,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HeaderedContentControl.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ HeaderTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.HeaderedContentControl.HeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -368,6 +376,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.HeaderedContentControl.HeaderTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.HeaderedContentControl.HeaderTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -387,6 +396,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ HeaderTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -459,6 +469,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.HeaderedContentControl.HeaderTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -478,6 +489,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HeaderedContentControl.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.HeaderedContentControl.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -498,6 +510,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HeaderedContentControl.OnHeaderChanged(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHeaderChanged (oldHeader As Object, newHeader As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHeaderChanged(System::Object ^ oldHeader, System::Object ^ newHeader);" />
+      <MemberSignature Language="F#" Value="abstract member OnHeaderChanged : obj * obj -&gt; unit&#xA;override this.OnHeaderChanged : obj * obj -&gt; unit" Usage="headeredContentControl.OnHeaderChanged (oldHeader, newHeader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -523,6 +536,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HeaderedContentControl.OnHeaderStringFormatChanged(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHeaderStringFormatChanged (oldHeaderStringFormat As String, newHeaderStringFormat As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHeaderStringFormatChanged(System::String ^ oldHeaderStringFormat, System::String ^ newHeaderStringFormat);" />
+      <MemberSignature Language="F#" Value="abstract member OnHeaderStringFormatChanged : string * string -&gt; unit&#xA;override this.OnHeaderStringFormatChanged : string * string -&gt; unit" Usage="headeredContentControl.OnHeaderStringFormatChanged (oldHeaderStringFormat, newHeaderStringFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -548,6 +562,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HeaderedContentControl.OnHeaderTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHeaderTemplateChanged (oldHeaderTemplate As DataTemplate, newHeaderTemplate As DataTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHeaderTemplateChanged(System::Windows::DataTemplate ^ oldHeaderTemplate, System::Windows::DataTemplate ^ newHeaderTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member OnHeaderTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit&#xA;override this.OnHeaderTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit" Usage="headeredContentControl.OnHeaderTemplateChanged (oldHeaderTemplate, newHeaderTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -573,6 +588,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HeaderedContentControl.OnHeaderTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHeaderTemplateSelectorChanged (oldHeaderTemplateSelector As DataTemplateSelector, newHeaderTemplateSelector As DataTemplateSelector)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHeaderTemplateSelectorChanged(System::Windows::Controls::DataTemplateSelector ^ oldHeaderTemplateSelector, System::Windows::Controls::DataTemplateSelector ^ newHeaderTemplateSelector);" />
+      <MemberSignature Language="F#" Value="abstract member OnHeaderTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit&#xA;override this.OnHeaderTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit" Usage="headeredContentControl.OnHeaderTemplateSelectorChanged (oldHeaderTemplateSelector, newHeaderTemplateSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -598,6 +614,7 @@ TabControl with different types in the Header property
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HeaderedContentControl.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="headeredContentControl.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

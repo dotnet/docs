@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.TypeGeneratedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TypeGeneratedEventHandler(sender As Object, e As TypeGeneratedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TypeGeneratedEventHandler(System::Object ^ sender, TypeGeneratedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TypeGeneratedEventHandler = delegate of obj * TypeGeneratedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

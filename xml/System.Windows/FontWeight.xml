@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontWeight" />
   <TypeSignature Language="VB.NET" Value="Public Structure FontWeight&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class FontWeight : IFormattable" />
+  <TypeSignature Language="F#" Value="type FontWeight = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.Compare(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As FontWeight, right As FontWeight) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::Windows::FontWeight left, System::Windows::FontWeight right);" />
+      <MemberSignature Language="F#" Value="static member Compare : System.Windows.FontWeight * System.Windows.FontWeight -&gt; int" Usage="System.Windows.FontWeight.Compare (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="fontWeight.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.Equals(System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As FontWeight) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::FontWeight obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.FontWeight -&gt; bool" Usage="fontWeight.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.FromOpenTypeWeight(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromOpenTypeWeight (weightValue As Integer) As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontWeight FromOpenTypeWeight(int weightValue);" />
+      <MemberSignature Language="F#" Value="static member FromOpenTypeWeight : int -&gt; System.Windows.FontWeight" Usage="System.Windows.FontWeight.FromOpenTypeWeight weightValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="fontWeight.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_Equality(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As FontWeight, right As FontWeight) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::FontWeight left, System::Windows::FontWeight right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.FontWeight * System.Windows.FontWeight -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_GreaterThan(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As FontWeight, right As FontWeight) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Windows::FontWeight left, System::Windows::FontWeight right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Windows.FontWeight * System.Windows.FontWeight -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_GreaterThanOrEqual(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As FontWeight, right As FontWeight) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::Windows::FontWeight left, System::Windows::FontWeight right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Windows.FontWeight * System.Windows.FontWeight -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_Inequality(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As FontWeight, right As FontWeight) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::FontWeight left, System::Windows::FontWeight right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.FontWeight * System.Windows.FontWeight -&gt; bool" Usage="System.Windows.FontWeight.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -348,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_LessThan(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As FontWeight, right As FontWeight) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Windows::FontWeight left, System::Windows::FontWeight right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Windows.FontWeight * System.Windows.FontWeight -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -382,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_LessThanOrEqual(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As FontWeight, right As FontWeight) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::Windows::FontWeight left, System::Windows::FontWeight right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Windows.FontWeight * System.Windows.FontWeight -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -454,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.ToOpenTypeWeight" />
       <MemberSignature Language="VB.NET" Value="Public Function ToOpenTypeWeight () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToOpenTypeWeight();" />
+      <MemberSignature Language="F#" Value="member this.ToOpenTypeWeight : unit -&gt; int" Usage="fontWeight.ToOpenTypeWeight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -482,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fontWeight.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

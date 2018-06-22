@@ -51,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridViewCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewImageCellAccessibleObject(System::Windows::Forms::DataGridViewCell ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject : System.Windows.Forms.DataGridViewCell -&gt; System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject" Usage="new System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.DefaultAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="dataGridViewImageCellAccessibleObject.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
+      <MemberSignature Language="F#" Value="override this.GetChildCount : unit -&gt; int" Usage="dataGridViewImageCellAccessibleObject.GetChildCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

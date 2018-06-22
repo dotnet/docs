@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.ModelUIElement3D" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ModelUIElement3D&#xA;Inherits UIElement3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelUIElement3D sealed : System::Windows::UIElement3D" />
+  <TypeSignature Language="F#" Value="type ModelUIElement3D = class&#xA;    inherit UIElement3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ModelUIElement3D.Model" />
       <MemberSignature Language="VB.NET" Value="Public Property Model As Model3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Model3D ^ Model { System::Windows::Media::Media3D::Model3D ^ get(); void set(System::Windows::Media::Media3D::Model3D ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Model : System.Windows.Media.Media3D.Model3D with get, set" Usage="System.Windows.Media.Media3D.ModelUIElement3D.Model" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ModelUIElement3D.ModelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ModelProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ModelProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ModelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.ModelUIElement3D.ModelProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ModelUIElement3D.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="modelUIElement3D.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileAutoSaveEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileAutoSaveEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileAutoSaveEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ProfileAutoSaveEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileAutoSaveEventArgs.#ctor(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileAutoSaveEventArgs(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.Profile.ProfileAutoSaveEventArgs : System.Web.HttpContext -&gt; System.Web.Profile.ProfileAutoSaveEventArgs" Usage="new System.Web.Profile.ProfileAutoSaveEventArgs context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileAutoSaveEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Profile.ProfileAutoSaveEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave" />
       <MemberSignature Language="VB.NET" Value="Public Property ContinueWithProfileAutoSave As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContinueWithProfileAutoSave { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ContinueWithProfileAutoSave : bool with get, set" Usage="System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

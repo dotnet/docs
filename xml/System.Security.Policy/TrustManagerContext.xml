@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.TrustManagerContext" />
   <TypeSignature Language="VB.NET" Value="Public Class TrustManagerContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrustManagerContext" />
+  <TypeSignature Language="F#" Value="type TrustManagerContext = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.TrustManagerContext.#ctor(System.Security.Policy.TrustManagerUIContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uiContext As TrustManagerUIContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TrustManagerContext(System::Security::Policy::TrustManagerUIContext uiContext);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.TrustManagerContext : System.Security.Policy.TrustManagerUIContext -&gt; System.Security.Policy.TrustManagerContext" Usage="new System.Security.Policy.TrustManagerContext uiContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.TrustManagerContext.IgnorePersistedDecision" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IgnorePersistedDecision As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IgnorePersistedDecision { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnorePersistedDecision : bool with get, set" Usage="System.Security.Policy.TrustManagerContext.IgnorePersistedDecision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.TrustManagerContext.KeepAlive" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property KeepAlive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool KeepAlive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepAlive : bool with get, set" Usage="System.Security.Policy.TrustManagerContext.KeepAlive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.TrustManagerContext.NoPrompt" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property NoPrompt As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool NoPrompt { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NoPrompt : bool with get, set" Usage="System.Security.Policy.TrustManagerContext.NoPrompt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.TrustManagerContext.Persist" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Persist As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Persist { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Persist : bool with get, set" Usage="System.Security.Policy.TrustManagerContext.Persist" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.TrustManagerContext.PreviousApplicationIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PreviousApplicationIdentity As ApplicationIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property ApplicationIdentity ^ PreviousApplicationIdentity { ApplicationIdentity ^ get(); void set(ApplicationIdentity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousApplicationIdentity : ApplicationIdentity with get, set" Usage="System.Security.Policy.TrustManagerContext.PreviousApplicationIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.TrustManagerContext.UIContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UIContext As TrustManagerUIContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Policy::TrustManagerUIContext UIContext { System::Security::Policy::TrustManagerUIContext get(); void set(System::Security::Policy::TrustManagerUIContext value); };" />
+      <MemberSignature Language="F#" Value="member this.UIContext : System.Security.Policy.TrustManagerUIContext with get, set" Usage="System.Security.Policy.TrustManagerContext.UIContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

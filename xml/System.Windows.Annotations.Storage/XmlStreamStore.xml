@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.XmlStreamStore" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlStreamStore&#xA;Inherits AnnotationStore" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlStreamStore sealed : System::Windows::Annotations::Storage::AnnotationStore" />
+  <TypeSignature Language="F#" Value="type XmlStreamStore = class&#xA;    inherit AnnotationStore" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlStreamStore(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.Storage.XmlStreamStore : System.IO.Stream -&gt; System.Windows.Annotations.Storage.XmlStreamStore" Usage="new System.Windows.Annotations.Storage.XmlStreamStore stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Collections.Generic.IDictionary`2&lt;class System.Uri, class System.Collections.Generic.IList`1&lt;class System.Uri&gt;&gt; knownNamespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.#ctor(System.IO.Stream,System.Collections.Generic.IDictionary{System.Uri,System.Collections.Generic.IList{System.Uri}})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlStreamStore(System::IO::Stream ^ stream, System::Collections::Generic::IDictionary&lt;Uri ^, System::Collections::Generic::IList&lt;Uri ^&gt; ^&gt; ^ knownNamespaces);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.Storage.XmlStreamStore : System.IO.Stream * System.Collections.Generic.IDictionary&lt;Uri, System.Collections.Generic.IList&lt;Uri&gt;&gt; -&gt; System.Windows.Annotations.Storage.XmlStreamStore" Usage="new System.Windows.Annotations.Storage.XmlStreamStore (stream, knownNamespaces)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.AddAnnotation(System.Windows.Annotations.Annotation)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAnnotation (newAnnotation As Annotation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAnnotation(System::Windows::Annotations::Annotation ^ newAnnotation);" />
+      <MemberSignature Language="F#" Value="override this.AddAnnotation : System.Windows.Annotations.Annotation -&gt; unit" Usage="xmlStreamStore.AddAnnotation newAnnotation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.XmlStreamStore.AutoFlush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoFlush As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoFlush { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoFlush : bool with get, set" Usage="System.Windows.Annotations.Storage.XmlStreamStore.AutoFlush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.DeleteAnnotation(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteAnnotation (annotationId As Guid) As Annotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Annotations::Annotation ^ DeleteAnnotation(Guid annotationId);" />
+      <MemberSignature Language="F#" Value="override this.DeleteAnnotation : Guid -&gt; System.Windows.Annotations.Annotation" Usage="xmlStreamStore.DeleteAnnotation annotationId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="xmlStreamStore.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="xmlStreamStore.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotation(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAnnotation (annotationId As Guid) As Annotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Annotations::Annotation ^ GetAnnotation(Guid annotationId);" />
+      <MemberSignature Language="F#" Value="override this.GetAnnotation : Guid -&gt; System.Windows.Annotations.Annotation" Usage="xmlStreamStore.GetAnnotation annotationId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -307,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAnnotations () As IList(Of Annotation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::Windows::Annotations::Annotation ^&gt; ^ GetAnnotations();" />
+      <MemberSignature Language="F#" Value="override this.GetAnnotations : unit -&gt; System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt;" Usage="xmlStreamStore.GetAnnotations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -346,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations(System.Windows.Annotations.ContentLocator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAnnotations (anchorLocator As ContentLocator) As IList(Of Annotation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::Windows::Annotations::Annotation ^&gt; ^ GetAnnotations(System::Windows::Annotations::ContentLocator ^ anchorLocator);" />
+      <MemberSignature Language="F#" Value="override this.GetAnnotations : System.Windows.Annotations.ContentLocator -&gt; System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt;" Usage="xmlStreamStore.GetAnnotations anchorLocator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -386,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetWellKnownCompatibleNamespaces (name As Uri) As IList(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;Uri ^&gt; ^ GetWellKnownCompatibleNamespaces(Uri ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetWellKnownCompatibleNamespaces : Uri -&gt; System.Collections.Generic.IList&lt;Uri&gt;" Usage="System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -427,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoredNamespaces As IList(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Uri ^&gt; ^ IgnoredNamespaces { System::Collections::Generic::IList&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoredNamespaces : System.Collections.Generic.IList&lt;Uri&gt;" Usage="System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -458,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStoreContentChanged (e As StoreContentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnStoreContentChanged(System::Windows::Annotations::Storage::StoreContentChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnStoreContentChanged : System.Windows.Annotations.Storage.StoreContentChangedEventArgs -&gt; unit" Usage="xmlStreamStore.OnStoreContentChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -481,6 +495,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WellKnownNamespaces As IList(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IList&lt;Uri ^&gt; ^ WellKnownNamespaces { System::Collections::Generic::IList&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WellKnownNamespaces : System.Collections.Generic.IList&lt;Uri&gt;" Usage="System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

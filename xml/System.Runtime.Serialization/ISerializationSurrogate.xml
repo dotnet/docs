@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISerializationSurrogate" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISerializationSurrogate" />
+  <TypeSignature Language="F#" Value="type ISerializationSurrogate = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISerializationSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (obj As Object, info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetObjectData(System::Object ^ obj, System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : obj * System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="iSerializationSurrogate.GetObjectData (obj, info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetObjectData (obj As Object, info As SerializationInfo, context As StreamingContext, selector As ISurrogateSelector) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ SetObjectData(System::Object ^ obj, System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context, System::Runtime::Serialization::ISurrogateSelector ^ selector);" />
+      <MemberSignature Language="F#" Value="abstract member SetObjectData : obj * System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext * System.Runtime.Serialization.ISurrogateSelector -&gt; obj" Usage="iSerializationSurrogate.SetObjectData (obj, info, context, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

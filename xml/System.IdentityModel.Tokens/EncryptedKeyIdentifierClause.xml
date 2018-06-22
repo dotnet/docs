@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncryptedKeyIdentifierClause&#xA;Inherits BinaryKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class EncryptedKeyIdentifierClause sealed : System::IdentityModel::Tokens::BinaryKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type EncryptedKeyIdentifierClause = class&#xA;    inherit BinaryKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encryptedKey As Byte(), encryptionMethod As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptedKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ encryptedKey, System::String ^ encryptionMethod);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause : byte[] * string -&gt; System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause (encryptedKey, encryptionMethod)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encryptedKey As Byte(), encryptionMethod As String, identifier As SecurityKeyIdentifier)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptedKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ encryptedKey, System::String ^ encryptionMethod, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ identifier);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause : byte[] * string * System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause (encryptedKey, encryptionMethod, identifier)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier,System.String)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encryptedKey As Byte(), encryptionMethod As String, identifier As SecurityKeyIdentifier, carriedKeyName As String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptedKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ encryptedKey, System::String ^ encryptionMethod, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ identifier, System::String ^ carriedKeyName);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause : byte[] * string * System.IdentityModel.Tokens.SecurityKeyIdentifier * string -&gt; System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause (encryptedKey, encryptionMethod, identifier, carriedKeyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier,System.String,System.Byte[],System.Int32)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encryptedKey As Byte(), encryptionMethod As String, identifier As SecurityKeyIdentifier, carriedKeyName As String, derivationNonce As Byte(), derivationLength As Integer)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptedKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ encryptedKey, System::String ^ encryptionMethod, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ identifier, System::String ^ carriedKeyName, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause : byte[] * string * System.IdentityModel.Tokens.SecurityKeyIdentifier * string * byte[] * int -&gt; System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EncryptedKeyIdentifierClause (encryptedKey, encryptionMethod, identifier, carriedKeyName, derivationNonce, derivationLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CarriedKeyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CarriedKeyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CarriedKeyName : string" Usage="System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptingKeyIdentifier As SecurityKeyIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifier ^ EncryptingKeyIdentifier { System::IdentityModel::Tokens::SecurityKeyIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptingKeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptionMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EncryptionMethod { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionMethod : string" Usage="System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEncryptedKey () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetEncryptedKey();" />
+      <MemberSignature Language="F#" Value="member this.GetEncryptedKey : unit -&gt; byte[]" Usage="encryptedKeyIdentifierClause.GetEncryptedKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -338,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="encryptedKeyIdentifierClause.Matches clause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -370,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.Matches(System.Byte[],System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (encryptedKey As Byte(), encryptionMethod As String, carriedKeyName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(cli::array &lt;System::Byte&gt; ^ encryptedKey, System::String ^ encryptionMethod, System::String ^ carriedKeyName);" />
+      <MemberSignature Language="F#" Value="override this.Matches : byte[] * string * string -&gt; bool" Usage="encryptedKeyIdentifierClause.Matches (encryptedKey, encryptionMethod, carriedKeyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -399,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="encryptedKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SubscriptionListChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SubscriptionListChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SubscriptionListChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerChangeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerChangeType As PeerChangeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerChangeType PeerChangeType { System::Net::PeerToPeer::Collaboration::PeerChangeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerChangeType : System.Net.PeerToPeer.Collaboration.PeerChangeType" Usage="System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerChangeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerContact" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerContact As PeerContact" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerContact ^ PeerContact { System::Net::PeerToPeer::Collaboration::PeerContact ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerContact : System.Net.PeerToPeer.Collaboration.PeerContact" Usage="System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerContact" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerEndPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerEndPoint As PeerEndPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ PeerEndPoint { System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerEndPoint : System.Net.PeerToPeer.Collaboration.PeerEndPoint" Usage="System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerEndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

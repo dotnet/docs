@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ListBindableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ListBindableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListBindableAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ListBindableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (listBindable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBindableAttribute(bool listBindable);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ListBindableAttribute : bool -&gt; System.ComponentModel.ListBindableAttribute" Usage="new System.ComponentModel.ListBindableAttribute listBindable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.#ctor(System.ComponentModel.BindableSupport)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flags As BindableSupport)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBindableAttribute(System::ComponentModel::BindableSupport flags);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ListBindableAttribute : System.ComponentModel.BindableSupport -&gt; System.ComponentModel.ListBindableAttribute" Usage="new System.ComponentModel.ListBindableAttribute flags" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListBindableAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ListBindableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ListBindableAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.ListBindableAttribute" Usage="System.ComponentModel.ListBindableAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="listBindableAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="listBindableAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="listBindableAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListBindableAttribute.ListBindable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListBindable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ListBindable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListBindable : bool" Usage="System.ComponentModel.ListBindableAttribute.ListBindable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,6 +293,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListBindableAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As ListBindableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ListBindableAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.ListBindableAttribute" Usage="System.ComponentModel.ListBindableAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -314,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListBindableAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As ListBindableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ListBindableAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.ListBindableAttribute" Usage="System.ComponentModel.ListBindableAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

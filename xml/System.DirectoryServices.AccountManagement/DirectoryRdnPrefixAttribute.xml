@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectoryRdnPrefixAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryRdnPrefixAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DirectoryRdnPrefixAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rdnPrefix As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryRdnPrefixAttribute(System::String ^ rdnPrefix);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute : string -&gt; System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute" Usage="new System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute rdnPrefix" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Nullable(Of ContextType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::DirectoryServices::AccountManagement::ContextType&gt; Context { Nullable&lt;System::DirectoryServices::AccountManagement::ContextType&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : Nullable&lt;System.DirectoryServices.AccountManagement.ContextType&gt;" Usage="System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.RdnPrefix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RdnPrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RdnPrefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RdnPrefix : string" Usage="System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.RdnPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

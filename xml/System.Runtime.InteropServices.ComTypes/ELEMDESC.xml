@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ELEMDESC" />
   <TypeSignature Language="VB.NET" Value="Public Structure ELEMDESC" />
   <TypeSignature Language="C++ CLI" Value="public value class ELEMDESC" />
+  <TypeSignature Language="F#" Value="type ELEMDESC = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.desc" />
       <MemberSignature Language="VB.NET" Value="Public desc As ELEMDESC.DESCUNION " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::ELEMDESC::DESCUNION desc;" />
+      <MemberSignature Language="F#" Value="val mutable desc : System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION" Usage="System.Runtime.InteropServices.ComTypes.ELEMDESC.desc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.tdesc" />
       <MemberSignature Language="VB.NET" Value="Public tdesc As TYPEDESC " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYPEDESC tdesc;" />
+      <MemberSignature Language="F#" Value="val mutable tdesc : System.Runtime.InteropServices.ComTypes.TYPEDESC" Usage="System.Runtime.InteropServices.ComTypes.ELEMDESC.tdesc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

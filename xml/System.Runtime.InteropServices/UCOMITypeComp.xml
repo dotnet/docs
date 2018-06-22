@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMITypeComp" />
   <TypeSignature Language="VB.NET" Value="Public Interface UCOMITypeComp" />
   <TypeSignature Language="C++ CLI" Value="public interface class UCOMITypeComp" />
+  <TypeSignature Language="F#" Value="type UCOMITypeComp = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeComp.Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.DESCKIND@,System.Runtime.InteropServices.BINDPTR@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Bind (szName As String, lHashVal As Integer, wFlags As Short, ByRef ppTInfo As UCOMITypeInfo, ByRef pDescKind As DESCKIND, ByRef pBindPtr As BINDPTR)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Bind(System::String ^ szName, int lHashVal, short wFlags, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeInfo ^ % ppTInfo, [Runtime::InteropServices::Out] System::Runtime::InteropServices::DESCKIND % pDescKind, [Runtime::InteropServices::Out] System::Runtime::InteropServices::BINDPTR % pBindPtr);" />
+      <MemberSignature Language="F#" Value="abstract member Bind : string * int * int16 *  *  *  -&gt; unit" Usage="uCOMITypeComp.Bind (szName, lHashVal, wFlags, ppTInfo, pDescKind, pBindPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeComp.BindType(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.UCOMITypeComp@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindType (szName As String, lHashVal As Integer, ByRef ppTInfo As UCOMITypeInfo, ByRef ppTComp As UCOMITypeComp)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindType(System::String ^ szName, int lHashVal, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeInfo ^ % ppTInfo, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeComp ^ % ppTComp);" />
+      <MemberSignature Language="F#" Value="abstract member BindType : string * int *  *  -&gt; unit" Usage="uCOMITypeComp.BindType (szName, lHashVal, ppTInfo, ppTComp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

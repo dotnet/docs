@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketAsyncEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SocketAsyncEventArgs&#xA;Inherits EventArgs&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SocketAsyncEventArgs : EventArgs, IDisposable" />
+  <TypeSignature Language="F#" Value="type SocketAsyncEventArgs = class&#xA;    inherit EventArgs&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -138,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.AcceptSocket" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptSocket As Socket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::Socket ^ AcceptSocket { System::Net::Sockets::Socket ^ get(); void set(System::Net::Sockets::Socket ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptSocket : System.Net.Sockets.Socket with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.AcceptSocket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -177,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buffer As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Buffer { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buffer : byte[]" Usage="System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -225,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" />
       <MemberSignature Language="VB.NET" Value="Public Property BufferList As IList(Of ArraySegment(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ BufferList { System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ get(); void set(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BufferList : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.BufferList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -277,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.BytesTransferred" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesTransferred As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BytesTransferred { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesTransferred : int" Usage="System.Net.Sockets.SocketAsyncEventArgs.BytesTransferred" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -325,6 +330,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Completed As EventHandler(Of SocketAsyncEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::Sockets::SocketAsyncEventArgs ^&gt; ^ Completed;" />
+      <MemberSignature Language="F#" Value="member this.Completed : EventHandler&lt;System.Net.Sockets.SocketAsyncEventArgs&gt; " Usage="member this.Completed : System.EventHandler&lt;System.Net.Sockets.SocketAsyncEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -366,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.ConnectByNameError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectByNameError As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ ConnectByNameError { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectByNameError : Exception" Usage="System.Net.Sockets.SocketAsyncEventArgs.ConnectByNameError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -409,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.ConnectSocket" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectSocket As Socket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::Socket ^ ConnectSocket { System::Net::Sockets::Socket ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectSocket : System.Net.Sockets.Socket" Usage="System.Net.Sockets.SocketAsyncEventArgs.ConnectSocket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -448,6 +456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Net.Sockets.SocketAsyncEventArgs.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -497,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.DisconnectReuseSocket" />
       <MemberSignature Language="VB.NET" Value="Public Property DisconnectReuseSocket As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisconnectReuseSocket { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisconnectReuseSocket : bool with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.DisconnectReuseSocket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -535,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketAsyncEventArgs.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="socketAsyncEventArgs.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -588,6 +599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketAsyncEventArgs.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!SocketAsyncEventArgs ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="socketAsyncEventArgs.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -626,6 +638,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.LastOperation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastOperation As SocketAsyncOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::SocketAsyncOperation LastOperation { System::Net::Sockets::SocketAsyncOperation get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastOperation : System.Net.Sockets.SocketAsyncOperation" Usage="System.Net.Sockets.SocketAsyncEventArgs.LastOperation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -680,6 +693,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.MemoryBuffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemoryBuffer As Memory(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Memory&lt;System::Byte&gt; MemoryBuffer { Memory&lt;System::Byte&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemoryBuffer : Memory&lt;byte&gt;" Usage="System.Net.Sockets.SocketAsyncEventArgs.MemoryBuffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -700,6 +714,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int" Usage="System.Net.Sockets.SocketAsyncEventArgs.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -750,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(System.Net.Sockets.SocketAsyncEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCompleted (e As SocketAsyncEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCompleted(System::Net::Sockets::SocketAsyncEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : System.Net.Sockets.SocketAsyncEventArgs -&gt; unit&#xA;override this.OnCompleted : System.Net.Sockets.SocketAsyncEventArgs -&gt; unit" Usage="socketAsyncEventArgs.OnCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -808,6 +824,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.ReceiveMessageFromPacketInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReceiveMessageFromPacketInfo As IPPacketInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::IPPacketInformation ReceiveMessageFromPacketInfo { System::Net::Sockets::IPPacketInformation get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveMessageFromPacketInfo : System.Net.Sockets.IPPacketInformation" Usage="System.Net.Sockets.SocketAsyncEventArgs.ReceiveMessageFromPacketInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -853,6 +870,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoteEndPoint As EndPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::EndPoint ^ RemoteEndPoint { System::Net::EndPoint ^ get(); void set(System::Net::EndPoint ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RemoteEndPoint : System.Net.EndPoint with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -900,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements" />
       <MemberSignature Language="VB.NET" Value="Public Property SendPacketsElements As SendPacketsElement()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Net::Sockets::SendPacketsElement ^&gt; ^ SendPacketsElements { cli::array &lt;System::Net::Sockets::SendPacketsElement ^&gt; ^ get(); void set(cli::array &lt;System::Net::Sockets::SendPacketsElement ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SendPacketsElements : System.Net.Sockets.SendPacketsElement[] with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -940,6 +959,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property SendPacketsFlags As TransmitFileOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::TransmitFileOptions SendPacketsFlags { System::Net::Sockets::TransmitFileOptions get(); void set(System::Net::Sockets::TransmitFileOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.SendPacketsFlags : System.Net.Sockets.TransmitFileOptions with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.SendPacketsFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -979,6 +999,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsSendSize" />
       <MemberSignature Language="VB.NET" Value="Public Property SendPacketsSendSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SendPacketsSendSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SendPacketsSendSize : int with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.SendPacketsSendSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1044,6 +1065,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(System.Memory{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBuffer (buffer As Memory(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBuffer(Memory&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="F#" Value="member this.SetBuffer : Memory&lt;byte&gt; -&gt; unit" Usage="socketAsyncEventArgs.SetBuffer buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1067,6 +1089,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBuffer (offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBuffer(int offset, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetBuffer : int * int -&gt; unit" Usage="socketAsyncEventArgs.SetBuffer (offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1118,6 +1141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBuffer (buffer As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBuffer(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetBuffer : byte[] * int * int -&gt; unit" Usage="socketAsyncEventArgs.SetBuffer (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1177,6 +1201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.SocketClientAccessPolicyProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Property SocketClientAccessPolicyProtocol As SocketClientAccessPolicyProtocol" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::SocketClientAccessPolicyProtocol SocketClientAccessPolicyProtocol { System::Net::Sockets::SocketClientAccessPolicyProtocol get(); void set(System::Net::Sockets::SocketClientAccessPolicyProtocol value); };" />
+      <MemberSignature Language="F#" Value="member this.SocketClientAccessPolicyProtocol : System.Net.Sockets.SocketClientAccessPolicyProtocol with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.SocketClientAccessPolicyProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1214,6 +1239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.SocketError" />
       <MemberSignature Language="VB.NET" Value="Public Property SocketError As SocketError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::SocketError SocketError { System::Net::Sockets::SocketError get(); void set(System::Net::Sockets::SocketError value); };" />
+      <MemberSignature Language="F#" Value="member this.SocketError : System.Net.Sockets.SocketError with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.SocketError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1264,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.SocketFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property SocketFlags As SocketFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::SocketFlags SocketFlags { System::Net::Sockets::SocketFlags get(); void set(System::Net::Sockets::SocketFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.SocketFlags : System.Net.Sockets.SocketFlags with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.SocketFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1309,6 +1336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       <MemberSignature Language="VB.NET" Value="Public Property UserToken As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserToken { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserToken : obj with get, set" Usage="System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

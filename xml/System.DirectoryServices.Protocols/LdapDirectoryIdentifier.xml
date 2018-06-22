@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.LdapDirectoryIdentifier" />
   <TypeSignature Language="VB.NET" Value="Public Class LdapDirectoryIdentifier&#xA;Inherits DirectoryIdentifier" />
   <TypeSignature Language="C++ CLI" Value="public ref class LdapDirectoryIdentifier : System::DirectoryServices::Protocols::DirectoryIdentifier" />
+  <TypeSignature Language="F#" Value="type LdapDirectoryIdentifier = class&#xA;    inherit DirectoryIdentifier" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapDirectoryIdentifier(System::String ^ server);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier : string -&gt; System.DirectoryServices.Protocols.LdapDirectoryIdentifier" Usage="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier server" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String, portNumber As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapDirectoryIdentifier(System::String ^ server, int portNumber);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier : string * int -&gt; System.DirectoryServices.Protocols.LdapDirectoryIdentifier" Usage="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier (server, portNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.#ctor(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String, fullyQualifiedDnsHostName As Boolean, connectionless As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapDirectoryIdentifier(System::String ^ server, bool fullyQualifiedDnsHostName, bool connectionless);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier : string * bool * bool -&gt; System.DirectoryServices.Protocols.LdapDirectoryIdentifier" Usage="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier (server, fullyQualifiedDnsHostName, connectionless)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.#ctor(System.String[],System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (servers As String(), fullyQualifiedDnsHostName As Boolean, connectionless As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapDirectoryIdentifier(cli::array &lt;System::String ^&gt; ^ servers, bool fullyQualifiedDnsHostName, bool connectionless);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier : string[] * bool * bool -&gt; System.DirectoryServices.Protocols.LdapDirectoryIdentifier" Usage="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier (servers, fullyQualifiedDnsHostName, connectionless)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.#ctor(System.String,System.Int32,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String, portNumber As Integer, fullyQualifiedDnsHostName As Boolean, connectionless As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapDirectoryIdentifier(System::String ^ server, int portNumber, bool fullyQualifiedDnsHostName, bool connectionless);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier : string * int * bool * bool -&gt; System.DirectoryServices.Protocols.LdapDirectoryIdentifier" Usage="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier (server, portNumber, fullyQualifiedDnsHostName, connectionless)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.#ctor(System.String[],System.Int32,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (servers As String(), portNumber As Integer, fullyQualifiedDnsHostName As Boolean, connectionless As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapDirectoryIdentifier(cli::array &lt;System::String ^&gt; ^ servers, int portNumber, bool fullyQualifiedDnsHostName, bool connectionless);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier : string[] * int * bool * bool -&gt; System.DirectoryServices.Protocols.LdapDirectoryIdentifier" Usage="new System.DirectoryServices.Protocols.LdapDirectoryIdentifier (servers, portNumber, fullyQualifiedDnsHostName, connectionless)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.Connectionless" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connectionless As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Connectionless { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connectionless : bool" Usage="System.DirectoryServices.Protocols.LdapDirectoryIdentifier.Connectionless" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.FullyQualifiedDnsHostName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullyQualifiedDnsHostName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FullyQualifiedDnsHostName { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullyQualifiedDnsHostName : bool" Usage="System.DirectoryServices.Protocols.LdapDirectoryIdentifier.FullyQualifiedDnsHostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -240,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.PortNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PortNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PortNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PortNumber : int" Usage="System.DirectoryServices.Protocols.LdapDirectoryIdentifier.PortNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -261,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapDirectoryIdentifier.Servers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Servers As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Servers { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Servers : string[]" Usage="System.DirectoryServices.Protocols.LdapDirectoryIdentifier.Servers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

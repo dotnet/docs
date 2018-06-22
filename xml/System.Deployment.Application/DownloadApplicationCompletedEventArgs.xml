@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DownloadApplicationCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DownloadApplicationCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DownloadApplicationCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type DownloadApplicationCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadApplicationCompletedEventArgs.LogFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogFilePath : string" Usage="System.Deployment.Application.DownloadApplicationCompletedEventArgs.LogFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShortcutAppId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShortcutAppId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShortcutAppId : string" Usage="System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

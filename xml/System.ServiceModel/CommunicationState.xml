@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.CommunicationState" />
   <TypeSignature Language="VB.NET" Value="Public Enum CommunicationState" />
   <TypeSignature Language="C++ CLI" Value="public enum class CommunicationState" />
+  <TypeSignature Language="F#" Value="type CommunicationState = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CommunicationState.Closed" />
       <MemberSignature Language="VB.NET" Value="Closed" />
       <MemberSignature Language="C++ CLI" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 4" Usage="System.ServiceModel.CommunicationState.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CommunicationState.Closing" />
       <MemberSignature Language="VB.NET" Value="Closing" />
       <MemberSignature Language="C++ CLI" Value="Closing" />
+      <MemberSignature Language="F#" Value="Closing = 3" Usage="System.ServiceModel.CommunicationState.Closing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CommunicationState.Created" />
       <MemberSignature Language="VB.NET" Value="Created" />
       <MemberSignature Language="C++ CLI" Value="Created" />
+      <MemberSignature Language="F#" Value="Created = 0" Usage="System.ServiceModel.CommunicationState.Created" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CommunicationState.Faulted" />
       <MemberSignature Language="VB.NET" Value="Faulted" />
       <MemberSignature Language="C++ CLI" Value="Faulted" />
+      <MemberSignature Language="F#" Value="Faulted = 5" Usage="System.ServiceModel.CommunicationState.Faulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CommunicationState.Opened" />
       <MemberSignature Language="VB.NET" Value="Opened" />
       <MemberSignature Language="C++ CLI" Value="Opened" />
+      <MemberSignature Language="F#" Value="Opened = 2" Usage="System.ServiceModel.CommunicationState.Opened" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CommunicationState.Opening" />
       <MemberSignature Language="VB.NET" Value="Opening" />
       <MemberSignature Language="C++ CLI" Value="Opening" />
+      <MemberSignature Language="F#" Value="Opening = 1" Usage="System.ServiceModel.CommunicationState.Opening" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

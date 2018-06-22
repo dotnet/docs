@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GlyphTypeface" />
   <TypeSignature Language="VB.NET" Value="Public Class GlyphTypeface&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class GlyphTypeface : System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type GlyphTypeface = class&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphTypeface.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typefaceSource As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GlyphTypeface(Uri ^ typefaceSource);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GlyphTypeface : Uri -&gt; System.Windows.Media.GlyphTypeface" Usage="new System.Windows.Media.GlyphTypeface typefaceSource" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -117,6 +119,7 @@ Metric values of glyph characters
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri typefaceSource, valuetype System.Windows.Media.StyleSimulations styleSimulations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphTypeface.#ctor(System.Uri,System.Windows.Media.StyleSimulations)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GlyphTypeface(Uri ^ typefaceSource, System::Windows::Media::StyleSimulations styleSimulations);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GlyphTypeface : Uri * System.Windows.Media.StyleSimulations -&gt; System.Windows.Media.GlyphTypeface" Usage="new System.Windows.Media.GlyphTypeface (typefaceSource, styleSimulations)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +149,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.AdvanceHeights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdvanceHeights As IDictionary(Of UShort, Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ AdvanceHeights { System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdvanceHeights : System.Collections.Generic.IDictionary&lt;uint16, double&gt;" Usage="System.Windows.Media.GlyphTypeface.AdvanceHeights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -182,6 +186,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.AdvanceWidths" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdvanceWidths As IDictionary(Of UShort, Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ AdvanceWidths { System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdvanceWidths : System.Collections.Generic.IDictionary&lt;uint16, double&gt;" Usage="System.Windows.Media.GlyphTypeface.AdvanceWidths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +215,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Baseline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Baseline As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Baseline { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Baseline : double" Usage="System.Windows.Media.GlyphTypeface.Baseline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -245,6 +251,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.BottomSideBearings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BottomSideBearings As IDictionary(Of UShort, Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ BottomSideBearings { System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BottomSideBearings : System.Collections.Generic.IDictionary&lt;uint16, double&gt;" Usage="System.Windows.Media.GlyphTypeface.BottomSideBearings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -275,6 +282,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.CapsHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapsHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CapsHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.CapsHeight : double" Usage="System.Windows.Media.GlyphTypeface.CapsHeight" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.CapsHeight</InterfaceMember>
@@ -306,6 +314,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.CharacterToGlyphMap" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharacterToGlyphMap As IDictionary(Of Integer, UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;int, System::UInt16&gt; ^ CharacterToGlyphMap { System::Collections::Generic::IDictionary&lt;int, System::UInt16&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterToGlyphMap : System.Collections.Generic.IDictionary&lt;int, uint16&gt;" Usage="System.Windows.Media.GlyphTypeface.CharacterToGlyphMap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -331,6 +340,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphTypeface.ComputeSubset(System.Collections.Generic.ICollection{System.UInt16})" />
       <MemberSignature Language="VB.NET" Value="Public Function ComputeSubset (glyphs As ICollection(Of UShort)) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ComputeSubset(System::Collections::Generic::ICollection&lt;System::UInt16&gt; ^ glyphs);" />
+      <MemberSignature Language="F#" Value="member this.ComputeSubset : System.Collections.Generic.ICollection&lt;uint16&gt; -&gt; byte[]" Usage="glyphTypeface.ComputeSubset glyphs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -364,6 +374,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Copyrights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Copyrights As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ Copyrights { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Copyrights : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.Copyrights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -405,6 +416,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Descriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Descriptions As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ Descriptions { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Descriptions : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.Descriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -438,6 +450,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.DesignerNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerNames As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ DesignerNames { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerNames : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.DesignerNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -463,6 +476,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.DesignerUrls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerUrls As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ DesignerUrls { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerUrls : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.DesignerUrls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -488,6 +502,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.DistancesFromHorizontalBaselineToBlackBoxBottom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DistancesFromHorizontalBaselineToBlackBoxBottom As IDictionary(Of UShort, Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ DistancesFromHorizontalBaselineToBlackBoxBottom { System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DistancesFromHorizontalBaselineToBlackBoxBottom : System.Collections.Generic.IDictionary&lt;uint16, double&gt;" Usage="System.Windows.Media.GlyphTypeface.DistancesFromHorizontalBaselineToBlackBoxBottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -508,6 +523,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.EmbeddingRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmbeddingRights As FontEmbeddingRight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FontEmbeddingRight EmbeddingRights { System::Windows::Media::FontEmbeddingRight get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmbeddingRights : System.Windows.Media.FontEmbeddingRight" Usage="System.Windows.Media.GlyphTypeface.EmbeddingRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -533,6 +549,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphTypeface.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="glyphTypeface.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -570,6 +587,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.FaceNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FaceNames As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ FaceNames { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FaceNames : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.FaceNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -605,6 +623,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.FamilyNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FamilyNames As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ FamilyNames { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FamilyNames : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.FamilyNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -640,6 +659,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.FontUri" />
       <MemberSignature Language="VB.NET" Value="Public Property FontUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ FontUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FontUri : Uri with get, set" Usage="System.Windows.Media.GlyphTypeface.FontUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -669,6 +689,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphTypeface.GetFontStream" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFontStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetFontStream();" />
+      <MemberSignature Language="F#" Value="member this.GetFontStream : unit -&gt; System.IO.Stream" Usage="glyphTypeface.GetFontStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -695,6 +716,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphTypeface.GetGlyphOutline(System.UInt16,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGlyphOutline (glyphIndex As UShort, renderingEmSize As Double, hintingEmSize As Double) As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Geometry ^ GetGlyphOutline(System::UInt16 glyphIndex, double renderingEmSize, double hintingEmSize);" />
+      <MemberSignature Language="F#" Value="member this.GetGlyphOutline : uint16 * double * double -&gt; System.Windows.Media.Geometry" Usage="glyphTypeface.GetGlyphOutline (glyphIndex, renderingEmSize, hintingEmSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -735,6 +757,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphTypeface.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="glyphTypeface.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -761,6 +784,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.GlyphCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlyphCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GlyphCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlyphCount : int" Usage="System.Windows.Media.GlyphTypeface.GlyphCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -789,6 +813,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="System.Windows.Media.GlyphTypeface.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -817,6 +842,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.LeftSideBearings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeftSideBearings As IDictionary(Of UShort, Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ LeftSideBearings { System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LeftSideBearings : System.Collections.Generic.IDictionary&lt;uint16, double&gt;" Usage="System.Windows.Media.GlyphTypeface.LeftSideBearings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -847,6 +873,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.LicenseDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LicenseDescriptions As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ LicenseDescriptions { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LicenseDescriptions : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.LicenseDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -872,6 +899,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.ManufacturerNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerNames As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ ManufacturerNames { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManufacturerNames : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.ManufacturerNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -897,6 +925,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.RightSideBearings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RightSideBearings As IDictionary(Of UShort, Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ RightSideBearings { System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RightSideBearings : System.Collections.Generic.IDictionary&lt;uint16, double&gt;" Usage="System.Windows.Media.GlyphTypeface.RightSideBearings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -927,6 +956,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.SampleTexts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SampleTexts As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ SampleTexts { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SampleTexts : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.SampleTexts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -959,6 +989,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Stretch" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stretch As FontStretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStretch Stretch { System::Windows::FontStretch get(); };" />
+      <MemberSignature Language="F#" Value="member this.Stretch : System.Windows.FontStretch" Usage="System.Windows.Media.GlyphTypeface.Stretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -987,6 +1018,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.StrikethroughPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StrikethroughPosition As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrikethroughPosition { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.StrikethroughPosition : double" Usage="System.Windows.Media.GlyphTypeface.StrikethroughPosition" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.StrikethroughPosition</InterfaceMember>
@@ -1025,6 +1057,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.StrikethroughThickness" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StrikethroughThickness As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrikethroughThickness { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.StrikethroughThickness : double" Usage="System.Windows.Media.GlyphTypeface.StrikethroughThickness" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.StrikethroughThickness</InterfaceMember>
@@ -1056,6 +1089,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Style" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Style As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle Style { System::Windows::FontStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Windows.FontStyle" Usage="System.Windows.Media.GlyphTypeface.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1084,6 +1118,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.StyleSimulations" />
       <MemberSignature Language="VB.NET" Value="Public Property StyleSimulations As StyleSimulations" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::StyleSimulations StyleSimulations { System::Windows::Media::StyleSimulations get(); void set(System::Windows::Media::StyleSimulations value); };" />
+      <MemberSignature Language="F#" Value="member this.StyleSimulations : System.Windows.Media.StyleSimulations with get, set" Usage="System.Windows.Media.GlyphTypeface.StyleSimulations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1104,6 +1139,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Symbol" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Symbol As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Symbol { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Symbol : bool" Usage="System.Windows.Media.GlyphTypeface.Symbol" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.Symbol</InterfaceMember>
@@ -1191,6 +1227,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.TopSideBearings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TopSideBearings As IDictionary(Of UShort, Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ TopSideBearings { System::Collections::Generic::IDictionary&lt;System::UInt16, double&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TopSideBearings : System.Collections.Generic.IDictionary&lt;uint16, double&gt;" Usage="System.Windows.Media.GlyphTypeface.TopSideBearings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1221,6 +1258,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Trademarks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trademarks As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ Trademarks { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Trademarks : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.Trademarks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1253,6 +1291,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.UnderlinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlinePosition As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UnderlinePosition { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnderlinePosition : double" Usage="System.Windows.Media.GlyphTypeface.UnderlinePosition" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.UnderlinePosition</InterfaceMember>
@@ -1291,6 +1330,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.UnderlineThickness" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlineThickness As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UnderlineThickness { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnderlineThickness : double" Usage="System.Windows.Media.GlyphTypeface.UnderlineThickness" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.UnderlineThickness</InterfaceMember>
@@ -1322,6 +1362,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.VendorUrls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VendorUrls As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ VendorUrls { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VendorUrls : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.VendorUrls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1354,6 +1395,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Version { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : double" Usage="System.Windows.Media.GlyphTypeface.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1379,6 +1421,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.VersionStrings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VersionStrings As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ VersionStrings { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VersionStrings : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.VersionStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1411,6 +1454,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Weight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Weight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight Weight { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Weight : System.Windows.FontWeight" Usage="System.Windows.Media.GlyphTypeface.Weight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1439,6 +1483,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Win32FaceNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Win32FaceNames As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ Win32FaceNames { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Win32FaceNames : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.Win32FaceNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1467,6 +1512,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.Win32FamilyNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Win32FamilyNames As IDictionary(Of CultureInfo, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ Win32FamilyNames { System::Collections::Generic::IDictionary&lt;System::Globalization::CultureInfo ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Win32FamilyNames : System.Collections.Generic.IDictionary&lt;System.Globalization.CultureInfo, string&gt;" Usage="System.Windows.Media.GlyphTypeface.Win32FamilyNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1495,6 +1541,7 @@ Metric values of glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphTypeface.XHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double XHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.XHeight : double" Usage="System.Windows.Media.GlyphTypeface.XHeight" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.XHeight</InterfaceMember>

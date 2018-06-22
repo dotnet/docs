@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbMetaDataColumnNames" />
   <TypeSignature Language="VB.NET" Value="Public Class OleDbMetaDataColumnNames" />
   <TypeSignature Language="C++ CLI" Value="public ref class OleDbMetaDataColumnNames abstract sealed" />
+  <TypeSignature Language="F#" Value="type OleDbMetaDataColumnNames = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbMetaDataColumnNames.BooleanFalseLiteral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BooleanFalseLiteral As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BooleanFalseLiteral;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BooleanFalseLiteral : string" Usage="System.Data.OleDb.OleDbMetaDataColumnNames.BooleanFalseLiteral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbMetaDataColumnNames.BooleanTrueLiteral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BooleanTrueLiteral As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BooleanTrueLiteral;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BooleanTrueLiteral : string" Usage="System.Data.OleDb.OleDbMetaDataColumnNames.BooleanTrueLiteral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbMetaDataColumnNames.DateTimeDigits" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DateTimeDigits As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DateTimeDigits;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DateTimeDigits : string" Usage="System.Data.OleDb.OleDbMetaDataColumnNames.DateTimeDigits" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -80,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbMetaDataColumnNames.NativeDataType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NativeDataType As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ NativeDataType;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NativeDataType : string" Usage="System.Data.OleDb.OleDbMetaDataColumnNames.NativeDataType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

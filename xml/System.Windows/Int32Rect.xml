@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Int32Rect" />
   <TypeSignature Language="VB.NET" Value="Public Structure Int32Rect&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Int32Rect : IFormattable" />
+  <TypeSignature Language="F#" Value="type Int32Rect = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer, width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Int32Rect(int x, int y, int width, int height);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Int32Rect : int * int * int * int -&gt; System.Windows.Int32Rect" Usage="new System.Windows.Int32Rect (x, y, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Int32Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Int32Rect Empty { System::Windows::Int32Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Windows.Int32Rect" Usage="System.Windows.Int32Rect.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="int32Rect.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.Equals(System.Windows.Int32Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Int32Rect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Int32Rect value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Int32Rect -&gt; bool" Usage="int32Rect.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.Equals(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (int32Rect1 As Int32Rect, int32Rect2 As Int32Rect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Int32Rect int32Rect1, System::Windows::Int32Rect int32Rect2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Int32Rect * System.Windows.Int32Rect -&gt; bool" Usage="System.Windows.Int32Rect.Equals (int32Rect1, int32Rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="int32Rect.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.HasArea" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasArea As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasArea { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasArea : bool" Usage="System.Windows.Int32Rect.HasArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -286,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Windows.Int32Rect.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -306,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.Int32Rect.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -326,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.op_Equality(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (int32Rect1 As Int32Rect, int32Rect2 As Int32Rect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Int32Rect int32Rect1, System::Windows::Int32Rect int32Rect2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Int32Rect * System.Windows.Int32Rect -&gt; bool" Usage="int32Rect1 = int32Rect2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -354,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.op_Inequality(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (int32Rect1 As Int32Rect, int32Rect2 As Int32Rect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Int32Rect int32Rect1, System::Windows::Int32Rect int32Rect2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Int32Rect * System.Windows.Int32Rect -&gt; bool" Usage="System.Windows.Int32Rect.op_Inequality (int32Rect1, int32Rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -382,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Int32Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Int32Rect Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Int32Rect" Usage="System.Windows.Int32Rect.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -451,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="int32Rect.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -472,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="int32Rect.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -496,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Windows.Int32Rect.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -516,6 +532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.X : int with get, set" Usage="System.Windows.Int32Rect.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -536,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : int with get, set" Usage="System.Windows.Int32Rect.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

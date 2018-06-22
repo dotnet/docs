@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.Interop.PrintTicketConverter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintTicketConverter&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintTicketConverter sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type PrintTicketConverter = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.Interop.PrintTicketConverter.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (deviceName As String, clientPrintSchemaVersion As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintTicketConverter(System::String ^ deviceName, int clientPrintSchemaVersion);" />
+      <MemberSignature Language="F#" Value="new System.Printing.Interop.PrintTicketConverter : string * int -&gt; System.Printing.Interop.PrintTicketConverter" Usage="new System.Printing.Interop.PrintTicketConverter (deviceName, clientPrintSchemaVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.Interop.PrintTicketConverter.ConvertDevModeToPrintTicket(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertDevModeToPrintTicket (devMode As Byte()) As PrintTicket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Printing::PrintTicket ^ ConvertDevModeToPrintTicket(cli::array &lt;System::Byte&gt; ^ devMode);" />
+      <MemberSignature Language="F#" Value="member this.ConvertDevModeToPrintTicket : byte[] -&gt; System.Printing.PrintTicket" Usage="printTicketConverter.ConvertDevModeToPrintTicket devMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.Interop.PrintTicketConverter.ConvertDevModeToPrintTicket(System.Byte[],System.Printing.PrintTicketScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertDevModeToPrintTicket (devMode As Byte(), scope As PrintTicketScope) As PrintTicket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Printing::PrintTicket ^ ConvertDevModeToPrintTicket(cli::array &lt;System::Byte&gt; ^ devMode, System::Printing::PrintTicketScope scope);" />
+      <MemberSignature Language="F#" Value="member this.ConvertDevModeToPrintTicket : byte[] * System.Printing.PrintTicketScope -&gt; System.Printing.PrintTicket" Usage="printTicketConverter.ConvertDevModeToPrintTicket (devMode, scope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ConvertPrintTicketToDevMode(class System.Printing.PrintTicket printTicket, valuetype System.Printing.Interop.BaseDevModeType baseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.Interop.PrintTicketConverter.ConvertPrintTicketToDevMode(System.Printing.PrintTicket,System.Printing.Interop.BaseDevModeType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ConvertPrintTicketToDevMode(System::Printing::PrintTicket ^ printTicket, System::Printing::Interop::BaseDevModeType baseType);" />
+      <MemberSignature Language="F#" Value="member this.ConvertPrintTicketToDevMode : System.Printing.PrintTicket * System.Printing.Interop.BaseDevModeType -&gt; byte[]" Usage="printTicketConverter.ConvertPrintTicketToDevMode (printTicket, baseType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ConvertPrintTicketToDevMode(class System.Printing.PrintTicket printTicket, valuetype System.Printing.Interop.BaseDevModeType baseType, valuetype System.Printing.PrintTicketScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.Interop.PrintTicketConverter.ConvertPrintTicketToDevMode(System.Printing.PrintTicket,System.Printing.Interop.BaseDevModeType,System.Printing.PrintTicketScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ConvertPrintTicketToDevMode(System::Printing::PrintTicket ^ printTicket, System::Printing::Interop::BaseDevModeType baseType, System::Printing::PrintTicketScope scope);" />
+      <MemberSignature Language="F#" Value="member this.ConvertPrintTicketToDevMode : System.Printing.PrintTicket * System.Printing.Interop.BaseDevModeType * System.Printing.PrintTicketScope -&gt; byte[]" Usage="printTicketConverter.ConvertPrintTicketToDevMode (printTicket, baseType, scope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.Interop.PrintTicketConverter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="member this.Dispose : unit -&gt; unit" Usage="printTicketConverter.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.Interop.PrintTicketConverter.MaxPrintSchemaVersion" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaxPrintSchemaVersion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MaxPrintSchemaVersion { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPrintSchemaVersion : int" Usage="System.Printing.Interop.PrintTicketConverter.MaxPrintSchemaVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

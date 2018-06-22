@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ClickMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ClickMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ClickMode" />
+  <TypeSignature Language="F#" Value="type ClickMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Hover" />
       <MemberSignature Language="VB.NET" Value="Hover" />
       <MemberSignature Language="C++ CLI" Value="Hover" />
+      <MemberSignature Language="F#" Value="Hover = 2" Usage="System.Windows.Controls.ClickMode.Hover" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Press" />
       <MemberSignature Language="VB.NET" Value="Press" />
       <MemberSignature Language="C++ CLI" Value="Press" />
+      <MemberSignature Language="F#" Value="Press = 1" Usage="System.Windows.Controls.ClickMode.Press" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Release" />
       <MemberSignature Language="VB.NET" Value="Release" />
       <MemberSignature Language="C++ CLI" Value="Release" />
+      <MemberSignature Language="F#" Value="Release = 0" Usage="System.Windows.Controls.ClickMode.Release" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

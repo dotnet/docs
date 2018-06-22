@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor" />
   <TypeSignature Language="VB.NET" Value="Public Class ReplicationNeighbor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReplicationNeighbor" />
+  <TypeSignature Language="F#" Value="type ReplicationNeighbor = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ConsecutiveFailureCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConsecutiveFailureCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConsecutiveFailureCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConsecutiveFailureCount : int" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ConsecutiveFailureCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastAttemptedSync" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastAttemptedSync As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastAttemptedSync { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastAttemptedSync : DateTime" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastAttemptedSync" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastSuccessfulSync" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSuccessfulSync As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastSuccessfulSync { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSuccessfulSync : DateTime" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastSuccessfulSync" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastSyncMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSyncMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastSyncMessage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSyncMessage : string" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastSyncMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastSyncResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSyncResult As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LastSyncResult { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSyncResult : int" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.LastSyncResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.PartitionName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartitionName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PartitionName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartitionName : string" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.PartitionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplicationNeighborOption As ReplicationNeighbor.ReplicationNeighborOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReplicationNeighbor::ReplicationNeighborOptions ReplicationNeighborOption { System::DirectoryServices::ActiveDirectory::ReplicationNeighbor::ReplicationNeighborOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReplicationNeighborOption : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.SourceInvocationId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceInvocationId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid SourceInvocationId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceInvocationId : Guid" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.SourceInvocationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.SourceServer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceServer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceServer { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceServer : string" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.SourceServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.TransportType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransportType As ActiveDirectoryTransportType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectoryTransportType TransportType { System::DirectoryServices::ActiveDirectory::ActiveDirectoryTransportType get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransportType : System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.TransportType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -245,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.UsnAttributeFilter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsnAttributeFilter As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long UsnAttributeFilter { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsnAttributeFilter : int64" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.UsnAttributeFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -267,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.UsnLastObjectChangeSynced" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsnLastObjectChangeSynced As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long UsnLastObjectChangeSynced { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsnLastObjectChangeSynced : int64" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.UsnLastObjectChangeSynced" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

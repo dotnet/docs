@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.IMultiTargetingSupportService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMultiTargetingSupportService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMultiTargetingSupportService" />
+  <TypeSignature Language="F#" Value="type IMultiTargetingSupportService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetReflectionAssembly(System.Reflection.AssemblyName)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReflectionAssembly (targetAssemblyName As AssemblyName) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ GetReflectionAssembly(System::Reflection::AssemblyName ^ targetAssemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetReflectionAssembly : System.Reflection.AssemblyName -&gt; System.Reflection.Assembly" Usage="iMultiTargetingSupportService.GetReflectionAssembly targetAssemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetRuntimeType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeType (reflectionType As Type) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetRuntimeType(Type ^ reflectionType);" />
+      <MemberSignature Language="F#" Value="abstract member GetRuntimeType : Type -&gt; Type" Usage="iMultiTargetingSupportService.GetRuntimeType reflectionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.IsSupportedType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupportedType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupportedType : Type -&gt; bool" Usage="iMultiTargetingSupportService.IsSupportedType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

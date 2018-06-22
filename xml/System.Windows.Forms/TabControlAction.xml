@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControlAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum TabControlAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class TabControlAction" />
+  <TypeSignature Language="F#" Value="type TabControlAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabControlAction.Deselected" />
       <MemberSignature Language="VB.NET" Value="Deselected" />
       <MemberSignature Language="C++ CLI" Value="Deselected" />
+      <MemberSignature Language="F#" Value="Deselected = 3" Usage="System.Windows.Forms.TabControlAction.Deselected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabControlAction.Deselecting" />
       <MemberSignature Language="VB.NET" Value="Deselecting" />
       <MemberSignature Language="C++ CLI" Value="Deselecting" />
+      <MemberSignature Language="F#" Value="Deselecting = 2" Usage="System.Windows.Forms.TabControlAction.Deselecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabControlAction.Selected" />
       <MemberSignature Language="VB.NET" Value="Selected" />
       <MemberSignature Language="C++ CLI" Value="Selected" />
+      <MemberSignature Language="F#" Value="Selected = 1" Usage="System.Windows.Forms.TabControlAction.Selected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabControlAction.Selecting" />
       <MemberSignature Language="VB.NET" Value="Selecting" />
       <MemberSignature Language="C++ CLI" Value="Selecting" />
+      <MemberSignature Language="F#" Value="Selecting = 0" Usage="System.Windows.Forms.TabControlAction.Selecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

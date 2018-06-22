@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.BookmarkResumptionResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum BookmarkResumptionResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class BookmarkResumptionResult" />
+  <TypeSignature Language="F#" Value="type BookmarkResumptionResult = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkResumptionResult.NotFound" />
       <MemberSignature Language="VB.NET" Value="NotFound" />
       <MemberSignature Language="C++ CLI" Value="NotFound" />
+      <MemberSignature Language="F#" Value="NotFound = 1" Usage="System.Activities.BookmarkResumptionResult.NotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkResumptionResult.NotReady" />
       <MemberSignature Language="VB.NET" Value="NotReady" />
       <MemberSignature Language="C++ CLI" Value="NotReady" />
+      <MemberSignature Language="F#" Value="NotReady = 2" Usage="System.Activities.BookmarkResumptionResult.NotReady" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkResumptionResult.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="C++ CLI" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.Activities.BookmarkResumptionResult.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

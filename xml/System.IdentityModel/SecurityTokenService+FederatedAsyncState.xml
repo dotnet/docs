@@ -31,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.SecurityTokenService/FederatedAsyncState federatedAsyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.SecurityTokenService.FederatedAsyncState.#ctor(System.IdentityModel.SecurityTokenService.FederatedAsyncState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederatedAsyncState(System::IdentityModel::SecurityTokenService::FederatedAsyncState ^ federatedAsyncState);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.SecurityTokenService.FederatedAsyncState : System.IdentityModel.SecurityTokenService.FederatedAsyncState -&gt; System.IdentityModel.SecurityTokenService.FederatedAsyncState" Usage="new System.IdentityModel.SecurityTokenService.FederatedAsyncState federatedAsyncState" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.SecurityTokenService.FederatedAsyncState.#ctor(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.Security.Claims.ClaimsPrincipal,System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (request As RequestSecurityToken, principal As ClaimsPrincipal, result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederatedAsyncState(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, System::Security::Claims::ClaimsPrincipal ^ principal, IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.SecurityTokenService.FederatedAsyncState : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken * System.Security.Claims.ClaimsPrincipal * IAsyncResult -&gt; System.IdentityModel.SecurityTokenService.FederatedAsyncState" Usage="new System.IdentityModel.SecurityTokenService.FederatedAsyncState (request, principal, result)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.SecurityTokenService.FederatedAsyncState.ClaimsPrincipal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimsPrincipal As ClaimsPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsPrincipal ^ ClaimsPrincipal { System::Security::Claims::ClaimsPrincipal ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimsPrincipal : System.Security.Claims.ClaimsPrincipal" Usage="System.IdentityModel.SecurityTokenService.FederatedAsyncState.ClaimsPrincipal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.SecurityTokenService.FederatedAsyncState.Request" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Request As RequestSecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ Request { System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Request : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" Usage="System.IdentityModel.SecurityTokenService.FederatedAsyncState.Request" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.SecurityTokenService.FederatedAsyncState.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IAsyncResult ^ Result { IAsyncResult ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : IAsyncResult" Usage="System.IdentityModel.SecurityTokenService.FederatedAsyncState.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.SecurityTokenService.FederatedAsyncState.SecurityTokenHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityTokenHandler As SecurityTokenHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandler ^ SecurityTokenHandler { System::IdentityModel::Tokens::SecurityTokenHandler ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler with get, set" Usage="System.IdentityModel.SecurityTokenService.FederatedAsyncState.SecurityTokenHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

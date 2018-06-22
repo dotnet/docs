@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Tuple`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Tuple(Of T1)&#xA;Implements IComparable, IStructuralComparable, IStructuralEquatable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1&gt;&#xA;public ref class Tuple : IComparable, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type Tuple&lt;'T1&gt; = class&#xA;    interface IStructuralEquatable&#xA;    interface IStructuralComparable&#xA;    interface IComparable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item1 As T1)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Tuple(T1 item1);" />
+      <MemberSignature Language="F#" Value="new Tuple&lt;'T1&gt; : 'T1 -&gt; Tuple&lt;'T1&gt;" Usage="new System.Tuple&lt;'T1&gt; item1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple`1.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="tuple.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -183,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple`1.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="tuple.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`1.Item1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item1 As T1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T1 Item1 { T1 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item1 : 'T1" Usage="System.Tuple&lt;'T1&gt;.Item1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -553,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`1.System#Runtime#CompilerServices#ITuple#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As Object Implements ITuple.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.ITuple.Item[int] { System::Object ^ get(int index); };" />
+      <MemberSignature Language="F#" Usage="System.Tuple&lt;'T1&gt;.System.Runtime.CompilerServices.ITuple.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Item(System.Int32)</InterfaceMember>
@@ -594,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`1.System#Runtime#CompilerServices#ITuple#Length" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Length As Integer Implements ITuple.Length" />
       <MemberSignature Language="C++ CLI" Value="property int System.Runtime.CompilerServices.ITuple.Length { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Tuple&lt;'T1&gt;.System.Runtime.CompilerServices.ITuple.Length" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Length</InterfaceMember>
@@ -629,6 +636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="tuple.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.MetaChildrenColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class MetaChildrenColumn&#xA;Inherits MetaColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetaChildrenColumn : System::Web::DynamicData::MetaColumn" />
+  <TypeSignature Language="F#" Value="type MetaChildrenColumn = class&#xA;    inherit MetaColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.#ctor(System.Web.DynamicData.MetaTable,System.Web.DynamicData.ModelProviders.ColumnProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (table As MetaTable, entityMember As ColumnProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetaChildrenColumn(System::Web::DynamicData::MetaTable ^ table, System::Web::DynamicData::ModelProviders::ColumnProvider ^ entityMember);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.MetaChildrenColumn : System.Web.DynamicData.MetaTable * System.Web.DynamicData.ModelProviders.ColumnProvider -&gt; System.Web.DynamicData.MetaChildrenColumn" Usage="new System.Web.DynamicData.MetaChildrenColumn (table, entityMember)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaChildrenColumn.ChildTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildTable As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaTable ^ ChildTable { System::Web::DynamicData::MetaTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildTable : System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.MetaChildrenColumn.ChildTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnInOtherTable As MetaColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaColumn ^ ColumnInOtherTable { System::Web::DynamicData::MetaColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnInOtherTable : System.Web.DynamicData.MetaColumn" Usage="System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.GetChildrenListPath(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildrenListPath (row As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetChildrenListPath(System::Object ^ row);" />
+      <MemberSignature Language="F#" Value="abstract member GetChildrenListPath : obj -&gt; string&#xA;override this.GetChildrenListPath : obj -&gt; string" Usage="metaChildrenColumn.GetChildrenListPath row" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaChildrenColumn.GetChildrenListPath(System.Object)</InterfaceMember>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildrenPath (action As String, row As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetChildrenPath(System::String ^ action, System::Object ^ row);" />
+      <MemberSignature Language="F#" Value="abstract member GetChildrenPath : string * obj -&gt; string&#xA;override this.GetChildrenPath : string * obj -&gt; string" Usage="metaChildrenColumn.GetChildrenPath (action, row)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaChildrenColumn.GetChildrenPath(System.String,System.Object)</InterfaceMember>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildrenPath (action As String, row As Object, path As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetChildrenPath(System::String ^ action, System::Object ^ row, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member GetChildrenPath : string * obj * string -&gt; string&#xA;override this.GetChildrenPath : string * obj * string -&gt; string" Usage="metaChildrenColumn.GetChildrenPath (action, row, path)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaChildrenColumn.GetChildrenPath(System.String,System.Object,System.String)</InterfaceMember>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize();" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="metaChildrenColumn.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaChildrenColumn.IsManyToMany" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsManyToMany As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsManyToMany { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsManyToMany : bool" Usage="System.Web.DynamicData.MetaChildrenColumn.IsManyToMany" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaChildrenColumn.IsManyToMany</InterfaceMember>

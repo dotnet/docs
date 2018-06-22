@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Expander" />
   <TypeSignature Language="VB.NET" Value="Public Class Expander&#xA;Inherits HeaderedContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class Expander : System::Windows::Controls::HeaderedContentControl" />
+  <TypeSignature Language="F#" Value="type Expander = class&#xA;    inherit HeaderedContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Expander.Collapsed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Collapsed As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Collapsed;" />
+      <MemberSignature Language="F#" Value="member this.Collapsed : System.Windows.RoutedEventHandler " Usage="member this.Collapsed : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Expander.CollapsedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CollapsedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ CollapsedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CollapsedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Expander.CollapsedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Expander.ExpandDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpandDirection As ExpandDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ExpandDirection ExpandDirection { System::Windows::Controls::ExpandDirection get(); void set(System::Windows::Controls::ExpandDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpandDirection : System.Windows.Controls.ExpandDirection with get, set" Usage="System.Windows.Controls.Expander.ExpandDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,6 +205,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Expander.ExpandDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpandDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExpandDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExpandDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Expander.ExpandDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Expander.Expanded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Expanded As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Expanded;" />
+      <MemberSignature Language="F#" Value="member this.Expanded : System.Windows.RoutedEventHandler " Usage="member this.Expanded : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Expander.ExpandedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpandedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ExpandedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExpandedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Expander.ExpandedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -289,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Expander.IsExpanded" />
       <MemberSignature Language="VB.NET" Value="Public Property IsExpanded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExpanded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsExpanded : bool with get, set" Usage="System.Windows.Controls.Expander.IsExpanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -341,6 +349,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Expander.IsExpandedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsExpandedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsExpandedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsExpandedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Expander.IsExpandedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -360,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="expander.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -381,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnCollapsed" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollapsed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollapsed();" />
+      <MemberSignature Language="F#" Value="abstract member OnCollapsed : unit -&gt; unit&#xA;override this.OnCollapsed : unit -&gt; unit" Usage="expander.OnCollapsed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -401,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="expander.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -422,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnExpanded" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnExpanded ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnExpanded();" />
+      <MemberSignature Language="F#" Value="abstract member OnExpanded : unit -&gt; unit&#xA;override this.OnExpanded : unit -&gt; unit" Usage="expander.OnExpanded " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

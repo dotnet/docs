@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderValue" />
   <TypeSignature Language="VB.NET" Value="Public Enum EncoderValue" />
   <TypeSignature Language="C++ CLI" Value="public enum class EncoderValue" />
+  <TypeSignature Language="F#" Value="type EncoderValue = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.ColorTypeCMYK" />
       <MemberSignature Language="VB.NET" Value="ColorTypeCMYK" />
       <MemberSignature Language="C++ CLI" Value="ColorTypeCMYK" />
+      <MemberSignature Language="F#" Value="ColorTypeCMYK = 0" Usage="System.Drawing.Imaging.EncoderValue.ColorTypeCMYK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.ColorTypeYCCK" />
       <MemberSignature Language="VB.NET" Value="ColorTypeYCCK" />
       <MemberSignature Language="C++ CLI" Value="ColorTypeYCCK" />
+      <MemberSignature Language="F#" Value="ColorTypeYCCK = 1" Usage="System.Drawing.Imaging.EncoderValue.ColorTypeYCCK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionCCITT3" />
       <MemberSignature Language="VB.NET" Value="CompressionCCITT3" />
       <MemberSignature Language="C++ CLI" Value="CompressionCCITT3" />
+      <MemberSignature Language="F#" Value="CompressionCCITT3 = 3" Usage="System.Drawing.Imaging.EncoderValue.CompressionCCITT3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionCCITT4" />
       <MemberSignature Language="VB.NET" Value="CompressionCCITT4" />
       <MemberSignature Language="C++ CLI" Value="CompressionCCITT4" />
+      <MemberSignature Language="F#" Value="CompressionCCITT4 = 4" Usage="System.Drawing.Imaging.EncoderValue.CompressionCCITT4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionLZW" />
       <MemberSignature Language="VB.NET" Value="CompressionLZW" />
       <MemberSignature Language="C++ CLI" Value="CompressionLZW" />
+      <MemberSignature Language="F#" Value="CompressionLZW = 2" Usage="System.Drawing.Imaging.EncoderValue.CompressionLZW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionNone" />
       <MemberSignature Language="VB.NET" Value="CompressionNone" />
       <MemberSignature Language="C++ CLI" Value="CompressionNone" />
+      <MemberSignature Language="F#" Value="CompressionNone = 6" Usage="System.Drawing.Imaging.EncoderValue.CompressionNone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionRle" />
       <MemberSignature Language="VB.NET" Value="CompressionRle" />
       <MemberSignature Language="C++ CLI" Value="CompressionRle" />
+      <MemberSignature Language="F#" Value="CompressionRle = 5" Usage="System.Drawing.Imaging.EncoderValue.CompressionRle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.Flush" />
       <MemberSignature Language="VB.NET" Value="Flush" />
       <MemberSignature Language="C++ CLI" Value="Flush" />
+      <MemberSignature Language="F#" Value="Flush = 20" Usage="System.Drawing.Imaging.EncoderValue.Flush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.FrameDimensionPage" />
       <MemberSignature Language="VB.NET" Value="FrameDimensionPage" />
       <MemberSignature Language="C++ CLI" Value="FrameDimensionPage" />
+      <MemberSignature Language="F#" Value="FrameDimensionPage = 23" Usage="System.Drawing.Imaging.EncoderValue.FrameDimensionPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -200,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.FrameDimensionResolution" />
       <MemberSignature Language="VB.NET" Value="FrameDimensionResolution" />
       <MemberSignature Language="C++ CLI" Value="FrameDimensionResolution" />
+      <MemberSignature Language="F#" Value="FrameDimensionResolution = 22" Usage="System.Drawing.Imaging.EncoderValue.FrameDimensionResolution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.FrameDimensionTime" />
       <MemberSignature Language="VB.NET" Value="FrameDimensionTime" />
       <MemberSignature Language="C++ CLI" Value="FrameDimensionTime" />
+      <MemberSignature Language="F#" Value="FrameDimensionTime = 21" Usage="System.Drawing.Imaging.EncoderValue.FrameDimensionTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -238,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.LastFrame" />
       <MemberSignature Language="VB.NET" Value="LastFrame" />
       <MemberSignature Language="C++ CLI" Value="LastFrame" />
+      <MemberSignature Language="F#" Value="LastFrame = 19" Usage="System.Drawing.Imaging.EncoderValue.LastFrame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -257,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.MultiFrame" />
       <MemberSignature Language="VB.NET" Value="MultiFrame" />
       <MemberSignature Language="C++ CLI" Value="MultiFrame" />
+      <MemberSignature Language="F#" Value="MultiFrame = 18" Usage="System.Drawing.Imaging.EncoderValue.MultiFrame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -276,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.RenderNonProgressive" />
       <MemberSignature Language="VB.NET" Value="RenderNonProgressive" />
       <MemberSignature Language="C++ CLI" Value="RenderNonProgressive" />
+      <MemberSignature Language="F#" Value="RenderNonProgressive = 12" Usage="System.Drawing.Imaging.EncoderValue.RenderNonProgressive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -295,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.RenderProgressive" />
       <MemberSignature Language="VB.NET" Value="RenderProgressive" />
       <MemberSignature Language="C++ CLI" Value="RenderProgressive" />
+      <MemberSignature Language="F#" Value="RenderProgressive = 11" Usage="System.Drawing.Imaging.EncoderValue.RenderProgressive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -314,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.ScanMethodInterlaced" />
       <MemberSignature Language="VB.NET" Value="ScanMethodInterlaced" />
       <MemberSignature Language="C++ CLI" Value="ScanMethodInterlaced" />
+      <MemberSignature Language="F#" Value="ScanMethodInterlaced = 7" Usage="System.Drawing.Imaging.EncoderValue.ScanMethodInterlaced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -333,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.ScanMethodNonInterlaced" />
       <MemberSignature Language="VB.NET" Value="ScanMethodNonInterlaced" />
       <MemberSignature Language="C++ CLI" Value="ScanMethodNonInterlaced" />
+      <MemberSignature Language="F#" Value="ScanMethodNonInterlaced = 8" Usage="System.Drawing.Imaging.EncoderValue.ScanMethodNonInterlaced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -352,6 +370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformFlipHorizontal" />
       <MemberSignature Language="VB.NET" Value="TransformFlipHorizontal" />
       <MemberSignature Language="C++ CLI" Value="TransformFlipHorizontal" />
+      <MemberSignature Language="F#" Value="TransformFlipHorizontal = 16" Usage="System.Drawing.Imaging.EncoderValue.TransformFlipHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -371,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformFlipVertical" />
       <MemberSignature Language="VB.NET" Value="TransformFlipVertical" />
       <MemberSignature Language="C++ CLI" Value="TransformFlipVertical" />
+      <MemberSignature Language="F#" Value="TransformFlipVertical = 17" Usage="System.Drawing.Imaging.EncoderValue.TransformFlipVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -390,6 +410,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformRotate180" />
       <MemberSignature Language="VB.NET" Value="TransformRotate180" />
       <MemberSignature Language="C++ CLI" Value="TransformRotate180" />
+      <MemberSignature Language="F#" Value="TransformRotate180 = 14" Usage="System.Drawing.Imaging.EncoderValue.TransformRotate180" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -409,6 +430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformRotate270" />
       <MemberSignature Language="VB.NET" Value="TransformRotate270" />
       <MemberSignature Language="C++ CLI" Value="TransformRotate270" />
+      <MemberSignature Language="F#" Value="TransformRotate270 = 15" Usage="System.Drawing.Imaging.EncoderValue.TransformRotate270" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -428,6 +450,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformRotate90" />
       <MemberSignature Language="VB.NET" Value="TransformRotate90" />
       <MemberSignature Language="C++ CLI" Value="TransformRotate90" />
+      <MemberSignature Language="F#" Value="TransformRotate90 = 13" Usage="System.Drawing.Imaging.EncoderValue.TransformRotate90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -447,6 +470,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.VersionGif87" />
       <MemberSignature Language="VB.NET" Value="VersionGif87" />
       <MemberSignature Language="C++ CLI" Value="VersionGif87" />
+      <MemberSignature Language="F#" Value="VersionGif87 = 9" Usage="System.Drawing.Imaging.EncoderValue.VersionGif87" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -466,6 +490,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.VersionGif89" />
       <MemberSignature Language="VB.NET" Value="VersionGif89" />
       <MemberSignature Language="C++ CLI" Value="VersionGif89" />
+      <MemberSignature Language="F#" Value="VersionGif89 = 10" Usage="System.Drawing.Imaging.EncoderValue.VersionGif89" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

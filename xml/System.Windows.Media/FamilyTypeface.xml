@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FamilyTypeface" />
   <TypeSignature Language="VB.NET" Value="Public Class FamilyTypeface" />
   <TypeSignature Language="C++ CLI" Value="public ref class FamilyTypeface" />
+  <TypeSignature Language="F#" Value="type FamilyTypeface = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.AdjustedFaceNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdjustedFaceNames As IDictionary(Of XmlLanguage, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Windows::Markup::XmlLanguage ^, System::String ^&gt; ^ AdjustedFaceNames { System::Collections::Generic::IDictionary&lt;System::Windows::Markup::XmlLanguage ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdjustedFaceNames : System.Collections.Generic.IDictionary&lt;System.Windows.Markup.XmlLanguage, string&gt;" Usage="System.Windows.Media.FamilyTypeface.AdjustedFaceNames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.AdjustedFaceNames</InterfaceMember>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.CapsHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property CapsHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CapsHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.CapsHeight : double with get, set" Usage="System.Windows.Media.FamilyTypeface.CapsHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.DeviceFontCharacterMetrics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceFontCharacterMetrics As CharacterMetricsDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::CharacterMetricsDictionary ^ DeviceFontCharacterMetrics { System::Windows::Media::CharacterMetricsDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeviceFontCharacterMetrics : System.Windows.Media.CharacterMetricsDictionary" Usage="System.Windows.Media.FamilyTypeface.DeviceFontCharacterMetrics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.DeviceFontName" />
       <MemberSignature Language="VB.NET" Value="Public Property DeviceFontName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeviceFontName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeviceFontName : string with get, set" Usage="System.Windows.Media.FamilyTypeface.DeviceFontName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypeface.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="familyTypeface.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypeface.Equals(System.Windows.Media.FamilyTypeface)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (typeface As FamilyTypeface) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::FamilyTypeface ^ typeface);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.FamilyTypeface -&gt; bool" Usage="familyTypeface.Equals typeface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypeface.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="familyTypeface.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.Stretch" />
       <MemberSignature Language="VB.NET" Value="Public Property Stretch As FontStretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStretch Stretch { System::Windows::FontStretch get(); void set(System::Windows::FontStretch value); };" />
+      <MemberSignature Language="F#" Value="member this.Stretch : System.Windows.FontStretch with get, set" Usage="System.Windows.Media.FamilyTypeface.Stretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.StrikethroughPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property StrikethroughPosition As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrikethroughPosition { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.StrikethroughPosition : double with get, set" Usage="System.Windows.Media.FamilyTypeface.StrikethroughPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -276,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.StrikethroughThickness" />
       <MemberSignature Language="VB.NET" Value="Public Property StrikethroughThickness As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrikethroughThickness { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.StrikethroughThickness : double with get, set" Usage="System.Windows.Media.FamilyTypeface.StrikethroughThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -296,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle Style { System::Windows::FontStyle get(); void set(System::Windows::FontStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Windows.FontStyle with get, set" Usage="System.Windows.Media.FamilyTypeface.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -323,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.UnderlinePosition" />
       <MemberSignature Language="VB.NET" Value="Public Property UnderlinePosition As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UnderlinePosition { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.UnderlinePosition : double with get, set" Usage="System.Windows.Media.FamilyTypeface.UnderlinePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.UnderlineThickness" />
       <MemberSignature Language="VB.NET" Value="Public Property UnderlineThickness As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UnderlineThickness { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.UnderlineThickness : double with get, set" Usage="System.Windows.Media.FamilyTypeface.UnderlineThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -370,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.Weight" />
       <MemberSignature Language="VB.NET" Value="Public Property Weight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight Weight { System::Windows::FontWeight get(); void set(System::Windows::FontWeight value); };" />
+      <MemberSignature Language="F#" Value="member this.Weight : System.Windows.FontWeight with get, set" Usage="System.Windows.Media.FamilyTypeface.Weight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -397,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.XHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property XHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double XHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.XHeight : double with get, set" Usage="System.Windows.Media.FamilyTypeface.XHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

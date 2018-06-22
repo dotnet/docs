@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MemoryProtectionScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum MemoryProtectionScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class MemoryProtectionScope" />
+  <TypeSignature Language="F#" Value="type MemoryProtectionScope = " />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.CrossProcess" />
       <MemberSignature Language="VB.NET" Value="CrossProcess" />
       <MemberSignature Language="C++ CLI" Value="CrossProcess" />
+      <MemberSignature Language="F#" Value="CrossProcess = 1" Usage="System.Security.Cryptography.MemoryProtectionScope.CrossProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.SameLogon" />
       <MemberSignature Language="VB.NET" Value="SameLogon" />
       <MemberSignature Language="C++ CLI" Value="SameLogon" />
+      <MemberSignature Language="F#" Value="SameLogon = 2" Usage="System.Security.Cryptography.MemoryProtectionScope.SameLogon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.SameProcess" />
       <MemberSignature Language="VB.NET" Value="SameProcess" />
       <MemberSignature Language="C++ CLI" Value="SameProcess" />
+      <MemberSignature Language="F#" Value="SameProcess = 0" Usage="System.Security.Cryptography.MemoryProtectionScope.SameProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

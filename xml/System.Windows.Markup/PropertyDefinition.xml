@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.PropertyDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyDefinition&#xA;Inherits MemberDefinition" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyDefinition : System::Windows::Markup::MemberDefinition" />
+  <TypeSignature Language="F#" Value="type PropertyDefinition = class&#xA;    inherit MemberDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.PropertyDefinition.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As IList(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Attribute ^&gt; ^ Attributes { System::Collections::Generic::IList&lt;Attribute ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.Generic.IList&lt;Attribute&gt;" Usage="System.Windows.Markup.PropertyDefinition.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.PropertyDefinition.Modifier" />
       <MemberSignature Language="VB.NET" Value="Public Property Modifier As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Modifier { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Modifier : string with get, set" Usage="System.Windows.Markup.PropertyDefinition.Modifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.PropertyDefinition.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Markup.PropertyDefinition.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.PropertyDefinition.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); void set(System::Xaml::XamlType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType with get, set" Usage="System.Windows.Markup.PropertyDefinition.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

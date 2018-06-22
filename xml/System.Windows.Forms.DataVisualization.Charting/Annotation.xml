@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Annotation&#xA;Inherits ChartNamedElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Annotation abstract : System::Windows::Forms::DataVisualization::Charting::ChartNamedElement" />
+  <TypeSignature Language="F#" Value="type Annotation = class&#xA;    inherit ChartNamedElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Alignment As ContentAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::ContentAlignment Alignment { System::Drawing::ContentAlignment get(); void set(System::Drawing::ContentAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Drawing.ContentAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowAnchorMoving" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowAnchorMoving As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowAnchorMoving { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowAnchorMoving : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AllowAnchorMoving" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowMoving" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowMoving As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowMoving { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowMoving : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AllowMoving" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowPathEditing" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowPathEditing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowPathEditing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPathEditing : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AllowPathEditing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowResizing" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowResizing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowResizing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowResizing : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AllowResizing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowSelecting" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowSelecting As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowSelecting { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowSelecting : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AllowSelecting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowTextEditing" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowTextEditing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowTextEditing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowTextEditing : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AllowTextEditing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -264,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AnchorAlignment As ContentAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::ContentAlignment AnchorAlignment { System::Drawing::ContentAlignment get(); void set(System::Drawing::ContentAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorAlignment : System.Drawing.ContentAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AnchorDataPoint As DataPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::DataPoint ^ AnchorDataPoint { System::Windows::Forms::DataVisualization::Charting::DataPoint ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::DataPoint ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorDataPoint : System.Windows.Forms.DataVisualization.Charting.DataPoint with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -343,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPointName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AnchorDataPointName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AnchorDataPointName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorDataPointName : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPointName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -377,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetX" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AnchorOffsetX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double AnchorOffsetX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorOffsetX : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -412,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetY" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AnchorOffsetY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double AnchorOffsetY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorOffsetY : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorOffsetY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -447,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AnchorX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double AnchorX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorX : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -491,6 +505,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AnchorY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double AnchorY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorY : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -535,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnnotationGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnnotationGroup As AnnotationGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::AnnotationGroup ^ AnnotationGroup { System::Windows::Forms::DataVisualization::Charting::AnnotationGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnnotationGroup : System.Windows.Forms.DataVisualization.Charting.AnnotationGroup" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnnotationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -563,6 +579,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AnnotationType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AnnotationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ AnnotationType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnnotationType : string" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AnnotationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -604,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AxisX As Axis" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::Axis ^ AxisX { System::Windows::Forms::DataVisualization::Charting::Axis ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::Axis ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AxisX : System.Windows.Forms.DataVisualization.Charting.Axis with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -647,6 +665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisXName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AxisXName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AxisXName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AxisXName : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AxisXName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -681,6 +700,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AxisY As Axis" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::Axis ^ AxisY { System::Windows::Forms::DataVisualization::Charting::Axis ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::Axis ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AxisY : System.Windows.Forms.DataVisualization.Charting.Axis with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -724,6 +744,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisYName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AxisYName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AxisYName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AxisYName : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.AxisYName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -758,6 +779,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -799,6 +821,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.BackGradientStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BackGradientStyle As GradientStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::GradientStyle BackGradientStyle { System::Windows::Forms::DataVisualization::Charting::GradientStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::GradientStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Windows.Forms.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -839,6 +862,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.BackHatchStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BackHatchStyle As ChartHatchStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle BackHatchStyle { System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -879,6 +903,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.BackSecondaryColor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BackSecondaryColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackSecondaryColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -922,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginPlacement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginPlacement();" />
+      <MemberSignature Language="F#" Value="abstract member BeginPlacement : unit -&gt; unit&#xA;override this.BeginPlacement : unit -&gt; unit" Usage="annotation.BeginPlacement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -951,6 +977,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Bottom As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double Bottom { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -995,6 +1022,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Annotation.BringToFront" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BringToFront ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BringToFront();" />
+      <MemberSignature Language="F#" Value="abstract member BringToFront : unit -&gt; unit&#xA;override this.BringToFront : unit -&gt; unit" Usage="annotation.BringToFront " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1015,6 +1043,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.ClipToChartArea" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ClipToChartArea As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClipToChartArea { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClipToChartArea : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.ClipToChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1052,6 +1081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Annotation.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="annotation.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1076,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Annotation.EndPlacement" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndPlacement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndPlacement();" />
+      <MemberSignature Language="F#" Value="abstract member EndPlacement : unit -&gt; unit&#xA;override this.EndPlacement : unit -&gt; unit" Usage="annotation.EndPlacement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1105,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1130,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1161,6 +1194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Height" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double Height { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1205,6 +1239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.IsSelected" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsSelected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSelected { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSelected : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.IsSelected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1234,6 +1269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsSizeAlwaysRelative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSizeAlwaysRelative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSizeAlwaysRelative : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1269,6 +1305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.LineColor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LineColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color LineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.LineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.LineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1300,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.LineDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LineDashStyle As ChartDashStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle LineDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.LineDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.LineDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1325,6 +1363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.LineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LineWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LineWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LineWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.LineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1350,6 +1389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1378,6 +1418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Annotation.ResizeToContent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResizeToContent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResizeToContent();" />
+      <MemberSignature Language="F#" Value="abstract member ResizeToContent : unit -&gt; unit&#xA;override this.ResizeToContent : unit -&gt; unit" Usage="annotation.ResizeToContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1410,6 +1451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Right" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Right As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double Right { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Right : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1454,6 +1496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Annotation.SendToBack" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SendToBack ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SendToBack();" />
+      <MemberSignature Language="F#" Value="abstract member SendToBack : unit -&gt; unit&#xA;override this.SendToBack : unit -&gt; unit" Usage="annotation.SendToBack " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1489,6 +1532,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAnchor(class System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Annotation.SetAnchor(System.Windows.Forms.DataVisualization.Charting.DataPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAnchor(System::Windows::Forms::DataVisualization::Charting::DataPoint ^ dataPoint);" />
+      <MemberSignature Language="F#" Value="member this.SetAnchor : System.Windows.Forms.DataVisualization.Charting.DataPoint -&gt; unit" Usage="annotation.SetAnchor dataPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1519,6 +1563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Annotation.SetAnchor(System.Windows.Forms.DataVisualization.Charting.DataPoint,System.Windows.Forms.DataVisualization.Charting.DataPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAnchor (dataPoint1 As DataPoint, dataPoint2 As DataPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAnchor(System::Windows::Forms::DataVisualization::Charting::DataPoint ^ dataPoint1, System::Windows::Forms::DataVisualization::Charting::DataPoint ^ dataPoint2);" />
+      <MemberSignature Language="F#" Value="member this.SetAnchor : System.Windows.Forms.DataVisualization.Charting.DataPoint * System.Windows.Forms.DataVisualization.Charting.DataPoint -&gt; unit" Usage="annotation.SetAnchor (dataPoint1, dataPoint2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1551,6 +1596,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.ShadowColor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShadowColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ShadowColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.ShadowColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1582,6 +1628,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.ShadowOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShadowOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ShadowOffset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowOffset : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.ShadowOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1607,6 +1654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.SmartLabelStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property SmartLabelStyle As AnnotationSmartLabelStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::AnnotationSmartLabelStyle ^ SmartLabelStyle { System::Windows::Forms::DataVisualization::Charting::AnnotationSmartLabelStyle ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::AnnotationSmartLabelStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SmartLabelStyle : System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.SmartLabelStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1648,6 +1696,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.TextStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TextStyle As TextStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::TextStyle TextStyle { System::Windows::Forms::DataVisualization::Charting::TextStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::TextStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.TextStyle : System.Windows.Forms.DataVisualization.Charting.TextStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.TextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1673,6 +1722,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ToolTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.ToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1705,6 +1755,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1734,6 +1785,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Width" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double Width { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1772,6 +1824,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.X" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property X As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double X { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1814,6 +1867,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Y" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Y As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double Y { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1856,6 +1910,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Annotation.YAxisName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property YAxisName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ YAxisName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.YAxisName : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Annotation.YAxisName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

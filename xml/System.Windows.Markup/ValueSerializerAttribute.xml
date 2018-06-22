@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ValueSerializerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValueSerializerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValueSerializerAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ValueSerializerAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializerAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueSerializerTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueSerializerAttribute(System::String ^ valueSerializerTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ValueSerializerAttribute : string -&gt; System.Windows.Markup.ValueSerializerAttribute" Usage="new System.Windows.Markup.ValueSerializerAttribute valueSerializerTypeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializerAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueSerializerType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueSerializerAttribute(Type ^ valueSerializerType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ValueSerializerAttribute : Type -&gt; System.Windows.Markup.ValueSerializerAttribute" Usage="new System.Windows.Markup.ValueSerializerAttribute valueSerializerType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ValueSerializerAttribute.ValueSerializerType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueSerializerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ValueSerializerType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueSerializerType : Type" Usage="System.Windows.Markup.ValueSerializerAttribute.ValueSerializerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ValueSerializerAttribute.ValueSerializerTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueSerializerTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueSerializerTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueSerializerTypeName : string" Usage="System.Windows.Markup.ValueSerializerAttribute.ValueSerializerTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

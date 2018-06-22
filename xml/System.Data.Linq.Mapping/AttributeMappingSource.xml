@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.AttributeMappingSource" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttributeMappingSource&#xA;Inherits MappingSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeMappingSource sealed : System::Data::Linq::Mapping::MappingSource" />
+  <TypeSignature Language="F#" Value="type AttributeMappingSource = class&#xA;    inherit MappingSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.AttributeMappingSource.CreateModel(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateModel (dataContextType As Type) As MetaModel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Linq::Mapping::MetaModel ^ CreateModel(Type ^ dataContextType);" />
+      <MemberSignature Language="F#" Value="override this.CreateModel : Type -&gt; System.Data.Linq.Mapping.MetaModel" Usage="attributeMappingSource.CreateModel dataContextType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

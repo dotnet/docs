@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Stack" />
   <TypeSignature Language="VB.NET" Value="Public Class Stack&#xA;Implements ICloneable, ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class Stack : ICloneable, System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type Stack = class&#xA;    interface ICollection&#xA;    interface ICloneable&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -129,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (col As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Stack(System::Collections::ICollection ^ col);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Stack : System.Collections.ICollection -&gt; System.Collections.Stack" Usage="new System.Collections.Stack col" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -177,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialCapacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Stack(int initialCapacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Stack : int -&gt; System.Collections.Stack" Usage="new System.Collections.Stack initialCapacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -221,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="stack.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -270,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="stack.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -316,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="stack.Contains obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -362,6 +368,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="stack.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -431,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Stack.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Stack.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -476,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="stack.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -535,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Stack.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Collections.Stack.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -596,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Peek () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Peek();" />
+      <MemberSignature Language="F#" Value="abstract member Peek : unit -&gt; obj&#xA;override this.Peek : unit -&gt; obj" Usage="stack.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -651,6 +662,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.Pop" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Pop () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Pop();" />
+      <MemberSignature Language="F#" Value="abstract member Pop : unit -&gt; obj&#xA;override this.Pop : unit -&gt; obj" Usage="stack.Pop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -706,6 +718,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.Push(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Push (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Push(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Push : obj -&gt; unit&#xA;override this.Push : obj -&gt; unit" Usage="stack.Push obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -761,6 +774,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Stack Synchronized(class System.Collections.Stack stack) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.Synchronized(System.Collections.Stack)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Stack ^ Synchronized(System::Collections::Stack ^ stack);" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Collections.Stack -&gt; System.Collections.Stack" Usage="System.Collections.Stack.Synchronized stack" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -824,6 +838,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Stack.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Collections.Stack.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -875,6 +890,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Stack.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToArray () As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Object ^&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="abstract member ToArray : unit -&gt; obj[]&#xA;override this.ToArray : unit -&gt; obj[]" Usage="stack.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>

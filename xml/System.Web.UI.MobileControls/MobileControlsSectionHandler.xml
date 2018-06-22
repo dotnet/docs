@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileControlsSectionHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class MobileControlsSectionHandler&#xA;Implements IConfigurationSectionHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class MobileControlsSectionHandler : System::Configuration::IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type MobileControlsSectionHandler = class&#xA;    interface IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlsSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Protected Function Create (parent As Object, context As Object, input As XmlNode) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ Create(System::Object ^ parent, System::Object ^ context, System::Xml::XmlNode ^ input);" />
+      <MemberSignature Language="F#" Value="member this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="mobileControlsSectionHandler.Create (parent, context, input)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

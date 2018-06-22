@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.PerspectiveCamera" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PerspectiveCamera&#xA;Inherits ProjectionCamera" />
   <TypeSignature Language="C++ CLI" Value="public ref class PerspectiveCamera sealed : System::Windows::Media::Media3D::ProjectionCamera" />
+  <TypeSignature Language="F#" Value="type PerspectiveCamera = class&#xA;    inherit ProjectionCamera" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PerspectiveCamera.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (position As Point3D, lookDirection As Vector3D, upDirection As Vector3D, fieldOfView As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerspectiveCamera(System::Windows::Media::Media3D::Point3D position, System::Windows::Media::Media3D::Vector3D lookDirection, System::Windows::Media::Media3D::Vector3D upDirection, double fieldOfView);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.PerspectiveCamera : System.Windows.Media.Media3D.Point3D * System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D * double -&gt; System.Windows.Media.Media3D.PerspectiveCamera" Usage="new System.Windows.Media.Media3D.PerspectiveCamera (position, lookDirection, upDirection, fieldOfView)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PerspectiveCamera.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As PerspectiveCamera" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::PerspectiveCamera ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.PerspectiveCamera" Usage="perspectiveCamera.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PerspectiveCamera.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PerspectiveCamera" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::PerspectiveCamera ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.PerspectiveCamera" Usage="perspectiveCamera.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PerspectiveCamera.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="perspectiveCamera.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.PerspectiveCamera.FieldOfView" />
       <MemberSignature Language="VB.NET" Value="Public Property FieldOfView As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FieldOfView { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.FieldOfView : double with get, set" Usage="System.Windows.Media.Media3D.PerspectiveCamera.FieldOfView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.PerspectiveCamera.FieldOfViewProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FieldOfViewProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FieldOfViewProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FieldOfViewProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.PerspectiveCamera.FieldOfViewProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

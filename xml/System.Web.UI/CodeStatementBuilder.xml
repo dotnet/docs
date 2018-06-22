@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.CodeStatementBuilder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeStatementBuilder&#xA;Inherits ControlBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeStatementBuilder abstract : System::Web::UI::ControlBuilder" />
+  <TypeSignature Language="F#" Value="type CodeStatementBuilder = class&#xA;    inherit ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CodeStatementBuilder.BuildStatement(System.CodeDom.CodeArgumentReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BuildStatement (writerReferenceExpression As CodeArgumentReferenceExpression) As CodeStatement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::CodeDom::CodeStatement ^ BuildStatement(System::CodeDom::CodeArgumentReferenceExpression ^ writerReferenceExpression);" />
+      <MemberSignature Language="F#" Value="abstract member BuildStatement : System.CodeDom.CodeArgumentReferenceExpression -&gt; System.CodeDom.CodeStatement" Usage="codeStatementBuilder.BuildStatement writerReferenceExpression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

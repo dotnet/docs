@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MimeReturnReader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MimeReturnReader&#xA;Inherits MimeFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class MimeReturnReader abstract : System::Web::Services::Protocols::MimeFormatter" />
+  <TypeSignature Language="F#" Value="type MimeReturnReader = class&#xA;    inherit MimeFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeReturnReader.Read(System.Net.WebResponse,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Read (response As WebResponse, responseStream As Stream) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Read(System::Net::WebResponse ^ response, System::IO::Stream ^ responseStream);" />
+      <MemberSignature Language="F#" Value="abstract member Read : System.Net.WebResponse * System.IO.Stream -&gt; obj" Usage="mimeReturnReader.Read (response, responseStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

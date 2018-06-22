@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ResourcePool" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourcePool" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourcePool sealed" />
+  <TypeSignature Language="F#" Value="type ResourcePool = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ResourcePool.#ctor(System.EnterpriseServices.ResourcePool.TransactionEndDelegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cb As ResourcePool.TransactionEndDelegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourcePool(System::EnterpriseServices::ResourcePool::TransactionEndDelegate ^ cb);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ResourcePool : System.EnterpriseServices.ResourcePool.TransactionEndDelegate -&gt; System.EnterpriseServices.ResourcePool" Usage="new System.EnterpriseServices.ResourcePool cb" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ResourcePool.GetResource" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResource () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetResource();" />
+      <MemberSignature Language="F#" Value="member this.GetResource : unit -&gt; obj" Usage="resourcePool.GetResource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ResourcePool.PutResource(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function PutResource (resource As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool PutResource(System::Object ^ resource);" />
+      <MemberSignature Language="F#" Value="member this.PutResource : obj -&gt; bool" Usage="resourcePool.PutResource resource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

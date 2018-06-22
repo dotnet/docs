@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HtmlString" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlString&#xA;Implements IHtmlString" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlString : System::Web::IHtmlString" />
+  <TypeSignature Language="F#" Value="type HtmlString = class&#xA;    interface IHtmlString" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HtmlString.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlString(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Web.HtmlString : string -&gt; System.Web.HtmlString" Usage="new System.Web.HtmlString value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HtmlString.ToHtmlString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToHtmlString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToHtmlString();" />
+      <MemberSignature Language="F#" Value="abstract member ToHtmlString : unit -&gt; string&#xA;override this.ToHtmlString : unit -&gt; string" Usage="htmlString.ToHtmlString " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHtmlString.ToHtmlString</InterfaceMember>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HtmlString.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="htmlString.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

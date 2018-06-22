@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellValidatingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellValidatingEventHandler(sender As Object, e As DataGridViewCellValidatingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellValidatingEventHandler(System::Object ^ sender, DataGridViewCellValidatingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellValidatingEventHandler = delegate of obj * DataGridViewCellValidatingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

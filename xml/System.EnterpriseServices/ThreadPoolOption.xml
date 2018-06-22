@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ThreadPoolOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThreadPoolOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class ThreadPoolOption" />
+  <TypeSignature Language="F#" Value="type ThreadPoolOption = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ThreadPoolOption.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 1" Usage="System.EnterpriseServices.ThreadPoolOption.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ThreadPoolOption.MTA" />
       <MemberSignature Language="VB.NET" Value="MTA" />
       <MemberSignature Language="C++ CLI" Value="MTA" />
+      <MemberSignature Language="F#" Value="MTA = 3" Usage="System.EnterpriseServices.ThreadPoolOption.MTA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ThreadPoolOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.EnterpriseServices.ThreadPoolOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ThreadPoolOption.STA" />
       <MemberSignature Language="VB.NET" Value="STA" />
       <MemberSignature Language="C++ CLI" Value="STA" />
+      <MemberSignature Language="F#" Value="STA = 2" Usage="System.EnterpriseServices.ThreadPoolOption.STA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewUpdateEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FormViewUpdateEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormViewUpdateEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type FormViewUpdateEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewUpdateEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandArgument As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormViewUpdateEventArgs(System::Object ^ commandArgument);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FormViewUpdateEventArgs : obj -&gt; System.Web.UI.WebControls.FormViewUpdateEventArgs" Usage="new System.Web.UI.WebControls.FormViewUpdateEventArgs commandArgument" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandArgument As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandArgument { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandArgument : obj" Usage="System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Keys { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValues As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ NewValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValues As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ OldValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

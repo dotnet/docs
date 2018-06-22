@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.HyperLinkDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class HyperLinkDesigner&#xA;Inherits TextControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class HyperLinkDesigner : System::Web::UI::Design::TextControlDesigner" />
+  <TypeSignature Language="F#" Value="type HyperLinkDesigner = class&#xA;    inherit TextControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HyperLinkDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="hyperLinkDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HyperLinkDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
+      <MemberSignature Language="F#" Value="override this.OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="hyperLinkDesigner.OnComponentChanged (sender, ce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

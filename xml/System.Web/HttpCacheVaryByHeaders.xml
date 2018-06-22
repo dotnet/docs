@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByHeaders" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCacheVaryByHeaders" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpCacheVaryByHeaders sealed" />
+  <TypeSignature Language="F#" Value="type HttpCacheVaryByHeaders = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.AcceptTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptTypes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptTypes : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.AcceptTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByHeaders.GetHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHeaders () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetHeaders();" />
+      <MemberSignature Language="F#" Value="member this.GetHeaders : unit -&gt; string[]" Usage="httpCacheVaryByHeaders.GetHeaders " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(header As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default[System::String ^] { bool get(System::String ^ header); void set(System::String ^ header, bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByHeaders.SetHeaders(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetHeaders (headers As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHeaders(cli::array &lt;System::String ^&gt; ^ headers);" />
+      <MemberSignature Language="F#" Value="member this.SetHeaders : string[] -&gt; unit" Usage="httpCacheVaryByHeaders.SetHeaders headers" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.UserAgent" />
       <MemberSignature Language="VB.NET" Value="Public Property UserAgent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UserAgent { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UserAgent : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.UserAgent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.UserCharSet" />
       <MemberSignature Language="VB.NET" Value="Public Property UserCharSet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UserCharSet { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UserCharSet : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.UserCharSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByHeaders.UserLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property UserLanguage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UserLanguage { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UserLanguage : bool with get, set" Usage="System.Web.HttpCacheVaryByHeaders.UserLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -284,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByHeaders.VaryByUnspecifiedParameters" />
       <MemberSignature Language="VB.NET" Value="Public Sub VaryByUnspecifiedParameters ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void VaryByUnspecifiedParameters();" />
+      <MemberSignature Language="F#" Value="member this.VaryByUnspecifiedParameters : unit -&gt; unit" Usage="httpCacheVaryByHeaders.VaryByUnspecifiedParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

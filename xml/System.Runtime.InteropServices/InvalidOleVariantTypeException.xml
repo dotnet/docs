@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.InvalidOleVariantTypeException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidOleVariantTypeException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidOleVariantTypeException : SystemException" />
+  <TypeSignature Language="F#" Value="type InvalidOleVariantTypeException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.InvalidOleVariantTypeException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidOleVariantTypeException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.InvalidOleVariantTypeException : string -&gt; System.Runtime.InteropServices.InvalidOleVariantTypeException" Usage="new System.Runtime.InteropServices.InvalidOleVariantTypeException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -157,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.InvalidOleVariantTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidOleVariantTypeException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.InvalidOleVariantTypeException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.InteropServices.InvalidOleVariantTypeException" Usage="new System.Runtime.InteropServices.InvalidOleVariantTypeException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.InvalidOleVariantTypeException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidOleVariantTypeException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.InvalidOleVariantTypeException : string * Exception -&gt; System.Runtime.InteropServices.InvalidOleVariantTypeException" Usage="new System.Runtime.InteropServices.InvalidOleVariantTypeException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

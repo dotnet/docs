@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.TypeBinaryExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeBinaryExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeBinaryExpression sealed : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type TypeBinaryExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.TypeBinaryExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="typeBinaryExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.TypeBinaryExpression.Expression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.TypeBinaryExpression.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.TypeBinaryExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.TypeBinaryExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.TypeBinaryExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.TypeBinaryExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.TypeBinaryExpression.TypeOperand" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeOperand As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TypeOperand { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeOperand : Type" Usage="System.Linq.Expressions.TypeBinaryExpression.TypeOperand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.TypeBinaryExpression Update(class System.Linq.Expressions.Expression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.TypeBinaryExpression.Update(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::TypeBinaryExpression ^ Update(System::Linq::Expressions::Expression ^ expression);" />
+      <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.TypeBinaryExpression" Usage="typeBinaryExpression.Update expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

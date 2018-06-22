@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.AspNetCompiler" />
   <TypeSignature Language="VB.NET" Value="Public Class AspNetCompiler&#xA;Inherits ToolTaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class AspNetCompiler : Microsoft::Build::Tasks::ToolTaskExtension" />
+  <TypeSignature Language="F#" Value="type AspNetCompiler = class&#xA;    inherit ToolTaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AspNetCompiler.AddCommandLineCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub AddCommandLineCommands (commandLine As CommandLineBuilderExtension)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void AddCommandLineCommands(Microsoft::Build::Tasks::CommandLineBuilderExtension ^ commandLine);" />
+      <MemberSignature Language="F#" Value="override this.AddCommandLineCommands : Microsoft.Build.Tasks.CommandLineBuilderExtension -&gt; unit" Usage="aspNetCompiler.AddCommandLineCommands commandLine" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPartiallyTrustedCallers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPartiallyTrustedCallers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPartiallyTrustedCallers : bool with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.Clean" />
       <MemberSignature Language="VB.NET" Value="Public Property Clean As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Clean { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Clean : bool with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.Clean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.Debug" />
       <MemberSignature Language="VB.NET" Value="Public Property Debug As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Debug { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Debug : bool with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.Debug" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.DelaySign" />
       <MemberSignature Language="VB.NET" Value="Public Property DelaySign As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DelaySign { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DelaySign : bool with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.DelaySign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AspNetCompiler.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="aspNetCompiler.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.FixedNames" />
       <MemberSignature Language="VB.NET" Value="Public Property FixedNames As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FixedNames { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FixedNames : bool with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.FixedNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.Force" />
       <MemberSignature Language="VB.NET" Value="Public Property Force As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Force { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Force : bool with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.Force" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AspNetCompiler.GenerateFullPathToTool" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateFullPathToTool () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateFullPathToTool();" />
+      <MemberSignature Language="F#" Value="override this.GenerateFullPathToTool : unit -&gt; string" Usage="aspNetCompiler.GenerateFullPathToTool " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -273,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.KeyContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyContainer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyContainer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyContainer : string with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.KeyContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -302,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.KeyFile" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFile : string with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.KeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -331,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.MetabasePath" />
       <MemberSignature Language="VB.NET" Value="Public Property MetabasePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MetabasePath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MetabasePath : string with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.MetabasePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -352,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.PhysicalPath" />
       <MemberSignature Language="VB.NET" Value="Public Property PhysicalPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PhysicalPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PhysicalPath : string with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.PhysicalPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -380,6 +394,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.TargetFrameworkMoniker" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkMoniker As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMoniker { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMoniker : string with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.TargetFrameworkMoniker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -408,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.TargetPath" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetPath : string with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.TargetPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -436,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.ToolName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ToolName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ToolName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolName : string" Usage="Microsoft.Build.Tasks.AspNetCompiler.ToolName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -457,6 +474,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.Updateable" />
       <MemberSignature Language="VB.NET" Value="Public Property Updateable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Updateable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Updateable : bool with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.Updateable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -486,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AspNetCompiler.ValidateParameters" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateParameters () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ValidateParameters();" />
+      <MemberSignature Language="F#" Value="override this.ValidateParameters : unit -&gt; bool" Usage="aspNetCompiler.ValidateParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -509,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AspNetCompiler.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public Property VirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string with get, set" Usage="Microsoft.Build.Tasks.AspNetCompiler.VirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

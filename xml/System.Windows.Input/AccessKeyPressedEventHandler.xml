@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.AccessKeyPressedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AccessKeyPressedEventHandler(sender As Object, e As AccessKeyPressedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AccessKeyPressedEventHandler(System::Object ^ sender, AccessKeyPressedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AccessKeyPressedEventHandler = delegate of obj * AccessKeyPressedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

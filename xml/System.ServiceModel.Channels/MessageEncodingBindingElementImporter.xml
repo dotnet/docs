@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageEncodingBindingElementImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageEncodingBindingElementImporter&#xA;Implements IPolicyImportExtension, IWsdlImportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageEncodingBindingElementImporter : System::ServiceModel::Description::IPolicyImportExtension, System::ServiceModel::Description::IWsdlImportExtension" />
+  <TypeSignature Language="F#" Value="type MessageEncodingBindingElementImporter = class&#xA;    interface IWsdlImportExtension&#xA;    interface IPolicyImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

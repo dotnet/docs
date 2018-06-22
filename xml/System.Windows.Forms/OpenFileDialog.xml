@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.OpenFileDialog" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OpenFileDialog&#xA;Inherits FileDialog" />
   <TypeSignature Language="C++ CLI" Value="public ref class OpenFileDialog sealed : System::Windows::Forms::FileDialog" />
+  <TypeSignature Language="F#" Value="type OpenFileDialog = class&#xA;    inherit FileDialog" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OpenFileDialog.CheckFileExists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CheckFileExists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CheckFileExists { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckFileExists : bool with get, set" Usage="System.Windows.Forms.OpenFileDialog.CheckFileExists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +102,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OpenFileDialog.Multiselect" />
       <MemberSignature Language="VB.NET" Value="Public Property Multiselect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Multiselect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Multiselect : bool with get, set" Usage="System.Windows.Forms.OpenFileDialog.Multiselect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +146,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OpenFileDialog.OpenFile" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFile () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenFile();" />
+      <MemberSignature Language="F#" Value="member this.OpenFile : unit -&gt; System.IO.Stream" Usage="openFileDialog.OpenFile " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +189,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OpenFileDialog.ReadOnlyChecked" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnlyChecked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnlyChecked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnlyChecked : bool with get, set" Usage="System.Windows.Forms.OpenFileDialog.ReadOnlyChecked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -230,6 +235,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OpenFileDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="openFileDialog.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -250,6 +256,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OpenFileDialog.SafeFileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SafeFileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SafeFileName : string" Usage="System.Windows.Forms.OpenFileDialog.SafeFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -285,6 +292,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OpenFileDialog.SafeFileNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeFileNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ SafeFileNames { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SafeFileNames : string[]" Usage="System.Windows.Forms.OpenFileDialog.SafeFileNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -320,6 +328,7 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OpenFileDialog.ShowReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowReadOnly : bool with get, set" Usage="System.Windows.Forms.OpenFileDialog.ShowReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

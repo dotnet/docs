@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintRange" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintRange" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintRange" />
+  <TypeSignature Language="F#" Value="type PrintRange = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.AllPages" />
       <MemberSignature Language="VB.NET" Value="AllPages" />
       <MemberSignature Language="C++ CLI" Value="AllPages" />
+      <MemberSignature Language="F#" Value="AllPages = 0" Usage="System.Drawing.Printing.PrintRange.AllPages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.CurrentPage" />
       <MemberSignature Language="VB.NET" Value="CurrentPage" />
       <MemberSignature Language="C++ CLI" Value="CurrentPage" />
+      <MemberSignature Language="F#" Value="CurrentPage = 4194304" Usage="System.Drawing.Printing.PrintRange.CurrentPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.Selection" />
       <MemberSignature Language="VB.NET" Value="Selection" />
       <MemberSignature Language="C++ CLI" Value="Selection" />
+      <MemberSignature Language="F#" Value="Selection = 1" Usage="System.Drawing.Printing.PrintRange.Selection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.SomePages" />
       <MemberSignature Language="VB.NET" Value="SomePages" />
       <MemberSignature Language="C++ CLI" Value="SomePages" />
+      <MemberSignature Language="F#" Value="SomePages = 2" Usage="System.Drawing.Printing.PrintRange.SomePages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

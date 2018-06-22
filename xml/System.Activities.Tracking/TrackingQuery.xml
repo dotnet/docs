@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.TrackingQuery" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingQuery abstract" />
+  <TypeSignature Language="F#" Value="type TrackingQuery = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingQuery.QueryAnnotations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryAnnotations As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ QueryAnnotations { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAnnotations : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Activities.Tracking.TrackingQuery.QueryAnnotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

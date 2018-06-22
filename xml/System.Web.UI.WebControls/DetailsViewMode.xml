@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DetailsViewMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DetailsViewMode" />
+  <TypeSignature Language="F#" Value="type DetailsViewMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DetailsViewMode.Edit" />
       <MemberSignature Language="VB.NET" Value="Edit" />
       <MemberSignature Language="C++ CLI" Value="Edit" />
+      <MemberSignature Language="F#" Value="Edit = 1" Usage="System.Web.UI.WebControls.DetailsViewMode.Edit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DetailsViewMode.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 2" Usage="System.Web.UI.WebControls.DetailsViewMode.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DetailsViewMode.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="ReadOnly" />
       <MemberSignature Language="C++ CLI" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 0" Usage="System.Web.UI.WebControls.DetailsViewMode.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

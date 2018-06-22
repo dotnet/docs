@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymDocumentWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class SymDocumentWriter&#xA;Inherits SymDocumentWriterBase&#xA;Implements IDisposable, ISymbolDocumentWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class SymDocumentWriter : System::Diagnostics::SymbolStore::SymDocumentWriterBase, IDisposable, System::Diagnostics::SymbolStore::ISymbolDocumentWriter" />
+  <TypeSignature Language="F#" Value="type SymDocumentWriter = class&#xA;    inherit SymDocumentWriterBase&#xA;    interface ISymbolDocumentWriter&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter* pDocumentWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.#ctor(System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter*)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymDocumentWriter(System::Diagnostics::SymbolStore::Private::ISymUnmanagedDocumentWriter* pDocumentWriter);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SymbolStore.SymDocumentWriter : nativeptr&lt;System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter&gt; -&gt; System.Diagnostics.SymbolStore.SymDocumentWriter" Usage="new System.Diagnostics.SymbolStore.SymDocumentWriter pDocumentWriter" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="symDocumentWriter.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="symDocumentWriter.Dispose A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!SymDocumentWriter ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="symDocumentWriter.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter* GetUnmanaged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.GetUnmanaged" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::Private::ISymUnmanagedDocumentWriter* GetUnmanaged();" />
+      <MemberSignature Language="F#" Value="member this.GetUnmanaged : unit -&gt; nativeptr&lt;System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter&gt;" Usage="symDocumentWriter.GetUnmanaged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.SetCheckSum(System.Guid,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetCheckSum (algorithmId As Guid, source As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetCheckSum(Guid algorithmId, cli::array &lt;System::Byte&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member SetCheckSum : Guid * byte[] -&gt; unit&#xA;override this.SetCheckSum : Guid * byte[] -&gt; unit" Usage="symDocumentWriter.SetCheckSum (algorithmId, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocumentWriter.SetSource(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSource (source As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSource(cli::array &lt;System::Byte&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member SetSource : byte[] -&gt; unit&#xA;override this.SetSource : byte[] -&gt; unit" Usage="symDocumentWriter.SetSource source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>

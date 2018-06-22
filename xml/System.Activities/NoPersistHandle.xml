@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.NoPersistHandle" />
   <TypeSignature Language="VB.NET" Value="Public Class NoPersistHandle&#xA;Inherits Handle" />
   <TypeSignature Language="C++ CLI" Value="public ref class NoPersistHandle : System::Activities::Handle" />
+  <TypeSignature Language="F#" Value="type NoPersistHandle = class&#xA;    inherit Handle" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NoPersistHandle.Enter(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enter (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enter(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Enter : System.Activities.NativeActivityContext -&gt; unit" Usage="noPersistHandle.Enter context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NoPersistHandle.Exit(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Exit (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exit(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Exit : System.Activities.NativeActivityContext -&gt; unit" Usage="noPersistHandle.Exit context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

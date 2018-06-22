@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IExpressionsAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExpressionsAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExpressionsAccessor" />
+  <TypeSignature Language="F#" Value="type IExpressionsAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IExpressionsAccessor.Expressions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expressions As ExpressionBindingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ExpressionBindingCollection ^ Expressions { System::Web::UI::ExpressionBindingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expressions : System.Web.UI.ExpressionBindingCollection" Usage="System.Web.UI.IExpressionsAccessor.Expressions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IExpressionsAccessor.HasExpressions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasExpressions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasExpressions { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasExpressions : bool" Usage="System.Web.UI.IExpressionsAccessor.HasExpressions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeGeneratorOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeGeneratorOptions" />
+  <TypeSignature Language="F#" Value="type CodeGeneratorOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.BlankLinesBetweenMembers" />
       <MemberSignature Language="VB.NET" Value="Public Property BlankLinesBetweenMembers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BlankLinesBetweenMembers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BlankLinesBetweenMembers : bool with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.BlankLinesBetweenMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.BracingStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BracingStyle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BracingStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BracingStyle : string with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.BracingStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.ElseOnClosing" />
       <MemberSignature Language="VB.NET" Value="Public Property ElseOnClosing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ElseOnClosing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ElseOnClosing : bool with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.ElseOnClosing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.IndentString" />
       <MemberSignature Language="VB.NET" Value="Public Property IndentString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IndentString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IndentString : string with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.IndentString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ index); void set(System::String ^ index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.VerbatimOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property VerbatimOrder As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool VerbatimOrder { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.VerbatimOrder : bool with get, set" Usage="System.CodeDom.Compiler.CodeGeneratorOptions.VerbatimOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

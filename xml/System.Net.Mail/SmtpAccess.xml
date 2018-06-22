@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum SmtpAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class SmtpAccess" />
+  <TypeSignature Language="F#" Value="type SmtpAccess = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpAccess.Connect" />
       <MemberSignature Language="VB.NET" Value="Connect" />
       <MemberSignature Language="C++ CLI" Value="Connect" />
+      <MemberSignature Language="F#" Value="Connect = 1" Usage="System.Net.Mail.SmtpAccess.Connect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpAccess.ConnectToUnrestrictedPort" />
       <MemberSignature Language="VB.NET" Value="ConnectToUnrestrictedPort" />
       <MemberSignature Language="C++ CLI" Value="ConnectToUnrestrictedPort" />
+      <MemberSignature Language="F#" Value="ConnectToUnrestrictedPort = 2" Usage="System.Net.Mail.SmtpAccess.ConnectToUnrestrictedPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpAccess.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.Mail.SmtpAccess.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

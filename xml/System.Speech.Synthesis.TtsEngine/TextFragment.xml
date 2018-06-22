@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.TextFragment" />
   <TypeSignature Language="VB.NET" Value="Public Class TextFragment" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextFragment" />
+  <TypeSignature Language="F#" Value="type TextFragment = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -127,6 +128,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.TextFragment.State" />
       <MemberSignature Language="VB.NET" Value="Public Property State As FragmentState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::FragmentState State { System::Speech::Synthesis::TtsEngine::FragmentState get(); void set(System::Speech::Synthesis::TtsEngine::FragmentState value); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Speech.Synthesis.TtsEngine.FragmentState with get, set" Usage="System.Speech.Synthesis.TtsEngine.TextFragment.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -156,6 +158,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.TextFragment.TextLength" />
       <MemberSignature Language="VB.NET" Value="Public Property TextLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TextLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TextLength : int with get, set" Usage="System.Speech.Synthesis.TtsEngine.TextFragment.TextLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -252,6 +255,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.TextFragment.TextOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property TextOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TextOffset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TextOffset : int with get, set" Usage="System.Speech.Synthesis.TtsEngine.TextFragment.TextOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -348,6 +352,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.TextFragment.TextToSpeak" />
       <MemberSignature Language="VB.NET" Value="Public Property TextToSpeak As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextToSpeak { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextToSpeak : string with get, set" Usage="System.Speech.Synthesis.TtsEngine.TextFragment.TextToSpeak" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

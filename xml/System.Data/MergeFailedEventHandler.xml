@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MergeFailedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub MergeFailedEventHandler(sender As Object, e As MergeFailedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void MergeFailedEventHandler(System::Object ^ sender, MergeFailedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type MergeFailedEventHandler = delegate of obj * MergeFailedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.CompositeActivator" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function CompositeActivator(context As LifetimeContext, operation As CompositionOperation) As Object " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ CompositeActivator(LifetimeContext ^ context, CompositionOperation ^ operation);" />
+  <TypeSignature Language="F#" Value="type CompositeActivator = delegate of LifetimeContext * CompositionOperation -&gt; obj" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Hosting</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewGroupCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewGroupCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewGroupCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type ListViewGroupCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.Add(System.Windows.Forms.ListViewGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (group As ListViewGroup) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Forms::ListViewGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Forms.ListViewGroup -&gt; int" Usage="listViewGroupCollection.Add group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (key As String, headerText As String) As ListViewGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewGroup ^ Add(System::String ^ key, System::String ^ headerText);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; System.Windows.Forms.ListViewGroup" Usage="listViewGroupCollection.Add (key, headerText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.AddRange(System.Windows.Forms.ListViewGroup[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (groups As ListViewGroup())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Windows::Forms::ListViewGroup ^&gt; ^ groups);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ListViewGroup[] -&gt; unit" Usage="listViewGroupCollection.AddRange groups" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.AddRange(System.Windows.Forms.ListViewGroupCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (groups As ListViewGroupCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Windows::Forms::ListViewGroupCollection ^ groups);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ListViewGroupCollection -&gt; unit" Usage="listViewGroupCollection.AddRange groups" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="listViewGroupCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -277,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.Contains(System.Windows.Forms.ListViewGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As ListViewGroup) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::ListViewGroup ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.ListViewGroup -&gt; bool" Usage="listViewGroupCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -309,6 +316,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="listViewGroupCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroupCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.ListViewGroupCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -374,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listViewGroupCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -405,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.IndexOf(System.Windows.Forms.ListViewGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As ListViewGroup) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::ListViewGroup ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.ListViewGroup -&gt; int" Usage="listViewGroupCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -437,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.Insert(System.Int32,System.Windows.Forms.ListViewGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, group As ListViewGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Forms::ListViewGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.ListViewGroup -&gt; unit" Usage="listViewGroupCollection.Insert (index, group)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -481,6 +493,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroupCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ListViewGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewGroup ^ default[int] { System::Windows::Forms::ListViewGroup ^ get(int index); void set(int index, System::Windows::Forms::ListViewGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.ListViewGroup with get, set" Usage="System.Windows.Forms.ListViewGroupCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -514,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroupCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As ListViewGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewGroup ^ default[System::String ^] { System::Windows::Forms::ListViewGroup ^ get(System::String ^ key); void set(System::String ^ key, System::Windows::Forms::ListViewGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.ListViewGroup with get, set" Usage="System.Windows.Forms.ListViewGroupCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -538,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.Remove(System.Windows.Forms.ListViewGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (group As ListViewGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Forms::ListViewGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Forms.ListViewGroup -&gt; unit" Usage="listViewGroupCollection.Remove group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -571,6 +586,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroupCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="listViewGroupCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -606,6 +622,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroupCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListViewGroupCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -630,6 +647,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroupCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListViewGroupCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -776,6 +794,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroupCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListViewGroupCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -800,6 +819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroupCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListViewGroupCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -824,6 +844,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroupCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListViewGroupCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

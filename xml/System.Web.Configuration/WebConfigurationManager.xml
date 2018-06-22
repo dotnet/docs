@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebConfigurationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class WebConfigurationManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebConfigurationManager abstract sealed" />
+  <TypeSignature Language="F#" Value="type WebConfigurationManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebConfigurationManager.AppSettings" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppSettings As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Specialized::NameValueCollection ^ AppSettings { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppSettings : System.Collections.Specialized.NameValueCollection" Usage="System.Web.Configuration.WebConfigurationManager.AppSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebConfigurationManager.ConnectionStrings" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ConnectionStrings As ConnectionStringSettingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Configuration::ConnectionStringSettingsCollection ^ ConnectionStrings { System::Configuration::ConnectionStringSettingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionStrings : System.Configuration.ConnectionStringSettingsCollection" Usage="System.Web.Configuration.WebConfigurationManager.ConnectionStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.GetSection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSection (sectionName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetSection(System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="static member GetSection : string -&gt; obj" Usage="System.Web.Configuration.WebConfigurationManager.GetSection sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.GetSection(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSection (sectionName As String, path As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetSection(System::String ^ sectionName, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member GetSection : string * string -&gt; obj" Usage="System.Web.Configuration.WebConfigurationManager.GetSection (sectionName, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -277,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetWebApplicationSection (sectionName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetWebApplicationSection(System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="static member GetWebApplicationSection : string -&gt; obj" Usage="System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -339,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration () As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMachineConfiguration();" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : unit -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -377,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration (locationSubPath As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMachineConfiguration(System::String ^ locationSubPath);" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration locationSubPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -418,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration (locationSubPath As String, server As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMachineConfiguration(System::String ^ locationSubPath, System::String ^ server);" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration (locationSubPath, server)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -461,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration(System.String,System.String,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration (locationSubPath As String, server As String, userToken As IntPtr) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMachineConfiguration(System::String ^ locationSubPath, System::String ^ server, IntPtr userToken);" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : string * string * nativeint -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration (locationSubPath, server, userToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -511,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration (locationSubPath As String, server As String, userName As String, password As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMachineConfiguration(System::String ^ locationSubPath, System::String ^ server, System::String ^ userName, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : string * string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration (locationSubPath, server, userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -569,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedMachineConfiguration(System.Configuration.ConfigurationFileMap)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedMachineConfiguration (fileMap As ConfigurationFileMap) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMappedMachineConfiguration(System::Configuration::ConfigurationFileMap ^ fileMap);" />
+      <MemberSignature Language="F#" Value="static member OpenMappedMachineConfiguration : System.Configuration.ConfigurationFileMap -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedMachineConfiguration fileMap" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -596,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedMachineConfiguration(System.Configuration.ConfigurationFileMap,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedMachineConfiguration (fileMap As ConfigurationFileMap, locationSubPath As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMappedMachineConfiguration(System::Configuration::ConfigurationFileMap ^ fileMap, System::String ^ locationSubPath);" />
+      <MemberSignature Language="F#" Value="static member OpenMappedMachineConfiguration : System.Configuration.ConfigurationFileMap * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedMachineConfiguration (fileMap, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -652,6 +665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration(System.Web.Configuration.WebConfigurationFileMap,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedWebConfiguration (fileMap As WebConfigurationFileMap, path As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMappedWebConfiguration(System::Web::Configuration::WebConfigurationFileMap ^ fileMap, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member OpenMappedWebConfiguration : System.Web.Configuration.WebConfigurationFileMap * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration (fileMap, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -703,6 +717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration(System.Web.Configuration.WebConfigurationFileMap,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedWebConfiguration (fileMap As WebConfigurationFileMap, path As String, site As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMappedWebConfiguration(System::Web::Configuration::WebConfigurationFileMap ^ fileMap, System::String ^ path, System::String ^ site);" />
+      <MemberSignature Language="F#" Value="static member OpenMappedWebConfiguration : System.Web.Configuration.WebConfigurationFileMap * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration (fileMap, path, site)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -751,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration(System.Web.Configuration.WebConfigurationFileMap,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedWebConfiguration (fileMap As WebConfigurationFileMap, path As String, site As String, locationSubPath As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMappedWebConfiguration(System::Web::Configuration::WebConfigurationFileMap ^ fileMap, System::String ^ path, System::String ^ site, System::String ^ locationSubPath);" />
+      <MemberSignature Language="F#" Value="static member OpenMappedWebConfiguration : System.Web.Configuration.WebConfigurationFileMap * string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenMappedWebConfiguration (fileMap, path, site, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -812,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenWebConfiguration(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -853,6 +870,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenWebConfiguration(System::String ^ path, System::String ^ site);" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -896,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String, locationSubPath As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenWebConfiguration(System::String ^ path, System::String ^ site, System::String ^ locationSubPath);" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -941,6 +960,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String, locationSubPath As String, server As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenWebConfiguration(System::String ^ path, System::String ^ site, System::String ^ locationSubPath, System::String ^ server);" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site, locationSubPath, server)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -989,6 +1009,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String,System.String,System.String,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String, locationSubPath As String, server As String, userToken As IntPtr) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenWebConfiguration(System::String ^ path, System::String ^ site, System::String ^ locationSubPath, System::String ^ server, IntPtr userToken);" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string * string * string * nativeint -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site, locationSubPath, server, userToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1045,6 +1066,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWebConfiguration (path As String, site As String, locationSubPath As String, server As String, userName As String, password As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenWebConfiguration(System::String ^ path, System::String ^ site, System::String ^ locationSubPath, System::String ^ server, System::String ^ userName, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="static member OpenWebConfiguration : string * string * string * string * string * string -&gt; System.Configuration.Configuration" Usage="System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration (path, site, locationSubPath, server, userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

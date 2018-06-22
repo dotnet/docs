@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageRelationshipSelector" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PackageRelationshipSelector" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackageRelationshipSelector sealed" />
+  <TypeSignature Language="F#" Value="type PackageRelationshipSelector = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri, selectorType As PackageRelationshipSelectorType, selectionCriteria As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PackageRelationshipSelector(Uri ^ sourceUri, System::IO::Packaging::PackageRelationshipSelectorType selectorType, System::String ^ selectionCriteria);" />
+      <MemberSignature Language="F#" Value="new System.IO.Packaging.PackageRelationshipSelector : Uri * System.IO.Packaging.PackageRelationshipSelectorType * string -&gt; System.IO.Packaging.PackageRelationshipSelector" Usage="new System.IO.Packaging.PackageRelationshipSelector (sourceUri, selectorType, selectionCriteria)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class System.IO.Packaging.PackageRelationship&gt; Select(class System.IO.Packaging.Package package) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageRelationshipSelector.Select(System.IO.Packaging.Package)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;System::IO::Packaging::PackageRelationship ^&gt; ^ Select(System::IO::Packaging::Package ^ package);" />
+      <MemberSignature Language="F#" Value="member this.Select : System.IO.Packaging.Package -&gt; System.Collections.Generic.List&lt;System.IO.Packaging.PackageRelationship&gt;" Usage="packageRelationshipSelector.Select package" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionCriteria As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectionCriteria { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionCriteria : string" Usage="System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectorType As PackageRelationshipSelectorType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::PackageRelationshipSelectorType SelectorType { System::IO::Packaging::PackageRelationshipSelectorType get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectorType : System.IO.Packaging.PackageRelationshipSelectorType" Usage="System.IO.Packaging.PackageRelationshipSelector.SelectorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationshipSelector.SourceUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : Uri" Usage="System.IO.Packaging.PackageRelationshipSelector.SourceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

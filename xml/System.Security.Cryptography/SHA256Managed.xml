@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SHA256Managed" />
   <TypeSignature Language="VB.NET" Value="Public Class SHA256Managed&#xA;Inherits SHA256" />
   <TypeSignature Language="C++ CLI" Value="public ref class SHA256Managed : System::Security::Cryptography::SHA256" />
+  <TypeSignature Language="F#" Value="type SHA256Managed = class&#xA;    inherit SHA256" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sHA256Managed.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!SHA256Managed ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="sHA256Managed.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.HashCore(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub HashCore (source As ReadOnlySpan(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="override this.HashCore : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="sHA256Managed.HashCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.HashFinal" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
+      <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="sHA256Managed.HashFinal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -266,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="sHA256Managed.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -305,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function TryHashFinal (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryHashFinal(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TryHashFinal : Span&lt;byte&gt; *  -&gt; bool" Usage="sHA256Managed.TryHashFinal (destination, bytesWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.OrElse" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OrElse&#xA;Inherits Activity(Of Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public ref class OrElse sealed : System::Activities::Activity&lt;bool&gt;" />
+  <TypeSignature Language="F#" Value="type OrElse = class&#xA;    inherit Activity&lt;bool&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.OrElse.CacheMetadata(System.Activities.ActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As ActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::ActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.ActivityMetadata -&gt; unit" Usage="orElse.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.OrElse.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Activity(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;bool&gt; ^ Left { System::Activities::Activity&lt;bool&gt; ^ get(); void set(System::Activities::Activity&lt;bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : System.Activities.Activity&lt;bool&gt; with get, set" Usage="System.Activities.Expressions.OrElse.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.OrElse.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.UpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As UpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::UpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.UpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="orElse.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.OrElse.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As Activity(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;bool&gt; ^ Right { System::Activities::Activity&lt;bool&gt; ^ get(); void set(System::Activities::Activity&lt;bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Right : System.Activities.Activity&lt;bool&gt; with get, set" Usage="System.Activities.Expressions.OrElse.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GroupItem" />
   <TypeSignature Language="VB.NET" Value="Public Class GroupItem&#xA;Inherits ContentControl&#xA;Implements IContainItemStorage, IHierarchicalVirtualizationAndScrollInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class GroupItem : System::Windows::Controls::ContentControl, System::Windows::Controls::Primitives::IContainItemStorage, System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo" />
+  <TypeSignature Language="F#" Value="type GroupItem = class&#xA;    inherit ContentControl&#xA;    interface IHierarchicalVirtualizationAndScrollInfo&#xA;    interface IContainItemStorage" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="groupItem.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="groupItem.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="groupItem.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -264,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#Constraints" />
       <MemberSignature Language="VB.NET" Value=" Property Constraints As HierarchicalVirtualizationConstraints Implements IHierarchicalVirtualizationAndScrollInfo.Constraints" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationConstraints System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints { System::Windows::Controls::HierarchicalVirtualizationConstraints get(); void set(System::Windows::Controls::HierarchicalVirtualizationConstraints value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.GroupItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints</InterfaceMember>
@@ -294,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#HeaderDesiredSizes" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HeaderDesiredSizes As HierarchicalVirtualizationHeaderDesiredSizes Implements IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.GroupItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes</InterfaceMember>
@@ -324,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#InBackgroundLayout" />
       <MemberSignature Language="VB.NET" Value=" Property InBackgroundLayout As Boolean Implements IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.GroupItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout</InterfaceMember>
@@ -355,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#ItemDesiredSizes" />
       <MemberSignature Language="VB.NET" Value=" Property ItemDesiredSizes As HierarchicalVirtualizationItemDesiredSizes Implements IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes get(); void set(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.GroupItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes</InterfaceMember>
@@ -385,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#ItemsHost" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ItemsHost As Panel Implements IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::Panel ^ System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost { System::Windows::Controls::Panel ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.GroupItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost</InterfaceMember>
@@ -415,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#MustDisableVirtualization" />
       <MemberSignature Language="VB.NET" Value=" Property MustDisableVirtualization As Boolean Implements IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.GroupItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization</InterfaceMember>

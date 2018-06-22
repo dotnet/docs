@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpRuntime" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpRuntime" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpRuntime sealed" />
+  <TypeSignature Language="F#" Value="type HttpRuntime = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.AppDomainAppId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppDomainAppId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AppDomainAppId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppDomainAppId : string" Usage="System.Web.HttpRuntime.AppDomainAppId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.AppDomainAppPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppDomainAppPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AppDomainAppPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppDomainAppPath : string" Usage="System.Web.HttpRuntime.AppDomainAppPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.AppDomainAppVirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppDomainAppVirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AppDomainAppVirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppDomainAppVirtualPath : string" Usage="System.Web.HttpRuntime.AppDomainAppVirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.AppDomainId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppDomainId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AppDomainId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppDomainId : string" Usage="System.Web.HttpRuntime.AppDomainId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.AspClientScriptPhysicalPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AspClientScriptPhysicalPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AspClientScriptPhysicalPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AspClientScriptPhysicalPath : string" Usage="System.Web.HttpRuntime.AspClientScriptPhysicalPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.AspClientScriptVirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AspClientScriptVirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AspClientScriptVirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AspClientScriptVirtualPath : string" Usage="System.Web.HttpRuntime.AspClientScriptVirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.AspInstallDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AspInstallDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AspInstallDirectory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AspInstallDirectory : string" Usage="System.Web.HttpRuntime.AspInstallDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.BinDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BinDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ BinDirectory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinDirectory : string" Usage="System.Web.HttpRuntime.BinDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.Cache" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cache As Cache" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Caching::Cache ^ Cache { System::Web::Caching::Cache ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cache : System.Web.Caching.Cache" Usage="System.Web.HttpRuntime.Cache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRuntime.Close" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Close();" />
+      <MemberSignature Language="F#" Value="static member Close : unit -&gt; unit" Usage="System.Web.HttpRuntime.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -291,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.ClrInstallDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClrInstallDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ClrInstallDirectory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClrInstallDirectory : string" Usage="System.Web.HttpRuntime.ClrInstallDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -311,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.CodegenDir" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CodegenDir As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CodegenDir { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodegenDir : string" Usage="System.Web.HttpRuntime.CodegenDir" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -331,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRuntime.GetNamedPermissionSet" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamedPermissionSet () As NamedPermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::NamedPermissionSet ^ GetNamedPermissionSet();" />
+      <MemberSignature Language="F#" Value="static member GetNamedPermissionSet : unit -&gt; System.Security.NamedPermissionSet" Usage="System.Web.HttpRuntime.GetNamedPermissionSet " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -359,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.IISVersion" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IISVersion As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Version ^ IISVersion { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IISVersion : Version" Usage="System.Web.HttpRuntime.IISVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -386,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.IsOnUNCShare" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsOnUNCShare As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsOnUNCShare { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOnUNCShare : bool" Usage="System.Web.HttpRuntime.IsOnUNCShare" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -407,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.MachineConfigurationDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MachineConfigurationDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MachineConfigurationDirectory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MachineConfigurationDirectory : string" Usage="System.Web.HttpRuntime.MachineConfigurationDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -427,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRuntime.ProcessRequest(System.Web.HttpWorkerRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ProcessRequest (wr As HttpWorkerRequest)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ProcessRequest(System::Web::HttpWorkerRequest ^ wr);" />
+      <MemberSignature Language="F#" Value="static member ProcessRequest : System.Web.HttpWorkerRequest -&gt; unit" Usage="System.Web.HttpRuntime.ProcessRequest wr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -459,6 +477,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.TargetFramework" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TargetFramework As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Version ^ TargetFramework { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFramework : Version" Usage="System.Web.HttpRuntime.TargetFramework" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -488,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRuntime.UnloadAppDomain" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UnloadAppDomain ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnloadAppDomain();" />
+      <MemberSignature Language="F#" Value="static member UnloadAppDomain : unit -&gt; unit" Usage="System.Web.HttpRuntime.UnloadAppDomain " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -515,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.UsingIntegratedPipeline" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UsingIntegratedPipeline As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UsingIntegratedPipeline { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsingIntegratedPipeline : bool" Usage="System.Web.HttpRuntime.UsingIntegratedPipeline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -543,6 +564,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRuntime.WebObjectActivator" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property WebObjectActivator As IServiceProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property IServiceProvider ^ WebObjectActivator { IServiceProvider ^ get(); void set(IServiceProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WebObjectActivator : IServiceProvider with get, set" Usage="System.Web.HttpRuntime.WebObjectActivator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

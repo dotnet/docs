@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Port" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Port&#xA;Inherits NamedItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class Port sealed : System::Web::Services::Description::NamedItem" />
+  <TypeSignature Language="F#" Value="type Port = class&#xA;    inherit NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Port.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Binding { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.Xml.XmlQualifiedName with get, set" Usage="System.Web.Services.Description.Port.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Port.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ Extensions { System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" Usage="System.Web.Services.Description.Port.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Port.Service" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Service As Service" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Service ^ Service { System::Web::Services::Description::Service ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Service : System.Web.Services.Description.Service" Usage="System.Web.Services.Description.Port.Service" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

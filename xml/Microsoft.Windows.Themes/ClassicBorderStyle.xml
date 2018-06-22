@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ClassicBorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ClassicBorderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ClassicBorderStyle" />
+  <TypeSignature Language="F#" Value="type ClassicBorderStyle = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Classic</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.AltPressed" />
       <MemberSignature Language="VB.NET" Value="AltPressed" />
       <MemberSignature Language="C++ CLI" Value="AltPressed" />
+      <MemberSignature Language="F#" Value="AltPressed = 15" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.AltPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.AltRaised" />
       <MemberSignature Language="VB.NET" Value="AltRaised" />
       <MemberSignature Language="C++ CLI" Value="AltRaised" />
+      <MemberSignature Language="F#" Value="AltRaised = 14" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.AltRaised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Etched" />
       <MemberSignature Language="VB.NET" Value="Etched" />
       <MemberSignature Language="C++ CLI" Value="Etched" />
+      <MemberSignature Language="F#" Value="Etched = 5" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.Etched" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.HorizontalLine" />
       <MemberSignature Language="VB.NET" Value="HorizontalLine" />
       <MemberSignature Language="C++ CLI" Value="HorizontalLine" />
+      <MemberSignature Language="F#" Value="HorizontalLine = 6" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.HorizontalLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RadioButton" />
       <MemberSignature Language="VB.NET" Value="RadioButton" />
       <MemberSignature Language="C++ CLI" Value="RadioButton" />
+      <MemberSignature Language="F#" Value="RadioButton = 16" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.RadioButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Raised" />
       <MemberSignature Language="VB.NET" Value="Raised" />
       <MemberSignature Language="C++ CLI" Value="Raised" />
+      <MemberSignature Language="F#" Value="Raised = 1" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.Raised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RaisedFocused" />
       <MemberSignature Language="VB.NET" Value="RaisedFocused" />
       <MemberSignature Language="C++ CLI" Value="RaisedFocused" />
+      <MemberSignature Language="F#" Value="RaisedFocused = 3" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.RaisedFocused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RaisedPressed" />
       <MemberSignature Language="VB.NET" Value="RaisedPressed" />
       <MemberSignature Language="C++ CLI" Value="RaisedPressed" />
+      <MemberSignature Language="F#" Value="RaisedPressed = 2" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.RaisedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -193,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Sunken" />
       <MemberSignature Language="VB.NET" Value="Sunken" />
       <MemberSignature Language="C++ CLI" Value="Sunken" />
+      <MemberSignature Language="F#" Value="Sunken = 4" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.Sunken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -212,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabBottom" />
       <MemberSignature Language="VB.NET" Value="TabBottom" />
       <MemberSignature Language="C++ CLI" Value="TabBottom" />
+      <MemberSignature Language="F#" Value="TabBottom = 11" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.TabBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -231,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabLeft" />
       <MemberSignature Language="VB.NET" Value="TabLeft" />
       <MemberSignature Language="C++ CLI" Value="TabLeft" />
+      <MemberSignature Language="F#" Value="TabLeft = 10" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.TabLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -250,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabRight" />
       <MemberSignature Language="VB.NET" Value="TabRight" />
       <MemberSignature Language="C++ CLI" Value="TabRight" />
+      <MemberSignature Language="F#" Value="TabRight = 8" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.TabRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -269,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabTop" />
       <MemberSignature Language="VB.NET" Value="TabTop" />
       <MemberSignature Language="C++ CLI" Value="TabTop" />
+      <MemberSignature Language="F#" Value="TabTop = 9" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.TabTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -288,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.ThinPressed" />
       <MemberSignature Language="VB.NET" Value="ThinPressed" />
       <MemberSignature Language="C++ CLI" Value="ThinPressed" />
+      <MemberSignature Language="F#" Value="ThinPressed = 13" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.ThinPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -307,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.ThinRaised" />
       <MemberSignature Language="VB.NET" Value="ThinRaised" />
       <MemberSignature Language="C++ CLI" Value="ThinRaised" />
+      <MemberSignature Language="F#" Value="ThinRaised = 12" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.ThinRaised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -326,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.VerticalLine" />
       <MemberSignature Language="VB.NET" Value="VerticalLine" />
       <MemberSignature Language="C++ CLI" Value="VerticalLine" />
+      <MemberSignature Language="F#" Value="VerticalLine = 7" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.VerticalLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>

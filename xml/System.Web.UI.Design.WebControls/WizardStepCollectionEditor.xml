@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WizardStepCollectionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class WizardStepCollectionEditor&#xA;Inherits CollectionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class WizardStepCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
+  <TypeSignature Language="F#" Value="type WizardStepCollectionEditor = class&#xA;    inherit CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardStepCollectionEditor.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WizardStepCollectionEditor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.WizardStepCollectionEditor : Type -&gt; System.Web.UI.Design.WebControls.WizardStepCollectionEditor" Usage="new System.Web.UI.Design.WebControls.WizardStepCollectionEditor type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CanSelectMultipleInstances" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanSelectMultipleInstances () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanSelectMultipleInstances();" />
+      <MemberSignature Language="F#" Value="override this.CanSelectMultipleInstances : unit -&gt; bool" Usage="wizardStepCollectionEditor.CanSelectMultipleInstances " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CreateCollectionForm" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionForm () As CollectionEditor.CollectionForm" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ComponentModel::Design::CollectionEditor::CollectionForm ^ CreateCollectionForm();" />
+      <MemberSignature Language="F#" Value="override this.CreateCollectionForm : unit -&gt; System.ComponentModel.Design.CollectionEditor.CollectionForm" Usage="wizardStepCollectionEditor.CreateCollectionForm " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CreateInstance(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstance (itemType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateInstance(Type ^ itemType);" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : Type -&gt; obj" Usage="wizardStepCollectionEditor.CreateInstance itemType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CreateNewItemTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewItemTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ CreateNewItemTypes();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewItemTypes : unit -&gt; Type[]" Usage="wizardStepCollectionEditor.CreateNewItemTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

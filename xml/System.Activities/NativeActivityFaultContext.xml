@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.NativeActivityFaultContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NativeActivityFaultContext&#xA;Inherits NativeActivityContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class NativeActivityFaultContext sealed : System::Activities::NativeActivityContext" />
+  <TypeSignature Language="F#" Value="type NativeActivityFaultContext = class&#xA;    inherit NativeActivityContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityFaultContext.HandleFault" />
       <MemberSignature Language="VB.NET" Value="Public Sub HandleFault ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void HandleFault();" />
+      <MemberSignature Language="F#" Value="member this.HandleFault : unit -&gt; unit" Usage="nativeActivityFaultContext.HandleFault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

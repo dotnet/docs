@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" />
   <TypeSignature Language="VB.NET" Value="Public Class NoMatchingPrincipalException&#xA;Inherits PrincipalException" />
   <TypeSignature Language="C++ CLI" Value="public ref class NoMatchingPrincipalException : System::DirectoryServices::AccountManagement::PrincipalException" />
+  <TypeSignature Language="F#" Value="type NoMatchingPrincipalException = class&#xA;    inherit PrincipalException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NoMatchingPrincipalException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException : string -&gt; System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" Usage="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NoMatchingPrincipalException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" Usage="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NoMatchingPrincipalException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException : string * Exception -&gt; System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" Usage="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

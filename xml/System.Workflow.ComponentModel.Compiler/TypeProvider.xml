@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.TypeProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeProvider&#xA;Implements IDisposable, IServiceProvider, ITypeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeProvider sealed : IDisposable, IServiceProvider, System::Workflow::ComponentModel::Compiler::ITypeProvider" />
+  <TypeSignature Language="F#" Value="type TypeProvider = class&#xA;    interface ITypeProvider&#xA;    interface IServiceProvider&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeProvider(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.TypeProvider : IServiceProvider -&gt; System.Workflow.ComponentModel.Compiler.TypeProvider" Usage="new System.Workflow.ComponentModel.Compiler.TypeProvider serviceProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAssembly(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="member this.AddAssembly : System.Reflection.Assembly -&gt; unit" Usage="typeProvider.AddAssembly assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAssemblyReference (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAssemblyReference(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.AddAssemblyReference : string -&gt; unit" Usage="typeProvider.AddAssemblyReference path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCodeCompileUnit(class System.CodeDom.CodeCompileUnit codeCompileUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddCodeCompileUnit(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCodeCompileUnit(System::CodeDom::CodeCompileUnit ^ codeCompileUnit);" />
+      <MemberSignature Language="F#" Value="member this.AddCodeCompileUnit : System.CodeDom.CodeCompileUnit -&gt; unit" Usage="typeProvider.AddCodeCompileUnit codeCompileUnit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.AssemblyNameResolver" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyNameResolver As Func(Of Type, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;Type ^, System::String ^&gt; ^ AssemblyNameResolver { Func&lt;Type ^, System::String ^&gt; ^ get(); void set(Func&lt;Type ^, System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyNameResolver : Func&lt;Type, string&gt; with get, set" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.AssemblyNameResolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="typeProvider.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -209,6 +216,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAssemblyName(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetAssemblyName(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAssemblyName(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetAssemblyName : Type -&gt; string" Usage="typeProvider.GetAssemblyName type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetEnumNames(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnumNames (enumType As Type) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetEnumNames(Type ^ enumType);" />
+      <MemberSignature Language="F#" Value="static member GetEnumNames : Type -&gt; string[]" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.GetEnumNames enumType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -260,6 +269,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetEventHandlerType(class System.Reflection.EventInfo eventInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetEventHandlerType(System.Reflection.EventInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetEventHandlerType(System::Reflection::EventInfo ^ eventInfo);" />
+      <MemberSignature Language="F#" Value="static member GetEventHandlerType : System.Reflection.EventInfo -&gt; Type" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.GetEventHandlerType eventInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -286,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="typeProvider.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -326,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string -&gt; Type" Usage="typeProvider.GetType name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.Compiler.ITypeProvider.GetType(System.String)</InterfaceMember>
@@ -362,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String, throwOnError As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType(System::String ^ name, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string * bool -&gt; Type" Usage="typeProvider.GetType (name, throwOnError)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.Compiler.ITypeProvider.GetType(System.String,System.Boolean)</InterfaceMember>
@@ -402,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetTypes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetTypes();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypes : unit -&gt; Type[]&#xA;override this.GetTypes : unit -&gt; Type[]" Usage="typeProvider.GetTypes " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.Compiler.ITypeProvider.GetTypes</InterfaceMember>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.IsAssignable(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsAssignable (toType As Type, fromType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsAssignable(Type ^ toType, Type ^ fromType);" />
+      <MemberSignature Language="F#" Value="static member IsAssignable : Type * Type -&gt; bool" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.IsAssignable (toType, fromType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -453,6 +468,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEnum(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.IsEnum(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEnum(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member IsEnum : Type -&gt; bool" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.IsEnum type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -480,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.IsSubclassOf(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSubclassOf (subclass As Type, superClass As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSubclassOf(Type ^ subclass, Type ^ superClass);" />
+      <MemberSignature Language="F#" Value="static member IsSubclassOf : Type * Type -&gt; bool" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.IsSubclassOf (subclass, superClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -507,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.IsSupportedProperty(System.Reflection.PropertyInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSupportedProperty (property As PropertyInfo, declaringInstance As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupportedProperty(System::Reflection::PropertyInfo ^ property, System::Object ^ declaringInstance);" />
+      <MemberSignature Language="F#" Value="member this.IsSupportedProperty : System.Reflection.PropertyInfo * obj -&gt; bool" Usage="typeProvider.IsSupportedProperty (property, declaringInstance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -534,6 +552,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.IsSupportedPropertyResolver" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSupportedPropertyResolver As Func(Of PropertyInfo, Object, Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Reflection::PropertyInfo ^, System::Object ^, bool&gt; ^ IsSupportedPropertyResolver { Func&lt;System::Reflection::PropertyInfo ^, System::Object ^, bool&gt; ^ get(); void set(Func&lt;System::Reflection::PropertyInfo ^, System::Object ^, bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupportedPropertyResolver : Func&lt;System.Reflection.PropertyInfo, obj, bool&gt; with get, set" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.IsSupportedPropertyResolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -554,6 +573,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.LocalAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalAssembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ LocalAssembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalAssembly : System.Reflection.Assembly" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.LocalAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.ITypeProvider.LocalAssembly</InterfaceMember>
@@ -577,6 +597,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.ReferencedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedAssemblies As ICollection(Of Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Reflection::Assembly ^&gt; ^ ReferencedAssemblies { System::Collections::Generic::ICollection&lt;System::Reflection::Assembly ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblies : System.Collections.Generic.ICollection&lt;System.Reflection.Assembly&gt;" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.ReferencedAssemblies" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.ITypeProvider.ReferencedAssemblies</InterfaceMember>
@@ -599,6 +620,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RefreshCodeCompileUnit(class System.CodeDom.CodeCompileUnit codeCompileUnit, class System.EventHandler refresher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.RefreshCodeCompileUnit(System.CodeDom.CodeCompileUnit,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshCodeCompileUnit(System::CodeDom::CodeCompileUnit ^ codeCompileUnit, EventHandler ^ refresher);" />
+      <MemberSignature Language="F#" Value="member this.RefreshCodeCompileUnit : System.CodeDom.CodeCompileUnit * EventHandler -&gt; unit" Usage="typeProvider.RefreshCodeCompileUnit (codeCompileUnit, refresher)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -633,6 +655,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.RemoveAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAssembly(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAssembly : System.Reflection.Assembly -&gt; unit" Usage="typeProvider.RemoveAssembly assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -665,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.RemoveAssemblyReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAssemblyReference (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAssemblyReference(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAssemblyReference : string -&gt; unit" Usage="typeProvider.RemoveAssemblyReference path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -696,6 +720,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCodeCompileUnit(class System.CodeDom.CodeCompileUnit codeCompileUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.RemoveCodeCompileUnit(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCodeCompileUnit(System::CodeDom::CodeCompileUnit ^ codeCompileUnit);" />
+      <MemberSignature Language="F#" Value="member this.RemoveCodeCompileUnit : System.CodeDom.CodeCompileUnit -&gt; unit" Usage="typeProvider.RemoveCodeCompileUnit codeCompileUnit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -727,6 +752,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLocalAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.SetLocalAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalAssembly(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="member this.SetLocalAssembly : System.Reflection.Assembly -&gt; unit" Usage="typeProvider.SetLocalAssembly assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -757,6 +783,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.TypeLoadErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeLoadErrors As IDictionary(Of Object, Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Object ^, Exception ^&gt; ^ TypeLoadErrors { System::Collections::Generic::IDictionary&lt;System::Object ^, Exception ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeLoadErrors : System.Collections.Generic.IDictionary&lt;obj, Exception&gt;" Usage="System.Workflow.ComponentModel.Compiler.TypeProvider.TypeLoadErrors" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.ITypeProvider.TypeLoadErrors</InterfaceMember>
@@ -787,6 +814,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Compiler.TypeProvider.TypeLoadErrorsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TypeLoadErrorsChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ TypeLoadErrorsChanged;" />
+      <MemberSignature Language="F#" Value="member this.TypeLoadErrorsChanged : EventHandler " Usage="member this.TypeLoadErrorsChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Workflow.ComponentModel.Compiler.ITypeProvider.TypeLoadErrorsChanged</InterfaceMember>
@@ -809,6 +837,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TypesChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ TypesChanged;" />
+      <MemberSignature Language="F#" Value="member this.TypesChanged : EventHandler " Usage="member this.TypesChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Workflow.ComponentModel.Compiler.ITypeProvider.TypesChanged</InterfaceMember>

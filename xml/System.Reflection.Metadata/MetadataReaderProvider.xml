@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MetadataReaderProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataReaderProvider&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataReaderProvider sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type MetadataReaderProvider = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="metadataReaderProvider.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.FromMetadataImage(System.Collections.Immutable.ImmutableArray{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromMetadataImage (image As ImmutableArray(Of Byte)) As MetadataReaderProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Metadata::MetadataReaderProvider ^ FromMetadataImage(System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; image);" />
+      <MemberSignature Language="F#" Value="static member FromMetadataImage : System.Collections.Immutable.ImmutableArray&lt;byte&gt; -&gt; System.Reflection.Metadata.MetadataReaderProvider" Usage="System.Reflection.Metadata.MetadataReaderProvider.FromMetadataImage image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Metadata.MetadataReaderProvider FromMetadataImage(unsigned int8* start, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.FromMetadataImage(System.Byte*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Metadata::MetadataReaderProvider ^ FromMetadataImage(System::Byte* start, int size);" />
+      <MemberSignature Language="F#" Value="static member FromMetadataImage : nativeptr&lt;byte&gt; * int -&gt; System.Reflection.Metadata.MetadataReaderProvider" Usage="System.Reflection.Metadata.MetadataReaderProvider.FromMetadataImage (start, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MetadataReaderProvider FromMetadataStream (System.IO.Stream stream, System.Reflection.Metadata.MetadataStreamOptions options = System.Reflection.Metadata.MetadataStreamOptions.Default, int size = 0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Metadata.MetadataReaderProvider FromMetadataStream(class System.IO.Stream stream, valuetype System.Reflection.Metadata.MetadataStreamOptions options, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.FromMetadataStream(System.IO.Stream,System.Reflection.Metadata.MetadataStreamOptions,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member FromMetadataStream : System.IO.Stream * System.Reflection.Metadata.MetadataStreamOptions * int -&gt; System.Reflection.Metadata.MetadataReaderProvider" Usage="System.Reflection.Metadata.MetadataReaderProvider.FromMetadataStream (stream, options, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.FromPortablePdbImage(System.Collections.Immutable.ImmutableArray{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromPortablePdbImage (image As ImmutableArray(Of Byte)) As MetadataReaderProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Metadata::MetadataReaderProvider ^ FromPortablePdbImage(System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; image);" />
+      <MemberSignature Language="F#" Value="static member FromPortablePdbImage : System.Collections.Immutable.ImmutableArray&lt;byte&gt; -&gt; System.Reflection.Metadata.MetadataReaderProvider" Usage="System.Reflection.Metadata.MetadataReaderProvider.FromPortablePdbImage image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Metadata.MetadataReaderProvider FromPortablePdbImage(unsigned int8* start, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.FromPortablePdbImage(System.Byte*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Metadata::MetadataReaderProvider ^ FromPortablePdbImage(System::Byte* start, int size);" />
+      <MemberSignature Language="F#" Value="static member FromPortablePdbImage : nativeptr&lt;byte&gt; * int -&gt; System.Reflection.Metadata.MetadataReaderProvider" Usage="System.Reflection.Metadata.MetadataReaderProvider.FromPortablePdbImage (start, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MetadataReaderProvider FromPortablePdbStream (System.IO.Stream stream, System.Reflection.Metadata.MetadataStreamOptions options = System.Reflection.Metadata.MetadataStreamOptions.Default, int size = 0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Metadata.MetadataReaderProvider FromPortablePdbStream(class System.IO.Stream stream, valuetype System.Reflection.Metadata.MetadataStreamOptions options, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.FromPortablePdbStream(System.IO.Stream,System.Reflection.Metadata.MetadataStreamOptions,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member FromPortablePdbStream : System.IO.Stream * System.Reflection.Metadata.MetadataStreamOptions * int -&gt; System.Reflection.Metadata.MetadataReaderProvider" Usage="System.Reflection.Metadata.MetadataReaderProvider.FromPortablePdbStream (stream, options, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -223,6 +231,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Metadata.MetadataReader GetMetadataReader(valuetype System.Reflection.Metadata.MetadataReaderOptions options, class System.Reflection.Metadata.MetadataStringDecoder utf8Decoder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.GetMetadataReader(System.Reflection.Metadata.MetadataReaderOptions,System.Reflection.Metadata.MetadataStringDecoder)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadataReader (Optional options As MetadataReaderOptions = System.Reflection.Metadata.MetadataReaderOptions.Default, Optional utf8Decoder As MetadataStringDecoder = null) As MetadataReader" />
+      <MemberSignature Language="F#" Value="member this.GetMetadataReader : System.Reflection.Metadata.MetadataReaderOptions * System.Reflection.Metadata.MetadataStringDecoder -&gt; System.Reflection.Metadata.MetadataReader" Usage="metadataReaderProvider.GetMetadataReader (options, utf8Decoder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

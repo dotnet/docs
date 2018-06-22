@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapQName&#xA;Implements ISoapXsd" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapQName sealed : System::Runtime::Remoting::Metadata::W3cXsd2001::ISoapXsd" />
+  <TypeSignature Language="F#" Value="type SoapQName = class&#xA;    interface ISoapXsd" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapQName(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName : string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName" Usage="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapQName(System::String ^ key, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName : string * string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName" Usage="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName (key, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String, name As String, namespaceValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapQName(System::String ^ key, System::String ^ name, System::String ^ namespaceValue);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName : string * string * string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName" Usage="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName (key, name, namespaceValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.GetXsdType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXsdType () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetXsdType();" />
+      <MemberSignature Language="F#" Value="abstract member GetXsdType : unit -&gt; string&#xA;override this.GetXsdType : unit -&gt; string" Usage="soapQName.GetXsdType " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd.GetXsdType</InterfaceMember>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.Key" />
       <MemberSignature Language="VB.NET" Value="Public Property Key As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : string with get, set" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -282,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As SoapQName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Metadata::W3cXsd2001::SoapQName ^ Parse(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.Parse value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -348,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="soapQName.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -380,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.XsdType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XsdType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XsdType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XsdType : string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName.XsdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

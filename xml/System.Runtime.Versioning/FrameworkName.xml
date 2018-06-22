@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.FrameworkName" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FrameworkName&#xA;Implements IEquatable(Of FrameworkName)" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkName sealed : IEquatable&lt;System::Runtime::Versioning::FrameworkName ^&gt;" />
+  <TypeSignature Language="F#" Value="type FrameworkName = class&#xA;    interface IEquatable&lt;FrameworkName&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (frameworkName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkName(System::String ^ frameworkName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Versioning.FrameworkName : string -&gt; System.Runtime.Versioning.FrameworkName" Usage="new System.Runtime.Versioning.FrameworkName frameworkName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifier, class System.Version version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.#ctor(System.String,System.Version)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkName(System::String ^ identifier, Version ^ version);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Versioning.FrameworkName : string * Version -&gt; System.Runtime.Versioning.FrameworkName" Usage="new System.Runtime.Versioning.FrameworkName (identifier, version)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifier, class System.Version version, string profile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.#ctor(System.String,System.Version,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkName(System::String ^ identifier, Version ^ version, System::String ^ profile);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Versioning.FrameworkName : string * Version * string -&gt; System.Runtime.Versioning.FrameworkName" Usage="new System.Runtime.Versioning.FrameworkName (identifier, version, profile)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -246,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="frameworkName.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -290,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.Equals(System.Runtime.Versioning.FrameworkName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As FrameworkName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Runtime::Versioning::FrameworkName ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Runtime.Versioning.FrameworkName -&gt; bool" Usage="frameworkName.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -343,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.FrameworkName.FullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.Runtime.Versioning.FrameworkName.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -388,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="frameworkName.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -421,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.FrameworkName.Identifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identifier As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Identifier { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identifier : string" Usage="System.Runtime.Versioning.FrameworkName.Identifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -460,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.op_Equality(System.Runtime.Versioning.FrameworkName,System.Runtime.Versioning.FrameworkName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As FrameworkName, right As FrameworkName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Runtime::Versioning::FrameworkName ^ left, System::Runtime::Versioning::FrameworkName ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Runtime.Versioning.FrameworkName * System.Runtime.Versioning.FrameworkName -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -516,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.op_Inequality(System.Runtime.Versioning.FrameworkName,System.Runtime.Versioning.FrameworkName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As FrameworkName, right As FrameworkName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Runtime::Versioning::FrameworkName ^ left, System::Runtime::Versioning::FrameworkName ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Runtime.Versioning.FrameworkName * System.Runtime.Versioning.FrameworkName -&gt; bool" Usage="System.Runtime.Versioning.FrameworkName.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -572,6 +583,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.FrameworkName.Profile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Profile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Profile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Profile : string" Usage="System.Runtime.Versioning.FrameworkName.Profile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -611,6 +623,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="frameworkName.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -657,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.FrameworkName.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version" Usage="System.Runtime.Versioning.FrameworkName.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

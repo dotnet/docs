@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.WebRequestModuleElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebRequestModuleElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebRequestModuleElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WebRequestModuleElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElement.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prefix As String, type As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebRequestModuleElement(System::String ^ prefix, System::String ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Net.Configuration.WebRequestModuleElement : string * string -&gt; System.Net.Configuration.WebRequestModuleElement" Usage="new System.Net.Configuration.WebRequestModuleElement (prefix, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prefix, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElement.#ctor(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebRequestModuleElement(System::String ^ prefix, Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Net.Configuration.WebRequestModuleElement : string * Type -&gt; System.Net.Configuration.WebRequestModuleElement" Usage="new System.Net.Configuration.WebRequestModuleElement (prefix, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebRequestModuleElement.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public Property Prefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string with get, set" Usage="System.Net.Configuration.WebRequestModuleElement.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebRequestModuleElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.WebRequestModuleElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebRequestModuleElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Net.Configuration.WebRequestModuleElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

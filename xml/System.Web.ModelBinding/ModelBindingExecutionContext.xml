@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBindingExecutionContext" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelBindingExecutionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelBindingExecutionContext" />
+  <TypeSignature Language="F#" Value="type ModelBindingExecutionContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBindingExecutionContext.#ctor(System.Web.HttpContextBase,System.Web.ModelBinding.ModelStateDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (httpContext As HttpContextBase, modelState As ModelStateDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelBindingExecutionContext(System::Web::HttpContextBase ^ httpContext, System::Web::ModelBinding::ModelStateDictionary ^ modelState);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelBindingExecutionContext : System.Web.HttpContextBase * System.Web.ModelBinding.ModelStateDictionary -&gt; System.Web.ModelBinding.ModelBindingExecutionContext" Usage="new System.Web.ModelBinding.ModelBindingExecutionContext (httpContext, modelState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBindingExecutionContext.GetService``1" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetService(Of TService) () As TService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TService&gt;&#xA; virtual TService GetService();" />
+      <MemberSignature Language="F#" Value="abstract member GetService : unit -&gt; 'Service&#xA;override this.GetService : unit -&gt; 'Service" Usage="modelBindingExecutionContext.GetService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingExecutionContext.HttpContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HttpContext As HttpContextBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpContextBase ^ HttpContext { System::Web::HttpContextBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HttpContext : System.Web.HttpContextBase" Usage="System.Web.ModelBinding.ModelBindingExecutionContext.HttpContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingExecutionContext.ModelState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ModelState As ModelStateDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::ModelBinding::ModelStateDictionary ^ ModelState { System::Web::ModelBinding::ModelStateDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelState : System.Web.ModelBinding.ModelStateDictionary" Usage="System.Web.ModelBinding.ModelBindingExecutionContext.ModelState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBindingExecutionContext.PublishService``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub PublishService(Of TService) (service As TService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TService&gt;&#xA; virtual void PublishService(TService service);" />
+      <MemberSignature Language="F#" Value="abstract member PublishService : 'Service -&gt; unit&#xA;override this.PublishService : 'Service -&gt; unit" Usage="modelBindingExecutionContext.PublishService service" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBindingExecutionContext.TryGetService``1" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetService(Of TService) () As TService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TService&gt;&#xA; virtual TService TryGetService();" />
+      <MemberSignature Language="F#" Value="abstract member TryGetService : unit -&gt; 'Service&#xA;override this.TryGetService : unit -&gt; 'Service" Usage="modelBindingExecutionContext.TryGetService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

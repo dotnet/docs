@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowCommandExtensionCallback" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowCommandExtensionCallback" />
+  <TypeSignature Language="F#" Value="type IWorkflowCommandExtensionCallback = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnWorkflowCommandLoaded(class System.Activities.Presentation.Hosting.CommandInfo commandInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback.OnWorkflowCommandLoaded(System.Activities.Presentation.Hosting.CommandInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnWorkflowCommandLoaded(System::Activities::Presentation::Hosting::CommandInfo ^ commandInfo);" />
+      <MemberSignature Language="F#" Value="abstract member OnWorkflowCommandLoaded : System.Activities.Presentation.Hosting.CommandInfo -&gt; unit" Usage="iWorkflowCommandExtensionCallback.OnWorkflowCommandLoaded commandInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

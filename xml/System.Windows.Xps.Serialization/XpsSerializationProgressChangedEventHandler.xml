@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub XpsSerializationProgressChangedEventHandler(sender As Object, e As XpsSerializationProgressChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void XpsSerializationProgressChangedEventHandler(System::Object ^ sender, XpsSerializationProgressChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type XpsSerializationProgressChangedEventHandler = delegate of obj * XpsSerializationProgressChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

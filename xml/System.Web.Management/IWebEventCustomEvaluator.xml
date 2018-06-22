@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.IWebEventCustomEvaluator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebEventCustomEvaluator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebEventCustomEvaluator" />
+  <TypeSignature Language="F#" Value="type IWebEventCustomEvaluator = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.IWebEventCustomEvaluator.CanFire(System.Web.Management.WebBaseEvent,System.Web.Management.RuleFiringRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanFire (raisedEvent As WebBaseEvent, record As RuleFiringRecord) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanFire(System::Web::Management::WebBaseEvent ^ raisedEvent, System::Web::Management::RuleFiringRecord ^ record);" />
+      <MemberSignature Language="F#" Value="abstract member CanFire : System.Web.Management.WebBaseEvent * System.Web.Management.RuleFiringRecord -&gt; bool" Usage="iWebEventCustomEvaluator.CanFire (raisedEvent, record)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

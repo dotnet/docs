@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardNavigationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum KeyboardNavigationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class KeyboardNavigationMode" />
+  <TypeSignature Language="F#" Value="type KeyboardNavigationMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Contained" />
       <MemberSignature Language="VB.NET" Value="Contained" />
       <MemberSignature Language="C++ CLI" Value="Contained" />
+      <MemberSignature Language="F#" Value="Contained = 4" Usage="System.Windows.Input.KeyboardNavigationMode.Contained" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="C++ CLI" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 0" Usage="System.Windows.Input.KeyboardNavigationMode.Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Cycle" />
       <MemberSignature Language="VB.NET" Value="Cycle" />
       <MemberSignature Language="C++ CLI" Value="Cycle" />
+      <MemberSignature Language="F#" Value="Cycle = 2" Usage="System.Windows.Input.KeyboardNavigationMode.Cycle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="C++ CLI" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 5" Usage="System.Windows.Input.KeyboardNavigationMode.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 3" Usage="System.Windows.Input.KeyboardNavigationMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Once" />
       <MemberSignature Language="VB.NET" Value="Once" />
       <MemberSignature Language="C++ CLI" Value="Once" />
+      <MemberSignature Language="F#" Value="Once = 1" Usage="System.Windows.Input.KeyboardNavigationMode.Once" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

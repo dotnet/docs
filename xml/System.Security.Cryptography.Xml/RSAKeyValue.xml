@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.RSAKeyValue" />
   <TypeSignature Language="VB.NET" Value="Public Class RSAKeyValue&#xA;Inherits KeyInfoClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class RSAKeyValue : System::Security::Cryptography::Xml::KeyInfoClause" />
+  <TypeSignature Language="F#" Value="type RSAKeyValue = class&#xA;    inherit KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.RSAKeyValue.#ctor(System.Security.Cryptography.RSA)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As RSA)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RSAKeyValue(System::Security::Cryptography::RSA ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.RSAKeyValue : System.Security.Cryptography.RSA -&gt; System.Security.Cryptography.Xml.RSAKeyValue" Usage="new System.Security.Cryptography.Xml.RSAKeyValue key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.RSAKeyValue.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="rSAKeyValue.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.RSAKeyValue.Key" />
       <MemberSignature Language="VB.NET" Value="Public Property Key As RSA" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::RSA ^ Key { System::Security::Cryptography::RSA ^ get(); void set(System::Security::Cryptography::RSA ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Security.Cryptography.RSA with get, set" Usage="System.Security.Cryptography.Xml.RSAKeyValue.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.RSAKeyValue.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="rSAKeyValue.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

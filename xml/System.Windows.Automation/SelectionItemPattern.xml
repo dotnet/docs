@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionItemPattern" />
   <TypeSignature Language="VB.NET" Value="Public Class SelectionItemPattern&#xA;Inherits BasePattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class SelectionItemPattern : System::Windows::Automation::BasePattern" />
+  <TypeSignature Language="F#" Value="type SelectionItemPattern = class&#xA;    inherit BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.SelectionItemPattern.AddToSelection" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddToSelection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToSelection();" />
+      <MemberSignature Language="F#" Value="member this.AddToSelection : unit -&gt; unit" Usage="selectionItemPattern.AddToSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionItemPattern.Cached" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As SelectionItemPattern.SelectionItemPatternInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::SelectionItemPattern::SelectionItemPatternInformation Cached { System::Windows::Automation::SelectionItemPattern::SelectionItemPatternInformation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cached : System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation" Usage="System.Windows.Automation.SelectionItemPattern.Cached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionItemPattern.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As SelectionItemPattern.SelectionItemPatternInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::SelectionItemPattern::SelectionItemPatternInformation Current { System::Windows::Automation::SelectionItemPattern::SelectionItemPatternInformation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation" Usage="System.Windows.Automation.SelectionItemPattern.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPattern.ElementAddedToSelectionEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ElementAddedToSelectionEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ ElementAddedToSelectionEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ElementAddedToSelectionEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SelectionItemPattern.ElementAddedToSelectionEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPattern.ElementRemovedFromSelectionEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ElementRemovedFromSelectionEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ ElementRemovedFromSelectionEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ElementRemovedFromSelectionEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SelectionItemPattern.ElementRemovedFromSelectionEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPattern.ElementSelectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ElementSelectedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ ElementSelectedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ElementSelectedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SelectionItemPattern.ElementSelectedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPattern.IsSelectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectedProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsSelectedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectedProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.SelectionItemPattern.IsSelectedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.SelectionItemPattern.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.SelectionItemPattern.RemoveFromSelection" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFromSelection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFromSelection();" />
+      <MemberSignature Language="F#" Value="member this.RemoveFromSelection : unit -&gt; unit" Usage="selectionItemPattern.RemoveFromSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -332,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.SelectionItemPattern.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="member this.Select : unit -&gt; unit" Usage="selectionItemPattern.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -362,6 +373,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionItemPattern.SelectionContainerProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionContainerProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ SelectionContainerProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionContainerProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.SelectionItemPattern.SelectionContainerProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

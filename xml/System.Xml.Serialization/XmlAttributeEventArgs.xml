@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAttributeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlAttributeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlAttributeEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type XmlAttributeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeEventArgs.Attr" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attr As XmlAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlAttribute ^ Attr { System::Xml::XmlAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attr : System.Xml.XmlAttribute" Usage="System.Xml.Serialization.XmlAttributeEventArgs.Attr" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeEventArgs.ExpectedAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpectedAttributes As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpectedAttributes { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpectedAttributes : string" Usage="System.Xml.Serialization.XmlAttributeEventArgs.ExpectedAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeEventArgs.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Xml.Serialization.XmlAttributeEventArgs.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeEventArgs.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Xml.Serialization.XmlAttributeEventArgs.LinePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeEventArgs.ObjectBeingDeserialized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectBeingDeserialized As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectBeingDeserialized { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectBeingDeserialized : obj" Usage="System.Xml.Serialization.XmlAttributeEventArgs.ObjectBeingDeserialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.PeekCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PeekCompletedEventHandler(sender As Object, e As PeekCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PeekCompletedEventHandler(System::Object ^ sender, PeekCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PeekCompletedEventHandler = delegate of obj * PeekCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

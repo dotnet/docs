@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ITypeLibExporterNameProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeLibExporterNameProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeLibExporterNameProvider" />
+  <TypeSignature Language="F#" Value="type ITypeLibExporterNameProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibExporterNameProvider.GetNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetNames();" />
+      <MemberSignature Language="F#" Value="abstract member GetNames : unit -&gt; string[]" Usage="iTypeLibExporterNameProvider.GetNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

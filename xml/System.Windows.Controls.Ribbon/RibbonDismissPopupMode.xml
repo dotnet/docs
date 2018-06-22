@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonDismissPopupMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RibbonDismissPopupMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class RibbonDismissPopupMode" />
+  <TypeSignature Language="F#" Value="type RibbonDismissPopupMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonDismissPopupMode.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 0" Usage="System.Windows.Controls.Ribbon.RibbonDismissPopupMode.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonDismissPopupMode.MousePhysicallyNotOver" />
       <MemberSignature Language="VB.NET" Value="MousePhysicallyNotOver" />
       <MemberSignature Language="C++ CLI" Value="MousePhysicallyNotOver" />
+      <MemberSignature Language="F#" Value="MousePhysicallyNotOver = 1" Usage="System.Windows.Controls.Ribbon.RibbonDismissPopupMode.MousePhysicallyNotOver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

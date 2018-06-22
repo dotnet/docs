@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IDataObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataObject" />
+  <TypeSignature Language="F#" Value="type IDataObject = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 DAdvise([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; pFormatetc, valuetype System.Runtime.InteropServices.ComTypes.ADVF advf, class System.Runtime.InteropServices.ComTypes.IAdviseSink adviseSink, [out] int32&amp; connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int DAdvise(System::Runtime::InteropServices::ComTypes::FORMATETC % pFormatetc, System::Runtime::InteropServices::ComTypes::ADVF advf, System::Runtime::InteropServices::ComTypes::IAdviseSink ^ adviseSink, [Runtime::InteropServices::Out] int % connection);" />
+      <MemberSignature Language="F#" Value="abstract member DAdvise :  * System.Runtime.InteropServices.ComTypes.ADVF * System.Runtime.InteropServices.ComTypes.IAdviseSink *  -&gt; int" Usage="iDataObject.DAdvise (pFormatetc, advf, adviseSink, connection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DUnadvise (connection As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DUnadvise(int connection);" />
+      <MemberSignature Language="F#" Value="abstract member DUnadvise : int -&gt; unit" Usage="iDataObject.DUnadvise connection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumDAdvise (ByRef enumAdvise As IEnumSTATDATA) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnumDAdvise([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumSTATDATA ^ % enumAdvise);" />
+      <MemberSignature Language="F#" Value="abstract member EnumDAdvise :  -&gt; int" Usage="iDataObject.EnumDAdvise enumAdvise" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumFormatEtc (direction As DATADIR) As IEnumFORMATETC" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::InteropServices::ComTypes::IEnumFORMATETC ^ EnumFormatEtc(System::Runtime::InteropServices::ComTypes::DATADIR direction);" />
+      <MemberSignature Language="F#" Value="abstract member EnumFormatEtc : System.Runtime.InteropServices.ComTypes.DATADIR -&gt; System.Runtime.InteropServices.ComTypes.IEnumFORMATETC" Usage="iDataObject.EnumFormatEtc direction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -273,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.FORMATETC@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCanonicalFormatEtc (ByRef formatIn As FORMATETC, ByRef formatOut As FORMATETC) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCanonicalFormatEtc(System::Runtime::InteropServices::ComTypes::FORMATETC % formatIn, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::FORMATETC % formatOut);" />
+      <MemberSignature Language="F#" Value="abstract member GetCanonicalFormatEtc :  *  -&gt; int" Usage="iDataObject.GetCanonicalFormatEtc (formatIn, formatOut)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -342,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetData (ByRef format As FORMATETC, ByRef medium As STGMEDIUM)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetData(System::Runtime::InteropServices::ComTypes::FORMATETC % format, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium);" />
+      <MemberSignature Language="F#" Value="abstract member GetData :  *  -&gt; unit" Usage="iDataObject.GetData (format, medium)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -384,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDataHere (ByRef format As FORMATETC, ByRef medium As STGMEDIUM)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDataHere(System::Runtime::InteropServices::ComTypes::FORMATETC % format, System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataHere :  *  -&gt; unit" Usage="iDataObject.GetDataHere (format, medium)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -426,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(System.Runtime.InteropServices.ComTypes.FORMATETC@)" />
       <MemberSignature Language="VB.NET" Value="Public Function QueryGetData (ByRef format As FORMATETC) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int QueryGetData(System::Runtime::InteropServices::ComTypes::FORMATETC % format);" />
+      <MemberSignature Language="F#" Value="abstract member QueryGetData :  -&gt; int" Usage="iDataObject.QueryGetData format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -497,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (ByRef formatIn As FORMATETC, ByRef medium As STGMEDIUM, release As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::Runtime::InteropServices::ComTypes::FORMATETC % formatIn, System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium, bool release);" />
+      <MemberSignature Language="F#" Value="abstract member SetData :  *  * bool -&gt; unit" Usage="iDataObject.SetData (formatIn, medium, release)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

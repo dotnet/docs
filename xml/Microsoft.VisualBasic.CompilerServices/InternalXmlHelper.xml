@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InternalXmlHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalXmlHelper sealed" />
+  <TypeSignature Language="F#" Value="type InternalXmlHelper = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.AttributeValue(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement},System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property AttributeValue(source As IEnumerable(Of XElement), name As XName) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AttributeValue[System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^, System::Xml::Linq::XName ^] { System::String ^ get(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::Xml::Linq::XName ^ name); void set(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::Xml::Linq::XName ^ name, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeValue(seq&lt;System.Xml.Linq.XElement&gt; * System.Xml.Linq.XName) : string with get, set" Usage="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.AttributeValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.AttributeValue(System.Xml.Linq.XElement,System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property AttributeValue(source As XElement, name As XName) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AttributeValue[System::Xml::Linq::XElement ^, System::Xml::Linq::XName ^] { System::String ^ get(System::Xml::Linq::XElement ^ source, System::Xml::Linq::XName ^ name); void set(System::Xml::Linq::XElement ^ source, System::Xml::Linq::XName ^ name, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeValue(System.Xml.Linq.XElement * System.Xml.Linq.XName) : string with get, set" Usage="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.AttributeValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.CreateAttribute(System.Xml.Linq.XName,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAttribute (name As XName, value As Object) As XAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XAttribute ^ CreateAttribute(System::Xml::Linq::XName ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member CreateAttribute : System.Xml.Linq.XName * obj -&gt; System.Xml.Linq.XAttribute" Usage="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.CreateAttribute (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.CreateNamespaceAttribute(System.Xml.Linq.XName,System.Xml.Linq.XNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateNamespaceAttribute (name As XName, ns As XNamespace) As XAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XAttribute ^ CreateNamespaceAttribute(System::Xml::Linq::XName ^ name, System::Xml::Linq::XNamespace ^ ns);" />
+      <MemberSignature Language="F#" Value="static member CreateNamespaceAttribute : System.Xml.Linq.XName * System.Xml.Linq.XNamespace -&gt; System.Xml.Linq.XAttribute" Usage="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.CreateNamespaceAttribute (name, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.RemoveNamespaceAttributes(System.String[],System.Xml.Linq.XNamespace[],System.Collections.Generic.List{System.Xml.Linq.XAttribute},System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveNamespaceAttributes (inScopePrefixes As String(), inScopeNs As XNamespace(), attributes As List(Of XAttribute), obj As IEnumerable) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ RemoveNamespaceAttributes(cli::array &lt;System::String ^&gt; ^ inScopePrefixes, cli::array &lt;System::Xml::Linq::XNamespace ^&gt; ^ inScopeNs, System::Collections::Generic::List&lt;System::Xml::Linq::XAttribute ^&gt; ^ attributes, System::Collections::IEnumerable ^ obj);" />
+      <MemberSignature Language="F#" Value="static member RemoveNamespaceAttributes : string[] * System.Xml.Linq.XNamespace[] * System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt; * System.Collections.IEnumerable -&gt; System.Collections.IEnumerable" Usage="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.RemoveNamespaceAttributes (inScopePrefixes, inScopeNs, attributes, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.RemoveNamespaceAttributes(System.String[],System.Xml.Linq.XNamespace[],System.Collections.Generic.List{System.Xml.Linq.XAttribute},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveNamespaceAttributes (inScopePrefixes As String(), inScopeNs As XNamespace(), attributes As List(Of XAttribute), obj As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ RemoveNamespaceAttributes(cli::array &lt;System::String ^&gt; ^ inScopePrefixes, cli::array &lt;System::Xml::Linq::XNamespace ^&gt; ^ inScopeNs, System::Collections::Generic::List&lt;System::Xml::Linq::XAttribute ^&gt; ^ attributes, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member RemoveNamespaceAttributes : string[] * System.Xml.Linq.XNamespace[] * System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt; * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.RemoveNamespaceAttributes (inScopePrefixes, inScopeNs, attributes, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.RemoveNamespaceAttributes(System.String[],System.Xml.Linq.XNamespace[],System.Collections.Generic.List{System.Xml.Linq.XAttribute},System.Xml.Linq.XElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveNamespaceAttributes (inScopePrefixes As String(), inScopeNs As XNamespace(), attributes As List(Of XAttribute), e As XElement) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ RemoveNamespaceAttributes(cli::array &lt;System::String ^&gt; ^ inScopePrefixes, cli::array &lt;System::Xml::Linq::XNamespace ^&gt; ^ inScopeNs, System::Collections::Generic::List&lt;System::Xml::Linq::XAttribute ^&gt; ^ attributes, System::Xml::Linq::XElement ^ e);" />
+      <MemberSignature Language="F#" Value="static member RemoveNamespaceAttributes : string[] * System.Xml.Linq.XNamespace[] * System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt; * System.Xml.Linq.XElement -&gt; System.Xml.Linq.XElement" Usage="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.RemoveNamespaceAttributes (inScopePrefixes, inScopeNs, attributes, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -268,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.Value(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Value(source As IEnumerable(Of XElement)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Value[System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^] { System::String ^ get(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source); void set(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value(seq&lt;System.Xml.Linq.XElement&gt;) : string with get, set" Usage="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.XmlDocumentSchema" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlDocumentSchema&#xA;Implements IDataSourceSchema" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDocumentSchema sealed : System::Web::UI::Design::IDataSourceSchema" />
+  <TypeSignature Language="F#" Value="type XmlDocumentSchema = class&#xA;    interface IDataSourceSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDocument xmlDocument, string xPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.XmlDocumentSchema.#ctor(System.Xml.XmlDocument,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDocumentSchema(System::Xml::XmlDocument ^ xmlDocument, System::String ^ xPath);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.XmlDocumentSchema : System.Xml.XmlDocument * string -&gt; System.Web.UI.Design.XmlDocumentSchema" Usage="new System.Web.UI.Design.XmlDocumentSchema (xmlDocument, xPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.XmlDocumentSchema.GetViews" />
       <MemberSignature Language="VB.NET" Value="Public Function GetViews () As IDataSourceViewSchema()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Web::UI::Design::IDataSourceViewSchema ^&gt; ^ GetViews();" />
+      <MemberSignature Language="F#" Value="abstract member GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]&#xA;override this.GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]" Usage="xmlDocumentSchema.GetViews " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.Design.IDataSourceSchema.GetViews</InterfaceMember>

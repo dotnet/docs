@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchCompleteDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.FetchCompleteDelegate(pError As Error, ByRef adStatus As EventStatusEnum, pRecordset As Recordset)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::FetchCompleteDelegate(Error ^ pError, EventStatusEnum % adStatus, Recordset ^ pRecordset);" />
+  <TypeSignature Language="F#" Value="type ADODC.FetchCompleteDelegate = delegate of Error *  * Recordset -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

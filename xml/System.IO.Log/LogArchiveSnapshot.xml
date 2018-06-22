@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogArchiveSnapshot" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LogArchiveSnapshot" />
   <TypeSignature Language="C++ CLI" Value="public ref class LogArchiveSnapshot sealed" />
+  <TypeSignature Language="F#" Value="type LogArchiveSnapshot = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogArchiveSnapshot.ArchiveRegions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArchiveRegions As IEnumerable(Of FileRegion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::IO::Log::FileRegion ^&gt; ^ ArchiveRegions { System::Collections::Generic::IEnumerable&lt;System::IO::Log::FileRegion ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArchiveRegions : seq&lt;System.IO.Log.FileRegion&gt;" Usage="System.IO.Log.LogArchiveSnapshot.ArchiveRegions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogArchiveSnapshot.ArchiveTail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArchiveTail As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber ArchiveTail { System::IO::Log::SequenceNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArchiveTail : System.IO.Log.SequenceNumber" Usage="System.IO.Log.LogArchiveSnapshot.ArchiveTail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogArchiveSnapshot.BaseSequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseSequenceNumber As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber BaseSequenceNumber { System::IO::Log::SequenceNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseSequenceNumber : System.IO.Log.SequenceNumber" Usage="System.IO.Log.LogArchiveSnapshot.BaseSequenceNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogArchiveSnapshot.LastSequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSequenceNumber As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber LastSequenceNumber { System::IO::Log::SequenceNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSequenceNumber : System.IO.Log.SequenceNumber" Usage="System.IO.Log.LogArchiveSnapshot.LastSequenceNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

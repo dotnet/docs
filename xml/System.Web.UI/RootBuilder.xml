@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RootBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class RootBuilder&#xA;Inherits TemplateBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class RootBuilder : System::Web::UI::TemplateBuilder" />
+  <TypeSignature Language="F#" Value="type RootBuilder = class&#xA;    inherit TemplateBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.RootBuilder.#ctor(System.Web.UI.TemplateParser)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parser As TemplateParser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RootBuilder(System::Web::UI::TemplateParser ^ parser);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.RootBuilder : System.Web.UI.TemplateParser -&gt; System.Web.UI.RootBuilder" Usage="new System.Web.UI.RootBuilder parser" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RootBuilder.BuiltObjects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltObjects As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ BuiltObjects { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltObjects : System.Collections.IDictionary" Usage="System.Web.UI.RootBuilder.BuiltObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.RootBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (tagName As String, attribs As IDictionary) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attribs);" />
+      <MemberSignature Language="F#" Value="override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="rootBuilder.GetChildControlType (tagName, attribs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.RootBuilder.OnCodeGenerationComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnCodeGenerationComplete ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnCodeGenerationComplete();" />
+      <MemberSignature Language="F#" Value="abstract member OnCodeGenerationComplete : unit -&gt; unit&#xA;override this.OnCodeGenerationComplete : unit -&gt; unit" Usage="rootBuilder.OnCodeGenerationComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.AnnouncementService" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnouncementService" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnouncementService" />
+  <TypeSignature Language="F#" Value="type AnnouncementService = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementService.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (duplicateMessageHistoryLength As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnouncementService(int duplicateMessageHistoryLength);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.AnnouncementService : int -&gt; System.ServiceModel.Discovery.AnnouncementService" Usage="new System.ServiceModel.Discovery.AnnouncementService duplicateMessageHistoryLength" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived" />
       <MemberSignature Language="VB.NET" Value="Public Event OfflineAnnouncementReceived As EventHandler(Of AnnouncementEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::Discovery::AnnouncementEventArgs ^&gt; ^ OfflineAnnouncementReceived;" />
+      <MemberSignature Language="F#" Value="member this.OfflineAnnouncementReceived : EventHandler&lt;System.ServiceModel.Discovery.AnnouncementEventArgs&gt; " Usage="member this.OfflineAnnouncementReceived : System.EventHandler&lt;System.ServiceModel.Discovery.AnnouncementEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginOfflineAnnouncement(class System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence, class System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementService.OnBeginOfflineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginOfflineAnnouncement(System::ServiceModel::Discovery::DiscoveryMessageSequence ^ messageSequence, System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ endpointDiscoveryMetadata, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginOfflineAnnouncement : System.ServiceModel.Discovery.DiscoveryMessageSequence * System.ServiceModel.Discovery.EndpointDiscoveryMetadata * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginOfflineAnnouncement : System.ServiceModel.Discovery.DiscoveryMessageSequence * System.ServiceModel.Discovery.EndpointDiscoveryMetadata * AsyncCallback * obj -&gt; IAsyncResult" Usage="announcementService.OnBeginOfflineAnnouncement (messageSequence, endpointDiscoveryMetadata, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Discovery.IAnnouncementServiceImplementation.OnBeginOfflineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -138,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginOnlineAnnouncement(class System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence, class System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementService.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginOnlineAnnouncement(System::ServiceModel::Discovery::DiscoveryMessageSequence ^ messageSequence, System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ endpointDiscoveryMetadata, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginOnlineAnnouncement : System.ServiceModel.Discovery.DiscoveryMessageSequence * System.ServiceModel.Discovery.EndpointDiscoveryMetadata * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginOnlineAnnouncement : System.ServiceModel.Discovery.DiscoveryMessageSequence * System.ServiceModel.Discovery.EndpointDiscoveryMetadata * AsyncCallback * obj -&gt; IAsyncResult" Usage="announcementService.OnBeginOnlineAnnouncement (messageSequence, endpointDiscoveryMetadata, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Discovery.IAnnouncementServiceImplementation.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementService.OnEndOfflineAnnouncement(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndOfflineAnnouncement (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndOfflineAnnouncement(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndOfflineAnnouncement : IAsyncResult -&gt; unit&#xA;override this.OnEndOfflineAnnouncement : IAsyncResult -&gt; unit" Usage="announcementService.OnEndOfflineAnnouncement result" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Discovery.IAnnouncementServiceImplementation.OnEndOfflineAnnouncement(System.IAsyncResult)</InterfaceMember>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementService.OnEndOnlineAnnouncement(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndOnlineAnnouncement (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndOnlineAnnouncement(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndOnlineAnnouncement : IAsyncResult -&gt; unit&#xA;override this.OnEndOnlineAnnouncement : IAsyncResult -&gt; unit" Usage="announcementService.OnEndOnlineAnnouncement result" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Discovery.IAnnouncementServiceImplementation.OnEndOnlineAnnouncement(System.IAsyncResult)</InterfaceMember>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived" />
       <MemberSignature Language="VB.NET" Value="Public Event OnlineAnnouncementReceived As EventHandler(Of AnnouncementEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::Discovery::AnnouncementEventArgs ^&gt; ^ OnlineAnnouncementReceived;" />
+      <MemberSignature Language="F#" Value="member this.OnlineAnnouncementReceived : EventHandler&lt;System.ServiceModel.Discovery.AnnouncementEventArgs&gt; " Usage="member this.OnlineAnnouncementReceived : System.EventHandler&lt;System.ServiceModel.Discovery.AnnouncementEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

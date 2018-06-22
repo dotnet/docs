@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.SslProtocols" />
   <TypeSignature Language="VB.NET" Value="Public Enum SslProtocols" />
   <TypeSignature Language="C++ CLI" Value="public enum class SslProtocols" />
+  <TypeSignature Language="F#" Value="type SslProtocols = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.SslProtocols.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 240" Usage="System.Security.Authentication.SslProtocols.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.SslProtocols.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Authentication.SslProtocols.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.SslProtocols.Ssl2" />
       <MemberSignature Language="VB.NET" Value="Ssl2" />
       <MemberSignature Language="C++ CLI" Value="Ssl2" />
+      <MemberSignature Language="F#" Value="Ssl2 = 12" Usage="System.Security.Authentication.SslProtocols.Ssl2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.SslProtocols.Ssl3" />
       <MemberSignature Language="VB.NET" Value="Ssl3" />
       <MemberSignature Language="C++ CLI" Value="Ssl3" />
+      <MemberSignature Language="F#" Value="Ssl3 = 48" Usage="System.Security.Authentication.SslProtocols.Ssl3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.SslProtocols.Tls" />
       <MemberSignature Language="VB.NET" Value="Tls" />
       <MemberSignature Language="C++ CLI" Value="Tls" />
+      <MemberSignature Language="F#" Value="Tls = 192" Usage="System.Security.Authentication.SslProtocols.Tls" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.SslProtocols.Tls11" />
       <MemberSignature Language="VB.NET" Value="Tls11" />
       <MemberSignature Language="C++ CLI" Value="Tls11" />
+      <MemberSignature Language="F#" Value="Tls11 = 768" Usage="System.Security.Authentication.SslProtocols.Tls11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.SslProtocols.Tls12" />
       <MemberSignature Language="VB.NET" Value="Tls12" />
       <MemberSignature Language="C++ CLI" Value="Tls12" />
+      <MemberSignature Language="F#" Value="Tls12 = 3072" Usage="System.Security.Authentication.SslProtocols.Tls12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

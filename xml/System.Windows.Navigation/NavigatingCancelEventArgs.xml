@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigatingCancelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class NavigatingCancelEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class NavigatingCancelEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type NavigatingCancelEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.Content" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Content { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Content : obj" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.ContentStateToSave" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentStateToSave As CustomContentState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Navigation::CustomContentState ^ ContentStateToSave { System::Windows::Navigation::CustomContentState ^ get(); void set(System::Windows::Navigation::CustomContentState ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentStateToSave : System.Windows.Navigation.CustomContentState with get, set" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.ContentStateToSave" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.ExtraData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtraData As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ExtraData { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraData : obj" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.ExtraData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.IsNavigationInitiator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNavigationInitiator As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNavigationInitiator { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNavigationInitiator : bool" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.IsNavigationInitiator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.NavigationMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationMode As NavigationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Navigation::NavigationMode NavigationMode { System::Windows::Navigation::NavigationMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavigationMode : System.Windows.Navigation.NavigationMode" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.NavigationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.Navigator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Navigator As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Navigator { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Navigator : obj" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.Navigator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.TargetContentState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetContentState As CustomContentState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Navigation::CustomContentState ^ TargetContentState { System::Windows::Navigation::CustomContentState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetContentState : System.Windows.Navigation.CustomContentState" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.TargetContentState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigatingCancelEventArgs.WebRequest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebRequest As WebRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebRequest ^ WebRequest { System::Net::WebRequest ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebRequest : System.Net.WebRequest" Usage="System.Windows.Navigation.NavigatingCancelEventArgs.WebRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbUpdateCommandTree" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbUpdateCommandTree&#xA;Inherits DbModificationCommandTree" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbUpdateCommandTree sealed : System::Data::Common::CommandTrees::DbModificationCommandTree" />
+  <TypeSignature Language="F#" Value="type DbUpdateCommandTree = class&#xA;    inherit DbModificationCommandTree" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbUpdateCommandTree.Predicate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Predicate As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Predicate { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Predicate : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbUpdateCommandTree.Predicate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbUpdateCommandTree.Returning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Returning As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Returning { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Returning : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbUpdateCommandTree.Returning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbUpdateCommandTree.SetClauses" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetClauses As IList(Of DbModificationClause)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbModificationClause ^&gt; ^ SetClauses { System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbModificationClause ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SetClauses : System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbModificationClause&gt;" Usage="System.Data.Common.CommandTrees.DbUpdateCommandTree.SetClauses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

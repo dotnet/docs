@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableSortedDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Module ImmutableSortedDictionary" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImmutableSortedDictionary abstract sealed" />
+  <TypeSignature Language="F#" Value="type ImmutableSortedDictionary = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.Create``2" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of TKey, TValue) () As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.Create``2(System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of TKey, TValue) (keyComparer As IComparer(Of TKey)) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Create(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.Create keyComparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.Create``2(System.Collections.Generic.IComparer{``0},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of TKey, TValue) (keyComparer As IComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Create(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.Create (keyComparer, valueComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.CreateBuilder``2" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of TKey, TValue) () As ImmutableSortedDictionary(Of TKey, TValue).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt;::Builder ^ CreateBuilder();" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : unit -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Builder" Usage="System.Collections.Immutable.ImmutableSortedDictionary.CreateBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.CreateBuilder``2(System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of TKey, TValue) (keyComparer As IComparer(Of TKey)) As ImmutableSortedDictionary(Of TKey, TValue).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt;::Builder ^ CreateBuilder(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Builder" Usage="System.Collections.Immutable.ImmutableSortedDictionary.CreateBuilder keyComparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.CreateBuilder``2(System.Collections.Generic.IComparer{``0},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of TKey, TValue) (keyComparer As IComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableSortedDictionary(Of TKey, TValue).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt;::Builder ^ CreateBuilder(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : System.Collections.Generic.IComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Builder" Usage="System.Collections.Immutable.ImmutableSortedDictionary.CreateBuilder (keyComparer, valueComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.CreateRange``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of TKey, TValue) (items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ CreateRange(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.CreateRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.CreateRange``2(System.Collections.Generic.IComparer{``0},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of TKey, TValue) (keyComparer As IComparer(Of TKey), items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ CreateRange(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : System.Collections.Generic.IComparer&lt;'Key&gt; * seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.CreateRange (keyComparer, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -293,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.CreateRange``2(System.Collections.Generic.IComparer{``0},System.Collections.Generic.IEqualityComparer{``1},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of TKey, TValue) (keyComparer As IComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue), items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ CreateRange(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : System.Collections.Generic.IComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; * seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.CreateRange (keyComparer, valueComparer, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableSortedDictionary(Of TKey, TValue) (source As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ ToImmutableSortedDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableSortedDictionary : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -363,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableSortedDictionary(Of TKey, TValue) (source As IEnumerable(Of KeyValuePair(Of TKey, TValue)), keyComparer As IComparer(Of TKey)) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ ToImmutableSortedDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ source, System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableSortedDictionary : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary (source, keyComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -398,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IComparer{``0},System.Collections.Generic.IEqualityComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableSortedDictionary(Of TKey, TValue) (source As IEnumerable(Of KeyValuePair(Of TKey, TValue)), keyComparer As IComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ ToImmutableSortedDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ source, System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableSortedDictionary : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary (source, keyComparer, valueComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -435,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableSortedDictionary(Of TSource, TKey, TValue) (source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey), elementSelector As Func(Of TSource, TValue)) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ ToImmutableSortedDictionary(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TSource, TKey&gt; ^ keySelector, Func&lt;TSource, TValue&gt; ^ elementSelector);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableSortedDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; * Func&lt;'Source, 'Value&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary (source, keySelector, elementSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -474,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableSortedDictionary(Of TSource, TKey, TValue) (source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey), elementSelector As Func(Of TSource, TValue), keyComparer As IComparer(Of TKey)) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ ToImmutableSortedDictionary(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TSource, TKey&gt; ^ keySelector, Func&lt;TSource, TValue&gt; ^ elementSelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableSortedDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; * Func&lt;'Source, 'Value&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary (source, keySelector, elementSelector, keyComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -515,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},System.Collections.Generic.IComparer{``1},System.Collections.Generic.IEqualityComparer{``2})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableSortedDictionary(Of TSource, TKey, TValue) (source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey), elementSelector As Func(Of TSource, TValue), keyComparer As IComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableSortedDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TKey, typename TValue&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ ToImmutableSortedDictionary(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TSource, TKey&gt; ^ keySelector, Func&lt;TSource, TValue&gt; ^ elementSelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableSortedDictionary : seq&lt;'Source&gt; * Func&lt;'Source, 'Key&gt; * Func&lt;'Source, 'Value&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary (source, keySelector, elementSelector, keyComparer, valueComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

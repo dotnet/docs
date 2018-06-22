@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewColumnDividerDoubleClickEventArgs&#xA;Inherits HandledMouseEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewColumnDividerDoubleClickEventArgs : System::Windows::Forms::HandledMouseEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnDividerDoubleClickEventArgs = class&#xA;    inherit HandledMouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs.#ctor(System.Int32,System.Windows.Forms.HandledMouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (columnIndex As Integer, e As HandledMouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewColumnDividerDoubleClickEventArgs(int columnIndex, System::Windows::Forms::HandledMouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs : int * System.Windows.Forms.HandledMouseEventArgs -&gt; System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs" Usage="new System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs (columnIndex, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs.ColumnIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs.ColumnIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

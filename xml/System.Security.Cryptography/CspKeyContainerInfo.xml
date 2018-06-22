@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CspKeyContainerInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CspKeyContainerInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class CspKeyContainerInfo sealed" />
+  <TypeSignature Language="F#" Value="type CspKeyContainerInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspKeyContainerInfo.#ctor(System.Security.Cryptography.CspParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As CspParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CspKeyContainerInfo(System::Security::Cryptography::CspParameters ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CspKeyContainerInfo : System.Security.Cryptography.CspParameters -&gt; System.Security.Cryptography.CspKeyContainerInfo" Usage="new System.Security.Cryptography.CspKeyContainerInfo parameters" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.Accessible" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Accessible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Accessible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Accessible : bool" Usage="System.Security.Cryptography.CspKeyContainerInfo.Accessible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.CryptoKeySecurity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CryptoKeySecurity As CryptoKeySecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::CryptoKeySecurity ^ CryptoKeySecurity { System::Security::AccessControl::CryptoKeySecurity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CryptoKeySecurity : System.Security.AccessControl.CryptoKeySecurity" Usage="System.Security.Cryptography.CspKeyContainerInfo.CryptoKeySecurity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.Exportable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exportable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Exportable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exportable : bool" Usage="System.Security.Cryptography.CspKeyContainerInfo.Exportable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.HardwareDevice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HardwareDevice As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HardwareDevice { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HardwareDevice : bool" Usage="System.Security.Cryptography.CspKeyContainerInfo.HardwareDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.KeyContainerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyContainerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyContainerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyContainerName : string" Usage="System.Security.Cryptography.CspKeyContainerInfo.KeyContainerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -317,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.KeyNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyNumber As KeyNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::KeyNumber KeyNumber { System::Security::Cryptography::KeyNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyNumber : System.Security.Cryptography.KeyNumber" Usage="System.Security.Cryptography.CspKeyContainerInfo.KeyNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -368,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.MachineKeyStore" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineKeyStore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MachineKeyStore { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MachineKeyStore : bool" Usage="System.Security.Cryptography.CspKeyContainerInfo.MachineKeyStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -411,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.Protected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Protected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Protected : bool" Usage="System.Security.Cryptography.CspKeyContainerInfo.Protected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -460,6 +470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string" Usage="System.Security.Cryptography.CspKeyContainerInfo.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -507,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.ProviderType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderType As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProviderType { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderType : int" Usage="System.Security.Cryptography.CspKeyContainerInfo.ProviderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -554,6 +566,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RandomlyGenerated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RandomlyGenerated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RandomlyGenerated : bool" Usage="System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -602,6 +615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.Removable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Removable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Removable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Removable : bool" Usage="System.Security.Cryptography.CspKeyContainerInfo.Removable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -646,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UniqueKeyContainerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UniqueKeyContainerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UniqueKeyContainerName : string" Usage="System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>

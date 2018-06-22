@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Link`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure Link(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class Link" />
+  <TypeSignature Language="F#" Value="type Link&lt;'T&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Link`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Link(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.Link&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Data.Linq.Link&lt;'T&gt;" Usage="new System.Data.Linq.Link&lt;'T&gt; source" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Link`1.#ctor(System.Data.Linq.Link{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (link As Link(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Link(System::Data::Linq::Link&lt;T&gt; link);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.Link&lt;'T&gt; : System.Data.Linq.Link&lt;'T&gt; -&gt; System.Data.Linq.Link&lt;'T&gt;" Usage="new System.Data.Linq.Link&lt;'T&gt; link" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Link`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Link(T value);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.Link&lt;'T&gt; : 'T -&gt; System.Data.Linq.Link&lt;'T&gt;" Usage="new System.Data.Linq.Link&lt;'T&gt; value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Link`1.HasLoadedOrAssignedValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLoadedOrAssignedValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLoadedOrAssignedValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLoadedOrAssignedValue : bool" Usage="System.Data.Linq.Link&lt;'T&gt;.HasLoadedOrAssignedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Link`1.HasValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="System.Data.Linq.Link&lt;'T&gt;.HasValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Link`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="System.Data.Linq.Link&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

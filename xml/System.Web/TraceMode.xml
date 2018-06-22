@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.TraceMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TraceMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TraceMode" />
+  <TypeSignature Language="F#" Value="type TraceMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 2" Usage="System.Web.TraceMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.SortByCategory" />
       <MemberSignature Language="VB.NET" Value="SortByCategory" />
       <MemberSignature Language="C++ CLI" Value="SortByCategory" />
+      <MemberSignature Language="F#" Value="SortByCategory = 1" Usage="System.Web.TraceMode.SortByCategory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.SortByTime" />
       <MemberSignature Language="VB.NET" Value="SortByTime" />
       <MemberSignature Language="C++ CLI" Value="SortByTime" />
+      <MemberSignature Language="F#" Value="SortByTime = 0" Usage="System.Web.TraceMode.SortByTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

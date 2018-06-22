@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.EnumeratorObject" />
   <TypeSignature Language="VB.NET" Value="Public Class EnumeratorObject&#xA;Inherits JSObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumeratorObject : Microsoft::JScript::JSObject" />
+  <TypeSignature Language="F#" Value="type EnumeratorObject = class&#xA;    inherit JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.EnumeratorObject.enumerator" />
       <MemberSignature Language="VB.NET" Value="Protected enumerator As IEnumerator " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::IEnumerator ^ enumerator;" />
+      <MemberSignature Language="F#" Value="val mutable enumerator : System.Collections.IEnumerator" Usage="Microsoft.JScript.EnumeratorObject.enumerator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorObject.LoadObject" />
       <MemberSignature Language="VB.NET" Value="Protected Sub LoadObject ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadObject();" />
+      <MemberSignature Language="F#" Value="member this.LoadObject : unit -&gt; unit" Usage="enumeratorObject.LoadObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

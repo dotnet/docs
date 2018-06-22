@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ItemContainerPattern" />
   <TypeSignature Language="VB.NET" Value="Public Class ItemContainerPattern&#xA;Inherits BasePattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemContainerPattern : System::Windows::Automation::BasePattern" />
+  <TypeSignature Language="F#" Value="type ItemContainerPattern = class&#xA;    inherit BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ItemContainerPattern.FindItemByProperty(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindItemByProperty (startAfter As AutomationElement, property As AutomationProperty, value As Object) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ FindItemByProperty(System::Windows::Automation::AutomationElement ^ startAfter, System::Windows::Automation::AutomationProperty ^ property, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.FindItemByProperty : System.Windows.Automation.AutomationElement * System.Windows.Automation.AutomationProperty * obj -&gt; System.Windows.Automation.AutomationElement" Usage="itemContainerPattern.FindItemByProperty (startAfter, property, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ItemContainerPattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.ItemContainerPattern.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

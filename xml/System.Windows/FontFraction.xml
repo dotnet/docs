@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontFraction" />
   <TypeSignature Language="VB.NET" Value="Public Enum FontFraction" />
   <TypeSignature Language="C++ CLI" Value="public enum class FontFraction" />
+  <TypeSignature Language="F#" Value="type FontFraction = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="DocId" Value="F:System.Windows.FontFraction.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.FontFraction.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="DocId" Value="F:System.Windows.FontFraction.Slashed" />
       <MemberSignature Language="VB.NET" Value="Slashed" />
       <MemberSignature Language="C++ CLI" Value="Slashed" />
+      <MemberSignature Language="F#" Value="Slashed = 1" Usage="System.Windows.FontFraction.Slashed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +83,7 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="DocId" Value="F:System.Windows.FontFraction.Stacked" />
       <MemberSignature Language="VB.NET" Value="Stacked" />
       <MemberSignature Language="C++ CLI" Value="Stacked" />
+      <MemberSignature Language="F#" Value="Stacked = 2" Usage="System.Windows.FontFraction.Stacked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

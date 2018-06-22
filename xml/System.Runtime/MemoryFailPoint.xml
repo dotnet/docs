@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.MemoryFailPoint" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemoryFailPoint&#xA;Inherits CriticalFinalizerObject&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemoryFailPoint sealed : System::Runtime::ConstrainedExecution::CriticalFinalizerObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type MemoryFailPoint = class&#xA;    inherit CriticalFinalizerObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.MemoryFailPoint.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sizeInMegabytes As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MemoryFailPoint(int sizeInMegabytes);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.MemoryFailPoint : int -&gt; System.Runtime.MemoryFailPoint" Usage="new System.Runtime.MemoryFailPoint sizeInMegabytes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.MemoryFailPoint.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="memoryFailPoint.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.MemoryFailPoint.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!MemoryFailPoint ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="memoryFailPoint.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

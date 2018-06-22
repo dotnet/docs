@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BooleanPrototype" />
   <TypeSignature Language="VB.NET" Value="Public Class BooleanPrototype&#xA;Inherits BooleanObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class BooleanPrototype : Microsoft::JScript::BooleanObject" />
+  <TypeSignature Language="F#" Value="type BooleanPrototype = class&#xA;    inherit BooleanObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanPrototype.#ctor(Microsoft.JScript.ObjectPrototype,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (parent As ObjectPrototype, baseType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BooleanPrototype(Microsoft::JScript::ObjectPrototype ^ parent, Type ^ baseType);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.BooleanPrototype : Microsoft.JScript.ObjectPrototype * Type -&gt; Microsoft.JScript.BooleanPrototype" Usage="new Microsoft.JScript.BooleanPrototype (parent, baseType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.BooleanPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property constructor As BooleanConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::BooleanConstructor ^ constructor { Microsoft::JScript::BooleanConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.constructor : Microsoft.JScript.BooleanConstructor" Usage="Microsoft.JScript.BooleanPrototype.constructor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanPrototype.toString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function toString (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toString(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member toString : obj -&gt; string" Usage="Microsoft.JScript.BooleanPrototype.toString thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanPrototype.valueOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function valueOf (thisob As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ valueOf(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member valueOf : obj -&gt; obj" Usage="Microsoft.JScript.BooleanPrototype.valueOf thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

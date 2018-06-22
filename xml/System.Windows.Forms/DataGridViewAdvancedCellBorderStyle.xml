@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewAdvancedCellBorderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewAdvancedCellBorderStyle" />
+  <TypeSignature Language="F#" Value="type DataGridViewAdvancedCellBorderStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Inset" />
       <MemberSignature Language="VB.NET" Value="Inset" />
       <MemberSignature Language="C++ CLI" Value="Inset" />
+      <MemberSignature Language="F#" Value="Inset = 3" Usage="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Inset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.InsetDouble" />
       <MemberSignature Language="VB.NET" Value="InsetDouble" />
       <MemberSignature Language="C++ CLI" Value="InsetDouble" />
+      <MemberSignature Language="F#" Value="InsetDouble = 4" Usage="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.InsetDouble" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Outset" />
       <MemberSignature Language="VB.NET" Value="Outset" />
       <MemberSignature Language="C++ CLI" Value="Outset" />
+      <MemberSignature Language="F#" Value="Outset = 5" Usage="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Outset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetDouble" />
       <MemberSignature Language="VB.NET" Value="OutsetDouble" />
       <MemberSignature Language="C++ CLI" Value="OutsetDouble" />
+      <MemberSignature Language="F#" Value="OutsetDouble = 6" Usage="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetDouble" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetPartial" />
       <MemberSignature Language="VB.NET" Value="OutsetPartial" />
       <MemberSignature Language="C++ CLI" Value="OutsetPartial" />
+      <MemberSignature Language="F#" Value="OutsetPartial = 7" Usage="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetPartial" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -173,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 2" Usage="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

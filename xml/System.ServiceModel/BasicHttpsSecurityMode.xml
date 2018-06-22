@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpsSecurityMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum BasicHttpsSecurityMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class BasicHttpsSecurityMode" />
+  <TypeSignature Language="F#" Value="type BasicHttpsSecurityMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.BasicHttpsSecurityMode.Transport" />
       <MemberSignature Language="VB.NET" Value="Transport" />
       <MemberSignature Language="C++ CLI" Value="Transport" />
+      <MemberSignature Language="F#" Value="Transport = 0" Usage="System.ServiceModel.BasicHttpsSecurityMode.Transport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.BasicHttpsSecurityMode.TransportWithMessageCredential" />
       <MemberSignature Language="VB.NET" Value="TransportWithMessageCredential" />
       <MemberSignature Language="C++ CLI" Value="TransportWithMessageCredential" />
+      <MemberSignature Language="F#" Value="TransportWithMessageCredential = 1" Usage="System.ServiceModel.BasicHttpsSecurityMode.TransportWithMessageCredential" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

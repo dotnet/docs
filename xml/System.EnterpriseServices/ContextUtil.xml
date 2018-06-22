@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ContextUtil" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextUtil" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextUtil sealed" />
+  <TypeSignature Language="F#" Value="type ContextUtil = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.ActivityId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ActivityId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid ActivityId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityId : Guid" Usage="System.EnterpriseServices.ContextUtil.ActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.ApplicationId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid ApplicationId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationId : Guid" Usage="System.EnterpriseServices.ContextUtil.ApplicationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.ApplicationInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationInstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid ApplicationInstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationInstanceId : Guid" Usage="System.EnterpriseServices.ContextUtil.ApplicationInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.ContextId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid ContextId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextId : Guid" Usage="System.EnterpriseServices.ContextUtil.ContextId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.DeactivateOnReturn" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DeactivateOnReturn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool DeactivateOnReturn { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DeactivateOnReturn : bool with get, set" Usage="System.EnterpriseServices.ContextUtil.DeactivateOnReturn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ContextUtil.DisableCommit" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DisableCommit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisableCommit();" />
+      <MemberSignature Language="F#" Value="static member DisableCommit : unit -&gt; unit" Usage="System.EnterpriseServices.ContextUtil.DisableCommit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ContextUtil.EnableCommit" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableCommit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableCommit();" />
+      <MemberSignature Language="F#" Value="static member EnableCommit : unit -&gt; unit" Usage="System.EnterpriseServices.ContextUtil.EnableCommit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -284,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ContextUtil.GetNamedProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamedProperty (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetNamedProperty(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetNamedProperty : string -&gt; obj" Usage="System.EnterpriseServices.ContextUtil.GetNamedProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -318,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ContextUtil.IsCallerInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsCallerInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsCallerInRole(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="static member IsCallerInRole : string -&gt; bool" Usage="System.EnterpriseServices.ContextUtil.IsCallerInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -344,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ContextUtil.IsDefaultContext" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefaultContext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefaultContext();" />
+      <MemberSignature Language="F#" Value="static member IsDefaultContext : unit -&gt; bool" Usage="System.EnterpriseServices.ContextUtil.IsDefaultContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -365,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.IsInTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsInTransaction As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsInTransaction { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInTransaction : bool" Usage="System.EnterpriseServices.ContextUtil.IsInTransaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -398,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.IsSecurityEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSecurityEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSecurityEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityEnabled : bool" Usage="System.EnterpriseServices.ContextUtil.IsSecurityEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -431,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.MyTransactionVote" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property MyTransactionVote As TransactionVote" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::EnterpriseServices::TransactionVote MyTransactionVote { System::EnterpriseServices::TransactionVote get(); void set(System::EnterpriseServices::TransactionVote value); };" />
+      <MemberSignature Language="F#" Value="member this.MyTransactionVote : System.EnterpriseServices.TransactionVote with get, set" Usage="System.EnterpriseServices.ContextUtil.MyTransactionVote" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -471,6 +485,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.PartitionId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PartitionId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid PartitionId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartitionId : Guid" Usage="System.EnterpriseServices.ContextUtil.PartitionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -493,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ContextUtil.SetAbort" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAbort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAbort();" />
+      <MemberSignature Language="F#" Value="static member SetAbort : unit -&gt; unit" Usage="System.EnterpriseServices.ContextUtil.SetAbort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -530,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ContextUtil.SetComplete" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetComplete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetComplete();" />
+      <MemberSignature Language="F#" Value="static member SetComplete : unit -&gt; unit" Usage="System.EnterpriseServices.ContextUtil.SetComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -567,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ContextUtil.SetNamedProperty(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetNamedProperty (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNamedProperty(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetNamedProperty : string * obj -&gt; unit" Usage="System.EnterpriseServices.ContextUtil.SetNamedProperty (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -602,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.SystemTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SystemTransaction As Transaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Transactions::Transaction ^ SystemTransaction { System::Transactions::Transaction ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SystemTransaction : System.Transactions.Transaction" Usage="System.EnterpriseServices.ContextUtil.SystemTransaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -631,6 +650,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.Transaction" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Transaction As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Object ^ Transaction { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transaction : obj" Usage="System.EnterpriseServices.ContextUtil.Transaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -660,6 +680,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ContextUtil.TransactionId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TransactionId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid TransactionId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionId : Guid" Usage="System.EnterpriseServices.ContextUtil.TransactionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

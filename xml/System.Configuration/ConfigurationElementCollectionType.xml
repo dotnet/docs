@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationElementCollectionType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationElementCollectionType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationElementCollectionType" />
+  <TypeSignature Language="F#" Value="type ConfigurationElementCollectionType = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" />
       <MemberSignature Language="VB.NET" Value="AddRemoveClearMap" />
       <MemberSignature Language="C++ CLI" Value="AddRemoveClearMap" />
+      <MemberSignature Language="F#" Value="AddRemoveClearMap = 1" Usage="System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMapAlternate" />
       <MemberSignature Language="VB.NET" Value="AddRemoveClearMapAlternate" />
       <MemberSignature Language="C++ CLI" Value="AddRemoveClearMapAlternate" />
+      <MemberSignature Language="F#" Value="AddRemoveClearMapAlternate = 3" Usage="System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMapAlternate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.BasicMap" />
       <MemberSignature Language="VB.NET" Value="BasicMap" />
       <MemberSignature Language="C++ CLI" Value="BasicMap" />
+      <MemberSignature Language="F#" Value="BasicMap = 0" Usage="System.Configuration.ConfigurationElementCollectionType.BasicMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.BasicMapAlternate" />
       <MemberSignature Language="VB.NET" Value="BasicMapAlternate" />
       <MemberSignature Language="C++ CLI" Value="BasicMapAlternate" />
+      <MemberSignature Language="F#" Value="BasicMapAlternate = 2" Usage="System.Configuration.ConfigurationElementCollectionType.BasicMapAlternate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

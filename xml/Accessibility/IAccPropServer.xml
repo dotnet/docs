@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccPropServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAccPropServer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAccPropServer" />
+  <TypeSignature Language="F#" Value="type IAccPropServer = interface" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccPropServer.GetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetPropValue (ByRef pIDString As Byte, dwIDStringLen As UInteger, idProp As Guid, ByRef pvarValue As Object, ByRef pfHasProp As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPropValue(System::Byte % pIDString, System::UInt32 dwIDStringLen, Guid idProp, [Runtime::InteropServices::Out] System::Object ^ % pvarValue, [Runtime::InteropServices::Out] int % pfHasProp);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropValue :  * uint32 * Guid *  *  -&gt; unit" Usage="iAccPropServer.GetPropValue (pIDString, dwIDStringLen, idProp, pvarValue, pfHasProp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

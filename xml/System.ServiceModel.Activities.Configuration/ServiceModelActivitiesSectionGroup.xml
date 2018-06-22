@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceModelActivitiesSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceModelActivitiesSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
+  <TypeSignature Language="F#" Value="type ServiceModelActivitiesSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.GetSectionGroup(System.Configuration.Configuration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSectionGroup (config As Configuration) As ServiceModelActivitiesSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Activities::Configuration::ServiceModelActivitiesSectionGroup ^ GetSectionGroup(System::Configuration::Configuration ^ config);" />
+      <MemberSignature Language="F#" Value="static member GetSectionGroup : System.Configuration.Configuration -&gt; System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" Usage="System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.GetSectionGroup config" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.WorkflowHostingOptionsSection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowHostingOptionsSection As WorkflowHostingOptionsSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Configuration::WorkflowHostingOptionsSection ^ WorkflowHostingOptionsSection { System::ServiceModel::Activities::Configuration::WorkflowHostingOptionsSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowHostingOptionsSection : System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection" Usage="System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.WorkflowHostingOptionsSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

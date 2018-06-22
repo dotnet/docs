@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.GenericRootAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class GenericRootAutomationPeer&#xA;Inherits UIElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenericRootAutomationPeer : System::Windows::Automation::Peers::UIElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type GenericRootAutomationPeer = class&#xA;    inherit UIElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GenericRootAutomationPeer.#ctor(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericRootAutomationPeer(System::Windows::UIElement ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.GenericRootAutomationPeer : System.Windows.UIElement -&gt; System.Windows.Automation.Peers.GenericRootAutomationPeer" Usage="new System.Windows.Automation.Peers.GenericRootAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GenericRootAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="genericRootAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GenericRootAutomationPeer.GetBoundingRectangleCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetBoundingRectangleCore () As Rect" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Rect GetBoundingRectangleCore();" />
+      <MemberSignature Language="F#" Value="override this.GetBoundingRectangleCore : unit -&gt; System.Windows.Rect" Usage="genericRootAutomationPeer.GetBoundingRectangleCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GenericRootAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="genericRootAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GenericRootAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="genericRootAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

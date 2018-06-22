@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XPathQueryGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class XPathQueryGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class XPathQueryGenerator abstract sealed" />
+  <TypeSignature Language="F#" Value="type XPathQueryGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Type type, class System.Reflection.MemberInfo[] pathToMember, [out] class System.Xml.XmlNamespaceManager&amp; namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XPathQueryGenerator.CreateFromDataContractSerializer(System.Type,System.Reflection.MemberInfo[],System.Xml.XmlNamespaceManager@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CreateFromDataContractSerializer(Type ^ type, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ pathToMember, [Runtime::InteropServices::Out] System::Xml::XmlNamespaceManager ^ % namespaces);" />
+      <MemberSignature Language="F#" Value="static member CreateFromDataContractSerializer : Type * System.Reflection.MemberInfo[] *  -&gt; string" Usage="System.Runtime.Serialization.XPathQueryGenerator.CreateFromDataContractSerializer (type, pathToMember, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Type type, class System.Reflection.MemberInfo[] pathToMember, class System.Text.StringBuilder rootElementXpath, [out] class System.Xml.XmlNamespaceManager&amp; namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XPathQueryGenerator.CreateFromDataContractSerializer(System.Type,System.Reflection.MemberInfo[],System.Text.StringBuilder,System.Xml.XmlNamespaceManager@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CreateFromDataContractSerializer(Type ^ type, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ pathToMember, System::Text::StringBuilder ^ rootElementXpath, [Runtime::InteropServices::Out] System::Xml::XmlNamespaceManager ^ % namespaces);" />
+      <MemberSignature Language="F#" Value="static member CreateFromDataContractSerializer : Type * System.Reflection.MemberInfo[] * System.Text.StringBuilder *  -&gt; string" Usage="System.Runtime.Serialization.XPathQueryGenerator.CreateFromDataContractSerializer (type, pathToMember, rootElementXpath, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

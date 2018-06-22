@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.ExpressionParser.SourceExpressionException" />
   <TypeSignature Language="VB.NET" Value="Public Class SourceExpressionException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class SourceExpressionException : Exception" />
+  <TypeSignature Language="F#" Value="type SourceExpressionException = class&#xA;    inherit Exception&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ExpressionParser.SourceExpressionException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceExpressionException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Activities.ExpressionParser.SourceExpressionException : string -&gt; System.Activities.ExpressionParser.SourceExpressionException" Usage="new System.Activities.ExpressionParser.SourceExpressionException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ExpressionParser.SourceExpressionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SourceExpressionException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Activities.ExpressionParser.SourceExpressionException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Activities.ExpressionParser.SourceExpressionException" Usage="new System.Activities.ExpressionParser.SourceExpressionException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ExpressionParser.SourceExpressionException.#ctor(System.String,System.CodeDom.Compiler.CompilerErrorCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errors As CompilerErrorCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceExpressionException(System::String ^ message, System::CodeDom::Compiler::CompilerErrorCollection ^ errors);" />
+      <MemberSignature Language="F#" Value="new System.Activities.ExpressionParser.SourceExpressionException : string * System.CodeDom.Compiler.CompilerErrorCollection -&gt; System.Activities.ExpressionParser.SourceExpressionException" Usage="new System.Activities.ExpressionParser.SourceExpressionException (message, errors)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ExpressionParser.SourceExpressionException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceExpressionException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Activities.ExpressionParser.SourceExpressionException : string * Exception -&gt; System.Activities.ExpressionParser.SourceExpressionException" Usage="new System.Activities.ExpressionParser.SourceExpressionException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.ExpressionParser.SourceExpressionException.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As IEnumerable(Of CompilerError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::CodeDom::Compiler::CompilerError ^&gt; ^ Errors { System::Collections::Generic::IEnumerable&lt;System::CodeDom::Compiler::CompilerError ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : seq&lt;System.CodeDom.Compiler.CompilerError&gt;" Usage="System.Activities.ExpressionParser.SourceExpressionException.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ExpressionParser.SourceExpressionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="sourceExpressionException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

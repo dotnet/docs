@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlGuid" />
   <TypeSignature Language="VB.NET" Value="Public Structure SqlGuid&#xA;Implements IComparable, INullable, IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public value class SqlGuid : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type SqlGuid = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlGuid(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlGuid : byte[] -&gt; System.Data.SqlTypes.SqlGuid" Usage="new System.Data.SqlTypes.SqlGuid value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.#ctor(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (g As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlGuid(Guid g);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlGuid : Guid -&gt; System.Data.SqlTypes.SqlGuid" Usage="new System.Data.SqlTypes.SqlGuid g" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlGuid(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlGuid : string -&gt; System.Data.SqlTypes.SqlGuid" Usage="new System.Data.SqlTypes.SqlGuid s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (a As Integer, b As Short, c As Short, d As Byte, e As Byte, f As Byte, g As Byte, h As Byte, i As Byte, j As Byte, k As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlGuid(int a, short b, short c, System::Byte d, System::Byte e, System::Byte f, System::Byte g, System::Byte h, System::Byte i, System::Byte j, System::Byte k);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlGuid : int * int16 * int16 * byte * byte * byte * byte * byte * byte * byte * byte -&gt; System.Data.SqlTypes.SqlGuid" Usage="new System.Data.SqlTypes.SqlGuid (a, b, c, d, e, f, g, h, i, j, k)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -241,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.CompareTo(System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As SqlGuid) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlGuid value);" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : System.Data.SqlTypes.SqlGuid -&gt; int" Usage="sqlGuid.CompareTo value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -301,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="sqlGuid.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -373,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sqlGuid.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -412,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.Equals(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlGuid.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -453,6 +462,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sqlGuid.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -488,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlGuid.GetXsdType schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -522,6 +533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.GreaterThan(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlGuid.GreaterThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -562,6 +574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.GreaterThanOrEqual(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlGuid.GreaterThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -602,6 +615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlGuid.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlGuid.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -647,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.LessThan(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlGuid.LessThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -687,6 +702,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.LessThanOrEqual(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlGuid.LessThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -727,6 +743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.NotEquals(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlGuid.NotEquals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -767,6 +784,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlGuid.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SqlGuid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlGuid Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.SqlTypes.SqlGuid" Usage="System.Data.SqlTypes.SqlGuid.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -807,6 +825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_Equality(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -858,6 +877,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_Explicit(System.Data.SqlTypes.SqlBinary)~System.Data.SqlTypes.SqlGuid" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlBinary) As SqlGuid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlGuid(System::Data::SqlTypes::SqlBinary x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlGuid" Usage="System.Data.SqlTypes.SqlGuid.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -896,6 +916,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_Explicit(System.Data.SqlTypes.SqlGuid)~System.Guid" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlGuid) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Guid(System::Data::SqlTypes::SqlGuid x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlGuid -&gt; Guid" Usage="System.Data.SqlTypes.SqlGuid.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -934,6 +955,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlGuid" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlString) As SqlGuid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlGuid(System::Data::SqlTypes::SqlString x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlGuid" Usage="System.Data.SqlTypes.SqlGuid.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -972,6 +994,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_GreaterThan(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1014,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1056,6 +1080,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_Implicit(System.Guid)~System.Data.SqlTypes.SqlGuid" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As Guid) As SqlGuid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlGuid(Guid x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Guid -&gt; System.Data.SqlTypes.SqlGuid" Usage="System.Data.SqlTypes.SqlGuid.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1094,6 +1119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_Inequality(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlGuid.op_Inequality (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1136,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_LessThan(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1178,6 +1205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.op_LessThanOrEqual(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As SqlGuid, y As SqlGuid) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlGuid x, System::Data::SqlTypes::SqlGuid y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.SqlTypes.SqlGuid * System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1220,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As SqlGuid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlGuid Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Data.SqlTypes.SqlGuid" Usage="System.Data.SqlTypes.SqlGuid.Parse s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1368,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.ToByteArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToByteArray () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ToByteArray();" />
+      <MemberSignature Language="F#" Value="member this.ToByteArray : unit -&gt; byte[]" Usage="sqlGuid.ToByteArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1403,6 +1433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.ToSqlBinary" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlBinary () As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlBinary ToSqlBinary();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlBinary : unit -&gt; System.Data.SqlTypes.SqlBinary" Usage="sqlGuid.ToSqlBinary " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1438,6 +1469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.ToSqlString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlString () As SqlString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString ToSqlString();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlString : unit -&gt; System.Data.SqlTypes.SqlString" Usage="sqlGuid.ToSqlString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1473,6 +1505,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlGuid.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlGuid.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1508,6 +1541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlGuid.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Value { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : Guid" Usage="System.Data.SqlTypes.SqlGuid.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

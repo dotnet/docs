@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperSize" />
   <TypeSignature Language="VB.NET" Value="Public Class PaperSize" />
   <TypeSignature Language="C++ CLI" Value="public ref class PaperSize" />
+  <TypeSignature Language="F#" Value="type PaperSize = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSize.#ctor(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PaperSize(System::String ^ name, int width, int height);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.PaperSize : string * int * int -&gt; System.Drawing.Printing.PaperSize" Usage="new System.Drawing.Printing.PaperSize (name, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Drawing.Printing.PaperSize.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As PaperKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PaperKind Kind { System::Drawing::Printing::PaperKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : System.Drawing.Printing.PaperKind" Usage="System.Drawing.Printing.PaperSize.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.PaperName" />
       <MemberSignature Language="VB.NET" Value="Public Property PaperName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PaperName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PaperName : string with get, set" Usage="System.Drawing.Printing.PaperSize.PaperName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.RawKind" />
       <MemberSignature Language="VB.NET" Value="Public Property RawKind As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RawKind { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RawKind : int with get, set" Usage="System.Drawing.Printing.PaperSize.RawKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -370,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSize.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="paperSize.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -391,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Drawing.Printing.PaperSize.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

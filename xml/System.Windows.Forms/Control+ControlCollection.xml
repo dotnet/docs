@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Control.ControlCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class Control.ControlCollection&#xA;Inherits ArrangedElementCollection&#xA;Implements ICloneable, IList" />
   <TypeSignature Language="C++ CLI" Value="public: ref class Control::ControlCollection : System::Windows::Forms::Layout::ArrangedElementCollection, ICloneable, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type Control.ControlCollection = class&#xA;    inherit ArrangedElementCollection&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.#ctor(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlCollection(System::Windows::Forms::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Control.ControlCollection : System.Windows.Forms.Control -&gt; System.Windows.Forms.Control.ControlCollection" Usage="new System.Windows.Forms.Control.ControlCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.Add(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (value As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Forms::Control ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Forms.Control -&gt; unit&#xA;override this.Add : System.Windows.Forms.Control -&gt; unit" Usage="controlCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.AddRange(System.Windows.Forms.Control[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (controls As Control())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(cli::array &lt;System::Windows::Forms::Control ^&gt; ^ controls);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Windows.Forms.Control[] -&gt; unit&#xA;override this.AddRange : System.Windows.Forms.Control[] -&gt; unit" Usage="controlCollection.AddRange controls" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="controlCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -233,6 +238,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.Contains(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.Control -&gt; bool" Usage="controlCollection.Contains control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="controlCollection.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -307,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.Find(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (key As String, searchAllChildren As Boolean) As Control()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Forms::Control ^&gt; ^ Find(System::String ^ key, bool searchAllChildren);" />
+      <MemberSignature Language="F#" Value="member this.Find : string * bool -&gt; System.Windows.Forms.Control[]" Usage="controlCollection.Find (key, searchAllChildren)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.GetChildIndex(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildIndex (child As Control) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetChildIndex(System::Windows::Forms::Control ^ child);" />
+      <MemberSignature Language="F#" Value="member this.GetChildIndex : System.Windows.Forms.Control -&gt; int" Usage="controlCollection.GetChildIndex child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -377,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.GetChildIndex(System.Windows.Forms.Control,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChildIndex (child As Control, throwException As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetChildIndex(System::Windows::Forms::Control ^ child, bool throwException);" />
+      <MemberSignature Language="F#" Value="abstract member GetChildIndex : System.Windows.Forms.Control * bool -&gt; int&#xA;override this.GetChildIndex : System.Windows.Forms.Control * bool -&gt; int" Usage="controlCollection.GetChildIndex (child, throwException)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -413,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="controlCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -436,6 +447,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.IndexOf(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.Control -&gt; int" Usage="controlCollection.IndexOf control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -467,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.IndexOfKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOfKey : string -&gt; int&#xA;override this.IndexOfKey : string -&gt; int" Usage="controlCollection.IndexOfKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -511,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Control.ControlCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Control ^ default[int] { System::Windows::Forms::Control ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.Control" Usage="System.Windows.Forms.Control.ControlCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -544,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Control.ControlCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Control ^ default[System::String ^] { System::Windows::Forms::Control ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.Control" Usage="System.Windows.Forms.Control.ControlCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -575,6 +590,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Control.ControlCollection.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ Owner { System::Windows::Forms::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Windows.Forms.Control" Usage="System.Windows.Forms.Control.ControlCollection.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -595,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.Remove(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (value As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Windows::Forms::Control ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Forms.Control -&gt; unit&#xA;override this.Remove : System.Windows.Forms.Control -&gt; unit" Usage="controlCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -644,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="controlCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -693,6 +711,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.RemoveByKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveByKey (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveByKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveByKey : string -&gt; unit&#xA;override this.RemoveByKey : string -&gt; unit" Usage="controlCollection.RemoveByKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -723,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ControlCollection.SetChildIndex(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetChildIndex (child As Control, newIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetChildIndex(System::Windows::Forms::Control ^ child, int newIndex);" />
+      <MemberSignature Language="F#" Value="abstract member SetChildIndex : System.Windows.Forms.Control * int -&gt; unit&#xA;override this.SetChildIndex : System.Windows.Forms.Control * int -&gt; unit" Usage="controlCollection.SetChildIndex (child, newIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

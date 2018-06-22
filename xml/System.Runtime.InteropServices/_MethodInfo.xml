@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices._MethodInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface _MethodInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class _MethodInfo" />
+  <TypeSignature Language="F#" Value="type _MethodInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As MethodAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.MethodAttributes" Usage="System.Runtime.InteropServices._MethodInfo.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.CallingConvention" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallingConvention As CallingConventions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::CallingConventions CallingConvention { System::Reflection::CallingConventions get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallingConvention : System.Reflection.CallingConventions" Usage="System.Runtime.InteropServices._MethodInfo.CallingConvention" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Runtime.InteropServices._MethodInfo.DeclaringType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool" Usage="_MethodInfo.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetBaseDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBaseDefinition () As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetBaseDefinition();" />
+      <MemberSignature Language="F#" Value="abstract member GetBaseDefinition : unit -&gt; System.Reflection.MethodInfo" Usage="_MethodInfo.GetBaseDefinition " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : bool -&gt; obj[]" Usage="_MethodInfo.GetCustomAttributes inherit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : Type * bool -&gt; obj[]" Usage="_MethodInfo.GetCustomAttributes (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int" Usage="_MethodInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -326,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId);" />
+      <MemberSignature Language="F#" Value="abstract member GetIDsOfNames :  * nativeint * uint32 * uint32 * nativeint -&gt; unit" Usage="_MethodInfo.GetIDsOfNames (riid, rgszNames, cNames, lcid, rgDispId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -365,6 +375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetMethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodImplementationFlags () As MethodImplAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodImplAttributes GetMethodImplementationFlags();" />
+      <MemberSignature Language="F#" Value="abstract member GetMethodImplementationFlags : unit -&gt; System.Reflection.MethodImplAttributes" Usage="_MethodInfo.GetMethodImplementationFlags " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -396,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetParameters" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParameters () As ParameterInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetParameters();" />
+      <MemberSignature Language="F#" Value="abstract member GetParameters : unit -&gt; System.Reflection.ParameterInfo[]" Usage="_MethodInfo.GetParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -427,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
+      <MemberSignature Language="F#" Value="abstract member GetType : unit -&gt; Type" Usage="_MethodInfo.GetType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -458,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfo : uint32 * uint32 * nativeint -&gt; unit" Usage="_MethodInfo.GetTypeInfo (iTInfo, lcid, ppTInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -493,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoCount (ByRef pcTInfo As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoCount :  -&gt; unit" Usage="_MethodInfo.GetTypeInfoCount pcTInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -544,6 +559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.Invoke(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (obj As Object, parameters As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * obj[] -&gt; obj" Usage="_MethodInfo.Invoke (obj, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -579,6 +595,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="_MethodInfo.Invoke (obj, invokeAttr, binder, parameters, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -621,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : uint32 *  * uint32 * int16 * nativeint * nativeint * nativeint * nativeint -&gt; unit" Usage="_MethodInfo.Invoke (dispIdMember, riid, lcid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -666,6 +684,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsAbstract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbstract As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbstract { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAbstract : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsAbstract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -697,6 +716,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAssembly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAssembly : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -728,6 +748,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsConstructor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConstructor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConstructor { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConstructor : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsConstructor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -759,6 +780,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDefined(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="abstract member IsDefined : Type * bool -&gt; bool" Usage="_MethodInfo.IsDefined (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -797,6 +819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsFamily" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamily As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamily { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFamily : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -828,6 +851,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsFamilyAndAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamilyAndAssembly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyAndAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFamilyAndAssembly : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsFamilyAndAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -859,6 +883,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsFamilyOrAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamilyOrAssembly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyOrAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFamilyOrAssembly : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsFamilyOrAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -890,6 +915,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsFinal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFinal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFinal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFinal : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsFinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -921,6 +947,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsHideBySig" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHideBySig As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHideBySig { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHideBySig : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsHideBySig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -952,6 +979,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsPrivate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrivate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPrivate : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsPrivate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -983,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsPublic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPublic : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsPublic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1014,6 +1043,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsSpecialName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSpecialName : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsSpecialName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1045,6 +1075,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsStatic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStatic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStatic { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsStatic : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsStatic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1076,6 +1107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.IsVirtual" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVirtual As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVirtual { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsVirtual : bool" Usage="System.Runtime.InteropServices._MethodInfo.IsVirtual" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1107,6 +1139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberType As MemberTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Runtime.InteropServices._MethodInfo.MemberType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1137,6 +1170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.MethodHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodHandle As RuntimeMethodHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property RuntimeMethodHandle MethodHandle { RuntimeMethodHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodHandle : RuntimeMethodHandle" Usage="System.Runtime.InteropServices._MethodInfo.MethodHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1167,6 +1201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.InteropServices._MethodInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1197,6 +1232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.ReflectedType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReflectedType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReflectedType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Runtime.InteropServices._MethodInfo.ReflectedType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1227,6 +1263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Runtime.InteropServices._MethodInfo.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1257,6 +1294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._MethodInfo.ReturnTypeCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnTypeCustomAttributes As ICustomAttributeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ICustomAttributeProvider ^ ReturnTypeCustomAttributes { System::Reflection::ICustomAttributeProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnTypeCustomAttributes : System.Reflection.ICustomAttributeProvider" Usage="System.Runtime.InteropServices._MethodInfo.ReturnTypeCustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1287,6 +1325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._MethodInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string" Usage="_MethodInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

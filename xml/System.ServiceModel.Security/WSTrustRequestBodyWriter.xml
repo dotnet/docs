@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustRequestBodyWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class WSTrustRequestBodyWriter&#xA;Inherits BodyWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSTrustRequestBodyWriter : System::ServiceModel::Channels::BodyWriter" />
+  <TypeSignature Language="F#" Value="type WSTrustRequestBodyWriter = class&#xA;    inherit BodyWriter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken requestSecurityToken, class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer serializer, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext serializationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustRequestBodyWriter.#ctor(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustRequestBodyWriter(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ requestSecurityToken, System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ serializer, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ serializationContext);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSTrustRequestBodyWriter : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken * System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; System.ServiceModel.Security.WSTrustRequestBodyWriter" Usage="new System.ServiceModel.Security.WSTrustRequestBodyWriter (requestSecurityToken, serializer, serializationContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustRequestBodyWriter.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnWriteBodyContents (writer As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.OnWriteBodyContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="wSTrustRequestBodyWriter.OnWriteBodyContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Assemblies.AssemblyHash" />
   <TypeSignature Language="VB.NET" Value="Public Structure AssemblyHash&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public value class AssemblyHash : ICloneable" />
+  <TypeSignature Language="F#" Value="type AssemblyHash = struct&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyHash(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.Assemblies.AssemblyHash : byte[] -&gt; System.Configuration.Assemblies.AssemblyHash" Usage="new System.Configuration.Assemblies.AssemblyHash value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.#ctor(System.Configuration.Assemblies.AssemblyHashAlgorithm,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (algorithm As AssemblyHashAlgorithm, value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyHash(System::Configuration::Assemblies::AssemblyHashAlgorithm algorithm, cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.Assemblies.AssemblyHash : System.Configuration.Assemblies.AssemblyHashAlgorithm * byte[] -&gt; System.Configuration.Assemblies.AssemblyHash" Usage="new System.Configuration.Assemblies.AssemblyHash (algorithm, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Assemblies.AssemblyHash.Algorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property Algorithm As AssemblyHashAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Assemblies::AssemblyHashAlgorithm Algorithm { System::Configuration::Assemblies::AssemblyHashAlgorithm get(); void set(System::Configuration::Assemblies::AssemblyHashAlgorithm value); };" />
+      <MemberSignature Language="F#" Value="member this.Algorithm : System.Configuration.Assemblies.AssemblyHashAlgorithm with get, set" Usage="System.Configuration.Assemblies.AssemblyHash.Algorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="assemblyHash.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.Assemblies.AssemblyHash.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As AssemblyHash " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Configuration::Assemblies::AssemblyHash Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Configuration.Assemblies.AssemblyHash" Usage="System.Configuration.Assemblies.AssemblyHash.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.GetValue" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetValue();" />
+      <MemberSignature Language="F#" Value="member this.GetValue : unit -&gt; byte[]" Usage="assemblyHash.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.SetValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : byte[] -&gt; unit" Usage="assemblyHash.SetValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

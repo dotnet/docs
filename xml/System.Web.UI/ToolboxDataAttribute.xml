@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ToolboxDataAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolboxDataAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolboxDataAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ToolboxDataAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ToolboxDataAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (data As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxDataAttribute(System::String ^ data);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ToolboxDataAttribute : string -&gt; System.Web.UI.ToolboxDataAttribute" Usage="new System.Web.UI.ToolboxDataAttribute data" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ToolboxDataAttribute.Data" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Data { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Data : string" Usage="System.Web.UI.ToolboxDataAttribute.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ToolboxDataAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ToolboxDataAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::ToolboxDataAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.ToolboxDataAttribute" Usage="System.Web.UI.ToolboxDataAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ToolboxDataAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="toolboxDataAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ToolboxDataAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="toolboxDataAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ToolboxDataAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="toolboxDataAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

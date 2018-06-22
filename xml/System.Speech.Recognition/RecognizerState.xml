@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizerState" />
   <TypeSignature Language="VB.NET" Value="Public Enum RecognizerState" />
   <TypeSignature Language="C++ CLI" Value="public enum class RecognizerState" />
+  <TypeSignature Language="F#" Value="type RecognizerState = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@ _recognizer.StateChanged +=
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.RecognizerState.Listening" />
       <MemberSignature Language="VB.NET" Value="Listening" />
       <MemberSignature Language="C++ CLI" Value="Listening" />
+      <MemberSignature Language="F#" Value="Listening = 1" Usage="System.Speech.Recognition.RecognizerState.Listening" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -81,6 +83,7 @@ _recognizer.StateChanged +=
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.RecognizerState.Stopped" />
       <MemberSignature Language="VB.NET" Value="Stopped" />
       <MemberSignature Language="C++ CLI" Value="Stopped" />
+      <MemberSignature Language="F#" Value="Stopped = 0" Usage="System.Speech.Recognition.RecognizerState.Stopped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

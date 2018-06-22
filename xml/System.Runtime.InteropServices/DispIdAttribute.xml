@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DispIdAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DispIdAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispIdAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DispIdAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.DispIdAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dispId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DispIdAttribute(int dispId);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.DispIdAttribute : int -&gt; System.Runtime.InteropServices.DispIdAttribute" Usage="new System.Runtime.InteropServices.DispIdAttribute dispId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.DispIdAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int" Usage="System.Runtime.InteropServices.DispIdAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

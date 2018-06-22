@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerTheme" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerTheme&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerTheme abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type DesignerTheme = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (theme As WorkflowTheme)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerTheme(System::Workflow::ComponentModel::Design::WorkflowTheme ^ theme);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.DesignerTheme : System.Workflow.ComponentModel.Design.WorkflowTheme -&gt; System.Workflow.ComponentModel.Design.DesignerTheme" Usage="new System.Workflow.ComponentModel.Design.DesignerTheme theme" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ApplyTo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ApplyTo As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplyTo { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyTo : string with get, set" Usage="System.Workflow.ComponentModel.Design.DesignerTheme.ApplyTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ContainingTheme" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ContainingTheme As WorkflowTheme" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::ComponentModel::Design::WorkflowTheme ^ ContainingTheme { System::Workflow::ComponentModel::Design::WorkflowTheme ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainingTheme : System.Workflow.ComponentModel.Design.WorkflowTheme" Usage="System.Workflow.ComponentModel.Design.DesignerTheme.ContainingTheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.DesignerType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DesignerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DesignerType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerType : Type with get, set" Usage="System.Workflow.ComponentModel.Design.DesignerTheme.DesignerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="designerTheme.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!DesignerTheme ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="designerTheme.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="designerTheme.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnAmbientPropertyChanged(valuetype System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.OnAmbientPropertyChanged(System.Workflow.ComponentModel.Design.AmbientProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnAmbientPropertyChanged(System::Workflow::ComponentModel::Design::AmbientProperty ambientProperty);" />
+      <MemberSignature Language="F#" Value="abstract member OnAmbientPropertyChanged : System.Workflow.ComponentModel.Design.AmbientProperty -&gt; unit&#xA;override this.OnAmbientPropertyChanged : System.Workflow.ComponentModel.Design.AmbientProperty -&gt; unit" Usage="designerTheme.OnAmbientPropertyChanged ambientProperty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool" Usage="System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

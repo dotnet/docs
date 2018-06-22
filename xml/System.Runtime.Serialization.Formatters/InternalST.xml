@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.InternalST" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InternalST" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalST sealed" />
+  <TypeSignature Language="F#" Value="type InternalST = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.InternalST.InfoSoap(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InfoSoap (ParamArray messages As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InfoSoap(... cli::array &lt;System::Object ^&gt; ^ messages);" />
+      <MemberSignature Language="F#" Value="static member InfoSoap : obj[] -&gt; unit" Usage="System.Runtime.Serialization.Formatters.InternalST.InfoSoap messages" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.InternalST.LoadAssemblyFromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LoadAssemblyFromString (assemblyString As String) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Assembly ^ LoadAssemblyFromString(System::String ^ assemblyString);" />
+      <MemberSignature Language="F#" Value="static member LoadAssemblyFromString : string -&gt; System.Reflection.Assembly" Usage="System.Runtime.Serialization.Formatters.InternalST.LoadAssemblyFromString assemblyString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.InternalST.SerializationSetValue(System.Reflection.FieldInfo,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SerializationSetValue (fi As FieldInfo, target As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SerializationSetValue(System::Reflection::FieldInfo ^ fi, System::Object ^ target, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SerializationSetValue : System.Reflection.FieldInfo * obj * obj -&gt; unit" Usage="System.Runtime.Serialization.Formatters.InternalST.SerializationSetValue (fi, target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.InternalST.Soap(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Soap (ParamArray messages As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Soap(... cli::array &lt;System::Object ^&gt; ^ messages);" />
+      <MemberSignature Language="F#" Value="static member Soap : obj[] -&gt; unit" Usage="System.Runtime.Serialization.Formatters.InternalST.Soap messages" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.InternalST.SoapAssert(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SoapAssert (condition As Boolean, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SoapAssert(bool condition, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member SoapAssert : bool * string -&gt; unit" Usage="System.Runtime.Serialization.Formatters.InternalST.SoapAssert (condition, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.InternalST.SoapCheckEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SoapCheckEnabled () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SoapCheckEnabled();" />
+      <MemberSignature Language="F#" Value="static member SoapCheckEnabled : unit -&gt; bool" Usage="System.Runtime.Serialization.Formatters.InternalST.SoapCheckEnabled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

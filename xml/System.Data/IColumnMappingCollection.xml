@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IColumnMappingCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface IColumnMappingCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public interface class IColumnMappingCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type IColumnMappingCollection = interface&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (sourceColumnName As String, dataSetColumnName As String) As IColumnMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IColumnMapping ^ Add(System::String ^ sourceColumnName, System::String ^ dataSetColumnName);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; System.Data.IColumnMapping" Usage="iColumnMappingCollection.Add (sourceColumnName, dataSetColumnName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (sourceColumnName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ sourceColumnName);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool" Usage="iColumnMappingCollection.Contains sourceColumnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.GetByDataSetColumn(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetByDataSetColumn (dataSetColumnName As String) As IColumnMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IColumnMapping ^ GetByDataSetColumn(System::String ^ dataSetColumnName);" />
+      <MemberSignature Language="F#" Value="abstract member GetByDataSetColumn : string -&gt; System.Data.IColumnMapping" Usage="iColumnMappingCollection.GetByDataSetColumn dataSetColumnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (sourceColumnName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ sourceColumnName);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : string -&gt; int" Usage="iColumnMappingCollection.IndexOf sourceColumnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IColumnMappingCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ index); void set(System::String ^ index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.IColumnMappingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.RemoveAt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (sourceColumnName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::String ^ sourceColumnName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : string -&gt; unit" Usage="iColumnMappingCollection.RemoveAt sourceColumnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

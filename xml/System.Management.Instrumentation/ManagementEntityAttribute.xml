@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementEntityAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementEntityAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementEntityAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ManagementEntityAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementEntityAttribute.External" />
       <MemberSignature Language="VB.NET" Value="Public Property External As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool External { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.External : bool with get, set" Usage="System.Management.Instrumentation.ManagementEntityAttribute.External" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementEntityAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Management.Instrumentation.ManagementEntityAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -142,6 +145,7 @@ public class MortgageCalcWMIProvider
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementEntityAttribute.Singleton" />
       <MemberSignature Language="VB.NET" Value="Public Property Singleton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Singleton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Singleton : bool with get, set" Usage="System.Management.Instrumentation.ManagementEntityAttribute.Singleton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

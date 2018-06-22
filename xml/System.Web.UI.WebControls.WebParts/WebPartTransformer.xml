@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebPartTransformer" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartTransformer abstract" />
+  <TypeSignature Language="F#" Value="type WebPartTransformer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateConfigurationControl () As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::Control ^ CreateConfigurationControl();" />
+      <MemberSignature Language="F#" Value="abstract member CreateConfigurationControl : unit -&gt; System.Web.UI.Control&#xA;override this.CreateConfigurationControl : unit -&gt; System.Web.UI.Control" Usage="webPartTransformer.CreateConfigurationControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.LoadConfigurationState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub LoadConfigurationState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void LoadConfigurationState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadConfigurationState : obj -&gt; unit&#xA;override this.LoadConfigurationState : obj -&gt; unit" Usage="webPartTransformer.LoadConfigurationState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.SaveConfigurationState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SaveConfigurationState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ SaveConfigurationState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveConfigurationState : unit -&gt; obj&#xA;override this.SaveConfigurationState : unit -&gt; obj" Usage="webPartTransformer.SaveConfigurationState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.Transform(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Transform (providerData As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Transform(System::Object ^ providerData);" />
+      <MemberSignature Language="F#" Value="abstract member Transform : obj -&gt; obj" Usage="webPartTransformer.Transform providerData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

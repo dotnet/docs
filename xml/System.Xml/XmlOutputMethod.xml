@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlOutputMethod" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlOutputMethod" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlOutputMethod" />
+  <TypeSignature Language="F#" Value="type XmlOutputMethod = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlOutputMethod.AutoDetect" />
       <MemberSignature Language="VB.NET" Value="AutoDetect" />
       <MemberSignature Language="C++ CLI" Value="AutoDetect" />
+      <MemberSignature Language="F#" Value="AutoDetect = 3" Usage="System.Xml.XmlOutputMethod.AutoDetect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlOutputMethod.Html" />
       <MemberSignature Language="VB.NET" Value="Html" />
       <MemberSignature Language="C++ CLI" Value="Html" />
+      <MemberSignature Language="F#" Value="Html = 1" Usage="System.Xml.XmlOutputMethod.Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlOutputMethod.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 2" Usage="System.Xml.XmlOutputMethod.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlOutputMethod.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 0" Usage="System.Xml.XmlOutputMethod.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

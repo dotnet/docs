@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.PnrpPeerResolverBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PnrpPeerResolverBindingElement&#xA;Inherits PeerResolverBindingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class PnrpPeerResolverBindingElement sealed : System::ServiceModel::Channels::PeerResolverBindingElement" />
+  <TypeSignature Language="F#" Value="type PnrpPeerResolverBindingElement = class&#xA;    inherit PeerResolverBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.#ctor(System.ServiceModel.PeerResolvers.PeerReferralPolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (referralPolicy As PeerReferralPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PnrpPeerResolverBindingElement(System::ServiceModel::PeerResolvers::PeerReferralPolicy referralPolicy);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.PnrpPeerResolverBindingElement : System.ServiceModel.PeerResolvers.PeerReferralPolicy -&gt; System.ServiceModel.Channels.PnrpPeerResolverBindingElement" Usage="new System.ServiceModel.Channels.PnrpPeerResolverBindingElement referralPolicy" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="pnrpPeerResolverBindingElement.BuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="pnrpPeerResolverBindingElement.BuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="pnrpPeerResolverBindingElement.CanBuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="pnrpPeerResolverBindingElement.CanBuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="pnrpPeerResolverBindingElement.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.CreatePeerResolver" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePeerResolver () As PeerResolver" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::PeerResolver ^ CreatePeerResolver();" />
+      <MemberSignature Language="F#" Value="override this.CreatePeerResolver : unit -&gt; System.ServiceModel.PeerResolver" Usage="pnrpPeerResolverBindingElement.CreatePeerResolver " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="pnrpPeerResolverBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.ReferralPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ReferralPolicy As PeerReferralPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::PeerResolvers::PeerReferralPolicy ReferralPolicy { System::ServiceModel::PeerResolvers::PeerReferralPolicy get(); void set(System::ServiceModel::PeerResolvers::PeerReferralPolicy value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferralPolicy : System.ServiceModel.PeerResolvers.PeerReferralPolicy with get, set" Usage="System.ServiceModel.Channels.PnrpPeerResolverBindingElement.ReferralPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

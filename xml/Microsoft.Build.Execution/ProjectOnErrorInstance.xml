@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectOnErrorInstance" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectOnErrorInstance&#xA;Inherits ProjectTargetInstanceChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectOnErrorInstance sealed : Microsoft::Build::Execution::ProjectTargetInstanceChild" />
+  <TypeSignature Language="F#" Value="type ProjectOnErrorInstance = class&#xA;    inherit ProjectTargetInstanceChild" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Condition { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string" Usage="Microsoft.Build.Execution.ProjectOnErrorInstance.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.ConditionLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConditionLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectOnErrorInstance.ConditionLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.ExecuteTargets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecuteTargets As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExecuteTargets { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecuteTargets : string" Usage="Microsoft.Build.Execution.ProjectOnErrorInstance.ExecuteTargets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.ExecuteTargetsLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecuteTargetsLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ExecuteTargetsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecuteTargetsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectOnErrorInstance.ExecuteTargetsLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectOnErrorInstance.Location" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Location As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ Location { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectOnErrorInstance.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

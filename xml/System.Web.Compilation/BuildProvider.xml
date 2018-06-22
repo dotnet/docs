@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BuildProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildProvider abstract" />
+  <TypeSignature Language="F#" Value="type BuildProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProvider.CodeCompilerType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CodeCompilerType As CompilerType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Compilation::CompilerType ^ CodeCompilerType { System::Web::Compilation::CompilerType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeCompilerType : System.Web.Compilation.CompilerType" Usage="System.Web.Compilation.BuildProvider.CodeCompilerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit&#xA;override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="buildProvider.GenerateCode assemblyBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetCodeCompileUnit(System.Collections.IDictionary@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetCodeCompileUnit (ByRef linePragmasTable As IDictionary) As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::CodeDom::CodeCompileUnit ^ GetCodeCompileUnit([Runtime::InteropServices::Out] System::Collections::IDictionary ^ % linePragmasTable);" />
+      <MemberSignature Language="F#" Value="abstract member GetCodeCompileUnit :  -&gt; System.CodeDom.CodeCompileUnit&#xA;override this.GetCodeCompileUnit :  -&gt; System.CodeDom.CodeCompileUnit" Usage="buildProvider.GetCodeCompileUnit linePragmasTable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCustomString (results As CompilerResults) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetCustomString(System::CodeDom::Compiler::CompilerResults ^ results);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomString : System.CodeDom.Compiler.CompilerResults -&gt; string&#xA;override this.GetCustomString : System.CodeDom.Compiler.CompilerResults -&gt; string" Usage="buildProvider.GetCustomString results" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetDefaultCompilerType" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetDefaultCompilerType () As CompilerType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::Compilation::CompilerType ^ GetDefaultCompilerType();" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultCompilerType : unit -&gt; System.Web.Compilation.CompilerType" Usage="buildProvider.GetDefaultCompilerType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetDefaultCompilerTypeForLanguage (language As String) As CompilerType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::Compilation::CompilerType ^ GetDefaultCompilerTypeForLanguage(System::String ^ language);" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultCompilerTypeForLanguage : string -&gt; System.Web.Compilation.CompilerType" Usage="buildProvider.GetDefaultCompilerTypeForLanguage language" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetGeneratedType(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGeneratedType (results As CompilerResults) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetGeneratedType(System::CodeDom::Compiler::CompilerResults ^ results);" />
+      <MemberSignature Language="F#" Value="abstract member GetGeneratedType : System.CodeDom.Compiler.CompilerResults -&gt; Type&#xA;override this.GetGeneratedType : System.CodeDom.Compiler.CompilerResults -&gt; Type" Usage="buildProvider.GetGeneratedType results" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResultFlags (results As CompilerResults) As BuildProviderResultFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Compilation::BuildProviderResultFlags GetResultFlags(System::CodeDom::Compiler::CompilerResults ^ results);" />
+      <MemberSignature Language="F#" Value="abstract member GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags&#xA;override this.GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags" Usage="buildProvider.GetResultFlags results" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.OpenReader" />
       <MemberSignature Language="VB.NET" Value="Protected Function OpenReader () As TextReader" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::IO::TextReader ^ OpenReader();" />
+      <MemberSignature Language="F#" Value="member this.OpenReader : unit -&gt; System.IO.TextReader" Usage="buildProvider.OpenReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.OpenReader(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function OpenReader (virtualPath As String) As TextReader" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::IO::TextReader ^ OpenReader(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="member this.OpenReader : string -&gt; System.IO.TextReader" Usage="buildProvider.OpenReader virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -469,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.OpenStream" />
       <MemberSignature Language="VB.NET" Value="Protected Function OpenStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::IO::Stream ^ OpenStream();" />
+      <MemberSignature Language="F#" Value="member this.OpenStream : unit -&gt; System.IO.Stream" Usage="buildProvider.OpenStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -501,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.OpenStream(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function OpenStream (virtualPath As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::IO::Stream ^ OpenStream(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="member this.OpenStream : string -&gt; System.IO.Stream" Usage="buildProvider.OpenStream virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -535,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.ProcessCompileErrors(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ProcessCompileErrors (results As CompilerResults)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessCompileErrors(System::CodeDom::Compiler::CompilerResults ^ results);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCompileErrors : System.CodeDom.Compiler.CompilerResults -&gt; unit&#xA;override this.ProcessCompileErrors : System.CodeDom.Compiler.CompilerResults -&gt; unit" Usage="buildProvider.ProcessCompileErrors results" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -567,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProvider.ReferencedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ReferencedAssemblies As ICollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ICollection ^ ReferencedAssemblies { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblies : System.Collections.ICollection" Usage="System.Web.Compilation.BuildProvider.ReferencedAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -600,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.RegisterBuildProvider(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterBuildProvider (extension As String, providerType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterBuildProvider(System::String ^ extension, Type ^ providerType);" />
+      <MemberSignature Language="F#" Value="static member RegisterBuildProvider : string * Type -&gt; unit" Usage="System.Web.Compilation.BuildProvider.RegisterBuildProvider (extension, providerType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -632,6 +648,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProvider.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property VirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string" Usage="System.Web.Compilation.BuildProvider.VirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -665,6 +682,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProvider.VirtualPathDependencies" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property VirtualPathDependencies As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ VirtualPathDependencies { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPathDependencies : System.Collections.ICollection" Usage="System.Web.Compilation.BuildProvider.VirtualPathDependencies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

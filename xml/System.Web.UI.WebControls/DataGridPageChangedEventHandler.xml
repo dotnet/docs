@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridPageChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridPageChangedEventHandler(source As Object, e As DataGridPageChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridPageChangedEventHandler(System::Object ^ source, DataGridPageChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridPageChangedEventHandler = delegate of obj * DataGridPageChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

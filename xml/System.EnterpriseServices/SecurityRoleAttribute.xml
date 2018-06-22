@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SecurityRoleAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityRoleAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityRoleAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SecurityRoleAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityRoleAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (role As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityRoleAttribute(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.SecurityRoleAttribute : string -&gt; System.EnterpriseServices.SecurityRoleAttribute" Usage="new System.EnterpriseServices.SecurityRoleAttribute role" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityRoleAttribute.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (role As String, everyone As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityRoleAttribute(System::String ^ role, bool everyone);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.SecurityRoleAttribute : string * bool -&gt; System.EnterpriseServices.SecurityRoleAttribute" Usage="new System.EnterpriseServices.SecurityRoleAttribute (role, everyone)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityRoleAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.EnterpriseServices.SecurityRoleAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityRoleAttribute.Role" />
       <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Role { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Role : string with get, set" Usage="System.EnterpriseServices.SecurityRoleAttribute.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityRoleAttribute.SetEveryoneAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property SetEveryoneAccess As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SetEveryoneAccess { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SetEveryoneAccess : bool with get, set" Usage="System.EnterpriseServices.SecurityRoleAttribute.SetEveryoneAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

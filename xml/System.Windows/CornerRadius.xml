@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.CornerRadius" />
   <TypeSignature Language="VB.NET" Value="Public Structure CornerRadius&#xA;Implements IEquatable(Of CornerRadius)" />
   <TypeSignature Language="C++ CLI" Value="public value class CornerRadius : IEquatable&lt;System::Windows::CornerRadius&gt;" />
+  <TypeSignature Language="F#" Value="type CornerRadius = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uniformRadius As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CornerRadius(double uniformRadius);" />
+      <MemberSignature Language="F#" Value="new System.Windows.CornerRadius : double -&gt; System.Windows.CornerRadius" Usage="new System.Windows.CornerRadius uniformRadius" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.#ctor(System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (topLeft As Double, topRight As Double, bottomRight As Double, bottomLeft As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CornerRadius(double topLeft, double topRight, double bottomRight, double bottomLeft);" />
+      <MemberSignature Language="F#" Value="new System.Windows.CornerRadius : double * double * double * double -&gt; System.Windows.CornerRadius" Usage="new System.Windows.CornerRadius (topLeft, topRight, bottomRight, bottomLeft)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.CornerRadius.BottomLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property BottomLeft As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BottomLeft { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.BottomLeft : double with get, set" Usage="System.Windows.CornerRadius.BottomLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.CornerRadius.BottomRight" />
       <MemberSignature Language="VB.NET" Value="Public Property BottomRight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BottomRight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.BottomRight : double with get, set" Usage="System.Windows.CornerRadius.BottomRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cornerRadius.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.CornerRadius cornerRadius) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.Equals(System.Windows.CornerRadius)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::CornerRadius cornerRadius);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.CornerRadius -&gt; bool" Usage="cornerRadius.Equals cornerRadius" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cornerRadius.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.op_Equality(System.Windows.CornerRadius,System.Windows.CornerRadius)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (cr1 As CornerRadius, cr2 As CornerRadius) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::CornerRadius cr1, System::Windows::CornerRadius cr2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.CornerRadius * System.Windows.CornerRadius -&gt; bool" Usage="cr1 = cr2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.op_Inequality(System.Windows.CornerRadius,System.Windows.CornerRadius)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (cr1 As CornerRadius, cr2 As CornerRadius) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::CornerRadius cr1, System::Windows::CornerRadius cr2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.CornerRadius * System.Windows.CornerRadius -&gt; bool" Usage="System.Windows.CornerRadius.op_Inequality (cr1, cr2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -337,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.CornerRadius.TopLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property TopLeft As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TopLeft { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.TopLeft : double with get, set" Usage="System.Windows.CornerRadius.TopLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -367,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.CornerRadius.TopRight" />
       <MemberSignature Language="VB.NET" Value="Public Property TopRight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TopRight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.TopRight : double with get, set" Usage="System.Windows.CornerRadius.TopRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -397,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cornerRadius.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

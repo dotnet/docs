@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LinearGradientMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum LinearGradientMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class LinearGradientMode" />
+  <TypeSignature Language="F#" Value="type LinearGradientMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal" />
       <MemberSignature Language="VB.NET" Value="BackwardDiagonal" />
       <MemberSignature Language="C++ CLI" Value="BackwardDiagonal" />
+      <MemberSignature Language="F#" Value="BackwardDiagonal = 3" Usage="System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal" />
       <MemberSignature Language="VB.NET" Value="ForwardDiagonal" />
       <MemberSignature Language="C++ CLI" Value="ForwardDiagonal" />
+      <MemberSignature Language="F#" Value="ForwardDiagonal = 2" Usage="System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LinearGradientMode.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 0" Usage="System.Drawing.Drawing2D.LinearGradientMode.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LinearGradientMode.Vertical" />
       <MemberSignature Language="VB.NET" Value="Vertical" />
       <MemberSignature Language="C++ CLI" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 1" Usage="System.Drawing.Drawing2D.LinearGradientMode.Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

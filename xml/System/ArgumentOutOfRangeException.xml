@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ArgumentOutOfRangeException" />
   <TypeSignature Language="VB.NET" Value="Public Class ArgumentOutOfRangeException&#xA;Inherits ArgumentException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArgumentOutOfRangeException : ArgumentException" />
+  <TypeSignature Language="F#" Value="type ArgumentOutOfRangeException = class&#xA;    inherit ArgumentException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -265,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentOutOfRangeException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentOutOfRangeException(System::String ^ paramName);" />
+      <MemberSignature Language="F#" Value="new ArgumentOutOfRangeException : string -&gt; ArgumentOutOfRangeException" Usage="new System.ArgumentOutOfRangeException paramName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -316,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentOutOfRangeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ArgumentOutOfRangeException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new ArgumentOutOfRangeException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; ArgumentOutOfRangeException" Usage="new System.ArgumentOutOfRangeException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -355,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentOutOfRangeException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentOutOfRangeException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new ArgumentOutOfRangeException : string * Exception -&gt; ArgumentOutOfRangeException" Usage="new System.ArgumentOutOfRangeException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -391,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentOutOfRangeException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentOutOfRangeException(System::String ^ paramName, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new ArgumentOutOfRangeException : string * string -&gt; ArgumentOutOfRangeException" Usage="new System.ArgumentOutOfRangeException (paramName, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -444,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentOutOfRangeException.#ctor(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String, actualValue As Object, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentOutOfRangeException(System::String ^ paramName, System::Object ^ actualValue, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new ArgumentOutOfRangeException : string * obj * string -&gt; ArgumentOutOfRangeException" Usage="new System.ArgumentOutOfRangeException (paramName, actualValue, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -502,6 +508,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArgumentOutOfRangeException.ActualValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ActualValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ActualValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActualValue : obj" Usage="System.ArgumentOutOfRangeException.ActualValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -551,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentOutOfRangeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="argumentOutOfRangeException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -608,6 +616,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArgumentOutOfRangeException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ArgumentOutOfRangeException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

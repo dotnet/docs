@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowTrackPoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTrackPoint sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowTrackPoint = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotations As TrackingAnnotationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ Annotations { System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Annotations : System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" Usage="System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchingLocation As WorkflowTrackingLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::WorkflowTrackingLocation ^ MatchingLocation { System::Workflow::Runtime::Tracking::WorkflowTrackingLocation ^ get(); void set(System::Workflow::Runtime::Tracking::WorkflowTrackingLocation ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchingLocation : System.Workflow.Runtime.Tracking.WorkflowTrackingLocation with get, set" Usage="System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

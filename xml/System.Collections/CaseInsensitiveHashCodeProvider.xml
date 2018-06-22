@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.CaseInsensitiveHashCodeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class CaseInsensitiveHashCodeProvider&#xA;Implements IHashCodeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class CaseInsensitiveHashCodeProvider : System::Collections::IHashCodeProvider" />
+  <TypeSignature Language="F#" Value="type CaseInsensitiveHashCodeProvider = class&#xA;    interface IHashCodeProvider" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -124,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveHashCodeProvider.#ctor(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (culture As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CaseInsensitiveHashCodeProvider(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="new System.Collections.CaseInsensitiveHashCodeProvider : System.Globalization.CultureInfo -&gt; System.Collections.CaseInsensitiveHashCodeProvider" Usage="new System.Collections.CaseInsensitiveHashCodeProvider culture" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveHashCodeProvider.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As CaseInsensitiveHashCodeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveHashCodeProvider ^ Default { System::Collections::CaseInsensitiveHashCodeProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.CaseInsensitiveHashCodeProvider" Usage="System.Collections.CaseInsensitiveHashCodeProvider.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -211,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveHashCodeProvider.DefaultInvariant" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultInvariant As CaseInsensitiveHashCodeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveHashCodeProvider ^ DefaultInvariant { System::Collections::CaseInsensitiveHashCodeProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultInvariant : System.Collections.CaseInsensitiveHashCodeProvider" Usage="System.Collections.CaseInsensitiveHashCodeProvider.DefaultInvariant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -258,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveHashCodeProvider.GetHashCode(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : obj -&gt; int" Usage="caseInsensitiveHashCodeProvider.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IHashCodeProvider.GetHashCode(System.Object)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.WebService" />
   <TypeSignature Language="VB.NET" Value="Public Class WebService&#xA;Inherits MarshalByValueComponent" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebService : System::ComponentModel::MarshalByValueComponent" />
+  <TypeSignature Language="F#" Value="type WebService = class&#xA;    inherit MarshalByValueComponent" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As HttpApplicationState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpApplicationState ^ Application { System::Web::HttpApplicationState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : System.Web.HttpApplicationState" Usage="System.Web.Services.WebService.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Services.WebService.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Server" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As HttpServerUtility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpServerUtility ^ Server { System::Web::HttpServerUtility ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Server : System.Web.HttpServerUtility" Usage="System.Web.Services.WebService.Server" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Session" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As HttpSessionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SessionState::HttpSessionState ^ Session { System::Web::SessionState::HttpSessionState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Session : System.Web.SessionState.HttpSessionState" Usage="System.Web.Services.WebService.Session" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.SoapVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapVersion As SoapProtocolVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapProtocolVersion SoapVersion { System::Web::Services::Protocols::SoapProtocolVersion get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoapVersion : System.Web.Services.Protocols.SoapProtocolVersion" Usage="System.Web.Services.WebService.SoapVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.User" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As IPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal" Usage="System.Web.Services.WebService.User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

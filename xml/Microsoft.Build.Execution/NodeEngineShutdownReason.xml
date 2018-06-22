@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.NodeEngineShutdownReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum NodeEngineShutdownReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class NodeEngineShutdownReason" />
+  <TypeSignature Language="F#" Value="type NodeEngineShutdownReason = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.NodeEngineShutdownReason.BuildComplete" />
       <MemberSignature Language="VB.NET" Value="BuildComplete" />
       <MemberSignature Language="C++ CLI" Value="BuildComplete" />
+      <MemberSignature Language="F#" Value="BuildComplete = 0" Usage="Microsoft.Build.Execution.NodeEngineShutdownReason.BuildComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.NodeEngineShutdownReason.BuildCompleteReuse" />
       <MemberSignature Language="VB.NET" Value="BuildCompleteReuse" />
       <MemberSignature Language="C++ CLI" Value="BuildCompleteReuse" />
+      <MemberSignature Language="F#" Value="BuildCompleteReuse = 1" Usage="Microsoft.Build.Execution.NodeEngineShutdownReason.BuildCompleteReuse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.NodeEngineShutdownReason.ConnectionFailed" />
       <MemberSignature Language="VB.NET" Value="ConnectionFailed" />
       <MemberSignature Language="C++ CLI" Value="ConnectionFailed" />
+      <MemberSignature Language="F#" Value="ConnectionFailed = 2" Usage="Microsoft.Build.Execution.NodeEngineShutdownReason.ConnectionFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.NodeEngineShutdownReason.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 3" Usage="Microsoft.Build.Execution.NodeEngineShutdownReason.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

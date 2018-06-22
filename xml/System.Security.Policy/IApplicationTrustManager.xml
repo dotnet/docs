@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.IApplicationTrustManager" />
   <TypeSignature Language="VB.NET" Value="Public Interface IApplicationTrustManager&#xA;Implements ISecurityEncodable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IApplicationTrustManager : System::Security::ISecurityEncodable" />
+  <TypeSignature Language="F#" Value="type IApplicationTrustManager = interface&#xA;    interface ISecurityEncodable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.ApplicationTrust DetermineApplicationTrust(class System.ActivationContext activationContext, class System.Security.Policy.TrustManagerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust(System.ActivationContext,System.Security.Policy.TrustManagerContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::ApplicationTrust ^ DetermineApplicationTrust(ActivationContext ^ activationContext, System::Security::Policy::TrustManagerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member DetermineApplicationTrust : ActivationContext * System.Security.Policy.TrustManagerContext -&gt; System.Security.Policy.ApplicationTrust" Usage="iApplicationTrustManager.DetermineApplicationTrust (activationContext, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

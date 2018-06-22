@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineRotation3DKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class SplineRotation3DKeyFrame&#xA;Inherits Rotation3DKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class SplineRotation3DKeyFrame : System::Windows::Media::Animation::Rotation3DKeyFrame" />
+  <TypeSignature Language="F#" Value="type SplineRotation3DKeyFrame = class&#xA;    inherit Rotation3DKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Rotation3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineRotation3DKeyFrame(System::Windows::Media::Media3D::Rotation3D ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineRotation3DKeyFrame : System.Windows.Media.Media3D.Rotation3D -&gt; System.Windows.Media.Animation.SplineRotation3DKeyFrame" Usage="new System.Windows.Media.Animation.SplineRotation3DKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineRotation3DKeyFrame(System::Windows::Media::Media3D::Rotation3D ^ value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineRotation3DKeyFrame : System.Windows.Media.Media3D.Rotation3D * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.SplineRotation3DKeyFrame" Usage="new System.Windows.Media.Animation.SplineRotation3DKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.KeySpline keySpline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineRotation3DKeyFrame(System::Windows::Media::Media3D::Rotation3D ^ value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::KeySpline ^ keySpline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineRotation3DKeyFrame : System.Windows.Media.Media3D.Rotation3D * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.KeySpline -&gt; System.Windows.Media.Animation.SplineRotation3DKeyFrame" Usage="new System.Windows.Media.Animation.SplineRotation3DKeyFrame (value, keyTime, keySpline)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineRotation3DKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="splineRotation3DKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineRotation3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Rotation3D,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Rotation3D, keyFrameProgress As Double) As Rotation3D" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Rotation3D ^ InterpolateValueCore(System::Windows::Media::Media3D::Rotation3D ^ baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Media.Media3D.Rotation3D * double -&gt; System.Windows.Media.Media3D.Rotation3D" Usage="splineRotation3DKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SplineRotation3DKeyFrame.KeySpline" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySpline As KeySpline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeySpline ^ KeySpline { System::Windows::Media::Animation::KeySpline ^ get(); void set(System::Windows::Media::Animation::KeySpline ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySpline : System.Windows.Media.Animation.KeySpline with get, set" Usage="System.Windows.Media.Animation.SplineRotation3DKeyFrame.KeySpline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SplineRotation3DKeyFrame.KeySplineProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeySplineProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeySplineProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeySplineProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SplineRotation3DKeyFrame.KeySplineProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

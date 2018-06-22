@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.InfocardInteractiveChannelInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Class InfocardInteractiveChannelInitializer&#xA;Implements IInteractiveChannelInitializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class InfocardInteractiveChannelInitializer : System::ServiceModel::Dispatcher::IInteractiveChannelInitializer" />
+  <TypeSignature Language="F#" Value="type InfocardInteractiveChannelInitializer = class&#xA;    interface IInteractiveChannelInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ClientCredentials credentials, class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.InfocardInteractiveChannelInitializer.#ctor(System.ServiceModel.Description.ClientCredentials,System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InfocardInteractiveChannelInitializer(System::ServiceModel::Description::ClientCredentials ^ credentials, System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.InfocardInteractiveChannelInitializer : System.ServiceModel.Description.ClientCredentials * System.ServiceModel.Channels.Binding -&gt; System.ServiceModel.Security.InfocardInteractiveChannelInitializer" Usage="new System.ServiceModel.Security.InfocardInteractiveChannelInitializer (credentials, binding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.InfocardInteractiveChannelInitializer.BeginDisplayInitializationUI(System.ServiceModel.IClientChannel,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginDisplayInitializationUI (channel As IClientChannel, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginDisplayInitializationUI(System::ServiceModel::IClientChannel ^ channel, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginDisplayInitializationUI : System.ServiceModel.IClientChannel * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginDisplayInitializationUI : System.ServiceModel.IClientChannel * AsyncCallback * obj -&gt; IAsyncResult" Usage="infocardInteractiveChannelInitializer.BeginDisplayInitializationUI (channel, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.BeginDisplayInitializationUI(System.ServiceModel.IClientChannel,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.InfocardInteractiveChannelInitializer.Binding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Binding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ Binding { System::ServiceModel::Channels::Binding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.ServiceModel.Channels.Binding" Usage="System.ServiceModel.Security.InfocardInteractiveChannelInitializer.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.InfocardInteractiveChannelInitializer.EndDisplayInitializationUI(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndDisplayInitializationUI (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndDisplayInitializationUI(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndDisplayInitializationUI : IAsyncResult -&gt; unit&#xA;override this.EndDisplayInitializationUI : IAsyncResult -&gt; unit" Usage="infocardInteractiveChannelInitializer.EndDisplayInitializationUI result" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.EndDisplayInitializationUI(System.IAsyncResult)</InterfaceMember>

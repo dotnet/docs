@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ApplicationMonitors" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationMonitors" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationMonitors sealed" />
+  <TypeSignature Language="F#" Value="type ApplicationMonitors = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.ApplicationMonitors.MemoryMonitor" />
       <MemberSignature Language="VB.NET" Value="Public Property MemoryMonitor As IApplicationMonitor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Hosting::IApplicationMonitor ^ MemoryMonitor { System::Web::Hosting::IApplicationMonitor ^ get(); void set(System::Web::Hosting::IApplicationMonitor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemoryMonitor : System.Web.Hosting.IApplicationMonitor with get, set" Usage="System.Web.Hosting.ApplicationMonitors.MemoryMonitor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

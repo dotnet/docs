@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RepeaterItemEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RepeaterItemEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type RepeaterItemEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RepeaterItemEventArgs.#ctor(System.Web.UI.WebControls.RepeaterItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As RepeaterItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RepeaterItemEventArgs(System::Web::UI::WebControls::RepeaterItem ^ item);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.RepeaterItemEventArgs : System.Web.UI.WebControls.RepeaterItem -&gt; System.Web.UI.WebControls.RepeaterItemEventArgs" Usage="new System.Web.UI.WebControls.RepeaterItemEventArgs item" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeaterItemEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As RepeaterItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::RepeaterItem ^ Item { System::Web::UI::WebControls::RepeaterItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Web.UI.WebControls.RepeaterItem" Usage="System.Web.UI.WebControls.RepeaterItemEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

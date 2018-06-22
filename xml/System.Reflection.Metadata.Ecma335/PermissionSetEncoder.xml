@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.PermissionSetEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure PermissionSetEncoder" />
   <TypeSignature Language="C++ CLI" Value="public value class PermissionSetEncoder" />
+  <TypeSignature Language="F#" Value="type PermissionSetEncoder = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.PermissionSetEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PermissionSetEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.PermissionSetEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.PermissionSetEncoder" Usage="new System.Reflection.Metadata.Ecma335.PermissionSetEncoder builder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.PermissionSetEncoder.AddPermission(System.String,System.Collections.Immutable.ImmutableArray{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddPermission (typeName As String, encodedArguments As ImmutableArray(Of Byte)) As PermissionSetEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::PermissionSetEncoder AddPermission(System::String ^ typeName, System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; encodedArguments);" />
+      <MemberSignature Language="F#" Value="member this.AddPermission : string * System.Collections.Immutable.ImmutableArray&lt;byte&gt; -&gt; System.Reflection.Metadata.Ecma335.PermissionSetEncoder" Usage="permissionSetEncoder.AddPermission (typeName, encodedArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.PermissionSetEncoder.AddPermission(System.String,System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddPermission (typeName As String, encodedArguments As BlobBuilder) As PermissionSetEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::PermissionSetEncoder AddPermission(System::String ^ typeName, System::Reflection::Metadata::BlobBuilder ^ encodedArguments);" />
+      <MemberSignature Language="F#" Value="member this.AddPermission : string * System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.PermissionSetEncoder" Usage="permissionSetEncoder.AddPermission (typeName, encodedArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.PermissionSetEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.PermissionSetEncoder.Builder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

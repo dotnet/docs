@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableSectionStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class TableSectionStyle&#xA;Inherits Style" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableSectionStyle : System::Web::UI::WebControls::Style" />
+  <TypeSignature Language="F#" Value="type TableSectionStyle = class&#xA;    inherit Style" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableSectionStyle.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.TableSectionStyle.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonQuickAccessToolBarCloneEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonQuickAccessToolBarCloneEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type RibbonQuickAccessToolBarCloneEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.#ctor(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetElement As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonQuickAccessToolBarCloneEventArgs(System::Windows::UIElement ^ targetElement);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs : System.Windows.UIElement -&gt; System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs" Usage="new System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs targetElement" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.CloneInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property CloneInstance As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ CloneInstance { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CloneInstance : System.Windows.UIElement with get, set" Usage="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.CloneInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.InstanceToBeCloned" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceToBeCloned As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ InstanceToBeCloned { System::Windows::UIElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceToBeCloned : System.Windows.UIElement" Usage="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.InstanceToBeCloned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="ribbonQuickAccessToolBarCloneEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

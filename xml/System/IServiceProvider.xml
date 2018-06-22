@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IServiceProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IServiceProvider" />
+  <TypeSignature Language="F#" Value="type IServiceProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.IServiceProvider.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj" Usage="iServiceProvider.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellStyleScopes" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewCellStyleScopes" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewCellStyleScopes" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellStyleScopes = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.AlternatingRows" />
       <MemberSignature Language="VB.NET" Value="AlternatingRows" />
       <MemberSignature Language="C++ CLI" Value="AlternatingRows" />
+      <MemberSignature Language="F#" Value="AlternatingRows = 128" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.AlternatingRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.Cell" />
       <MemberSignature Language="VB.NET" Value="Cell" />
       <MemberSignature Language="C++ CLI" Value="Cell" />
+      <MemberSignature Language="F#" Value="Cell = 1" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.Cell" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.Column" />
       <MemberSignature Language="VB.NET" Value="Column" />
       <MemberSignature Language="C++ CLI" Value="Column" />
+      <MemberSignature Language="F#" Value="Column = 2" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.Column" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.ColumnHeaders" />
       <MemberSignature Language="VB.NET" Value="ColumnHeaders" />
       <MemberSignature Language="C++ CLI" Value="ColumnHeaders" />
+      <MemberSignature Language="F#" Value="ColumnHeaders = 16" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.ColumnHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.DataGridView" />
       <MemberSignature Language="VB.NET" Value="DataGridView" />
       <MemberSignature Language="C++ CLI" Value="DataGridView" />
+      <MemberSignature Language="F#" Value="DataGridView = 8" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.DataGridView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.Row" />
       <MemberSignature Language="VB.NET" Value="Row" />
       <MemberSignature Language="C++ CLI" Value="Row" />
+      <MemberSignature Language="F#" Value="Row = 4" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.Row" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.RowHeaders" />
       <MemberSignature Language="VB.NET" Value="RowHeaders" />
       <MemberSignature Language="C++ CLI" Value="RowHeaders" />
+      <MemberSignature Language="F#" Value="RowHeaders = 32" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.RowHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -198,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellStyleScopes.Rows" />
       <MemberSignature Language="VB.NET" Value="Rows" />
       <MemberSignature Language="C++ CLI" Value="Rows" />
+      <MemberSignature Language="F#" Value="Rows = 64" Usage="System.Windows.Forms.DataGridViewCellStyleScopes.Rows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

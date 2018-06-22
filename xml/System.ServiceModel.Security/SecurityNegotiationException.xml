@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityNegotiationException" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityNegotiationException&#xA;Inherits CommunicationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityNegotiationException : System::ServiceModel::CommunicationException" />
+  <TypeSignature Language="F#" Value="type SecurityNegotiationException = class&#xA;    inherit CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityNegotiationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityNegotiationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityNegotiationException : string -&gt; System.ServiceModel.Security.SecurityNegotiationException" Usage="new System.ServiceModel.Security.SecurityNegotiationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityNegotiationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityNegotiationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityNegotiationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Security.SecurityNegotiationException" Usage="new System.ServiceModel.Security.SecurityNegotiationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityNegotiationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityNegotiationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityNegotiationException : string * Exception -&gt; System.ServiceModel.Security.SecurityNegotiationException" Usage="new System.ServiceModel.Security.SecurityNegotiationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewRowEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewRowEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewRowEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type GridViewRowEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRowEventArgs.#ctor(System.Web.UI.WebControls.GridViewRow)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (row As GridViewRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewRowEventArgs(System::Web::UI::WebControls::GridViewRow ^ row);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.GridViewRowEventArgs : System.Web.UI.WebControls.GridViewRow -&gt; System.Web.UI.WebControls.GridViewRowEventArgs" Usage="new System.Web.UI.WebControls.GridViewRowEventArgs row" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRowEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As GridViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::GridViewRow ^ Row { System::Web::UI::WebControls::GridViewRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Web.UI.WebControls.GridViewRow" Usage="System.Web.UI.WebControls.GridViewRowEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonGroup&#xA;Inherits HeaderedItemsControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonGroup : System::Windows::Controls::HeaderedItemsControl" />
+  <TypeSignature Language="F#" Value="type RibbonGroup = class&#xA;    inherit HeaderedItemsControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.CanAddToQuickAccessToolBarDirectly" />
       <MemberSignature Language="VB.NET" Value="Public Property CanAddToQuickAccessToolBarDirectly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanAddToQuickAccessToolBarDirectly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanAddToQuickAccessToolBarDirectly : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.CanAddToQuickAccessToolBarDirectly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.CanAddToQuickAccessToolBarDirectlyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanAddToQuickAccessToolBarDirectlyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanAddToQuickAccessToolBarDirectlyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanAddToQuickAccessToolBarDirectlyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.CanAddToQuickAccessToolBarDirectlyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.ClearContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonGroup.ClearContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
+      <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="ribbonGroup.GetContainerForItemOverride " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.GroupSizeDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupSizeDefinitions As RibbonGroupSizeDefinitionBaseCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonGroupSizeDefinitionBaseCollection ^ GroupSizeDefinitions { System::Windows::Controls::Ribbon::RibbonGroupSizeDefinitionBaseCollection ^ get(); void set(System::Windows::Controls::Ribbon::RibbonGroupSizeDefinitionBaseCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupSizeDefinitions : System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.GroupSizeDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.GroupSizeDefinitionsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GroupSizeDefinitionsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GroupSizeDefinitionsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GroupSizeDefinitionsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.GroupSizeDefinitionsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.IsCollapsed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCollapsed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCollapsed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCollapsed : bool" Usage="System.Windows.Controls.Ribbon.RibbonGroup.IsCollapsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.IsCollapsedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCollapsedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCollapsedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsCollapsedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.IsCollapsedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.IsDropDownOpen" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDropDownOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDropDownOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDropDownOpen : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.IsDropDownOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -346,6 +356,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.IsDropDownOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDropDownOpenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDropDownOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDropDownOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.IsDropDownOpenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -365,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.IsInQuickAccessToolBar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInQuickAccessToolBar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInQuickAccessToolBar { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInQuickAccessToolBar : bool" Usage="System.Windows.Controls.Ribbon.RibbonGroup.IsInQuickAccessToolBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -400,6 +412,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.IsInQuickAccessToolBarProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInQuickAccessToolBarProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInQuickAccessToolBarProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInQuickAccessToolBarProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.IsInQuickAccessToolBarProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -419,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="ribbonGroup.IsItemItsOwnContainerOverride item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -444,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.KeyTip" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTip : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.KeyTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -481,6 +496,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.KeyTipProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTipProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTipProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyTipProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.KeyTipProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -500,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.LargeImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property LargeImageSource As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ LargeImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LargeImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.LargeImageSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -534,6 +551,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.LargeImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LargeImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LargeImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LargeImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.LargeImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -553,6 +571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="ribbonGroup.MeasureOverride availableSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -577,6 +596,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.MouseOverBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseOverBackground As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MouseOverBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.MouseOverBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -611,6 +631,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.MouseOverBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseOverBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.MouseOverBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -630,6 +651,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.MouseOverBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseOverBorderBrush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MouseOverBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.MouseOverBorderBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -664,6 +686,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.MouseOverBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBorderBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseOverBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.MouseOverBorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -683,6 +706,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit&#xA;override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonGroup.OnActivatingKeyTip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -706,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonGroup.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -733,6 +758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonGroup.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -754,6 +780,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="ribbonGroup.OnItemsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -777,6 +804,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonGroup.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -800,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnKeyTipAccessed(System.Windows.Controls.KeyTipAccessedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnKeyTipAccessed (e As KeyTipAccessedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnKeyTipAccessed(System::Windows::Controls::KeyTipAccessedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit&#xA;override this.OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit" Usage="ribbonGroup.OnKeyTipAccessed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -823,6 +852,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnMouseEnter(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseEnter (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseEnter(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseEnter : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="ribbonGroup.OnMouseEnter e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -853,6 +883,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnMouseLeave(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="ribbonGroup.OnMouseLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -883,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnPreviewMouseDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="ribbonGroup.OnPreviewMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -906,6 +938,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.OnRenderSizeChanged(System.Windows.SizeChangedInfo)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnRenderSizeChanged (info As SizeChangedInfo)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnRenderSizeChanged(System::Windows::SizeChangedInfo ^ info);" />
+      <MemberSignature Language="F#" Value="override this.OnRenderSizeChanged : System.Windows.SizeChangedInfo -&gt; unit" Usage="ribbonGroup.OnRenderSizeChanged info" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -929,6 +962,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroup.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonGroup.PrepareContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -954,6 +988,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.QuickAccessToolBarId" />
       <MemberSignature Language="VB.NET" Value="Public Property QuickAccessToolBarId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ QuickAccessToolBarId { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QuickAccessToolBarId : obj with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.QuickAccessToolBarId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -988,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.QuickAccessToolBarIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarIdProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarIdProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable QuickAccessToolBarIdProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.QuickAccessToolBarIdProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1007,6 +1043,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.Ribbon" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ribbon As Ribbon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::Ribbon ^ Ribbon { System::Windows::Controls::Ribbon::Ribbon ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ribbon : System.Windows.Controls.Ribbon.Ribbon" Usage="System.Windows.Controls.Ribbon.RibbonGroup.Ribbon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1042,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.RibbonProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RibbonProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RibbonProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RibbonProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.RibbonProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1061,6 +1099,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.SmallImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property SmallImageSource As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ SmallImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SmallImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.SmallImageSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1095,6 +1134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.SmallImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SmallImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SmallImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SmallImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.SmallImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1114,6 +1154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipDescription { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1152,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipDescriptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipDescriptionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipDescriptionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipDescriptionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1171,6 +1213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipFooterDescription { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipFooterDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1209,6 +1252,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterDescriptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterDescriptionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterDescriptionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterDescriptionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1228,6 +1272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterImageSource As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ToolTipFooterImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipFooterImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterImageSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1266,6 +1311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1285,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipFooterTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipFooterTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1323,6 +1370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterTitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterTitleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterTitleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipFooterTitleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1342,6 +1390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipImageSource As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ToolTipImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipImageSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1380,6 +1429,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1399,6 +1449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1437,6 +1488,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroup.ToolTipTitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipTitleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipTitleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroup.ToolTipTitleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

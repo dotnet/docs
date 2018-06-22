@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.AttachedPropertiesService" />
   <TypeSignature Language="VB.NET" Value="Public Class AttachedPropertiesService" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttachedPropertiesService" />
+  <TypeSignature Language="F#" Value="type AttachedPropertiesService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedPropertiesService.AddProperty(System.Activities.Presentation.Model.AttachedProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddProperty (property As AttachedProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddProperty(System::Activities::Presentation::Model::AttachedProperty ^ property);" />
+      <MemberSignature Language="F#" Value="member this.AddProperty : System.Activities.Presentation.Model.AttachedProperty -&gt; unit" Usage="attachedPropertiesService.AddProperty property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

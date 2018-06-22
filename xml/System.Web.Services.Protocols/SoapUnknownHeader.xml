@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapUnknownHeader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapUnknownHeader&#xA;Inherits SoapHeader" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapUnknownHeader sealed : System::Web::Services::Protocols::SoapHeader" />
+  <TypeSignature Language="F#" Value="type SoapUnknownHeader = class&#xA;    inherit SoapHeader" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapUnknownHeader.Element" />
       <MemberSignature Language="VB.NET" Value="Public Property Element As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ Element { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Element : System.Xml.XmlElement with get, set" Usage="System.Web.Services.Protocols.SoapUnknownHeader.Element" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

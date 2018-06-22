@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EmbeddedMailObject" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EmbeddedMailObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class EmbeddedMailObject sealed" />
+  <TypeSignature Language="F#" Value="type EmbeddedMailObject = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -157,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObject.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EmbeddedMailObject(System::String ^ name, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.EmbeddedMailObject : string * string -&gt; System.Web.UI.WebControls.EmbeddedMailObject" Usage="new System.Web.UI.WebControls.EmbeddedMailObject (name, path)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EmbeddedMailObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.WebControls.EmbeddedMailObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EmbeddedMailObject.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.UI.WebControls.EmbeddedMailObject.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

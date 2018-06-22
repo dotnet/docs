@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderParameterValueType" />
   <TypeSignature Language="VB.NET" Value="Public Enum EncoderParameterValueType" />
   <TypeSignature Language="C++ CLI" Value="public enum class EncoderParameterValueType" />
+  <TypeSignature Language="F#" Value="type EncoderParameterValueType = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeAscii" />
       <MemberSignature Language="VB.NET" Value="ValueTypeAscii" />
       <MemberSignature Language="C++ CLI" Value="ValueTypeAscii" />
+      <MemberSignature Language="F#" Value="ValueTypeAscii = 2" Usage="System.Drawing.Imaging.EncoderParameterValueType.ValueTypeAscii" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeByte" />
       <MemberSignature Language="VB.NET" Value="ValueTypeByte" />
       <MemberSignature Language="C++ CLI" Value="ValueTypeByte" />
+      <MemberSignature Language="F#" Value="ValueTypeByte = 1" Usage="System.Drawing.Imaging.EncoderParameterValueType.ValueTypeByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeLong" />
       <MemberSignature Language="VB.NET" Value="ValueTypeLong" />
       <MemberSignature Language="C++ CLI" Value="ValueTypeLong" />
+      <MemberSignature Language="F#" Value="ValueTypeLong = 4" Usage="System.Drawing.Imaging.EncoderParameterValueType.ValueTypeLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeLongRange" />
       <MemberSignature Language="VB.NET" Value="ValueTypeLongRange" />
       <MemberSignature Language="C++ CLI" Value="ValueTypeLongRange" />
+      <MemberSignature Language="F#" Value="ValueTypeLongRange = 6" Usage="System.Drawing.Imaging.EncoderParameterValueType.ValueTypeLongRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRational" />
       <MemberSignature Language="VB.NET" Value="ValueTypeRational" />
       <MemberSignature Language="C++ CLI" Value="ValueTypeRational" />
+      <MemberSignature Language="F#" Value="ValueTypeRational = 5" Usage="System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRational" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRationalRange" />
       <MemberSignature Language="VB.NET" Value="ValueTypeRationalRange" />
       <MemberSignature Language="C++ CLI" Value="ValueTypeRationalRange" />
+      <MemberSignature Language="F#" Value="ValueTypeRationalRange = 8" Usage="System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRationalRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeShort" />
       <MemberSignature Language="VB.NET" Value="ValueTypeShort" />
       <MemberSignature Language="C++ CLI" Value="ValueTypeShort" />
+      <MemberSignature Language="F#" Value="ValueTypeShort = 3" Usage="System.Drawing.Imaging.EncoderParameterValueType.ValueTypeShort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeUndefined" />
       <MemberSignature Language="VB.NET" Value="ValueTypeUndefined" />
       <MemberSignature Language="C++ CLI" Value="ValueTypeUndefined" />
+      <MemberSignature Language="F#" Value="ValueTypeUndefined = 7" Usage="System.Drawing.Imaging.EncoderParameterValueType.ValueTypeUndefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

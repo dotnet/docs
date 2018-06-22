@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.ContextOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContextOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContextOptions" />
+  <TypeSignature Language="F#" Value="type ContextOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.Negotiate" />
       <MemberSignature Language="VB.NET" Value="Negotiate" />
       <MemberSignature Language="C++ CLI" Value="Negotiate" />
+      <MemberSignature Language="F#" Value="Negotiate = 1" Usage="System.DirectoryServices.AccountManagement.ContextOptions.Negotiate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.Sealing" />
       <MemberSignature Language="VB.NET" Value="Sealing" />
       <MemberSignature Language="C++ CLI" Value="Sealing" />
+      <MemberSignature Language="F#" Value="Sealing = 16" Usage="System.DirectoryServices.AccountManagement.ContextOptions.Sealing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.SecureSocketLayer" />
       <MemberSignature Language="VB.NET" Value="SecureSocketLayer" />
       <MemberSignature Language="C++ CLI" Value="SecureSocketLayer" />
+      <MemberSignature Language="F#" Value="SecureSocketLayer = 4" Usage="System.DirectoryServices.AccountManagement.ContextOptions.SecureSocketLayer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.ServerBind" />
       <MemberSignature Language="VB.NET" Value="ServerBind" />
       <MemberSignature Language="C++ CLI" Value="ServerBind" />
+      <MemberSignature Language="F#" Value="ServerBind = 32" Usage="System.DirectoryServices.AccountManagement.ContextOptions.ServerBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.Signing" />
       <MemberSignature Language="VB.NET" Value="Signing" />
       <MemberSignature Language="C++ CLI" Value="Signing" />
+      <MemberSignature Language="F#" Value="Signing = 8" Usage="System.DirectoryServices.AccountManagement.ContextOptions.Signing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.SimpleBind" />
       <MemberSignature Language="VB.NET" Value="SimpleBind" />
       <MemberSignature Language="C++ CLI" Value="SimpleBind" />
+      <MemberSignature Language="F#" Value="SimpleBind = 2" Usage="System.DirectoryServices.AccountManagement.ContextOptions.SimpleBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

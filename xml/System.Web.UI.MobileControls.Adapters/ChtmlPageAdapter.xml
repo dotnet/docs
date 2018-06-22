@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class ChtmlPageAdapter&#xA;Inherits HtmlPageAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChtmlPageAdapter : System::Web::UI::MobileControls::Adapters::HtmlPageAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlPageAdapter = class&#xA;    inherit HtmlPageAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.CreateTextWriter(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateTextWriter (writer As TextWriter) As HtmlTextWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::HtmlTextWriter ^ CreateTextWriter(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.CreateTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="chtmlPageAdapter.CreateTextWriter writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeterminePostBackMode (request As HttpRequest, postEventSourceID As String, postEventArgumentID As String, baseCollection As NameValueCollection) As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode(System::Web::HttpRequest ^ request, System::String ^ postEventSourceID, System::String ^ postEventArgumentID, System::Collections::Specialized::NameValueCollection ^ baseCollection);" />
+      <MemberSignature Language="F#" Value="override this.DeterminePostBackMode : System.Web.HttpRequest * string * string * System.Collections.Specialized.NameValueCollection -&gt; System.Collections.Specialized.NameValueCollection" Usage="chtmlPageAdapter.DeterminePostBackMode (request, postEventSourceID, postEventArgumentID, baseCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.DeviceQualifies(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeviceQualifies (context As HttpContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeviceQualifies(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member DeviceQualifies : System.Web.HttpContext -&gt; bool" Usage="System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.DeviceQualifies context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.EventArgumentKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property EventArgumentKey As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ EventArgumentKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventArgumentKey : string" Usage="System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.EventArgumentKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.EventSourceKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property EventSourceKey As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ EventSourceKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventSourceKey : string" Usage="System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.EventSourceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.RenderPostBackEvent(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderPostBackEvent (writer As HtmlMobileTextWriter, target As String, argument As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderPostBackEvent(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer, System::String ^ target, System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="override this.RenderPostBackEvent : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * string * string -&gt; unit" Usage="chtmlPageAdapter.RenderPostBackEvent (writer, target, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RenderPostBackHeader(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer, class System.Web.UI.MobileControls.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter.RenderPostBackHeader(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.Web.UI.MobileControls.Form)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderPostBackHeader(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Form ^ form);" />
+      <MemberSignature Language="F#" Value="override this.RenderPostBackHeader : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * System.Web.UI.MobileControls.Form -&gt; unit" Usage="chtmlPageAdapter.RenderPostBackHeader (writer, form)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

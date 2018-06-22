@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.SignatureDecoder`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure SignatureDecoder(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public value class SignatureDecoder" />
+  <TypeSignature Language="F#" Value="type SignatureDecoder&lt;'ype&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="C#" Value="public SignatureDecoder (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType&gt; provider, System.Reflection.Metadata.MetadataReader metadataReader = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.ISignatureTypeProvider`1&lt;!TType&gt; provider, class System.Reflection.Metadata.MetadataReader metadataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.#ctor(System.Reflection.Metadata.ISignatureTypeProvider{`0},System.Reflection.Metadata.MetadataReader)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.SignatureDecoder&lt;'ype&gt; : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype&gt; * System.Reflection.Metadata.MetadataReader -&gt; System.Reflection.Metadata.Ecma335.SignatureDecoder&lt;'ype&gt;" Usage="new System.Reflection.Metadata.Ecma335.SignatureDecoder&lt;'ype&gt; (provider, metadataReader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeFieldSignature(System.Reflection.Metadata.BlobReader@)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeFieldSignature (ByRef blobReader As BlobReader) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType DecodeFieldSignature(System::Reflection::Metadata::BlobReader % blobReader);" />
+      <MemberSignature Language="F#" Value="member this.DecodeFieldSignature :  -&gt; 'ype" Usage="signatureDecoder.DecodeFieldSignature blobReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeLocalSignature(System.Reflection.Metadata.BlobReader@)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeLocalSignature (ByRef blobReader As BlobReader) As ImmutableArray(Of TType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;TType&gt; DecodeLocalSignature(System::Reflection::Metadata::BlobReader % blobReader);" />
+      <MemberSignature Language="F#" Value="member this.DecodeLocalSignature :  -&gt; System.Collections.Immutable.ImmutableArray&lt;'ype&gt;" Usage="signatureDecoder.DecodeLocalSignature blobReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeMethodSignature(System.Reflection.Metadata.BlobReader@)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeMethodSignature (ByRef blobReader As BlobReader) As MethodSignature(Of TType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodSignature&lt;TType&gt; DecodeMethodSignature(System::Reflection::Metadata::BlobReader % blobReader);" />
+      <MemberSignature Language="F#" Value="member this.DecodeMethodSignature :  -&gt; System.Reflection.Metadata.MethodSignature&lt;'ype&gt;" Usage="signatureDecoder.DecodeMethodSignature blobReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeMethodSpecificationSignature(System.Reflection.Metadata.BlobReader@)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeMethodSpecificationSignature (ByRef blobReader As BlobReader) As ImmutableArray(Of TType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;TType&gt; DecodeMethodSpecificationSignature(System::Reflection::Metadata::BlobReader % blobReader);" />
+      <MemberSignature Language="F#" Value="member this.DecodeMethodSpecificationSignature :  -&gt; System.Collections.Immutable.ImmutableArray&lt;'ype&gt;" Usage="signatureDecoder.DecodeMethodSpecificationSignature blobReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeType(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader, bool allowTypeSpecifications) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeType(System.Reflection.Metadata.BlobReader@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeType (ByRef blobReader As BlobReader, Optional allowTypeSpecifications As Boolean = false) As TType" />
+      <MemberSignature Language="F#" Value="member this.DecodeType :  * bool -&gt; 'ype" Usage="signatureDecoder.DecodeType (blobReader, allowTypeSpecifications)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ServiceReference" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceReference" />
+  <TypeSignature Language="F#" Value="type ServiceReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ServiceReference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceReference(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ServiceReference : string -&gt; System.Web.UI.ServiceReference" Usage="new System.Web.UI.ServiceReference path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetProxyScript(class System.Web.UI.ScriptManager scriptManager, class System.Web.UI.Control containingControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ServiceReference.GetProxyScript(System.Web.UI.ScriptManager,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ GetProxyScript(System::Web::UI::ScriptManager ^ scriptManager, System::Web::UI::Control ^ containingControl);" />
+      <MemberSignature Language="F#" Value="abstract member GetProxyScript : System.Web.UI.ScriptManager * System.Web.UI.Control -&gt; string&#xA;override this.GetProxyScript : System.Web.UI.ScriptManager * System.Web.UI.Control -&gt; string" Usage="serviceReference.GetProxyScript (scriptManager, containingControl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetProxyUrl(class System.Web.UI.ScriptManager scriptManager, class System.Web.UI.Control containingControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ServiceReference.GetProxyUrl(System.Web.UI.ScriptManager,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ GetProxyUrl(System::Web::UI::ScriptManager ^ scriptManager, System::Web::UI::Control ^ containingControl);" />
+      <MemberSignature Language="F#" Value="abstract member GetProxyUrl : System.Web.UI.ScriptManager * System.Web.UI.Control -&gt; string&#xA;override this.GetProxyUrl : System.Web.UI.ScriptManager * System.Web.UI.Control -&gt; string" Usage="serviceReference.GetProxyUrl (scriptManager, containingControl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ServiceReference.InlineScript" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InlineScript As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool InlineScript { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InlineScript : bool with get, set" Usage="System.Web.UI.ServiceReference.InlineScript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ServiceReference.Path" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.UI.ServiceReference.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ServiceReference.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="serviceReference.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

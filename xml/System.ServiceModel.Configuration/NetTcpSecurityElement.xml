@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetTcpSecurityElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetTcpSecurityElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetTcpSecurityElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type NetTcpSecurityElement = class&#xA;    inherit ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpSecurityElement.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As MessageSecurityOverTcpElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::MessageSecurityOverTcpElement ^ Message { System::ServiceModel::Configuration::MessageSecurityOverTcpElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.Configuration.MessageSecurityOverTcpElement" Usage="System.ServiceModel.Configuration.NetTcpSecurityElement.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpSecurityElement.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As SecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SecurityMode Mode { System::ServiceModel::SecurityMode get(); void set(System::ServiceModel::SecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.SecurityMode with get, set" Usage="System.ServiceModel.Configuration.NetTcpSecurityElement.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpSecurityElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NetTcpSecurityElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpSecurityElement.Transport" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transport As TcpTransportSecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::TcpTransportSecurityElement ^ Transport { System::ServiceModel::Configuration::TcpTransportSecurityElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.Configuration.TcpTransportSecurityElement" Usage="System.ServiceModel.Configuration.NetTcpSecurityElement.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

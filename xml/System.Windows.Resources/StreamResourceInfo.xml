@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Resources.StreamResourceInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class StreamResourceInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamResourceInfo" />
+  <TypeSignature Language="F#" Value="type StreamResourceInfo = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Resources.StreamResourceInfo.#ctor(System.IO.Stream,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamResourceInfo(System::IO::Stream ^ stream, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Resources.StreamResourceInfo : System.IO.Stream * string -&gt; System.Windows.Resources.StreamResourceInfo" Usage="new System.Windows.Resources.StreamResourceInfo (stream, contentType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Resources.StreamResourceInfo.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.Windows.Resources.StreamResourceInfo.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Resources.StreamResourceInfo.Stream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Stream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Stream : System.IO.Stream" Usage="System.Windows.Resources.StreamResourceInfo.Stream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

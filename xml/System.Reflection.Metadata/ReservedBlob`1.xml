@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ReservedBlob`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ReservedBlob(Of THandle)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename THandle&gt;&#xA; where THandle : value classpublic value class ReservedBlob" />
+  <TypeSignature Language="F#" Value="type ReservedBlob&lt;'Handle (requires 'Handle : struct)&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ReservedBlob`1.Content" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As Blob" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::Blob Content { System::Reflection::Metadata::Blob get(); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Reflection.Metadata.Blob" Usage="System.Reflection.Metadata.ReservedBlob&lt;'Handle (requires 'Handle : struct)&gt;.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ReservedBlob`1.CreateWriter" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateWriter () As BlobWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobWriter CreateWriter();" />
+      <MemberSignature Language="F#" Value="member this.CreateWriter : unit -&gt; System.Reflection.Metadata.BlobWriter" Usage="reservedBlob.CreateWriter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ReservedBlob`1.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As THandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property THandle Handle { THandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : 'Handle" Usage="System.Reflection.Metadata.ReservedBlob&lt;'Handle (requires 'Handle : struct)&gt;.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

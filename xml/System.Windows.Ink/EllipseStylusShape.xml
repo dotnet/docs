@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.EllipseStylusShape" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EllipseStylusShape&#xA;Inherits StylusShape" />
   <TypeSignature Language="C++ CLI" Value="public ref class EllipseStylusShape sealed : System::Windows::Ink::StylusShape" />
+  <TypeSignature Language="F#" Value="type EllipseStylusShape = class&#xA;    inherit StylusShape" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.EllipseStylusShape.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EllipseStylusShape(double width, double height);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Ink.EllipseStylusShape : double * double -&gt; System.Windows.Ink.EllipseStylusShape" Usage="new System.Windows.Ink.EllipseStylusShape (width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.EllipseStylusShape.#ctor(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double, rotation As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EllipseStylusShape(double width, double height, double rotation);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Ink.EllipseStylusShape : double * double * double -&gt; System.Windows.Ink.EllipseStylusShape" Usage="new System.Windows.Ink.EllipseStylusShape (width, height, rotation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

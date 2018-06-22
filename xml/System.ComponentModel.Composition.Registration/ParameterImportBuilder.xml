@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.ParameterImportBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class ParameterImportBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParameterImportBuilder" />
+  <TypeSignature Language="F#" Value="type ParameterImportBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ParameterImportBuilder.Import``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Import(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Import();" />
+      <MemberSignature Language="F#" Value="member this.Import : unit -&gt; 'T" Usage="parameterImportBuilder.Import " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ParameterImportBuilder.Import``1(System.Action{System.ComponentModel.Composition.Registration.ImportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function Import(Of T) (configure As Action(Of ImportBuilder)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Import(Action&lt;System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ configure);" />
+      <MemberSignature Language="F#" Value="member this.Import : Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; 'T" Usage="parameterImportBuilder.Import configure" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.MethodData" />
   <TypeSignature Language="VB.NET" Value="Public Class MethodData" />
   <TypeSignature Language="C++ CLI" Value="public ref class MethodData" />
+  <TypeSignature Language="F#" Value="type MethodData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.InParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InParameters As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ InParameters { System::Management::ManagementBaseObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InParameters : System.Management.ManagementBaseObject" Usage="System.Management.MethodData.InParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Management.MethodData.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.Origin" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origin As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Origin { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Origin : string" Usage="System.Management.MethodData.Origin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.OutParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutParameters As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ OutParameters { System::Management::ManagementBaseObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutParameters : System.Management.ManagementBaseObject" Usage="System.Management.MethodData.OutParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.Qualifiers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Qualifiers As QualifierDataCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::QualifierDataCollection ^ Qualifiers { System::Management::QualifierDataCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Qualifiers : System.Management.QualifierDataCollection" Usage="System.Management.MethodData.Qualifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

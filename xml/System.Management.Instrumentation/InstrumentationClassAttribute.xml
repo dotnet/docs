@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.InstrumentationClassAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class InstrumentationClassAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstrumentationClassAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type InstrumentationClassAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Management.Instrumentation.InstrumentationType instrumentationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationClassAttribute.#ctor(System.Management.Instrumentation.InstrumentationType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstrumentationClassAttribute(System::Management::Instrumentation::InstrumentationType instrumentationType);" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.InstrumentationClassAttribute : System.Management.Instrumentation.InstrumentationType -&gt; System.Management.Instrumentation.InstrumentationClassAttribute" Usage="new System.Management.Instrumentation.InstrumentationClassAttribute instrumentationType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Management.Instrumentation.InstrumentationType instrumentationType, string managedBaseClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationClassAttribute.#ctor(System.Management.Instrumentation.InstrumentationType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstrumentationClassAttribute(System::Management::Instrumentation::InstrumentationType instrumentationType, System::String ^ managedBaseClassName);" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.InstrumentationClassAttribute : System.Management.Instrumentation.InstrumentationType * string -&gt; System.Management.Instrumentation.InstrumentationClassAttribute" Usage="new System.Management.Instrumentation.InstrumentationClassAttribute (instrumentationType, managedBaseClassName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.InstrumentationClassAttribute.InstrumentationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstrumentationType As InstrumentationType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::Instrumentation::InstrumentationType InstrumentationType { System::Management::Instrumentation::InstrumentationType get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstrumentationType : System.Management.Instrumentation.InstrumentationType" Usage="System.Management.Instrumentation.InstrumentationClassAttribute.InstrumentationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.InstrumentationClassAttribute.ManagedBaseClassName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagedBaseClassName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ManagedBaseClassName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManagedBaseClassName : string" Usage="System.Management.Instrumentation.InstrumentationClassAttribute.ManagedBaseClassName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

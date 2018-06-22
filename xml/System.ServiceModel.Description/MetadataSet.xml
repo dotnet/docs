@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataSet" />
   <TypeSignature Language="VB.NET" Value="Public Class MetadataSet&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataSet : System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type MetadataSet = class&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.MetadataSection})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sections As IEnumerable(Of MetadataSection))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataSet(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::MetadataSection ^&gt; ^ sections);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.MetadataSet : seq&lt;System.ServiceModel.Description.MetadataSection&gt; -&gt; System.ServiceModel.Description.MetadataSet" Usage="new System.ServiceModel.Description.MetadataSet sections" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSet.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As Collection(Of XmlAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::XmlAttribute ^&gt; ^ Attributes { System::Collections::ObjectModel::Collection&lt;System::Xml::XmlAttribute ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.ObjectModel.Collection&lt;System.Xml.XmlAttribute&gt;" Usage="System.ServiceModel.Description.MetadataSet.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSet.MetadataSections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataSections As Collection(Of MetadataSection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MetadataSection ^&gt; ^ MetadataSections { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MetadataSection ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataSections : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MetadataSection&gt;" Usage="System.ServiceModel.Description.MetadataSet.MetadataSections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadFrom (reader As XmlReader) As MetadataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::MetadataSet ^ ReadFrom(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.Xml.XmlReader -&gt; System.ServiceModel.Description.MetadataSet" Usage="System.ServiceModel.Description.MetadataSet.ReadFrom reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -267,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="metadataSet.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

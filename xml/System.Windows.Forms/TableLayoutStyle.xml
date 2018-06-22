@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutStyle" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TableLayoutStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableLayoutStyle abstract" />
+  <TypeSignature Language="F#" Value="type TableLayoutStyle = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyle.SizeType" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeType As SizeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SizeType SizeType { System::Windows::Forms::SizeType get(); void set(System::Windows::Forms::SizeType value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeType : System.Windows.Forms.SizeType with get, set" Usage="System.Windows.Forms.TableLayoutStyle.SizeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

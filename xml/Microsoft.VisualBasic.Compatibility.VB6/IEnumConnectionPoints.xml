@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumConnectionPoints" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEnumConnectionPoints" />
+  <TypeSignature Language="F#" Value="type IEnumConnectionPoints = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints.Clone(Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ecp As IEnumConnectionPoints)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] Microsoft::VisualBasic::Compatibility::VB6::IEnumConnectionPoints ^ % ecp);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumConnectionPoints.Clone ecp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints.Next(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint[]@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Next (cConnections As Integer, ByRef cp As IConnectionPoint(), ByRef cFetched As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Next(int cConnections, [Runtime::InteropServices::Out] cli::array &lt;Microsoft::VisualBasic::Compatibility::VB6::IConnectionPoint ^&gt; ^ % cp, [Runtime::InteropServices::Out] int % cFetched);" />
+      <MemberSignature Language="F#" Value="abstract member Next : int *  *  -&gt; unit" Usage="iEnumConnectionPoints.Next (cConnections, cp, cFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iEnumConnectionPoints.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints.Skip(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Skip (cConnections As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Skip(int cConnections);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; unit" Usage="iEnumConnectionPoints.Skip cConnections" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

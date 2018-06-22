@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.MethodCodeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum MethodCodeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class MethodCodeType" />
+  <TypeSignature Language="F#" Value="type MethodCodeType = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodCodeType.IL" />
       <MemberSignature Language="VB.NET" Value="IL" />
       <MemberSignature Language="C++ CLI" Value="IL" />
+      <MemberSignature Language="F#" Value="IL = 0" Usage="System.Runtime.CompilerServices.MethodCodeType.IL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodCodeType.Native" />
       <MemberSignature Language="VB.NET" Value="Native" />
       <MemberSignature Language="C++ CLI" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 1" Usage="System.Runtime.CompilerServices.MethodCodeType.Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodCodeType.OPTIL" />
       <MemberSignature Language="VB.NET" Value="OPTIL" />
       <MemberSignature Language="C++ CLI" Value="OPTIL" />
+      <MemberSignature Language="F#" Value="OPTIL = 2" Usage="System.Runtime.CompilerServices.MethodCodeType.OPTIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodCodeType.Runtime" />
       <MemberSignature Language="VB.NET" Value="Runtime" />
       <MemberSignature Language="C++ CLI" Value="Runtime" />
+      <MemberSignature Language="F#" Value="Runtime = 3" Usage="System.Runtime.CompilerServices.MethodCodeType.Runtime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

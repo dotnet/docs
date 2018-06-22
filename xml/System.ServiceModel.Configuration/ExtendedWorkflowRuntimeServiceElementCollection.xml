@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ExtendedWorkflowRuntimeServiceElementCollection&#xA;Inherits WorkflowRuntimeServiceElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExtendedWorkflowRuntimeServiceElementCollection : System::Workflow::Runtime::Configuration::WorkflowRuntimeServiceElementCollection" />
+  <TypeSignature Language="F#" Value="type ExtendedWorkflowRuntimeServiceElementCollection = class&#xA;    inherit WorkflowRuntimeServiceElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="extendedWorkflowRuntimeServiceElementCollection.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection.Remove(System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (serviceSettings As WorkflowRuntimeServiceElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Workflow::Runtime::Configuration::WorkflowRuntimeServiceElement ^ serviceSettings);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement -&gt; unit" Usage="extendedWorkflowRuntimeServiceElementCollection.Remove serviceSettings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

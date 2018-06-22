@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemsControl" />
   <TypeSignature Language="VB.NET" Value="Public Class ItemsControl&#xA;Inherits Control&#xA;Implements IAddChild, IContainItemStorage" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemsControl : System::Windows::Controls::Control, System::Windows::Controls::Primitives::IContainItemStorage, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type ItemsControl = class&#xA;    inherit Control&#xA;    interface IAddChild&#xA;    interface IContainItemStorage" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -150,6 +151,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddChild (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddChild(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit&#xA;override this.AddChild : obj -&gt; unit" Usage="itemsControl.AddChild value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -176,6 +178,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit&#xA;override this.AddText : string -&gt; unit" Usage="itemsControl.AddText text" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
@@ -202,6 +205,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.AlternationCount" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternationCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AlternationCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternationCount : int with get, set" Usage="System.Windows.Controls.ItemsControl.AlternationCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -257,6 +261,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.AlternationCountProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlternationCountProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AlternationCountProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AlternationCountProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.AlternationCountProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -275,6 +280,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="ILAsm" Value="see GetAlternationIndex, and SetAlternationIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.AlternationIndex" />
       <MemberSignature Language="VB.NET" Value="see GetAlternationIndex, and SetAlternationIndex" />
+      <MemberSignature Language="F#" Value="see GetAlternationIndex, and SetAlternationIndex" Usage="see GetAlternationIndex, and SetAlternationIndex" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +297,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.AlternationIndexProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlternationIndexProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AlternationIndexProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AlternationIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.AlternationIndexProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -310,6 +317,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginInit();" />
+      <MemberSignature Language="F#" Value="override this.BeginInit : unit -&gt; unit" Usage="itemsControl.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -331,6 +339,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ClearContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ClearContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member ClearContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit&#xA;override this.ClearContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="itemsControl.ClearContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -373,6 +382,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.ContainerFromElement(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainerFromElement (element As DependencyObject) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ ContainerFromElement(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="member this.ContainerFromElement : System.Windows.DependencyObject -&gt; System.Windows.DependencyObject" Usage="itemsControl.ContainerFromElement element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -397,6 +407,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject ContainerFromElement(class System.Windows.Controls.ItemsControl itemsControl, class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.ContainerFromElement(System.Windows.Controls.ItemsControl,System.Windows.DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ ContainerFromElement(System::Windows::Controls::ItemsControl ^ itemsControl, System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member ContainerFromElement : System.Windows.Controls.ItemsControl * System.Windows.DependencyObject -&gt; System.Windows.DependencyObject" Usage="System.Windows.Controls.ItemsControl.ContainerFromElement (itemsControl, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -424,6 +435,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.DisplayMemberPath" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayMemberPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayMemberPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayMemberPath : string with get, set" Usage="System.Windows.Controls.ItemsControl.DisplayMemberPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -478,6 +490,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.DisplayMemberPathProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayMemberPathProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DisplayMemberPathProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DisplayMemberPathProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.DisplayMemberPathProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -497,6 +510,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndInit();" />
+      <MemberSignature Language="F#" Value="override this.EndInit : unit -&gt; unit" Usage="itemsControl.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -517,6 +531,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.GetAlternationIndex(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAlternationIndex (element As DependencyObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetAlternationIndex(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetAlternationIndex : System.Windows.DependencyObject -&gt; int" Usage="System.Windows.Controls.ItemsControl.GetAlternationIndex element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -541,6 +556,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
+      <MemberSignature Language="F#" Value="abstract member GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject&#xA;override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="itemsControl.GetContainerForItemOverride " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -563,6 +579,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.GetItemsOwner(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetItemsOwner (element As DependencyObject) As ItemsControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::ItemsControl ^ GetItemsOwner(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetItemsOwner : System.Windows.DependencyObject -&gt; System.Windows.Controls.ItemsControl" Usage="System.Windows.Controls.ItemsControl.GetItemsOwner element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -594,6 +611,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.GroupStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupStyle As ObservableCollection(Of GroupStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::Windows::Controls::GroupStyle ^&gt; ^ GroupStyle { System::Collections::ObjectModel::ObservableCollection&lt;System::Windows::Controls::GroupStyle ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupStyle : System.Collections.ObjectModel.ObservableCollection&lt;System.Windows.Controls.GroupStyle&gt;" Usage="System.Windows.Controls.ItemsControl.GroupStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -656,6 +674,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.GroupStyleSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupStyleSelector As GroupStyleSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::GroupStyleSelector ^ GroupStyleSelector { System::Windows::Controls::GroupStyleSelector ^ get(); void set(System::Windows::Controls::GroupStyleSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupStyleSelector : System.Windows.Controls.GroupStyleSelector with get, set" Usage="System.Windows.Controls.ItemsControl.GroupStyleSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -699,6 +718,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.GroupStyleSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GroupStyleSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GroupStyleSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GroupStyleSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.GroupStyleSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -718,6 +738,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.HasItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasItems As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasItems { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasItems : bool" Usage="System.Windows.Controls.ItemsControl.HasItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -761,6 +782,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.HasItemsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasItemsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasItemsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasItemsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.HasItemsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -780,6 +802,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.IsGrouping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsGrouping As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsGrouping { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsGrouping : bool" Usage="System.Windows.Controls.ItemsControl.IsGrouping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -823,6 +846,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.IsGroupingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsGroupingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsGroupingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsGroupingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.IsGroupingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -842,6 +866,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.IsItemItsOwnContainer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsItemItsOwnContainer (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsItemItsOwnContainer(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="member this.IsItemItsOwnContainer : obj -&gt; bool" Usage="itemsControl.IsItemItsOwnContainer item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.Controls.IGeneratorHost.IsItemItsOwnContainer(System.Object)</InterfaceMember>
@@ -877,6 +902,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member IsItemItsOwnContainerOverride : obj -&gt; bool&#xA;override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="itemsControl.IsItemItsOwnContainerOverride item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -903,6 +929,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.IsTextSearchCaseSensitive" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTextSearchCaseSensitive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTextSearchCaseSensitive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsTextSearchCaseSensitive : bool with get, set" Usage="System.Windows.Controls.ItemsControl.IsTextSearchCaseSensitive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -938,6 +965,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.IsTextSearchCaseSensitiveProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTextSearchCaseSensitiveProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsTextSearchCaseSensitiveProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTextSearchCaseSensitiveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.IsTextSearchCaseSensitiveProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -957,6 +985,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.IsTextSearchEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTextSearchEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTextSearchEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsTextSearchEnabled : bool with get, set" Usage="System.Windows.Controls.ItemsControl.IsTextSearchEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -992,6 +1021,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.IsTextSearchEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTextSearchEnabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsTextSearchEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTextSearchEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.IsTextSearchEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1011,6 +1041,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemBindingGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemBindingGroup As BindingGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingGroup ^ ItemBindingGroup { System::Windows::Data::BindingGroup ^ get(); void set(System::Windows::Data::BindingGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemBindingGroup : System.Windows.Data.BindingGroup with get, set" Usage="System.Windows.Controls.ItemsControl.ItemBindingGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1056,6 +1087,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.ItemBindingGroupProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemBindingGroupProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemBindingGroupProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemBindingGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.ItemBindingGroupProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1075,6 +1107,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemContainerGenerator As ItemContainerGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemContainerGenerator ^ ItemContainerGenerator { System::Windows::Controls::ItemContainerGenerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerGenerator : System.Windows.Controls.ItemContainerGenerator" Usage="System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1115,6 +1148,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemContainerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemContainerStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ ItemContainerStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.ItemsControl.ItemContainerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1208,6 +1242,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.ItemContainerStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemContainerStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemContainerStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemContainerStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.ItemContainerStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1227,6 +1262,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemContainerStyleSelector As StyleSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::StyleSelector ^ ItemContainerStyleSelector { System::Windows::Controls::StyleSelector ^ get(); void set(System::Windows::Controls::StyleSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerStyleSelector : System.Windows.Controls.StyleSelector with get, set" Usage="System.Windows.Controls.ItemsControl.ItemContainerStyleSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1275,6 +1311,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.ItemContainerStyleSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemContainerStyleSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemContainerStyleSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemContainerStyleSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.ItemContainerStyleSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1294,6 +1331,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemCollection ^ Items { System::Windows::Controls::ItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Controls.ItemCollection" Usage="System.Windows.Controls.ItemsControl.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1407,6 +1445,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.ItemsControlFromItemContainer(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ItemsControlFromItemContainer (container As DependencyObject) As ItemsControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::ItemsControl ^ ItemsControlFromItemContainer(System::Windows::DependencyObject ^ container);" />
+      <MemberSignature Language="F#" Value="static member ItemsControlFromItemContainer : System.Windows.DependencyObject -&gt; System.Windows.Controls.ItemsControl" Usage="System.Windows.Controls.ItemsControl.ItemsControlFromItemContainer container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1432,6 +1471,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemsPanel" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemsPanel As ItemsPanelTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemsPanelTemplate ^ ItemsPanel { System::Windows::Controls::ItemsPanelTemplate ^ get(); void set(System::Windows::Controls::ItemsPanelTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsPanel : System.Windows.Controls.ItemsPanelTemplate with get, set" Usage="System.Windows.Controls.ItemsControl.ItemsPanel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1491,6 +1531,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.ItemsPanelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsPanelProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemsPanelProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsPanelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.ItemsPanelProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1510,6 +1551,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemsSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemsSource As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ ItemsSource { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable with get, set" Usage="System.Windows.Controls.ItemsControl.ItemsSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1574,6 +1616,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.ItemsSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemsSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.ItemsSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1593,6 +1636,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemStringFormat : string with get, set" Usage="System.Windows.Controls.ItemsControl.ItemStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1632,6 +1676,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.ItemStringFormatProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemStringFormatProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemStringFormatProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.ItemStringFormatProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1651,6 +1696,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ ItemTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.ItemsControl.ItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1743,6 +1789,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.ItemTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.ItemTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1762,6 +1809,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.ItemTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ ItemTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.ItemsControl.ItemTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1842,6 +1890,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ItemsControl.ItemTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ItemsControl.ItemTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1861,6 +1910,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemsControl.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.ItemsControl.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1881,6 +1931,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnAlternationCountChanged(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAlternationCountChanged (oldAlternationCount As Integer, newAlternationCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAlternationCountChanged(int oldAlternationCount, int newAlternationCount);" />
+      <MemberSignature Language="F#" Value="abstract member OnAlternationCountChanged : int * int -&gt; unit&#xA;override this.OnAlternationCountChanged : int * int -&gt; unit" Usage="itemsControl.OnAlternationCountChanged (oldAlternationCount, newAlternationCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1906,6 +1957,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnDisplayMemberPathChanged(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDisplayMemberPathChanged (oldDisplayMemberPath As String, newDisplayMemberPath As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDisplayMemberPathChanged(System::String ^ oldDisplayMemberPath, System::String ^ newDisplayMemberPath);" />
+      <MemberSignature Language="F#" Value="abstract member OnDisplayMemberPathChanged : string * string -&gt; unit&#xA;override this.OnDisplayMemberPathChanged : string * string -&gt; unit" Usage="itemsControl.OnDisplayMemberPathChanged (oldDisplayMemberPath, newDisplayMemberPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1931,6 +1983,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnGroupStyleSelectorChanged(System.Windows.Controls.GroupStyleSelector,System.Windows.Controls.GroupStyleSelector)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnGroupStyleSelectorChanged (oldGroupStyleSelector As GroupStyleSelector, newGroupStyleSelector As GroupStyleSelector)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGroupStyleSelectorChanged(System::Windows::Controls::GroupStyleSelector ^ oldGroupStyleSelector, System::Windows::Controls::GroupStyleSelector ^ newGroupStyleSelector);" />
+      <MemberSignature Language="F#" Value="abstract member OnGroupStyleSelectorChanged : System.Windows.Controls.GroupStyleSelector * System.Windows.Controls.GroupStyleSelector -&gt; unit&#xA;override this.OnGroupStyleSelectorChanged : System.Windows.Controls.GroupStyleSelector * System.Windows.Controls.GroupStyleSelector -&gt; unit" Usage="itemsControl.OnGroupStyleSelectorChanged (oldGroupStyleSelector, newGroupStyleSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1956,6 +2009,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemBindingGroupChanged(System.Windows.Data.BindingGroup,System.Windows.Data.BindingGroup)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemBindingGroupChanged (oldItemBindingGroup As BindingGroup, newItemBindingGroup As BindingGroup)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemBindingGroupChanged(System::Windows::Data::BindingGroup ^ oldItemBindingGroup, System::Windows::Data::BindingGroup ^ newItemBindingGroup);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemBindingGroupChanged : System.Windows.Data.BindingGroup * System.Windows.Data.BindingGroup -&gt; unit&#xA;override this.OnItemBindingGroupChanged : System.Windows.Data.BindingGroup * System.Windows.Data.BindingGroup -&gt; unit" Usage="itemsControl.OnItemBindingGroupChanged (oldItemBindingGroup, newItemBindingGroup)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1981,6 +2035,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemContainerStyleChanged(System.Windows.Style,System.Windows.Style)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemContainerStyleChanged (oldItemContainerStyle As Style, newItemContainerStyle As Style)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemContainerStyleChanged(System::Windows::Style ^ oldItemContainerStyle, System::Windows::Style ^ newItemContainerStyle);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemContainerStyleChanged : System.Windows.Style * System.Windows.Style -&gt; unit&#xA;override this.OnItemContainerStyleChanged : System.Windows.Style * System.Windows.Style -&gt; unit" Usage="itemsControl.OnItemContainerStyleChanged (oldItemContainerStyle, newItemContainerStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2006,6 +2061,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemContainerStyleSelectorChanged(System.Windows.Controls.StyleSelector,System.Windows.Controls.StyleSelector)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemContainerStyleSelectorChanged (oldItemContainerStyleSelector As StyleSelector, newItemContainerStyleSelector As StyleSelector)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemContainerStyleSelectorChanged(System::Windows::Controls::StyleSelector ^ oldItemContainerStyleSelector, System::Windows::Controls::StyleSelector ^ newItemContainerStyleSelector);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemContainerStyleSelectorChanged : System.Windows.Controls.StyleSelector * System.Windows.Controls.StyleSelector -&gt; unit&#xA;override this.OnItemContainerStyleSelectorChanged : System.Windows.Controls.StyleSelector * System.Windows.Controls.StyleSelector -&gt; unit" Usage="itemsControl.OnItemContainerStyleSelectorChanged (oldItemContainerStyleSelector, newItemContainerStyleSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2031,6 +2087,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="itemsControl.OnItemsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2054,6 +2111,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemsPanelChanged(System.Windows.Controls.ItemsPanelTemplate,System.Windows.Controls.ItemsPanelTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemsPanelChanged (oldItemsPanel As ItemsPanelTemplate, newItemsPanel As ItemsPanelTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemsPanelChanged(System::Windows::Controls::ItemsPanelTemplate ^ oldItemsPanel, System::Windows::Controls::ItemsPanelTemplate ^ newItemsPanel);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsPanelChanged : System.Windows.Controls.ItemsPanelTemplate * System.Windows.Controls.ItemsPanelTemplate -&gt; unit&#xA;override this.OnItemsPanelChanged : System.Windows.Controls.ItemsPanelTemplate * System.Windows.Controls.ItemsPanelTemplate -&gt; unit" Usage="itemsControl.OnItemsPanelChanged (oldItemsPanel, newItemsPanel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2079,6 +2137,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemsSourceChanged(System.Collections.IEnumerable,System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemsSourceChanged (oldValue As IEnumerable, newValue As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemsSourceChanged(System::Collections::IEnumerable ^ oldValue, System::Collections::IEnumerable ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsSourceChanged : System.Collections.IEnumerable * System.Collections.IEnumerable -&gt; unit&#xA;override this.OnItemsSourceChanged : System.Collections.IEnumerable * System.Collections.IEnumerable -&gt; unit" Usage="itemsControl.OnItemsSourceChanged (oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2104,6 +2163,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemStringFormatChanged(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemStringFormatChanged (oldItemStringFormat As String, newItemStringFormat As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemStringFormatChanged(System::String ^ oldItemStringFormat, System::String ^ newItemStringFormat);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemStringFormatChanged : string * string -&gt; unit&#xA;override this.OnItemStringFormatChanged : string * string -&gt; unit" Usage="itemsControl.OnItemStringFormatChanged (oldItemStringFormat, newItemStringFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2129,6 +2189,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemTemplateChanged (oldItemTemplate As DataTemplate, newItemTemplate As DataTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemTemplateChanged(System::Windows::DataTemplate ^ oldItemTemplate, System::Windows::DataTemplate ^ newItemTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit&#xA;override this.OnItemTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit" Usage="itemsControl.OnItemTemplateChanged (oldItemTemplate, newItemTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2154,6 +2215,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnItemTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemTemplateSelectorChanged (oldItemTemplateSelector As DataTemplateSelector, newItemTemplateSelector As DataTemplateSelector)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemTemplateSelectorChanged(System::Windows::Controls::DataTemplateSelector ^ oldItemTemplateSelector, System::Windows::Controls::DataTemplateSelector ^ newItemTemplateSelector);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit&#xA;override this.OnItemTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit" Usage="itemsControl.OnItemTemplateSelectorChanged (oldItemTemplateSelector, newItemTemplateSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2179,6 +2241,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="itemsControl.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2202,6 +2265,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.OnTextInput(System.Windows.Input.TextCompositionEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextInput (e As TextCompositionEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextInput(System::Windows::Input::TextCompositionEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnTextInput : System.Windows.Input.TextCompositionEventArgs -&gt; unit" Usage="itemsControl.OnTextInput e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2225,6 +2289,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit&#xA;override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="itemsControl.PrepareContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2257,6 +2322,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldApplyItemContainerStyle (container As DependencyObject, item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldApplyItemContainerStyle(System::Windows::DependencyObject ^ container, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldApplyItemContainerStyle : System.Windows.DependencyObject * obj -&gt; bool&#xA;override this.ShouldApplyItemContainerStyle : System.Windows.DependencyObject * obj -&gt; bool" Usage="itemsControl.ShouldApplyItemContainerStyle (container, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2283,6 +2349,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.ShouldSerializeGroupStyle" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeGroupStyle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeGroupStyle();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeGroupStyle : unit -&gt; bool" Usage="itemsControl.ShouldSerializeGroupStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2310,6 +2377,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.ShouldSerializeItems" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeItems () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeItems();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeItems : unit -&gt; bool" Usage="itemsControl.ShouldSerializeItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2525,6 +2593,7 @@ ListBox that contains multiple types of objects
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsControl.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="itemsControl.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

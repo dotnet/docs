@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlQueryOutput" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlQueryOutput&#xA;Inherits XmlWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlQueryOutput sealed : System::Xml::XmlWriter" />
+  <TypeSignature Language="F#" Value="type XmlQueryOutput = class&#xA;    inherit XmlWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="xmlQueryOutput.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.EndCopy(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndCopy (navigator As XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCopy(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="member this.EndCopy : System.Xml.XPath.XPathNavigator -&gt; unit" Usage="xmlQueryOutput.EndCopy navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.EndTree" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndTree ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTree();" />
+      <MemberSignature Language="F#" Value="member this.EndTree : unit -&gt; unit" Usage="xmlQueryOutput.EndTree " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="xmlQueryOutput.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.LookupPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function LookupPrefix (ns As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ LookupPrefix(System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="override this.LookupPrefix : string -&gt; string" Usage="xmlQueryOutput.LookupPrefix ns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.StartCopy(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartCopy (navigator As XPathNavigator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartCopy(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="member this.StartCopy : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xmlQueryOutput.StartCopy navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.StartElementContentUnchecked" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartElementContentUnchecked ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartElementContentUnchecked();" />
+      <MemberSignature Language="F#" Value="member this.StartElementContentUnchecked : unit -&gt; unit" Usage="xmlQueryOutput.StartElementContentUnchecked " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.StartTree(System.Xml.XPath.XPathNodeType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartTree (rootType As XPathNodeType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartTree(System::Xml::XPath::XPathNodeType rootType);" />
+      <MemberSignature Language="F#" Value="member this.StartTree : System.Xml.XPath.XPathNodeType -&gt; unit" Usage="xmlQueryOutput.StartTree rootType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBase64 (buffer As Byte(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.WriteBase64 : byte[] * int * int -&gt; unit" Usage="xmlQueryOutput.WriteBase64 (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -286,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteCData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteCData (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteCData(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteCData : string -&gt; unit" Usage="xmlQueryOutput.WriteCData text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -314,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteCharEntity(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteCharEntity (ch As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteCharEntity(char ch);" />
+      <MemberSignature Language="F#" Value="override this.WriteCharEntity : char -&gt; unit" Usage="xmlQueryOutput.WriteCharEntity ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -343,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteChars(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteChars (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteChars(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.WriteChars : char[] * int * int -&gt; unit" Usage="xmlQueryOutput.WriteChars (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -378,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteComment(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteComment (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteComment(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteComment : string -&gt; unit" Usage="xmlQueryOutput.WriteComment text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -406,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteCommentString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteCommentString (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteCommentString(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.WriteCommentString : string -&gt; unit" Usage="xmlQueryOutput.WriteCommentString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -434,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteDocType(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteDocType (name As String, pubid As String, sysid As String, subset As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteDocType(System::String ^ name, System::String ^ pubid, System::String ^ sysid, System::String ^ subset);" />
+      <MemberSignature Language="F#" Value="override this.WriteDocType : string * string * string * string -&gt; unit" Usage="xmlQueryOutput.WriteDocType (name, pubid, sysid, subset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -468,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndAttribute ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndAttribute();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndAttribute : unit -&gt; unit" Usage="xmlQueryOutput.WriteEndAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -493,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndAttributeUnchecked" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEndAttributeUnchecked ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndAttributeUnchecked();" />
+      <MemberSignature Language="F#" Value="member this.WriteEndAttributeUnchecked : unit -&gt; unit" Usage="xmlQueryOutput.WriteEndAttributeUnchecked " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -518,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndComment" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEndComment ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndComment();" />
+      <MemberSignature Language="F#" Value="member this.WriteEndComment : unit -&gt; unit" Usage="xmlQueryOutput.WriteEndComment " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -543,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndDocument();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndDocument : unit -&gt; unit" Usage="xmlQueryOutput.WriteEndDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -568,6 +588,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndElement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndElement();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndElement : unit -&gt; unit" Usage="xmlQueryOutput.WriteEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -602,6 +623,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndElementUnchecked(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEndElementUnchecked (localName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndElementUnchecked(System::String ^ localName);" />
+      <MemberSignature Language="F#" Value="member this.WriteEndElementUnchecked : string -&gt; unit" Usage="xmlQueryOutput.WriteEndElementUnchecked localName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -630,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndElementUnchecked(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEndElementUnchecked (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndElementUnchecked(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.WriteEndElementUnchecked : string * string * string -&gt; unit" Usage="xmlQueryOutput.WriteEndElementUnchecked (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -662,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEndNamespace ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndNamespace();" />
+      <MemberSignature Language="F#" Value="member this.WriteEndNamespace : unit -&gt; unit" Usage="xmlQueryOutput.WriteEndNamespace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -687,6 +711,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndProcessingInstruction" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEndProcessingInstruction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndProcessingInstruction();" />
+      <MemberSignature Language="F#" Value="member this.WriteEndProcessingInstruction : unit -&gt; unit" Usage="xmlQueryOutput.WriteEndProcessingInstruction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -712,6 +737,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEndRoot" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEndRoot ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndRoot();" />
+      <MemberSignature Language="F#" Value="member this.WriteEndRoot : unit -&gt; unit" Usage="xmlQueryOutput.WriteEndRoot " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -737,6 +763,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteEntityRef(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEntityRef (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEntityRef(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.WriteEntityRef : string -&gt; unit" Usage="xmlQueryOutput.WriteEntityRef name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -765,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteFullEndElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFullEndElement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFullEndElement();" />
+      <MemberSignature Language="F#" Value="override this.WriteFullEndElement : unit -&gt; unit" Usage="xmlQueryOutput.WriteFullEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -790,6 +818,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteItem(System.Xml.XPath.XPathItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteItem (item As XPathItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteItem(System::Xml::XPath::XPathItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.WriteItem : System.Xml.XPath.XPathItem -&gt; unit" Usage="xmlQueryOutput.WriteItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -819,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteNamespaceDeclaration(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteNamespaceDeclaration (prefix As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNamespaceDeclaration(System::String ^ prefix, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.WriteNamespaceDeclaration : string * string -&gt; unit" Usage="xmlQueryOutput.WriteNamespaceDeclaration (prefix, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -849,6 +879,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteNamespaceDeclarationUnchecked(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteNamespaceDeclarationUnchecked (prefix As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNamespaceDeclarationUnchecked(System::String ^ prefix, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.WriteNamespaceDeclarationUnchecked : string * string -&gt; unit" Usage="xmlQueryOutput.WriteNamespaceDeclarationUnchecked (prefix, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -879,6 +910,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteNamespaceString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteNamespaceString (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNamespaceString(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.WriteNamespaceString : string -&gt; unit" Usage="xmlQueryOutput.WriteNamespaceString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -907,6 +939,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteProcessingInstruction(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteProcessingInstruction (target As String, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteProcessingInstruction(System::String ^ target, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteProcessingInstruction : string * string -&gt; unit" Usage="xmlQueryOutput.WriteProcessingInstruction (target, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -937,6 +970,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteProcessingInstructionString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteProcessingInstructionString (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteProcessingInstructionString(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.WriteProcessingInstructionString : string -&gt; unit" Usage="xmlQueryOutput.WriteProcessingInstructionString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -974,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteRaw(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteRaw (data As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteRaw(System::String ^ data);" />
+      <MemberSignature Language="F#" Value="override this.WriteRaw : string -&gt; unit" Usage="xmlQueryOutput.WriteRaw data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1002,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteRaw(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteRaw (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteRaw(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.WriteRaw : char[] * int * int -&gt; unit" Usage="xmlQueryOutput.WriteRaw (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1037,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteRawUnchecked(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteRawUnchecked (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteRawUnchecked(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.WriteRawUnchecked : string -&gt; unit" Usage="xmlQueryOutput.WriteRawUnchecked text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1065,6 +1102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttribute(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartAttribute (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartAttribute(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartAttribute : string * string * string -&gt; unit" Usage="xmlQueryOutput.WriteStartAttribute (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1106,6 +1144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttributeComputed(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttributeComputed (name As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttributeComputed(System::Xml::XmlQualifiedName ^ name);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttributeComputed : System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlQueryOutput.WriteStartAttributeComputed name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1134,6 +1173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttributeComputed(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttributeComputed (navigator As XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttributeComputed(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttributeComputed : System.Xml.XPath.XPathNavigator -&gt; unit" Usage="xmlQueryOutput.WriteStartAttributeComputed navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1163,6 +1203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttributeComputed(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttributeComputed (tagName As String, prefixMappingsIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttributeComputed(System::String ^ tagName, int prefixMappingsIndex);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttributeComputed : string * int -&gt; unit" Usage="xmlQueryOutput.WriteStartAttributeComputed (tagName, prefixMappingsIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1194,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttributeComputed(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttributeComputed (tagName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttributeComputed(System::String ^ tagName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttributeComputed : string * string -&gt; unit" Usage="xmlQueryOutput.WriteStartAttributeComputed (tagName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1224,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttributeLocalName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttributeLocalName (localName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttributeLocalName(System::String ^ localName);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttributeLocalName : string -&gt; unit" Usage="xmlQueryOutput.WriteStartAttributeLocalName localName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1261,6 +1304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttributeUnchecked(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttributeUnchecked (localName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttributeUnchecked(System::String ^ localName);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttributeUnchecked : string -&gt; unit" Usage="xmlQueryOutput.WriteStartAttributeUnchecked localName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1289,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartAttributeUnchecked(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttributeUnchecked (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttributeUnchecked(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartAttributeUnchecked : string * string * string -&gt; unit" Usage="xmlQueryOutput.WriteStartAttributeUnchecked (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1321,6 +1366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartComment" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartComment ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartComment();" />
+      <MemberSignature Language="F#" Value="member this.WriteStartComment : unit -&gt; unit" Usage="xmlQueryOutput.WriteStartComment " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1355,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartDocument();" />
+      <MemberSignature Language="F#" Value="override this.WriteStartDocument : unit -&gt; unit" Usage="xmlQueryOutput.WriteStartDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1380,6 +1427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartDocument(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartDocument (standalone As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartDocument(bool standalone);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartDocument : bool -&gt; unit" Usage="xmlQueryOutput.WriteStartDocument standalone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1408,6 +1456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElement(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartElement (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartElement(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartElement : string * string * string -&gt; unit" Usage="xmlQueryOutput.WriteStartElement (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1449,6 +1498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElementComputed(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElementComputed (name As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElementComputed(System::Xml::XmlQualifiedName ^ name);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElementComputed : System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlQueryOutput.WriteStartElementComputed name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1478,6 +1528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElementComputed(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElementComputed (navigator As XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElementComputed(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElementComputed : System.Xml.XPath.XPathNavigator -&gt; unit" Usage="xmlQueryOutput.WriteStartElementComputed navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1507,6 +1558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElementComputed(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElementComputed (tagName As String, prefixMappingsIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElementComputed(System::String ^ tagName, int prefixMappingsIndex);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElementComputed : string * int -&gt; unit" Usage="xmlQueryOutput.WriteStartElementComputed (tagName, prefixMappingsIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1538,6 +1590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElementComputed(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElementComputed (tagName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElementComputed(System::String ^ tagName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElementComputed : string * string -&gt; unit" Usage="xmlQueryOutput.WriteStartElementComputed (tagName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1568,6 +1621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElementLocalName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElementLocalName (localName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElementLocalName(System::String ^ localName);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElementLocalName : string -&gt; unit" Usage="xmlQueryOutput.WriteStartElementLocalName localName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1605,6 +1659,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElementUnchecked(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElementUnchecked (localName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElementUnchecked(System::String ^ localName);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElementUnchecked : string -&gt; unit" Usage="xmlQueryOutput.WriteStartElementUnchecked localName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1633,6 +1688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartElementUnchecked(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElementUnchecked (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElementUnchecked(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartElementUnchecked : string * string * string -&gt; unit" Usage="xmlQueryOutput.WriteStartElementUnchecked (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1665,6 +1721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartNamespace (prefix As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartNamespace(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartNamespace : string -&gt; unit" Usage="xmlQueryOutput.WriteStartNamespace prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1693,6 +1750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartProcessingInstruction(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartProcessingInstruction (target As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartProcessingInstruction(System::String ^ target);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartProcessingInstruction : string -&gt; unit" Usage="xmlQueryOutput.WriteStartProcessingInstruction target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1721,6 +1779,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartRoot" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartRoot ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartRoot();" />
+      <MemberSignature Language="F#" Value="member this.WriteStartRoot : unit -&gt; unit" Usage="xmlQueryOutput.WriteStartRoot " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1746,6 +1805,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WriteState As WriteState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::WriteState WriteState { System::Xml::WriteState get(); };" />
+      <MemberSignature Language="F#" Value="member this.WriteState : System.Xml.WriteState" Usage="System.Xml.Xsl.Runtime.XmlQueryOutput.WriteState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1771,6 +1831,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteString (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteString(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteString : string -&gt; unit" Usage="xmlQueryOutput.WriteString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1799,6 +1860,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStringUnchecked(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStringUnchecked (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStringUnchecked(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.WriteStringUnchecked : string -&gt; unit" Usage="xmlQueryOutput.WriteStringUnchecked text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1827,6 +1889,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteSurrogateCharEntity(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteSurrogateCharEntity (lowChar As Char, highChar As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteSurrogateCharEntity(char lowChar, char highChar);" />
+      <MemberSignature Language="F#" Value="override this.WriteSurrogateCharEntity : char * char -&gt; unit" Usage="xmlQueryOutput.WriteSurrogateCharEntity (lowChar, highChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1859,6 +1922,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.WriteWhitespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteWhitespace (ws As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteWhitespace(System::String ^ ws);" />
+      <MemberSignature Language="F#" Value="override this.WriteWhitespace : string -&gt; unit" Usage="xmlQueryOutput.WriteWhitespace ws" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1887,6 +1951,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryOutput.XmlLang" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlLang As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XmlLang { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlLang : string" Usage="System.Xml.Xsl.Runtime.XmlQueryOutput.XmlLang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1912,6 +1977,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryOutput.XmlSpace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlSpace As XmlSpace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlSpace XmlSpace { System::Xml::XmlSpace get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSpace : System.Xml.XmlSpace" Usage="System.Xml.Xsl.Runtime.XmlQueryOutput.XmlSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1937,6 +2003,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryOutput.XsltCopyOf(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub XsltCopyOf (navigator As XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void XsltCopyOf(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="member this.XsltCopyOf : System.Xml.XPath.XPathNavigator -&gt; unit" Usage="xmlQueryOutput.XsltCopyOf navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

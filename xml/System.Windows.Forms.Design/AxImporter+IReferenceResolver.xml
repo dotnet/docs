@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxImporter.IReferenceResolver" />
   <TypeSignature Language="VB.NET" Value="Public Interface AxImporter.IReferenceResolver" />
   <TypeSignature Language="C++ CLI" Value="public: interface class AxImporter::IReferenceResolver" />
+  <TypeSignature Language="F#" Value="type AxImporter.IReferenceResolver = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveActiveXReference(System.Runtime.InteropServices.UCOMITypeLib)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveActiveXReference (typeLib As UCOMITypeLib) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveActiveXReference(System::Runtime::InteropServices::UCOMITypeLib ^ typeLib);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveActiveXReference : System.Runtime.InteropServices.UCOMITypeLib -&gt; string" Usage="iReferenceResolver.ResolveActiveXReference typeLib" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveComReference(System.Reflection.AssemblyName)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveComReference (name As AssemblyName) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveComReference(System::Reflection::AssemblyName ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveComReference : System.Reflection.AssemblyName -&gt; string" Usage="iReferenceResolver.ResolveComReference name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveComReference(System.Runtime.InteropServices.UCOMITypeLib)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveComReference (typeLib As UCOMITypeLib) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveComReference(System::Runtime::InteropServices::UCOMITypeLib ^ typeLib);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveComReference : System.Runtime.InteropServices.UCOMITypeLib -&gt; string" Usage="iReferenceResolver.ResolveComReference typeLib" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveManagedReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveManagedReference (assemName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveManagedReference(System::String ^ assemName);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveManagedReference : string -&gt; string" Usage="iReferenceResolver.ResolveManagedReference assemName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

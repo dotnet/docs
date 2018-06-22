@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IMultipleViewProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMultipleViewProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMultipleViewProvider" />
+  <TypeSignature Language="F#" Value="type IMultipleViewProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentView As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentView { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentView : int" Usage="System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IMultipleViewProvider.GetSupportedViews" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSupportedViews () As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetSupportedViews();" />
+      <MemberSignature Language="F#" Value="abstract member GetSupportedViews : unit -&gt; int[]" Usage="iMultipleViewProvider.GetSupportedViews " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetViewName (viewId As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetViewName(int viewId);" />
+      <MemberSignature Language="F#" Value="abstract member GetViewName : int -&gt; string" Usage="iMultipleViewProvider.GetViewName viewId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCurrentView (viewId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCurrentView(int viewId);" />
+      <MemberSignature Language="F#" Value="abstract member SetCurrentView : int -&gt; unit" Usage="iMultipleViewProvider.SetCurrentView viewId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

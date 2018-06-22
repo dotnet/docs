@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlRowsCopiedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlRowsCopiedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlRowsCopiedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SqlRowsCopiedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlRowsCopiedEventArgs.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rowsCopied As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlRowsCopiedEventArgs(long rowsCopied);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlRowsCopiedEventArgs : int64 -&gt; System.Data.SqlClient.SqlRowsCopiedEventArgs" Usage="new System.Data.SqlClient.SqlRowsCopiedEventArgs rowsCopied" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlRowsCopiedEventArgs.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Property Abort As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Abort { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Abort : bool with get, set" Usage="System.Data.SqlClient.SqlRowsCopiedEventArgs.Abort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlRowsCopiedEventArgs.RowsCopied" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowsCopied As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RowsCopied { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowsCopied : int64" Usage="System.Data.SqlClient.SqlRowsCopiedEventArgs.RowsCopied" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

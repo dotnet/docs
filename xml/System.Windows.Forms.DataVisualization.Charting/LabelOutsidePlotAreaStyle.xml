@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum LabelOutsidePlotAreaStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class LabelOutsidePlotAreaStyle" />
+  <TypeSignature Language="F#" Value="type LabelOutsidePlotAreaStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.No" />
       <MemberSignature Language="VB.NET" Value="No" />
       <MemberSignature Language="C++ CLI" Value="No" />
+      <MemberSignature Language="F#" Value="No = 1" Usage="System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.Partial" />
       <MemberSignature Language="VB.NET" Value="Partial" />
       <MemberSignature Language="C++ CLI" Value="Partial" />
+      <MemberSignature Language="F#" Value="Partial = 2" Usage="System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.Partial" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.Yes" />
       <MemberSignature Language="VB.NET" Value="Yes" />
       <MemberSignature Language="C++ CLI" Value="Yes" />
+      <MemberSignature Language="F#" Value="Yes = 0" Usage="System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

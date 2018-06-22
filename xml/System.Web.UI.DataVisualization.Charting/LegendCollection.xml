@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class LegendCollection&#xA;Inherits ChartNamedElementCollection(Of Legend)" />
   <TypeSignature Language="C++ CLI" Value="public ref class LegendCollection : System::Web::UI::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Web::UI::DataVisualization::Charting::Legend ^&gt;" />
+  <TypeSignature Language="F#" Value="type LegendCollection = class&#xA;    inherit ChartNamedElementCollection&lt;Legend&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String) As Legend" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::Legend ^ Add(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; System.Web.UI.DataVisualization.Charting.Legend" Usage="legendCollection.Add name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

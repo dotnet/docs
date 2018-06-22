@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.SubstitutionResponseElement" />
   <TypeSignature Language="VB.NET" Value="Public Class SubstitutionResponseElement&#xA;Inherits ResponseElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SubstitutionResponseElement : System::Web::Caching::ResponseElement" />
+  <TypeSignature Language="F#" Value="type SubstitutionResponseElement = class&#xA;    inherit ResponseElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SubstitutionResponseElement.#ctor(System.Web.HttpResponseSubstitutionCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callback As HttpResponseSubstitutionCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SubstitutionResponseElement(System::Web::HttpResponseSubstitutionCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.SubstitutionResponseElement : System.Web.HttpResponseSubstitutionCallback -&gt; System.Web.Caching.SubstitutionResponseElement" Usage="new System.Web.Caching.SubstitutionResponseElement callback" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.SubstitutionResponseElement.Callback" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callback As HttpResponseSubstitutionCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpResponseSubstitutionCallback ^ Callback { System::Web::HttpResponseSubstitutionCallback ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Callback : System.Web.HttpResponseSubstitutionCallback" Usage="System.Web.Caching.SubstitutionResponseElement.Callback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

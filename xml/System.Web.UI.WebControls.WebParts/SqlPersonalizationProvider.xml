@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlPersonalizationProvider&#xA;Inherits PersonalizationProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlPersonalizationProvider : System::Web::UI::WebControls::WebParts::PersonalizationProvider" />
+  <TypeSignature Language="F#" Value="type SqlPersonalizationProvider = class&#xA;    inherit PersonalizationProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.FindState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.Web.UI.WebControls.WebParts.PersonalizationStateQuery,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindState (scope As PersonalizationScope, query As PersonalizationStateQuery, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ FindState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope, System::Web::UI::WebControls::WebParts::PersonalizationStateQuery ^ query, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="override this.FindState : System.Web.UI.WebControls.WebParts.PersonalizationScope * System.Web.UI.WebControls.WebParts.PersonalizationStateQuery * int * int *  -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="sqlPersonalizationProvider.FindState (scope, query, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.GetCountOfState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.Web.UI.WebControls.WebParts.PersonalizationStateQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCountOfState (scope As PersonalizationScope, query As PersonalizationStateQuery) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCountOfState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope, System::Web::UI::WebControls::WebParts::PersonalizationStateQuery ^ query);" />
+      <MemberSignature Language="F#" Value="override this.GetCountOfState : System.Web.UI.WebControls.WebParts.PersonalizationScope * System.Web.UI.WebControls.WebParts.PersonalizationStateQuery -&gt; int" Usage="sqlPersonalizationProvider.GetCountOfState (scope, query)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -258,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, configSettings As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ configSettings);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="sqlPersonalizationProvider.Initialize (name, configSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -308,6 +313,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadPersonalizationBlobs(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName, unsigned int8[]&amp; sharedDataBlob, unsigned int8[]&amp; userDataBlob) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.LoadPersonalizationBlobs(System.Web.UI.WebControls.WebParts.WebPartManager,System.String,System.String,System.Byte[]@,System.Byte[]@)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadPersonalizationBlobs(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager, System::String ^ path, System::String ^ userName, cli::array &lt;System::Byte&gt; ^ % sharedDataBlob, cli::array &lt;System::Byte&gt; ^ % userDataBlob);" />
+      <MemberSignature Language="F#" Value="override this.LoadPersonalizationBlobs : System.Web.UI.WebControls.WebParts.WebPartManager * string * string *  *  -&gt; unit" Usage="sqlPersonalizationProvider.LoadPersonalizationBlobs (webPartManager, path, userName, sharedDataBlob, userDataBlob)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +357,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ResetPersonalizationBlob(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.ResetPersonalizationBlob(System.Web.UI.WebControls.WebParts.WebPartManager,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ResetPersonalizationBlob(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager, System::String ^ path, System::String ^ userName);" />
+      <MemberSignature Language="F#" Value="override this.ResetPersonalizationBlob : System.Web.UI.WebControls.WebParts.WebPartManager * string * string -&gt; unit" Usage="sqlPersonalizationProvider.ResetPersonalizationBlob (webPartManager, path, userName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -387,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.ResetState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ResetState (scope As PersonalizationScope, paths As String(), usernames As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ResetState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope, cli::array &lt;System::String ^&gt; ^ paths, cli::array &lt;System::String ^&gt; ^ usernames);" />
+      <MemberSignature Language="F#" Value="override this.ResetState : System.Web.UI.WebControls.WebParts.PersonalizationScope * string[] * string[] -&gt; int" Usage="sqlPersonalizationProvider.ResetState (scope, paths, usernames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -456,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.ResetUserState(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ResetUserState (path As String, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ResetUserState(System::String ^ path, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="override this.ResetUserState : string * DateTime -&gt; int" Usage="sqlPersonalizationProvider.ResetUserState (path, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -508,6 +517,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SavePersonalizationBlob(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager, string path, string userName, unsigned int8[] dataBlob) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider.SavePersonalizationBlob(System.Web.UI.WebControls.WebParts.WebPartManager,System.String,System.String,System.Byte[])" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SavePersonalizationBlob(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager, System::String ^ path, System::String ^ userName, cli::array &lt;System::Byte&gt; ^ dataBlob);" />
+      <MemberSignature Language="F#" Value="override this.SavePersonalizationBlob : System.Web.UI.WebControls.WebParts.WebPartManager * string * string * byte[] -&gt; unit" Usage="sqlPersonalizationProvider.SavePersonalizationBlob (webPartManager, path, userName, dataBlob)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

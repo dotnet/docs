@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeIdentifierAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeIdentifierAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeIdentifierAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TypeIdentifierAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.TypeIdentifierAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, identifier As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeIdentifierAttribute(System::String ^ scope, System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.TypeIdentifierAttribute : string * string -&gt; System.Runtime.InteropServices.TypeIdentifierAttribute" Usage="new System.Runtime.InteropServices.TypeIdentifierAttribute (scope, identifier)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identifier As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Identifier { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identifier : string" Usage="System.Runtime.InteropServices.TypeIdentifierAttribute.Identifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -193,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.TypeIdentifierAttribute.Scope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scope As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scope { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : string" Usage="System.Runtime.InteropServices.TypeIdentifierAttribute.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

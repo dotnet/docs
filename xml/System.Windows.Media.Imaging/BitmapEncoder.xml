@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapEncoder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BitmapEncoder&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapEncoder abstract : System::Windows::Threading::DispatcherObject" />
+  <TypeSignature Language="F#" Value="type BitmapEncoder = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CodecInfo As BitmapCodecInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapCodecInfo ^ CodecInfo { System::Windows::Media::Imaging::BitmapCodecInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodecInfo : System.Windows.Media.Imaging.BitmapCodecInfo" Usage="System.Windows.Media.Imaging.BitmapEncoder.CodecInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapEncoder.ColorContexts" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ColorContexts As ReadOnlyCollection(Of ColorContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ ColorContexts { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ get(); void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColorContexts : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt; with get, set" Usage="System.Windows.Media.Imaging.BitmapEncoder.ColorContexts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapEncoder.Create(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (containerFormat As Guid) As BitmapEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapEncoder ^ Create(Guid containerFormat);" />
+      <MemberSignature Language="F#" Value="static member Create : Guid -&gt; System.Windows.Media.Imaging.BitmapEncoder" Usage="System.Windows.Media.Imaging.BitmapEncoder.Create containerFormat" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapEncoder.Frames" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Frames As IList(Of BitmapFrame)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::Windows::Media::Imaging::BitmapFrame ^&gt; ^ Frames { System::Collections::Generic::IList&lt;System::Windows::Media::Imaging::BitmapFrame ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::Windows::Media::Imaging::BitmapFrame ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Frames : System.Collections.Generic.IList&lt;System.Windows.Media.Imaging.BitmapFrame&gt; with get, set" Usage="System.Windows.Media.Imaging.BitmapEncoder.Frames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapEncoder.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Metadata As BitmapMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapMetadata ^ Metadata { System::Windows::Media::Imaging::BitmapMetadata ^ get(); void set(System::Windows::Media::Imaging::BitmapMetadata ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Windows.Media.Imaging.BitmapMetadata with get, set" Usage="System.Windows.Media.Imaging.BitmapEncoder.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapEncoder.Palette" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Palette As BitmapPalette" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapPalette ^ Palette { System::Windows::Media::Imaging::BitmapPalette ^ get(); void set(System::Windows::Media::Imaging::BitmapPalette ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Palette : System.Windows.Media.Imaging.BitmapPalette with get, set" Usage="System.Windows.Media.Imaging.BitmapEncoder.Palette" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapEncoder.Preview" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Preview As BitmapSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapSource ^ Preview { System::Windows::Media::Imaging::BitmapSource ^ get(); void set(System::Windows::Media::Imaging::BitmapSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Preview : System.Windows.Media.Imaging.BitmapSource with get, set" Usage="System.Windows.Media.Imaging.BitmapEncoder.Preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -293,6 +301,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapEncoder.Save(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.IO.Stream -&gt; unit&#xA;override this.Save : System.IO.Stream -&gt; unit" Usage="bitmapEncoder.Save stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -339,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapEncoder.Thumbnail" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Thumbnail As BitmapSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapSource ^ Thumbnail { System::Windows::Media::Imaging::BitmapSource ^ get(); void set(System::Windows::Media::Imaging::BitmapSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Thumbnail : System.Windows.Media.Imaging.BitmapSource with get, set" Usage="System.Windows.Media.Imaging.BitmapEncoder.Thumbnail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

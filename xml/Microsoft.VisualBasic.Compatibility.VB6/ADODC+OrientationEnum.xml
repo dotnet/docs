@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.OrientationEnum" />
   <TypeSignature Language="VB.NET" Value="Public Enum ADODC.OrientationEnum" />
   <TypeSignature Language="C++ CLI" Value="public: enum class ADODC::OrientationEnum" />
+  <TypeSignature Language="F#" Value="type ADODC.OrientationEnum = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ADODC.OrientationEnum.adHorizontal" />
       <MemberSignature Language="VB.NET" Value="adHorizontal" />
       <MemberSignature Language="C++ CLI" Value="adHorizontal" />
+      <MemberSignature Language="F#" Value="adHorizontal = 0" Usage="Microsoft.VisualBasic.Compatibility.VB6.ADODC.OrientationEnum.adHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ADODC.OrientationEnum.adVertical" />
       <MemberSignature Language="VB.NET" Value="adVertical" />
       <MemberSignature Language="C++ CLI" Value="adVertical" />
+      <MemberSignature Language="F#" Value="adVertical = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.ADODC.OrientationEnum.adVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

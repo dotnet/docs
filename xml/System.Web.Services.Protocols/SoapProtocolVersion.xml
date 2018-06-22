@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapProtocolVersion" />
   <TypeSignature Language="VB.NET" Value="Public Enum SoapProtocolVersion" />
   <TypeSignature Language="C++ CLI" Value="public enum class SoapProtocolVersion" />
+  <TypeSignature Language="F#" Value="type SoapProtocolVersion = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapProtocolVersion.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.Services.Protocols.SoapProtocolVersion.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapProtocolVersion.Soap11" />
       <MemberSignature Language="VB.NET" Value="Soap11" />
       <MemberSignature Language="C++ CLI" Value="Soap11" />
+      <MemberSignature Language="F#" Value="Soap11 = 1" Usage="System.Web.Services.Protocols.SoapProtocolVersion.Soap11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapProtocolVersion.Soap12" />
       <MemberSignature Language="VB.NET" Value="Soap12" />
       <MemberSignature Language="C++ CLI" Value="Soap12" />
+      <MemberSignature Language="F#" Value="Soap12 = 2" Usage="System.Web.Services.Protocols.SoapProtocolVersion.Soap12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlPhoneCallAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class ChtmlPhoneCallAdapter&#xA;Inherits HtmlPhoneCallAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChtmlPhoneCallAdapter : System::Web::UI::MobileControls::Adapters::HtmlPhoneCallAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlPhoneCallAdapter = class&#xA;    inherit HtmlPhoneCallAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlPhoneCallAdapter.AddAttributes(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributes (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributes(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributes : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="chtmlPhoneCallAdapter.AddAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

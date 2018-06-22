@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.StrongNameSignatureInformation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StrongNameSignatureInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class StrongNameSignatureInformation sealed" />
+  <TypeSignature Language="F#" Value="type StrongNameSignatureInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.HashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : string" Usage="System.Security.Cryptography.StrongNameSignatureInformation.HashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.HResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HResult As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HResult { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HResult : int" Usage="System.Security.Cryptography.StrongNameSignatureInformation.HResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Security.Cryptography.StrongNameSignatureInformation.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As AsymmetricAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::AsymmetricAlgorithm ^ PublicKey { System::Security::Cryptography::AsymmetricAlgorithm ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : System.Security.Cryptography.AsymmetricAlgorithm" Usage="System.Security.Cryptography.StrongNameSignatureInformation.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.StrongNameSignatureInformation.VerificationResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerificationResult As SignatureVerificationResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::SignatureVerificationResult VerificationResult { System::Security::Cryptography::SignatureVerificationResult get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerificationResult : System.Security.Cryptography.SignatureVerificationResult" Usage="System.Security.Cryptography.StrongNameSignatureInformation.VerificationResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

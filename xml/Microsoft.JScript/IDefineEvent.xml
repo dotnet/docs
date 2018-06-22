@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDefineEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDefineEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDefineEvent" />
+  <TypeSignature Language="F#" Value="type IDefineEvent = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDefineEvent.AddEvent(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddEvent (code As String, startLine As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddEvent(System::String ^ code, int startLine);" />
+      <MemberSignature Language="F#" Value="abstract member AddEvent : string * int -&gt; obj" Usage="iDefineEvent.AddEvent (code, startLine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

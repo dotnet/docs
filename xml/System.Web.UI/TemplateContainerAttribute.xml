@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateContainerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TemplateContainerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateContainerAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TemplateContainerAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateContainerAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (containerType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateContainerAttribute(Type ^ containerType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.TemplateContainerAttribute : Type -&gt; System.Web.UI.TemplateContainerAttribute" Usage="new System.Web.UI.TemplateContainerAttribute containerType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type containerType, valuetype System.ComponentModel.BindingDirection bindingDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateContainerAttribute.#ctor(System.Type,System.ComponentModel.BindingDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateContainerAttribute(Type ^ containerType, System::ComponentModel::BindingDirection bindingDirection);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.TemplateContainerAttribute : Type * System.ComponentModel.BindingDirection -&gt; System.Web.UI.TemplateContainerAttribute" Usage="new System.Web.UI.TemplateContainerAttribute (containerType, bindingDirection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateContainerAttribute.BindingDirection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingDirection As BindingDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::BindingDirection BindingDirection { System::ComponentModel::BindingDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingDirection : System.ComponentModel.BindingDirection" Usage="System.Web.UI.TemplateContainerAttribute.BindingDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateContainerAttribute.ContainerType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContainerType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainerType : Type" Usage="System.Web.UI.TemplateContainerAttribute.ContainerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

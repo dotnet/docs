@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MaskInputRejectedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub MaskInputRejectedEventHandler(sender As Object, e As MaskInputRejectedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void MaskInputRejectedEventHandler(System::Object ^ sender, MaskInputRejectedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type MaskInputRejectedEventHandler = delegate of obj * MaskInputRejectedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

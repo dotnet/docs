@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.GetValueOverride" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function GetValueOverride(d As DependencyObject) As Object " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ GetValueOverride(DependencyObject ^ d);" />
+  <TypeSignature Language="F#" Value="type GetValueOverride = delegate of DependencyObject -&gt; obj" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

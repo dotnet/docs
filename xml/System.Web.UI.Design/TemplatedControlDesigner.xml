@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplatedControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TemplatedControlDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplatedControlDesigner abstract : System::Web::UI::Design::ControlDesigner" />
+  <TypeSignature Language="F#" Value="type TemplatedControlDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.ActiveTemplateEditingFrame" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveTemplateEditingFrame As ITemplateEditingFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::ITemplateEditingFrame ^ ActiveTemplateEditingFrame { System::Web::UI::Design::ITemplateEditingFrame ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveTemplateEditingFrame : System.Web.UI.Design.ITemplateEditingFrame" Usage="System.Web.UI.Design.TemplatedControlDesigner.ActiveTemplateEditingFrame" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.CanEnterTemplateMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanEnterTemplateMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanEnterTemplateMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanEnterTemplateMode : bool" Usage="System.Web.UI.Design.TemplatedControlDesigner.CanEnterTemplateMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.CreateTemplateEditingFrame(System.Web.UI.Design.TemplateEditingVerb)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateTemplateEditingFrame (verb As TemplateEditingVerb) As ITemplateEditingFrame" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Web::UI::Design::ITemplateEditingFrame ^ CreateTemplateEditingFrame(System::Web::UI::Design::TemplateEditingVerb ^ verb);" />
+      <MemberSignature Language="F#" Value="abstract member CreateTemplateEditingFrame : System.Web.UI.Design.TemplateEditingVerb -&gt; System.Web.UI.Design.ITemplateEditingFrame" Usage="templatedControlDesigner.CreateTemplateEditingFrame verb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.DataBindingsEnabled" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DataBindingsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DataBindingsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataBindingsEnabled : bool" Usage="System.Web.UI.Design.TemplatedControlDesigner.DataBindingsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.EnterTemplateMode(System.Web.UI.Design.ITemplateEditingFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnterTemplateMode (newTemplateEditingFrame As ITemplateEditingFrame)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterTemplateMode(System::Web::UI::Design::ITemplateEditingFrame ^ newTemplateEditingFrame);" />
+      <MemberSignature Language="F#" Value="member this.EnterTemplateMode : System.Web.UI.Design.ITemplateEditingFrame -&gt; unit" Usage="templatedControlDesigner.EnterTemplateMode newTemplateEditingFrame" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode(System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExitTemplateMode (fSwitchingTemplates As Boolean, fNested As Boolean, fSave As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitTemplateMode(bool fSwitchingTemplates, bool fNested, bool fSave);" />
+      <MemberSignature Language="F#" Value="member this.ExitTemplateMode : bool * bool * bool -&gt; unit" Usage="templatedControlDesigner.ExitTemplateMode (fSwitchingTemplates, fNested, fSave)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetCachedTemplateEditingVerbs" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetCachedTemplateEditingVerbs () As TemplateEditingVerb()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::Web::UI::Design::TemplateEditingVerb ^&gt; ^ GetCachedTemplateEditingVerbs();" />
+      <MemberSignature Language="F#" Value="abstract member GetCachedTemplateEditingVerbs : unit -&gt; System.Web.UI.Design.TemplateEditingVerb[]" Usage="templatedControlDesigner.GetCachedTemplateEditingVerbs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataItemProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTemplateContainerDataItemProperty (templateName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetTemplateContainerDataItemProperty(System::String ^ templateName);" />
+      <MemberSignature Language="F#" Value="abstract member GetTemplateContainerDataItemProperty : string -&gt; string&#xA;override this.GetTemplateContainerDataItemProperty : string -&gt; string" Usage="templatedControlDesigner.GetTemplateContainerDataItemProperty templateName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -325,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataSource(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTemplateContainerDataSource (templateName As String) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerable ^ GetTemplateContainerDataSource(System::String ^ templateName);" />
+      <MemberSignature Language="F#" Value="abstract member GetTemplateContainerDataSource : string -&gt; System.Collections.IEnumerable&#xA;override this.GetTemplateContainerDataSource : string -&gt; System.Collections.IEnumerable" Usage="templatedControlDesigner.GetTemplateContainerDataSource templateName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -354,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTemplateContent (editingFrame As ITemplateEditingFrame, templateName As String, ByRef allowEditing As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetTemplateContent(System::Web::UI::Design::ITemplateEditingFrame ^ editingFrame, System::String ^ templateName, [Runtime::InteropServices::Out] bool % allowEditing);" />
+      <MemberSignature Language="F#" Value="abstract member GetTemplateContent : System.Web.UI.Design.ITemplateEditingFrame * string *  -&gt; string" Usage="templatedControlDesigner.GetTemplateContent (editingFrame, templateName, allowEditing)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -388,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateEditingVerbs" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTemplateEditingVerbs () As TemplateEditingVerb()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::Design::TemplateEditingVerb ^&gt; ^ GetTemplateEditingVerbs();" />
+      <MemberSignature Language="F#" Value="member this.GetTemplateEditingVerbs : unit -&gt; System.Web.UI.Design.TemplateEditingVerb[]" Usage="templatedControlDesigner.GetTemplateEditingVerbs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -414,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateFromText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetTemplateFromText (text As String) As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::UI::ITemplate ^ GetTemplateFromText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.GetTemplateFromText : string -&gt; System.Web.UI.ITemplate" Usage="templatedControlDesigner.GetTemplateFromText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -438,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplatePropertyParentType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTemplatePropertyParentType (templateName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetTemplatePropertyParentType(System::String ^ templateName);" />
+      <MemberSignature Language="F#" Value="abstract member GetTemplatePropertyParentType : string -&gt; Type&#xA;override this.GetTemplatePropertyParentType : string -&gt; Type" Usage="templatedControlDesigner.GetTemplatePropertyParentType templateName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -476,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTextFromTemplate(System.Web.UI.ITemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetTextFromTemplate (template As ITemplate) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetTextFromTemplate(System::Web::UI::ITemplate ^ template);" />
+      <MemberSignature Language="F#" Value="member this.GetTextFromTemplate : System.Web.UI.ITemplate -&gt; string" Usage="templatedControlDesigner.GetTextFromTemplate template" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -502,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="templatedControlDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -525,6 +541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.InTemplateMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InTemplateMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InTemplateMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InTemplateMode : bool" Usage="System.Web.UI.Design.TemplatedControlDesigner.InTemplateMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -562,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnBehaviorAttached" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBehaviorAttached ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBehaviorAttached();" />
+      <MemberSignature Language="F#" Value="override this.OnBehaviorAttached : unit -&gt; unit" Usage="templatedControlDesigner.OnBehaviorAttached " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -596,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
+      <MemberSignature Language="F#" Value="override this.OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="templatedControlDesigner.OnComponentChanged (sender, ce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -628,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnSetParent" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnSetParent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnSetParent();" />
+      <MemberSignature Language="F#" Value="override this.OnSetParent : unit -&gt; unit" Usage="templatedControlDesigner.OnSetParent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -648,6 +668,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTemplateModeChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTemplateModeChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnTemplateModeChanged : unit -&gt; unit&#xA;override this.OnTemplateModeChanged : unit -&gt; unit" Usage="templatedControlDesigner.OnTemplateModeChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -689,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.SaveActiveTemplateEditingFrame" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SaveActiveTemplateEditingFrame ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SaveActiveTemplateEditingFrame();" />
+      <MemberSignature Language="F#" Value="member this.SaveActiveTemplateEditingFrame : unit -&gt; unit" Usage="templatedControlDesigner.SaveActiveTemplateEditingFrame " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -709,6 +731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.SetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetTemplateContent (editingFrame As ITemplateEditingFrame, templateName As String, templateContent As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetTemplateContent(System::Web::UI::Design::ITemplateEditingFrame ^ editingFrame, System::String ^ templateName, System::String ^ templateContent);" />
+      <MemberSignature Language="F#" Value="abstract member SetTemplateContent : System.Web.UI.Design.ITemplateEditingFrame * string * string -&gt; unit" Usage="templatedControlDesigner.SetTemplateContent (editingFrame, templateName, templateContent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -741,6 +764,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TemplateGroups As TemplateGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::TemplateGroupCollection ^ TemplateGroups { System::Web::UI::Design::TemplateGroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplateGroups : System.Web.UI.Design.TemplateGroupCollection" Usage="System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -761,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.UpdateDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateDesignTimeHtml ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.UpdateDesignTimeHtml : unit -&gt; unit" Usage="templatedControlDesigner.UpdateDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

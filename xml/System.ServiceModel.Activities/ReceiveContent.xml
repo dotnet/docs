@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ReceiveContent" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ReceiveContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReceiveContent abstract" />
+  <TypeSignature Language="F#" Value="type ReceiveContent = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveContent.Create(System.Activities.OutArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (message As OutArgument) As ReceiveMessageContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Activities::ReceiveMessageContent ^ Create(System::Activities::OutArgument ^ message);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Activities.OutArgument -&gt; System.ServiceModel.Activities.ReceiveMessageContent" Usage="System.ServiceModel.Activities.ReceiveContent.Create message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveContent.Create(System.Collections.Generic.IDictionary{System.String,System.Activities.OutArgument})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (parameters As IDictionary(Of String, OutArgument)) As ReceiveParametersContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Activities::ReceiveParametersContent ^ Create(System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::OutArgument ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IDictionary&lt;string, System.Activities.OutArgument&gt; -&gt; System.ServiceModel.Activities.ReceiveParametersContent" Usage="System.ServiceModel.Activities.ReceiveContent.Create parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveContent.Create(System.Activities.OutArgument,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (message As OutArgument, declaredMessageType As Type) As ReceiveMessageContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Activities::ReceiveMessageContent ^ Create(System::Activities::OutArgument ^ message, Type ^ declaredMessageType);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Activities.OutArgument * Type -&gt; System.ServiceModel.Activities.ReceiveMessageContent" Usage="System.ServiceModel.Activities.ReceiveContent.Create (message, declaredMessageType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

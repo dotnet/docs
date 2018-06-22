@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.TimeoutException" />
   <TypeSignature Language="VB.NET" Value="Public Class TimeoutException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class TimeoutException : SystemException" />
+  <TypeSignature Language="F#" Value="type TimeoutException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -122,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeoutException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeoutException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new TimeoutException : string -&gt; TimeoutException" Usage="new System.TimeoutException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -170,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TimeoutException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new TimeoutException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; TimeoutException" Usage="new System.TimeoutException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -213,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeoutException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeoutException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new TimeoutException : string * Exception -&gt; TimeoutException" Usage="new System.TimeoutException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

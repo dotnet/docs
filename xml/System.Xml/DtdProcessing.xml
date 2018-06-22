@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.DtdProcessing" />
   <TypeSignature Language="VB.NET" Value="Public Enum DtdProcessing" />
   <TypeSignature Language="C++ CLI" Value="public enum class DtdProcessing" />
+  <TypeSignature Language="F#" Value="type DtdProcessing = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.DtdProcessing.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
       <MemberSignature Language="C++ CLI" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 1" Usage="System.Xml.DtdProcessing.Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.DtdProcessing.Parse" />
       <MemberSignature Language="VB.NET" Value="Parse" />
       <MemberSignature Language="C++ CLI" Value="Parse" />
+      <MemberSignature Language="F#" Value="Parse = 2" Usage="System.Xml.DtdProcessing.Parse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.DtdProcessing.Prohibit" />
       <MemberSignature Language="VB.NET" Value="Prohibit" />
       <MemberSignature Language="C++ CLI" Value="Prohibit" />
+      <MemberSignature Language="F#" Value="Prohibit = 0" Usage="System.Xml.DtdProcessing.Prohibit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

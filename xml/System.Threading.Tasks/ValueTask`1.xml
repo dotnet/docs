@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ValueTask`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ValueTask(Of TResult)&#xA;Implements IEquatable(Of ValueTask(Of TResult))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public value class ValueTask : IEquatable&lt;System::Threading::Tasks::ValueTask&lt;TResult&gt;&gt;" />
+  <TypeSignature Language="F#" Value="type ValueTask&lt;'Result&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Task{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (task As Task(Of TResult))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTask(System::Threading::Tasks::Task&lt;TResult&gt; ^ task);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.ValueTask&lt;'Result&gt; : System.Threading.Tasks.Task&lt;'Result&gt; -&gt; System.Threading.Tasks.ValueTask&lt;'Result&gt;" Usage="new System.Threading.Tasks.ValueTask&lt;'Result&gt; task" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -87,6 +89,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (result As TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTask(TResult result);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.ValueTask&lt;'Result&gt; : 'Result -&gt; System.Threading.Tasks.ValueTask&lt;'Result&gt;" Usage="new System.Threading.Tasks.ValueTask&lt;'Result&gt; result" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -113,6 +116,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Sources.IValueTaskSource{`0},System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As IValueTaskSource(Of TResult), token As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTask(System::Threading::Tasks::Sources::IValueTaskSource&lt;TResult&gt; ^ source, short token);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.ValueTask&lt;'Result&gt; : System.Threading.Tasks.Sources.IValueTaskSource&lt;'Result&gt; * int16 -&gt; System.Threading.Tasks.ValueTask&lt;'Result&gt;" Usage="new System.Threading.Tasks.ValueTask&lt;'Result&gt; (source, token)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -135,6 +139,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.AsTask" />
       <MemberSignature Language="VB.NET" Value="Public Function AsTask () As Task(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ AsTask();" />
+      <MemberSignature Language="F#" Value="member this.AsTask : unit -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="valueTask.AsTask " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -162,6 +167,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.ConfigureAwait(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConfigureAwait (continueOnCapturedContext As Boolean) As ConfiguredValueTaskAwaitable(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable&lt;TResult&gt; ConfigureAwait(bool continueOnCapturedContext);" />
+      <MemberSignature Language="F#" Value="member this.ConfigureAwait : bool -&gt; System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable&lt;'Result&gt;" Usage="valueTask.ConfigureAwait continueOnCapturedContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -193,6 +199,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.CreateAsyncMethodBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAsyncMethodBuilder () As AsyncValueTaskMethodBuilder(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder&lt;TResult&gt; CreateAsyncMethodBuilder();" />
+      <MemberSignature Language="F#" Value="static member CreateAsyncMethodBuilder : unit -&gt; System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder&lt;'Result&gt;" Usage="System.Threading.Tasks.ValueTask&lt;'Result&gt;.CreateAsyncMethodBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -224,6 +231,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="valueTask.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -255,6 +263,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.Equals(System.Threading.Tasks.ValueTask{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ValueTask(Of TResult)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Threading::Tasks::ValueTask&lt;TResult&gt; other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Threading.Tasks.ValueTask&lt;'Result&gt; -&gt; bool" Usage="valueTask.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -289,6 +298,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As ValueTaskAwaiter(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ValueTaskAwaiter&lt;TResult&gt; GetAwaiter();" />
+      <MemberSignature Language="F#" Value="member this.GetAwaiter : unit -&gt; System.Runtime.CompilerServices.ValueTaskAwaiter&lt;'Result&gt;" Usage="valueTask.GetAwaiter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -316,6 +326,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="valueTask.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -343,6 +354,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask`1.IsCanceled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCanceled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCanceled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCanceled : bool" Usage="System.Threading.Tasks.ValueTask&lt;'Result&gt;.IsCanceled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -370,6 +382,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask`1.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.Threading.Tasks.ValueTask&lt;'Result&gt;.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -397,6 +410,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask`1.IsCompletedSuccessfully" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompletedSuccessfully As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompletedSuccessfully { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompletedSuccessfully : bool" Usage="System.Threading.Tasks.ValueTask&lt;'Result&gt;.IsCompletedSuccessfully" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -424,6 +438,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask`1.IsFaulted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFaulted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFaulted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFaulted : bool" Usage="System.Threading.Tasks.ValueTask&lt;'Result&gt;.IsFaulted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -451,6 +466,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.op_Equality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ValueTask(Of TResult), right As ValueTask(Of TResult)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Threading::Tasks::ValueTask&lt;TResult&gt; left, System::Threading::Tasks::ValueTask&lt;TResult&gt; right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Threading.Tasks.ValueTask&lt;'Result&gt; * System.Threading.Tasks.ValueTask&lt;'Result&gt; -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -484,6 +500,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.op_Inequality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ValueTask(Of TResult), right As ValueTask(Of TResult)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Threading::Tasks::ValueTask&lt;TResult&gt; left, System::Threading::Tasks::ValueTask&lt;TResult&gt; right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Threading.Tasks.ValueTask&lt;'Result&gt; * System.Threading.Tasks.ValueTask&lt;'Result&gt; -&gt; bool" Usage="System.Threading.Tasks.ValueTask&lt;'Result&gt;.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -517,6 +534,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.Preserve" />
       <MemberSignature Language="VB.NET" Value="Public Function Preserve () As ValueTask(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::ValueTask&lt;TResult&gt; Preserve();" />
+      <MemberSignature Language="F#" Value="member this.Preserve : unit -&gt; System.Threading.Tasks.ValueTask&lt;'Result&gt;" Usage="valueTask.Preserve " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -538,6 +556,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ValueTask`1.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TResult Result { TResult get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : 'Result" Usage="System.Threading.Tasks.ValueTask&lt;'Result&gt;.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -572,6 +591,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="valueTask.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>

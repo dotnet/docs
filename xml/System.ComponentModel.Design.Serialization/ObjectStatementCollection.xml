@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectStatementCollection&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectStatementCollection sealed : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ObjectStatementCollection = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.ContainsKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (statementOwner As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(System::Object ^ statementOwner);" />
+      <MemberSignature Language="F#" Value="member this.ContainsKey : obj -&gt; bool" Usage="objectStatementCollection.ContainsKey statementOwner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IDictionaryEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="objectStatementCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(statementOwner As Object) As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ default[System::Object ^] { System::CodeDom::CodeStatementCollection ^ get(System::Object ^ statementOwner); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : System.CodeDom.CodeStatementCollection" Usage="System.ComponentModel.Design.Serialization.ObjectStatementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Populate (statementOwners As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Populate(System::Collections::ICollection ^ statementOwners);" />
+      <MemberSignature Language="F#" Value="member this.Populate : System.Collections.ICollection -&gt; unit" Usage="objectStatementCollection.Populate statementOwners" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Populate (owner As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Populate(System::Object ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.Populate : obj -&gt; unit" Usage="objectStatementCollection.Populate owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

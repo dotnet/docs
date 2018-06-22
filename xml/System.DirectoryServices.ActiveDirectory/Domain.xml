@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.Domain" />
   <TypeSignature Language="VB.NET" Value="Public Class Domain&#xA;Inherits ActiveDirectoryPartition" />
   <TypeSignature Language="C++ CLI" Value="public ref class Domain : System::DirectoryServices::ActiveDirectory::ActiveDirectoryPartition" />
+  <TypeSignature Language="F#" Value="type Domain = class&#xA;    inherit ActiveDirectoryPartition" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As DomainCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainCollection ^ Children { System::DirectoryServices::ActiveDirectory::DomainCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Children : System.DirectoryServices.ActiveDirectory.DomainCollection" Usage="System.DirectoryServices.ActiveDirectory.Domain.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateLocalSideOfTrustRelationship (targetDomainName As String, direction As TrustDirection, trustPassword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateLocalSideOfTrustRelationship(System::String ^ targetDomainName, System::DirectoryServices::ActiveDirectory::TrustDirection direction, System::String ^ trustPassword);" />
+      <MemberSignature Language="F#" Value="member this.CreateLocalSideOfTrustRelationship : string * System.DirectoryServices.ActiveDirectory.TrustDirection * string -&gt; unit" Usage="domain.CreateLocalSideOfTrustRelationship (targetDomainName, direction, trustPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateTrustRelationship (targetDomain As Domain, direction As TrustDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateTrustRelationship(System::DirectoryServices::ActiveDirectory::Domain ^ targetDomain, System::DirectoryServices::ActiveDirectory::TrustDirection direction);" />
+      <MemberSignature Language="F#" Value="member this.CreateTrustRelationship : System.DirectoryServices.ActiveDirectory.Domain * System.DirectoryServices.ActiveDirectory.TrustDirection -&gt; unit" Usage="domain.CreateTrustRelationship (targetDomain, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.DeleteLocalSideOfTrustRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteLocalSideOfTrustRelationship (targetDomainName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteLocalSideOfTrustRelationship(System::String ^ targetDomainName);" />
+      <MemberSignature Language="F#" Value="member this.DeleteLocalSideOfTrustRelationship : string -&gt; unit" Usage="domain.DeleteLocalSideOfTrustRelationship targetDomainName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.DeleteTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteTrustRelationship (targetDomain As Domain)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteTrustRelationship(System::DirectoryServices::ActiveDirectory::Domain ^ targetDomain);" />
+      <MemberSignature Language="F#" Value="member this.DeleteTrustRelationship : System.DirectoryServices.ActiveDirectory.Domain -&gt; unit" Usage="domain.DeleteTrustRelationship targetDomain" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.DomainControllers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomainControllers As DomainControllerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainControllerCollection ^ DomainControllers { System::DirectoryServices::ActiveDirectory::DomainControllerCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DomainControllers : System.DirectoryServices.ActiveDirectory.DomainControllerCollection" Usage="System.DirectoryServices.ActiveDirectory.Domain.DomainControllers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.DomainMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomainMode As DomainMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainMode DomainMode { System::DirectoryServices::ActiveDirectory::DomainMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.DomainMode : System.DirectoryServices.ActiveDirectory.DomainMode" Usage="System.DirectoryServices.ActiveDirectory.Domain.DomainMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.DomainModeLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomainModeLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DomainModeLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DomainModeLevel : int" Usage="System.DirectoryServices.ActiveDirectory.Domain.DomainModeLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.FindAllDiscoverableDomainControllers" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDiscoverableDomainControllers () As DomainControllerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainControllerCollection ^ FindAllDiscoverableDomainControllers();" />
+      <MemberSignature Language="F#" Value="member this.FindAllDiscoverableDomainControllers : unit -&gt; System.DirectoryServices.ActiveDirectory.DomainControllerCollection" Usage="domain.FindAllDiscoverableDomainControllers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -337,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.FindAllDiscoverableDomainControllers(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDiscoverableDomainControllers (siteName As String) As DomainControllerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainControllerCollection ^ FindAllDiscoverableDomainControllers(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindAllDiscoverableDomainControllers : string -&gt; System.DirectoryServices.ActiveDirectory.DomainControllerCollection" Usage="domain.FindAllDiscoverableDomainControllers siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -388,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.FindAllDomainControllers" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDomainControllers () As DomainControllerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainControllerCollection ^ FindAllDomainControllers();" />
+      <MemberSignature Language="F#" Value="member this.FindAllDomainControllers : unit -&gt; System.DirectoryServices.ActiveDirectory.DomainControllerCollection" Usage="domain.FindAllDomainControllers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -413,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.FindAllDomainControllers(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDomainControllers (siteName As String) As DomainControllerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainControllerCollection ^ FindAllDomainControllers(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindAllDomainControllers : string -&gt; System.DirectoryServices.ActiveDirectory.DomainControllerCollection" Usage="domain.FindAllDomainControllers siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -455,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.FindDomainController" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDomainController () As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainController ^ FindDomainController();" />
+      <MemberSignature Language="F#" Value="member this.FindDomainController : unit -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="domain.FindDomainController " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -488,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.FindDomainController(System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDomainController (flag As LocatorOptions) As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainController ^ FindDomainController(System::DirectoryServices::ActiveDirectory::LocatorOptions flag);" />
+      <MemberSignature Language="F#" Value="member this.FindDomainController : System.DirectoryServices.ActiveDirectory.LocatorOptions -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="domain.FindDomainController flag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -519,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.FindDomainController(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDomainController (siteName As String) As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainController ^ FindDomainController(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindDomainController : string -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="domain.FindDomainController siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -552,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.FindDomainController(System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDomainController (siteName As String, flag As LocatorOptions) As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainController ^ FindDomainController(System::String ^ siteName, System::DirectoryServices::ActiveDirectory::LocatorOptions flag);" />
+      <MemberSignature Language="F#" Value="member this.FindDomainController : string * System.DirectoryServices.ActiveDirectory.LocatorOptions -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="domain.FindDomainController (siteName, flag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -591,6 +608,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.Forest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Forest As Forest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::Forest ^ Forest { System::DirectoryServices::ActiveDirectory::Forest ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Forest : System.DirectoryServices.ActiveDirectory.Forest" Usage="System.DirectoryServices.ActiveDirectory.Domain.Forest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -614,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.GetAllTrustRelationships" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllTrustRelationships () As TrustRelationshipInformationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::TrustRelationshipInformationCollection ^ GetAllTrustRelationships();" />
+      <MemberSignature Language="F#" Value="member this.GetAllTrustRelationships : unit -&gt; System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection" Usage="domain.GetAllTrustRelationships " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -641,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetComputerDomain () As Domain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::Domain ^ GetComputerDomain();" />
+      <MemberSignature Language="F#" Value="static member GetComputerDomain : unit -&gt; System.DirectoryServices.ActiveDirectory.Domain" Usage="System.DirectoryServices.ActiveDirectory.Domain.GetComputerDomain " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -672,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.GetCurrentDomain" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentDomain () As Domain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::Domain ^ GetCurrentDomain();" />
+      <MemberSignature Language="F#" Value="static member GetCurrentDomain : unit -&gt; System.DirectoryServices.ActiveDirectory.Domain" Usage="System.DirectoryServices.ActiveDirectory.Domain.GetCurrentDomain " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -705,6 +726,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.GetDirectoryEntry" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDirectoryEntry () As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::DirectoryEntry ^ GetDirectoryEntry();" />
+      <MemberSignature Language="F#" Value="override this.GetDirectoryEntry : unit -&gt; System.DirectoryServices.DirectoryEntry" Usage="domain.GetDirectoryEntry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -730,6 +752,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.GetDomain(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDomain (context As DirectoryContext) As Domain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::Domain ^ GetDomain(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetDomain : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.Domain" Usage="System.DirectoryServices.ActiveDirectory.Domain.GetDomain context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -761,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.GetSelectiveAuthenticationStatus(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelectiveAuthenticationStatus (targetDomainName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetSelectiveAuthenticationStatus(System::String ^ targetDomainName);" />
+      <MemberSignature Language="F#" Value="member this.GetSelectiveAuthenticationStatus : string -&gt; bool" Usage="domain.GetSelectiveAuthenticationStatus targetDomainName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -797,6 +821,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.GetSidFilteringStatus(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSidFilteringStatus (targetDomainName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetSidFilteringStatus(System::String ^ targetDomainName);" />
+      <MemberSignature Language="F#" Value="member this.GetSidFilteringStatus : string -&gt; bool" Usage="domain.GetSidFilteringStatus targetDomainName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -833,6 +858,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.GetTrustRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTrustRelationship (targetDomainName As String) As TrustRelationshipInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ GetTrustRelationship(System::String ^ targetDomainName);" />
+      <MemberSignature Language="F#" Value="member this.GetTrustRelationship : string -&gt; System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" Usage="domain.GetTrustRelationship targetDomainName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -868,6 +894,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.InfrastructureRoleOwner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InfrastructureRoleOwner As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainController ^ InfrastructureRoleOwner { System::DirectoryServices::ActiveDirectory::DomainController ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InfrastructureRoleOwner : System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.Domain.InfrastructureRoleOwner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -891,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Domain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::Domain ^ Parent { System::DirectoryServices::ActiveDirectory::Domain ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.DirectoryServices.ActiveDirectory.Domain" Usage="System.DirectoryServices.ActiveDirectory.Domain.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -913,6 +941,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.PdcRoleOwner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PdcRoleOwner As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainController ^ PdcRoleOwner { System::DirectoryServices::ActiveDirectory::DomainController ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PdcRoleOwner : System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.Domain.PdcRoleOwner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -935,6 +964,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RaiseDomainFunctionality(valuetype System.DirectoryServices.ActiveDirectory.DomainMode domainMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.RaiseDomainFunctionality(System.DirectoryServices.ActiveDirectory.DomainMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseDomainFunctionality(System::DirectoryServices::ActiveDirectory::DomainMode domainMode);" />
+      <MemberSignature Language="F#" Value="member this.RaiseDomainFunctionality : System.DirectoryServices.ActiveDirectory.DomainMode -&gt; unit" Usage="domain.RaiseDomainFunctionality domainMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -985,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.RaiseDomainFunctionalityLevel(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseDomainFunctionalityLevel (domainMode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseDomainFunctionalityLevel(int domainMode);" />
+      <MemberSignature Language="F#" Value="member this.RaiseDomainFunctionalityLevel : int -&gt; unit" Usage="domain.RaiseDomainFunctionalityLevel domainMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1009,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.RepairTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RepairTrustRelationship (targetDomain As Domain)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RepairTrustRelationship(System::DirectoryServices::ActiveDirectory::Domain ^ targetDomain);" />
+      <MemberSignature Language="F#" Value="member this.RepairTrustRelationship : System.DirectoryServices.ActiveDirectory.Domain -&gt; unit" Usage="domain.RepairTrustRelationship targetDomain" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1048,6 +1080,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Domain.RidRoleOwner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RidRoleOwner As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainController ^ RidRoleOwner { System::DirectoryServices::ActiveDirectory::DomainController ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RidRoleOwner : System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.Domain.RidRoleOwner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1071,6 +1104,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.SetSelectiveAuthenticationStatus(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSelectiveAuthenticationStatus (targetDomainName As String, enable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectiveAuthenticationStatus(System::String ^ targetDomainName, bool enable);" />
+      <MemberSignature Language="F#" Value="member this.SetSelectiveAuthenticationStatus : string * bool -&gt; unit" Usage="domain.SetSelectiveAuthenticationStatus (targetDomainName, enable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1108,6 +1142,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.SetSidFilteringStatus(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSidFilteringStatus (targetDomainName As String, enable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSidFilteringStatus(System::String ^ targetDomainName, bool enable);" />
+      <MemberSignature Language="F#" Value="member this.SetSidFilteringStatus : string * bool -&gt; unit" Usage="domain.SetSidFilteringStatus (targetDomainName, enable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1154,6 +1189,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.UpdateLocalSideOfTrustRelationship(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateLocalSideOfTrustRelationship (targetDomainName As String, newTrustPassword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateLocalSideOfTrustRelationship(System::String ^ targetDomainName, System::String ^ newTrustPassword);" />
+      <MemberSignature Language="F#" Value="member this.UpdateLocalSideOfTrustRelationship : string * string -&gt; unit" Usage="domain.UpdateLocalSideOfTrustRelationship (targetDomainName, newTrustPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1196,6 +1232,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.UpdateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateLocalSideOfTrustRelationship (targetDomainName As String, newTrustDirection As TrustDirection, newTrustPassword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateLocalSideOfTrustRelationship(System::String ^ targetDomainName, System::DirectoryServices::ActiveDirectory::TrustDirection newTrustDirection, System::String ^ newTrustPassword);" />
+      <MemberSignature Language="F#" Value="member this.UpdateLocalSideOfTrustRelationship : string * System.DirectoryServices.ActiveDirectory.TrustDirection * string -&gt; unit" Usage="domain.UpdateLocalSideOfTrustRelationship (targetDomainName, newTrustDirection, newTrustPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1236,6 +1273,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.UpdateTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateTrustRelationship (targetDomain As Domain, newTrustDirection As TrustDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateTrustRelationship(System::DirectoryServices::ActiveDirectory::Domain ^ targetDomain, System::DirectoryServices::ActiveDirectory::TrustDirection newTrustDirection);" />
+      <MemberSignature Language="F#" Value="member this.UpdateTrustRelationship : System.DirectoryServices.ActiveDirectory.Domain * System.DirectoryServices.ActiveDirectory.TrustDirection -&gt; unit" Usage="domain.UpdateTrustRelationship (targetDomain, newTrustDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1272,6 +1310,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.VerifyOutboundTrustRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub VerifyOutboundTrustRelationship (targetDomainName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void VerifyOutboundTrustRelationship(System::String ^ targetDomainName);" />
+      <MemberSignature Language="F#" Value="member this.VerifyOutboundTrustRelationship : string -&gt; unit" Usage="domain.VerifyOutboundTrustRelationship targetDomainName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1312,6 +1351,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Domain.VerifyTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub VerifyTrustRelationship (targetDomain As Domain, direction As TrustDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void VerifyTrustRelationship(System::DirectoryServices::ActiveDirectory::Domain ^ targetDomain, System::DirectoryServices::ActiveDirectory::TrustDirection direction);" />
+      <MemberSignature Language="F#" Value="member this.VerifyTrustRelationship : System.DirectoryServices.ActiveDirectory.Domain * System.DirectoryServices.ActiveDirectory.TrustDirection -&gt; unit" Usage="domain.VerifyTrustRelationship (targetDomain, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

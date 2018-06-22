@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteArgumentEnumeratorContract&#xA;Implements IContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteArgumentEnumeratorContract : System::AddIn::Contract::IContract" />
+  <TypeSignature Language="F#" Value="type IRemoteArgumentEnumeratorContract = interface&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.GetCurrent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrent () As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument GetCurrent();" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrent : unit -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteArgumentEnumeratorContract.GetCurrent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool" Usage="iRemoteArgumentEnumeratorContract.MoveNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iRemoteArgumentEnumeratorContract.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

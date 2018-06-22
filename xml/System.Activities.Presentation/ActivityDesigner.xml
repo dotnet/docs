@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ActivityDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityDesigner&#xA;Inherits WorkflowViewElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesigner : System::Activities::Presentation::WorkflowViewElement" />
+  <TypeSignature Language="F#" Value="type ActivityDesigner = class&#xA;    inherit WorkflowViewElement" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -144,6 +145,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesigner.GetAutomationIdMemberName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationIdMemberName () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAutomationIdMemberName();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationIdMemberName : unit -&gt; string" Usage="activityDesigner.GetAutomationIdMemberName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -165,6 +167,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesigner.GetAutomationItemStatus" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetAutomationItemStatus () As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ GetAutomationItemStatus();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationItemStatus : unit -&gt; string" Usage="activityDesigner.GetAutomationItemStatus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -186,6 +189,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ActivityDesigner.Icon" />
       <MemberSignature Language="VB.NET" Value="Public Property Icon As DrawingBrush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DrawingBrush ^ Icon { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.ActivityDesigner.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -206,6 +210,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.ActivityDesigner.IconProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IconProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IconProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IconProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.ActivityDesigner.IconProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -225,6 +230,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesigner.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="activityDesigner.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -245,6 +251,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesigner.OnEditAnnotation" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnEditAnnotation ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnEditAnnotation();" />
+      <MemberSignature Language="F#" Value="override this.OnEditAnnotation : unit -&gt; unit" Usage="activityDesigner.OnEditAnnotation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -265,6 +272,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesigner.OnModelItemChanged(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnModelItemChanged (newItem As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnModelItemChanged(System::Object ^ newItem);" />
+      <MemberSignature Language="F#" Value="override this.OnModelItemChanged : obj -&gt; unit" Usage="activityDesigner.OnModelItemChanged newItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -288,6 +296,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesigner.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="activityDesigner.OnMouseUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -311,6 +320,7 @@ public sealed class First2of3 : NativeActivity
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesigner.OnPreviewMouseDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="activityDesigner.OnPreviewMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

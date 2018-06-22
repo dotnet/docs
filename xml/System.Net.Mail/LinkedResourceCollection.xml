@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.LinkedResourceCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LinkedResourceCollection&#xA;Inherits Collection(Of LinkedResource)&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinkedResourceCollection sealed : System::Collections::ObjectModel::Collection&lt;System::Net::Mail::LinkedResource ^&gt;, IDisposable" />
+  <TypeSignature Language="F#" Value="type LinkedResourceCollection = class&#xA;    inherit Collection&lt;LinkedResource&gt;&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResourceCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="linkedResourceCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResourceCollection.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="linkedResourceCollection.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResourceCollection.InsertItem(System.Int32,System.Net.Mail.LinkedResource)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As LinkedResource)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::Mail::LinkedResource ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.Mail.LinkedResource -&gt; unit" Usage="linkedResourceCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResourceCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="linkedResourceCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.LinkedResourceCollection.SetItem(System.Int32,System.Net.Mail.LinkedResource)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As LinkedResource)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::Mail::LinkedResource ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.Mail.LinkedResource -&gt; unit" Usage="linkedResourceCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.RenderingBias" />
   <TypeSignature Language="VB.NET" Value="Public Enum RenderingBias" />
   <TypeSignature Language="C++ CLI" Value="public enum class RenderingBias" />
+  <TypeSignature Language="F#" Value="type RenderingBias = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.RenderingBias.Performance" />
       <MemberSignature Language="VB.NET" Value="Performance" />
       <MemberSignature Language="C++ CLI" Value="Performance" />
+      <MemberSignature Language="F#" Value="Performance = 0" Usage="System.Windows.Media.Effects.RenderingBias.Performance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.RenderingBias.Quality" />
       <MemberSignature Language="VB.NET" Value="Quality" />
       <MemberSignature Language="C++ CLI" Value="Quality" />
+      <MemberSignature Language="F#" Value="Quality = 1" Usage="System.Windows.Media.Effects.RenderingBias.Quality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

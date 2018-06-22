@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XmlCaseOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlCaseOrder" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlCaseOrder" />
+  <TypeSignature Language="F#" Value="type XmlCaseOrder = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XmlCaseOrder.LowerFirst" />
       <MemberSignature Language="VB.NET" Value="LowerFirst" />
       <MemberSignature Language="C++ CLI" Value="LowerFirst" />
+      <MemberSignature Language="F#" Value="LowerFirst = 2" Usage="System.Xml.XPath.XmlCaseOrder.LowerFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XmlCaseOrder.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.XPath.XmlCaseOrder.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XmlCaseOrder.UpperFirst" />
       <MemberSignature Language="VB.NET" Value="UpperFirst" />
       <MemberSignature Language="C++ CLI" Value="UpperFirst" />
+      <MemberSignature Language="F#" Value="UpperFirst = 1" Usage="System.Xml.XPath.XmlCaseOrder.UpperFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>

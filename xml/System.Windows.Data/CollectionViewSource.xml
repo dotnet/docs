@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionViewSource" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionViewSource&#xA;Inherits DependencyObject&#xA;Implements ISupportInitialize, IWeakEventListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionViewSource : System::Windows::DependencyObject, System::ComponentModel::ISupportInitialize, System::Windows::IWeakEventListener" />
+  <TypeSignature Language="F#" Value="type CollectionViewSource = class&#xA;    inherit DependencyObject&#xA;    interface ISupportInitialize&#xA;    interface IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.CanChangeLiveFiltering" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveFiltering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveFiltering { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveFiltering : bool" Usage="System.Windows.Data.CollectionViewSource.CanChangeLiveFiltering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.CanChangeLiveFilteringProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanChangeLiveFilteringProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanChangeLiveFilteringProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanChangeLiveFilteringProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.CanChangeLiveFilteringProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.CanChangeLiveGrouping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveGrouping As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveGrouping { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveGrouping : bool" Usage="System.Windows.Data.CollectionViewSource.CanChangeLiveGrouping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.CanChangeLiveGroupingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanChangeLiveGroupingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanChangeLiveGroupingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanChangeLiveGroupingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.CanChangeLiveGroupingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.CanChangeLiveSorting" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveSorting As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveSorting { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanChangeLiveSorting : bool" Usage="System.Windows.Data.CollectionViewSource.CanChangeLiveSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.CanChangeLiveSortingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanChangeLiveSortingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanChangeLiveSortingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanChangeLiveSortingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.CanChangeLiveSortingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.CollectionViewType" />
       <MemberSignature Language="VB.NET" Value="Public Property CollectionViewType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CollectionViewType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CollectionViewType : Type with get, set" Usage="System.Windows.Data.CollectionViewSource.CollectionViewType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -286,6 +294,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.CollectionViewTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CollectionViewTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CollectionViewTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CollectionViewTypeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.CollectionViewTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Data.CollectionViewSource.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -349,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionViewSource.DeferRefresh" />
       <MemberSignature Language="VB.NET" Value="Public Function DeferRefresh () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ DeferRefresh();" />
+      <MemberSignature Language="F#" Value="member this.DeferRefresh : unit -&gt; IDisposable" Usage="collectionViewSource.DeferRefresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -377,6 +388,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionViewSource.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Filter As FilterEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Data::FilterEventHandler ^ Filter;" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Windows.Data.FilterEventHandler " Usage="member this.Filter : System.Windows.Data.FilterEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -420,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionViewSource.GetDefaultView(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultView (source As Object) As ICollectionView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::ICollectionView ^ GetDefaultView(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="static member GetDefaultView : obj -&gt; System.ComponentModel.ICollectionView" Usage="System.Windows.Data.CollectionViewSource.GetDefaultView source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -453,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.GroupDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupDescriptions As ObservableCollection(Of GroupDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ GroupDescriptions { System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupDescriptions : System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt;" Usage="System.Windows.Data.CollectionViewSource.GroupDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -496,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionViewSource.IsDefaultView(System.ComponentModel.ICollectionView)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefaultView (view As ICollectionView) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefaultView(System::ComponentModel::ICollectionView ^ view);" />
+      <MemberSignature Language="F#" Value="static member IsDefaultView : System.ComponentModel.ICollectionView -&gt; bool" Usage="System.Windows.Data.CollectionViewSource.IsDefaultView view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -528,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.IsLiveFiltering" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLiveFiltering As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveFiltering { Nullable&lt;bool&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveFiltering : Nullable&lt;bool&gt;" Usage="System.Windows.Data.CollectionViewSource.IsLiveFiltering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -568,6 +584,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.IsLiveFilteringProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLiveFilteringProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsLiveFilteringProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsLiveFilteringProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.IsLiveFilteringProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -587,6 +604,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.IsLiveFilteringRequested" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLiveFilteringRequested As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLiveFilteringRequested { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveFilteringRequested : bool with get, set" Usage="System.Windows.Data.CollectionViewSource.IsLiveFilteringRequested" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -622,6 +640,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.IsLiveFilteringRequestedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLiveFilteringRequestedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsLiveFilteringRequestedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsLiveFilteringRequestedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.IsLiveFilteringRequestedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -641,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.IsLiveGrouping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLiveGrouping As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveGrouping { Nullable&lt;bool&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveGrouping : Nullable&lt;bool&gt;" Usage="System.Windows.Data.CollectionViewSource.IsLiveGrouping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -681,6 +701,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.IsLiveGroupingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLiveGroupingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsLiveGroupingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsLiveGroupingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.IsLiveGroupingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -700,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.IsLiveGroupingRequested" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLiveGroupingRequested As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLiveGroupingRequested { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveGroupingRequested : bool with get, set" Usage="System.Windows.Data.CollectionViewSource.IsLiveGroupingRequested" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -735,6 +757,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.IsLiveGroupingRequestedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLiveGroupingRequestedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsLiveGroupingRequestedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsLiveGroupingRequestedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.IsLiveGroupingRequestedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -754,6 +777,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.IsLiveSorting" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLiveSorting As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveSorting { Nullable&lt;bool&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveSorting : Nullable&lt;bool&gt;" Usage="System.Windows.Data.CollectionViewSource.IsLiveSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -794,6 +818,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.IsLiveSortingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLiveSortingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsLiveSortingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsLiveSortingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.IsLiveSortingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -813,6 +838,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.IsLiveSortingRequested" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLiveSortingRequested As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLiveSortingRequested { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiveSortingRequested : bool with get, set" Usage="System.Windows.Data.CollectionViewSource.IsLiveSortingRequested" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -848,6 +874,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.IsLiveSortingRequestedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLiveSortingRequestedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsLiveSortingRequestedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsLiveSortingRequestedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.IsLiveSortingRequestedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -867,6 +894,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.LiveFilteringProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveFilteringProperties As ObservableCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveFilteringProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LiveFilteringProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Data.CollectionViewSource.LiveFilteringProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -887,6 +915,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.LiveGroupingProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveGroupingProperties As ObservableCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveGroupingProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LiveGroupingProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Data.CollectionViewSource.LiveGroupingProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -907,6 +936,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.LiveSortingProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveSortingProperties As ObservableCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveSortingProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LiveSortingProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Data.CollectionViewSource.LiveSortingProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -927,6 +957,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionViewSource.OnCollectionViewTypeChanged(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionViewTypeChanged (oldCollectionViewType As Type, newCollectionViewType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionViewTypeChanged(Type ^ oldCollectionViewType, Type ^ newCollectionViewType);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionViewTypeChanged : Type * Type -&gt; unit&#xA;override this.OnCollectionViewTypeChanged : Type * Type -&gt; unit" Usage="collectionViewSource.OnCollectionViewTypeChanged (oldCollectionViewType, newCollectionViewType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -952,6 +983,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionViewSource.OnSourceChanged(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSourceChanged (oldSource As Object, newSource As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSourceChanged(System::Object ^ oldSource, System::Object ^ newSource);" />
+      <MemberSignature Language="F#" Value="abstract member OnSourceChanged : obj * obj -&gt; unit&#xA;override this.OnSourceChanged : obj * obj -&gt; unit" Usage="collectionViewSource.OnSourceChanged (oldSource, newSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -977,6 +1009,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionViewSource.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveWeakEvent : Type * obj * EventArgs -&gt; bool&#xA;override this.ReceiveWeakEvent : Type * obj * EventArgs -&gt; bool" Usage="collectionViewSource.ReceiveWeakEvent (managerType, sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1007,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.SortDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortDescriptions As SortDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::SortDescriptionCollection ^ SortDescriptions { System::ComponentModel::SortDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.SortDescriptionCollection" Usage="System.Windows.Data.CollectionViewSource.SortDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1050,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Source { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : obj with get, set" Usage="System.Windows.Data.CollectionViewSource.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1096,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.SourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1184,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewSource.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As ICollectionView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ICollectionView ^ View { System::ComponentModel::ICollectionView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : System.ComponentModel.ICollectionView" Usage="System.Windows.Data.CollectionViewSource.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1223,6 +1260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionViewSource.ViewProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ViewProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionViewSource.ViewProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

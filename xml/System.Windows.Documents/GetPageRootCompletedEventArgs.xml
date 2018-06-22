@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.GetPageRootCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GetPageRootCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class GetPageRootCompletedEventArgs sealed : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type GetPageRootCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.GetPageRootCompletedEventArgs.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As FixedPage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::FixedPage ^ Result { System::Windows::Documents::FixedPage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.Windows.Documents.FixedPage" Usage="System.Windows.Documents.GetPageRootCompletedEventArgs.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

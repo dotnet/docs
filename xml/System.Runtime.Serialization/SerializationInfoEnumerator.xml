@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SerializationInfoEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SerializationInfoEnumerator&#xA;Implements IEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerializationInfoEnumerator sealed : System::Collections::IEnumerator" />
+  <TypeSignature Language="F#" Value="type SerializationInfoEnumerator = class&#xA;    interface IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfoEnumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As SerializationEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::SerializationEntry Current { System::Runtime::Serialization::SerializationEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Runtime.Serialization.SerializationEntry" Usage="System.Runtime.Serialization.SerializationInfoEnumerator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfoEnumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="serializationInfoEnumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfoEnumerator.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.Serialization.SerializationInfoEnumerator.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -203,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfoEnumerator.ObjectType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ObjectType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectType : Type" Usage="System.Runtime.Serialization.SerializationInfoEnumerator.ObjectType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfoEnumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="serializationInfoEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
@@ -294,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfoEnumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.Serialization.SerializationInfoEnumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
@@ -333,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfoEnumerator.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Runtime.Serialization.SerializationInfoEnumerator.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>

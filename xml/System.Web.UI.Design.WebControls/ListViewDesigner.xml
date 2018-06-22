@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ListViewDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewDesigner&#xA;Inherits DataBoundControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewDesigner : System::Web::UI::Design::WebControls::DataBoundControlDesigner" />
+  <TypeSignature Language="F#" Value="type ListViewDesigner = class&#xA;    inherit DataBoundControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListViewDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.ListViewDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="listViewDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string" Usage="listViewDesigner.GetDesignTimeHtml regions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListViewDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditableDesignerRegionContent (region As EditableDesignerRegion) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="override this.GetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion -&gt; string" Usage="listViewDesigner.GetEditableDesignerRegionContent region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEmptyDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetEmptyDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetEmptyDesignTimeHtml : unit -&gt; string" Usage="listViewDesigner.GetEmptyDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListViewDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="listViewDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListViewDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
+      <MemberSignature Language="F#" Value="override this.OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="listViewDesigner.OnComponentChanged (sender, ce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListViewDesigner.OnSchemaRefreshed" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSchemaRefreshed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSchemaRefreshed();" />
+      <MemberSignature Language="F#" Value="override this.OnSchemaRefreshed : unit -&gt; unit" Usage="listViewDesigner.OnSchemaRefreshed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -318,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListViewDesigner.SampleRowCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SampleRowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int SampleRowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SampleRowCount : int" Usage="System.Web.UI.Design.WebControls.ListViewDesigner.SampleRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -349,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListViewDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetEditableDesignerRegionContent (region As EditableDesignerRegion, content As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
+      <MemberSignature Language="F#" Value="override this.SetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit" Usage="listViewDesigner.SetEditableDesignerRegionContent (region, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -375,6 +386,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListViewDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.ListViewDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>

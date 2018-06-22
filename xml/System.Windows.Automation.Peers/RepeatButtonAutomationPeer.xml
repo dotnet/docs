@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RepeatButtonAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RepeatButtonAutomationPeer&#xA;Inherits ButtonBaseAutomationPeer&#xA;Implements IInvokeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class RepeatButtonAutomationPeer : System::Windows::Automation::Peers::ButtonBaseAutomationPeer, System::Windows::Automation::Provider::IInvokeProvider" />
+  <TypeSignature Language="F#" Value="type RepeatButtonAutomationPeer = class&#xA;    inherit ButtonBaseAutomationPeer&#xA;    interface IInvokeProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RepeatButtonAutomationPeer.#ctor(System.Windows.Controls.Primitives.RepeatButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RepeatButton)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RepeatButtonAutomationPeer(System::Windows::Controls::Primitives::RepeatButton ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RepeatButtonAutomationPeer : System.Windows.Controls.Primitives.RepeatButton -&gt; System.Windows.Automation.Peers.RepeatButtonAutomationPeer" Usage="new System.Windows.Automation.Peers.RepeatButtonAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RepeatButtonAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="repeatButtonAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RepeatButtonAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="repeatButtonAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RepeatButtonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="repeatButtonAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.EventHandlerTaskAsyncHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventHandlerTaskAsyncHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventHandlerTaskAsyncHelper sealed" />
+  <TypeSignature Language="F#" Value="type EventHandlerTaskAsyncHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.EventHandlerTaskAsyncHelper.#ctor(System.Web.TaskEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handler As TaskEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventHandlerTaskAsyncHelper(System::Web::TaskEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="new System.Web.EventHandlerTaskAsyncHelper : System.Web.TaskEventHandler -&gt; System.Web.EventHandlerTaskAsyncHelper" Usage="new System.Web.EventHandlerTaskAsyncHelper handler" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.EventHandlerTaskAsyncHelper.BeginEventHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BeginEventHandler As BeginEventHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::BeginEventHandler ^ BeginEventHandler { System::Web::BeginEventHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BeginEventHandler : System.Web.BeginEventHandler" Usage="System.Web.EventHandlerTaskAsyncHelper.BeginEventHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.EventHandlerTaskAsyncHelper.EndEventHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndEventHandler As EndEventHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::EndEventHandler ^ EndEventHandler { System::Web::EndEventHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndEventHandler : System.Web.EndEventHandler" Usage="System.Web.EventHandlerTaskAsyncHelper.EndEventHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

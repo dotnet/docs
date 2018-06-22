@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.RuleOverrideMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RuleOverrideMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class RuleOverrideMode" />
+  <TypeSignature Language="F#" Value="type RuleOverrideMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.XamlTypes.RuleOverrideMode.Extend" />
       <MemberSignature Language="VB.NET" Value="Extend" />
       <MemberSignature Language="C++ CLI" Value="Extend" />
+      <MemberSignature Language="F#" Value="Extend = 1" Usage="Microsoft.Build.Framework.XamlTypes.RuleOverrideMode.Extend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.XamlTypes.RuleOverrideMode.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
       <MemberSignature Language="C++ CLI" Value="Replace" />
+      <MemberSignature Language="F#" Value="Replace = 0" Usage="Microsoft.Build.Framework.XamlTypes.RuleOverrideMode.Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

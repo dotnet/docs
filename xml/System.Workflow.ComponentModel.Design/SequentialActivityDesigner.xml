@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.SequentialActivityDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class SequentialActivityDesigner&#xA;Inherits StructuredCompositeActivityDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class SequentialActivityDesigner : System::Workflow::ComponentModel::Design::StructuredCompositeActivityDesigner" />
+  <TypeSignature Language="F#" Value="type SequentialActivityDesigner = class&#xA;    inherit StructuredCompositeActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.AccessibilityObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessibilityObject As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ AccessibilityObject { System::Windows::Forms::AccessibleObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessibilityObject : System.Windows.Forms.AccessibleObject" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.AccessibilityObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.CanExpandCollapse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanExpandCollapse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanExpandCollapse { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanExpandCollapse : bool" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.CanExpandCollapse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.Expanded" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Expanded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Expanded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Expanded : bool with get, set" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.Expanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.FirstSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FirstSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ FirstSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.FirstSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.GetConnectors" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetConnectors () As Rectangle()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::Drawing::Rectangle&gt; ^ GetConnectors();" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectors : unit -&gt; System.Drawing.Rectangle[]&#xA;override this.GetConnectors : unit -&gt; System.Drawing.Rectangle[]" Usage="sequentialActivityDesigner.GetConnectors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.GetDropTargets(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDropTargets (dropPoint As Point) As Rectangle()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Drawing::Rectangle&gt; ^ GetDropTargets(System::Drawing::Point dropPoint);" />
+      <MemberSignature Language="F#" Value="override this.GetDropTargets : System.Drawing.Point -&gt; System.Drawing.Rectangle[]" Usage="sequentialActivityDesigner.GetDropTargets dropPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.GetNextSelectableObject(System.Object,System.Workflow.ComponentModel.Design.DesignerNavigationDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextSelectableObject (obj As Object, direction As DesignerNavigationDirection) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetNextSelectableObject(System::Object ^ obj, System::Workflow::ComponentModel::Design::DesignerNavigationDirection direction);" />
+      <MemberSignature Language="F#" Value="override this.GetNextSelectableObject : obj * System.Workflow.ComponentModel.Design.DesignerNavigationDirection -&gt; obj" Usage="sequentialActivityDesigner.GetNextSelectableObject (obj, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.Glyphs" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Glyphs As ActivityDesignerGlyphCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Workflow::ComponentModel::Design::ActivityDesignerGlyphCollection ^ Glyphs { System::Workflow::ComponentModel::Design::ActivityDesignerGlyphCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Glyphs : System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.Glyphs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.HelpText" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property HelpText As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ HelpText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpText : string with get, set" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.HelpText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -279,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.HelpTextRectangle" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property HelpTextRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Rectangle HelpTextRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpTextRectangle : System.Drawing.Rectangle" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.HelpTextRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -299,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.HelpTextSize" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property HelpTextSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Drawing::Size HelpTextSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpTextSize : System.Drawing.Size" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.HelpTextSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -318,6 +330,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Design.HitTestInfo HitTest(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.HitTest(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Design::HitTestInfo ^ HitTest(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="override this.HitTest : System.Drawing.Point -&gt; System.Workflow.ComponentModel.Design.HitTestInfo" Usage="sequentialActivityDesigner.HitTest point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -348,6 +361,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Initialize(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.Initialize(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="sequentialActivityDesigner.Initialize activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -378,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.LastSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LastSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ LastSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.SequentialActivityDesigner.LastSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -398,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.OnLayoutPosition(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayoutPosition (e As ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayoutPosition(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutPosition : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit" Usage="sequentialActivityDesigner.OnLayoutPosition e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -423,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.OnLayoutSize(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnLayoutSize (e As ActivityDesignerLayoutEventArgs) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size OnLayoutSize(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutSize : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; System.Drawing.Size" Usage="sequentialActivityDesigner.OnLayoutSize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -447,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialActivityDesigner.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Workflow::ComponentModel::Design::ActivityDesignerPaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs -&gt; unit" Usage="sequentialActivityDesigner.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

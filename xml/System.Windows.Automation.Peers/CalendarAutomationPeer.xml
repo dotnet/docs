@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.CalendarAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CalendarAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer&#xA;Implements IItemContainerProvider, IMultipleViewProvider, ISelectionProvider, ITableProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class CalendarAutomationPeer sealed : System::Windows::Automation::Peers::FrameworkElementAutomationPeer, System::Windows::Automation::Provider::IItemContainerProvider, System::Windows::Automation::Provider::IMultipleViewProvider, System::Windows::Automation::Provider::ISelectionProvider, System::Windows::Automation::Provider::ITableProvider" />
+  <TypeSignature Language="F#" Value="type CalendarAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer&#xA;    interface IGridProvider&#xA;    interface IMultipleViewProvider&#xA;    interface ISelectionProvider&#xA;    interface ITableProvider&#xA;    interface IItemContainerProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarAutomationPeer.#ctor(System.Windows.Controls.Calendar)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Calendar)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarAutomationPeer(System::Windows::Controls::Calendar ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.CalendarAutomationPeer : System.Windows.Controls.Calendar -&gt; System.Windows.Automation.Peers.CalendarAutomationPeer" Usage="new System.Windows.Automation.Peers.CalendarAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="calendarAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="calendarAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="calendarAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="calendarAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarAutomationPeer.SetFocusCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetFocusCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetFocusCore();" />
+      <MemberSignature Language="F#" Value="override this.SetFocusCore : unit -&gt; unit" Usage="calendarAutomationPeer.SetFocusCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IGridProvider#ColumnCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ColumnCount As Integer Implements IGridProvider.ColumnCount" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridProvider.ColumnCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.CalendarAutomationPeer.System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridProvider.ColumnCount</InterfaceMember>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IGridProvider#RowCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowCount As Integer Implements IGridProvider.RowCount" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridProvider.RowCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.CalendarAutomationPeer.System.Windows.Automation.Provider.IGridProvider.RowCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridProvider.RowCount</InterfaceMember>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#CurrentView" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CurrentView As Integer Implements IMultipleViewProvider.CurrentView" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.CalendarAutomationPeer.System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView</InterfaceMember>
@@ -426,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanSelectMultiple As Boolean Implements ISelectionProvider.CanSelectMultiple" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.CalendarAutomationPeer.System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple</InterfaceMember>
@@ -488,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelectionRequired As Boolean Implements ISelectionProvider.IsSelectionRequired" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.CalendarAutomationPeer.System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired</InterfaceMember>
@@ -581,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ITableProvider#RowOrColumnMajor" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowOrColumnMajor As RowOrColumnMajor Implements ITableProvider.RowOrColumnMajor" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::RowOrColumnMajor System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor { System::Windows::Automation::RowOrColumnMajor get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.CalendarAutomationPeer.System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor</InterfaceMember>

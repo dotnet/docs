@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintDocumentImageableArea" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintDocumentImageableArea" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintDocumentImageableArea" />
+  <TypeSignature Language="F#" Value="type PrintDocumentImageableArea = class" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.ExtentHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Printing.PrintDocumentImageableArea.ExtentHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.ExtentWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Printing.PrintDocumentImageableArea.ExtentWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.MediaSizeHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaSizeHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MediaSizeHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediaSizeHeight : double" Usage="System.Printing.PrintDocumentImageableArea.MediaSizeHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.MediaSizeWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaSizeWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MediaSizeWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediaSizeWidth : double" Usage="System.Printing.PrintDocumentImageableArea.MediaSizeWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.OriginHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OriginHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginHeight : double" Usage="System.Printing.PrintDocumentImageableArea.OriginHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.OriginWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OriginWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginWidth : double" Usage="System.Printing.PrintDocumentImageableArea.OriginWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

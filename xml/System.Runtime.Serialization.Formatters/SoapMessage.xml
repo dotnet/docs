@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.SoapMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapMessage&#xA;Implements ISoapMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapMessage : System::Runtime::Serialization::Formatters::ISoapMessage" />
+  <TypeSignature Language="F#" Value="type SoapMessage = class&#xA;    interface ISoapMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Property Headers As Header()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ Headers { cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ get(); void set(cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Runtime.Remoting.Messaging.Header[] with get, set" Usage="System.Runtime.Serialization.Formatters.SoapMessage.Headers" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.Headers</InterfaceMember>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.Runtime.Serialization.Formatters.SoapMessage.MethodName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.MethodName</InterfaceMember>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.ParamNames" />
       <MemberSignature Language="VB.NET" Value="Public Property ParamNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ParamNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParamNames : string[] with get, set" Usage="System.Runtime.Serialization.Formatters.SoapMessage.ParamNames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamNames</InterfaceMember>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.ParamTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property ParamTypes As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ ParamTypes { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParamTypes : Type[] with get, set" Usage="System.Runtime.Serialization.Formatters.SoapMessage.ParamTypes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamTypes</InterfaceMember>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.ParamValues" />
       <MemberSignature Language="VB.NET" Value="Public Property ParamValues As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ ParamValues { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParamValues : obj[] with get, set" Usage="System.Runtime.Serialization.Formatters.SoapMessage.ParamValues" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamValues</InterfaceMember>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.XmlNameSpace" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlNameSpace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlNameSpace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlNameSpace : string with get, set" Usage="System.Runtime.Serialization.Formatters.SoapMessage.XmlNameSpace" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.XmlNameSpace</InterfaceMember>

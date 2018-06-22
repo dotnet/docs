@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ButtonBaseAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ButtonBaseAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ButtonBaseAutomationPeer abstract : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type ButtonBaseAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ButtonBaseAutomationPeer.#ctor(System.Windows.Controls.Primitives.ButtonBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As ButtonBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ButtonBaseAutomationPeer(System::Windows::Controls::Primitives::ButtonBase ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ButtonBaseAutomationPeer : System.Windows.Controls.Primitives.ButtonBase -&gt; System.Windows.Automation.Peers.ButtonBaseAutomationPeer" Usage="new System.Windows.Automation.Peers.ButtonBaseAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ButtonBaseAutomationPeer.GetAcceleratorKeyCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAcceleratorKeyCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAcceleratorKeyCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAcceleratorKeyCore : unit -&gt; string" Usage="buttonBaseAutomationPeer.GetAcceleratorKeyCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ButtonBaseAutomationPeer.GetAutomationIdCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationIdCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAutomationIdCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationIdCore : unit -&gt; string" Usage="buttonBaseAutomationPeer.GetAutomationIdCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ButtonBaseAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="buttonBaseAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

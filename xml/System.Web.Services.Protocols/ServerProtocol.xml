@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.ServerProtocol" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServerProtocol" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServerProtocol abstract" />
+  <TypeSignature Language="F#" Value="type ServerProtocol = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ServerProtocol.AddToCache(System.Type,System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddToCache (protocolType As Type, serverType As Type, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddToCache(Type ^ protocolType, Type ^ serverType, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddToCache : Type * Type * obj -&gt; unit" Usage="serverProtocol.AddToCache (protocolType, serverType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.ServerProtocol.Context" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Services.Protocols.ServerProtocol.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ServerProtocol.GetFromCache(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetFromCache (protocolType As Type, serverType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetFromCache(Type ^ protocolType, Type ^ serverType);" />
+      <MemberSignature Language="F#" Value="member this.GetFromCache : Type * Type -&gt; obj" Usage="serverProtocol.GetFromCache (protocolType, serverType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.ServerProtocol.Request" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Request As HttpRequest" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::HttpRequest ^ Request { System::Web::HttpRequest ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Request : System.Web.HttpRequest" Usage="System.Web.Services.Protocols.ServerProtocol.Request" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.ServerProtocol.Response" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Response As HttpResponse" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::HttpResponse ^ Response { System::Web::HttpResponse ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Response : System.Web.HttpResponse" Usage="System.Web.Services.Protocols.ServerProtocol.Response" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.ServerProtocol.Target" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property Target As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Object ^ Target { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : obj" Usage="System.Web.Services.Protocols.ServerProtocol.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PeerNameType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PeerNameType" />
+  <TypeSignature Language="F#" Value="type PeerNameType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PeerNameType.Secured" />
       <MemberSignature Language="VB.NET" Value="Secured" />
       <MemberSignature Language="C++ CLI" Value="Secured" />
+      <MemberSignature Language="F#" Value="Secured = 0" Usage="System.Net.PeerToPeer.PeerNameType.Secured" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PeerNameType.Unsecured" />
       <MemberSignature Language="VB.NET" Value="Unsecured" />
       <MemberSignature Language="C++ CLI" Value="Unsecured" />
+      <MemberSignature Language="F#" Value="Unsecured = 1" Usage="System.Net.PeerToPeer.PeerNameType.Unsecured" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

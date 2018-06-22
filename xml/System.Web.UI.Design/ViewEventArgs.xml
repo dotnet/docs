@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ViewEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ViewEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ViewEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ViewEvent eventType, class System.Web.UI.Design.DesignerRegion region, class System.EventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ViewEventArgs.#ctor(System.Web.UI.Design.ViewEvent,System.Web.UI.Design.DesignerRegion,System.EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewEventArgs(System::Web::UI::Design::ViewEvent ^ eventType, System::Web::UI::Design::DesignerRegion ^ region, EventArgs ^ eventArgs);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.ViewEventArgs : System.Web.UI.Design.ViewEvent * System.Web.UI.Design.DesignerRegion * EventArgs -&gt; System.Web.UI.Design.ViewEventArgs" Usage="new System.Web.UI.Design.ViewEventArgs (eventType, region, eventArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ViewEventArgs.EventArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventArgs As EventArgs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property EventArgs ^ EventArgs { EventArgs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventArgs : EventArgs" Usage="System.Web.UI.Design.ViewEventArgs.EventArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ViewEventArgs.EventType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As ViewEvent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::ViewEvent ^ EventType { System::Web::UI::Design::ViewEvent ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventType : System.Web.UI.Design.ViewEvent" Usage="System.Web.UI.Design.ViewEventArgs.EventType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ViewEventArgs.Region" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Region As DesignerRegion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::DesignerRegion ^ Region { System::Web::UI::Design::DesignerRegion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Region : System.Web.UI.Design.DesignerRegion" Usage="System.Web.UI.Design.ViewEventArgs.Region" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Json.JsonValue" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class JsonValue&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class JsonValue abstract : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type JsonValue = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Json</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="jsonValue.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Json.JsonValue.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Json.JsonValue.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Json.JsonValue.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Json::JsonValue ^ default[int] { System::Json::JsonValue ^ get(int index); void set(int index, System::Json::JsonValue ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Json.JsonValue with get, set" Usage="System.Json.JsonValue.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Json.JsonValue.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(key As String) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Json::JsonValue ^ default[System::String ^] { System::Json::JsonValue ^ get(System::String ^ key); void set(System::String ^ key, System::Json::JsonValue ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Json.JsonValue with get, set" Usage="System.Json.JsonValue.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Json.JsonValue.JsonType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property JsonType As JsonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Json::JsonType JsonType { System::Json::JsonType get(); };" />
+      <MemberSignature Language="F#" Value="member this.JsonType : System.Json.JsonType" Usage="System.Json.JsonValue.JsonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Json.JsonValue Load(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.Load(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Json::JsonValue ^ Load(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.Load stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Json.JsonValue Load(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.Load(System.IO.TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Json::JsonValue ^ Load(System::IO::TextReader ^ textReader);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.TextReader -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.Load textReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Boolean)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Boolean) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(bool value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : bool -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Byte)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Byte) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : byte -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -261,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Char)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Char) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(char value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : char -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -286,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.DateTime)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As DateTime) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(DateTime value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : DateTime -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -311,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.DateTimeOffset)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As DateTimeOffset) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(DateTimeOffset value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : DateTimeOffset -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -336,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Decimal)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Decimal) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : decimal -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -361,6 +375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Double)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Double) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(double value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : double -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -386,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Guid)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Guid) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(Guid value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Guid -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -411,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Int16)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Short) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(short value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int16 -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -436,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Int32)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Integer) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(int value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -461,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Int64)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Long) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(long value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int64 -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -486,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator bool(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; bool" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -511,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Byte" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Byte(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; byte" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -536,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Char" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator char(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; char" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -561,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.DateTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator DateTime(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; DateTime" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -586,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.DateTimeOffset" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator DateTimeOffset(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; DateTimeOffset" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -611,6 +635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Decimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Decimal(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; decimal" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -636,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Double" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator double(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; double" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -661,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Guid" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Guid(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; Guid" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -686,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Int16" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator short(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; int16" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -711,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator int(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; int" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -736,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Int64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator long(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; int64" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -761,6 +791,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.SByte" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::SByte(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; sbyte" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -786,6 +817,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Single" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator float(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; single" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -811,6 +843,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::String ^(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; string" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -836,6 +869,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.TimeSpan" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator TimeSpan(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; TimeSpan" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -861,6 +895,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.UInt16" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::UInt16(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; uint16" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -886,6 +921,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.UInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::UInt32(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; uint32" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -911,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.UInt64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::UInt64(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; uint64" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -936,6 +973,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Json.JsonValue)~System.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JsonValue) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Uri ^(System::Json::JsonValue ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Json.JsonValue -&gt; Uri" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -961,6 +999,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.SByte)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As SByte) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : sbyte -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -986,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Single)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Single) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(float value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : single -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1011,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.String)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1036,6 +1077,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.TimeSpan)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As TimeSpan) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(TimeSpan value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : TimeSpan -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1061,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.UInt16)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As UShort) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : uint16 -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1086,6 +1129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.UInt32)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As UInteger) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : uint32 -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1111,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.UInt64)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As ULong) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : uint64 -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1136,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.op_Implicit(System.Uri)~System.Json.JsonValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Uri) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Json::JsonValue ^(Uri ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Uri -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1161,6 +1207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (jsonString As String) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Json::JsonValue ^ Parse(System::String ^ jsonString);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Json.JsonValue" Usage="System.Json.JsonValue.Parse jsonString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1185,6 +1232,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.Save(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.IO.Stream -&gt; unit&#xA;override this.Save : System.IO.Stream -&gt; unit" Usage="jsonValue.Save stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1208,6 +1256,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.TextWriter textWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.Save(System.IO.TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save(System::IO::TextWriter ^ textWriter);" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.IO.TextWriter -&gt; unit&#xA;override this.Save : System.IO.TextWriter -&gt; unit" Usage="jsonValue.Save textWriter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -1257,6 +1306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="jsonValue.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IndexerNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IndexerNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IndexerNameAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type IndexerNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IndexerNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (indexerName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IndexerNameAttribute(System::String ^ indexerName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.IndexerNameAttribute : string -&gt; System.Runtime.CompilerServices.IndexerNameAttribute" Usage="new System.Runtime.CompilerServices.IndexerNameAttribute indexerName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

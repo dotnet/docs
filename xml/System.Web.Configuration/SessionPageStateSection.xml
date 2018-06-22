@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SessionPageStateSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SessionPageStateSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionPageStateSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type SessionPageStateSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SessionPageStateSection.DefaultHistorySize" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultHistorySize As Integer  = 9" />
       <MemberSignature Language="C++ CLI" Value="public: int DefaultHistorySize = 9;" />
+      <MemberSignature Language="F#" Value="val mutable DefaultHistorySize : int" Usage="System.Web.Configuration.SessionPageStateSection.DefaultHistorySize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SessionPageStateSection.HistorySize" />
       <MemberSignature Language="VB.NET" Value="Public Property HistorySize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HistorySize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HistorySize : int with get, set" Usage="System.Web.Configuration.SessionPageStateSection.HistorySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SessionPageStateSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.SessionPageStateSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

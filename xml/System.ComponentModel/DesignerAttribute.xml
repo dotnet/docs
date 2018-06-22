@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DesignerAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (designerTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAttribute(System::String ^ designerTypeName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignerAttribute : string -&gt; System.ComponentModel.DesignerAttribute" Usage="new System.ComponentModel.DesignerAttribute designerTypeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (designerType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAttribute(Type ^ designerType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignerAttribute : Type -&gt; System.ComponentModel.DesignerAttribute" Usage="new System.ComponentModel.DesignerAttribute designerType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (designerTypeName As String, designerBaseTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAttribute(System::String ^ designerTypeName, System::String ^ designerBaseTypeName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignerAttribute : string * string -&gt; System.ComponentModel.DesignerAttribute" Usage="new System.ComponentModel.DesignerAttribute (designerTypeName, designerBaseTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (designerTypeName As String, designerBaseType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAttribute(System::String ^ designerTypeName, Type ^ designerBaseType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignerAttribute : string * Type -&gt; System.ComponentModel.DesignerAttribute" Usage="new System.ComponentModel.DesignerAttribute (designerTypeName, designerBaseType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerAttribute.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (designerType As Type, designerBaseType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAttribute(Type ^ designerType, Type ^ designerBaseType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignerAttribute : Type * Type -&gt; System.ComponentModel.DesignerAttribute" Usage="new System.ComponentModel.DesignerAttribute (designerType, designerBaseType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignerAttribute.DesignerBaseTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerBaseTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DesignerBaseTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerBaseTypeName : string" Usage="System.ComponentModel.DesignerAttribute.DesignerBaseTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignerAttribute.DesignerTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DesignerTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerTypeName : string" Usage="System.ComponentModel.DesignerAttribute.DesignerTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="designerAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -367,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="designerAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -399,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignerAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.DesignerAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

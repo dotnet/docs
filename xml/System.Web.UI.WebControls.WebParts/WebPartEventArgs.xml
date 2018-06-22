@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WebPartEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WebPartEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartEventArgs(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartEventArgs : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.WebPartEventArgs" Usage="new System.Web.UI.WebControls.WebParts.WebPartEventArgs webPart" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartEventArgs.WebPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebPart As WebPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ WebPart { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebPart : System.Web.UI.WebControls.WebParts.WebPart" Usage="System.Web.UI.WebControls.WebParts.WebPartEventArgs.WebPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

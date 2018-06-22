@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ProjectedWrapperManyEnd" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectedWrapperManyEnd&#xA;Inherits ProjectedWrapperMany" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectedWrapperManyEnd sealed : System::Data::Services::Internal::ProjectedWrapperMany" />
+  <TypeSignature Language="F#" Value="type ProjectedWrapperManyEnd = class&#xA;    inherit ProjectedWrapperMany" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapperManyEnd.InternalGetProjectedPropertyValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InternalGetProjectedPropertyValue (propertyIndex As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ InternalGetProjectedPropertyValue(int propertyIndex);" />
+      <MemberSignature Language="F#" Value="override this.InternalGetProjectedPropertyValue : int -&gt; obj" Usage="projectedWrapperManyEnd.InternalGetProjectedPropertyValue propertyIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

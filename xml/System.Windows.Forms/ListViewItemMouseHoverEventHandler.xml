@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemMouseHoverEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ListViewItemMouseHoverEventHandler(sender As Object, e As ListViewItemMouseHoverEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ListViewItemMouseHoverEventHandler(System::Object ^ sender, ListViewItemMouseHoverEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ListViewItemMouseHoverEventHandler = delegate of obj * ListViewItemMouseHoverEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

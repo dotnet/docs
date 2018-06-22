@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyChangedEventManager" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyChangedEventManager&#xA;Inherits WeakEventManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyChangedEventManager : System::Windows::WeakEventManager" />
+  <TypeSignature Language="F#" Value="type PropertyChangedEventManager = class&#xA;    inherit WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.AddHandler(System.ComponentModel.INotifyPropertyChanged,System.EventHandler{System.ComponentModel.PropertyChangedEventArgs},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As INotifyPropertyChanged, handler As EventHandler(Of PropertyChangedEventArgs), propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(System::ComponentModel::INotifyPropertyChanged ^ source, EventHandler&lt;System::ComponentModel::PropertyChangedEventArgs ^&gt; ^ handler, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member AddHandler : System.ComponentModel.INotifyPropertyChanged * EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt; * string -&gt; unit" Usage="System.ComponentModel.PropertyChangedEventManager.AddHandler (source, handler, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.AddListener(System.ComponentModel.INotifyPropertyChanged,System.Windows.IWeakEventListener,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddListener (source As INotifyPropertyChanged, listener As IWeakEventListener, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddListener(System::ComponentModel::INotifyPropertyChanged ^ source, System::Windows::IWeakEventListener ^ listener, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member AddListener : System.ComponentModel.INotifyPropertyChanged * System.Windows.IWeakEventListener * string -&gt; unit" Usage="System.ComponentModel.PropertyChangedEventManager.AddListener (source, listener, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.NewListenerList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
+      <MemberSignature Language="F#" Value="override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="propertyChangedEventManager.NewListenerList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.Purge(System.Object,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Purge (source As Object, data As Object, purgeAll As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool Purge(System::Object ^ source, System::Object ^ data, bool purgeAll);" />
+      <MemberSignature Language="F#" Value="override this.Purge : obj * obj * bool -&gt; bool" Usage="propertyChangedEventManager.Purge (source, data, purgeAll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.RemoveHandler(System.ComponentModel.INotifyPropertyChanged,System.EventHandler{System.ComponentModel.PropertyChangedEventArgs},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As INotifyPropertyChanged, handler As EventHandler(Of PropertyChangedEventArgs), propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(System::ComponentModel::INotifyPropertyChanged ^ source, EventHandler&lt;System::ComponentModel::PropertyChangedEventArgs ^&gt; ^ handler, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member RemoveHandler : System.ComponentModel.INotifyPropertyChanged * EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt; * string -&gt; unit" Usage="System.ComponentModel.PropertyChangedEventManager.RemoveHandler (source, handler, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.RemoveListener(System.ComponentModel.INotifyPropertyChanged,System.Windows.IWeakEventListener,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveListener (source As INotifyPropertyChanged, listener As IWeakEventListener, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveListener(System::ComponentModel::INotifyPropertyChanged ^ source, System::Windows::IWeakEventListener ^ listener, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member RemoveListener : System.ComponentModel.INotifyPropertyChanged * System.Windows.IWeakEventListener * string -&gt; unit" Usage="System.ComponentModel.PropertyChangedEventManager.RemoveListener (source, listener, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="override this.StartListening : obj -&gt; unit" Usage="propertyChangedEventManager.StartListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="override this.StopListening : obj -&gt; unit" Usage="propertyChangedEventManager.StopListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

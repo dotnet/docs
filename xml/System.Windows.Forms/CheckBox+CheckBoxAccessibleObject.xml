@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class CheckBox.CheckBoxAccessibleObject&#xA;Inherits ButtonBase.ButtonBaseAccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public: ref class CheckBox::CheckBoxAccessibleObject : System::Windows::Forms::ButtonBase::ButtonBaseAccessibleObject" />
+  <TypeSignature Language="F#" Value="type CheckBox.CheckBoxAccessibleObject = class&#xA;    inherit ButtonBase.ButtonBaseAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject.#ctor(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CheckBoxAccessibleObject(System::Windows::Forms::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.CheckBox.CheckBoxAccessibleObject : System.Windows.Forms.Control -&gt; System.Windows.Forms.CheckBox.CheckBoxAccessibleObject" Usage="new System.Windows.Forms.CheckBox.CheckBoxAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Windows.Forms.CheckBox.CheckBoxAccessibleObject.DefaultAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="checkBoxAccessibleObject.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject.Role" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.CheckBox.CheckBoxAccessibleObject.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Windows.Forms.CheckBox.CheckBoxAccessibleObject.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

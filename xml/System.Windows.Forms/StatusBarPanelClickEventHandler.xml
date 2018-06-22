@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelClickEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StatusBarPanelClickEventHandler(sender As Object, e As StatusBarPanelClickEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StatusBarPanelClickEventHandler(System::Object ^ sender, StatusBarPanelClickEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StatusBarPanelClickEventHandler = delegate of obj * StatusBarPanelClickEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

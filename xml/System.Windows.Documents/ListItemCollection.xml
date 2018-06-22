@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.ListItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ListItemCollection&#xA;Inherits TextElementCollection(Of ListItem)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListItemCollection : System::Windows::Documents::TextElementCollection&lt;System::Windows::Documents::ListItem ^&gt;" />
+  <TypeSignature Language="F#" Value="type ListItemCollection = class&#xA;    inherit TextElementCollection&lt;ListItem&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.ListItemCollection.FirstListItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstListItem As ListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::ListItem ^ FirstListItem { System::Windows::Documents::ListItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstListItem : System.Windows.Documents.ListItem" Usage="System.Windows.Documents.ListItemCollection.FirstListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.ListItemCollection.LastListItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastListItem As ListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::ListItem ^ LastListItem { System::Windows::Documents::ListItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastListItem : System.Windows.Documents.ListItem" Usage="System.Windows.Documents.ListItemCollection.LastListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

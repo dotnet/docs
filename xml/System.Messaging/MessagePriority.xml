@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessagePriority" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessagePriority" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessagePriority" />
+  <TypeSignature Language="F#" Value="type MessagePriority = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.AboveNormal" />
       <MemberSignature Language="VB.NET" Value="AboveNormal" />
       <MemberSignature Language="C++ CLI" Value="AboveNormal" />
+      <MemberSignature Language="F#" Value="AboveNormal = 4" Usage="System.Messaging.MessagePriority.AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 5" Usage="System.Messaging.MessagePriority.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.Highest" />
       <MemberSignature Language="VB.NET" Value="Highest" />
       <MemberSignature Language="C++ CLI" Value="Highest" />
+      <MemberSignature Language="F#" Value="Highest = 7" Usage="System.Messaging.MessagePriority.Highest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.Low" />
       <MemberSignature Language="VB.NET" Value="Low" />
       <MemberSignature Language="C++ CLI" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = 2" Usage="System.Messaging.MessagePriority.Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.Lowest" />
       <MemberSignature Language="VB.NET" Value="Lowest" />
       <MemberSignature Language="C++ CLI" Value="Lowest" />
+      <MemberSignature Language="F#" Value="Lowest = 0" Usage="System.Messaging.MessagePriority.Lowest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 3" Usage="System.Messaging.MessagePriority.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.VeryHigh" />
       <MemberSignature Language="VB.NET" Value="VeryHigh" />
       <MemberSignature Language="C++ CLI" Value="VeryHigh" />
+      <MemberSignature Language="F#" Value="VeryHigh = 6" Usage="System.Messaging.MessagePriority.VeryHigh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.VeryLow" />
       <MemberSignature Language="VB.NET" Value="VeryLow" />
       <MemberSignature Language="C++ CLI" Value="VeryLow" />
+      <MemberSignature Language="F#" Value="VeryLow = 1" Usage="System.Messaging.MessagePriority.VeryLow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

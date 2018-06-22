@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ProtocolMappingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtocolMappingElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProtocolMappingElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ProtocolMappingElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ProtocolMappingElement.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (schemeType As String, binding As String, bindingConfiguration As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolMappingElement(System::String ^ schemeType, System::String ^ binding, System::String ^ bindingConfiguration);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ProtocolMappingElement : string * string * string -&gt; System.ServiceModel.Configuration.ProtocolMappingElement" Usage="new System.ServiceModel.Configuration.ProtocolMappingElement (schemeType, binding, bindingConfiguration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Binding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : string with get, set" Usage="System.ServiceModel.Configuration.ProtocolMappingElement.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.BindingConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property BindingConfiguration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BindingConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BindingConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ProtocolMappingElement.BindingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ProtocolMappingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public Property Scheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scheme { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string with get, set" Usage="System.ServiceModel.Configuration.ProtocolMappingElement.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

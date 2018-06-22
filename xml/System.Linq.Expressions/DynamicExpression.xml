@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.DynamicExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicExpression&#xA;Inherits Expression&#xA;Implements IDynamicExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicExpression : System::Linq::Expressions::Expression, System::Linq::Expressions::IDynamicExpression" />
+  <TypeSignature Language="F#" Value="type DynamicExpression = class&#xA;    inherit Expression&#xA;    interface IDynamicExpression&#xA;    interface IArgumentProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="dynamicExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DynamicExpression.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As ReadOnlyCollection(Of Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ Arguments { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="System.Linq.Expressions.DynamicExpression.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DynamicExpression.Binder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Binder As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::CompilerServices::CallSiteBinder ^ Binder { System::Runtime::CompilerServices::CallSiteBinder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Binder : System.Runtime.CompilerServices.CallSiteBinder" Usage="System.Linq.Expressions.DynamicExpression.Binder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DynamicExpression.DelegateType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DelegateType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DelegateType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DelegateType : Type" Usage="System.Linq.Expressions.DynamicExpression.DelegateType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.Expressions.IDynamicExpression.DelegateType</InterfaceMember>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dynamic (binder As CallSiteBinder, returnType As Type, arguments As IEnumerable(Of Expression)) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ Dynamic(System::Runtime::CompilerServices::CallSiteBinder ^ binder, Type ^ returnType, System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member Dynamic : System.Runtime.CompilerServices.CallSiteBinder * Type * seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.Dynamic (binder, returnType, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dynamic (binder As CallSiteBinder, returnType As Type, arg0 As Expression) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ Dynamic(System::Runtime::CompilerServices::CallSiteBinder ^ binder, Type ^ returnType, System::Linq::Expressions::Expression ^ arg0);" />
+      <MemberSignature Language="F#" Value="static member Dynamic : System.Runtime.CompilerServices.CallSiteBinder * Type * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.Dynamic (binder, returnType, arg0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -303,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Linq.Expressions.Expression[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dynamic (binder As CallSiteBinder, returnType As Type, ParamArray arguments As Expression()) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ Dynamic(System::Runtime::CompilerServices::CallSiteBinder ^ binder, Type ^ returnType, ... cli::array &lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member Dynamic : System.Runtime.CompilerServices.CallSiteBinder * Type * System.Linq.Expressions.Expression[] -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.Dynamic (binder, returnType, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dynamic (binder As CallSiteBinder, returnType As Type, arg0 As Expression, arg1 As Expression) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ Dynamic(System::Runtime::CompilerServices::CallSiteBinder ^ binder, Type ^ returnType, System::Linq::Expressions::Expression ^ arg0, System::Linq::Expressions::Expression ^ arg1);" />
+      <MemberSignature Language="F#" Value="static member Dynamic : System.Runtime.CompilerServices.CallSiteBinder * Type * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.Dynamic (binder, returnType, arg0, arg1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -409,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dynamic (binder As CallSiteBinder, returnType As Type, arg0 As Expression, arg1 As Expression, arg2 As Expression) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ Dynamic(System::Runtime::CompilerServices::CallSiteBinder ^ binder, Type ^ returnType, System::Linq::Expressions::Expression ^ arg0, System::Linq::Expressions::Expression ^ arg1, System::Linq::Expressions::Expression ^ arg2);" />
+      <MemberSignature Language="F#" Value="static member Dynamic : System.Runtime.CompilerServices.CallSiteBinder * Type * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.Dynamic (binder, returnType, arg0, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -462,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dynamic (binder As CallSiteBinder, returnType As Type, arg0 As Expression, arg1 As Expression, arg2 As Expression, arg3 As Expression) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ Dynamic(System::Runtime::CompilerServices::CallSiteBinder ^ binder, Type ^ returnType, System::Linq::Expressions::Expression ^ arg0, System::Linq::Expressions::Expression ^ arg1, System::Linq::Expressions::Expression ^ arg2, System::Linq::Expressions::Expression ^ arg3);" />
+      <MemberSignature Language="F#" Value="static member Dynamic : System.Runtime.CompilerServices.CallSiteBinder * Type * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.Dynamic (binder, returnType, arg0, arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -526,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeDynamic (delegateType As Type, binder As CallSiteBinder, arguments As IEnumerable(Of Expression)) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ MakeDynamic(Type ^ delegateType, System::Runtime::CompilerServices::CallSiteBinder ^ binder, System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member MakeDynamic : Type * System.Runtime.CompilerServices.CallSiteBinder * seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.MakeDynamic (delegateType, binder, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -568,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeDynamic (delegateType As Type, binder As CallSiteBinder, arg0 As Expression) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ MakeDynamic(Type ^ delegateType, System::Runtime::CompilerServices::CallSiteBinder ^ binder, System::Linq::Expressions::Expression ^ arg0);" />
+      <MemberSignature Language="F#" Value="static member MakeDynamic : Type * System.Runtime.CompilerServices.CallSiteBinder * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.MakeDynamic (delegateType, binder, arg0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -610,6 +623,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Linq.Expressions.Expression[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeDynamic (delegateType As Type, binder As CallSiteBinder, ParamArray arguments As Expression()) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ MakeDynamic(Type ^ delegateType, System::Runtime::CompilerServices::CallSiteBinder ^ binder, ... cli::array &lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member MakeDynamic : Type * System.Runtime.CompilerServices.CallSiteBinder * System.Linq.Expressions.Expression[] -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.MakeDynamic (delegateType, binder, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -658,6 +672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeDynamic (delegateType As Type, binder As CallSiteBinder, arg0 As Expression, arg1 As Expression) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ MakeDynamic(Type ^ delegateType, System::Runtime::CompilerServices::CallSiteBinder ^ binder, System::Linq::Expressions::Expression ^ arg0, System::Linq::Expressions::Expression ^ arg1);" />
+      <MemberSignature Language="F#" Value="static member MakeDynamic : Type * System.Runtime.CompilerServices.CallSiteBinder * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.MakeDynamic (delegateType, binder, arg0, arg1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -702,6 +717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeDynamic (delegateType As Type, binder As CallSiteBinder, arg0 As Expression, arg1 As Expression, arg2 As Expression) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ MakeDynamic(Type ^ delegateType, System::Runtime::CompilerServices::CallSiteBinder ^ binder, System::Linq::Expressions::Expression ^ arg0, System::Linq::Expressions::Expression ^ arg1, System::Linq::Expressions::Expression ^ arg2);" />
+      <MemberSignature Language="F#" Value="static member MakeDynamic : Type * System.Runtime.CompilerServices.CallSiteBinder * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.MakeDynamic (delegateType, binder, arg0, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -748,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeDynamic (delegateType As Type, binder As CallSiteBinder, arg0 As Expression, arg1 As Expression, arg2 As Expression, arg3 As Expression) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::Expressions::DynamicExpression ^ MakeDynamic(Type ^ delegateType, System::Runtime::CompilerServices::CallSiteBinder ^ binder, System::Linq::Expressions::Expression ^ arg0, System::Linq::Expressions::Expression ^ arg1, System::Linq::Expressions::Expression ^ arg2, System::Linq::Expressions::Expression ^ arg3);" />
+      <MemberSignature Language="F#" Value="static member MakeDynamic : Type * System.Runtime.CompilerServices.CallSiteBinder * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.DynamicExpression" Usage="System.Linq.Expressions.DynamicExpression.MakeDynamic (delegateType, binder, arg0, arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -796,6 +813,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DynamicExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.DynamicExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -830,6 +848,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DynamicExpression.System#Linq#Expressions#IArgumentProvider#ArgumentCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ArgumentCount As Integer Implements IArgumentProvider.ArgumentCount" />
       <MemberSignature Language="C++ CLI" Value="property int System.Linq.Expressions.IArgumentProvider.ArgumentCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.Expressions.DynamicExpression.System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.Expressions.IArgumentProvider.ArgumentCount</InterfaceMember>
@@ -987,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DynamicExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.DynamicExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -1021,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (arguments As IEnumerable(Of Expression)) As DynamicExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::DynamicExpression ^ Update(System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="member this.Update : seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.DynamicExpression" Usage="dynamicExpression.Update arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

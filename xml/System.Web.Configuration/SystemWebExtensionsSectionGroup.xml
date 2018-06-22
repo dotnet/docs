@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SystemWebExtensionsSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemWebExtensionsSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemWebExtensionsSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
+  <TypeSignature Language="F#" Value="type SystemWebExtensionsSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebExtensionsSectionGroup.Scripting" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scripting As ScriptingSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ScriptingSectionGroup ^ Scripting { System::Web::Configuration::ScriptingSectionGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scripting : System.Web.Configuration.ScriptingSectionGroup" Usage="System.Web.Configuration.SystemWebExtensionsSectionGroup.Scripting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

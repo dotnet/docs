@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserDocumentCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WebBrowserDocumentCompletedEventHandler(sender As Object, e As WebBrowserDocumentCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WebBrowserDocumentCompletedEventHandler(System::Object ^ sender, WebBrowserDocumentCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WebBrowserDocumentCompletedEventHandler = delegate of obj * WebBrowserDocumentCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

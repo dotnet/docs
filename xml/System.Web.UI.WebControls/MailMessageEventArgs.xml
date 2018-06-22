@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MailMessageEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class MailMessageEventArgs&#xA;Inherits LoginCancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class MailMessageEventArgs : System::Web::UI::WebControls::LoginCancelEventArgs" />
+  <TypeSignature Language="F#" Value="type MailMessageEventArgs = class&#xA;    inherit LoginCancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MailMessageEventArgs.#ctor(System.Net.Mail.MailMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As MailMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MailMessageEventArgs(System::Net::Mail::MailMessage ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MailMessageEventArgs : System.Net.Mail.MailMessage -&gt; System.Web.UI.WebControls.MailMessageEventArgs" Usage="new System.Web.UI.WebControls.MailMessageEventArgs message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailMessageEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As MailMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailMessage ^ Message { System::Net::Mail::MailMessage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.Net.Mail.MailMessage" Usage="System.Web.UI.WebControls.MailMessageEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

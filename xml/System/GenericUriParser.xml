@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.GenericUriParser" />
   <TypeSignature Language="VB.NET" Value="Public Class GenericUriParser&#xA;Inherits UriParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenericUriParser : UriParser" />
+  <TypeSignature Language="F#" Value="type GenericUriParser = class&#xA;    inherit UriParser" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.GenericUriParser.#ctor(System.GenericUriParserOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (options As GenericUriParserOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericUriParser(GenericUriParserOptions options);" />
+      <MemberSignature Language="F#" Value="new GenericUriParser : GenericUriParserOptions -&gt; GenericUriParser" Usage="new System.GenericUriParser options" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

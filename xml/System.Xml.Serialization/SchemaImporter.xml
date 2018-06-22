@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SchemaImporter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SchemaImporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class SchemaImporter abstract" />
+  <TypeSignature Language="F#" Value="type SchemaImporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SchemaImporter.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As SchemaImporterExtensionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Advanced::SchemaImporterExtensionCollection ^ Extensions { System::Xml::Serialization::Advanced::SchemaImporterExtensionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection" Usage="System.Xml.Serialization.SchemaImporter.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

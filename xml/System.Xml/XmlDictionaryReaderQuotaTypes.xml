@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionaryReaderQuotaTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlDictionaryReaderQuotaTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlDictionaryReaderQuotaTypes" />
+  <TypeSignature Language="F#" Value="type XmlDictionaryReaderQuotaTypes = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxArrayLength" />
       <MemberSignature Language="VB.NET" Value="MaxArrayLength" />
       <MemberSignature Language="C++ CLI" Value="MaxArrayLength" />
+      <MemberSignature Language="F#" Value="MaxArrayLength = 4" Usage="System.Xml.XmlDictionaryReaderQuotaTypes.MaxArrayLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxBytesPerRead" />
       <MemberSignature Language="VB.NET" Value="MaxBytesPerRead" />
       <MemberSignature Language="C++ CLI" Value="MaxBytesPerRead" />
+      <MemberSignature Language="F#" Value="MaxBytesPerRead = 8" Usage="System.Xml.XmlDictionaryReaderQuotaTypes.MaxBytesPerRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxDepth" />
       <MemberSignature Language="VB.NET" Value="MaxDepth" />
       <MemberSignature Language="C++ CLI" Value="MaxDepth" />
+      <MemberSignature Language="F#" Value="MaxDepth = 1" Usage="System.Xml.XmlDictionaryReaderQuotaTypes.MaxDepth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxNameTableCharCount" />
       <MemberSignature Language="VB.NET" Value="MaxNameTableCharCount" />
       <MemberSignature Language="C++ CLI" Value="MaxNameTableCharCount" />
+      <MemberSignature Language="F#" Value="MaxNameTableCharCount = 16" Usage="System.Xml.XmlDictionaryReaderQuotaTypes.MaxNameTableCharCount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxStringContentLength" />
       <MemberSignature Language="VB.NET" Value="MaxStringContentLength" />
       <MemberSignature Language="C++ CLI" Value="MaxStringContentLength" />
+      <MemberSignature Language="F#" Value="MaxStringContentLength = 2" Usage="System.Xml.XmlDictionaryReaderQuotaTypes.MaxStringContentLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>

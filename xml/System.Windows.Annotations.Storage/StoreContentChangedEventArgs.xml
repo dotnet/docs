@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.StoreContentChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StoreContentChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StoreContentChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type StoreContentChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Annotations.Storage.StoreContentAction action, class System.Windows.Annotations.Annotation annotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.#ctor(System.Windows.Annotations.Storage.StoreContentAction,System.Windows.Annotations.Annotation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StoreContentChangedEventArgs(System::Windows::Annotations::Storage::StoreContentAction action, System::Windows::Annotations::Annotation ^ annotation);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.Storage.StoreContentChangedEventArgs : System.Windows.Annotations.Storage.StoreContentAction * System.Windows.Annotations.Annotation -&gt; System.Windows.Annotations.Storage.StoreContentChangedEventArgs" Usage="new System.Windows.Annotations.Storage.StoreContentChangedEventArgs (action, annotation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As StoreContentAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Annotations::Storage::StoreContentAction Action { System::Windows::Annotations::Storage::StoreContentAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Windows.Annotations.Storage.StoreContentAction" Usage="System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotation As Annotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Annotations::Annotation ^ Annotation { System::Windows::Annotations::Annotation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Annotation : System.Windows.Annotations.Annotation" Usage="System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

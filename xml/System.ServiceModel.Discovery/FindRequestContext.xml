@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.FindRequestContext" />
   <TypeSignature Language="VB.NET" Value="Public Class FindRequestContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class FindRequestContext" />
+  <TypeSignature Language="F#" Value="type FindRequestContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindRequestContext.#ctor(System.ServiceModel.Discovery.FindCriteria)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (criteria As FindCriteria)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FindRequestContext(System::ServiceModel::Discovery::FindCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.FindRequestContext : System.ServiceModel.Discovery.FindCriteria -&gt; System.ServiceModel.Discovery.FindRequestContext" Usage="new System.ServiceModel.Discovery.FindRequestContext criteria" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddMatchingEndpoint (matchingEndpoint As EndpointDiscoveryMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMatchingEndpoint(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ matchingEndpoint);" />
+      <MemberSignature Language="F#" Value="member this.AddMatchingEndpoint : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; unit" Usage="findRequestContext.AddMatchingEndpoint matchingEndpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindRequestContext.Criteria" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Criteria As FindCriteria" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::FindCriteria ^ Criteria { System::ServiceModel::Discovery::FindCriteria ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Criteria : System.ServiceModel.Discovery.FindCriteria" Usage="System.ServiceModel.Discovery.FindRequestContext.Criteria" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindRequestContext.OnAddMatchingEndpoint(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAddMatchingEndpoint (matchingEndpoint As EndpointDiscoveryMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAddMatchingEndpoint(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ matchingEndpoint);" />
+      <MemberSignature Language="F#" Value="abstract member OnAddMatchingEndpoint : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; unit&#xA;override this.OnAddMatchingEndpoint : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; unit" Usage="findRequestContext.OnAddMatchingEndpoint matchingEndpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class DataAnnotationsModelValidatorProvider&#xA;Inherits AssociatedValidatorProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataAnnotationsModelValidatorProvider : System::Web::ModelBinding::AssociatedValidatorProvider" />
+  <TypeSignature Language="F#" Value="type DataAnnotationsModelValidatorProvider = class&#xA;    inherit AssociatedValidatorProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.AddImplicitRequiredAttributeForValueTypes" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property AddImplicitRequiredAttributeForValueTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AddImplicitRequiredAttributeForValueTypes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AddImplicitRequiredAttributeForValueTypes : bool with get, set" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.AddImplicitRequiredAttributeForValueTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.GetValidators(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.Collections.Generic.IEnumerable{System.Attribute})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetValidators (metadata As ModelMetadata, context As ModelBindingExecutionContext, attributes As IEnumerable(Of Attribute)) As IEnumerable(Of ModelValidator)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelValidator ^&gt; ^ GetValidators(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="override this.GetValidators : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext * seq&lt;Attribute&gt; -&gt; seq&lt;System.Web.ModelBinding.ModelValidator&gt;" Usage="dataAnnotationsModelValidatorProvider.GetValidators (metadata, context, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterAdapter(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterAdapter (attributeType As Type, adapterType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterAdapter(Type ^ attributeType, Type ^ adapterType);" />
+      <MemberSignature Language="F#" Value="static member RegisterAdapter : Type * Type -&gt; unit" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterAdapter (attributeType, adapterType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterAdapterFactory(System.Type,System.Web.ModelBinding.DataAnnotationsModelValidationFactory)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterAdapterFactory (attributeType As Type, factory As DataAnnotationsModelValidationFactory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterAdapterFactory(Type ^ attributeType, System::Web::ModelBinding::DataAnnotationsModelValidationFactory ^ factory);" />
+      <MemberSignature Language="F#" Value="static member RegisterAdapterFactory : Type * System.Web.ModelBinding.DataAnnotationsModelValidationFactory -&gt; unit" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterAdapterFactory (attributeType, factory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterDefaultAdapter(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterDefaultAdapter (adapterType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterDefaultAdapter(Type ^ adapterType);" />
+      <MemberSignature Language="F#" Value="static member RegisterDefaultAdapter : Type -&gt; unit" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterDefaultAdapter adapterType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterDefaultAdapterFactory(System.Web.ModelBinding.DataAnnotationsModelValidationFactory)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterDefaultAdapterFactory (factory As DataAnnotationsModelValidationFactory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterDefaultAdapterFactory(System::Web::ModelBinding::DataAnnotationsModelValidationFactory ^ factory);" />
+      <MemberSignature Language="F#" Value="static member RegisterDefaultAdapterFactory : System.Web.ModelBinding.DataAnnotationsModelValidationFactory -&gt; unit" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterDefaultAdapterFactory factory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapter(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterDefaultValidatableObjectAdapter (adapterType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterDefaultValidatableObjectAdapter(Type ^ adapterType);" />
+      <MemberSignature Language="F#" Value="static member RegisterDefaultValidatableObjectAdapter : Type -&gt; unit" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapter adapterType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapterFactory(System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterDefaultValidatableObjectAdapterFactory (factory As DataAnnotationsValidatableObjectAdapterFactory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterDefaultValidatableObjectAdapterFactory(System::Web::ModelBinding::DataAnnotationsValidatableObjectAdapterFactory ^ factory);" />
+      <MemberSignature Language="F#" Value="static member RegisterDefaultValidatableObjectAdapterFactory : System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory -&gt; unit" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapterFactory factory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapter(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterValidatableObjectAdapter (modelType As Type, adapterType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterValidatableObjectAdapter(Type ^ modelType, Type ^ adapterType);" />
+      <MemberSignature Language="F#" Value="static member RegisterValidatableObjectAdapter : Type * Type -&gt; unit" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapter (modelType, adapterType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -269,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapterFactory(System.Type,System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterValidatableObjectAdapterFactory (modelType As Type, factory As DataAnnotationsValidatableObjectAdapterFactory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterValidatableObjectAdapterFactory(Type ^ modelType, System::Web::ModelBinding::DataAnnotationsValidatableObjectAdapterFactory ^ factory);" />
+      <MemberSignature Language="F#" Value="static member RegisterValidatableObjectAdapterFactory : Type * System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory -&gt; unit" Usage="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapterFactory (modelType, factory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

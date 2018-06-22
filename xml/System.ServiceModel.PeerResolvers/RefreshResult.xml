@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.RefreshResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum RefreshResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class RefreshResult" />
+  <TypeSignature Language="F#" Value="type RefreshResult = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.RefreshResult.RegistrationNotFound" />
       <MemberSignature Language="VB.NET" Value="RegistrationNotFound" />
       <MemberSignature Language="C++ CLI" Value="RegistrationNotFound" />
+      <MemberSignature Language="F#" Value="RegistrationNotFound = 1" Usage="System.ServiceModel.PeerResolvers.RefreshResult.RegistrationNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.RefreshResult.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="C++ CLI" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.ServiceModel.PeerResolvers.RefreshResult.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

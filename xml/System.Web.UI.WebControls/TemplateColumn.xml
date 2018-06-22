@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TemplateColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplateColumn&#xA;Inherits DataGridColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateColumn : System::Web::UI::WebControls::DataGridColumn" />
+  <TypeSignature Language="F#" Value="type TemplateColumn = class&#xA;    inherit DataGridColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditItemTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ EditItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EditItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FooterTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ FooterTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FooterTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ HeaderTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -231,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeCell (cell As TableCell, columnIndex As Integer, itemType As ListItemType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeCell(System::Web::UI::WebControls::TableCell ^ cell, int columnIndex, System::Web::UI::WebControls::ListItemType itemType);" />
+      <MemberSignature Language="F#" Value="override this.InitializeCell : System.Web.UI.WebControls.TableCell * int * System.Web.UI.WebControls.ListItemType -&gt; unit" Usage="templateColumn.InitializeCell (cell, columnIndex, itemType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

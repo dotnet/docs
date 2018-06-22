@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.PropertyPosition" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyPosition" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyPosition" />
+  <TypeSignature Language="F#" Value="type PropertyPosition = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.PropertyPosition.UseExistingOrCreateAfterLastImport" />
       <MemberSignature Language="VB.NET" Value="UseExistingOrCreateAfterLastImport" />
       <MemberSignature Language="C++ CLI" Value="UseExistingOrCreateAfterLastImport" />
+      <MemberSignature Language="F#" Value="UseExistingOrCreateAfterLastImport = 1" Usage="Microsoft.Build.BuildEngine.PropertyPosition.UseExistingOrCreateAfterLastImport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.PropertyPosition.UseExistingOrCreateAfterLastPropertyGroup" />
       <MemberSignature Language="VB.NET" Value="UseExistingOrCreateAfterLastPropertyGroup" />
       <MemberSignature Language="C++ CLI" Value="UseExistingOrCreateAfterLastPropertyGroup" />
+      <MemberSignature Language="F#" Value="UseExistingOrCreateAfterLastPropertyGroup = 0" Usage="Microsoft.Build.BuildEngine.PropertyPosition.UseExistingOrCreateAfterLastPropertyGroup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

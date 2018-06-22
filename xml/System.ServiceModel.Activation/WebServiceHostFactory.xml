@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.WebServiceHostFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class WebServiceHostFactory&#xA;Inherits ServiceHostFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebServiceHostFactory : System::ServiceModel::Activation::ServiceHostFactory" />
+  <TypeSignature Language="F#" Value="type WebServiceHostFactory = class&#xA;    inherit ServiceHostFactory" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.WebServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateServiceHost (serviceType As Type, baseAddresses As Uri()) As ServiceHost" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::ServiceHost ^ CreateServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : Type * Uri[] -&gt; System.ServiceModel.ServiceHost" Usage="webServiceHostFactory.CreateServiceHost (serviceType, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

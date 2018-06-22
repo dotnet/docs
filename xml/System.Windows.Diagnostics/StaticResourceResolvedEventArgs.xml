@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.StaticResourceResolvedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StaticResourceResolvedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StaticResourceResolvedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type StaticResourceResolvedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.StaticResourceResolvedEventArgs.ResourceDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceDictionary As ResourceDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionary ^ ResourceDictionary { System::Windows::ResourceDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceDictionary : System.Windows.ResourceDictionary" Usage="System.Windows.Diagnostics.StaticResourceResolvedEventArgs.ResourceDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.StaticResourceResolvedEventArgs.ResourceKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceKey As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ResourceKey { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceKey : obj" Usage="System.Windows.Diagnostics.StaticResourceResolvedEventArgs.ResourceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.StaticResourceResolvedEventArgs.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TargetObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : obj" Usage="System.Windows.Diagnostics.StaticResourceResolvedEventArgs.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.StaticResourceResolvedEventArgs.TargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetProperty As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TargetProperty { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetProperty : obj" Usage="System.Windows.Diagnostics.StaticResourceResolvedEventArgs.TargetProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

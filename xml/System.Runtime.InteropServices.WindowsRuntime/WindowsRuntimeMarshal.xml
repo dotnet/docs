@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsRuntimeMarshal" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsRuntimeMarshal abstract sealed" />
+  <TypeSignature Language="F#" Value="type WindowsRuntimeMarshal = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.AddEventHandler``1(System.Func{``0,System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddEventHandler(Of T) (addMethod As Func(Of T, EventRegistrationToken), removeMethod As Action(Of EventRegistrationToken), handler As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void AddEventHandler(Func&lt;T, System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken&gt; ^ addMethod, Action&lt;System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken&gt; ^ removeMethod, T handler);" />
+      <MemberSignature Language="F#" Value="static member AddEventHandler : Func&lt;'T, System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken&gt; * Action&lt;System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken&gt; * 'T -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.AddEventHandler (addMethod, removeMethod, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub FreeHString (ptr As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FreeHString(IntPtr ptr);" />
+      <MemberSignature Language="F#" Value="static member FreeHString : nativeint -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString ptr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.InteropServices.WindowsRuntime.IActivationFactory GetActivationFactory(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.GetActivationFactory(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::WindowsRuntime::IActivationFactory ^ GetActivationFactory(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetActivationFactory : Type -&gt; System.Runtime.InteropServices.WindowsRuntime.IActivationFactory" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.GetActivationFactory type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.PtrToStringHString(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PtrToStringHString (ptr As IntPtr) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PtrToStringHString(IntPtr ptr);" />
+      <MemberSignature Language="F#" Value="static member PtrToStringHString : nativeint -&gt; string" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.PtrToStringHString ptr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveAllEventHandlers(System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveAllEventHandlers (removeMethod As Action(Of EventRegistrationToken))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveAllEventHandlers(Action&lt;System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken&gt; ^ removeMethod);" />
+      <MemberSignature Language="F#" Value="static member RemoveAllEventHandlers : Action&lt;System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken&gt; -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveAllEventHandlers removeMethod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveEventHandler``1(System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveEventHandler(Of T) (removeMethod As Action(Of EventRegistrationToken), handler As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void RemoveEventHandler(Action&lt;System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken&gt; ^ removeMethod, T handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveEventHandler : Action&lt;System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken&gt; * 'T -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveEventHandler (removeMethod, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.StringToHString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StringToHString (s As String) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr StringToHString(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member StringToHString : string -&gt; nativeint" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.StringToHString s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>

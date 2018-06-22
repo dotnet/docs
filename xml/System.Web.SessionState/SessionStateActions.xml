@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateActions" />
   <TypeSignature Language="VB.NET" Value="Public Enum SessionStateActions" />
   <TypeSignature Language="C++ CLI" Value="public enum class SessionStateActions" />
+  <TypeSignature Language="F#" Value="type SessionStateActions = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateActions.InitializeItem" />
       <MemberSignature Language="VB.NET" Value="InitializeItem" />
       <MemberSignature Language="C++ CLI" Value="InitializeItem" />
+      <MemberSignature Language="F#" Value="InitializeItem = 1" Usage="System.Web.SessionState.SessionStateActions.InitializeItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateActions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.SessionState.SessionStateActions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

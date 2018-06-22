@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ITransportTokenAssertionProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITransportTokenAssertionProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITransportTokenAssertionProvider" />
+  <TypeSignature Language="F#" Value="type ITransportTokenAssertionProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ITransportTokenAssertionProvider.GetTransportTokenAssertion" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTransportTokenAssertion () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetTransportTokenAssertion();" />
+      <MemberSignature Language="F#" Value="abstract member GetTransportTokenAssertion : unit -&gt; System.Xml.XmlElement" Usage="iTransportTokenAssertionProvider.GetTransportTokenAssertion " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.TickMarkStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum TickMarkStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class TickMarkStyle" />
+  <TypeSignature Language="F#" Value="type TickMarkStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis" />
       <MemberSignature Language="VB.NET" Value="AcrossAxis" />
       <MemberSignature Language="C++ CLI" Value="AcrossAxis" />
+      <MemberSignature Language="F#" Value="AcrossAxis = 3" Usage="System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.InsideArea" />
       <MemberSignature Language="VB.NET" Value="InsideArea" />
       <MemberSignature Language="C++ CLI" Value="InsideArea" />
+      <MemberSignature Language="F#" Value="InsideArea = 2" Usage="System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.InsideArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.OutsideArea" />
       <MemberSignature Language="VB.NET" Value="OutsideArea" />
       <MemberSignature Language="C++ CLI" Value="OutsideArea" />
+      <MemberSignature Language="F#" Value="OutsideArea = 1" Usage="System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.OutsideArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

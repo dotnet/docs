@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.GetPageNumberCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class GetPageNumberCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class GetPageNumberCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type GetPageNumberCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.ContentPosition contentPosition, int32 pageNumber, class System.Exception error, bool cancelled, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.GetPageNumberCompletedEventArgs.#ctor(System.Windows.Documents.ContentPosition,System.Int32,System.Exception,System.Boolean,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GetPageNumberCompletedEventArgs(System::Windows::Documents::ContentPosition ^ contentPosition, int pageNumber, Exception ^ error, bool cancelled, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.GetPageNumberCompletedEventArgs : System.Windows.Documents.ContentPosition * int * Exception * bool * obj -&gt; System.Windows.Documents.GetPageNumberCompletedEventArgs" Usage="new System.Windows.Documents.GetPageNumberCompletedEventArgs (contentPosition, pageNumber, error, cancelled, userState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.GetPageNumberCompletedEventArgs.ContentPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentPosition As ContentPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::ContentPosition ^ ContentPosition { System::Windows::Documents::ContentPosition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentPosition : System.Windows.Documents.ContentPosition" Usage="System.Windows.Documents.GetPageNumberCompletedEventArgs.ContentPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.GetPageNumberCompletedEventArgs.PageNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageNumber : int" Usage="System.Windows.Documents.GetPageNumberCompletedEventArgs.PageNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

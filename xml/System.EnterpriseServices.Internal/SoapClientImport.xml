@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.SoapClientImport" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapClientImport&#xA;Implements ISoapClientImport" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapClientImport sealed : System::EnterpriseServices::Internal::ISoapClientImport" />
+  <TypeSignature Language="F#" Value="type SoapClientImport = class&#xA;    interface ISoapClientImport" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapClientImport.ProcessClientTlbEx(System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessClientTlbEx (progId As String, virtualRoot As String, baseUrl As String, authentication As String, assemblyName As String, typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessClientTlbEx(System::String ^ progId, System::String ^ virtualRoot, System::String ^ baseUrl, System::String ^ authentication, System::String ^ assemblyName, System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessClientTlbEx : string * string * string * string * string * string -&gt; unit&#xA;override this.ProcessClientTlbEx : string * string * string * string * string * string -&gt; unit" Usage="soapClientImport.ProcessClientTlbEx (progId, virtualRoot, baseUrl, authentication, assemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapClientImport.ProcessClientTlbEx(System.String,System.String,System.String,System.String,System.String,System.String)</InterfaceMember>

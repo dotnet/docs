@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.DoubleType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DoubleType" />
   <TypeSignature Language="C++ CLI" Value="public ref class DoubleType sealed" />
+  <TypeSignature Language="F#" Value="type DoubleType = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromObject(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj -&gt; double" Usage="Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject(System.Object,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object, NumberFormat As NumberFormatInfo) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromObject(System::Object ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj * System.Globalization.NumberFormatInfo -&gt; double" Usage="Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.FromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromString(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; double" Usage="Microsoft.VisualBasic.CompilerServices.DoubleType.FromString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.FromString(System.String,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String, NumberFormat As NumberFormatInfo) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromString(System::String ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member FromString : string * System.Globalization.NumberFormatInfo -&gt; double" Usage="Microsoft.VisualBasic.CompilerServices.DoubleType.FromString (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (Value As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Parse(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; double" Usage="Microsoft.VisualBasic.CompilerServices.DoubleType.Parse Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DoubleType.Parse(System.String,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (Value As String, NumberFormat As NumberFormatInfo) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Parse(System::String ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.NumberFormatInfo -&gt; double" Usage="Microsoft.VisualBasic.CompilerServices.DoubleType.Parse (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

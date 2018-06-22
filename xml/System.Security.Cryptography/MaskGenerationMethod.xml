@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MaskGenerationMethod" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MaskGenerationMethod" />
   <TypeSignature Language="C++ CLI" Value="public ref class MaskGenerationMethod abstract" />
+  <TypeSignature Language="F#" Value="type MaskGenerationMethod = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MaskGenerationMethod.GenerateMask(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GenerateMask (rgbSeed As Byte(), cbReturn As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ GenerateMask(cli::array &lt;System::Byte&gt; ^ rgbSeed, int cbReturn);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateMask : byte[] * int -&gt; byte[]" Usage="maskGenerationMethod.GenerateMask (rgbSeed, cbReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.MetadataProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataProperty&#xA;Inherits MetadataItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataProperty sealed : System::Data::Metadata::Edm::MetadataItem" />
+  <TypeSignature Language="F#" Value="type MetadataProperty = class&#xA;    inherit MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataProperty.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.MetadataProperty.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Metadata.Edm.MetadataProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataProperty.PropertyKind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyKind As PropertyKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::PropertyKind PropertyKind { System::Data::Metadata::Edm::PropertyKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyKind : System.Data.Metadata.Edm.PropertyKind" Usage="System.Data.Metadata.Edm.MetadataProperty.PropertyKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataProperty.TypeUsage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeUsage As TypeUsage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::TypeUsage ^ TypeUsage { System::Data::Metadata::Edm::TypeUsage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeUsage : System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.MetadataProperty.TypeUsage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Data.Metadata.Edm.MetadataProperty.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

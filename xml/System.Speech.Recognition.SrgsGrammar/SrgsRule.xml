@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsRule" />
+  <TypeSignature Language="F#" Value="type SrgsRule = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRule.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRule(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRule : string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRule" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRule id" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -137,6 +139,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRule.#ctor(System.String,System.Speech.Recognition.SrgsGrammar.SrgsElement[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, ParamArray elements As SrgsElement())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRule(System::String ^ id, ... cli::array &lt;System::Speech::Recognition::SrgsGrammar::SrgsElement ^&gt; ^ elements);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRule : string * System.Speech.Recognition.SrgsGrammar.SrgsElement[] -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRule" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRule (id, elements)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -256,6 +259,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRule.Add(System.Speech.Recognition.SrgsGrammar.SrgsElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As SrgsElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Speech::Recognition::SrgsGrammar::SrgsElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Speech.Recognition.SrgsGrammar.SrgsElement -&gt; unit" Usage="srgsRule.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -322,6 +326,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.BaseClass" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseClass As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseClass { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseClass : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.BaseClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -342,6 +347,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elements As Collection(Of SrgsElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Speech::Recognition::SrgsGrammar::SrgsElement ^&gt; ^ Elements { System::Collections::ObjectModel::Collection&lt;System::Speech::Recognition::SrgsGrammar::SrgsElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Elements : System.Collections.ObjectModel.Collection&lt;System.Speech.Recognition.SrgsGrammar.SrgsElement&gt;" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -369,6 +375,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -405,6 +412,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnError" />
       <MemberSignature Language="VB.NET" Value="Public Property OnError As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnError { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OnError : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.OnError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -425,6 +433,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnInit" />
       <MemberSignature Language="VB.NET" Value="Public Property OnInit As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnInit { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OnInit : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.OnInit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -445,6 +454,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnParse" />
       <MemberSignature Language="VB.NET" Value="Public Property OnParse As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnParse { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OnParse : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.OnParse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -465,6 +475,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnRecognition" />
       <MemberSignature Language="VB.NET" Value="Public Property OnRecognition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnRecognition { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OnRecognition : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.OnRecognition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -485,6 +496,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As SrgsRuleScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SrgsGrammar::SrgsRuleScope Scope { System::Speech::Recognition::SrgsGrammar::SrgsRuleScope get(); void set(System::Speech::Recognition::SrgsGrammar::SrgsRuleScope value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Speech.Recognition.SrgsGrammar.SrgsRuleScope with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -578,6 +590,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.Script" />
       <MemberSignature Language="VB.NET" Value="Public Property Script As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Script { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Script : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRule.Script" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

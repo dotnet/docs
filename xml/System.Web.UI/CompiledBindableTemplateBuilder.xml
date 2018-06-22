@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.CompiledBindableTemplateBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompiledBindableTemplateBuilder&#xA;Implements IBindableTemplate" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompiledBindableTemplateBuilder sealed : System::Web::UI::IBindableTemplate" />
+  <TypeSignature Language="F#" Value="type CompiledBindableTemplateBuilder = class&#xA;    interface IBindableTemplate&#xA;    interface ITemplate" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.BuildTemplateMethod buildTemplateMethod, class System.Web.UI.ExtractTemplateValuesMethod extractTemplateValuesMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CompiledBindableTemplateBuilder.#ctor(System.Web.UI.BuildTemplateMethod,System.Web.UI.ExtractTemplateValuesMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompiledBindableTemplateBuilder(System::Web::UI::BuildTemplateMethod ^ buildTemplateMethod, System::Web::UI::ExtractTemplateValuesMethod ^ extractTemplateValuesMethod);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.CompiledBindableTemplateBuilder : System.Web.UI.BuildTemplateMethod * System.Web.UI.ExtractTemplateValuesMethod -&gt; System.Web.UI.CompiledBindableTemplateBuilder" Usage="new System.Web.UI.CompiledBindableTemplateBuilder (buildTemplateMethod, extractTemplateValuesMethod)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CompiledBindableTemplateBuilder.ExtractValues(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExtractValues (container As Control) As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Specialized::IOrderedDictionary ^ ExtractValues(System::Web::UI::Control ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member ExtractValues : System.Web.UI.Control -&gt; System.Collections.Specialized.IOrderedDictionary&#xA;override this.ExtractValues : System.Web.UI.Control -&gt; System.Collections.Specialized.IOrderedDictionary" Usage="compiledBindableTemplateBuilder.ExtractValues container" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IBindableTemplate.ExtractValues(System.Web.UI.Control)</InterfaceMember>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstantiateIn (container As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InstantiateIn(System::Web::UI::Control ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member InstantiateIn : System.Web.UI.Control -&gt; unit&#xA;override this.InstantiateIn : System.Web.UI.Control -&gt; unit" Usage="compiledBindableTemplateBuilder.InstantiateIn container" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)</InterfaceMember>

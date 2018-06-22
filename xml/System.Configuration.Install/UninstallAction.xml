@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.UninstallAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum UninstallAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class UninstallAction" />
+  <TypeSignature Language="F#" Value="type UninstallAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.Install.UninstallAction.NoAction" />
       <MemberSignature Language="VB.NET" Value="NoAction" />
       <MemberSignature Language="C++ CLI" Value="NoAction" />
+      <MemberSignature Language="F#" Value="NoAction = 1" Usage="System.Configuration.Install.UninstallAction.NoAction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.Install.UninstallAction.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
       <MemberSignature Language="C++ CLI" Value="Remove" />
+      <MemberSignature Language="F#" Value="Remove = 0" Usage="System.Configuration.Install.UninstallAction.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InvalidateEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InvalidateEventHandler(sender As Object, e As InvalidateEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InvalidateEventHandler(System::Object ^ sender, InvalidateEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InvalidateEventHandler = delegate of obj * InvalidateEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

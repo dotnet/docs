@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ConditionalEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConditionalEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConditionalEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ConditionalEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionalEventArgs.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (result As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConditionalEventArgs(bool result);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.ConditionalEventArgs : bool -&gt; System.Workflow.Activities.ConditionalEventArgs" Usage="new System.Workflow.Activities.ConditionalEventArgs result" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ConditionalEventArgs.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Result { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : bool with get, set" Usage="System.Workflow.Activities.ConditionalEventArgs.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

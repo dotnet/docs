@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseReference abstract" />
+  <TypeSignature Language="F#" Value="type BaseReference = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; BaseReference(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.Group" />
       <MemberSignature Language="VB.NET" Value="Public Property Group As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Group { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Group : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.Hash" />
       <MemberSignature Language="VB.NET" Value="Public Property Hash As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Hash { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Hash : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.Hash" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.IsOptional" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOptional { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.ResolvedPath" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResolvedPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedPath : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.ResolvedPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Size { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int64 with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.SortName" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property SortName As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property System::String ^ SortName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortName : string" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.SortName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -226,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.SourcePath" />
       <MemberSignature Language="VB.NET" Value="Public Property SourcePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourcePath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourcePath : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.SourcePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.TargetPath" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetPath : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.TargetPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -276,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="baseReference.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -297,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlGroup : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -328,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlHash" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlHash As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlHash { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlHash : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlHash" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -359,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlHashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlHashAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlHashAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlHashAlgorithm : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlHashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -390,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlIsOptional" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlIsOptional As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlIsOptional { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlIsOptional : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlIsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -421,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlPath" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlPath : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -452,6 +468,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlSize" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlSize As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSize { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSize : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.XmlSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

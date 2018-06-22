@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ISoapServerTlb" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISoapServerTlb" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISoapServerTlb" />
+  <TypeSignature Language="F#" Value="type ISoapServerTlb = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddServerTlb (progId As String, classId As String, interfaceId As String, srcTlbPath As String, rootWebServer As String, baseUrl As String, virtualRoot As String, clientActivated As String, wellKnown As String, discoFile As String, operation As String, ByRef assemblyName As String, ByRef typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddServerTlb(System::String ^ progId, System::String ^ classId, System::String ^ interfaceId, System::String ^ srcTlbPath, System::String ^ rootWebServer, System::String ^ baseUrl, System::String ^ virtualRoot, System::String ^ clientActivated, System::String ^ wellKnown, System::String ^ discoFile, System::String ^ operation, [Runtime::InteropServices::Out] System::String ^ % assemblyName, [Runtime::InteropServices::Out] System::String ^ % typeName);" />
+      <MemberSignature Language="F#" Value="abstract member AddServerTlb : string * string * string * string * string * string * string * string * string * string * string *  *  -&gt; unit" Usage="iSoapServerTlb.AddServerTlb (progId, classId, interfaceId, srcTlbPath, rootWebServer, baseUrl, virtualRoot, clientActivated, wellKnown, discoFile, operation, assemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerTlb.DeleteServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteServerTlb (progId As String, classId As String, interfaceId As String, srcTlbPath As String, rootWebServer As String, baseUrl As String, virtualRoot As String, operation As String, assemblyName As String, typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteServerTlb(System::String ^ progId, System::String ^ classId, System::String ^ interfaceId, System::String ^ srcTlbPath, System::String ^ rootWebServer, System::String ^ baseUrl, System::String ^ virtualRoot, System::String ^ operation, System::String ^ assemblyName, System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteServerTlb : string * string * string * string * string * string * string * string * string * string -&gt; unit" Usage="iSoapServerTlb.DeleteServerTlb (progId, classId, interfaceId, srcTlbPath, rootWebServer, baseUrl, virtualRoot, operation, assemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

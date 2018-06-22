@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAll" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaAll&#xA;Inherits XmlSchemaGroupBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaAll : System::Xml::Schema::XmlSchemaGroupBase" />
+  <TypeSignature Language="F#" Value="type XmlSchemaAll = class&#xA;    inherit XmlSchemaGroupBase" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAll.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Items As XmlSchemaObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::XmlSchemaObjectCollection ^ Items { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaAll.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

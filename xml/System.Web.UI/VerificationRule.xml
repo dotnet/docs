@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationRule" />
   <TypeSignature Language="VB.NET" Value="Public Enum VerificationRule" />
   <TypeSignature Language="C++ CLI" Value="public enum class VerificationRule" />
+  <TypeSignature Language="F#" Value="type VerificationRule = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationRule.NotEmptyString" />
       <MemberSignature Language="VB.NET" Value="NotEmptyString" />
       <MemberSignature Language="C++ CLI" Value="NotEmptyString" />
+      <MemberSignature Language="F#" Value="NotEmptyString = 2" Usage="System.Web.UI.VerificationRule.NotEmptyString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationRule.Prohibited" />
       <MemberSignature Language="VB.NET" Value="Prohibited" />
       <MemberSignature Language="C++ CLI" Value="Prohibited" />
+      <MemberSignature Language="F#" Value="Prohibited = 1" Usage="System.Web.UI.VerificationRule.Prohibited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationRule.Required" />
       <MemberSignature Language="VB.NET" Value="Required" />
       <MemberSignature Language="C++ CLI" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 0" Usage="System.Web.UI.VerificationRule.Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.CallbackDebugBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class CallbackDebugBehavior&#xA;Implements IEndpointBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class CallbackDebugBehavior : System::ServiceModel::Description::IEndpointBehavior" />
+  <TypeSignature Language="F#" Value="type CallbackDebugBehavior = class&#xA;    interface IEndpointBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.CallbackDebugBehavior.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (includeExceptionDetailInFaults As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CallbackDebugBehavior(bool includeExceptionDetailInFaults);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.CallbackDebugBehavior : bool -&gt; System.ServiceModel.Description.CallbackDebugBehavior" Usage="new System.ServiceModel.Description.CallbackDebugBehavior includeExceptionDetailInFaults" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeExceptionDetailInFaults { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

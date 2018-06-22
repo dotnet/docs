@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryRequest" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DirectoryRequest&#xA;Inherits DirectoryOperation" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryRequest abstract : System::DirectoryServices::Protocols::DirectoryOperation" />
+  <TypeSignature Language="F#" Value="type DirectoryRequest = class&#xA;    inherit DirectoryOperation" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryRequest.Controls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As DirectoryControlCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DirectoryControlCollection ^ Controls { System::DirectoryServices::Protocols::DirectoryControlCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.DirectoryServices.Protocols.DirectoryControlCollection" Usage="System.DirectoryServices.Protocols.DirectoryRequest.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryRequest.RequestId" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestId : string with get, set" Usage="System.DirectoryServices.Protocols.DirectoryRequest.RequestId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryRequest.ToXmlNode(System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ToXmlNode (doc As XmlDocument) As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Xml::XmlElement ^ ToXmlNode(System::Xml::XmlDocument ^ doc);" />
+      <MemberSignature Language="F#" Value="abstract member ToXmlNode : System.Xml.XmlDocument -&gt; System.Xml.XmlElement" Usage="directoryRequest.ToXmlNode doc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

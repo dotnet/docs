@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AssemblyInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyInfo&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyInfo sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type AssemblyInfo = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AssemblyInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyInfo(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.AssemblyInfo : string -&gt; System.Web.Configuration.AssemblyInfo" Usage="new System.Web.Configuration.AssemblyInfo assemblyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AssemblyInfo.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Property Assembly As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Assembly { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : string with get, set" Usage="System.Web.Configuration.AssemblyInfo.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AssemblyInfo.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.AssemblyInfo.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

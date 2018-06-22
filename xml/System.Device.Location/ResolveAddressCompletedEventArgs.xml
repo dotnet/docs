@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Device.Location.ResolveAddressCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveAddressCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveAddressCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type ResolveAddressCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Device.Location.ResolveAddressCompletedEventArgs.#ctor(System.Device.Location.CivicAddress,System.Exception,System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As CivicAddress, error As Exception, cancelled As Boolean, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveAddressCompletedEventArgs(System::Device::Location::CivicAddress ^ address, Exception ^ error, bool cancelled, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="new System.Device.Location.ResolveAddressCompletedEventArgs : System.Device.Location.CivicAddress * Exception * bool * obj -&gt; System.Device.Location.ResolveAddressCompletedEventArgs" Usage="new System.Device.Location.ResolveAddressCompletedEventArgs (address, error, cancelled, userState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Device.Location.ResolveAddressCompletedEventArgs.Address" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As CivicAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Device::Location::CivicAddress ^ Address { System::Device::Location::CivicAddress ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Address : System.Device.Location.CivicAddress" Usage="System.Device.Location.ResolveAddressCompletedEventArgs.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>

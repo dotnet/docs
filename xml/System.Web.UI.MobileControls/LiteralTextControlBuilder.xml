@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LiteralTextControlBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class LiteralTextControlBuilder&#xA;Inherits MobileControlBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class LiteralTextControlBuilder : System::Web::UI::MobileControls::MobileControlBuilder" />
+  <TypeSignature Language="F#" Value="type LiteralTextControlBuilder = class&#xA;    inherit MobileControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.LiteralTextControlBuilder.AllowWhitespaceLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
+      <MemberSignature Language="F#" Value="override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="literalTextControlBuilder.AllowWhitespaceLiterals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

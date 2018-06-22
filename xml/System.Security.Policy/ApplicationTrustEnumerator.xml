@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationTrustEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationTrustEnumerator&#xA;Implements IEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationTrustEnumerator sealed : System::Collections::IEnumerator" />
+  <TypeSignature Language="F#" Value="type ApplicationTrustEnumerator = class&#xA;    interface IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrustEnumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As ApplicationTrust" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::ApplicationTrust ^ Current { System::Security::Policy::ApplicationTrust ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Security.Policy.ApplicationTrust" Usage="System.Security.Policy.ApplicationTrustEnumerator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustEnumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="applicationTrustEnumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustEnumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="applicationTrustEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrustEnumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Security.Policy.ApplicationTrustEnumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

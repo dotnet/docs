@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PenType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PenType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PenType" />
+  <TypeSignature Language="F#" Value="type PenType = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.HatchFill" />
       <MemberSignature Language="VB.NET" Value="HatchFill" />
       <MemberSignature Language="C++ CLI" Value="HatchFill" />
+      <MemberSignature Language="F#" Value="HatchFill = 1" Usage="System.Drawing.Drawing2D.PenType.HatchFill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.LinearGradient" />
       <MemberSignature Language="VB.NET" Value="LinearGradient" />
       <MemberSignature Language="C++ CLI" Value="LinearGradient" />
+      <MemberSignature Language="F#" Value="LinearGradient = 4" Usage="System.Drawing.Drawing2D.PenType.LinearGradient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.PathGradient" />
       <MemberSignature Language="VB.NET" Value="PathGradient" />
       <MemberSignature Language="C++ CLI" Value="PathGradient" />
+      <MemberSignature Language="F#" Value="PathGradient = 3" Usage="System.Drawing.Drawing2D.PenType.PathGradient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.SolidColor" />
       <MemberSignature Language="VB.NET" Value="SolidColor" />
       <MemberSignature Language="C++ CLI" Value="SolidColor" />
+      <MemberSignature Language="F#" Value="SolidColor = 0" Usage="System.Drawing.Drawing2D.PenType.SolidColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.TextureFill" />
       <MemberSignature Language="VB.NET" Value="TextureFill" />
       <MemberSignature Language="C++ CLI" Value="TextureFill" />
+      <MemberSignature Language="F#" Value="TextureFill = 2" Usage="System.Drawing.Drawing2D.PenType.TextureFill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataKeysControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataKeysControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataKeysControl" />
+  <TypeSignature Language="F#" Value="type IDataKeysControl = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataKeysControl.ClientIDRowSuffix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientIDRowSuffix As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientIDRowSuffix : string[]" Usage="System.Web.UI.IDataKeysControl.ClientIDRowSuffix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientIDRowSuffixDataKeys As DataKeyArray" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKeyArray ^ ClientIDRowSuffixDataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientIDRowSuffixDataKeys : System.Web.UI.WebControls.DataKeyArray" Usage="System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

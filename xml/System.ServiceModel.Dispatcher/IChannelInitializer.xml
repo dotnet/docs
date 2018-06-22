@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IChannelInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IChannelInitializer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IChannelInitializer" />
+  <TypeSignature Language="F#" Value="type IChannelInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IChannelInitializer.Initialize(System.ServiceModel.IClientChannel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (channel As IClientChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::ServiceModel::IClientChannel ^ channel);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.ServiceModel.IClientChannel -&gt; unit" Usage="iChannelInitializer.Initialize channel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

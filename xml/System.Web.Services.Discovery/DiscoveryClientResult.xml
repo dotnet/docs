@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientResult" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClientResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClientResult sealed" />
+  <TypeSignature Language="F#" Value="type DiscoveryClientResult = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientResult.#ctor(System.Type,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (referenceType As Type, url As String, filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryClientResult(Type ^ referenceType, System::String ^ url, System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Discovery.DiscoveryClientResult : Type * string * string -&gt; System.Web.Services.Discovery.DiscoveryClientResult" Usage="new System.Web.Services.Discovery.DiscoveryClientResult (referenceType, url, filename)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.Filename" />
       <MemberSignature Language="VB.NET" Value="Public Property Filename As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filename { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filename : string with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientResult.Filename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferenceTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReferenceTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceTypeName : string with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.Url" />
       <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientResult.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.PlayRecordCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PlayRecordCallback(recordType As EmfPlusRecordType, flags As Integer, dataSize As Integer, recordData As IntPtr)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PlayRecordCallback(EmfPlusRecordType recordType, int flags, int dataSize, IntPtr recordData);" />
+  <TypeSignature Language="F#" Value="type PlayRecordCallback = delegate of EmfPlusRecordType * int * int * nativeint -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

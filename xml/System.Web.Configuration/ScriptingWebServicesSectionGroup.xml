@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptingWebServicesSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptingWebServicesSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
+  <TypeSignature Language="F#" Value="type ScriptingWebServicesSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingWebServicesSectionGroup.AuthenticationService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationService As ScriptingAuthenticationServiceSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ScriptingAuthenticationServiceSection ^ AuthenticationService { System::Web::Configuration::ScriptingAuthenticationServiceSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationService : System.Web.Configuration.ScriptingAuthenticationServiceSection" Usage="System.Web.Configuration.ScriptingWebServicesSectionGroup.AuthenticationService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingWebServicesSectionGroup.JsonSerialization" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JsonSerialization As ScriptingJsonSerializationSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ScriptingJsonSerializationSection ^ JsonSerialization { System::Web::Configuration::ScriptingJsonSerializationSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.JsonSerialization : System.Web.Configuration.ScriptingJsonSerializationSection" Usage="System.Web.Configuration.ScriptingWebServicesSectionGroup.JsonSerialization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingWebServicesSectionGroup.ProfileService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProfileService As ScriptingProfileServiceSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ScriptingProfileServiceSection ^ ProfileService { System::Web::Configuration::ScriptingProfileServiceSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProfileService : System.Web.Configuration.ScriptingProfileServiceSection" Usage="System.Web.Configuration.ScriptingWebServicesSectionGroup.ProfileService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingWebServicesSectionGroup.RoleService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoleService As ScriptingRoleServiceSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ScriptingRoleServiceSection ^ RoleService { System::Web::Configuration::ScriptingRoleServiceSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RoleService : System.Web.Configuration.ScriptingRoleServiceSection" Usage="System.Web.Configuration.ScriptingWebServicesSectionGroup.RoleService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

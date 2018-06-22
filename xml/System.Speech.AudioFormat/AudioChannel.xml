@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.AudioFormat.AudioChannel" />
   <TypeSignature Language="VB.NET" Value="Public Enum AudioChannel" />
   <TypeSignature Language="C++ CLI" Value="public enum class AudioChannel" />
+  <TypeSignature Language="F#" Value="type AudioChannel = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.AudioChannel.Mono" />
       <MemberSignature Language="VB.NET" Value="Mono" />
       <MemberSignature Language="C++ CLI" Value="Mono" />
+      <MemberSignature Language="F#" Value="Mono = 1" Usage="System.Speech.AudioFormat.AudioChannel.Mono" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.AudioChannel.Stereo" />
       <MemberSignature Language="VB.NET" Value="Stereo" />
       <MemberSignature Language="C++ CLI" Value="Stereo" />
+      <MemberSignature Language="F#" Value="Stereo = 2" Usage="System.Speech.AudioFormat.AudioChannel.Stereo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

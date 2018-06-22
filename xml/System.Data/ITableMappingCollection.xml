@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ITableMappingCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITableMappingCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITableMappingCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type ITableMappingCollection = interface&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (sourceTableName As String, dataSetTableName As String) As ITableMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::ITableMapping ^ Add(System::String ^ sourceTableName, System::String ^ dataSetTableName);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; System.Data.ITableMapping" Usage="iTableMappingCollection.Add (sourceTableName, dataSetTableName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (sourceTableName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ sourceTableName);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool" Usage="iTableMappingCollection.Contains sourceTableName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.GetByDataSetTable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetByDataSetTable (dataSetTableName As String) As ITableMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::ITableMapping ^ GetByDataSetTable(System::String ^ dataSetTableName);" />
+      <MemberSignature Language="F#" Value="abstract member GetByDataSetTable : string -&gt; System.Data.ITableMapping" Usage="iTableMappingCollection.GetByDataSetTable dataSetTableName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (sourceTableName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ sourceTableName);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : string -&gt; int" Usage="iTableMappingCollection.IndexOf sourceTableName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ITableMappingCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ index); void set(System::String ^ index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.ITableMappingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.RemoveAt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (sourceTableName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::String ^ sourceTableName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : string -&gt; unit" Usage="iTableMappingCollection.RemoveAt sourceTableName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

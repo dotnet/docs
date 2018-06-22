@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.ConflictStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConflictStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConflictStatus" />
+  <TypeSignature Language="F#" Value="type ConflictStatus = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.ConflictStatus.ConflictResolved" />
       <MemberSignature Language="VB.NET" Value="ConflictResolved" />
       <MemberSignature Language="C++ CLI" Value="ConflictResolved" />
+      <MemberSignature Language="F#" Value="ConflictResolved = 1" Usage="System.Printing.ConflictStatus.ConflictResolved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.ConflictStatus.NoConflict" />
       <MemberSignature Language="VB.NET" Value="NoConflict" />
       <MemberSignature Language="C++ CLI" Value="NoConflict" />
+      <MemberSignature Language="F#" Value="NoConflict = 0" Usage="System.Printing.ConflictStatus.NoConflict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

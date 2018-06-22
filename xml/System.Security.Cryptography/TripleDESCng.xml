@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.TripleDESCng" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TripleDESCng&#xA;Inherits TripleDES" />
   <TypeSignature Language="C++ CLI" Value="public ref class TripleDESCng sealed : System::Security::Cryptography::TripleDES" />
+  <TypeSignature Language="F#" Value="type TripleDESCng = class&#xA;    inherit TripleDES" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TripleDESCng(System::String ^ keyName);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.TripleDESCng : string -&gt; System.Security.Cryptography.TripleDESCng" Usage="new System.Security.Cryptography.TripleDESCng keyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String,System.Security.Cryptography.CngProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyName As String, provider As CngProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TripleDESCng(System::String ^ keyName, System::Security::Cryptography::CngProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.TripleDESCng : string * System.Security.Cryptography.CngProvider -&gt; System.Security.Cryptography.TripleDESCng" Usage="new System.Security.Cryptography.TripleDESCng (keyName, provider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyName As String, provider As CngProvider, openOptions As CngKeyOpenOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TripleDESCng(System::String ^ keyName, System::Security::Cryptography::CngProvider ^ provider, System::Security::Cryptography::CngKeyOpenOptions openOptions);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.TripleDESCng : string * System.Security.Cryptography.CngProvider * System.Security.Cryptography.CngKeyOpenOptions -&gt; System.Security.Cryptography.TripleDESCng" Usage="new System.Security.Cryptography.TripleDESCng (keyName, provider, openOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -213,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.CreateDecryptor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor () As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor();" />
+      <MemberSignature Language="F#" Value="abstract member CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="tripleDESCng.CreateDecryptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.CreateDecryptor(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="tripleDESCng.CreateDecryptor (rgbKey, rgbIV)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -321,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.CreateEncryptor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor () As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor();" />
+      <MemberSignature Language="F#" Value="abstract member CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="tripleDESCng.CreateEncryptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -359,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.CreateEncryptor(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
+      <MemberSignature Language="F#" Value="abstract member CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="tripleDESCng.CreateEncryptor (rgbKey, rgbIV)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -419,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="tripleDESCng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -452,6 +461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.GenerateIV" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateIV ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateIV();" />
+      <MemberSignature Language="F#" Value="abstract member GenerateIV : unit -&gt; unit&#xA;override this.GenerateIV : unit -&gt; unit" Usage="tripleDESCng.GenerateIV " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -482,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCng.GenerateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateKey ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateKey();" />
+      <MemberSignature Language="F#" Value="abstract member GenerateKey : unit -&gt; unit&#xA;override this.GenerateKey : unit -&gt; unit" Usage="tripleDESCng.GenerateKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -513,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDESCng.Key" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Key As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.TripleDESCng.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -552,6 +564,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDESCng.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property KeySize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySize : int with get, set" Usage="System.Security.Cryptography.TripleDESCng.KeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -589,6 +602,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.TripleDESCng.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.TripleDESCng.LegalKeySizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

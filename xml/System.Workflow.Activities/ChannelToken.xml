@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ChannelToken" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelToken&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelToken sealed : System::Workflow::ComponentModel::DependencyObject" />
+  <TypeSignature Language="F#" Value="type ChannelToken = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ChannelToken.EndpointName" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointName : string with get, set" Usage="System.Workflow.Activities.ChannelToken.EndpointName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ChannelToken.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.ChannelToken.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ChannelToken.OwnerActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnerActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OwnerActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerActivityName : string with get, set" Usage="System.Workflow.Activities.ChannelToken.OwnerActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

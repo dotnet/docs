@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
   <TypeSignature Language="VB.NET" Value="Public Class WebPartVerb&#xA;Implements IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartVerb : System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type WebPartVerb = class&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -124,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerb.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, clientClickHandler As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerb(System::String ^ id, System::String ^ clientClickHandler);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartVerb : string * string -&gt; System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="new System.Web.UI.WebControls.WebParts.WebPartVerb (id, clientClickHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerb.#ctor(System.String,System.Web.UI.WebControls.WebParts.WebPartEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, serverClickHandler As WebPartEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerb(System::String ^ id, System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ serverClickHandler);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartVerb : string * System.Web.UI.WebControls.WebParts.WebPartEventHandler -&gt; System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="new System.Web.UI.WebControls.WebParts.WebPartVerb (id, serverClickHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerb.#ctor(System.String,System.Web.UI.WebControls.WebParts.WebPartEventHandler,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, serverClickHandler As WebPartEventHandler, clientClickHandler As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerb(System::String ^ id, System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ serverClickHandler, System::String ^ clientClickHandler);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartVerb : string * System.Web.UI.WebControls.WebParts.WebPartEventHandler * string -&gt; System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="new System.Web.UI.WebControls.WebParts.WebPartVerb (id, serverClickHandler, clientClickHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ClientClickHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientClickHandler As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientClickHandler { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientClickHandler : string" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.ClientClickHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -345,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,6 +402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -429,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -478,6 +488,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -503,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerb.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="webPartVerb.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -538,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerb.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="webPartVerb.SaveViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -569,6 +582,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ServerClickHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerClickHandler As WebPartEventHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ ServerClickHandler { System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerClickHandler : System.Web.UI.WebControls.WebParts.WebPartEventHandler" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.ServerClickHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -604,6 +618,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -735,6 +750,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -782,6 +798,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerb.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="webPartVerb.TrackViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -812,6 +829,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.ViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ViewState As StateBag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::StateBag ^ ViewState { System::Web::UI::StateBag ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewState : System.Web.UI.StateBag" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.ViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -840,6 +858,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerb.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartVerb.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

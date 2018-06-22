@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.XmlSyntaxException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSyntaxException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSyntaxException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type XmlSyntaxException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.XmlSyntaxException.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lineNumber As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSyntaxException(int lineNumber);" />
+      <MemberSignature Language="F#" Value="new System.Security.XmlSyntaxException : int -&gt; System.Security.XmlSyntaxException" Usage="new System.Security.XmlSyntaxException lineNumber" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.XmlSyntaxException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSyntaxException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Security.XmlSyntaxException : string -&gt; System.Security.XmlSyntaxException" Usage="new System.Security.XmlSyntaxException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.XmlSyntaxException.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lineNumber As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSyntaxException(int lineNumber, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Security.XmlSyntaxException : int * string -&gt; System.Security.XmlSyntaxException" Usage="new System.Security.XmlSyntaxException (lineNumber, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.XmlSyntaxException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSyntaxException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Security.XmlSyntaxException : string * Exception -&gt; System.Security.XmlSyntaxException" Usage="new System.Security.XmlSyntaxException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

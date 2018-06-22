@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsPrincipal" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsPrincipal&#xA;Inherits ClaimsPrincipal" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsPrincipal : System::Security::Claims::ClaimsPrincipal" />
+  <TypeSignature Language="F#" Value="type WindowsPrincipal = class&#xA;    inherit ClaimsPrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.#ctor(System.Security.Principal.WindowsIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ntIdentity As WindowsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsPrincipal(System::Security::Principal::WindowsIdentity ^ ntIdentity);" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsPrincipal : System.Security.Principal.WindowsIdentity -&gt; System.Security.Principal.WindowsPrincipal" Usage="new System.Security.Principal.WindowsPrincipal ntIdentity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsPrincipal.DeviceClaims" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeviceClaims As IEnumerable(Of Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ DeviceClaims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeviceClaims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Security.Principal.WindowsPrincipal.DeviceClaims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsPrincipal.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Identity As IIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::IIdentity ^ Identity { System::Security::Principal::IIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Security.Principal.IIdentity" Usage="System.Security.Principal.WindowsPrincipal.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsInRole (rid As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsInRole(int rid);" />
+      <MemberSignature Language="F#" Value="override this.IsInRole : int -&gt; bool" Usage="windowsPrincipal.IsInRole rid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.SecurityIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsInRole (sid As SecurityIdentifier) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsInRole(System::Security::Principal::SecurityIdentifier ^ sid);" />
+      <MemberSignature Language="F#" Value="override this.IsInRole : System.Security.Principal.SecurityIdentifier -&gt; bool" Usage="windowsPrincipal.IsInRole sid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -310,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.WindowsBuiltInRole)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsInRole (role As WindowsBuiltInRole) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsInRole(System::Security::Principal::WindowsBuiltInRole role);" />
+      <MemberSignature Language="F#" Value="override this.IsInRole : System.Security.Principal.WindowsBuiltInRole -&gt; bool" Usage="windowsPrincipal.IsInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -363,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsInRole(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="override this.IsInRole : string -&gt; bool" Usage="windowsPrincipal.IsInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -441,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsPrincipal.UserClaims" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserClaims As IEnumerable(Of Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ UserClaims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserClaims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Security.Principal.WindowsPrincipal.UserClaims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

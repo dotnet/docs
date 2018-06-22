@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.EnumProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumProperty&#xA;Inherits BaseProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumProperty sealed : Microsoft::Build::Framework::XamlTypes::BaseProperty" />
+  <TypeSignature Language="F#" Value="type EnumProperty = class&#xA;    inherit BaseProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumProperty.AdmissibleValues" />
       <MemberSignature Language="VB.NET" Value="Public Property AdmissibleValues As List(Of EnumValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::EnumValue ^&gt; ^ AdmissibleValues { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::EnumValue ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::EnumValue ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AdmissibleValues : System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.EnumValue&gt; with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumProperty.AdmissibleValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.EnumProperty.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndInit();" />
+      <MemberSignature Language="F#" Value="override this.EndInit : unit -&gt; unit" Usage="enumProperty.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

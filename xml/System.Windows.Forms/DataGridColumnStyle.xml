@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridColumnStyle" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataGridColumnStyle&#xA;Inherits Component&#xA;Implements IDataGridColumnStyleEditingNotificationService" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumnStyle abstract : System::ComponentModel::Component, System::Windows::Forms::IDataGridColumnStyleEditingNotificationService" />
+  <TypeSignature Language="F#" Value="type DataGridColumnStyle = class&#xA;    inherit Component&#xA;    interface IDataGridColumnStyleEditingNotificationService" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -131,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.#ctor(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prop As PropertyDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnStyle(System::ComponentModel::PropertyDescriptor ^ prop);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridColumnStyle : System.ComponentModel.PropertyDescriptor -&gt; System.Windows.Forms.DataGridColumnStyle" Usage="new System.Windows.Forms.DataGridColumnStyle prop" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Abort(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Abort (rowNum As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Abort(int rowNum);" />
+      <MemberSignature Language="F#" Value="abstract member Abort : int -&gt; unit" Usage="dataGridColumnStyle.Abort rowNum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -218,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Alignment As HorizontalAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::HorizontalAlignment Alignment { System::Windows::Forms::HorizontalAlignment get(); void set(System::Windows::Forms::HorizontalAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Windows.Forms.HorizontalAlignment with get, set" Usage="System.Windows.Forms.DataGridColumnStyle.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -255,6 +259,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridColumnStyle.AlignmentChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AlignmentChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AlignmentChanged;" />
+      <MemberSignature Language="F#" Value="member this.AlignmentChanged : EventHandler " Usage="member this.AlignmentChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -285,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.BeginUpdate" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BeginUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BeginUpdate();" />
+      <MemberSignature Language="F#" Value="member this.BeginUpdate : unit -&gt; unit" Usage="dataGridColumnStyle.BeginUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.CheckValidDataSource(System.Windows.Forms.CurrencyManager)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckValidDataSource (value As CurrencyManager)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckValidDataSource(System::Windows::Forms::CurrencyManager ^ value);" />
+      <MemberSignature Language="F#" Value="member this.CheckValidDataSource : System.Windows.Forms.CurrencyManager -&gt; unit" Usage="dataGridColumnStyle.CheckValidDataSource value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -349,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.ColumnStartedEditing(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ColumnStartedEditing (editingControl As Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ColumnStartedEditing(System::Windows::Forms::Control ^ editingControl);" />
+      <MemberSignature Language="F#" Value="abstract member ColumnStartedEditing : System.Windows.Forms.Control -&gt; unit&#xA;override this.ColumnStartedEditing : System.Windows.Forms.Control -&gt; unit" Usage="dataGridColumnStyle.ColumnStartedEditing editingControl" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing(System.Windows.Forms.Control)</InterfaceMember>
@@ -382,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function Commit (dataSource As CurrencyManager, rowNum As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool Commit(System::Windows::Forms::CurrencyManager ^ dataSource, int rowNum);" />
+      <MemberSignature Language="F#" Value="abstract member Commit : System.Windows.Forms.CurrencyManager * int -&gt; bool" Usage="dataGridColumnStyle.Commit (dataSource, rowNum)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -427,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.ConcedeFocus" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ConcedeFocus ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ConcedeFocus();" />
+      <MemberSignature Language="F#" Value="abstract member ConcedeFocus : unit -&gt; unit&#xA;override this.ConcedeFocus : unit -&gt; unit" Usage="dataGridColumnStyle.ConcedeFocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -463,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.CreateHeaderAccessibleObject" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateHeaderAccessibleObject () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::AccessibleObject ^ CreateHeaderAccessibleObject();" />
+      <MemberSignature Language="F#" Value="abstract member CreateHeaderAccessibleObject : unit -&gt; System.Windows.Forms.AccessibleObject&#xA;override this.CreateHeaderAccessibleObject : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridColumnStyle.CreateHeaderAccessibleObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -501,6 +512,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataGridTableStyle As DataGridTableStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridTableStyle ^ DataGridTableStyle { System::Windows::Forms::DataGridTableStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataGridTableStyle : System.Windows.Forms.DataGridTableStyle" Usage="System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Edit (source As CurrencyManager, rowNum As Integer, bounds As Rectangle, readOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Edit(System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::Drawing::Rectangle bounds, bool readOnly);" />
+      <MemberSignature Language="F#" Value="abstract member Edit : System.Windows.Forms.CurrencyManager * int * System.Drawing.Rectangle * bool -&gt; unit&#xA;override this.Edit : System.Windows.Forms.CurrencyManager * int * System.Drawing.Rectangle * bool -&gt; unit" Usage="dataGridColumnStyle.Edit (source, rowNum, bounds, readOnly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -581,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Edit (source As CurrencyManager, rowNum As Integer, bounds As Rectangle, readOnly As Boolean, displayText As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Edit(System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::Drawing::Rectangle bounds, bool readOnly, System::String ^ displayText);" />
+      <MemberSignature Language="F#" Value="abstract member Edit : System.Windows.Forms.CurrencyManager * int * System.Drawing.Rectangle * bool * string -&gt; unit&#xA;override this.Edit : System.Windows.Forms.CurrencyManager * int * System.Drawing.Rectangle * bool * string -&gt; unit" Usage="dataGridColumnStyle.Edit (source, rowNum, bounds, readOnly, displayText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -628,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Edit (source As CurrencyManager, rowNum As Integer, bounds As Rectangle, readOnly As Boolean, displayText As String, cellIsVisible As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Edit(System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::Drawing::Rectangle bounds, bool readOnly, System::String ^ displayText, bool cellIsVisible);" />
+      <MemberSignature Language="F#" Value="abstract member Edit : System.Windows.Forms.CurrencyManager * int * System.Drawing.Rectangle * bool * string * bool -&gt; unit" Usage="dataGridColumnStyle.Edit (source, rowNum, bounds, readOnly, displayText, cellIsVisible)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -668,6 +683,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.EndUpdate" />
       <MemberSignature Language="VB.NET" Value="Protected Sub EndUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EndUpdate();" />
+      <MemberSignature Language="F#" Value="member this.EndUpdate : unit -&gt; unit" Usage="dataGridColumnStyle.EndUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -696,6 +712,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.EnterNullValue" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub EnterNullValue ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void EnterNullValue();" />
+      <MemberSignature Language="F#" Value="abstract member EnterNullValue : unit -&gt; unit&#xA;override this.EnterNullValue : unit -&gt; unit" Usage="dataGridColumnStyle.EnterNullValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -734,6 +751,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridColumnStyle.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FontChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
+      <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -753,6 +771,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.FontHeight" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property FontHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int FontHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FontHeight : int" Usage="System.Windows.Forms.DataGridColumnStyle.FontHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -773,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetColumnValueAtRow (source As CurrencyManager, rowNum As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ GetColumnValueAtRow(System::Windows::Forms::CurrencyManager ^ source, int rowNum);" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnValueAtRow : System.Windows.Forms.CurrencyManager * int -&gt; obj&#xA;override this.GetColumnValueAtRow : System.Windows.Forms.CurrencyManager * int -&gt; obj" Usage="dataGridColumnStyle.GetColumnValueAtRow (source, rowNum)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -808,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.GetMinimumHeight" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetMinimumHeight () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract int GetMinimumHeight();" />
+      <MemberSignature Language="F#" Value="abstract member GetMinimumHeight : unit -&gt; int" Usage="dataGridColumnStyle.GetMinimumHeight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -842,6 +863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetPreferredHeight (g As Graphics, value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract int GetPreferredHeight(System::Drawing::Graphics ^ g, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GetPreferredHeight : System.Drawing.Graphics * obj -&gt; int" Usage="dataGridColumnStyle.GetPreferredHeight (g, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -886,6 +908,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetPreferredSize (g As Graphics, value As Object) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Drawing::Size GetPreferredSize(System::Drawing::Graphics ^ g, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GetPreferredSize : System.Drawing.Graphics * obj -&gt; System.Drawing.Size" Usage="dataGridColumnStyle.GetPreferredSize (g, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -930,6 +953,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.HeaderAccessibleObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderAccessibleObject As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AccessibleObject ^ HeaderAccessibleObject { System::Windows::Forms::AccessibleObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderAccessibleObject : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.DataGridColumnStyle.HeaderAccessibleObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -955,6 +979,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.HeaderText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Windows.Forms.DataGridColumnStyle.HeaderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -998,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridColumnStyle.HeaderTextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event HeaderTextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HeaderTextChanged;" />
+      <MemberSignature Language="F#" Value="member this.HeaderTextChanged : EventHandler " Usage="member this.HeaderTextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1028,6 +1054,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Invalidate();" />
+      <MemberSignature Language="F#" Value="abstract member Invalidate : unit -&gt; unit&#xA;override this.Invalidate : unit -&gt; unit" Usage="dataGridColumnStyle.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1056,6 +1083,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.MappingName" />
       <MemberSignature Language="VB.NET" Value="Public Property MappingName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MappingName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MappingName : string with get, set" Usage="System.Windows.Forms.DataGridColumnStyle.MappingName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1107,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridColumnStyle.MappingNameChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MappingNameChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MappingNameChanged;" />
+      <MemberSignature Language="F#" Value="member this.MappingNameChanged : EventHandler " Usage="member this.MappingNameChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1137,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.NullText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property NullText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NullText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NullText : string with get, set" Usage="System.Windows.Forms.DataGridColumnStyle.NullText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1179,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridColumnStyle.NullTextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NullTextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ NullTextChanged;" />
+      <MemberSignature Language="F#" Value="member this.NullTextChanged : EventHandler " Usage="member this.NullTextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1219,6 +1250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Paint (g As Graphics, bounds As Rectangle, source As CurrencyManager, rowNum As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Paint(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::CurrencyManager ^ source, int rowNum);" />
+      <MemberSignature Language="F#" Value="abstract member Paint : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.CurrencyManager * int -&gt; unit" Usage="dataGridColumnStyle.Paint (g, bounds, source, rowNum)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1248,6 +1280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Paint (g As Graphics, bounds As Rectangle, source As CurrencyManager, rowNum As Integer, alignToRight As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Paint(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::CurrencyManager ^ source, int rowNum, bool alignToRight);" />
+      <MemberSignature Language="F#" Value="abstract member Paint : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.CurrencyManager * int * bool -&gt; unit" Usage="dataGridColumnStyle.Paint (g, bounds, source, rowNum, alignToRight)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1279,6 +1312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Paint (g As Graphics, bounds As Rectangle, source As CurrencyManager, rowNum As Integer, backBrush As Brush, foreBrush As Brush, alignToRight As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Paint(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::Drawing::Brush ^ backBrush, System::Drawing::Brush ^ foreBrush, bool alignToRight);" />
+      <MemberSignature Language="F#" Value="abstract member Paint : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.CurrencyManager * int * System.Drawing.Brush * System.Drawing.Brush * bool -&gt; unit&#xA;override this.Paint : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.CurrencyManager * int * System.Drawing.Brush * System.Drawing.Brush * bool -&gt; unit" Usage="dataGridColumnStyle.Paint (g, bounds, source, rowNum, backBrush, foreBrush, alignToRight)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1314,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.PropertyDescriptor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PropertyDescriptor As PropertyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::PropertyDescriptor ^ PropertyDescriptor { System::ComponentModel::PropertyDescriptor ^ get(); void set(System::ComponentModel::PropertyDescriptor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyDescriptor : System.ComponentModel.PropertyDescriptor with get, set" Usage="System.Windows.Forms.DataGridColumnStyle.PropertyDescriptor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1365,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridColumnStyle.PropertyDescriptorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PropertyDescriptorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PropertyDescriptorChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyDescriptorChanged : EventHandler " Usage="member this.PropertyDescriptorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1403,6 +1439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Windows.Forms.DataGridColumnStyle.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1449,6 +1486,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridColumnStyle.ReadOnlyChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ReadOnlyChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ReadOnlyChanged;" />
+      <MemberSignature Language="F#" Value="member this.ReadOnlyChanged : EventHandler " Usage="member this.ReadOnlyChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1479,6 +1517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.ReleaseHostedControl" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ReleaseHostedControl ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ReleaseHostedControl();" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHostedControl : unit -&gt; unit&#xA;override this.ReleaseHostedControl : unit -&gt; unit" Usage="dataGridColumnStyle.ReleaseHostedControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1506,6 +1545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.ResetHeaderText" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetHeaderText ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetHeaderText();" />
+      <MemberSignature Language="F#" Value="member this.ResetHeaderText : unit -&gt; unit" Usage="dataGridColumnStyle.ResetHeaderText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1542,6 +1582,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub SetColumnValueAtRow (source As CurrencyManager, rowNum As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void SetColumnValueAtRow(System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetColumnValueAtRow : System.Windows.Forms.CurrencyManager * int * obj -&gt; unit&#xA;override this.SetColumnValueAtRow : System.Windows.Forms.CurrencyManager * int * obj -&gt; unit" Usage="dataGridColumnStyle.SetColumnValueAtRow (source, rowNum, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1571,6 +1612,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.SetDataGrid(System.Windows.Forms.DataGrid)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDataGrid (value As DataGrid)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetDataGrid(System::Windows::Forms::DataGrid ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetDataGrid : System.Windows.Forms.DataGrid -&gt; unit&#xA;override this.SetDataGrid : System.Windows.Forms.DataGrid -&gt; unit" Usage="dataGridColumnStyle.SetDataGrid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1602,6 +1644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.SetDataGridInColumn(System.Windows.Forms.DataGrid)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDataGridInColumn (value As DataGrid)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetDataGridInColumn(System::Windows::Forms::DataGrid ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetDataGridInColumn : System.Windows.Forms.DataGrid -&gt; unit&#xA;override this.SetDataGridInColumn : System.Windows.Forms.DataGrid -&gt; unit" Usage="dataGridColumnStyle.SetDataGridInColumn value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1665,6 +1708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.UpdateUI(System.Windows.Forms.CurrencyManager,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub UpdateUI (source As CurrencyManager, rowNum As Integer, displayText As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void UpdateUI(System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::String ^ displayText);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateUI : System.Windows.Forms.CurrencyManager * int * string -&gt; unit&#xA;override this.UpdateUI : System.Windows.Forms.CurrencyManager * int * string -&gt; unit" Usage="dataGridColumnStyle.UpdateUI (source, rowNum, displayText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1703,6 +1747,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.Width" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Windows.Forms.DataGridColumnStyle.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1741,6 +1786,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridColumnStyle.WidthChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WidthChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ WidthChanged;" />
+      <MemberSignature Language="F#" Value="member this.WidthChanged : EventHandler " Usage="member this.WidthChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

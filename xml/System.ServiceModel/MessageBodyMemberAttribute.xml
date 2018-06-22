@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageBodyMemberAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageBodyMemberAttribute&#xA;Inherits MessageContractMemberAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageBodyMemberAttribute : System::ServiceModel::MessageContractMemberAttribute" />
+  <TypeSignature Language="F#" Value="type MessageBodyMemberAttribute = class&#xA;    inherit MessageContractMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageBodyMemberAttribute.Order" />
       <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="System.ServiceModel.MessageBodyMemberAttribute.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

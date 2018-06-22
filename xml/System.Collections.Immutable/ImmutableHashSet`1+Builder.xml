@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableHashSet`1.Builder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImmutableHashSet(Of T).Builder&#xA;Implements ICollection(Of T), IEnumerable(Of T), IReadOnlyCollection(Of T), ISet(Of T)" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ImmutableHashSet&lt;T&gt;::Builder sealed : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::ISet&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ImmutableHashSet&lt;'T&gt;.Builder = class&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface ISet&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Add(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; bool&#xA;override this.Add : 'T -&gt; bool" Usage="builder.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.Add(`0)</InterfaceMember>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="builder.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="builder.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableHashSet`1.Builder.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;.Builder.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.ExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExceptWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member ExceptWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.ExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="builder.ExceptWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ImmutableHashSet(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableHashSet&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;.Enumerator" Usage="builder.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.IntersectWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub IntersectWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void IntersectWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IntersectWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.IntersectWith : seq&lt;'T&gt; -&gt; unit" Usage="builder.IntersectWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsProperSubsetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="builder.IsProperSubsetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsProperSupersetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="builder.IsProperSupersetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="builder.IsSubsetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -342,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSupersetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupersetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="builder.IsSupersetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -373,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableHashSet`1.Builder.KeyComparer" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyComparer As IEqualityComparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ KeyComparer { System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ get(); void set(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyComparer : System.Collections.Generic.IEqualityComparer&lt;'T&gt; with get, set" Usage="System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;.Builder.KeyComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -396,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.Overlaps(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Overlaps (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Overlaps(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member Overlaps : seq&lt;'T&gt; -&gt; bool&#xA;override this.Overlaps : seq&lt;'T&gt; -&gt; bool" Usage="builder.Overlaps other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="builder.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -459,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.SetEquals(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function SetEquals (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SetEquals(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member SetEquals : seq&lt;'T&gt; -&gt; bool&#xA;override this.SetEquals : seq&lt;'T&gt; -&gt; bool" Usage="builder.SetEquals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -490,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SymmetricExceptWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SymmetricExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="builder.SymmetricExceptWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -594,6 +611,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;.Builder.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -688,6 +706,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.ToImmutable" />
       <MemberSignature Language="VB.NET" Value="Public Function ToImmutable () As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ ToImmutable();" />
+      <MemberSignature Language="F#" Value="member this.ToImmutable : unit -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="builder.ToImmutable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -719,6 +738,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet`1.Builder.UnionWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnionWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnionWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member UnionWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.UnionWith : seq&lt;'T&gt; -&gt; unit" Usage="builder.UnionWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>

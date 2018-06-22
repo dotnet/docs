@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeSnippetTypeMember" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeSnippetTypeMember&#xA;Inherits CodeTypeMember" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeSnippetTypeMember : System::CodeDom::CodeTypeMember" />
+  <TypeSignature Language="F#" Value="type CodeSnippetTypeMember = class&#xA;    inherit CodeTypeMember" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeSnippetTypeMember.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeSnippetTypeMember(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeSnippetTypeMember : string -&gt; System.CodeDom.CodeSnippetTypeMember" Usage="new System.CodeDom.CodeSnippetTypeMember text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeSnippetTypeMember.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.CodeDom.CodeSnippetTypeMember.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

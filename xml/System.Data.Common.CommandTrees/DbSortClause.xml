@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbSortClause" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbSortClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbSortClause sealed" />
+  <TypeSignature Language="F#" Value="type DbSortClause = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbSortClause.Ascending" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ascending As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Ascending { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ascending : bool" Usage="System.Data.Common.CommandTrees.DbSortClause.Ascending" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbSortClause.Collation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Collation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Collation { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Collation : string" Usage="System.Data.Common.CommandTrees.DbSortClause.Collation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbSortClause.Expression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Expression { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbSortClause.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

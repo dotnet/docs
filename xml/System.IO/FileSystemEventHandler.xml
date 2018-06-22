@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileSystemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FileSystemEventHandler(sender As Object, e As FileSystemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FileSystemEventHandler(System::Object ^ sender, FileSystemEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FileSystemEventHandler = delegate of obj * FileSystemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

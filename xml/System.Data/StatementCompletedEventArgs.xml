@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.StatementCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatementCompletedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StatementCompletedEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type StatementCompletedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.StatementCompletedEventArgs.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (recordCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StatementCompletedEventArgs(int recordCount);" />
+      <MemberSignature Language="F#" Value="new System.Data.StatementCompletedEventArgs : int -&gt; System.Data.StatementCompletedEventArgs" Usage="new System.Data.StatementCompletedEventArgs recordCount" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.StatementCompletedEventArgs.RecordCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecordCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RecordCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecordCount : int" Usage="System.Data.StatementCompletedEventArgs.RecordCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

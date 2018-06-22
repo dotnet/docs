@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.PropertyLockMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyLockMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyLockMode" />
+  <TypeSignature Language="F#" Value="type PropertyLockMode = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PropertyLockMode.Method" />
       <MemberSignature Language="VB.NET" Value="Method" />
       <MemberSignature Language="C++ CLI" Value="Method" />
+      <MemberSignature Language="F#" Value="Method = 1" Usage="System.EnterpriseServices.PropertyLockMode.Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PropertyLockMode.SetGet" />
       <MemberSignature Language="VB.NET" Value="SetGet" />
       <MemberSignature Language="C++ CLI" Value="SetGet" />
+      <MemberSignature Language="F#" Value="SetGet = 0" Usage="System.EnterpriseServices.PropertyLockMode.SetGet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

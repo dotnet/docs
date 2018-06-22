@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.TransactedCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TransactedCallback()" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TransactedCallback();" />
+  <TypeSignature Language="F#" Value="type TransactedCallback = delegate of unit -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

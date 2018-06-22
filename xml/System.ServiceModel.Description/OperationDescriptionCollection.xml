@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.OperationDescriptionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class OperationDescriptionCollection&#xA;Inherits Collection(Of OperationDescription)" />
   <TypeSignature Language="C++ CLI" Value="public ref class OperationDescriptionCollection : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::OperationDescription ^&gt;" />
+  <TypeSignature Language="F#" Value="type OperationDescriptionCollection = class&#xA;    inherit Collection&lt;OperationDescription&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.OperationDescriptionCollection.Find(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (name As String) As OperationDescription" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::OperationDescription ^ Find(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Find : string -&gt; System.ServiceModel.Description.OperationDescription" Usage="operationDescriptionCollection.Find name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.OperationDescriptionCollection.FindAll(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (name As String) As Collection(Of OperationDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::OperationDescription ^&gt; ^ FindAll(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : string -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.OperationDescription&gt;" Usage="operationDescriptionCollection.FindAll name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.OperationDescriptionCollection.InsertItem(System.Int32,System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As OperationDescription)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ServiceModel::Description::OperationDescription ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.ServiceModel.Description.OperationDescription -&gt; unit" Usage="operationDescriptionCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.OperationDescriptionCollection.SetItem(System.Int32,System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As OperationDescription)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ServiceModel::Description::OperationDescription ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.ServiceModel.Description.OperationDescription -&gt; unit" Usage="operationDescriptionCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

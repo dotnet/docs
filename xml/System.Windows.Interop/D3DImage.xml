@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.D3DImage" />
   <TypeSignature Language="VB.NET" Value="Public Class D3DImage&#xA;Inherits ImageSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class D3DImage : System::Windows::Media::ImageSource" />
+  <TypeSignature Language="F#" Value="type D3DImage = class&#xA;    inherit ImageSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dpiX As Double, dpiY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; D3DImage(double dpiX, double dpiY);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Interop.D3DImage : double * double -&gt; System.Windows.Interop.D3DImage" Usage="new System.Windows.Interop.D3DImage (dpiX, dpiY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.AddDirtyRect(System.Windows.Int32Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDirtyRect (dirtyRect As Int32Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDirtyRect(System::Windows::Int32Rect dirtyRect);" />
+      <MemberSignature Language="F#" Value="member this.AddDirtyRect : System.Windows.Int32Rect -&gt; unit" Usage="d3DImage.AddDirtyRect dirtyRect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As D3DImage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Interop::D3DImage ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Interop.D3DImage" Usage="d3DImage.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -221,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="d3DImage.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As D3DImage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Interop::D3DImage ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Interop.D3DImage" Usage="d3DImage.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="d3DImage.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -299,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CopyBackBuffer" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CopyBackBuffer () As BitmapSource" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Windows::Media::Imaging::BitmapSource ^ CopyBackBuffer();" />
+      <MemberSignature Language="F#" Value="abstract member CopyBackBuffer : unit -&gt; System.Windows.Media.Imaging.BitmapSource&#xA;override this.CopyBackBuffer : unit -&gt; System.Windows.Media.Imaging.BitmapSource" Usage="d3DImage.CopyBackBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="d3DImage.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -367,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!D3DImage ()" />
+      <MemberSignature Language="F#" Value="abstract member Finalize : unit -&gt; unit&#xA;override this.Finalize : unit -&gt; unit" Usage="d3DImage.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -405,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="d3DImage.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -438,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="d3DImage.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -462,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="d3DImage.GetCurrentValueAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -486,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Height" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="System.Windows.Interop.D3DImage.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -515,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.IsFrontBufferAvailable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFrontBufferAvailable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFrontBufferAvailable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFrontBufferAvailable : bool" Usage="System.Windows.Interop.D3DImage.IsFrontBufferAvailable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -560,6 +575,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event IsFrontBufferAvailableChanged As DependencyPropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::DependencyPropertyChangedEventHandler ^ IsFrontBufferAvailableChanged;" />
+      <MemberSignature Language="F#" Value="member this.IsFrontBufferAvailableChanged : System.Windows.DependencyPropertyChangedEventHandler " Usage="member this.IsFrontBufferAvailableChanged : System.Windows.DependencyPropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -588,6 +604,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Interop.D3DImage.IsFrontBufferAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsFrontBufferAvailableProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsFrontBufferAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsFrontBufferAvailableProperty : System.Windows.DependencyProperty" Usage="System.Windows.Interop.D3DImage.IsFrontBufferAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -607,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Lock" />
       <MemberSignature Language="VB.NET" Value="Public Sub Lock ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Lock();" />
+      <MemberSignature Language="F#" Value="member this.Lock : unit -&gt; unit" Usage="d3DImage.Lock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -647,6 +665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Metadata As ImageMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageMetadata ^ Metadata { System::Windows::Media::ImageMetadata ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Windows.Media.ImageMetadata" Usage="System.Windows.Interop.D3DImage.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -668,6 +687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.PixelHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PixelHeight : int" Usage="System.Windows.Interop.D3DImage.PixelHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -704,6 +724,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.PixelWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PixelWidth : int" Usage="System.Windows.Interop.D3DImage.PixelWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -749,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBackBuffer (backBufferType As D3DResourceType, backBuffer As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackBuffer(System::Windows::Interop::D3DResourceType backBufferType, IntPtr backBuffer);" />
+      <MemberSignature Language="F#" Value="member this.SetBackBuffer : System.Windows.Interop.D3DResourceType * nativeint -&gt; unit" Usage="d3DImage.SetBackBuffer (backBufferType, backBuffer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -810,6 +832,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBackBuffer (backBufferType As D3DResourceType, backBuffer As IntPtr, enableSoftwareFallback As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackBuffer(System::Windows::Interop::D3DResourceType backBufferType, IntPtr backBuffer, bool enableSoftwareFallback);" />
+      <MemberSignature Language="F#" Value="member this.SetBackBuffer : System.Windows.Interop.D3DResourceType * nativeint * bool -&gt; unit" Usage="d3DImage.SetBackBuffer (backBufferType, backBuffer, enableSoftwareFallback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -862,6 +885,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLock (timeout As Duration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryLock(System::Windows::Duration timeout);" />
+      <MemberSignature Language="F#" Value="member this.TryLock : System.Windows.Duration -&gt; bool" Usage="d3DImage.TryLock timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -892,6 +916,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Unlock" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unlock ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlock();" />
+      <MemberSignature Language="F#" Value="member this.Unlock : unit -&gt; unit" Usage="d3DImage.Unlock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -933,6 +958,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Width" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Interop.D3DImage.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

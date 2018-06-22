@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AxisName" />
   <TypeSignature Language="VB.NET" Value="Public Enum AxisName" />
   <TypeSignature Language="C++ CLI" Value="public enum class AxisName" />
+  <TypeSignature Language="F#" Value="type AxisName = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisName.X" />
       <MemberSignature Language="VB.NET" Value="X" />
       <MemberSignature Language="C++ CLI" Value="X" />
+      <MemberSignature Language="F#" Value="X = 0" Usage="System.Web.UI.DataVisualization.Charting.AxisName.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisName.X2" />
       <MemberSignature Language="VB.NET" Value="X2" />
       <MemberSignature Language="C++ CLI" Value="X2" />
+      <MemberSignature Language="F#" Value="X2 = 2" Usage="System.Web.UI.DataVisualization.Charting.AxisName.X2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisName.Y" />
       <MemberSignature Language="VB.NET" Value="Y" />
       <MemberSignature Language="C++ CLI" Value="Y" />
+      <MemberSignature Language="F#" Value="Y = 1" Usage="System.Web.UI.DataVisualization.Charting.AxisName.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisName.Y2" />
       <MemberSignature Language="VB.NET" Value="Y2" />
       <MemberSignature Language="C++ CLI" Value="Y2" />
+      <MemberSignature Language="F#" Value="Y2 = 3" Usage="System.Web.UI.DataVisualization.Charting.AxisName.Y2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

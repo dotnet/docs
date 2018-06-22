@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IDispatchMessageFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDispatchMessageFormatter" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDispatchMessageFormatter" />
+  <TypeSignature Language="F#" Value="type IDispatchMessageFormatter = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeserializeRequest(class System.ServiceModel.Channels.Message message, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IDispatchMessageFormatter.DeserializeRequest(System.ServiceModel.Channels.Message,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeserializeRequest(System::ServiceModel::Channels::Message ^ message, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member DeserializeRequest : System.ServiceModel.Channels.Message * obj[] -&gt; unit" Usage="iDispatchMessageFormatter.DeserializeRequest (message, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IDispatchMessageFormatter.SerializeReply(System.ServiceModel.Channels.MessageVersion,System.Object[],System.Object)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Function SerializeReply (version As MessageVersion, parameters As Object(), result As Object) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ SerializeReply(System::ServiceModel::Channels::MessageVersion ^ version, cli::array &lt;System::Object ^&gt; ^ parameters, System::Object ^ result);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member SerializeReply : System.ServiceModel.Channels.MessageVersion * obj[] * obj -&gt; System.ServiceModel.Channels.Message" Usage="iDispatchMessageFormatter.SerializeReply (version, parameters, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

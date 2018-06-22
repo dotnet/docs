@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IChannelListener" />
   <TypeSignature Language="VB.NET" Value="Public Interface IChannelListener&#xA;Implements ICommunicationObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IChannelListener : System::ServiceModel::ICommunicationObject" />
+  <TypeSignature Language="F#" Value="type IChannelListener = interface&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener.BeginWaitForChannel(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginWaitForChannel (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWaitForChannel(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginWaitForChannel : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iChannelListener.BeginWaitForChannel (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener.EndWaitForChannel(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndWaitForChannel (result As IAsyncResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndWaitForChannel(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndWaitForChannel : IAsyncResult -&gt; bool" Usage="iChannelListener.EndWaitForChannel result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener.GetProperty``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of T As Class) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T GetProperty();" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : unit -&gt; 'T (requires 'T : null)" Usage="iChannelListener.GetProperty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IChannelListener.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.ServiceModel.Channels.IChannelListener.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener.WaitForChannel(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitForChannel (timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WaitForChannel(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member WaitForChannel : TimeSpan -&gt; bool" Usage="iChannelListener.WaitForChannel timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

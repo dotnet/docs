@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PartChromeState" />
   <TypeSignature Language="VB.NET" Value="Public Enum PartChromeState" />
   <TypeSignature Language="C++ CLI" Value="public enum class PartChromeState" />
+  <TypeSignature Language="F#" Value="type PartChromeState = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized" />
       <MemberSignature Language="VB.NET" Value="Minimized" />
       <MemberSignature Language="C++ CLI" Value="Minimized" />
+      <MemberSignature Language="F#" Value="Minimized = 1" Usage="System.Web.UI.WebControls.WebParts.PartChromeState.Minimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Web.UI.WebControls.WebParts.PartChromeState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

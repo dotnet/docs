@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IRegistrationServices" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRegistrationServices" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRegistrationServices" />
+  <TypeSignature Language="F#" Value="type IRegistrationServices = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.GetManagedCategoryGuid" />
       <MemberSignature Language="VB.NET" Value="Public Function GetManagedCategoryGuid () As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid GetManagedCategoryGuid();" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedCategoryGuid : unit -&gt; Guid" Usage="iRegistrationServices.GetManagedCategoryGuid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetProgIdForType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.GetProgIdForType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetProgIdForType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetProgIdForType : Type -&gt; string" Usage="iRegistrationServices.GetProgIdForType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetRegistrableTypesInAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.GetRegistrableTypesInAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Type ^&gt; ^ GetRegistrableTypesInAssembly(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="abstract member GetRegistrableTypesInAssembly : System.Reflection.Assembly -&gt; Type[]" Usage="iRegistrationServices.GetRegistrableTypesInAssembly assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RegisterAssembly(class System.Reflection.Assembly assembly, valuetype System.Runtime.InteropServices.AssemblyRegistrationFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.RegisterAssembly(System.Reflection.Assembly,System.Runtime.InteropServices.AssemblyRegistrationFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RegisterAssembly(System::Reflection::Assembly ^ assembly, System::Runtime::InteropServices::AssemblyRegistrationFlags flags);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterAssembly : System.Reflection.Assembly * System.Runtime.InteropServices.AssemblyRegistrationFlags -&gt; bool" Usage="iRegistrationServices.RegisterAssembly (assembly, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterTypeForComClients(class System.Type type, valuetype System.Guid&amp; g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.RegisterTypeForComClients(System.Type,System.Guid@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterTypeForComClients(Type ^ type, Guid % g);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterTypeForComClients : Type *  -&gt; unit" Usage="iRegistrationServices.RegisterTypeForComClients (type, g)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TypeRepresentsComType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.TypeRepresentsComType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TypeRepresentsComType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member TypeRepresentsComType : Type -&gt; bool" Usage="iRegistrationServices.TypeRepresentsComType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TypeRequiresRegistration(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.TypeRequiresRegistration(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TypeRequiresRegistration(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member TypeRequiresRegistration : Type -&gt; bool" Usage="iRegistrationServices.TypeRequiresRegistration type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -268,6 +276,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool UnregisterAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.UnregisterAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool UnregisterAssembly(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterAssembly : System.Reflection.Assembly -&gt; bool" Usage="iRegistrationServices.UnregisterAssembly assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

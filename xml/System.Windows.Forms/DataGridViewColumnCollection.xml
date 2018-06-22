@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewColumnCollection&#xA;Inherits BaseCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewColumnCollection : System::Windows::Forms::BaseCollection, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnCollection = class&#xA;    inherit BaseCollection&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridView dataGridView) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.#ctor(System.Windows.Forms.DataGridView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewColumnCollection(System::Windows::Forms::DataGridView ^ dataGridView);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewColumnCollection : System.Windows.Forms.DataGridView -&gt; System.Windows.Forms.DataGridViewColumnCollection" Usage="new System.Windows.Forms.DataGridViewColumnCollection dataGridView" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Add(System.Windows.Forms.DataGridViewColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumn);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Forms.DataGridViewColumn -&gt; int&#xA;override this.Add : System.Windows.Forms.DataGridViewColumn -&gt; int" Usage="dataGridViewColumnCollection.Add dataGridViewColumn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (columnName As String, headerText As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::String ^ columnName, System::String ^ headerText);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; int&#xA;override this.Add : string * string -&gt; int" Usage="dataGridViewColumnCollection.Add (columnName, headerText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -247,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.AddRange(System.Windows.Forms.DataGridViewColumn[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (ParamArray dataGridViewColumns As DataGridViewColumn())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(... cli::array &lt;System::Windows::Forms::DataGridViewColumn ^&gt; ^ dataGridViewColumns);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Windows.Forms.DataGridViewColumn[] -&gt; unit&#xA;override this.AddRange : System.Windows.Forms.DataGridViewColumn[] -&gt; unit" Usage="dataGridViewColumnCollection.AddRange dataGridViewColumns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -353,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="dataGridViewColumnCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -415,6 +421,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanged As CollectionChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -464,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (columnName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::String ^ columnName);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool&#xA;override this.Contains : string -&gt; bool" Usage="dataGridViewColumnCollection.Contains columnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -499,6 +507,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Contains(System.Windows.Forms.DataGridViewColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumn);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.Forms.DataGridViewColumn -&gt; bool&#xA;override this.Contains : System.Windows.Forms.DataGridViewColumn -&gt; bool" Usage="dataGridViewColumnCollection.Contains dataGridViewColumn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -526,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.CopyTo(System.Windows.Forms.DataGridViewColumn[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataGridViewColumn(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Forms::DataGridViewColumn ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Windows.Forms.DataGridViewColumn[] * int -&gt; unit" Usage="dataGridViewColumnCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -553,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.DataGridView" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DataGridView As DataGridView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::DataGridView ^ DataGridView { System::Windows::Forms::DataGridView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataGridView : System.Windows.Forms.DataGridView" Usage="System.Windows.Forms.DataGridViewColumnCollection.DataGridView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -576,6 +587,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount(System.Windows.Forms.DataGridViewElementStates)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnCount (includeFilter As DataGridViewElementStates) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetColumnCount(System::Windows::Forms::DataGridViewElementStates includeFilter);" />
+      <MemberSignature Language="F#" Value="member this.GetColumnCount : System.Windows.Forms.DataGridViewElementStates -&gt; int" Usage="dataGridViewColumnCollection.GetColumnCount includeFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -615,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetColumnsWidth(System.Windows.Forms.DataGridViewElementStates)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnsWidth (includeFilter As DataGridViewElementStates) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetColumnsWidth(System::Windows::Forms::DataGridViewElementStates includeFilter);" />
+      <MemberSignature Language="F#" Value="member this.GetColumnsWidth : System.Windows.Forms.DataGridViewElementStates -&gt; int" Usage="dataGridViewColumnCollection.GetColumnsWidth includeFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -663,6 +676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn(System.Windows.Forms.DataGridViewElementStates)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFirstColumn (includeFilter As DataGridViewElementStates) As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataGridViewColumn ^ GetFirstColumn(System::Windows::Forms::DataGridViewElementStates includeFilter);" />
+      <MemberSignature Language="F#" Value="member this.GetFirstColumn : System.Windows.Forms.DataGridViewElementStates -&gt; System.Windows.Forms.DataGridViewColumn" Usage="dataGridViewColumnCollection.GetFirstColumn includeFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -711,6 +725,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn(System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFirstColumn (includeFilter As DataGridViewElementStates, excludeFilter As DataGridViewElementStates) As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataGridViewColumn ^ GetFirstColumn(System::Windows::Forms::DataGridViewElementStates includeFilter, System::Windows::Forms::DataGridViewElementStates excludeFilter);" />
+      <MemberSignature Language="F#" Value="member this.GetFirstColumn : System.Windows.Forms.DataGridViewElementStates * System.Windows.Forms.DataGridViewElementStates -&gt; System.Windows.Forms.DataGridViewColumn" Usage="dataGridViewColumnCollection.GetFirstColumn (includeFilter, excludeFilter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -751,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetLastColumn(System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastColumn (includeFilter As DataGridViewElementStates, excludeFilter As DataGridViewElementStates) As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataGridViewColumn ^ GetLastColumn(System::Windows::Forms::DataGridViewElementStates includeFilter, System::Windows::Forms::DataGridViewElementStates excludeFilter);" />
+      <MemberSignature Language="F#" Value="member this.GetLastColumn : System.Windows.Forms.DataGridViewElementStates * System.Windows.Forms.DataGridViewElementStates -&gt; System.Windows.Forms.DataGridViewColumn" Usage="dataGridViewColumnCollection.GetLastColumn (includeFilter, excludeFilter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -800,6 +816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetNextColumn(System.Windows.Forms.DataGridViewColumn,System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextColumn (dataGridViewColumnStart As DataGridViewColumn, includeFilter As DataGridViewElementStates, excludeFilter As DataGridViewElementStates) As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataGridViewColumn ^ GetNextColumn(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumnStart, System::Windows::Forms::DataGridViewElementStates includeFilter, System::Windows::Forms::DataGridViewElementStates excludeFilter);" />
+      <MemberSignature Language="F#" Value="member this.GetNextColumn : System.Windows.Forms.DataGridViewColumn * System.Windows.Forms.DataGridViewElementStates * System.Windows.Forms.DataGridViewElementStates -&gt; System.Windows.Forms.DataGridViewColumn" Usage="dataGridViewColumnCollection.GetNextColumn (dataGridViewColumnStart, includeFilter, excludeFilter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -844,6 +861,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetPreviousColumn(System.Windows.Forms.DataGridViewColumn,System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPreviousColumn (dataGridViewColumnStart As DataGridViewColumn, includeFilter As DataGridViewElementStates, excludeFilter As DataGridViewElementStates) As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataGridViewColumn ^ GetPreviousColumn(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumnStart, System::Windows::Forms::DataGridViewElementStates includeFilter, System::Windows::Forms::DataGridViewElementStates excludeFilter);" />
+      <MemberSignature Language="F#" Value="member this.GetPreviousColumn : System.Windows.Forms.DataGridViewColumn * System.Windows.Forms.DataGridViewElementStates * System.Windows.Forms.DataGridViewElementStates -&gt; System.Windows.Forms.DataGridViewColumn" Usage="dataGridViewColumnCollection.GetPreviousColumn (dataGridViewColumnStart, includeFilter, excludeFilter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -887,6 +905,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.IndexOf(System.Windows.Forms.DataGridViewColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumn);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.DataGridViewColumn -&gt; int" Usage="dataGridViewColumnCollection.IndexOf dataGridViewColumn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -912,6 +931,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 columnIndex, class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Insert(System.Int32,System.Windows.Forms.DataGridViewColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int columnIndex, System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumn);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Windows.Forms.DataGridViewColumn -&gt; unit&#xA;override this.Insert : int * System.Windows.Forms.DataGridViewColumn -&gt; unit" Usage="dataGridViewColumnCollection.Insert (columnIndex, dataGridViewColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1011,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewColumn ^ default[int] { System::Windows::Forms::DataGridViewColumn ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.DataGridViewColumn" Usage="System.Windows.Forms.DataGridViewColumnCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1039,6 +1060,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(columnName As String) As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewColumn ^ default[System::String ^] { System::Windows::Forms::DataGridViewColumn ^ get(System::String ^ columnName); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.DataGridViewColumn" Usage="System.Windows.Forms.DataGridViewColumnCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1067,6 +1089,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.List" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property List As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ArrayList ^ List { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.ArrayList" Usage="System.Windows.Forms.DataGridViewColumnCollection.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1088,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (e As CollectionChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="dataGridViewColumnCollection.OnCollectionChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1135,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (columnName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ columnName);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="dataGridViewColumnCollection.Remove columnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1209,6 +1234,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Remove(System.Windows.Forms.DataGridViewColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumn);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Forms.DataGridViewColumn -&gt; unit&#xA;override this.Remove : System.Windows.Forms.DataGridViewColumn -&gt; unit" Usage="dataGridViewColumnCollection.Remove dataGridViewColumn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1273,6 +1299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="dataGridViewColumnCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -1387,6 +1414,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.DataGridViewColumnCollection.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -1420,6 +1448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.DataGridViewColumnCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1454,6 +1483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.DataGridViewColumnCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1852,6 +1882,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.DataGridViewColumnCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1886,6 +1917,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.DataGridViewColumnCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1920,6 +1952,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.DataGridViewColumnCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

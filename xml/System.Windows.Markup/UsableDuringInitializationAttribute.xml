@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.UsableDuringInitializationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UsableDuringInitializationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class UsableDuringInitializationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type UsableDuringInitializationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.UsableDuringInitializationAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (usable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UsableDuringInitializationAttribute(bool usable);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.UsableDuringInitializationAttribute : bool -&gt; System.Windows.Markup.UsableDuringInitializationAttribute" Usage="new System.Windows.Markup.UsableDuringInitializationAttribute usable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.UsableDuringInitializationAttribute.Usable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Usable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Usable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Usable : bool" Usage="System.Windows.Markup.UsableDuringInitializationAttribute.Usable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.PngBitmapEncoder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PngBitmapEncoder&#xA;Inherits BitmapEncoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class PngBitmapEncoder sealed : System::Windows::Media::Imaging::BitmapEncoder" />
+  <TypeSignature Language="F#" Value="type PngBitmapEncoder = class&#xA;    inherit BitmapEncoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.PngBitmapEncoder.Interlace" />
       <MemberSignature Language="VB.NET" Value="Public Property Interlace As PngInterlaceOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::PngInterlaceOption Interlace { System::Windows::Media::Imaging::PngInterlaceOption get(); void set(System::Windows::Media::Imaging::PngInterlaceOption value); };" />
+      <MemberSignature Language="F#" Value="member this.Interlace : System.Windows.Media.Imaging.PngInterlaceOption with get, set" Usage="System.Windows.Media.Imaging.PngBitmapEncoder.Interlace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

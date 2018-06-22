@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class XAttribute&#xA;Inherits XObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class XAttribute : System::Xml::Linq::XObject" />
+  <TypeSignature Language="F#" Value="type XAttribute = class&#xA;    inherit XObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.#ctor(System.Xml.Linq.XAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As XAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XAttribute(System::Xml::Linq::XAttribute ^ other);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XAttribute : System.Xml.Linq.XAttribute -&gt; System.Xml.Linq.XAttribute" Usage="new System.Xml.Linq.XAttribute other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -149,6 +151,7 @@ Creating a deep copy created a new attribute from the original.
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.#ctor(System.Xml.Linq.XName,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As XName, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XAttribute(System::Xml::Linq::XName ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XAttribute : System.Xml.Linq.XName * obj -&gt; System.Xml.Linq.XAttribute" Usage="new System.Xml.Linq.XAttribute (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -271,6 +274,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XAttribute.EmptySequence" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EmptySequence As IEnumerable(Of XAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ EmptySequence { System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmptySequence : seq&lt;System.Xml.Linq.XAttribute&gt;" Usage="System.Xml.Linq.XAttribute.EmptySequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -312,6 +316,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XAttribute.IsNamespaceDeclaration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNamespaceDeclaration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNamespaceDeclaration { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNamespaceDeclaration : bool" Usage="System.Xml.Linq.XAttribute.IsNamespaceDeclaration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -393,6 +398,7 @@ Next
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ Name { System::Xml::Linq::XName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Xml.Linq.XName" Usage="System.Xml.Linq.XAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -495,6 +501,7 @@ Att2=new content
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XAttribute.NextAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextAttribute As XAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XAttribute ^ NextAttribute { System::Xml::Linq::XAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextAttribute : System.Xml.Linq.XAttribute" Usage="System.Xml.Linq.XAttribute.NextAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -576,6 +583,7 @@ Att4="4"
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XAttribute.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.Linq.XAttribute.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -644,6 +652,7 @@ Attribute
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator bool(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; bool" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -718,6 +727,7 @@ Console.WriteLine("(bool)BoolValue={0}", bv)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.DateTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator DateTime(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; DateTime" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -829,6 +839,7 @@ OrderDate=10/6/2006
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.DateTimeOffset" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator DateTimeOffset(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; DateTimeOffset" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -912,6 +923,7 @@ dt=10/6/2006 12:30:00 PM -07:00
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Decimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Decimal(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; decimal" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -981,6 +993,7 @@ value=79228162514264337593543950335
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Double" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator double(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; double" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1050,6 +1063,7 @@ value=1.79769313486231E+308
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Guid" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Guid(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Guid" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1119,6 +1133,7 @@ value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator int(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; int" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1188,6 +1203,7 @@ value=2147483647
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator long(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; int64" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1257,6 +1273,7 @@ value=9223372036854775807
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Boolean}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;bool&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;bool&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1336,6 +1353,7 @@ Nullable boolean: BoolValue2=False
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.DateTime}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;DateTime&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;DateTime&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1413,6 +1431,7 @@ Nullable DateTime: value=10/6/2006 12:30:00 PM
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.DateTimeOffset}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;DateTimeOffset&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;DateTimeOffset&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1487,6 +1506,7 @@ Nullable DateTimeOffset: value=10/6/2006 12:30:00 PM -07:00
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Decimal}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;System::Decimal&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;decimal&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1555,6 +1575,7 @@ Nullable decimal: value=79228162514264337593543950335
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Double}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;double&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;double&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1623,6 +1644,7 @@ Nullable double: value=1.79769313486231E+308
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Guid}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;Guid&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;Guid&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1691,6 +1713,7 @@ Nullable Guid: value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int32}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;int&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;int&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1758,6 +1781,7 @@ Nullable int: value=2147483647
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int64}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;long&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;int64&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1826,6 +1850,7 @@ Nullable long: value=9223372036854775807
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Single}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;float&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;single&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1894,6 +1919,7 @@ Nullable Single: value=3.402823E+38
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.TimeSpan}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;TimeSpan&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;TimeSpan&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1969,6 +1995,7 @@ Nullable TimeSpan: value=01:05:30
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt32}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;System::UInt32&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;uint32&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2037,6 +2064,7 @@ Nullable uint: value=4294967295
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt64}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Nullable(Of ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;System::UInt64&gt;(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; Nullable&lt;uint64&gt;" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2105,6 +2133,7 @@ Nullable ulong: value=9223372036854775807
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Single" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator float(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; single" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2174,6 +2203,7 @@ value=3.402823E+38
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::String ^(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; string" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2243,6 +2273,7 @@ Console.WriteLine("(string)att={0}", str)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.TimeSpan" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator TimeSpan(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; TimeSpan" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2319,6 +2350,7 @@ value=01:05:30
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt32(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; uint32" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2388,6 +2420,7 @@ value=4294967295
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (attribute As XAttribute) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt64(System::Xml::Linq::XAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XAttribute -&gt; uint64" Usage="System.Xml.Linq.XAttribute.op_Explicit attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2457,6 +2490,7 @@ value=1844674407370955161
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XAttribute.PreviousAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousAttribute As XAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XAttribute ^ PreviousAttribute { System::Xml::Linq::XAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousAttribute : System.Xml.Linq.XAttribute" Usage="System.Xml.Linq.XAttribute.PreviousAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2539,6 +2573,7 @@ Att1="1"
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
+      <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; unit" Usage="xAttribute.Remove " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2612,6 +2647,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.SetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : obj -&gt; unit" Usage="xAttribute.SetValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2693,6 +2729,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xAttribute.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2766,6 +2803,7 @@ Att2="content2"
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Xml.Linq.XAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

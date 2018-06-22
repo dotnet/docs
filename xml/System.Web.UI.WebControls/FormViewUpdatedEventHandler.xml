@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewUpdatedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewUpdatedEventHandler(sender As Object, e As FormViewUpdatedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FormViewUpdatedEventHandler(System::Object ^ sender, FormViewUpdatedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FormViewUpdatedEventHandler = delegate of obj * FormViewUpdatedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

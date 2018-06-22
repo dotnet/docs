@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TypeValidationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TypeValidationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeValidationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type TypeValidationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TypeValidationEventArgs.#ctor(System.Type,System.Boolean,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (validatingType As Type, isValidInput As Boolean, returnValue As Object, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeValidationEventArgs(Type ^ validatingType, bool isValidInput, System::Object ^ returnValue, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TypeValidationEventArgs : Type * bool * obj * string -&gt; System.Windows.Forms.TypeValidationEventArgs" Usage="new System.Windows.Forms.TypeValidationEventArgs (validatingType, isValidInput, returnValue, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.Windows.Forms.TypeValidationEventArgs.Cancel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.IsValidInput" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValidInput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValidInput { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValidInput : bool" Usage="System.Windows.Forms.TypeValidationEventArgs.IsValidInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Windows.Forms.TypeValidationEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ReturnValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnValue : obj" Usage="System.Windows.Forms.TypeValidationEventArgs.ReturnValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.ValidatingType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidatingType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ValidatingType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatingType : Type" Usage="System.Windows.Forms.TypeValidationEventArgs.ValidatingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

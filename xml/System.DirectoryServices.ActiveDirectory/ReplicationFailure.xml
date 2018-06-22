@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationFailure" />
   <TypeSignature Language="VB.NET" Value="Public Class ReplicationFailure" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReplicationFailure" />
+  <TypeSignature Language="F#" Value="type ReplicationFailure = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationFailure.ConsecutiveFailureCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConsecutiveFailureCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConsecutiveFailureCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConsecutiveFailureCount : int" Usage="System.DirectoryServices.ActiveDirectory.ReplicationFailure.ConsecutiveFailureCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationFailure.FirstFailureTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstFailureTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime FirstFailureTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstFailureTime : DateTime" Usage="System.DirectoryServices.ActiveDirectory.ReplicationFailure.FirstFailureTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationFailure.LastErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LastErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastErrorCode : int" Usage="System.DirectoryServices.ActiveDirectory.ReplicationFailure.LastErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationFailure.LastErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastErrorMessage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastErrorMessage : string" Usage="System.DirectoryServices.ActiveDirectory.ReplicationFailure.LastErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationFailure.SourceServer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceServer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceServer { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceServer : string" Usage="System.DirectoryServices.ActiveDirectory.ReplicationFailure.SourceServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

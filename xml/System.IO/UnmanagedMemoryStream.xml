@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.UnmanagedMemoryStream" />
   <TypeSignature Language="VB.NET" Value="Public Class UnmanagedMemoryStream&#xA;Inherits Stream" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnmanagedMemoryStream : System::IO::Stream" />
+  <TypeSignature Language="F#" Value="type UnmanagedMemoryStream = class&#xA;    inherit Stream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* pointer, int64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.#ctor(System.Byte*,System.Int64)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnmanagedMemoryStream(System::Byte* pointer, long length);" />
+      <MemberSignature Language="F#" Value="new System.IO.UnmanagedMemoryStream : nativeptr&lt;byte&gt; * int64 -&gt; System.IO.UnmanagedMemoryStream" Usage="new System.IO.UnmanagedMemoryStream (pointer, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -164,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (buffer As SafeBuffer, offset As Long, length As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnmanagedMemoryStream(System::Runtime::InteropServices::SafeBuffer ^ buffer, long offset, long length);" />
+      <MemberSignature Language="F#" Value="new System.IO.UnmanagedMemoryStream : System.Runtime.InteropServices.SafeBuffer * int64 * int64 -&gt; System.IO.UnmanagedMemoryStream" Usage="new System.IO.UnmanagedMemoryStream (buffer, offset, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -206,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* pointer, int64 length, int64 capacity, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.#ctor(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnmanagedMemoryStream(System::Byte* pointer, long length, long capacity, System::IO::FileAccess access);" />
+      <MemberSignature Language="F#" Value="new System.IO.UnmanagedMemoryStream : nativeptr&lt;byte&gt; * int64 * int64 * System.IO.FileAccess -&gt; System.IO.UnmanagedMemoryStream" Usage="new System.IO.UnmanagedMemoryStream (pointer, length, capacity, access)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -285,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (buffer As SafeBuffer, offset As Long, length As Long, access As FileAccess)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnmanagedMemoryStream(System::Runtime::InteropServices::SafeBuffer ^ buffer, long offset, long length, System::IO::FileAccess access);" />
+      <MemberSignature Language="F#" Value="new System.IO.UnmanagedMemoryStream : System.Runtime.InteropServices.SafeBuffer * int64 * int64 * System.IO.FileAccess -&gt; System.IO.UnmanagedMemoryStream" Usage="new System.IO.UnmanagedMemoryStream (buffer, offset, length, access)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -330,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryStream.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.IO.UnmanagedMemoryStream.CanRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -379,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryStream.CanSeek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.IO.UnmanagedMemoryStream.CanSeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -421,6 +428,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryStream.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.IO.UnmanagedMemoryStream.CanWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -470,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryStream.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Capacity As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Capacity { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int64" Usage="System.IO.UnmanagedMemoryStream.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -512,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="unmanagedMemoryStream.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -570,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="unmanagedMemoryStream.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -611,6 +622,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.FlushAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="unmanagedMemoryStream.FlushAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -671,6 +683,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(unsigned int8* pointer, int64 length, int64 capacity, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Initialize(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::Byte* pointer, long length, long capacity, System::IO::FileAccess access);" />
+      <MemberSignature Language="F#" Value="member this.Initialize : nativeptr&lt;byte&gt; * int64 * int64 * System.IO.FileAccess -&gt; unit" Usage="unmanagedMemoryStream.Initialize (pointer, length, capacity, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -742,6 +755,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Initialize (buffer As SafeBuffer, offset As Long, length As Long, access As FileAccess)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::Runtime::InteropServices::SafeBuffer ^ buffer, long offset, long length, System::IO::FileAccess access);" />
+      <MemberSignature Language="F#" Value="member this.Initialize : System.Runtime.InteropServices.SafeBuffer * int64 * int64 * System.IO.FileAccess -&gt; unit" Usage="unmanagedMemoryStream.Initialize (buffer, offset, length, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -790,6 +804,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryStream.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.IO.UnmanagedMemoryStream.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -839,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryStream.Position" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.IO.UnmanagedMemoryStream.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -888,6 +904,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8* PositionPointer" />
       <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryStream.PositionPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte* PositionPointer { System::Byte* get(); void set(System::Byte* value); };" />
+      <MemberSignature Language="F#" Value="member this.PositionPointer : nativeptr&lt;byte&gt; with get, set" Usage="System.IO.UnmanagedMemoryStream.PositionPointer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -946,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Read(System.Span{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (destination As Span(Of Byte)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(Span&lt;System::Byte&gt; destination);" />
+      <MemberSignature Language="F#" Value="override this.Read : Span&lt;byte&gt; -&gt; int" Usage="unmanagedMemoryStream.Read destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -970,6 +988,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="unmanagedMemoryStream.Read (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -1045,6 +1064,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="unmanagedMemoryStream.ReadAsync (buffer, offset, count, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -1103,6 +1123,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.ReadByte" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
+      <MemberSignature Language="F#" Value="override this.ReadByte : unit -&gt; int" Usage="unmanagedMemoryStream.ReadByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -1163,6 +1184,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, loc As SeekOrigin) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin loc);" />
+      <MemberSignature Language="F#" Value="override this.Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="unmanagedMemoryStream.Seek (offset, loc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -1215,6 +1237,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
+      <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="unmanagedMemoryStream.SetLength value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -1278,6 +1301,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Write(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (source As ReadOnlySpan(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="override this.Write : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="unmanagedMemoryStream.Write source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1301,6 +1325,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="unmanagedMemoryStream.Write (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -1378,6 +1403,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="unmanagedMemoryStream.WriteAsync (buffer, offset, count, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
@@ -1436,6 +1462,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryStream.WriteByte(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteByte (value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
+      <MemberSignature Language="F#" Value="override this.WriteByte : byte -&gt; unit" Usage="unmanagedMemoryStream.WriteByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>

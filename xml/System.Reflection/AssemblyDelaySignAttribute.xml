@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyDelaySignAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyDelaySignAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyDelaySignAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyDelaySignAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@ sn -k TestPublicKey.snk
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyDelaySignAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (delaySign As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyDelaySignAttribute(bool delaySign);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyDelaySignAttribute : bool -&gt; System.Reflection.AssemblyDelaySignAttribute" Usage="new System.Reflection.AssemblyDelaySignAttribute delaySign" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -106,6 +108,7 @@ sn -k TestPublicKey.snk
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyDelaySignAttribute.DelaySign" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DelaySign As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DelaySign { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DelaySign : bool" Usage="System.Reflection.AssemblyDelaySignAttribute.DelaySign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

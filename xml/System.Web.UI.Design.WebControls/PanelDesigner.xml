@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.PanelDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class PanelDesigner&#xA;Inherits ReadWriteControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class PanelDesigner : System::Web::UI::Design::ReadWriteControlDesigner" />
+  <TypeSignature Language="F#" Value="type PanelDesigner = class&#xA;    inherit ReadWriteControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.PanelDesigner.MapPropertyToStyle(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub MapPropertyToStyle (propName As String, varPropValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void MapPropertyToStyle(System::String ^ propName, System::Object ^ varPropValue);" />
+      <MemberSignature Language="F#" Value="override this.MapPropertyToStyle : string * obj -&gt; unit" Usage="panelDesigner.MapPropertyToStyle (propName, varPropValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.PanelDesigner.OnBehaviorAttached" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBehaviorAttached ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBehaviorAttached();" />
+      <MemberSignature Language="F#" Value="override this.OnBehaviorAttached : unit -&gt; unit" Usage="panelDesigner.OnBehaviorAttached " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SameSiteMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SameSiteMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SameSiteMode" />
+  <TypeSignature Language="F#" Value="type SameSiteMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SameSiteMode.Lax" />
       <MemberSignature Language="VB.NET" Value="Lax" />
       <MemberSignature Language="C++ CLI" Value="Lax" />
+      <MemberSignature Language="F#" Value="Lax = 1" Usage="System.Web.SameSiteMode.Lax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SameSiteMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.SameSiteMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SameSiteMode.Strict" />
       <MemberSignature Language="VB.NET" Value="Strict" />
       <MemberSignature Language="C++ CLI" Value="Strict" />
+      <MemberSignature Language="F#" Value="Strict = 2" Usage="System.Web.SameSiteMode.Strict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

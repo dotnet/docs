@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Spatial.DbSpatialDataReader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbSpatialDataReader" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbSpatialDataReader abstract" />
+  <TypeSignature Language="F#" Value="type DbSpatialDataReader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialDataReader.GetGeography(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetGeography (ordinal As Integer) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeography ^ GetGeography(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetGeography : int -&gt; System.Data.Spatial.DbGeography" Usage="dbSpatialDataReader.GetGeography ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialDataReader.GetGeometry(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetGeometry (ordinal As Integer) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Spatial::DbGeometry ^ GetGeometry(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetGeometry : int -&gt; System.Data.Spatial.DbGeometry" Usage="dbSpatialDataReader.GetGeometry ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

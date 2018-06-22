@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IObserver`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IObserver(Of In T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IObserver" />
+  <TypeSignature Language="F#" Value="type IObserver&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.IObserver`1.OnCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnCompleted();" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : unit -&gt; unit" Usage="iObserver.OnCompleted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -139,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.IObserver`1.OnError(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnError (error As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnError(Exception ^ error);" />
+      <MemberSignature Language="F#" Value="abstract member OnError : Exception -&gt; unit" Usage="iObserver.OnError error" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -190,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnNext(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IObserver`1.OnNext(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnNext (value As T)" />
+      <MemberSignature Language="F#" Value="abstract member OnNext : 'T -&gt; unit" Usage="iObserver.OnNext value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

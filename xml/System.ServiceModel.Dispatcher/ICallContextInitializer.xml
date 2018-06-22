@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ICallContextInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICallContextInitializer" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICallContextInitializer" />
+  <TypeSignature Language="F#" Value="type ICallContextInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ICallContextInitializer.AfterInvoke(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AfterInvoke (correlationState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AfterInvoke(System::Object ^ correlationState);" />
+      <MemberSignature Language="F#" Value="abstract member AfterInvoke : obj -&gt; unit" Usage="iCallContextInitializer.AfterInvoke correlationState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object BeforeInvoke(class System.ServiceModel.InstanceContext instanceContext, class System.ServiceModel.IClientChannel channel, class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ICallContextInitializer.BeforeInvoke(System.ServiceModel.InstanceContext,System.ServiceModel.IClientChannel,System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ BeforeInvoke(System::ServiceModel::InstanceContext ^ instanceContext, System::ServiceModel::IClientChannel ^ channel, System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member BeforeInvoke : System.ServiceModel.InstanceContext * System.ServiceModel.IClientChannel * System.ServiceModel.Channels.Message -&gt; obj" Usage="iCallContextInitializer.BeforeInvoke (instanceContext, channel, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

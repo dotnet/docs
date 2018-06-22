@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplicationInstance" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowApplicationInstance" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowApplicationInstance" />
+  <TypeSignature Language="F#" Value="type WorkflowApplicationInstance = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationInstance.Abandon" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abandon ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abandon();" />
+      <MemberSignature Language="F#" Value="member this.Abandon : unit -&gt; unit" Usage="workflowApplicationInstance.Abandon " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationInstance.Abandon(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abandon (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abandon(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Abandon : TimeSpan -&gt; unit" Usage="workflowApplicationInstance.Abandon timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationInstance.BeginAbandon(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginAbandon (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAbandon(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginAbandon : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplicationInstance.BeginAbandon (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationInstance.BeginAbandon(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginAbandon (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAbandon(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginAbandon : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplicationInstance.BeginAbandon (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationInstance.CanApplyUpdate(System.Activities.DynamicUpdate.DynamicUpdateMap,System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanApplyUpdate (updateMap As DynamicUpdateMap, ByRef activitiesBlockingUpdate As IList(Of ActivityBlockingUpdate)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanApplyUpdate(System::Activities::DynamicUpdate::DynamicUpdateMap ^ updateMap, [Runtime::InteropServices::Out] System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ % activitiesBlockingUpdate);" />
+      <MemberSignature Language="F#" Value="member this.CanApplyUpdate : System.Activities.DynamicUpdate.DynamicUpdateMap *  -&gt; bool" Usage="workflowApplicationInstance.CanApplyUpdate (updateMap, activitiesBlockingUpdate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationInstance.DefinitionIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefinitionIdentity As WorkflowIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::WorkflowIdentity ^ DefinitionIdentity { System::Activities::WorkflowIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefinitionIdentity : System.Activities.WorkflowIdentity" Usage="System.Activities.WorkflowApplicationInstance.DefinitionIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationInstance.EndAbandon(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndAbandon (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndAbandon(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndAbandon : IAsyncResult -&gt; unit" Usage="workflowApplicationInstance.EndAbandon asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationInstance.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.Activities.WorkflowApplicationInstance.InstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -253,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationInstance.InstanceStore" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceStore As InstanceStore" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceStore ^ InstanceStore { System::Runtime::DurableInstancing::InstanceStore ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceStore : System.Runtime.DurableInstancing.InstanceStore" Usage="System.Activities.WorkflowApplicationInstance.InstanceStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.Collation" />
   <TypeSignature Language="VB.NET" Value="Public Enum Collation" />
   <TypeSignature Language="C++ CLI" Value="public enum class Collation" />
+  <TypeSignature Language="F#" Value="type Collation = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Collated" />
       <MemberSignature Language="VB.NET" Value="Collated" />
       <MemberSignature Language="C++ CLI" Value="Collated" />
+      <MemberSignature Language="F#" Value="Collated = 1" Usage="System.Printing.Collation.Collated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Uncollated" />
       <MemberSignature Language="VB.NET" Value="Uncollated" />
       <MemberSignature Language="C++ CLI" Value="Uncollated" />
+      <MemberSignature Language="F#" Value="Uncollated = 2" Usage="System.Printing.Collation.Uncollated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.Collation.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

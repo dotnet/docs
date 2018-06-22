@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.ProtocolFamily" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProtocolFamily" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProtocolFamily" />
+  <TypeSignature Language="F#" Value="type ProtocolFamily = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.AppleTalk" />
       <MemberSignature Language="VB.NET" Value="AppleTalk" />
       <MemberSignature Language="C++ CLI" Value="AppleTalk" />
+      <MemberSignature Language="F#" Value="AppleTalk = 16" Usage="System.Net.Sockets.ProtocolFamily.AppleTalk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Atm" />
       <MemberSignature Language="VB.NET" Value="Atm" />
       <MemberSignature Language="C++ CLI" Value="Atm" />
+      <MemberSignature Language="F#" Value="Atm = 22" Usage="System.Net.Sockets.ProtocolFamily.Atm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Banyan" />
       <MemberSignature Language="VB.NET" Value="Banyan" />
       <MemberSignature Language="C++ CLI" Value="Banyan" />
+      <MemberSignature Language="F#" Value="Banyan = 21" Usage="System.Net.Sockets.ProtocolFamily.Banyan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Ccitt" />
       <MemberSignature Language="VB.NET" Value="Ccitt" />
       <MemberSignature Language="C++ CLI" Value="Ccitt" />
+      <MemberSignature Language="F#" Value="Ccitt = 10" Usage="System.Net.Sockets.ProtocolFamily.Ccitt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Chaos" />
       <MemberSignature Language="VB.NET" Value="Chaos" />
       <MemberSignature Language="C++ CLI" Value="Chaos" />
+      <MemberSignature Language="F#" Value="Chaos = 5" Usage="System.Net.Sockets.ProtocolFamily.Chaos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Cluster" />
       <MemberSignature Language="VB.NET" Value="Cluster" />
       <MemberSignature Language="C++ CLI" Value="Cluster" />
+      <MemberSignature Language="F#" Value="Cluster = 24" Usage="System.Net.Sockets.ProtocolFamily.Cluster" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.DataKit" />
       <MemberSignature Language="VB.NET" Value="DataKit" />
       <MemberSignature Language="C++ CLI" Value="DataKit" />
+      <MemberSignature Language="F#" Value="DataKit = 9" Usage="System.Net.Sockets.ProtocolFamily.DataKit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.DataLink" />
       <MemberSignature Language="VB.NET" Value="DataLink" />
       <MemberSignature Language="C++ CLI" Value="DataLink" />
+      <MemberSignature Language="F#" Value="DataLink = 13" Usage="System.Net.Sockets.ProtocolFamily.DataLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.DecNet" />
       <MemberSignature Language="VB.NET" Value="DecNet" />
       <MemberSignature Language="C++ CLI" Value="DecNet" />
+      <MemberSignature Language="F#" Value="DecNet = 12" Usage="System.Net.Sockets.ProtocolFamily.DecNet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Ecma" />
       <MemberSignature Language="VB.NET" Value="Ecma" />
       <MemberSignature Language="C++ CLI" Value="Ecma" />
+      <MemberSignature Language="F#" Value="Ecma = 8" Usage="System.Net.Sockets.ProtocolFamily.Ecma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -332,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.FireFox" />
       <MemberSignature Language="VB.NET" Value="FireFox" />
       <MemberSignature Language="C++ CLI" Value="FireFox" />
+      <MemberSignature Language="F#" Value="FireFox = 19" Usage="System.Net.Sockets.ProtocolFamily.FireFox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -361,6 +373,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.HyperChannel" />
       <MemberSignature Language="VB.NET" Value="HyperChannel" />
       <MemberSignature Language="C++ CLI" Value="HyperChannel" />
+      <MemberSignature Language="F#" Value="HyperChannel = 15" Usage="System.Net.Sockets.ProtocolFamily.HyperChannel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Ieee12844" />
       <MemberSignature Language="VB.NET" Value="Ieee12844" />
       <MemberSignature Language="C++ CLI" Value="Ieee12844" />
+      <MemberSignature Language="F#" Value="Ieee12844 = 25" Usage="System.Net.Sockets.ProtocolFamily.Ieee12844" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -419,6 +433,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.ImpLink" />
       <MemberSignature Language="VB.NET" Value="ImpLink" />
       <MemberSignature Language="C++ CLI" Value="ImpLink" />
+      <MemberSignature Language="F#" Value="ImpLink = 3" Usage="System.Net.Sockets.ProtocolFamily.ImpLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -448,6 +463,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.InterNetwork" />
       <MemberSignature Language="VB.NET" Value="InterNetwork" />
       <MemberSignature Language="C++ CLI" Value="InterNetwork" />
+      <MemberSignature Language="F#" Value="InterNetwork = 2" Usage="System.Net.Sockets.ProtocolFamily.InterNetwork" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -477,6 +493,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.InterNetworkV6" />
       <MemberSignature Language="VB.NET" Value="InterNetworkV6" />
       <MemberSignature Language="C++ CLI" Value="InterNetworkV6" />
+      <MemberSignature Language="F#" Value="InterNetworkV6 = 23" Usage="System.Net.Sockets.ProtocolFamily.InterNetworkV6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -506,6 +523,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Ipx" />
       <MemberSignature Language="VB.NET" Value="Ipx" />
       <MemberSignature Language="C++ CLI" Value="Ipx" />
+      <MemberSignature Language="F#" Value="Ipx = 6" Usage="System.Net.Sockets.ProtocolFamily.Ipx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -535,6 +553,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Irda" />
       <MemberSignature Language="VB.NET" Value="Irda" />
       <MemberSignature Language="C++ CLI" Value="Irda" />
+      <MemberSignature Language="F#" Value="Irda = 26" Usage="System.Net.Sockets.ProtocolFamily.Irda" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -564,6 +583,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Iso" />
       <MemberSignature Language="VB.NET" Value="Iso" />
       <MemberSignature Language="C++ CLI" Value="Iso" />
+      <MemberSignature Language="F#" Value="Iso = 7" Usage="System.Net.Sockets.ProtocolFamily.Iso" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -593,6 +613,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Lat" />
       <MemberSignature Language="VB.NET" Value="Lat" />
       <MemberSignature Language="C++ CLI" Value="Lat" />
+      <MemberSignature Language="F#" Value="Lat = 14" Usage="System.Net.Sockets.ProtocolFamily.Lat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -622,6 +643,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Max" />
       <MemberSignature Language="VB.NET" Value="Max" />
       <MemberSignature Language="C++ CLI" Value="Max" />
+      <MemberSignature Language="F#" Value="Max = 29" Usage="System.Net.Sockets.ProtocolFamily.Max" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -651,6 +673,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.NetBios" />
       <MemberSignature Language="VB.NET" Value="NetBios" />
       <MemberSignature Language="C++ CLI" Value="NetBios" />
+      <MemberSignature Language="F#" Value="NetBios = 17" Usage="System.Net.Sockets.ProtocolFamily.NetBios" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -680,6 +703,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.NetworkDesigners" />
       <MemberSignature Language="VB.NET" Value="NetworkDesigners" />
       <MemberSignature Language="C++ CLI" Value="NetworkDesigners" />
+      <MemberSignature Language="F#" Value="NetworkDesigners = 28" Usage="System.Net.Sockets.ProtocolFamily.NetworkDesigners" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -709,6 +733,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.NS" />
       <MemberSignature Language="VB.NET" Value="NS" />
       <MemberSignature Language="C++ CLI" Value="NS" />
+      <MemberSignature Language="F#" Value="NS = 6" Usage="System.Net.Sockets.ProtocolFamily.NS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -738,6 +763,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Osi" />
       <MemberSignature Language="VB.NET" Value="Osi" />
       <MemberSignature Language="C++ CLI" Value="Osi" />
+      <MemberSignature Language="F#" Value="Osi = 7" Usage="System.Net.Sockets.ProtocolFamily.Osi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -767,6 +793,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Pup" />
       <MemberSignature Language="VB.NET" Value="Pup" />
       <MemberSignature Language="C++ CLI" Value="Pup" />
+      <MemberSignature Language="F#" Value="Pup = 4" Usage="System.Net.Sockets.ProtocolFamily.Pup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -796,6 +823,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Sna" />
       <MemberSignature Language="VB.NET" Value="Sna" />
       <MemberSignature Language="C++ CLI" Value="Sna" />
+      <MemberSignature Language="F#" Value="Sna = 11" Usage="System.Net.Sockets.ProtocolFamily.Sna" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -825,6 +853,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Unix" />
       <MemberSignature Language="VB.NET" Value="Unix" />
       <MemberSignature Language="C++ CLI" Value="Unix" />
+      <MemberSignature Language="F#" Value="Unix = 1" Usage="System.Net.Sockets.ProtocolFamily.Unix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -854,6 +883,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Net.Sockets.ProtocolFamily.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -883,6 +913,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.Net.Sockets.ProtocolFamily.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -912,6 +943,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.VoiceView" />
       <MemberSignature Language="VB.NET" Value="VoiceView" />
       <MemberSignature Language="C++ CLI" Value="VoiceView" />
+      <MemberSignature Language="F#" Value="VoiceView = 18" Usage="System.Net.Sockets.ProtocolFamily.VoiceView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

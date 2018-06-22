@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SearchDirectionHint" />
   <TypeSignature Language="VB.NET" Value="Public Enum SearchDirectionHint" />
   <TypeSignature Language="C++ CLI" Value="public enum class SearchDirectionHint" />
+  <TypeSignature Language="F#" Value="type SearchDirectionHint = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SearchDirectionHint.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 40" Usage="System.Windows.Forms.SearchDirectionHint.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SearchDirectionHint.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 37" Usage="System.Windows.Forms.SearchDirectionHint.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SearchDirectionHint.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 39" Usage="System.Windows.Forms.SearchDirectionHint.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SearchDirectionHint.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 38" Usage="System.Windows.Forms.SearchDirectionHint.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

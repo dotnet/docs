@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Expressions.ExpressionActivityEditor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpressionActivityEditor&#xA;Inherits UserControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpressionActivityEditor abstract : System::Windows::Controls::UserControl" />
+  <TypeSignature Language="F#" Value="type ExpressionActivityEditor = class&#xA;    inherit UserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.AcceptsReturn" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptsReturn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptsReturn { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptsReturn : bool with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.AcceptsReturn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.AcceptsReturnProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AcceptsReturnProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AcceptsReturnProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AcceptsReturnProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.AcceptsReturnProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.AcceptsTab" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptsTab As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptsTab { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptsTab : bool with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.AcceptsTab" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.AcceptsTabProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AcceptsTabProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AcceptsTabProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AcceptsTabProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.AcceptsTabProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionActivityEditor.BeginEdit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginEdit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginEdit : unit -&gt; unit&#xA;override this.BeginEdit : unit -&gt; unit" Usage="expressionActivityEditor.BeginEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionActivityEditor.CanCommit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanCommit () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanCommit();" />
+      <MemberSignature Language="F#" Value="abstract member CanCommit : unit -&gt; bool&#xA;override this.CanCommit : unit -&gt; bool" Usage="expressionActivityEditor.CanCommit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -162,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionActivityEditor.Commit(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Commit (isExplicitCommit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Commit(bool isExplicitCommit);" />
+      <MemberSignature Language="F#" Value="abstract member Commit : bool -&gt; bool" Usage="expressionActivityEditor.Commit isExplicitCommit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -188,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.Context" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Context As EditingContext" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Activities::Presentation::EditingContext ^ Context { System::Activities::Presentation::EditingContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Activities.Presentation.EditingContext" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -208,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExplicitCommit" />
       <MemberSignature Language="VB.NET" Value="Public Property ExplicitCommit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExplicitCommit { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExplicitCommit : bool with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExplicitCommit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -229,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExplicitCommitProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExplicitCommitProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExplicitCommitProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExplicitCommitProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExplicitCommitProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -248,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::ModelItem ^ Expression { System::Activities::Presentation::Model::ModelItem ^ get(); void set(System::Activities::Presentation::Model::ModelItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Activities.Presentation.Model.ModelItem with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -268,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExpressionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpressionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExpressionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExpressionProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExpressionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -287,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExpressionType" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpressionType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ExpressionType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionType : Type with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExpressionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -307,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExpressionTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpressionTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExpressionTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExpressionTypeProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.ExpressionTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -326,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionActivityEditor.GetExpressionActivityEditor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetExpressionActivityEditor (target As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetExpressionActivityEditor(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetExpressionActivityEditor : obj -&gt; string" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.GetExpressionActivityEditor target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -350,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.HintText" />
       <MemberSignature Language="VB.NET" Value="Public Property HintText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HintText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HintText : string with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.HintText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -370,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.HintTextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HintTextProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HintTextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HintTextProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.HintTextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -389,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.HorizontalScrollBarVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalScrollBarVisibility As ScrollBarVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollBarVisibility HorizontalScrollBarVisibility { System::Windows::Controls::ScrollBarVisibility get(); void set(System::Windows::Controls::ScrollBarVisibility value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarVisibility : System.Windows.Controls.ScrollBarVisibility with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.HorizontalScrollBarVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -409,6 +428,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.HorizontalScrollBarVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalScrollBarVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalScrollBarVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.HorizontalScrollBarVisibilityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -428,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsIndependentExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property IsIndependentExpression As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIndependentExpression { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsIndependentExpression : bool with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsIndependentExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -449,6 +470,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsIndependentExpressionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsIndependentExpressionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsIndependentExpressionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsIndependentExpressionProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsIndependentExpressionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -468,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -489,6 +512,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsReadOnlyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsReadOnlyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsReadOnlyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsReadOnlyProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsReadOnlyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -508,6 +532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsSupportedExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSupportedExpression As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSupportedExpression { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupportedExpression : bool with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsSupportedExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -529,6 +554,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsSupportedExpressionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSupportedExpressionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSupportedExpressionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSupportedExpressionProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.IsSupportedExpressionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -548,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.OwnerActivity" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnerActivity As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::ModelItem ^ OwnerActivity { System::Activities::Presentation::Model::ModelItem ^ get(); void set(System::Activities::Presentation::Model::ModelItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerActivity : System.Activities.Presentation.Model.ModelItem with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.OwnerActivity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -568,6 +595,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.OwnerActivityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OwnerActivityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OwnerActivityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OwnerActivityProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.OwnerActivityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -587,6 +615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.PathToArgument" />
       <MemberSignature Language="VB.NET" Value="Public Property PathToArgument As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PathToArgument { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PathToArgument : string with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.PathToArgument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -607,6 +636,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.PathToArgumentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PathToArgumentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PathToArgumentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PathToArgumentProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.PathToArgumentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -626,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionActivityEditor.SetExpressionActivityEditor(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetExpressionActivityEditor (target As Object, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetExpressionActivityEditor(System::Object ^ target, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member SetExpressionActivityEditor : obj * string -&gt; unit" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.SetExpressionActivityEditor (target, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -651,6 +682,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.UseLocationExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property UseLocationExpression As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLocationExpression { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseLocationExpression : bool with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.UseLocationExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -672,6 +704,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.UseLocationExpressionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UseLocationExpressionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UseLocationExpressionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UseLocationExpressionProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.UseLocationExpressionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -691,6 +724,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionActivityEditor.VerticalScrollBarVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalScrollBarVisibility As ScrollBarVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollBarVisibility VerticalScrollBarVisibility { System::Windows::Controls::ScrollBarVisibility get(); void set(System::Windows::Controls::ScrollBarVisibility value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarVisibility : System.Windows.Controls.ScrollBarVisibility with get, set" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.VerticalScrollBarVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -711,6 +745,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.ExpressionActivityEditor.VerticalScrollBarVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalScrollBarVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalScrollBarVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.ExpressionActivityEditor.VerticalScrollBarVisibilityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

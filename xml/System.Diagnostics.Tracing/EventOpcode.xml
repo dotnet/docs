@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventOpcode" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventOpcode" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventOpcode" />
+  <TypeSignature Language="F#" Value="type EventOpcode = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.DataCollectionStart" />
       <MemberSignature Language="VB.NET" Value="DataCollectionStart" />
       <MemberSignature Language="C++ CLI" Value="DataCollectionStart" />
+      <MemberSignature Language="F#" Value="DataCollectionStart = 3" Usage="System.Diagnostics.Tracing.EventOpcode.DataCollectionStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.DataCollectionStop" />
       <MemberSignature Language="VB.NET" Value="DataCollectionStop" />
       <MemberSignature Language="C++ CLI" Value="DataCollectionStop" />
+      <MemberSignature Language="F#" Value="DataCollectionStop = 4" Usage="System.Diagnostics.Tracing.EventOpcode.DataCollectionStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Extension" />
       <MemberSignature Language="VB.NET" Value="Extension" />
       <MemberSignature Language="C++ CLI" Value="Extension" />
+      <MemberSignature Language="F#" Value="Extension = 5" Usage="System.Diagnostics.Tracing.EventOpcode.Extension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Info" />
       <MemberSignature Language="VB.NET" Value="Info" />
       <MemberSignature Language="C++ CLI" Value="Info" />
+      <MemberSignature Language="F#" Value="Info = 0" Usage="System.Diagnostics.Tracing.EventOpcode.Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Receive" />
       <MemberSignature Language="VB.NET" Value="Receive" />
       <MemberSignature Language="C++ CLI" Value="Receive" />
+      <MemberSignature Language="F#" Value="Receive = 240" Usage="System.Diagnostics.Tracing.EventOpcode.Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Reply" />
       <MemberSignature Language="VB.NET" Value="Reply" />
       <MemberSignature Language="C++ CLI" Value="Reply" />
+      <MemberSignature Language="F#" Value="Reply = 6" Usage="System.Diagnostics.Tracing.EventOpcode.Reply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Resume" />
       <MemberSignature Language="VB.NET" Value="Resume" />
       <MemberSignature Language="C++ CLI" Value="Resume" />
+      <MemberSignature Language="F#" Value="Resume = 7" Usage="System.Diagnostics.Tracing.EventOpcode.Resume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Send" />
       <MemberSignature Language="VB.NET" Value="Send" />
       <MemberSignature Language="C++ CLI" Value="Send" />
+      <MemberSignature Language="F#" Value="Send = 9" Usage="System.Diagnostics.Tracing.EventOpcode.Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -313,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Start" />
       <MemberSignature Language="VB.NET" Value="Start" />
       <MemberSignature Language="C++ CLI" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 1" Usage="System.Diagnostics.Tracing.EventOpcode.Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -357,6 +367,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Stop" />
       <MemberSignature Language="VB.NET" Value="Stop" />
       <MemberSignature Language="C++ CLI" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 2" Usage="System.Diagnostics.Tracing.EventOpcode.Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -401,6 +412,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Suspend" />
       <MemberSignature Language="VB.NET" Value="Suspend" />
       <MemberSignature Language="C++ CLI" Value="Suspend" />
+      <MemberSignature Language="F#" Value="Suspend = 8" Usage="System.Diagnostics.Tracing.EventOpcode.Suspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

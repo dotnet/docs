@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.BooleanType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BooleanType" />
   <TypeSignature Language="C++ CLI" Value="public ref class BooleanType sealed" />
+  <TypeSignature Language="F#" Value="type BooleanType = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.BooleanType.FromObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool FromObject(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.BooleanType.FromObject Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.BooleanType.FromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool FromString(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.BooleanType.FromString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

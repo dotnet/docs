@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.TypeElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type TypeElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.Add(System.Web.Services.Configuration.TypeElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As TypeElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Services::Configuration::TypeElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Configuration.TypeElement -&gt; unit" Usage="typeElementCollection.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="typeElementCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.ContainsKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="member this.ContainsKey : obj -&gt; bool" Usage="typeElementCollection.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.CopyTo(System.Web.Services.Configuration.TypeElement[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TypeElement(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Configuration::TypeElement ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.Services.Configuration.TypeElement[] * int -&gt; unit" Usage="typeElementCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="typeElementCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="typeElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.IndexOf(System.Web.Services.Configuration.TypeElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As TypeElement) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Configuration::TypeElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Configuration.TypeElement -&gt; int" Usage="typeElementCollection.IndexOf element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -223,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.TypeElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TypeElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::TypeElement ^ default[int] { System::Web::Services::Configuration::TypeElement ^ get(int index); void set(int index, System::Web::Services::Configuration::TypeElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Configuration.TypeElement with get, set" Usage="System.Web.Services.Configuration.TypeElementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -247,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.TypeElementCollection.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As TypeElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::TypeElement ^ default[System::Object ^] { System::Web::Services::Configuration::TypeElement ^ get(System::Object ^ key); void set(System::Object ^ key, System::Web::Services::Configuration::TypeElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : System.Web.Services.Configuration.TypeElement with get, set" Usage="System.Web.Services.Configuration.TypeElementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -272,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.Remove(System.Web.Services.Configuration.TypeElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As TypeElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Configuration::TypeElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Configuration.TypeElement -&gt; unit" Usage="typeElementCollection.Remove element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -304,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="typeElementCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -327,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElementCollection.RemoveAt(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (key As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : obj -&gt; unit" Usage="typeElementCollection.RemoveAt key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

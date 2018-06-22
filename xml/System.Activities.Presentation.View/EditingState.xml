@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.EditingState" />
   <TypeSignature Language="VB.NET" Value="Public Enum EditingState" />
   <TypeSignature Language="C++ CLI" Value="public enum class EditingState" />
+  <TypeSignature Language="F#" Value="type EditingState = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.EditingState.Editing" />
       <MemberSignature Language="VB.NET" Value="Editing" />
       <MemberSignature Language="C++ CLI" Value="Editing" />
+      <MemberSignature Language="F#" Value="Editing = 0" Usage="System.Activities.Presentation.View.EditingState.Editing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.EditingState.Idle" />
       <MemberSignature Language="VB.NET" Value="Idle" />
       <MemberSignature Language="C++ CLI" Value="Idle" />
+      <MemberSignature Language="F#" Value="Idle = 2" Usage="System.Activities.Presentation.View.EditingState.Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.EditingState.Validating" />
       <MemberSignature Language="VB.NET" Value="Validating" />
       <MemberSignature Language="C++ CLI" Value="Validating" />
+      <MemberSignature Language="F#" Value="Validating = 1" Usage="System.Activities.Presentation.View.EditingState.Validating" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

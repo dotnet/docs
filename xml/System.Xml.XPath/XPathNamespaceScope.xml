@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathNamespaceScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum XPathNamespaceScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class XPathNamespaceScope" />
+  <TypeSignature Language="F#" Value="type XPathNamespaceScope = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNamespaceScope.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Xml.XPath.XPathNamespaceScope.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNamespaceScope.ExcludeXml" />
       <MemberSignature Language="VB.NET" Value="ExcludeXml" />
       <MemberSignature Language="C++ CLI" Value="ExcludeXml" />
+      <MemberSignature Language="F#" Value="ExcludeXml = 1" Usage="System.Xml.XPath.XPathNamespaceScope.ExcludeXml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNamespaceScope.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="C++ CLI" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 2" Usage="System.Xml.XPath.XPathNamespaceScope.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlDataSourceCommandEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceCommandEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceCommandEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs.#ctor(System.Data.Common.DbCommand)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (command As DbCommand)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataSourceCommandEventArgs(System::Data::Common::DbCommand ^ command);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SqlDataSourceCommandEventArgs : System.Data.Common.DbCommand -&gt; System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" Usage="new System.Web.UI.WebControls.SqlDataSourceCommandEventArgs command" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs.Command" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Command As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbCommand ^ Command { System::Data::Common::DbCommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Data.Common.DbCommand" Usage="System.Web.UI.WebControls.SqlDataSourceCommandEventArgs.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

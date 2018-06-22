@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.CompositionException" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositionException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionException : Exception" />
+  <TypeSignature Language="F#" Value="type CompositionException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.CompositionException.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.CompositionError})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errors As IEnumerable(Of CompositionError))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionException(System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::CompositionError ^&gt; ^ errors);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.CompositionException : seq&lt;System.ComponentModel.Composition.CompositionError&gt; -&gt; System.ComponentModel.Composition.CompositionException" Usage="new System.ComponentModel.Composition.CompositionException errors" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.CompositionException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.CompositionException : string -&gt; System.ComponentModel.Composition.CompositionException" Usage="new System.ComponentModel.Composition.CompositionException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.CompositionException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.CompositionException : string * Exception -&gt; System.ComponentModel.Composition.CompositionException" Usage="new System.ComponentModel.Composition.CompositionException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.CompositionException.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As ReadOnlyCollection(Of CompositionError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::CompositionError ^&gt; ^ Errors { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::CompositionError ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.CompositionError&gt;" Usage="System.ComponentModel.Composition.CompositionException.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.CompositionException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ComponentModel.Composition.CompositionException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.CompositionException.RootCauses" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootCauses As ReadOnlyCollection(Of Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Exception ^&gt; ^ RootCauses { System::Collections::ObjectModel::ReadOnlyCollection&lt;Exception ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootCauses : System.Collections.ObjectModel.ReadOnlyCollection&lt;Exception&gt;" Usage="System.ComponentModel.Composition.CompositionException.RootCauses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

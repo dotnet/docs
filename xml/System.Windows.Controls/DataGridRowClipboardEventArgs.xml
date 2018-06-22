@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridRowClipboardEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridRowClipboardEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridRowClipboardEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridRowClipboardEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRowClipboardEventArgs.#ctor(System.Object,System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Object, startColumnDisplayIndex As Integer, endColumnDisplayIndex As Integer, isColumnHeadersRow As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridRowClipboardEventArgs(System::Object ^ item, int startColumnDisplayIndex, int endColumnDisplayIndex, bool isColumnHeadersRow);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridRowClipboardEventArgs : obj * int * int * bool -&gt; System.Windows.Controls.DataGridRowClipboardEventArgs" Usage="new System.Windows.Controls.DataGridRowClipboardEventArgs (item, startColumnDisplayIndex, endColumnDisplayIndex, isColumnHeadersRow)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClipboardRowContent As List(Of DataGridClipboardCellContent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Windows::Controls::DataGridClipboardCellContent&gt; ^ ClipboardRowContent { System::Collections::Generic::List&lt;System::Windows::Controls::DataGridClipboardCellContent&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClipboardRowContent : System.Collections.Generic.List&lt;System.Windows.Controls.DataGridClipboardCellContent&gt;" Usage="System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowClipboardEventArgs.EndColumnDisplayIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndColumnDisplayIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndColumnDisplayIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndColumnDisplayIndex : int" Usage="System.Windows.Controls.DataGridRowClipboardEventArgs.EndColumnDisplayIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRowClipboardEventArgs.FormatClipboardCellValues(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FormatClipboardCellValues (format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ FormatClipboardCellValues(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="member this.FormatClipboardCellValues : string -&gt; string" Usage="dataGridRowClipboardEventArgs.FormatClipboardCellValues format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowClipboardEventArgs.IsColumnHeadersRow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsColumnHeadersRow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsColumnHeadersRow { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsColumnHeadersRow : bool" Usage="System.Windows.Controls.DataGridRowClipboardEventArgs.IsColumnHeadersRow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowClipboardEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : obj" Usage="System.Windows.Controls.DataGridRowClipboardEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowClipboardEventArgs.StartColumnDisplayIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartColumnDisplayIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartColumnDisplayIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartColumnDisplayIndex : int" Usage="System.Windows.Controls.DataGridRowClipboardEventArgs.StartColumnDisplayIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

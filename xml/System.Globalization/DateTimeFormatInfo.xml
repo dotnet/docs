@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.DateTimeFormatInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DateTimeFormatInfo&#xA;Implements ICloneable, IFormatProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateTimeFormatInfo sealed : ICloneable, IFormatProvider" />
+  <TypeSignature Language="F#" Value="type DateTimeFormatInfo = class&#xA;    interface ICloneable&#xA;    interface IFormatProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -424,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames" />
       <MemberSignature Language="VB.NET" Value="Public Property AbbreviatedDayNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AbbreviatedDayNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AbbreviatedDayNames : string[] with get, set" Usage="System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -484,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames" />
       <MemberSignature Language="VB.NET" Value="Public Property AbbreviatedMonthGenitiveNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AbbreviatedMonthGenitiveNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AbbreviatedMonthGenitiveNames : string[] with get, set" Usage="System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -548,6 +551,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames" />
       <MemberSignature Language="VB.NET" Value="Public Property AbbreviatedMonthNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AbbreviatedMonthNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AbbreviatedMonthNames : string[] with get, set" Usage="System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -613,6 +617,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.AMDesignator" />
       <MemberSignature Language="VB.NET" Value="Public Property AMDesignator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AMDesignator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AMDesignator : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.AMDesignator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -662,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.Calendar" />
       <MemberSignature Language="VB.NET" Value="Public Property Calendar As Calendar" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::Calendar ^ Calendar { System::Globalization::Calendar ^ get(); void set(System::Globalization::Calendar ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Calendar : System.Globalization.Calendar with get, set" Usage="System.Globalization.DateTimeFormatInfo.Calendar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -720,6 +726,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.CalendarWeekRule" />
       <MemberSignature Language="VB.NET" Value="Public Property CalendarWeekRule As CalendarWeekRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CalendarWeekRule CalendarWeekRule { System::Globalization::CalendarWeekRule get(); void set(System::Globalization::CalendarWeekRule value); };" />
+      <MemberSignature Language="F#" Value="member this.CalendarWeekRule : System.Globalization.CalendarWeekRule with get, set" Usage="System.Globalization.DateTimeFormatInfo.CalendarWeekRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -765,6 +772,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="dateTimeFormatInfo.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -813,6 +821,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.CurrentInfo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentInfo As DateTimeFormatInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::DateTimeFormatInfo ^ CurrentInfo { System::Globalization::DateTimeFormatInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentInfo : System.Globalization.DateTimeFormatInfo" Usage="System.Globalization.DateTimeFormatInfo.CurrentInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -864,6 +873,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.DateSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property DateSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DateSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DateSeparator : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.DateSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -914,6 +924,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.DayNames" />
       <MemberSignature Language="VB.NET" Value="Public Property DayNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ DayNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DayNames : string[] with get, set" Usage="System.Globalization.DateTimeFormatInfo.DayNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -966,6 +977,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstDayOfWeek As DayOfWeek" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DayOfWeek FirstDayOfWeek { DayOfWeek get(); void set(DayOfWeek value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstDayOfWeek : DayOfWeek with get, set" Usage="System.Globalization.DateTimeFormatInfo.FirstDayOfWeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1011,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.FullDateTimePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property FullDateTimePattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullDateTimePattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FullDateTimePattern : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.FullDateTimePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1073,6 +1086,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAbbreviatedDayName(valuetype System.DayOfWeek dayofweek) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedDayName(System.DayOfWeek)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAbbreviatedDayName(DayOfWeek dayofweek);" />
+      <MemberSignature Language="F#" Value="member this.GetAbbreviatedDayName : DayOfWeek -&gt; string" Usage="dateTimeFormatInfo.GetAbbreviatedDayName dayofweek" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1135,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAbbreviatedEraName (era As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAbbreviatedEraName(int era);" />
+      <MemberSignature Language="F#" Value="member this.GetAbbreviatedEraName : int -&gt; string" Usage="dateTimeFormatInfo.GetAbbreviatedEraName era" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1196,6 +1211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedMonthName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAbbreviatedMonthName (month As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAbbreviatedMonthName(int month);" />
+      <MemberSignature Language="F#" Value="member this.GetAbbreviatedMonthName : int -&gt; string" Usage="dateTimeFormatInfo.GetAbbreviatedMonthName month" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1276,6 +1292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllDateTimePatterns () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetAllDateTimePatterns();" />
+      <MemberSignature Language="F#" Value="member this.GetAllDateTimePatterns : unit -&gt; string[]" Usage="dateTimeFormatInfo.GetAllDateTimePatterns " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1342,6 +1359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllDateTimePatterns (format As Char) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetAllDateTimePatterns(char format);" />
+      <MemberSignature Language="F#" Value="member this.GetAllDateTimePatterns : char -&gt; string[]" Usage="dateTimeFormatInfo.GetAllDateTimePatterns format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1411,6 +1429,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDayName(valuetype System.DayOfWeek dayofweek) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetDayName(System.DayOfWeek)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDayName(DayOfWeek dayofweek);" />
+      <MemberSignature Language="F#" Value="member this.GetDayName : DayOfWeek -&gt; string" Usage="dateTimeFormatInfo.GetDayName dayofweek" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1473,6 +1492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetEra(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEra (eraName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetEra(System::String ^ eraName);" />
+      <MemberSignature Language="F#" Value="member this.GetEra : string -&gt; int" Usage="dateTimeFormatInfo.GetEra eraName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1538,6 +1558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetEraName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEraName (era As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetEraName(int era);" />
+      <MemberSignature Language="F#" Value="member this.GetEraName : int -&gt; string" Usage="dateTimeFormatInfo.GetEraName era" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1592,6 +1613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetFormat(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFormat (formatType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetFormat(Type ^ formatType);" />
+      <MemberSignature Language="F#" Value="abstract member GetFormat : Type -&gt; obj&#xA;override this.GetFormat : Type -&gt; obj" Usage="dateTimeFormatInfo.GetFormat formatType" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormatProvider.GetFormat(System.Type)</InterfaceMember>
@@ -1643,6 +1665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetInstance(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetInstance (provider As IFormatProvider) As DateTimeFormatInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::DateTimeFormatInfo ^ GetInstance(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member GetInstance : IFormatProvider -&gt; System.Globalization.DateTimeFormatInfo" Usage="System.Globalization.DateTimeFormatInfo.GetInstance provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1704,6 +1727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetMonthName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMonthName (month As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetMonthName(int month);" />
+      <MemberSignature Language="F#" Value="member this.GetMonthName : int -&gt; string" Usage="dateTimeFormatInfo.GetMonthName month" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1773,6 +1797,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetShortestDayName(valuetype System.DayOfWeek dayOfWeek) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetShortestDayName(System.DayOfWeek)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetShortestDayName(DayOfWeek dayOfWeek);" />
+      <MemberSignature Language="F#" Value="member this.GetShortestDayName : DayOfWeek -&gt; string" Usage="dateTimeFormatInfo.GetShortestDayName dayOfWeek" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1824,6 +1849,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvariantInfo As DateTimeFormatInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::DateTimeFormatInfo ^ InvariantInfo { System::Globalization::DateTimeFormatInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvariantInfo : System.Globalization.DateTimeFormatInfo" Usage="System.Globalization.DateTimeFormatInfo.InvariantInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1867,6 +1893,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Globalization.DateTimeFormatInfo.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1904,6 +1931,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.LongDatePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property LongDatePattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LongDatePattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LongDatePattern : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.LongDatePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1969,6 +1997,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.LongTimePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property LongTimePattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LongTimePattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LongTimePattern : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.LongTimePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2024,6 +2053,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.MonthDayPattern" />
       <MemberSignature Language="VB.NET" Value="Public Property MonthDayPattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MonthDayPattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MonthDayPattern : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.MonthDayPattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2081,6 +2111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames" />
       <MemberSignature Language="VB.NET" Value="Public Property MonthGenitiveNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ MonthGenitiveNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MonthGenitiveNames : string[] with get, set" Usage="System.Globalization.DateTimeFormatInfo.MonthGenitiveNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2144,6 +2175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.MonthNames" />
       <MemberSignature Language="VB.NET" Value="Public Property MonthNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ MonthNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MonthNames : string[] with get, set" Usage="System.Globalization.DateTimeFormatInfo.MonthNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2198,6 +2230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.NativeCalendarName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NativeCalendarName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NativeCalendarName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NativeCalendarName : string" Usage="System.Globalization.DateTimeFormatInfo.NativeCalendarName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2246,6 +2279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.PMDesignator" />
       <MemberSignature Language="VB.NET" Value="Public Property PMDesignator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PMDesignator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PMDesignator : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.PMDesignator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2295,6 +2329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.ReadOnly(System.Globalization.DateTimeFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadOnly (dtfi As DateTimeFormatInfo) As DateTimeFormatInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::DateTimeFormatInfo ^ ReadOnly(System::Globalization::DateTimeFormatInfo ^ dtfi);" />
+      <MemberSignature Language="F#" Value="static member ReadOnly : System.Globalization.DateTimeFormatInfo -&gt; System.Globalization.DateTimeFormatInfo" Usage="System.Globalization.DateTimeFormatInfo.ReadOnly dtfi" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2344,6 +2379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.RFC1123Pattern" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RFC1123Pattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RFC1123Pattern { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RFC1123Pattern : string" Usage="System.Globalization.DateTimeFormatInfo.RFC1123Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2397,6 +2433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns(System.String[],System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAllDateTimePatterns (patterns As String(), format As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAllDateTimePatterns(cli::array &lt;System::String ^&gt; ^ patterns, char format);" />
+      <MemberSignature Language="F#" Value="member this.SetAllDateTimePatterns : string[] * char -&gt; unit" Usage="dateTimeFormatInfo.SetAllDateTimePatterns (patterns, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2469,6 +2506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.ShortDatePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property ShortDatePattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShortDatePattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShortDatePattern : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.ShortDatePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2528,6 +2566,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.ShortestDayNames" />
       <MemberSignature Language="VB.NET" Value="Public Property ShortestDayNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ShortestDayNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShortestDayNames : string[] with get, set" Usage="System.Globalization.DateTimeFormatInfo.ShortestDayNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2581,6 +2620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.ShortTimePattern" />
       <MemberSignature Language="VB.NET" Value="Public Property ShortTimePattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShortTimePattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShortTimePattern : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.ShortTimePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2636,6 +2676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortableDateTimePattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortableDateTimePattern { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortableDateTimePattern : string" Usage="System.Globalization.DateTimeFormatInfo.SortableDateTimePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2690,6 +2731,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.TimeSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimeSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TimeSeparator : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.TimeSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2740,6 +2782,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UniversalSortableDateTimePattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UniversalSortableDateTimePattern { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UniversalSortableDateTimePattern : string" Usage="System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2794,6 +2837,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.YearMonthPattern" />
       <MemberSignature Language="VB.NET" Value="Public Property YearMonthPattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ YearMonthPattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.YearMonthPattern : string with get, set" Usage="System.Globalization.DateTimeFormatInfo.YearMonthPattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

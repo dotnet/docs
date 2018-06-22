@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.FocusNavigationDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum FocusNavigationDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class FocusNavigationDirection" />
+  <TypeSignature Language="F#" Value="type FocusNavigationDirection = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusNavigationDirection.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 7" Usage="System.Windows.Input.FocusNavigationDirection.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusNavigationDirection.First" />
       <MemberSignature Language="VB.NET" Value="First" />
       <MemberSignature Language="C++ CLI" Value="First" />
+      <MemberSignature Language="F#" Value="First = 2" Usage="System.Windows.Input.FocusNavigationDirection.First" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusNavigationDirection.Last" />
       <MemberSignature Language="VB.NET" Value="Last" />
       <MemberSignature Language="C++ CLI" Value="Last" />
+      <MemberSignature Language="F#" Value="Last = 3" Usage="System.Windows.Input.FocusNavigationDirection.Last" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusNavigationDirection.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 4" Usage="System.Windows.Input.FocusNavigationDirection.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusNavigationDirection.Next" />
       <MemberSignature Language="VB.NET" Value="Next" />
       <MemberSignature Language="C++ CLI" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 0" Usage="System.Windows.Input.FocusNavigationDirection.Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusNavigationDirection.Previous" />
       <MemberSignature Language="VB.NET" Value="Previous" />
       <MemberSignature Language="C++ CLI" Value="Previous" />
+      <MemberSignature Language="F#" Value="Previous = 1" Usage="System.Windows.Input.FocusNavigationDirection.Previous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusNavigationDirection.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 5" Usage="System.Windows.Input.FocusNavigationDirection.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusNavigationDirection.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 6" Usage="System.Windows.Input.FocusNavigationDirection.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

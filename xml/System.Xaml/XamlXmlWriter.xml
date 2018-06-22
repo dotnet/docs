@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlXmlWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlXmlWriter&#xA;Inherits XamlWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlXmlWriter : System::Xaml::XamlWriter" />
+  <TypeSignature Language="F#" Value="type XamlXmlWriter = class&#xA;    inherit XamlWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlWriter(System::IO::Stream ^ stream, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriter : System.IO.Stream * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlXmlWriter" Usage="new System.Xaml.XamlXmlWriter (stream, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter textWriter, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.IO.TextWriter,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlWriter(System::IO::TextWriter ^ textWriter, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriter : System.IO.TextWriter * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlXmlWriter" Usage="new System.Xaml.XamlXmlWriter (textWriter, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlWriter xmlWriter, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.Xml.XmlWriter,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlWriter(System::Xml::XmlWriter ^ xmlWriter, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriter : System.Xml.XmlWriter * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlXmlWriter" Usage="new System.Xaml.XamlXmlWriter (xmlWriter, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlWriter(System::IO::Stream ^ stream, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::XamlXmlWriterSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriter : System.IO.Stream * System.Xaml.XamlSchemaContext * System.Xaml.XamlXmlWriterSettings -&gt; System.Xaml.XamlXmlWriter" Usage="new System.Xaml.XamlXmlWriter (stream, schemaContext, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter textWriter, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.IO.TextWriter,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlWriter(System::IO::TextWriter ^ textWriter, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::XamlXmlWriterSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriter : System.IO.TextWriter * System.Xaml.XamlSchemaContext * System.Xaml.XamlXmlWriterSettings -&gt; System.Xaml.XamlXmlWriter" Usage="new System.Xaml.XamlXmlWriter (textWriter, schemaContext, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlWriter xmlWriter, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.Xml.XmlWriter,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlWriter(System::Xml::XmlWriter ^ xmlWriter, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::XamlXmlWriterSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriter : System.Xml.XmlWriter * System.Xaml.XamlSchemaContext * System.Xaml.XamlXmlWriterSettings -&gt; System.Xaml.XamlXmlWriter" Usage="new System.Xaml.XamlXmlWriter (xmlWriter, schemaContext, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="xamlXmlWriter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
+      <MemberSignature Language="F#" Value="member this.Flush : unit -&gt; unit" Usage="xamlXmlWriter.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlWriter.SchemaContext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaContext As XamlSchemaContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaContext : System.Xaml.XamlSchemaContext" Usage="System.Xaml.XamlXmlWriter.SchemaContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -307,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlWriter.Settings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As XamlXmlWriterSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlXmlWriterSettings ^ Settings { System::Xaml::XamlXmlWriterSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Settings : System.Xaml.XamlXmlWriterSettings" Usage="System.Xaml.XamlXmlWriter.Settings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -334,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteEndMember" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndMember ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndMember();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndMember : unit -&gt; unit" Usage="xamlXmlWriter.WriteEndMember " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -356,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteEndObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndObject ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndObject();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndObject : unit -&gt; unit" Usage="xamlXmlWriter.WriteEndObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -387,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteGetObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteGetObject ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteGetObject();" />
+      <MemberSignature Language="F#" Value="override this.WriteGetObject : unit -&gt; unit" Usage="xamlXmlWriter.WriteGetObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -406,6 +420,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteNamespace(class System.Xaml.NamespaceDeclaration namespaceDeclaration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteNamespace(System.Xaml.NamespaceDeclaration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteNamespace(System::Xaml::NamespaceDeclaration ^ namespaceDeclaration);" />
+      <MemberSignature Language="F#" Value="override this.WriteNamespace : System.Xaml.NamespaceDeclaration -&gt; unit" Usage="xamlXmlWriter.WriteNamespace namespaceDeclaration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -434,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteStartMember(System.Xaml.XamlMember)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartMember (property As XamlMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartMember(System::Xaml::XamlMember ^ property);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartMember : System.Xaml.XamlMember -&gt; unit" Usage="xamlXmlWriter.WriteStartMember property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -476,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteStartObject(System.Xaml.XamlType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartObject (type As XamlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartObject(System::Xaml::XamlType ^ type);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartObject : System.Xaml.XamlType -&gt; unit" Usage="xamlXmlWriter.WriteStartObject type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -505,6 +522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteValue (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteValue(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.WriteValue : obj -&gt; unit" Usage="xamlXmlWriter.WriteValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

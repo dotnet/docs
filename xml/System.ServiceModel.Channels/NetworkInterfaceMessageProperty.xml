@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.NetworkInterfaceMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class NetworkInterfaceMessageProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetworkInterfaceMessageProperty" />
+  <TypeSignature Language="F#" Value="type NetworkInterfaceMessageProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (interfaceIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkInterfaceMessageProperty(int interfaceIndex);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.NetworkInterfaceMessageProperty : int -&gt; System.ServiceModel.Channels.NetworkInterfaceMessageProperty" Usage="new System.ServiceModel.Channels.NetworkInterfaceMessageProperty interfaceIndex" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTo(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.AddTo(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddTo(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="member this.AddTo : System.ServiceModel.Channels.Message -&gt; unit" Usage="networkInterfaceMessageProperty.AddTo message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.AddTo(System.ServiceModel.Channels.MessageProperties)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddTo (properties As MessageProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddTo(System::ServiceModel::Channels::MessageProperties ^ properties);" />
+      <MemberSignature Language="F#" Value="member this.AddTo : System.ServiceModel.Channels.MessageProperties -&gt; unit" Usage="networkInterfaceMessageProperty.AddTo properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.InterfaceIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InterfaceIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InterfaceIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InterfaceIndex : int" Usage="System.ServiceModel.Channels.NetworkInterfaceMessageProperty.InterfaceIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.NetworkInterfaceMessageProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.NetworkInterfaceMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.NetworkInterfaceMessageProperty@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] System::ServiceModel::Channels::NetworkInterfaceMessageProperty ^ % property);" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="System.ServiceModel.Channels.NetworkInterfaceMessageProperty.TryGet (message, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.NetworkInterfaceMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.NetworkInterfaceMessageProperty@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (properties As MessageProperties, ByRef property As NetworkInterfaceMessageProperty) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::MessageProperties ^ properties, [Runtime::InteropServices::Out] System::ServiceModel::Channels::NetworkInterfaceMessageProperty ^ % property);" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.MessageProperties *  -&gt; bool" Usage="System.ServiceModel.Channels.NetworkInterfaceMessageProperty.TryGet (properties, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

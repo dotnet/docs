@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizationCacheLengthUnit" />
   <TypeSignature Language="VB.NET" Value="Public Enum VirtualizationCacheLengthUnit" />
   <TypeSignature Language="C++ CLI" Value="public enum class VirtualizationCacheLengthUnit" />
+  <TypeSignature Language="F#" Value="type VirtualizationCacheLengthUnit = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationCacheLengthUnit.Item" />
       <MemberSignature Language="VB.NET" Value="Item" />
       <MemberSignature Language="C++ CLI" Value="Item" />
+      <MemberSignature Language="F#" Value="Item = 1" Usage="System.Windows.Controls.VirtualizationCacheLengthUnit.Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationCacheLengthUnit.Page" />
       <MemberSignature Language="VB.NET" Value="Page" />
       <MemberSignature Language="C++ CLI" Value="Page" />
+      <MemberSignature Language="F#" Value="Page = 2" Usage="System.Windows.Controls.VirtualizationCacheLengthUnit.Page" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationCacheLengthUnit.Pixel" />
       <MemberSignature Language="VB.NET" Value="Pixel" />
       <MemberSignature Language="C++ CLI" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 0" Usage="System.Windows.Controls.VirtualizationCacheLengthUnit.Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

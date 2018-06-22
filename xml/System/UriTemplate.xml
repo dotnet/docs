@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Class UriTemplate" />
   <TypeSignature Language="C++ CLI" Value="public ref class UriTemplate" />
+  <TypeSignature Language="F#" Value="type UriTemplate = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (template As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template);" />
+      <MemberSignature Language="F#" Value="new UriTemplate : string -&gt; UriTemplate" Usage="new System.UriTemplate template" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (template As String, ignoreTrailingSlash As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, bool ignoreTrailingSlash);" />
+      <MemberSignature Language="F#" Value="new UriTemplate : string * bool -&gt; UriTemplate" Usage="new System.UriTemplate (template, ignoreTrailingSlash)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (template As String, additionalDefaults As IDictionary(Of String, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ additionalDefaults);" />
+      <MemberSignature Language="F#" Value="new UriTemplate : string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; UriTemplate" Usage="new System.UriTemplate (template, additionalDefaults)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.#ctor(System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (template As String, ignoreTrailingSlash As Boolean, additionalDefaults As IDictionary(Of String, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, bool ignoreTrailingSlash, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ additionalDefaults);" />
+      <MemberSignature Language="F#" Value="new UriTemplate : string * bool * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; UriTemplate" Usage="new System.UriTemplate (template, ignoreTrailingSlash, additionalDefaults)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByName(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByName (baseAddress As Uri, parameters As IDictionary(Of String, String)) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.BindByName : Uri * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Uri" Usage="uriTemplate.BindByName (baseAddress, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByName(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByName (baseAddress As Uri, parameters As NameValueCollection) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Specialized::NameValueCollection ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.BindByName : Uri * System.Collections.Specialized.NameValueCollection -&gt; Uri" Usage="uriTemplate.BindByName (baseAddress, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -303,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByName(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByName (baseAddress As Uri, parameters As IDictionary(Of String, String), omitDefaults As Boolean) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ parameters, bool omitDefaults);" />
+      <MemberSignature Language="F#" Value="member this.BindByName : Uri * System.Collections.Generic.IDictionary&lt;string, string&gt; * bool -&gt; Uri" Usage="uriTemplate.BindByName (baseAddress, parameters, omitDefaults)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -337,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByName(System.Uri,System.Collections.Specialized.NameValueCollection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByName (baseAddress As Uri, parameters As NameValueCollection, omitDefaults As Boolean) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Specialized::NameValueCollection ^ parameters, bool omitDefaults);" />
+      <MemberSignature Language="F#" Value="member this.BindByName : Uri * System.Collections.Specialized.NameValueCollection * bool -&gt; Uri" Usage="uriTemplate.BindByName (baseAddress, parameters, omitDefaults)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -371,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByPosition(System.Uri,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByPosition (baseAddress As Uri, ParamArray values As String()) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByPosition(Uri ^ baseAddress, ... cli::array &lt;System::String ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.BindByPosition : Uri * string[] -&gt; Uri" Usage="uriTemplate.BindByPosition (baseAddress, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -443,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplate.Defaults" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Defaults As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Defaults { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Defaults : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.UriTemplate.Defaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -468,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplate.IgnoreTrailingSlash" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoreTrailingSlash As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreTrailingSlash { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreTrailingSlash : bool" Usage="System.UriTemplate.IgnoreTrailingSlash" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -494,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.IsEquivalentTo(System.UriTemplate)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEquivalentTo (other As UriTemplate) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEquivalentTo(UriTemplate ^ other);" />
+      <MemberSignature Language="F#" Value="member this.IsEquivalentTo : UriTemplate -&gt; bool" Usage="uriTemplate.IsEquivalentTo other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -539,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.Match(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function Match (baseAddress As Uri, candidate As Uri) As UriTemplateMatch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplateMatch ^ Match(Uri ^ baseAddress, Uri ^ candidate);" />
+      <MemberSignature Language="F#" Value="member this.Match : Uri * Uri -&gt; UriTemplateMatch" Usage="uriTemplate.Match (baseAddress, candidate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -585,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplate.PathSegmentVariableNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathSegmentVariableNames As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ PathSegmentVariableNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PathSegmentVariableNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.UriTemplate.PathSegmentVariableNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -625,6 +640,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplate.QueryValueVariableNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryValueVariableNames As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ QueryValueVariableNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryValueVariableNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.UriTemplate.QueryValueVariableNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -665,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="uriTemplate.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.TypeResolvingOptionsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeResolvingOptionsAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeResolvingOptionsAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TypeResolvingOptionsAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.TypeResolvingOptionsAttribute.#ctor(System.Activities.Presentation.View.TypeResolvingOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (options As TypeResolvingOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeResolvingOptionsAttribute(System::Activities::Presentation::View::TypeResolvingOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.TypeResolvingOptionsAttribute : System.Activities.Presentation.View.TypeResolvingOptions -&gt; System.Activities.Presentation.TypeResolvingOptionsAttribute" Usage="new System.Activities.Presentation.TypeResolvingOptionsAttribute options" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.TypeResolvingOptionsAttribute.TypeResolvingOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeResolvingOptions As TypeResolvingOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::View::TypeResolvingOptions ^ TypeResolvingOptions { System::Activities::Presentation::View::TypeResolvingOptions ^ get(); void set(System::Activities::Presentation::View::TypeResolvingOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeResolvingOptions : System.Activities.Presentation.View.TypeResolvingOptions with get, set" Usage="System.Activities.Presentation.TypeResolvingOptionsAttribute.TypeResolvingOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

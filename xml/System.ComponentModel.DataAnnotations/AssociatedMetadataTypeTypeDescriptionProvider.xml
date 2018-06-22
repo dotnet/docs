@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class AssociatedMetadataTypeTypeDescriptionProvider&#xA;Inherits TypeDescriptionProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssociatedMetadataTypeTypeDescriptionProvider : System::ComponentModel::TypeDescriptionProvider" />
+  <TypeSignature Language="F#" Value="type AssociatedMetadataTypeTypeDescriptionProvider = class&#xA;    inherit TypeDescriptionProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssociatedMetadataTypeTypeDescriptionProvider(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider : Type -&gt; System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider" Usage="new System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Type associatedMetadataType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssociatedMetadataTypeTypeDescriptionProvider(Type ^ type, Type ^ associatedMetadataType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider : Type * Type -&gt; System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider" Usage="new System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider (type, associatedMetadataType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTypeDescriptor (objectType As Type, instance As Object) As ICustomTypeDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(Type ^ objectType, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeDescriptor : Type * obj -&gt; System.ComponentModel.ICustomTypeDescriptor&#xA;override this.GetTypeDescriptor : Type * obj -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="associatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor (objectType, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.ByteArrayContent" />
   <TypeSignature Language="VB.NET" Value="Public Class ByteArrayContent&#xA;Inherits HttpContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class ByteArrayContent : System::Net::Http::HttpContent" />
+  <TypeSignature Language="F#" Value="type ByteArrayContent = class&#xA;    inherit HttpContent" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ByteArrayContent.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ByteArrayContent(cli::array &lt;System::Byte&gt; ^ content);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.ByteArrayContent : byte[] -&gt; System.Net.Http.ByteArrayContent" Usage="new System.Net.Http.ByteArrayContent content" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ByteArrayContent.#ctor(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ByteArrayContent(cli::array &lt;System::Byte&gt; ^ content, int offset, int count);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.ByteArrayContent : byte[] * int * int -&gt; System.Net.Http.ByteArrayContent" Usage="new System.Net.Http.ByteArrayContent (content, offset, count)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ByteArrayContent.CreateContentReadStreamAsync" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateContentReadStreamAsync () As Task(Of Stream)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ CreateContentReadStreamAsync();" />
+      <MemberSignature Language="F#" Value="override this.CreateContentReadStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="byteArrayContent.CreateContentReadStreamAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Threading.Tasks.Task SerializeToStreamAsync(class System.IO.Stream stream, class System.Net.TransportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ByteArrayContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Threading::Tasks::Task ^ SerializeToStreamAsync(System::IO::Stream ^ stream, System::Net::TransportContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.SerializeToStreamAsync : System.IO.Stream * System.Net.TransportContext -&gt; System.Threading.Tasks.Task" Usage="byteArrayContent.SerializeToStreamAsync (stream, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ByteArrayContent.TryComputeLength(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryComputeLength (ByRef length As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryComputeLength([Runtime::InteropServices::Out] long % length);" />
+      <MemberSignature Language="F#" Value="override this.TryComputeLength :  -&gt; bool" Usage="byteArrayContent.TryComputeLength length" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

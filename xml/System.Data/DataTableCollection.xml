@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataTableCollection&#xA;Inherits InternalDataCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTableCollection sealed : System::Data::InternalDataCollectionBase" />
+  <TypeSignature Language="F#" Value="type DataTableCollection = class&#xA;    inherit InternalDataCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Add" />
       <MemberSignature Language="VB.NET" Value="Public Function Add () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ Add();" />
+      <MemberSignature Language="F#" Value="member this.Add : unit -&gt; System.Data.DataTable" Usage="dataTableCollection.Add " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Add(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (table As DataTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Data::DataTable ^ table);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Data.DataTable -&gt; unit" Usage="dataTableCollection.Add table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ Add(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; System.Data.DataTable" Usage="dataTableCollection.Add name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -239,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, tableNamespace As String) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ Add(System::String ^ name, System::String ^ tableNamespace);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; System.Data.DataTable" Usage="dataTableCollection.Add (name, tableNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -296,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.AddRange(System.Data.DataTable[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (tables As DataTable())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Data::DataTable ^&gt; ^ tables);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Data.DataTable[] -&gt; unit" Usage="dataTableCollection.AddRange tables" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -339,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.CanRemove(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanRemove (table As DataTable) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanRemove(System::Data::DataTable ^ table);" />
+      <MemberSignature Language="F#" Value="member this.CanRemove : System.Data.DataTable -&gt; bool" Usage="dataTableCollection.CanRemove table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -387,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="dataTableCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -432,6 +440,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.DataTableCollection.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanged As CollectionChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -476,6 +485,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.DataTableCollection.CollectionChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanging As CollectionChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanging;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanging : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.CollectionChanging : System.ComponentModel.CollectionChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -530,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="dataTableCollection.Contains name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -589,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Contains(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (name As String, tableNamespace As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ name, System::String ^ tableNamespace);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string * string -&gt; bool" Usage="dataTableCollection.Contains (name, tableNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -650,6 +662,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.CopyTo(System.Data.DataTable[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataTable(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::DataTable ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.DataTable[] * int -&gt; unit" Usage="dataTableCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -702,6 +715,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.IndexOf(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (table As DataTable) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Data::DataTable ^ table);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Data.DataTable -&gt; int" Usage="dataTableCollection.IndexOf table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -756,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (tableName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ tableName);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string -&gt; int" Usage="dataTableCollection.IndexOf tableName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -813,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.IndexOf(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (tableName As String, tableNamespace As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ tableName, System::String ^ tableNamespace);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string * string -&gt; int" Usage="dataTableCollection.IndexOf (tableName, tableNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -877,6 +893,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ default[int] { System::Data::DataTable ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.DataTable" Usage="System.Data.DataTableCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -932,6 +949,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ default[System::String ^] { System::Data::DataTable ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Data.DataTable" Usage="System.Data.DataTableCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -983,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableCollection.Item(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String, tableNamespace As String) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ default[System::String ^, System::String ^] { System::Data::DataTable ^ get(System::String ^ name, System::String ^ tableNamespace); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string * string) : System.Data.DataTable" Usage="System.Data.DataTableCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1019,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableCollection.List" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property List As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ArrayList ^ List { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.ArrayList" Usage="System.Data.DataTableCollection.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1059,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Remove(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (table As DataTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::DataTable ^ table);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Data.DataTable -&gt; unit" Usage="dataTableCollection.Remove table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1117,6 +1138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="dataTableCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1170,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.Remove(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String, tableNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name, System::String ^ tableNamespace);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string * string -&gt; unit" Usage="dataTableCollection.Remove (name, tableNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1225,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="dataTableCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

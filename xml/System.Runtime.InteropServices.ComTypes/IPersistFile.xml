@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IPersistFile" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPersistFile" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPersistFile" />
+  <TypeSignature Language="F#" Value="type IPersistFile = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.GetClassID(System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetClassID (ByRef pClassID As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetClassID([Runtime::InteropServices::Out] Guid % pClassID);" />
+      <MemberSignature Language="F#" Value="abstract member GetClassID :  -&gt; unit" Usage="iPersistFile.GetClassID pClassID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.GetCurFile(System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetCurFile (ByRef ppszFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCurFile([Runtime::InteropServices::Out] System::String ^ % ppszFileName);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurFile :  -&gt; unit" Usage="iPersistFile.GetCurFile ppszFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public Function IsDirty () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsDirty();" />
+      <MemberSignature Language="F#" Value="abstract member IsDirty : unit -&gt; int" Usage="iPersistFile.IsDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.Load(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (pszFileName As String, dwMode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ pszFileName, int dwMode);" />
+      <MemberSignature Language="F#" Value="abstract member Load : string * int -&gt; unit" Usage="iPersistFile.Load (pszFileName, dwMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.Save(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (pszFileName As String, fRemember As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ pszFileName, bool fRemember);" />
+      <MemberSignature Language="F#" Value="abstract member Save : string * bool -&gt; unit" Usage="iPersistFile.Save (pszFileName, fRemember)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.SaveCompleted(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveCompleted (pszFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveCompleted(System::String ^ pszFileName);" />
+      <MemberSignature Language="F#" Value="abstract member SaveCompleted : string -&gt; unit" Usage="iPersistFile.SaveCompleted pszFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

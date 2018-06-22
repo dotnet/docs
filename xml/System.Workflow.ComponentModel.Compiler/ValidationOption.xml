@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ValidationOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValidationOption" />
+  <TypeSignature Language="F#" Value="type ValidationOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.ValidationOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Workflow.ComponentModel.Compiler.ValidationOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.ValidationOption.Optional" />
       <MemberSignature Language="VB.NET" Value="Optional" />
       <MemberSignature Language="C++ CLI" Value="Optional" />
+      <MemberSignature Language="F#" Value="Optional = 1" Usage="System.Workflow.ComponentModel.Compiler.ValidationOption.Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.ValidationOption.Required" />
       <MemberSignature Language="VB.NET" Value="Required" />
       <MemberSignature Language="C++ CLI" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 2" Usage="System.Workflow.ComponentModel.Compiler.ValidationOption.Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

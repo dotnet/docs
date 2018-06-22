@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ConditionCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConditionCollection&#xA;Inherits Collection(Of Condition)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConditionCollection sealed : System::Collections::ObjectModel::Collection&lt;System::Windows::Condition ^&gt;" />
+  <TypeSignature Language="F#" Value="type ConditionCollection = class&#xA;    inherit Collection&lt;Condition&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ConditionCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="conditionCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ConditionCollection.InsertItem(System.Int32,System.Windows.Condition)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As Condition)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Windows::Condition ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Windows.Condition -&gt; unit" Usage="conditionCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ConditionCollection.IsSealed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Windows.ConditionCollection.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ConditionCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="conditionCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ConditionCollection.SetItem(System.Int32,System.Windows.Condition)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As Condition)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Windows::Condition ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Windows.Condition -&gt; unit" Usage="conditionCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

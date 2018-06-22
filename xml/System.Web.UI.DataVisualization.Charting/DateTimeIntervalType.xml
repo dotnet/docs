@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DateTimeIntervalType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DateTimeIntervalType" />
+  <TypeSignature Language="F#" Value="type DateTimeIntervalType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Days" />
       <MemberSignature Language="VB.NET" Value="Days" />
       <MemberSignature Language="C++ CLI" Value="Days" />
+      <MemberSignature Language="F#" Value="Days = 5" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Days" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours" />
       <MemberSignature Language="VB.NET" Value="Hours" />
       <MemberSignature Language="C++ CLI" Value="Hours" />
+      <MemberSignature Language="F#" Value="Hours = 6" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Milliseconds" />
       <MemberSignature Language="VB.NET" Value="Milliseconds" />
       <MemberSignature Language="C++ CLI" Value="Milliseconds" />
+      <MemberSignature Language="F#" Value="Milliseconds = 9" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Milliseconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Minutes" />
       <MemberSignature Language="VB.NET" Value="Minutes" />
       <MemberSignature Language="C++ CLI" Value="Minutes" />
+      <MemberSignature Language="F#" Value="Minutes = 7" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Minutes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Months" />
       <MemberSignature Language="VB.NET" Value="Months" />
       <MemberSignature Language="C++ CLI" Value="Months" />
+      <MemberSignature Language="F#" Value="Months = 3" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Months" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 10" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -166,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Number" />
       <MemberSignature Language="VB.NET" Value="Number" />
       <MemberSignature Language="C++ CLI" Value="Number" />
+      <MemberSignature Language="F#" Value="Number = 1" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -185,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Seconds" />
       <MemberSignature Language="VB.NET" Value="Seconds" />
       <MemberSignature Language="C++ CLI" Value="Seconds" />
+      <MemberSignature Language="F#" Value="Seconds = 8" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Seconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -204,6 +214,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Weeks" />
       <MemberSignature Language="VB.NET" Value="Weeks" />
       <MemberSignature Language="C++ CLI" Value="Weeks" />
+      <MemberSignature Language="F#" Value="Weeks = 4" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Weeks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -223,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Years" />
       <MemberSignature Language="VB.NET" Value="Years" />
       <MemberSignature Language="C++ CLI" Value="Years" />
+      <MemberSignature Language="F#" Value="Years = 2" Usage="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Years" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AssemblyCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type AssemblyCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AssemblyCollection.Add(System.Web.Configuration.AssemblyInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (assemblyInformation As AssemblyInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::AssemblyInfo ^ assemblyInformation);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.AssemblyInfo -&gt; unit" Usage="assemblyCollection.Add assemblyInformation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AssemblyCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="assemblyCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AssemblyCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="assemblyCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AssemblyCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="assemblyCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AssemblyCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As AssemblyInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AssemblyInfo ^ default[int] { System::Web::Configuration::AssemblyInfo ^ get(int index); void set(int index, System::Web::Configuration::AssemblyInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.AssemblyInfo with get, set" Usage="System.Web.Configuration.AssemblyCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AssemblyCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(assemblyName As String) As AssemblyInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AssemblyInfo ^ default[System::String ^] { System::Web::Configuration::AssemblyInfo ^ get(System::String ^ assemblyName); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.AssemblyInfo" Usage="System.Web.Configuration.AssemblyCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -249,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AssemblyCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.AssemblyCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AssemblyCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="assemblyCollection.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -307,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AssemblyCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="assemblyCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

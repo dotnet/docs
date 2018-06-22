@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GiveFeedbackEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class GiveFeedbackEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class GiveFeedbackEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type GiveFeedbackEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GiveFeedbackEventArgs.#ctor(System.Windows.Forms.DragDropEffects,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (effect As DragDropEffects, useDefaultCursors As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GiveFeedbackEventArgs(System::Windows::Forms::DragDropEffects effect, bool useDefaultCursors);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.GiveFeedbackEventArgs : System.Windows.Forms.DragDropEffects * bool -&gt; System.Windows.Forms.GiveFeedbackEventArgs" Usage="new System.Windows.Forms.GiveFeedbackEventArgs (effect, useDefaultCursors)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GiveFeedbackEventArgs.Effect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Effect As DragDropEffects" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DragDropEffects Effect { System::Windows::Forms::DragDropEffects get(); };" />
+      <MemberSignature Language="F#" Value="member this.Effect : System.Windows.Forms.DragDropEffects" Usage="System.Windows.Forms.GiveFeedbackEventArgs.Effect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GiveFeedbackEventArgs.UseDefaultCursors" />
       <MemberSignature Language="VB.NET" Value="Public Property UseDefaultCursors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultCursors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultCursors : bool with get, set" Usage="System.Windows.Forms.GiveFeedbackEventArgs.UseDefaultCursors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

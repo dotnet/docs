@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Utils" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Utils" />
   <TypeSignature Language="C++ CLI" Value="public ref class Utils sealed" />
+  <TypeSignature Language="F#" Value="type Utils = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.CopyArray(System.Array,System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CopyArray (arySrc As Array, aryDest As Array) As Array" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CopyArray(Array ^ arySrc, Array ^ aryDest);" />
+      <MemberSignature Language="F#" Value="static member CopyArray : Array * Array -&gt; Array" Usage="Microsoft.VisualBasic.CompilerServices.Utils.CopyArray (arySrc, aryDest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.GetResourceString(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetResourceString (ResourceKey As String, ParamArray Args As String()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetResourceString(System::String ^ ResourceKey, ... cli::array &lt;System::String ^&gt; ^ Args);" />
+      <MemberSignature Language="F#" Value="static member GetResourceString : string * string[] -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Utils.GetResourceString (ResourceKey, Args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.MethodToString(System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MethodToString (Method As MethodBase) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MethodToString(System::Reflection::MethodBase ^ Method);" />
+      <MemberSignature Language="F#" Value="static member MethodToString : System.Reflection.MethodBase -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Utils.MethodToString Method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.SetCultureInfo(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetCultureInfo (Culture As CultureInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ SetCultureInfo(System::Globalization::CultureInfo ^ Culture);" />
+      <MemberSignature Language="F#" Value="static member SetCultureInfo : System.Globalization.CultureInfo -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.Utils.SetCultureInfo Culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.ThrowException(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowException (hr As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ThrowException(int hr);" />
+      <MemberSignature Language="F#" Value="static member ThrowException : int -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.Utils.ThrowException hr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

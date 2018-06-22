@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEndOfLine" />
   <TypeSignature Language="VB.NET" Value="Public Class TextEndOfLine&#xA;Inherits TextRun" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextEndOfLine : System::Windows::Media::TextFormatting::TextRun" />
+  <TypeSignature Language="F#" Value="type TextEndOfLine = class&#xA;    inherit TextRun" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEndOfLine.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEndOfLine(int length);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextEndOfLine : int -&gt; System.Windows.Media.TextFormatting.TextEndOfLine" Usage="new System.Windows.Media.TextFormatting.TextEndOfLine length" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 length, class System.Windows.Media.TextFormatting.TextRunProperties textRunProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEndOfLine.#ctor(System.Int32,System.Windows.Media.TextFormatting.TextRunProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEndOfLine(int length, System::Windows::Media::TextFormatting::TextRunProperties ^ textRunProperties);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextEndOfLine : int * System.Windows.Media.TextFormatting.TextRunProperties -&gt; System.Windows.Media.TextFormatting.TextEndOfLine" Usage="new System.Windows.Media.TextFormatting.TextEndOfLine (length, textRunProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfLine.CharacterBufferReference" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property CharacterBufferReference As CharacterBufferReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::CharacterBufferReference CharacterBufferReference { System::Windows::Media::TextFormatting::CharacterBufferReference get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterBufferReference : System.Windows.Media.TextFormatting.CharacterBufferReference" Usage="System.Windows.Media.TextFormatting.TextEndOfLine.CharacterBufferReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfLine.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextEndOfLine.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfLine.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Properties As TextRunProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextRunProperties ^ Properties { System::Windows::Media::TextFormatting::TextRunProperties ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Windows.Media.TextFormatting.TextRunProperties" Usage="System.Windows.Media.TextFormatting.TextEndOfLine.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ActivationContext.ContextForm" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActivationContext.ContextForm" />
   <TypeSignature Language="C++ CLI" Value="public: enum class ActivationContext::ContextForm" />
+  <TypeSignature Language="F#" Value="type ActivationContext.ContextForm = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.ActivationContext.ContextForm.Loose" />
       <MemberSignature Language="VB.NET" Value="Loose" />
       <MemberSignature Language="C++ CLI" Value="Loose" />
+      <MemberSignature Language="F#" Value="Loose = 0" Usage="System.ActivationContext.ContextForm.Loose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.ActivationContext.ContextForm.StoreBounded" />
       <MemberSignature Language="VB.NET" Value="StoreBounded" />
       <MemberSignature Language="C++ CLI" Value="StoreBounded" />
+      <MemberSignature Language="F#" Value="StoreBounded = 1" Usage="System.ActivationContext.ContextForm.StoreBounded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

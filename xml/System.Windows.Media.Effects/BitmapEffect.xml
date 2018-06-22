@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BitmapEffect" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BitmapEffect&#xA;Inherits Animatable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapEffect abstract : System::Windows::Media::Animation::Animatable" />
+  <TypeSignature Language="F#" Value="type BitmapEffect = class&#xA;    inherit Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffect ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BitmapEffect" Usage="bitmapEffect.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffect ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BitmapEffect" Usage="bitmapEffect.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.CreateBitmapEffectOuter" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateBitmapEffectOuter () As SafeHandle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Runtime::InteropServices::SafeHandle ^ CreateBitmapEffectOuter();" />
+      <MemberSignature Language="F#" Value="static member CreateBitmapEffectOuter : unit -&gt; System.Runtime.InteropServices.SafeHandle" Usage="System.Windows.Media.Effects.BitmapEffect.CreateBitmapEffectOuter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.CreateUnmanagedEffect" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateUnmanagedEffect () As SafeHandle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Runtime::InteropServices::SafeHandle ^ CreateUnmanagedEffect();" />
+      <MemberSignature Language="F#" Value="abstract member CreateUnmanagedEffect : unit -&gt; System.Runtime.InteropServices.SafeHandle" Usage="bitmapEffect.CreateUnmanagedEffect " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.GetOutput(System.Windows.Media.Effects.BitmapEffectInput)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOutput (input As BitmapEffectInput) As BitmapSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::BitmapSource ^ GetOutput(System::Windows::Media::Effects::BitmapEffectInput ^ input);" />
+      <MemberSignature Language="F#" Value="member this.GetOutput : System.Windows.Media.Effects.BitmapEffectInput -&gt; System.Windows.Media.Imaging.BitmapSource" Usage="bitmapEffect.GetOutput input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -248,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.InitializeBitmapEffect(System.Runtime.InteropServices.SafeHandle,System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Sub InitializeBitmapEffect (outerObject As SafeHandle, innerObject As SafeHandle)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void InitializeBitmapEffect(System::Runtime::InteropServices::SafeHandle ^ outerObject, System::Runtime::InteropServices::SafeHandle ^ innerObject);" />
+      <MemberSignature Language="F#" Value="static member InitializeBitmapEffect : System.Runtime.InteropServices.SafeHandle * System.Runtime.InteropServices.SafeHandle -&gt; unit" Usage="System.Windows.Media.Effects.BitmapEffect.InitializeBitmapEffect (outerObject, innerObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -294,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.SetValue(System.Runtime.InteropServices.SafeHandle,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Sub SetValue (effect As SafeHandle, propertyName As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void SetValue(System::Runtime::InteropServices::SafeHandle ^ effect, System::String ^ propertyName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetValue : System.Runtime.InteropServices.SafeHandle * string * obj -&gt; unit" Usage="System.Windows.Media.Effects.BitmapEffect.SetValue (effect, propertyName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub UpdateUnmanagedPropertyState (unmanagedEffect As SafeHandle)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void UpdateUnmanagedPropertyState(System::Runtime::InteropServices::SafeHandle ^ unmanagedEffect);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateUnmanagedPropertyState : System.Runtime.InteropServices.SafeHandle -&gt; unit" Usage="bitmapEffect.UpdateUnmanagedPropertyState unmanagedEffect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkClickedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub LinkClickedEventHandler(sender As Object, e As LinkClickedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void LinkClickedEventHandler(System::Object ^ sender, LinkClickedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LinkClickedEventHandler = delegate of obj * LinkClickedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

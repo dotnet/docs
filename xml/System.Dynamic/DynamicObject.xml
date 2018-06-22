@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.DynamicObject" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicObject&#xA;Implements IDynamicMetaObjectProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicObject : System::Dynamic::IDynamicMetaObjectProvider" />
+  <TypeSignature Language="F#" Value="type DynamicObject = class&#xA;    interface IDynamicMetaObjectProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -152,6 +153,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.GetDynamicMemberNames" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDynamicMemberNames () As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetDynamicMemberNames();" />
+      <MemberSignature Language="F#" Value="abstract member GetDynamicMemberNames : unit -&gt; seq&lt;string&gt;&#xA;override this.GetDynamicMemberNames : unit -&gt; seq&lt;string&gt;" Usage="dynamicObject.GetDynamicMemberNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -194,6 +196,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.GetMetaObject(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetaObject (parameter As Expression) As DynamicMetaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ GetMetaObject(System::Linq::Expressions::Expression ^ parameter);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetaObject : System.Linq.Expressions.Expression -&gt; System.Dynamic.DynamicMetaObject&#xA;override this.GetMetaObject : System.Linq.Expressions.Expression -&gt; System.Dynamic.DynamicMetaObject" Usage="dynamicObject.GetMetaObject parameter" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(System.Linq.Expressions.Expression)</InterfaceMember>
@@ -235,6 +238,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryBinaryOperation(System.Dynamic.BinaryOperationBinder,System.Object,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryBinaryOperation (binder As BinaryOperationBinder, arg As Object, ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryBinaryOperation(System::Dynamic::BinaryOperationBinder ^ binder, System::Object ^ arg, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryBinaryOperation : System.Dynamic.BinaryOperationBinder * obj *  -&gt; bool&#xA;override this.TryBinaryOperation : System.Dynamic.BinaryOperationBinder * obj *  -&gt; bool" Usage="dynamicObject.TryBinaryOperation (binder, arg, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -339,6 +343,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryConvert(System.Dynamic.ConvertBinder,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryConvert (binder As ConvertBinder, ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryConvert(System::Dynamic::ConvertBinder ^ binder, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryConvert : System.Dynamic.ConvertBinder *  -&gt; bool&#xA;override this.TryConvert : System.Dynamic.ConvertBinder *  -&gt; bool" Usage="dynamicObject.TryConvert (binder, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -417,6 +422,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryCreateInstance(System.Dynamic.CreateInstanceBinder,System.Object[],System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryCreateInstance (binder As CreateInstanceBinder, args As Object(), ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryCreateInstance(System::Dynamic::CreateInstanceBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryCreateInstance : System.Dynamic.CreateInstanceBinder * obj[] *  -&gt; bool&#xA;override this.TryCreateInstance : System.Dynamic.CreateInstanceBinder * obj[] *  -&gt; bool" Usage="dynamicObject.TryCreateInstance (binder, args, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -469,6 +475,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryDeleteIndex(System.Dynamic.DeleteIndexBinder,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryDeleteIndex (binder As DeleteIndexBinder, indexes As Object()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryDeleteIndex(System::Dynamic::DeleteIndexBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ indexes);" />
+      <MemberSignature Language="F#" Value="abstract member TryDeleteIndex : System.Dynamic.DeleteIndexBinder * obj[] -&gt; bool&#xA;override this.TryDeleteIndex : System.Dynamic.DeleteIndexBinder * obj[] -&gt; bool" Usage="dynamicObject.TryDeleteIndex (binder, indexes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -519,6 +526,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryDeleteMember(System.Dynamic.DeleteMemberBinder)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryDeleteMember (binder As DeleteMemberBinder) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryDeleteMember(System::Dynamic::DeleteMemberBinder ^ binder);" />
+      <MemberSignature Language="F#" Value="abstract member TryDeleteMember : System.Dynamic.DeleteMemberBinder -&gt; bool&#xA;override this.TryDeleteMember : System.Dynamic.DeleteMemberBinder -&gt; bool" Usage="dynamicObject.TryDeleteMember binder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -567,6 +575,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryGetIndex(System.Dynamic.GetIndexBinder,System.Object[],System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetIndex (binder As GetIndexBinder, indexes As Object(), ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetIndex(System::Dynamic::GetIndexBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ indexes, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetIndex : System.Dynamic.GetIndexBinder * obj[] *  -&gt; bool&#xA;override this.TryGetIndex : System.Dynamic.GetIndexBinder * obj[] *  -&gt; bool" Usage="dynamicObject.TryGetIndex (binder, indexes, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -629,6 +638,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetMember (binder As GetMemberBinder, ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetMember(System::Dynamic::GetMemberBinder ^ binder, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetMember : System.Dynamic.GetMemberBinder *  -&gt; bool&#xA;override this.TryGetMember : System.Dynamic.GetMemberBinder *  -&gt; bool" Usage="dynamicObject.TryGetMember (binder, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -691,6 +701,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryInvoke(System.Dynamic.InvokeBinder,System.Object[],System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryInvoke (binder As InvokeBinder, args As Object(), ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryInvoke(System::Dynamic::InvokeBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryInvoke : System.Dynamic.InvokeBinder * obj[] *  -&gt; bool&#xA;override this.TryInvoke : System.Dynamic.InvokeBinder * obj[] *  -&gt; bool" Usage="dynamicObject.TryInvoke (binder, args, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -754,6 +765,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryInvokeMember(System.Dynamic.InvokeMemberBinder,System.Object[],System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryInvokeMember (binder As InvokeMemberBinder, args As Object(), ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryInvokeMember(System::Dynamic::InvokeMemberBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryInvokeMember : System.Dynamic.InvokeMemberBinder * obj[] *  -&gt; bool&#xA;override this.TryInvokeMember : System.Dynamic.InvokeMemberBinder * obj[] *  -&gt; bool" Usage="dynamicObject.TryInvokeMember (binder, args, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -820,6 +832,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TrySetIndex(System.Dynamic.SetIndexBinder,System.Object[],System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TrySetIndex (binder As SetIndexBinder, indexes As Object(), value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TrySetIndex(System::Dynamic::SetIndexBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ indexes, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member TrySetIndex : System.Dynamic.SetIndexBinder * obj[] * obj -&gt; bool&#xA;override this.TrySetIndex : System.Dynamic.SetIndexBinder * obj[] * obj -&gt; bool" Usage="dynamicObject.TrySetIndex (binder, indexes, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -882,6 +895,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TrySetMember(System.Dynamic.SetMemberBinder,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TrySetMember (binder As SetMemberBinder, value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TrySetMember(System::Dynamic::SetMemberBinder ^ binder, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member TrySetMember : System.Dynamic.SetMemberBinder * obj -&gt; bool&#xA;override this.TrySetMember : System.Dynamic.SetMemberBinder * obj -&gt; bool" Usage="dynamicObject.TrySetMember (binder, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -944,6 +958,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryUnaryOperation(System.Dynamic.UnaryOperationBinder,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryUnaryOperation (binder As UnaryOperationBinder, ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryUnaryOperation(System::Dynamic::UnaryOperationBinder ^ binder, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryUnaryOperation : System.Dynamic.UnaryOperationBinder *  -&gt; bool&#xA;override this.TryUnaryOperation : System.Dynamic.UnaryOperationBinder *  -&gt; bool" Usage="dynamicObject.TryUnaryOperation (binder, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

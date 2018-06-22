@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ActiveDirectoryRoleFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectoryRoleFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryRoleFactory abstract sealed" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryRoleFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ActiveDirectoryRoleFactory.Configuration" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Configuration As ActiveDirectoryRoleFactoryConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Workflow::Activities::Configuration::ActiveDirectoryRoleFactoryConfiguration ^ Configuration { System::Workflow::Activities::Configuration::ActiveDirectoryRoleFactoryConfiguration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Configuration : System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration" Usage="System.Workflow.Activities.ActiveDirectoryRoleFactory.Configuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRoleFactory.CreateFromAlias(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromAlias (alias As String) As ActiveDirectoryRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::Activities::ActiveDirectoryRole ^ CreateFromAlias(System::String ^ alias);" />
+      <MemberSignature Language="F#" Value="static member CreateFromAlias : string -&gt; System.Workflow.Activities.ActiveDirectoryRole" Usage="System.Workflow.Activities.ActiveDirectoryRoleFactory.CreateFromAlias alias" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRoleFactory.CreateFromEmailAddress(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromEmailAddress (emailAddress As String) As ActiveDirectoryRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::Activities::ActiveDirectoryRole ^ CreateFromEmailAddress(System::String ^ emailAddress);" />
+      <MemberSignature Language="F#" Value="static member CreateFromEmailAddress : string -&gt; System.Workflow.Activities.ActiveDirectoryRole" Usage="System.Workflow.Activities.ActiveDirectoryRoleFactory.CreateFromEmailAddress emailAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRoleFactory.CreateFromSecurityIdentifier(System.Security.Principal.SecurityIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromSecurityIdentifier (sid As SecurityIdentifier) As ActiveDirectoryRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::Activities::ActiveDirectoryRole ^ CreateFromSecurityIdentifier(System::Security::Principal::SecurityIdentifier ^ sid);" />
+      <MemberSignature Language="F#" Value="static member CreateFromSecurityIdentifier : System.Security.Principal.SecurityIdentifier -&gt; System.Workflow.Activities.ActiveDirectoryRole" Usage="System.Workflow.Activities.ActiveDirectoryRoleFactory.CreateFromSecurityIdentifier sid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

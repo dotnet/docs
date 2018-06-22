@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.BookmarkOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum BookmarkOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class BookmarkOptions" />
+  <TypeSignature Language="F#" Value="type BookmarkOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.MultipleResume" />
       <MemberSignature Language="VB.NET" Value="MultipleResume" />
       <MemberSignature Language="C++ CLI" Value="MultipleResume" />
+      <MemberSignature Language="F#" Value="MultipleResume = 1" Usage="System.Activities.BookmarkOptions.MultipleResume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.NonBlocking" />
       <MemberSignature Language="VB.NET" Value="NonBlocking" />
       <MemberSignature Language="C++ CLI" Value="NonBlocking" />
+      <MemberSignature Language="F#" Value="NonBlocking = 2" Usage="System.Activities.BookmarkOptions.NonBlocking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Activities.BookmarkOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

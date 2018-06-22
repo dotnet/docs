@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.BindingOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum BindingOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class BindingOption" />
+  <TypeSignature Language="F#" Value="type BindingOption = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BindingOption.BindingToPoolThread" />
       <MemberSignature Language="VB.NET" Value="BindingToPoolThread" />
       <MemberSignature Language="C++ CLI" Value="BindingToPoolThread" />
+      <MemberSignature Language="F#" Value="BindingToPoolThread = 1" Usage="System.EnterpriseServices.BindingOption.BindingToPoolThread" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BindingOption.NoBinding" />
       <MemberSignature Language="VB.NET" Value="NoBinding" />
       <MemberSignature Language="C++ CLI" Value="NoBinding" />
+      <MemberSignature Language="F#" Value="NoBinding = 0" Usage="System.EnterpriseServices.BindingOption.NoBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.FileChangeMonitor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FileChangeMonitor&#xA;Inherits ChangeMonitor" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileChangeMonitor abstract : System::Runtime::Caching::ChangeMonitor" />
+  <TypeSignature Language="F#" Value="type FileChangeMonitor = class&#xA;    inherit ChangeMonitor" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.FileChangeMonitor.FilePaths" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FilePaths As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ FilePaths { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilePaths : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Runtime.Caching.FileChangeMonitor.FilePaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.FileChangeMonitor.LastModified" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property LastModified As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTimeOffset LastModified { DateTimeOffset get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastModified : DateTimeOffset" Usage="System.Runtime.Caching.FileChangeMonitor.LastModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

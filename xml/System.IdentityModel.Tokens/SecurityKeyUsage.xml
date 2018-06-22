@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityKeyUsage" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityKeyUsage" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityKeyUsage" />
+  <TypeSignature Language="F#" Value="type SecurityKeyUsage = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityKeyUsage.Exchange" />
       <MemberSignature Language="VB.NET" Value="Exchange" />
       <MemberSignature Language="C++ CLI" Value="Exchange" />
+      <MemberSignature Language="F#" Value="Exchange = 0" Usage="System.IdentityModel.Tokens.SecurityKeyUsage.Exchange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityKeyUsage.Signature" />
       <MemberSignature Language="VB.NET" Value="Signature" />
       <MemberSignature Language="C++ CLI" Value="Signature" />
+      <MemberSignature Language="F#" Value="Signature = 1" Usage="System.IdentityModel.Tokens.SecurityKeyUsage.Signature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

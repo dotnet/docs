@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ChartAreaCollection&#xA;Inherits ChartNamedElementCollection(Of ChartArea)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChartAreaCollection : System::Windows::Forms::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::ChartArea ^&gt;" />
+  <TypeSignature Language="F#" Value="type ChartAreaCollection = class&#xA;    inherit ChartNamedElementCollection&lt;ChartArea&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String) As ChartArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataVisualization::Charting::ChartArea ^ Add(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; System.Windows.Forms.DataVisualization.Charting.ChartArea" Usage="chartAreaCollection.Add name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

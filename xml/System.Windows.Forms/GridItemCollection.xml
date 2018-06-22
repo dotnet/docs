@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class GridItemCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridItemCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type GridItemCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItemCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.GridItemCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GridItemCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared Empty As GridItemCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static System::Windows::Forms::GridItemCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Windows.Forms.GridItemCollection" Usage="System.Windows.Forms.GridItemCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridItemCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="gridItemCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItemCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As GridItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::GridItem ^ default[int] { System::Windows::Forms::GridItem ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.GridItem" Usage="System.Windows.Forms.GridItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItemCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(label As String) As GridItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::GridItem ^ default[System::String ^] { System::Windows::Forms::GridItem ^ get(System::String ^ label); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.GridItem" Usage="System.Windows.Forms.GridItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItemCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.GridItemCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItemCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.GridItemCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.SoapAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type SoapAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapAttribute.Embedded" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Embedded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Embedded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Embedded : bool with get, set" Usage="System.Runtime.Remoting.Metadata.SoapAttribute.Embedded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.SoapAttribute.ProtXmlNamespace" />
       <MemberSignature Language="VB.NET" Value="Protected ProtXmlNamespace As String " />
       <MemberSignature Language="C++ CLI" Value="protected: System::String ^ ProtXmlNamespace;" />
+      <MemberSignature Language="F#" Value="val mutable ProtXmlNamespace : string" Usage="System.Runtime.Remoting.Metadata.SoapAttribute.ProtXmlNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.SoapAttribute.ReflectInfo" />
       <MemberSignature Language="VB.NET" Value="Protected ReflectInfo As Object " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Object ^ ReflectInfo;" />
+      <MemberSignature Language="F#" Value="val mutable ReflectInfo : obj" Usage="System.Runtime.Remoting.Metadata.SoapAttribute.ReflectInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapAttribute.UseAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UseAttribute As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseAttribute { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseAttribute : bool with get, set" Usage="System.Runtime.Remoting.Metadata.SoapAttribute.UseAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapAttribute.XmlNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property XmlNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XmlNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlNamespace : string with get, set" Usage="System.Runtime.Remoting.Metadata.SoapAttribute.XmlNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

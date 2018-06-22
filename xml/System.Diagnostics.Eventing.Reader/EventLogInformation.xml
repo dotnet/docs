@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogInformation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogInformation sealed" />
+  <TypeSignature Language="F#" Value="type EventLogInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogInformation.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Attributes { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogInformation.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogInformation.CreationTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreationTime { Nullable&lt;DateTime&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : Nullable&lt;DateTime&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogInformation.CreationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogInformation.FileSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSize As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; FileSize { Nullable&lt;long&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileSize : Nullable&lt;int64&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogInformation.FileSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogInformation.IsLogFull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLogFull As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLogFull { Nullable&lt;bool&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLogFull : Nullable&lt;bool&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogInformation.IsLogFull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogInformation.LastAccessTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastAccessTime As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; LastAccessTime { Nullable&lt;DateTime&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastAccessTime : Nullable&lt;DateTime&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogInformation.LastAccessTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogInformation.LastWriteTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastWriteTime As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; LastWriteTime { Nullable&lt;DateTime&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastWriteTime : Nullable&lt;DateTime&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogInformation.LastWriteTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogInformation.OldestRecordNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldestRecordNumber As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; OldestRecordNumber { Nullable&lt;long&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldestRecordNumber : Nullable&lt;int64&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogInformation.OldestRecordNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogInformation.RecordCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecordCount As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; RecordCount { Nullable&lt;long&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecordCount : Nullable&lt;int64&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogInformation.RecordCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

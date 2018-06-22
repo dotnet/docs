@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientMetaDataCollectionNames" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlClientMetaDataCollectionNames" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlClientMetaDataCollectionNames abstract sealed" />
+  <TypeSignature Language="F#" Value="type SqlClientMetaDataCollectionNames = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Columns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Columns As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Columns;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Columns : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.Columns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Databases" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Databases As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Databases;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Databases : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.Databases" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.ForeignKeys" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForeignKeys As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ForeignKeys;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForeignKeys : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.ForeignKeys" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.IndexColumns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IndexColumns As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IndexColumns;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndexColumns : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.IndexColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Indexes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Indexes As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Indexes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Indexes : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.Indexes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Parameters As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Parameters;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Parameters : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.Parameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.ProcedureColumns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProcedureColumns As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ProcedureColumns;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ProcedureColumns : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.ProcedureColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -196,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Procedures" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Procedures As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Procedures;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Procedures : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.Procedures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -220,6 +229,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Tables" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tables As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Tables;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Tables : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.Tables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -244,6 +254,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.UserDefinedTypes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UserDefinedTypes As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ UserDefinedTypes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UserDefinedTypes : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.UserDefinedTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -268,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Users" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Users As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Users;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Users : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.Users" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -292,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.ViewColumns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewColumns As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ViewColumns;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewColumns : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.ViewColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -316,6 +329,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Views" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Views As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Views;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Views : string" Usage="System.Data.SqlClient.SqlClientMetaDataCollectionNames.Views" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

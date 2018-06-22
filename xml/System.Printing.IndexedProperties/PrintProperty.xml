@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintProperty" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PrintProperty&#xA;Implements IDeserializationCallback, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintProperty abstract : IDisposable, System::Runtime::Serialization::IDeserializationCallback" />
+  <TypeSignature Language="F#" Value="type PrintProperty = class&#xA;    interface IDisposable&#xA;    interface IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintProperty.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintProperty(System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintProperty : string -&gt; System.Printing.IndexedProperties.PrintProperty" Usage="new System.Printing.IndexedProperties.PrintProperty attributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintProperty.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="printProperty.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintProperty.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="printProperty.Dispose A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintProperty.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!PrintProperty ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="printProperty.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintProperty.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InternalDispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member InternalDispose : bool -&gt; unit&#xA;override this.InternalDispose : bool -&gt; unit" Usage="printProperty.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintProperty.IsDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected Property IsDisposed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDisposed : bool with get, set" Usage="System.Printing.IndexedProperties.PrintProperty.IsDisposed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintProperty.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Protected Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsInitialized {  void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.Printing.IndexedProperties.PrintProperty.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Printing.IndexedProperties.PrintProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintProperty.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit&#xA;override this.OnDeserialization : obj -&gt; unit" Usage="printProperty.OnDeserialization sender" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Printing.IndexedProperties.PrintProperty.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

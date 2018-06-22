@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.EventInfo" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EventInfo&#xA;Inherits MemberInfo&#xA;Implements _EventInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventInfo abstract : System::Reflection::MemberInfo, System::Runtime::InteropServices::_EventInfo" />
+  <TypeSignature Language="F#" Value="type EventInfo = class&#xA;    inherit MemberInfo&#xA;    interface _EventInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.AddEventHandler(System.Object,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddEventHandler (target As Object, handler As Delegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddEventHandler(System::Object ^ target, Delegate ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member AddEventHandler : obj * Delegate -&gt; unit&#xA;override this.AddEventHandler : obj * Delegate -&gt; unit" Usage="eventInfo.AddEventHandler (target, handler)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.AddEventHandler(System.Object,System.Delegate)</InterfaceMember>
@@ -214,6 +216,7 @@ You might use the `AddEventHander` method when you load a type after the program
       <MemberSignature Language="DocId" Value="P:System.Reflection.EventInfo.AddMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AddMethod As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodInfo ^ AddMethod { System::Reflection::MethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddMethod : System.Reflection.MethodInfo" Usage="System.Reflection.EventInfo.AddMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -257,6 +260,7 @@ You might use the `AddEventHander` method when you load a type after the program
       <MemberSignature Language="DocId" Value="P:System.Reflection.EventInfo.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As EventAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::EventAttributes Attributes { System::Reflection::EventAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.EventAttributes" Usage="System.Reflection.EventInfo.Attributes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._EventInfo.Attributes</InterfaceMember>
@@ -303,6 +307,7 @@ You might use the `AddEventHander` method when you load a type after the program
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="eventInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.Equals(System.Object)</InterfaceMember>
@@ -347,6 +352,7 @@ You might use the `AddEventHander` method when you load a type after the program
       <MemberSignature Language="DocId" Value="P:System.Reflection.EventInfo.EventHandlerType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EventHandlerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ EventHandlerType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventHandlerType : Type" Usage="System.Reflection.EventInfo.EventHandlerType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._EventInfo.EventHandlerType</InterfaceMember>
@@ -412,6 +418,7 @@ You might use the `AddEventHander` method when you load a type after the program
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetAddMethod" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAddMethod () As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetAddMethod();" />
+      <MemberSignature Language="F#" Value="abstract member GetAddMethod : unit -&gt; System.Reflection.MethodInfo&#xA;override this.GetAddMethod : unit -&gt; System.Reflection.MethodInfo" Usage="eventInfo.GetAddMethod " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.GetAddMethod</InterfaceMember>
@@ -468,6 +475,7 @@ add_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetAddMethod(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAddMethod (nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodInfo ^ GetAddMethod(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="abstract member GetAddMethod : bool -&gt; System.Reflection.MethodInfo" Usage="eventInfo.GetAddMethod nonPublic" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.GetAddMethod(System.Boolean)</InterfaceMember>
@@ -530,6 +538,7 @@ add_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="eventInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.GetHashCode</InterfaceMember>
@@ -580,6 +589,7 @@ add_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetOtherMethods" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOtherMethods () As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetOtherMethods();" />
+      <MemberSignature Language="F#" Value="member this.GetOtherMethods : unit -&gt; System.Reflection.MethodInfo[]" Usage="eventInfo.GetOtherMethods " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -628,6 +638,7 @@ add_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetOtherMethods(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOtherMethods (nonPublic As Boolean) As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetOtherMethods(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="abstract member GetOtherMethods : bool -&gt; System.Reflection.MethodInfo[]&#xA;override this.GetOtherMethods : bool -&gt; System.Reflection.MethodInfo[]" Usage="eventInfo.GetOtherMethods nonPublic" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -690,6 +701,7 @@ add_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetRaiseMethod" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRaiseMethod () As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetRaiseMethod();" />
+      <MemberSignature Language="F#" Value="abstract member GetRaiseMethod : unit -&gt; System.Reflection.MethodInfo&#xA;override this.GetRaiseMethod : unit -&gt; System.Reflection.MethodInfo" Usage="eventInfo.GetRaiseMethod " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.GetRaiseMethod</InterfaceMember>
@@ -737,6 +749,7 @@ add_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetRaiseMethod(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRaiseMethod (nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodInfo ^ GetRaiseMethod(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="abstract member GetRaiseMethod : bool -&gt; System.Reflection.MethodInfo" Usage="eventInfo.GetRaiseMethod nonPublic" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.GetRaiseMethod(System.Boolean)</InterfaceMember>
@@ -799,6 +812,7 @@ add_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetRemoveMethod" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRemoveMethod () As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetRemoveMethod();" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoveMethod : unit -&gt; System.Reflection.MethodInfo&#xA;override this.GetRemoveMethod : unit -&gt; System.Reflection.MethodInfo" Usage="eventInfo.GetRemoveMethod " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.GetRemoveMethod</InterfaceMember>
@@ -850,6 +864,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.GetRemoveMethod(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRemoveMethod (nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodInfo ^ GetRemoveMethod(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoveMethod : bool -&gt; System.Reflection.MethodInfo" Usage="eventInfo.GetRemoveMethod nonPublic" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.GetRemoveMethod(System.Boolean)</InterfaceMember>
@@ -907,6 +922,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="P:System.Reflection.EventInfo.IsMulticast" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsMulticast As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMulticast { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMulticast : bool" Usage="System.Reflection.EventInfo.IsMulticast" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._EventInfo.IsMulticast</InterfaceMember>
@@ -949,6 +965,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="P:System.Reflection.EventInfo.IsSpecialName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSpecialName : bool" Usage="System.Reflection.EventInfo.IsSpecialName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._EventInfo.IsSpecialName</InterfaceMember>
@@ -997,6 +1014,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="P:System.Reflection.EventInfo.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Reflection.EventInfo.MemberType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._EventInfo.MemberType</InterfaceMember>
@@ -1042,6 +1060,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.op_Equality(System.Reflection.EventInfo,System.Reflection.EventInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As EventInfo, right As EventInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::EventInfo ^ left, System::Reflection::EventInfo ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.EventInfo * System.Reflection.EventInfo -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1079,6 +1098,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.op_Inequality(System.Reflection.EventInfo,System.Reflection.EventInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As EventInfo, right As EventInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::EventInfo ^ left, System::Reflection::EventInfo ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.EventInfo * System.Reflection.EventInfo -&gt; bool" Usage="System.Reflection.EventInfo.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1116,6 +1136,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="P:System.Reflection.EventInfo.RaiseMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RaiseMethod As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodInfo ^ RaiseMethod { System::Reflection::MethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RaiseMethod : System.Reflection.MethodInfo" Usage="System.Reflection.EventInfo.RaiseMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1159,6 +1180,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.RemoveEventHandler(System.Object,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveEventHandler (target As Object, handler As Delegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveEventHandler(System::Object ^ target, Delegate ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveEventHandler : obj * Delegate -&gt; unit&#xA;override this.RemoveEventHandler : obj * Delegate -&gt; unit" Usage="eventInfo.RemoveEventHandler (target, handler)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._EventInfo.RemoveEventHandler(System.Object,System.Delegate)</InterfaceMember>
@@ -1245,6 +1267,7 @@ remove_<EventName>(<EventHandlerType> handler)
       <MemberSignature Language="DocId" Value="P:System.Reflection.EventInfo.RemoveMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RemoveMethod As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodInfo ^ RemoveMethod { System::Reflection::MethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemoveMethod : System.Reflection.MethodInfo" Usage="System.Reflection.EventInfo.RemoveMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogPermissionEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogPermissionEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogPermissionEntry" />
+  <TypeSignature Language="F#" Value="type EventLogPermissionEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntry.#ctor(System.Diagnostics.EventLogPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As EventLogPermissionAccess, machineName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermissionEntry(System::Diagnostics::EventLogPermissionAccess permissionAccess, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogPermissionEntry : System.Diagnostics.EventLogPermissionAccess * string -&gt; System.Diagnostics.EventLogPermissionEntry" Usage="new System.Diagnostics.EventLogPermissionEntry (permissionAccess, machineName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogPermissionEntry.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string" Usage="System.Diagnostics.EventLogPermissionEntry.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogPermissionEntry.PermissionAccess" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionAccess As EventLogPermissionAccess" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogPermissionAccess PermissionAccess { System::Diagnostics::EventLogPermissionAccess get(); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.Diagnostics.EventLogPermissionAccess" Usage="System.Diagnostics.EventLogPermissionEntry.PermissionAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

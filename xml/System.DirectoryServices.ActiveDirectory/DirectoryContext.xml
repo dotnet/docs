@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryContext" />
+  <TypeSignature Language="F#" Value="type DirectoryContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryContext.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContextType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextType As DirectoryContextType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryContext(System::DirectoryServices::ActiveDirectory::DirectoryContextType contextType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.DirectoryContext : System.DirectoryServices.ActiveDirectory.DirectoryContextType -&gt; System.DirectoryServices.ActiveDirectory.DirectoryContext" Usage="new System.DirectoryServices.ActiveDirectory.DirectoryContext contextType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryContext.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContextType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextType As DirectoryContextType, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryContext(System::DirectoryServices::ActiveDirectory::DirectoryContextType contextType, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.DirectoryContext : System.DirectoryServices.ActiveDirectory.DirectoryContextType * string -&gt; System.DirectoryServices.ActiveDirectory.DirectoryContext" Usage="new System.DirectoryServices.ActiveDirectory.DirectoryContext (contextType, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryContext.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContextType,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextType As DirectoryContextType, username As String, password As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryContext(System::DirectoryServices::ActiveDirectory::DirectoryContextType contextType, System::String ^ username, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.DirectoryContext : System.DirectoryServices.ActiveDirectory.DirectoryContextType * string * string -&gt; System.DirectoryServices.ActiveDirectory.DirectoryContext" Usage="new System.DirectoryServices.ActiveDirectory.DirectoryContext (contextType, username, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryContext.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContextType,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextType As DirectoryContextType, name As String, username As String, password As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryContext(System::DirectoryServices::ActiveDirectory::DirectoryContextType contextType, System::String ^ name, System::String ^ username, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.DirectoryContext : System.DirectoryServices.ActiveDirectory.DirectoryContextType * string * string * string -&gt; System.DirectoryServices.ActiveDirectory.DirectoryContext" Usage="new System.DirectoryServices.ActiveDirectory.DirectoryContext (contextType, name, username, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryContext.ContextType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextType As DirectoryContextType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DirectoryContextType ContextType { System::DirectoryServices::ActiveDirectory::DirectoryContextType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextType : System.DirectoryServices.ActiveDirectory.DirectoryContextType" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContext.ContextType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryContext.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContext.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryContext.UserName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContext.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

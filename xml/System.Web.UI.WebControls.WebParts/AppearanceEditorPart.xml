@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AppearanceEditorPart&#xA;Inherits EditorPart" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppearanceEditorPart sealed : System::Web::UI::WebControls::WebParts::EditorPart" />
+  <TypeSignature Language="F#" Value="type AppearanceEditorPart = class&#xA;    inherit EditorPart" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -107,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.ApplyChanges" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ApplyChanges () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ApplyChanges();" />
+      <MemberSignature Language="F#" Value="override this.ApplyChanges : unit -&gt; bool" Usage="appearanceEditorPart.ApplyChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="appearanceEditorPart.CreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.DefaultButton" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultButton As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultButton : string with get, set" Usage="System.Web.UI.WebControls.WebParts.AppearanceEditorPart.DefaultButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="appearanceEditorPart.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="appearanceEditorPart.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyncChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SyncChanges();" />
+      <MemberSignature Language="F#" Value="override this.SyncChanges : unit -&gt; unit" Usage="appearanceEditorPart.SyncChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.Title" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.WebControls.WebParts.AppearanceEditorPart.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

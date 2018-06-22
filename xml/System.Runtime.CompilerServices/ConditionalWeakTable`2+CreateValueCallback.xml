@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ConditionalWeakTable(Of TKey, TValue).CreateValueCallback(key As TKey) As TValue " />
   <TypeSignature Language="C++ CLI" Value="public:  where TKey : class where TValue : classdelegate TValue ConditionalWeakTable&lt;TKey, TValue&gt;::CreateValueCallback(TKey key);" />
+  <TypeSignature Language="F#" Value="type ConditionalWeakTable&lt;'Key, 'Value (requires 'Key : null and 'Value : null)&gt;.CreateValueCallback = delegate of 'Key -&gt; 'Value" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>

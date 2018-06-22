@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.SqlProfileProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlProfileProvider&#xA;Inherits ProfileProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlProfileProvider : System::Web::Profile::ProfileProvider" />
+  <TypeSignature Language="F#" Value="type SqlProfileProvider = class&#xA;    inherit ProfileProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,6 +121,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.SqlProfileProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.Profile.SqlProfileProvider.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +172,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.DeleteInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int DeleteInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="override this.DeleteInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime -&gt; int" Usage="sqlProfileProvider.DeleteInactiveProfiles (authenticationOption, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,6 +225,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.DeleteProfiles(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteProfiles (usernames As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int DeleteProfiles(cli::array &lt;System::String ^&gt; ^ usernames);" />
+      <MemberSignature Language="F#" Value="override this.DeleteProfiles : string[] -&gt; int" Usage="sqlProfileProvider.DeleteProfiles usernames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +284,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.DeleteProfiles(System.Web.Profile.ProfileInfoCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteProfiles (profiles As ProfileInfoCollection) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int DeleteProfiles(System::Web::Profile::ProfileInfoCollection ^ profiles);" />
+      <MemberSignature Language="F#" Value="override this.DeleteProfiles : System.Web.Profile.ProfileInfoCollection -&gt; int" Usage="sqlProfileProvider.DeleteProfiles profiles" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -335,6 +340,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.FindInactiveProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindInactiveProfilesByUserName (authenticationOption As ProfileAuthenticationOption, usernameToMatch As String, userInactiveSinceDate As DateTime, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Profile::ProfileInfoCollection ^ FindInactiveProfilesByUserName(System::Web::Profile::ProfileAuthenticationOption authenticationOption, System::String ^ usernameToMatch, DateTime userInactiveSinceDate, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="override this.FindInactiveProfilesByUserName : System.Web.Profile.ProfileAuthenticationOption * string * DateTime * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="sqlProfileProvider.FindInactiveProfilesByUserName (authenticationOption, usernameToMatch, userInactiveSinceDate, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -404,6 +410,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.FindProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindProfilesByUserName (authenticationOption As ProfileAuthenticationOption, usernameToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Profile::ProfileInfoCollection ^ FindProfilesByUserName(System::Web::Profile::ProfileAuthenticationOption authenticationOption, System::String ^ usernameToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="override this.FindProfilesByUserName : System.Web.Profile.ProfileAuthenticationOption * string * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="sqlProfileProvider.FindProfilesByUserName (authenticationOption, usernameToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -471,6 +478,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.GetAllInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Profile::ProfileInfoCollection ^ GetAllInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="override this.GetAllInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="sqlProfileProvider.GetAllInactiveProfiles (authenticationOption, userInactiveSinceDate, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -530,6 +538,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.GetAllProfiles(System.Web.Profile.ProfileAuthenticationOption,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllProfiles (authenticationOption As ProfileAuthenticationOption, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Profile::ProfileInfoCollection ^ GetAllProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="override this.GetAllProfiles : System.Web.Profile.ProfileAuthenticationOption * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="sqlProfileProvider.GetAllProfiles (authenticationOption, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -587,6 +596,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.GetNumberOfInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNumberOfInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetNumberOfInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="override this.GetNumberOfInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime -&gt; int" Usage="sqlProfileProvider.GetNumberOfInactiveProfiles (authenticationOption, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -628,6 +638,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.GetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertyValues (sc As SettingsContext, properties As SettingsPropertyCollection) As SettingsPropertyValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Configuration::SettingsPropertyValueCollection ^ GetPropertyValues(System::Configuration::SettingsContext ^ sc, System::Configuration::SettingsPropertyCollection ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; System.Configuration.SettingsPropertyValueCollection&#xA;override this.GetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; System.Configuration.SettingsPropertyValueCollection" Usage="sqlProfileProvider.GetPropertyValues (sc, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -669,6 +680,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit&#xA;override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="sqlProfileProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -717,6 +729,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetPropertyValues (sc As SettingsContext, properties As SettingsPropertyValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetPropertyValues(System::Configuration::SettingsContext ^ sc, System::Configuration::SettingsPropertyValueCollection ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member SetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyValueCollection -&gt; unit&#xA;override this.SetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyValueCollection -&gt; unit" Usage="sqlProfileProvider.SetPropertyValues (sc, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

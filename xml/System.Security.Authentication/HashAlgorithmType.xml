@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.HashAlgorithmType" />
   <TypeSignature Language="VB.NET" Value="Public Enum HashAlgorithmType" />
   <TypeSignature Language="C++ CLI" Value="public enum class HashAlgorithmType" />
+  <TypeSignature Language="F#" Value="type HashAlgorithmType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Md5" />
       <MemberSignature Language="VB.NET" Value="Md5" />
       <MemberSignature Language="C++ CLI" Value="Md5" />
+      <MemberSignature Language="F#" Value="Md5 = 32771" Usage="System.Security.Authentication.HashAlgorithmType.Md5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Authentication.HashAlgorithmType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha1" />
       <MemberSignature Language="VB.NET" Value="Sha1" />
       <MemberSignature Language="C++ CLI" Value="Sha1" />
+      <MemberSignature Language="F#" Value="Sha1 = 32772" Usage="System.Security.Authentication.HashAlgorithmType.Sha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha256" />
       <MemberSignature Language="VB.NET" Value="Sha256" />
       <MemberSignature Language="C++ CLI" Value="Sha256" />
+      <MemberSignature Language="F#" Value="Sha256 = 32780" Usage="System.Security.Authentication.HashAlgorithmType.Sha256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha384" />
       <MemberSignature Language="VB.NET" Value="Sha384" />
       <MemberSignature Language="C++ CLI" Value="Sha384" />
+      <MemberSignature Language="F#" Value="Sha384 = 32781" Usage="System.Security.Authentication.HashAlgorithmType.Sha384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha512" />
       <MemberSignature Language="VB.NET" Value="Sha512" />
       <MemberSignature Language="C++ CLI" Value="Sha512" />
+      <MemberSignature Language="F#" Value="Sha512 = 32782" Usage="System.Security.Authentication.HashAlgorithmType.Sha512" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

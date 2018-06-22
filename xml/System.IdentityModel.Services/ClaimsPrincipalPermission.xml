@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ClaimsPrincipalPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClaimsPrincipalPermission&#xA;Implements IPermission, ISecurityEncodable, IUnrestrictedPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimsPrincipalPermission sealed : System::Security::IPermission, System::Security::ISecurityEncodable, System::Security::Permissions::IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type ClaimsPrincipalPermission = class&#xA;    interface IPermission&#xA;    interface ISecurityEncodable&#xA;    interface IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resource As String, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsPrincipalPermission(System::String ^ resource, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.ClaimsPrincipalPermission : string * string -&gt; System.IdentityModel.Services.ClaimsPrincipalPermission" Usage="new System.IdentityModel.Services.ClaimsPrincipalPermission (resource, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.CheckAccess(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CheckAccess (resource As String, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CheckAccess(System::String ^ resource, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="static member CheckAccess : string * string -&gt; unit" Usage="System.IdentityModel.Services.ClaimsPrincipalPermission.CheckAccess (resource, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -172,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission&#xA;override this.Copy : unit -&gt; System.Security.IPermission" Usage="claimsPrincipalPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.Demand" />
       <MemberSignature Language="VB.NET" Value="Public Sub Demand ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Demand();" />
+      <MemberSignature Language="F#" Value="abstract member Demand : unit -&gt; unit&#xA;override this.Demand : unit -&gt; unit" Usage="claimsPrincipalPermission.Demand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (element As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="claimsPrincipalPermission.FromXml element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="claimsPrincipalPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -306,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool&#xA;override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="claimsPrincipalPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -338,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="claimsPrincipalPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -360,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="claimsPrincipalPermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -388,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="claimsPrincipalPermission.Union target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FolderLevelBuildProviderAppliesToAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class FolderLevelBuildProviderAppliesToAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type FolderLevelBuildProviderAppliesToAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute.#ctor(System.Web.Compilation.FolderLevelBuildProviderAppliesTo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (appliesTo As FolderLevelBuildProviderAppliesTo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FolderLevelBuildProviderAppliesToAttribute(System::Web::Compilation::FolderLevelBuildProviderAppliesTo appliesTo);" />
+      <MemberSignature Language="F#" Value="new System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute : System.Web.Compilation.FolderLevelBuildProviderAppliesTo -&gt; System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute" Usage="new System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute appliesTo" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute.AppliesTo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As FolderLevelBuildProviderAppliesTo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Compilation::FolderLevelBuildProviderAppliesTo AppliesTo { System::Web::Compilation::FolderLevelBuildProviderAppliesTo get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppliesTo : System.Web.Compilation.FolderLevelBuildProviderAppliesTo" Usage="System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute.AppliesTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

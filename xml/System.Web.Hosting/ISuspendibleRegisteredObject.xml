@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ISuspendibleRegisteredObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISuspendibleRegisteredObject&#xA;Implements IRegisteredObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISuspendibleRegisteredObject : System::Web::Hosting::IRegisteredObject" />
+  <TypeSignature Language="F#" Value="type ISuspendibleRegisteredObject = interface&#xA;    interface IRegisteredObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend" />
       <MemberSignature Language="VB.NET" Value="Public Function Suspend () As Action" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Action ^ Suspend();" />
+      <MemberSignature Language="F#" Value="abstract member Suspend : unit -&gt; Action" Usage="iSuspendibleRegisteredObject.Suspend " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

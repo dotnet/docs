@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.ActiveDirectoryConnectionProtection" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActiveDirectoryConnectionProtection" />
   <TypeSignature Language="C++ CLI" Value="public enum class ActiveDirectoryConnectionProtection" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryConnectionProtection = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.ActiveDirectoryConnectionProtection.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Security.ActiveDirectoryConnectionProtection.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal" />
       <MemberSignature Language="VB.NET" Value="SignAndSeal" />
       <MemberSignature Language="C++ CLI" Value="SignAndSeal" />
+      <MemberSignature Language="F#" Value="SignAndSeal = 2" Usage="System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.ActiveDirectoryConnectionProtection.Ssl" />
       <MemberSignature Language="VB.NET" Value="Ssl" />
       <MemberSignature Language="C++ CLI" Value="Ssl" />
+      <MemberSignature Language="F#" Value="Ssl = 1" Usage="System.Web.Security.ActiveDirectoryConnectionProtection.Ssl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

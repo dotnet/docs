@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.Prosody" />
   <TypeSignature Language="VB.NET" Value="Public Class Prosody" />
   <TypeSignature Language="C++ CLI" Value="public ref class Prosody" />
+  <TypeSignature Language="F#" Value="type Prosody = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.Prosody.Duration" />
       <MemberSignature Language="VB.NET" Value="Public Property Duration As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Duration { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Duration : int with get, set" Usage="System.Speech.Synthesis.TtsEngine.Prosody.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.Prosody.GetContourPoints" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContourPoints () As ContourPoint()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Speech::Synthesis::TtsEngine::ContourPoint&gt; ^ GetContourPoints();" />
+      <MemberSignature Language="F#" Value="member this.GetContourPoints : unit -&gt; System.Speech.Synthesis.TtsEngine.ContourPoint[]" Usage="prosody.GetContourPoints " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.Prosody.Pitch" />
       <MemberSignature Language="VB.NET" Value="Public Property Pitch As ProsodyNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::ProsodyNumber Pitch { System::Speech::Synthesis::TtsEngine::ProsodyNumber get(); void set(System::Speech::Synthesis::TtsEngine::ProsodyNumber value); };" />
+      <MemberSignature Language="F#" Value="member this.Pitch : System.Speech.Synthesis.TtsEngine.ProsodyNumber with get, set" Usage="System.Speech.Synthesis.TtsEngine.Prosody.Pitch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.Prosody.Range" />
       <MemberSignature Language="VB.NET" Value="Public Property Range As ProsodyNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::ProsodyNumber Range { System::Speech::Synthesis::TtsEngine::ProsodyNumber get(); void set(System::Speech::Synthesis::TtsEngine::ProsodyNumber value); };" />
+      <MemberSignature Language="F#" Value="member this.Range : System.Speech.Synthesis.TtsEngine.ProsodyNumber with get, set" Usage="System.Speech.Synthesis.TtsEngine.Prosody.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.Prosody.Rate" />
       <MemberSignature Language="VB.NET" Value="Public Property Rate As ProsodyNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::ProsodyNumber Rate { System::Speech::Synthesis::TtsEngine::ProsodyNumber get(); void set(System::Speech::Synthesis::TtsEngine::ProsodyNumber value); };" />
+      <MemberSignature Language="F#" Value="member this.Rate : System.Speech.Synthesis.TtsEngine.ProsodyNumber with get, set" Usage="System.Speech.Synthesis.TtsEngine.Prosody.Rate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.Prosody.SetContourPoints(System.Speech.Synthesis.TtsEngine.ContourPoint[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetContourPoints (points As ContourPoint())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetContourPoints(cli::array &lt;System::Speech::Synthesis::TtsEngine::ContourPoint&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="member this.SetContourPoints : System.Speech.Synthesis.TtsEngine.ContourPoint[] -&gt; unit" Usage="prosody.SetContourPoints points" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.Prosody.Volume" />
       <MemberSignature Language="VB.NET" Value="Public Property Volume As ProsodyNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::ProsodyNumber Volume { System::Speech::Synthesis::TtsEngine::ProsodyNumber get(); void set(System::Speech::Synthesis::TtsEngine::ProsodyNumber value); };" />
+      <MemberSignature Language="F#" Value="member this.Volume : System.Speech.Synthesis.TtsEngine.ProsodyNumber with get, set" Usage="System.Speech.Synthesis.TtsEngine.Prosody.Volume" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

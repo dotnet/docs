@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValueTaskSourceOnCompletedFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValueTaskSourceOnCompletedFlags" />
+  <TypeSignature Language="F#" Value="type ValueTaskSourceOnCompletedFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.FlowExecutionContext" />
       <MemberSignature Language="VB.NET" Value="FlowExecutionContext" />
       <MemberSignature Language="C++ CLI" Value="FlowExecutionContext" />
+      <MemberSignature Language="F#" Value="FlowExecutionContext = 2" Usage="System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.FlowExecutionContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.UseSchedulingContext" />
       <MemberSignature Language="VB.NET" Value="UseSchedulingContext" />
       <MemberSignature Language="C++ CLI" Value="UseSchedulingContext" />
+      <MemberSignature Language="F#" Value="UseSchedulingContext = 1" Usage="System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags.UseSchedulingContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.TransferSession" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransferSession" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransferSession" />
+  <TypeSignature Language="F#" Value="type TransferSession = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.TransferSession.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.Channels.TransferSession.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.TransferSession.Ordered" />
       <MemberSignature Language="VB.NET" Value="Ordered" />
       <MemberSignature Language="C++ CLI" Value="Ordered" />
+      <MemberSignature Language="F#" Value="Ordered = 1" Usage="System.ServiceModel.Channels.TransferSession.Ordered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.TransferSession.Unordered" />
       <MemberSignature Language="VB.NET" Value="Unordered" />
       <MemberSignature Language="C++ CLI" Value="Unordered" />
+      <MemberSignature Language="F#" Value="Unordered = 2" Usage="System.ServiceModel.Channels.TransferSession.Unordered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

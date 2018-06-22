@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualTreeHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualTreeHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualTreeHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type VisualTreeHelper = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetBitmapEffect(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBitmapEffect (reference As Visual) As BitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Effects::BitmapEffect ^ GetBitmapEffect(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetBitmapEffect : System.Windows.Media.Visual -&gt; System.Windows.Media.Effects.BitmapEffect" Usage="System.Windows.Media.VisualTreeHelper.GetBitmapEffect reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetBitmapEffectInput(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBitmapEffectInput (reference As Visual) As BitmapEffectInput" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Effects::BitmapEffectInput ^ GetBitmapEffectInput(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetBitmapEffectInput : System.Windows.Media.Visual -&gt; System.Windows.Media.Effects.BitmapEffectInput" Usage="System.Windows.Media.VisualTreeHelper.GetBitmapEffectInput reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetCacheMode(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCacheMode (reference As Visual) As CacheMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::CacheMode ^ GetCacheMode(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetCacheMode : System.Windows.Media.Visual -&gt; System.Windows.Media.CacheMode" Usage="System.Windows.Media.VisualTreeHelper.GetCacheMode reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetChild(System.Windows.DependencyObject,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetChild (reference As DependencyObject, childIndex As Integer) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetChild(System::Windows::DependencyObject ^ reference, int childIndex);" />
+      <MemberSignature Language="F#" Value="static member GetChild : System.Windows.DependencyObject * int -&gt; System.Windows.DependencyObject" Usage="System.Windows.Media.VisualTreeHelper.GetChild (reference, childIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetChildrenCount(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetChildrenCount (reference As DependencyObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetChildrenCount(System::Windows::DependencyObject ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetChildrenCount : System.Windows.DependencyObject -&gt; int" Usage="System.Windows.Media.VisualTreeHelper.GetChildrenCount reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetClip(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetClip (reference As Visual) As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Geometry ^ GetClip(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetClip : System.Windows.Media.Visual -&gt; System.Windows.Media.Geometry" Usage="System.Windows.Media.VisualTreeHelper.GetClip reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetContentBounds(System.Windows.Media.Media3D.Visual3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetContentBounds (reference As Visual3D) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Rect3D GetContentBounds(System::Windows::Media::Media3D::Visual3D ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetContentBounds : System.Windows.Media.Media3D.Visual3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.VisualTreeHelper.GetContentBounds reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -264,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetContentBounds(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetContentBounds (reference As Visual) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect GetContentBounds(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetContentBounds : System.Windows.Media.Visual -&gt; System.Windows.Rect" Usage="System.Windows.Media.VisualTreeHelper.GetContentBounds reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -313,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetDescendantBounds(System.Windows.Media.Media3D.Visual3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDescendantBounds (reference As Visual3D) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Rect3D GetDescendantBounds(System::Windows::Media::Media3D::Visual3D ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetDescendantBounds : System.Windows.Media.Media3D.Visual3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.VisualTreeHelper.GetDescendantBounds reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -344,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetDescendantBounds(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDescendantBounds (reference As Visual) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect GetDescendantBounds(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetDescendantBounds : System.Windows.Media.Visual -&gt; System.Windows.Rect" Usage="System.Windows.Media.VisualTreeHelper.GetDescendantBounds reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -382,6 +393,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.DpiScale GetDpi(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetDpi(System.Windows.Media.Visual)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DpiScale GetDpi(System::Windows::Media::Visual ^ visual);" />
+      <MemberSignature Language="F#" Value="static member GetDpi : System.Windows.Media.Visual -&gt; System.Windows.DpiScale" Usage="System.Windows.Media.VisualTreeHelper.GetDpi visual" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -406,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetDrawing(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDrawing (reference As Visual) As DrawingGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::DrawingGroup ^ GetDrawing(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetDrawing : System.Windows.Media.Visual -&gt; System.Windows.Media.DrawingGroup" Usage="System.Windows.Media.VisualTreeHelper.GetDrawing reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetEdgeMode(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEdgeMode (reference As Visual) As EdgeMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::EdgeMode GetEdgeMode(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetEdgeMode : System.Windows.Media.Visual -&gt; System.Windows.Media.EdgeMode" Usage="System.Windows.Media.VisualTreeHelper.GetEdgeMode reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -476,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetEffect(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEffect (reference As Visual) As Effect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Effects::Effect ^ GetEffect(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetEffect : System.Windows.Media.Visual -&gt; System.Windows.Media.Effects.Effect" Usage="System.Windows.Media.VisualTreeHelper.GetEffect reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -503,6 +518,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetOffset(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOffset (reference As Visual) As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector GetOffset(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetOffset : System.Windows.Media.Visual -&gt; System.Windows.Vector" Usage="System.Windows.Media.VisualTreeHelper.GetOffset reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -548,6 +564,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetOpacity(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOpacity (reference As Visual) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetOpacity(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetOpacity : System.Windows.Media.Visual -&gt; double" Usage="System.Windows.Media.VisualTreeHelper.GetOpacity reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -579,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetOpacityMask(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOpacityMask (reference As Visual) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetOpacityMask(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetOpacityMask : System.Windows.Media.Visual -&gt; System.Windows.Media.Brush" Usage="System.Windows.Media.VisualTreeHelper.GetOpacityMask reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -610,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetParent(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetParent (reference As DependencyObject) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetParent(System::Windows::DependencyObject ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetParent : System.Windows.DependencyObject -&gt; System.Windows.DependencyObject" Usage="System.Windows.Media.VisualTreeHelper.GetParent reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -645,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetTransform(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTransform (reference As Visual) As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Transform ^ GetTransform(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetTransform : System.Windows.Media.Visual -&gt; System.Windows.Media.Transform" Usage="System.Windows.Media.VisualTreeHelper.GetTransform reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -689,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetXSnappingGuidelines(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXSnappingGuidelines (reference As Visual) As DoubleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::DoubleCollection ^ GetXSnappingGuidelines(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetXSnappingGuidelines : System.Windows.Media.Visual -&gt; System.Windows.Media.DoubleCollection" Usage="System.Windows.Media.VisualTreeHelper.GetXSnappingGuidelines reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -723,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.GetYSnappingGuidelines(System.Windows.Media.Visual)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetYSnappingGuidelines (reference As Visual) As DoubleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::DoubleCollection ^ GetYSnappingGuidelines(System::Windows::Media::Visual ^ reference);" />
+      <MemberSignature Language="F#" Value="static member GetYSnappingGuidelines : System.Windows.Media.Visual -&gt; System.Windows.Media.DoubleCollection" Usage="System.Windows.Media.VisualTreeHelper.GetYSnappingGuidelines reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -777,6 +799,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.HitTestResult HitTest(class System.Windows.Media.Visual reference, valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Visual,System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::HitTestResult ^ HitTest(System::Windows::Media::Visual ^ reference, System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="static member HitTest : System.Windows.Media.Visual * System.Windows.Point -&gt; System.Windows.Media.HitTestResult" Usage="System.Windows.Media.VisualTreeHelper.HitTest (reference, point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -821,6 +844,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Media3D.Visual3D,System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.Media3D.HitTestParameters3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub HitTest (reference As Visual3D, filterCallback As HitTestFilterCallback, resultCallback As HitTestResultCallback, hitTestParameters As HitTestParameters3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HitTest(System::Windows::Media::Media3D::Visual3D ^ reference, System::Windows::Media::HitTestFilterCallback ^ filterCallback, System::Windows::Media::HitTestResultCallback ^ resultCallback, System::Windows::Media::Media3D::HitTestParameters3D ^ hitTestParameters);" />
+      <MemberSignature Language="F#" Value="static member HitTest : System.Windows.Media.Media3D.Visual3D * System.Windows.Media.HitTestFilterCallback * System.Windows.Media.HitTestResultCallback * System.Windows.Media.Media3D.HitTestParameters3D -&gt; unit" Usage="System.Windows.Media.VisualTreeHelper.HitTest (reference, filterCallback, resultCallback, hitTestParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -859,6 +883,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void HitTest(class System.Windows.Media.Visual reference, class System.Windows.Media.HitTestFilterCallback filterCallback, class System.Windows.Media.HitTestResultCallback resultCallback, class System.Windows.Media.HitTestParameters hitTestParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.HitTest(System.Windows.Media.Visual,System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.HitTestParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HitTest(System::Windows::Media::Visual ^ reference, System::Windows::Media::HitTestFilterCallback ^ filterCallback, System::Windows::Media::HitTestResultCallback ^ resultCallback, System::Windows::Media::HitTestParameters ^ hitTestParameters);" />
+      <MemberSignature Language="F#" Value="static member HitTest : System.Windows.Media.Visual * System.Windows.Media.HitTestFilterCallback * System.Windows.Media.HitTestResultCallback * System.Windows.Media.HitTestParameters -&gt; unit" Usage="System.Windows.Media.VisualTreeHelper.HitTest (reference, filterCallback, resultCallback, hitTestParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -907,6 +932,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRootDpi(class System.Windows.Media.Visual visual, valuetype System.Windows.DpiScale dpiInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTreeHelper.SetRootDpi(System.Windows.Media.Visual,System.Windows.DpiScale)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetRootDpi(System::Windows::Media::Visual ^ visual, System::Windows::DpiScale dpiInfo);" />
+      <MemberSignature Language="F#" Value="static member SetRootDpi : System.Windows.Media.Visual * System.Windows.DpiScale -&gt; unit" Usage="System.Windows.Media.VisualTreeHelper.SetRootDpi (visual, dpiInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

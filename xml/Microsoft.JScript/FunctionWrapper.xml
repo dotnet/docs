@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.FunctionWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FunctionWrapper&#xA;Inherits ScriptFunction" />
   <TypeSignature Language="C++ CLI" Value="public ref class FunctionWrapper sealed : Microsoft::JScript::ScriptFunction" />
+  <TypeSignature Language="F#" Value="type FunctionWrapper = class&#xA;    inherit ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FunctionWrapper.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="functionWrapper.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

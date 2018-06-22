@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapNodeItemType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SiteMapNodeItemType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SiteMapNodeItemType" />
+  <TypeSignature Language="F#" Value="type SiteMapNodeItemType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SiteMapNodeItemType.Current" />
       <MemberSignature Language="VB.NET" Value="Current" />
       <MemberSignature Language="C++ CLI" Value="Current" />
+      <MemberSignature Language="F#" Value="Current = 2" Usage="System.Web.UI.WebControls.SiteMapNodeItemType.Current" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SiteMapNodeItemType.Parent" />
       <MemberSignature Language="VB.NET" Value="Parent" />
       <MemberSignature Language="C++ CLI" Value="Parent" />
+      <MemberSignature Language="F#" Value="Parent = 1" Usage="System.Web.UI.WebControls.SiteMapNodeItemType.Parent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SiteMapNodeItemType.PathSeparator" />
       <MemberSignature Language="VB.NET" Value="PathSeparator" />
       <MemberSignature Language="C++ CLI" Value="PathSeparator" />
+      <MemberSignature Language="F#" Value="PathSeparator = 3" Usage="System.Web.UI.WebControls.SiteMapNodeItemType.PathSeparator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SiteMapNodeItemType.Root" />
       <MemberSignature Language="VB.NET" Value="Root" />
       <MemberSignature Language="C++ CLI" Value="Root" />
+      <MemberSignature Language="F#" Value="Root = 0" Usage="System.Web.UI.WebControls.SiteMapNodeItemType.Root" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

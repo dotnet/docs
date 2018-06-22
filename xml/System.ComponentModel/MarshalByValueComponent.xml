@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.MarshalByValueComponent" />
   <TypeSignature Language="VB.NET" Value="Public Class MarshalByValueComponent&#xA;Implements IComponent, IDisposable, IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class MarshalByValueComponent : IDisposable, IServiceProvider, System::ComponentModel::IComponent" />
+  <TypeSignature Language="F#" Value="type MarshalByValueComponent = class&#xA;    interface IComponent&#xA;    interface IServiceProvider&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -103,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MarshalByValueComponent.Container" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Container As IContainer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::IContainer ^ Container { System::ComponentModel::IContainer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Container : System.ComponentModel.IContainer" Usage="System.ComponentModel.MarshalByValueComponent.Container" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MarshalByValueComponent.DesignMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DesignMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignMode : bool" Usage="System.ComponentModel.MarshalByValueComponent.DesignMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -200,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="marshalByValueComponent.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -243,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="marshalByValueComponent.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +297,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.MarshalByValueComponent.Disposed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Disposed;" />
+      <MemberSignature Language="F#" Value="member this.Disposed : EventHandler " Usage="member this.Disposed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.IComponent.Disposed</InterfaceMember>
@@ -325,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MarshalByValueComponent.Events" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Events As EventHandlerList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::EventHandlerList ^ Events { System::ComponentModel::EventHandlerList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Events : System.ComponentModel.EventHandlerList" Usage="System.ComponentModel.MarshalByValueComponent.Events" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -357,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!MarshalByValueComponent ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="marshalByValueComponent.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -388,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetService (service As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ service);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="marshalByValueComponent.GetService service" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -431,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MarshalByValueComponent.Site" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Site As ISite" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.ComponentModel.MarshalByValueComponent.Site" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IComponent.Site</InterfaceMember>
@@ -486,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="marshalByValueComponent.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

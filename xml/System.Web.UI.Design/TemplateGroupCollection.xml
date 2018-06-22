@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateGroupCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TemplateGroupCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateGroupCollection sealed : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type TemplateGroupCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.Add(System.Web.UI.Design.TemplateGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (group As TemplateGroup) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::Design::TemplateGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.Design.TemplateGroup -&gt; int" Usage="templateGroupCollection.Add group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.AddRange(System.Web.UI.Design.TemplateGroupCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (groups As TemplateGroupCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Web::UI::Design::TemplateGroupCollection ^ groups);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Web.UI.Design.TemplateGroupCollection -&gt; unit" Usage="templateGroupCollection.AddRange groups" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="templateGroupCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.Contains(System.Web.UI.Design.TemplateGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (group As TemplateGroup) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::Design::TemplateGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.Design.TemplateGroup -&gt; bool" Usage="templateGroupCollection.Contains group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.CopyTo(System.Web.UI.Design.TemplateGroup[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TemplateGroup(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::Design::TemplateGroup ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.Design.TemplateGroup[] * int -&gt; unit" Usage="templateGroupCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroupCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.Design.TemplateGroupCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -300,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.IndexOf(System.Web.UI.Design.TemplateGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (group As TemplateGroup) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::Design::TemplateGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.Design.TemplateGroup -&gt; int" Usage="templateGroupCollection.IndexOf group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.Insert(System.Int32,System.Web.UI.Design.TemplateGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, group As TemplateGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::Design::TemplateGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.Design.TemplateGroup -&gt; unit" Usage="templateGroupCollection.Insert (index, group)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -376,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroupCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TemplateGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::TemplateGroup ^ default[int] { System::Web::UI::Design::TemplateGroup ^ get(int index); void set(int index, System::Web::UI::Design::TemplateGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.Design.TemplateGroup with get, set" Usage="System.Web.UI.Design.TemplateGroupCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -415,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.Remove(System.Web.UI.Design.TemplateGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (group As TemplateGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::Design::TemplateGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.Design.TemplateGroup -&gt; unit" Usage="templateGroupCollection.Remove group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -454,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroupCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="templateGroupCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -530,6 +542,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroupCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.TemplateGroupCollection.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -560,6 +573,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroupCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.TemplateGroupCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -593,6 +607,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroupCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.TemplateGroupCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -824,6 +839,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroupCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.TemplateGroupCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -855,6 +871,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroupCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.TemplateGroupCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -886,6 +903,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroupCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.TemplateGroupCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

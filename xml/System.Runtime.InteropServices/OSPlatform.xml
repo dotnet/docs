@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.OSPlatform" />
   <TypeSignature Language="VB.NET" Value="Public Structure OSPlatform&#xA;Implements IEquatable(Of OSPlatform)" />
   <TypeSignature Language="C++ CLI" Value="public value class OSPlatform : IEquatable&lt;System::Runtime::InteropServices::OSPlatform&gt;" />
+  <TypeSignature Language="F#" Value="type OSPlatform = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.OSPlatform Create(string osPlatform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.Create(System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::OSPlatform Create(System::String ^ osPlatform);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Runtime.InteropServices.OSPlatform" Usage="System.Runtime.InteropServices.OSPlatform.Create osPlatform" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="oSPlatform.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.Equals(System.Runtime.InteropServices.OSPlatform)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As OSPlatform) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Runtime::InteropServices::OSPlatform other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Runtime.InteropServices.OSPlatform -&gt; bool" Usage="oSPlatform.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="oSPlatform.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.OSPlatform.Linux" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Linux As OSPlatform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::InteropServices::OSPlatform Linux { System::Runtime::InteropServices::OSPlatform get(); };" />
+      <MemberSignature Language="F#" Value="member this.Linux : System.Runtime.InteropServices.OSPlatform" Usage="System.Runtime.InteropServices.OSPlatform.Linux" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.op_Equality(System.Runtime.InteropServices.OSPlatform,System.Runtime.InteropServices.OSPlatform)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As OSPlatform, right As OSPlatform) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Runtime::InteropServices::OSPlatform left, System::Runtime::InteropServices::OSPlatform right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Runtime.InteropServices.OSPlatform * System.Runtime.InteropServices.OSPlatform -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.op_Inequality(System.Runtime.InteropServices.OSPlatform,System.Runtime.InteropServices.OSPlatform)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As OSPlatform, right As OSPlatform) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Runtime::InteropServices::OSPlatform left, System::Runtime::InteropServices::OSPlatform right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Runtime.InteropServices.OSPlatform * System.Runtime.InteropServices.OSPlatform -&gt; bool" Usage="System.Runtime.InteropServices.OSPlatform.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -336,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.OSPlatform.OSX" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSX As OSPlatform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::InteropServices::OSPlatform OSX { System::Runtime::InteropServices::OSPlatform get(); };" />
+      <MemberSignature Language="F#" Value="member this.OSX : System.Runtime.InteropServices.OSPlatform" Usage="System.Runtime.InteropServices.OSPlatform.OSX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -367,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="oSPlatform.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -406,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.OSPlatform.Windows" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Windows As OSPlatform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::InteropServices::OSPlatform Windows { System::Runtime::InteropServices::OSPlatform get(); };" />
+      <MemberSignature Language="F#" Value="member this.Windows : System.Runtime.InteropServices.OSPlatform" Usage="System.Runtime.InteropServices.OSPlatform.Windows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityElement sealed" />
+  <TypeSignature Language="F#" Value="type SecurityElement = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityElement(System::String ^ tag);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityElement : string -&gt; System.Security.SecurityElement" Usage="new System.Security.SecurityElement tag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tag As String, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityElement(System::String ^ tag, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityElement : string * string -&gt; System.Security.SecurityElement" Usage="new System.Security.SecurityElement (tag, text)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -170,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.AddAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAttribute (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAttribute(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddAttribute : string * string -&gt; unit" Usage="securityElement.AddAttribute (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -229,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.AddChild(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddChild (child As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddChild(System::Security::SecurityElement ^ child);" />
+      <MemberSignature Language="F#" Value="member this.AddChild : System.Security.SecurityElement -&gt; unit" Usage="securityElement.AddChild child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -279,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Attribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Attribute (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Attribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Attribute : string -&gt; string" Usage="securityElement.Attribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -334,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Property Attributes As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Hashtable ^ Attributes { System::Collections::Hashtable ^ get(); void set(System::Collections::Hashtable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.Hashtable with get, set" Usage="System.Security.SecurityElement.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -386,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Children" />
       <MemberSignature Language="VB.NET" Value="Public Property Children As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ Children { System::Collections::ArrayList ^ get(); void set(System::Collections::ArrayList ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Collections.ArrayList with get, set" Usage="System.Security.SecurityElement.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -433,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; System.Security.SecurityElement" Usage="securityElement.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -476,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Equal(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equal (other As SecurityElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equal(System::Security::SecurityElement ^ other);" />
+      <MemberSignature Language="F#" Value="member this.Equal : System.Security.SecurityElement -&gt; bool" Usage="securityElement.Equal other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -529,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Escape(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Escape (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Escape(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member Escape : string -&gt; string" Usage="System.Security.SecurityElement.Escape str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -587,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.FromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (xml As String) As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::SecurityElement ^ FromString(System::String ^ xml);" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; System.Security.SecurityElement" Usage="System.Security.SecurityElement.FromString xml" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -634,6 +646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidAttributeName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidAttributeName (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidAttributeName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member IsValidAttributeName : string -&gt; bool" Usage="System.Security.SecurityElement.IsValidAttributeName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -685,6 +698,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidAttributeValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidAttributeValue (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidAttributeValue(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member IsValidAttributeValue : string -&gt; bool" Usage="System.Security.SecurityElement.IsValidAttributeValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -736,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidTag (tag As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidTag(System::String ^ tag);" />
+      <MemberSignature Language="F#" Value="static member IsValidTag : string -&gt; bool" Usage="System.Security.SecurityElement.IsValidTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -787,6 +802,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidText (text As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member IsValidText : string -&gt; bool" Usage="System.Security.SecurityElement.IsValidText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -838,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.SearchForChildByTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SearchForChildByTag (tag As String) As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ SearchForChildByTag(System::String ^ tag);" />
+      <MemberSignature Language="F#" Value="member this.SearchForChildByTag : string -&gt; System.Security.SecurityElement" Usage="securityElement.SearchForChildByTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -894,6 +911,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.SearchForTextOfTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SearchForTextOfTag (tag As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SearchForTextOfTag(System::String ^ tag);" />
+      <MemberSignature Language="F#" Value="member this.SearchForTextOfTag : string -&gt; string" Usage="securityElement.SearchForTextOfTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -957,6 +975,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : string with get, set" Usage="System.Security.SecurityElement.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1013,6 +1032,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Security.SecurityElement.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1062,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="securityElement.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

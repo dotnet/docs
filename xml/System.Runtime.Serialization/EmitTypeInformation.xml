@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.EmitTypeInformation" />
   <TypeSignature Language="VB.NET" Value="Public Enum EmitTypeInformation" />
   <TypeSignature Language="C++ CLI" Value="public enum class EmitTypeInformation" />
+  <TypeSignature Language="F#" Value="type EmitTypeInformation = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.EmitTypeInformation.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 1" Usage="System.Runtime.Serialization.EmitTypeInformation.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.EmitTypeInformation.AsNeeded" />
       <MemberSignature Language="VB.NET" Value="AsNeeded" />
       <MemberSignature Language="C++ CLI" Value="AsNeeded" />
+      <MemberSignature Language="F#" Value="AsNeeded = 0" Usage="System.Runtime.Serialization.EmitTypeInformation.AsNeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.EmitTypeInformation.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 2" Usage="System.Runtime.Serialization.EmitTypeInformation.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>

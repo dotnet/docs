@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectoryRoleCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryRoleCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryRoleCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (role As ActiveDirectoryRole) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ActiveDirectoryRole role);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole -&gt; bool" Usage="activeDirectoryRoleCollection.Contains role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (roles As ActiveDirectoryRole(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectoryRole&gt; ^ roles, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole[] * int -&gt; unit" Usage="activeDirectoryRoleCollection.CopyTo (roles, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (role As ActiveDirectoryRole) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ActiveDirectoryRole role);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole -&gt; int" Usage="activeDirectoryRoleCollection.IndexOf role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ActiveDirectoryRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectoryRole default[int] { System::DirectoryServices::ActiveDirectory::ActiveDirectoryRole get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

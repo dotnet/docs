@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.FillErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FillErrorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FillErrorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type FillErrorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataTable dataTable, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.FillErrorEventArgs.#ctor(System.Data.DataTable,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FillErrorEventArgs(System::Data::DataTable ^ dataTable, cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="new System.Data.FillErrorEventArgs : System.Data.DataTable * obj[] -&gt; System.Data.FillErrorEventArgs" Usage="new System.Data.FillErrorEventArgs (dataTable, values)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.FillErrorEventArgs.Continue" />
       <MemberSignature Language="VB.NET" Value="Public Property Continue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Continue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Continue : bool with get, set" Usage="System.Data.FillErrorEventArgs.Continue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.FillErrorEventArgs.DataTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTable As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ DataTable { System::Data::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataTable : System.Data.DataTable" Usage="System.Data.FillErrorEventArgs.DataTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.FillErrorEventArgs.Errors" />
       <MemberSignature Language="VB.NET" Value="Public Property Errors As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Errors { Exception ^ get(); void set(Exception ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : Exception with get, set" Usage="System.Data.FillErrorEventArgs.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.FillErrorEventArgs.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ Values { cli::array &lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : obj[]" Usage="System.Data.FillErrorEventArgs.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

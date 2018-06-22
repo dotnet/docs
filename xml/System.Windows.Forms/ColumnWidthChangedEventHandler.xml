@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnWidthChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ColumnWidthChangedEventHandler(sender As Object, e As ColumnWidthChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ColumnWidthChangedEventHandler(System::Object ^ sender, ColumnWidthChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ColumnWidthChangedEventHandler = delegate of obj * ColumnWidthChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

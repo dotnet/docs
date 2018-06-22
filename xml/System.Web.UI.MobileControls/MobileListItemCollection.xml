@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileListItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class MobileListItemCollection&#xA;Inherits ArrayListCollectionBase&#xA;Implements IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class MobileListItemCollection : System::Web::UI::MobileControls::ArrayListCollectionBase, System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type MobileListItemCollection = class&#xA;    inherit ArrayListCollectionBase&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.#ctor(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (items As ArrayList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MobileListItemCollection(System::Collections::ArrayList ^ items);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.MobileListItemCollection : System.Collections.ArrayList -&gt; System.Web.UI.MobileControls.MobileListItemCollection" Usage="new System.Web.UI.MobileControls.MobileListItemCollection items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (item As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; unit&#xA;override this.Add : string -&gt; unit" Usage="mobileListItemCollection.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.Add(System.Web.UI.MobileControls.MobileListItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As MobileListItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::MobileControls::MobileListItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.MobileControls.MobileListItem -&gt; unit" Usage="mobileListItemCollection.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="mobileListItemCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.Contains(System.Web.UI.MobileControls.MobileListItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As MobileListItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::MobileControls::MobileListItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.MobileControls.MobileListItem -&gt; bool" Usage="mobileListItemCollection.Contains item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.GetAll" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAll () As MobileListItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::MobileControls::MobileListItem ^&gt; ^ GetAll();" />
+      <MemberSignature Language="F#" Value="member this.GetAll : unit -&gt; System.Web.UI.MobileControls.MobileListItem[]" Usage="mobileListItemCollection.GetAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.IndexOf(System.Web.UI.MobileControls.MobileListItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As MobileListItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::MobileControls::MobileListItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.MobileControls.MobileListItem -&gt; int" Usage="mobileListItemCollection.IndexOf item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -306,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Insert (index As Integer, item As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::String ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * string -&gt; unit&#xA;override this.Insert : int * string -&gt; unit" Usage="mobileListItemCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -339,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.Insert(System.Int32,System.Web.UI.MobileControls.MobileListItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As MobileListItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::MobileControls::MobileListItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.MobileControls.MobileListItem -&gt; unit" Usage="mobileListItemCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobileListItemCollection.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.MobileControls.MobileListItemCollection.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -392,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobileListItemCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As MobileListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobileListItem ^ default[int] { System::Web::UI::MobileControls::MobileListItem ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.MobileControls.MobileListItem" Usage="System.Web.UI.MobileControls.MobileListItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -417,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub LoadViewState (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadViewState(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.LoadViewState : obj -&gt; unit" Usage="mobileListItemCollection.LoadViewState state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -449,6 +462,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (item As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="mobileListItemCollection.Remove item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -476,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.Remove(System.Web.UI.MobileControls.MobileListItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (item As MobileListItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::MobileControls::MobileListItem ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.MobileControls.MobileListItem -&gt; unit" Usage="mobileListItemCollection.Remove item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -503,6 +518,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="mobileListItemCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -527,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="member this.SaveViewState : unit -&gt; obj" Usage="mobileListItemCollection.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -548,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.SetAll(System.Web.UI.MobileControls.MobileListItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAll (value As MobileListItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAll(cli::array &lt;System::Web::UI::MobileControls::MobileListItem ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetAll : System.Web.UI.MobileControls.MobileListItem[] -&gt; unit" Usage="mobileListItemCollection.SetAll value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -571,6 +589,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobileListItemCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.MobileControls.MobileListItemCollection.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -689,6 +708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItemCollection.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TrackViewState();" />
+      <MemberSignature Language="F#" Value="member this.TrackViewState : unit -&gt; unit" Usage="mobileListItemCollection.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

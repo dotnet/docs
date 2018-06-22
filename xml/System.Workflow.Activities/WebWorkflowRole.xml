@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WebWorkflowRole" />
   <TypeSignature Language="VB.NET" Value="Public Class WebWorkflowRole&#xA;Inherits WorkflowRole" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebWorkflowRole : System::Workflow::Activities::WorkflowRole" />
+  <TypeSignature Language="F#" Value="type WebWorkflowRole = class&#xA;    inherit WorkflowRole" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebWorkflowRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.WebWorkflowRole : string -&gt; System.Workflow.Activities.WebWorkflowRole" Usage="new System.Workflow.Activities.WebWorkflowRole roleName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (roleName As String, provider As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebWorkflowRole(System::String ^ roleName, System::String ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.WebWorkflowRole : string * string -&gt; System.Workflow.Activities.WebWorkflowRole" Usage="new System.Workflow.Activities.WebWorkflowRole (roleName, provider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.GetIdentities" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetIdentities () As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetIdentities();" />
+      <MemberSignature Language="F#" Value="override this.GetIdentities : unit -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="webWorkflowRole.GetIdentities " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.IncludesIdentity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IncludesIdentity (identity As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IncludesIdentity(System::String ^ identity);" />
+      <MemberSignature Language="F#" Value="override this.IncludesIdentity : string -&gt; bool" Usage="webWorkflowRole.IncludesIdentity identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebWorkflowRole.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.WebWorkflowRole.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebWorkflowRole.RoleProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property RoleProvider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoleProvider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RoleProvider : string with get, set" Usage="System.Workflow.Activities.WebWorkflowRole.RoleProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

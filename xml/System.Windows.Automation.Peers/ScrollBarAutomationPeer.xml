@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ScrollBarAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollBarAutomationPeer&#xA;Inherits RangeBaseAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollBarAutomationPeer : System::Windows::Automation::Peers::RangeBaseAutomationPeer" />
+  <TypeSignature Language="F#" Value="type ScrollBarAutomationPeer = class&#xA;    inherit RangeBaseAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollBarAutomationPeer.#ctor(System.Windows.Controls.Primitives.ScrollBar)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ScrollBar)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollBarAutomationPeer(System::Windows::Controls::Primitives::ScrollBar ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ScrollBarAutomationPeer : System.Windows.Controls.Primitives.ScrollBar -&gt; System.Windows.Automation.Peers.ScrollBarAutomationPeer" Usage="new System.Windows.Automation.Peers.ScrollBarAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollBarAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="scrollBarAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollBarAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="scrollBarAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollBarAutomationPeer.GetClickablePointCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClickablePointCore () As Point" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Point GetClickablePointCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClickablePointCore : unit -&gt; System.Windows.Point" Usage="scrollBarAutomationPeer.GetClickablePointCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollBarAutomationPeer.GetOrientationCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetOrientationCore () As AutomationOrientation" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationOrientation GetOrientationCore();" />
+      <MemberSignature Language="F#" Value="override this.GetOrientationCore : unit -&gt; System.Windows.Automation.Peers.AutomationOrientation" Usage="scrollBarAutomationPeer.GetOrientationCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollBarAutomationPeer.IsContentElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="scrollBarAutomationPeer.IsContentElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

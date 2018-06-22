@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Cursor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Cursor&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Cursor sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type Cursor = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Cursor.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cursorStream As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Cursor(System::IO::Stream ^ cursorStream);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.Cursor : System.IO.Stream -&gt; System.Windows.Input.Cursor" Usage="new System.Windows.Input.Cursor cursorStream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Cursor.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cursorFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Cursor(System::String ^ cursorFile);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.Cursor : string -&gt; System.Windows.Input.Cursor" Usage="new System.Windows.Input.Cursor cursorFile" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Cursor.#ctor(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cursorStream As Stream, scaleWithDpi As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Cursor(System::IO::Stream ^ cursorStream, bool scaleWithDpi);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.Cursor : System.IO.Stream * bool -&gt; System.Windows.Input.Cursor" Usage="new System.Windows.Input.Cursor (cursorStream, scaleWithDpi)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Cursor.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cursorFile As String, scaleWithDpi As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Cursor(System::String ^ cursorFile, bool scaleWithDpi);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.Cursor : string * bool -&gt; System.Windows.Input.Cursor" Usage="new System.Windows.Input.Cursor (cursorFile, scaleWithDpi)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Cursor.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="cursor.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Cursor.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!Cursor ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="cursor.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Cursor.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cursor.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

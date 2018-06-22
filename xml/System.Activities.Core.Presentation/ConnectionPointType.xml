@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.ConnectionPointType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConnectionPointType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConnectionPointType" />
+  <TypeSignature Language="F#" Value="type ConnectionPointType = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Core.Presentation.ConnectionPointType.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Activities.Core.Presentation.ConnectionPointType.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Core.Presentation.ConnectionPointType.Incoming" />
       <MemberSignature Language="VB.NET" Value="Incoming" />
       <MemberSignature Language="C++ CLI" Value="Incoming" />
+      <MemberSignature Language="F#" Value="Incoming = 1" Usage="System.Activities.Core.Presentation.ConnectionPointType.Incoming" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Core.Presentation.ConnectionPointType.Outgoing" />
       <MemberSignature Language="VB.NET" Value="Outgoing" />
       <MemberSignature Language="C++ CLI" Value="Outgoing" />
+      <MemberSignature Language="F#" Value="Outgoing = 2" Usage="System.Activities.Core.Presentation.ConnectionPointType.Outgoing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>

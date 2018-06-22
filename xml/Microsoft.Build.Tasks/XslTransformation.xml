@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.XslTransformation" />
   <TypeSignature Language="VB.NET" Value="Public Class XslTransformation&#xA;Inherits TaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class XslTransformation : Microsoft::Build::Tasks::TaskExtension" />
+  <TypeSignature Language="F#" Value="type XslTransformation = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.XslTransformation.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="xslTransformation.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XslTransformation.OutputPaths" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputPaths As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ OutputPaths { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutputPaths : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.XslTransformation.OutputPaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XslTransformation.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Property Parameters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="Microsoft.Build.Tasks.XslTransformation.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XslTransformation.XmlContent" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlContent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlContent { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlContent : string with get, set" Usage="Microsoft.Build.Tasks.XslTransformation.XmlContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XslTransformation.XmlInputPaths" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlInputPaths As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ XmlInputPaths { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlInputPaths : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.XslTransformation.XmlInputPaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XslTransformation.XslCompiledDllPath" />
       <MemberSignature Language="VB.NET" Value="Public Property XslCompiledDllPath As ITaskItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ XslCompiledDllPath { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XslCompiledDllPath : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.XslTransformation.XslCompiledDllPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -166,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XslTransformation.XslContent" />
       <MemberSignature Language="VB.NET" Value="Public Property XslContent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XslContent { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XslContent : string with get, set" Usage="Microsoft.Build.Tasks.XslTransformation.XslContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -186,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XslTransformation.XslInputPath" />
       <MemberSignature Language="VB.NET" Value="Public Property XslInputPath As ITaskItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ XslInputPath { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XslInputPath : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.XslTransformation.XslInputPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

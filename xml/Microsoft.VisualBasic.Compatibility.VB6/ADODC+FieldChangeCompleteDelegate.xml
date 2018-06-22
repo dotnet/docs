@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FieldChangeCompleteDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.FieldChangeCompleteDelegate(cFields As Integer, ByRef fields As Object, pError As Error, ByRef adStatus As EventStatusEnum, pRecordset As Recordset)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::FieldChangeCompleteDelegate(int cFields, System::Object ^ % fields, Error ^ pError, EventStatusEnum % adStatus, Recordset ^ pRecordset);" />
+  <TypeSignature Language="F#" Value="type ADODC.FieldChangeCompleteDelegate = delegate of int *  * Error *  * Recordset -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

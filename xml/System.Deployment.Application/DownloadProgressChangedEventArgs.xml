@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DownloadProgressChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DownloadProgressChangedEventArgs&#xA;Inherits ProgressChangedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DownloadProgressChangedEventArgs : System::ComponentModel::ProgressChangedEventArgs" />
+  <TypeSignature Language="F#" Value="type DownloadProgressChangedEventArgs = class&#xA;    inherit ProgressChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadProgressChangedEventArgs.BytesDownloaded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesDownloaded As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BytesDownloaded { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesDownloaded : int64" Usage="System.Deployment.Application.DownloadProgressChangedEventArgs.BytesDownloaded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadProgressChangedEventArgs.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As DeploymentProgressState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Deployment::Application::DeploymentProgressState State { System::Deployment::Application::DeploymentProgressState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Deployment.Application.DeploymentProgressState" Usage="System.Deployment.Application.DownloadProgressChangedEventArgs.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadProgressChangedEventArgs.TotalBytesToDownload" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalBytesToDownload As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long TotalBytesToDownload { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalBytesToDownload : int64" Usage="System.Deployment.Application.DownloadProgressChangedEventArgs.TotalBytesToDownload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

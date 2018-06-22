@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.ServerType" />
   <TypeSignature Language="VB.NET" Value="Public Class ServerType" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServerType" />
+  <TypeSignature Language="F#" Value="type ServerType = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ServerType.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServerType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.ServerType : Type -&gt; System.Web.Services.Protocols.ServerType" Usage="new System.Web.Services.Protocols.ServerType type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

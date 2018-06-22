@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceSet" />
   <TypeSignature Language="VB.NET" Value="Public Class ResXResourceSet&#xA;Inherits ResourceSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceSet : System::Resources::ResourceSet" />
+  <TypeSignature Language="F#" Value="type ResXResourceSet = class&#xA;    inherit ResourceSet" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceSet.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXResourceSet(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceSet : System.IO.Stream -&gt; System.Resources.ResXResourceSet" Usage="new System.Resources.ResXResourceSet stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceSet.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXResourceSet(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXResourceSet : string -&gt; System.Resources.ResXResourceSet" Usage="new System.Resources.ResXResourceSet fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceSet.GetDefaultReader" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultReader () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetDefaultReader();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultReader : unit -&gt; Type&#xA;override this.GetDefaultReader : unit -&gt; Type" Usage="resXResourceSet.GetDefaultReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceSet.GetDefaultWriter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultWriter () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetDefaultWriter();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultWriter : unit -&gt; Type&#xA;override this.GetDefaultWriter : unit -&gt; Type" Usage="resXResourceSet.GetDefaultWriter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

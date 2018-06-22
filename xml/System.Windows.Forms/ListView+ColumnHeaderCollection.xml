@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ListView.ColumnHeaderCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ListView::ColumnHeaderCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type ListView.ColumnHeaderCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.#ctor(System.Windows.Forms.ListView)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ListView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnHeaderCollection(System::Windows::Forms::ListView ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ListView.ColumnHeaderCollection : System.Windows.Forms.ListView -&gt; System.Windows.Forms.ListView.ColumnHeaderCollection" Usage="new System.Windows.Forms.ListView.ColumnHeaderCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (text As String) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.Windows.Forms.ColumnHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (value As ColumnHeader) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Windows::Forms::ColumnHeader ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Forms.ColumnHeader -&gt; int&#xA;override this.Add : System.Windows.Forms.ColumnHeader -&gt; int" Usage="columnHeaderCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (text As String, width As Integer) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ text, int width);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * int -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * int -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (text, width)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (key As String, text As String) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ key, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * string -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (key, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (text As String, width As Integer, textAlign As HorizontalAlignment) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ text, int width, System::Windows::Forms::HorizontalAlignment textAlign);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * int * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (text, width, textAlign)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (key As String, text As String, width As Integer) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ key, System::String ^ text, int width);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * int -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * string * int -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (key, text, width)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -335,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (key As String, text As String, width As Integer, textAlign As HorizontalAlignment, imageIndex As Integer) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ key, System::String ^ text, int width, System::Windows::Forms::HorizontalAlignment textAlign, int imageIndex);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * int * System.Windows.Forms.HorizontalAlignment * int -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * string * int * System.Windows.Forms.HorizontalAlignment * int -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (key, text, width, textAlign, imageIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -376,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (key As String, text As String, width As Integer, textAlign As HorizontalAlignment, imageKey As String) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::ColumnHeader ^ Add(System::String ^ key, System::String ^ text, int width, System::Windows::Forms::HorizontalAlignment textAlign, System::String ^ imageKey);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * int * System.Windows.Forms.HorizontalAlignment * string -&gt; System.Windows.Forms.ColumnHeader&#xA;override this.Add : string * string * int * System.Windows.Forms.HorizontalAlignment * string -&gt; System.Windows.Forms.ColumnHeader" Usage="columnHeaderCollection.Add (key, text, width, textAlign, imageKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -417,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange(System.Windows.Forms.ColumnHeader[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (values As ColumnHeader())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(cli::array &lt;System::Windows::Forms::ColumnHeader ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Windows.Forms.ColumnHeader[] -&gt; unit&#xA;override this.AddRange : System.Windows.Forms.ColumnHeader[] -&gt; unit" Usage="columnHeaderCollection.AddRange values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -450,6 +461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="columnHeaderCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -482,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains(System.Windows.Forms.ColumnHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As ColumnHeader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::ColumnHeader ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.ColumnHeader -&gt; bool" Usage="columnHeaderCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -515,6 +528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="columnHeaderCollection.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -549,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -585,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="columnHeaderCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -609,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf(System.Windows.Forms.ColumnHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As ColumnHeader) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::ColumnHeader ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.ColumnHeader -&gt; int" Usage="columnHeaderCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -641,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOfKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOfKey : string -&gt; int&#xA;override this.IndexOfKey : string -&gt; int" Usage="columnHeaderCollection.IndexOfKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -685,6 +703,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; unit" Usage="columnHeaderCollection.Insert (index, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -719,6 +738,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.Windows.Forms.ColumnHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As ColumnHeader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Forms::ColumnHeader ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.ColumnHeader -&gt; unit" Usage="columnHeaderCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -757,6 +777,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, text As String, width As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ text, int width);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * int -&gt; unit" Usage="columnHeaderCollection.Insert (index, text, width)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -791,6 +812,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As String, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ key, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * string -&gt; unit" Usage="columnHeaderCollection.Insert (index, key, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -827,6 +849,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, text As String, width As Integer, textAlign As HorizontalAlignment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ text, int width, System::Windows::Forms::HorizontalAlignment textAlign);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * int * System.Windows.Forms.HorizontalAlignment -&gt; unit" Usage="columnHeaderCollection.Insert (index, text, width, textAlign)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -867,6 +890,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As String, text As String, width As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ key, System::String ^ text, int width);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * string * int -&gt; unit" Usage="columnHeaderCollection.Insert (index, key, text, width)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -905,6 +929,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As String, text As String, width As Integer, textAlign As HorizontalAlignment, imageIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ key, System::String ^ text, int width, System::Windows::Forms::HorizontalAlignment textAlign, int imageIndex);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * string * int * System.Windows.Forms.HorizontalAlignment * int -&gt; unit" Usage="columnHeaderCollection.Insert (index, key, text, width, textAlign, imageIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -947,6 +972,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As String, text As String, width As Integer, textAlign As HorizontalAlignment, imageKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ key, System::String ^ text, int width, System::Windows::Forms::HorizontalAlignment textAlign, System::String ^ imageKey);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * string * int * System.Windows.Forms.HorizontalAlignment * string -&gt; unit" Usage="columnHeaderCollection.Insert (index, key, text, width, textAlign, imageKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -989,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1029,6 +1056,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ColumnHeader ^ default[int] { System::Windows::Forms::ColumnHeader ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.ColumnHeader" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1063,6 +1091,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ColumnHeader ^ default[System::String ^] { System::Windows::Forms::ColumnHeader ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.ColumnHeader" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1094,6 +1123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove(System.Windows.Forms.ColumnHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (column As ColumnHeader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Windows::Forms::ColumnHeader ^ column);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Forms.ColumnHeader -&gt; unit&#xA;override this.Remove : System.Windows.Forms.ColumnHeader -&gt; unit" Usage="columnHeaderCollection.Remove column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1126,6 +1156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="columnHeaderCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -1163,6 +1194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveByKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveByKey (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveByKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveByKey : string -&gt; unit&#xA;override this.RemoveByKey : string -&gt; unit" Usage="columnHeaderCollection.RemoveByKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1223,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1247,6 +1280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1384,6 +1418,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1408,6 +1443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.ColumnHeaderCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

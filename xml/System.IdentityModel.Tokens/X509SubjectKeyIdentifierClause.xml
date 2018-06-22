@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class X509SubjectKeyIdentifierClause&#xA;Inherits BinaryKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509SubjectKeyIdentifierClause : System::IdentityModel::Tokens::BinaryKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type X509SubjectKeyIdentifierClause = class&#xA;    inherit BinaryKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.#ctor(System.Byte[])" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificateSubject As Byte())" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SubjectKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ certificateSubject);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause : byte[] -&gt; System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause certificateSubject" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.CanCreateFrom(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CanCreateFrom (certificate As X509Certificate2) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CanCreateFrom(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="static member CanCreateFrom : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.CanCreateFrom certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.GetX509SubjectKeyIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public Function GetX509SubjectKeyIdentifier () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetX509SubjectKeyIdentifier();" />
+      <MemberSignature Language="F#" Value="member this.GetX509SubjectKeyIdentifier : unit -&gt; byte[]" Usage="x509SubjectKeyIdentifierClause.GetX509SubjectKeyIdentifier " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (certificate As X509Certificate2) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="x509SubjectKeyIdentifierClause.Matches certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="x509SubjectKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.TryCreateFrom(System.Security.Cryptography.X509Certificates.X509Certificate2,System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause@)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryCreateFrom (certificate As X509Certificate2, ByRef clause As X509SubjectKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryCreateFrom(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::X509SubjectKeyIdentifierClause ^ % clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member TryCreateFrom : System.Security.Cryptography.X509Certificates.X509Certificate2 *  -&gt; bool" Usage="System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.TryCreateFrom (certificate, clause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

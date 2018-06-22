@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.RoutingBehavior" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoutingBehavior&#xA;Implements IServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoutingBehavior sealed : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type RoutingBehavior = class&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Routing.RoutingConfiguration routingConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingBehavior.#ctor(System.ServiceModel.Routing.RoutingConfiguration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutingBehavior(System::ServiceModel::Routing::RoutingConfiguration ^ routingConfiguration);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Routing.RoutingBehavior : System.ServiceModel.Routing.RoutingConfiguration -&gt; System.ServiceModel.Routing.RoutingBehavior" Usage="new System.ServiceModel.Routing.RoutingBehavior routingConfiguration" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingBehavior.GetContractForDescription(System.ServiceModel.Description.ContractDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetContractForDescription (description As ContractDescription) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetContractForDescription(System::ServiceModel::Description::ContractDescription ^ description);" />
+      <MemberSignature Language="F#" Value="static member GetContractForDescription : System.ServiceModel.Description.ContractDescription -&gt; Type" Usage="System.ServiceModel.Routing.RoutingBehavior.GetContractForDescription description" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

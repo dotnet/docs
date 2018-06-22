@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum SearchOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class SearchOption" />
+  <TypeSignature Language="F#" Value="type SearchOption = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SearchOption.DomainScope" />
       <MemberSignature Language="VB.NET" Value="DomainScope" />
       <MemberSignature Language="C++ CLI" Value="DomainScope" />
+      <MemberSignature Language="F#" Value="DomainScope = 1" Usage="System.DirectoryServices.Protocols.SearchOption.DomainScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SearchOption.PhantomRoot" />
       <MemberSignature Language="VB.NET" Value="PhantomRoot" />
       <MemberSignature Language="C++ CLI" Value="PhantomRoot" />
+      <MemberSignature Language="F#" Value="PhantomRoot = 2" Usage="System.DirectoryServices.Protocols.SearchOption.PhantomRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

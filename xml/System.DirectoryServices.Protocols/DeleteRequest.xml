@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DeleteRequest" />
   <TypeSignature Language="VB.NET" Value="Public Class DeleteRequest&#xA;Inherits DirectoryRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeleteRequest : System::DirectoryServices::Protocols::DirectoryRequest" />
+  <TypeSignature Language="F#" Value="type DeleteRequest = class&#xA;    inherit DirectoryRequest" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DeleteRequest.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (distinguishedName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteRequest(System::String ^ distinguishedName);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DeleteRequest : string -&gt; System.DirectoryServices.Protocols.DeleteRequest" Usage="new System.DirectoryServices.Protocols.DeleteRequest distinguishedName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DeleteRequest.DistinguishedName" />
       <MemberSignature Language="VB.NET" Value="Public Property DistinguishedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DistinguishedName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DistinguishedName : string with get, set" Usage="System.DirectoryServices.Protocols.DeleteRequest.DistinguishedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DeleteRequest.ToXmlNode(System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ToXmlNode (doc As XmlDocument) As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Xml::XmlElement ^ ToXmlNode(System::Xml::XmlDocument ^ doc);" />
+      <MemberSignature Language="F#" Value="override this.ToXmlNode : System.Xml.XmlDocument -&gt; System.Xml.XmlElement" Usage="deleteRequest.ToXmlNode doc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

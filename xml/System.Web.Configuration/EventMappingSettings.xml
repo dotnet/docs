@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.EventMappingSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventMappingSettings&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventMappingSettings sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type EventMappingSettings = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettings.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventMappingSettings(System::String ^ name, System::String ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.EventMappingSettings : string * string -&gt; System.Web.Configuration.EventMappingSettings" Usage="new System.Web.Configuration.EventMappingSettings (name, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettings.#ctor(System.String,System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As String, startEventCode As Integer, endEventCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventMappingSettings(System::String ^ name, System::String ^ type, int startEventCode, int endEventCode);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.EventMappingSettings : string * string * int * int -&gt; System.Web.Configuration.EventMappingSettings" Usage="new System.Web.Configuration.EventMappingSettings (name, type, startEventCode, endEventCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.EndEventCode" />
       <MemberSignature Language="VB.NET" Value="Public Property EndEventCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndEventCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EndEventCode : int with get, set" Usage="System.Web.Configuration.EventMappingSettings.EndEventCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.EventMappingSettings.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -256,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.EventMappingSettings.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -276,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.StartEventCode" />
       <MemberSignature Language="VB.NET" Value="Public Property StartEventCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartEventCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartEventCode : int with get, set" Usage="System.Web.Configuration.EventMappingSettings.StartEventCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -321,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Web.Configuration.EventMappingSettings.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

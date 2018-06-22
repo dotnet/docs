@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.EndPoint" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EndPoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndPoint abstract" />
+  <TypeSignature Language="F#" Value="type EndPoint = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.EndPoint.AddressFamily" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AddressFamily As AddressFamily" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Sockets::AddressFamily AddressFamily { System::Net::Sockets::AddressFamily get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddressFamily : System.Net.Sockets.AddressFamily" Usage="System.Net.EndPoint.AddressFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.EndPoint Create(class System.Net.SocketAddress socketAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.EndPoint.Create(System.Net.SocketAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::EndPoint ^ Create(System::Net::SocketAddress ^ socketAddress);" />
+      <MemberSignature Language="F#" Value="abstract member Create : System.Net.SocketAddress -&gt; System.Net.EndPoint&#xA;override this.Create : System.Net.SocketAddress -&gt; System.Net.EndPoint" Usage="endPoint.Create socketAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.EndPoint.Serialize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Serialize () As SocketAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::SocketAddress ^ Serialize();" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : unit -&gt; System.Net.SocketAddress&#xA;override this.Serialize : unit -&gt; System.Net.SocketAddress" Usage="endPoint.Serialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

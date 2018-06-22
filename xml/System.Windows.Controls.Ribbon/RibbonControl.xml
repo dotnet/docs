@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControl" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonControl&#xA;Inherits ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonControl : System::Windows::Controls::ContentControl" />
+  <TypeSignature Language="F#" Value="type RibbonControl = class&#xA;    inherit ContentControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControl.ControlSizeDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlSizeDefinition As RibbonControlSizeDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ ControlSizeDefinition { System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlSizeDefinition : System.Windows.Controls.Ribbon.RibbonControlSizeDefinition with get, set" Usage="System.Windows.Controls.Ribbon.RibbonControl.ControlSizeDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -95,6 +97,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControl.ControlSizeDefinitionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlSizeDefinitionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ControlSizeDefinitionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControl.ControlSizeDefinitionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -114,6 +117,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControl.IsInControlGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInControlGroup As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInControlGroup { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInControlGroup : bool" Usage="System.Windows.Controls.Ribbon.RibbonControl.IsInControlGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -149,6 +153,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControl.IsInControlGroupProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInControlGroupProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInControlGroupProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInControlGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControl.IsInControlGroupProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -168,6 +173,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControl.IsInQuickAccessToolBar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInQuickAccessToolBar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInQuickAccessToolBar { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInQuickAccessToolBar : bool" Usage="System.Windows.Controls.Ribbon.RibbonControl.IsInQuickAccessToolBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -203,6 +209,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControl.IsInQuickAccessToolBarProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInQuickAccessToolBarProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInQuickAccessToolBarProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInQuickAccessToolBarProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControl.IsInQuickAccessToolBarProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -222,6 +229,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControl.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonControl.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -249,6 +257,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControl.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonControl.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -270,6 +279,7 @@ Ribbon controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControl.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTemplateChanged (oldTemplate As ControlTemplate, newTemplate As ControlTemplate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTemplateChanged(System::Windows::Controls::ControlTemplate ^ oldTemplate, System::Windows::Controls::ControlTemplate ^ newTemplate);" />
+      <MemberSignature Language="F#" Value="override this.OnTemplateChanged : System.Windows.Controls.ControlTemplate * System.Windows.Controls.ControlTemplate -&gt; unit" Usage="ribbonControl.OnTemplateChanged (oldTemplate, newTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

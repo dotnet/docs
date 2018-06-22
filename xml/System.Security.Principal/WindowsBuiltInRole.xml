@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsBuiltInRole" />
   <TypeSignature Language="VB.NET" Value="Public Enum WindowsBuiltInRole" />
   <TypeSignature Language="C++ CLI" Value="public enum class WindowsBuiltInRole" />
+  <TypeSignature Language="F#" Value="type WindowsBuiltInRole = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.AccountOperator" />
       <MemberSignature Language="VB.NET" Value="AccountOperator" />
       <MemberSignature Language="C++ CLI" Value="AccountOperator" />
+      <MemberSignature Language="F#" Value="AccountOperator = 548" Usage="System.Security.Principal.WindowsBuiltInRole.AccountOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.Administrator" />
       <MemberSignature Language="VB.NET" Value="Administrator" />
       <MemberSignature Language="C++ CLI" Value="Administrator" />
+      <MemberSignature Language="F#" Value="Administrator = 544" Usage="System.Security.Principal.WindowsBuiltInRole.Administrator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.BackupOperator" />
       <MemberSignature Language="VB.NET" Value="BackupOperator" />
       <MemberSignature Language="C++ CLI" Value="BackupOperator" />
+      <MemberSignature Language="F#" Value="BackupOperator = 551" Usage="System.Security.Principal.WindowsBuiltInRole.BackupOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.Guest" />
       <MemberSignature Language="VB.NET" Value="Guest" />
       <MemberSignature Language="C++ CLI" Value="Guest" />
+      <MemberSignature Language="F#" Value="Guest = 546" Usage="System.Security.Principal.WindowsBuiltInRole.Guest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.PowerUser" />
       <MemberSignature Language="VB.NET" Value="PowerUser" />
       <MemberSignature Language="C++ CLI" Value="PowerUser" />
+      <MemberSignature Language="F#" Value="PowerUser = 547" Usage="System.Security.Principal.WindowsBuiltInRole.PowerUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.PrintOperator" />
       <MemberSignature Language="VB.NET" Value="PrintOperator" />
       <MemberSignature Language="C++ CLI" Value="PrintOperator" />
+      <MemberSignature Language="F#" Value="PrintOperator = 550" Usage="System.Security.Principal.WindowsBuiltInRole.PrintOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.Replicator" />
       <MemberSignature Language="VB.NET" Value="Replicator" />
       <MemberSignature Language="C++ CLI" Value="Replicator" />
+      <MemberSignature Language="F#" Value="Replicator = 552" Usage="System.Security.Principal.WindowsBuiltInRole.Replicator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.SystemOperator" />
       <MemberSignature Language="VB.NET" Value="SystemOperator" />
       <MemberSignature Language="C++ CLI" Value="SystemOperator" />
+      <MemberSignature Language="F#" Value="SystemOperator = 549" Usage="System.Security.Principal.WindowsBuiltInRole.SystemOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="C++ CLI" Value="User" />
+      <MemberSignature Language="F#" Value="User = 545" Usage="System.Security.Principal.WindowsBuiltInRole.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>

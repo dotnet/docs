@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherUnhandledExceptionEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DispatcherUnhandledExceptionEventHandler(sender As Object, e As DispatcherUnhandledExceptionEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DispatcherUnhandledExceptionEventHandler(System::Object ^ sender, DispatcherUnhandledExceptionEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DispatcherUnhandledExceptionEventHandler = delegate of obj * DispatcherUnhandledExceptionEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

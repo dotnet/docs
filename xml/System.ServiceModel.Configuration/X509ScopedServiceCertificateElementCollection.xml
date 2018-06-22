@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509ScopedServiceCertificateElementCollection&#xA;Inherits ServiceModelConfigurationElementCollection(Of X509ScopedServiceCertificateElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509ScopedServiceCertificateElementCollection sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;System::ServiceModel::Configuration::X509ScopedServiceCertificateElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type X509ScopedServiceCertificateElementCollection = class&#xA;    inherit ServiceModelConfigurationElementCollection&lt;X509ScopedServiceCertificateElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="x509ScopedServiceCertificateElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

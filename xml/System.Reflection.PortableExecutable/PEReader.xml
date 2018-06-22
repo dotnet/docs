@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEReader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PEReader&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PEReader sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type PEReader = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.Collections.Immutable.ImmutableArray{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (peImage As ImmutableArray(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PEReader(System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; peImage);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.PEReader : System.Collections.Immutable.ImmutableArray&lt;byte&gt; -&gt; System.Reflection.PortableExecutable.PEReader" Usage="new System.Reflection.PortableExecutable.PEReader peImage" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (peStream As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PEReader(System::IO::Stream ^ peStream);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.PEReader : System.IO.Stream -&gt; System.Reflection.PortableExecutable.PEReader" Usage="new System.Reflection.PortableExecutable.PEReader peStream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* peImage, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.Byte*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PEReader(System::Byte* peImage, int size);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.PEReader : nativeptr&lt;byte&gt; * int -&gt; System.Reflection.PortableExecutable.PEReader" Usage="new System.Reflection.PortableExecutable.PEReader (peImage, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (peStream As Stream, options As PEStreamOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PEReader(System::IO::Stream ^ peStream, System::Reflection::PortableExecutable::PEStreamOptions options);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.PEReader : System.IO.Stream * System.Reflection.PortableExecutable.PEStreamOptions -&gt; System.Reflection.PortableExecutable.PEReader" Usage="new System.Reflection.PortableExecutable.PEReader (peStream, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* peImage, int32 size, bool isLoadedImage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.Byte*,System.Int32,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PEReader(System::Byte* peImage, int size, bool isLoadedImage);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.PEReader : nativeptr&lt;byte&gt; * int * bool -&gt; System.Reflection.PortableExecutable.PEReader" Usage="new System.Reflection.PortableExecutable.PEReader (peImage, size, isLoadedImage)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (peStream As Stream, options As PEStreamOptions, size As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PEReader(System::IO::Stream ^ peStream, System::Reflection::PortableExecutable::PEStreamOptions options, int size);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.PEReader : System.IO.Stream * System.Reflection.PortableExecutable.PEStreamOptions * int -&gt; System.Reflection.PortableExecutable.PEReader" Usage="new System.Reflection.PortableExecutable.PEReader (peStream, options, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="pEReader.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -203,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.GetEntireImage" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEntireImage () As PEMemoryBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PortableExecutable::PEMemoryBlock GetEntireImage();" />
+      <MemberSignature Language="F#" Value="member this.GetEntireImage : unit -&gt; System.Reflection.PortableExecutable.PEMemoryBlock" Usage="pEReader.GetEntireImage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -227,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.GetMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadata () As PEMemoryBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PortableExecutable::PEMemoryBlock GetMetadata();" />
+      <MemberSignature Language="F#" Value="member this.GetMetadata : unit -&gt; System.Reflection.PortableExecutable.PEMemoryBlock" Usage="pEReader.GetMetadata " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -251,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.GetSectionData(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSectionData (relativeVirtualAddress As Integer) As PEMemoryBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PortableExecutable::PEMemoryBlock GetSectionData(int relativeVirtualAddress);" />
+      <MemberSignature Language="F#" Value="member this.GetSectionData : int -&gt; System.Reflection.PortableExecutable.PEMemoryBlock" Usage="pEReader.GetSectionData relativeVirtualAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -278,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.GetSectionData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSectionData (sectionName As String) As PEMemoryBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PortableExecutable::PEMemoryBlock GetSectionData(System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="member this.GetSectionData : string -&gt; System.Reflection.PortableExecutable.PEMemoryBlock" Usage="pEReader.GetSectionData sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -304,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEReader.HasMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasMetadata As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasMetadata { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasMetadata : bool" Usage="System.Reflection.PortableExecutable.PEReader.HasMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -327,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEReader.IsEntireImageAvailable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEntireImageAvailable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEntireImageAvailable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEntireImageAvailable : bool" Usage="System.Reflection.PortableExecutable.PEReader.IsEntireImageAvailable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -350,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEReader.IsLoadedImage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoadedImage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoadedImage { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLoadedImage : bool" Usage="System.Reflection.PortableExecutable.PEReader.IsLoadedImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -372,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEReader.PEHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PEHeaders As PEHeaders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::PEHeaders ^ PEHeaders { System::Reflection::PortableExecutable::PEHeaders ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PEHeaders : System.Reflection.PortableExecutable.PEHeaders" Usage="System.Reflection.PortableExecutable.PEReader.PEHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -395,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.ReadCodeViewDebugDirectoryData(System.Reflection.PortableExecutable.DebugDirectoryEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadCodeViewDebugDirectoryData (entry As DebugDirectoryEntry) As CodeViewDebugDirectoryData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PortableExecutable::CodeViewDebugDirectoryData ReadCodeViewDebugDirectoryData(System::Reflection::PortableExecutable::DebugDirectoryEntry entry);" />
+      <MemberSignature Language="F#" Value="member this.ReadCodeViewDebugDirectoryData : System.Reflection.PortableExecutable.DebugDirectoryEntry -&gt; System.Reflection.PortableExecutable.CodeViewDebugDirectoryData" Usage="pEReader.ReadCodeViewDebugDirectoryData entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -422,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.ReadDebugDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadDebugDirectory () As ImmutableArray(Of DebugDirectoryEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;System::Reflection::PortableExecutable::DebugDirectoryEntry&gt; ReadDebugDirectory();" />
+      <MemberSignature Language="F#" Value="member this.ReadDebugDirectory : unit -&gt; System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.DebugDirectoryEntry&gt;" Usage="pEReader.ReadDebugDirectory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -446,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.ReadEmbeddedPortablePdbDebugDirectoryData(System.Reflection.PortableExecutable.DebugDirectoryEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadEmbeddedPortablePdbDebugDirectoryData (entry As DebugDirectoryEntry) As MetadataReaderProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MetadataReaderProvider ^ ReadEmbeddedPortablePdbDebugDirectoryData(System::Reflection::PortableExecutable::DebugDirectoryEntry entry);" />
+      <MemberSignature Language="F#" Value="member this.ReadEmbeddedPortablePdbDebugDirectoryData : System.Reflection.PortableExecutable.DebugDirectoryEntry -&gt; System.Reflection.Metadata.MetadataReaderProvider" Usage="pEReader.ReadEmbeddedPortablePdbDebugDirectoryData entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -472,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.ReadPdbChecksumDebugDirectoryData(System.Reflection.PortableExecutable.DebugDirectoryEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadPdbChecksumDebugDirectoryData (entry As DebugDirectoryEntry) As PdbChecksumDebugDirectoryData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PortableExecutable::PdbChecksumDebugDirectoryData ReadPdbChecksumDebugDirectoryData(System::Reflection::PortableExecutable::DebugDirectoryEntry entry);" />
+      <MemberSignature Language="F#" Value="member this.ReadPdbChecksumDebugDirectoryData : System.Reflection.PortableExecutable.DebugDirectoryEntry -&gt; System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData" Usage="pEReader.ReadPdbChecksumDebugDirectoryData entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -496,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.TryOpenAssociatedPortablePdb(System.String,System.Func{System.String,System.IO.Stream},System.Reflection.Metadata.MetadataReaderProvider@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryOpenAssociatedPortablePdb (peImagePath As String, pdbFileStreamProvider As Func(Of String, Stream), ByRef pdbReaderProvider As MetadataReaderProvider, ByRef pdbPath As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryOpenAssociatedPortablePdb(System::String ^ peImagePath, Func&lt;System::String ^, System::IO::Stream ^&gt; ^ pdbFileStreamProvider, [Runtime::InteropServices::Out] System::Reflection::Metadata::MetadataReaderProvider ^ % pdbReaderProvider, [Runtime::InteropServices::Out] System::String ^ % pdbPath);" />
+      <MemberSignature Language="F#" Value="member this.TryOpenAssociatedPortablePdb : string * Func&lt;string, System.IO.Stream&gt; *  *  -&gt; bool" Usage="pEReader.TryOpenAssociatedPortablePdb (peImagePath, pdbFileStreamProvider, pdbReaderProvider, pdbPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingCondition" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingCondition" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingCondition abstract" />
+  <TypeSignature Language="F#" Value="type TrackingCondition = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Member" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Member As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingCondition.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Operator" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Operator As ComparisonOperator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Workflow::Runtime::Tracking::ComparisonOperator Operator { System::Workflow::Runtime::Tracking::ComparisonOperator get(); void set(System::Workflow::Runtime::Tracking::ComparisonOperator value); };" />
+      <MemberSignature Language="F#" Value="member this.Operator : System.Workflow.Runtime.Tracking.ComparisonOperator with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingCondition.Operator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingCondition.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

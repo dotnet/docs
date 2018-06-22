@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class CommandLineBuilderExtension&#xA;Inherits CommandLineBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommandLineBuilderExtension : Microsoft::Build::Utilities::CommandLineBuilder" />
+  <TypeSignature Language="F#" Value="type CommandLineBuilderExtension = class&#xA;    inherit CommandLineBuilder" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CommandLineBuilderExtension.GetQuotedText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetQuotedText (unquotedText As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetQuotedText(System::String ^ unquotedText);" />
+      <MemberSignature Language="F#" Value="member this.GetQuotedText : string -&gt; string" Usage="commandLineBuilderExtension.GetQuotedText unquotedText" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

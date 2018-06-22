@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Transform3D" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Transform3D&#xA;Inherits GeneralTransform3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class Transform3D abstract : System::Windows::Media::Media3D::GeneralTransform3D" />
+  <TypeSignature Language="F#" Value="type Transform3D = class&#xA;    inherit GeneralTransform3D&#xA;    interface DUCE.IResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Transform3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Transform3D ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.Transform3D" Usage="transform3D.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Transform3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Transform3D ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.Transform3D" Usage="transform3D.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Transform3D.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As Transform3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Media3D::Transform3D ^ Identity { System::Windows::Media::Media3D::Transform3D ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Windows.Media.Media3D.Transform3D" Usage="System.Windows.Media.Media3D.Transform3D.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Transform3D.Inverse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Inverse As GeneralTransform3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Media3D::GeneralTransform3D ^ Inverse { System::Windows::Media::Media3D::GeneralTransform3D ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inverse : System.Windows.Media.Media3D.GeneralTransform3D" Usage="System.Windows.Media.Media3D.Transform3D.Inverse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Transform3D.IsAffine" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsAffine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsAffine { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAffine : bool" Usage="System.Windows.Media.Media3D.Transform3D.IsAffine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Transform (point As Point3D) As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Point3D Transform(System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="override this.Transform : System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Media.Media3D.Point3D" Usage="transform3D.Transform point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Point3D[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (points As Point3D())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Point3D&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="override this.Transform : System.Windows.Media.Media3D.Point3D[] -&gt; unit" Usage="transform3D.Transform points" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Point4D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Transform (point As Point4D) As Point4D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Point4D Transform(System::Windows::Media::Media3D::Point4D point);" />
+      <MemberSignature Language="F#" Value="override this.Transform : System.Windows.Media.Media3D.Point4D -&gt; System.Windows.Media.Media3D.Point4D" Usage="transform3D.Transform point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Point4D[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (points As Point4D())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Point4D&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="override this.Transform : System.Windows.Media.Media3D.Point4D[] -&gt; unit" Usage="transform3D.Transform points" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Transform (vector As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Vector3D Transform(System::Windows::Media::Media3D::Vector3D vector);" />
+      <MemberSignature Language="F#" Value="override this.Transform : System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="transform3D.Transform vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -306,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Vector3D[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (vectors As Vector3D())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Vector3D&gt; ^ vectors);" />
+      <MemberSignature Language="F#" Value="override this.Transform : System.Windows.Media.Media3D.Vector3D[] -&gt; unit" Usage="transform3D.Transform vectors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -329,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.TransformBounds(System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TransformBounds (rect As Rect3D) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Media::Media3D::Rect3D TransformBounds(System::Windows::Media::Media3D::Rect3D rect);" />
+      <MemberSignature Language="F#" Value="override this.TransformBounds : System.Windows.Media.Media3D.Rect3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="transform3D.TransformBounds rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -360,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.TryTransform(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryTransform (inPoint As Point3D, ByRef result As Point3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryTransform(System::Windows::Media::Media3D::Point3D inPoint, [Runtime::InteropServices::Out] System::Windows::Media::Media3D::Point3D % result);" />
+      <MemberSignature Language="F#" Value="override this.TryTransform : System.Windows.Media.Media3D.Point3D *  -&gt; bool" Usage="transform3D.TryTransform (inPoint, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -396,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Transform3D.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As Matrix3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Media3D::Matrix3D Value { System::Windows::Media::Media3D::Matrix3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Media3D.Matrix3D" Usage="System.Windows.Media.Media3D.Transform3D.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

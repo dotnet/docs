@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ContainerFilterService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContainerFilterService" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContainerFilterService abstract" />
+  <TypeSignature Language="F#" Value="type ContainerFilterService = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ContainerFilterService.FilterComponents(System.ComponentModel.ComponentCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FilterComponents (components As ComponentCollection) As ComponentCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::ComponentCollection ^ FilterComponents(System::ComponentModel::ComponentCollection ^ components);" />
+      <MemberSignature Language="F#" Value="abstract member FilterComponents : System.ComponentModel.ComponentCollection -&gt; System.ComponentModel.ComponentCollection&#xA;override this.FilterComponents : System.ComponentModel.ComponentCollection -&gt; System.ComponentModel.ComponentCollection" Usage="containerFilterService.FilterComponents components" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

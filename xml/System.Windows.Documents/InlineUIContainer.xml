@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.InlineUIContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class InlineUIContainer&#xA;Inherits Inline" />
   <TypeSignature Language="C++ CLI" Value="public ref class InlineUIContainer : System::Windows::Documents::Inline" />
+  <TypeSignature Language="F#" Value="type InlineUIContainer = class&#xA;    inherit Inline" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childUIElement As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InlineUIContainer(System::Windows::UIElement ^ childUIElement);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.InlineUIContainer : System.Windows.UIElement -&gt; System.Windows.Documents.InlineUIContainer" Usage="new System.Windows.Documents.InlineUIContainer childUIElement" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childUIElement As UIElement, insertionPosition As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InlineUIContainer(System::Windows::UIElement ^ childUIElement, System::Windows::Documents::TextPointer ^ insertionPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.InlineUIContainer : System.Windows.UIElement * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.InlineUIContainer" Usage="new System.Windows.Documents.InlineUIContainer (childUIElement, insertionPosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.InlineUIContainer.Child" />
       <MemberSignature Language="VB.NET" Value="Public Property Child As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ Child { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Child : System.Windows.UIElement with get, set" Usage="System.Windows.Documents.InlineUIContainer.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

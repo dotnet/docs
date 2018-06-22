@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.ContainerUIElement3D" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContainerUIElement3D&#xA;Inherits UIElement3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContainerUIElement3D sealed : System::Windows::UIElement3D" />
+  <TypeSignature Language="F#" Value="type ContainerUIElement3D = class&#xA;    inherit UIElement3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ContainerUIElement3D.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As Visual3DCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Visual3DCollection ^ Children { System::Windows::Media::Media3D::Visual3DCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Windows.Media.Media3D.Visual3DCollection" Usage="System.Windows.Media.Media3D.ContainerUIElement3D.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ContainerUIElement3D.GetVisual3DChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisual3DChild (index As Integer) As Visual3D" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Visual3D ^ GetVisual3DChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetVisual3DChild : int -&gt; System.Windows.Media.Media3D.Visual3D" Usage="containerUIElement3D.GetVisual3DChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ContainerUIElement3D.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="containerUIElement3D.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ContainerUIElement3D.Visual3DChildrenCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Visual3DChildrenCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int Visual3DChildrenCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Visual3DChildrenCount : int" Usage="System.Windows.Media.Media3D.ContainerUIElement3D.Visual3DChildrenCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

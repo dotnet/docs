@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.AnonymousPipeClientStream" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnonymousPipeClientStream&#xA;Inherits PipeStream" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnonymousPipeClientStream sealed : System::IO::Pipes::PipeStream" />
+  <TypeSignature Language="F#" Value="type AnonymousPipeClientStream = class&#xA;    inherit PipeStream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pipeHandleAsString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::String ^ pipeHandleAsString);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.AnonymousPipeClientStream : string -&gt; System.IO.Pipes.AnonymousPipeClientStream" Usage="new System.IO.Pipes.AnonymousPipeClientStream pipeHandleAsString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Pipes.PipeDirection direction, class Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,Microsoft.Win32.SafeHandles.SafePipeHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::IO::Pipes::PipeDirection direction, Microsoft::Win32::SafeHandles::SafePipeHandle ^ safePipeHandle);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.AnonymousPipeClientStream : System.IO.Pipes.PipeDirection * Microsoft.Win32.SafeHandles.SafePipeHandle -&gt; System.IO.Pipes.AnonymousPipeClientStream" Usage="new System.IO.Pipes.AnonymousPipeClientStream (direction, safePipeHandle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (direction As PipeDirection, pipeHandleAsString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::IO::Pipes::PipeDirection direction, System::String ^ pipeHandleAsString);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.AnonymousPipeClientStream : System.IO.Pipes.PipeDirection * string -&gt; System.IO.Pipes.AnonymousPipeClientStream" Usage="new System.IO.Pipes.AnonymousPipeClientStream (direction, pipeHandleAsString)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -239,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!AnonymousPipeClientStream ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="anonymousPipeClientStream.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -266,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.AnonymousPipeClientStream.ReadMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadMode As PipeTransmissionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode ReadMode {  void set(System::IO::Pipes::PipeTransmissionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadMode : System.IO.Pipes.PipeTransmissionMode" Usage="System.IO.Pipes.AnonymousPipeClientStream.ReadMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -317,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TransmissionMode As PipeTransmissionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode TransmissionMode { System::IO::Pipes::PipeTransmissionMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransmissionMode : System.IO.Pipes.PipeTransmissionMode" Usage="System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>

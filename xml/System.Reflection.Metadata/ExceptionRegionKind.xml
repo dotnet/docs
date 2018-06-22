@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ExceptionRegionKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExceptionRegionKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class ExceptionRegionKind" />
+  <TypeSignature Language="F#" Value="type ExceptionRegionKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ExceptionRegionKind.Catch" />
       <MemberSignature Language="VB.NET" Value="Catch" />
       <MemberSignature Language="C++ CLI" Value="Catch" />
+      <MemberSignature Language="F#" Value="Catch = 0" Usage="System.Reflection.Metadata.ExceptionRegionKind.Catch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ExceptionRegionKind.Fault" />
       <MemberSignature Language="VB.NET" Value="Fault" />
       <MemberSignature Language="C++ CLI" Value="Fault" />
+      <MemberSignature Language="F#" Value="Fault = 4" Usage="System.Reflection.Metadata.ExceptionRegionKind.Fault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ExceptionRegionKind.Filter" />
       <MemberSignature Language="VB.NET" Value="Filter" />
       <MemberSignature Language="C++ CLI" Value="Filter" />
+      <MemberSignature Language="F#" Value="Filter = 1" Usage="System.Reflection.Metadata.ExceptionRegionKind.Filter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ExceptionRegionKind.Finally" />
       <MemberSignature Language="VB.NET" Value="Finally" />
       <MemberSignature Language="C++ CLI" Value="Finally" />
+      <MemberSignature Language="F#" Value="Finally = 2" Usage="System.Reflection.Metadata.ExceptionRegionKind.Finally" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

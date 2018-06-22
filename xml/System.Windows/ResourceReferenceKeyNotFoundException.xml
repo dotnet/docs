@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ResourceReferenceKeyNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceReferenceKeyNotFoundException&#xA;Inherits InvalidOperationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceReferenceKeyNotFoundException : InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type ResourceReferenceKeyNotFoundException = class&#xA;    inherit InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ResourceReferenceKeyNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Windows.ResourceReferenceKeyNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Windows.ResourceReferenceKeyNotFoundException" Usage="new System.Windows.ResourceReferenceKeyNotFoundException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, resourceKey As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceReferenceKeyNotFoundException(System::String ^ message, System::Object ^ resourceKey);" />
+      <MemberSignature Language="F#" Value="new System.Windows.ResourceReferenceKeyNotFoundException : string * obj -&gt; System.Windows.ResourceReferenceKeyNotFoundException" Usage="new System.Windows.ResourceReferenceKeyNotFoundException (message, resourceKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceReferenceKeyNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="resourceReferenceKeyNotFoundException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ResourceReferenceKeyNotFoundException.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Key { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : obj" Usage="System.Windows.ResourceReferenceKeyNotFoundException.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

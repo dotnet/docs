@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AxisArrowStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum AxisArrowStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class AxisArrowStyle" />
+  <TypeSignature Language="F#" Value="type AxisArrowStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisArrowStyle.Lines" />
       <MemberSignature Language="VB.NET" Value="Lines" />
       <MemberSignature Language="C++ CLI" Value="Lines" />
+      <MemberSignature Language="F#" Value="Lines = 3" Usage="System.Web.UI.DataVisualization.Charting.AxisArrowStyle.Lines" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisArrowStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.AxisArrowStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisArrowStyle.SharpTriangle" />
       <MemberSignature Language="VB.NET" Value="SharpTriangle" />
       <MemberSignature Language="C++ CLI" Value="SharpTriangle" />
+      <MemberSignature Language="F#" Value="SharpTriangle = 2" Usage="System.Web.UI.DataVisualization.Charting.AxisArrowStyle.SharpTriangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisArrowStyle.Triangle" />
       <MemberSignature Language="VB.NET" Value="Triangle" />
       <MemberSignature Language="C++ CLI" Value="Triangle" />
+      <MemberSignature Language="F#" Value="Triangle = 1" Usage="System.Web.UI.DataVisualization.Charting.AxisArrowStyle.Triangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

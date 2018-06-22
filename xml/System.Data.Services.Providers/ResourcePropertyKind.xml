@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourcePropertyKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResourcePropertyKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class ResourcePropertyKind" />
+  <TypeSignature Language="F#" Value="type ResourcePropertyKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.ComplexType" />
       <MemberSignature Language="VB.NET" Value="ComplexType" />
       <MemberSignature Language="C++ CLI" Value="ComplexType" />
+      <MemberSignature Language="F#" Value="ComplexType = 4" Usage="System.Data.Services.Providers.ResourcePropertyKind.ComplexType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.ETag" />
       <MemberSignature Language="VB.NET" Value="ETag" />
       <MemberSignature Language="C++ CLI" Value="ETag" />
+      <MemberSignature Language="F#" Value="ETag = 32" Usage="System.Data.Services.Providers.ResourcePropertyKind.ETag" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.Key" />
       <MemberSignature Language="VB.NET" Value="Key" />
       <MemberSignature Language="C++ CLI" Value="Key" />
+      <MemberSignature Language="F#" Value="Key = 2" Usage="System.Data.Services.Providers.ResourcePropertyKind.Key" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.Primitive" />
       <MemberSignature Language="VB.NET" Value="Primitive" />
       <MemberSignature Language="C++ CLI" Value="Primitive" />
+      <MemberSignature Language="F#" Value="Primitive = 1" Usage="System.Data.Services.Providers.ResourcePropertyKind.Primitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.ResourceReference" />
       <MemberSignature Language="VB.NET" Value="ResourceReference" />
       <MemberSignature Language="C++ CLI" Value="ResourceReference" />
+      <MemberSignature Language="F#" Value="ResourceReference = 8" Usage="System.Data.Services.Providers.ResourcePropertyKind.ResourceReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.ResourceSetReference" />
       <MemberSignature Language="VB.NET" Value="ResourceSetReference" />
       <MemberSignature Language="C++ CLI" Value="ResourceSetReference" />
+      <MemberSignature Language="F#" Value="ResourceSetReference = 16" Usage="System.Data.Services.Providers.ResourcePropertyKind.ResourceSetReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

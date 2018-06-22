@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapMessage" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SoapMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapMessage abstract" />
+  <TypeSignature Language="F#" Value="type SoapMessage = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.Action" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Action { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string" Usage="System.Web.Services.Protocols.SoapMessage.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.ContentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentEncoding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentEncoding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentEncoding : string with get, set" Usage="System.Web.Services.Protocols.SoapMessage.ContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Web.Services.Protocols.SoapMessage.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapMessage.EnsureInStage" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub EnsureInStage ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void EnsureInStage();" />
+      <MemberSignature Language="F#" Value="abstract member EnsureInStage : unit -&gt; unit" Usage="soapMessage.EnsureInStage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapMessage.EnsureOutStage" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub EnsureOutStage ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void EnsureOutStage();" />
+      <MemberSignature Language="F#" Value="abstract member EnsureOutStage : unit -&gt; unit" Usage="soapMessage.EnsureOutStage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapMessage.EnsureStage(System.Web.Services.Protocols.SoapMessageStage)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub EnsureStage (stage As SoapMessageStage)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnsureStage(System::Web::Services::Protocols::SoapMessageStage stage);" />
+      <MemberSignature Language="F#" Value="member this.EnsureStage : System.Web.Services.Protocols.SoapMessageStage -&gt; unit" Usage="soapMessage.EnsureStage stage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.Exception" />
       <MemberSignature Language="VB.NET" Value="Public Property Exception As SoapException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapException ^ Exception { System::Web::Services::Protocols::SoapException ^ get(); void set(System::Web::Services::Protocols::SoapException ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : System.Web.Services.Protocols.SoapException with get, set" Usage="System.Web.Services.Protocols.SoapMessage.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapMessage.GetInParameterValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInParameterValue (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetInParameterValue(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetInParameterValue : int -&gt; obj" Usage="soapMessage.GetInParameterValue index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -328,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapMessage.GetOutParameterValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOutParameterValue (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOutParameterValue(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetOutParameterValue : int -&gt; obj" Usage="soapMessage.GetOutParameterValue index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapMessage.GetReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReturnValue () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetReturnValue();" />
+      <MemberSignature Language="F#" Value="member this.GetReturnValue : unit -&gt; obj" Usage="soapMessage.GetReturnValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -414,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As SoapHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapHeaderCollection ^ Headers { System::Web::Services::Protocols::SoapHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Web.Services.Protocols.SoapHeaderCollection" Usage="System.Web.Services.Protocols.SoapMessage.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -444,6 +456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.MethodInfo" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MethodInfo As LogicalMethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Web::Services::Protocols::LogicalMethodInfo ^ MethodInfo { System::Web::Services::Protocols::LogicalMethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodInfo : System.Web.Services.Protocols.LogicalMethodInfo" Usage="System.Web.Services.Protocols.SoapMessage.MethodInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -480,6 +493,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.OneWay" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OneWay As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool OneWay { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.OneWay : bool" Usage="System.Web.Services.Protocols.SoapMessage.OneWay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -521,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.SoapVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SoapVersion As SoapProtocolVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Protocols::SoapProtocolVersion SoapVersion { System::Web::Services::Protocols::SoapProtocolVersion get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoapVersion : System.Web.Services.Protocols.SoapProtocolVersion" Usage="System.Web.Services.Protocols.SoapMessage.SoapVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -557,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.Stage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stage As SoapMessageStage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapMessageStage Stage { System::Web::Services::Protocols::SoapMessageStage get(); };" />
+      <MemberSignature Language="F#" Value="member this.Stage : System.Web.Services.Protocols.SoapMessageStage" Usage="System.Web.Services.Protocols.SoapMessage.Stage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -594,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.Stream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Stream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Stream : System.IO.Stream" Usage="System.Web.Services.Protocols.SoapMessage.Stream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -633,6 +650,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapMessage.Url" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Url As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Url { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Url : string" Usage="System.Web.Services.Protocols.SoapMessage.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

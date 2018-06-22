@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ContextItem" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextItem abstract" />
+  <TypeSignature Language="F#" Value="type ContextItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ContextItem.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.ContextItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItem.OnItemChanged(System.Activities.Presentation.EditingContext,System.Activities.Presentation.ContextItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemChanged (context As EditingContext, previousItem As ContextItem)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemChanged(System::Activities::Presentation::EditingContext ^ context, System::Activities::Presentation::ContextItem ^ previousItem);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemChanged : System.Activities.Presentation.EditingContext * System.Activities.Presentation.ContextItem -&gt; unit&#xA;override this.OnItemChanged : System.Activities.Presentation.EditingContext * System.Activities.Presentation.ContextItem -&gt; unit" Usage="contextItem.OnItemChanged (context, previousItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

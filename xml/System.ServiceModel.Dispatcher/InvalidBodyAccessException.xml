@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InvalidBodyAccessException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidBodyAccessException abstract : SystemException" />
+  <TypeSignature Language="F#" Value="type InvalidBodyAccessException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.InvalidBodyAccessException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidBodyAccessException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.InvalidBodyAccessException : string -&gt; System.ServiceModel.Dispatcher.InvalidBodyAccessException" Usage="new System.ServiceModel.Dispatcher.InvalidBodyAccessException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.InvalidBodyAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidBodyAccessException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.InvalidBodyAccessException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Dispatcher.InvalidBodyAccessException" Usage="new System.ServiceModel.Dispatcher.InvalidBodyAccessException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.InvalidBodyAccessException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidBodyAccessException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.InvalidBodyAccessException : string * Exception -&gt; System.ServiceModel.Dispatcher.InvalidBodyAccessException" Usage="new System.ServiceModel.Dispatcher.InvalidBodyAccessException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

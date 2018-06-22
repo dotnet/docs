@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingCancelledEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WritingCancelledEventHandler(sender As Object, e As WritingCancelledEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WritingCancelledEventHandler(System::Object ^ sender, WritingCancelledEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WritingCancelledEventHandler = delegate of obj * WritingCancelledEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

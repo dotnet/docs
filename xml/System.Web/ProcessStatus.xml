@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ProcessStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProcessStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProcessStatus" />
+  <TypeSignature Language="F#" Value="type ProcessStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.Alive" />
       <MemberSignature Language="VB.NET" Value="Alive" />
       <MemberSignature Language="C++ CLI" Value="Alive" />
+      <MemberSignature Language="F#" Value="Alive = 1" Usage="System.Web.ProcessStatus.Alive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.ShutDown" />
       <MemberSignature Language="VB.NET" Value="ShutDown" />
       <MemberSignature Language="C++ CLI" Value="ShutDown" />
+      <MemberSignature Language="F#" Value="ShutDown = 3" Usage="System.Web.ProcessStatus.ShutDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.ShuttingDown" />
       <MemberSignature Language="VB.NET" Value="ShuttingDown" />
       <MemberSignature Language="C++ CLI" Value="ShuttingDown" />
+      <MemberSignature Language="F#" Value="ShuttingDown = 2" Usage="System.Web.ProcessStatus.ShuttingDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.Terminated" />
       <MemberSignature Language="VB.NET" Value="Terminated" />
       <MemberSignature Language="C++ CLI" Value="Terminated" />
+      <MemberSignature Language="F#" Value="Terminated = 4" Usage="System.Web.ProcessStatus.Terminated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

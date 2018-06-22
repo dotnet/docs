@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionListsChangedType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DesignerActionListsChangedType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DesignerActionListsChangedType" />
+  <TypeSignature Language="F#" Value="type DesignerActionListsChangedType = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionListsChangedType.ActionListsAdded" />
       <MemberSignature Language="VB.NET" Value="ActionListsAdded" />
       <MemberSignature Language="C++ CLI" Value="ActionListsAdded" />
+      <MemberSignature Language="F#" Value="ActionListsAdded = 0" Usage="System.ComponentModel.Design.DesignerActionListsChangedType.ActionListsAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionListsChangedType.ActionListsRemoved" />
       <MemberSignature Language="VB.NET" Value="ActionListsRemoved" />
       <MemberSignature Language="C++ CLI" Value="ActionListsRemoved" />
+      <MemberSignature Language="F#" Value="ActionListsRemoved = 1" Usage="System.ComponentModel.Design.DesignerActionListsChangedType.ActionListsRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

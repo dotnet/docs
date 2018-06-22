@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewRowEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewRowEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewRow dataGridViewRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowEventArgs.#ctor(System.Windows.Forms.DataGridViewRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewRowEventArgs(System::Windows::Forms::DataGridViewRow ^ dataGridViewRow);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewRowEventArgs : System.Windows.Forms.DataGridViewRow -&gt; System.Windows.Forms.DataGridViewRowEventArgs" Usage="new System.Windows.Forms.DataGridViewRowEventArgs dataGridViewRow" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataGridViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewRow ^ Row { System::Windows::Forms::DataGridViewRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Windows.Forms.DataGridViewRow" Usage="System.Windows.Forms.DataGridViewRowEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

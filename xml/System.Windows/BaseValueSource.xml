@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.BaseValueSource" />
   <TypeSignature Language="VB.NET" Value="Public Enum BaseValueSource" />
   <TypeSignature Language="C++ CLI" Value="public enum class BaseValueSource" />
+  <TypeSignature Language="F#" Value="type BaseValueSource = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 1" Usage="System.Windows.BaseValueSource.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.DefaultStyle" />
       <MemberSignature Language="VB.NET" Value="DefaultStyle" />
       <MemberSignature Language="C++ CLI" Value="DefaultStyle" />
+      <MemberSignature Language="F#" Value="DefaultStyle = 3" Usage="System.Windows.BaseValueSource.DefaultStyle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.DefaultStyleTrigger" />
       <MemberSignature Language="VB.NET" Value="DefaultStyleTrigger" />
       <MemberSignature Language="C++ CLI" Value="DefaultStyleTrigger" />
+      <MemberSignature Language="F#" Value="DefaultStyleTrigger = 4" Usage="System.Windows.BaseValueSource.DefaultStyleTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.ImplicitStyleReference" />
       <MemberSignature Language="VB.NET" Value="ImplicitStyleReference" />
       <MemberSignature Language="C++ CLI" Value="ImplicitStyleReference" />
+      <MemberSignature Language="F#" Value="ImplicitStyleReference = 8" Usage="System.Windows.BaseValueSource.ImplicitStyleReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Inherited" />
       <MemberSignature Language="VB.NET" Value="Inherited" />
       <MemberSignature Language="C++ CLI" Value="Inherited" />
+      <MemberSignature Language="F#" Value="Inherited = 2" Usage="System.Windows.BaseValueSource.Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="C++ CLI" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 11" Usage="System.Windows.BaseValueSource.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.ParentTemplate" />
       <MemberSignature Language="VB.NET" Value="ParentTemplate" />
       <MemberSignature Language="C++ CLI" Value="ParentTemplate" />
+      <MemberSignature Language="F#" Value="ParentTemplate = 9" Usage="System.Windows.BaseValueSource.ParentTemplate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.ParentTemplateTrigger" />
       <MemberSignature Language="VB.NET" Value="ParentTemplateTrigger" />
       <MemberSignature Language="C++ CLI" Value="ParentTemplateTrigger" />
+      <MemberSignature Language="F#" Value="ParentTemplateTrigger = 10" Usage="System.Windows.BaseValueSource.ParentTemplateTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Style" />
       <MemberSignature Language="VB.NET" Value="Style" />
       <MemberSignature Language="C++ CLI" Value="Style" />
+      <MemberSignature Language="F#" Value="Style = 5" Usage="System.Windows.BaseValueSource.Style" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.StyleTrigger" />
       <MemberSignature Language="VB.NET" Value="StyleTrigger" />
       <MemberSignature Language="C++ CLI" Value="StyleTrigger" />
+      <MemberSignature Language="F#" Value="StyleTrigger = 7" Usage="System.Windows.BaseValueSource.StyleTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.TemplateTrigger" />
       <MemberSignature Language="VB.NET" Value="TemplateTrigger" />
       <MemberSignature Language="C++ CLI" Value="TemplateTrigger" />
+      <MemberSignature Language="F#" Value="TemplateTrigger = 6" Usage="System.Windows.BaseValueSource.TemplateTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -244,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Windows.BaseValueSource.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

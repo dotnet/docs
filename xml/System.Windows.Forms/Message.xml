@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Message" />
   <TypeSignature Language="VB.NET" Value="Public Structure Message" />
   <TypeSignature Language="C++ CLI" Value="public value class Message" />
+  <TypeSignature Language="F#" Value="type Message = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.Create(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (hWnd As IntPtr, msg As Integer, wparam As IntPtr, lparam As IntPtr) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Message Create(IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
+      <MemberSignature Language="F#" Value="static member Create : nativeint * int * nativeint * nativeint -&gt; System.Windows.Forms.Message" Usage="System.Windows.Forms.Message.Create (hWnd, msg, wparam, lparam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="message.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="message.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.GetLParam(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLParam (cls As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetLParam(Type ^ cls);" />
+      <MemberSignature Language="F#" Value="member this.GetLParam : Type -&gt; obj" Usage="message.GetLParam cls" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.HWnd" />
       <MemberSignature Language="VB.NET" Value="Public Property HWnd As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr HWnd { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.HWnd : nativeint with get, set" Usage="System.Windows.Forms.Message.HWnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.LParam" />
       <MemberSignature Language="VB.NET" Value="Public Property LParam As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr LParam { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.LParam : nativeint with get, set" Usage="System.Windows.Forms.Message.LParam" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.Msg" />
       <MemberSignature Language="VB.NET" Value="Public Property Msg As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Msg { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Msg : int with get, set" Usage="System.Windows.Forms.Message.Msg" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.op_Equality(System.Windows.Forms.Message,System.Windows.Forms.Message)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As Message, b As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::Message a, System::Windows::Forms::Message b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.Message * System.Windows.Forms.Message -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.op_Inequality(System.Windows.Forms.Message,System.Windows.Forms.Message)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As Message, b As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::Message a, System::Windows::Forms::Message b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.Message * System.Windows.Forms.Message -&gt; bool" Usage="System.Windows.Forms.Message.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Result { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : nativeint with get, set" Usage="System.Windows.Forms.Message.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -312,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="message.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.WParam" />
       <MemberSignature Language="VB.NET" Value="Public Property WParam As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr WParam { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.WParam : nativeint with get, set" Usage="System.Windows.Forms.Message.WParam" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

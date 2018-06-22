@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Base64FormattingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum Base64FormattingOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class Base64FormattingOptions" />
+  <TypeSignature Language="F#" Value="type Base64FormattingOptions = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Base64FormattingOptions.InsertLineBreaks" />
       <MemberSignature Language="VB.NET" Value="InsertLineBreaks" />
       <MemberSignature Language="C++ CLI" Value="InsertLineBreaks" />
+      <MemberSignature Language="F#" Value="InsertLineBreaks = 1" Usage="System.Base64FormattingOptions.InsertLineBreaks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Base64FormattingOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Base64FormattingOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

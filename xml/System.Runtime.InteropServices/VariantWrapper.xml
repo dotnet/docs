@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.VariantWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VariantWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class VariantWrapper sealed" />
+  <TypeSignature Language="F#" Value="type VariantWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.VariantWrapper.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VariantWrapper(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.VariantWrapper : obj -&gt; System.Runtime.InteropServices.VariantWrapper" Usage="new System.Runtime.InteropServices.VariantWrapper obj" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.VariantWrapper.WrappedObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrappedObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WrappedObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WrappedObject : obj" Usage="System.Runtime.InteropServices.VariantWrapper.WrappedObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

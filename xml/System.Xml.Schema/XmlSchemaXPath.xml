@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaXPath" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaXPath&#xA;Inherits XmlSchemaAnnotated" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaXPath : System::Xml::Schema::XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaXPath = class&#xA;    inherit XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaXPath.XPath" />
       <MemberSignature Language="VB.NET" Value="Public Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string with get, set" Usage="System.Xml.Schema.XmlSchemaXPath.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

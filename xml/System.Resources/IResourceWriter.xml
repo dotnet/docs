@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.IResourceWriter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IResourceWriter&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IResourceWriter : IDisposable" />
+  <TypeSignature Language="F#" Value="type IResourceWriter = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.IResourceWriter.AddResource(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::String ^ name, cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddResource : string * byte[] -&gt; unit" Usage="iResourceWriter.AddResource (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.IResourceWriter.AddResource(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddResource : string * obj -&gt; unit" Usage="iResourceWriter.AddResource (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.IResourceWriter.AddResource(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddResource : string * string -&gt; unit" Usage="iResourceWriter.AddResource (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.IResourceWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="iResourceWriter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -226,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.IResourceWriter.Generate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Generate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Generate();" />
+      <MemberSignature Language="F#" Value="abstract member Generate : unit -&gt; unit" Usage="iResourceWriter.Generate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

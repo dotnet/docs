@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelAutoSize" />
   <TypeSignature Language="VB.NET" Value="Public Enum StatusBarPanelAutoSize" />
   <TypeSignature Language="C++ CLI" Value="public enum class StatusBarPanelAutoSize" />
+  <TypeSignature Language="F#" Value="type StatusBarPanelAutoSize = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelAutoSize.Contents" />
       <MemberSignature Language="VB.NET" Value="Contents" />
       <MemberSignature Language="C++ CLI" Value="Contents" />
+      <MemberSignature Language="F#" Value="Contents = 3" Usage="System.Windows.Forms.StatusBarPanelAutoSize.Contents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelAutoSize.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Windows.Forms.StatusBarPanelAutoSize.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelAutoSize.Spring" />
       <MemberSignature Language="VB.NET" Value="Spring" />
       <MemberSignature Language="C++ CLI" Value="Spring" />
+      <MemberSignature Language="F#" Value="Spring = 2" Usage="System.Windows.Forms.StatusBarPanelAutoSize.Spring" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

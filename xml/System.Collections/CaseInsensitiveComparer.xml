@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.CaseInsensitiveComparer" />
   <TypeSignature Language="VB.NET" Value="Public Class CaseInsensitiveComparer&#xA;Implements IComparer" />
   <TypeSignature Language="C++ CLI" Value="public ref class CaseInsensitiveComparer : System::Collections::IComparer" />
+  <TypeSignature Language="F#" Value="type CaseInsensitiveComparer = class&#xA;    interface IComparer" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -129,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveComparer.#ctor(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (culture As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CaseInsensitiveComparer(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="new System.Collections.CaseInsensitiveComparer : System.Globalization.CultureInfo -&gt; System.Collections.CaseInsensitiveComparer" Usage="new System.Collections.CaseInsensitiveComparer culture" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -180,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveComparer.Compare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compare (a As Object, b As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::Object ^ a, System::Object ^ b);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : obj * obj -&gt; int&#xA;override this.Compare : obj * obj -&gt; int" Usage="caseInsensitiveComparer.Compare (a, b)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>
@@ -258,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveComparer.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As CaseInsensitiveComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveComparer ^ Default { System::Collections::CaseInsensitiveComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.CaseInsensitiveComparer" Usage="System.Collections.CaseInsensitiveComparer.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -298,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveComparer.DefaultInvariant" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultInvariant As CaseInsensitiveComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveComparer ^ DefaultInvariant { System::Collections::CaseInsensitiveComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultInvariant : System.Collections.CaseInsensitiveComparer" Usage="System.Collections.CaseInsensitiveComparer.DefaultInvariant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>

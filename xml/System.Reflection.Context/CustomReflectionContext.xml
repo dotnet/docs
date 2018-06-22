@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Context.CustomReflectionContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CustomReflectionContext&#xA;Inherits ReflectionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomReflectionContext abstract : System::Reflection::ReflectionContext" />
+  <TypeSignature Language="F#" Value="type CustomReflectionContext = class&#xA;    inherit ReflectionContext" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Context</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Context.CustomReflectionContext.#ctor(System.Reflection.ReflectionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (source As ReflectionContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomReflectionContext(System::Reflection::ReflectionContext ^ source);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Context.CustomReflectionContext : System.Reflection.ReflectionContext -&gt; System.Reflection.Context.CustomReflectionContext" Usage="new System.Reflection.Context.CustomReflectionContext source" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Context</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.PropertyInfo&gt; AddProperties(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Context.CustomReflectionContext.AddProperties(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Reflection::PropertyInfo ^&gt; ^ AddProperties(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member AddProperties : Type -&gt; seq&lt;System.Reflection.PropertyInfo&gt;&#xA;override this.AddProperties : Type -&gt; seq&lt;System.Reflection.PropertyInfo&gt;" Usage="customReflectionContext.AddProperties type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Context</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Context.CustomReflectionContext.CreateProperty(System.Type,System.String,System.Func{System.Object,System.Object},System.Action{System.Object,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateProperty (propertyType As Type, name As String, getter As Func(Of Object, Object), setter As Action(Of Object, Object)) As PropertyInfo" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Reflection::PropertyInfo ^ CreateProperty(Type ^ propertyType, System::String ^ name, Func&lt;System::Object ^, System::Object ^&gt; ^ getter, Action&lt;System::Object ^, System::Object ^&gt; ^ setter);" />
+      <MemberSignature Language="F#" Value="member this.CreateProperty : Type * string * Func&lt;obj, obj&gt; * Action&lt;obj, obj&gt; -&gt; System.Reflection.PropertyInfo" Usage="customReflectionContext.CreateProperty (propertyType, name, getter, setter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Context</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Context.CustomReflectionContext.CreateProperty(System.Type,System.String,System.Func{System.Object,System.Object},System.Action{System.Object,System.Object},System.Collections.Generic.IEnumerable{System.Attribute},System.Collections.Generic.IEnumerable{System.Attribute},System.Collections.Generic.IEnumerable{System.Attribute})" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateProperty (propertyType As Type, name As String, getter As Func(Of Object, Object), setter As Action(Of Object, Object), propertyCustomAttributes As IEnumerable(Of Attribute), getterCustomAttributes As IEnumerable(Of Attribute), setterCustomAttributes As IEnumerable(Of Attribute)) As PropertyInfo" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Reflection::PropertyInfo ^ CreateProperty(Type ^ propertyType, System::String ^ name, Func&lt;System::Object ^, System::Object ^&gt; ^ getter, Action&lt;System::Object ^, System::Object ^&gt; ^ setter, System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ propertyCustomAttributes, System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ getterCustomAttributes, System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ setterCustomAttributes);" />
+      <MemberSignature Language="F#" Value="member this.CreateProperty : Type * string * Func&lt;obj, obj&gt; * Action&lt;obj, obj&gt; * seq&lt;Attribute&gt; * seq&lt;Attribute&gt; * seq&lt;Attribute&gt; -&gt; System.Reflection.PropertyInfo" Usage="customReflectionContext.CreateProperty (propertyType, name, getter, setter, propertyCustomAttributes, getterCustomAttributes, setterCustomAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Context</AssemblyName>
@@ -246,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Context.CustomReflectionContext.GetCustomAttributes(System.Reflection.MemberInfo,System.Collections.Generic.IEnumerable{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCustomAttributes (member As MemberInfo, declaredAttributes As IEnumerable(Of Object)) As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ member, System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ declaredAttributes);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : System.Reflection.MemberInfo * seq&lt;obj&gt; -&gt; seq&lt;obj&gt;&#xA;override this.GetCustomAttributes : System.Reflection.MemberInfo * seq&lt;obj&gt; -&gt; seq&lt;obj&gt;" Usage="customReflectionContext.GetCustomAttributes (member, declaredAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Context</AssemblyName>
@@ -274,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Context.CustomReflectionContext.GetCustomAttributes(System.Reflection.ParameterInfo,System.Collections.Generic.IEnumerable{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCustomAttributes (parameter As ParameterInfo, declaredAttributes As IEnumerable(Of Object)) As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ parameter, System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ declaredAttributes);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : System.Reflection.ParameterInfo * seq&lt;obj&gt; -&gt; seq&lt;obj&gt;&#xA;override this.GetCustomAttributes : System.Reflection.ParameterInfo * seq&lt;obj&gt; -&gt; seq&lt;obj&gt;" Usage="customReflectionContext.GetCustomAttributes (parameter, declaredAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Context</AssemblyName>
@@ -301,6 +308,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.Assembly MapAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Context.CustomReflectionContext.MapAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::Assembly ^ MapAssembly(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="override this.MapAssembly : System.Reflection.Assembly -&gt; System.Reflection.Assembly" Usage="customReflectionContext.MapAssembly assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Context</AssemblyName>
@@ -327,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Context.CustomReflectionContext.MapType(System.Reflection.TypeInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MapType (type As TypeInfo) As TypeInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::TypeInfo ^ MapType(System::Reflection::TypeInfo ^ type);" />
+      <MemberSignature Language="F#" Value="override this.MapType : System.Reflection.TypeInfo -&gt; System.Reflection.TypeInfo" Usage="customReflectionContext.MapType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Context</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridRowEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridRowEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridRowEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridRowEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRowEventArgs.#ctor(System.Windows.Controls.DataGridRow)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (row As DataGridRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridRowEventArgs(System::Windows::Controls::DataGridRow ^ row);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridRowEventArgs : System.Windows.Controls.DataGridRow -&gt; System.Windows.Controls.DataGridRowEventArgs" Usage="new System.Windows.Controls.DataGridRowEventArgs row" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataGridRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridRow ^ Row { System::Windows::Controls::DataGridRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Windows.Controls.DataGridRow" Usage="System.Windows.Controls.DataGridRowEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

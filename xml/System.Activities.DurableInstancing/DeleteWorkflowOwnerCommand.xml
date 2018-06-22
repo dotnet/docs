@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.DeleteWorkflowOwnerCommand" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeleteWorkflowOwnerCommand&#xA;Inherits InstancePersistenceCommand" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeleteWorkflowOwnerCommand sealed : System::Runtime::DurableInstancing::InstancePersistenceCommand" />
+  <TypeSignature Language="F#" Value="type DeleteWorkflowOwnerCommand = class&#xA;    inherit InstancePersistenceCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.DeleteWorkflowOwnerCommand.IsTransactionEnlistmentOptional" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property IsTransactionEnlistmentOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsTransactionEnlistmentOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransactionEnlistmentOptional : bool" Usage="System.Activities.DurableInstancing.DeleteWorkflowOwnerCommand.IsTransactionEnlistmentOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.DeleteWorkflowOwnerCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Validate (view As InstanceView)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Validate(System::Runtime::DurableInstancing::InstanceView ^ view);" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Runtime.DurableInstancing.InstanceView -&gt; unit" Usage="deleteWorkflowOwnerCommand.Validate view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

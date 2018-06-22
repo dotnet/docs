@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RequestContext" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestContext" />
+  <TypeSignature Language="F#" Value="type RequestContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContextBase httpContext, class System.Web.Routing.RouteData routeData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RequestContext.#ctor(System.Web.HttpContextBase,System.Web.Routing.RouteData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestContext(System::Web::HttpContextBase ^ httpContext, System::Web::Routing::RouteData ^ routeData);" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.RequestContext : System.Web.HttpContextBase * System.Web.Routing.RouteData -&gt; System.Web.Routing.RequestContext" Usage="new System.Web.Routing.RequestContext (httpContext, routeData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RequestContext.HttpContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HttpContext As HttpContextBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpContextBase ^ HttpContext { System::Web::HttpContextBase ^ get(); void set(System::Web::HttpContextBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpContext : System.Web.HttpContextBase with get, set" Usage="System.Web.Routing.RequestContext.HttpContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RequestContext.RouteData" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RouteData As RouteData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Routing::RouteData ^ RouteData { System::Web::Routing::RouteData ^ get(); void set(System::Web::Routing::RouteData ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteData : System.Web.Routing.RouteData with get, set" Usage="System.Web.Routing.RequestContext.RouteData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

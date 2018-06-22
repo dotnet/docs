@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeDomSerializer&#xA;Inherits CodeDomSerializerBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeDomSerializer : System::ComponentModel::Design::Serialization::CodeDomSerializerBase" />
+  <TypeSignature Language="F#" Value="type CodeDomSerializer = class&#xA;    inherit CodeDomSerializerBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializer.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Deserialize (manager As IDesignerSerializationManager, codeObject As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Deserialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ codeObject);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj&#xA;override this.Deserialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj" Usage="codeDomSerializer.Deserialize (manager, codeObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializer.DeserializeStatementToInstance(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected Function DeserializeStatementToInstance (manager As IDesignerSerializationManager, statement As CodeStatement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ DeserializeStatementToInstance(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeStatement ^ statement);" />
+      <MemberSignature Language="F#" Value="member this.DeserializeStatementToInstance : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeStatement -&gt; obj" Usage="codeDomSerializer.DeserializeStatementToInstance (manager, statement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializer.GetTargetComponentName(System.CodeDom.CodeStatement,System.CodeDom.CodeExpression,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTargetComponentName (statement As CodeStatement, expression As CodeExpression, targetType As Type) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetTargetComponentName(System::CodeDom::CodeStatement ^ statement, System::CodeDom::CodeExpression ^ expression, Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="abstract member GetTargetComponentName : System.CodeDom.CodeStatement * System.CodeDom.CodeExpression * Type -&gt; string&#xA;override this.GetTargetComponentName : System.CodeDom.CodeStatement * System.CodeDom.CodeExpression * Type -&gt; string" Usage="codeDomSerializer.GetTargetComponentName (statement, expression, targetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Serialize (manager As IDesignerSerializationManager, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Serialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj&#xA;override this.Serialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj" Usage="codeDomSerializer.Serialize (manager, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializer.SerializeAbsolute(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SerializeAbsolute (manager As IDesignerSerializationManager, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ SerializeAbsolute(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeAbsolute : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj&#xA;override this.SerializeAbsolute : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj" Usage="codeDomSerializer.SerializeAbsolute (manager, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializer.SerializeMember(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SerializeMember (manager As IDesignerSerializationManager, owningObject As Object, member As MemberDescriptor) As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::CodeDom::CodeStatementCollection ^ SerializeMember(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ owningObject, System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeMember : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.ComponentModel.MemberDescriptor -&gt; System.CodeDom.CodeStatementCollection&#xA;override this.SerializeMember : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.ComponentModel.MemberDescriptor -&gt; System.CodeDom.CodeStatementCollection" Usage="codeDomSerializer.SerializeMember (manager, owningObject, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -269,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializer.SerializeMemberAbsolute(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SerializeMemberAbsolute (manager As IDesignerSerializationManager, owningObject As Object, member As MemberDescriptor) As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::CodeDom::CodeStatementCollection ^ SerializeMemberAbsolute(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ owningObject, System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeMemberAbsolute : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.ComponentModel.MemberDescriptor -&gt; System.CodeDom.CodeStatementCollection&#xA;override this.SerializeMemberAbsolute : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.ComponentModel.MemberDescriptor -&gt; System.CodeDom.CodeStatementCollection" Usage="codeDomSerializer.SerializeMemberAbsolute (manager, owningObject, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializer.SerializeToReferenceExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function SerializeToReferenceExpression (manager As IDesignerSerializationManager, value As Object) As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::CodeDom::CodeExpression ^ SerializeToReferenceExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SerializeToReferenceExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; System.CodeDom.CodeExpression" Usage="codeDomSerializer.SerializeToReferenceExpression (manager, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

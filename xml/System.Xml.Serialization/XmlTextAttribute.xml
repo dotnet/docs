@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlTextAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlTextAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlTextAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlTextAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -151,6 +152,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlTextAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlTextAttribute : Type -&gt; System.Xml.Serialization.XmlTextAttribute" Usage="new System.Xml.Serialization.XmlTextAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -199,6 +201,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlTextAttribute.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : string with get, set" Usage="System.Xml.Serialization.XmlTextAttribute.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -312,6 +315,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlTextAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Xml.Serialization.XmlTextAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

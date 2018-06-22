@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.EventLogWebEventProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogWebEventProvider&#xA;Inherits WebEventProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogWebEventProvider sealed : System::Web::Management::WebEventProvider" />
+  <TypeSignature Language="F#" Value="type EventLogWebEventProvider = class&#xA;    inherit WebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.EventLogWebEventProvider.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="eventLogWebEventProvider.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.EventLogWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="eventLogWebEventProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.EventLogWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProcessEvent (eventRaised As WebBaseEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProcessEvent(System::Web::Management::WebBaseEvent ^ eventRaised);" />
+      <MemberSignature Language="F#" Value="override this.ProcessEvent : System.Web.Management.WebBaseEvent -&gt; unit" Usage="eventLogWebEventProvider.ProcessEvent eventRaised" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.EventLogWebEventProvider.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Shutdown();" />
+      <MemberSignature Language="F#" Value="override this.Shutdown : unit -&gt; unit" Usage="eventLogWebEventProvider.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

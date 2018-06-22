@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPager" />
   <TypeSignature Language="VB.NET" Value="Public Class DataPager&#xA;Inherits Control&#xA;Implements IAttributeAccessor, ICompositeControlDesignerAccessor, INamingContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataPager : System::Web::UI::Control, System::Web::UI::IAttributeAccessor, System::Web::UI::INamingContainer, System::Web::UI::WebControls::ICompositeControlDesignerAccessor" />
+  <TypeSignature Language="F#" Value="type DataPager = class&#xA;    inherit Control&#xA;    interface IAttributeAccessor&#xA;    interface INamingContainer&#xA;    interface ICompositeControlDesignerAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -212,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dataPager.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -243,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AttributeCollection ^ Attributes { System::Web::UI::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Web.UI.AttributeCollection" Usage="System.Web.UI.WebControls.DataPager.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -279,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.ConnectToEvents(System.Web.UI.WebControls.IPageableItemContainer)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConnectToEvents (container As IPageableItemContainer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConnectToEvents(System::Web::UI::WebControls::IPageableItemContainer ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member ConnectToEvents : System.Web.UI.WebControls.IPageableItemContainer -&gt; unit&#xA;override this.ConnectToEvents : System.Web.UI.WebControls.IPageableItemContainer -&gt; unit" Usage="dataPager.ConnectToEvents container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -318,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.DataPager.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -349,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.CreatePagerFields" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreatePagerFields ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreatePagerFields();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePagerFields : unit -&gt; unit&#xA;override this.CreatePagerFields : unit -&gt; unit" Usage="dataPager.CreatePagerFields " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -389,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.DataBind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DataBind ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
+      <MemberSignature Language="F#" Value="abstract member DataBind : unit -&gt; unit&#xA;override this.DataBind : unit -&gt; unit" Usage="dataPager.DataBind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -418,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.Fields" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Fields As DataPagerFieldCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataPagerFieldCollection ^ Fields { System::Web::UI::WebControls::DataPagerFieldCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fields : System.Web.UI.WebControls.DataPagerFieldCollection" Usage="System.Web.UI.WebControls.DataPager.Fields" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -490,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.FindPageableItemContainer" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FindPageableItemContainer () As IPageableItemContainer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::IPageableItemContainer ^ FindPageableItemContainer();" />
+      <MemberSignature Language="F#" Value="abstract member FindPageableItemContainer : unit -&gt; System.Web.UI.WebControls.IPageableItemContainer&#xA;override this.FindPageableItemContainer : unit -&gt; System.Web.UI.WebControls.IPageableItemContainer" Usage="dataPager.FindPageableItemContainer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -534,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadControlState : obj -&gt; unit&#xA;override this.LoadControlState : obj -&gt; unit" Usage="dataPager.LoadControlState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -569,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="dataPager.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -601,6 +612,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.MaximumRows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumRows As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumRows { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumRows : int" Usage="System.Web.UI.WebControls.DataPager.MaximumRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -637,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnBubbleEvent : obj * EventArgs -&gt; bool&#xA;override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="dataPager.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -664,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="dataPager.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -702,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="dataPager.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -743,6 +758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable(System.Object,System.Web.UI.WebControls.PageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTotalRowCountAvailable (sender As Object, e As PageEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTotalRowCountAvailable(System::Object ^ sender, System::Web::UI::WebControls::PageEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnTotalRowCountAvailable : obj * System.Web.UI.WebControls.PageEventArgs -&gt; unit&#xA;override this.OnTotalRowCountAvailable : obj * System.Web.UI.WebControls.PageEventArgs -&gt; unit" Usage="dataPager.OnTotalRowCountAvailable (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -777,6 +793,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.PagedControlID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PagedControlID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PagedControlID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PagedControlID : string with get, set" Usage="System.Web.UI.WebControls.DataPager.PagedControlID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -839,6 +856,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.PageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property PageSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageSize : int with get, set" Usage="System.Web.UI.WebControls.DataPager.PageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -886,6 +904,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.QueryStringField" />
       <MemberSignature Language="VB.NET" Value="Public Property QueryStringField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueryStringField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QueryStringField : string with get, set" Usage="System.Web.UI.WebControls.DataPager.QueryStringField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -944,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.RecreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RecreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RecreateChildControls();" />
+      <MemberSignature Language="F#" Value="abstract member RecreateChildControls : unit -&gt; unit&#xA;override this.RecreateChildControls : unit -&gt; unit" Usage="dataPager.RecreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -974,6 +994,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dataPager.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1011,6 +1032,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginTag (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginTag(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginTag : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderBeginTag : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dataPager.RenderBeginTag writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1043,6 +1065,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dataPager.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1079,6 +1102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveControlState : unit -&gt; obj&#xA;override this.SaveControlState : unit -&gt; obj" Usage="dataPager.SaveControlState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1108,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="dataPager.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1145,6 +1170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetPageProperties (startRowIndex As Integer, maximumRows As Integer, databind As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetPageProperties(int startRowIndex, int maximumRows, bool databind);" />
+      <MemberSignature Language="F#" Value="abstract member SetPageProperties : int * int * bool -&gt; unit&#xA;override this.SetPageProperties : int * int * bool -&gt; unit" Usage="dataPager.SetPageProperties (startRowIndex, maximumRows, databind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1185,6 +1211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.StartRowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartRowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartRowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartRowIndex : int" Usage="System.Web.UI.WebControls.DataPager.StartRowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1311,6 +1338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.TagKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property TagKey As HtmlTextWriterTag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.DataPager.TagKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1352,6 +1380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.TotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalRowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalRowCount : int" Usage="System.Web.UI.WebControls.DataPager.TotalRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1381,6 +1410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="dataPager.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

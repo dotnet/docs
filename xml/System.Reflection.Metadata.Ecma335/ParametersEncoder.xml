@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ParametersEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure ParametersEncoder" />
   <TypeSignature Language="C++ CLI" Value="public value class ParametersEncoder" />
+  <TypeSignature Language="F#" Value="type ParametersEncoder = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder, bool hasVarArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ParametersEncoder.#ctor(System.Reflection.Metadata.BlobBuilder,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder, Optional hasVarArgs As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.ParametersEncoder : System.Reflection.Metadata.BlobBuilder * bool -&gt; System.Reflection.Metadata.Ecma335.ParametersEncoder" Usage="new System.Reflection.Metadata.Ecma335.ParametersEncoder (builder, hasVarArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ParametersEncoder.AddParameter" />
       <MemberSignature Language="VB.NET" Value="Public Function AddParameter () As ParameterTypeEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::ParameterTypeEncoder AddParameter();" />
+      <MemberSignature Language="F#" Value="member this.AddParameter : unit -&gt; System.Reflection.Metadata.Ecma335.ParameterTypeEncoder" Usage="parametersEncoder.AddParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ParametersEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.ParametersEncoder.Builder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ParametersEncoder.HasVarArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasVarArgs As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasVarArgs { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasVarArgs : bool" Usage="System.Reflection.Metadata.Ecma335.ParametersEncoder.HasVarArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ParametersEncoder.StartVarArgs" />
       <MemberSignature Language="VB.NET" Value="Public Function StartVarArgs () As ParametersEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::ParametersEncoder StartVarArgs();" />
+      <MemberSignature Language="F#" Value="member this.StartVarArgs : unit -&gt; System.Reflection.Metadata.Ecma335.ParametersEncoder" Usage="parametersEncoder.StartVarArgs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

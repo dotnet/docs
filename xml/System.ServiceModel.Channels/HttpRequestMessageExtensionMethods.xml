@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods" />
   <TypeSignature Language="VB.NET" Value="Public Module HttpRequestMessageExtensionMethods" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestMessageExtensionMethods abstract sealed" />
+  <TypeSignature Language="F#" Value="type HttpRequestMessageExtensionMethods = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Principal.IPrincipal GetUserPrincipal(class System.Net.Http.HttpRequestMessage httpRequestMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.GetUserPrincipal(System.Net.Http.HttpRequestMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Principal::IPrincipal ^ GetUserPrincipal(System::Net::Http::HttpRequestMessage ^ httpRequestMessage);" />
+      <MemberSignature Language="F#" Value="static member GetUserPrincipal : System.Net.Http.HttpRequestMessage -&gt; System.Security.Principal.IPrincipal" Usage="System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.GetUserPrincipal httpRequestMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetUserPrincipal(class System.Net.Http.HttpRequestMessage httpRequestMessage, class System.Security.Principal.IPrincipal user) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.SetUserPrincipal(System.Net.Http.HttpRequestMessage,System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetUserPrincipal(System::Net::Http::HttpRequestMessage ^ httpRequestMessage, System::Security::Principal::IPrincipal ^ user);" />
+      <MemberSignature Language="F#" Value="static member SetUserPrincipal : System.Net.Http.HttpRequestMessage * System.Security.Principal.IPrincipal -&gt; unit" Usage="System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.SetUserPrincipal (httpRequestMessage, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message ToMessage(class System.Net.Http.HttpRequestMessage httpRequestMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.ToMessage(System.Net.Http.HttpRequestMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ServiceModel::Channels::Message ^ ToMessage(System::Net::Http::HttpRequestMessage ^ httpRequestMessage);" />
+      <MemberSignature Language="F#" Value="static member ToMessage : System.Net.Http.HttpRequestMessage -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.ToMessage httpRequestMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodePropertyReference" />
   <TypeSignature Language="VB.NET" Value="Public Class CodePropertyReference&#xA;Inherits CodeValueReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodePropertyReference : Mono::CodeGeneration::CodeValueReference" />
+  <TypeSignature Language="F#" Value="type CodePropertyReference = class&#xA;    inherit CodeValueReference" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodePropertyReference.#ctor(Mono.CodeGeneration.CodeExpression,System.Reflection.PropertyInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As CodeExpression, property As PropertyInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodePropertyReference(Mono::CodeGeneration::CodeExpression ^ target, System::Reflection::PropertyInfo ^ property);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodePropertyReference : Mono.CodeGeneration.CodeExpression * System.Reflection.PropertyInfo -&gt; Mono.CodeGeneration.CodePropertyReference" Usage="new Mono.CodeGeneration.CodePropertyReference (target, property)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodePropertyReference.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codePropertyReference.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodePropertyReference.GenerateSet(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateSet (gen As ILGenerator, value As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateSet(System::Reflection::Emit::ILGenerator ^ gen, Mono::CodeGeneration::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="override this.GenerateSet : System.Reflection.Emit.ILGenerator * Mono.CodeGeneration.CodeExpression -&gt; unit" Usage="codePropertyReference.GenerateSet (gen, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodePropertyReference.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codePropertyReference.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodePropertyReference.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codePropertyReference.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

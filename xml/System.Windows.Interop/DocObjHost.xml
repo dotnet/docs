@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.DocObjHost" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DocObjHost&#xA;Inherits MarshalByRefObject&#xA;Implements IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DocObjHost sealed : MarshalByRefObject, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type DocObjHost = class&#xA;    inherit MarshalByRefObject&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DocObjHost.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="docObjHost.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

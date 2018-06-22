@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollOrientation" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollOrientation" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollOrientation" />
+  <TypeSignature Language="F#" Value="type ScrollOrientation = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollOrientation.HorizontalScroll" />
       <MemberSignature Language="VB.NET" Value="HorizontalScroll" />
       <MemberSignature Language="C++ CLI" Value="HorizontalScroll" />
+      <MemberSignature Language="F#" Value="HorizontalScroll = 0" Usage="System.Windows.Forms.ScrollOrientation.HorizontalScroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollOrientation.VerticalScroll" />
       <MemberSignature Language="VB.NET" Value="VerticalScroll" />
       <MemberSignature Language="C++ CLI" Value="VerticalScroll" />
+      <MemberSignature Language="F#" Value="VerticalScroll = 1" Usage="System.Windows.Forms.ScrollOrientation.VerticalScroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

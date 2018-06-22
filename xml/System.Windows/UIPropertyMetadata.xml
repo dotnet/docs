@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.UIPropertyMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class UIPropertyMetadata&#xA;Inherits PropertyMetadata" />
   <TypeSignature Language="C++ CLI" Value="public ref class UIPropertyMetadata : System::Windows::PropertyMetadata" />
+  <TypeSignature Language="F#" Value="type UIPropertyMetadata = class&#xA;    inherit PropertyMetadata" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : obj -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata defaultValue" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : System.Windows.PropertyChangedCallback -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata propertyChangedCallback" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : obj * System.Windows.PropertyChangedCallback -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata (defaultValue, propertyChangedCallback)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback);" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : obj * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata (defaultValue, propertyChangedCallback, coerceValueCallback)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback, bool isAnimationProhibited);" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : obj * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback * bool -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata (defaultValue, propertyChangedCallback, coerceValueCallback, isAnimationProhibited)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.UIPropertyMetadata.IsAnimationProhibited" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAnimationProhibited As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAnimationProhibited { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAnimationProhibited : bool with get, set" Usage="System.Windows.UIPropertyMetadata.IsAnimationProhibited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

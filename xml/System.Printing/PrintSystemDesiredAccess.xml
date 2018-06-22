@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemDesiredAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintSystemDesiredAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintSystemDesiredAccess" />
+  <TypeSignature Language="F#" Value="type PrintSystemDesiredAccess = " />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.AdministratePrinter" />
       <MemberSignature Language="VB.NET" Value="AdministratePrinter" />
       <MemberSignature Language="C++ CLI" Value="AdministratePrinter" />
+      <MemberSignature Language="F#" Value="AdministratePrinter = 983052" Usage="System.Printing.PrintSystemDesiredAccess.AdministratePrinter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.AdministrateServer" />
       <MemberSignature Language="VB.NET" Value="AdministrateServer" />
       <MemberSignature Language="C++ CLI" Value="AdministrateServer" />
+      <MemberSignature Language="F#" Value="AdministrateServer = 983041" Usage="System.Printing.PrintSystemDesiredAccess.AdministrateServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.EnumerateServer" />
       <MemberSignature Language="VB.NET" Value="EnumerateServer" />
       <MemberSignature Language="C++ CLI" Value="EnumerateServer" />
+      <MemberSignature Language="F#" Value="EnumerateServer = 131074" Usage="System.Printing.PrintSystemDesiredAccess.EnumerateServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Printing.PrintSystemDesiredAccess.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.UsePrinter" />
       <MemberSignature Language="VB.NET" Value="UsePrinter" />
       <MemberSignature Language="C++ CLI" Value="UsePrinter" />
+      <MemberSignature Language="F#" Value="UsePrinter = 131080" Usage="System.Printing.PrintSystemDesiredAccess.UsePrinter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

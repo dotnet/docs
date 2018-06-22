@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.HashAlgorithm" />
   <TypeSignature Language="VB.NET" Value="Public Enum HashAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public enum class HashAlgorithm" />
+  <TypeSignature Language="F#" Value="type HashAlgorithm = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Mac" />
       <MemberSignature Language="VB.NET" Value="Mac" />
       <MemberSignature Language="C++ CLI" Value="Mac" />
+      <MemberSignature Language="F#" Value="Mac = 32773" Usage="System.Messaging.HashAlgorithm.Mac" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Md2" />
       <MemberSignature Language="VB.NET" Value="Md2" />
       <MemberSignature Language="C++ CLI" Value="Md2" />
+      <MemberSignature Language="F#" Value="Md2 = 32769" Usage="System.Messaging.HashAlgorithm.Md2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Md4" />
       <MemberSignature Language="VB.NET" Value="Md4" />
       <MemberSignature Language="C++ CLI" Value="Md4" />
+      <MemberSignature Language="F#" Value="Md4 = 32770" Usage="System.Messaging.HashAlgorithm.Md4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Md5" />
       <MemberSignature Language="VB.NET" Value="Md5" />
       <MemberSignature Language="C++ CLI" Value="Md5" />
+      <MemberSignature Language="F#" Value="Md5 = 32771" Usage="System.Messaging.HashAlgorithm.Md5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.HashAlgorithm.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Sha" />
       <MemberSignature Language="VB.NET" Value="Sha" />
       <MemberSignature Language="C++ CLI" Value="Sha" />
+      <MemberSignature Language="F#" Value="Sha = 32772" Usage="System.Messaging.HashAlgorithm.Sha" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Sha256" />
       <MemberSignature Language="VB.NET" Value="Sha256" />
       <MemberSignature Language="C++ CLI" Value="Sha256" />
+      <MemberSignature Language="F#" Value="Sha256 = 32780" Usage="System.Messaging.HashAlgorithm.Sha256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -166,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Sha384" />
       <MemberSignature Language="VB.NET" Value="Sha384" />
       <MemberSignature Language="C++ CLI" Value="Sha384" />
+      <MemberSignature Language="F#" Value="Sha384 = 32781" Usage="System.Messaging.HashAlgorithm.Sha384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -185,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.HashAlgorithm.Sha512" />
       <MemberSignature Language="VB.NET" Value="Sha512" />
       <MemberSignature Language="C++ CLI" Value="Sha512" />
+      <MemberSignature Language="F#" Value="Sha512 = 32782" Usage="System.Messaging.HashAlgorithm.Sha512" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

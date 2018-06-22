@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputDevice" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InputDevice&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputDevice abstract : System::Windows::Threading::DispatcherObject" />
+  <TypeSignature Language="F#" Value="type InputDevice = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputDevice.ActiveSource" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ActiveSource As PresentationSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::PresentationSource ^ ActiveSource { System::Windows::PresentationSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveSource : System.Windows.PresentationSource" Usage="System.Windows.Input.InputDevice.ActiveSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputDevice.Target" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Target As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::IInputElement ^ Target { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.IInputElement" Usage="System.Windows.Input.InputDevice.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

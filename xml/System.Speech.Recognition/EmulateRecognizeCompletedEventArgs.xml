@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EmulateRecognizeCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EmulateRecognizeCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type EmulateRecognizeCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@ void sre_EmulateRecognizeCompleted(object sender, EmulateRecognizeCompletedEvent
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As RecognitionResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::RecognitionResult ^ Result { System::Speech::Recognition::RecognitionResult ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.Speech.Recognition.RecognitionResult" Usage="System.Speech.Recognition.EmulateRecognizeCompletedEventArgs.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

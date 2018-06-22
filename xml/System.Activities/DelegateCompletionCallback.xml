@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DelegateCompletionCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DelegateCompletionCallback(context As NativeActivityContext, completedInstance As ActivityInstance, outArguments As IDictionary(Of String, Object))" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DelegateCompletionCallback(NativeActivityContext ^ context, ActivityInstance ^ completedInstance, IDictionary&lt;System::String ^, System::Object ^&gt; ^ outArguments);" />
+  <TypeSignature Language="F#" Value="type DelegateCompletionCallback = delegate of NativeActivityContext * ActivityInstance * IDictionary&lt;string, obj&gt; -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

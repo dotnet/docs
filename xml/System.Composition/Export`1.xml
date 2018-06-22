@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Export`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Export(Of T)&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Export sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type Export&lt;'T&gt; = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Runtime</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Export`1.#ctor(`0,System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T, disposeAction As Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Export(T value, Action ^ disposeAction);" />
+      <MemberSignature Language="F#" Value="new System.Composition.Export&lt;'T&gt; : 'T * Action -&gt; System.Composition.Export&lt;'T&gt;" Usage="new System.Composition.Export&lt;'T&gt; (value, disposeAction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Export`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="export.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.Export`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="System.Composition.Export&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>

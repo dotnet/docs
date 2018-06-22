@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.PointLightBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PointLightBase&#xA;Inherits Light" />
   <TypeSignature Language="C++ CLI" Value="public ref class PointLightBase abstract : System::Windows::Media::Media3D::Light" />
+  <TypeSignature Language="F#" Value="type PointLightBase = class&#xA;    inherit Light" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PointLightBase.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As PointLightBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::PointLightBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.PointLightBase" Usage="pointLightBase.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PointLightBase.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PointLightBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::PointLightBase ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.PointLightBase" Usage="pointLightBase.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.PointLightBase.ConstantAttenuation" />
       <MemberSignature Language="VB.NET" Value="Public Property ConstantAttenuation As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ConstantAttenuation { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ConstantAttenuation : double with get, set" Usage="System.Windows.Media.Media3D.PointLightBase.ConstantAttenuation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.PointLightBase.ConstantAttenuationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConstantAttenuationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ConstantAttenuationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ConstantAttenuationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.PointLightBase.ConstantAttenuationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.PointLightBase.LinearAttenuation" />
       <MemberSignature Language="VB.NET" Value="Public Property LinearAttenuation As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LinearAttenuation { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.LinearAttenuation : double with get, set" Usage="System.Windows.Media.Media3D.PointLightBase.LinearAttenuation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.PointLightBase.LinearAttenuationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LinearAttenuationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LinearAttenuationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LinearAttenuationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.PointLightBase.LinearAttenuationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.PointLightBase.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Point3D Position { System::Windows::Media::Media3D::Point3D get(); void set(System::Windows::Media::Media3D::Point3D value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Windows.Media.Media3D.Point3D with get, set" Usage="System.Windows.Media.Media3D.PointLightBase.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.PointLightBase.PositionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PositionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PositionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PositionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.PointLightBase.PositionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.PointLightBase.QuadraticAttenuation" />
       <MemberSignature Language="VB.NET" Value="Public Property QuadraticAttenuation As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double QuadraticAttenuation { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.QuadraticAttenuation : double with get, set" Usage="System.Windows.Media.Media3D.PointLightBase.QuadraticAttenuation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -293,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.PointLightBase.QuadraticAttenuationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuadraticAttenuationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuadraticAttenuationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable QuadraticAttenuationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.PointLightBase.QuadraticAttenuationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -312,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.PointLightBase.Range" />
       <MemberSignature Language="VB.NET" Value="Public Property Range As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Range { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Range : double with get, set" Usage="System.Windows.Media.Media3D.PointLightBase.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.PointLightBase.RangeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RangeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RangeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RangeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.PointLightBase.RangeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

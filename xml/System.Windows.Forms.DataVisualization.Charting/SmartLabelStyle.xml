@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class SmartLabelStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class SmartLabelStyle" />
+  <TypeSignature Language="F#" Value="type SmartLabelStyle = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.AllowOutsidePlotArea" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowOutsidePlotArea As LabelOutsidePlotAreaStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LabelOutsidePlotAreaStyle AllowOutsidePlotArea { System::Windows::Forms::DataVisualization::Charting::LabelOutsidePlotAreaStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LabelOutsidePlotAreaStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowOutsidePlotArea : System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.AllowOutsidePlotArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CalloutBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CalloutBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CalloutLineAnchorCapStyle As LineAnchorCapStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle CalloutLineAnchorCapStyle { System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineAnchorCapStyle : System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineColor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CalloutLineColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CalloutLineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CalloutLineDashStyle As ChartDashStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle CalloutLineDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CalloutLineWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CalloutLineWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -264,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CalloutStyle As LabelCalloutStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle CalloutStyle { System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutStyle : System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -292,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -324,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.IsMarkerOverlappingAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsMarkerOverlappingAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMarkerOverlappingAllowed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsMarkerOverlappingAllowed : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.IsMarkerOverlappingAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -353,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.IsOverlappedHidden" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsOverlappedHidden As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsOverlappedHidden { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOverlappedHidden : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.IsOverlappedHidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -392,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MaxMovingDistance As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double MaxMovingDistance { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxMovingDistance : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -427,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MinMovingDistance As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double MinMovingDistance { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MinMovingDistance : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -462,6 +475,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MovingDirection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MovingDirection As LabelAlignmentStyles" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LabelAlignmentStyles MovingDirection { System::Windows::Forms::DataVisualization::Charting::LabelAlignmentStyles get(); void set(System::Windows::Forms::DataVisualization::Charting::LabelAlignmentStyles value); };" />
+      <MemberSignature Language="F#" Value="member this.MovingDirection : System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MovingDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

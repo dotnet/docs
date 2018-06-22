@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIEnumConnections" />
   <TypeSignature Language="VB.NET" Value="Public Interface UCOMIEnumConnections" />
   <TypeSignature Language="C++ CLI" Value="public interface class UCOMIEnumConnections" />
+  <TypeSignature Language="F#" Value="type UCOMIEnumConnections = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnections.Clone(System.Runtime.InteropServices.UCOMIEnumConnections@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As UCOMIEnumConnections)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIEnumConnections ^ % ppenum);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="uCOMIEnumConnections.Clone ppenum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnections.Next(System.Int32,System.Runtime.InteropServices.CONNECTDATA[],System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgelt As CONNECTDATA(), ByRef pceltFetched As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, cli::array &lt;System::Runtime::InteropServices::CONNECTDATA&gt; ^ rgelt, [Runtime::InteropServices::Out] int % pceltFetched);" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * System.Runtime.InteropServices.CONNECTDATA[] *  -&gt; int" Usage="uCOMIEnumConnections.Next (celt, rgelt, pceltFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnections.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="uCOMIEnumConnections.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnections.Skip(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; int" Usage="uCOMIEnumConnections.Skip celt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

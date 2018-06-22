@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.InputBin" />
   <TypeSignature Language="VB.NET" Value="Public Enum InputBin" />
   <TypeSignature Language="C++ CLI" Value="public enum class InputBin" />
+  <TypeSignature Language="F#" Value="type InputBin = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.AutoSelect" />
       <MemberSignature Language="VB.NET" Value="AutoSelect" />
       <MemberSignature Language="C++ CLI" Value="AutoSelect" />
+      <MemberSignature Language="F#" Value="AutoSelect = 1" Usage="System.Printing.InputBin.AutoSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.AutoSheetFeeder" />
       <MemberSignature Language="VB.NET" Value="AutoSheetFeeder" />
       <MemberSignature Language="C++ CLI" Value="AutoSheetFeeder" />
+      <MemberSignature Language="F#" Value="AutoSheetFeeder = 4" Usage="System.Printing.InputBin.AutoSheetFeeder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.Cassette" />
       <MemberSignature Language="VB.NET" Value="Cassette" />
       <MemberSignature Language="C++ CLI" Value="Cassette" />
+      <MemberSignature Language="F#" Value="Cassette = 2" Usage="System.Printing.InputBin.Cassette" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.Manual" />
       <MemberSignature Language="VB.NET" Value="Manual" />
       <MemberSignature Language="C++ CLI" Value="Manual" />
+      <MemberSignature Language="F#" Value="Manual = 5" Usage="System.Printing.InputBin.Manual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.Tractor" />
       <MemberSignature Language="VB.NET" Value="Tractor" />
       <MemberSignature Language="C++ CLI" Value="Tractor" />
+      <MemberSignature Language="F#" Value="Tractor = 3" Usage="System.Printing.InputBin.Tractor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.InputBin.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.InputBin.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

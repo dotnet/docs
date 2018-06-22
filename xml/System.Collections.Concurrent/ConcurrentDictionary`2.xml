@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.ConcurrentDictionary`2" />
   <TypeSignature Language="VB.NET" Value="Public Class ConcurrentDictionary(Of TKey, TValue)&#xA;Implements ICollection(Of KeyValuePair(Of TKey, TValue)), IDictionary, IDictionary(Of TKey, TValue), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue)), IReadOnlyDictionary(Of TKey, TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public ref class ConcurrentDictionary : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IDictionary&lt;TKey, TValue&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyCollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyDictionary&lt;TKey, TValue&gt;, System::Collections::IDictionary" />
+  <TypeSignature Language="F#" Value="type ConcurrentDictionary&lt;'Key, 'Value&gt; = class&#xA;    interface IDictionary&lt;'Key, 'Value&gt;&#xA;    interface IDictionary&#xA;    interface IReadOnlyDictionary&lt;'Key, 'Value&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of KeyValuePair(Of TKey, TValue)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -182,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IEqualityComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; comparer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -215,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}},System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of KeyValuePair(Of TKey, TValue)), comparer As IEqualityComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ collection, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; (collection, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -250,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (concurrencyLevel As Integer, capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(int concurrencyLevel, int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : int * int -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; (concurrencyLevel, capacity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -289,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}},System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (concurrencyLevel As Integer, collection As IEnumerable(Of KeyValuePair(Of TKey, TValue)), comparer As IEqualityComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(int concurrencyLevel, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ collection, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : int * seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; (concurrencyLevel, collection, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -330,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (concurrencyLevel As Integer, capacity As Integer, comparer As IEqualityComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(int concurrencyLevel, int capacity, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : int * int * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; (concurrencyLevel, capacity, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -390,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(`0,System.Func{`0,`1},System.Func{`0,`1,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOrUpdate (key As TKey, addValueFactory As Func(Of TKey, TValue), updateValueFactory As Func(Of TKey, TValue, TValue)) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue AddOrUpdate(TKey key, Func&lt;TKey, TValue&gt; ^ addValueFactory, Func&lt;TKey, TValue, TValue&gt; ^ updateValueFactory);" />
+      <MemberSignature Language="F#" Value="member this.AddOrUpdate : 'Key * Func&lt;'Key, 'Value&gt; * Func&lt;'Key, 'Value, 'Value&gt; -&gt; 'Value" Usage="concurrentDictionary.AddOrUpdate (key, addValueFactory, updateValueFactory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -439,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(`0,`1,System.Func{`0,`1,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOrUpdate (key As TKey, addValue As TValue, updateValueFactory As Func(Of TKey, TValue, TValue)) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue AddOrUpdate(TKey key, TValue addValue, Func&lt;TKey, TValue, TValue&gt; ^ updateValueFactory);" />
+      <MemberSignature Language="F#" Value="member this.AddOrUpdate : 'Key * 'Value * Func&lt;'Key, 'Value, 'Value&gt; -&gt; 'Value" Usage="concurrentDictionary.AddOrUpdate (key, addValue, updateValueFactory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -491,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate``1(`0,System.Func{`0,``0,`1},System.Func{`0,`1,``0,`1},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOrUpdate(Of TArg) (key As TKey, addValueFactory As Func(Of TKey, TArg, TValue), updateValueFactory As Func(Of TKey, TValue, TArg, TValue), factoryArgument As TArg) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg&gt;&#xA; TValue AddOrUpdate(TKey key, Func&lt;TKey, TArg, TValue&gt; ^ addValueFactory, Func&lt;TKey, TValue, TArg, TValue&gt; ^ updateValueFactory, TArg factoryArgument);" />
+      <MemberSignature Language="F#" Value="member this.AddOrUpdate : 'Key * Func&lt;'Key, 'Arg, 'Value&gt; * Func&lt;'Key, 'Value, 'Arg, 'Value&gt; * 'Arg -&gt; 'Value" Usage="concurrentDictionary.AddOrUpdate (key, addValueFactory, updateValueFactory, factoryArgument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -531,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="concurrentDictionary.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
@@ -566,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.ContainsKey(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As TKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(TKey key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : 'Key -&gt; bool&#xA;override this.ContainsKey : 'Key -&gt; bool" Usage="concurrentDictionary.ContainsKey key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
@@ -608,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -651,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of TKey, TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;" Usage="concurrentDictionary.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -714,6 +728,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,System.Func{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd (key As TKey, valueFactory As Func(Of TKey, TValue)) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue GetOrAdd(TKey key, Func&lt;TKey, TValue&gt; ^ valueFactory);" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : 'Key * Func&lt;'Key, 'Value&gt; -&gt; 'Value" Usage="concurrentDictionary.GetOrAdd (key, valueFactory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -769,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd (key As TKey, value As TValue) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue GetOrAdd(TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : 'Key * 'Value -&gt; 'Value" Usage="concurrentDictionary.GetOrAdd (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -809,6 +825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd``1(`0,System.Func{`0,``0,`1},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd(Of TArg) (key As TKey, valueFactory As Func(Of TKey, TArg, TValue), factoryArgument As TArg) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg&gt;&#xA; TValue GetOrAdd(TKey key, Func&lt;TKey, TArg, TValue&gt; ^ valueFactory, TArg factoryArgument);" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : 'Key * Func&lt;'Key, 'Arg, 'Value&gt; * 'Arg -&gt; 'Value" Usage="concurrentDictionary.GetOrAdd (key, valueFactory, factoryArgument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -845,6 +862,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -877,6 +895,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.Item(`0)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As TKey) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[TKey] { TValue get(TKey key); void set(TKey key, TValue value); };" />
+      <MemberSignature Language="F#" Value="member this.Item('Key) : 'Value with get, set" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -918,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of TKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;TKey&gt; ^ Keys { System::Collections::Generic::ICollection&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.ICollection&lt;'Key&gt;" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -1063,6 +1083,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1212,6 +1233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As IEnumerable(Of TKey) Implements IReadOnlyDictionary(Of TKey, TValue).Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Keys</InterfaceMember>
@@ -1245,6 +1267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As IEnumerable(Of TValue) Implements IReadOnlyDictionary(Of TKey, TValue).Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Values</InterfaceMember>
@@ -1326,6 +1349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1361,6 +1385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1524,6 +1549,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -1559,6 +1585,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -1594,6 +1621,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -1635,6 +1663,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -1708,6 +1737,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -1784,6 +1814,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As KeyValuePair(Of TKey, TValue)()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;[]" Usage="concurrentDictionary.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -1816,6 +1847,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryAdd(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAdd (key As TKey, value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAdd(TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="member this.TryAdd : 'Key * 'Value -&gt; bool" Usage="concurrentDictionary.TryAdd (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -1872,6 +1904,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryGetValue(`0,`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As TKey, ByRef value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : 'Key *  -&gt; bool&#xA;override this.TryGetValue : 'Key *  -&gt; bool" Usage="concurrentDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
@@ -1916,6 +1949,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryRemove(`0,`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryRemove (key As TKey, ByRef value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryRemove(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
+      <MemberSignature Language="F#" Value="member this.TryRemove : 'Key *  -&gt; bool" Usage="concurrentDictionary.TryRemove (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -1966,6 +2000,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryUpdate(`0,`1,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryUpdate (key As TKey, newValue As TValue, comparisonValue As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryUpdate(TKey key, TValue newValue, TValue comparisonValue);" />
+      <MemberSignature Language="F#" Value="member this.TryUpdate : 'Key * 'Value * 'Value -&gt; bool" Usage="concurrentDictionary.TryUpdate (key, newValue, comparisonValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -2018,6 +2053,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;TValue&gt; ^ Values { System::Collections::Generic::ICollection&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.ICollection&lt;'Value&gt;" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Debugger" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Debugger" />
   <TypeSignature Language="C++ CLI" Value="public ref class Debugger sealed" />
+  <TypeSignature Language="F#" Value="type Debugger = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Debug</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.Break" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Break ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Break();" />
+      <MemberSignature Language="F#" Value="static member Break : unit -&gt; unit" Usage="System.Diagnostics.Debugger.Break " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -123,6 +125,7 @@ Console.WriteLine("Hello, world.");
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Debugger.DefaultCategory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultCategory As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DefaultCategory;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultCategory : string" Usage="System.Diagnostics.Debugger.DefaultCategory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +162,7 @@ Console.WriteLine("Hello, world.");
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Debugger.IsAttached" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsAttached As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsAttached { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAttached : bool" Usage="System.Diagnostics.Debugger.IsAttached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -192,6 +196,7 @@ Console.WriteLine("Hello, world.");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.IsLogging" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLogging () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLogging();" />
+      <MemberSignature Language="F#" Value="static member IsLogging : unit -&gt; bool" Usage="System.Diagnostics.Debugger.IsLogging " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -224,6 +229,7 @@ Console.WriteLine("Hello, world.");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.Launch" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Launch () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Launch();" />
+      <MemberSignature Language="F#" Value="static member Launch : unit -&gt; bool" Usage="System.Diagnostics.Debugger.Launch " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -269,6 +275,7 @@ Console.WriteLine("Hello, world.");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.Log(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Log (level As Integer, category As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Log(int level, System::String ^ category, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member Log : int * string * string -&gt; unit" Usage="System.Diagnostics.Debugger.Log (level, category, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +323,7 @@ Console.WriteLine("Hello, world.");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.NotifyOfCrossThreadDependency" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub NotifyOfCrossThreadDependency ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void NotifyOfCrossThreadDependency();" />
+      <MemberSignature Language="F#" Value="static member NotifyOfCrossThreadDependency : unit -&gt; unit" Usage="System.Diagnostics.Debugger.NotifyOfCrossThreadDependency " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

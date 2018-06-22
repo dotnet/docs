@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BoundsSpecified" />
   <TypeSignature Language="VB.NET" Value="Public Enum BoundsSpecified" />
   <TypeSignature Language="C++ CLI" Value="public enum class BoundsSpecified" />
+  <TypeSignature Language="F#" Value="type BoundsSpecified = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 15" Usage="System.Windows.Forms.BoundsSpecified.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Height" />
       <MemberSignature Language="VB.NET" Value="Height" />
       <MemberSignature Language="C++ CLI" Value="Height" />
+      <MemberSignature Language="F#" Value="Height = 8" Usage="System.Windows.Forms.BoundsSpecified.Height" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Location" />
       <MemberSignature Language="VB.NET" Value="Location" />
       <MemberSignature Language="C++ CLI" Value="Location" />
+      <MemberSignature Language="F#" Value="Location = 3" Usage="System.Windows.Forms.BoundsSpecified.Location" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.BoundsSpecified.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Size" />
       <MemberSignature Language="VB.NET" Value="Size" />
       <MemberSignature Language="C++ CLI" Value="Size" />
+      <MemberSignature Language="F#" Value="Size = 12" Usage="System.Windows.Forms.BoundsSpecified.Size" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Width" />
       <MemberSignature Language="VB.NET" Value="Width" />
       <MemberSignature Language="C++ CLI" Value="Width" />
+      <MemberSignature Language="F#" Value="Width = 4" Usage="System.Windows.Forms.BoundsSpecified.Width" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -159,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.X" />
       <MemberSignature Language="VB.NET" Value="X" />
       <MemberSignature Language="C++ CLI" Value="X" />
+      <MemberSignature Language="F#" Value="X = 1" Usage="System.Windows.Forms.BoundsSpecified.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Y" />
       <MemberSignature Language="VB.NET" Value="Y" />
       <MemberSignature Language="C++ CLI" Value="Y" />
+      <MemberSignature Language="F#" Value="Y = 2" Usage="System.Windows.Forms.BoundsSpecified.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

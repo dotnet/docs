@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.HttpSessionStateContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpSessionStateContainer&#xA;Implements IHttpSessionState" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpSessionStateContainer : System::Web::SessionState::IHttpSessionState" />
+  <TypeSignature Language="F#" Value="type HttpSessionStateContainer = class&#xA;    interface IHttpSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.#ctor(System.String,System.Web.SessionState.ISessionStateItemCollection,System.Web.HttpStaticObjectsCollection,System.Int32,System.Boolean,System.Web.HttpCookieMode,System.Web.SessionState.SessionStateMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, sessionItems As ISessionStateItemCollection, staticObjects As HttpStaticObjectsCollection, timeout As Integer, newSession As Boolean, cookieMode As HttpCookieMode, mode As SessionStateMode, isReadonly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpSessionStateContainer(System::String ^ id, System::Web::SessionState::ISessionStateItemCollection ^ sessionItems, System::Web::HttpStaticObjectsCollection ^ staticObjects, int timeout, bool newSession, System::Web::HttpCookieMode cookieMode, System::Web::SessionState::SessionStateMode mode, bool isReadonly);" />
+      <MemberSignature Language="F#" Value="new System.Web.SessionState.HttpSessionStateContainer : string * System.Web.SessionState.ISessionStateItemCollection * System.Web.HttpStaticObjectsCollection * int * bool * System.Web.HttpCookieMode * System.Web.SessionState.SessionStateMode * bool -&gt; System.Web.SessionState.HttpSessionStateContainer" Usage="new System.Web.SessionState.HttpSessionStateContainer (id, sessionItems, staticObjects, timeout, newSession, cookieMode, mode, isReadonly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.Abandon" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abandon ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abandon();" />
+      <MemberSignature Language="F#" Value="abstract member Abandon : unit -&gt; unit&#xA;override this.Abandon : unit -&gt; unit" Usage="httpSessionStateContainer.Abandon " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.Abandon</InterfaceMember>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; unit&#xA;override this.Add : string * obj -&gt; unit" Usage="httpSessionStateContainer.Add (name, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.Add(System.String,System.Object)</InterfaceMember>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="httpSessionStateContainer.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.Clear</InterfaceMember>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.CodePage" />
       <MemberSignature Language="VB.NET" Value="Public Property CodePage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CodePage { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CodePage : int with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.CodePage" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.CodePage</InterfaceMember>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.CookieMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CookieMode As HttpCookieMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCookieMode CookieMode { System::Web::HttpCookieMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.CookieMode : System.Web.HttpCookieMode" Usage="System.Web.SessionState.HttpSessionStateContainer.CookieMode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.CookieMode</InterfaceMember>
@@ -241,6 +248,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="httpSessionStateContainer.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.SessionState.HttpSessionStateContainer.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Count</InterfaceMember>
@@ -292,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="httpSessionStateContainer.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.GetEnumerator</InterfaceMember>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbandoned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbandoned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAbandoned : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsAbandoned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -337,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsCookieless" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCookieless As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCookieless { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCookieless : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsCookieless" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.IsCookieless</InterfaceMember>
@@ -369,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsNewSession" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNewSession As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNewSession { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNewSession : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsNewSession" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.IsNewSession</InterfaceMember>
@@ -393,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.IsReadOnly</InterfaceMember>
@@ -417,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.IsSynchronized</InterfaceMember>
@@ -456,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Item(System.Int32)</InterfaceMember>
@@ -483,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); void set(System::String ^ name, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Item(System.String)</InterfaceMember>
@@ -510,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As NameObjectCollectionBase.KeysCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ Keys { System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" Usage="System.Web.SessionState.HttpSessionStateContainer.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Keys</InterfaceMember>
@@ -533,6 +551,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.LCID" />
       <MemberSignature Language="VB.NET" Value="Public Property LCID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LCID : int with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.LCID" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.LCID</InterfaceMember>
@@ -565,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Mode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As SessionStateMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SessionState::SessionStateMode Mode { System::Web::SessionState::SessionStateMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.SessionState.SessionStateMode" Usage="System.Web.SessionState.HttpSessionStateContainer.Mode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Mode</InterfaceMember>
@@ -595,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="httpSessionStateContainer.Remove name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.Remove(System.String)</InterfaceMember>
@@ -628,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.RemoveAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAll();" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAll : unit -&gt; unit&#xA;override this.RemoveAll : unit -&gt; unit" Usage="httpSessionStateContainer.RemoveAll " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.RemoveAll</InterfaceMember>
@@ -658,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="httpSessionStateContainer.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.RemoveAt(System.Int32)</InterfaceMember>
@@ -690,6 +713,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.SessionID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionID : string" Usage="System.Web.SessionState.HttpSessionStateContainer.SessionID" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.SessionID</InterfaceMember>
@@ -713,6 +737,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.StaticObjects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticObjects As HttpStaticObjectsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpStaticObjectsCollection ^ StaticObjects { System::Web::HttpStaticObjectsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StaticObjects : System.Web.HttpStaticObjectsCollection" Usage="System.Web.SessionState.HttpSessionStateContainer.StaticObjects" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.StaticObjects</InterfaceMember>
@@ -745,6 +770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.SessionState.HttpSessionStateContainer.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.SyncRoot</InterfaceMember>
@@ -768,6 +794,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.Timeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Timeout</InterfaceMember>

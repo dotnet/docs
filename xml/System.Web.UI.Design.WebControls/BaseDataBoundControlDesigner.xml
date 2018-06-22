@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseDataBoundControlDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseDataBoundControlDesigner abstract : System::Web::UI::Design::ControlDesigner" />
+  <TypeSignature Language="F#" Value="type BaseDataBoundControlDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.ConnectToDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ConnectToDataSource () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ConnectToDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member ConnectToDataSource : unit -&gt; bool" Usage="baseDataBoundControlDesigner.ConnectToDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.CreateDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub CreateDataSource ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void CreateDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member CreateDataSource : unit -&gt; unit" Usage="baseDataBoundControlDesigner.CreateDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DataBind (dataBoundControl As BaseDataBoundControl)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DataBind(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
+      <MemberSignature Language="F#" Value="abstract member DataBind : System.Web.UI.WebControls.BaseDataBoundControl -&gt; unit" Usage="baseDataBoundControlDesigner.DataBind dataBoundControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSource { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : string with get, set" Usage="System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSourceID" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSourceID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSourceID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSourceID : string with get, set" Usage="System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSourceID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DisconnectFromDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DisconnectFromDataSource ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DisconnectFromDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member DisconnectFromDataSource : unit -&gt; unit" Usage="baseDataBoundControlDesigner.DisconnectFromDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="baseDataBoundControlDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="baseDataBoundControlDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -300,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetEmptyDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEmptyDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetEmptyDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetEmptyDesignTimeHtml : unit -&gt; string" Usage="baseDataBoundControlDesigner.GetEmptyDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetErrorDesignTimeHtml (e As Exception) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetErrorDesignTimeHtml(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="override this.GetErrorDesignTimeHtml : Exception -&gt; string" Usage="baseDataBoundControlDesigner.GetErrorDesignTimeHtml e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -363,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="baseDataBoundControlDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -397,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.OnDataSourceChanged(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataSourceChanged (forceUpdateView As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataSourceChanged(bool forceUpdateView);" />
+      <MemberSignature Language="F#" Value="abstract member OnDataSourceChanged : bool -&gt; unit&#xA;override this.OnDataSourceChanged : bool -&gt; unit" Usage="baseDataBoundControlDesigner.OnDataSourceChanged forceUpdateView" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -436,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.OnSchemaRefreshed" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSchemaRefreshed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSchemaRefreshed();" />
+      <MemberSignature Language="F#" Value="abstract member OnSchemaRefreshed : unit -&gt; unit&#xA;override this.OnSchemaRefreshed : unit -&gt; unit" Usage="baseDataBoundControlDesigner.OnSchemaRefreshed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -465,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="baseDataBoundControlDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -505,6 +520,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult ShowCreateDataSourceDialog(class System.Web.UI.Design.ControlDesigner controlDesigner, class System.Type dataSourceType, bool configure, [out] string&amp; dataSourceID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.ShowCreateDataSourceDialog(System.Web.UI.Design.ControlDesigner,System.Type,System.Boolean,System.String@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult ShowCreateDataSourceDialog(System::Web::UI::Design::ControlDesigner ^ controlDesigner, Type ^ dataSourceType, bool configure, [Runtime::InteropServices::Out] System::String ^ % dataSourceID);" />
+      <MemberSignature Language="F#" Value="static member ShowCreateDataSourceDialog : System.Web.UI.Design.ControlDesigner * Type * bool *  -&gt; System.Windows.Forms.DialogResult" Usage="System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.ShowCreateDataSourceDialog (controlDesigner, dataSourceType, configure, dataSourceID)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

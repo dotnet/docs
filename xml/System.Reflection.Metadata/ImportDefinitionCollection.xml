@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ImportDefinitionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Structure ImportDefinitionCollection&#xA;Implements IEnumerable(Of ImportDefinition)" />
   <TypeSignature Language="C++ CLI" Value="public value class ImportDefinitionCollection : System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::ImportDefinition&gt;" />
+  <TypeSignature Language="F#" Value="type ImportDefinitionCollection = struct&#xA;    interface seq&lt;ImportDefinition&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ImportDefinitionCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ImportDefinitionCollection.Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ImportDefinitionCollection::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Reflection.Metadata.ImportDefinitionCollection.Enumerator" Usage="importDefinitionCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

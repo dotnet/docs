@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ShutdownMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ShutdownMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ShutdownMode" />
+  <TypeSignature Language="F#" Value="type ShutdownMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ShutdownMode.OnExplicitShutdown" />
       <MemberSignature Language="VB.NET" Value="OnExplicitShutdown" />
       <MemberSignature Language="C++ CLI" Value="OnExplicitShutdown" />
+      <MemberSignature Language="F#" Value="OnExplicitShutdown = 2" Usage="System.Windows.ShutdownMode.OnExplicitShutdown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ShutdownMode.OnLastWindowClose" />
       <MemberSignature Language="VB.NET" Value="OnLastWindowClose" />
       <MemberSignature Language="C++ CLI" Value="OnLastWindowClose" />
+      <MemberSignature Language="F#" Value="OnLastWindowClose = 0" Usage="System.Windows.ShutdownMode.OnLastWindowClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ShutdownMode.OnMainWindowClose" />
       <MemberSignature Language="VB.NET" Value="OnMainWindowClose" />
       <MemberSignature Language="C++ CLI" Value="OnMainWindowClose" />
+      <MemberSignature Language="F#" Value="OnMainWindowClose = 1" Usage="System.Windows.ShutdownMode.OnMainWindowClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

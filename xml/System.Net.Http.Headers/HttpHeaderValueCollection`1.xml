@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.HttpHeaderValueCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpHeaderValueCollection(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : classpublic ref class HttpHeaderValueCollection sealed : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type HttpHeaderValueCollection&lt;'T (requires 'T : null)&gt; = class&#xA;    interface ICollection&lt;'T (requires 'T : null)&gt;&#xA;    interface seq&lt;'T (requires 'T : null)&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; unit&#xA;override this.Add : 'T -&gt; unit" Usage="httpHeaderValueCollection.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="httpHeaderValueCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="httpHeaderValueCollection.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="httpHeaderValueCollection.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpHeaderValueCollection`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Net.Http.Headers.HttpHeaderValueCollection&lt;'T (requires 'T : null)&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T (requires 'T : null)&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T (requires 'T : null)&gt;" Usage="httpHeaderValueCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -264,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpHeaderValueCollection`1.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Net.Http.Headers.HttpHeaderValueCollection&lt;'T (requires 'T : null)&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.ParseAdd(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ParseAdd (input As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ParseAdd(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="member this.ParseAdd : string -&gt; unit" Usage="httpHeaderValueCollection.ParseAdd input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -327,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="httpHeaderValueCollection.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -395,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="httpHeaderValueCollection.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -424,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.TryParseAdd(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryParseAdd (input As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryParseAdd(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="member this.TryParseAdd : string -&gt; bool" Usage="httpHeaderValueCollection.TryParseAdd input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

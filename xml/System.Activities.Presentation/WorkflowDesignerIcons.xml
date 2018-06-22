@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesignerIcons" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowDesignerIcons" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDesignerIcons abstract sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowDesignerIcons = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesignerIcons.UseWindowsStoreAppStyleIcons" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UseWindowsStoreAppStyleIcons ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UseWindowsStoreAppStyleIcons();" />
+      <MemberSignature Language="F#" Value="static member UseWindowsStoreAppStyleIcons : unit -&gt; unit" Usage="System.Activities.Presentation.WorkflowDesignerIcons.UseWindowsStoreAppStyleIcons " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

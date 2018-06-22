@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.VoiceAge" />
   <TypeSignature Language="VB.NET" Value="Public Enum VoiceAge" />
   <TypeSignature Language="C++ CLI" Value="public enum class VoiceAge" />
+  <TypeSignature Language="F#" Value="type VoiceAge = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Adult" />
       <MemberSignature Language="VB.NET" Value="Adult" />
       <MemberSignature Language="C++ CLI" Value="Adult" />
+      <MemberSignature Language="F#" Value="Adult = 30" Usage="System.Speech.Synthesis.VoiceAge.Adult" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Child" />
       <MemberSignature Language="VB.NET" Value="Child" />
       <MemberSignature Language="C++ CLI" Value="Child" />
+      <MemberSignature Language="F#" Value="Child = 10" Usage="System.Speech.Synthesis.VoiceAge.Child" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Speech.Synthesis.VoiceAge.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Senior" />
       <MemberSignature Language="VB.NET" Value="Senior" />
       <MemberSignature Language="C++ CLI" Value="Senior" />
+      <MemberSignature Language="F#" Value="Senior = 65" Usage="System.Speech.Synthesis.VoiceAge.Senior" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Teen" />
       <MemberSignature Language="VB.NET" Value="Teen" />
       <MemberSignature Language="C++ CLI" Value="Teen" />
+      <MemberSignature Language="F#" Value="Teen = 15" Usage="System.Speech.Synthesis.VoiceAge.Teen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

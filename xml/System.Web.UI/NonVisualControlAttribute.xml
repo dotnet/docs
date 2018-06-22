@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.NonVisualControlAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NonVisualControlAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class NonVisualControlAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type NonVisualControlAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.NonVisualControlAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nonVisual As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NonVisualControlAttribute(bool nonVisual);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.NonVisualControlAttribute : bool -&gt; System.Web.UI.NonVisualControlAttribute" Usage="new System.Web.UI.NonVisualControlAttribute nonVisual" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.NonVisualControlAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As NonVisualControlAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::NonVisualControlAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.NonVisualControlAttribute" Usage="System.Web.UI.NonVisualControlAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.NonVisualControlAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="nonVisualControlAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.NonVisualControlAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="nonVisualControlAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.NonVisualControlAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="nonVisualControlAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.NonVisualControlAttribute.IsNonVisual" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNonVisual As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNonVisual { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNonVisual : bool" Usage="System.Web.UI.NonVisualControlAttribute.IsNonVisual" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.NonVisualControlAttribute.NonVisual" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NonVisual As NonVisualControlAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::NonVisualControlAttribute ^ NonVisual;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NonVisual : System.Web.UI.NonVisualControlAttribute" Usage="System.Web.UI.NonVisualControlAttribute.NonVisual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.NonVisualControlAttribute.Visual" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Visual As NonVisualControlAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::NonVisualControlAttribute ^ Visual;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Visual : System.Web.UI.NonVisualControlAttribute" Usage="System.Web.UI.NonVisualControlAttribute.Visual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.PermissionRequestEvidence" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PermissionRequestEvidence&#xA;Inherits EvidenceBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class PermissionRequestEvidence sealed : System::Security::Policy::EvidenceBase" />
+  <TypeSignature Language="F#" Value="type PermissionRequestEvidence = class&#xA;    inherit EvidenceBase" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PermissionRequestEvidence.#ctor(System.Security.PermissionSet,System.Security.PermissionSet,System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (request As PermissionSet, optional As PermissionSet, denied As PermissionSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PermissionRequestEvidence(System::Security::PermissionSet ^ request, System::Security::PermissionSet ^ optional, System::Security::PermissionSet ^ denied);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.PermissionRequestEvidence : System.Security.PermissionSet * System.Security.PermissionSet * System.Security.PermissionSet -&gt; System.Security.Policy.PermissionRequestEvidence" Usage="new System.Security.Policy.PermissionRequestEvidence (request, optional, denied)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PermissionRequestEvidence.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::EvidenceBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Policy.EvidenceBase" Usage="permissionRequestEvidence.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PermissionRequestEvidence.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As PermissionRequestEvidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::PermissionRequestEvidence ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; System.Security.Policy.PermissionRequestEvidence" Usage="permissionRequestEvidence.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PermissionRequestEvidence.DeniedPermissions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeniedPermissions As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PermissionSet ^ DeniedPermissions { System::Security::PermissionSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeniedPermissions : System.Security.PermissionSet" Usage="System.Security.Policy.PermissionRequestEvidence.DeniedPermissions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PermissionRequestEvidence.OptionalPermissions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OptionalPermissions As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PermissionSet ^ OptionalPermissions { System::Security::PermissionSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OptionalPermissions : System.Security.PermissionSet" Usage="System.Security.Policy.PermissionRequestEvidence.OptionalPermissions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PermissionRequestEvidence.RequestedPermissions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestedPermissions As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PermissionSet ^ RequestedPermissions { System::Security::PermissionSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedPermissions : System.Security.PermissionSet" Usage="System.Security.Policy.PermissionRequestEvidence.RequestedPermissions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PermissionRequestEvidence.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="permissionRequestEvidence.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

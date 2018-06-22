@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionMorphHelperAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpressionMorphHelperAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ExpressionMorphHelperAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expressionMorphHelperType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpressionMorphHelperAttribute(Type ^ expressionMorphHelperType);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute : Type -&gt; System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute" Usage="new System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute expressionMorphHelperType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute.ExpressionMorphHelperType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionMorphHelperType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ExpressionMorphHelperType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionMorphHelperType : Type" Usage="System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute.ExpressionMorphHelperType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

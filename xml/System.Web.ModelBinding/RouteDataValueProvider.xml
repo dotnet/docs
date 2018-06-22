@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.RouteDataValueProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RouteDataValueProvider&#xA;Inherits DictionaryValueProvider(Of Object)" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteDataValueProvider sealed : System::Web::ModelBinding::DictionaryValueProvider&lt;System::Object ^&gt;" />
+  <TypeSignature Language="F#" Value="type RouteDataValueProvider = class&#xA;    inherit DictionaryValueProvider&lt;obj&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RouteDataValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteDataValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.RouteDataValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.RouteDataValueProvider" Usage="new System.Web.ModelBinding.RouteDataValueProvider modelBindingExecutionContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

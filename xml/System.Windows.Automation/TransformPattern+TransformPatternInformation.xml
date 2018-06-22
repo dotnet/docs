@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TransformPattern.TransformPatternInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure TransformPattern.TransformPatternInformation" />
   <TypeSignature Language="C++ CLI" Value="public: value class TransformPattern::TransformPatternInformation" />
+  <TypeSignature Language="F#" Value="type TransformPattern.TransformPatternInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TransformPattern.TransformPatternInformation.CanMove" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanMove As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanMove { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanMove : bool" Usage="System.Windows.Automation.TransformPattern.TransformPatternInformation.CanMove" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TransformPattern.TransformPatternInformation.CanResize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanResize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanResize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanResize : bool" Usage="System.Windows.Automation.TransformPattern.TransformPatternInformation.CanResize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TransformPattern.TransformPatternInformation.CanRotate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRotate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRotate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRotate : bool" Usage="System.Windows.Automation.TransformPattern.TransformPatternInformation.CanRotate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

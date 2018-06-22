@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ConnectionState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConnectionState" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConnectionState" />
+  <TypeSignature Language="F#" Value="type ConnectionState = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConnectionState.Broken" />
       <MemberSignature Language="VB.NET" Value="Broken" />
       <MemberSignature Language="C++ CLI" Value="Broken" />
+      <MemberSignature Language="F#" Value="Broken = 16" Usage="System.Data.ConnectionState.Broken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConnectionState.Closed" />
       <MemberSignature Language="VB.NET" Value="Closed" />
       <MemberSignature Language="C++ CLI" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 0" Usage="System.Data.ConnectionState.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConnectionState.Connecting" />
       <MemberSignature Language="VB.NET" Value="Connecting" />
       <MemberSignature Language="C++ CLI" Value="Connecting" />
+      <MemberSignature Language="F#" Value="Connecting = 2" Usage="System.Data.ConnectionState.Connecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConnectionState.Executing" />
       <MemberSignature Language="VB.NET" Value="Executing" />
       <MemberSignature Language="C++ CLI" Value="Executing" />
+      <MemberSignature Language="F#" Value="Executing = 4" Usage="System.Data.ConnectionState.Executing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConnectionState.Fetching" />
       <MemberSignature Language="VB.NET" Value="Fetching" />
       <MemberSignature Language="C++ CLI" Value="Fetching" />
+      <MemberSignature Language="F#" Value="Fetching = 8" Usage="System.Data.ConnectionState.Fetching" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConnectionState.Open" />
       <MemberSignature Language="VB.NET" Value="Open" />
       <MemberSignature Language="C++ CLI" Value="Open" />
+      <MemberSignature Language="F#" Value="Open = 1" Usage="System.Data.ConnectionState.Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

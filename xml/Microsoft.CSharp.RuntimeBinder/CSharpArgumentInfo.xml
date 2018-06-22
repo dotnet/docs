@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CSharpArgumentInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class CSharpArgumentInfo sealed" />
+  <TypeSignature Language="F#" Value="type CSharpArgumentInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.CSharp</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create(Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (flags As CSharpArgumentInfoFlags, name As String) As CSharpArgumentInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^ Create(Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfoFlags flags, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member Create : Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags * string -&gt; Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create (flags, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>

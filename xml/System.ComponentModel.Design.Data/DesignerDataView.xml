@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataView" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerDataView&#xA;Inherits DesignerDataTableBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataView abstract : System::ComponentModel::Design::Data::DesignerDataTableBase" />
+  <TypeSignature Language="F#" Value="type DesignerDataView = class&#xA;    inherit DesignerDataTableBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataView.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataView(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataView : string -&gt; System.ComponentModel.Design.Data.DesignerDataView" Usage="new System.ComponentModel.Design.Data.DesignerDataView name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataView.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, owner As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataView(System::String ^ name, System::String ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataView : string * string -&gt; System.ComponentModel.Design.Data.DesignerDataView" Usage="new System.ComponentModel.Design.Data.DesignerDataView (name, owner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

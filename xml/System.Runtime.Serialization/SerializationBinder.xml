@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SerializationBinder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SerializationBinder" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerializationBinder abstract" />
+  <TypeSignature Language="F#" Value="type SerializationBinder = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationBinder.BindToName(System.Type,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BindToName (serializedType As Type, ByRef assemblyName As String, ByRef typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BindToName(Type ^ serializedType, [Runtime::InteropServices::Out] System::String ^ % assemblyName, [Runtime::InteropServices::Out] System::String ^ % typeName);" />
+      <MemberSignature Language="F#" Value="abstract member BindToName : Type *  *  -&gt; unit&#xA;override this.BindToName : Type *  *  -&gt; unit" Usage="serializationBinder.BindToName (serializedType, assemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationBinder.BindToType(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BindToType (assemblyName As String, typeName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ BindToType(System::String ^ assemblyName, System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="abstract member BindToType : string * string -&gt; Type" Usage="serializationBinder.BindToType (assemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

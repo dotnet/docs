@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectMaterializedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectMaterializedEventHandler(sender As Object, e As ObjectMaterializedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ObjectMaterializedEventHandler(System::Object ^ sender, ObjectMaterializedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ObjectMaterializedEventHandler = delegate of obj * ObjectMaterializedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

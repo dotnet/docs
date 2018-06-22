@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.ProjectionCamera" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProjectionCamera&#xA;Inherits Camera" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectionCamera abstract : System::Windows::Media::Media3D::Camera" />
+  <TypeSignature Language="F#" Value="type ProjectionCamera = class&#xA;    inherit Camera" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ProjectionCamera.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ProjectionCamera" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::ProjectionCamera ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.ProjectionCamera" Usage="projectionCamera.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ProjectionCamera.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As ProjectionCamera" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::ProjectionCamera ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.ProjectionCamera" Usage="projectionCamera.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistance" />
       <MemberSignature Language="VB.NET" Value="Public Property FarPlaneDistance As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FarPlaneDistance { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.FarPlaneDistance : double with get, set" Usage="System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistanceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FarPlaneDistanceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FarPlaneDistanceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FarPlaneDistanceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistanceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ProjectionCamera.LookDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property LookDirection As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3D LookDirection { System::Windows::Media::Media3D::Vector3D get(); void set(System::Windows::Media::Media3D::Vector3D value); };" />
+      <MemberSignature Language="F#" Value="member this.LookDirection : System.Windows.Media.Media3D.Vector3D with get, set" Usage="System.Windows.Media.Media3D.ProjectionCamera.LookDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ProjectionCamera.LookDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LookDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LookDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LookDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.ProjectionCamera.LookDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistance" />
       <MemberSignature Language="VB.NET" Value="Public Property NearPlaneDistance As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NearPlaneDistance { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.NearPlaneDistance : double with get, set" Usage="System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistanceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NearPlaneDistanceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NearPlaneDistanceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NearPlaneDistanceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistanceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ProjectionCamera.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Point3D Position { System::Windows::Media::Media3D::Point3D get(); void set(System::Windows::Media::Media3D::Point3D value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Windows.Media.Media3D.Point3D with get, set" Usage="System.Windows.Media.Media3D.ProjectionCamera.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ProjectionCamera.PositionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PositionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PositionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PositionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.ProjectionCamera.PositionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -313,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ProjectionCamera.UpDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property UpDirection As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3D UpDirection { System::Windows::Media::Media3D::Vector3D get(); void set(System::Windows::Media::Media3D::Vector3D value); };" />
+      <MemberSignature Language="F#" Value="member this.UpDirection : System.Windows.Media.Media3D.Vector3D with get, set" Usage="System.Windows.Media.Media3D.ProjectionCamera.UpDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ProjectionCamera.UpDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UpDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UpDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UpDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.ProjectionCamera.UpDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MemberReferenceKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum MemberReferenceKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class MemberReferenceKind" />
+  <TypeSignature Language="F#" Value="type MemberReferenceKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MemberReferenceKind.Field" />
       <MemberSignature Language="VB.NET" Value="Field" />
       <MemberSignature Language="C++ CLI" Value="Field" />
+      <MemberSignature Language="F#" Value="Field = 1" Usage="System.Reflection.Metadata.MemberReferenceKind.Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MemberReferenceKind.Method" />
       <MemberSignature Language="VB.NET" Value="Method" />
       <MemberSignature Language="C++ CLI" Value="Method" />
+      <MemberSignature Language="F#" Value="Method = 0" Usage="System.Reflection.Metadata.MemberReferenceKind.Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

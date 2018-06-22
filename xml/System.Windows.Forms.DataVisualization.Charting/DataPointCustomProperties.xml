@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class DataPointCustomProperties&#xA;Inherits ChartNamedElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataPointCustomProperties : System::Windows::Forms::DataVisualization::Charting::ChartNamedElement" />
+  <TypeSignature Language="F#" Value="type DataPointCustomProperties = class&#xA;    inherit ChartNamedElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Series series, bool pointProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.#ctor(System.Windows.Forms.DataVisualization.Charting.Series,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPointCustomProperties(System::Windows::Forms::DataVisualization::Charting::Series ^ series, bool pointProperties);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties : System.Windows.Forms.DataVisualization.Charting.Series * bool -&gt; System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties (series, pointProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.AxisLabel" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AxisLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AxisLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AxisLabel : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.AxisLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackGradientStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BackGradientStyle As GradientStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::GradientStyle BackGradientStyle { System::Windows::Forms::DataVisualization::Charting::GradientStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::GradientStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Windows.Forms.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackHatchStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BackHatchStyle As ChartHatchStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle BackHatchStyle { System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackImage" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackImage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImage : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackImageAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageAlignment As ChartImageAlignmentStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartImageAlignmentStyle BackImageAlignment { System::Windows::Forms::DataVisualization::Charting::ChartImageAlignmentStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartImageAlignmentStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageAlignment : System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackImageAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -240,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackImageTransparentColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageTransparentColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackImageTransparentColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackImageWrapMode" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageWrapMode As ChartImageWrapMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartImageWrapMode BackImageWrapMode { System::Windows::Forms::DataVisualization::Charting::ChartImageWrapMode get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartImageWrapMode value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageWrapMode : System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackImageWrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackSecondaryColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackSecondaryColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackSecondaryColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BorderDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderDashStyle As ChartDashStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle BorderDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BorderDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -386,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BorderWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -411,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color Color { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -442,6 +456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.CustomProperties" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomProperties As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomProperties { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomProperties : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.CustomProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -473,6 +488,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.CustomPropertiesExtended" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomPropertiesExtended As CustomProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::CustomProperties ^ CustomPropertiesExtended { System::Windows::Forms::DataVisualization::Charting::CustomProperties ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::CustomProperties ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomPropertiesExtended : System.Windows.Forms.DataVisualization.Charting.CustomProperties with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.CustomPropertiesExtended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -519,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.DeleteCustomProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteCustomProperty (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteCustomProperty(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteCustomProperty : string -&gt; unit&#xA;override this.DeleteCustomProperty : string -&gt; unit" Usage="dataPointCustomProperties.DeleteCustomProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -542,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -567,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.GetCustomProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCustomProperty (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetCustomProperty(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomProperty : string -&gt; string&#xA;override this.GetCustomProperty : string -&gt; string" Usage="dataPointCustomProperties.GetCustomProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -591,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.IsCustomPropertySet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsCustomPropertySet (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsCustomPropertySet(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member IsCustomPropertySet : string -&gt; bool&#xA;override this.IsCustomPropertySet : string -&gt; bool" Usage="dataPointCustomProperties.IsCustomPropertySet name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -616,6 +636,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.IsValueShownAsLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property IsValueShownAsLabel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueShownAsLabel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsValueShownAsLabel : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.IsValueShownAsLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -642,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.IsVisibleInLegend" />
       <MemberSignature Language="VB.NET" Value="Public Property IsVisibleInLegend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVisibleInLegend { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsVisibleInLegend : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.IsVisibleInLegend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -677,6 +699,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[int] { System::String ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : string" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -701,6 +724,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ name); void set(System::String ^ name, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -725,6 +749,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Label" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -753,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelAngle" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelAngle As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LabelAngle { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelAngle : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelAngle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -778,6 +804,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LabelBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -812,6 +839,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelBorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelBorderColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LabelBorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelBorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelBorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -846,6 +874,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelBorderDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelBorderDashStyle As ChartDashStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle LabelBorderDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelBorderDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelBorderDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -871,6 +900,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelBorderWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LabelBorderWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelBorderWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -896,6 +926,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LabelForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -927,6 +958,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LabelFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelFormat : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -952,6 +984,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelToolTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LabelToolTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelToolTip : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LabelToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -980,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText" />
       <MemberSignature Language="VB.NET" Value="Public Property LegendText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegendText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LegendText : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1008,6 +1042,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property LegendToolTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegendToolTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LegendToolTip : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1036,6 +1071,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerBorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerBorderColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color MarkerBorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerBorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerBorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1070,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerBorderWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerBorderWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerBorderWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1095,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color MarkerColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1129,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerImage" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerImage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MarkerImage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerImage : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1160,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerImageTransparentColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerImageTransparentColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color MarkerImageTransparentColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1194,6 +1234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerSize : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1222,6 +1263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerStyle As MarkerStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::MarkerStyle MarkerStyle { System::Windows::Forms::DataVisualization::Charting::MarkerStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::MarkerStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerStyle : System.Windows.Forms.DataVisualization.Charting.MarkerStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.MarkerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1253,6 +1295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.ResetIsValueShownAsLabel" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIsValueShownAsLabel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIsValueShownAsLabel();" />
+      <MemberSignature Language="F#" Value="member this.ResetIsValueShownAsLabel : unit -&gt; unit" Usage="dataPointCustomProperties.ResetIsValueShownAsLabel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1273,6 +1316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.ResetIsVisibleInLegend" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIsVisibleInLegend ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIsVisibleInLegend();" />
+      <MemberSignature Language="F#" Value="member this.ResetIsVisibleInLegend : unit -&gt; unit" Usage="dataPointCustomProperties.ResetIsVisibleInLegend " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1293,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.SetCustomProperty(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetCustomProperty (name As String, propertyValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetCustomProperty(System::String ^ name, System::String ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetCustomProperty : string * string -&gt; unit&#xA;override this.SetCustomProperty : string * string -&gt; unit" Usage="dataPointCustomProperties.SetCustomProperty (name, propertyValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1318,6 +1363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.SetDefault(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDefault (clearAll As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDefault(bool clearAll);" />
+      <MemberSignature Language="F#" Value="abstract member SetDefault : bool -&gt; unit&#xA;override this.SetDefault : bool -&gt; unit" Usage="dataPointCustomProperties.SetDefault clearAll" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1348,6 +1394,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.ToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

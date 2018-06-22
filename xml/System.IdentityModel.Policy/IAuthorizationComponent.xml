@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAuthorizationComponent" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAuthorizationComponent" />
+  <TypeSignature Language="F#" Value="type IAuthorizationComponent = interface" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.IAuthorizationComponent.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.IdentityModel.Policy.IAuthorizationComponent.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

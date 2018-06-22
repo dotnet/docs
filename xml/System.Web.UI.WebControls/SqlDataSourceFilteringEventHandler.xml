@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SqlDataSourceFilteringEventHandler(sender As Object, e As SqlDataSourceFilteringEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SqlDataSourceFilteringEventHandler(System::Object ^ sender, SqlDataSourceFilteringEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceFilteringEventHandler = delegate of obj * SqlDataSourceFilteringEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

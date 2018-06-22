@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InitializationEventAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InitializationEventAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InitializationEventAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type InitializationEventAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InitializationEventAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InitializationEventAttribute(System::String ^ eventName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.InitializationEventAttribute : string -&gt; System.ComponentModel.InitializationEventAttribute" Usage="new System.ComponentModel.InitializationEventAttribute eventName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.InitializationEventAttribute.EventName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventName : string" Usage="System.ComponentModel.InitializationEventAttribute.EventName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

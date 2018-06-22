@@ -40,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
+      <MemberSignature Language="F#" Value="member this.Abort : unit -&gt; unit" Usage="workflowInstanceControl.Abort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort (reason As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(Exception ^ reason);" />
+      <MemberSignature Language="F#" Value="member this.Abort : Exception -&gt; unit" Usage="workflowInstanceControl.Abort reason" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.BeginFlushTrackingRecords(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginFlushTrackingRecords (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFlushTrackingRecords(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginFlushTrackingRecords : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInstanceControl.BeginFlushTrackingRecords (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.EndFlushTrackingRecords(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndFlushTrackingRecords (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndFlushTrackingRecords(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndFlushTrackingRecords : IAsyncResult -&gt; unit" Usage="workflowInstanceControl.EndFlushTrackingRecords result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="workflowInstanceControl.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.FlushTrackingRecords(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FlushTrackingRecords (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FlushTrackingRecords(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.FlushTrackingRecords : TimeSpan -&gt; unit" Usage="workflowInstanceControl.FlushTrackingRecords timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetAbortReason" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAbortReason () As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Exception ^ GetAbortReason();" />
+      <MemberSignature Language="F#" Value="member this.GetAbortReason : unit -&gt; Exception" Usage="workflowInstanceControl.GetAbortReason " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetBookmarks" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBookmarks () As ReadOnlyCollection(Of BookmarkInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Hosting::BookmarkInfo ^&gt; ^ GetBookmarks();" />
+      <MemberSignature Language="F#" Value="member this.GetBookmarks : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt;" Usage="workflowInstanceControl.GetBookmarks " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetBookmarks(System.Activities.BookmarkScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBookmarks (scope As BookmarkScope) As ReadOnlyCollection(Of BookmarkInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Hosting::BookmarkInfo ^&gt; ^ GetBookmarks(System::Activities::BookmarkScope ^ scope);" />
+      <MemberSignature Language="F#" Value="member this.GetBookmarks : System.Activities.BookmarkScope -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt;" Usage="workflowInstanceControl.GetBookmarks scope" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCompletionState () As ActivityInstanceState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::ActivityInstanceState GetCompletionState();" />
+      <MemberSignature Language="F#" Value="member this.GetCompletionState : unit -&gt; System.Activities.ActivityInstanceState" Usage="workflowInstanceControl.GetCompletionState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState(System.Exception@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCompletionState (ByRef terminationException As Exception) As ActivityInstanceState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::ActivityInstanceState GetCompletionState([Runtime::InteropServices::Out] Exception ^ % terminationException);" />
+      <MemberSignature Language="F#" Value="member this.GetCompletionState :  -&gt; System.Activities.ActivityInstanceState" Usage="workflowInstanceControl.GetCompletionState terminationException" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -325,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState(System.Collections.Generic.IDictionary{System.String,System.Object}@,System.Exception@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCompletionState (ByRef outputs As IDictionary(Of String, Object), ByRef terminationException As Exception) As ActivityInstanceState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::ActivityInstanceState GetCompletionState([Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ % outputs, [Runtime::InteropServices::Out] Exception ^ % terminationException);" />
+      <MemberSignature Language="F#" Value="member this.GetCompletionState :  *  -&gt; System.Activities.ActivityInstanceState" Usage="workflowInstanceControl.GetCompletionState (outputs, terminationException)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -351,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="workflowInstanceControl.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -372,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetMappedVariables" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMappedVariables () As IDictionary(Of String, LocationInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::Hosting::LocationInfo ^&gt; ^ GetMappedVariables();" />
+      <MemberSignature Language="F#" Value="member this.GetMappedVariables : unit -&gt; System.Collections.Generic.IDictionary&lt;string, System.Activities.Hosting.LocationInfo&gt;" Usage="workflowInstanceControl.GetMappedVariables " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -393,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.HasPendingTrackingRecords" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPendingTrackingRecords As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPendingTrackingRecords { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasPendingTrackingRecords : bool" Usage="System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.HasPendingTrackingRecords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -414,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.IsPersistable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPersistable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPersistable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPersistable : bool" Usage="System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.IsPersistable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -435,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Equality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl,System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As WorkflowInstance.WorkflowInstanceControl, right As WorkflowInstance.WorkflowInstanceControl) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Activities::Hosting::WorkflowInstance::WorkflowInstanceControl left, System::Activities::Hosting::WorkflowInstance::WorkflowInstanceControl right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl * System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -462,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Inequality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl,System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As WorkflowInstance.WorkflowInstanceControl, right As WorkflowInstance.WorkflowInstanceControl) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Activities::Hosting::WorkflowInstance::WorkflowInstanceControl left, System::Activities::Hosting::WorkflowInstance::WorkflowInstanceControl right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl * System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl -&gt; bool" Usage="System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -489,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.PauseWhenPersistable" />
       <MemberSignature Language="VB.NET" Value="Public Sub PauseWhenPersistable ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PauseWhenPersistable();" />
+      <MemberSignature Language="F#" Value="member this.PauseWhenPersistable : unit -&gt; unit" Usage="workflowInstanceControl.PauseWhenPersistable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -509,6 +528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.PrepareForSerialization" />
       <MemberSignature Language="VB.NET" Value="Public Function PrepareForSerialization () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ PrepareForSerialization();" />
+      <MemberSignature Language="F#" Value="member this.PrepareForSerialization : unit -&gt; obj" Usage="workflowInstanceControl.PrepareForSerialization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -530,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.RequestPause" />
       <MemberSignature Language="VB.NET" Value="Public Sub RequestPause ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequestPause();" />
+      <MemberSignature Language="F#" Value="member this.RequestPause : unit -&gt; unit" Usage="workflowInstanceControl.RequestPause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -550,6 +571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run" />
       <MemberSignature Language="VB.NET" Value="Public Sub Run ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Run();" />
+      <MemberSignature Language="F#" Value="member this.Run : unit -&gt; unit" Usage="workflowInstanceControl.Run " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -578,6 +600,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ScheduleBookmarkResumption(class System.Activities.Bookmark bookmark, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleBookmarkResumption(System.Activities.Bookmark,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::BookmarkResumptionResult ScheduleBookmarkResumption(System::Activities::Bookmark ^ bookmark, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ScheduleBookmarkResumption : System.Activities.Bookmark * obj -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowInstanceControl.ScheduleBookmarkResumption (bookmark, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -603,6 +626,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ScheduleBookmarkResumption(class System.Activities.Bookmark bookmark, object value, class System.Activities.BookmarkScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleBookmarkResumption(System.Activities.Bookmark,System.Object,System.Activities.BookmarkScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::BookmarkResumptionResult ScheduleBookmarkResumption(System::Activities::Bookmark ^ bookmark, System::Object ^ value, System::Activities::BookmarkScope ^ scope);" />
+      <MemberSignature Language="F#" Value="member this.ScheduleBookmarkResumption : System.Activities.Bookmark * obj * System.Activities.BookmarkScope -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowInstanceControl.ScheduleBookmarkResumption (bookmark, value, scope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -631,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleCancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScheduleCancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleCancel();" />
+      <MemberSignature Language="F#" Value="member this.ScheduleCancel : unit -&gt; unit" Usage="workflowInstanceControl.ScheduleCancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -658,6 +683,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As WorkflowInstanceState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Hosting::WorkflowInstanceState State { System::Activities::Hosting::WorkflowInstanceState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Activities.Hosting.WorkflowInstanceState" Usage="System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -678,6 +704,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Terminate(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Terminate (reason As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(Exception ^ reason);" />
+      <MemberSignature Language="F#" Value="member this.Terminate : Exception -&gt; unit" Usage="workflowInstanceControl.Terminate reason" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -701,6 +728,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Track(System.Activities.Tracking.WorkflowInstanceRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Track (instanceRecord As WorkflowInstanceRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Track(System::Activities::Tracking::WorkflowInstanceRecord ^ instanceRecord);" />
+      <MemberSignature Language="F#" Value="member this.Track : System.Activities.Tracking.WorkflowInstanceRecord -&gt; unit" Usage="workflowInstanceControl.Track instanceRecord" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -724,6 +752,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.TrackingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrackingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrackingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrackingEnabled : bool" Usage="System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.TrackingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

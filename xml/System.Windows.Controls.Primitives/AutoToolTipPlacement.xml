@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.AutoToolTipPlacement" />
   <TypeSignature Language="VB.NET" Value="Public Enum AutoToolTipPlacement" />
   <TypeSignature Language="C++ CLI" Value="public enum class AutoToolTipPlacement" />
+  <TypeSignature Language="F#" Value="type AutoToolTipPlacement = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.AutoToolTipPlacement.BottomRight" />
       <MemberSignature Language="VB.NET" Value="BottomRight" />
       <MemberSignature Language="C++ CLI" Value="BottomRight" />
+      <MemberSignature Language="F#" Value="BottomRight = 2" Usage="System.Windows.Controls.Primitives.AutoToolTipPlacement.BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.AutoToolTipPlacement.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.Primitives.AutoToolTipPlacement.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.AutoToolTipPlacement.TopLeft" />
       <MemberSignature Language="VB.NET" Value="TopLeft" />
       <MemberSignature Language="C++ CLI" Value="TopLeft" />
+      <MemberSignature Language="F#" Value="TopLeft = 1" Usage="System.Windows.Controls.Primitives.AutoToolTipPlacement.TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

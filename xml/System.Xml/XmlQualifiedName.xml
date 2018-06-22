@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlQualifiedName" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlQualifiedName" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlQualifiedName" />
+  <TypeSignature Language="F#" Value="type XmlQualifiedName = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlQualifiedName.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlQualifiedName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlQualifiedName : string -&gt; System.Xml.XmlQualifiedName" Usage="new System.Xml.XmlQualifiedName name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -139,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlQualifiedName.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlQualifiedName(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlQualifiedName : string * string -&gt; System.Xml.XmlQualifiedName" Usage="new System.Xml.XmlQualifiedName (name, ns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlQualifiedName.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As XmlQualifiedName " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::XmlQualifiedName ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Xml.XmlQualifiedName" Usage="System.Xml.XmlQualifiedName.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlQualifiedName.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="xmlQualifiedName.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlQualifiedName.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="xmlQualifiedName.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlQualifiedName.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Xml.XmlQualifiedName.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -312,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlQualifiedName.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlQualifiedName.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -345,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlQualifiedName.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.Xml.XmlQualifiedName.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -378,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlQualifiedName.op_Equality(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As XmlQualifiedName, b As XmlQualifiedName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Xml::XmlQualifiedName ^ a, System::Xml::XmlQualifiedName ^ b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Xml.XmlQualifiedName * System.Xml.XmlQualifiedName -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -420,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlQualifiedName.op_Inequality(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As XmlQualifiedName, b As XmlQualifiedName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Xml::XmlQualifiedName ^ a, System::Xml::XmlQualifiedName ^ b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Xml.XmlQualifiedName * System.Xml.XmlQualifiedName -&gt; bool" Usage="System.Xml.XmlQualifiedName.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -474,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlQualifiedName.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xmlQualifiedName.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -508,6 +520,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlQualifiedName.ToString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (name As String, ns As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="static member ToString : string * string -&gt; string" Usage="System.Xml.XmlQualifiedName.ToString (name, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

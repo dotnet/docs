@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IFieldTemplateFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFieldTemplateFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFieldTemplateFactory" />
+  <TypeSignature Language="F#" Value="type IFieldTemplateFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFieldTemplateFactory.CreateFieldTemplate(System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFieldTemplate (column As MetaColumn, mode As DataBoundControlMode, uiHint As String) As IFieldTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::DynamicData::IFieldTemplate ^ CreateFieldTemplate(System::Web::DynamicData::MetaColumn ^ column, System::Web::UI::WebControls::DataBoundControlMode mode, System::String ^ uiHint);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFieldTemplate : System.Web.DynamicData.MetaColumn * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; System.Web.DynamicData.IFieldTemplate" Usage="iFieldTemplateFactory.CreateFieldTemplate (column, mode, uiHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFieldTemplateFactory.Initialize(System.Web.DynamicData.MetaModel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (model As MetaModel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Web::DynamicData::MetaModel ^ model);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.Web.DynamicData.MetaModel -&gt; unit" Usage="iFieldTemplateFactory.Initialize model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

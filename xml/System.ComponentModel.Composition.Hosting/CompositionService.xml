@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CompositionService" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositionService&#xA;Implements ICompositionService, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionService : IDisposable, System::ComponentModel::Composition::ICompositionService" />
+  <TypeSignature Language="F#" Value="type CompositionService = class&#xA;    interface ICompositionService&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionService.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="compositionService.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionService.SatisfyImportsOnce(System.ComponentModel.Composition.Primitives.ComposablePart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SatisfyImportsOnce (part As ComposablePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SatisfyImportsOnce(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
+      <MemberSignature Language="F#" Value="abstract member SatisfyImportsOnce : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit&#xA;override this.SatisfyImportsOnce : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit" Usage="compositionService.SatisfyImportsOnce part" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Composition.ICompositionService.SatisfyImportsOnce(System.ComponentModel.Composition.Primitives.ComposablePart)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HMACSHA384" />
   <TypeSignature Language="VB.NET" Value="Public Class HMACSHA384&#xA;Inherits HMAC" />
   <TypeSignature Language="C++ CLI" Value="public ref class HMACSHA384 : System::Security::Cryptography::HMAC" />
+  <TypeSignature Language="F#" Value="type HMACSHA384 = class&#xA;    inherit HMAC" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA384.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HMACSHA384(cli::array &lt;System::Byte&gt; ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HMACSHA384 : byte[] -&gt; System.Security.Cryptography.HMACSHA384" Usage="new System.Security.Cryptography.HMACSHA384 key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA384.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="hMACSHA384.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -185,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA384.HashCore(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (source As ReadOnlySpan(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="override this.HashCore : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="hMACSHA384.HashCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -208,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA384.HashCore(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (rgb As Byte(), ib As Integer, cb As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ rgb, int ib, int cb);" />
+      <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="hMACSHA384.HashCore (rgb, ib, cb)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA384.HashFinal" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
+      <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="hMACSHA384.HashFinal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HMACSHA384.HashSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HashSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int HashSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashSize : int" Usage="System.Security.Cryptography.HMACSHA384.HashSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -286,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA384.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="hMACSHA384.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -310,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HMACSHA384.Key" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Key As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.HMACSHA384.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HMACSHA384.ProduceLegacyHmacValues" />
       <MemberSignature Language="VB.NET" Value="Public Property ProduceLegacyHmacValues As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProduceLegacyHmacValues { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ProduceLegacyHmacValues : bool with get, set" Usage="System.Security.Cryptography.HMACSHA384.ProduceLegacyHmacValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -384,6 +394,7 @@ public static void Test()
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA384.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryHashFinal (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryHashFinal(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TryHashFinal : Span&lt;byte&gt; *  -&gt; bool" Usage="hMACSHA384.TryHashFinal (destination, bytesWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

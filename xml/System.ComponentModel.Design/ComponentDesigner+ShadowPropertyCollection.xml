@@ -31,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (propertyName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="shadowPropertyCollection.Contains propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(propertyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

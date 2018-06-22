@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionSwitchEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SessionSwitchEventHandler(sender As Object, e As SessionSwitchEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SessionSwitchEventHandler(System::Object ^ sender, SessionSwitchEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SessionSwitchEventHandler = delegate of obj * SessionSwitchEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

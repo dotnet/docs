@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class FrameworkContentElementAutomationPeer&#xA;Inherits ContentElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkContentElementAutomationPeer : System::Windows::Automation::Peers::ContentElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type FrameworkContentElementAutomationPeer = class&#xA;    inherit ContentElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer.#ctor(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As FrameworkContentElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkContentElementAutomationPeer(System::Windows::FrameworkContentElement ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer : System.Windows.FrameworkContentElement -&gt; System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer" Usage="new System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer.GetAutomationIdCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationIdCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAutomationIdCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationIdCore : unit -&gt; string" Usage="frameworkContentElementAutomationPeer.GetAutomationIdCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer.GetHelpTextCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="frameworkContentElementAutomationPeer.GetHelpTextCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer.GetLabeledByCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLabeledByCore () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ GetLabeledByCore();" />
+      <MemberSignature Language="F#" Value="override this.GetLabeledByCore : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="frameworkContentElementAutomationPeer.GetLabeledByCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaFilterEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityStoreSchemaFilterEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityStoreSchemaFilterEntry" />
+  <TypeSignature Language="F#" Value="type EntityStoreSchemaFilterEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (catalog As String, schema As String, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityStoreSchemaFilterEntry(System::String ^ catalog, System::String ^ schema, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Data.Entity.Design.EntityStoreSchemaFilterEntry : string * string * string -&gt; System.Data.Entity.Design.EntityStoreSchemaFilterEntry" Usage="new System.Data.Entity.Design.EntityStoreSchemaFilterEntry (catalog, schema, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.#ctor(System.String,System.String,System.String,System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes,System.Data.Entity.Design.EntityStoreSchemaFilterEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (catalog As String, schema As String, name As String, types As EntityStoreSchemaFilterObjectTypes, effect As EntityStoreSchemaFilterEffect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityStoreSchemaFilterEntry(System::String ^ catalog, System::String ^ schema, System::String ^ name, System::Data::Entity::Design::EntityStoreSchemaFilterObjectTypes types, System::Data::Entity::Design::EntityStoreSchemaFilterEffect effect);" />
+      <MemberSignature Language="F#" Value="new System.Data.Entity.Design.EntityStoreSchemaFilterEntry : string * string * string * System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes * System.Data.Entity.Design.EntityStoreSchemaFilterEffect -&gt; System.Data.Entity.Design.EntityStoreSchemaFilterEntry" Usage="new System.Data.Entity.Design.EntityStoreSchemaFilterEntry (catalog, schema, name, types, effect)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Catalog" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Catalog As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Catalog { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Catalog : string" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Catalog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Effect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Effect As EntityStoreSchemaFilterEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Entity::Design::EntityStoreSchemaFilterEffect Effect { System::Data::Entity::Design::EntityStoreSchemaFilterEffect get(); };" />
+      <MemberSignature Language="F#" Value="member this.Effect : System.Data.Entity.Design.EntityStoreSchemaFilterEffect" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Effect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Schema" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Schema { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : string" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Types" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Types As EntityStoreSchemaFilterObjectTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Entity::Design::EntityStoreSchemaFilterObjectTypes Types { System::Data::Entity::Design::EntityStoreSchemaFilterObjectTypes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Types : System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Types" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

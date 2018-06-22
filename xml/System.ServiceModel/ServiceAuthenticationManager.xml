@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceAuthenticationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceAuthenticationManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceAuthenticationManager" />
+  <TypeSignature Language="F#" Value="type ServiceAuthenticationManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceAuthenticationManager.Authenticate(System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy},System.Uri,System.ServiceModel.Channels.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Authenticate (authPolicy As ReadOnlyCollection(Of IAuthorizationPolicy), listenUri As Uri, ByRef message As Message) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ Authenticate(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authPolicy, Uri ^ listenUri, System::ServiceModel::Channels::Message ^ % message);" />
+      <MemberSignature Language="F#" Value="abstract member Authenticate : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; * Uri *  -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;&#xA;override this.Authenticate : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; * Uri *  -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="serviceAuthenticationManager.Authenticate (authPolicy, listenUri, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

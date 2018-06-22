@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsResource" />
   <TypeSignature Language="VB.NET" Value="Public Class XpsResource&#xA;Inherits XpsPartBase&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsResource : System::Windows::Xps::Packaging::XpsPartBase, IDisposable" />
+  <TypeSignature Language="F#" Value="type XpsResource = class&#xA;    inherit XpsPartBase&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsResource.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
+      <MemberSignature Language="F#" Value="member this.Commit : unit -&gt; unit" Usage="xpsResource.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsResource.GetStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetStream();" />
+      <MemberSignature Language="F#" Value="abstract member GetStream : unit -&gt; System.IO.Stream&#xA;override this.GetStream : unit -&gt; System.IO.Stream" Usage="xpsResource.GetStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsResource.RelativeUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function RelativeUri (inUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ RelativeUri(Uri ^ inUri);" />
+      <MemberSignature Language="F#" Value="member this.RelativeUri : Uri -&gt; Uri" Usage="xpsResource.RelativeUri inUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

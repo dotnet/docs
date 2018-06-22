@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompilerInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompilerInfo sealed" />
+  <TypeSignature Language="F#" Value="type CompilerInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerInfo.CodeDomProviderType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeDomProviderType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CodeDomProviderType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeDomProviderType : Type" Usage="System.CodeDom.Compiler.CompilerInfo.CodeDomProviderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerInfo.CreateDefaultCompilerParameters" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDefaultCompilerParameters () As CompilerParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerParameters ^ CreateDefaultCompilerParameters();" />
+      <MemberSignature Language="F#" Value="member this.CreateDefaultCompilerParameters : unit -&gt; System.CodeDom.Compiler.CompilerParameters" Usage="compilerInfo.CreateDefaultCompilerParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerInfo.CreateProvider" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateProvider () As CodeDomProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CodeDomProvider ^ CreateProvider();" />
+      <MemberSignature Language="F#" Value="member this.CreateProvider : unit -&gt; System.CodeDom.Compiler.CodeDomProvider" Usage="compilerInfo.CreateProvider " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerInfo.CreateProvider(System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateProvider (providerOptions As IDictionary(Of String, String)) As CodeDomProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CodeDomProvider ^ CreateProvider(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ providerOptions);" />
+      <MemberSignature Language="F#" Value="member this.CreateProvider : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; System.CodeDom.Compiler.CodeDomProvider" Usage="compilerInfo.CreateProvider providerOptions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="compilerInfo.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -293,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerInfo.GetExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExtensions () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetExtensions();" />
+      <MemberSignature Language="F#" Value="member this.GetExtensions : unit -&gt; string[]" Usage="compilerInfo.GetExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -336,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="compilerInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -383,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerInfo.GetLanguages" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLanguages () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetLanguages();" />
+      <MemberSignature Language="F#" Value="member this.GetLanguages : unit -&gt; string[]" Usage="compilerInfo.GetLanguages " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -426,6 +435,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerInfo.IsCodeDomProviderTypeValid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCodeDomProviderTypeValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCodeDomProviderTypeValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCodeDomProviderTypeValid : bool" Usage="System.CodeDom.Compiler.CompilerInfo.IsCodeDomProviderTypeValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

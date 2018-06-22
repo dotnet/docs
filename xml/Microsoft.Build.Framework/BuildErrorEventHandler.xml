@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildErrorEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub BuildErrorEventHandler(sender As Object, e As BuildErrorEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void BuildErrorEventHandler(System::Object ^ sender, BuildErrorEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type BuildErrorEventHandler = delegate of obj * BuildErrorEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

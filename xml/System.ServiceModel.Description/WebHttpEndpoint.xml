@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WebHttpEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHttpEndpoint&#xA;Inherits WebServiceEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebHttpEndpoint : System::ServiceModel::Description::WebServiceEndpoint" />
+  <TypeSignature Language="F#" Value="type WebHttpEndpoint = class&#xA;    inherit WebServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpEndpoint.#ctor(System.ServiceModel.Description.ContractDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contract As ContractDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpEndpoint(System::ServiceModel::Description::ContractDescription ^ contract);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.WebHttpEndpoint : System.ServiceModel.Description.ContractDescription -&gt; System.ServiceModel.Description.WebHttpEndpoint" Usage="new System.ServiceModel.Description.WebHttpEndpoint contract" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpEndpoint.#ctor(System.ServiceModel.Description.ContractDescription,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contract As ContractDescription, address As EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpEndpoint(System::ServiceModel::Description::ContractDescription ^ contract, System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.WebHttpEndpoint : System.ServiceModel.Description.ContractDescription * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Description.WebHttpEndpoint" Usage="new System.ServiceModel.Description.WebHttpEndpoint (contract, address)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.AutomaticFormatSelectionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticFormatSelectionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticFormatSelectionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticFormatSelectionEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebHttpEndpoint.AutomaticFormatSelectionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.DefaultOutgoingResponseFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultOutgoingResponseFormat As WebMessageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::WebMessageFormat DefaultOutgoingResponseFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultOutgoingResponseFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Description.WebHttpEndpoint.DefaultOutgoingResponseFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.FaultExceptionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultExceptionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FaultExceptionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultExceptionEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebHttpEndpoint.FaultExceptionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HelpEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.WebEndpointType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property WebEndpointType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ WebEndpointType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebEndpointType : Type" Usage="System.ServiceModel.Description.WebHttpEndpoint.WebEndpointType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

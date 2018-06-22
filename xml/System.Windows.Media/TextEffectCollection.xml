@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextEffectCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextEffectCollection&#xA;Inherits Animatable&#xA;Implements ICollection(Of TextEffect), IEnumerable(Of TextEffect), IList, IList(Of TextEffect)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextEffectCollection sealed : System::Windows::Media::Animation::Animatable, System::Collections::Generic::ICollection&lt;System::Windows::Media::TextEffect ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::TextEffect ^&gt;, System::Collections::Generic::IList&lt;System::Windows::Media::TextEffect ^&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type TextEffectCollection = class&#xA;    inherit Animatable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList&lt;TextEffect&gt;&#xA;    interface ICollection&lt;TextEffect&gt;&#xA;    interface seq&lt;TextEffect&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.TextEffect})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of TextEffect))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEffectCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Media::TextEffect ^&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextEffectCollection : seq&lt;System.Windows.Media.TextEffect&gt; -&gt; System.Windows.Media.TextEffectCollection" Usage="new System.Windows.Media.TextEffectCollection collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEffectCollection(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextEffectCollection : int -&gt; System.Windows.Media.TextEffectCollection" Usage="new System.Windows.Media.TextEffectCollection capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.Add(System.Windows.Media.TextEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As TextEffect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Media::TextEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Media.TextEffect -&gt; unit&#xA;override this.Add : System.Windows.Media.TextEffect -&gt; unit" Usage="textEffectCollection.Add value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="textEffectCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As TextEffectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextEffectCollection ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.TextEffectCollection" Usage="textEffectCollection.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="textEffectCollection.CloneCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TextEffectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextEffectCollection ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.TextEffectCollection" Usage="textEffectCollection.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="textEffectCollection.CloneCurrentValueCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.Contains(System.Windows.Media.TextEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As TextEffect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Media::TextEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.Media.TextEffect -&gt; bool&#xA;override this.Contains : System.Windows.Media.TextEffect -&gt; bool" Usage="textEffectCollection.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.CopyTo(System.Windows.Media.TextEffect[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TextEffect(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Media::TextEffect ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Windows.Media.TextEffect[] * int -&gt; unit&#xA;override this.CopyTo : System.Windows.Media.TextEffect[] * int -&gt; unit" Usage="textEffectCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffectCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Media.TextEffectCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -347,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="textEffectCollection.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -368,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="textEffectCollection.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -392,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="textEffectCollection.GetAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -415,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="textEffectCollection.GetCurrentValueAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -438,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As TextEffectCollection.Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextEffectCollection::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Windows.Media.TextEffectCollection.Enumerator" Usage="textEffectCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -476,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.IndexOf(System.Windows.Media.TextEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As TextEffect) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::Media::TextEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Windows.Media.TextEffect -&gt; int&#xA;override this.IndexOf : System.Windows.Media.TextEffect -&gt; int" Usage="textEffectCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -514,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.Insert(System.Int32,System.Windows.Media.TextEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As TextEffect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::Media::TextEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Windows.Media.TextEffect -&gt; unit&#xA;override this.Insert : int * System.Windows.Media.TextEffect -&gt; unit" Usage="textEffectCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -542,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffectCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TextEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextEffect ^ default[int] { System::Windows::Media::TextEffect ^ get(int index); void set(int index, System::Windows::Media::TextEffect ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Media.TextEffect with get, set" Usage="System.Windows.Media.TextEffectCollection.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -576,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.Remove(System.Windows.Media.TextEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (value As TextEffect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Media::TextEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Media.TextEffect -&gt; bool&#xA;override this.Remove : System.Windows.Media.TextEffect -&gt; bool" Usage="textEffectCollection.Remove value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -611,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffectCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="textEffectCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -645,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffectCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#TextEffect&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of TextEffect).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Windows.Media.TextEffect&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.TextEffectCollection.System.Collections.Generic.ICollection&lt;System.Windows.Media.TextEffect&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -743,6 +766,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffectCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.TextEffectCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -774,6 +798,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffectCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.TextEffectCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -978,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffectCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.TextEffectCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1009,6 +1035,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffectCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.TextEffectCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1040,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextEffectCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.TextEffectCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

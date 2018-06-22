@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizerError" />
   <TypeSignature Language="VB.NET" Value="Public Enum BamlLocalizerError" />
   <TypeSignature Language="C++ CLI" Value="public enum class BamlLocalizerError" />
+  <TypeSignature Language="F#" Value="type BamlLocalizerError = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.DuplicateElement" />
       <MemberSignature Language="VB.NET" Value="DuplicateElement" />
       <MemberSignature Language="C++ CLI" Value="DuplicateElement" />
+      <MemberSignature Language="F#" Value="DuplicateElement = 1" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.DuplicateElement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.DuplicateUid" />
       <MemberSignature Language="VB.NET" Value="DuplicateUid" />
       <MemberSignature Language="C++ CLI" Value="DuplicateUid" />
+      <MemberSignature Language="F#" Value="DuplicateUid = 0" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.DuplicateUid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.IncompleteElementPlaceholder" />
       <MemberSignature Language="VB.NET" Value="IncompleteElementPlaceholder" />
       <MemberSignature Language="C++ CLI" Value="IncompleteElementPlaceholder" />
+      <MemberSignature Language="F#" Value="IncompleteElementPlaceholder = 2" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.IncompleteElementPlaceholder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.InvalidCommentingXml" />
       <MemberSignature Language="VB.NET" Value="InvalidCommentingXml" />
       <MemberSignature Language="C++ CLI" Value="InvalidCommentingXml" />
+      <MemberSignature Language="F#" Value="InvalidCommentingXml = 3" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.InvalidCommentingXml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.InvalidLocalizationAttributes" />
       <MemberSignature Language="VB.NET" Value="InvalidLocalizationAttributes" />
       <MemberSignature Language="C++ CLI" Value="InvalidLocalizationAttributes" />
+      <MemberSignature Language="F#" Value="InvalidLocalizationAttributes = 4" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.InvalidLocalizationAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.InvalidLocalizationComments" />
       <MemberSignature Language="VB.NET" Value="InvalidLocalizationComments" />
       <MemberSignature Language="C++ CLI" Value="InvalidLocalizationComments" />
+      <MemberSignature Language="F#" Value="InvalidLocalizationComments = 5" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.InvalidLocalizationComments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.InvalidUid" />
       <MemberSignature Language="VB.NET" Value="InvalidUid" />
       <MemberSignature Language="C++ CLI" Value="InvalidUid" />
+      <MemberSignature Language="F#" Value="InvalidUid = 6" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.InvalidUid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.MismatchedElements" />
       <MemberSignature Language="VB.NET" Value="MismatchedElements" />
       <MemberSignature Language="C++ CLI" Value="MismatchedElements" />
+      <MemberSignature Language="F#" Value="MismatchedElements = 7" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.MismatchedElements" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.SubstitutionAsPlaintext" />
       <MemberSignature Language="VB.NET" Value="SubstitutionAsPlaintext" />
       <MemberSignature Language="C++ CLI" Value="SubstitutionAsPlaintext" />
+      <MemberSignature Language="F#" Value="SubstitutionAsPlaintext = 8" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.SubstitutionAsPlaintext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.UidMissingOnChildElement" />
       <MemberSignature Language="VB.NET" Value="UidMissingOnChildElement" />
       <MemberSignature Language="C++ CLI" Value="UidMissingOnChildElement" />
+      <MemberSignature Language="F#" Value="UidMissingOnChildElement = 9" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.UidMissingOnChildElement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.UnknownFormattingTag" />
       <MemberSignature Language="VB.NET" Value="UnknownFormattingTag" />
       <MemberSignature Language="C++ CLI" Value="UnknownFormattingTag" />
+      <MemberSignature Language="F#" Value="UnknownFormattingTag = 10" Usage="System.Windows.Markup.Localizer.BamlLocalizerError.UnknownFormattingTag" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

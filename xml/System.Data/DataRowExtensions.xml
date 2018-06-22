@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module DataRowExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataRowExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type DataRowExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Field(Of T) (row As DataRow, column As DataColumn) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static T Field(System::Data::DataRow ^ row, System::Data::DataColumn ^ column);" />
+      <MemberSignature Language="F#" Value="static member Field : System.Data.DataRow * System.Data.DataColumn -&gt; 'T" Usage="System.Data.DataRowExtensions.Field (row, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Field(Of T) (row As DataRow, columnIndex As Integer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static T Field(System::Data::DataRow ^ row, int columnIndex);" />
+      <MemberSignature Language="F#" Value="static member Field : System.Data.DataRow * int -&gt; 'T" Usage="System.Data.DataRowExtensions.Field (row, columnIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Field(Of T) (row As DataRow, columnName As String) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static T Field(System::Data::DataRow ^ row, System::String ^ columnName);" />
+      <MemberSignature Language="F#" Value="static member Field : System.Data.DataRow * string -&gt; 'T" Usage="System.Data.DataRowExtensions.Field (row, columnName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.Data.DataColumn,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Field(Of T) (row As DataRow, column As DataColumn, version As DataRowVersion) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static T Field(System::Data::DataRow ^ row, System::Data::DataColumn ^ column, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="F#" Value="static member Field : System.Data.DataRow * System.Data.DataColumn * System.Data.DataRowVersion -&gt; 'T" Usage="System.Data.DataRowExtensions.Field (row, column, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.Int32,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Field(Of T) (row As DataRow, columnIndex As Integer, version As DataRowVersion) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static T Field(System::Data::DataRow ^ row, int columnIndex, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="F#" Value="static member Field : System.Data.DataRow * int * System.Data.DataRowVersion -&gt; 'T" Usage="System.Data.DataRowExtensions.Field (row, columnIndex, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -263,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.String,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Field(Of T) (row As DataRow, columnName As String, version As DataRowVersion) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static T Field(System::Data::DataRow ^ row, System::String ^ columnName, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="F#" Value="static member Field : System.Data.DataRow * string * System.Data.DataRowVersion -&gt; 'T" Usage="System.Data.DataRowExtensions.Field (row, columnName, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -318,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.Data.DataColumn,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetField(Of T) (row As DataRow, column As DataColumn, value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetField(System::Data::DataRow ^ row, System::Data::DataColumn ^ column, T value);" />
+      <MemberSignature Language="F#" Value="static member SetField : System.Data.DataRow * System.Data.DataColumn * 'T -&gt; unit" Usage="System.Data.DataRowExtensions.SetField (row, column, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -364,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.Int32,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetField(Of T) (row As DataRow, columnIndex As Integer, value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetField(System::Data::DataRow ^ row, int columnIndex, T value);" />
+      <MemberSignature Language="F#" Value="static member SetField : System.Data.DataRow * int * 'T -&gt; unit" Usage="System.Data.DataRowExtensions.SetField (row, columnIndex, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -409,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetField(Of T) (row As DataRow, columnName As String, value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetField(System::Data::DataRow ^ row, System::String ^ columnName, T value);" />
+      <MemberSignature Language="F#" Value="static member SetField : System.Data.DataRow * string * 'T -&gt; unit" Usage="System.Data.DataRowExtensions.SetField (row, columnName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>

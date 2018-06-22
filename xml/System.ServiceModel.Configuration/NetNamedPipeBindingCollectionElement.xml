@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetNamedPipeBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetNamedPipeBinding, NetNamedPipeBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetNamedPipeBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetNamedPipeBinding ^, System::ServiceModel::Configuration::NetNamedPipeBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type NetNamedPipeBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;NetNamedPipeBinding, NetNamedPipeBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

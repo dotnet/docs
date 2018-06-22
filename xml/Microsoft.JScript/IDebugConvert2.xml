@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugConvert2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDebugConvert2" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDebugConvert2" />
+  <TypeSignature Language="F#" Value="type IDebugConvert2 = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert2.DecimalToString(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecimalToString (value As Decimal) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DecimalToString(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="abstract member DecimalToString : decimal -&gt; string" Usage="iDebugConvert2.DecimalToString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

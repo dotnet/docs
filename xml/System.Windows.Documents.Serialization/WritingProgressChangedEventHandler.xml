@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingProgressChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WritingProgressChangedEventHandler(sender As Object, e As WritingProgressChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WritingProgressChangedEventHandler(System::Object ^ sender, WritingProgressChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WritingProgressChangedEventHandler = delegate of obj * WritingProgressChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

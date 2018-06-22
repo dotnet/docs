@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowDebuggerSteppingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDebuggerSteppingAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type WorkflowDebuggerSteppingAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.#ctor(System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (steppingOption As WorkflowDebuggerSteppingOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowDebuggerSteppingAttribute(System::Workflow::Runtime::DebugEngine::WorkflowDebuggerSteppingOption steppingOption);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute : System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption -&gt; System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute" Usage="new System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute steppingOption" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.SteppingOption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SteppingOption As WorkflowDebuggerSteppingOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::DebugEngine::WorkflowDebuggerSteppingOption SteppingOption { System::Workflow::Runtime::DebugEngine::WorkflowDebuggerSteppingOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.SteppingOption : System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" Usage="System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.SteppingOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

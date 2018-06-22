@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ProxyGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class ProxyGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProxyGenerator abstract sealed" />
+  <TypeSignature Language="F#" Value="type ProxyGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetClientProxyScript(class System.Type type, string path, bool debug) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Services.ProxyGenerator.GetClientProxyScript(System.Type,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetClientProxyScript(Type ^ type, System::String ^ path, bool debug);" />
+      <MemberSignature Language="F#" Value="static member GetClientProxyScript : Type * string * bool -&gt; string" Usage="System.Web.Script.Services.ProxyGenerator.GetClientProxyScript (type, path, debug)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetClientProxyScript(class System.Type type, string path, bool debug, class System.ServiceModel.Description.ServiceEndpoint serviceEndpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Services.ProxyGenerator.GetClientProxyScript(System.Type,System.String,System.Boolean,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetClientProxyScript(Type ^ type, System::String ^ path, bool debug, System::ServiceModel::Description::ServiceEndpoint ^ serviceEndpoint);" />
+      <MemberSignature Language="F#" Value="static member GetClientProxyScript : Type * string * bool * System.ServiceModel.Description.ServiceEndpoint -&gt; string" Usage="System.Web.Script.Services.ProxyGenerator.GetClientProxyScript (type, path, debug, serviceEndpoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.ValidationEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ValidationEventHandler(sender As Object, e As ValidationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ValidationEventHandler(System::Object ^ sender, ValidationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ValidationEventHandler = delegate of obj * ValidationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

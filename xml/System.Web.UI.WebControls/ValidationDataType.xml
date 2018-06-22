@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidationDataType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationDataType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValidationDataType" />
+  <TypeSignature Language="F#" Value="type ValidationDataType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.Currency" />
       <MemberSignature Language="VB.NET" Value="Currency" />
       <MemberSignature Language="C++ CLI" Value="Currency" />
+      <MemberSignature Language="F#" Value="Currency = 4" Usage="System.Web.UI.WebControls.ValidationDataType.Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 3" Usage="System.Web.UI.WebControls.ValidationDataType.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 2" Usage="System.Web.UI.WebControls.ValidationDataType.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.Integer" />
       <MemberSignature Language="VB.NET" Value="Integer" />
       <MemberSignature Language="C++ CLI" Value="Integer" />
+      <MemberSignature Language="F#" Value="Integer = 1" Usage="System.Web.UI.WebControls.ValidationDataType.Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 0" Usage="System.Web.UI.WebControls.ValidationDataType.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

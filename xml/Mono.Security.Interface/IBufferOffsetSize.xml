@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.IBufferOffsetSize" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBufferOffsetSize" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBufferOffsetSize" />
+  <TypeSignature Language="F#" Value="type IBufferOffsetSize = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IBufferOffsetSize.Buffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buffer As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Buffer { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buffer : byte[]" Usage="Mono.Security.Interface.IBufferOffsetSize.Buffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IBufferOffsetSize.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int" Usage="Mono.Security.Interface.IBufferOffsetSize.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.IBufferOffsetSize.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="Mono.Security.Interface.IBufferOffsetSize.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

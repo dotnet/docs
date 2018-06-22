@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Adapters.PageAdapter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PageAdapter&#xA;Inherits ControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageAdapter abstract : System::Web::UI::Adapters::ControlAdapter" />
+  <TypeSignature Language="F#" Value="type PageAdapter = class&#xA;    inherit ControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.PageAdapter.CacheVaryByHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CacheVaryByHeaders As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::StringCollection ^ CacheVaryByHeaders { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheVaryByHeaders : System.Collections.Specialized.StringCollection" Usage="System.Web.UI.Adapters.PageAdapter.CacheVaryByHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.PageAdapter.CacheVaryByParams" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CacheVaryByParams As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::StringCollection ^ CacheVaryByParams { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheVaryByParams : System.Collections.Specialized.StringCollection" Usage="System.Web.UI.Adapters.PageAdapter.CacheVaryByParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.PageAdapter.ClientState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ClientState As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ ClientState { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientState : string" Usage="System.Web.UI.Adapters.PageAdapter.ClientState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.DeterminePostBackMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeterminePostBackMode () As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode();" />
+      <MemberSignature Language="F#" Value="abstract member DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection&#xA;override this.DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection" Usage="pageAdapter.DeterminePostBackMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.DeterminePostBackModeUnvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeterminePostBackModeUnvalidated () As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Specialized::NameValueCollection ^ DeterminePostBackModeUnvalidated();" />
+      <MemberSignature Language="F#" Value="abstract member DeterminePostBackModeUnvalidated : unit -&gt; System.Collections.Specialized.NameValueCollection&#xA;override this.DeterminePostBackModeUnvalidated : unit -&gt; System.Collections.Specialized.NameValueCollection" Usage="pageAdapter.DeterminePostBackModeUnvalidated " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -263,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.GetPostBackFormReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetPostBackFormReference (formId As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ GetPostBackFormReference(System::String ^ formId);" />
+      <MemberSignature Language="F#" Value="abstract member GetPostBackFormReference : string -&gt; string&#xA;override this.GetPostBackFormReference : string -&gt; string" Usage="pageAdapter.GetPostBackFormReference formId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.GetRadioButtonsByGroup(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRadioButtonsByGroup (groupName As String) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ICollection ^ GetRadioButtonsByGroup(System::String ^ groupName);" />
+      <MemberSignature Language="F#" Value="abstract member GetRadioButtonsByGroup : string -&gt; System.Collections.ICollection&#xA;override this.GetRadioButtonsByGroup : string -&gt; System.Collections.ICollection" Usage="pageAdapter.GetRadioButtonsByGroup groupName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -335,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.GetStatePersister" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStatePersister () As PageStatePersister" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::PageStatePersister ^ GetStatePersister();" />
+      <MemberSignature Language="F#" Value="abstract member GetStatePersister : unit -&gt; System.Web.UI.PageStatePersister&#xA;override this.GetStatePersister : unit -&gt; System.Web.UI.PageStatePersister" Usage="pageAdapter.GetStatePersister " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -382,6 +391,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterRadioButton(class System.Web.UI.WebControls.RadioButton radioButton) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.RegisterRadioButton(System.Web.UI.WebControls.RadioButton)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterRadioButton(System::Web::UI::WebControls::RadioButton ^ radioButton);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterRadioButton : System.Web.UI.WebControls.RadioButton -&gt; unit&#xA;override this.RegisterRadioButton : System.Web.UI.WebControls.RadioButton -&gt; unit" Usage="pageAdapter.RegisterRadioButton radioButton" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -425,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink(System.Web.UI.HtmlTextWriter,System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginHyperlink (writer As HtmlTextWriter, targetUrl As String, encodeUrl As Boolean, softkeyLabel As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginHyperlink(System::Web::UI::HtmlTextWriter ^ writer, System::String ^ targetUrl, bool encodeUrl, System::String ^ softkeyLabel);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginHyperlink : System.Web.UI.HtmlTextWriter * string * bool * string -&gt; unit&#xA;override this.RenderBeginHyperlink : System.Web.UI.HtmlTextWriter * string * bool * string -&gt; unit" Usage="pageAdapter.RenderBeginHyperlink (writer, targetUrl, encodeUrl, softkeyLabel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -478,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink(System.Web.UI.HtmlTextWriter,System.String,System.Boolean,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginHyperlink (writer As HtmlTextWriter, targetUrl As String, encodeUrl As Boolean, softkeyLabel As String, accessKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginHyperlink(System::Web::UI::HtmlTextWriter ^ writer, System::String ^ targetUrl, bool encodeUrl, System::String ^ softkeyLabel, System::String ^ accessKey);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginHyperlink : System.Web.UI.HtmlTextWriter * string * bool * string * string -&gt; unit&#xA;override this.RenderBeginHyperlink : System.Web.UI.HtmlTextWriter * string * bool * string * string -&gt; unit" Usage="pageAdapter.RenderBeginHyperlink (writer, targetUrl, encodeUrl, softkeyLabel, accessKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -535,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.RenderEndHyperlink(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndHyperlink (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndHyperlink(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndHyperlink : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderEndHyperlink : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="pageAdapter.RenderEndHyperlink writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -581,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderPostBackEvent (writer As HtmlTextWriter, target As String, argument As String, softkeyLabel As String, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderPostBackEvent(System::Web::UI::HtmlTextWriter ^ writer, System::String ^ target, System::String ^ argument, System::String ^ softkeyLabel, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member RenderPostBackEvent : System.Web.UI.HtmlTextWriter * string * string * string * string -&gt; unit&#xA;override this.RenderPostBackEvent : System.Web.UI.HtmlTextWriter * string * string * string * string -&gt; unit" Usage="pageAdapter.RenderPostBackEvent (writer, target, argument, softkeyLabel, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -624,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderPostBackEvent (writer As HtmlTextWriter, target As String, argument As String, softkeyLabel As String, text As String, postUrl As String, accessKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderPostBackEvent(System::Web::UI::HtmlTextWriter ^ writer, System::String ^ target, System::String ^ argument, System::String ^ softkeyLabel, System::String ^ text, System::String ^ postUrl, System::String ^ accessKey);" />
+      <MemberSignature Language="F#" Value="abstract member RenderPostBackEvent : System.Web.UI.HtmlTextWriter * string * string * string * string * string * string -&gt; unit&#xA;override this.RenderPostBackEvent : System.Web.UI.HtmlTextWriter * string * string * string * string * string * string -&gt; unit" Usage="pageAdapter.RenderPostBackEvent (writer, target, argument, softkeyLabel, text, postUrl, accessKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -673,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent(System.Web.UI.HtmlTextWriter,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderPostBackEvent (writer As HtmlTextWriter, target As String, argument As String, softkeyLabel As String, text As String, postUrl As String, accessKey As String, encode As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderPostBackEvent(System::Web::UI::HtmlTextWriter ^ writer, System::String ^ target, System::String ^ argument, System::String ^ softkeyLabel, System::String ^ text, System::String ^ postUrl, System::String ^ accessKey, bool encode);" />
+      <MemberSignature Language="F#" Value="member this.RenderPostBackEvent : System.Web.UI.HtmlTextWriter * string * string * string * string * string * string * bool -&gt; unit" Usage="pageAdapter.RenderPostBackEvent (writer, target, argument, softkeyLabel, text, postUrl, accessKey, encode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -723,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.PageAdapter.TransformText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TransformText (text As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ TransformText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member TransformText : string -&gt; string&#xA;override this.TransformText : string -&gt; string" Usage="pageAdapter.TransformText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

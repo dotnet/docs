@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.WebServiceBindingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebServiceBindingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebServiceBindingAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type WebServiceBindingAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceBindingAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceBindingAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.WebServiceBindingAttribute : string -&gt; System.Web.Services.WebServiceBindingAttribute" Usage="new System.Web.Services.WebServiceBindingAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceBindingAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceBindingAttribute(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.WebServiceBindingAttribute : string * string -&gt; System.Web.Services.WebServiceBindingAttribute" Usage="new System.Web.Services.WebServiceBindingAttribute (name, ns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceBindingAttribute.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String, location As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceBindingAttribute(System::String ^ name, System::String ^ ns, System::String ^ location);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.WebServiceBindingAttribute : string * string * string -&gt; System.Web.Services.WebServiceBindingAttribute" Usage="new System.Web.Services.WebServiceBindingAttribute (name, ns, location)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.ConformsTo" />
       <MemberSignature Language="VB.NET" Value="Public Property ConformsTo As WsiProfiles" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::WsiProfiles ConformsTo { System::Web::Services::WsiProfiles get(); void set(System::Web::Services::WsiProfiles value); };" />
+      <MemberSignature Language="F#" Value="member this.ConformsTo : System.Web.Services.WsiProfiles with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.ConformsTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.EmitConformanceClaims" />
       <MemberSignature Language="VB.NET" Value="Public Property EmitConformanceClaims As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EmitConformanceClaims { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EmitConformanceClaims : bool with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.EmitConformanceClaims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -260,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -321,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

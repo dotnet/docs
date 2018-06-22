@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExecution" />
   <TypeSignature Language="VB.NET" Value="Public Class RuleExecution" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleExecution" />
+  <TypeSignature Language="F#" Value="type RuleExecution = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExecution.#ctor(System.Workflow.Activities.Rules.RuleValidation,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (validation As RuleValidation, thisObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleExecution(System::Workflow::Activities::Rules::RuleValidation ^ validation, System::Object ^ thisObject);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleExecution : System.Workflow.Activities.Rules.RuleValidation * obj -&gt; System.Workflow.Activities.Rules.RuleExecution" Usage="new System.Workflow.Activities.Rules.RuleExecution (validation, thisObject)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleValidation validation, object thisObject, class System.Workflow.ComponentModel.ActivityExecutionContext activityExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExecution.#ctor(System.Workflow.Activities.Rules.RuleValidation,System.Object,System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleExecution(System::Workflow::Activities::Rules::RuleValidation ^ validation, System::Object ^ thisObject, System::Workflow::ComponentModel::ActivityExecutionContext ^ activityExecutionContext);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleExecution : System.Workflow.Activities.Rules.RuleValidation * obj * System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.Activities.Rules.RuleExecution" Usage="new System.Workflow.Activities.Rules.RuleExecution (validation, thisObject, activityExecutionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ Activity { System::Workflow::ComponentModel::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.Activities.Rules.RuleExecution.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.ActivityExecutionContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityExecutionContext As ActivityExecutionContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityExecutionContext ^ ActivityExecutionContext { System::Workflow::ComponentModel::ActivityExecutionContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityExecutionContext : System.Workflow.ComponentModel.ActivityExecutionContext" Usage="System.Workflow.Activities.Rules.RuleExecution.ActivityExecutionContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.Halted" />
       <MemberSignature Language="VB.NET" Value="Public Property Halted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Halted { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Halted : bool with get, set" Usage="System.Workflow.Activities.Rules.RuleExecution.Halted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.ThisObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThisObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ThisObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThisObject : obj" Usage="System.Workflow.Activities.Rules.RuleExecution.ThisObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -170,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExecution.Validation" />
       <MemberSignature Language="VB.NET" Value="Public Property Validation As RuleValidation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleValidation ^ Validation { System::Workflow::Activities::Rules::RuleValidation ^ get(); void set(System::Workflow::Activities::Rules::RuleValidation ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Validation : System.Workflow.Activities.Rules.RuleValidation with get, set" Usage="System.Workflow.Activities.Rules.RuleExecution.Validation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

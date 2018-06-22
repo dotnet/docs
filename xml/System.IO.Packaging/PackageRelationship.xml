@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageRelationship" />
   <TypeSignature Language="VB.NET" Value="Public Class PackageRelationship" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackageRelationship" />
+  <TypeSignature Language="F#" Value="type PackageRelationship = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.IO.Packaging.PackageRelationship.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.Package" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Package As Package" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::Package ^ Package { System::IO::Packaging::Package ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Package : System.IO.Packaging.Package" Usage="System.IO.Packaging.PackageRelationship.Package" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.RelationshipType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelationshipType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelationshipType : string" Usage="System.IO.Packaging.PackageRelationship.RelationshipType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.SourceUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : Uri" Usage="System.IO.Packaging.PackageRelationship.SourceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.TargetMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetMode As TargetMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::TargetMode TargetMode { System::IO::Packaging::TargetMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetMode : System.IO.Packaging.TargetMode" Usage="System.IO.Packaging.PackageRelationship.TargetMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.TargetUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ TargetUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetUri : Uri" Usage="System.IO.Packaging.PackageRelationship.TargetUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

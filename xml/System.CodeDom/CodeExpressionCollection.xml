@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeExpressionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeExpressionCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeExpressionCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CodeExpressionCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.#ctor(System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeExpressionCollection(cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeExpressionCollection : System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeExpressionCollection" Usage="new System.CodeDom.CodeExpressionCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.#ctor(System.CodeDom.CodeExpressionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeExpressionCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeExpressionCollection(System::CodeDom::CodeExpressionCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeExpressionCollection : System.CodeDom.CodeExpressionCollection -&gt; System.CodeDom.CodeExpressionCollection" Usage="new System.CodeDom.CodeExpressionCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.Add(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeExpression) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.CodeExpression -&gt; int" Usage="codeExpressionCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.AddRange(System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeExpression[] -&gt; unit" Usage="codeExpressionCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.AddRange(System.CodeDom.CodeExpressionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeExpressionCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeExpressionCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeExpressionCollection -&gt; unit" Usage="codeExpressionCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.Contains(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeExpression) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.CodeExpression -&gt; bool" Usage="codeExpressionCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -307,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.CopyTo(System.CodeDom.CodeExpression[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeExpression(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.CodeExpression[] * int -&gt; unit" Usage="codeExpressionCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -355,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.IndexOf(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeExpression) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.CodeExpression -&gt; int" Usage="codeExpressionCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -395,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.Insert(System.Int32,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.CodeExpression -&gt; unit" Usage="codeExpressionCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -436,6 +446,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeExpressionCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ default[int] { System::CodeDom::CodeExpression ^ get(int index); void set(int index, System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeExpressionCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -472,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeExpressionCollection.Remove(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.CodeExpression -&gt; unit" Usage="codeExpressionCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

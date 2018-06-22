@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowRoleCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowRoleCollection&#xA;Inherits List(Of WorkflowRole)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRoleCollection sealed : System::Collections::Generic::List&lt;System::Workflow::Activities::WorkflowRole ^&gt;" />
+  <TypeSignature Language="F#" Value="type WorkflowRoleCollection = class&#xA;    inherit List&lt;WorkflowRole&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowRoleCollection.IncludesIdentity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IncludesIdentity (identity As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IncludesIdentity(System::String ^ identity);" />
+      <MemberSignature Language="F#" Value="member this.IncludesIdentity : string -&gt; bool" Usage="workflowRoleCollection.IncludesIdentity identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

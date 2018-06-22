@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IVsaScriptCodeItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVsaScriptCodeItem&#xA;Implements IJSVsaCodeItem" />
   <TypeSignature Language="C++ CLI" Value="public interface class IVsaScriptCodeItem : Microsoft::JScript::Vsa::IJSVsaCodeItem" />
+  <TypeSignature Language="F#" Value="type IVsaScriptCodeItem = interface&#xA;    interface IJSVsaCodeItem&#xA;    interface IJSVsaItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptCodeItem.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Function Execute () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Execute();" />
+      <MemberSignature Language="F#" Value="abstract member Execute : unit -&gt; obj" Usage="iVsaScriptCodeItem.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.IVsaScriptCodeItem.StartColumn" />
       <MemberSignature Language="VB.NET" Value="Public Property StartColumn As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartColumn { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartColumn : int with get, set" Usage="Microsoft.JScript.IVsaScriptCodeItem.StartColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.IVsaScriptCodeItem.StartLine" />
       <MemberSignature Language="VB.NET" Value="Public Property StartLine As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartLine { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartLine : int with get, set" Usage="Microsoft.JScript.IVsaScriptCodeItem.StartLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

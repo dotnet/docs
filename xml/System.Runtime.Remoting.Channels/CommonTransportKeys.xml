@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.CommonTransportKeys" />
   <TypeSignature Language="VB.NET" Value="Public Class CommonTransportKeys" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommonTransportKeys" />
+  <TypeSignature Language="F#" Value="type CommonTransportKeys = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.CommonTransportKeys.ConnectionId" />
       <MemberSignature Language="VB.NET" Value="Public Const ConnectionId As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ConnectionId;" />
+      <MemberSignature Language="F#" Value="val mutable ConnectionId : string" Usage="System.Runtime.Remoting.Channels.CommonTransportKeys.ConnectionId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.CommonTransportKeys.IPAddress" />
       <MemberSignature Language="VB.NET" Value="Public Const IPAddress As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ IPAddress;" />
+      <MemberSignature Language="F#" Value="val mutable IPAddress : string" Usage="System.Runtime.Remoting.Channels.CommonTransportKeys.IPAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.CommonTransportKeys.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Const RequestUri As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ RequestUri;" />
+      <MemberSignature Language="F#" Value="val mutable RequestUri : string" Usage="System.Runtime.Remoting.Channels.CommonTransportKeys.RequestUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

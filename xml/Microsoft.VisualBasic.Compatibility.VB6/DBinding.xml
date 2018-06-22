@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DBinding" />
   <TypeSignature Language="VB.NET" Value="Public Interface DBinding" />
   <TypeSignature Language="C++ CLI" Value="public interface class DBinding" />
+  <TypeSignature Language="F#" Value="type DBinding = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataChanged" />
       <MemberSignature Language="VB.NET" Value="Public Property DataChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataChanged { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DataChanged : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataField" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataField : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DataFormat As IDataFormatDisp" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ DataFormat { Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ get(); void set(Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataFormat : Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBinding.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.Object" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBinding.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBinding.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

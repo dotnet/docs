@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceProcessDescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceProcessDescriptionAttribute&#xA;Inherits DescriptionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceProcessDescriptionAttribute : System::ComponentModel::DescriptionAttribute" />
+  <TypeSignature Language="F#" Value="type ServiceProcessDescriptionAttribute = class&#xA;    inherit DescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceProcessDescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceProcessDescriptionAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceProcessDescriptionAttribute : string -&gt; System.ServiceProcess.ServiceProcessDescriptionAttribute" Usage="new System.ServiceProcess.ServiceProcessDescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceProcessDescriptionAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.ServiceProcess.ServiceProcessDescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>

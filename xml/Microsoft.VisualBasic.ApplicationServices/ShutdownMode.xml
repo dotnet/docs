@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ShutdownMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ShutdownMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ShutdownMode" />
+  <TypeSignature Language="F#" Value="type ShutdownMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterAllFormsClose" />
       <MemberSignature Language="VB.NET" Value="AfterAllFormsClose" />
       <MemberSignature Language="C++ CLI" Value="AfterAllFormsClose" />
+      <MemberSignature Language="F#" Value="AfterAllFormsClose = 1" Usage="Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterAllFormsClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses" />
       <MemberSignature Language="VB.NET" Value="AfterMainFormCloses" />
       <MemberSignature Language="C++ CLI" Value="AfterMainFormCloses" />
+      <MemberSignature Language="F#" Value="AfterMainFormCloses = 0" Usage="Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

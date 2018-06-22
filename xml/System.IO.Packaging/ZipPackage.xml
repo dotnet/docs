@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.ZipPackage" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ZipPackage&#xA;Inherits Package" />
   <TypeSignature Language="C++ CLI" Value="public ref class ZipPackage sealed : System::IO::Packaging::Package" />
+  <TypeSignature Language="F#" Value="type ZipPackage = class&#xA;    inherit Package" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IO.Packaging.PackagePart CreatePartCore(class System.Uri partUri, string contentType, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackage.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IO::Packaging::PackagePart ^ CreatePartCore(Uri ^ partUri, System::String ^ contentType, System::IO::Packaging::CompressionOption compressionOption);" />
+      <MemberSignature Language="F#" Value="override this.CreatePartCore : Uri * string * System.IO.Packaging.CompressionOption -&gt; System.IO.Packaging.PackagePart" Usage="zipPackage.CreatePartCore (partUri, contentType, compressionOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackage.DeletePartCore(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeletePartCore (partUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeletePartCore(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="override this.DeletePartCore : Uri -&gt; unit" Usage="zipPackage.DeletePartCore partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackage.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="zipPackage.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackage.FlushCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub FlushCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void FlushCore();" />
+      <MemberSignature Language="F#" Value="override this.FlushCore : unit -&gt; unit" Usage="zipPackage.FlushCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackage.GetPartCore(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetPartCore (partUri As Uri) As PackagePart" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IO::Packaging::PackagePart ^ GetPartCore(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="override this.GetPartCore : Uri -&gt; System.IO.Packaging.PackagePart" Usage="zipPackage.GetPartCore partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackage.GetPartsCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetPartsCore () As PackagePart()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::IO::Packaging::PackagePart ^&gt; ^ GetPartsCore();" />
+      <MemberSignature Language="F#" Value="override this.GetPartsCore : unit -&gt; System.IO.Packaging.PackagePart[]" Usage="zipPackage.GetPartsCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

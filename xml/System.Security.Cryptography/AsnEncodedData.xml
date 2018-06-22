@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsnEncodedData" />
   <TypeSignature Language="VB.NET" Value="Public Class AsnEncodedData" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsnEncodedData" />
+  <TypeSignature Language="F#" Value="type AsnEncodedData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsnEncodedData.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawData As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsnEncodedData(cli::array &lt;System::Byte&gt; ^ rawData);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.AsnEncodedData : byte[] -&gt; System.Security.Cryptography.AsnEncodedData" Usage="new System.Security.Cryptography.AsnEncodedData rawData" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsnEncodedData.#ctor(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsnEncodedData(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.AsnEncodedData : System.Security.Cryptography.AsnEncodedData -&gt; System.Security.Cryptography.AsnEncodedData" Usage="new System.Security.Cryptography.AsnEncodedData asnEncodedData" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -179,6 +182,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid, unsigned int8[] rawData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsnEncodedData.#ctor(System.Security.Cryptography.Oid,System.Byte[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsnEncodedData(System::Security::Cryptography::Oid ^ oid, cli::array &lt;System::Byte&gt; ^ rawData);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.AsnEncodedData : System.Security.Cryptography.Oid * byte[] -&gt; System.Security.Cryptography.AsnEncodedData" Usage="new System.Security.Cryptography.AsnEncodedData (oid, rawData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -223,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsnEncodedData.#ctor(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oid As String, rawData As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsnEncodedData(System::String ^ oid, cli::array &lt;System::Byte&gt; ^ rawData);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.AsnEncodedData : string * byte[] -&gt; System.Security.Cryptography.AsnEncodedData" Usage="new System.Security.Cryptography.AsnEncodedData (oid, rawData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -266,6 +271,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyFrom(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsnEncodedData.CopyFrom(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyFrom(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
+      <MemberSignature Language="F#" Value="abstract member CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit&#xA;override this.CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit" Usage="asnEncodedData.CopyFrom asnEncodedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -318,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsnEncodedData.Format(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Format (multiLine As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Format(bool multiLine);" />
+      <MemberSignature Language="F#" Value="abstract member Format : bool -&gt; string&#xA;override this.Format : bool -&gt; string" Usage="asnEncodedData.Format multiLine" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -370,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsnEncodedData.Oid" />
       <MemberSignature Language="VB.NET" Value="Public Property Oid As Oid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ Oid { System::Security::Cryptography::Oid ^ get(); void set(System::Security::Cryptography::Oid ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Oid : System.Security.Cryptography.Oid with get, set" Usage="System.Security.Cryptography.AsnEncodedData.Oid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -417,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsnEncodedData.RawData" />
       <MemberSignature Language="VB.NET" Value="Public Property RawData As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ RawData { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RawData : byte[] with get, set" Usage="System.Security.Cryptography.AsnEncodedData.RawData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingProfile" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingProfile" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingProfile" />
+  <TypeSignature Language="F#" Value="type TrackingProfile = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityTrackPoints As ActivityTrackPointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::ActivityTrackPointCollection ^ ActivityTrackPoints { System::Workflow::Runtime::Tracking::ActivityTrackPointCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityTrackPoints : System.Workflow.Runtime.Tracking.ActivityTrackPointCollection" Usage="System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfile.UserTrackPoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserTrackPoints As UserTrackPointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::UserTrackPointCollection ^ UserTrackPoints { System::Workflow::Runtime::Tracking::UserTrackPointCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserTrackPoints : System.Workflow.Runtime.Tracking.UserTrackPointCollection" Usage="System.Workflow.Runtime.Tracking.TrackingProfile.UserTrackPoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfile.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingProfile.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowTrackPoints As WorkflowTrackPointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::WorkflowTrackPointCollection ^ WorkflowTrackPoints { System::Workflow::Runtime::Tracking::WorkflowTrackPointCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowTrackPoints : System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection" Usage="System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

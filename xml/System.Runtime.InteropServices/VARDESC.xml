@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.VARDESC" />
   <TypeSignature Language="VB.NET" Value="Public Structure VARDESC" />
   <TypeSignature Language="C++ CLI" Value="public value class VARDESC" />
+  <TypeSignature Language="F#" Value="type VARDESC = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.elemdescVar" />
       <MemberSignature Language="VB.NET" Value="Public elemdescVar As ELEMDESC " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ELEMDESC elemdescVar;" />
+      <MemberSignature Language="F#" Value="val mutable elemdescVar : System.Runtime.InteropServices.ELEMDESC" Usage="System.Runtime.InteropServices.VARDESC.elemdescVar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.lpstrSchema" />
       <MemberSignature Language="VB.NET" Value="Public lpstrSchema As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ lpstrSchema;" />
+      <MemberSignature Language="F#" Value="val mutable lpstrSchema : string" Usage="System.Runtime.InteropServices.VARDESC.lpstrSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.memid" />
       <MemberSignature Language="VB.NET" Value="Public memid As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int memid;" />
+      <MemberSignature Language="F#" Value="val mutable memid : int" Usage="System.Runtime.InteropServices.VARDESC.memid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.varkind" />
       <MemberSignature Language="VB.NET" Value="Public varkind As VarEnum " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::VarEnum varkind;" />
+      <MemberSignature Language="F#" Value="val mutable varkind : System.Runtime.InteropServices.VarEnum" Usage="System.Runtime.InteropServices.VARDESC.varkind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.wVarFlags" />
       <MemberSignature Language="VB.NET" Value="Public wVarFlags As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short wVarFlags;" />
+      <MemberSignature Language="F#" Value="val mutable wVarFlags : int16" Usage="System.Runtime.InteropServices.VARDESC.wVarFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

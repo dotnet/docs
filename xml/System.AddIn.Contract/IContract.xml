@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContract" />
+  <TypeSignature Language="F#" Value="type IContract = interface" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.AcquireLifetimeToken" />
       <MemberSignature Language="VB.NET" Value="Public Function AcquireLifetimeToken () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int AcquireLifetimeToken();" />
+      <MemberSignature Language="F#" Value="abstract member AcquireLifetimeToken : unit -&gt; int" Usage="iContract.AcquireLifetimeToken " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.GetRemoteHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRemoteHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRemoteHashCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoteHashCode : unit -&gt; int" Usage="iContract.GetRemoteHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.QueryContract(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function QueryContract (contractIdentifier As String) As IContract" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::IContract ^ QueryContract(System::String ^ contractIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member QueryContract : string -&gt; System.AddIn.Contract.IContract" Usage="iContract.QueryContract contractIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.RemoteEquals(System.AddIn.Contract.IContract)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoteEquals (contract As IContract) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoteEquals(System::AddIn::Contract::IContract ^ contract);" />
+      <MemberSignature Language="F#" Value="abstract member RemoteEquals : System.AddIn.Contract.IContract -&gt; bool" Usage="iContract.RemoteEquals contract" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.RemoteToString" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoteToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ RemoteToString();" />
+      <MemberSignature Language="F#" Value="abstract member RemoteToString : unit -&gt; string" Usage="iContract.RemoteToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.RevokeLifetimeToken(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RevokeLifetimeToken (token As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RevokeLifetimeToken(int token);" />
+      <MemberSignature Language="F#" Value="abstract member RevokeLifetimeToken : int -&gt; unit" Usage="iContract.RevokeLifetimeToken token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

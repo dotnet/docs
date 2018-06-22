@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ThicknessAnimationBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ThicknessAnimationBase&#xA;Inherits AnimationTimeline" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThicknessAnimationBase abstract : System::Windows::Media::Animation::AnimationTimeline" />
+  <TypeSignature Language="F#" Value="type ThicknessAnimationBase = class&#xA;    inherit AnimationTimeline" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimationBase.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ThicknessAnimationBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::ThicknessAnimationBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.ThicknessAnimationBase" Usage="thicknessAnimationBase.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetCurrentValue(object defaultOriginValue, object defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetCurrentValue(System::Object ^ defaultOriginValue, System::Object ^ defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : obj * obj * System.Windows.Media.Animation.AnimationClock -&gt; obj" Usage="thicknessAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Thickness GetCurrentValue(valuetype System.Windows.Thickness defaultOriginValue, valuetype System.Windows.Thickness defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimationBase.GetCurrentValue(System.Windows.Thickness,System.Windows.Thickness,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Thickness GetCurrentValue(System::Windows::Thickness defaultOriginValue, System::Windows::Thickness defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : System.Windows.Thickness * System.Windows.Thickness * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Thickness" Usage="thicknessAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Windows.Thickness GetCurrentValueCore(valuetype System.Windows.Thickness defaultOriginValue, valuetype System.Windows.Thickness defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimationBase.GetCurrentValueCore(System.Windows.Thickness,System.Windows.Thickness,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Thickness GetCurrentValueCore(System::Windows::Thickness defaultOriginValue, System::Windows::Thickness defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueCore : System.Windows.Thickness * System.Windows.Thickness * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Thickness" Usage="thicknessAnimationBase.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessAnimationBase.TargetPropertyType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property TargetPropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetPropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetPropertyType : Type" Usage="System.Windows.Media.Animation.ThicknessAnimationBase.TargetPropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

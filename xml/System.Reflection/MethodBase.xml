@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MethodBase&#xA;Inherits MemberInfo&#xA;Implements _MethodBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MethodBase abstract : System::Reflection::MemberInfo, System::Runtime::InteropServices::_MethodBase" />
+  <TypeSignature Language="F#" Value="type MethodBase = class&#xA;    inherit MemberInfo&#xA;    interface _MethodBase" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As MethodAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.MethodAttributes" Usage="System.Reflection.MethodBase.Attributes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.Attributes</InterfaceMember>
@@ -173,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.CallingConvention" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CallingConvention As CallingConventions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::CallingConventions CallingConvention { System::Reflection::CallingConventions get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallingConvention : System.Reflection.CallingConventions" Usage="System.Reflection.MethodBase.CallingConvention" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.CallingConvention</InterfaceMember>
@@ -213,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.ContainsGenericParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContainsGenericParameters As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ContainsGenericParameters { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainsGenericParameters : bool" Usage="System.Reflection.MethodBase.ContainsGenericParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -266,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="methodBase.Equals obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.Equals(System.Object)</InterfaceMember>
@@ -310,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetCurrentMethod" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentMethod () As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetCurrentMethod();" />
+      <MemberSignature Language="F#" Value="static member GetCurrentMethod : unit -&gt; System.Reflection.MethodBase" Usage="System.Reflection.MethodBase.GetCurrentMethod " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -363,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetGenericArguments" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGenericArguments () As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetGenericArguments();" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericArguments : unit -&gt; Type[]&#xA;override this.GetGenericArguments : unit -&gt; Type[]" Usage="methodBase.GetGenericArguments " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -427,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="methodBase.GetHashCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetHashCode</InterfaceMember>
@@ -467,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetMethodBody" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMethodBody () As MethodBody" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodBody ^ GetMethodBody();" />
+      <MemberSignature Language="F#" Value="abstract member GetMethodBody : unit -&gt; System.Reflection.MethodBody&#xA;override this.GetMethodBody : unit -&gt; System.Reflection.MethodBody" Usage="methodBase.GetMethodBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -537,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodFromHandle (handle As RuntimeMethodHandle) As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetMethodFromHandle(RuntimeMethodHandle handle);" />
+      <MemberSignature Language="F#" Value="static member GetMethodFromHandle : RuntimeMethodHandle -&gt; System.Reflection.MethodBase" Usage="System.Reflection.MethodBase.GetMethodFromHandle handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -587,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodFromHandle (handle As RuntimeMethodHandle, declaringType As RuntimeTypeHandle) As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetMethodFromHandle(RuntimeMethodHandle handle, RuntimeTypeHandle declaringType);" />
+      <MemberSignature Language="F#" Value="static member GetMethodFromHandle : RuntimeMethodHandle * RuntimeTypeHandle -&gt; System.Reflection.MethodBase" Usage="System.Reflection.MethodBase.GetMethodFromHandle (handle, declaringType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -646,6 +657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetMethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMethodImplementationFlags () As MethodImplAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodImplAttributes GetMethodImplementationFlags();" />
+      <MemberSignature Language="F#" Value="abstract member GetMethodImplementationFlags : unit -&gt; System.Reflection.MethodImplAttributes" Usage="methodBase.GetMethodImplementationFlags " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetMethodImplementationFlags</InterfaceMember>
@@ -697,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetParameters" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetParameters () As ParameterInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetParameters();" />
+      <MemberSignature Language="F#" Value="abstract member GetParameters : unit -&gt; System.Reflection.ParameterInfo[]" Usage="methodBase.GetParameters " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetParameters</InterfaceMember>
@@ -763,6 +776,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.Invoke(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (obj As Object, parameters As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Invoke(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * obj[] -&gt; obj&#xA;override this.Invoke : obj * obj[] -&gt; obj" Usage="methodBase.Invoke (obj, parameters)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.Invoke(System.Object,System.Object[])</InterfaceMember>
@@ -883,6 +897,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Invoke(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="methodBase.Invoke (obj, invokeAttr, binder, parameters, culture)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)</InterfaceMember>
@@ -986,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsAbstract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbstract As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbstract { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAbstract : bool" Usage="System.Reflection.MethodBase.IsAbstract" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAbstract</InterfaceMember>
@@ -1046,6 +1062,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAssembly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAssembly : bool" Usage="System.Reflection.MethodBase.IsAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAssembly</InterfaceMember>
@@ -1111,6 +1128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsConstructedGenericMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsConstructedGenericMethod As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsConstructedGenericMethod { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConstructedGenericMethod : bool" Usage="System.Reflection.MethodBase.IsConstructedGenericMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1131,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsConstructor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConstructor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConstructor { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConstructor : bool" Usage="System.Reflection.MethodBase.IsConstructor" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsConstructor</InterfaceMember>
@@ -1186,6 +1205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsFamily" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamily As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamily { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFamily : bool" Usage="System.Reflection.MethodBase.IsFamily" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamily</InterfaceMember>
@@ -1249,6 +1269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamilyAndAssembly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyAndAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFamilyAndAssembly : bool" Usage="System.Reflection.MethodBase.IsFamilyAndAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly</InterfaceMember>
@@ -1312,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsFamilyOrAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamilyOrAssembly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyOrAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFamilyOrAssembly : bool" Usage="System.Reflection.MethodBase.IsFamilyOrAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly</InterfaceMember>
@@ -1379,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsFinal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFinal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFinal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFinal : bool" Usage="System.Reflection.MethodBase.IsFinal" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFinal</InterfaceMember>
@@ -1442,6 +1465,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsGenericMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsGenericMethod As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsGenericMethod { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsGenericMethod : bool" Usage="System.Reflection.MethodBase.IsGenericMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1502,6 +1526,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsGenericMethodDefinition As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsGenericMethodDefinition { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsGenericMethodDefinition : bool" Usage="System.Reflection.MethodBase.IsGenericMethodDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1562,6 +1587,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsHideBySig" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHideBySig As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHideBySig { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHideBySig : bool" Usage="System.Reflection.MethodBase.IsHideBySig" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsHideBySig</InterfaceMember>
@@ -1621,6 +1647,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsPrivate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrivate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPrivate : bool" Usage="System.Reflection.MethodBase.IsPrivate" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPrivate</InterfaceMember>
@@ -1669,6 +1696,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsPublic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPublic : bool" Usage="System.Reflection.MethodBase.IsPublic" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPublic</InterfaceMember>
@@ -1727,6 +1755,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsSecurityCritical" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecurityCritical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityCritical { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityCritical : bool" Usage="System.Reflection.MethodBase.IsSecurityCritical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1780,6 +1809,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecuritySafeCritical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecuritySafeCritical { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecuritySafeCritical : bool" Usage="System.Reflection.MethodBase.IsSecuritySafeCritical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1833,6 +1863,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsSecurityTransparent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecurityTransparent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityTransparent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityTransparent : bool" Usage="System.Reflection.MethodBase.IsSecurityTransparent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1880,6 +1911,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsSpecialName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSpecialName : bool" Usage="System.Reflection.MethodBase.IsSpecialName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsSpecialName</InterfaceMember>
@@ -1938,6 +1970,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsStatic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStatic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStatic { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsStatic : bool" Usage="System.Reflection.MethodBase.IsStatic" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsStatic</InterfaceMember>
@@ -1987,6 +2020,7 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsVirtual" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVirtual As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVirtual { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsVirtual : bool" Usage="System.Reflection.MethodBase.IsVirtual" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsVirtual</InterfaceMember>
@@ -2062,6 +2096,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.MethodHandle" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MethodHandle As RuntimeMethodHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property RuntimeMethodHandle MethodHandle { RuntimeMethodHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodHandle : RuntimeMethodHandle" Usage="System.Reflection.MethodBase.MethodHandle" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.MethodHandle</InterfaceMember>
@@ -2102,6 +2137,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.MethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MethodImplementationFlags As MethodImplAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodImplAttributes MethodImplementationFlags { System::Reflection::MethodImplAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodImplementationFlags : System.Reflection.MethodImplAttributes" Usage="System.Reflection.MethodBase.MethodImplementationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2145,6 +2181,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.op_Equality(System.Reflection.MethodBase,System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As MethodBase, right As MethodBase) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::MethodBase ^ left, System::Reflection::MethodBase ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.MethodBase * System.Reflection.MethodBase -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2182,6 +2219,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.op_Inequality(System.Reflection.MethodBase,System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As MethodBase, right As MethodBase) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::MethodBase ^ left, System::Reflection::MethodBase ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.MethodBase * System.Reflection.MethodBase -&gt; bool" Usage="System.Reflection.MethodBase.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2417,6 +2455,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsAbstract" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsAbstract As Boolean Implements _MethodBase.IsAbstract" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsAbstract { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsAbstract" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAbstract</InterfaceMember>
@@ -2448,6 +2487,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsAssembly As Boolean Implements _MethodBase.IsAssembly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAssembly</InterfaceMember>
@@ -2479,6 +2519,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsConstructor" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsConstructor As Boolean Implements _MethodBase.IsConstructor" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsConstructor { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsConstructor" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsConstructor</InterfaceMember>
@@ -2510,6 +2551,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamily" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamily As Boolean Implements _MethodBase.IsFamily" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsFamily { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsFamily" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamily</InterfaceMember>
@@ -2541,6 +2583,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamilyAndAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamilyAndAssembly As Boolean Implements _MethodBase.IsFamilyAndAssembly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly</InterfaceMember>
@@ -2572,6 +2615,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamilyOrAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamilyOrAssembly As Boolean Implements _MethodBase.IsFamilyOrAssembly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly</InterfaceMember>
@@ -2603,6 +2647,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFinal" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFinal As Boolean Implements _MethodBase.IsFinal" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsFinal { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsFinal" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFinal</InterfaceMember>
@@ -2634,6 +2679,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsHideBySig" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsHideBySig As Boolean Implements _MethodBase.IsHideBySig" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsHideBySig { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsHideBySig" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsHideBySig</InterfaceMember>
@@ -2665,6 +2711,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsPrivate" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsPrivate As Boolean Implements _MethodBase.IsPrivate" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsPrivate { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsPrivate" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPrivate</InterfaceMember>
@@ -2696,6 +2743,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsPublic" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsPublic As Boolean Implements _MethodBase.IsPublic" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsPublic { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsPublic" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPublic</InterfaceMember>
@@ -2727,6 +2775,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsSpecialName" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSpecialName As Boolean Implements _MethodBase.IsSpecialName" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsSpecialName { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsSpecialName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsSpecialName</InterfaceMember>
@@ -2758,6 +2807,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsStatic" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsStatic As Boolean Implements _MethodBase.IsStatic" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsStatic { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsStatic" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsStatic</InterfaceMember>
@@ -2789,6 +2839,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsVirtual" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsVirtual As Boolean Implements _MethodBase.IsVirtual" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Runtime.InteropServices._MethodBase.IsVirtual { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.MethodBase.System.Runtime.InteropServices._MethodBase.IsVirtual" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsVirtual</InterfaceMember>

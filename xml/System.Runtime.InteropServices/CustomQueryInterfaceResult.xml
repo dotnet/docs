@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomQueryInterfaceResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum CustomQueryInterfaceResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class CustomQueryInterfaceResult" />
+  <TypeSignature Language="F#" Value="type CustomQueryInterfaceResult = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceResult.Failed" />
       <MemberSignature Language="VB.NET" Value="Failed" />
       <MemberSignature Language="C++ CLI" Value="Failed" />
+      <MemberSignature Language="F#" Value="Failed = 2" Usage="System.Runtime.InteropServices.CustomQueryInterfaceResult.Failed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled" />
       <MemberSignature Language="VB.NET" Value="Handled" />
       <MemberSignature Language="C++ CLI" Value="Handled" />
+      <MemberSignature Language="F#" Value="Handled = 0" Usage="System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled" />
       <MemberSignature Language="VB.NET" Value="NotHandled" />
       <MemberSignature Language="C++ CLI" Value="NotHandled" />
+      <MemberSignature Language="F#" Value="NotHandled = 1" Usage="System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

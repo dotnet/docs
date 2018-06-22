@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PaintEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PaintEventArgs&#xA;Inherits EventArgs&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PaintEventArgs : EventArgs, IDisposable" />
+  <TypeSignature Language="F#" Value="type PaintEventArgs = class&#xA;    inherit EventArgs&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipRect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PaintEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PaintEventArgs(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipRect);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.PaintEventArgs : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; System.Windows.Forms.PaintEventArgs" Usage="new System.Windows.Forms.PaintEventArgs (graphics, clipRect)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PaintEventArgs.ClipRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClipRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ClipRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClipRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.PaintEventArgs.ClipRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PaintEventArgs.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="paintEventArgs.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PaintEventArgs.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="paintEventArgs.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PaintEventArgs.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!PaintEventArgs ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="paintEventArgs.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PaintEventArgs.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Windows.Forms.PaintEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

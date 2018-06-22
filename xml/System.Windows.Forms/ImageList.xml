@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImageList" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageList&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageList sealed : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type ImageList = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageList(System::ComponentModel::IContainer ^ container);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ImageList : System.ComponentModel.IContainer -&gt; System.Windows.Forms.ImageList" Usage="new System.Windows.Forms.ImageList container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ColorDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property ColorDepth As ColorDepth" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ColorDepth ColorDepth { System::Windows::Forms::ColorDepth get(); void set(System::Windows::Forms::ColorDepth value); };" />
+      <MemberSignature Language="F#" Value="member this.ColorDepth : System.Windows.Forms.ColorDepth with get, set" Usage="System.Windows.Forms.ImageList.ColorDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="imageList.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.Draw(System.Drawing.Graphics,System.Drawing.Point,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Draw (g As Graphics, pt As Point, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Draw(System::Drawing::Graphics ^ g, System::Drawing::Point pt, int index);" />
+      <MemberSignature Language="F#" Value="member this.Draw : System.Drawing.Graphics * System.Drawing.Point * int -&gt; unit" Usage="imageList.Draw (g, pt, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.Draw(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Draw (g As Graphics, x As Integer, y As Integer, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Draw(System::Drawing::Graphics ^ g, int x, int y, int index);" />
+      <MemberSignature Language="F#" Value="member this.Draw : System.Drawing.Graphics * int * int * int -&gt; unit" Usage="imageList.Draw (g, x, y, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -274,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.Draw(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Draw (g As Graphics, x As Integer, y As Integer, width As Integer, height As Integer, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Draw(System::Drawing::Graphics ^ g, int x, int y, int width, int height, int index);" />
+      <MemberSignature Language="F#" Value="member this.Draw : System.Drawing.Graphics * int * int * int * int * int -&gt; unit" Usage="imageList.Draw (g, x, y, width, height, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -319,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Forms.ImageList.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.HandleCreated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandleCreated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HandleCreated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandleCreated : bool" Usage="System.Windows.Forms.ImageList.HandleCreated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -390,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.Images" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Images As ImageList.ImageCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList::ImageCollection ^ Images { System::Windows::Forms::ImageList::ImageCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Images : System.Windows.Forms.ImageList.ImageCollection" Usage="System.Windows.Forms.ImageList.Images" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -437,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size ImageSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ImageList.ImageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -492,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageStream" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageStream As ImageListStreamer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageListStreamer ^ ImageStream { System::Windows::Forms::ImageListStreamer ^ get(); void set(System::Windows::Forms::ImageListStreamer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageStream : System.Windows.Forms.ImageListStreamer with get, set" Usage="System.Windows.Forms.ImageList.ImageStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -533,6 +545,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ImageList.RecreateHandle" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RecreateHandle As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RecreateHandle;" />
+      <MemberSignature Language="F#" Value="member this.RecreateHandle : EventHandler " Usage="member this.RecreateHandle : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -577,6 +590,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.ImageList.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -611,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="imageList.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -639,6 +654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.TransparentColor" />
       <MemberSignature Language="VB.NET" Value="Public Property TransparentColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color TransparentColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.TransparentColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ImageList.TransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

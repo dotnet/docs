@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SiteMap" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteMap" />
   <TypeSignature Language="C++ CLI" Value="public ref class SiteMap abstract sealed" />
+  <TypeSignature Language="F#" Value="type SiteMap = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.CurrentNode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentNode As SiteMapNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SiteMapNode ^ CurrentNode { System::Web::SiteMapNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentNode : System.Web.SiteMapNode" Usage="System.Web.SiteMap.CurrentNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Enabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool" Usage="System.Web.SiteMap.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Provider As SiteMapProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SiteMapProvider ^ Provider { System::Web::SiteMapProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.SiteMapProvider" Usage="System.Web.SiteMap.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.Providers" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As SiteMapProviderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SiteMapProviderCollection ^ Providers { System::Web::SiteMapProviderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.SiteMapProviderCollection" Usage="System.Web.SiteMap.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +259,7 @@ AccessSiteMapProvider   Samples.AspNet.AccessSiteMapProvider
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.RootNode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RootNode As SiteMapNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SiteMapNode ^ RootNode { System::Web::SiteMapNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootNode : System.Web.SiteMapNode" Usage="System.Web.SiteMap.RootNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +309,7 @@ AccessSiteMapProvider   Samples.AspNet.AccessSiteMapProvider
       <MemberSignature Language="DocId" Value="E:System.Web.SiteMap.SiteMapResolve" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event SiteMapResolve As SiteMapResolveEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::Web::SiteMapResolveEventHandler ^ SiteMapResolve;" />
+      <MemberSignature Language="F#" Value="member this.SiteMapResolve : System.Web.SiteMapResolveEventHandler " Usage="member this.SiteMapResolve : System.Web.SiteMapResolveEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridColumnHeadersPresenterAutomationPeer&#xA;Inherits ItemsControlAutomationPeer&#xA;Implements IItemContainerProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumnHeadersPresenterAutomationPeer sealed : System::Windows::Automation::Peers::ItemsControlAutomationPeer, System::Windows::Automation::Provider::IItemContainerProvider" />
+  <TypeSignature Language="F#" Value="type DataGridColumnHeadersPresenterAutomationPeer = class&#xA;    inherit ItemsControlAutomationPeer&#xA;    interface IItemContainerProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.#ctor(System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridColumnHeadersPresenter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnHeadersPresenterAutomationPeer(System::Windows::Controls::Primitives::DataGridColumnHeadersPresenter ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer : System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter -&gt; System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer" Usage="new System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (column As Object) As ItemAutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ column);" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="dataGridColumnHeadersPresenterAutomationPeer.CreateItemAutomationPeer column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="dataGridColumnHeadersPresenterAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="dataGridColumnHeadersPresenterAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="dataGridColumnHeadersPresenterAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.IsContentElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="dataGridColumnHeadersPresenterAutomationPeer.IsContentElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

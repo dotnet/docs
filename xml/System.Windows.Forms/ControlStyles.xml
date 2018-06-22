@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlStyles" />
   <TypeSignature Language="VB.NET" Value="Public Enum ControlStyles" />
   <TypeSignature Language="C++ CLI" Value="public enum class ControlStyles" />
+  <TypeSignature Language="F#" Value="type ControlStyles = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.AllPaintingInWmPaint" />
       <MemberSignature Language="VB.NET" Value="AllPaintingInWmPaint" />
       <MemberSignature Language="C++ CLI" Value="AllPaintingInWmPaint" />
+      <MemberSignature Language="F#" Value="AllPaintingInWmPaint = 8192" Usage="System.Windows.Forms.ControlStyles.AllPaintingInWmPaint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +88,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.CacheText" />
       <MemberSignature Language="VB.NET" Value="CacheText" />
       <MemberSignature Language="C++ CLI" Value="CacheText" />
+      <MemberSignature Language="F#" Value="CacheText = 16384" Usage="System.Windows.Forms.ControlStyles.CacheText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +108,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.ContainerControl" />
       <MemberSignature Language="VB.NET" Value="ContainerControl" />
       <MemberSignature Language="C++ CLI" Value="ContainerControl" />
+      <MemberSignature Language="F#" Value="ContainerControl = 1" Usage="System.Windows.Forms.ControlStyles.ContainerControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +128,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.DoubleBuffer" />
       <MemberSignature Language="VB.NET" Value="DoubleBuffer" />
       <MemberSignature Language="C++ CLI" Value="DoubleBuffer" />
+      <MemberSignature Language="F#" Value="DoubleBuffer = 65536" Usage="System.Windows.Forms.ControlStyles.DoubleBuffer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +153,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.EnableNotifyMessage" />
       <MemberSignature Language="VB.NET" Value="EnableNotifyMessage" />
       <MemberSignature Language="C++ CLI" Value="EnableNotifyMessage" />
+      <MemberSignature Language="F#" Value="EnableNotifyMessage = 32768" Usage="System.Windows.Forms.ControlStyles.EnableNotifyMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +173,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.FixedHeight" />
       <MemberSignature Language="VB.NET" Value="FixedHeight" />
       <MemberSignature Language="C++ CLI" Value="FixedHeight" />
+      <MemberSignature Language="F#" Value="FixedHeight = 64" Usage="System.Windows.Forms.ControlStyles.FixedHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -186,6 +193,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.FixedWidth" />
       <MemberSignature Language="VB.NET" Value="FixedWidth" />
       <MemberSignature Language="C++ CLI" Value="FixedWidth" />
+      <MemberSignature Language="F#" Value="FixedWidth = 32" Usage="System.Windows.Forms.ControlStyles.FixedWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -205,6 +213,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.Opaque" />
       <MemberSignature Language="VB.NET" Value="Opaque" />
       <MemberSignature Language="C++ CLI" Value="Opaque" />
+      <MemberSignature Language="F#" Value="Opaque = 4" Usage="System.Windows.Forms.ControlStyles.Opaque" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +233,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer" />
       <MemberSignature Language="VB.NET" Value="OptimizedDoubleBuffer" />
       <MemberSignature Language="C++ CLI" Value="OptimizedDoubleBuffer" />
+      <MemberSignature Language="F#" Value="OptimizedDoubleBuffer = 131072" Usage="System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -243,6 +253,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.ResizeRedraw" />
       <MemberSignature Language="VB.NET" Value="ResizeRedraw" />
       <MemberSignature Language="C++ CLI" Value="ResizeRedraw" />
+      <MemberSignature Language="F#" Value="ResizeRedraw = 16" Usage="System.Windows.Forms.ControlStyles.ResizeRedraw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -262,6 +273,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.Selectable" />
       <MemberSignature Language="VB.NET" Value="Selectable" />
       <MemberSignature Language="C++ CLI" Value="Selectable" />
+      <MemberSignature Language="F#" Value="Selectable = 512" Usage="System.Windows.Forms.ControlStyles.Selectable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +293,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.StandardClick" />
       <MemberSignature Language="VB.NET" Value="StandardClick" />
       <MemberSignature Language="C++ CLI" Value="StandardClick" />
+      <MemberSignature Language="F#" Value="StandardClick = 256" Usage="System.Windows.Forms.ControlStyles.StandardClick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -300,6 +313,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.StandardDoubleClick" />
       <MemberSignature Language="VB.NET" Value="StandardDoubleClick" />
       <MemberSignature Language="C++ CLI" Value="StandardDoubleClick" />
+      <MemberSignature Language="F#" Value="StandardDoubleClick = 4096" Usage="System.Windows.Forms.ControlStyles.StandardDoubleClick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -319,6 +333,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.SupportsTransparentBackColor" />
       <MemberSignature Language="VB.NET" Value="SupportsTransparentBackColor" />
       <MemberSignature Language="C++ CLI" Value="SupportsTransparentBackColor" />
+      <MemberSignature Language="F#" Value="SupportsTransparentBackColor = 2048" Usage="System.Windows.Forms.ControlStyles.SupportsTransparentBackColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -338,6 +353,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.UserMouse" />
       <MemberSignature Language="VB.NET" Value="UserMouse" />
       <MemberSignature Language="C++ CLI" Value="UserMouse" />
+      <MemberSignature Language="F#" Value="UserMouse = 1024" Usage="System.Windows.Forms.ControlStyles.UserMouse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -357,6 +373,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.UserPaint" />
       <MemberSignature Language="VB.NET" Value="UserPaint" />
       <MemberSignature Language="C++ CLI" Value="UserPaint" />
+      <MemberSignature Language="F#" Value="UserPaint = 2" Usage="System.Windows.Forms.ControlStyles.UserPaint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -376,6 +393,7 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.UseTextForAccessibility" />
       <MemberSignature Language="VB.NET" Value="UseTextForAccessibility" />
       <MemberSignature Language="C++ CLI" Value="UseTextForAccessibility" />
+      <MemberSignature Language="F#" Value="UseTextForAccessibility = 262144" Usage="System.Windows.Forms.ControlStyles.UseTextForAccessibility" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

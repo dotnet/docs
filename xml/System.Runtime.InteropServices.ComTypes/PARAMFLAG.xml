@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.PARAMFLAG" />
   <TypeSignature Language="VB.NET" Value="Public Enum PARAMFLAG" />
   <TypeSignature Language="C++ CLI" Value="public enum class PARAMFLAG" />
+  <TypeSignature Language="F#" Value="type PARAMFLAG = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASCUSTDATA" />
       <MemberSignature Language="VB.NET" Value="PARAMFLAG_FHASCUSTDATA" />
       <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FHASCUSTDATA" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FHASCUSTDATA = 64" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASCUSTDATA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASDEFAULT" />
       <MemberSignature Language="VB.NET" Value="PARAMFLAG_FHASDEFAULT" />
       <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FHASDEFAULT" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FHASDEFAULT = 32" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FIN" />
       <MemberSignature Language="VB.NET" Value="PARAMFLAG_FIN" />
       <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FIN" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FIN = 1" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FIN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FLCID" />
       <MemberSignature Language="VB.NET" Value="PARAMFLAG_FLCID" />
       <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FLCID" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FLCID = 4" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FLCID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOPT" />
       <MemberSignature Language="VB.NET" Value="PARAMFLAG_FOPT" />
       <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FOPT" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FOPT = 16" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOPT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOUT" />
       <MemberSignature Language="VB.NET" Value="PARAMFLAG_FOUT" />
       <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FOUT" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FOUT = 2" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOUT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FRETVAL" />
       <MemberSignature Language="VB.NET" Value="PARAMFLAG_FRETVAL" />
       <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FRETVAL" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FRETVAL = 8" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FRETVAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_NONE" />
       <MemberSignature Language="VB.NET" Value="PARAMFLAG_NONE" />
       <MemberSignature Language="C++ CLI" Value="PARAMFLAG_NONE" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_NONE = 0" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_NONE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

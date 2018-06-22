@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IStyleConnector" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStyleConnector" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStyleConnector" />
+  <TypeSignature Language="F#" Value="type IStyleConnector = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IStyleConnector.Connect(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (connectionId As Integer, target As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(int connectionId, System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Connect : int * obj -&gt; unit" Usage="iStyleConnector.Connect (connectionId, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

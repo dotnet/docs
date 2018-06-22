@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CommandBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class CommandBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommandBinding" />
+  <TypeSignature Language="F#" Value="type CommandBinding = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (command As ICommand)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandBinding(System::Windows::Input::ICommand ^ command);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.CommandBinding : System.Windows.Input.ICommand -&gt; System.Windows.Input.CommandBinding" Usage="new System.Windows.Input.CommandBinding command" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.ExecutedRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (command As ICommand, executed As ExecutedRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandBinding(System::Windows::Input::ICommand ^ command, System::Windows::Input::ExecutedRoutedEventHandler ^ executed);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.CommandBinding : System.Windows.Input.ICommand * System.Windows.Input.ExecutedRoutedEventHandler -&gt; System.Windows.Input.CommandBinding" Usage="new System.Windows.Input.CommandBinding (command, executed)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.ExecutedRoutedEventHandler,System.Windows.Input.CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (command As ICommand, executed As ExecutedRoutedEventHandler, canExecute As CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandBinding(System::Windows::Input::ICommand ^ command, System::Windows::Input::ExecutedRoutedEventHandler ^ executed, System::Windows::Input::CanExecuteRoutedEventHandler ^ canExecute);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.CommandBinding : System.Windows.Input.ICommand * System.Windows.Input.ExecutedRoutedEventHandler * System.Windows.Input.CanExecuteRoutedEventHandler -&gt; System.Windows.Input.CommandBinding" Usage="new System.Windows.Input.CommandBinding (command, executed, canExecute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandBinding.CanExecute" />
       <MemberSignature Language="VB.NET" Value="Public Event CanExecute As CanExecuteRoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::CanExecuteRoutedEventHandler ^ CanExecute;" />
+      <MemberSignature Language="F#" Value="member this.CanExecute : System.Windows.Input.CanExecuteRoutedEventHandler " Usage="member this.CanExecute : System.Windows.Input.CanExecuteRoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBinding.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="System.Windows.Input.CommandBinding.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandBinding.Executed" />
       <MemberSignature Language="VB.NET" Value="Public Event Executed As ExecutedRoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::ExecutedRoutedEventHandler ^ Executed;" />
+      <MemberSignature Language="F#" Value="member this.Executed : System.Windows.Input.ExecutedRoutedEventHandler " Usage="member this.Executed : System.Windows.Input.ExecutedRoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -292,6 +299,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandBinding.PreviewCanExecute" />
       <MemberSignature Language="VB.NET" Value="Public Event PreviewCanExecute As CanExecuteRoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::CanExecuteRoutedEventHandler ^ PreviewCanExecute;" />
+      <MemberSignature Language="F#" Value="member this.PreviewCanExecute : System.Windows.Input.CanExecuteRoutedEventHandler " Usage="member this.PreviewCanExecute : System.Windows.Input.CanExecuteRoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandBinding.PreviewExecuted" />
       <MemberSignature Language="VB.NET" Value="Public Event PreviewExecuted As ExecutedRoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::ExecutedRoutedEventHandler ^ PreviewExecuted;" />
+      <MemberSignature Language="F#" Value="member this.PreviewExecuted : System.Windows.Input.ExecutedRoutedEventHandler " Usage="member this.PreviewExecuted : System.Windows.Input.ExecutedRoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

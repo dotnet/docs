@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlDeferringLoader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XamlDeferringLoader" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlDeferringLoader abstract" />
+  <TypeSignature Language="F#" Value="type XamlDeferringLoader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Load(class System.Xaml.XamlReader xamlReader, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlDeferringLoader.Load(System.Xaml.XamlReader,System.IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Load(System::Xaml::XamlReader ^ xamlReader, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Xaml.XamlReader * IServiceProvider -&gt; obj" Usage="xamlDeferringLoader.Load (xamlReader, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlDeferringLoader.Save(System.Object,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Save (value As Object, serviceProvider As IServiceProvider) As XamlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xaml::XamlReader ^ Save(System::Object ^ value, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member Save : obj * IServiceProvider -&gt; System.Xaml.XamlReader" Usage="xamlDeferringLoader.Save (value, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.MalformedLineException" />
   <TypeSignature Language="VB.NET" Value="Public Class MalformedLineException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class MalformedLineException : Exception" />
+  <TypeSignature Language="F#" Value="type MalformedLineException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.MalformedLineException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MalformedLineException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.FileIO.MalformedLineException : string -&gt; Microsoft.VisualBasic.FileIO.MalformedLineException" Usage="new Microsoft.VisualBasic.FileIO.MalformedLineException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.MalformedLineException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MalformedLineException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.FileIO.MalformedLineException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.VisualBasic.FileIO.MalformedLineException" Usage="new Microsoft.VisualBasic.FileIO.MalformedLineException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.MalformedLineException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MalformedLineException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.FileIO.MalformedLineException : string * Exception -&gt; Microsoft.VisualBasic.FileIO.MalformedLineException" Usage="new Microsoft.VisualBasic.FileIO.MalformedLineException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.MalformedLineException.#ctor(System.String,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, lineNumber As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MalformedLineException(System::String ^ message, long lineNumber);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.FileIO.MalformedLineException : string * int64 -&gt; Microsoft.VisualBasic.FileIO.MalformedLineException" Usage="new Microsoft.VisualBasic.FileIO.MalformedLineException (message, lineNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.MalformedLineException.#ctor(System.String,System.Int64,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, lineNumber As Long, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MalformedLineException(System::String ^ message, long lineNumber, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.FileIO.MalformedLineException : string * int64 * Exception -&gt; Microsoft.VisualBasic.FileIO.MalformedLineException" Usage="new Microsoft.VisualBasic.FileIO.MalformedLineException (message, lineNumber, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -257,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.MalformedLineException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="malformedLineException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -297,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.MalformedLineException.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property LineNumber As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long LineNumber { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int64 with get, set" Usage="Microsoft.VisualBasic.FileIO.MalformedLineException.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -330,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="malformedLineException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

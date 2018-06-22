@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodInfoExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module MethodInfoExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class MethodInfoExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type MethodInfoExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfoExtensions.GetBaseDefinition(System.Reflection.MethodInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBaseDefinition (method As MethodInfo) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetBaseDefinition(System::Reflection::MethodInfo ^ method);" />
+      <MemberSignature Language="F#" Value="static member GetBaseDefinition : System.Reflection.MethodInfo -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.MethodInfoExtensions.GetBaseDefinition method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>

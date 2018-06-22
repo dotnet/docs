@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerFieldCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DataPagerFieldCollection&#xA;Inherits StateManagedCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataPagerFieldCollection : System::Web::UI::StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type DataPagerFieldCollection = class&#xA;    inherit StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataPager dataPager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.#ctor(System.Web.UI.WebControls.DataPager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPagerFieldCollection(System::Web::UI::WebControls::DataPager ^ dataPager);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataPagerFieldCollection : System.Web.UI.WebControls.DataPager -&gt; System.Web.UI.WebControls.DataPagerFieldCollection" Usage="new System.Web.UI.WebControls.DataPagerFieldCollection dataPager" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Add(System.Web.UI.WebControls.DataPagerField)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (field As DataPagerField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::WebControls::DataPagerField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.DataPagerField -&gt; unit" Usage="dataPagerFieldCollection.Add field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CloneFields(System.Web.UI.WebControls.DataPager)" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneFields (pager As DataPager) As DataPagerFieldCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::DataPagerFieldCollection ^ CloneFields(System::Web::UI::WebControls::DataPager ^ pager);" />
+      <MemberSignature Language="F#" Value="member this.CloneFields : System.Web.UI.WebControls.DataPager -&gt; System.Web.UI.WebControls.DataPagerFieldCollection" Usage="dataPagerFieldCollection.CloneFields pager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Contains(System.Web.UI.WebControls.DataPagerField)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (field As DataPagerField) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::DataPagerField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.DataPagerField -&gt; bool" Usage="dataPagerFieldCollection.Contains field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CopyTo(System.Web.UI.WebControls.DataPagerField[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataPagerField(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::DataPagerField ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.DataPagerField[] * int -&gt; unit" Usage="dataPagerFieldCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
+      <MemberSignature Language="F#" Value="abstract member CreateKnownType : int -&gt; obj&#xA;override this.CreateKnownType : int -&gt; obj" Usage="dataPagerFieldCollection.CreateKnownType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event FieldsChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FieldsChanged;" />
+      <MemberSignature Language="F#" Value="member this.FieldsChanged : EventHandler " Usage="member this.FieldsChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
+      <MemberSignature Language="F#" Value="abstract member GetKnownTypes : unit -&gt; Type[]&#xA;override this.GetKnownTypes : unit -&gt; Type[]" Usage="dataPagerFieldCollection.GetKnownTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.IndexOf(System.Web.UI.WebControls.DataPagerField)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (field As DataPagerField) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::DataPagerField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.DataPagerField -&gt; int" Usage="dataPagerFieldCollection.IndexOf field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -304,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, field As DataPagerField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::DataPagerField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.DataPagerField -&gt; unit" Usage="dataPagerFieldCollection.Insert (index, field)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -330,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerFieldCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataPagerField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataPagerField ^ default[int] { System::Web::UI::WebControls::DataPagerField ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.DataPagerField" Usage="System.Web.UI.WebControls.DataPagerFieldCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -360,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnClearComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
+      <MemberSignature Language="F#" Value="abstract member OnClearComplete : unit -&gt; unit&#xA;override this.OnClearComplete : unit -&gt; unit" Usage="dataPagerFieldCollection.OnClearComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -388,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsertComplete : int * obj -&gt; unit&#xA;override this.OnInsertComplete : int * obj -&gt; unit" Usage="dataPagerFieldCollection.OnInsertComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -421,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnRemoveComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemoveComplete : int * obj -&gt; unit&#xA;override this.OnRemoveComplete : int * obj -&gt; unit" Usage="dataPagerFieldCollection.OnRemoveComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -455,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="dataPagerFieldCollection.OnValidate o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -490,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (field As DataPagerField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::DataPagerField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.DataPagerField -&gt; unit" Usage="dataPagerFieldCollection.Remove field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -513,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="dataPagerFieldCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -536,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.SetDirtyObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member SetDirtyObject : obj -&gt; unit&#xA;override this.SetDirtyObject : obj -&gt; unit" Usage="dataPagerFieldCollection.SetDirtyObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

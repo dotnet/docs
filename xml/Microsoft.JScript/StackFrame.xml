@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.StackFrame" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StackFrame&#xA;Inherits ScriptObject&#xA;Implements IActivationObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class StackFrame sealed : Microsoft::JScript::ScriptObject, Microsoft::JScript::IActivationObject" />
+  <TypeSignature Language="F#" Value="type StackFrame = class&#xA;    inherit ScriptObject&#xA;    interface IActivationObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.StackFrame.closureInstance" />
       <MemberSignature Language="VB.NET" Value="Public closureInstance As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ closureInstance;" />
+      <MemberSignature Language="F#" Value="val mutable closureInstance : obj" Usage="Microsoft.JScript.StackFrame.closureInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetDefaultThisObject" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDefaultThisObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetDefaultThisObject();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultThisObject : unit -&gt; obj&#xA;override this.GetDefaultThisObject : unit -&gt; obj" Usage="stackFrame.GetDefaultThisObject " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetDefaultThisObject</InterfaceMember>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetField(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetField (name As String, lexLevel As Integer) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetField(System::String ^ name, int lexLevel);" />
+      <MemberSignature Language="F#" Value="override this.GetField : string * int -&gt; System.Reflection.FieldInfo" Usage="stackFrame.GetField (name, lexLevel)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetField(System.String,System.Int32)</InterfaceMember>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetGlobalScope" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGlobalScope () As GlobalScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::GlobalScope ^ GetGlobalScope();" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalScope : unit -&gt; Microsoft.JScript.GlobalScope&#xA;override this.GetGlobalScope : unit -&gt; Microsoft.JScript.GlobalScope" Usage="stackFrame.GetGlobalScope " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetGlobalScope</InterfaceMember>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetMember(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="stackFrame.GetMember (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetMembers(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="stackFrame.GetMembers bindingAttr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetMemberValue(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMemberValue (name As String, lexlevel As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetMemberValue(System::String ^ name, int lexlevel);" />
+      <MemberSignature Language="F#" Value="abstract member GetMemberValue : string * int -&gt; obj&#xA;override this.GetMemberValue : string * int -&gt; obj" Usage="stackFrame.GetMemberValue (name, lexlevel)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetMemberValue(System.String,System.Int32)</InterfaceMember>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.StackFrame.localVars" />
       <MemberSignature Language="VB.NET" Value="Public localVars As Object() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Object ^&gt; ^ localVars;" />
+      <MemberSignature Language="F#" Value="val mutable localVars : obj[]" Usage="Microsoft.JScript.StackFrame.localVars" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -317,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.PushStackFrameForMethod(System.Object,Microsoft.JScript.JSLocalField[],Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PushStackFrameForMethod (thisob As Object, fields As JSLocalField(), engine As VsaEngine)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PushStackFrameForMethod(System::Object ^ thisob, cli::array &lt;Microsoft::JScript::JSLocalField ^&gt; ^ fields, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member PushStackFrameForMethod : obj * Microsoft.JScript.JSLocalField[] * Microsoft.JScript.Vsa.VsaEngine -&gt; unit" Usage="Microsoft.JScript.StackFrame.PushStackFrameForMethod (thisob, fields, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -350,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.PushStackFrameForStaticMethod(System.RuntimeTypeHandle,Microsoft.JScript.JSLocalField[],Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PushStackFrameForStaticMethod (thisclass As RuntimeTypeHandle, fields As JSLocalField(), engine As VsaEngine)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PushStackFrameForStaticMethod(RuntimeTypeHandle thisclass, cli::array &lt;Microsoft::JScript::JSLocalField ^&gt; ^ fields, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member PushStackFrameForStaticMethod : RuntimeTypeHandle * Microsoft.JScript.JSLocalField[] * Microsoft.JScript.Vsa.VsaEngine -&gt; unit" Usage="Microsoft.JScript.StackFrame.PushStackFrameForStaticMethod (thisclass, fields, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

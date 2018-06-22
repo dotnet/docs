@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeConstructor" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeConstructor&#xA;Inherits CodeMemberMethod" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeConstructor : System::CodeDom::CodeMemberMethod" />
+  <TypeSignature Language="F#" Value="type CodeConstructor = class&#xA;    inherit CodeMemberMethod" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConstructor.BaseConstructorArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseConstructorArgs As CodeExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ BaseConstructorArgs { System::CodeDom::CodeExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseConstructorArgs : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeConstructor.BaseConstructorArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConstructor.ChainedConstructorArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChainedConstructorArgs As CodeExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ ChainedConstructorArgs { System::CodeDom::CodeExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChainedConstructorArgs : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeConstructor.ChainedConstructorArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

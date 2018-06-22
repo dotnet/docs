@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogPermission&#xA;Inherits ResourcePermissionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogPermission sealed : System::Security::Permissions::ResourcePermissionBase" />
+  <TypeSignature Language="F#" Value="type EventLogPermission = class&#xA;    inherit ResourcePermissionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermission.#ctor(System.Diagnostics.EventLogPermissionEntry[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccessEntries As EventLogPermissionEntry())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermission(cli::array &lt;System::Diagnostics::EventLogPermissionEntry ^&gt; ^ permissionAccessEntries);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogPermission : System.Diagnostics.EventLogPermissionEntry[] -&gt; System.Diagnostics.EventLogPermission" Usage="new System.Diagnostics.EventLogPermission permissionAccessEntries" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogPermission : System.Security.Permissions.PermissionState -&gt; System.Diagnostics.EventLogPermission" Usage="new System.Diagnostics.EventLogPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermission.#ctor(System.Diagnostics.EventLogPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As EventLogPermissionAccess, machineName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermission(System::Diagnostics::EventLogPermissionAccess permissionAccess, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogPermission : System.Diagnostics.EventLogPermissionAccess * string -&gt; System.Diagnostics.EventLogPermission" Usage="new System.Diagnostics.EventLogPermission (permissionAccess, machineName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogPermission.PermissionEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionEntries As EventLogPermissionEntryCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogPermissionEntryCollection ^ PermissionEntries { System::Diagnostics::EventLogPermissionEntryCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionEntries : System.Diagnostics.EventLogPermissionEntryCollection" Usage="System.Diagnostics.EventLogPermission.PermissionEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

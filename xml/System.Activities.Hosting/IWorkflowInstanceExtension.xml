@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.IWorkflowInstanceExtension" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowInstanceExtension" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowInstanceExtension" />
+  <TypeSignature Language="F#" Value="type IWorkflowInstanceExtension = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAdditionalExtensions () As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetAdditionalExtensions();" />
+      <MemberSignature Language="F#" Value="abstract member GetAdditionalExtensions : unit -&gt; seq&lt;obj&gt;" Usage="iWorkflowInstanceExtension.GetAdditionalExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance(System.Activities.Hosting.WorkflowInstanceProxy)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetInstance (instance As WorkflowInstanceProxy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInstance(System::Activities::Hosting::WorkflowInstanceProxy ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member SetInstance : System.Activities.Hosting.WorkflowInstanceProxy -&gt; unit" Usage="iWorkflowInstanceExtension.SetInstance instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

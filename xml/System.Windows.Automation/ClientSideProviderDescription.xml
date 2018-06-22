@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSideProviderDescription" />
   <TypeSignature Language="VB.NET" Value="Public Structure ClientSideProviderDescription" />
   <TypeSignature Language="C++ CLI" Value="public value class ClientSideProviderDescription" />
+  <TypeSignature Language="F#" Value="type ClientSideProviderDescription = struct" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.ClientSideProviderFactoryCallback clientSideProviderFactoryCallback, string className) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ClientSideProviderDescription.#ctor(System.Windows.Automation.ClientSideProviderFactoryCallback,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientSideProviderDescription(System::Windows::Automation::ClientSideProviderFactoryCallback ^ clientSideProviderFactoryCallback, System::String ^ className);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.ClientSideProviderDescription : System.Windows.Automation.ClientSideProviderFactoryCallback * string -&gt; System.Windows.Automation.ClientSideProviderDescription" Usage="new System.Windows.Automation.ClientSideProviderDescription (clientSideProviderFactoryCallback, className)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.ClientSideProviderFactoryCallback clientSideProviderFactoryCallback, string className, string imageName, valuetype System.Windows.Automation.ClientSideProviderMatchIndicator flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ClientSideProviderDescription.#ctor(System.Windows.Automation.ClientSideProviderFactoryCallback,System.String,System.String,System.Windows.Automation.ClientSideProviderMatchIndicator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientSideProviderDescription(System::Windows::Automation::ClientSideProviderFactoryCallback ^ clientSideProviderFactoryCallback, System::String ^ className, System::String ^ imageName, System::Windows::Automation::ClientSideProviderMatchIndicator flags);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.ClientSideProviderDescription : System.Windows.Automation.ClientSideProviderFactoryCallback * string * string * System.Windows.Automation.ClientSideProviderMatchIndicator -&gt; System.Windows.Automation.ClientSideProviderDescription" Usage="new System.Windows.Automation.ClientSideProviderDescription (clientSideProviderFactoryCallback, className, imageName, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ClientSideProviderDescription.ClassName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassName : string" Usage="System.Windows.Automation.ClientSideProviderDescription.ClassName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ClientSideProviderDescription.ClientSideProviderFactoryCallback" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientSideProviderFactoryCallback As ClientSideProviderFactoryCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ClientSideProviderFactoryCallback ^ ClientSideProviderFactoryCallback { System::Windows::Automation::ClientSideProviderFactoryCallback ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientSideProviderFactoryCallback : System.Windows.Automation.ClientSideProviderFactoryCallback" Usage="System.Windows.Automation.ClientSideProviderDescription.ClientSideProviderFactoryCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ClientSideProviderDescription.Flags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Flags As ClientSideProviderMatchIndicator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ClientSideProviderMatchIndicator Flags { System::Windows::Automation::ClientSideProviderMatchIndicator get(); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Windows.Automation.ClientSideProviderMatchIndicator" Usage="System.Windows.Automation.ClientSideProviderDescription.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ClientSideProviderDescription.ImageName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImageName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageName : string" Usage="System.Windows.Automation.ClientSideProviderDescription.ImageName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

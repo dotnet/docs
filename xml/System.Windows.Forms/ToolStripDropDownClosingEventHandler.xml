@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownClosingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolStripDropDownClosingEventHandler(sender As Object, e As ToolStripDropDownClosingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ToolStripDropDownClosingEventHandler(System::Object ^ sender, ToolStripDropDownClosingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ToolStripDropDownClosingEventHandler = delegate of obj * ToolStripDropDownClosingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

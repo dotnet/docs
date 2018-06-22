@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.MulticastDelegate" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MulticastDelegate&#xA;Inherits Delegate" />
   <TypeSignature Language="C++ CLI" Value="public ref class MulticastDelegate abstract : Delegate" />
+  <TypeSignature Language="F#" Value="type MulticastDelegate = class&#xA;    inherit Delegate" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.#ctor(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (target As Object, method As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MulticastDelegate(System::Object ^ target, System::String ^ method);" />
+      <MemberSignature Language="F#" Value="new MulticastDelegate : obj * string -&gt; MulticastDelegate" Usage="new System.MulticastDelegate (target, method)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.#ctor(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (target As Type, method As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MulticastDelegate(Type ^ target, System::String ^ method);" />
+      <MemberSignature Language="F#" Value="new MulticastDelegate : Type * string -&gt; MulticastDelegate" Usage="new System.MulticastDelegate (target, method)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.CombineImpl(System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function CombineImpl (follow As Delegate) As Delegate" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Delegate ^ CombineImpl(Delegate ^ follow);" />
+      <MemberSignature Language="F#" Value="override this.CombineImpl : Delegate -&gt; Delegate" Usage="multicastDelegate.CombineImpl follow" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.DynamicInvokeImpl(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function DynamicInvokeImpl (args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ DynamicInvokeImpl(cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="override this.DynamicInvokeImpl : obj[] -&gt; obj" Usage="multicastDelegate.DynamicInvokeImpl args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="multicastDelegate.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -277,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="multicastDelegate.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.GetInvocationList" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetInvocationList () As Delegate()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;Delegate ^&gt; ^ GetInvocationList();" />
+      <MemberSignature Language="F#" Value="override this.GetInvocationList : unit -&gt; Delegate[]" Usage="multicastDelegate.GetInvocationList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.GetMethodImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetMethodImpl () As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Reflection::MethodInfo ^ GetMethodImpl();" />
+      <MemberSignature Language="F#" Value="override this.GetMethodImpl : unit -&gt; System.Reflection.MethodInfo" Usage="multicastDelegate.GetMethodImpl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -396,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="multicastDelegate.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -447,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.op_Equality(System.MulticastDelegate,System.MulticastDelegate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (d1 As MulticastDelegate, d2 As MulticastDelegate) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(MulticastDelegate ^ d1, MulticastDelegate ^ d2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : MulticastDelegate * MulticastDelegate -&gt; bool" Usage="d1 = d2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -499,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.op_Inequality(System.MulticastDelegate,System.MulticastDelegate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (d1 As MulticastDelegate, d2 As MulticastDelegate) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(MulticastDelegate ^ d1, MulticastDelegate ^ d2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : MulticastDelegate * MulticastDelegate -&gt; bool" Usage="System.MulticastDelegate.op_Inequality (d1, d2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -551,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.RemoveImpl(System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function RemoveImpl (value As Delegate) As Delegate" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Delegate ^ RemoveImpl(Delegate ^ value);" />
+      <MemberSignature Language="F#" Value="override this.RemoveImpl : Delegate -&gt; Delegate" Usage="multicastDelegate.RemoveImpl value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

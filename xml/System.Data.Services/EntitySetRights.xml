@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.EntitySetRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum EntitySetRights" />
   <TypeSignature Language="C++ CLI" Value="public enum class EntitySetRights" />
+  <TypeSignature Language="F#" Value="type EntitySetRights = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 63" Usage="System.Data.Services.EntitySetRights.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -67,6 +69,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.AllRead" />
       <MemberSignature Language="VB.NET" Value="AllRead" />
       <MemberSignature Language="C++ CLI" Value="AllRead" />
+      <MemberSignature Language="F#" Value="AllRead = 3" Usage="System.Data.Services.EntitySetRights.AllRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -86,6 +89,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.AllWrite" />
       <MemberSignature Language="VB.NET" Value="AllWrite" />
       <MemberSignature Language="C++ CLI" Value="AllWrite" />
+      <MemberSignature Language="F#" Value="AllWrite = 60" Usage="System.Data.Services.EntitySetRights.AllWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -105,6 +109,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Services.EntitySetRights.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -124,6 +129,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.ReadMultiple" />
       <MemberSignature Language="VB.NET" Value="ReadMultiple" />
       <MemberSignature Language="C++ CLI" Value="ReadMultiple" />
+      <MemberSignature Language="F#" Value="ReadMultiple = 2" Usage="System.Data.Services.EntitySetRights.ReadMultiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -143,6 +149,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.ReadSingle" />
       <MemberSignature Language="VB.NET" Value="ReadSingle" />
       <MemberSignature Language="C++ CLI" Value="ReadSingle" />
+      <MemberSignature Language="F#" Value="ReadSingle = 1" Usage="System.Data.Services.EntitySetRights.ReadSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -162,6 +169,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteAppend" />
       <MemberSignature Language="VB.NET" Value="WriteAppend" />
       <MemberSignature Language="C++ CLI" Value="WriteAppend" />
+      <MemberSignature Language="F#" Value="WriteAppend = 4" Usage="System.Data.Services.EntitySetRights.WriteAppend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -181,6 +189,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteDelete" />
       <MemberSignature Language="VB.NET" Value="WriteDelete" />
       <MemberSignature Language="C++ CLI" Value="WriteDelete" />
+      <MemberSignature Language="F#" Value="WriteDelete = 16" Usage="System.Data.Services.EntitySetRights.WriteDelete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -200,6 +209,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteMerge" />
       <MemberSignature Language="VB.NET" Value="WriteMerge" />
       <MemberSignature Language="C++ CLI" Value="WriteMerge" />
+      <MemberSignature Language="F#" Value="WriteMerge = 32" Usage="System.Data.Services.EntitySetRights.WriteMerge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -219,6 +229,7 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteReplace" />
       <MemberSignature Language="VB.NET" Value="WriteReplace" />
       <MemberSignature Language="C++ CLI" Value="WriteReplace" />
+      <MemberSignature Language="F#" Value="WriteReplace = 8" Usage="System.Data.Services.EntitySetRights.WriteReplace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

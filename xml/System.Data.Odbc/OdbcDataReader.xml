@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcDataReader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcDataReader&#xA;Inherits DbDataReader" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcDataReader sealed : System::Data::Common::DbDataReader" />
+  <TypeSignature Language="F#" Value="type OdbcDataReader = class&#xA;    inherit DbDataReader" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="odbcDataReader.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcDataReader.Depth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Data.Odbc.OdbcDataReader.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="odbcDataReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcDataReader.FieldCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.Odbc.OdbcDataReader.FieldCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoolean (i As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetBoolean : int -&gt; bool" Usage="odbcDataReader.GetBoolean i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByte (i As Integer) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetByte : int -&gt; byte" Usage="odbcDataReader.GetByte i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (i As Integer, dataIndex As Long, buffer As Byte(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int i, long dataIndex, cli::array &lt;System::Byte&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="odbcDataReader.GetBytes (i, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetChar(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChar (i As Integer) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetChar : int -&gt; char" Usage="odbcDataReader.GetChar i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -346,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (i As Integer, dataIndex As Long, buffer As Char(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int i, long dataIndex, cli::array &lt;char&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="odbcDataReader.GetChars (i, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -396,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetDataTypeName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataTypeName (i As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetDataTypeName : int -&gt; string" Usage="odbcDataReader.GetDataTypeName i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -424,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetDate(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDate (i As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime GetDate(int i);" />
+      <MemberSignature Language="F#" Value="member this.GetDate : int -&gt; DateTime" Usage="odbcDataReader.GetDate i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -452,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDateTime (i As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetDateTime : int -&gt; DateTime" Usage="odbcDataReader.GetDateTime i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -490,6 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecimal (i As Integer) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetDecimal : int -&gt; decimal" Usage="odbcDataReader.GetDecimal i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -530,6 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDouble (i As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetDouble : int -&gt; double" Usage="odbcDataReader.GetDouble i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -568,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="odbcDataReader.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -600,6 +616,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldType (i As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetFieldType : int -&gt; Type" Usage="odbcDataReader.GetFieldType i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -628,6 +645,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetFloat(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFloat (i As Integer) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetFloat : int -&gt; single" Usage="odbcDataReader.GetFloat i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -666,6 +684,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGuid (i As Integer) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetGuid : int -&gt; Guid" Usage="odbcDataReader.GetGuid i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -704,6 +723,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt16 (i As Integer) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetInt16 : int -&gt; int16" Usage="odbcDataReader.GetInt16 i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -742,6 +762,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt32 (i As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetInt32 : int -&gt; int" Usage="odbcDataReader.GetInt32 i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -780,6 +801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt64 (i As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetInt64 : int -&gt; int64" Usage="odbcDataReader.GetInt64 i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -818,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (i As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetName : int -&gt; string" Usage="odbcDataReader.GetName i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -847,6 +870,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetOrdinal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOrdinal (value As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.GetOrdinal : string -&gt; int" Usage="odbcDataReader.GetOrdinal value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -895,6 +919,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetSchemaTable" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchemaTable () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchemaTable();" />
+      <MemberSignature Language="F#" Value="override this.GetSchemaTable : unit -&gt; System.Data.DataTable" Usage="odbcDataReader.GetSchemaTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -964,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (i As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetString : int -&gt; string" Usage="odbcDataReader.GetString i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1002,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTime (i As Integer) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan GetTime(int i);" />
+      <MemberSignature Language="F#" Value="member this.GetTime : int -&gt; TimeSpan" Usage="odbcDataReader.GetTime i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1030,6 +1057,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (i As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="odbcDataReader.GetValue i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1065,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.GetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.GetValues : obj[] -&gt; int" Usage="odbcDataReader.GetValues values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1110,6 +1139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcDataReader.HasRows" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasRows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasRows { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasRows : bool" Usage="System.Data.Odbc.OdbcDataReader.HasRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1135,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcDataReader.IsClosed" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsClosed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClosed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Data.Odbc.OdbcDataReader.IsClosed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1167,6 +1198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.IsDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDBNull (i As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int i);" />
+      <MemberSignature Language="F#" Value="override this.IsDBNull : int -&gt; bool" Usage="odbcDataReader.IsDBNull i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1212,6 +1244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcDataReader.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(i As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int i); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.Odbc.OdbcDataReader.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1241,6 +1274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcDataReader.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(value As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.Odbc.OdbcDataReader.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1279,6 +1313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.NextResult" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function NextResult () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NextResult();" />
+      <MemberSignature Language="F#" Value="override this.NextResult : unit -&gt; bool" Usage="odbcDataReader.NextResult " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1314,6 +1349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcDataReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="odbcDataReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1357,6 +1393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcDataReader.RecordsAffected" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecordsAffected As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RecordsAffected { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecordsAffected : int" Usage="System.Data.Odbc.OdbcDataReader.RecordsAffected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

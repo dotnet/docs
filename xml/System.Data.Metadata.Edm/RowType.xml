@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RowType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RowType&#xA;Inherits StructuralType" />
   <TypeSignature Language="C++ CLI" Value="public ref class RowType sealed : System::Data::Metadata::Edm::StructuralType" />
+  <TypeSignature Language="F#" Value="type RowType = class&#xA;    inherit StructuralType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RowType.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.RowType.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RowType.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As ReadOnlyMetadataCollection(Of EdmProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ Properties { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmProperty&gt;" Usage="System.Data.Metadata.Edm.RowType.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

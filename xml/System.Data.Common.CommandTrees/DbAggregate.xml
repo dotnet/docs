@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbAggregate" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbAggregate" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbAggregate abstract" />
+  <TypeSignature Language="F#" Value="type DbAggregate = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbAggregate.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As IList(Of DbExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ Arguments { System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Usage="System.Data.Common.CommandTrees.DbAggregate.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbAggregate.ResultType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultType As TypeUsage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::TypeUsage ^ ResultType { System::Data::Metadata::Edm::TypeUsage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResultType : System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Common.CommandTrees.DbAggregate.ResultType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

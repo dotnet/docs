@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceMetadataEndpointCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceMetadataEndpointCollectionElement&#xA;Inherits StandardEndpointCollectionElement(Of ServiceMetadataEndpoint, ServiceMetadataEndpointElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceMetadataEndpointCollectionElement : System::ServiceModel::Configuration::StandardEndpointCollectionElement&lt;System::ServiceModel::Description::ServiceMetadataEndpoint ^, System::ServiceModel::Configuration::ServiceMetadataEndpointElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceMetadataEndpointCollectionElement = class&#xA;    inherit StandardEndpointCollectionElement&lt;ServiceMetadataEndpoint, ServiceMetadataEndpointElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

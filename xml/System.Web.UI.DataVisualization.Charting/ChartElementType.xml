@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartElementType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChartElementType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChartElementType" />
+  <TypeSignature Language="F#" Value="type ChartElementType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Annotation" />
       <MemberSignature Language="VB.NET" Value="Annotation" />
       <MemberSignature Language="C++ CLI" Value="Annotation" />
+      <MemberSignature Language="F#" Value="Annotation = 16" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.Annotation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Axis" />
       <MemberSignature Language="VB.NET" Value="Axis" />
       <MemberSignature Language="C++ CLI" Value="Axis" />
+      <MemberSignature Language="F#" Value="Axis = 3" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.Axis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.AxisLabelImage" />
       <MemberSignature Language="VB.NET" Value="AxisLabelImage" />
       <MemberSignature Language="C++ CLI" Value="AxisLabelImage" />
+      <MemberSignature Language="F#" Value="AxisLabelImage = 7" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.AxisLabelImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.AxisLabels" />
       <MemberSignature Language="VB.NET" Value="AxisLabels" />
       <MemberSignature Language="C++ CLI" Value="AxisLabels" />
+      <MemberSignature Language="F#" Value="AxisLabels = 8" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.AxisLabels" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.AxisTitle" />
       <MemberSignature Language="VB.NET" Value="AxisTitle" />
       <MemberSignature Language="C++ CLI" Value="AxisTitle" />
+      <MemberSignature Language="F#" Value="AxisTitle = 9" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.AxisTitle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.DataPoint" />
       <MemberSignature Language="VB.NET" Value="DataPoint" />
       <MemberSignature Language="C++ CLI" Value="DataPoint" />
+      <MemberSignature Language="F#" Value="DataPoint = 10" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.DataPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.DataPointLabel" />
       <MemberSignature Language="VB.NET" Value="DataPointLabel" />
       <MemberSignature Language="C++ CLI" Value="DataPointLabel" />
+      <MemberSignature Language="F#" Value="DataPointLabel = 11" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.DataPointLabel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Gridlines" />
       <MemberSignature Language="VB.NET" Value="Gridlines" />
       <MemberSignature Language="C++ CLI" Value="Gridlines" />
+      <MemberSignature Language="F#" Value="Gridlines = 5" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.Gridlines" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.LegendArea" />
       <MemberSignature Language="VB.NET" Value="LegendArea" />
       <MemberSignature Language="C++ CLI" Value="LegendArea" />
+      <MemberSignature Language="F#" Value="LegendArea = 12" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.LegendArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -193,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.LegendHeader" />
       <MemberSignature Language="VB.NET" Value="LegendHeader" />
       <MemberSignature Language="C++ CLI" Value="LegendHeader" />
+      <MemberSignature Language="F#" Value="LegendHeader = 14" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.LegendHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -212,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.LegendItem" />
       <MemberSignature Language="VB.NET" Value="LegendItem" />
       <MemberSignature Language="C++ CLI" Value="LegendItem" />
+      <MemberSignature Language="F#" Value="LegendItem = 15" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.LegendItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -231,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.LegendTitle" />
       <MemberSignature Language="VB.NET" Value="LegendTitle" />
       <MemberSignature Language="C++ CLI" Value="LegendTitle" />
+      <MemberSignature Language="F#" Value="LegendTitle = 13" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.LegendTitle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -250,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Nothing" />
       <MemberSignature Language="VB.NET" Value="Nothing" />
       <MemberSignature Language="C++ CLI" Value="Nothing" />
+      <MemberSignature Language="F#" Value="Nothing = 0" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.Nothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -269,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.PlottingArea" />
       <MemberSignature Language="VB.NET" Value="PlottingArea" />
       <MemberSignature Language="C++ CLI" Value="PlottingArea" />
+      <MemberSignature Language="F#" Value="PlottingArea = 2" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.PlottingArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -288,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.StripLines" />
       <MemberSignature Language="VB.NET" Value="StripLines" />
       <MemberSignature Language="C++ CLI" Value="StripLines" />
+      <MemberSignature Language="F#" Value="StripLines = 6" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.StripLines" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -307,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.TickMarks" />
       <MemberSignature Language="VB.NET" Value="TickMarks" />
       <MemberSignature Language="C++ CLI" Value="TickMarks" />
+      <MemberSignature Language="F#" Value="TickMarks = 4" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.TickMarks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -326,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Title" />
       <MemberSignature Language="VB.NET" Value="Title" />
       <MemberSignature Language="C++ CLI" Value="Title" />
+      <MemberSignature Language="F#" Value="Title = 1" Usage="System.Web.UI.DataVisualization.Charting.ChartElementType.Title" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

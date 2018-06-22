@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListTitleAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectListTitleAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectListTitleAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type ObjectListTitleAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListTitleAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectListTitleAttribute(System::String ^ title);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ObjectListTitleAttribute : string -&gt; System.Web.UI.MobileControls.ObjectListTitleAttribute" Usage="new System.Web.UI.MobileControls.ObjectListTitleAttribute title" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListTitleAttribute.Title" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string" Usage="System.Web.UI.MobileControls.ObjectListTitleAttribute.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.DelegatingXmlDictionaryWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class DelegatingXmlDictionaryWriter&#xA;Inherits XmlDictionaryWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class DelegatingXmlDictionaryWriter : System::Xml::XmlDictionaryWriter" />
+  <TypeSignature Language="F#" Value="type DelegatingXmlDictionaryWriter = class&#xA;    inherit XmlDictionaryWriter" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.DelegatingXmlDictionaryWriter.CanCanonicalize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanCanonicalize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCanonicalize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanCanonicalize : bool" Usage="System.IdentityModel.DelegatingXmlDictionaryWriter.CanCanonicalize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="delegatingXmlDictionaryWriter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.EndCanonicalization" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndCanonicalization ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndCanonicalization();" />
+      <MemberSignature Language="F#" Value="override this.EndCanonicalization : unit -&gt; unit" Usage="delegatingXmlDictionaryWriter.EndCanonicalization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="delegatingXmlDictionaryWriter.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.InitializeInnerWriter(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InitializeInnerWriter (innerWriter As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeInnerWriter(System::Xml::XmlDictionaryWriter ^ innerWriter);" />
+      <MemberSignature Language="F#" Value="member this.InitializeInnerWriter : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="delegatingXmlDictionaryWriter.InitializeInnerWriter innerWriter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.InitializeTracingWriter(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InitializeTracingWriter (tracingWriter As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeTracingWriter(System::Xml::XmlWriter ^ tracingWriter);" />
+      <MemberSignature Language="F#" Value="member this.InitializeTracingWriter : System.Xml.XmlWriter -&gt; unit" Usage="delegatingXmlDictionaryWriter.InitializeTracingWriter tracingWriter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.DelegatingXmlDictionaryWriter.InnerWriter" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InnerWriter As XmlDictionaryWriter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Xml::XmlDictionaryWriter ^ InnerWriter { System::Xml::XmlDictionaryWriter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InnerWriter : System.Xml.XmlDictionaryWriter" Usage="System.IdentityModel.DelegatingXmlDictionaryWriter.InnerWriter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.LookupPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function LookupPrefix (ns As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ LookupPrefix(System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="override this.LookupPrefix : string -&gt; string" Usage="delegatingXmlDictionaryWriter.LookupPrefix ns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -223,6 +232,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void StartCanonicalization(class System.IO.Stream stream, bool includeComments, string[] inclusivePrefixes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void StartCanonicalization(System::IO::Stream ^ stream, bool includeComments, cli::array &lt;System::String ^&gt; ^ inclusivePrefixes);" />
+      <MemberSignature Language="F#" Value="override this.StartCanonicalization : System.IO.Stream * bool * string[] -&gt; unit" Usage="delegatingXmlDictionaryWriter.StartCanonicalization (stream, includeComments, inclusivePrefixes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -250,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBase64 (buffer As Byte(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.WriteBase64 : byte[] * int * int -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteBase64 (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteCData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteCData (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteCData(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteCData : string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteCData text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -300,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteCharEntity(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteCharEntity (ch As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteCharEntity(char ch);" />
+      <MemberSignature Language="F#" Value="override this.WriteCharEntity : char -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteCharEntity ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -323,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteChars(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteChars (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteChars(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.WriteChars : char[] * int * int -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteChars (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -350,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteComment(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteComment (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteComment(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteComment : string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteComment text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -373,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteDocType(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteDocType (name As String, pubid As String, sysid As String, subset As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteDocType(System::String ^ name, System::String ^ pubid, System::String ^ sysid, System::String ^ subset);" />
+      <MemberSignature Language="F#" Value="override this.WriteDocType : string * string * string * string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteDocType (name, pubid, sysid, subset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -402,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteEndAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndAttribute ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndAttribute();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndAttribute : unit -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteEndAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -422,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteEndDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndDocument();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndDocument : unit -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteEndDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -442,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteEndElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndElement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndElement();" />
+      <MemberSignature Language="F#" Value="override this.WriteEndElement : unit -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -462,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteEntityRef(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEntityRef (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEntityRef(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.WriteEntityRef : string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteEntityRef name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -485,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteFullEndElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFullEndElement ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFullEndElement();" />
+      <MemberSignature Language="F#" Value="override this.WriteFullEndElement : unit -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteFullEndElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -505,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteProcessingInstruction(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteProcessingInstruction (name As String, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteProcessingInstruction(System::String ^ name, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteProcessingInstruction : string * string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteProcessingInstruction (name, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -530,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteRaw(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteRaw (data As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteRaw(System::String ^ data);" />
+      <MemberSignature Language="F#" Value="override this.WriteRaw : string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteRaw data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -553,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteRaw(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteRaw (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteRaw(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.WriteRaw : char[] * int * int -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteRaw (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -580,6 +604,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteStartAttribute(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartAttribute (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartAttribute(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartAttribute : string * string * string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteStartAttribute (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -607,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteStartDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartDocument();" />
+      <MemberSignature Language="F#" Value="override this.WriteStartDocument : unit -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteStartDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -627,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteStartDocument(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartDocument (standalone As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartDocument(bool standalone);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartDocument : bool -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteStartDocument standalone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -650,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteStartElement(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartElement (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartElement(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="override this.WriteStartElement : string * string * string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteStartElement (prefix, localName, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -677,6 +705,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WriteState As WriteState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::WriteState WriteState { System::Xml::WriteState get(); };" />
+      <MemberSignature Language="F#" Value="member this.WriteState : System.Xml.WriteState" Usage="System.IdentityModel.DelegatingXmlDictionaryWriter.WriteState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -697,6 +726,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteString (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteString(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteString : string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -720,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteSurrogateCharEntity(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteSurrogateCharEntity (lowChar As Char, highChar As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteSurrogateCharEntity(char lowChar, char highChar);" />
+      <MemberSignature Language="F#" Value="override this.WriteSurrogateCharEntity : char * char -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteSurrogateCharEntity (lowChar, highChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -745,6 +776,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteWhitespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteWhitespace (ws As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteWhitespace(System::String ^ ws);" />
+      <MemberSignature Language="F#" Value="override this.WriteWhitespace : string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteWhitespace ws" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -768,6 +800,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteXmlAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteXmlAttribute (localName As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteXmlAttribute(System::String ^ localName, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.WriteXmlAttribute : string * string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteXmlAttribute (localName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -793,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DelegatingXmlDictionaryWriter.WriteXmlnsAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteXmlnsAttribute (prefix As String, namespaceUri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteXmlnsAttribute(System::String ^ prefix, System::String ^ namespaceUri);" />
+      <MemberSignature Language="F#" Value="override this.WriteXmlnsAttribute : string * string -&gt; unit" Usage="delegatingXmlDictionaryWriter.WriteXmlnsAttribute (prefix, namespaceUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IScrollItemProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IScrollItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IScrollItemProvider" />
+  <TypeSignature Language="F#" Value="type IScrollItemProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView();" />
+      <MemberSignature Language="F#" Value="abstract member ScrollIntoView : unit -&gt; unit" Usage="iScrollItemProvider.ScrollIntoView " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

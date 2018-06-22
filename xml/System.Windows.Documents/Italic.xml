@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Italic" />
   <TypeSignature Language="VB.NET" Value="Public Class Italic&#xA;Inherits Span" />
   <TypeSignature Language="C++ CLI" Value="public ref class Italic : System::Windows::Documents::Span" />
+  <TypeSignature Language="F#" Value="type Italic = class&#xA;    inherit Span" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Italic.#ctor(System.Windows.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Italic(System::Windows::Documents::Inline ^ childInline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Italic : System.Windows.Documents.Inline -&gt; System.Windows.Documents.Italic" Usage="new System.Windows.Documents.Italic childInline" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Italic.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline, insertionPosition As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Italic(System::Windows::Documents::Inline ^ childInline, System::Windows::Documents::TextPointer ^ insertionPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Italic : System.Windows.Documents.Inline * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Italic" Usage="new System.Windows.Documents.Italic (childInline, insertionPosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Italic.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As TextPointer, end As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Italic(System::Windows::Documents::TextPointer ^ start, System::Windows::Documents::TextPointer ^ end);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Italic : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Italic" Usage="new System.Windows.Documents.Italic (start, end)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

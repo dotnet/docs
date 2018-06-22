@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ImageMapEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ImageMapEventHandler(sender As Object, e As ImageMapEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ImageMapEventHandler(System::Object ^ sender, ImageMapEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ImageMapEventHandler = delegate of obj * ImageMapEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

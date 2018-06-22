@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class UpdatePanelTriggerCollectionEditor&#xA;Inherits CollectionEditorBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class UpdatePanelTriggerCollectionEditor : System::Web::UI::Design::CollectionEditorBase" />
+  <TypeSignature Language="F#" Value="type UpdatePanelTriggerCollectionEditor = class&#xA;    inherit CollectionEditorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdatePanelTriggerCollectionEditor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.UpdatePanelTriggerCollectionEditor : Type -&gt; System.Web.UI.Design.UpdatePanelTriggerCollectionEditor" Usage="new System.Web.UI.Design.UpdatePanelTriggerCollectionEditor type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.CanSelectMultipleInstances" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanSelectMultipleInstances () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanSelectMultipleInstances();" />
+      <MemberSignature Language="F#" Value="override this.CanSelectMultipleInstances : unit -&gt; bool" Usage="updatePanelTriggerCollectionEditor.CanSelectMultipleInstances " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.CreateCollectionItemType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionItemType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ CreateCollectionItemType();" />
+      <MemberSignature Language="F#" Value="override this.CreateCollectionItemType : unit -&gt; Type" Usage="updatePanelTriggerCollectionEditor.CreateCollectionItemType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.CreateNewItemTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewItemTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ CreateNewItemTypes();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewItemTypes : unit -&gt; Type[]" Usage="updatePanelTriggerCollectionEditor.CreateNewItemTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="updatePanelTriggerCollectionEditor.EditValue (context, provider, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IModelBinder" />
   <TypeSignature Language="VB.NET" Value="Public Interface IModelBinder" />
   <TypeSignature Language="C++ CLI" Value="public interface class IModelBinder" />
+  <TypeSignature Language="F#" Value="type IModelBinder = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BindModel(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IModelBinder.BindModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BindModel(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
+      <MemberSignature Language="F#" Value="abstract member BindModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; bool" Usage="iModelBinder.BindModel (modelBindingExecutionContext, bindingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

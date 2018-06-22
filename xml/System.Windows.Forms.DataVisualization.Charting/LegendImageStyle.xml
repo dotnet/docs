@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum LegendImageStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class LegendImageStyle" />
+  <TypeSignature Language="F#" Value="type LegendImageStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle.Line" />
       <MemberSignature Language="VB.NET" Value="Line" />
       <MemberSignature Language="C++ CLI" Value="Line" />
+      <MemberSignature Language="F#" Value="Line = 1" Usage="System.Windows.Forms.DataVisualization.Charting.LegendImageStyle.Line" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle.Marker" />
       <MemberSignature Language="VB.NET" Value="Marker" />
       <MemberSignature Language="C++ CLI" Value="Marker" />
+      <MemberSignature Language="F#" Value="Marker = 2" Usage="System.Windows.Forms.DataVisualization.Charting.LegendImageStyle.Marker" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle.Rectangle" />
       <MemberSignature Language="VB.NET" Value="Rectangle" />
       <MemberSignature Language="C++ CLI" Value="Rectangle" />
+      <MemberSignature Language="F#" Value="Rectangle = 0" Usage="System.Windows.Forms.DataVisualization.Charting.LegendImageStyle.Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowService" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowService&#xA;Implements IDebuggableWorkflowTree" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowService : System::Activities::Debugger::IDebuggableWorkflowTree" />
+  <TypeSignature Language="F#" Value="type WorkflowService = class&#xA;    interface IDebuggableWorkflowTree" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowService.AllowBufferedReceive" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowBufferedReceive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowBufferedReceive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowBufferedReceive : bool with get, set" Usage="System.ServiceModel.Activities.WorkflowService.AllowBufferedReceive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowService.Body" />
       <MemberSignature Language="VB.NET" Value="Public Property Body As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Body { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Activities.Activity with get, set" Usage="System.ServiceModel.Activities.WorkflowService.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowService.ConfigurationName" />
       <MemberSignature Language="VB.NET" Value="Public Property ConfigurationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationName : string with get, set" Usage="System.ServiceModel.Activities.WorkflowService.ConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Property DefinitionIdentity As WorkflowIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::WorkflowIdentity ^ DefinitionIdentity { System::Activities::WorkflowIdentity ^ get(); void set(System::Activities::WorkflowIdentity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefinitionIdentity : System.Activities.WorkflowIdentity with get, set" Usage="System.ServiceModel.Activities.WorkflowService.DefinitionIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowService.Endpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As Collection(Of Endpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Endpoint ^&gt; ^ Endpoints { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Endpoint ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoints : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Endpoint&gt;" Usage="System.ServiceModel.Activities.WorkflowService.Endpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowService.GetContractDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetContractDescriptions () As IDictionary(Of XName, ContractDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ GetContractDescriptions();" />
+      <MemberSignature Language="F#" Value="abstract member GetContractDescriptions : unit -&gt; System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.ServiceModel.Description.ContractDescription&gt;&#xA;override this.GetContractDescriptions : unit -&gt; System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.ServiceModel.Description.ContractDescription&gt;" Usage="workflowService.GetContractDescriptions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowService.GetWorkflowRoot" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWorkflowRoot () As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Activities::Activity ^ GetWorkflowRoot();" />
+      <MemberSignature Language="F#" Value="abstract member GetWorkflowRoot : unit -&gt; System.Activities.Activity&#xA;override this.GetWorkflowRoot : unit -&gt; System.Activities.Activity" Usage="workflowService.GetWorkflowRoot " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Debugger.IDebuggableWorkflowTree.GetWorkflowRoot</InterfaceMember>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowService.ImplementedContracts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImplementedContracts As Collection(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Type ^&gt; ^ ImplementedContracts { System::Collections::ObjectModel::Collection&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImplementedContracts : System.Collections.ObjectModel.Collection&lt;Type&gt;" Usage="System.ServiceModel.Activities.WorkflowService.ImplementedContracts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -242,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowService.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ Name { System::Xml::Linq::XName ^ get(); void set(System::Xml::Linq::XName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Xml.Linq.XName with get, set" Usage="System.ServiceModel.Activities.WorkflowService.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -270,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowService.UpdateMaps" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateMaps As IDictionary(Of WorkflowIdentity, DynamicUpdateMap)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Activities::WorkflowIdentity ^, System::Activities::DynamicUpdate::DynamicUpdateMap ^&gt; ^ UpdateMaps { System::Collections::Generic::IDictionary&lt;System::Activities::WorkflowIdentity ^, System::Activities::DynamicUpdate::DynamicUpdateMap ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateMaps : System.Collections.Generic.IDictionary&lt;System.Activities.WorkflowIdentity, System.Activities.DynamicUpdate.DynamicUpdateMap&gt;" Usage="System.ServiceModel.Activities.WorkflowService.UpdateMaps" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -290,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowService.Validate(System.Activities.Validation.ValidationSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function Validate (settings As ValidationSettings) As ValidationResults" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Validation::ValidationResults ^ Validate(System::Activities::Validation::ValidationSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="member this.Validate : System.Activities.Validation.ValidationSettings -&gt; System.Activities.Validation.ValidationResults" Usage="workflowService.Validate settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

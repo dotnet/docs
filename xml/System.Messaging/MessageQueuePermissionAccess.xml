@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueuePermissionAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageQueuePermissionAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageQueuePermissionAccess" />
+  <TypeSignature Language="F#" Value="type MessageQueuePermissionAccess = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueuePermissionAccess.Administer" />
       <MemberSignature Language="VB.NET" Value="Administer" />
       <MemberSignature Language="C++ CLI" Value="Administer" />
+      <MemberSignature Language="F#" Value="Administer = 62" Usage="System.Messaging.MessageQueuePermissionAccess.Administer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueuePermissionAccess.Browse" />
       <MemberSignature Language="VB.NET" Value="Browse" />
       <MemberSignature Language="C++ CLI" Value="Browse" />
+      <MemberSignature Language="F#" Value="Browse = 2" Usage="System.Messaging.MessageQueuePermissionAccess.Browse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueuePermissionAccess.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.MessageQueuePermissionAccess.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueuePermissionAccess.Peek" />
       <MemberSignature Language="VB.NET" Value="Peek" />
       <MemberSignature Language="C++ CLI" Value="Peek" />
+      <MemberSignature Language="F#" Value="Peek = 10" Usage="System.Messaging.MessageQueuePermissionAccess.Peek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueuePermissionAccess.Receive" />
       <MemberSignature Language="VB.NET" Value="Receive" />
       <MemberSignature Language="C++ CLI" Value="Receive" />
+      <MemberSignature Language="F#" Value="Receive = 26" Usage="System.Messaging.MessageQueuePermissionAccess.Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueuePermissionAccess.Send" />
       <MemberSignature Language="VB.NET" Value="Send" />
       <MemberSignature Language="C++ CLI" Value="Send" />
+      <MemberSignature Language="F#" Value="Send = 6" Usage="System.Messaging.MessageQueuePermissionAccess.Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

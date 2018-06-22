@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.IQueryable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IQueryable&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IQueryable : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type IQueryable = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.IQueryable.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementType : Type" Usage="System.Linq.IQueryable.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.IQueryable.Expression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Linq.Expressions.Expression" Usage="System.Linq.IQueryable.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.IQueryable.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As IQueryProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::IQueryProvider ^ Provider { System::Linq::IQueryProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Linq.IQueryProvider" Usage="System.Linq.IQueryable.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

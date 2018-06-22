@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.CipherAlgorithmType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CipherAlgorithmType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CipherAlgorithmType" />
+  <TypeSignature Language="F#" Value="type CipherAlgorithmType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Aes" />
       <MemberSignature Language="VB.NET" Value="Aes" />
       <MemberSignature Language="C++ CLI" Value="Aes" />
+      <MemberSignature Language="F#" Value="Aes = 26129" Usage="System.Security.Authentication.CipherAlgorithmType.Aes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Aes128" />
       <MemberSignature Language="VB.NET" Value="Aes128" />
       <MemberSignature Language="C++ CLI" Value="Aes128" />
+      <MemberSignature Language="F#" Value="Aes128 = 26126" Usage="System.Security.Authentication.CipherAlgorithmType.Aes128" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Aes192" />
       <MemberSignature Language="VB.NET" Value="Aes192" />
       <MemberSignature Language="C++ CLI" Value="Aes192" />
+      <MemberSignature Language="F#" Value="Aes192 = 26127" Usage="System.Security.Authentication.CipherAlgorithmType.Aes192" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Aes256" />
       <MemberSignature Language="VB.NET" Value="Aes256" />
       <MemberSignature Language="C++ CLI" Value="Aes256" />
+      <MemberSignature Language="F#" Value="Aes256 = 26128" Usage="System.Security.Authentication.CipherAlgorithmType.Aes256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Des" />
       <MemberSignature Language="VB.NET" Value="Des" />
       <MemberSignature Language="C++ CLI" Value="Des" />
+      <MemberSignature Language="F#" Value="Des = 26113" Usage="System.Security.Authentication.CipherAlgorithmType.Des" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Authentication.CipherAlgorithmType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Null" />
       <MemberSignature Language="VB.NET" Value="Null" />
       <MemberSignature Language="C++ CLI" Value="Null" />
+      <MemberSignature Language="F#" Value="Null = 24576" Usage="System.Security.Authentication.CipherAlgorithmType.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -260,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Rc2" />
       <MemberSignature Language="VB.NET" Value="Rc2" />
       <MemberSignature Language="C++ CLI" Value="Rc2" />
+      <MemberSignature Language="F#" Value="Rc2 = 26114" Usage="System.Security.Authentication.CipherAlgorithmType.Rc2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -290,6 +299,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Rc4" />
       <MemberSignature Language="VB.NET" Value="Rc4" />
       <MemberSignature Language="C++ CLI" Value="Rc4" />
+      <MemberSignature Language="F#" Value="Rc4 = 26625" Usage="System.Security.Authentication.CipherAlgorithmType.Rc4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -320,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.TripleDes" />
       <MemberSignature Language="VB.NET" Value="TripleDes" />
       <MemberSignature Language="C++ CLI" Value="TripleDes" />
+      <MemberSignature Language="F#" Value="TripleDes = 26115" Usage="System.Security.Authentication.CipherAlgorithmType.TripleDes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.PositiveTimeSpanValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class PositiveTimeSpanValidator&#xA;Inherits ConfigurationValidatorBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class PositiveTimeSpanValidator : System::Configuration::ConfigurationValidatorBase" />
+  <TypeSignature Language="F#" Value="type PositiveTimeSpanValidator = class&#xA;    inherit ConfigurationValidatorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.PositiveTimeSpanValidator.CanValidate(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanValidate(Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.CanValidate : Type -&gt; bool" Usage="positiveTimeSpanValidator.CanValidate type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.PositiveTimeSpanValidator.Validate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; unit" Usage="positiveTimeSpanValidator.Validate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

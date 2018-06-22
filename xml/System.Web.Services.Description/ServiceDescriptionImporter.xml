@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceDescriptionImporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceDescriptionImporter" />
+  <TypeSignature Language="F#" Value="type ServiceDescriptionImporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddServiceDescription(class System.Web.Services.Description.ServiceDescription serviceDescription, string appSettingUrlKey, string appSettingBaseUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionImporter.AddServiceDescription(System.Web.Services.Description.ServiceDescription,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddServiceDescription(System::Web::Services::Description::ServiceDescription ^ serviceDescription, System::String ^ appSettingUrlKey, System::String ^ appSettingBaseUrl);" />
+      <MemberSignature Language="F#" Value="member this.AddServiceDescription : System.Web.Services.Description.ServiceDescription * string * string -&gt; unit" Usage="serviceDescriptionImporter.AddServiceDescription (serviceDescription, appSettingUrlKey, appSettingBaseUrl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionImporter.CodeGenerationOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property CodeGenerationOptions As CodeGenerationOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::CodeGenerationOptions CodeGenerationOptions { System::Xml::Serialization::CodeGenerationOptions get(); void set(System::Xml::Serialization::CodeGenerationOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.CodeGenerationOptions : System.Xml.Serialization.CodeGenerationOptions with get, set" Usage="System.Web.Services.Description.ServiceDescriptionImporter.CodeGenerationOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionImporter.CodeGenerator" />
       <MemberSignature Language="VB.NET" Value="Public Property CodeGenerator As CodeDomProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::CodeDomProvider ^ CodeGenerator { System::CodeDom::Compiler::CodeDomProvider ^ get(); void set(System::CodeDom::Compiler::CodeDomProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CodeGenerator : System.CodeDom.Compiler.CodeDomProvider with get, set" Usage="System.Web.Services.Description.ServiceDescriptionImporter.CodeGenerator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Specialized.StringCollection GenerateWebReferences(class System.Web.Services.Description.WebReferenceCollection webReferences, class System.CodeDom.Compiler.CodeDomProvider codeProvider, class System.CodeDom.CodeCompileUnit codeCompileUnit, class System.Web.Services.Description.WebReferenceOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences(System.Web.Services.Description.WebReferenceCollection,System.CodeDom.Compiler.CodeDomProvider,System.CodeDom.CodeCompileUnit,System.Web.Services.Description.WebReferenceOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Specialized::StringCollection ^ GenerateWebReferences(System::Web::Services::Description::WebReferenceCollection ^ webReferences, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, System::CodeDom::CodeCompileUnit ^ codeCompileUnit, System::Web::Services::Description::WebReferenceOptions ^ options);" />
+      <MemberSignature Language="F#" Value="static member GenerateWebReferences : System.Web.Services.Description.WebReferenceCollection * System.CodeDom.Compiler.CodeDomProvider * System.CodeDom.CodeCompileUnit * System.Web.Services.Description.WebReferenceOptions -&gt; System.Collections.Specialized.StringCollection" Usage="System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences (webReferences, codeProvider, codeCompileUnit, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings Import(class System.CodeDom.CodeNamespace codeNamespace, class System.CodeDom.CodeCompileUnit codeCompileUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionImporter.Import(System.CodeDom.CodeNamespace,System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Description::ServiceDescriptionImportWarnings Import(System::CodeDom::CodeNamespace ^ codeNamespace, System::CodeDom::CodeCompileUnit ^ codeCompileUnit);" />
+      <MemberSignature Language="F#" Value="member this.Import : System.CodeDom.CodeNamespace * System.CodeDom.CodeCompileUnit -&gt; System.Web.Services.Description.ServiceDescriptionImportWarnings" Usage="serviceDescriptionImporter.Import (codeNamespace, codeCompileUnit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -260,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionImporter.ProtocolName" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtocolName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProtocolName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtocolName : string with get, set" Usage="System.Web.Services.Description.ServiceDescriptionImporter.ProtocolName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -308,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionImporter.Schemas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schemas As XmlSchemas" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemas ^ Schemas { System::Xml::Serialization::XmlSchemas ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schemas : System.Xml.Serialization.XmlSchemas" Usage="System.Web.Services.Description.ServiceDescriptionImporter.Schemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionImporter.ServiceDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescriptions As ServiceDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionCollection ^ ServiceDescriptions { System::Web::Services::Description::ServiceDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceDescriptions : System.Web.Services.Description.ServiceDescriptionCollection" Usage="System.Web.Services.Description.ServiceDescriptionImporter.ServiceDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -375,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionImporter.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As ServiceDescriptionImportStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionImportStyle Style { System::Web::Services::Description::ServiceDescriptionImportStyle get(); void set(System::Web::Services::Description::ServiceDescriptionImportStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Web.Services.Description.ServiceDescriptionImportStyle with get, set" Usage="System.Web.Services.Description.ServiceDescriptionImporter.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

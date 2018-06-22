@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AdapterDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class AdapterDictionary&#xA;Inherits OrderedDictionary" />
   <TypeSignature Language="C++ CLI" Value="public ref class AdapterDictionary : System::Collections::Specialized::OrderedDictionary" />
+  <TypeSignature Language="F#" Value="type AdapterDictionary = class&#xA;    inherit OrderedDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AdapterDictionary.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); void set(System::String ^ key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Web.Configuration.AdapterDictionary.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

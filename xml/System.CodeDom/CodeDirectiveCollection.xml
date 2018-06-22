@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDirectiveCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeDirectiveCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeDirectiveCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CodeDirectiveCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.#ctor(System.CodeDom.CodeDirective[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeDirective())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirectiveCollection(cli::array &lt;System::CodeDom::CodeDirective ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeDirectiveCollection : System.CodeDom.CodeDirective[] -&gt; System.CodeDom.CodeDirectiveCollection" Usage="new System.CodeDom.CodeDirectiveCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.#ctor(System.CodeDom.CodeDirectiveCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeDirectiveCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirectiveCollection(System::CodeDom::CodeDirectiveCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeDirectiveCollection : System.CodeDom.CodeDirectiveCollection -&gt; System.CodeDom.CodeDirectiveCollection" Usage="new System.CodeDom.CodeDirectiveCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Add(System.CodeDom.CodeDirective)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeDirective) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeDirective ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.CodeDirective -&gt; int" Usage="codeDirectiveCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.AddRange(System.CodeDom.CodeDirective[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeDirective())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeDirective ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeDirective[] -&gt; unit" Usage="codeDirectiveCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.AddRange(System.CodeDom.CodeDirectiveCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeDirectiveCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeDirectiveCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeDirectiveCollection -&gt; unit" Usage="codeDirectiveCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Contains(System.CodeDom.CodeDirective)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeDirective) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeDirective ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.CodeDirective -&gt; bool" Usage="codeDirectiveCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -309,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.CopyTo(System.CodeDom.CodeDirective[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeDirective(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeDirective ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.CodeDirective[] * int -&gt; unit" Usage="codeDirectiveCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -357,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.IndexOf(System.CodeDom.CodeDirective)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeDirective) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeDirective ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.CodeDirective -&gt; int" Usage="codeDirectiveCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -395,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Insert(System.Int32,System.CodeDom.CodeDirective)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeDirective)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeDirective ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.CodeDirective -&gt; unit" Usage="codeDirectiveCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -440,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDirectiveCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeDirective ^ default[int] { System::CodeDom::CodeDirective ^ get(int index); void set(int index, System::CodeDom::CodeDirective ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.CodeDirective with get, set" Usage="System.CodeDom.CodeDirectiveCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -477,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Remove(System.CodeDom.CodeDirective)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeDirective)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeDirective ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.CodeDirective -&gt; unit" Usage="codeDirectiveCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

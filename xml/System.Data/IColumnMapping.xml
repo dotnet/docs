@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IColumnMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface IColumnMapping" />
   <TypeSignature Language="C++ CLI" Value="public interface class IColumnMapping" />
+  <TypeSignature Language="F#" Value="type IColumnMapping = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IColumnMapping.DataSetColumn" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSetColumn As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSetColumn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSetColumn : string with get, set" Usage="System.Data.IColumnMapping.DataSetColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IColumnMapping.SourceColumn" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceColumn As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.IColumnMapping.SourceColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

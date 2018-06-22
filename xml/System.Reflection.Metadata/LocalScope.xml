@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.LocalScope" />
   <TypeSignature Language="VB.NET" Value="Public Structure LocalScope" />
   <TypeSignature Language="C++ CLI" Value="public value class LocalScope" />
+  <TypeSignature Language="F#" Value="type LocalScope = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalScope.EndOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndOffset : int" Usage="System.Reflection.Metadata.LocalScope.EndOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.LocalScope.GetChildren" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As LocalScopeHandleCollection.ChildrenEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::LocalScopeHandleCollection::ChildrenEnumerator GetChildren();" />
+      <MemberSignature Language="F#" Value="member this.GetChildren : unit -&gt; System.Reflection.Metadata.LocalScopeHandleCollection.ChildrenEnumerator" Usage="localScope.GetChildren " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.LocalScope.GetLocalConstants" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalConstants () As LocalConstantHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::LocalConstantHandleCollection GetLocalConstants();" />
+      <MemberSignature Language="F#" Value="member this.GetLocalConstants : unit -&gt; System.Reflection.Metadata.LocalConstantHandleCollection" Usage="localScope.GetLocalConstants " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.LocalScope.GetLocalVariables" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalVariables () As LocalVariableHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::LocalVariableHandleCollection GetLocalVariables();" />
+      <MemberSignature Language="F#" Value="member this.GetLocalVariables : unit -&gt; System.Reflection.Metadata.LocalVariableHandleCollection" Usage="localScope.GetLocalVariables " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalScope.ImportScope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportScope As ImportScopeHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::ImportScopeHandle ImportScope { System::Reflection::Metadata::ImportScopeHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportScope : System.Reflection.Metadata.ImportScopeHandle" Usage="System.Reflection.Metadata.LocalScope.ImportScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalScope.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Reflection.Metadata.LocalScope.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalScope.Method" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As MethodDefinitionHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MethodDefinitionHandle Method { System::Reflection::Metadata::MethodDefinitionHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Method : System.Reflection.Metadata.MethodDefinitionHandle" Usage="System.Reflection.Metadata.LocalScope.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalScope.StartOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartOffset : int" Usage="System.Reflection.Metadata.LocalScope.StartOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

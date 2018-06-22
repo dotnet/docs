@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.AudioSignalProblem" />
   <TypeSignature Language="VB.NET" Value="Public Enum AudioSignalProblem" />
   <TypeSignature Language="C++ CLI" Value="public enum class AudioSignalProblem" />
+  <TypeSignature Language="F#" Value="type AudioSignalProblem = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioSignalProblem.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Speech.Recognition.AudioSignalProblem.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -88,6 +90,7 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioSignalProblem.NoSignal" />
       <MemberSignature Language="VB.NET" Value="NoSignal" />
       <MemberSignature Language="C++ CLI" Value="NoSignal" />
+      <MemberSignature Language="F#" Value="NoSignal = 2" Usage="System.Speech.Recognition.AudioSignalProblem.NoSignal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -107,6 +110,7 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioSignalProblem.TooFast" />
       <MemberSignature Language="VB.NET" Value="TooFast" />
       <MemberSignature Language="C++ CLI" Value="TooFast" />
+      <MemberSignature Language="F#" Value="TooFast = 5" Usage="System.Speech.Recognition.AudioSignalProblem.TooFast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -126,6 +130,7 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioSignalProblem.TooLoud" />
       <MemberSignature Language="VB.NET" Value="TooLoud" />
       <MemberSignature Language="C++ CLI" Value="TooLoud" />
+      <MemberSignature Language="F#" Value="TooLoud = 3" Usage="System.Speech.Recognition.AudioSignalProblem.TooLoud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -145,6 +150,7 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioSignalProblem.TooNoisy" />
       <MemberSignature Language="VB.NET" Value="TooNoisy" />
       <MemberSignature Language="C++ CLI" Value="TooNoisy" />
+      <MemberSignature Language="F#" Value="TooNoisy = 1" Usage="System.Speech.Recognition.AudioSignalProblem.TooNoisy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -164,6 +170,7 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioSignalProblem.TooSlow" />
       <MemberSignature Language="VB.NET" Value="TooSlow" />
       <MemberSignature Language="C++ CLI" Value="TooSlow" />
+      <MemberSignature Language="F#" Value="TooSlow = 6" Usage="System.Speech.Recognition.AudioSignalProblem.TooSlow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -183,6 +190,7 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioSignalProblem.TooSoft" />
       <MemberSignature Language="VB.NET" Value="TooSoft" />
       <MemberSignature Language="C++ CLI" Value="TooSoft" />
+      <MemberSignature Language="F#" Value="TooSoft = 4" Usage="System.Speech.Recognition.AudioSignalProblem.TooSoft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

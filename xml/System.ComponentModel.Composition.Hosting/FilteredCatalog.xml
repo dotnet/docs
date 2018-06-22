@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.FilteredCatalog" />
   <TypeSignature Language="VB.NET" Value="Public Class FilteredCatalog&#xA;Inherits ComposablePartCatalog&#xA;Implements INotifyComposablePartCatalogChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilteredCatalog : System::ComponentModel::Composition::Primitives::ComposablePartCatalog, System::ComponentModel::Composition::Hosting::INotifyComposablePartCatalogChanged" />
+  <TypeSignature Language="F#" Value="type FilteredCatalog = class&#xA;    inherit ComposablePartCatalog&#xA;    interface INotifyComposablePartCatalogChanged" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.Func{System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (catalog As ComposablePartCatalog, filter As Func(Of ComposablePartDefinition, Boolean))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilteredCatalog(System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^ catalog, Func&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^, bool&gt; ^ filter);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.FilteredCatalog : System.ComponentModel.Composition.Primitives.ComposablePartCatalog * Func&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition, bool&gt; -&gt; System.ComponentModel.Composition.Hosting.FilteredCatalog" Usage="new System.ComponentModel.Composition.Hosting.FilteredCatalog (catalog, filter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Composition.Hosting.FilteredCatalog.Changed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As EventHandler(Of ComposablePartCatalogChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^&gt; ^ Changed;" />
+      <MemberSignature Language="F#" Value="member this.Changed : EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; " Usage="member this.Changed : System.EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changed</InterfaceMember>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Composition.Hosting.FilteredCatalog.Changing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Changing As EventHandler(Of ComposablePartCatalogChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^&gt; ^ Changing;" />
+      <MemberSignature Language="F#" Value="member this.Changing : EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; " Usage="member this.Changing : System.EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changing</InterfaceMember>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.FilteredCatalog.Complement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Complement As FilteredCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::Hosting::FilteredCatalog ^ Complement { System::ComponentModel::Composition::Hosting::FilteredCatalog ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Complement : System.ComponentModel.Composition.Hosting.FilteredCatalog" Usage="System.ComponentModel.Composition.Hosting.FilteredCatalog.Complement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="filteredCatalog.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator(Of ComposablePartDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerator&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;" Usage="filteredCatalog.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExports (definition As ImportDefinition) As IEnumerable(Of Tuple(Of ComposablePartDefinition, ExportDefinition))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;Tuple&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^, System::ComponentModel::Composition::Primitives::ExportDefinition ^&gt; ^&gt; ^ GetExports(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition);" />
+      <MemberSignature Language="F#" Value="override this.GetExports : System.ComponentModel.Composition.Primitives.ImportDefinition -&gt; seq&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition * System.ComponentModel.Composition.Primitives.ExportDefinition&gt;" Usage="filteredCatalog.GetExports definition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.IncludeDependencies" />
       <MemberSignature Language="VB.NET" Value="Public Function IncludeDependencies () As FilteredCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Hosting::FilteredCatalog ^ IncludeDependencies();" />
+      <MemberSignature Language="F#" Value="member this.IncludeDependencies : unit -&gt; System.ComponentModel.Composition.Hosting.FilteredCatalog" Usage="filteredCatalog.IncludeDependencies " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.IncludeDependencies(System.Func{System.ComponentModel.Composition.Primitives.ImportDefinition,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Function IncludeDependencies (importFilter As Func(Of ImportDefinition, Boolean)) As FilteredCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Hosting::FilteredCatalog ^ IncludeDependencies(Func&lt;System::ComponentModel::Composition::Primitives::ImportDefinition ^, bool&gt; ^ importFilter);" />
+      <MemberSignature Language="F#" Value="member this.IncludeDependencies : Func&lt;System.ComponentModel.Composition.Primitives.ImportDefinition, bool&gt; -&gt; System.ComponentModel.Composition.Hosting.FilteredCatalog" Usage="filteredCatalog.IncludeDependencies importFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -279,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.IncludeDependents" />
       <MemberSignature Language="VB.NET" Value="Public Function IncludeDependents () As FilteredCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Hosting::FilteredCatalog ^ IncludeDependents();" />
+      <MemberSignature Language="F#" Value="member this.IncludeDependents : unit -&gt; System.ComponentModel.Composition.Hosting.FilteredCatalog" Usage="filteredCatalog.IncludeDependents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -301,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.IncludeDependents(System.Func{System.ComponentModel.Composition.Primitives.ImportDefinition,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Function IncludeDependents (importFilter As Func(Of ImportDefinition, Boolean)) As FilteredCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Hosting::FilteredCatalog ^ IncludeDependents(Func&lt;System::ComponentModel::Composition::Primitives::ImportDefinition ^, bool&gt; ^ importFilter);" />
+      <MemberSignature Language="F#" Value="member this.IncludeDependents : Func&lt;System.ComponentModel.Composition.Primitives.ImportDefinition, bool&gt; -&gt; System.ComponentModel.Composition.Hosting.FilteredCatalog" Usage="filteredCatalog.IncludeDependents importFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -326,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.OnChanged(System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanged (e As ComposablePartCatalogChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChanged(System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnChanged : System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs -&gt; unit&#xA;override this.OnChanged : System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs -&gt; unit" Usage="filteredCatalog.OnChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -350,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.FilteredCatalog.OnChanging(System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanging (e As ComposablePartCatalogChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChanging(System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnChanging : System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs -&gt; unit&#xA;override this.OnChanging : System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs -&gt; unit" Usage="filteredCatalog.OnChanging e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

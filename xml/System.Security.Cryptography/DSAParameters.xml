@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DSAParameters" />
   <TypeSignature Language="VB.NET" Value="Public Structure DSAParameters" />
   <TypeSignature Language="C++ CLI" Value="public value class DSAParameters" />
+  <TypeSignature Language="F#" Value="type DSAParameters = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DSAParameters.Counter" />
       <MemberSignature Language="VB.NET" Value="Public Counter As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int Counter;" />
+      <MemberSignature Language="F#" Value="val mutable Counter : int" Usage="System.Security.Cryptography.DSAParameters.Counter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DSAParameters.G" />
       <MemberSignature Language="VB.NET" Value="Public G As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ G;" />
+      <MemberSignature Language="F#" Value="val mutable G : byte[]" Usage="System.Security.Cryptography.DSAParameters.G" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DSAParameters.J" />
       <MemberSignature Language="VB.NET" Value="Public J As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ J;" />
+      <MemberSignature Language="F#" Value="val mutable J : byte[]" Usage="System.Security.Cryptography.DSAParameters.J" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DSAParameters.P" />
       <MemberSignature Language="VB.NET" Value="Public P As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ P;" />
+      <MemberSignature Language="F#" Value="val mutable P : byte[]" Usage="System.Security.Cryptography.DSAParameters.P" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DSAParameters.Q" />
       <MemberSignature Language="VB.NET" Value="Public Q As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Q;" />
+      <MemberSignature Language="F#" Value="val mutable Q : byte[]" Usage="System.Security.Cryptography.DSAParameters.Q" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DSAParameters.Seed" />
       <MemberSignature Language="VB.NET" Value="Public Seed As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Seed;" />
+      <MemberSignature Language="F#" Value="val mutable Seed : byte[]" Usage="System.Security.Cryptography.DSAParameters.Seed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DSAParameters.X" />
       <MemberSignature Language="VB.NET" Value="Public X As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ X;" />
+      <MemberSignature Language="F#" Value="val mutable X : byte[]" Usage="System.Security.Cryptography.DSAParameters.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -262,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DSAParameters.Y" />
       <MemberSignature Language="VB.NET" Value="Public Y As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Y;" />
+      <MemberSignature Language="F#" Value="val mutable Y : byte[]" Usage="System.Security.Cryptography.DSAParameters.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

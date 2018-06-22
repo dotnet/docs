@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PageMediaSize" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageMediaSize" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageMediaSize sealed" />
+  <TypeSignature Language="F#" Value="type PageMediaSize = class" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageMediaSize.#ctor(System.Printing.PageMediaSizeName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mediaSizeName As PageMediaSizeName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageMediaSize(System::Printing::PageMediaSizeName mediaSizeName);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PageMediaSize : System.Printing.PageMediaSizeName -&gt; System.Printing.PageMediaSize" Usage="new System.Printing.PageMediaSize mediaSizeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageMediaSize.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageMediaSize(double width, double height);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PageMediaSize : double * double -&gt; System.Printing.PageMediaSize" Usage="new System.Printing.PageMediaSize (width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageMediaSize.#ctor(System.Printing.PageMediaSizeName,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mediaSizeName As PageMediaSizeName, width As Double, height As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageMediaSize(System::Printing::PageMediaSizeName mediaSizeName, double width, double height);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PageMediaSize : System.Printing.PageMediaSizeName * double * double -&gt; System.Printing.PageMediaSize" Usage="new System.Printing.PageMediaSize (mediaSizeName, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PageMediaSize.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Height { Nullable&lt;double&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : Nullable&lt;double&gt;" Usage="System.Printing.PageMediaSize.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PageMediaSize.PageMediaSizeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageMediaSizeName As Nullable(Of PageMediaSizeName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::PageMediaSizeName&gt; PageMediaSizeName { Nullable&lt;System::Printing::PageMediaSizeName&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageMediaSizeName : Nullable&lt;System.Printing.PageMediaSizeName&gt;" Usage="System.Printing.PageMediaSize.PageMediaSizeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageMediaSize.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="pageMediaSize.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PageMediaSize.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Width { Nullable&lt;double&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : Nullable&lt;double&gt;" Usage="System.Printing.PageMediaSize.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

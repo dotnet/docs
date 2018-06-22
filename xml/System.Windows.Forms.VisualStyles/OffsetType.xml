@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.OffsetType" />
   <TypeSignature Language="VB.NET" Value="Public Enum OffsetType" />
   <TypeSignature Language="C++ CLI" Value="public enum class OffsetType" />
+  <TypeSignature Language="F#" Value="type OffsetType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.AboveLastButton" />
       <MemberSignature Language="VB.NET" Value="AboveLastButton" />
       <MemberSignature Language="C++ CLI" Value="AboveLastButton" />
+      <MemberSignature Language="F#" Value="AboveLastButton = 12" Usage="System.Windows.Forms.VisualStyles.OffsetType.AboveLastButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.BelowLastButton" />
       <MemberSignature Language="VB.NET" Value="BelowLastButton" />
       <MemberSignature Language="C++ CLI" Value="BelowLastButton" />
+      <MemberSignature Language="F#" Value="BelowLastButton = 13" Usage="System.Windows.Forms.VisualStyles.OffsetType.BelowLastButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.BottomLeft" />
       <MemberSignature Language="VB.NET" Value="BottomLeft" />
       <MemberSignature Language="C++ CLI" Value="BottomLeft" />
+      <MemberSignature Language="F#" Value="BottomLeft = 3" Usage="System.Windows.Forms.VisualStyles.OffsetType.BottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.BottomMiddle" />
       <MemberSignature Language="VB.NET" Value="BottomMiddle" />
       <MemberSignature Language="C++ CLI" Value="BottomMiddle" />
+      <MemberSignature Language="F#" Value="BottomMiddle = 5" Usage="System.Windows.Forms.VisualStyles.OffsetType.BottomMiddle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.BottomRight" />
       <MemberSignature Language="VB.NET" Value="BottomRight" />
       <MemberSignature Language="C++ CLI" Value="BottomRight" />
+      <MemberSignature Language="F#" Value="BottomRight = 4" Usage="System.Windows.Forms.VisualStyles.OffsetType.BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.LeftOfCaption" />
       <MemberSignature Language="VB.NET" Value="LeftOfCaption" />
       <MemberSignature Language="C++ CLI" Value="LeftOfCaption" />
+      <MemberSignature Language="F#" Value="LeftOfCaption = 8" Usage="System.Windows.Forms.VisualStyles.OffsetType.LeftOfCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.LeftOfLastButton" />
       <MemberSignature Language="VB.NET" Value="LeftOfLastButton" />
       <MemberSignature Language="C++ CLI" Value="LeftOfLastButton" />
+      <MemberSignature Language="F#" Value="LeftOfLastButton = 10" Usage="System.Windows.Forms.VisualStyles.OffsetType.LeftOfLastButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.MiddleLeft" />
       <MemberSignature Language="VB.NET" Value="MiddleLeft" />
       <MemberSignature Language="C++ CLI" Value="MiddleLeft" />
+      <MemberSignature Language="F#" Value="MiddleLeft = 6" Usage="System.Windows.Forms.VisualStyles.OffsetType.MiddleLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.MiddleRight" />
       <MemberSignature Language="VB.NET" Value="MiddleRight" />
       <MemberSignature Language="C++ CLI" Value="MiddleRight" />
+      <MemberSignature Language="F#" Value="MiddleRight = 7" Usage="System.Windows.Forms.VisualStyles.OffsetType.MiddleRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -200,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.RightOfCaption" />
       <MemberSignature Language="VB.NET" Value="RightOfCaption" />
       <MemberSignature Language="C++ CLI" Value="RightOfCaption" />
+      <MemberSignature Language="F#" Value="RightOfCaption = 9" Usage="System.Windows.Forms.VisualStyles.OffsetType.RightOfCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.RightOfLastButton" />
       <MemberSignature Language="VB.NET" Value="RightOfLastButton" />
       <MemberSignature Language="C++ CLI" Value="RightOfLastButton" />
+      <MemberSignature Language="F#" Value="RightOfLastButton = 11" Usage="System.Windows.Forms.VisualStyles.OffsetType.RightOfLastButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.TopLeft" />
       <MemberSignature Language="VB.NET" Value="TopLeft" />
       <MemberSignature Language="C++ CLI" Value="TopLeft" />
+      <MemberSignature Language="F#" Value="TopLeft = 0" Usage="System.Windows.Forms.VisualStyles.OffsetType.TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.TopMiddle" />
       <MemberSignature Language="VB.NET" Value="TopMiddle" />
       <MemberSignature Language="C++ CLI" Value="TopMiddle" />
+      <MemberSignature Language="F#" Value="TopMiddle = 2" Usage="System.Windows.Forms.VisualStyles.OffsetType.TopMiddle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.TopRight" />
       <MemberSignature Language="VB.NET" Value="TopRight" />
       <MemberSignature Language="C++ CLI" Value="TopRight" />
+      <MemberSignature Language="F#" Value="TopRight = 1" Usage="System.Windows.Forms.VisualStyles.OffsetType.TopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

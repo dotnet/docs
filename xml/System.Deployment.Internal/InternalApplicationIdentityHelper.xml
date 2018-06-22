@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Internal.InternalApplicationIdentityHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class InternalApplicationIdentityHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalApplicationIdentityHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type InternalApplicationIdentityHelper = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalApplicationIdentityHelper.GetInternalAppId(System.ApplicationIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetInternalAppId (id As ApplicationIdentity) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetInternalAppId(ApplicationIdentity ^ id);" />
+      <MemberSignature Language="F#" Value="static member GetInternalAppId : ApplicationIdentity -&gt; obj" Usage="System.Deployment.Internal.InternalApplicationIdentityHelper.GetInternalAppId id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

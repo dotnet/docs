@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.AsyncCodeActivityContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncCodeActivityContext&#xA;Inherits CodeActivityContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncCodeActivityContext sealed : System::Activities::CodeActivityContext" />
+  <TypeSignature Language="F#" Value="type AsyncCodeActivityContext = class&#xA;    inherit CodeActivityContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.AsyncCodeActivityContext.IsCancellationRequested" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCancellationRequested As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancellationRequested { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCancellationRequested : bool" Usage="System.Activities.AsyncCodeActivityContext.IsCancellationRequested" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.AsyncCodeActivityContext.MarkCanceled" />
       <MemberSignature Language="VB.NET" Value="Public Sub MarkCanceled ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MarkCanceled();" />
+      <MemberSignature Language="F#" Value="member this.MarkCanceled : unit -&gt; unit" Usage="asyncCodeActivityContext.MarkCanceled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.AsyncCodeActivityContext.UserState" />
       <MemberSignature Language="VB.NET" Value="Public Property UserState As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserState { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserState : obj with get, set" Usage="System.Activities.AsyncCodeActivityContext.UserState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

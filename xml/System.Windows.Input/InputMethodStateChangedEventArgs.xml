@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputMethodStateChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InputMethodStateChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputMethodStateChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type InputMethodStateChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsHandwritingStateChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHandwritingStateChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHandwritingStateChanged { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHandwritingStateChanged : bool" Usage="System.Windows.Input.InputMethodStateChangedEventArgs.IsHandwritingStateChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsImeConversionModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImeConversionModeChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImeConversionModeChanged { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImeConversionModeChanged : bool" Usage="System.Windows.Input.InputMethodStateChangedEventArgs.IsImeConversionModeChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsImeSentenceModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImeSentenceModeChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImeSentenceModeChanged { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImeSentenceModeChanged : bool" Usage="System.Windows.Input.InputMethodStateChangedEventArgs.IsImeSentenceModeChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsImeStateChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImeStateChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImeStateChanged { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImeStateChanged : bool" Usage="System.Windows.Input.InputMethodStateChangedEventArgs.IsImeStateChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsMicrophoneStateChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMicrophoneStateChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMicrophoneStateChanged { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMicrophoneStateChanged : bool" Usage="System.Windows.Input.InputMethodStateChangedEventArgs.IsMicrophoneStateChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsSpeechModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpeechModeChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpeechModeChanged { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSpeechModeChanged : bool" Usage="System.Windows.Input.InputMethodStateChangedEventArgs.IsSpeechModeChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

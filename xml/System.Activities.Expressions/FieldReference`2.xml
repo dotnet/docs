@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.FieldReference`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FieldReference(Of TOperand, TResult)&#xA;Inherits CodeActivity(Of Location(Of TResult))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TOperand, typename TResult&gt;&#xA;public ref class FieldReference sealed : System::Activities::CodeActivity&lt;System::Activities::Location&lt;TResult&gt; ^&gt;" />
+  <TypeSignature Language="F#" Value="type FieldReference&lt;'Operand, 'Result&gt; = class&#xA;    inherit CodeActivity&lt;Location&lt;'Result&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.FieldReference`2.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="fieldReference.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.FieldReference`2.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As Location(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Location&lt;TResult&gt; ^ Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; System.Activities.Location&lt;'Result&gt;" Usage="fieldReference.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.FieldReference`2.FieldName" />
       <MemberSignature Language="VB.NET" Value="Public Property FieldName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FieldName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FieldName : string with get, set" Usage="System.Activities.Expressions.FieldReference&lt;'Operand, 'Result&gt;.FieldName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.FieldReference`2.Operand" />
       <MemberSignature Language="VB.NET" Value="Public Property Operand As InArgument(Of TOperand)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;TOperand&gt; ^ Operand { System::Activities::InArgument&lt;TOperand&gt; ^ get(); void set(System::Activities::InArgument&lt;TOperand&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Operand : System.Activities.InArgument&lt;'Operand&gt; with get, set" Usage="System.Activities.Expressions.FieldReference&lt;'Operand, 'Result&gt;.Operand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

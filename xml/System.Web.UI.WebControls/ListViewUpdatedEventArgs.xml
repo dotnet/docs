@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewUpdatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewUpdatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewUpdatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewUpdatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 affectedRows, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewUpdatedEventArgs.#ctor(System.Int32,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewUpdatedEventArgs(int affectedRows, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewUpdatedEventArgs : int * Exception -&gt; System.Web.UI.WebControls.ListViewUpdatedEventArgs" Usage="new System.Web.UI.WebControls.ListViewUpdatedEventArgs (affectedRows, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedRows As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AffectedRows { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AffectedRows : int" Usage="System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.KeepInEditMode" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepInEditMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepInEditMode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepInEditMode : bool with get, set" Usage="System.Web.UI.WebControls.ListViewUpdatedEventArgs.KeepInEditMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.NewValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValues As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ NewValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewUpdatedEventArgs.NewValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -292,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.OldValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValues As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ OldValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewUpdatedEventArgs.OldValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

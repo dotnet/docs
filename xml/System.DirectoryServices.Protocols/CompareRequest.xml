@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.CompareRequest" />
   <TypeSignature Language="VB.NET" Value="Public Class CompareRequest&#xA;Inherits DirectoryRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompareRequest : System::DirectoryServices::Protocols::DirectoryRequest" />
+  <TypeSignature Language="F#" Value="type CompareRequest = class&#xA;    inherit DirectoryRequest" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (distinguishedName As String, assertion As DirectoryAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompareRequest(System::String ^ distinguishedName, System::DirectoryServices::Protocols::DirectoryAttribute ^ assertion);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.CompareRequest : string * System.DirectoryServices.Protocols.DirectoryAttribute -&gt; System.DirectoryServices.Protocols.CompareRequest" Usage="new System.DirectoryServices.Protocols.CompareRequest (distinguishedName, assertion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (distinguishedName As String, attributeName As String, value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompareRequest(System::String ^ distinguishedName, System::String ^ attributeName, cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.CompareRequest : string * string * byte[] -&gt; System.DirectoryServices.Protocols.CompareRequest" Usage="new System.DirectoryServices.Protocols.CompareRequest (distinguishedName, attributeName, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (distinguishedName As String, attributeName As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompareRequest(System::String ^ distinguishedName, System::String ^ attributeName, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.CompareRequest : string * string * string -&gt; System.DirectoryServices.Protocols.CompareRequest" Usage="new System.DirectoryServices.Protocols.CompareRequest (distinguishedName, attributeName, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (distinguishedName As String, attributeName As String, value As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompareRequest(System::String ^ distinguishedName, System::String ^ attributeName, Uri ^ value);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.CompareRequest : string * string * Uri -&gt; System.DirectoryServices.Protocols.CompareRequest" Usage="new System.DirectoryServices.Protocols.CompareRequest (distinguishedName, attributeName, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.CompareRequest.Assertion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assertion As DirectoryAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DirectoryAttribute ^ Assertion { System::DirectoryServices::Protocols::DirectoryAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assertion : System.DirectoryServices.Protocols.DirectoryAttribute" Usage="System.DirectoryServices.Protocols.CompareRequest.Assertion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.CompareRequest.DistinguishedName" />
       <MemberSignature Language="VB.NET" Value="Public Property DistinguishedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DistinguishedName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DistinguishedName : string with get, set" Usage="System.DirectoryServices.Protocols.CompareRequest.DistinguishedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CompareRequest.ToXmlNode(System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ToXmlNode (doc As XmlDocument) As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Xml::XmlElement ^ ToXmlNode(System::Xml::XmlDocument ^ doc);" />
+      <MemberSignature Language="F#" Value="override this.ToXmlNode : System.Xml.XmlDocument -&gt; System.Xml.XmlElement" Usage="compareRequest.ToXmlNode doc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoverySearchPattern" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DiscoverySearchPattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoverySearchPattern abstract" />
+  <TypeSignature Language="F#" Value="type DiscoverySearchPattern = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoverySearchPattern.GetDiscoveryReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDiscoveryReference (filename As String) As DiscoveryReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Services::Discovery::DiscoveryReference ^ GetDiscoveryReference(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="abstract member GetDiscoveryReference : string -&gt; System.Web.Services.Discovery.DiscoveryReference" Usage="discoverySearchPattern.GetDiscoveryReference filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoverySearchPattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Pattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Pattern { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pattern : string" Usage="System.Web.Services.Discovery.DiscoverySearchPattern.Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebResourceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebResourceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebResourceAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type WebResourceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebResourceAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (webResource As String, contentType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebResourceAttribute(System::String ^ webResource, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebResourceAttribute : string * string -&gt; System.Web.UI.WebResourceAttribute" Usage="new System.Web.UI.WebResourceAttribute (webResource, contentType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.CdnPath" />
       <MemberSignature Language="VB.NET" Value="Public Property CdnPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CdnPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CdnPath : string with get, set" Usage="System.Web.UI.WebResourceAttribute.CdnPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection" />
       <MemberSignature Language="VB.NET" Value="Public Property CdnSupportsSecureConnection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CdnSupportsSecureConnection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CdnSupportsSecureConnection : bool with get, set" Usage="System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.Web.UI.WebResourceAttribute.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.LoadSuccessExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadSuccessExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoadSuccessExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadSuccessExpression : string with get, set" Usage="System.Web.UI.WebResourceAttribute.LoadSuccessExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.PerformSubstitution" />
       <MemberSignature Language="VB.NET" Value="Public Property PerformSubstitution As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PerformSubstitution { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PerformSubstitution : bool with get, set" Usage="System.Web.UI.WebResourceAttribute.PerformSubstitution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.WebResource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebResource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WebResource { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebResource : string" Usage="System.Web.UI.WebResourceAttribute.WebResource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

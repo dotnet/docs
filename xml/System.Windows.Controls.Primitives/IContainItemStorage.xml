@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IContainItemStorage" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContainItemStorage" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContainItemStorage" />
+  <TypeSignature Language="F#" Value="type IContainItemStorage = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="iContainItemStorage.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.ClearItemValue(System.Object,System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearItemValue (item As Object, dp As DependencyProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp);" />
+      <MemberSignature Language="F#" Value="abstract member ClearItemValue : obj * System.Windows.DependencyProperty -&gt; unit" Usage="iContainItemStorage.ClearItemValue (item, dp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.ClearValue(System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearValue (dp As DependencyProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearValue(System::Windows::DependencyProperty ^ dp);" />
+      <MemberSignature Language="F#" Value="abstract member ClearValue : System.Windows.DependencyProperty -&gt; unit" Usage="iContainItemStorage.ClearValue dp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.ReadItemValue(System.Object,System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadItemValue (item As Object, dp As DependencyProperty) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ReadItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp);" />
+      <MemberSignature Language="F#" Value="abstract member ReadItemValue : obj * System.Windows.DependencyProperty -&gt; obj" Usage="iContainItemStorage.ReadItemValue (item, dp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IContainItemStorage.StoreItemValue(System.Object,System.Windows.DependencyProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StoreItemValue (item As Object, dp As DependencyProperty, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StoreItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member StoreItemValue : obj * System.Windows.DependencyProperty * obj -&gt; unit" Usage="iContainItemStorage.StoreItemValue (item, dp, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

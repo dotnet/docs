@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeaderCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapHeaderCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapHeaderCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type SoapHeaderCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderCollection.Add(System.Web.Services.Protocols.SoapHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (header As SoapHeader) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Protocols::SoapHeader ^ header);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Protocols.SoapHeader -&gt; int" Usage="soapHeaderCollection.Add header" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderCollection.Contains(System.Web.Services.Protocols.SoapHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (header As SoapHeader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Protocols::SoapHeader ^ header);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Services.Protocols.SoapHeader -&gt; bool" Usage="soapHeaderCollection.Contains header" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderCollection.CopyTo(System.Web.Services.Protocols.SoapHeader[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As SoapHeader(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Protocols::SoapHeader ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Services.Protocols.SoapHeader[] * int -&gt; unit" Usage="soapHeaderCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderCollection.IndexOf(System.Web.Services.Protocols.SoapHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (header As SoapHeader) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Protocols::SoapHeader ^ header);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Protocols.SoapHeader -&gt; int" Usage="soapHeaderCollection.IndexOf header" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderCollection.Insert(System.Int32,System.Web.Services.Protocols.SoapHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, header As SoapHeader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Protocols::SoapHeader ^ header);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.Services.Protocols.SoapHeader -&gt; unit" Usage="soapHeaderCollection.Insert (index, header)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As SoapHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapHeader ^ default[int] { System::Web::Services::Protocols::SoapHeader ^ get(int index); void set(int index, System::Web::Services::Protocols::SoapHeader ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Protocols.SoapHeader with get, set" Usage="System.Web.Services.Protocols.SoapHeaderCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderCollection.Remove(System.Web.Services.Protocols.SoapHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (header As SoapHeader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Protocols::SoapHeader ^ header);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Protocols.SoapHeader -&gt; unit" Usage="soapHeaderCollection.Remove header" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.CustomPopupPlacement" />
   <TypeSignature Language="VB.NET" Value="Public Structure CustomPopupPlacement" />
   <TypeSignature Language="C++ CLI" Value="public value class CustomPopupPlacement" />
+  <TypeSignature Language="F#" Value="type CustomPopupPlacement = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point point, valuetype System.Windows.Controls.Primitives.PopupPrimaryAxis primaryAxis) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CustomPopupPlacement.#ctor(System.Windows.Point,System.Windows.Controls.Primitives.PopupPrimaryAxis)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomPopupPlacement(System::Windows::Point point, System::Windows::Controls::Primitives::PopupPrimaryAxis primaryAxis);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.Primitives.CustomPopupPlacement : System.Windows.Point * System.Windows.Controls.Primitives.PopupPrimaryAxis -&gt; System.Windows.Controls.Primitives.CustomPopupPlacement" Usage="new System.Windows.Controls.Primitives.CustomPopupPlacement (point, primaryAxis)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CustomPopupPlacement.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="customPopupPlacement.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CustomPopupPlacement.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="customPopupPlacement.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CustomPopupPlacement.op_Equality(System.Windows.Controls.Primitives.CustomPopupPlacement,System.Windows.Controls.Primitives.CustomPopupPlacement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (placement1 As CustomPopupPlacement, placement2 As CustomPopupPlacement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::Primitives::CustomPopupPlacement placement1, System::Windows::Controls::Primitives::CustomPopupPlacement placement2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.Primitives.CustomPopupPlacement * System.Windows.Controls.Primitives.CustomPopupPlacement -&gt; bool" Usage="placement1 = placement2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CustomPopupPlacement.op_Inequality(System.Windows.Controls.Primitives.CustomPopupPlacement,System.Windows.Controls.Primitives.CustomPopupPlacement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (placement1 As CustomPopupPlacement, placement2 As CustomPopupPlacement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::Primitives::CustomPopupPlacement placement1, System::Windows::Controls::Primitives::CustomPopupPlacement placement2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.Primitives.CustomPopupPlacement * System.Windows.Controls.Primitives.CustomPopupPlacement -&gt; bool" Usage="System.Windows.Controls.Primitives.CustomPopupPlacement.op_Inequality (placement1, placement2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.CustomPopupPlacement.Point" />
       <MemberSignature Language="VB.NET" Value="Public Property Point As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Point : System.Windows.Point with get, set" Usage="System.Windows.Controls.Primitives.CustomPopupPlacement.Point" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.CustomPopupPlacement.PrimaryAxis" />
       <MemberSignature Language="VB.NET" Value="Public Property PrimaryAxis As PopupPrimaryAxis" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::PopupPrimaryAxis PrimaryAxis { System::Windows::Controls::Primitives::PopupPrimaryAxis get(); void set(System::Windows::Controls::Primitives::PopupPrimaryAxis value); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryAxis : System.Windows.Controls.Primitives.PopupPrimaryAxis with get, set" Usage="System.Windows.Controls.Primitives.CustomPopupPlacement.PrimaryAxis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

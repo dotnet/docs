@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function DataAnnotationsValidatableObjectAdapterFactory(metadata As ModelMetadata, context As ModelBindingExecutionContext) As ModelValidator " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Web::ModelBinding::ModelValidator ^ DataAnnotationsValidatableObjectAdapterFactory(ModelMetadata ^ metadata, ModelBindingExecutionContext ^ context);" />
+  <TypeSignature Language="F#" Value="type DataAnnotationsValidatableObjectAdapterFactory = delegate of ModelMetadata * ModelBindingExecutionContext -&gt; ModelValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

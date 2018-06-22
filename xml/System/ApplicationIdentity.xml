@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ApplicationIdentity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationIdentity&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationIdentity sealed : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type ApplicationIdentity = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ApplicationIdentity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (applicationIdentityFullName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationIdentity(System::String ^ applicationIdentityFullName);" />
+      <MemberSignature Language="F#" Value="new ApplicationIdentity : string -&gt; ApplicationIdentity" Usage="new System.ApplicationIdentity applicationIdentityFullName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -140,6 +142,7 @@ http://testserver/ActivationContext/ActivationContext.application
       <MemberSignature Language="DocId" Value="P:System.ApplicationIdentity.CodeBase" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeBase As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CodeBase { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeBase : string" Usage="System.ApplicationIdentity.CodeBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +187,7 @@ http://testserver/ActivationContext/ActivationContext.application
       <MemberSignature Language="DocId" Value="P:System.ApplicationIdentity.FullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.ApplicationIdentity.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -258,6 +262,7 @@ http://testserver/ActivationContext/ActivationContext.application
       <MemberSignature Language="DocId" Value="M:System.ApplicationIdentity.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="applicationIdentity.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SchemaClassType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SchemaClassType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SchemaClassType" />
+  <TypeSignature Language="F#" Value="type SchemaClassType = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SchemaClassType.Abstract" />
       <MemberSignature Language="VB.NET" Value="Abstract" />
       <MemberSignature Language="C++ CLI" Value="Abstract" />
+      <MemberSignature Language="F#" Value="Abstract = 2" Usage="System.DirectoryServices.ActiveDirectory.SchemaClassType.Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SchemaClassType.Auxiliary" />
       <MemberSignature Language="VB.NET" Value="Auxiliary" />
       <MemberSignature Language="C++ CLI" Value="Auxiliary" />
+      <MemberSignature Language="F#" Value="Auxiliary = 3" Usage="System.DirectoryServices.ActiveDirectory.SchemaClassType.Auxiliary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SchemaClassType.Structural" />
       <MemberSignature Language="VB.NET" Value="Structural" />
       <MemberSignature Language="C++ CLI" Value="Structural" />
+      <MemberSignature Language="F#" Value="Structural = 1" Usage="System.DirectoryServices.ActiveDirectory.SchemaClassType.Structural" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SchemaClassType.Type88" />
       <MemberSignature Language="VB.NET" Value="Type88" />
       <MemberSignature Language="C++ CLI" Value="Type88" />
+      <MemberSignature Language="F#" Value="Type88 = 0" Usage="System.DirectoryServices.ActiveDirectory.SchemaClassType.Type88" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

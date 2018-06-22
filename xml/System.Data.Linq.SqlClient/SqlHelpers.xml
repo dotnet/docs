@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.SqlClient.SqlHelpers" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlHelpers" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlHelpers abstract sealed" />
+  <TypeSignature Language="F#" Value="type SqlHelpers = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlHelpers.GetStringContainsPattern(System.String,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStringContainsPattern (text As String, escape As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetStringContainsPattern(System::String ^ text, char escape);" />
+      <MemberSignature Language="F#" Value="static member GetStringContainsPattern : string * char -&gt; string" Usage="System.Data.Linq.SqlClient.SqlHelpers.GetStringContainsPattern (text, escape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlHelpers.GetStringEndsWithPattern(System.String,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStringEndsWithPattern (text As String, escape As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetStringEndsWithPattern(System::String ^ text, char escape);" />
+      <MemberSignature Language="F#" Value="static member GetStringEndsWithPattern : string * char -&gt; string" Usage="System.Data.Linq.SqlClient.SqlHelpers.GetStringEndsWithPattern (text, escape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlHelpers.GetStringStartsWithPattern(System.String,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStringStartsWithPattern (text As String, escape As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetStringStartsWithPattern(System::String ^ text, char escape);" />
+      <MemberSignature Language="F#" Value="static member GetStringStartsWithPattern : string * char -&gt; string" Usage="System.Data.Linq.SqlClient.SqlHelpers.GetStringStartsWithPattern (text, escape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlHelpers.TranslateVBLikePattern(System.String,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TranslateVBLikePattern (pattern As String, escape As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TranslateVBLikePattern(System::String ^ pattern, char escape);" />
+      <MemberSignature Language="F#" Value="static member TranslateVBLikePattern : string * char -&gt; string" Usage="System.Data.Linq.SqlClient.SqlHelpers.TranslateVBLikePattern (pattern, escape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

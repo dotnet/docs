@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeObjectCreateExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeObjectCreateExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeObjectCreateExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeObjectCreateExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeObjectCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As CodeTypeReference, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeObjectCreateExpression(System::CodeDom::CodeTypeReference ^ createType, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeObjectCreateExpression : System.CodeDom.CodeTypeReference * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeObjectCreateExpression" Usage="new System.CodeDom.CodeObjectCreateExpression (createType, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeObjectCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As String, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeObjectCreateExpression(System::String ^ createType, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeObjectCreateExpression : string * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeObjectCreateExpression" Usage="new System.CodeDom.CodeObjectCreateExpression (createType, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeObjectCreateExpression.#ctor(System.Type,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (createType As Type, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeObjectCreateExpression(Type ^ createType, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeObjectCreateExpression : Type * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeObjectCreateExpression" Usage="new System.CodeDom.CodeObjectCreateExpression (createType, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeObjectCreateExpression.CreateType" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ CreateType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeObjectCreateExpression.CreateType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeObjectCreateExpression.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ Parameters { System::CodeDom::CodeExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeObjectCreateExpression.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

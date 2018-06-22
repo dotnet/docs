@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.TypeUsage" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeUsage&#xA;Inherits MetadataItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeUsage sealed : System::Data::Metadata::Edm::MetadataItem" />
+  <TypeSignature Language="F#" Value="type TypeUsage = class&#xA;    inherit MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.TypeUsage.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.TypeUsage.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateBinaryTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateBinaryTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType, bool isFixedLength);" />
+      <MemberSignature Language="F#" Value="static member CreateBinaryTypeUsage : System.Data.Metadata.Edm.PrimitiveType * bool -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage (primitiveType, isFixedLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateBinaryTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isFixedLength, int32 maxLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateBinaryTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType, bool isFixedLength, int maxLength);" />
+      <MemberSignature Language="F#" Value="static member CreateBinaryTypeUsage : System.Data.Metadata.Edm.PrimitiveType * bool * int -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage (primitiveType, isFixedLength, maxLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDateTimeOffsetTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, valuetype System.Nullable`1&lt;unsigned int8&gt; precision) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDateTimeOffsetTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateDateTimeOffsetTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType, Nullable&lt;System::Byte&gt; precision);" />
+      <MemberSignature Language="F#" Value="static member CreateDateTimeOffsetTypeUsage : System.Data.Metadata.Edm.PrimitiveType * Nullable&lt;byte&gt; -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateDateTimeOffsetTypeUsage (primitiveType, precision)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDateTimeTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, valuetype System.Nullable`1&lt;unsigned int8&gt; precision) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDateTimeTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateDateTimeTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType, Nullable&lt;System::Byte&gt; precision);" />
+      <MemberSignature Language="F#" Value="static member CreateDateTimeTypeUsage : System.Data.Metadata.Edm.PrimitiveType * Nullable&lt;byte&gt; -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateDateTimeTypeUsage (primitiveType, precision)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDecimalTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage(System.Data.Metadata.Edm.PrimitiveType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateDecimalTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType);" />
+      <MemberSignature Language="F#" Value="static member CreateDecimalTypeUsage : System.Data.Metadata.Edm.PrimitiveType -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage primitiveType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDecimalTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, unsigned int8 precision, unsigned int8 scale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Byte,System.Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateDecimalTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType, System::Byte precision, System::Byte scale);" />
+      <MemberSignature Language="F#" Value="static member CreateDecimalTypeUsage : System.Data.Metadata.Edm.PrimitiveType * byte * byte -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage (primitiveType, precision, scale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDefaultTypeUsage(class System.Data.Metadata.Edm.EdmType edmType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDefaultTypeUsage(System.Data.Metadata.Edm.EdmType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateDefaultTypeUsage(System::Data::Metadata::Edm::EdmType ^ edmType);" />
+      <MemberSignature Language="F#" Value="static member CreateDefaultTypeUsage : System.Data.Metadata.Edm.EdmType -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateDefaultTypeUsage edmType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateStringTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isUnicode, bool isFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateStringTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType, bool isUnicode, bool isFixedLength);" />
+      <MemberSignature Language="F#" Value="static member CreateStringTypeUsage : System.Data.Metadata.Edm.PrimitiveType * bool * bool -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage (primitiveType, isUnicode, isFixedLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -322,6 +332,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateStringTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isUnicode, bool isFixedLength, int32 maxLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Boolean,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateStringTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType, bool isUnicode, bool isFixedLength, int maxLength);" />
+      <MemberSignature Language="F#" Value="static member CreateStringTypeUsage : System.Data.Metadata.Edm.PrimitiveType * bool * bool * int -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage (primitiveType, isUnicode, isFixedLength, maxLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -361,6 +372,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateTimeTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, valuetype System.Nullable`1&lt;unsigned int8&gt; precision) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateTimeTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::TypeUsage ^ CreateTimeTypeUsage(System::Data::Metadata::Edm::PrimitiveType ^ primitiveType, Nullable&lt;System::Byte&gt; precision);" />
+      <MemberSignature Language="F#" Value="static member CreateTimeTypeUsage : System.Data.Metadata.Edm.PrimitiveType * Nullable&lt;byte&gt; -&gt; System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.TypeUsage.CreateTimeTypeUsage (primitiveType, precision)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -387,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.TypeUsage.EdmType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EdmType As EdmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmType ^ EdmType { System::Data::Metadata::Edm::EdmType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EdmType : System.Data.Metadata.Edm.EdmType" Usage="System.Data.Metadata.Edm.TypeUsage.EdmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -407,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.TypeUsage.Facets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Facets As ReadOnlyMetadataCollection(Of Facet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::Facet ^&gt; ^ Facets { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::Facet ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Facets : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.Facet&gt;" Usage="System.Data.Metadata.Edm.TypeUsage.Facets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -426,6 +440,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsSubtypeOf(class System.Data.Metadata.Edm.TypeUsage typeUsage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.IsSubtypeOf(System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSubtypeOf(System::Data::Metadata::Edm::TypeUsage ^ typeUsage);" />
+      <MemberSignature Language="F#" Value="member this.IsSubtypeOf : System.Data.Metadata.Edm.TypeUsage -&gt; bool" Usage="typeUsage.IsSubtypeOf typeUsage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -451,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="typeUsage.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

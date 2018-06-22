@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.FunctionParameter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FunctionParameter&#xA;Inherits MetadataItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class FunctionParameter sealed : System::Data::Metadata::Edm::MetadataItem" />
+  <TypeSignature Language="F#" Value="type FunctionParameter = class&#xA;    inherit MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.FunctionParameter.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.DeclaringFunction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringFunction As EdmFunction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmFunction ^ DeclaringFunction { System::Data::Metadata::Edm::EdmFunction ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringFunction : System.Data.Metadata.Edm.EdmFunction" Usage="System.Data.Metadata.Edm.FunctionParameter.DeclaringFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.Mode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As ParameterMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ParameterMode Mode { System::Data::Metadata::Edm::ParameterMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Data.Metadata.Edm.ParameterMode" Usage="System.Data.Metadata.Edm.FunctionParameter.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Metadata.Edm.FunctionParameter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.FunctionParameter.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="functionParameter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.FunctionParameter.TypeUsage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeUsage As TypeUsage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::TypeUsage ^ TypeUsage { System::Data::Metadata::Edm::TypeUsage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeUsage : System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Metadata.Edm.FunctionParameter.TypeUsage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

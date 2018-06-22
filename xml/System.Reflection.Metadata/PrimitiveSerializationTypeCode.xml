@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.PrimitiveSerializationTypeCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrimitiveSerializationTypeCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrimitiveSerializationTypeCode" />
+  <TypeSignature Language="F#" Value="type PrimitiveSerializationTypeCode = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 2" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
       <MemberSignature Language="C++ CLI" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 5" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.Char" />
       <MemberSignature Language="VB.NET" Value="Char" />
       <MemberSignature Language="C++ CLI" Value="Char" />
+      <MemberSignature Language="F#" Value="Char = 3" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.Char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 13" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.Int16" />
       <MemberSignature Language="VB.NET" Value="Int16" />
       <MemberSignature Language="C++ CLI" Value="Int16" />
+      <MemberSignature Language="F#" Value="Int16 = 6" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.Int16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.Int32" />
       <MemberSignature Language="VB.NET" Value="Int32" />
       <MemberSignature Language="C++ CLI" Value="Int32" />
+      <MemberSignature Language="F#" Value="Int32 = 8" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.Int32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.Int64" />
       <MemberSignature Language="VB.NET" Value="Int64" />
       <MemberSignature Language="C++ CLI" Value="Int64" />
+      <MemberSignature Language="F#" Value="Int64 = 10" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.Int64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -171,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.SByte" />
       <MemberSignature Language="VB.NET" Value="SByte" />
       <MemberSignature Language="C++ CLI" Value="SByte" />
+      <MemberSignature Language="F#" Value="SByte = 4" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.SByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -192,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 12" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -213,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 14" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -234,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.UInt16" />
       <MemberSignature Language="VB.NET" Value="UInt16" />
       <MemberSignature Language="C++ CLI" Value="UInt16" />
+      <MemberSignature Language="F#" Value="UInt16 = 7" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.UInt16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -255,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.UInt32" />
       <MemberSignature Language="VB.NET" Value="UInt32" />
       <MemberSignature Language="C++ CLI" Value="UInt32" />
+      <MemberSignature Language="F#" Value="UInt32 = 9" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.UInt32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -276,6 +289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.PrimitiveSerializationTypeCode.UInt64" />
       <MemberSignature Language="VB.NET" Value="UInt64" />
       <MemberSignature Language="C++ CLI" Value="UInt64" />
+      <MemberSignature Language="F#" Value="UInt64 = 11" Usage="System.Reflection.Metadata.PrimitiveSerializationTypeCode.UInt64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

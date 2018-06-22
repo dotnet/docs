@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AddingNewEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AddingNewEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddingNewEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AddingNewEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -104,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AddingNewEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AddingNewEventArgs(System::Object ^ newObject);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.AddingNewEventArgs : obj -&gt; System.ComponentModel.AddingNewEventArgs" Usage="new System.ComponentModel.AddingNewEventArgs newObject" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AddingNewEventArgs.NewObject" />
       <MemberSignature Language="VB.NET" Value="Public Property NewObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewObject { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NewObject : obj with get, set" Usage="System.ComponentModel.AddingNewEventArgs.NewObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

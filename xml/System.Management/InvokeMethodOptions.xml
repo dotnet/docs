@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.InvokeMethodOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class InvokeMethodOptions&#xA;Inherits ManagementOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvokeMethodOptions : System::Management::ManagementOptions" />
+  <TypeSignature Language="F#" Value="type InvokeMethodOptions = class&#xA;    inherit ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.InvokeMethodOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvokeMethodOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="new System.Management.InvokeMethodOptions : System.Management.ManagementNamedValueCollection * TimeSpan -&gt; System.Management.InvokeMethodOptions" Usage="new System.Management.InvokeMethodOptions (context, timeout)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.InvokeMethodOptions.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="invokeMethodOptions.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

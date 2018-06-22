@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.HttpCachePolicyElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCachePolicyElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpCachePolicyElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type HttpCachePolicyElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpCachePolicyElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="httpCachePolicyElement.DeserializeElement (reader, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpCachePolicyElement.MaximumAge" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumAge As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaximumAge { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumAge : TimeSpan with get, set" Usage="System.Net.Configuration.HttpCachePolicyElement.MaximumAge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpCachePolicyElement.MaximumStale" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumStale As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaximumStale { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumStale : TimeSpan with get, set" Usage="System.Net.Configuration.HttpCachePolicyElement.MaximumStale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpCachePolicyElement.MinimumFresh" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumFresh As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MinimumFresh { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumFresh : TimeSpan with get, set" Usage="System.Net.Configuration.HttpCachePolicyElement.MinimumFresh" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpCachePolicyElement.PolicyLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property PolicyLevel As HttpRequestCacheLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::HttpRequestCacheLevel PolicyLevel { System::Net::Cache::HttpRequestCacheLevel get(); void set(System::Net::Cache::HttpRequestCacheLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.PolicyLevel : System.Net.Cache.HttpRequestCacheLevel with get, set" Usage="System.Net.Configuration.HttpCachePolicyElement.PolicyLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpCachePolicyElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.HttpCachePolicyElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpCachePolicyElement.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="httpCachePolicyElement.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

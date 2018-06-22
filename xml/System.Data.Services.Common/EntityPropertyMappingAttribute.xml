@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.EntityPropertyMappingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityPropertyMappingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityPropertyMappingAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EntityPropertyMappingAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.EntityPropertyMappingAttribute.#ctor(System.String,System.Data.Services.Common.SyndicationItemProperty,System.Data.Services.Common.SyndicationTextContentKind,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourcePath As String, targetSyndicationItem As SyndicationItemProperty, targetTextContentKind As SyndicationTextContentKind, keepInContent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityPropertyMappingAttribute(System::String ^ sourcePath, System::Data::Services::Common::SyndicationItemProperty targetSyndicationItem, System::Data::Services::Common::SyndicationTextContentKind targetTextContentKind, bool keepInContent);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Common.EntityPropertyMappingAttribute : string * System.Data.Services.Common.SyndicationItemProperty * System.Data.Services.Common.SyndicationTextContentKind * bool -&gt; System.Data.Services.Common.EntityPropertyMappingAttribute" Usage="new System.Data.Services.Common.EntityPropertyMappingAttribute (sourcePath, targetSyndicationItem, targetTextContentKind, keepInContent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.EntityPropertyMappingAttribute.#ctor(System.String,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourcePath As String, targetPath As String, targetNamespacePrefix As String, targetNamespaceUri As String, keepInContent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityPropertyMappingAttribute(System::String ^ sourcePath, System::String ^ targetPath, System::String ^ targetNamespacePrefix, System::String ^ targetNamespaceUri, bool keepInContent);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Common.EntityPropertyMappingAttribute : string * string * string * string * bool -&gt; System.Data.Services.Common.EntityPropertyMappingAttribute" Usage="new System.Data.Services.Common.EntityPropertyMappingAttribute (sourcePath, targetPath, targetNamespacePrefix, targetNamespaceUri, keepInContent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepInContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepInContent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeepInContent : bool" Usage="System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.SourcePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourcePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourcePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourcePath : string" Usage="System.Data.Services.Common.EntityPropertyMappingAttribute.SourcePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetNamespacePrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetNamespacePrefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetNamespacePrefix : string" Usage="System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetNamespaceUri As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetNamespaceUri { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetNamespaceUri : string" Usage="System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetPath : string" Usage="System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetSyndicationItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetSyndicationItem As SyndicationItemProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Common::SyndicationItemProperty TargetSyndicationItem { System::Data::Services::Common::SyndicationItemProperty get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetSyndicationItem : System.Data.Services.Common.SyndicationItemProperty" Usage="System.Data.Services.Common.EntityPropertyMappingAttribute.TargetSyndicationItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetTextContentKind As SyndicationTextContentKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Common::SyndicationTextContentKind TargetTextContentKind { System::Data::Services::Common::SyndicationTextContentKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetTextContentKind : System.Data.Services.Common.SyndicationTextContentKind" Usage="System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

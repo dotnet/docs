@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ArrayModelBinder`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ArrayModelBinder(Of TElement)&#xA;Inherits CollectionModelBinder(Of TElement)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TElement&gt;&#xA;public ref class ArrayModelBinder : System::Web::ModelBinding::CollectionModelBinder&lt;TElement&gt;" />
+  <TypeSignature Language="F#" Value="type ArrayModelBinder&lt;'Element&gt; = class&#xA;    inherit CollectionModelBinder&lt;'Element&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CreateOrReplaceCollection(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext, class System.Collections.Generic.IList`1&lt;!TElement&gt; newCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ArrayModelBinder`1.CreateOrReplaceCollection(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext,System.Collections.Generic.IList{`0})" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CreateOrReplaceCollection(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext, System::Collections::Generic::IList&lt;TElement&gt; ^ newCollection);" />
+      <MemberSignature Language="F#" Value="override this.CreateOrReplaceCollection : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext * System.Collections.Generic.IList&lt;'Element&gt; -&gt; bool" Usage="arrayModelBinder.CreateOrReplaceCollection (modelBindingExecutionContext, bindingContext, newCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

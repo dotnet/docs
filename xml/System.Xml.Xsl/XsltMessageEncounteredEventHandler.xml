@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltMessageEncounteredEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub XsltMessageEncounteredEventHandler(sender As Object, e As XsltMessageEncounteredEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void XsltMessageEncounteredEventHandler(System::Object ^ sender, XsltMessageEncounteredEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type XsltMessageEncounteredEventHandler = delegate of obj * XsltMessageEncounteredEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

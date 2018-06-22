@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum SignatureKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class SignatureKind" />
+  <TypeSignature Language="F#" Value="type SignatureKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.Field" />
       <MemberSignature Language="VB.NET" Value="Field" />
       <MemberSignature Language="C++ CLI" Value="Field" />
+      <MemberSignature Language="F#" Value="Field = 6" Usage="System.Reflection.Metadata.SignatureKind.Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.LocalVariables" />
       <MemberSignature Language="VB.NET" Value="LocalVariables" />
       <MemberSignature Language="C++ CLI" Value="LocalVariables" />
+      <MemberSignature Language="F#" Value="LocalVariables = 7" Usage="System.Reflection.Metadata.SignatureKind.LocalVariables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.Method" />
       <MemberSignature Language="VB.NET" Value="Method" />
       <MemberSignature Language="C++ CLI" Value="Method" />
+      <MemberSignature Language="F#" Value="Method = 0" Usage="System.Reflection.Metadata.SignatureKind.Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.MethodSpecification" />
       <MemberSignature Language="VB.NET" Value="MethodSpecification" />
       <MemberSignature Language="C++ CLI" Value="MethodSpecification" />
+      <MemberSignature Language="F#" Value="MethodSpecification = 10" Usage="System.Reflection.Metadata.SignatureKind.MethodSpecification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.Property" />
       <MemberSignature Language="VB.NET" Value="Property" />
       <MemberSignature Language="C++ CLI" Value="Property" />
+      <MemberSignature Language="F#" Value="Property = 8" Usage="System.Reflection.Metadata.SignatureKind.Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

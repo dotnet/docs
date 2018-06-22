@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Point3DKeyFrameCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class Point3DKeyFrameCollection&#xA;Inherits Freezable&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class Point3DKeyFrameCollection : System::Windows::Freezable, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type Point3DKeyFrameCollection = class&#xA;    inherit Freezable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.Add(System.Windows.Media.Animation.Point3DKeyFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (keyFrame As Point3DKeyFrame) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Media::Animation::Point3DKeyFrame ^ keyFrame);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Media.Animation.Point3DKeyFrame -&gt; int" Usage="point3DKeyFrameCollection.Add keyFrame" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="point3DKeyFrameCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Point3DKeyFrameCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Point3DKeyFrameCollection ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Media.Animation.Point3DKeyFrameCollection" Usage="point3DKeyFrameCollection.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="point3DKeyFrameCollection.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="point3DKeyFrameCollection.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.Contains(System.Windows.Media.Animation.Point3DKeyFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (keyFrame As Point3DKeyFrame) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Media::Animation::Point3DKeyFrame ^ keyFrame);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Media.Animation.Point3DKeyFrame -&gt; bool" Usage="point3DKeyFrameCollection.Contains keyFrame" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.CopyTo(System.Windows.Media.Animation.Point3DKeyFrame[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Point3DKeyFrame(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Media::Animation::Point3DKeyFrame ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Windows.Media.Animation.Point3DKeyFrame[] * int -&gt; unit" Usage="point3DKeyFrameCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Point3DKeyFrameCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Media.Animation.Point3DKeyFrameCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="point3DKeyFrameCollection.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Point3DKeyFrameCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Point3DKeyFrameCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Animation::Point3DKeyFrameCollection ^ Empty { System::Windows::Media::Animation::Point3DKeyFrameCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Windows.Media.Animation.Point3DKeyFrameCollection" Usage="System.Windows.Media.Animation.Point3DKeyFrameCollection.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -318,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
+      <MemberSignature Language="F#" Value="abstract member FreezeCore : bool -&gt; bool&#xA;override this.FreezeCore : bool -&gt; bool" Usage="point3DKeyFrameCollection.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -343,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="point3DKeyFrameCollection.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -377,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="point3DKeyFrameCollection.GetCurrentValueAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -409,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="point3DKeyFrameCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -450,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.IndexOf(System.Windows.Media.Animation.Point3DKeyFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (keyFrame As Point3DKeyFrame) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Media::Animation::Point3DKeyFrame ^ keyFrame);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Media.Animation.Point3DKeyFrame -&gt; int" Usage="point3DKeyFrameCollection.IndexOf keyFrame" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -486,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.Insert(System.Int32,System.Windows.Media.Animation.Point3DKeyFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, keyFrame As Point3DKeyFrame)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Media::Animation::Point3DKeyFrame ^ keyFrame);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Media.Animation.Point3DKeyFrame -&gt; unit" Usage="point3DKeyFrameCollection.Insert (index, keyFrame)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -511,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Point3DKeyFrameCollection.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Windows.Media.Animation.Point3DKeyFrameCollection.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -535,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Point3DKeyFrameCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Media.Animation.Point3DKeyFrameCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -559,6 +578,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Point3DKeyFrameCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Windows.Media.Animation.Point3DKeyFrameCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -590,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Point3DKeyFrameCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Point3DKeyFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Point3DKeyFrame ^ default[int] { System::Windows::Media::Animation::Point3DKeyFrame ^ get(int index); void set(int index, System::Windows::Media::Animation::Point3DKeyFrame ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Media.Animation.Point3DKeyFrame with get, set" Usage="System.Windows.Media.Animation.Point3DKeyFrameCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -621,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.Remove(System.Windows.Media.Animation.Point3DKeyFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (keyFrame As Point3DKeyFrame)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Media::Animation::Point3DKeyFrame ^ keyFrame);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Media.Animation.Point3DKeyFrame -&gt; unit" Usage="point3DKeyFrameCollection.Remove keyFrame" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -644,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Point3DKeyFrameCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="point3DKeyFrameCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -670,6 +693,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Point3DKeyFrameCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Windows.Media.Animation.Point3DKeyFrameCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -830,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Point3DKeyFrameCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.Point3DKeyFrameCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

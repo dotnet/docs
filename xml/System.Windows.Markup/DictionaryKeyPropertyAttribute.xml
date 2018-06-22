@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.DictionaryKeyPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DictionaryKeyPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DictionaryKeyPropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DictionaryKeyPropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.DictionaryKeyPropertyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DictionaryKeyPropertyAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.DictionaryKeyPropertyAttribute : string -&gt; System.Windows.Markup.DictionaryKeyPropertyAttribute" Usage="new System.Windows.Markup.DictionaryKeyPropertyAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.DictionaryKeyPropertyAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Markup.DictionaryKeyPropertyAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

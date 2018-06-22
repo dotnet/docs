@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.SecurityContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityContext sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type SecurityContext = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.SecurityContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="securityContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.StandardBindingElementCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StandardBindingElementCollection(Of TBindingConfiguration)&#xA;Inherits ServiceModelEnhancedConfigurationElementCollection(Of TBindingConfiguration)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TBindingConfiguration&gt;&#xA; where TBindingConfiguration : StandardBindingElementgcnew()public ref class StandardBindingElementCollection sealed : System::ServiceModel::Configuration::ServiceModelEnhancedConfigurationElementCollection&lt;TBindingConfiguration&gt;" />
+  <TypeSignature Language="F#" Value="type StandardBindingElementCollection&lt;'BindingConfiguration (requires 'BindingConfiguration :&gt; StandardBindingElement and 'BindingConfiguration : (new : unit -&gt; 'BindingConfiguration))&gt; = class&#xA;    inherit ServiceModelEnhancedConfigurationElementCollection&lt;'BindingConfiguration (requires 'BindingConfiguration :&gt; StandardBindingElement and 'BindingConfiguration : (new : unit -&gt; 'BindingConfiguration))&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElementCollection`1.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="standardBindingElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

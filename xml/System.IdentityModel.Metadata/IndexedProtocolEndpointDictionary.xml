@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class IndexedProtocolEndpointDictionary&#xA;Inherits SortedList(Of Integer, IndexedProtocolEndpoint)" />
   <TypeSignature Language="C++ CLI" Value="public ref class IndexedProtocolEndpointDictionary : System::Collections::Generic::SortedList&lt;int, System::IdentityModel::Metadata::IndexedProtocolEndpoint ^&gt;" />
+  <TypeSignature Language="F#" Value="type IndexedProtocolEndpointDictionary = class&#xA;    inherit SortedList&lt;int, IndexedProtocolEndpoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.Default" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Default As IndexedProtocolEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::IndexedProtocolEndpoint ^ Default { System::IdentityModel::Metadata::IndexedProtocolEndpoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.IdentityModel.Metadata.IndexedProtocolEndpoint" Usage="System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

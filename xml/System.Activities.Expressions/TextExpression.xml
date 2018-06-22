@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.TextExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class TextExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextExpression abstract sealed" />
+  <TypeSignature Language="F#" Value="type TextExpression = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.TextExpression.DefaultNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultNamespaces As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IList&lt;System::String ^&gt; ^ DefaultNamespaces { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultNamespaces : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Activities.Expressions.TextExpression.DefaultNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.TextExpression.DefaultReferences" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultReferences As IList(Of AssemblyReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IList&lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ DefaultReferences { System::Collections::Generic::IList&lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultReferences : System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;" Usage="System.Activities.Expressions.TextExpression.DefaultReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetNamespaces(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamespaces (target As Object) As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetNamespaces(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetNamespaces : obj -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="System.Activities.Expressions.TextExpression.GetNamespaces target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetNamespacesForImplementation(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamespacesForImplementation (target As Object) As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetNamespacesForImplementation(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetNamespacesForImplementation : obj -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="System.Activities.Expressions.TextExpression.GetNamespacesForImplementation target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetNamespacesInScope(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetNamespacesInScope(System.Activities.Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetNamespacesInScope(System::Activities::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="static member GetNamespacesInScope : System.Activities.Activity -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="System.Activities.Expressions.TextExpression.GetNamespacesInScope activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetReferences(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReferences (target As Object) As IList(Of AssemblyReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ GetReferences(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetReferences : obj -&gt; System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;" Usage="System.Activities.Expressions.TextExpression.GetReferences target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetReferencesForImplementation(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReferencesForImplementation (target As Object) As IList(Of AssemblyReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ GetReferencesForImplementation(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetReferencesForImplementation : obj -&gt; System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;" Usage="System.Activities.Expressions.TextExpression.GetReferencesForImplementation target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Activities.Expressions.AssemblyReference&gt; GetReferencesInScope(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetReferencesInScope(System.Activities.Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ GetReferencesInScope(System::Activities::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="static member GetReferencesInScope : System.Activities.Activity -&gt; System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;" Usage="System.Activities.Expressions.TextExpression.GetReferencesInScope activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -214,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespaces(System.Object,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetNamespaces (target As Object, namespaces As IList(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNamespaces(System::Object ^ target, System::Collections::Generic::IList&lt;System::String ^&gt; ^ namespaces);" />
+      <MemberSignature Language="F#" Value="static member SetNamespaces : obj * System.Collections.Generic.IList&lt;string&gt; -&gt; unit" Usage="System.Activities.Expressions.TextExpression.SetNamespaces (target, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -239,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespaces(System.Object,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetNamespaces (target As Object, ParamArray namespaces As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNamespaces(System::Object ^ target, ... cli::array &lt;System::String ^&gt; ^ namespaces);" />
+      <MemberSignature Language="F#" Value="static member SetNamespaces : obj * string[] -&gt; unit" Usage="System.Activities.Expressions.TextExpression.SetNamespaces (target, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespacesForImplementation(System.Object,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetNamespacesForImplementation (target As Object, namespaces As IList(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNamespacesForImplementation(System::Object ^ target, System::Collections::Generic::IList&lt;System::String ^&gt; ^ namespaces);" />
+      <MemberSignature Language="F#" Value="static member SetNamespacesForImplementation : obj * System.Collections.Generic.IList&lt;string&gt; -&gt; unit" Usage="System.Activities.Expressions.TextExpression.SetNamespacesForImplementation (target, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -304,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespacesForImplementation(System.Object,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetNamespacesForImplementation (target As Object, ParamArray namespaces As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNamespacesForImplementation(System::Object ^ target, ... cli::array &lt;System::String ^&gt; ^ namespaces);" />
+      <MemberSignature Language="F#" Value="static member SetNamespacesForImplementation : obj * string[] -&gt; unit" Usage="System.Activities.Expressions.TextExpression.SetNamespacesForImplementation (target, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -344,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferences(System.Object,System.Activities.Expressions.AssemblyReference[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetReferences (target As Object, ParamArray references As AssemblyReference())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetReferences(System::Object ^ target, ... cli::array &lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ references);" />
+      <MemberSignature Language="F#" Value="static member SetReferences : obj * System.Activities.Expressions.AssemblyReference[] -&gt; unit" Usage="System.Activities.Expressions.TextExpression.SetReferences (target, references)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -375,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferences(System.Object,System.Collections.Generic.IList{System.Activities.Expressions.AssemblyReference})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetReferences (target As Object, references As IList(Of AssemblyReference))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetReferences(System::Object ^ target, System::Collections::Generic::IList&lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ references);" />
+      <MemberSignature Language="F#" Value="static member SetReferences : obj * System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt; -&gt; unit" Usage="System.Activities.Expressions.TextExpression.SetReferences (target, references)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -409,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferencesForImplementation(System.Object,System.Activities.Expressions.AssemblyReference[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetReferencesForImplementation (target As Object, ParamArray references As AssemblyReference())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetReferencesForImplementation(System::Object ^ target, ... cli::array &lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ references);" />
+      <MemberSignature Language="F#" Value="static member SetReferencesForImplementation : obj * System.Activities.Expressions.AssemblyReference[] -&gt; unit" Usage="System.Activities.Expressions.TextExpression.SetReferencesForImplementation (target, references)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -440,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferencesForImplementation(System.Object,System.Collections.Generic.IList{System.Activities.Expressions.AssemblyReference})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetReferencesForImplementation (target As Object, references As IList(Of AssemblyReference))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetReferencesForImplementation(System::Object ^ target, System::Collections::Generic::IList&lt;System::Activities::Expressions::AssemblyReference ^&gt; ^ references);" />
+      <MemberSignature Language="F#" Value="static member SetReferencesForImplementation : obj * System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt; -&gt; unit" Usage="System.Activities.Expressions.TextExpression.SetReferencesForImplementation (target, references)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -465,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.ShouldSerializeNamespaces(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShouldSerializeNamespaces (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ShouldSerializeNamespaces(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member ShouldSerializeNamespaces : obj -&gt; bool" Usage="System.Activities.Expressions.TextExpression.ShouldSerializeNamespaces target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -490,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.ShouldSerializeNamespacesForImplementation(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShouldSerializeNamespacesForImplementation (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ShouldSerializeNamespacesForImplementation(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member ShouldSerializeNamespacesForImplementation : obj -&gt; bool" Usage="System.Activities.Expressions.TextExpression.ShouldSerializeNamespacesForImplementation target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -515,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.ShouldSerializeReferences(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShouldSerializeReferences (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ShouldSerializeReferences(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member ShouldSerializeReferences : obj -&gt; bool" Usage="System.Activities.Expressions.TextExpression.ShouldSerializeReferences target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -540,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.ShouldSerializeReferencesForImplementation(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShouldSerializeReferencesForImplementation (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ShouldSerializeReferencesForImplementation(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member ShouldSerializeReferencesForImplementation : obj -&gt; bool" Usage="System.Activities.Expressions.TextExpression.ShouldSerializeReferencesForImplementation target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

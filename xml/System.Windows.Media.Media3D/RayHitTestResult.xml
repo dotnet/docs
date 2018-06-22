@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.RayHitTestResult" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RayHitTestResult&#xA;Inherits HitTestResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class RayHitTestResult abstract : System::Windows::Media::HitTestResult" />
+  <TypeSignature Language="F#" Value="type RayHitTestResult = class&#xA;    inherit HitTestResult" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestResult.DistanceToRayOrigin" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DistanceToRayOrigin As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double DistanceToRayOrigin { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceToRayOrigin : double" Usage="System.Windows.Media.Media3D.RayHitTestResult.DistanceToRayOrigin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestResult.ModelHit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelHit As Model3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Model3D ^ ModelHit { System::Windows::Media::Media3D::Model3D ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelHit : System.Windows.Media.Media3D.Model3D" Usage="System.Windows.Media.Media3D.RayHitTestResult.ModelHit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestResult.PointHit" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PointHit As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Media3D::Point3D PointHit { System::Windows::Media::Media3D::Point3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.PointHit : System.Windows.Media.Media3D.Point3D" Usage="System.Windows.Media.Media3D.RayHitTestResult.PointHit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestResult.VisualHit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisualHit As Visual3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Visual3D ^ VisualHit { System::Windows::Media::Media3D::Visual3D ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualHit : System.Windows.Media.Media3D.Visual3D" Usage="System.Windows.Media.Media3D.RayHitTestResult.VisualHit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

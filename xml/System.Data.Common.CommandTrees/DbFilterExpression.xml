@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbFilterExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbFilterExpression&#xA;Inherits DbExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbFilterExpression sealed : System::Data::Common::CommandTrees::DbExpression" />
+  <TypeSignature Language="F#" Value="type DbFilterExpression = class&#xA;    inherit DbExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbFilterExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Accept (visitor As DbExpressionVisitor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Accept(System::Data::Common::CommandTrees::DbExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Data.Common.CommandTrees.DbExpressionVisitor -&gt; unit" Usage="dbFilterExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbFilterExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResultType) (visitor As DbExpressionVisitor(Of TResultType)) As TResultType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; override TResultType Accept(System::Data::Common::CommandTrees::DbExpressionVisitor&lt;TResultType&gt; ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Data.Common.CommandTrees.DbExpressionVisitor&lt;'ResultType&gt; -&gt; 'ResultType" Usage="dbFilterExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbFilterExpression.Input" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Input As DbExpressionBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpressionBinding ^ Input { System::Data::Common::CommandTrees::DbExpressionBinding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Input : System.Data.Common.CommandTrees.DbExpressionBinding" Usage="System.Data.Common.CommandTrees.DbFilterExpression.Input" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbFilterExpression.Predicate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Predicate As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Predicate { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Predicate : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbFilterExpression.Predicate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

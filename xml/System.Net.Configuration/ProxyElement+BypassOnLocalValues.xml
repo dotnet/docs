@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ProxyElement.BypassOnLocalValues" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProxyElement.BypassOnLocalValues" />
   <TypeSignature Language="C++ CLI" Value="public: enum class ProxyElement::BypassOnLocalValues" />
+  <TypeSignature Language="F#" Value="type ProxyElement.BypassOnLocalValues = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.BypassOnLocalValues.False" />
       <MemberSignature Language="VB.NET" Value="False" />
       <MemberSignature Language="C++ CLI" Value="False" />
+      <MemberSignature Language="F#" Value="False = 0" Usage="System.Net.Configuration.ProxyElement.BypassOnLocalValues.False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.BypassOnLocalValues.True" />
       <MemberSignature Language="VB.NET" Value="True" />
       <MemberSignature Language="C++ CLI" Value="True" />
+      <MemberSignature Language="F#" Value="True = 1" Usage="System.Net.Configuration.ProxyElement.BypassOnLocalValues.True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.BypassOnLocalValues.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = -1" Usage="System.Net.Configuration.ProxyElement.BypassOnLocalValues.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

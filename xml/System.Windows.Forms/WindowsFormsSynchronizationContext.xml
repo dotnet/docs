@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsFormsSynchronizationContext&#xA;Inherits SynchronizationContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsSynchronizationContext sealed : System::Threading::SynchronizationContext, IDisposable" />
+  <TypeSignature Language="F#" Value="type WindowsFormsSynchronizationContext = class&#xA;    inherit SynchronizationContext&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WindowsFormsSynchronizationContext.AutoInstall" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property AutoInstall As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AutoInstall { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoInstall : bool with get, set" Usage="System.Windows.Forms.WindowsFormsSynchronizationContext.AutoInstall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCopy () As SynchronizationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::SynchronizationContext ^ CreateCopy();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.Threading.SynchronizationContext&#xA;override this.CreateCopy : unit -&gt; System.Threading.SynchronizationContext" Usage="windowsFormsSynchronizationContext.CreateCopy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="windowsFormsSynchronizationContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Post (d As SendOrPostCallback, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Post(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Post : System.Threading.SendOrPostCallback * obj -&gt; unit&#xA;override this.Post : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="windowsFormsSynchronizationContext.Post (d, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Send (d As SendOrPostCallback, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Send(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Send : System.Threading.SendOrPostCallback * obj -&gt; unit&#xA;override this.Send : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="windowsFormsSynchronizationContext.Send (d, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Uninstall" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninstall ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninstall();" />
+      <MemberSignature Language="F#" Value="static member Uninstall : unit -&gt; unit" Usage="System.Windows.Forms.WindowsFormsSynchronizationContext.Uninstall " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

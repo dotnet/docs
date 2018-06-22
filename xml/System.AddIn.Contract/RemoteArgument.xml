@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.RemoteArgument" />
   <TypeSignature Language="VB.NET" Value="Public Structure RemoteArgument" />
   <TypeSignature Language="C++ CLI" Value="public value class RemoteArgument" />
+  <TypeSignature Language="F#" Value="type RemoteArgument = struct" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.AddIn.Contract.IContract)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As IContract)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::AddIn::Contract::IContract ^ value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : System.AddIn.Contract.IContract -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Array array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(Array ^ array);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : Array -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument array" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(bool value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::Byte value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : byte -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(char value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : char -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(DateTime value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : DateTime -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.DBNull)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As DBNull)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(DBNull ^ value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : DBNull -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : decimal -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(double value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : double -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(short value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : int16 -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -327,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(int value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : int -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(long value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : int64 -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -381,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SByte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::SByte value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : sbyte -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -413,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(float value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : single -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -440,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : string -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -467,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : uint16 -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -499,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : uint32 -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -531,6 +549,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : uint64 -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -563,6 +582,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.AddIn.Contract.IContract,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As IContract, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::AddIn::Contract::IContract ^ value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : System.AddIn.Contract.IContract * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -592,6 +612,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.AddIn.Contract.RemoteArgumentKind remoteArgKind, valuetype System.TypeCode typeCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.AddIn.Contract.RemoteArgumentKind,System.TypeCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::AddIn::Contract::RemoteArgumentKind remoteArgKind, TypeCode typeCode);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : System.AddIn.Contract.RemoteArgumentKind * TypeCode -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (remoteArgKind, typeCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -632,6 +653,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Array array, bool isByRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Array,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(Array ^ array, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : Array * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (array, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -665,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Boolean, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(bool value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : bool * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -695,6 +718,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Byte,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::Byte value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : byte * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -725,6 +749,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Char,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(char value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : char * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -755,6 +780,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.DateTime,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As DateTime, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(DateTime value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : DateTime * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -785,6 +811,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.DBNull,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As DBNull, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(DBNull ^ value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : DBNull * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -815,6 +842,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Decimal,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Decimal, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::Decimal value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : decimal * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -845,6 +873,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Double,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(double value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : double * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -875,6 +904,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Int16,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Short, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(short value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : int16 * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -905,6 +935,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(int value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : int * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -935,6 +966,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Int64,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(long value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : int64 * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -965,6 +997,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.SByte,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SByte, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::SByte value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : sbyte * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1000,6 +1033,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.Single,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(float value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : single * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1030,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::String ^ value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : string * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1060,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.UInt16,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As UShort, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::UInt16 value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : uint16 * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1095,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.UInt32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::UInt32 value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : uint32 * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1130,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.UInt64,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ULong, isByRef As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::UInt64 value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : uint64 * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (value, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1164,6 +1202,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.AddIn.Contract.RemoteArgumentKind remoteArgKind, valuetype System.TypeCode typeCode, bool isByRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.#ctor(System.AddIn.Contract.RemoteArgumentKind,System.TypeCode,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteArgument(System::AddIn::Contract::RemoteArgumentKind remoteArgKind, TypeCode typeCode, bool isByRef);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Contract.RemoteArgument : System.AddIn.Contract.RemoteArgumentKind * TypeCode * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="new System.AddIn.Contract.RemoteArgument (remoteArgKind, typeCode, isByRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1210,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.ArrayValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ArrayValue As Array" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Array ^ ArrayValue { Array ^ get(); void set(Array ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ArrayValue : Array with get, set" Usage="System.AddIn.Contract.RemoteArgument.ArrayValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1239,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.BooleanValue" />
       <MemberSignature Language="VB.NET" Value="Public Property BooleanValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BooleanValue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BooleanValue : bool with get, set" Usage="System.AddIn.Contract.RemoteArgument.BooleanValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1268,6 +1309,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.ByteValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ByteValue As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte ByteValue { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.ByteValue : byte with get, set" Usage="System.AddIn.Contract.RemoteArgument.ByteValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1297,6 +1339,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.CharValue" />
       <MemberSignature Language="VB.NET" Value="Public Property CharValue As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char CharValue { char get(); void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.CharValue : char with get, set" Usage="System.AddIn.Contract.RemoteArgument.CharValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1326,6 +1369,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.ContractValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ContractValue As IContract" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::AddIn::Contract::IContract ^ ContractValue { System::AddIn::Contract::IContract ^ get(); void set(System::AddIn::Contract::IContract ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContractValue : System.AddIn.Contract.IContract with get, set" Usage="System.AddIn.Contract.RemoteArgument.ContractValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1364,6 +1408,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRemoteArgument (value As Object) As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::AddIn::Contract::RemoteArgument CreateRemoteArgument(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member CreateRemoteArgument : obj -&gt; System.AddIn.Contract.RemoteArgument" Usage="System.AddIn.Contract.RemoteArgument.CreateRemoteArgument value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1410,6 +1455,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRemoteArgument (value As Object, isByRef As Boolean) As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::AddIn::Contract::RemoteArgument CreateRemoteArgument(System::Object ^ value, bool isByRef);" />
+      <MemberSignature Language="F#" Value="static member CreateRemoteArgument : obj * bool -&gt; System.AddIn.Contract.RemoteArgument" Usage="System.AddIn.Contract.RemoteArgument.CreateRemoteArgument (value, isByRef)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1459,6 +1505,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument(System.Object,System.Boolean,System.TypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRemoteArgument (value As Object, isByRef As Boolean, typeCodeToUse As TypeCode) As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::AddIn::Contract::RemoteArgument CreateRemoteArgument(System::Object ^ value, bool isByRef, TypeCode typeCodeToUse);" />
+      <MemberSignature Language="F#" Value="static member CreateRemoteArgument : obj * bool * TypeCode -&gt; System.AddIn.Contract.RemoteArgument" Usage="System.AddIn.Contract.RemoteArgument.CreateRemoteArgument (value, isByRef, typeCodeToUse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1513,6 +1560,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.DateTimeValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DateTimeValue As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateTimeValue { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.DateTimeValue : DateTime with get, set" Usage="System.AddIn.Contract.RemoteArgument.DateTimeValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1542,6 +1590,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.DBNullValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DBNullValue As DBNull" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DBNull ^ DBNullValue { DBNull ^ get(); void set(DBNull ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DBNullValue : DBNull with get, set" Usage="System.AddIn.Contract.RemoteArgument.DBNullValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1571,6 +1620,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.DecimalValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DecimalValue As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal DecimalValue { System::Decimal get(); void set(System::Decimal value); };" />
+      <MemberSignature Language="F#" Value="member this.DecimalValue : decimal with get, set" Usage="System.AddIn.Contract.RemoteArgument.DecimalValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1600,6 +1650,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.DoubleValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DoubleValue As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DoubleValue { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleValue : double with get, set" Usage="System.AddIn.Contract.RemoteArgument.DoubleValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1629,6 +1680,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.Int16Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Int16Value As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Int16Value { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.Int16Value : int16 with get, set" Usage="System.AddIn.Contract.RemoteArgument.Int16Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1658,6 +1710,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.Int32Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Int32Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Int32Value { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Int32Value : int with get, set" Usage="System.AddIn.Contract.RemoteArgument.Int32Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1687,6 +1740,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.Int64Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Int64Value As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Int64Value { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.Int64Value : int64 with get, set" Usage="System.AddIn.Contract.RemoteArgument.Int64Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1716,6 +1770,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.IsByRef" />
       <MemberSignature Language="VB.NET" Value="Public Property IsByRef As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsByRef { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsByRef : bool with get, set" Usage="System.AddIn.Contract.RemoteArgument.IsByRef" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1737,6 +1792,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.MissingValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MissingValue As Missing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Missing ^ MissingValue { System::Reflection::Missing ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MissingValue : System.Reflection.Missing" Usage="System.AddIn.Contract.RemoteArgument.MissingValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1762,6 +1818,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteArgumentKind As RemoteArgumentKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::AddIn::Contract::RemoteArgumentKind RemoteArgumentKind { System::AddIn::Contract::RemoteArgumentKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemoteArgumentKind : System.AddIn.Contract.RemoteArgumentKind" Usage="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1789,6 +1846,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.SByteValue" />
       <MemberSignature Language="VB.NET" Value="Public Property SByteValue As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::SByte SByteValue { System::SByte get(); void set(System::SByte value); };" />
+      <MemberSignature Language="F#" Value="member this.SByteValue : sbyte with get, set" Usage="System.AddIn.Contract.RemoteArgument.SByteValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1823,6 +1881,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.SingleValue" />
       <MemberSignature Language="VB.NET" Value="Public Property SingleValue As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SingleValue { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SingleValue : single with get, set" Usage="System.AddIn.Contract.RemoteArgument.SingleValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1852,6 +1911,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.StringValue" />
       <MemberSignature Language="VB.NET" Value="Public Property StringValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StringValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StringValue : string with get, set" Usage="System.AddIn.Contract.RemoteArgument.StringValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1881,6 +1941,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.TypeCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeCode As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TypeCode TypeCode { TypeCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeCode : TypeCode" Usage="System.AddIn.Contract.RemoteArgument.TypeCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1901,6 +1962,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.UInt16Value" />
       <MemberSignature Language="VB.NET" Value="Public Property UInt16Value As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 UInt16Value { System::UInt16 get(); void set(System::UInt16 value); };" />
+      <MemberSignature Language="F#" Value="member this.UInt16Value : uint16 with get, set" Usage="System.AddIn.Contract.RemoteArgument.UInt16Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1935,6 +1997,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.UInt32Value" />
       <MemberSignature Language="VB.NET" Value="Public Property UInt32Value As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 UInt32Value { System::UInt32 get(); void set(System::UInt32 value); };" />
+      <MemberSignature Language="F#" Value="member this.UInt32Value : uint32 with get, set" Usage="System.AddIn.Contract.RemoteArgument.UInt32Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -1969,6 +2032,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Contract.RemoteArgument.UInt64Value" />
       <MemberSignature Language="VB.NET" Value="Public Property UInt64Value As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 UInt64Value { System::UInt64 get(); void set(System::UInt64 value); };" />
+      <MemberSignature Language="F#" Value="member this.UInt64Value : uint64 with get, set" Usage="System.AddIn.Contract.RemoteArgument.UInt64Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

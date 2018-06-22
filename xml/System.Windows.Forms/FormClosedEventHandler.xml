@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormClosedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormClosedEventHandler(sender As Object, e As FormClosedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FormClosedEventHandler(System::Object ^ sender, FormClosedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FormClosedEventHandler = delegate of obj * FormClosedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

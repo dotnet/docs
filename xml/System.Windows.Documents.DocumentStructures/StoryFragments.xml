@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.StoryFragments" />
   <TypeSignature Language="VB.NET" Value="Public Class StoryFragments&#xA;Implements IAddChild, IEnumerable(Of StoryFragment)" />
   <TypeSignature Language="C++ CLI" Value="public ref class StoryFragments : System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::StoryFragment ^&gt;, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type StoryFragments = class&#xA;    interface IAddChild&#xA;    interface seq&lt;StoryFragment&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Documents.DocumentStructures.StoryFragment storyFragment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragments.Add(System.Windows.Documents.DocumentStructures.StoryFragment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::StoryFragment ^ storyFragment);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.StoryFragment -&gt; unit" Usage="storyFragments.Add storyFragment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

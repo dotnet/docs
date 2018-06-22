@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonColumnType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ButtonColumnType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ButtonColumnType" />
+  <TypeSignature Language="F#" Value="type ButtonColumnType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ButtonColumnType.LinkButton" />
       <MemberSignature Language="VB.NET" Value="LinkButton" />
       <MemberSignature Language="C++ CLI" Value="LinkButton" />
+      <MemberSignature Language="F#" Value="LinkButton = 0" Usage="System.Web.UI.WebControls.ButtonColumnType.LinkButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ButtonColumnType.PushButton" />
       <MemberSignature Language="VB.NET" Value="PushButton" />
       <MemberSignature Language="C++ CLI" Value="PushButton" />
+      <MemberSignature Language="F#" Value="PushButton = 1" Usage="System.Web.UI.WebControls.ButtonColumnType.PushButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

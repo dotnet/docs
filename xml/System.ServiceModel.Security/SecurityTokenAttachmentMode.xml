@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityTokenAttachmentMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityTokenAttachmentMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityTokenAttachmentMode" />
+  <TypeSignature Language="F#" Value="type SecurityTokenAttachmentMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityTokenAttachmentMode.Endorsing" />
       <MemberSignature Language="VB.NET" Value="Endorsing" />
       <MemberSignature Language="C++ CLI" Value="Endorsing" />
+      <MemberSignature Language="F#" Value="Endorsing = 1" Usage="System.ServiceModel.Security.SecurityTokenAttachmentMode.Endorsing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityTokenAttachmentMode.Signed" />
       <MemberSignature Language="VB.NET" Value="Signed" />
       <MemberSignature Language="C++ CLI" Value="Signed" />
+      <MemberSignature Language="F#" Value="Signed = 0" Usage="System.ServiceModel.Security.SecurityTokenAttachmentMode.Signed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityTokenAttachmentMode.SignedEncrypted" />
       <MemberSignature Language="VB.NET" Value="SignedEncrypted" />
       <MemberSignature Language="C++ CLI" Value="SignedEncrypted" />
+      <MemberSignature Language="F#" Value="SignedEncrypted = 3" Usage="System.ServiceModel.Security.SecurityTokenAttachmentMode.SignedEncrypted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityTokenAttachmentMode.SignedEndorsing" />
       <MemberSignature Language="VB.NET" Value="SignedEndorsing" />
       <MemberSignature Language="C++ CLI" Value="SignedEndorsing" />
+      <MemberSignature Language="F#" Value="SignedEndorsing = 2" Usage="System.ServiceModel.Security.SecurityTokenAttachmentMode.SignedEndorsing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextRenderer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextRenderer" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextRenderer sealed" />
+  <TypeSignature Language="F#" Value="type TextRenderer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Point pt, valuetype System.Drawing.Color foreColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Point pt, System::Drawing::Color foreColor);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Point * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.TextRenderer.DrawText (dc, text, font, pt, foreColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.Color foreColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Rectangle,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Rectangle bounds, System::Drawing::Color foreColor);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Rectangle * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.TextRenderer.DrawText (dc, text, font, bounds, foreColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Point pt, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Point pt, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Point * System.Drawing.Color * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.TextRenderer.DrawText (dc, text, font, pt, foreColor, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Point pt, valuetype System.Drawing.Color foreColor, valuetype System.Windows.Forms.TextFormatFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color,System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Point pt, System::Drawing::Color foreColor, System::Windows::Forms::TextFormatFlags flags);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Point * System.Drawing.Color * System.Windows.Forms.TextFormatFlags -&gt; unit" Usage="System.Windows.Forms.TextRenderer.DrawText (dc, text, font, pt, foreColor, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +285,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Rectangle bounds, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Rectangle * System.Drawing.Color * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.TextRenderer.DrawText (dc, text, font, bounds, foreColor, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +339,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.Color foreColor, valuetype System.Windows.Forms.TextFormatFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Rectangle,System.Drawing.Color,System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Rectangle bounds, System::Drawing::Color foreColor, System::Windows::Forms::TextFormatFlags flags);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Rectangle * System.Drawing.Color * System.Windows.Forms.TextFormatFlags -&gt; unit" Usage="System.Windows.Forms.TextRenderer.DrawText (dc, text, font, bounds, foreColor, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -388,6 +395,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Point pt, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, valuetype System.Windows.Forms.TextFormatFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color,System.Drawing.Color,System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Point pt, System::Drawing::Color foreColor, System::Drawing::Color backColor, System::Windows::Forms::TextFormatFlags flags);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Point * System.Drawing.Color * System.Drawing.Color * System.Windows.Forms.TextFormatFlags -&gt; unit" Usage="System.Windows.Forms.TextRenderer.DrawText (dc, text, font, pt, foreColor, backColor, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -448,6 +456,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, valuetype System.Windows.Forms.TextFormatFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Rectangle bounds, System::Drawing::Color foreColor, System::Drawing::Color backColor, System::Windows::Forms::TextFormatFlags flags);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Rectangle * System.Drawing.Color * System.Drawing.Color * System.Windows.Forms.TextFormatFlags -&gt; unit" Usage="System.Windows.Forms.TextRenderer.DrawText (dc, text, font, bounds, foreColor, backColor, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -514,6 +523,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size MeasureText(string text, class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.MeasureText(System.String,System.Drawing.Font)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size MeasureText(System::String ^ text, System::Drawing::Font ^ font);" />
+      <MemberSignature Language="F#" Value="static member MeasureText : string * System.Drawing.Font -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TextRenderer.MeasureText (text, font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -554,6 +564,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size MeasureText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size MeasureText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font);" />
+      <MemberSignature Language="F#" Value="static member MeasureText : System.Drawing.IDeviceContext * string * System.Drawing.Font -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TextRenderer.MeasureText (dc, text, font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -596,6 +607,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size MeasureText(string text, class System.Drawing.Font font, valuetype System.Drawing.Size proposedSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.MeasureText(System.String,System.Drawing.Font,System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size MeasureText(System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Size proposedSize);" />
+      <MemberSignature Language="F#" Value="static member MeasureText : string * System.Drawing.Font * System.Drawing.Size -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TextRenderer.MeasureText (text, font, proposedSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -638,6 +650,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size MeasureText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Size proposedSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size MeasureText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Size proposedSize);" />
+      <MemberSignature Language="F#" Value="static member MeasureText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Size -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TextRenderer.MeasureText (dc, text, font, proposedSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -684,6 +697,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size MeasureText(string text, class System.Drawing.Font font, valuetype System.Drawing.Size proposedSize, valuetype System.Windows.Forms.TextFormatFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.MeasureText(System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size MeasureText(System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Size proposedSize, System::Windows::Forms::TextFormatFlags flags);" />
+      <MemberSignature Language="F#" Value="static member MeasureText : string * System.Drawing.Font * System.Drawing.Size * System.Windows.Forms.TextFormatFlags -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TextRenderer.MeasureText (text, font, proposedSize, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -733,6 +747,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size MeasureText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Size proposedSize, valuetype System.Windows.Forms.TextFormatFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size MeasureText(System::Drawing::IDeviceContext ^ dc, System::String ^ text, System::Drawing::Font ^ font, System::Drawing::Size proposedSize, System::Windows::Forms::TextFormatFlags flags);" />
+      <MemberSignature Language="F#" Value="static member MeasureText : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Size * System.Windows.Forms.TextFormatFlags -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TextRenderer.MeasureText (dc, text, font, proposedSize, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

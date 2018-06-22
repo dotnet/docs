@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.PathTooLongException" />
   <TypeSignature Language="VB.NET" Value="Public Class PathTooLongException&#xA;Inherits IOException" />
   <TypeSignature Language="C++ CLI" Value="public ref class PathTooLongException : System::IO::IOException" />
+  <TypeSignature Language="F#" Value="type PathTooLongException = class&#xA;    inherit IOException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -124,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.PathTooLongException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PathTooLongException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IO.PathTooLongException : string -&gt; System.IO.PathTooLongException" Usage="new System.IO.PathTooLongException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -163,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.PathTooLongException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PathTooLongException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IO.PathTooLongException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.PathTooLongException" Usage="new System.IO.PathTooLongException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.PathTooLongException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PathTooLongException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.PathTooLongException : string * Exception -&gt; System.IO.PathTooLongException" Usage="new System.IO.PathTooLongException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

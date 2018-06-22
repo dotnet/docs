@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionImportWarnings" />
   <TypeSignature Language="VB.NET" Value="Public Enum ServiceDescriptionImportWarnings" />
   <TypeSignature Language="C++ CLI" Value="public enum class ServiceDescriptionImportWarnings" />
+  <TypeSignature Language="F#" Value="type ServiceDescriptionImportWarnings = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.NoCodeGenerated" />
       <MemberSignature Language="VB.NET" Value="NoCodeGenerated" />
       <MemberSignature Language="C++ CLI" Value="NoCodeGenerated" />
+      <MemberSignature Language="F#" Value="NoCodeGenerated = 1" Usage="System.Web.Services.Description.ServiceDescriptionImportWarnings.NoCodeGenerated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.NoMethodsGenerated" />
       <MemberSignature Language="VB.NET" Value="NoMethodsGenerated" />
       <MemberSignature Language="C++ CLI" Value="NoMethodsGenerated" />
+      <MemberSignature Language="F#" Value="NoMethodsGenerated = 32" Usage="System.Web.Services.Description.ServiceDescriptionImportWarnings.NoMethodsGenerated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.OptionalExtensionsIgnored" />
       <MemberSignature Language="VB.NET" Value="OptionalExtensionsIgnored" />
       <MemberSignature Language="C++ CLI" Value="OptionalExtensionsIgnored" />
+      <MemberSignature Language="F#" Value="OptionalExtensionsIgnored = 2" Usage="System.Web.Services.Description.ServiceDescriptionImportWarnings.OptionalExtensionsIgnored" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.RequiredExtensionsIgnored" />
       <MemberSignature Language="VB.NET" Value="RequiredExtensionsIgnored" />
       <MemberSignature Language="C++ CLI" Value="RequiredExtensionsIgnored" />
+      <MemberSignature Language="F#" Value="RequiredExtensionsIgnored = 4" Usage="System.Web.Services.Description.ServiceDescriptionImportWarnings.RequiredExtensionsIgnored" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.SchemaValidation" />
       <MemberSignature Language="VB.NET" Value="SchemaValidation" />
       <MemberSignature Language="C++ CLI" Value="SchemaValidation" />
+      <MemberSignature Language="F#" Value="SchemaValidation = 64" Usage="System.Web.Services.Description.ServiceDescriptionImportWarnings.SchemaValidation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.UnsupportedBindingsIgnored" />
       <MemberSignature Language="VB.NET" Value="UnsupportedBindingsIgnored" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedBindingsIgnored" />
+      <MemberSignature Language="F#" Value="UnsupportedBindingsIgnored = 16" Usage="System.Web.Services.Description.ServiceDescriptionImportWarnings.UnsupportedBindingsIgnored" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.UnsupportedOperationsIgnored" />
       <MemberSignature Language="VB.NET" Value="UnsupportedOperationsIgnored" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedOperationsIgnored" />
+      <MemberSignature Language="F#" Value="UnsupportedOperationsIgnored = 8" Usage="System.Web.Services.Description.ServiceDescriptionImportWarnings.UnsupportedOperationsIgnored" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -169,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.WsiConformance" />
       <MemberSignature Language="VB.NET" Value="WsiConformance" />
       <MemberSignature Language="C++ CLI" Value="WsiConformance" />
+      <MemberSignature Language="F#" Value="WsiConformance = 128" Usage="System.Web.Services.Description.ServiceDescriptionImportWarnings.WsiConformance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.GlobalObject" />
   <TypeSignature Language="VB.NET" Value="Public Class GlobalObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class GlobalObject" />
+  <TypeSignature Language="F#" Value="type GlobalObject = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.ActiveXObject" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ActiveXObject As ActiveXObjectConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ActiveXObjectConstructor ^ ActiveXObject { Microsoft::JScript::ActiveXObjectConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveXObject : Microsoft.JScript.ActiveXObjectConstructor" Usage="Microsoft.JScript.GlobalObject.ActiveXObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Array" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Array As ArrayConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ArrayConstructor ^ Array { Microsoft::JScript::ArrayConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Array : Microsoft.JScript.ArrayConstructor" Usage="Microsoft.JScript.GlobalObject.Array" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.boolean" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property boolean As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ boolean { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.boolean : Type" Usage="Microsoft.JScript.GlobalObject.boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Boolean As BooleanConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::BooleanConstructor ^ Boolean { Microsoft::JScript::BooleanConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Boolean : Microsoft.JScript.BooleanConstructor" Usage="Microsoft.JScript.GlobalObject.Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.byte" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property byte As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ byte { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.byte : Type" Usage="Microsoft.JScript.GlobalObject.byte" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.char" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property char As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ char { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.char : Type" Usage="Microsoft.JScript.GlobalObject.char" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.CollectGarbage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CollectGarbage ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CollectGarbage();" />
+      <MemberSignature Language="F#" Value="static member CollectGarbage : unit -&gt; unit" Usage="Microsoft.JScript.GlobalObject.CollectGarbage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Date" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Date As DateConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::DateConstructor ^ Date { Microsoft::JScript::DateConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : Microsoft.JScript.DateConstructor" Usage="Microsoft.JScript.GlobalObject.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -200,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.decimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property decimal As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ decimal { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.decimal : Type" Usage="Microsoft.JScript.GlobalObject.decimal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -221,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.decodeURI(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function decodeURI (encodedURI As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ decodeURI(System::Object ^ encodedURI);" />
+      <MemberSignature Language="F#" Value="static member decodeURI : obj -&gt; string" Usage="Microsoft.JScript.GlobalObject.decodeURI encodedURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -251,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.decodeURIComponent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function decodeURIComponent (encodedURI As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ decodeURIComponent(System::Object ^ encodedURI);" />
+      <MemberSignature Language="F#" Value="static member decodeURIComponent : obj -&gt; string" Usage="Microsoft.JScript.GlobalObject.decodeURIComponent encodedURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -281,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.double" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property double As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ double { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.double : Type" Usage="Microsoft.JScript.GlobalObject.double" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -302,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.encodeURI(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function encodeURI (uri As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ encodeURI(System::Object ^ uri);" />
+      <MemberSignature Language="F#" Value="static member encodeURI : obj -&gt; string" Usage="Microsoft.JScript.GlobalObject.encodeURI uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -332,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.encodeURIComponent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function encodeURIComponent (uriComponent As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ encodeURIComponent(System::Object ^ uriComponent);" />
+      <MemberSignature Language="F#" Value="static member encodeURIComponent : obj -&gt; string" Usage="Microsoft.JScript.GlobalObject.encodeURIComponent uriComponent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -362,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Enumerator" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Enumerator As EnumeratorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::EnumeratorConstructor ^ Enumerator { Microsoft::JScript::EnumeratorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Enumerator : Microsoft.JScript.EnumeratorConstructor" Usage="Microsoft.JScript.GlobalObject.Enumerator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -383,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Error" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Error As ErrorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ErrorConstructor ^ Error { Microsoft::JScript::ErrorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Error : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -403,6 +420,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string escape(object string) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.escape(System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ escape(System::Object ^ string);" />
+      <MemberSignature Language="F#" Value="static member escape : obj -&gt; string" Usage="Microsoft.JScript.GlobalObject.escape string" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -437,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.eval(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function eval (x As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ eval(System::Object ^ x);" />
+      <MemberSignature Language="F#" Value="static member eval : obj -&gt; obj" Usage="Microsoft.JScript.GlobalObject.eval x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -467,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.EvalError" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EvalError As ErrorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ErrorConstructor ^ EvalError { Microsoft::JScript::ErrorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvalError : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.EvalError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -488,6 +508,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.float" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property float As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ float { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.float : Type" Usage="Microsoft.JScript.GlobalObject.float" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -509,6 +530,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Function" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Function As FunctionConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::FunctionConstructor ^ Function { Microsoft::JScript::FunctionConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Function : Microsoft.JScript.FunctionConstructor" Usage="Microsoft.JScript.GlobalObject.Function" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -530,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.GetObject(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetObject (moniker As Object, progId As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetObject(System::Object ^ moniker, System::Object ^ progId);" />
+      <MemberSignature Language="F#" Value="static member GetObject : obj * obj -&gt; obj" Usage="Microsoft.JScript.GlobalObject.GetObject (moniker, progId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -562,6 +585,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.Infinity" />
       <MemberSignature Language="VB.NET" Value="Public Const Infinity As Double  = Infinity" />
       <MemberSignature Language="C++ CLI" Value="public: double Infinity = Infinity;" />
+      <MemberSignature Language="F#" Value="val mutable Infinity : double" Usage="Microsoft.JScript.GlobalObject.Infinity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -583,6 +607,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.int" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property int As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ int { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.int : Type" Usage="Microsoft.JScript.GlobalObject.int" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -604,6 +629,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.isFinite(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function isFinite (number As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool isFinite(double number);" />
+      <MemberSignature Language="F#" Value="static member isFinite : double -&gt; bool" Usage="Microsoft.JScript.GlobalObject.isFinite number" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -635,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.isNaN(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function isNaN (num As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool isNaN(System::Object ^ num);" />
+      <MemberSignature Language="F#" Value="static member isNaN : obj -&gt; bool" Usage="Microsoft.JScript.GlobalObject.isNaN num" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -666,6 +693,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.long" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property long As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ long { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.long : Type" Usage="Microsoft.JScript.GlobalObject.long" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -687,6 +715,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Math" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Math As MathObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::MathObject ^ Math { Microsoft::JScript::MathObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Math : Microsoft.JScript.MathObject" Usage="Microsoft.JScript.GlobalObject.Math" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -708,6 +737,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.NaN" />
       <MemberSignature Language="VB.NET" Value="Public Const NaN As Double  = NaN" />
       <MemberSignature Language="C++ CLI" Value="public: double NaN = NaN;" />
+      <MemberSignature Language="F#" Value="val mutable NaN : double" Usage="Microsoft.JScript.GlobalObject.NaN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -729,6 +759,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Number" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Number As NumberConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::NumberConstructor ^ Number { Microsoft::JScript::NumberConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Number : Microsoft.JScript.NumberConstructor" Usage="Microsoft.JScript.GlobalObject.Number" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -750,6 +781,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.Object" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Object As ObjectConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ObjectConstructor ^ Object { Microsoft::JScript::ObjectConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Object : Microsoft.JScript.ObjectConstructor" Usage="Microsoft.JScript.GlobalObject.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -771,6 +803,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalActiveXObjectField" />
       <MemberSignature Language="VB.NET" Value="Protected originalActiveXObjectField As ActiveXObjectConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ActiveXObjectConstructor ^ originalActiveXObjectField;" />
+      <MemberSignature Language="F#" Value="val mutable originalActiveXObjectField : Microsoft.JScript.ActiveXObjectConstructor" Usage="Microsoft.JScript.GlobalObject.originalActiveXObjectField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -791,6 +824,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalArrayField" />
       <MemberSignature Language="VB.NET" Value="Protected originalArrayField As ArrayConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ArrayConstructor ^ originalArrayField;" />
+      <MemberSignature Language="F#" Value="val mutable originalArrayField : Microsoft.JScript.ArrayConstructor" Usage="Microsoft.JScript.GlobalObject.originalArrayField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -811,6 +845,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalBooleanField" />
       <MemberSignature Language="VB.NET" Value="Protected originalBooleanField As BooleanConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::BooleanConstructor ^ originalBooleanField;" />
+      <MemberSignature Language="F#" Value="val mutable originalBooleanField : Microsoft.JScript.BooleanConstructor" Usage="Microsoft.JScript.GlobalObject.originalBooleanField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -831,6 +866,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalDateField" />
       <MemberSignature Language="VB.NET" Value="Protected originalDateField As DateConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::DateConstructor ^ originalDateField;" />
+      <MemberSignature Language="F#" Value="val mutable originalDateField : Microsoft.JScript.DateConstructor" Usage="Microsoft.JScript.GlobalObject.originalDateField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -851,6 +887,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalEnumeratorField" />
       <MemberSignature Language="VB.NET" Value="Protected originalEnumeratorField As EnumeratorConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::EnumeratorConstructor ^ originalEnumeratorField;" />
+      <MemberSignature Language="F#" Value="val mutable originalEnumeratorField : Microsoft.JScript.EnumeratorConstructor" Usage="Microsoft.JScript.GlobalObject.originalEnumeratorField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -871,6 +908,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalErrorField" />
       <MemberSignature Language="VB.NET" Value="Protected originalErrorField As ErrorConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ErrorConstructor ^ originalErrorField;" />
+      <MemberSignature Language="F#" Value="val mutable originalErrorField : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.originalErrorField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -891,6 +929,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalEvalErrorField" />
       <MemberSignature Language="VB.NET" Value="Protected originalEvalErrorField As ErrorConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ErrorConstructor ^ originalEvalErrorField;" />
+      <MemberSignature Language="F#" Value="val mutable originalEvalErrorField : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.originalEvalErrorField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -911,6 +950,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalFunctionField" />
       <MemberSignature Language="VB.NET" Value="Protected originalFunctionField As FunctionConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::FunctionConstructor ^ originalFunctionField;" />
+      <MemberSignature Language="F#" Value="val mutable originalFunctionField : Microsoft.JScript.FunctionConstructor" Usage="Microsoft.JScript.GlobalObject.originalFunctionField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -931,6 +971,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalNumberField" />
       <MemberSignature Language="VB.NET" Value="Protected originalNumberField As NumberConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::NumberConstructor ^ originalNumberField;" />
+      <MemberSignature Language="F#" Value="val mutable originalNumberField : Microsoft.JScript.NumberConstructor" Usage="Microsoft.JScript.GlobalObject.originalNumberField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -951,6 +992,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalObjectField" />
       <MemberSignature Language="VB.NET" Value="Protected originalObjectField As ObjectConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ObjectConstructor ^ originalObjectField;" />
+      <MemberSignature Language="F#" Value="val mutable originalObjectField : Microsoft.JScript.ObjectConstructor" Usage="Microsoft.JScript.GlobalObject.originalObjectField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -971,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalObjectPrototypeField" />
       <MemberSignature Language="VB.NET" Value="Protected originalObjectPrototypeField As ObjectPrototype " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ObjectPrototype ^ originalObjectPrototypeField;" />
+      <MemberSignature Language="F#" Value="val mutable originalObjectPrototypeField : Microsoft.JScript.ObjectPrototype" Usage="Microsoft.JScript.GlobalObject.originalObjectPrototypeField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -991,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalRangeErrorField" />
       <MemberSignature Language="VB.NET" Value="Protected originalRangeErrorField As ErrorConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ErrorConstructor ^ originalRangeErrorField;" />
+      <MemberSignature Language="F#" Value="val mutable originalRangeErrorField : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.originalRangeErrorField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1011,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalReferenceErrorField" />
       <MemberSignature Language="VB.NET" Value="Protected originalReferenceErrorField As ErrorConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ErrorConstructor ^ originalReferenceErrorField;" />
+      <MemberSignature Language="F#" Value="val mutable originalReferenceErrorField : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.originalReferenceErrorField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1031,6 +1076,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalRegExpField" />
       <MemberSignature Language="VB.NET" Value="Protected originalRegExpField As RegExpConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::RegExpConstructor ^ originalRegExpField;" />
+      <MemberSignature Language="F#" Value="val mutable originalRegExpField : Microsoft.JScript.RegExpConstructor" Usage="Microsoft.JScript.GlobalObject.originalRegExpField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1051,6 +1097,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalStringField" />
       <MemberSignature Language="VB.NET" Value="Protected originalStringField As StringConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::StringConstructor ^ originalStringField;" />
+      <MemberSignature Language="F#" Value="val mutable originalStringField : Microsoft.JScript.StringConstructor" Usage="Microsoft.JScript.GlobalObject.originalStringField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1071,6 +1118,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalSyntaxErrorField" />
       <MemberSignature Language="VB.NET" Value="Protected originalSyntaxErrorField As ErrorConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ErrorConstructor ^ originalSyntaxErrorField;" />
+      <MemberSignature Language="F#" Value="val mutable originalSyntaxErrorField : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.originalSyntaxErrorField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1091,6 +1139,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalTypeErrorField" />
       <MemberSignature Language="VB.NET" Value="Protected originalTypeErrorField As ErrorConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ErrorConstructor ^ originalTypeErrorField;" />
+      <MemberSignature Language="F#" Value="val mutable originalTypeErrorField : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.originalTypeErrorField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1111,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalURIErrorField" />
       <MemberSignature Language="VB.NET" Value="Protected originalURIErrorField As ErrorConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ErrorConstructor ^ originalURIErrorField;" />
+      <MemberSignature Language="F#" Value="val mutable originalURIErrorField : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.originalURIErrorField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1131,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.originalVBArrayField" />
       <MemberSignature Language="VB.NET" Value="Protected originalVBArrayField As VBArrayConstructor " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::VBArrayConstructor ^ originalVBArrayField;" />
+      <MemberSignature Language="F#" Value="val mutable originalVBArrayField : Microsoft.JScript.VBArrayConstructor" Usage="Microsoft.JScript.GlobalObject.originalVBArrayField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1151,6 +1202,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.parseFloat(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function parseFloat (string As Object) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double parseFloat(System::Object ^ string);" />
+      <MemberSignature Language="F#" Value="static member parseFloat : obj -&gt; double" Usage="Microsoft.JScript.GlobalObject.parseFloat string" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1181,6 +1233,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.parseInt(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function parseInt (string As Object, radix As Object) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double parseInt(System::Object ^ string, System::Object ^ radix);" />
+      <MemberSignature Language="F#" Value="static member parseInt : obj * obj -&gt; double" Usage="Microsoft.JScript.GlobalObject.parseInt (string, radix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1213,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.RangeError" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RangeError As ErrorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ErrorConstructor ^ RangeError { Microsoft::JScript::ErrorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RangeError : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.RangeError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1234,6 +1288,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.ReferenceError" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ReferenceError As ErrorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ErrorConstructor ^ ReferenceError { Microsoft::JScript::ErrorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceError : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.ReferenceError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1255,6 +1310,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.RegExp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RegExp As RegExpConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::RegExpConstructor ^ RegExp { Microsoft::JScript::RegExpConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RegExp : Microsoft.JScript.RegExpConstructor" Usage="Microsoft.JScript.GlobalObject.RegExp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1276,6 +1332,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.sbyte" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property sbyte As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ sbyte { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.sbyte : Type" Usage="Microsoft.JScript.GlobalObject.sbyte" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1297,6 +1354,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.ScriptEngine" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ScriptEngine () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ScriptEngine();" />
+      <MemberSignature Language="F#" Value="static member ScriptEngine : unit -&gt; string" Usage="Microsoft.JScript.GlobalObject.ScriptEngine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1324,6 +1382,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.ScriptEngineBuildVersion" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ScriptEngineBuildVersion () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ScriptEngineBuildVersion();" />
+      <MemberSignature Language="F#" Value="static member ScriptEngineBuildVersion : unit -&gt; int" Usage="Microsoft.JScript.GlobalObject.ScriptEngineBuildVersion " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1351,6 +1410,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.ScriptEngineMajorVersion" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ScriptEngineMajorVersion () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ScriptEngineMajorVersion();" />
+      <MemberSignature Language="F#" Value="static member ScriptEngineMajorVersion : unit -&gt; int" Usage="Microsoft.JScript.GlobalObject.ScriptEngineMajorVersion " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1378,6 +1438,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.ScriptEngineMinorVersion" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ScriptEngineMinorVersion () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ScriptEngineMinorVersion();" />
+      <MemberSignature Language="F#" Value="static member ScriptEngineMinorVersion : unit -&gt; int" Usage="Microsoft.JScript.GlobalObject.ScriptEngineMinorVersion " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1405,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.short" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property short As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ short { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.short : Type" Usage="Microsoft.JScript.GlobalObject.short" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1426,6 +1488,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property String As StringConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::StringConstructor ^ String { Microsoft::JScript::StringConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.String : Microsoft.JScript.StringConstructor" Usage="Microsoft.JScript.GlobalObject.String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1447,6 +1510,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.SyntaxError" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SyntaxError As ErrorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ErrorConstructor ^ SyntaxError { Microsoft::JScript::ErrorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyntaxError : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.SyntaxError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1468,6 +1532,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.TypeError" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TypeError As ErrorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ErrorConstructor ^ TypeError { Microsoft::JScript::ErrorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeError : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.TypeError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1489,6 +1554,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.uint" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property uint As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ uint { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.uint : Type" Usage="Microsoft.JScript.GlobalObject.uint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1510,6 +1576,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.ulong" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ulong As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ ulong { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ulong : Type" Usage="Microsoft.JScript.GlobalObject.ulong" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1531,6 +1598,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.GlobalObject.undefined" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly undefined As Empty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::JScript::Empty ^ undefined;" />
+      <MemberSignature Language="F#" Value=" staticval mutable undefined : Microsoft.JScript.Empty" Usage="Microsoft.JScript.GlobalObject.undefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1550,6 +1618,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string unescape(object string) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalObject.unescape(System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ unescape(System::Object ^ string);" />
+      <MemberSignature Language="F#" Value="static member unescape : obj -&gt; string" Usage="Microsoft.JScript.GlobalObject.unescape string" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1584,6 +1653,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.URIError" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property URIError As ErrorConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ErrorConstructor ^ URIError { Microsoft::JScript::ErrorConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.URIError : Microsoft.JScript.ErrorConstructor" Usage="Microsoft.JScript.GlobalObject.URIError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1605,6 +1675,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.ushort" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ushort As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ ushort { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ushort : Type" Usage="Microsoft.JScript.GlobalObject.ushort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1626,6 +1697,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.VBArray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VBArray As VBArrayConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::VBArrayConstructor ^ VBArray { Microsoft::JScript::VBArrayConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VBArray : Microsoft.JScript.VBArrayConstructor" Usage="Microsoft.JScript.GlobalObject.VBArray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1647,6 +1719,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.GlobalObject.void" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property void As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ void { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.void : Type" Usage="Microsoft.JScript.GlobalObject.void" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

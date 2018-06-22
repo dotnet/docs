@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceOperation" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataSourceOperation" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataSourceOperation" />
+  <TypeSignature Language="F#" Value="type DataSourceOperation = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 0" Usage="System.Web.UI.DataSourceOperation.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 1" Usage="System.Web.UI.DataSourceOperation.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Select" />
       <MemberSignature Language="VB.NET" Value="Select" />
       <MemberSignature Language="C++ CLI" Value="Select" />
+      <MemberSignature Language="F#" Value="Select = 2" Usage="System.Web.UI.DataSourceOperation.Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.SelectCount" />
       <MemberSignature Language="VB.NET" Value="SelectCount" />
       <MemberSignature Language="C++ CLI" Value="SelectCount" />
+      <MemberSignature Language="F#" Value="SelectCount = 4" Usage="System.Web.UI.DataSourceOperation.SelectCount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Update" />
       <MemberSignature Language="VB.NET" Value="Update" />
       <MemberSignature Language="C++ CLI" Value="Update" />
+      <MemberSignature Language="F#" Value="Update = 3" Usage="System.Web.UI.DataSourceOperation.Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PreviewKeyDownEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PreviewKeyDownEventHandler(sender As Object, e As PreviewKeyDownEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PreviewKeyDownEventHandler(System::Object ^ sender, PreviewKeyDownEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PreviewKeyDownEventHandler = delegate of obj * PreviewKeyDownEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

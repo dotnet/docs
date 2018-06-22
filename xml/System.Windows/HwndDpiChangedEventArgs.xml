@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.HwndDpiChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HwndDpiChangedEventArgs&#xA;Inherits HandledEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class HwndDpiChangedEventArgs sealed : System::ComponentModel::HandledEventArgs" />
+  <TypeSignature Language="F#" Value="type HwndDpiChangedEventArgs = class&#xA;    inherit HandledEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HwndDpiChangedEventArgs.NewDpi" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewDpi As DpiScale" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DpiScale NewDpi { System::Windows::DpiScale get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewDpi : System.Windows.DpiScale" Usage="System.Windows.HwndDpiChangedEventArgs.NewDpi" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HwndDpiChangedEventArgs.OldDpi" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldDpi As DpiScale" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DpiScale OldDpi { System::Windows::DpiScale get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldDpi : System.Windows.DpiScale" Usage="System.Windows.HwndDpiChangedEventArgs.OldDpi" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HwndDpiChangedEventArgs.SuggestedRect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SuggestedRect As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect SuggestedRect { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedRect : System.Windows.Rect" Usage="System.Windows.HwndDpiChangedEventArgs.SuggestedRect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

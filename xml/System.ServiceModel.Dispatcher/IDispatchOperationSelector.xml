@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IDispatchOperationSelector" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDispatchOperationSelector" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDispatchOperationSelector" />
+  <TypeSignature Language="F#" Value="type IDispatchOperationSelector = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@ public string SelectOperation( ref Message message )
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectOperation (ByRef message As Message) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SelectOperation(System::ServiceModel::Channels::Message ^ % message);" />
+      <MemberSignature Language="F#" Value="abstract member SelectOperation :  -&gt; string" Usage="iDispatchOperationSelector.SelectOperation message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

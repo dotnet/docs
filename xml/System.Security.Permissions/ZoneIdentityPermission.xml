@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.ZoneIdentityPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ZoneIdentityPermission&#xA;Inherits CodeAccessPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class ZoneIdentityPermission sealed : System::Security::CodeAccessPermission" />
+  <TypeSignature Language="F#" Value="type ZoneIdentityPermission = class&#xA;    inherit CodeAccessPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ZoneIdentityPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ZoneIdentityPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.ZoneIdentityPermission : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.ZoneIdentityPermission" Usage="new System.Security.Permissions.ZoneIdentityPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ZoneIdentityPermission.#ctor(System.Security.SecurityZone)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (zone As SecurityZone)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ZoneIdentityPermission(System::Security::SecurityZone zone);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.ZoneIdentityPermission : System.Security.SecurityZone -&gt; System.Security.Permissions.ZoneIdentityPermission" Usage="new System.Security.Permissions.ZoneIdentityPermission zone" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ZoneIdentityPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="zoneIdentityPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ZoneIdentityPermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (esd As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ esd);" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="zoneIdentityPermission.FromXml esd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ZoneIdentityPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="zoneIdentityPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -255,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ZoneIdentityPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="zoneIdentityPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -293,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ZoneIdentityPermission.SecurityZone" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityZone As SecurityZone" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::SecurityZone SecurityZone { System::Security::SecurityZone get(); void set(System::Security::SecurityZone value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityZone : System.Security.SecurityZone with get, set" Usage="System.Security.Permissions.ZoneIdentityPermission.SecurityZone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ZoneIdentityPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="zoneIdentityPermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -345,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ZoneIdentityPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="zoneIdentityPermission.Union target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

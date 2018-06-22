@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.ServerTagsRegex" />
   <TypeSignature Language="VB.NET" Value="Public Class ServerTagsRegex&#xA;Inherits Regex" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServerTagsRegex : System::Text::RegularExpressions::Regex" />
+  <TypeSignature Language="F#" Value="type ServerTagsRegex = class&#xA;    inherit Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.ServerTagsRegex.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServerTagsRegex(TimeSpan A_1);" />
+      <MemberSignature Language="F#" Value="new System.Web.RegularExpressions.ServerTagsRegex : TimeSpan -&gt; System.Web.RegularExpressions.ServerTagsRegex" Usage="new System.Web.RegularExpressions.ServerTagsRegex A_1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>

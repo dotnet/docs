@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.Choices" />
   <TypeSignature Language="VB.NET" Value="Public Class Choices" />
   <TypeSignature Language="C++ CLI" Value="public ref class Choices" />
+  <TypeSignature Language="F#" Value="type Choices = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -178,6 +179,7 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.Speech.Recognition.GrammarBuilder[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray alternateChoices As GrammarBuilder())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices(... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ alternateChoices);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Choices : System.Speech.Recognition.GrammarBuilder[] -&gt; System.Speech.Recognition.Choices" Usage="new System.Speech.Recognition.Choices alternateChoices" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -254,6 +256,7 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray phrases As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices(... cli::array &lt;System::String ^&gt; ^ phrases);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Choices : string[] -&gt; System.Speech.Recognition.Choices" Usage="new System.Speech.Recognition.Choices phrases" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -337,6 +340,7 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.Speech.Recognition.GrammarBuilder[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray alternateChoices As GrammarBuilder())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ alternateChoices);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Speech.Recognition.GrammarBuilder[] -&gt; unit" Usage="choices.Add alternateChoices" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -418,6 +422,7 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray phrases As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::String ^&gt; ^ phrases);" />
+      <MemberSignature Language="F#" Value="member this.Add : string[] -&gt; unit" Usage="choices.Add phrases" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -497,6 +502,7 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.ToGrammarBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Function ToGrammarBuilder () As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::GrammarBuilder ^ ToGrammarBuilder();" />
+      <MemberSignature Language="F#" Value="member this.ToGrammarBuilder : unit -&gt; System.Speech.Recognition.GrammarBuilder" Usage="choices.ToGrammarBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

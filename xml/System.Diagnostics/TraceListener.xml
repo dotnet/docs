@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceListener" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TraceListener&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraceListener abstract : MarshalByRefObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type TraceListener = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -137,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TraceListener(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TraceListener : string -&gt; System.Diagnostics.TraceListener" Usage="new System.Diagnostics.TraceListener name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -175,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceListener.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As StringDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringDictionary ^ Attributes { System::Collections::Specialized::StringDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.Specialized.StringDictionary" Usage="System.Diagnostics.TraceListener.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="traceListener.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -279,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="traceListener.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -320,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="traceListener.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -380,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Fail(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Fail (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Fail(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Fail : string -&gt; unit&#xA;override this.Fail : string -&gt; unit" Usage="traceListener.Fail message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -428,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Fail(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Fail (message As String, detailMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Fail(System::String ^ message, System::String ^ detailMessage);" />
+      <MemberSignature Language="F#" Value="abstract member Fail : string * string -&gt; unit&#xA;override this.Fail : string * string -&gt; unit" Usage="traceListener.Fail (message, detailMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -478,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceListener.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As TraceFilter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::TraceFilter ^ Filter { System::Diagnostics::TraceFilter ^ get(); void set(System::Diagnostics::TraceFilter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Diagnostics.TraceFilter with get, set" Usage="System.Diagnostics.TraceListener.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -536,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="traceListener.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -574,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.GetSupportedAttributes" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetSupportedAttributes () As String()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetSupportedAttributes();" />
+      <MemberSignature Language="F#" Value="abstract member GetSupportedAttributes : unit -&gt; string[]&#xA;override this.GetSupportedAttributes : unit -&gt; string[]" Usage="traceListener.GetSupportedAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -623,6 +634,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceListener.IndentLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property IndentLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndentLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.IndentLevel : int with get, set" Usage="System.Diagnostics.TraceListener.IndentLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -668,6 +680,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceListener.IndentSize" />
       <MemberSignature Language="VB.NET" Value="Public Property IndentSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndentSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.IndentSize : int with get, set" Usage="System.Diagnostics.TraceListener.IndentSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -714,6 +727,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceListener.IsThreadSafe" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsThreadSafe As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsThreadSafe { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsThreadSafe : bool" Usage="System.Diagnostics.TraceListener.IsThreadSafe" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -753,6 +767,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceListener.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Diagnostics.TraceListener.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -798,6 +813,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceListener.NeedIndent" />
       <MemberSignature Language="VB.NET" Value="Protected Property NeedIndent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool NeedIndent { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NeedIndent : bool with get, set" Usage="System.Diagnostics.TraceListener.NeedIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -854,6 +870,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj -&gt; unit&#xA;override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="traceListener.TraceData (eventCache, source, eventType, id, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -919,6 +936,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj[] -&gt; unit&#xA;override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="traceListener.TraceData (eventCache, source, eventType, id, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1000,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id);" />
+      <MemberSignature Language="F#" Value="abstract member TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int -&gt; unit&#xA;override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int -&gt; unit" Usage="traceListener.TraceEvent (eventCache, source, eventType, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1063,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit&#xA;override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="traceListener.TraceEvent (eventCache, source, eventType, id, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1128,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit&#xA;override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="traceListener.TraceEvent (eventCache, source, eventType, id, format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1201,6 +1222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceListener.TraceOutputOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property TraceOutputOptions As TraceOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::TraceOptions TraceOutputOptions { System::Diagnostics::TraceOptions get(); void set(System::Diagnostics::TraceOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.TraceOutputOptions : System.Diagnostics.TraceOptions with get, set" Usage="System.Diagnostics.TraceListener.TraceOutputOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1261,6 +1283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TraceTransfer (eventCache As TraceEventCache, source As String, id As Integer, message As String, relatedActivityId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TraceTransfer(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, int id, System::String ^ message, Guid relatedActivityId);" />
+      <MemberSignature Language="F#" Value="abstract member TraceTransfer : System.Diagnostics.TraceEventCache * string * int * string * Guid -&gt; unit&#xA;override this.TraceTransfer : System.Diagnostics.TraceEventCache * string * int * string * Guid -&gt; unit" Usage="traceListener.TraceTransfer (eventCache, source, id, message, relatedActivityId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1335,6 +1358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Write(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member Write : obj -&gt; unit&#xA;override this.Write : obj -&gt; unit" Usage="traceListener.Write o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1376,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Write (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Write(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Write : string -&gt; unit" Usage="traceListener.Write message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1420,6 +1445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Write(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (o As Object, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Object ^ o, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="abstract member Write : obj * string -&gt; unit&#xA;override this.Write : obj * string -&gt; unit" Usage="traceListener.Write (o, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1463,6 +1489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.Write(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (message As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::String ^ message, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="abstract member Write : string * string -&gt; unit&#xA;override this.Write : string * string -&gt; unit" Usage="traceListener.Write (message, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1506,6 +1533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.WriteIndent" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteIndent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteIndent();" />
+      <MemberSignature Language="F#" Value="abstract member WriteIndent : unit -&gt; unit&#xA;override this.WriteIndent : unit -&gt; unit" Usage="traceListener.WriteIndent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1561,6 +1589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.WriteLine(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteLine (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteLine(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member WriteLine : obj -&gt; unit&#xA;override this.WriteLine : obj -&gt; unit" Usage="traceListener.WriteLine o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1609,6 +1638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteLine (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteLine(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member WriteLine : string -&gt; unit" Usage="traceListener.WriteLine message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1660,6 +1690,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.WriteLine(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteLine (o As Object, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteLine(System::Object ^ o, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="abstract member WriteLine : obj * string -&gt; unit&#xA;override this.WriteLine : obj * string -&gt; unit" Usage="traceListener.WriteLine (o, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1710,6 +1741,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceListener.WriteLine(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteLine (message As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteLine(System::String ^ message, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="abstract member WriteLine : string * string -&gt; unit&#xA;override this.WriteLine : string * string -&gt; unit" Usage="traceListener.WriteLine (message, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

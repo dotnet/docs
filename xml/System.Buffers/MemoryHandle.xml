@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.MemoryHandle" />
   <TypeSignature Language="VB.NET" Value="Public Structure MemoryHandle&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public value class MemoryHandle : IDisposable" />
+  <TypeSignature Language="F#" Value="type MemoryHandle = struct&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="C#" Value="public MemoryHandle (void* pointer, System.Runtime.InteropServices.GCHandle handle = null, System.Buffers.IPinnable pinnable = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(void* pointer, valuetype System.Runtime.InteropServices.GCHandle handle, class System.Buffers.IPinnable pinnable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryHandle.#ctor(System.Void*,System.Runtime.InteropServices.GCHandle,System.Buffers.IPinnable)" />
+      <MemberSignature Language="F#" Value="new System.Buffers.MemoryHandle : nativeptr&lt;unit&gt; * System.Runtime.InteropServices.GCHandle * System.Buffers.IPinnable -&gt; System.Buffers.MemoryHandle" Usage="new System.Buffers.MemoryHandle (pointer, handle, pinnable)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryHandle.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="memoryHandle.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -76,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance void* Pointer" />
       <MemberSignature Language="DocId" Value="P:System.Buffers.MemoryHandle.Pointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property void* Pointer { void* get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pointer : nativeptr&lt;unit&gt;" Usage="System.Buffers.MemoryHandle.Pointer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

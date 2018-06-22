@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteData" />
   <TypeSignature Language="VB.NET" Value="Public Class RouteData" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteData" />
+  <TypeSignature Language="F#" Value="type RouteData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteData.#ctor(System.Web.Routing.RouteBase,System.Web.Routing.IRouteHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (route As RouteBase, routeHandler As IRouteHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteData(System::Web::Routing::RouteBase ^ route, System::Web::Routing::IRouteHandler ^ routeHandler);" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.RouteData : System.Web.Routing.RouteBase * System.Web.Routing.IRouteHandler -&gt; System.Web.Routing.RouteData" Usage="new System.Web.Routing.RouteData (route, routeHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteData.DataTokens" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTokens As RouteValueDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteValueDictionary ^ DataTokens { System::Web::Routing::RouteValueDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataTokens : System.Web.Routing.RouteValueDictionary" Usage="System.Web.Routing.RouteData.DataTokens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteData.GetRequiredString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRequiredString (valueName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRequiredString(System::String ^ valueName);" />
+      <MemberSignature Language="F#" Value="member this.GetRequiredString : string -&gt; string" Usage="routeData.GetRequiredString valueName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteData.Route" />
       <MemberSignature Language="VB.NET" Value="Public Property Route As RouteBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteBase ^ Route { System::Web::Routing::RouteBase ^ get(); void set(System::Web::Routing::RouteBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Route : System.Web.Routing.RouteBase with get, set" Usage="System.Web.Routing.RouteData.Route" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteData.RouteHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteHandler As IRouteHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::IRouteHandler ^ RouteHandler { System::Web::Routing::IRouteHandler ^ get(); void set(System::Web::Routing::IRouteHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteHandler : System.Web.Routing.IRouteHandler with get, set" Usage="System.Web.Routing.RouteData.RouteHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteData.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As RouteValueDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteValueDictionary ^ Values { System::Web::Routing::RouteValueDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Web.Routing.RouteValueDictionary" Usage="System.Web.Routing.RouteData.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

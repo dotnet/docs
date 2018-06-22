@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" />
   <TypeSignature Language="VB.NET" Value="Public Enum Doctype" />
   <TypeSignature Language="C++ CLI" Value="public enum class Doctype" />
+  <TypeSignature Language="F#" Value="type Doctype = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.Wml20" />
       <MemberSignature Language="VB.NET" Value="Wml20" />
       <MemberSignature Language="C++ CLI" Value="Wml20" />
+      <MemberSignature Language="F#" Value="Wml20 = 3" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.Wml20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.XhtmlBasic" />
       <MemberSignature Language="VB.NET" Value="XhtmlBasic" />
       <MemberSignature Language="C++ CLI" Value="XhtmlBasic" />
+      <MemberSignature Language="F#" Value="XhtmlBasic = 1" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.XhtmlBasic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.XhtmlMobileProfile" />
       <MemberSignature Language="VB.NET" Value="XhtmlMobileProfile" />
       <MemberSignature Language="C++ CLI" Value="XhtmlMobileProfile" />
+      <MemberSignature Language="F#" Value="XhtmlMobileProfile = 2" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.XhtmlMobileProfile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

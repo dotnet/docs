@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter" />
   <TypeSignature Language="VB.NET" Value="Public Class RSAPKCS1KeyExchangeDeformatter&#xA;Inherits AsymmetricKeyExchangeDeformatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class RSAPKCS1KeyExchangeDeformatter : System::Security::Cryptography::AsymmetricKeyExchangeDeformatter" />
+  <TypeSignature Language="F#" Value="type RSAPKCS1KeyExchangeDeformatter = class&#xA;    inherit AsymmetricKeyExchangeDeformatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RSAPKCS1KeyExchangeDeformatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter" Usage="new System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.DecryptKeyExchange(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptKeyExchange (rgbIn As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptKeyExchange(cli::array &lt;System::Byte&gt; ^ rgbIn);" />
+      <MemberSignature Language="F#" Value="override this.DecryptKeyExchange : byte[] -&gt; byte[]" Usage="rSAPKCS1KeyExchangeDeformatter.DecryptKeyExchange rgbIn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Parameters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.RNG" />
       <MemberSignature Language="VB.NET" Value="Public Property RNG As RandomNumberGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::RandomNumberGenerator ^ RNG { System::Security::Cryptography::RandomNumberGenerator ^ get(); void set(System::Security::Cryptography::RandomNumberGenerator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RNG : System.Security.Cryptography.RandomNumberGenerator with get, set" Usage="System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.RNG" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetKey (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
+      <MemberSignature Language="F#" Value="override this.SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="rSAPKCS1KeyExchangeDeformatter.SetKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

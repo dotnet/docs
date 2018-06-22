@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub EventHandler(sender As Object, e As EventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void EventHandler(System::Object ^ sender, EventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type EventHandler = delegate of obj * EventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

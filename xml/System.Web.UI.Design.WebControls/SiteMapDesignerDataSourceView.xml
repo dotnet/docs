@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteMapDesignerDataSourceView&#xA;Inherits DesignerDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class SiteMapDesignerDataSourceView : System::Web::UI::Design::DesignerDataSourceView" />
+  <TypeSignature Language="F#" Value="type SiteMapDesignerDataSourceView = class&#xA;    inherit DesignerDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView.#ctor(System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As SiteMapDataSourceDesigner, viewName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapDesignerDataSourceView(System::Web::UI::Design::WebControls::SiteMapDataSourceDesigner ^ owner, System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView : System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner * string -&gt; System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView" Usage="new System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView (owner, viewName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeData (minimumRows As Integer, ByRef isSampleData As Boolean) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerable ^ GetDesignTimeData(int minimumRows, [Runtime::InteropServices::Out] bool % isSampleData);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeData : int *  -&gt; System.Collections.IEnumerable" Usage="siteMapDesignerDataSourceView.GetDesignTimeData (minimumRows, isSampleData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Schema As IDataSourceViewSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::IDataSourceViewSchema ^ Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Web.UI.Design.IDataSourceViewSchema" Usage="System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

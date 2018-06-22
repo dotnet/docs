@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.TypeResolvingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class TypeResolvingOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeResolvingOptions" />
+  <TypeSignature Language="F#" Value="type TypeResolvingOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeResolvingOptions.#ctor(System.Collections.Generic.IEnumerable{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (defaultTypes As IEnumerable(Of Type))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeResolvingOptions(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ defaultTypes);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.TypeResolvingOptions : seq&lt;Type&gt; -&gt; System.Activities.Presentation.View.TypeResolvingOptions" Usage="new System.Activities.Presentation.View.TypeResolvingOptions defaultTypes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeResolvingOptions.BrowseTypeDirectly" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowseTypeDirectly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BrowseTypeDirectly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseTypeDirectly : bool with get, set" Usage="System.Activities.Presentation.View.TypeResolvingOptions.BrowseTypeDirectly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeResolvingOptions.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As Func(Of Type, Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;Type ^, bool&gt; ^ Filter { Func&lt;Type ^, bool&gt; ^ get(); void set(Func&lt;Type ^, bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : Func&lt;Type, bool&gt; with get, set" Usage="System.Activities.Presentation.View.TypeResolvingOptions.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

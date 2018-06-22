@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.TaskEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function TaskEventHandler(sender As Object, e As EventArgs) As Task " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Threading::Tasks::Task ^ TaskEventHandler(System::Object ^ sender, EventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TaskEventHandler = delegate of obj * EventArgs -&gt; Task" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlSetTypeConverterEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlSetTypeConverterEventArgs&#xA;Inherits XamlSetValueEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlSetTypeConverterEventArgs : System::Windows::Markup::XamlSetValueEventArgs" />
+  <TypeSignature Language="F#" Value="type XamlSetTypeConverterEventArgs = class&#xA;    inherit XamlSetValueEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlMember member, class System.ComponentModel.TypeConverter typeConverter, object value, class System.ComponentModel.ITypeDescriptorContext serviceProvider, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlSetTypeConverterEventArgs.#ctor(System.Xaml.XamlMember,System.ComponentModel.TypeConverter,System.Object,System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSetTypeConverterEventArgs(System::Xaml::XamlMember ^ member, System::ComponentModel::TypeConverter ^ typeConverter, System::Object ^ value, System::ComponentModel::ITypeDescriptorContext ^ serviceProvider, System::Globalization::CultureInfo ^ cultureInfo);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XamlSetTypeConverterEventArgs : System.Xaml.XamlMember * System.ComponentModel.TypeConverter * obj * System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo -&gt; System.Windows.Markup.XamlSetTypeConverterEventArgs" Usage="new System.Windows.Markup.XamlSetTypeConverterEventArgs (member, typeConverter, value, serviceProvider, cultureInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlSetTypeConverterEventArgs.CallBase" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CallBase ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CallBase();" />
+      <MemberSignature Language="F#" Value="override this.CallBase : unit -&gt; unit" Usage="xamlSetTypeConverterEventArgs.CallBase " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetTypeConverterEventArgs.CultureInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureInfo As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CultureInfo { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CultureInfo : System.Globalization.CultureInfo" Usage="System.Windows.Markup.XamlSetTypeConverterEventArgs.CultureInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetTypeConverterEventArgs.ServiceProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceProvider As ITypeDescriptorContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ITypeDescriptorContext ^ ServiceProvider { System::ComponentModel::ITypeDescriptorContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceProvider : System.ComponentModel.ITypeDescriptorContext" Usage="System.Windows.Markup.XamlSetTypeConverterEventArgs.ServiceProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetTypeConverterEventArgs.TypeConverter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeConverter As TypeConverter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::TypeConverter ^ TypeConverter { System::ComponentModel::TypeConverter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeConverter : System.ComponentModel.TypeConverter" Usage="System.Windows.Markup.XamlSetTypeConverterEventArgs.TypeConverter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

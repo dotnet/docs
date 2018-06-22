@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IMessageReceiver" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMessageReceiver" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMessageReceiver" />
+  <TypeSignature Language="F#" Value="type IMessageReceiver = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IMessageReceiver.Message(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Message (strValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Message(System::String ^ strValue);" />
+      <MemberSignature Language="F#" Value="abstract member Message : string -&gt; unit" Usage="iMessageReceiver.Message strValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

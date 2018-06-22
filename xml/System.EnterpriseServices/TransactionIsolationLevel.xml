@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionIsolationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransactionIsolationLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransactionIsolationLevel" />
+  <TypeSignature Language="F#" Value="type TransactionIsolationLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="C++ CLI" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 0" Usage="System.EnterpriseServices.TransactionIsolationLevel.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.ReadCommitted" />
       <MemberSignature Language="VB.NET" Value="ReadCommitted" />
       <MemberSignature Language="C++ CLI" Value="ReadCommitted" />
+      <MemberSignature Language="F#" Value="ReadCommitted = 2" Usage="System.EnterpriseServices.TransactionIsolationLevel.ReadCommitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.ReadUncommitted" />
       <MemberSignature Language="VB.NET" Value="ReadUncommitted" />
       <MemberSignature Language="C++ CLI" Value="ReadUncommitted" />
+      <MemberSignature Language="F#" Value="ReadUncommitted = 1" Usage="System.EnterpriseServices.TransactionIsolationLevel.ReadUncommitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.RepeatableRead" />
       <MemberSignature Language="VB.NET" Value="RepeatableRead" />
       <MemberSignature Language="C++ CLI" Value="RepeatableRead" />
+      <MemberSignature Language="F#" Value="RepeatableRead = 3" Usage="System.EnterpriseServices.TransactionIsolationLevel.RepeatableRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.Serializable" />
       <MemberSignature Language="VB.NET" Value="Serializable" />
       <MemberSignature Language="C++ CLI" Value="Serializable" />
+      <MemberSignature Language="F#" Value="Serializable = 4" Usage="System.EnterpriseServices.TransactionIsolationLevel.Serializable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

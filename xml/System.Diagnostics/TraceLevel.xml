@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum TraceLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class TraceLevel" />
+  <TypeSignature Language="F#" Value="type TraceLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 1" Usage="System.Diagnostics.TraceLevel.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Info" />
       <MemberSignature Language="VB.NET" Value="Info" />
       <MemberSignature Language="C++ CLI" Value="Info" />
+      <MemberSignature Language="F#" Value="Info = 3" Usage="System.Diagnostics.TraceLevel.Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 0" Usage="System.Diagnostics.TraceLevel.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Verbose" />
       <MemberSignature Language="VB.NET" Value="Verbose" />
       <MemberSignature Language="C++ CLI" Value="Verbose" />
+      <MemberSignature Language="F#" Value="Verbose = 4" Usage="System.Diagnostics.TraceLevel.Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 2" Usage="System.Diagnostics.TraceLevel.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.MobileTextWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class MobileTextWriter&#xA;Inherits MultiPartWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class MobileTextWriter : System::Web::UI::MobileControls::Adapters::MultiPartWriter" />
+  <TypeSignature Language="F#" Value="type MobileTextWriter = class&#xA;    inherit MultiPartWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.#ctor(System.IO.TextWriter,System.Web.Mobile.MobileCapabilities)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, device As MobileCapabilities)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MobileTextWriter(System::IO::TextWriter ^ writer, System::Web::Mobile::MobileCapabilities ^ device);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.MobileTextWriter : System.IO.TextWriter * System.Web.Mobile.MobileCapabilities -&gt; System.Web.UI.MobileControls.Adapters.MobileTextWriter" Usage="new System.Web.UI.MobileControls.Adapters.MobileTextWriter (writer, device)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.AddResource(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddResource (url As String, contentType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddResource(System::String ^ url, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="override this.AddResource : string * string -&gt; unit" Usage="mobileTextWriter.AddResource (url, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.BeginFile(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginFile (url As String, contentType As String, charset As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginFile(System::String ^ url, System::String ^ contentType, System::String ^ charset);" />
+      <MemberSignature Language="F#" Value="override this.BeginFile : string * string * string -&gt; unit" Usage="mobileTextWriter.BeginFile (url, contentType, charset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.BeginResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginResponse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginResponse();" />
+      <MemberSignature Language="F#" Value="override this.BeginResponse : unit -&gt; unit" Usage="mobileTextWriter.BeginResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.MobileTextWriter.Device" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Device As MobileCapabilities" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Mobile::MobileCapabilities ^ Device { System::Web::Mobile::MobileCapabilities ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Device : System.Web.Mobile.MobileCapabilities" Usage="System.Web.UI.MobileControls.Adapters.MobileTextWriter.Device" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EndFile" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndFile ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndFile();" />
+      <MemberSignature Language="F#" Value="override this.EndFile : unit -&gt; unit" Usage="mobileTextWriter.EndFile " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EndResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndResponse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndResponse();" />
+      <MemberSignature Language="F#" Value="override this.EndResponse : unit -&gt; unit" Usage="mobileTextWriter.EndResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnterFormat(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member EnterFormat : System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.EnterFormat : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.EnterFormat style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -235,6 +244,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterLayout(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnterLayout(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member EnterLayout : System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.EnterLayout : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.EnterLayout style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterStyle(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterStyle(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterStyle(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="member this.EnterStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.EnterStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -302,6 +313,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExitFormat(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member ExitFormat : System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.ExitFormat : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.ExitFormat style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -324,6 +336,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitFormat(class System.Web.UI.MobileControls.Style style, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExitFormat(System::Web::UI::MobileControls::Style ^ style, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member ExitFormat : System.Web.UI.MobileControls.Style * bool -&gt; unit&#xA;override this.ExitFormat : System.Web.UI.MobileControls.Style * bool -&gt; unit" Usage="mobileTextWriter.ExitFormat (style, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -357,6 +370,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitLayout(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExitLayout(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member ExitLayout : System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.ExitLayout : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.ExitLayout style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -386,6 +400,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitLayout(class System.Web.UI.MobileControls.Style style, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExitLayout(System::Web::UI::MobileControls::Style ^ style, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member ExitLayout : System.Web.UI.MobileControls.Style * bool -&gt; unit&#xA;override this.ExitLayout : System.Web.UI.MobileControls.Style * bool -&gt; unit" Usage="mobileTextWriter.ExitLayout (style, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -417,6 +432,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitStyle(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitStyle(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitStyle(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="member this.ExitStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.ExitStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -447,6 +463,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.MobileTextWriter.SupportsMultiPart" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsMultiPart As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsMultiPart { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsMultiPart : bool" Usage="System.Web.UI.MobileControls.Adapters.MobileTextWriter.SupportsMultiPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

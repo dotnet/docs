@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SessionStateType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SessionStateType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SessionStateType" />
+  <TypeSignature Language="F#" Value="type SessionStateType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 2" Usage="System.Web.Management.SessionStateType.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Persisted" />
       <MemberSignature Language="VB.NET" Value="Persisted" />
       <MemberSignature Language="C++ CLI" Value="Persisted" />
+      <MemberSignature Language="F#" Value="Persisted = 1" Usage="System.Web.Management.SessionStateType.Persisted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Temporary" />
       <MemberSignature Language="VB.NET" Value="Temporary" />
       <MemberSignature Language="C++ CLI" Value="Temporary" />
+      <MemberSignature Language="F#" Value="Temporary = 0" Usage="System.Web.Management.SessionStateType.Temporary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

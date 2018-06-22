@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextFormatter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextFormatter&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextFormatter abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type TextFormatter = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -118,6 +119,7 @@ Interaction between the text layout client and the TextFormatter object
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As TextFormatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::TextFormatting::TextFormatter ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Windows.Media.TextFormatting.TextFormatter" Usage="System.Windows.Media.TextFormatting.TextFormatter.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +140,7 @@ Interaction between the text layout client and the TextFormatter object
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.TextFormatting.TextFormatter Create(valuetype System.Windows.Media.TextFormattingMode textFormattingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.Create(System.Windows.Media.TextFormattingMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::TextFormatting::TextFormatter ^ Create(System::Windows::Media::TextFormattingMode textFormattingMode);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Windows.Media.TextFormattingMode -&gt; System.Windows.Media.TextFormatting.TextFormatter" Usage="System.Windows.Media.TextFormatting.TextFormatter.Create textFormattingMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +166,7 @@ Interaction between the text layout client and the TextFormatter object
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="textFormatter.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -194,6 +198,7 @@ Interaction between the text layout client and the TextFormatter object
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextLine FormatLine(class System.Windows.Media.TextFormatting.TextSource textSource, int32 firstCharIndex, float64 paragraphWidth, class System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, class System.Windows.Media.TextFormatting.TextLineBreak previousLineBreak) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.FormatLine(System.Windows.Media.TextFormatting.TextSource,System.Int32,System.Double,System.Windows.Media.TextFormatting.TextParagraphProperties,System.Windows.Media.TextFormatting.TextLineBreak)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::TextLine ^ FormatLine(System::Windows::Media::TextFormatting::TextSource ^ textSource, int firstCharIndex, double paragraphWidth, System::Windows::Media::TextFormatting::TextParagraphProperties ^ paragraphProperties, System::Windows::Media::TextFormatting::TextLineBreak ^ previousLineBreak);" />
+      <MemberSignature Language="F#" Value="abstract member FormatLine : System.Windows.Media.TextFormatting.TextSource * int * double * System.Windows.Media.TextFormatting.TextParagraphProperties * System.Windows.Media.TextFormatting.TextLineBreak -&gt; System.Windows.Media.TextFormatting.TextLine" Usage="textFormatter.FormatLine (textSource, firstCharIndex, paragraphWidth, paragraphProperties, previousLineBreak)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -235,6 +240,7 @@ Interaction between the text layout client and the TextFormatter object
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextLine FormatLine(class System.Windows.Media.TextFormatting.TextSource textSource, int32 firstCharIndex, float64 paragraphWidth, class System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, class System.Windows.Media.TextFormatting.TextLineBreak previousLineBreak, class System.Windows.Media.TextFormatting.TextRunCache textRunCache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.FormatLine(System.Windows.Media.TextFormatting.TextSource,System.Int32,System.Double,System.Windows.Media.TextFormatting.TextParagraphProperties,System.Windows.Media.TextFormatting.TextLineBreak,System.Windows.Media.TextFormatting.TextRunCache)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::TextLine ^ FormatLine(System::Windows::Media::TextFormatting::TextSource ^ textSource, int firstCharIndex, double paragraphWidth, System::Windows::Media::TextFormatting::TextParagraphProperties ^ paragraphProperties, System::Windows::Media::TextFormatting::TextLineBreak ^ previousLineBreak, System::Windows::Media::TextFormatting::TextRunCache ^ textRunCache);" />
+      <MemberSignature Language="F#" Value="abstract member FormatLine : System.Windows.Media.TextFormatting.TextSource * int * double * System.Windows.Media.TextFormatting.TextParagraphProperties * System.Windows.Media.TextFormatting.TextLineBreak * System.Windows.Media.TextFormatting.TextRunCache -&gt; System.Windows.Media.TextFormatting.TextLine" Usage="textFormatter.FormatLine (textSource, firstCharIndex, paragraphWidth, paragraphProperties, previousLineBreak, textRunCache)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -284,6 +290,7 @@ Interaction between the text layout client and the TextFormatter object
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth FormatMinMaxParagraphWidth(class System.Windows.Media.TextFormatting.TextSource textSource, int32 firstCharIndex, class System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.FormatMinMaxParagraphWidth(System.Windows.Media.TextFormatting.TextSource,System.Int32,System.Windows.Media.TextFormatting.TextParagraphProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::MinMaxParagraphWidth FormatMinMaxParagraphWidth(System::Windows::Media::TextFormatting::TextSource ^ textSource, int firstCharIndex, System::Windows::Media::TextFormatting::TextParagraphProperties ^ paragraphProperties);" />
+      <MemberSignature Language="F#" Value="abstract member FormatMinMaxParagraphWidth : System.Windows.Media.TextFormatting.TextSource * int * System.Windows.Media.TextFormatting.TextParagraphProperties -&gt; System.Windows.Media.TextFormatting.MinMaxParagraphWidth" Usage="textFormatter.FormatMinMaxParagraphWidth (textSource, firstCharIndex, paragraphProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -329,6 +336,7 @@ Minimum paragraph width
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth FormatMinMaxParagraphWidth(class System.Windows.Media.TextFormatting.TextSource textSource, int32 firstCharIndex, class System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, class System.Windows.Media.TextFormatting.TextRunCache textRunCache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.FormatMinMaxParagraphWidth(System.Windows.Media.TextFormatting.TextSource,System.Int32,System.Windows.Media.TextFormatting.TextParagraphProperties,System.Windows.Media.TextFormatting.TextRunCache)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::MinMaxParagraphWidth FormatMinMaxParagraphWidth(System::Windows::Media::TextFormatting::TextSource ^ textSource, int firstCharIndex, System::Windows::Media::TextFormatting::TextParagraphProperties ^ paragraphProperties, System::Windows::Media::TextFormatting::TextRunCache ^ textRunCache);" />
+      <MemberSignature Language="F#" Value="abstract member FormatMinMaxParagraphWidth : System.Windows.Media.TextFormatting.TextSource * int * System.Windows.Media.TextFormatting.TextParagraphProperties * System.Windows.Media.TextFormatting.TextRunCache -&gt; System.Windows.Media.TextFormatting.MinMaxParagraphWidth" Usage="textFormatter.FormatMinMaxParagraphWidth (textSource, firstCharIndex, paragraphProperties, textRunCache)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

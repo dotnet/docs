@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.SqlTrackingQuery" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlTrackingQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlTrackingQuery sealed" />
+  <TypeSignature Language="F#" Value="type SqlTrackingQuery = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTrackingQuery(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.SqlTrackingQuery : string -&gt; System.Workflow.Runtime.Tracking.SqlTrackingQuery" Usage="new System.Workflow.Runtime.Tracking.SqlTrackingQuery connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows(System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWorkflows (options As SqlTrackingQueryOptions) As IList(Of SqlTrackingWorkflowInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::SqlTrackingWorkflowInstance ^&gt; ^ GetWorkflows(System::Workflow::Runtime::Tracking::SqlTrackingQueryOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.GetWorkflows : System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions -&gt; System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&gt;" Usage="sqlTrackingQuery.GetWorkflows options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow(System.Guid,System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetWorkflow (workflowInstanceId As Guid, ByRef workflowInstance As SqlTrackingWorkflowInstance) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetWorkflow(Guid workflowInstanceId, [Runtime::InteropServices::Out] System::Workflow::Runtime::Tracking::SqlTrackingWorkflowInstance ^ % workflowInstance);" />
+      <MemberSignature Language="F#" Value="member this.TryGetWorkflow : Guid *  -&gt; bool" Usage="sqlTrackingQuery.TryGetWorkflow (workflowInstanceId, workflowInstance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

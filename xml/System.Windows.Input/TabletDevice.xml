@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TabletDevice" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TabletDevice&#xA;Inherits InputDevice" />
   <TypeSignature Language="C++ CLI" Value="public ref class TabletDevice sealed : System::Windows::Input::InputDevice" />
+  <TypeSignature Language="F#" Value="type TabletDevice = class&#xA;    inherit InputDevice" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.ActiveSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActiveSource As PresentationSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::PresentationSource ^ ActiveSource { System::Windows::PresentationSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveSource : System.Windows.PresentationSource" Usage="System.Windows.Input.TabletDevice.ActiveSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Windows.Input.TabletDevice.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Input.TabletDevice.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.ProductId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProductId : string" Usage="System.Windows.Input.TabletDevice.ProductId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.StylusDevices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StylusDevices As StylusDeviceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusDeviceCollection ^ StylusDevices { System::Windows::Input::StylusDeviceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StylusDevices : System.Windows.Input.StylusDeviceCollection" Usage="System.Windows.Input.TabletDevice.StylusDevices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.SupportedStylusPointProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedStylusPointProperties As ReadOnlyCollection(Of StylusPointProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Input::StylusPointProperty ^&gt; ^ SupportedStylusPointProperties { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Input::StylusPointProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedStylusPointProperties : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusPointProperty&gt;" Usage="System.Windows.Input.TabletDevice.SupportedStylusPointProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.TabletHardwareCapabilities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabletHardwareCapabilities As TabletHardwareCapabilities" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::TabletHardwareCapabilities TabletHardwareCapabilities { System::Windows::Input::TabletHardwareCapabilities get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabletHardwareCapabilities : System.Windows.Input.TabletHardwareCapabilities" Usage="System.Windows.Input.TabletDevice.TabletHardwareCapabilities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.Target" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Target As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::IInputElement ^ Target { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.IInputElement" Usage="System.Windows.Input.TabletDevice.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -284,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TabletDevice.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="tabletDevice.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -315,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TabletDevice.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As TabletDeviceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::TabletDeviceType Type { System::Windows::Input::TabletDeviceType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Windows.Input.TabletDeviceType" Usage="System.Windows.Input.TabletDevice.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

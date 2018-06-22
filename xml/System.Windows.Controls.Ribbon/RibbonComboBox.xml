@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonComboBox" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonComboBox&#xA;Inherits RibbonMenuButton" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonComboBox : System::Windows::Controls::Ribbon::RibbonMenuButton" />
+  <TypeSignature Language="F#" Value="type RibbonComboBox = class&#xA;    inherit RibbonMenuButton" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.ClearContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonComboBox.ClearContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,6 +96,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.IsEditable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEditable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEditable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEditable : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.IsEditable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -136,6 +139,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.IsEditableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEditableProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsEditableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsEditableProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.IsEditableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -155,6 +159,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -190,6 +195,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.IsReadOnlyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsReadOnlyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsReadOnlyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsReadOnlyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.IsReadOnlyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -209,6 +215,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonComboBox.OnActivatingKeyTip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -232,6 +239,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonComboBox.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -259,6 +267,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonComboBox.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -280,6 +289,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnGotKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="ribbonComboBox.OnGotKeyboardFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -303,6 +313,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsKeyboardFocusWithinChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsKeyboardFocusWithinChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnIsKeyboardFocusWithinChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="ribbonComboBox.OnIsKeyboardFocusWithinChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -333,6 +344,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="ribbonComboBox.OnItemsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -356,6 +368,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonComboBox.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -379,6 +392,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnKeyTipAccessed(System.Windows.Controls.KeyTipAccessedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyTipAccessed (e As KeyTipAccessedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyTipAccessed(System::Windows::Controls::KeyTipAccessedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit" Usage="ribbonComboBox.OnKeyTipAccessed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -402,6 +416,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnKeyUp(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonComboBox.OnKeyUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -425,6 +440,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLostKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="ribbonComboBox.OnLostKeyboardFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -448,6 +464,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonComboBox.OnPreviewKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -471,6 +488,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnPreviewMouseDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="ribbonComboBox.OnPreviewMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -494,6 +512,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.OnTextInput(System.Windows.Input.TextCompositionEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextInput (e As TextCompositionEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextInput(System::Windows::Input::TextCompositionEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnTextInput : System.Windows.Input.TextCompositionEventArgs -&gt; unit" Usage="ribbonComboBox.OnTextInput e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -524,6 +543,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonComboBox.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonComboBox.PrepareContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -549,6 +569,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionBoxItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectionBoxItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionBoxItem : obj" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -583,6 +604,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionBoxItemProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionBoxItemProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionBoxItemProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -602,6 +624,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionBoxItemStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectionBoxItemStringFormat { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionBoxItemStringFormat : string" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -636,6 +659,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemStringFormatProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionBoxItemStringFormatProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionBoxItemStringFormatProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionBoxItemStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemStringFormatProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -655,6 +679,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionBoxItemTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ SelectionBoxItemTemplate { System::Windows::DataTemplate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionBoxItemTemplate : System.Windows.DataTemplate" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -689,6 +714,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionBoxItemTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionBoxItemTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionBoxItemTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -708,6 +734,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionBoxItemTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ SelectionBoxItemTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionBoxItemTemplateSelector : System.Windows.Controls.DataTemplateSelector" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -742,6 +769,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionBoxItemTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionBoxItemTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionBoxItemTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -761,6 +789,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionBoxWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SelectionBoxWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionBoxWidth : double with get, set" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -803,6 +832,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionBoxWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionBoxWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionBoxWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -822,6 +852,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.ShowKeyboardCues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShowKeyboardCues As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowKeyboardCues { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowKeyboardCues : bool" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.ShowKeyboardCues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -857,6 +888,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.ShowKeyboardCuesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowKeyboardCuesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowKeyboardCuesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowKeyboardCuesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.ShowKeyboardCuesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -876,6 +908,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.StaysOpenOnEdit" />
       <MemberSignature Language="VB.NET" Value="Public Property StaysOpenOnEdit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StaysOpenOnEdit { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.StaysOpenOnEdit : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.StaysOpenOnEdit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -911,6 +944,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.StaysOpenOnEditProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StaysOpenOnEditProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StaysOpenOnEditProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StaysOpenOnEditProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.StaysOpenOnEditProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -930,6 +964,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -965,6 +1000,7 @@ Ribbon combo box control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonComboBox.TextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonComboBox.TextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

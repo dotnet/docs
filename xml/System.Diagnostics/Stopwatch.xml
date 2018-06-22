@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Stopwatch" />
   <TypeSignature Language="VB.NET" Value="Public Class Stopwatch" />
   <TypeSignature Language="C++ CLI" Value="public ref class Stopwatch" />
+  <TypeSignature Language="F#" Value="type Stopwatch = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.Elapsed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elapsed As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Elapsed { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.Elapsed : TimeSpan" Usage="System.Diagnostics.Stopwatch.Elapsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -174,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedMilliseconds As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ElapsedMilliseconds { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElapsedMilliseconds : int64" Usage="System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -229,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.ElapsedTicks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedTicks As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ElapsedTicks { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElapsedTicks : int64" Usage="System.Diagnostics.Stopwatch.ElapsedTicks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -288,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Stopwatch.Frequency" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Frequency As Long " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly long Frequency;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Frequency : int64" Usage="System.Diagnostics.Stopwatch.Frequency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -341,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.GetTimestamp" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTimestamp () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long GetTimestamp();" />
+      <MemberSignature Language="F#" Value="static member GetTimestamp : unit -&gt; int64" Usage="System.Diagnostics.Stopwatch.GetTimestamp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -392,6 +398,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Stopwatch.IsHighResolution" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHighResolution As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly bool IsHighResolution;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsHighResolution : bool" Usage="System.Diagnostics.Stopwatch.IsHighResolution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -441,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.IsRunning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRunning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRunning { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRunning : bool" Usage="System.Diagnostics.Stopwatch.IsRunning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -486,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="stopwatch.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -530,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Restart" />
       <MemberSignature Language="VB.NET" Value="Public Sub Restart ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Restart();" />
+      <MemberSignature Language="F#" Value="member this.Restart : unit -&gt; unit" Usage="stopwatch.Restart " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -570,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="stopwatch.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -626,6 +637,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.StartNew" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StartNew () As Stopwatch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Stopwatch ^ StartNew();" />
+      <MemberSignature Language="F#" Value="static member StartNew : unit -&gt; System.Diagnostics.Stopwatch" Usage="System.Diagnostics.Stopwatch.StartNew " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -680,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="stopwatch.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

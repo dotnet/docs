@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.ExportFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ExportFactory(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ExportFactory" />
+  <TypeSignature Language="F#" Value="type ExportFactory&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Runtime</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.ExportFactory`1.#ctor(System.Func{System.Tuple{`0,System.Action}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exportCreator As Func(Of Tuple(Of T, Action)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExportFactory(Func&lt;Tuple&lt;T, Action ^&gt; ^&gt; ^ exportCreator);" />
+      <MemberSignature Language="F#" Value="new System.Composition.ExportFactory&lt;'T&gt; : Func&lt;'T * Action&gt; -&gt; System.Composition.ExportFactory&lt;'T&gt;" Usage="new System.Composition.ExportFactory&lt;'T&gt; exportCreator" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.ExportFactory`1.CreateExport" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateExport () As Export(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Export&lt;T&gt; ^ CreateExport();" />
+      <MemberSignature Language="F#" Value="member this.CreateExport : unit -&gt; System.Composition.Export&lt;'T&gt;" Usage="exportFactory.CreateExport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>

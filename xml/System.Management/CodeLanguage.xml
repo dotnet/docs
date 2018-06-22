@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.CodeLanguage" />
   <TypeSignature Language="VB.NET" Value="Public Enum CodeLanguage" />
   <TypeSignature Language="C++ CLI" Value="public enum class CodeLanguage" />
+  <TypeSignature Language="F#" Value="type CodeLanguage = " />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.CSharp" />
       <MemberSignature Language="VB.NET" Value="CSharp" />
       <MemberSignature Language="C++ CLI" Value="CSharp" />
+      <MemberSignature Language="F#" Value="CSharp = 0" Usage="System.Management.CodeLanguage.CSharp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.JScript" />
       <MemberSignature Language="VB.NET" Value="JScript" />
       <MemberSignature Language="C++ CLI" Value="JScript" />
+      <MemberSignature Language="F#" Value="JScript = 1" Usage="System.Management.CodeLanguage.JScript" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.Mcpp" />
       <MemberSignature Language="VB.NET" Value="Mcpp" />
       <MemberSignature Language="C++ CLI" Value="Mcpp" />
+      <MemberSignature Language="F#" Value="Mcpp = 4" Usage="System.Management.CodeLanguage.Mcpp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.VB" />
       <MemberSignature Language="VB.NET" Value="VB" />
       <MemberSignature Language="C++ CLI" Value="VB" />
+      <MemberSignature Language="F#" Value="VB = 2" Usage="System.Management.CodeLanguage.VB" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.VJSharp" />
       <MemberSignature Language="VB.NET" Value="VJSharp" />
       <MemberSignature Language="C++ CLI" Value="VJSharp" />
+      <MemberSignature Language="F#" Value="VJSharp = 3" Usage="System.Management.CodeLanguage.VJSharp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.ReflectionPermissionFlag" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReflectionPermissionFlag" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReflectionPermissionFlag" />
+  <TypeSignature Language="F#" Value="type ReflectionPermissionFlag = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.ReflectionPermissionFlag.AllFlags" />
       <MemberSignature Language="VB.NET" Value="AllFlags" />
       <MemberSignature Language="C++ CLI" Value="AllFlags" />
+      <MemberSignature Language="F#" Value="AllFlags = 7" Usage="System.Security.Permissions.ReflectionPermissionFlag.AllFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />
       <MemberSignature Language="VB.NET" Value="MemberAccess" />
       <MemberSignature Language="C++ CLI" Value="MemberAccess" />
+      <MemberSignature Language="F#" Value="MemberAccess = 2" Usage="System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.ReflectionPermissionFlag.NoFlags" />
       <MemberSignature Language="VB.NET" Value="NoFlags" />
       <MemberSignature Language="C++ CLI" Value="NoFlags" />
+      <MemberSignature Language="F#" Value="NoFlags = 0" Usage="System.Security.Permissions.ReflectionPermissionFlag.NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit" />
       <MemberSignature Language="VB.NET" Value="ReflectionEmit" />
       <MemberSignature Language="C++ CLI" Value="ReflectionEmit" />
+      <MemberSignature Language="F#" Value="ReflectionEmit = 4" Usage="System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />
       <MemberSignature Language="VB.NET" Value="RestrictedMemberAccess" />
       <MemberSignature Language="C++ CLI" Value="RestrictedMemberAccess" />
+      <MemberSignature Language="F#" Value="RestrictedMemberAccess = 8" Usage="System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation" />
       <MemberSignature Language="VB.NET" Value="TypeInformation" />
       <MemberSignature Language="C++ CLI" Value="TypeInformation" />
+      <MemberSignature Language="F#" Value="TypeInformation = 1" Usage="System.Security.Permissions.ReflectionPermissionFlag.TypeInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

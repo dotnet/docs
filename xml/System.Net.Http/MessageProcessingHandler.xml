@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.MessageProcessingHandler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageProcessingHandler&#xA;Inherits DelegatingHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageProcessingHandler abstract : System::Net::Http::DelegatingHandler" />
+  <TypeSignature Language="F#" Value="type MessageProcessingHandler = class&#xA;    inherit DelegatingHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MessageProcessingHandler.#ctor(System.Net.Http.HttpMessageHandler)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (innerHandler As HttpMessageHandler)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageProcessingHandler(System::Net::Http::HttpMessageHandler ^ innerHandler);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.MessageProcessingHandler : System.Net.Http.HttpMessageHandler -&gt; System.Net.Http.MessageProcessingHandler" Usage="new System.Net.Http.MessageProcessingHandler innerHandler" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Net.Http.HttpRequestMessage ProcessRequest(class System.Net.Http.HttpRequestMessage request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MessageProcessingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Net::Http::HttpRequestMessage ^ ProcessRequest(System::Net::Http::HttpRequestMessage ^ request, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Net.Http.HttpRequestMessage * System.Threading.CancellationToken -&gt; System.Net.Http.HttpRequestMessage" Usage="messageProcessingHandler.ProcessRequest (request, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Net.Http.HttpResponseMessage ProcessResponse(class System.Net.Http.HttpResponseMessage response, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MessageProcessingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Net::Http::HttpResponseMessage ^ ProcessResponse(System::Net::Http::HttpResponseMessage ^ response, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessResponse : System.Net.Http.HttpResponseMessage * System.Threading.CancellationToken -&gt; System.Net.Http.HttpResponseMessage" Usage="messageProcessingHandler.ProcessResponse (response, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Net.Http.HttpResponseMessage&gt; SendAsync(class System.Net.Http.HttpRequestMessage request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MessageProcessingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Threading::Tasks::Task&lt;System::Net::Http::HttpResponseMessage ^&gt; ^ SendAsync(System::Net::Http::HttpRequestMessage ^ request, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;" Usage="messageProcessingHandler.SendAsync (request, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

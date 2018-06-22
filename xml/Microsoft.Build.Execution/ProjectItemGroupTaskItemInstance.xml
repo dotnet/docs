@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectItemGroupTaskItemInstance" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectItemGroupTaskItemInstance" />
+  <TypeSignature Language="F#" Value="type ProjectItemGroupTaskItemInstance = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Condition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.ConditionLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConditionLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.ConditionLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Exclude" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exclude As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Exclude { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exclude : string" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Exclude" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.ExcludeLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExcludeLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ExcludeLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExcludeLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.ExcludeLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Include" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Include As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Include { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Include : string" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Include" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.IncludeLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncludeLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ IncludeLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.IncludeLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -203,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.KeepDuplicates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepDuplicates As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeepDuplicates { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeepDuplicates : string" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.KeepDuplicates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -228,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.KeepDuplicatesLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepDuplicatesLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ KeepDuplicatesLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeepDuplicatesLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.KeepDuplicatesLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.KeepMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepMetadata As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeepMetadata { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeepMetadata : string" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.KeepMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -278,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.KeepMetadataLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepMetadataLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ KeepMetadataLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeepMetadataLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.KeepMetadataLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ Location { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -328,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As ICollection(Of ProjectItemGroupTaskMetadataInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectItemGroupTaskMetadataInstance ^&gt; ^ Metadata { System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectItemGroupTaskMetadataInstance ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectItemGroupTaskMetadataInstance&gt;" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -353,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Remove" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Remove As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Remove { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Remove : string" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.Remove" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -378,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.RemoveLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoveLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ RemoveLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemoveLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.RemoveLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -403,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.RemoveMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoveMetadata As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RemoveMetadata { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemoveMetadata : string" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.RemoveMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -428,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.RemoveMetadataLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoveMetadataLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ RemoveMetadataLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemoveMetadataLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectItemGroupTaskItemInstance.RemoveMetadataLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

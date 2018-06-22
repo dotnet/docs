@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodePrimitiveExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodePrimitiveExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodePrimitiveExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodePrimitiveExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePrimitiveExpression.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodePrimitiveExpression(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodePrimitiveExpression : obj -&gt; System.CodeDom.CodePrimitiveExpression" Usage="new System.CodeDom.CodePrimitiveExpression value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodePrimitiveExpression.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.CodeDom.CodePrimitiveExpression.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

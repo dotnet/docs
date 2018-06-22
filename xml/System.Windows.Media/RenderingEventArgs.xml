@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RenderingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RenderingEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RenderingEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type RenderingEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RenderingEventArgs.RenderingTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RenderingTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RenderingTime { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.RenderingTime : TimeSpan" Usage="System.Windows.Media.RenderingEventArgs.RenderingTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

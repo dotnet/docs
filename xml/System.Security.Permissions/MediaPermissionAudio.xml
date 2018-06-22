@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.MediaPermissionAudio" />
   <TypeSignature Language="VB.NET" Value="Public Enum MediaPermissionAudio" />
   <TypeSignature Language="C++ CLI" Value="public enum class MediaPermissionAudio" />
+  <TypeSignature Language="F#" Value="type MediaPermissionAudio = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionAudio.AllAudio" />
       <MemberSignature Language="VB.NET" Value="AllAudio" />
       <MemberSignature Language="C++ CLI" Value="AllAudio" />
+      <MemberSignature Language="F#" Value="AllAudio = 3" Usage="System.Security.Permissions.MediaPermissionAudio.AllAudio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionAudio.NoAudio" />
       <MemberSignature Language="VB.NET" Value="NoAudio" />
       <MemberSignature Language="C++ CLI" Value="NoAudio" />
+      <MemberSignature Language="F#" Value="NoAudio = 0" Usage="System.Security.Permissions.MediaPermissionAudio.NoAudio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionAudio.SafeAudio" />
       <MemberSignature Language="VB.NET" Value="SafeAudio" />
       <MemberSignature Language="C++ CLI" Value="SafeAudio" />
+      <MemberSignature Language="F#" Value="SafeAudio = 2" Usage="System.Security.Permissions.MediaPermissionAudio.SafeAudio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionAudio.SiteOfOriginAudio" />
       <MemberSignature Language="VB.NET" Value="SiteOfOriginAudio" />
       <MemberSignature Language="C++ CLI" Value="SiteOfOriginAudio" />
+      <MemberSignature Language="F#" Value="SiteOfOriginAudio = 1" Usage="System.Security.Permissions.MediaPermissionAudio.SiteOfOriginAudio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

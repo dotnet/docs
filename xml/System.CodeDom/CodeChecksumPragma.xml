@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeChecksumPragma" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeChecksumPragma&#xA;Inherits CodeDirective" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeChecksumPragma : System::CodeDom::CodeDirective" />
+  <TypeSignature Language="F#" Value="type CodeChecksumPragma = class&#xA;    inherit CodeDirective" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeChecksumPragma.#ctor(System.String,System.Guid,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, checksumAlgorithmId As Guid, checksumData As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeChecksumPragma(System::String ^ fileName, Guid checksumAlgorithmId, cli::array &lt;System::Byte&gt; ^ checksumData);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeChecksumPragma : string * Guid * byte[] -&gt; System.CodeDom.CodeChecksumPragma" Usage="new System.CodeDom.CodeChecksumPragma (fileName, checksumAlgorithmId, checksumData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeChecksumPragma.ChecksumAlgorithmId" />
       <MemberSignature Language="VB.NET" Value="Public Property ChecksumAlgorithmId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ChecksumAlgorithmId { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.ChecksumAlgorithmId : Guid with get, set" Usage="System.CodeDom.CodeChecksumPragma.ChecksumAlgorithmId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeChecksumPragma.ChecksumData" />
       <MemberSignature Language="VB.NET" Value="Public Property ChecksumData As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ ChecksumData { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChecksumData : byte[] with get, set" Usage="System.CodeDom.CodeChecksumPragma.ChecksumData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -213,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeChecksumPragma.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.CodeDom.CodeChecksumPragma.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

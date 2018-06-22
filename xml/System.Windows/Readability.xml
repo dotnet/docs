@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Readability" />
   <TypeSignature Language="VB.NET" Value="Public Enum Readability" />
   <TypeSignature Language="C++ CLI" Value="public enum class Readability" />
+  <TypeSignature Language="F#" Value="type Readability = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Readability.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 2" Usage="System.Windows.Readability.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Readability.Readable" />
       <MemberSignature Language="VB.NET" Value="Readable" />
       <MemberSignature Language="C++ CLI" Value="Readable" />
+      <MemberSignature Language="F#" Value="Readable = 1" Usage="System.Windows.Readability.Readable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Readability.Unreadable" />
       <MemberSignature Language="VB.NET" Value="Unreadable" />
       <MemberSignature Language="C++ CLI" Value="Unreadable" />
+      <MemberSignature Language="F#" Value="Unreadable = 0" Usage="System.Windows.Readability.Unreadable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

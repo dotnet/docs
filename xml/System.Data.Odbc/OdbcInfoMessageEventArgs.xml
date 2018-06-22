@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcInfoMessageEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcInfoMessageEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcInfoMessageEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type OdbcInfoMessageEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcInfoMessageEventArgs.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As OdbcErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcErrorCollection ^ Errors { System::Data::Odbc::OdbcErrorCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Data.Odbc.OdbcErrorCollection" Usage="System.Data.Odbc.OdbcInfoMessageEventArgs.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcInfoMessageEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Data.Odbc.OdbcInfoMessageEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcInfoMessageEventArgs.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="odbcInfoMessageEventArgs.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

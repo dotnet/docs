@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.Blend" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Blend" />
   <TypeSignature Language="C++ CLI" Value="public ref class Blend sealed" />
+  <TypeSignature Language="F#" Value="type Blend = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.Blend.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Blend(int count);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.Blend : int -&gt; System.Drawing.Drawing2D.Blend" Usage="new System.Drawing.Drawing2D.Blend count" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.Blend.Factors" />
       <MemberSignature Language="VB.NET" Value="Public Property Factors As Single()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;float&gt; ^ Factors { cli::array &lt;float&gt; ^ get(); void set(cli::array &lt;float&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Factors : single[] with get, set" Usage="System.Drawing.Drawing2D.Blend.Factors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.Blend.Positions" />
       <MemberSignature Language="VB.NET" Value="Public Property Positions As Single()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;float&gt; ^ Positions { cli::array &lt;float&gt; ^ get(); void set(cli::array &lt;float&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Positions : single[] with get, set" Usage="System.Drawing.Drawing2D.Blend.Positions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.DeleteOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class DeleteOptions&#xA;Inherits ManagementOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeleteOptions : System::Management::ManagementOptions" />
+  <TypeSignature Language="F#" Value="type DeleteOptions = class&#xA;    inherit ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.DeleteOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="new System.Management.DeleteOptions : System.Management.ManagementNamedValueCollection * TimeSpan -&gt; System.Management.DeleteOptions" Usage="new System.Management.DeleteOptions (context, timeout)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.DeleteOptions.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="deleteOptions.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

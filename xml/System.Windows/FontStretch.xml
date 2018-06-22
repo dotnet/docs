@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontStretch" />
   <TypeSignature Language="VB.NET" Value="Public Structure FontStretch&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class FontStretch : IFormattable" />
+  <TypeSignature Language="F#" Value="type FontStretch = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.Compare(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As FontStretch, right As FontStretch) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::Windows::FontStretch left, System::Windows::FontStretch right);" />
+      <MemberSignature Language="F#" Value="static member Compare : System.Windows.FontStretch * System.Windows.FontStretch -&gt; int" Usage="System.Windows.FontStretch.Compare (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="fontStretch.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.Equals(System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As FontStretch) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::FontStretch obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.FontStretch -&gt; bool" Usage="fontStretch.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.FromOpenTypeStretch(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromOpenTypeStretch (stretchValue As Integer) As FontStretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontStretch FromOpenTypeStretch(int stretchValue);" />
+      <MemberSignature Language="F#" Value="static member FromOpenTypeStretch : int -&gt; System.Windows.FontStretch" Usage="System.Windows.FontStretch.FromOpenTypeStretch stretchValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="fontStretch.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_Equality(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As FontStretch, right As FontStretch) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::FontStretch left, System::Windows::FontStretch right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.FontStretch * System.Windows.FontStretch -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_GreaterThan(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As FontStretch, right As FontStretch) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Windows::FontStretch left, System::Windows::FontStretch right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Windows.FontStretch * System.Windows.FontStretch -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -265,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_GreaterThanOrEqual(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As FontStretch, right As FontStretch) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::Windows::FontStretch left, System::Windows::FontStretch right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Windows.FontStretch * System.Windows.FontStretch -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -292,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_Inequality(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As FontStretch, right As FontStretch) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::FontStretch left, System::Windows::FontStretch right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.FontStretch * System.Windows.FontStretch -&gt; bool" Usage="System.Windows.FontStretch.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -319,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_LessThan(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As FontStretch, right As FontStretch) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Windows::FontStretch left, System::Windows::FontStretch right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Windows.FontStretch * System.Windows.FontStretch -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -346,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_LessThanOrEqual(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As FontStretch, right As FontStretch) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::Windows::FontStretch left, System::Windows::FontStretch right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Windows.FontStretch * System.Windows.FontStretch -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.ToOpenTypeStretch" />
       <MemberSignature Language="VB.NET" Value="Public Function ToOpenTypeStretch () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToOpenTypeStretch();" />
+      <MemberSignature Language="F#" Value="member this.ToOpenTypeStretch : unit -&gt; int" Usage="fontStretch.ToOpenTypeStretch " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -432,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fontStretch.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

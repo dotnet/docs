@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DataReceivedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataReceivedEventHandler(sender As Object, e As DataReceivedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataReceivedEventHandler(System::Object ^ sender, DataReceivedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataReceivedEventHandler = delegate of obj * DataReceivedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

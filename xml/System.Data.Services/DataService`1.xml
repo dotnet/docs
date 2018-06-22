@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataService`1" />
   <TypeSignature Language="VB.NET" Value="Public Class DataService(Of T)&#xA;Implements IRequestHandler" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class DataService : System::Data::Services::IRequestHandler" />
+  <TypeSignature Language="F#" Value="type DataService&lt;'T&gt; = class&#xA;    interface IRequestHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataService`1.AttachHost(System.Data.Services.IDataServiceHost)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AttachHost (host As IDataServiceHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachHost(System::Data::Services::IDataServiceHost ^ host);" />
+      <MemberSignature Language="F#" Value="member this.AttachHost : System.Data.Services.IDataServiceHost -&gt; unit" Usage="dataService.AttachHost host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataService`1.CreateDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDataSource () As T" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual T CreateDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member CreateDataSource : unit -&gt; 'T&#xA;override this.CreateDataSource : unit -&gt; 'T" Usage="dataService.CreateDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataService`1.CurrentDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentDataSource As T" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property T CurrentDataSource { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentDataSource : 'T" Usage="System.Data.Services.DataService&lt;'T&gt;.CurrentDataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataService`1.HandleException(System.Data.Services.HandleExceptionArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub HandleException (args As HandleExceptionArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void HandleException(System::Data::Services::HandleExceptionArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member HandleException : System.Data.Services.HandleExceptionArgs -&gt; unit&#xA;override this.HandleException : System.Data.Services.HandleExceptionArgs -&gt; unit" Usage="dataService.HandleException args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataService`1.OnStartProcessingRequest(System.Data.Services.ProcessRequestArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStartProcessingRequest (args As ProcessRequestArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStartProcessingRequest(System::Data::Services::ProcessRequestArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member OnStartProcessingRequest : System.Data.Services.ProcessRequestArgs -&gt; unit&#xA;override this.OnStartProcessingRequest : System.Data.Services.ProcessRequestArgs -&gt; unit" Usage="dataService.OnStartProcessingRequest args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataService`1.ProcessingPipeline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessingPipeline As DataServiceProcessingPipeline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::DataServiceProcessingPipeline ^ ProcessingPipeline { System::Data::Services::DataServiceProcessingPipeline ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessingPipeline : System.Data.Services.DataServiceProcessingPipeline" Usage="System.Data.Services.DataService&lt;'T&gt;.ProcessingPipeline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataService`1.ProcessRequest" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProcessRequest();" />
+      <MemberSignature Language="F#" Value="member this.ProcessRequest : unit -&gt; unit" Usage="dataService.ProcessRequest " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataService`1.ProcessRequestForMessage(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Function ProcessRequestForMessage (messageBody As Stream) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::Message ^ ProcessRequestForMessage(System::IO::Stream ^ messageBody);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequestForMessage : System.IO.Stream -&gt; System.ServiceModel.Channels.Message&#xA;override this.ProcessRequestForMessage : System.IO.Stream -&gt; System.ServiceModel.Channels.Message" Usage="dataService.ProcessRequestForMessage messageBody" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Services.IRequestHandler.ProcessRequestForMessage(System.IO.Stream)</InterfaceMember>

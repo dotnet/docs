@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteValueDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class RouteValueDictionary&#xA;Implements ICollection(Of KeyValuePair(Of String, Object)), IDictionary(Of String, Object), IEnumerable(Of KeyValuePair(Of String, Object))" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteValueDictionary : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;" />
+  <TypeSignature Language="F#" Value="type RouteValueDictionary = class&#xA;    interface IDictionary&lt;string, obj&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As IDictionary(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteValueDictionary(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ dictionary);" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.RouteValueDictionary : System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Web.Routing.RouteValueDictionary" Usage="new System.Web.Routing.RouteValueDictionary dictionary" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (values As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteValueDictionary(System::Object ^ values);" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.RouteValueDictionary : obj -&gt; System.Web.Routing.RouteValueDictionary" Usage="new System.Web.Routing.RouteValueDictionary values" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ key, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; unit&#xA;override this.Add : string * obj -&gt; unit" Usage="routeValueDictionary.Add (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="routeValueDictionary.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="routeValueDictionary.ContainsKey key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.ContainsValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsValue (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsValue(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ContainsValue : obj -&gt; bool" Usage="routeValueDictionary.ContainsValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.Routing.RouteValueDictionary.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As Dictionary(Of String, Object).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.Dictionary&lt;string, obj&gt;.Enumerator" Usage="routeValueDictionary.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ key); void set(System::String ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.Routing.RouteValueDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -329,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As Dictionary.KeyCollection(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary::KeyCollection&lt;System::String ^, System::Object ^&gt; ^ Keys { System::Collections::Generic::Dictionary::KeyCollection&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.Dictionary.KeyCollection&lt;string, obj&gt;" Usage="System.Web.Routing.RouteValueDictionary.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -349,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; bool&#xA;override this.Remove : string -&gt; bool" Usage="routeValueDictionary.Remove key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
@@ -455,6 +467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.Routing.RouteValueDictionary.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -505,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of String) Implements IDictionary(Of String, Object).Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -528,6 +542,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.System#Collections#Generic#IDictionary&lt;System#String,System#Object&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of Object) Implements IDictionary(Of String, Object).Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values { System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.Routing.RouteValueDictionary.System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -606,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteValueDictionary.TryGetValue(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As String, ByRef value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::String ^ key, [Runtime::InteropServices::Out] System::Object ^ % value);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool&#xA;override this.TryGetValue : string *  -&gt; bool" Usage="routeValueDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -642,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Dictionary.ValueCollection(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary::ValueCollection&lt;System::String ^, System::Object ^&gt; ^ Values { System::Collections::Generic::Dictionary::ValueCollection&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.Dictionary.ValueCollection&lt;string, obj&gt;" Usage="System.Web.Routing.RouteValueDictionary.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCondition" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityCondition&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityCondition abstract : System::Workflow::ComponentModel::DependencyObject" />
+  <TypeSignature Language="F#" Value="type ActivityCondition = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Evaluate(class System.Workflow.ComponentModel.Activity activity, class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCondition.Evaluate(System.Workflow.ComponentModel.Activity,System.IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Evaluate(System::Workflow::ComponentModel::Activity ^ activity, IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : System.Workflow.ComponentModel.Activity * IServiceProvider -&gt; bool" Usage="activityCondition.Evaluate (activity, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

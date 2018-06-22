@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginCancelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub LoginCancelEventHandler(sender As Object, e As LoginCancelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void LoginCancelEventHandler(System::Object ^ sender, LoginCancelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LoginCancelEventHandler = delegate of obj * LoginCancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

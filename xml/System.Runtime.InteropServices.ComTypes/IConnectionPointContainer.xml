@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConnectionPointContainer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConnectionPointContainer" />
+  <TypeSignature Language="F#" Value="type IConnectionPointContainer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints(System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumConnectionPoints (ByRef ppEnum As IEnumConnectionPoints)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumConnectionPoints([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumConnectionPoints ^ % ppEnum);" />
+      <MemberSignature Language="F#" Value="abstract member EnumConnectionPoints :  -&gt; unit" Usage="iConnectionPointContainer.EnumConnectionPoints ppEnum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint(System.Guid@,System.Runtime.InteropServices.ComTypes.IConnectionPoint@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FindConnectionPoint (ByRef riid As Guid, ByRef ppCP As IConnectionPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindConnectionPoint(Guid % riid, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IConnectionPoint ^ % ppCP);" />
+      <MemberSignature Language="F#" Value="abstract member FindConnectionPoint :  *  -&gt; unit" Usage="iConnectionPointContainer.FindConnectionPoint (riid, ppCP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

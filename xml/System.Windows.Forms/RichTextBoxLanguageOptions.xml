@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxLanguageOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum RichTextBoxLanguageOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class RichTextBoxLanguageOptions" />
+  <TypeSignature Language="F#" Value="type RichTextBoxLanguageOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxLanguageOptions.AutoFont" />
       <MemberSignature Language="VB.NET" Value="AutoFont" />
       <MemberSignature Language="C++ CLI" Value="AutoFont" />
+      <MemberSignature Language="F#" Value="AutoFont = 2" Usage="System.Windows.Forms.RichTextBoxLanguageOptions.AutoFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxLanguageOptions.AutoFontSizeAdjust" />
       <MemberSignature Language="VB.NET" Value="AutoFontSizeAdjust" />
       <MemberSignature Language="C++ CLI" Value="AutoFontSizeAdjust" />
+      <MemberSignature Language="F#" Value="AutoFontSizeAdjust = 16" Usage="System.Windows.Forms.RichTextBoxLanguageOptions.AutoFontSizeAdjust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxLanguageOptions.AutoKeyboard" />
       <MemberSignature Language="VB.NET" Value="AutoKeyboard" />
       <MemberSignature Language="C++ CLI" Value="AutoKeyboard" />
+      <MemberSignature Language="F#" Value="AutoKeyboard = 1" Usage="System.Windows.Forms.RichTextBoxLanguageOptions.AutoKeyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxLanguageOptions.DualFont" />
       <MemberSignature Language="VB.NET" Value="DualFont" />
       <MemberSignature Language="C++ CLI" Value="DualFont" />
+      <MemberSignature Language="F#" Value="DualFont = 128" Usage="System.Windows.Forms.RichTextBoxLanguageOptions.DualFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxLanguageOptions.ImeAlwaysSendNotify" />
       <MemberSignature Language="VB.NET" Value="ImeAlwaysSendNotify" />
       <MemberSignature Language="C++ CLI" Value="ImeAlwaysSendNotify" />
+      <MemberSignature Language="F#" Value="ImeAlwaysSendNotify = 8" Usage="System.Windows.Forms.RichTextBoxLanguageOptions.ImeAlwaysSendNotify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxLanguageOptions.ImeCancelComplete" />
       <MemberSignature Language="VB.NET" Value="ImeCancelComplete" />
       <MemberSignature Language="C++ CLI" Value="ImeCancelComplete" />
+      <MemberSignature Language="F#" Value="ImeCancelComplete = 4" Usage="System.Windows.Forms.RichTextBoxLanguageOptions.ImeCancelComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxLanguageOptions.UIFonts" />
       <MemberSignature Language="VB.NET" Value="UIFonts" />
       <MemberSignature Language="C++ CLI" Value="UIFonts" />
+      <MemberSignature Language="F#" Value="UIFonts = 32" Usage="System.Windows.Forms.RichTextBoxLanguageOptions.UIFonts" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

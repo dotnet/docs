@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageProperties" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageProperties&#xA;Implements ICollection(Of KeyValuePair(Of String, Object)), IDictionary(Of String, Object), IDisposable, IEnumerable(Of KeyValuePair(Of String, Object))" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageProperties sealed : IDisposable, System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;" />
+  <TypeSignature Language="F#" Value="type MessageProperties = class&#xA;    interface IDictionary&lt;string, obj&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageProperties.#ctor(System.ServiceModel.Channels.MessageProperties)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As MessageProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageProperties(System::ServiceModel::Channels::MessageProperties ^ properties);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.MessageProperties : System.ServiceModel.Channels.MessageProperties -&gt; System.ServiceModel.Channels.MessageProperties" Usage="new System.ServiceModel.Channels.MessageProperties properties" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageProperties.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, property As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ name, System::Object ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; unit&#xA;override this.Add : string * obj -&gt; unit" Usage="messageProperties.Add (name, property)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.AllowOutputBatching" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowOutputBatching As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowOutputBatching { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowOutputBatching : bool with get, set" Usage="System.ServiceModel.Channels.MessageProperties.AllowOutputBatching" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageProperties.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="messageProperties.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageProperties.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="messageProperties.ContainsKey name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageProperties.CopyProperties(System.ServiceModel.Channels.MessageProperties)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyProperties (properties As MessageProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyProperties(System::ServiceModel::Channels::MessageProperties ^ properties);" />
+      <MemberSignature Language="F#" Value="member this.CopyProperties : System.ServiceModel.Channels.MessageProperties -&gt; unit" Usage="messageProperties.CopyProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ServiceModel.Channels.MessageProperties.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageProperties.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="messageProperties.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -344,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.Encoder" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoder As MessageEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageEncoder ^ Encoder { System::ServiceModel::Channels::MessageEncoder ^ get(); void set(System::ServiceModel::Channels::MessageEncoder ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Encoder : System.ServiceModel.Channels.MessageEncoder with get, set" Usage="System.ServiceModel.Channels.MessageProperties.Encoder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.ServiceModel.Channels.MessageProperties.IsFixedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -406,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ServiceModel.Channels.MessageProperties.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -431,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); void set(System::String ^ name, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.ServiceModel.Channels.MessageProperties.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -465,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.ServiceModel.Channels.MessageProperties.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -495,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageProperties.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; bool&#xA;override this.Remove : string -&gt; bool" Usage="messageProperties.Remove name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
@@ -530,6 +545,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.Security" />
       <MemberSignature Language="VB.NET" Value="Public Property Security As SecurityMessageProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityMessageProperty ^ Security { System::ServiceModel::Security::SecurityMessageProperty ^ get(); void set(System::ServiceModel::Security::SecurityMessageProperty ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.Security.SecurityMessageProperty with get, set" Usage="System.ServiceModel.Channels.MessageProperties.Security" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -656,6 +672,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.MessageProperties.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -777,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageProperties.TryGetValue(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (name As String, ByRef value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::String ^ name, [Runtime::InteropServices::Out] System::Object ^ % value);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool&#xA;override this.TryGetValue : string *  -&gt; bool" Usage="messageProperties.TryGetValue (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -811,6 +829,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ Values { System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.ICollection&lt;obj&gt;" Usage="System.ServiceModel.Channels.MessageProperties.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -841,6 +860,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageProperties.Via" />
       <MemberSignature Language="VB.NET" Value="Public Property Via As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Via { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Via : Uri with get, set" Usage="System.ServiceModel.Channels.MessageProperties.Via" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

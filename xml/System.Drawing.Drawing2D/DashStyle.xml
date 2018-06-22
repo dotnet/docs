@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.DashStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum DashStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class DashStyle" />
+  <TypeSignature Language="F#" Value="type DashStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashStyle.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 5" Usage="System.Drawing.Drawing2D.DashStyle.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashStyle.Dash" />
       <MemberSignature Language="VB.NET" Value="Dash" />
       <MemberSignature Language="C++ CLI" Value="Dash" />
+      <MemberSignature Language="F#" Value="Dash = 1" Usage="System.Drawing.Drawing2D.DashStyle.Dash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashStyle.DashDot" />
       <MemberSignature Language="VB.NET" Value="DashDot" />
       <MemberSignature Language="C++ CLI" Value="DashDot" />
+      <MemberSignature Language="F#" Value="DashDot = 3" Usage="System.Drawing.Drawing2D.DashStyle.DashDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashStyle.DashDotDot" />
       <MemberSignature Language="VB.NET" Value="DashDotDot" />
       <MemberSignature Language="C++ CLI" Value="DashDotDot" />
+      <MemberSignature Language="F#" Value="DashDotDot = 4" Usage="System.Drawing.Drawing2D.DashStyle.DashDotDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashStyle.Dot" />
       <MemberSignature Language="VB.NET" Value="Dot" />
       <MemberSignature Language="C++ CLI" Value="Dot" />
+      <MemberSignature Language="F#" Value="Dot = 2" Usage="System.Drawing.Drawing2D.DashStyle.Dot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashStyle.Solid" />
       <MemberSignature Language="VB.NET" Value="Solid" />
       <MemberSignature Language="C++ CLI" Value="Solid" />
+      <MemberSignature Language="F#" Value="Solid = 0" Usage="System.Drawing.Drawing2D.DashStyle.Solid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

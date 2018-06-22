@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlImageAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class ChtmlImageAdapter&#xA;Inherits HtmlImageAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChtmlImageAdapter : System::Web::UI::MobileControls::Adapters::HtmlImageAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlImageAdapter = class&#xA;    inherit HtmlImageAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlImageAdapter.AddAttributes(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributes (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributes(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributes : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="chtmlImageAdapter.AddAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlImageAdapter.RenderImage(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderImage (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderImage(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderImage : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="chtmlImageAdapter.RenderImage writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

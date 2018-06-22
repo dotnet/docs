@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.DurableInstancingOptions" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DurableInstancingOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DurableInstancingOptions sealed" />
+  <TypeSignature Language="F#" Value="type DurableInstancingOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.DurableInstancingOptions.AddInitialInstanceValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddInitialInstanceValues (writeOnlyValues As IDictionary(Of XName, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddInitialInstanceValues(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ writeOnlyValues);" />
+      <MemberSignature Language="F#" Value="member this.AddInitialInstanceValues : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; -&gt; unit" Usage="durableInstancingOptions.AddInitialInstanceValues writeOnlyValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.DurableInstancingOptions.AddInstanceOwnerValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddInstanceOwnerValues (readWriteValues As IDictionary(Of XName, Object), writeOnlyValues As IDictionary(Of XName, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddInstanceOwnerValues(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ readWriteValues, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ writeOnlyValues);" />
+      <MemberSignature Language="F#" Value="member this.AddInstanceOwnerValues : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; -&gt; unit" Usage="durableInstancingOptions.AddInstanceOwnerValues (readWriteValues, writeOnlyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.DurableInstancingOptions.InstanceStore" />
       <MemberSignature Language="VB.NET" Value="Public Property InstanceStore As InstanceStore" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceStore ^ InstanceStore { System::Runtime::DurableInstancing::InstanceStore ^ get(); void set(System::Runtime::DurableInstancing::InstanceStore ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceStore : System.Runtime.DurableInstancing.InstanceStore with get, set" Usage="System.ServiceModel.Activities.DurableInstancingOptions.InstanceStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

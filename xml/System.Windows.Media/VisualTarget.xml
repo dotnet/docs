@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualTarget" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualTarget&#xA;Inherits CompositionTarget" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualTarget : System::Windows::Media::CompositionTarget" />
+  <TypeSignature Language="F#" Value="type VisualTarget = class&#xA;    inherit CompositionTarget" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.HostVisual hostVisual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTarget.#ctor(System.Windows.Media.HostVisual)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VisualTarget(System::Windows::Media::HostVisual ^ hostVisual);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.VisualTarget : System.Windows.Media.HostVisual -&gt; System.Windows.Media.VisualTarget" Usage="new System.Windows.Media.VisualTarget hostVisual" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualTarget.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="visualTarget.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualTarget.TransformFromDevice" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TransformFromDevice As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix TransformFromDevice { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformFromDevice : System.Windows.Media.Matrix" Usage="System.Windows.Media.VisualTarget.TransformFromDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualTarget.TransformToDevice" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TransformToDevice As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix TransformToDevice { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformToDevice : System.Windows.Media.Matrix" Usage="System.Windows.Media.VisualTarget.TransformToDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

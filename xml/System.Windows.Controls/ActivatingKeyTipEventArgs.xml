@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ActivatingKeyTipEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivatingKeyTipEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivatingKeyTipEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type ActivatingKeyTipEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ActivatingKeyTipEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="activatingKeyTipEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipHorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTipHorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double KeyTipHorizontalOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTipHorizontalOffset : double with get, set" Usage="System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipHorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipHorizontalPlacement" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTipHorizontalPlacement As KeyTipHorizontalPlacement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::KeyTipHorizontalPlacement KeyTipHorizontalPlacement { System::Windows::Controls::KeyTipHorizontalPlacement get(); void set(System::Windows::Controls::KeyTipHorizontalPlacement value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTipHorizontalPlacement : System.Windows.Controls.KeyTipHorizontalPlacement with get, set" Usage="System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipHorizontalPlacement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTipVerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double KeyTipVerticalOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTipVerticalOffset : double with get, set" Usage="System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVerticalPlacement" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTipVerticalPlacement As KeyTipVerticalPlacement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::KeyTipVerticalPlacement KeyTipVerticalPlacement { System::Windows::Controls::KeyTipVerticalPlacement get(); void set(System::Windows::Controls::KeyTipVerticalPlacement value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTipVerticalPlacement : System.Windows.Controls.KeyTipVerticalPlacement with get, set" Usage="System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVerticalPlacement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTipVisibility As Visibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility KeyTipVisibility { System::Windows::Visibility get(); void set(System::Windows::Visibility value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTipVisibility : System.Windows.Visibility with get, set" Usage="System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ActivatingKeyTipEventArgs.PlacementTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property PlacementTarget As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ PlacementTarget { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PlacementTarget : System.Windows.UIElement with get, set" Usage="System.Windows.Controls.ActivatingKeyTipEventArgs.PlacementTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

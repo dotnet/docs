@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebUtility" />
   <TypeSignature Language="VB.NET" Value="Public Class WebUtility" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebUtility abstract sealed" />
+  <TypeSignature Language="F#" Value="type WebUtility = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.HtmlDecode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlDecode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlDecode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member HtmlDecode : string -&gt; string" Usage="System.Net.WebUtility.HtmlDecode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub HtmlDecode (value As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HtmlDecode(System::String ^ value, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="static member HtmlDecode : string * System.IO.TextWriter -&gt; unit" Usage="System.Net.WebUtility.HtmlDecode (value, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.HtmlEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlEncode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlEncode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member HtmlEncode : string -&gt; string" Usage="System.Net.WebUtility.HtmlEncode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -215,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.HtmlEncode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub HtmlEncode (value As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HtmlEncode(System::String ^ value, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="static member HtmlEncode : string * System.IO.TextWriter -&gt; unit" Usage="System.Net.WebUtility.HtmlEncode (value, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -261,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.UrlDecode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (encodedValue As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ encodedValue);" />
+      <MemberSignature Language="F#" Value="static member UrlDecode : string -&gt; string" Usage="System.Net.WebUtility.UrlDecode encodedValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -309,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.UrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecodeToBytes (encodedValue As Byte(), offset As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlDecodeToBytes(cli::array &lt;System::Byte&gt; ^ encodedValue, int offset, int count);" />
+      <MemberSignature Language="F#" Value="static member UrlDecodeToBytes : byte[] * int * int -&gt; byte[]" Usage="System.Net.WebUtility.UrlDecodeToBytes (encodedValue, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -361,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.UrlEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string -&gt; string" Usage="System.Net.WebUtility.UrlEncode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -425,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncodeToBytes (value As Byte(), offset As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlEncodeToBytes(cli::array &lt;System::Byte&gt; ^ value, int offset, int count);" />
+      <MemberSignature Language="F#" Value="static member UrlEncodeToBytes : byte[] * int * int -&gt; byte[]" Usage="System.Net.WebUtility.UrlEncodeToBytes (value, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

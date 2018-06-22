@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509CertificateTrustedIssuerElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509CertificateTrustedIssuerElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type X509CertificateTrustedIssuerElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.Copy(System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As X509CertificateTrustedIssuerElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::X509CertificateTrustedIssuerElement ^ from);" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement -&gt; unit" Usage="x509CertificateTrustedIssuerElement.Copy from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.FindValue" />
       <MemberSignature Language="VB.NET" Value="Public Property FindValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FindValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FindValue : string with get, set" Usage="System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.FindValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.StoreLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property StoreLocation As StoreLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation StoreLocation { System::Security::Cryptography::X509Certificates::StoreLocation get(); void set(System::Security::Cryptography::X509Certificates::StoreLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.StoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation with get, set" Usage="System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.StoreLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.StoreName" />
       <MemberSignature Language="VB.NET" Value="Public Property StoreName As StoreName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreName StoreName { System::Security::Cryptography::X509Certificates::StoreName get(); void set(System::Security::Cryptography::X509Certificates::StoreName value); };" />
+      <MemberSignature Language="F#" Value="member this.StoreName : System.Security.Cryptography.X509Certificates.StoreName with get, set" Usage="System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.StoreName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.X509FindType" />
       <MemberSignature Language="VB.NET" Value="Public Property X509FindType As X509FindType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509FindType X509FindType { System::Security::Cryptography::X509Certificates::X509FindType get(); void set(System::Security::Cryptography::X509Certificates::X509FindType value); };" />
+      <MemberSignature Language="F#" Value="member this.X509FindType : System.Security.Cryptography.X509Certificates.X509FindType with get, set" Usage="System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement.X509FindType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

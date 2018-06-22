@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class ForestTrustDomainInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ForestTrustDomainInformation" />
+  <TypeSignature Language="F#" Value="type ForestTrustDomainInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.DnsName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DnsName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DnsName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DnsName : string" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.DnsName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.DomainSid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomainSid As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DomainSid { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DomainSid : string" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.DomainSid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.NetBiosName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NetBiosName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NetBiosName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NetBiosName : string" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.NetBiosName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As ForestTrustDomainStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ForestTrustDomainStatus Status { System::DirectoryServices::ActiveDirectory::ForestTrustDomainStatus get(); void set(System::DirectoryServices::ActiveDirectory::ForestTrustDomainStatus value); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.DirectoryServices.ActiveDirectory.ForestTrustDomainStatus with get, set" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

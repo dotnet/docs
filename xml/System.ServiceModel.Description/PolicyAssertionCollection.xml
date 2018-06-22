@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.PolicyAssertionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PolicyAssertionCollection&#xA;Inherits Collection(Of XmlElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PolicyAssertionCollection : System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type PolicyAssertionCollection = class&#xA;    inherit Collection&lt;XmlElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.#ctor(System.Collections.Generic.IEnumerable{System.Xml.XmlElement})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elements As IEnumerable(Of XmlElement))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyAssertionCollection(System::Collections::Generic::IEnumerable&lt;System::Xml::XmlElement ^&gt; ^ elements);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.PolicyAssertionCollection : seq&lt;System.Xml.XmlElement&gt; -&gt; System.ServiceModel.Description.PolicyAssertionCollection" Usage="new System.ServiceModel.Description.PolicyAssertionCollection elements" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.Contains(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (localName As String, namespaceUri As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ localName, System::String ^ namespaceUri);" />
+      <MemberSignature Language="F#" Value="override this.Contains : string * string -&gt; bool" Usage="policyAssertionCollection.Contains (localName, namespaceUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.Find(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (localName As String, namespaceUri As String) As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ Find(System::String ^ localName, System::String ^ namespaceUri);" />
+      <MemberSignature Language="F#" Value="member this.Find : string * string -&gt; System.Xml.XmlElement" Usage="policyAssertionCollection.Find (localName, namespaceUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.FindAll(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (localName As String, namespaceUri As String) As Collection(Of XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ FindAll(System::String ^ localName, System::String ^ namespaceUri);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : string * string -&gt; System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;" Usage="policyAssertionCollection.FindAll (localName, namespaceUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.InsertItem(System.Int32,System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Xml::XmlElement ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Xml.XmlElement -&gt; unit" Usage="policyAssertionCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.Remove(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (localName As String, namespaceUri As String) As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ Remove(System::String ^ localName, System::String ^ namespaceUri);" />
+      <MemberSignature Language="F#" Value="override this.Remove : string * string -&gt; System.Xml.XmlElement" Usage="policyAssertionCollection.Remove (localName, namespaceUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.RemoveAll(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAll (localName As String, namespaceUri As String) As Collection(Of XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ RemoveAll(System::String ^ localName, System::String ^ namespaceUri);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : string * string -&gt; System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;" Usage="policyAssertionCollection.RemoveAll (localName, namespaceUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.SetItem(System.Int32,System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Xml::XmlElement ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Xml.XmlElement -&gt; unit" Usage="policyAssertionCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

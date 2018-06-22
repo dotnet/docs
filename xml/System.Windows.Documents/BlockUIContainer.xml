@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.BlockUIContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class BlockUIContainer&#xA;Inherits Block" />
   <TypeSignature Language="C++ CLI" Value="public ref class BlockUIContainer : System::Windows::Documents::Block" />
+  <TypeSignature Language="F#" Value="type BlockUIContainer = class&#xA;    inherit Block" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement uiElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.BlockUIContainer.#ctor(System.Windows.UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BlockUIContainer(System::Windows::UIElement ^ uiElement);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.BlockUIContainer : System.Windows.UIElement -&gt; System.Windows.Documents.BlockUIContainer" Usage="new System.Windows.Documents.BlockUIContainer uiElement" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.BlockUIContainer.Child" />
       <MemberSignature Language="VB.NET" Value="Public Property Child As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ Child { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Child : System.Windows.UIElement with get, set" Usage="System.Windows.Documents.BlockUIContainer.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

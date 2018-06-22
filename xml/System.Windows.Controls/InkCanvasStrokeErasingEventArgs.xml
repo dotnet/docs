@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokeErasingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InkCanvasStrokeErasingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InkCanvasStrokeErasingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type InkCanvasStrokeErasingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokeErasingEventArgs.Stroke" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stroke As Stroke" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::Stroke ^ Stroke { System::Windows::Ink::Stroke ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Stroke : System.Windows.Ink.Stroke" Usage="System.Windows.Controls.InkCanvasStrokeErasingEventArgs.Stroke" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

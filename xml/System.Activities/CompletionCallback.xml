@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.CompletionCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CompletionCallback(context As NativeActivityContext, completedInstance As ActivityInstance)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CompletionCallback(NativeActivityContext ^ context, ActivityInstance ^ completedInstance);" />
+  <TypeSignature Language="F#" Value="type CompletionCallback = delegate of NativeActivityContext * ActivityInstance -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

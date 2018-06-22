@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompileWorkflowTask&#xA;Inherits Task&#xA;Implements ITask" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompileWorkflowTask sealed : Microsoft::Build::Utilities::Task, Microsoft::Build::Framework::ITask" />
+  <TypeSignature Language="F#" Value="type CompileWorkflowTask = class&#xA;    inherit Task&#xA;    interface ITask" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.BuildingProject" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingProject As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuildingProject { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingProject : bool with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.BuildingProject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.CompilationOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property CompilationOptions As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CompilationOptions { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CompilationOptions : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.CompilationOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.DelaySign" />
       <MemberSignature Language="VB.NET" Value="Public Property DelaySign As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DelaySign { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DelaySign : bool with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.DelaySign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="compileWorkflowTask.Execute " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ITask.Execute</InterfaceMember>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.HostObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ HostObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HostObject : obj" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.HostObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.Imports" />
       <MemberSignature Language="VB.NET" Value="Public Property Imports As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Imports { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Imports : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.Imports" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.KeepTemporaryFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepTemporaryFiles As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeepTemporaryFiles { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeepTemporaryFiles : string" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.KeepTemporaryFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -240,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.KeyContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyContainer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyContainer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyContainer : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.KeyContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -260,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.KeyFile" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFile : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.KeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -287,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.Microsoft#Build#Framework#ITask#HostObject" />
       <MemberSignature Language="VB.NET" Value=" Property HostObject As ITaskHost Implements ITask.HostObject" />
       <MemberSignature Language="C++ CLI" Value="property Microsoft::Build::Framework::ITaskHost ^ Microsoft.Build.Framework.ITask.HostObject { Microsoft::Build::Framework::ITaskHost ^ get(); void set(Microsoft::Build::Framework::ITaskHost ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.Microsoft.Build.Framework.ITask.HostObject" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ITask.HostObject</InterfaceMember>
@@ -310,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.OutputFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ OutputFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.OutputFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -342,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.ProjectDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectDirectory : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.ProjectDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -362,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.ProjectExtension" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectExtension As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectExtension { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectExtension : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.ProjectExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -382,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.ReferenceFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferenceFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ReferenceFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.ReferenceFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -402,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.ResourceFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResourceFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.ResourceFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -422,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.RootNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -442,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.SourceCodeFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceCodeFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SourceCodeFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceCodeFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.SourceCodeFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -462,6 +481,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.TargetFramework" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFramework As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFramework { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFramework : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.TargetFramework" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -482,6 +502,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.TemporaryFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemporaryFiles As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ TemporaryFiles { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemporaryFiles : string[]" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.TemporaryFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -507,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.WorkflowMarkupFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkflowMarkupFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ WorkflowMarkupFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowMarkupFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.WorkflowMarkupFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapExtensionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SoapExtensionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapExtensionAttribute abstract : Attribute" />
+  <TypeSignature Language="F#" Value="type SoapExtensionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapExtensionAttribute.ExtensionType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ExtensionType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ExtensionType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtensionType : Type" Usage="System.Web.Services.Protocols.SoapExtensionAttribute.ExtensionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapExtensionAttribute.Priority" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Priority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Priority { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="System.Web.Services.Protocols.SoapExtensionAttribute.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

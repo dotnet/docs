@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessagingDescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class MessagingDescriptionAttribute&#xA;Inherits DescriptionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessagingDescriptionAttribute : System::ComponentModel::DescriptionAttribute" />
+  <TypeSignature Language="F#" Value="type MessagingDescriptionAttribute = class&#xA;    inherit DescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessagingDescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessagingDescriptionAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessagingDescriptionAttribute : string -&gt; System.Messaging.MessagingDescriptionAttribute" Usage="new System.Messaging.MessagingDescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessagingDescriptionAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Messaging.MessagingDescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.BrowserCapabilitiesCodeGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class BrowserCapabilitiesCodeGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class BrowserCapabilitiesCodeGenerator" />
+  <TypeSignature Language="F#" Value="type BrowserCapabilitiesCodeGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BrowserCapabilitiesCodeGenerator.Create" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Create ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Create();" />
+      <MemberSignature Language="F#" Value="abstract member Create : unit -&gt; unit&#xA;override this.Create : unit -&gt; unit" Usage="browserCapabilitiesCodeGenerator.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BrowserCapabilitiesCodeGenerator.ProcessBrowserFiles(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProcessBrowserFiles (useVirtualPath As Boolean, virtualDir As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ProcessBrowserFiles(bool useVirtualPath, System::String ^ virtualDir);" />
+      <MemberSignature Language="F#" Value="member this.ProcessBrowserFiles : bool * string -&gt; unit" Usage="browserCapabilitiesCodeGenerator.ProcessBrowserFiles (useVirtualPath, virtualDir)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BrowserCapabilitiesCodeGenerator.Uninstall" />
       <MemberSignature Language="VB.NET" Value="Public Function Uninstall () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Uninstall();" />
+      <MemberSignature Language="F#" Value="member this.Uninstall : unit -&gt; bool" Usage="browserCapabilitiesCodeGenerator.Uninstall " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

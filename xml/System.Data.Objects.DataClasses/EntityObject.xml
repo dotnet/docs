@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EntityObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EntityObject&#xA;Inherits StructuralObject&#xA;Implements IEntityWithChangeTracker, IEntityWithKey, IEntityWithRelationships" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityObject abstract : System::Data::Objects::DataClasses::StructuralObject, System::Data::Objects::DataClasses::IEntityWithChangeTracker, System::Data::Objects::DataClasses::IEntityWithKey, System::Data::Objects::DataClasses::IEntityWithRelationships" />
+  <TypeSignature Language="F#" Value="type EntityObject = class&#xA;    inherit StructuralObject&#xA;    interface IEntityWithKey&#xA;    interface IEntityWithChangeTracker&#xA;    interface IEntityWithRelationships" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityObject.EntityKey" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityKey As EntityKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::EntityKey ^ EntityKey { System::Data::EntityKey ^ get(); void set(System::Data::EntityKey ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntityKey : System.Data.EntityKey with get, set" Usage="System.Data.Objects.DataClasses.EntityObject.EntityKey" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Objects.DataClasses.IEntityWithKey.EntityKey</InterfaceMember>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityObject.EntityState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityState As EntityState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::EntityState EntityState { System::Data::EntityState get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityState : System.Data.EntityState" Usage="System.Data.Objects.DataClasses.EntityObject.EntityState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityObject.ReportPropertyChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ReportPropertyChanged (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ReportPropertyChanged(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="override this.ReportPropertyChanged : string -&gt; unit" Usage="entityObject.ReportPropertyChanged property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityObject.ReportPropertyChanging(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ReportPropertyChanging (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ReportPropertyChanging(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="override this.ReportPropertyChanging : string -&gt; unit" Usage="entityObject.ReportPropertyChanging property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -233,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityObject.System#Data#Objects#DataClasses#IEntityWithRelationships#RelationshipManager" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RelationshipManager As RelationshipManager Implements IEntityWithRelationships.RelationshipManager" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::Objects::DataClasses::RelationshipManager ^ System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager { System::Data::Objects::DataClasses::RelationshipManager ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Objects.DataClasses.EntityObject.System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager</InterfaceMember>

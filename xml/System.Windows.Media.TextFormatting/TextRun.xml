@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextRun" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextRun" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextRun abstract" />
+  <TypeSignature Language="F#" Value="type TextRun = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRun.CharacterBufferReference" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CharacterBufferReference As CharacterBufferReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::TextFormatting::CharacterBufferReference CharacterBufferReference { System::Windows::Media::TextFormatting::CharacterBufferReference get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterBufferReference : System.Windows.Media.TextFormatting.CharacterBufferReference" Usage="System.Windows.Media.TextFormatting.TextRun.CharacterBufferReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRun.Length" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextRun.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRun.Properties" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As TextRunProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::TextFormatting::TextRunProperties ^ Properties { System::Windows::Media::TextFormatting::TextRunProperties ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Windows.Media.TextFormatting.TextRunProperties" Usage="System.Windows.Media.TextFormatting.TextRun.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

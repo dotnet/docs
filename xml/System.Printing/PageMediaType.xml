@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PageMediaType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PageMediaType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PageMediaType" />
+  <TypeSignature Language="F#" Value="type PageMediaType = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Archival" />
       <MemberSignature Language="VB.NET" Value="Archival" />
       <MemberSignature Language="C++ CLI" Value="Archival" />
+      <MemberSignature Language="F#" Value="Archival = 2" Usage="System.Printing.PageMediaType.Archival" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.AutoSelect" />
       <MemberSignature Language="VB.NET" Value="AutoSelect" />
       <MemberSignature Language="C++ CLI" Value="AutoSelect" />
+      <MemberSignature Language="F#" Value="AutoSelect = 1" Usage="System.Printing.PageMediaType.AutoSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.BackPrintFilm" />
       <MemberSignature Language="VB.NET" Value="BackPrintFilm" />
       <MemberSignature Language="C++ CLI" Value="BackPrintFilm" />
+      <MemberSignature Language="F#" Value="BackPrintFilm = 3" Usage="System.Printing.PageMediaType.BackPrintFilm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Bond" />
       <MemberSignature Language="VB.NET" Value="Bond" />
       <MemberSignature Language="C++ CLI" Value="Bond" />
+      <MemberSignature Language="F#" Value="Bond = 4" Usage="System.Printing.PageMediaType.Bond" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.CardStock" />
       <MemberSignature Language="VB.NET" Value="CardStock" />
       <MemberSignature Language="C++ CLI" Value="CardStock" />
+      <MemberSignature Language="F#" Value="CardStock = 5" Usage="System.Printing.PageMediaType.CardStock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Continuous" />
       <MemberSignature Language="VB.NET" Value="Continuous" />
       <MemberSignature Language="C++ CLI" Value="Continuous" />
+      <MemberSignature Language="F#" Value="Continuous = 6" Usage="System.Printing.PageMediaType.Continuous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.EnvelopePlain" />
       <MemberSignature Language="VB.NET" Value="EnvelopePlain" />
       <MemberSignature Language="C++ CLI" Value="EnvelopePlain" />
+      <MemberSignature Language="F#" Value="EnvelopePlain = 7" Usage="System.Printing.PageMediaType.EnvelopePlain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -183,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.EnvelopeWindow" />
       <MemberSignature Language="VB.NET" Value="EnvelopeWindow" />
       <MemberSignature Language="C++ CLI" Value="EnvelopeWindow" />
+      <MemberSignature Language="F#" Value="EnvelopeWindow = 8" Usage="System.Printing.PageMediaType.EnvelopeWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -202,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Fabric" />
       <MemberSignature Language="VB.NET" Value="Fabric" />
       <MemberSignature Language="C++ CLI" Value="Fabric" />
+      <MemberSignature Language="F#" Value="Fabric = 9" Usage="System.Printing.PageMediaType.Fabric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -221,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.HighResolution" />
       <MemberSignature Language="VB.NET" Value="HighResolution" />
       <MemberSignature Language="C++ CLI" Value="HighResolution" />
+      <MemberSignature Language="F#" Value="HighResolution = 10" Usage="System.Printing.PageMediaType.HighResolution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -240,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Label" />
       <MemberSignature Language="VB.NET" Value="Label" />
       <MemberSignature Language="C++ CLI" Value="Label" />
+      <MemberSignature Language="F#" Value="Label = 11" Usage="System.Printing.PageMediaType.Label" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -259,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.MultiLayerForm" />
       <MemberSignature Language="VB.NET" Value="MultiLayerForm" />
       <MemberSignature Language="C++ CLI" Value="MultiLayerForm" />
+      <MemberSignature Language="F#" Value="MultiLayerForm = 12" Usage="System.Printing.PageMediaType.MultiLayerForm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -278,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.MultiPartForm" />
       <MemberSignature Language="VB.NET" Value="MultiPartForm" />
       <MemberSignature Language="C++ CLI" Value="MultiPartForm" />
+      <MemberSignature Language="F#" Value="MultiPartForm = 13" Usage="System.Printing.PageMediaType.MultiPartForm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -297,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 29" Usage="System.Printing.PageMediaType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -316,6 +331,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Photographic" />
       <MemberSignature Language="VB.NET" Value="Photographic" />
       <MemberSignature Language="C++ CLI" Value="Photographic" />
+      <MemberSignature Language="F#" Value="Photographic = 14" Usage="System.Printing.PageMediaType.Photographic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -335,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.PhotographicFilm" />
       <MemberSignature Language="VB.NET" Value="PhotographicFilm" />
       <MemberSignature Language="C++ CLI" Value="PhotographicFilm" />
+      <MemberSignature Language="F#" Value="PhotographicFilm = 15" Usage="System.Printing.PageMediaType.PhotographicFilm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -354,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.PhotographicGlossy" />
       <MemberSignature Language="VB.NET" Value="PhotographicGlossy" />
       <MemberSignature Language="C++ CLI" Value="PhotographicGlossy" />
+      <MemberSignature Language="F#" Value="PhotographicGlossy = 16" Usage="System.Printing.PageMediaType.PhotographicGlossy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -373,6 +391,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.PhotographicHighGloss" />
       <MemberSignature Language="VB.NET" Value="PhotographicHighGloss" />
       <MemberSignature Language="C++ CLI" Value="PhotographicHighGloss" />
+      <MemberSignature Language="F#" Value="PhotographicHighGloss = 17" Usage="System.Printing.PageMediaType.PhotographicHighGloss" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -392,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.PhotographicMatte" />
       <MemberSignature Language="VB.NET" Value="PhotographicMatte" />
       <MemberSignature Language="C++ CLI" Value="PhotographicMatte" />
+      <MemberSignature Language="F#" Value="PhotographicMatte = 18" Usage="System.Printing.PageMediaType.PhotographicMatte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -411,6 +431,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.PhotographicSatin" />
       <MemberSignature Language="VB.NET" Value="PhotographicSatin" />
       <MemberSignature Language="C++ CLI" Value="PhotographicSatin" />
+      <MemberSignature Language="F#" Value="PhotographicSatin = 19" Usage="System.Printing.PageMediaType.PhotographicSatin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -430,6 +451,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.PhotographicSemiGloss" />
       <MemberSignature Language="VB.NET" Value="PhotographicSemiGloss" />
       <MemberSignature Language="C++ CLI" Value="PhotographicSemiGloss" />
+      <MemberSignature Language="F#" Value="PhotographicSemiGloss = 20" Usage="System.Printing.PageMediaType.PhotographicSemiGloss" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -449,6 +471,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Plain" />
       <MemberSignature Language="VB.NET" Value="Plain" />
       <MemberSignature Language="C++ CLI" Value="Plain" />
+      <MemberSignature Language="F#" Value="Plain = 21" Usage="System.Printing.PageMediaType.Plain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -468,6 +491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Screen" />
       <MemberSignature Language="VB.NET" Value="Screen" />
       <MemberSignature Language="C++ CLI" Value="Screen" />
+      <MemberSignature Language="F#" Value="Screen = 22" Usage="System.Printing.PageMediaType.Screen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -487,6 +511,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.ScreenPaged" />
       <MemberSignature Language="VB.NET" Value="ScreenPaged" />
       <MemberSignature Language="C++ CLI" Value="ScreenPaged" />
+      <MemberSignature Language="F#" Value="ScreenPaged = 23" Usage="System.Printing.PageMediaType.ScreenPaged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -506,6 +531,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Stationery" />
       <MemberSignature Language="VB.NET" Value="Stationery" />
       <MemberSignature Language="C++ CLI" Value="Stationery" />
+      <MemberSignature Language="F#" Value="Stationery = 24" Usage="System.Printing.PageMediaType.Stationery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -525,6 +551,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.TabStockFull" />
       <MemberSignature Language="VB.NET" Value="TabStockFull" />
       <MemberSignature Language="C++ CLI" Value="TabStockFull" />
+      <MemberSignature Language="F#" Value="TabStockFull = 25" Usage="System.Printing.PageMediaType.TabStockFull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -544,6 +571,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.TabStockPreCut" />
       <MemberSignature Language="VB.NET" Value="TabStockPreCut" />
       <MemberSignature Language="C++ CLI" Value="TabStockPreCut" />
+      <MemberSignature Language="F#" Value="TabStockPreCut = 26" Usage="System.Printing.PageMediaType.TabStockPreCut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -563,6 +591,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Transparency" />
       <MemberSignature Language="VB.NET" Value="Transparency" />
       <MemberSignature Language="C++ CLI" Value="Transparency" />
+      <MemberSignature Language="F#" Value="Transparency = 27" Usage="System.Printing.PageMediaType.Transparency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -582,6 +611,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.TShirtTransfer" />
       <MemberSignature Language="VB.NET" Value="TShirtTransfer" />
       <MemberSignature Language="C++ CLI" Value="TShirtTransfer" />
+      <MemberSignature Language="F#" Value="TShirtTransfer = 28" Usage="System.Printing.PageMediaType.TShirtTransfer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -601,6 +631,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageMediaType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.PageMediaType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

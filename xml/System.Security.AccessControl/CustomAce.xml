@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.CustomAce" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomAce&#xA;Inherits GenericAce" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomAce sealed : System::Security::AccessControl::GenericAce" />
+  <TypeSignature Language="F#" Value="type CustomAce = class&#xA;    inherit GenericAce" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CustomAce.#ctor(System.Security.AccessControl.AceType,System.Security.AccessControl.AceFlags,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As AceType, flags As AceFlags, opaque As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAce(System::Security::AccessControl::AceType type, System::Security::AccessControl::AceFlags flags, cli::array &lt;System::Byte&gt; ^ opaque);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.CustomAce : System.Security.AccessControl.AceType * System.Security.AccessControl.AceFlags * byte[] -&gt; System.Security.AccessControl.CustomAce" Usage="new System.Security.AccessControl.CustomAce (type, flags, opaque)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CustomAce.BinaryLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BinaryLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BinaryLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinaryLength : int" Usage="System.Security.AccessControl.CustomAce.BinaryLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CustomAce.GetBinaryForm(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetBinaryForm (binaryForm As Byte(), offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
+      <MemberSignature Language="F#" Value="override this.GetBinaryForm : byte[] * int -&gt; unit" Usage="customAce.GetBinaryForm (binaryForm, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CustomAce.GetOpaque" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOpaque () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetOpaque();" />
+      <MemberSignature Language="F#" Value="member this.GetOpaque : unit -&gt; byte[]" Usage="customAce.GetOpaque " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.CustomAce.MaxOpaqueLength" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxOpaqueLength As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly int MaxOpaqueLength;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxOpaqueLength : int" Usage="System.Security.AccessControl.CustomAce.MaxOpaqueLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CustomAce.OpaqueLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpaqueLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OpaqueLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpaqueLength : int" Usage="System.Security.AccessControl.CustomAce.OpaqueLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CustomAce.SetOpaque(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOpaque (opaque As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOpaque(cli::array &lt;System::Byte&gt; ^ opaque);" />
+      <MemberSignature Language="F#" Value="member this.SetOpaque : byte[] -&gt; unit" Usage="customAce.SetOpaque opaque" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

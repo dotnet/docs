@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class WSTrustFeb2005ResponseSerializer&#xA;Inherits WSTrustResponseSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSTrustFeb2005ResponseSerializer : System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer" />
+  <TypeSignature Language="F#" Value="type WSTrustFeb2005ResponseSerializer = class&#xA;    inherit WSTrustResponseSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer.CanRead(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRead (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRead(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanRead : System.Xml.XmlReader -&gt; bool" Usage="wSTrustFeb2005ResponseSerializer.CanRead reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer.ReadXml(System.Xml.XmlReader,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadXml (reader As XmlReader, context As WSTrustSerializationContext) As RequestSecurityTokenResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ ReadXml(System::Xml::XmlReader ^ reader, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ReadXml : System.Xml.XmlReader * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" Usage="wSTrustFeb2005ResponseSerializer.ReadXml (reader, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer.ReadXmlElement(System.Xml.XmlReader,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReadXmlElement (reader As XmlReader, rstr As RequestSecurityTokenResponse, context As WSTrustSerializationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadXmlElement(System::Xml::XmlReader ^ reader, System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ rstr, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ReadXmlElement : System.Xml.XmlReader * System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; unit" Usage="wSTrustFeb2005ResponseSerializer.ReadXmlElement (reader, rstr, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer.WriteKnownResponseElement(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.Xml.XmlWriter,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteKnownResponseElement (rstr As RequestSecurityTokenResponse, writer As XmlWriter, context As WSTrustSerializationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteKnownResponseElement(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ rstr, System::Xml::XmlWriter ^ writer, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.WriteKnownResponseElement : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse * System.Xml.XmlWriter * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; unit" Usage="wSTrustFeb2005ResponseSerializer.WriteKnownResponseElement (rstr, writer, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer.WriteXml(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.Xml.XmlWriter,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteXml (response As RequestSecurityTokenResponse, writer As XmlWriter, context As WSTrustSerializationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteXml(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response, System::Xml::XmlWriter ^ writer, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.WriteXml : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse * System.Xml.XmlWriter * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; unit" Usage="wSTrustFeb2005ResponseSerializer.WriteXml (response, writer, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer.WriteXmlElement(System.Xml.XmlWriter,System.String,System.Object,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteXmlElement (writer As XmlWriter, elementName As String, elementValue As Object, rstr As RequestSecurityTokenResponse, context As WSTrustSerializationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteXmlElement(System::Xml::XmlWriter ^ writer, System::String ^ elementName, System::Object ^ elementValue, System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ rstr, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.WriteXmlElement : System.Xml.XmlWriter * string * obj * System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; unit" Usage="wSTrustFeb2005ResponseSerializer.WriteXmlElement (writer, elementName, elementValue, rstr, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

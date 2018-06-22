@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ScriptMethodAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptMethodAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptMethodAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ScriptMethodAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseFormat As ResponseFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Script::Services::ResponseFormat ResponseFormat { System::Web::Script::Services::ResponseFormat get(); void set(System::Web::Script::Services::ResponseFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseFormat : System.Web.Script.Services.ResponseFormat with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet" />
       <MemberSignature Language="VB.NET" Value="Public Property UseHttpGet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseHttpGet { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseHttpGet : bool with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlSerializeString As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool XmlSerializeString { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSerializeString : bool with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

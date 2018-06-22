@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbRowUpdatingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OleDbRowUpdatingEventHandler(sender As Object, e As OleDbRowUpdatingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void OleDbRowUpdatingEventHandler(System::Object ^ sender, OleDbRowUpdatingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type OleDbRowUpdatingEventHandler = delegate of obj * OleDbRowUpdatingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

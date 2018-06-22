@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlWorkflowInstanceStoreBehavior&#xA;Implements IServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlWorkflowInstanceStoreBehavior : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type SqlWorkflowInstanceStoreBehavior = class&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlWorkflowInstanceStoreBehavior(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior : string -&gt; System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior" Usage="new System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase, System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
+      <MemberSignature Language="F#" Value="abstract member AddBindingParameters : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase * System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit&#xA;override this.AddBindingParameters : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase * System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit" Usage="sqlWorkflowInstanceStoreBehavior.AddBindingParameters (serviceDescription, serviceHostBase, endpoints, bindingParameters)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
@@ -110,6 +113,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDispatchBehavior : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.ApplyDispatchBehavior : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit" Usage="sqlWorkflowInstanceStoreBehavior.ApplyDispatchBehavior (serviceDescription, serviceHostBase)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.HostLockRenewalPeriod" />
       <MemberSignature Language="VB.NET" Value="Public Property HostLockRenewalPeriod As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan HostLockRenewalPeriod { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.HostLockRenewalPeriod : TimeSpan with get, set" Usage="System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.HostLockRenewalPeriod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceCompletionAction" />
       <MemberSignature Language="VB.NET" Value="Public Property InstanceCompletionAction As InstanceCompletionAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DurableInstancing::InstanceCompletionAction InstanceCompletionAction { System::Activities::DurableInstancing::InstanceCompletionAction get(); void set(System::Activities::DurableInstancing::InstanceCompletionAction value); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceCompletionAction : System.Activities.DurableInstancing.InstanceCompletionAction with get, set" Usage="System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceCompletionAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceEncodingOption" />
       <MemberSignature Language="VB.NET" Value="Public Property InstanceEncodingOption As InstanceEncodingOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DurableInstancing::InstanceEncodingOption InstanceEncodingOption { System::Activities::DurableInstancing::InstanceEncodingOption get(); void set(System::Activities::DurableInstancing::InstanceEncodingOption value); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceEncodingOption : System.Activities.DurableInstancing.InstanceEncodingOption with get, set" Usage="System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceEncodingOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceLockedExceptionAction" />
       <MemberSignature Language="VB.NET" Value="Public Property InstanceLockedExceptionAction As InstanceLockedExceptionAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DurableInstancing::InstanceLockedExceptionAction InstanceLockedExceptionAction { System::Activities::DurableInstancing::InstanceLockedExceptionAction get(); void set(System::Activities::DurableInstancing::InstanceLockedExceptionAction value); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceLockedExceptionAction : System.Activities.DurableInstancing.InstanceLockedExceptionAction with get, set" Usage="System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceLockedExceptionAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.MaxConnectionRetries" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConnectionRetries As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConnectionRetries { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConnectionRetries : int with get, set" Usage="System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.MaxConnectionRetries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.Promote(System.String,System.Collections.Generic.IEnumerable{System.Xml.Linq.XName},System.Collections.Generic.IEnumerable{System.Xml.Linq.XName})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Promote (name As String, promoteAsSqlVariant As IEnumerable(Of XName), promoteAsBinary As IEnumerable(Of XName))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Promote(System::String ^ name, System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XName ^&gt; ^ promoteAsSqlVariant, System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XName ^&gt; ^ promoteAsBinary);" />
+      <MemberSignature Language="F#" Value="member this.Promote : string * seq&lt;System.Xml.Linq.XName&gt; * seq&lt;System.Xml.Linq.XName&gt; -&gt; unit" Usage="sqlWorkflowInstanceStoreBehavior.Promote (name, promoteAsSqlVariant, promoteAsBinary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -307,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.RunnableInstancesDetectionPeriod" />
       <MemberSignature Language="VB.NET" Value="Public Property RunnableInstancesDetectionPeriod As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RunnableInstancesDetectionPeriod { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.RunnableInstancesDetectionPeriod : TimeSpan with get, set" Usage="System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.RunnableInstancesDetectionPeriod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -326,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.Validate : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit" Usage="sqlWorkflowInstanceStoreBehavior.Validate (serviceDescription, serviceHostBase)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>

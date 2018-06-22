@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionContainer&#xA;Inherits DependencyObject&#xA;Implements INotifyCollectionChanged, IWeakEventListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionContainer : System::Windows::DependencyObject, System::Collections::Specialized::INotifyCollectionChanged, System::Windows::IWeakEventListener" />
+  <TypeSignature Language="F#" Value="type CollectionContainer = class&#xA;    inherit DependencyObject&#xA;    interface INotifyCollectionChanged&#xA;    interface IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionContainer.Collection" />
       <MemberSignature Language="VB.NET" Value="Public Property Collection As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Collection { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Collection : System.Collections.IEnumerable with get, set" Usage="System.Windows.Data.CollectionContainer.Collection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionContainer.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Event CollectionChanged As NotifyCollectionChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionContainer.CollectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CollectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CollectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CollectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionContainer.CollectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionContainer.OnContainedCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContainedCollectionChanged (args As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContainedCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member OnContainedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnContainedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="collectionContainer.OnContainedCollectionChanged args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionContainer.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveWeakEvent : Type * obj * EventArgs -&gt; bool&#xA;override this.ReceiveWeakEvent : Type * obj * EventArgs -&gt; bool" Usage="collectionContainer.ReceiveWeakEvent (managerType, sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionContainer.ShouldSerializeCollection" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeCollection () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeCollection();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeCollection : unit -&gt; bool" Usage="collectionContainer.ShouldSerializeCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

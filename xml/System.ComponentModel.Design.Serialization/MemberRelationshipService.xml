@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.MemberRelationshipService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemberRelationshipService" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberRelationshipService abstract" />
+  <TypeSignature Language="F#" Value="type MemberRelationshipService = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +100,7 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationshipService.GetRelationship(System.ComponentModel.Design.Serialization.MemberRelationship)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetRelationship (source As MemberRelationship) As MemberRelationship" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::Design::Serialization::MemberRelationship GetRelationship(System::ComponentModel::Design::Serialization::MemberRelationship source);" />
+      <MemberSignature Language="F#" Value="abstract member GetRelationship : System.ComponentModel.Design.Serialization.MemberRelationship -&gt; System.ComponentModel.Design.Serialization.MemberRelationship&#xA;override this.GetRelationship : System.ComponentModel.Design.Serialization.MemberRelationship -&gt; System.ComponentModel.Design.Serialization.MemberRelationship" Usage="memberRelationshipService.GetRelationship source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +152,7 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.MemberRelationshipService.Item(System.ComponentModel.Design.Serialization.MemberRelationship)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(source As MemberRelationship) As MemberRelationship" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::MemberRelationship default[System::ComponentModel::Design::Serialization::MemberRelationship] { System::ComponentModel::Design::Serialization::MemberRelationship get(System::ComponentModel::Design::Serialization::MemberRelationship source); void set(System::ComponentModel::Design::Serialization::MemberRelationship source, System::ComponentModel::Design::Serialization::MemberRelationship value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(System.ComponentModel.Design.Serialization.MemberRelationship) : System.ComponentModel.Design.Serialization.MemberRelationship with get, set" Usage="System.ComponentModel.Design.Serialization.MemberRelationshipService.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +198,7 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.MemberRelationshipService.Item(System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(sourceOwner As Object, sourceMember As MemberDescriptor) As MemberRelationship" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::MemberRelationship default[System::Object ^, System::ComponentModel::MemberDescriptor ^] { System::ComponentModel::Design::Serialization::MemberRelationship get(System::Object ^ sourceOwner, System::ComponentModel::MemberDescriptor ^ sourceMember); void set(System::Object ^ sourceOwner, System::ComponentModel::MemberDescriptor ^ sourceMember, System::ComponentModel::Design::Serialization::MemberRelationship value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj * System.ComponentModel.MemberDescriptor) : System.ComponentModel.Design.Serialization.MemberRelationship with get, set" Usage="System.ComponentModel.Design.Serialization.MemberRelationshipService.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +239,7 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationshipService.SetRelationship(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetRelationship (source As MemberRelationship, relationship As MemberRelationship)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetRelationship(System::ComponentModel::Design::Serialization::MemberRelationship source, System::ComponentModel::Design::Serialization::MemberRelationship relationship);" />
+      <MemberSignature Language="F#" Value="abstract member SetRelationship : System.ComponentModel.Design.Serialization.MemberRelationship * System.ComponentModel.Design.Serialization.MemberRelationship -&gt; unit&#xA;override this.SetRelationship : System.ComponentModel.Design.Serialization.MemberRelationship * System.ComponentModel.Design.Serialization.MemberRelationship -&gt; unit" Usage="memberRelationshipService.SetRelationship (source, relationship)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,6 +283,7 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationshipService.SupportsRelationship(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SupportsRelationship (source As MemberRelationship, relationship As MemberRelationship) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool SupportsRelationship(System::ComponentModel::Design::Serialization::MemberRelationship source, System::ComponentModel::Design::Serialization::MemberRelationship relationship);" />
+      <MemberSignature Language="F#" Value="abstract member SupportsRelationship : System.ComponentModel.Design.Serialization.MemberRelationship * System.ComponentModel.Design.Serialization.MemberRelationship -&gt; bool" Usage="memberRelationshipService.SupportsRelationship (source, relationship)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

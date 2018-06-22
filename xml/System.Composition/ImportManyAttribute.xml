@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.ImportManyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ImportManyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImportManyAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type ImportManyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.ImportManyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportManyAttribute(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="new System.Composition.ImportManyAttribute : string -&gt; System.Composition.ImportManyAttribute" Usage="new System.Composition.ImportManyAttribute contractName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.ImportManyAttribute.ContractName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContractName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.Composition.ImportManyAttribute.ContractName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>

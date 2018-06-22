@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIPersistFile" />
   <TypeSignature Language="VB.NET" Value="Public Interface UCOMIPersistFile" />
   <TypeSignature Language="C++ CLI" Value="public interface class UCOMIPersistFile" />
+  <TypeSignature Language="F#" Value="type UCOMIPersistFile = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.GetClassID(System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetClassID (ByRef pClassID As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetClassID([Runtime::InteropServices::Out] Guid % pClassID);" />
+      <MemberSignature Language="F#" Value="abstract member GetClassID :  -&gt; unit" Usage="uCOMIPersistFile.GetClassID pClassID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.GetCurFile(System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetCurFile (ByRef ppszFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCurFile([Runtime::InteropServices::Out] System::String ^ % ppszFileName);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurFile :  -&gt; unit" Usage="uCOMIPersistFile.GetCurFile ppszFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public Function IsDirty () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsDirty();" />
+      <MemberSignature Language="F#" Value="abstract member IsDirty : unit -&gt; int" Usage="uCOMIPersistFile.IsDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.Load(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (pszFileName As String, dwMode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ pszFileName, int dwMode);" />
+      <MemberSignature Language="F#" Value="abstract member Load : string * int -&gt; unit" Usage="uCOMIPersistFile.Load (pszFileName, dwMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.Save(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (pszFileName As String, fRemember As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ pszFileName, bool fRemember);" />
+      <MemberSignature Language="F#" Value="abstract member Save : string * bool -&gt; unit" Usage="uCOMIPersistFile.Save (pszFileName, fRemember)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.SaveCompleted(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveCompleted (pszFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveCompleted(System::String ^ pszFileName);" />
+      <MemberSignature Language="F#" Value="abstract member SaveCompleted : string -&gt; unit" Usage="uCOMIPersistFile.SaveCompleted pszFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

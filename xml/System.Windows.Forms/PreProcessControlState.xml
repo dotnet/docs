@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PreProcessControlState" />
   <TypeSignature Language="VB.NET" Value="Public Enum PreProcessControlState" />
   <TypeSignature Language="C++ CLI" Value="public enum class PreProcessControlState" />
+  <TypeSignature Language="F#" Value="type PreProcessControlState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PreProcessControlState.MessageNeeded" />
       <MemberSignature Language="VB.NET" Value="MessageNeeded" />
       <MemberSignature Language="C++ CLI" Value="MessageNeeded" />
+      <MemberSignature Language="F#" Value="MessageNeeded = 1" Usage="System.Windows.Forms.PreProcessControlState.MessageNeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PreProcessControlState.MessageNotNeeded" />
       <MemberSignature Language="VB.NET" Value="MessageNotNeeded" />
       <MemberSignature Language="C++ CLI" Value="MessageNotNeeded" />
+      <MemberSignature Language="F#" Value="MessageNotNeeded = 2" Usage="System.Windows.Forms.PreProcessControlState.MessageNotNeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PreProcessControlState.MessageProcessed" />
       <MemberSignature Language="VB.NET" Value="MessageProcessed" />
       <MemberSignature Language="C++ CLI" Value="MessageProcessed" />
+      <MemberSignature Language="F#" Value="MessageProcessed = 0" Usage="System.Windows.Forms.PreProcessControlState.MessageProcessed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

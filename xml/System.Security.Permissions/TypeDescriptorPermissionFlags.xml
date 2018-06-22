@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.TypeDescriptorPermissionFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum TypeDescriptorPermissionFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class TypeDescriptorPermissionFlags" />
+  <TypeSignature Language="F#" Value="type TypeDescriptorPermissionFlags = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.TypeDescriptorPermissionFlags.NoFlags" />
       <MemberSignature Language="VB.NET" Value="NoFlags" />
       <MemberSignature Language="C++ CLI" Value="NoFlags" />
+      <MemberSignature Language="F#" Value="NoFlags = 0" Usage="System.Security.Permissions.TypeDescriptorPermissionFlags.NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.TypeDescriptorPermissionFlags.RestrictedRegistrationAccess" />
       <MemberSignature Language="VB.NET" Value="RestrictedRegistrationAccess" />
       <MemberSignature Language="C++ CLI" Value="RestrictedRegistrationAccess" />
+      <MemberSignature Language="F#" Value="RestrictedRegistrationAccess = 1" Usage="System.Security.Permissions.TypeDescriptorPermissionFlags.RestrictedRegistrationAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

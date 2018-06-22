@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateBoldEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DateBoldEventHandler(sender As Object, e As DateBoldEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DateBoldEventHandler(System::Object ^ sender, DateBoldEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DateBoldEventHandler = delegate of obj * DateBoldEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

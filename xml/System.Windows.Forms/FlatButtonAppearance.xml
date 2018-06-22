@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlatButtonAppearance" />
   <TypeSignature Language="VB.NET" Value="Public Class FlatButtonAppearance" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlatButtonAppearance" />
+  <TypeSignature Language="F#" Value="type FlatButtonAppearance = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.BorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.BorderSize" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BorderSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderSize : int with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.BorderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.CheckedBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckedBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CheckedBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckedBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.CheckedBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.MouseDownBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseDownBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color MouseDownBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.MouseDownBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.MouseDownBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.MouseOverBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseOverBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color MouseOverBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.MouseOverBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FlatButtonAppearance.MouseOverBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

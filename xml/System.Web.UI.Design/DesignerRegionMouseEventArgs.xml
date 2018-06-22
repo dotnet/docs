@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerRegionMouseEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerRegionMouseEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerRegionMouseEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type DesignerRegionMouseEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionMouseEventArgs.#ctor(System.Web.UI.Design.DesignerRegion,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (region As DesignerRegion, location As Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerRegionMouseEventArgs(System::Web::UI::Design::DesignerRegion ^ region, System::Drawing::Point location);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.DesignerRegionMouseEventArgs : System.Web.UI.Design.DesignerRegion * System.Drawing.Point -&gt; System.Web.UI.Design.DesignerRegionMouseEventArgs" Usage="new System.Web.UI.Design.DesignerRegionMouseEventArgs (region, location)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionMouseEventArgs.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point" Usage="System.Web.UI.Design.DesignerRegionMouseEventArgs.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionMouseEventArgs.Region" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Region As DesignerRegion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::DesignerRegion ^ Region { System::Web::UI::Design::DesignerRegion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Region : System.Web.UI.Design.DesignerRegion" Usage="System.Web.UI.Design.DesignerRegionMouseEventArgs.Region" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

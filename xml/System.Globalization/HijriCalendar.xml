@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.HijriCalendar" />
   <TypeSignature Language="VB.NET" Value="Public Class HijriCalendar&#xA;Inherits Calendar" />
   <TypeSignature Language="C++ CLI" Value="public ref class HijriCalendar : System::Globalization::Calendar" />
+  <TypeSignature Language="F#" Value="type HijriCalendar = class&#xA;    inherit Calendar" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization.Calendars</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.AddMonths(System.DateTime,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddMonths (time As DateTime, months As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime AddMonths(DateTime time, int months);" />
+      <MemberSignature Language="F#" Value="override this.AddMonths : DateTime * int -&gt; DateTime" Usage="hijriCalendar.AddMonths (time, months)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -194,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.AddYears(System.DateTime,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddYears (time As DateTime, years As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime AddYears(DateTime time, int years);" />
+      <MemberSignature Language="F#" Value="override this.AddYears : DateTime * int -&gt; DateTime" Usage="hijriCalendar.AddYears (time, years)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -268,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.HijriCalendar.AlgorithmType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AlgorithmType As CalendarAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CalendarAlgorithmType AlgorithmType { System::Globalization::CalendarAlgorithmType get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmType : System.Globalization.CalendarAlgorithmType" Usage="System.Globalization.HijriCalendar.AlgorithmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -313,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.HijriCalendar.DaysInYearBeforeMinSupportedYear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DaysInYearBeforeMinSupportedYear As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int DaysInYearBeforeMinSupportedYear { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DaysInYearBeforeMinSupportedYear : int" Usage="System.Globalization.HijriCalendar.DaysInYearBeforeMinSupportedYear" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -350,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.HijriCalendar.Eras" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Eras As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;int&gt; ^ Eras { cli::array &lt;int&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Eras : int[]" Usage="System.Globalization.HijriCalendar.Eras" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -393,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetDayOfMonth(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfMonth (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDayOfMonth(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetDayOfMonth : DateTime -&gt; int" Usage="hijriCalendar.GetDayOfMonth time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -449,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetDayOfWeek(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfWeek (time As DateTime) As DayOfWeek" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DayOfWeek GetDayOfWeek(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetDayOfWeek : DateTime -&gt; DayOfWeek" Usage="hijriCalendar.GetDayOfWeek time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -521,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetDayOfYear(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfYear (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDayOfYear(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetDayOfYear : DateTime -&gt; int" Usage="hijriCalendar.GetDayOfYear time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -582,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDaysInMonth (year As Integer, month As Integer, era As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDaysInMonth(int year, int month, int era);" />
+      <MemberSignature Language="F#" Value="override this.GetDaysInMonth : int * int * int -&gt; int" Usage="hijriCalendar.GetDaysInMonth (year, month, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -655,6 +665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetDaysInYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDaysInYear (year As Integer, era As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDaysInYear(int year, int era);" />
+      <MemberSignature Language="F#" Value="override this.GetDaysInYear : int * int -&gt; int" Usage="hijriCalendar.GetDaysInYear (year, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -713,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetEra(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEra (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetEra(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetEra : DateTime -&gt; int" Usage="hijriCalendar.GetEra time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -781,6 +793,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetLeapMonth(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLeapMonth (year As Integer, era As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetLeapMonth(int year, int era);" />
+      <MemberSignature Language="F#" Value="override this.GetLeapMonth : int * int -&gt; int" Usage="hijriCalendar.GetLeapMonth (year, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -839,6 +852,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetMonth(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMonth (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMonth(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetMonth : DateTime -&gt; int" Usage="hijriCalendar.GetMonth time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -899,6 +913,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMonthsInYear (year As Integer, era As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMonthsInYear(int year, int era);" />
+      <MemberSignature Language="F#" Value="override this.GetMonthsInYear : int * int -&gt; int" Usage="hijriCalendar.GetMonthsInYear (year, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -961,6 +976,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.GetYear(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetYear (time As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetYear(DateTime time);" />
+      <MemberSignature Language="F#" Value="override this.GetYear : DateTime -&gt; int" Usage="hijriCalendar.GetYear time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1021,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.HijriCalendar.HijriAdjustment" />
       <MemberSignature Language="VB.NET" Value="Public Property HijriAdjustment As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HijriAdjustment { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HijriAdjustment : int with get, set" Usage="System.Globalization.HijriCalendar.HijriAdjustment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1077,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.HijriCalendar.HijriEra" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HijriEra As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly int HijriEra;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HijriEra : int" Usage="System.Globalization.HijriCalendar.HijriEra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1117,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapDay (year As Integer, month As Integer, day As Integer, era As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapDay(int year, int month, int day, int era);" />
+      <MemberSignature Language="F#" Value="override this.IsLeapDay : int * int * int * int -&gt; bool" Usage="hijriCalendar.IsLeapDay (year, month, day, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1201,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapMonth (year As Integer, month As Integer, era As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapMonth(int year, int month, int era);" />
+      <MemberSignature Language="F#" Value="override this.IsLeapMonth : int * int * int -&gt; bool" Usage="hijriCalendar.IsLeapMonth (year, month, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1277,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.IsLeapYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapYear (year As Integer, era As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapYear(int year, int era);" />
+      <MemberSignature Language="F#" Value="override this.IsLeapYear : int * int -&gt; bool" Usage="hijriCalendar.IsLeapYear (year, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1345,6 +1366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.HijriCalendar.MaxSupportedDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxSupportedDateTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MaxSupportedDateTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxSupportedDateTime : DateTime" Usage="System.Globalization.HijriCalendar.MaxSupportedDateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1400,6 +1422,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.HijriCalendar.MinSupportedDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinSupportedDateTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MinSupportedDateTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinSupportedDateTime : DateTime" Usage="System.Globalization.HijriCalendar.MinSupportedDateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1455,6 +1478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToDateTime (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer, era As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime ToDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, int era);" />
+      <MemberSignature Language="F#" Value="override this.ToDateTime : int * int * int * int * int * int * int * int -&gt; DateTime" Usage="hijriCalendar.ToDateTime (year, month, day, hour, minute, second, millisecond, era)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1543,6 +1567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.HijriCalendar.ToFourDigitYear(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToFourDigitYear (year As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ToFourDigitYear(int year);" />
+      <MemberSignature Language="F#" Value="override this.ToFourDigitYear : int -&gt; int" Usage="hijriCalendar.ToFourDigitYear year" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1593,6 +1618,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.HijriCalendar.TwoDigitYearMax" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property TwoDigitYearMax As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TwoDigitYearMax { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TwoDigitYearMax : int with get, set" Usage="System.Globalization.HijriCalendar.TwoDigitYearMax" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>

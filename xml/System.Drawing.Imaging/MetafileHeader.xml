@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.MetafileHeader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetafileHeader" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetafileHeader sealed" />
+  <TypeSignature Language="F#" Value="type MetafileHeader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Drawing.Imaging.MetafileHeader.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.DpiX" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DpiX As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DpiX { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.DpiX : single" Usage="System.Drawing.Imaging.MetafileHeader.DpiX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.DpiY" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DpiY As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DpiY { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.DpiY : single" Usage="System.Drawing.Imaging.MetafileHeader.DpiY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.EmfPlusHeaderSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmfPlusHeaderSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EmfPlusHeaderSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmfPlusHeaderSize : int" Usage="System.Drawing.Imaging.MetafileHeader.EmfPlusHeaderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetafileHeader.IsDisplay" />
       <MemberSignature Language="VB.NET" Value="Public Function IsDisplay () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDisplay();" />
+      <MemberSignature Language="F#" Value="member this.IsDisplay : unit -&gt; bool" Usage="metafileHeader.IsDisplay " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetafileHeader.IsEmf" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEmf () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEmf();" />
+      <MemberSignature Language="F#" Value="member this.IsEmf : unit -&gt; bool" Usage="metafileHeader.IsEmf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetafileHeader.IsEmfOrEmfPlus" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEmfOrEmfPlus () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEmfOrEmfPlus();" />
+      <MemberSignature Language="F#" Value="member this.IsEmfOrEmfPlus : unit -&gt; bool" Usage="metafileHeader.IsEmfOrEmfPlus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -169,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetafileHeader.IsEmfPlus" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEmfPlus () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEmfPlus();" />
+      <MemberSignature Language="F#" Value="member this.IsEmfPlus : unit -&gt; bool" Usage="metafileHeader.IsEmfPlus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -191,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetafileHeader.IsEmfPlusDual" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEmfPlusDual () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEmfPlusDual();" />
+      <MemberSignature Language="F#" Value="member this.IsEmfPlusDual : unit -&gt; bool" Usage="metafileHeader.IsEmfPlusDual " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -213,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetafileHeader.IsEmfPlusOnly" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEmfPlusOnly () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEmfPlusOnly();" />
+      <MemberSignature Language="F#" Value="member this.IsEmfPlusOnly : unit -&gt; bool" Usage="metafileHeader.IsEmfPlusOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -235,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetafileHeader.IsWmf" />
       <MemberSignature Language="VB.NET" Value="Public Function IsWmf () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsWmf();" />
+      <MemberSignature Language="F#" Value="member this.IsWmf : unit -&gt; bool" Usage="metafileHeader.IsWmf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -257,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.MetafileHeader.IsWmfPlaceable" />
       <MemberSignature Language="VB.NET" Value="Public Function IsWmfPlaceable () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsWmfPlaceable();" />
+      <MemberSignature Language="F#" Value="member this.IsWmfPlaceable : unit -&gt; bool" Usage="metafileHeader.IsWmfPlaceable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -279,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.LogicalDpiX" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalDpiX As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LogicalDpiX { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalDpiX : int" Usage="System.Drawing.Imaging.MetafileHeader.LogicalDpiX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -299,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.LogicalDpiY" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalDpiY As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LogicalDpiY { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalDpiY : int" Usage="System.Drawing.Imaging.MetafileHeader.LogicalDpiY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -319,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.MetafileSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetafileSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MetafileSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetafileSize : int" Usage="System.Drawing.Imaging.MetafileHeader.MetafileSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -339,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MetafileType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::MetafileType Type { System::Drawing::Imaging::MetafileType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Drawing.Imaging.MetafileType" Usage="System.Drawing.Imaging.MetafileHeader.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -359,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Drawing.Imaging.MetafileHeader.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -379,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetafileHeader.WmfHeader" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WmfHeader As MetaHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::MetaHeader ^ WmfHeader { System::Drawing::Imaging::MetaHeader ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WmfHeader : System.Drawing.Imaging.MetaHeader" Usage="System.Drawing.Imaging.MetafileHeader.WmfHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

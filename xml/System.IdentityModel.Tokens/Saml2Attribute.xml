@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Attribute" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2Attribute" />
+  <TypeSignature Language="F#" Value="type Saml2Attribute = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Attribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Attribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Attribute : string -&gt; System.IdentityModel.Tokens.Saml2Attribute" Usage="new System.IdentityModel.Tokens.Saml2Attribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Attribute.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, values As IEnumerable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Attribute(System::String ^ name, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Attribute : string * seq&lt;string&gt; -&gt; System.IdentityModel.Tokens.Saml2Attribute" Usage="new System.IdentityModel.Tokens.Saml2Attribute (name, values)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Attribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Attribute(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Attribute : string * string -&gt; System.IdentityModel.Tokens.Saml2Attribute" Usage="new System.IdentityModel.Tokens.Saml2Attribute (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.AttributeValueXsiType" />
       <MemberSignature Language="VB.NET" Value="Public Property AttributeValueXsiType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeValueXsiType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeValueXsiType : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.AttributeValueXsiType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public Property FriendlyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.FriendlyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.NameFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property NameFormat As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ NameFormat { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NameFormat : Uri with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.NameFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.OriginalIssuer" />
       <MemberSignature Language="VB.NET" Value="Public Property OriginalIssuer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OriginalIssuer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalIssuer : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Attribute.OriginalIssuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -253,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Attribute.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ Values { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.IdentityModel.Tokens.Saml2Attribute.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class StylusPointProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusPointProperty" />
+  <TypeSignature Language="F#" Value="type StylusPointProperty = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointProperty stylusPointProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointProperty.#ctor(System.Windows.Input.StylusPointProperty)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; StylusPointProperty(System::Windows::Input::StylusPointProperty ^ stylusPointProperty);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.StylusPointProperty : System.Windows.Input.StylusPointProperty -&gt; System.Windows.Input.StylusPointProperty" Usage="new System.Windows.Input.StylusPointProperty stylusPointProperty" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointProperty.#ctor(System.Guid,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identifier As Guid, isButton As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointProperty(Guid identifier, bool isButton);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.StylusPointProperty : Guid * bool -&gt; System.Windows.Input.StylusPointProperty" Usage="new System.Windows.Input.StylusPointProperty (identifier, isButton)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointProperty.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Windows.Input.StylusPointProperty.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointProperty.IsButton" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsButton { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsButton : bool" Usage="System.Windows.Input.StylusPointProperty.IsButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointProperty.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stylusPointProperty.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

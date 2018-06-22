@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignTimeVisibleAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignTimeVisibleAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignTimeVisibleAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DesignTimeVisibleAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visible As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignTimeVisibleAttribute(bool visible);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignTimeVisibleAttribute : bool -&gt; System.ComponentModel.DesignTimeVisibleAttribute" Usage="new System.ComponentModel.DesignTimeVisibleAttribute visible" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignTimeVisibleAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DesignTimeVisibleAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignTimeVisibleAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DesignTimeVisibleAttribute" Usage="System.ComponentModel.DesignTimeVisibleAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="designTimeVisibleAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="designTimeVisibleAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="designTimeVisibleAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignTimeVisibleAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As DesignTimeVisibleAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignTimeVisibleAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.DesignTimeVisibleAttribute" Usage="System.ComponentModel.DesignTimeVisibleAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignTimeVisibleAttribute.Visible" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool" Usage="System.ComponentModel.DesignTimeVisibleAttribute.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignTimeVisibleAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As DesignTimeVisibleAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignTimeVisibleAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.DesignTimeVisibleAttribute" Usage="System.ComponentModel.DesignTimeVisibleAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

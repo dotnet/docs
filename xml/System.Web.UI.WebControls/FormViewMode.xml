@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormViewMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class FormViewMode" />
+  <TypeSignature Language="F#" Value="type FormViewMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FormViewMode.Edit" />
       <MemberSignature Language="VB.NET" Value="Edit" />
       <MemberSignature Language="C++ CLI" Value="Edit" />
+      <MemberSignature Language="F#" Value="Edit = 1" Usage="System.Web.UI.WebControls.FormViewMode.Edit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FormViewMode.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 2" Usage="System.Web.UI.WebControls.FormViewMode.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FormViewMode.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="ReadOnly" />
       <MemberSignature Language="C++ CLI" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 0" Usage="System.Web.UI.WebControls.FormViewMode.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

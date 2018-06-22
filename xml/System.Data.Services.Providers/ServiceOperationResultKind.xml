@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ServiceOperationResultKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum ServiceOperationResultKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class ServiceOperationResultKind" />
+  <TypeSignature Language="F#" Value="type ServiceOperationResultKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ServiceOperationResultKind.DirectValue" />
       <MemberSignature Language="VB.NET" Value="DirectValue" />
       <MemberSignature Language="C++ CLI" Value="DirectValue" />
+      <MemberSignature Language="F#" Value="DirectValue = 0" Usage="System.Data.Services.Providers.ServiceOperationResultKind.DirectValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ServiceOperationResultKind.Enumeration" />
       <MemberSignature Language="VB.NET" Value="Enumeration" />
       <MemberSignature Language="C++ CLI" Value="Enumeration" />
+      <MemberSignature Language="F#" Value="Enumeration = 1" Usage="System.Data.Services.Providers.ServiceOperationResultKind.Enumeration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ServiceOperationResultKind.QueryWithMultipleResults" />
       <MemberSignature Language="VB.NET" Value="QueryWithMultipleResults" />
       <MemberSignature Language="C++ CLI" Value="QueryWithMultipleResults" />
+      <MemberSignature Language="F#" Value="QueryWithMultipleResults = 2" Usage="System.Data.Services.Providers.ServiceOperationResultKind.QueryWithMultipleResults" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ServiceOperationResultKind.QueryWithSingleResult" />
       <MemberSignature Language="VB.NET" Value="QueryWithSingleResult" />
       <MemberSignature Language="C++ CLI" Value="QueryWithSingleResult" />
+      <MemberSignature Language="F#" Value="QueryWithSingleResult = 3" Usage="System.Data.Services.Providers.ServiceOperationResultKind.QueryWithSingleResult" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ServiceOperationResultKind.Void" />
       <MemberSignature Language="VB.NET" Value="Void" />
       <MemberSignature Language="C++ CLI" Value="Void" />
+      <MemberSignature Language="F#" Value="Void = 4" Usage="System.Data.Services.Providers.ServiceOperationResultKind.Void" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

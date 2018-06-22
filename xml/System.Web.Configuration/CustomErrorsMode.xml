@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorsMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CustomErrorsMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CustomErrorsMode" />
+  <TypeSignature Language="F#" Value="type CustomErrorsMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 2" Usage="System.Web.Configuration.CustomErrorsMode.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.On" />
       <MemberSignature Language="VB.NET" Value="On" />
       <MemberSignature Language="C++ CLI" Value="On" />
+      <MemberSignature Language="F#" Value="On = 1" Usage="System.Web.Configuration.CustomErrorsMode.On" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.RemoteOnly" />
       <MemberSignature Language="VB.NET" Value="RemoteOnly" />
       <MemberSignature Language="C++ CLI" Value="RemoteOnly" />
+      <MemberSignature Language="F#" Value="RemoteOnly = 0" Usage="System.Web.Configuration.CustomErrorsMode.RemoteOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

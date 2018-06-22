@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ISite2" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISite2" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISite2" />
+  <TypeSignature Language="F#" Value="type ISite2 = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ISite2.GetParentChain(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentChain (obj As Object) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetParentChain(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member GetParentChain : obj -&gt; obj[]" Usage="iSite2.GetParentChain obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

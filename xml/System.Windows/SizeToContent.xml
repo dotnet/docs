@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SizeToContent" />
   <TypeSignature Language="VB.NET" Value="Public Enum SizeToContent" />
   <TypeSignature Language="C++ CLI" Value="public enum class SizeToContent" />
+  <TypeSignature Language="F#" Value="type SizeToContent = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.SizeToContent.Height" />
       <MemberSignature Language="VB.NET" Value="Height" />
       <MemberSignature Language="C++ CLI" Value="Height" />
+      <MemberSignature Language="F#" Value="Height = 2" Usage="System.Windows.SizeToContent.Height" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.SizeToContent.Manual" />
       <MemberSignature Language="VB.NET" Value="Manual" />
       <MemberSignature Language="C++ CLI" Value="Manual" />
+      <MemberSignature Language="F#" Value="Manual = 0" Usage="System.Windows.SizeToContent.Manual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.SizeToContent.Width" />
       <MemberSignature Language="VB.NET" Value="Width" />
       <MemberSignature Language="C++ CLI" Value="Width" />
+      <MemberSignature Language="F#" Value="Width = 1" Usage="System.Windows.SizeToContent.Width" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.SizeToContent.WidthAndHeight" />
       <MemberSignature Language="VB.NET" Value="WidthAndHeight" />
       <MemberSignature Language="C++ CLI" Value="WidthAndHeight" />
+      <MemberSignature Language="F#" Value="WidthAndHeight = 3" Usage="System.Windows.SizeToContent.WidthAndHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

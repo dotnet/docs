@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityKeyMember" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityKeyMember" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityKeyMember" />
+  <TypeSignature Language="F#" Value="type EntityKeyMember = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKeyMember.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyName As String, keyValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityKeyMember(System::String ^ keyName, System::Object ^ keyValue);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityKeyMember : string * obj -&gt; System.Data.EntityKeyMember" Usage="new System.Data.EntityKeyMember (keyName, keyValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityKeyMember.Key" />
       <MemberSignature Language="VB.NET" Value="Public Property Key As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : string with get, set" Usage="System.Data.EntityKeyMember.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKeyMember.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="entityKeyMember.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityKeyMember.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Data.EntityKeyMember.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

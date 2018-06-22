@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.FileDialog" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FileDialog&#xA;Inherits CommonDialog" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileDialog abstract : Microsoft::Win32::CommonDialog" />
+  <TypeSignature Language="F#" Value="type FileDialog = class&#xA;    inherit CommonDialog" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.AddExtension" />
       <MemberSignature Language="VB.NET" Value="Public Property AddExtension As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AddExtension { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AddExtension : bool with get, set" Usage="Microsoft.Win32.FileDialog.AddExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.CheckFileExists" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CheckFileExists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CheckFileExists { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckFileExists : bool with get, set" Usage="Microsoft.Win32.FileDialog.CheckFileExists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.CheckPathExists" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckPathExists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckPathExists { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckPathExists : bool with get, set" Usage="Microsoft.Win32.FileDialog.CheckPathExists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.CustomPlaces" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomPlaces As IList(Of FileDialogCustomPlace)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Win32::FileDialogCustomPlace ^&gt; ^ CustomPlaces { System::Collections::Generic::IList&lt;Microsoft::Win32::FileDialogCustomPlace ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Win32::FileDialogCustomPlace ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomPlaces : System.Collections.Generic.IList&lt;Microsoft.Win32.FileDialogCustomPlace&gt; with get, set" Usage="Microsoft.Win32.FileDialog.CustomPlaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.DefaultExt" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultExt As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultExt { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultExt : string with get, set" Usage="Microsoft.Win32.FileDialog.DefaultExt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.DereferenceLinks" />
       <MemberSignature Language="VB.NET" Value="Public Property DereferenceLinks As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DereferenceLinks { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DereferenceLinks : bool with get, set" Usage="Microsoft.Win32.FileDialog.DereferenceLinks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="Microsoft.Win32.FileDialog.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -264,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.FileNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ FileNames { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileNames : string[]" Usage="Microsoft.Win32.FileDialog.FileNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.FileDialog.FileOk" />
       <MemberSignature Language="VB.NET" Value="Public Event FileOk As CancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ FileOk;" />
+      <MemberSignature Language="F#" Value="member this.FileOk : System.ComponentModel.CancelEventHandler " Usage="member this.FileOk : System.ComponentModel.CancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -317,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="Microsoft.Win32.FileDialog.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -442,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.FilterIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilterIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterIndex : int with get, set" Usage="Microsoft.Win32.FileDialog.FilterIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -469,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HookProc (hwnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IntPtr HookProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam);" />
+      <MemberSignature Language="F#" Value="override this.HookProc : nativeint * int * nativeint * nativeint -&gt; nativeint" Usage="fileDialog.HookProc (hwnd, msg, wParam, lParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -504,6 +517,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.InitialDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitialDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialDirectory : string with get, set" Usage="Microsoft.Win32.FileDialog.InitialDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -537,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.OnFileOk(System.ComponentModel.CancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnFileOk (e As CancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnFileOk(System::ComponentModel::CancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnFileOk : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="fileDialog.OnFileOk e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -569,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.Options" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Options As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Options { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Options : int" Usage="Microsoft.Win32.FileDialog.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -596,6 +612,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="fileDialog.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -625,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.RestoreDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property RestoreDirectory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RestoreDirectory { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RestoreDirectory : bool with get, set" Usage="Microsoft.Win32.FileDialog.RestoreDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -650,6 +668,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.RunDialog(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RunDialog (hwndOwner As IntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool RunDialog(IntPtr hwndOwner);" />
+      <MemberSignature Language="F#" Value="override this.RunDialog : nativeint -&gt; bool" Usage="fileDialog.RunDialog hwndOwner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -688,6 +707,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.SafeFileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SafeFileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SafeFileName : string" Usage="Microsoft.Win32.FileDialog.SafeFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -724,6 +744,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.SafeFileNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeFileNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ SafeFileNames { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SafeFileNames : string[]" Usage="Microsoft.Win32.FileDialog.SafeFileNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -756,6 +777,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Win32.FileDialog.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -789,6 +811,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileDialog.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -810,6 +833,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.ValidateNames" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateNames As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateNames { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateNames : bool with get, set" Usage="Microsoft.Win32.FileDialog.ValidateNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientSponsor&#xA;Inherits MarshalByRefObject&#xA;Implements ISponsor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientSponsor : MarshalByRefObject, System::Runtime::Remoting::Lifetime::ISponsor" />
+  <TypeSignature Language="F#" Value="type ClientSponsor = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISponsor" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (renewalTime As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientSponsor(TimeSpan renewalTime);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Lifetime.ClientSponsor : TimeSpan -&gt; System.Runtime.Remoting.Lifetime.ClientSponsor" Usage="new System.Runtime.Remoting.Lifetime.ClientSponsor renewalTime" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="clientSponsor.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ClientSponsor ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="clientSponsor.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="clientSponsor.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Register(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Register (obj As MarshalByRefObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Register(MarshalByRefObject ^ obj);" />
+      <MemberSignature Language="F#" Value="member this.Register : MarshalByRefObject -&gt; bool" Usage="clientSponsor.Register obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)" />
       <MemberSignature Language="VB.NET" Value="Public Function Renewal (lease As ILease) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TimeSpan Renewal(System::Runtime::Remoting::Lifetime::ILease ^ lease);" />
+      <MemberSignature Language="F#" Value="abstract member Renewal : System.Runtime.Remoting.Lifetime.ILease -&gt; TimeSpan&#xA;override this.Renewal : System.Runtime.Remoting.Lifetime.ILease -&gt; TimeSpan" Usage="clientSponsor.Renewal lease" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Lifetime.ISponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)</InterfaceMember>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Lifetime.ClientSponsor.RenewalTime" />
       <MemberSignature Language="VB.NET" Value="Public Property RenewalTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RenewalTime { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.RenewalTime : TimeSpan with get, set" Usage="System.Runtime.Remoting.Lifetime.ClientSponsor.RenewalTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Unregister(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unregister (obj As MarshalByRefObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unregister(MarshalByRefObject ^ obj);" />
+      <MemberSignature Language="F#" Value="member this.Unregister : MarshalByRefObject -&gt; unit" Usage="clientSponsor.Unregister obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

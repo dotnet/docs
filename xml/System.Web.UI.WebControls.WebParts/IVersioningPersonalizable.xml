@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IVersioningPersonalizable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVersioningPersonalizable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IVersioningPersonalizable" />
+  <TypeSignature Language="F#" Value="type IVersioningPersonalizable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IVersioningPersonalizable.Load(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (unknownProperties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Collections::IDictionary ^ unknownProperties);" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Collections.IDictionary -&gt; unit" Usage="iVersioningPersonalizable.Load unknownProperties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

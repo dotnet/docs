@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InputLanguageChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputLanguageChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type InputLanguageChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguageChangedEventArgs.#ctor(System.Globalization.CultureInfo,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (culture As CultureInfo, charSet As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InputLanguageChangedEventArgs(System::Globalization::CultureInfo ^ culture, System::Byte charSet);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.InputLanguageChangedEventArgs : System.Globalization.CultureInfo * byte -&gt; System.Windows.Forms.InputLanguageChangedEventArgs" Usage="new System.Windows.Forms.InputLanguageChangedEventArgs (culture, charSet)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.InputLanguage inputLanguage, unsigned int8 charSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguageChangedEventArgs.#ctor(System.Windows.Forms.InputLanguage,System.Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InputLanguageChangedEventArgs(System::Windows::Forms::InputLanguage ^ inputLanguage, System::Byte charSet);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.InputLanguageChangedEventArgs : System.Windows.Forms.InputLanguage * byte -&gt; System.Windows.Forms.InputLanguageChangedEventArgs" Usage="new System.Windows.Forms.InputLanguageChangedEventArgs (inputLanguage, charSet)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguageChangedEventArgs.CharSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharSet As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte CharSet { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharSet : byte" Usage="System.Windows.Forms.InputLanguageChangedEventArgs.CharSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -233,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguageChangedEventArgs.Culture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo" Usage="System.Windows.Forms.InputLanguageChangedEventArgs.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -271,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguageChangedEventArgs.InputLanguage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputLanguage As InputLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::InputLanguage ^ InputLanguage { System::Windows::Forms::InputLanguage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputLanguage : System.Windows.Forms.InputLanguage" Usage="System.Windows.Forms.InputLanguageChangedEventArgs.InputLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

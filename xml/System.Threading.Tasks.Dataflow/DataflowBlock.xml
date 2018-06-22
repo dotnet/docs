@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.DataflowBlock" />
   <TypeSignature Language="VB.NET" Value="Public Module DataflowBlock" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataflowBlock abstract sealed" />
+  <TypeSignature Language="F#" Value="type DataflowBlock = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.AsObservable``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsObservable(Of TOutput) (source As ISourceBlock(Of TOutput)) As IObservable(Of TOutput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IObservable&lt;TOutput&gt; ^ AsObservable(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member AsObservable : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; -&gt; IObservable&lt;'Output&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.AsObservable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsObserver(Of TInput) (target As ITargetBlock(Of TInput)) As IObserver(Of TInput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TInput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IObserver&lt;TInput&gt; ^ AsObserver(System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt; ^ target);" />
+      <MemberSignature Language="F#" Value="static member AsObserver : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Input&gt; -&gt; IObserver&lt;'Input&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Function Choose(Of T1, T2) (source1 As ISourceBlock(Of T1), action1 As Action(Of T1), source2 As ISourceBlock(Of T2), action2 As Action(Of T2)) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2&gt;&#xA; static System::Threading::Tasks::Task&lt;int&gt; ^ Choose(System::Threading::Tasks::Dataflow::ISourceBlock&lt;T1&gt; ^ source1, Action&lt;T1&gt; ^ action1, System::Threading::Tasks::Dataflow::ISourceBlock&lt;T2&gt; ^ source2, Action&lt;T2&gt; ^ action2);" />
+      <MemberSignature Language="F#" Value="static member Choose : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T1&gt; * Action&lt;'T1&gt; * System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T2&gt; * Action&lt;'T2&gt; -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Choose (source1, action1, source2, action2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; Choose&lt;T1, T2&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T1&gt; source1, class System.Action`1&lt;!!T1&gt; action1, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T2&gt; source2, class System.Action`1&lt;!!T2&gt; action2, class System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.DataflowBlockOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2&gt;&#xA; static System::Threading::Tasks::Task&lt;int&gt; ^ Choose(System::Threading::Tasks::Dataflow::ISourceBlock&lt;T1&gt; ^ source1, Action&lt;T1&gt; ^ action1, System::Threading::Tasks::Dataflow::ISourceBlock&lt;T2&gt; ^ source2, Action&lt;T2&gt; ^ action2, System::Threading::Tasks::Dataflow::DataflowBlockOptions ^ dataflowBlockOptions);" />
+      <MemberSignature Language="F#" Value="static member Choose : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T1&gt; * Action&lt;'T1&gt; * System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T2&gt; * Action&lt;'T2&gt; * System.Threading.Tasks.Dataflow.DataflowBlockOptions -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Choose (source1, action1, source2, action2, dataflowBlockOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2})" />
       <MemberSignature Language="VB.NET" Value="Public Function Choose(Of T1, T2, T3) (source1 As ISourceBlock(Of T1), action1 As Action(Of T1), source2 As ISourceBlock(Of T2), action2 As Action(Of T2), source3 As ISourceBlock(Of T3), action3 As Action(Of T3)) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3&gt;&#xA; static System::Threading::Tasks::Task&lt;int&gt; ^ Choose(System::Threading::Tasks::Dataflow::ISourceBlock&lt;T1&gt; ^ source1, Action&lt;T1&gt; ^ action1, System::Threading::Tasks::Dataflow::ISourceBlock&lt;T2&gt; ^ source2, Action&lt;T2&gt; ^ action2, System::Threading::Tasks::Dataflow::ISourceBlock&lt;T3&gt; ^ source3, Action&lt;T3&gt; ^ action3);" />
+      <MemberSignature Language="F#" Value="static member Choose : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T1&gt; * Action&lt;'T1&gt; * System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T2&gt; * Action&lt;'T2&gt; * System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T3&gt; * Action&lt;'T3&gt; -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Choose (source1, action1, source2, action2, source3, action3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -274,6 +280,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; Choose&lt;T1, T2, T3&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T1&gt; source1, class System.Action`1&lt;!!T1&gt; action1, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T2&gt; source2, class System.Action`1&lt;!!T2&gt; action2, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T3&gt; source3, class System.Action`1&lt;!!T3&gt; action3, class System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2},System.Threading.Tasks.Dataflow.DataflowBlockOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3&gt;&#xA; static System::Threading::Tasks::Task&lt;int&gt; ^ Choose(System::Threading::Tasks::Dataflow::ISourceBlock&lt;T1&gt; ^ source1, Action&lt;T1&gt; ^ action1, System::Threading::Tasks::Dataflow::ISourceBlock&lt;T2&gt; ^ source2, Action&lt;T2&gt; ^ action2, System::Threading::Tasks::Dataflow::ISourceBlock&lt;T3&gt; ^ source3, Action&lt;T3&gt; ^ action3, System::Threading::Tasks::Dataflow::DataflowBlockOptions ^ dataflowBlockOptions);" />
+      <MemberSignature Language="F#" Value="static member Choose : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T1&gt; * Action&lt;'T1&gt; * System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T2&gt; * Action&lt;'T2&gt; * System.Threading.Tasks.Dataflow.ISourceBlock&lt;'T3&gt; * Action&lt;'T3&gt; * System.Threading.Tasks.Dataflow.DataflowBlockOptions -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Choose (source1, action1, source2, action2, source3, action3, dataflowBlockOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -348,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate``2(System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Function Encapsulate(Of TInput, TOutput) (target As ITargetBlock(Of TInput), source As ISourceBlock(Of TOutput)) As IPropagatorBlock(Of TInput, TOutput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TInput, typename TOutput&gt;&#xA; static System::Threading::Tasks::Dataflow::IPropagatorBlock&lt;TInput, TOutput&gt; ^ Encapsulate(System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt; ^ target, System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Encapsulate : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Input&gt; * System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; -&gt; System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;'Input, 'Output&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate (target, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -406,6 +414,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LinkTo(Of TOutput) (source As ISourceBlock(Of TOutput), target As ITargetBlock(Of TOutput)) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IDisposable ^ LinkTo(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target);" />
+      <MemberSignature Language="F#" Value="static member LinkTo : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; -&gt; IDisposable" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo (source, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -444,6 +453,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LinkTo(Of TOutput) (source As ISourceBlock(Of TOutput), target As ITargetBlock(Of TOutput), predicate As Predicate(Of TOutput)) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IDisposable ^ LinkTo(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target, Predicate&lt;TOutput&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member LinkTo : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; * Predicate&lt;'Output&gt; -&gt; IDisposable" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo (source, target, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -488,6 +498,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.DataflowLinkOptions,System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LinkTo(Of TOutput) (source As ISourceBlock(Of TOutput), target As ITargetBlock(Of TOutput), linkOptions As DataflowLinkOptions, predicate As Predicate(Of TOutput)) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IDisposable ^ LinkTo(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target, System::Threading::Tasks::Dataflow::DataflowLinkOptions ^ linkOptions, Predicate&lt;TOutput&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member LinkTo : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; * System.Threading.Tasks.Dataflow.DataflowLinkOptions * Predicate&lt;'Output&gt; -&gt; IDisposable" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo (source, target, linkOptions, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -538,6 +549,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.NullTarget``1" />
       <MemberSignature Language="VB.NET" Value="Public Function NullTarget(Of TInput) () As ITargetBlock(Of TInput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TInput&gt;&#xA; static System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt; ^ NullTarget();" />
+      <MemberSignature Language="F#" Value="static member NullTarget : unit -&gt; System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Input&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.NullTarget " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -566,6 +578,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OutputAvailableAsync(Of TOutput) (source As ISourceBlock(Of TOutput)) As Task(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ OutputAvailableAsync(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member OutputAvailableAsync : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -598,6 +611,7 @@ batchBlock.Complete();
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OutputAvailableAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ OutputAvailableAsync(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member OutputAvailableAsync : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync (source, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -631,6 +645,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Post``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Post(Of TInput) (target As ITargetBlock(Of TInput), item As TInput) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TInput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Post(System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt; ^ target, TInput item);" />
+      <MemberSignature Language="F#" Value="static member Post : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Input&gt; * 'Input -&gt; bool" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Post (target, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -672,6 +687,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Receive(Of TOutput) (source As ISourceBlock(Of TOutput)) As TOutput" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TOutput Receive(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Receive : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; -&gt; 'Output" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Receive source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -705,6 +721,7 @@ batchBlock.Complete();
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TOutput Receive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TOutput Receive(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member Receive : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * System.Threading.CancellationToken -&gt; 'Output" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Receive (source, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -749,6 +766,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Receive(Of TOutput) (source As ISourceBlock(Of TOutput), timeout As TimeSpan) As TOutput" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TOutput Receive(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member Receive : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * TimeSpan -&gt; 'Output" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Receive (source, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -798,6 +816,7 @@ batchBlock.Complete();
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TOutput Receive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static TOutput Receive(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member Receive : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * TimeSpan * System.Threading.CancellationToken -&gt; 'Output" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.Receive (source, timeout, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -850,6 +869,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReceiveAsync(Of TOutput) (source As ISourceBlock(Of TOutput)) As Task(Of TOutput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;TOutput&gt; ^ ReceiveAsync(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member ReceiveAsync : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; -&gt; System.Threading.Tasks.Task&lt;'Output&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -882,6 +902,7 @@ batchBlock.Complete();
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TOutput&gt; ReceiveAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;TOutput&gt; ^ ReceiveAsync(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member ReceiveAsync : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'Output&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync (source, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -917,6 +938,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReceiveAsync(Of TOutput) (source As ISourceBlock(Of TOutput), timeout As TimeSpan) As Task(Of TOutput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;TOutput&gt; ^ ReceiveAsync(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member ReceiveAsync : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * TimeSpan -&gt; System.Threading.Tasks.Task&lt;'Output&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync (source, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -957,6 +979,7 @@ batchBlock.Complete();
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TOutput&gt; ReceiveAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;TOutput&gt; ^ ReceiveAsync(System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt; ^ source, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member ReceiveAsync : System.Threading.Tasks.Dataflow.ISourceBlock&lt;'Output&gt; * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'Output&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync (source, timeout, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -1000,6 +1023,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SendAsync(Of TInput) (target As ITargetBlock(Of TInput), item As TInput) As Task(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TInput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ SendAsync(System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt; ^ target, TInput item);" />
+      <MemberSignature Language="F#" Value="static member SendAsync : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Input&gt; * 'Input -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync (target, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -1033,6 +1057,7 @@ batchBlock.Complete();
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; SendAsync&lt;TInput&gt;(class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TInput&gt; target, !!TInput item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TInput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ SendAsync(System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt; ^ target, TInput item, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member SendAsync : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Input&gt; * 'Input * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync (target, item, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -1071,6 +1096,7 @@ batchBlock.Complete();
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive``1(System.Threading.Tasks.Dataflow.IReceivableSourceBlock{``0},``0@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryReceive(Of TOutput) (source As IReceivableSourceBlock(Of TOutput), ByRef item As TOutput) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryReceive(System::Threading::Tasks::Dataflow::IReceivableSourceBlock&lt;TOutput&gt; ^ source, [Runtime::InteropServices::Out] TOutput % item);" />
+      <MemberSignature Language="F#" Value="static member TryReceive : System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;'Output&gt; *  -&gt; bool" Usage="System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive (source, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

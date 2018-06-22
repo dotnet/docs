@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.TraceContextEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TraceContextEventHandler(sender As Object, e As TraceContextEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TraceContextEventHandler(System::Object ^ sender, TraceContextEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TraceContextEventHandler = delegate of obj * TraceContextEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

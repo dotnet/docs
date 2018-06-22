@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.PartCreationPolicyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PartCreationPolicyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class PartCreationPolicyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type PartCreationPolicyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.Composition.CreationPolicy creationPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.PartCreationPolicyAttribute.#ctor(System.ComponentModel.Composition.CreationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PartCreationPolicyAttribute(System::ComponentModel::Composition::CreationPolicy creationPolicy);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.PartCreationPolicyAttribute : System.ComponentModel.Composition.CreationPolicy -&gt; System.ComponentModel.Composition.PartCreationPolicyAttribute" Usage="new System.ComponentModel.Composition.PartCreationPolicyAttribute creationPolicy" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.PartCreationPolicyAttribute.CreationPolicy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationPolicy As CreationPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::CreationPolicy CreationPolicy { System::ComponentModel::Composition::CreationPolicy get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreationPolicy : System.ComponentModel.Composition.CreationPolicy" Usage="System.ComponentModel.Composition.PartCreationPolicyAttribute.CreationPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

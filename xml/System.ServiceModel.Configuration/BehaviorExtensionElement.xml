@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BehaviorExtensionElement&#xA;Inherits ServiceModelExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BehaviorExtensionElement abstract : System::ServiceModel::Configuration::ServiceModelExtensionElement" />
+  <TypeSignature Language="F#" Value="type BehaviorExtensionElement = class&#xA;    inherit ServiceModelExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BehaviorExtensionElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.BehaviorExtensionElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BehaviorExtensionElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="abstract member CreateBehavior : unit -&gt; obj" Usage="behaviorExtensionElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

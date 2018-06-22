@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PointKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PointKeyFrame&#xA;Inherits Freezable&#xA;Implements IKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class PointKeyFrame abstract : System::Windows::Freezable, System::Windows::Media::Animation::IKeyFrame" />
+  <TypeSignature Language="F#" Value="type PointKeyFrame = class&#xA;    inherit Freezable&#xA;    interface IKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointKeyFrame.#ctor(System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (value As Point)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PointKeyFrame(System::Windows::Point value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.PointKeyFrame : System.Windows.Point -&gt; System.Windows.Media.Animation.PointKeyFrame" Usage="new System.Windows.Media.Animation.PointKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PointKeyFrame(System::Windows::Point value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.PointKeyFrame : System.Windows.Point * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.PointKeyFrame" Usage="new System.Windows.Media.Animation.PointKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointKeyFrame.InterpolateValue(System.Windows.Point,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function InterpolateValue (baseValue As Point, keyFrameProgress As Double) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point InterpolateValue(System::Windows::Point baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="member this.InterpolateValue : System.Windows.Point * double -&gt; System.Windows.Point" Usage="pointKeyFrame.InterpolateValue (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointKeyFrame.InterpolateValueCore(System.Windows.Point,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InterpolateValueCore (baseValue As Point, keyFrameProgress As Double) As Point" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Point InterpolateValueCore(System::Windows::Point baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="abstract member InterpolateValueCore : System.Windows.Point * double -&gt; System.Windows.Point" Usage="pointKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.PointKeyFrame.KeyTime" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTime As KeyTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeyTime KeyTime { System::Windows::Media::Animation::KeyTime get(); void set(System::Windows::Media::Animation::KeyTime value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTime : System.Windows.Media.Animation.KeyTime with get, set" Usage="System.Windows.Media.Animation.PointKeyFrame.KeyTime" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.KeyTime</InterfaceMember>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.PointKeyFrame.KeyTimeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTimeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTimeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyTimeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.PointKeyFrame.KeyTimeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.PointKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value" />
       <MemberSignature Language="VB.NET" Value=" Property Value As Object Implements IKeyFrame.Value" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Windows.Media.Animation.IKeyFrame.Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.PointKeyFrame.System.Windows.Media.Animation.IKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.Value</InterfaceMember>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.PointKeyFrame.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Value { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Point with get, set" Usage="System.Windows.Media.Animation.PointKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.PointKeyFrame.ValueProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValueProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.PointKeyFrame.ValueProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

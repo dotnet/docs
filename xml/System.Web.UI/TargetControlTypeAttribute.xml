@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TargetControlTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TargetControlTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TargetControlTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TargetControlTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TargetControlTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetControlType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetControlTypeAttribute(Type ^ targetControlType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.TargetControlTypeAttribute : Type -&gt; System.Web.UI.TargetControlTypeAttribute" Usage="new System.Web.UI.TargetControlTypeAttribute targetControlType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TargetControlTypeAttribute.TargetControlType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetControlType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetControlType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetControlType : Type" Usage="System.Web.UI.TargetControlTypeAttribute.TargetControlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TargetControlTypeAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Web.UI.TargetControlTypeAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

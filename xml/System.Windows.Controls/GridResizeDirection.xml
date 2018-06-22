@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridResizeDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum GridResizeDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class GridResizeDirection" />
+  <TypeSignature Language="F#" Value="type GridResizeDirection = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeDirection.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Controls.GridResizeDirection.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeDirection.Columns" />
       <MemberSignature Language="VB.NET" Value="Columns" />
       <MemberSignature Language="C++ CLI" Value="Columns" />
+      <MemberSignature Language="F#" Value="Columns = 1" Usage="System.Windows.Controls.GridResizeDirection.Columns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeDirection.Rows" />
       <MemberSignature Language="VB.NET" Value="Rows" />
       <MemberSignature Language="C++ CLI" Value="Rows" />
+      <MemberSignature Language="F#" Value="Rows = 2" Usage="System.Windows.Controls.GridResizeDirection.Rows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

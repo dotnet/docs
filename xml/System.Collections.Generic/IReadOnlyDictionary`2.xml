@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IReadOnlyDictionary`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IReadOnlyDictionary(Of TKey, TValue)&#xA;Implements IEnumerable(Of KeyValuePair(Of TKey, TValue)), IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public interface class IReadOnlyDictionary : System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyCollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;" />
+  <TypeSignature Language="F#" Value="type IReadOnlyDictionary&lt;'Key, 'Value&gt; = interface&#xA;    interface IReadOnlyCollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As TKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(TKey key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : 'Key -&gt; bool" Usage="iReadOnlyDictionary.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As TKey) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[TKey] { TValue get(TKey key); };" />
+      <MemberSignature Language="F#" Value="member this.Item('Key) : 'Value" Usage="System.Collections.Generic.IReadOnlyDictionary&lt;'Key, 'Value&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.IReadOnlyDictionary`2.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IEnumerable(Of TKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : seq&lt;'Key&gt;" Usage="System.Collections.Generic.IReadOnlyDictionary&lt;'Key, 'Value&gt;.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -207,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As TKey, ByRef value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : 'Key *  -&gt; bool" Usage="iReadOnlyDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -259,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.IReadOnlyDictionary`2.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IEnumerable(Of TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : seq&lt;'Value&gt;" Usage="System.Collections.Generic.IReadOnlyDictionary&lt;'Key, 'Value&gt;.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

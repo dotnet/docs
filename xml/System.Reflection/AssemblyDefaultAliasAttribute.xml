@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyDefaultAliasAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyDefaultAliasAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyDefaultAliasAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyDefaultAliasAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyDefaultAliasAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (defaultAlias As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyDefaultAliasAttribute(System::String ^ defaultAlias);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyDefaultAliasAttribute : string -&gt; System.Reflection.AssemblyDefaultAliasAttribute" Usage="new System.Reflection.AssemblyDefaultAliasAttribute defaultAlias" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyDefaultAliasAttribute.DefaultAlias" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultAlias As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultAlias { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAlias : string" Usage="System.Reflection.AssemblyDefaultAliasAttribute.DefaultAlias" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

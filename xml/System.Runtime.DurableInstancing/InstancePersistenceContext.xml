@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstancePersistenceContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InstancePersistenceContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstancePersistenceContext sealed" />
+  <TypeSignature Language="F#" Value="type InstancePersistenceContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.AssociatedInstanceKey(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssociatedInstanceKey (key As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssociatedInstanceKey(Guid key);" />
+      <MemberSignature Language="F#" Value="member this.AssociatedInstanceKey : Guid -&gt; unit" Usage="instancePersistenceContext.AssociatedInstanceKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.BeginBindReclaimedLock(System.Int64,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginBindReclaimedLock (instanceVersion As Long, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginBindReclaimedLock(long instanceVersion, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginBindReclaimedLock : int64 * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="instancePersistenceContext.BeginBindReclaimedLock (instanceVersion, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.BeginExecute(System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginExecute (command As InstancePersistenceCommand, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecute(System::Runtime::DurableInstancing::InstancePersistenceCommand ^ command, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginExecute : System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="instancePersistenceContext.BeginExecute (command, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.BindAcquiredLock(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindAcquiredLock (instanceVersion As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindAcquiredLock(long instanceVersion);" />
+      <MemberSignature Language="F#" Value="member this.BindAcquiredLock : int64 -&gt; unit" Usage="instancePersistenceContext.BindAcquiredLock instanceVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.BindEvent(System.Runtime.DurableInstancing.InstancePersistenceEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindEvent (persistenceEvent As InstancePersistenceEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindEvent(System::Runtime::DurableInstancing::InstancePersistenceEvent ^ persistenceEvent);" />
+      <MemberSignature Language="F#" Value="member this.BindEvent : System.Runtime.DurableInstancing.InstancePersistenceEvent -&gt; unit" Usage="instancePersistenceContext.BindEvent persistenceEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.BindInstance(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindInstance (instanceId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindInstance(Guid instanceId);" />
+      <MemberSignature Language="F#" Value="member this.BindInstance : Guid -&gt; unit" Usage="instancePersistenceContext.BindInstance instanceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.BindInstanceOwner(System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindInstanceOwner (instanceOwnerId As Guid, lockToken As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindInstanceOwner(Guid instanceOwnerId, Guid lockToken);" />
+      <MemberSignature Language="F#" Value="member this.BindInstanceOwner : Guid * Guid -&gt; unit" Usage="instancePersistenceContext.BindInstanceOwner (instanceOwnerId, lockToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.BindReclaimedLock(System.Int64,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindReclaimedLock (instanceVersion As Long, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindReclaimedLock(long instanceVersion, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.BindReclaimedLock : int64 * TimeSpan -&gt; unit" Usage="instancePersistenceContext.BindReclaimedLock (instanceVersion, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.CompletedInstance" />
       <MemberSignature Language="VB.NET" Value="Public Sub CompletedInstance ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompletedInstance();" />
+      <MemberSignature Language="F#" Value="member this.CompletedInstance : unit -&gt; unit" Usage="instancePersistenceContext.CompletedInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.CompletedInstanceKey(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CompletedInstanceKey (key As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompletedInstanceKey(Guid key);" />
+      <MemberSignature Language="F#" Value="member this.CompletedInstanceKey : Guid -&gt; unit" Usage="instancePersistenceContext.CompletedInstanceKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -348,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.CreateBindReclaimedLockException(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBindReclaimedLockException (instanceVersion As Long) As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Exception ^ CreateBindReclaimedLockException(long instanceVersion);" />
+      <MemberSignature Language="F#" Value="member this.CreateBindReclaimedLockException : int64 -&gt; Exception" Usage="instancePersistenceContext.CreateBindReclaimedLockException instanceVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -394,6 +406,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.EndBindReclaimedLock(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndBindReclaimedLock (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndBindReclaimedLock(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndBindReclaimedLock : IAsyncResult -&gt; unit" Usage="instancePersistenceContext.EndBindReclaimedLock result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -417,6 +430,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.EndExecute(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndExecute (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndExecute(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndExecute : IAsyncResult -&gt; unit" Usage="instancePersistenceContext.EndExecute result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -440,6 +454,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.Execute(System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Execute (command As InstancePersistenceCommand, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute(System::Runtime::DurableInstancing::InstancePersistenceCommand ^ command, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Execute : System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan -&gt; unit" Usage="instancePersistenceContext.Execute (command, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -472,6 +487,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceContext.InstanceHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceHandle As InstanceHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceHandle ^ InstanceHandle { System::Runtime::DurableInstancing::InstanceHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceHandle : System.Runtime.DurableInstancing.InstanceHandle" Usage="System.Runtime.DurableInstancing.InstancePersistenceContext.InstanceHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -492,6 +508,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceContext.InstanceVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceVersion As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long InstanceVersion { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceVersion : int64" Usage="System.Runtime.DurableInstancing.InstancePersistenceContext.InstanceVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -519,6 +536,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceContext.InstanceView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceView As InstanceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceView ^ InstanceView { System::Runtime::DurableInstancing::InstanceView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceView : System.Runtime.DurableInstancing.InstanceView" Usage="System.Runtime.DurableInstancing.InstancePersistenceContext.InstanceView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -539,6 +557,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.LoadedInstance(System.Runtime.DurableInstancing.InstanceState,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue},System.Collections.Generic.IDictionary{System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue}},System.Collections.Generic.IDictionary{System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadedInstance (state As InstanceState, instanceData As IDictionary(Of XName, InstanceValue), instanceMetadata As IDictionary(Of XName, InstanceValue), associatedInstanceKeyMetadata As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue)), completedInstanceKeyMetadata As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadedInstance(System::Runtime::DurableInstancing::InstanceState state, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ instanceData, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ instanceMetadata, System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ associatedInstanceKeyMetadata, System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ completedInstanceKeyMetadata);" />
+      <MemberSignature Language="F#" Value="member this.LoadedInstance : System.Runtime.DurableInstancing.InstanceState * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt; * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt; * System.Collections.Generic.IDictionary&lt;Guid, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;&gt; * System.Collections.Generic.IDictionary&lt;Guid, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;&gt; -&gt; unit" Usage="instancePersistenceContext.LoadedInstance (state, instanceData, instanceMetadata, associatedInstanceKeyMetadata, completedInstanceKeyMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -577,6 +596,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceContext.LockToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LockToken As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid LockToken { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.LockToken : Guid" Usage="System.Runtime.DurableInstancing.InstancePersistenceContext.LockToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -606,6 +626,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.PersistedInstance(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue})" />
       <MemberSignature Language="VB.NET" Value="Public Sub PersistedInstance (data As IDictionary(Of XName, InstanceValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PersistedInstance(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="member this.PersistedInstance : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt; -&gt; unit" Usage="instancePersistenceContext.PersistedInstance data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -636,6 +657,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.QueriedInstanceStore(System.Runtime.DurableInstancing.InstanceStoreQueryResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub QueriedInstanceStore (queryResult As InstanceStoreQueryResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void QueriedInstanceStore(System::Runtime::DurableInstancing::InstanceStoreQueryResult ^ queryResult);" />
+      <MemberSignature Language="F#" Value="member this.QueriedInstanceStore : System.Runtime.DurableInstancing.InstanceStoreQueryResult -&gt; unit" Usage="instancePersistenceContext.QueriedInstanceStore queryResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -659,6 +681,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.ReadInstanceKeyMetadata(System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadInstanceKeyMetadata (key As Guid, metadata As IDictionary(Of XName, InstanceValue), complete As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReadInstanceKeyMetadata(Guid key, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ metadata, bool complete);" />
+      <MemberSignature Language="F#" Value="member this.ReadInstanceKeyMetadata : Guid * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt; * bool -&gt; unit" Usage="instancePersistenceContext.ReadInstanceKeyMetadata (key, metadata, complete)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -694,6 +717,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.ReadInstanceMetadata(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadInstanceMetadata (metadata As IDictionary(Of XName, InstanceValue), complete As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReadInstanceMetadata(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ metadata, bool complete);" />
+      <MemberSignature Language="F#" Value="member this.ReadInstanceMetadata : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt; * bool -&gt; unit" Usage="instancePersistenceContext.ReadInstanceMetadata (metadata, complete)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -720,6 +744,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.ReadInstanceOwnerMetadata(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadInstanceOwnerMetadata (metadata As IDictionary(Of XName, InstanceValue), complete As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReadInstanceOwnerMetadata(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ metadata, bool complete);" />
+      <MemberSignature Language="F#" Value="member this.ReadInstanceOwnerMetadata : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt; * bool -&gt; unit" Usage="instancePersistenceContext.ReadInstanceOwnerMetadata (metadata, complete)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -752,6 +777,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.SetCancellationHandler(System.Action{System.Runtime.DurableInstancing.InstancePersistenceContext})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCancellationHandler (cancellationHandler As Action(Of InstancePersistenceContext))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCancellationHandler(Action&lt;System::Runtime::DurableInstancing::InstancePersistenceContext ^&gt; ^ cancellationHandler);" />
+      <MemberSignature Language="F#" Value="member this.SetCancellationHandler : Action&lt;System.Runtime.DurableInstancing.InstancePersistenceContext&gt; -&gt; unit" Usage="instancePersistenceContext.SetCancellationHandler cancellationHandler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -782,6 +808,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.UnassociatedInstanceKey(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnassociatedInstanceKey (key As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnassociatedInstanceKey(Guid key);" />
+      <MemberSignature Language="F#" Value="member this.UnassociatedInstanceKey : Guid -&gt; unit" Usage="instancePersistenceContext.UnassociatedInstanceKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -812,6 +839,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceContext.UserContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserContext As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserContext { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserContext : obj" Usage="System.Runtime.DurableInstancing.InstancePersistenceContext.UserContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -839,6 +867,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.WroteInstanceKeyMetadataValue(System.Guid,System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WroteInstanceKeyMetadataValue (key As Guid, name As XName, value As InstanceValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WroteInstanceKeyMetadataValue(Guid key, System::Xml::Linq::XName ^ name, System::Runtime::DurableInstancing::InstanceValue ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WroteInstanceKeyMetadataValue : Guid * System.Xml.Linq.XName * System.Runtime.DurableInstancing.InstanceValue -&gt; unit" Usage="instancePersistenceContext.WroteInstanceKeyMetadataValue (key, name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -873,6 +902,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.WroteInstanceMetadataValue(System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WroteInstanceMetadataValue (name As XName, value As InstanceValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WroteInstanceMetadataValue(System::Xml::Linq::XName ^ name, System::Runtime::DurableInstancing::InstanceValue ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WroteInstanceMetadataValue : System.Xml.Linq.XName * System.Runtime.DurableInstancing.InstanceValue -&gt; unit" Usage="instancePersistenceContext.WroteInstanceMetadataValue (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -905,6 +935,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceContext.WroteInstanceOwnerMetadataValue(System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WroteInstanceOwnerMetadataValue (name As XName, value As InstanceValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WroteInstanceOwnerMetadataValue(System::Xml::Linq::XName ^ name, System::Runtime::DurableInstancing::InstanceValue ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WroteInstanceOwnerMetadataValue : System.Xml.Linq.XName * System.Runtime.DurableInstancing.InstanceValue -&gt; unit" Usage="instancePersistenceContext.WroteInstanceOwnerMetadataValue (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

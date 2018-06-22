@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ExpressionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionBuilder&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpressionBuilder sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ExpressionBuilder = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ExpressionBuilder.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expressionPrefix As String, theType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpressionBuilder(System::String ^ expressionPrefix, System::String ^ theType);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.ExpressionBuilder : string * string -&gt; System.Web.Configuration.ExpressionBuilder" Usage="new System.Web.Configuration.ExpressionBuilder (expressionPrefix, theType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ExpressionBuilder.ExpressionPrefix" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpressionPrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpressionPrefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionPrefix : string with get, set" Usage="System.Web.Configuration.ExpressionBuilder.ExpressionPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ExpressionBuilder.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ExpressionBuilder.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ExpressionBuilder.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Web.Configuration.ExpressionBuilder.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

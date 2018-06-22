@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridLengthUnitType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridLengthUnitType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridLengthUnitType" />
+  <TypeSignature Language="F#" Value="type DataGridLengthUnitType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Controls.DataGridLengthUnitType.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.Pixel" />
       <MemberSignature Language="VB.NET" Value="Pixel" />
       <MemberSignature Language="C++ CLI" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 1" Usage="System.Windows.Controls.DataGridLengthUnitType.Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.SizeToCells" />
       <MemberSignature Language="VB.NET" Value="SizeToCells" />
       <MemberSignature Language="C++ CLI" Value="SizeToCells" />
+      <MemberSignature Language="F#" Value="SizeToCells = 2" Usage="System.Windows.Controls.DataGridLengthUnitType.SizeToCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.SizeToHeader" />
       <MemberSignature Language="VB.NET" Value="SizeToHeader" />
       <MemberSignature Language="C++ CLI" Value="SizeToHeader" />
+      <MemberSignature Language="F#" Value="SizeToHeader = 3" Usage="System.Windows.Controls.DataGridLengthUnitType.SizeToHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.Star" />
       <MemberSignature Language="VB.NET" Value="Star" />
       <MemberSignature Language="C++ CLI" Value="Star" />
+      <MemberSignature Language="F#" Value="Star = 4" Usage="System.Windows.Controls.DataGridLengthUnitType.Star" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabAppearance" />
   <TypeSignature Language="VB.NET" Value="Public Enum TabAppearance" />
   <TypeSignature Language="C++ CLI" Value="public enum class TabAppearance" />
+  <TypeSignature Language="F#" Value="type TabAppearance = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAppearance.Buttons" />
       <MemberSignature Language="VB.NET" Value="Buttons" />
       <MemberSignature Language="C++ CLI" Value="Buttons" />
+      <MemberSignature Language="F#" Value="Buttons = 1" Usage="System.Windows.Forms.TabAppearance.Buttons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAppearance.FlatButtons" />
       <MemberSignature Language="VB.NET" Value="FlatButtons" />
       <MemberSignature Language="C++ CLI" Value="FlatButtons" />
+      <MemberSignature Language="F#" Value="FlatButtons = 2" Usage="System.Windows.Forms.TabAppearance.FlatButtons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAppearance.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.TabAppearance.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

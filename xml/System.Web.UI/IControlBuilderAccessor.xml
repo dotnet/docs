@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IControlBuilderAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IControlBuilderAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IControlBuilderAccessor" />
+  <TypeSignature Language="F#" Value="type IControlBuilderAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IControlBuilderAccessor.ControlBuilder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlBuilder As ControlBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ControlBuilder ^ ControlBuilder { System::Web::UI::ControlBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlBuilder : System.Web.UI.ControlBuilder" Usage="System.Web.UI.IControlBuilderAccessor.ControlBuilder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

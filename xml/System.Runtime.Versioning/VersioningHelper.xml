@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.VersioningHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class VersioningHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class VersioningHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type VersioningHelper = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.VersioningHelper.MakeVersionSafeName(System.String,System.Runtime.Versioning.ResourceScope,System.Runtime.Versioning.ResourceScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeVersionSafeName (name As String, from As ResourceScope, to As ResourceScope) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakeVersionSafeName(System::String ^ name, System::Runtime::Versioning::ResourceScope from, System::Runtime::Versioning::ResourceScope to);" />
+      <MemberSignature Language="F#" Value="static member MakeVersionSafeName : string * System.Runtime.Versioning.ResourceScope * System.Runtime.Versioning.ResourceScope -&gt; string" Usage="System.Runtime.Versioning.VersioningHelper.MakeVersionSafeName (name, from, to)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeVersionSafeName(string name, valuetype System.Runtime.Versioning.ResourceScope from, valuetype System.Runtime.Versioning.ResourceScope to, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.VersioningHelper.MakeVersionSafeName(System.String,System.Runtime.Versioning.ResourceScope,System.Runtime.Versioning.ResourceScope,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakeVersionSafeName(System::String ^ name, System::Runtime::Versioning::ResourceScope from, System::Runtime::Versioning::ResourceScope to, Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member MakeVersionSafeName : string * System.Runtime.Versioning.ResourceScope * System.Runtime.Versioning.ResourceScope * Type -&gt; string" Usage="System.Runtime.Versioning.VersioningHelper.MakeVersionSafeName (name, from, to, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

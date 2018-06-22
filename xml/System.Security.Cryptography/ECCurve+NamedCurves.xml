@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECCurve.NamedCurves" />
   <TypeSignature Language="VB.NET" Value="Public Class ECCurve.NamedCurves" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ECCurve::NamedCurves abstract sealed" />
+  <TypeSignature Language="F#" Value="type ECCurve.NamedCurves = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160r1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP160r1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP160r1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP160r1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160r1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160t1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP160t1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP160t1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP160t1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160t1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192r1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP192r1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP192r1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP192r1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192r1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192t1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP192t1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP192t1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP192t1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192t1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224r1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP224r1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP224r1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP224r1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224r1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224t1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP224t1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP224t1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP224t1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224t1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256r1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP256r1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP256r1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP256r1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256r1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256t1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP256t1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP256t1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP256t1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256t1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320r1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP320r1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP320r1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP320r1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320r1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -313,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320t1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP320t1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP320t1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP320t1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320t1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384r1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP384r1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP384r1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP384r1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384r1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384t1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP384t1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP384t1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP384t1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384t1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -406,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512r1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP512r1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP512r1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP512r1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512r1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -437,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512t1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property brainpoolP512t1 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve brainpoolP512t1 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.brainpoolP512t1 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512t1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -468,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP256" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property nistP256 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve nistP256 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.nistP256 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.nistP256" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -499,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP384" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property nistP384 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve nistP384 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.nistP384 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.nistP384" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -530,6 +547,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP521" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property nistP521 As ECCurve" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::ECCurve nistP521 { System::Security::Cryptography::ECCurve get(); };" />
+      <MemberSignature Language="F#" Value="member this.nistP521 : System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.NamedCurves.nistP521" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

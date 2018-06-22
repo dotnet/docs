@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SerializationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SerializationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SerializationMode" />
+  <TypeSignature Language="F#" Value="type SerializationMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 2" Usage="System.Web.Configuration.SerializationMode.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.ProviderSpecific" />
       <MemberSignature Language="VB.NET" Value="ProviderSpecific" />
       <MemberSignature Language="C++ CLI" Value="ProviderSpecific" />
+      <MemberSignature Language="F#" Value="ProviderSpecific = 3" Usage="System.Web.Configuration.SerializationMode.ProviderSpecific" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 0" Usage="System.Web.Configuration.SerializationMode.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 1" Usage="System.Web.Configuration.SerializationMode.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

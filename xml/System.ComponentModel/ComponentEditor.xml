@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ComponentEditor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComponentEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentEditor abstract" />
+  <TypeSignature Language="F#" Value="type ComponentEditor = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentEditor.EditComponent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function EditComponent (component As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EditComponent(System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="member this.EditComponent : obj -&gt; bool" Usage="componentEditor.EditComponent component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function EditComponent (context As ITypeDescriptorContext, component As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member EditComponent : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool" Usage="componentEditor.EditComponent (context, component)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

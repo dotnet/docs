@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerNodeAddress" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PeerNodeAddress" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerNodeAddress sealed" />
+  <TypeSignature Language="F#" Value="type PeerNodeAddress = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress endpointAddress, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Net.IPAddress&gt; ipAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerNodeAddress.#ctor(System.ServiceModel.EndpointAddress,System.Collections.ObjectModel.ReadOnlyCollection{System.Net.IPAddress})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerNodeAddress(System::ServiceModel::EndpointAddress ^ endpointAddress, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Net::IPAddress ^&gt; ^ ipAddresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.PeerNodeAddress : System.ServiceModel.EndpointAddress * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Net.IPAddress&gt; -&gt; System.ServiceModel.PeerNodeAddress" Usage="new System.ServiceModel.PeerNodeAddress (endpointAddress, ipAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerNodeAddress.EndpointAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointAddress As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ EndpointAddress { System::ServiceModel::EndpointAddress ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointAddress : System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.PeerNodeAddress.EndpointAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerNodeAddress.IPAddresses" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IPAddresses As ReadOnlyCollection(Of IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Net::IPAddress ^&gt; ^ IPAddresses { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Net::IPAddress ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IPAddresses : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Net.IPAddress&gt;" Usage="System.ServiceModel.PeerNodeAddress.IPAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IAttributeAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAttributeAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAttributeAccessor" />
+  <TypeSignature Language="F#" Value="type IAttributeAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAttribute (key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAttribute(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : string -&gt; string" Usage="iAttributeAccessor.GetAttribute key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAttribute (key As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAttribute(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetAttribute : string * string -&gt; unit" Usage="iAttributeAccessor.SetAttribute (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

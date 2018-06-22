@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ManualResetEvent" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManualResetEvent&#xA;Inherits EventWaitHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManualResetEvent sealed : System::Threading::EventWaitHandle" />
+  <TypeSignature Language="F#" Value="type ManualResetEvent = class&#xA;    inherit EventWaitHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEvent.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEvent(bool initialState);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ManualResetEvent : bool -&gt; System.Threading.ManualResetEvent" Usage="new System.Threading.ManualResetEvent initialState" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

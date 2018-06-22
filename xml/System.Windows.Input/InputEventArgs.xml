@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InputEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type InputEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.InputDevice inputDevice, int32 timestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputEventArgs.#ctor(System.Windows.Input.InputDevice,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InputEventArgs(System::Windows::Input::InputDevice ^ inputDevice, int timestamp);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.InputEventArgs : System.Windows.Input.InputDevice * int -&gt; System.Windows.Input.InputEventArgs" Usage="new System.Windows.Input.InputEventArgs (inputDevice, timestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputEventArgs.Device" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Device As InputDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputDevice ^ Device { System::Windows::Input::InputDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Device : System.Windows.Input.InputDevice" Usage="System.Windows.Input.InputEventArgs.Device" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="inputEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputEventArgs.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timestamp { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : int" Usage="System.Windows.Input.InputEventArgs.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

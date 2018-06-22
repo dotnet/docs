@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderParameters" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncoderParameters&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EncoderParameters sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type EncoderParameters = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameters.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameters(int count);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameters : int -&gt; System.Drawing.Imaging.EncoderParameters" Usage="new System.Drawing.Imaging.EncoderParameters count" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameters.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="encoderParameters.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.EncoderParameters.Param" />
       <MemberSignature Language="VB.NET" Value="Public Property Param As EncoderParameter()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::Imaging::EncoderParameter ^&gt; ^ Param { cli::array &lt;System::Drawing::Imaging::EncoderParameter ^&gt; ^ get(); void set(cli::array &lt;System::Drawing::Imaging::EncoderParameter ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Param : System.Drawing.Imaging.EncoderParameter[] with get, set" Usage="System.Drawing.Imaging.EncoderParameters.Param" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

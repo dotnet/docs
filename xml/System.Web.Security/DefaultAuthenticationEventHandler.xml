@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.DefaultAuthenticationEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DefaultAuthenticationEventHandler(sender As Object, e As DefaultAuthenticationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DefaultAuthenticationEventHandler(System::Object ^ sender, DefaultAuthenticationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DefaultAuthenticationEventHandler = delegate of obj * DefaultAuthenticationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.WorkflowInstanceQuery" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowInstanceQuery&#xA;Inherits TrackingQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstanceQuery : System::Activities::Tracking::TrackingQuery" />
+  <TypeSignature Language="F#" Value="type WorkflowInstanceQuery = class&#xA;    inherit TrackingQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceQuery.States" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property States As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ States { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.States : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Activities.Tracking.WorkflowInstanceQuery.States" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

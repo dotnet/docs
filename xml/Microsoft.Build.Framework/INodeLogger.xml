@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="VB.NET" Value="Public Interface INodeLogger&#xA;Implements ILogger" />
   <TypeSignature Language="C++ CLI" Value="public interface class INodeLogger : Microsoft::Build::Framework::ILogger" />
+  <TypeSignature Language="F#" Value="type INodeLogger = interface&#xA;    interface ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.INodeLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource, nodeCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource, int nodeCount);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource * int -&gt; unit" Usage="iNodeLogger.Initialize (eventSource, nodeCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

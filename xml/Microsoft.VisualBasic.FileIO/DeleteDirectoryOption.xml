@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum DeleteDirectoryOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class DeleteDirectoryOption" />
+  <TypeSignature Language="F#" Value="type DeleteDirectoryOption = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption.DeleteAllContents" />
       <MemberSignature Language="VB.NET" Value="DeleteAllContents" />
       <MemberSignature Language="C++ CLI" Value="DeleteAllContents" />
+      <MemberSignature Language="F#" Value="DeleteAllContents = 5" Usage="Microsoft.VisualBasic.FileIO.DeleteDirectoryOption.DeleteAllContents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption.ThrowIfDirectoryNonEmpty" />
       <MemberSignature Language="VB.NET" Value="ThrowIfDirectoryNonEmpty" />
       <MemberSignature Language="C++ CLI" Value="ThrowIfDirectoryNonEmpty" />
+      <MemberSignature Language="F#" Value="ThrowIfDirectoryNonEmpty = 4" Usage="Microsoft.VisualBasic.FileIO.DeleteDirectoryOption.ThrowIfDirectoryNonEmpty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

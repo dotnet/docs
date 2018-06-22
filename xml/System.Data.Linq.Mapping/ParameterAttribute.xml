@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.ParameterAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParameterAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParameterAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ParameterAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ParameterAttribute.DbType" />
       <MemberSignature Language="VB.NET" Value="Public Property DbType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DbType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DbType : string with get, set" Usage="System.Data.Linq.Mapping.ParameterAttribute.DbType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ParameterAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Data.Linq.Mapping.ParameterAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

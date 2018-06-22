@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySchedule" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySchedule" />
+  <TypeSignature Language="F#" Value="type ActiveDirectorySchedule = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.#ctor(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (schedule As ActiveDirectorySchedule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectorySchedule(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchedule ^ schedule);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" Usage="new System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.RawSchedule" />
       <MemberSignature Language="VB.NET" Value="Public Property RawSchedule As Boolean(,,)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;bool, 3&gt; ^ RawSchedule { cli::array &lt;bool, 3&gt; ^ get(); void set(cli::array &lt;bool, 3&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RawSchedule : bool[,,] with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.RawSchedule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -172,6 +175,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetSchedule ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSchedule();" />
+      <MemberSignature Language="F#" Value="member this.ResetSchedule : unit -&gt; unit" Usage="activeDirectorySchedule.ResetSchedule " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -193,6 +197,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetDailySchedule(System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDailySchedule (fromHour As HourOfDay, fromMinute As MinuteOfHour, toHour As HourOfDay, toMinute As MinuteOfHour)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDailySchedule(System::DirectoryServices::ActiveDirectory::HourOfDay fromHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour fromMinute, System::DirectoryServices::ActiveDirectory::HourOfDay toHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour toMinute);" />
+      <MemberSignature Language="F#" Value="member this.SetDailySchedule : System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour -&gt; unit" Usage="activeDirectorySchedule.SetDailySchedule (fromHour, fromMinute, toHour, toMinute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -245,6 +250,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetSchedule(System.DayOfWeek,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSchedule (day As DayOfWeek, fromHour As HourOfDay, fromMinute As MinuteOfHour, toHour As HourOfDay, toMinute As MinuteOfHour)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSchedule(DayOfWeek day, System::DirectoryServices::ActiveDirectory::HourOfDay fromHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour fromMinute, System::DirectoryServices::ActiveDirectory::HourOfDay toHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour toMinute);" />
+      <MemberSignature Language="F#" Value="member this.SetSchedule : DayOfWeek * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour -&gt; unit" Usage="activeDirectorySchedule.SetSchedule (day, fromHour, fromMinute, toHour, toMinute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -294,6 +300,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetSchedule(System.DayOfWeek[],System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSchedule (days As DayOfWeek(), fromHour As HourOfDay, fromMinute As MinuteOfHour, toHour As HourOfDay, toMinute As MinuteOfHour)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSchedule(cli::array &lt;DayOfWeek&gt; ^ days, System::DirectoryServices::ActiveDirectory::HourOfDay fromHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour fromMinute, System::DirectoryServices::ActiveDirectory::HourOfDay toHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour toMinute);" />
+      <MemberSignature Language="F#" Value="member this.SetSchedule : DayOfWeek[] * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour -&gt; unit" Usage="activeDirectorySchedule.SetSchedule (days, fromHour, fromMinute, toHour, toMinute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

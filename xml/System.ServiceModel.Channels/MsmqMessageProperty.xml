@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MsmqMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MsmqMessageProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class MsmqMessageProperty sealed" />
+  <TypeSignature Language="F#" Value="type MsmqMessageProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqMessageProperty.AbortCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AbortCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AbortCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AbortCount : int" Usage="System.ServiceModel.Channels.MsmqMessageProperty.AbortCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeliveryFailure As Nullable(Of DeliveryFailure)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::ServiceModel::Channels::DeliveryFailure&gt; DeliveryFailure { Nullable&lt;System::ServiceModel::Channels::DeliveryFailure&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeliveryFailure : Nullable&lt;System.ServiceModel.Channels.DeliveryFailure&gt;" Usage="System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeliveryStatus As Nullable(Of DeliveryStatus)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::ServiceModel::Channels::DeliveryStatus&gt; DeliveryStatus { Nullable&lt;System::ServiceModel::Channels::DeliveryStatus&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeliveryStatus : Nullable&lt;System.ServiceModel.Channels.DeliveryStatus&gt;" Usage="System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MsmqMessageProperty Get(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqMessageProperty.Get(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MsmqMessageProperty ^ Get(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="static member Get : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.MsmqMessageProperty" Usage="System.ServiceModel.Channels.MsmqMessageProperty.Get message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqMessageProperty.MoveCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MoveCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MoveCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveCount : int" Usage="System.ServiceModel.Channels.MsmqMessageProperty.MoveCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MsmqMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Const Name As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Name;" />
+      <MemberSignature Language="F#" Value="val mutable Name : string" Usage="System.ServiceModel.Channels.MsmqMessageProperty.Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

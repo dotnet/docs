@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.BitmapData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapData" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapData sealed" />
+  <TypeSignature Language="F#" Value="type BitmapData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.BitmapData.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Drawing.Imaging.BitmapData.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.BitmapData.PixelFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property PixelFormat As PixelFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::PixelFormat PixelFormat { System::Drawing::Imaging::PixelFormat get(); void set(System::Drawing::Imaging::PixelFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.PixelFormat : System.Drawing.Imaging.PixelFormat with get, set" Usage="System.Drawing.Imaging.BitmapData.PixelFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.BitmapData.Reserved" />
       <MemberSignature Language="VB.NET" Value="Public Property Reserved As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Reserved { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Reserved : int with get, set" Usage="System.Drawing.Imaging.BitmapData.Reserved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.BitmapData.Scan0" />
       <MemberSignature Language="VB.NET" Value="Public Property Scan0 As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Scan0 { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.Scan0 : nativeint with get, set" Usage="System.Drawing.Imaging.BitmapData.Scan0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.BitmapData.Stride" />
       <MemberSignature Language="VB.NET" Value="Public Property Stride As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Stride { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Stride : int with get, set" Usage="System.Drawing.Imaging.BitmapData.Stride" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.BitmapData.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Drawing.Imaging.BitmapData.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

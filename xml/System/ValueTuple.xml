@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ValueTuple" />
   <TypeSignature Language="VB.NET" Value="Public Structure ValueTuple&#xA;Implements IComparable, IComparable(Of ValueTuple), IEquatable(Of ValueTuple), IStructuralComparable, IStructuralEquatable" />
   <TypeSignature Language="C++ CLI" Value="public value class ValueTuple : IComparable, IComparable&lt;ValueTuple&gt;, IEquatable&lt;ValueTuple&gt;, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type ValueTuple = struct" />
   <AssemblyInfo>
     <AssemblyName>System.ValueTuple</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.CompareTo(System.ValueTuple)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As ValueTuple) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(ValueTuple other);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : ValueTuple -&gt; int&#xA;override this.CompareTo : ValueTuple -&gt; int" Usage="valueTuple.CompareTo other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -131,6 +133,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As ValueTuple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static ValueTuple Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; ValueTuple" Usage="System.ValueTuple.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -166,6 +169,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1) (item1 As T1) As ValueTuple(Of T1)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1&gt;&#xA; static ValueTuple&lt;T1&gt; Create(T1 item1);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 -&gt; ValueTuple&lt;'T1&gt;" Usage="System.ValueTuple.Create item1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -215,6 +219,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``2(``0,``1)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2) (item1 As T1, item2 As T2) As ValueTuple(Of T1, T2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2&gt;&#xA; static ValueTuple&lt;T1, T2&gt; Create(T1 item1, T2 item2);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 -&gt; ValueTuple&lt;'T1, 'T2&gt;" Usage="System.ValueTuple.Create (item1, item2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -268,6 +273,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``3(``0,``1,``2)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3) (item1 As T1, item2 As T2, item3 As T3) As ValueTuple(Of T1, T2, T3)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3&gt;&#xA; static ValueTuple&lt;T1, T2, T3&gt; Create(T1 item1, T2 item2, T3 item3);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 -&gt; ValueTuple&lt;'T1, 'T2, 'T3&gt;" Usage="System.ValueTuple.Create (item1, item2, item3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -325,6 +331,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``4(``0,``1,``2,``3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4) (item1 As T1, item2 As T2, item3 As T3, item4 As T4) As ValueTuple(Of T1, T2, T3, T4)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4&gt;&#xA; static ValueTuple&lt;T1, T2, T3, T4&gt; Create(T1 item1, T2 item2, T3 item3, T4 item4);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 -&gt; ValueTuple&lt;'T1, 'T2, 'T3, 'T4&gt;" Usage="System.ValueTuple.Create (item1, item2, item3, item4)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -386,6 +393,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``5(``0,``1,``2,``3,``4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4, T5) (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5) As ValueTuple(Of T1, T2, T3, T4, T5)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5&gt;&#xA; static ValueTuple&lt;T1, T2, T3, T4, T5&gt; Create(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 -&gt; ValueTuple&lt;'T1, 'T2, 'T3, 'T4, 'T5&gt;" Usage="System.ValueTuple.Create (item1, item2, item3, item4, item5)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -451,6 +459,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``6(``0,``1,``2,``3,``4,``5)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4, T5, T6) (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5, item6 As T6) As ValueTuple(Of T1, T2, T3, T4, T5, T6)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6&gt;&#xA; static ValueTuple&lt;T1, T2, T3, T4, T5, T6&gt; Create(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 -&gt; ValueTuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6&gt;" Usage="System.ValueTuple.Create (item1, item2, item3, item4, item5, item6)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -520,6 +529,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``7(``0,``1,``2,``3,``4,``5,``6)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4, T5, T6, T7) (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5, item6 As T6, item7 As T7) As ValueTuple(Of T1, T2, T3, T4, T5, T6, T7)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7&gt;&#xA; static ValueTuple&lt;T1, T2, T3, T4, T5, T6, T7&gt; Create(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7 -&gt; ValueTuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7&gt;" Usage="System.ValueTuple.Create (item1, item2, item3, item4, item5, item6, item7)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -593,6 +603,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``8(``0,``1,``2,``3,``4,``5,``6,``7)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4, T5, T6, T7, T8) (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5, item6 As T6, item7 As T7, item8 As T8) As ValueTuple(Of T1, T2, T3, T4, T5, T6, T7, ValueTuple(Of T8))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8&gt;&#xA; static ValueTuple&lt;T1, T2, T3, T4, T5, T6, T7, ValueTuple&lt;T8&gt;&gt; Create(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7, T8 item8);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7 * 'T8 -&gt; ValueTuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, ValueTuple&lt;'T8&gt;&gt;" Usage="System.ValueTuple.Create (item1, item2, item3, item4, item5, item6, item7, item8)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -683,6 +694,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="valueTuple.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -722,6 +734,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.Equals(System.ValueTuple)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ValueTuple) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(ValueTuple other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : ValueTuple -&gt; bool" Usage="valueTuple.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -763,6 +776,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="valueTuple.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -979,6 +993,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="P:System.ValueTuple.System#Runtime#CompilerServices#ITuple#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As Object Implements ITuple.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.ITuple.Item[int] { System::Object ^ get(int index); };" />
+      <MemberSignature Language="F#" Usage="System.ValueTuple.System.Runtime.CompilerServices.ITuple.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Item(System.Int32)</InterfaceMember>
@@ -1012,6 +1027,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="P:System.ValueTuple.System#Runtime#CompilerServices#ITuple#Length" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Length As Integer Implements ITuple.Length" />
       <MemberSignature Language="C++ CLI" Value="property int System.Runtime.CompilerServices.ITuple.Length { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.ValueTuple.System.Runtime.CompilerServices.ITuple.Length" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Length</InterfaceMember>
@@ -1040,6 +1056,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
       <MemberSignature Language="DocId" Value="M:System.ValueTuple.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="valueTuple.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>

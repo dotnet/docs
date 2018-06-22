@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VirtualDirectoryMappingCollection&#xA;Inherits NameObjectCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class VirtualDirectoryMappingCollection sealed : System::Collections::Specialized::NameObjectCollectionBase" />
+  <TypeSignature Language="F#" Value="type VirtualDirectoryMappingCollection = class&#xA;    inherit NameObjectCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Add(System.String,System.Web.Configuration.VirtualDirectoryMapping)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (virtualDirectory As String, mapping As VirtualDirectoryMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ virtualDirectory, System::Web::Configuration::VirtualDirectoryMapping ^ mapping);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Web.Configuration.VirtualDirectoryMapping -&gt; unit" Usage="virtualDirectoryMappingCollection.Add (virtualDirectory, mapping)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMappingCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ AllKeys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllKeys : System.Collections.ICollection" Usage="System.Web.Configuration.VirtualDirectoryMappingCollection.AllKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="virtualDirectoryMappingCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.CopyTo(System.Web.Configuration.VirtualDirectoryMapping[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As VirtualDirectoryMapping(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Configuration::VirtualDirectoryMapping ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Configuration.VirtualDirectoryMapping[] * int -&gt; unit" Usage="virtualDirectoryMappingCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As VirtualDirectoryMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::VirtualDirectoryMapping ^ Get(int index);" />
+      <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.Configuration.VirtualDirectoryMapping" Usage="virtualDirectoryMappingCollection.Get index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (virtualDirectory As String) As VirtualDirectoryMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::VirtualDirectoryMapping ^ Get(System::String ^ virtualDirectory);" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Web.Configuration.VirtualDirectoryMapping" Usage="virtualDirectoryMappingCollection.Get virtualDirectory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="virtualDirectoryMappingCollection.GetKey index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMappingCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As VirtualDirectoryMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::VirtualDirectoryMapping ^ default[int] { System::Web::Configuration::VirtualDirectoryMapping ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.VirtualDirectoryMapping" Usage="System.Web.Configuration.VirtualDirectoryMappingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMappingCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(virtualDirectory As String) As VirtualDirectoryMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::VirtualDirectoryMapping ^ default[System::String ^] { System::Web::Configuration::VirtualDirectoryMapping ^ get(System::String ^ virtualDirectory); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.VirtualDirectoryMapping" Usage="System.Web.Configuration.VirtualDirectoryMappingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (virtualDirectory As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ virtualDirectory);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="virtualDirectoryMappingCollection.Remove virtualDirectory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -308,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="virtualDirectoryMappingCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

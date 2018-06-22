@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ValidationSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidationSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationSettings abstract sealed" />
+  <TypeSignature Language="F#" Value="type ValidationSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ValidationSettings.UnobtrusiveValidationMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property UnobtrusiveValidationMode As UnobtrusiveValidationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::UnobtrusiveValidationMode UnobtrusiveValidationMode { System::Web::UI::UnobtrusiveValidationMode get(); void set(System::Web::UI::UnobtrusiveValidationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.UnobtrusiveValidationMode : System.Web.UI.UnobtrusiveValidationMode with get, set" Usage="System.Web.UI.ValidationSettings.UnobtrusiveValidationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

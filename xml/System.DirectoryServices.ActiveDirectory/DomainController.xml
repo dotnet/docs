@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DomainController" />
   <TypeSignature Language="VB.NET" Value="Public Class DomainController&#xA;Inherits DirectoryServer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DomainController : System::DirectoryServices::ActiveDirectory::DirectoryServer" />
+  <TypeSignature Language="F#" Value="type DomainController = class&#xA;    inherit DirectoryServer" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.CheckReplicationConsistency" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CheckReplicationConsistency ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CheckReplicationConsistency();" />
+      <MemberSignature Language="F#" Value="override this.CheckReplicationConsistency : unit -&gt; unit" Usage="domainController.CheckReplicationConsistency " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.CurrentTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CurrentTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentTime : DateTime" Usage="System.DirectoryServices.ActiveDirectory.DomainController.CurrentTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="domainController.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.Domain" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Domain As Domain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::Domain ^ Domain { System::DirectoryServices::ActiveDirectory::Domain ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : System.DirectoryServices.ActiveDirectory.Domain" Usage="System.DirectoryServices.ActiveDirectory.DomainController.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.EnableGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EnableGlobalCatalog () As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ EnableGlobalCatalog();" />
+      <MemberSignature Language="F#" Value="abstract member EnableGlobalCatalog : unit -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog&#xA;override this.EnableGlobalCatalog : unit -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="domainController.EnableGlobalCatalog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!DomainController ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="domainController.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.FindAll(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAll (context As DirectoryContext) As DomainControllerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::DomainControllerCollection ^ FindAll(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member FindAll : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.DomainControllerCollection" Usage="System.DirectoryServices.ActiveDirectory.DomainController.FindAll context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.FindAll(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAll (context As DirectoryContext, siteName As String) As DomainControllerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::DomainControllerCollection ^ FindAll(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="static member FindAll : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.DomainControllerCollection" Usage="System.DirectoryServices.ActiveDirectory.DomainController.FindAll (context, siteName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext) As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::DomainController ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.DomainController.FindOne context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext, flag As LocatorOptions) As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::DomainController ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::DirectoryServices::ActiveDirectory::LocatorOptions flag);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext * System.DirectoryServices.ActiveDirectory.LocatorOptions -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.DomainController.FindOne (context, flag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -345,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext, siteName As String) As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::DomainController ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.DomainController.FindOne (context, siteName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -378,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext, siteName As String, flag As LocatorOptions) As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::DomainController ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ siteName, System::DirectoryServices::ActiveDirectory::LocatorOptions flag);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext * string * System.DirectoryServices.ActiveDirectory.LocatorOptions -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.DomainController.FindOne (context, siteName, flag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -414,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.Forest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Forest As Forest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::Forest ^ Forest { System::DirectoryServices::ActiveDirectory::Forest ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Forest : System.DirectoryServices.ActiveDirectory.Forest" Usage="System.DirectoryServices.ActiveDirectory.DomainController.Forest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -437,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.GetAllReplicationNeighbors" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllReplicationNeighbors () As ReplicationNeighborCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationNeighborCollection ^ GetAllReplicationNeighbors();" />
+      <MemberSignature Language="F#" Value="override this.GetAllReplicationNeighbors : unit -&gt; System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" Usage="domainController.GetAllReplicationNeighbors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -465,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.GetDirectorySearcher" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDirectorySearcher () As DirectorySearcher" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::DirectoryServices::DirectorySearcher ^ GetDirectorySearcher();" />
+      <MemberSignature Language="F#" Value="abstract member GetDirectorySearcher : unit -&gt; System.DirectoryServices.DirectorySearcher&#xA;override this.GetDirectorySearcher : unit -&gt; System.DirectoryServices.DirectorySearcher" Usage="domainController.GetDirectorySearcher " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -489,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.GetDomainController(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDomainController (context As DirectoryContext) As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::DomainController ^ GetDomainController(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetDomainController : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.DomainController.GetDomainController context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -520,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.GetReplicationConnectionFailures" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationConnectionFailures () As ReplicationFailureCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationFailureCollection ^ GetReplicationConnectionFailures();" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationConnectionFailures : unit -&gt; System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" Usage="domainController.GetReplicationConnectionFailures " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -548,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.GetReplicationCursors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationCursors (partition As String) As ReplicationCursorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationCursorCollection ^ GetReplicationCursors(System::String ^ partition);" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationCursors : string -&gt; System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" Usage="domainController.GetReplicationCursors partition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -583,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.GetReplicationMetadata(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationMetadata (objectPath As String) As ActiveDirectoryReplicationMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ActiveDirectoryReplicationMetadata ^ GetReplicationMetadata(System::String ^ objectPath);" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationMetadata : string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" Usage="domainController.GetReplicationMetadata objectPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -618,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.GetReplicationNeighbors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationNeighbors (partition As String) As ReplicationNeighborCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationNeighborCollection ^ GetReplicationNeighbors(System::String ^ partition);" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationNeighbors : string -&gt; System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" Usage="domainController.GetReplicationNeighbors partition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -653,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.GetReplicationOperationInformation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationOperationInformation () As ReplicationOperationInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationOperationInformation ^ GetReplicationOperationInformation();" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationOperationInformation : unit -&gt; System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" Usage="domainController.GetReplicationOperationInformation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -681,6 +703,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.HighestCommittedUsn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HighestCommittedUsn As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long HighestCommittedUsn { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.HighestCommittedUsn : int64" Usage="System.DirectoryServices.ActiveDirectory.DomainController.HighestCommittedUsn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -703,6 +726,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.InboundConnections" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property InboundConnections As ReplicationConnectionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::DirectoryServices::ActiveDirectory::ReplicationConnectionCollection ^ InboundConnections { System::DirectoryServices::ActiveDirectory::ReplicationConnectionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InboundConnections : System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" Usage="System.DirectoryServices.ActiveDirectory.DomainController.InboundConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -727,6 +751,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.IPAddress" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IPAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ IPAddress { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IPAddress : string" Usage="System.DirectoryServices.ActiveDirectory.DomainController.IPAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -750,6 +775,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.IsGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsGlobalCatalog () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsGlobalCatalog();" />
+      <MemberSignature Language="F#" Value="abstract member IsGlobalCatalog : unit -&gt; bool&#xA;override this.IsGlobalCatalog : unit -&gt; bool" Usage="domainController.IsGlobalCatalog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -775,6 +801,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.OSVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OSVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OSVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OSVersion : string" Usage="System.DirectoryServices.ActiveDirectory.DomainController.OSVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -797,6 +824,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.OutboundConnections" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OutboundConnections As ReplicationConnectionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::DirectoryServices::ActiveDirectory::ReplicationConnectionCollection ^ OutboundConnections { System::DirectoryServices::ActiveDirectory::ReplicationConnectionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutboundConnections : System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" Usage="System.DirectoryServices.ActiveDirectory.DomainController.OutboundConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -821,6 +849,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.Roles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Roles As ActiveDirectoryRoleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectoryRoleCollection ^ Roles { System::DirectoryServices::ActiveDirectory::ActiveDirectoryRoleCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Roles : System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection" Usage="System.DirectoryServices.ActiveDirectory.DomainController.Roles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -845,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.SeizeRoleOwnership(System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SeizeRoleOwnership (role As ActiveDirectoryRole)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeizeRoleOwnership(System::DirectoryServices::ActiveDirectory::ActiveDirectoryRole role);" />
+      <MemberSignature Language="F#" Value="member this.SeizeRoleOwnership : System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole -&gt; unit" Usage="domainController.SeizeRoleOwnership role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -881,6 +911,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.SiteName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SiteName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SiteName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SiteName : string" Usage="System.DirectoryServices.ActiveDirectory.DomainController.SiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -905,6 +936,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DomainController.SyncFromAllServersCallback" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SyncFromAllServersCallback As SyncUpdateCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::DirectoryServices::ActiveDirectory::SyncUpdateCallback ^ SyncFromAllServersCallback { System::DirectoryServices::ActiveDirectory::SyncUpdateCallback ^ get(); void set(System::DirectoryServices::ActiveDirectory::SyncUpdateCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SyncFromAllServersCallback : System.DirectoryServices.ActiveDirectory.SyncUpdateCallback with get, set" Usage="System.DirectoryServices.ActiveDirectory.DomainController.SyncFromAllServersCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -929,6 +961,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyncReplicaFromAllServers (partition As String, options As SyncFromAllServersOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SyncReplicaFromAllServers(System::String ^ partition, System::DirectoryServices::ActiveDirectory::SyncFromAllServersOptions options);" />
+      <MemberSignature Language="F#" Value="override this.SyncReplicaFromAllServers : string * System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions -&gt; unit" Usage="domainController.SyncReplicaFromAllServers (partition, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -970,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.SyncReplicaFromServer(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyncReplicaFromServer (partition As String, sourceServer As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SyncReplicaFromServer(System::String ^ partition, System::String ^ sourceServer);" />
+      <MemberSignature Language="F#" Value="override this.SyncReplicaFromServer : string * string -&gt; unit" Usage="domainController.SyncReplicaFromServer (partition, sourceServer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1005,6 +1039,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.TransferRoleOwnership(System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TransferRoleOwnership (role As ActiveDirectoryRole)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransferRoleOwnership(System::DirectoryServices::ActiveDirectory::ActiveDirectoryRole role);" />
+      <MemberSignature Language="F#" Value="member this.TransferRoleOwnership : System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole -&gt; unit" Usage="domainController.TransferRoleOwnership role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1033,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DomainController.TriggerSyncReplicaFromNeighbors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TriggerSyncReplicaFromNeighbors (partition As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TriggerSyncReplicaFromNeighbors(System::String ^ partition);" />
+      <MemberSignature Language="F#" Value="override this.TriggerSyncReplicaFromNeighbors : string -&gt; unit" Usage="domainController.TriggerSyncReplicaFromNeighbors partition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

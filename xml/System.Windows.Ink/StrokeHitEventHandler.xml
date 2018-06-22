@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeHitEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StrokeHitEventHandler(sender As Object, e As StrokeHitEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StrokeHitEventHandler(System::Object ^ sender, StrokeHitEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StrokeHitEventHandler = delegate of obj * StrokeHitEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

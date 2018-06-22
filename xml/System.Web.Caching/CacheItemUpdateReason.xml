@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemUpdateReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum CacheItemUpdateReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class CacheItemUpdateReason" />
+  <TypeSignature Language="F#" Value="type CacheItemUpdateReason = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemUpdateReason.DependencyChanged" />
       <MemberSignature Language="VB.NET" Value="DependencyChanged" />
       <MemberSignature Language="C++ CLI" Value="DependencyChanged" />
+      <MemberSignature Language="F#" Value="DependencyChanged = 2" Usage="System.Web.Caching.CacheItemUpdateReason.DependencyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemUpdateReason.Expired" />
       <MemberSignature Language="VB.NET" Value="Expired" />
       <MemberSignature Language="C++ CLI" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 1" Usage="System.Web.Caching.CacheItemUpdateReason.Expired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

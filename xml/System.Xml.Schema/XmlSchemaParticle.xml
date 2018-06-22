@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaParticle" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaParticle&#xA;Inherits XmlSchemaAnnotated" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaParticle abstract : System::Xml::Schema::XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaParticle = class&#xA;    inherit XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaParticle.MaxOccurs" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxOccurs As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal MaxOccurs { System::Decimal get(); void set(System::Decimal value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxOccurs : decimal with get, set" Usage="System.Xml.Schema.XmlSchemaParticle.MaxOccurs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaParticle.MaxOccursString" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxOccursString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MaxOccursString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxOccursString : string with get, set" Usage="System.Xml.Schema.XmlSchemaParticle.MaxOccursString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaParticle.MinOccurs" />
       <MemberSignature Language="VB.NET" Value="Public Property MinOccurs As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal MinOccurs { System::Decimal get(); void set(System::Decimal value); };" />
+      <MemberSignature Language="F#" Value="member this.MinOccurs : decimal with get, set" Usage="System.Xml.Schema.XmlSchemaParticle.MinOccurs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaParticle.MinOccursString" />
       <MemberSignature Language="VB.NET" Value="Public Property MinOccursString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinOccursString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MinOccursString : string with get, set" Usage="System.Xml.Schema.XmlSchemaParticle.MinOccursString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ProcessInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ProcessInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessInfo" />
+  <TypeSignature Language="F#" Value="type ProcessInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ProcessInfo.#ctor(System.DateTime,System.TimeSpan,System.Int32,System.Int32,System.Web.ProcessStatus,System.Web.ProcessShutdownReason,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (startTime As DateTime, age As TimeSpan, processID As Integer, requestCount As Integer, status As ProcessStatus, shutdownReason As ProcessShutdownReason, peakMemoryUsed As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProcessInfo(DateTime startTime, TimeSpan age, int processID, int requestCount, System::Web::ProcessStatus status, System::Web::ProcessShutdownReason shutdownReason, int peakMemoryUsed);" />
+      <MemberSignature Language="F#" Value="new System.Web.ProcessInfo : DateTime * TimeSpan * int * int * System.Web.ProcessStatus * System.Web.ProcessShutdownReason * int -&gt; System.Web.ProcessInfo" Usage="new System.Web.ProcessInfo (startTime, age, processID, requestCount, status, shutdownReason, peakMemoryUsed)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.Age" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Age As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Age { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.Age : TimeSpan" Usage="System.Web.ProcessInfo.Age" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.PeakMemoryUsed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeakMemoryUsed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PeakMemoryUsed { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeakMemoryUsed : int" Usage="System.Web.ProcessInfo.PeakMemoryUsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.ProcessID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProcessID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessID : int" Usage="System.Web.ProcessInfo.ProcessID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.RequestCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RequestCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestCount : int" Usage="System.Web.ProcessInfo.RequestCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ProcessInfo.SetAll(System.DateTime,System.TimeSpan,System.Int32,System.Int32,System.Web.ProcessStatus,System.Web.ProcessShutdownReason,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAll (startTime As DateTime, age As TimeSpan, processID As Integer, requestCount As Integer, status As ProcessStatus, shutdownReason As ProcessShutdownReason, peakMemoryUsed As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAll(DateTime startTime, TimeSpan age, int processID, int requestCount, System::Web::ProcessStatus status, System::Web::ProcessShutdownReason shutdownReason, int peakMemoryUsed);" />
+      <MemberSignature Language="F#" Value="member this.SetAll : DateTime * TimeSpan * int * int * System.Web.ProcessStatus * System.Web.ProcessShutdownReason * int -&gt; unit" Usage="processInfo.SetAll (startTime, age, processID, requestCount, status, shutdownReason, peakMemoryUsed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.ShutdownReason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShutdownReason As ProcessShutdownReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ProcessShutdownReason ShutdownReason { System::Web::ProcessShutdownReason get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShutdownReason : System.Web.ProcessShutdownReason" Usage="System.Web.ProcessInfo.ShutdownReason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartTime : DateTime" Usage="System.Web.ProcessInfo.StartTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As ProcessStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ProcessStatus Status { System::Web::ProcessStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Web.ProcessStatus" Usage="System.Web.ProcessInfo.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

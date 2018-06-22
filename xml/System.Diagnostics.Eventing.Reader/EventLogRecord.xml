@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogRecord" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogRecord&#xA;Inherits EventRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogRecord : System::Diagnostics::Eventing::Reader::EventRecord" />
+  <TypeSignature Language="F#" Value="type EventLogRecord = class&#xA;    inherit EventRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ActivityId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActivityId As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;Guid&gt; ActivityId { Nullable&lt;Guid&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityId : Nullable&lt;Guid&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Bookmark" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bookmark As EventBookmark" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Diagnostics::Eventing::Reader::EventBookmark ^ Bookmark { System::Diagnostics::Eventing::Reader::EventBookmark ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bookmark : System.Diagnostics.Eventing.Reader.EventBookmark" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Bookmark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ContainerLog" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainerLog As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContainerLog { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainerLog : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ContainerLog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eventLogRecord.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.FormatDescription" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatDescription () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ FormatDescription();" />
+      <MemberSignature Language="F#" Value="override this.FormatDescription : unit -&gt; string" Usage="eventLogRecord.FormatDescription " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.FormatDescription(System.Collections.Generic.IEnumerable{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatDescription (values As IEnumerable(Of Object)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ FormatDescription(System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.FormatDescription : seq&lt;obj&gt; -&gt; string" Usage="eventLogRecord.FormatDescription values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.GetPropertyValues(System.Diagnostics.Eventing.Reader.EventLogPropertySelector)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValues (propertySelector As EventLogPropertySelector) As IList(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Object ^&gt; ^ GetPropertyValues(System::Diagnostics::Eventing::Reader::EventLogPropertySelector ^ propertySelector);" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyValues : System.Diagnostics.Eventing.Reader.EventLogPropertySelector -&gt; System.Collections.Generic.IList&lt;obj&gt;" Usage="eventLogRecord.GetPropertyValues propertySelector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Id" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Id { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Keywords" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keywords As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;long&gt; Keywords { Nullable&lt;long&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keywords : Nullable&lt;int64&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -244,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.KeywordsDisplayNames" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeywordsDisplayNames As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ KeywordsDisplayNames { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeywordsDisplayNames : seq&lt;string&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.KeywordsDisplayNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -271,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Level" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Level As Nullable(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;System::Byte&gt; Level { Nullable&lt;System::Byte&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Nullable&lt;byte&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -298,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.LevelDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LevelDisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LevelDisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LevelDisplayName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.LevelDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -325,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.LogName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LogName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LogName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.LogName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -345,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MachineName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -365,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.MatchedQueryIds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchedQueryIds As IEnumerable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;int&gt; ^ MatchedQueryIds { System::Collections::Generic::IEnumerable&lt;int&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MatchedQueryIds : seq&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.MatchedQueryIds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -385,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Opcode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Opcode As Nullable(Of Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;short&gt; Opcode { Nullable&lt;short&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Opcode : Nullable&lt;int16&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Opcode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -412,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.OpcodeDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OpcodeDisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ OpcodeDisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpcodeDisplayName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.OpcodeDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -439,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ProcessId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ProcessId As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;int&gt; ProcessId { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessId : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ProcessId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -459,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Properties As IList(Of EventProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventProperty ^&gt; ^ Properties { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventProperty&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -479,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ProviderId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ProviderId As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;Guid&gt; ProviderId { Nullable&lt;Guid&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderId : Nullable&lt;Guid&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ProviderId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -499,6 +520,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ProviderName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -519,6 +541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Qualifiers" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Qualifiers As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;int&gt; Qualifiers { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Qualifiers : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Qualifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -539,6 +562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.RecordId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecordId As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;long&gt; RecordId { Nullable&lt;long&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecordId : Nullable&lt;int64&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.RecordId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -559,6 +583,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.RelatedActivityId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RelatedActivityId As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;Guid&gt; RelatedActivityId { Nullable&lt;Guid&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedActivityId : Nullable&lt;Guid&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.RelatedActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -586,6 +611,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Task" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Task As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;int&gt; Task { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Task : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -613,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.TaskDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TaskDisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TaskDisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskDisplayName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.TaskDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -640,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.ThreadId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ThreadId As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;int&gt; ThreadId { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadId : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.ThreadId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -660,6 +688,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.TimeCreated" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TimeCreated As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;DateTime&gt; TimeCreated { Nullable&lt;DateTime&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeCreated : Nullable&lt;DateTime&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.TimeCreated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -680,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogRecord.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToXml();" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; string" Usage="eventLogRecord.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -706,6 +736,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.UserId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UserId As SecurityIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::SecurityIdentifier ^ UserId { System::Security::Principal::SecurityIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserId : System.Security.Principal.SecurityIdentifier" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.UserId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -726,6 +757,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogRecord.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As Nullable(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;System::Byte&gt; Version { Nullable&lt;System::Byte&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Nullable&lt;byte&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogRecord.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

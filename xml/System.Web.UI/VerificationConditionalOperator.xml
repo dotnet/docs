@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationConditionalOperator" />
   <TypeSignature Language="VB.NET" Value="Public Enum VerificationConditionalOperator" />
   <TypeSignature Language="C++ CLI" Value="public enum class VerificationConditionalOperator" />
+  <TypeSignature Language="F#" Value="type VerificationConditionalOperator = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationConditionalOperator.Equals" />
       <MemberSignature Language="VB.NET" Value="Equals" />
       <MemberSignature Language="C++ CLI" Value="Equals" />
+      <MemberSignature Language="F#" Value="Equals = 0" Usage="System.Web.UI.VerificationConditionalOperator.Equals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationConditionalOperator.NotEquals" />
       <MemberSignature Language="VB.NET" Value="NotEquals" />
       <MemberSignature Language="C++ CLI" Value="NotEquals" />
+      <MemberSignature Language="F#" Value="NotEquals = 1" Usage="System.Web.UI.VerificationConditionalOperator.NotEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

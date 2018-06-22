@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlLineInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlLineInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlLineInfo" />
+  <TypeSignature Language="F#" Value="type IXamlLineInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlLineInfo.HasLineInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLineInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLineInfo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLineInfo : bool" Usage="System.Xaml.IXamlLineInfo.HasLineInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlLineInfo.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Xaml.IXamlLineInfo.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlLineInfo.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Xaml.IXamlLineInfo.LinePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

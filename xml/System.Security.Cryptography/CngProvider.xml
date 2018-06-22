@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CngProvider&#xA;Implements IEquatable(Of CngProvider)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CngProvider sealed : IEquatable&lt;System::Security::Cryptography::CngProvider ^&gt;" />
+  <TypeSignature Language="F#" Value="type CngProvider = class&#xA;    interface IEquatable&lt;CngProvider&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProvider.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (provider As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CngProvider(System::String ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CngProvider : string -&gt; System.Security.Cryptography.CngProvider" Usage="new System.Security.Cryptography.CngProvider provider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProvider.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cngProvider.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProvider.Equals(System.Security.Cryptography.CngProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As CngProvider) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Security::Cryptography::CngProvider ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Security.Cryptography.CngProvider -&gt; bool" Usage="cngProvider.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProvider.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cngProvider.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngProvider.MicrosoftSmartCardKeyStorageProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MicrosoftSmartCardKeyStorageProvider As CngProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::CngProvider ^ MicrosoftSmartCardKeyStorageProvider { System::Security::Cryptography::CngProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MicrosoftSmartCardKeyStorageProvider : System.Security.Cryptography.CngProvider" Usage="System.Security.Cryptography.CngProvider.MicrosoftSmartCardKeyStorageProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MicrosoftSoftwareKeyStorageProvider As CngProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::CngProvider ^ MicrosoftSoftwareKeyStorageProvider { System::Security::Cryptography::CngProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MicrosoftSoftwareKeyStorageProvider : System.Security.Cryptography.CngProvider" Usage="System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProvider.op_Equality(System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CngProvider, right As CngProvider) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::Cryptography::CngProvider ^ left, System::Security::Cryptography::CngProvider ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Security.Cryptography.CngProvider * System.Security.Cryptography.CngProvider -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProvider.op_Inequality(System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CngProvider, right As CngProvider) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::Cryptography::CngProvider ^ left, System::Security::Cryptography::CngProvider ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Security.Cryptography.CngProvider * System.Security.Cryptography.CngProvider -&gt; bool" Usage="System.Security.Cryptography.CngProvider.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -341,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngProvider.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Provider { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : string" Usage="System.Security.Cryptography.CngProvider.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProvider.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cngProvider.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

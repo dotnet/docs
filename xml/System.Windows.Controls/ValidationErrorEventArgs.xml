@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidationErrorEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationErrorEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type ValidationErrorEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationErrorEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As ValidationErrorEventAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ValidationErrorEventAction Action { System::Windows::Controls::ValidationErrorEventAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Windows.Controls.ValidationErrorEventAction" Usage="System.Windows.Controls.ValidationErrorEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationErrorEventArgs.Error" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Error As ValidationError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ValidationError ^ Error { System::Windows::Controls::ValidationError ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Error : System.Windows.Controls.ValidationError" Usage="System.Windows.Controls.ValidationErrorEventArgs.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationErrorEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="validationErrorEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

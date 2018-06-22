@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementEventWatcher" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementEventWatcher&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementEventWatcher : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type ManagementEventWatcher = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.Management.EventQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (query As EventQuery)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementEventWatcher(System::Management::EventQuery ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : System.Management.EventQuery -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (query As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementEventWatcher(System::String ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : string -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.Management.ManagementScope,System.Management.EventQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, query As EventQuery)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementEventWatcher(System::Management::ManagementScope ^ scope, System::Management::EventQuery ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : System.Management.ManagementScope * System.Management.EventQuery -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher (scope, query)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, query As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementEventWatcher(System::String ^ scope, System::String ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : string * string -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher (scope, query)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.Management.ManagementScope,System.Management.EventQuery,System.Management.EventWatcherOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, query As EventQuery, options As EventWatcherOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementEventWatcher(System::Management::ManagementScope ^ scope, System::Management::EventQuery ^ query, System::Management::EventWatcherOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : System.Management.ManagementScope * System.Management.EventQuery * System.Management.EventWatcherOptions -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher (scope, query, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -276,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.#ctor(System.String,System.String,System.Management.EventWatcherOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, query As String, options As EventWatcherOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementEventWatcher(System::String ^ scope, System::String ^ query, System::Management::EventWatcherOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementEventWatcher : string * string * System.Management.EventWatcherOptions -&gt; System.Management.ManagementEventWatcher" Usage="new System.Management.ManagementEventWatcher (scope, query, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -317,6 +324,7 @@
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementEventWatcher.EventArrived" />
       <MemberSignature Language="VB.NET" Value="Public Event EventArrived As EventArrivedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Management::EventArrivedEventHandler ^ EventArrived;" />
+      <MemberSignature Language="F#" Value="member this.EventArrived : System.Management.EventArrivedEventHandler " Usage="member this.EventArrived : System.Management.EventArrivedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -353,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ManagementEventWatcher ()" />
+      <MemberSignature Language="F#" Value="abstract member Finalize : unit -&gt; unit&#xA;override this.Finalize : unit -&gt; unit" Usage="managementEventWatcher.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -382,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementEventWatcher.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As EventWatcherOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::EventWatcherOptions ^ Options { System::Management::EventWatcherOptions ^ get(); void set(System::Management::EventWatcherOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Management.EventWatcherOptions with get, set" Usage="System.Management.ManagementEventWatcher.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -422,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementEventWatcher.Query" />
       <MemberSignature Language="VB.NET" Value="Public Property Query As EventQuery" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::EventQuery ^ Query { System::Management::EventQuery ^ get(); void set(System::Management::EventQuery ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Query : System.Management.EventQuery with get, set" Usage="System.Management.ManagementEventWatcher.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -462,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementEventWatcher.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As ManagementScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementScope ^ Scope { System::Management::ManagementScope ^ get(); void set(System::Management::ManagementScope ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Management.ManagementScope with get, set" Usage="System.Management.ManagementEventWatcher.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -502,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="managementEventWatcher.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -531,6 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="managementEventWatcher.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -568,6 +582,7 @@
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementEventWatcher.Stopped" />
       <MemberSignature Language="VB.NET" Value="Public Event Stopped As StoppedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Management::StoppedEventHandler ^ Stopped;" />
+      <MemberSignature Language="F#" Value="member this.Stopped : System.Management.StoppedEventHandler " Usage="member this.Stopped : System.Management.StoppedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -604,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.WaitForNextEvent" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitForNextEvent () As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementBaseObject ^ WaitForNextEvent();" />
+      <MemberSignature Language="F#" Value="member this.WaitForNextEvent : unit -&gt; System.Management.ManagementBaseObject" Usage="managementEventWatcher.WaitForNextEvent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

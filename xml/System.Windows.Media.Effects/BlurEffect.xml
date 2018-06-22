@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BlurEffect" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BlurEffect&#xA;Inherits Effect" />
   <TypeSignature Language="C++ CLI" Value="public ref class BlurEffect sealed : System::Windows::Media::Effects::Effect" />
+  <TypeSignature Language="F#" Value="type BlurEffect = class&#xA;    inherit Effect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurEffect.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BlurEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BlurEffect ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BlurEffect" Usage="blurEffect.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurEffect.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BlurEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BlurEffect ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BlurEffect" Usage="blurEffect.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurEffect.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="blurEffect.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BlurEffect.KernelType" />
       <MemberSignature Language="VB.NET" Value="Public Property KernelType As KernelType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::KernelType KernelType { System::Windows::Media::Effects::KernelType get(); void set(System::Windows::Media::Effects::KernelType value); };" />
+      <MemberSignature Language="F#" Value="member this.KernelType : System.Windows.Media.Effects.KernelType with get, set" Usage="System.Windows.Media.Effects.BlurEffect.KernelType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BlurEffect.KernelTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KernelTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KernelTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KernelTypeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BlurEffect.KernelTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BlurEffect.Radius" />
       <MemberSignature Language="VB.NET" Value="Public Property Radius As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Radius { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Radius : double with get, set" Usage="System.Windows.Media.Effects.BlurEffect.Radius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BlurEffect.RadiusProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RadiusProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RadiusProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BlurEffect.RadiusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BlurEffect.RenderingBias" />
       <MemberSignature Language="VB.NET" Value="Public Property RenderingBias As RenderingBias" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::RenderingBias RenderingBias { System::Windows::Media::Effects::RenderingBias get(); void set(System::Windows::Media::Effects::RenderingBias value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderingBias : System.Windows.Media.Effects.RenderingBias with get, set" Usage="System.Windows.Media.Effects.BlurEffect.RenderingBias" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -220,6 +229,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BlurEffect.RenderingBiasProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderingBiasProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderingBiasProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RenderingBiasProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BlurEffect.RenderingBiasProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

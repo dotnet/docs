@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ITemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITemplate" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITemplate" />
+  <TypeSignature Language="F#" Value="type ITemplate = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstantiateIn (container As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstantiateIn(System::Web::UI::Control ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member InstantiateIn : System.Web.UI.Control -&gt; unit" Usage="iTemplate.InstantiateIn container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

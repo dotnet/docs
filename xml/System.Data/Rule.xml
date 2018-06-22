@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Rule" />
   <TypeSignature Language="VB.NET" Value="Public Enum Rule" />
   <TypeSignature Language="C++ CLI" Value="public enum class Rule" />
+  <TypeSignature Language="F#" Value="type Rule = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Rule.Cascade" />
       <MemberSignature Language="VB.NET" Value="Cascade" />
       <MemberSignature Language="C++ CLI" Value="Cascade" />
+      <MemberSignature Language="F#" Value="Cascade = 1" Usage="System.Data.Rule.Cascade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Rule.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Rule.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Rule.SetDefault" />
       <MemberSignature Language="VB.NET" Value="SetDefault" />
       <MemberSignature Language="C++ CLI" Value="SetDefault" />
+      <MemberSignature Language="F#" Value="SetDefault = 3" Usage="System.Data.Rule.SetDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Rule.SetNull" />
       <MemberSignature Language="VB.NET" Value="SetNull" />
       <MemberSignature Language="C++ CLI" Value="SetNull" />
+      <MemberSignature Language="F#" Value="SetNull = 2" Usage="System.Data.Rule.SetNull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

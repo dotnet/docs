@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBidirectionalContainer(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IBidirectionalContainer" />
+  <TypeSignature Language="F#" Value="type IBidirectionalContainer&lt;'Value&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -17,5 +18,28 @@
     <summary>Interface for a container that supports both forward and backward iteration. Containers that implement bidirectional iteration support the following operations: moving forward one position by calling <c>operator++</c>, and moving backward one position by calling <c>operator--</c>.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="get_generation">
+      <MemberSignature Language="C#" Value="public uint get_generation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.UInt32 modopt(System.Runtime.CompilerServices.IsLong) get_generation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer`1.get_generation" />
+      <MemberSignature Language="VB.NET" Value="Public Function get_generation () As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 get_generation();" />
+      <MemberSignature Language="F#" Value="abstract member get_generation : unit -&gt; UInt32" Usage="iBidirectionalContainer.get_generation " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

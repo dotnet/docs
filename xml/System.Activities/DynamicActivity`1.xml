@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicActivity`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicActivity(Of TResult)&#xA;Inherits Activity(Of TResult)&#xA;Implements ICustomTypeDescriptor" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class DynamicActivity sealed : System::Activities::Activity&lt;TResult&gt;, System::ComponentModel::ICustomTypeDescriptor" />
+  <TypeSignature Language="F#" Value="type DynamicActivity&lt;'Result&gt; = class&#xA;    inherit Activity&lt;'Result&gt;&#xA;    interface ICustomTypeDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicActivity`1.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As Collection(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Attribute ^&gt; ^ Attributes { System::Collections::ObjectModel::Collection&lt;Attribute ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.ObjectModel.Collection&lt;Attribute&gt;" Usage="System.Activities.DynamicActivity&lt;'Result&gt;.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicActivity`1.Constraints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Constraints As Collection(Of Constraint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Validation::Constraint ^&gt; ^ Constraints { System::Collections::ObjectModel::Collection&lt;System::Activities::Validation::Constraint ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Constraints : System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.Constraint&gt;" Usage="System.Activities.DynamicActivity&lt;'Result&gt;.Constraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicActivity`1.Implementation" />
       <MemberSignature Language="VB.NET" Value="Public Property Implementation As Func(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Activities::Activity ^&gt; ^ Implementation { Func&lt;System::Activities::Activity ^&gt; ^ get(); void set(Func&lt;System::Activities::Activity ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Implementation : Func&lt;System.Activities.Activity&gt; with get, set" Usage="System.Activities.DynamicActivity&lt;'Result&gt;.Implementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicActivity`1.ImplementationVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property ImplementationVersion As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ ImplementationVersion { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImplementationVersion : Version with get, set" Usage="System.Activities.DynamicActivity&lt;'Result&gt;.ImplementationVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicActivity`1.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.DynamicActivity&lt;'Result&gt;.Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Activities.IDynamicActivity.Name</InterfaceMember>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicActivity`1.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As KeyedCollection(Of String, DynamicActivityProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::Activities::DynamicActivityProperty ^&gt; ^ Properties { System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::Activities::DynamicActivityProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.ObjectModel.KeyedCollection&lt;string, System.Activities.DynamicActivityProperty&gt;" Usage="System.Activities.DynamicActivity&lt;'Result&gt;.Properties" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Activities.IDynamicActivity.Properties</InterfaceMember>

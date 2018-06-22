@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ITransaction" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITransaction" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITransaction" />
+  <TypeSignature Language="F#" Value="type ITransaction = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ITransaction.Abort(System.EnterpriseServices.BOID@,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort (ByRef pboidReason As BOID, fRetaining As Integer, fAsync As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(System::EnterpriseServices::BOID % pboidReason, int fRetaining, int fAsync);" />
+      <MemberSignature Language="F#" Value="abstract member Abort :  * int * int -&gt; unit" Usage="iTransaction.Abort (pboidReason, fRetaining, fAsync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ITransaction.Commit(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit (fRetaining As Integer, grfTC As Integer, grfRM As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit(int fRetaining, int grfTC, int grfRM);" />
+      <MemberSignature Language="F#" Value="abstract member Commit : int * int * int -&gt; unit" Usage="iTransaction.Commit (fRetaining, grfTC, grfRM)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ITransaction.GetTransactionInfo(System.EnterpriseServices.XACTTRANSINFO@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTransactionInfo (ByRef pinfo As XACTTRANSINFO)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTransactionInfo([Runtime::InteropServices::Out] System::EnterpriseServices::XACTTRANSINFO % pinfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetTransactionInfo :  -&gt; unit" Usage="iTransaction.GetTransactionInfo pinfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

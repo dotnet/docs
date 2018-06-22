@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DesignerActionUIStateChangeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DesignerActionUIStateChangeType" />
+  <TypeSignature Language="F#" Value="type DesignerActionUIStateChangeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Hide" />
       <MemberSignature Language="VB.NET" Value="Hide" />
       <MemberSignature Language="C++ CLI" Value="Hide" />
+      <MemberSignature Language="F#" Value="Hide = 1" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Hide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Refresh" />
       <MemberSignature Language="VB.NET" Value="Refresh" />
       <MemberSignature Language="C++ CLI" Value="Refresh" />
+      <MemberSignature Language="F#" Value="Refresh = 2" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Show" />
       <MemberSignature Language="VB.NET" Value="Show" />
       <MemberSignature Language="C++ CLI" Value="Show" />
+      <MemberSignature Language="F#" Value="Show = 0" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Show" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

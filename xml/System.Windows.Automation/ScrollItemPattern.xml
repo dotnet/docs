@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ScrollItemPattern" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollItemPattern&#xA;Inherits BasePattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollItemPattern : System::Windows::Automation::BasePattern" />
+  <TypeSignature Language="F#" Value="type ScrollItemPattern = class&#xA;    inherit BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollItemPattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.ScrollItemPattern.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ScrollItemPattern.ScrollIntoView" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView();" />
+      <MemberSignature Language="F#" Value="member this.ScrollIntoView : unit -&gt; unit" Usage="scrollItemPattern.ScrollIntoView " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

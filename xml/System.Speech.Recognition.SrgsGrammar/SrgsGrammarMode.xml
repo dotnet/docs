@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SrgsGrammarMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SrgsGrammarMode" />
+  <TypeSignature Language="F#" Value="type SrgsGrammarMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@ grammar = new Grammar(document);
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode.Dtmf" />
       <MemberSignature Language="VB.NET" Value="Dtmf" />
       <MemberSignature Language="C++ CLI" Value="Dtmf" />
+      <MemberSignature Language="F#" Value="Dtmf = 1" Usage="System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode.Dtmf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -77,6 +79,7 @@ grammar = new Grammar(document);
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode.Voice" />
       <MemberSignature Language="VB.NET" Value="Voice" />
       <MemberSignature Language="C++ CLI" Value="Voice" />
+      <MemberSignature Language="F#" Value="Voice = 0" Usage="System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode.Voice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

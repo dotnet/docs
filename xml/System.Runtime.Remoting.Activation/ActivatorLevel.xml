@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Activation.ActivatorLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActivatorLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class ActivatorLevel" />
+  <TypeSignature Language="F#" Value="type ActivatorLevel = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.AppDomain" />
       <MemberSignature Language="VB.NET" Value="AppDomain" />
       <MemberSignature Language="C++ CLI" Value="AppDomain" />
+      <MemberSignature Language="F#" Value="AppDomain = 12" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.AppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Construction" />
       <MemberSignature Language="VB.NET" Value="Construction" />
       <MemberSignature Language="C++ CLI" Value="Construction" />
+      <MemberSignature Language="F#" Value="Construction = 4" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.Construction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Context" />
       <MemberSignature Language="VB.NET" Value="Context" />
       <MemberSignature Language="C++ CLI" Value="Context" />
+      <MemberSignature Language="F#" Value="Context = 8" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.Context" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Machine" />
       <MemberSignature Language="VB.NET" Value="Machine" />
       <MemberSignature Language="C++ CLI" Value="Machine" />
+      <MemberSignature Language="F#" Value="Machine = 20" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Process" />
       <MemberSignature Language="VB.NET" Value="Process" />
       <MemberSignature Language="C++ CLI" Value="Process" />
+      <MemberSignature Language="F#" Value="Process = 16" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.Process" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

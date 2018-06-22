@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ThemeInfoAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThemeInfoAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThemeInfoAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ThemeInfoAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ThemeInfoAttribute.#ctor(System.Windows.ResourceDictionaryLocation,System.Windows.ResourceDictionaryLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (themeDictionaryLocation As ResourceDictionaryLocation, genericDictionaryLocation As ResourceDictionaryLocation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThemeInfoAttribute(System::Windows::ResourceDictionaryLocation themeDictionaryLocation, System::Windows::ResourceDictionaryLocation genericDictionaryLocation);" />
+      <MemberSignature Language="F#" Value="new System.Windows.ThemeInfoAttribute : System.Windows.ResourceDictionaryLocation * System.Windows.ResourceDictionaryLocation -&gt; System.Windows.ThemeInfoAttribute" Usage="new System.Windows.ThemeInfoAttribute (themeDictionaryLocation, genericDictionaryLocation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GenericDictionaryLocation As ResourceDictionaryLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionaryLocation GenericDictionaryLocation { System::Windows::ResourceDictionaryLocation get(); };" />
+      <MemberSignature Language="F#" Value="member this.GenericDictionaryLocation : System.Windows.ResourceDictionaryLocation" Usage="System.Windows.ThemeInfoAttribute.GenericDictionaryLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThemeDictionaryLocation As ResourceDictionaryLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionaryLocation ThemeDictionaryLocation { System::Windows::ResourceDictionaryLocation get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThemeDictionaryLocation : System.Windows.ResourceDictionaryLocation" Usage="System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

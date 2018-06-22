@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityTokenReferenceStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityTokenReferenceStyle" />
+  <TypeSignature Language="F#" Value="type SecurityTokenReferenceStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.External" />
       <MemberSignature Language="VB.NET" Value="External" />
       <MemberSignature Language="C++ CLI" Value="External" />
+      <MemberSignature Language="F#" Value="External = 1" Usage="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.External" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.Internal" />
       <MemberSignature Language="VB.NET" Value="Internal" />
       <MemberSignature Language="C++ CLI" Value="Internal" />
+      <MemberSignature Language="F#" Value="Internal = 0" Usage="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.Internal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

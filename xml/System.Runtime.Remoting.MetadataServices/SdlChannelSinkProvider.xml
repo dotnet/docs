@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SdlChannelSinkProvider&#xA;Implements IServerChannelSinkProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SdlChannelSinkProvider : System::Runtime::Remoting::Channels::IServerChannelSinkProvider" />
+  <TypeSignature Language="F#" Value="type SdlChannelSinkProvider = class&#xA;    interface IServerChannelSinkProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.#ctor(System.Collections.IDictionary,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, providerData As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SdlChannelSinkProvider(System::Collections::IDictionary ^ properties, System::Collections::ICollection ^ providerData);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider : System.Collections.IDictionary * System.Collections.ICollection -&gt; System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider" Usage="new System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider (properties, providerData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSink (channel As IChannelReceiver) As IServerChannelSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Channels::IServerChannelSink ^ CreateSink(System::Runtime::Remoting::Channels::IChannelReceiver ^ channel);" />
+      <MemberSignature Language="F#" Value="abstract member CreateSink : System.Runtime.Remoting.Channels.IChannelReceiver -&gt; System.Runtime.Remoting.Channels.IServerChannelSink&#xA;override this.CreateSink : System.Runtime.Remoting.Channels.IChannelReceiver -&gt; System.Runtime.Remoting.Channels.IServerChannelSink" Usage="sdlChannelSinkProvider.CreateSink channel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.GetChannelData(System.Runtime.Remoting.Channels.IChannelDataStore)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetChannelData (localChannelData As IChannelDataStore)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetChannelData(System::Runtime::Remoting::Channels::IChannelDataStore ^ localChannelData);" />
+      <MemberSignature Language="F#" Value="abstract member GetChannelData : System.Runtime.Remoting.Channels.IChannelDataStore -&gt; unit&#xA;override this.GetChannelData : System.Runtime.Remoting.Channels.IChannelDataStore -&gt; unit" Usage="sdlChannelSinkProvider.GetChannelData localChannelData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.Next" />
       <MemberSignature Language="VB.NET" Value="Public Property Next As IServerChannelSinkProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ Next { System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ get(); void set(System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Next : System.Runtime.Remoting.Channels.IServerChannelSinkProvider with get, set" Usage="System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

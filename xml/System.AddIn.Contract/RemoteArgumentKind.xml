@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.RemoteArgumentKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum RemoteArgumentKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class RemoteArgumentKind" />
+  <TypeSignature Language="F#" Value="type RemoteArgumentKind = " />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Contract" />
       <MemberSignature Language="VB.NET" Value="Contract" />
       <MemberSignature Language="C++ CLI" Value="Contract" />
+      <MemberSignature Language="F#" Value="Contract = 3" Usage="System.AddIn.Contract.RemoteArgumentKind.Contract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Intrinsic" />
       <MemberSignature Language="VB.NET" Value="Intrinsic" />
       <MemberSignature Language="C++ CLI" Value="Intrinsic" />
+      <MemberSignature Language="F#" Value="Intrinsic = 1" Usage="System.AddIn.Contract.RemoteArgumentKind.Intrinsic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.IntrinsicArray" />
       <MemberSignature Language="VB.NET" Value="IntrinsicArray" />
       <MemberSignature Language="C++ CLI" Value="IntrinsicArray" />
+      <MemberSignature Language="F#" Value="IntrinsicArray = 2" Usage="System.AddIn.Contract.RemoteArgumentKind.IntrinsicArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Missing" />
       <MemberSignature Language="VB.NET" Value="Missing" />
       <MemberSignature Language="C++ CLI" Value="Missing" />
+      <MemberSignature Language="F#" Value="Missing = 0" Usage="System.AddIn.Contract.RemoteArgumentKind.Missing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

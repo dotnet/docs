@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.ReturnEventArgs`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ReturnEventArgs(Of T)&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ReturnEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ReturnEventArgs&lt;'T&gt; = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.ReturnEventArgs`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (result As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReturnEventArgs(T result);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Navigation.ReturnEventArgs&lt;'T&gt; : 'T -&gt; System.Windows.Navigation.ReturnEventArgs&lt;'T&gt;" Usage="new System.Windows.Navigation.ReturnEventArgs&lt;'T&gt; result" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.ReturnEventArgs`1.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Result { T get(); void set(T value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : 'T with get, set" Usage="System.Windows.Navigation.ReturnEventArgs&lt;'T&gt;.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

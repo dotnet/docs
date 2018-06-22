@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.NonSerializedAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NonSerializedAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class NonSerializedAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type NonSerializedAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

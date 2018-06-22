@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.UdpDiscoveryEndpointCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class UdpDiscoveryEndpointCollectionElement&#xA;Inherits StandardEndpointCollectionElement(Of UdpDiscoveryEndpoint, UdpDiscoveryEndpointElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class UdpDiscoveryEndpointCollectionElement : System::ServiceModel::Configuration::StandardEndpointCollectionElement&lt;System::ServiceModel::Discovery::UdpDiscoveryEndpoint ^, System::ServiceModel::Discovery::Configuration::UdpDiscoveryEndpointElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type UdpDiscoveryEndpointCollectionElement = class&#xA;    inherit StandardEndpointCollectionElement&lt;UdpDiscoveryEndpoint, UdpDiscoveryEndpointElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

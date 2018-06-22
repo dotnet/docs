@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TransactedChangeCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function TransactedChangeCallback(context As Object) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public delegate bool TransactedChangeCallback(System::Object ^ context);" />
+  <TypeSignature Language="F#" Value="type TransactedChangeCallback = delegate of obj -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

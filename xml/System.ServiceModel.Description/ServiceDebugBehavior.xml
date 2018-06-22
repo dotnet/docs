@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceDebugBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceDebugBehavior&#xA;Implements IServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceDebugBehavior : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type ServiceDebugBehavior = class&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -108,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageBinding" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpHelpPageBinding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ HttpHelpPageBinding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpHelpPageBinding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpHelpPageEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpHelpPageEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpHelpPageEnabled : bool with get, set" Usage="System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -182,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpHelpPageUrl As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ HttpHelpPageUrl { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpHelpPageUrl : Uri with get, set" Usage="System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageBinding" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpsHelpPageBinding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ HttpsHelpPageBinding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsHelpPageBinding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpsHelpPageEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpsHelpPageEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsHelpPageEnabled : bool with get, set" Usage="System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -286,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpsHelpPageUrl As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ HttpsHelpPageUrl { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsHelpPageUrl : Uri with get, set" Usage="System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -331,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeExceptionDetailInFaults { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

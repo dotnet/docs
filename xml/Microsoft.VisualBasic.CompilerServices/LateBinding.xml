@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.LateBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LateBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class LateBinding sealed" />
+  <TypeSignature Language="F#" Value="type LateBinding = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateCall(System.Object,System.Type,System.String,System.Object[],System.String[],System.Boolean[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub LateCall (o As Object, objType As Type, name As String, args As Object(), paramnames As String(), CopyBack As Boolean())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LateCall(System::Object ^ o, Type ^ objType, System::String ^ name, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::String ^&gt; ^ paramnames, cli::array &lt;bool&gt; ^ CopyBack);" />
+      <MemberSignature Language="F#" Value="static member LateCall : obj * Type * string * obj[] * string[] * bool[] -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.LateBinding.LateCall (o, objType, name, args, paramnames, CopyBack)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateGet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Boolean[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LateGet (o As Object, objType As Type, name As String, args As Object(), paramnames As String(), CopyBack As Boolean()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LateGet(System::Object ^ o, Type ^ objType, System::String ^ name, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::String ^&gt; ^ paramnames, cli::array &lt;bool&gt; ^ CopyBack);" />
+      <MemberSignature Language="F#" Value="static member LateGet : obj * Type * string * obj[] * string[] * bool[] -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.LateBinding.LateGet (o, objType, name, args, paramnames, CopyBack)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexGet(System.Object,System.Object[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LateIndexGet (o As Object, args As Object(), paramnames As String()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LateIndexGet(System::Object ^ o, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::String ^&gt; ^ paramnames);" />
+      <MemberSignature Language="F#" Value="static member LateIndexGet : obj * obj[] * string[] -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexGet (o, args, paramnames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexSet(System.Object,System.Object[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub LateIndexSet (o As Object, args As Object(), paramnames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LateIndexSet(System::Object ^ o, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::String ^&gt; ^ paramnames);" />
+      <MemberSignature Language="F#" Value="static member LateIndexSet : obj * obj[] * string[] -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexSet (o, args, paramnames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexSetComplex(System.Object,System.Object[],System.String[],System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub LateIndexSetComplex (o As Object, args As Object(), paramnames As String(), OptimisticSet As Boolean, RValueBase As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LateIndexSetComplex(System::Object ^ o, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::String ^&gt; ^ paramnames, bool OptimisticSet, bool RValueBase);" />
+      <MemberSignature Language="F#" Value="static member LateIndexSetComplex : obj * obj[] * string[] * bool * bool -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexSetComplex (o, args, paramnames, OptimisticSet, RValueBase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub LateSet (o As Object, objType As Type, name As String, args As Object(), paramnames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LateSet(System::Object ^ o, Type ^ objType, System::String ^ name, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::String ^&gt; ^ paramnames);" />
+      <MemberSignature Language="F#" Value="static member LateSet : obj * Type * string * obj[] * string[] -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.LateBinding.LateSet (o, objType, name, args, paramnames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -300,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateSetComplex(System.Object,System.Type,System.String,System.Object[],System.String[],System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub LateSetComplex (o As Object, objType As Type, name As String, args As Object(), paramnames As String(), OptimisticSet As Boolean, RValueBase As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LateSetComplex(System::Object ^ o, Type ^ objType, System::String ^ name, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::String ^&gt; ^ paramnames, bool OptimisticSet, bool RValueBase);" />
+      <MemberSignature Language="F#" Value="static member LateSetComplex : obj * Type * string * obj[] * string[] * bool * bool -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.LateBinding.LateSetComplex (o, objType, name, args, paramnames, OptimisticSet, RValueBase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

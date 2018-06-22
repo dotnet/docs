@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PingCompletedEventHandler(sender As Object, e As PingCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PingCompletedEventHandler(System::Object ^ sender, PingCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PingCompletedEventHandler = delegate of obj * PingCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Presentation.ServiceContractImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceContractImporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceContractImporter abstract sealed" />
+  <TypeSignature Language="F#" Value="type ServiceContractImporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Presentation.ServiceContractImporter.ContractTypeViewStateKey" />
       <MemberSignature Language="VB.NET" Value="Public Const ContractTypeViewStateKey As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContractTypeViewStateKey;" />
+      <MemberSignature Language="F#" Value="val mutable ContractTypeViewStateKey : string" Usage="System.ServiceModel.Activities.Presentation.ServiceContractImporter.ContractTypeViewStateKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Presentation.ServiceContractImporter.GenerateActivityTemplates(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Iterator Function GenerateActivityTemplates (contractType As Type) As IEnumerable(Of ActivityTemplateFactoryBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Toolbox::ActivityTemplateFactoryBuilder ^&gt; ^ GenerateActivityTemplates(Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="static member GenerateActivityTemplates : Type -&gt; seq&lt;System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder&gt;" Usage="System.ServiceModel.Activities.Presentation.ServiceContractImporter.GenerateActivityTemplates contractType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Presentation.ServiceContractImporter.SaveActivityTemplate(System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SaveActivityTemplate (activityTemplate As ActivityTemplateFactoryBuilder) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ SaveActivityTemplate(System::Activities::Presentation::Toolbox::ActivityTemplateFactoryBuilder ^ activityTemplate);" />
+      <MemberSignature Language="F#" Value="static member SaveActivityTemplate : System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder -&gt; string" Usage="System.ServiceModel.Activities.Presentation.ServiceContractImporter.SaveActivityTemplate activityTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type SelectContractType(class System.Reflection.AssemblyName localAssemblyName, class System.Collections.Generic.IList`1&lt;class System.Reflection.AssemblyName&gt; referencedAssemblies, class System.Activities.Presentation.EditingContext editingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Presentation.ServiceContractImporter.SelectContractType(System.Reflection.AssemblyName,System.Collections.Generic.IList{System.Reflection.AssemblyName},System.Activities.Presentation.EditingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ SelectContractType(System::Reflection::AssemblyName ^ localAssemblyName, System::Collections::Generic::IList&lt;System::Reflection::AssemblyName ^&gt; ^ referencedAssemblies, System::Activities::Presentation::EditingContext ^ editingContext);" />
+      <MemberSignature Language="F#" Value="static member SelectContractType : System.Reflection.AssemblyName * System.Collections.Generic.IList&lt;System.Reflection.AssemblyName&gt; * System.Activities.Presentation.EditingContext -&gt; Type" Usage="System.ServiceModel.Activities.Presentation.ServiceContractImporter.SelectContractType (localAssemblyName, referencedAssemblies, editingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>

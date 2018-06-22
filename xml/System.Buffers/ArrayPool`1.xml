@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.ArrayPool`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ArrayPool(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ArrayPool abstract" />
+  <TypeSignature Language="F#" Value="type ArrayPool&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Buffers</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As ArrayPool(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::ArrayPool&lt;T&gt; ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -90,6 +92,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Create(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (maxArrayLength As Integer, maxArraysPerBucket As Integer) As ArrayPool(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::ArrayPool&lt;T&gt; ^ Create(int maxArrayLength, int maxArraysPerBucket);" />
+      <MemberSignature Language="F#" Value="static member Create : int * int -&gt; System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Create (maxArrayLength, maxArraysPerBucket)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -126,6 +129,7 @@ The instance of the <xref:System.Buffers.ArrayPool%601> class created by this me
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Rent(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Rent (minimumLength As Integer) As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;T&gt; ^ Rent(int minimumLength);" />
+      <MemberSignature Language="F#" Value="abstract member Rent : int -&gt; 'T[]" Usage="arrayPool.Rent minimumLength" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -159,6 +163,7 @@ This buffer is loaned to the caller and should be returned to the same pool usin
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Return(!T[] array, bool clearArray) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Return(`0[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Return (array As T(), Optional clearArray As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member Return : 'T[] * bool -&gt; unit" Usage="arrayPool.Return (array, clearArray)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -194,6 +199,7 @@ Once a buffer has been returned to the pool, the caller gives up all ownership o
       <MemberSignature Language="DocId" Value="P:System.Buffers.ArrayPool`1.Shared" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shared As ArrayPool(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Buffers::ArrayPool&lt;T&gt; ^ Shared { System::Buffers::ArrayPool&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shared : System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Shared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>

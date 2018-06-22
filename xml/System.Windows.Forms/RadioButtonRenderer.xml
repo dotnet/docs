@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RadioButtonRenderer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RadioButtonRenderer" />
   <TypeSignature Language="C++ CLI" Value="public ref class RadioButtonRenderer sealed" />
+  <TypeSignature Language="F#" Value="type RadioButtonRenderer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawParentBackground(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawParentBackground (g As Graphics, bounds As Rectangle, childControl As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawParentBackground(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::Control ^ childControl);" />
+      <MemberSignature Language="F#" Value="static member DrawParentBackground : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.Control -&gt; unit" Usage="System.Windows.Forms.RadioButtonRenderer.DrawParentBackground (g, bounds, childControl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawRadioButton (g As Graphics, glyphLocation As Point, state As RadioButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRadioButton(System::Drawing::Graphics ^ g, System::Drawing::Point glyphLocation, System::Windows::Forms::VisualStyles::RadioButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawRadioButton : System.Drawing.Graphics * System.Drawing.Point * System.Windows.Forms.VisualStyles.RadioButtonState -&gt; unit" Usage="System.Windows.Forms.RadioButtonRenderer.DrawRadioButton (g, glyphLocation, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Drawing.Rectangle textBounds, string radioButtonText, class System.Drawing.Font font, bool focused, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Boolean,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRadioButton(System::Drawing::Graphics ^ g, System::Drawing::Point glyphLocation, System::Drawing::Rectangle textBounds, System::String ^ radioButtonText, System::Drawing::Font ^ font, bool focused, System::Windows::Forms::VisualStyles::RadioButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawRadioButton : System.Drawing.Graphics * System.Drawing.Point * System.Drawing.Rectangle * string * System.Drawing.Font * bool * System.Windows.Forms.VisualStyles.RadioButtonState -&gt; unit" Usage="System.Windows.Forms.RadioButtonRenderer.DrawRadioButton (g, glyphLocation, textBounds, radioButtonText, font, focused, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Drawing.Rectangle textBounds, string radioButtonText, class System.Drawing.Font font, valuetype System.Windows.Forms.TextFormatFlags flags, bool focused, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Windows.Forms.TextFormatFlags,System.Boolean,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRadioButton(System::Drawing::Graphics ^ g, System::Drawing::Point glyphLocation, System::Drawing::Rectangle textBounds, System::String ^ radioButtonText, System::Drawing::Font ^ font, System::Windows::Forms::TextFormatFlags flags, bool focused, System::Windows::Forms::VisualStyles::RadioButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawRadioButton : System.Drawing.Graphics * System.Drawing.Point * System.Drawing.Rectangle * string * System.Drawing.Font * System.Windows.Forms.TextFormatFlags * bool * System.Windows.Forms.VisualStyles.RadioButtonState -&gt; unit" Usage="System.Windows.Forms.RadioButtonRenderer.DrawRadioButton (g, glyphLocation, textBounds, radioButtonText, font, flags, focused, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Drawing.Rectangle textBounds, string radioButtonText, class System.Drawing.Font font, class System.Drawing.Image image, valuetype System.Drawing.Rectangle imageBounds, bool focused, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Drawing.Image,System.Drawing.Rectangle,System.Boolean,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRadioButton(System::Drawing::Graphics ^ g, System::Drawing::Point glyphLocation, System::Drawing::Rectangle textBounds, System::String ^ radioButtonText, System::Drawing::Font ^ font, System::Drawing::Image ^ image, System::Drawing::Rectangle imageBounds, bool focused, System::Windows::Forms::VisualStyles::RadioButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawRadioButton : System.Drawing.Graphics * System.Drawing.Point * System.Drawing.Rectangle * string * System.Drawing.Font * System.Drawing.Image * System.Drawing.Rectangle * bool * System.Windows.Forms.VisualStyles.RadioButtonState -&gt; unit" Usage="System.Windows.Forms.RadioButtonRenderer.DrawRadioButton (g, glyphLocation, textBounds, radioButtonText, font, image, imageBounds, focused, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Drawing.Rectangle textBounds, string radioButtonText, class System.Drawing.Font font, valuetype System.Windows.Forms.TextFormatFlags flags, class System.Drawing.Image image, valuetype System.Drawing.Rectangle imageBounds, bool focused, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Windows.Forms.TextFormatFlags,System.Drawing.Image,System.Drawing.Rectangle,System.Boolean,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRadioButton(System::Drawing::Graphics ^ g, System::Drawing::Point glyphLocation, System::Drawing::Rectangle textBounds, System::String ^ radioButtonText, System::Drawing::Font ^ font, System::Windows::Forms::TextFormatFlags flags, System::Drawing::Image ^ image, System::Drawing::Rectangle imageBounds, bool focused, System::Windows::Forms::VisualStyles::RadioButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawRadioButton : System.Drawing.Graphics * System.Drawing.Point * System.Drawing.Rectangle * string * System.Drawing.Font * System.Windows.Forms.TextFormatFlags * System.Drawing.Image * System.Drawing.Rectangle * bool * System.Windows.Forms.VisualStyles.RadioButtonState -&gt; unit" Usage="System.Windows.Forms.RadioButtonRenderer.DrawRadioButton (g, glyphLocation, textBounds, radioButtonText, font, flags, image, imageBounds, focused, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.GetGlyphSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetGlyphSize (g As Graphics, state As RadioButtonState) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetGlyphSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::RadioButtonState state);" />
+      <MemberSignature Language="F#" Value="static member GetGlyphSize : System.Drawing.Graphics * System.Windows.Forms.VisualStyles.RadioButtonState -&gt; System.Drawing.Size" Usage="System.Windows.Forms.RadioButtonRenderer.GetGlyphSize (g, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -355,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.IsBackgroundPartiallyTransparent(System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsBackgroundPartiallyTransparent (state As RadioButtonState) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBackgroundPartiallyTransparent(System::Windows::Forms::VisualStyles::RadioButtonState state);" />
+      <MemberSignature Language="F#" Value="static member IsBackgroundPartiallyTransparent : System.Windows.Forms.VisualStyles.RadioButtonState -&gt; bool" Usage="System.Windows.Forms.RadioButtonRenderer.IsBackgroundPartiallyTransparent state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -380,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RadioButtonRenderer.RenderMatchingApplicationState" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property RenderMatchingApplicationState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool RenderMatchingApplicationState { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderMatchingApplicationState : bool with get, set" Usage="System.Windows.Forms.RadioButtonRenderer.RenderMatchingApplicationState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" />
   <TypeSignature Language="VB.NET" Value="Public Class SamlSecurityTokenAuthenticator&#xA;Inherits SecurityTokenAuthenticator" />
   <TypeSignature Language="C++ CLI" Value="public ref class SamlSecurityTokenAuthenticator : System::IdentityModel::Selectors::SecurityTokenAuthenticator" />
+  <TypeSignature Language="F#" Value="type SamlSecurityTokenAuthenticator = class&#xA;    inherit SecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.#ctor(System.Collections.Generic.IList{System.IdentityModel.Selectors.SecurityTokenAuthenticator})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (supportingAuthenticators As IList(Of SecurityTokenAuthenticator))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSecurityTokenAuthenticator(System::Collections::Generic::IList&lt;System::IdentityModel::Selectors::SecurityTokenAuthenticator ^&gt; ^ supportingAuthenticators);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator : System.Collections.Generic.IList&lt;System.IdentityModel.Selectors.SecurityTokenAuthenticator&gt; -&gt; System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" Usage="new System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator supportingAuthenticators" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.#ctor(System.Collections.Generic.IList{System.IdentityModel.Selectors.SecurityTokenAuthenticator},System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (supportingAuthenticators As IList(Of SecurityTokenAuthenticator), maxClockSkew As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSecurityTokenAuthenticator(System::Collections::Generic::IList&lt;System::IdentityModel::Selectors::SecurityTokenAuthenticator ^&gt; ^ supportingAuthenticators, TimeSpan maxClockSkew);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator : System.Collections.Generic.IList&lt;System.IdentityModel.Selectors.SecurityTokenAuthenticator&gt; * TimeSpan -&gt; System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" Usage="new System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator (supportingAuthenticators, maxClockSkew)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedAudienceUris As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ AllowedAudienceUris { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedAudienceUris : System.Collections.Generic.IList&lt;string&gt;" Usage="System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AudienceUriMode As AudienceUriMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::AudienceUriMode AudienceUriMode { System::IdentityModel::Selectors::AudienceUriMode get(); void set(System::IdentityModel::Selectors::AudienceUriMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AudienceUriMode : System.IdentityModel.Selectors.AudienceUriMode with get, set" Usage="System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.CanValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanValidateTokenCore (token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.CanValidateTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="samlSecurityTokenAuthenticator.CanValidateTokenCore token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveClaimSet(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveClaimSet (keyIdentifier As SecurityKeyIdentifier) As ClaimSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Claims::ClaimSet ^ ResolveClaimSet(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveClaimSet : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.IdentityModel.Claims.ClaimSet&#xA;override this.ResolveClaimSet : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.IdentityModel.Claims.ClaimSet" Usage="samlSecurityTokenAuthenticator.ResolveClaimSet keyIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveClaimSet(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveClaimSet (token As SecurityToken) As ClaimSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Claims::ClaimSet ^ ResolveClaimSet(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveClaimSet : System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Claims.ClaimSet&#xA;override this.ResolveClaimSet : System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Claims.ClaimSet" Usage="samlSecurityTokenAuthenticator.ResolveClaimSet token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveIdentity(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveIdentity (keyIdentifier As SecurityKeyIdentifier) As IIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Principal::IIdentity ^ ResolveIdentity(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveIdentity : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.Security.Principal.IIdentity&#xA;override this.ResolveIdentity : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.Security.Principal.IIdentity" Usage="samlSecurityTokenAuthenticator.ResolveIdentity keyIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveIdentity(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveIdentity (token As SecurityToken) As IIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Principal::IIdentity ^ ResolveIdentity(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveIdentity : System.IdentityModel.Tokens.SecurityToken -&gt; System.Security.Principal.IIdentity&#xA;override this.ResolveIdentity : System.IdentityModel.Tokens.SecurityToken -&gt; System.Security.Principal.IIdentity" Usage="samlSecurityTokenAuthenticator.ResolveIdentity token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateAudienceRestriction(System.IdentityModel.Tokens.SamlAudienceRestrictionCondition)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ValidateAudienceRestriction (audienceRestrictionCondition As SamlAudienceRestrictionCondition) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ValidateAudienceRestriction(System::IdentityModel::Tokens::SamlAudienceRestrictionCondition ^ audienceRestrictionCondition);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateAudienceRestriction : System.IdentityModel.Tokens.SamlAudienceRestrictionCondition -&gt; bool&#xA;override this.ValidateAudienceRestriction : System.IdentityModel.Tokens.SamlAudienceRestrictionCondition -&gt; bool" Usage="samlSecurityTokenAuthenticator.ValidateAudienceRestriction audienceRestrictionCondition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -335,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateTokenCore (token As SecurityToken) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.ValidateTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="samlSecurityTokenAuthenticator.ValidateTokenCore token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

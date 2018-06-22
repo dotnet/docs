@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.DynamicArgumentDialog" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicArgumentDialog&#xA;Inherits WorkflowElementDialog" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicArgumentDialog sealed : System::Activities::Presentation::WorkflowElementDialog" />
+  <TypeSignature Language="F#" Value="type DynamicArgumentDialog = class&#xA;    inherit WorkflowElementDialog" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DynamicArgumentDialog.OnWorkflowElementDialogClosed(System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnWorkflowElementDialogClosed (dialogResult As Nullable(Of Boolean))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnWorkflowElementDialogClosed(Nullable&lt;bool&gt; dialogResult);" />
+      <MemberSignature Language="F#" Value="override this.OnWorkflowElementDialogClosed : Nullable&lt;bool&gt; -&gt; unit" Usage="dynamicArgumentDialog.OnWorkflowElementDialogClosed dialogResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DynamicArgumentDialog.ShowDialog(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.EditingContext,System.Windows.DependencyObject,System.Activities.Presentation.DynamicArgumentDesignerOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShowDialog (activity As ModelItem, data As ModelItem, context As EditingContext, owner As DependencyObject, options As DynamicArgumentDesignerOptions) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ShowDialog(System::Activities::Presentation::Model::ModelItem ^ activity, System::Activities::Presentation::Model::ModelItem ^ data, System::Activities::Presentation::EditingContext ^ context, System::Windows::DependencyObject ^ owner, System::Activities::Presentation::DynamicArgumentDesignerOptions ^ options);" />
+      <MemberSignature Language="F#" Value="static member ShowDialog : System.Activities.Presentation.Model.ModelItem * System.Activities.Presentation.Model.ModelItem * System.Activities.Presentation.EditingContext * System.Windows.DependencyObject * System.Activities.Presentation.DynamicArgumentDesignerOptions -&gt; bool" Usage="System.Activities.Presentation.DynamicArgumentDialog.ShowDialog (activity, data, context, owner, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>

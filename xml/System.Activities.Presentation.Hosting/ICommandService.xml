@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.ICommandService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICommandService" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICommandService" />
+  <TypeSignature Language="F#" Value="type ICommandService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.ICommandService.CanExecuteCommand(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExecuteCommand (commandId As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExecuteCommand(int commandId);" />
+      <MemberSignature Language="F#" Value="abstract member CanExecuteCommand : int -&gt; bool" Usage="iCommandService.CanExecuteCommand commandId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.ICommandService.ExecuteCommand(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExecuteCommand (commandId As Integer, parameters As Dictionary(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecuteCommand(int commandId, System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteCommand : int * System.Collections.Generic.Dictionary&lt;string, obj&gt; -&gt; unit" Usage="iCommandService.ExecuteCommand (commandId, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.ICommandService.IsCommandSupported(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsCommandSupported (commandId As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsCommandSupported(int commandId);" />
+      <MemberSignature Language="F#" Value="abstract member IsCommandSupported : int -&gt; bool" Usage="iCommandService.IsCommandSupported commandId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PersonalizationStateQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersonalizationStateQuery sealed" />
+  <TypeSignature Language="F#" Value="type PersonalizationStateQuery = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(queryKey As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ queryKey); void set(System::String ^ queryKey, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch" />
       <MemberSignature Language="VB.NET" Value="Public Property PathToMatch As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PathToMatch { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PathToMatch : string with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate" />
       <MemberSignature Language="VB.NET" Value="Public Property UserInactiveSinceDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime UserInactiveSinceDate { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.UserInactiveSinceDate : DateTime with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch" />
       <MemberSignature Language="VB.NET" Value="Public Property UsernameToMatch As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UsernameToMatch { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UsernameToMatch : string with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

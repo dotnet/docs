@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElement" />
   <TypeSignature Language="VB.NET" Value="Public Class StateMachineStateQueryElement&#xA;Inherits TrackingQueryElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateMachineStateQueryElement : System::ServiceModel::Activities::Tracking::Configuration::TrackingQueryElement" />
+  <TypeSignature Language="F#" Value="type StateMachineStateQueryElement = class&#xA;    inherit TrackingQueryElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElement.ActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityName : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElement.ActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElement.NewTrackingQuery" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewTrackingQuery () As TrackingQuery" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Tracking::TrackingQuery ^ NewTrackingQuery();" />
+      <MemberSignature Language="F#" Value="override this.NewTrackingQuery : unit -&gt; System.Activities.Tracking.TrackingQuery" Usage="stateMachineStateQueryElement.NewTrackingQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

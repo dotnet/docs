@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CallSiteOps" />
   <TypeSignature Language="VB.NET" Value="Public Class CallSiteOps" />
   <TypeSignature Language="C++ CLI" Value="public ref class CallSiteOps abstract sealed" />
+  <TypeSignature Language="F#" Value="type CallSiteOps = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.AddRule``1(System.Runtime.CompilerServices.CallSite{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddRule(Of T As Class) (site As CallSite(Of T), rule As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static void AddRule(System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ site, T rule);" />
+      <MemberSignature Language="F#" Value="static member AddRule : System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt; * 'T -&gt; unit (requires 'T : null)" Usage="System.Runtime.CompilerServices.CallSiteOps.AddRule (site, rule)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.Bind``1(System.Runtime.CompilerServices.CallSiteBinder,System.Runtime.CompilerServices.CallSite{``0},System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Bind(Of T As Class) (binder As CallSiteBinder, site As CallSite(Of T), args As Object()) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T Bind(System::Runtime::CompilerServices::CallSiteBinder ^ binder, System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ site, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member Bind : System.Runtime.CompilerServices.CallSiteBinder * System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt; * obj[] -&gt; 'T (requires 'T : null)" Usage="System.Runtime.CompilerServices.CallSiteOps.Bind (binder, site, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.ClearMatch(System.Runtime.CompilerServices.CallSite)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearMatch (site As CallSite)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearMatch(System::Runtime::CompilerServices::CallSite ^ site);" />
+      <MemberSignature Language="F#" Value="static member ClearMatch : System.Runtime.CompilerServices.CallSite -&gt; unit" Usage="System.Runtime.CompilerServices.CallSiteOps.ClearMatch site" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.CreateMatchmaker``1(System.Runtime.CompilerServices.CallSite{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMatchmaker(Of T As Class) (site As CallSite(Of T)) As CallSite(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ CreateMatchmaker(System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ site);" />
+      <MemberSignature Language="F#" Value="static member CreateMatchmaker : System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt; -&gt; System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt; (requires 'T : null)" Usage="System.Runtime.CompilerServices.CallSiteOps.CreateMatchmaker site" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.GetCachedRules``1(System.Runtime.CompilerServices.RuleCache{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCachedRules(Of T As Class) (cache As RuleCache(Of T)) As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static cli::array &lt;T&gt; ^ GetCachedRules(System::Runtime::CompilerServices::RuleCache&lt;T&gt; ^ cache);" />
+      <MemberSignature Language="F#" Value="static member GetCachedRules : System.Runtime.CompilerServices.RuleCache&lt;'T (requires 'T : null)&gt; -&gt; 'T[] (requires 'T : null)" Usage="System.Runtime.CompilerServices.CallSiteOps.GetCachedRules cache" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.GetMatch(System.Runtime.CompilerServices.CallSite)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMatch (site As CallSite) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetMatch(System::Runtime::CompilerServices::CallSite ^ site);" />
+      <MemberSignature Language="F#" Value="static member GetMatch : System.Runtime.CompilerServices.CallSite -&gt; bool" Usage="System.Runtime.CompilerServices.CallSiteOps.GetMatch site" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.GetRuleCache``1(System.Runtime.CompilerServices.CallSite{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRuleCache(Of T As Class) (site As CallSite(Of T)) As RuleCache(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static System::Runtime::CompilerServices::RuleCache&lt;T&gt; ^ GetRuleCache(System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ site);" />
+      <MemberSignature Language="F#" Value="static member GetRuleCache : System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt; -&gt; System.Runtime.CompilerServices.RuleCache&lt;'T (requires 'T : null)&gt; (requires 'T : null)" Usage="System.Runtime.CompilerServices.CallSiteOps.GetRuleCache site" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -315,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.GetRules``1(System.Runtime.CompilerServices.CallSite{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRules(Of T As Class) (site As CallSite(Of T)) As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static cli::array &lt;T&gt; ^ GetRules(System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ site);" />
+      <MemberSignature Language="F#" Value="static member GetRules : System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt; -&gt; 'T[] (requires 'T : null)" Usage="System.Runtime.CompilerServices.CallSiteOps.GetRules site" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -357,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.MoveRule``1(System.Runtime.CompilerServices.RuleCache{``0},``0,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MoveRule(Of T As Class) (cache As RuleCache(Of T), rule As T, i As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static void MoveRule(System::Runtime::CompilerServices::RuleCache&lt;T&gt; ^ cache, T rule, int i);" />
+      <MemberSignature Language="F#" Value="static member MoveRule : System.Runtime.CompilerServices.RuleCache&lt;'T (requires 'T : null)&gt; * 'T * int -&gt; unit (requires 'T : null)" Usage="System.Runtime.CompilerServices.CallSiteOps.MoveRule (cache, rule, i)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -402,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.SetNotMatched(System.Runtime.CompilerServices.CallSite)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetNotMatched (site As CallSite) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetNotMatched(System::Runtime::CompilerServices::CallSite ^ site);" />
+      <MemberSignature Language="F#" Value="static member SetNotMatched : System.Runtime.CompilerServices.CallSite -&gt; bool" Usage="System.Runtime.CompilerServices.CallSiteOps.SetNotMatched site" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -436,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteOps.UpdateRules``1(System.Runtime.CompilerServices.CallSite{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UpdateRules(Of T As Class) (this As CallSite(Of T), matched As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static void UpdateRules(System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ this, int matched);" />
+      <MemberSignature Language="F#" Value="static member UpdateRules : int -&gt; unit (requires 'T : null)" Usage="System.Runtime.CompilerServices.CallSiteOps.UpdateRules matched" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

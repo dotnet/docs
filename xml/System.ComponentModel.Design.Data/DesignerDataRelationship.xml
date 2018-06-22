@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataRelationship" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerDataRelationship" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataRelationship sealed" />
+  <TypeSignature Language="F#" Value="type DesignerDataRelationship = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataRelationship.#ctor(System.String,System.Collections.ICollection,System.ComponentModel.Design.Data.DesignerDataTable,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, parentColumns As ICollection, childTable As DesignerDataTable, childColumns As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataRelationship(System::String ^ name, System::Collections::ICollection ^ parentColumns, System::ComponentModel::Design::Data::DesignerDataTable ^ childTable, System::Collections::ICollection ^ childColumns);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataRelationship : string * System.Collections.ICollection * System.ComponentModel.Design.Data.DesignerDataTable * System.Collections.ICollection -&gt; System.ComponentModel.Design.Data.DesignerDataRelationship" Usage="new System.ComponentModel.Design.Data.DesignerDataRelationship (name, parentColumns, childTable, childColumns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataRelationship.ChildColumns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildColumns As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ ChildColumns { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildColumns : System.Collections.ICollection" Usage="System.ComponentModel.Design.Data.DesignerDataRelationship.ChildColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataRelationship.ChildTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildTable As DesignerDataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Data::DesignerDataTable ^ ChildTable { System::ComponentModel::Design::Data::DesignerDataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildTable : System.ComponentModel.Design.Data.DesignerDataTable" Usage="System.ComponentModel.Design.Data.DesignerDataRelationship.ChildTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataRelationship.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DesignerDataRelationship.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataRelationship.ParentColumns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentColumns As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ ParentColumns { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentColumns : System.Collections.ICollection" Usage="System.ComponentModel.Design.Data.DesignerDataRelationship.ParentColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

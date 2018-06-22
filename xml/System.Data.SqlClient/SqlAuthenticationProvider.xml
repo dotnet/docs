@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlAuthenticationProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SqlAuthenticationProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlAuthenticationProvider abstract" />
+  <TypeSignature Language="F#" Value="type SqlAuthenticationProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.AcquireTokenAsync(System.Data.SqlClient.SqlAuthenticationParameters)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AcquireTokenAsync (parameters As SqlAuthenticationParameters) As Task(Of SqlAuthenticationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task&lt;System::Data::SqlClient::SqlAuthenticationToken ^&gt; ^ AcquireTokenAsync(System::Data::SqlClient::SqlAuthenticationParameters ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member AcquireTokenAsync : System.Data.SqlClient.SqlAuthenticationParameters -&gt; System.Threading.Tasks.Task&lt;System.Data.SqlClient.SqlAuthenticationToken&gt;" Usage="sqlAuthenticationProvider.AcquireTokenAsync parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.BeforeLoad(System.Data.SqlClient.SqlAuthenticationMethod)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeforeLoad (authenticationMethod As SqlAuthenticationMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeforeLoad(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod);" />
+      <MemberSignature Language="F#" Value="abstract member BeforeLoad : System.Data.SqlClient.SqlAuthenticationMethod -&gt; unit&#xA;override this.BeforeLoad : System.Data.SqlClient.SqlAuthenticationMethod -&gt; unit" Usage="sqlAuthenticationProvider.BeforeLoad authenticationMethod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.BeforeUnload(System.Data.SqlClient.SqlAuthenticationMethod)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeforeUnload (authenticationMethod As SqlAuthenticationMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeforeUnload(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod);" />
+      <MemberSignature Language="F#" Value="abstract member BeforeUnload : System.Data.SqlClient.SqlAuthenticationMethod -&gt; unit&#xA;override this.BeforeUnload : System.Data.SqlClient.SqlAuthenticationMethod -&gt; unit" Usage="sqlAuthenticationProvider.BeforeUnload authenticationMethod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.GetProvider(System.Data.SqlClient.SqlAuthenticationMethod)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetProvider (authenticationMethod As SqlAuthenticationMethod) As SqlAuthenticationProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlClient::SqlAuthenticationProvider ^ GetProvider(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod);" />
+      <MemberSignature Language="F#" Value="static member GetProvider : System.Data.SqlClient.SqlAuthenticationMethod -&gt; System.Data.SqlClient.SqlAuthenticationProvider" Usage="System.Data.SqlClient.SqlAuthenticationProvider.GetProvider authenticationMethod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.IsSupported(System.Data.SqlClient.SqlAuthenticationMethod)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSupported (authenticationMethod As SqlAuthenticationMethod) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSupported(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupported : System.Data.SqlClient.SqlAuthenticationMethod -&gt; bool" Usage="sqlAuthenticationProvider.IsSupported authenticationMethod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationProvider.SetProvider(System.Data.SqlClient.SqlAuthenticationMethod,System.Data.SqlClient.SqlAuthenticationProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetProvider (authenticationMethod As SqlAuthenticationMethod, provider As SqlAuthenticationProvider) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetProvider(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod, System::Data::SqlClient::SqlAuthenticationProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member SetProvider : System.Data.SqlClient.SqlAuthenticationMethod * System.Data.SqlClient.SqlAuthenticationProvider -&gt; bool" Usage="System.Data.SqlClient.SqlAuthenticationProvider.SetProvider (authenticationMethod, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

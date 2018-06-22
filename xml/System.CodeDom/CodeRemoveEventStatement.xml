@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeRemoveEventStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeRemoveEventStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeRemoveEventStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeRemoveEventStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeRemoveEventStatement.#ctor(System.CodeDom.CodeEventReferenceExpression,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventRef As CodeEventReferenceExpression, listener As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeRemoveEventStatement(System::CodeDom::CodeEventReferenceExpression ^ eventRef, System::CodeDom::CodeExpression ^ listener);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeRemoveEventStatement : System.CodeDom.CodeEventReferenceExpression * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeRemoveEventStatement" Usage="new System.CodeDom.CodeRemoveEventStatement (eventRef, listener)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeRemoveEventStatement.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, eventName As String, listener As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeRemoveEventStatement(System::CodeDom::CodeExpression ^ targetObject, System::String ^ eventName, System::CodeDom::CodeExpression ^ listener);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeRemoveEventStatement : System.CodeDom.CodeExpression * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeRemoveEventStatement" Usage="new System.CodeDom.CodeRemoveEventStatement (targetObject, eventName, listener)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeRemoveEventStatement.Event" />
       <MemberSignature Language="VB.NET" Value="Public Property Event As CodeEventReferenceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeEventReferenceExpression ^ Event { System::CodeDom::CodeEventReferenceExpression ^ get(); void set(System::CodeDom::CodeEventReferenceExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Event : System.CodeDom.CodeEventReferenceExpression with get, set" Usage="System.CodeDom.CodeRemoveEventStatement.Event" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeRemoveEventStatement.Listener" />
       <MemberSignature Language="VB.NET" Value="Public Property Listener As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Listener { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Listener : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeRemoveEventStatement.Listener" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

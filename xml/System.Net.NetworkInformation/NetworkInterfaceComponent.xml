@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInterfaceComponent" />
   <TypeSignature Language="VB.NET" Value="Public Enum NetworkInterfaceComponent" />
   <TypeSignature Language="C++ CLI" Value="public enum class NetworkInterfaceComponent" />
+  <TypeSignature Language="F#" Value="type NetworkInterfaceComponent = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceComponent.IPv4" />
       <MemberSignature Language="VB.NET" Value="IPv4" />
       <MemberSignature Language="C++ CLI" Value="IPv4" />
+      <MemberSignature Language="F#" Value="IPv4 = 0" Usage="System.Net.NetworkInformation.NetworkInterfaceComponent.IPv4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceComponent.IPv6" />
       <MemberSignature Language="VB.NET" Value="IPv6" />
       <MemberSignature Language="C++ CLI" Value="IPv6" />
+      <MemberSignature Language="F#" Value="IPv6 = 1" Usage="System.Net.NetworkInformation.NetworkInterfaceComponent.IPv6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

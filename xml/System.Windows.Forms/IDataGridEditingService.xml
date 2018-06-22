@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataGridEditingService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataGridEditingService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataGridEditingService" />
+  <TypeSignature Language="F#" Value="type IDataGridEditingService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridEditingService.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginEdit (gridColumn As DataGridColumnStyle, rowNumber As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BeginEdit(System::Windows::Forms::DataGridColumnStyle ^ gridColumn, int rowNumber);" />
+      <MemberSignature Language="F#" Value="abstract member BeginEdit : System.Windows.Forms.DataGridColumnStyle * int -&gt; bool" Usage="iDataGridEditingService.BeginEdit (gridColumn, rowNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridEditingService.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndEdit (gridColumn As DataGridColumnStyle, rowNumber As Integer, shouldAbort As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndEdit(System::Windows::Forms::DataGridColumnStyle ^ gridColumn, int rowNumber, bool shouldAbort);" />
+      <MemberSignature Language="F#" Value="abstract member EndEdit : System.Windows.Forms.DataGridColumnStyle * int * bool -&gt; bool" Usage="iDataGridEditingService.EndEdit (gridColumn, rowNumber, shouldAbort)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

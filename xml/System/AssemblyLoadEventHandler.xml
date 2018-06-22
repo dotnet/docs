@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AssemblyLoadEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AssemblyLoadEventHandler(sender As Object, args As AssemblyLoadEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AssemblyLoadEventHandler(System::Object ^ sender, AssemblyLoadEventArgs ^ args);" />
+  <TypeSignature Language="F#" Value="type AssemblyLoadEventHandler = delegate of obj * AssemblyLoadEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

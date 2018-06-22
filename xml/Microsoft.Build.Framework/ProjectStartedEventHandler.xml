@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ProjectStartedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ProjectStartedEventHandler(sender As Object, e As ProjectStartedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ProjectStartedEventHandler(System::Object ^ sender, ProjectStartedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ProjectStartedEventHandler = delegate of obj * ProjectStartedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

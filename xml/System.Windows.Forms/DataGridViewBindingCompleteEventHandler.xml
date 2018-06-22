@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewBindingCompleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewBindingCompleteEventHandler(sender As Object, e As DataGridViewBindingCompleteEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewBindingCompleteEventHandler(System::Object ^ sender, DataGridViewBindingCompleteEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewBindingCompleteEventHandler = delegate of obj * DataGridViewBindingCompleteEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

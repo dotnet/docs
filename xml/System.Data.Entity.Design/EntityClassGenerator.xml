@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityClassGenerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityClassGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityClassGenerator sealed" />
+  <TypeSignature Language="F#" Value="type EntityClassGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.Entity.Design.LanguageOption languageOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.#ctor(System.Data.Entity.Design.LanguageOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityClassGenerator(System::Data::Entity::Design::LanguageOption languageOption);" />
+      <MemberSignature Language="F#" Value="new System.Data.Entity.Design.EntityClassGenerator : System.Data.Entity.Design.LanguageOption -&gt; System.Data.Entity.Design.EntityClassGenerator" Usage="new System.Data.Entity.Design.EntityClassGenerator languageOption" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityClassGenerator.EdmToObjectNamespaceMap" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EdmToObjectNamespaceMap As EdmToObjectNamespaceMap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Entity::Design::EdmToObjectNamespaceMap ^ EdmToObjectNamespaceMap { System::Data::Entity::Design::EdmToObjectNamespaceMap ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EdmToObjectNamespaceMap : System.Data.Entity.Design.EdmToObjectNamespaceMap" Usage="System.Data.Entity.Design.EntityClassGenerator.EdmToObjectNamespaceMap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateCode (sourceEdmSchemaFilePath As String, targetFilePath As String) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateCode(System::String ^ sourceEdmSchemaFilePath, System::String ^ targetFilePath);" />
+      <MemberSignature Language="F#" Value="member this.GenerateCode : string * string -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityClassGenerator.GenerateCode (sourceEdmSchemaFilePath, targetFilePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateCode (sourceEdmSchema As XmlReader, target As TextWriter) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateCode(System::Xml::XmlReader ^ sourceEdmSchema, System::IO::TextWriter ^ target);" />
+      <MemberSignature Language="F#" Value="member this.GenerateCode : System.Xml.XmlReader * System.IO.TextWriter -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityClassGenerator.GenerateCode (sourceEdmSchema, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateCode (sourceEdmSchemaFilePath As String, targetPath As String, additionalEdmSchemaFilePaths As IEnumerable(Of String)) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateCode(System::String ^ sourceEdmSchemaFilePath, System::String ^ targetPath, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ additionalEdmSchemaFilePaths);" />
+      <MemberSignature Language="F#" Value="member this.GenerateCode : string * string * seq&lt;string&gt; -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityClassGenerator.GenerateCode (sourceEdmSchemaFilePath, targetPath, additionalEdmSchemaFilePaths)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.Xml.XmlReader})" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateCode (sourceEdmSchema As XmlReader, target As TextWriter, additionalEdmSchemas As IEnumerable(Of XmlReader)) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateCode(System::Xml::XmlReader ^ sourceEdmSchema, System::IO::TextWriter ^ target, System::Collections::Generic::IEnumerable&lt;System::Xml::XmlReader ^&gt; ^ additionalEdmSchemas);" />
+      <MemberSignature Language="F#" Value="member this.GenerateCode : System.Xml.XmlReader * System.IO.TextWriter * seq&lt;System.Xml.XmlReader&gt; -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityClassGenerator.GenerateCode (sourceEdmSchema, target, additionalEdmSchemas)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityClassGenerator.LanguageOption" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageOption As LanguageOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Entity::Design::LanguageOption LanguageOption { System::Data::Entity::Design::LanguageOption get(); void set(System::Data::Entity::Design::LanguageOption value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageOption : System.Data.Entity.Design.LanguageOption with get, set" Usage="System.Data.Entity.Design.EntityClassGenerator.LanguageOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated" />
       <MemberSignature Language="VB.NET" Value="Public Event OnPropertyGenerated As PropertyGeneratedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::Entity::Design::PropertyGeneratedEventHandler ^ OnPropertyGenerated;" />
+      <MemberSignature Language="F#" Value="member this.OnPropertyGenerated : System.Data.Entity.Design.PropertyGeneratedEventHandler " Usage="member this.OnPropertyGenerated : System.Data.Entity.Design.PropertyGeneratedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated" />
       <MemberSignature Language="VB.NET" Value="Public Event OnTypeGenerated As TypeGeneratedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::Entity::Design::TypeGeneratedEventHandler ^ OnTypeGenerated;" />
+      <MemberSignature Language="F#" Value="member this.OnTypeGenerated : System.Data.Entity.Design.TypeGeneratedEventHandler " Usage="member this.OnTypeGenerated : System.Data.Entity.Design.TypeGeneratedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

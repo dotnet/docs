@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlRootAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlRootAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlRootAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlRootAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -124,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlRootAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlRootAttribute(System::String ^ elementName);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlRootAttribute : string -&gt; System.Xml.Serialization.XmlRootAttribute" Usage="new System.Xml.Serialization.XmlRootAttribute elementName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -170,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlRootAttribute.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : string with get, set" Usage="System.Xml.Serialization.XmlRootAttribute.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -271,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlRootAttribute.ElementName" />
       <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string with get, set" Usage="System.Xml.Serialization.XmlRootAttribute.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -321,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlRootAttribute.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsNullable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Xml.Serialization.XmlRootAttribute.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -388,6 +393,7 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlRootAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.XmlRootAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

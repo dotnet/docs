@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ComponentResourceManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentResourceManager&#xA;Inherits ResourceManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentResourceManager : System::Resources::ResourceManager" />
+  <TypeSignature Language="F#" Value="type ComponentResourceManager = class&#xA;    inherit ResourceManager" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentResourceManager.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (t As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentResourceManager(Type ^ t);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ComponentResourceManager : Type -&gt; System.ComponentModel.ComponentResourceManager" Usage="new System.ComponentModel.ComponentResourceManager t" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentResourceManager.ApplyResources(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyResources (value As Object, objectName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyResources(System::Object ^ value, System::String ^ objectName);" />
+      <MemberSignature Language="F#" Value="member this.ApplyResources : obj * string -&gt; unit" Usage="componentResourceManager.ApplyResources (value, objectName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentResourceManager.ApplyResources(System.Object,System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ApplyResources (value As Object, objectName As String, culture As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyResources(System::Object ^ value, System::String ^ objectName, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyResources : obj * string * System.Globalization.CultureInfo -&gt; unit&#xA;override this.ApplyResources : obj * string * System.Globalization.CultureInfo -&gt; unit" Usage="componentResourceManager.ApplyResources (value, objectName, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

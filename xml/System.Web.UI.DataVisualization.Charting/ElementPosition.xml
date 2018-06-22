@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ElementPosition" />
   <TypeSignature Language="VB.NET" Value="Public Class ElementPosition&#xA;Inherits ChartElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ElementPosition : System::Web::UI::DataVisualization::Charting::ChartElement" />
+  <TypeSignature Language="F#" Value="type ElementPosition = class&#xA;    inherit ChartElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ElementPosition.#ctor(System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Single, y As Single, width As Single, height As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ElementPosition(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.ElementPosition : single * single * single * single -&gt; System.Web.UI.DataVisualization.Charting.ElementPosition" Usage="new System.Web.UI.DataVisualization.Charting.ElementPosition (x, y, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto" />
       <MemberSignature Language="VB.NET" Value="Public Property Auto As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Auto { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Auto : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ElementPosition.Auto" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ElementPosition.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bottom As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Bottom { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : single" Usage="System.Web.UI.DataVisualization.Charting.ElementPosition.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ElementPosition.FromRectangleF(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromRectangleF (rect As RectangleF)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromRectangleF(System::Drawing::RectangleF rect);" />
+      <MemberSignature Language="F#" Value="member this.FromRectangleF : System.Drawing.RectangleF -&gt; unit" Usage="elementPosition.FromRectangleF rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ElementPosition.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="System.Web.UI.DataVisualization.Charting.ElementPosition.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ElementPosition.Right" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Right { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Right : single" Usage="System.Web.UI.DataVisualization.Charting.ElementPosition.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ElementPosition.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As SizeF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::SizeF Size { System::Drawing::SizeF get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.SizeF" Usage="System.Web.UI.DataVisualization.Charting.ElementPosition.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ElementPosition.ToRectangleF" />
       <MemberSignature Language="VB.NET" Value="Public Function ToRectangleF () As RectangleF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF ToRectangleF();" />
+      <MemberSignature Language="F#" Value="member this.ToRectangleF : unit -&gt; System.Drawing.RectangleF" Usage="elementPosition.ToRectangleF " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -336,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ElementPosition.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="System.Web.UI.DataVisualization.Charting.ElementPosition.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -380,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ElementPosition.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float X { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.X : single with get, set" Usage="System.Web.UI.DataVisualization.Charting.ElementPosition.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -426,6 +437,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ElementPosition.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Y { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : single with get, set" Usage="System.Web.UI.DataVisualization.Charting.ElementPosition.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

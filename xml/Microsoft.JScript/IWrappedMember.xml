@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IWrappedMember" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWrappedMember" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWrappedMember" />
+  <TypeSignature Language="F#" Value="type IWrappedMember = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IWrappedMember.GetWrappedObject" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWrappedObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetWrappedObject();" />
+      <MemberSignature Language="F#" Value="abstract member GetWrappedObject : unit -&gt; obj" Usage="iWrappedMember.GetWrappedObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

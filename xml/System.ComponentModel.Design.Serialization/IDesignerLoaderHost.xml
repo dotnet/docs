@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.IDesignerLoaderHost" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerLoaderHost&#xA;Implements IDesignerHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerLoaderHost : System::ComponentModel::Design::IDesignerHost" />
+  <TypeSignature Language="F#" Value="type IDesignerLoaderHost = interface&#xA;    interface IDesignerHost&#xA;    interface IServiceContainer&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerLoaderHost.EndLoad(System.String,System.Boolean,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndLoad (baseClassName As String, successful As Boolean, errorCollection As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndLoad(System::String ^ baseClassName, bool successful, System::Collections::ICollection ^ errorCollection);" />
+      <MemberSignature Language="F#" Value="abstract member EndLoad : string * bool * System.Collections.ICollection -&gt; unit" Usage="iDesignerLoaderHost.EndLoad (baseClassName, successful, errorCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerLoaderHost.Reload" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reload ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reload();" />
+      <MemberSignature Language="F#" Value="abstract member Reload : unit -&gt; unit" Usage="iDesignerLoaderHost.Reload " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum LocatorOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class LocatorOptions" />
+  <TypeSignature Language="F#" Value="type LocatorOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.AvoidSelf" />
       <MemberSignature Language="VB.NET" Value="AvoidSelf" />
       <MemberSignature Language="C++ CLI" Value="AvoidSelf" />
+      <MemberSignature Language="F#" Value="AvoidSelf = 16384" Usage="System.DirectoryServices.ActiveDirectory.LocatorOptions.AvoidSelf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.ForceRediscovery" />
       <MemberSignature Language="VB.NET" Value="ForceRediscovery" />
       <MemberSignature Language="C++ CLI" Value="ForceRediscovery" />
+      <MemberSignature Language="F#" Value="ForceRediscovery = 1" Usage="System.DirectoryServices.ActiveDirectory.LocatorOptions.ForceRediscovery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.KdcRequired" />
       <MemberSignature Language="VB.NET" Value="KdcRequired" />
       <MemberSignature Language="C++ CLI" Value="KdcRequired" />
+      <MemberSignature Language="F#" Value="KdcRequired = 1024" Usage="System.DirectoryServices.ActiveDirectory.LocatorOptions.KdcRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.TimeServerRequired" />
       <MemberSignature Language="VB.NET" Value="TimeServerRequired" />
       <MemberSignature Language="C++ CLI" Value="TimeServerRequired" />
+      <MemberSignature Language="F#" Value="TimeServerRequired = 2048" Usage="System.DirectoryServices.ActiveDirectory.LocatorOptions.TimeServerRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.WriteableRequired" />
       <MemberSignature Language="VB.NET" Value="WriteableRequired" />
       <MemberSignature Language="C++ CLI" Value="WriteableRequired" />
+      <MemberSignature Language="F#" Value="WriteableRequired = 4096" Usage="System.DirectoryServices.ActiveDirectory.LocatorOptions.WriteableRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

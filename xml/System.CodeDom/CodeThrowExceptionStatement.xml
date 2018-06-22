@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeThrowExceptionStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeThrowExceptionStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeThrowExceptionStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeThrowExceptionStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeThrowExceptionStatement.#ctor(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (toThrow As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeThrowExceptionStatement(System::CodeDom::CodeExpression ^ toThrow);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeThrowExceptionStatement : System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeThrowExceptionStatement" Usage="new System.CodeDom.CodeThrowExceptionStatement toThrow" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeThrowExceptionStatement.ToThrow" />
       <MemberSignature Language="VB.NET" Value="Public Property ToThrow As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ ToThrow { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToThrow : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeThrowExceptionStatement.ToThrow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

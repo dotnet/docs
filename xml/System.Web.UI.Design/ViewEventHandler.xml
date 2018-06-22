@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ViewEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ViewEventHandler(sender As Object, e As ViewEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ViewEventHandler(System::Object ^ sender, ViewEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ViewEventHandler = delegate of obj * ViewEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

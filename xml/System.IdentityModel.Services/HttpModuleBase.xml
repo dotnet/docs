@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.HttpModuleBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpModuleBase&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpModuleBase abstract : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type HttpModuleBase = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="httpModuleBase.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.HttpModuleBase.FederationConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property FederationConfiguration As FederationConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::Configuration::FederationConfiguration ^ FederationConfiguration { System::IdentityModel::Services::Configuration::FederationConfiguration ^ get(); void set(System::IdentityModel::Services::Configuration::FederationConfiguration ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FederationConfiguration : System.IdentityModel.Services.Configuration.FederationConfiguration with get, set" Usage="System.IdentityModel.Services.HttpModuleBase.FederationConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (context As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="httpModuleBase.Init context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.InitializeModule(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub InitializeModule (context As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void InitializeModule(System::Web::HttpApplication ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeModule : System.Web.HttpApplication -&gt; unit" Usage="httpModuleBase.InitializeModule context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.HttpModuleBase.InitializePropertiesFromConfiguration" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub InitializePropertiesFromConfiguration ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void InitializePropertiesFromConfiguration();" />
+      <MemberSignature Language="F#" Value="abstract member InitializePropertiesFromConfiguration : unit -&gt; unit" Usage="httpModuleBase.InitializePropertiesFromConfiguration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

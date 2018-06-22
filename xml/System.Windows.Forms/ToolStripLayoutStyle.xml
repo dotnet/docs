@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripLayoutStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripLayoutStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripLayoutStyle" />
+  <TypeSignature Language="F#" Value="type ToolStripLayoutStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.Flow" />
       <MemberSignature Language="VB.NET" Value="Flow" />
       <MemberSignature Language="C++ CLI" Value="Flow" />
+      <MemberSignature Language="F#" Value="Flow = 3" Usage="System.Windows.Forms.ToolStripLayoutStyle.Flow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow" />
       <MemberSignature Language="VB.NET" Value="HorizontalStackWithOverflow" />
       <MemberSignature Language="C++ CLI" Value="HorizontalStackWithOverflow" />
+      <MemberSignature Language="F#" Value="HorizontalStackWithOverflow = 1" Usage="System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow" />
       <MemberSignature Language="VB.NET" Value="StackWithOverflow" />
       <MemberSignature Language="C++ CLI" Value="StackWithOverflow" />
+      <MemberSignature Language="F#" Value="StackWithOverflow = 0" Usage="System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.Table" />
       <MemberSignature Language="VB.NET" Value="Table" />
       <MemberSignature Language="C++ CLI" Value="Table" />
+      <MemberSignature Language="F#" Value="Table = 4" Usage="System.Windows.Forms.ToolStripLayoutStyle.Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow" />
       <MemberSignature Language="VB.NET" Value="VerticalStackWithOverflow" />
       <MemberSignature Language="C++ CLI" Value="VerticalStackWithOverflow" />
+      <MemberSignature Language="F#" Value="VerticalStackWithOverflow = 2" Usage="System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

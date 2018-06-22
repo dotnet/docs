@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.IntervalType" />
   <TypeSignature Language="VB.NET" Value="Public Enum IntervalType" />
   <TypeSignature Language="C++ CLI" Value="public enum class IntervalType" />
+  <TypeSignature Language="F#" Value="type IntervalType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Days" />
       <MemberSignature Language="VB.NET" Value="Days" />
       <MemberSignature Language="C++ CLI" Value="Days" />
+      <MemberSignature Language="F#" Value="Days = 4" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Days" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Hours" />
       <MemberSignature Language="VB.NET" Value="Hours" />
       <MemberSignature Language="C++ CLI" Value="Hours" />
+      <MemberSignature Language="F#" Value="Hours = 5" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Hours" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Milliseconds" />
       <MemberSignature Language="VB.NET" Value="Milliseconds" />
       <MemberSignature Language="C++ CLI" Value="Milliseconds" />
+      <MemberSignature Language="F#" Value="Milliseconds = 8" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Milliseconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Minutes" />
       <MemberSignature Language="VB.NET" Value="Minutes" />
       <MemberSignature Language="C++ CLI" Value="Minutes" />
+      <MemberSignature Language="F#" Value="Minutes = 6" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Minutes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Months" />
       <MemberSignature Language="VB.NET" Value="Months" />
       <MemberSignature Language="C++ CLI" Value="Months" />
+      <MemberSignature Language="F#" Value="Months = 2" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Months" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Number" />
       <MemberSignature Language="VB.NET" Value="Number" />
       <MemberSignature Language="C++ CLI" Value="Number" />
+      <MemberSignature Language="F#" Value="Number = 0" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Seconds" />
       <MemberSignature Language="VB.NET" Value="Seconds" />
       <MemberSignature Language="C++ CLI" Value="Seconds" />
+      <MemberSignature Language="F#" Value="Seconds = 7" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Seconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Weeks" />
       <MemberSignature Language="VB.NET" Value="Weeks" />
       <MemberSignature Language="C++ CLI" Value="Weeks" />
+      <MemberSignature Language="F#" Value="Weeks = 3" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Weeks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalType.Years" />
       <MemberSignature Language="VB.NET" Value="Years" />
       <MemberSignature Language="C++ CLI" Value="Years" />
+      <MemberSignature Language="F#" Value="Years = 1" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalType.Years" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

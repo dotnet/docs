@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.OperationStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum OperationStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class OperationStatus" />
+  <TypeSignature Language="F#" Value="type OperationStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Buffers.OperationStatus.DestinationTooSmall" />
       <MemberSignature Language="VB.NET" Value="DestinationTooSmall" />
       <MemberSignature Language="C++ CLI" Value="DestinationTooSmall" />
+      <MemberSignature Language="F#" Value="DestinationTooSmall = 1" Usage="System.Buffers.OperationStatus.DestinationTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Buffers.OperationStatus.Done" />
       <MemberSignature Language="VB.NET" Value="Done" />
       <MemberSignature Language="C++ CLI" Value="Done" />
+      <MemberSignature Language="F#" Value="Done = 0" Usage="System.Buffers.OperationStatus.Done" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Buffers.OperationStatus.InvalidData" />
       <MemberSignature Language="VB.NET" Value="InvalidData" />
       <MemberSignature Language="C++ CLI" Value="InvalidData" />
+      <MemberSignature Language="F#" Value="InvalidData = 3" Usage="System.Buffers.OperationStatus.InvalidData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Buffers.OperationStatus.NeedMoreData" />
       <MemberSignature Language="VB.NET" Value="NeedMoreData" />
       <MemberSignature Language="C++ CLI" Value="NeedMoreData" />
+      <MemberSignature Language="F#" Value="NeedMoreData = 2" Usage="System.Buffers.OperationStatus.NeedMoreData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

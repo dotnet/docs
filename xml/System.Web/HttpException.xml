@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpException" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpException&#xA;Inherits ExternalException" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpException : System::Runtime::InteropServices::ExternalException" />
+  <TypeSignature Language="F#" Value="type HttpException = class&#xA;    inherit ExternalException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpException : string -&gt; System.Web.HttpException" Usage="new System.Web.HttpException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (httpCode As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpException(int httpCode, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpException : int * string -&gt; System.Web.HttpException" Usage="new System.Web.HttpException (httpCode, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Web.HttpException" Usage="new System.Web.HttpException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpException : string * Exception -&gt; System.Web.HttpException" Usage="new System.Web.HttpException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, hr As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpException(System::String ^ message, int hr);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpException : string * int -&gt; System.Web.HttpException" Usage="new System.Web.HttpException (message, hr)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.#ctor(System.Int32,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (httpCode As Integer, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpException(int httpCode, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpException : int * string * Exception -&gt; System.Web.HttpException" Usage="new System.Web.HttpException (httpCode, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.#ctor(System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (httpCode As Integer, message As String, hr As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpException(int httpCode, System::String ^ message, int hr);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpException : int * string * int -&gt; System.Web.HttpException" Usage="new System.Web.HttpException (httpCode, message, hr)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -338,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.CreateFromLastError(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromLastError (message As String) As HttpException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::HttpException ^ CreateFromLastError(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member CreateFromLastError : string -&gt; System.Web.HttpException" Usage="System.Web.HttpException.CreateFromLastError message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.GetHtmlErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHtmlErrorMessage () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetHtmlErrorMessage();" />
+      <MemberSignature Language="F#" Value="member this.GetHtmlErrorMessage : unit -&gt; string" Usage="httpException.GetHtmlErrorMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -385,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.GetHttpCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHttpCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHttpCode();" />
+      <MemberSignature Language="F#" Value="member this.GetHttpCode : unit -&gt; int" Usage="httpException.GetHttpCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="httpException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -448,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpException.WebEventCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebEventCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WebEventCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebEventCode : int" Usage="System.Web.HttpException.WebEventCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

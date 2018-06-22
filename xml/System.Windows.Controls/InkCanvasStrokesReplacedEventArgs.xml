@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InkCanvasStrokesReplacedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InkCanvasStrokesReplacedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type InkCanvasStrokesReplacedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.NewStrokes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewStrokes As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ NewStrokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewStrokes : System.Windows.Ink.StrokeCollection" Usage="System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.NewStrokes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.PreviousStrokes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousStrokes As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ PreviousStrokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousStrokes : System.Windows.Ink.StrokeCollection" Usage="System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.PreviousStrokes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

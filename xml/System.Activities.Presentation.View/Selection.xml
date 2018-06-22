@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.Selection" />
   <TypeSignature Language="VB.NET" Value="Public Class Selection&#xA;Inherits ContextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class Selection : System::Activities::Presentation::ContextItem" />
+  <TypeSignature Language="F#" Value="type Selection = class&#xA;    inherit ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.#ctor(System.Activities.Presentation.Model.ModelItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray selectedObjects As ModelItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Selection(... cli::array &lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ selectedObjects);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.Selection : System.Activities.Presentation.Model.ModelItem[] -&gt; System.Activities.Presentation.View.Selection" Usage="new System.Activities.Presentation.View.Selection selectedObjects" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.#ctor(System.Collections.Generic.IEnumerable{System.Activities.Presentation.Model.ModelItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (selectedObjects As IEnumerable(Of ModelItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Selection(System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ selectedObjects);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.Selection : seq&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; System.Activities.Presentation.View.Selection" Usage="new System.Activities.Presentation.View.Selection selectedObjects" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.#ctor(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (selectedObjects As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Selection(System::Collections::IEnumerable ^ selectedObjects);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.Selection : System.Collections.IEnumerable -&gt; System.Activities.Presentation.View.Selection" Usage="new System.Activities.Presentation.View.Selection selectedObjects" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.#ctor(System.Collections.Generic.IEnumerable{System.Activities.Presentation.Model.ModelItem},System.Predicate{System.Activities.Presentation.Model.ModelItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (selectedObjects As IEnumerable(Of ModelItem), match As Predicate(Of ModelItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Selection(System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ selectedObjects, Predicate&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.Selection : seq&lt;System.Activities.Presentation.Model.ModelItem&gt; * Predicate&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; System.Activities.Presentation.View.Selection" Usage="new System.Activities.Presentation.View.Selection (selectedObjects, match)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.#ctor(System.Collections.IEnumerable,System.Predicate{System.Activities.Presentation.Model.ModelItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (selectedObjects As IEnumerable, match As Predicate(Of ModelItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Selection(System::Collections::IEnumerable ^ selectedObjects, Predicate&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.Selection : System.Collections.IEnumerable * Predicate&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; System.Activities.Presentation.View.Selection" Usage="new System.Activities.Presentation.View.Selection (selectedObjects, match)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.Selection.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.View.Selection.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.Selection.PrimarySelection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimarySelection As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::ModelItem ^ PrimarySelection { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimarySelection : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.View.Selection.PrimarySelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.Select(System.Activities.Presentation.EditingContext,System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Select (context As EditingContext, itemToSelect As ModelItem) As Selection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::View::Selection ^ Select(System::Activities::Presentation::EditingContext ^ context, System::Activities::Presentation::Model::ModelItem ^ itemToSelect);" />
+      <MemberSignature Language="F#" Value="static member Select : System.Activities.Presentation.EditingContext * System.Activities.Presentation.Model.ModelItem -&gt; System.Activities.Presentation.View.Selection" Usage="System.Activities.Presentation.View.Selection.Select (context, itemToSelect)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -278,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.Selection.SelectedObjects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedObjects As IEnumerable(Of ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ SelectedObjects { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedObjects : seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="System.Activities.Presentation.View.Selection.SelectedObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.Selection.SelectionCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionCount : int" Usage="System.Activities.Presentation.View.Selection.SelectionCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -318,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.SelectOnly(System.Activities.Presentation.EditingContext,System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SelectOnly (context As EditingContext, itemToSelect As ModelItem) As Selection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::View::Selection ^ SelectOnly(System::Activities::Presentation::EditingContext ^ context, System::Activities::Presentation::Model::ModelItem ^ itemToSelect);" />
+      <MemberSignature Language="F#" Value="static member SelectOnly : System.Activities.Presentation.EditingContext * System.Activities.Presentation.Model.ModelItem -&gt; System.Activities.Presentation.View.Selection" Usage="System.Activities.Presentation.View.Selection.SelectOnly (context, itemToSelect)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -344,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.Subscribe(System.Activities.Presentation.EditingContext,System.Activities.Presentation.SubscribeContextCallback{System.Activities.Presentation.View.Selection})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Subscribe (context As EditingContext, handler As SubscribeContextCallback(Of Selection))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Subscribe(System::Activities::Presentation::EditingContext ^ context, System::Activities::Presentation::SubscribeContextCallback&lt;System::Activities::Presentation::View::Selection ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member Subscribe : System.Activities.Presentation.EditingContext * System.Activities.Presentation.SubscribeContextCallback&lt;System.Activities.Presentation.View.Selection&gt; -&gt; unit" Usage="System.Activities.Presentation.View.Selection.Subscribe (context, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -369,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.Toggle(System.Activities.Presentation.EditingContext,System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Toggle (context As EditingContext, itemToToggle As ModelItem) As Selection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::View::Selection ^ Toggle(System::Activities::Presentation::EditingContext ^ context, System::Activities::Presentation::Model::ModelItem ^ itemToToggle);" />
+      <MemberSignature Language="F#" Value="static member Toggle : System.Activities.Presentation.EditingContext * System.Activities.Presentation.Model.ModelItem -&gt; System.Activities.Presentation.View.Selection" Usage="System.Activities.Presentation.View.Selection.Toggle (context, itemToToggle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -395,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.Union(System.Activities.Presentation.EditingContext,System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Union (context As EditingContext, itemToAdd As ModelItem) As Selection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::View::Selection ^ Union(System::Activities::Presentation::EditingContext ^ context, System::Activities::Presentation::Model::ModelItem ^ itemToAdd);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Activities.Presentation.EditingContext * System.Activities.Presentation.Model.ModelItem -&gt; System.Activities.Presentation.View.Selection" Usage="System.Activities.Presentation.View.Selection.Union (context, itemToAdd)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -421,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.Unsubscribe(System.Activities.Presentation.EditingContext,System.Activities.Presentation.SubscribeContextCallback{System.Activities.Presentation.View.Selection})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Unsubscribe (context As EditingContext, handler As SubscribeContextCallback(Of Selection))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unsubscribe(System::Activities::Presentation::EditingContext ^ context, System::Activities::Presentation::SubscribeContextCallback&lt;System::Activities::Presentation::View::Selection ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member Unsubscribe : System.Activities.Presentation.EditingContext * System.Activities.Presentation.SubscribeContextCallback&lt;System.Activities.Presentation.View.Selection&gt; -&gt; unit" Usage="System.Activities.Presentation.View.Selection.Unsubscribe (context, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

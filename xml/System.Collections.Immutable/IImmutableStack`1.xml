@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.IImmutableStack`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IImmutableStack(Of T)&#xA;Implements IEnumerable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IImmutableStack : System::Collections::Generic::IEnumerable&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type IImmutableStack&lt;'T&gt; = interface&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableStack`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Function Clear () As IImmutableStack(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableStack&lt;T&gt; ^ Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; System.Collections.Immutable.IImmutableStack&lt;'T&gt;" Usage="iImmutableStack.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.IImmutableStack`1.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Collections.Immutable.IImmutableStack&lt;'T&gt;.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableStack`1.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Function Peek () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Peek();" />
+      <MemberSignature Language="F#" Value="abstract member Peek : unit -&gt; 'T" Usage="iImmutableStack.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableStack`1.Pop" />
       <MemberSignature Language="VB.NET" Value="Public Function Pop () As IImmutableStack(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableStack&lt;T&gt; ^ Pop();" />
+      <MemberSignature Language="F#" Value="abstract member Pop : unit -&gt; System.Collections.Immutable.IImmutableStack&lt;'T&gt;" Usage="iImmutableStack.Pop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableStack`1.Push(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Push (value As T) As IImmutableStack(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableStack&lt;T&gt; ^ Push(T value);" />
+      <MemberSignature Language="F#" Value="abstract member Push : 'T -&gt; System.Collections.Immutable.IImmutableStack&lt;'T&gt;" Usage="iImmutableStack.Push value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

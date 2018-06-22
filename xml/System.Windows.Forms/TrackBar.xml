@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TrackBar" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackBar&#xA;Inherits Control&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackBar : System::Windows::Forms::Control, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type TrackBar = class&#xA;    inherit Control&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.TrackBar.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.TrackBar.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -246,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.TrackBar.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +287,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -315,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="trackBar.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -343,6 +351,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -370,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.CreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="trackBar.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -390,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.TrackBar.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -410,6 +421,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.DefaultImeMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultImeMode As ImeMode" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::ImeMode DefaultImeMode { System::Windows::Forms::ImeMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultImeMode : System.Windows.Forms.ImeMode" Usage="System.Windows.Forms.TrackBar.DefaultImeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.TrackBar.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -457,6 +470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.DoubleBuffered" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property DoubleBuffered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DoubleBuffered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleBuffered : bool with get, set" Usage="System.Windows.Forms.TrackBar.DoubleBuffered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -490,6 +504,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.DoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -517,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="trackBar.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.TrackBar.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -580,6 +597,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FontChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
+      <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -607,6 +625,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.TrackBar.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -635,6 +654,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -662,6 +682,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.ImeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ImeMode As ImeMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImeMode ImeMode { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ImeMode : System.Windows.Forms.ImeMode with get, set" Usage="System.Windows.Forms.TrackBar.ImeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -690,6 +711,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.ImeModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ImeModeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -717,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.IsInputKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.IsInputKey : System.Windows.Forms.Keys -&gt; bool" Usage="trackBar.IsInputKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -743,6 +766,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.LargeChange" />
       <MemberSignature Language="VB.NET" Value="Public Property LargeChange As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LargeChange { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LargeChange : int with get, set" Usage="System.Windows.Forms.TrackBar.LargeChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -785,6 +809,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public Property Maximum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maximum { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int with get, set" Usage="System.Windows.Forms.TrackBar.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -829,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public Property Minimum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minimum { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Minimum : int with get, set" Usage="System.Windows.Forms.TrackBar.Minimum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -873,6 +899,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.MouseClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
+      <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -900,6 +927,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.MouseDoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
+      <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -927,6 +955,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.OnBackColorChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBackColorChanged : EventArgs -&gt; unit" Usage="trackBar.OnBackColorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -951,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="trackBar.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -974,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseWheel : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="trackBar.OnMouseWheel e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1003,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.OnRightToLeftLayoutChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRightToLeftLayoutChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRightToLeftLayoutChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRightToLeftLayoutChanged : EventArgs -&gt; unit&#xA;override this.OnRightToLeftLayoutChanged : EventArgs -&gt; unit" Usage="trackBar.OnRightToLeftLayoutChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1043,6 +1075,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.OnScroll(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnScroll (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnScroll(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnScroll : EventArgs -&gt; unit&#xA;override this.OnScroll : EventArgs -&gt; unit" Usage="trackBar.OnScroll e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1080,6 +1113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.OnSystemColorsChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSystemColorsChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSystemColorsChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnSystemColorsChanged : EventArgs -&gt; unit" Usage="trackBar.OnSystemColorsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1117,6 +1151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.OnValueChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValueChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValueChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnValueChanged : EventArgs -&gt; unit&#xA;override this.OnValueChanged : EventArgs -&gt; unit" Usage="trackBar.OnValueChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1140,6 +1175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.Orientation" />
       <MemberSignature Language="VB.NET" Value="Public Property Orientation As Orientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Orientation Orientation { System::Windows::Forms::Orientation get(); void set(System::Windows::Forms::Orientation value); };" />
+      <MemberSignature Language="F#" Value="member this.Orientation : System.Windows.Forms.Orientation with get, set" Usage="System.Windows.Forms.TrackBar.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1186,6 +1222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.TrackBar.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1224,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1258,6 +1296,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.Paint" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1285,6 +1324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.RightToLeftLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeftLayout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RightToLeftLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayout : bool with get, set" Usage="System.Windows.Forms.TrackBar.RightToLeftLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1321,6 +1361,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.RightToLeftLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1359,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.Scroll" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Scroll As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Scroll;" />
+      <MemberSignature Language="F#" Value="member this.Scroll : EventHandler " Usage="member this.Scroll : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1400,6 +1442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="trackBar.SetBoundsCore (x, y, width, height, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1432,6 +1475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.SetRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetRange (minValue As Integer, maxValue As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRange(int minValue, int maxValue);" />
+      <MemberSignature Language="F#" Value="member this.SetRange : int * int -&gt; unit" Usage="trackBar.SetRange (minValue, maxValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1466,6 +1510,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.SmallChange" />
       <MemberSignature Language="VB.NET" Value="Public Property SmallChange As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SmallChange { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SmallChange : int with get, set" Usage="System.Windows.Forms.TrackBar.SmallChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1510,6 +1555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.TrackBar.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1548,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1575,6 +1622,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.TickFrequency" />
       <MemberSignature Language="VB.NET" Value="Public Property TickFrequency As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TickFrequency { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TickFrequency : int with get, set" Usage="System.Windows.Forms.TrackBar.TickFrequency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1616,6 +1664,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.TickStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property TickStyle As TickStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TickStyle TickStyle { System::Windows::Forms::TickStyle get(); void set(System::Windows::Forms::TickStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.TickStyle : System.Windows.Forms.TickStyle with get, set" Usage="System.Windows.Forms.TrackBar.TickStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1659,6 +1708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="trackBar.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1687,6 +1737,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBar.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int with get, set" Usage="System.Windows.Forms.TrackBar.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1736,6 +1787,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TrackBar.ValueChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ValueChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ValueChanged;" />
+      <MemberSignature Language="F#" Value="member this.ValueChanged : EventHandler " Usage="member this.ValueChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1773,6 +1825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBar.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="trackBar.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

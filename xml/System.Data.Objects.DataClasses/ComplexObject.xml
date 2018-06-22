@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.ComplexObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComplexObject&#xA;Inherits StructuralObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComplexObject abstract : System::Data::Objects::DataClasses::StructuralObject" />
+  <TypeSignature Language="F#" Value="type ComplexObject = class&#xA;    inherit StructuralObject" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.ComplexObject.ReportPropertyChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ReportPropertyChanged (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ReportPropertyChanged(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="override this.ReportPropertyChanged : string -&gt; unit" Usage="complexObject.ReportPropertyChanged property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.ComplexObject.ReportPropertyChanging(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ReportPropertyChanging (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ReportPropertyChanging(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="override this.ReportPropertyChanging : string -&gt; unit" Usage="complexObject.ReportPropertyChanging property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

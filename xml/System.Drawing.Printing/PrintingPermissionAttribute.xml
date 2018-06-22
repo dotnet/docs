@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintingPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintingPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintingPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type PrintingPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintingPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.PrintingPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Drawing.Printing.PrintingPermissionAttribute" Usage="new System.Drawing.Printing.PrintingPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintingPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="printingPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintingPermissionAttribute.Level" />
       <MemberSignature Language="VB.NET" Value="Public Property Level As PrintingPermissionLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintingPermissionLevel Level { System::Drawing::Printing::PrintingPermissionLevel get(); void set(System::Drawing::Printing::PrintingPermissionLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Drawing.Printing.PrintingPermissionLevel with get, set" Usage="System.Drawing.Printing.PrintingPermissionAttribute.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

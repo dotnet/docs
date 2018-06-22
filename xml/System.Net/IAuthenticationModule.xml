@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IAuthenticationModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAuthenticationModule" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAuthenticationModule" />
+  <TypeSignature Language="F#" Value="type IAuthenticationModule = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IAuthenticationModule.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Function Authenticate (challenge As String, request As WebRequest, credentials As ICredentials) As Authorization" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Authorization ^ Authenticate(System::String ^ challenge, System::Net::WebRequest ^ request, System::Net::ICredentials ^ credentials);" />
+      <MemberSignature Language="F#" Value="abstract member Authenticate : string * System.Net.WebRequest * System.Net.ICredentials -&gt; System.Net.Authorization" Usage="iAuthenticationModule.Authenticate (challenge, request, credentials)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IAuthenticationModule.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Net.IAuthenticationModule.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IAuthenticationModule.CanPreAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanPreAuthenticate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanPreAuthenticate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanPreAuthenticate : bool" Usage="System.Net.IAuthenticationModule.CanPreAuthenticate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IAuthenticationModule.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Function PreAuthenticate (request As WebRequest, credentials As ICredentials) As Authorization" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Authorization ^ PreAuthenticate(System::Net::WebRequest ^ request, System::Net::ICredentials ^ credentials);" />
+      <MemberSignature Language="F#" Value="abstract member PreAuthenticate : System.Net.WebRequest * System.Net.ICredentials -&gt; System.Net.Authorization" Usage="iAuthenticationModule.PreAuthenticate (request, credentials)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

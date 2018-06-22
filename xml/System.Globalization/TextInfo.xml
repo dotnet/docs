@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.TextInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class TextInfo&#xA;Implements ICloneable, IDeserializationCallback" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextInfo : ICloneable, System::Runtime::Serialization::IDeserializationCallback" />
+  <TypeSignature Language="F#" Value="type TextInfo = class&#xA;    interface ICloneable&#xA;    interface IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.ANSICodePage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ANSICodePage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ANSICodePage { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ANSICodePage : int" Usage="System.Globalization.TextInfo.ANSICodePage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="textInfo.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.CultureName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CultureName : string" Usage="System.Globalization.TextInfo.CultureName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.EBCDICCodePage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EBCDICCodePage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EBCDICCodePage { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EBCDICCodePage : int" Usage="System.Globalization.TextInfo.EBCDICCodePage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="textInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="textInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -331,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Globalization.TextInfo.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -379,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.IsRightToLeft" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRightToLeft As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRightToLeft { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRightToLeft : bool" Usage="System.Globalization.TextInfo.IsRightToLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -426,6 +435,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.LCID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LCID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LCID : int" Usage="System.Globalization.TextInfo.LCID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -472,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.ListSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ListSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ListSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ListSeparator : string with get, set" Usage="System.Globalization.TextInfo.ListSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -517,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.MacCodePage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MacCodePage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MacCodePage { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MacCodePage : int" Usage="System.Globalization.TextInfo.MacCodePage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -550,6 +562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.TextInfo.OEMCodePage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OEMCodePage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int OEMCodePage { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OEMCodePage : int" Usage="System.Globalization.TextInfo.OEMCodePage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -582,6 +595,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.TextInfo ReadOnly(class System.Globalization.TextInfo textInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.ReadOnly(System.Globalization.TextInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::TextInfo ^ ReadOnly(System::Globalization::TextInfo ^ textInfo);" />
+      <MemberSignature Language="F#" Value="static member ReadOnly : System.Globalization.TextInfo -&gt; System.Globalization.TextInfo" Usage="System.Globalization.TextInfo.ReadOnly textInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -685,6 +699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.ToLower(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToLower (c As Char) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual char ToLower(char c);" />
+      <MemberSignature Language="F#" Value="abstract member ToLower : char -&gt; char&#xA;override this.ToLower : char -&gt; char" Usage="textInfo.ToLower c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -751,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.ToLower(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToLower (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToLower(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="abstract member ToLower : string -&gt; string&#xA;override this.ToLower : string -&gt; string" Usage="textInfo.ToLower str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -821,6 +837,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="textInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -866,6 +883,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.ToTitleCase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToTitleCase (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToTitleCase(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="member this.ToTitleCase : string -&gt; string" Usage="textInfo.ToTitleCase str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -945,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.ToUpper(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToUpper (c As Char) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual char ToUpper(char c);" />
+      <MemberSignature Language="F#" Value="abstract member ToUpper : char -&gt; char&#xA;override this.ToUpper : char -&gt; char" Usage="textInfo.ToUpper c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1011,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.TextInfo.ToUpper(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToUpper (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToUpper(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="abstract member ToUpper : string -&gt; string&#xA;override this.ToUpper : string -&gt; string" Usage="textInfo.ToUpper str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessStartInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProcessStartInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessStartInfo sealed" />
+  <TypeSignature Language="F#" Value="type ProcessStartInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -118,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessStartInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProcessStartInfo(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.ProcessStartInfo : string -&gt; System.Diagnostics.ProcessStartInfo" Usage="new System.Diagnostics.ProcessStartInfo fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -159,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessStartInfo.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, arguments As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProcessStartInfo(System::String ^ fileName, System::String ^ arguments);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.ProcessStartInfo : string * string -&gt; System.Diagnostics.ProcessStartInfo" Usage="new System.Diagnostics.ProcessStartInfo (fileName, arguments)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -202,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.ArgumentList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgumentList As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ ArgumentList { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArgumentList : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Diagnostics.ProcessStartInfo.ArgumentList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public Property Arguments As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Arguments { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : string with get, set" Usage="System.Diagnostics.ProcessStartInfo.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -287,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.CreateNoWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateNoWindow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateNoWindow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateNoWindow : bool with get, set" Usage="System.Diagnostics.ProcessStartInfo.CreateNoWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -346,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Diagnostics.ProcessStartInfo.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -382,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.Environment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Environment As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Environment { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Environment : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Diagnostics.ProcessStartInfo.Environment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -436,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.EnvironmentVariables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvironmentVariables As StringDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringDictionary ^ EnvironmentVariables { System::Collections::Specialized::StringDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnvironmentVariables : System.Collections.Specialized.StringDictionary" Usage="System.Diagnostics.ProcessStartInfo.EnvironmentVariables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -490,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.ErrorDialog" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorDialog As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ErrorDialog { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorDialog : bool with get, set" Usage="System.Diagnostics.ProcessStartInfo.ErrorDialog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -541,6 +551,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.ErrorDialogParentHandle" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorDialogParentHandle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ErrorDialogParentHandle { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorDialogParentHandle : nativeint with get, set" Usage="System.Diagnostics.ProcessStartInfo.ErrorDialogParentHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -586,6 +597,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.Diagnostics.ProcessStartInfo.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -655,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.LoadUserProfile" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadUserProfile As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LoadUserProfile { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadUserProfile : bool with get, set" Usage="System.Diagnostics.ProcessStartInfo.LoadUserProfile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -705,6 +718,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As SecureString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::SecureString ^ Password { System::Security::SecureString ^ get(); void set(System::Security::SecureString ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : System.Security.SecureString with get, set" Usage="System.Diagnostics.ProcessStartInfo.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -754,6 +768,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.PasswordInClearText" />
       <MemberSignature Language="VB.NET" Value="Public Property PasswordInClearText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PasswordInClearText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordInClearText : string with get, set" Usage="System.Diagnostics.ProcessStartInfo.PasswordInClearText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -793,6 +808,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.RedirectStandardError" />
       <MemberSignature Language="VB.NET" Value="Public Property RedirectStandardError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RedirectStandardError { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RedirectStandardError : bool with get, set" Usage="System.Diagnostics.ProcessStartInfo.RedirectStandardError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -904,6 +920,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.RedirectStandardInput" />
       <MemberSignature Language="VB.NET" Value="Public Property RedirectStandardInput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RedirectStandardInput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RedirectStandardInput : bool with get, set" Usage="System.Diagnostics.ProcessStartInfo.RedirectStandardInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -970,6 +987,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
       <MemberSignature Language="VB.NET" Value="Public Property RedirectStandardOutput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RedirectStandardOutput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RedirectStandardOutput : bool with get, set" Usage="System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1071,6 +1089,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.StandardErrorEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property StandardErrorEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ StandardErrorEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StandardErrorEncoding : System.Text.Encoding with get, set" Usage="System.Diagnostics.ProcessStartInfo.StandardErrorEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1109,6 +1128,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.StandardInputEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property StandardInputEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ StandardInputEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StandardInputEncoding : System.Text.Encoding with get, set" Usage="System.Diagnostics.ProcessStartInfo.StandardInputEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1129,6 +1149,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.StandardOutputEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property StandardOutputEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ StandardOutputEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StandardOutputEncoding : System.Text.Encoding with get, set" Usage="System.Diagnostics.ProcessStartInfo.StandardOutputEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1167,6 +1188,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string with get, set" Usage="System.Diagnostics.ProcessStartInfo.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1214,6 +1236,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
       <MemberSignature Language="VB.NET" Value="Public Property UseShellExecute As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseShellExecute { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseShellExecute : bool with get, set" Usage="System.Diagnostics.ProcessStartInfo.UseShellExecute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1287,6 +1310,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.Verb" />
       <MemberSignature Language="VB.NET" Value="Public Property Verb As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Verb { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Verb : string with get, set" Usage="System.Diagnostics.ProcessStartInfo.Verb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1349,6 +1373,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.Verbs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Verbs As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Verbs { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : string[]" Usage="System.Diagnostics.ProcessStartInfo.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1405,6 +1430,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.WindowStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowStyle As ProcessWindowStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ProcessWindowStyle WindowStyle { System::Diagnostics::ProcessWindowStyle get(); void set(System::Diagnostics::ProcessWindowStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.WindowStyle : System.Diagnostics.ProcessWindowStyle with get, set" Usage="System.Diagnostics.ProcessStartInfo.WindowStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1456,6 +1482,7 @@ p.WaitForExit();
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.WorkingDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkingDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WorkingDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkingDirectory : string with get, set" Usage="System.Diagnostics.ProcessStartInfo.WorkingDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>

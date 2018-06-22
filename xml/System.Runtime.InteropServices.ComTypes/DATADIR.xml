@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.DATADIR" />
   <TypeSignature Language="VB.NET" Value="Public Enum DATADIR" />
   <TypeSignature Language="C++ CLI" Value="public enum class DATADIR" />
+  <TypeSignature Language="F#" Value="type DATADIR = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_GET" />
       <MemberSignature Language="VB.NET" Value="DATADIR_GET" />
       <MemberSignature Language="C++ CLI" Value="DATADIR_GET" />
+      <MemberSignature Language="F#" Value="DATADIR_GET = 1" Usage="System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_GET" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_SET" />
       <MemberSignature Language="VB.NET" Value="DATADIR_SET" />
       <MemberSignature Language="C++ CLI" Value="DATADIR_SET" />
+      <MemberSignature Language="F#" Value="DATADIR_SET = 2" Usage="System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_SET" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

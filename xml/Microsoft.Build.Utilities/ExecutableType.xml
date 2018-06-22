@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.ExecutableType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExecutableType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ExecutableType" />
+  <TypeSignature Language="F#" Value="type ExecutableType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.Managed32Bit" />
       <MemberSignature Language="VB.NET" Value="Managed32Bit" />
       <MemberSignature Language="C++ CLI" Value="Managed32Bit" />
+      <MemberSignature Language="F#" Value="Managed32Bit = 3" Usage="Microsoft.Build.Utilities.ExecutableType.Managed32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.Managed64Bit" />
       <MemberSignature Language="VB.NET" Value="Managed64Bit" />
       <MemberSignature Language="C++ CLI" Value="Managed64Bit" />
+      <MemberSignature Language="F#" Value="Managed64Bit = 4" Usage="Microsoft.Build.Utilities.ExecutableType.Managed64Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.ManagedIL" />
       <MemberSignature Language="VB.NET" Value="ManagedIL" />
       <MemberSignature Language="C++ CLI" Value="ManagedIL" />
+      <MemberSignature Language="F#" Value="ManagedIL = 2" Usage="Microsoft.Build.Utilities.ExecutableType.ManagedIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.Native32Bit" />
       <MemberSignature Language="VB.NET" Value="Native32Bit" />
       <MemberSignature Language="C++ CLI" Value="Native32Bit" />
+      <MemberSignature Language="F#" Value="Native32Bit = 0" Usage="Microsoft.Build.Utilities.ExecutableType.Native32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.Native64Bit" />
       <MemberSignature Language="VB.NET" Value="Native64Bit" />
       <MemberSignature Language="C++ CLI" Value="Native64Bit" />
+      <MemberSignature Language="F#" Value="Native64Bit = 1" Usage="Microsoft.Build.Utilities.ExecutableType.Native64Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.SameAsCurrentProcess" />
       <MemberSignature Language="VB.NET" Value="SameAsCurrentProcess" />
       <MemberSignature Language="C++ CLI" Value="SameAsCurrentProcess" />
+      <MemberSignature Language="F#" Value="SameAsCurrentProcess = 5" Usage="Microsoft.Build.Utilities.ExecutableType.SameAsCurrentProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

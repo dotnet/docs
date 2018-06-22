@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.RegistrationBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class RegistrationBuilder&#xA;Inherits CustomReflectionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistrationBuilder : System::Reflection::Context::CustomReflectionContext" />
+  <TypeSignature Language="F#" Value="type RegistrationBuilder = class&#xA;    inherit CustomReflectionContext" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ForType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.RegistrationBuilder.ForType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ForType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.ForType : Type -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="registrationBuilder.ForType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.RegistrationBuilder.ForType``1" />
       <MemberSignature Language="VB.NET" Value="Public Function ForType(Of T) () As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ForType();" />
+      <MemberSignature Language="F#" Value="member this.ForType : unit -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="registrationBuilder.ForType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ForTypesDerivedFrom(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesDerivedFrom(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ForTypesDerivedFrom(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.ForTypesDerivedFrom : Type -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="registrationBuilder.ForTypesDerivedFrom type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesDerivedFrom``1" />
       <MemberSignature Language="VB.NET" Value="Public Function ForTypesDerivedFrom(Of T) () As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ForTypesDerivedFrom();" />
+      <MemberSignature Language="F#" Value="member this.ForTypesDerivedFrom : unit -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="registrationBuilder.ForTypesDerivedFrom " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesMatching(System.Predicate{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Function ForTypesMatching (typeFilter As Predicate(Of Type)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ForTypesMatching(Predicate&lt;Type ^&gt; ^ typeFilter);" />
+      <MemberSignature Language="F#" Value="member this.ForTypesMatching : Predicate&lt;Type&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="registrationBuilder.ForTypesMatching typeFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesMatching``1(System.Predicate{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Function ForTypesMatching(Of T) (typeFilter As Predicate(Of Type)) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ForTypesMatching(Predicate&lt;Type ^&gt; ^ typeFilter);" />
+      <MemberSignature Language="F#" Value="member this.ForTypesMatching : Predicate&lt;Type&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="registrationBuilder.ForTypesMatching typeFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.RegistrationBuilder.GetCustomAttributes(System.Reflection.MemberInfo,System.Collections.Generic.IEnumerable{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCustomAttributes (member As MemberInfo, declaredAttributes As IEnumerable(Of Object)) As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ member, System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ declaredAttributes);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : System.Reflection.MemberInfo * seq&lt;obj&gt; -&gt; seq&lt;obj&gt;" Usage="registrationBuilder.GetCustomAttributes (member, declaredAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -223,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.RegistrationBuilder.GetCustomAttributes(System.Reflection.ParameterInfo,System.Collections.Generic.IEnumerable{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCustomAttributes (parameter As ParameterInfo, declaredAttributes As IEnumerable(Of Object)) As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ parameter, System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ declaredAttributes);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : System.Reflection.ParameterInfo * seq&lt;obj&gt; -&gt; seq&lt;obj&gt;" Usage="registrationBuilder.GetCustomAttributes (parameter, declaredAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>

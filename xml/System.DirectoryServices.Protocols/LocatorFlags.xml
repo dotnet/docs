@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.LocatorFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum LocatorFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class LocatorFlags" />
+  <TypeSignature Language="F#" Value="type LocatorFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.AvoidSelf" />
       <MemberSignature Language="VB.NET" Value="AvoidSelf" />
       <MemberSignature Language="C++ CLI" Value="AvoidSelf" />
+      <MemberSignature Language="F#" Value="AvoidSelf = 16384" Usage="System.DirectoryServices.Protocols.LocatorFlags.AvoidSelf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.DirectoryServicesPreferred" />
       <MemberSignature Language="VB.NET" Value="DirectoryServicesPreferred" />
       <MemberSignature Language="C++ CLI" Value="DirectoryServicesPreferred" />
+      <MemberSignature Language="F#" Value="DirectoryServicesPreferred = 32" Usage="System.DirectoryServices.Protocols.LocatorFlags.DirectoryServicesPreferred" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.DirectoryServicesRequired" />
       <MemberSignature Language="VB.NET" Value="DirectoryServicesRequired" />
       <MemberSignature Language="C++ CLI" Value="DirectoryServicesRequired" />
+      <MemberSignature Language="F#" Value="DirectoryServicesRequired = 16" Usage="System.DirectoryServices.Protocols.LocatorFlags.DirectoryServicesRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.ForceRediscovery" />
       <MemberSignature Language="VB.NET" Value="ForceRediscovery" />
       <MemberSignature Language="C++ CLI" Value="ForceRediscovery" />
+      <MemberSignature Language="F#" Value="ForceRediscovery = 1" Usage="System.DirectoryServices.Protocols.LocatorFlags.ForceRediscovery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.GCRequired" />
       <MemberSignature Language="VB.NET" Value="GCRequired" />
       <MemberSignature Language="C++ CLI" Value="GCRequired" />
+      <MemberSignature Language="F#" Value="GCRequired = 64" Usage="System.DirectoryServices.Protocols.LocatorFlags.GCRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.GoodTimeServerPreferred" />
       <MemberSignature Language="VB.NET" Value="GoodTimeServerPreferred" />
       <MemberSignature Language="C++ CLI" Value="GoodTimeServerPreferred" />
+      <MemberSignature Language="F#" Value="GoodTimeServerPreferred = 8192" Usage="System.DirectoryServices.Protocols.LocatorFlags.GoodTimeServerPreferred" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -148,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.IPRequired" />
       <MemberSignature Language="VB.NET" Value="IPRequired" />
       <MemberSignature Language="C++ CLI" Value="IPRequired" />
+      <MemberSignature Language="F#" Value="IPRequired = 512" Usage="System.DirectoryServices.Protocols.LocatorFlags.IPRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.IsDnsName" />
       <MemberSignature Language="VB.NET" Value="IsDnsName" />
       <MemberSignature Language="C++ CLI" Value="IsDnsName" />
+      <MemberSignature Language="F#" Value="IsDnsName = 131072" Usage="System.DirectoryServices.Protocols.LocatorFlags.IsDnsName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -188,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.IsFlatName" />
       <MemberSignature Language="VB.NET" Value="IsFlatName" />
       <MemberSignature Language="C++ CLI" Value="IsFlatName" />
+      <MemberSignature Language="F#" Value="IsFlatName = 65536" Usage="System.DirectoryServices.Protocols.LocatorFlags.IsFlatName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -208,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.KdcRequired" />
       <MemberSignature Language="VB.NET" Value="KdcRequired" />
       <MemberSignature Language="C++ CLI" Value="KdcRequired" />
+      <MemberSignature Language="F#" Value="KdcRequired = 1024" Usage="System.DirectoryServices.Protocols.LocatorFlags.KdcRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -228,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.Protocols.LocatorFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -248,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.OnlyLdapNeeded" />
       <MemberSignature Language="VB.NET" Value="OnlyLdapNeeded" />
       <MemberSignature Language="C++ CLI" Value="OnlyLdapNeeded" />
+      <MemberSignature Language="F#" Value="OnlyLdapNeeded = 32768" Usage="System.DirectoryServices.Protocols.LocatorFlags.OnlyLdapNeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -268,6 +281,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.PdcRequired" />
       <MemberSignature Language="VB.NET" Value="PdcRequired" />
       <MemberSignature Language="C++ CLI" Value="PdcRequired" />
+      <MemberSignature Language="F#" Value="PdcRequired = 128" Usage="System.DirectoryServices.Protocols.LocatorFlags.PdcRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -288,6 +302,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.ReturnDnsName" />
       <MemberSignature Language="VB.NET" Value="ReturnDnsName" />
       <MemberSignature Language="C++ CLI" Value="ReturnDnsName" />
+      <MemberSignature Language="F#" Value="ReturnDnsName = 1073741824" Usage="System.DirectoryServices.Protocols.LocatorFlags.ReturnDnsName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -308,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.ReturnFlatName" />
       <MemberSignature Language="VB.NET" Value="ReturnFlatName" />
       <MemberSignature Language="C++ CLI" Value="ReturnFlatName" />
+      <MemberSignature Language="F#" Value="ReturnFlatName = 2147483648" Usage="System.DirectoryServices.Protocols.LocatorFlags.ReturnFlatName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -328,6 +344,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.TimeServerRequired" />
       <MemberSignature Language="VB.NET" Value="TimeServerRequired" />
       <MemberSignature Language="C++ CLI" Value="TimeServerRequired" />
+      <MemberSignature Language="F#" Value="TimeServerRequired = 2048" Usage="System.DirectoryServices.Protocols.LocatorFlags.TimeServerRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -348,6 +365,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.LocatorFlags.WriteableRequired" />
       <MemberSignature Language="VB.NET" Value="WriteableRequired" />
       <MemberSignature Language="C++ CLI" Value="WriteableRequired" />
+      <MemberSignature Language="F#" Value="WriteableRequired = 4096" Usage="System.DirectoryServices.Protocols.LocatorFlags.WriteableRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

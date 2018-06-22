@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerObject&#xA;Implements IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerObject abstract : IServiceProvider" />
+  <TypeSignature Language="F#" Value="type DesignerObject = class&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerObject.#ctor(System.Web.UI.Design.ControlDesigner,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (designer As ControlDesigner, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerObject(System::Web::UI::Design::ControlDesigner ^ designer, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.DesignerObject : System.Web.UI.Design.ControlDesigner * string -&gt; System.Web.UI.Design.DesignerObject" Usage="new System.Web.UI.Design.DesignerObject (designer, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerObject.Designer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Designer As ControlDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::ControlDesigner ^ Designer { System::Web::UI::Design::ControlDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Designer : System.Web.UI.Design.ControlDesigner" Usage="System.Web.UI.Design.DesignerObject.Designer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerObject.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="designerObject.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.Design.DesignerObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerObject.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Web.UI.Design.DesignerObject.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

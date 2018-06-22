@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.IHttpHandlerFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHttpHandlerFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHttpHandlerFactory" />
+  <TypeSignature Language="F#" Value="type IHttpHandlerFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHandler (context As HttpContext, requestType As String, url As String, pathTranslated As String) As IHttpHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::IHttpHandler ^ GetHandler(System::Web::HttpContext ^ context, System::String ^ requestType, System::String ^ url, System::String ^ pathTranslated);" />
+      <MemberSignature Language="F#" Value="abstract member GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler" Usage="iHttpHandlerFactory.GetHandler (context, requestType, url, pathTranslated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseHandler (handler As IHttpHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseHandler(System::Web::IHttpHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHandler : System.Web.IHttpHandler -&gt; unit" Usage="iHttpHandlerFactory.ReleaseHandler handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ParameterAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum ParameterAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class ParameterAttributes" />
+  <TypeSignature Language="F#" Value="type ParameterAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.HasDefault" />
       <MemberSignature Language="VB.NET" Value="HasDefault" />
       <MemberSignature Language="C++ CLI" Value="HasDefault" />
+      <MemberSignature Language="F#" Value="HasDefault = 4096" Usage="System.Reflection.ParameterAttributes.HasDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.HasFieldMarshal" />
       <MemberSignature Language="VB.NET" Value="HasFieldMarshal" />
       <MemberSignature Language="C++ CLI" Value="HasFieldMarshal" />
+      <MemberSignature Language="F#" Value="HasFieldMarshal = 8192" Usage="System.Reflection.ParameterAttributes.HasFieldMarshal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.In" />
       <MemberSignature Language="VB.NET" Value="In" />
       <MemberSignature Language="C++ CLI" Value="In" />
+      <MemberSignature Language="F#" Value="In = 1" Usage="System.Reflection.ParameterAttributes.In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Lcid" />
       <MemberSignature Language="VB.NET" Value="Lcid" />
       <MemberSignature Language="C++ CLI" Value="Lcid" />
+      <MemberSignature Language="F#" Value="Lcid = 4" Usage="System.Reflection.ParameterAttributes.Lcid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.ParameterAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Optional" />
       <MemberSignature Language="VB.NET" Value="Optional" />
       <MemberSignature Language="C++ CLI" Value="Optional" />
+      <MemberSignature Language="F#" Value="Optional = 16" Usage="System.Reflection.ParameterAttributes.Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Out" />
       <MemberSignature Language="VB.NET" Value="Out" />
       <MemberSignature Language="C++ CLI" Value="Out" />
+      <MemberSignature Language="F#" Value="Out = 2" Usage="System.Reflection.ParameterAttributes.Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -293,6 +301,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Reserved3" />
       <MemberSignature Language="VB.NET" Value="Reserved3" />
       <MemberSignature Language="C++ CLI" Value="Reserved3" />
+      <MemberSignature Language="F#" Value="Reserved3 = 16384" Usage="System.Reflection.ParameterAttributes.Reserved3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -322,6 +331,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Reserved4" />
       <MemberSignature Language="VB.NET" Value="Reserved4" />
       <MemberSignature Language="C++ CLI" Value="Reserved4" />
+      <MemberSignature Language="F#" Value="Reserved4 = 32768" Usage="System.Reflection.ParameterAttributes.Reserved4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -351,6 +361,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.ReservedMask" />
       <MemberSignature Language="VB.NET" Value="ReservedMask" />
       <MemberSignature Language="C++ CLI" Value="ReservedMask" />
+      <MemberSignature Language="F#" Value="ReservedMask = 61440" Usage="System.Reflection.ParameterAttributes.ReservedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -380,6 +391,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Retval" />
       <MemberSignature Language="VB.NET" Value="Retval" />
       <MemberSignature Language="C++ CLI" Value="Retval" />
+      <MemberSignature Language="F#" Value="Retval = 8" Usage="System.Reflection.ParameterAttributes.Retval" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

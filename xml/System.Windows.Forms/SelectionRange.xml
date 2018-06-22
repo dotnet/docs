@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectionRange" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SelectionRange" />
   <TypeSignature Language="C++ CLI" Value="public ref class SelectionRange sealed" />
+  <TypeSignature Language="F#" Value="type SelectionRange = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SelectionRange.#ctor(System.Windows.Forms.SelectionRange)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (range As SelectionRange)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectionRange(System::Windows::Forms::SelectionRange ^ range);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.SelectionRange : System.Windows.Forms.SelectionRange -&gt; System.Windows.Forms.SelectionRange" Usage="new System.Windows.Forms.SelectionRange range" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SelectionRange.#ctor(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lower As DateTime, upper As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectionRange(DateTime lower, DateTime upper);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.SelectionRange : DateTime * DateTime -&gt; System.Windows.Forms.SelectionRange" Usage="new System.Windows.Forms.SelectionRange (lower, upper)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SelectionRange.End" />
       <MemberSignature Language="VB.NET" Value="Public Property End As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime End { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.End : DateTime with get, set" Usage="System.Windows.Forms.SelectionRange.End" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SelectionRange.Start" />
       <MemberSignature Language="VB.NET" Value="Public Property Start As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Start { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.Start : DateTime with get, set" Usage="System.Windows.Forms.SelectionRange.Start" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SelectionRange.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="selectionRange.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

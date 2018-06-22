@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderHwndOverride" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderHwndOverride&#xA;Implements IRawElementProviderSimple" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderHwndOverride : System::Windows::Automation::Provider::IRawElementProviderSimple" />
+  <TypeSignature Language="F#" Value="type IRawElementProviderHwndOverride = interface&#xA;    interface IRawElementProviderSimple" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderHwndOverride.GetOverrideProviderForHwnd(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOverrideProviderForHwnd (hwnd As IntPtr) As IRawElementProviderSimple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderSimple ^ GetOverrideProviderForHwnd(IntPtr hwnd);" />
+      <MemberSignature Language="F#" Value="abstract member GetOverrideProviderForHwnd : nativeint -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="iRawElementProviderHwndOverride.GetOverrideProviderForHwnd hwnd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

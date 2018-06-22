@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggableAttribute.DebuggingModes" />
   <TypeSignature Language="VB.NET" Value="Public Enum DebuggableAttribute.DebuggingModes" />
   <TypeSignature Language="C++ CLI" Value="public: enum class DebuggableAttribute::DebuggingModes" />
+  <TypeSignature Language="F#" Value="type DebuggableAttribute.DebuggingModes = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 1" Usage="System.Diagnostics.DebuggableAttribute.DebuggingModes.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations" />
       <MemberSignature Language="VB.NET" Value="DisableOptimizations" />
       <MemberSignature Language="C++ CLI" Value="DisableOptimizations" />
+      <MemberSignature Language="F#" Value="DisableOptimizations = 256" Usage="System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue" />
       <MemberSignature Language="VB.NET" Value="EnableEditAndContinue" />
       <MemberSignature Language="C++ CLI" Value="EnableEditAndContinue" />
+      <MemberSignature Language="F#" Value="EnableEditAndContinue = 4" Usage="System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints" />
       <MemberSignature Language="VB.NET" Value="IgnoreSymbolStoreSequencePoints" />
       <MemberSignature Language="C++ CLI" Value="IgnoreSymbolStoreSequencePoints" />
+      <MemberSignature Language="F#" Value="IgnoreSymbolStoreSequencePoints = 2" Usage="System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.DebuggableAttribute.DebuggingModes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

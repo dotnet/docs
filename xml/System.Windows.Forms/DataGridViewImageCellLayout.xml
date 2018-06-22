@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewImageCellLayout" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewImageCellLayout" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewImageCellLayout" />
+  <TypeSignature Language="F#" Value="type DataGridViewImageCellLayout = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewImageCellLayout.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 1" Usage="System.Windows.Forms.DataGridViewImageCellLayout.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewImageCellLayout.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Windows.Forms.DataGridViewImageCellLayout.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewImageCellLayout.Stretch" />
       <MemberSignature Language="VB.NET" Value="Stretch" />
       <MemberSignature Language="C++ CLI" Value="Stretch" />
+      <MemberSignature Language="F#" Value="Stretch = 2" Usage="System.Windows.Forms.DataGridViewImageCellLayout.Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewImageCellLayout.Zoom" />
       <MemberSignature Language="VB.NET" Value="Zoom" />
       <MemberSignature Language="C++ CLI" Value="Zoom" />
+      <MemberSignature Language="F#" Value="Zoom = 3" Usage="System.Windows.Forms.DataGridViewImageCellLayout.Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

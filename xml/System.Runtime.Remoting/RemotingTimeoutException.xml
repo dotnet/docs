@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.RemotingTimeoutException" />
   <TypeSignature Language="VB.NET" Value="Public Class RemotingTimeoutException&#xA;Inherits RemotingException" />
   <TypeSignature Language="C++ CLI" Value="public ref class RemotingTimeoutException : System::Runtime::Remoting::RemotingException" />
+  <TypeSignature Language="F#" Value="type RemotingTimeoutException = class&#xA;    inherit RemotingException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingTimeoutException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingTimeoutException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingTimeoutException : string -&gt; System.Runtime.Remoting.RemotingTimeoutException" Usage="new System.Runtime.Remoting.RemotingTimeoutException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingTimeoutException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, InnerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingTimeoutException(System::String ^ message, Exception ^ InnerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingTimeoutException : string * Exception -&gt; System.Runtime.Remoting.RemotingTimeoutException" Usage="new System.Runtime.Remoting.RemotingTimeoutException (message, InnerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlNodeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlNodeType" />
+  <TypeSignature Language="F#" Value="type XmlNodeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.Attribute" />
       <MemberSignature Language="VB.NET" Value="Attribute" />
       <MemberSignature Language="C++ CLI" Value="Attribute" />
+      <MemberSignature Language="F#" Value="Attribute = 2" Usage="System.Xml.XmlNodeType.Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.CDATA" />
       <MemberSignature Language="VB.NET" Value="CDATA" />
       <MemberSignature Language="C++ CLI" Value="CDATA" />
+      <MemberSignature Language="F#" Value="CDATA = 4" Usage="System.Xml.XmlNodeType.CDATA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.Comment" />
       <MemberSignature Language="VB.NET" Value="Comment" />
       <MemberSignature Language="C++ CLI" Value="Comment" />
+      <MemberSignature Language="F#" Value="Comment = 8" Usage="System.Xml.XmlNodeType.Comment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.Document" />
       <MemberSignature Language="VB.NET" Value="Document" />
       <MemberSignature Language="C++ CLI" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 9" Usage="System.Xml.XmlNodeType.Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.DocumentFragment" />
       <MemberSignature Language="VB.NET" Value="DocumentFragment" />
       <MemberSignature Language="C++ CLI" Value="DocumentFragment" />
+      <MemberSignature Language="F#" Value="DocumentFragment = 11" Usage="System.Xml.XmlNodeType.DocumentFragment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.DocumentType" />
       <MemberSignature Language="VB.NET" Value="DocumentType" />
       <MemberSignature Language="C++ CLI" Value="DocumentType" />
+      <MemberSignature Language="F#" Value="DocumentType = 10" Usage="System.Xml.XmlNodeType.DocumentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -275,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.Element" />
       <MemberSignature Language="VB.NET" Value="Element" />
       <MemberSignature Language="C++ CLI" Value="Element" />
+      <MemberSignature Language="F#" Value="Element = 1" Usage="System.Xml.XmlNodeType.Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -315,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.EndElement" />
       <MemberSignature Language="VB.NET" Value="EndElement" />
       <MemberSignature Language="C++ CLI" Value="EndElement" />
+      <MemberSignature Language="F#" Value="EndElement = 15" Usage="System.Xml.XmlNodeType.EndElement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.EndEntity" />
       <MemberSignature Language="VB.NET" Value="EndEntity" />
       <MemberSignature Language="C++ CLI" Value="EndEntity" />
+      <MemberSignature Language="F#" Value="EndEntity = 16" Usage="System.Xml.XmlNodeType.EndEntity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -387,6 +397,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.Entity" />
       <MemberSignature Language="VB.NET" Value="Entity" />
       <MemberSignature Language="C++ CLI" Value="Entity" />
+      <MemberSignature Language="F#" Value="Entity = 6" Usage="System.Xml.XmlNodeType.Entity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -427,6 +438,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.EntityReference" />
       <MemberSignature Language="VB.NET" Value="EntityReference" />
       <MemberSignature Language="C++ CLI" Value="EntityReference" />
+      <MemberSignature Language="F#" Value="EntityReference = 5" Usage="System.Xml.XmlNodeType.EntityReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -467,6 +479,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.XmlNodeType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -499,6 +512,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.Notation" />
       <MemberSignature Language="VB.NET" Value="Notation" />
       <MemberSignature Language="C++ CLI" Value="Notation" />
+      <MemberSignature Language="F#" Value="Notation = 12" Usage="System.Xml.XmlNodeType.Notation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -539,6 +553,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.ProcessingInstruction" />
       <MemberSignature Language="VB.NET" Value="ProcessingInstruction" />
       <MemberSignature Language="C++ CLI" Value="ProcessingInstruction" />
+      <MemberSignature Language="F#" Value="ProcessingInstruction = 7" Usage="System.Xml.XmlNodeType.ProcessingInstruction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -579,6 +594,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.SignificantWhitespace" />
       <MemberSignature Language="VB.NET" Value="SignificantWhitespace" />
       <MemberSignature Language="C++ CLI" Value="SignificantWhitespace" />
+      <MemberSignature Language="F#" Value="SignificantWhitespace = 14" Usage="System.Xml.XmlNodeType.SignificantWhitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -611,6 +627,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 3" Usage="System.Xml.XmlNodeType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -651,6 +668,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.Whitespace" />
       <MemberSignature Language="VB.NET" Value="Whitespace" />
       <MemberSignature Language="C++ CLI" Value="Whitespace" />
+      <MemberSignature Language="F#" Value="Whitespace = 13" Usage="System.Xml.XmlNodeType.Whitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -683,6 +701,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeType.XmlDeclaration" />
       <MemberSignature Language="VB.NET" Value="XmlDeclaration" />
       <MemberSignature Language="C++ CLI" Value="XmlDeclaration" />
+      <MemberSignature Language="F#" Value="XmlDeclaration = 17" Usage="System.Xml.XmlNodeType.XmlDeclaration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

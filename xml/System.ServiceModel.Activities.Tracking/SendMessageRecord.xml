@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.SendMessageRecord" />
   <TypeSignature Language="VB.NET" Value="Public Class SendMessageRecord&#xA;Inherits CustomTrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendMessageRecord : System::Activities::Tracking::CustomTrackingRecord" />
+  <TypeSignature Language="F#" Value="type SendMessageRecord = class&#xA;    inherit CustomTrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.SendMessageRecord.#ctor(System.ServiceModel.Activities.Tracking.SendMessageRecord)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (record As SendMessageRecord)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SendMessageRecord(System::ServiceModel::Activities::Tracking::SendMessageRecord ^ record);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.Tracking.SendMessageRecord : System.ServiceModel.Activities.Tracking.SendMessageRecord -&gt; System.ServiceModel.Activities.Tracking.SendMessageRecord" Usage="new System.ServiceModel.Activities.Tracking.SendMessageRecord record" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.SendMessageRecord.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageRecord(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.Tracking.SendMessageRecord : string -&gt; System.ServiceModel.Activities.Tracking.SendMessageRecord" Usage="new System.ServiceModel.Activities.Tracking.SendMessageRecord name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.SendMessageRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="sendMessageRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.SendMessageRecord.E2EActivityId" />
       <MemberSignature Language="VB.NET" Value="Public Property E2EActivityId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid E2EActivityId { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.E2EActivityId : Guid with get, set" Usage="System.ServiceModel.Activities.Tracking.SendMessageRecord.E2EActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

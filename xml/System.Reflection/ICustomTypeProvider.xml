@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ICustomTypeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICustomTypeProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICustomTypeProvider" />
+  <TypeSignature Language="F#" Value="type ICustomTypeProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ICustomTypeProvider.GetCustomType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetCustomType();" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomType : unit -&gt; Type" Usage="iCustomTypeProvider.GetCustomType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

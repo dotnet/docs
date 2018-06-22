@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicRouteExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicRouteExpression&#xA;Inherits DataSourceExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicRouteExpression : System::Web::UI::WebControls::Expressions::DataSourceExpression" />
+  <TypeSignature Language="F#" Value="type DynamicRouteExpression = class&#xA;    inherit DataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicRouteExpression.ColumnName" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ColumnName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnName : string with get, set" Usage="System.Web.DynamicData.DynamicRouteExpression.ColumnName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicRouteExpression.GetQueryable(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="dynamicRouteExpression.GetQueryable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicRouteExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetContext (owner As Control, context As HttpContext, dataSource As IQueryableDataSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetContext(System::Web::UI::Control ^ owner, System::Web::HttpContext ^ context, System::Web::UI::WebControls::IQueryableDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="override this.SetContext : System.Web.UI.Control * System.Web.HttpContext * System.Web.UI.WebControls.IQueryableDataSource -&gt; unit" Usage="dynamicRouteExpression.SetContext (owner, context, dataSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

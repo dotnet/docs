@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.DataSpace" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataSpace" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataSpace" />
+  <TypeSignature Language="F#" Value="type DataSpace = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.CSpace" />
       <MemberSignature Language="VB.NET" Value="CSpace" />
       <MemberSignature Language="C++ CLI" Value="CSpace" />
+      <MemberSignature Language="F#" Value="CSpace = 1" Usage="System.Data.Metadata.Edm.DataSpace.CSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.CSSpace" />
       <MemberSignature Language="VB.NET" Value="CSSpace" />
       <MemberSignature Language="C++ CLI" Value="CSSpace" />
+      <MemberSignature Language="F#" Value="CSSpace = 4" Usage="System.Data.Metadata.Edm.DataSpace.CSSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.OCSpace" />
       <MemberSignature Language="VB.NET" Value="OCSpace" />
       <MemberSignature Language="C++ CLI" Value="OCSpace" />
+      <MemberSignature Language="F#" Value="OCSpace = 3" Usage="System.Data.Metadata.Edm.DataSpace.OCSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.OSpace" />
       <MemberSignature Language="VB.NET" Value="OSpace" />
       <MemberSignature Language="C++ CLI" Value="OSpace" />
+      <MemberSignature Language="F#" Value="OSpace = 0" Usage="System.Data.Metadata.Edm.DataSpace.OSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.SSpace" />
       <MemberSignature Language="VB.NET" Value="SSpace" />
       <MemberSignature Language="C++ CLI" Value="SSpace" />
+      <MemberSignature Language="F#" Value="SSpace = 2" Usage="System.Data.Metadata.Edm.DataSpace.SSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Rectangle" />
   <TypeSignature Language="VB.NET" Value="Public Structure Rectangle" />
   <TypeSignature Language="C++ CLI" Value="public value class Rectangle" />
+  <TypeSignature Language="F#" Value="type Rectangle = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Point location, valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.#ctor(System.Drawing.Point,System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle(System::Drawing::Point location, System::Drawing::Size size);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Rectangle : System.Drawing.Point * System.Drawing.Size -&gt; System.Drawing.Rectangle" Usage="new System.Drawing.Rectangle (location, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer, width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle(int x, int y, int width, int height);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Rectangle : int * int * int * int -&gt; System.Drawing.Rectangle" Usage="new System.Drawing.Rectangle (x, y, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bottom As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : int" Usage="System.Drawing.Rectangle.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Ceiling(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (value As RectangleF) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Ceiling(System::Drawing::RectangleF value);" />
+      <MemberSignature Language="F#" Value="static member Ceiling : System.Drawing.RectangleF -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Ceiling value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (pt As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Drawing.Point -&gt; bool" Usage="rectangle.Contains pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (rect As Rectangle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Rectangle rect);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Drawing.Rectangle -&gt; bool" Usage="rectangle.Contains rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -322,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (x As Integer, y As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.Contains : int * int -&gt; bool" Usage="rectangle.Contains (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -365,6 +373,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Rectangle.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As Rectangle " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::Rectangle Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -401,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Equals(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Rectangle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Drawing::Rectangle other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Drawing.Rectangle -&gt; bool" Usage="rectangle.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -429,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rectangle.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -463,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.FromLTRB(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromLTRB (left As Integer, top As Integer, right As Integer, bottom As Integer) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle FromLTRB(int left, int top, int right, int bottom);" />
+      <MemberSignature Language="F#" Value="static member FromLTRB : int * int * int * int -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.FromLTRB (left, top, right, bottom)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -519,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rectangle.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -550,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Drawing.Rectangle.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -596,6 +610,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Inflate(valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(System::Drawing::Size size);" />
+      <MemberSignature Language="F#" Value="member this.Inflate : System.Drawing.Size -&gt; unit" Usage="rectangle.Inflate size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -645,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Inflate (width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(int width, int height);" />
+      <MemberSignature Language="F#" Value="member this.Inflate : int * int -&gt; unit" Usage="rectangle.Inflate (width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -698,6 +714,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Drawing.Rectangle,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Inflate (rect As Rectangle, x As Integer, y As Integer) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Inflate(System::Drawing::Rectangle rect, int x, int y);" />
+      <MemberSignature Language="F#" Value="static member Inflate : System.Drawing.Rectangle * int * int -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Inflate (rect, x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -762,6 +779,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Intersect(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Intersect (rect As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Drawing::Rectangle rect);" />
+      <MemberSignature Language="F#" Value="member this.Intersect : System.Drawing.Rectangle -&gt; unit" Usage="rectangle.Intersect rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -806,6 +824,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Intersect(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Intersect (a As Rectangle, b As Rectangle) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Intersect(System::Drawing::Rectangle a, System::Drawing::Rectangle b);" />
+      <MemberSignature Language="F#" Value="static member Intersect : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Intersect (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -853,6 +872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.IntersectsWith(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function IntersectsWith (rect As Rectangle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IntersectsWith(System::Drawing::Rectangle rect);" />
+      <MemberSignature Language="F#" Value="member this.IntersectsWith : System.Drawing.Rectangle -&gt; bool" Usage="rectangle.IntersectsWith rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -898,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Drawing.Rectangle.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -939,6 +960,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int" Usage="System.Drawing.Rectangle.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -969,6 +991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point with get, set" Usage="System.Drawing.Rectangle.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1009,6 +1032,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Offset(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset (pos As Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(System::Drawing::Point pos);" />
+      <MemberSignature Language="F#" Value="member this.Offset : System.Drawing.Point -&gt; unit" Usage="rectangle.Offset pos" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1058,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Offset(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset (x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.Offset : int * int -&gt; unit" Usage="rectangle.Offset (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1093,6 +1118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.op_Equality(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Rectangle, right As Rectangle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::Rectangle left, System::Drawing::Rectangle right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1129,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.op_Inequality(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Rectangle, right As Rectangle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::Rectangle left, System::Drawing::Rectangle right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; bool" Usage="System.Drawing.Rectangle.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1165,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Right" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Right : int" Usage="System.Drawing.Rectangle.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1202,6 +1230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Round(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (value As RectangleF) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Round(System::Drawing::RectangleF value);" />
+      <MemberSignature Language="F#" Value="static member Round : System.Drawing.RectangleF -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Round value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1247,6 +1276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size with get, set" Usage="System.Drawing.Rectangle.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1277,6 +1307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int" Usage="System.Drawing.Rectangle.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1307,6 +1338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rectangle.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1338,6 +1370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Truncate(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate (value As RectangleF) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Truncate(System::Drawing::RectangleF value);" />
+      <MemberSignature Language="F#" Value="static member Truncate : System.Drawing.RectangleF -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Truncate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1383,6 +1416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Union(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Union (a As Rectangle, b As Rectangle) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Union(System::Drawing::Rectangle a, System::Drawing::Rectangle b);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Union (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1435,6 +1469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Drawing.Rectangle.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1472,6 +1507,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.X : int with get, set" Usage="System.Drawing.Rectangle.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1509,6 +1545,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : int with get, set" Usage="System.Drawing.Rectangle.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>

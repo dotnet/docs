@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.EqualityComparer`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EqualityComparer(Of T)&#xA;Implements IEqualityComparer, IEqualityComparer(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class EqualityComparer abstract : System::Collections::Generic::IEqualityComparer&lt;T&gt;, System::Collections::IEqualityComparer" />
+  <TypeSignature Language="F#" Value="type EqualityComparer&lt;'T&gt; = class&#xA;    interface IEqualityComparer&#xA;    interface IEqualityComparer&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.EqualityComparer`1.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As EqualityComparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::EqualityComparer&lt;T&gt; ^ Default { System::Collections::Generic::EqualityComparer&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.Generic.EqualityComparer&lt;'T&gt;" Usage="System.Collections.Generic.EqualityComparer&lt;'T&gt;.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -152,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Equals (x As T, y As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Equals(T x, T y);" />
+      <MemberSignature Language="F#" Value="override this.Equals : 'T * 'T -&gt; bool" Usage="equalityComparer.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
@@ -204,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetHashCode (obj As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetHashCode(T obj);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : 'T -&gt; int" Usage="equalityComparer.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>

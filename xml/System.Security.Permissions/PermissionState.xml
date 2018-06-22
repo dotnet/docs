@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PermissionState" />
   <TypeSignature Language="VB.NET" Value="Public Enum PermissionState" />
   <TypeSignature Language="C++ CLI" Value="public enum class PermissionState" />
+  <TypeSignature Language="F#" Value="type PermissionState = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.PermissionState.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Permissions.PermissionState.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.PermissionState.Unrestricted" />
       <MemberSignature Language="VB.NET" Value="Unrestricted" />
       <MemberSignature Language="C++ CLI" Value="Unrestricted" />
+      <MemberSignature Language="F#" Value="Unrestricted = 1" Usage="System.Security.Permissions.PermissionState.Unrestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BreakOutOfFinally" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BreakOutOfFinally&#xA;Inherits ApplicationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class BreakOutOfFinally sealed : ApplicationException" />
+  <TypeSignature Language="F#" Value="type BreakOutOfFinally = class&#xA;    inherit ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BreakOutOfFinally.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BreakOutOfFinally(int target);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.BreakOutOfFinally : int -&gt; Microsoft.JScript.BreakOutOfFinally" Usage="new Microsoft.JScript.BreakOutOfFinally target" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BreakOutOfFinally.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BreakOutOfFinally(System::String ^ m);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.BreakOutOfFinally : string -&gt; Microsoft.JScript.BreakOutOfFinally" Usage="new Microsoft.JScript.BreakOutOfFinally m" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BreakOutOfFinally.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As String, e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BreakOutOfFinally(System::String ^ m, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.BreakOutOfFinally : string * Exception -&gt; Microsoft.JScript.BreakOutOfFinally" Usage="new Microsoft.JScript.BreakOutOfFinally (m, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BreakOutOfFinally.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (s As SerializationInfo, c As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ s, System::Runtime::Serialization::StreamingContext c);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="breakOutOfFinally.GetObjectData (s, c)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BreakOutOfFinally.target" />
       <MemberSignature Language="VB.NET" Value="Public target As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int target;" />
+      <MemberSignature Language="F#" Value="val mutable target : int" Usage="Microsoft.JScript.BreakOutOfFinally.target" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

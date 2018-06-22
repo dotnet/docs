@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlDocument" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HtmlDocument" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlDocument sealed" />
+  <TypeSignature Language="F#" Value="type HtmlDocument = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.ActiveElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveElement As HtmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ ActiveElement { System::Windows::Forms::HtmlElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveElement : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlDocument.ActiveElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.ActiveLinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveLinkColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ActiveLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveLinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.HtmlDocument.ActiveLinkColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.All" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property All As HtmlElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElementCollection ^ All { System::Windows::Forms::HtmlElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.All : System.Windows.Forms.HtmlElementCollection" Usage="System.Windows.Forms.HtmlDocument.All" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachEventHandler(string eventName, class System.EventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.AttachEventHandler(System.String,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachEventHandler(System::String ^ eventName, EventHandler ^ eventHandler);" />
+      <MemberSignature Language="F#" Value="member this.AttachEventHandler : string * EventHandler -&gt; unit" Usage="htmlDocument.AttachEventHandler (eventName, eventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.HtmlDocument.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Body" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Body As HtmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ Body { System::Windows::Forms::HtmlElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlDocument.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Click : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.ContextMenuShowing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextMenuShowing As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ ContextMenuShowing;" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuShowing : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.ContextMenuShowing : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -341,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Cookie" />
       <MemberSignature Language="VB.NET" Value="Public Property Cookie As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Cookie { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Cookie : string with get, set" Usage="System.Windows.Forms.HtmlDocument.Cookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.CreateElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateElement (elementTag As String) As HtmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlElement ^ CreateElement(System::String ^ elementTag);" />
+      <MemberSignature Language="F#" Value="member this.CreateElement : string -&gt; System.Windows.Forms.HtmlElement" Usage="htmlDocument.CreateElement elementTag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -427,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.DefaultEncoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultEncoding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultEncoding { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultEncoding : string" Usage="System.Windows.Forms.HtmlDocument.DefaultEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -453,6 +465,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DetachEventHandler(string eventName, class System.EventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.DetachEventHandler(System.String,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DetachEventHandler(System::String ^ eventName, EventHandler ^ eventHandler);" />
+      <MemberSignature Language="F#" Value="member this.DetachEventHandler : string * EventHandler -&gt; unit" Usage="htmlDocument.DetachEventHandler (eventName, eventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -478,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Windows.Forms.HtmlDocument.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -510,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.DomDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomDocument As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DomDocument { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DomDocument : obj" Usage="System.Windows.Forms.HtmlDocument.DomDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -548,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="System.Windows.Forms.HtmlDocument.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -568,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="htmlDocument.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -593,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.ExecCommand(System.String,System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExecCommand (command As String, showUI As Boolean, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecCommand(System::String ^ command, bool showUI, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ExecCommand : string * bool * obj -&gt; unit" Usage="htmlDocument.ExecCommand (command, showUI, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -630,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.Focus" />
       <MemberSignature Language="VB.NET" Value="Public Sub Focus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Focus();" />
+      <MemberSignature Language="F#" Value="member this.Focus : unit -&gt; unit" Usage="htmlDocument.Focus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -663,6 +682,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Focused" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Focused As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Focused { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Focused : bool" Usage="System.Windows.Forms.HtmlDocument.Focused" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -687,6 +707,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.Focusing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Focusing As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Focusing;" />
+      <MemberSignature Language="F#" Value="member this.Focusing : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Focusing : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -723,6 +744,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.HtmlDocument.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -753,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Forms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Forms As HtmlElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElementCollection ^ Forms { System::Windows::Forms::HtmlElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Forms : System.Windows.Forms.HtmlElementCollection" Usage="System.Windows.Forms.HtmlDocument.Forms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -792,6 +815,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.GetElementById(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetElementById (id As String) As HtmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlElement ^ GetElementById(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.GetElementById : string -&gt; System.Windows.Forms.HtmlElement" Usage="htmlDocument.GetElementById id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -830,6 +854,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.HtmlElement GetElementFromPoint(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.GetElementFromPoint(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlElement ^ GetElementFromPoint(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="member this.GetElementFromPoint : System.Drawing.Point -&gt; System.Windows.Forms.HtmlElement" Usage="htmlDocument.GetElementFromPoint point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -869,6 +894,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.GetElementsByTagName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetElementsByTagName (tagName As String) As HtmlElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlElementCollection ^ GetElementsByTagName(System::String ^ tagName);" />
+      <MemberSignature Language="F#" Value="member this.GetElementsByTagName : string -&gt; System.Windows.Forms.HtmlElementCollection" Usage="htmlDocument.GetElementsByTagName tagName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -903,6 +929,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="htmlDocument.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -924,6 +951,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Images" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Images As HtmlElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElementCollection ^ Images { System::Windows::Forms::HtmlElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Images : System.Windows.Forms.HtmlElementCollection" Usage="System.Windows.Forms.HtmlDocument.Images" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -995,6 +1023,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.InvokeScript(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeScript (scriptName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeScript(System::String ^ scriptName);" />
+      <MemberSignature Language="F#" Value="member this.InvokeScript : string -&gt; obj" Usage="htmlDocument.InvokeScript scriptName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1074,6 +1103,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.InvokeScript(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeScript (scriptName As String, args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeScript(System::String ^ scriptName, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.InvokeScript : string * obj[] -&gt; obj" Usage="htmlDocument.InvokeScript (scriptName, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1133,6 +1163,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.LinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.HtmlDocument.LinkColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1163,6 +1194,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Links" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Links As HtmlElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElementCollection ^ Links { System::Windows::Forms::HtmlElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Links : System.Windows.Forms.HtmlElementCollection" Usage="System.Windows.Forms.HtmlDocument.Links" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1192,6 +1224,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.LosingFocus" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LosingFocus As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ LosingFocus;" />
+      <MemberSignature Language="F#" Value="member this.LosingFocus : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.LosingFocus : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1228,6 +1261,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.MouseDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDown As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseDown;" />
+      <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseDown : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1266,6 +1300,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseLeave As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseLeave;" />
+      <MemberSignature Language="F#" Value="member this.MouseLeave : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseLeave : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1302,6 +1337,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.MouseMove" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseMove As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseMove;" />
+      <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseMove : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1338,6 +1374,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.MouseOver" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseOver As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseOver;" />
+      <MemberSignature Language="F#" Value="member this.MouseOver : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseOver : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1374,6 +1411,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.MouseUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseUp As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseUp;" />
+      <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseUp : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1410,6 +1448,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.op_Equality(System.Windows.Forms.HtmlDocument,System.Windows.Forms.HtmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As HtmlDocument, right As HtmlDocument) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::HtmlDocument ^ left, System::Windows::Forms::HtmlDocument ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.HtmlDocument * System.Windows.Forms.HtmlDocument -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1439,6 +1478,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.op_Inequality(System.Windows.Forms.HtmlDocument,System.Windows.Forms.HtmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As HtmlDocument, right As HtmlDocument) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::HtmlDocument ^ left, System::Windows::Forms::HtmlDocument ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.HtmlDocument * System.Windows.Forms.HtmlDocument -&gt; bool" Usage="System.Windows.Forms.HtmlDocument.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1466,6 +1506,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.OpenNew(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenNew (replaceInHistory As Boolean) As HtmlDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlDocument ^ OpenNew(bool replaceInHistory);" />
+      <MemberSignature Language="F#" Value="member this.OpenNew : bool -&gt; System.Windows.Forms.HtmlDocument" Usage="htmlDocument.OpenNew replaceInHistory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1507,6 +1548,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property RightToLeft As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RightToLeft { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeft : bool with get, set" Usage="System.Windows.Forms.HtmlDocument.RightToLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1537,6 +1579,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlDocument.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Stop As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Stop;" />
+      <MemberSignature Language="F#" Value="member this.Stop : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Stop : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1572,6 +1615,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Windows.Forms.HtmlDocument.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1611,6 +1655,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Url" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Url { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.Windows.Forms.HtmlDocument.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1638,6 +1683,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.VisitedLinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property VisitedLinkColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color VisitedLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.VisitedLinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.HtmlDocument.VisitedLinkColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1668,6 +1714,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlDocument.Window" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Window As HtmlWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlWindow ^ Window { System::Windows::Forms::HtmlWindow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Window : System.Windows.Forms.HtmlWindow" Usage="System.Windows.Forms.HtmlDocument.Window" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1695,6 +1742,7 @@ window.alert("Name is " + name + "; address is " + address);
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; unit" Usage="htmlDocument.Write text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

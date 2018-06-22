@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Handlers.ScriptModule" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptModule : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type ScriptModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.ScriptModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="scriptModule.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.ScriptModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Init (app As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="scriptModule.Init app" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.SaveOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum SaveOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class SaveOptions" />
+  <TypeSignature Language="F#" Value="type SaveOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Objects.SaveOptions.AcceptAllChangesAfterSave" />
       <MemberSignature Language="VB.NET" Value="AcceptAllChangesAfterSave" />
       <MemberSignature Language="C++ CLI" Value="AcceptAllChangesAfterSave" />
+      <MemberSignature Language="F#" Value="AcceptAllChangesAfterSave = 1" Usage="System.Data.Objects.SaveOptions.AcceptAllChangesAfterSave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Objects.SaveOptions.DetectChangesBeforeSave" />
       <MemberSignature Language="VB.NET" Value="DetectChangesBeforeSave" />
       <MemberSignature Language="C++ CLI" Value="DetectChangesBeforeSave" />
+      <MemberSignature Language="F#" Value="DetectChangesBeforeSave = 2" Usage="System.Data.Objects.SaveOptions.DetectChangesBeforeSave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Objects.SaveOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Objects.SaveOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

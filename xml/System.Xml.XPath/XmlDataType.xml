@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XmlDataType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlDataType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlDataType" />
+  <TypeSignature Language="F#" Value="type XmlDataType = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XmlDataType.Number" />
       <MemberSignature Language="VB.NET" Value="Number" />
       <MemberSignature Language="C++ CLI" Value="Number" />
+      <MemberSignature Language="F#" Value="Number = 2" Usage="System.Xml.XPath.XmlDataType.Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XmlDataType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Xml.XPath.XmlDataType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>

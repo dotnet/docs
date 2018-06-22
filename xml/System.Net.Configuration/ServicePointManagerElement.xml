@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ServicePointManagerElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServicePointManagerElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServicePointManagerElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ServicePointManagerElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ServicePointManagerElement.CheckCertificateName" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckCertificateName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckCertificateName { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckCertificateName : bool with get, set" Usage="System.Net.Configuration.ServicePointManagerElement.CheckCertificateName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ServicePointManagerElement.CheckCertificateRevocationList" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckCertificateRevocationList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckCertificateRevocationList { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckCertificateRevocationList : bool with get, set" Usage="System.Net.Configuration.ServicePointManagerElement.CheckCertificateRevocationList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ServicePointManagerElement.DnsRefreshTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property DnsRefreshTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DnsRefreshTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DnsRefreshTimeout : int with get, set" Usage="System.Net.Configuration.ServicePointManagerElement.DnsRefreshTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ServicePointManagerElement.EnableDnsRoundRobin" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableDnsRoundRobin As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDnsRoundRobin { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableDnsRoundRobin : bool with get, set" Usage="System.Net.Configuration.ServicePointManagerElement.EnableDnsRoundRobin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ServicePointManagerElement.EncryptionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptionPolicy As EncryptionPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::EncryptionPolicy EncryptionPolicy { System::Net::Security::EncryptionPolicy get(); void set(System::Net::Security::EncryptionPolicy value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionPolicy : System.Net.Security.EncryptionPolicy with get, set" Usage="System.Net.Configuration.ServicePointManagerElement.EncryptionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ServicePointManagerElement.Expect100Continue" />
       <MemberSignature Language="VB.NET" Value="Public Property Expect100Continue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Expect100Continue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Expect100Continue : bool with get, set" Usage="System.Net.Configuration.ServicePointManagerElement.Expect100Continue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ServicePointManagerElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="servicePointManagerElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ServicePointManagerElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.ServicePointManagerElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ServicePointManagerElement.UseNagleAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property UseNagleAlgorithm As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseNagleAlgorithm { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseNagleAlgorithm : bool with get, set" Usage="System.Net.Configuration.ServicePointManagerElement.UseNagleAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

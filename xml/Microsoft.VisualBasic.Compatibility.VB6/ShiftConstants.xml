@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants" />
   <TypeSignature Language="VB.NET" Value="Public Enum ShiftConstants" />
   <TypeSignature Language="C++ CLI" Value="public enum class ShiftConstants" />
+  <TypeSignature Language="F#" Value="type ShiftConstants = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.AltMask" />
       <MemberSignature Language="VB.NET" Value="AltMask" />
       <MemberSignature Language="C++ CLI" Value="AltMask" />
+      <MemberSignature Language="F#" Value="AltMask = 4" Usage="Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.AltMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.CtrlMask" />
       <MemberSignature Language="VB.NET" Value="CtrlMask" />
       <MemberSignature Language="C++ CLI" Value="CtrlMask" />
+      <MemberSignature Language="F#" Value="CtrlMask = 2" Usage="Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.CtrlMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.ShiftMask" />
       <MemberSignature Language="VB.NET" Value="ShiftMask" />
       <MemberSignature Language="C++ CLI" Value="ShiftMask" />
+      <MemberSignature Language="F#" Value="ShiftMask = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.ShiftMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

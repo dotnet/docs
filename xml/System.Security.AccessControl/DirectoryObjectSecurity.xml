@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.DirectoryObjectSecurity" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DirectoryObjectSecurity&#xA;Inherits ObjectSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryObjectSecurity abstract : System::Security::AccessControl::ObjectSecurity" />
+  <TypeSignature Language="F#" Value="type DirectoryObjectSecurity = class&#xA;    inherit ObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.#ctor(System.Security.AccessControl.CommonSecurityDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (securityDescriptor As CommonSecurityDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DirectoryObjectSecurity(System::Security::AccessControl::CommonSecurityDescriptor ^ securityDescriptor);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.DirectoryObjectSecurity : System.Security.AccessControl.CommonSecurityDescriptor -&gt; System.Security.AccessControl.DirectoryObjectSecurity" Usage="new System.Security.AccessControl.DirectoryObjectSecurity securityDescriptor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType,System.Guid,System.Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type, Guid objectType, Guid inheritedObjectType);" />
+      <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType * Guid * Guid -&gt; System.Security.AccessControl.AccessRule" Usage="directoryObjectSecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type, objectType, inheritedObjectType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.AddAccessRule(System.Security.AccessControl.ObjectAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddAccessRule (rule As ObjectAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddAccessRule(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.AddAccessRule : System.Security.AccessControl.ObjectAccessRule -&gt; unit" Usage="directoryObjectSecurity.AddAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.AddAuditRule(System.Security.AccessControl.ObjectAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddAuditRule (rule As ObjectAuditRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddAuditRule(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.AddAuditRule : System.Security.AccessControl.ObjectAuditRule -&gt; unit" Usage="directoryObjectSecurity.AddAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags,System.Guid,System.Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags, Guid objectType, Guid inheritedObjectType);" />
+      <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags * Guid * Guid -&gt; System.Security.AccessControl.AuditRule" Usage="directoryObjectSecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags, objectType, inheritedObjectType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessRules (includeExplicit As Boolean, includeInherited As Boolean, targetType As Type) As AuthorizationRuleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::AuthorizationRuleCollection ^ GetAccessRules(bool includeExplicit, bool includeInherited, Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="member this.GetAccessRules : bool * bool * Type -&gt; System.Security.AccessControl.AuthorizationRuleCollection" Usage="directoryObjectSecurity.GetAccessRules (includeExplicit, includeInherited, targetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.GetAuditRules(System.Boolean,System.Boolean,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAuditRules (includeExplicit As Boolean, includeInherited As Boolean, targetType As Type) As AuthorizationRuleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::AuthorizationRuleCollection ^ GetAuditRules(bool includeExplicit, bool includeInherited, Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="member this.GetAuditRules : bool * bool * Type -&gt; System.Security.AccessControl.AuthorizationRuleCollection" Usage="directoryObjectSecurity.GetAuditRules (includeExplicit, includeInherited, targetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ModifyAccess (modification As AccessControlModification, rule As AccessRule, ByRef modified As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ModifyAccess(System::Security::AccessControl::AccessControlModification modification, System::Security::AccessControl::AccessRule ^ rule, [Runtime::InteropServices::Out] bool % modified);" />
+      <MemberSignature Language="F#" Value="override this.ModifyAccess : System.Security.AccessControl.AccessControlModification * System.Security.AccessControl.AccessRule *  -&gt; bool" Usage="directoryObjectSecurity.ModifyAccess (modification, rule, modified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ModifyAudit (modification As AccessControlModification, rule As AuditRule, ByRef modified As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ModifyAudit(System::Security::AccessControl::AccessControlModification modification, System::Security::AccessControl::AuditRule ^ rule, [Runtime::InteropServices::Out] bool % modified);" />
+      <MemberSignature Language="F#" Value="override this.ModifyAudit : System.Security.AccessControl.AccessControlModification * System.Security.AccessControl.AuditRule *  -&gt; bool" Usage="directoryObjectSecurity.ModifyAudit (modification, rule, modified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -391,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAccessRule(System.Security.AccessControl.ObjectAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Function RemoveAccessRule (rule As ObjectAccessRule) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool RemoveAccessRule(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessRule : System.Security.AccessControl.ObjectAccessRule -&gt; bool" Usage="directoryObjectSecurity.RemoveAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -431,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.ObjectAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAccessRuleAll (rule As ObjectAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessRuleAll : System.Security.AccessControl.ObjectAccessRule -&gt; unit" Usage="directoryObjectSecurity.RemoveAccessRuleAll rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -460,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.ObjectAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAccessRuleSpecific (rule As ObjectAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessRuleSpecific : System.Security.AccessControl.ObjectAccessRule -&gt; unit" Usage="directoryObjectSecurity.RemoveAccessRuleSpecific rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -489,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAuditRule(System.Security.AccessControl.ObjectAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Function RemoveAuditRule (rule As ObjectAuditRule) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool RemoveAuditRule(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAuditRule : System.Security.AccessControl.ObjectAuditRule -&gt; bool" Usage="directoryObjectSecurity.RemoveAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -529,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.ObjectAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAuditRuleAll (rule As ObjectAuditRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAuditRuleAll : System.Security.AccessControl.ObjectAuditRule -&gt; unit" Usage="directoryObjectSecurity.RemoveAuditRuleAll rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -558,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.ObjectAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAuditRuleSpecific (rule As ObjectAuditRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAuditRuleSpecific : System.Security.AccessControl.ObjectAuditRule -&gt; unit" Usage="directoryObjectSecurity.RemoveAuditRuleSpecific rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -587,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.ResetAccessRule(System.Security.AccessControl.ObjectAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ResetAccessRule (rule As ObjectAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ResetAccessRule(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.ResetAccessRule : System.Security.AccessControl.ObjectAccessRule -&gt; unit" Usage="directoryObjectSecurity.ResetAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -616,6 +633,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.SetAccessRule(System.Security.AccessControl.ObjectAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetAccessRule (rule As ObjectAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAccessRule(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.SetAccessRule : System.Security.AccessControl.ObjectAccessRule -&gt; unit" Usage="directoryObjectSecurity.SetAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -645,6 +663,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.SetAuditRule(System.Security.AccessControl.ObjectAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetAuditRule (rule As ObjectAuditRule)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAuditRule(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.SetAuditRule : System.Security.AccessControl.ObjectAuditRule -&gt; unit" Usage="directoryObjectSecurity.SetAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>

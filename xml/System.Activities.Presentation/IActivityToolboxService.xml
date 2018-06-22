@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IActivityToolboxService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IActivityToolboxService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IActivityToolboxService" />
+  <TypeSignature Language="F#" Value="type IActivityToolboxService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.AddCategory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCategory (categoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCategory(System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="abstract member AddCategory : string -&gt; unit" Usage="iActivityToolboxService.AddCategory categoryName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.AddItem(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddItem (qualifiedTypeName As String, categoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddItem(System::String ^ qualifiedTypeName, System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="abstract member AddItem : string * string -&gt; unit" Usage="iActivityToolboxService.AddItem (qualifiedTypeName, categoryName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.EnumCategories" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumCategories () As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::String ^&gt; ^ EnumCategories();" />
+      <MemberSignature Language="F#" Value="abstract member EnumCategories : unit -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="iActivityToolboxService.EnumCategories " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.EnumItems(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnumItems (categoryName As String) As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::String ^&gt; ^ EnumItems(System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="abstract member EnumItems : string -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="iActivityToolboxService.EnumItems categoryName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.RemoveCategory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveCategory (categoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCategory(System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveCategory : string -&gt; unit" Usage="iActivityToolboxService.RemoveCategory categoryName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.RemoveItem(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (qualifiedTypeName As String, categoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItem(System::String ^ qualifiedTypeName, System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveItem : string * string -&gt; unit" Usage="iActivityToolboxService.RemoveItem (qualifiedTypeName, categoryName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

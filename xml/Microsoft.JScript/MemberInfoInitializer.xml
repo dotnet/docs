@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.MemberInfoInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Interface MemberInfoInitializer" />
   <TypeSignature Language="C++ CLI" Value="public interface class MemberInfoInitializer" />
+  <TypeSignature Language="F#" Value="type MemberInfoInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MemberInfoInitializer.GetCOMMemberInfo" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCOMMemberInfo () As COMMemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::COMMemberInfo ^ GetCOMMemberInfo();" />
+      <MemberSignature Language="F#" Value="abstract member GetCOMMemberInfo : unit -&gt; Microsoft.JScript.COMMemberInfo" Usage="memberInfoInitializer.GetCOMMemberInfo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MemberInfoInitializer.Initialize(System.String,Microsoft.JScript.COMMemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (name As String, dispatch As COMMemberInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::String ^ name, Microsoft::JScript::COMMemberInfo ^ dispatch);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : string * Microsoft.JScript.COMMemberInfo -&gt; unit" Usage="memberInfoInitializer.Initialize (name, dispatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.EnumValue" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumValue" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumValue sealed" />
+  <TypeSignature Language="F#" Value="type EnumValue = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public Property Arguments As List(Of Argument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::Argument ^&gt; ^ Arguments { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::Argument ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::Argument ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.Argument&gt; with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.HelpString" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpString : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.HelpString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As List(Of NameValuePair)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ Metadata { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Switch" />
       <MemberSignature Language="VB.NET" Value="Public Property Switch As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Switch { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Switch : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.Switch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.SwitchPrefix" />
       <MemberSignature Language="VB.NET" Value="Public Property SwitchPrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SwitchPrefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SwitchPrefix : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumValue.SwitchPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

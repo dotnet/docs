@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.RangeAttributeAdapter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RangeAttributeAdapter&#xA;Inherits DataAnnotationsModelValidator(Of RangeAttribute)" />
   <TypeSignature Language="C++ CLI" Value="public ref class RangeAttributeAdapter sealed : System::Web::ModelBinding::DataAnnotationsModelValidator&lt;System::ComponentModel::DataAnnotations::RangeAttribute ^&gt;" />
+  <TypeSignature Language="F#" Value="type RangeAttributeAdapter = class&#xA;    inherit DataAnnotationsModelValidator&lt;RangeAttribute&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RangeAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.RangeAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As RangeAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeAttributeAdapter(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, System::ComponentModel::DataAnnotations::RangeAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.RangeAttributeAdapter : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext * System.ComponentModel.DataAnnotations.RangeAttribute -&gt; System.Web.ModelBinding.RangeAttributeAdapter" Usage="new System.Web.ModelBinding.RangeAttributeAdapter (metadata, context, attribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RangeAttributeAdapter.GetLocalizedErrorMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLocalizedErrorMessage (errorMessage As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetLocalizedErrorMessage(System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="override this.GetLocalizedErrorMessage : string -&gt; string" Usage="rangeAttributeAdapter.GetLocalizedErrorMessage errorMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

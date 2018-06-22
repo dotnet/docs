@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintQueueStatusProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintQueueStatusProperty&#xA;Inherits PrintProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintQueueStatusProperty sealed : System::Printing::IndexedProperties::PrintProperty" />
+  <TypeSignature Language="F#" Value="type PrintQueueStatusProperty = class&#xA;    inherit PrintProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueStatusProperty.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueStatusProperty(System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintQueueStatusProperty : string -&gt; System.Printing.IndexedProperties.PrintQueueStatusProperty" Usage="new System.Printing.IndexedProperties.PrintQueueStatusProperty attributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueStatusProperty.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String, attributeValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueStatusProperty(System::String ^ attributeName, System::Object ^ attributeValue);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintQueueStatusProperty : string * obj -&gt; System.Printing.IndexedProperties.PrintQueueStatusProperty" Usage="new System.Printing.IndexedProperties.PrintQueueStatusProperty (attributeName, attributeValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueStatusProperty.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printQueueStatusProperty.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -121,10 +125,11 @@
     </MemberGroup>
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintQueueStatus (System.Printing.IndexedProperties.PrintQueueStatusProperty attributeRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintQueueStatus op_Implicit(class System.Printing.IndexedProperties.PrintQueueStatusProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintQueueStatus op_Implicit(class System.Printing.IndexedProperties.PrintQueueStatusProperty attributeRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueStatusProperty.op_Implicit(System.Printing.IndexedProperties.PrintQueueStatusProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintQueueStatus" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attributeRef As PrintQueueStatusProperty) As PrintQueueStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintQueueStatus(System::Printing::IndexedProperties::PrintQueueStatusProperty ^ attributeRef);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintQueueStatusProperty -&gt; System.Printing.PrintQueueStatus" Usage="System.Printing.IndexedProperties.PrintQueueStatusProperty.op_Implicit attributeRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -143,36 +148,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintQueueStatus (System.Printing.IndexedProperties.PrintQueueStatusProperty attributeRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintQueueStatus op_Implicit(class System.Printing.IndexedProperties.PrintQueueStatusProperty attributeRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueStatusProperty.op_Implicit(System.Printing.IndexedProperties.PrintQueueStatusProperty)~System.Printing.PrintQueueStatus" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attributeRef As PrintQueueStatusProperty) As PrintQueueStatus" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintQueueStatus(System::Printing::IndexedProperties::PrintQueueStatusProperty ^ attributeRef);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintQueueStatusProperty" />
-      </Parameters>
-      <Docs>
-        <param name="attributeRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintQueueStatusProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Printing.IndexedProperties.PrintQueueStatusProperty.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

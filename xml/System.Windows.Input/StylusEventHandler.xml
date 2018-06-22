@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StylusEventHandler(sender As Object, e As StylusEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StylusEventHandler(System::Object ^ sender, StylusEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StylusEventHandler = delegate of obj * StylusEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

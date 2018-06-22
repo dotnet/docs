@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageHeaders" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageHeaders&#xA;Implements IEnumerable(Of MessageHeaderInfo)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageHeaders sealed : System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Channels::MessageHeaderInfo ^&gt;" />
+  <TypeSignature Language="F#" Value="type MessageHeaders = class&#xA;    interface seq&lt;MessageHeaderInfo&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.#ctor(System.ServiceModel.Channels.MessageVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (version As MessageVersion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageHeaders(System::ServiceModel::Channels::MessageVersion ^ version);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.MessageHeaders : System.ServiceModel.Channels.MessageVersion -&gt; System.ServiceModel.Channels.MessageHeaders" Usage="new System.ServiceModel.Channels.MessageHeaders version" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.#ctor(System.ServiceModel.Channels.MessageHeaders)" FrameworkAlternate="xamarinandroid-7.1;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (headers As MessageHeaders)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageHeaders(System::ServiceModel::Channels::MessageHeaders ^ headers);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.MessageHeaders : System.ServiceModel.Channels.MessageHeaders -&gt; System.ServiceModel.Channels.MessageHeaders" Usage="new System.ServiceModel.Channels.MessageHeaders headers" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.#ctor(System.ServiceModel.Channels.MessageVersion,System.Int32)" FrameworkAlternate="xamarinandroid-7.1;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (version As MessageVersion, capacity As Integer)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageHeaders(System::ServiceModel::Channels::MessageVersion ^ version, int capacity);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.MessageHeaders : System.ServiceModel.Channels.MessageVersion * int -&gt; System.ServiceModel.Channels.MessageHeaders" Usage="new System.ServiceModel.Channels.MessageHeaders (version, capacity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.ServiceModel.Channels.MessageHeaders.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.Add(System.ServiceModel.Channels.MessageHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (header As MessageHeader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Channels::MessageHeader ^ header);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Channels.MessageHeader -&gt; unit" Usage="messageHeaders.Add header" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="messageHeaders.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyHeaderFrom(class System.ServiceModel.Channels.Message message, int32 headerIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.CopyHeaderFrom(System.ServiceModel.Channels.Message,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyHeaderFrom(System::ServiceModel::Channels::Message ^ message, int headerIndex);" />
+      <MemberSignature Language="F#" Value="member this.CopyHeaderFrom : System.ServiceModel.Channels.Message * int -&gt; unit" Usage="messageHeaders.CopyHeaderFrom (message, headerIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -309,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.CopyHeaderFrom(System.ServiceModel.Channels.MessageHeaders,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyHeaderFrom (collection As MessageHeaders, headerIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyHeaderFrom(System::ServiceModel::Channels::MessageHeaders ^ collection, int headerIndex);" />
+      <MemberSignature Language="F#" Value="member this.CopyHeaderFrom : System.ServiceModel.Channels.MessageHeaders * int -&gt; unit" Usage="messageHeaders.CopyHeaderFrom (collection, headerIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -350,6 +359,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyHeadersFrom(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.CopyHeadersFrom(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyHeadersFrom(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="member this.CopyHeadersFrom : System.ServiceModel.Channels.Message -&gt; unit" Usage="messageHeaders.CopyHeadersFrom message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -380,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.CopyHeadersFrom(System.ServiceModel.Channels.MessageHeaders)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyHeadersFrom (collection As MessageHeaders)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyHeadersFrom(System::ServiceModel::Channels::MessageHeaders ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.CopyHeadersFrom : System.ServiceModel.Channels.MessageHeaders -&gt; unit" Usage="messageHeaders.CopyHeadersFrom collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -410,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.CopyTo(System.ServiceModel.Channels.MessageHeaderInfo[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MessageHeaderInfo(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::ServiceModel::Channels::MessageHeaderInfo ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.ServiceModel.Channels.MessageHeaderInfo[] * int -&gt; unit" Usage="messageHeaders.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -442,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ServiceModel.Channels.MessageHeaders.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -469,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.FaultTo" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultTo As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ FaultTo { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultTo : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Channels.MessageHeaders.FaultTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -513,6 +527,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.FindHeader(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindHeader (name As String, ns As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindHeader(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.FindHeader : string * string -&gt; int" Usage="messageHeaders.FindHeader (name, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -548,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.FindHeader(System.String,System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function FindHeader (name As String, ns As String, ParamArray actors As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindHeader(System::String ^ name, System::String ^ ns, ... cli::array &lt;System::String ^&gt; ^ actors);" />
+      <MemberSignature Language="F#" Value="member this.FindHeader : string * string * string[] -&gt; int" Usage="messageHeaders.FindHeader (name, ns, actors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -591,6 +607,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ From { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.From : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Channels.MessageHeaders.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -625,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of MessageHeaderInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::ServiceModel::Channels::MessageHeaderInfo ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.ServiceModel.Channels.MessageHeaderInfo&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.ServiceModel.Channels.MessageHeaderInfo&gt;" Usage="messageHeaders.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -666,6 +684,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHeader(Of T) (index As Integer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetHeader(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetHeader : int -&gt; 'T" Usage="messageHeaders.GetHeader index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -708,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.Int32,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHeader(Of T) (index As Integer, serializer As XmlObjectSerializer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetHeader(int index, System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="member this.GetHeader : int * System.Runtime.Serialization.XmlObjectSerializer -&gt; 'T" Usage="messageHeaders.GetHeader (index, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -745,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHeader(Of T) (name As String, ns As String) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetHeader(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.GetHeader : string * string -&gt; 'T" Usage="messageHeaders.GetHeader (name, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -789,6 +810,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.String,System.String,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHeader(Of T) (name As String, ns As String, serializer As XmlObjectSerializer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetHeader(System::String ^ name, System::String ^ ns, System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="member this.GetHeader : string * string * System.Runtime.Serialization.XmlObjectSerializer -&gt; 'T" Usage="messageHeaders.GetHeader (name, ns, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -828,6 +850,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.String,System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHeader(Of T) (name As String, ns As String, ParamArray actors As String()) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetHeader(System::String ^ name, System::String ^ ns, ... cli::array &lt;System::String ^&gt; ^ actors);" />
+      <MemberSignature Language="F#" Value="member this.GetHeader : string * string * string[] -&gt; 'T" Usage="messageHeaders.GetHeader (name, ns, actors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -880,6 +903,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.GetReaderAtHeader(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtHeader (headerIndex As Integer) As XmlDictionaryReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtHeader(int headerIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetReaderAtHeader : int -&gt; System.Xml.XmlDictionaryReader" Usage="messageHeaders.GetReaderAtHeader headerIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -921,6 +945,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.HaveMandatoryHeadersBeenUnderstood" />
       <MemberSignature Language="VB.NET" Value="Public Function HaveMandatoryHeadersBeenUnderstood () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HaveMandatoryHeadersBeenUnderstood();" />
+      <MemberSignature Language="F#" Value="member this.HaveMandatoryHeadersBeenUnderstood : unit -&gt; bool" Usage="messageHeaders.HaveMandatoryHeadersBeenUnderstood " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -957,6 +982,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.HaveMandatoryHeadersBeenUnderstood(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function HaveMandatoryHeadersBeenUnderstood (ParamArray actors As String()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HaveMandatoryHeadersBeenUnderstood(... cli::array &lt;System::String ^&gt; ^ actors);" />
+      <MemberSignature Language="F#" Value="member this.HaveMandatoryHeadersBeenUnderstood : string[] -&gt; bool" Usage="messageHeaders.HaveMandatoryHeadersBeenUnderstood actors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1002,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.Insert(System.Int32,System.ServiceModel.Channels.MessageHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (headerIndex As Integer, header As MessageHeader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int headerIndex, System::ServiceModel::Channels::MessageHeader ^ header);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.ServiceModel.Channels.MessageHeader -&gt; unit" Usage="messageHeaders.Insert (headerIndex, header)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1034,6 +1061,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As MessageHeaderInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageHeaderInfo ^ default[int] { System::ServiceModel::Channels::MessageHeaderInfo ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.ServiceModel.Channels.MessageHeaderInfo" Usage="System.ServiceModel.Channels.MessageHeaders.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1065,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.MessageId" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageId As UniqueId" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ MessageId { System::Xml::UniqueId ^ get(); void set(System::Xml::UniqueId ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageId : System.Xml.UniqueId with get, set" Usage="System.ServiceModel.Channels.MessageHeaders.MessageId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1099,6 +1128,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.MessageVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageVersion As MessageVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageVersion : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageHeaders.MessageVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1126,6 +1156,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.RelatesTo" />
       <MemberSignature Language="VB.NET" Value="Public Property RelatesTo As UniqueId" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ RelatesTo { System::Xml::UniqueId ^ get(); void set(System::Xml::UniqueId ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RelatesTo : System.Xml.UniqueId with get, set" Usage="System.ServiceModel.Channels.MessageHeaders.RelatesTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1160,6 +1191,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.RemoveAll(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll (name As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : string * string -&gt; unit" Usage="messageHeaders.RemoveAll (name, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1192,6 +1224,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (headerIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int headerIndex);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="messageHeaders.RemoveAt headerIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1222,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.ReplyTo" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplyTo As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ ReplyTo { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplyTo : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Channels.MessageHeaders.ReplyTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1256,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.SetAction(System.Xml.XmlDictionaryString)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAction (action As XmlDictionaryString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAction(System::Xml::XmlDictionaryString ^ action);" />
+      <MemberSignature Language="F#" Value="member this.SetAction : System.Xml.XmlDictionaryString -&gt; unit" Usage="messageHeaders.SetAction action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1317,6 +1352,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ To { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.To : Uri with get, set" Usage="System.ServiceModel.Channels.MessageHeaders.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1351,6 +1387,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderstoodHeaders As UnderstoodHeaders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::UnderstoodHeaders ^ UnderstoodHeaders { System::ServiceModel::Channels::UnderstoodHeaders ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnderstoodHeaders : System.ServiceModel.Channels.UnderstoodHeaders" Usage="System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1393,6 +1430,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.WriteHeader(System.Int32,System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteHeader (headerIndex As Integer, writer As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteHeader(int headerIndex, System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteHeader : int * System.Xml.XmlDictionaryWriter -&gt; unit" Usage="messageHeaders.WriteHeader (headerIndex, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1425,6 +1463,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.WriteHeader(System.Int32,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteHeader (headerIndex As Integer, writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteHeader(int headerIndex, System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteHeader : int * System.Xml.XmlWriter -&gt; unit" Usage="messageHeaders.WriteHeader (headerIndex, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1467,6 +1506,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.WriteHeaderContents(System.Int32,System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteHeaderContents (headerIndex As Integer, writer As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteHeaderContents(int headerIndex, System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteHeaderContents : int * System.Xml.XmlDictionaryWriter -&gt; unit" Usage="messageHeaders.WriteHeaderContents (headerIndex, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1499,6 +1539,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.WriteHeaderContents(System.Int32,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteHeaderContents (headerIndex As Integer, writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteHeaderContents(int headerIndex, System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteHeaderContents : int * System.Xml.XmlWriter -&gt; unit" Usage="messageHeaders.WriteHeaderContents (headerIndex, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1541,6 +1582,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.WriteStartHeader(System.Int32,System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartHeader (headerIndex As Integer, writer As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartHeader(int headerIndex, System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartHeader : int * System.Xml.XmlDictionaryWriter -&gt; unit" Usage="messageHeaders.WriteStartHeader (headerIndex, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1573,6 +1615,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.WriteStartHeader(System.Int32,System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartHeader (headerIndex As Integer, writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartHeader(int headerIndex, System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartHeader : int * System.Xml.XmlWriter -&gt; unit" Usage="messageHeaders.WriteStartHeader (headerIndex, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

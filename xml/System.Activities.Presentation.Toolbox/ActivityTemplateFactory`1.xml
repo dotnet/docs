@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityTemplateFactory(Of T)&#xA;Implements IActivityTemplateFactory(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : classpublic ref class ActivityTemplateFactory abstract : System::Activities::Presentation::IActivityTemplateFactory&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ActivityTemplateFactory&lt;'T (requires 'T : null)&gt; = class&#xA;    interface IActivityTemplateFactory&lt;'T (requires 'T : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ActivityTemplateFactory`1.Create(System.Windows.DependencyObject,System.Windows.IDataObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (target As DependencyObject, dataObject As IDataObject) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual T Create(System::Windows::DependencyObject ^ target, System::Windows::IDataObject ^ dataObject);" />
+      <MemberSignature Language="F#" Value="abstract member Create : System.Windows.DependencyObject * System.Windows.IDataObject -&gt; 'T&#xA;override this.Create : System.Windows.DependencyObject * System.Windows.IDataObject -&gt; 'T" Usage="activityTemplateFactory.Create (target, dataObject)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.IActivityTemplateFactory`1.Create(System.Windows.DependencyObject,System.Windows.IDataObject)</InterfaceMember>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactory`1.Implementation" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property Implementation As Func(Of T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Func&lt;T&gt; ^ Implementation { Func&lt;T&gt; ^ get(); void set(Func&lt;T&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Implementation : Func&lt;'T (requires 'T : null)&gt; with get, set" Usage="System.Activities.Presentation.Toolbox.ActivityTemplateFactory&lt;'T (requires 'T : null)&gt;.Implementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

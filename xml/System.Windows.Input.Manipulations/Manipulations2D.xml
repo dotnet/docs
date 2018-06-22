@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.Manipulations2D" />
   <TypeSignature Language="VB.NET" Value="Public Enum Manipulations2D" />
   <TypeSignature Language="C++ CLI" Value="public enum class Manipulations2D" />
+  <TypeSignature Language="F#" Value="type Manipulations2D = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 15" Usage="System.Windows.Input.Manipulations.Manipulations2D.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Input.Manipulations.Manipulations2D.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Rotate" />
       <MemberSignature Language="VB.NET" Value="Rotate" />
       <MemberSignature Language="C++ CLI" Value="Rotate" />
+      <MemberSignature Language="F#" Value="Rotate = 8" Usage="System.Windows.Input.Manipulations.Manipulations2D.Rotate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Scale" />
       <MemberSignature Language="VB.NET" Value="Scale" />
       <MemberSignature Language="C++ CLI" Value="Scale" />
+      <MemberSignature Language="F#" Value="Scale = 4" Usage="System.Windows.Input.Manipulations.Manipulations2D.Scale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Translate" />
       <MemberSignature Language="VB.NET" Value="Translate" />
       <MemberSignature Language="C++ CLI" Value="Translate" />
+      <MemberSignature Language="F#" Value="Translate = 3" Usage="System.Windows.Input.Manipulations.Manipulations2D.Translate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.TranslateX" />
       <MemberSignature Language="VB.NET" Value="TranslateX" />
       <MemberSignature Language="C++ CLI" Value="TranslateX" />
+      <MemberSignature Language="F#" Value="TranslateX = 1" Usage="System.Windows.Input.Manipulations.Manipulations2D.TranslateX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.TranslateY" />
       <MemberSignature Language="VB.NET" Value="TranslateY" />
       <MemberSignature Language="C++ CLI" Value="TranslateY" />
+      <MemberSignature Language="F#" Value="TranslateY = 2" Usage="System.Windows.Input.Manipulations.Manipulations2D.TranslateY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>

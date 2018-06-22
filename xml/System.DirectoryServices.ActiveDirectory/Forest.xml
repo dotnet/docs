@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.Forest" />
   <TypeSignature Language="VB.NET" Value="Public Class Forest&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Forest : IDisposable" />
+  <TypeSignature Language="F#" Value="type Forest = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.ApplicationPartitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationPartitions As ApplicationPartitionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ApplicationPartitionCollection ^ ApplicationPartitions { System::DirectoryServices::ActiveDirectory::ApplicationPartitionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationPartitions : System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection" Usage="System.DirectoryServices.ActiveDirectory.Forest.ApplicationPartitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateLocalSideOfTrustRelationship (targetForestName As String, direction As TrustDirection, trustPassword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateLocalSideOfTrustRelationship(System::String ^ targetForestName, System::DirectoryServices::ActiveDirectory::TrustDirection direction, System::String ^ trustPassword);" />
+      <MemberSignature Language="F#" Value="member this.CreateLocalSideOfTrustRelationship : string * System.DirectoryServices.ActiveDirectory.TrustDirection * string -&gt; unit" Usage="forest.CreateLocalSideOfTrustRelationship (targetForestName, direction, trustPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateTrustRelationship (targetForest As Forest, direction As TrustDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateTrustRelationship(System::DirectoryServices::ActiveDirectory::Forest ^ targetForest, System::DirectoryServices::ActiveDirectory::TrustDirection direction);" />
+      <MemberSignature Language="F#" Value="member this.CreateTrustRelationship : System.DirectoryServices.ActiveDirectory.Forest * System.DirectoryServices.ActiveDirectory.TrustDirection -&gt; unit" Usage="forest.CreateTrustRelationship (targetForest, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.DeleteLocalSideOfTrustRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteLocalSideOfTrustRelationship (targetForestName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteLocalSideOfTrustRelationship(System::String ^ targetForestName);" />
+      <MemberSignature Language="F#" Value="member this.DeleteLocalSideOfTrustRelationship : string -&gt; unit" Usage="forest.DeleteLocalSideOfTrustRelationship targetForestName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.DeleteTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteTrustRelationship (targetForest As Forest)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteTrustRelationship(System::DirectoryServices::ActiveDirectory::Forest ^ targetForest);" />
+      <MemberSignature Language="F#" Value="member this.DeleteTrustRelationship : System.DirectoryServices.ActiveDirectory.Forest -&gt; unit" Usage="forest.DeleteTrustRelationship targetForest" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -242,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="forest.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="member this.Dispose : bool -&gt; unit" Usage="forest.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -290,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.Domains" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Domains As DomainCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainCollection ^ Domains { System::DirectoryServices::ActiveDirectory::DomainCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Domains : System.DirectoryServices.ActiveDirectory.DomainCollection" Usage="System.DirectoryServices.ActiveDirectory.Forest.Domains" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -326,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.FindAllDiscoverableGlobalCatalogs" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDiscoverableGlobalCatalogs () As GlobalCatalogCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::GlobalCatalogCollection ^ FindAllDiscoverableGlobalCatalogs();" />
+      <MemberSignature Language="F#" Value="member this.FindAllDiscoverableGlobalCatalogs : unit -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" Usage="forest.FindAllDiscoverableGlobalCatalogs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -358,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.FindAllDiscoverableGlobalCatalogs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDiscoverableGlobalCatalogs (siteName As String) As GlobalCatalogCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::GlobalCatalogCollection ^ FindAllDiscoverableGlobalCatalogs(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindAllDiscoverableGlobalCatalogs : string -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" Usage="forest.FindAllDiscoverableGlobalCatalogs siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -409,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.FindAllGlobalCatalogs" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllGlobalCatalogs () As GlobalCatalogCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::GlobalCatalogCollection ^ FindAllGlobalCatalogs();" />
+      <MemberSignature Language="F#" Value="member this.FindAllGlobalCatalogs : unit -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" Usage="forest.FindAllGlobalCatalogs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -434,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.FindAllGlobalCatalogs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllGlobalCatalogs (siteName As String) As GlobalCatalogCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::GlobalCatalogCollection ^ FindAllGlobalCatalogs(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindAllGlobalCatalogs : string -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" Usage="forest.FindAllGlobalCatalogs siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -476,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="Public Function FindGlobalCatalog () As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ FindGlobalCatalog();" />
+      <MemberSignature Language="F#" Value="member this.FindGlobalCatalog : unit -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="forest.FindGlobalCatalog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -502,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindGlobalCatalog (flag As LocatorOptions) As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ FindGlobalCatalog(System::DirectoryServices::ActiveDirectory::LocatorOptions flag);" />
+      <MemberSignature Language="F#" Value="member this.FindGlobalCatalog : System.DirectoryServices.ActiveDirectory.LocatorOptions -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="forest.FindGlobalCatalog flag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -532,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindGlobalCatalog (siteName As String) As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ FindGlobalCatalog(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindGlobalCatalog : string -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="forest.FindGlobalCatalog siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -565,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindGlobalCatalog (siteName As String, flag As LocatorOptions) As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ FindGlobalCatalog(System::String ^ siteName, System::DirectoryServices::ActiveDirectory::LocatorOptions flag);" />
+      <MemberSignature Language="F#" Value="member this.FindGlobalCatalog : string * System.DirectoryServices.ActiveDirectory.LocatorOptions -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="forest.FindGlobalCatalog (siteName, flag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -601,6 +618,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.ForestMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForestMode As ForestMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ForestMode ForestMode { System::DirectoryServices::ActiveDirectory::ForestMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForestMode : System.DirectoryServices.ActiveDirectory.ForestMode" Usage="System.DirectoryServices.ActiveDirectory.Forest.ForestMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -626,6 +644,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.ForestModeLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForestModeLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ForestModeLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForestModeLevel : int" Usage="System.DirectoryServices.ActiveDirectory.Forest.ForestModeLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -647,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.GetAllTrustRelationships" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllTrustRelationships () As TrustRelationshipInformationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::TrustRelationshipInformationCollection ^ GetAllTrustRelationships();" />
+      <MemberSignature Language="F#" Value="member this.GetAllTrustRelationships : unit -&gt; System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection" Usage="forest.GetAllTrustRelationships " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -675,6 +695,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.GetCurrentForest" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentForest () As Forest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::Forest ^ GetCurrentForest();" />
+      <MemberSignature Language="F#" Value="static member GetCurrentForest : unit -&gt; System.DirectoryServices.ActiveDirectory.Forest" Usage="System.DirectoryServices.ActiveDirectory.Forest.GetCurrentForest " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -698,6 +719,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.GetForest(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetForest (context As DirectoryContext) As Forest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::Forest ^ GetForest(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetForest : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.Forest" Usage="System.DirectoryServices.ActiveDirectory.Forest.GetForest context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -730,6 +752,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.GetSelectiveAuthenticationStatus(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelectiveAuthenticationStatus (targetForestName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetSelectiveAuthenticationStatus(System::String ^ targetForestName);" />
+      <MemberSignature Language="F#" Value="member this.GetSelectiveAuthenticationStatus : string -&gt; bool" Usage="forest.GetSelectiveAuthenticationStatus targetForestName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -775,6 +798,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.GetSidFilteringStatus(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSidFilteringStatus (targetForestName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetSidFilteringStatus(System::String ^ targetForestName);" />
+      <MemberSignature Language="F#" Value="member this.GetSidFilteringStatus : string -&gt; bool" Usage="forest.GetSidFilteringStatus targetForestName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -811,6 +835,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.GetTrustRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTrustRelationship (targetForestName As String) As ForestTrustRelationshipInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ForestTrustRelationshipInformation ^ GetTrustRelationship(System::String ^ targetForestName);" />
+      <MemberSignature Language="F#" Value="member this.GetTrustRelationship : string -&gt; System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" Usage="forest.GetTrustRelationship targetForestName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -846,6 +871,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.GlobalCatalogs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlobalCatalogs As GlobalCatalogCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::GlobalCatalogCollection ^ GlobalCatalogs { System::DirectoryServices::ActiveDirectory::GlobalCatalogCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlobalCatalogs : System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" Usage="System.DirectoryServices.ActiveDirectory.Forest.GlobalCatalogs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -869,6 +895,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.DirectoryServices.ActiveDirectory.Forest.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -891,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.NamingRoleOwner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamingRoleOwner As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainController ^ NamingRoleOwner { System::DirectoryServices::ActiveDirectory::DomainController ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamingRoleOwner : System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.Forest.NamingRoleOwner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -915,6 +943,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RaiseForestFunctionality(valuetype System.DirectoryServices.ActiveDirectory.ForestMode forestMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.RaiseForestFunctionality(System.DirectoryServices.ActiveDirectory.ForestMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseForestFunctionality(System::DirectoryServices::ActiveDirectory::ForestMode forestMode);" />
+      <MemberSignature Language="F#" Value="member this.RaiseForestFunctionality : System.DirectoryServices.ActiveDirectory.ForestMode -&gt; unit" Usage="forest.RaiseForestFunctionality forestMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -964,6 +993,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.RaiseForestFunctionalityLevel(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseForestFunctionalityLevel (forestMode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseForestFunctionalityLevel(int forestMode);" />
+      <MemberSignature Language="F#" Value="member this.RaiseForestFunctionalityLevel : int -&gt; unit" Usage="forest.RaiseForestFunctionalityLevel forestMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -988,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.RepairTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RepairTrustRelationship (targetForest As Forest)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RepairTrustRelationship(System::DirectoryServices::ActiveDirectory::Forest ^ targetForest);" />
+      <MemberSignature Language="F#" Value="member this.RepairTrustRelationship : System.DirectoryServices.ActiveDirectory.Forest -&gt; unit" Usage="forest.RepairTrustRelationship targetForest" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1019,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.RootDomain" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootDomain As Domain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::Domain ^ RootDomain { System::DirectoryServices::ActiveDirectory::Domain ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootDomain : System.DirectoryServices.ActiveDirectory.Domain" Usage="System.DirectoryServices.ActiveDirectory.Forest.RootDomain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1042,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.Schema" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As ActiveDirectorySchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySchema ^ Schema { System::DirectoryServices::ActiveDirectory::ActiveDirectorySchema ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" Usage="System.DirectoryServices.ActiveDirectory.Forest.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1066,6 +1099,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.SchemaRoleOwner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaRoleOwner As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainController ^ SchemaRoleOwner { System::DirectoryServices::ActiveDirectory::DomainController ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaRoleOwner : System.DirectoryServices.ActiveDirectory.DomainController" Usage="System.DirectoryServices.ActiveDirectory.Forest.SchemaRoleOwner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1091,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.SetSelectiveAuthenticationStatus(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSelectiveAuthenticationStatus (targetForestName As String, enable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectiveAuthenticationStatus(System::String ^ targetForestName, bool enable);" />
+      <MemberSignature Language="F#" Value="member this.SetSelectiveAuthenticationStatus : string * bool -&gt; unit" Usage="forest.SetSelectiveAuthenticationStatus (targetForestName, enable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1128,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.SetSidFilteringStatus(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSidFilteringStatus (targetForestName As String, enable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSidFilteringStatus(System::String ^ targetForestName, bool enable);" />
+      <MemberSignature Language="F#" Value="member this.SetSidFilteringStatus : string * bool -&gt; unit" Usage="forest.SetSidFilteringStatus (targetForestName, enable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1171,6 +1207,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.Forest.Sites" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sites As ReadOnlySiteCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReadOnlySiteCollection ^ Sites { System::DirectoryServices::ActiveDirectory::ReadOnlySiteCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sites : System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" Usage="System.DirectoryServices.ActiveDirectory.Forest.Sites" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1197,6 +1234,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="forest.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1229,6 +1267,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.UpdateLocalSideOfTrustRelationship(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateLocalSideOfTrustRelationship (targetForestName As String, newTrustPassword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateLocalSideOfTrustRelationship(System::String ^ targetForestName, System::String ^ newTrustPassword);" />
+      <MemberSignature Language="F#" Value="member this.UpdateLocalSideOfTrustRelationship : string * string -&gt; unit" Usage="forest.UpdateLocalSideOfTrustRelationship (targetForestName, newTrustPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1264,6 +1303,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.UpdateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateLocalSideOfTrustRelationship (targetForestName As String, newTrustDirection As TrustDirection, newTrustPassword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateLocalSideOfTrustRelationship(System::String ^ targetForestName, System::DirectoryServices::ActiveDirectory::TrustDirection newTrustDirection, System::String ^ newTrustPassword);" />
+      <MemberSignature Language="F#" Value="member this.UpdateLocalSideOfTrustRelationship : string * System.DirectoryServices.ActiveDirectory.TrustDirection * string -&gt; unit" Usage="forest.UpdateLocalSideOfTrustRelationship (targetForestName, newTrustDirection, newTrustPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1303,6 +1343,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.UpdateTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateTrustRelationship (targetForest As Forest, newTrustDirection As TrustDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateTrustRelationship(System::DirectoryServices::ActiveDirectory::Forest ^ targetForest, System::DirectoryServices::ActiveDirectory::TrustDirection newTrustDirection);" />
+      <MemberSignature Language="F#" Value="member this.UpdateTrustRelationship : System.DirectoryServices.ActiveDirectory.Forest * System.DirectoryServices.ActiveDirectory.TrustDirection -&gt; unit" Usage="forest.UpdateTrustRelationship (targetForest, newTrustDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1339,6 +1380,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.VerifyOutboundTrustRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub VerifyOutboundTrustRelationship (targetForestName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void VerifyOutboundTrustRelationship(System::String ^ targetForestName);" />
+      <MemberSignature Language="F#" Value="member this.VerifyOutboundTrustRelationship : string -&gt; unit" Usage="forest.VerifyOutboundTrustRelationship targetForestName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1373,6 +1415,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.Forest.VerifyTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub VerifyTrustRelationship (targetForest As Forest, direction As TrustDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void VerifyTrustRelationship(System::DirectoryServices::ActiveDirectory::Forest ^ targetForest, System::DirectoryServices::ActiveDirectory::TrustDirection direction);" />
+      <MemberSignature Language="F#" Value="member this.VerifyTrustRelationship : System.DirectoryServices.ActiveDirectory.Forest * System.DirectoryServices.ActiveDirectory.TrustDirection -&gt; unit" Usage="forest.VerifyTrustRelationship (targetForest, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

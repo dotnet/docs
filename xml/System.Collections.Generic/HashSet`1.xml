@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.HashSet`1" />
   <TypeSignature Language="VB.NET" Value="Public Class HashSet(Of T)&#xA;Implements ICollection(Of T), IDeserializationCallback, IEnumerable(Of T), IReadOnlyCollection(Of T), ISerializable, ISet(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class HashSet : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::ISet&lt;T&gt;, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type HashSet&lt;'T&gt; = class&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback&#xA;    interface ISet&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -186,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HashSet(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.HashSet&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Collections.Generic.HashSet&lt;'T&gt;" Usage="new System.Collections.Generic.HashSet&lt;'T&gt; collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -239,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IEqualityComparer(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HashSet(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.HashSet&lt;'T&gt; : System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Generic.HashSet&lt;'T&gt;" Usage="new System.Collections.Generic.HashSet&lt;'T&gt; comparer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -280,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HashSet(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.HashSet&lt;'T&gt; : int -&gt; System.Collections.Generic.HashSet&lt;'T&gt;" Usage="new System.Collections.Generic.HashSet&lt;'T&gt; capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -312,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T), comparer As IEqualityComparer(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HashSet(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.HashSet&lt;'T&gt; : seq&lt;'T&gt; * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Generic.HashSet&lt;'T&gt;" Usage="new System.Collections.Generic.HashSet&lt;'T&gt; (collection, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -368,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Int32,System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, comparer As IEqualityComparer(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HashSet(int capacity, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.HashSet&lt;'T&gt; : int * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Generic.HashSet&lt;'T&gt;" Usage="new System.Collections.Generic.HashSet&lt;'T&gt; (capacity, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -402,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; HashSet(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.HashSet&lt;'T&gt; : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Collections.Generic.HashSet&lt;'T&gt;" Usage="new System.Collections.Generic.HashSet&lt;'T&gt; (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -441,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Add(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; bool&#xA;override this.Add : 'T -&gt; bool" Usage="hashSet.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.Add(`0)</InterfaceMember>
@@ -497,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="hashSet.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -549,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.HashSet`1.Comparer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comparer As IEqualityComparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ Comparer { System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Comparer : System.Collections.Generic.IEqualityComparer&lt;'T&gt;" Usage="System.Collections.Generic.HashSet&lt;'T&gt;.Comparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -588,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="hashSet.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -654,6 +665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.CopyTo(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] -&gt; unit" Usage="hashSet.CopyTo array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -698,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="hashSet.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -751,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), arrayIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] * int * int -&gt; unit" Usage="hashSet.CopyTo (array, arrayIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -811,6 +825,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.HashSet`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.HashSet&lt;'T&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -866,6 +881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.CreateSetComparer" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSetComparer () As IEqualityComparer(Of HashSet(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEqualityComparer&lt;System::Collections::Generic::HashSet&lt;T&gt; ^&gt; ^ CreateSetComparer();" />
+      <MemberSignature Language="F#" Value="static member CreateSetComparer : unit -&gt; System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.HashSet&lt;'T&gt;&gt;" Usage="System.Collections.Generic.HashSet&lt;'T&gt;.CreateSetComparer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -906,6 +922,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.EnsureCapacity(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnsureCapacity (capacity As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnsureCapacity(int capacity);" />
+      <MemberSignature Language="F#" Value="member this.EnsureCapacity : int -&gt; int" Usage="hashSet.EnsureCapacity capacity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -930,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExceptWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member ExceptWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.ExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="hashSet.ExceptWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -988,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As HashSet(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::HashSet&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.HashSet&lt;'T&gt;.Enumerator" Usage="hashSet.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1044,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="hashSet.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -1097,6 +1117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub IntersectWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void IntersectWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IntersectWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.IntersectWith : seq&lt;'T&gt; -&gt; unit" Usage="hashSet.IntersectWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1144,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsProperSubsetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.IsProperSubsetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1205,6 +1227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsProperSupersetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.IsProperSupersetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1266,6 +1289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.IsSubsetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1327,6 +1351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSupersetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupersetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.IsSupersetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1388,6 +1413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit&#xA;override this.OnDeserialization : obj -&gt; unit" Usage="hashSet.OnDeserialization sender" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -1432,6 +1458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Overlaps (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Overlaps(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member Overlaps : seq&lt;'T&gt; -&gt; bool&#xA;override this.Overlaps : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.Overlaps other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1489,6 +1516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="hashSet.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -1546,6 +1574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.RemoveWhere(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveWhere (match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int RemoveWhere(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.RemoveWhere : Predicate&lt;'T&gt; -&gt; int" Usage="hashSet.RemoveWhere match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1599,6 +1628,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function SetEquals (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SetEquals(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member SetEquals : seq&lt;'T&gt; -&gt; bool&#xA;override this.SetEquals : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.SetEquals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1658,6 +1688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SymmetricExceptWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SymmetricExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="hashSet.SymmetricExceptWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1759,6 +1790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.HashSet&lt;'T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1922,6 +1954,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.TrimExcess" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrimExcess ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimExcess();" />
+      <MemberSignature Language="F#" Value="member this.TrimExcess : unit -&gt; unit" Usage="hashSet.TrimExcess " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1971,6 +2004,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.TryGetValue(`0,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (equalValue As T, ByRef actualValue As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(T equalValue, [Runtime::InteropServices::Out] T % actualValue);" />
+      <MemberSignature Language="F#" Value="member this.TryGetValue : 'T *  -&gt; bool" Usage="hashSet.TryGetValue (equalValue, actualValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2009,6 +2043,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnionWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnionWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member UnionWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.UnionWith : seq&lt;'T&gt; -&gt; unit" Usage="hashSet.UnionWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>

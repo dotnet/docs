@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.CustomAttributeExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module CustomAttributeExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomAttributeExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type CustomAttributeExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute(System.Reflection.Assembly,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute (element As Assembly, attributeType As Type) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::Assembly ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.Assembly * Type -&gt; Attribute" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute(System.Reflection.MemberInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute (element As MemberInfo, attributeType As Type) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::MemberInfo ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.MemberInfo * Type -&gt; Attribute" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute(System.Reflection.Module,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute (element As Module, attributeType As Type) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::Module ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.Module * Type -&gt; Attribute" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute(System.Reflection.ParameterInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute (element As ParameterInfo, attributeType As Type) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::ParameterInfo ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.ParameterInfo * Type -&gt; Attribute" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute(System.Reflection.MemberInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute (element As MemberInfo, attributeType As Type, inherit As Boolean) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::MemberInfo ^ element, Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.MemberInfo * Type * bool -&gt; Attribute" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute (element, attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -316,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute(System.Reflection.ParameterInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute (element As ParameterInfo, attributeType As Type, inherit As Boolean) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::ParameterInfo ^ element, Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.ParameterInfo * Type * bool -&gt; Attribute" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute (element, attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -372,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute``1(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute(Of T As Attribute) (element As Assembly) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static T GetCustomAttribute(System::Reflection::Assembly ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.Assembly -&gt; 'T (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -428,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute``1(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute(Of T As Attribute) (element As MemberInfo) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static T GetCustomAttribute(System::Reflection::MemberInfo ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.MemberInfo -&gt; 'T (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -487,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute``1(System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute(Of T As Attribute) (element As Module) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static T GetCustomAttribute(System::Reflection::Module ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.Module -&gt; 'T (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -543,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute``1(System.Reflection.ParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute(Of T As Attribute) (element As ParameterInfo) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static T GetCustomAttribute(System::Reflection::ParameterInfo ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.ParameterInfo -&gt; 'T (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -602,6 +613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute``1(System.Reflection.MemberInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute(Of T As Attribute) (element As MemberInfo, inherit As Boolean) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static T GetCustomAttribute(System::Reflection::MemberInfo ^ element, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.MemberInfo * bool -&gt; 'T (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute (element, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -664,6 +676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttribute``1(System.Reflection.ParameterInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttribute(Of T As Attribute) (element As ParameterInfo, inherit As Boolean) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static T GetCustomAttribute(System::Reflection::ParameterInfo ^ element, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.ParameterInfo * bool -&gt; 'T (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttribute (element, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -735,6 +748,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As Assembly) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Assembly ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Assembly -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -775,6 +789,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As MemberInfo) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -818,6 +833,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As Module) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Module ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Module -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -858,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.ParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As ParameterInfo) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -901,6 +918,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.Assembly,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As Assembly, attributeType As Type) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Assembly ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Assembly * Type -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -945,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.MemberInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As MemberInfo, inherit As Boolean) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo * bool -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -991,6 +1010,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As MemberInfo, attributeType As Type) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo * Type -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1038,6 +1058,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.Module,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As Module, attributeType As Type) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Module ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Module * Type -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1082,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.ParameterInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As ParameterInfo, inherit As Boolean) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo * bool -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1128,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.ParameterInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As ParameterInfo, attributeType As Type) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo * Type -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1175,6 +1198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As MemberInfo, attributeType As Type, inherit As Boolean) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element, Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo * Type * bool -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1225,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.ParameterInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes (element As ParameterInfo, attributeType As Type, inherit As Boolean) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element, Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo * Type * bool -&gt; seq&lt;Attribute&gt;" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1275,6 +1300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes``1(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes(Of T As Attribute) (element As Assembly) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetCustomAttributes(System::Reflection::Assembly ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Assembly -&gt; seq&lt;'T (requires 'T :&gt; Attribute)&gt; (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1323,6 +1349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes``1(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes(Of T As Attribute) (element As MemberInfo) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo -&gt; seq&lt;'T (requires 'T :&gt; Attribute)&gt; (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1374,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes``1(System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes(Of T As Attribute) (element As Module) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetCustomAttributes(System::Reflection::Module ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Module -&gt; seq&lt;'T (requires 'T :&gt; Attribute)&gt; (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1422,6 +1450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes``1(System.Reflection.ParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes(Of T As Attribute) (element As ParameterInfo) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo -&gt; seq&lt;'T (requires 'T :&gt; Attribute)&gt; (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1473,6 +1502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes``1(System.Reflection.MemberInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes(Of T As Attribute) (element As MemberInfo, inherit As Boolean) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo * bool -&gt; seq&lt;'T (requires 'T :&gt; Attribute)&gt; (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1527,6 +1557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.GetCustomAttributes``1(System.Reflection.ParameterInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomAttributes(Of T As Attribute) (element As ParameterInfo, inherit As Boolean) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Attribute[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo * bool -&gt; seq&lt;'T (requires 'T :&gt; Attribute)&gt; (requires 'T :&gt; Attribute)" Usage="System.Reflection.CustomAttributeExtensions.GetCustomAttributes (element, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1590,6 +1621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.IsDefined(System.Reflection.Assembly,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDefined (element As Assembly, attributeType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDefined(System::Reflection::Assembly ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.Assembly * Type -&gt; bool" Usage="System.Reflection.CustomAttributeExtensions.IsDefined (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1635,6 +1667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.IsDefined(System.Reflection.MemberInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDefined (element As MemberInfo, attributeType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDefined(System::Reflection::MemberInfo ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.MemberInfo * Type -&gt; bool" Usage="System.Reflection.CustomAttributeExtensions.IsDefined (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1682,6 +1715,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.IsDefined(System.Reflection.Module,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDefined (element As Module, attributeType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDefined(System::Reflection::Module ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.Module * Type -&gt; bool" Usage="System.Reflection.CustomAttributeExtensions.IsDefined (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1727,6 +1761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.IsDefined(System.Reflection.ParameterInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDefined (element As ParameterInfo, attributeType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDefined(System::Reflection::ParameterInfo ^ element, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.ParameterInfo * Type -&gt; bool" Usage="System.Reflection.CustomAttributeExtensions.IsDefined (element, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1772,6 +1807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.IsDefined(System.Reflection.MemberInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDefined (element As MemberInfo, attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDefined(System::Reflection::MemberInfo ^ element, Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.MemberInfo * Type * bool -&gt; bool" Usage="System.Reflection.CustomAttributeExtensions.IsDefined (element, attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -1822,6 +1858,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeExtensions.IsDefined(System.Reflection.ParameterInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDefined (element As ParameterInfo, attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDefined(System::Reflection::ParameterInfo ^ element, Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.ParameterInfo * Type * bool -&gt; bool" Usage="System.Reflection.CustomAttributeExtensions.IsDefined (element, attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>

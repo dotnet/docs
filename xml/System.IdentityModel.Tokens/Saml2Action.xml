@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Action" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2Action" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2Action" />
+  <TypeSignature Language="F#" Value="type Saml2Action = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Action.#ctor(System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, actionNamespace As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Action(System::String ^ value, Uri ^ actionNamespace);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Action : string * Uri -&gt; System.IdentityModel.Tokens.Saml2Action" Usage="new System.IdentityModel.Tokens.Saml2Action (value, actionNamespace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Action.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Namespace { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : Uri with get, set" Usage="System.IdentityModel.Tokens.Saml2Action.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Action.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.IdentityModel.Tokens.Saml2Action.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.EnumeratorConstructor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumeratorConstructor&#xA;Inherits ScriptFunction" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumeratorConstructor sealed : Microsoft::JScript::ScriptFunction" />
+  <TypeSignature Language="F#" Value="type EnumeratorConstructor = class&#xA;    inherit ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorConstructor.CreateInstance(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (ParamArray args As Object()) As EnumeratorObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::EnumeratorObject ^ CreateInstance(... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : obj[] -&gt; Microsoft.JScript.EnumeratorObject" Usage="enumeratorConstructor.CreateInstance args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorConstructor.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke();" />
+      <MemberSignature Language="F#" Value="override this.Invoke : unit -&gt; obj" Usage="enumeratorConstructor.Invoke " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

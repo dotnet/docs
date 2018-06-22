@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
   <TypeSignature Language="VB.NET" Value="Public Enum BuiltInRole" />
   <TypeSignature Language="C++ CLI" Value="public enum class BuiltInRole" />
+  <TypeSignature Language="F#" Value="type BuiltInRole = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.AccountOperator" />
       <MemberSignature Language="VB.NET" Value="AccountOperator" />
       <MemberSignature Language="C++ CLI" Value="AccountOperator" />
+      <MemberSignature Language="F#" Value="AccountOperator = 548" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.AccountOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Administrator" />
       <MemberSignature Language="VB.NET" Value="Administrator" />
       <MemberSignature Language="C++ CLI" Value="Administrator" />
+      <MemberSignature Language="F#" Value="Administrator = 544" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Administrator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.BackupOperator" />
       <MemberSignature Language="VB.NET" Value="BackupOperator" />
       <MemberSignature Language="C++ CLI" Value="BackupOperator" />
+      <MemberSignature Language="F#" Value="BackupOperator = 551" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.BackupOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Guest" />
       <MemberSignature Language="VB.NET" Value="Guest" />
       <MemberSignature Language="C++ CLI" Value="Guest" />
+      <MemberSignature Language="F#" Value="Guest = 546" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Guest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.PowerUser" />
       <MemberSignature Language="VB.NET" Value="PowerUser" />
       <MemberSignature Language="C++ CLI" Value="PowerUser" />
+      <MemberSignature Language="F#" Value="PowerUser = 547" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.PowerUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.PrintOperator" />
       <MemberSignature Language="VB.NET" Value="PrintOperator" />
       <MemberSignature Language="C++ CLI" Value="PrintOperator" />
+      <MemberSignature Language="F#" Value="PrintOperator = 550" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.PrintOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Replicator" />
       <MemberSignature Language="VB.NET" Value="Replicator" />
       <MemberSignature Language="C++ CLI" Value="Replicator" />
+      <MemberSignature Language="F#" Value="Replicator = 552" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Replicator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.SystemOperator" />
       <MemberSignature Language="VB.NET" Value="SystemOperator" />
       <MemberSignature Language="C++ CLI" Value="SystemOperator" />
+      <MemberSignature Language="F#" Value="SystemOperator = 549" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.SystemOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -189,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="C++ CLI" Value="User" />
+      <MemberSignature Language="F#" Value="User = 545" Usage="Microsoft.VisualBasic.ApplicationServices.BuiltInRole.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

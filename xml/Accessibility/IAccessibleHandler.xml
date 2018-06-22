@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccessibleHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAccessibleHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAccessibleHandler" />
+  <TypeSignature Language="F#" Value="type IAccessibleHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessibleHandler.AccessibleObjectFromID(System.Int32,System.Int32,Accessibility.IAccessible@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AccessibleObjectFromID (hwnd As Integer, lObjectID As Integer, ByRef pIAccessible As IAccessible)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AccessibleObjectFromID(int hwnd, int lObjectID, [Runtime::InteropServices::Out] Accessibility::IAccessible ^ % pIAccessible);" />
+      <MemberSignature Language="F#" Value="abstract member AccessibleObjectFromID : int * int *  -&gt; unit" Usage="iAccessibleHandler.AccessibleObjectFromID (hwnd, lObjectID, pIAccessible)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

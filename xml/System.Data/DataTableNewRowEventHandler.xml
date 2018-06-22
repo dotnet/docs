@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableNewRowEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataTableNewRowEventHandler(sender As Object, e As DataTableNewRowEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataTableNewRowEventHandler(System::Object ^ sender, DataTableNewRowEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataTableNewRowEventHandler = delegate of obj * DataTableNewRowEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

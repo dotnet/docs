@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Floater" />
   <TypeSignature Language="VB.NET" Value="Public Class Floater&#xA;Inherits AnchoredBlock" />
   <TypeSignature Language="C++ CLI" Value="public ref class Floater : System::Windows::Documents::AnchoredBlock" />
+  <TypeSignature Language="F#" Value="type Floater = class&#xA;    inherit AnchoredBlock" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Floater.#ctor(System.Windows.Documents.Block)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childBlock As Block)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Floater(System::Windows::Documents::Block ^ childBlock);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Floater : System.Windows.Documents.Block -&gt; System.Windows.Documents.Floater" Usage="new System.Windows.Documents.Floater childBlock" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Floater.#ctor(System.Windows.Documents.Block,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childBlock As Block, insertionPosition As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Floater(System::Windows::Documents::Block ^ childBlock, System::Windows::Documents::TextPointer ^ insertionPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Floater : System.Windows.Documents.Block * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Floater" Usage="new System.Windows.Documents.Floater (childBlock, insertionPosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Floater.HorizontalAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalAlignment As HorizontalAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::HorizontalAlignment HorizontalAlignment { System::Windows::HorizontalAlignment get(); void set(System::Windows::HorizontalAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAlignment : System.Windows.HorizontalAlignment with get, set" Usage="System.Windows.Documents.Floater.HorizontalAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Floater.HorizontalAlignmentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalAlignmentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalAlignmentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalAlignmentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Floater.HorizontalAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Floater.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="System.Windows.Documents.Floater.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -294,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Floater.WidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable WidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Floater.WidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

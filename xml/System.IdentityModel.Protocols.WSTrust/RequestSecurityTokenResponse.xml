@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestSecurityTokenResponse&#xA;Inherits WSTrustMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestSecurityTokenResponse : System::IdentityModel::Protocols::WSTrust::WSTrustMessage" />
+  <TypeSignature Language="F#" Value="type RequestSecurityTokenResponse = class&#xA;    inherit WSTrustMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.#ctor(System.IdentityModel.Protocols.WSTrust.WSTrustMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As WSTrustMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestSecurityTokenResponse(System::IdentityModel::Protocols::WSTrust::WSTrustMessage ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse : System.IdentityModel.Protocols.WSTrust.WSTrustMessage -&gt; System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" Usage="new System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.IsFinal" />
       <MemberSignature Language="VB.NET" Value="Public Property IsFinal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFinal { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsFinal : bool with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.IsFinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedAttachedReference" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestedAttachedReference As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ RequestedAttachedReference { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(); void set(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedAttachedReference : System.IdentityModel.Tokens.SecurityKeyIdentifierClause with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedAttachedReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedProofToken" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestedProofToken As RequestedProofToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::RequestedProofToken ^ RequestedProofToken { System::IdentityModel::Protocols::WSTrust::RequestedProofToken ^ get(); void set(System::IdentityModel::Protocols::WSTrust::RequestedProofToken ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedProofToken : System.IdentityModel.Protocols.WSTrust.RequestedProofToken with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedProofToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedSecurityToken" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestedSecurityToken As RequestedSecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::RequestedSecurityToken ^ RequestedSecurityToken { System::IdentityModel::Protocols::WSTrust::RequestedSecurityToken ^ get(); void set(System::IdentityModel::Protocols::WSTrust::RequestedSecurityToken ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedSecurityToken : System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedSecurityToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedTokenCancelled" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestedTokenCancelled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequestedTokenCancelled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedTokenCancelled : bool with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedTokenCancelled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedUnattachedReference" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestedUnattachedReference As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ RequestedUnattachedReference { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(); void set(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedUnattachedReference : System.IdentityModel.Tokens.SecurityKeyIdentifierClause with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedUnattachedReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -266,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As Status" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::Status ^ Status { System::IdentityModel::Protocols::WSTrust::Status ^ get(); void set(System::IdentityModel::Protocols::WSTrust::Status ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.IdentityModel.Protocols.WSTrust.Status with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.EditingScope" />
   <TypeSignature Language="VB.NET" Value="Public Class EditingScope&#xA;Inherits ModelEditingScope" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditingScope : System::Activities::Presentation::Model::ModelEditingScope" />
+  <TypeSignature Language="F#" Value="type EditingScope = class&#xA;    inherit ModelEditingScope" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScope.CanComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanComplete () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanComplete();" />
+      <MemberSignature Language="F#" Value="override this.CanComplete : unit -&gt; bool" Usage="editingScope.CanComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.EditingScope.Changes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Changes As List(Of Change)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Activities::Presentation::Model::Change ^&gt; ^ Changes { System::Collections::Generic::List&lt;System::Activities::Presentation::Model::Change ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Changes : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.Change&gt;" Usage="System.Activities.Presentation.Model.EditingScope.Changes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.EditingScope.HasEffectiveChanges" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasEffectiveChanges As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasEffectiveChanges { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasEffectiveChanges : bool" Usage="System.Activities.Presentation.Model.EditingScope.HasEffectiveChanges" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScope.OnComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnComplete ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnComplete();" />
+      <MemberSignature Language="F#" Value="override this.OnComplete : unit -&gt; unit" Usage="editingScope.OnComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScope.OnException(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnException (e As Exception) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnException(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnException : Exception -&gt; bool" Usage="editingScope.OnException e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScope.OnRevert(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRevert (finalizing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRevert(bool finalizing);" />
+      <MemberSignature Language="F#" Value="override this.OnRevert : bool -&gt; unit" Usage="editingScope.OnRevert finalizing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

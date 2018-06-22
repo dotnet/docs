@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializerFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSerializerFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerFactory" />
+  <TypeSignature Language="F#" Value="type XmlSerializerFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : Type -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Xml.Serialization.XmlTypeMapping xmlTypeMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Xml.Serialization.XmlTypeMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(System::Xml::Serialization::XmlTypeMapping ^ xmlTypeMapping);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : System.Xml.Serialization.XmlTypeMapping -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer xmlTypeMapping" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Type type, string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(Type ^ type, System::String ^ defaultNamespace);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : Type * string -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer (type, defaultNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Type type, class System.Type[] extraTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Type,System.Type[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(Type ^ type, cli::array &lt;Type ^&gt; ^ extraTypes);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : Type * Type[] -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer (type, extraTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Type,System.Xml.Serialization.XmlAttributeOverrides)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(Type ^ type, System::Xml::Serialization::XmlAttributeOverrides ^ overrides);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : Type * System.Xml.Serialization.XmlAttributeOverrides -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer (type, overrides)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -261,6 +267,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Type type, class System.Xml.Serialization.XmlRootAttribute root) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Type,System.Xml.Serialization.XmlRootAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(Type ^ type, System::Xml::Serialization::XmlRootAttribute ^ root);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : Type * System.Xml.Serialization.XmlRootAttribute -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer (type, root)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -304,6 +311,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(Type ^ type, System::Xml::Serialization::XmlAttributeOverrides ^ overrides, cli::array &lt;Type ^&gt; ^ extraTypes, System::Xml::Serialization::XmlRootAttribute ^ root, System::String ^ defaultNamespace);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : Type * System.Xml.Serialization.XmlAttributeOverrides * Type[] * System.Xml.Serialization.XmlRootAttribute * string -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer (type, overrides, extraTypes, root, defaultNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -353,6 +361,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(Type ^ type, System::Xml::Serialization::XmlAttributeOverrides ^ overrides, cli::array &lt;Type ^&gt; ^ extraTypes, System::Xml::Serialization::XmlRootAttribute ^ root, System::String ^ defaultNamespace, System::String ^ location);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : Type * System.Xml.Serialization.XmlAttributeOverrides * Type[] * System.Xml.Serialization.XmlRootAttribute * string * string -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer (type, overrides, extraTypes, root, defaultNamespace, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -397,6 +406,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlSerializer CreateSerializer(class System.Type type, class System.Xml.Serialization.XmlAttributeOverrides overrides, class System.Type[] extraTypes, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace, string location, class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerFactory.CreateSerializer(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String,System.String,System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlSerializer ^ CreateSerializer(Type ^ type, System::Xml::Serialization::XmlAttributeOverrides ^ overrides, cli::array &lt;Type ^&gt; ^ extraTypes, System::Xml::Serialization::XmlRootAttribute ^ root, System::String ^ defaultNamespace, System::String ^ location, System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="member this.CreateSerializer : Type * System.Xml.Serialization.XmlAttributeOverrides * Type[] * System.Xml.Serialization.XmlRootAttribute * string * string * System.Security.Policy.Evidence -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerFactory.CreateSerializer (type, overrides, extraTypes, root, defaultNamespace, location, evidence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

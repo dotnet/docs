@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.Design.RuleSetDialog" />
   <TypeSignature Language="VB.NET" Value="Public Class RuleSetDialog&#xA;Inherits Form" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleSetDialog : System::Windows::Forms::Form" />
+  <TypeSignature Language="F#" Value="type RuleSetDialog = class&#xA;    inherit Form" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.Activities.Rules.RuleSet ruleSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Design.RuleSetDialog.#ctor(System.Workflow.ComponentModel.Activity,System.Workflow.Activities.Rules.RuleSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSetDialog(System::Workflow::ComponentModel::Activity ^ activity, System::Workflow::Activities::Rules::RuleSet ^ ruleSet);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.Design.RuleSetDialog : System.Workflow.ComponentModel.Activity * System.Workflow.Activities.Rules.RuleSet -&gt; System.Workflow.Activities.Rules.Design.RuleSetDialog" Usage="new System.Workflow.Activities.Rules.Design.RuleSetDialog (activity, ruleSet)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type activityType, class System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, class System.Workflow.Activities.Rules.RuleSet ruleSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Design.RuleSetDialog.#ctor(System.Type,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Workflow.Activities.Rules.RuleSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSetDialog(Type ^ activityType, System::Workflow::ComponentModel::Compiler::ITypeProvider ^ typeProvider, System::Workflow::Activities::Rules::RuleSet ^ ruleSet);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.Design.RuleSetDialog : Type * System.Workflow.ComponentModel.Compiler.ITypeProvider * System.Workflow.Activities.Rules.RuleSet -&gt; System.Workflow.Activities.Rules.Design.RuleSetDialog" Usage="new System.Workflow.Activities.Rules.Design.RuleSetDialog (activityType, typeProvider, ruleSet)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Design.RuleSetDialog.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="ruleSetDialog.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Design.RuleSetDialog.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="ruleSetDialog.ProcessCmdKey (msg, keyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Design.RuleSetDialog.RuleSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RuleSet As RuleSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleSet ^ RuleSet { System::Workflow::Activities::Rules::RuleSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RuleSet : System.Workflow.Activities.Rules.RuleSet" Usage="System.Workflow.Activities.Rules.Design.RuleSetDialog.RuleSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

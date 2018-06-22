@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" />
   <TypeSignature Language="VB.NET" Value="Public Class XPathMessageFilterTable(Of TFilterData)&#xA;Implements ICollection(Of KeyValuePair(Of MessageFilter, TFilterData)), IDictionary(Of MessageFilter, TFilterData), IEnumerable(Of KeyValuePair(Of MessageFilter, TFilterData)), IMessageFilterTable(Of TFilterData)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TFilterData&gt;&#xA;public ref class XPathMessageFilterTable : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageFilter ^, TFilterData&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::ServiceModel::Dispatcher::MessageFilter ^, TFilterData&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageFilter ^, TFilterData&gt;&gt;, System::ServiceModel::Dispatcher::IMessageFilterTable&lt;TFilterData&gt;" />
+  <TypeSignature Language="F#" Value="type XPathMessageFilterTable&lt;'FilterData&gt; = class&#xA;    interface IMessageFilterTable&lt;'FilterData&gt;&#xA;    interface IDictionary&lt;MessageFilter, 'FilterData&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;MessageFilter, 'FilterData&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;MessageFilter, 'FilterData&gt;&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilterTable(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt; : int -&gt; System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt;" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt; capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Add(System.Collections.Generic.KeyValuePair{System.ServiceModel.Dispatcher.MessageFilter,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As KeyValuePair(Of MessageFilter, TFilterData))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageFilter ^, TFilterData&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt; -&gt; unit&#xA;override this.Add : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt; -&gt; unit" Usage="xPathMessageFilterTable.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Add(System.ServiceModel.Dispatcher.MessageFilter,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (filter As MessageFilter, data As TFilterData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::ServiceModel::Dispatcher::MessageFilter ^ filter, TFilterData data);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.ServiceModel.Dispatcher.MessageFilter * 'FilterData -&gt; unit&#xA;override this.Add : System.ServiceModel.Dispatcher.MessageFilter * 'FilterData -&gt; unit" Usage="xPathMessageFilterTable.Add (filter, data)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Add(System.ServiceModel.Dispatcher.XPathMessageFilter,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (filter As XPathMessageFilter, data As TFilterData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Dispatcher::XPathMessageFilter ^ filter, TFilterData data);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Dispatcher.XPathMessageFilter * 'FilterData -&gt; unit" Usage="xPathMessageFilterTable.Add (filter, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="xPathMessageFilterTable.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -243,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Contains(System.Collections.Generic.KeyValuePair{System.ServiceModel.Dispatcher.MessageFilter,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As KeyValuePair(Of MessageFilter, TFilterData)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageFilter ^, TFilterData&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt; -&gt; bool&#xA;override this.Contains : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt; -&gt; bool" Usage="xPathMessageFilterTable.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.ContainsKey(System.ServiceModel.Dispatcher.MessageFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (filter As MessageFilter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::ServiceModel::Dispatcher::MessageFilter ^ filter);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : System.ServiceModel.Dispatcher.MessageFilter -&gt; bool&#xA;override this.ContainsKey : System.ServiceModel.Dispatcher.MessageFilter -&gt; bool" Usage="xPathMessageFilterTable.ContainsKey filter" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.CopyTo(System.Collections.Generic.KeyValuePair{System.ServiceModel.Dispatcher.MessageFilter,`0}[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As KeyValuePair(Of MessageFilter, TFilterData)(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageFilter ^, TFilterData&gt;&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt;[] * int -&gt; unit&#xA;override this.CopyTo : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt;[] * int -&gt; unit" Usage="xPathMessageFilterTable.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -338,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -361,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of MessageFilter, TFilterData))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageFilter ^, TFilterData&gt;&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt;&gt;" Usage="xPathMessageFilterTable.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -408,6 +419,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilter(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Dispatcher.MessageFilter&amp; filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.Message,System.ServiceModel.Dispatcher.MessageFilter@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetMatchingFilter(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] System::ServiceModel::Dispatcher::MessageFilter ^ % filter);" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchingFilter : System.ServiceModel.Channels.Message *  -&gt; bool&#xA;override this.GetMatchingFilter : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingFilter (message, filter)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.Message,System.ServiceModel.Dispatcher.MessageFilter@)</InterfaceMember>
@@ -453,6 +465,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilter(class System.ServiceModel.Channels.MessageBuffer messageBuffer, [out] class System.ServiceModel.Dispatcher.MessageFilter&amp; filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.MessageBuffer,System.ServiceModel.Dispatcher.MessageFilter@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetMatchingFilter(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer, [Runtime::InteropServices::Out] System::ServiceModel::Dispatcher::MessageFilter ^ % filter);" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchingFilter : System.ServiceModel.Channels.MessageBuffer *  -&gt; bool&#xA;override this.GetMatchingFilter : System.ServiceModel.Channels.MessageBuffer *  -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingFilter (messageBuffer, filter)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.MessageBuffer,System.ServiceModel.Dispatcher.MessageFilter@)</InterfaceMember>
@@ -498,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Dispatcher.SeekableXPathNavigator,System.ServiceModel.Dispatcher.MessageFilter@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingFilter (navigator As SeekableXPathNavigator, ByRef filter As MessageFilter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetMatchingFilter(System::ServiceModel::Dispatcher::SeekableXPathNavigator ^ navigator, [Runtime::InteropServices::Out] System::ServiceModel::Dispatcher::MessageFilter ^ % filter);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingFilter : System.ServiceModel.Dispatcher.SeekableXPathNavigator *  -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingFilter (navigator, filter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -536,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilter(System.Xml.XPath.XPathNavigator,System.ServiceModel.Dispatcher.MessageFilter@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingFilter (navigator As XPathNavigator, ByRef filter As MessageFilter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetMatchingFilter(System::Xml::XPath::XPathNavigator ^ navigator, [Runtime::InteropServices::Out] System::ServiceModel::Dispatcher::MessageFilter ^ % filter);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingFilter : System.Xml.XPath.XPathNavigator *  -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingFilter (navigator, filter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -590,6 +605,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilters(class System.ServiceModel.Channels.Message message, class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Dispatcher.MessageFilter&gt; results) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilters(System.ServiceModel.Channels.Message,System.Collections.Generic.ICollection{System.ServiceModel.Dispatcher.MessageFilter})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetMatchingFilters(System::ServiceModel::Channels::Message ^ message, System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ results);" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchingFilters : System.ServiceModel.Channels.Message * System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; -&gt; bool&#xA;override this.GetMatchingFilters : System.ServiceModel.Channels.Message * System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingFilters (message, results)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingFilters(System.ServiceModel.Channels.Message,System.Collections.Generic.ICollection{System.ServiceModel.Dispatcher.MessageFilter})</InterfaceMember>
@@ -635,6 +651,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilters(class System.ServiceModel.Channels.MessageBuffer messageBuffer, class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Dispatcher.MessageFilter&gt; results) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilters(System.ServiceModel.Channels.MessageBuffer,System.Collections.Generic.ICollection{System.ServiceModel.Dispatcher.MessageFilter})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetMatchingFilters(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer, System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ results);" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchingFilters : System.ServiceModel.Channels.MessageBuffer * System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; -&gt; bool&#xA;override this.GetMatchingFilters : System.ServiceModel.Channels.MessageBuffer * System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingFilters (messageBuffer, results)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingFilters(System.ServiceModel.Channels.MessageBuffer,System.Collections.Generic.ICollection{System.ServiceModel.Dispatcher.MessageFilter})</InterfaceMember>
@@ -680,6 +697,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilters(System.ServiceModel.Dispatcher.SeekableXPathNavigator,System.Collections.Generic.ICollection{System.ServiceModel.Dispatcher.MessageFilter})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingFilters (navigator As SeekableXPathNavigator, results As ICollection(Of MessageFilter)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetMatchingFilters(System::ServiceModel::Dispatcher::SeekableXPathNavigator ^ navigator, System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ results);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingFilters : System.ServiceModel.Dispatcher.SeekableXPathNavigator * System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingFilters (navigator, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -718,6 +736,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilters(System.Xml.XPath.XPathNavigator,System.Collections.Generic.ICollection{System.ServiceModel.Dispatcher.MessageFilter})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingFilters (navigator As XPathNavigator, results As ICollection(Of MessageFilter)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetMatchingFilters(System::Xml::XPath::XPathNavigator ^ navigator, System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ results);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingFilters : System.Xml.XPath.XPathNavigator * System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingFilters (navigator, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -778,6 +797,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValue(class System.ServiceModel.Channels.Message message, [out] !TFilterData&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.Message,`0@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetMatchingValue(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] TFilterData % data);" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchingValue : System.ServiceModel.Channels.Message *  -&gt; bool&#xA;override this.GetMatchingValue : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingValue (message, data)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.Message,`0@)</InterfaceMember>
@@ -819,6 +839,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValue(class System.ServiceModel.Channels.MessageBuffer messageBuffer, [out] !TFilterData&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.MessageBuffer,`0@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetMatchingValue(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer, [Runtime::InteropServices::Out] TFilterData % data);" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchingValue : System.ServiceModel.Channels.MessageBuffer *  -&gt; bool&#xA;override this.GetMatchingValue : System.ServiceModel.Channels.MessageBuffer *  -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingValue (messageBuffer, data)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.MessageBuffer,`0@)</InterfaceMember>
@@ -861,6 +882,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Dispatcher.SeekableXPathNavigator,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingValue (navigator As SeekableXPathNavigator, ByRef data As TFilterData) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetMatchingValue(System::ServiceModel::Dispatcher::SeekableXPathNavigator ^ navigator, [Runtime::InteropServices::Out] TFilterData % data);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingValue : System.ServiceModel.Dispatcher.SeekableXPathNavigator *  -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingValue (navigator, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -900,6 +922,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValue(System.Xml.XPath.XPathNavigator,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingValue (navigator As XPathNavigator, ByRef data As TFilterData) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetMatchingValue(System::Xml::XPath::XPathNavigator ^ navigator, [Runtime::InteropServices::Out] TFilterData % data);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingValue : System.Xml.XPath.XPathNavigator *  -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingValue (navigator, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -953,6 +976,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValues(class System.ServiceModel.Channels.Message message, class System.Collections.Generic.ICollection`1&lt;!TFilterData&gt; results) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValues(System.ServiceModel.Channels.Message,System.Collections.Generic.ICollection{`0})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetMatchingValues(System::ServiceModel::Channels::Message ^ message, System::Collections::Generic::ICollection&lt;TFilterData&gt; ^ results);" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchingValues : System.ServiceModel.Channels.Message * System.Collections.Generic.ICollection&lt;'FilterData&gt; -&gt; bool&#xA;override this.GetMatchingValues : System.ServiceModel.Channels.Message * System.Collections.Generic.ICollection&lt;'FilterData&gt; -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingValues (message, results)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingValues(System.ServiceModel.Channels.Message,System.Collections.Generic.ICollection{`0})</InterfaceMember>
@@ -996,6 +1020,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValues(class System.ServiceModel.Channels.MessageBuffer messageBuffer, class System.Collections.Generic.ICollection`1&lt;!TFilterData&gt; results) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValues(System.ServiceModel.Channels.MessageBuffer,System.Collections.Generic.ICollection{`0})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetMatchingValues(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer, System::Collections::Generic::ICollection&lt;TFilterData&gt; ^ results);" />
+      <MemberSignature Language="F#" Value="abstract member GetMatchingValues : System.ServiceModel.Channels.MessageBuffer * System.Collections.Generic.ICollection&lt;'FilterData&gt; -&gt; bool&#xA;override this.GetMatchingValues : System.ServiceModel.Channels.MessageBuffer * System.Collections.Generic.ICollection&lt;'FilterData&gt; -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingValues (messageBuffer, results)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Dispatcher.IMessageFilterTable`1.GetMatchingValues(System.ServiceModel.Channels.MessageBuffer,System.Collections.Generic.ICollection{`0})</InterfaceMember>
@@ -1039,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValues(System.ServiceModel.Dispatcher.SeekableXPathNavigator,System.Collections.Generic.ICollection{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingValues (navigator As SeekableXPathNavigator, results As ICollection(Of TFilterData)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetMatchingValues(System::ServiceModel::Dispatcher::SeekableXPathNavigator ^ navigator, System::Collections::Generic::ICollection&lt;TFilterData&gt; ^ results);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingValues : System.ServiceModel.Dispatcher.SeekableXPathNavigator * System.Collections.Generic.ICollection&lt;'FilterData&gt; -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingValues (navigator, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1077,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValues(System.Xml.XPath.XPathNavigator,System.Collections.Generic.ICollection{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingValues (navigator As XPathNavigator, results As ICollection(Of TFilterData)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetMatchingValues(System::Xml::XPath::XPathNavigator ^ navigator, System::Collections::Generic::ICollection&lt;TFilterData&gt; ^ results);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingValues : System.Xml.XPath.XPathNavigator * System.Collections.Generic.ICollection&lt;'FilterData&gt; -&gt; bool" Usage="xPathMessageFilterTable.GetMatchingValues (navigator, results)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1115,6 +1142,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1138,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Item(System.ServiceModel.Dispatcher.MessageFilter)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(filter As MessageFilter) As TFilterData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TFilterData default[System::ServiceModel::Dispatcher::MessageFilter ^] { TFilterData get(System::ServiceModel::Dispatcher::MessageFilter ^ filter); void set(System::ServiceModel::Dispatcher::MessageFilter ^ filter, TFilterData value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(System.ServiceModel.Dispatcher.MessageFilter) : 'FilterData with get, set" Usage="System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -1188,6 +1217,7 @@ myFilters(filter)
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of MessageFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ Keys { System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;" Usage="System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -1220,6 +1250,7 @@ myFilters(filter)
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.NodeQuota" />
       <MemberSignature Language="VB.NET" Value="Public Property NodeQuota As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeQuota { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NodeQuota : int with get, set" Usage="System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt;.NodeQuota" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1261,6 +1292,7 @@ myFilters(filter)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Remove(System.Collections.Generic.KeyValuePair{System.ServiceModel.Dispatcher.MessageFilter,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As KeyValuePair(Of MessageFilter, TFilterData)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageFilter ^, TFilterData&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt; -&gt; bool&#xA;override this.Remove : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter, 'FilterData&gt; -&gt; bool" Usage="xPathMessageFilterTable.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -1296,6 +1328,7 @@ myFilters(filter)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Remove(System.ServiceModel.Dispatcher.MessageFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (filter As MessageFilter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::ServiceModel::Dispatcher::MessageFilter ^ filter);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.ServiceModel.Dispatcher.MessageFilter -&gt; bool&#xA;override this.Remove : System.ServiceModel.Dispatcher.MessageFilter -&gt; bool" Usage="xPathMessageFilterTable.Remove filter" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
@@ -1328,6 +1361,7 @@ myFilters(filter)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Remove(System.ServiceModel.Dispatcher.XPathMessageFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (filter As XPathMessageFilter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::ServiceModel::Dispatcher::XPathMessageFilter ^ filter);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.ServiceModel.Dispatcher.XPathMessageFilter -&gt; bool" Usage="xPathMessageFilterTable.Remove filter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1395,6 +1429,7 @@ myFilters(filter)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.TrimToSize" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrimToSize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimToSize();" />
+      <MemberSignature Language="F#" Value="member this.TrimToSize : unit -&gt; unit" Usage="xPathMessageFilterTable.TrimToSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1422,6 +1457,7 @@ myFilters(filter)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.TryGetValue(System.ServiceModel.Dispatcher.MessageFilter,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (filter As MessageFilter, ByRef data As TFilterData) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::ServiceModel::Dispatcher::MessageFilter ^ filter, [Runtime::InteropServices::Out] TFilterData % data);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : System.ServiceModel.Dispatcher.MessageFilter *  -&gt; bool&#xA;override this.TryGetValue : System.ServiceModel.Dispatcher.MessageFilter *  -&gt; bool" Usage="xPathMessageFilterTable.TryGetValue (filter, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1456,6 +1492,7 @@ myFilters(filter)
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of TFilterData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;TFilterData&gt; ^ Values { System::Collections::Generic::ICollection&lt;TFilterData&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.ICollection&lt;'FilterData&gt;" Usage="System.ServiceModel.Dispatcher.XPathMessageFilterTable&lt;'FilterData&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>

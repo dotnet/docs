@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.NameTable" />
   <TypeSignature Language="VB.NET" Value="Public Class NameTable&#xA;Inherits XmlNameTable" />
   <TypeSignature Language="C++ CLI" Value="public ref class NameTable : System::Xml::XmlNameTable" />
+  <TypeSignature Language="F#" Value="type NameTable = class&#xA;    inherit XmlNameTable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Add(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; string" Usage="nameTable.Add key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -156,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Add(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (key As Char(), start As Integer, len As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Add(cli::array &lt;char&gt; ^ key, int start, int len);" />
+      <MemberSignature Language="F#" Value="override this.Add : char[] * int * int -&gt; string" Usage="nameTable.Add (key, start, len)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -236,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Get(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Get : string -&gt; string" Usage="nameTable.Get value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -282,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Get(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (key As Char(), start As Integer, len As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Get(cli::array &lt;char&gt; ^ key, int start, int len);" />
+      <MemberSignature Language="F#" Value="override this.Get : char[] * int * int -&gt; string" Usage="nameTable.Get (key, start, len)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

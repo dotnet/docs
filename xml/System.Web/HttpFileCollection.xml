@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpFileCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpFileCollection&#xA;Inherits NameObjectCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpFileCollection sealed : System::Collections::Specialized::NameObjectCollectionBase" />
+  <TypeSignature Language="F#" Value="type HttpFileCollection = class&#xA;    inherit NameObjectCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Web.HttpFileCollection.AllKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (dest As Array, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Array ^ dest, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Array * int -&gt; unit" Usage="httpFileCollection.CopyTo (dest, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As HttpPostedFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::HttpPostedFile ^ Get(int index);" />
+      <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.HttpPostedFile" Usage="httpFileCollection.Get index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (name As String) As HttpPostedFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::HttpPostedFile ^ Get(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Web.HttpPostedFile" Usage="httpFileCollection.Get name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="httpFileCollection.GetKey index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollection.GetMultiple(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMultiple (name As String) As IList(Of HttpPostedFile)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Web::HttpPostedFile ^&gt; ^ GetMultiple(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetMultiple : string -&gt; System.Collections.Generic.IList&lt;System.Web.HttpPostedFile&gt;" Usage="httpFileCollection.GetMultiple name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As HttpPostedFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpPostedFile ^ default[int] { System::Web::HttpPostedFile ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.HttpPostedFile" Usage="System.Web.HttpFileCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As HttpPostedFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpPostedFile ^ default[System::String ^] { System::Web::HttpPostedFile ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.HttpPostedFile" Usage="System.Web.HttpFileCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.SmoothingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SmoothingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SmoothingMode" />
+  <TypeSignature Language="F#" Value="type SmoothingMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.AntiAlias" />
       <MemberSignature Language="VB.NET" Value="AntiAlias" />
       <MemberSignature Language="C++ CLI" Value="AntiAlias" />
+      <MemberSignature Language="F#" Value="AntiAlias = 4" Usage="System.Drawing.Drawing2D.SmoothingMode.AntiAlias" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Drawing.Drawing2D.SmoothingMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.HighQuality" />
       <MemberSignature Language="VB.NET" Value="HighQuality" />
       <MemberSignature Language="C++ CLI" Value="HighQuality" />
+      <MemberSignature Language="F#" Value="HighQuality = 2" Usage="System.Drawing.Drawing2D.SmoothingMode.HighQuality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.HighSpeed" />
       <MemberSignature Language="VB.NET" Value="HighSpeed" />
       <MemberSignature Language="C++ CLI" Value="HighSpeed" />
+      <MemberSignature Language="F#" Value="HighSpeed = 1" Usage="System.Drawing.Drawing2D.SmoothingMode.HighSpeed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = -1" Usage="System.Drawing.Drawing2D.SmoothingMode.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 3" Usage="System.Drawing.Drawing2D.SmoothingMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

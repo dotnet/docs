@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.StoreGeneratedPattern" />
   <TypeSignature Language="VB.NET" Value="Public Enum StoreGeneratedPattern" />
   <TypeSignature Language="C++ CLI" Value="public enum class StoreGeneratedPattern" />
+  <TypeSignature Language="F#" Value="type StoreGeneratedPattern = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.StoreGeneratedPattern.Computed" />
       <MemberSignature Language="VB.NET" Value="Computed" />
       <MemberSignature Language="C++ CLI" Value="Computed" />
+      <MemberSignature Language="F#" Value="Computed = 2" Usage="System.Data.Metadata.Edm.StoreGeneratedPattern.Computed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.StoreGeneratedPattern.Identity" />
       <MemberSignature Language="VB.NET" Value="Identity" />
       <MemberSignature Language="C++ CLI" Value="Identity" />
+      <MemberSignature Language="F#" Value="Identity = 1" Usage="System.Data.Metadata.Edm.StoreGeneratedPattern.Identity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.StoreGeneratedPattern.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Metadata.Edm.StoreGeneratedPattern.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

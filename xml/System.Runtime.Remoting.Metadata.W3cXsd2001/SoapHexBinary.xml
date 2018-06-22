@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapHexBinary&#xA;Implements ISoapXsd" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapHexBinary sealed : System::Runtime::Remoting::Metadata::W3cXsd2001::ISoapXsd" />
+  <TypeSignature Language="F#" Value="type SoapHexBinary = class&#xA;    interface ISoapXsd" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHexBinary(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary : byte[] -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary" Usage="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.GetXsdType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXsdType () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetXsdType();" />
+      <MemberSignature Language="F#" Value="abstract member GetXsdType : unit -&gt; string&#xA;override this.GetXsdType : unit -&gt; string" Usage="soapHexBinary.GetXsdType " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd.GetXsdType</InterfaceMember>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As SoapHexBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Metadata::W3cXsd2001::SoapHexBinary ^ Parse(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Parse value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="soapHexBinary.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Value { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : byte[] with get, set" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.XsdType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XsdType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XsdType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XsdType : string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.XsdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

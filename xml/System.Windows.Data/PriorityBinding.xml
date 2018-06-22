@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.PriorityBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class PriorityBinding&#xA;Inherits BindingBase&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class PriorityBinding : System::Windows::Data::BindingBase, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type PriorityBinding = class&#xA;    inherit BindingBase&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.PriorityBinding.Bindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindings As Collection(Of BindingBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Data::BindingBase ^&gt; ^ Bindings { System::Collections::ObjectModel::Collection&lt;System::Windows::Data::BindingBase ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bindings : System.Collections.ObjectModel.Collection&lt;System.Windows.Data.BindingBase&gt;" Usage="System.Windows.Data.PriorityBinding.Bindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PriorityBinding.ShouldSerializeBindings" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeBindings () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeBindings();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeBindings : unit -&gt; bool" Usage="priorityBinding.ShouldSerializeBindings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

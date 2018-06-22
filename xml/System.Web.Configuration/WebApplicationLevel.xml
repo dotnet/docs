@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebApplicationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebApplicationLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebApplicationLevel" />
+  <TypeSignature Language="F#" Value="type WebApplicationLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.WebApplicationLevel.AboveApplication" />
       <MemberSignature Language="VB.NET" Value="AboveApplication" />
       <MemberSignature Language="C++ CLI" Value="AboveApplication" />
+      <MemberSignature Language="F#" Value="AboveApplication = 10" Usage="System.Web.Configuration.WebApplicationLevel.AboveApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.WebApplicationLevel.AtApplication" />
       <MemberSignature Language="VB.NET" Value="AtApplication" />
       <MemberSignature Language="C++ CLI" Value="AtApplication" />
+      <MemberSignature Language="F#" Value="AtApplication = 20" Usage="System.Web.Configuration.WebApplicationLevel.AtApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.WebApplicationLevel.BelowApplication" />
       <MemberSignature Language="VB.NET" Value="BelowApplication" />
       <MemberSignature Language="C++ CLI" Value="BelowApplication" />
+      <MemberSignature Language="F#" Value="BelowApplication = 30" Usage="System.Web.Configuration.WebApplicationLevel.BelowApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

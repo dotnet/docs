@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SpecialSetting" />
   <TypeSignature Language="VB.NET" Value="Public Enum SpecialSetting" />
   <TypeSignature Language="C++ CLI" Value="public enum class SpecialSetting" />
+  <TypeSignature Language="F#" Value="type SpecialSetting = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.SpecialSetting.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="ConnectionString" />
       <MemberSignature Language="C++ CLI" Value="ConnectionString" />
+      <MemberSignature Language="F#" Value="ConnectionString = 0" Usage="System.Configuration.SpecialSetting.ConnectionString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.SpecialSetting.WebServiceUrl" />
       <MemberSignature Language="VB.NET" Value="WebServiceUrl" />
       <MemberSignature Language="C++ CLI" Value="WebServiceUrl" />
+      <MemberSignature Language="F#" Value="WebServiceUrl = 1" Usage="System.Configuration.SpecialSetting.WebServiceUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

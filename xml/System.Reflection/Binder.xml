@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Binder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Binder" />
   <TypeSignature Language="C++ CLI" Value="public ref class Binder abstract" />
+  <TypeSignature Language="F#" Value="type Binder = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.BindToField(System.Reflection.BindingFlags,System.Reflection.FieldInfo[],System.Object,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BindToField (bindingAttr As BindingFlags, match As FieldInfo(), value As Object, culture As CultureInfo) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::FieldInfo ^ BindToField(System::Reflection::BindingFlags bindingAttr, cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ match, System::Object ^ value, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member BindToField : System.Reflection.BindingFlags * System.Reflection.FieldInfo[] * obj * System.Globalization.CultureInfo -&gt; System.Reflection.FieldInfo" Usage="binder.BindToField (bindingAttr, match, value, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.BindToMethod(System.Reflection.BindingFlags,System.Reflection.MethodBase[],System.Object[]@,System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[],System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BindToMethod (bindingAttr As BindingFlags, match As MethodBase(), ByRef args As Object(), modifiers As ParameterModifier(), culture As CultureInfo, names As String(), ByRef state As Object) As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodBase ^ BindToMethod(System::Reflection::BindingFlags bindingAttr, cli::array &lt;System::Reflection::MethodBase ^&gt; ^ match, cli::array &lt;System::Object ^&gt; ^ % args, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::String ^&gt; ^ names, [Runtime::InteropServices::Out] System::Object ^ % state);" />
+      <MemberSignature Language="F#" Value="abstract member BindToMethod : System.Reflection.BindingFlags * System.Reflection.MethodBase[] *  * System.Reflection.ParameterModifier[] * System.Globalization.CultureInfo * string[] *  -&gt; System.Reflection.MethodBase" Usage="binder.BindToMethod (bindingAttr, match, args, modifiers, culture, names, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,6 +220,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanChangeType(object value, class System.Type type, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.CanChangeType(System.Object,System.Type,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanChangeType(System::Object ^ value, Type ^ type, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member CanChangeType : obj * Type * System.Globalization.CultureInfo -&gt; bool&#xA;override this.CanChangeType : obj * Type * System.Globalization.CultureInfo -&gt; bool" Usage="binder.CanChangeType (value, type, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -244,6 +248,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ChangeType(object value, class System.Type type, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.ChangeType(System.Object,System.Type,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ ChangeType(System::Object ^ value, Type ^ type, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member ChangeType : obj * Type * System.Globalization.CultureInfo -&gt; obj" Usage="binder.ChangeType (value, type, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -311,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.ReorderArgumentArray(System.Object[]@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ReorderArgumentArray (ByRef args As Object(), state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ReorderArgumentArray(cli::array &lt;System::Object ^&gt; ^ % args, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member ReorderArgumentArray :  * obj -&gt; unit" Usage="binder.ReorderArgumentArray (args, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -353,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.SelectMethod(System.Reflection.BindingFlags,System.Reflection.MethodBase[],System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SelectMethod (bindingAttr As BindingFlags, match As MethodBase(), types As Type(), modifiers As ParameterModifier()) As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodBase ^ SelectMethod(System::Reflection::BindingFlags bindingAttr, cli::array &lt;System::Reflection::MethodBase ^&gt; ^ match, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
+      <MemberSignature Language="F#" Value="abstract member SelectMethod : System.Reflection.BindingFlags * System.Reflection.MethodBase[] * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodBase" Usage="binder.SelectMethod (bindingAttr, match, types, modifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -406,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Binder.SelectProperty(System.Reflection.BindingFlags,System.Reflection.PropertyInfo[],System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SelectProperty (bindingAttr As BindingFlags, match As PropertyInfo(), returnType As Type, indexes As Type(), modifiers As ParameterModifier()) As PropertyInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::PropertyInfo ^ SelectProperty(System::Reflection::BindingFlags bindingAttr, cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ match, Type ^ returnType, cli::array &lt;Type ^&gt; ^ indexes, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
+      <MemberSignature Language="F#" Value="abstract member SelectProperty : System.Reflection.BindingFlags * System.Reflection.PropertyInfo[] * Type * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.PropertyInfo" Usage="binder.SelectProperty (bindingAttr, match, returnType, indexes, modifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

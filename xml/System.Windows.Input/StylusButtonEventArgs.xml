@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusButtonEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StylusButtonEventArgs&#xA;Inherits StylusEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusButtonEventArgs : System::Windows::Input::StylusEventArgs" />
+  <TypeSignature Language="F#" Value="type StylusButtonEventArgs = class&#xA;    inherit StylusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusDevice stylusDevice, int32 timestamp, class System.Windows.Input.StylusButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusButtonEventArgs.#ctor(System.Windows.Input.StylusDevice,System.Int32,System.Windows.Input.StylusButton)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusButtonEventArgs(System::Windows::Input::StylusDevice ^ stylusDevice, int timestamp, System::Windows::Input::StylusButton ^ button);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.StylusButtonEventArgs : System.Windows.Input.StylusDevice * int * System.Windows.Input.StylusButton -&gt; System.Windows.Input.StylusButtonEventArgs" Usage="new System.Windows.Input.StylusButtonEventArgs (stylusDevice, timestamp, button)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusButtonEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="stylusButtonEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusButtonEventArgs.StylusButton" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StylusButton As StylusButton" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusButton ^ StylusButton { System::Windows::Input::StylusButton ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StylusButton : System.Windows.Input.StylusButton" Usage="System.Windows.Input.StylusButtonEventArgs.StylusButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

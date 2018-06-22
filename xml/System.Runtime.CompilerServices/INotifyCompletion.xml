@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="VB.NET" Value="Public Interface INotifyCompletion" />
   <TypeSignature Language="C++ CLI" Value="public interface class INotifyCompletion" />
+  <TypeSignature Language="F#" Value="type INotifyCompletion = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted (continuation As Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnCompleted(Action ^ continuation);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : Action -&gt; unit" Usage="iNotifyCompletion.OnCompleted continuation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

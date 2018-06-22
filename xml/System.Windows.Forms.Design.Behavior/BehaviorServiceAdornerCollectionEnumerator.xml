@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public Class BehaviorServiceAdornerCollectionEnumerator&#xA;Implements IEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class BehaviorServiceAdornerCollectionEnumerator : System::Collections::IEnumerator" />
+  <TypeSignature Language="F#" Value="type BehaviorServiceAdornerCollectionEnumerator = class&#xA;    interface IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.#ctor(System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mappings As BehaviorServiceAdornerCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BehaviorServiceAdornerCollectionEnumerator(System::Windows::Forms::Design::Behavior::BehaviorServiceAdornerCollection ^ mappings);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator : System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection -&gt; System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator" Usage="new System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator mappings" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Adorner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::Adorner ^ Current { System::Windows::Forms::Design::Behavior::Adorner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Forms.Design.Behavior.Adorner" Usage="System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
+      <MemberSignature Language="F#" Value="member this.MoveNext : unit -&gt; bool" Usage="behaviorServiceAdornerCollectionEnumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="behaviorServiceAdornerCollectionEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

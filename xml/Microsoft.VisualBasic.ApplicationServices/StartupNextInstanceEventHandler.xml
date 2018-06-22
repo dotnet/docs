@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StartupNextInstanceEventHandler(sender As Object, e As StartupNextInstanceEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StartupNextInstanceEventHandler(System::Object ^ sender, StartupNextInstanceEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StartupNextInstanceEventHandler = delegate of obj * StartupNextInstanceEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

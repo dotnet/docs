@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MetadataReader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataReader" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataReader sealed" />
+  <TypeSignature Language="F#" Value="type MetadataReader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* metadata, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.#ctor(System.Byte*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataReader(System::Byte* metadata, int length);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.MetadataReader : nativeptr&lt;byte&gt; * int -&gt; System.Reflection.Metadata.MetadataReader" Usage="new System.Reflection.Metadata.MetadataReader (metadata, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* metadata, int32 length, valuetype System.Reflection.Metadata.MetadataReaderOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.#ctor(System.Byte*,System.Int32,System.Reflection.Metadata.MetadataReaderOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataReader(System::Byte* metadata, int length, System::Reflection::Metadata::MetadataReaderOptions options);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.MetadataReader : nativeptr&lt;byte&gt; * int * System.Reflection.Metadata.MetadataReaderOptions -&gt; System.Reflection.Metadata.MetadataReader" Usage="new System.Reflection.Metadata.MetadataReader (metadata, length, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* metadata, int32 length, valuetype System.Reflection.Metadata.MetadataReaderOptions options, class System.Reflection.Metadata.MetadataStringDecoder utf8Decoder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.#ctor(System.Byte*,System.Int32,System.Reflection.Metadata.MetadataReaderOptions,System.Reflection.Metadata.MetadataStringDecoder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataReader(System::Byte* metadata, int length, System::Reflection::Metadata::MetadataReaderOptions options, System::Reflection::Metadata::MetadataStringDecoder ^ utf8Decoder);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.MetadataReader : nativeptr&lt;byte&gt; * int * System.Reflection.Metadata.MetadataReaderOptions * System.Reflection.Metadata.MetadataStringDecoder -&gt; System.Reflection.Metadata.MetadataReader" Usage="new System.Reflection.Metadata.MetadataReader (metadata, length, options, utf8Decoder)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.AssemblyFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyFiles As AssemblyFileHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::AssemblyFileHandleCollection AssemblyFiles { System::Reflection::Metadata::AssemblyFileHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyFiles : System.Reflection.Metadata.AssemblyFileHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.AssemblyFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.AssemblyReferences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyReferences As AssemblyReferenceHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::AssemblyReferenceHandleCollection AssemblyReferences { System::Reflection::Metadata::AssemblyReferenceHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyReferences : System.Reflection.Metadata.AssemblyReferenceHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.AssemblyReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.CustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomAttributes As CustomAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::CustomAttributeHandleCollection CustomAttributes { System::Reflection::Metadata::CustomAttributeHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomAttributes : System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.CustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -173,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.CustomDebugInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomDebugInformation As CustomDebugInformationHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::CustomDebugInformationHandleCollection CustomDebugInformation { System::Reflection::Metadata::CustomDebugInformationHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomDebugInformation : System.Reflection.Metadata.CustomDebugInformationHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.CustomDebugInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -196,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.DebugMetadataHeader" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebugMetadataHeader As DebugMetadataHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::DebugMetadataHeader ^ DebugMetadataHeader { System::Reflection::Metadata::DebugMetadataHeader ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DebugMetadataHeader : System.Reflection.Metadata.DebugMetadataHeader" Usage="System.Reflection.Metadata.MetadataReader.DebugMetadataHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.DeclarativeSecurityAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclarativeSecurityAttributes As DeclarativeSecurityAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::DeclarativeSecurityAttributeHandleCollection DeclarativeSecurityAttributes { System::Reflection::Metadata::DeclarativeSecurityAttributeHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclarativeSecurityAttributes : System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.DeclarativeSecurityAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -242,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.Documents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Documents As DocumentHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::DocumentHandleCollection Documents { System::Reflection::Metadata::DocumentHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.Documents : System.Reflection.Metadata.DocumentHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.Documents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -265,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.EventDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventDefinitions As EventDefinitionHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EventDefinitionHandleCollection EventDefinitions { System::Reflection::Metadata::EventDefinitionHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventDefinitions : System.Reflection.Metadata.EventDefinitionHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.EventDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -288,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.ExportedTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExportedTypes As ExportedTypeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::ExportedTypeHandleCollection ExportedTypes { System::Reflection::Metadata::ExportedTypeHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExportedTypes : System.Reflection.Metadata.ExportedTypeHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.ExportedTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -311,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.FieldDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldDefinitions As FieldDefinitionHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::FieldDefinitionHandleCollection FieldDefinitions { System::Reflection::Metadata::FieldDefinitionHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldDefinitions : System.Reflection.Metadata.FieldDefinitionHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.FieldDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -334,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetAssemblyDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssemblyDefinition () As AssemblyDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::AssemblyDefinition GetAssemblyDefinition();" />
+      <MemberSignature Language="F#" Value="member this.GetAssemblyDefinition : unit -&gt; System.Reflection.Metadata.AssemblyDefinition" Usage="metadataReader.GetAssemblyDefinition " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -358,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetAssemblyFile(System.Reflection.Metadata.AssemblyFileHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssemblyFile (handle As AssemblyFileHandle) As AssemblyFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::AssemblyFile GetAssemblyFile(System::Reflection::Metadata::AssemblyFileHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetAssemblyFile : System.Reflection.Metadata.AssemblyFileHandle -&gt; System.Reflection.Metadata.AssemblyFile" Usage="metadataReader.GetAssemblyFile handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -385,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetAssemblyReference(System.Reflection.Metadata.AssemblyReferenceHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssemblyReference (handle As AssemblyReferenceHandle) As AssemblyReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::AssemblyReference GetAssemblyReference(System::Reflection::Metadata::AssemblyReferenceHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetAssemblyReference : System.Reflection.Metadata.AssemblyReferenceHandle -&gt; System.Reflection.Metadata.AssemblyReference" Usage="metadataReader.GetAssemblyReference handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -412,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetBlobBytes(System.Reflection.Metadata.BlobHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBlobBytes (handle As BlobHandle) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetBlobBytes(System::Reflection::Metadata::BlobHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetBlobBytes : System.Reflection.Metadata.BlobHandle -&gt; byte[]" Usage="metadataReader.GetBlobBytes handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -439,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetBlobContent(System.Reflection.Metadata.BlobHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBlobContent (handle As BlobHandle) As ImmutableArray(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; GetBlobContent(System::Reflection::Metadata::BlobHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetBlobContent : System.Reflection.Metadata.BlobHandle -&gt; System.Collections.Immutable.ImmutableArray&lt;byte&gt;" Usage="metadataReader.GetBlobContent handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -466,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetBlobReader(System.Reflection.Metadata.BlobHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBlobReader (handle As BlobHandle) As BlobReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobReader GetBlobReader(System::Reflection::Metadata::BlobHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetBlobReader : System.Reflection.Metadata.BlobHandle -&gt; System.Reflection.Metadata.BlobReader" Usage="metadataReader.GetBlobReader handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -493,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetBlobReader(System.Reflection.Metadata.StringHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBlobReader (handle As StringHandle) As BlobReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobReader GetBlobReader(System::Reflection::Metadata::StringHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetBlobReader : System.Reflection.Metadata.StringHandle -&gt; System.Reflection.Metadata.BlobReader" Usage="metadataReader.GetBlobReader handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -519,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetConstant(System.Reflection.Metadata.ConstantHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConstant (handle As ConstantHandle) As Constant" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Constant GetConstant(System::Reflection::Metadata::ConstantHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetConstant : System.Reflection.Metadata.ConstantHandle -&gt; System.Reflection.Metadata.Constant" Usage="metadataReader.GetConstant handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -546,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetCustomAttribute(System.Reflection.Metadata.CustomAttributeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttribute (handle As CustomAttributeHandle) As CustomAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttribute GetCustomAttribute(System::Reflection::Metadata::CustomAttributeHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttribute : System.Reflection.Metadata.CustomAttributeHandle -&gt; System.Reflection.Metadata.CustomAttribute" Usage="metadataReader.GetCustomAttribute handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -573,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetCustomAttributes(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (handle As EntityHandle) As CustomAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : System.Reflection.Metadata.EntityHandle -&gt; System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="metadataReader.GetCustomAttributes handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -600,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetCustomDebugInformation(System.Reflection.Metadata.CustomDebugInformationHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomDebugInformation (handle As CustomDebugInformationHandle) As CustomDebugInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomDebugInformation GetCustomDebugInformation(System::Reflection::Metadata::CustomDebugInformationHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomDebugInformation : System.Reflection.Metadata.CustomDebugInformationHandle -&gt; System.Reflection.Metadata.CustomDebugInformation" Usage="metadataReader.GetCustomDebugInformation handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -627,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetCustomDebugInformation(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomDebugInformation (handle As EntityHandle) As CustomDebugInformationHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomDebugInformationHandleCollection GetCustomDebugInformation(System::Reflection::Metadata::EntityHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomDebugInformation : System.Reflection.Metadata.EntityHandle -&gt; System.Reflection.Metadata.CustomDebugInformationHandleCollection" Usage="metadataReader.GetCustomDebugInformation handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -654,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetDeclarativeSecurityAttribute(System.Reflection.Metadata.DeclarativeSecurityAttributeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeclarativeSecurityAttribute (handle As DeclarativeSecurityAttributeHandle) As DeclarativeSecurityAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::DeclarativeSecurityAttribute GetDeclarativeSecurityAttribute(System::Reflection::Metadata::DeclarativeSecurityAttributeHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetDeclarativeSecurityAttribute : System.Reflection.Metadata.DeclarativeSecurityAttributeHandle -&gt; System.Reflection.Metadata.DeclarativeSecurityAttribute" Usage="metadataReader.GetDeclarativeSecurityAttribute handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -681,6 +708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetDocument(System.Reflection.Metadata.DocumentHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDocument (handle As DocumentHandle) As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Document GetDocument(System::Reflection::Metadata::DocumentHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetDocument : System.Reflection.Metadata.DocumentHandle -&gt; System.Reflection.Metadata.Document" Usage="metadataReader.GetDocument handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -708,6 +736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetEventDefinition(System.Reflection.Metadata.EventDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEventDefinition (handle As EventDefinitionHandle) As EventDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::EventDefinition GetEventDefinition(System::Reflection::Metadata::EventDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetEventDefinition : System.Reflection.Metadata.EventDefinitionHandle -&gt; System.Reflection.Metadata.EventDefinition" Usage="metadataReader.GetEventDefinition handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -735,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetExportedType(System.Reflection.Metadata.ExportedTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExportedType (handle As ExportedTypeHandle) As ExportedType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ExportedType GetExportedType(System::Reflection::Metadata::ExportedTypeHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetExportedType : System.Reflection.Metadata.ExportedTypeHandle -&gt; System.Reflection.Metadata.ExportedType" Usage="metadataReader.GetExportedType handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -762,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetFieldDefinition(System.Reflection.Metadata.FieldDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFieldDefinition (handle As FieldDefinitionHandle) As FieldDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::FieldDefinition GetFieldDefinition(System::Reflection::Metadata::FieldDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetFieldDefinition : System.Reflection.Metadata.FieldDefinitionHandle -&gt; System.Reflection.Metadata.FieldDefinition" Usage="metadataReader.GetFieldDefinition handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -789,6 +820,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetGenericParameter(System.Reflection.Metadata.GenericParameterHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGenericParameter (handle As GenericParameterHandle) As GenericParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::GenericParameter GetGenericParameter(System::Reflection::Metadata::GenericParameterHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetGenericParameter : System.Reflection.Metadata.GenericParameterHandle -&gt; System.Reflection.Metadata.GenericParameter" Usage="metadataReader.GetGenericParameter handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -816,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetGenericParameterConstraint(System.Reflection.Metadata.GenericParameterConstraintHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGenericParameterConstraint (handle As GenericParameterConstraintHandle) As GenericParameterConstraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::GenericParameterConstraint GetGenericParameterConstraint(System::Reflection::Metadata::GenericParameterConstraintHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetGenericParameterConstraint : System.Reflection.Metadata.GenericParameterConstraintHandle -&gt; System.Reflection.Metadata.GenericParameterConstraint" Usage="metadataReader.GetGenericParameterConstraint handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -843,6 +876,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetGuid(System.Reflection.Metadata.GuidHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGuid (handle As GuidHandle) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid GetGuid(System::Reflection::Metadata::GuidHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetGuid : System.Reflection.Metadata.GuidHandle -&gt; Guid" Usage="metadataReader.GetGuid handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -870,6 +904,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetImportScope(System.Reflection.Metadata.ImportScopeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImportScope (handle As ImportScopeHandle) As ImportScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ImportScope GetImportScope(System::Reflection::Metadata::ImportScopeHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetImportScope : System.Reflection.Metadata.ImportScopeHandle -&gt; System.Reflection.Metadata.ImportScope" Usage="metadataReader.GetImportScope handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -897,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetInterfaceImplementation(System.Reflection.Metadata.InterfaceImplementationHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInterfaceImplementation (handle As InterfaceImplementationHandle) As InterfaceImplementation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::InterfaceImplementation GetInterfaceImplementation(System::Reflection::Metadata::InterfaceImplementationHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetInterfaceImplementation : System.Reflection.Metadata.InterfaceImplementationHandle -&gt; System.Reflection.Metadata.InterfaceImplementation" Usage="metadataReader.GetInterfaceImplementation handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -924,6 +960,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetLocalConstant(System.Reflection.Metadata.LocalConstantHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalConstant (handle As LocalConstantHandle) As LocalConstant" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::LocalConstant GetLocalConstant(System::Reflection::Metadata::LocalConstantHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetLocalConstant : System.Reflection.Metadata.LocalConstantHandle -&gt; System.Reflection.Metadata.LocalConstant" Usage="metadataReader.GetLocalConstant handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -951,6 +988,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetLocalScope(System.Reflection.Metadata.LocalScopeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalScope (handle As LocalScopeHandle) As LocalScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::LocalScope GetLocalScope(System::Reflection::Metadata::LocalScopeHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetLocalScope : System.Reflection.Metadata.LocalScopeHandle -&gt; System.Reflection.Metadata.LocalScope" Usage="metadataReader.GetLocalScope handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -978,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetLocalScopes(System.Reflection.Metadata.MethodDebugInformationHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalScopes (handle As MethodDebugInformationHandle) As LocalScopeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::LocalScopeHandleCollection GetLocalScopes(System::Reflection::Metadata::MethodDebugInformationHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetLocalScopes : System.Reflection.Metadata.MethodDebugInformationHandle -&gt; System.Reflection.Metadata.LocalScopeHandleCollection" Usage="metadataReader.GetLocalScopes handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1005,6 +1044,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetLocalScopes(System.Reflection.Metadata.MethodDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalScopes (handle As MethodDefinitionHandle) As LocalScopeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::LocalScopeHandleCollection GetLocalScopes(System::Reflection::Metadata::MethodDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetLocalScopes : System.Reflection.Metadata.MethodDefinitionHandle -&gt; System.Reflection.Metadata.LocalScopeHandleCollection" Usage="metadataReader.GetLocalScopes handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1032,6 +1072,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetLocalVariable(System.Reflection.Metadata.LocalVariableHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalVariable (handle As LocalVariableHandle) As LocalVariable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::LocalVariable GetLocalVariable(System::Reflection::Metadata::LocalVariableHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetLocalVariable : System.Reflection.Metadata.LocalVariableHandle -&gt; System.Reflection.Metadata.LocalVariable" Usage="metadataReader.GetLocalVariable handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1059,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetManifestResource(System.Reflection.Metadata.ManifestResourceHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetManifestResource (handle As ManifestResourceHandle) As ManifestResource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ManifestResource GetManifestResource(System::Reflection::Metadata::ManifestResourceHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetManifestResource : System.Reflection.Metadata.ManifestResourceHandle -&gt; System.Reflection.Metadata.ManifestResource" Usage="metadataReader.GetManifestResource handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1086,6 +1128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetMemberReference(System.Reflection.Metadata.MemberReferenceHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMemberReference (handle As MemberReferenceHandle) As MemberReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MemberReference GetMemberReference(System::Reflection::Metadata::MemberReferenceHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetMemberReference : System.Reflection.Metadata.MemberReferenceHandle -&gt; System.Reflection.Metadata.MemberReference" Usage="metadataReader.GetMemberReference handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1113,6 +1156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetMethodDebugInformation(System.Reflection.Metadata.MethodDebugInformationHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodDebugInformation (handle As MethodDebugInformationHandle) As MethodDebugInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodDebugInformation GetMethodDebugInformation(System::Reflection::Metadata::MethodDebugInformationHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetMethodDebugInformation : System.Reflection.Metadata.MethodDebugInformationHandle -&gt; System.Reflection.Metadata.MethodDebugInformation" Usage="metadataReader.GetMethodDebugInformation handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1140,6 +1184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetMethodDebugInformation(System.Reflection.Metadata.MethodDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodDebugInformation (handle As MethodDefinitionHandle) As MethodDebugInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodDebugInformation GetMethodDebugInformation(System::Reflection::Metadata::MethodDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetMethodDebugInformation : System.Reflection.Metadata.MethodDefinitionHandle -&gt; System.Reflection.Metadata.MethodDebugInformation" Usage="metadataReader.GetMethodDebugInformation handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1167,6 +1212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetMethodDefinition(System.Reflection.Metadata.MethodDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodDefinition (handle As MethodDefinitionHandle) As MethodDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodDefinition GetMethodDefinition(System::Reflection::Metadata::MethodDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetMethodDefinition : System.Reflection.Metadata.MethodDefinitionHandle -&gt; System.Reflection.Metadata.MethodDefinition" Usage="metadataReader.GetMethodDefinition handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1194,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetMethodImplementation(System.Reflection.Metadata.MethodImplementationHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodImplementation (handle As MethodImplementationHandle) As MethodImplementation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodImplementation GetMethodImplementation(System::Reflection::Metadata::MethodImplementationHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetMethodImplementation : System.Reflection.Metadata.MethodImplementationHandle -&gt; System.Reflection.Metadata.MethodImplementation" Usage="metadataReader.GetMethodImplementation handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1221,6 +1268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetMethodSpecification(System.Reflection.Metadata.MethodSpecificationHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodSpecification (handle As MethodSpecificationHandle) As MethodSpecification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodSpecification GetMethodSpecification(System::Reflection::Metadata::MethodSpecificationHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetMethodSpecification : System.Reflection.Metadata.MethodSpecificationHandle -&gt; System.Reflection.Metadata.MethodSpecification" Usage="metadataReader.GetMethodSpecification handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1248,6 +1296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetModuleDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModuleDefinition () As ModuleDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ModuleDefinition GetModuleDefinition();" />
+      <MemberSignature Language="F#" Value="member this.GetModuleDefinition : unit -&gt; System.Reflection.Metadata.ModuleDefinition" Usage="metadataReader.GetModuleDefinition " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1272,6 +1321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetModuleReference(System.Reflection.Metadata.ModuleReferenceHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModuleReference (handle As ModuleReferenceHandle) As ModuleReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ModuleReference GetModuleReference(System::Reflection::Metadata::ModuleReferenceHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetModuleReference : System.Reflection.Metadata.ModuleReferenceHandle -&gt; System.Reflection.Metadata.ModuleReference" Usage="metadataReader.GetModuleReference handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1299,6 +1349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetNamespaceDefinition(System.Reflection.Metadata.NamespaceDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespaceDefinition (handle As NamespaceDefinitionHandle) As NamespaceDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::NamespaceDefinition GetNamespaceDefinition(System::Reflection::Metadata::NamespaceDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetNamespaceDefinition : System.Reflection.Metadata.NamespaceDefinitionHandle -&gt; System.Reflection.Metadata.NamespaceDefinition" Usage="metadataReader.GetNamespaceDefinition handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1326,6 +1377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetNamespaceDefinitionRoot" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespaceDefinitionRoot () As NamespaceDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::NamespaceDefinition GetNamespaceDefinitionRoot();" />
+      <MemberSignature Language="F#" Value="member this.GetNamespaceDefinitionRoot : unit -&gt; System.Reflection.Metadata.NamespaceDefinition" Usage="metadataReader.GetNamespaceDefinitionRoot " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1350,6 +1402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetParameter(System.Reflection.Metadata.ParameterHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParameter (handle As ParameterHandle) As Parameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Parameter GetParameter(System::Reflection::Metadata::ParameterHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetParameter : System.Reflection.Metadata.ParameterHandle -&gt; System.Reflection.Metadata.Parameter" Usage="metadataReader.GetParameter handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1377,6 +1430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetPropertyDefinition(System.Reflection.Metadata.PropertyDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyDefinition (handle As PropertyDefinitionHandle) As PropertyDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::PropertyDefinition GetPropertyDefinition(System::Reflection::Metadata::PropertyDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyDefinition : System.Reflection.Metadata.PropertyDefinitionHandle -&gt; System.Reflection.Metadata.PropertyDefinition" Usage="metadataReader.GetPropertyDefinition handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1404,6 +1458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetStandaloneSignature(System.Reflection.Metadata.StandaloneSignatureHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStandaloneSignature (handle As StandaloneSignatureHandle) As StandaloneSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::StandaloneSignature GetStandaloneSignature(System::Reflection::Metadata::StandaloneSignatureHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetStandaloneSignature : System.Reflection.Metadata.StandaloneSignatureHandle -&gt; System.Reflection.Metadata.StandaloneSignature" Usage="metadataReader.GetStandaloneSignature handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1431,6 +1486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetString(System.Reflection.Metadata.DocumentNameBlobHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetString (handle As DocumentNameBlobHandle) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetString(System::Reflection::Metadata::DocumentNameBlobHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetString : System.Reflection.Metadata.DocumentNameBlobHandle -&gt; string" Usage="metadataReader.GetString handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1458,6 +1514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetString(System.Reflection.Metadata.NamespaceDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetString (handle As NamespaceDefinitionHandle) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetString(System::Reflection::Metadata::NamespaceDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetString : System.Reflection.Metadata.NamespaceDefinitionHandle -&gt; string" Usage="metadataReader.GetString handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1485,6 +1542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetString(System.Reflection.Metadata.StringHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetString (handle As StringHandle) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetString(System::Reflection::Metadata::StringHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetString : System.Reflection.Metadata.StringHandle -&gt; string" Usage="metadataReader.GetString handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1512,6 +1570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetTypeDefinition(System.Reflection.Metadata.TypeDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeDefinition (handle As TypeDefinitionHandle) As TypeDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::TypeDefinition GetTypeDefinition(System::Reflection::Metadata::TypeDefinitionHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetTypeDefinition : System.Reflection.Metadata.TypeDefinitionHandle -&gt; System.Reflection.Metadata.TypeDefinition" Usage="metadataReader.GetTypeDefinition handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1539,6 +1598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetTypeReference(System.Reflection.Metadata.TypeReferenceHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeReference (handle As TypeReferenceHandle) As TypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::TypeReference GetTypeReference(System::Reflection::Metadata::TypeReferenceHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetTypeReference : System.Reflection.Metadata.TypeReferenceHandle -&gt; System.Reflection.Metadata.TypeReference" Usage="metadataReader.GetTypeReference handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1566,6 +1626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetTypeSpecification(System.Reflection.Metadata.TypeSpecificationHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeSpecification (handle As TypeSpecificationHandle) As TypeSpecification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::TypeSpecification GetTypeSpecification(System::Reflection::Metadata::TypeSpecificationHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetTypeSpecification : System.Reflection.Metadata.TypeSpecificationHandle -&gt; System.Reflection.Metadata.TypeSpecification" Usage="metadataReader.GetTypeSpecification handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1593,6 +1654,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReader.GetUserString(System.Reflection.Metadata.UserStringHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUserString (handle As UserStringHandle) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetUserString(System::Reflection::Metadata::UserStringHandle handle);" />
+      <MemberSignature Language="F#" Value="member this.GetUserString : System.Reflection.Metadata.UserStringHandle -&gt; string" Usage="metadataReader.GetUserString handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1620,6 +1682,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.ImportScopes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportScopes As ImportScopeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::ImportScopeCollection ImportScopes { System::Reflection::Metadata::ImportScopeCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportScopes : System.Reflection.Metadata.ImportScopeCollection" Usage="System.Reflection.Metadata.MetadataReader.ImportScopes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1643,6 +1706,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.IsAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAssembly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAssembly : bool" Usage="System.Reflection.Metadata.MetadataReader.IsAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1666,6 +1730,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.LocalConstants" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalConstants As LocalConstantHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::LocalConstantHandleCollection LocalConstants { System::Reflection::Metadata::LocalConstantHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalConstants : System.Reflection.Metadata.LocalConstantHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.LocalConstants" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1689,6 +1754,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.LocalScopes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalScopes As LocalScopeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::LocalScopeHandleCollection LocalScopes { System::Reflection::Metadata::LocalScopeHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalScopes : System.Reflection.Metadata.LocalScopeHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.LocalScopes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1712,6 +1778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.LocalVariables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalVariables As LocalVariableHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::LocalVariableHandleCollection LocalVariables { System::Reflection::Metadata::LocalVariableHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalVariables : System.Reflection.Metadata.LocalVariableHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.LocalVariables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1735,6 +1802,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.ManifestResources" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManifestResources As ManifestResourceHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::ManifestResourceHandleCollection ManifestResources { System::Reflection::Metadata::ManifestResourceHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManifestResources : System.Reflection.Metadata.ManifestResourceHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.ManifestResources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1758,6 +1826,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.MemberReferences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberReferences As MemberReferenceHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MemberReferenceHandleCollection MemberReferences { System::Reflection::Metadata::MemberReferenceHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberReferences : System.Reflection.Metadata.MemberReferenceHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.MemberReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1781,6 +1850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.MetadataKind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataKind As MetadataKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MetadataKind MetadataKind { System::Reflection::Metadata::MetadataKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataKind : System.Reflection.Metadata.MetadataKind" Usage="System.Reflection.Metadata.MetadataReader.MetadataKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1804,6 +1874,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.MetadataLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MetadataLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataLength : int" Usage="System.Reflection.Metadata.MetadataReader.MetadataLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1825,6 +1896,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8* MetadataPointer" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.MetadataPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte* MetadataPointer { System::Byte* get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataPointer : nativeptr&lt;byte&gt;" Usage="System.Reflection.Metadata.MetadataReader.MetadataPointer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1847,6 +1919,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.MetadataVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MetadataVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataVersion : string" Usage="System.Reflection.Metadata.MetadataReader.MetadataVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1870,6 +1943,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.MethodDebugInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodDebugInformation As MethodDebugInformationHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MethodDebugInformationHandleCollection MethodDebugInformation { System::Reflection::Metadata::MethodDebugInformationHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodDebugInformation : System.Reflection.Metadata.MethodDebugInformationHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.MethodDebugInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1893,6 +1967,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.MethodDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodDefinitions As MethodDefinitionHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MethodDefinitionHandleCollection MethodDefinitions { System::Reflection::Metadata::MethodDefinitionHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodDefinitions : System.Reflection.Metadata.MethodDefinitionHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.MethodDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1916,6 +1991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.Options" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As MetadataReaderOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MetadataReaderOptions Options { System::Reflection::Metadata::MetadataReaderOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Reflection.Metadata.MetadataReaderOptions" Usage="System.Reflection.Metadata.MetadataReader.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1939,6 +2015,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.PropertyDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyDefinitions As PropertyDefinitionHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::PropertyDefinitionHandleCollection PropertyDefinitions { System::Reflection::Metadata::PropertyDefinitionHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyDefinitions : System.Reflection.Metadata.PropertyDefinitionHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.PropertyDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1962,6 +2039,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.StringComparer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StringComparer As MetadataStringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MetadataStringComparer StringComparer { System::Reflection::Metadata::MetadataStringComparer get(); };" />
+      <MemberSignature Language="F#" Value="member this.StringComparer : System.Reflection.Metadata.MetadataStringComparer" Usage="System.Reflection.Metadata.MetadataReader.StringComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1985,6 +2063,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.TypeDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeDefinitions As TypeDefinitionHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::TypeDefinitionHandleCollection TypeDefinitions { System::Reflection::Metadata::TypeDefinitionHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeDefinitions : System.Reflection.Metadata.TypeDefinitionHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.TypeDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -2008,6 +2087,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.TypeReferences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeReferences As TypeReferenceHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::TypeReferenceHandleCollection TypeReferences { System::Reflection::Metadata::TypeReferenceHandleCollection get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeReferences : System.Reflection.Metadata.TypeReferenceHandleCollection" Usage="System.Reflection.Metadata.MetadataReader.TypeReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -2031,6 +2111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataReader.UTF8Decoder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UTF8Decoder As MetadataStringDecoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MetadataStringDecoder ^ UTF8Decoder { System::Reflection::Metadata::MetadataStringDecoder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UTF8Decoder : System.Reflection.Metadata.MetadataStringDecoder" Usage="System.Reflection.Metadata.MetadataReader.UTF8Decoder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

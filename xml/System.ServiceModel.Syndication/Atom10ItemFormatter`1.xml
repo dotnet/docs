@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Atom10ItemFormatter`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Atom10ItemFormatter(Of TSyndicationItem)&#xA;Inherits Atom10ItemFormatter" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSyndicationItem&gt;&#xA; where TSyndicationItem : SyndicationItemgcnew()public ref class Atom10ItemFormatter : System::ServiceModel::Syndication::Atom10ItemFormatter" />
+  <TypeSignature Language="F#" Value="type Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; = class&#xA;    inherit Atom10ItemFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As TSyndicationItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10ItemFormatter(TSyndicationItem itemToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; : 'SyndicationItem -&gt; System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt;" Usage="new System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; itemToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter`1.CreateItemInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemInstance () As SyndicationItem" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationItem ^ CreateItemInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateItemInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="atom10ItemFormatter.CreateItemInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

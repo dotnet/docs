@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LoadItemsEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LoadItemsEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LoadItemsEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type LoadItemsEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.LoadItemsEventArgs.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LoadItemsEventArgs(int index, int count);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.LoadItemsEventArgs : int * int -&gt; System.Web.UI.MobileControls.LoadItemsEventArgs" Usage="new System.Web.UI.MobileControls.LoadItemsEventArgs (index, count)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.LoadItemsEventArgs.ItemCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemCount : int" Usage="System.Web.UI.MobileControls.LoadItemsEventArgs.ItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.LoadItemsEventArgs.ItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemIndex : int" Usage="System.Web.UI.MobileControls.LoadItemsEventArgs.ItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

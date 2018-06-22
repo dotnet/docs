@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolboxItemCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolboxItemCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ToolboxItemCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.#ctor(System.Drawing.Design.ToolboxItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ToolboxItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxItemCollection(cli::array &lt;System::Drawing::Design::ToolboxItem ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Design.ToolboxItemCollection : System.Drawing.Design.ToolboxItem[] -&gt; System.Drawing.Design.ToolboxItemCollection" Usage="new System.Drawing.Design.ToolboxItemCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.#ctor(System.Drawing.Design.ToolboxItemCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ToolboxItemCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxItemCollection(System::Drawing::Design::ToolboxItemCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Design.ToolboxItemCollection : System.Drawing.Design.ToolboxItemCollection -&gt; System.Drawing.Design.ToolboxItemCollection" Usage="new System.Drawing.Design.ToolboxItemCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.Contains(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As ToolboxItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Design::ToolboxItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Drawing.Design.ToolboxItem -&gt; bool" Usage="toolboxItemCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.CopyTo(System.Drawing.Design.ToolboxItem[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ToolboxItem(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Drawing::Design::ToolboxItem ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Drawing.Design.ToolboxItem[] * int -&gt; unit" Usage="toolboxItemCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.IndexOf(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As ToolboxItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Drawing::Design::ToolboxItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Drawing.Design.ToolboxItem -&gt; int" Usage="toolboxItemCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItemCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ToolboxItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Design::ToolboxItem ^ default[int] { System::Drawing::Design::ToolboxItem ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Drawing.Design.ToolboxItem" Usage="System.Drawing.Design.ToolboxItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

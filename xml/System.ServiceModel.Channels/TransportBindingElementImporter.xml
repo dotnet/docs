@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.TransportBindingElementImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class TransportBindingElementImporter&#xA;Implements IPolicyImportExtension, IWsdlImportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransportBindingElementImporter : System::ServiceModel::Description::IPolicyImportExtension, System::ServiceModel::Description::IWsdlImportExtension" />
+  <TypeSignature Language="F#" Value="type TransportBindingElementImporter = class&#xA;    interface IWsdlImportExtension&#xA;    interface IPolicyImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.TokenImpersonationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum TokenImpersonationLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class TokenImpersonationLevel" />
+  <TypeSignature Language="F#" Value="type TokenImpersonationLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.Anonymous" />
       <MemberSignature Language="VB.NET" Value="Anonymous" />
       <MemberSignature Language="C++ CLI" Value="Anonymous" />
+      <MemberSignature Language="F#" Value="Anonymous = 1" Usage="System.Security.Principal.TokenImpersonationLevel.Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.Delegation" />
       <MemberSignature Language="VB.NET" Value="Delegation" />
       <MemberSignature Language="C++ CLI" Value="Delegation" />
+      <MemberSignature Language="F#" Value="Delegation = 4" Usage="System.Security.Principal.TokenImpersonationLevel.Delegation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.Identification" />
       <MemberSignature Language="VB.NET" Value="Identification" />
       <MemberSignature Language="C++ CLI" Value="Identification" />
+      <MemberSignature Language="F#" Value="Identification = 2" Usage="System.Security.Principal.TokenImpersonationLevel.Identification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.Impersonation" />
       <MemberSignature Language="VB.NET" Value="Impersonation" />
       <MemberSignature Language="C++ CLI" Value="Impersonation" />
+      <MemberSignature Language="F#" Value="Impersonation = 3" Usage="System.Security.Principal.TokenImpersonationLevel.Impersonation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Principal.TokenImpersonationLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>

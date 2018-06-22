@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendCellCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class LegendCellCollection&#xA;Inherits ChartNamedElementCollection(Of LegendCell)" />
   <TypeSignature Language="C++ CLI" Value="public ref class LegendCellCollection : System::Web::UI::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Web::UI::DataVisualization::Charting::LegendCell ^&gt;" />
+  <TypeSignature Language="F#" Value="type LegendCellCollection = class&#xA;    inherit ChartNamedElementCollection&lt;LegendCell&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCellCollection.Add(System.Web.UI.DataVisualization.Charting.LegendCellType,System.String,System.Drawing.ContentAlignment)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (cellType As LegendCellType, text As String, alignment As ContentAlignment) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::DataVisualization::Charting::LegendCellType cellType, System::String ^ text, System::Drawing::ContentAlignment alignment);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Web.UI.DataVisualization.Charting.LegendCellType * string * System.Drawing.ContentAlignment -&gt; int" Usage="legendCellCollection.Add (cellType, text, alignment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCellCollection.Insert(System.Int32,System.Web.UI.DataVisualization.Charting.LegendCellType,System.String,System.Drawing.ContentAlignment)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, cellType As LegendCellType, text As String, alignment As ContentAlignment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::DataVisualization::Charting::LegendCellType cellType, System::String ^ text, System::Drawing::ContentAlignment alignment);" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * System.Web.UI.DataVisualization.Charting.LegendCellType * string * System.Drawing.ContentAlignment -&gt; unit" Usage="legendCellCollection.Insert (index, cellType, text, alignment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

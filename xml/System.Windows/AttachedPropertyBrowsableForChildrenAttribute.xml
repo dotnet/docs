@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.AttachedPropertyBrowsableForChildrenAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttachedPropertyBrowsableForChildrenAttribute&#xA;Inherits AttachedPropertyBrowsableAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttachedPropertyBrowsableForChildrenAttribute sealed : System::Windows::AttachedPropertyBrowsableAttribute" />
+  <TypeSignature Language="F#" Value="type AttachedPropertyBrowsableForChildrenAttribute = class&#xA;    inherit AttachedPropertyBrowsableAttribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="attachedPropertyBrowsableForChildrenAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="attachedPropertyBrowsableForChildrenAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.IncludeDescendants" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeDescendants As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeDescendants { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeDescendants : bool with get, set" Usage="System.Windows.AttachedPropertyBrowsableForChildrenAttribute.IncludeDescendants" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

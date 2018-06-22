@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" />
   <TypeSignature Language="VB.NET" Value="Public Class MemoryMappedFileSecurity&#xA;Inherits ObjectSecurity(Of MemoryMappedFileRights)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemoryMappedFileSecurity : System::Security::AccessControl::ObjectSecurity&lt;System::IO::MemoryMappedFiles::MemoryMappedFileRights&gt;" />
+  <TypeSignature Language="F#" Value="type MemoryMappedFileSecurity = class&#xA;    inherit ObjectSecurity&lt;MemoryMappedFileRights&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CounterCreationData" />
   <TypeSignature Language="VB.NET" Value="Public Class CounterCreationData" />
   <TypeSignature Language="C++ CLI" Value="public ref class CounterCreationData" />
+  <TypeSignature Language="F#" Value="type CounterCreationData = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationData.#ctor(System.String,System.String,System.Diagnostics.PerformanceCounterType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (counterName As String, counterHelp As String, counterType As PerformanceCounterType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CounterCreationData(System::String ^ counterName, System::String ^ counterHelp, System::Diagnostics::PerformanceCounterType counterType);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.CounterCreationData : string * string * System.Diagnostics.PerformanceCounterType -&gt; System.Diagnostics.CounterCreationData" Usage="new System.Diagnostics.CounterCreationData (counterName, counterHelp, counterType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterCreationData.CounterHelp" />
       <MemberSignature Language="VB.NET" Value="Public Property CounterHelp As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CounterHelp { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CounterHelp : string with get, set" Usage="System.Diagnostics.CounterCreationData.CounterHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterCreationData.CounterName" />
       <MemberSignature Language="VB.NET" Value="Public Property CounterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CounterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CounterName : string with get, set" Usage="System.Diagnostics.CounterCreationData.CounterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -213,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterCreationData.CounterType" />
       <MemberSignature Language="VB.NET" Value="Public Property CounterType As PerformanceCounterType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterType CounterType { System::Diagnostics::PerformanceCounterType get(); void set(System::Diagnostics::PerformanceCounterType value); };" />
+      <MemberSignature Language="F#" Value="member this.CounterType : System.Diagnostics.PerformanceCounterType with get, set" Usage="System.Diagnostics.CounterCreationData.CounterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

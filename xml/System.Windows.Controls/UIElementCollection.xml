@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.UIElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class UIElementCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class UIElementCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type UIElementCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.#ctor(System.Windows.UIElement,System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visualParent As UIElement, logicalParent As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIElementCollection(System::Windows::UIElement ^ visualParent, System::Windows::FrameworkElement ^ logicalParent);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.UIElementCollection : System.Windows.UIElement * System.Windows.FrameworkElement -&gt; System.Windows.Controls.UIElementCollection" Usage="new System.Windows.Controls.UIElementCollection (visualParent, logicalParent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.Add(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (element As UIElement) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.UIElement -&gt; int&#xA;override this.Add : System.Windows.UIElement -&gt; int" Usage="uIElementCollection.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.UIElementCollection.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Capacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Capacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Windows.Controls.UIElementCollection.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="uIElementCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.ClearLogicalParent(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ClearLogicalParent (element As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ClearLogicalParent(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.ClearLogicalParent : System.Windows.UIElement -&gt; unit" Usage="uIElementCollection.ClearLogicalParent element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.Contains(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (element As UIElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.UIElement -&gt; bool&#xA;override this.Contains : System.Windows.UIElement -&gt; bool" Usage="uIElementCollection.Contains element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="uIElementCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.CopyTo(System.Windows.UIElement[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyTo (array As UIElement(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::UIElement ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Windows.UIElement[] * int -&gt; unit&#xA;override this.CopyTo : System.Windows.UIElement[] * int -&gt; unit" Usage="uIElementCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.UIElementCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Controls.UIElementCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -305,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="uIElementCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -330,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.IndexOf(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (element As UIElement) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Windows.UIElement -&gt; int&#xA;override this.IndexOf : System.Windows.UIElement -&gt; int" Usage="uIElementCollection.IndexOf element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -368,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.Insert(System.Int32,System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Insert (index As Integer, element As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Windows.UIElement -&gt; unit&#xA;override this.Insert : int * System.Windows.UIElement -&gt; unit" Usage="uIElementCollection.Insert (index, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -402,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.UIElementCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Windows.Controls.UIElementCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.UIElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::UIElement ^ default[int] { System::Windows::UIElement ^ get(int index); void set(int index, System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.UIElement with get, set" Usage="System.Windows.Controls.UIElementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -460,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.Remove(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (element As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.UIElement -&gt; unit&#xA;override this.Remove : System.Windows.UIElement -&gt; unit" Usage="uIElementCollection.Remove element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -483,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="uIElementCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -518,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.RemoveRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveRange (index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveRange : int * int -&gt; unit&#xA;override this.RemoveRange : int * int -&gt; unit" Usage="uIElementCollection.RemoveRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -543,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.UIElementCollection.SetLogicalParent(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetLogicalParent (element As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetLogicalParent(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.SetLogicalParent : System.Windows.UIElement -&gt; unit" Usage="uIElementCollection.SetLogicalParent element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -566,6 +585,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.UIElementCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Windows.Controls.UIElementCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -705,6 +725,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.UIElementCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.UIElementCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -729,6 +750,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.UIElementCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.UIElementCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -753,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.UIElementCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.UIElementCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

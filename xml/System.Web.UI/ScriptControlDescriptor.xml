@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptControlDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptControlDescriptor&#xA;Inherits ScriptComponentDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptControlDescriptor : System::Web::UI::ScriptComponentDescriptor" />
+  <TypeSignature Language="F#" Value="type ScriptControlDescriptor = class&#xA;    inherit ScriptComponentDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControlDescriptor.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, elementID As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptControlDescriptor(System::String ^ type, System::String ^ elementID);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptControlDescriptor : string * string -&gt; System.Web.UI.ScriptControlDescriptor" Usage="new System.Web.UI.ScriptControlDescriptor (type, elementID)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptControlDescriptor.ClientID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClientID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientID : string" Usage="System.Web.UI.ScriptControlDescriptor.ClientID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptControlDescriptor.ElementID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementID : string" Usage="System.Web.UI.ScriptControlDescriptor.ElementID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptControlDescriptor.ID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string with get, set" Usage="System.Web.UI.ScriptControlDescriptor.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapParameterStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum SoapParameterStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class SoapParameterStyle" />
+  <TypeSignature Language="F#" Value="type SoapParameterStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapParameterStyle.Bare" />
       <MemberSignature Language="VB.NET" Value="Bare" />
       <MemberSignature Language="C++ CLI" Value="Bare" />
+      <MemberSignature Language="F#" Value="Bare = 1" Usage="System.Web.Services.Protocols.SoapParameterStyle.Bare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapParameterStyle.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.Services.Protocols.SoapParameterStyle.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapParameterStyle.Wrapped" />
       <MemberSignature Language="VB.NET" Value="Wrapped" />
       <MemberSignature Language="C++ CLI" Value="Wrapped" />
+      <MemberSignature Language="F#" Value="Wrapped = 2" Usage="System.Web.Services.Protocols.SoapParameterStyle.Wrapped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

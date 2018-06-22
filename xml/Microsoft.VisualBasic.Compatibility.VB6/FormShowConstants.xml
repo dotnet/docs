@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormShowConstants" />
   <TypeSignature Language="C++ CLI" Value="public enum class FormShowConstants" />
+  <TypeSignature Language="F#" Value="type FormShowConstants = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants.Modal" />
       <MemberSignature Language="VB.NET" Value="Modal" />
       <MemberSignature Language="C++ CLI" Value="Modal" />
+      <MemberSignature Language="F#" Value="Modal = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants.Modal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants.Modeless" />
       <MemberSignature Language="VB.NET" Value="Modeless" />
       <MemberSignature Language="C++ CLI" Value="Modeless" />
+      <MemberSignature Language="F#" Value="Modeless = 0" Usage="Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants.Modeless" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

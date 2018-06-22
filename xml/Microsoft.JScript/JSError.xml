@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSError" />
   <TypeSignature Language="VB.NET" Value="Public Enum JSError" />
   <TypeSignature Language="C++ CLI" Value="public enum class JSError" />
+  <TypeSignature Language="F#" Value="type JSError = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AbstractCannotBePrivate" />
       <MemberSignature Language="VB.NET" Value="AbstractCannotBePrivate" />
       <MemberSignature Language="C++ CLI" Value="AbstractCannotBePrivate" />
+      <MemberSignature Language="F#" Value="AbstractCannotBePrivate = 1157" Usage="Microsoft.JScript.JSError.AbstractCannotBePrivate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AbstractCannotBeStatic" />
       <MemberSignature Language="VB.NET" Value="AbstractCannotBeStatic" />
       <MemberSignature Language="C++ CLI" Value="AbstractCannotBeStatic" />
+      <MemberSignature Language="F#" Value="AbstractCannotBeStatic = 1216" Usage="Microsoft.JScript.JSError.AbstractCannotBeStatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AbstractWithBody" />
       <MemberSignature Language="VB.NET" Value="AbstractWithBody" />
       <MemberSignature Language="C++ CLI" Value="AbstractWithBody" />
+      <MemberSignature Language="F#" Value="AbstractWithBody = 1192" Usage="Microsoft.JScript.JSError.AbstractWithBody" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ActionNotSupported" />
       <MemberSignature Language="VB.NET" Value="ActionNotSupported" />
       <MemberSignature Language="C++ CLI" Value="ActionNotSupported" />
+      <MemberSignature Language="F#" Value="ActionNotSupported = 445" Usage="Microsoft.JScript.JSError.ActionNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AmbiguousBindingBecauseOfEval" />
       <MemberSignature Language="VB.NET" Value="AmbiguousBindingBecauseOfEval" />
       <MemberSignature Language="C++ CLI" Value="AmbiguousBindingBecauseOfEval" />
+      <MemberSignature Language="F#" Value="AmbiguousBindingBecauseOfEval = 1150" Usage="Microsoft.JScript.JSError.AmbiguousBindingBecauseOfEval" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AmbiguousBindingBecauseOfWith" />
       <MemberSignature Language="VB.NET" Value="AmbiguousBindingBecauseOfWith" />
       <MemberSignature Language="C++ CLI" Value="AmbiguousBindingBecauseOfWith" />
+      <MemberSignature Language="F#" Value="AmbiguousBindingBecauseOfWith = 1149" Usage="Microsoft.JScript.JSError.AmbiguousBindingBecauseOfWith" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AmbiguousConstructorCall" />
       <MemberSignature Language="VB.NET" Value="AmbiguousConstructorCall" />
       <MemberSignature Language="C++ CLI" Value="AmbiguousConstructorCall" />
+      <MemberSignature Language="F#" Value="AmbiguousConstructorCall = 1184" Usage="Microsoft.JScript.JSError.AmbiguousConstructorCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -171,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AmbiguousMatch" />
       <MemberSignature Language="VB.NET" Value="AmbiguousMatch" />
       <MemberSignature Language="C++ CLI" Value="AmbiguousMatch" />
+      <MemberSignature Language="F#" Value="AmbiguousMatch = 1183" Usage="Microsoft.JScript.JSError.AmbiguousMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -191,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ArrayLengthAssignIncorrect" />
       <MemberSignature Language="VB.NET" Value="ArrayLengthAssignIncorrect" />
       <MemberSignature Language="C++ CLI" Value="ArrayLengthAssignIncorrect" />
+      <MemberSignature Language="F#" Value="ArrayLengthAssignIncorrect = 5030" Usage="Microsoft.JScript.JSError.ArrayLengthAssignIncorrect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -211,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ArrayLengthConstructIncorrect" />
       <MemberSignature Language="VB.NET" Value="ArrayLengthConstructIncorrect" />
       <MemberSignature Language="C++ CLI" Value="ArrayLengthConstructIncorrect" />
+      <MemberSignature Language="F#" Value="ArrayLengthConstructIncorrect = 5029" Usage="Microsoft.JScript.JSError.ArrayLengthConstructIncorrect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -231,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ArrayMayBeCopied" />
       <MemberSignature Language="VB.NET" Value="ArrayMayBeCopied" />
       <MemberSignature Language="C++ CLI" Value="ArrayMayBeCopied" />
+      <MemberSignature Language="F#" Value="ArrayMayBeCopied = 1215" Usage="Microsoft.JScript.JSError.ArrayMayBeCopied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -251,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AssemblyAttributesMustBeGlobal" />
       <MemberSignature Language="VB.NET" Value="AssemblyAttributesMustBeGlobal" />
       <MemberSignature Language="C++ CLI" Value="AssemblyAttributesMustBeGlobal" />
+      <MemberSignature Language="F#" Value="AssemblyAttributesMustBeGlobal = 1249" Usage="Microsoft.JScript.JSError.AssemblyAttributesMustBeGlobal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -271,6 +284,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.AssignmentToReadOnly" />
       <MemberSignature Language="VB.NET" Value="AssignmentToReadOnly" />
       <MemberSignature Language="C++ CLI" Value="AssignmentToReadOnly" />
+      <MemberSignature Language="F#" Value="AssignmentToReadOnly = 5040" Usage="Microsoft.JScript.JSError.AssignmentToReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -291,6 +305,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadBreak" />
       <MemberSignature Language="VB.NET" Value="BadBreak" />
       <MemberSignature Language="C++ CLI" Value="BadBreak" />
+      <MemberSignature Language="F#" Value="BadBreak = 1019" Usage="Microsoft.JScript.JSError.BadBreak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -311,6 +326,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadContinue" />
       <MemberSignature Language="VB.NET" Value="BadContinue" />
       <MemberSignature Language="C++ CLI" Value="BadContinue" />
+      <MemberSignature Language="F#" Value="BadContinue = 1020" Usage="Microsoft.JScript.JSError.BadContinue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -331,6 +347,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadFunctionDeclaration" />
       <MemberSignature Language="VB.NET" Value="BadFunctionDeclaration" />
       <MemberSignature Language="C++ CLI" Value="BadFunctionDeclaration" />
+      <MemberSignature Language="F#" Value="BadFunctionDeclaration = 1199" Usage="Microsoft.JScript.JSError.BadFunctionDeclaration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -351,6 +368,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadHexDigit" />
       <MemberSignature Language="VB.NET" Value="BadHexDigit" />
       <MemberSignature Language="C++ CLI" Value="BadHexDigit" />
+      <MemberSignature Language="F#" Value="BadHexDigit = 1023" Usage="Microsoft.JScript.JSError.BadHexDigit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -371,6 +389,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadLabel" />
       <MemberSignature Language="VB.NET" Value="BadLabel" />
       <MemberSignature Language="C++ CLI" Value="BadLabel" />
+      <MemberSignature Language="F#" Value="BadLabel = 1025" Usage="Microsoft.JScript.JSError.BadLabel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -391,6 +410,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadModifierInInterface" />
       <MemberSignature Language="VB.NET" Value="BadModifierInInterface" />
       <MemberSignature Language="C++ CLI" Value="BadModifierInInterface" />
+      <MemberSignature Language="F#" Value="BadModifierInInterface = 1224" Usage="Microsoft.JScript.JSError.BadModifierInInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -411,6 +431,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadOctalLiteral" />
       <MemberSignature Language="VB.NET" Value="BadOctalLiteral" />
       <MemberSignature Language="C++ CLI" Value="BadOctalLiteral" />
+      <MemberSignature Language="F#" Value="BadOctalLiteral = 1242" Usage="Microsoft.JScript.JSError.BadOctalLiteral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -431,6 +452,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadPropertyDeclaration" />
       <MemberSignature Language="VB.NET" Value="BadPropertyDeclaration" />
       <MemberSignature Language="C++ CLI" Value="BadPropertyDeclaration" />
+      <MemberSignature Language="F#" Value="BadPropertyDeclaration = 1200" Usage="Microsoft.JScript.JSError.BadPropertyDeclaration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -451,6 +473,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadReturn" />
       <MemberSignature Language="VB.NET" Value="BadReturn" />
       <MemberSignature Language="C++ CLI" Value="BadReturn" />
+      <MemberSignature Language="F#" Value="BadReturn = 1018" Usage="Microsoft.JScript.JSError.BadReturn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -471,6 +494,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadSwitch" />
       <MemberSignature Language="VB.NET" Value="BadSwitch" />
       <MemberSignature Language="C++ CLI" Value="BadSwitch" />
+      <MemberSignature Language="F#" Value="BadSwitch = 1103" Usage="Microsoft.JScript.JSError.BadSwitch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -491,6 +515,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadThrow" />
       <MemberSignature Language="VB.NET" Value="BadThrow" />
       <MemberSignature Language="C++ CLI" Value="BadThrow" />
+      <MemberSignature Language="F#" Value="BadThrow = 1239" Usage="Microsoft.JScript.JSError.BadThrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -511,6 +536,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadVariableDeclaration" />
       <MemberSignature Language="VB.NET" Value="BadVariableDeclaration" />
       <MemberSignature Language="C++ CLI" Value="BadVariableDeclaration" />
+      <MemberSignature Language="F#" Value="BadVariableDeclaration = 1198" Usage="Microsoft.JScript.JSError.BadVariableDeclaration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -531,6 +557,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BadWayToLeaveFinally" />
       <MemberSignature Language="VB.NET" Value="BadWayToLeaveFinally" />
       <MemberSignature Language="C++ CLI" Value="BadWayToLeaveFinally" />
+      <MemberSignature Language="F#" Value="BadWayToLeaveFinally = 1190" Usage="Microsoft.JScript.JSError.BadWayToLeaveFinally" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -551,6 +578,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BaseClassIsExpandoAlready" />
       <MemberSignature Language="VB.NET" Value="BaseClassIsExpandoAlready" />
       <MemberSignature Language="C++ CLI" Value="BaseClassIsExpandoAlready" />
+      <MemberSignature Language="F#" Value="BaseClassIsExpandoAlready = 1156" Usage="Microsoft.JScript.JSError.BaseClassIsExpandoAlready" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -571,6 +599,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.BooleanExpected" />
       <MemberSignature Language="VB.NET" Value="BooleanExpected" />
       <MemberSignature Language="C++ CLI" Value="BooleanExpected" />
+      <MemberSignature Language="F#" Value="BooleanExpected = 5010" Usage="Microsoft.JScript.JSError.BooleanExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -591,6 +620,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotAssignToFunctionResult" />
       <MemberSignature Language="VB.NET" Value="CannotAssignToFunctionResult" />
       <MemberSignature Language="C++ CLI" Value="CannotAssignToFunctionResult" />
+      <MemberSignature Language="F#" Value="CannotAssignToFunctionResult = 5003" Usage="Microsoft.JScript.JSError.CannotAssignToFunctionResult" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -611,6 +641,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotBeAbstract" />
       <MemberSignature Language="VB.NET" Value="CannotBeAbstract" />
       <MemberSignature Language="C++ CLI" Value="CannotBeAbstract" />
+      <MemberSignature Language="F#" Value="CannotBeAbstract = 1212" Usage="Microsoft.JScript.JSError.CannotBeAbstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -631,6 +662,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotCallSecurityMethodLateBound" />
       <MemberSignature Language="VB.NET" Value="CannotCallSecurityMethodLateBound" />
       <MemberSignature Language="C++ CLI" Value="CannotCallSecurityMethodLateBound" />
+      <MemberSignature Language="F#" Value="CannotCallSecurityMethodLateBound = 5044" Usage="Microsoft.JScript.JSError.CannotCallSecurityMethodLateBound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -651,6 +683,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotChangeVisibility" />
       <MemberSignature Language="VB.NET" Value="CannotChangeVisibility" />
       <MemberSignature Language="C++ CLI" Value="CannotChangeVisibility" />
+      <MemberSignature Language="F#" Value="CannotChangeVisibility = 1171" Usage="Microsoft.JScript.JSError.CannotChangeVisibility" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -671,6 +704,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotInstantiateAbstractClass" />
       <MemberSignature Language="VB.NET" Value="CannotInstantiateAbstractClass" />
       <MemberSignature Language="C++ CLI" Value="CannotInstantiateAbstractClass" />
+      <MemberSignature Language="F#" Value="CannotInstantiateAbstractClass = 1214" Usage="Microsoft.JScript.JSError.CannotInstantiateAbstractClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -691,6 +725,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotNestPositionDirective" />
       <MemberSignature Language="VB.NET" Value="CannotNestPositionDirective" />
       <MemberSignature Language="C++ CLI" Value="CannotNestPositionDirective" />
+      <MemberSignature Language="F#" Value="CannotNestPositionDirective = 1119" Usage="Microsoft.JScript.JSError.CannotNestPositionDirective" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -711,6 +746,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotReturnValueFromVoidFunction" />
       <MemberSignature Language="VB.NET" Value="CannotReturnValueFromVoidFunction" />
       <MemberSignature Language="C++ CLI" Value="CannotReturnValueFromVoidFunction" />
+      <MemberSignature Language="F#" Value="CannotReturnValueFromVoidFunction = 1182" Usage="Microsoft.JScript.JSError.CannotReturnValueFromVoidFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -731,6 +767,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotUseNameOfClass" />
       <MemberSignature Language="VB.NET" Value="CannotUseNameOfClass" />
       <MemberSignature Language="C++ CLI" Value="CannotUseNameOfClass" />
+      <MemberSignature Language="F#" Value="CannotUseNameOfClass = 1124" Usage="Microsoft.JScript.JSError.CannotUseNameOfClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -751,6 +788,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CannotUseStaticSecurityAttribute" />
       <MemberSignature Language="VB.NET" Value="CannotUseStaticSecurityAttribute" />
       <MemberSignature Language="C++ CLI" Value="CannotUseStaticSecurityAttribute" />
+      <MemberSignature Language="F#" Value="CannotUseStaticSecurityAttribute = 5045" Usage="Microsoft.JScript.JSError.CannotUseStaticSecurityAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -771,6 +809,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CantAssignThis" />
       <MemberSignature Language="VB.NET" Value="CantAssignThis" />
       <MemberSignature Language="C++ CLI" Value="CantAssignThis" />
+      <MemberSignature Language="F#" Value="CantAssignThis = 5000" Usage="Microsoft.JScript.JSError.CantAssignThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -791,6 +830,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CantCreateObject" />
       <MemberSignature Language="VB.NET" Value="CantCreateObject" />
       <MemberSignature Language="C++ CLI" Value="CantCreateObject" />
+      <MemberSignature Language="F#" Value="CantCreateObject = 429" Usage="Microsoft.JScript.JSError.CantCreateObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -811,6 +851,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CcInvalidElif" />
       <MemberSignature Language="VB.NET" Value="CcInvalidElif" />
       <MemberSignature Language="C++ CLI" Value="CcInvalidElif" />
+      <MemberSignature Language="F#" Value="CcInvalidElif = 1106" Usage="Microsoft.JScript.JSError.CcInvalidElif" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -831,6 +872,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CcInvalidElse" />
       <MemberSignature Language="VB.NET" Value="CcInvalidElse" />
       <MemberSignature Language="C++ CLI" Value="CcInvalidElse" />
+      <MemberSignature Language="F#" Value="CcInvalidElse = 1105" Usage="Microsoft.JScript.JSError.CcInvalidElse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -851,6 +893,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CcInvalidEnd" />
       <MemberSignature Language="VB.NET" Value="CcInvalidEnd" />
       <MemberSignature Language="C++ CLI" Value="CcInvalidEnd" />
+      <MemberSignature Language="F#" Value="CcInvalidEnd = 1104" Usage="Microsoft.JScript.JSError.CcInvalidEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -871,6 +914,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CcInvalidInDebugger" />
       <MemberSignature Language="VB.NET" Value="CcInvalidInDebugger" />
       <MemberSignature Language="C++ CLI" Value="CcInvalidInDebugger" />
+      <MemberSignature Language="F#" Value="CcInvalidInDebugger = 1256" Usage="Microsoft.JScript.JSError.CcInvalidInDebugger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -891,6 +935,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CcOff" />
       <MemberSignature Language="VB.NET" Value="CcOff" />
       <MemberSignature Language="C++ CLI" Value="CcOff" />
+      <MemberSignature Language="F#" Value="CcOff = 1030" Usage="Microsoft.JScript.JSError.CcOff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -911,6 +956,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CircularDefinition" />
       <MemberSignature Language="VB.NET" Value="CircularDefinition" />
       <MemberSignature Language="C++ CLI" Value="CircularDefinition" />
+      <MemberSignature Language="F#" Value="CircularDefinition = 1120" Usage="Microsoft.JScript.JSError.CircularDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -931,6 +977,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ClashWithProperty" />
       <MemberSignature Language="VB.NET" Value="ClashWithProperty" />
       <MemberSignature Language="C++ CLI" Value="ClashWithProperty" />
+      <MemberSignature Language="F#" Value="ClashWithProperty = 1177" Usage="Microsoft.JScript.JSError.ClashWithProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -951,6 +998,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ClassNotAllowed" />
       <MemberSignature Language="VB.NET" Value="ClassNotAllowed" />
       <MemberSignature Language="C++ CLI" Value="ClassNotAllowed" />
+      <MemberSignature Language="F#" Value="ClassNotAllowed = 1109" Usage="Microsoft.JScript.JSError.ClassNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -971,6 +1019,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ConstructorMayNotHaveReturnType" />
       <MemberSignature Language="VB.NET" Value="ConstructorMayNotHaveReturnType" />
       <MemberSignature Language="C++ CLI" Value="ConstructorMayNotHaveReturnType" />
+      <MemberSignature Language="F#" Value="ConstructorMayNotHaveReturnType = 1233" Usage="Microsoft.JScript.JSError.ConstructorMayNotHaveReturnType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -991,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.CustomAttributeUsedMoreThanOnce" />
       <MemberSignature Language="VB.NET" Value="CustomAttributeUsedMoreThanOnce" />
       <MemberSignature Language="C++ CLI" Value="CustomAttributeUsedMoreThanOnce" />
+      <MemberSignature Language="F#" Value="CustomAttributeUsedMoreThanOnce = 1236" Usage="Microsoft.JScript.JSError.CustomAttributeUsedMoreThanOnce" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1011,6 +1061,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DateExpected" />
       <MemberSignature Language="VB.NET" Value="DateExpected" />
       <MemberSignature Language="C++ CLI" Value="DateExpected" />
+      <MemberSignature Language="F#" Value="DateExpected = 5006" Usage="Microsoft.JScript.JSError.DateExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1031,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DelegatesShouldNotBeExplicitlyConstructed" />
       <MemberSignature Language="VB.NET" Value="DelegatesShouldNotBeExplicitlyConstructed" />
       <MemberSignature Language="C++ CLI" Value="DelegatesShouldNotBeExplicitlyConstructed" />
+      <MemberSignature Language="F#" Value="DelegatesShouldNotBeExplicitlyConstructed = 1258" Usage="Microsoft.JScript.JSError.DelegatesShouldNotBeExplicitlyConstructed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1051,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.Deprecated" />
       <MemberSignature Language="VB.NET" Value="Deprecated" />
       <MemberSignature Language="C++ CLI" Value="Deprecated" />
+      <MemberSignature Language="F#" Value="Deprecated = 1121" Usage="Microsoft.JScript.JSError.Deprecated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1071,6 +1124,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DifferentReturnTypeFromBase" />
       <MemberSignature Language="VB.NET" Value="DifferentReturnTypeFromBase" />
       <MemberSignature Language="C++ CLI" Value="DifferentReturnTypeFromBase" />
+      <MemberSignature Language="F#" Value="DifferentReturnTypeFromBase = 1176" Usage="Microsoft.JScript.JSError.DifferentReturnTypeFromBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1091,6 +1145,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DoesNotHaveAnAddress" />
       <MemberSignature Language="VB.NET" Value="DoesNotHaveAnAddress" />
       <MemberSignature Language="C++ CLI" Value="DoesNotHaveAnAddress" />
+      <MemberSignature Language="F#" Value="DoesNotHaveAnAddress = 1203" Usage="Microsoft.JScript.JSError.DoesNotHaveAnAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1111,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DupDefault" />
       <MemberSignature Language="VB.NET" Value="DupDefault" />
       <MemberSignature Language="C++ CLI" Value="DupDefault" />
+      <MemberSignature Language="F#" Value="DupDefault = 1027" Usage="Microsoft.JScript.JSError.DupDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1132,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DuplicateMethod" />
       <MemberSignature Language="VB.NET" Value="DuplicateMethod" />
       <MemberSignature Language="C++ CLI" Value="DuplicateMethod" />
+      <MemberSignature Language="F#" Value="DuplicateMethod = 1251" Usage="Microsoft.JScript.JSError.DuplicateMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1152,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DuplicateName" />
       <MemberSignature Language="VB.NET" Value="DuplicateName" />
       <MemberSignature Language="C++ CLI" Value="DuplicateName" />
+      <MemberSignature Language="F#" Value="DuplicateName = 1111" Usage="Microsoft.JScript.JSError.DuplicateName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1172,6 +1230,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DuplicateNamedParameter" />
       <MemberSignature Language="VB.NET" Value="DuplicateNamedParameter" />
       <MemberSignature Language="C++ CLI" Value="DuplicateNamedParameter" />
+      <MemberSignature Language="F#" Value="DuplicateNamedParameter = 5036" Usage="Microsoft.JScript.JSError.DuplicateNamedParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1192,6 +1251,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.DupVisibility" />
       <MemberSignature Language="VB.NET" Value="DupVisibility" />
       <MemberSignature Language="C++ CLI" Value="DupVisibility" />
+      <MemberSignature Language="F#" Value="DupVisibility = 1101" Usage="Microsoft.JScript.JSError.DupVisibility" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1212,6 +1272,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.EnumeratorExpected" />
       <MemberSignature Language="VB.NET" Value="EnumeratorExpected" />
       <MemberSignature Language="C++ CLI" Value="EnumeratorExpected" />
+      <MemberSignature Language="F#" Value="EnumeratorExpected = 5015" Usage="Microsoft.JScript.JSError.EnumeratorExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1232,6 +1293,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.EnumNotAllowed" />
       <MemberSignature Language="VB.NET" Value="EnumNotAllowed" />
       <MemberSignature Language="C++ CLI" Value="EnumNotAllowed" />
+      <MemberSignature Language="F#" Value="EnumNotAllowed = 1230" Usage="Microsoft.JScript.JSError.EnumNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1253,6 +1315,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ErrEOF" />
       <MemberSignature Language="VB.NET" Value="ErrEOF" />
       <MemberSignature Language="C++ CLI" Value="ErrEOF" />
+      <MemberSignature Language="F#" Value="ErrEOF = 1107" Usage="Microsoft.JScript.JSError.ErrEOF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1273,6 +1336,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExceptionFromHResult" />
       <MemberSignature Language="VB.NET" Value="ExceptionFromHResult" />
       <MemberSignature Language="C++ CLI" Value="ExceptionFromHResult" />
+      <MemberSignature Language="F#" Value="ExceptionFromHResult = 6011" Usage="Microsoft.JScript.JSError.ExceptionFromHResult" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1293,6 +1357,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExecutablesCannotBeLocalized" />
       <MemberSignature Language="VB.NET" Value="ExecutablesCannotBeLocalized" />
       <MemberSignature Language="C++ CLI" Value="ExecutablesCannotBeLocalized" />
+      <MemberSignature Language="F#" Value="ExecutablesCannotBeLocalized = 1254" Usage="Microsoft.JScript.JSError.ExecutablesCannotBeLocalized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1313,6 +1378,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExpandoClassShouldNotImpleEnumerable" />
       <MemberSignature Language="VB.NET" Value="ExpandoClassShouldNotImpleEnumerable" />
       <MemberSignature Language="C++ CLI" Value="ExpandoClassShouldNotImpleEnumerable" />
+      <MemberSignature Language="F#" Value="ExpandoClassShouldNotImpleEnumerable = 1162" Usage="Microsoft.JScript.JSError.ExpandoClassShouldNotImpleEnumerable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1334,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExpandoMustBePublic" />
       <MemberSignature Language="VB.NET" Value="ExpandoMustBePublic" />
       <MemberSignature Language="C++ CLI" Value="ExpandoMustBePublic" />
+      <MemberSignature Language="F#" Value="ExpandoMustBePublic = 1257" Usage="Microsoft.JScript.JSError.ExpandoMustBePublic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1355,6 +1422,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExpandoPrecludesAbstract" />
       <MemberSignature Language="VB.NET" Value="ExpandoPrecludesAbstract" />
       <MemberSignature Language="C++ CLI" Value="ExpandoPrecludesAbstract" />
+      <MemberSignature Language="F#" Value="ExpandoPrecludesAbstract = 1222" Usage="Microsoft.JScript.JSError.ExpandoPrecludesAbstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1376,6 +1444,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExpandoPrecludesOverride" />
       <MemberSignature Language="VB.NET" Value="ExpandoPrecludesOverride" />
       <MemberSignature Language="C++ CLI" Value="ExpandoPrecludesOverride" />
+      <MemberSignature Language="F#" Value="ExpandoPrecludesOverride = 1220" Usage="Microsoft.JScript.JSError.ExpandoPrecludesOverride" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1397,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExpandoPrecludesStatic" />
       <MemberSignature Language="VB.NET" Value="ExpandoPrecludesStatic" />
       <MemberSignature Language="C++ CLI" Value="ExpandoPrecludesStatic" />
+      <MemberSignature Language="F#" Value="ExpandoPrecludesStatic = 1250" Usage="Microsoft.JScript.JSError.ExpandoPrecludesStatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1418,6 +1488,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExpectedAssembly" />
       <MemberSignature Language="VB.NET" Value="ExpectedAssembly" />
       <MemberSignature Language="C++ CLI" Value="ExpectedAssembly" />
+      <MemberSignature Language="F#" Value="ExpectedAssembly = 1248" Usage="Microsoft.JScript.JSError.ExpectedAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1438,6 +1509,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ExpressionExpected" />
       <MemberSignature Language="VB.NET" Value="ExpressionExpected" />
       <MemberSignature Language="C++ CLI" Value="ExpressionExpected" />
+      <MemberSignature Language="F#" Value="ExpressionExpected = 1195" Usage="Microsoft.JScript.JSError.ExpressionExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1458,6 +1530,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FileNotFound" />
       <MemberSignature Language="VB.NET" Value="FileNotFound" />
       <MemberSignature Language="C++ CLI" Value="FileNotFound" />
+      <MemberSignature Language="F#" Value="FileNotFound = 53" Usage="Microsoft.JScript.JSError.FileNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1478,6 +1551,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FinalPrecludesAbstract" />
       <MemberSignature Language="VB.NET" Value="FinalPrecludesAbstract" />
       <MemberSignature Language="C++ CLI" Value="FinalPrecludesAbstract" />
+      <MemberSignature Language="F#" Value="FinalPrecludesAbstract = 1209" Usage="Microsoft.JScript.JSError.FinalPrecludesAbstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1499,6 +1573,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FractionOutOfRange" />
       <MemberSignature Language="VB.NET" Value="FractionOutOfRange" />
       <MemberSignature Language="C++ CLI" Value="FractionOutOfRange" />
+      <MemberSignature Language="F#" Value="FractionOutOfRange = 5026" Usage="Microsoft.JScript.JSError.FractionOutOfRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1519,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FuncEvalAborted" />
       <MemberSignature Language="VB.NET" Value="FuncEvalAborted" />
       <MemberSignature Language="C++ CLI" Value="FuncEvalAborted" />
+      <MemberSignature Language="F#" Value="FuncEvalAborted = 6000" Usage="Microsoft.JScript.JSError.FuncEvalAborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1539,6 +1615,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FuncEvalBadLocation" />
       <MemberSignature Language="VB.NET" Value="FuncEvalBadLocation" />
       <MemberSignature Language="C++ CLI" Value="FuncEvalBadLocation" />
+      <MemberSignature Language="F#" Value="FuncEvalBadLocation = 6007" Usage="Microsoft.JScript.JSError.FuncEvalBadLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1559,6 +1636,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FuncEvalBadThreadNotStarted" />
       <MemberSignature Language="VB.NET" Value="FuncEvalBadThreadNotStarted" />
       <MemberSignature Language="C++ CLI" Value="FuncEvalBadThreadNotStarted" />
+      <MemberSignature Language="F#" Value="FuncEvalBadThreadNotStarted = 6005" Usage="Microsoft.JScript.JSError.FuncEvalBadThreadNotStarted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1579,6 +1657,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FuncEvalBadThreadState" />
       <MemberSignature Language="VB.NET" Value="FuncEvalBadThreadState" />
       <MemberSignature Language="C++ CLI" Value="FuncEvalBadThreadState" />
+      <MemberSignature Language="F#" Value="FuncEvalBadThreadState = 6004" Usage="Microsoft.JScript.JSError.FuncEvalBadThreadState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1599,6 +1678,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FuncEvalThreadSleepWaitJoin" />
       <MemberSignature Language="VB.NET" Value="FuncEvalThreadSleepWaitJoin" />
       <MemberSignature Language="C++ CLI" Value="FuncEvalThreadSleepWaitJoin" />
+      <MemberSignature Language="F#" Value="FuncEvalThreadSleepWaitJoin = 6003" Usage="Microsoft.JScript.JSError.FuncEvalThreadSleepWaitJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1619,6 +1699,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FuncEvalThreadSuspended" />
       <MemberSignature Language="VB.NET" Value="FuncEvalThreadSuspended" />
       <MemberSignature Language="C++ CLI" Value="FuncEvalThreadSuspended" />
+      <MemberSignature Language="F#" Value="FuncEvalThreadSuspended = 6002" Usage="Microsoft.JScript.JSError.FuncEvalThreadSuspended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1639,6 +1720,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FuncEvalTimedout" />
       <MemberSignature Language="VB.NET" Value="FuncEvalTimedout" />
       <MemberSignature Language="C++ CLI" Value="FuncEvalTimedout" />
+      <MemberSignature Language="F#" Value="FuncEvalTimedout = 6001" Usage="Microsoft.JScript.JSError.FuncEvalTimedout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1659,6 +1741,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FuncEvalWebMethod" />
       <MemberSignature Language="VB.NET" Value="FuncEvalWebMethod" />
       <MemberSignature Language="C++ CLI" Value="FuncEvalWebMethod" />
+      <MemberSignature Language="F#" Value="FuncEvalWebMethod = 6008" Usage="Microsoft.JScript.JSError.FuncEvalWebMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1679,6 +1762,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.FunctionExpected" />
       <MemberSignature Language="VB.NET" Value="FunctionExpected" />
       <MemberSignature Language="C++ CLI" Value="FunctionExpected" />
+      <MemberSignature Language="F#" Value="FunctionExpected = 5002" Usage="Microsoft.JScript.JSError.FunctionExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1699,6 +1783,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.GetAndSetAreInconsistent" />
       <MemberSignature Language="VB.NET" Value="GetAndSetAreInconsistent" />
       <MemberSignature Language="C++ CLI" Value="GetAndSetAreInconsistent" />
+      <MemberSignature Language="F#" Value="GetAndSetAreInconsistent = 1142" Usage="Microsoft.JScript.JSError.GetAndSetAreInconsistent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1719,6 +1804,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.HidesAbstractInBase" />
       <MemberSignature Language="VB.NET" Value="HidesAbstractInBase" />
       <MemberSignature Language="C++ CLI" Value="HidesAbstractInBase" />
+      <MemberSignature Language="F#" Value="HidesAbstractInBase = 1172" Usage="Microsoft.JScript.JSError.HidesAbstractInBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1739,6 +1825,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.HidesParentMember" />
       <MemberSignature Language="VB.NET" Value="HidesParentMember" />
       <MemberSignature Language="C++ CLI" Value="HidesParentMember" />
+      <MemberSignature Language="F#" Value="HidesParentMember = 1170" Usage="Microsoft.JScript.JSError.HidesParentMember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1760,6 +1847,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IllegalAssignment" />
       <MemberSignature Language="VB.NET" Value="IllegalAssignment" />
       <MemberSignature Language="C++ CLI" Value="IllegalAssignment" />
+      <MemberSignature Language="F#" Value="IllegalAssignment = 5008" Usage="Microsoft.JScript.JSError.IllegalAssignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1780,6 +1868,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IllegalChar" />
       <MemberSignature Language="VB.NET" Value="IllegalChar" />
       <MemberSignature Language="C++ CLI" Value="IllegalChar" />
+      <MemberSignature Language="F#" Value="IllegalChar = 1014" Usage="Microsoft.JScript.JSError.IllegalChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1800,6 +1889,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IllegalEval" />
       <MemberSignature Language="VB.NET" Value="IllegalEval" />
       <MemberSignature Language="C++ CLI" Value="IllegalEval" />
+      <MemberSignature Language="F#" Value="IllegalEval = 5033" Usage="Microsoft.JScript.JSError.IllegalEval" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1820,6 +1910,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IllegalParamArrayAttribute" />
       <MemberSignature Language="VB.NET" Value="IllegalParamArrayAttribute" />
       <MemberSignature Language="C++ CLI" Value="IllegalParamArrayAttribute" />
+      <MemberSignature Language="F#" Value="IllegalParamArrayAttribute = 1221" Usage="Microsoft.JScript.JSError.IllegalParamArrayAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1840,6 +1931,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IllegalUseOfSuper" />
       <MemberSignature Language="VB.NET" Value="IllegalUseOfSuper" />
       <MemberSignature Language="C++ CLI" Value="IllegalUseOfSuper" />
+      <MemberSignature Language="F#" Value="IllegalUseOfSuper = 1189" Usage="Microsoft.JScript.JSError.IllegalUseOfSuper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1860,6 +1952,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IllegalUseOfThis" />
       <MemberSignature Language="VB.NET" Value="IllegalUseOfThis" />
       <MemberSignature Language="C++ CLI" Value="IllegalUseOfThis" />
+      <MemberSignature Language="F#" Value="IllegalUseOfThis = 1122" Usage="Microsoft.JScript.JSError.IllegalUseOfThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1880,6 +1973,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IllegalVisibility" />
       <MemberSignature Language="VB.NET" Value="IllegalVisibility" />
       <MemberSignature Language="C++ CLI" Value="IllegalVisibility" />
+      <MemberSignature Language="F#" Value="IllegalVisibility = 1102" Usage="Microsoft.JScript.JSError.IllegalVisibility" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1900,6 +1994,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ImplicitlyReferencedAssemblyNotFound" />
       <MemberSignature Language="VB.NET" Value="ImplicitlyReferencedAssemblyNotFound" />
       <MemberSignature Language="C++ CLI" Value="ImplicitlyReferencedAssemblyNotFound" />
+      <MemberSignature Language="F#" Value="ImplicitlyReferencedAssemblyNotFound = 1259" Usage="Microsoft.JScript.JSError.ImplicitlyReferencedAssemblyNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1920,6 +2015,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ImpossibleConversion" />
       <MemberSignature Language="VB.NET" Value="ImpossibleConversion" />
       <MemberSignature Language="C++ CLI" Value="ImpossibleConversion" />
+      <MemberSignature Language="F#" Value="ImpossibleConversion = 1208" Usage="Microsoft.JScript.JSError.ImpossibleConversion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1940,6 +2036,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IncompatibleAssemblyReference" />
       <MemberSignature Language="VB.NET" Value="IncompatibleAssemblyReference" />
       <MemberSignature Language="C++ CLI" Value="IncompatibleAssemblyReference" />
+      <MemberSignature Language="F#" Value="IncompatibleAssemblyReference = 1267" Usage="Microsoft.JScript.JSError.IncompatibleAssemblyReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1960,6 +2057,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IncompatibleVisibility" />
       <MemberSignature Language="VB.NET" Value="IncompatibleVisibility" />
       <MemberSignature Language="C++ CLI" Value="IncompatibleVisibility" />
+      <MemberSignature Language="F#" Value="IncompatibleVisibility = 1108" Usage="Microsoft.JScript.JSError.IncompatibleVisibility" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1980,6 +2078,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.IncorrectNumberOfIndices" />
       <MemberSignature Language="VB.NET" Value="IncorrectNumberOfIndices" />
       <MemberSignature Language="C++ CLI" Value="IncorrectNumberOfIndices" />
+      <MemberSignature Language="F#" Value="IncorrectNumberOfIndices = 5042" Usage="Microsoft.JScript.JSError.IncorrectNumberOfIndices" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2000,6 +2099,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InstanceNotAccessibleFromStatic" />
       <MemberSignature Language="VB.NET" Value="InstanceNotAccessibleFromStatic" />
       <MemberSignature Language="C++ CLI" Value="InstanceNotAccessibleFromStatic" />
+      <MemberSignature Language="F#" Value="InstanceNotAccessibleFromStatic = 1243" Usage="Microsoft.JScript.JSError.InstanceNotAccessibleFromStatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2020,6 +2120,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InterfaceIllegalInInterface" />
       <MemberSignature Language="VB.NET" Value="InterfaceIllegalInInterface" />
       <MemberSignature Language="C++ CLI" Value="InterfaceIllegalInInterface" />
+      <MemberSignature Language="F#" Value="InterfaceIllegalInInterface = 1227" Usage="Microsoft.JScript.JSError.InterfaceIllegalInInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2040,6 +2141,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InternalError" />
       <MemberSignature Language="VB.NET" Value="InternalError" />
       <MemberSignature Language="C++ CLI" Value="InternalError" />
+      <MemberSignature Language="F#" Value="InternalError = 51" Usage="Microsoft.JScript.JSError.InternalError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2060,6 +2162,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidAssemblyKeyFile" />
       <MemberSignature Language="VB.NET" Value="InvalidAssemblyKeyFile" />
       <MemberSignature Language="C++ CLI" Value="InvalidAssemblyKeyFile" />
+      <MemberSignature Language="F#" Value="InvalidAssemblyKeyFile = 1268" Usage="Microsoft.JScript.JSError.InvalidAssemblyKeyFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2080,6 +2183,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidBaseTypeForEnum" />
       <MemberSignature Language="VB.NET" Value="InvalidBaseTypeForEnum" />
       <MemberSignature Language="C++ CLI" Value="InvalidBaseTypeForEnum" />
+      <MemberSignature Language="F#" Value="InvalidBaseTypeForEnum = 1213" Usage="Microsoft.JScript.JSError.InvalidBaseTypeForEnum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2101,6 +2205,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidCall" />
       <MemberSignature Language="VB.NET" Value="InvalidCall" />
       <MemberSignature Language="C++ CLI" Value="InvalidCall" />
+      <MemberSignature Language="F#" Value="InvalidCall = 5" Usage="Microsoft.JScript.JSError.InvalidCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2121,6 +2226,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidCustomAttribute" />
       <MemberSignature Language="VB.NET" Value="InvalidCustomAttribute" />
       <MemberSignature Language="C++ CLI" Value="InvalidCustomAttribute" />
+      <MemberSignature Language="F#" Value="InvalidCustomAttribute = 1143" Usage="Microsoft.JScript.JSError.InvalidCustomAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2141,6 +2247,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidCustomAttributeArgument" />
       <MemberSignature Language="VB.NET" Value="InvalidCustomAttributeArgument" />
       <MemberSignature Language="C++ CLI" Value="InvalidCustomAttributeArgument" />
+      <MemberSignature Language="F#" Value="InvalidCustomAttributeArgument = 1144" Usage="Microsoft.JScript.JSError.InvalidCustomAttributeArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2161,6 +2268,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidCustomAttributeClassOrCtor" />
       <MemberSignature Language="VB.NET" Value="InvalidCustomAttributeClassOrCtor" />
       <MemberSignature Language="C++ CLI" Value="InvalidCustomAttributeClassOrCtor" />
+      <MemberSignature Language="F#" Value="InvalidCustomAttributeClassOrCtor = 1146" Usage="Microsoft.JScript.JSError.InvalidCustomAttributeClassOrCtor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2181,6 +2289,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidCustomAttributeTarget" />
       <MemberSignature Language="VB.NET" Value="InvalidCustomAttributeTarget" />
       <MemberSignature Language="C++ CLI" Value="InvalidCustomAttributeTarget" />
+      <MemberSignature Language="F#" Value="InvalidCustomAttributeTarget = 1231" Usage="Microsoft.JScript.JSError.InvalidCustomAttributeTarget" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2201,6 +2310,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidDebugDirective" />
       <MemberSignature Language="VB.NET" Value="InvalidDebugDirective" />
       <MemberSignature Language="C++ CLI" Value="InvalidDebugDirective" />
+      <MemberSignature Language="F#" Value="InvalidDebugDirective = 1235" Usage="Microsoft.JScript.JSError.InvalidDebugDirective" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2221,6 +2331,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidElse" />
       <MemberSignature Language="VB.NET" Value="InvalidElse" />
       <MemberSignature Language="C++ CLI" Value="InvalidElse" />
+      <MemberSignature Language="F#" Value="InvalidElse = 1034" Usage="Microsoft.JScript.JSError.InvalidElse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2241,6 +2352,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidImport" />
       <MemberSignature Language="VB.NET" Value="InvalidImport" />
       <MemberSignature Language="C++ CLI" Value="InvalidImport" />
+      <MemberSignature Language="F#" Value="InvalidImport = 1229" Usage="Microsoft.JScript.JSError.InvalidImport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2261,6 +2373,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidLanguageOption" />
       <MemberSignature Language="VB.NET" Value="InvalidLanguageOption" />
       <MemberSignature Language="C++ CLI" Value="InvalidLanguageOption" />
+      <MemberSignature Language="F#" Value="InvalidLanguageOption = 1179" Usage="Microsoft.JScript.JSError.InvalidLanguageOption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2281,6 +2394,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidPositionDirective" />
       <MemberSignature Language="VB.NET" Value="InvalidPositionDirective" />
       <MemberSignature Language="C++ CLI" Value="InvalidPositionDirective" />
+      <MemberSignature Language="F#" Value="InvalidPositionDirective = 1114" Usage="Microsoft.JScript.JSError.InvalidPositionDirective" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2301,6 +2415,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidPrototype" />
       <MemberSignature Language="VB.NET" Value="InvalidPrototype" />
       <MemberSignature Language="C++ CLI" Value="InvalidPrototype" />
+      <MemberSignature Language="F#" Value="InvalidPrototype = 5023" Usage="Microsoft.JScript.JSError.InvalidPrototype" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2321,6 +2436,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.InvalidResource" />
       <MemberSignature Language="VB.NET" Value="InvalidResource" />
       <MemberSignature Language="C++ CLI" Value="InvalidResource" />
+      <MemberSignature Language="F#" Value="InvalidResource = 1262" Usage="Microsoft.JScript.JSError.InvalidResource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2341,6 +2457,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ItemNotAllowedOnExpandoClass" />
       <MemberSignature Language="VB.NET" Value="ItemNotAllowedOnExpandoClass" />
       <MemberSignature Language="C++ CLI" Value="ItemNotAllowedOnExpandoClass" />
+      <MemberSignature Language="F#" Value="ItemNotAllowedOnExpandoClass = 1152" Usage="Microsoft.JScript.JSError.ItemNotAllowedOnExpandoClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2361,6 +2478,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.KeywordUsedAsIdentifier" />
       <MemberSignature Language="VB.NET" Value="KeywordUsedAsIdentifier" />
       <MemberSignature Language="C++ CLI" Value="KeywordUsedAsIdentifier" />
+      <MemberSignature Language="F#" Value="KeywordUsedAsIdentifier = 1137" Usage="Microsoft.JScript.JSError.KeywordUsedAsIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2381,6 +2499,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MemberInitializerCannotContainFuncExpr" />
       <MemberSignature Language="VB.NET" Value="MemberInitializerCannotContainFuncExpr" />
       <MemberSignature Language="C++ CLI" Value="MemberInitializerCannotContainFuncExpr" />
+      <MemberSignature Language="F#" Value="MemberInitializerCannotContainFuncExpr = 1270" Usage="Microsoft.JScript.JSError.MemberInitializerCannotContainFuncExpr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2401,6 +2520,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MemberTypeCLSCompliantMismatch" />
       <MemberSignature Language="VB.NET" Value="MemberTypeCLSCompliantMismatch" />
       <MemberSignature Language="C++ CLI" Value="MemberTypeCLSCompliantMismatch" />
+      <MemberSignature Language="F#" Value="MemberTypeCLSCompliantMismatch = 1265" Usage="Microsoft.JScript.JSError.MemberTypeCLSCompliantMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2421,6 +2541,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MethodClashOnExpandoSuperClass" />
       <MemberSignature Language="VB.NET" Value="MethodClashOnExpandoSuperClass" />
       <MemberSignature Language="C++ CLI" Value="MethodClashOnExpandoSuperClass" />
+      <MemberSignature Language="F#" Value="MethodClashOnExpandoSuperClass = 1155" Usage="Microsoft.JScript.JSError.MethodClashOnExpandoSuperClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2441,6 +2562,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MethodInBaseIsNotVirtual" />
       <MemberSignature Language="VB.NET" Value="MethodInBaseIsNotVirtual" />
       <MemberSignature Language="C++ CLI" Value="MethodInBaseIsNotVirtual" />
+      <MemberSignature Language="F#" Value="MethodInBaseIsNotVirtual = 1174" Usage="Microsoft.JScript.JSError.MethodInBaseIsNotVirtual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2461,6 +2583,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MethodNotAllowedOnExpandoClass" />
       <MemberSignature Language="VB.NET" Value="MethodNotAllowedOnExpandoClass" />
       <MemberSignature Language="C++ CLI" Value="MethodNotAllowedOnExpandoClass" />
+      <MemberSignature Language="F#" Value="MethodNotAllowedOnExpandoClass = 1153" Usage="Microsoft.JScript.JSError.MethodNotAllowedOnExpandoClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2481,6 +2604,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MissingConstructForAttributes" />
       <MemberSignature Language="VB.NET" Value="MissingConstructForAttributes" />
       <MemberSignature Language="C++ CLI" Value="MissingConstructForAttributes" />
+      <MemberSignature Language="F#" Value="MissingConstructForAttributes = 1160" Usage="Microsoft.JScript.JSError.MissingConstructForAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2501,6 +2625,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MissingNameParameter" />
       <MemberSignature Language="VB.NET" Value="MissingNameParameter" />
       <MemberSignature Language="C++ CLI" Value="MissingNameParameter" />
+      <MemberSignature Language="F#" Value="MissingNameParameter = 5037" Usage="Microsoft.JScript.JSError.MissingNameParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2521,6 +2646,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MoreNamedParametersThanArguments" />
       <MemberSignature Language="VB.NET" Value="MoreNamedParametersThanArguments" />
       <MemberSignature Language="C++ CLI" Value="MoreNamedParametersThanArguments" />
+      <MemberSignature Language="F#" Value="MoreNamedParametersThanArguments = 5038" Usage="Microsoft.JScript.JSError.MoreNamedParametersThanArguments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2541,6 +2667,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MustBeEOL" />
       <MemberSignature Language="VB.NET" Value="MustBeEOL" />
       <MemberSignature Language="C++ CLI" Value="MustBeEOL" />
+      <MemberSignature Language="F#" Value="MustBeEOL = 1115" Usage="Microsoft.JScript.JSError.MustBeEOL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2561,6 +2688,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MustImplementMethod" />
       <MemberSignature Language="VB.NET" Value="MustImplementMethod" />
       <MemberSignature Language="C++ CLI" Value="MustImplementMethod" />
+      <MemberSignature Language="F#" Value="MustImplementMethod = 1128" Usage="Microsoft.JScript.JSError.MustImplementMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2581,6 +2709,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.MustProvideNameForNamedParameter" />
       <MemberSignature Language="VB.NET" Value="MustProvideNameForNamedParameter" />
       <MemberSignature Language="C++ CLI" Value="MustProvideNameForNamedParameter" />
+      <MemberSignature Language="F#" Value="MustProvideNameForNamedParameter = 5035" Usage="Microsoft.JScript.JSError.MustProvideNameForNamedParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2601,6 +2730,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NeedArrayObject" />
       <MemberSignature Language="VB.NET" Value="NeedArrayObject" />
       <MemberSignature Language="C++ CLI" Value="NeedArrayObject" />
+      <MemberSignature Language="F#" Value="NeedArrayObject = 5031" Usage="Microsoft.JScript.JSError.NeedArrayObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2621,6 +2751,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NeedCompileTimeConstant" />
       <MemberSignature Language="VB.NET" Value="NeedCompileTimeConstant" />
       <MemberSignature Language="C++ CLI" Value="NeedCompileTimeConstant" />
+      <MemberSignature Language="F#" Value="NeedCompileTimeConstant = 1110" Usage="Microsoft.JScript.JSError.NeedCompileTimeConstant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2641,6 +2772,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NeedInstance" />
       <MemberSignature Language="VB.NET" Value="NeedInstance" />
       <MemberSignature Language="C++ CLI" Value="NeedInstance" />
+      <MemberSignature Language="F#" Value="NeedInstance = 1210" Usage="Microsoft.JScript.JSError.NeedInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2661,6 +2793,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NeedInterface" />
       <MemberSignature Language="VB.NET" Value="NeedInterface" />
       <MemberSignature Language="C++ CLI" Value="NeedInterface" />
+      <MemberSignature Language="F#" Value="NeedInterface = 1129" Usage="Microsoft.JScript.JSError.NeedInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2681,6 +2814,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NeedObject" />
       <MemberSignature Language="VB.NET" Value="NeedObject" />
       <MemberSignature Language="C++ CLI" Value="NeedObject" />
+      <MemberSignature Language="F#" Value="NeedObject = 424" Usage="Microsoft.JScript.JSError.NeedObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2701,6 +2835,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NeedType" />
       <MemberSignature Language="VB.NET" Value="NeedType" />
       <MemberSignature Language="C++ CLI" Value="NeedType" />
+      <MemberSignature Language="F#" Value="NeedType = 1112" Usage="Microsoft.JScript.JSError.NeedType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2721,6 +2856,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NestedInstanceTypeCannotBeExtendedByStatic" />
       <MemberSignature Language="VB.NET" Value="NestedInstanceTypeCannotBeExtendedByStatic" />
       <MemberSignature Language="C++ CLI" Value="NestedInstanceTypeCannotBeExtendedByStatic" />
+      <MemberSignature Language="F#" Value="NestedInstanceTypeCannotBeExtendedByStatic = 1237" Usage="Microsoft.JScript.JSError.NestedInstanceTypeCannotBeExtendedByStatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2741,6 +2877,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NewNotSpecifiedInMethodDeclaration" />
       <MemberSignature Language="VB.NET" Value="NewNotSpecifiedInMethodDeclaration" />
       <MemberSignature Language="C++ CLI" Value="NewNotSpecifiedInMethodDeclaration" />
+      <MemberSignature Language="F#" Value="NewNotSpecifiedInMethodDeclaration = 1173" Usage="Microsoft.JScript.JSError.NewNotSpecifiedInMethodDeclaration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2761,6 +2898,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoAt" />
       <MemberSignature Language="VB.NET" Value="NoAt" />
       <MemberSignature Language="C++ CLI" Value="NoAt" />
+      <MemberSignature Language="F#" Value="NoAt = 1032" Usage="Microsoft.JScript.JSError.NoAt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2781,6 +2919,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoCatch" />
       <MemberSignature Language="VB.NET" Value="NoCatch" />
       <MemberSignature Language="C++ CLI" Value="NoCatch" />
+      <MemberSignature Language="F#" Value="NoCatch = 1033" Usage="Microsoft.JScript.JSError.NoCatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2801,6 +2940,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoCcEnd" />
       <MemberSignature Language="VB.NET" Value="NoCcEnd" />
       <MemberSignature Language="C++ CLI" Value="NoCcEnd" />
+      <MemberSignature Language="F#" Value="NoCcEnd = 1029" Usage="Microsoft.JScript.JSError.NoCcEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2821,6 +2961,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoColon" />
       <MemberSignature Language="VB.NET" Value="NoColon" />
       <MemberSignature Language="C++ CLI" Value="NoColon" />
+      <MemberSignature Language="F#" Value="NoColon = 1003" Usage="Microsoft.JScript.JSError.NoColon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2841,6 +2982,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoComma" />
       <MemberSignature Language="VB.NET" Value="NoComma" />
       <MemberSignature Language="C++ CLI" Value="NoComma" />
+      <MemberSignature Language="F#" Value="NoComma = 1100" Usage="Microsoft.JScript.JSError.NoComma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2861,6 +3003,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoCommaOrTypeDefinitionError" />
       <MemberSignature Language="VB.NET" Value="NoCommaOrTypeDefinitionError" />
       <MemberSignature Language="C++ CLI" Value="NoCommaOrTypeDefinitionError" />
+      <MemberSignature Language="F#" Value="NoCommaOrTypeDefinitionError = 1191" Usage="Microsoft.JScript.JSError.NoCommaOrTypeDefinitionError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2881,6 +3024,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoCommentEnd" />
       <MemberSignature Language="VB.NET" Value="NoCommentEnd" />
       <MemberSignature Language="C++ CLI" Value="NoCommentEnd" />
+      <MemberSignature Language="F#" Value="NoCommentEnd = 1016" Usage="Microsoft.JScript.JSError.NoCommentEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2901,6 +3045,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoConstructor" />
       <MemberSignature Language="VB.NET" Value="NoConstructor" />
       <MemberSignature Language="C++ CLI" Value="NoConstructor" />
+      <MemberSignature Language="F#" Value="NoConstructor = 5032" Usage="Microsoft.JScript.JSError.NoConstructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2921,6 +3066,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoEqual" />
       <MemberSignature Language="VB.NET" Value="NoEqual" />
       <MemberSignature Language="C++ CLI" Value="NoEqual" />
+      <MemberSignature Language="F#" Value="NoEqual = 1011" Usage="Microsoft.JScript.JSError.NoEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2941,6 +3087,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoError" />
       <MemberSignature Language="VB.NET" Value="NoError" />
       <MemberSignature Language="C++ CLI" Value="NoError" />
+      <MemberSignature Language="F#" Value="NoError = 0" Usage="Microsoft.JScript.JSError.NoError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2961,6 +3108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoFuncEvalAllowed" />
       <MemberSignature Language="VB.NET" Value="NoFuncEvalAllowed" />
       <MemberSignature Language="C++ CLI" Value="NoFuncEvalAllowed" />
+      <MemberSignature Language="F#" Value="NoFuncEvalAllowed = 6006" Usage="Microsoft.JScript.JSError.NoFuncEvalAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2981,6 +3129,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoIdentifier" />
       <MemberSignature Language="VB.NET" Value="NoIdentifier" />
       <MemberSignature Language="C++ CLI" Value="NoIdentifier" />
+      <MemberSignature Language="F#" Value="NoIdentifier = 1010" Usage="Microsoft.JScript.JSError.NoIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3001,6 +3150,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoLabel" />
       <MemberSignature Language="VB.NET" Value="NoLabel" />
       <MemberSignature Language="C++ CLI" Value="NoLabel" />
+      <MemberSignature Language="F#" Value="NoLabel = 1026" Usage="Microsoft.JScript.JSError.NoLabel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3021,6 +3171,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoLeftCurly" />
       <MemberSignature Language="VB.NET" Value="NoLeftCurly" />
       <MemberSignature Language="C++ CLI" Value="NoLeftCurly" />
+      <MemberSignature Language="F#" Value="NoLeftCurly = 1008" Usage="Microsoft.JScript.JSError.NoLeftCurly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3041,6 +3192,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoLeftParen" />
       <MemberSignature Language="VB.NET" Value="NoLeftParen" />
       <MemberSignature Language="C++ CLI" Value="NoLeftParen" />
+      <MemberSignature Language="F#" Value="NoLeftParen = 1005" Usage="Microsoft.JScript.JSError.NoLeftParen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3061,6 +3213,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoMemberIdentifier" />
       <MemberSignature Language="VB.NET" Value="NoMemberIdentifier" />
       <MemberSignature Language="C++ CLI" Value="NoMemberIdentifier" />
+      <MemberSignature Language="F#" Value="NoMemberIdentifier = 1028" Usage="Microsoft.JScript.JSError.NoMemberIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3081,6 +3234,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoMethodInBaseToNew" />
       <MemberSignature Language="VB.NET" Value="NoMethodInBaseToNew" />
       <MemberSignature Language="C++ CLI" Value="NoMethodInBaseToNew" />
+      <MemberSignature Language="F#" Value="NoMethodInBaseToNew = 1175" Usage="Microsoft.JScript.JSError.NoMethodInBaseToNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3101,6 +3255,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoMethodInBaseToOverride" />
       <MemberSignature Language="VB.NET" Value="NoMethodInBaseToOverride" />
       <MemberSignature Language="C++ CLI" Value="NoMethodInBaseToOverride" />
+      <MemberSignature Language="F#" Value="NoMethodInBaseToOverride = 1180" Usage="Microsoft.JScript.JSError.NoMethodInBaseToOverride" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3121,6 +3276,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NonCLSCompliantMember" />
       <MemberSignature Language="VB.NET" Value="NonCLSCompliantMember" />
       <MemberSignature Language="C++ CLI" Value="NonCLSCompliantMember" />
+      <MemberSignature Language="F#" Value="NonCLSCompliantMember = 1163" Usage="Microsoft.JScript.JSError.NonCLSCompliantMember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3141,6 +3297,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NonCLSCompliantType" />
       <MemberSignature Language="VB.NET" Value="NonCLSCompliantType" />
       <MemberSignature Language="C++ CLI" Value="NonCLSCompliantType" />
+      <MemberSignature Language="F#" Value="NonCLSCompliantType = 1264" Usage="Microsoft.JScript.JSError.NonCLSCompliantType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3161,6 +3318,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NonClsException" />
       <MemberSignature Language="VB.NET" Value="NonClsException" />
       <MemberSignature Language="C++ CLI" Value="NonClsException" />
+      <MemberSignature Language="F#" Value="NonClsException = 5046" Usage="Microsoft.JScript.JSError.NonClsException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3181,6 +3339,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NonStaticWithTypeName" />
       <MemberSignature Language="VB.NET" Value="NonStaticWithTypeName" />
       <MemberSignature Language="C++ CLI" Value="NonStaticWithTypeName" />
+      <MemberSignature Language="F#" Value="NonStaticWithTypeName = 1245" Usage="Microsoft.JScript.JSError.NonStaticWithTypeName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3201,6 +3360,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NonSupportedInDebugger" />
       <MemberSignature Language="VB.NET" Value="NonSupportedInDebugger" />
       <MemberSignature Language="C++ CLI" Value="NonSupportedInDebugger" />
+      <MemberSignature Language="F#" Value="NonSupportedInDebugger = 5039" Usage="Microsoft.JScript.JSError.NonSupportedInDebugger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3221,6 +3381,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoRightBracket" />
       <MemberSignature Language="VB.NET" Value="NoRightBracket" />
       <MemberSignature Language="C++ CLI" Value="NoRightBracket" />
+      <MemberSignature Language="F#" Value="NoRightBracket = 1007" Usage="Microsoft.JScript.JSError.NoRightBracket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3241,6 +3402,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoRightBracketOrComma" />
       <MemberSignature Language="VB.NET" Value="NoRightBracketOrComma" />
       <MemberSignature Language="C++ CLI" Value="NoRightBracketOrComma" />
+      <MemberSignature Language="F#" Value="NoRightBracketOrComma = 1194" Usage="Microsoft.JScript.JSError.NoRightBracketOrComma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3261,6 +3423,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoRightCurly" />
       <MemberSignature Language="VB.NET" Value="NoRightCurly" />
       <MemberSignature Language="C++ CLI" Value="NoRightCurly" />
+      <MemberSignature Language="F#" Value="NoRightCurly = 1009" Usage="Microsoft.JScript.JSError.NoRightCurly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3281,6 +3444,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoRightParen" />
       <MemberSignature Language="VB.NET" Value="NoRightParen" />
       <MemberSignature Language="C++ CLI" Value="NoRightParen" />
+      <MemberSignature Language="F#" Value="NoRightParen = 1006" Usage="Microsoft.JScript.JSError.NoRightParen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3301,6 +3465,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoRightParenOrComma" />
       <MemberSignature Language="VB.NET" Value="NoRightParenOrComma" />
       <MemberSignature Language="C++ CLI" Value="NoRightParenOrComma" />
+      <MemberSignature Language="F#" Value="NoRightParenOrComma = 1193" Usage="Microsoft.JScript.JSError.NoRightParenOrComma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3321,6 +3486,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoSemicolon" />
       <MemberSignature Language="VB.NET" Value="NoSemicolon" />
       <MemberSignature Language="C++ CLI" Value="NoSemicolon" />
+      <MemberSignature Language="F#" Value="NoSemicolon = 1004" Usage="Microsoft.JScript.JSError.NoSemicolon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3341,6 +3507,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoSuchMember" />
       <MemberSignature Language="VB.NET" Value="NoSuchMember" />
       <MemberSignature Language="C++ CLI" Value="NoSuchMember" />
+      <MemberSignature Language="F#" Value="NoSuchMember = 1151" Usage="Microsoft.JScript.JSError.NoSuchMember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3361,6 +3528,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoSuchStaticMember" />
       <MemberSignature Language="VB.NET" Value="NoSuchStaticMember" />
       <MemberSignature Language="C++ CLI" Value="NoSuchStaticMember" />
+      <MemberSignature Language="F#" Value="NoSuchStaticMember = 1246" Usage="Microsoft.JScript.JSError.NoSuchStaticMember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3381,6 +3549,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoSuchType" />
       <MemberSignature Language="VB.NET" Value="NoSuchType" />
       <MemberSignature Language="C++ CLI" Value="NoSuchType" />
+      <MemberSignature Language="F#" Value="NoSuchType = 1241" Usage="Microsoft.JScript.JSError.NoSuchType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3401,6 +3570,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotAccessible" />
       <MemberSignature Language="VB.NET" Value="NotAccessible" />
       <MemberSignature Language="C++ CLI" Value="NotAccessible" />
+      <MemberSignature Language="F#" Value="NotAccessible = 1123" Usage="Microsoft.JScript.JSError.NotAccessible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3421,6 +3591,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotAllowedInSuperConstructorCall" />
       <MemberSignature Language="VB.NET" Value="NotAllowedInSuperConstructorCall" />
       <MemberSignature Language="C++ CLI" Value="NotAllowedInSuperConstructorCall" />
+      <MemberSignature Language="F#" Value="NotAllowedInSuperConstructorCall = 1140" Usage="Microsoft.JScript.JSError.NotAllowedInSuperConstructorCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3441,6 +3612,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotAnExpandoFunction" />
       <MemberSignature Language="VB.NET" Value="NotAnExpandoFunction" />
       <MemberSignature Language="C++ CLI" Value="NotAnExpandoFunction" />
+      <MemberSignature Language="F#" Value="NotAnExpandoFunction = 1252" Usage="Microsoft.JScript.JSError.NotAnExpandoFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3461,6 +3633,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotCollection" />
       <MemberSignature Language="VB.NET" Value="NotCollection" />
       <MemberSignature Language="C++ CLI" Value="NotCollection" />
+      <MemberSignature Language="F#" Value="NotCollection = 451" Usage="Microsoft.JScript.JSError.NotCollection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3481,6 +3654,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotConst" />
       <MemberSignature Language="VB.NET" Value="NotConst" />
       <MemberSignature Language="C++ CLI" Value="NotConst" />
+      <MemberSignature Language="F#" Value="NotConst = 1031" Usage="Microsoft.JScript.JSError.NotConst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3501,6 +3675,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotDeletable" />
       <MemberSignature Language="VB.NET" Value="NotDeletable" />
       <MemberSignature Language="C++ CLI" Value="NotDeletable" />
+      <MemberSignature Language="F#" Value="NotDeletable = 1164" Usage="Microsoft.JScript.JSError.NotDeletable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3521,6 +3696,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotIndexable" />
       <MemberSignature Language="VB.NET" Value="NotIndexable" />
       <MemberSignature Language="C++ CLI" Value="NotIndexable" />
+      <MemberSignature Language="F#" Value="NotIndexable = 1158" Usage="Microsoft.JScript.JSError.NotIndexable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3541,6 +3717,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotInsideClass" />
       <MemberSignature Language="VB.NET" Value="NotInsideClass" />
       <MemberSignature Language="C++ CLI" Value="NotInsideClass" />
+      <MemberSignature Language="F#" Value="NotInsideClass = 1113" Usage="Microsoft.JScript.JSError.NotInsideClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3561,6 +3738,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotMeantToBeCalledDirectly" />
       <MemberSignature Language="VB.NET" Value="NotMeantToBeCalledDirectly" />
       <MemberSignature Language="C++ CLI" Value="NotMeantToBeCalledDirectly" />
+      <MemberSignature Language="F#" Value="NotMeantToBeCalledDirectly = 1141" Usage="Microsoft.JScript.JSError.NotMeantToBeCalledDirectly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3581,6 +3759,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotOKToCallSuper" />
       <MemberSignature Language="VB.NET" Value="NotOKToCallSuper" />
       <MemberSignature Language="C++ CLI" Value="NotOKToCallSuper" />
+      <MemberSignature Language="F#" Value="NotOKToCallSuper = 1188" Usage="Microsoft.JScript.JSError.NotOKToCallSuper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3601,6 +3780,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotValidForConstructor" />
       <MemberSignature Language="VB.NET" Value="NotValidForConstructor" />
       <MemberSignature Language="C++ CLI" Value="NotValidForConstructor" />
+      <MemberSignature Language="F#" Value="NotValidForConstructor = 1181" Usage="Microsoft.JScript.JSError.NotValidForConstructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3621,6 +3801,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotValidVersionString" />
       <MemberSignature Language="VB.NET" Value="NotValidVersionString" />
       <MemberSignature Language="C++ CLI" Value="NotValidVersionString" />
+      <MemberSignature Language="F#" Value="NotValidVersionString = 1253" Usage="Microsoft.JScript.JSError.NotValidVersionString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3641,6 +3822,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NotYetImplemented" />
       <MemberSignature Language="VB.NET" Value="NotYetImplemented" />
       <MemberSignature Language="C++ CLI" Value="NotYetImplemented" />
+      <MemberSignature Language="F#" Value="NotYetImplemented = 5034" Usage="Microsoft.JScript.JSError.NotYetImplemented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3661,6 +3843,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoVarInEnum" />
       <MemberSignature Language="VB.NET" Value="NoVarInEnum" />
       <MemberSignature Language="C++ CLI" Value="NoVarInEnum" />
+      <MemberSignature Language="F#" Value="NoVarInEnum = 1228" Usage="Microsoft.JScript.JSError.NoVarInEnum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3682,6 +3865,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NoWhile" />
       <MemberSignature Language="VB.NET" Value="NoWhile" />
       <MemberSignature Language="C++ CLI" Value="NoWhile" />
+      <MemberSignature Language="F#" Value="NoWhile = 1024" Usage="Microsoft.JScript.JSError.NoWhile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3702,6 +3886,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.NumberExpected" />
       <MemberSignature Language="VB.NET" Value="NumberExpected" />
       <MemberSignature Language="C++ CLI" Value="NumberExpected" />
+      <MemberSignature Language="F#" Value="NumberExpected = 5001" Usage="Microsoft.JScript.JSError.NumberExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3722,6 +3907,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ObjectExpected" />
       <MemberSignature Language="VB.NET" Value="ObjectExpected" />
       <MemberSignature Language="C++ CLI" Value="ObjectExpected" />
+      <MemberSignature Language="F#" Value="ObjectExpected = 5007" Usage="Microsoft.JScript.JSError.ObjectExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3742,6 +3928,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.OctalLiteralsAreDeprecated" />
       <MemberSignature Language="VB.NET" Value="OctalLiteralsAreDeprecated" />
       <MemberSignature Language="C++ CLI" Value="OctalLiteralsAreDeprecated" />
+      <MemberSignature Language="F#" Value="OctalLiteralsAreDeprecated = 1186" Usage="Microsoft.JScript.JSError.OctalLiteralsAreDeprecated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3762,6 +3949,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.OLENoPropOrMethod" />
       <MemberSignature Language="VB.NET" Value="OLENoPropOrMethod" />
       <MemberSignature Language="C++ CLI" Value="OLENoPropOrMethod" />
+      <MemberSignature Language="F#" Value="OLENoPropOrMethod = 438" Usage="Microsoft.JScript.JSError.OLENoPropOrMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3782,6 +3970,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.OnlyClassesAllowed" />
       <MemberSignature Language="VB.NET" Value="OnlyClassesAllowed" />
       <MemberSignature Language="C++ CLI" Value="OnlyClassesAllowed" />
+      <MemberSignature Language="F#" Value="OnlyClassesAllowed = 1161" Usage="Microsoft.JScript.JSError.OnlyClassesAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3802,6 +3991,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.OnlyClassesAndPackagesAllowed" />
       <MemberSignature Language="VB.NET" Value="OnlyClassesAndPackagesAllowed" />
       <MemberSignature Language="C++ CLI" Value="OnlyClassesAndPackagesAllowed" />
+      <MemberSignature Language="F#" Value="OnlyClassesAndPackagesAllowed = 1234" Usage="Microsoft.JScript.JSError.OnlyClassesAndPackagesAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3822,6 +4012,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.OutOfMemory" />
       <MemberSignature Language="VB.NET" Value="OutOfMemory" />
       <MemberSignature Language="C++ CLI" Value="OutOfMemory" />
+      <MemberSignature Language="F#" Value="OutOfMemory = 7" Usage="Microsoft.JScript.JSError.OutOfMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3842,6 +4033,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.OutOfStack" />
       <MemberSignature Language="VB.NET" Value="OutOfStack" />
       <MemberSignature Language="C++ CLI" Value="OutOfStack" />
+      <MemberSignature Language="F#" Value="OutOfStack = 28" Usage="Microsoft.JScript.JSError.OutOfStack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3862,6 +4054,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.OverrideAndHideUsedTogether" />
       <MemberSignature Language="VB.NET" Value="OverrideAndHideUsedTogether" />
       <MemberSignature Language="C++ CLI" Value="OverrideAndHideUsedTogether" />
+      <MemberSignature Language="F#" Value="OverrideAndHideUsedTogether = 1178" Usage="Microsoft.JScript.JSError.OverrideAndHideUsedTogether" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3882,6 +4075,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.PackageExpected" />
       <MemberSignature Language="VB.NET" Value="PackageExpected" />
       <MemberSignature Language="C++ CLI" Value="PackageExpected" />
+      <MemberSignature Language="F#" Value="PackageExpected = 1165" Usage="Microsoft.JScript.JSError.PackageExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3902,6 +4096,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.PackageInWrongContext" />
       <MemberSignature Language="VB.NET" Value="PackageInWrongContext" />
       <MemberSignature Language="C++ CLI" Value="PackageInWrongContext" />
+      <MemberSignature Language="F#" Value="PackageInWrongContext = 1232" Usage="Microsoft.JScript.JSError.PackageInWrongContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3922,6 +4117,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ParamListNotLast" />
       <MemberSignature Language="VB.NET" Value="ParamListNotLast" />
       <MemberSignature Language="C++ CLI" Value="ParamListNotLast" />
+      <MemberSignature Language="F#" Value="ParamListNotLast = 1240" Usage="Microsoft.JScript.JSError.ParamListNotLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3942,6 +4138,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.PossibleBadConversion" />
       <MemberSignature Language="VB.NET" Value="PossibleBadConversion" />
       <MemberSignature Language="C++ CLI" Value="PossibleBadConversion" />
+      <MemberSignature Language="F#" Value="PossibleBadConversion = 1260" Usage="Microsoft.JScript.JSError.PossibleBadConversion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3962,6 +4159,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.PossibleBadConversionFromString" />
       <MemberSignature Language="VB.NET" Value="PossibleBadConversionFromString" />
       <MemberSignature Language="C++ CLI" Value="PossibleBadConversionFromString" />
+      <MemberSignature Language="F#" Value="PossibleBadConversionFromString = 1261" Usage="Microsoft.JScript.JSError.PossibleBadConversionFromString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -3982,6 +4180,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.PrecisionOutOfRange" />
       <MemberSignature Language="VB.NET" Value="PrecisionOutOfRange" />
       <MemberSignature Language="C++ CLI" Value="PrecisionOutOfRange" />
+      <MemberSignature Language="F#" Value="PrecisionOutOfRange = 5027" Usage="Microsoft.JScript.JSError.PrecisionOutOfRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4002,6 +4201,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.PropertyLevelAttributesMustBeOnGetter" />
       <MemberSignature Language="VB.NET" Value="PropertyLevelAttributesMustBeOnGetter" />
       <MemberSignature Language="C++ CLI" Value="PropertyLevelAttributesMustBeOnGetter" />
+      <MemberSignature Language="F#" Value="PropertyLevelAttributesMustBeOnGetter = 1238" Usage="Microsoft.JScript.JSError.PropertyLevelAttributesMustBeOnGetter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4022,6 +4222,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.RefParamsNonSupportedInDebugger" />
       <MemberSignature Language="VB.NET" Value="RefParamsNonSupportedInDebugger" />
       <MemberSignature Language="C++ CLI" Value="RefParamsNonSupportedInDebugger" />
+      <MemberSignature Language="F#" Value="RefParamsNonSupportedInDebugger = 5043" Usage="Microsoft.JScript.JSError.RefParamsNonSupportedInDebugger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4042,6 +4243,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.RegExpExpected" />
       <MemberSignature Language="VB.NET" Value="RegExpExpected" />
       <MemberSignature Language="C++ CLI" Value="RegExpExpected" />
+      <MemberSignature Language="F#" Value="RegExpExpected = 5016" Usage="Microsoft.JScript.JSError.RegExpExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4063,6 +4265,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.RegExpSyntax" />
       <MemberSignature Language="VB.NET" Value="RegExpSyntax" />
       <MemberSignature Language="C++ CLI" Value="RegExpSyntax" />
+      <MemberSignature Language="F#" Value="RegExpSyntax = 5017" Usage="Microsoft.JScript.JSError.RegExpSyntax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4083,6 +4286,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.ShouldBeAbstract" />
       <MemberSignature Language="VB.NET" Value="ShouldBeAbstract" />
       <MemberSignature Language="C++ CLI" Value="ShouldBeAbstract" />
+      <MemberSignature Language="F#" Value="ShouldBeAbstract = 1223" Usage="Microsoft.JScript.JSError.ShouldBeAbstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4103,6 +4307,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.SideEffectsDisallowed" />
       <MemberSignature Language="VB.NET" Value="SideEffectsDisallowed" />
       <MemberSignature Language="C++ CLI" Value="SideEffectsDisallowed" />
+      <MemberSignature Language="F#" Value="SideEffectsDisallowed = 6012" Usage="Microsoft.JScript.JSError.SideEffectsDisallowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4123,6 +4328,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.StaticIsAlreadyFinal" />
       <MemberSignature Language="VB.NET" Value="StaticIsAlreadyFinal" />
       <MemberSignature Language="C++ CLI" Value="StaticIsAlreadyFinal" />
+      <MemberSignature Language="F#" Value="StaticIsAlreadyFinal = 1217" Usage="Microsoft.JScript.JSError.StaticIsAlreadyFinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4143,6 +4349,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.StaticMethodsCannotHide" />
       <MemberSignature Language="VB.NET" Value="StaticMethodsCannotHide" />
       <MemberSignature Language="C++ CLI" Value="StaticMethodsCannotHide" />
+      <MemberSignature Language="F#" Value="StaticMethodsCannotHide = 1219" Usage="Microsoft.JScript.JSError.StaticMethodsCannotHide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4163,6 +4370,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.StaticMethodsCannotOverride" />
       <MemberSignature Language="VB.NET" Value="StaticMethodsCannotOverride" />
       <MemberSignature Language="C++ CLI" Value="StaticMethodsCannotOverride" />
+      <MemberSignature Language="F#" Value="StaticMethodsCannotOverride = 1218" Usage="Microsoft.JScript.JSError.StaticMethodsCannotOverride" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4183,6 +4391,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.StaticMissingInStaticInit" />
       <MemberSignature Language="VB.NET" Value="StaticMissingInStaticInit" />
       <MemberSignature Language="C++ CLI" Value="StaticMissingInStaticInit" />
+      <MemberSignature Language="F#" Value="StaticMissingInStaticInit = 1159" Usage="Microsoft.JScript.JSError.StaticMissingInStaticInit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4203,6 +4412,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.StaticRequiresTypeName" />
       <MemberSignature Language="VB.NET" Value="StaticRequiresTypeName" />
       <MemberSignature Language="C++ CLI" Value="StaticRequiresTypeName" />
+      <MemberSignature Language="F#" Value="StaticRequiresTypeName = 1244" Usage="Microsoft.JScript.JSError.StaticRequiresTypeName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4223,6 +4433,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.StaticVarNotAvailable" />
       <MemberSignature Language="VB.NET" Value="StaticVarNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="StaticVarNotAvailable" />
+      <MemberSignature Language="F#" Value="StaticVarNotAvailable = 6009" Usage="Microsoft.JScript.JSError.StaticVarNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4243,6 +4454,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.StringConcatIsSlow" />
       <MemberSignature Language="VB.NET" Value="StringConcatIsSlow" />
       <MemberSignature Language="C++ CLI" Value="StringConcatIsSlow" />
+      <MemberSignature Language="F#" Value="StringConcatIsSlow = 1255" Usage="Microsoft.JScript.JSError.StringConcatIsSlow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4263,6 +4475,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.StringExpected" />
       <MemberSignature Language="VB.NET" Value="StringExpected" />
       <MemberSignature Language="C++ CLI" Value="StringExpected" />
+      <MemberSignature Language="F#" Value="StringExpected = 5005" Usage="Microsoft.JScript.JSError.StringExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4283,6 +4496,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.SuperClassConstructorNotAccessible" />
       <MemberSignature Language="VB.NET" Value="SuperClassConstructorNotAccessible" />
       <MemberSignature Language="C++ CLI" Value="SuperClassConstructorNotAccessible" />
+      <MemberSignature Language="F#" Value="SuperClassConstructorNotAccessible = 1185" Usage="Microsoft.JScript.JSError.SuperClassConstructorNotAccessible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4303,6 +4517,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.SuspectAssignment" />
       <MemberSignature Language="VB.NET" Value="SuspectAssignment" />
       <MemberSignature Language="C++ CLI" Value="SuspectAssignment" />
+      <MemberSignature Language="F#" Value="SuspectAssignment = 1206" Usage="Microsoft.JScript.JSError.SuspectAssignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4324,6 +4539,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.SuspectLoopCondition" />
       <MemberSignature Language="VB.NET" Value="SuspectLoopCondition" />
       <MemberSignature Language="C++ CLI" Value="SuspectLoopCondition" />
+      <MemberSignature Language="F#" Value="SuspectLoopCondition = 1247" Usage="Microsoft.JScript.JSError.SuspectLoopCondition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4344,6 +4560,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.SuspectSemicolon" />
       <MemberSignature Language="VB.NET" Value="SuspectSemicolon" />
       <MemberSignature Language="C++ CLI" Value="SuspectSemicolon" />
+      <MemberSignature Language="F#" Value="SuspectSemicolon = 1207" Usage="Microsoft.JScript.JSError.SuspectSemicolon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4364,6 +4581,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.SyntaxError" />
       <MemberSignature Language="VB.NET" Value="SyntaxError" />
       <MemberSignature Language="C++ CLI" Value="SyntaxError" />
+      <MemberSignature Language="F#" Value="SyntaxError = 1002" Usage="Microsoft.JScript.JSError.SyntaxError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4384,6 +4602,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.TooFewParameters" />
       <MemberSignature Language="VB.NET" Value="TooFewParameters" />
       <MemberSignature Language="C++ CLI" Value="TooFewParameters" />
+      <MemberSignature Language="F#" Value="TooFewParameters = 1204" Usage="Microsoft.JScript.JSError.TooFewParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4404,6 +4623,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.TooManyParameters" />
       <MemberSignature Language="VB.NET" Value="TooManyParameters" />
       <MemberSignature Language="C++ CLI" Value="TooManyParameters" />
+      <MemberSignature Language="F#" Value="TooManyParameters = 1148" Usage="Microsoft.JScript.JSError.TooManyParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4424,6 +4644,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.TooManyTokensSkipped" />
       <MemberSignature Language="VB.NET" Value="TooManyTokensSkipped" />
       <MemberSignature Language="C++ CLI" Value="TooManyTokensSkipped" />
+      <MemberSignature Language="F#" Value="TooManyTokensSkipped = 1197" Usage="Microsoft.JScript.JSError.TooManyTokensSkipped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4444,6 +4665,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.TypeAssemblyCLSCompliantMismatch" />
       <MemberSignature Language="VB.NET" Value="TypeAssemblyCLSCompliantMismatch" />
       <MemberSignature Language="C++ CLI" Value="TypeAssemblyCLSCompliantMismatch" />
+      <MemberSignature Language="F#" Value="TypeAssemblyCLSCompliantMismatch = 1266" Usage="Microsoft.JScript.JSError.TypeAssemblyCLSCompliantMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4464,6 +4686,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.TypeCannotBeExtended" />
       <MemberSignature Language="VB.NET" Value="TypeCannotBeExtended" />
       <MemberSignature Language="C++ CLI" Value="TypeCannotBeExtended" />
+      <MemberSignature Language="F#" Value="TypeCannotBeExtended = 1134" Usage="Microsoft.JScript.JSError.TypeCannotBeExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4484,6 +4707,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.TypeMismatch" />
       <MemberSignature Language="VB.NET" Value="TypeMismatch" />
       <MemberSignature Language="C++ CLI" Value="TypeMismatch" />
+      <MemberSignature Language="F#" Value="TypeMismatch = 13" Usage="Microsoft.JScript.JSError.TypeMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4504,6 +4728,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.TypeNameTooLong" />
       <MemberSignature Language="VB.NET" Value="TypeNameTooLong" />
       <MemberSignature Language="C++ CLI" Value="TypeNameTooLong" />
+      <MemberSignature Language="F#" Value="TypeNameTooLong = 1269" Usage="Microsoft.JScript.JSError.TypeNameTooLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4524,6 +4749,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.TypeObjectNotAvailable" />
       <MemberSignature Language="VB.NET" Value="TypeObjectNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="TypeObjectNotAvailable" />
+      <MemberSignature Language="F#" Value="TypeObjectNotAvailable = 6010" Usage="Microsoft.JScript.JSError.TypeObjectNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4544,6 +4770,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.UncaughtException" />
       <MemberSignature Language="VB.NET" Value="UncaughtException" />
       <MemberSignature Language="C++ CLI" Value="UncaughtException" />
+      <MemberSignature Language="F#" Value="UncaughtException = 5022" Usage="Microsoft.JScript.JSError.UncaughtException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4564,6 +4791,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.UndeclaredVariable" />
       <MemberSignature Language="VB.NET" Value="UndeclaredVariable" />
       <MemberSignature Language="C++ CLI" Value="UndeclaredVariable" />
+      <MemberSignature Language="F#" Value="UndeclaredVariable = 1135" Usage="Microsoft.JScript.JSError.UndeclaredVariable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4584,6 +4812,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.UndefinedIdentifier" />
       <MemberSignature Language="VB.NET" Value="UndefinedIdentifier" />
       <MemberSignature Language="C++ CLI" Value="UndefinedIdentifier" />
+      <MemberSignature Language="F#" Value="UndefinedIdentifier = 5009" Usage="Microsoft.JScript.JSError.UndefinedIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4604,6 +4833,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.UnexpectedSemicolon" />
       <MemberSignature Language="VB.NET" Value="UnexpectedSemicolon" />
       <MemberSignature Language="C++ CLI" Value="UnexpectedSemicolon" />
+      <MemberSignature Language="F#" Value="UnexpectedSemicolon = 1196" Usage="Microsoft.JScript.JSError.UnexpectedSemicolon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4624,6 +4854,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.UnreachableCatch" />
       <MemberSignature Language="VB.NET" Value="UnreachableCatch" />
       <MemberSignature Language="C++ CLI" Value="UnreachableCatch" />
+      <MemberSignature Language="F#" Value="UnreachableCatch = 1133" Usage="Microsoft.JScript.JSError.UnreachableCatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4644,6 +4875,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.UnterminatedString" />
       <MemberSignature Language="VB.NET" Value="UnterminatedString" />
       <MemberSignature Language="C++ CLI" Value="UnterminatedString" />
+      <MemberSignature Language="F#" Value="UnterminatedString = 1015" Usage="Microsoft.JScript.JSError.UnterminatedString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4664,6 +4896,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.URIDecodeError" />
       <MemberSignature Language="VB.NET" Value="URIDecodeError" />
       <MemberSignature Language="C++ CLI" Value="URIDecodeError" />
+      <MemberSignature Language="F#" Value="URIDecodeError = 5025" Usage="Microsoft.JScript.JSError.URIDecodeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4684,6 +4917,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.URIEncodeError" />
       <MemberSignature Language="VB.NET" Value="URIEncodeError" />
       <MemberSignature Language="C++ CLI" Value="URIEncodeError" />
+      <MemberSignature Language="F#" Value="URIEncodeError = 5024" Usage="Microsoft.JScript.JSError.URIEncodeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4704,6 +4938,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.UselessAssignment" />
       <MemberSignature Language="VB.NET" Value="UselessAssignment" />
       <MemberSignature Language="C++ CLI" Value="UselessAssignment" />
+      <MemberSignature Language="F#" Value="UselessAssignment = 1205" Usage="Microsoft.JScript.JSError.UselessAssignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4724,6 +4959,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.UselessExpression" />
       <MemberSignature Language="VB.NET" Value="UselessExpression" />
       <MemberSignature Language="C++ CLI" Value="UselessExpression" />
+      <MemberSignature Language="F#" Value="UselessExpression = 1169" Usage="Microsoft.JScript.JSError.UselessExpression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4744,6 +4980,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.VariableLeftUninitialized" />
       <MemberSignature Language="VB.NET" Value="VariableLeftUninitialized" />
       <MemberSignature Language="C++ CLI" Value="VariableLeftUninitialized" />
+      <MemberSignature Language="F#" Value="VariableLeftUninitialized = 1136" Usage="Microsoft.JScript.JSError.VariableLeftUninitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4764,6 +5001,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.VariableMightBeUnitialized" />
       <MemberSignature Language="VB.NET" Value="VariableMightBeUnitialized" />
       <MemberSignature Language="C++ CLI" Value="VariableMightBeUnitialized" />
+      <MemberSignature Language="F#" Value="VariableMightBeUnitialized = 1187" Usage="Microsoft.JScript.JSError.VariableMightBeUnitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4784,6 +5022,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.VarIllegalInInterface" />
       <MemberSignature Language="VB.NET" Value="VarIllegalInInterface" />
       <MemberSignature Language="C++ CLI" Value="VarIllegalInInterface" />
+      <MemberSignature Language="F#" Value="VarIllegalInInterface = 1226" Usage="Microsoft.JScript.JSError.VarIllegalInInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4804,6 +5043,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.VBArrayExpected" />
       <MemberSignature Language="VB.NET" Value="VBArrayExpected" />
       <MemberSignature Language="C++ CLI" Value="VBArrayExpected" />
+      <MemberSignature Language="F#" Value="VBArrayExpected = 5013" Usage="Microsoft.JScript.JSError.VBArrayExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4824,6 +5064,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.WriteOnlyProperty" />
       <MemberSignature Language="VB.NET" Value="WriteOnlyProperty" />
       <MemberSignature Language="C++ CLI" Value="WriteOnlyProperty" />
+      <MemberSignature Language="F#" Value="WriteOnlyProperty = 5041" Usage="Microsoft.JScript.JSError.WriteOnlyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4844,6 +5085,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.WrongDirective" />
       <MemberSignature Language="VB.NET" Value="WrongDirective" />
       <MemberSignature Language="C++ CLI" Value="WrongDirective" />
+      <MemberSignature Language="F#" Value="WrongDirective = 1118" Usage="Microsoft.JScript.JSError.WrongDirective" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -4864,6 +5106,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSError.WrongUseOfAddressOf" />
       <MemberSignature Language="VB.NET" Value="WrongUseOfAddressOf" />
       <MemberSignature Language="C++ CLI" Value="WrongUseOfAddressOf" />
+      <MemberSignature Language="F#" Value="WrongUseOfAddressOf = 1263" Usage="Microsoft.JScript.JSError.WrongUseOfAddressOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

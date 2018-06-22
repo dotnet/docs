@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.FlatTrackingData" />
   <TypeSignature Language="VB.NET" Value="Public Class FlatTrackingData" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlatTrackingData" />
+  <TypeSignature Language="F#" Value="type FlatTrackingData = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITaskItem[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tlogFiles As ITaskItem(), skipMissingFiles As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlatTrackingData(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, bool skipMissingFiles);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.FlatTrackingData : Microsoft.Build.Framework.ITaskItem[] * bool -&gt; Microsoft.Build.Utilities.FlatTrackingData" Usage="new Microsoft.Build.Utilities.FlatTrackingData (tlogFiles, skipMissingFiles)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITaskItem[],System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tlogFiles As ITaskItem(), missingFileTimeUtc As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlatTrackingData(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, DateTime missingFileTimeUtc);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.FlatTrackingData : Microsoft.Build.Framework.ITaskItem[] * DateTime -&gt; Microsoft.Build.Utilities.FlatTrackingData" Usage="new Microsoft.Build.Utilities.FlatTrackingData (tlogFiles, missingFileTimeUtc)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ownerTask As ITask, tlogFiles As ITaskItem(), skipMissingFiles As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlatTrackingData(Microsoft::Build::Framework::ITask ^ ownerTask, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, bool skipMissingFiles);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.FlatTrackingData : Microsoft.Build.Framework.ITask * Microsoft.Build.Framework.ITaskItem[] * bool -&gt; Microsoft.Build.Utilities.FlatTrackingData" Usage="new Microsoft.Build.Utilities.FlatTrackingData (ownerTask, tlogFiles, skipMissingFiles)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ownerTask As ITask, tlogFiles As ITaskItem(), missingFileTimeUtc As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlatTrackingData(Microsoft::Build::Framework::ITask ^ ownerTask, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, DateTime missingFileTimeUtc);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.FlatTrackingData : Microsoft.Build.Framework.ITask * Microsoft.Build.Framework.ITaskItem[] * DateTime -&gt; Microsoft.Build.Utilities.FlatTrackingData" Usage="new Microsoft.Build.Utilities.FlatTrackingData (ownerTask, tlogFiles, missingFileTimeUtc)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tlogFiles As ITaskItem(), tlogFilesToIgnore As ITaskItem(), missingFileTimeUtc As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlatTrackingData(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFilesToIgnore, DateTime missingFileTimeUtc);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.FlatTrackingData : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * DateTime -&gt; Microsoft.Build.Utilities.FlatTrackingData" Usage="new Microsoft.Build.Utilities.FlatTrackingData (tlogFiles, tlogFilesToIgnore, missingFileTimeUtc)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],System.DateTime,System.String[],System.Collections.Generic.IDictionary{System.String,System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tlogFiles As ITaskItem(), tlogFilesToIgnore As ITaskItem(), missingFileTimeUtc As DateTime, excludedInputPaths As String(), sharedLastWriteTimeUtcCache As IDictionary(Of String, DateTime))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlatTrackingData(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFilesToIgnore, DateTime missingFileTimeUtc, cli::array &lt;System::String ^&gt; ^ excludedInputPaths, System::Collections::Generic::IDictionary&lt;System::String ^, DateTime&gt; ^ sharedLastWriteTimeUtcCache);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.FlatTrackingData : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * DateTime * string[] * System.Collections.Generic.IDictionary&lt;string, DateTime&gt; -&gt; Microsoft.Build.Utilities.FlatTrackingData" Usage="new Microsoft.Build.Utilities.FlatTrackingData (tlogFiles, tlogFilesToIgnore, missingFileTimeUtc, excludedInputPaths, sharedLastWriteTimeUtcCache)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.DependencyTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependencyTable As IDictionary(Of String, DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, DateTime&gt; ^ DependencyTable { System::Collections::Generic::IDictionary&lt;System::String ^, DateTime&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DependencyTable : System.Collections.Generic.IDictionary&lt;string, DateTime&gt;" Usage="Microsoft.Build.Utilities.FlatTrackingData.DependencyTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -196,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.FileIsExcludedFromDependencyCheck(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FileIsExcludedFromDependencyCheck (fileName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FileIsExcludedFromDependencyCheck(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.FileIsExcludedFromDependencyCheck : string -&gt; bool" Usage="flatTrackingData.FileIsExcludedFromDependencyCheck fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -221,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.FinalizeTLogs(System.Boolean,Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub FinalizeTLogs (trackedOperationsSucceeded As Boolean, readTLogNames As ITaskItem(), writeTLogNames As ITaskItem(), trackedFilesToRemoveFromTLogs As ITaskItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FinalizeTLogs(bool trackedOperationsSucceeded, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ readTLogNames, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ writeTLogNames, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ trackedFilesToRemoveFromTLogs);" />
+      <MemberSignature Language="F#" Value="static member FinalizeTLogs : bool * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="Microsoft.Build.Utilities.FlatTrackingData.FinalizeTLogs (trackedOperationsSucceeded, readTLogNames, writeTLogNames, trackedFilesToRemoveFromTLogs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.GetLastWriteTimeUtc(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastWriteTimeUtc (file As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime GetLastWriteTimeUtc(System::String ^ file);" />
+      <MemberSignature Language="F#" Value="member this.GetLastWriteTimeUtc : string -&gt; DateTime" Usage="flatTrackingData.GetLastWriteTimeUtc file" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -289,6 +300,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUpToDate(class Microsoft.Build.Utilities.Task hostTask, valuetype Microsoft.Build.Utilities.UpToDateCheckType upToDateCheckType, class Microsoft.Build.Framework.ITaskItem[] readTLogNames, class Microsoft.Build.Framework.ITaskItem[] writeTLogNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.IsUpToDate(Microsoft.Build.Utilities.Task,Microsoft.Build.Utilities.UpToDateCheckType,Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsUpToDate(Microsoft::Build::Utilities::Task ^ hostTask, Microsoft::Build::Utilities::UpToDateCheckType upToDateCheckType, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ readTLogNames, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ writeTLogNames);" />
+      <MemberSignature Language="F#" Value="static member IsUpToDate : Microsoft.Build.Utilities.Task * Microsoft.Build.Utilities.UpToDateCheckType * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] -&gt; bool" Usage="Microsoft.Build.Utilities.FlatTrackingData.IsUpToDate (hostTask, upToDateCheckType, readTLogNames, writeTLogNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -325,6 +337,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUpToDate(class Microsoft.Build.Utilities.TaskLoggingHelper Log, valuetype Microsoft.Build.Utilities.UpToDateCheckType upToDateCheckType, class Microsoft.Build.Utilities.FlatTrackingData inputs, class Microsoft.Build.Utilities.FlatTrackingData outputs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.IsUpToDate(Microsoft.Build.Utilities.TaskLoggingHelper,Microsoft.Build.Utilities.UpToDateCheckType,Microsoft.Build.Utilities.FlatTrackingData,Microsoft.Build.Utilities.FlatTrackingData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsUpToDate(Microsoft::Build::Utilities::TaskLoggingHelper ^ Log, Microsoft::Build::Utilities::UpToDateCheckType upToDateCheckType, Microsoft::Build::Utilities::FlatTrackingData ^ inputs, Microsoft::Build::Utilities::FlatTrackingData ^ outputs);" />
+      <MemberSignature Language="F#" Value="static member IsUpToDate : Microsoft.Build.Utilities.TaskLoggingHelper * Microsoft.Build.Utilities.UpToDateCheckType * Microsoft.Build.Utilities.FlatTrackingData * Microsoft.Build.Utilities.FlatTrackingData -&gt; bool" Usage="Microsoft.Build.Utilities.FlatTrackingData.IsUpToDate (Log, upToDateCheckType, inputs, outputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -362,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.MissingFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property MissingFiles As List(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ MissingFiles { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MissingFiles : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.MissingFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -382,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property NewestFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NewestFileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NewestFileName : string with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.NewestFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -402,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestFileTime" />
       <MemberSignature Language="VB.NET" Value="Public Property NewestFileTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NewestFileTime { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.NewestFileTime : DateTime with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.NewestFileTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -422,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestFileTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public Property NewestFileTimeUtc As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NewestFileTimeUtc { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.NewestFileTimeUtc : DateTime with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.NewestFileTimeUtc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -442,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestTLogFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property NewestTLogFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NewestTLogFileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NewestTLogFileName : string with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.NewestTLogFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -462,6 +480,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestTLogTime" />
       <MemberSignature Language="VB.NET" Value="Public Property NewestTLogTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NewestTLogTime { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.NewestTLogTime : DateTime with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.NewestTLogTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -482,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestTLogTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public Property NewestTLogTimeUtc As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NewestTLogTimeUtc { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.NewestTLogTimeUtc : DateTime with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.NewestTLogTimeUtc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -502,6 +522,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.OldestFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property OldestFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldestFileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OldestFileName : string with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.OldestFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -522,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.OldestFileTime" />
       <MemberSignature Language="VB.NET" Value="Public Property OldestFileTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime OldestFileTime { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.OldestFileTime : DateTime with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.OldestFileTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -542,6 +564,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.OldestFileTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public Property OldestFileTimeUtc As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime OldestFileTimeUtc { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.OldestFileTimeUtc : DateTime with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.OldestFileTimeUtc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -571,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.SaveTlog" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveTlog ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveTlog();" />
+      <MemberSignature Language="F#" Value="member this.SaveTlog : unit -&gt; unit" Usage="flatTrackingData.SaveTlog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -591,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.SaveTlog(Microsoft.Build.Utilities.DependencyFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveTlog (includeInTLog As DependencyFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveTlog(Microsoft::Build::Utilities::DependencyFilter ^ includeInTLog);" />
+      <MemberSignature Language="F#" Value="member this.SaveTlog : Microsoft.Build.Utilities.DependencyFilter -&gt; unit" Usage="flatTrackingData.SaveTlog includeInTLog" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -614,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.SkipMissingFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property SkipMissingFiles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipMissingFiles { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SkipMissingFiles : bool with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.SkipMissingFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -634,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.TlogFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property TlogFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ TlogFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TlogFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.TlogFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -654,6 +681,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.TlogsAvailable" />
       <MemberSignature Language="VB.NET" Value="Public Property TlogsAvailable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TlogsAvailable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TlogsAvailable : bool with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.TlogsAvailable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -674,6 +702,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.TreatRootMarkersAsEntries" />
       <MemberSignature Language="VB.NET" Value="Public Property TreatRootMarkersAsEntries As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TreatRootMarkersAsEntries { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TreatRootMarkersAsEntries : bool with get, set" Usage="Microsoft.Build.Utilities.FlatTrackingData.TreatRootMarkersAsEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -694,6 +723,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.UpdateFileEntryDetails" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateFileEntryDetails ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateFileEntryDetails();" />
+      <MemberSignature Language="F#" Value="member this.UpdateFileEntryDetails : unit -&gt; unit" Usage="flatTrackingData.UpdateFileEntryDetails " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

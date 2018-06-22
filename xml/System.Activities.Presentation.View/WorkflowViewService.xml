@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.WorkflowViewService" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowViewService&#xA;Inherits ViewService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowViewService : System::Activities::Presentation::Services::ViewService" />
+  <TypeSignature Language="F#" Value="type WorkflowViewService = class&#xA;    inherit ViewService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.#ctor(System.Activities.Presentation.EditingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As EditingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowViewService(System::Activities::Presentation::EditingContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.WorkflowViewService : System.Activities.Presentation.EditingContext -&gt; System.Activities.Presentation.View.WorkflowViewService" Usage="new System.Activities.Presentation.View.WorkflowViewService context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Activities.Presentation.WorkflowViewElement CreateViewElement(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.CreateViewElement(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Activities::Presentation::WorkflowViewElement ^ CreateViewElement(System::Activities::Presentation::Model::ModelItem ^ modelItem);" />
+      <MemberSignature Language="F#" Value="member this.CreateViewElement : System.Activities.Presentation.Model.ModelItem -&gt; System.Activities.Presentation.WorkflowViewElement" Usage="workflowViewService.CreateViewElement modelItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.GetModel(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetModel (view As DependencyObject) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Activities::Presentation::Model::ModelItem ^ GetModel(System::Windows::DependencyObject ^ view);" />
+      <MemberSignature Language="F#" Value="override this.GetModel : System.Windows.DependencyObject -&gt; System.Activities.Presentation.Model.ModelItem" Usage="workflowViewService.GetModel view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.GetView(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetView (model As ModelItem) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::DependencyObject ^ GetView(System::Activities::Presentation::Model::ModelItem ^ model);" />
+      <MemberSignature Language="F#" Value="override this.GetView : System.Activities.Presentation.Model.ModelItem -&gt; System.Windows.DependencyObject" Usage="workflowViewService.GetView model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.WorkflowViewElement GetViewElement(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.GetViewElement(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::WorkflowViewElement ^ GetViewElement(System::Activities::Presentation::Model::ModelItem ^ modelItem);" />
+      <MemberSignature Language="F#" Value="member this.GetViewElement : System.Activities.Presentation.Model.ModelItem -&gt; System.Activities.Presentation.WorkflowViewElement" Usage="workflowViewService.GetViewElement modelItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.WorkflowViewService.ViewCreated" />
       <MemberSignature Language="VB.NET" Value="Public Event ViewCreated As EventHandler(Of ViewCreatedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Presentation::View::ViewCreatedEventArgs ^&gt; ^ ViewCreated;" />
+      <MemberSignature Language="F#" Value="member this.ViewCreated : EventHandler&lt;System.Activities.Presentation.View.ViewCreatedEventArgs&gt; " Usage="member this.ViewCreated : System.EventHandler&lt;System.Activities.Presentation.View.ViewCreatedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

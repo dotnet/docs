@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.InstanceDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InstanceDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceDescriptor sealed" />
+  <TypeSignature Language="F#" Value="type InstanceDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.InstanceDescriptor.#ctor(System.Reflection.MemberInfo,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As MemberInfo, arguments As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceDescriptor(System::Reflection::MemberInfo ^ member, System::Collections::ICollection ^ arguments);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.InstanceDescriptor : System.Reflection.MemberInfo * System.Collections.ICollection -&gt; System.ComponentModel.Design.Serialization.InstanceDescriptor" Usage="new System.ComponentModel.Design.Serialization.InstanceDescriptor (member, arguments)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.InstanceDescriptor.#ctor(System.Reflection.MemberInfo,System.Collections.ICollection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As MemberInfo, arguments As ICollection, isComplete As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceDescriptor(System::Reflection::MemberInfo ^ member, System::Collections::ICollection ^ arguments, bool isComplete);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.InstanceDescriptor : System.Reflection.MemberInfo * System.Collections.ICollection * bool -&gt; System.ComponentModel.Design.Serialization.InstanceDescriptor" Usage="new System.ComponentModel.Design.Serialization.InstanceDescriptor (member, arguments, isComplete)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.InstanceDescriptor.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Arguments { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.ICollection" Usage="System.ComponentModel.Design.Serialization.InstanceDescriptor.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.InstanceDescriptor.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke();" />
+      <MemberSignature Language="F#" Value="member this.Invoke : unit -&gt; obj" Usage="instanceDescriptor.Invoke " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.InstanceDescriptor.IsComplete" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsComplete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsComplete { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsComplete : bool" Usage="System.ComponentModel.Design.Serialization.InstanceDescriptor.IsComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -263,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.InstanceDescriptor.MemberInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberInfo As MemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ MemberInfo { System::Reflection::MemberInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberInfo : System.Reflection.MemberInfo" Usage="System.ComponentModel.Design.Serialization.InstanceDescriptor.MemberInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

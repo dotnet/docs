@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeatDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum RepeatDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class RepeatDirection" />
+  <TypeSignature Language="F#" Value="type RepeatDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatDirection.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 0" Usage="System.Web.UI.WebControls.RepeatDirection.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatDirection.Vertical" />
       <MemberSignature Language="VB.NET" Value="Vertical" />
       <MemberSignature Language="C++ CLI" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 1" Usage="System.Web.UI.WebControls.RepeatDirection.Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

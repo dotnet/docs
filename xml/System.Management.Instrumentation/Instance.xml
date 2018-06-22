@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.Instance" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Instance&#xA;Implements IInstance" />
   <TypeSignature Language="C++ CLI" Value="public ref class Instance abstract : System::Management::Instrumentation::IInstance" />
+  <TypeSignature Language="F#" Value="type Instance = class&#xA;    interface IInstance" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.Instance.Published" />
       <MemberSignature Language="VB.NET" Value="Public Property Published As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Published { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Published : bool with get, set" Usage="System.Management.Instrumentation.Instance.Published" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Management.Instrumentation.IInstance.Published</InterfaceMember>

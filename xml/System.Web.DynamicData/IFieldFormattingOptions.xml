@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IFieldFormattingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFieldFormattingOptions" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFieldFormattingOptions" />
+  <TypeSignature Language="F#" Value="type IFieldFormattingOptions = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.ApplyFormatInEditMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplyFormatInEditMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyFormatInEditMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyFormatInEditMode : bool" Usage="System.Web.DynamicData.IFieldFormattingOptions.ApplyFormatInEditMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.ConvertEmptyStringToNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConvertEmptyStringToNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertEmptyStringToNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConvertEmptyStringToNull : bool" Usage="System.Web.DynamicData.IFieldFormattingOptions.ConvertEmptyStringToNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.DataFormatString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataFormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFormatString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataFormatString : string" Usage="System.Web.DynamicData.IFieldFormattingOptions.DataFormatString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.HtmlEncode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HtmlEncode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HtmlEncode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HtmlEncode : bool" Usage="System.Web.DynamicData.IFieldFormattingOptions.HtmlEncode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IFieldFormattingOptions.NullDisplayText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NullDisplayText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NullDisplayText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NullDisplayText : string" Usage="System.Web.DynamicData.IFieldFormattingOptions.NullDisplayText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

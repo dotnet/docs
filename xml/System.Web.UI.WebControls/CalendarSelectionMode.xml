@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CalendarSelectionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CalendarSelectionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CalendarSelectionMode" />
+  <TypeSignature Language="F#" Value="type CalendarSelectionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.CalendarSelectionMode.Day" />
       <MemberSignature Language="VB.NET" Value="Day" />
       <MemberSignature Language="C++ CLI" Value="Day" />
+      <MemberSignature Language="F#" Value="Day = 1" Usage="System.Web.UI.WebControls.CalendarSelectionMode.Day" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.CalendarSelectionMode.DayWeek" />
       <MemberSignature Language="VB.NET" Value="DayWeek" />
       <MemberSignature Language="C++ CLI" Value="DayWeek" />
+      <MemberSignature Language="F#" Value="DayWeek = 2" Usage="System.Web.UI.WebControls.CalendarSelectionMode.DayWeek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.CalendarSelectionMode.DayWeekMonth" />
       <MemberSignature Language="VB.NET" Value="DayWeekMonth" />
       <MemberSignature Language="C++ CLI" Value="DayWeekMonth" />
+      <MemberSignature Language="F#" Value="DayWeekMonth = 3" Usage="System.Web.UI.WebControls.CalendarSelectionMode.DayWeekMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.CalendarSelectionMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.WebControls.CalendarSelectionMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

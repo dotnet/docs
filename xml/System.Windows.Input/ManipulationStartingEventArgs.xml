@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationStartingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManipulationStartingEventArgs&#xA;Inherits InputEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManipulationStartingEventArgs sealed : System::Windows::Input::InputEventArgs" />
+  <TypeSignature Language="F#" Value="type ManipulationStartingEventArgs = class&#xA;    inherit InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationStartingEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Function Cancel () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Cancel();" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; bool" Usage="manipulationStartingEventArgs.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationStartingEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="manipulationStartingEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationStartingEventArgs.IsSingleTouchEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSingleTouchEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSingleTouchEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSingleTouchEnabled : bool with get, set" Usage="System.Windows.Input.ManipulationStartingEventArgs.IsSingleTouchEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationStartingEventArgs.ManipulationContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property ManipulationContainer As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ ManipulationContainer { System::Windows::IInputElement ^ get(); void set(System::Windows::IInputElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ManipulationContainer : System.Windows.IInputElement with get, set" Usage="System.Windows.Input.ManipulationStartingEventArgs.ManipulationContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationStartingEventArgs.Manipulators" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manipulators As IEnumerable(Of IManipulator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ Manipulators { System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Manipulators : seq&lt;System.Windows.Input.IManipulator&gt;" Usage="System.Windows.Input.ManipulationStartingEventArgs.Manipulators" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationStartingEventArgs.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As ManipulationModes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationModes Mode { System::Windows::Input::ManipulationModes get(); void set(System::Windows::Input::ManipulationModes value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Windows.Input.ManipulationModes with get, set" Usage="System.Windows.Input.ManipulationStartingEventArgs.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationStartingEventArgs.Pivot" />
       <MemberSignature Language="VB.NET" Value="Public Property Pivot As ManipulationPivot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationPivot ^ Pivot { System::Windows::Input::ManipulationPivot ^ get(); void set(System::Windows::Input::ManipulationPivot ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Pivot : System.Windows.Input.ManipulationPivot with get, set" Usage="System.Windows.Input.ManipulationStartingEventArgs.Pivot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationStartingEventArgs.SetManipulationParameter(System.Windows.Input.Manipulations.ManipulationParameters2D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetManipulationParameter (parameter As ManipulationParameters2D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetManipulationParameter(System::Windows::Input::Manipulations::ManipulationParameters2D ^ parameter);" />
+      <MemberSignature Language="F#" Value="member this.SetManipulationParameter : System.Windows.Input.Manipulations.ManipulationParameters2D -&gt; unit" Usage="manipulationStartingEventArgs.SetManipulationParameter parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

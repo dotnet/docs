@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SystemParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class SystemParameters" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemParameters abstract sealed" />
+  <TypeSignature Language="F#" Value="type SystemParameters = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.Border" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Border As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int Border { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : int" Usage="System.Windows.SystemParameters.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.BorderKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BorderKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ BorderKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BorderKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.BorderKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.BorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BorderWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double BorderWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : double" Usage="System.Windows.SystemParameters.BorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.BorderWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BorderWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ BorderWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BorderWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.BorderWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CaptionHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double CaptionHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionHeight : double" Usage="System.Windows.SystemParameters.CaptionHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CaptionHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CaptionHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.CaptionHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CaptionWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double CaptionWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionWidth : double" Usage="System.Windows.SystemParameters.CaptionWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CaptionWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CaptionWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.CaptionWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CaretWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaretWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double CaretWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaretWidth : double" Usage="System.Windows.SystemParameters.CaretWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -308,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CaretWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaretWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CaretWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaretWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.CaretWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ClientAreaAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClientAreaAnimation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ClientAreaAnimation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientAreaAnimation : bool" Usage="System.Windows.SystemParameters.ClientAreaAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -373,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ClientAreaAnimationKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClientAreaAnimationKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ClientAreaAnimationKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientAreaAnimationKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ClientAreaAnimationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -403,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ComboBoxAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ComboBoxAnimation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ComboBoxAnimation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComboBoxAnimation : bool" Usage="System.Windows.SystemParameters.ComboBoxAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -440,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ComboBoxAnimationKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ComboBoxAnimationKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ComboBoxAnimationKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComboBoxAnimationKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ComboBoxAnimationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -470,6 +485,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ComboBoxPopupAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ComboBoxPopupAnimation As PopupAnimation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::Primitives::PopupAnimation ComboBoxPopupAnimation { System::Windows::Controls::Primitives::PopupAnimation get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComboBoxPopupAnimation : System.Windows.Controls.Primitives.PopupAnimation" Usage="System.Windows.SystemParameters.ComboBoxPopupAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -500,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ComboBoxPopupAnimationKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ComboBoxPopupAnimationKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ComboBoxPopupAnimationKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComboBoxPopupAnimationKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ComboBoxPopupAnimationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -530,6 +547,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CursorHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CursorHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double CursorHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorHeight : double" Usage="System.Windows.SystemParameters.CursorHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -566,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CursorHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CursorHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CursorHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.CursorHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -596,6 +615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CursorShadow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CursorShadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CursorShadow { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorShadow : bool" Usage="System.Windows.SystemParameters.CursorShadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -633,6 +653,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CursorShadowKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CursorShadowKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CursorShadowKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorShadowKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.CursorShadowKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -663,6 +684,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CursorWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CursorWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double CursorWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorWidth : double" Usage="System.Windows.SystemParameters.CursorWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -699,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.CursorWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CursorWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CursorWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.CursorWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -729,6 +752,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.DragFullWindows" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DragFullWindows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool DragFullWindows { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DragFullWindows : bool" Usage="System.Windows.SystemParameters.DragFullWindows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -766,6 +790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.DragFullWindowsKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DragFullWindowsKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ DragFullWindowsKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DragFullWindowsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.DragFullWindowsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -796,6 +821,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.DropShadow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DropShadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool DropShadow { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropShadow : bool" Usage="System.Windows.SystemParameters.DropShadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -833,6 +859,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.DropShadowKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DropShadowKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ DropShadowKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropShadowKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.DropShadowKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -863,6 +890,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FixedFrameHorizontalBorderHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FixedFrameHorizontalBorderHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FixedFrameHorizontalBorderHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.FixedFrameHorizontalBorderHeight : double" Usage="System.Windows.SystemParameters.FixedFrameHorizontalBorderHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -899,6 +927,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FixedFrameHorizontalBorderHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FixedFrameHorizontalBorderHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FixedFrameHorizontalBorderHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FixedFrameHorizontalBorderHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FixedFrameHorizontalBorderHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -929,6 +958,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FixedFrameVerticalBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FixedFrameVerticalBorderWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FixedFrameVerticalBorderWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.FixedFrameVerticalBorderWidth : double" Usage="System.Windows.SystemParameters.FixedFrameVerticalBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -965,6 +995,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FixedFrameVerticalBorderWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FixedFrameVerticalBorderWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FixedFrameVerticalBorderWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FixedFrameVerticalBorderWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FixedFrameVerticalBorderWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -995,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FlatMenu" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FlatMenu As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool FlatMenu { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.FlatMenu : bool" Usage="System.Windows.SystemParameters.FlatMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1032,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FlatMenuKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FlatMenuKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FlatMenuKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FlatMenuKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FlatMenuKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1062,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusBorderHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusBorderHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FocusBorderHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusBorderHeight : double" Usage="System.Windows.SystemParameters.FocusBorderHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1098,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusBorderHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusBorderHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FocusBorderHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusBorderHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FocusBorderHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1128,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusBorderWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FocusBorderWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusBorderWidth : double" Usage="System.Windows.SystemParameters.FocusBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1164,6 +1200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusBorderWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusBorderWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FocusBorderWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusBorderWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FocusBorderWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1194,6 +1231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusHorizontalBorderHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusHorizontalBorderHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FocusHorizontalBorderHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusHorizontalBorderHeight : double" Usage="System.Windows.SystemParameters.FocusHorizontalBorderHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1230,6 +1268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusHorizontalBorderHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusHorizontalBorderHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FocusHorizontalBorderHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusHorizontalBorderHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FocusHorizontalBorderHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1260,6 +1299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusVerticalBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusVerticalBorderWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FocusVerticalBorderWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusVerticalBorderWidth : double" Usage="System.Windows.SystemParameters.FocusVerticalBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1296,6 +1336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusVerticalBorderWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusVerticalBorderWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FocusVerticalBorderWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusVerticalBorderWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FocusVerticalBorderWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1326,6 +1367,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FocusVisualStyleKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusVisualStyleKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FocusVisualStyleKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusVisualStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FocusVisualStyleKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1356,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ForegroundFlashCount" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ForegroundFlashCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ForegroundFlashCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForegroundFlashCount : int" Usage="System.Windows.SystemParameters.ForegroundFlashCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1392,6 +1435,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ForegroundFlashCountKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ForegroundFlashCountKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ForegroundFlashCountKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForegroundFlashCountKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ForegroundFlashCountKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1422,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FullPrimaryScreenHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FullPrimaryScreenHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FullPrimaryScreenHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullPrimaryScreenHeight : double" Usage="System.Windows.SystemParameters.FullPrimaryScreenHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1458,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FullPrimaryScreenHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FullPrimaryScreenHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FullPrimaryScreenHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullPrimaryScreenHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FullPrimaryScreenHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1488,6 +1534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FullPrimaryScreenWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FullPrimaryScreenWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FullPrimaryScreenWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullPrimaryScreenWidth : double" Usage="System.Windows.SystemParameters.FullPrimaryScreenWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1527,6 +1574,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.FullPrimaryScreenWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FullPrimaryScreenWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ FullPrimaryScreenWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullPrimaryScreenWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.FullPrimaryScreenWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1557,6 +1605,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.GradientCaptions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GradientCaptions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool GradientCaptions { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientCaptions : bool" Usage="System.Windows.SystemParameters.GradientCaptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1594,6 +1643,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.GradientCaptionsKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GradientCaptionsKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ GradientCaptionsKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientCaptionsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.GradientCaptionsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1624,6 +1674,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HighContrast" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HighContrast As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool HighContrast { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HighContrast : bool" Usage="System.Windows.SystemParameters.HighContrast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1661,6 +1712,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HighContrastKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HighContrastKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ HighContrastKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HighContrastKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.HighContrastKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1691,6 +1743,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HorizontalScrollBarButtonWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarButtonWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double HorizontalScrollBarButtonWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarButtonWidth : double" Usage="System.Windows.SystemParameters.HorizontalScrollBarButtonWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1727,6 +1780,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HorizontalScrollBarButtonWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarButtonWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ HorizontalScrollBarButtonWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarButtonWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.HorizontalScrollBarButtonWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1757,6 +1811,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HorizontalScrollBarHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double HorizontalScrollBarHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarHeight : double" Usage="System.Windows.SystemParameters.HorizontalScrollBarHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1793,6 +1848,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HorizontalScrollBarHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ HorizontalScrollBarHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.HorizontalScrollBarHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1823,6 +1879,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HorizontalScrollBarThumbWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarThumbWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double HorizontalScrollBarThumbWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarThumbWidth : double" Usage="System.Windows.SystemParameters.HorizontalScrollBarThumbWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1859,6 +1916,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HorizontalScrollBarThumbWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarThumbWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ HorizontalScrollBarThumbWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarThumbWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.HorizontalScrollBarThumbWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1889,6 +1947,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HotTracking" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HotTracking As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool HotTracking { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HotTracking : bool" Usage="System.Windows.SystemParameters.HotTracking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1926,6 +1985,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.HotTrackingKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HotTrackingKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ HotTrackingKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HotTrackingKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.HotTrackingKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1956,6 +2016,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconGridHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconGridHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double IconGridHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconGridHeight : double" Usage="System.Windows.SystemParameters.IconGridHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1992,6 +2053,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconGridHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconGridHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconGridHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconGridHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IconGridHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2022,6 +2084,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconGridWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconGridWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double IconGridWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconGridWidth : double" Usage="System.Windows.SystemParameters.IconGridWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2058,6 +2121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconGridWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconGridWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconGridWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconGridWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IconGridWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2088,6 +2152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double IconHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconHeight : double" Usage="System.Windows.SystemParameters.IconHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2124,6 +2189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IconHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2154,6 +2220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconHorizontalSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconHorizontalSpacing As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double IconHorizontalSpacing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconHorizontalSpacing : double" Usage="System.Windows.SystemParameters.IconHorizontalSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2185,6 +2252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconHorizontalSpacingKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconHorizontalSpacingKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconHorizontalSpacingKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconHorizontalSpacingKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IconHorizontalSpacingKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2215,6 +2283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconTitleWrap" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconTitleWrap As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IconTitleWrap { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconTitleWrap : bool" Usage="System.Windows.SystemParameters.IconTitleWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2247,6 +2316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconTitleWrapKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconTitleWrapKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconTitleWrapKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconTitleWrapKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IconTitleWrapKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2277,6 +2347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconVerticalSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconVerticalSpacing As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double IconVerticalSpacing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconVerticalSpacing : double" Usage="System.Windows.SystemParameters.IconVerticalSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2308,6 +2379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconVerticalSpacingKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconVerticalSpacingKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconVerticalSpacingKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconVerticalSpacingKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IconVerticalSpacingKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2338,6 +2410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double IconWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconWidth : double" Usage="System.Windows.SystemParameters.IconWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2374,6 +2447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IconWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IconWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2404,6 +2478,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsGlassEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsGlassEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsGlassEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsGlassEnabled : bool" Usage="System.Windows.SystemParameters.IsGlassEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2430,6 +2505,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsImmEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsImmEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsImmEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImmEnabled : bool" Usage="System.Windows.SystemParameters.IsImmEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2470,6 +2546,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsImmEnabledKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsImmEnabledKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsImmEnabledKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImmEnabledKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsImmEnabledKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2500,6 +2577,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMediaCenter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMediaCenter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMediaCenter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMediaCenter : bool" Usage="System.Windows.SystemParameters.IsMediaCenter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2540,6 +2618,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMediaCenterKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMediaCenterKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsMediaCenterKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMediaCenterKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsMediaCenterKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2570,6 +2649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMenuDropRightAligned" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMenuDropRightAligned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMenuDropRightAligned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMenuDropRightAligned : bool" Usage="System.Windows.SystemParameters.IsMenuDropRightAligned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2607,6 +2687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMenuDropRightAlignedKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMenuDropRightAlignedKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsMenuDropRightAlignedKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMenuDropRightAlignedKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsMenuDropRightAlignedKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2637,6 +2718,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMiddleEastEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMiddleEastEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMiddleEastEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMiddleEastEnabled : bool" Usage="System.Windows.SystemParameters.IsMiddleEastEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2677,6 +2759,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMiddleEastEnabledKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMiddleEastEnabledKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsMiddleEastEnabledKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMiddleEastEnabledKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsMiddleEastEnabledKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2707,6 +2790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMousePresent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMousePresent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMousePresent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMousePresent : bool" Usage="System.Windows.SystemParameters.IsMousePresent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2746,6 +2830,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMousePresentKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMousePresentKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsMousePresentKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMousePresentKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsMousePresentKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2776,6 +2861,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMouseWheelPresent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMouseWheelPresent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMouseWheelPresent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMouseWheelPresent : bool" Usage="System.Windows.SystemParameters.IsMouseWheelPresent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2813,6 +2899,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsMouseWheelPresentKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMouseWheelPresentKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsMouseWheelPresentKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMouseWheelPresentKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsMouseWheelPresentKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2843,6 +2930,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsPenWindows" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsPenWindows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsPenWindows { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPenWindows : bool" Usage="System.Windows.SystemParameters.IsPenWindows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2883,6 +2971,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsPenWindowsKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsPenWindowsKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsPenWindowsKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPenWindowsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsPenWindowsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2913,6 +3002,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsRemotelyControlled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsRemotelyControlled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsRemotelyControlled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRemotelyControlled : bool" Usage="System.Windows.SystemParameters.IsRemotelyControlled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2955,6 +3045,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsRemotelyControlledKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsRemotelyControlledKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsRemotelyControlledKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRemotelyControlledKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsRemotelyControlledKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2985,6 +3076,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsRemoteSession" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsRemoteSession As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsRemoteSession { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRemoteSession : bool" Usage="System.Windows.SystemParameters.IsRemoteSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3027,6 +3119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsRemoteSessionKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsRemoteSessionKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsRemoteSessionKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRemoteSessionKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsRemoteSessionKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3057,6 +3150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsSlowMachine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSlowMachine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSlowMachine { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSlowMachine : bool" Usage="System.Windows.SystemParameters.IsSlowMachine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3097,6 +3191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsSlowMachineKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSlowMachineKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsSlowMachineKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSlowMachineKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsSlowMachineKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3127,6 +3222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsTabletPC" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsTabletPC As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsTabletPC { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTabletPC : bool" Usage="System.Windows.SystemParameters.IsTabletPC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3167,6 +3263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.IsTabletPCKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsTabletPCKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IsTabletPCKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTabletPCKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.IsTabletPCKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3197,6 +3294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KanjiWindowHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KanjiWindowHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double KanjiWindowHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.KanjiWindowHeight : double" Usage="System.Windows.SystemParameters.KanjiWindowHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3236,6 +3334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KanjiWindowHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KanjiWindowHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ KanjiWindowHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KanjiWindowHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.KanjiWindowHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3266,6 +3365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KeyboardCues" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardCues As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool KeyboardCues { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardCues : bool" Usage="System.Windows.SystemParameters.KeyboardCues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3303,6 +3403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KeyboardCuesKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardCuesKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ KeyboardCuesKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardCuesKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.KeyboardCuesKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3333,6 +3434,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KeyboardDelay" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardDelay As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int KeyboardDelay { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardDelay : int" Usage="System.Windows.SystemParameters.KeyboardDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3369,6 +3471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KeyboardDelayKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardDelayKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ KeyboardDelayKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardDelayKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.KeyboardDelayKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3399,6 +3502,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KeyboardPreference" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardPreference As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool KeyboardPreference { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardPreference : bool" Usage="System.Windows.SystemParameters.KeyboardPreference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3436,6 +3540,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KeyboardPreferenceKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardPreferenceKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ KeyboardPreferenceKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardPreferenceKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.KeyboardPreferenceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3466,6 +3571,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KeyboardSpeed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardSpeed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int KeyboardSpeed { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardSpeed : int" Usage="System.Windows.SystemParameters.KeyboardSpeed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3502,6 +3608,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.KeyboardSpeedKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardSpeedKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ KeyboardSpeedKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardSpeedKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.KeyboardSpeedKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3532,6 +3639,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ListBoxSmoothScrolling" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ListBoxSmoothScrolling As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ListBoxSmoothScrolling { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListBoxSmoothScrolling : bool" Usage="System.Windows.SystemParameters.ListBoxSmoothScrolling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3569,6 +3677,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ListBoxSmoothScrollingKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ListBoxSmoothScrollingKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ListBoxSmoothScrollingKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListBoxSmoothScrollingKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ListBoxSmoothScrollingKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3599,6 +3708,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MaximizedPrimaryScreenHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximizedPrimaryScreenHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MaximizedPrimaryScreenHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximizedPrimaryScreenHeight : double" Usage="System.Windows.SystemParameters.MaximizedPrimaryScreenHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3638,6 +3748,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MaximizedPrimaryScreenHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximizedPrimaryScreenHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MaximizedPrimaryScreenHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximizedPrimaryScreenHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MaximizedPrimaryScreenHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3668,6 +3779,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MaximizedPrimaryScreenWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximizedPrimaryScreenWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MaximizedPrimaryScreenWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximizedPrimaryScreenWidth : double" Usage="System.Windows.SystemParameters.MaximizedPrimaryScreenWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3707,6 +3819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MaximizedPrimaryScreenWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximizedPrimaryScreenWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MaximizedPrimaryScreenWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximizedPrimaryScreenWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MaximizedPrimaryScreenWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3737,6 +3850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MaximumWindowTrackHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximumWindowTrackHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MaximumWindowTrackHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumWindowTrackHeight : double" Usage="System.Windows.SystemParameters.MaximumWindowTrackHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3778,6 +3892,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MaximumWindowTrackHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximumWindowTrackHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MaximumWindowTrackHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumWindowTrackHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MaximumWindowTrackHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3808,6 +3923,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MaximumWindowTrackWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximumWindowTrackWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MaximumWindowTrackWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumWindowTrackWidth : double" Usage="System.Windows.SystemParameters.MaximumWindowTrackWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3849,6 +3965,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MaximumWindowTrackWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximumWindowTrackWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MaximumWindowTrackWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumWindowTrackWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MaximumWindowTrackWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3879,6 +3996,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuAnimation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MenuAnimation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuAnimation : bool" Usage="System.Windows.SystemParameters.MenuAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3916,6 +4034,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuAnimationKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuAnimationKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuAnimationKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuAnimationKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuAnimationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3946,6 +4065,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuBarHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuBarHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MenuBarHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuBarHeight : double" Usage="System.Windows.SystemParameters.MenuBarHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3985,6 +4105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuBarHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuBarHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuBarHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuBarHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuBarHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4015,6 +4136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuButtonHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuButtonHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MenuButtonHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuButtonHeight : double" Usage="System.Windows.SystemParameters.MenuButtonHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4051,6 +4173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuButtonHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuButtonHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuButtonHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuButtonHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuButtonHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4081,6 +4204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuButtonWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuButtonWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MenuButtonWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuButtonWidth : double" Usage="System.Windows.SystemParameters.MenuButtonWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4117,6 +4241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuButtonWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuButtonWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuButtonWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuButtonWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuButtonWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4147,6 +4272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuCheckmarkHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuCheckmarkHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MenuCheckmarkHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuCheckmarkHeight : double" Usage="System.Windows.SystemParameters.MenuCheckmarkHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4183,6 +4309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuCheckmarkHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuCheckmarkHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuCheckmarkHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuCheckmarkHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuCheckmarkHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4213,6 +4340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuCheckmarkWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuCheckmarkWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MenuCheckmarkWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuCheckmarkWidth : double" Usage="System.Windows.SystemParameters.MenuCheckmarkWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4249,6 +4377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuCheckmarkWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuCheckmarkWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuCheckmarkWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuCheckmarkWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuCheckmarkWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4279,6 +4408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuDropAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuDropAlignment As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MenuDropAlignment { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuDropAlignment : bool" Usage="System.Windows.SystemParameters.MenuDropAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4316,6 +4446,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuDropAlignmentKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuDropAlignmentKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuDropAlignmentKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuDropAlignmentKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuDropAlignmentKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4346,6 +4477,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuFade" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFade As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MenuFade { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuFade : bool" Usage="System.Windows.SystemParameters.MenuFade" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4385,6 +4517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuFadeKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFadeKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuFadeKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuFadeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuFadeKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4415,6 +4548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MenuHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuHeight : double" Usage="System.Windows.SystemParameters.MenuHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4446,6 +4580,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4476,6 +4611,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuPopupAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuPopupAnimation As PopupAnimation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::Primitives::PopupAnimation MenuPopupAnimation { System::Windows::Controls::Primitives::PopupAnimation get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuPopupAnimation : System.Windows.Controls.Primitives.PopupAnimation" Usage="System.Windows.SystemParameters.MenuPopupAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4506,6 +4642,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuPopupAnimationKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuPopupAnimationKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuPopupAnimationKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuPopupAnimationKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuPopupAnimationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4536,6 +4673,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuShowDelay" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuShowDelay As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MenuShowDelay { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuShowDelay : int" Usage="System.Windows.SystemParameters.MenuShowDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4572,6 +4710,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuShowDelayKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuShowDelayKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuShowDelayKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuShowDelayKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuShowDelayKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4602,6 +4741,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MenuWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuWidth : double" Usage="System.Windows.SystemParameters.MenuWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4633,6 +4773,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MenuWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MenuWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4663,6 +4804,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizeAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizeAnimation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MinimizeAnimation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizeAnimation : bool" Usage="System.Windows.SystemParameters.MinimizeAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4702,6 +4844,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizeAnimationKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizeAnimationKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimizeAnimationKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizeAnimationKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimizeAnimationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4732,6 +4875,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizedGridHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedGridHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimizedGridHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedGridHeight : double" Usage="System.Windows.SystemParameters.MinimizedGridHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4770,6 +4914,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizedGridHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedGridHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimizedGridHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedGridHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimizedGridHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4800,6 +4945,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizedGridWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedGridWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimizedGridWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedGridWidth : double" Usage="System.Windows.SystemParameters.MinimizedGridWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4838,6 +4984,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizedGridWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedGridWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimizedGridWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedGridWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimizedGridWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4868,6 +5015,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizedWindowHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedWindowHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimizedWindowHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedWindowHeight : double" Usage="System.Windows.SystemParameters.MinimizedWindowHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4907,6 +5055,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizedWindowHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedWindowHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimizedWindowHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedWindowHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimizedWindowHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4937,6 +5086,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizedWindowWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedWindowWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimizedWindowWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedWindowWidth : double" Usage="System.Windows.SystemParameters.MinimizedWindowWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4976,6 +5126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimizedWindowWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedWindowWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimizedWindowWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedWindowWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimizedWindowWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5006,6 +5157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumHorizontalDragDistance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumHorizontalDragDistance As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimumHorizontalDragDistance { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumHorizontalDragDistance : double" Usage="System.Windows.SystemParameters.MinimumHorizontalDragDistance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5042,6 +5194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumVerticalDragDistance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumVerticalDragDistance As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimumVerticalDragDistance { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumVerticalDragDistance : double" Usage="System.Windows.SystemParameters.MinimumVerticalDragDistance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5078,6 +5231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumWindowHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimumWindowHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowHeight : double" Usage="System.Windows.SystemParameters.MinimumWindowHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5117,6 +5271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumWindowHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimumWindowHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimumWindowHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5147,6 +5302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumWindowTrackHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowTrackHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimumWindowTrackHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowTrackHeight : double" Usage="System.Windows.SystemParameters.MinimumWindowTrackHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5188,6 +5344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumWindowTrackHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowTrackHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimumWindowTrackHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowTrackHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimumWindowTrackHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5218,6 +5375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumWindowTrackWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowTrackWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimumWindowTrackWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowTrackWidth : double" Usage="System.Windows.SystemParameters.MinimumWindowTrackWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5259,6 +5417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumWindowTrackWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowTrackWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimumWindowTrackWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowTrackWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimumWindowTrackWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5289,6 +5448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumWindowWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MinimumWindowWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowWidth : double" Usage="System.Windows.SystemParameters.MinimumWindowWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5328,6 +5488,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MinimumWindowWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MinimumWindowWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MinimumWindowWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5358,6 +5519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MouseHoverHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseHoverHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MouseHoverHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseHoverHeight : double" Usage="System.Windows.SystemParameters.MouseHoverHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5394,6 +5556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MouseHoverHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseHoverHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MouseHoverHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseHoverHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MouseHoverHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5424,6 +5587,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MouseHoverTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseHoverTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeSpan MouseHoverTime { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseHoverTime : TimeSpan" Usage="System.Windows.SystemParameters.MouseHoverTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5455,6 +5619,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MouseHoverTimeKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseHoverTimeKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MouseHoverTimeKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseHoverTimeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MouseHoverTimeKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5485,6 +5650,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MouseHoverWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseHoverWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MouseHoverWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseHoverWidth : double" Usage="System.Windows.SystemParameters.MouseHoverWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5521,6 +5687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.MouseHoverWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseHoverWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MouseHoverWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseHoverWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.MouseHoverWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5551,6 +5718,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.NavigationChromeDownLevelStyleKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NavigationChromeDownLevelStyleKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ NavigationChromeDownLevelStyleKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavigationChromeDownLevelStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.NavigationChromeDownLevelStyleKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5581,6 +5749,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.NavigationChromeStyleKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NavigationChromeStyleKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ NavigationChromeStyleKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavigationChromeStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.NavigationChromeStyleKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5611,6 +5780,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.PowerLineStatus" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PowerLineStatus As PowerLineStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::PowerLineStatus PowerLineStatus { System::Windows::PowerLineStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.PowerLineStatus : System.Windows.PowerLineStatus" Usage="System.Windows.SystemParameters.PowerLineStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5646,6 +5816,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.PowerLineStatusKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PowerLineStatusKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ PowerLineStatusKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PowerLineStatusKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.PowerLineStatusKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5676,6 +5847,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.PrimaryScreenHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryScreenHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double PrimaryScreenHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryScreenHeight : double" Usage="System.Windows.SystemParameters.PrimaryScreenHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5712,6 +5884,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.PrimaryScreenHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryScreenHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ PrimaryScreenHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryScreenHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.PrimaryScreenHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5742,6 +5915,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.PrimaryScreenWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryScreenWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double PrimaryScreenWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryScreenWidth : double" Usage="System.Windows.SystemParameters.PrimaryScreenWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5778,6 +5952,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.PrimaryScreenWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryScreenWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ PrimaryScreenWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryScreenWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.PrimaryScreenWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5808,6 +5983,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ResizeFrameHorizontalBorderHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ResizeFrameHorizontalBorderHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double ResizeFrameHorizontalBorderHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResizeFrameHorizontalBorderHeight : double" Usage="System.Windows.SystemParameters.ResizeFrameHorizontalBorderHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5844,6 +6020,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ResizeFrameHorizontalBorderHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ResizeFrameHorizontalBorderHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ResizeFrameHorizontalBorderHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResizeFrameHorizontalBorderHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ResizeFrameHorizontalBorderHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5874,6 +6051,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ResizeFrameVerticalBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ResizeFrameVerticalBorderWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double ResizeFrameVerticalBorderWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResizeFrameVerticalBorderWidth : double" Usage="System.Windows.SystemParameters.ResizeFrameVerticalBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5910,6 +6088,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ResizeFrameVerticalBorderWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ResizeFrameVerticalBorderWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ResizeFrameVerticalBorderWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResizeFrameVerticalBorderWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ResizeFrameVerticalBorderWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5940,6 +6119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ScrollHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double ScrollHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollHeight : double" Usage="System.Windows.SystemParameters.ScrollHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -5971,6 +6151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ScrollHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ScrollHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ScrollHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6001,6 +6182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ScrollWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double ScrollWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollWidth : double" Usage="System.Windows.SystemParameters.ScrollWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6032,6 +6214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ScrollWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ScrollWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ScrollWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6062,6 +6245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SelectionFade" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectionFade As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool SelectionFade { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionFade : bool" Usage="System.Windows.SystemParameters.SelectionFade" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6101,6 +6285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SelectionFadeKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectionFadeKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SelectionFadeKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionFadeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SelectionFadeKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6131,6 +6316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ShowSounds" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ShowSounds As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ShowSounds { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowSounds : bool" Usage="System.Windows.SystemParameters.ShowSounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6171,6 +6357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ShowSoundsKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ShowSoundsKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ShowSoundsKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowSoundsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ShowSoundsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6201,6 +6388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallCaptionHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double SmallCaptionHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionHeight : double" Usage="System.Windows.SystemParameters.SmallCaptionHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6232,6 +6420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallCaptionHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallCaptionHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SmallCaptionHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6262,6 +6451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallCaptionWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double SmallCaptionWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionWidth : double" Usage="System.Windows.SystemParameters.SmallCaptionWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6293,6 +6483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallCaptionWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallCaptionWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SmallCaptionWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6323,6 +6514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallIconHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallIconHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double SmallIconHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallIconHeight : double" Usage="System.Windows.SystemParameters.SmallIconHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6361,6 +6553,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallIconHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallIconHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallIconHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallIconHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SmallIconHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6391,6 +6584,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallIconWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallIconWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double SmallIconWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallIconWidth : double" Usage="System.Windows.SystemParameters.SmallIconWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6429,6 +6623,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallIconWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallIconWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallIconWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallIconWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SmallIconWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6459,6 +6654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallWindowCaptionButtonHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallWindowCaptionButtonHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double SmallWindowCaptionButtonHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallWindowCaptionButtonHeight : double" Usage="System.Windows.SystemParameters.SmallWindowCaptionButtonHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6495,6 +6691,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallWindowCaptionButtonHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallWindowCaptionButtonHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallWindowCaptionButtonHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallWindowCaptionButtonHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SmallWindowCaptionButtonHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6525,6 +6722,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallWindowCaptionButtonWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallWindowCaptionButtonWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double SmallWindowCaptionButtonWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallWindowCaptionButtonWidth : double" Usage="System.Windows.SystemParameters.SmallWindowCaptionButtonWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6561,6 +6759,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SmallWindowCaptionButtonWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallWindowCaptionButtonWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallWindowCaptionButtonWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallWindowCaptionButtonWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SmallWindowCaptionButtonWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6591,6 +6790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SnapToDefaultButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SnapToDefaultButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool SnapToDefaultButton { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SnapToDefaultButton : bool" Usage="System.Windows.SystemParameters.SnapToDefaultButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6628,6 +6828,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SnapToDefaultButtonKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SnapToDefaultButtonKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SnapToDefaultButtonKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SnapToDefaultButtonKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SnapToDefaultButtonKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6658,6 +6859,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.SystemParameters.StaticPropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Public Shared Event StaticPropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::ComponentModel::PropertyChangedEventHandler ^ StaticPropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.StaticPropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.StaticPropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6677,6 +6879,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.StylusHotTracking" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StylusHotTracking As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool StylusHotTracking { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.StylusHotTracking : bool" Usage="System.Windows.SystemParameters.StylusHotTracking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6714,6 +6917,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.StylusHotTrackingKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StylusHotTrackingKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ StylusHotTrackingKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StylusHotTrackingKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.StylusHotTrackingKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6744,6 +6948,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SwapButtons" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SwapButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool SwapButtons { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SwapButtons : bool" Usage="System.Windows.SystemParameters.SwapButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6784,6 +6989,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.SwapButtonsKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SwapButtonsKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SwapButtonsKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SwapButtonsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.SwapButtonsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6814,6 +7020,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ThickHorizontalBorderHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThickHorizontalBorderHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double ThickHorizontalBorderHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThickHorizontalBorderHeight : double" Usage="System.Windows.SystemParameters.ThickHorizontalBorderHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6850,6 +7057,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ThickHorizontalBorderHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThickHorizontalBorderHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ThickHorizontalBorderHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThickHorizontalBorderHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ThickHorizontalBorderHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6880,6 +7088,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ThickVerticalBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThickVerticalBorderWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double ThickVerticalBorderWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThickVerticalBorderWidth : double" Usage="System.Windows.SystemParameters.ThickVerticalBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6916,6 +7125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ThickVerticalBorderWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThickVerticalBorderWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ThickVerticalBorderWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThickVerticalBorderWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ThickVerticalBorderWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6946,6 +7156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ThinHorizontalBorderHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThinHorizontalBorderHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double ThinHorizontalBorderHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThinHorizontalBorderHeight : double" Usage="System.Windows.SystemParameters.ThinHorizontalBorderHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -6982,6 +7193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ThinHorizontalBorderHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThinHorizontalBorderHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ThinHorizontalBorderHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThinHorizontalBorderHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ThinHorizontalBorderHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7012,6 +7224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ThinVerticalBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThinVerticalBorderWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double ThinVerticalBorderWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThinVerticalBorderWidth : double" Usage="System.Windows.SystemParameters.ThinVerticalBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7048,6 +7261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ThinVerticalBorderWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThinVerticalBorderWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ThinVerticalBorderWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThinVerticalBorderWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ThinVerticalBorderWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7078,6 +7292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ToolTipAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolTipAnimation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ToolTipAnimation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipAnimation : bool" Usage="System.Windows.SystemParameters.ToolTipAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7115,6 +7330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ToolTipAnimationKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolTipAnimationKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ToolTipAnimationKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipAnimationKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ToolTipAnimationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7145,6 +7361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ToolTipFade" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolTipFade As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ToolTipFade { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipFade : bool" Usage="System.Windows.SystemParameters.ToolTipFade" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7184,6 +7401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ToolTipFadeKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolTipFadeKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ToolTipFadeKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipFadeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ToolTipFadeKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7214,6 +7432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ToolTipPopupAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolTipPopupAnimation As PopupAnimation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::Primitives::PopupAnimation ToolTipPopupAnimation { System::Windows::Controls::Primitives::PopupAnimation get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipPopupAnimation : System.Windows.Controls.Primitives.PopupAnimation" Usage="System.Windows.SystemParameters.ToolTipPopupAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7244,6 +7463,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.ToolTipPopupAnimationKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolTipPopupAnimationKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ToolTipPopupAnimationKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipPopupAnimationKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.ToolTipPopupAnimationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7274,6 +7494,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.UIEffects" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UIEffects As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UIEffects { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UIEffects : bool" Usage="System.Windows.SystemParameters.UIEffects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7311,6 +7532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.UIEffectsKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UIEffectsKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ UIEffectsKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UIEffectsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.UIEffectsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7341,6 +7563,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.UxThemeColor" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UxThemeColor As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UxThemeColor { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UxThemeColor : string" Usage="System.Windows.SystemParameters.UxThemeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7366,6 +7589,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.UxThemeName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UxThemeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UxThemeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UxThemeName : string" Usage="System.Windows.SystemParameters.UxThemeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7391,6 +7615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VerticalScrollBarButtonHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarButtonHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double VerticalScrollBarButtonHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarButtonHeight : double" Usage="System.Windows.SystemParameters.VerticalScrollBarButtonHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7427,6 +7652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VerticalScrollBarButtonHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarButtonHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ VerticalScrollBarButtonHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarButtonHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.VerticalScrollBarButtonHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7457,6 +7683,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VerticalScrollBarThumbHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarThumbHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double VerticalScrollBarThumbHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarThumbHeight : double" Usage="System.Windows.SystemParameters.VerticalScrollBarThumbHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7493,6 +7720,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VerticalScrollBarThumbHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarThumbHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ VerticalScrollBarThumbHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarThumbHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.VerticalScrollBarThumbHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7523,6 +7751,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VerticalScrollBarWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double VerticalScrollBarWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarWidth : double" Usage="System.Windows.SystemParameters.VerticalScrollBarWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7559,6 +7788,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VerticalScrollBarWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ VerticalScrollBarWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.VerticalScrollBarWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7589,6 +7819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VirtualScreenHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreenHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double VirtualScreenHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreenHeight : double" Usage="System.Windows.SystemParameters.VirtualScreenHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7630,6 +7861,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VirtualScreenHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreenHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ VirtualScreenHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreenHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.VirtualScreenHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7660,6 +7892,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VirtualScreenLeft" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreenLeft As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double VirtualScreenLeft { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreenLeft : double" Usage="System.Windows.SystemParameters.VirtualScreenLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7701,6 +7934,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VirtualScreenLeftKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreenLeftKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ VirtualScreenLeftKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreenLeftKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.VirtualScreenLeftKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7731,6 +7965,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VirtualScreenTop" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreenTop As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double VirtualScreenTop { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreenTop : double" Usage="System.Windows.SystemParameters.VirtualScreenTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7772,6 +8007,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VirtualScreenTopKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreenTopKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ VirtualScreenTopKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreenTopKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.VirtualScreenTopKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7802,6 +8038,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VirtualScreenWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreenWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double VirtualScreenWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreenWidth : double" Usage="System.Windows.SystemParameters.VirtualScreenWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7843,6 +8080,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.VirtualScreenWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreenWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ VirtualScreenWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreenWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.VirtualScreenWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7873,6 +8111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WheelScrollLines" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WheelScrollLines As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int WheelScrollLines { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.WheelScrollLines : int" Usage="System.Windows.SystemParameters.WheelScrollLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7909,6 +8148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WheelScrollLinesKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WheelScrollLinesKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ WheelScrollLinesKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WheelScrollLinesKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.WheelScrollLinesKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7939,6 +8179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowCaptionButtonHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowCaptionButtonHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double WindowCaptionButtonHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowCaptionButtonHeight : double" Usage="System.Windows.SystemParameters.WindowCaptionButtonHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -7978,6 +8219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowCaptionButtonHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowCaptionButtonHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ WindowCaptionButtonHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowCaptionButtonHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.WindowCaptionButtonHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8008,6 +8250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowCaptionButtonWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowCaptionButtonWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double WindowCaptionButtonWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowCaptionButtonWidth : double" Usage="System.Windows.SystemParameters.WindowCaptionButtonWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8044,6 +8287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowCaptionButtonWidthKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowCaptionButtonWidthKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ WindowCaptionButtonWidthKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowCaptionButtonWidthKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.WindowCaptionButtonWidthKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8074,6 +8318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowCaptionHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowCaptionHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double WindowCaptionHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowCaptionHeight : double" Usage="System.Windows.SystemParameters.WindowCaptionHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8113,6 +8358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowCaptionHeightKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowCaptionHeightKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ WindowCaptionHeightKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowCaptionHeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.WindowCaptionHeightKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8143,6 +8389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowCornerRadius" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowCornerRadius As CornerRadius" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::CornerRadius WindowCornerRadius { System::Windows::CornerRadius get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowCornerRadius : System.Windows.CornerRadius" Usage="System.Windows.SystemParameters.WindowCornerRadius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8168,6 +8415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowGlassBrush" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowGlassBrush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Brush ^ WindowGlassBrush { System::Windows::Media::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowGlassBrush : System.Windows.Media.Brush" Usage="System.Windows.SystemParameters.WindowGlassBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8193,6 +8441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowGlassColor" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowGlassColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color WindowGlassColor { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowGlassColor : System.Windows.Media.Color" Usage="System.Windows.SystemParameters.WindowGlassColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8218,6 +8467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowNonClientFrameThickness" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowNonClientFrameThickness As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Thickness WindowNonClientFrameThickness { System::Windows::Thickness get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowNonClientFrameThickness : System.Windows.Thickness" Usage="System.Windows.SystemParameters.WindowNonClientFrameThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8243,6 +8493,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WindowResizeBorderThickness" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowResizeBorderThickness As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Thickness WindowResizeBorderThickness { System::Windows::Thickness get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowResizeBorderThickness : System.Windows.Thickness" Usage="System.Windows.SystemParameters.WindowResizeBorderThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8268,6 +8519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WorkArea" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkArea As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Rect WorkArea { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkArea : System.Windows.Rect" Usage="System.Windows.SystemParameters.WorkArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -8301,6 +8553,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemParameters.WorkAreaKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkAreaKey As ResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ WorkAreaKey { System::Windows::ResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkAreaKey : System.Windows.ResourceKey" Usage="System.Windows.SystemParameters.WorkAreaKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

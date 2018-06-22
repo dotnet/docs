@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BaseChannelWithProperties" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseChannelWithProperties&#xA;Inherits BaseChannelObjectWithProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseChannelWithProperties abstract : System::Runtime::Remoting::Channels::BaseChannelObjectWithProperties" />
+  <TypeSignature Language="F#" Value="type BaseChannelWithProperties = class&#xA;    inherit BaseChannelObjectWithProperties" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.BaseChannelWithProperties.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Runtime.Remoting.Channels.BaseChannelWithProperties.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.BaseChannelWithProperties.SinksWithProperties" />
       <MemberSignature Language="VB.NET" Value="Protected SinksWithProperties As IChannelSinkBase " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Runtime::Remoting::Channels::IChannelSinkBase ^ SinksWithProperties;" />
+      <MemberSignature Language="F#" Value="val mutable SinksWithProperties : System.Runtime.Remoting.Channels.IChannelSinkBase" Usage="System.Runtime.Remoting.Channels.BaseChannelWithProperties.SinksWithProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

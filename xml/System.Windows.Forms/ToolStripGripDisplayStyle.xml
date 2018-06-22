@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripGripDisplayStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripGripDisplayStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripGripDisplayStyle" />
+  <TypeSignature Language="F#" Value="type ToolStripGripDisplayStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripGripDisplayStyle.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 0" Usage="System.Windows.Forms.ToolStripGripDisplayStyle.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripGripDisplayStyle.Vertical" />
       <MemberSignature Language="VB.NET" Value="Vertical" />
       <MemberSignature Language="C++ CLI" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 1" Usage="System.Windows.Forms.ToolStripGripDisplayStyle.Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

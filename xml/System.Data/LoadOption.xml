@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.LoadOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum LoadOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class LoadOption" />
+  <TypeSignature Language="F#" Value="type LoadOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.LoadOption.OverwriteChanges" />
       <MemberSignature Language="VB.NET" Value="OverwriteChanges" />
       <MemberSignature Language="C++ CLI" Value="OverwriteChanges" />
+      <MemberSignature Language="F#" Value="OverwriteChanges = 1" Usage="System.Data.LoadOption.OverwriteChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.LoadOption.PreserveChanges" />
       <MemberSignature Language="VB.NET" Value="PreserveChanges" />
       <MemberSignature Language="C++ CLI" Value="PreserveChanges" />
+      <MemberSignature Language="F#" Value="PreserveChanges = 2" Usage="System.Data.LoadOption.PreserveChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.LoadOption.Upsert" />
       <MemberSignature Language="VB.NET" Value="Upsert" />
       <MemberSignature Language="C++ CLI" Value="Upsert" />
+      <MemberSignature Language="F#" Value="Upsert = 3" Usage="System.Data.LoadOption.Upsert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

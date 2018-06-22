@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerLoaderService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerLoaderService" />
+  <TypeSignature Language="F#" Value="type IDesignerLoaderService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddLoadDependency ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLoadDependency();" />
+      <MemberSignature Language="F#" Value="abstract member AddLoadDependency : unit -&gt; unit" Usage="iDesignerLoaderService.AddLoadDependency " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(System.Boolean,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DependentLoadComplete (successful As Boolean, errorCollection As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DependentLoadComplete(bool successful, System::Collections::ICollection ^ errorCollection);" />
+      <MemberSignature Language="F#" Value="abstract member DependentLoadComplete : bool * System.Collections.ICollection -&gt; unit" Usage="iDesignerLoaderService.DependentLoadComplete (successful, errorCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload" />
       <MemberSignature Language="VB.NET" Value="Public Function Reload () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Reload();" />
+      <MemberSignature Language="F#" Value="abstract member Reload : unit -&gt; bool" Usage="iDesignerLoaderService.Reload " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

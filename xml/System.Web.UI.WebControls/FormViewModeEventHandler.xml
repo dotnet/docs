@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewModeEventHandler(sender As Object, e As FormViewModeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FormViewModeEventHandler(System::Object ^ sender, FormViewModeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FormViewModeEventHandler = delegate of obj * FormViewModeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

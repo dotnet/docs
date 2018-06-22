@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IPlaybackControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPlaybackControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPlaybackControl" />
+  <TypeSignature Language="F#" Value="type IPlaybackControl = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IPlaybackControl.FinalClientRetry" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinalClientRetry ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinalClientRetry();" />
+      <MemberSignature Language="F#" Value="abstract member FinalClientRetry : unit -&gt; unit" Usage="iPlaybackControl.FinalClientRetry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IPlaybackControl.FinalServerRetry" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinalServerRetry ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinalServerRetry();" />
+      <MemberSignature Language="F#" Value="abstract member FinalServerRetry : unit -&gt; unit" Usage="iPlaybackControl.FinalServerRetry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

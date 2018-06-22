@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpItemRejectionReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum JumpItemRejectionReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class JumpItemRejectionReason" />
+  <TypeSignature Language="F#" Value="type JumpItemRejectionReason = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.JumpItemRejectionReason.InvalidItem" />
       <MemberSignature Language="VB.NET" Value="InvalidItem" />
       <MemberSignature Language="C++ CLI" Value="InvalidItem" />
+      <MemberSignature Language="F#" Value="InvalidItem = 1" Usage="System.Windows.Shell.JumpItemRejectionReason.InvalidItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.JumpItemRejectionReason.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Shell.JumpItemRejectionReason.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.JumpItemRejectionReason.NoRegisteredHandler" />
       <MemberSignature Language="VB.NET" Value="NoRegisteredHandler" />
       <MemberSignature Language="C++ CLI" Value="NoRegisteredHandler" />
+      <MemberSignature Language="F#" Value="NoRegisteredHandler = 2" Usage="System.Windows.Shell.JumpItemRejectionReason.NoRegisteredHandler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.JumpItemRejectionReason.RemovedByUser" />
       <MemberSignature Language="VB.NET" Value="RemovedByUser" />
       <MemberSignature Language="C++ CLI" Value="RemovedByUser" />
+      <MemberSignature Language="F#" Value="RemovedByUser = 3" Usage="System.Windows.Shell.JumpItemRejectionReason.RemovedByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

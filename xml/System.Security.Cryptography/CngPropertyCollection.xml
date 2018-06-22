@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngPropertyCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CngPropertyCollection&#xA;Inherits Collection(Of CngProperty)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CngPropertyCollection sealed : System::Collections::ObjectModel::Collection&lt;System::Security::Cryptography::CngProperty&gt;" />
+  <TypeSignature Language="F#" Value="type CngPropertyCollection = class&#xA;    inherit Collection&lt;CngProperty&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>

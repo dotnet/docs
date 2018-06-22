@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure SocketInformation" />
   <TypeSignature Language="C++ CLI" Value="public value class SocketInformation" />
+  <TypeSignature Language="F#" Value="type SocketInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketInformation.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As SocketInformationOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::SocketInformationOptions Options { System::Net::Sockets::SocketInformationOptions get(); void set(System::Net::Sockets::SocketInformationOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Net.Sockets.SocketInformationOptions with get, set" Usage="System.Net.Sockets.SocketInformation.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketInformation.ProtocolInformation" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtocolInformation As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ ProtocolInformation { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtocolInformation : byte[] with get, set" Usage="System.Net.Sockets.SocketInformation.ProtocolInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

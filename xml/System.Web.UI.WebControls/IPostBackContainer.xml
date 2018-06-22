@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IPostBackContainer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPostBackContainer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPostBackContainer" />
+  <TypeSignature Language="F#" Value="type IPostBackContainer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IPostBackContainer.GetPostBackOptions(System.Web.UI.WebControls.IButtonControl)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPostBackOptions (buttonControl As IButtonControl) As PostBackOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::PostBackOptions ^ GetPostBackOptions(System::Web::UI::WebControls::IButtonControl ^ buttonControl);" />
+      <MemberSignature Language="F#" Value="abstract member GetPostBackOptions : System.Web.UI.WebControls.IButtonControl -&gt; System.Web.UI.PostBackOptions" Usage="iPostBackContainer.GetPostBackOptions buttonControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

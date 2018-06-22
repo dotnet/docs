@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.UpdateCheck" />
   <TypeSignature Language="VB.NET" Value="Public Enum UpdateCheck" />
   <TypeSignature Language="C++ CLI" Value="public enum class UpdateCheck" />
+  <TypeSignature Language="F#" Value="type UpdateCheck = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.UpdateCheck.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 0" Usage="System.Data.Linq.Mapping.UpdateCheck.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.UpdateCheck.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 1" Usage="System.Data.Linq.Mapping.UpdateCheck.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.UpdateCheck.WhenChanged" />
       <MemberSignature Language="VB.NET" Value="WhenChanged" />
       <MemberSignature Language="C++ CLI" Value="WhenChanged" />
+      <MemberSignature Language="F#" Value="WhenChanged = 2" Usage="System.Data.Linq.Mapping.UpdateCheck.WhenChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

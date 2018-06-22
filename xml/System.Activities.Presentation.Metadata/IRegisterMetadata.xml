@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.IRegisterMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRegisterMetadata" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRegisterMetadata" />
+  <TypeSignature Language="F#" Value="type IRegisterMetadata = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.IRegisterMetadata.Register" />
       <MemberSignature Language="VB.NET" Value="Public Sub Register ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Register();" />
+      <MemberSignature Language="F#" Value="abstract member Register : unit -&gt; unit" Usage="iRegisterMetadata.Register " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

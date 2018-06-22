@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IMessageCtrl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMessageCtrl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMessageCtrl" />
+  <TypeSignature Language="F#" Value="type IMessageCtrl = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMessageCtrl.Cancel(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel (msToCancel As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel(int msToCancel);" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : int -&gt; unit" Usage="iMessageCtrl.Cancel msToCancel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

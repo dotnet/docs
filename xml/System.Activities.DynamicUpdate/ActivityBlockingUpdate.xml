@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.ActivityBlockingUpdate" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityBlockingUpdate" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityBlockingUpdate" />
+  <TypeSignature Language="F#" Value="type ActivityBlockingUpdate = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity activity, string originalActivityId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.ActivityBlockingUpdate.#ctor(System.Activities.Activity,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityBlockingUpdate(System::Activities::Activity ^ activity, System::String ^ originalActivityId, System::String ^ reason);" />
+      <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.ActivityBlockingUpdate : System.Activities.Activity * string * string -&gt; System.Activities.DynamicUpdate.ActivityBlockingUpdate" Usage="new System.Activities.DynamicUpdate.ActivityBlockingUpdate (activity, originalActivityId, reason)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.ActivityBlockingUpdate.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (updatedActivityId As String, originalActivityId As String, reason As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityBlockingUpdate(System::String ^ updatedActivityId, System::String ^ originalActivityId, System::String ^ reason);" />
+      <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.ActivityBlockingUpdate : string * string * string -&gt; System.Activities.DynamicUpdate.ActivityBlockingUpdate" Usage="new System.Activities.DynamicUpdate.ActivityBlockingUpdate (updatedActivityId, originalActivityId, reason)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity activity, string originalActivityId, string reason, string activityInstanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.ActivityBlockingUpdate.#ctor(System.Activities.Activity,System.String,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityBlockingUpdate(System::Activities::Activity ^ activity, System::String ^ originalActivityId, System::String ^ reason, System::String ^ activityInstanceId);" />
+      <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.ActivityBlockingUpdate : System.Activities.Activity * string * string * string -&gt; System.Activities.DynamicUpdate.ActivityBlockingUpdate" Usage="new System.Activities.DynamicUpdate.ActivityBlockingUpdate (activity, originalActivityId, reason, activityInstanceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.ActivityBlockingUpdate.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (updatedActivityId As String, originalActivityId As String, reason As String, activityInstanceId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityBlockingUpdate(System::String ^ updatedActivityId, System::String ^ originalActivityId, System::String ^ reason, System::String ^ activityInstanceId);" />
+      <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.ActivityBlockingUpdate : string * string * string * string -&gt; System.Activities.DynamicUpdate.ActivityBlockingUpdate" Usage="new System.Activities.DynamicUpdate.ActivityBlockingUpdate (updatedActivityId, originalActivityId, reason, activityInstanceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Activity { System::Activities::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Activities.Activity" Usage="System.Activities.DynamicUpdate.ActivityBlockingUpdate.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.ActivityInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityInstanceId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityInstanceId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityInstanceId : string" Usage="System.Activities.DynamicUpdate.ActivityBlockingUpdate.ActivityInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.OriginalActivityId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalActivityId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OriginalActivityId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalActivityId : string" Usage="System.Activities.DynamicUpdate.ActivityBlockingUpdate.OriginalActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reason { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : string" Usage="System.Activities.DynamicUpdate.ActivityBlockingUpdate.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -240,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.UpdatedActivityId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdatedActivityId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UpdatedActivityId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpdatedActivityId : string" Usage="System.Activities.DynamicUpdate.ActivityBlockingUpdate.UpdatedActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

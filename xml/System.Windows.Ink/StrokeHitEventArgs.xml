@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeHitEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StrokeHitEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StrokeHitEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type StrokeHitEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeHitEventArgs.GetPointEraseResults" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPointEraseResults () As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ GetPointEraseResults();" />
+      <MemberSignature Language="F#" Value="member this.GetPointEraseResults : unit -&gt; System.Windows.Ink.StrokeCollection" Usage="strokeHitEventArgs.GetPointEraseResults " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.StrokeHitEventArgs.HitStroke" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HitStroke As Stroke" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::Stroke ^ HitStroke { System::Windows::Ink::Stroke ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HitStroke : System.Windows.Ink.Stroke" Usage="System.Windows.Ink.StrokeHitEventArgs.HitStroke" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

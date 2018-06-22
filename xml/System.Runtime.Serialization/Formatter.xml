@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Formatter&#xA;Implements IFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class Formatter abstract : System::Runtime::Serialization::IFormatter" />
+  <TypeSignature Language="F#" Value="type Formatter = class&#xA;    interface IFormatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -137,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatter.Binder" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Binder As SerializationBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Runtime::Serialization::SerializationBinder ^ Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binder : System.Runtime.Serialization.SerializationBinder with get, set" Usage="System.Runtime.Serialization.Formatter.Binder" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Binder</InterfaceMember>
@@ -180,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatter.Context" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Context As StreamingContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Runtime::Serialization::StreamingContext Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Runtime.Serialization.StreamingContext with get, set" Usage="System.Runtime.Serialization.Formatter.Context" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Context</InterfaceMember>
@@ -223,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.Deserialize(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Deserialize (serializationStream As Stream) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Deserialize(System::IO::Stream ^ serializationStream);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.IO.Stream -&gt; obj" Usage="formatter.Deserialize serializationStream" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)</InterfaceMember>
@@ -263,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.GetNext(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetNext (ByRef objID As Long) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetNext([Runtime::InteropServices::Out] long % objID);" />
+      <MemberSignature Language="F#" Value="abstract member GetNext :  -&gt; obj&#xA;override this.GetNext :  -&gt; obj" Usage="formatter.GetNext objID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -306,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatter.m_idGenerator" />
       <MemberSignature Language="VB.NET" Value="Protected m_idGenerator As ObjectIDGenerator " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Runtime::Serialization::ObjectIDGenerator ^ m_idGenerator;" />
+      <MemberSignature Language="F#" Value="val mutable m_idGenerator : System.Runtime.Serialization.ObjectIDGenerator" Usage="System.Runtime.Serialization.Formatter.m_idGenerator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -342,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatter.m_objectQueue" />
       <MemberSignature Language="VB.NET" Value="Protected m_objectQueue As Queue " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Queue ^ m_objectQueue;" />
+      <MemberSignature Language="F#" Value="val mutable m_objectQueue : System.Collections.Queue" Usage="System.Runtime.Serialization.Formatter.m_objectQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -379,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.Schedule(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Schedule (obj As Object) As Long" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual long Schedule(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Schedule : obj -&gt; int64&#xA;override this.Schedule : obj -&gt; int64" Usage="formatter.Schedule obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -421,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.Serialize(System.IO.Stream,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Serialize (serializationStream As Stream, graph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Serialize(System::IO::Stream ^ serializationStream, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.IO.Stream * obj -&gt; unit" Usage="formatter.Serialize (serializationStream, graph)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)</InterfaceMember>
@@ -462,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatter.SurrogateSelector" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property SurrogateSelector As ISurrogateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Runtime::Serialization::ISurrogateSelector ^ SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SurrogateSelector : System.Runtime.Serialization.ISurrogateSelector with get, set" Usage="System.Runtime.Serialization.Formatter.SurrogateSelector" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.SurrogateSelector</InterfaceMember>
@@ -507,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteArray(System.Object,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteArray (obj As Object, name As String, memberType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteArray(System::Object ^ obj, System::String ^ name, Type ^ memberType);" />
+      <MemberSignature Language="F#" Value="abstract member WriteArray : obj * string * Type -&gt; unit" Usage="formatter.WriteArray (obj, name, memberType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -547,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteBoolean(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteBoolean (val As Boolean, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteBoolean(bool val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteBoolean : bool * string -&gt; unit" Usage="formatter.WriteBoolean (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -585,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteByte(System.Byte,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteByte (val As Byte, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteByte(System::Byte val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteByte : byte * string -&gt; unit" Usage="formatter.WriteByte (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -623,6 +636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteChar(System.Char,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteChar (val As Char, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteChar(char val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteChar : char * string -&gt; unit" Usage="formatter.WriteChar (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -661,6 +675,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteDateTime(System.DateTime,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteDateTime (val As DateTime, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteDateTime(DateTime val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteDateTime : DateTime * string -&gt; unit" Usage="formatter.WriteDateTime (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -700,6 +715,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteDecimal(System.Decimal,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteDecimal (val As Decimal, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteDecimal(System::Decimal val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteDecimal : decimal * string -&gt; unit" Usage="formatter.WriteDecimal (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -739,6 +755,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteDouble(System.Double,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteDouble (val As Double, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteDouble(double val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteDouble : double * string -&gt; unit" Usage="formatter.WriteDouble (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -777,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteInt16(System.Int16,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteInt16 (val As Short, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteInt16(short val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteInt16 : int16 * string -&gt; unit" Usage="formatter.WriteInt16 (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -815,6 +833,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteInt32(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteInt32 (val As Integer, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteInt32(int val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteInt32 : int * string -&gt; unit" Usage="formatter.WriteInt32 (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -853,6 +872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteInt64(System.Int64,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteInt64 (val As Long, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteInt64(long val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteInt64 : int64 * string -&gt; unit" Usage="formatter.WriteInt64 (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -891,6 +911,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteMember(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteMember (memberName As String, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteMember(System::String ^ memberName, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member WriteMember : string * obj -&gt; unit&#xA;override this.WriteMember : string * obj -&gt; unit" Usage="formatter.WriteMember (memberName, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -933,6 +954,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteObjectRef(System.Object,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteObjectRef (obj As Object, name As String, memberType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteObjectRef(System::Object ^ obj, System::String ^ name, Type ^ memberType);" />
+      <MemberSignature Language="F#" Value="abstract member WriteObjectRef : obj * string * Type -&gt; unit" Usage="formatter.WriteObjectRef (obj, name, memberType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -980,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteSByte(System.SByte,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteSByte (val As SByte, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteSByte(System::SByte val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteSByte : sbyte * string -&gt; unit" Usage="formatter.WriteSByte (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1023,6 +1046,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteSingle(System.Single,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteSingle (val As Single, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteSingle(float val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteSingle : single * string -&gt; unit" Usage="formatter.WriteSingle (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1061,6 +1085,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteTimeSpan(System.TimeSpan,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteTimeSpan (val As TimeSpan, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteTimeSpan(TimeSpan val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteTimeSpan : TimeSpan * string -&gt; unit" Usage="formatter.WriteTimeSpan (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1100,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteUInt16(System.UInt16,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteUInt16 (val As UShort, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteUInt16(System::UInt16 val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteUInt16 : uint16 * string -&gt; unit" Usage="formatter.WriteUInt16 (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1143,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteUInt32(System.UInt32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteUInt32 (val As UInteger, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteUInt32(System::UInt32 val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteUInt32 : uint32 * string -&gt; unit" Usage="formatter.WriteUInt32 (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1186,6 +1213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteUInt64(System.UInt64,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteUInt64 (val As ULong, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteUInt64(System::UInt64 val, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member WriteUInt64 : uint64 * string -&gt; unit" Usage="formatter.WriteUInt64 (val, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1229,6 +1257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteValueType(System.Object,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteValueType (obj As Object, name As String, memberType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteValueType(System::Object ^ obj, System::String ^ name, Type ^ memberType);" />
+      <MemberSignature Language="F#" Value="abstract member WriteValueType : obj * string * Type -&gt; unit" Usage="formatter.WriteValueType (obj, name, memberType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

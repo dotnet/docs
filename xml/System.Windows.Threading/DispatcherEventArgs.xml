@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DispatcherEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispatcherEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DispatcherEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherEventArgs.Dispatcher" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dispatcher As Dispatcher" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::Dispatcher ^ Dispatcher { System::Windows::Threading::Dispatcher ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Dispatcher : System.Windows.Threading.Dispatcher" Usage="System.Windows.Threading.DispatcherEventArgs.Dispatcher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

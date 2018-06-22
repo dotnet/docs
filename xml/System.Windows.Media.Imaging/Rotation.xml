@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.Rotation" />
   <TypeSignature Language="VB.NET" Value="Public Enum Rotation" />
   <TypeSignature Language="C++ CLI" Value="public enum class Rotation" />
+  <TypeSignature Language="F#" Value="type Rotation = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.Rotation.Rotate0" />
       <MemberSignature Language="VB.NET" Value="Rotate0" />
       <MemberSignature Language="C++ CLI" Value="Rotate0" />
+      <MemberSignature Language="F#" Value="Rotate0 = 0" Usage="System.Windows.Media.Imaging.Rotation.Rotate0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.Rotation.Rotate180" />
       <MemberSignature Language="VB.NET" Value="Rotate180" />
       <MemberSignature Language="C++ CLI" Value="Rotate180" />
+      <MemberSignature Language="F#" Value="Rotate180 = 2" Usage="System.Windows.Media.Imaging.Rotation.Rotate180" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.Rotation.Rotate270" />
       <MemberSignature Language="VB.NET" Value="Rotate270" />
       <MemberSignature Language="C++ CLI" Value="Rotate270" />
+      <MemberSignature Language="F#" Value="Rotate270 = 3" Usage="System.Windows.Media.Imaging.Rotation.Rotate270" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.Rotation.Rotate90" />
       <MemberSignature Language="VB.NET" Value="Rotate90" />
       <MemberSignature Language="C++ CLI" Value="Rotate90" />
+      <MemberSignature Language="F#" Value="Rotate90 = 1" Usage="System.Windows.Media.Imaging.Rotation.Rotate90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

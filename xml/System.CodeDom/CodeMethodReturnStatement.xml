@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMethodReturnStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeMethodReturnStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeMethodReturnStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeMethodReturnStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReturnStatement.#ctor(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodReturnStatement(System::CodeDom::CodeExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeMethodReturnStatement : System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeMethodReturnStatement" Usage="new System.CodeDom.CodeMethodReturnStatement expression" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodReturnStatement.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Expression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeMethodReturnStatement.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

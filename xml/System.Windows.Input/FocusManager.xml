@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.FocusManager" />
   <TypeSignature Language="VB.NET" Value="Public Class FocusManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class FocusManager abstract sealed" />
+  <TypeSignature Language="F#" Value="type FocusManager = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.AddGotFocusHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddGotFocusHandler (element As DependencyObject, handler As RoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddGotFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::RoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddGotFocusHandler : System.Windows.DependencyObject * System.Windows.RoutedEventHandler -&gt; unit" Usage="System.Windows.Input.FocusManager.AddGotFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.AddLostFocusHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddLostFocusHandler (element As DependencyObject, handler As RoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddLostFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::RoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddLostFocusHandler : System.Windows.DependencyObject * System.Windows.RoutedEventHandler -&gt; unit" Usage="System.Windows.Input.FocusManager.AddLostFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value="see GetFocusedElement, and SetFocusedElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.FocusManager.FocusedElement" />
       <MemberSignature Language="VB.NET" Value="see GetFocusedElement, and SetFocusedElement" />
+      <MemberSignature Language="F#" Value="see GetFocusedElement, and SetFocusedElement" Usage="see GetFocusedElement, and SetFocusedElement" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusManager.FocusedElementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedElementProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedElementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusedElementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.FocusManager.FocusedElementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.GetFocusedElement(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFocusedElement (element As DependencyObject) As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::IInputElement ^ GetFocusedElement(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetFocusedElement : System.Windows.DependencyObject -&gt; System.Windows.IInputElement" Usage="System.Windows.Input.FocusManager.GetFocusedElement element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.GetFocusScope(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFocusScope (element As DependencyObject) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetFocusScope(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetFocusScope : System.Windows.DependencyObject -&gt; System.Windows.DependencyObject" Usage="System.Windows.Input.FocusManager.GetFocusScope element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.GetIsFocusScope(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsFocusScope (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsFocusScope(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetIsFocusScope : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.FocusManager.GetIsFocusScope element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="ILAsm" Value="see AddGotFocusHandler, and RemoveGotFocusHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.FocusManager.GotFocus" />
       <MemberSignature Language="VB.NET" Value="see AddGotFocusHandler, and RemoveGotFocusHandler" />
+      <MemberSignature Language="F#" Value="see AddGotFocusHandler, and RemoveGotFocusHandler" Usage="see AddGotFocusHandler, and RemoveGotFocusHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusManager.GotFocusEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GotFocusEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ GotFocusEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GotFocusEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.FocusManager.GotFocusEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +292,7 @@
       <MemberSignature Language="ILAsm" Value="see GetIsFocusScope, and SetIsFocusScope" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.FocusManager.IsFocusScope" />
       <MemberSignature Language="VB.NET" Value="see GetIsFocusScope, and SetIsFocusScope" />
+      <MemberSignature Language="F#" Value="see GetIsFocusScope, and SetIsFocusScope" Usage="see GetIsFocusScope, and SetIsFocusScope" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -298,6 +309,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusManager.IsFocusScopeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsFocusScopeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsFocusScopeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsFocusScopeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.FocusManager.IsFocusScopeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -327,6 +339,7 @@
       <MemberSignature Language="ILAsm" Value="see AddLostFocusHandler, and RemoveLostFocusHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.FocusManager.LostFocus" />
       <MemberSignature Language="VB.NET" Value="see AddLostFocusHandler, and RemoveLostFocusHandler" />
+      <MemberSignature Language="F#" Value="see AddLostFocusHandler, and RemoveLostFocusHandler" Usage="see AddLostFocusHandler, and RemoveLostFocusHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -343,6 +356,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.FocusManager.LostFocusEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LostFocusEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ LostFocusEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LostFocusEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.FocusManager.LostFocusEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -362,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.RemoveGotFocusHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveGotFocusHandler (element As DependencyObject, handler As RoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveGotFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::RoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveGotFocusHandler : System.Windows.DependencyObject * System.Windows.RoutedEventHandler -&gt; unit" Usage="System.Windows.Input.FocusManager.RemoveGotFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -387,6 +402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.RemoveLostFocusHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveLostFocusHandler (element As DependencyObject, handler As RoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveLostFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::RoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveLostFocusHandler : System.Windows.DependencyObject * System.Windows.RoutedEventHandler -&gt; unit" Usage="System.Windows.Input.FocusManager.RemoveLostFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -412,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.SetFocusedElement(System.Windows.DependencyObject,System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFocusedElement (element As DependencyObject, value As IInputElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetFocusedElement(System::Windows::DependencyObject ^ element, System::Windows::IInputElement ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetFocusedElement : System.Windows.DependencyObject * System.Windows.IInputElement -&gt; unit" Usage="System.Windows.Input.FocusManager.SetFocusedElement (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -456,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.FocusManager.SetIsFocusScope(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsFocusScope (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsFocusScope(System::Windows::DependencyObject ^ element, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetIsFocusScope : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.FocusManager.SetIsFocusScope (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

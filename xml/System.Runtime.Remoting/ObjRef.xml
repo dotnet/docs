@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.ObjRef" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjRef&#xA;Implements IObjectReference, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjRef : System::Runtime::Serialization::IObjectReference, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type ObjRef = class&#xA;    interface IObjectReference&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjRef.#ctor(System.MarshalByRefObject,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (o As MarshalByRefObject, requestedType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjRef(MarshalByRefObject ^ o, Type ^ requestedType);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.ObjRef : MarshalByRefObject * Type -&gt; System.Runtime.Remoting.ObjRef" Usage="new System.Runtime.Remoting.ObjRef (o, requestedType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjRef.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ObjRef(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.ObjRef : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Remoting.ObjRef" Usage="new System.Runtime.Remoting.ObjRef (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.ObjRef.ChannelInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ChannelInfo As IChannelInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Runtime::Remoting::IChannelInfo ^ ChannelInfo { System::Runtime::Remoting::IChannelInfo ^ get(); void set(System::Runtime::Remoting::IChannelInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelInfo : System.Runtime.Remoting.IChannelInfo with get, set" Usage="System.Runtime.Remoting.ObjRef.ChannelInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.ObjRef.EnvoyInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnvoyInfo As IEnvoyInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Runtime::Remoting::IEnvoyInfo ^ EnvoyInfo { System::Runtime::Remoting::IEnvoyInfo ^ get(); void set(System::Runtime::Remoting::IEnvoyInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EnvoyInfo : System.Runtime.Remoting.IEnvoyInfo with get, set" Usage="System.Runtime.Remoting.ObjRef.EnvoyInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjRef.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="objRef.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjRef.GetRealObject(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRealObject (context As StreamingContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetRealObject(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetRealObject : System.Runtime.Serialization.StreamingContext -&gt; obj&#xA;override this.GetRealObject : System.Runtime.Serialization.StreamingContext -&gt; obj" Usage="objRef.GetRealObject context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IObjectReference.GetRealObject(System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -322,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjRef.IsFromThisAppDomain" />
       <MemberSignature Language="VB.NET" Value="Public Function IsFromThisAppDomain () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsFromThisAppDomain();" />
+      <MemberSignature Language="F#" Value="member this.IsFromThisAppDomain : unit -&gt; bool" Usage="objRef.IsFromThisAppDomain " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -352,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjRef.IsFromThisProcess" />
       <MemberSignature Language="VB.NET" Value="Public Function IsFromThisProcess () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsFromThisProcess();" />
+      <MemberSignature Language="F#" Value="member this.IsFromThisProcess : unit -&gt; bool" Usage="objRef.IsFromThisProcess " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -387,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.ObjRef.TypeInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TypeInfo As IRemotingTypeInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Runtime::Remoting::IRemotingTypeInfo ^ TypeInfo { System::Runtime::Remoting::IRemotingTypeInfo ^ get(); void set(System::Runtime::Remoting::IRemotingTypeInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeInfo : System.Runtime.Remoting.IRemotingTypeInfo with get, set" Usage="System.Runtime.Remoting.ObjRef.TypeInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -421,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.ObjRef.URI" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property URI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ URI { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.URI : string with get, set" Usage="System.Runtime.Remoting.ObjRef.URI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

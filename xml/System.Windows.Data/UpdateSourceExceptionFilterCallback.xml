@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.UpdateSourceExceptionFilterCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function UpdateSourceExceptionFilterCallback(bindExpression As Object, exception As Exception) As Object " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ UpdateSourceExceptionFilterCallback(System::Object ^ bindExpression, Exception ^ exception);" />
+  <TypeSignature Language="F#" Value="type UpdateSourceExceptionFilterCallback = delegate of obj * Exception -&gt; obj" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

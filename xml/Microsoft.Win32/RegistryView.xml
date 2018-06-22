@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryView" />
   <TypeSignature Language="VB.NET" Value="Public Enum RegistryView" />
   <TypeSignature Language="C++ CLI" Value="public enum class RegistryView" />
+  <TypeSignature Language="F#" Value="type RegistryView = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryView.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Win32.RegistryView.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryView.Registry32" />
       <MemberSignature Language="VB.NET" Value="Registry32" />
       <MemberSignature Language="C++ CLI" Value="Registry32" />
+      <MemberSignature Language="F#" Value="Registry32 = 512" Usage="Microsoft.Win32.RegistryView.Registry32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryView.Registry64" />
       <MemberSignature Language="VB.NET" Value="Registry64" />
       <MemberSignature Language="C++ CLI" Value="Registry64" />
+      <MemberSignature Language="F#" Value="Registry64 = 256" Usage="Microsoft.Win32.RegistryView.Registry64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>

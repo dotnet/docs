@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ColumnSpaceDistribution" />
   <TypeSignature Language="VB.NET" Value="Public Enum ColumnSpaceDistribution" />
   <TypeSignature Language="C++ CLI" Value="public enum class ColumnSpaceDistribution" />
+  <TypeSignature Language="F#" Value="type ColumnSpaceDistribution = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ColumnSpaceDistribution.Between" />
       <MemberSignature Language="VB.NET" Value="Between" />
       <MemberSignature Language="C++ CLI" Value="Between" />
+      <MemberSignature Language="F#" Value="Between = 2" Usage="System.Windows.ColumnSpaceDistribution.Between" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ColumnSpaceDistribution.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 0" Usage="System.Windows.ColumnSpaceDistribution.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.ColumnSpaceDistribution.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 1" Usage="System.Windows.ColumnSpaceDistribution.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

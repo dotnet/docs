@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationContextScope" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationContextScope&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class OperationContextScope sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type OperationContextScope = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContextScope.#ctor(System.ServiceModel.IContextChannel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (channel As IContextChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationContextScope(System::ServiceModel::IContextChannel ^ channel);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.OperationContextScope : System.ServiceModel.IContextChannel -&gt; System.ServiceModel.OperationContextScope" Usage="new System.ServiceModel.OperationContextScope channel" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContextScope.#ctor(System.ServiceModel.OperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As OperationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationContextScope(System::ServiceModel::OperationContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.OperationContextScope : System.ServiceModel.OperationContext -&gt; System.ServiceModel.OperationContextScope" Usage="new System.ServiceModel.OperationContextScope context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContextScope.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="operationContextScope.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>

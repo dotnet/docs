@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataExchangeClientMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum MetadataExchangeClientMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class MetadataExchangeClientMode" />
+  <TypeSignature Language="F#" Value="type MetadataExchangeClientMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.MetadataExchangeClientMode.HttpGet" />
       <MemberSignature Language="VB.NET" Value="HttpGet" />
       <MemberSignature Language="C++ CLI" Value="HttpGet" />
+      <MemberSignature Language="F#" Value="HttpGet = 1" Usage="System.ServiceModel.Description.MetadataExchangeClientMode.HttpGet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.MetadataExchangeClientMode.MetadataExchange" />
       <MemberSignature Language="VB.NET" Value="MetadataExchange" />
       <MemberSignature Language="C++ CLI" Value="MetadataExchange" />
+      <MemberSignature Language="F#" Value="MetadataExchange = 0" Usage="System.ServiceModel.Description.MetadataExchangeClientMode.MetadataExchange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

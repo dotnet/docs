@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewRowContextMenuStripNeededEventHandler(sender As Object, e As DataGridViewRowContextMenuStripNeededEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewRowContextMenuStripNeededEventHandler(System::Object ^ sender, DataGridViewRowContextMenuStripNeededEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowContextMenuStripNeededEventHandler = delegate of obj * DataGridViewRowContextMenuStripNeededEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

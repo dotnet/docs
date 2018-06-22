@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class InlineCategoriesDocument&#xA;Inherits CategoriesDocument" />
   <TypeSignature Language="C++ CLI" Value="public ref class InlineCategoriesDocument : System::ServiceModel::Syndication::CategoriesDocument" />
+  <TypeSignature Language="F#" Value="type InlineCategoriesDocument = class&#xA;    inherit CategoriesDocument" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.InlineCategoriesDocument.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.SyndicationCategory})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categories As IEnumerable(Of SyndicationCategory))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InlineCategoriesDocument(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ categories);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.InlineCategoriesDocument : seq&lt;System.ServiceModel.Syndication.SyndicationCategory&gt; -&gt; System.ServiceModel.Syndication.InlineCategoriesDocument" Usage="new System.ServiceModel.Syndication.InlineCategoriesDocument categories" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.InlineCategoriesDocument.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.SyndicationCategory},System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categories As IEnumerable(Of SyndicationCategory), isFixed As Boolean, scheme As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InlineCategoriesDocument(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ categories, bool isFixed, System::String ^ scheme);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.InlineCategoriesDocument : seq&lt;System.ServiceModel.Syndication.SyndicationCategory&gt; * bool * string -&gt; System.ServiceModel.Syndication.InlineCategoriesDocument" Usage="new System.ServiceModel.Syndication.InlineCategoriesDocument (categories, isFixed, scheme)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.InlineCategoriesDocument.Categories" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Categories As Collection(Of SyndicationCategory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ Categories { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Categories : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;" Usage="System.ServiceModel.Syndication.InlineCategoriesDocument.Categories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.InlineCategoriesDocument.CreateCategory" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateCategory () As SyndicationCategory" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationCategory ^ CreateCategory();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCategory : unit -&gt; System.ServiceModel.Syndication.SyndicationCategory&#xA;override this.CreateCategory : unit -&gt; System.ServiceModel.Syndication.SyndicationCategory" Usage="inlineCategoriesDocument.CreateCategory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.InlineCategoriesDocument.IsFixed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsFixed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixed : bool with get, set" Usage="System.ServiceModel.Syndication.InlineCategoriesDocument.IsFixed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.InlineCategoriesDocument.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public Property Scheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scheme { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string with get, set" Usage="System.ServiceModel.Syndication.InlineCategoriesDocument.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

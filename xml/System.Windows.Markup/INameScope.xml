@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.INameScope" />
   <TypeSignature Language="VB.NET" Value="Public Interface INameScope" />
   <TypeSignature Language="C++ CLI" Value="public interface class INameScope" />
+  <TypeSignature Language="F#" Value="type INameScope = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.FindName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindName (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member FindName : string -&gt; obj" Usage="iNameScope.FindName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.RegisterName(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterName (name As String, scopedElement As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterName(System::String ^ name, System::Object ^ scopedElement);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterName : string * obj -&gt; unit" Usage="iNameScope.RegisterName (name, scopedElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.UnregisterName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterName (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterName : string -&gt; unit" Usage="iNameScope.UnregisterName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

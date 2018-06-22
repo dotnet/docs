@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.KnownTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KnownTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class KnownTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type KnownTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (methodName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KnownTypeAttribute(System::String ^ methodName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.KnownTypeAttribute : string -&gt; System.Runtime.Serialization.KnownTypeAttribute" Usage="new System.Runtime.Serialization.KnownTypeAttribute methodName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KnownTypeAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.KnownTypeAttribute : Type -&gt; System.Runtime.Serialization.KnownTypeAttribute" Usage="new System.Runtime.Serialization.KnownTypeAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.KnownTypeAttribute.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string" Usage="System.Runtime.Serialization.KnownTypeAttribute.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.KnownTypeAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Runtime.Serialization.KnownTypeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

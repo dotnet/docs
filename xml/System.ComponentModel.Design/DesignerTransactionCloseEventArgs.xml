@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerTransactionCloseEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerTransactionCloseEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DesignerTransactionCloseEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commit As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerTransactionCloseEventArgs(bool commit);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerTransactionCloseEventArgs : bool -&gt; System.ComponentModel.Design.DesignerTransactionCloseEventArgs" Usage="new System.ComponentModel.Design.DesignerTransactionCloseEventArgs commit" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commit As Boolean, lastTransaction As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerTransactionCloseEventArgs(bool commit, bool lastTransaction);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerTransactionCloseEventArgs : bool * bool -&gt; System.ComponentModel.Design.DesignerTransactionCloseEventArgs" Usage="new System.ComponentModel.Design.DesignerTransactionCloseEventArgs (commit, lastTransaction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.LastTransaction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastTransaction As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LastTransaction { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastTransaction : bool" Usage="System.ComponentModel.Design.DesignerTransactionCloseEventArgs.LastTransaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.TransactionCommitted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransactionCommitted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactionCommitted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionCommitted : bool" Usage="System.ComponentModel.Design.DesignerTransactionCloseEventArgs.TransactionCommitted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

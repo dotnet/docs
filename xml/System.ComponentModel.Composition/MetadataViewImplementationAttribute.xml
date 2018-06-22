@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.MetadataViewImplementationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataViewImplementationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataViewImplementationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MetadataViewImplementationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.MetadataViewImplementationAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (implementationType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataViewImplementationAttribute(Type ^ implementationType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.MetadataViewImplementationAttribute : Type -&gt; System.ComponentModel.Composition.MetadataViewImplementationAttribute" Usage="new System.ComponentModel.Composition.MetadataViewImplementationAttribute implementationType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.MetadataViewImplementationAttribute.ImplementationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImplementationType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ImplementationType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImplementationType : Type" Usage="System.ComponentModel.Composition.MetadataViewImplementationAttribute.ImplementationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

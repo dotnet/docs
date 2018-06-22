@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutRowStyleCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class TableLayoutRowStyleCollection&#xA;Inherits TableLayoutStyleCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableLayoutRowStyleCollection : System::Windows::Forms::TableLayoutStyleCollection" />
+  <TypeSignature Language="F#" Value="type TableLayoutRowStyleCollection = class&#xA;    inherit TableLayoutStyleCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Windows.Forms.RowStyle rowStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutRowStyleCollection.Add(System.Windows.Forms.RowStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Forms::RowStyle ^ rowStyle);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Windows.Forms.RowStyle -&gt; int" Usage="tableLayoutRowStyleCollection.Add rowStyle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Forms.RowStyle rowStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutRowStyleCollection.Contains(System.Windows.Forms.RowStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::RowStyle ^ rowStyle);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.RowStyle -&gt; bool" Usage="tableLayoutRowStyleCollection.Contains rowStyle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Forms.RowStyle rowStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutRowStyleCollection.IndexOf(System.Windows.Forms.RowStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::RowStyle ^ rowStyle);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.RowStyle -&gt; int" Usage="tableLayoutRowStyleCollection.IndexOf rowStyle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Forms.RowStyle rowStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutRowStyleCollection.Insert(System.Int32,System.Windows.Forms.RowStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Forms::RowStyle ^ rowStyle);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.RowStyle -&gt; unit" Usage="tableLayoutRowStyleCollection.Insert (index, rowStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutRowStyleCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As RowStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::RowStyle ^ default[int] { System::Windows::Forms::RowStyle ^ get(int index); void set(int index, System::Windows::Forms::RowStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.RowStyle with get, set" Usage="System.Windows.Forms.TableLayoutRowStyleCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Forms.RowStyle rowStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutRowStyleCollection.Remove(System.Windows.Forms.RowStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Forms::RowStyle ^ rowStyle);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Forms.RowStyle -&gt; unit" Usage="tableLayoutRowStyleCollection.Remove rowStyle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ExpandedWrapper`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpandedWrapper(Of TExpandedElement)&#xA;Implements IExpandedResult" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TExpandedElement&gt;&#xA;public ref class ExpandedWrapper abstract : System::Data::Services::IExpandedResult" />
+  <TypeSignature Language="F#" Value="type ExpandedWrapper&lt;'ExpandedElement&gt; = class&#xA;    interface IExpandedResult" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`1.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement&gt;.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`1.ExpandedElement" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpandedElement As TExpandedElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TExpandedElement ExpandedElement { TExpandedElement get(); void set(TExpandedElement value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpandedElement : 'ExpandedElement with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement&gt;.ExpandedElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ExpandedWrapper`1.GetExpandedPropertyValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExpandedPropertyValue (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetExpandedPropertyValue(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetExpandedPropertyValue : string -&gt; obj&#xA;override this.GetExpandedPropertyValue : string -&gt; obj" Usage="expandedWrapper.GetExpandedPropertyValue name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Services.IExpandedResult.GetExpandedPropertyValue(System.String)</InterfaceMember>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ExpandedWrapper`1.InternalGetExpandedPropertyValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InternalGetExpandedPropertyValue (nameIndex As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ InternalGetExpandedPropertyValue(int nameIndex);" />
+      <MemberSignature Language="F#" Value="abstract member InternalGetExpandedPropertyValue : int -&gt; obj" Usage="expandedWrapper.InternalGetExpandedPropertyValue nameIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`1.System#Data#Services#IExpandedResult#ExpandedElement" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ExpandedElement As Object Implements IExpandedResult.ExpandedElement" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Data.Services.IExpandedResult.ExpandedElement { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement&gt;.System.Data.Services.IExpandedResult.ExpandedElement" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Services.IExpandedResult.ExpandedElement</InterfaceMember>

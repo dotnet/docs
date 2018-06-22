@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CatalogPart&#xA;Inherits Part" />
   <TypeSignature Language="C++ CLI" Value="public ref class CatalogPart abstract : System::Web::UI::WebControls::WebParts::Part" />
+  <TypeSignature Language="F#" Value="type CatalogPart = class&#xA;    inherit Part" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -126,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPart.DisplayTitle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayTitle { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayTitle : string" Usage="System.Web.UI.WebControls.WebParts.CatalogPart.DisplayTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAvailableWebPartDescriptions () As WebPartDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::WebControls::WebParts::WebPartDescriptionCollection ^ GetAvailableWebPartDescriptions();" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableWebPartDescriptions : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartDescriptionCollection" Usage="catalogPart.GetAvailableWebPartDescriptions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetDesignModeState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDesignModeState () As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IDictionary ^ GetDesignModeState();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignModeState : unit -&gt; System.Collections.IDictionary" Usage="catalogPart.GetDesignModeState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPart.GetWebPart(System.Web.UI.WebControls.WebParts.WebPartDescription)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetWebPart (description As WebPartDescription) As WebPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::WebControls::WebParts::WebPart ^ GetWebPart(System::Web::UI::WebControls::WebParts::WebPartDescription ^ description);" />
+      <MemberSignature Language="F#" Value="abstract member GetWebPart : System.Web.UI.WebControls.WebParts.WebPartDescription -&gt; System.Web.UI.WebControls.WebParts.WebPart" Usage="catalogPart.GetWebPart description" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPart.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="catalogPart.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -304,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPart.SetDesignModeState(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDesignModeState (data As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDesignModeState(System::Collections::IDictionary ^ data);" />
+      <MemberSignature Language="F#" Value="override this.SetDesignModeState : System.Collections.IDictionary -&gt; unit" Usage="catalogPart.SetDesignModeState data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -328,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPart.WebPartManager" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WebPartManager As WebPartManager" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPartManager ^ WebPartManager { System::Web::UI::WebControls::WebParts::WebPartManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebPartManager : System.Web.UI.WebControls.WebParts.WebPartManager" Usage="System.Web.UI.WebControls.WebParts.CatalogPart.WebPartManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -356,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPart.Zone" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Zone As CatalogZoneBase" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::CatalogZoneBase ^ Zone { System::Web::UI::WebControls::WebParts::CatalogZoneBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zone : System.Web.UI.WebControls.WebParts.CatalogZoneBase" Usage="System.Web.UI.WebControls.WebParts.CatalogPart.Zone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

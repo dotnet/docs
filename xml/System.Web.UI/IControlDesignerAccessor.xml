@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IControlDesignerAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IControlDesignerAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IControlDesignerAccessor" />
+  <TypeSignature Language="F#" Value="type IControlDesignerAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IControlDesignerAccessor.GetDesignModeState" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDesignModeState () As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ GetDesignModeState();" />
+      <MemberSignature Language="F#" Value="abstract member GetDesignModeState : unit -&gt; System.Collections.IDictionary" Usage="iControlDesignerAccessor.GetDesignModeState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDesignModeState (data As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDesignModeState(System::Collections::IDictionary ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member SetDesignModeState : System.Collections.IDictionary -&gt; unit" Usage="iControlDesignerAccessor.SetDesignModeState data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOwnerControl (owner As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOwnerControl(System::Web::UI::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="abstract member SetOwnerControl : System.Web.UI.Control -&gt; unit" Usage="iControlDesignerAccessor.SetOwnerControl owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IControlDesignerAccessor.UserData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserData : System.Collections.IDictionary" Usage="System.Web.UI.IControlDesignerAccessor.UserData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

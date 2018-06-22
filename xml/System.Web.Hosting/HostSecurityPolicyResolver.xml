@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.HostSecurityPolicyResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class HostSecurityPolicyResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostSecurityPolicyResolver" />
+  <TypeSignature Language="F#" Value="type HostSecurityPolicyResolver = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Web.Hosting.HostSecurityPolicyResults ResolvePolicy(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostSecurityPolicyResolver.ResolvePolicy(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Hosting::HostSecurityPolicyResults ResolvePolicy(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member ResolvePolicy : System.Security.Policy.Evidence -&gt; System.Web.Hosting.HostSecurityPolicyResults&#xA;override this.ResolvePolicy : System.Security.Policy.Evidence -&gt; System.Web.Hosting.HostSecurityPolicyResults" Usage="hostSecurityPolicyResolver.ResolvePolicy evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.UnescapedXmlDiagnosticData" />
   <TypeSignature Language="VB.NET" Value="Public Class UnescapedXmlDiagnosticData" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnescapedXmlDiagnosticData" />
+  <TypeSignature Language="F#" Value="type UnescapedXmlDiagnosticData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.UnescapedXmlDiagnosticData.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xmlPayload As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnescapedXmlDiagnosticData(System::String ^ xmlPayload);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.UnescapedXmlDiagnosticData : string -&gt; System.Diagnostics.UnescapedXmlDiagnosticData" Usage="new System.Diagnostics.UnescapedXmlDiagnosticData xmlPayload" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.UnescapedXmlDiagnosticData.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="unescapedXmlDiagnosticData.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.UnescapedXmlDiagnosticData.UnescapedXml" />
       <MemberSignature Language="VB.NET" Value="Public Property UnescapedXml As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UnescapedXml { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UnescapedXml : string with get, set" Usage="System.Diagnostics.UnescapedXmlDiagnosticData.UnescapedXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

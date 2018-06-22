@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryContinueDragEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub QueryContinueDragEventHandler(sender As Object, e As QueryContinueDragEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void QueryContinueDragEventHandler(System::Object ^ sender, QueryContinueDragEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type QueryContinueDragEventHandler = delegate of obj * QueryContinueDragEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

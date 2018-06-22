@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlBinary" />
   <TypeSignature Language="VB.NET" Value="Public Structure SqlBinary&#xA;Implements IComparable, INullable, IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public value class SqlBinary : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type SqlBinary = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBinary(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlBinary : byte[] -&gt; System.Data.SqlTypes.SqlBinary" Usage="new System.Data.SqlTypes.SqlBinary value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.Add(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (x As SqlBinary, y As SqlBinary) As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBinary Add(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBinary" Usage="System.Data.SqlTypes.SqlBinary.Add (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.CompareTo(System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As SqlBinary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlBinary value);" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : System.Data.SqlTypes.SqlBinary -&gt; int" Usage="sqlBinary.CompareTo value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -210,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="sqlBinary.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -273,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.Concat(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (x As SqlBinary, y As SqlBinary) As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBinary Concat(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member Concat : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBinary" Usage="System.Data.SqlTypes.SqlBinary.Concat (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -322,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sqlBinary.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -361,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.Equals(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlBinary.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -402,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sqlBinary.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -437,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlBinary.GetXsdType schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -471,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.GreaterThan(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlBinary.GreaterThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -511,6 +522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.GreaterThanOrEqual(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlBinary.GreaterThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -551,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBinary.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlBinary.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -596,6 +609,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBinary.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte default[int] { System::Byte get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : byte" Usage="System.Data.SqlTypes.SqlBinary.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -646,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBinary.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Data.SqlTypes.SqlBinary.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -688,6 +703,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.LessThan(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlBinary.LessThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -728,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.LessThanOrEqual(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlBinary.LessThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -768,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.NotEquals(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlBinary.NotEquals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -808,6 +826,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlBinary.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SqlBinary " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlBinary Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.SqlTypes.SqlBinary" Usage="System.Data.SqlTypes.SqlBinary.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -849,6 +868,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_Addition(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As SqlBinary, y As SqlBinary) As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBinary operator +(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBinary" Usage="x + y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -896,6 +916,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_Equality(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -947,6 +968,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_Explicit(System.Data.SqlTypes.SqlBinary)~System.Byte[]" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlBinary) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator cli::array &lt;System::Byte&gt; ^(System::Data::SqlTypes::SqlBinary x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBinary -&gt; byte[]" Usage="System.Data.SqlTypes.SqlBinary.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -987,6 +1009,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_Explicit(System.Data.SqlTypes.SqlGuid)~System.Data.SqlTypes.SqlBinary" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlGuid) As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlBinary(System::Data::SqlTypes::SqlGuid x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlBinary" Usage="System.Data.SqlTypes.SqlBinary.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1027,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_GreaterThan(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1069,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1111,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_Implicit(System.Byte[])~System.Data.SqlTypes.SqlBinary" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As Byte()) As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlBinary(cli::array &lt;System::Byte&gt; ^ x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : byte[] -&gt; System.Data.SqlTypes.SqlBinary" Usage="System.Data.SqlTypes.SqlBinary.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1149,6 +1175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_Inequality(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlBinary.op_Inequality (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1191,6 +1218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_LessThan(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1233,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.op_LessThanOrEqual(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As SqlBinary, y As SqlBinary) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlBinary x, System::Data::SqlTypes::SqlBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.SqlTypes.SqlBinary * System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1402,6 +1431,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.ToSqlGuid" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlGuid () As SqlGuid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlGuid ToSqlGuid();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlGuid : unit -&gt; System.Data.SqlTypes.SqlGuid" Usage="sqlBinary.ToSqlGuid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1437,6 +1467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBinary.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlBinary.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1472,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBinary.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Value { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : byte[]" Usage="System.Data.SqlTypes.SqlBinary.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

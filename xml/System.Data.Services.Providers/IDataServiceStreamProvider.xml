@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.IDataServiceStreamProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataServiceStreamProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataServiceStreamProvider" />
+  <TypeSignature Language="F#" Value="type IDataServiceStreamProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream(System.Object,System.Data.Services.DataServiceOperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteStream (entity As Object, operationContext As DataServiceOperationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteStream(System::Object ^ entity, System::Data::Services::DataServiceOperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteStream : obj * System.Data.Services.DataServiceOperationContext -&gt; unit" Usage="iDataServiceStreamProvider.DeleteStream (entity, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream(System.Object,System.String,System.Nullable{System.Boolean},System.Data.Services.DataServiceOperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReadStream (entity As Object, etag As String, checkETagForEquality As Nullable(Of Boolean), operationContext As DataServiceOperationContext) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetReadStream(System::Object ^ entity, System::String ^ etag, Nullable&lt;bool&gt; checkETagForEquality, System::Data::Services::DataServiceOperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetReadStream : obj * string * Nullable&lt;bool&gt; * System.Data.Services.DataServiceOperationContext -&gt; System.IO.Stream" Usage="iDataServiceStreamProvider.GetReadStream (entity, etag, checkETagForEquality, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStreamUri(System.Object,System.Data.Services.DataServiceOperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReadStreamUri (entity As Object, operationContext As DataServiceOperationContext) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ GetReadStreamUri(System::Object ^ entity, System::Data::Services::DataServiceOperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetReadStreamUri : obj * System.Data.Services.DataServiceOperationContext -&gt; Uri" Usage="iDataServiceStreamProvider.GetReadStreamUri (entity, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceStreamProvider.GetStreamContentType(System.Object,System.Data.Services.DataServiceOperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStreamContentType (entity As Object, operationContext As DataServiceOperationContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetStreamContentType(System::Object ^ entity, System::Data::Services::DataServiceOperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamContentType : obj * System.Data.Services.DataServiceOperationContext -&gt; string" Usage="iDataServiceStreamProvider.GetStreamContentType (entity, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceStreamProvider.GetStreamETag(System.Object,System.Data.Services.DataServiceOperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStreamETag (entity As Object, operationContext As DataServiceOperationContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetStreamETag(System::Object ^ entity, System::Data::Services::DataServiceOperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamETag : obj * System.Data.Services.DataServiceOperationContext -&gt; string" Usage="iDataServiceStreamProvider.GetStreamETag (entity, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream(System.Object,System.String,System.Nullable{System.Boolean},System.Data.Services.DataServiceOperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWriteStream (entity As Object, etag As String, checkETagForEquality As Nullable(Of Boolean), operationContext As DataServiceOperationContext) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetWriteStream(System::Object ^ entity, System::String ^ etag, Nullable&lt;bool&gt; checkETagForEquality, System::Data::Services::DataServiceOperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetWriteStream : obj * string * Nullable&lt;bool&gt; * System.Data.Services.DataServiceOperationContext -&gt; System.IO.Stream" Usage="iDataServiceStreamProvider.GetWriteStream (entity, etag, checkETagForEquality, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceStreamProvider.ResolveType(System.String,System.Data.Services.DataServiceOperationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveType (entitySetName As String, operationContext As DataServiceOperationContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveType(System::String ^ entitySetName, System::Data::Services::DataServiceOperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveType : string * System.Data.Services.DataServiceOperationContext -&gt; string" Usage="iDataServiceStreamProvider.ResolveType (entitySetName, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -323,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.IDataServiceStreamProvider.StreamBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StreamBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StreamBufferSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StreamBufferSize : int" Usage="System.Data.Services.Providers.IDataServiceStreamProvider.StreamBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

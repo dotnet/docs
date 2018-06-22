@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySchema&#xA;Inherits ActiveDirectoryPartition" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySchema : System::DirectoryServices::ActiveDirectory::ActiveDirectoryPartition" />
+  <TypeSignature Language="F#" Value="type ActiveDirectorySchema = class&#xA;    inherit ActiveDirectoryPartition" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="activeDirectorySchema.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllClasses" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllClasses () As ReadOnlyActiveDirectorySchemaClassCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaClassCollection ^ FindAllClasses();" />
+      <MemberSignature Language="F#" Value="member this.FindAllClasses : unit -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" Usage="activeDirectorySchema.FindAllClasses " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllClasses(System.DirectoryServices.ActiveDirectory.SchemaClassType)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllClasses (type As SchemaClassType) As ReadOnlyActiveDirectorySchemaClassCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaClassCollection ^ FindAllClasses(System::DirectoryServices::ActiveDirectory::SchemaClassType type);" />
+      <MemberSignature Language="F#" Value="member this.FindAllClasses : System.DirectoryServices.ActiveDirectory.SchemaClassType -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" Usage="activeDirectorySchema.FindAllClasses type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllDefunctClasses" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDefunctClasses () As ReadOnlyActiveDirectorySchemaClassCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaClassCollection ^ FindAllDefunctClasses();" />
+      <MemberSignature Language="F#" Value="member this.FindAllDefunctClasses : unit -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" Usage="activeDirectorySchema.FindAllDefunctClasses " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllDefunctProperties" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDefunctProperties () As ReadOnlyActiveDirectorySchemaPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaPropertyCollection ^ FindAllDefunctProperties();" />
+      <MemberSignature Language="F#" Value="member this.FindAllDefunctProperties : unit -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" Usage="activeDirectorySchema.FindAllDefunctProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllProperties" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllProperties () As ReadOnlyActiveDirectorySchemaPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaPropertyCollection ^ FindAllProperties();" />
+      <MemberSignature Language="F#" Value="member this.FindAllProperties : unit -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" Usage="activeDirectorySchema.FindAllProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllProperties(System.DirectoryServices.ActiveDirectory.PropertyTypes)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllProperties (type As PropertyTypes) As ReadOnlyActiveDirectorySchemaPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaPropertyCollection ^ FindAllProperties(System::DirectoryServices::ActiveDirectory::PropertyTypes type);" />
+      <MemberSignature Language="F#" Value="member this.FindAllProperties : System.DirectoryServices.ActiveDirectory.PropertyTypes -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" Usage="activeDirectorySchema.FindAllProperties type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindClass(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindClass (ldapDisplayName As String) As ActiveDirectorySchemaClass" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ FindClass(System::String ^ ldapDisplayName);" />
+      <MemberSignature Language="F#" Value="member this.FindClass : string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" Usage="activeDirectorySchema.FindClass ldapDisplayName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindDefunctClass(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDefunctClass (commonName As String) As ActiveDirectorySchemaClass" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ FindDefunctClass(System::String ^ commonName);" />
+      <MemberSignature Language="F#" Value="member this.FindDefunctClass : string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" Usage="activeDirectorySchema.FindDefunctClass commonName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -305,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindDefunctProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDefunctProperty (commonName As String) As ActiveDirectorySchemaProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ FindDefunctProperty(System::String ^ commonName);" />
+      <MemberSignature Language="F#" Value="member this.FindDefunctProperty : string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" Usage="activeDirectorySchema.FindDefunctProperty commonName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindProperty (ldapDisplayName As String) As ActiveDirectorySchemaProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ FindProperty(System::String ^ ldapDisplayName);" />
+      <MemberSignature Language="F#" Value="member this.FindProperty : string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" Usage="activeDirectorySchema.FindProperty ldapDisplayName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetCurrentSchema" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentSchema () As ActiveDirectorySchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::ActiveDirectorySchema ^ GetCurrentSchema();" />
+      <MemberSignature Language="F#" Value="static member GetCurrentSchema : unit -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetCurrentSchema " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -395,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetDirectoryEntry" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDirectoryEntry () As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::DirectoryEntry ^ GetDirectoryEntry();" />
+      <MemberSignature Language="F#" Value="override this.GetDirectoryEntry : unit -&gt; System.DirectoryServices.DirectoryEntry" Usage="activeDirectorySchema.GetDirectoryEntry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -420,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetSchema(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSchema (context As DirectoryContext) As ActiveDirectorySchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::ActiveDirectorySchema ^ GetSchema(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetSchema : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetSchema context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -451,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.RefreshSchema" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshSchema ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshSchema();" />
+      <MemberSignature Language="F#" Value="member this.RefreshSchema : unit -&gt; unit" Usage="activeDirectorySchema.RefreshSchema " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -472,6 +488,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.SchemaRoleOwner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaRoleOwner As DirectoryServer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DirectoryServer ^ SchemaRoleOwner { System::DirectoryServices::ActiveDirectory::DirectoryServer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaRoleOwner : System.DirectoryServices.ActiveDirectory.DirectoryServer" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.SchemaRoleOwner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

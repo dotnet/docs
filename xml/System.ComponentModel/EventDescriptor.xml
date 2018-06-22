@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.EventDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EventDescriptor&#xA;Inherits MemberDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventDescriptor abstract : System::ComponentModel::MemberDescriptor" />
+  <TypeSignature Language="F#" Value="type EventDescriptor = class&#xA;    inherit MemberDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptor.#ctor(System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (descr As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventDescriptor(System::ComponentModel::MemberDescriptor ^ descr);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EventDescriptor : System.ComponentModel.MemberDescriptor -&gt; System.ComponentModel.EventDescriptor" Usage="new System.ComponentModel.EventDescriptor descr" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptor.#ctor(System.ComponentModel.MemberDescriptor,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (descr As MemberDescriptor, attrs As Attribute())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventDescriptor(System::ComponentModel::MemberDescriptor ^ descr, cli::array &lt;Attribute ^&gt; ^ attrs);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EventDescriptor : System.ComponentModel.MemberDescriptor * Attribute[] -&gt; System.ComponentModel.EventDescriptor" Usage="new System.ComponentModel.EventDescriptor (descr, attrs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptor.#ctor(System.String,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, attrs As Attribute())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventDescriptor(System::String ^ name, cli::array &lt;Attribute ^&gt; ^ attrs);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EventDescriptor : string * Attribute[] -&gt; System.ComponentModel.EventDescriptor" Usage="new System.ComponentModel.EventDescriptor (name, attrs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptor.AddEventHandler(System.Object,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddEventHandler (component As Object, value As Delegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddEventHandler(System::Object ^ component, Delegate ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddEventHandler : obj * Delegate -&gt; unit" Usage="eventDescriptor.AddEventHandler (component, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -234,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptor.ComponentType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ComponentType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ComponentType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComponentType : Type" Usage="System.ComponentModel.EventDescriptor.ComponentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -274,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptor.EventType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EventType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ EventType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventType : Type" Usage="System.ComponentModel.EventDescriptor.EventType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptor.IsMulticast" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsMulticast As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsMulticast { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMulticast : bool" Usage="System.ComponentModel.EventDescriptor.IsMulticast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -357,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptor.RemoveEventHandler(System.Object,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveEventHandler (component As Object, value As Delegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveEventHandler(System::Object ^ component, Delegate ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveEventHandler : obj * Delegate -&gt; unit" Usage="eventDescriptor.RemoveEventHandler (component, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

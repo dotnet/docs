@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ApplicationHost" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationHost" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationHost sealed" />
+  <TypeSignature Language="F#" Value="type ApplicationHost = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationHost.CreateApplicationHost(System.Type,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateApplicationHost (hostType As Type, virtualDir As String, physicalDir As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateApplicationHost(Type ^ hostType, System::String ^ virtualDir, System::String ^ physicalDir);" />
+      <MemberSignature Language="F#" Value="static member CreateApplicationHost : Type * string * string -&gt; obj" Usage="System.Web.Hosting.ApplicationHost.CreateApplicationHost (hostType, virtualDir, physicalDir)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

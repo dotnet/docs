@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.HttpTransportSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpTransportSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpTransportSecurity sealed" />
+  <TypeSignature Language="F#" Value="type HttpTransportSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ClientCredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCredentialType As HttpClientCredentialType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpClientCredentialType ClientCredentialType { System::ServiceModel::HttpClientCredentialType get(); void set(System::ServiceModel::HttpClientCredentialType value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCredentialType : System.ServiceModel.HttpClientCredentialType with get, set" Usage="System.ServiceModel.HttpTransportSecurity.ClientCredentialType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtendedProtectionPolicy As ExtendedProtectionPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ ExtendedProtectionPolicy { System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ get(); void set(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedProtectionPolicy : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy with get, set" Usage="System.ServiceModel.HttpTransportSecurity.ExtendedProtectionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ProxyCredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyCredentialType As HttpProxyCredentialType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpProxyCredentialType ProxyCredentialType { System::ServiceModel::HttpProxyCredentialType get(); void set(System::ServiceModel::HttpProxyCredentialType value); };" />
+      <MemberSignature Language="F#" Value="member this.ProxyCredentialType : System.ServiceModel.HttpProxyCredentialType with get, set" Usage="System.ServiceModel.HttpTransportSecurity.ProxyCredentialType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.Realm" />
       <MemberSignature Language="VB.NET" Value="Public Property Realm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Realm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Realm : string with get, set" Usage="System.ServiceModel.HttpTransportSecurity.Realm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeClientCredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeClientCredentialType () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeClientCredentialType();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeClientCredentialType : unit -&gt; bool" Usage="httpTransportSecurity.ShouldSerializeClientCredentialType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeExtendedProtectionPolicy () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeExtendedProtectionPolicy();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeExtendedProtectionPolicy : unit -&gt; bool" Usage="httpTransportSecurity.ShouldSerializeExtendedProtectionPolicy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeProxyCredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeProxyCredentialType () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeProxyCredentialType();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeProxyCredentialType : unit -&gt; bool" Usage="httpTransportSecurity.ShouldSerializeProxyCredentialType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeRealm" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeRealm () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeRealm();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeRealm : unit -&gt; bool" Usage="httpTransportSecurity.ShouldSerializeRealm " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

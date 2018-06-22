@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PreviousTrackingServiceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class PreviousTrackingServiceAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type PreviousTrackingServiceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyQualifiedName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PreviousTrackingServiceAttribute(System::String ^ assemblyQualifiedName);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute : string -&gt; System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute" Usage="new System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute assemblyQualifiedName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute.AssemblyQualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyQualifiedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyQualifiedName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyQualifiedName : string" Usage="System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute.AssemblyQualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

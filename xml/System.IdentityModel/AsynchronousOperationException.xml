@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.AsynchronousOperationException" />
   <TypeSignature Language="VB.NET" Value="Public Class AsynchronousOperationException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsynchronousOperationException : Exception" />
+  <TypeSignature Language="F#" Value="type AsynchronousOperationException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsynchronousOperationException.#ctor(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsynchronousOperationException(Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.AsynchronousOperationException : Exception -&gt; System.IdentityModel.AsynchronousOperationException" Usage="new System.IdentityModel.AsynchronousOperationException innerException" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsynchronousOperationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsynchronousOperationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.AsynchronousOperationException : string -&gt; System.IdentityModel.AsynchronousOperationException" Usage="new System.IdentityModel.AsynchronousOperationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsynchronousOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsynchronousOperationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.AsynchronousOperationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.AsynchronousOperationException" Usage="new System.IdentityModel.AsynchronousOperationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsynchronousOperationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsynchronousOperationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.AsynchronousOperationException : string * Exception -&gt; System.IdentityModel.AsynchronousOperationException" Usage="new System.IdentityModel.AsynchronousOperationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

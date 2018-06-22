@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.EndpointPermission" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointPermission" />
+  <TypeSignature Language="F#" Value="type EndpointPermission = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.EndpointPermission.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="endpointPermission.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.EndpointPermission.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="endpointPermission.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.EndpointPermission.Hostname" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hostname As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Hostname { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hostname : string" Usage="System.Net.EndpointPermission.Hostname" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.EndpointPermission.Port" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Port As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Port : int" Usage="System.Net.EndpointPermission.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.EndpointPermission.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="endpointPermission.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.EndpointPermission.Transport" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transport As TransportType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::TransportType Transport { System::Net::TransportType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.Net.TransportType" Usage="System.Net.EndpointPermission.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

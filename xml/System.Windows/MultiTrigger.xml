@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.MultiTrigger" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiTrigger&#xA;Inherits TriggerBase&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class MultiTrigger sealed : System::Windows::TriggerBase, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type MultiTrigger = class&#xA;    inherit TriggerBase&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.MultiTrigger.Conditions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Conditions As ConditionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ConditionCollection ^ Conditions { System::Windows::ConditionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Conditions : System.Windows.ConditionCollection" Usage="System.Windows.MultiTrigger.Conditions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.MultiTrigger.Setters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Setters As SetterBaseCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::SetterBaseCollection ^ Setters { System::Windows::SetterBaseCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Setters : System.Windows.SetterBaseCollection" Usage="System.Windows.MultiTrigger.Setters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

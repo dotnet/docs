@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.CertificateRequest" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CertificateRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class CertificateRequest sealed" />
+  <TypeSignature Language="F#" Value="type CertificateRequest = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.#ctor(System.Security.Cryptography.X509Certificates.X500DistinguishedName,System.Security.Cryptography.ECDsa,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subjectName As X500DistinguishedName, key As ECDsa, hashAlgorithm As HashAlgorithmName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CertificateRequest(System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ subjectName, System::Security::Cryptography::ECDsa ^ key, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.CertificateRequest : System.Security.Cryptography.X509Certificates.X500DistinguishedName * System.Security.Cryptography.ECDsa * System.Security.Cryptography.HashAlgorithmName -&gt; System.Security.Cryptography.X509Certificates.CertificateRequest" Usage="new System.Security.Cryptography.X509Certificates.CertificateRequest (subjectName, key, hashAlgorithm)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X500DistinguishedName subjectName, class System.Security.Cryptography.X509Certificates.PublicKey publicKey, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.#ctor(System.Security.Cryptography.X509Certificates.X500DistinguishedName,System.Security.Cryptography.X509Certificates.PublicKey,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CertificateRequest(System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ subjectName, System::Security::Cryptography::X509Certificates::PublicKey ^ publicKey, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.CertificateRequest : System.Security.Cryptography.X509Certificates.X500DistinguishedName * System.Security.Cryptography.X509Certificates.PublicKey * System.Security.Cryptography.HashAlgorithmName -&gt; System.Security.Cryptography.X509Certificates.CertificateRequest" Usage="new System.Security.Cryptography.X509Certificates.CertificateRequest (subjectName, publicKey, hashAlgorithm)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.#ctor(System.String,System.Security.Cryptography.ECDsa,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subjectName As String, key As ECDsa, hashAlgorithm As HashAlgorithmName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CertificateRequest(System::String ^ subjectName, System::Security::Cryptography::ECDsa ^ key, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.CertificateRequest : string * System.Security.Cryptography.ECDsa * System.Security.Cryptography.HashAlgorithmName -&gt; System.Security.Cryptography.X509Certificates.CertificateRequest" Usage="new System.Security.Cryptography.X509Certificates.CertificateRequest (subjectName, key, hashAlgorithm)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.#ctor(System.Security.Cryptography.X509Certificates.X500DistinguishedName,System.Security.Cryptography.RSA,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subjectName As X500DistinguishedName, key As RSA, hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CertificateRequest(System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ subjectName, System::Security::Cryptography::RSA ^ key, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.CertificateRequest : System.Security.Cryptography.X509Certificates.X500DistinguishedName * System.Security.Cryptography.RSA * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; System.Security.Cryptography.X509Certificates.CertificateRequest" Usage="new System.Security.Cryptography.X509Certificates.CertificateRequest (subjectName, key, hashAlgorithm, padding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.#ctor(System.String,System.Security.Cryptography.RSA,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subjectName As String, key As RSA, hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CertificateRequest(System::String ^ subjectName, System::Security::Cryptography::RSA ^ key, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.CertificateRequest : string * System.Security.Cryptography.RSA * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; System.Security.Cryptography.X509Certificates.CertificateRequest" Usage="new System.Security.Cryptography.X509Certificates.CertificateRequest (subjectName, key, hashAlgorithm, padding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.CertificateRequest.CertificateExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateExtensions As Collection(Of X509Extension)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Security::Cryptography::X509Certificates::X509Extension ^&gt; ^ CertificateExtensions { System::Collections::ObjectModel::Collection&lt;System::Security::Cryptography::X509Certificates::X509Extension ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateExtensions : System.Collections.ObjectModel.Collection&lt;System.Security.Cryptography.X509Certificates.X509Extension&gt;" Usage="System.Security.Cryptography.X509Certificates.CertificateRequest.CertificateExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.Create(System.Security.Cryptography.X509Certificates.X509Certificate2,System.DateTimeOffset,System.DateTimeOffset,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (issuerCertificate As X509Certificate2, notBefore As DateTimeOffset, notAfter As DateTimeOffset, serialNumber As Byte()) As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509Certificate2 ^ Create(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ issuerCertificate, DateTimeOffset notBefore, DateTimeOffset notAfter, cli::array &lt;System::Byte&gt; ^ serialNumber);" />
+      <MemberSignature Language="F#" Value="member this.Create : System.Security.Cryptography.X509Certificates.X509Certificate2 * DateTimeOffset * DateTimeOffset * byte[] -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="certificateRequest.Create (issuerCertificate, notBefore, notAfter, serialNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -315,6 +323,7 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.Create(System.Security.Cryptography.X509Certificates.X500DistinguishedName,System.Security.Cryptography.X509Certificates.X509SignatureGenerator,System.DateTimeOffset,System.DateTimeOffset,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (issuerName As X500DistinguishedName, generator As X509SignatureGenerator, notBefore As DateTimeOffset, notAfter As DateTimeOffset, serialNumber As Byte()) As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509Certificate2 ^ Create(System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ issuerName, System::Security::Cryptography::X509Certificates::X509SignatureGenerator ^ generator, DateTimeOffset notBefore, DateTimeOffset notAfter, cli::array &lt;System::Byte&gt; ^ serialNumber);" />
+      <MemberSignature Language="F#" Value="member this.Create : System.Security.Cryptography.X509Certificates.X500DistinguishedName * System.Security.Cryptography.X509Certificates.X509SignatureGenerator * DateTimeOffset * DateTimeOffset * byte[] -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="certificateRequest.Create (issuerName, generator, notBefore, notAfter, serialNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -365,6 +374,7 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.CreateSelfSigned(System.DateTimeOffset,System.DateTimeOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSelfSigned (notBefore As DateTimeOffset, notAfter As DateTimeOffset) As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509Certificate2 ^ CreateSelfSigned(DateTimeOffset notBefore, DateTimeOffset notAfter);" />
+      <MemberSignature Language="F#" Value="member this.CreateSelfSigned : DateTimeOffset * DateTimeOffset -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="certificateRequest.CreateSelfSigned (notBefore, notAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -400,6 +410,7 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.CreateSigningRequest" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSigningRequest () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ CreateSigningRequest();" />
+      <MemberSignature Language="F#" Value="member this.CreateSigningRequest : unit -&gt; byte[]" Usage="certificateRequest.CreateSigningRequest " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -463,6 +474,7 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.CertificateRequest.CreateSigningRequest(System.Security.Cryptography.X509Certificates.X509SignatureGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSigningRequest (signatureGenerator As X509SignatureGenerator) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ CreateSigningRequest(System::Security::Cryptography::X509Certificates::X509SignatureGenerator ^ signatureGenerator);" />
+      <MemberSignature Language="F#" Value="member this.CreateSigningRequest : System.Security.Cryptography.X509Certificates.X509SignatureGenerator -&gt; byte[]" Usage="certificateRequest.CreateSigningRequest signatureGenerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -494,6 +506,7 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.CertificateRequest.HashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithm As HashAlgorithmName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::HashAlgorithmName HashAlgorithm { System::Security::Cryptography::HashAlgorithmName get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.X509Certificates.CertificateRequest.HashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -519,6 +532,7 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.CertificateRequest.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As PublicKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::PublicKey ^ PublicKey { System::Security::Cryptography::X509Certificates::PublicKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : System.Security.Cryptography.X509Certificates.PublicKey" Usage="System.Security.Cryptography.X509Certificates.CertificateRequest.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -544,6 +558,7 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.CertificateRequest.SubjectName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectName As X500DistinguishedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ SubjectName { System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectName : System.Security.Cryptography.X509Certificates.X500DistinguishedName" Usage="System.Security.Cryptography.X509Certificates.CertificateRequest.SubjectName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

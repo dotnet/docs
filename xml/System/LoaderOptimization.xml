@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.LoaderOptimization" />
   <TypeSignature Language="VB.NET" Value="Public Enum LoaderOptimization" />
   <TypeSignature Language="C++ CLI" Value="public enum class LoaderOptimization" />
+  <TypeSignature Language="F#" Value="type LoaderOptimization = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.DisallowBindings" />
       <MemberSignature Language="VB.NET" Value="DisallowBindings" />
       <MemberSignature Language="C++ CLI" Value="DisallowBindings" />
+      <MemberSignature Language="F#" Value="DisallowBindings = 4" Usage="System.LoaderOptimization.DisallowBindings" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.DomainMask" />
       <MemberSignature Language="VB.NET" Value="DomainMask" />
       <MemberSignature Language="C++ CLI" Value="DomainMask" />
+      <MemberSignature Language="F#" Value="DomainMask = 3" Usage="System.LoaderOptimization.DomainMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.MultiDomain" />
       <MemberSignature Language="VB.NET" Value="MultiDomain" />
       <MemberSignature Language="C++ CLI" Value="MultiDomain" />
+      <MemberSignature Language="F#" Value="MultiDomain = 2" Usage="System.LoaderOptimization.MultiDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.MultiDomainHost" />
       <MemberSignature Language="VB.NET" Value="MultiDomainHost" />
       <MemberSignature Language="C++ CLI" Value="MultiDomainHost" />
+      <MemberSignature Language="F#" Value="MultiDomainHost = 3" Usage="System.LoaderOptimization.MultiDomainHost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.NotSpecified" />
       <MemberSignature Language="VB.NET" Value="NotSpecified" />
       <MemberSignature Language="C++ CLI" Value="NotSpecified" />
+      <MemberSignature Language="F#" Value="NotSpecified = 0" Usage="System.LoaderOptimization.NotSpecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.SingleDomain" />
       <MemberSignature Language="VB.NET" Value="SingleDomain" />
       <MemberSignature Language="C++ CLI" Value="SingleDomain" />
+      <MemberSignature Language="F#" Value="SingleDomain = 1" Usage="System.LoaderOptimization.SingleDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

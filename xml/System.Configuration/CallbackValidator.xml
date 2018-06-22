@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.CallbackValidator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CallbackValidator&#xA;Inherits ConfigurationValidatorBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CallbackValidator sealed : System::Configuration::ConfigurationValidatorBase" />
+  <TypeSignature Language="F#" Value="type CallbackValidator = class&#xA;    inherit ConfigurationValidatorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Configuration.ValidatorCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CallbackValidator.#ctor(System.Type,System.Configuration.ValidatorCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CallbackValidator(Type ^ type, System::Configuration::ValidatorCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.CallbackValidator : Type * System.Configuration.ValidatorCallback -&gt; System.Configuration.CallbackValidator" Usage="new System.Configuration.CallbackValidator (type, callback)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.CallbackValidator.CanValidate(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanValidate(Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.CanValidate : Type -&gt; bool" Usage="callbackValidator.CanValidate type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.CallbackValidator.Validate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; unit" Usage="callbackValidator.Validate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

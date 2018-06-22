@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeArgumentReference" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeArgumentReference&#xA;Inherits CodeValueReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeArgumentReference : Mono::CodeGeneration::CodeValueReference" />
+  <TypeSignature Language="F#" Value="type CodeArgumentReference = class&#xA;    inherit CodeValueReference" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, int32 argNum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeArgumentReference.#ctor(System.Type,System.Int32,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArgumentReference(Type ^ type, int argNum, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeArgumentReference : Type * int * string -&gt; Mono.CodeGeneration.CodeArgumentReference" Usage="new Mono.CodeGeneration.CodeArgumentReference (type, argNum, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeArgumentReference.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeArgumentReference.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeArgumentReference.GenerateSet(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateSet (gen As ILGenerator, value As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateSet(System::Reflection::Emit::ILGenerator ^ gen, Mono::CodeGeneration::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="override this.GenerateSet : System.Reflection.Emit.ILGenerator * Mono.CodeGeneration.CodeExpression -&gt; unit" Usage="codeArgumentReference.GenerateSet (gen, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeArgumentReference.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeArgumentReference.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeArgumentReference.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeArgumentReference.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

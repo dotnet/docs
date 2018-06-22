@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISimpleTypeProvider`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISimpleTypeProvider(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public interface class ISimpleTypeProvider" />
+  <TypeSignature Language="F#" Value="type ISimpleTypeProvider&lt;'ype&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISimpleTypeProvider`1.GetPrimitiveType(System.Reflection.Metadata.PrimitiveTypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrimitiveType (typeCode As PrimitiveTypeCode) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetPrimitiveType(System::Reflection::Metadata::PrimitiveTypeCode typeCode);" />
+      <MemberSignature Language="F#" Value="abstract member GetPrimitiveType : System.Reflection.Metadata.PrimitiveTypeCode -&gt; 'ype" Usage="iSimpleTypeProvider.GetPrimitiveType typeCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISimpleTypeProvider`1.GetTypeFromDefinition(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.TypeDefinitionHandle,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeFromDefinition (reader As MetadataReader, handle As TypeDefinitionHandle, rawTypeKind As Byte) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetTypeFromDefinition(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::TypeDefinitionHandle handle, System::Byte rawTypeKind);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeFromDefinition : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.TypeDefinitionHandle * byte -&gt; 'ype" Usage="iSimpleTypeProvider.GetTypeFromDefinition (reader, handle, rawTypeKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISimpleTypeProvider`1.GetTypeFromReference(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.TypeReferenceHandle,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeFromReference (reader As MetadataReader, handle As TypeReferenceHandle, rawTypeKind As Byte) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetTypeFromReference(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::TypeReferenceHandle handle, System::Byte rawTypeKind);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeFromReference : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.TypeReferenceHandle * byte -&gt; 'ype" Usage="iSimpleTypeProvider.GetTypeFromReference (reader, handle, rawTypeKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

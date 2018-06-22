@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Image" />
   <TypeSignature Language="VB.NET" Value="Public Class Image&#xA;Inherits FrameworkElement&#xA;Implements IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class Image : System::Windows::FrameworkElement, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit FrameworkElement&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Image.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="image.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Image.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Windows.Controls.Image.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Image.DpiChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DpiChanged As DpiChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::DpiChangedEventHandler ^ DpiChanged;" />
+      <MemberSignature Language="F#" Value="member this.DpiChanged : System.Windows.DpiChangedEventHandler " Usage="member this.DpiChanged : System.Windows.DpiChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Image.DpiChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DpiChangedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ DpiChangedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DpiChangedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Image.DpiChangedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Image.ImageFailed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ImageFailed As EventHandler(Of ExceptionRoutedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::ExceptionRoutedEventArgs ^&gt; ^ ImageFailed;" />
+      <MemberSignature Language="F#" Value="member this.ImageFailed : EventHandler&lt;System.Windows.ExceptionRoutedEventArgs&gt; " Usage="member this.ImageFailed : System.EventHandler&lt;System.Windows.ExceptionRoutedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Image.ImageFailedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImageFailedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ImageFailedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ImageFailedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Image.ImageFailedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Image.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="image.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Image.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="image.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Image.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpi As DpiScale, newDpi As DpiScale)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpi, System::Windows::DpiScale newDpi);" />
+      <MemberSignature Language="F#" Value="abstract member OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit&#xA;override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="image.OnDpiChanged (oldDpi, newDpi)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Image.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRender (dc As DrawingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ dc);" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="image.OnRender dc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -314,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Image.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ Source { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Image.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -376,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Image.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Image.SourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -395,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Image.Stretch" />
       <MemberSignature Language="VB.NET" Value="Public Property Stretch As Stretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Stretch Stretch { System::Windows::Media::Stretch get(); void set(System::Windows::Media::Stretch value); };" />
+      <MemberSignature Language="F#" Value="member this.Stretch : System.Windows.Media.Stretch with get, set" Usage="System.Windows.Controls.Image.Stretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -439,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Image.StretchDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property StretchDirection As StretchDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::StretchDirection StretchDirection { System::Windows::Controls::StretchDirection get(); void set(System::Windows::Controls::StretchDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.StretchDirection : System.Windows.Controls.StretchDirection with get, set" Usage="System.Windows.Controls.Image.StretchDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -482,6 +497,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Image.StretchDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StretchDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StretchDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Image.StretchDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -501,6 +517,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Image.StretchProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StretchProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Image.StretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -520,6 +537,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Image.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
       <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.Image.System.Windows.Markup.IUriContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>

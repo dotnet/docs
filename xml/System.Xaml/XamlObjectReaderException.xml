@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectReaderException" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlObjectReaderException&#xA;Inherits XamlException" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlObjectReaderException : System::Xaml::XamlException" />
+  <TypeSignature Language="F#" Value="type XamlObjectReaderException = class&#xA;    inherit XamlException" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReaderException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectReaderException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlObjectReaderException : string -&gt; System.Xaml.XamlObjectReaderException" Usage="new System.Xaml.XamlObjectReaderException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReaderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlObjectReaderException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlObjectReaderException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xaml.XamlObjectReaderException" Usage="new System.Xaml.XamlObjectReaderException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReaderException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectReaderException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlObjectReaderException : string * Exception -&gt; System.Xaml.XamlObjectReaderException" Usage="new System.Xaml.XamlObjectReaderException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

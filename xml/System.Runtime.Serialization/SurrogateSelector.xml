@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SurrogateSelector" />
   <TypeSignature Language="VB.NET" Value="Public Class SurrogateSelector&#xA;Implements ISurrogateSelector" />
   <TypeSignature Language="C++ CLI" Value="public ref class SurrogateSelector : System::Runtime::Serialization::ISurrogateSelector" />
+  <TypeSignature Language="F#" Value="type SurrogateSelector = class&#xA;    interface ISurrogateSelector" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, class System.Runtime.Serialization.ISerializationSurrogate surrogate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SurrogateSelector.AddSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISerializationSurrogate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddSurrogate(Type ^ type, System::Runtime::Serialization::StreamingContext context, System::Runtime::Serialization::ISerializationSurrogate ^ surrogate);" />
+      <MemberSignature Language="F#" Value="abstract member AddSurrogate : Type * System.Runtime.Serialization.StreamingContext * System.Runtime.Serialization.ISerializationSurrogate -&gt; unit&#xA;override this.AddSurrogate : Type * System.Runtime.Serialization.StreamingContext * System.Runtime.Serialization.ISerializationSurrogate -&gt; unit" Usage="surrogateSelector.AddSurrogate (type, context, surrogate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SurrogateSelector.ChainSelector(System.Runtime.Serialization.ISurrogateSelector)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ChainSelector (selector As ISurrogateSelector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ChainSelector(System::Runtime::Serialization::ISurrogateSelector ^ selector);" />
+      <MemberSignature Language="F#" Value="abstract member ChainSelector : System.Runtime.Serialization.ISurrogateSelector -&gt; unit&#xA;override this.ChainSelector : System.Runtime.Serialization.ISurrogateSelector -&gt; unit" Usage="surrogateSelector.ChainSelector selector" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.ChainSelector(System.Runtime.Serialization.ISurrogateSelector)</InterfaceMember>
@@ -182,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SurrogateSelector.GetNextSelector" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNextSelector () As ISurrogateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Serialization::ISurrogateSelector ^ GetNextSelector();" />
+      <MemberSignature Language="F#" Value="abstract member GetNextSelector : unit -&gt; System.Runtime.Serialization.ISurrogateSelector&#xA;override this.GetNextSelector : unit -&gt; System.Runtime.Serialization.ISurrogateSelector" Usage="surrogateSelector.GetNextSelector " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.GetNextSelector</InterfaceMember>
@@ -222,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Serialization.ISerializationSurrogate GetSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] class System.Runtime.Serialization.ISurrogateSelector&amp; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Serialization::ISerializationSurrogate ^ GetSurrogate(Type ^ type, System::Runtime::Serialization::StreamingContext context, [Runtime::InteropServices::Out] System::Runtime::Serialization::ISurrogateSelector ^ % selector);" />
+      <MemberSignature Language="F#" Value="abstract member GetSurrogate : Type * System.Runtime.Serialization.StreamingContext *  -&gt; System.Runtime.Serialization.ISerializationSurrogate&#xA;override this.GetSurrogate : Type * System.Runtime.Serialization.StreamingContext *  -&gt; System.Runtime.Serialization.ISerializationSurrogate" Usage="surrogateSelector.GetSurrogate (type, context, selector)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)</InterfaceMember>
@@ -277,6 +282,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SurrogateSelector.RemoveSurrogate(System.Type,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveSurrogate(Type ^ type, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveSurrogate : Type * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.RemoveSurrogate : Type * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="surrogateSelector.RemoveSurrogate (type, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

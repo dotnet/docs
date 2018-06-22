@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Resolvers.XmlPreloadedResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlPreloadedResolver&#xA;Inherits XmlResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlPreloadedResolver : System::Xml::XmlResolver" />
+  <TypeSignature Language="F#" Value="type XmlPreloadedResolver = class&#xA;    inherit XmlResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.#ctor(System.Xml.Resolvers.XmlKnownDtds)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (preloadedDtds As XmlKnownDtds)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlPreloadedResolver(System::Xml::Resolvers::XmlKnownDtds preloadedDtds);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Resolvers.XmlPreloadedResolver : System.Xml.Resolvers.XmlKnownDtds -&gt; System.Xml.Resolvers.XmlPreloadedResolver" Usage="new System.Xml.Resolvers.XmlPreloadedResolver preloadedDtds" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.#ctor(System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fallbackResolver As XmlResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlPreloadedResolver(System::Xml::XmlResolver ^ fallbackResolver);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Resolvers.XmlPreloadedResolver : System.Xml.XmlResolver -&gt; System.Xml.Resolvers.XmlPreloadedResolver" Usage="new System.Xml.Resolvers.XmlPreloadedResolver fallbackResolver" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.#ctor(System.Xml.XmlResolver,System.Xml.Resolvers.XmlKnownDtds)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fallbackResolver As XmlResolver, preloadedDtds As XmlKnownDtds)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlPreloadedResolver(System::Xml::XmlResolver ^ fallbackResolver, System::Xml::Resolvers::XmlKnownDtds preloadedDtds);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Resolvers.XmlPreloadedResolver : System.Xml.XmlResolver * System.Xml.Resolvers.XmlKnownDtds -&gt; System.Xml.Resolvers.XmlPreloadedResolver" Usage="new System.Xml.Resolvers.XmlPreloadedResolver (fallbackResolver, preloadedDtds)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.#ctor(System.Xml.XmlResolver,System.Xml.Resolvers.XmlKnownDtds,System.Collections.Generic.IEqualityComparer{System.Uri})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fallbackResolver As XmlResolver, preloadedDtds As XmlKnownDtds, uriComparer As IEqualityComparer(Of Uri))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlPreloadedResolver(System::Xml::XmlResolver ^ fallbackResolver, System::Xml::Resolvers::XmlKnownDtds preloadedDtds, System::Collections::Generic::IEqualityComparer&lt;Uri ^&gt; ^ uriComparer);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Resolvers.XmlPreloadedResolver : System.Xml.XmlResolver * System.Xml.Resolvers.XmlKnownDtds * System.Collections.Generic.IEqualityComparer&lt;Uri&gt; -&gt; System.Xml.Resolvers.XmlPreloadedResolver" Usage="new System.Xml.Resolvers.XmlPreloadedResolver (fallbackResolver, preloadedDtds, uriComparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Uri uri, unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.Add(System.Uri,System.Byte[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Uri ^ uri, cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : Uri * byte[] -&gt; unit" Usage="xmlPreloadedResolver.Add (uri, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -255,6 +261,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Uri uri, class System.IO.Stream value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.Add(System.Uri,System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Uri ^ uri, System::IO::Stream ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : Uri * System.IO.Stream -&gt; unit" Usage="xmlPreloadedResolver.Add (uri, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Uri uri, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.Add(System.Uri,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Uri ^ uri, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : Uri * string -&gt; unit" Usage="xmlPreloadedResolver.Add (uri, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -327,6 +335,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Uri uri, unsigned int8[] value, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.Add(System.Uri,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Uri ^ uri, cli::array &lt;System::Byte&gt; ^ value, int offset, int count);" />
+      <MemberSignature Language="F#" Value="member this.Add : Uri * byte[] * int * int -&gt; unit" Usage="xmlPreloadedResolver.Add (uri, value, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -374,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Resolvers.XmlPreloadedResolver.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Credentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials {  void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials" Usage="System.Xml.Resolvers.XmlPreloadedResolver.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -404,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.GetEntity(System.Uri,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEntity (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetEntity(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
+      <MemberSignature Language="F#" Value="override this.GetEntity : Uri * string * Type -&gt; obj" Usage="xmlPreloadedResolver.GetEntity (absoluteUri, role, ofObjectToReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -456,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.GetEntityAsync(System.Uri,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEntityAsync (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Task(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ GetEntityAsync(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
+      <MemberSignature Language="F#" Value="override this.GetEntityAsync : Uri * string * Type -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="xmlPreloadedResolver.GetEntityAsync (absoluteUri, role, ofObjectToReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -494,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Resolvers.XmlPreloadedResolver.PreloadedUris" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreloadedUris As IEnumerable(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Uri ^&gt; ^ PreloadedUris { System::Collections::Generic::IEnumerable&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreloadedUris : seq&lt;Uri&gt;" Usage="System.Xml.Resolvers.XmlPreloadedResolver.PreloadedUris" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -523,6 +536,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.Remove(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="member this.Remove : Uri -&gt; unit" Usage="xmlPreloadedResolver.Remove uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -565,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.ResolveUri(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ResolveUri (baseUri As Uri, relativeUri As String) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Uri ^ ResolveUri(Uri ^ baseUri, System::String ^ relativeUri);" />
+      <MemberSignature Language="F#" Value="override this.ResolveUri : Uri * string -&gt; Uri" Usage="xmlPreloadedResolver.ResolveUri (baseUri, relativeUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -602,6 +617,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool SupportsType(class System.Uri absoluteUri, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Resolvers.XmlPreloadedResolver.SupportsType(System.Uri,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool SupportsType(Uri ^ absoluteUri, Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.SupportsType : Uri * Type -&gt; bool" Usage="xmlPreloadedResolver.SupportsType (absoluteUri, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

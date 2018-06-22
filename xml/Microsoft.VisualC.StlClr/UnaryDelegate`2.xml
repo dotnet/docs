@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.UnaryDelegate`2" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function UnaryDelegate(Of TArg, TResult)(A_0 As TArg) As TResult " />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TArg, typename TResult&gt;&#xA;public delegate TResult UnaryDelegate(TArg A_0);" />
+  <TypeSignature Language="F#" Value="type UnaryDelegate&lt;'Arg, 'Result&gt; = delegate of 'Arg -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>

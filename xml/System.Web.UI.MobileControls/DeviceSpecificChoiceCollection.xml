@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DeviceSpecificChoiceCollection&#xA;Inherits ArrayListCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeviceSpecificChoiceCollection : System::Web::UI::MobileControls::ArrayListCollectionBase" />
+  <TypeSignature Language="F#" Value="type DeviceSpecificChoiceCollection = class&#xA;    inherit ArrayListCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Add(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (choice As DeviceSpecificChoice)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::MobileControls::DeviceSpecificChoice ^ choice);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.MobileControls.DeviceSpecificChoice -&gt; unit" Usage="deviceSpecificChoiceCollection.Add choice" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.AddAt(System.Int32,System.Web.UI.MobileControls.DeviceSpecificChoice)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAt (index As Integer, choice As DeviceSpecificChoice)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAt(int index, System::Web::UI::MobileControls::DeviceSpecificChoice ^ choice);" />
+      <MemberSignature Language="F#" Value="member this.AddAt : int * System.Web.UI.MobileControls.DeviceSpecificChoice -&gt; unit" Usage="deviceSpecificChoiceCollection.AddAt (index, choice)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.All" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property All As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ All { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.All : System.Collections.ArrayList" Usage="System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.All" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="deviceSpecificChoiceCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DeviceSpecificChoice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::DeviceSpecificChoice ^ default[int] { System::Web::UI::MobileControls::DeviceSpecificChoice ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.MobileControls.DeviceSpecificChoice" Usage="System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (choice As DeviceSpecificChoice)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::MobileControls::DeviceSpecificChoice ^ choice);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.MobileControls.DeviceSpecificChoice -&gt; unit" Usage="deviceSpecificChoiceCollection.Remove choice" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="deviceSpecificChoiceCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ExtensibleModelBinderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExtensibleModelBinderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExtensibleModelBinderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ExtensibleModelBinderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ExtensibleModelBinderAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binderType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtensibleModelBinderAttribute(Type ^ binderType);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ExtensibleModelBinderAttribute : Type -&gt; System.Web.ModelBinding.ExtensibleModelBinderAttribute" Usage="new System.Web.ModelBinding.ExtensibleModelBinderAttribute binderType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ExtensibleModelBinderAttribute.BinderType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BinderType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ BinderType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinderType : Type" Usage="System.Web.ModelBinding.ExtensibleModelBinderAttribute.BinderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ExtensibleModelBinderAttribute.SuppressPrefixCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressPrefixCheck As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressPrefixCheck { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressPrefixCheck : bool with get, set" Usage="System.Web.ModelBinding.ExtensibleModelBinderAttribute.SuppressPrefixCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

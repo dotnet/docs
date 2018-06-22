@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceDefinition&#xA;Implements IScriptResourceDefinition" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceDefinition : System::Web::UI::IScriptResourceDefinition" />
+  <TypeSignature Language="F#" Value="type ScriptResourceDefinition = class&#xA;    interface IScriptResourceDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnDebugPath" />
       <MemberSignature Language="VB.NET" Value="Public Property CdnDebugPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CdnDebugPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CdnDebugPath : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.CdnDebugPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnPath" />
       <MemberSignature Language="VB.NET" Value="Public Property CdnPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CdnPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CdnPath : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.CdnPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection" />
       <MemberSignature Language="VB.NET" Value="Public Property CdnSupportsSecureConnection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CdnSupportsSecureConnection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CdnSupportsSecureConnection : bool with get, set" Usage="System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.DebugPath" />
       <MemberSignature Language="VB.NET" Value="Public Property DebugPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DebugPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DebugPath : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.DebugPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.LoadSuccessExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadSuccessExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoadSuccessExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadSuccessExpression : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.LoadSuccessExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.ResourceAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceAssembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ ResourceAssembly { System::Reflection::Assembly ^ get(); void set(System::Reflection::Assembly ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceAssembly : System.Reflection.Assembly with get, set" Usage="System.Web.UI.ScriptResourceDefinition.ResourceAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.ResourceName" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceName : string with get, set" Usage="System.Web.UI.ScriptResourceDefinition.ResourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.System#Web#UI#IScriptResourceDefinition#CdnDebugPathSecureConnection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CdnDebugPathSecureConnection As String Implements IScriptResourceDefinition.CdnDebugPathSecureConnection" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.IScriptResourceDefinition.CdnDebugPathSecureConnection { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.ScriptResourceDefinition.System.Web.UI.IScriptResourceDefinition.CdnDebugPathSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.System#Web#UI#IScriptResourceDefinition#CdnPathSecureConnection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CdnPathSecureConnection As String Implements IScriptResourceDefinition.CdnPathSecureConnection" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.IScriptResourceDefinition.CdnPathSecureConnection { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.ScriptResourceDefinition.System.Web.UI.IScriptResourceDefinition.CdnPathSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

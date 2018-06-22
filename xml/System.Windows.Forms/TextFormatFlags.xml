@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextFormatFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextFormatFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextFormatFlags" />
+  <TypeSignature Language="F#" Value="type TextFormatFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 8" Usage="System.Windows.Forms.TextFormatFlags.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Forms.TextFormatFlags.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.EndEllipsis" />
       <MemberSignature Language="VB.NET" Value="EndEllipsis" />
       <MemberSignature Language="C++ CLI" Value="EndEllipsis" />
+      <MemberSignature Language="F#" Value="EndEllipsis = 32768" Usage="System.Windows.Forms.TextFormatFlags.EndEllipsis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ExpandTabs" />
       <MemberSignature Language="VB.NET" Value="ExpandTabs" />
       <MemberSignature Language="C++ CLI" Value="ExpandTabs" />
+      <MemberSignature Language="F#" Value="ExpandTabs = 64" Usage="System.Windows.Forms.TextFormatFlags.ExpandTabs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ExternalLeading" />
       <MemberSignature Language="VB.NET" Value="ExternalLeading" />
       <MemberSignature Language="C++ CLI" Value="ExternalLeading" />
+      <MemberSignature Language="F#" Value="ExternalLeading = 512" Usage="System.Windows.Forms.TextFormatFlags.ExternalLeading" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.GlyphOverhangPadding" />
       <MemberSignature Language="VB.NET" Value="GlyphOverhangPadding" />
       <MemberSignature Language="C++ CLI" Value="GlyphOverhangPadding" />
+      <MemberSignature Language="F#" Value="GlyphOverhangPadding = 0" Usage="System.Windows.Forms.TextFormatFlags.GlyphOverhangPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -156,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.HidePrefix" />
       <MemberSignature Language="VB.NET" Value="HidePrefix" />
       <MemberSignature Language="C++ CLI" Value="HidePrefix" />
+      <MemberSignature Language="F#" Value="HidePrefix = 1048576" Usage="System.Windows.Forms.TextFormatFlags.HidePrefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.HorizontalCenter" />
       <MemberSignature Language="VB.NET" Value="HorizontalCenter" />
       <MemberSignature Language="C++ CLI" Value="HorizontalCenter" />
+      <MemberSignature Language="F#" Value="HorizontalCenter = 1" Usage="System.Windows.Forms.TextFormatFlags.HorizontalCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Internal" />
       <MemberSignature Language="VB.NET" Value="Internal" />
       <MemberSignature Language="C++ CLI" Value="Internal" />
+      <MemberSignature Language="F#" Value="Internal = 4096" Usage="System.Windows.Forms.TextFormatFlags.Internal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 0" Usage="System.Windows.Forms.TextFormatFlags.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -242,6 +253,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.LeftAndRightPadding" />
       <MemberSignature Language="VB.NET" Value="LeftAndRightPadding" />
       <MemberSignature Language="C++ CLI" Value="LeftAndRightPadding" />
+      <MemberSignature Language="F#" Value="LeftAndRightPadding = 536870912" Usage="System.Windows.Forms.TextFormatFlags.LeftAndRightPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -261,6 +273,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ModifyString" />
       <MemberSignature Language="VB.NET" Value="ModifyString" />
       <MemberSignature Language="C++ CLI" Value="ModifyString" />
+      <MemberSignature Language="F#" Value="ModifyString = 65536" Usage="System.Windows.Forms.TextFormatFlags.ModifyString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +293,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoClipping" />
       <MemberSignature Language="VB.NET" Value="NoClipping" />
       <MemberSignature Language="C++ CLI" Value="NoClipping" />
+      <MemberSignature Language="F#" Value="NoClipping = 256" Usage="System.Windows.Forms.TextFormatFlags.NoClipping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -299,6 +313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoFullWidthCharacterBreak" />
       <MemberSignature Language="VB.NET" Value="NoFullWidthCharacterBreak" />
       <MemberSignature Language="C++ CLI" Value="NoFullWidthCharacterBreak" />
+      <MemberSignature Language="F#" Value="NoFullWidthCharacterBreak = 524288" Usage="System.Windows.Forms.TextFormatFlags.NoFullWidthCharacterBreak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -326,6 +341,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoPadding" />
       <MemberSignature Language="VB.NET" Value="NoPadding" />
       <MemberSignature Language="C++ CLI" Value="NoPadding" />
+      <MemberSignature Language="F#" Value="NoPadding = 268435456" Usage="System.Windows.Forms.TextFormatFlags.NoPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -345,6 +361,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoPrefix" />
       <MemberSignature Language="VB.NET" Value="NoPrefix" />
       <MemberSignature Language="C++ CLI" Value="NoPrefix" />
+      <MemberSignature Language="F#" Value="NoPrefix = 2048" Usage="System.Windows.Forms.TextFormatFlags.NoPrefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -372,6 +389,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PathEllipsis" />
       <MemberSignature Language="VB.NET" Value="PathEllipsis" />
       <MemberSignature Language="C++ CLI" Value="PathEllipsis" />
+      <MemberSignature Language="F#" Value="PathEllipsis = 16384" Usage="System.Windows.Forms.TextFormatFlags.PathEllipsis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -391,6 +409,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PrefixOnly" />
       <MemberSignature Language="VB.NET" Value="PrefixOnly" />
       <MemberSignature Language="C++ CLI" Value="PrefixOnly" />
+      <MemberSignature Language="F#" Value="PrefixOnly = 2097152" Usage="System.Windows.Forms.TextFormatFlags.PrefixOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -420,6 +439,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PreserveGraphicsClipping" />
       <MemberSignature Language="VB.NET" Value="PreserveGraphicsClipping" />
       <MemberSignature Language="C++ CLI" Value="PreserveGraphicsClipping" />
+      <MemberSignature Language="F#" Value="PreserveGraphicsClipping = 16777216" Usage="System.Windows.Forms.TextFormatFlags.PreserveGraphicsClipping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -439,6 +459,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PreserveGraphicsTranslateTransform" />
       <MemberSignature Language="VB.NET" Value="PreserveGraphicsTranslateTransform" />
       <MemberSignature Language="C++ CLI" Value="PreserveGraphicsTranslateTransform" />
+      <MemberSignature Language="F#" Value="PreserveGraphicsTranslateTransform = 33554432" Usage="System.Windows.Forms.TextFormatFlags.PreserveGraphicsTranslateTransform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -458,6 +479,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 2" Usage="System.Windows.Forms.TextFormatFlags.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -477,6 +499,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="RightToLeft" />
       <MemberSignature Language="C++ CLI" Value="RightToLeft" />
+      <MemberSignature Language="F#" Value="RightToLeft = 131072" Usage="System.Windows.Forms.TextFormatFlags.RightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -496,6 +519,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.SingleLine" />
       <MemberSignature Language="VB.NET" Value="SingleLine" />
       <MemberSignature Language="C++ CLI" Value="SingleLine" />
+      <MemberSignature Language="F#" Value="SingleLine = 32" Usage="System.Windows.Forms.TextFormatFlags.SingleLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -515,6 +539,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.TextBoxControl" />
       <MemberSignature Language="VB.NET" Value="TextBoxControl" />
       <MemberSignature Language="C++ CLI" Value="TextBoxControl" />
+      <MemberSignature Language="F#" Value="TextBoxControl = 8192" Usage="System.Windows.Forms.TextFormatFlags.TextBoxControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -534,6 +559,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Windows.Forms.TextFormatFlags.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -553,6 +579,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.VerticalCenter" />
       <MemberSignature Language="VB.NET" Value="VerticalCenter" />
       <MemberSignature Language="C++ CLI" Value="VerticalCenter" />
+      <MemberSignature Language="F#" Value="VerticalCenter = 4" Usage="System.Windows.Forms.TextFormatFlags.VerticalCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -572,6 +599,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.WordBreak" />
       <MemberSignature Language="VB.NET" Value="WordBreak" />
       <MemberSignature Language="C++ CLI" Value="WordBreak" />
+      <MemberSignature Language="F#" Value="WordBreak = 16" Usage="System.Windows.Forms.TextFormatFlags.WordBreak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -591,6 +619,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.WordEllipsis" />
       <MemberSignature Language="VB.NET" Value="WordEllipsis" />
       <MemberSignature Language="C++ CLI" Value="WordEllipsis" />
+      <MemberSignature Language="F#" Value="WordEllipsis = 262144" Usage="System.Windows.Forms.TextFormatFlags.WordEllipsis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

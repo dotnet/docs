@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.IssuerTokenResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class IssuerTokenResolver&#xA;Inherits SecurityTokenResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class IssuerTokenResolver : System::IdentityModel::Selectors::SecurityTokenResolver" />
+  <TypeSignature Language="F#" Value="type IssuerTokenResolver = class&#xA;    inherit SecurityTokenResolver" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.#ctor(System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (wrappedTokenResolver As SecurityTokenResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IssuerTokenResolver(System::IdentityModel::Selectors::SecurityTokenResolver ^ wrappedTokenResolver);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.IssuerTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.IssuerTokenResolver" Usage="new System.IdentityModel.Tokens.IssuerTokenResolver wrappedTokenResolver" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.IssuerTokenResolver.DefaultStoreLocation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultStoreLocation As StoreLocation " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Security::Cryptography::X509Certificates::StoreLocation DefaultStoreLocation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation" Usage="System.IdentityModel.Tokens.IssuerTokenResolver.DefaultStoreLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.IssuerTokenResolver.DefaultStoreName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultStoreName As StoreName " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Security::Cryptography::X509Certificates::StoreName DefaultStoreName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultStoreName : System.Security.Cryptography.X509Certificates.StoreName" Usage="System.IdentityModel.Tokens.IssuerTokenResolver.DefaultStoreName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveSecurityKeyCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKey@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveSecurityKeyCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef key As SecurityKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveSecurityKeyCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityKey ^ % key);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveSecurityKeyCore : System.IdentityModel.Tokens.SecurityKeyIdentifierClause *  -&gt; bool" Usage="issuerTokenResolver.TryResolveSecurityKeyCore (keyIdentifierClause, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifier As SecurityKeyIdentifier, ByRef token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveTokenCore : System.IdentityModel.Tokens.SecurityKeyIdentifier *  -&gt; bool" Usage="issuerTokenResolver.TryResolveTokenCore (keyIdentifier, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityToken@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveTokenCore : System.IdentityModel.Tokens.SecurityKeyIdentifierClause *  -&gt; bool" Usage="issuerTokenResolver.TryResolveTokenCore (keyIdentifierClause, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.IssuerTokenResolver.WrappedTokenResolver" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrappedTokenResolver As SecurityTokenResolver" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenResolver ^ WrappedTokenResolver { System::IdentityModel::Selectors::SecurityTokenResolver ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WrappedTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver" Usage="System.IdentityModel.Tokens.IssuerTokenResolver.WrappedTokenResolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

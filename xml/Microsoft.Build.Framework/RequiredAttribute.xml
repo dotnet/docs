@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.RequiredAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequiredAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequiredAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type RequiredAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityKeyEntropyMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityKeyEntropyMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityKeyEntropyMode" />
+  <TypeSignature Language="F#" Value="type SecurityKeyEntropyMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.ClientEntropy" />
       <MemberSignature Language="VB.NET" Value="ClientEntropy" />
       <MemberSignature Language="C++ CLI" Value="ClientEntropy" />
+      <MemberSignature Language="F#" Value="ClientEntropy = 0" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.ClientEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy" />
       <MemberSignature Language="VB.NET" Value="CombinedEntropy" />
       <MemberSignature Language="C++ CLI" Value="CombinedEntropy" />
+      <MemberSignature Language="F#" Value="CombinedEntropy = 2" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.ServerEntropy" />
       <MemberSignature Language="VB.NET" Value="ServerEntropy" />
       <MemberSignature Language="C++ CLI" Value="ServerEntropy" />
+      <MemberSignature Language="F#" Value="ServerEntropy = 1" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.ServerEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

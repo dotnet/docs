@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebHttpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHttpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of WebHttpBinding, WebHttpBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebHttpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::WebHttpBinding ^, System::ServiceModel::Configuration::WebHttpBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type WebHttpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;WebHttpBinding, WebHttpBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpBindingCollectionElement.GetDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDefault () As Binding" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::Binding ^ GetDefault();" />
+      <MemberSignature Language="F#" Value="override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="webHttpBindingCollectionElement.GetDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

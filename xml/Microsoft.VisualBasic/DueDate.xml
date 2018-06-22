@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DueDate" />
   <TypeSignature Language="VB.NET" Value="Public Enum DueDate" />
   <TypeSignature Language="C++ CLI" Value="public enum class DueDate" />
+  <TypeSignature Language="F#" Value="type DueDate = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DueDate.BegOfPeriod" />
       <MemberSignature Language="VB.NET" Value="BegOfPeriod" />
       <MemberSignature Language="C++ CLI" Value="BegOfPeriod" />
+      <MemberSignature Language="F#" Value="BegOfPeriod = 1" Usage="Microsoft.VisualBasic.DueDate.BegOfPeriod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DueDate.EndOfPeriod" />
       <MemberSignature Language="VB.NET" Value="EndOfPeriod" />
       <MemberSignature Language="C++ CLI" Value="EndOfPeriod" />
+      <MemberSignature Language="F#" Value="EndOfPeriod = 0" Usage="Microsoft.VisualBasic.DueDate.EndOfPeriod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

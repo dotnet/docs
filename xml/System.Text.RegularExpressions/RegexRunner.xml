@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.RegexRunner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RegexRunner" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegexRunner abstract" />
+  <TypeSignature Language="F#" Value="type RegexRunner = class" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Capture(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Capture (capnum As Integer, start As Integer, end As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Capture(int capnum, int start, int end);" />
+      <MemberSignature Language="F#" Value="member this.Capture : int * int * int -&gt; unit" Usage="regexRunner.Capture (capnum, start, end)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.CharInClass(System.Char,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CharInClass (ch As Char, charClass As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool CharInClass(char ch, System::String ^ charClass);" />
+      <MemberSignature Language="F#" Value="static member CharInClass : char * string -&gt; bool" Usage="System.Text.RegularExpressions.RegexRunner.CharInClass (ch, charClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.CharInSet(System.Char,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CharInSet (ch As Char, set As String, category As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool CharInSet(char ch, System::String ^ set, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member CharInSet : char * string * string -&gt; bool" Usage="System.Text.RegularExpressions.RegexRunner.CharInSet (ch, set, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.CheckTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckTimeout ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckTimeout();" />
+      <MemberSignature Language="F#" Value="member this.CheckTimeout : unit -&gt; unit" Usage="regexRunner.CheckTimeout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Crawl(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Crawl (i As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Crawl(int i);" />
+      <MemberSignature Language="F#" Value="member this.Crawl : int -&gt; unit" Usage="regexRunner.Crawl i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -261,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Crawlpos" />
       <MemberSignature Language="VB.NET" Value="Protected Function Crawlpos () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; int Crawlpos();" />
+      <MemberSignature Language="F#" Value="member this.Crawlpos : unit -&gt; int" Usage="regexRunner.Crawlpos " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.DoubleCrawl" />
       <MemberSignature Language="VB.NET" Value="Protected Sub DoubleCrawl ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleCrawl();" />
+      <MemberSignature Language="F#" Value="member this.DoubleCrawl : unit -&gt; unit" Usage="regexRunner.DoubleCrawl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -328,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.DoubleStack" />
       <MemberSignature Language="VB.NET" Value="Protected Sub DoubleStack ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleStack();" />
+      <MemberSignature Language="F#" Value="member this.DoubleStack : unit -&gt; unit" Usage="regexRunner.DoubleStack " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -361,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.DoubleTrack" />
       <MemberSignature Language="VB.NET" Value="Protected Sub DoubleTrack ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleTrack();" />
+      <MemberSignature Language="F#" Value="member this.DoubleTrack : unit -&gt; unit" Usage="regexRunner.DoubleTrack " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -394,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.EnsureStorage" />
       <MemberSignature Language="VB.NET" Value="Protected Sub EnsureStorage ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnsureStorage();" />
+      <MemberSignature Language="F#" Value="member this.EnsureStorage : unit -&gt; unit" Usage="regexRunner.EnsureStorage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -427,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.FindFirstChar" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function FindFirstChar () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool FindFirstChar();" />
+      <MemberSignature Language="F#" Value="abstract member FindFirstChar : unit -&gt; bool" Usage="regexRunner.FindFirstChar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -461,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Go" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Go ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Go();" />
+      <MemberSignature Language="F#" Value="abstract member Go : unit -&gt; unit" Usage="regexRunner.Go " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -494,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.InitTrackCount" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub InitTrackCount ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void InitTrackCount();" />
+      <MemberSignature Language="F#" Value="abstract member InitTrackCount : unit -&gt; unit" Usage="regexRunner.InitTrackCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -527,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.IsBoundary(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsBoundary (index As Integer, startpos As Integer, endpos As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsBoundary(int index, int startpos, int endpos);" />
+      <MemberSignature Language="F#" Value="member this.IsBoundary : int * int * int -&gt; bool" Usage="regexRunner.IsBoundary (index, startpos, endpos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -568,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.IsECMABoundary(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsECMABoundary (index As Integer, startpos As Integer, endpos As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsECMABoundary(int index, int startpos, int endpos);" />
+      <MemberSignature Language="F#" Value="member this.IsECMABoundary : int * int * int -&gt; bool" Usage="regexRunner.IsECMABoundary (index, startpos, endpos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -609,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.IsMatched(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsMatched (cap As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsMatched(int cap);" />
+      <MemberSignature Language="F#" Value="member this.IsMatched : int -&gt; bool" Usage="regexRunner.IsMatched cap" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -646,6 +663,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.MatchIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function MatchIndex (cap As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; int MatchIndex(int cap);" />
+      <MemberSignature Language="F#" Value="member this.MatchIndex : int -&gt; int" Usage="regexRunner.MatchIndex cap" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -683,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.MatchLength(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function MatchLength (cap As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; int MatchLength(int cap);" />
+      <MemberSignature Language="F#" Value="member this.MatchLength : int -&gt; int" Usage="regexRunner.MatchLength cap" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -720,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Popcrawl" />
       <MemberSignature Language="VB.NET" Value="Protected Function Popcrawl () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; int Popcrawl();" />
+      <MemberSignature Language="F#" Value="member this.Popcrawl : unit -&gt; int" Usage="regexRunner.Popcrawl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -754,6 +774,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runcrawl" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runcrawl As Integer() " />
       <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runcrawl;" />
+      <MemberSignature Language="F#" Value="val mutable runcrawl : int[]" Usage="System.Text.RegularExpressions.RegexRunner.runcrawl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -786,6 +807,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runcrawlpos" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runcrawlpos As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected public: int runcrawlpos;" />
+      <MemberSignature Language="F#" Value="val mutable runcrawlpos : int" Usage="System.Text.RegularExpressions.RegexRunner.runcrawlpos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -818,6 +840,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runmatch" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runmatch As Match " />
       <MemberSignature Language="C++ CLI" Value="protected public: System::Text::RegularExpressions::Match ^ runmatch;" />
+      <MemberSignature Language="F#" Value="val mutable runmatch : System.Text.RegularExpressions.Match" Usage="System.Text.RegularExpressions.RegexRunner.runmatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -850,6 +873,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runregex" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runregex As Regex " />
       <MemberSignature Language="C++ CLI" Value="protected public: System::Text::RegularExpressions::Regex ^ runregex;" />
+      <MemberSignature Language="F#" Value="val mutable runregex : System.Text.RegularExpressions.Regex" Usage="System.Text.RegularExpressions.RegexRunner.runregex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -882,6 +906,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runstack" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runstack As Integer() " />
       <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runstack;" />
+      <MemberSignature Language="F#" Value="val mutable runstack : int[]" Usage="System.Text.RegularExpressions.RegexRunner.runstack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -914,6 +939,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runstackpos" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runstackpos As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected public: int runstackpos;" />
+      <MemberSignature Language="F#" Value="val mutable runstackpos : int" Usage="System.Text.RegularExpressions.RegexRunner.runstackpos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -946,6 +972,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtext" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtext As String " />
       <MemberSignature Language="C++ CLI" Value="protected public: System::String ^ runtext;" />
+      <MemberSignature Language="F#" Value="val mutable runtext : string" Usage="System.Text.RegularExpressions.RegexRunner.runtext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -978,6 +1005,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtextbeg" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtextbeg As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected public: int runtextbeg;" />
+      <MemberSignature Language="F#" Value="val mutable runtextbeg : int" Usage="System.Text.RegularExpressions.RegexRunner.runtextbeg" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1010,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtextend" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtextend As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected public: int runtextend;" />
+      <MemberSignature Language="F#" Value="val mutable runtextend : int" Usage="System.Text.RegularExpressions.RegexRunner.runtextend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1042,6 +1071,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtextpos" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtextpos As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected public: int runtextpos;" />
+      <MemberSignature Language="F#" Value="val mutable runtextpos : int" Usage="System.Text.RegularExpressions.RegexRunner.runtextpos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1074,6 +1104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtextstart" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtextstart As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected public: int runtextstart;" />
+      <MemberSignature Language="F#" Value="val mutable runtextstart : int" Usage="System.Text.RegularExpressions.RegexRunner.runtextstart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1106,6 +1137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtrack" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtrack As Integer() " />
       <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runtrack;" />
+      <MemberSignature Language="F#" Value="val mutable runtrack : int[]" Usage="System.Text.RegularExpressions.RegexRunner.runtrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1138,6 +1170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtrackcount" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtrackcount As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected public: int runtrackcount;" />
+      <MemberSignature Language="F#" Value="val mutable runtrackcount : int" Usage="System.Text.RegularExpressions.RegexRunner.runtrackcount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1170,6 +1203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtrackpos" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtrackpos As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected public: int runtrackpos;" />
+      <MemberSignature Language="F#" Value="val mutable runtrackpos : int" Usage="System.Text.RegularExpressions.RegexRunner.runtrackpos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1212,6 +1246,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Text.RegularExpressions.Match Scan(class System.Text.RegularExpressions.Regex regex, string text, int32 textbeg, int32 textend, int32 textstart, int32 prevlen, bool quick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Text::RegularExpressions::Match ^ Scan(System::Text::RegularExpressions::Regex ^ regex, System::String ^ text, int textbeg, int textend, int textstart, int prevlen, bool quick);" />
+      <MemberSignature Language="F#" Value="member this.Scan : System.Text.RegularExpressions.Regex * string * int * int * int * int * bool -&gt; System.Text.RegularExpressions.Match" Usage="regexRunner.Scan (regex, text, textbeg, textend, textstart, prevlen, quick)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1261,6 +1296,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Text.RegularExpressions.Match Scan(class System.Text.RegularExpressions.Regex regex, string text, int32 textbeg, int32 textend, int32 textstart, int32 prevlen, bool quick, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Text::RegularExpressions::Match ^ Scan(System::Text::RegularExpressions::Regex ^ regex, System::String ^ text, int textbeg, int textend, int textstart, int prevlen, bool quick, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Scan : System.Text.RegularExpressions.Regex * string * int * int * int * int * bool * TimeSpan -&gt; System.Text.RegularExpressions.Match" Usage="regexRunner.Scan (regex, text, textbeg, textend, textstart, prevlen, quick, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1313,6 +1349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.TransferCapture(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub TransferCapture (capnum As Integer, uncapnum As Integer, start As Integer, end As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TransferCapture(int capnum, int uncapnum, int start, int end);" />
+      <MemberSignature Language="F#" Value="member this.TransferCapture : int * int * int * int -&gt; unit" Usage="regexRunner.TransferCapture (capnum, uncapnum, start, end)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1355,6 +1392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Uncapture" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Uncapture ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Uncapture();" />
+      <MemberSignature Language="F#" Value="member this.Uncapture : unit -&gt; unit" Usage="regexRunner.Uncapture " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>

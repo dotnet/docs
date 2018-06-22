@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.ExceptionHandler" />
   <TypeSignature Language="VB.NET" Value="Public Structure ExceptionHandler&#xA;Implements IEquatable(Of ExceptionHandler)" />
   <TypeSignature Language="C++ CLI" Value="public value class ExceptionHandler : IEquatable&lt;System::Reflection::Emit::ExceptionHandler&gt;" />
+  <TypeSignature Language="F#" Value="type ExceptionHandler = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.ExceptionHandlingClauseOptions,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tryOffset As Integer, tryLength As Integer, filterOffset As Integer, handlerOffset As Integer, handlerLength As Integer, kind As ExceptionHandlingClauseOptions, exceptionTypeToken As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExceptionHandler(int tryOffset, int tryLength, int filterOffset, int handlerOffset, int handlerLength, System::Reflection::ExceptionHandlingClauseOptions kind, int exceptionTypeToken);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.ExceptionHandler : int * int * int * int * int * System.Reflection.ExceptionHandlingClauseOptions * int -&gt; System.Reflection.Emit.ExceptionHandler" Usage="new System.Reflection.Emit.ExceptionHandler (tryOffset, tryLength, filterOffset, handlerOffset, handlerLength, kind, exceptionTypeToken)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="exceptionHandler.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.Equals(System.Reflection.Emit.ExceptionHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ExceptionHandler) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Emit::ExceptionHandler other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Emit.ExceptionHandler -&gt; bool" Usage="exceptionHandler.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.ExceptionTypeToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExceptionTypeToken As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExceptionTypeToken { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionTypeToken : int" Usage="System.Reflection.Emit.ExceptionHandler.ExceptionTypeToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.FilterOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilterOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterOffset : int" Usage="System.Reflection.Emit.ExceptionHandler.FilterOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="exceptionHandler.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.HandlerLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandlerLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HandlerLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandlerLength : int" Usage="System.Reflection.Emit.ExceptionHandler.HandlerLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.HandlerOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandlerOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HandlerOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandlerOffset : int" Usage="System.Reflection.Emit.ExceptionHandler.HandlerOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -239,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As ExceptionHandlingClauseOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ExceptionHandlingClauseOptions Kind { System::Reflection::ExceptionHandlingClauseOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : System.Reflection.ExceptionHandlingClauseOptions" Usage="System.Reflection.Emit.ExceptionHandler.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.op_Equality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ExceptionHandler, right As ExceptionHandler) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Emit::ExceptionHandler left, System::Reflection::Emit::ExceptionHandler right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Emit.ExceptionHandler * System.Reflection.Emit.ExceptionHandler -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -288,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.op_Inequality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ExceptionHandler, right As ExceptionHandler) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Emit::ExceptionHandler left, System::Reflection::Emit::ExceptionHandler right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Emit.ExceptionHandler * System.Reflection.Emit.ExceptionHandler -&gt; bool" Usage="System.Reflection.Emit.ExceptionHandler.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.TryLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TryLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TryLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TryLength : int" Usage="System.Reflection.Emit.ExceptionHandler.TryLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -337,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.TryOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TryOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TryOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TryOffset : int" Usage="System.Reflection.Emit.ExceptionHandler.TryOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

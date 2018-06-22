@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.RowUpdatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RowUpdatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RowUpdatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type RowUpdatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRow dataRow, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.RowUpdatedEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RowUpdatedEventArgs(System::Data::DataRow ^ dataRow, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.RowUpdatedEventArgs : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.Common.RowUpdatedEventArgs" Usage="new System.Data.Common.RowUpdatedEventArgs (dataRow, command, statementType, tableMapping)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatedEventArgs.Command" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Command As IDbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbCommand ^ Command { System::Data::IDbCommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Data.IDbCommand" Usage="System.Data.Common.RowUpdatedEventArgs.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.RowUpdatedEventArgs.CopyToRows(System.Data.DataRow[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyToRows (array As DataRow())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyToRows(cli::array &lt;System::Data::DataRow ^&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="member this.CopyToRows : System.Data.DataRow[] -&gt; unit" Usage="rowUpdatedEventArgs.CopyToRows array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.RowUpdatedEventArgs.CopyToRows(System.Data.DataRow[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyToRows (array As DataRow(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyToRows(cli::array &lt;System::Data::DataRow ^&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="member this.CopyToRows : System.Data.DataRow[] * int -&gt; unit" Usage="rowUpdatedEventArgs.CopyToRows (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatedEventArgs.Errors" />
       <MemberSignature Language="VB.NET" Value="Public Property Errors As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Errors { Exception ^ get(); void set(Exception ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : Exception with get, set" Usage="System.Data.Common.RowUpdatedEventArgs.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatedEventArgs.RecordsAffected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecordsAffected As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RecordsAffected { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecordsAffected : int" Usage="System.Data.Common.RowUpdatedEventArgs.RecordsAffected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -269,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatedEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ Row { System::Data::DataRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Data.DataRow" Usage="System.Data.Common.RowUpdatedEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -306,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatedEventArgs.RowCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowCount : int" Usage="System.Data.Common.RowUpdatedEventArgs.RowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -337,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatedEventArgs.StatementType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatementType As StatementType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::StatementType StatementType { System::Data::StatementType get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatementType : System.Data.StatementType" Usage="System.Data.Common.RowUpdatedEventArgs.StatementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatedEventArgs.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As UpdateStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::UpdateStatus Status { System::Data::UpdateStatus get(); void set(System::Data::UpdateStatus value); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Data.UpdateStatus with get, set" Usage="System.Data.Common.RowUpdatedEventArgs.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -412,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatedEventArgs.TableMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableMapping As DataTableMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataTableMapping ^ TableMapping { System::Data::Common::DataTableMapping ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TableMapping : System.Data.Common.DataTableMapping" Usage="System.Data.Common.RowUpdatedEventArgs.TableMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

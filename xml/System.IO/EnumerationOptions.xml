@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.EnumerationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class EnumerationOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumerationOptions" />
+  <TypeSignature Language="F#" Value="type EnumerationOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.EnumerationOptions.AttributesToSkip" />
       <MemberSignature Language="VB.NET" Value="Public Property AttributesToSkip As FileAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::FileAttributes AttributesToSkip { System::IO::FileAttributes get(); void set(System::IO::FileAttributes value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributesToSkip : System.IO.FileAttributes with get, set" Usage="System.IO.EnumerationOptions.AttributesToSkip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.EnumerationOptions.BufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property BufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BufferSize : int with get, set" Usage="System.IO.EnumerationOptions.BufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.EnumerationOptions.IgnoreInaccessible" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreInaccessible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreInaccessible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreInaccessible : bool with get, set" Usage="System.IO.EnumerationOptions.IgnoreInaccessible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.EnumerationOptions.MatchCasing" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchCasing As MatchCasing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::MatchCasing MatchCasing { System::IO::MatchCasing get(); void set(System::IO::MatchCasing value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchCasing : System.IO.MatchCasing with get, set" Usage="System.IO.EnumerationOptions.MatchCasing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.EnumerationOptions.MatchType" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchType As MatchType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::MatchType MatchType { System::IO::MatchType get(); void set(System::IO::MatchType value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchType : System.IO.MatchType with get, set" Usage="System.IO.EnumerationOptions.MatchType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.EnumerationOptions.RecurseSubdirectories" />
       <MemberSignature Language="VB.NET" Value="Public Property RecurseSubdirectories As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RecurseSubdirectories { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RecurseSubdirectories : bool with get, set" Usage="System.IO.EnumerationOptions.RecurseSubdirectories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.EnumerationOptions.ReturnSpecialDirectories" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnSpecialDirectories As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnSpecialDirectories { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnSpecialDirectories : bool with get, set" Usage="System.IO.EnumerationOptions.ReturnSpecialDirectories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject5" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVbcHostObject5&#xA;Implements ITaskHost, IVbcHostObject4" />
   <TypeSignature Language="C++ CLI" Value="public interface class IVbcHostObject5 : Microsoft::Build::Framework::ITaskHost, Microsoft::Build::Tasks::Hosting::IVbcHostObject4" />
+  <TypeSignature Language="F#" Value="type IVbcHostObject5 = interface&#xA;    interface IVbcHostObject4&#xA;    interface IVbcHostObject3&#xA;    interface IVbcHostObject2&#xA;    interface IVbcHostObject&#xA;    interface ITaskHost" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.CompileAsync(System.IntPtr@,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompileAsync (ByRef buildSucceededEvent As IntPtr, ByRef buildFailedEvent As IntPtr) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompileAsync([Runtime::InteropServices::Out] IntPtr % buildSucceededEvent, [Runtime::InteropServices::Out] IntPtr % buildFailedEvent);" />
+      <MemberSignature Language="F#" Value="abstract member CompileAsync :  *  -&gt; int" Usage="iVbcHostObject5.CompileAsync (buildSucceededEvent, buildFailedEvent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.EndCompile(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndCompile (buildSuccess As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndCompile(bool buildSuccess);" />
+      <MemberSignature Language="F#" Value="abstract member EndCompile : bool -&gt; int" Usage="iVbcHostObject5.EndCompile buildSuccess" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.GetFreeThreadedHostObject" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFreeThreadedHostObject () As IVbcHostObjectFreeThreaded" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Tasks::Hosting::IVbcHostObjectFreeThreaded ^ GetFreeThreadedHostObject();" />
+      <MemberSignature Language="F#" Value="abstract member GetFreeThreadedHostObject : unit -&gt; Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded" Usage="iVbcHostObject5.GetFreeThreadedHostObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetHighEntropyVA(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetHighEntropyVA (highEntropyVA As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetHighEntropyVA(bool highEntropyVA);" />
+      <MemberSignature Language="F#" Value="abstract member SetHighEntropyVA : bool -&gt; bool" Usage="iVbcHostObject5.SetHighEntropyVA highEntropyVA" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetPlatformWith32BitPreference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetPlatformWith32BitPreference (platformWith32BitPreference As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetPlatformWith32BitPreference(System::String ^ platformWith32BitPreference);" />
+      <MemberSignature Language="F#" Value="abstract member SetPlatformWith32BitPreference : string -&gt; bool" Usage="iVbcHostObject5.SetPlatformWith32BitPreference platformWith32BitPreference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetSubsystemVersion(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetSubsystemVersion (subsystemVersion As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetSubsystemVersion(System::String ^ subsystemVersion);" />
+      <MemberSignature Language="F#" Value="abstract member SetSubsystemVersion : string -&gt; bool" Usage="iVbcHostObject5.SetSubsystemVersion subsystemVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

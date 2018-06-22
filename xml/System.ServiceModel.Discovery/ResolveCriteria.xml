@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.ResolveCriteria" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveCriteria" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveCriteria" />
+  <TypeSignature Language="F#" Value="type ResolveCriteria = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.ResolveCriteria.#ctor(System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveCriteria(System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.ResolveCriteria : System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Discovery.ResolveCriteria" Usage="new System.ServiceModel.Discovery.ResolveCriteria address" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveCriteria.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ Address { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Discovery.ResolveCriteria.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveCriteria.Duration" />
       <MemberSignature Language="VB.NET" Value="Public Property Duration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Duration : TimeSpan with get, set" Usage="System.ServiceModel.Discovery.ResolveCriteria.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveCriteria.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As Collection(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::Linq::XElement ^&gt; ^ Extensions { System::Collections::ObjectModel::Collection&lt;System::Xml::Linq::XElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt;" Usage="System.ServiceModel.Discovery.ResolveCriteria.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

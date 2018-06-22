@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientGlobalObject" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientGlobalObject&#xA;Inherits GlobalObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class LenientGlobalObject sealed : Microsoft::JScript::GlobalObject" />
+  <TypeSignature Language="F#" Value="type LenientGlobalObject = class&#xA;    inherit GlobalObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.ActiveXObject" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveXObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ActiveXObject { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveXObject : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.ActiveXObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Array" />
       <MemberSignature Language="VB.NET" Value="Public Property Array As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Array { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Array : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Array" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.boolean" />
       <MemberSignature Language="VB.NET" Value="Public boolean As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ boolean;" />
+      <MemberSignature Language="F#" Value="val mutable boolean : obj" Usage="Microsoft.JScript.LenientGlobalObject.boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Property Boolean As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Boolean { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Boolean : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.byte" />
       <MemberSignature Language="VB.NET" Value="Public byte As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ byte;" />
+      <MemberSignature Language="F#" Value="val mutable byte : obj" Usage="Microsoft.JScript.LenientGlobalObject.byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.char" />
       <MemberSignature Language="VB.NET" Value="Public char As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ char;" />
+      <MemberSignature Language="F#" Value="val mutable char : obj" Usage="Microsoft.JScript.LenientGlobalObject.char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Date" />
       <MemberSignature Language="VB.NET" Value="Public Property Date As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Date { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Date : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.decimal" />
       <MemberSignature Language="VB.NET" Value="Public decimal As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ decimal;" />
+      <MemberSignature Language="F#" Value="val mutable decimal : obj" Usage="Microsoft.JScript.LenientGlobalObject.decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -188,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.decodeURI" />
       <MemberSignature Language="VB.NET" Value="Public decodeURI As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ decodeURI;" />
+      <MemberSignature Language="F#" Value="val mutable decodeURI : obj" Usage="Microsoft.JScript.LenientGlobalObject.decodeURI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -208,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.decodeURIComponent" />
       <MemberSignature Language="VB.NET" Value="Public decodeURIComponent As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ decodeURIComponent;" />
+      <MemberSignature Language="F#" Value="val mutable decodeURIComponent : obj" Usage="Microsoft.JScript.LenientGlobalObject.decodeURIComponent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -228,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.double" />
       <MemberSignature Language="VB.NET" Value="Public double As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ double;" />
+      <MemberSignature Language="F#" Value="val mutable double : obj" Usage="Microsoft.JScript.LenientGlobalObject.double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -248,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.encodeURI" />
       <MemberSignature Language="VB.NET" Value="Public encodeURI As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ encodeURI;" />
+      <MemberSignature Language="F#" Value="val mutable encodeURI : obj" Usage="Microsoft.JScript.LenientGlobalObject.encodeURI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -268,6 +281,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.encodeURIComponent" />
       <MemberSignature Language="VB.NET" Value="Public encodeURIComponent As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ encodeURIComponent;" />
+      <MemberSignature Language="F#" Value="val mutable encodeURIComponent : obj" Usage="Microsoft.JScript.LenientGlobalObject.encodeURIComponent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -288,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Enumerator" />
       <MemberSignature Language="VB.NET" Value="Public Property Enumerator As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Enumerator { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Enumerator : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Enumerator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -309,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Error" />
       <MemberSignature Language="VB.NET" Value="Public Property Error As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Error { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Error : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -330,6 +346,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.escape" />
       <MemberSignature Language="VB.NET" Value="Public escape As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ escape;" />
+      <MemberSignature Language="F#" Value="val mutable escape : obj" Usage="Microsoft.JScript.LenientGlobalObject.escape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -355,6 +372,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.eval" />
       <MemberSignature Language="VB.NET" Value="Public eval As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ eval;" />
+      <MemberSignature Language="F#" Value="val mutable eval : obj" Usage="Microsoft.JScript.LenientGlobalObject.eval" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -375,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.EvalError" />
       <MemberSignature Language="VB.NET" Value="Public Property EvalError As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ EvalError { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EvalError : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.EvalError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -396,6 +415,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.float" />
       <MemberSignature Language="VB.NET" Value="Public float As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ float;" />
+      <MemberSignature Language="F#" Value="val mutable float : obj" Usage="Microsoft.JScript.LenientGlobalObject.float" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -416,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Function" />
       <MemberSignature Language="VB.NET" Value="Public Property Function As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Function { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Function : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Function" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -437,6 +458,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.GetObject" />
       <MemberSignature Language="VB.NET" Value="Public GetObject As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ GetObject;" />
+      <MemberSignature Language="F#" Value="val mutable GetObject : obj" Usage="Microsoft.JScript.LenientGlobalObject.GetObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -457,6 +479,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.Infinity" />
       <MemberSignature Language="VB.NET" Value="Public Infinity As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ Infinity;" />
+      <MemberSignature Language="F#" Value="val mutable Infinity : obj" Usage="Microsoft.JScript.LenientGlobalObject.Infinity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -477,6 +500,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.int" />
       <MemberSignature Language="VB.NET" Value="Public int As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ int;" />
+      <MemberSignature Language="F#" Value="val mutable int : obj" Usage="Microsoft.JScript.LenientGlobalObject.int" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -497,6 +521,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.isFinite" />
       <MemberSignature Language="VB.NET" Value="Public isFinite As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ isFinite;" />
+      <MemberSignature Language="F#" Value="val mutable isFinite : obj" Usage="Microsoft.JScript.LenientGlobalObject.isFinite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -517,6 +542,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.isNaN" />
       <MemberSignature Language="VB.NET" Value="Public isNaN As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ isNaN;" />
+      <MemberSignature Language="F#" Value="val mutable isNaN : obj" Usage="Microsoft.JScript.LenientGlobalObject.isNaN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -537,6 +563,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.long" />
       <MemberSignature Language="VB.NET" Value="Public long As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ long;" />
+      <MemberSignature Language="F#" Value="val mutable long : obj" Usage="Microsoft.JScript.LenientGlobalObject.long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -557,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Math" />
       <MemberSignature Language="VB.NET" Value="Public Property Math As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Math { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Math : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Math" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -578,6 +606,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.NaN" />
       <MemberSignature Language="VB.NET" Value="Public NaN As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ NaN;" />
+      <MemberSignature Language="F#" Value="val mutable NaN : obj" Usage="Microsoft.JScript.LenientGlobalObject.NaN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -598,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Number" />
       <MemberSignature Language="VB.NET" Value="Public Property Number As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Number { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Number : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Number" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -619,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Object" />
       <MemberSignature Language="VB.NET" Value="Public Property Object As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Object : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -640,6 +671,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.parseFloat" />
       <MemberSignature Language="VB.NET" Value="Public parseFloat As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ parseFloat;" />
+      <MemberSignature Language="F#" Value="val mutable parseFloat : obj" Usage="Microsoft.JScript.LenientGlobalObject.parseFloat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -660,6 +692,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.parseInt" />
       <MemberSignature Language="VB.NET" Value="Public parseInt As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ parseInt;" />
+      <MemberSignature Language="F#" Value="val mutable parseInt : obj" Usage="Microsoft.JScript.LenientGlobalObject.parseInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -680,6 +713,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.RangeError" />
       <MemberSignature Language="VB.NET" Value="Public Property RangeError As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RangeError { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RangeError : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.RangeError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -701,6 +735,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.ReferenceError" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferenceError As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ReferenceError { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceError : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.ReferenceError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -722,6 +757,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.RegExp" />
       <MemberSignature Language="VB.NET" Value="Public Property RegExp As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RegExp { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RegExp : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.RegExp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -743,6 +779,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.sbyte" />
       <MemberSignature Language="VB.NET" Value="Public sbyte As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ sbyte;" />
+      <MemberSignature Language="F#" Value="val mutable sbyte : obj" Usage="Microsoft.JScript.LenientGlobalObject.sbyte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -763,6 +800,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ScriptEngine" />
       <MemberSignature Language="VB.NET" Value="Public ScriptEngine As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ ScriptEngine;" />
+      <MemberSignature Language="F#" Value="val mutable ScriptEngine : obj" Usage="Microsoft.JScript.LenientGlobalObject.ScriptEngine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -783,6 +821,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ScriptEngineBuildVersion" />
       <MemberSignature Language="VB.NET" Value="Public ScriptEngineBuildVersion As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ ScriptEngineBuildVersion;" />
+      <MemberSignature Language="F#" Value="val mutable ScriptEngineBuildVersion : obj" Usage="Microsoft.JScript.LenientGlobalObject.ScriptEngineBuildVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -803,6 +842,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ScriptEngineMajorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ScriptEngineMajorVersion As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ ScriptEngineMajorVersion;" />
+      <MemberSignature Language="F#" Value="val mutable ScriptEngineMajorVersion : obj" Usage="Microsoft.JScript.LenientGlobalObject.ScriptEngineMajorVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -823,6 +863,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ScriptEngineMinorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ScriptEngineMinorVersion As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ ScriptEngineMinorVersion;" />
+      <MemberSignature Language="F#" Value="val mutable ScriptEngineMinorVersion : obj" Usage="Microsoft.JScript.LenientGlobalObject.ScriptEngineMinorVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -843,6 +884,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.short" />
       <MemberSignature Language="VB.NET" Value="Public short As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ short;" />
+      <MemberSignature Language="F#" Value="val mutable short : obj" Usage="Microsoft.JScript.LenientGlobalObject.short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -863,6 +905,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.String" />
       <MemberSignature Language="VB.NET" Value="Public Property String As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ String { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.String : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -884,6 +927,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.SyntaxError" />
       <MemberSignature Language="VB.NET" Value="Public Property SyntaxError As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyntaxError { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SyntaxError : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.SyntaxError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -905,6 +949,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.TypeError" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeError As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TypeError { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeError : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.TypeError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -926,6 +971,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.uint" />
       <MemberSignature Language="VB.NET" Value="Public uint As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ uint;" />
+      <MemberSignature Language="F#" Value="val mutable uint : obj" Usage="Microsoft.JScript.LenientGlobalObject.uint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -946,6 +992,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ulong" />
       <MemberSignature Language="VB.NET" Value="Public ulong As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ ulong;" />
+      <MemberSignature Language="F#" Value="val mutable ulong : obj" Usage="Microsoft.JScript.LenientGlobalObject.ulong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -966,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.undefined" />
       <MemberSignature Language="VB.NET" Value="Public undefined As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ undefined;" />
+      <MemberSignature Language="F#" Value="val mutable undefined : obj" Usage="Microsoft.JScript.LenientGlobalObject.undefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -986,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.unescape" />
       <MemberSignature Language="VB.NET" Value="Public unescape As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ unescape;" />
+      <MemberSignature Language="F#" Value="val mutable unescape : obj" Usage="Microsoft.JScript.LenientGlobalObject.unescape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1011,6 +1060,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.URIError" />
       <MemberSignature Language="VB.NET" Value="Public Property URIError As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ URIError { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.URIError : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.URIError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1032,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ushort" />
       <MemberSignature Language="VB.NET" Value="Public ushort As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ ushort;" />
+      <MemberSignature Language="F#" Value="val mutable ushort : obj" Usage="Microsoft.JScript.LenientGlobalObject.ushort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1052,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.VBArray" />
       <MemberSignature Language="VB.NET" Value="Public Property VBArray As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ VBArray { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VBArray : obj with get, set" Usage="Microsoft.JScript.LenientGlobalObject.VBArray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1073,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.void" />
       <MemberSignature Language="VB.NET" Value="Public void As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ void;" />
+      <MemberSignature Language="F#" Value="val mutable void : obj" Usage="Microsoft.JScript.LenientGlobalObject.void" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

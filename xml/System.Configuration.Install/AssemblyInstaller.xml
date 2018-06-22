@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.AssemblyInstaller" />
   <TypeSignature Language="VB.NET" Value="Public Class AssemblyInstaller&#xA;Inherits Installer" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyInstaller : System::Configuration::Install::Installer" />
+  <TypeSignature Language="F#" Value="type AssemblyInstaller = class&#xA;    inherit Installer" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly assembly, string[] commandLine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.AssemblyInstaller.#ctor(System.Reflection.Assembly,System.String[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyInstaller(System::Reflection::Assembly ^ assembly, cli::array &lt;System::String ^&gt; ^ commandLine);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.Install.AssemblyInstaller : System.Reflection.Assembly * string[] -&gt; System.Configuration.Install.AssemblyInstaller" Usage="new System.Configuration.Install.AssemblyInstaller (assembly, commandLine)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.AssemblyInstaller.#ctor(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, commandLine As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyInstaller(System::String ^ fileName, cli::array &lt;System::String ^&gt; ^ commandLine);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.Install.AssemblyInstaller : string * string[] -&gt; System.Configuration.Install.AssemblyInstaller" Usage="new System.Configuration.Install.AssemblyInstaller (fileName, commandLine)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.AssemblyInstaller.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Property Assembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); void set(System::Reflection::Assembly ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly with get, set" Usage="System.Configuration.Install.AssemblyInstaller.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.AssemblyInstaller.CheckIfInstallable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CheckIfInstallable (assemblyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CheckIfInstallable(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="static member CheckIfInstallable : string -&gt; unit" Usage="System.Configuration.Install.AssemblyInstaller.CheckIfInstallable assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.AssemblyInstaller.CommandLine" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandLine As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ CommandLine { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandLine : string[] with get, set" Usage="System.Configuration.Install.AssemblyInstaller.CommandLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.AssemblyInstaller.Commit(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Commit : System.Collections.IDictionary -&gt; unit" Usage="assemblyInstaller.Commit savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -307,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.AssemblyInstaller.HelpText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HelpText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpText : string" Usage="System.Configuration.Install.AssemblyInstaller.HelpText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.AssemblyInstaller.Install(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Install (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Install(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Install : System.Collections.IDictionary -&gt; unit" Usage="assemblyInstaller.Install savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -406,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.AssemblyInstaller.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Configuration.Install.AssemblyInstaller.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -437,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.AssemblyInstaller.Rollback(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Rollback : System.Collections.IDictionary -&gt; unit" Usage="assemblyInstaller.Rollback savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -503,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.AssemblyInstaller.Uninstall(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Uninstall (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Uninstall(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Uninstall : System.Collections.IDictionary -&gt; unit" Usage="assemblyInstaller.Uninstall savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -572,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.AssemblyInstaller.UseNewContext" />
       <MemberSignature Language="VB.NET" Value="Public Property UseNewContext As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseNewContext { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseNewContext : bool with get, set" Usage="System.Configuration.Install.AssemblyInstaller.UseNewContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

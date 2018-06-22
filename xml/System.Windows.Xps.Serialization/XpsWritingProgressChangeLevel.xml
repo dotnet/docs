@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum XpsWritingProgressChangeLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class XpsWritingProgressChangeLevel" />
+  <TypeSignature Language="F#" Value="type XpsWritingProgressChangeLevel = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedDocumentSequenceWritingProgress" />
       <MemberSignature Language="VB.NET" Value="FixedDocumentSequenceWritingProgress" />
       <MemberSignature Language="C++ CLI" Value="FixedDocumentSequenceWritingProgress" />
+      <MemberSignature Language="F#" Value="FixedDocumentSequenceWritingProgress = 1" Usage="System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedDocumentSequenceWritingProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedDocumentWritingProgress" />
       <MemberSignature Language="VB.NET" Value="FixedDocumentWritingProgress" />
       <MemberSignature Language="C++ CLI" Value="FixedDocumentWritingProgress" />
+      <MemberSignature Language="F#" Value="FixedDocumentWritingProgress = 2" Usage="System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedDocumentWritingProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedPageWritingProgress" />
       <MemberSignature Language="VB.NET" Value="FixedPageWritingProgress" />
       <MemberSignature Language="C++ CLI" Value="FixedPageWritingProgress" />
+      <MemberSignature Language="F#" Value="FixedPageWritingProgress = 3" Usage="System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedPageWritingProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.QueryOperationResponse`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QueryOperationResponse(Of T)&#xA;Inherits QueryOperationResponse&#xA;Implements IEnumerable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class QueryOperationResponse sealed : System::Data::Services::Client::QueryOperationResponse, System::Collections::Generic::IEnumerable&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type QueryOperationResponse&lt;'T&gt; = class&#xA;    inherit QueryOperationResponse&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse`1.GetContinuation" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContinuation () As DataServiceQueryContinuation(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ GetContinuation();" />
+      <MemberSignature Language="F#" Value="override this.GetContinuation : unit -&gt; System.Data.Services.Client.DataServiceQueryContinuation&lt;'T&gt;" Usage="queryOperationResponse.GetContinuation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;" Usage="queryOperationResponse.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.QueryOperationResponse`1.TotalCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TotalCount As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long TotalCount { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalCount : int64" Usage="System.Data.Services.Client.QueryOperationResponse&lt;'T&gt;.TotalCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

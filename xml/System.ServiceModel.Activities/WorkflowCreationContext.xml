@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowCreationContext" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowCreationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowCreationContext" />
+  <TypeSignature Language="F#" Value="type WorkflowCreationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.CreateOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateOnly : bool with get, set" Usage="System.ServiceModel.Activities.WorkflowCreationContext.CreateOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.IsCompletionTransactionRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCompletionTransactionRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompletionTransactionRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompletionTransactionRequired : bool with get, set" Usage="System.ServiceModel.Activities.WorkflowCreationContext.IsCompletionTransactionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnAbort" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnAbort ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnAbort();" />
+      <MemberSignature Language="F#" Value="abstract member OnAbort : unit -&gt; unit&#xA;override this.OnAbort : unit -&gt; unit" Usage="workflowCreationContext.OnAbort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnBeginWorkflowCompleted(System.Activities.ActivityInstanceState,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function OnBeginWorkflowCompleted (completionState As ActivityInstanceState, workflowOutputs As IDictionary(Of String, Object), terminationException As Exception, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual IAsyncResult ^ OnBeginWorkflowCompleted(System::Activities::ActivityInstanceState completionState, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ workflowOutputs, Exception ^ terminationException, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginWorkflowCompleted : System.Activities.ActivityInstanceState * System.Collections.Generic.IDictionary&lt;string, obj&gt; * Exception * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginWorkflowCompleted : System.Activities.ActivityInstanceState * System.Collections.Generic.IDictionary&lt;string, obj&gt; * Exception * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowCreationContext.OnBeginWorkflowCompleted (completionState, workflowOutputs, terminationException, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnEndWorkflowCompleted(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnEndWorkflowCompleted (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnEndWorkflowCompleted(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndWorkflowCompleted : IAsyncResult -&gt; unit&#xA;override this.OnEndWorkflowCompleted : IAsyncResult -&gt; unit" Usage="workflowCreationContext.OnEndWorkflowCompleted result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.WorkflowArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowArguments As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ WorkflowArguments { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowArguments : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.ServiceModel.Activities.WorkflowCreationContext.WorkflowArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

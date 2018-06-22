@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ScrollableControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollableControlDesigner&#xA;Inherits ParentControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollableControlDesigner : System::Windows::Forms::Design::ParentControlDesigner" />
+  <TypeSignature Language="F#" Value="type ScrollableControlDesigner = class&#xA;    inherit ParentControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ScrollableControlDesigner.GetHitTest(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHitTest (pt As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool GetHitTest(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="override this.GetHitTest : System.Drawing.Point -&gt; bool" Usage="scrollableControlDesigner.GetHitTest pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ScrollableControlDesigner.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="scrollableControlDesigner.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

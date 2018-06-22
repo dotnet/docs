@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeaderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ColumnHeaderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ColumnHeaderStyle" />
+  <TypeSignature Language="F#" Value="type ColumnHeaderStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderStyle.Clickable" />
       <MemberSignature Language="VB.NET" Value="Clickable" />
       <MemberSignature Language="C++ CLI" Value="Clickable" />
+      <MemberSignature Language="F#" Value="Clickable = 2" Usage="System.Windows.Forms.ColumnHeaderStyle.Clickable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderStyle.Nonclickable" />
       <MemberSignature Language="VB.NET" Value="Nonclickable" />
       <MemberSignature Language="C++ CLI" Value="Nonclickable" />
+      <MemberSignature Language="F#" Value="Nonclickable = 1" Usage="System.Windows.Forms.ColumnHeaderStyle.Nonclickable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.ColumnHeaderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

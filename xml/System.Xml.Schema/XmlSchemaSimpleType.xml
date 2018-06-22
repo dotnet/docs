@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSimpleType" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaSimpleType&#xA;Inherits XmlSchemaType" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaSimpleType : System::Xml::Schema::XmlSchemaType" />
+  <TypeSignature Language="F#" Value="type XmlSchemaSimpleType = class&#xA;    inherit XmlSchemaType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleType.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As XmlSchemaSimpleTypeContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSimpleTypeContent ^ Content { System::Xml::Schema::XmlSchemaSimpleTypeContent ^ get(); void set(System::Xml::Schema::XmlSchemaSimpleTypeContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Xml.Schema.XmlSchemaSimpleTypeContent with get, set" Usage="System.Xml.Schema.XmlSchemaSimpleType.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.RemoteTypeData" />
   <TypeSignature Language="VB.NET" Value="Public Structure RemoteTypeData" />
   <TypeSignature Language="C++ CLI" Value="public value class RemoteTypeData" />
+  <TypeSignature Language="F#" Value="type RemoteTypeData = struct" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.ArrayRank" />
       <MemberSignature Language="VB.NET" Value="Public ArrayRank As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int ArrayRank;" />
+      <MemberSignature Language="F#" Value="val mutable ArrayRank : int" Usage="System.AddIn.Contract.Automation.RemoteTypeData.ArrayRank" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public AssemblyName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ AssemblyName;" />
+      <MemberSignature Language="F#" Value="val mutable AssemblyName : string" Usage="System.AddIn.Contract.Automation.RemoteTypeData.AssemblyName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.AssemblyQualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public AssemblyQualifiedName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ AssemblyQualifiedName;" />
+      <MemberSignature Language="F#" Value="val mutable AssemblyQualifiedName : string" Usage="System.AddIn.Contract.Automation.RemoteTypeData.AssemblyQualifiedName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Attributes As TypeAttributes " />
       <MemberSignature Language="C++ CLI" Value="public: System::Reflection::TypeAttributes Attributes;" />
+      <MemberSignature Language="F#" Value="val mutable Attributes : System.Reflection.TypeAttributes" Usage="System.AddIn.Contract.Automation.RemoteTypeData.Attributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public BaseType As IRemoteTypeContract " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::IRemoteTypeContract ^ BaseType;" />
+      <MemberSignature Language="F#" Value="val mutable BaseType : System.AddIn.Contract.Automation.IRemoteTypeContract" Usage="System.AddIn.Contract.Automation.RemoteTypeData.BaseType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public ElementType As IRemoteTypeContract " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::IRemoteTypeContract ^ ElementType;" />
+      <MemberSignature Language="F#" Value="val mutable ElementType : System.AddIn.Contract.Automation.IRemoteTypeContract" Usage="System.AddIn.Contract.Automation.RemoteTypeData.ElementType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.FullName" />
       <MemberSignature Language="VB.NET" Value="Public FullName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ FullName;" />
+      <MemberSignature Language="F#" Value="val mutable FullName : string" Usage="System.AddIn.Contract.Automation.RemoteTypeData.FullName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.IsArray" />
       <MemberSignature Language="VB.NET" Value="Public IsArray As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool IsArray;" />
+      <MemberSignature Language="F#" Value="val mutable IsArray : bool" Usage="System.AddIn.Contract.Automation.RemoteTypeData.IsArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -224,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.IsByRef" />
       <MemberSignature Language="VB.NET" Value="Public IsByRef As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool IsByRef;" />
+      <MemberSignature Language="F#" Value="val mutable IsByRef : bool" Usage="System.AddIn.Contract.Automation.RemoteTypeData.IsByRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -250,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.MemberData" />
       <MemberSignature Language="VB.NET" Value="Public MemberData As RemoteMemberData " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::RemoteMemberData MemberData;" />
+      <MemberSignature Language="F#" Value="val mutable MemberData : System.AddIn.Contract.Automation.RemoteMemberData" Usage="System.AddIn.Contract.Automation.RemoteTypeData.MemberData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -269,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteTypeData.TypeCode" />
       <MemberSignature Language="VB.NET" Value="Public TypeCode As TypeCode " />
       <MemberSignature Language="C++ CLI" Value="public: TypeCode TypeCode;" />
+      <MemberSignature Language="F#" Value="val mutable TypeCode : TypeCode" Usage="System.AddIn.Contract.Automation.RemoteTypeData.TypeCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

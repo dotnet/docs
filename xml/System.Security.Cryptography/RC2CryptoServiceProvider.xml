@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RC2CryptoServiceProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RC2CryptoServiceProvider&#xA;Inherits RC2" />
   <TypeSignature Language="C++ CLI" Value="public ref class RC2CryptoServiceProvider sealed : System::Security::Cryptography::RC2" />
+  <TypeSignature Language="F#" Value="type RC2CryptoServiceProvider = class&#xA;    inherit RC2" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.CreateDecryptor(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
+      <MemberSignature Language="F#" Value="override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="rC2CryptoServiceProvider.CreateDecryptor (rgbKey, rgbIV)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -193,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
+      <MemberSignature Language="F#" Value="override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="rC2CryptoServiceProvider.CreateEncryptor (rgbKey, rgbIV)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -262,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2CryptoServiceProvider.EffectiveKeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EffectiveKeySize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EffectiveKeySize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EffectiveKeySize : int with get, set" Usage="System.Security.Cryptography.RC2CryptoServiceProvider.EffectiveKeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -293,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.GenerateIV" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateIV ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateIV();" />
+      <MemberSignature Language="F#" Value="override this.GenerateIV : unit -&gt; unit" Usage="rC2CryptoServiceProvider.GenerateIV " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -338,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.GenerateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateKey ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateKey();" />
+      <MemberSignature Language="F#" Value="override this.GenerateKey : unit -&gt; unit" Usage="rC2CryptoServiceProvider.GenerateKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -385,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2CryptoServiceProvider.UseSalt" />
       <MemberSignature Language="VB.NET" Value="Public Property UseSalt As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSalt { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseSalt : bool with get, set" Usage="System.Security.Cryptography.RC2CryptoServiceProvider.UseSalt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

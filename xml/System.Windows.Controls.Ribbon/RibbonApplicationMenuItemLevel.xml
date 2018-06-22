@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum RibbonApplicationMenuItemLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class RibbonApplicationMenuItemLevel" />
+  <TypeSignature Language="F#" Value="type RibbonApplicationMenuItemLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Middle" />
       <MemberSignature Language="VB.NET" Value="Middle" />
       <MemberSignature Language="C++ CLI" Value="Middle" />
+      <MemberSignature Language="F#" Value="Middle = 1" Usage="System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Sub" />
       <MemberSignature Language="VB.NET" Value="Sub" />
       <MemberSignature Language="C++ CLI" Value="Sub" />
+      <MemberSignature Language="F#" Value="Sub = 2" Usage="System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Sub" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActiveDirectoryRoleFactoryConfiguration&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryRoleFactoryConfiguration sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryRoleFactoryConfiguration = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DirectReports" />
       <MemberSignature Language="VB.NET" Value="Public Property DirectReports As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectReports { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DirectReports : string with get, set" Usage="System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DirectReports" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DistinguishedName" />
       <MemberSignature Language="VB.NET" Value="Public Property DistinguishedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DistinguishedName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DistinguishedName : string with get, set" Usage="System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DistinguishedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Group" />
       <MemberSignature Language="VB.NET" Value="Public Property Group As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Group { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Group : string with get, set" Usage="System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Manager" />
       <MemberSignature Language="VB.NET" Value="Public Property Manager As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Manager { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Manager : string with get, set" Usage="System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Manager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Member" />
       <MemberSignature Language="VB.NET" Value="Public Property Member As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.RootPath" />
       <MemberSignature Language="VB.NET" Value="Public Property RootPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootPath : string with get, set" Usage="System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.RootPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

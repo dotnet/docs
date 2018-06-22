@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.ServiceDiscoveryMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ServiceDiscoveryMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ServiceDiscoveryMode" />
+  <TypeSignature Language="F#" Value="type ServiceDiscoveryMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.ServiceDiscoveryMode.Adhoc" />
       <MemberSignature Language="VB.NET" Value="Adhoc" />
       <MemberSignature Language="C++ CLI" Value="Adhoc" />
+      <MemberSignature Language="F#" Value="Adhoc = 0" Usage="System.ServiceModel.Discovery.ServiceDiscoveryMode.Adhoc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.ServiceDiscoveryMode.Managed" />
       <MemberSignature Language="VB.NET" Value="Managed" />
       <MemberSignature Language="C++ CLI" Value="Managed" />
+      <MemberSignature Language="F#" Value="Managed = 1" Usage="System.ServiceModel.Discovery.ServiceDiscoveryMode.Managed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

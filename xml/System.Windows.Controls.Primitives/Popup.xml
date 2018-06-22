@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.Popup" />
   <TypeSignature Language="VB.NET" Value="Public Class Popup&#xA;Inherits FrameworkElement&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class Popup : System::Windows::FrameworkElement, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type Popup = class&#xA;    inherit FrameworkElement&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.AllowsTransparency" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowsTransparency As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowsTransparency { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowsTransparency : bool with get, set" Usage="System.Windows.Controls.Primitives.Popup.AllowsTransparency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -149,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.AllowsTransparencyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AllowsTransparencyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AllowsTransparencyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AllowsTransparencyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.AllowsTransparencyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.Child" />
       <MemberSignature Language="VB.NET" Value="Public Property Child As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ Child { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Child : System.Windows.UIElement with get, set" Usage="System.Windows.Controls.Primitives.Popup.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -231,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.ChildProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ChildProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ChildProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.ChildProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -250,6 +255,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.Popup.Closed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Closed;" />
+      <MemberSignature Language="F#" Value="member this.Closed : EventHandler " Usage="member this.Closed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -285,6 +291,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateRootPopup(class System.Windows.Controls.Primitives.Popup popup, class System.Windows.UIElement child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.CreateRootPopup(System.Windows.Controls.Primitives.Popup,System.Windows.UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateRootPopup(System::Windows::Controls::Primitives::Popup ^ popup, System::Windows::UIElement ^ child);" />
+      <MemberSignature Language="F#" Value="static member CreateRootPopup : System.Windows.Controls.Primitives.Popup * System.Windows.UIElement -&gt; unit" Usage="System.Windows.Controls.Primitives.Popup.CreateRootPopup (popup, child)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -339,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomPopupPlacementCallback As CustomPopupPlacementCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ CustomPopupPlacementCallback { System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ get(); void set(System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomPopupPlacementCallback : System.Windows.Controls.Primitives.CustomPopupPlacementCallback with get, set" Usage="System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -393,6 +401,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CustomPopupPlacementCallbackProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CustomPopupPlacementCallbackProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomPopupPlacementCallbackProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -412,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.GetUIParentCore" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetUIParentCore () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Windows::DependencyObject ^ GetUIParentCore();" />
+      <MemberSignature Language="F#" Value="override this.GetUIParentCore : unit -&gt; System.Windows.DependencyObject" Usage="popup.GetUIParentCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -433,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.HasDropShadow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDropShadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDropShadow { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasDropShadow : bool" Usage="System.Windows.Controls.Primitives.Popup.HasDropShadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -477,6 +488,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.HasDropShadowProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasDropShadowProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasDropShadowProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasDropShadowProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.HasDropShadowProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -508,6 +520,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double with get, set" Usage="System.Windows.Controls.Primitives.Popup.HorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -594,6 +607,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.HorizontalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.HorizontalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -613,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.IsOpen" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool with get, set" Usage="System.Windows.Controls.Primitives.Popup.IsOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -666,6 +681,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.IsOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOpenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.IsOpenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -685,6 +701,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.Primitives.Popup.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -712,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="popup.MeasureOverride availableSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -743,6 +761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.OnClosed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosed (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosed(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClosed : EventArgs -&gt; unit&#xA;override this.OnClosed : EventArgs -&gt; unit" Usage="popup.OnClosed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -766,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.OnOpened(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnOpened (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnOpened(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnOpened : EventArgs -&gt; unit&#xA;override this.OnOpened : EventArgs -&gt; unit" Usage="popup.OnOpened e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -789,6 +809,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="popup.OnPreviewMouseLeftButtonDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -819,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.OnPreviewMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseLeftButtonUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseLeftButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseLeftButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="popup.OnPreviewMouseLeftButtonUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -849,6 +871,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.OnPreviewMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseRightButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseRightButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseRightButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="popup.OnPreviewMouseRightButtonDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -879,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Popup.OnPreviewMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseRightButtonUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseRightButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseRightButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="popup.OnPreviewMouseRightButtonUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -909,6 +933,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.Popup.Opened" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Opened As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Opened;" />
+      <MemberSignature Language="F#" Value="member this.Opened : EventHandler " Usage="member this.Opened : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -945,6 +970,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.Placement" />
       <MemberSignature Language="VB.NET" Value="Public Property Placement As PlacementMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::PlacementMode Placement { System::Windows::Controls::Primitives::PlacementMode get(); void set(System::Windows::Controls::Primitives::PlacementMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Placement : System.Windows.Controls.Primitives.PlacementMode with get, set" Usage="System.Windows.Controls.Primitives.Popup.Placement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1001,6 +1027,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.PlacementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.PlacementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1020,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.PlacementRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Property PlacementRectangle As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect PlacementRectangle { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
+      <MemberSignature Language="F#" Value="member this.PlacementRectangle : System.Windows.Rect with get, set" Usage="System.Windows.Controls.Primitives.Popup.PlacementRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1074,6 +1102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.PlacementRectangleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementRectangleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementRectangleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementRectangleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.PlacementRectangleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1093,6 +1122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property PlacementTarget As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ PlacementTarget { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PlacementTarget : System.Windows.UIElement with get, set" Usage="System.Windows.Controls.Primitives.Popup.PlacementTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1150,6 +1180,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.PlacementTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementTargetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementTargetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.PlacementTargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1169,6 +1200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.PopupAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Property PopupAnimation As PopupAnimation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::PopupAnimation PopupAnimation { System::Windows::Controls::Primitives::PopupAnimation get(); void set(System::Windows::Controls::Primitives::PopupAnimation value); };" />
+      <MemberSignature Language="F#" Value="member this.PopupAnimation : System.Windows.Controls.Primitives.PopupAnimation with get, set" Usage="System.Windows.Controls.Primitives.Popup.PopupAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1227,6 +1259,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.PopupAnimationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PopupAnimationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PopupAnimationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PopupAnimationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.PopupAnimationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1246,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.StaysOpen" />
       <MemberSignature Language="VB.NET" Value="Public Property StaysOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StaysOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.StaysOpen : bool with get, set" Usage="System.Windows.Controls.Primitives.Popup.StaysOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1300,6 +1334,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.StaysOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StaysOpenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StaysOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StaysOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.StaysOpenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1371,6 +1406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double with get, set" Usage="System.Windows.Controls.Primitives.Popup.VerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1457,6 +1493,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

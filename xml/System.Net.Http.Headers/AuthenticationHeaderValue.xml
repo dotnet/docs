@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.AuthenticationHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthenticationHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationHeaderValue : ICloneable" />
+  <TypeSignature Language="F#" Value="type AuthenticationHeaderValue = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.AuthenticationHeaderValue.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scheme As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationHeaderValue(System::String ^ scheme);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.AuthenticationHeaderValue : string -&gt; System.Net.Http.Headers.AuthenticationHeaderValue" Usage="new System.Net.Http.Headers.AuthenticationHeaderValue scheme" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.AuthenticationHeaderValue.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scheme As String, parameter As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationHeaderValue(System::String ^ scheme, System::String ^ parameter);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.AuthenticationHeaderValue : string * string -&gt; System.Net.Http.Headers.AuthenticationHeaderValue" Usage="new System.Net.Http.Headers.AuthenticationHeaderValue (scheme, parameter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.AuthenticationHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="authenticationHeaderValue.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.AuthenticationHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="authenticationHeaderValue.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.AuthenticationHeaderValue.Parameter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameter { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameter : string" Usage="System.Net.Http.Headers.AuthenticationHeaderValue.Parameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.AuthenticationHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As AuthenticationHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::AuthenticationHeaderValue ^ Parse(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.AuthenticationHeaderValue" Usage="System.Net.Http.Headers.AuthenticationHeaderValue.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.AuthenticationHeaderValue.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scheme { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.Net.Http.Headers.AuthenticationHeaderValue.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.AuthenticationHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="authenticationHeaderValue.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.AuthenticationHeaderValue.TryParse(System.String,System.Net.Http.Headers.AuthenticationHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As AuthenticationHeaderValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::AuthenticationHeaderValue ^ % parsedValue);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.AuthenticationHeaderValue.TryParse (input, parsedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

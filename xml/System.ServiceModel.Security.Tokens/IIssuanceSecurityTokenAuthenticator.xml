@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.IIssuanceSecurityTokenAuthenticator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IIssuanceSecurityTokenAuthenticator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IIssuanceSecurityTokenAuthenticator" />
+  <TypeSignature Language="F#" Value="type IIssuanceSecurityTokenAuthenticator = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IIssuanceSecurityTokenAuthenticator.IssuedSecurityTokenHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuedSecurityTokenHandler As IssuedSecurityTokenHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::Tokens::IssuedSecurityTokenHandler ^ IssuedSecurityTokenHandler { System::ServiceModel::Security::Tokens::IssuedSecurityTokenHandler ^ get(); void set(System::ServiceModel::Security::Tokens::IssuedSecurityTokenHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IssuedSecurityTokenHandler : System.ServiceModel.Security.Tokens.IssuedSecurityTokenHandler with get, set" Usage="System.ServiceModel.Security.Tokens.IIssuanceSecurityTokenAuthenticator.IssuedSecurityTokenHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IIssuanceSecurityTokenAuthenticator.RenewedSecurityTokenHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property RenewedSecurityTokenHandler As RenewedSecurityTokenHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::Tokens::RenewedSecurityTokenHandler ^ RenewedSecurityTokenHandler { System::ServiceModel::Security::Tokens::RenewedSecurityTokenHandler ^ get(); void set(System::ServiceModel::Security::Tokens::RenewedSecurityTokenHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RenewedSecurityTokenHandler : System.ServiceModel.Security.Tokens.RenewedSecurityTokenHandler with get, set" Usage="System.ServiceModel.Security.Tokens.IIssuanceSecurityTokenAuthenticator.RenewedSecurityTokenHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.AsqRequestControl" />
   <TypeSignature Language="VB.NET" Value="Public Class AsqRequestControl&#xA;Inherits DirectoryControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsqRequestControl : System::DirectoryServices::Protocols::DirectoryControl" />
+  <TypeSignature Language="F#" Value="type AsqRequestControl = class&#xA;    inherit DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.AsqRequestControl.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsqRequestControl(System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.AsqRequestControl : string -&gt; System.DirectoryServices.Protocols.AsqRequestControl" Usage="new System.DirectoryServices.Protocols.AsqRequestControl attributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.AsqRequestControl.AttributeName" />
       <MemberSignature Language="VB.NET" Value="Public Property AttributeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeName : string with get, set" Usage="System.DirectoryServices.Protocols.AsqRequestControl.AttributeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.AsqRequestControl.GetValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetValue();" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="asqRequestControl.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

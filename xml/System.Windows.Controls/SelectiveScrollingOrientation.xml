@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectiveScrollingOrientation" />
   <TypeSignature Language="VB.NET" Value="Public Enum SelectiveScrollingOrientation" />
   <TypeSignature Language="C++ CLI" Value="public enum class SelectiveScrollingOrientation" />
+  <TypeSignature Language="F#" Value="type SelectiveScrollingOrientation = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectiveScrollingOrientation.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="C++ CLI" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 3" Usage="System.Windows.Controls.SelectiveScrollingOrientation.Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectiveScrollingOrientation.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 1" Usage="System.Windows.Controls.SelectiveScrollingOrientation.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectiveScrollingOrientation.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.SelectiveScrollingOrientation.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectiveScrollingOrientation.Vertical" />
       <MemberSignature Language="VB.NET" Value="Vertical" />
       <MemberSignature Language="C++ CLI" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 2" Usage="System.Windows.Controls.SelectiveScrollingOrientation.Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.SGen" />
   <TypeSignature Language="VB.NET" Value="Public Class SGen&#xA;Inherits ToolTaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SGen : Microsoft::Build::Tasks::ToolTaskExtension" />
+  <TypeSignature Language="F#" Value="type SGen = class&#xA;    inherit ToolTaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.BuildAssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildAssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BuildAssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildAssemblyName : string with get, set" Usage="Microsoft.Build.Tasks.SGen.BuildAssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.BuildAssemblyPath" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildAssemblyPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BuildAssemblyPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildAssemblyPath : string with get, set" Usage="Microsoft.Build.Tasks.SGen.BuildAssemblyPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.DelaySign" />
       <MemberSignature Language="VB.NET" Value="Public Property DelaySign As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DelaySign { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DelaySign : bool with get, set" Usage="Microsoft.Build.Tasks.SGen.DelaySign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.SGen.GenerateCommandLineCommands" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateCommandLineCommands () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateCommandLineCommands();" />
+      <MemberSignature Language="F#" Value="override this.GenerateCommandLineCommands : unit -&gt; string" Usage="sGen.GenerateCommandLineCommands " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.SGen.GenerateFullPathToTool" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateFullPathToTool () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateFullPathToTool();" />
+      <MemberSignature Language="F#" Value="override this.GenerateFullPathToTool : unit -&gt; string" Usage="sGen.GenerateFullPathToTool " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.KeyContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyContainer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyContainer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyContainer : string with get, set" Usage="Microsoft.Build.Tasks.SGen.KeyContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.KeyFile" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFile : string with get, set" Usage="Microsoft.Build.Tasks.SGen.KeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -216,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.Platform" />
       <MemberSignature Language="VB.NET" Value="Public Property Platform As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Platform { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Platform : string with get, set" Usage="Microsoft.Build.Tasks.SGen.Platform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.References" />
       <MemberSignature Language="VB.NET" Value="Public Property References As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ References { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.References : string[] with get, set" Usage="Microsoft.Build.Tasks.SGen.References" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -258,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.SdkToolsPath" />
       <MemberSignature Language="VB.NET" Value="Public Property SdkToolsPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SdkToolsPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SdkToolsPath : string with get, set" Usage="Microsoft.Build.Tasks.SGen.SdkToolsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.SerializationAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Property SerializationAssembly As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SerializationAssembly { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationAssembly : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.SGen.SerializationAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -305,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.SerializationAssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationAssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerializationAssemblyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationAssemblyName : string" Usage="Microsoft.Build.Tasks.SGen.SerializationAssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -326,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.ShouldGenerateSerializer" />
       <MemberSignature Language="VB.NET" Value="Public Property ShouldGenerateSerializer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShouldGenerateSerializer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldGenerateSerializer : bool with get, set" Usage="Microsoft.Build.Tasks.SGen.ShouldGenerateSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -360,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.SGen.SkipTaskExecution" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SkipTaskExecution () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SkipTaskExecution();" />
+      <MemberSignature Language="F#" Value="override this.SkipTaskExecution : unit -&gt; bool" Usage="sGen.SkipTaskExecution " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -383,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.ToolName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ToolName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ToolName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolName : string" Usage="Microsoft.Build.Tasks.SGen.ToolName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -404,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.Types" />
       <MemberSignature Language="VB.NET" Value="Public Property Types As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Types { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Types : string[] with get, set" Usage="Microsoft.Build.Tasks.SGen.Types" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -425,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SGen.UseProxyTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property UseProxyTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseProxyTypes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseProxyTypes : bool with get, set" Usage="Microsoft.Build.Tasks.SGen.UseProxyTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -452,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.SGen.ValidateParameters" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateParameters () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ValidateParameters();" />
+      <MemberSignature Language="F#" Value="override this.ValidateParameters : unit -&gt; bool" Usage="sGen.ValidateParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

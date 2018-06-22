@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlUserDefinedAggregateAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlUserDefinedAggregateAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SqlUserDefinedAggregateAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.SqlServer.Server.Format format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.#ctor(Microsoft.SqlServer.Server.Format)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlUserDefinedAggregateAttribute(Microsoft::SqlServer::Server::Format format);" />
+      <MemberSignature Language="F#" Value="new Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute : Microsoft.SqlServer.Server.Format -&gt; Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute" Usage="new Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute format" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As Format" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::SqlServer::Server::Format Format { Microsoft::SqlServer::Server::Format get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.SqlServer.Server.Format" Usage="Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.IsInvariantToDuplicates" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInvariantToDuplicates As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInvariantToDuplicates { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInvariantToDuplicates : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.IsInvariantToDuplicates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.IsInvariantToNulls" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInvariantToNulls As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInvariantToNulls { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInvariantToNulls : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.IsInvariantToNulls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.IsInvariantToOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInvariantToOrder As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInvariantToOrder { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInvariantToOrder : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.IsInvariantToOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.IsNullIfEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Property IsNullIfEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullIfEmpty { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsNullIfEmpty : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.IsNullIfEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.MaxByteSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxByteSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxByteSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxByteSize : int with get, set" Usage="Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.MaxByteSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.MaxByteSizeValue" />
       <MemberSignature Language="VB.NET" Value="Public Const MaxByteSizeValue As Integer  = 8000" />
       <MemberSignature Language="C++ CLI" Value="public: int MaxByteSizeValue = 8000;" />
+      <MemberSignature Language="F#" Value="val mutable MaxByteSizeValue : int" Usage="Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.MaxByteSizeValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -285,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IActivationObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface IActivationObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IActivationObject" />
+  <TypeSignature Language="F#" Value="type IActivationObject = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetDefaultThisObject" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDefaultThisObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetDefaultThisObject();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultThisObject : unit -&gt; obj" Usage="iActivationObject.GetDefaultThisObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetField(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetField (name As String, lexLevel As Integer) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ GetField(System::String ^ name, int lexLevel);" />
+      <MemberSignature Language="F#" Value="abstract member GetField : string * int -&gt; System.Reflection.FieldInfo" Usage="iActivationObject.GetField (name, lexLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetGlobalScope" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGlobalScope () As GlobalScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::GlobalScope ^ GetGlobalScope();" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalScope : unit -&gt; Microsoft.JScript.GlobalScope" Usage="iActivationObject.GetGlobalScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetLocalField(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalField (name As String) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ GetLocalField(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalField : string -&gt; System.Reflection.FieldInfo" Usage="iActivationObject.GetLocalField name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetMemberValue(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMemberValue (name As String, lexlevel As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetMemberValue(System::String ^ name, int lexlevel);" />
+      <MemberSignature Language="F#" Value="abstract member GetMemberValue : string * int -&gt; obj" Usage="iActivationObject.GetMemberValue (name, lexlevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IStateRuntime" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStateRuntime" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStateRuntime" />
+  <TypeSignature Language="F#" Value="type IStateRuntime = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest (tracker As IntPtr, verb As Integer, uri As String, exclusive As Integer, timeout As Integer, lockCookieExists As Integer, lockCookie As Integer, contentLength As Integer, content As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProcessRequest(IntPtr tracker, int verb, System::String ^ uri, int exclusive, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : nativeint * int * string * int * int * int * int * int * nativeint -&gt; unit" Usage="iStateRuntime.ProcessRequest (tracker, verb, uri, exclusive, timeout, lockCookieExists, lockCookie, contentLength, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest (tracker As IntPtr, verb As Integer, uri As String, exclusive As Integer, extraFlags As Integer, timeout As Integer, lockCookieExists As Integer, lockCookie As Integer, contentLength As Integer, content As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProcessRequest(IntPtr tracker, int verb, System::String ^ uri, int exclusive, int extraFlags, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : nativeint * int * string * int * int * int * int * int * int * nativeint -&gt; unit" Usage="iStateRuntime.ProcessRequest (tracker, verb, uri, exclusive, extraFlags, timeout, lockCookieExists, lockCookie, contentLength, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IStateRuntime.StopProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopProcessing ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopProcessing();" />
+      <MemberSignature Language="F#" Value="abstract member StopProcessing : unit -&gt; unit" Usage="iStateRuntime.StopProcessing " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

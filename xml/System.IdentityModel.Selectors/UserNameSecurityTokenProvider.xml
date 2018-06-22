@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.UserNameSecurityTokenProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class UserNameSecurityTokenProvider&#xA;Inherits SecurityTokenProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserNameSecurityTokenProvider : System::IdentityModel::Selectors::SecurityTokenProvider" />
+  <TypeSignature Language="F#" Value="type UserNameSecurityTokenProvider = class&#xA;    inherit SecurityTokenProvider" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.UserNameSecurityTokenProvider.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (userName As String, password As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserNameSecurityTokenProvider(System::String ^ userName, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.UserNameSecurityTokenProvider : string * string -&gt; System.IdentityModel.Selectors.UserNameSecurityTokenProvider" Usage="new System.IdentityModel.Selectors.UserNameSecurityTokenProvider (userName, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.UserNameSecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.GetTokenCore : TimeSpan -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="userNameSecurityTokenProvider.GetTokenCore timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

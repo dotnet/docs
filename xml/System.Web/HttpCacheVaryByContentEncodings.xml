@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByContentEncodings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCacheVaryByContentEncodings" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpCacheVaryByContentEncodings sealed" />
+  <TypeSignature Language="F#" Value="type HttpCacheVaryByContentEncodings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByContentEncodings.GetContentEncodings" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContentEncodings () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetContentEncodings();" />
+      <MemberSignature Language="F#" Value="member this.GetContentEncodings : unit -&gt; string[]" Usage="httpCacheVaryByContentEncodings.GetContentEncodings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByContentEncodings.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(contentEncoding As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default[System::String ^] { bool get(System::String ^ contentEncoding); void set(System::String ^ contentEncoding, bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : bool with get, set" Usage="System.Web.HttpCacheVaryByContentEncodings.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByContentEncodings.SetContentEncodings(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetContentEncodings (contentEncodings As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetContentEncodings(cli::array &lt;System::String ^&gt; ^ contentEncodings);" />
+      <MemberSignature Language="F#" Value="member this.SetContentEncodings : string[] -&gt; unit" Usage="httpCacheVaryByContentEncodings.SetContentEncodings contentEncodings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

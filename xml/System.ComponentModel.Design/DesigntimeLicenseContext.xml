@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesigntimeLicenseContext" />
   <TypeSignature Language="VB.NET" Value="Public Class DesigntimeLicenseContext&#xA;Inherits LicenseContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesigntimeLicenseContext : System::ComponentModel::LicenseContext" />
+  <TypeSignature Language="F#" Value="type DesigntimeLicenseContext = class&#xA;    inherit LicenseContext" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetSavedLicenseKey(class System.Type type, class System.Reflection.Assembly resourceAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesigntimeLicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetSavedLicenseKey(Type ^ type, System::Reflection::Assembly ^ resourceAssembly);" />
+      <MemberSignature Language="F#" Value="override this.GetSavedLicenseKey : Type * System.Reflection.Assembly -&gt; string" Usage="designtimeLicenseContext.GetSavedLicenseKey (type, resourceAssembly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSavedLicenseKey(class System.Type type, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesigntimeLicenseContext.SetSavedLicenseKey(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetSavedLicenseKey(Type ^ type, System::String ^ key);" />
+      <MemberSignature Language="F#" Value="override this.SetSavedLicenseKey : Type * string -&gt; unit" Usage="designtimeLicenseContext.SetSavedLicenseKey (type, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesigntimeLicenseContext.UsageMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UsageMode As LicenseUsageMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::LicenseUsageMode UsageMode { System::ComponentModel::LicenseUsageMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsageMode : System.ComponentModel.LicenseUsageMode" Usage="System.ComponentModel.Design.DesigntimeLicenseContext.UsageMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

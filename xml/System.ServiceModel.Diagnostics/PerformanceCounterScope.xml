@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Diagnostics.PerformanceCounterScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum PerformanceCounterScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class PerformanceCounterScope" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterScope = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Diagnostics.PerformanceCounterScope.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 2" Usage="System.ServiceModel.Diagnostics.PerformanceCounterScope.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Diagnostics.PerformanceCounterScope.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 3" Usage="System.ServiceModel.Diagnostics.PerformanceCounterScope.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Diagnostics.PerformanceCounterScope.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 0" Usage="System.ServiceModel.Diagnostics.PerformanceCounterScope.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Diagnostics.PerformanceCounterScope.ServiceOnly" />
       <MemberSignature Language="VB.NET" Value="ServiceOnly" />
       <MemberSignature Language="C++ CLI" Value="ServiceOnly" />
+      <MemberSignature Language="F#" Value="ServiceOnly = 1" Usage="System.ServiceModel.Diagnostics.PerformanceCounterScope.ServiceOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

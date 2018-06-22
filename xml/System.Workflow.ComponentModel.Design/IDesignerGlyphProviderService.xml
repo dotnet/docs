@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerGlyphProviderService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerGlyphProviderService" />
+  <TypeSignature Language="F#" Value="type IDesignerGlyphProviderService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.AddGlyphProvider(System.Workflow.ComponentModel.Design.IDesignerGlyphProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddGlyphProvider (glyphProvider As IDesignerGlyphProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddGlyphProvider(System::Workflow::ComponentModel::Design::IDesignerGlyphProvider ^ glyphProvider);" />
+      <MemberSignature Language="F#" Value="abstract member AddGlyphProvider : System.Workflow.ComponentModel.Design.IDesignerGlyphProvider -&gt; unit" Usage="iDesignerGlyphProviderService.AddGlyphProvider glyphProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.GlyphProviders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlyphProviders As ReadOnlyCollection(Of IDesignerGlyphProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::IDesignerGlyphProvider ^&gt; ^ GlyphProviders { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::IDesignerGlyphProvider ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlyphProviders : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.IDesignerGlyphProvider&gt;" Usage="System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.GlyphProviders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.RemoveGlyphProvider(System.Workflow.ComponentModel.Design.IDesignerGlyphProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveGlyphProvider (glyphProvider As IDesignerGlyphProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveGlyphProvider(System::Workflow::ComponentModel::Design::IDesignerGlyphProvider ^ glyphProvider);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveGlyphProvider : System.Workflow.ComponentModel.Design.IDesignerGlyphProvider -&gt; unit" Usage="iDesignerGlyphProviderService.RemoveGlyphProvider glyphProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

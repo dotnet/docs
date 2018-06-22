@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.SRDescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SRDescriptionAttribute&#xA;Inherits DescriptionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SRDescriptionAttribute sealed : System::ComponentModel::DescriptionAttribute" />
+  <TypeSignature Language="F#" Value="type SRDescriptionAttribute = class&#xA;    inherit DescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SRDescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SRDescriptionAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.SRDescriptionAttribute : string -&gt; Microsoft.VisualBasic.Compatibility.VB6.SRDescriptionAttribute" Usage="new Microsoft.VisualBasic.Compatibility.VB6.SRDescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.SRDescriptionAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.SRDescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

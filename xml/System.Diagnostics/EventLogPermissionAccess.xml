@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogPermissionAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventLogPermissionAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventLogPermissionAccess" />
+  <TypeSignature Language="F#" Value="type EventLogPermissionAccess = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Administer" />
       <MemberSignature Language="VB.NET" Value="Administer" />
       <MemberSignature Language="C++ CLI" Value="Administer" />
+      <MemberSignature Language="F#" Value="Administer = 48" Usage="System.Diagnostics.EventLogPermissionAccess.Administer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Audit" />
       <MemberSignature Language="VB.NET" Value="Audit" />
       <MemberSignature Language="C++ CLI" Value="Audit" />
+      <MemberSignature Language="F#" Value="Audit = 10" Usage="System.Diagnostics.EventLogPermissionAccess.Audit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Browse" />
       <MemberSignature Language="VB.NET" Value="Browse" />
       <MemberSignature Language="C++ CLI" Value="Browse" />
+      <MemberSignature Language="F#" Value="Browse = 2" Usage="System.Diagnostics.EventLogPermissionAccess.Browse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Instrument" />
       <MemberSignature Language="VB.NET" Value="Instrument" />
       <MemberSignature Language="C++ CLI" Value="Instrument" />
+      <MemberSignature Language="F#" Value="Instrument = 6" Usage="System.Diagnostics.EventLogPermissionAccess.Instrument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.EventLogPermissionAccess.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 16" Usage="System.Diagnostics.EventLogPermissionAccess.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

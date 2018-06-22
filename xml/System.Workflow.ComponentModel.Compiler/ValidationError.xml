@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ValidationError" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValidationError" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationError sealed" />
+  <TypeSignature Language="F#" Value="type ValidationError = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationError.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorText As String, errorNumber As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationError(System::String ^ errorText, int errorNumber);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.ValidationError : string * int -&gt; System.Workflow.ComponentModel.Compiler.ValidationError" Usage="new System.Workflow.ComponentModel.Compiler.ValidationError (errorText, errorNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationError.#ctor(System.String,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorText As String, errorNumber As Integer, isWarning As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationError(System::String ^ errorText, int errorNumber, bool isWarning);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.ValidationError : string * int * bool -&gt; System.Workflow.ComponentModel.Compiler.ValidationError" Usage="new System.Workflow.ComponentModel.Compiler.ValidationError (errorText, errorNumber, isWarning)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationError.#ctor(System.String,System.Int32,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorText As String, errorNumber As Integer, isWarning As Boolean, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationError(System::String ^ errorText, int errorNumber, bool isWarning, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.ValidationError : string * int * bool * string -&gt; System.Workflow.ComponentModel.Compiler.ValidationError" Usage="new System.Workflow.ComponentModel.Compiler.ValidationError (errorText, errorNumber, isWarning, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationError.ErrorNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorNumber : int" Usage="System.Workflow.ComponentModel.Compiler.ValidationError.ErrorNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationError.ErrorText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorText : string" Usage="System.Workflow.ComponentModel.Compiler.ValidationError.ErrorText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationError.GetNotSetValidationError(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNotSetValidationError (propertyName As String) As ValidationError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::Compiler::ValidationError ^ GetNotSetValidationError(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member GetNotSetValidationError : string -&gt; System.Workflow.ComponentModel.Compiler.ValidationError" Usage="System.Workflow.ComponentModel.Compiler.ValidationError.GetNotSetValidationError propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationError.IsWarning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWarning { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : bool" Usage="System.Workflow.ComponentModel.Compiler.ValidationError.IsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationError.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.Workflow.ComponentModel.Compiler.ValidationError.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -248,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationError.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="validationError.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -269,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationError.UserData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserData : System.Collections.IDictionary" Usage="System.Workflow.ComponentModel.Compiler.ValidationError.UserData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

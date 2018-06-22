@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobReader" />
   <TypeSignature Language="VB.NET" Value="Public Structure BlobReader" />
   <TypeSignature Language="C++ CLI" Value="public value class BlobReader" />
+  <TypeSignature Language="F#" Value="type BlobReader = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* buffer, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.#ctor(System.Byte*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BlobReader(System::Byte* buffer, int length);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.BlobReader : nativeptr&lt;byte&gt; * int -&gt; System.Reflection.Metadata.BlobReader" Usage="new System.Reflection.Metadata.BlobReader (buffer, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.Align(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Align (alignment As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Align(System::Byte alignment);" />
+      <MemberSignature Language="F#" Value="member this.Align : byte -&gt; unit" Usage="blobReader.Align alignment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8* CurrentPointer" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.CurrentPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte* CurrentPointer { System::Byte* get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPointer : nativeptr&lt;byte&gt;" Usage="System.Reflection.Metadata.BlobReader.CurrentPointer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.IndexOf(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Byte) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Byte value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : byte -&gt; int" Usage="blobReader.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Reflection.Metadata.BlobReader.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int with get, set" Usage="System.Reflection.Metadata.BlobReader.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -167,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadBlobHandle" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadBlobHandle () As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobHandle ReadBlobHandle();" />
+      <MemberSignature Language="F#" Value="member this.ReadBlobHandle : unit -&gt; System.Reflection.Metadata.BlobHandle" Usage="blobReader.ReadBlobHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -191,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadBoolean () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ReadBoolean();" />
+      <MemberSignature Language="F#" Value="member this.ReadBoolean : unit -&gt; bool" Usage="blobReader.ReadBoolean " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadByte" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadByte () As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Byte ReadByte();" />
+      <MemberSignature Language="F#" Value="member this.ReadByte : unit -&gt; byte" Usage="blobReader.ReadByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -239,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadBytes(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadBytes (byteCount As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ReadBytes(int byteCount);" />
+      <MemberSignature Language="F#" Value="member this.ReadBytes : int -&gt; byte[]" Usage="blobReader.ReadBytes byteCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -266,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadBytes(System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadBytes (byteCount As Integer, buffer As Byte(), bufferOffset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReadBytes(int byteCount, cli::array &lt;System::Byte&gt; ^ buffer, int bufferOffset);" />
+      <MemberSignature Language="F#" Value="member this.ReadBytes : int * byte[] * int -&gt; unit" Usage="blobReader.ReadBytes (byteCount, buffer, bufferOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -295,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadChar" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadChar () As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; char ReadChar();" />
+      <MemberSignature Language="F#" Value="member this.ReadChar : unit -&gt; char" Usage="blobReader.ReadChar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -319,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadCompressedInteger" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadCompressedInteger () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadCompressedInteger();" />
+      <MemberSignature Language="F#" Value="member this.ReadCompressedInteger : unit -&gt; int" Usage="blobReader.ReadCompressedInteger " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -343,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadCompressedSignedInteger" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadCompressedSignedInteger () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadCompressedSignedInteger();" />
+      <MemberSignature Language="F#" Value="member this.ReadCompressedSignedInteger : unit -&gt; int" Usage="blobReader.ReadCompressedSignedInteger " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -367,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadConstant(System.Reflection.Metadata.ConstantTypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadConstant (typeCode As ConstantTypeCode) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ReadConstant(System::Reflection::Metadata::ConstantTypeCode typeCode);" />
+      <MemberSignature Language="F#" Value="member this.ReadConstant : System.Reflection.Metadata.ConstantTypeCode -&gt; obj" Usage="blobReader.ReadConstant typeCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -394,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadDateTime () As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime ReadDateTime();" />
+      <MemberSignature Language="F#" Value="member this.ReadDateTime : unit -&gt; DateTime" Usage="blobReader.ReadDateTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -418,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadDecimal () As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Decimal ReadDecimal();" />
+      <MemberSignature Language="F#" Value="member this.ReadDecimal : unit -&gt; decimal" Usage="blobReader.ReadDecimal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -442,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadDouble" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadDouble () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double ReadDouble();" />
+      <MemberSignature Language="F#" Value="member this.ReadDouble : unit -&gt; double" Usage="blobReader.ReadDouble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -466,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadGuid" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadGuid () As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid ReadGuid();" />
+      <MemberSignature Language="F#" Value="member this.ReadGuid : unit -&gt; Guid" Usage="blobReader.ReadGuid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -490,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadInt16" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadInt16 () As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; short ReadInt16();" />
+      <MemberSignature Language="F#" Value="member this.ReadInt16 : unit -&gt; int16" Usage="blobReader.ReadInt16 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -514,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadInt32" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadInt32 () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadInt32();" />
+      <MemberSignature Language="F#" Value="member this.ReadInt32 : unit -&gt; int" Usage="blobReader.ReadInt32 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -538,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadInt64" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadInt64 () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long ReadInt64();" />
+      <MemberSignature Language="F#" Value="member this.ReadInt64 : unit -&gt; int64" Usage="blobReader.ReadInt64 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -562,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSByte" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadSByte () As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::SByte ReadSByte();" />
+      <MemberSignature Language="F#" Value="member this.ReadSByte : unit -&gt; sbyte" Usage="blobReader.ReadSByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -586,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSerializationTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadSerializationTypeCode () As SerializationTypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::SerializationTypeCode ReadSerializationTypeCode();" />
+      <MemberSignature Language="F#" Value="member this.ReadSerializationTypeCode : unit -&gt; System.Reflection.Metadata.SerializationTypeCode" Usage="blobReader.ReadSerializationTypeCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -610,6 +635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSerializedString" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadSerializedString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadSerializedString();" />
+      <MemberSignature Language="F#" Value="member this.ReadSerializedString : unit -&gt; string" Usage="blobReader.ReadSerializedString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -634,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSignatureHeader" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadSignatureHeader () As SignatureHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::SignatureHeader ReadSignatureHeader();" />
+      <MemberSignature Language="F#" Value="member this.ReadSignatureHeader : unit -&gt; System.Reflection.Metadata.SignatureHeader" Usage="blobReader.ReadSignatureHeader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -658,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSignatureTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadSignatureTypeCode () As SignatureTypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::SignatureTypeCode ReadSignatureTypeCode();" />
+      <MemberSignature Language="F#" Value="member this.ReadSignatureTypeCode : unit -&gt; System.Reflection.Metadata.SignatureTypeCode" Usage="blobReader.ReadSignatureTypeCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -682,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadSingle" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadSingle () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; float ReadSingle();" />
+      <MemberSignature Language="F#" Value="member this.ReadSingle : unit -&gt; single" Usage="blobReader.ReadSingle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -706,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadTypeHandle" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadTypeHandle () As EntityHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::EntityHandle ReadTypeHandle();" />
+      <MemberSignature Language="F#" Value="member this.ReadTypeHandle : unit -&gt; System.Reflection.Metadata.EntityHandle" Usage="blobReader.ReadTypeHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -730,6 +760,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUInt16" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadUInt16 () As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt16 ReadUInt16();" />
+      <MemberSignature Language="F#" Value="member this.ReadUInt16 : unit -&gt; uint16" Usage="blobReader.ReadUInt16 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -754,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUInt32" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadUInt32 () As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 ReadUInt32();" />
+      <MemberSignature Language="F#" Value="member this.ReadUInt32 : unit -&gt; uint32" Usage="blobReader.ReadUInt32 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -778,6 +810,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUInt64" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadUInt64 () As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt64 ReadUInt64();" />
+      <MemberSignature Language="F#" Value="member this.ReadUInt64 : unit -&gt; uint64" Usage="blobReader.ReadUInt64 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -802,6 +835,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadUTF16 (byteCount As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadUTF16(int byteCount);" />
+      <MemberSignature Language="F#" Value="member this.ReadUTF16 : int -&gt; string" Usage="blobReader.ReadUTF16 byteCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -829,6 +863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.ReadUTF8(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadUTF8 (byteCount As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadUTF8(int byteCount);" />
+      <MemberSignature Language="F#" Value="member this.ReadUTF8 : int -&gt; string" Usage="blobReader.ReadUTF8 byteCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -856,6 +891,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.RemainingBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemainingBytes As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RemainingBytes { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemainingBytes : int" Usage="System.Reflection.Metadata.BlobReader.RemainingBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -879,6 +915,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="blobReader.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -902,6 +939,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.SeekOffset(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SeekOffset (offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeekOffset(int offset);" />
+      <MemberSignature Language="F#" Value="member this.SeekOffset : int -&gt; unit" Usage="blobReader.SeekOffset offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -925,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.SkipBytes(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SkipBytes (count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SkipBytes(int count);" />
+      <MemberSignature Language="F#" Value="member this.SkipBytes : int -&gt; unit" Usage="blobReader.SkipBytes count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -947,6 +986,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8* StartPointer" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobReader.StartPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte* StartPointer { System::Byte* get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartPointer : nativeptr&lt;byte&gt;" Usage="System.Reflection.Metadata.BlobReader.StartPointer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -969,6 +1009,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.TryReadCompressedInteger(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReadCompressedInteger (ByRef value As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryReadCompressedInteger([Runtime::InteropServices::Out] int % value);" />
+      <MemberSignature Language="F#" Value="member this.TryReadCompressedInteger :  -&gt; bool" Usage="blobReader.TryReadCompressedInteger value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -996,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobReader.TryReadCompressedSignedInteger(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReadCompressedSignedInteger (ByRef value As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryReadCompressedSignedInteger([Runtime::InteropServices::Out] int % value);" />
+      <MemberSignature Language="F#" Value="member this.TryReadCompressedSignedInteger :  -&gt; bool" Usage="blobReader.TryReadCompressedSignedInteger value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

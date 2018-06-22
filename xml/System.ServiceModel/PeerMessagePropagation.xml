@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessagePropagation" />
   <TypeSignature Language="VB.NET" Value="Public Enum PeerMessagePropagation" />
   <TypeSignature Language="C++ CLI" Value="public enum class PeerMessagePropagation" />
+  <TypeSignature Language="F#" Value="type PeerMessagePropagation = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="C++ CLI" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 1" Usage="System.ServiceModel.PeerMessagePropagation.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.LocalAndRemote" />
       <MemberSignature Language="VB.NET" Value="LocalAndRemote" />
       <MemberSignature Language="C++ CLI" Value="LocalAndRemote" />
+      <MemberSignature Language="F#" Value="LocalAndRemote = 3" Usage="System.ServiceModel.PeerMessagePropagation.LocalAndRemote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.PeerMessagePropagation.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.Remote" />
       <MemberSignature Language="VB.NET" Value="Remote" />
       <MemberSignature Language="C++ CLI" Value="Remote" />
+      <MemberSignature Language="F#" Value="Remote = 2" Usage="System.ServiceModel.PeerMessagePropagation.Remote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.SortKey" />
   <TypeSignature Language="VB.NET" Value="Public Class SortKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class SortKey" />
+  <TypeSignature Language="F#" Value="type SortKey = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortKey.Compare(System.Globalization.SortKey,System.Globalization.SortKey)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (sortkey1 As SortKey, sortkey2 As SortKey) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::Globalization::SortKey ^ sortkey1, System::Globalization::SortKey ^ sortkey2);" />
+      <MemberSignature Language="F#" Value="static member Compare : System.Globalization.SortKey * System.Globalization.SortKey -&gt; int" Usage="System.Globalization.SortKey.Compare (sortkey1, sortkey2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortKey.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sortKey.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -221,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortKey.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sortKey.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -264,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.SortKey.KeyData" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property KeyData As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ KeyData { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyData : byte[]" Usage="System.Globalization.SortKey.KeyData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -309,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.SortKey.OriginalString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OriginalString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ OriginalString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalString : string" Usage="System.Globalization.SortKey.OriginalString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -349,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortKey.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sortKey.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

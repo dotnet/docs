@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UnhandledExceptionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum UnhandledExceptionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class UnhandledExceptionMode" />
+  <TypeSignature Language="F#" Value="type UnhandledExceptionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.UnhandledExceptionMode.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 0" Usage="System.Windows.Forms.UnhandledExceptionMode.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.UnhandledExceptionMode.CatchException" />
       <MemberSignature Language="VB.NET" Value="CatchException" />
       <MemberSignature Language="C++ CLI" Value="CatchException" />
+      <MemberSignature Language="F#" Value="CatchException = 2" Usage="System.Windows.Forms.UnhandledExceptionMode.CatchException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.UnhandledExceptionMode.ThrowException" />
       <MemberSignature Language="VB.NET" Value="ThrowException" />
       <MemberSignature Language="C++ CLI" Value="ThrowException" />
+      <MemberSignature Language="F#" Value="ThrowException = 1" Usage="System.Windows.Forms.UnhandledExceptionMode.ThrowException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

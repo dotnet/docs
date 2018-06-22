@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.ResizeGripDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResizeGripDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class ResizeGripDirection" />
+  <TypeSignature Language="F#" Value="type ResizeGripDirection = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 6" Usage="System.Windows.Shell.ResizeGripDirection.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.BottomLeft" />
       <MemberSignature Language="VB.NET" Value="BottomLeft" />
       <MemberSignature Language="C++ CLI" Value="BottomLeft" />
+      <MemberSignature Language="F#" Value="BottomLeft = 7" Usage="System.Windows.Shell.ResizeGripDirection.BottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.BottomRight" />
       <MemberSignature Language="VB.NET" Value="BottomRight" />
       <MemberSignature Language="C++ CLI" Value="BottomRight" />
+      <MemberSignature Language="F#" Value="BottomRight = 5" Usage="System.Windows.Shell.ResizeGripDirection.BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 8" Usage="System.Windows.Shell.ResizeGripDirection.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Shell.ResizeGripDirection.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 4" Usage="System.Windows.Shell.ResizeGripDirection.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 2" Usage="System.Windows.Shell.ResizeGripDirection.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.TopLeft" />
       <MemberSignature Language="VB.NET" Value="TopLeft" />
       <MemberSignature Language="C++ CLI" Value="TopLeft" />
+      <MemberSignature Language="F#" Value="TopLeft = 1" Usage="System.Windows.Shell.ResizeGripDirection.TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.TopRight" />
       <MemberSignature Language="VB.NET" Value="TopRight" />
       <MemberSignature Language="C++ CLI" Value="TopRight" />
+      <MemberSignature Language="F#" Value="TopRight = 3" Usage="System.Windows.Shell.ResizeGripDirection.TopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

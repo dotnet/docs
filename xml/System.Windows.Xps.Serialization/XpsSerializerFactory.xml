@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializerFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XpsSerializerFactory&#xA;Implements ISerializerFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsSerializerFactory sealed : System::Windows::Documents::Serialization::ISerializerFactory" />
+  <TypeSignature Language="F#" Value="type XpsSerializerFactory = class&#xA;    interface ISerializerFactory" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Documents.Serialization.SerializerWriter CreateSerializerWriter(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializerFactory.CreateSerializerWriter(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Documents::Serialization::SerializerWriter ^ CreateSerializerWriter(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member CreateSerializerWriter : System.IO.Stream -&gt; System.Windows.Documents.Serialization.SerializerWriter&#xA;override this.CreateSerializerWriter : System.IO.Stream -&gt; System.Windows.Documents.Serialization.SerializerWriter" Usage="xpsSerializerFactory.CreateSerializerWriter stream" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Documents.Serialization.ISerializerFactory.CreateSerializerWriter(System.IO.Stream)</InterfaceMember>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializerFactory.DefaultFileExtension" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultFileExtension As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultFileExtension { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFileExtension : string" Usage="System.Windows.Xps.Serialization.XpsSerializerFactory.DefaultFileExtension" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.Serialization.ISerializerFactory.DefaultFileExtension</InterfaceMember>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializerFactory.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Windows.Xps.Serialization.XpsSerializerFactory.DisplayName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.Serialization.ISerializerFactory.DisplayName</InterfaceMember>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializerFactory.ManufacturerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ManufacturerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManufacturerName : string" Usage="System.Windows.Xps.Serialization.XpsSerializerFactory.ManufacturerName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerName</InterfaceMember>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializerFactory.ManufacturerWebsite" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerWebsite As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ManufacturerWebsite { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManufacturerWebsite : Uri" Usage="System.Windows.Xps.Serialization.XpsSerializerFactory.ManufacturerWebsite" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerWebsite</InterfaceMember>

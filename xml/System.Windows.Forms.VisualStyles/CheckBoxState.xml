@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.CheckBoxState" />
   <TypeSignature Language="VB.NET" Value="Public Enum CheckBoxState" />
   <TypeSignature Language="C++ CLI" Value="public enum class CheckBoxState" />
+  <TypeSignature Language="F#" Value="type CheckBoxState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedDisabled" />
       <MemberSignature Language="VB.NET" Value="CheckedDisabled" />
       <MemberSignature Language="C++ CLI" Value="CheckedDisabled" />
+      <MemberSignature Language="F#" Value="CheckedDisabled = 8" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.CheckedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedHot" />
       <MemberSignature Language="VB.NET" Value="CheckedHot" />
       <MemberSignature Language="C++ CLI" Value="CheckedHot" />
+      <MemberSignature Language="F#" Value="CheckedHot = 6" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.CheckedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedNormal" />
       <MemberSignature Language="VB.NET" Value="CheckedNormal" />
       <MemberSignature Language="C++ CLI" Value="CheckedNormal" />
+      <MemberSignature Language="F#" Value="CheckedNormal = 5" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.CheckedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedPressed" />
       <MemberSignature Language="VB.NET" Value="CheckedPressed" />
       <MemberSignature Language="C++ CLI" Value="CheckedPressed" />
+      <MemberSignature Language="F#" Value="CheckedPressed = 7" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.CheckedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedDisabled" />
       <MemberSignature Language="VB.NET" Value="MixedDisabled" />
       <MemberSignature Language="C++ CLI" Value="MixedDisabled" />
+      <MemberSignature Language="F#" Value="MixedDisabled = 12" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.MixedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedHot" />
       <MemberSignature Language="VB.NET" Value="MixedHot" />
       <MemberSignature Language="C++ CLI" Value="MixedHot" />
+      <MemberSignature Language="F#" Value="MixedHot = 10" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.MixedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedNormal" />
       <MemberSignature Language="VB.NET" Value="MixedNormal" />
       <MemberSignature Language="C++ CLI" Value="MixedNormal" />
+      <MemberSignature Language="F#" Value="MixedNormal = 9" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.MixedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedPressed" />
       <MemberSignature Language="VB.NET" Value="MixedPressed" />
       <MemberSignature Language="C++ CLI" Value="MixedPressed" />
+      <MemberSignature Language="F#" Value="MixedPressed = 11" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.MixedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedDisabled" />
       <MemberSignature Language="VB.NET" Value="UncheckedDisabled" />
       <MemberSignature Language="C++ CLI" Value="UncheckedDisabled" />
+      <MemberSignature Language="F#" Value="UncheckedDisabled = 4" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -200,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedHot" />
       <MemberSignature Language="VB.NET" Value="UncheckedHot" />
       <MemberSignature Language="C++ CLI" Value="UncheckedHot" />
+      <MemberSignature Language="F#" Value="UncheckedHot = 2" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedNormal" />
       <MemberSignature Language="VB.NET" Value="UncheckedNormal" />
       <MemberSignature Language="C++ CLI" Value="UncheckedNormal" />
+      <MemberSignature Language="F#" Value="UncheckedNormal = 1" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedPressed" />
       <MemberSignature Language="VB.NET" Value="UncheckedPressed" />
       <MemberSignature Language="C++ CLI" Value="UncheckedPressed" />
+      <MemberSignature Language="F#" Value="UncheckedPressed = 3" Usage="System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

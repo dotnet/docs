@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonToolTipAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonToolTipAutomationPeer&#xA;Inherits ToolTipAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonToolTipAutomationPeer : System::Windows::Automation::Peers::ToolTipAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonToolTipAutomationPeer = class&#xA;    inherit ToolTipAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonToolTip)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonToolTip)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonToolTipAutomationPeer(System::Windows::Controls::Ribbon::RibbonToolTip ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonToolTipAutomationPeer : System.Windows.Controls.Ribbon.RibbonToolTip -&gt; System.Windows.Automation.Peers.RibbonToolTipAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonToolTipAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonToolTipAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="ribbonToolTipAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.Design.DataControlReferenceCollectionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class DataControlReferenceCollectionEditor&#xA;Inherits CollectionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataControlReferenceCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
+  <TypeSignature Language="F#" Value="type DataControlReferenceCollectionEditor = class&#xA;    inherit CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DataControlReferenceCollectionEditor.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataControlReferenceCollectionEditor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.Design.DataControlReferenceCollectionEditor : Type -&gt; System.Web.DynamicData.Design.DataControlReferenceCollectionEditor" Usage="new System.Web.DynamicData.Design.DataControlReferenceCollectionEditor type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DataControlReferenceCollectionEditor.CreateCollectionItemType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionItemType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ CreateCollectionItemType();" />
+      <MemberSignature Language="F#" Value="override this.CreateCollectionItemType : unit -&gt; Type" Usage="dataControlReferenceCollectionEditor.CreateCollectionItemType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData.Design</AssemblyName>

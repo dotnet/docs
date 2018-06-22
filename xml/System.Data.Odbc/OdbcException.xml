@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcException&#xA;Inherits DbException" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcException sealed : System::Data::Common::DbException" />
+  <TypeSignature Language="F#" Value="type OdbcException = class&#xA;    inherit DbException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcException.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As OdbcErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcErrorCollection ^ Errors { System::Data::Odbc::OdbcErrorCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Data.Odbc.OdbcErrorCollection" Usage="System.Data.Odbc.OdbcException.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (si As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="odbcException.GetObjectData (si, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcException.Source" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Source As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Source { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Source : string" Usage="System.Data.Odbc.OdbcException.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

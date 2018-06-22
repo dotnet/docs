@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IMetadataAware" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMetadataAware" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMetadataAware" />
+  <TypeSignature Language="F#" Value="type IMetadataAware = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IMetadataAware.OnMetadataCreated(System.Web.ModelBinding.ModelMetadata)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnMetadataCreated (metadata As ModelMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnMetadataCreated(System::Web::ModelBinding::ModelMetadata ^ metadata);" />
+      <MemberSignature Language="F#" Value="abstract member OnMetadataCreated : System.Web.ModelBinding.ModelMetadata -&gt; unit" Usage="iMetadataAware.OnMetadataCreated metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

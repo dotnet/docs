@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JavascriptCallbackBehaviorAttribute&#xA;Inherits Attribute&#xA;Implements IContractBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class JavascriptCallbackBehaviorAttribute sealed : Attribute, System::ServiceModel::Description::IContractBehavior" />
+  <TypeSignature Language="F#" Value="type JavascriptCallbackBehaviorAttribute = class&#xA;    inherit Attribute&#xA;    interface IContractBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@ public class Service1
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::ContractDescription ^ contractDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
+      <MemberSignature Language="F#" Value="abstract member AddBindingParameters : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit&#xA;override this.AddBindingParameters : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit" Usage="javascriptCallbackBehaviorAttribute.AddBindingParameters (contractDescription, endpoint, bindingParameters)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
@@ -110,6 +112,7 @@ public class Service1
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime clientRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyClientBehavior(System::ServiceModel::Description::ContractDescription ^ contractDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::ClientRuntime ^ clientRuntime);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyClientBehavior : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit&#xA;override this.ApplyClientBehavior : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit" Usage="javascriptCallbackBehaviorAttribute.ApplyClientBehavior (contractDescription, endpoint, clientRuntime)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)</InterfaceMember>
@@ -139,6 +142,7 @@ public class Service1
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.DispatchRuntime dispatchRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::ContractDescription ^ contractDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::DispatchRuntime ^ dispatchRuntime);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDispatchBehavior : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.DispatchRuntime -&gt; unit&#xA;override this.ApplyDispatchBehavior : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.DispatchRuntime -&gt; unit" Usage="javascriptCallbackBehaviorAttribute.ApplyDispatchBehavior (contractDescription, endpoint, dispatchRuntime)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)</InterfaceMember>
@@ -169,6 +173,7 @@ public class Service1
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.UrlParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Property UrlParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UrlParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UrlParameterName : string with get, set" Usage="System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.UrlParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -195,6 +200,7 @@ public class Service1
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::ContractDescription ^ contractDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; unit&#xA;override this.Validate : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="javascriptCallbackBehaviorAttribute.Validate (contractDescription, endpoint)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)</InterfaceMember>

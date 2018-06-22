@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataTable" />
   <TypeSignature Language="VB.NET" Value="Public Class DataTable&#xA;Inherits MarshalByValueComponent&#xA;Implements IListSource, ISerializable, ISupportInitialize, ISupportInitializeNotification, IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTable : System::ComponentModel::MarshalByValueComponent, System::ComponentModel::IListSource, System::ComponentModel::ISupportInitialize, System::ComponentModel::ISupportInitializeNotification, System::Runtime::Serialization::ISerializable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type DataTable = class&#xA;    inherit MarshalByValueComponent&#xA;    interface IListSource&#xA;    interface ISupportInitializeNotification&#xA;    interface ISerializable&#xA;    interface IXmlSerializable&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -178,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tableName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTable(System::String ^ tableName);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataTable : string -&gt; System.Data.DataTable" Usage="new System.Data.DataTable tableName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -218,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataTable(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataTable : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.DataTable" Usage="new System.Data.DataTable (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -257,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tableName As String, tableNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTable(System::String ^ tableName, System::String ^ tableNamespace);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataTable : string * string -&gt; System.Data.DataTable" Usage="new System.Data.DataTable (tableName, tableNamespace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -289,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.AcceptChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcceptChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptChanges();" />
+      <MemberSignature Language="F#" Value="member this.AcceptChanges : unit -&gt; unit" Usage="dataTable.AcceptChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -336,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="dataTable.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -373,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.BeginLoadData" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginLoadData ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginLoadData();" />
+      <MemberSignature Language="F#" Value="member this.BeginLoadData : unit -&gt; unit" Usage="dataTable.BeginLoadData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -410,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.CaseSensitive" />
       <MemberSignature Language="VB.NET" Value="Public Property CaseSensitive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CaseSensitive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CaseSensitive : bool with get, set" Usage="System.Data.DataTable.CaseSensitive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -457,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.ChildRelations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildRelations As DataRelationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRelationCollection ^ ChildRelations { System::Data::DataRelationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildRelations : System.Data.DataRelationCollection" Usage="System.Data.DataTable.ChildRelations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -513,6 +522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="dataTable.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -560,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataTable ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Data.DataTable&#xA;override this.Clone : unit -&gt; System.Data.DataTable" Usage="dataTable.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1116,6 +1127,7 @@ class Program {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.ColumnChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ColumnChanged As DataColumnChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataColumnChangeEventHandler ^ ColumnChanged;" />
+      <MemberSignature Language="F#" Value="member this.ColumnChanged : System.Data.DataColumnChangeEventHandler " Usage="member this.ColumnChanged : System.Data.DataColumnChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1159,6 +1171,7 @@ class Program {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.ColumnChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ColumnChanging As DataColumnChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataColumnChangeEventHandler ^ ColumnChanging;" />
+      <MemberSignature Language="F#" Value="member this.ColumnChanging : System.Data.DataColumnChangeEventHandler " Usage="member this.ColumnChanging : System.Data.DataColumnChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1201,6 +1214,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.Columns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As DataColumnCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataColumnCollection ^ Columns { System::Data::DataColumnCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Data.DataColumnCollection" Usage="System.Data.DataTable.Columns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1251,6 +1265,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Compute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compute (expression As String, filter As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Compute(System::String ^ expression, System::String ^ filter);" />
+      <MemberSignature Language="F#" Value="member this.Compute : string * string -&gt; obj" Usage="dataTable.Compute (expression, filter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1322,6 +1337,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.Constraints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Constraints As ConstraintCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ConstraintCollection ^ Constraints { System::Data::ConstraintCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Constraints : System.Data.ConstraintCollection" Usage="System.Data.DataTable.Constraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1382,6 +1398,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; System.Data.DataTable" Usage="dataTable.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1429,6 +1446,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.CreateDataReader" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDataReader () As DataTableReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTableReader ^ CreateDataReader();" />
+      <MemberSignature Language="F#" Value="member this.CreateDataReader : unit -&gt; System.Data.DataTableReader" Usage="dataTable.CreateDataReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1481,6 +1499,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.CreateInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateInstance () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::DataTable ^ CreateInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : unit -&gt; System.Data.DataTable&#xA;override this.CreateInstance : unit -&gt; System.Data.DataTable" Usage="dataTable.CreateInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1512,6 +1531,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.DataSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSet As DataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataSet ^ DataSet { System::Data::DataSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSet : System.Data.DataSet" Usage="System.Data.DataTable.DataSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1565,6 +1585,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.DefaultView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultView As DataView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataView ^ DefaultView { System::Data::DataView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultView : System.Data.DataView" Usage="System.Data.DataTable.DefaultView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1615,6 +1636,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.DisplayExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayExpression : string with get, set" Usage="System.Data.DataTable.DisplayExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1651,6 +1673,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="dataTable.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1688,6 +1711,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.EndLoadData" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndLoadData ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndLoadData();" />
+      <MemberSignature Language="F#" Value="member this.EndLoadData : unit -&gt; unit" Usage="dataTable.EndLoadData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1725,6 +1749,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.ExtendedProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtendedProperties As PropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::PropertyCollection ^ ExtendedProperties { System::Data::PropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedProperties : System.Data.PropertyCollection" Usage="System.Data.DataTable.ExtendedProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1777,6 +1802,7 @@ class Program {
       <MemberSignature Language="DocId" Value="F:System.Data.DataTable.fInitInProgress" />
       <MemberSignature Language="VB.NET" Value="Protected Friend fInitInProgress As Boolean " />
       <MemberSignature Language="C++ CLI" Value="protected public: bool fInitInProgress;" />
+      <MemberSignature Language="F#" Value="val mutable fInitInProgress : bool" Usage="System.Data.DataTable.fInitInProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1816,6 +1842,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.GetChanges" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChanges () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ GetChanges();" />
+      <MemberSignature Language="F#" Value="member this.GetChanges : unit -&gt; System.Data.DataTable" Usage="dataTable.GetChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1860,6 +1887,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.GetChanges(System.Data.DataRowState)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChanges (rowStates As DataRowState) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ GetChanges(System::Data::DataRowState rowStates);" />
+      <MemberSignature Language="F#" Value="member this.GetChanges : System.Data.DataRowState -&gt; System.Data.DataTable" Usage="dataTable.GetChanges rowStates" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1909,6 +1937,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.GetDataTableSchema(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDataTableSchema (schemaSet As XmlSchemaSet) As XmlSchemaComplexType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchemaComplexType ^ GetDataTableSchema(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetDataTableSchema : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.Schema.XmlSchemaComplexType" Usage="System.Data.DataTable.GetDataTableSchema schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1943,6 +1972,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.GetErrors" />
       <MemberSignature Language="VB.NET" Value="Public Function GetErrors () As DataRow()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetErrors();" />
+      <MemberSignature Language="F#" Value="member this.GetErrors : unit -&gt; System.Data.DataRow[]" Usage="dataTable.GetErrors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1992,6 +2022,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="dataTable.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -2031,6 +2062,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.GetRowType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetRowType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetRowType();" />
+      <MemberSignature Language="F#" Value="abstract member GetRowType : unit -&gt; Type&#xA;override this.GetRowType : unit -&gt; Type" Usage="dataTable.GetRowType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2062,6 +2094,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSchema () As XmlSchema" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
+      <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="dataTable.GetSchema " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -2096,6 +2129,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.HasErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasErrors : bool" Usage="System.Data.DataTable.HasErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2152,6 +2186,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ImportRow(System.Data.DataRow)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportRow (row As DataRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ImportRow(System::Data::DataRow ^ row);" />
+      <MemberSignature Language="F#" Value="member this.ImportRow : System.Data.DataRow -&gt; unit" Usage="dataTable.ImportRow row" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2198,6 +2233,7 @@ class Program {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.Initialized" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Initialized As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Initialized;" />
+      <MemberSignature Language="F#" Value="member this.Initialized : EventHandler " Usage="member this.Initialized : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2234,6 +2270,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.Data.DataTable.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2327,6 +2364,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Load(System.Data.IDataReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (reader As IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Data::IDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Data.IDataReader -&gt; unit" Usage="dataTable.Load reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2403,6 +2441,7 @@ class Program {
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Load(System.Data.IDataReader,System.Data.LoadOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Data::IDataReader ^ reader, System::Data::LoadOption loadOption);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Data.IDataReader * System.Data.LoadOption -&gt; unit" Usage="dataTable.Load (reader, loadOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2489,6 +2528,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption, class System.Data.FillErrorEventHandler errorHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.FillErrorEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Load(System::Data::IDataReader ^ reader, System::Data::LoadOption loadOption, System::Data::FillErrorEventHandler ^ errorHandler);" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Data.IDataReader * System.Data.LoadOption * System.Data.FillErrorEventHandler -&gt; unit&#xA;override this.Load : System.Data.IDataReader * System.Data.LoadOption * System.Data.FillErrorEventHandler -&gt; unit" Usage="dataTable.Load (reader, loadOption, errorHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2588,6 +2628,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.LoadDataRow(System.Object[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadDataRow (values As Object(), fAcceptChanges As Boolean) As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ LoadDataRow(cli::array &lt;System::Object ^&gt; ^ values, bool fAcceptChanges);" />
+      <MemberSignature Language="F#" Value="member this.LoadDataRow : obj[] * bool -&gt; System.Data.DataRow" Usage="dataTable.LoadDataRow (values, fAcceptChanges)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2651,6 +2692,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow LoadDataRow(object[] values, valuetype System.Data.LoadOption loadOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.LoadDataRow(System.Object[],System.Data.LoadOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ LoadDataRow(cli::array &lt;System::Object ^&gt; ^ values, System::Data::LoadOption loadOption);" />
+      <MemberSignature Language="F#" Value="member this.LoadDataRow : obj[] * System.Data.LoadOption -&gt; System.Data.DataRow" Usage="dataTable.LoadDataRow (values, loadOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2702,6 +2744,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.Locale" />
       <MemberSignature Language="VB.NET" Value="Public Property Locale As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Locale { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Locale : System.Globalization.CultureInfo with get, set" Usage="System.Data.DataTable.Locale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2784,6 +2827,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Merge(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Merge (table As DataTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Merge(System::Data::DataTable ^ table);" />
+      <MemberSignature Language="F#" Value="member this.Merge : System.Data.DataTable -&gt; unit" Usage="dataTable.Merge table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2842,6 +2886,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Merge(System.Data.DataTable,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Merge (table As DataTable, preserveChanges As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Merge(System::Data::DataTable ^ table, bool preserveChanges);" />
+      <MemberSignature Language="F#" Value="member this.Merge : System.Data.DataTable * bool -&gt; unit" Usage="dataTable.Merge (table, preserveChanges)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2902,6 +2947,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Merge(class System.Data.DataTable table, bool preserveChanges, valuetype System.Data.MissingSchemaAction missingSchemaAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Merge(System.Data.DataTable,System.Boolean,System.Data.MissingSchemaAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Merge(System::Data::DataTable ^ table, bool preserveChanges, System::Data::MissingSchemaAction missingSchemaAction);" />
+      <MemberSignature Language="F#" Value="member this.Merge : System.Data.DataTable * bool * System.Data.MissingSchemaAction -&gt; unit" Usage="dataTable.Merge (table, preserveChanges, missingSchemaAction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2969,6 +3015,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.MinimumCapacity" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumCapacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumCapacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumCapacity : int with get, set" Usage="System.Data.DataTable.MinimumCapacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3019,6 +3066,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Data.DataTable.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3049,6 +3097,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.NewRow" />
       <MemberSignature Language="VB.NET" Value="Public Function NewRow () As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ NewRow();" />
+      <MemberSignature Language="F#" Value="member this.NewRow : unit -&gt; System.Data.DataRow" Usage="dataTable.NewRow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3095,6 +3144,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.NewRowArray(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function NewRowArray (size As Integer) As DataRow()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ NewRowArray(int size);" />
+      <MemberSignature Language="F#" Value="member this.NewRowArray : int -&gt; System.Data.DataRow[]" Usage="dataTable.NewRowArray size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3129,6 +3179,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.NewRowFromBuilder(System.Data.DataRowBuilder)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function NewRowFromBuilder (builder As DataRowBuilder) As DataRow" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::DataRow ^ NewRowFromBuilder(System::Data::DataRowBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="abstract member NewRowFromBuilder : System.Data.DataRowBuilder -&gt; System.Data.DataRow&#xA;override this.NewRowFromBuilder : System.Data.DataRowBuilder -&gt; System.Data.DataRow" Usage="dataTable.NewRowFromBuilder builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3163,6 +3214,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnColumnChanged(System.Data.DataColumnChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnColumnChanged (e As DataColumnChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnColumnChanged(System::Data::DataColumnChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnColumnChanged : System.Data.DataColumnChangeEventArgs -&gt; unit&#xA;override this.OnColumnChanged : System.Data.DataColumnChangeEventArgs -&gt; unit" Usage="dataTable.OnColumnChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3206,6 +3258,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnColumnChanging(System.Data.DataColumnChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnColumnChanging (e As DataColumnChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnColumnChanging(System::Data::DataColumnChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnColumnChanging : System.Data.DataColumnChangeEventArgs -&gt; unit&#xA;override this.OnColumnChanging : System.Data.DataColumnChangeEventArgs -&gt; unit" Usage="dataTable.OnColumnChanging e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3249,6 +3302,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanging (pcevent As PropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanging(System::ComponentModel::PropertyChangedEventArgs ^ pcevent);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanging : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanging : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="dataTable.OnPropertyChanging pcevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3292,6 +3346,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnRemoveColumn(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRemoveColumn (column As DataColumn)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRemoveColumn(System::Data::DataColumn ^ column);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemoveColumn : System.Data.DataColumn -&gt; unit&#xA;override this.OnRemoveColumn : System.Data.DataColumn -&gt; unit" Usage="dataTable.OnRemoveColumn column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3335,6 +3390,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnRowChanged(System.Data.DataRowChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowChanged (e As DataRowChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowChanged(System::Data::DataRowChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowChanged : System.Data.DataRowChangeEventArgs -&gt; unit&#xA;override this.OnRowChanged : System.Data.DataRowChangeEventArgs -&gt; unit" Usage="dataTable.OnRowChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3378,6 +3434,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnRowChanging(System.Data.DataRowChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowChanging (e As DataRowChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowChanging(System::Data::DataRowChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowChanging : System.Data.DataRowChangeEventArgs -&gt; unit&#xA;override this.OnRowChanging : System.Data.DataRowChangeEventArgs -&gt; unit" Usage="dataTable.OnRowChanging e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3421,6 +3478,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnRowDeleted(System.Data.DataRowChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowDeleted (e As DataRowChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowDeleted(System::Data::DataRowChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowDeleted : System.Data.DataRowChangeEventArgs -&gt; unit&#xA;override this.OnRowDeleted : System.Data.DataRowChangeEventArgs -&gt; unit" Usage="dataTable.OnRowDeleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3464,6 +3522,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnRowDeleting(System.Data.DataRowChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowDeleting (e As DataRowChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowDeleting(System::Data::DataRowChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowDeleting : System.Data.DataRowChangeEventArgs -&gt; unit&#xA;override this.OnRowDeleting : System.Data.DataRowChangeEventArgs -&gt; unit" Usage="dataTable.OnRowDeleting e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3507,6 +3566,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnTableCleared(System.Data.DataTableClearEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTableCleared (e As DataTableClearEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTableCleared(System::Data::DataTableClearEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnTableCleared : System.Data.DataTableClearEventArgs -&gt; unit&#xA;override this.OnTableCleared : System.Data.DataTableClearEventArgs -&gt; unit" Usage="dataTable.OnTableCleared e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3549,6 +3609,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnTableClearing(System.Data.DataTableClearEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTableClearing (e As DataTableClearEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTableClearing(System::Data::DataTableClearEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnTableClearing : System.Data.DataTableClearEventArgs -&gt; unit&#xA;override this.OnTableClearing : System.Data.DataTableClearEventArgs -&gt; unit" Usage="dataTable.OnTableClearing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3591,6 +3652,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.OnTableNewRow(System.Data.DataTableNewRowEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTableNewRow (e As DataTableNewRowEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTableNewRow(System::Data::DataTableNewRowEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnTableNewRow : System.Data.DataTableNewRowEventArgs -&gt; unit&#xA;override this.OnTableNewRow : System.Data.DataTableNewRowEventArgs -&gt; unit" Usage="dataTable.OnTableNewRow e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3633,6 +3695,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.ParentRelations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentRelations As DataRelationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRelationCollection ^ ParentRelations { System::Data::DataRelationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentRelations : System.Data.DataRelationCollection" Usage="System.Data.DataTable.ParentRelations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3685,6 +3748,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public Property Prefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string with get, set" Usage="System.Data.DataTable.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3720,6 +3784,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.PrimaryKey" />
       <MemberSignature Language="VB.NET" Value="Public Property PrimaryKey As DataColumn()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Data::DataColumn ^&gt; ^ PrimaryKey { cli::array &lt;System::Data::DataColumn ^&gt; ^ get(); void set(cli::array &lt;System::Data::DataColumn ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryKey : System.Data.DataColumn[] with get, set" Usage="System.Data.DataTable.PrimaryKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3800,6 +3865,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.XmlReadMode ReadXml(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXml(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::XmlReadMode ReadXml(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.ReadXml : System.IO.Stream -&gt; System.Data.XmlReadMode" Usage="dataTable.ReadXml stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3863,6 +3929,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXml(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadXml (reader As TextReader) As XmlReadMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::XmlReadMode ReadXml(System::IO::TextReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.ReadXml : System.IO.TextReader -&gt; System.Data.XmlReadMode" Usage="dataTable.ReadXml reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -3926,6 +3993,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadXml (fileName As String) As XmlReadMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::XmlReadMode ReadXml(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.ReadXml : string -&gt; System.Data.XmlReadMode" Usage="dataTable.ReadXml fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4007,6 +4075,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadXml (reader As XmlReader) As XmlReadMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::XmlReadMode ReadXml(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.ReadXml : System.Xml.XmlReader -&gt; System.Data.XmlReadMode" Usage="dataTable.ReadXml reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4094,6 +4163,7 @@ public class A {
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReadXmlSchema(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXmlSchema(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReadXmlSchema(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.ReadXmlSchema : System.IO.Stream -&gt; unit" Usage="dataTable.ReadXmlSchema stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4153,6 +4223,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXmlSchema(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXmlSchema (reader As TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReadXmlSchema(System::IO::TextReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.ReadXmlSchema : System.IO.TextReader -&gt; unit" Usage="dataTable.ReadXmlSchema reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4212,6 +4283,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXmlSchema(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXmlSchema (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReadXmlSchema(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.ReadXmlSchema : string -&gt; unit" Usage="dataTable.ReadXmlSchema fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4271,6 +4343,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXmlSchema(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXmlSchema (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReadXmlSchema(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.ReadXmlSchema : System.Xml.XmlReader -&gt; unit" Usage="dataTable.ReadXmlSchema reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4331,6 +4404,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ReadXmlSerializable(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReadXmlSerializable (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReadXmlSerializable(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadXmlSerializable : System.Xml.XmlReader -&gt; unit&#xA;override this.ReadXmlSerializable : System.Xml.XmlReader -&gt; unit" Usage="dataTable.ReadXmlSerializable reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4364,6 +4438,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.RejectChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub RejectChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectChanges();" />
+      <MemberSignature Language="F#" Value="member this.RejectChanges : unit -&gt; unit" Usage="dataTable.RejectChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4409,6 +4484,7 @@ public class A {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.RemotingFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property RemotingFormat As SerializationFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SerializationFormat RemotingFormat { System::Data::SerializationFormat get(); void set(System::Data::SerializationFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.RemotingFormat : System.Data.SerializationFormat with get, set" Usage="System.Data.DataTable.RemotingFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4444,6 +4520,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="dataTable.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4474,6 +4551,7 @@ public class A {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.RowChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowChanged As DataRowChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataRowChangeEventHandler ^ RowChanged;" />
+      <MemberSignature Language="F#" Value="member this.RowChanged : System.Data.DataRowChangeEventHandler " Usage="member this.RowChanged : System.Data.DataRowChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4516,6 +4594,7 @@ public class A {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.RowChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowChanging As DataRowChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataRowChangeEventHandler ^ RowChanging;" />
+      <MemberSignature Language="F#" Value="member this.RowChanging : System.Data.DataRowChangeEventHandler " Usage="member this.RowChanging : System.Data.DataRowChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4558,6 +4637,7 @@ public class A {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.RowDeleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowDeleted As DataRowChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataRowChangeEventHandler ^ RowDeleted;" />
+      <MemberSignature Language="F#" Value="member this.RowDeleted : System.Data.DataRowChangeEventHandler " Usage="member this.RowDeleted : System.Data.DataRowChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4600,6 +4680,7 @@ public class A {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.RowDeleting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowDeleting As DataRowChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataRowChangeEventHandler ^ RowDeleting;" />
+      <MemberSignature Language="F#" Value="member this.RowDeleting : System.Data.DataRowChangeEventHandler " Usage="member this.RowDeleting : System.Data.DataRowChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4642,6 +4723,7 @@ public class A {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.Rows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rows As DataRowCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRowCollection ^ Rows { System::Data::DataRowCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rows : System.Data.DataRowCollection" Usage="System.Data.DataTable.Rows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4708,6 +4790,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As DataRow()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ Select();" />
+      <MemberSignature Language="F#" Value="member this.Select : unit -&gt; System.Data.DataRow[]" Usage="dataTable.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4755,6 +4838,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Select(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Select (filterExpression As String) As DataRow()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ Select(System::String ^ filterExpression);" />
+      <MemberSignature Language="F#" Value="member this.Select : string -&gt; System.Data.DataRow[]" Usage="dataTable.Select filterExpression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4809,6 +4893,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Select(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Select (filterExpression As String, sort As String) As DataRow()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ Select(System::String ^ filterExpression, System::String ^ sort);" />
+      <MemberSignature Language="F#" Value="member this.Select : string * string -&gt; System.Data.DataRow[]" Usage="dataTable.Select (filterExpression, sort)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4863,6 +4948,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.Select(System.String,System.String,System.Data.DataViewRowState)" />
       <MemberSignature Language="VB.NET" Value="Public Function Select (filterExpression As String, sort As String, recordStates As DataViewRowState) As DataRow()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ Select(System::String ^ filterExpression, System::String ^ sort, System::Data::DataViewRowState recordStates);" />
+      <MemberSignature Language="F#" Value="member this.Select : string * string * System.Data.DataViewRowState -&gt; System.Data.DataRow[]" Usage="dataTable.Select (filterExpression, sort, recordStates)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4918,6 +5004,7 @@ public class A {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.Site" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.Data.DataTable.Site" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -4963,6 +5050,7 @@ public class A {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.System#ComponentModel#IListSource#ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.DataTable.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5166,6 +5254,7 @@ public class A {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.TableCleared" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TableCleared As DataTableClearEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataTableClearEventHandler ^ TableCleared;" />
+      <MemberSignature Language="F#" Value="member this.TableCleared : System.Data.DataTableClearEventHandler " Usage="member this.TableCleared : System.Data.DataTableClearEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5202,6 +5291,7 @@ public class A {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.TableClearing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TableClearing As DataTableClearEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataTableClearEventHandler ^ TableClearing;" />
+      <MemberSignature Language="F#" Value="member this.TableClearing : System.Data.DataTableClearEventHandler " Usage="member this.TableClearing : System.Data.DataTableClearEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5238,6 +5328,7 @@ public class A {
       <MemberSignature Language="DocId" Value="P:System.Data.DataTable.TableName" />
       <MemberSignature Language="VB.NET" Value="Public Property TableName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TableName : string with get, set" Usage="System.Data.DataTable.TableName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5296,6 +5387,7 @@ public class A {
       <MemberSignature Language="DocId" Value="E:System.Data.DataTable.TableNewRow" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TableNewRow As DataTableNewRowEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::DataTableNewRowEventHandler ^ TableNewRow;" />
+      <MemberSignature Language="F#" Value="member this.TableNewRow : System.Data.DataTableNewRowEventHandler " Usage="member this.TableNewRow : System.Data.DataTableNewRowEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5332,6 +5424,7 @@ public class A {
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="dataTable.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5549,6 +5642,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXml(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.IO.Stream -&gt; unit" Usage="dataTable.WriteXml stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5594,6 +5688,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.IO.TextWriter -&gt; unit" Usage="dataTable.WriteXml writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5639,6 +5734,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : string -&gt; unit" Usage="dataTable.WriteXml fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5684,6 +5780,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="dataTable.WriteXml writer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
@@ -5731,6 +5828,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXml(class System.IO.Stream stream, bool writeHierarchy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::IO::Stream ^ stream, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.IO.Stream * bool -&gt; unit" Usage="dataTable.WriteXml (stream, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5781,6 +5879,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXml(class System.IO.Stream stream, valuetype System.Data.XmlWriteMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.IO.Stream,System.Data.XmlWriteMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::IO::Stream ^ stream, System::Data::XmlWriteMode mode);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.IO.Stream * System.Data.XmlWriteMode -&gt; unit" Usage="dataTable.WriteXml (stream, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5828,6 +5927,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.IO.TextWriter,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As TextWriter, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::IO::TextWriter ^ writer, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.IO.TextWriter * bool -&gt; unit" Usage="dataTable.WriteXml (writer, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5883,6 +5983,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.IO.TextWriter,System.Data.XmlWriteMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As TextWriter, mode As XmlWriteMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::IO::TextWriter ^ writer, System::Data::XmlWriteMode mode);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.IO.TextWriter * System.Data.XmlWriteMode -&gt; unit" Usage="dataTable.WriteXml (writer, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5930,6 +6031,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (fileName As String, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::String ^ fileName, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : string * bool -&gt; unit" Usage="dataTable.WriteXml (fileName, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -5979,6 +6081,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.String,System.Data.XmlWriteMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (fileName As String, mode As XmlWriteMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::String ^ fileName, System::Data::XmlWriteMode mode);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : string * System.Data.XmlWriteMode -&gt; unit" Usage="dataTable.WriteXml (fileName, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6026,6 +6129,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.Xml.XmlWriter,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::Xml::XmlWriter ^ writer, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.Xml.XmlWriter * bool -&gt; unit" Usage="dataTable.WriteXml (writer, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6075,6 +6179,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.Xml.XmlWriter,System.Data.XmlWriteMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter, mode As XmlWriteMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::Xml::XmlWriter ^ writer, System::Data::XmlWriteMode mode);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.Xml.XmlWriter * System.Data.XmlWriteMode -&gt; unit" Usage="dataTable.WriteXml (writer, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6121,6 +6226,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXml(class System.IO.Stream stream, valuetype System.Data.XmlWriteMode mode, bool writeHierarchy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.IO.Stream,System.Data.XmlWriteMode,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::IO::Stream ^ stream, System::Data::XmlWriteMode mode, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.IO.Stream * System.Data.XmlWriteMode * bool -&gt; unit" Usage="dataTable.WriteXml (stream, mode, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6176,6 +6282,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.IO.TextWriter,System.Data.XmlWriteMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As TextWriter, mode As XmlWriteMode, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::IO::TextWriter ^ writer, System::Data::XmlWriteMode mode, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.IO.TextWriter * System.Data.XmlWriteMode * bool -&gt; unit" Usage="dataTable.WriteXml (writer, mode, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6377,6 +6484,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.String,System.Data.XmlWriteMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (fileName As String, mode As XmlWriteMode, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::String ^ fileName, System::Data::XmlWriteMode mode, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : string * System.Data.XmlWriteMode * bool -&gt; unit" Usage="dataTable.WriteXml (fileName, mode, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6432,6 +6540,7 @@ sdata:PrimaryKey="true">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXml(System.Xml.XmlWriter,System.Data.XmlWriteMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter, mode As XmlWriteMode, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXml(System::Xml::XmlWriter ^ writer, System::Data::XmlWriteMode mode, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXml : System.Xml.XmlWriter * System.Data.XmlWriteMode * bool -&gt; unit" Usage="dataTable.WriteXml (writer, mode, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6588,6 +6697,7 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXmlSchema(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXmlSchema(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXmlSchema(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlSchema : System.IO.Stream -&gt; unit" Usage="dataTable.WriteXmlSchema stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6632,6 +6742,7 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXmlSchema(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXmlSchema (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXmlSchema(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlSchema : System.IO.TextWriter -&gt; unit" Usage="dataTable.WriteXmlSchema writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6676,6 +6787,7 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXmlSchema(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXmlSchema (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXmlSchema(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlSchema : string -&gt; unit" Usage="dataTable.WriteXmlSchema fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6720,6 +6832,7 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXmlSchema(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXmlSchema (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXmlSchema(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlSchema : System.Xml.XmlWriter -&gt; unit" Usage="dataTable.WriteXmlSchema writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6763,6 +6876,7 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXmlSchema(class System.IO.Stream stream, bool writeHierarchy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXmlSchema(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXmlSchema(System::IO::Stream ^ stream, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlSchema : System.IO.Stream * bool -&gt; unit" Usage="dataTable.WriteXmlSchema (stream, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6811,6 +6925,7 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXmlSchema(System.IO.TextWriter,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXmlSchema (writer As TextWriter, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXmlSchema(System::IO::TextWriter ^ writer, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlSchema : System.IO.TextWriter * bool -&gt; unit" Usage="dataTable.WriteXmlSchema (writer, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6940,6 +7055,7 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXmlSchema(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXmlSchema (fileName As String, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXmlSchema(System::String ^ fileName, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlSchema : string * bool -&gt; unit" Usage="dataTable.WriteXmlSchema (fileName, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -6988,6 +7104,7 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
       <MemberSignature Language="DocId" Value="M:System.Data.DataTable.WriteXmlSchema(System.Xml.XmlWriter,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXmlSchema (writer As XmlWriter, writeHierarchy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXmlSchema(System::Xml::XmlWriter ^ writer, bool writeHierarchy);" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlSchema : System.Xml.XmlWriter * bool -&gt; unit" Usage="dataTable.WriteXmlSchema (writer, writeHierarchy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

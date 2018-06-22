@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.LabelExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LabelExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class LabelExpression sealed : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type LabelExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LabelExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="labelExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LabelExpression.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ DefaultValue { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.LabelExpression.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LabelExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.LabelExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LabelExpression.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As LabelTarget" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::LabelTarget ^ Target { System::Linq::Expressions::LabelTarget ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Linq.Expressions.LabelTarget" Usage="System.Linq.Expressions.LabelExpression.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LabelExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.LabelExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LabelExpression.Update(System.Linq.Expressions.LabelTarget,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (target As LabelTarget, defaultValue As Expression) As LabelExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::LabelExpression ^ Update(System::Linq::Expressions::LabelTarget ^ target, System::Linq::Expressions::Expression ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.LabelTarget * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.LabelExpression" Usage="labelExpression.Update (target, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

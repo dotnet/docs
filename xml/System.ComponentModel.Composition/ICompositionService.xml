@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ICompositionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICompositionService" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICompositionService" />
+  <TypeSignature Language="F#" Value="type ICompositionService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ICompositionService.SatisfyImportsOnce(System.ComponentModel.Composition.Primitives.ComposablePart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SatisfyImportsOnce (part As ComposablePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SatisfyImportsOnce(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
+      <MemberSignature Language="F#" Value="abstract member SatisfyImportsOnce : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit" Usage="iCompositionService.SatisfyImportsOnce part" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

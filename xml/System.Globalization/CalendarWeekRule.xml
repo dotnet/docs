@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.CalendarWeekRule" />
   <TypeSignature Language="VB.NET" Value="Public Enum CalendarWeekRule" />
   <TypeSignature Language="C++ CLI" Value="public enum class CalendarWeekRule" />
+  <TypeSignature Language="F#" Value="type CalendarWeekRule = " />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CalendarWeekRule.FirstDay" />
       <MemberSignature Language="VB.NET" Value="FirstDay" />
       <MemberSignature Language="C++ CLI" Value="FirstDay" />
+      <MemberSignature Language="F#" Value="FirstDay = 0" Usage="System.Globalization.CalendarWeekRule.FirstDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CalendarWeekRule.FirstFourDayWeek" />
       <MemberSignature Language="VB.NET" Value="FirstFourDayWeek" />
       <MemberSignature Language="C++ CLI" Value="FirstFourDayWeek" />
+      <MemberSignature Language="F#" Value="FirstFourDayWeek = 2" Usage="System.Globalization.CalendarWeekRule.FirstFourDayWeek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CalendarWeekRule.FirstFullWeek" />
       <MemberSignature Language="VB.NET" Value="FirstFullWeek" />
       <MemberSignature Language="C++ CLI" Value="FirstFullWeek" />
+      <MemberSignature Language="F#" Value="FirstFullWeek = 1" Usage="System.Globalization.CalendarWeekRule.FirstFullWeek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

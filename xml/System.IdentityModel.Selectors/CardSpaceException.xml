@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.CardSpaceException" />
   <TypeSignature Language="VB.NET" Value="Public Class CardSpaceException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class CardSpaceException : Exception" />
+  <TypeSignature Language="F#" Value="type CardSpaceException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CardSpaceException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.CardSpaceException : string -&gt; System.IdentityModel.Selectors.CardSpaceException" Usage="new System.IdentityModel.Selectors.CardSpaceException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CardSpaceException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.CardSpaceException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Selectors.CardSpaceException" Usage="new System.IdentityModel.Selectors.CardSpaceException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CardSpaceException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.CardSpaceException : string * Exception -&gt; System.IdentityModel.Selectors.CardSpaceException" Usage="new System.IdentityModel.Selectors.CardSpaceException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>

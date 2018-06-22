@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationBehaviorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationBehaviorAttribute&#xA;Inherits Attribute&#xA;Implements IOperationBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class OperationBehaviorAttribute sealed : Attribute, System::ServiceModel::Description::IOperationBehavior" />
+  <TypeSignature Language="F#" Value="type OperationBehaviorAttribute = class&#xA;    inherit Attribute&#xA;    interface IOperationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoDisposeParameters As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoDisposeParameters { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoDisposeParameters : bool with get, set" Usage="System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationBehaviorAttribute.Impersonation" />
       <MemberSignature Language="VB.NET" Value="Public Property Impersonation As ImpersonationOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ImpersonationOption Impersonation { System::ServiceModel::ImpersonationOption get(); void set(System::ServiceModel::ImpersonationOption value); };" />
+      <MemberSignature Language="F#" Value="member this.Impersonation : System.ServiceModel.ImpersonationOption with get, set" Usage="System.ServiceModel.OperationBehaviorAttribute.Impersonation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ReleaseInstanceMode As ReleaseInstanceMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ReleaseInstanceMode ReleaseInstanceMode { System::ServiceModel::ReleaseInstanceMode get(); void set(System::ServiceModel::ReleaseInstanceMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ReleaseInstanceMode : System.ServiceModel.ReleaseInstanceMode with get, set" Usage="System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -333,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionAutoComplete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactionAutoComplete { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionAutoComplete : bool with get, set" Usage="System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -371,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionScopeRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactionScopeRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionScopeRequired : bool with get, set" Usage="System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

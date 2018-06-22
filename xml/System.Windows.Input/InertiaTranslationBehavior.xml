@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InertiaTranslationBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class InertiaTranslationBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class InertiaTranslationBehavior" />
+  <TypeSignature Language="F#" Value="type InertiaTranslationBehavior = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration" />
       <MemberSignature Language="VB.NET" Value="Public Property DesiredDeceleration As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DesiredDeceleration { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.DesiredDeceleration : double with get, set" Usage="System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement" />
       <MemberSignature Language="VB.NET" Value="Public Property DesiredDisplacement As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DesiredDisplacement { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.DesiredDisplacement : double with get, set" Usage="System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.InitialVelocity" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialVelocity As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Vector InitialVelocity { System::Windows::Vector get(); void set(System::Windows::Vector value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialVelocity : System.Windows.Vector with get, set" Usage="System.Windows.Input.InertiaTranslationBehavior.InitialVelocity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

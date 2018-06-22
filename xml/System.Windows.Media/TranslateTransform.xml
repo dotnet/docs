@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TranslateTransform" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TranslateTransform&#xA;Inherits Transform" />
   <TypeSignature Language="C++ CLI" Value="public ref class TranslateTransform sealed : System::Windows::Media::Transform" />
+  <TypeSignature Language="F#" Value="type TranslateTransform = class&#xA;    inherit Transform" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TranslateTransform.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (offsetX As Double, offsetY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TranslateTransform(double offsetX, double offsetY);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TranslateTransform : double * double -&gt; System.Windows.Media.TranslateTransform" Usage="new System.Windows.Media.TranslateTransform (offsetX, offsetY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +86,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TranslateTransform.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As TranslateTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TranslateTransform ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.TranslateTransform" Usage="translateTransform.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +119,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TranslateTransform.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TranslateTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TranslateTransform ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.TranslateTransform" Usage="translateTransform.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +150,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TranslateTransform.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="translateTransform.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,6 +172,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TranslateTransform.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix Value { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Matrix" Usage="System.Windows.Media.TranslateTransform.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +193,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TranslateTransform.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="System.Windows.Media.TranslateTransform.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +230,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TranslateTransform.XProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ XProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable XProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TranslateTransform.XProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -242,6 +250,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TranslateTransform.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="System.Windows.Media.TranslateTransform.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +287,7 @@ Typical 3x3 matrix for 2-D translations
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TranslateTransform.YProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly YProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ YProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable YProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TranslateTransform.YProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

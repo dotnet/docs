@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TextMetrics" />
   <TypeSignature Language="VB.NET" Value="Public Structure TextMetrics" />
   <TypeSignature Language="C++ CLI" Value="public value class TextMetrics" />
+  <TypeSignature Language="F#" Value="type TextMetrics = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Ascent" />
       <MemberSignature Language="VB.NET" Value="Public Property Ascent As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Ascent { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Ascent : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.Ascent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.AverageCharWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property AverageCharWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AverageCharWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AverageCharWidth : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.AverageCharWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.BreakChar" />
       <MemberSignature Language="VB.NET" Value="Public Property BreakChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char BreakChar { char get(); void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.BreakChar : char with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.BreakChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.CharSet" />
       <MemberSignature Language="VB.NET" Value="Public Property CharSet As TextMetricsCharacterSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::VisualStyles::TextMetricsCharacterSet CharSet { System::Windows::Forms::VisualStyles::TextMetricsCharacterSet get(); void set(System::Windows::Forms::VisualStyles::TextMetricsCharacterSet value); };" />
+      <MemberSignature Language="F#" Value="member this.CharSet : System.Windows.Forms.VisualStyles.TextMetricsCharacterSet with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.CharSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DefaultChar" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char DefaultChar { char get(); void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultChar : char with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.DefaultChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Descent" />
       <MemberSignature Language="VB.NET" Value="Public Property Descent As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Descent { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Descent : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.Descent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DigitizedAspectX" />
       <MemberSignature Language="VB.NET" Value="Public Property DigitizedAspectX As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DigitizedAspectX { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DigitizedAspectX : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.DigitizedAspectX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -191,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DigitizedAspectY" />
       <MemberSignature Language="VB.NET" Value="Public Property DigitizedAspectY As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DigitizedAspectY { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DigitizedAspectY : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.DigitizedAspectY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.ExternalLeading" />
       <MemberSignature Language="VB.NET" Value="Public Property ExternalLeading As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExternalLeading { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ExternalLeading : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.ExternalLeading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.FirstChar" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char FirstChar { char get(); void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstChar : char with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.FirstChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -258,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -285,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.InternalLeading" />
       <MemberSignature Language="VB.NET" Value="Public Property InternalLeading As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InternalLeading { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.InternalLeading : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.InternalLeading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -312,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Italic" />
       <MemberSignature Language="VB.NET" Value="Public Property Italic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Italic { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Italic : bool with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.Italic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.LastChar" />
       <MemberSignature Language="VB.NET" Value="Public Property LastChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char LastChar { char get(); void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.LastChar : char with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.LastChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -353,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.MaxCharWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxCharWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxCharWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCharWidth : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.MaxCharWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -373,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Overhang" />
       <MemberSignature Language="VB.NET" Value="Public Property Overhang As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Overhang { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Overhang : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.Overhang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -393,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.PitchAndFamily" />
       <MemberSignature Language="VB.NET" Value="Public Property PitchAndFamily As TextMetricsPitchAndFamilyValues" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::VisualStyles::TextMetricsPitchAndFamilyValues PitchAndFamily { System::Windows::Forms::VisualStyles::TextMetricsPitchAndFamilyValues get(); void set(System::Windows::Forms::VisualStyles::TextMetricsPitchAndFamilyValues value); };" />
+      <MemberSignature Language="F#" Value="member this.PitchAndFamily : System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.PitchAndFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -413,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.StruckOut" />
       <MemberSignature Language="VB.NET" Value="Public Property StruckOut As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StruckOut { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.StruckOut : bool with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.StruckOut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -434,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Underlined" />
       <MemberSignature Language="VB.NET" Value="Public Property Underlined As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Underlined { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Underlined : bool with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.Underlined" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -455,6 +475,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Weight" />
       <MemberSignature Language="VB.NET" Value="Public Property Weight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Weight { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Weight : int with get, set" Usage="System.Windows.Forms.VisualStyles.TextMetrics.Weight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

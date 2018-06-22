@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewDeleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewDeleteEventHandler(sender As Object, e As FormViewDeleteEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FormViewDeleteEventHandler(System::Object ^ sender, FormViewDeleteEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FormViewDeleteEventHandler = delegate of obj * FormViewDeleteEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

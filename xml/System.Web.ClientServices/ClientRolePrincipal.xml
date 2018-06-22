@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.ClientRolePrincipal" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientRolePrincipal&#xA;Implements IPrincipal" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientRolePrincipal : System::Security::Principal::IPrincipal" />
+  <TypeSignature Language="F#" Value="type ClientRolePrincipal = class&#xA;    interface IPrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.ClientRolePrincipal.#ctor(System.Security.Principal.IIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientRolePrincipal(System::Security::Principal::IIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.Web.ClientServices.ClientRolePrincipal : System.Security.Principal.IIdentity -&gt; System.Web.ClientServices.ClientRolePrincipal" Usage="new System.Web.ClientServices.ClientRolePrincipal identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.ClientRolePrincipal.Identity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As IIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IIdentity ^ Identity { System::Security::Principal::IIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Security.Principal.IIdentity" Usage="System.Web.ClientServices.ClientRolePrincipal.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.ClientRolePrincipal.IsInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsInRole(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="abstract member IsInRole : string -&gt; bool&#xA;override this.IsInRole : string -&gt; bool" Usage="clientRolePrincipal.IsInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

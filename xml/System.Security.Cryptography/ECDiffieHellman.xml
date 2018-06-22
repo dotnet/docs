@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECDiffieHellman" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ECDiffieHellman&#xA;Inherits AsymmetricAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class ECDiffieHellman abstract : System::Security::Cryptography::AsymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type ECDiffieHellman = class&#xA;    inherit AsymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As ECDiffieHellman" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDiffieHellman ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.ECDiffieHellman" Usage="System.Security.Cryptography.ECDiffieHellman.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.Create(System.Security.Cryptography.ECCurve)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (curve As ECCurve) As ECDiffieHellman" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDiffieHellman ^ Create(System::Security::Cryptography::ECCurve curve);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Security.Cryptography.ECCurve -&gt; System.Security.Cryptography.ECDiffieHellman" Usage="System.Security.Cryptography.ECDiffieHellman.Create curve" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.Create(System.Security.Cryptography.ECParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (parameters As ECParameters) As ECDiffieHellman" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDiffieHellman ^ Create(System::Security::Cryptography::ECParameters parameters);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Security.Cryptography.ECParameters -&gt; System.Security.Cryptography.ECDiffieHellman" Usage="System.Security.Cryptography.ECDiffieHellman.Create parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algorithm As String) As ECDiffieHellman" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDiffieHellman ^ Create(System::String ^ algorithm);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.ECDiffieHellman" Usage="System.Security.Cryptography.ECDiffieHellman.Create algorithm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -233,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHash(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Public Function DeriveKeyFromHash (otherPartyPublicKey As ECDiffieHellmanPublicKey, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ DeriveKeyFromHash(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="member this.DeriveKeyFromHash : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyFromHash (otherPartyPublicKey, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHash(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Security.Cryptography.HashAlgorithmName,System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeriveKeyFromHash (otherPartyPublicKey As ECDiffieHellmanPublicKey, hashAlgorithm As HashAlgorithmName, secretPrepend As Byte(), secretAppend As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ DeriveKeyFromHash(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, cli::array &lt;System::Byte&gt; ^ secretPrepend, cli::array &lt;System::Byte&gt; ^ secretAppend);" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyFromHash : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] -&gt; byte[]&#xA;override this.DeriveKeyFromHash : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyFromHash (otherPartyPublicKey, hashAlgorithm, secretPrepend, secretAppend)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHmac(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Security.Cryptography.HashAlgorithmName,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function DeriveKeyFromHmac (otherPartyPublicKey As ECDiffieHellmanPublicKey, hashAlgorithm As HashAlgorithmName, hmacKey As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ DeriveKeyFromHmac(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, cli::array &lt;System::Byte&gt; ^ hmacKey);" />
+      <MemberSignature Language="F#" Value="member this.DeriveKeyFromHmac : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyFromHmac (otherPartyPublicKey, hashAlgorithm, hmacKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -353,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHmac(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Security.Cryptography.HashAlgorithmName,System.Byte[],System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeriveKeyFromHmac (otherPartyPublicKey As ECDiffieHellmanPublicKey, hashAlgorithm As HashAlgorithmName, hmacKey As Byte(), secretPrepend As Byte(), secretAppend As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ DeriveKeyFromHmac(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, cli::array &lt;System::Byte&gt; ^ hmacKey, cli::array &lt;System::Byte&gt; ^ secretPrepend, cli::array &lt;System::Byte&gt; ^ secretAppend);" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyFromHmac : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] * byte[] -&gt; byte[]&#xA;override this.DeriveKeyFromHmac : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyFromHmac (otherPartyPublicKey, hashAlgorithm, hmacKey, secretPrepend, secretAppend)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -390,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.DeriveKeyMaterial(System.Security.Cryptography.ECDiffieHellmanPublicKey)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeriveKeyMaterial (otherPartyPublicKey As ECDiffieHellmanPublicKey) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ DeriveKeyMaterial(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey);" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]&#xA;override this.DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyMaterial otherPartyPublicKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -425,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.DeriveKeyTls(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeriveKeyTls (otherPartyPublicKey As ECDiffieHellmanPublicKey, prfLabel As Byte(), prfSeed As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ DeriveKeyTls(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey, cli::array &lt;System::Byte&gt; ^ prfLabel, cli::array &lt;System::Byte&gt; ^ prfSeed);" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyTls : System.Security.Cryptography.ECDiffieHellmanPublicKey * byte[] * byte[] -&gt; byte[]&#xA;override this.DeriveKeyTls : System.Security.Cryptography.ECDiffieHellmanPublicKey * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyTls (otherPartyPublicKey, prfLabel, prfSeed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -458,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.ExportExplicitParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ExportExplicitParameters (includePrivateParameters As Boolean) As ECParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::ECParameters ExportExplicitParameters(bool includePrivateParameters);" />
+      <MemberSignature Language="F#" Value="abstract member ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters&#xA;override this.ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDiffieHellman.ExportExplicitParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -488,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.ExportParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ExportParameters (includePrivateParameters As Boolean) As ECParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::ECParameters ExportParameters(bool includePrivateParameters);" />
+      <MemberSignature Language="F#" Value="abstract member ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters&#xA;override this.ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDiffieHellman.ExportParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -525,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.FromXmlString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXmlString (xmlString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXmlString(System::String ^ xmlString);" />
+      <MemberSignature Language="F#" Value="override this.FromXmlString : string -&gt; unit" Usage="eCDiffieHellman.FromXmlString xmlString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -548,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.GenerateKey(System.Security.Cryptography.ECCurve)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GenerateKey (curve As ECCurve)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GenerateKey(System::Security::Cryptography::ECCurve curve);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit&#xA;override this.GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit" Usage="eCDiffieHellman.GenerateKey curve" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -587,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.ImportParameters(System.Security.Cryptography.ECParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ImportParameters (parameters As ECParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportParameters(System::Security::Cryptography::ECParameters parameters);" />
+      <MemberSignature Language="F#" Value="abstract member ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit&#xA;override this.ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit" Usage="eCDiffieHellman.ImportParameters parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -626,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellman.KeyExchangeAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyExchangeAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyExchangeAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyExchangeAlgorithm : string" Usage="System.Security.Cryptography.ECDiffieHellman.KeyExchangeAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -659,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellman.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PublicKey As ECDiffieHellmanPublicKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Security::Cryptography::ECDiffieHellmanPublicKey ^ PublicKey { System::Security::Cryptography::ECDiffieHellmanPublicKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : System.Security.Cryptography.ECDiffieHellmanPublicKey" Usage="System.Security.Cryptography.ECDiffieHellman.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -683,6 +701,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellman.SignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SignatureAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SignatureAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureAlgorithm : string" Usage="System.Security.Cryptography.ECDiffieHellman.SignatureAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -716,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.ToXmlString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXmlString (includePrivateParameters As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToXmlString(bool includePrivateParameters);" />
+      <MemberSignature Language="F#" Value="override this.ToXmlString : bool -&gt; string" Usage="eCDiffieHellman.ToXmlString includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

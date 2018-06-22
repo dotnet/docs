@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.NextPrevFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum NextPrevFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class NextPrevFormat" />
+  <TypeSignature Language="F#" Value="type NextPrevFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.NextPrevFormat.CustomText" />
       <MemberSignature Language="VB.NET" Value="CustomText" />
       <MemberSignature Language="C++ CLI" Value="CustomText" />
+      <MemberSignature Language="F#" Value="CustomText = 0" Usage="System.Web.UI.WebControls.NextPrevFormat.CustomText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.NextPrevFormat.FullMonth" />
       <MemberSignature Language="VB.NET" Value="FullMonth" />
       <MemberSignature Language="C++ CLI" Value="FullMonth" />
+      <MemberSignature Language="F#" Value="FullMonth = 2" Usage="System.Web.UI.WebControls.NextPrevFormat.FullMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.NextPrevFormat.ShortMonth" />
       <MemberSignature Language="VB.NET" Value="ShortMonth" />
       <MemberSignature Language="C++ CLI" Value="ShortMonth" />
+      <MemberSignature Language="F#" Value="ShortMonth = 1" Usage="System.Web.UI.WebControls.NextPrevFormat.ShortMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

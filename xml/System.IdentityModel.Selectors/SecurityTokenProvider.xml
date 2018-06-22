@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityTokenProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenProvider abstract" />
+  <TypeSignature Language="F#" Value="type SecurityTokenProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelToken(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginCancelToken (timeout As TimeSpan, token As SecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCancelToken(TimeSpan timeout, System::IdentityModel::Tokens::SecurityToken ^ token, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginCancelToken : TimeSpan * System.IdentityModel.Tokens.SecurityToken * AsyncCallback * obj -&gt; IAsyncResult" Usage="securityTokenProvider.BeginCancelToken (timeout, token, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function BeginCancelTokenCore (timeout As TimeSpan, token As SecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ BeginCancelTokenCore(TimeSpan timeout, System::IdentityModel::Tokens::SecurityToken ^ token, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginCancelTokenCore : TimeSpan * System.IdentityModel.Tokens.SecurityToken * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginCancelTokenCore : TimeSpan * System.IdentityModel.Tokens.SecurityToken * AsyncCallback * obj -&gt; IAsyncResult" Usage="securityTokenProvider.BeginCancelTokenCore (timeout, token, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetToken(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginGetToken (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetToken(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginGetToken : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="securityTokenProvider.BeginGetToken (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetTokenCore(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function BeginGetTokenCore (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ BeginGetTokenCore(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginGetTokenCore : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginGetTokenCore : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="securityTokenProvider.BeginGetTokenCore (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -227,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewToken(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginRenewToken (timeout As TimeSpan, token As SecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRenewToken(TimeSpan timeout, System::IdentityModel::Tokens::SecurityToken ^ token, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.BeginRenewToken : TimeSpan * System.IdentityModel.Tokens.SecurityToken * AsyncCallback * obj -&gt; IAsyncResult" Usage="securityTokenProvider.BeginRenewToken (timeout, token, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function BeginRenewTokenCore (timeout As TimeSpan, token As SecurityToken, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ BeginRenewTokenCore(TimeSpan timeout, System::IdentityModel::Tokens::SecurityToken ^ token, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member BeginRenewTokenCore : TimeSpan * System.IdentityModel.Tokens.SecurityToken * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginRenewTokenCore : TimeSpan * System.IdentityModel.Tokens.SecurityToken * AsyncCallback * obj -&gt; IAsyncResult" Usage="securityTokenProvider.BeginRenewTokenCore (timeout, token, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.CancelToken(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelToken (timeout As TimeSpan, token As SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelToken(TimeSpan timeout, System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="member this.CancelToken : TimeSpan * System.IdentityModel.Tokens.SecurityToken -&gt; unit" Usage="securityTokenProvider.CancelToken (timeout, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -348,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.CancelTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CancelTokenCore (timeout As TimeSpan, token As SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CancelTokenCore(TimeSpan timeout, System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="abstract member CancelTokenCore : TimeSpan * System.IdentityModel.Tokens.SecurityToken -&gt; unit&#xA;override this.CancelTokenCore : TimeSpan * System.IdentityModel.Tokens.SecurityToken -&gt; unit" Usage="securityTokenProvider.CancelTokenCore (timeout, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -384,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.EndCancelToken(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndCancelToken (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCancelToken(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndCancelToken : IAsyncResult -&gt; unit" Usage="securityTokenProvider.EndCancelToken result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -419,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.EndCancelTokenCore(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndCancelTokenCore (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndCancelTokenCore(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndCancelTokenCore : IAsyncResult -&gt; unit&#xA;override this.EndCancelTokenCore : IAsyncResult -&gt; unit" Usage="securityTokenProvider.EndCancelTokenCore result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -453,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.EndGetToken(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndGetToken (result As IAsyncResult) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ EndGetToken(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndGetToken : IAsyncResult -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenProvider.EndGetToken result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -484,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.EndGetTokenCore(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function EndGetTokenCore (result As IAsyncResult) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ EndGetTokenCore(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndGetTokenCore : IAsyncResult -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.EndGetTokenCore : IAsyncResult -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenProvider.EndGetTokenCore result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -517,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.EndRenewToken(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndRenewToken (result As IAsyncResult) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ EndRenewToken(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndRenewToken : IAsyncResult -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenProvider.EndRenewToken result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -548,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.EndRenewTokenCore(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function EndRenewTokenCore (result As IAsyncResult) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ EndRenewTokenCore(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndRenewTokenCore : IAsyncResult -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.EndRenewTokenCore : IAsyncResult -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenProvider.EndRenewTokenCore result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -581,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetToken (timeout As TimeSpan) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ GetToken(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.GetToken : TimeSpan -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenProvider.GetToken timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -616,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member GetTokenCore : TimeSpan -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenProvider.GetTokenCore timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -661,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.RenewToken(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function RenewToken (timeout As TimeSpan, token As SecurityToken) As SecurityToken" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ RenewToken(TimeSpan timeout, System::IdentityModel::Tokens::SecurityToken ^ token);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.RenewToken : TimeSpan * System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenProvider.RenewToken (timeout, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -702,6 +720,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenProvider.RenewTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function RenewTokenCore (timeout As TimeSpan, token As SecurityToken) As SecurityToken" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ RenewTokenCore(TimeSpan timeout, System::IdentityModel::Tokens::SecurityToken ^ token);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member RenewTokenCore : TimeSpan * System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.RenewTokenCore : TimeSpan * System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenProvider.RenewTokenCore (timeout, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -741,6 +760,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenProvider.SupportsTokenCancellation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsTokenCancellation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsTokenCancellation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsTokenCancellation : bool" Usage="System.IdentityModel.Selectors.SecurityTokenProvider.SupportsTokenCancellation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -769,6 +789,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenProvider.SupportsTokenRenewal" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsTokenRenewal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsTokenRenewal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsTokenRenewal : bool" Usage="System.IdentityModel.Selectors.SecurityTokenProvider.SupportsTokenRenewal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

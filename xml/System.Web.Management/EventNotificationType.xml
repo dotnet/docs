@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.EventNotificationType" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventNotificationType" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventNotificationType" />
+  <TypeSignature Language="F#" Value="type EventNotificationType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.EventNotificationType.Flush" />
       <MemberSignature Language="VB.NET" Value="Flush" />
       <MemberSignature Language="C++ CLI" Value="Flush" />
+      <MemberSignature Language="F#" Value="Flush = 2" Usage="System.Web.Management.EventNotificationType.Flush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.EventNotificationType.Regular" />
       <MemberSignature Language="VB.NET" Value="Regular" />
       <MemberSignature Language="C++ CLI" Value="Regular" />
+      <MemberSignature Language="F#" Value="Regular = 0" Usage="System.Web.Management.EventNotificationType.Regular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.EventNotificationType.Unbuffered" />
       <MemberSignature Language="VB.NET" Value="Unbuffered" />
       <MemberSignature Language="C++ CLI" Value="Unbuffered" />
+      <MemberSignature Language="F#" Value="Unbuffered = 3" Usage="System.Web.Management.EventNotificationType.Unbuffered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.EventNotificationType.Urgent" />
       <MemberSignature Language="VB.NET" Value="Urgent" />
       <MemberSignature Language="C++ CLI" Value="Urgent" />
+      <MemberSignature Language="F#" Value="Urgent = 1" Usage="System.Web.Management.EventNotificationType.Urgent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.InvokeFunc`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeFunc(Of T, TResult)&#xA;Inherits NativeActivity(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T, typename TResult&gt;&#xA;public ref class InvokeFunc sealed : System::Activities::NativeActivity&lt;TResult&gt;" />
+  <TypeSignature Language="F#" Value="type InvokeFunc&lt;'T, 'Result&gt; = class&#xA;    inherit NativeActivity&lt;'Result&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`2.Argument" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument As InArgument(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T&gt; ^ Argument { System::Activities::InArgument&lt;T&gt; ^ get(); void set(System::Activities::InArgument&lt;T&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument : System.Activities.InArgument&lt;'T&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T, 'Result&gt;.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`2.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="invokeFunc.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`2.Func" />
       <MemberSignature Language="VB.NET" Value="Public Property Func As ActivityFunc(Of T, TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityFunc&lt;T, TResult&gt; ^ Func { System::Activities::ActivityFunc&lt;T, TResult&gt; ^ get(); void set(System::Activities::ActivityFunc&lt;T, TResult&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Func : System.Activities.ActivityFunc&lt;'T, 'Result&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T, 'Result&gt;.Func" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`2.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="invokeFunc.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

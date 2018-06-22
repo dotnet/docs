@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.XmlFormatExtensionPointAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlFormatExtensionPointAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlFormatExtensionPointAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlFormatExtensionPointAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionPointAttribute(System::String ^ memberName);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionPointAttribute : string -&gt; System.Web.Services.Configuration.XmlFormatExtensionPointAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionPointAttribute memberName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.AllowElements" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowElements As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowElements { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowElements : bool with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.AllowElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.MemberName" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionPointAttribute.MemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

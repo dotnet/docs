@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionManagerCommunicationException" />
   <TypeSignature Language="VB.NET" Value="Public Class TransactionManagerCommunicationException&#xA;Inherits TransactionException" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransactionManagerCommunicationException : System::Transactions::TransactionException" />
+  <TypeSignature Language="F#" Value="type TransactionManagerCommunicationException = class&#xA;    inherit TransactionException" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionManagerCommunicationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionManagerCommunicationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Transactions.TransactionManagerCommunicationException : string -&gt; System.Transactions.TransactionManagerCommunicationException" Usage="new System.Transactions.TransactionManagerCommunicationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionManagerCommunicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TransactionManagerCommunicationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Transactions.TransactionManagerCommunicationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Transactions.TransactionManagerCommunicationException" Usage="new System.Transactions.TransactionManagerCommunicationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionManagerCommunicationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionManagerCommunicationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Transactions.TransactionManagerCommunicationException : string * Exception -&gt; System.Transactions.TransactionManagerCommunicationException" Usage="new System.Transactions.TransactionManagerCommunicationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

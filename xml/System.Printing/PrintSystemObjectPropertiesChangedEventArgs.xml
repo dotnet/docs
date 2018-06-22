@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemObjectPropertiesChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintSystemObjectPropertiesChangedEventArgs&#xA;Inherits EventArgs&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintSystemObjectPropertiesChangedEventArgs : EventArgs, IDisposable" />
+  <TypeSignature Language="F#" Value="type PrintSystemObjectPropertiesChangedEventArgs = class&#xA;    inherit EventArgs&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjectPropertiesChangedEventArgs.#ctor(System.Collections.Specialized.StringCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (events As StringCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemObjectPropertiesChangedEventArgs(System::Collections::Specialized::StringCollection ^ events);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintSystemObjectPropertiesChangedEventArgs : System.Collections.Specialized.StringCollection -&gt; System.Printing.PrintSystemObjectPropertiesChangedEventArgs" Usage="new System.Printing.PrintSystemObjectPropertiesChangedEventArgs events" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjectPropertiesChangedEventArgs.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="printSystemObjectPropertiesChangedEventArgs.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjectPropertiesChangedEventArgs.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="printSystemObjectPropertiesChangedEventArgs.Dispose A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemObjectPropertiesChangedEventArgs.PropertiesNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertiesNames As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ PropertiesNames { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertiesNames : System.Collections.Specialized.StringCollection" Usage="System.Printing.PrintSystemObjectPropertiesChangedEventArgs.PropertiesNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

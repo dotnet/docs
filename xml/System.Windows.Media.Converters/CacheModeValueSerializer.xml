@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Converters.CacheModeValueSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class CacheModeValueSerializer&#xA;Inherits ValueSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class CacheModeValueSerializer : System::Windows::Markup::ValueSerializer" />
+  <TypeSignature Language="F#" Value="type CacheModeValueSerializer = class&#xA;    inherit ValueSerializer" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Converters.CacheModeValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFromString (value As String, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="cacheModeValueSerializer.CanConvertFromString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Converters.CacheModeValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertToString (value As Object, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="cacheModeValueSerializer.CanConvertToString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Converters.CacheModeValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFromString (value As String, context As IValueSerializerContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; obj" Usage="cacheModeValueSerializer.ConvertFromString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Converters.CacheModeValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertToString (value As Object, context As IValueSerializerContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="cacheModeValueSerializer.ConvertToString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

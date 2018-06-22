@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyPropertyChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Structure DependencyPropertyChangedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public value class DependencyPropertyChangedEventArgs" />
+  <TypeSignature Language="F#" Value="type DependencyPropertyChangedEventArgs = struct" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyChangedEventArgs.#ctor(System.Windows.DependencyProperty,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (property As DependencyProperty, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DependencyPropertyChangedEventArgs(System::Windows::DependencyProperty ^ property, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="new System.Windows.DependencyPropertyChangedEventArgs : System.Windows.DependencyProperty * obj * obj -&gt; System.Windows.DependencyPropertyChangedEventArgs" Usage="new System.Windows.DependencyPropertyChangedEventArgs (property, oldValue, newValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyChangedEventArgs.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dependencyPropertyChangedEventArgs.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyChangedEventArgs.Equals(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (args As DependencyPropertyChangedEventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::DependencyPropertyChangedEventArgs args);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.DependencyPropertyChangedEventArgs -&gt; bool" Usage="dependencyPropertyChangedEventArgs.Equals args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyChangedEventArgs.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dependencyPropertyChangedEventArgs.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyPropertyChangedEventArgs.NewValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewValue : obj" Usage="System.Windows.DependencyPropertyChangedEventArgs.NewValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyPropertyChangedEventArgs.OldValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OldValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldValue : obj" Usage="System.Windows.DependencyPropertyChangedEventArgs.OldValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyChangedEventArgs.op_Equality(System.Windows.DependencyPropertyChangedEventArgs,System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As DependencyPropertyChangedEventArgs, right As DependencyPropertyChangedEventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::DependencyPropertyChangedEventArgs left, System::Windows::DependencyPropertyChangedEventArgs right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.DependencyPropertyChangedEventArgs * System.Windows.DependencyPropertyChangedEventArgs -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyChangedEventArgs.op_Inequality(System.Windows.DependencyPropertyChangedEventArgs,System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As DependencyPropertyChangedEventArgs, right As DependencyPropertyChangedEventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::DependencyPropertyChangedEventArgs left, System::Windows::DependencyPropertyChangedEventArgs right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.DependencyPropertyChangedEventArgs * System.Windows.DependencyPropertyChangedEventArgs -&gt; bool" Usage="System.Windows.DependencyPropertyChangedEventArgs.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -304,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyPropertyChangedEventArgs.Property" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Property As DependencyProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty" Usage="System.Windows.DependencyPropertyChangedEventArgs.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

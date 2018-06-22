@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleRowUpdatedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OracleRowUpdatedEventHandler(sender As Object, e As OracleRowUpdatedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void OracleRowUpdatedEventHandler(System::Object ^ sender, OracleRowUpdatedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type OracleRowUpdatedEventHandler = delegate of obj * OracleRowUpdatedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

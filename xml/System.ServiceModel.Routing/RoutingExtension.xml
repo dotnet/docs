@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.RoutingExtension" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoutingExtension&#xA;Implements IExtension(Of ServiceHostBase)" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoutingExtension sealed : System::ServiceModel::IExtension&lt;System::ServiceModel::ServiceHostBase ^&gt;" />
+  <TypeSignature Language="F#" Value="type RoutingExtension = class&#xA;    interface IExtension&lt;ServiceHostBase&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyConfiguration(class System.ServiceModel.Routing.RoutingConfiguration routingConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration(System.ServiceModel.Routing.RoutingConfiguration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyConfiguration(System::ServiceModel::Routing::RoutingConfiguration ^ routingConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ApplyConfiguration : System.ServiceModel.Routing.RoutingConfiguration -&gt; unit" Usage="routingExtension.ApplyConfiguration routingConfiguration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.TimerCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TimerCallback(state As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TimerCallback(System::Object ^ state);" />
+  <TypeSignature Language="F#" Value="type TimerCallback = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Timer</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

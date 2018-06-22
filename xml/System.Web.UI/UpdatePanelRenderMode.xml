@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanelRenderMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum UpdatePanelRenderMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class UpdatePanelRenderMode" />
+  <TypeSignature Language="F#" Value="type UpdatePanelRenderMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.UpdatePanelRenderMode.Block" />
       <MemberSignature Language="VB.NET" Value="Block" />
       <MemberSignature Language="C++ CLI" Value="Block" />
+      <MemberSignature Language="F#" Value="Block = 0" Usage="System.Web.UI.UpdatePanelRenderMode.Block" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.UpdatePanelRenderMode.Inline" />
       <MemberSignature Language="VB.NET" Value="Inline" />
       <MemberSignature Language="C++ CLI" Value="Inline" />
+      <MemberSignature Language="F#" Value="Inline = 1" Usage="System.Web.UI.UpdatePanelRenderMode.Inline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

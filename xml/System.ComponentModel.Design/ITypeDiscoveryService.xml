@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ITypeDiscoveryService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeDiscoveryService" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeDiscoveryService" />
+  <TypeSignature Language="F#" Value="type ITypeDiscoveryService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeDiscoveryService.GetTypes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypes (baseType As Type, excludeGlobalTypes As Boolean) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetTypes(Type ^ baseType, bool excludeGlobalTypes);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypes : Type * bool -&gt; System.Collections.ICollection" Usage="iTypeDiscoveryService.GetTypes (baseType, excludeGlobalTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DocumentViewerAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class DocumentViewerAutomationPeer&#xA;Inherits DocumentViewerBaseAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DocumentViewerAutomationPeer : System::Windows::Automation::Peers::DocumentViewerBaseAutomationPeer" />
+  <TypeSignature Language="F#" Value="type DocumentViewerAutomationPeer = class&#xA;    inherit DocumentViewerBaseAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentViewerAutomationPeer.#ctor(System.Windows.Controls.DocumentViewer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DocumentViewer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DocumentViewerAutomationPeer(System::Windows::Controls::DocumentViewer ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.DocumentViewerAutomationPeer : System.Windows.Controls.DocumentViewer -&gt; System.Windows.Automation.Peers.DocumentViewerAutomationPeer" Usage="new System.Windows.Automation.Peers.DocumentViewerAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentViewerAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="documentViewerAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentViewerAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="documentViewerAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

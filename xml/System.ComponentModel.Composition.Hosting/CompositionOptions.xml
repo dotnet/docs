@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CompositionOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompositionOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompositionOptions" />
+  <TypeSignature Language="F#" Value="type CompositionOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.ComponentModel.Composition.Hosting.CompositionOptions.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionOptions.DisableSilentRejection" />
       <MemberSignature Language="VB.NET" Value="DisableSilentRejection" />
       <MemberSignature Language="C++ CLI" Value="DisableSilentRejection" />
+      <MemberSignature Language="F#" Value="DisableSilentRejection = 1" Usage="System.ComponentModel.Composition.Hosting.CompositionOptions.DisableSilentRejection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionOptions.ExportCompositionService" />
       <MemberSignature Language="VB.NET" Value="ExportCompositionService" />
       <MemberSignature Language="C++ CLI" Value="ExportCompositionService" />
+      <MemberSignature Language="F#" Value="ExportCompositionService = 4" Usage="System.ComponentModel.Composition.Hosting.CompositionOptions.ExportCompositionService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionOptions.IsThreadSafe" />
       <MemberSignature Language="VB.NET" Value="IsThreadSafe" />
       <MemberSignature Language="C++ CLI" Value="IsThreadSafe" />
+      <MemberSignature Language="F#" Value="IsThreadSafe = 2" Usage="System.ComponentModel.Composition.Hosting.CompositionOptions.IsThreadSafe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

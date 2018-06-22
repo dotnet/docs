@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridViewColumnHeaderRole" />
   <TypeSignature Language="VB.NET" Value="Public Enum GridViewColumnHeaderRole" />
   <TypeSignature Language="C++ CLI" Value="public enum class GridViewColumnHeaderRole" />
+  <TypeSignature Language="F#" Value="type GridViewColumnHeaderRole = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumnHeaderRole.Floating" />
       <MemberSignature Language="VB.NET" Value="Floating" />
       <MemberSignature Language="C++ CLI" Value="Floating" />
+      <MemberSignature Language="F#" Value="Floating = 1" Usage="System.Windows.Controls.GridViewColumnHeaderRole.Floating" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumnHeaderRole.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Controls.GridViewColumnHeaderRole.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumnHeaderRole.Padding" />
       <MemberSignature Language="VB.NET" Value="Padding" />
       <MemberSignature Language="C++ CLI" Value="Padding" />
+      <MemberSignature Language="F#" Value="Padding = 2" Usage="System.Windows.Controls.GridViewColumnHeaderRole.Padding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DpiChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DpiChangedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DpiChangedEventArgs sealed : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type DpiChangedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiChangedEventArgs.NewDpi" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewDpi As DpiScale" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DpiScale NewDpi { System::Windows::DpiScale get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewDpi : System.Windows.DpiScale" Usage="System.Windows.DpiChangedEventArgs.NewDpi" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiChangedEventArgs.OldDpi" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldDpi As DpiScale" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DpiScale OldDpi { System::Windows::DpiScale get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldDpi : System.Windows.DpiScale" Usage="System.Windows.DpiChangedEventArgs.OldDpi" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelBinderDictionary&#xA;Implements ICollection(Of KeyValuePair(Of Type, IModelBinder)), IDictionary(Of Type, IModelBinder), IEnumerable(Of KeyValuePair(Of Type, IModelBinder))" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelBinderDictionary : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;Type ^, System::Web::ModelBinding::IModelBinder ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;Type ^, System::Web::ModelBinding::IModelBinder ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;Type ^, System::Web::ModelBinding::IModelBinder ^&gt;&gt;" />
+  <TypeSignature Language="F#" Value="type ModelBinderDictionary = class&#xA;    interface IDictionary&lt;Type, IModelBinder&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;Type, IModelBinder&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;Type, IModelBinder&gt;&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.Add(System.Collections.Generic.KeyValuePair{System.Type,System.Web.ModelBinding.IModelBinder})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As KeyValuePair(Of Type, IModelBinder))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Collections::Generic::KeyValuePair&lt;Type ^, System::Web::ModelBinding::IModelBinder ^&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt; -&gt; unit&#xA;override this.Add : System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt; -&gt; unit" Usage="modelBinderDictionary.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.Add(System.Type,System.Web.ModelBinding.IModelBinder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As Type, value As IModelBinder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(Type ^ key, System::Web::ModelBinding::IModelBinder ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Type * System.Web.ModelBinding.IModelBinder -&gt; unit&#xA;override this.Add : Type * System.Web.ModelBinding.IModelBinder -&gt; unit" Usage="modelBinderDictionary.Add (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="modelBinderDictionary.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Type,System.Web.ModelBinding.IModelBinder})" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As KeyValuePair(Of Type, IModelBinder)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;Type ^, System::Web::ModelBinding::IModelBinder ^&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt; -&gt; bool&#xA;override this.Contains : System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt; -&gt; bool" Usage="modelBinderDictionary.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.ContainsKey(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(Type ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : Type -&gt; bool&#xA;override this.ContainsKey : Type -&gt; bool" Usage="modelBinderDictionary.ContainsKey key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.Type,System.Web.ModelBinding.IModelBinder}[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As KeyValuePair(Of Type, IModelBinder)(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;Type ^, System::Web::ModelBinding::IModelBinder ^&gt;&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt;[] * int -&gt; unit&#xA;override this.CopyTo : System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt;[] * int -&gt; unit" Usage="modelBinderDictionary.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderDictionary.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.ModelBinding.ModelBinderDictionary.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderDictionary.DefaultBinder" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultBinder As IModelBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::IModelBinder ^ DefaultBinder { System::Web::ModelBinding::IModelBinder ^ get(); void set(System::Web::ModelBinding::IModelBinder ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultBinder : System.Web.ModelBinding.IModelBinder with get, set" Usage="System.Web.ModelBinding.ModelBinderDictionary.DefaultBinder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of Type, IModelBinder))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;Type ^, System::Web::ModelBinding::IModelBinder ^&gt;&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt;&gt;" Usage="modelBinderDictionary.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderDictionary.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.ModelBinding.ModelBinderDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -308,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderDictionary.Item(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Type) As IModelBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::IModelBinder ^ default[Type ^] { System::Web::ModelBinding::IModelBinder ^ get(Type ^ key); void set(Type ^ key, System::Web::ModelBinding::IModelBinder ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Type) : System.Web.ModelBinding.IModelBinder with get, set" Usage="System.Web.ModelBinding.ModelBinderDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -335,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderDictionary.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Type ^&gt; ^ Keys { System::Collections::Generic::ICollection&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.ICollection&lt;Type&gt;" Usage="System.Web.ModelBinding.ModelBinderDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -367,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.Remove(System.Collections.Generic.KeyValuePair{System.Type,System.Web.ModelBinding.IModelBinder})" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As KeyValuePair(Of Type, IModelBinder)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Collections::Generic::KeyValuePair&lt;Type ^, System::Web::ModelBinding::IModelBinder ^&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt; -&gt; bool&#xA;override this.Remove : System.Collections.Generic.KeyValuePair&lt;Type, System.Web.ModelBinding.IModelBinder&gt; -&gt; bool" Usage="modelBinderDictionary.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -395,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.Remove(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (key As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(Type ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : Type -&gt; bool&#xA;override this.Remove : Type -&gt; bool" Usage="modelBinderDictionary.Remove key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
@@ -454,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderDictionary.TryGetValue(System.Type,System.Web.ModelBinding.IModelBinder@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As Type, ByRef value As IModelBinder) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(Type ^ key, [Runtime::InteropServices::Out] System::Web::ModelBinding::IModelBinder ^ % value);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : Type *  -&gt; bool&#xA;override this.TryGetValue : Type *  -&gt; bool" Usage="modelBinderDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -481,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderDictionary.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of IModelBinder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Web::ModelBinding::IModelBinder ^&gt; ^ Values { System::Collections::Generic::ICollection&lt;System::Web::ModelBinding::IModelBinder ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.ICollection&lt;System.Web.ModelBinding.IModelBinder&gt;" Usage="System.Web.ModelBinding.ModelBinderDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.Transform" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Transform" />
   <TypeSignature Language="C++ CLI" Value="public ref class Transform abstract" />
+  <TypeSignature Language="F#" Value="type Transform = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.Transform.Algorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property Algorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Algorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Algorithm : string with get, set" Usage="System.Security.Cryptography.Xml.Transform.Algorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.Transform.Context" />
       <MemberSignature Language="VB.NET" Value="Public Property Context As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ Context { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Xml.XmlElement with get, set" Usage="System.Security.Cryptography.Xml.Transform.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.Transform.GetDigestedOutput(System.Security.Cryptography.HashAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDigestedOutput (hash As HashAlgorithm) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetDigestedOutput(System::Security::Cryptography::HashAlgorithm ^ hash);" />
+      <MemberSignature Language="F#" Value="abstract member GetDigestedOutput : System.Security.Cryptography.HashAlgorithm -&gt; byte[]&#xA;override this.GetDigestedOutput : System.Security.Cryptography.HashAlgorithm -&gt; byte[]" Usage="transform.GetDigestedOutput hash" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.Transform.GetInnerXml" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetInnerXml () As XmlNodeList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Xml::XmlNodeList ^ GetInnerXml();" />
+      <MemberSignature Language="F#" Value="abstract member GetInnerXml : unit -&gt; System.Xml.XmlNodeList" Usage="transform.GetInnerXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.Transform.GetOutput" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetOutput () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetOutput();" />
+      <MemberSignature Language="F#" Value="abstract member GetOutput : unit -&gt; obj" Usage="transform.GetOutput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetOutput(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.Transform.GetOutput(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetOutput(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetOutput : Type -&gt; obj" Usage="transform.GetOutput type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.Transform.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="member this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="transform.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.Transform.InputTypes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property InputTypes As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property cli::array &lt;Type ^&gt; ^ InputTypes { cli::array &lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputTypes : Type[]" Usage="System.Security.Cryptography.Xml.Transform.InputTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -346,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.Transform.LoadInnerXml(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub LoadInnerXml (nodeList As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void LoadInnerXml(System::Xml::XmlNodeList ^ nodeList);" />
+      <MemberSignature Language="F#" Value="abstract member LoadInnerXml : System.Xml.XmlNodeList -&gt; unit" Usage="transform.LoadInnerXml nodeList" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -380,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.Transform.LoadInput(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub LoadInput (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void LoadInput(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member LoadInput : obj -&gt; unit" Usage="transform.LoadInput obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -414,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.Transform.OutputTypes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OutputTypes As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property cli::array &lt;Type ^&gt; ^ OutputTypes { cli::array &lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputTypes : Type[]" Usage="System.Security.Cryptography.Xml.Transform.OutputTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -445,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.Transform.PropagatedNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropagatedNamespaces As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Hashtable ^ PropagatedNamespaces { System::Collections::Hashtable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropagatedNamespaces : System.Collections.Hashtable" Usage="System.Security.Cryptography.Xml.Transform.PropagatedNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -486,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.Transform.Resolver" />
       <MemberSignature Language="VB.NET" Value="Public Property Resolver As XmlResolver" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlResolver ^ Resolver {  void set(System::Xml::XmlResolver ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Resolver : System.Xml.XmlResolver" Usage="System.Security.Cryptography.Xml.Transform.Resolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

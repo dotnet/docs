@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.PartBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class PartBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class PartBuilder" />
+  <TypeSignature Language="F#" Value="type PartBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.AddMetadata(System.String,System.Func{System.Type,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMetadata (name As String, itemFunc As Func(Of Type, Object)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ AddMetadata(System::String ^ name, Func&lt;Type ^, System::Object ^&gt; ^ itemFunc);" />
+      <MemberSignature Language="F#" Value="member this.AddMetadata : string * Func&lt;Type, obj&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.AddMetadata (name, itemFunc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.AddMetadata(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMetadata (name As String, value As Object) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ AddMetadata(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddMetadata : string * obj -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.AddMetadata (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.Export" />
       <MemberSignature Language="VB.NET" Value="Public Function Export () As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ Export();" />
+      <MemberSignature Language="F#" Value="member this.Export : unit -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.Export " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.Export(System.Action{System.ComponentModel.Composition.Registration.ExportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function Export (exportConfiguration As Action(Of ExportBuilder)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ Export(Action&lt;System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.Export : Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.Export exportConfiguration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.Export``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Export(Of T) () As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ Export();" />
+      <MemberSignature Language="F#" Value="member this.Export : unit -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.Export " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.Export``1(System.Action{System.ComponentModel.Composition.Registration.ExportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function Export(Of T) (exportConfiguration As Action(Of ExportBuilder)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ Export(Action&lt;System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.Export : Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.Export exportConfiguration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportInterfaces" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces () As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportInterfaces();" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : unit -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportInterfaces " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportInterfaces(System.Predicate{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces (interfaceFilter As Predicate(Of Type)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportInterfaces(Predicate&lt;Type ^&gt; ^ interfaceFilter);" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : Predicate&lt;Type&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportInterfaces interfaceFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportInterfaces(System.Predicate{System.Type},System.Action{System.Type,System.ComponentModel.Composition.Registration.ExportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces (interfaceFilter As Predicate(Of Type), exportConfiguration As Action(Of Type, ExportBuilder)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportInterfaces(Predicate&lt;Type ^&gt; ^ interfaceFilter, Action&lt;Type ^, System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : Predicate&lt;Type&gt; * Action&lt;Type, System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportInterfaces (interfaceFilter, exportConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties(System.Predicate{System.Reflection.PropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperties (propertyFilter As Predicate(Of PropertyInfo)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportProperties propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -324,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ExportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperties (propertyFilter As Predicate(Of PropertyInfo), exportConfiguration As Action(Of PropertyInfo, ExportBuilder)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportProperties (propertyFilter, exportConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties``1(System.Predicate{System.Reflection.PropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportProperties propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -382,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties``1(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ExportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo), exportConfiguration As Action(Of PropertyInfo, ExportBuilder)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportProperties (propertyFilter, exportConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -423,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ImportProperties(System.Predicate{System.Reflection.PropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperties (propertyFilter As Predicate(Of PropertyInfo)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ImportProperties propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -449,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ImportProperties(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ImportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperties (propertyFilter As Predicate(Of PropertyInfo), importConfiguration As Action(Of PropertyInfo, ImportBuilder)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ importConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ImportProperties (propertyFilter, importConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -477,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ImportProperties``1(System.Predicate{System.Reflection.PropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ImportProperties propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -507,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ImportProperties``1(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ImportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo), importConfiguration As Action(Of PropertyInfo, ImportBuilder)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ importConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ImportProperties (propertyFilter, importConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -548,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.SelectConstructor(System.Func{System.Reflection.ConstructorInfo[],System.Reflection.ConstructorInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectConstructor (constructorFilter As Func(Of ConstructorInfo(), ConstructorInfo)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ SelectConstructor(Func&lt;cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^, System::Reflection::ConstructorInfo ^&gt; ^ constructorFilter);" />
+      <MemberSignature Language="F#" Value="member this.SelectConstructor : Func&lt;System.Reflection.ConstructorInfo[], System.Reflection.ConstructorInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.SelectConstructor constructorFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -578,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.SelectConstructor(System.Func{System.Reflection.ConstructorInfo[],System.Reflection.ConstructorInfo},System.Action{System.Reflection.ParameterInfo,System.ComponentModel.Composition.Registration.ImportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectConstructor (constructorFilter As Func(Of ConstructorInfo(), ConstructorInfo), importConfiguration As Action(Of ParameterInfo, ImportBuilder)) As PartBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ SelectConstructor(Func&lt;cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^, System::Reflection::ConstructorInfo ^&gt; ^ constructorFilter, Action&lt;System::Reflection::ParameterInfo ^, System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ importConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.SelectConstructor : Func&lt;System.Reflection.ConstructorInfo[], System.Reflection.ConstructorInfo&gt; * Action&lt;System.Reflection.ParameterInfo, System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.SelectConstructor (constructorFilter, importConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -609,6 +629,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder SetCreationPolicy(valuetype System.ComponentModel.Composition.CreationPolicy creationPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.SetCreationPolicy(System.ComponentModel.Composition.CreationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ SetCreationPolicy(System::ComponentModel::Composition::CreationPolicy creationPolicy);" />
+      <MemberSignature Language="F#" Value="member this.SetCreationPolicy : System.ComponentModel.Composition.CreationPolicy -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.SetCreationPolicy creationPolicy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>

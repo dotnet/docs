@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridLines" />
   <TypeSignature Language="VB.NET" Value="Public Enum GridLines" />
   <TypeSignature Language="C++ CLI" Value="public enum class GridLines" />
+  <TypeSignature Language="F#" Value="type GridLines = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="C++ CLI" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 3" Usage="System.Web.UI.WebControls.GridLines.Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 1" Usage="System.Web.UI.WebControls.GridLines.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.WebControls.GridLines.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Vertical" />
       <MemberSignature Language="VB.NET" Value="Vertical" />
       <MemberSignature Language="C++ CLI" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 2" Usage="System.Web.UI.WebControls.GridLines.Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

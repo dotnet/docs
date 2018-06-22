@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.TypeForwardedToAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeForwardedToAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeForwardedToAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TypeForwardedToAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.TypeForwardedToAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (destination As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeForwardedToAttribute(Type ^ destination);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.TypeForwardedToAttribute : Type -&gt; System.Runtime.CompilerServices.TypeForwardedToAttribute" Usage="new System.Runtime.CompilerServices.TypeForwardedToAttribute destination" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.TypeForwardedToAttribute.Destination" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Destination As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Destination { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Destination : Type" Usage="System.Runtime.CompilerServices.TypeForwardedToAttribute.Destination" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

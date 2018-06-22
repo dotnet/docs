@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.MediaEntryAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MediaEntryAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MediaEntryAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MediaEntryAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.MediaEntryAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mediaMemberName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaEntryAttribute(System::String ^ mediaMemberName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Client.MediaEntryAttribute : string -&gt; System.Data.Services.Client.MediaEntryAttribute" Usage="new System.Data.Services.Client.MediaEntryAttribute mediaMemberName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaMemberName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MediaMemberName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediaMemberName : string" Usage="System.Data.Services.Client.MediaEntryAttribute.MediaMemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

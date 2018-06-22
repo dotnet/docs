@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.VARDESC" />
   <TypeSignature Language="VB.NET" Value="Public Structure VARDESC" />
   <TypeSignature Language="C++ CLI" Value="public value class VARDESC" />
+  <TypeSignature Language="F#" Value="type VARDESC = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.desc" />
       <MemberSignature Language="VB.NET" Value="Public desc As VARDESC.DESCUNION " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::VARDESC::DESCUNION desc;" />
+      <MemberSignature Language="F#" Value="val mutable desc : System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.desc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.elemdescVar" />
       <MemberSignature Language="VB.NET" Value="Public elemdescVar As ELEMDESC " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::ELEMDESC elemdescVar;" />
+      <MemberSignature Language="F#" Value="val mutable elemdescVar : System.Runtime.InteropServices.ComTypes.ELEMDESC" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.elemdescVar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.lpstrSchema" />
       <MemberSignature Language="VB.NET" Value="Public lpstrSchema As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ lpstrSchema;" />
+      <MemberSignature Language="F#" Value="val mutable lpstrSchema : string" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.lpstrSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.memid" />
       <MemberSignature Language="VB.NET" Value="Public memid As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int memid;" />
+      <MemberSignature Language="F#" Value="val mutable memid : int" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.memid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.varkind" />
       <MemberSignature Language="VB.NET" Value="Public varkind As VARKIND " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::VARKIND varkind;" />
+      <MemberSignature Language="F#" Value="val mutable varkind : System.Runtime.InteropServices.ComTypes.VARKIND" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.varkind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.wVarFlags" />
       <MemberSignature Language="VB.NET" Value="Public wVarFlags As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short wVarFlags;" />
+      <MemberSignature Language="F#" Value="val mutable wVarFlags : int16" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.wVarFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.PolicyUnitType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PolicyUnitType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PolicyUnitType" />
+  <TypeSignature Language="F#" Value="type PolicyUnitType = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.PolicyUnitType.Extents" />
       <MemberSignature Language="VB.NET" Value="Extents" />
       <MemberSignature Language="C++ CLI" Value="Extents" />
+      <MemberSignature Language="F#" Value="Extents = 0" Usage="System.IO.Log.PolicyUnitType.Extents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.PolicyUnitType.Percentage" />
       <MemberSignature Language="VB.NET" Value="Percentage" />
       <MemberSignature Language="C++ CLI" Value="Percentage" />
+      <MemberSignature Language="F#" Value="Percentage = 1" Usage="System.IO.Log.PolicyUnitType.Percentage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

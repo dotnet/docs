@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.NamespaceCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamespaceCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamespaceCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type NamespaceCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.Add(System.Web.Configuration.NamespaceInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (namespaceInformation As NamespaceInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::NamespaceInfo ^ namespaceInformation);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.NamespaceInfo -&gt; unit" Usage="namespaceCollection.Add namespaceInformation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.NamespaceCollection.AutoImportVBNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoImportVBNamespace As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoImportVBNamespace { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoImportVBNamespace : bool with get, set" Usage="System.Web.Configuration.NamespaceCollection.AutoImportVBNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="namespaceCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="namespaceCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="namespaceCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.NamespaceCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As NamespaceInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::NamespaceInfo ^ default[int] { System::Web::Configuration::NamespaceInfo ^ get(int index); void set(int index, System::Web::Configuration::NamespaceInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.NamespaceInfo with get, set" Usage="System.Web.Configuration.NamespaceCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.NamespaceCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.NamespaceCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="namespaceCollection.Remove s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="namespaceCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

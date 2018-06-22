@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.RegiisUtility" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegiisUtility&#xA;Implements IRegiisUtility" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegiisUtility sealed : System::Web::Management::IRegiisUtility" />
+  <TypeSignature Language="F#" Value="type RegiisUtility = class&#xA;    interface IRegiisUtility" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.RegiisUtility.ProtectedConfigAction(System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProtectedConfigAction (options As Long, firstArgument As String, secondArgument As String, providerName As String, appPath As String, site As String, cspOrLocation As String, keySize As Integer, ByRef exception As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProtectedConfigAction(long options, System::String ^ firstArgument, System::String ^ secondArgument, System::String ^ providerName, System::String ^ appPath, System::String ^ site, System::String ^ cspOrLocation, int keySize, [Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member ProtectedConfigAction : int64 * string * string * string * string * string * string * int *  -&gt; unit&#xA;override this.ProtectedConfigAction : int64 * string * string * string * string * string * string * int *  -&gt; unit" Usage="regiisUtility.ProtectedConfigAction (options, firstArgument, secondArgument, providerName, appPath, site, cspOrLocation, keySize, exception)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Management.IRegiisUtility.ProtectedConfigAction(System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.IntPtr@)</InterfaceMember>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.RegiisUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterAsnetMmcAssembly (doReg As Integer, typeName As String, binaryDirectory As String, ByRef exception As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterAsnetMmcAssembly(int doReg, System::String ^ typeName, System::String ^ binaryDirectory, [Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit&#xA;override this.RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit" Usage="regiisUtility.RegisterAsnetMmcAssembly (doReg, typeName, binaryDirectory, exception)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Management.IRegiisUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)</InterfaceMember>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.RegiisUtility.RegisterSystemWebAssembly(System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterSystemWebAssembly (doReg As Integer, ByRef exception As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterSystemWebAssembly(int doReg, [Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterSystemWebAssembly : int *  -&gt; unit&#xA;override this.RegisterSystemWebAssembly : int *  -&gt; unit" Usage="regiisUtility.RegisterSystemWebAssembly (doReg, exception)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Management.IRegiisUtility.RegisterSystemWebAssembly(System.Int32,System.IntPtr@)</InterfaceMember>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.RegiisUtility.RemoveBrowserCaps(System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveBrowserCaps (ByRef exception As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveBrowserCaps([Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveBrowserCaps :  -&gt; unit&#xA;override this.RemoveBrowserCaps :  -&gt; unit" Usage="regiisUtility.RemoveBrowserCaps exception" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Management.IRegiisUtility.RemoveBrowserCaps(System.IntPtr@)</InterfaceMember>

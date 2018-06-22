@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewPageEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewPageEventHandler(sender As Object, e As FormViewPageEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FormViewPageEventHandler(System::Object ^ sender, FormViewPageEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FormViewPageEventHandler = delegate of obj * FormViewPageEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

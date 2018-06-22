@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementInstaller" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementInstaller&#xA;Inherits Installer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementInstaller : System::Configuration::Install::Installer" />
+  <TypeSignature Language="F#" Value="type ManagementInstaller = class&#xA;    inherit Installer" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.Commit(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Commit : System.Collections.IDictionary -&gt; unit" Usage="managementInstaller.Commit savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementInstaller.HelpText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HelpText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpText : string" Usage="System.Management.Instrumentation.ManagementInstaller.HelpText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.Install(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Install (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Install(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Install : System.Collections.IDictionary -&gt; unit" Usage="managementInstaller.Install savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.Rollback(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Rollback : System.Collections.IDictionary -&gt; unit" Usage="managementInstaller.Rollback savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementInstaller.Uninstall(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Uninstall (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Uninstall(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.Uninstall : System.Collections.IDictionary -&gt; unit" Usage="managementInstaller.Uninstall savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

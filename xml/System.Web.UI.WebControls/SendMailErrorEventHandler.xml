@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SendMailErrorEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SendMailErrorEventHandler(sender As Object, e As SendMailErrorEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SendMailErrorEventHandler(System::Object ^ sender, SendMailErrorEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SendMailErrorEventHandler = delegate of obj * SendMailErrorEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

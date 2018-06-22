@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SecurityMasks" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityMasks" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityMasks" />
+  <TypeSignature Language="F#" Value="type SecurityMasks = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.Dacl" />
       <MemberSignature Language="VB.NET" Value="Dacl" />
       <MemberSignature Language="C++ CLI" Value="Dacl" />
+      <MemberSignature Language="F#" Value="Dacl = 4" Usage="System.DirectoryServices.SecurityMasks.Dacl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +66,7 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.Group" />
       <MemberSignature Language="VB.NET" Value="Group" />
       <MemberSignature Language="C++ CLI" Value="Group" />
+      <MemberSignature Language="F#" Value="Group = 2" Usage="System.DirectoryServices.SecurityMasks.Group" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +87,7 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.SecurityMasks.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +108,7 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.Owner" />
       <MemberSignature Language="VB.NET" Value="Owner" />
       <MemberSignature Language="C++ CLI" Value="Owner" />
+      <MemberSignature Language="F#" Value="Owner = 1" Usage="System.DirectoryServices.SecurityMasks.Owner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -124,6 +129,7 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.Sacl" />
       <MemberSignature Language="VB.NET" Value="Sacl" />
       <MemberSignature Language="C++ CLI" Value="Sacl" />
+      <MemberSignature Language="F#" Value="Sacl = 8" Usage="System.DirectoryServices.SecurityMasks.Sacl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

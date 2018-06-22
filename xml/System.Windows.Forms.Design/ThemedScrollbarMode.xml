@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ThemedScrollbarMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThemedScrollbarMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ThemedScrollbarMode" />
+  <TypeSignature Language="F#" Value="type ThemedScrollbarMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ThemedScrollbarMode.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1" Usage="System.Windows.Forms.Design.ThemedScrollbarMode.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ThemedScrollbarMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Windows.Forms.Design.ThemedScrollbarMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ThemedScrollbarMode.OnlyTopLevel" />
       <MemberSignature Language="VB.NET" Value="OnlyTopLevel" />
       <MemberSignature Language="C++ CLI" Value="OnlyTopLevel" />
+      <MemberSignature Language="F#" Value="OnlyTopLevel = 3" Usage="System.Windows.Forms.Design.ThemedScrollbarMode.OnlyTopLevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

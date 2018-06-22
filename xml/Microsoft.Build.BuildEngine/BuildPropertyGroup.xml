@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class BuildPropertyGroup&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildPropertyGroup : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type BuildPropertyGroup = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.#ctor(Microsoft.Build.BuildEngine.Project)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parentProject As Project)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildPropertyGroup(Microsoft::Build::BuildEngine::Project ^ parentProject);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.BuildPropertyGroup : Microsoft.Build.BuildEngine.Project -&gt; Microsoft.Build.BuildEngine.BuildPropertyGroup" Usage="new Microsoft.Build.BuildEngine.BuildPropertyGroup parentProject" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.AddNewProperty(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewProperty (propertyName As String, propertyValue As String) As BuildProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildProperty ^ AddNewProperty(System::String ^ propertyName, System::String ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="member this.AddNewProperty : string * string -&gt; Microsoft.Build.BuildEngine.BuildProperty" Usage="buildPropertyGroup.AddNewProperty (propertyName, propertyValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.AddNewProperty(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewProperty (propertyName As String, propertyValue As String, treatPropertyValueAsLiteral As Boolean) As BuildProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildProperty ^ AddNewProperty(System::String ^ propertyName, System::String ^ propertyValue, bool treatPropertyValueAsLiteral);" />
+      <MemberSignature Language="F#" Value="member this.AddNewProperty : string * string * bool -&gt; Microsoft.Build.BuildEngine.BuildProperty" Usage="buildPropertyGroup.AddNewProperty (propertyName, propertyValue, treatPropertyValueAsLiteral)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="buildPropertyGroup.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.Clone(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone (deepClone As Boolean) As BuildPropertyGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildPropertyGroup ^ Clone(bool deepClone);" />
+      <MemberSignature Language="F#" Value="member this.Clone : bool -&gt; Microsoft.Build.BuildEngine.BuildPropertyGroup" Usage="buildPropertyGroup.Clone deepClone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildPropertyGroup.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.BuildEngine.BuildPropertyGroup.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildPropertyGroup.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Build.BuildEngine.BuildPropertyGroup.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="buildPropertyGroup.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -318,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildPropertyGroup.IsImported" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImported : bool" Usage="Microsoft.Build.BuildEngine.BuildPropertyGroup.IsImported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -339,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildPropertyGroup.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(propertyName As String) As BuildProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildProperty ^ default[System::String ^] { Microsoft::Build::BuildEngine::BuildProperty ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, Microsoft::Build::BuildEngine::BuildProperty ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : Microsoft.Build.BuildEngine.BuildProperty with get, set" Usage="Microsoft.Build.BuildEngine.BuildPropertyGroup.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -383,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.RemoveProperty(Microsoft.Build.BuildEngine.BuildProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveProperty (property As BuildProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveProperty(Microsoft::Build::BuildEngine::BuildProperty ^ property);" />
+      <MemberSignature Language="F#" Value="member this.RemoveProperty : Microsoft.Build.BuildEngine.BuildProperty -&gt; unit" Usage="buildPropertyGroup.RemoveProperty property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -416,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.RemoveProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveProperty (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveProperty(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.RemoveProperty : string -&gt; unit" Usage="buildPropertyGroup.RemoveProperty propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -439,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.SetImportedPropertyGroupCondition(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetImportedPropertyGroupCondition (condition As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedPropertyGroupCondition(System::String ^ condition);" />
+      <MemberSignature Language="F#" Value="member this.SetImportedPropertyGroupCondition : string -&gt; unit" Usage="buildPropertyGroup.SetImportedPropertyGroupCondition condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -471,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.SetProperty(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : string * string -&gt; unit" Usage="buildPropertyGroup.SetProperty (propertyName, propertyValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -496,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroup.SetProperty(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String, treatPropertyValueAsLiteral As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue, bool treatPropertyValueAsLiteral);" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : string * string * bool -&gt; unit" Usage="buildPropertyGroup.SetProperty (propertyName, propertyValue, treatPropertyValueAsLiteral)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

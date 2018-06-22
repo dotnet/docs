@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactory" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityTemplateFactory&#xA;Implements IActivityTemplateFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityTemplateFactory abstract : System::Activities::Presentation::IActivityTemplateFactory" />
+  <TypeSignature Language="F#" Value="type ActivityTemplateFactory = class&#xA;    interface IActivityTemplateFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ActivityTemplateFactory.Create(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (target As DependencyObject) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Activities::Activity ^ Create(System::Windows::DependencyObject ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Create : System.Windows.DependencyObject -&gt; System.Activities.Activity&#xA;override this.Create : System.Windows.DependencyObject -&gt; System.Activities.Activity" Usage="activityTemplateFactory.Create target" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.IActivityTemplateFactory.Create(System.Windows.DependencyObject)</InterfaceMember>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactory.Implementation" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property Implementation As Func(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Func&lt;System::Activities::Activity ^&gt; ^ Implementation { Func&lt;System::Activities::Activity ^&gt; ^ get(); void set(Func&lt;System::Activities::Activity ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Implementation : Func&lt;System.Activities.Activity&gt; with get, set" Usage="System.Activities.Presentation.Toolbox.ActivityTemplateFactory.Implementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

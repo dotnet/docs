@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SynchronizedCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Class SynchronizedCollection(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IList, IList(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class SynchronizedCollection : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type SynchronizedCollection&lt;'T&gt; = class&#xA;    interface IList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (syncRoot As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedCollection(System::Object ^ syncRoot);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; : obj -&gt; System.Collections.Generic.SynchronizedCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; syncRoot" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.#ctor(System.Object,System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (syncRoot As Object, list As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedCollection(System::Object ^ syncRoot, System::Collections::Generic::IEnumerable&lt;T&gt; ^ list);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; : obj * seq&lt;'T&gt; -&gt; System.Collections.Generic.SynchronizedCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; (syncRoot, list)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.#ctor(System.Object,`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (syncRoot As Object, ParamArray list As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedCollection(System::Object ^ syncRoot, ... cli::array &lt;T&gt; ^ list);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; : obj * 'T[] -&gt; System.Collections.Generic.SynchronizedCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; (syncRoot, list)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.#ctor(System.Object,System.Collections.Generic.List{`0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (syncRoot As Object, list As List(Of T), makeCopy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedCollection(System::Object ^ syncRoot, System::Collections::Generic::List&lt;T&gt; ^ list, bool makeCopy);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; : obj * System.Collections.Generic.List&lt;'T&gt; * bool -&gt; System.Collections.Generic.SynchronizedCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; (syncRoot, list, makeCopy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; unit&#xA;override this.Add : 'T -&gt; unit" Usage="synchronizedCollection.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="synchronizedCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ClearItems();" />
+      <MemberSignature Language="F#" Value="abstract member ClearItems : unit -&gt; unit&#xA;override this.ClearItems : unit -&gt; unit" Usage="synchronizedCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -298,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="synchronizedCollection.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="synchronizedCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -365,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -393,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;" Usage="synchronizedCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -422,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.IndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(T item);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : 'T -&gt; int&#xA;override this.IndexOf : 'T -&gt; int" Usage="synchronizedCollection.IndexOf item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -455,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.Insert(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, T item);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * 'T -&gt; unit&#xA;override this.Insert : int * 'T -&gt; unit" Usage="synchronizedCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -497,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.InsertItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InsertItem (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InsertItem(int index, T item);" />
+      <MemberSignature Language="F#" Value="abstract member InsertItem : int * 'T -&gt; unit&#xA;override this.InsertItem : int * 'T -&gt; unit" Usage="synchronizedCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -536,6 +551,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T default[int] { T get(int index); void set(int index, T value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'T with get, set" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -569,6 +585,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.Items" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Items As List(Of T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Generic::List&lt;T&gt; ^ Items { System::Collections::Generic::List&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.List&lt;'T&gt;" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -594,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="synchronizedCollection.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -634,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="synchronizedCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
@@ -674,6 +693,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveItem : int -&gt; unit&#xA;override this.RemoveItem : int -&gt; unit" Usage="synchronizedCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -703,6 +723,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.SetItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetItem (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetItem(int index, T item);" />
+      <MemberSignature Language="F#" Value="abstract member SetItem : int * 'T -&gt; unit&#xA;override this.SetItem : int * 'T -&gt; unit" Usage="synchronizedCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -734,6 +755,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -762,6 +784,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -831,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -868,6 +892,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1080,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1117,6 +1143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1154,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SynchronizedCollection`1.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SynchronizedCollection&lt;'T&gt;.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

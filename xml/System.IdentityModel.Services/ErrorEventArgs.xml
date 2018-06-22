@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ErrorEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ErrorEventArgs.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorEventArgs(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.ErrorEventArgs : Exception -&gt; System.IdentityModel.Services.ErrorEventArgs" Usage="new System.IdentityModel.Services.ErrorEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool cancel, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ErrorEventArgs.#ctor(System.Boolean,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorEventArgs(bool cancel, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.ErrorEventArgs : bool * Exception -&gt; System.IdentityModel.Services.ErrorEventArgs" Usage="new System.IdentityModel.Services.ErrorEventArgs (cancel, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.ErrorEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.IdentityModel.Services.ErrorEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.PanelContainerDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class PanelContainerDesigner&#xA;Inherits ContainerControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class PanelContainerDesigner : System::Web::UI::Design::ContainerControlDesigner" />
+  <TypeSignature Language="F#" Value="type PanelContainerDesigner = class&#xA;    inherit ContainerControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.PanelContainerDesigner.AddDesignTimeCssAttributes(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddDesignTimeCssAttributes (styleAttributes As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddDesignTimeCssAttributes(System::Collections::IDictionary ^ styleAttributes);" />
+      <MemberSignature Language="F#" Value="override this.AddDesignTimeCssAttributes : System.Collections.IDictionary -&gt; unit" Usage="panelContainerDesigner.AddDesignTimeCssAttributes styleAttributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.PanelContainerDesigner.FrameCaption" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FrameCaption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FrameCaption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FrameCaption : string" Usage="System.Web.UI.Design.WebControls.PanelContainerDesigner.FrameCaption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.PanelContainerDesigner.FrameStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FrameStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Style ^ FrameStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FrameStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.Design.WebControls.PanelContainerDesigner.FrameStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -201,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.PanelContainerDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="panelContainerDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -248,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.PanelContainerDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.PanelContainerDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

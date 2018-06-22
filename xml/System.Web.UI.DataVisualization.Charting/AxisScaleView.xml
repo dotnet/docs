@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AxisScaleView" />
   <TypeSignature Language="VB.NET" Value="Public Class AxisScaleView" />
   <TypeSignature Language="C++ CLI" Value="public ref class AxisScaleView" />
+  <TypeSignature Language="F#" Value="type AxisScaleView = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AxisScaleView.IsZoomed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsZoomed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsZoomed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsZoomed : bool" Usage="System.Web.UI.DataVisualization.Charting.AxisScaleView.IsZoomed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AxisScaleView.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Position { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : double with get, set" Usage="System.Web.UI.DataVisualization.Charting.AxisScaleView.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AxisScaleView.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Size { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : double with get, set" Usage="System.Web.UI.DataVisualization.Charting.AxisScaleView.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AxisScaleView.SizeType" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeType As DateTimeIntervalType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::DateTimeIntervalType SizeType { System::Web::UI::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Web::UI::DataVisualization::Charting::DateTimeIntervalType value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeType : System.Web.UI.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Web.UI.DataVisualization.Charting.AxisScaleView.SizeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AxisScaleView.ViewMaximum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewMaximum As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewMaximum { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewMaximum : double" Usage="System.Web.UI.DataVisualization.Charting.AxisScaleView.ViewMaximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AxisScaleView.ViewMinimum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewMinimum As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewMinimum { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewMinimum : double" Usage="System.Web.UI.DataVisualization.Charting.AxisScaleView.ViewMinimum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

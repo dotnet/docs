@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.IValueSerializableExpression" />
   <TypeSignature Language="VB.NET" Value="Public Interface IValueSerializableExpression" />
   <TypeSignature Language="C++ CLI" Value="public interface class IValueSerializableExpression" />
+  <TypeSignature Language="F#" Value="type IValueSerializableExpression = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.IValueSerializableExpression.CanConvertToString(System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanConvertToString (context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanConvertToString(System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="iValueSerializableExpression.CanConvertToString context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.IValueSerializableExpression.ConvertToString(System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToString (context As IValueSerializerContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ConvertToString(System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToString : System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="iValueSerializableExpression.ConvertToString context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

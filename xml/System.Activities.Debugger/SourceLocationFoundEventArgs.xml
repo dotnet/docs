@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.SourceLocationFoundEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SourceLocationFoundEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SourceLocationFoundEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type SourceLocationFoundEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object target, class System.Activities.Debugger.SourceLocation sourceLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocationFoundEventArgs.#ctor(System.Object,System.Activities.Debugger.SourceLocation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceLocationFoundEventArgs(System::Object ^ target, System::Activities::Debugger::SourceLocation ^ sourceLocation);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Debugger.SourceLocationFoundEventArgs : obj * System.Activities.Debugger.SourceLocation -&gt; System.Activities.Debugger.SourceLocationFoundEventArgs" Usage="new System.Activities.Debugger.SourceLocationFoundEventArgs (target, sourceLocation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocationFoundEventArgs.SourceLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceLocation As SourceLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Debugger::SourceLocation ^ SourceLocation { System::Activities::Debugger::SourceLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceLocation : System.Activities.Debugger.SourceLocation" Usage="System.Activities.Debugger.SourceLocationFoundEventArgs.SourceLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocationFoundEventArgs.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Target { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : obj" Usage="System.Activities.Debugger.SourceLocationFoundEventArgs.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

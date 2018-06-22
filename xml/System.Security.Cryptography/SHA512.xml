@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SHA512" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SHA512&#xA;Inherits HashAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class SHA512 abstract : System::Security::Cryptography::HashAlgorithm" />
+  <TypeSignature Language="F#" Value="type SHA512 = class&#xA;    inherit HashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA512.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As SHA512" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::SHA512 ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.SHA512" Usage="System.Security.Cryptography.SHA512.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -145,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA512.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (hashName As String) As SHA512" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::SHA512 ^ Create(System::String ^ hashName);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.SHA512" Usage="System.Security.Cryptography.SHA512.Create hashName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

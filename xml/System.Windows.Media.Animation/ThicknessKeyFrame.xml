@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ThicknessKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ThicknessKeyFrame&#xA;Inherits Freezable&#xA;Implements IKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThicknessKeyFrame abstract : System::Windows::Freezable, System::Windows::Media::Animation::IKeyFrame" />
+  <TypeSignature Language="F#" Value="type ThicknessKeyFrame = class&#xA;    inherit Freezable&#xA;    interface IKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessKeyFrame.#ctor(System.Windows.Thickness)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (value As Thickness)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ThicknessKeyFrame(System::Windows::Thickness value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ThicknessKeyFrame : System.Windows.Thickness -&gt; System.Windows.Media.Animation.ThicknessKeyFrame" Usage="new System.Windows.Media.Animation.ThicknessKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Thickness value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessKeyFrame.#ctor(System.Windows.Thickness,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ThicknessKeyFrame(System::Windows::Thickness value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ThicknessKeyFrame : System.Windows.Thickness * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.ThicknessKeyFrame" Usage="new System.Windows.Media.Animation.ThicknessKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessKeyFrame.InterpolateValue(System.Windows.Thickness,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function InterpolateValue (baseValue As Thickness, keyFrameProgress As Double) As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Thickness InterpolateValue(System::Windows::Thickness baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="member this.InterpolateValue : System.Windows.Thickness * double -&gt; System.Windows.Thickness" Usage="thicknessKeyFrame.InterpolateValue (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessKeyFrame.InterpolateValueCore(System.Windows.Thickness,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InterpolateValueCore (baseValue As Thickness, keyFrameProgress As Double) As Thickness" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Thickness InterpolateValueCore(System::Windows::Thickness baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="abstract member InterpolateValueCore : System.Windows.Thickness * double -&gt; System.Windows.Thickness" Usage="thicknessKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessKeyFrame.KeyTime" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTime As KeyTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeyTime KeyTime { System::Windows::Media::Animation::KeyTime get(); void set(System::Windows::Media::Animation::KeyTime value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTime : System.Windows.Media.Animation.KeyTime with get, set" Usage="System.Windows.Media.Animation.ThicknessKeyFrame.KeyTime" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.KeyTime</InterfaceMember>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ThicknessKeyFrame.KeyTimeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTimeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTimeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyTimeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ThicknessKeyFrame.KeyTimeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value" />
       <MemberSignature Language="VB.NET" Value=" Property Value As Object Implements IKeyFrame.Value" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Windows.Media.Animation.IKeyFrame.Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.ThicknessKeyFrame.System.Windows.Media.Animation.IKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.Value</InterfaceMember>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessKeyFrame.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness Value { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Thickness with get, set" Usage="System.Windows.Media.Animation.ThicknessKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ThicknessKeyFrame.ValueProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValueProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ThicknessKeyFrame.ValueProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

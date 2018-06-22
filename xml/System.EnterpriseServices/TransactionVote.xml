@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionVote" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransactionVote" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransactionVote" />
+  <TypeSignature Language="F#" Value="type TransactionVote = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionVote.Abort" />
       <MemberSignature Language="VB.NET" Value="Abort" />
       <MemberSignature Language="C++ CLI" Value="Abort" />
+      <MemberSignature Language="F#" Value="Abort = 1" Usage="System.EnterpriseServices.TransactionVote.Abort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionVote.Commit" />
       <MemberSignature Language="VB.NET" Value="Commit" />
       <MemberSignature Language="C++ CLI" Value="Commit" />
+      <MemberSignature Language="F#" Value="Commit = 0" Usage="System.EnterpriseServices.TransactionVote.Commit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

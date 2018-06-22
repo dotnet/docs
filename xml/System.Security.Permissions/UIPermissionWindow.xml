@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.UIPermissionWindow" />
   <TypeSignature Language="VB.NET" Value="Public Enum UIPermissionWindow" />
   <TypeSignature Language="C++ CLI" Value="public enum class UIPermissionWindow" />
+  <TypeSignature Language="F#" Value="type UIPermissionWindow = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />
       <MemberSignature Language="VB.NET" Value="AllWindows" />
       <MemberSignature Language="C++ CLI" Value="AllWindows" />
+      <MemberSignature Language="F#" Value="AllWindows = 3" Usage="System.Security.Permissions.UIPermissionWindow.AllWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.UIPermissionWindow.NoWindows" />
       <MemberSignature Language="VB.NET" Value="NoWindows" />
       <MemberSignature Language="C++ CLI" Value="NoWindows" />
+      <MemberSignature Language="F#" Value="NoWindows = 0" Usage="System.Security.Permissions.UIPermissionWindow.NoWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />
       <MemberSignature Language="VB.NET" Value="SafeSubWindows" />
       <MemberSignature Language="C++ CLI" Value="SafeSubWindows" />
+      <MemberSignature Language="F#" Value="SafeSubWindows = 1" Usage="System.Security.Permissions.UIPermissionWindow.SafeSubWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" />
       <MemberSignature Language="VB.NET" Value="SafeTopLevelWindows" />
       <MemberSignature Language="C++ CLI" Value="SafeTopLevelWindows" />
+      <MemberSignature Language="F#" Value="SafeTopLevelWindows = 2" Usage="System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

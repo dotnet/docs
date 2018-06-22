@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.CoerceValueCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function CoerceValueCallback(d As DependencyObject, baseValue As Object) As Object " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ CoerceValueCallback(DependencyObject ^ d, System::Object ^ baseValue);" />
+  <TypeSignature Language="F#" Value="type CoerceValueCallback = delegate of DependencyObject * obj -&gt; obj" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

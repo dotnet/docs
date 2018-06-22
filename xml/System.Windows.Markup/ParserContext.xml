@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ParserContext" />
   <TypeSignature Language="VB.NET" Value="Public Class ParserContext&#xA;Implements IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParserContext : System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type ParserContext = class&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlParserContext xmlParserContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ParserContext.#ctor(System.Xml.XmlParserContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ParserContext(System::Xml::XmlParserContext ^ xmlParserContext);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ParserContext : System.Xml.XmlParserContext -&gt; System.Windows.Markup.ParserContext" Usage="new System.Windows.Markup.ParserContext xmlParserContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ParserContext.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Windows.Markup.ParserContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -118,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Xml.XmlParserContext op_Implicit(class System.Windows.Markup.ParserContext parserContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ParserContext.op_Implicit(System.Windows.Markup.ParserContext)~System.Xml.XmlParserContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Xml::XmlParserContext ^(System::Windows::Markup::ParserContext ^ parserContext);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Windows.Markup.ParserContext -&gt; System.Xml.XmlParserContext" Usage="System.Windows.Markup.ParserContext.op_Implicit parserContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlParserContext ToXmlParserContext(class System.Windows.Markup.ParserContext parserContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ParserContext.ToXmlParserContext(System.Windows.Markup.ParserContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlParserContext ^ ToXmlParserContext(System::Windows::Markup::ParserContext ^ parserContext);" />
+      <MemberSignature Language="F#" Value="static member ToXmlParserContext : System.Windows.Markup.ParserContext -&gt; System.Xml.XmlParserContext" Usage="System.Windows.Markup.ParserContext.ToXmlParserContext parserContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ParserContext.XamlTypeMapper" />
       <MemberSignature Language="VB.NET" Value="Public Property XamlTypeMapper As XamlTypeMapper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::XamlTypeMapper ^ XamlTypeMapper { System::Windows::Markup::XamlTypeMapper ^ get(); void set(System::Windows::Markup::XamlTypeMapper ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XamlTypeMapper : System.Windows.Markup.XamlTypeMapper with get, set" Usage="System.Windows.Markup.ParserContext.XamlTypeMapper" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ParserContext.XmlLang" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlLang As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlLang { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlLang : string with get, set" Usage="System.Windows.Markup.ParserContext.XmlLang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ParserContext.XmlnsDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlnsDictionary As XmlnsDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::XmlnsDictionary ^ XmlnsDictionary { System::Windows::Markup::XmlnsDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlnsDictionary : System.Windows.Markup.XmlnsDictionary" Usage="System.Windows.Markup.ParserContext.XmlnsDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ParserContext.XmlSpace" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlSpace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSpace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSpace : string with get, set" Usage="System.Windows.Markup.ParserContext.XmlSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

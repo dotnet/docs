@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataAdapter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbDataAdapter&#xA;Inherits DataAdapter&#xA;Implements ICloneable, IDbDataAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbDataAdapter abstract : System::Data::Common::DataAdapter, ICloneable, System::Data::IDbDataAdapter" />
+  <TypeSignature Language="F#" Value="type DbDataAdapter = class&#xA;    inherit DataAdapter&#xA;    interface IDbDataAdapter&#xA;    interface ICloneable&#xA;    interface IDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -133,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.#ctor(System.Data.Common.DbDataAdapter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (adapter As DbDataAdapter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DbDataAdapter(System::Data::Common::DbDataAdapter ^ adapter);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DbDataAdapter : System.Data.Common.DbDataAdapter -&gt; System.Data.Common.DbDataAdapter" Usage="new System.Data.Common.DbDataAdapter adapter" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -170,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.AddToBatch(System.Data.IDbCommand)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function AddToBatch (command As IDbCommand) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int AddToBatch(System::Data::IDbCommand ^ command);" />
+      <MemberSignature Language="F#" Value="abstract member AddToBatch : System.Data.IDbCommand -&gt; int&#xA;override this.AddToBatch : System.Data.IDbCommand -&gt; int" Usage="dbDataAdapter.AddToBatch command" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -217,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.ClearBatch" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ClearBatch ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ClearBatch();" />
+      <MemberSignature Language="F#" Value="abstract member ClearBatch : unit -&gt; unit&#xA;override this.ClearBatch : unit -&gt; unit" Usage="dbDataAdapter.ClearBatch " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -259,6 +263,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.RowUpdatedEventArgs CreateRowUpdatedEvent(class System.Data.DataRow dataRow, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.CreateRowUpdatedEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::RowUpdatedEventArgs ^ CreateRowUpdatedEvent(System::Data::DataRow ^ dataRow, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
+      <MemberSignature Language="F#" Value="abstract member CreateRowUpdatedEvent : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.Common.RowUpdatedEventArgs&#xA;override this.CreateRowUpdatedEvent : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.Common.RowUpdatedEventArgs" Usage="dbDataAdapter.CreateRowUpdatedEvent (dataRow, command, statementType, tableMapping)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -301,6 +306,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.RowUpdatingEventArgs CreateRowUpdatingEvent(class System.Data.DataRow dataRow, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.CreateRowUpdatingEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::RowUpdatingEventArgs ^ CreateRowUpdatingEvent(System::Data::DataRow ^ dataRow, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
+      <MemberSignature Language="F#" Value="abstract member CreateRowUpdatingEvent : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.Common.RowUpdatingEventArgs&#xA;override this.CreateRowUpdatingEvent : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.Common.RowUpdatingEventArgs" Usage="dbDataAdapter.CreateRowUpdatingEvent (dataRow, command, statementType, tableMapping)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -344,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbDataAdapter.DefaultSourceTableName" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultSourceTableName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultSourceTableName;" />
+      <MemberSignature Language="F#" Value="val mutable DefaultSourceTableName : string" Usage="System.Data.Common.DbDataAdapter.DefaultSourceTableName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -382,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.DeleteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property DeleteCommand As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbCommand ^ DeleteCommand { System::Data::Common::DbCommand ^ get(); void set(System::Data::Common::DbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteCommand : System.Data.Common.DbCommand with get, set" Usage="System.Data.Common.DbDataAdapter.DeleteCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -435,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dbDataAdapter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -469,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.ExecuteBatch" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ExecuteBatch () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int ExecuteBatch();" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteBatch : unit -&gt; int&#xA;override this.ExecuteBatch : unit -&gt; int" Usage="dbDataAdapter.ExecuteBatch " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -521,6 +531,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Fill(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Fill(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataSet -&gt; int" Usage="dbDataAdapter.Fill dataSet" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.Fill(System.Data.DataSet)</InterfaceMember>
@@ -587,6 +598,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Fill(class System.Data.DataTable dataTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Fill(System::Data::DataTable ^ dataTable);" />
+      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataTable -&gt; int" Usage="dbDataAdapter.Fill dataTable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -662,6 +674,7 @@ DataSet dataset = new DataSet();
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Fill(class System.Data.DataSet dataSet, string srcTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Fill(System::Data::DataSet ^ dataSet, System::String ^ srcTable);" />
+      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataSet * string -&gt; int" Usage="dbDataAdapter.Fill (dataSet, srcTable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -757,6 +770,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataTable dataTable, class System.Data.IDbCommand command, valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable,System.Data.IDbCommand,System.Data.CommandBehavior)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataTable ^ dataTable, System::Data::IDbCommand ^ command, System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataTable * System.Data.IDbCommand * System.Data.CommandBehavior -&gt; int" Usage="dbDataAdapter.Fill (dataTable, command, behavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -818,6 +832,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Int32,System.Int32,System.Data.DataTable[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Fill (startRecord As Integer, maxRecords As Integer, ParamArray dataTables As DataTable()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Fill(int startRecord, int maxRecords, ... cli::array &lt;System::Data::DataTable ^&gt; ^ dataTables);" />
+      <MemberSignature Language="F#" Value="override this.Fill : int * int * System.Data.DataTable[] -&gt; int" Usage="dbDataAdapter.Fill (startRecord, maxRecords, dataTables)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -881,6 +896,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Fill(class System.Data.DataSet dataSet, int32 startRecord, int32 maxRecords, string srcTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet,System.Int32,System.Int32,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Fill(System::Data::DataSet ^ dataSet, int startRecord, int maxRecords, System::String ^ srcTable);" />
+      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataSet * int * int * string -&gt; int" Usage="dbDataAdapter.Fill (dataSet, startRecord, maxRecords, srcTable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1003,6 +1019,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable[],System.Int32,System.Int32,System.Data.IDbCommand,System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Fill (dataTables As DataTable(), startRecord As Integer, maxRecords As Integer, command As IDbCommand, behavior As CommandBehavior) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(cli::array &lt;System::Data::DataTable ^&gt; ^ dataTables, int startRecord, int maxRecords, System::Data::IDbCommand ^ command, System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataTable[] * int * int * System.Data.IDbCommand * System.Data.CommandBehavior -&gt; int" Usage="dbDataAdapter.Fill (dataTables, startRecord, maxRecords, command, behavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1103,6 +1120,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet, int32 startRecord, int32 maxRecords, string srcTable, class System.Data.IDbCommand command, valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet,System.Int32,System.Int32,System.String,System.Data.IDbCommand,System.Data.CommandBehavior)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataSet ^ dataSet, int startRecord, int maxRecords, System::String ^ srcTable, System::Data::IDbCommand ^ command, System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataSet * int * int * string * System.Data.IDbCommand * System.Data.CommandBehavior -&gt; int" Usage="dbDataAdapter.Fill (dataSet, startRecord, maxRecords, srcTable, command, behavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1192,6 +1210,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.FillCommandBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property FillCommandBehavior As CommandBehavior" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Data::CommandBehavior FillCommandBehavior { System::Data::CommandBehavior get(); void set(System::Data::CommandBehavior value); };" />
+      <MemberSignature Language="F#" Value="member this.FillCommandBehavior : System.Data.CommandBehavior with get, set" Usage="System.Data.Common.DbDataAdapter.FillCommandBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1231,6 +1250,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType);" />
+      <MemberSignature Language="F#" Value="override this.FillSchema : System.Data.DataSet * System.Data.SchemaType -&gt; System.Data.DataTable[]" Usage="dbDataAdapter.FillSchema (dataSet, schemaType)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)</InterfaceMember>
@@ -1319,6 +1339,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable FillSchema(class System.Data.DataTable dataTable, valuetype System.Data.SchemaType schemaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.FillSchema(System.Data.DataTable,System.Data.SchemaType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ FillSchema(System::Data::DataTable ^ dataTable, System::Data::SchemaType schemaType);" />
+      <MemberSignature Language="F#" Value="override this.FillSchema : System.Data.DataTable * System.Data.SchemaType -&gt; System.Data.DataTable" Usage="dbDataAdapter.FillSchema (dataTable, schemaType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1404,6 +1425,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType, string srcTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType, System::String ^ srcTable);" />
+      <MemberSignature Language="F#" Value="override this.FillSchema : System.Data.DataSet * System.Data.SchemaType * string -&gt; System.Data.DataTable[]" Usage="dbDataAdapter.FillSchema (dataSet, schemaType, srcTable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1510,6 +1532,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.DataTable FillSchema(class System.Data.DataTable dataTable, valuetype System.Data.SchemaType schemaType, class System.Data.IDbCommand command, valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.FillSchema(System.Data.DataTable,System.Data.SchemaType,System.Data.IDbCommand,System.Data.CommandBehavior)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::DataTable ^ FillSchema(System::Data::DataTable ^ dataTable, System::Data::SchemaType schemaType, System::Data::IDbCommand ^ command, System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="override this.FillSchema : System.Data.DataTable * System.Data.SchemaType * System.Data.IDbCommand * System.Data.CommandBehavior -&gt; System.Data.DataTable" Usage="dbDataAdapter.FillSchema (dataTable, schemaType, command, behavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1592,6 +1615,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType, class System.Data.IDbCommand command, string srcTable, valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType,System.Data.IDbCommand,System.String,System.Data.CommandBehavior)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType, System::Data::IDbCommand ^ command, System::String ^ srcTable, System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="override this.FillSchema : System.Data.DataSet * System.Data.SchemaType * System.Data.IDbCommand * string * System.Data.CommandBehavior -&gt; System.Data.DataTable[]" Usage="dbDataAdapter.FillSchema (dataSet, schemaType, command, srcTable, behavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1695,6 +1719,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.GetBatchedParameter(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetBatchedParameter (commandIdentifier As Integer, parameterIndex As Integer) As IDataParameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::IDataParameter ^ GetBatchedParameter(int commandIdentifier, int parameterIndex);" />
+      <MemberSignature Language="F#" Value="abstract member GetBatchedParameter : int * int -&gt; System.Data.IDataParameter&#xA;override this.GetBatchedParameter : int * int -&gt; System.Data.IDataParameter" Usage="dbDataAdapter.GetBatchedParameter (commandIdentifier, parameterIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1744,6 +1769,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.GetBatchedRecordsAffected(System.Int32,System.Int32@,System.Exception@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetBatchedRecordsAffected (commandIdentifier As Integer, ByRef recordsAffected As Integer, ByRef error As Exception) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool GetBatchedRecordsAffected(int commandIdentifier, [Runtime::InteropServices::Out] int % recordsAffected, [Runtime::InteropServices::Out] Exception ^ % error);" />
+      <MemberSignature Language="F#" Value="abstract member GetBatchedRecordsAffected : int *  *  -&gt; bool&#xA;override this.GetBatchedRecordsAffected : int *  *  -&gt; bool" Usage="dbDataAdapter.GetBatchedRecordsAffected (commandIdentifier, recordsAffected, error)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1789,6 +1815,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.GetFillParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFillParameters () As IDataParameter()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Data::IDataParameter ^&gt; ^ GetFillParameters();" />
+      <MemberSignature Language="F#" Value="override this.GetFillParameters : unit -&gt; System.Data.IDataParameter[]" Usage="dbDataAdapter.GetFillParameters " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.GetFillParameters</InterfaceMember>
@@ -1828,6 +1855,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.InitializeBatching" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeBatching ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeBatching();" />
+      <MemberSignature Language="F#" Value="abstract member InitializeBatching : unit -&gt; unit&#xA;override this.InitializeBatching : unit -&gt; unit" Usage="dbDataAdapter.InitializeBatching " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1871,6 +1899,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.InsertCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertCommand As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbCommand ^ InsertCommand { System::Data::Common::DbCommand ^ get(); void set(System::Data::Common::DbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertCommand : System.Data.Common.DbCommand with get, set" Usage="System.Data.Common.DbDataAdapter.InsertCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1924,6 +1953,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.OnRowUpdated(System.Data.Common.RowUpdatedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowUpdated (value As RowUpdatedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowUpdated(System::Data::Common::RowUpdatedEventArgs ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowUpdated : System.Data.Common.RowUpdatedEventArgs -&gt; unit&#xA;override this.OnRowUpdated : System.Data.Common.RowUpdatedEventArgs -&gt; unit" Usage="dbDataAdapter.OnRowUpdated value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1967,6 +1997,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.OnRowUpdating(System.Data.Common.RowUpdatingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowUpdating (value As RowUpdatingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowUpdating(System::Data::Common::RowUpdatingEventArgs ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowUpdating : System.Data.Common.RowUpdatingEventArgs -&gt; unit&#xA;override this.OnRowUpdating : System.Data.Common.RowUpdatingEventArgs -&gt; unit" Usage="dbDataAdapter.OnRowUpdating value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2010,6 +2041,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.SelectCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectCommand As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbCommand ^ SelectCommand { System::Data::Common::DbCommand ^ get(); void set(System::Data::Common::DbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectCommand : System.Data.Common.DbCommand with get, set" Usage="System.Data.Common.DbDataAdapter.SelectCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2058,6 +2090,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.System#Data#IDbDataAdapter#DeleteCommand" />
       <MemberSignature Language="VB.NET" Value=" Property DeleteCommand As IDbCommand Implements IDbDataAdapter.DeleteCommand" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.DeleteCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DbDataAdapter.System.Data.IDbDataAdapter.DeleteCommand" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataAdapter.DeleteCommand</InterfaceMember>
@@ -2100,6 +2133,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.System#Data#IDbDataAdapter#InsertCommand" />
       <MemberSignature Language="VB.NET" Value=" Property InsertCommand As IDbCommand Implements IDbDataAdapter.InsertCommand" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.InsertCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DbDataAdapter.System.Data.IDbDataAdapter.InsertCommand" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataAdapter.InsertCommand</InterfaceMember>
@@ -2142,6 +2176,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.System#Data#IDbDataAdapter#SelectCommand" />
       <MemberSignature Language="VB.NET" Value=" Property SelectCommand As IDbCommand Implements IDbDataAdapter.SelectCommand" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.SelectCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DbDataAdapter.System.Data.IDbDataAdapter.SelectCommand" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataAdapter.SelectCommand</InterfaceMember>
@@ -2184,6 +2219,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.System#Data#IDbDataAdapter#UpdateCommand" />
       <MemberSignature Language="VB.NET" Value=" Property UpdateCommand As IDbCommand Implements IDbDataAdapter.UpdateCommand" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.UpdateCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DbDataAdapter.System.Data.IDbDataAdapter.UpdateCommand" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataAdapter.UpdateCommand</InterfaceMember>
@@ -2269,6 +2305,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.TerminateBatching" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TerminateBatching ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TerminateBatching();" />
+      <MemberSignature Language="F#" Value="abstract member TerminateBatching : unit -&gt; unit&#xA;override this.TerminateBatching : unit -&gt; unit" Usage="dbDataAdapter.TerminateBatching " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2322,6 +2359,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataRow[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (dataRows As DataRow()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update(cli::array &lt;System::Data::DataRow ^&gt; ^ dataRows);" />
+      <MemberSignature Language="F#" Value="override this.Update : System.Data.DataRow[] -&gt; int" Usage="dbDataAdapter.Update dataRows" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2423,6 +2461,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Update(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Update(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="override this.Update : System.Data.DataSet -&gt; int" Usage="dbDataAdapter.Update dataSet" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.Update(System.Data.DataSet)</InterfaceMember>
@@ -2517,6 +2556,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Update(class System.Data.DataTable dataTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update(System::Data::DataTable ^ dataTable);" />
+      <MemberSignature Language="F#" Value="override this.Update : System.Data.DataTable -&gt; int" Usage="dbDataAdapter.Update dataTable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2619,6 +2659,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataRow[],System.Data.Common.DataTableMapping)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Update (dataRows As DataRow(), tableMapping As DataTableMapping) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Update(cli::array &lt;System::Data::DataRow ^&gt; ^ dataRows, System::Data::Common::DataTableMapping ^ tableMapping);" />
+      <MemberSignature Language="F#" Value="override this.Update : System.Data.DataRow[] * System.Data.Common.DataTableMapping -&gt; int" Usage="dbDataAdapter.Update (dataRows, tableMapping)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2714,6 +2755,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Update(class System.Data.DataSet dataSet, string srcTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update(System::Data::DataSet ^ dataSet, System::String ^ srcTable);" />
+      <MemberSignature Language="F#" Value="override this.Update : System.Data.DataSet * string -&gt; int" Usage="dbDataAdapter.Update (dataSet, srcTable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2828,6 +2870,7 @@ DataSet dataset = new DataSet();
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.UpdateBatchSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UpdateBatchSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int UpdateBatchSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateBatchSize : int with get, set" Usage="System.Data.Common.DbDataAdapter.UpdateBatchSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2894,6 +2937,7 @@ DataSet dataset = new DataSet();
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataAdapter.UpdateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateCommand As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbCommand ^ UpdateCommand { System::Data::Common::DbCommand ^ get(); void set(System::Data::Common::DbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateCommand : System.Data.Common.DbCommand with get, set" Usage="System.Data.Common.DbDataAdapter.UpdateCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

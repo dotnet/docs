@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncOperation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncOperation" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncOperation sealed" />
+  <TypeSignature Language="F#" Value="type AsyncOperation = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperation.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!AsyncOperation ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="asyncOperation.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperation.OperationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Sub OperationCompleted ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OperationCompleted();" />
+      <MemberSignature Language="F#" Value="member this.OperationCompleted : unit -&gt; unit" Usage="asyncOperation.OperationCompleted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperation.Post(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Post (d As SendOrPostCallback, arg As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Post(System::Threading::SendOrPostCallback ^ d, System::Object ^ arg);" />
+      <MemberSignature Language="F#" Value="member this.Post : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="asyncOperation.Post (d, arg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperation.PostOperationCompleted(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PostOperationCompleted (d As SendOrPostCallback, arg As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PostOperationCompleted(System::Threading::SendOrPostCallback ^ d, System::Object ^ arg);" />
+      <MemberSignature Language="F#" Value="member this.PostOperationCompleted : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="asyncOperation.PostOperationCompleted (d, arg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -270,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AsyncOperation.SynchronizationContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SynchronizationContext As SynchronizationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::SynchronizationContext ^ SynchronizationContext { System::Threading::SynchronizationContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SynchronizationContext : System.Threading.SynchronizationContext" Usage="System.ComponentModel.AsyncOperation.SynchronizationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -301,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AsyncOperation.UserSuppliedState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserSuppliedState As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserSuppliedState { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserSuppliedState : obj" Usage="System.ComponentModel.AsyncOperation.UserSuppliedState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

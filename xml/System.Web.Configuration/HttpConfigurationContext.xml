@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpConfigurationContext" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpConfigurationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpConfigurationContext" />
+  <TypeSignature Language="F#" Value="type HttpConfigurationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpConfigurationContext.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string" Usage="System.Web.Configuration.HttpConfigurationContext.VirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

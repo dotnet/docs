@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MergeFailedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class MergeFailedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class MergeFailedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type MergeFailedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.MergeFailedEventArgs.#ctor(System.Data.DataTable,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (table As DataTable, conflict As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MergeFailedEventArgs(System::Data::DataTable ^ table, System::String ^ conflict);" />
+      <MemberSignature Language="F#" Value="new System.Data.MergeFailedEventArgs : System.Data.DataTable * string -&gt; System.Data.MergeFailedEventArgs" Usage="new System.Data.MergeFailedEventArgs (table, conflict)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.MergeFailedEventArgs.Conflict" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Conflict As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Conflict { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Conflict : string" Usage="System.Data.MergeFailedEventArgs.Conflict" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.MergeFailedEventArgs.Table" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Data.DataTable" Usage="System.Data.MergeFailedEventArgs.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

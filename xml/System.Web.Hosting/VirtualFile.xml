@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.VirtualFile" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class VirtualFile&#xA;Inherits VirtualFileBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class VirtualFile abstract : System::Web::Hosting::VirtualFileBase" />
+  <TypeSignature Language="F#" Value="type VirtualFile = class&#xA;    inherit VirtualFileBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualFile.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (virtualPath As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; VirtualFile(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="new System.Web.Hosting.VirtualFile : string -&gt; System.Web.Hosting.VirtualFile" Usage="new System.Web.Hosting.VirtualFile virtualPath" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualFile.IsDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDirectory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDirectory { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirectory : bool" Usage="System.Web.Hosting.VirtualFile.IsDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualFile.Open" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Open () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::Stream ^ Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; System.IO.Stream" Usage="virtualFile.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReferenceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptReferenceCollection&#xA;Inherits Collection(Of ScriptReference)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptReferenceCollection : System::Collections::ObjectModel::Collection&lt;System::Web::UI::ScriptReference ^&gt;" />
+  <TypeSignature Language="F#" Value="type ScriptReferenceCollection = class&#xA;    inherit Collection&lt;ScriptReference&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

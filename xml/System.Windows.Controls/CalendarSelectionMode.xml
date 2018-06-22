@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CalendarSelectionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CalendarSelectionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CalendarSelectionMode" />
+  <TypeSignature Language="F#" Value="type CalendarSelectionMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarSelectionMode.MultipleRange" />
       <MemberSignature Language="VB.NET" Value="MultipleRange" />
       <MemberSignature Language="C++ CLI" Value="MultipleRange" />
+      <MemberSignature Language="F#" Value="MultipleRange = 2" Usage="System.Windows.Controls.CalendarSelectionMode.MultipleRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarSelectionMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 3" Usage="System.Windows.Controls.CalendarSelectionMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarSelectionMode.SingleDate" />
       <MemberSignature Language="VB.NET" Value="SingleDate" />
       <MemberSignature Language="C++ CLI" Value="SingleDate" />
+      <MemberSignature Language="F#" Value="SingleDate = 0" Usage="System.Windows.Controls.CalendarSelectionMode.SingleDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarSelectionMode.SingleRange" />
       <MemberSignature Language="VB.NET" Value="SingleRange" />
       <MemberSignature Language="C++ CLI" Value="SingleRange" />
+      <MemberSignature Language="F#" Value="SingleRange = 1" Usage="System.Windows.Controls.CalendarSelectionMode.SingleRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

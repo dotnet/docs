@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowCompilationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowCompilationContext sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowCompilationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.CheckTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckTypes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckTypes : bool" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.CheckTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.CreateScope(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScope (serviceProvider As IServiceProvider) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IDisposable ^ CreateScope(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="static member CreateScope : IServiceProvider -&gt; IDisposable" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.CreateScope serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As WorkflowCompilationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Workflow::ComponentModel::Compiler::WorkflowCompilationContext ^ Current { System::Workflow::ComponentModel::Compiler::WorkflowCompilationContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.GetAuthorizedTypes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAuthorizedTypes () As IList(Of AuthorizedType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::Compiler::AuthorizedType ^&gt; ^ GetAuthorizedTypes();" />
+      <MemberSignature Language="F#" Value="member this.GetAuthorizedTypes : unit -&gt; System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Compiler.AuthorizedType&gt;" Usage="workflowCompilationContext.GetAuthorizedTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.RootNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

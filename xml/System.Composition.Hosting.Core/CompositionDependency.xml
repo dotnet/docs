@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.CompositionDependency" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositionDependency" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionDependency" />
+  <TypeSignature Language="F#" Value="type CompositionDependency = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Hosting</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionDependency.Contract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contract As CompositionContract" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Composition::Hosting::Core::CompositionContract ^ Contract { System::Composition::Hosting::Core::CompositionContract ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Contract : System.Composition.Hosting.Core.CompositionContract" Usage="System.Composition.Hosting.Core.CompositionDependency.Contract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionDependency.IsPrerequisite" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrerequisite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrerequisite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPrerequisite : bool" Usage="System.Composition.Hosting.Core.CompositionDependency.IsPrerequisite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionDependency.Missing(System.Composition.Hosting.Core.CompositionContract,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Missing (contract As CompositionContract, site As Object) As CompositionDependency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Composition::Hosting::Core::CompositionDependency ^ Missing(System::Composition::Hosting::Core::CompositionContract ^ contract, System::Object ^ site);" />
+      <MemberSignature Language="F#" Value="static member Missing : System.Composition.Hosting.Core.CompositionContract * obj -&gt; System.Composition.Hosting.Core.CompositionDependency" Usage="System.Composition.Hosting.Core.CompositionDependency.Missing (contract, site)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionDependency.Oversupplied(System.Composition.Hosting.Core.CompositionContract,System.Collections.Generic.IEnumerable{System.Composition.Hosting.Core.ExportDescriptorPromise},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Oversupplied (contract As CompositionContract, targets As IEnumerable(Of ExportDescriptorPromise), site As Object) As CompositionDependency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Composition::Hosting::Core::CompositionDependency ^ Oversupplied(System::Composition::Hosting::Core::CompositionContract ^ contract, System::Collections::Generic::IEnumerable&lt;System::Composition::Hosting::Core::ExportDescriptorPromise ^&gt; ^ targets, System::Object ^ site);" />
+      <MemberSignature Language="F#" Value="static member Oversupplied : System.Composition.Hosting.Core.CompositionContract * seq&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt; * obj -&gt; System.Composition.Hosting.Core.CompositionDependency" Usage="System.Composition.Hosting.Core.CompositionDependency.Oversupplied (contract, targets, site)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionDependency.Satisfied(System.Composition.Hosting.Core.CompositionContract,System.Composition.Hosting.Core.ExportDescriptorPromise,System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Satisfied (contract As CompositionContract, target As ExportDescriptorPromise, isPrerequisite As Boolean, site As Object) As CompositionDependency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Composition::Hosting::Core::CompositionDependency ^ Satisfied(System::Composition::Hosting::Core::CompositionContract ^ contract, System::Composition::Hosting::Core::ExportDescriptorPromise ^ target, bool isPrerequisite, System::Object ^ site);" />
+      <MemberSignature Language="F#" Value="static member Satisfied : System.Composition.Hosting.Core.CompositionContract * System.Composition.Hosting.Core.ExportDescriptorPromise * bool * obj -&gt; System.Composition.Hosting.Core.CompositionDependency" Usage="System.Composition.Hosting.Core.CompositionDependency.Satisfied (contract, target, isPrerequisite, site)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionDependency.Site" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Site As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Site { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Site : obj" Usage="System.Composition.Hosting.Core.CompositionDependency.Site" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -183,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionDependency.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As ExportDescriptorPromise" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Composition::Hosting::Core::ExportDescriptorPromise ^ Target { System::Composition::Hosting::Core::ExportDescriptorPromise ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Composition.Hosting.Core.ExportDescriptorPromise" Usage="System.Composition.Hosting.Core.CompositionDependency.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -204,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionDependency.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="compositionDependency.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>

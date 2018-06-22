@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyPropertyKey" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DependencyPropertyKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class DependencyPropertyKey sealed" />
+  <TypeSignature Language="F#" Value="type DependencyPropertyKey = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyPropertyKey.DependencyProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependencyProperty As DependencyProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ DependencyProperty { System::Windows::DependencyProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DependencyProperty : System.Windows.DependencyProperty" Usage="System.Windows.DependencyPropertyKey.DependencyProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyKey.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OverrideMetadata (forType As Type, typeMetadata As PropertyMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OverrideMetadata(Type ^ forType, System::Windows::PropertyMetadata ^ typeMetadata);" />
+      <MemberSignature Language="F#" Value="member this.OverrideMetadata : Type * System.Windows.PropertyMetadata -&gt; unit" Usage="dependencyPropertyKey.OverrideMetadata (forType, typeMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

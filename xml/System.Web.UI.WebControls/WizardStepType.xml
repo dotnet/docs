@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardStepType" />
   <TypeSignature Language="VB.NET" Value="Public Enum WizardStepType" />
   <TypeSignature Language="C++ CLI" Value="public enum class WizardStepType" />
+  <TypeSignature Language="F#" Value="type WizardStepType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Web.UI.WebControls.WizardStepType.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Complete" />
       <MemberSignature Language="VB.NET" Value="Complete" />
       <MemberSignature Language="C++ CLI" Value="Complete" />
+      <MemberSignature Language="F#" Value="Complete = 1" Usage="System.Web.UI.WebControls.WizardStepType.Complete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Finish" />
       <MemberSignature Language="VB.NET" Value="Finish" />
       <MemberSignature Language="C++ CLI" Value="Finish" />
+      <MemberSignature Language="F#" Value="Finish = 2" Usage="System.Web.UI.WebControls.WizardStepType.Finish" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Start" />
       <MemberSignature Language="VB.NET" Value="Start" />
       <MemberSignature Language="C++ CLI" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 3" Usage="System.Web.UI.WebControls.WizardStepType.Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Step" />
       <MemberSignature Language="VB.NET" Value="Step" />
       <MemberSignature Language="C++ CLI" Value="Step" />
+      <MemberSignature Language="F#" Value="Step = 4" Usage="System.Web.UI.WebControls.WizardStepType.Step" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

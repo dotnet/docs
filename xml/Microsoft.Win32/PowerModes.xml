@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.PowerModes" />
   <TypeSignature Language="VB.NET" Value="Public Enum PowerModes" />
   <TypeSignature Language="C++ CLI" Value="public enum class PowerModes" />
+  <TypeSignature Language="F#" Value="type PowerModes = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.PowerModes.Resume" />
       <MemberSignature Language="VB.NET" Value="Resume" />
       <MemberSignature Language="C++ CLI" Value="Resume" />
+      <MemberSignature Language="F#" Value="Resume = 1" Usage="Microsoft.Win32.PowerModes.Resume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.PowerModes.StatusChange" />
       <MemberSignature Language="VB.NET" Value="StatusChange" />
       <MemberSignature Language="C++ CLI" Value="StatusChange" />
+      <MemberSignature Language="F#" Value="StatusChange = 2" Usage="Microsoft.Win32.PowerModes.StatusChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.PowerModes.Suspend" />
       <MemberSignature Language="VB.NET" Value="Suspend" />
       <MemberSignature Language="C++ CLI" Value="Suspend" />
+      <MemberSignature Language="F#" Value="Suspend = 3" Usage="Microsoft.Win32.PowerModes.Suspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

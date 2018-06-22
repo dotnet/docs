@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.FindResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class FindResponse" />
   <TypeSignature Language="C++ CLI" Value="public ref class FindResponse" />
+  <TypeSignature Language="F#" Value="type FindResponse = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindResponse.Endpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As Collection(Of EndpointDiscoveryMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^&gt; ^ Endpoints { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoints : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;" Usage="System.ServiceModel.Discovery.FindResponse.Endpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Discovery.DiscoveryMessageSequence GetMessageSequence(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindResponse.GetMessageSequence(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Discovery::DiscoveryMessageSequence ^ GetMessageSequence(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ endpointDiscoveryMetadata);" />
+      <MemberSignature Language="F#" Value="member this.GetMessageSequence : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; System.ServiceModel.Discovery.DiscoveryMessageSequence" Usage="findResponse.GetMessageSequence endpointDiscoveryMetadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

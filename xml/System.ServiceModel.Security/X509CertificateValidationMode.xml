@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.X509CertificateValidationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum X509CertificateValidationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class X509CertificateValidationMode" />
+  <TypeSignature Language="F#" Value="type X509CertificateValidationMode = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust" />
       <MemberSignature Language="VB.NET" Value="ChainTrust" />
       <MemberSignature Language="C++ CLI" Value="ChainTrust" />
+      <MemberSignature Language="F#" Value="ChainTrust = 2" Usage="System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 4" Usage="System.ServiceModel.Security.X509CertificateValidationMode.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.Security.X509CertificateValidationMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust" />
       <MemberSignature Language="VB.NET" Value="PeerOrChainTrust" />
       <MemberSignature Language="C++ CLI" Value="PeerOrChainTrust" />
+      <MemberSignature Language="F#" Value="PeerOrChainTrust = 3" Usage="System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust" />
       <MemberSignature Language="VB.NET" Value="PeerTrust" />
       <MemberSignature Language="C++ CLI" Value="PeerTrust" />
+      <MemberSignature Language="F#" Value="PeerTrust = 1" Usage="System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

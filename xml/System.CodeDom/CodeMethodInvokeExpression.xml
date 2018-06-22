@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMethodInvokeExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeMethodInvokeExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeMethodInvokeExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeMethodInvokeExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor(System.CodeDom.CodeMethodReferenceExpression,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method As CodeMethodReferenceExpression, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodInvokeExpression(System::CodeDom::CodeMethodReferenceExpression ^ method, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeMethodInvokeExpression : System.CodeDom.CodeMethodReferenceExpression * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeMethodInvokeExpression" Usage="new System.CodeDom.CodeMethodInvokeExpression (method, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, methodName As String, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodInvokeExpression(System::CodeDom::CodeExpression ^ targetObject, System::String ^ methodName, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeMethodInvokeExpression : System.CodeDom.CodeExpression * string * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeMethodInvokeExpression" Usage="new System.CodeDom.CodeMethodInvokeExpression (targetObject, methodName, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodInvokeExpression.Method" />
       <MemberSignature Language="VB.NET" Value="Public Property Method As CodeMethodReferenceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeMethodReferenceExpression ^ Method { System::CodeDom::CodeMethodReferenceExpression ^ get(); void set(System::CodeDom::CodeMethodReferenceExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Method : System.CodeDom.CodeMethodReferenceExpression with get, set" Usage="System.CodeDom.CodeMethodInvokeExpression.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodInvokeExpression.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ Parameters { System::CodeDom::CodeExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeMethodInvokeExpression.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

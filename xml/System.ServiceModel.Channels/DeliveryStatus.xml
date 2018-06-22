@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.DeliveryStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum DeliveryStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class DeliveryStatus" />
+  <TypeSignature Language="F#" Value="type DeliveryStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryStatus.InDoubt" />
       <MemberSignature Language="VB.NET" Value="InDoubt" />
       <MemberSignature Language="C++ CLI" Value="InDoubt" />
+      <MemberSignature Language="F#" Value="InDoubt = 0" Usage="System.ServiceModel.Channels.DeliveryStatus.InDoubt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryStatus.NotDelivered" />
       <MemberSignature Language="VB.NET" Value="NotDelivered" />
       <MemberSignature Language="C++ CLI" Value="NotDelivered" />
+      <MemberSignature Language="F#" Value="NotDelivered = 1" Usage="System.ServiceModel.Channels.DeliveryStatus.NotDelivered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SourceSwitch" />
   <TypeSignature Language="VB.NET" Value="Public Class SourceSwitch&#xA;Inherits Switch" />
   <TypeSignature Language="C++ CLI" Value="public ref class SourceSwitch : System::Diagnostics::Switch" />
+  <TypeSignature Language="F#" Value="type SourceSwitch = class&#xA;    inherit Switch" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SourceSwitch.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceSwitch(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SourceSwitch : string -&gt; System.Diagnostics.SourceSwitch" Usage="new System.Diagnostics.SourceSwitch name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SourceSwitch.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, defaultSwitchValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceSwitch(System::String ^ displayName, System::String ^ defaultSwitchValue);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SourceSwitch : string * string -&gt; System.Diagnostics.SourceSwitch" Usage="new System.Diagnostics.SourceSwitch (displayName, defaultSwitchValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -176,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SourceSwitch.Level" />
       <MemberSignature Language="VB.NET" Value="Public Property Level As SourceLevels" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SourceLevels Level { System::Diagnostics::SourceLevels get(); void set(System::Diagnostics::SourceLevels value); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Diagnostics.SourceLevels with get, set" Usage="System.Diagnostics.SourceSwitch.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -226,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SourceSwitch.OnValueChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValueChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValueChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnValueChanged : unit -&gt; unit" Usage="sourceSwitch.OnValueChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -265,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SourceSwitch.ShouldTrace(System.Diagnostics.TraceEventType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldTrace (eventType As TraceEventType) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldTrace(System::Diagnostics::TraceEventType eventType);" />
+      <MemberSignature Language="F#" Value="member this.ShouldTrace : System.Diagnostics.TraceEventType -&gt; bool" Usage="sourceSwitch.ShouldTrace eventType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

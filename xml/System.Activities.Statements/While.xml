@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.While" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class While&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class While sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type While = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.While.#ctor(System.Activities.Activity{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (condition As Activity(Of Boolean))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; While(System::Activities::Activity&lt;bool&gt; ^ condition);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Statements.While : System.Activities.Activity&lt;bool&gt; -&gt; System.Activities.Statements.While" Usage="new System.Activities.Statements.While condition" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.While.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (condition As Expression(Of Func(Of ActivityContext, Boolean)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; While(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, bool&gt; ^&gt; ^ condition);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Statements.While : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, bool&gt;&gt; -&gt; System.Activities.Statements.While" Usage="new System.Activities.Statements.While condition" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.While.Body" />
       <MemberSignature Language="VB.NET" Value="Public Property Body As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Body { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Activities.Activity with get, set" Usage="System.Activities.Statements.While.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.While.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="while.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.While.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Property Condition As Activity(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;bool&gt; ^ Condition { System::Activities::Activity&lt;bool&gt; ^ get(); void set(System::Activities::Activity&lt;bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.Activities.Activity&lt;bool&gt; with get, set" Usage="System.Activities.Statements.While.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.While.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="while.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.While.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="while.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.While.Variables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As Collection(Of Variable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ Variables { System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Variables : System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" Usage="System.Activities.Statements.While.Variables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WebHttpBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHttpBehavior&#xA;Implements IEndpointBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebHttpBehavior : System::ServiceModel::Description::IEndpointBehavior" />
+  <TypeSignature Language="F#" Value="type WebHttpBehavior = class&#xA;    interface IEndpointBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddBindingParameters (endpoint As ServiceEndpoint, bindingParameters As BindingParameterCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
+      <MemberSignature Language="F#" Value="abstract member AddBindingParameters : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit&#xA;override this.AddBindingParameters : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit" Usage="webHttpBehavior.AddBindingParameters (endpoint, bindingParameters)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddClientErrorInspector(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime clientRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.AddClientErrorInspector(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddClientErrorInspector(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::ClientRuntime ^ clientRuntime);" />
+      <MemberSignature Language="F#" Value="abstract member AddClientErrorInspector : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit&#xA;override this.AddClientErrorInspector : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit" Usage="webHttpBehavior.AddClientErrorInspector (endpoint, clientRuntime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddServerErrorHandlers(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.EndpointDispatcher endpointDispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.AddServerErrorHandlers(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddServerErrorHandlers(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::EndpointDispatcher ^ endpointDispatcher);" />
+      <MemberSignature Language="F#" Value="abstract member AddServerErrorHandlers : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.EndpointDispatcher -&gt; unit&#xA;override this.AddServerErrorHandlers : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.EndpointDispatcher -&gt; unit" Usage="webHttpBehavior.AddServerErrorHandlers (endpoint, endpointDispatcher)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime clientRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyClientBehavior(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::ClientRuntime ^ clientRuntime);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyClientBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit&#xA;override this.ApplyClientBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit" Usage="webHttpBehavior.ApplyClientBehavior (endpoint, clientRuntime)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)</InterfaceMember>
@@ -165,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.EndpointDispatcher endpointDispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::EndpointDispatcher ^ endpointDispatcher);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDispatchBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.EndpointDispatcher -&gt; unit&#xA;override this.ApplyDispatchBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.EndpointDispatcher -&gt; unit" Usage="webHttpBehavior.ApplyDispatchBehavior (endpoint, endpointDispatcher)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)</InterfaceMember>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpBehavior.AutomaticFormatSelectionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutomaticFormatSelectionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutomaticFormatSelectionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticFormatSelectionEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebHttpBehavior.AutomaticFormatSelectionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpBehavior.DefaultBodyStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultBodyStyle As WebMessageBodyStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Web::WebMessageBodyStyle DefaultBodyStyle { System::ServiceModel::Web::WebMessageBodyStyle get(); void set(System::ServiceModel::Web::WebMessageBodyStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultBodyStyle : System.ServiceModel.Web.WebMessageBodyStyle with get, set" Usage="System.ServiceModel.Description.WebHttpBehavior.DefaultBodyStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpBehavior.DefaultOutgoingRequestFormat" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultOutgoingRequestFormat As WebMessageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Web::WebMessageFormat DefaultOutgoingRequestFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultOutgoingRequestFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Description.WebHttpBehavior.DefaultOutgoingRequestFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpBehavior.DefaultOutgoingResponseFormat" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultOutgoingResponseFormat As WebMessageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Web::WebMessageFormat DefaultOutgoingResponseFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultOutgoingResponseFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Description.WebHttpBehavior.DefaultOutgoingResponseFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -314,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpBehavior.FaultExceptionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FaultExceptionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool FaultExceptionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultExceptionEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebHttpBehavior.FaultExceptionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -335,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.GetOperationSelector(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetOperationSelector (endpoint As ServiceEndpoint) As WebHttpDispatchOperationSelector" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Dispatcher::WebHttpDispatchOperationSelector ^ GetOperationSelector(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member GetOperationSelector : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector&#xA;override this.GetOperationSelector : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" Usage="webHttpBehavior.GetOperationSelector endpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -365,6 +377,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Dispatcher.QueryStringConverter GetQueryStringConverter(class System.ServiceModel.Description.OperationDescription operationDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.GetQueryStringConverter(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Dispatcher::QueryStringConverter ^ GetQueryStringConverter(System::ServiceModel::Description::OperationDescription ^ operationDescription);" />
+      <MemberSignature Language="F#" Value="abstract member GetQueryStringConverter : System.ServiceModel.Description.OperationDescription -&gt; System.ServiceModel.Dispatcher.QueryStringConverter&#xA;override this.GetQueryStringConverter : System.ServiceModel.Description.OperationDescription -&gt; System.ServiceModel.Dispatcher.QueryStringConverter" Usage="webHttpBehavior.GetQueryStringConverter operationDescription" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -396,6 +409,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Dispatcher.IClientMessageFormatter GetReplyClientFormatter(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.GetReplyClientFormatter(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Dispatcher::IClientMessageFormatter ^ GetReplyClientFormatter(System::ServiceModel::Description::OperationDescription ^ operationDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member GetReplyClientFormatter : System.ServiceModel.Description.OperationDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.IClientMessageFormatter&#xA;override this.GetReplyClientFormatter : System.ServiceModel.Description.OperationDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.IClientMessageFormatter" Usage="webHttpBehavior.GetReplyClientFormatter (operationDescription, endpoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -429,6 +443,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Dispatcher.IDispatchMessageFormatter GetReplyDispatchFormatter(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.GetReplyDispatchFormatter(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Dispatcher::IDispatchMessageFormatter ^ GetReplyDispatchFormatter(System::ServiceModel::Description::OperationDescription ^ operationDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member GetReplyDispatchFormatter : System.ServiceModel.Description.OperationDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.IDispatchMessageFormatter&#xA;override this.GetReplyDispatchFormatter : System.ServiceModel.Description.OperationDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.IDispatchMessageFormatter" Usage="webHttpBehavior.GetReplyDispatchFormatter (operationDescription, endpoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -461,6 +476,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Dispatcher.IClientMessageFormatter GetRequestClientFormatter(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.GetRequestClientFormatter(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Dispatcher::IClientMessageFormatter ^ GetRequestClientFormatter(System::ServiceModel::Description::OperationDescription ^ operationDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member GetRequestClientFormatter : System.ServiceModel.Description.OperationDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.IClientMessageFormatter&#xA;override this.GetRequestClientFormatter : System.ServiceModel.Description.OperationDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.IClientMessageFormatter" Usage="webHttpBehavior.GetRequestClientFormatter (operationDescription, endpoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -494,6 +510,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Dispatcher.IDispatchMessageFormatter GetRequestDispatchFormatter(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.GetRequestDispatchFormatter(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Dispatcher::IDispatchMessageFormatter ^ GetRequestDispatchFormatter(System::ServiceModel::Description::OperationDescription ^ operationDescription, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member GetRequestDispatchFormatter : System.ServiceModel.Description.OperationDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.IDispatchMessageFormatter&#xA;override this.GetRequestDispatchFormatter : System.ServiceModel.Description.OperationDescription * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Dispatcher.IDispatchMessageFormatter" Usage="webHttpBehavior.GetRequestDispatchFormatter (operationDescription, endpoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -527,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpBehavior.HelpEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HelpEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebHttpBehavior.HelpEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -581,6 +599,7 @@ host.Description.Endpoints[0].Behaviors.Add(helpBehavior);
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpBehavior.JavascriptCallbackParameterName" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property JavascriptCallbackParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ JavascriptCallbackParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.JavascriptCallbackParameterName : string with get, set" Usage="System.ServiceModel.Description.WebHttpBehavior.JavascriptCallbackParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -601,6 +620,7 @@ host.Description.Endpoints[0].Behaviors.Add(helpBehavior);
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.ServiceModel.Description.ServiceEndpoint -&gt; unit&#xA;override this.Validate : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="webHttpBehavior.Validate endpoint" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IEndpointBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)</InterfaceMember>
@@ -647,6 +667,7 @@ host.Description.Endpoints[0].Behaviors.Add(helpBehavior);
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.ValidateBinding(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateBinding (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateBinding(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateBinding : System.ServiceModel.Description.ServiceEndpoint -&gt; unit&#xA;override this.ValidateBinding : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="webHttpBehavior.ValidateBinding endpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -671,6 +692,7 @@ host.Description.Endpoints[0].Behaviors.Add(helpBehavior);
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpBehavior.ValidateOperation(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ValidateOperation (operation As OperationDescription)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ValidateOperation(System::ServiceModel::Description::OperationDescription ^ operation);" />
+      <MemberSignature Language="F#" Value="member this.ValidateOperation : System.ServiceModel.Description.OperationDescription -&gt; unit" Usage="webHttpBehavior.ValidateOperation operation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

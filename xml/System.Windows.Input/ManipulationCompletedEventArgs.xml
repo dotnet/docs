@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManipulationCompletedEventArgs&#xA;Inherits InputEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManipulationCompletedEventArgs sealed : System::Windows::Input::InputEventArgs" />
+  <TypeSignature Language="F#" Value="type ManipulationCompletedEventArgs = class&#xA;    inherit InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationCompletedEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Function Cancel () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Cancel();" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; bool" Usage="manipulationCompletedEventArgs.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationCompletedEventArgs.FinalVelocities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinalVelocities As ManipulationVelocities" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationVelocities ^ FinalVelocities { System::Windows::Input::ManipulationVelocities ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FinalVelocities : System.Windows.Input.ManipulationVelocities" Usage="System.Windows.Input.ManipulationCompletedEventArgs.FinalVelocities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationCompletedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="manipulationCompletedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationCompletedEventArgs.IsInertial" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInertial As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInertial { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInertial : bool" Usage="System.Windows.Input.ManipulationCompletedEventArgs.IsInertial" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationCompletedEventArgs.ManipulationContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManipulationContainer As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ ManipulationContainer { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManipulationContainer : System.Windows.IInputElement" Usage="System.Windows.Input.ManipulationCompletedEventArgs.ManipulationContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationCompletedEventArgs.ManipulationOrigin" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManipulationOrigin As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point ManipulationOrigin { System::Windows::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManipulationOrigin : System.Windows.Point" Usage="System.Windows.Input.ManipulationCompletedEventArgs.ManipulationOrigin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationCompletedEventArgs.Manipulators" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manipulators As IEnumerable(Of IManipulator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ Manipulators { System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Manipulators : seq&lt;System.Windows.Input.IManipulator&gt;" Usage="System.Windows.Input.ManipulationCompletedEventArgs.Manipulators" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationCompletedEventArgs.TotalManipulation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalManipulation As ManipulationDelta" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationDelta ^ TotalManipulation { System::Windows::Input::ManipulationDelta ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalManipulation : System.Windows.Input.ManipulationDelta" Usage="System.Windows.Input.ManipulationCompletedEventArgs.TotalManipulation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

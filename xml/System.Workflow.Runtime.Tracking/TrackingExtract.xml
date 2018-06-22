@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingExtract" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingExtract" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingExtract abstract" />
+  <TypeSignature Language="F#" Value="type TrackingExtract = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingExtract.Annotations" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Annotations As TrackingAnnotationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ Annotations { System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Annotations : System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" Usage="System.Workflow.Runtime.Tracking.TrackingExtract.Annotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingExtract.Member" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Member As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingExtract.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

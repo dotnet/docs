@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.MetadataSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class MetadataSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataSerializer" />
+  <TypeSignature Language="F#" Value="type MetadataSerializer = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.#ctor(System.IdentityModel.Selectors.SecurityTokenSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokenSerializer As SecurityTokenSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataSerializer(System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.MetadataSerializer : System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; System.IdentityModel.Metadata.MetadataSerializer" Usage="new System.IdentityModel.Metadata.MetadataSerializer tokenSerializer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateValidationMode As X509CertificateValidationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::X509CertificateValidationMode CertificateValidationMode { System::ServiceModel::Security::X509CertificateValidationMode get(); void set(System::ServiceModel::Security::X509CertificateValidationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidationMode : System.ServiceModel.Security.X509CertificateValidationMode with get, set" Usage="System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidator" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateValidator As X509CertificateValidator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::X509CertificateValidator ^ CertificateValidator { System::IdentityModel::Selectors::X509CertificateValidator ^ get(); void set(System::IdentityModel::Selectors::X509CertificateValidator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidator : System.IdentityModel.Selectors.X509CertificateValidator with get, set" Usage="System.IdentityModel.Metadata.MetadataSerializer.CertificateValidator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateApplicationServiceInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateApplicationServiceInstance () As ApplicationServiceDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::ApplicationServiceDescriptor ^ CreateApplicationServiceInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateApplicationServiceInstance : unit -&gt; System.IdentityModel.Metadata.ApplicationServiceDescriptor&#xA;override this.CreateApplicationServiceInstance : unit -&gt; System.IdentityModel.Metadata.ApplicationServiceDescriptor" Usage="metadataSerializer.CreateApplicationServiceInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateContactPersonInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateContactPersonInstance () As ContactPerson" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::ContactPerson ^ CreateContactPersonInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateContactPersonInstance : unit -&gt; System.IdentityModel.Metadata.ContactPerson&#xA;override this.CreateContactPersonInstance : unit -&gt; System.IdentityModel.Metadata.ContactPerson" Usage="metadataSerializer.CreateContactPersonInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateEntitiesDescriptorInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateEntitiesDescriptorInstance () As EntitiesDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::EntitiesDescriptor ^ CreateEntitiesDescriptorInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateEntitiesDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.EntitiesDescriptor&#xA;override this.CreateEntitiesDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.EntitiesDescriptor" Usage="metadataSerializer.CreateEntitiesDescriptorInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateEntityDescriptorInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateEntityDescriptorInstance () As EntityDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::EntityDescriptor ^ CreateEntityDescriptorInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateEntityDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.EntityDescriptor&#xA;override this.CreateEntityDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.EntityDescriptor" Usage="metadataSerializer.CreateEntityDescriptorInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateIdentityProviderSingleSignOnDescriptorInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateIdentityProviderSingleSignOnDescriptorInstance () As IdentityProviderSingleSignOnDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::IdentityProviderSingleSignOnDescriptor ^ CreateIdentityProviderSingleSignOnDescriptorInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateIdentityProviderSingleSignOnDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor&#xA;override this.CreateIdentityProviderSingleSignOnDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor" Usage="metadataSerializer.CreateIdentityProviderSingleSignOnDescriptorInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateIndexedProtocolEndpointInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateIndexedProtocolEndpointInstance () As IndexedProtocolEndpoint" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::IndexedProtocolEndpoint ^ CreateIndexedProtocolEndpointInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateIndexedProtocolEndpointInstance : unit -&gt; System.IdentityModel.Metadata.IndexedProtocolEndpoint&#xA;override this.CreateIndexedProtocolEndpointInstance : unit -&gt; System.IdentityModel.Metadata.IndexedProtocolEndpoint" Usage="metadataSerializer.CreateIndexedProtocolEndpointInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -251,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateKeyDescriptorInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateKeyDescriptorInstance () As KeyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::KeyDescriptor ^ CreateKeyDescriptorInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateKeyDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.KeyDescriptor&#xA;override this.CreateKeyDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.KeyDescriptor" Usage="metadataSerializer.CreateKeyDescriptorInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -272,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateLocalizedNameInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateLocalizedNameInstance () As LocalizedName" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::LocalizedName ^ CreateLocalizedNameInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateLocalizedNameInstance : unit -&gt; System.IdentityModel.Metadata.LocalizedName&#xA;override this.CreateLocalizedNameInstance : unit -&gt; System.IdentityModel.Metadata.LocalizedName" Usage="metadataSerializer.CreateLocalizedNameInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -293,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateLocalizedUriInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateLocalizedUriInstance () As LocalizedUri" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::LocalizedUri ^ CreateLocalizedUriInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateLocalizedUriInstance : unit -&gt; System.IdentityModel.Metadata.LocalizedUri&#xA;override this.CreateLocalizedUriInstance : unit -&gt; System.IdentityModel.Metadata.LocalizedUri" Usage="metadataSerializer.CreateLocalizedUriInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -314,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateOrganizationInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateOrganizationInstance () As Organization" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::Organization ^ CreateOrganizationInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrganizationInstance : unit -&gt; System.IdentityModel.Metadata.Organization&#xA;override this.CreateOrganizationInstance : unit -&gt; System.IdentityModel.Metadata.Organization" Usage="metadataSerializer.CreateOrganizationInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -335,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateProtocolEndpointInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateProtocolEndpointInstance () As ProtocolEndpoint" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::ProtocolEndpoint ^ CreateProtocolEndpointInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateProtocolEndpointInstance : unit -&gt; System.IdentityModel.Metadata.ProtocolEndpoint&#xA;override this.CreateProtocolEndpointInstance : unit -&gt; System.IdentityModel.Metadata.ProtocolEndpoint" Usage="metadataSerializer.CreateProtocolEndpointInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -356,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateSecurityTokenServiceDescriptorInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateSecurityTokenServiceDescriptorInstance () As SecurityTokenServiceDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::SecurityTokenServiceDescriptor ^ CreateSecurityTokenServiceDescriptorInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenServiceDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.SecurityTokenServiceDescriptor&#xA;override this.CreateSecurityTokenServiceDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.SecurityTokenServiceDescriptor" Usage="metadataSerializer.CreateSecurityTokenServiceDescriptorInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -377,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateServiceProviderSingleSignOnDescriptorInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateServiceProviderSingleSignOnDescriptorInstance () As ServiceProviderSingleSignOnDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::ServiceProviderSingleSignOnDescriptor ^ CreateServiceProviderSingleSignOnDescriptorInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateServiceProviderSingleSignOnDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor&#xA;override this.CreateServiceProviderSingleSignOnDescriptorInstance : unit -&gt; System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor" Usage="metadataSerializer.CreateServiceProviderSingleSignOnDescriptorInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -398,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.GetMetadataSigningCertificate(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetMetadataSigningCertificate (ski As SecurityKeyIdentifier) As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::Cryptography::X509Certificates::X509Certificate2 ^ GetMetadataSigningCertificate(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ski);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataSigningCertificate : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2&#xA;override this.GetMetadataSigningCertificate : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="metadataSerializer.GetMetadataSigningCertificate ski" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -432,6 +450,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.MetadataSerializer.LanguageAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Const LanguageAttribute As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ LanguageAttribute;" />
+      <MemberSignature Language="F#" Value="val mutable LanguageAttribute : string" Usage="System.IdentityModel.Metadata.MetadataSerializer.LanguageAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -451,6 +470,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.MetadataSerializer.LanguageLocalName" />
       <MemberSignature Language="VB.NET" Value="Public Const LanguageLocalName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ LanguageLocalName;" />
+      <MemberSignature Language="F#" Value="val mutable LanguageLocalName : string" Usage="System.IdentityModel.Metadata.MetadataSerializer.LanguageLocalName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -470,6 +490,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.MetadataSerializer.LanguageNamespaceUri" />
       <MemberSignature Language="VB.NET" Value="Public Const LanguageNamespaceUri As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ LanguageNamespaceUri;" />
+      <MemberSignature Language="F#" Value="val mutable LanguageNamespaceUri : string" Usage="System.IdentityModel.Metadata.MetadataSerializer.LanguageNamespaceUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -489,6 +510,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.MetadataSerializer.LanguagePrefix" />
       <MemberSignature Language="VB.NET" Value="Public Const LanguagePrefix As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ LanguagePrefix;" />
+      <MemberSignature Language="F#" Value="val mutable LanguagePrefix : string" Usage="System.IdentityModel.Metadata.MetadataSerializer.LanguagePrefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -508,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadApplicationServiceDescriptor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadApplicationServiceDescriptor (reader As XmlReader) As ApplicationServiceDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::ApplicationServiceDescriptor ^ ReadApplicationServiceDescriptor(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadApplicationServiceDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.ApplicationServiceDescriptor&#xA;override this.ReadApplicationServiceDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.ApplicationServiceDescriptor" Usage="metadataSerializer.ReadApplicationServiceDescriptor reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -534,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadAttribute(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAttribute (reader As XmlReader) As Saml2Attribute" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::Saml2Attribute ^ ReadAttribute(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadAttribute : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.Saml2Attribute&#xA;override this.ReadAttribute : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.Saml2Attribute" Usage="metadataSerializer.ReadAttribute reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -567,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadContactPerson(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadContactPerson (reader As XmlReader) As ContactPerson" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::ContactPerson ^ ReadContactPerson(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadContactPerson : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.ContactPerson&#xA;override this.ReadContactPerson : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.ContactPerson" Usage="metadataSerializer.ReadContactPerson reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -593,6 +618,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadCustomAttributes``1(System.Xml.XmlReader,``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReadCustomAttributes(Of T) (reader As XmlReader, target As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; virtual void ReadCustomAttributes(System::Xml::XmlReader ^ reader, T target);" />
+      <MemberSignature Language="F#" Value="abstract member ReadCustomAttributes : System.Xml.XmlReader * 'T -&gt; unit&#xA;override this.ReadCustomAttributes : System.Xml.XmlReader * 'T -&gt; unit" Usage="metadataSerializer.ReadCustomAttributes (reader, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -622,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadCustomElement``1(System.Xml.XmlReader,``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadCustomElement(Of T) (reader As XmlReader, target As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; virtual bool ReadCustomElement(System::Xml::XmlReader ^ reader, T target);" />
+      <MemberSignature Language="F#" Value="abstract member ReadCustomElement : System.Xml.XmlReader * 'T -&gt; bool&#xA;override this.ReadCustomElement : System.Xml.XmlReader * 'T -&gt; bool" Usage="metadataSerializer.ReadCustomElement (reader, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -652,6 +679,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReadCustomRoleDescriptor(string xsiType, class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.EntityDescriptor entityDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadCustomRoleDescriptor(System.String,System.Xml.XmlReader,System.IdentityModel.Metadata.EntityDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReadCustomRoleDescriptor(System::String ^ xsiType, System::Xml::XmlReader ^ reader, System::IdentityModel::Metadata::EntityDescriptor ^ entityDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member ReadCustomRoleDescriptor : string * System.Xml.XmlReader * System.IdentityModel.Metadata.EntityDescriptor -&gt; unit&#xA;override this.ReadCustomRoleDescriptor : string * System.Xml.XmlReader * System.IdentityModel.Metadata.EntityDescriptor -&gt; unit" Usage="metadataSerializer.ReadCustomRoleDescriptor (xsiType, reader, entityDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -679,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadDisplayClaim(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadDisplayClaim (reader As XmlReader) As DisplayClaim" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::DisplayClaim ^ ReadDisplayClaim(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadDisplayClaim : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.DisplayClaim&#xA;override this.ReadDisplayClaim : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.DisplayClaim" Usage="metadataSerializer.ReadDisplayClaim reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -706,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadEntitiesDescriptor(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadEntitiesDescriptor (reader As XmlReader, tokenResolver As SecurityTokenResolver) As EntitiesDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::EntitiesDescriptor ^ ReadEntitiesDescriptor(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ReadEntitiesDescriptor : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Metadata.EntitiesDescriptor&#xA;override this.ReadEntitiesDescriptor : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Metadata.EntitiesDescriptor" Usage="metadataSerializer.ReadEntitiesDescriptor (reader, tokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -735,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadEntityDescriptor(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadEntityDescriptor (inputReader As XmlReader, tokenResolver As SecurityTokenResolver) As EntityDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::EntityDescriptor ^ ReadEntityDescriptor(System::Xml::XmlReader ^ inputReader, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ReadEntityDescriptor : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Metadata.EntityDescriptor&#xA;override this.ReadEntityDescriptor : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Metadata.EntityDescriptor" Usage="metadataSerializer.ReadEntityDescriptor (inputReader, tokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -763,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadIdentityProviderSingleSignOnDescriptor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadIdentityProviderSingleSignOnDescriptor (reader As XmlReader) As IdentityProviderSingleSignOnDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::IdentityProviderSingleSignOnDescriptor ^ ReadIdentityProviderSingleSignOnDescriptor(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadIdentityProviderSingleSignOnDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor&#xA;override this.ReadIdentityProviderSingleSignOnDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor" Usage="metadataSerializer.ReadIdentityProviderSingleSignOnDescriptor reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -789,6 +821,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadIndexedProtocolEndpoint(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadIndexedProtocolEndpoint (reader As XmlReader) As IndexedProtocolEndpoint" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::IndexedProtocolEndpoint ^ ReadIndexedProtocolEndpoint(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadIndexedProtocolEndpoint : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.IndexedProtocolEndpoint&#xA;override this.ReadIndexedProtocolEndpoint : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.IndexedProtocolEndpoint" Usage="metadataSerializer.ReadIndexedProtocolEndpoint reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -815,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadKeyDescriptor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadKeyDescriptor (reader As XmlReader) As KeyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::KeyDescriptor ^ ReadKeyDescriptor(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadKeyDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.KeyDescriptor&#xA;override this.ReadKeyDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.KeyDescriptor" Usage="metadataSerializer.ReadKeyDescriptor reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -841,6 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadLocalizedName(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadLocalizedName (reader As XmlReader) As LocalizedName" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::LocalizedName ^ ReadLocalizedName(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadLocalizedName : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.LocalizedName&#xA;override this.ReadLocalizedName : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.LocalizedName" Usage="metadataSerializer.ReadLocalizedName reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -867,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadLocalizedUri(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadLocalizedUri (reader As XmlReader) As LocalizedUri" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::LocalizedUri ^ ReadLocalizedUri(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadLocalizedUri : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.LocalizedUri&#xA;override this.ReadLocalizedUri : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.LocalizedUri" Usage="metadataSerializer.ReadLocalizedUri reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -901,6 +937,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Metadata.MetadataBase ReadMetadata(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Metadata::MetadataBase ^ ReadMetadata(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.ReadMetadata : System.IO.Stream -&gt; System.IdentityModel.Metadata.MetadataBase" Usage="metadataSerializer.ReadMetadata stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -927,6 +964,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadMetadata (reader As XmlReader) As MetadataBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Metadata::MetadataBase ^ ReadMetadata(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.ReadMetadata : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.MetadataBase" Usage="metadataSerializer.ReadMetadata reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -953,6 +991,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadMetadata (reader As XmlReader, tokenResolver As SecurityTokenResolver) As MetadataBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Metadata::MetadataBase ^ ReadMetadata(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="F#" Value="member this.ReadMetadata : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Metadata.MetadataBase" Usage="metadataSerializer.ReadMetadata (reader, tokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -985,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadataCore(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadMetadataCore (reader As XmlReader, tokenResolver As SecurityTokenResolver) As MetadataBase" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::MetadataBase ^ ReadMetadataCore(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ReadMetadataCore : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Metadata.MetadataBase&#xA;override this.ReadMetadataCore : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Metadata.MetadataBase" Usage="metadataSerializer.ReadMetadataCore (reader, tokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1025,6 +1065,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadOrganization(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadOrganization (reader As XmlReader) As Organization" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::Organization ^ ReadOrganization(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadOrganization : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.Organization&#xA;override this.ReadOrganization : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.Organization" Usage="metadataSerializer.ReadOrganization reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1051,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadProtocolEndpoint(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadProtocolEndpoint (reader As XmlReader) As ProtocolEndpoint" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::ProtocolEndpoint ^ ReadProtocolEndpoint(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadProtocolEndpoint : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.ProtocolEndpoint&#xA;override this.ReadProtocolEndpoint : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.ProtocolEndpoint" Usage="metadataSerializer.ReadProtocolEndpoint reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1076,6 +1118,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReadRoleDescriptorAttributes(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.RoleDescriptor roleDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadRoleDescriptorAttributes(System.Xml.XmlReader,System.IdentityModel.Metadata.RoleDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReadRoleDescriptorAttributes(System::Xml::XmlReader ^ reader, System::IdentityModel::Metadata::RoleDescriptor ^ roleDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member ReadRoleDescriptorAttributes : System.Xml.XmlReader * System.IdentityModel.Metadata.RoleDescriptor -&gt; unit&#xA;override this.ReadRoleDescriptorAttributes : System.Xml.XmlReader * System.IdentityModel.Metadata.RoleDescriptor -&gt; unit" Usage="metadataSerializer.ReadRoleDescriptorAttributes (reader, roleDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1110,6 +1153,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ReadRoleDescriptorElement(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.RoleDescriptor roleDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadRoleDescriptorElement(System.Xml.XmlReader,System.IdentityModel.Metadata.RoleDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ReadRoleDescriptorElement(System::Xml::XmlReader ^ reader, System::IdentityModel::Metadata::RoleDescriptor ^ roleDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member ReadRoleDescriptorElement : System.Xml.XmlReader * System.IdentityModel.Metadata.RoleDescriptor -&gt; bool&#xA;override this.ReadRoleDescriptorElement : System.Xml.XmlReader * System.IdentityModel.Metadata.RoleDescriptor -&gt; bool" Usage="metadataSerializer.ReadRoleDescriptorElement (reader, roleDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1149,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadSecurityTokenServiceDescriptor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadSecurityTokenServiceDescriptor (reader As XmlReader) As SecurityTokenServiceDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::SecurityTokenServiceDescriptor ^ ReadSecurityTokenServiceDescriptor(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadSecurityTokenServiceDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.SecurityTokenServiceDescriptor&#xA;override this.ReadSecurityTokenServiceDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.SecurityTokenServiceDescriptor" Usage="metadataSerializer.ReadSecurityTokenServiceDescriptor reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1175,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadServiceProviderSingleSignOnDescriptor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadServiceProviderSingleSignOnDescriptor (reader As XmlReader) As ServiceProviderSingleSignOnDescriptor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Metadata::ServiceProviderSingleSignOnDescriptor ^ ReadServiceProviderSingleSignOnDescriptor(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadServiceProviderSingleSignOnDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor&#xA;override this.ReadServiceProviderSingleSignOnDescriptor : System.Xml.XmlReader -&gt; System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor" Usage="metadataSerializer.ReadServiceProviderSingleSignOnDescriptor reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1202,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadSingleSignOnDescriptorAttributes(System.Xml.XmlReader,System.IdentityModel.Metadata.SingleSignOnDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReadSingleSignOnDescriptorAttributes (reader As XmlReader, roleDescriptor As SingleSignOnDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReadSingleSignOnDescriptorAttributes(System::Xml::XmlReader ^ reader, System::IdentityModel::Metadata::SingleSignOnDescriptor ^ roleDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member ReadSingleSignOnDescriptorAttributes : System.Xml.XmlReader * System.IdentityModel.Metadata.SingleSignOnDescriptor -&gt; unit&#xA;override this.ReadSingleSignOnDescriptorAttributes : System.Xml.XmlReader * System.IdentityModel.Metadata.SingleSignOnDescriptor -&gt; unit" Usage="metadataSerializer.ReadSingleSignOnDescriptorAttributes (reader, roleDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1232,6 +1279,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ReadSingleSignOnDescriptorElement(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadSingleSignOnDescriptorElement(System.Xml.XmlReader,System.IdentityModel.Metadata.SingleSignOnDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ReadSingleSignOnDescriptorElement(System::Xml::XmlReader ^ reader, System::IdentityModel::Metadata::SingleSignOnDescriptor ^ singleSignOnDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member ReadSingleSignOnDescriptorElement : System.Xml.XmlReader * System.IdentityModel.Metadata.SingleSignOnDescriptor -&gt; bool&#xA;override this.ReadSingleSignOnDescriptorElement : System.Xml.XmlReader * System.IdentityModel.Metadata.SingleSignOnDescriptor -&gt; bool" Usage="metadataSerializer.ReadSingleSignOnDescriptorElement (reader, singleSignOnDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1265,6 +1313,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadWebServiceDescriptorAttributes(System.Xml.XmlReader,System.IdentityModel.Metadata.WebServiceDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReadWebServiceDescriptorAttributes (reader As XmlReader, roleDescriptor As WebServiceDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReadWebServiceDescriptorAttributes(System::Xml::XmlReader ^ reader, System::IdentityModel::Metadata::WebServiceDescriptor ^ roleDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member ReadWebServiceDescriptorAttributes : System.Xml.XmlReader * System.IdentityModel.Metadata.WebServiceDescriptor -&gt; unit&#xA;override this.ReadWebServiceDescriptorAttributes : System.Xml.XmlReader * System.IdentityModel.Metadata.WebServiceDescriptor -&gt; unit" Usage="metadataSerializer.ReadWebServiceDescriptorAttributes (reader, roleDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1296,6 +1345,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadWebServiceDescriptorElement(System.Xml.XmlReader,System.IdentityModel.Metadata.WebServiceDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadWebServiceDescriptorElement (reader As XmlReader, roleDescriptor As WebServiceDescriptor) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadWebServiceDescriptorElement(System::Xml::XmlReader ^ reader, System::IdentityModel::Metadata::WebServiceDescriptor ^ roleDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member ReadWebServiceDescriptorElement : System.Xml.XmlReader * System.IdentityModel.Metadata.WebServiceDescriptor -&gt; bool&#xA;override this.ReadWebServiceDescriptorElement : System.Xml.XmlReader * System.IdentityModel.Metadata.WebServiceDescriptor -&gt; bool" Usage="metadataSerializer.ReadWebServiceDescriptorElement (reader, roleDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1343,6 +1393,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RevocationMode As X509RevocationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode RevocationMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.IdentityModel.Metadata.MetadataSerializer.RevocationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1363,6 +1414,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.SecurityTokenSerializer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenSerializer As SecurityTokenSerializer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenSerializer ^ SecurityTokenSerializer { System::IdentityModel::Selectors::SecurityTokenSerializer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenSerializer : System.IdentityModel.Selectors.SecurityTokenSerializer" Usage="System.IdentityModel.Metadata.MetadataSerializer.SecurityTokenSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1383,6 +1435,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.TrustedIssuers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrustedIssuers As List(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ TrustedIssuers { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrustedIssuers : System.Collections.Generic.List&lt;string&gt;" Usage="System.IdentityModel.Metadata.MetadataSerializer.TrustedIssuers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1403,6 +1456,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property TrustedStoreLocation As StoreLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation TrustedStoreLocation { System::Security::Cryptography::X509Certificates::StoreLocation get(); void set(System::Security::Cryptography::X509Certificates::StoreLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.TrustedStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation with get, set" Usage="System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1423,6 +1477,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ValidateIssuer(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateIssuer (signingCertificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateIssuer(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ signingCertificate);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateIssuer : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; unit&#xA;override this.ValidateIssuer : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; unit" Usage="metadataSerializer.ValidateIssuer signingCertificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1452,6 +1507,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateSigningCredential(class System.IdentityModel.Tokens.SigningCredentials signingCredentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ValidateSigningCredential(System.IdentityModel.Tokens.SigningCredentials)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateSigningCredential(System::IdentityModel::Tokens::SigningCredentials ^ signingCredentials);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateSigningCredential : System.IdentityModel.Tokens.SigningCredentials -&gt; unit&#xA;override this.ValidateSigningCredential : System.IdentityModel.Tokens.SigningCredentials -&gt; unit" Usage="metadataSerializer.ValidateSigningCredential signingCredentials" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1477,6 +1533,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteApplicationServiceDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.ApplicationServiceDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteApplicationServiceDescriptor (writer As XmlWriter, appService As ApplicationServiceDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteApplicationServiceDescriptor(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::ApplicationServiceDescriptor ^ appService);" />
+      <MemberSignature Language="F#" Value="abstract member WriteApplicationServiceDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.ApplicationServiceDescriptor -&gt; unit&#xA;override this.WriteApplicationServiceDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.ApplicationServiceDescriptor -&gt; unit" Usage="metadataSerializer.WriteApplicationServiceDescriptor (writer, appService)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1516,6 +1573,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteAttribute(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Attribute)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAttribute (writer As XmlWriter, data As Saml2Attribute)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAttribute(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::Saml2Attribute ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member WriteAttribute : System.Xml.XmlWriter * System.IdentityModel.Tokens.Saml2Attribute -&gt; unit&#xA;override this.WriteAttribute : System.Xml.XmlWriter * System.IdentityModel.Tokens.Saml2Attribute -&gt; unit" Usage="metadataSerializer.WriteAttribute (writer, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1546,6 +1604,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteContactPerson(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.ContactPerson contactPerson) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteContactPerson(System.Xml.XmlWriter,System.IdentityModel.Metadata.ContactPerson)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteContactPerson(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::ContactPerson ^ contactPerson);" />
+      <MemberSignature Language="F#" Value="abstract member WriteContactPerson : System.Xml.XmlWriter * System.IdentityModel.Metadata.ContactPerson -&gt; unit&#xA;override this.WriteContactPerson : System.Xml.XmlWriter * System.IdentityModel.Metadata.ContactPerson -&gt; unit" Usage="metadataSerializer.WriteContactPerson (writer, contactPerson)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1585,6 +1644,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteCustomAttributes``1(System.Xml.XmlWriter,``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteCustomAttributes(Of T) (writer As XmlWriter, source As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; virtual void WriteCustomAttributes(System::Xml::XmlWriter ^ writer, T source);" />
+      <MemberSignature Language="F#" Value="abstract member WriteCustomAttributes : System.Xml.XmlWriter * 'T -&gt; unit&#xA;override this.WriteCustomAttributes : System.Xml.XmlWriter * 'T -&gt; unit" Usage="metadataSerializer.WriteCustomAttributes (writer, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1614,6 +1674,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteCustomElements``1(System.Xml.XmlWriter,``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteCustomElements(Of T) (writer As XmlWriter, source As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; virtual void WriteCustomElements(System::Xml::XmlWriter ^ writer, T source);" />
+      <MemberSignature Language="F#" Value="abstract member WriteCustomElements : System.Xml.XmlWriter * 'T -&gt; unit&#xA;override this.WriteCustomElements : System.Xml.XmlWriter * 'T -&gt; unit" Usage="metadataSerializer.WriteCustomElements (writer, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1643,6 +1704,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteDisplayClaim(System.Xml.XmlWriter,System.IdentityModel.Metadata.DisplayClaim)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteDisplayClaim (writer As XmlWriter, claim As DisplayClaim)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteDisplayClaim(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::DisplayClaim ^ claim);" />
+      <MemberSignature Language="F#" Value="abstract member WriteDisplayClaim : System.Xml.XmlWriter * System.IdentityModel.Metadata.DisplayClaim -&gt; unit&#xA;override this.WriteDisplayClaim : System.Xml.XmlWriter * System.IdentityModel.Metadata.DisplayClaim -&gt; unit" Usage="metadataSerializer.WriteDisplayClaim (writer, claim)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1667,6 +1729,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteEntitiesDescriptor(class System.Xml.XmlWriter inputWriter, class System.IdentityModel.Metadata.EntitiesDescriptor entitiesDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteEntitiesDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.EntitiesDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteEntitiesDescriptor(System::Xml::XmlWriter ^ inputWriter, System::IdentityModel::Metadata::EntitiesDescriptor ^ entitiesDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteEntitiesDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.EntitiesDescriptor -&gt; unit&#xA;override this.WriteEntitiesDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.EntitiesDescriptor -&gt; unit" Usage="metadataSerializer.WriteEntitiesDescriptor (inputWriter, entitiesDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1705,6 +1768,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteEntityDescriptor(class System.Xml.XmlWriter inputWriter, class System.IdentityModel.Metadata.EntityDescriptor entityDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteEntityDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.EntityDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteEntityDescriptor(System::Xml::XmlWriter ^ inputWriter, System::IdentityModel::Metadata::EntityDescriptor ^ entityDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteEntityDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.EntityDescriptor -&gt; unit&#xA;override this.WriteEntityDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.EntityDescriptor -&gt; unit" Usage="metadataSerializer.WriteEntityDescriptor (inputWriter, entityDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1743,6 +1807,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteIdentityProviderSingleSignOnDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor identityProviderSingleSignOnDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteIdentityProviderSingleSignOnDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteIdentityProviderSingleSignOnDescriptor(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::IdentityProviderSingleSignOnDescriptor ^ identityProviderSingleSignOnDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteIdentityProviderSingleSignOnDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor -&gt; unit&#xA;override this.WriteIdentityProviderSingleSignOnDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor -&gt; unit" Usage="metadataSerializer.WriteIdentityProviderSingleSignOnDescriptor (writer, identityProviderSingleSignOnDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1782,6 +1847,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteIndexedProtocolEndpoint(System.Xml.XmlWriter,System.IdentityModel.Metadata.IndexedProtocolEndpoint,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteIndexedProtocolEndpoint (writer As XmlWriter, indexedEP As IndexedProtocolEndpoint, element As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteIndexedProtocolEndpoint(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::IndexedProtocolEndpoint ^ indexedEP, System::Xml::XmlQualifiedName ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member WriteIndexedProtocolEndpoint : System.Xml.XmlWriter * System.IdentityModel.Metadata.IndexedProtocolEndpoint * System.Xml.XmlQualifiedName -&gt; unit&#xA;override this.WriteIndexedProtocolEndpoint : System.Xml.XmlWriter * System.IdentityModel.Metadata.IndexedProtocolEndpoint * System.Xml.XmlQualifiedName -&gt; unit" Usage="metadataSerializer.WriteIndexedProtocolEndpoint (writer, indexedEP, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1818,6 +1884,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteKeyDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.KeyDescriptor keyDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteKeyDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.KeyDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteKeyDescriptor(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::KeyDescriptor ^ keyDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteKeyDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.KeyDescriptor -&gt; unit&#xA;override this.WriteKeyDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.KeyDescriptor -&gt; unit" Usage="metadataSerializer.WriteKeyDescriptor (writer, keyDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1849,6 +1916,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteLocalizedName(System.Xml.XmlWriter,System.IdentityModel.Metadata.LocalizedName,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteLocalizedName (writer As XmlWriter, name As LocalizedName, element As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteLocalizedName(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::LocalizedName ^ name, System::Xml::XmlQualifiedName ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member WriteLocalizedName : System.Xml.XmlWriter * System.IdentityModel.Metadata.LocalizedName * System.Xml.XmlQualifiedName -&gt; unit&#xA;override this.WriteLocalizedName : System.Xml.XmlWriter * System.IdentityModel.Metadata.LocalizedName * System.Xml.XmlQualifiedName -&gt; unit" Usage="metadataSerializer.WriteLocalizedName (writer, name, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1886,6 +1954,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteLocalizedUri(System.Xml.XmlWriter,System.IdentityModel.Metadata.LocalizedUri,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteLocalizedUri (writer As XmlWriter, uri As LocalizedUri, element As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteLocalizedUri(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::LocalizedUri ^ uri, System::Xml::XmlQualifiedName ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member WriteLocalizedUri : System.Xml.XmlWriter * System.IdentityModel.Metadata.LocalizedUri * System.Xml.XmlQualifiedName -&gt; unit&#xA;override this.WriteLocalizedUri : System.Xml.XmlWriter * System.IdentityModel.Metadata.LocalizedUri * System.Xml.XmlQualifiedName -&gt; unit" Usage="metadataSerializer.WriteLocalizedUri (writer, uri, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1931,6 +2000,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteMetadata(class System.IO.Stream stream, class System.IdentityModel.Metadata.MetadataBase metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteMetadata(System.IO.Stream,System.IdentityModel.Metadata.MetadataBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMetadata(System::IO::Stream ^ stream, System::IdentityModel::Metadata::MetadataBase ^ metadata);" />
+      <MemberSignature Language="F#" Value="member this.WriteMetadata : System.IO.Stream * System.IdentityModel.Metadata.MetadataBase -&gt; unit" Usage="metadataSerializer.WriteMetadata (stream, metadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1962,6 +2032,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteMetadata(System.Xml.XmlWriter,System.IdentityModel.Metadata.MetadataBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteMetadata (writer As XmlWriter, metadata As MetadataBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMetadata(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::MetadataBase ^ metadata);" />
+      <MemberSignature Language="F#" Value="member this.WriteMetadata : System.Xml.XmlWriter * System.IdentityModel.Metadata.MetadataBase -&gt; unit" Usage="metadataSerializer.WriteMetadata (writer, metadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1992,6 +2063,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteMetadataCore(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.MetadataBase metadataBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteMetadataCore(System.Xml.XmlWriter,System.IdentityModel.Metadata.MetadataBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteMetadataCore(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::MetadataBase ^ metadataBase);" />
+      <MemberSignature Language="F#" Value="abstract member WriteMetadataCore : System.Xml.XmlWriter * System.IdentityModel.Metadata.MetadataBase -&gt; unit&#xA;override this.WriteMetadataCore : System.Xml.XmlWriter * System.IdentityModel.Metadata.MetadataBase -&gt; unit" Usage="metadataSerializer.WriteMetadataCore (writer, metadataBase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2024,6 +2096,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteOrganization(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.Organization organization) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteOrganization(System.Xml.XmlWriter,System.IdentityModel.Metadata.Organization)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteOrganization(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::Organization ^ organization);" />
+      <MemberSignature Language="F#" Value="abstract member WriteOrganization : System.Xml.XmlWriter * System.IdentityModel.Metadata.Organization -&gt; unit&#xA;override this.WriteOrganization : System.Xml.XmlWriter * System.IdentityModel.Metadata.Organization -&gt; unit" Usage="metadataSerializer.WriteOrganization (writer, organization)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2055,6 +2128,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteProtocolEndpoint(System.Xml.XmlWriter,System.IdentityModel.Metadata.ProtocolEndpoint,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteProtocolEndpoint (writer As XmlWriter, endpoint As ProtocolEndpoint, element As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteProtocolEndpoint(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::ProtocolEndpoint ^ endpoint, System::Xml::XmlQualifiedName ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member WriteProtocolEndpoint : System.Xml.XmlWriter * System.IdentityModel.Metadata.ProtocolEndpoint * System.Xml.XmlQualifiedName -&gt; unit&#xA;override this.WriteProtocolEndpoint : System.Xml.XmlWriter * System.IdentityModel.Metadata.ProtocolEndpoint * System.Xml.XmlQualifiedName -&gt; unit" Usage="metadataSerializer.WriteProtocolEndpoint (writer, endpoint, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2091,6 +2165,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteRoleDescriptorAttributes(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.RoleDescriptor roleDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteRoleDescriptorAttributes(System.Xml.XmlWriter,System.IdentityModel.Metadata.RoleDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteRoleDescriptorAttributes(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::RoleDescriptor ^ roleDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteRoleDescriptorAttributes : System.Xml.XmlWriter * System.IdentityModel.Metadata.RoleDescriptor -&gt; unit&#xA;override this.WriteRoleDescriptorAttributes : System.Xml.XmlWriter * System.IdentityModel.Metadata.RoleDescriptor -&gt; unit" Usage="metadataSerializer.WriteRoleDescriptorAttributes (writer, roleDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2125,6 +2200,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteRoleDescriptorElements(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.RoleDescriptor roleDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteRoleDescriptorElements(System.Xml.XmlWriter,System.IdentityModel.Metadata.RoleDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteRoleDescriptorElements(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::RoleDescriptor ^ roleDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteRoleDescriptorElements : System.Xml.XmlWriter * System.IdentityModel.Metadata.RoleDescriptor -&gt; unit&#xA;override this.WriteRoleDescriptorElements : System.Xml.XmlWriter * System.IdentityModel.Metadata.RoleDescriptor -&gt; unit" Usage="metadataSerializer.WriteRoleDescriptorElements (writer, roleDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2161,6 +2237,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSecurityTokenServiceDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.SecurityTokenServiceDescriptor securityTokenServiceDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteSecurityTokenServiceDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.SecurityTokenServiceDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteSecurityTokenServiceDescriptor(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::SecurityTokenServiceDescriptor ^ securityTokenServiceDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteSecurityTokenServiceDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.SecurityTokenServiceDescriptor -&gt; unit&#xA;override this.WriteSecurityTokenServiceDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.SecurityTokenServiceDescriptor -&gt; unit" Usage="metadataSerializer.WriteSecurityTokenServiceDescriptor (writer, securityTokenServiceDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2199,6 +2276,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteServiceProviderSingleSignOnDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor serviceProviderSingleSignOnDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteServiceProviderSingleSignOnDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteServiceProviderSingleSignOnDescriptor(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::ServiceProviderSingleSignOnDescriptor ^ serviceProviderSingleSignOnDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteServiceProviderSingleSignOnDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor -&gt; unit&#xA;override this.WriteServiceProviderSingleSignOnDescriptor : System.Xml.XmlWriter * System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor -&gt; unit" Usage="metadataSerializer.WriteServiceProviderSingleSignOnDescriptor (writer, serviceProviderSingleSignOnDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2233,6 +2311,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSingleSignOnDescriptorAttributes(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteSingleSignOnDescriptorAttributes(System.Xml.XmlWriter,System.IdentityModel.Metadata.SingleSignOnDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteSingleSignOnDescriptorAttributes(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::SingleSignOnDescriptor ^ singleSignOnDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteSingleSignOnDescriptorAttributes : System.Xml.XmlWriter * System.IdentityModel.Metadata.SingleSignOnDescriptor -&gt; unit&#xA;override this.WriteSingleSignOnDescriptorAttributes : System.Xml.XmlWriter * System.IdentityModel.Metadata.SingleSignOnDescriptor -&gt; unit" Usage="metadataSerializer.WriteSingleSignOnDescriptorAttributes (writer, singleSignOnDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2263,6 +2342,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSingleSignOnDescriptorElements(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteSingleSignOnDescriptorElements(System.Xml.XmlWriter,System.IdentityModel.Metadata.SingleSignOnDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteSingleSignOnDescriptorElements(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::SingleSignOnDescriptor ^ singleSignOnDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteSingleSignOnDescriptorElements : System.Xml.XmlWriter * System.IdentityModel.Metadata.SingleSignOnDescriptor -&gt; unit&#xA;override this.WriteSingleSignOnDescriptorElements : System.Xml.XmlWriter * System.IdentityModel.Metadata.SingleSignOnDescriptor -&gt; unit" Usage="metadataSerializer.WriteSingleSignOnDescriptorElements (writer, singleSignOnDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2294,6 +2374,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteWebServiceDescriptorAttributes(System.Xml.XmlWriter,System.IdentityModel.Metadata.WebServiceDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteWebServiceDescriptorAttributes (writer As XmlWriter, wsDescriptor As WebServiceDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteWebServiceDescriptorAttributes(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::WebServiceDescriptor ^ wsDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteWebServiceDescriptorAttributes : System.Xml.XmlWriter * System.IdentityModel.Metadata.WebServiceDescriptor -&gt; unit&#xA;override this.WriteWebServiceDescriptorAttributes : System.Xml.XmlWriter * System.IdentityModel.Metadata.WebServiceDescriptor -&gt; unit" Usage="metadataSerializer.WriteWebServiceDescriptorAttributes (writer, wsDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2325,6 +2406,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteWebServiceDescriptorElements(System.Xml.XmlWriter,System.IdentityModel.Metadata.WebServiceDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteWebServiceDescriptorElements (writer As XmlWriter, wsDescriptor As WebServiceDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteWebServiceDescriptorElements(System::Xml::XmlWriter ^ writer, System::IdentityModel::Metadata::WebServiceDescriptor ^ wsDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member WriteWebServiceDescriptorElements : System.Xml.XmlWriter * System.IdentityModel.Metadata.WebServiceDescriptor -&gt; unit&#xA;override this.WriteWebServiceDescriptorElements : System.Xml.XmlWriter * System.IdentityModel.Metadata.WebServiceDescriptor -&gt; unit" Usage="metadataSerializer.WriteWebServiceDescriptorElements (writer, wsDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

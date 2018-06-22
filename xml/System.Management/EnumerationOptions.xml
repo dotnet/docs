@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.EnumerationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class EnumerationOptions&#xA;Inherits ManagementOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumerationOptions : System::Management::ManagementOptions" />
+  <TypeSignature Language="F#" Value="type EnumerationOptions = class&#xA;    inherit ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.EnumerationOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection, timeout As TimeSpan, blockSize As Integer, rewindable As Boolean, returnImmediatley As Boolean, useAmendedQualifiers As Boolean, ensureLocatable As Boolean, prototypeOnly As Boolean, directRead As Boolean, enumerateDeep As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumerationOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout, int blockSize, bool rewindable, bool returnImmediatley, bool useAmendedQualifiers, bool ensureLocatable, bool prototypeOnly, bool directRead, bool enumerateDeep);" />
+      <MemberSignature Language="F#" Value="new System.Management.EnumerationOptions : System.Management.ManagementNamedValueCollection * TimeSpan * int * bool * bool * bool * bool * bool * bool * bool -&gt; System.Management.EnumerationOptions" Usage="new System.Management.EnumerationOptions (context, timeout, blockSize, rewindable, returnImmediatley, useAmendedQualifiers, ensureLocatable, prototypeOnly, directRead, enumerateDeep)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.BlockSize" />
       <MemberSignature Language="VB.NET" Value="Public Property BlockSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BlockSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BlockSize : int with get, set" Usage="System.Management.EnumerationOptions.BlockSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.EnumerationOptions.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="enumerationOptions.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -209,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.DirectRead" />
       <MemberSignature Language="VB.NET" Value="Public Property DirectRead As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DirectRead { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DirectRead : bool with get, set" Usage="System.Management.EnumerationOptions.DirectRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.EnsureLocatable" />
       <MemberSignature Language="VB.NET" Value="Public Property EnsureLocatable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnsureLocatable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnsureLocatable : bool with get, set" Usage="System.Management.EnumerationOptions.EnsureLocatable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -281,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.EnumerateDeep" />
       <MemberSignature Language="VB.NET" Value="Public Property EnumerateDeep As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnumerateDeep { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnumerateDeep : bool with get, set" Usage="System.Management.EnumerationOptions.EnumerateDeep" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -321,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.PrototypeOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property PrototypeOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrototypeOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PrototypeOnly : bool with get, set" Usage="System.Management.EnumerationOptions.PrototypeOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -353,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.ReturnImmediately" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnImmediately As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnImmediately { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnImmediately : bool with get, set" Usage="System.Management.EnumerationOptions.ReturnImmediately" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -385,6 +394,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.Rewindable" />
       <MemberSignature Language="VB.NET" Value="Public Property Rewindable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Rewindable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Rewindable : bool with get, set" Usage="System.Management.EnumerationOptions.Rewindable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -417,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.UseAmendedQualifiers" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAmendedQualifiers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAmendedQualifiers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseAmendedQualifiers : bool with get, set" Usage="System.Management.EnumerationOptions.UseAmendedQualifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

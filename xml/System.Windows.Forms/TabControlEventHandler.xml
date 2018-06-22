@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControlEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TabControlEventHandler(sender As Object, e As TabControlEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TabControlEventHandler(System::Object ^ sender, TabControlEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TabControlEventHandler = delegate of obj * TabControlEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

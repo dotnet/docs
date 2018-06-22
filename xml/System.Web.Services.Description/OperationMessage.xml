@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationMessage" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class OperationMessage&#xA;Inherits NamedItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class OperationMessage abstract : System::Web::Services::Description::NamedItem" />
+  <TypeSignature Language="F#" Value="type OperationMessage = class&#xA;    inherit NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationMessage.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Message { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.Xml.XmlQualifiedName with get, set" Usage="System.Web.Services.Description.OperationMessage.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationMessage.Operation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As Operation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Operation ^ Operation { System::Web::Services::Description::Operation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : System.Web.Services.Description.Operation" Usage="System.Web.Services.Description.OperationMessage.Operation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

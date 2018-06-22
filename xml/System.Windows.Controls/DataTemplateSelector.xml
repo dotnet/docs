@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataTemplateSelector" />
   <TypeSignature Language="VB.NET" Value="Public Class DataTemplateSelector" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTemplateSelector" />
+  <TypeSignature Language="F#" Value="type DataTemplateSelector = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataTemplateSelector.SelectTemplate(System.Object,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SelectTemplate (item As Object, container As DependencyObject) As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::DataTemplate ^ SelectTemplate(System::Object ^ item, System::Windows::DependencyObject ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member SelectTemplate : obj * System.Windows.DependencyObject -&gt; System.Windows.DataTemplate&#xA;override this.SelectTemplate : obj * System.Windows.DependencyObject -&gt; System.Windows.DataTemplate" Usage="dataTemplateSelector.SelectTemplate (item, container)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

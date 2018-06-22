@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryHive" />
   <TypeSignature Language="VB.NET" Value="Public Enum RegistryHive" />
   <TypeSignature Language="C++ CLI" Value="public enum class RegistryHive" />
+  <TypeSignature Language="F#" Value="type RegistryHive = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryHive.ClassesRoot" />
       <MemberSignature Language="VB.NET" Value="ClassesRoot" />
       <MemberSignature Language="C++ CLI" Value="ClassesRoot" />
+      <MemberSignature Language="F#" Value="ClassesRoot = -2147483648" Usage="Microsoft.Win32.RegistryHive.ClassesRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryHive.CurrentConfig" />
       <MemberSignature Language="VB.NET" Value="CurrentConfig" />
       <MemberSignature Language="C++ CLI" Value="CurrentConfig" />
+      <MemberSignature Language="F#" Value="CurrentConfig = -2147483643" Usage="Microsoft.Win32.RegistryHive.CurrentConfig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryHive.CurrentUser" />
       <MemberSignature Language="VB.NET" Value="CurrentUser" />
       <MemberSignature Language="C++ CLI" Value="CurrentUser" />
+      <MemberSignature Language="F#" Value="CurrentUser = -2147483647" Usage="Microsoft.Win32.RegistryHive.CurrentUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryHive.DynData" />
       <MemberSignature Language="VB.NET" Value="DynData" />
       <MemberSignature Language="C++ CLI" Value="DynData" />
+      <MemberSignature Language="F#" Value="DynData = -2147483642" Usage="Microsoft.Win32.RegistryHive.DynData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryHive.LocalMachine" />
       <MemberSignature Language="VB.NET" Value="LocalMachine" />
       <MemberSignature Language="C++ CLI" Value="LocalMachine" />
+      <MemberSignature Language="F#" Value="LocalMachine = -2147483646" Usage="Microsoft.Win32.RegistryHive.LocalMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryHive.PerformanceData" />
       <MemberSignature Language="VB.NET" Value="PerformanceData" />
       <MemberSignature Language="C++ CLI" Value="PerformanceData" />
+      <MemberSignature Language="F#" Value="PerformanceData = -2147483644" Usage="Microsoft.Win32.RegistryHive.PerformanceData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryHive.Users" />
       <MemberSignature Language="VB.NET" Value="Users" />
       <MemberSignature Language="C++ CLI" Value="Users" />
+      <MemberSignature Language="F#" Value="Users = -2147483645" Usage="Microsoft.Win32.RegistryHive.Users" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReliableSession" />
   <TypeSignature Language="VB.NET" Value="Public Class ReliableSession" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReliableSession" />
+  <TypeSignature Language="F#" Value="type ReliableSession = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binding As ReliableSessionBindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReliableSession(System::ServiceModel::Channels::ReliableSessionBindingElement ^ binding);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ReliableSession : System.ServiceModel.Channels.ReliableSessionBindingElement -&gt; System.ServiceModel.ReliableSession" Usage="new System.ServiceModel.ReliableSession binding" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableSession.InactivityTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property InactivityTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan InactivityTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.InactivityTimeout : TimeSpan with get, set" Usage="System.ServiceModel.ReliableSession.InactivityTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableSession.Ordered" />
       <MemberSignature Language="VB.NET" Value="Public Property Ordered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Ordered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Ordered : bool with get, set" Usage="System.ServiceModel.ReliableSession.Ordered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

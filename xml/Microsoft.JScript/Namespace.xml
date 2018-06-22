@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Namespace" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Namespace" />
   <TypeSignature Language="C++ CLI" Value="public ref class Namespace sealed" />
+  <TypeSignature Language="F#" Value="type Namespace = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Namespace.GetNamespace(System.String,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamespace (name As String, engine As VsaEngine) As Namespace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::Namespace ^ GetNamespace(System::String ^ name, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member GetNamespace : string * Microsoft.JScript.Vsa.VsaEngine -&gt; Microsoft.JScript.Namespace" Usage="Microsoft.JScript.Namespace.GetNamespace (name, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

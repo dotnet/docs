@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Tablet" />
   <TypeSignature Language="VB.NET" Value="Public Class Tablet" />
   <TypeSignature Language="C++ CLI" Value="public ref class Tablet abstract sealed" />
+  <TypeSignature Language="F#" Value="type Tablet = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Tablet.CurrentTabletDevice" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentTabletDevice As TabletDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::TabletDevice ^ CurrentTabletDevice { System::Windows::Input::TabletDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentTabletDevice : System.Windows.Input.TabletDevice" Usage="System.Windows.Input.Tablet.CurrentTabletDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Tablet.TabletDevices" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TabletDevices As TabletDeviceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::TabletDeviceCollection ^ TabletDevices { System::Windows::Input::TabletDeviceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabletDevices : System.Windows.Input.TabletDeviceCollection" Usage="System.Windows.Input.Tablet.TabletDevices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

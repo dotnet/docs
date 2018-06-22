@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.TableRowStructure" />
   <TypeSignature Language="VB.NET" Value="Public Class TableRowStructure&#xA;Inherits SemanticBasicElement&#xA;Implements IAddChild, IEnumerable(Of TableCellStructure)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableRowStructure : System::Windows::Documents::DocumentStructures::SemanticBasicElement, System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::TableCellStructure ^&gt;, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type TableRowStructure = class&#xA;    inherit SemanticBasicElement&#xA;    interface IAddChild&#xA;    interface seq&lt;TableCellStructure&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableRowStructure.Add(System.Windows.Documents.DocumentStructures.TableCellStructure)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (tableCell As TableCellStructure)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::TableCellStructure ^ tableCell);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.TableCellStructure -&gt; unit" Usage="tableRowStructure.Add tableCell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

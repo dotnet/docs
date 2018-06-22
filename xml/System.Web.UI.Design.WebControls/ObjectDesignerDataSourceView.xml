@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectDesignerDataSourceView&#xA;Inherits DesignerDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectDesignerDataSourceView : System::Web::UI::Design::DesignerDataSourceView" />
+  <TypeSignature Language="F#" Value="type ObjectDesignerDataSourceView = class&#xA;    inherit DesignerDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.#ctor(System.Web.UI.Design.WebControls.ObjectDataSourceDesigner,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ObjectDataSourceDesigner, viewName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDesignerDataSourceView(System::Web::UI::Design::WebControls::ObjectDataSourceDesigner ^ owner, System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView : System.Web.UI.Design.WebControls.ObjectDataSourceDesigner * string -&gt; System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" Usage="new System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView (owner, viewName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanDelete" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanDelete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanDelete { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanDelete : bool" Usage="System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanDelete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanInsert" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanInsert As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanInsert { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanInsert : bool" Usage="System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanPage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanPage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanPage { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanPage : bool" Usage="System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanRetrieveTotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRetrieveTotalRowCount As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRetrieveTotalRowCount { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRetrieveTotalRowCount : bool" Usage="System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanRetrieveTotalRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanSort" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSort As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSort : bool" Usage="System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanSort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanUpdate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanUpdate : bool" Usage="System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeData (minimumRows As Integer, ByRef isSampleData As Boolean) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerable ^ GetDesignTimeData(int minimumRows, [Runtime::InteropServices::Out] bool % isSampleData);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeData : int *  -&gt; System.Collections.IEnumerable" Usage="objectDesignerDataSourceView.GetDesignTimeData (minimumRows, isSampleData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Schema As IDataSourceViewSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::IDataSourceViewSchema ^ Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Web.UI.Design.IDataSourceViewSchema" Usage="System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

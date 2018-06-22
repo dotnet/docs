@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.CompressionOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompressionOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompressionOption" />
+  <TypeSignature Language="F#" Value="type CompressionOption = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Fast" />
       <MemberSignature Language="VB.NET" Value="Fast" />
       <MemberSignature Language="C++ CLI" Value="Fast" />
+      <MemberSignature Language="F#" Value="Fast = 2" Usage="System.IO.Packaging.CompressionOption.Fast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Maximum" />
       <MemberSignature Language="VB.NET" Value="Maximum" />
       <MemberSignature Language="C++ CLI" Value="Maximum" />
+      <MemberSignature Language="F#" Value="Maximum = 1" Usage="System.IO.Packaging.CompressionOption.Maximum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.IO.Packaging.CompressionOption.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.NotCompressed" />
       <MemberSignature Language="VB.NET" Value="NotCompressed" />
       <MemberSignature Language="C++ CLI" Value="NotCompressed" />
+      <MemberSignature Language="F#" Value="NotCompressed = -1" Usage="System.IO.Packaging.CompressionOption.NotCompressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.SuperFast" />
       <MemberSignature Language="VB.NET" Value="SuperFast" />
       <MemberSignature Language="C++ CLI" Value="SuperFast" />
+      <MemberSignature Language="F#" Value="SuperFast = 3" Usage="System.IO.Packaging.CompressionOption.SuperFast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

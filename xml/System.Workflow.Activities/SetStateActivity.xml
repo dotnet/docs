@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SetStateActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SetStateActivity&#xA;Inherits Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class SetStateActivity sealed : System::Workflow::ComponentModel::Activity" />
+  <TypeSignature Language="F#" Value="type SetStateActivity = class&#xA;    inherit Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SetStateActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SetStateActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.SetStateActivity : string -&gt; System.Workflow.Activities.SetStateActivity" Usage="new System.Workflow.Activities.SetStateActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SetStateActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="setStateActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SetStateActivity.TargetStateName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetStateName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetStateName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetStateName : string with get, set" Usage="System.Workflow.Activities.SetStateActivity.TargetStateName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.SetStateActivity.TargetStateNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetStateNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ TargetStateNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetStateNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.SetStateActivity.TargetStateNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

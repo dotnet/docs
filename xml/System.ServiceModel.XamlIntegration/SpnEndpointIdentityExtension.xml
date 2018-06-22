@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.XamlIntegration.SpnEndpointIdentityExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class SpnEndpointIdentityExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpnEndpointIdentityExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type SpnEndpointIdentityExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.SpnEndpointIdentityExtension.#ctor(System.ServiceModel.SpnEndpointIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As SpnEndpointIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpnEndpointIdentityExtension(System::ServiceModel::SpnEndpointIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.XamlIntegration.SpnEndpointIdentityExtension : System.ServiceModel.SpnEndpointIdentity -&gt; System.ServiceModel.XamlIntegration.SpnEndpointIdentityExtension" Usage="new System.ServiceModel.XamlIntegration.SpnEndpointIdentityExtension identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.SpnEndpointIdentityExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="spnEndpointIdentityExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XamlIntegration.SpnEndpointIdentityExtension.SpnName" />
       <MemberSignature Language="VB.NET" Value="Public Property SpnName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SpnName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SpnName : string with get, set" Usage="System.ServiceModel.XamlIntegration.SpnEndpointIdentityExtension.SpnName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

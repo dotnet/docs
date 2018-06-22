@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ChannelBindingKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChannelBindingKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChannelBindingKind" />
+  <TypeSignature Language="F#" Value="type ChannelBindingKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint" />
       <MemberSignature Language="VB.NET" Value="Endpoint" />
       <MemberSignature Language="C++ CLI" Value="Endpoint" />
+      <MemberSignature Language="F#" Value="Endpoint = 26" Usage="System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unique" />
       <MemberSignature Language="VB.NET" Value="Unique" />
       <MemberSignature Language="C++ CLI" Value="Unique" />
+      <MemberSignature Language="F#" Value="Unique = 25" Usage="System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unique" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

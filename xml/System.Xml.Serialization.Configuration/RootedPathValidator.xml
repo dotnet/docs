@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.RootedPathValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class RootedPathValidator&#xA;Inherits ConfigurationValidatorBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RootedPathValidator : System::Configuration::ConfigurationValidatorBase" />
+  <TypeSignature Language="F#" Value="type RootedPathValidator = class&#xA;    inherit ConfigurationValidatorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.RootedPathValidator.CanValidate(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanValidate(Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.CanValidate : Type -&gt; bool" Usage="rootedPathValidator.CanValidate type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.RootedPathValidator.Validate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; unit" Usage="rootedPathValidator.Validate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

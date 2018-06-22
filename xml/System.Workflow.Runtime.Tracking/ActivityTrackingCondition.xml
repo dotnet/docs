@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ActivityTrackingCondition" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityTrackingCondition&#xA;Inherits TrackingCondition" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityTrackingCondition : System::Workflow::Runtime::Tracking::TrackingCondition" />
+  <TypeSignature Language="F#" Value="type ActivityTrackingCondition = class&#xA;    inherit TrackingCondition" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingCondition(System::String ^ member, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingCondition : string * string -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingCondition" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingCondition (member, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Member As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Operator As ComparisonOperator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::Runtime::Tracking::ComparisonOperator Operator { System::Workflow::Runtime::Tracking::ComparisonOperator get(); void set(System::Workflow::Runtime::Tracking::ComparisonOperator value); };" />
+      <MemberSignature Language="F#" Value="member this.Operator : System.Workflow.Runtime.Tracking.ComparisonOperator with get, set" Usage="System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged" />
   <TypeSignature Language="VB.NET" Value="Public Interface INotifyComposablePartCatalogChanged" />
   <TypeSignature Language="C++ CLI" Value="public interface class INotifyComposablePartCatalogChanged" />
+  <TypeSignature Language="F#" Value="type INotifyComposablePartCatalogChanged = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changed" />
       <MemberSignature Language="VB.NET" Value="Event Changed As EventHandler(Of ComposablePartCatalogChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^&gt; ^ Changed;" />
+      <MemberSignature Language="F#" Value="member this.Changed : EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; " Usage="member this.Changed : System.EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changing" />
       <MemberSignature Language="VB.NET" Value="Event Changing As EventHandler(Of ComposablePartCatalogChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::Composition::Hosting::ComposablePartCatalogChangeEventArgs ^&gt; ^ Changing;" />
+      <MemberSignature Language="F#" Value="member this.Changing : EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; " Usage="member this.Changing : System.EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

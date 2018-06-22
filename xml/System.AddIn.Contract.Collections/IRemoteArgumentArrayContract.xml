@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteArgumentArrayContract&#xA;Implements IRemoteArgumentCollectionContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteArgumentArrayContract : System::AddIn::Contract::Collections::IRemoteArgumentCollectionContract" />
+  <TypeSignature Language="F#" Value="type IRemoteArgumentArrayContract = interface&#xA;    interface IRemoteArgumentCollectionContract&#xA;    interface IRemoteArgumentEnumerableContract&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract.GetItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItem (index As Integer) As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument GetItem(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetItem : int -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteArgumentArrayContract.GetItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract.SetItem(System.Int32,System.AddIn.Contract.RemoteArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetItem (index As Integer, value As RemoteArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(int index, System::AddIn::Contract::RemoteArgument value);" />
+      <MemberSignature Language="F#" Value="abstract member SetItem : int * System.AddIn.Contract.RemoteArgument -&gt; unit" Usage="iRemoteArgumentArrayContract.SetItem (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

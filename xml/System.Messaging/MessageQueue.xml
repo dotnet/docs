@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueue" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQueue&#xA;Inherits Component&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQueue : System::ComponentModel::Component, System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type MessageQueue = class&#xA;    inherit Component&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -146,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueue : string -&gt; System.Messaging.MessageQueue" Usage="new System.Messaging.MessageQueue path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -229,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, sharedModeDenyReceive As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path, bool sharedModeDenyReceive);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueue : string * bool -&gt; System.Messaging.MessageQueue" Usage="new System.Messaging.MessageQueue (path, sharedModeDenyReceive)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -320,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String,System.Messaging.QueueAccessMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, accessMode As QueueAccessMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path, System::Messaging::QueueAccessMode accessMode);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueue : string * System.Messaging.QueueAccessMode -&gt; System.Messaging.MessageQueue" Usage="new System.Messaging.MessageQueue (path, accessMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -342,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, sharedModeDenyReceive As Boolean, enableCache As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path, bool sharedModeDenyReceive, bool enableCache);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueue : string * bool * bool -&gt; System.Messaging.MessageQueue" Usage="new System.Messaging.MessageQueue (path, sharedModeDenyReceive, enableCache)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -378,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String,System.Boolean,System.Boolean,System.Messaging.QueueAccessMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, sharedModeDenyReceive As Boolean, enableCache As Boolean, accessMode As QueueAccessMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path, bool sharedModeDenyReceive, bool enableCache, System::Messaging::QueueAccessMode accessMode);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueue : string * bool * bool * System.Messaging.QueueAccessMode -&gt; System.Messaging.MessageQueue" Usage="new System.Messaging.MessageQueue (path, sharedModeDenyReceive, enableCache, accessMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -406,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.AccessMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessMode As QueueAccessMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::QueueAccessMode AccessMode { System::Messaging::QueueAccessMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessMode : System.Messaging.QueueAccessMode" Usage="System.Messaging.MessageQueue.AccessMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -433,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Authenticate" />
       <MemberSignature Language="VB.NET" Value="Public Property Authenticate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Authenticate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Authenticate : bool with get, set" Usage="System.Messaging.MessageQueue.Authenticate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -492,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.BasePriority" />
       <MemberSignature Language="VB.NET" Value="Public Property BasePriority As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short BasePriority { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.BasePriority : int16 with get, set" Usage="System.Messaging.MessageQueue.BasePriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -560,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginPeek () As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek();" />
+      <MemberSignature Language="F#" Value="member this.BeginPeek : unit -&gt; IAsyncResult" Usage="messageQueue.BeginPeek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -626,6 +636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginPeek (timeout As TimeSpan) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.BeginPeek : TimeSpan -&gt; IAsyncResult" Usage="messageQueue.BeginPeek timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -699,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek(System.TimeSpan,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginPeek (timeout As TimeSpan, stateObject As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek(TimeSpan timeout, System::Object ^ stateObject);" />
+      <MemberSignature Language="F#" Value="member this.BeginPeek : TimeSpan * obj -&gt; IAsyncResult" Usage="messageQueue.BeginPeek (timeout, stateObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -780,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek(System.TimeSpan,System.Object,System.AsyncCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginPeek (timeout As TimeSpan, stateObject As Object, callback As AsyncCallback) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek(TimeSpan timeout, System::Object ^ stateObject, AsyncCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.BeginPeek : TimeSpan * obj * AsyncCallback -&gt; IAsyncResult" Usage="messageQueue.BeginPeek (timeout, stateObject, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -852,6 +865,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginPeek(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, valuetype System.Messaging.PeekAction action, object state, class System.AsyncCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek(System.TimeSpan,System.Messaging.Cursor,System.Messaging.PeekAction,System.Object,System.AsyncCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Messaging::PeekAction action, System::Object ^ state, AsyncCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.BeginPeek : TimeSpan * System.Messaging.Cursor * System.Messaging.PeekAction * obj * AsyncCallback -&gt; IAsyncResult" Usage="messageQueue.BeginPeek (timeout, cursor, action, state, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -933,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive () As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive();" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : unit -&gt; IAsyncResult" Usage="messageQueue.BeginReceive " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1013,6 +1028,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (timeout As TimeSpan) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : TimeSpan -&gt; IAsyncResult" Usage="messageQueue.BeginReceive timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1093,6 +1109,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive(System.TimeSpan,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (timeout As TimeSpan, stateObject As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout, System::Object ^ stateObject);" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : TimeSpan * obj -&gt; IAsyncResult" Usage="messageQueue.BeginReceive (timeout, stateObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1179,6 +1196,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive(System.TimeSpan,System.Object,System.AsyncCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (timeout As TimeSpan, stateObject As Object, callback As AsyncCallback) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout, System::Object ^ stateObject, AsyncCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : TimeSpan * obj * AsyncCallback -&gt; IAsyncResult" Usage="messageQueue.BeginReceive (timeout, stateObject, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1263,6 +1281,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, object state, class System.AsyncCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive(System.TimeSpan,System.Messaging.Cursor,System.Object,System.AsyncCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Object ^ state, AsyncCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : TimeSpan * System.Messaging.Cursor * obj * AsyncCallback -&gt; IAsyncResult" Usage="messageQueue.BeginReceive (timeout, cursor, state, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1344,6 +1363,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRead { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.Messaging.MessageQueue.CanRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1403,6 +1423,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanWrite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.Messaging.MessageQueue.CanWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1462,6 +1483,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Category" />
       <MemberSignature Language="VB.NET" Value="Public Property Category As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Category { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.Category : Guid with get, set" Usage="System.Messaging.MessageQueue.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1524,6 +1546,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ClearConnectionCache" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearConnectionCache ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearConnectionCache();" />
+      <MemberSignature Language="F#" Value="static member ClearConnectionCache : unit -&gt; unit" Usage="System.Messaging.MessageQueue.ClearConnectionCache " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1567,6 +1590,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="messageQueue.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1639,6 +1663,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (path As String) As MessageQueue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::MessageQueue ^ Create(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Messaging.MessageQueue" Usage="System.Messaging.MessageQueue.Create path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1707,6 +1732,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Create(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (path As String, transactional As Boolean) As MessageQueue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::MessageQueue ^ Create(System::String ^ path, bool transactional);" />
+      <MemberSignature Language="F#" Value="static member Create : string * bool -&gt; System.Messaging.MessageQueue" Usage="System.Messaging.MessageQueue.Create (path, transactional)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1779,6 +1805,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.CreateCursor" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCursor () As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Cursor ^ CreateCursor();" />
+      <MemberSignature Language="F#" Value="member this.CreateCursor : unit -&gt; System.Messaging.Cursor" Usage="messageQueue.CreateCursor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1801,6 +1828,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.CreateTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreateTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreateTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateTime : DateTime" Usage="System.Messaging.MessageQueue.CreateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1856,6 +1884,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultPropertiesToSend As DefaultPropertiesToSend" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::DefaultPropertiesToSend ^ DefaultPropertiesToSend { System::Messaging::DefaultPropertiesToSend ^ get(); void set(System::Messaging::DefaultPropertiesToSend ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultPropertiesToSend : System.Messaging.DefaultPropertiesToSend with get, set" Usage="System.Messaging.MessageQueue.DefaultPropertiesToSend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1944,6 +1973,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Delete(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Delete(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member Delete : string -&gt; unit" Usage="System.Messaging.MessageQueue.Delete path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2014,6 +2044,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.DenySharedReceive" />
       <MemberSignature Language="VB.NET" Value="Public Property DenySharedReceive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DenySharedReceive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DenySharedReceive : bool with get, set" Usage="System.Messaging.MessageQueue.DenySharedReceive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2073,6 +2104,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="messageQueue.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2107,6 +2139,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.EnableConnectionCache" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property EnableConnectionCache As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableConnectionCache { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableConnectionCache : bool with get, set" Usage="System.Messaging.MessageQueue.EnableConnectionCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2159,6 +2192,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.EncryptionRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptionRequired As EncryptionRequired" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::EncryptionRequired EncryptionRequired { System::Messaging::EncryptionRequired get(); void set(System::Messaging::EncryptionRequired value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionRequired : System.Messaging.EncryptionRequired with get, set" Usage="System.Messaging.MessageQueue.EncryptionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2217,6 +2251,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.EndPeek(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndPeek (asyncResult As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ EndPeek(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndPeek : IAsyncResult -&gt; System.Messaging.Message" Usage="messageQueue.EndPeek asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2277,6 +2312,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.EndReceive(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndReceive (asyncResult As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ EndReceive(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndReceive : IAsyncResult -&gt; System.Messaging.Message" Usage="messageQueue.EndReceive asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2337,6 +2373,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (path As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member Exists : string -&gt; bool" Usage="System.Messaging.MessageQueue.Exists path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2416,6 +2453,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.FormatName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormatName : string" Usage="System.Messaging.MessageQueue.FormatName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2477,6 +2515,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Formatter" />
       <MemberSignature Language="VB.NET" Value="Public Property Formatter As IMessageFormatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::IMessageFormatter ^ Formatter { System::Messaging::IMessageFormatter ^ get(); void set(System::Messaging::IMessageFormatter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Formatter : System.Messaging.IMessageFormatter with get, set" Usage="System.Messaging.MessageQueue.Formatter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2556,6 +2595,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetAllMessages" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllMessages () As Message()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Messaging::Message ^&gt; ^ GetAllMessages();" />
+      <MemberSignature Language="F#" Value="member this.GetAllMessages : unit -&gt; System.Messaging.Message[]" Usage="messageQueue.GetAllMessages " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2608,6 +2648,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="messageQueue.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -2660,6 +2701,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMachineId(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMachineId (machineName As String) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid GetMachineId(System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member GetMachineId : string -&gt; Guid" Usage="System.Messaging.MessageQueue.GetMachineId machineName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2718,6 +2760,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMessageEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMessageEnumerator () As MessageEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::MessageEnumerator ^ GetMessageEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetMessageEnumerator : unit -&gt; System.Messaging.MessageEnumerator" Usage="messageQueue.GetMessageEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2778,6 +2821,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMessageEnumerator2" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMessageEnumerator2 () As MessageEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::MessageEnumerator ^ GetMessageEnumerator2();" />
+      <MemberSignature Language="F#" Value="member this.GetMessageEnumerator2 : unit -&gt; System.Messaging.MessageEnumerator" Usage="messageQueue.GetMessageEnumerator2 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2832,6 +2876,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMessageQueueEnumerator () As MessageQueueEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::MessageQueueEnumerator ^ GetMessageQueueEnumerator();" />
+      <MemberSignature Language="F#" Value="static member GetMessageQueueEnumerator : unit -&gt; System.Messaging.MessageQueueEnumerator" Usage="System.Messaging.MessageQueue.GetMessageQueueEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2886,6 +2931,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator(System.Messaging.MessageQueueCriteria)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMessageQueueEnumerator (criteria As MessageQueueCriteria) As MessageQueueEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::MessageQueueEnumerator ^ GetMessageQueueEnumerator(System::Messaging::MessageQueueCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="static member GetMessageQueueEnumerator : System.Messaging.MessageQueueCriteria -&gt; System.Messaging.MessageQueueEnumerator" Usage="System.Messaging.MessageQueue.GetMessageQueueEnumerator criteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2943,6 +2989,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPrivateQueuesByMachine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPrivateQueuesByMachine (machineName As String) As MessageQueue()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPrivateQueuesByMachine(System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member GetPrivateQueuesByMachine : string -&gt; System.Messaging.MessageQueue[]" Usage="System.Messaging.MessageQueue.GetPrivateQueuesByMachine machineName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3006,6 +3053,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueues" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueues () As MessageQueue()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueues();" />
+      <MemberSignature Language="F#" Value="static member GetPublicQueues : unit -&gt; System.Messaging.MessageQueue[]" Usage="System.Messaging.MessageQueue.GetPublicQueues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3056,6 +3104,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueues(System.Messaging.MessageQueueCriteria)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueues (criteria As MessageQueueCriteria) As MessageQueue()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueues(System::Messaging::MessageQueueCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="static member GetPublicQueues : System.Messaging.MessageQueueCriteria -&gt; System.Messaging.MessageQueue[]" Usage="System.Messaging.MessageQueue.GetPublicQueues criteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3110,6 +3159,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueuesByCategory(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueuesByCategory (category As Guid) As MessageQueue()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueuesByCategory(Guid category);" />
+      <MemberSignature Language="F#" Value="static member GetPublicQueuesByCategory : Guid -&gt; System.Messaging.MessageQueue[]" Usage="System.Messaging.MessageQueue.GetPublicQueuesByCategory category" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3165,6 +3215,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueuesByLabel(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueuesByLabel (label As String) As MessageQueue()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueuesByLabel(System::String ^ label);" />
+      <MemberSignature Language="F#" Value="static member GetPublicQueuesByLabel : string -&gt; System.Messaging.MessageQueue[]" Usage="System.Messaging.MessageQueue.GetPublicQueuesByLabel label" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3221,6 +3272,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueuesByMachine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueuesByMachine (machineName As String) As MessageQueue()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueuesByMachine(System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member GetPublicQueuesByMachine : string -&gt; System.Messaging.MessageQueue[]" Usage="System.Messaging.MessageQueue.GetPublicQueuesByMachine machineName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3277,6 +3329,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetSecurityContext" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSecurityContext () As SecurityContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::SecurityContext ^ GetSecurityContext();" />
+      <MemberSignature Language="F#" Value="static member GetSecurityContext : unit -&gt; System.Messaging.SecurityContext" Usage="System.Messaging.MessageQueue.GetSecurityContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3299,6 +3352,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Messaging.MessageQueue.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3352,6 +3406,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueue.InfiniteQueueSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InfiniteQueueSize As Long " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly long InfiniteQueueSize;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InfiniteQueueSize : int64" Usage="System.Messaging.MessageQueue.InfiniteQueueSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3387,6 +3442,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueue.InfiniteTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InfiniteTimeout As TimeSpan " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan InfiniteTimeout;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InfiniteTimeout : TimeSpan" Usage="System.Messaging.MessageQueue.InfiniteTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3424,6 +3480,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Messaging.MessageQueue.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3483,6 +3540,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.LastModifyTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModifyTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModifyTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastModifyTime : DateTime" Usage="System.Messaging.MessageQueue.LastModifyTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3539,6 +3597,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Messaging.MessageQueue.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3615,6 +3674,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MaximumJournalSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumJournalSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumJournalSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumJournalSize : int64 with get, set" Usage="System.Messaging.MessageQueue.MaximumJournalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3673,6 +3733,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MaximumQueueSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumQueueSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumQueueSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumQueueSize : int64 with get, set" Usage="System.Messaging.MessageQueue.MaximumQueueSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3732,6 +3793,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MessageReadPropertyFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageReadPropertyFilter As MessagePropertyFilter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::MessagePropertyFilter ^ MessageReadPropertyFilter { System::Messaging::MessagePropertyFilter ^ get(); void set(System::Messaging::MessagePropertyFilter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageReadPropertyFilter : System.Messaging.MessagePropertyFilter with get, set" Usage="System.Messaging.MessageQueue.MessageReadPropertyFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3841,6 +3903,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MulticastAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property MulticastAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MulticastAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MulticastAddress : string with get, set" Usage="System.Messaging.MessageQueue.MulticastAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3899,6 +3962,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Messaging.MessageQueue.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4007,6 +4071,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Function Peek () As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Peek();" />
+      <MemberSignature Language="F#" Value="member this.Peek : unit -&gt; System.Messaging.Message" Usage="messageQueue.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4067,6 +4132,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Peek(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Peek (timeout As TimeSpan) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Peek(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Peek : TimeSpan -&gt; System.Messaging.Message" Usage="messageQueue.Peek timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4127,6 +4193,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Peek(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, valuetype System.Messaging.PeekAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Peek(System.TimeSpan,System.Messaging.Cursor,System.Messaging.PeekAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Peek(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Messaging::PeekAction action);" />
+      <MemberSignature Language="F#" Value="member this.Peek : TimeSpan * System.Messaging.Cursor * System.Messaging.PeekAction -&gt; System.Messaging.Message" Usage="messageQueue.Peek (timeout, cursor, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4194,6 +4261,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekByCorrelationId(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function PeekByCorrelationId (correlationId As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekByCorrelationId(System::String ^ correlationId);" />
+      <MemberSignature Language="F#" Value="member this.PeekByCorrelationId : string -&gt; System.Messaging.Message" Usage="messageQueue.PeekByCorrelationId correlationId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4253,6 +4321,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekByCorrelationId(System.String,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function PeekByCorrelationId (correlationId As String, timeout As TimeSpan) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekByCorrelationId(System::String ^ correlationId, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.PeekByCorrelationId : string * TimeSpan -&gt; System.Messaging.Message" Usage="messageQueue.PeekByCorrelationId (correlationId, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4330,6 +4399,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekById(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function PeekById (id As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekById(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.PeekById : string -&gt; System.Messaging.Message" Usage="messageQueue.PeekById id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4386,6 +4456,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekById(System.String,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function PeekById (id As String, timeout As TimeSpan) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekById(System::String ^ id, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.PeekById : string * TimeSpan -&gt; System.Messaging.Message" Usage="messageQueue.PeekById (id, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4457,6 +4528,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekByLookupId(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function PeekByLookupId (lookupId As Long) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekByLookupId(long lookupId);" />
+      <MemberSignature Language="F#" Value="member this.PeekByLookupId : int64 -&gt; System.Messaging.Message" Usage="messageQueue.PeekByLookupId lookupId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4506,6 +4578,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekByLookupId(System.Messaging.MessageLookupAction,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function PeekByLookupId (action As MessageLookupAction, lookupId As Long) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekByLookupId(System::Messaging::MessageLookupAction action, long lookupId);" />
+      <MemberSignature Language="F#" Value="member this.PeekByLookupId : System.Messaging.MessageLookupAction * int64 -&gt; System.Messaging.Message" Usage="messageQueue.PeekByLookupId (action, lookupId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4568,6 +4641,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="E:System.Messaging.MessageQueue.PeekCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PeekCompleted As PeekCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Messaging::PeekCompletedEventHandler ^ PeekCompleted;" />
+      <MemberSignature Language="F#" Value="member this.PeekCompleted : System.Messaging.PeekCompletedEventHandler " Usage="member this.PeekCompleted : System.Messaging.PeekCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4617,6 +4691,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Purge" />
       <MemberSignature Language="VB.NET" Value="Public Sub Purge ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Purge();" />
+      <MemberSignature Language="F#" Value="member this.Purge : unit -&gt; unit" Usage="messageQueue.Purge " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4664,6 +4739,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.QueueName" />
       <MemberSignature Language="VB.NET" Value="Public Property QueueName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueueName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QueueName : string with get, set" Usage="System.Messaging.MessageQueue.QueueName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4731,6 +4807,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.ReadHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadHandle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ReadHandle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReadHandle : nativeint" Usage="System.Messaging.MessageQueue.ReadHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4791,6 +4868,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive () As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive();" />
+      <MemberSignature Language="F#" Value="member this.Receive : unit -&gt; System.Messaging.Message" Usage="messageQueue.Receive " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4846,6 +4924,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive (transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.Receive : System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageQueue.Receive transaction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4913,6 +4992,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive (transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.Receive : System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageQueue.Receive transactionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4978,6 +5058,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive (timeout As TimeSpan) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Receive : TimeSpan -&gt; System.Messaging.Message" Usage="messageQueue.Receive timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5042,6 +5123,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.Cursor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::Cursor ^ cursor);" />
+      <MemberSignature Language="F#" Value="member this.Receive : TimeSpan * System.Messaging.Cursor -&gt; System.Messaging.Message" Usage="messageQueue.Receive (timeout, cursor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5077,6 +5159,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive (timeout As TimeSpan, transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.Receive : TimeSpan * System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageQueue.Receive (timeout, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5152,6 +5235,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive (timeout As TimeSpan, transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.Receive : TimeSpan * System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageQueue.Receive (timeout, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5223,6 +5307,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.Cursor,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.Receive : TimeSpan * System.Messaging.Cursor * System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageQueue.Receive (timeout, cursor, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5296,6 +5381,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.Cursor,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.Receive : TimeSpan * System.Messaging.Cursor * System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageQueue.Receive (timeout, cursor, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5373,6 +5459,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByCorrelationId : string -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByCorrelationId correlationId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5434,6 +5521,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByCorrelationId : string * System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByCorrelationId (correlationId, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5508,6 +5596,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByCorrelationId : string * System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByCorrelationId (correlationId, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5577,6 +5666,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, timeout As TimeSpan) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByCorrelationId : string * TimeSpan -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByCorrelationId (correlationId, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5646,6 +5736,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.TimeSpan,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, timeout As TimeSpan, transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, TimeSpan timeout, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByCorrelationId : string * TimeSpan * System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByCorrelationId (correlationId, timeout, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5729,6 +5820,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.TimeSpan,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, timeout As TimeSpan, transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, TimeSpan timeout, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByCorrelationId : string * TimeSpan * System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByCorrelationId (correlationId, timeout, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5814,6 +5906,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveById : string -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveById id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5874,6 +5967,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveById : string * System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveById (id, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5948,6 +6042,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveById : string * System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveById (id, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6017,6 +6112,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, timeout As TimeSpan) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveById : string * TimeSpan -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveById (id, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6088,6 +6184,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.TimeSpan,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, timeout As TimeSpan, transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, TimeSpan timeout, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveById : string * TimeSpan * System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveById (id, timeout, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6173,6 +6270,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.TimeSpan,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, timeout As TimeSpan, transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, TimeSpan timeout, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveById : string * TimeSpan * System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveById (id, timeout, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6261,6 +6359,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByLookupId(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByLookupId (lookupId As Long) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByLookupId(long lookupId);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByLookupId : int64 -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByLookupId lookupId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6310,6 +6409,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByLookupId(System.Messaging.MessageLookupAction,System.Int64,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByLookupId (action As MessageLookupAction, lookupId As Long, transaction As MessageQueueTransaction) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByLookupId(System::Messaging::MessageLookupAction action, long lookupId, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByLookupId : System.Messaging.MessageLookupAction * int64 * System.Messaging.MessageQueueTransaction -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByLookupId (action, lookupId, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6380,6 +6480,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByLookupId(System.Messaging.MessageLookupAction,System.Int64,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveByLookupId (action As MessageLookupAction, lookupId As Long, transactionType As MessageQueueTransactionType) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByLookupId(System::Messaging::MessageLookupAction action, long lookupId, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.ReceiveByLookupId : System.Messaging.MessageLookupAction * int64 * System.Messaging.MessageQueueTransactionType -&gt; System.Messaging.Message" Usage="messageQueue.ReceiveByLookupId (action, lookupId, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6452,6 +6553,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="E:System.Messaging.MessageQueue.ReceiveCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ReceiveCompleted As ReceiveCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Messaging::ReceiveCompletedEventHandler ^ ReceiveCompleted;" />
+      <MemberSignature Language="F#" Value="member this.ReceiveCompleted : System.Messaging.ReceiveCompletedEventHandler " Usage="member this.ReceiveCompleted : System.Messaging.ReceiveCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6501,6 +6603,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="messageQueue.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6546,6 +6649,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ResetPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetPermissions ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetPermissions();" />
+      <MemberSignature Language="F#" Value="member this.ResetPermissions : unit -&gt; unit" Usage="messageQueue.ResetPermissions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6607,6 +6711,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="member this.Send : obj -&gt; unit" Usage="messageQueue.Send obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6675,6 +6780,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, transaction As MessageQueueTransaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.Send : obj * System.Messaging.MessageQueueTransaction -&gt; unit" Usage="messageQueue.Send (obj, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6756,6 +6862,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, transactionType As MessageQueueTransactionType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.Send : obj * System.Messaging.MessageQueueTransactionType -&gt; unit" Usage="messageQueue.Send (obj, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6825,6 +6932,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, label As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::String ^ label);" />
+      <MemberSignature Language="F#" Value="member this.Send : obj * string -&gt; unit" Usage="messageQueue.Send (obj, label)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6895,6 +7003,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.String,System.Messaging.MessageQueueTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, label As String, transaction As MessageQueueTransaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::String ^ label, System::Messaging::MessageQueueTransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.Send : obj * string * System.Messaging.MessageQueueTransaction -&gt; unit" Usage="messageQueue.Send (obj, label, transaction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6984,6 +7093,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.String,System.Messaging.MessageQueueTransactionType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, label As String, transactionType As MessageQueueTransactionType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::String ^ label, System::Messaging::MessageQueueTransactionType transactionType);" />
+      <MemberSignature Language="F#" Value="member this.Send : obj * string * System.Messaging.MessageQueueTransactionType -&gt; unit" Usage="messageQueue.Send (obj, label, transactionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7069,6 +7179,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.SetPermissions(System.Messaging.AccessControlList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPermissions (dacl As AccessControlList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPermissions(System::Messaging::AccessControlList ^ dacl);" />
+      <MemberSignature Language="F#" Value="member this.SetPermissions : System.Messaging.AccessControlList -&gt; unit" Usage="messageQueue.SetPermissions dacl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7180,6 +7291,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.SetPermissions(System.Messaging.MessageQueueAccessControlEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPermissions (ace As MessageQueueAccessControlEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPermissions(System::Messaging::MessageQueueAccessControlEntry ^ ace);" />
+      <MemberSignature Language="F#" Value="member this.SetPermissions : System.Messaging.MessageQueueAccessControlEntry -&gt; unit" Usage="messageQueue.SetPermissions ace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7270,6 +7382,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPermissions (user As String, rights As MessageQueueAccessRights)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPermissions(System::String ^ user, System::Messaging::MessageQueueAccessRights rights);" />
+      <MemberSignature Language="F#" Value="member this.SetPermissions : string * System.Messaging.MessageQueueAccessRights -&gt; unit" Usage="messageQueue.SetPermissions (user, rights)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7362,6 +7475,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights,System.Messaging.AccessControlEntryType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPermissions (user As String, rights As MessageQueueAccessRights, entryType As AccessControlEntryType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPermissions(System::String ^ user, System::Messaging::MessageQueueAccessRights rights, System::Messaging::AccessControlEntryType entryType);" />
+      <MemberSignature Language="F#" Value="member this.SetPermissions : string * System.Messaging.MessageQueueAccessRights * System.Messaging.AccessControlEntryType -&gt; unit" Usage="messageQueue.SetPermissions (user, rights, entryType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7454,6 +7568,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.SynchronizingObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SynchronizingObject : System.ComponentModel.ISynchronizeInvoke with get, set" Usage="System.Messaging.MessageQueue.SynchronizingObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7496,6 +7611,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Transactional" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transactional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Transactional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transactional : bool" Usage="System.Messaging.MessageQueue.Transactional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7566,6 +7682,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.UseJournalQueue" />
       <MemberSignature Language="VB.NET" Value="Public Property UseJournalQueue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseJournalQueue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseJournalQueue : bool with get, set" Usage="System.Messaging.MessageQueue.UseJournalQueue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7624,6 +7741,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.WriteHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WriteHandle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr WriteHandle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.WriteHandle : nativeint" Usage="System.Messaging.MessageQueue.WriteHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

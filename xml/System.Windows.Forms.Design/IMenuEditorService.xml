@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IMenuEditorService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMenuEditorService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMenuEditorService" />
+  <TypeSignature Language="F#" Value="type IMenuEditorService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.GetMenu" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMenu () As Menu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Menu ^ GetMenu();" />
+      <MemberSignature Language="F#" Value="abstract member GetMenu : unit -&gt; System.Windows.Forms.Menu" Usage="iMenuEditorService.GetMenu " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.IsActive" />
       <MemberSignature Language="VB.NET" Value="Public Function IsActive () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsActive();" />
+      <MemberSignature Language="F#" Value="abstract member IsActive : unit -&gt; bool" Usage="iMenuEditorService.IsActive " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.MessageFilter(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Function MessageFilter (ByRef m As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MessageFilter(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="abstract member MessageFilter :  -&gt; bool" Usage="iMenuEditorService.MessageFilter m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMenu(class System.Windows.Forms.Menu menu) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.SetMenu(System.Windows.Forms.Menu)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMenu(System::Windows::Forms::Menu ^ menu);" />
+      <MemberSignature Language="F#" Value="abstract member SetMenu : System.Windows.Forms.Menu -&gt; unit" Usage="iMenuEditorService.SetMenu menu" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.SetSelection(System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSelection (item As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelection(System::Windows::Forms::MenuItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member SetSelection : System.Windows.Forms.MenuItem -&gt; unit" Usage="iMenuEditorService.SetSelection item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

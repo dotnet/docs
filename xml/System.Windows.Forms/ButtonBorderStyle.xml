@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ButtonBorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ButtonBorderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ButtonBorderStyle" />
+  <TypeSignature Language="F#" Value="type ButtonBorderStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonBorderStyle.Dashed" />
       <MemberSignature Language="VB.NET" Value="Dashed" />
       <MemberSignature Language="C++ CLI" Value="Dashed" />
+      <MemberSignature Language="F#" Value="Dashed = 2" Usage="System.Windows.Forms.ButtonBorderStyle.Dashed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonBorderStyle.Dotted" />
       <MemberSignature Language="VB.NET" Value="Dotted" />
       <MemberSignature Language="C++ CLI" Value="Dotted" />
+      <MemberSignature Language="F#" Value="Dotted = 1" Usage="System.Windows.Forms.ButtonBorderStyle.Dotted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonBorderStyle.Inset" />
       <MemberSignature Language="VB.NET" Value="Inset" />
       <MemberSignature Language="C++ CLI" Value="Inset" />
+      <MemberSignature Language="F#" Value="Inset = 4" Usage="System.Windows.Forms.ButtonBorderStyle.Inset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonBorderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.ButtonBorderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonBorderStyle.Outset" />
       <MemberSignature Language="VB.NET" Value="Outset" />
       <MemberSignature Language="C++ CLI" Value="Outset" />
+      <MemberSignature Language="F#" Value="Outset = 5" Usage="System.Windows.Forms.ButtonBorderStyle.Outset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ButtonBorderStyle.Solid" />
       <MemberSignature Language="VB.NET" Value="Solid" />
       <MemberSignature Language="C++ CLI" Value="Solid" />
+      <MemberSignature Language="F#" Value="Solid = 3" Usage="System.Windows.Forms.ButtonBorderStyle.Solid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

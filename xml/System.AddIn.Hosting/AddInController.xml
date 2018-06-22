@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInController" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddInController" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddInController sealed" />
+  <TypeSignature Language="F#" Value="type AddInController = class" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInController.AddInEnvironment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddInEnvironment As AddInEnvironment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::AddIn::Hosting::AddInEnvironment ^ AddInEnvironment { System::AddIn::Hosting::AddInEnvironment ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddInEnvironment : System.AddIn.Hosting.AddInEnvironment" Usage="System.AddIn.Hosting.AddInController.AddInEnvironment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInController.AppDomain" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppDomain As AppDomain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property AppDomain ^ AppDomain { AppDomain ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppDomain : AppDomain" Usage="System.AddIn.Hosting.AddInController.AppDomain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInController.GetAddInController(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAddInController (addIn As Object) As AddInController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::AddIn::Hosting::AddInController ^ GetAddInController(System::Object ^ addIn);" />
+      <MemberSignature Language="F#" Value="static member GetAddInController : obj -&gt; System.AddIn.Hosting.AddInController" Usage="System.AddIn.Hosting.AddInController.GetAddInController addIn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInController.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Shutdown();" />
+      <MemberSignature Language="F#" Value="member this.Shutdown : unit -&gt; unit" Usage="addInController.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInController.Token" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As AddInToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::AddIn::Hosting::AddInToken ^ Token { System::AddIn::Hosting::AddInToken ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Token : System.AddIn.Hosting.AddInToken" Usage="System.AddIn.Hosting.AddInController.Token" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

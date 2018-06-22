@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.RenamedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RenamedEventArgs&#xA;Inherits FileSystemEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RenamedEventArgs : System::IO::FileSystemEventArgs" />
+  <TypeSignature Language="F#" Value="type RenamedEventArgs = class&#xA;    inherit FileSystemEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.RenamedEventArgs.#ctor(System.IO.WatcherChangeTypes,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (changeType As WatcherChangeTypes, directory As String, name As String, oldName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RenamedEventArgs(System::IO::WatcherChangeTypes changeType, System::String ^ directory, System::String ^ name, System::String ^ oldName);" />
+      <MemberSignature Language="F#" Value="new System.IO.RenamedEventArgs : System.IO.WatcherChangeTypes * string * string * string -&gt; System.IO.RenamedEventArgs" Usage="new System.IO.RenamedEventArgs (changeType, directory, name, oldName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.RenamedEventArgs.OldFullPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldFullPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldFullPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldFullPath : string" Usage="System.IO.RenamedEventArgs.OldFullPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.RenamedEventArgs.OldName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldName : string" Usage="System.IO.RenamedEventArgs.OldName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>

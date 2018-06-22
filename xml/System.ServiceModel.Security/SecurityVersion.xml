@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityVersion" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityVersion" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityVersion abstract" />
+  <TypeSignature Language="F#" Value="type SecurityVersion = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityVersion.WSSecurity10" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSSecurity10 As SecurityVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityVersion ^ WSSecurity10 { System::ServiceModel::Security::SecurityVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSSecurity10 : System.ServiceModel.Security.SecurityVersion" Usage="System.ServiceModel.Security.SecurityVersion.WSSecurity10" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityVersion.WSSecurity11" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSSecurity11 As SecurityVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityVersion ^ WSSecurity11 { System::ServiceModel::Security::SecurityVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSSecurity11 : System.ServiceModel.Security.SecurityVersion" Usage="System.ServiceModel.Security.SecurityVersion.WSSecurity11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

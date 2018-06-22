@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum DbExpressionKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class DbExpressionKind" />
+  <TypeSignature Language="F#" Value="type DbExpressionKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Data.Common.CommandTrees.DbExpressionKind.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.And" />
       <MemberSignature Language="VB.NET" Value="And" />
       <MemberSignature Language="C++ CLI" Value="And" />
+      <MemberSignature Language="F#" Value="And = 1" Usage="System.Data.Common.CommandTrees.DbExpressionKind.And" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="C++ CLI" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 2" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Case" />
       <MemberSignature Language="VB.NET" Value="Case" />
       <MemberSignature Language="C++ CLI" Value="Case" />
+      <MemberSignature Language="F#" Value="Case = 3" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Case" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Cast" />
       <MemberSignature Language="VB.NET" Value="Cast" />
       <MemberSignature Language="C++ CLI" Value="Cast" />
+      <MemberSignature Language="F#" Value="Cast = 4" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Cast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Constant" />
       <MemberSignature Language="VB.NET" Value="Constant" />
       <MemberSignature Language="C++ CLI" Value="Constant" />
+      <MemberSignature Language="F#" Value="Constant = 5" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Constant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.CrossApply" />
       <MemberSignature Language="VB.NET" Value="CrossApply" />
       <MemberSignature Language="C++ CLI" Value="CrossApply" />
+      <MemberSignature Language="F#" Value="CrossApply = 6" Usage="System.Data.Common.CommandTrees.DbExpressionKind.CrossApply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.CrossJoin" />
       <MemberSignature Language="VB.NET" Value="CrossJoin" />
       <MemberSignature Language="C++ CLI" Value="CrossJoin" />
+      <MemberSignature Language="F#" Value="CrossJoin = 7" Usage="System.Data.Common.CommandTrees.DbExpressionKind.CrossJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -183,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Deref" />
       <MemberSignature Language="VB.NET" Value="Deref" />
       <MemberSignature Language="C++ CLI" Value="Deref" />
+      <MemberSignature Language="F#" Value="Deref = 8" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Deref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -202,6 +212,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Distinct" />
       <MemberSignature Language="VB.NET" Value="Distinct" />
       <MemberSignature Language="C++ CLI" Value="Distinct" />
+      <MemberSignature Language="F#" Value="Distinct = 9" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Distinct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -221,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Divide" />
       <MemberSignature Language="VB.NET" Value="Divide" />
       <MemberSignature Language="C++ CLI" Value="Divide" />
+      <MemberSignature Language="F#" Value="Divide = 10" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -240,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Element" />
       <MemberSignature Language="VB.NET" Value="Element" />
       <MemberSignature Language="C++ CLI" Value="Element" />
+      <MemberSignature Language="F#" Value="Element = 11" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -259,6 +272,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.EntityRef" />
       <MemberSignature Language="VB.NET" Value="EntityRef" />
       <MemberSignature Language="C++ CLI" Value="EntityRef" />
+      <MemberSignature Language="F#" Value="EntityRef = 12" Usage="System.Data.Common.CommandTrees.DbExpressionKind.EntityRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -278,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Equals" />
       <MemberSignature Language="VB.NET" Value="Equals" />
       <MemberSignature Language="C++ CLI" Value="Equals" />
+      <MemberSignature Language="F#" Value="Equals = 13" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Equals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -297,6 +312,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Except" />
       <MemberSignature Language="VB.NET" Value="Except" />
       <MemberSignature Language="C++ CLI" Value="Except" />
+      <MemberSignature Language="F#" Value="Except = 14" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Except" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -316,6 +332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Filter" />
       <MemberSignature Language="VB.NET" Value="Filter" />
       <MemberSignature Language="C++ CLI" Value="Filter" />
+      <MemberSignature Language="F#" Value="Filter = 15" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Filter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -335,6 +352,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.FullOuterJoin" />
       <MemberSignature Language="VB.NET" Value="FullOuterJoin" />
       <MemberSignature Language="C++ CLI" Value="FullOuterJoin" />
+      <MemberSignature Language="F#" Value="FullOuterJoin = 16" Usage="System.Data.Common.CommandTrees.DbExpressionKind.FullOuterJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -354,6 +372,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Function" />
       <MemberSignature Language="VB.NET" Value="Function" />
       <MemberSignature Language="C++ CLI" Value="Function" />
+      <MemberSignature Language="F#" Value="Function = 17" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Function" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -373,6 +392,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GreaterThan" />
       <MemberSignature Language="VB.NET" Value="GreaterThan" />
       <MemberSignature Language="C++ CLI" Value="GreaterThan" />
+      <MemberSignature Language="F#" Value="GreaterThan = 18" Usage="System.Data.Common.CommandTrees.DbExpressionKind.GreaterThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -392,6 +412,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GreaterThanOrEquals" />
       <MemberSignature Language="VB.NET" Value="GreaterThanOrEquals" />
       <MemberSignature Language="C++ CLI" Value="GreaterThanOrEquals" />
+      <MemberSignature Language="F#" Value="GreaterThanOrEquals = 19" Usage="System.Data.Common.CommandTrees.DbExpressionKind.GreaterThanOrEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -411,6 +432,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GroupBy" />
       <MemberSignature Language="VB.NET" Value="GroupBy" />
       <MemberSignature Language="C++ CLI" Value="GroupBy" />
+      <MemberSignature Language="F#" Value="GroupBy = 20" Usage="System.Data.Common.CommandTrees.DbExpressionKind.GroupBy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -430,6 +452,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.InnerJoin" />
       <MemberSignature Language="VB.NET" Value="InnerJoin" />
       <MemberSignature Language="C++ CLI" Value="InnerJoin" />
+      <MemberSignature Language="F#" Value="InnerJoin = 21" Usage="System.Data.Common.CommandTrees.DbExpressionKind.InnerJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -449,6 +472,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Intersect" />
       <MemberSignature Language="VB.NET" Value="Intersect" />
       <MemberSignature Language="C++ CLI" Value="Intersect" />
+      <MemberSignature Language="F#" Value="Intersect = 22" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Intersect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -468,6 +492,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="IsEmpty" />
       <MemberSignature Language="C++ CLI" Value="IsEmpty" />
+      <MemberSignature Language="F#" Value="IsEmpty = 23" Usage="System.Data.Common.CommandTrees.DbExpressionKind.IsEmpty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -487,6 +512,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsNull" />
       <MemberSignature Language="VB.NET" Value="IsNull" />
       <MemberSignature Language="C++ CLI" Value="IsNull" />
+      <MemberSignature Language="F#" Value="IsNull = 24" Usage="System.Data.Common.CommandTrees.DbExpressionKind.IsNull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -506,6 +532,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsOf" />
       <MemberSignature Language="VB.NET" Value="IsOf" />
       <MemberSignature Language="C++ CLI" Value="IsOf" />
+      <MemberSignature Language="F#" Value="IsOf = 25" Usage="System.Data.Common.CommandTrees.DbExpressionKind.IsOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -525,6 +552,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsOfOnly" />
       <MemberSignature Language="VB.NET" Value="IsOfOnly" />
       <MemberSignature Language="C++ CLI" Value="IsOfOnly" />
+      <MemberSignature Language="F#" Value="IsOfOnly = 26" Usage="System.Data.Common.CommandTrees.DbExpressionKind.IsOfOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -544,6 +572,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Lambda" />
       <MemberSignature Language="VB.NET" Value="Lambda" />
       <MemberSignature Language="C++ CLI" Value="Lambda" />
+      <MemberSignature Language="F#" Value="Lambda = 57" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Lambda" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -563,6 +592,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LeftOuterJoin" />
       <MemberSignature Language="VB.NET" Value="LeftOuterJoin" />
       <MemberSignature Language="C++ CLI" Value="LeftOuterJoin" />
+      <MemberSignature Language="F#" Value="LeftOuterJoin = 27" Usage="System.Data.Common.CommandTrees.DbExpressionKind.LeftOuterJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -582,6 +612,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LessThan" />
       <MemberSignature Language="VB.NET" Value="LessThan" />
       <MemberSignature Language="C++ CLI" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 28" Usage="System.Data.Common.CommandTrees.DbExpressionKind.LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -601,6 +632,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LessThanOrEquals" />
       <MemberSignature Language="VB.NET" Value="LessThanOrEquals" />
       <MemberSignature Language="C++ CLI" Value="LessThanOrEquals" />
+      <MemberSignature Language="F#" Value="LessThanOrEquals = 29" Usage="System.Data.Common.CommandTrees.DbExpressionKind.LessThanOrEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -620,6 +652,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Like" />
       <MemberSignature Language="VB.NET" Value="Like" />
       <MemberSignature Language="C++ CLI" Value="Like" />
+      <MemberSignature Language="F#" Value="Like = 30" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Like" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -639,6 +672,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Limit" />
       <MemberSignature Language="VB.NET" Value="Limit" />
       <MemberSignature Language="C++ CLI" Value="Limit" />
+      <MemberSignature Language="F#" Value="Limit = 31" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Limit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -658,6 +692,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Minus" />
       <MemberSignature Language="VB.NET" Value="Minus" />
       <MemberSignature Language="C++ CLI" Value="Minus" />
+      <MemberSignature Language="F#" Value="Minus = 32" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Minus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -677,6 +712,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Modulo" />
       <MemberSignature Language="VB.NET" Value="Modulo" />
       <MemberSignature Language="C++ CLI" Value="Modulo" />
+      <MemberSignature Language="F#" Value="Modulo = 33" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Modulo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -696,6 +732,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Multiply" />
       <MemberSignature Language="VB.NET" Value="Multiply" />
       <MemberSignature Language="C++ CLI" Value="Multiply" />
+      <MemberSignature Language="F#" Value="Multiply = 34" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -715,6 +752,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.NewInstance" />
       <MemberSignature Language="VB.NET" Value="NewInstance" />
       <MemberSignature Language="C++ CLI" Value="NewInstance" />
+      <MemberSignature Language="F#" Value="NewInstance = 35" Usage="System.Data.Common.CommandTrees.DbExpressionKind.NewInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -734,6 +772,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Not" />
       <MemberSignature Language="VB.NET" Value="Not" />
       <MemberSignature Language="C++ CLI" Value="Not" />
+      <MemberSignature Language="F#" Value="Not = 36" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Not" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -753,6 +792,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.NotEquals" />
       <MemberSignature Language="VB.NET" Value="NotEquals" />
       <MemberSignature Language="C++ CLI" Value="NotEquals" />
+      <MemberSignature Language="F#" Value="NotEquals = 37" Usage="System.Data.Common.CommandTrees.DbExpressionKind.NotEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -772,6 +812,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Null" />
       <MemberSignature Language="VB.NET" Value="Null" />
       <MemberSignature Language="C++ CLI" Value="Null" />
+      <MemberSignature Language="F#" Value="Null = 38" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -791,6 +832,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OfType" />
       <MemberSignature Language="VB.NET" Value="OfType" />
       <MemberSignature Language="C++ CLI" Value="OfType" />
+      <MemberSignature Language="F#" Value="OfType = 39" Usage="System.Data.Common.CommandTrees.DbExpressionKind.OfType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -810,6 +852,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OfTypeOnly" />
       <MemberSignature Language="VB.NET" Value="OfTypeOnly" />
       <MemberSignature Language="C++ CLI" Value="OfTypeOnly" />
+      <MemberSignature Language="F#" Value="OfTypeOnly = 40" Usage="System.Data.Common.CommandTrees.DbExpressionKind.OfTypeOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -829,6 +872,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Or" />
       <MemberSignature Language="VB.NET" Value="Or" />
       <MemberSignature Language="C++ CLI" Value="Or" />
+      <MemberSignature Language="F#" Value="Or = 41" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Or" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -848,6 +892,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OuterApply" />
       <MemberSignature Language="VB.NET" Value="OuterApply" />
       <MemberSignature Language="C++ CLI" Value="OuterApply" />
+      <MemberSignature Language="F#" Value="OuterApply = 42" Usage="System.Data.Common.CommandTrees.DbExpressionKind.OuterApply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -867,6 +912,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.ParameterReference" />
       <MemberSignature Language="VB.NET" Value="ParameterReference" />
       <MemberSignature Language="C++ CLI" Value="ParameterReference" />
+      <MemberSignature Language="F#" Value="ParameterReference = 43" Usage="System.Data.Common.CommandTrees.DbExpressionKind.ParameterReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -886,6 +932,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Plus" />
       <MemberSignature Language="VB.NET" Value="Plus" />
       <MemberSignature Language="C++ CLI" Value="Plus" />
+      <MemberSignature Language="F#" Value="Plus = 44" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Plus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -905,6 +952,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Project" />
       <MemberSignature Language="VB.NET" Value="Project" />
       <MemberSignature Language="C++ CLI" Value="Project" />
+      <MemberSignature Language="F#" Value="Project = 45" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Project" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -924,6 +972,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Property" />
       <MemberSignature Language="VB.NET" Value="Property" />
       <MemberSignature Language="C++ CLI" Value="Property" />
+      <MemberSignature Language="F#" Value="Property = 46" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -943,6 +992,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Ref" />
       <MemberSignature Language="VB.NET" Value="Ref" />
       <MemberSignature Language="C++ CLI" Value="Ref" />
+      <MemberSignature Language="F#" Value="Ref = 47" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Ref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -962,6 +1012,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.RefKey" />
       <MemberSignature Language="VB.NET" Value="RefKey" />
       <MemberSignature Language="C++ CLI" Value="RefKey" />
+      <MemberSignature Language="F#" Value="RefKey = 48" Usage="System.Data.Common.CommandTrees.DbExpressionKind.RefKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -981,6 +1032,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.RelationshipNavigation" />
       <MemberSignature Language="VB.NET" Value="RelationshipNavigation" />
       <MemberSignature Language="C++ CLI" Value="RelationshipNavigation" />
+      <MemberSignature Language="F#" Value="RelationshipNavigation = 49" Usage="System.Data.Common.CommandTrees.DbExpressionKind.RelationshipNavigation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1000,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Scan" />
       <MemberSignature Language="VB.NET" Value="Scan" />
       <MemberSignature Language="C++ CLI" Value="Scan" />
+      <MemberSignature Language="F#" Value="Scan = 50" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Scan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1019,6 +1072,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Skip" />
       <MemberSignature Language="VB.NET" Value="Skip" />
       <MemberSignature Language="C++ CLI" Value="Skip" />
+      <MemberSignature Language="F#" Value="Skip = 51" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Skip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1038,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Sort" />
       <MemberSignature Language="VB.NET" Value="Sort" />
       <MemberSignature Language="C++ CLI" Value="Sort" />
+      <MemberSignature Language="F#" Value="Sort = 52" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Sort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1057,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Treat" />
       <MemberSignature Language="VB.NET" Value="Treat" />
       <MemberSignature Language="C++ CLI" Value="Treat" />
+      <MemberSignature Language="F#" Value="Treat = 53" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Treat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1076,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.UnaryMinus" />
       <MemberSignature Language="VB.NET" Value="UnaryMinus" />
       <MemberSignature Language="C++ CLI" Value="UnaryMinus" />
+      <MemberSignature Language="F#" Value="UnaryMinus = 54" Usage="System.Data.Common.CommandTrees.DbExpressionKind.UnaryMinus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1095,6 +1152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.UnionAll" />
       <MemberSignature Language="VB.NET" Value="UnionAll" />
       <MemberSignature Language="C++ CLI" Value="UnionAll" />
+      <MemberSignature Language="F#" Value="UnionAll = 55" Usage="System.Data.Common.CommandTrees.DbExpressionKind.UnionAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1114,6 +1172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.VariableReference" />
       <MemberSignature Language="VB.NET" Value="VariableReference" />
       <MemberSignature Language="C++ CLI" Value="VariableReference" />
+      <MemberSignature Language="F#" Value="VariableReference = 56" Usage="System.Data.Common.CommandTrees.DbExpressionKind.VariableReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

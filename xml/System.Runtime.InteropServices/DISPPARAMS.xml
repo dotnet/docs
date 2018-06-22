@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DISPPARAMS" />
   <TypeSignature Language="VB.NET" Value="Public Structure DISPPARAMS" />
   <TypeSignature Language="C++ CLI" Value="public value class DISPPARAMS" />
+  <TypeSignature Language="F#" Value="type DISPPARAMS = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DISPPARAMS.cArgs" />
       <MemberSignature Language="VB.NET" Value="Public cArgs As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int cArgs;" />
+      <MemberSignature Language="F#" Value="val mutable cArgs : int" Usage="System.Runtime.InteropServices.DISPPARAMS.cArgs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DISPPARAMS.cNamedArgs" />
       <MemberSignature Language="VB.NET" Value="Public cNamedArgs As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int cNamedArgs;" />
+      <MemberSignature Language="F#" Value="val mutable cNamedArgs : int" Usage="System.Runtime.InteropServices.DISPPARAMS.cNamedArgs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DISPPARAMS.rgdispidNamedArgs" />
       <MemberSignature Language="VB.NET" Value="Public rgdispidNamedArgs As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr rgdispidNamedArgs;" />
+      <MemberSignature Language="F#" Value="val mutable rgdispidNamedArgs : nativeint" Usage="System.Runtime.InteropServices.DISPPARAMS.rgdispidNamedArgs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DISPPARAMS.rgvarg" />
       <MemberSignature Language="VB.NET" Value="Public rgvarg As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr rgvarg;" />
+      <MemberSignature Language="F#" Value="val mutable rgvarg : nativeint" Usage="System.Runtime.InteropServices.DISPPARAMS.rgvarg" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

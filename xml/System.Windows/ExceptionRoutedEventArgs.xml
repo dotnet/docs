@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ExceptionRoutedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExceptionRoutedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExceptionRoutedEventArgs sealed : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type ExceptionRoutedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ExceptionRoutedEventArgs.ErrorException" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorException As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ ErrorException { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorException : Exception" Usage="System.Windows.ExceptionRoutedEventArgs.ErrorException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

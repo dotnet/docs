@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TaskExtension&#xA;Inherits Task" />
   <TypeSignature Language="C++ CLI" Value="public ref class TaskExtension abstract : Microsoft::Build::Utilities::Task" />
+  <TypeSignature Language="F#" Value="type TaskExtension = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.TaskExtension.Log" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Log As TaskLoggingHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Utilities::TaskLoggingHelper ^ Log { Microsoft::Build::Utilities::TaskLoggingHelper ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Log : Microsoft.Build.Utilities.TaskLoggingHelper" Usage="Microsoft.Build.Tasks.TaskExtension.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

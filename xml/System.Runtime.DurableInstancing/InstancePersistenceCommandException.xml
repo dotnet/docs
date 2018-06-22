@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstancePersistenceCommandException" />
   <TypeSignature Language="VB.NET" Value="Public Class InstancePersistenceCommandException&#xA;Inherits InstancePersistenceException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstancePersistenceCommandException : System::Runtime::DurableInstancing::InstancePersistenceException" />
+  <TypeSignature Language="F#" Value="type InstancePersistenceCommandException = class&#xA;    inherit InstancePersistenceException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstancePersistenceCommandException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : string -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstancePersistenceCommandException(System::Xml::Linq::XName ^ commandName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : System.Xml.Linq.XName -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException commandName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstancePersistenceCommandException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstancePersistenceCommandException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : string * Exception -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.Xml.Linq.XName,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstancePersistenceCommandException(System::Xml::Linq::XName ^ commandName, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : System.Xml.Linq.XName * Exception -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException (commandName, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.Xml.Linq.XName,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstancePersistenceCommandException(System::Xml::Linq::XName ^ commandName, Guid instanceId);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : System.Xml.Linq.XName * Guid -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException (commandName, instanceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.Xml.Linq.XName,System.Guid,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstancePersistenceCommandException(System::Xml::Linq::XName ^ commandName, Guid instanceId, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : System.Xml.Linq.XName * Guid * Exception -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException (commandName, instanceId, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.Xml.Linq.XName,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstancePersistenceCommandException(System::Xml::Linq::XName ^ commandName, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : System.Xml.Linq.XName * string * Exception -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException (commandName, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.#ctor(System.Xml.Linq.XName,System.Guid,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstancePersistenceCommandException(System::Xml::Linq::XName ^ commandName, Guid instanceId, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommandException : System.Xml.Linq.XName * Guid * string * Exception -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommandException" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommandException (commandName, instanceId, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommandException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="instancePersistenceCommandException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -286,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceCommandException.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.Runtime.DurableInstancing.InstancePersistenceCommandException.InstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

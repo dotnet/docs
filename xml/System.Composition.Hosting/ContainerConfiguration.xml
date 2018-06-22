@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.ContainerConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class ContainerConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContainerConfiguration" />
+  <TypeSignature Language="F#" Value="type ContainerConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.TypedParts</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.CreateContainer" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateContainer () As CompositionHost" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::CompositionHost ^ CreateContainer();" />
+      <MemberSignature Language="F#" Value="member this.CreateContainer : unit -&gt; System.Composition.Hosting.CompositionHost" Usage="containerConfiguration.CreateContainer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssemblies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})" />
       <MemberSignature Language="VB.NET" Value="Public Function WithAssemblies (assemblies As IEnumerable(Of Assembly)) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithAssemblies(System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ assemblies);" />
+      <MemberSignature Language="F#" Value="member this.WithAssemblies : seq&lt;System.Reflection.Assembly&gt; -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithAssemblies assemblies" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssemblies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Composition.Convention.AttributedModelProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithAssemblies (assemblies As IEnumerable(Of Assembly), conventions As AttributedModelProvider) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithAssemblies(System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ assemblies, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
+      <MemberSignature Language="F#" Value="member this.WithAssemblies : seq&lt;System.Reflection.Assembly&gt; * System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithAssemblies (assemblies, conventions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithAssembly(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="member this.WithAssembly : System.Reflection.Assembly -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithAssembly assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssembly(class System.Reflection.Assembly assembly, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssembly(System.Reflection.Assembly,System.Composition.Convention.AttributedModelProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithAssembly(System::Reflection::Assembly ^ assembly, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
+      <MemberSignature Language="F#" Value="member this.WithAssembly : System.Reflection.Assembly * System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithAssembly (assembly, conventions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithDefaultConventions(System.Composition.Convention.AttributedModelProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithDefaultConventions (conventions As AttributedModelProvider) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithDefaultConventions(System::Composition::Convention::AttributedModelProvider ^ conventions);" />
+      <MemberSignature Language="F#" Value="member this.WithDefaultConventions : System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithDefaultConventions conventions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithPart (partType As Type) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithPart(Type ^ partType);" />
+      <MemberSignature Language="F#" Value="member this.WithPart : Type -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithPart partType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart(System.Type,System.Composition.Convention.AttributedModelProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithPart (partType As Type, conventions As AttributedModelProvider) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithPart(Type ^ partType, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
+      <MemberSignature Language="F#" Value="member this.WithPart : Type * System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithPart (partType, conventions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -248,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart``1" />
       <MemberSignature Language="VB.NET" Value="Public Function WithPart(Of TPart) () As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPart&gt;&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithPart();" />
+      <MemberSignature Language="F#" Value="member this.WithPart : unit -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithPart " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -274,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart``1(System.Composition.Convention.AttributedModelProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithPart(Of TPart) (conventions As AttributedModelProvider) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPart&gt;&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithPart(System::Composition::Convention::AttributedModelProvider ^ conventions);" />
+      <MemberSignature Language="F#" Value="member this.WithPart : System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithPart conventions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -303,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Collections.Generic.IEnumerable{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Function WithParts (partTypes As IEnumerable(Of Type)) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithParts(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ partTypes);" />
+      <MemberSignature Language="F#" Value="member this.WithParts : seq&lt;Type&gt; -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithParts partTypes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -328,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Function WithParts (ParamArray partTypes As Type()) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithParts(... cli::array &lt;Type ^&gt; ^ partTypes);" />
+      <MemberSignature Language="F#" Value="member this.WithParts : Type[] -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithParts partTypes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -359,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Collections.Generic.IEnumerable{System.Type},System.Composition.Convention.AttributedModelProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithParts (partTypes As IEnumerable(Of Type), conventions As AttributedModelProvider) As ContainerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithParts(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ partTypes, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
+      <MemberSignature Language="F#" Value="member this.WithParts : seq&lt;Type&gt; * System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithParts (partTypes, conventions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -385,6 +399,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithProvider(class System.Composition.Hosting.Core.ExportDescriptorProvider exportDescriptorProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithProvider(System.Composition.Hosting.Core.ExportDescriptorProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithProvider(System::Composition::Hosting::Core::ExportDescriptorProvider ^ exportDescriptorProvider);" />
+      <MemberSignature Language="F#" Value="member this.WithProvider : System.Composition.Hosting.Core.ExportDescriptorProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithProvider exportDescriptorProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>

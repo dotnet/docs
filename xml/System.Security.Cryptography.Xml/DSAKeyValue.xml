@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.DSAKeyValue" />
   <TypeSignature Language="VB.NET" Value="Public Class DSAKeyValue&#xA;Inherits KeyInfoClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class DSAKeyValue : System::Security::Cryptography::Xml::KeyInfoClause" />
+  <TypeSignature Language="F#" Value="type DSAKeyValue = class&#xA;    inherit KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DSAKeyValue.#ctor(System.Security.Cryptography.DSA)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As DSA)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DSAKeyValue(System::Security::Cryptography::DSA ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.DSAKeyValue : System.Security.Cryptography.DSA -&gt; System.Security.Cryptography.Xml.DSAKeyValue" Usage="new System.Security.Cryptography.Xml.DSAKeyValue key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DSAKeyValue.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="dSAKeyValue.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DSAKeyValue.Key" />
       <MemberSignature Language="VB.NET" Value="Public Property Key As DSA" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::DSA ^ Key { System::Security::Cryptography::DSA ^ get(); void set(System::Security::Cryptography::DSA ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Security.Cryptography.DSA with get, set" Usage="System.Security.Cryptography.Xml.DSAKeyValue.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DSAKeyValue.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="dSAKeyValue.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

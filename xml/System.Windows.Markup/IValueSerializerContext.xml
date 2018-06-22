@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IValueSerializerContext" />
   <TypeSignature Language="VB.NET" Value="Public Interface IValueSerializerContext&#xA;Implements IServiceProvider, ITypeDescriptorContext" />
   <TypeSignature Language="C++ CLI" Value="public interface class IValueSerializerContext : IServiceProvider, System::ComponentModel::ITypeDescriptorContext" />
+  <TypeSignature Language="F#" Value="type IValueSerializerContext = interface&#xA;    interface ITypeDescriptorContext&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueSerializerFor (descriptor As PropertyDescriptor) As ValueSerializer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Markup::ValueSerializer ^ GetValueSerializerFor(System::ComponentModel::PropertyDescriptor ^ descriptor);" />
+      <MemberSignature Language="F#" Value="abstract member GetValueSerializerFor : System.ComponentModel.PropertyDescriptor -&gt; System.Windows.Markup.ValueSerializer" Usage="iValueSerializerContext.GetValueSerializerFor descriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Markup.ValueSerializer GetValueSerializerFor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Markup::ValueSerializer ^ GetValueSerializerFor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetValueSerializerFor : Type -&gt; System.Windows.Markup.ValueSerializer" Usage="iValueSerializerContext.GetValueSerializerFor type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

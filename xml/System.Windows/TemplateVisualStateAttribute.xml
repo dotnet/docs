@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TemplateVisualStateAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TemplateVisualStateAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateVisualStateAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TemplateVisualStateAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateVisualStateAttribute.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="System.Windows.TemplateVisualStateAttribute.GroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateVisualStateAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.TemplateVisualStateAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionViewRegisteringEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionViewRegisteringEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionViewRegisteringEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CollectionViewRegisteringEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewRegisteringEventArgs.CollectionView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CollectionView As CollectionView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::CollectionView ^ CollectionView { System::Windows::Data::CollectionView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CollectionView : System.Windows.Data.CollectionView" Usage="System.Windows.Data.CollectionViewRegisteringEventArgs.CollectionView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

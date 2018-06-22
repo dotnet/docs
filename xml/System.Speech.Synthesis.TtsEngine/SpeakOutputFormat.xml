@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.SpeakOutputFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum SpeakOutputFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class SpeakOutputFormat" />
+  <TypeSignature Language="F#" Value="type SpeakOutputFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.SpeakOutputFormat.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Speech.Synthesis.TtsEngine.SpeakOutputFormat.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.SpeakOutputFormat.WaveFormat" />
       <MemberSignature Language="VB.NET" Value="WaveFormat" />
       <MemberSignature Language="C++ CLI" Value="WaveFormat" />
+      <MemberSignature Language="F#" Value="WaveFormat = 0" Usage="System.Speech.Synthesis.TtsEngine.SpeakOutputFormat.WaveFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

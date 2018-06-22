@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum LabelMarkStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class LabelMarkStyle" />
+  <TypeSignature Language="F#" Value="type LabelMarkStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle.Box" />
       <MemberSignature Language="VB.NET" Value="Box" />
       <MemberSignature Language="C++ CLI" Value="Box" />
+      <MemberSignature Language="F#" Value="Box = 3" Usage="System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle.Box" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle.LineSideMark" />
       <MemberSignature Language="VB.NET" Value="LineSideMark" />
       <MemberSignature Language="C++ CLI" Value="LineSideMark" />
+      <MemberSignature Language="F#" Value="LineSideMark = 2" Usage="System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle.LineSideMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle.SideMark" />
       <MemberSignature Language="VB.NET" Value="SideMark" />
       <MemberSignature Language="C++ CLI" Value="SideMark" />
+      <MemberSignature Language="F#" Value="SideMark = 1" Usage="System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle.SideMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

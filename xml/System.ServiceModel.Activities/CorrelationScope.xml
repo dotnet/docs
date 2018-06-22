@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.CorrelationScope" />
   <TypeSignature Language="VB.NET" Value="Public Class CorrelationScope&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class CorrelationScope : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type CorrelationScope = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.CorrelationScope.Body" />
       <MemberSignature Language="VB.NET" Value="Public Property Body As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Body { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Activities.Activity with get, set" Usage="System.ServiceModel.Activities.CorrelationScope.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationScope.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="correlationScope.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith" />
       <MemberSignature Language="VB.NET" Value="Public Property CorrelatesWith As InArgument(Of CorrelationHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ CorrelatesWith { System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelatesWith : System.Activities.InArgument&lt;System.ServiceModel.Activities.CorrelationHandle&gt; with get, set" Usage="System.ServiceModel.Activities.CorrelationScope.CorrelatesWith" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationScope.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="correlationScope.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationScope.ShouldSerializeCorrelatesWith" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeCorrelatesWith () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeCorrelatesWith();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeCorrelatesWith : unit -&gt; bool" Usage="correlationScope.ShouldSerializeCorrelatesWith " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

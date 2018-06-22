@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.Contract" />
   <TypeSignature Language="VB.NET" Value="Public Class Contract" />
   <TypeSignature Language="C++ CLI" Value="public ref class Contract abstract sealed" />
+  <TypeSignature Language="F#" Value="type Contract = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Assert(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Assert (condition As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assert(bool condition);" />
+      <MemberSignature Language="F#" Value="static member Assert : bool -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Assert condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Assert(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Assert (condition As Boolean, userMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assert(bool condition, System::String ^ userMessage);" />
+      <MemberSignature Language="F#" Value="static member Assert : bool * string -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Assert (condition, userMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Assume(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Assume (condition As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assume(bool condition);" />
+      <MemberSignature Language="F#" Value="static member Assume : bool -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Assume condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -220,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Assume(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Assume (condition As Boolean, userMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assume(bool condition, System::String ^ userMessage);" />
+      <MemberSignature Language="F#" Value="static member Assume : bool * string -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Assume (condition, userMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -275,6 +280,7 @@
       <MemberSignature Language="DocId" Value="E:System.Diagnostics.Contracts.Contract.ContractFailed" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ContractFailed As EventHandler(Of ContractFailedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Diagnostics::Contracts::ContractFailedEventArgs ^&gt; ^ ContractFailed;" />
+      <MemberSignature Language="F#" Value="member this.ContractFailed : EventHandler&lt;System.Diagnostics.Contracts.ContractFailedEventArgs&gt; " Usage="member this.ContractFailed : System.EventHandler&lt;System.Diagnostics.Contracts.ContractFailedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -322,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.EndContractBlock" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EndContractBlock ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EndContractBlock();" />
+      <MemberSignature Language="F#" Value="static member EndContractBlock : unit -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.EndContractBlock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -379,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Ensures(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Ensures (condition As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Ensures(bool condition);" />
+      <MemberSignature Language="F#" Value="static member Ensures : bool -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Ensures condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -439,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Ensures(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Ensures (condition As Boolean, userMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Ensures(bool condition, System::String ^ userMessage);" />
+      <MemberSignature Language="F#" Value="static member Ensures : bool * string -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Ensures (condition, userMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -507,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.EnsuresOnThrow``1(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnsuresOnThrow(Of TException As Exception) (condition As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TException&gt;&#xA; where TException : Exception static void EnsuresOnThrow(bool condition);" />
+      <MemberSignature Language="F#" Value="static member EnsuresOnThrow : bool -&gt; unit (requires 'Exception :&gt; Exception)" Usage="System.Diagnostics.Contracts.Contract.EnsuresOnThrow condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -569,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.EnsuresOnThrow``1(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnsuresOnThrow(Of TException As Exception) (condition As Boolean, userMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TException&gt;&#xA; where TException : Exception static void EnsuresOnThrow(bool condition, System::String ^ userMessage);" />
+      <MemberSignature Language="F#" Value="static member EnsuresOnThrow : bool * string -&gt; unit (requires 'Exception :&gt; Exception)" Usage="System.Diagnostics.Contracts.Contract.EnsuresOnThrow (condition, userMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -635,6 +646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Exists(System.Int32,System.Int32,System.Predicate{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (fromInclusive As Integer, toExclusive As Integer, predicate As Predicate(Of Integer)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(int fromInclusive, int toExclusive, Predicate&lt;int&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Exists : int * int * Predicate&lt;int&gt; -&gt; bool" Usage="System.Diagnostics.Contracts.Contract.Exists (fromInclusive, toExclusive, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -690,6 +702,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Exists``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists(Of T) (collection As IEnumerable(Of T), predicate As Predicate(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool Exists(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection, Predicate&lt;T&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Exists : seq&lt;'T&gt; * Predicate&lt;'T&gt; -&gt; bool" Usage="System.Diagnostics.Contracts.Contract.Exists (collection, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -739,6 +752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.ForAll(System.Int32,System.Int32,System.Predicate{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForAll (fromInclusive As Integer, toExclusive As Integer, predicate As Predicate(Of Integer)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForAll(int fromInclusive, int toExclusive, Predicate&lt;int&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member ForAll : int * int * Predicate&lt;int&gt; -&gt; bool" Usage="System.Diagnostics.Contracts.Contract.ForAll (fromInclusive, toExclusive, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -803,6 +817,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.ForAll``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForAll(Of T) (collection As IEnumerable(Of T), predicate As Predicate(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool ForAll(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection, Predicate&lt;T&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member ForAll : seq&lt;'T&gt; * Predicate&lt;'T&gt; -&gt; bool" Usage="System.Diagnostics.Contracts.Contract.ForAll (collection, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -872,6 +887,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Invariant(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Invariant (condition As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Invariant(bool condition);" />
+      <MemberSignature Language="F#" Value="static member Invariant : bool -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Invariant condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -928,6 +944,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Invariant(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Invariant (condition As Boolean, userMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Invariant(bool condition, System::String ^ userMessage);" />
+      <MemberSignature Language="F#" Value="static member Invariant : bool * string -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Invariant (condition, userMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -986,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.OldValue``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OldValue(Of T) (value As T) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T OldValue(T value);" />
+      <MemberSignature Language="F#" Value="static member OldValue : 'T -&gt; 'T" Usage="System.Diagnostics.Contracts.Contract.OldValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -1054,6 +1072,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Requires(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Requires (condition As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Requires(bool condition);" />
+      <MemberSignature Language="F#" Value="static member Requires : bool -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Requires condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -1107,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Requires(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Requires (condition As Boolean, userMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Requires(bool condition, System::String ^ userMessage);" />
+      <MemberSignature Language="F#" Value="static member Requires : bool * string -&gt; unit" Usage="System.Diagnostics.Contracts.Contract.Requires (condition, userMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -1162,6 +1182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Requires``1(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Requires(Of TException As Exception) (condition As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TException&gt;&#xA; where TException : Exception static void Requires(bool condition);" />
+      <MemberSignature Language="F#" Value="static member Requires : bool -&gt; unit (requires 'Exception :&gt; Exception)" Usage="System.Diagnostics.Contracts.Contract.Requires condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -1223,6 +1244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Requires``1(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Requires(Of TException As Exception) (condition As Boolean, userMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TException&gt;&#xA; where TException : Exception static void Requires(bool condition, System::String ^ userMessage);" />
+      <MemberSignature Language="F#" Value="static member Requires : bool * string -&gt; unit (requires 'Exception :&gt; Exception)" Usage="System.Diagnostics.Contracts.Contract.Requires (condition, userMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -1286,6 +1308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.Result``1" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Result(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T Result();" />
+      <MemberSignature Language="F#" Value="static member Result : unit -&gt; 'T" Usage="System.Diagnostics.Contracts.Contract.Result " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -1341,6 +1364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.ValueAtReturn``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ValueAtReturn(Of T) (ByRef value As T) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T ValueAtReturn([Runtime::InteropServices::Out] T % value);" />
+      <MemberSignature Language="F#" Value="static member ValueAtReturn :  -&gt; 'T" Usage="System.Diagnostics.Contracts.Contract.ValueAtReturn value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowInvoker" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowInvoker" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInvoker sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowInvoker = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.#ctor(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflow As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInvoker(System::Activities::Activity ^ workflow);" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowInvoker : System.Activities.Activity -&gt; System.Activities.WorkflowInvoker" Usage="new System.Activities.WorkflowInvoker workflow" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.BeginInvoke(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginInvoke (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginInvoke(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginInvoke : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInvoker.BeginInvoke (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.BeginInvoke(System.Collections.Generic.IDictionary{System.String,System.Object},System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginInvoke (inputs As IDictionary(Of String, Object), callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginInvoke(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginInvoke : System.Collections.Generic.IDictionary&lt;string, obj&gt; * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInvoker.BeginInvoke (inputs, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.BeginInvoke(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginInvoke (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginInvoke(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginInvoke : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInvoker.BeginInvoke (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.BeginInvoke(System.Collections.Generic.IDictionary{System.String,System.Object},System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginInvoke (inputs As IDictionary(Of String, Object), timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginInvoke(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginInvoke : System.Collections.Generic.IDictionary&lt;string, obj&gt; * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInvoker.BeginInvoke (inputs, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -282,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.CancelAsync(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync (userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync(System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.CancelAsync : obj -&gt; unit" Usage="workflowInvoker.CancelAsync userState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -323,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.EndInvoke(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndInvoke (result As IAsyncResult) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ EndInvoke(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndInvoke : IAsyncResult -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="workflowInvoker.EndInvoke result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -365,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowInvoker.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As WorkflowInstanceExtensionManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Hosting::WorkflowInstanceExtensionManager ^ Extensions { System::Activities::Hosting::WorkflowInstanceExtensionManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Activities.Hosting.WorkflowInstanceExtensionManager" Usage="System.Activities.WorkflowInvoker.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -416,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke () As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Invoke();" />
+      <MemberSignature Language="F#" Value="member this.Invoke : unit -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="workflowInvoker.Invoke " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -457,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke (workflow As Activity) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Invoke(System::Activities::Activity ^ workflow);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Activities.Activity -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.WorkflowInvoker.Invoke workflow" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -501,6 +512,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke(System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (inputs As IDictionary(Of String, Object)) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Invoke(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs);" />
+      <MemberSignature Language="F#" Value="member this.Invoke : System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="workflowInvoker.Invoke inputs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -547,6 +559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (timeout As TimeSpan) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Invoke(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Invoke : TimeSpan -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="workflowInvoker.Invoke timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -595,6 +608,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke(System.Activities.Activity,System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke (workflow As Activity, inputs As IDictionary(Of String, Object)) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Invoke(System::Activities::Activity ^ workflow, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Activities.Activity * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.WorkflowInvoker.Invoke (workflow, inputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -643,6 +657,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke(System.Activities.Activity,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke (workflow As Activity, timeout As TimeSpan) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Invoke(System::Activities::Activity ^ workflow, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Activities.Activity * TimeSpan -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.WorkflowInvoker.Invoke (workflow, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -688,6 +703,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke(System.Collections.Generic.IDictionary{System.String,System.Object},System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (inputs As IDictionary(Of String, Object), timeout As TimeSpan) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Invoke(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Invoke : System.Collections.Generic.IDictionary&lt;string, obj&gt; * TimeSpan -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="workflowInvoker.Invoke (inputs, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -738,6 +754,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke(System.Activities.Activity,System.Collections.Generic.IDictionary{System.String,System.Object},System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke (workflow As Activity, inputs As IDictionary(Of String, Object), timeout As TimeSpan) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Invoke(System::Activities::Activity ^ workflow, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Activities.Activity * System.Collections.Generic.IDictionary&lt;string, obj&gt; * TimeSpan -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.WorkflowInvoker.Invoke (workflow, inputs, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -785,6 +802,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke``1(System.Activities.Activity{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke(Of TResult) (workflow As Activity(Of TResult)) As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static TResult Invoke(System::Activities::Activity&lt;TResult&gt; ^ workflow);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Activities.Activity&lt;'Result&gt; -&gt; 'Result" Usage="System.Activities.WorkflowInvoker.Invoke workflow" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -829,6 +847,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke``1(System.Activities.Activity{``0},System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke(Of TResult) (workflow As Activity(Of TResult), inputs As IDictionary(Of String, Object)) As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static TResult Invoke(System::Activities::Activity&lt;TResult&gt; ^ workflow, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Activities.Activity&lt;'Result&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; 'Result" Usage="System.Activities.WorkflowInvoker.Invoke (workflow, inputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -878,6 +897,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke``1(System.Activities.Activity{``0},System.Collections.Generic.IDictionary{System.String,System.Object},System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke(Of TResult) (workflow As Activity(Of TResult), inputs As IDictionary(Of String, Object), timeout As TimeSpan) As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static TResult Invoke(System::Activities::Activity&lt;TResult&gt; ^ workflow, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Activities.Activity&lt;'Result&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; * TimeSpan -&gt; 'Result" Usage="System.Activities.WorkflowInvoker.Invoke (workflow, inputs, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -929,6 +949,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.Invoke``1(System.Activities.Activity{``0},System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object}@,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke(Of TResult) (workflow As Activity(Of TResult), inputs As IDictionary(Of String, Object), ByRef additionalOutputs As IDictionary(Of String, Object), timeout As TimeSpan) As TResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static TResult Invoke(System::Activities::Activity&lt;TResult&gt; ^ workflow, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, [Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ % additionalOutputs, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Activities.Activity&lt;'Result&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; *  * TimeSpan -&gt; 'Result" Usage="System.Activities.WorkflowInvoker.Invoke (workflow, inputs, additionalOutputs, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1001,6 +1022,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.InvokeAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeAsync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeAsync();" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : unit -&gt; unit" Usage="workflowInvoker.InvokeAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1039,6 +1061,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.InvokeAsync(System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeAsync (inputs As IDictionary(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeAsync(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit" Usage="workflowInvoker.InvokeAsync inputs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1080,6 +1103,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.InvokeAsync(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeAsync (userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeAsync(System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : obj -&gt; unit" Usage="workflowInvoker.InvokeAsync userState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1123,6 +1147,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.InvokeAsync(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeAsync (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeAsync(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : TimeSpan -&gt; unit" Usage="workflowInvoker.InvokeAsync timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1167,6 +1192,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.InvokeAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeAsync (inputs As IDictionary(Of String, Object), userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeAsync(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * obj -&gt; unit" Usage="workflowInvoker.InvokeAsync (inputs, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1212,6 +1238,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.InvokeAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeAsync (inputs As IDictionary(Of String, Object), timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeAsync(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * TimeSpan -&gt; unit" Usage="workflowInvoker.InvokeAsync (inputs, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1258,6 +1285,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.InvokeAsync(System.TimeSpan,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeAsync (timeout As TimeSpan, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeAsync(TimeSpan timeout, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : TimeSpan * obj -&gt; unit" Usage="workflowInvoker.InvokeAsync (timeout, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1306,6 +1334,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInvoker.InvokeAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.TimeSpan,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeAsync (inputs As IDictionary(Of String, Object), timeout As TimeSpan, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeAsync(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, TimeSpan timeout, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * TimeSpan * obj -&gt; unit" Usage="workflowInvoker.InvokeAsync (inputs, timeout, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1356,6 +1385,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
       <MemberSignature Language="DocId" Value="E:System.Activities.WorkflowInvoker.InvokeCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event InvokeCompleted As EventHandler(Of InvokeCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::InvokeCompletedEventArgs ^&gt; ^ InvokeCompleted;" />
+      <MemberSignature Language="F#" Value="member this.InvokeCompleted : EventHandler&lt;System.Activities.InvokeCompletedEventArgs&gt; " Usage="member this.InvokeCompleted : System.EventHandler&lt;System.Activities.InvokeCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

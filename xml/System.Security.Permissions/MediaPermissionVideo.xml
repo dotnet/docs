@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.MediaPermissionVideo" />
   <TypeSignature Language="VB.NET" Value="Public Enum MediaPermissionVideo" />
   <TypeSignature Language="C++ CLI" Value="public enum class MediaPermissionVideo" />
+  <TypeSignature Language="F#" Value="type MediaPermissionVideo = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.AllVideo" />
       <MemberSignature Language="VB.NET" Value="AllVideo" />
       <MemberSignature Language="C++ CLI" Value="AllVideo" />
+      <MemberSignature Language="F#" Value="AllVideo = 3" Usage="System.Security.Permissions.MediaPermissionVideo.AllVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.NoVideo" />
       <MemberSignature Language="VB.NET" Value="NoVideo" />
       <MemberSignature Language="C++ CLI" Value="NoVideo" />
+      <MemberSignature Language="F#" Value="NoVideo = 0" Usage="System.Security.Permissions.MediaPermissionVideo.NoVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.SafeVideo" />
       <MemberSignature Language="VB.NET" Value="SafeVideo" />
       <MemberSignature Language="C++ CLI" Value="SafeVideo" />
+      <MemberSignature Language="F#" Value="SafeVideo = 2" Usage="System.Security.Permissions.MediaPermissionVideo.SafeVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.SiteOfOriginVideo" />
       <MemberSignature Language="VB.NET" Value="SiteOfOriginVideo" />
       <MemberSignature Language="C++ CLI" Value="SiteOfOriginVideo" />
+      <MemberSignature Language="F#" Value="SiteOfOriginVideo = 1" Usage="System.Security.Permissions.MediaPermissionVideo.SiteOfOriginVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

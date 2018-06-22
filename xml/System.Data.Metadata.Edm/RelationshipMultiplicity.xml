@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RelationshipMultiplicity" />
   <TypeSignature Language="VB.NET" Value="Public Enum RelationshipMultiplicity" />
   <TypeSignature Language="C++ CLI" Value="public enum class RelationshipMultiplicity" />
+  <TypeSignature Language="F#" Value="type RelationshipMultiplicity = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.RelationshipMultiplicity.Many" />
       <MemberSignature Language="VB.NET" Value="Many" />
       <MemberSignature Language="C++ CLI" Value="Many" />
+      <MemberSignature Language="F#" Value="Many = 2" Usage="System.Data.Metadata.Edm.RelationshipMultiplicity.Many" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.RelationshipMultiplicity.One" />
       <MemberSignature Language="VB.NET" Value="One" />
       <MemberSignature Language="C++ CLI" Value="One" />
+      <MemberSignature Language="F#" Value="One = 1" Usage="System.Data.Metadata.Edm.RelationshipMultiplicity.One" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne" />
       <MemberSignature Language="VB.NET" Value="ZeroOrOne" />
       <MemberSignature Language="C++ CLI" Value="ZeroOrOne" />
+      <MemberSignature Language="F#" Value="ZeroOrOne = 0" Usage="System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataSourceControl&#xA;Inherits Control&#xA;Implements IDataSource, IListSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSourceControl abstract : System::Web::UI::Control, System::ComponentModel::IListSource, System::Web::UI::IDataSource" />
+  <TypeSignature Language="F#" Value="type DataSourceControl = class&#xA;    inherit Control&#xA;    interface IDataSource&#xA;    interface IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyStyleSheetSkin(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.ApplyStyleSheetSkin(System.Web.UI.Page)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyStyleSheetSkin(System::Web::UI::Page ^ page);" />
+      <MemberSignature Language="F#" Value="override this.ApplyStyleSheetSkin : System.Web.UI.Page -&gt; unit" Usage="dataSourceControl.ApplyStyleSheetSkin page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceControl.ClientID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClientID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientID : string" Usage="System.Web.UI.DataSourceControl.ClientID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceControl.ClientIDMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ClientIDMode As ClientIDMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ClientIDMode ClientIDMode { System::Web::UI::ClientIDMode get(); void set(System::Web::UI::ClientIDMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientIDMode : System.Web.UI.ClientIDMode with get, set" Usage="System.Web.UI.DataSourceControl.ClientIDMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceControl.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.DataSourceControl.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="dataSourceControl.CreateControlCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -248,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceControl.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.DataSourceControl.EnableTheming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.FindControl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindControl (id As String) As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Control ^ FindControl(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="override this.FindControl : string -&gt; System.Web.UI.Control" Usage="dataSourceControl.FindControl id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.Focus" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Focus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Focus();" />
+      <MemberSignature Language="F#" Value="override this.Focus : unit -&gt; unit" Usage="dataSourceControl.Focus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -353,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetView (viewName As String) As DataSourceView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="abstract member GetView : string -&gt; System.Web.UI.DataSourceView" Usage="dataSourceControl.GetView viewName" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IDataSource.GetView(System.String)</InterfaceMember>
@@ -401,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetViewNames () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::ICollection ^ GetViewNames();" />
+      <MemberSignature Language="F#" Value="abstract member GetViewNames : unit -&gt; System.Collections.ICollection&#xA;override this.GetViewNames : unit -&gt; System.Collections.ICollection" Usage="dataSourceControl.GetViewNames " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IDataSource.GetViewNames</InterfaceMember>
@@ -446,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.HasControls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function HasControls () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HasControls();" />
+      <MemberSignature Language="F#" Value="override this.HasControls : unit -&gt; bool" Usage="dataSourceControl.HasControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -473,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.RaiseDataSourceChangedEvent(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaiseDataSourceChangedEvent (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaiseDataSourceChangedEvent(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member RaiseDataSourceChangedEvent : EventArgs -&gt; unit&#xA;override this.RaiseDataSourceChangedEvent : EventArgs -&gt; unit" Usage="dataSourceControl.RaiseDataSourceChangedEvent e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -517,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceControl.RenderControl(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderControl (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderControl(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dataSourceControl.RenderControl writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -545,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceControl.SkinID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SkinID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkinID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SkinID : string with get, set" Usage="System.Web.UI.DataSourceControl.SkinID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -585,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceControl.System#ComponentModel#IListSource#ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.DataSourceControl.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -742,6 +758,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceControl.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.DataSourceControl.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

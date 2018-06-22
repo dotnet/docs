@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityChangeAction" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityChangeAction&#xA;Inherits WorkflowChangeAction" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityChangeAction abstract : System::Workflow::ComponentModel::WorkflowChangeAction" />
+  <TypeSignature Language="F#" Value="type ActivityChangeAction = class&#xA;    inherit WorkflowChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.CompositeActivity compositeActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityChangeAction.#ctor(System.Workflow.ComponentModel.CompositeActivity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActivityChangeAction(System::Workflow::ComponentModel::CompositeActivity ^ compositeActivity);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.ActivityChangeAction : System.Workflow.ComponentModel.CompositeActivity -&gt; System.Workflow.ComponentModel.ActivityChangeAction" Usage="new System.Workflow.ComponentModel.ActivityChangeAction compositeActivity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerActivityDottedPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OwnerActivityDottedPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerActivityDottedPath : string" Usage="System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ValidateChanges (contextActivity As Activity) As ValidationErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ ValidateChanges(System::Workflow::ComponentModel::Activity ^ contextActivity);" />
+      <MemberSignature Language="F#" Value="override this.ValidateChanges : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="activityChangeAction.ValidateChanges contextActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

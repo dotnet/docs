@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlXmlWriterSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlXmlWriterSettings&#xA;Inherits XamlWriterSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlXmlWriterSettings : System::Xaml::XamlWriterSettings" />
+  <TypeSignature Language="F#" Value="type XamlXmlWriterSettings = class&#xA;    inherit XamlWriterSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlWriterSettings.AssumeValidInput" />
       <MemberSignature Language="VB.NET" Value="Public Property AssumeValidInput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AssumeValidInput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AssumeValidInput : bool with get, set" Usage="System.Xaml.XamlXmlWriterSettings.AssumeValidInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlWriterSettings.CloseOutput" />
       <MemberSignature Language="VB.NET" Value="Public Property CloseOutput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CloseOutput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CloseOutput : bool with get, set" Usage="System.Xaml.XamlXmlWriterSettings.CloseOutput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriterSettings.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As XamlXmlWriterSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xaml::XamlXmlWriterSettings ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; System.Xaml.XamlXmlWriterSettings" Usage="xamlXmlWriterSettings.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBMath" />
   <TypeSignature Language="VB.NET" Value="Public Module VBMath" />
   <TypeSignature Language="C++ CLI" Value="public ref class VBMath sealed" />
+  <TypeSignature Language="F#" Value="type VBMath = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBMath.Randomize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Randomize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Randomize();" />
+      <MemberSignature Language="F#" Value="static member Randomize : unit -&gt; unit" Usage="Microsoft.VisualBasic.VBMath.Randomize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBMath.Randomize(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Randomize (Number As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Randomize(double Number);" />
+      <MemberSignature Language="F#" Value="static member Randomize : double -&gt; unit" Usage="Microsoft.VisualBasic.VBMath.Randomize Number" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBMath.Rnd" />
       <MemberSignature Language="VB.NET" Value="Public Function Rnd () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Rnd();" />
+      <MemberSignature Language="F#" Value="static member Rnd : unit -&gt; single" Usage="Microsoft.VisualBasic.VBMath.Rnd " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBMath.Rnd(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Rnd (Number As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Rnd(float Number);" />
+      <MemberSignature Language="F#" Value="static member Rnd : single -&gt; single" Usage="Microsoft.VisualBasic.VBMath.Rnd Number" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

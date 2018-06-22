@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.CreationPolicy" />
   <TypeSignature Language="VB.NET" Value="Public Enum CreationPolicy" />
   <TypeSignature Language="C++ CLI" Value="public enum class CreationPolicy" />
+  <TypeSignature Language="F#" Value="type CreationPolicy = " />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.CreationPolicy.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="C++ CLI" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 0" Usage="System.ComponentModel.Composition.CreationPolicy.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.CreationPolicy.NewScope" />
       <MemberSignature Language="VB.NET" Value="NewScope" />
       <MemberSignature Language="C++ CLI" Value="NewScope" />
+      <MemberSignature Language="F#" Value="NewScope = 3" Usage="System.ComponentModel.Composition.CreationPolicy.NewScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.CreationPolicy.NonShared" />
       <MemberSignature Language="VB.NET" Value="NonShared" />
       <MemberSignature Language="C++ CLI" Value="NonShared" />
+      <MemberSignature Language="F#" Value="NonShared = 2" Usage="System.ComponentModel.Composition.CreationPolicy.NonShared" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.CreationPolicy.Shared" />
       <MemberSignature Language="VB.NET" Value="Shared" />
       <MemberSignature Language="C++ CLI" Value="Shared" />
+      <MemberSignature Language="F#" Value="Shared = 1" Usage="System.ComponentModel.Composition.CreationPolicy.Shared" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

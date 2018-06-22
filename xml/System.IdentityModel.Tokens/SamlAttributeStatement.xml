@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAttributeStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class SamlAttributeStatement&#xA;Inherits SamlSubjectStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SamlAttributeStatement : System::IdentityModel::Tokens::SamlSubjectStatement" />
+  <TypeSignature Language="F#" Value="type SamlAttributeStatement = class&#xA;    inherit SamlSubjectStatement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SamlSubject samlSubject, class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlAttribute&gt; attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAttribute})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAttributeStatement(System::IdentityModel::Tokens::SamlSubject ^ samlSubject, System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SamlAttribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAttributeStatement : System.IdentityModel.Tokens.SamlSubject * seq&lt;System.IdentityModel.Tokens.SamlAttribute&gt; -&gt; System.IdentityModel.Tokens.SamlAttributeStatement" Usage="new System.IdentityModel.Tokens.SamlAttributeStatement (samlSubject, attributes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.AddClaimsToList(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddClaimsToList (claims As IList(Of Claim))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddClaimsToList(System::Collections::Generic::IList&lt;System::IdentityModel::Claims::Claim ^&gt; ^ claims);" />
+      <MemberSignature Language="F#" Value="override this.AddClaimsToList : System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; -&gt; unit" Usage="samlAttributeStatement.AddClaimsToList claims" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttributeStatement.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As IList(Of SamlAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::IdentityModel::Tokens::SamlAttribute ^&gt; ^ Attributes { System::Collections::Generic::IList&lt;System::IdentityModel::Tokens::SamlAttribute ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlAttribute&gt;" Usage="System.IdentityModel.Tokens.SamlAttributeStatement.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttributeStatement.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.IdentityModel.Tokens.SamlAttributeStatement.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.MakeReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub MakeReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MakeReadOnly();" />
+      <MemberSignature Language="F#" Value="override this.MakeReadOnly : unit -&gt; unit" Usage="samlAttributeStatement.MakeReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadXml(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoTokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.ReadXml : System.Xml.XmlDictionaryReader * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; unit" Usage="samlAttributeStatement.ReadXml (reader, samlSerializer, keyInfoTokenSerializer, outOfBandTokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteXml(System::Xml::XmlDictionaryWriter ^ writer, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoTokenSerializer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.WriteXml : System.Xml.XmlDictionaryWriter * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; unit" Usage="samlAttributeStatement.WriteXml (writer, samlSerializer, keyInfoTokenSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

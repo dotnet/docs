@@ -51,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridViewCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewLinkCellAccessibleObject(System::Windows::Forms::DataGridViewCell ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject : System.Windows.Forms.DataGridViewCell -&gt; System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject" Usage="new System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject.DefaultAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="dataGridViewLinkCellAccessibleObject.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
+      <MemberSignature Language="F#" Value="override this.GetChildCount : unit -&gt; int" Usage="dataGridViewLinkCellAccessibleObject.GetChildCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

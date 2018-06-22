@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.SqlClient.SqlFunctions" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlFunctions" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlFunctions abstract sealed" />
+  <TypeSignature Language="F#" Value="type SqlFunctions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Acos(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Acos (arg1 As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Acos(Nullable&lt;System::Decimal&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Acos : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Acos arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Acos(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Acos (arg1 As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Acos(Nullable&lt;double&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Acos : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Acos arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Ascii(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Ascii (arg As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Ascii(System::String ^ arg);" />
+      <MemberSignature Language="F#" Value="static member Ascii : string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Ascii arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Asin(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Asin (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Asin(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Asin : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Asin arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Asin(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Asin (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Asin(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Asin : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Asin arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Atan(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Atan (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Atan(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Atan : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Atan arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -308,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Atan(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Atan (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Atan(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Atan : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Atan arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -365,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Atan2(System.Nullable{System.Decimal},System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Atan2 (arg1 As Nullable(Of Decimal), arg2 As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Atan2(Nullable&lt;System::Decimal&gt; arg1, Nullable&lt;System::Decimal&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Atan2 : Nullable&lt;decimal&gt; * Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Atan2 (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -405,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Atan2(System.Nullable{System.Double},System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Atan2 (arg1 As Nullable(Of Double), arg2 As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Atan2(Nullable&lt;double&gt; arg1, Nullable&lt;double&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Atan2 : Nullable&lt;double&gt; * Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Atan2 (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -445,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Char(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Char (arg As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Char(Nullable&lt;int&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Char : Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.Char arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -502,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.CharIndex(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CharIndex (toSearch As Byte(), target As Byte()) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; CharIndex(cli::array &lt;System::Byte&gt; ^ toSearch, cli::array &lt;System::Byte&gt; ^ target);" />
+      <MemberSignature Language="F#" Value="static member CharIndex : byte[] * byte[] -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.CharIndex (toSearch, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -542,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.CharIndex(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CharIndex (toSearch As String, target As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; CharIndex(System::String ^ toSearch, System::String ^ target);" />
+      <MemberSignature Language="F#" Value="static member CharIndex : string * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.CharIndex (toSearch, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -582,6 +595,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.CharIndex(System.Byte[],System.Byte[],System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CharIndex (toSearch As Byte(), target As Byte(), startLocation As Nullable(Of Integer)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; CharIndex(cli::array &lt;System::Byte&gt; ^ toSearch, cli::array &lt;System::Byte&gt; ^ target, Nullable&lt;int&gt; startLocation);" />
+      <MemberSignature Language="F#" Value="static member CharIndex : byte[] * byte[] * Nullable&lt;int&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.CharIndex (toSearch, target, startLocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -624,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.CharIndex(System.Byte[],System.Byte[],System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CharIndex (toSearch As Byte(), target As Byte(), startLocation As Nullable(Of Long)) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;long&gt; CharIndex(cli::array &lt;System::Byte&gt; ^ toSearch, cli::array &lt;System::Byte&gt; ^ target, Nullable&lt;long&gt; startLocation);" />
+      <MemberSignature Language="F#" Value="static member CharIndex : byte[] * byte[] * Nullable&lt;int64&gt; -&gt; Nullable&lt;int64&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.CharIndex (toSearch, target, startLocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -666,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.CharIndex(System.String,System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CharIndex (toSearch As String, target As String, startLocation As Nullable(Of Integer)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; CharIndex(System::String ^ toSearch, System::String ^ target, Nullable&lt;int&gt; startLocation);" />
+      <MemberSignature Language="F#" Value="static member CharIndex : string * string * Nullable&lt;int&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.CharIndex (toSearch, target, startLocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -708,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.CharIndex(System.String,System.String,System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CharIndex (toSearch As String, target As String, startLocation As Nullable(Of Long)) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;long&gt; CharIndex(System::String ^ toSearch, System::String ^ target, Nullable&lt;long&gt; startLocation);" />
+      <MemberSignature Language="F#" Value="static member CharIndex : string * string * Nullable&lt;int64&gt; -&gt; Nullable&lt;int64&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.CharIndex (toSearch, target, startLocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -769,6 +786,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Byte()) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(cli::array &lt;System::Byte&gt; ^ arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : byte[] -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -807,6 +825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Boolean)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;bool&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;bool&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -845,6 +864,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;DateTime&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -883,6 +903,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;DateTimeOffset&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -921,6 +942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Decimal)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;System::Decimal&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;decimal&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -959,6 +981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Double)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;double&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;double&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -997,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Guid})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Guid)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;Guid&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;Guid&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1035,6 +1059,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;TimeSpan&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1073,6 +1098,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(System::String ^ arg1);" />
+      <MemberSignature Language="F#" Value="static member Checksum : string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1111,6 +1137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Byte(), arg2 As Byte()) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(cli::array &lt;System::Byte&gt; ^ arg1, cli::array &lt;System::Byte&gt; ^ arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : byte[] * byte[] -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1151,6 +1178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Boolean), arg2 As Nullable(Of Boolean)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;bool&gt; arg1, Nullable&lt;bool&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1191,6 +1219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of DateTime), arg2 As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;DateTime&gt; arg1, Nullable&lt;DateTime&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1231,6 +1260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of DateTimeOffset), arg2 As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;DateTimeOffset&gt; arg1, Nullable&lt;DateTimeOffset&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1271,6 +1301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Decimal},System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Decimal), arg2 As Nullable(Of Decimal)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;System::Decimal&gt; arg1, Nullable&lt;System::Decimal&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;decimal&gt; * Nullable&lt;decimal&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1311,6 +1342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Double},System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Double), arg2 As Nullable(Of Double)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;double&gt; arg1, Nullable&lt;double&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;double&gt; * Nullable&lt;double&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1351,6 +1383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Guid},System.Nullable{System.Guid})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Guid), arg2 As Nullable(Of Guid)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;Guid&gt; arg1, Nullable&lt;Guid&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;Guid&gt; * Nullable&lt;Guid&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1391,6 +1424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of TimeSpan), arg2 As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;TimeSpan&gt; arg1, Nullable&lt;TimeSpan&gt; arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1431,6 +1465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As String, arg2 As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(System::String ^ arg1, System::String ^ arg2);" />
+      <MemberSignature Language="F#" Value="static member Checksum : string * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1471,6 +1506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Byte[],System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Byte(), arg2 As Byte(), arg3 As Byte()) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(cli::array &lt;System::Byte&gt; ^ arg1, cli::array &lt;System::Byte&gt; ^ arg2, cli::array &lt;System::Byte&gt; ^ arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : byte[] * byte[] * byte[] -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1513,6 +1549,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Boolean), arg2 As Nullable(Of Boolean), arg3 As Nullable(Of Boolean)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;bool&gt; arg1, Nullable&lt;bool&gt; arg2, Nullable&lt;bool&gt; arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1555,6 +1592,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of DateTime), arg2 As Nullable(Of DateTime), arg3 As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;DateTime&gt; arg1, Nullable&lt;DateTime&gt; arg2, Nullable&lt;DateTime&gt; arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1597,6 +1635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of DateTimeOffset), arg2 As Nullable(Of DateTimeOffset), arg3 As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;DateTimeOffset&gt; arg1, Nullable&lt;DateTimeOffset&gt; arg2, Nullable&lt;DateTimeOffset&gt; arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1639,6 +1678,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Decimal), arg2 As Nullable(Of Decimal), arg3 As Nullable(Of Decimal)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;System::Decimal&gt; arg1, Nullable&lt;System::Decimal&gt; arg2, Nullable&lt;System::Decimal&gt; arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;decimal&gt; * Nullable&lt;decimal&gt; * Nullable&lt;decimal&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1681,6 +1721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Double), arg2 As Nullable(Of Double), arg3 As Nullable(Of Double)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;double&gt; arg1, Nullable&lt;double&gt; arg2, Nullable&lt;double&gt; arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1723,6 +1764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of Guid), arg2 As Nullable(Of Guid), arg3 As Nullable(Of Guid)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;Guid&gt; arg1, Nullable&lt;Guid&gt; arg2, Nullable&lt;Guid&gt; arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;Guid&gt; * Nullable&lt;Guid&gt; * Nullable&lt;Guid&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1765,6 +1807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As Nullable(Of TimeSpan), arg2 As Nullable(Of TimeSpan), arg3 As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(Nullable&lt;TimeSpan&gt; arg1, Nullable&lt;TimeSpan&gt; arg2, Nullable&lt;TimeSpan&gt; arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1807,6 +1850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Checksum (arg1 As String, arg2 As String, arg3 As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Checksum(System::String ^ arg1, System::String ^ arg2, System::String ^ arg3);" />
+      <MemberSignature Language="F#" Value="static member Checksum : string * string * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Checksum (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1866,6 +1910,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.ChecksumAggregate(System.Collections.Generic.IEnumerable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ChecksumAggregate (arg As IEnumerable(Of Integer)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; ChecksumAggregate(System::Collections::Generic::IEnumerable&lt;int&gt; ^ arg);" />
+      <MemberSignature Language="F#" Value="static member ChecksumAggregate : seq&lt;int&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.ChecksumAggregate arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1902,6 +1947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.ChecksumAggregate(System.Collections.Generic.IEnumerable{System.Nullable{System.Int32}})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ChecksumAggregate (arg As IEnumerable(Of Nullable(Of Integer))) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; ChecksumAggregate(System::Collections::Generic::IEnumerable&lt;Nullable&lt;int&gt;&gt; ^ arg);" />
+      <MemberSignature Language="F#" Value="static member ChecksumAggregate : seq&lt;Nullable&lt;int&gt;&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.ChecksumAggregate arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1957,6 +2003,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Cos(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cos (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Cos(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Cos : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Cos arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1995,6 +2042,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Cos(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cos (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Cos(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Cos : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Cos arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2052,6 +2100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Cot(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cot (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Cot(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Cot : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Cot arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2090,6 +2139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Cot(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cot (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Cot(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Cot : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Cot arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2128,6 +2178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.CurrentTimestamp" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CurrentTimestamp () As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;DateTime&gt; CurrentTimestamp();" />
+      <MemberSignature Language="F#" Value="static member CurrentTimestamp : unit -&gt; Nullable&lt;DateTime&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.CurrentTimestamp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2163,6 +2214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.CurrentUser" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CurrentUser () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CurrentUser();" />
+      <MemberSignature Language="F#" Value="static member CurrentUser : unit -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.CurrentUser " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2217,6 +2269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As Byte()) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(cli::array &lt;System::Byte&gt; ^ arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : byte[] -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2255,6 +2308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As Nullable(Of Boolean)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(Nullable&lt;bool&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : Nullable&lt;bool&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2293,6 +2347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(Nullable&lt;DateTime&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2331,6 +2386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(Nullable&lt;DateTimeOffset&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2369,6 +2425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As Nullable(Of Decimal)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : Nullable&lt;decimal&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2407,6 +2464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As Nullable(Of Double)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : Nullable&lt;double&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2445,6 +2503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.Nullable{System.Guid})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As Nullable(Of Guid)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(Nullable&lt;Guid&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : Nullable&lt;Guid&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2483,6 +2542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(Nullable&lt;TimeSpan&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2521,6 +2581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DataLength(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DataLength (arg As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DataLength(System::String ^ arg);" />
+      <MemberSignature Language="F#" Value="static member DataLength : string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DataLength arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2578,6 +2639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateAdd(System.String,System.Nullable{System.Double},System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateAdd (datePartArg As String, number As Nullable(Of Double), date As Nullable(Of DateTime)) As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;DateTime&gt; DateAdd(System::String ^ datePartArg, Nullable&lt;double&gt; number, Nullable&lt;DateTime&gt; date);" />
+      <MemberSignature Language="F#" Value="static member DateAdd : string * Nullable&lt;double&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;DateTime&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateAdd (datePartArg, number, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2620,6 +2682,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateAdd(System.String,System.Nullable{System.Double},System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateAdd (datePartArg As String, number As Nullable(Of Double), dateTimeOffsetArg As Nullable(Of DateTimeOffset)) As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;DateTimeOffset&gt; DateAdd(System::String ^ datePartArg, Nullable&lt;double&gt; number, Nullable&lt;DateTimeOffset&gt; dateTimeOffsetArg);" />
+      <MemberSignature Language="F#" Value="static member DateAdd : string * Nullable&lt;double&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;DateTimeOffset&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateAdd (datePartArg, number, dateTimeOffsetArg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2662,6 +2725,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateAdd(System.String,System.Nullable{System.Double},System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateAdd (datePartArg As String, number As Nullable(Of Double), time As Nullable(Of TimeSpan)) As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;TimeSpan&gt; DateAdd(System::String ^ datePartArg, Nullable&lt;double&gt; number, Nullable&lt;TimeSpan&gt; time);" />
+      <MemberSignature Language="F#" Value="static member DateAdd : string * Nullable&lt;double&gt; * Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;TimeSpan&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateAdd (datePartArg, number, time)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2704,6 +2768,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateAdd(System.String,System.Nullable{System.Double},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateAdd (datePartArg As String, number As Nullable(Of Double), date As String) As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;DateTime&gt; DateAdd(System::String ^ datePartArg, Nullable&lt;double&gt; number, System::String ^ date);" />
+      <MemberSignature Language="F#" Value="static member DateAdd : string * Nullable&lt;double&gt; * string -&gt; Nullable&lt;DateTime&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateAdd (datePartArg, number, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2765,6 +2830,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2807,6 +2873,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2849,6 +2916,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of DateTime), endDate As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;DateTime&gt; startDate, Nullable&lt;TimeSpan&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;DateTime&gt; * Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2891,6 +2959,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTime},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of DateTime), endDate As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;DateTime&gt; startDate, System::String ^ endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;DateTime&gt; * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2933,6 +3002,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2975,6 +3045,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3017,6 +3088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;TimeSpan&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3059,6 +3131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.DateTimeOffset},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of DateTimeOffset), endDate As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;DateTimeOffset&gt; startDate, System::String ^ endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;DateTimeOffset&gt; * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3101,6 +3174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of TimeSpan), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;TimeSpan&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3143,6 +3217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of TimeSpan), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;TimeSpan&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3185,6 +3260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of TimeSpan), endDate As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;TimeSpan&gt; startDate, Nullable&lt;TimeSpan&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3227,6 +3303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.Nullable{System.TimeSpan},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As Nullable(Of TimeSpan), endDate As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, Nullable&lt;TimeSpan&gt; startDate, System::String ^ endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * Nullable&lt;TimeSpan&gt; * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3269,6 +3346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.String,System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As String, endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, System::String ^ startDate, Nullable&lt;DateTime&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * string * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3311,6 +3389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.String,System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As String, endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, System::String ^ startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * string * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3353,6 +3432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.String,System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As String, endDate As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, System::String ^ startDate, Nullable&lt;TimeSpan&gt; endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * string * Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3395,6 +3475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateDiff(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiff (datePartArg As String, startDate As String, endDate As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiff(System::String ^ datePartArg, System::String ^ startDate, System::String ^ endDate);" />
+      <MemberSignature Language="F#" Value="static member DateDiff : string * string * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateDiff (datePartArg, startDate, endDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3456,6 +3537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateName(System.String,System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateName (datePartArg As String, date As Nullable(Of DateTime)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ DateName(System::String ^ datePartArg, Nullable&lt;DateTime&gt; date);" />
+      <MemberSignature Language="F#" Value="static member DateName : string * Nullable&lt;DateTime&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateName (datePartArg, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3496,6 +3578,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateName(System.String,System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateName (datePartArg As String, date As Nullable(Of DateTimeOffset)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ DateName(System::String ^ datePartArg, Nullable&lt;DateTimeOffset&gt; date);" />
+      <MemberSignature Language="F#" Value="static member DateName : string * Nullable&lt;DateTimeOffset&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateName (datePartArg, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3536,6 +3619,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateName(System.String,System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateName (datePartArg As String, date As Nullable(Of TimeSpan)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ DateName(System::String ^ datePartArg, Nullable&lt;TimeSpan&gt; date);" />
+      <MemberSignature Language="F#" Value="static member DateName : string * Nullable&lt;TimeSpan&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateName (datePartArg, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3576,6 +3660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DateName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DateName (datePartArg As String, date As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ DateName(System::String ^ datePartArg, System::String ^ date);" />
+      <MemberSignature Language="F#" Value="static member DateName : string * string -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.DateName (datePartArg, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3635,6 +3720,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DatePart(System.String,System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DatePart (datePartArg As String, date As Nullable(Of DateTime)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DatePart(System::String ^ datePartArg, Nullable&lt;DateTime&gt; date);" />
+      <MemberSignature Language="F#" Value="static member DatePart : string * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DatePart (datePartArg, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3675,6 +3761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DatePart(System.String,System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DatePart (datePartArg As String, date As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DatePart(System::String ^ datePartArg, Nullable&lt;DateTimeOffset&gt; date);" />
+      <MemberSignature Language="F#" Value="static member DatePart : string * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DatePart (datePartArg, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3715,6 +3802,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DatePart(System.String,System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DatePart (datePartArg As String, date As Nullable(Of TimeSpan)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DatePart(System::String ^ datePartArg, Nullable&lt;TimeSpan&gt; date);" />
+      <MemberSignature Language="F#" Value="static member DatePart : string * Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DatePart (datePartArg, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3755,6 +3843,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.DatePart(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DatePart (datePartArg As String, date As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DatePart(System::String ^ datePartArg, System::String ^ date);" />
+      <MemberSignature Language="F#" Value="static member DatePart : string * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.DatePart (datePartArg, date)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3814,6 +3903,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Degrees(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Degrees (arg1 As Nullable(Of Decimal)) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;System::Decimal&gt; Degrees(Nullable&lt;System::Decimal&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Degrees : Nullable&lt;decimal&gt; -&gt; Nullable&lt;decimal&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Degrees arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3852,6 +3942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Degrees(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Degrees (arg1 As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Degrees(Nullable&lt;double&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Degrees : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Degrees arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3890,6 +3981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Degrees(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Degrees (arg1 As Nullable(Of Integer)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Degrees(Nullable&lt;int&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Degrees : Nullable&lt;int&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Degrees arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3928,6 +4020,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Degrees(System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Degrees (arg1 As Nullable(Of Long)) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;long&gt; Degrees(Nullable&lt;long&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Degrees : Nullable&lt;int64&gt; -&gt; Nullable&lt;int64&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Degrees arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3966,6 +4059,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Difference(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Difference (string1 As String, string2 As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Difference(System::String ^ string1, System::String ^ string2);" />
+      <MemberSignature Language="F#" Value="static member Difference : string * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Difference (string1, string2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4025,6 +4119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Exp(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exp (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Exp(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Exp : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Exp arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4063,6 +4158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Exp(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exp (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Exp(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Exp : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Exp arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4101,6 +4197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.GetDate" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDate () As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;DateTime&gt; GetDate();" />
+      <MemberSignature Language="F#" Value="static member GetDate : unit -&gt; Nullable&lt;DateTime&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.GetDate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4136,6 +4233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.GetUtcDate" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUtcDate () As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;DateTime&gt; GetUtcDate();" />
+      <MemberSignature Language="F#" Value="static member GetUtcDate : unit -&gt; Nullable&lt;DateTime&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.GetUtcDate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4171,6 +4269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.HostName" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HostName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HostName();" />
+      <MemberSignature Language="F#" Value="static member HostName : unit -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.HostName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4206,6 +4305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.IsDate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDate (arg As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; IsDate(System::String ^ arg);" />
+      <MemberSignature Language="F#" Value="static member IsDate : string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.IsDate arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4244,6 +4344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.IsNumeric(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNumeric (arg As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; IsNumeric(System::String ^ arg);" />
+      <MemberSignature Language="F#" Value="static member IsNumeric : string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.IsNumeric arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4301,6 +4402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Log(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Log(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Log : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Log arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4339,6 +4441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Log(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Log(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Log : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Log arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4396,6 +4499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Log10(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log10 (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Log10(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Log10 : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Log10 arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4434,6 +4538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Log10(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log10 (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Log10(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Log10 : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Log10 arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4472,6 +4577,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.NChar(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NChar (arg As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ NChar(Nullable&lt;int&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member NChar : Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.NChar arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4510,6 +4616,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.PatIndex(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PatIndex (stringPattern As String, target As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; PatIndex(System::String ^ stringPattern, System::String ^ target);" />
+      <MemberSignature Language="F#" Value="static member PatIndex : string * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.PatIndex (stringPattern, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4550,6 +4657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Pi" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Pi () As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Pi();" />
+      <MemberSignature Language="F#" Value="static member Pi : unit -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Pi " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4604,6 +4712,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.QuoteName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function QuoteName (stringArg As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ QuoteName(System::String ^ stringArg);" />
+      <MemberSignature Language="F#" Value="static member QuoteName : string -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.QuoteName stringArg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4642,6 +4751,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.QuoteName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function QuoteName (stringArg As String, quoteCharacter As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ QuoteName(System::String ^ stringArg, System::String ^ quoteCharacter);" />
+      <MemberSignature Language="F#" Value="static member QuoteName : string * string -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.QuoteName (stringArg, quoteCharacter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4701,6 +4811,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Radians(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Radians (arg As Nullable(Of Decimal)) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;System::Decimal&gt; Radians(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Radians : Nullable&lt;decimal&gt; -&gt; Nullable&lt;decimal&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Radians arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4739,6 +4850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Radians(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Radians (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Radians(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Radians : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Radians arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4777,6 +4889,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Radians(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Radians (arg As Nullable(Of Integer)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Radians(Nullable&lt;int&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Radians : Nullable&lt;int&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Radians arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4815,6 +4928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Radians(System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Radians (arg As Nullable(Of Long)) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;long&gt; Radians(Nullable&lt;long&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Radians : Nullable&lt;int64&gt; -&gt; Nullable&lt;int64&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Radians arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4872,6 +4986,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Rand" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Rand () As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Rand();" />
+      <MemberSignature Language="F#" Value="static member Rand : unit -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Rand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4907,6 +5022,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Rand(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Rand (seed As Nullable(Of Integer)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Rand(Nullable&lt;int&gt; seed);" />
+      <MemberSignature Language="F#" Value="static member Rand : Nullable&lt;int&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Rand seed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -4945,6 +5061,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Replicate(System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Replicate (target As String, count As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Replicate(System::String ^ target, Nullable&lt;int&gt; count);" />
+      <MemberSignature Language="F#" Value="static member Replicate : string * Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.Replicate (target, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5004,6 +5121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Sign(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (arg As Nullable(Of Decimal)) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;System::Decimal&gt; Sign(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Sign : Nullable&lt;decimal&gt; -&gt; Nullable&lt;decimal&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Sign arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5042,6 +5160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Sign(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Sign(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Sign : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Sign arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5080,6 +5199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Sign(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (arg As Nullable(Of Integer)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Sign(Nullable&lt;int&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Sign : Nullable&lt;int&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Sign arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5118,6 +5238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Sign(System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sign (arg As Nullable(Of Long)) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;long&gt; Sign(Nullable&lt;long&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Sign : Nullable&lt;int64&gt; -&gt; Nullable&lt;int64&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Sign arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5175,6 +5296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Sin(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sin (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Sin(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Sin : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Sin arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5213,6 +5335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Sin(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Sin (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Sin(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Sin : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Sin arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5251,6 +5374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.SoundCode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SoundCode (arg As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ SoundCode(System::String ^ arg);" />
+      <MemberSignature Language="F#" Value="static member SoundCode : string -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.SoundCode arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5289,6 +5413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Space(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Space (arg1 As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Space(Nullable&lt;int&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Space : Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.Space arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5346,6 +5471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Square(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Square (arg1 As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Square(Nullable&lt;System::Decimal&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Square : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Square arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5384,6 +5510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Square(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Square (arg1 As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Square(Nullable&lt;double&gt; arg1);" />
+      <MemberSignature Language="F#" Value="static member Square : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Square arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5441,6 +5568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.SquareRoot(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SquareRoot (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; SquareRoot(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member SquareRoot : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.SquareRoot arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5479,6 +5607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.SquareRoot(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SquareRoot (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; SquareRoot(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member SquareRoot : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.SquareRoot arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5536,6 +5665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.StringConvert(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StringConvert (number As Nullable(Of Decimal)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StringConvert(Nullable&lt;System::Decimal&gt; number);" />
+      <MemberSignature Language="F#" Value="static member StringConvert : Nullable&lt;decimal&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.StringConvert number" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5574,6 +5704,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.StringConvert(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StringConvert (number As Nullable(Of Double)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StringConvert(Nullable&lt;double&gt; number);" />
+      <MemberSignature Language="F#" Value="static member StringConvert : Nullable&lt;double&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.StringConvert number" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5612,6 +5743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.StringConvert(System.Nullable{System.Decimal},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StringConvert (number As Nullable(Of Decimal), length As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StringConvert(Nullable&lt;System::Decimal&gt; number, Nullable&lt;int&gt; length);" />
+      <MemberSignature Language="F#" Value="static member StringConvert : Nullable&lt;decimal&gt; * Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.StringConvert (number, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5652,6 +5784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.StringConvert(System.Nullable{System.Double},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StringConvert (number As Nullable(Of Double), length As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StringConvert(Nullable&lt;double&gt; number, Nullable&lt;int&gt; length);" />
+      <MemberSignature Language="F#" Value="static member StringConvert : Nullable&lt;double&gt; * Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.StringConvert (number, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5692,6 +5825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.StringConvert(System.Nullable{System.Decimal},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StringConvert (number As Nullable(Of Decimal), length As Nullable(Of Integer), decimalArg As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StringConvert(Nullable&lt;System::Decimal&gt; number, Nullable&lt;int&gt; length, Nullable&lt;int&gt; decimalArg);" />
+      <MemberSignature Language="F#" Value="static member StringConvert : Nullable&lt;decimal&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.StringConvert (number, length, decimalArg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5734,6 +5868,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.StringConvert(System.Nullable{System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StringConvert (number As Nullable(Of Double), length As Nullable(Of Integer), decimalArg As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StringConvert(Nullable&lt;double&gt; number, Nullable&lt;int&gt; length, Nullable&lt;int&gt; decimalArg);" />
+      <MemberSignature Language="F#" Value="static member StringConvert : Nullable&lt;double&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.StringConvert (number, length, decimalArg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5776,6 +5911,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Stuff(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Stuff (stringInput As String, start As Nullable(Of Integer), length As Nullable(Of Integer), stringReplacement As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Stuff(System::String ^ stringInput, Nullable&lt;int&gt; start, Nullable&lt;int&gt; length, System::String ^ stringReplacement);" />
+      <MemberSignature Language="F#" Value="static member Stuff : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.Stuff (stringInput, start, length, stringReplacement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5839,6 +5975,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Tan(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Tan (arg As Nullable(Of Decimal)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Tan(Nullable&lt;System::Decimal&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Tan : Nullable&lt;decimal&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Tan arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5877,6 +6014,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Tan(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Tan (arg As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; Tan(Nullable&lt;double&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member Tan : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Tan arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5915,6 +6053,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.Unicode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Unicode (arg As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; Unicode(System::String ^ arg);" />
+      <MemberSignature Language="F#" Value="static member Unicode : string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlFunctions.Unicode arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -5972,6 +6111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UserName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UserName();" />
+      <MemberSignature Language="F#" Value="static member UserName : unit -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.UserName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -6007,6 +6147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlFunctions.UserName(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UserName (arg As Nullable(Of Integer)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UserName(Nullable&lt;int&gt; arg);" />
+      <MemberSignature Language="F#" Value="static member UserName : Nullable&lt;int&gt; -&gt; string" Usage="System.Data.Objects.SqlClient.SqlFunctions.UserName arg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

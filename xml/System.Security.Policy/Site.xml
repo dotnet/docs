@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.Site" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Site&#xA;Inherits EvidenceBase&#xA;Implements IIdentityPermissionFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class Site sealed : System::Security::Policy::EvidenceBase, System::Security::Policy::IIdentityPermissionFactory" />
+  <TypeSignature Language="F#" Value="type Site = class&#xA;    inherit EvidenceBase&#xA;    interface IIdentityPermissionFactory" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Site(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.Site : string -&gt; System.Security.Policy.Site" Usage="new System.Security.Policy.Site name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::EvidenceBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Policy.EvidenceBase" Usage="site.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; obj" Usage="site.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.CreateFromUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromUrl (url As String) As Site" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::Site ^ CreateFromUrl(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="static member CreateFromUrl : string -&gt; System.Security.Policy.Site" Usage="System.Security.Policy.Site.CreateFromUrl url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission CreateIdentityPermission(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.CreateIdentityPermission(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ CreateIdentityPermission(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member CreateIdentityPermission : System.Security.Policy.Evidence -&gt; System.Security.IPermission&#xA;override this.CreateIdentityPermission : System.Security.Policy.Evidence -&gt; System.Security.IPermission" Usage="site.CreateIdentityPermission evidence" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IIdentityPermissionFactory.CreateIdentityPermission(System.Security.Policy.Evidence)</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="site.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="site.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Site.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Security.Policy.Site.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="site.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

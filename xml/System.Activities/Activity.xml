@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Activity" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class Activity abstract" />
+  <TypeSignature Language="F#" Value="type Activity = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Activity.CacheId" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property CacheId As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property int CacheId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheId : int" Usage="System.Activities.Activity.CacheId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity.CacheMetadata(System.Activities.ActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CacheMetadata (metadata As ActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CacheMetadata(System::Activities::ActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="abstract member CacheMetadata : System.Activities.ActivityMetadata -&gt; unit&#xA;override this.CacheMetadata : System.Activities.ActivityMetadata -&gt; unit" Usage="activity.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Activity.Constraints" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Constraints As Collection(Of Constraint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Validation::Constraint ^&gt; ^ Constraints { System::Collections::ObjectModel::Collection&lt;System::Activities::Validation::Constraint ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Constraints : System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.Constraint&gt;" Usage="System.Activities.Activity.Constraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Activity.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Activities.Activity.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Activity.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.Activities.Activity.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Activity.Implementation" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property Implementation As Func(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Func&lt;System::Activities::Activity ^&gt; ^ Implementation { Func&lt;System::Activities::Activity ^&gt; ^ get(); void set(Func&lt;System::Activities::Activity ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Implementation : Func&lt;System.Activities.Activity&gt; with get, set" Usage="System.Activities.Activity.Implementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Activity.ImplementationVersion" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Property ImplementationVersion As Version" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property Version ^ ImplementationVersion { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImplementationVersion : Version with get, set" Usage="System.Activities.Activity.ImplementationVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.UpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateDynamicUpdateMap (metadata As UpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::UpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.UpdateMapMetadata * System.Activities.Activity -&gt; unit&#xA;override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.UpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="activity.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity.ShouldSerializeDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDisplayName () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDisplayName();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeDisplayName : unit -&gt; bool" Usage="activity.ShouldSerializeDisplayName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activity.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

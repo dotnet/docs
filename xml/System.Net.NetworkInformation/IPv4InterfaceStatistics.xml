@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPv4InterfaceStatistics" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IPv4InterfaceStatistics" />
   <TypeSignature Language="C++ CLI" Value="public ref class IPv4InterfaceStatistics abstract" />
+  <TypeSignature Language="F#" Value="type IPv4InterfaceStatistics = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.BytesReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BytesReceived As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long BytesReceived { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesReceived : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.BytesReceived" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.BytesSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BytesSent As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long BytesSent { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesSent : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.BytesSent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingPacketsDiscarded" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IncomingPacketsDiscarded As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long IncomingPacketsDiscarded { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncomingPacketsDiscarded : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingPacketsDiscarded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingPacketsWithErrors" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IncomingPacketsWithErrors As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long IncomingPacketsWithErrors { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncomingPacketsWithErrors : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingPacketsWithErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingUnknownProtocolPackets" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IncomingUnknownProtocolPackets As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long IncomingUnknownProtocolPackets { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncomingUnknownProtocolPackets : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingUnknownProtocolPackets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.NonUnicastPacketsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NonUnicastPacketsReceived As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long NonUnicastPacketsReceived { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.NonUnicastPacketsReceived : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.NonUnicastPacketsReceived" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.NonUnicastPacketsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NonUnicastPacketsSent As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long NonUnicastPacketsSent { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.NonUnicastPacketsSent : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.NonUnicastPacketsSent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.OutgoingPacketsDiscarded" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OutgoingPacketsDiscarded As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long OutgoingPacketsDiscarded { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutgoingPacketsDiscarded : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.OutgoingPacketsDiscarded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -356,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.OutgoingPacketsWithErrors" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OutgoingPacketsWithErrors As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long OutgoingPacketsWithErrors { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutgoingPacketsWithErrors : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.OutgoingPacketsWithErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -393,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.OutputQueueLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OutputQueueLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long OutputQueueLength { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputQueueLength : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.OutputQueueLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -423,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.UnicastPacketsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property UnicastPacketsReceived As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long UnicastPacketsReceived { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnicastPacketsReceived : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.UnicastPacketsReceived" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -460,6 +472,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv4InterfaceStatistics.UnicastPacketsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property UnicastPacketsSent As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long UnicastPacketsSent { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnicastPacketsSent : int64" Usage="System.Net.NetworkInformation.IPv4InterfaceStatistics.UnicastPacketsSent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

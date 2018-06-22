@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelListenerBase`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelListenerBase(Of TChannel)&#xA;Inherits ChannelListenerBase&#xA;Implements IChannelListener(Of TChannel)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA; where TChannel : class, IChannelpublic ref class ChannelListenerBase abstract : System::ServiceModel::Channels::ChannelListenerBase, System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt;" />
+  <TypeSignature Language="F#" Value="type ChannelListenerBase&lt;'Channel (requires 'Channel : null and 'Channel :&gt; IChannel)&gt; = class&#xA;    inherit ChannelListenerBase&#xA;    interface IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; IChannel)&gt;&#xA;    interface IChannelListener&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (timeouts As IDefaultCommunicationTimeouts)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelListenerBase(System::ServiceModel::IDefaultCommunicationTimeouts ^ timeouts);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ChannelListenerBase&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; : System.ServiceModel.IDefaultCommunicationTimeouts -&gt; System.ServiceModel.Channels.ChannelListenerBase&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt;" Usage="new System.ServiceModel.Channels.ChannelListenerBase&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; timeouts" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.AcceptChannel" />
       <MemberSignature Language="VB.NET" Value="Public Function AcceptChannel () As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TChannel AcceptChannel();" />
+      <MemberSignature Language="F#" Value="abstract member AcceptChannel : unit -&gt; 'Channel&#xA;override this.AcceptChannel : unit -&gt; 'Channel" Usage="channelListenerBase.AcceptChannel " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IChannelListener`1.AcceptChannel</InterfaceMember>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.AcceptChannel(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function AcceptChannel (timeout As TimeSpan) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TChannel AcceptChannel(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member AcceptChannel : TimeSpan -&gt; 'Channel&#xA;override this.AcceptChannel : TimeSpan -&gt; 'Channel" Usage="channelListenerBase.AcceptChannel timeout" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IChannelListener`1.AcceptChannel(System.TimeSpan)</InterfaceMember>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.BeginAcceptChannel(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginAcceptChannel (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAcceptChannel(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAcceptChannel : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAcceptChannel : AsyncCallback * obj -&gt; IAsyncResult" Usage="channelListenerBase.BeginAcceptChannel (callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IChannelListener`1.BeginAcceptChannel(System.AsyncCallback,System.Object)</InterfaceMember>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.BeginAcceptChannel(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginAcceptChannel (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAcceptChannel(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAcceptChannel : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAcceptChannel : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="channelListenerBase.BeginAcceptChannel (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IChannelListener`1.BeginAcceptChannel(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.EndAcceptChannel(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndAcceptChannel (result As IAsyncResult) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TChannel EndAcceptChannel(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndAcceptChannel : IAsyncResult -&gt; 'Channel&#xA;override this.EndAcceptChannel : IAsyncResult -&gt; 'Channel" Usage="channelListenerBase.EndAcceptChannel result" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IChannelListener`1.EndAcceptChannel(System.IAsyncResult)</InterfaceMember>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.OnAcceptChannel(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnAcceptChannel (timeout As TimeSpan) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TChannel OnAcceptChannel(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member OnAcceptChannel : TimeSpan -&gt; 'Channel" Usage="channelListenerBase.OnAcceptChannel timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.OnBeginAcceptChannel(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnBeginAcceptChannel (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ OnBeginAcceptChannel(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginAcceptChannel : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="channelListenerBase.OnBeginAcceptChannel (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -319,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelListenerBase`1.OnEndAcceptChannel(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnEndAcceptChannel (result As IAsyncResult) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TChannel OnEndAcceptChannel(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndAcceptChannel : IAsyncResult -&gt; 'Channel" Usage="channelListenerBase.OnEndAcceptChannel result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

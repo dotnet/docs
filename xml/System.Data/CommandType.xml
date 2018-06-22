@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.CommandType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CommandType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CommandType" />
+  <TypeSignature Language="F#" Value="type CommandType = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandType.StoredProcedure" />
       <MemberSignature Language="VB.NET" Value="StoredProcedure" />
       <MemberSignature Language="C++ CLI" Value="StoredProcedure" />
+      <MemberSignature Language="F#" Value="StoredProcedure = 4" Usage="System.Data.CommandType.StoredProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandType.TableDirect" />
       <MemberSignature Language="VB.NET" Value="TableDirect" />
       <MemberSignature Language="C++ CLI" Value="TableDirect" />
+      <MemberSignature Language="F#" Value="TableDirect = 512" Usage="System.Data.CommandType.TableDirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Data.CommandType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

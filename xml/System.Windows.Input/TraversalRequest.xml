@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TraversalRequest" />
   <TypeSignature Language="VB.NET" Value="Public Class TraversalRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraversalRequest" />
+  <TypeSignature Language="F#" Value="type TraversalRequest = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Input.FocusNavigationDirection focusNavigationDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TraversalRequest.#ctor(System.Windows.Input.FocusNavigationDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TraversalRequest(System::Windows::Input::FocusNavigationDirection focusNavigationDirection);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.TraversalRequest : System.Windows.Input.FocusNavigationDirection -&gt; System.Windows.Input.TraversalRequest" Usage="new System.Windows.Input.TraversalRequest focusNavigationDirection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TraversalRequest.FocusNavigationDirection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FocusNavigationDirection As FocusNavigationDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::FocusNavigationDirection FocusNavigationDirection { System::Windows::Input::FocusNavigationDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusNavigationDirection : System.Windows.Input.FocusNavigationDirection" Usage="System.Windows.Input.TraversalRequest.FocusNavigationDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TraversalRequest.Wrapped" />
       <MemberSignature Language="VB.NET" Value="Public Property Wrapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Wrapped { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Wrapped : bool with get, set" Usage="System.Windows.Input.TraversalRequest.Wrapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

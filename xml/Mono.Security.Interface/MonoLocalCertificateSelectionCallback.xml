@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoLocalCertificateSelectionCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function MonoLocalCertificateSelectionCallback(targetHost As String, localCertificates As X509CertificateCollection, remoteCertificate As X509Certificate, acceptableIssuers As String()) As X509Certificate " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Security::Cryptography::X509Certificates::X509Certificate ^ MonoLocalCertificateSelectionCallback(System::String ^ targetHost, X509CertificateCollection ^ localCertificates, X509Certificate ^ remoteCertificate, cli::array &lt;System::String ^&gt; ^ acceptableIssuers);" />
+  <TypeSignature Language="F#" Value="type MonoLocalCertificateSelectionCallback = delegate of string * X509CertificateCollection * X509Certificate * string[] -&gt; X509Certificate" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

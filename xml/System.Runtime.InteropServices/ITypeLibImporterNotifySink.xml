@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ITypeLibImporterNotifySink" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeLibImporterNotifySink" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeLibImporterNotifySink" />
+  <TypeSignature Language="F#" Value="type ITypeLibImporterNotifySink = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibImporterNotifySink.ReportEvent(System.Runtime.InteropServices.ImporterEventKind,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportEvent (eventKind As ImporterEventKind, eventCode As Integer, eventMsg As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportEvent(System::Runtime::InteropServices::ImporterEventKind eventKind, int eventCode, System::String ^ eventMsg);" />
+      <MemberSignature Language="F#" Value="abstract member ReportEvent : System.Runtime.InteropServices.ImporterEventKind * int * string -&gt; unit" Usage="iTypeLibImporterNotifySink.ReportEvent (eventKind, eventCode, eventMsg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibImporterNotifySink.ResolveRef(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveRef (typeLib As Object) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ ResolveRef(System::Object ^ typeLib);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveRef : obj -&gt; System.Reflection.Assembly" Usage="iTypeLibImporterNotifySink.ResolveRef typeLib" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

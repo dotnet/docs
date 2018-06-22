@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Design.TypedDataSetSchemaImporterExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class TypedDataSetSchemaImporterExtension&#xA;Inherits SchemaImporterExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypedDataSetSchemaImporterExtension : System::Xml::Serialization::Advanced::SchemaImporterExtension" />
+  <TypeSignature Language="F#" Value="type TypedDataSetSchemaImporterExtension = class&#xA;    inherit SchemaImporterExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetSchemaImporterExtension.#ctor(System.Data.Design.TypedDataSetGenerator.GenerateOption)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (dataSetGenerateOptions As TypedDataSetGenerator.GenerateOption)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TypedDataSetSchemaImporterExtension(System::Data::Design::TypedDataSetGenerator::GenerateOption dataSetGenerateOptions);" />
+      <MemberSignature Language="F#" Value="new System.Data.Design.TypedDataSetSchemaImporterExtension : System.Data.Design.TypedDataSetGenerator.GenerateOption -&gt; System.Data.Design.TypedDataSetSchemaImporterExtension" Usage="new System.Data.Design.TypedDataSetSchemaImporterExtension dataSetGenerateOptions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetSchemaImporterExtension.ImportSchemaType(System.Xml.Schema.XmlSchemaType,System.Xml.Schema.XmlSchemaObject,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ImportSchemaType (type As XmlSchemaType, context As XmlSchemaObject, schemas As XmlSchemas, importer As XmlSchemaImporter, compileUnit As CodeCompileUnit, mainNamespace As CodeNamespace, options As CodeGenerationOptions, codeProvider As CodeDomProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ImportSchemaType(System::Xml::Schema::XmlSchemaType ^ type, System::Xml::Schema::XmlSchemaObject ^ context, System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::XmlSchemaImporter ^ importer, System::CodeDom::CodeCompileUnit ^ compileUnit, System::CodeDom::CodeNamespace ^ mainNamespace, System::Xml::Serialization::CodeGenerationOptions options, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider);" />
+      <MemberSignature Language="F#" Value="abstract member ImportSchemaType : System.Xml.Schema.XmlSchemaType * System.Xml.Schema.XmlSchemaObject * System.Xml.Serialization.XmlSchemas * System.Xml.Serialization.XmlSchemaImporter * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeNamespace * System.Xml.Serialization.CodeGenerationOptions * System.CodeDom.Compiler.CodeDomProvider -&gt; string&#xA;override this.ImportSchemaType : System.Xml.Schema.XmlSchemaType * System.Xml.Schema.XmlSchemaObject * System.Xml.Serialization.XmlSchemas * System.Xml.Serialization.XmlSchemaImporter * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeNamespace * System.Xml.Serialization.CodeGenerationOptions * System.CodeDom.Compiler.CodeDomProvider -&gt; string" Usage="typedDataSetSchemaImporterExtension.ImportSchemaType (type, context, schemas, importer, compileUnit, mainNamespace, options, codeProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetSchemaImporterExtension.ImportSchemaType(System.String,System.String,System.Xml.Schema.XmlSchemaObject,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ImportSchemaType (name As String, namespaceName As String, context As XmlSchemaObject, schemas As XmlSchemas, importer As XmlSchemaImporter, compileUnit As CodeCompileUnit, mainNamespace As CodeNamespace, options As CodeGenerationOptions, codeProvider As CodeDomProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ImportSchemaType(System::String ^ name, System::String ^ namespaceName, System::Xml::Schema::XmlSchemaObject ^ context, System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::XmlSchemaImporter ^ importer, System::CodeDom::CodeCompileUnit ^ compileUnit, System::CodeDom::CodeNamespace ^ mainNamespace, System::Xml::Serialization::CodeGenerationOptions options, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider);" />
+      <MemberSignature Language="F#" Value="abstract member ImportSchemaType : string * string * System.Xml.Schema.XmlSchemaObject * System.Xml.Serialization.XmlSchemas * System.Xml.Serialization.XmlSchemaImporter * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeNamespace * System.Xml.Serialization.CodeGenerationOptions * System.CodeDom.Compiler.CodeDomProvider -&gt; string&#xA;override this.ImportSchemaType : string * string * System.Xml.Schema.XmlSchemaObject * System.Xml.Serialization.XmlSchemas * System.Xml.Serialization.XmlSchemaImporter * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeNamespace * System.Xml.Serialization.CodeGenerationOptions * System.CodeDom.Compiler.CodeDomProvider -&gt; string" Usage="typedDataSetSchemaImporterExtension.ImportSchemaType (name, namespaceName, context, schemas, importer, compileUnit, mainNamespace, options, codeProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

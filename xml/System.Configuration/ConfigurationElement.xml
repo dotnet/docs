@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationElement abstract" />
+  <TypeSignature Language="F#" Value="type ConfigurationElement = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -134,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.CurrentConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentConfiguration As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Configuration ^ CurrentConfiguration { System::Configuration::Configuration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentConfiguration : System.Configuration.Configuration" Usage="System.Configuration.ConfigurationElement.CurrentConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -165,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="abstract member DeserializeElement : System.Xml.XmlReader * bool -&gt; unit&#xA;override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="configurationElement.DeserializeElement (reader, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -214,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.ElementInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementInformation As ElementInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ElementInformation ^ ElementInformation { System::Configuration::ElementInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementInformation : System.Configuration.ElementInformation" Usage="System.Configuration.ConfigurationElement.ElementInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -249,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.ElementProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property ElementProperty As ConfigurationElementProperty" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementProperty : System.Configuration.ConfigurationElementProperty" Usage="System.Configuration.ConfigurationElement.ElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -273,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (compareTo As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ compareTo);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="configurationElement.Equals compareTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -302,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.EvaluationContext" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property EvaluationContext As ContextInformation" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Configuration::ContextInformation ^ EvaluationContext { System::Configuration::ContextInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluationContext : System.Configuration.ContextInformation" Usage="System.Configuration.ConfigurationElement.EvaluationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -337,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="configurationElement.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -362,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.GetTransformedAssemblyString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetTransformedAssemblyString (assemblyName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetTransformedAssemblyString(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetTransformedAssemblyString : string -&gt; string&#xA;override this.GetTransformedAssemblyString : string -&gt; string" Usage="configurationElement.GetTransformedAssemblyString assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -397,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.GetTransformedTypeString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetTransformedTypeString (typeName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetTransformedTypeString(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="abstract member GetTransformedTypeString : string -&gt; string&#xA;override this.GetTransformedTypeString : string -&gt; string" Usage="configurationElement.GetTransformedTypeString typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -432,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.HasContext" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property HasContext As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool HasContext { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasContext : bool" Usage="System.Configuration.ConfigurationElement.HasContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -456,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Init" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Init ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Init();" />
+      <MemberSignature Language="F#" Value="abstract member Init : unit -&gt; unit&#xA;override this.Init : unit -&gt; unit" Usage="configurationElement.Init " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -480,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.InitializeDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub InitializeDefault ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializeDefault();" />
+      <MemberSignature Language="F#" Value="abstract member InitializeDefault : unit -&gt; unit&#xA;override this.InitializeDefault : unit -&gt; unit" Usage="configurationElement.InitializeDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -511,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function IsModified () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool IsModified();" />
+      <MemberSignature Language="F#" Value="abstract member IsModified : unit -&gt; bool&#xA;override this.IsModified : unit -&gt; bool" Usage="configurationElement.IsModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -561,6 +575,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsReadOnly () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsReadOnly();" />
+      <MemberSignature Language="F#" Value="abstract member IsReadOnly : unit -&gt; bool&#xA;override this.IsReadOnly : unit -&gt; bool" Usage="configurationElement.IsReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -624,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.Configuration.ConfigurationProperty)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Default Protected Friend Property Item(property As ConfigurationProperty) As Object" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ default[System::Configuration::ConfigurationProperty ^] { System::Object ^ get(System::Configuration::ConfigurationProperty ^ property); void set(System::Configuration::ConfigurationProperty ^ property, System::Object ^ value); };" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Item(System.Configuration.ConfigurationProperty) : obj with get, set" Usage="System.Configuration.ConfigurationElement.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -670,6 +686,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Default Protected Friend Property Item(property_name As String) As Object" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ property_name); void set(System::String ^ property_name, System::Object ^ value); };" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Configuration.ConfigurationElement.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -715,6 +732,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.ListErrors(System.Collections.IList)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ListErrors (list As IList)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ListErrors(System::Collections::IList ^ list);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member ListErrors : System.Collections.IList -&gt; unit&#xA;override this.ListErrors : System.Collections.IList -&gt; unit" Usage="configurationElement.ListErrors list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -744,6 +762,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockAllAttributesExcept" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LockAllAttributesExcept As ConfigurationLockCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationLockCollection ^ LockAllAttributesExcept { System::Configuration::ConfigurationLockCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LockAllAttributesExcept : System.Configuration.ConfigurationLockCollection" Usage="System.Configuration.ConfigurationElement.LockAllAttributesExcept" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -790,6 +809,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockAllElementsExcept" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LockAllElementsExcept As ConfigurationLockCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationLockCollection ^ LockAllElementsExcept { System::Configuration::ConfigurationLockCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LockAllElementsExcept : System.Configuration.ConfigurationLockCollection" Usage="System.Configuration.ConfigurationElement.LockAllElementsExcept" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -833,6 +853,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LockAttributes As ConfigurationLockCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationLockCollection ^ LockAttributes { System::Configuration::ConfigurationLockCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LockAttributes : System.Configuration.ConfigurationLockCollection" Usage="System.Configuration.ConfigurationElement.LockAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -881,6 +902,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LockElements As ConfigurationLockCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationLockCollection ^ LockElements { System::Configuration::ConfigurationLockCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LockElements : System.Configuration.ConfigurationLockCollection" Usage="System.Configuration.ConfigurationElement.LockElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -926,6 +948,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockItem" />
       <MemberSignature Language="VB.NET" Value="Public Property LockItem As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockItem { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockItem : bool with get, set" Usage="System.Configuration.ConfigurationElement.LockItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -967,6 +990,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeserializeUnrecognizedAttribute (name As String, value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDeserializeUnrecognizedAttribute(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeserializeUnrecognizedAttribute : string * string -&gt; bool&#xA;override this.OnDeserializeUnrecognizedAttribute : string * string -&gt; bool" Usage="configurationElement.OnDeserializeUnrecognizedAttribute (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1009,6 +1033,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeserializeUnrecognizedElement (element As String, reader As XmlReader) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDeserializeUnrecognizedElement(System::String ^ element, System::Xml::XmlReader ^ reader);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool&#xA;override this.OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool" Usage="configurationElement.OnDeserializeUnrecognizedElement (element, reader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1074,6 +1099,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnRequiredPropertyNotFound(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnRequiredPropertyNotFound (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ OnRequiredPropertyNotFound(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member OnRequiredPropertyNotFound : string -&gt; obj&#xA;override this.OnRequiredPropertyNotFound : string -&gt; obj" Usage="configurationElement.OnRequiredPropertyNotFound name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1110,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="abstract member PostDeserialize : unit -&gt; unit&#xA;override this.PostDeserialize : unit -&gt; unit" Usage="configurationElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1134,6 +1161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.PreSerialize(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PreSerialize (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreSerialize(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member PreSerialize : System.Xml.XmlWriter -&gt; unit&#xA;override this.PreSerialize : System.Xml.XmlWriter -&gt; unit" Usage="configurationElement.PreSerialize writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1161,6 +1189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ConfigurationElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1198,6 +1227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="abstract member Reset : System.Configuration.ConfigurationElement -&gt; unit&#xA;override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="configurationElement.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1225,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.ResetModified" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ResetModified ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ResetModified();" />
+      <MemberSignature Language="F#" Value="abstract member ResetModified : unit -&gt; unit&#xA;override this.ResetModified : unit -&gt; unit" Usage="configurationElement.ResetModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1256,6 +1287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SerializeElement (writer As XmlWriter, serializeCollectionKey As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool SerializeElement(System::Xml::XmlWriter ^ writer, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeElement : System.Xml.XmlWriter * bool -&gt; bool&#xA;override this.SerializeElement : System.Xml.XmlWriter * bool -&gt; bool" Usage="configurationElement.SerializeElement (writer, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1299,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.SerializeToXmlElement(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SerializeToXmlElement (writer As XmlWriter, elementName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool SerializeToXmlElement(System::Xml::XmlWriter ^ writer, System::String ^ elementName);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeToXmlElement : System.Xml.XmlWriter * string -&gt; bool&#xA;override this.SerializeToXmlElement : System.Xml.XmlWriter * string -&gt; bool" Usage="configurationElement.SerializeToXmlElement (writer, elementName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1338,6 +1371,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.SetPropertyValue(System.Configuration.ConfigurationProperty,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetPropertyValue (prop As ConfigurationProperty, value As Object, ignoreLocks As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetPropertyValue(System::Configuration::ConfigurationProperty ^ prop, System::Object ^ value, bool ignoreLocks);" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyValue : System.Configuration.ConfigurationProperty * obj * bool -&gt; unit" Usage="configurationElement.SetPropertyValue (prop, value, ignoreLocks)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1371,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.SetReadOnly" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub SetReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void SetReadOnly();" />
+      <MemberSignature Language="F#" Value="abstract member SetReadOnly : unit -&gt; unit&#xA;override this.SetReadOnly : unit -&gt; unit" Usage="configurationElement.SetReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1402,14 +1437,15 @@
     <Member MemberName="Unmerge">
       <MemberSignature Language="C#" Value="protected internal virtual void Unmerge (System.Configuration.ConfigurationElement sourceElement, System.Configuration.ConfigurationElement parentElement, System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Unmerge(class System.Configuration.ConfigurationElement sourceElement, class System.Configuration.ConfigurationElement parentElement, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netcore-2.0" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="C#" Value="protected internal virtual void Unmerge (System.Configuration.ConfigurationElement source, System.Configuration.ConfigurationElement parent, System.Configuration.ConfigurationSaveMode updateMode);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Unmerge(class System.Configuration.ConfigurationElement source, class System.Configuration.ConfigurationElement parent, valuetype System.Configuration.ConfigurationSaveMode updateMode) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Unmerge (source As ConfigurationElement, parent As ConfigurationElement, updateMode As ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Unmerge(System::Configuration::ConfigurationElement ^ source, System::Configuration::ConfigurationElement ^ parent, System::Configuration::ConfigurationSaveMode updateMode);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit&#xA;override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configurationElement.Unmerge (sourceElement, parentElement, saveMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

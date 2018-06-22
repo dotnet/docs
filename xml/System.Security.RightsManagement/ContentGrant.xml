@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.ContentGrant" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentGrant" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentGrant" />
+  <TypeSignature Language="F#" Value="type ContentGrant = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.ContentGrant.#ctor(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.ContentRight)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (user As ContentUser, right As ContentRight)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentGrant(System::Security::RightsManagement::ContentUser ^ user, System::Security::RightsManagement::ContentRight right);" />
+      <MemberSignature Language="F#" Value="new System.Security.RightsManagement.ContentGrant : System.Security.RightsManagement.ContentUser * System.Security.RightsManagement.ContentRight -&gt; System.Security.RightsManagement.ContentGrant" Usage="new System.Security.RightsManagement.ContentGrant (user, right)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.ContentGrant.#ctor(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.ContentRight,System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (user As ContentUser, right As ContentRight, validFrom As DateTime, validUntil As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentGrant(System::Security::RightsManagement::ContentUser ^ user, System::Security::RightsManagement::ContentRight right, DateTime validFrom, DateTime validUntil);" />
+      <MemberSignature Language="F#" Value="new System.Security.RightsManagement.ContentGrant : System.Security.RightsManagement.ContentUser * System.Security.RightsManagement.ContentRight * DateTime * DateTime -&gt; System.Security.RightsManagement.ContentGrant" Usage="new System.Security.RightsManagement.ContentGrant (user, right, validFrom, validUntil)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.ContentGrant.Right" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As ContentRight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::RightsManagement::ContentRight Right { System::Security::RightsManagement::ContentRight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Right : System.Security.RightsManagement.ContentRight" Usage="System.Security.RightsManagement.ContentGrant.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.ContentGrant.User" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As ContentUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::RightsManagement::ContentUser ^ User { System::Security::RightsManagement::ContentUser ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.RightsManagement.ContentUser" Usage="System.Security.RightsManagement.ContentGrant.User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.ContentGrant.ValidFrom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidFrom As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ValidFrom { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidFrom : DateTime" Usage="System.Security.RightsManagement.ContentGrant.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.ContentGrant.ValidUntil" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidUntil As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ValidUntil { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidUntil : DateTime" Usage="System.Security.RightsManagement.ContentGrant.ValidUntil" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

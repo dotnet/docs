@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionPattern.SelectionPatternInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure SelectionPattern.SelectionPatternInformation" />
   <TypeSignature Language="C++ CLI" Value="public: value class SelectionPattern::SelectionPatternInformation" />
+  <TypeSignature Language="F#" Value="type SelectionPattern.SelectionPatternInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.CanSelectMultiple" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanSelectMultiple As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanSelectMultiple { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSelectMultiple : bool" Usage="System.Windows.Automation.SelectionPattern.SelectionPatternInformation.CanSelectMultiple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.GetSelection" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelection () As AutomationElement()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationElement ^&gt; ^ GetSelection();" />
+      <MemberSignature Language="F#" Value="member this.GetSelection : unit -&gt; System.Windows.Automation.AutomationElement[]" Usage="selectionPatternInformation.GetSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.IsSelectionRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelectionRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelectionRequired { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSelectionRequired : bool" Usage="System.Windows.Automation.SelectionPattern.SelectionPatternInformation.IsSelectionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.InvokeDelegate" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeDelegate&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvokeDelegate sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type InvokeDelegate = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeDelegate.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="invokeDelegate.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeDelegate.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Default { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Activities.Activity with get, set" Usage="System.Activities.Statements.InvokeDelegate.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeDelegate.Delegate" />
       <MemberSignature Language="VB.NET" Value="Public Property Delegate As ActivityDelegate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityDelegate ^ Delegate { System::Activities::ActivityDelegate ^ get(); void set(System::Activities::ActivityDelegate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Delegate : System.Activities.ActivityDelegate with get, set" Usage="System.Activities.Statements.InvokeDelegate.Delegate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeDelegate.DelegateArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DelegateArguments As IDictionary(Of String, Argument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::Argument ^&gt; ^ DelegateArguments { System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::Argument ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DelegateArguments : System.Collections.Generic.IDictionary&lt;string, System.Activities.Argument&gt;" Usage="System.Activities.Statements.InvokeDelegate.DelegateArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeDelegate.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="invokeDelegate.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeDelegate.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="invokeDelegate.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

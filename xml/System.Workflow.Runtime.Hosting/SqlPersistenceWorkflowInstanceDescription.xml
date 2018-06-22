@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlPersistenceWorkflowInstanceDescription" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlPersistenceWorkflowInstanceDescription" />
+  <TypeSignature Language="F#" Value="type SqlPersistenceWorkflowInstanceDescription = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.IsBlocked" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBlocked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBlocked { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBlocked : bool" Usage="System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.IsBlocked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.NextTimerExpiration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextTimerExpiration As SqlDateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlTypes::SqlDateTime NextTimerExpiration { System::Data::SqlTypes::SqlDateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextTimerExpiration : System.Data.SqlTypes.SqlDateTime" Usage="System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.NextTimerExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As WorkflowStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::WorkflowStatus Status { System::Workflow::Runtime::WorkflowStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Workflow.Runtime.WorkflowStatus" Usage="System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.SuspendOrTerminateDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SuspendOrTerminateDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuspendOrTerminateDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SuspendOrTerminateDescription : string" Usage="System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.SuspendOrTerminateDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.WorkflowInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowInstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid WorkflowInstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowInstanceId : Guid" Usage="System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.WorkflowInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

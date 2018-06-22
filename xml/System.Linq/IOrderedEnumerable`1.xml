@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.IOrderedEnumerable`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IOrderedEnumerable(Of TElement)&#xA;Implements IEnumerable(Of TElement)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TElement&gt;&#xA;public interface class IOrderedEnumerable : System::Collections::Generic::IEnumerable&lt;TElement&gt;" />
+  <TypeSignature Language="F#" Value="type IOrderedEnumerable&lt;'Element&gt; = interface&#xA;    interface seq&lt;'Element&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.IOrderedEnumerable`1.CreateOrderedEnumerable``1(System.Func{`0,``0},System.Collections.Generic.IComparer{``0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateOrderedEnumerable(Of TKey) (keySelector As Func(Of TElement, TKey), comparer As IComparer(Of TKey), descending As Boolean) As IOrderedEnumerable(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey&gt;&#xA; System::Linq::IOrderedEnumerable&lt;TElement&gt; ^ CreateOrderedEnumerable(Func&lt;TElement, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer, bool descending);" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrderedEnumerable : Func&lt;'Element, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; * bool -&gt; System.Linq.IOrderedEnumerable&lt;'Element&gt;" Usage="iOrderedEnumerable.CreateOrderedEnumerable (keySelector, comparer, descending)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq</AssemblyName>

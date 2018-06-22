@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemPriority" />
   <TypeSignature Language="VB.NET" Value="Public Enum CacheItemPriority" />
   <TypeSignature Language="C++ CLI" Value="public enum class CacheItemPriority" />
+  <TypeSignature Language="F#" Value="type CacheItemPriority = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.AboveNormal" />
       <MemberSignature Language="VB.NET" Value="AboveNormal" />
       <MemberSignature Language="C++ CLI" Value="AboveNormal" />
+      <MemberSignature Language="F#" Value="AboveNormal = 4" Usage="System.Web.Caching.CacheItemPriority.AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.BelowNormal" />
       <MemberSignature Language="VB.NET" Value="BelowNormal" />
       <MemberSignature Language="C++ CLI" Value="BelowNormal" />
+      <MemberSignature Language="F#" Value="BelowNormal = 2" Usage="System.Web.Caching.CacheItemPriority.BelowNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 3" Usage="System.Web.Caching.CacheItemPriority.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 5" Usage="System.Web.Caching.CacheItemPriority.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.Low" />
       <MemberSignature Language="VB.NET" Value="Low" />
       <MemberSignature Language="C++ CLI" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = 1" Usage="System.Web.Caching.CacheItemPriority.Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 3" Usage="System.Web.Caching.CacheItemPriority.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.NotRemovable" />
       <MemberSignature Language="VB.NET" Value="NotRemovable" />
       <MemberSignature Language="C++ CLI" Value="NotRemovable" />
+      <MemberSignature Language="F#" Value="NotRemovable = 6" Usage="System.Web.Caching.CacheItemPriority.NotRemovable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

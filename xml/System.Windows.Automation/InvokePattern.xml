@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.InvokePattern" />
   <TypeSignature Language="VB.NET" Value="Public Class InvokePattern&#xA;Inherits BasePattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvokePattern : System::Windows::Automation::BasePattern" />
+  <TypeSignature Language="F#" Value="type InvokePattern = class&#xA;    inherit BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.InvokePattern.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invoke ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke();" />
+      <MemberSignature Language="F#" Value="member this.Invoke : unit -&gt; unit" Usage="invokePattern.Invoke " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.InvokePattern.InvokedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvokedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InvokedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InvokedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.InvokePattern.InvokedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.InvokePattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.InvokePattern.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

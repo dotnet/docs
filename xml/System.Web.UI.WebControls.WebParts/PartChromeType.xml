@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PartChromeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PartChromeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PartChromeType" />
+  <TypeSignature Language="F#" Value="type PartChromeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.BorderOnly" />
       <MemberSignature Language="VB.NET" Value="BorderOnly" />
       <MemberSignature Language="C++ CLI" Value="BorderOnly" />
+      <MemberSignature Language="F#" Value="BorderOnly = 4" Usage="System.Web.UI.WebControls.WebParts.PartChromeType.BorderOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.UI.WebControls.WebParts.PartChromeType.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Web.UI.WebControls.WebParts.PartChromeType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.TitleAndBorder" />
       <MemberSignature Language="VB.NET" Value="TitleAndBorder" />
       <MemberSignature Language="C++ CLI" Value="TitleAndBorder" />
+      <MemberSignature Language="F#" Value="TitleAndBorder = 1" Usage="System.Web.UI.WebControls.WebParts.PartChromeType.TitleAndBorder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.TitleOnly" />
       <MemberSignature Language="VB.NET" Value="TitleOnly" />
       <MemberSignature Language="C++ CLI" Value="TitleOnly" />
+      <MemberSignature Language="F#" Value="TitleOnly = 3" Usage="System.Web.UI.WebControls.WebParts.PartChromeType.TitleOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

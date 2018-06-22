@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.NewItemPlaceholderPosition" />
   <TypeSignature Language="VB.NET" Value="Public Enum NewItemPlaceholderPosition" />
   <TypeSignature Language="C++ CLI" Value="public enum class NewItemPlaceholderPosition" />
+  <TypeSignature Language="F#" Value="type NewItemPlaceholderPosition = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.NewItemPlaceholderPosition.AtBeginning" />
       <MemberSignature Language="VB.NET" Value="AtBeginning" />
       <MemberSignature Language="C++ CLI" Value="AtBeginning" />
+      <MemberSignature Language="F#" Value="AtBeginning = 1" Usage="System.ComponentModel.NewItemPlaceholderPosition.AtBeginning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.NewItemPlaceholderPosition.AtEnd" />
       <MemberSignature Language="VB.NET" Value="AtEnd" />
       <MemberSignature Language="C++ CLI" Value="AtEnd" />
+      <MemberSignature Language="F#" Value="AtEnd = 2" Usage="System.ComponentModel.NewItemPlaceholderPosition.AtEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.NewItemPlaceholderPosition.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ComponentModel.NewItemPlaceholderPosition.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

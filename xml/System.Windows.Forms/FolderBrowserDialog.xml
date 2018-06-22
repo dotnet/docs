@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FolderBrowserDialog" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FolderBrowserDialog&#xA;Inherits CommonDialog" />
   <TypeSignature Language="C++ CLI" Value="public ref class FolderBrowserDialog sealed : System::Windows::Forms::CommonDialog" />
+  <TypeSignature Language="F#" Value="type FolderBrowserDialog = class&#xA;    inherit CommonDialog" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FolderBrowserDialog.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Windows.Forms.FolderBrowserDialog.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +147,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.FolderBrowserDialog.HelpRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event HelpRequest As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HelpRequest;" />
+      <MemberSignature Language="F#" Value="member this.HelpRequest : EventHandler " Usage="member this.HelpRequest : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FolderBrowserDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="folderBrowserDialog.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FolderBrowserDialog.RootFolder" />
       <MemberSignature Language="VB.NET" Value="Public Property RootFolder As Environment.SpecialFolder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Environment::SpecialFolder RootFolder { Environment::SpecialFolder get(); void set(Environment::SpecialFolder value); };" />
+      <MemberSignature Language="F#" Value="member this.RootFolder : Environment.SpecialFolder with get, set" Usage="System.Windows.Forms.FolderBrowserDialog.RootFolder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -250,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FolderBrowserDialog.RunDialog(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RunDialog (hWndOwner As IntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool RunDialog(IntPtr hWndOwner);" />
+      <MemberSignature Language="F#" Value="override this.RunDialog : nativeint -&gt; bool" Usage="folderBrowserDialog.RunDialog hWndOwner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -274,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FolderBrowserDialog.SelectedPath" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedPath : string with get, set" Usage="System.Windows.Forms.FolderBrowserDialog.SelectedPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -328,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FolderBrowserDialog.ShowNewFolderButton" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowNewFolderButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowNewFolderButton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowNewFolderButton : bool with get, set" Usage="System.Windows.Forms.FolderBrowserDialog.ShowNewFolderButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

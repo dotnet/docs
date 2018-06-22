@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RoleProvider&#xA;Inherits ProviderBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoleProvider abstract : System::Configuration::Provider::ProviderBase" />
+  <TypeSignature Language="F#" Value="type RoleProvider = class&#xA;    inherit ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.AddUsersToRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddUsersToRoles (usernames As String(), roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddUsersToRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="abstract member AddUsersToRoles : string[] * string[] -&gt; unit" Usage="roleProvider.AddUsersToRoles (usernames, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RoleProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.Security.RoleProvider.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.CreateRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CreateRole (roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CreateRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="abstract member CreateRole : string -&gt; unit" Usage="roleProvider.CreateRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.DeleteRole(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeleteRole (roleName As String, throwOnPopulatedRole As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool DeleteRole(System::String ^ roleName, bool throwOnPopulatedRole);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteRole : string * bool -&gt; bool" Usage="roleProvider.DeleteRole (roleName, throwOnPopulatedRole)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -246,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.FindUsersInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FindUsersInRole (roleName As String, usernameToMatch As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::String ^&gt; ^ FindUsersInRole(System::String ^ roleName, System::String ^ usernameToMatch);" />
+      <MemberSignature Language="F#" Value="abstract member FindUsersInRole : string * string -&gt; string[]" Usage="roleProvider.FindUsersInRole (roleName, usernameToMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -289,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.GetAllRoles" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAllRoles () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::String ^&gt; ^ GetAllRoles();" />
+      <MemberSignature Language="F#" Value="abstract member GetAllRoles : unit -&gt; string[]" Usage="roleProvider.GetAllRoles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -327,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.GetRolesForUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRolesForUser (username As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::String ^&gt; ^ GetRolesForUser(System::String ^ username);" />
+      <MemberSignature Language="F#" Value="abstract member GetRolesForUser : string -&gt; string[]" Usage="roleProvider.GetRolesForUser username" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -370,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.GetUsersInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetUsersInRole (roleName As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::String ^&gt; ^ GetUsersInRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="abstract member GetUsersInRole : string -&gt; string[]" Usage="roleProvider.GetUsersInRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -413,6 +422,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.IsUserInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsUserInRole (username As String, roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsUserInRole(System::String ^ username, System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="abstract member IsUserInRole : string * string -&gt; bool" Usage="roleProvider.IsUserInRole (username, roleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -459,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.RemoveUsersFromRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveUsersFromRoles (usernames As String(), roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveUsersFromRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveUsersFromRoles : string[] * string[] -&gt; unit" Usage="roleProvider.RemoveUsersFromRoles (usernames, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -509,6 +520,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.RoleExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function RoleExists (roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool RoleExists(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="abstract member RoleExists : string -&gt; bool" Usage="roleProvider.RoleExists roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>

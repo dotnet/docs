@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontWeights" />
   <TypeSignature Language="VB.NET" Value="Public Class FontWeights" />
   <TypeSignature Language="C++ CLI" Value="public ref class FontWeights abstract sealed" />
+  <TypeSignature Language="F#" Value="type FontWeights = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Black" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Black As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight Black { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Black : System.Windows.FontWeight" Usage="System.Windows.FontWeights.Black" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Bold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bold As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight Bold { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bold : System.Windows.FontWeight" Usage="System.Windows.FontWeights.Bold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.DemiBold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DemiBold As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight DemiBold { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.DemiBold : System.Windows.FontWeight" Usage="System.Windows.FontWeights.DemiBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.ExtraBlack" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtraBlack As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight ExtraBlack { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraBlack : System.Windows.FontWeight" Usage="System.Windows.FontWeights.ExtraBlack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.ExtraBold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtraBold As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight ExtraBold { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraBold : System.Windows.FontWeight" Usage="System.Windows.FontWeights.ExtraBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.ExtraLight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtraLight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight ExtraLight { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraLight : System.Windows.FontWeight" Usage="System.Windows.FontWeights.ExtraLight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Heavy" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Heavy As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight Heavy { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Heavy : System.Windows.FontWeight" Usage="System.Windows.FontWeights.Heavy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Light" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Light As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight Light { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Light : System.Windows.FontWeight" Usage="System.Windows.FontWeights.Light" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Medium" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Medium As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight Medium { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Medium : System.Windows.FontWeight" Usage="System.Windows.FontWeights.Medium" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Normal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight Normal { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.FontWeight" Usage="System.Windows.FontWeights.Normal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -310,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Regular" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Regular As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight Regular { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Regular : System.Windows.FontWeight" Usage="System.Windows.FontWeights.Regular" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -337,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.SemiBold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SemiBold As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight SemiBold { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.SemiBold : System.Windows.FontWeight" Usage="System.Windows.FontWeights.SemiBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -364,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Thin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Thin As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight Thin { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.Thin : System.Windows.FontWeight" Usage="System.Windows.FontWeights.Thin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -391,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.UltraBlack" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UltraBlack As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight UltraBlack { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.UltraBlack : System.Windows.FontWeight" Usage="System.Windows.FontWeights.UltraBlack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -418,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.UltraBold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UltraBold As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight UltraBold { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.UltraBold : System.Windows.FontWeight" Usage="System.Windows.FontWeights.UltraBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -450,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.UltraLight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UltraLight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight UltraLight { System::Windows::FontWeight get(); };" />
+      <MemberSignature Language="F#" Value="member this.UltraLight : System.Windows.FontWeight" Usage="System.Windows.FontWeights.UltraLight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

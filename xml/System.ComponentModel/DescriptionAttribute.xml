@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DescriptionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DescriptionAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type DescriptionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DescriptionAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DescriptionAttribute : string -&gt; System.ComponentModel.DescriptionAttribute" Usage="new System.ComponentModel.DescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DescriptionAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DescriptionAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DescriptionAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DescriptionAttribute" Usage="System.ComponentModel.DescriptionAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DescriptionAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.ComponentModel.DescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DescriptionAttribute.DescriptionValue" />
       <MemberSignature Language="VB.NET" Value="Protected Property DescriptionValue As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ DescriptionValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DescriptionValue : string with get, set" Usage="System.ComponentModel.DescriptionAttribute.DescriptionValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DescriptionAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="descriptionAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DescriptionAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="descriptionAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -308,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DescriptionAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="descriptionAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

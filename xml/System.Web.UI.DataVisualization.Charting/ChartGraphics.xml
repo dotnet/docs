@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartGraphics" />
   <TypeSignature Language="VB.NET" Value="Public Class ChartGraphics&#xA;Inherits ChartElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChartGraphics : System::Web::UI::DataVisualization::Charting::ChartElement" />
+  <TypeSignature Language="F#" Value="type ChartGraphics = class&#xA;    inherit ChartElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartGraphics.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="chartGraphics.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint(System.Drawing.PointF)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAbsolutePoint (point As PointF) As PointF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::PointF GetAbsolutePoint(System::Drawing::PointF point);" />
+      <MemberSignature Language="F#" Value="member this.GetAbsolutePoint : System.Drawing.PointF -&gt; System.Drawing.PointF" Usage="chartGraphics.GetAbsolutePoint point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsoluteRectangle(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAbsoluteRectangle (rectangle As RectangleF) As RectangleF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetAbsoluteRectangle(System::Drawing::RectangleF rectangle);" />
+      <MemberSignature Language="F#" Value="member this.GetAbsoluteRectangle : System.Drawing.RectangleF -&gt; System.Drawing.RectangleF" Usage="chartGraphics.GetAbsoluteRectangle rectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsoluteSize(System.Drawing.SizeF)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAbsoluteSize (size As SizeF) As SizeF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::SizeF GetAbsoluteSize(System::Drawing::SizeF size);" />
+      <MemberSignature Language="F#" Value="member this.GetAbsoluteSize : System.Drawing.SizeF -&gt; System.Drawing.SizeF" Usage="chartGraphics.GetAbsoluteSize size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetPositionFromAxis(System.String,System.Web.UI.DataVisualization.Charting.AxisName,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPositionFromAxis (chartAreaName As String, axis As AxisName, axisValue As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetPositionFromAxis(System::String ^ chartAreaName, System::Web::UI::DataVisualization::Charting::AxisName axis, double axisValue);" />
+      <MemberSignature Language="F#" Value="member this.GetPositionFromAxis : string * System.Web.UI.DataVisualization.Charting.AxisName * double -&gt; double" Usage="chartGraphics.GetPositionFromAxis (chartAreaName, axis, axisValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetRelativePoint(System.Drawing.PointF)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelativePoint (point As PointF) As PointF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::PointF GetRelativePoint(System::Drawing::PointF point);" />
+      <MemberSignature Language="F#" Value="member this.GetRelativePoint : System.Drawing.PointF -&gt; System.Drawing.PointF" Usage="chartGraphics.GetRelativePoint point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetRelativeRectangle(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelativeRectangle (rectangle As RectangleF) As RectangleF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetRelativeRectangle(System::Drawing::RectangleF rectangle);" />
+      <MemberSignature Language="F#" Value="member this.GetRelativeRectangle : System.Drawing.RectangleF -&gt; System.Drawing.RectangleF" Usage="chartGraphics.GetRelativeRectangle rectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetRelativeSize(System.Drawing.SizeF)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelativeSize (size As SizeF) As SizeF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::SizeF GetRelativeSize(System::Drawing::SizeF size);" />
+      <MemberSignature Language="F#" Value="member this.GetRelativeSize : System.Drawing.SizeF -&gt; System.Drawing.SizeF" Usage="chartGraphics.GetRelativeSize size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartGraphics.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); void set(System::Drawing::Graphics ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartGraphics.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

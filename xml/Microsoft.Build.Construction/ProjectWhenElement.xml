@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectWhenElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectWhenElement&#xA;Inherits ProjectElementContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectWhenElement : Microsoft::Build::Construction::ProjectElementContainer" />
+  <TypeSignature Language="F#" Value="type ProjectWhenElement = class&#xA;    inherit ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectWhenElement.ChooseElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChooseElements As ICollection(Of ProjectChooseElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectChooseElement ^&gt; ^ ChooseElements { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectChooseElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChooseElements : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectChooseElement&gt;" Usage="Microsoft.Build.Construction.ProjectWhenElement.ChooseElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectWhenElement.ItemGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemGroups As ICollection(Of ProjectItemGroupElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectItemGroupElement ^&gt; ^ ItemGroups { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectItemGroupElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemGroups : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectItemGroupElement&gt;" Usage="Microsoft.Build.Construction.ProjectWhenElement.ItemGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectWhenElement.PropertyGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyGroups As ICollection(Of ProjectPropertyGroupElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectPropertyGroupElement ^&gt; ^ PropertyGroups { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectPropertyGroupElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyGroups : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectPropertyGroupElement&gt;" Usage="Microsoft.Build.Construction.ProjectWhenElement.PropertyGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

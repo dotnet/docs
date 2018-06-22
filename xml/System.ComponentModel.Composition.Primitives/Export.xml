@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.Export" />
   <TypeSignature Language="VB.NET" Value="Public Class Export" />
   <TypeSignature Language="C++ CLI" Value="public ref class Export" />
+  <TypeSignature Language="F#" Value="type Export = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.Export.#ctor(System.ComponentModel.Composition.Primitives.ExportDefinition,System.Func{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (definition As ExportDefinition, exportedValueGetter As Func(Of Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Export(System::ComponentModel::Composition::Primitives::ExportDefinition ^ definition, Func&lt;System::Object ^&gt; ^ exportedValueGetter);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Primitives.Export : System.ComponentModel.Composition.Primitives.ExportDefinition * Func&lt;obj&gt; -&gt; System.ComponentModel.Composition.Primitives.Export" Usage="new System.ComponentModel.Composition.Primitives.Export (definition, exportedValueGetter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.Export.#ctor(System.String,System.Func{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, exportedValueGetter As Func(Of Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Export(System::String ^ contractName, Func&lt;System::Object ^&gt; ^ exportedValueGetter);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Primitives.Export : string * Func&lt;obj&gt; -&gt; System.ComponentModel.Composition.Primitives.Export" Usage="new System.ComponentModel.Composition.Primitives.Export (contractName, exportedValueGetter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.Export.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Func{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, metadata As IDictionary(Of String, Object), exportedValueGetter As Func(Of Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Export(System::String ^ contractName, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ metadata, Func&lt;System::Object ^&gt; ^ exportedValueGetter);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Primitives.Export : string * System.Collections.Generic.IDictionary&lt;string, obj&gt; * Func&lt;obj&gt; -&gt; System.ComponentModel.Composition.Primitives.Export" Usage="new System.ComponentModel.Composition.Primitives.Export (contractName, metadata, exportedValueGetter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.Export.Definition" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Definition As ExportDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Composition::Primitives::ExportDefinition ^ Definition { System::ComponentModel::Composition::Primitives::ExportDefinition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Definition : System.ComponentModel.Composition.Primitives.ExportDefinition" Usage="System.ComponentModel.Composition.Primitives.Export.Definition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.Export.GetExportedValueCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetExportedValueCore () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetExportedValueCore();" />
+      <MemberSignature Language="F#" Value="abstract member GetExportedValueCore : unit -&gt; obj&#xA;override this.GetExportedValueCore : unit -&gt; obj" Usage="export.GetExportedValueCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.Export.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Metadata { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.ComponentModel.Composition.Primitives.Export.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.Export.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.ComponentModel.Composition.Primitives.Export.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

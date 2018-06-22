@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WebPartCancelEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartCancelEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type WebPartCancelEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartCancelEventArgs(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs" Usage="new System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs webPart" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs.WebPart" />
       <MemberSignature Language="VB.NET" Value="Public Property WebPart As WebPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ WebPart { System::Web::UI::WebControls::WebParts::WebPart ^ get(); void set(System::Web::UI::WebControls::WebParts::WebPart ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WebPart : System.Web.UI.WebControls.WebParts.WebPart with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs.WebPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexBindingElement`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MexBindingElement(Of TStandardBinding)&#xA;Inherits StandardBindingElement" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TStandardBinding&gt;&#xA; where TStandardBinding : Bindingpublic ref class MexBindingElement abstract : System::ServiceModel::Configuration::StandardBindingElement" />
+  <TypeSignature Language="F#" Value="type MexBindingElement&lt;'StandardBinding (requires 'StandardBinding :&gt; Binding)&gt; = class&#xA;    inherit StandardBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexBindingElement`1.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MexBindingElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.MexBindingElement&lt;'StandardBinding (requires 'StandardBinding :&gt; System.ServiceModel.Channels.Binding)&gt; : string -&gt; System.ServiceModel.Configuration.MexBindingElement&lt;'StandardBinding (requires 'StandardBinding :&gt; System.ServiceModel.Channels.Binding)&gt;" Usage="new System.ServiceModel.Configuration.MexBindingElement&lt;'StandardBinding (requires 'StandardBinding :&gt; System.ServiceModel.Channels.Binding)&gt; name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MexBindingElement`1.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.MexBindingElement&lt;'StandardBinding (requires 'StandardBinding :&gt; System.ServiceModel.Channels.Binding)&gt;.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexBindingElement`1.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="mexBindingElement.OnApplyConfiguration binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

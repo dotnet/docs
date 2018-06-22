@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TableRowGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class TableRowGroup&#xA;Inherits TextElement&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableRowGroup : System::Windows::Documents::TextElement, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type TableRowGroup = class&#xA;    inherit TextElement&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableRowGroup.Rows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rows As TableRowCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TableRowCollection ^ Rows { System::Windows::Documents::TableRowCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rows : System.Windows.Documents.TableRowCollection" Usage="System.Windows.Documents.TableRowGroup.Rows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableRowGroup.ShouldSerializeRows" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeRows () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeRows();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeRows : unit -&gt; bool" Usage="tableRowGroup.ShouldSerializeRows " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

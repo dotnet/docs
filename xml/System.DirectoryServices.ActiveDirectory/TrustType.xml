@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TrustType" />
   <TypeSignature Language="VB.NET" Value="Public Enum TrustType" />
   <TypeSignature Language="C++ CLI" Value="public enum class TrustType" />
+  <TypeSignature Language="F#" Value="type TrustType = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.CrossLink" />
       <MemberSignature Language="VB.NET" Value="CrossLink" />
       <MemberSignature Language="C++ CLI" Value="CrossLink" />
+      <MemberSignature Language="F#" Value="CrossLink = 2" Usage="System.DirectoryServices.ActiveDirectory.TrustType.CrossLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.External" />
       <MemberSignature Language="VB.NET" Value="External" />
       <MemberSignature Language="C++ CLI" Value="External" />
+      <MemberSignature Language="F#" Value="External = 3" Usage="System.DirectoryServices.ActiveDirectory.TrustType.External" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.Forest" />
       <MemberSignature Language="VB.NET" Value="Forest" />
       <MemberSignature Language="C++ CLI" Value="Forest" />
+      <MemberSignature Language="F#" Value="Forest = 4" Usage="System.DirectoryServices.ActiveDirectory.TrustType.Forest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.Kerberos" />
       <MemberSignature Language="VB.NET" Value="Kerberos" />
       <MemberSignature Language="C++ CLI" Value="Kerberos" />
+      <MemberSignature Language="F#" Value="Kerberos = 5" Usage="System.DirectoryServices.ActiveDirectory.TrustType.Kerberos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.ParentChild" />
       <MemberSignature Language="VB.NET" Value="ParentChild" />
       <MemberSignature Language="C++ CLI" Value="ParentChild" />
+      <MemberSignature Language="F#" Value="ParentChild = 1" Usage="System.DirectoryServices.ActiveDirectory.TrustType.ParentChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.TreeRoot" />
       <MemberSignature Language="VB.NET" Value="TreeRoot" />
       <MemberSignature Language="C++ CLI" Value="TreeRoot" />
+      <MemberSignature Language="F#" Value="TreeRoot = 0" Usage="System.DirectoryServices.ActiveDirectory.TrustType.TreeRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 6" Usage="System.DirectoryServices.ActiveDirectory.TrustType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

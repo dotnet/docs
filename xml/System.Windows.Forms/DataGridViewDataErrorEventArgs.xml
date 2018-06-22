@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewDataErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewDataErrorEventArgs&#xA;Inherits DataGridViewCellCancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewDataErrorEventArgs : System::Windows::Forms::DataGridViewCellCancelEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewDataErrorEventArgs = class&#xA;    inherit DataGridViewCellCancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, int32 columnIndex, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewDataErrorEventArgs.#ctor(System.Exception,System.Int32,System.Int32,System.Windows.Forms.DataGridViewDataErrorContexts)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewDataErrorEventArgs(Exception ^ exception, int columnIndex, int rowIndex, System::Windows::Forms::DataGridViewDataErrorContexts context);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewDataErrorEventArgs : Exception * int * int * System.Windows.Forms.DataGridViewDataErrorContexts -&gt; System.Windows.Forms.DataGridViewDataErrorEventArgs" Usage="new System.Windows.Forms.DataGridViewDataErrorEventArgs (exception, columnIndex, rowIndex, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As DataGridViewDataErrorContexts" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewDataErrorContexts Context { System::Windows::Forms::DataGridViewDataErrorContexts get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Windows.Forms.DataGridViewDataErrorContexts" Usage="System.Windows.Forms.DataGridViewDataErrorEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Windows.Forms.DataGridViewDataErrorEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" />
       <MemberSignature Language="VB.NET" Value="Public Property ThrowException As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThrowException { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ThrowException : bool with get, set" Usage="System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataErrorsChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataErrorsChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataErrorsChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataErrorsChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataErrorsChangedEventArgs.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataErrorsChangedEventArgs(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataErrorsChangedEventArgs : string -&gt; System.ComponentModel.DataErrorsChangedEventArgs" Usage="new System.ComponentModel.DataErrorsChangedEventArgs propertyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataErrorsChangedEventArgs.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.ComponentModel.DataErrorsChangedEventArgs.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

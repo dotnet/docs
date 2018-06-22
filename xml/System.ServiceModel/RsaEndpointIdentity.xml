@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.RsaEndpointIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class RsaEndpointIdentity&#xA;Inherits EndpointIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class RsaEndpointIdentity : System::ServiceModel::EndpointIdentity" />
+  <TypeSignature Language="F#" Value="type RsaEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (publicKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::String ^ publicKey);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : string -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity publicKey" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate2)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ cert);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity cert" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

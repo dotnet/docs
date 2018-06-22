@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimProperties abstract sealed" />
+  <TypeSignature Language="F#" Value="type ClaimProperties = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Security.Claims.ClaimProperties.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlAttributeDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Const SamlAttributeDisplayName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SamlAttributeDisplayName;" />
+      <MemberSignature Language="F#" Value="val mutable SamlAttributeDisplayName : string" Usage="System.Security.Claims.ClaimProperties.SamlAttributeDisplayName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlAttributeNameFormat" />
       <MemberSignature Language="VB.NET" Value="Public Const SamlAttributeNameFormat As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SamlAttributeNameFormat;" />
+      <MemberSignature Language="F#" Value="val mutable SamlAttributeNameFormat : string" Usage="System.Security.Claims.ClaimProperties.SamlAttributeNameFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlNameIdentifierFormat" />
       <MemberSignature Language="VB.NET" Value="Public Const SamlNameIdentifierFormat As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SamlNameIdentifierFormat;" />
+      <MemberSignature Language="F#" Value="val mutable SamlNameIdentifierFormat : string" Usage="System.Security.Claims.ClaimProperties.SamlNameIdentifierFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -99,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlNameIdentifierNameQualifier" />
       <MemberSignature Language="VB.NET" Value="Public Const SamlNameIdentifierNameQualifier As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SamlNameIdentifierNameQualifier;" />
+      <MemberSignature Language="F#" Value="val mutable SamlNameIdentifierNameQualifier : string" Usage="System.Security.Claims.ClaimProperties.SamlNameIdentifierNameQualifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -118,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlNameIdentifierSPNameQualifier" />
       <MemberSignature Language="VB.NET" Value="Public Const SamlNameIdentifierSPNameQualifier As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SamlNameIdentifierSPNameQualifier;" />
+      <MemberSignature Language="F#" Value="val mutable SamlNameIdentifierSPNameQualifier : string" Usage="System.Security.Claims.ClaimProperties.SamlNameIdentifierSPNameQualifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -137,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlNameIdentifierSPProvidedId" />
       <MemberSignature Language="VB.NET" Value="Public Const SamlNameIdentifierSPProvidedId As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SamlNameIdentifierSPProvidedId;" />
+      <MemberSignature Language="F#" Value="val mutable SamlNameIdentifierSPProvidedId : string" Usage="System.Security.Claims.ClaimProperties.SamlNameIdentifierSPProvidedId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

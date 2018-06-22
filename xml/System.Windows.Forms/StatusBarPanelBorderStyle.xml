@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelBorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum StatusBarPanelBorderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class StatusBarPanelBorderStyle" />
+  <TypeSignature Language="F#" Value="type StatusBarPanelBorderStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Windows.Forms.StatusBarPanelBorderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.Raised" />
       <MemberSignature Language="VB.NET" Value="Raised" />
       <MemberSignature Language="C++ CLI" Value="Raised" />
+      <MemberSignature Language="F#" Value="Raised = 2" Usage="System.Windows.Forms.StatusBarPanelBorderStyle.Raised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.Sunken" />
       <MemberSignature Language="VB.NET" Value="Sunken" />
       <MemberSignature Language="C++ CLI" Value="Sunken" />
+      <MemberSignature Language="F#" Value="Sunken = 3" Usage="System.Windows.Forms.StatusBarPanelBorderStyle.Sunken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.EntityDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityDescriptor&#xA;Inherits Descriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityDescriptor sealed : System::Data::Services::Client::Descriptor" />
+  <TypeSignature Language="F#" Value="type EntityDescriptor = class&#xA;    inherit Descriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.EditLink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditLink As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ EditLink { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditLink : Uri" Usage="System.Data.Services.Client.EntityDescriptor.EditLink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.EditStreamUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditStreamUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ EditStreamUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditStreamUri : Uri" Usage="System.Data.Services.Client.EntityDescriptor.EditStreamUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.Entity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entity As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Entity { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Entity : obj" Usage="System.Data.Services.Client.EntityDescriptor.Entity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.ETag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ETag { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ETag : string" Usage="System.Data.Services.Client.EntityDescriptor.ETag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.Identity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Identity { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : string" Usage="System.Data.Services.Client.EntityDescriptor.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.ParentForInsert" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentForInsert As EntityDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Client::EntityDescriptor ^ ParentForInsert { System::Data::Services::Client::EntityDescriptor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentForInsert : System.Data.Services.Client.EntityDescriptor" Usage="System.Data.Services.Client.EntityDescriptor.ParentForInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.ParentPropertyForInsert" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentPropertyForInsert As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParentPropertyForInsert { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentPropertyForInsert : string" Usage="System.Data.Services.Client.EntityDescriptor.ParentPropertyForInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.ReadStreamUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadStreamUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ReadStreamUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReadStreamUri : Uri" Usage="System.Data.Services.Client.EntityDescriptor.ReadStreamUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -226,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.SelfLink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelfLink As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SelfLink { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelfLink : Uri" Usage="System.Data.Services.Client.EntityDescriptor.SelfLink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -247,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.ServerTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerTypeName : string" Usage="System.Data.Services.Client.EntityDescriptor.ServerTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -268,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityDescriptor.StreamETag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StreamETag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StreamETag { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StreamETag : string" Usage="System.Data.Services.Client.EntityDescriptor.StreamETag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

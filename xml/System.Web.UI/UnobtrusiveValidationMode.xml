@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UnobtrusiveValidationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum UnobtrusiveValidationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class UnobtrusiveValidationMode" />
+  <TypeSignature Language="F#" Value="type UnobtrusiveValidationMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.UnobtrusiveValidationMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.UnobtrusiveValidationMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.UnobtrusiveValidationMode.WebForms" />
       <MemberSignature Language="VB.NET" Value="WebForms" />
       <MemberSignature Language="C++ CLI" Value="WebForms" />
+      <MemberSignature Language="F#" Value="WebForms = 1" Usage="System.Web.UI.UnobtrusiveValidationMode.WebForms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

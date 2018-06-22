@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeNCryptProviderHandle&#xA;Inherits SafeNCryptHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class SafeNCryptProviderHandle sealed : Microsoft::Win32::SafeHandles::SafeNCryptHandle" />
+  <TypeSignature Language="F#" Value="type SafeNCryptProviderHandle = class&#xA;    inherit SafeNCryptHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle.ReleaseNativeHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseNativeHandle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseNativeHandle();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseNativeHandle : unit -&gt; bool" Usage="safeNCryptProviderHandle.ReleaseNativeHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

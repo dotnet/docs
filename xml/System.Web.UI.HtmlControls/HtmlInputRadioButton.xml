@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlInputRadioButton&#xA;Inherits HtmlInputControl&#xA;Implements IPostBackDataHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlInputRadioButton : System::Web::UI::HtmlControls::HtmlInputControl, System::Web::UI::IPostBackDataHandler" />
+  <TypeSignature Language="F#" Value="type HtmlInputRadioButton = class&#xA;    inherit HtmlInputControl&#xA;    interface IPostBackDataHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +164,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
+      <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="htmlInputRadioButton.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
@@ -201,6 +204,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlInputRadioButton.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,6 +241,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlInputRadioButton.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -282,6 +287,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnServerChange (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnServerChange(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnServerChange : EventArgs -&gt; unit&#xA;override this.OnServerChange : EventArgs -&gt; unit" Usage="htmlInputRadioButton.OnServerChange e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -336,6 +342,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostDataChangedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit&#xA;override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="htmlInputRadioButton.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
@@ -371,6 +378,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlInputRadioButton.RenderAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +422,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ServerChange As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ServerChange;" />
+      <MemberSignature Language="F#" Value="member this.ServerChange : EventHandler " Usage="member this.ServerChange : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -530,6 +539,7 @@ Caption Text<br>
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlInputRadioButton.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

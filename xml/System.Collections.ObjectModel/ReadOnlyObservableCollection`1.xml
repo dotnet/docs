@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadOnlyObservableCollection(Of T)&#xA;Inherits ReadOnlyCollection(Of T)&#xA;Implements INotifyCollectionChanged, INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ReadOnlyObservableCollection : System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt;, System::Collections::Specialized::INotifyCollectionChanged, System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type ReadOnlyObservableCollection&lt;'T&gt; = class&#xA;    inherit ReadOnlyCollection&lt;'T&gt;&#xA;    interface INotifyCollectionChanged&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (list As ObservableCollection(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyObservableCollection(System::Collections::ObjectModel::ObservableCollection&lt;T&gt; ^ list);" />
+      <MemberSignature Language="F#" Value="new System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;'T&gt; : System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; -&gt; System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;'T&gt;" Usage="new System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;'T&gt; list" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Custom Event CollectionChanged As NotifyCollectionChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (args As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="readOnlyObservableCollection.OnCollectionChanged args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (args As PropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="readOnlyObservableCollection.OnPropertyChanged args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Custom Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>

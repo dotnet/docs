@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class TextExpressionCompilerSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextExpressionCompilerSettings" />
+  <TypeSignature Language="F#" Value="type TextExpressionCompilerSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.Activity" />
       <MemberSignature Language="VB.NET" Value="Public Property Activity As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Activity { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Activities.Activity with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.ActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityName : string with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.ActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.ActivityNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityNamespace : string with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.ActivityNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.AlwaysGenerateSource" />
       <MemberSignature Language="VB.NET" Value="Public Property AlwaysGenerateSource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysGenerateSource { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AlwaysGenerateSource : bool with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.AlwaysGenerateSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.ForImplementation" />
       <MemberSignature Language="VB.NET" Value="Public Property ForImplementation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ForImplementation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ForImplementation : bool with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.ForImplementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.GenerateAsPartialClass" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateAsPartialClass As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateAsPartialClass { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.GenerateAsPartialClass : bool with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.GenerateAsPartialClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -162,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -182,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.LogSourceGenerationMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property LogSourceGenerationMessage As Action(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action&lt;System::String ^&gt; ^ LogSourceGenerationMessage { Action&lt;System::String ^&gt; ^ get(); void set(Action&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LogSourceGenerationMessage : Action&lt;string&gt; with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.LogSourceGenerationMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -202,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="System.Activities.XamlIntegration.TextExpressionCompilerSettings.RootNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

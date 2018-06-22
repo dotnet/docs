@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.NamedObject" />
   <TypeSignature Language="VB.NET" Value="Public Class NamedObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamedObject" />
+  <TypeSignature Language="F#" Value="type NamedObject = class" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.NamedObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.NamedObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.NamedObject.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); void set(System::Xaml::XamlType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType with get, set" Usage="Microsoft.Build.Tasks.Xaml.NamedObject.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.NamedObject.Visibility" />
       <MemberSignature Language="VB.NET" Value="Public Property Visibility As MemberVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Xaml::MemberVisibility Visibility { Microsoft::Build::Tasks::Xaml::MemberVisibility get(); void set(Microsoft::Build::Tasks::Xaml::MemberVisibility value); };" />
+      <MemberSignature Language="F#" Value="member this.Visibility : Microsoft.Build.Tasks.Xaml.MemberVisibility with get, set" Usage="Microsoft.Build.Tasks.Xaml.NamedObject.Visibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

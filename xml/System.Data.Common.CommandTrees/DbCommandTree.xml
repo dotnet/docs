@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbCommandTree" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbCommandTree" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbCommandTree abstract" />
+  <TypeSignature Language="F#" Value="type DbCommandTree = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbCommandTree.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As IEnumerable(Of KeyValuePair(Of String, TypeUsage))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Metadata::Edm::TypeUsage ^&gt;&gt; ^ Parameters { System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Metadata::Edm::TypeUsage ^&gt;&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, System.Data.Metadata.Edm.TypeUsage&gt;&gt;" Usage="System.Data.Common.CommandTrees.DbCommandTree.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

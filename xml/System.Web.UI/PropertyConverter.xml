@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PropertyConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyConverter abstract sealed" />
+  <TypeSignature Language="F#" Value="type PropertyConverter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.EnumFromString(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EnumFromString (enumType As Type, value As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ EnumFromString(Type ^ enumType, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member EnumFromString : Type * string -&gt; obj" Usage="System.Web.UI.PropertyConverter.EnumFromString (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.EnumToString(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EnumToString (enumType As Type, enumValue As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ EnumToString(Type ^ enumType, System::Object ^ enumValue);" />
+      <MemberSignature Language="F#" Value="static member EnumToString : Type * obj -&gt; string" Usage="System.Web.UI.PropertyConverter.EnumToString (enumType, enumValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.ObjectFromString(System.Type,System.Reflection.MemberInfo,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ObjectFromString (objType As Type, propertyInfo As MemberInfo, value As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ObjectFromString(Type ^ objType, System::Reflection::MemberInfo ^ propertyInfo, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member ObjectFromString : Type * System.Reflection.MemberInfo * string -&gt; obj" Usage="System.Web.UI.PropertyConverter.ObjectFromString (objType, propertyInfo, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

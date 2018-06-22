@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.CipherSuitesCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function CipherSuitesCallback(protocol As SecurityProtocolType, allCiphers As IEnumerable(Of String)) As IEnumerable(Of String) " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ CipherSuitesCallback(SecurityProtocolType protocol, IEnumerable&lt;System::String ^&gt; ^ allCiphers);" />
+  <TypeSignature Language="F#" Value="type CipherSuitesCallback = delegate of SecurityProtocolType * seq&lt;string&gt; -&gt; seq&lt;string&gt;" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

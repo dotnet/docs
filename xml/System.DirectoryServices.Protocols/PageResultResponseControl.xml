@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.PageResultResponseControl" />
   <TypeSignature Language="VB.NET" Value="Public Class PageResultResponseControl&#xA;Inherits DirectoryControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageResultResponseControl : System::DirectoryServices::Protocols::DirectoryControl" />
+  <TypeSignature Language="F#" Value="type PageResultResponseControl = class&#xA;    inherit DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.PageResultResponseControl.Cookie" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cookie As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Cookie { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cookie : byte[]" Usage="System.DirectoryServices.Protocols.PageResultResponseControl.Cookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.PageResultResponseControl.TotalCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalCount : int" Usage="System.DirectoryServices.Protocols.PageResultResponseControl.TotalCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

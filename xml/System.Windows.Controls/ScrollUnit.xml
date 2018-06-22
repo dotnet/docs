@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollUnit" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollUnit" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollUnit" />
+  <TypeSignature Language="F#" Value="type ScrollUnit = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollUnit.Item" />
       <MemberSignature Language="VB.NET" Value="Item" />
       <MemberSignature Language="C++ CLI" Value="Item" />
+      <MemberSignature Language="F#" Value="Item = 1" Usage="System.Windows.Controls.ScrollUnit.Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollUnit.Pixel" />
       <MemberSignature Language="VB.NET" Value="Pixel" />
       <MemberSignature Language="C++ CLI" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 0" Usage="System.Windows.Controls.ScrollUnit.Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

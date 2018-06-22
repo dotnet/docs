@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.INormalizeForIsolatedStorage" />
   <TypeSignature Language="VB.NET" Value="Public Interface INormalizeForIsolatedStorage" />
   <TypeSignature Language="C++ CLI" Value="public interface class INormalizeForIsolatedStorage" />
+  <TypeSignature Language="F#" Value="type INormalizeForIsolatedStorage = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.INormalizeForIsolatedStorage.Normalize" />
       <MemberSignature Language="VB.NET" Value="Public Function Normalize () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Normalize();" />
+      <MemberSignature Language="F#" Value="abstract member Normalize : unit -&gt; obj" Usage="iNormalizeForIsolatedStorage.Normalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.CipherAlgorithmType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CipherAlgorithmType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CipherAlgorithmType" />
+  <TypeSignature Language="F#" Value="type CipherAlgorithmType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.Aes128" />
       <MemberSignature Language="VB.NET" Value="Aes128" />
       <MemberSignature Language="C++ CLI" Value="Aes128" />
+      <MemberSignature Language="F#" Value="Aes128 = 1" Usage="Mono.Security.Interface.CipherAlgorithmType.Aes128" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.Aes256" />
       <MemberSignature Language="VB.NET" Value="Aes256" />
       <MemberSignature Language="C++ CLI" Value="Aes256" />
+      <MemberSignature Language="F#" Value="Aes256 = 2" Usage="Mono.Security.Interface.CipherAlgorithmType.Aes256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.AesGcm128" />
       <MemberSignature Language="VB.NET" Value="AesGcm128" />
       <MemberSignature Language="C++ CLI" Value="AesGcm128" />
+      <MemberSignature Language="F#" Value="AesGcm128 = 3" Usage="Mono.Security.Interface.CipherAlgorithmType.AesGcm128" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.AesGcm256" />
       <MemberSignature Language="VB.NET" Value="AesGcm256" />
       <MemberSignature Language="C++ CLI" Value="AesGcm256" />
+      <MemberSignature Language="F#" Value="AesGcm256 = 4" Usage="Mono.Security.Interface.CipherAlgorithmType.AesGcm256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Mono.Security.Interface.CipherAlgorithmType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

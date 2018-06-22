@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewDataErrorContexts" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewDataErrorContexts" />
+  <TypeSignature Language="F#" Value="type DataGridViewDataErrorContexts = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent" />
       <MemberSignature Language="VB.NET" Value="ClipboardContent" />
       <MemberSignature Language="C++ CLI" Value="ClipboardContent" />
+      <MemberSignature Language="F#" Value="ClipboardContent = 16384" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Commit" />
       <MemberSignature Language="VB.NET" Value="Commit" />
       <MemberSignature Language="C++ CLI" Value="Commit" />
+      <MemberSignature Language="F#" Value="Commit = 512" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Commit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.CurrentCellChange" />
       <MemberSignature Language="VB.NET" Value="CurrentCellChange" />
       <MemberSignature Language="C++ CLI" Value="CurrentCellChange" />
+      <MemberSignature Language="F#" Value="CurrentCellChange = 4096" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.CurrentCellChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Display" />
       <MemberSignature Language="VB.NET" Value="Display" />
       <MemberSignature Language="C++ CLI" Value="Display" />
+      <MemberSignature Language="F#" Value="Display = 2" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Display" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Formatting" />
       <MemberSignature Language="VB.NET" Value="Formatting" />
       <MemberSignature Language="C++ CLI" Value="Formatting" />
+      <MemberSignature Language="F#" Value="Formatting = 1" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Formatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.InitialValueRestoration" />
       <MemberSignature Language="VB.NET" Value="InitialValueRestoration" />
       <MemberSignature Language="C++ CLI" Value="InitialValueRestoration" />
+      <MemberSignature Language="F#" Value="InitialValueRestoration = 1024" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.InitialValueRestoration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -159,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.LeaveControl" />
       <MemberSignature Language="VB.NET" Value="LeaveControl" />
       <MemberSignature Language="C++ CLI" Value="LeaveControl" />
+      <MemberSignature Language="F#" Value="LeaveControl = 2048" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.LeaveControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Parsing" />
       <MemberSignature Language="VB.NET" Value="Parsing" />
       <MemberSignature Language="C++ CLI" Value="Parsing" />
+      <MemberSignature Language="F#" Value="Parsing = 256" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Parsing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.PreferredSize" />
       <MemberSignature Language="VB.NET" Value="PreferredSize" />
       <MemberSignature Language="C++ CLI" Value="PreferredSize" />
+      <MemberSignature Language="F#" Value="PreferredSize = 4" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.PreferredSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,6 +226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.RowDeletion" />
       <MemberSignature Language="VB.NET" Value="RowDeletion" />
       <MemberSignature Language="C++ CLI" Value="RowDeletion" />
+      <MemberSignature Language="F#" Value="RowDeletion = 8" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.RowDeletion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -235,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Scroll" />
       <MemberSignature Language="VB.NET" Value="Scroll" />
       <MemberSignature Language="C++ CLI" Value="Scroll" />
+      <MemberSignature Language="F#" Value="Scroll = 8192" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Scroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

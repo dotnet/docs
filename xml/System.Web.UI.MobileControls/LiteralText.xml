@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LiteralText" />
   <TypeSignature Language="VB.NET" Value="Public Class LiteralText&#xA;Inherits PagedControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class LiteralText : System::Web::UI::MobileControls::PagedControl" />
+  <TypeSignature Language="F#" Value="type LiteralText = class&#xA;    inherit PagedControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.LiteralText.InternalItemCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property InternalItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int InternalItemCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InternalItemCount : int" Usage="System.Web.UI.MobileControls.LiteralText.InternalItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.LiteralText.ItemWeight" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ItemWeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int ItemWeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemWeight : int" Usage="System.Web.UI.MobileControls.LiteralText.ItemWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.LiteralText.PagedText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagedText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PagedText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PagedText : string" Usage="System.Web.UI.MobileControls.LiteralText.PagedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.LiteralText.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.MobileControls.LiteralText.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

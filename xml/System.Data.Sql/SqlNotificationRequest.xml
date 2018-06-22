@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Sql.SqlNotificationRequest" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlNotificationRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlNotificationRequest sealed" />
+  <TypeSignature Language="F#" Value="type SqlNotificationRequest = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Sql.SqlNotificationRequest.#ctor(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (userData As String, options As String, timeout As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotificationRequest(System::String ^ userData, System::String ^ options, int timeout);" />
+      <MemberSignature Language="F#" Value="new System.Data.Sql.SqlNotificationRequest : string * string * int -&gt; System.Data.Sql.SqlNotificationRequest" Usage="new System.Data.Sql.SqlNotificationRequest (userData, options, timeout)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Options { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : string with get, set" Usage="System.Data.Sql.SqlNotificationRequest.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Data.Sql.SqlNotificationRequest.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.UserData" />
       <MemberSignature Language="VB.NET" Value="Public Property UserData As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserData { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserData : string with get, set" Usage="System.Data.Sql.SqlNotificationRequest.UserData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

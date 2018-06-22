@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplicationIdleEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowApplicationIdleEventArgs&#xA;Inherits WorkflowApplicationEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowApplicationIdleEventArgs : System::Activities::WorkflowApplicationEventArgs" />
+  <TypeSignature Language="F#" Value="type WorkflowApplicationIdleEventArgs = class&#xA;    inherit WorkflowApplicationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationIdleEventArgs.Bookmarks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bookmarks As ReadOnlyCollection(Of BookmarkInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Hosting::BookmarkInfo ^&gt; ^ Bookmarks { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Hosting::BookmarkInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bookmarks : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt;" Usage="System.Activities.WorkflowApplicationIdleEventArgs.Bookmarks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.TreeEnumeratorBase`2" />
   <TypeSignature Language="VB.NET" Value="Public Class TreeEnumeratorBase(Of TKey, TValue)&#xA;Implements IEnumerator" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public ref class TreeEnumeratorBase : System::Collections::IEnumerator" />
+  <TypeSignature Language="F#" Value="type TreeEnumeratorBase&lt;'Key, 'Value&gt; = class&#xA;    interface IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.TreeEnumeratorBase`2.#ctor(Microsoft.VisualC.StlClr.Generic.INode{`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_First As INode(Of TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeEnumeratorBase(Microsoft::VisualC::StlClr::Generic::INode&lt;TValue&gt; ^ _First);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.TreeEnumeratorBase&lt;'Key, 'Value&gt; : Microsoft.VisualC.StlClr.Generic.INode&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.TreeEnumeratorBase&lt;'Key, 'Value&gt;" Usage="new Microsoft.VisualC.StlClr.TreeEnumeratorBase&lt;'Key, 'Value&gt; _First" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.TreeEnumeratorBase`2.Current" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Current As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Current { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Current : obj with get, set" Usage="Microsoft.VisualC.StlClr.TreeEnumeratorBase&lt;'Key, 'Value&gt;.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.TreeEnumeratorBase`2.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="treeEnumeratorBase.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.TreeEnumeratorBase`2.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="treeEnumeratorBase.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>

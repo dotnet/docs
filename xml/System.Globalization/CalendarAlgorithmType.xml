@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.CalendarAlgorithmType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CalendarAlgorithmType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CalendarAlgorithmType" />
+  <TypeSignature Language="F#" Value="type CalendarAlgorithmType = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CalendarAlgorithmType.LunarCalendar" />
       <MemberSignature Language="VB.NET" Value="LunarCalendar" />
       <MemberSignature Language="C++ CLI" Value="LunarCalendar" />
+      <MemberSignature Language="F#" Value="LunarCalendar = 2" Usage="System.Globalization.CalendarAlgorithmType.LunarCalendar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CalendarAlgorithmType.LunisolarCalendar" />
       <MemberSignature Language="VB.NET" Value="LunisolarCalendar" />
       <MemberSignature Language="C++ CLI" Value="LunisolarCalendar" />
+      <MemberSignature Language="F#" Value="LunisolarCalendar = 3" Usage="System.Globalization.CalendarAlgorithmType.LunisolarCalendar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CalendarAlgorithmType.SolarCalendar" />
       <MemberSignature Language="VB.NET" Value="SolarCalendar" />
       <MemberSignature Language="C++ CLI" Value="SolarCalendar" />
+      <MemberSignature Language="F#" Value="SolarCalendar = 1" Usage="System.Globalization.CalendarAlgorithmType.SolarCalendar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CalendarAlgorithmType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Globalization.CalendarAlgorithmType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

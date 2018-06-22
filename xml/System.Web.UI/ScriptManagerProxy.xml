@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManagerProxy" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptManagerProxy&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptManagerProxy : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type ScriptManagerProxy = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -144,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.AuthenticationService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationService As AuthenticationServiceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AuthenticationServiceManager ^ AuthenticationService { System::Web::UI::AuthenticationServiceManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationService : System.Web.UI.AuthenticationServiceManager" Usage="System.Web.UI.ScriptManagerProxy.AuthenticationService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -190,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.CompositeScript" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompositeScript As CompositeScriptReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::CompositeScriptReference ^ CompositeScript { System::Web::UI::CompositeScriptReference ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompositeScript : System.Web.UI.CompositeScriptReference" Usage="System.Web.UI.ScriptManagerProxy.CompositeScript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -227,6 +230,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.ScriptManagerProxy.Navigate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Navigate As EventHandler(Of HistoryEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::HistoryEventArgs ^&gt; ^ Navigate;" />
+      <MemberSignature Language="F#" Value="member this.Navigate : EventHandler&lt;System.Web.UI.HistoryEventArgs&gt; " Usage="member this.Navigate : System.EventHandler&lt;System.Web.UI.HistoryEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -258,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManagerProxy.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="scriptManagerProxy.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -281,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.ProfileService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProfileService As ProfileServiceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ProfileServiceManager ^ ProfileService { System::Web::UI::ProfileServiceManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProfileService : System.Web.UI.ProfileServiceManager" Usage="System.Web.UI.ScriptManagerProxy.ProfileService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -327,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.RoleService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoleService As RoleServiceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::RoleServiceManager ^ RoleService { System::Web::UI::RoleServiceManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RoleService : System.Web.UI.RoleServiceManager" Usage="System.Web.UI.ScriptManagerProxy.RoleService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -374,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Scripts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scripts As ScriptReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ScriptReferenceCollection ^ Scripts { System::Web::UI::ScriptReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scripts : System.Web.UI.ScriptReferenceCollection" Usage="System.Web.UI.ScriptManagerProxy.Scripts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -423,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Services" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ServiceReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ServiceReferenceCollection ^ Services { System::Web::UI::ServiceReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Services : System.Web.UI.ServiceReferenceCollection" Usage="System.Web.UI.ScriptManagerProxy.Services" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -471,6 +480,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.ScriptManagerProxy.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

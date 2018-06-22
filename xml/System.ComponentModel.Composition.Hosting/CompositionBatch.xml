@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CompositionBatch" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositionBatch" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionBatch" />
+  <TypeSignature Language="F#" Value="type CompositionBatch = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePart},System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePart})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (partsToAdd As IEnumerable(Of ComposablePart), partsToRemove As IEnumerable(Of ComposablePart))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionBatch(System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ partsToAdd, System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ partsToRemove);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.CompositionBatch : seq&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; * seq&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; -&gt; System.ComponentModel.Composition.Hosting.CompositionBatch" Usage="new System.ComponentModel.Composition.Hosting.CompositionBatch (partsToAdd, partsToRemove)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Primitives.ComposablePart AddExport(class System.ComponentModel.Composition.Primitives.Export export) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.AddExport(System.ComponentModel.Composition.Primitives.Export)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Primitives::ComposablePart ^ AddExport(System::ComponentModel::Composition::Primitives::Export ^ export);" />
+      <MemberSignature Language="F#" Value="member this.AddExport : System.ComponentModel.Composition.Primitives.Export -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="compositionBatch.AddExport export" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.AddPart(System.ComponentModel.Composition.Primitives.ComposablePart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPart (part As ComposablePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPart(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
+      <MemberSignature Language="F#" Value="member this.AddPart : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit" Usage="compositionBatch.AddPart part" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToAdd" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartsToAdd As ReadOnlyCollection(Of ComposablePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ PartsToAdd { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartsToAdd : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;" Usage="System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToAdd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToRemove" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartsToRemove As ReadOnlyCollection(Of ComposablePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ PartsToRemove { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartsToRemove : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;" Usage="System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToRemove" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.RemovePart(System.ComponentModel.Composition.Primitives.ComposablePart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemovePart (part As ComposablePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePart(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
+      <MemberSignature Language="F#" Value="member this.RemovePart : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit" Usage="compositionBatch.RemovePart part" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

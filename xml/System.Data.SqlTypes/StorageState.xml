@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.StorageState" />
   <TypeSignature Language="VB.NET" Value="Public Enum StorageState" />
   <TypeSignature Language="C++ CLI" Value="public enum class StorageState" />
+  <TypeSignature Language="F#" Value="type StorageState = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.StorageState.Buffer" />
       <MemberSignature Language="VB.NET" Value="Buffer" />
       <MemberSignature Language="C++ CLI" Value="Buffer" />
+      <MemberSignature Language="F#" Value="Buffer = 0" Usage="System.Data.SqlTypes.StorageState.Buffer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.StorageState.Stream" />
       <MemberSignature Language="VB.NET" Value="Stream" />
       <MemberSignature Language="C++ CLI" Value="Stream" />
+      <MemberSignature Language="F#" Value="Stream = 1" Usage="System.Data.SqlTypes.StorageState.Stream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.StorageState.UnmanagedBuffer" />
       <MemberSignature Language="VB.NET" Value="UnmanagedBuffer" />
       <MemberSignature Language="C++ CLI" Value="UnmanagedBuffer" />
+      <MemberSignature Language="F#" Value="UnmanagedBuffer = 2" Usage="System.Data.SqlTypes.StorageState.UnmanagedBuffer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

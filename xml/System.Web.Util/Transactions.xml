@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.Transactions" />
   <TypeSignature Language="VB.NET" Value="Public Class Transactions" />
   <TypeSignature Language="C++ CLI" Value="public ref class Transactions" />
+  <TypeSignature Language="F#" Value="type Transactions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.Transactions.InvokeTransacted(System.Web.Util.TransactedCallback,System.EnterpriseServices.TransactionOption)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransacted (callback As TransactedCallback, mode As TransactionOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransacted(System::Web::Util::TransactedCallback ^ callback, System::EnterpriseServices::TransactionOption mode);" />
+      <MemberSignature Language="F#" Value="static member InvokeTransacted : System.Web.Util.TransactedCallback * System.EnterpriseServices.TransactionOption -&gt; unit" Usage="System.Web.Util.Transactions.InvokeTransacted (callback, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.Transactions.InvokeTransacted(System.Web.Util.TransactedCallback,System.EnterpriseServices.TransactionOption,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransacted (callback As TransactedCallback, mode As TransactionOption, ByRef transactionAborted As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransacted(System::Web::Util::TransactedCallback ^ callback, System::EnterpriseServices::TransactionOption mode, bool % transactionAborted);" />
+      <MemberSignature Language="F#" Value="static member InvokeTransacted : System.Web.Util.TransactedCallback * System.EnterpriseServices.TransactionOption *  -&gt; unit" Usage="System.Web.Util.Transactions.InvokeTransacted (callback, mode, transactionAborted)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

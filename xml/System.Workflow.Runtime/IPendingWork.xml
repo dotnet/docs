@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.IPendingWork" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPendingWork" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPendingWork" />
+  <TypeSignature Language="F#" Value="type IPendingWork = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit(class System.Transactions.Transaction transaction, class System.Collections.ICollection items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.IPendingWork.Commit(System.Transactions.Transaction,System.Collections.ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit(System::Transactions::Transaction ^ transaction, System::Collections::ICollection ^ items);" />
+      <MemberSignature Language="F#" Value="abstract member Commit : System.Transactions.Transaction * System.Collections.ICollection -&gt; unit" Usage="iPendingWork.Commit (transaction, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.IPendingWork.Complete(System.Boolean,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete (succeeded As Boolean, items As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete(bool succeeded, System::Collections::ICollection ^ items);" />
+      <MemberSignature Language="F#" Value="abstract member Complete : bool * System.Collections.ICollection -&gt; unit" Usage="iPendingWork.Complete (succeeded, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.IPendingWork.MustCommit(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function MustCommit (items As ICollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MustCommit(System::Collections::ICollection ^ items);" />
+      <MemberSignature Language="F#" Value="abstract member MustCommit : System.Collections.ICollection -&gt; bool" Usage="iPendingWork.MustCommit items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

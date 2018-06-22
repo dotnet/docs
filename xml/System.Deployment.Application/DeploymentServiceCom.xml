@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentServiceCom" />
   <TypeSignature Language="VB.NET" Value="Public Class DeploymentServiceCom" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeploymentServiceCom" />
+  <TypeSignature Language="F#" Value="type DeploymentServiceCom = class" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateApplicationExtension(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ActivateApplicationExtension (textualSubId As String, deploymentProviderUrl As String, targetAssociatedFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateApplicationExtension(System::String ^ textualSubId, System::String ^ deploymentProviderUrl, System::String ^ targetAssociatedFile);" />
+      <MemberSignature Language="F#" Value="member this.ActivateApplicationExtension : string * string * string -&gt; unit" Usage="deploymentServiceCom.ActivateApplicationExtension (textualSubId, deploymentProviderUrl, targetAssociatedFile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateDeployment(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ActivateDeployment (deploymentLocation As String, isShortcut As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateDeployment(System::String ^ deploymentLocation, bool isShortcut);" />
+      <MemberSignature Language="F#" Value="member this.ActivateDeployment : string * bool -&gt; unit" Usage="deploymentServiceCom.ActivateDeployment (deploymentLocation, isShortcut)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateDeploymentEx(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ActivateDeploymentEx (deploymentLocation As String, unsignedPolicy As Integer, signedPolicy As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateDeploymentEx(System::String ^ deploymentLocation, int unsignedPolicy, int signedPolicy);" />
+      <MemberSignature Language="F#" Value="member this.ActivateDeploymentEx : string * int * int -&gt; unit" Usage="deploymentServiceCom.ActivateDeploymentEx (deploymentLocation, unsignedPolicy, signedPolicy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.CheckForDeploymentUpdate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CheckForDeploymentUpdate (textualSubId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckForDeploymentUpdate(System::String ^ textualSubId);" />
+      <MemberSignature Language="F#" Value="member this.CheckForDeploymentUpdate : string -&gt; unit" Usage="deploymentServiceCom.CheckForDeploymentUpdate textualSubId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache" />
       <MemberSignature Language="VB.NET" Value="Public Sub CleanOnlineAppCache ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CleanOnlineAppCache();" />
+      <MemberSignature Language="F#" Value="member this.CleanOnlineAppCache : unit -&gt; unit" Usage="deploymentServiceCom.CleanOnlineAppCache " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.EndServiceRightNow" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndServiceRightNow ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndServiceRightNow();" />
+      <MemberSignature Language="F#" Value="member this.EndServiceRightNow : unit -&gt; unit" Usage="deploymentServiceCom.EndServiceRightNow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.MaintainSubscription(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MaintainSubscription (textualSubId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MaintainSubscription(System::String ^ textualSubId);" />
+      <MemberSignature Language="F#" Value="member this.MaintainSubscription : string -&gt; unit" Usage="deploymentServiceCom.MaintainSubscription textualSubId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

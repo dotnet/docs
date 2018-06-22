@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ReferenceAssemblyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReferenceAssemblyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReferenceAssemblyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ReferenceAssemblyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ReferenceAssemblyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReferenceAssemblyAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.ReferenceAssemblyAttribute : string -&gt; System.Runtime.CompilerServices.ReferenceAssemblyAttribute" Usage="new System.Runtime.CompilerServices.ReferenceAssemblyAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.ReferenceAssemblyAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Runtime.CompilerServices.ReferenceAssemblyAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

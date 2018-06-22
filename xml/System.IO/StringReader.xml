@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.StringReader" />
   <TypeSignature Language="VB.NET" Value="Public Class StringReader&#xA;Inherits TextReader" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringReader : System::IO::TextReader" />
+  <TypeSignature Language="F#" Value="type StringReader = class&#xA;    inherit TextReader" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringReader(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="new System.IO.StringReader : string -&gt; System.IO.StringReader" Usage="new System.IO.StringReader s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="stringReader.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="stringReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -240,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Peek () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Peek();" />
+      <MemberSignature Language="F#" Value="override this.Peek : unit -&gt; int" Usage="stringReader.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -309,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; int" Usage="stringReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -378,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Read(System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(Span&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="override this.Read : Span&lt;char&gt; -&gt; int" Usage="stringReader.Read buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -402,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.Read : char[] * int * int -&gt; int" Usage="stringReader.Read (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -474,6 +482,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;int&gt; ReadAsync (Memory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadAsync(valuetype System.Memory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : Memory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="stringReader.ReadAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -500,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="stringReader.ReadAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -571,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadBlock(System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadBlock (buffer As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadBlock(Span&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="override this.ReadBlock : Span&lt;char&gt; -&gt; int" Usage="stringReader.ReadBlock buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -593,6 +604,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;int&gt; ReadBlockAsync (Memory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadBlockAsync(valuetype System.Memory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadBlockAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ReadBlockAsync : Memory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="stringReader.ReadBlockAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -619,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadBlockAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadBlockAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadBlockAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="stringReader.ReadBlockAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -682,6 +695,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadLine () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ReadLine();" />
+      <MemberSignature Language="F#" Value="override this.ReadLine : unit -&gt; string" Usage="stringReader.ReadLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -756,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadLineAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadLineAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadLineAsync();" />
+      <MemberSignature Language="F#" Value="override this.ReadLineAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="stringReader.ReadLineAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -811,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToEnd () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ReadToEnd();" />
+      <MemberSignature Language="F#" Value="override this.ReadToEnd : unit -&gt; string" Usage="stringReader.ReadToEnd " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -883,6 +899,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadToEndAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToEndAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadToEndAsync();" />
+      <MemberSignature Language="F#" Value="override this.ReadToEndAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="stringReader.ReadToEndAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>

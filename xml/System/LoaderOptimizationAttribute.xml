@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.LoaderOptimizationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LoaderOptimizationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class LoaderOptimizationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type LoaderOptimizationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.LoaderOptimizationAttribute.#ctor(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LoaderOptimizationAttribute(System::Byte value);" />
+      <MemberSignature Language="F#" Value="new LoaderOptimizationAttribute : byte -&gt; LoaderOptimizationAttribute" Usage="new System.LoaderOptimizationAttribute value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.LoaderOptimizationAttribute.#ctor(System.LoaderOptimization)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As LoaderOptimization)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LoaderOptimizationAttribute(LoaderOptimization value);" />
+      <MemberSignature Language="F#" Value="new LoaderOptimizationAttribute : LoaderOptimization -&gt; LoaderOptimizationAttribute" Usage="new System.LoaderOptimizationAttribute value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.LoaderOptimizationAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As LoaderOptimization" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property LoaderOptimization Value { LoaderOptimization get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : LoaderOptimization" Usage="System.LoaderOptimizationAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

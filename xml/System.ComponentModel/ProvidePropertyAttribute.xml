@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ProvidePropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProvidePropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProvidePropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ProvidePropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ProvidePropertyAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, receiverTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProvidePropertyAttribute(System::String ^ propertyName, System::String ^ receiverTypeName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ProvidePropertyAttribute : string * string -&gt; System.ComponentModel.ProvidePropertyAttribute" Usage="new System.ComponentModel.ProvidePropertyAttribute (propertyName, receiverTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ProvidePropertyAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, receiverType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProvidePropertyAttribute(System::String ^ propertyName, Type ^ receiverType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ProvidePropertyAttribute : string * Type -&gt; System.ComponentModel.ProvidePropertyAttribute" Usage="new System.ComponentModel.ProvidePropertyAttribute (propertyName, receiverType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ProvidePropertyAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="providePropertyAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ProvidePropertyAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="providePropertyAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProvidePropertyAttribute.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.ComponentModel.ProvidePropertyAttribute.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProvidePropertyAttribute.ReceiverTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReceiverTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReceiverTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiverTypeName : string" Usage="System.ComponentModel.ProvidePropertyAttribute.ReceiverTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProvidePropertyAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.ProvidePropertyAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

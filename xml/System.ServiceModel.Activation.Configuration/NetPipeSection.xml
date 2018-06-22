@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.Configuration.NetPipeSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetPipeSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetPipeSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type NetPipeSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowAccounts As SecurityIdentifierElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activation::Configuration::SecurityIdentifierElementCollection ^ AllowAccounts { System::ServiceModel::Activation::Configuration::SecurityIdentifierElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowAccounts : System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection" Usage="System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.Configuration.NetPipeSection.InitializeDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeDefault ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeDefault();" />
+      <MemberSignature Language="F#" Value="override this.InitializeDefault : unit -&gt; unit" Usage="netPipeSection.InitializeDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.NetPipeSection.MaxPendingAccepts" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingAccepts As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingAccepts { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingAccepts : int with get, set" Usage="System.ServiceModel.Activation.Configuration.NetPipeSection.MaxPendingAccepts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.NetPipeSection.MaxPendingConnections" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingConnections As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingConnections { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingConnections : int with get, set" Usage="System.ServiceModel.Activation.Configuration.NetPipeSection.MaxPendingConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.NetPipeSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activation.Configuration.NetPipeSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.NetPipeSection.ReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReceiveTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Activation.Configuration.NetPipeSection.ReceiveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

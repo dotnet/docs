@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WebPartConnectionsEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartConnectionsEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WebPartConnectionsEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartConnectionsEventArgs(System::Web::UI::WebControls::WebParts::WebPart ^ provider, System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ providerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPart ^ consumer, System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ consumerConnectionPoint);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint * System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint -&gt; System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs" Usage="new System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs (provider, providerConnectionPoint, consumer, consumerConnectionPoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPartConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint,System.Web.UI.WebControls.WebParts.WebPartConnection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartConnectionsEventArgs(System::Web::UI::WebControls::WebParts::WebPart ^ provider, System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ providerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPart ^ consumer, System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ consumerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPartConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint * System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint * System.Web.UI.WebControls.WebParts.WebPartConnection -&gt; System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs" Usage="new System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs (provider, providerConnectionPoint, consumer, consumerConnectionPoint, connection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As WebPartConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartConnection ^ Connection { System::Web::UI::WebControls::WebParts::WebPartConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Web.UI.WebControls.WebParts.WebPartConnection" Usage="System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Consumer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Consumer As WebPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ Consumer { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Consumer : System.Web.UI.WebControls.WebParts.WebPart" Usage="System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Consumer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.ConsumerConnectionPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConsumerConnectionPoint As ConsumerConnectionPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ ConsumerConnectionPoint { System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConsumerConnectionPoint : System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" Usage="System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.ConsumerConnectionPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As WebPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ Provider { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.UI.WebControls.WebParts.WebPart" Usage="System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.ProviderConnectionPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderConnectionPoint As ProviderConnectionPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ ProviderConnectionPoint { System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderConnectionPoint : System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" Usage="System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.ProviderConnectionPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

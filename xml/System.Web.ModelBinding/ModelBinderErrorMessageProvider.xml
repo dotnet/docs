@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderErrorMessageProvider" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ModelBinderErrorMessageProvider(modelBindingExecutionContext As ModelBindingExecutionContext, modelMetadata As ModelMetadata, incomingValue As Object) As String " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::String ^ ModelBinderErrorMessageProvider(ModelBindingExecutionContext ^ modelBindingExecutionContext, ModelMetadata ^ modelMetadata, System::Object ^ incomingValue);" />
+  <TypeSignature Language="F#" Value="type ModelBinderErrorMessageProvider = delegate of ModelBindingExecutionContext * ModelMetadata * obj -&gt; string" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

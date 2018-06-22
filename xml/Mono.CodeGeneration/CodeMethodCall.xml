@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeMethodCall" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeMethodCall&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeMethodCall : Mono::CodeGeneration::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeMethodCall = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.#ctor(Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method As CodeMethod, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodCall(Mono::CodeGeneration::CodeMethod ^ method, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeMethodCall : Mono.CodeGeneration.CodeMethod * Mono.CodeGeneration.CodeExpression[] -&gt; Mono.CodeGeneration.CodeMethodCall" Usage="new Mono.CodeGeneration.CodeMethodCall (method, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.#ctor(System.Reflection.MethodInfo,Mono.CodeGeneration.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method As MethodInfo, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodCall(System::Reflection::MethodInfo ^ method, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeMethodCall : System.Reflection.MethodInfo * Mono.CodeGeneration.CodeExpression[] -&gt; Mono.CodeGeneration.CodeMethodCall" Usage="new Mono.CodeGeneration.CodeMethodCall (method, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.#ctor(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As CodeExpression, method As CodeMethod, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodCall(Mono::CodeGeneration::CodeExpression ^ target, Mono::CodeGeneration::CodeMethod ^ method, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeMethodCall : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeMethod * Mono.CodeGeneration.CodeExpression[] -&gt; Mono.CodeGeneration.CodeMethodCall" Usage="new Mono.CodeGeneration.CodeMethodCall (target, method, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.#ctor(Mono.CodeGeneration.CodeExpression,System.Reflection.MethodBase,Mono.CodeGeneration.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As CodeExpression, method As MethodBase, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodCall(Mono::CodeGeneration::CodeExpression ^ target, System::Reflection::MethodBase ^ method, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeMethodCall : Mono.CodeGeneration.CodeExpression * System.Reflection.MethodBase * Mono.CodeGeneration.CodeExpression[] -&gt; Mono.CodeGeneration.CodeMethodCall" Usage="new Mono.CodeGeneration.CodeMethodCall (target, method, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.#ctor(Mono.CodeGeneration.CodeExpression,System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As CodeExpression, name As String, ParamArray parameters As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodCall(Mono::CodeGeneration::CodeExpression ^ target, System::String ^ name, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeMethodCall : Mono.CodeGeneration.CodeExpression * string * Mono.CodeGeneration.CodeExpression[] -&gt; Mono.CodeGeneration.CodeMethodCall" Usage="new Mono.CodeGeneration.CodeMethodCall (target, name, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.#ctor(System.Type,System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodCall(Type ^ type, System::String ^ name, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeMethodCall : Type * string * Mono.CodeGeneration.CodeExpression[] -&gt; Mono.CodeGeneration.CodeMethodCall" Usage="new Mono.CodeGeneration.CodeMethodCall (type, name, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeMethodCall.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.GenerateAsStatement(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateAsStatement (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateAsStatement(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.GenerateAsStatement : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeMethodCall.GenerateAsStatement gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -253,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeMethodCall.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -275,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeMethodCall.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeMethodCall.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

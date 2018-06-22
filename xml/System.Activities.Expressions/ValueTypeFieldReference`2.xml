@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.ValueTypeFieldReference`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValueTypeFieldReference(Of TOperand, TResult)&#xA;Inherits CodeActivity(Of Location(Of TResult))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TOperand, typename TResult&gt;&#xA;public ref class ValueTypeFieldReference sealed : System::Activities::CodeActivity&lt;System::Activities::Location&lt;TResult&gt; ^&gt;" />
+  <TypeSignature Language="F#" Value="type ValueTypeFieldReference&lt;'Operand, 'Result&gt; = class&#xA;    inherit CodeActivity&lt;Location&lt;'Result&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@ public static void ValueTypeFieldReferenceSample()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ValueTypeFieldReference`2.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="valueTypeFieldReference.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +127,7 @@ public static void ValueTypeFieldReferenceSample()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ValueTypeFieldReference`2.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As Location(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Location&lt;TResult&gt; ^ Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; System.Activities.Location&lt;'Result&gt;" Usage="valueTypeFieldReference.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,6 +152,7 @@ public static void ValueTypeFieldReferenceSample()
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ValueTypeFieldReference`2.FieldName" />
       <MemberSignature Language="VB.NET" Value="Public Property FieldName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FieldName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FieldName : string with get, set" Usage="System.Activities.Expressions.ValueTypeFieldReference&lt;'Operand, 'Result&gt;.FieldName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -174,6 +178,7 @@ public static void ValueTypeFieldReferenceSample()
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ValueTypeFieldReference`2.OperandLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property OperandLocation As InOutArgument(Of TOperand)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InOutArgument&lt;TOperand&gt; ^ OperandLocation { System::Activities::InOutArgument&lt;TOperand&gt; ^ get(); void set(System::Activities::InOutArgument&lt;TOperand&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OperandLocation : System.Activities.InOutArgument&lt;'Operand&gt; with get, set" Usage="System.Activities.Expressions.ValueTypeFieldReference&lt;'Operand, 'Result&gt;.OperandLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

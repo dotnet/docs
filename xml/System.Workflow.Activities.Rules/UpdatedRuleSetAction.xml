@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.UpdatedRuleSetAction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UpdatedRuleSetAction&#xA;Inherits RuleSetChangeAction" />
   <TypeSignature Language="C++ CLI" Value="public ref class UpdatedRuleSetAction sealed : System::Workflow::Activities::Rules::RuleSetChangeAction" />
+  <TypeSignature Language="F#" Value="type UpdatedRuleSetAction = class&#xA;    inherit RuleSetChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.UpdatedRuleSetAction.#ctor(System.Workflow.Activities.Rules.RuleSet,System.Workflow.Activities.Rules.RuleSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (originalRuleSetDefinition As RuleSet, updatedRuleSetDefinition As RuleSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdatedRuleSetAction(System::Workflow::Activities::Rules::RuleSet ^ originalRuleSetDefinition, System::Workflow::Activities::Rules::RuleSet ^ updatedRuleSetDefinition);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.UpdatedRuleSetAction : System.Workflow.Activities.Rules.RuleSet * System.Workflow.Activities.Rules.RuleSet -&gt; System.Workflow.Activities.Rules.UpdatedRuleSetAction" Usage="new System.Workflow.Activities.Rules.UpdatedRuleSetAction (originalRuleSetDefinition, updatedRuleSetDefinition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.UpdatedRuleSetAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ApplyTo (rootActivity As Activity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="override this.ApplyTo : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="updatedRuleSetAction.ApplyTo rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedRuleSetAction.OriginalRuleSetDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property OriginalRuleSetDefinition As RuleSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleSet ^ OriginalRuleSetDefinition { System::Workflow::Activities::Rules::RuleSet ^ get(); void set(System::Workflow::Activities::Rules::RuleSet ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalRuleSetDefinition : System.Workflow.Activities.Rules.RuleSet with get, set" Usage="System.Workflow.Activities.Rules.UpdatedRuleSetAction.OriginalRuleSetDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedRuleSetAction.RuleSetName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleSetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RuleSetName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RuleSetName : string" Usage="System.Workflow.Activities.Rules.UpdatedRuleSetAction.RuleSetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedRuleSetAction.UpdatedRuleSetDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdatedRuleSetDefinition As RuleSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleSet ^ UpdatedRuleSetDefinition { System::Workflow::Activities::Rules::RuleSet ^ get(); void set(System::Workflow::Activities::Rules::RuleSet ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdatedRuleSetDefinition : System.Workflow.Activities.Rules.RuleSet with get, set" Usage="System.Workflow.Activities.Rules.UpdatedRuleSetAction.UpdatedRuleSetDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

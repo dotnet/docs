@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.FaultPropagationQuery" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FaultPropagationQuery&#xA;Inherits TrackingQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultPropagationQuery sealed : System::Activities::Tracking::TrackingQuery" />
+  <TypeSignature Language="F#" Value="type FaultPropagationQuery = class&#xA;    inherit TrackingQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationQuery.FaultHandlerActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultHandlerActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FaultHandlerActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultHandlerActivityName : string with get, set" Usage="System.Activities.Tracking.FaultPropagationQuery.FaultHandlerActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationQuery.FaultSourceActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultSourceActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FaultSourceActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultSourceActivityName : string with get, set" Usage="System.Activities.Tracking.FaultPropagationQuery.FaultSourceActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

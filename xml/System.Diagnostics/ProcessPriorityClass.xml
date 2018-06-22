@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessPriorityClass" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProcessPriorityClass" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProcessPriorityClass" />
+  <TypeSignature Language="F#" Value="type ProcessPriorityClass = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.AboveNormal" />
       <MemberSignature Language="VB.NET" Value="AboveNormal" />
       <MemberSignature Language="C++ CLI" Value="AboveNormal" />
+      <MemberSignature Language="F#" Value="AboveNormal = 32768" Usage="System.Diagnostics.ProcessPriorityClass.AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.BelowNormal" />
       <MemberSignature Language="VB.NET" Value="BelowNormal" />
       <MemberSignature Language="C++ CLI" Value="BelowNormal" />
+      <MemberSignature Language="F#" Value="BelowNormal = 16384" Usage="System.Diagnostics.ProcessPriorityClass.BelowNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 128" Usage="System.Diagnostics.ProcessPriorityClass.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.Idle" />
       <MemberSignature Language="VB.NET" Value="Idle" />
       <MemberSignature Language="C++ CLI" Value="Idle" />
+      <MemberSignature Language="F#" Value="Idle = 64" Usage="System.Diagnostics.ProcessPriorityClass.Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 32" Usage="System.Diagnostics.ProcessPriorityClass.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.RealTime" />
       <MemberSignature Language="VB.NET" Value="RealTime" />
       <MemberSignature Language="C++ CLI" Value="RealTime" />
+      <MemberSignature Language="F#" Value="RealTime = 256" Usage="System.Diagnostics.ProcessPriorityClass.RealTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>

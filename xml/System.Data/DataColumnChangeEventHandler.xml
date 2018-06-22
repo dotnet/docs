@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataColumnChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataColumnChangeEventHandler(sender As Object, e As DataColumnChangeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataColumnChangeEventHandler(System::Object ^ sender, DataColumnChangeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataColumnChangeEventHandler = delegate of obj * DataColumnChangeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

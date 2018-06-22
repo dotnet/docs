@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Interop" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Interop&#xA;Inherits NativeActivity&#xA;Implements ICustomTypeDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class Interop sealed : System::Activities::NativeActivity, System::ComponentModel::ICustomTypeDescriptor" />
+  <TypeSignature Language="F#" Value="type Interop = class&#xA;    inherit NativeActivity&#xA;    interface ICustomTypeDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Interop.ActivityMetaProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityMetaProperties As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ ActivityMetaProperties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityMetaProperties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.Statements.Interop.ActivityMetaProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Interop.ActivityProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityProperties As IDictionary(Of String, Argument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::Argument ^&gt; ^ ActivityProperties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::Argument ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityProperties : System.Collections.Generic.IDictionary&lt;string, System.Activities.Argument&gt;" Usage="System.Activities.Statements.Interop.ActivityProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Interop.ActivityType" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ActivityType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityType : Type with get, set" Usage="System.Activities.Statements.Interop.ActivityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Interop.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="interop.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Interop.Cancel(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Cancel (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Cancel(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Cancel : System.Activities.NativeActivityContext -&gt; unit" Usage="interop.Cancel context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Interop.CanInduceIdle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanInduceIdle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanInduceIdle { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanInduceIdle : bool" Usage="System.Activities.Statements.Interop.CanInduceIdle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Interop.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="interop.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

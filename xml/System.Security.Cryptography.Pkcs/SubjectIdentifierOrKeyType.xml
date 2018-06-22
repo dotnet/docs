@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SubjectIdentifierOrKeyType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SubjectIdentifierOrKeyType" />
+  <TypeSignature Language="F#" Value="type SubjectIdentifierOrKeyType = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.IssuerAndSerialNumber" />
       <MemberSignature Language="VB.NET" Value="IssuerAndSerialNumber" />
       <MemberSignature Language="C++ CLI" Value="IssuerAndSerialNumber" />
+      <MemberSignature Language="F#" Value="IssuerAndSerialNumber = 1" Usage="System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.IssuerAndSerialNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.PublicKeyInfo" />
       <MemberSignature Language="VB.NET" Value="PublicKeyInfo" />
       <MemberSignature Language="C++ CLI" Value="PublicKeyInfo" />
+      <MemberSignature Language="F#" Value="PublicKeyInfo = 3" Usage="System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.PublicKeyInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.SubjectKeyIdentifier" />
       <MemberSignature Language="VB.NET" Value="SubjectKeyIdentifier" />
       <MemberSignature Language="C++ CLI" Value="SubjectKeyIdentifier" />
+      <MemberSignature Language="F#" Value="SubjectKeyIdentifier = 2" Usage="System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.SubjectKeyIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

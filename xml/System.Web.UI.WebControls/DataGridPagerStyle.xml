@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridPagerStyle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridPagerStyle&#xA;Inherits TableItemStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridPagerStyle sealed : System::Web::UI::WebControls::TableItemStyle" />
+  <TypeSignature Language="F#" Value="type DataGridPagerStyle = class&#xA;    inherit TableItemStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridPagerStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (s As Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Web::UI::WebControls::Style ^ s);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.Web.UI.WebControls.Style -&gt; unit" Usage="dataGridPagerStyle.CopyFrom s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridPagerStyle.MergeWith(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub MergeWith (s As Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MergeWith(System::Web::UI::WebControls::Style ^ s);" />
+      <MemberSignature Language="F#" Value="override this.MergeWith : System.Web.UI.WebControls.Style -&gt; unit" Usage="dataGridPagerStyle.MergeWith s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridPagerStyle.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As PagerMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::PagerMode Mode { System::Web::UI::WebControls::PagerMode get(); void set(System::Web::UI::WebControls::PagerMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.WebControls.PagerMode with get, set" Usage="System.Web.UI.WebControls.DataGridPagerStyle.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridPagerStyle.NextPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property NextPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextPageText : string with get, set" Usage="System.Web.UI.WebControls.DataGridPagerStyle.NextPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridPagerStyle.PageButtonCount" />
       <MemberSignature Language="VB.NET" Value="Public Property PageButtonCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageButtonCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageButtonCount : int with get, set" Usage="System.Web.UI.WebControls.DataGridPagerStyle.PageButtonCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridPagerStyle.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As PagerPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::PagerPosition Position { System::Web::UI::WebControls::PagerPosition get(); void set(System::Web::UI::WebControls::PagerPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Web.UI.WebControls.PagerPosition with get, set" Usage="System.Web.UI.WebControls.DataGridPagerStyle.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridPagerStyle.PrevPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property PrevPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrevPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrevPageText : string with get, set" Usage="System.Web.UI.WebControls.DataGridPagerStyle.PrevPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -374,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridPagerStyle.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="dataGridPagerStyle.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridPagerStyle.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.DataGridPagerStyle.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

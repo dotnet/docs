@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.ActiveXHost" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveXHost&#xA;Inherits HwndHost" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveXHost : System::Windows::Interop::HwndHost" />
+  <TypeSignature Language="F#" Value="type ActiveXHost = class&#xA;    inherit HwndHost" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ActiveXHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function BuildWindowCore (hwndParent As HandleRef) As HandleRef" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Runtime::InteropServices::HandleRef BuildWindowCore(System::Runtime::InteropServices::HandleRef hwndParent);" />
+      <MemberSignature Language="F#" Value="override this.BuildWindowCore : System.Runtime.InteropServices.HandleRef -&gt; System.Runtime.InteropServices.HandleRef" Usage="activeXHost.BuildWindowCore hwndParent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ActiveXHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DestroyWindowCore (hwnd As HandleRef)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DestroyWindowCore(System::Runtime::InteropServices::HandleRef hwnd);" />
+      <MemberSignature Language="F#" Value="override this.DestroyWindowCore : System.Runtime.InteropServices.HandleRef -&gt; unit" Usage="activeXHost.DestroyWindowCore hwnd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ActiveXHost.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="activeXHost.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.ActiveXHost.IsDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsDisposed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDisposed : bool" Usage="System.Windows.Interop.ActiveXHost.IsDisposed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ActiveXHost.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (swConstraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size swConstraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="activeXHost.MeasureOverride swConstraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ActiveXHost.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAccessKey (args As AccessKeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAccessKey(System::Windows::Input::AccessKeyEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="override this.OnAccessKey : System.Windows.Input.AccessKeyEventArgs -&gt; unit" Usage="activeXHost.OnAccessKey args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ActiveXHost.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="activeXHost.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ActiveXHost.OnWindowPositionChanged(System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnWindowPositionChanged (bounds As Rect)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnWindowPositionChanged(System::Windows::Rect bounds);" />
+      <MemberSignature Language="F#" Value="override this.OnWindowPositionChanged : System.Windows.Rect -&gt; unit" Usage="activeXHost.OnWindowPositionChanged bounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

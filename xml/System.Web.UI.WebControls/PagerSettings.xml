@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PagerSettings&#xA;Implements IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class PagerSettings sealed : System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type PagerSettings = class&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -137,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstPageImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FirstPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstPageImageUrl : string with get, set" Usage="System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FirstPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstPageText : string with get, set" Usage="System.Web.UI.WebControls.PagerSettings.FirstPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -257,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property LastPageImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LastPageImageUrl : string with get, set" Usage="System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -320,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property LastPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LastPageText : string with get, set" Usage="System.Web.UI.WebControls.PagerSettings.LastPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -377,6 +382,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As PagerButtons" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::PagerButtons Mode { System::Web::UI::WebControls::PagerButtons get(); void set(System::Web::UI::WebControls::PagerButtons value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.WebControls.PagerButtons with get, set" Usage="System.Web.UI.WebControls.PagerSettings.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -460,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NextPageImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextPageImageUrl : string with get, set" Usage="System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -523,6 +530,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property NextPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextPageText : string with get, set" Usage="System.Web.UI.WebControls.PagerSettings.NextPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -580,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
       <MemberSignature Language="VB.NET" Value="Public Property PageButtonCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageButtonCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageButtonCount : int with get, set" Usage="System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -629,6 +638,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As PagerPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::PagerPosition Position { System::Web::UI::WebControls::PagerPosition get(); void set(System::Web::UI::WebControls::PagerPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Web.UI.WebControls.PagerPosition with get, set" Usage="System.Web.UI.WebControls.PagerSettings.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -684,6 +694,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviousPageImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousPageImageUrl : string with get, set" Usage="System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -747,6 +758,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviousPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousPageText : string with get, set" Usage="System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -804,6 +816,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.PagerSettings.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : EventHandler " Usage="member this.PropertyChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -837,6 +850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.PagerSettings.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -982,6 +996,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PagerSettings.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="pagerSettings.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1011,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.PagerSettings.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

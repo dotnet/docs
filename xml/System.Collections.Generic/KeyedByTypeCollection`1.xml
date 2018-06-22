@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.KeyedByTypeCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyedByTypeCollection(Of TItem)&#xA;Inherits KeyedCollection(Of Type, TItem)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TItem&gt;&#xA;public ref class KeyedByTypeCollection : System::Collections::ObjectModel::KeyedCollection&lt;Type ^, TItem&gt;" />
+  <TypeSignature Language="F#" Value="type KeyedByTypeCollection&lt;'Item&gt; = class&#xA;    inherit KeyedCollection&lt;Type, 'Item&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (items As IEnumerable(Of TItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyedByTypeCollection(System::Collections::Generic::IEnumerable&lt;TItem&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.KeyedByTypeCollection&lt;'Item&gt; : seq&lt;'Item&gt; -&gt; System.Collections.Generic.KeyedByTypeCollection&lt;'Item&gt;" Usage="new System.Collections.Generic.KeyedByTypeCollection&lt;'Item&gt; items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.Find``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Find(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Find();" />
+      <MemberSignature Language="F#" Value="member this.Find : unit -&gt; 'T" Usage="keyedByTypeCollection.Find " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.FindAll``1" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll(Of T) () As Collection(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::Collection&lt;T&gt; ^ FindAll();" />
+      <MemberSignature Language="F#" Value="member this.FindAll : unit -&gt; System.Collections.ObjectModel.Collection&lt;'T&gt;" Usage="keyedByTypeCollection.FindAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.GetKeyForItem(`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As TItem) As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetKeyForItem(TItem item);" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : 'Item -&gt; Type&#xA;override this.GetKeyForItem : 'Item -&gt; Type" Usage="keyedByTypeCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, kind As TItem)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member InsertItem : int * 'Item -&gt; unit&#xA;override this.InsertItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.InsertItem (index, kind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.Remove``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Remove();" />
+      <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; 'T" Usage="keyedByTypeCollection.Remove " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.RemoveAll``1" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAll(Of T) () As Collection(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::Collection&lt;T&gt; ^ RemoveAll();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : unit -&gt; System.Collections.ObjectModel.Collection&lt;'T&gt;" Usage="keyedByTypeCollection.RemoveAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, kind As TItem)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member SetItem : int * 'Item -&gt; unit&#xA;override this.SetItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.SetItem (index, kind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

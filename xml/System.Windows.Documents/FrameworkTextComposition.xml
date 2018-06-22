@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.FrameworkTextComposition" />
   <TypeSignature Language="VB.NET" Value="Public Class FrameworkTextComposition&#xA;Inherits TextComposition" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkTextComposition : System::Windows::Input::TextComposition" />
+  <TypeSignature Language="F#" Value="type FrameworkTextComposition = class&#xA;    inherit TextComposition" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.FrameworkTextComposition.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Complete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Complete();" />
+      <MemberSignature Language="F#" Value="override this.Complete : unit -&gt; unit" Usage="frameworkTextComposition.Complete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FrameworkTextComposition.CompositionLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompositionLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CompositionLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompositionLength : int" Usage="System.Windows.Documents.FrameworkTextComposition.CompositionLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FrameworkTextComposition.CompositionOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompositionOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CompositionOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompositionOffset : int" Usage="System.Windows.Documents.FrameworkTextComposition.CompositionOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FrameworkTextComposition.ResultLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResultLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResultLength : int" Usage="System.Windows.Documents.FrameworkTextComposition.ResultLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FrameworkTextComposition.ResultOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResultOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResultOffset : int" Usage="System.Windows.Documents.FrameworkTextComposition.ResultOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

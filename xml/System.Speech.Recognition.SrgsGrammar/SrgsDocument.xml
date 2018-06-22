@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsDocument" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsDocument" />
+  <TypeSignature Language="F#" Value="type SrgsDocument = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -124,6 +125,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor(System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As GrammarBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsDocument(System::Speech::Recognition::GrammarBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsDocument : System.Speech.Recognition.GrammarBuilder -&gt; System.Speech.Recognition.SrgsGrammar.SrgsDocument" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsDocument builder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -172,6 +174,7 @@ SrgsDocument document = new SrgsDocument(builder);
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (grammarRootRule As SrgsRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsDocument(System::Speech::Recognition::SrgsGrammar::SrgsRule ^ grammarRootRule);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsDocument : System.Speech.Recognition.SrgsGrammar.SrgsRule -&gt; System.Speech.Recognition.SrgsGrammar.SrgsDocument" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsDocument grammarRootRule" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -245,6 +248,7 @@ recognizer.LoadGrammarAsync(g);
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsDocument(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsDocument : string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsDocument" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsDocument path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -284,6 +288,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (srgsGrammar As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsDocument(System::Xml::XmlReader ^ srgsGrammar);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsDocument : System.Xml.XmlReader -&gt; System.Speech.Recognition.SrgsGrammar.SrgsDocument" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsGrammar" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -325,6 +330,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.AssemblyReferences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyReferences As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ AssemblyReferences { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyReferences : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.AssemblyReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -345,6 +351,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.CodeBehind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeBehind As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ CodeBehind { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeBehind : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.CodeBehind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -365,6 +372,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -412,6 +420,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Debug" />
       <MemberSignature Language="VB.NET" Value="Public Property Debug As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Debug { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Debug : bool with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.Debug" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -432,6 +441,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.ImportNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportNamespaces As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ ImportNamespaces { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportNamespaces : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.ImportNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -452,6 +462,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -472,6 +483,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As SrgsGrammarMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SrgsGrammar::SrgsGrammarMode Mode { System::Speech::Recognition::SrgsGrammar::SrgsGrammarMode get(); void set(System::Speech::Recognition::SrgsGrammar::SrgsGrammarMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -500,6 +512,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -520,6 +533,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.PhoneticAlphabet" />
       <MemberSignature Language="VB.NET" Value="Public Property PhoneticAlphabet As SrgsPhoneticAlphabet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SrgsGrammar::SrgsPhoneticAlphabet PhoneticAlphabet { System::Speech::Recognition::SrgsGrammar::SrgsPhoneticAlphabet get(); void set(System::Speech::Recognition::SrgsGrammar::SrgsPhoneticAlphabet value); };" />
+      <MemberSignature Language="F#" Value="member this.PhoneticAlphabet : System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.PhoneticAlphabet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -551,6 +565,7 @@ if (File.Exists(srgsDocumentFile))
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Root" />
       <MemberSignature Language="VB.NET" Value="Public Property Root As SrgsRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SrgsGrammar::SrgsRule ^ Root { System::Speech::Recognition::SrgsGrammar::SrgsRule ^ get(); void set(System::Speech::Recognition::SrgsGrammar::SrgsRule ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Root : System.Speech.Recognition.SrgsGrammar.SrgsRule with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -596,6 +611,7 @@ document.Root = winnerRule;
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rules As SrgsRulesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SrgsGrammar::SrgsRulesCollection ^ Rules { System::Speech::Recognition::SrgsGrammar::SrgsRulesCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rules : System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -663,6 +679,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Script" />
       <MemberSignature Language="VB.NET" Value="Public Property Script As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Script { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Script : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.Script" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -694,6 +711,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.WriteSrgs(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteSrgs (srgsGrammar As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteSrgs(System::Xml::XmlWriter ^ srgsGrammar);" />
+      <MemberSignature Language="F#" Value="member this.WriteSrgs : System.Xml.XmlWriter -&gt; unit" Usage="srgsDocument.WriteSrgs srgsGrammar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -770,6 +788,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlBase As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ XmlBase { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlBase : Uri with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueCriteria" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQueueCriteria" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQueueCriteria" />
+  <TypeSignature Language="F#" Value="type MessageQueueCriteria = class" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.Category" />
       <MemberSignature Language="VB.NET" Value="Public Property Category As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Category { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.Category : Guid with get, set" Usage="System.Messaging.MessageQueueCriteria.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueCriteria.ClearAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberSignature Language="F#" Value="member this.ClearAll : unit -&gt; unit" Usage="messageQueueCriteria.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.CreatedAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property CreatedAfter As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreatedAfter { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.CreatedAfter : DateTime with get, set" Usage="System.Messaging.MessageQueueCriteria.CreatedAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.CreatedBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property CreatedBefore As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreatedBefore { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.CreatedBefore : DateTime with get, set" Usage="System.Messaging.MessageQueueCriteria.CreatedBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Messaging.MessageQueueCriteria.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Messaging.MessageQueueCriteria.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -268,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.ModifiedAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property ModifiedAfter As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ModifiedAfter { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.ModifiedAfter : DateTime with get, set" Usage="System.Messaging.MessageQueueCriteria.ModifiedAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueCriteria.ModifiedBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property ModifiedBefore As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ModifiedBefore { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.ModifiedBefore : DateTime with get, set" Usage="System.Messaging.MessageQueueCriteria.ModifiedBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

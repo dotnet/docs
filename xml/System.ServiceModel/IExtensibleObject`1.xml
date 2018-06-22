@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IExtensibleObject`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtensibleObject(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : IExtensibleObject&lt;T&gt;public interface class IExtensibleObject" />
+  <TypeSignature Language="F#" Value="type IExtensibleObject&lt;'T (requires 'T :&gt; IExtensibleObject&lt;'T&gt;)&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IExtensibleObject`1.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As IExtensionCollection(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IExtensionCollection&lt;T&gt; ^ Extensions { System::ServiceModel::IExtensionCollection&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.ServiceModel.IExtensionCollection&lt;'T (requires 'T :&gt; System.ServiceModel.IExtensibleObject&lt;'T&gt;)&gt;" Usage="System.ServiceModel.IExtensibleObject&lt;'T (requires 'T :&gt; System.ServiceModel.IExtensibleObject&lt;'T&gt;)&gt;.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

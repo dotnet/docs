@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class GroupingDataflowBlockOptions&#xA;Inherits DataflowBlockOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class GroupingDataflowBlockOptions : System::Threading::Tasks::Dataflow::DataflowBlockOptions" />
+  <TypeSignature Language="F#" Value="type GroupingDataflowBlockOptions = class&#xA;    inherit DataflowBlockOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.Greedy" />
       <MemberSignature Language="VB.NET" Value="Public Property Greedy As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Greedy { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Greedy : bool with get, set" Usage="System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.Greedy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.MaxNumberOfGroups" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxNumberOfGroups As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxNumberOfGroups { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxNumberOfGroups : int64 with get, set" Usage="System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.MaxNumberOfGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

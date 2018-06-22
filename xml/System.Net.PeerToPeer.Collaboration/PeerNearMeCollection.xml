@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerNearMeCollection&#xA;Inherits Collection(Of PeerNearMe)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerNearMeCollection : System::Collections::ObjectModel::Collection&lt;System::Net::PeerToPeer::Collaboration::PeerNearMe ^&gt;" />
+  <TypeSignature Language="F#" Value="type PeerNearMeCollection = class&#xA;    inherit Collection&lt;PeerNearMe&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerNearMe)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As PeerNearMe)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::PeerToPeer::Collaboration::PeerNearMe ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.PeerToPeer.Collaboration.PeerNearMe -&gt; unit" Usage="peerNearMeCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerNearMe)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As PeerNearMe)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::PeerToPeer::Collaboration::PeerNearMe ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.PeerToPeer.Collaboration.PeerNearMe -&gt; unit" Usage="peerNearMeCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="peerNearMeCollection.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

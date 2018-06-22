@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.UriSchemeKeyedCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class UriSchemeKeyedCollection&#xA;Inherits SynchronizedKeyedCollection(Of String, Uri)" />
   <TypeSignature Language="C++ CLI" Value="public ref class UriSchemeKeyedCollection : System::Collections::Generic::SynchronizedKeyedCollection&lt;System::String ^, Uri ^&gt;" />
+  <TypeSignature Language="F#" Value="type UriSchemeKeyedCollection = class&#xA;    inherit SynchronizedKeyedCollection&lt;string, Uri&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.#ctor(System.Uri[])" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray uris As Uri())" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriSchemeKeyedCollection(... cli::array &lt;Uri ^&gt; ^ uris);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.UriSchemeKeyedCollection : Uri[] -&gt; System.ServiceModel.UriSchemeKeyedCollection" Usage="new System.ServiceModel.UriSchemeKeyedCollection uris" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.GetKeyForItem(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As Uri) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(Uri ^ item);" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : Uri -&gt; string" Usage="uriSchemeKeyedCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.InsertItem(System.Int32,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, Uri ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * Uri -&gt; unit" Usage="uriSchemeKeyedCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.SetItem(System.Int32,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, Uri ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * Uri -&gt; unit" Usage="uriSchemeKeyedCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

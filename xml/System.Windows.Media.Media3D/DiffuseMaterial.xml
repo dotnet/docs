@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.DiffuseMaterial" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiffuseMaterial&#xA;Inherits Material" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiffuseMaterial sealed : System::Windows::Media::Media3D::Material" />
+  <TypeSignature Language="F#" Value="type DiffuseMaterial = class&#xA;    inherit Material" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Brush brush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DiffuseMaterial.#ctor(System.Windows.Media.Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiffuseMaterial(System::Windows::Media::Brush ^ brush);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.DiffuseMaterial : System.Windows.Media.Brush -&gt; System.Windows.Media.Media3D.DiffuseMaterial" Usage="new System.Windows.Media.Media3D.DiffuseMaterial brush" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.DiffuseMaterial.AmbientColor" />
       <MemberSignature Language="VB.NET" Value="Public Property AmbientColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color AmbientColor { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.AmbientColor : System.Windows.Media.Color with get, set" Usage="System.Windows.Media.Media3D.DiffuseMaterial.AmbientColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.DiffuseMaterial.AmbientColorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AmbientColorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AmbientColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AmbientColorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.DiffuseMaterial.AmbientColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.DiffuseMaterial.Brush" />
       <MemberSignature Language="VB.NET" Value="Public Property Brush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Brush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Brush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Media.Media3D.DiffuseMaterial.Brush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.DiffuseMaterial.BrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.DiffuseMaterial.BrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DiffuseMaterial.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As DiffuseMaterial" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::DiffuseMaterial ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.DiffuseMaterial" Usage="diffuseMaterial.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DiffuseMaterial.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As DiffuseMaterial" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::DiffuseMaterial ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.DiffuseMaterial" Usage="diffuseMaterial.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.DiffuseMaterial.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color Color { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Windows.Media.Color with get, set" Usage="System.Windows.Media.Media3D.DiffuseMaterial.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.DiffuseMaterial.ColorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.DiffuseMaterial.ColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -288,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.DiffuseMaterial.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="diffuseMaterial.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

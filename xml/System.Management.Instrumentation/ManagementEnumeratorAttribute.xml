@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementEnumeratorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementEnumeratorAttribute&#xA;Inherits ManagementNewInstanceAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementEnumeratorAttribute sealed : System::Management::Instrumentation::ManagementNewInstanceAttribute" />
+  <TypeSignature Language="F#" Value="type ManagementEnumeratorAttribute = class&#xA;    inherit ManagementNewInstanceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@ public static IEnumerable Enumerate()
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementEnumeratorAttribute.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Property Schema As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Schema { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : Type with get, set" Usage="System.Management.Instrumentation.ManagementEnumeratorAttribute.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartImageType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChartImageType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChartImageType" />
+  <TypeSignature Language="F#" Value="type ChartImageType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageType.Bmp" />
       <MemberSignature Language="VB.NET" Value="Bmp" />
       <MemberSignature Language="C++ CLI" Value="Bmp" />
+      <MemberSignature Language="F#" Value="Bmp = 0" Usage="System.Web.UI.DataVisualization.Charting.ChartImageType.Bmp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageType.Emf" />
       <MemberSignature Language="VB.NET" Value="Emf" />
       <MemberSignature Language="C++ CLI" Value="Emf" />
+      <MemberSignature Language="F#" Value="Emf = 3" Usage="System.Web.UI.DataVisualization.Charting.ChartImageType.Emf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageType.Jpeg" />
       <MemberSignature Language="VB.NET" Value="Jpeg" />
       <MemberSignature Language="C++ CLI" Value="Jpeg" />
+      <MemberSignature Language="F#" Value="Jpeg = 1" Usage="System.Web.UI.DataVisualization.Charting.ChartImageType.Jpeg" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageType.Png" />
       <MemberSignature Language="VB.NET" Value="Png" />
       <MemberSignature Language="C++ CLI" Value="Png" />
+      <MemberSignature Language="F#" Value="Png = 2" Usage="System.Web.UI.DataVisualization.Charting.ChartImageType.Png" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

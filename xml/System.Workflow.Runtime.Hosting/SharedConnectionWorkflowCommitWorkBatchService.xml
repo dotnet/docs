@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService" />
   <TypeSignature Language="VB.NET" Value="Public Class SharedConnectionWorkflowCommitWorkBatchService&#xA;Inherits WorkflowCommitWorkBatchService" />
   <TypeSignature Language="C++ CLI" Value="public ref class SharedConnectionWorkflowCommitWorkBatchService : System::Workflow::Runtime::Hosting::WorkflowCommitWorkBatchService" />
+  <TypeSignature Language="F#" Value="type SharedConnectionWorkflowCommitWorkBatchService = class&#xA;    inherit WorkflowCommitWorkBatchService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.#ctor(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SharedConnectionWorkflowCommitWorkBatchService(System::Collections::Specialized::NameValueCollection ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService : System.Collections.Specialized.NameValueCollection -&gt; System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService" Usage="new System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService parameters" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SharedConnectionWorkflowCommitWorkBatchService(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService : string -&gt; System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService" Usage="new System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CommitWorkBatch(class System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService/CommitWorkBatchCallback commitWorkBatchCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.CommitWorkBatch(System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CommitWorkBatch(System::Workflow::Runtime::Hosting::WorkflowCommitWorkBatchService::CommitWorkBatchCallback ^ commitWorkBatchCallback);" />
+      <MemberSignature Language="F#" Value="override this.CommitWorkBatch : System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback -&gt; unit" Usage="sharedConnectionWorkflowCommitWorkBatchService.CommitWorkBatch commitWorkBatchCallback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.EnableRetries" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableRetries As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableRetries { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableRetries : bool with get, set" Usage="System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.EnableRetries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.OnStopped" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStopped ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnStopped();" />
+      <MemberSignature Language="F#" Value="override this.OnStopped : unit -&gt; unit" Usage="sharedConnectionWorkflowCommitWorkBatchService.OnStopped " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.Start" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Start();" />
+      <MemberSignature Language="F#" Value="override this.Start : unit -&gt; unit" Usage="sharedConnectionWorkflowCommitWorkBatchService.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

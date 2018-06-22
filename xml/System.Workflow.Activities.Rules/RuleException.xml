@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleException" />
   <TypeSignature Language="VB.NET" Value="Public Class RuleException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleException : Exception" />
+  <TypeSignature Language="F#" Value="type RuleException = class&#xA;    inherit Exception&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleException : string -&gt; System.Workflow.Activities.Rules.RuleException" Usage="new System.Workflow.Activities.Rules.RuleException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (serializeInfo As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; RuleException(System::Runtime::Serialization::SerializationInfo ^ serializeInfo, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Workflow.Activities.Rules.RuleException" Usage="new System.Workflow.Activities.Rules.RuleException (serializeInfo, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, ex As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleException(System::String ^ message, Exception ^ ex);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleException : string * Exception -&gt; System.Workflow.Activities.Rules.RuleException" Usage="new System.Workflow.Activities.Rules.RuleException (message, ex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

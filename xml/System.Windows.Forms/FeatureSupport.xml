@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FeatureSupport" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FeatureSupport&#xA;Implements IFeatureSupport" />
   <TypeSignature Language="C++ CLI" Value="public ref class FeatureSupport abstract : System::Windows::Forms::IFeatureSupport" />
+  <TypeSignature Language="F#" Value="type FeatureSupport = class&#xA;    interface IFeatureSupport" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetVersionPresent (feature As Object) As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Version ^ GetVersionPresent(System::Object ^ feature);" />
+      <MemberSignature Language="F#" Value="abstract member GetVersionPresent : obj -&gt; Version" Usage="featureSupport.GetVersionPresent feature" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IFeatureSupport.GetVersionPresent(System.Object)</InterfaceMember>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.GetVersionPresent(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetVersionPresent (featureClassName As String, featureConstName As String) As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Version ^ GetVersionPresent(System::String ^ featureClassName, System::String ^ featureConstName);" />
+      <MemberSignature Language="F#" Value="static member GetVersionPresent : string * string -&gt; Version" Usage="System.Windows.Forms.FeatureSupport.GetVersionPresent (featureClassName, featureConstName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.IsPresent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsPresent (feature As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsPresent(System::Object ^ feature);" />
+      <MemberSignature Language="F#" Value="abstract member IsPresent : obj -&gt; bool&#xA;override this.IsPresent : obj -&gt; bool" Usage="featureSupport.IsPresent feature" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IFeatureSupport.IsPresent(System.Object)</InterfaceMember>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.IsPresent(System.Object,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsPresent (feature As Object, minimumVersion As Version) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsPresent(System::Object ^ feature, Version ^ minimumVersion);" />
+      <MemberSignature Language="F#" Value="abstract member IsPresent : obj * Version -&gt; bool&#xA;override this.IsPresent : obj * Version -&gt; bool" Usage="featureSupport.IsPresent (feature, minimumVersion)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IFeatureSupport.IsPresent(System.Object,System.Version)</InterfaceMember>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsPresent (featureClassName As String, featureConstName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPresent(System::String ^ featureClassName, System::String ^ featureConstName);" />
+      <MemberSignature Language="F#" Value="static member IsPresent : string * string -&gt; bool" Usage="System.Windows.Forms.FeatureSupport.IsPresent (featureClassName, featureConstName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FeatureSupport.IsPresent(System.String,System.String,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsPresent (featureClassName As String, featureConstName As String, minimumVersion As Version) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPresent(System::String ^ featureClassName, System::String ^ featureConstName, Version ^ minimumVersion);" />
+      <MemberSignature Language="F#" Value="static member IsPresent : string * string * Version -&gt; bool" Usage="System.Windows.Forms.FeatureSupport.IsPresent (featureClassName, featureConstName, minimumVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

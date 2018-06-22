@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlPaint" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlPaint" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlPaint sealed" />
+  <TypeSignature Language="F#" Value="type ControlPaint = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlPaint.ContrastControlDark" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContrastControlDark As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ContrastControlDark { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContrastControlDark : System.Drawing.Color" Usage="System.Windows.Forms.ControlPaint.ContrastControlDark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateHBitmap16Bit(class System.Drawing.Bitmap bitmap, valuetype System.Drawing.Color background) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.CreateHBitmap16Bit(System.Drawing.Bitmap,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CreateHBitmap16Bit(System::Drawing::Bitmap ^ bitmap, System::Drawing::Color background);" />
+      <MemberSignature Language="F#" Value="static member CreateHBitmap16Bit : System.Drawing.Bitmap * System.Drawing.Color -&gt; nativeint" Usage="System.Windows.Forms.ControlPaint.CreateHBitmap16Bit (bitmap, background)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateHBitmapColorMask(class System.Drawing.Bitmap bitmap, native int monochromeMask) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.CreateHBitmapColorMask(System.Drawing.Bitmap,System.IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CreateHBitmapColorMask(System::Drawing::Bitmap ^ bitmap, IntPtr monochromeMask);" />
+      <MemberSignature Language="F#" Value="static member CreateHBitmapColorMask : System.Drawing.Bitmap * nativeint -&gt; nativeint" Usage="System.Windows.Forms.ControlPaint.CreateHBitmapColorMask (bitmap, monochromeMask)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateHBitmapTransparencyMask(class System.Drawing.Bitmap bitmap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.CreateHBitmapTransparencyMask(System.Drawing.Bitmap)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CreateHBitmapTransparencyMask(System::Drawing::Bitmap ^ bitmap);" />
+      <MemberSignature Language="F#" Value="static member CreateHBitmapTransparencyMask : System.Drawing.Bitmap -&gt; nativeint" Usage="System.Windows.Forms.ControlPaint.CreateHBitmapTransparencyMask bitmap" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.Dark(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dark (baseColor As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color Dark(System::Drawing::Color baseColor);" />
+      <MemberSignature Language="F#" Value="static member Dark : System.Drawing.Color -&gt; System.Drawing.Color" Usage="System.Windows.Forms.ControlPaint.Dark baseColor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.Dark(System.Drawing.Color,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dark (baseColor As Color, percOfDarkDark As Single) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color Dark(System::Drawing::Color baseColor, float percOfDarkDark);" />
+      <MemberSignature Language="F#" Value="static member Dark : System.Drawing.Color * single -&gt; System.Drawing.Color" Usage="System.Windows.Forms.ControlPaint.Dark (baseColor, percOfDarkDark)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DarkDark(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DarkDark (baseColor As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color DarkDark(System::Drawing::Color baseColor);" />
+      <MemberSignature Language="F#" Value="static member DarkDark : System.Drawing.Color -&gt; System.Drawing.Color" Usage="System.Windows.Forms.ControlPaint.DarkDark baseColor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -269,6 +277,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.Color color, valuetype System.Windows.Forms.ButtonBorderStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawBorder(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Windows.Forms.ButtonBorderStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBorder(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle bounds, System::Drawing::Color color, System::Windows::Forms::ButtonBorderStyle style);" />
+      <MemberSignature Language="F#" Value="static member DrawBorder : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Color * System.Windows.Forms.ButtonBorderStyle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawBorder (graphics, bounds, color, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -308,6 +317,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.Color leftColor, int32 leftWidth, valuetype System.Windows.Forms.ButtonBorderStyle leftStyle, valuetype System.Drawing.Color topColor, int32 topWidth, valuetype System.Windows.Forms.ButtonBorderStyle topStyle, valuetype System.Drawing.Color rightColor, int32 rightWidth, valuetype System.Windows.Forms.ButtonBorderStyle rightStyle, valuetype System.Drawing.Color bottomColor, int32 bottomWidth, valuetype System.Windows.Forms.ButtonBorderStyle bottomStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawBorder(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Int32,System.Windows.Forms.ButtonBorderStyle,System.Drawing.Color,System.Int32,System.Windows.Forms.ButtonBorderStyle,System.Drawing.Color,System.Int32,System.Windows.Forms.ButtonBorderStyle,System.Drawing.Color,System.Int32,System.Windows.Forms.ButtonBorderStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBorder(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle bounds, System::Drawing::Color leftColor, int leftWidth, System::Windows::Forms::ButtonBorderStyle leftStyle, System::Drawing::Color topColor, int topWidth, System::Windows::Forms::ButtonBorderStyle topStyle, System::Drawing::Color rightColor, int rightWidth, System::Windows::Forms::ButtonBorderStyle rightStyle, System::Drawing::Color bottomColor, int bottomWidth, System::Windows::Forms::ButtonBorderStyle bottomStyle);" />
+      <MemberSignature Language="F#" Value="static member DrawBorder : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Color * int * System.Windows.Forms.ButtonBorderStyle * System.Drawing.Color * int * System.Windows.Forms.ButtonBorderStyle * System.Drawing.Color * int * System.Windows.Forms.ButtonBorderStyle * System.Drawing.Color * int * System.Windows.Forms.ButtonBorderStyle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawBorder (graphics, bounds, leftColor, leftWidth, leftStyle, topColor, topWidth, topStyle, rightColor, rightWidth, rightStyle, bottomColor, bottomWidth, bottomStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -377,6 +387,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawBorder3D(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBorder3D(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle);" />
+      <MemberSignature Language="F#" Value="static member DrawBorder3D : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawBorder3D (graphics, rectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -419,6 +430,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.Border3DStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawBorder3D(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.Border3DStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBorder3D(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::Border3DStyle style);" />
+      <MemberSignature Language="F#" Value="static member DrawBorder3D : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.Border3DStyle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawBorder3D (graphics, rectangle, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -458,6 +470,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.Border3DStyle style, valuetype System.Windows.Forms.Border3DSide sides) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawBorder3D(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.Border3DStyle,System.Windows.Forms.Border3DSide)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBorder3D(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::Border3DStyle style, System::Windows::Forms::Border3DSide sides);" />
+      <MemberSignature Language="F#" Value="static member DrawBorder3D : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.Border3DStyle * System.Windows.Forms.Border3DSide -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawBorder3D (graphics, rectangle, style, sides)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -500,6 +513,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawBorder3D(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBorder3D(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height);" />
+      <MemberSignature Language="F#" Value="static member DrawBorder3D : System.Drawing.Graphics * int * int * int * int -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawBorder3D (graphics, x, y, width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -546,6 +560,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.Border3DStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawBorder3D(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.Border3DStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBorder3D(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::Border3DStyle style);" />
+      <MemberSignature Language="F#" Value="static member DrawBorder3D : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.Border3DStyle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawBorder3D (graphics, x, y, width, height, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -590,6 +605,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.Border3DStyle style, valuetype System.Windows.Forms.Border3DSide sides) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawBorder3D(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.Border3DStyle,System.Windows.Forms.Border3DSide)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBorder3D(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::Border3DStyle style, System::Windows::Forms::Border3DSide sides);" />
+      <MemberSignature Language="F#" Value="static member DrawBorder3D : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.Border3DStyle * System.Windows.Forms.Border3DSide -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawBorder3D (graphics, x, y, width, height, style, sides)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -646,6 +662,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawButton (graphics, rectangle, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -673,6 +690,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawButton(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawButton (graphics, x, y, width, height, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -725,6 +743,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawCaptionButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.CaptionButton button, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawCaptionButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CaptionButton,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawCaptionButton(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::CaptionButton button, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawCaptionButton : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.CaptionButton * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawCaptionButton (graphics, rectangle, button, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -765,6 +784,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawCaptionButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.CaptionButton button, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawCaptionButton(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.CaptionButton,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawCaptionButton(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::CaptionButton button, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawCaptionButton : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.CaptionButton * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawCaptionButton (graphics, x, y, width, height, button, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -820,6 +840,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawCheckBox(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawCheckBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawCheckBox(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawCheckBox : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawCheckBox (graphics, rectangle, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -846,6 +867,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawCheckBox(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawCheckBox(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawCheckBox(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawCheckBox : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawCheckBox (graphics, x, y, width, height, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -887,6 +909,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawComboButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawComboButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawComboButton(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawComboButton : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawComboButton (graphics, rectangle, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -913,6 +936,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawComboButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawComboButton(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawComboButton(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawComboButton : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawComboButton (graphics, x, y, width, height, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -945,6 +969,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawContainerGrabHandle(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawContainerGrabHandle(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawContainerGrabHandle(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle bounds);" />
+      <MemberSignature Language="F#" Value="static member DrawContainerGrabHandle : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawContainerGrabHandle (graphics, bounds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -985,6 +1010,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawFocusRectangle(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawFocusRectangle(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawFocusRectangle(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle);" />
+      <MemberSignature Language="F#" Value="static member DrawFocusRectangle : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawFocusRectangle (graphics, rectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1025,6 +1051,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawFocusRectangle(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawFocusRectangle(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawFocusRectangle(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member DrawFocusRectangle : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Color * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawFocusRectangle (graphics, rectangle, foreColor, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1069,6 +1096,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawGrabHandle(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, bool primary, bool enabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawGrabHandle(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawGrabHandle(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, bool primary, bool enabled);" />
+      <MemberSignature Language="F#" Value="static member DrawGrabHandle : System.Drawing.Graphics * System.Drawing.Rectangle * bool * bool -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawGrabHandle (graphics, rectangle, primary, enabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1106,6 +1134,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawGrid(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle area, valuetype System.Drawing.Size pixelsBetweenDots, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawGrid(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Size,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawGrid(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle area, System::Drawing::Size pixelsBetweenDots, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member DrawGrid : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Size * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawGrid (graphics, area, pixelsBetweenDots, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1141,6 +1170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawImageDisabled(class System.Drawing.Graphics graphics, class System.Drawing.Image image, int32 x, int32 y, valuetype System.Drawing.Color background) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawImageDisabled(System.Drawing.Graphics,System.Drawing.Image,System.Int32,System.Int32,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawImageDisabled(System::Drawing::Graphics ^ graphics, System::Drawing::Image ^ image, int x, int y, System::Drawing::Color background);" />
+      <MemberSignature Language="F#" Value="static member DrawImageDisabled : System.Drawing.Graphics * System.Drawing.Image * int * int * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawImageDisabled (graphics, image, x, y, background)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1179,6 +1209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawLockedFrame(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, bool primary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawLockedFrame(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawLockedFrame(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, bool primary);" />
+      <MemberSignature Language="F#" Value="static member DrawLockedFrame : System.Drawing.Graphics * System.Drawing.Rectangle * bool -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawLockedFrame (graphics, rectangle, primary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1215,6 +1246,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMenuGlyph(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.MenuGlyph glyph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawMenuGlyph(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.MenuGlyph)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawMenuGlyph(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::MenuGlyph glyph);" />
+      <MemberSignature Language="F#" Value="static member DrawMenuGlyph : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.MenuGlyph -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawMenuGlyph (graphics, rectangle, glyph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1250,6 +1282,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMenuGlyph(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.MenuGlyph glyph, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawMenuGlyph(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.MenuGlyph,System.Drawing.Color,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawMenuGlyph(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::MenuGlyph glyph, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member DrawMenuGlyph : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.MenuGlyph * System.Drawing.Color * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawMenuGlyph (graphics, rectangle, glyph, foreColor, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1289,6 +1322,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMenuGlyph(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.MenuGlyph glyph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawMenuGlyph(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.MenuGlyph)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawMenuGlyph(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::MenuGlyph glyph);" />
+      <MemberSignature Language="F#" Value="static member DrawMenuGlyph : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.MenuGlyph -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawMenuGlyph (graphics, x, y, width, height, glyph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1328,6 +1362,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMenuGlyph(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.MenuGlyph glyph, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawMenuGlyph(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.MenuGlyph,System.Drawing.Color,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawMenuGlyph(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::MenuGlyph glyph, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member DrawMenuGlyph : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.MenuGlyph * System.Drawing.Color * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawMenuGlyph (graphics, x, y, width, height, glyph, foreColor, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1382,6 +1417,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMixedCheckBox(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawMixedCheckBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawMixedCheckBox(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawMixedCheckBox : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawMixedCheckBox (graphics, rectangle, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1409,6 +1445,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMixedCheckBox(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawMixedCheckBox(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawMixedCheckBox(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawMixedCheckBox : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawMixedCheckBox (graphics, x, y, width, height, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1451,6 +1488,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRadioButton(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawRadioButton : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawRadioButton (graphics, rectangle, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1478,6 +1516,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawRadioButton(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRadioButton(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawRadioButton : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawRadioButton (graphics, x, y, width, height, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1510,6 +1549,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawReversibleFrame(valuetype System.Drawing.Rectangle rectangle, valuetype System.Drawing.Color backColor, valuetype System.Windows.Forms.FrameStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawReversibleFrame(System.Drawing.Rectangle,System.Drawing.Color,System.Windows.Forms.FrameStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawReversibleFrame(System::Drawing::Rectangle rectangle, System::Drawing::Color backColor, System::Windows::Forms::FrameStyle style);" />
+      <MemberSignature Language="F#" Value="static member DrawReversibleFrame : System.Drawing.Rectangle * System.Drawing.Color * System.Windows.Forms.FrameStyle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawReversibleFrame (rectangle, backColor, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1556,6 +1596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawReversibleLine(System.Drawing.Point,System.Drawing.Point,System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawReversibleLine (start As Point, end As Point, backColor As Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawReversibleLine(System::Drawing::Point start, System::Drawing::Point end, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member DrawReversibleLine : System.Drawing.Point * System.Drawing.Point * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawReversibleLine (start, end, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1610,6 +1651,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawScrollButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ScrollButton button, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawScrollButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.ScrollButton,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawScrollButton(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle rectangle, System::Windows::Forms::ScrollButton button, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawScrollButton : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.ScrollButton * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawScrollButton (graphics, rectangle, button, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1641,6 +1683,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawScrollButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ScrollButton button, valuetype System.Windows.Forms.ButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawScrollButton(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.ScrollButton,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawScrollButton(System::Drawing::Graphics ^ graphics, int x, int y, int width, int height, System::Windows::Forms::ScrollButton button, System::Windows::Forms::ButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawScrollButton : System.Drawing.Graphics * int * int * int * int * System.Windows.Forms.ScrollButton * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawScrollButton (graphics, x, y, width, height, button, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1678,6 +1721,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawSelectionFrame(class System.Drawing.Graphics graphics, bool active, valuetype System.Drawing.Rectangle outsideRect, valuetype System.Drawing.Rectangle insideRect, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawSelectionFrame(System.Drawing.Graphics,System.Boolean,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawSelectionFrame(System::Drawing::Graphics ^ graphics, bool active, System::Drawing::Rectangle outsideRect, System::Drawing::Rectangle insideRect, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member DrawSelectionFrame : System.Drawing.Graphics * bool * System.Drawing.Rectangle * System.Drawing.Rectangle * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawSelectionFrame (graphics, active, outsideRect, insideRect, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1729,6 +1773,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawSizeGrip(class System.Drawing.Graphics graphics, valuetype System.Drawing.Color backColor, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawSizeGrip(System.Drawing.Graphics,System.Drawing.Color,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawSizeGrip(System::Drawing::Graphics ^ graphics, System::Drawing::Color backColor, System::Drawing::Rectangle bounds);" />
+      <MemberSignature Language="F#" Value="static member DrawSizeGrip : System.Drawing.Graphics * System.Drawing.Color * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawSizeGrip (graphics, backColor, bounds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1766,6 +1811,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawSizeGrip(class System.Drawing.Graphics graphics, valuetype System.Drawing.Color backColor, int32 x, int32 y, int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawSizeGrip(System.Drawing.Graphics,System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawSizeGrip(System::Drawing::Graphics ^ graphics, System::Drawing::Color backColor, int x, int y, int width, int height);" />
+      <MemberSignature Language="F#" Value="static member DrawSizeGrip : System.Drawing.Graphics * System.Drawing.Color * int * int * int * int -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawSizeGrip (graphics, backColor, x, y, width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1818,6 +1864,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawStringDisabled(class System.Drawing.Graphics graphics, string s, class System.Drawing.Font font, valuetype System.Drawing.Color color, valuetype System.Drawing.RectangleF layoutRectangle, class System.Drawing.StringFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawStringDisabled(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawStringDisabled(System::Drawing::Graphics ^ graphics, System::String ^ s, System::Drawing::Font ^ font, System::Drawing::Color color, System::Drawing::RectangleF layoutRectangle, System::Drawing::StringFormat ^ format);" />
+      <MemberSignature Language="F#" Value="static member DrawStringDisabled : System.Drawing.Graphics * string * System.Drawing.Font * System.Drawing.Color * System.Drawing.RectangleF * System.Drawing.StringFormat -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawStringDisabled (graphics, s, font, color, layoutRectangle, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1850,6 +1897,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawStringDisabled(class System.Drawing.IDeviceContext dc, string s, class System.Drawing.Font font, valuetype System.Drawing.Color color, valuetype System.Drawing.Rectangle layoutRectangle, valuetype System.Windows.Forms.TextFormatFlags format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawStringDisabled(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.Rectangle,System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawStringDisabled(System::Drawing::IDeviceContext ^ dc, System::String ^ s, System::Drawing::Font ^ font, System::Drawing::Color color, System::Drawing::Rectangle layoutRectangle, System::Windows::Forms::TextFormatFlags format);" />
+      <MemberSignature Language="F#" Value="static member DrawStringDisabled : System.Drawing.IDeviceContext * string * System.Drawing.Font * System.Drawing.Color * System.Drawing.Rectangle * System.Windows.Forms.TextFormatFlags -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawStringDisabled (dc, s, font, color, layoutRectangle, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1882,6 +1930,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVisualStyleBorder(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.DrawVisualStyleBorder(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVisualStyleBorder(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle bounds);" />
+      <MemberSignature Language="F#" Value="static member DrawVisualStyleBorder : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ControlPaint.DrawVisualStyleBorder (graphics, bounds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1906,6 +1955,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FillReversibleRectangle(valuetype System.Drawing.Rectangle rectangle, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.FillReversibleRectangle(System.Drawing.Rectangle,System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FillReversibleRectangle(System::Drawing::Rectangle rectangle, System::Drawing::Color backColor);" />
+      <MemberSignature Language="F#" Value="static member FillReversibleRectangle : System.Drawing.Rectangle * System.Drawing.Color -&gt; unit" Usage="System.Windows.Forms.ControlPaint.FillReversibleRectangle (rectangle, backColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1959,6 +2009,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.Light(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Light (baseColor As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color Light(System::Drawing::Color baseColor);" />
+      <MemberSignature Language="F#" Value="static member Light : System.Drawing.Color -&gt; System.Drawing.Color" Usage="System.Windows.Forms.ControlPaint.Light baseColor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1990,6 +2041,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.Light(System.Drawing.Color,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Light (baseColor As Color, percOfLightLight As Single) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color Light(System::Drawing::Color baseColor, float percOfLightLight);" />
+      <MemberSignature Language="F#" Value="static member Light : System.Drawing.Color * single -&gt; System.Drawing.Color" Usage="System.Windows.Forms.ControlPaint.Light (baseColor, percOfLightLight)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2023,6 +2075,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlPaint.LightLight(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LightLight (baseColor As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color LightLight(System::Drawing::Color baseColor);" />
+      <MemberSignature Language="F#" Value="static member LightLight : System.Drawing.Color -&gt; System.Drawing.Color" Usage="System.Windows.Forms.ControlPaint.LightLight baseColor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

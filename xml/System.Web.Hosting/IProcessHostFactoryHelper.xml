@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessHostFactoryHelper" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProcessHostFactoryHelper" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProcessHostFactoryHelper" />
+  <TypeSignature Language="F#" Value="type IProcessHostFactoryHelper = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostFactoryHelper.GetProcessHost(System.Web.Hosting.IProcessHostSupportFunctions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProcessHost (functions As IProcessHostSupportFunctions) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetProcessHost(System::Web::Hosting::IProcessHostSupportFunctions ^ functions);" />
+      <MemberSignature Language="F#" Value="abstract member GetProcessHost : System.Web.Hosting.IProcessHostSupportFunctions -&gt; obj" Usage="iProcessHostFactoryHelper.GetProcessHost functions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

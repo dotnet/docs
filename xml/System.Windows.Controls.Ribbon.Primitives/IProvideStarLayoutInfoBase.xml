@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProvideStarLayoutInfoBase" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProvideStarLayoutInfoBase" />
+  <TypeSignature Language="F#" Value="type IProvideStarLayoutInfoBase = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.OnInitializeLayout" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnInitializeLayout ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnInitializeLayout();" />
+      <MemberSignature Language="F#" Value="abstract member OnInitializeLayout : unit -&gt; unit" Usage="iProvideStarLayoutInfoBase.OnInitializeLayout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.TargetElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetElement As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ TargetElement { System::Windows::UIElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetElement : System.Windows.UIElement" Usage="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.TargetElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

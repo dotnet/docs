@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederationMessage" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FederationMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederationMessage abstract" />
+  <TypeSignature Language="F#" Value="type FederationMessage = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (baseUrl As Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FederationMessage(Uri ^ baseUrl);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederationMessage : Uri -&gt; System.IdentityModel.Services.FederationMessage" Usage="new System.IdentityModel.Services.FederationMessage baseUrl" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederationMessage.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.IdentityModel.Services.FederationMessage.BaseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri GetBaseUrl(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.GetBaseUrl(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetBaseUrl(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="static member GetBaseUrl : Uri -&gt; Uri" Usage="System.IdentityModel.Services.FederationMessage.GetBaseUrl uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.GetParameter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParameter (parameter As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetParameter(System::String ^ parameter);" />
+      <MemberSignature Language="F#" Value="member this.GetParameter : string -&gt; string" Usage="federationMessage.GetParameter parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederationMessage.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Parameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.IdentityModel.Services.FederationMessage.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.ParseQueryString(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseQueryString (data As Uri) As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Specialized::NameValueCollection ^ ParseQueryString(Uri ^ data);" />
+      <MemberSignature Language="F#" Value="static member ParseQueryString : Uri -&gt; System.Collections.Specialized.NameValueCollection" Usage="System.IdentityModel.Services.FederationMessage.ParseQueryString data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.RemoveParameter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveParameter (parameter As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveParameter(System::String ^ parameter);" />
+      <MemberSignature Language="F#" Value="member this.RemoveParameter : string -&gt; unit" Usage="federationMessage.RemoveParameter parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.SetParameter(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetParameter (parameter As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParameter(System::String ^ parameter, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetParameter : string * string -&gt; unit" Usage="federationMessage.SetParameter (parameter, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.SetUriParameter(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUriParameter (parameter As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetUriParameter(System::String ^ parameter, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetUriParameter : string * string -&gt; unit" Usage="federationMessage.SetUriParameter (parameter, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -296,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.Validate" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Validate();" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="federationMessage.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -324,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.Write(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Write (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Write(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Write : System.IO.TextWriter -&gt; unit" Usage="federationMessage.Write writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -350,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.WriteFormPost" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteFormPost () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ WriteFormPost();" />
+      <MemberSignature Language="F#" Value="abstract member WriteFormPost : unit -&gt; string&#xA;override this.WriteFormPost : unit -&gt; string" Usage="federationMessage.WriteFormPost " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -371,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.WriteQueryString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteQueryString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ WriteQueryString();" />
+      <MemberSignature Language="F#" Value="abstract member WriteQueryString : unit -&gt; string&#xA;override this.WriteQueryString : unit -&gt; string" Usage="federationMessage.WriteQueryString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.Partitioner`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Partitioner(Of TSource)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSource&gt;&#xA;public ref class Partitioner abstract" />
+  <TypeSignature Language="F#" Value="type Partitioner&lt;'Source&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDynamicPartitions () As IEnumerable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ GetDynamicPartitions();" />
+      <MemberSignature Language="F#" Value="abstract member GetDynamicPartitions : unit -&gt; seq&lt;'Source&gt;&#xA;override this.GetDynamicPartitions : unit -&gt; seq&lt;'Source&gt;" Usage="partitioner.GetDynamicPartitions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPartitions (partitionCount As Integer) As IList(Of IEnumerator(Of TSource))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Collections::Generic::IEnumerator&lt;TSource&gt; ^&gt; ^ GetPartitions(int partitionCount);" />
+      <MemberSignature Language="F#" Value="abstract member GetPartitions : int -&gt; System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;'Source&gt;&gt;" Usage="partitioner.GetPartitions partitionCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsDynamicPartitions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDynamicPartitions { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsDynamicPartitions : bool" Usage="System.Collections.Concurrent.Partitioner&lt;'Source&gt;.SupportsDynamicPartitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>

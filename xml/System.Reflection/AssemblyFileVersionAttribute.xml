@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyFileVersionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyFileVersionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyFileVersionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyFileVersionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyFileVersionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (version As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyFileVersionAttribute(System::String ^ version);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyFileVersionAttribute : string -&gt; System.Reflection.AssemblyFileVersionAttribute" Usage="new System.Reflection.AssemblyFileVersionAttribute version" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyFileVersionAttribute.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.Reflection.AssemblyFileVersionAttribute.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

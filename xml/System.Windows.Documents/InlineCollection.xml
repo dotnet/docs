@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.InlineCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class InlineCollection&#xA;Inherits TextElementCollection(Of Inline)&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class InlineCollection : System::Windows::Documents::TextElementCollection&lt;System::Windows::Documents::Inline ^&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type InlineCollection = class&#xA;    inherit TextElementCollection&lt;Inline&gt;&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; unit" Usage="inlineCollection.Add text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.UIElement uiElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineCollection.Add(System.Windows.UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::UIElement ^ uiElement);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Windows.UIElement -&gt; unit" Usage="inlineCollection.Add uiElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.InlineCollection.FirstInline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstInline As Inline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Inline ^ FirstInline { System::Windows::Documents::Inline ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstInline : System.Windows.Documents.Inline" Usage="System.Windows.Documents.InlineCollection.FirstInline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.InlineCollection.LastInline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastInline As Inline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Inline ^ LastInline { System::Windows::Documents::Inline ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastInline : System.Windows.Documents.Inline" Usage="System.Windows.Documents.InlineCollection.LastInline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

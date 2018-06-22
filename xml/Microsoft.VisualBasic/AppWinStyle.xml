@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.AppWinStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum AppWinStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class AppWinStyle" />
+  <TypeSignature Language="F#" Value="type AppWinStyle = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.Hide" />
       <MemberSignature Language="VB.NET" Value="Hide" />
       <MemberSignature Language="C++ CLI" Value="Hide" />
+      <MemberSignature Language="F#" Value="Hide = 0" Usage="Microsoft.VisualBasic.AppWinStyle.Hide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.MaximizedFocus" />
       <MemberSignature Language="VB.NET" Value="MaximizedFocus" />
       <MemberSignature Language="C++ CLI" Value="MaximizedFocus" />
+      <MemberSignature Language="F#" Value="MaximizedFocus = 3" Usage="Microsoft.VisualBasic.AppWinStyle.MaximizedFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.MinimizedFocus" />
       <MemberSignature Language="VB.NET" Value="MinimizedFocus" />
       <MemberSignature Language="C++ CLI" Value="MinimizedFocus" />
+      <MemberSignature Language="F#" Value="MinimizedFocus = 2" Usage="Microsoft.VisualBasic.AppWinStyle.MinimizedFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.MinimizedNoFocus" />
       <MemberSignature Language="VB.NET" Value="MinimizedNoFocus" />
       <MemberSignature Language="C++ CLI" Value="MinimizedNoFocus" />
+      <MemberSignature Language="F#" Value="MinimizedNoFocus = 6" Usage="Microsoft.VisualBasic.AppWinStyle.MinimizedNoFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.NormalFocus" />
       <MemberSignature Language="VB.NET" Value="NormalFocus" />
       <MemberSignature Language="C++ CLI" Value="NormalFocus" />
+      <MemberSignature Language="F#" Value="NormalFocus = 1" Usage="Microsoft.VisualBasic.AppWinStyle.NormalFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.AppWinStyle.NormalNoFocus" />
       <MemberSignature Language="VB.NET" Value="NormalNoFocus" />
       <MemberSignature Language="C++ CLI" Value="NormalNoFocus" />
+      <MemberSignature Language="F#" Value="NormalNoFocus = 4" Usage="Microsoft.VisualBasic.AppWinStyle.NormalNoFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

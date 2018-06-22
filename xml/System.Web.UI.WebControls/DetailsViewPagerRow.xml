@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewPagerRow" />
   <TypeSignature Language="VB.NET" Value="Public Class DetailsViewPagerRow&#xA;Inherits DetailsViewRow" />
   <TypeSignature Language="C++ CLI" Value="public ref class DetailsViewPagerRow : System::Web::UI::WebControls::DetailsViewRow" />
+  <TypeSignature Language="F#" Value="type DetailsViewPagerRow = class&#xA;    inherit DetailsViewRow&#xA;    interface INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewPagerRow.#ctor(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rowIndex As Integer, rowType As DataControlRowType, rowState As DataControlRowState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DetailsViewPagerRow(int rowIndex, System::Web::UI::WebControls::DataControlRowType rowType, System::Web::UI::WebControls::DataControlRowState rowState);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DetailsViewPagerRow : int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.DetailsViewPagerRow" Usage="new System.Web.UI.WebControls.DetailsViewPagerRow (rowIndex, rowType, rowState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

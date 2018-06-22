@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripRenderer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ToolStripRenderer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripRenderer abstract" />
+  <TypeSignature Language="F#" Value="type ToolStripRenderer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.CreateDisabledImage(System.Drawing.Image)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDisabledImage (normalImage As Image) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ CreateDisabledImage(System::Drawing::Image ^ normalImage);" />
+      <MemberSignature Language="F#" Value="static member CreateDisabledImage : System.Drawing.Image -&gt; System.Drawing.Image" Usage="System.Windows.Forms.ToolStripRenderer.CreateDisabledImage normalImage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawArrow(System.Windows.Forms.ToolStripArrowRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawArrow (e As ToolStripArrowRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawArrow(System::Windows::Forms::ToolStripArrowRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawArrow : System.Windows.Forms.ToolStripArrowRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawArrow e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawButtonBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawDropDownButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawDropDownButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawDropDownButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawDropDownButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawDropDownButtonBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawGrip(System.Windows.Forms.ToolStripGripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawGrip (e As ToolStripGripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawGrip(System::Windows::Forms::ToolStripGripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawGrip : System.Windows.Forms.ToolStripGripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawGrip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawImageMargin(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawImageMargin (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawImageMargin(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawImageMargin : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawImageMargin e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawItemBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawItemBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawItemBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawItemBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawItemCheck(System.Windows.Forms.ToolStripItemImageRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawItemCheck (e As ToolStripItemImageRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawItemCheck(System::Windows::Forms::ToolStripItemImageRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawItemCheck : System.Windows.Forms.ToolStripItemImageRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawItemCheck e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawItemImage(System.Windows.Forms.ToolStripItemImageRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawItemImage (e As ToolStripItemImageRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawItemImage(System::Windows::Forms::ToolStripItemImageRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawItemImage : System.Windows.Forms.ToolStripItemImageRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawItemImage e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -340,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawItemText(System.Windows.Forms.ToolStripItemTextRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawItemText (e As ToolStripItemTextRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawItemText(System::Windows::Forms::ToolStripItemTextRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawItemText : System.Windows.Forms.ToolStripItemTextRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawItemText e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -370,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawLabelBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawLabelBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawLabelBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawLabelBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawLabelBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -400,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawMenuItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawMenuItemBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawMenuItemBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawMenuItemBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawMenuItemBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawOverflowButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawOverflowButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawOverflowButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawOverflowButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawOverflowButtonBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -460,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawSeparator(System.Windows.Forms.ToolStripSeparatorRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawSeparator (e As ToolStripSeparatorRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawSeparator(System::Windows::Forms::ToolStripSeparatorRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawSeparator : System.Windows.Forms.ToolStripSeparatorRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawSeparator e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -490,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawSplitButton(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawSplitButton (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawSplitButton(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawSplitButton : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawSplitButton e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -520,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawStatusStripSizingGrip(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawStatusStripSizingGrip (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawStatusStripSizingGrip(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawStatusStripSizingGrip : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawStatusStripSizingGrip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -543,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawToolStripBackground(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawToolStripBackground (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawToolStripBackground(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawToolStripBackground : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawToolStripBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -573,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawToolStripBorder(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawToolStripBorder (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawToolStripBorder(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawToolStripBorder : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawToolStripBorder e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -603,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawToolStripContentPanelBackground(System.Windows.Forms.ToolStripContentPanelRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawToolStripContentPanelBackground (e As ToolStripContentPanelRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawToolStripContentPanelBackground(System::Windows::Forms::ToolStripContentPanelRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawToolStripContentPanelBackground : System.Windows.Forms.ToolStripContentPanelRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawToolStripContentPanelBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -626,6 +646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawToolStripPanelBackground(System.Windows.Forms.ToolStripPanelRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawToolStripPanelBackground (e As ToolStripPanelRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawToolStripPanelBackground(System::Windows::Forms::ToolStripPanelRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawToolStripPanelBackground : System.Windows.Forms.ToolStripPanelRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawToolStripPanelBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -649,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.DrawToolStripStatusLabelBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawToolStripStatusLabelBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawToolStripStatusLabelBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DrawToolStripStatusLabelBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.DrawToolStripStatusLabelBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -671,6 +693,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Initialize(class System.Windows.Forms.ToolStrip toolStrip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.Initialize(System.Windows.Forms.ToolStrip)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Initialize(System::Windows::Forms::ToolStrip ^ toolStrip);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.Windows.Forms.ToolStrip -&gt; unit&#xA;override this.Initialize : System.Windows.Forms.ToolStrip -&gt; unit" Usage="toolStripRenderer.Initialize toolStrip" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -701,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.InitializeContentPanel(System.Windows.Forms.ToolStripContentPanel)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub InitializeContentPanel (contentPanel As ToolStripContentPanel)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializeContentPanel(System::Windows::Forms::ToolStripContentPanel ^ contentPanel);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeContentPanel : System.Windows.Forms.ToolStripContentPanel -&gt; unit&#xA;override this.InitializeContentPanel : System.Windows.Forms.ToolStripContentPanel -&gt; unit" Usage="toolStripRenderer.InitializeContentPanel contentPanel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -724,6 +748,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.InitializeItem(System.Windows.Forms.ToolStripItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub InitializeItem (item As ToolStripItem)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializeItem(System::Windows::Forms::ToolStripItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeItem : System.Windows.Forms.ToolStripItem -&gt; unit&#xA;override this.InitializeItem : System.Windows.Forms.ToolStripItem -&gt; unit" Usage="toolStripRenderer.InitializeItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -761,6 +786,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitializePanel(class System.Windows.Forms.ToolStripPanel toolStripPanel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.InitializePanel(System.Windows.Forms.ToolStripPanel)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializePanel(System::Windows::Forms::ToolStripPanel ^ toolStripPanel);" />
+      <MemberSignature Language="F#" Value="abstract member InitializePanel : System.Windows.Forms.ToolStripPanel -&gt; unit&#xA;override this.InitializePanel : System.Windows.Forms.ToolStripPanel -&gt; unit" Usage="toolStripRenderer.InitializePanel toolStripPanel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -784,6 +810,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripRenderer.Offset2X" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Offset2X As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected: static int Offset2X;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Offset2X : int" Usage="System.Windows.Forms.ToolStripRenderer.Offset2X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -803,6 +830,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripRenderer.Offset2Y" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Offset2Y As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected: static int Offset2Y;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Offset2Y : int" Usage="System.Windows.Forms.ToolStripRenderer.Offset2Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -822,6 +850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderArrow(System.Windows.Forms.ToolStripArrowRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderArrow (e As ToolStripArrowRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderArrow(System::Windows::Forms::ToolStripArrowRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderArrow : System.Windows.Forms.ToolStripArrowRenderEventArgs -&gt; unit&#xA;override this.OnRenderArrow : System.Windows.Forms.ToolStripArrowRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderArrow e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -857,6 +886,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit&#xA;override this.OnRenderButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderButtonBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -900,6 +930,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderDropDownButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderDropDownButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderDropDownButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderDropDownButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit&#xA;override this.OnRenderDropDownButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderDropDownButtonBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -935,6 +966,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderGrip(System.Windows.Forms.ToolStripGripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderGrip (e As ToolStripGripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderGrip(System::Windows::Forms::ToolStripGripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderGrip : System.Windows.Forms.ToolStripGripRenderEventArgs -&gt; unit&#xA;override this.OnRenderGrip : System.Windows.Forms.ToolStripGripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderGrip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -970,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderImageMargin(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderImageMargin (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderImageMargin(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderImageMargin : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit&#xA;override this.OnRenderImageMargin : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderImageMargin e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1005,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderItemBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderItemBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderItemBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit&#xA;override this.OnRenderItemBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderItemBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1040,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderItemCheck(System.Windows.Forms.ToolStripItemImageRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderItemCheck (e As ToolStripItemImageRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderItemCheck(System::Windows::Forms::ToolStripItemImageRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderItemCheck : System.Windows.Forms.ToolStripItemImageRenderEventArgs -&gt; unit&#xA;override this.OnRenderItemCheck : System.Windows.Forms.ToolStripItemImageRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderItemCheck e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1075,6 +1110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderItemImage(System.Windows.Forms.ToolStripItemImageRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderItemImage (e As ToolStripItemImageRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderItemImage(System::Windows::Forms::ToolStripItemImageRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderItemImage : System.Windows.Forms.ToolStripItemImageRenderEventArgs -&gt; unit&#xA;override this.OnRenderItemImage : System.Windows.Forms.ToolStripItemImageRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderItemImage e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1110,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderItemText(System.Windows.Forms.ToolStripItemTextRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderItemText (e As ToolStripItemTextRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderItemText(System::Windows::Forms::ToolStripItemTextRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderItemText : System.Windows.Forms.ToolStripItemTextRenderEventArgs -&gt; unit&#xA;override this.OnRenderItemText : System.Windows.Forms.ToolStripItemTextRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderItemText e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1145,6 +1182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderLabelBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderLabelBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderLabelBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderLabelBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit&#xA;override this.OnRenderLabelBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderLabelBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1180,6 +1218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderMenuItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderMenuItemBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderMenuItemBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderMenuItemBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit&#xA;override this.OnRenderMenuItemBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderMenuItemBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1215,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderOverflowButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderOverflowButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderOverflowButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderOverflowButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit&#xA;override this.OnRenderOverflowButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderOverflowButtonBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1250,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderSeparator(System.Windows.Forms.ToolStripSeparatorRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderSeparator (e As ToolStripSeparatorRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderSeparator(System::Windows::Forms::ToolStripSeparatorRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderSeparator : System.Windows.Forms.ToolStripSeparatorRenderEventArgs -&gt; unit&#xA;override this.OnRenderSeparator : System.Windows.Forms.ToolStripSeparatorRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderSeparator e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1285,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderSplitButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderSplitButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderSplitButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderSplitButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit&#xA;override this.OnRenderSplitButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderSplitButtonBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1320,6 +1362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderStatusStripSizingGrip(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderStatusStripSizingGrip (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderStatusStripSizingGrip(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderStatusStripSizingGrip : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit&#xA;override this.OnRenderStatusStripSizingGrip : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderStatusStripSizingGrip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1355,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderToolStripBackground (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderToolStripBackground(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderToolStripBackground : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit&#xA;override this.OnRenderToolStripBackground : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderToolStripBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1398,6 +1442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderToolStripBorder (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderToolStripBorder(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderToolStripBorder : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit&#xA;override this.OnRenderToolStripBorder : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderToolStripBorder e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1441,6 +1486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripContentPanelBackground(System.Windows.Forms.ToolStripContentPanelRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderToolStripContentPanelBackground (e As ToolStripContentPanelRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderToolStripContentPanelBackground(System::Windows::Forms::ToolStripContentPanelRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderToolStripContentPanelBackground : System.Windows.Forms.ToolStripContentPanelRenderEventArgs -&gt; unit&#xA;override this.OnRenderToolStripContentPanelBackground : System.Windows.Forms.ToolStripContentPanelRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderToolStripContentPanelBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1476,6 +1522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripPanelBackground(System.Windows.Forms.ToolStripPanelRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderToolStripPanelBackground (e As ToolStripPanelRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderToolStripPanelBackground(System::Windows::Forms::ToolStripPanelRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderToolStripPanelBackground : System.Windows.Forms.ToolStripPanelRenderEventArgs -&gt; unit&#xA;override this.OnRenderToolStripPanelBackground : System.Windows.Forms.ToolStripPanelRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderToolStripPanelBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1511,6 +1558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripStatusLabelBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRenderToolStripStatusLabelBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRenderToolStripStatusLabelBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRenderToolStripStatusLabelBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit&#xA;override this.OnRenderToolStripStatusLabelBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripRenderer.OnRenderToolStripStatusLabelBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1546,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderArrow" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderArrow As ToolStripArrowRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripArrowRenderEventHandler ^ RenderArrow;" />
+      <MemberSignature Language="F#" Value="member this.RenderArrow : System.Windows.Forms.ToolStripArrowRenderEventHandler " Usage="member this.RenderArrow : System.Windows.Forms.ToolStripArrowRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1582,6 +1631,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderButtonBackground As ToolStripItemRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemRenderEventHandler ^ RenderButtonBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderButtonBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " Usage="member this.RenderButtonBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1618,6 +1668,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderDropDownButtonBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderDropDownButtonBackground As ToolStripItemRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemRenderEventHandler ^ RenderDropDownButtonBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderDropDownButtonBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " Usage="member this.RenderDropDownButtonBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1654,6 +1705,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderGrip" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderGrip As ToolStripGripRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripGripRenderEventHandler ^ RenderGrip;" />
+      <MemberSignature Language="F#" Value="member this.RenderGrip : System.Windows.Forms.ToolStripGripRenderEventHandler " Usage="member this.RenderGrip : System.Windows.Forms.ToolStripGripRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1690,6 +1742,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderImageMargin" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderImageMargin As ToolStripRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripRenderEventHandler ^ RenderImageMargin;" />
+      <MemberSignature Language="F#" Value="member this.RenderImageMargin : System.Windows.Forms.ToolStripRenderEventHandler " Usage="member this.RenderImageMargin : System.Windows.Forms.ToolStripRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1726,6 +1779,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderItemBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderItemBackground As ToolStripItemRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemRenderEventHandler ^ RenderItemBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderItemBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " Usage="member this.RenderItemBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1762,6 +1816,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderItemCheck" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderItemCheck As ToolStripItemImageRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemImageRenderEventHandler ^ RenderItemCheck;" />
+      <MemberSignature Language="F#" Value="member this.RenderItemCheck : System.Windows.Forms.ToolStripItemImageRenderEventHandler " Usage="member this.RenderItemCheck : System.Windows.Forms.ToolStripItemImageRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1798,6 +1853,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderItemImage" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderItemImage As ToolStripItemImageRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemImageRenderEventHandler ^ RenderItemImage;" />
+      <MemberSignature Language="F#" Value="member this.RenderItemImage : System.Windows.Forms.ToolStripItemImageRenderEventHandler " Usage="member this.RenderItemImage : System.Windows.Forms.ToolStripItemImageRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1834,6 +1890,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderItemText" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderItemText As ToolStripItemTextRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemTextRenderEventHandler ^ RenderItemText;" />
+      <MemberSignature Language="F#" Value="member this.RenderItemText : System.Windows.Forms.ToolStripItemTextRenderEventHandler " Usage="member this.RenderItemText : System.Windows.Forms.ToolStripItemTextRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1870,6 +1927,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderLabelBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderLabelBackground As ToolStripItemRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemRenderEventHandler ^ RenderLabelBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderLabelBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " Usage="member this.RenderLabelBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1906,6 +1964,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderMenuItemBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderMenuItemBackground As ToolStripItemRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemRenderEventHandler ^ RenderMenuItemBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderMenuItemBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " Usage="member this.RenderMenuItemBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1942,6 +2001,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderOverflowButtonBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderOverflowButtonBackground As ToolStripItemRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemRenderEventHandler ^ RenderOverflowButtonBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderOverflowButtonBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " Usage="member this.RenderOverflowButtonBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1978,6 +2038,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderSeparator As ToolStripSeparatorRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripSeparatorRenderEventHandler ^ RenderSeparator;" />
+      <MemberSignature Language="F#" Value="member this.RenderSeparator : System.Windows.Forms.ToolStripSeparatorRenderEventHandler " Usage="member this.RenderSeparator : System.Windows.Forms.ToolStripSeparatorRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2014,6 +2075,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderSplitButtonBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderSplitButtonBackground As ToolStripItemRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemRenderEventHandler ^ RenderSplitButtonBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderSplitButtonBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " Usage="member this.RenderSplitButtonBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2050,6 +2112,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderStatusStripSizingGrip" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderStatusStripSizingGrip As ToolStripRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripRenderEventHandler ^ RenderStatusStripSizingGrip;" />
+      <MemberSignature Language="F#" Value="member this.RenderStatusStripSizingGrip : System.Windows.Forms.ToolStripRenderEventHandler " Usage="member this.RenderStatusStripSizingGrip : System.Windows.Forms.ToolStripRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2086,6 +2149,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderToolStripBackground As ToolStripRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripRenderEventHandler ^ RenderToolStripBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderToolStripBackground : System.Windows.Forms.ToolStripRenderEventHandler " Usage="member this.RenderToolStripBackground : System.Windows.Forms.ToolStripRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2122,6 +2186,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripBorder" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderToolStripBorder As ToolStripRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripRenderEventHandler ^ RenderToolStripBorder;" />
+      <MemberSignature Language="F#" Value="member this.RenderToolStripBorder : System.Windows.Forms.ToolStripRenderEventHandler " Usage="member this.RenderToolStripBorder : System.Windows.Forms.ToolStripRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2158,6 +2223,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderToolStripContentPanelBackground As ToolStripContentPanelRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripContentPanelRenderEventHandler ^ RenderToolStripContentPanelBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderToolStripContentPanelBackground : System.Windows.Forms.ToolStripContentPanelRenderEventHandler " Usage="member this.RenderToolStripContentPanelBackground : System.Windows.Forms.ToolStripContentPanelRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2194,6 +2260,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderToolStripPanelBackground As ToolStripPanelRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripPanelRenderEventHandler ^ RenderToolStripPanelBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderToolStripPanelBackground : System.Windows.Forms.ToolStripPanelRenderEventHandler " Usage="member this.RenderToolStripPanelBackground : System.Windows.Forms.ToolStripPanelRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2230,6 +2297,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripStatusLabelBackground" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RenderToolStripStatusLabelBackground As ToolStripItemRenderEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ToolStripItemRenderEventHandler ^ RenderToolStripStatusLabelBackground;" />
+      <MemberSignature Language="F#" Value="member this.RenderToolStripStatusLabelBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " Usage="member this.RenderToolStripStatusLabelBackground : System.Windows.Forms.ToolStripItemRenderEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2266,6 +2334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.ScaleArrowOffsetsIfNeeded" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Sub ScaleArrowOffsetsIfNeeded ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void ScaleArrowOffsetsIfNeeded();" />
+      <MemberSignature Language="F#" Value="static member ScaleArrowOffsetsIfNeeded : unit -&gt; unit" Usage="System.Windows.Forms.ToolStripRenderer.ScaleArrowOffsetsIfNeeded " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

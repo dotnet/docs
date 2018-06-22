@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Conversions" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Conversions" />
   <TypeSignature Language="C++ CLI" Value="public ref class Conversions sealed" />
+  <TypeSignature Language="F#" Value="type Conversions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ChangeType (Expression As Object, TargetType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ChangeType(System::Object ^ Expression, Type ^ TargetType);" />
+      <MemberSignature Language="F#" Value="static member ChangeType : obj * Type -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType (Expression, TargetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.FallbackUserDefinedConversion(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FallbackUserDefinedConversion (Expression As Object, TargetType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ FallbackUserDefinedConversion(System::Object ^ Expression, Type ^ TargetType);" />
+      <MemberSignature Language="F#" Value="static member FallbackUserDefinedConversion : obj * Type -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.FallbackUserDefinedConversion (Expression, TargetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.FromCharAndCount(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromCharAndCount (Value As Char, Count As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromCharAndCount(char Value, int Count);" />
+      <MemberSignature Language="F#" Value="static member FromCharAndCount : char * int -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.FromCharAndCount (Value, Count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.FromCharArray(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromCharArray (Value As Char()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromCharArray(cli::array &lt;char&gt; ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromCharArray : char[] -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.FromCharArray Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.FromCharArraySubset(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromCharArraySubset (Value As Char(), StartIndex As Integer, Length As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromCharArraySubset(cli::array &lt;char&gt; ^ Value, int StartIndex, int Length);" />
+      <MemberSignature Language="F#" Value="static member FromCharArraySubset : char[] * int * int -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.FromCharArraySubset (Value, StartIndex, Length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (Value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToBoolean : obj -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (Value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToBoolean : string -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (Value As Object) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToByte : obj -&gt; byte" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToByte Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (Value As String) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToByte : string -&gt; byte" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToByte Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (Value As Object) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToChar : obj -&gt; char" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToChar Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -313,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (Value As String) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToChar : string -&gt; char" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToChar Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -346,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToCharArrayRankOne (Value As Object) As Char()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;char&gt; ^ ToCharArrayRankOne(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToCharArrayRankOne : obj -&gt; char[]" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -370,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToCharArrayRankOne (Value As String) As Char()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;char&gt; ^ ToCharArrayRankOne(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToCharArrayRankOne : string -&gt; char[]" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -403,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDate (Value As Object) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDate(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToDate : obj -&gt; DateTime" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToDate Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -427,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDate (Value As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDate(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToDate : string -&gt; DateTime" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToDate Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -460,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (Value As Boolean) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(bool Value);" />
+      <MemberSignature Language="F#" Value="static member ToDecimal : bool -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -484,6 +501,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (Value As Object) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToDecimal : obj -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -508,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (Value As String) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToDecimal : string -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -541,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (Value As Object) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToDouble : obj -&gt; double" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -565,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (Value As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToDouble : string -&gt; double" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -589,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToGenericParameter``1(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToGenericParameter(Of T) (Value As Object) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T ToGenericParameter(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToGenericParameter : obj -&gt; 'T" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToGenericParameter Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -626,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInteger (Value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInteger(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToInteger : obj -&gt; int" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -650,6 +673,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInteger (Value As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInteger(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToInteger : string -&gt; int" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -683,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToLong (Value As Object) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToLong(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToLong : obj -&gt; int64" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToLong Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -707,6 +732,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToLong (Value As String) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToLong(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToLong : string -&gt; int64" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToLong Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -740,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (Value As Object) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToSByte : obj -&gt; sbyte" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -770,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (Value As String) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToSByte : string -&gt; sbyte" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -809,6 +837,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToShort (Value As Object) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToShort(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToShort : obj -&gt; int16" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToShort Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -833,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToShort (Value As String) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToShort(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToShort : string -&gt; int16" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToShort Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -866,6 +896,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (Value As Object) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToSingle : obj -&gt; single" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -890,6 +921,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (Value As String) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToSingle : string -&gt; single" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -923,6 +955,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(bool Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : bool -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -947,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Byte) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Byte Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : byte -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -971,6 +1005,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(char Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : char -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -995,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As DateTime) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : DateTime -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1019,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Decimal) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Decimal Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : decimal -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1043,6 +1080,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(double Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : double -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1067,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Short) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(short Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : int16 -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1091,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(int Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : int -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1115,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Long) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(long Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : int64 -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1139,6 +1180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : obj -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1163,6 +1205,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Single) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(float Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : single -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1187,6 +1230,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As UInteger) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt32 Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : uint32 -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1217,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As ULong) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt64 Value);" />
+      <MemberSignature Language="F#" Value="static member ToString : uint64 -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1247,6 +1292,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Decimal, NumberFormat As NumberFormatInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Decimal Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member ToString : decimal * System.Globalization.NumberFormatInfo -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1273,6 +1319,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Double, NumberFormat As NumberFormatInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(double Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member ToString : double * System.Globalization.NumberFormatInfo -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1299,6 +1346,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (Value As Single, NumberFormat As NumberFormatInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(float Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member ToString : single * System.Globalization.NumberFormatInfo -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToString (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1334,6 +1382,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInteger (Value As Object) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInteger(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToUInteger : obj -&gt; uint32" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1364,6 +1413,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInteger (Value As String) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInteger(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToUInteger : string -&gt; uint32" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1403,6 +1453,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToULong (Value As Object) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToULong(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToULong : obj -&gt; uint64" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToULong Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1433,6 +1484,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToULong (Value As String) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToULong(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToULong : string -&gt; uint64" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToULong Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1472,6 +1524,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUShort (Value As Object) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUShort(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToUShort : obj -&gt; uint16" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1502,6 +1555,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUShort (Value As String) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUShort(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member ToUShort : string -&gt; uint16" Usage="Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

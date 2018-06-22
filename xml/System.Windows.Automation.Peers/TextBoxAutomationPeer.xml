@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TextBoxAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class TextBoxAutomationPeer&#xA;Inherits TextAutomationPeer&#xA;Implements IValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextBoxAutomationPeer : System::Windows::Automation::Peers::TextAutomationPeer, System::Windows::Automation::Provider::IValueProvider" />
+  <TypeSignature Language="F#" Value="type TextBoxAutomationPeer = class&#xA;    inherit TextAutomationPeer&#xA;    interface IValueProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBoxAutomationPeer.#ctor(System.Windows.Controls.TextBox)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As TextBox)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextBoxAutomationPeer(System::Windows::Controls::TextBox ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.TextBoxAutomationPeer : System.Windows.Controls.TextBox -&gt; System.Windows.Automation.Peers.TextBoxAutomationPeer" Usage="new System.Windows.Automation.Peers.TextBoxAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBoxAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="textBoxAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBoxAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="textBoxAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="textBoxAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TextBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IValueProvider.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IValueProvider.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.TextBoxAutomationPeer.System.Windows.Automation.Provider.IValueProvider.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IValueProvider.IsReadOnly</InterfaceMember>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TextBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Value As String Implements IValueProvider.Value" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Windows.Automation.Provider.IValueProvider.Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.TextBoxAutomationPeer.System.Windows.Automation.Provider.IValueProvider.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IValueProvider.Value</InterfaceMember>

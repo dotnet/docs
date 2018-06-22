@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Location" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Location" />
   <TypeSignature Language="C++ CLI" Value="public ref class Location abstract" />
+  <TypeSignature Language="F#" Value="type Location = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Location.LocationType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property LocationType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ LocationType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocationType : Type" Usage="System.Activities.Location.LocationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Location.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Activities.Location.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Location.ValueCore" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Property ValueCore As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::Object ^ ValueCore { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValueCore : obj with get, set" Usage="System.Activities.Location.ValueCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

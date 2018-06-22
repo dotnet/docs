@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadOnlyDirectoryServerCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyDirectoryServerCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReadOnlyDirectoryServerCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.DirectoryServer directoryServer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection.Contains(System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::DirectoryServer ^ directoryServer);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.DirectoryServer -&gt; bool" Usage="readOnlyDirectoryServerCollection.Contains directoryServer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection.CopyTo(System.DirectoryServices.ActiveDirectory.DirectoryServer[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (directoryServers As DirectoryServer(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::DirectoryServer ^&gt; ^ directoryServers, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.DirectoryServer[] * int -&gt; unit" Usage="readOnlyDirectoryServerCollection.CopyTo (directoryServers, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.DirectoryServer directoryServer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection.IndexOf(System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::DirectoryServer ^ directoryServer);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.DirectoryServer -&gt; int" Usage="readOnlyDirectoryServerCollection.IndexOf directoryServer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DirectoryServer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DirectoryServer ^ default[int] { System::DirectoryServices::ActiveDirectory::DirectoryServer ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.DirectoryServer" Usage="System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

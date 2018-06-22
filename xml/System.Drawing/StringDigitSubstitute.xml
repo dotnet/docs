@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringDigitSubstitute" />
   <TypeSignature Language="VB.NET" Value="Public Enum StringDigitSubstitute" />
   <TypeSignature Language="C++ CLI" Value="public enum class StringDigitSubstitute" />
+  <TypeSignature Language="F#" Value="type StringDigitSubstitute = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.National" />
       <MemberSignature Language="VB.NET" Value="National" />
       <MemberSignature Language="C++ CLI" Value="National" />
+      <MemberSignature Language="F#" Value="National = 2" Usage="System.Drawing.StringDigitSubstitute.National" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Drawing.StringDigitSubstitute.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.Traditional" />
       <MemberSignature Language="VB.NET" Value="Traditional" />
       <MemberSignature Language="C++ CLI" Value="Traditional" />
+      <MemberSignature Language="F#" Value="Traditional = 3" Usage="System.Drawing.StringDigitSubstitute.Traditional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="C++ CLI" Value="User" />
+      <MemberSignature Language="F#" Value="User = 0" Usage="System.Drawing.StringDigitSubstitute.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

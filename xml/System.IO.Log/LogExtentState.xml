@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogExtentState" />
   <TypeSignature Language="VB.NET" Value="Public Enum LogExtentState" />
   <TypeSignature Language="C++ CLI" Value="public enum class LogExtentState" />
+  <TypeSignature Language="F#" Value="type LogExtentState = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.Active" />
       <MemberSignature Language="VB.NET" Value="Active" />
       <MemberSignature Language="C++ CLI" Value="Active" />
+      <MemberSignature Language="F#" Value="Active = 4" Usage="System.IO.Log.LogExtentState.Active" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.ActivePendingDelete" />
       <MemberSignature Language="VB.NET" Value="ActivePendingDelete" />
       <MemberSignature Language="C++ CLI" Value="ActivePendingDelete" />
+      <MemberSignature Language="F#" Value="ActivePendingDelete = 8" Usage="System.IO.Log.LogExtentState.ActivePendingDelete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.Inactive" />
       <MemberSignature Language="VB.NET" Value="Inactive" />
       <MemberSignature Language="C++ CLI" Value="Inactive" />
+      <MemberSignature Language="F#" Value="Inactive = 2" Usage="System.IO.Log.LogExtentState.Inactive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.Initializing" />
       <MemberSignature Language="VB.NET" Value="Initializing" />
       <MemberSignature Language="C++ CLI" Value="Initializing" />
+      <MemberSignature Language="F#" Value="Initializing = 1" Usage="System.IO.Log.LogExtentState.Initializing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.PendingArchive" />
       <MemberSignature Language="VB.NET" Value="PendingArchive" />
       <MemberSignature Language="C++ CLI" Value="PendingArchive" />
+      <MemberSignature Language="F#" Value="PendingArchive = 16" Usage="System.IO.Log.LogExtentState.PendingArchive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.PendingArchiveAndDelete" />
       <MemberSignature Language="VB.NET" Value="PendingArchiveAndDelete" />
       <MemberSignature Language="C++ CLI" Value="PendingArchiveAndDelete" />
+      <MemberSignature Language="F#" Value="PendingArchiveAndDelete = 32" Usage="System.IO.Log.LogExtentState.PendingArchiveAndDelete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.IO.Log.LogExtentState.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

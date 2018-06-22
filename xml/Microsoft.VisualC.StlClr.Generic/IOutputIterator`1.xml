@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IOutputIterator`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IOutputIterator(Of TValue)&#xA;Implements IBaseIterator(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IOutputIterator : Microsoft::VisualC::StlClr::Generic::IBaseIterator&lt;TValue&gt;" />
+  <TypeSignature Language="F#" Value="type IOutputIterator&lt;'Value&gt; = interface&#xA;    interface IBaseIterator&lt;'Value&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -21,5 +22,28 @@
     <summary>Interface for an iterator that is used to write a sequence to a container only in the forward direction. The element that the iterator points to can be written to only one time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="get_ref">
+      <MemberSignature Language="C#" Value="public TValue get_ref ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_ref() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IOutputIterator`1.get_ref" />
+      <MemberSignature Language="VB.NET" Value="Public Function get_ref () As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % get_ref();" />
+      <MemberSignature Language="F#" Value="abstract member get_ref : unit -&gt; " Usage="iOutputIterator.get_ref " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServiceDomain" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceDomain" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceDomain sealed" />
+  <TypeSignature Language="F#" Value="type ServiceDomain = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServiceDomain.Enter(System.EnterpriseServices.ServiceConfig)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Enter (cfg As ServiceConfig)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Enter(System::EnterpriseServices::ServiceConfig ^ cfg);" />
+      <MemberSignature Language="F#" Value="static member Enter : System.EnterpriseServices.ServiceConfig -&gt; unit" Usage="System.EnterpriseServices.ServiceDomain.Enter cfg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServiceDomain.Leave" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Leave () As TransactionStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::EnterpriseServices::TransactionStatus Leave();" />
+      <MemberSignature Language="F#" Value="static member Leave : unit -&gt; System.EnterpriseServices.TransactionStatus" Usage="System.EnterpriseServices.ServiceDomain.Leave " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

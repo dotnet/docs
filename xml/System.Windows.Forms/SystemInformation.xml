@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SystemInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class SystemInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemInformation" />
+  <TypeSignature Language="F#" Value="type SystemInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.ActiveWindowTrackingDelay" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ActiveWindowTrackingDelay As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ActiveWindowTrackingDelay { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveWindowTrackingDelay : int" Usage="System.Windows.Forms.SystemInformation.ActiveWindowTrackingDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.ArrangeDirection" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ArrangeDirection As ArrangeDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::ArrangeDirection ArrangeDirection { System::Windows::Forms::ArrangeDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArrangeDirection : System.Windows.Forms.ArrangeDirection" Usage="System.Windows.Forms.SystemInformation.ArrangeDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.ArrangeStartingPosition" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ArrangeStartingPosition As ArrangeStartingPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::ArrangeStartingPosition ArrangeStartingPosition { System::Windows::Forms::ArrangeStartingPosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArrangeStartingPosition : System.Windows.Forms.ArrangeStartingPosition" Usage="System.Windows.Forms.SystemInformation.ArrangeStartingPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.BootMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BootMode As BootMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::BootMode BootMode { System::Windows::Forms::BootMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.BootMode : System.Windows.Forms.BootMode" Usage="System.Windows.Forms.SystemInformation.BootMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.Border3DSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Border3DSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size Border3DSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border3DSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.Border3DSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.BorderMultiplierFactor" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BorderMultiplierFactor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int BorderMultiplierFactor { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BorderMultiplierFactor : int" Usage="System.Windows.Forms.SystemInformation.BorderMultiplierFactor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -272,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.BorderSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BorderSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size BorderSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.BorderSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.BorderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -317,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.CaptionButtonSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionButtonSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size CaptionButtonSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionButtonSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.CaptionButtonSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -357,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.CaptionHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CaptionHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionHeight : int" Usage="System.Windows.Forms.SystemInformation.CaptionHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -394,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.CaretBlinkTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaretBlinkTime As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CaretBlinkTime { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaretBlinkTime : int" Usage="System.Windows.Forms.SystemInformation.CaretBlinkTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -426,6 +437,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.CaretWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaretWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CaretWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaretWidth : int" Usage="System.Windows.Forms.SystemInformation.CaretWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -467,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.ComputerName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ComputerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ComputerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComputerName : string" Usage="System.Windows.Forms.SystemInformation.ComputerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -508,6 +521,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.CursorSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CursorSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size CursorSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.CursorSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -546,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.DbcsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DbcsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool DbcsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbcsEnabled : bool" Usage="System.Windows.Forms.SystemInformation.DbcsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -584,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.DebugOS" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DebugOS As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool DebugOS { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DebugOS : bool" Usage="System.Windows.Forms.SystemInformation.DebugOS" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -618,6 +634,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.DoubleClickSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DoubleClickSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size DoubleClickSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleClickSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.DoubleClickSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -659,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.DoubleClickTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DoubleClickTime As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int DoubleClickTime { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleClickTime : int" Usage="System.Windows.Forms.SystemInformation.DoubleClickTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -699,6 +717,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.DragFullWindows" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DragFullWindows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool DragFullWindows { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DragFullWindows : bool" Usage="System.Windows.Forms.SystemInformation.DragFullWindows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -737,6 +756,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.DragSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DragSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size DragSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DragSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.DragSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -777,6 +797,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.FixedFrameBorderSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FixedFrameBorderSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size FixedFrameBorderSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.FixedFrameBorderSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.FixedFrameBorderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -820,6 +841,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.FontSmoothingContrast" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FontSmoothingContrast As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int FontSmoothingContrast { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FontSmoothingContrast : int" Usage="System.Windows.Forms.SystemInformation.FontSmoothingContrast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -863,6 +885,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.FontSmoothingType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FontSmoothingType As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int FontSmoothingType { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FontSmoothingType : int" Usage="System.Windows.Forms.SystemInformation.FontSmoothingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -914,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.FrameBorderSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FrameBorderSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size FrameBorderSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.FrameBorderSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.FrameBorderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -957,6 +981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetBorderSizeForDpi(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBorderSizeForDpi (dpi As Integer) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetBorderSizeForDpi(int dpi);" />
+      <MemberSignature Language="F#" Value="static member GetBorderSizeForDpi : int -&gt; System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.GetBorderSizeForDpi dpi" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -981,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetHorizontalScrollBarArrowWidthForDpi(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHorizontalScrollBarArrowWidthForDpi (dpi As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetHorizontalScrollBarArrowWidthForDpi(int dpi);" />
+      <MemberSignature Language="F#" Value="static member GetHorizontalScrollBarArrowWidthForDpi : int -&gt; int" Usage="System.Windows.Forms.SystemInformation.GetHorizontalScrollBarArrowWidthForDpi dpi" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1005,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetHorizontalScrollBarHeightForDpi(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHorizontalScrollBarHeightForDpi (dpi As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetHorizontalScrollBarHeightForDpi(int dpi);" />
+      <MemberSignature Language="F#" Value="static member GetHorizontalScrollBarHeightForDpi : int -&gt; int" Usage="System.Windows.Forms.SystemInformation.GetHorizontalScrollBarHeightForDpi dpi" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1029,6 +1056,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetMenuFontForDpi(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMenuFontForDpi (dpi As Integer) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ GetMenuFontForDpi(int dpi);" />
+      <MemberSignature Language="F#" Value="static member GetMenuFontForDpi : int -&gt; System.Drawing.Font" Usage="System.Windows.Forms.SystemInformation.GetMenuFontForDpi dpi" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1053,6 +1081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SystemInformation.GetVerticalScrollBarWidthForDpi(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetVerticalScrollBarWidthForDpi (dpi As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetVerticalScrollBarWidthForDpi(int dpi);" />
+      <MemberSignature Language="F#" Value="static member GetVerticalScrollBarWidthForDpi : int -&gt; int" Usage="System.Windows.Forms.SystemInformation.GetVerticalScrollBarWidthForDpi dpi" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1077,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.HighContrast" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HighContrast As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool HighContrast { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HighContrast : bool" Usage="System.Windows.Forms.SystemInformation.HighContrast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1120,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalFocusThickness As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int HorizontalFocusThickness { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalFocusThickness : int" Usage="System.Windows.Forms.SystemInformation.HorizontalFocusThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1170,6 +1201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalResizeBorderThickness As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int HorizontalResizeBorderThickness { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalResizeBorderThickness : int" Usage="System.Windows.Forms.SystemInformation.HorizontalResizeBorderThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1216,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarArrowWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int HorizontalScrollBarArrowWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarArrowWidth : int" Usage="System.Windows.Forms.SystemInformation.HorizontalScrollBarArrowWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1257,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int HorizontalScrollBarHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarHeight : int" Usage="System.Windows.Forms.SystemInformation.HorizontalScrollBarHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1297,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HorizontalScrollBarThumbWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int HorizontalScrollBarThumbWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarThumbWidth : int" Usage="System.Windows.Forms.SystemInformation.HorizontalScrollBarThumbWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1343,6 +1378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IconHorizontalSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconHorizontalSpacing As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int IconHorizontalSpacing { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconHorizontalSpacing : int" Usage="System.Windows.Forms.SystemInformation.IconHorizontalSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1381,6 +1417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IconSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size IconSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.IconSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1415,6 +1452,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IconSpacingSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconSpacingSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size IconSpacingSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconSpacingSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.IconSpacingSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1454,6 +1492,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IconVerticalSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconVerticalSpacing As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int IconVerticalSpacing { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconVerticalSpacing : int" Usage="System.Windows.Forms.SystemInformation.IconVerticalSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1493,6 +1532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsActiveWindowTrackingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsActiveWindowTrackingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsActiveWindowTrackingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsActiveWindowTrackingEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsActiveWindowTrackingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1534,6 +1574,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsComboBoxAnimationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsComboBoxAnimationEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsComboBoxAnimationEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsComboBoxAnimationEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsComboBoxAnimationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1577,6 +1618,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsDropShadowEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsDropShadowEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsDropShadowEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDropShadowEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsDropShadowEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1617,6 +1659,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsFlatMenuEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsFlatMenuEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsFlatMenuEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFlatMenuEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsFlatMenuEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1638,6 +1681,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsFontSmoothingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsFontSmoothingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsFontSmoothingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFontSmoothingEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsFontSmoothingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1676,6 +1720,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsHotTrackingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsHotTrackingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsHotTrackingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHotTrackingEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsHotTrackingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1717,6 +1762,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsIconTitleWrappingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsIconTitleWrappingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsIconTitleWrappingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsIconTitleWrappingEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsIconTitleWrappingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1750,6 +1796,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsKeyboardPreferred" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsKeyboardPreferred As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsKeyboardPreferred { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsKeyboardPreferred : bool" Usage="System.Windows.Forms.SystemInformation.IsKeyboardPreferred" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1791,6 +1838,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsListBoxSmoothScrollingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsListBoxSmoothScrollingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsListBoxSmoothScrollingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsListBoxSmoothScrollingEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsListBoxSmoothScrollingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1832,6 +1880,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsMenuAnimationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMenuAnimationEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMenuAnimationEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMenuAnimationEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsMenuAnimationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1876,6 +1925,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsMenuFadeEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMenuFadeEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMenuFadeEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMenuFadeEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsMenuFadeEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1923,6 +1973,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsMinimizeRestoreAnimationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMinimizeRestoreAnimationEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMinimizeRestoreAnimationEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMinimizeRestoreAnimationEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsMinimizeRestoreAnimationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1961,6 +2012,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsSelectionFadeEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSelectionFadeEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSelectionFadeEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSelectionFadeEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsSelectionFadeEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2002,6 +2054,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsSnapToDefaultEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSnapToDefaultEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSnapToDefaultEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSnapToDefaultEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsSnapToDefaultEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2040,6 +2093,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsTitleBarGradientEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsTitleBarGradientEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsTitleBarGradientEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTitleBarGradientEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsTitleBarGradientEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2081,6 +2135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.IsToolTipAnimationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsToolTipAnimationEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsToolTipAnimationEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsToolTipAnimationEnabled : bool" Usage="System.Windows.Forms.SystemInformation.IsToolTipAnimationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2122,6 +2177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.KanjiWindowHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KanjiWindowHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int KanjiWindowHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KanjiWindowHeight : int" Usage="System.Windows.Forms.SystemInformation.KanjiWindowHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2160,6 +2216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.KeyboardDelay" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardDelay As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int KeyboardDelay { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardDelay : int" Usage="System.Windows.Forms.SystemInformation.KeyboardDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2200,6 +2257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.KeyboardSpeed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyboardSpeed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int KeyboardSpeed { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyboardSpeed : int" Usage="System.Windows.Forms.SystemInformation.KeyboardSpeed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2240,6 +2298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MaxWindowTrackSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaxWindowTrackSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MaxWindowTrackSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxWindowTrackSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MaxWindowTrackSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2280,6 +2339,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MenuAccessKeysUnderlined" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuAccessKeysUnderlined As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MenuAccessKeysUnderlined { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuAccessKeysUnderlined : bool" Usage="System.Windows.Forms.SystemInformation.MenuAccessKeysUnderlined" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2321,6 +2381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MenuBarButtonSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuBarButtonSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MenuBarButtonSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuBarButtonSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MenuBarButtonSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2359,6 +2420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MenuButtonSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuButtonSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MenuButtonSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuButtonSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MenuButtonSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2398,6 +2460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MenuCheckSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuCheckSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MenuCheckSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuCheckSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MenuCheckSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2436,6 +2499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MenuFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ MenuFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuFont : System.Drawing.Font" Usage="System.Windows.Forms.SystemInformation.MenuFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2474,6 +2538,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MenuHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MenuHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuHeight : int" Usage="System.Windows.Forms.SystemInformation.MenuHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2512,6 +2577,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MenuShowDelay" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuShowDelay As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MenuShowDelay { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuShowDelay : int" Usage="System.Windows.Forms.SystemInformation.MenuShowDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2549,6 +2615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MidEastEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MidEastEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MidEastEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MidEastEnabled : bool" Usage="System.Windows.Forms.SystemInformation.MidEastEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2587,6 +2654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MinimizedWindowSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedWindowSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MinimizedWindowSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedWindowSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MinimizedWindowSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2625,6 +2693,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MinimizedWindowSpacingSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizedWindowSpacingSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MinimizedWindowSpacingSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizedWindowSpacingSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MinimizedWindowSpacingSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2666,6 +2735,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MinimumWindowSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimumWindowSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MinimumWindowSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumWindowSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MinimumWindowSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2707,6 +2777,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MinWindowTrackSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinWindowTrackSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MinWindowTrackSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinWindowTrackSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MinWindowTrackSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2749,6 +2820,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MonitorCount" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MonitorCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MonitorCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MonitorCount : int" Usage="System.Windows.Forms.SystemInformation.MonitorCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2790,6 +2862,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MonitorsSameDisplayFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MonitorsSameDisplayFormat As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MonitorsSameDisplayFormat { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MonitorsSameDisplayFormat : bool" Usage="System.Windows.Forms.SystemInformation.MonitorsSameDisplayFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2838,6 +2911,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MouseButtons" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseButtons As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MouseButtons { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseButtons : int" Usage="System.Windows.Forms.SystemInformation.MouseButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2879,6 +2953,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MouseButtonsSwapped" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseButtonsSwapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MouseButtonsSwapped { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseButtonsSwapped : bool" Usage="System.Windows.Forms.SystemInformation.MouseButtonsSwapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2913,6 +2988,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MouseHoverSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseHoverSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size MouseHoverSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseHoverSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.MouseHoverSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2944,6 +3020,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MouseHoverTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseHoverTime As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MouseHoverTime { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseHoverTime : int" Usage="System.Windows.Forms.SystemInformation.MouseHoverTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2984,6 +3061,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MousePresent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MousePresent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MousePresent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MousePresent : bool" Usage="System.Windows.Forms.SystemInformation.MousePresent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3029,6 +3107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MouseSpeed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseSpeed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MouseSpeed { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseSpeed : int" Usage="System.Windows.Forms.SystemInformation.MouseSpeed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3069,6 +3148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MouseWheelPresent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseWheelPresent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MouseWheelPresent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseWheelPresent : bool" Usage="System.Windows.Forms.SystemInformation.MouseWheelPresent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3113,6 +3193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MouseWheelScrollDelta" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseWheelScrollDelta As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MouseWheelScrollDelta { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseWheelScrollDelta : int" Usage="System.Windows.Forms.SystemInformation.MouseWheelScrollDelta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3151,6 +3232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.MouseWheelScrollLines" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MouseWheelScrollLines As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MouseWheelScrollLines { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseWheelScrollLines : int" Usage="System.Windows.Forms.SystemInformation.MouseWheelScrollLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3192,6 +3274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.NativeMouseWheelSupport" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NativeMouseWheelSupport As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool NativeMouseWheelSupport { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.NativeMouseWheelSupport : bool" Usage="System.Windows.Forms.SystemInformation.NativeMouseWheelSupport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3233,6 +3316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.Network" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Network As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Network { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Network : bool" Usage="System.Windows.Forms.SystemInformation.Network" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3274,6 +3358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.PenWindows" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PenWindows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool PenWindows { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.PenWindows : bool" Usage="System.Windows.Forms.SystemInformation.PenWindows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3312,6 +3397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.PopupMenuAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PopupMenuAlignment As LeftRightAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::LeftRightAlignment PopupMenuAlignment { System::Windows::Forms::LeftRightAlignment get(); };" />
+      <MemberSignature Language="F#" Value="member this.PopupMenuAlignment : System.Windows.Forms.LeftRightAlignment" Usage="System.Windows.Forms.SystemInformation.PopupMenuAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3344,6 +3430,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.PowerStatus" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PowerStatus As PowerStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::PowerStatus ^ PowerStatus { System::Windows::Forms::PowerStatus ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PowerStatus : System.Windows.Forms.PowerStatus" Usage="System.Windows.Forms.SystemInformation.PowerStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3377,6 +3464,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.PrimaryMonitorMaximizedWindowSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryMonitorMaximizedWindowSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size PrimaryMonitorMaximizedWindowSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryMonitorMaximizedWindowSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.PrimaryMonitorMaximizedWindowSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3410,6 +3498,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.PrimaryMonitorSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryMonitorSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size PrimaryMonitorSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryMonitorSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.PrimaryMonitorSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3450,6 +3539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.RightAlignedMenus" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RightAlignedMenus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool RightAlignedMenus { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RightAlignedMenus : bool" Usage="System.Windows.Forms.SystemInformation.RightAlignedMenus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3483,6 +3573,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.ScreenOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScreenOrientation As ScreenOrientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::ScreenOrientation ScreenOrientation { System::Windows::Forms::ScreenOrientation get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScreenOrientation : System.Windows.Forms.ScreenOrientation" Usage="System.Windows.Forms.SystemInformation.ScreenOrientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3515,6 +3606,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.Secure" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Secure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Secure { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Secure : bool" Usage="System.Windows.Forms.SystemInformation.Secure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3554,6 +3646,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.ShowSounds" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ShowSounds As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ShowSounds { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowSounds : bool" Usage="System.Windows.Forms.SystemInformation.ShowSounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3594,6 +3687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.SizingBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizingBorderWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int SizingBorderWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizingBorderWidth : int" Usage="System.Windows.Forms.SystemInformation.SizingBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3626,6 +3720,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.SmallCaptionButtonSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionButtonSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size SmallCaptionButtonSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionButtonSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.SmallCaptionButtonSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3663,6 +3758,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.SmallIconSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallIconSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size SmallIconSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallIconSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.SmallIconSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3701,6 +3797,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.TerminalServerSession" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TerminalServerSession As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool TerminalServerSession { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TerminalServerSession : bool" Usage="System.Windows.Forms.SystemInformation.TerminalServerSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3742,6 +3839,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.ToolWindowCaptionButtonSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolWindowCaptionButtonSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Size ToolWindowCaptionButtonSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolWindowCaptionButtonSize : System.Drawing.Size" Usage="System.Windows.Forms.SystemInformation.ToolWindowCaptionButtonSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3780,6 +3878,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.ToolWindowCaptionHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolWindowCaptionHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ToolWindowCaptionHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolWindowCaptionHeight : int" Usage="System.Windows.Forms.SystemInformation.ToolWindowCaptionHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3813,6 +3912,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.UIEffectsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UIEffectsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UIEffectsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UIEffectsEnabled : bool" Usage="System.Windows.Forms.SystemInformation.UIEffectsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3875,6 +3975,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.UserDomainName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserDomainName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UserDomainName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserDomainName : string" Usage="System.Windows.Forms.SystemInformation.UserDomainName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3919,6 +4020,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.UserInteractive" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserInteractive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UserInteractive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserInteractive : bool" Usage="System.Windows.Forms.SystemInformation.UserInteractive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3962,6 +4064,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.Windows.Forms.SystemInformation.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4004,6 +4107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalFocusThickness As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int VerticalFocusThickness { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalFocusThickness : int" Usage="System.Windows.Forms.SystemInformation.VerticalFocusThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4054,6 +4158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalResizeBorderThickness As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int VerticalResizeBorderThickness { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalResizeBorderThickness : int" Usage="System.Windows.Forms.SystemInformation.VerticalResizeBorderThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4100,6 +4205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarArrowHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int VerticalScrollBarArrowHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarArrowHeight : int" Usage="System.Windows.Forms.SystemInformation.VerticalScrollBarArrowHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4146,6 +4252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarThumbHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int VerticalScrollBarThumbHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarThumbHeight : int" Usage="System.Windows.Forms.SystemInformation.VerticalScrollBarThumbHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4192,6 +4299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalScrollBarWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int VerticalScrollBarWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarWidth : int" Usage="System.Windows.Forms.SystemInformation.VerticalScrollBarWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4233,6 +4341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.VirtualScreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualScreen As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Rectangle VirtualScreen { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualScreen : System.Drawing.Rectangle" Usage="System.Windows.Forms.SystemInformation.VirtualScreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4279,6 +4388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SystemInformation.WorkingArea" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkingArea As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Rectangle WorkingArea { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkingArea : System.Drawing.Rectangle" Usage="System.Windows.Forms.SystemInformation.WorkingArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

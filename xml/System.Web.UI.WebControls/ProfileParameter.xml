@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ProfileParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class ProfileParameter&#xA;Inherits Parameter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileParameter : System::Web::UI::WebControls::Parameter" />
+  <TypeSignature Language="F#" Value="type ProfileParameter = class&#xA;    inherit Parameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ProfileParameter.#ctor(System.Web.UI.WebControls.ProfileParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (original As ProfileParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ProfileParameter(System::Web::UI::WebControls::ProfileParameter ^ original);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ProfileParameter : System.Web.UI.WebControls.ProfileParameter -&gt; System.Web.UI.WebControls.ProfileParameter" Usage="new System.Web.UI.WebControls.ProfileParameter original" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ProfileParameter.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileParameter(System::String ^ name, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ProfileParameter : string * string -&gt; System.Web.UI.WebControls.ProfileParameter" Usage="new System.Web.UI.WebControls.ProfileParameter (name, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ProfileParameter.#ctor(System.String,System.Data.DbType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileParameter(System::String ^ name, System::Data::DbType dbType, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ProfileParameter : string * System.Data.DbType * string -&gt; System.Web.UI.WebControls.ProfileParameter" Usage="new System.Web.UI.WebControls.ProfileParameter (name, dbType, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ProfileParameter.#ctor(System.String,System.TypeCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileParameter(System::String ^ name, TypeCode type, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ProfileParameter : string * TypeCode * string -&gt; System.Web.UI.WebControls.ProfileParameter" Usage="new System.Web.UI.WebControls.ProfileParameter (name, type, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ProfileParameter.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As Parameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Parameter ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Web.UI.WebControls.Parameter" Usage="profileParameter.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ProfileParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="profileParameter.Evaluate (context, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ProfileParameter.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.Web.UI.WebControls.ProfileParameter.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

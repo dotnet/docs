@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultInterfaceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultInterfaceAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DefaultInterfaceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (defaultInterface As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultInterfaceAttribute(Type ^ defaultInterface);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute : Type -&gt; System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute" Usage="new System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute defaultInterface" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute.DefaultInterface" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultInterface As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DefaultInterface { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultInterface : Type" Usage="System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute.DefaultInterface" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>

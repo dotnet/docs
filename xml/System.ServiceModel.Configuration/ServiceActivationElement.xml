@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceActivationElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceActivationElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceActivationElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ServiceActivationElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceActivationElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relativeAddress As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceActivationElement(System::String ^ relativeAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ServiceActivationElement : string -&gt; System.ServiceModel.Configuration.ServiceActivationElement" Usage="new System.ServiceModel.Configuration.ServiceActivationElement relativeAddress" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceActivationElement.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relativeAddress As String, service As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceActivationElement(System::String ^ relativeAddress, System::String ^ service);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ServiceActivationElement : string * string -&gt; System.ServiceModel.Configuration.ServiceActivationElement" Usage="new System.ServiceModel.Configuration.ServiceActivationElement (relativeAddress, service)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceActivationElement.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relativeAddress As String, service As String, factory As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceActivationElement(System::String ^ relativeAddress, System::String ^ service, System::String ^ factory);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ServiceActivationElement : string * string * string -&gt; System.ServiceModel.Configuration.ServiceActivationElement" Usage="new System.ServiceModel.Configuration.ServiceActivationElement (relativeAddress, service, factory)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceActivationElement.Factory" />
       <MemberSignature Language="VB.NET" Value="Public Property Factory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Factory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Factory : string with get, set" Usage="System.ServiceModel.Configuration.ServiceActivationElement.Factory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceActivationElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServiceActivationElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceActivationElement.RelativeAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelativeAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeAddress : string with get, set" Usage="System.ServiceModel.Configuration.ServiceActivationElement.RelativeAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceActivationElement.Service" />
       <MemberSignature Language="VB.NET" Value="Public Property Service As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Service { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Service : string with get, set" Usage="System.ServiceModel.Configuration.ServiceActivationElement.Service" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

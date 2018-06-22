@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WizardDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class WizardDesigner&#xA;Inherits CompositeControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class WizardDesigner : System::Web::UI::Design::WebControls::CompositeControlDesigner" />
+  <TypeSignature Language="F#" Value="type WizardDesigner = class&#xA;    inherit CompositeControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WizardDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.WizardDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.AddDesignerRegions(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddDesignerRegions (regions As DesignerRegionCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddDesignerRegions(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
+      <MemberSignature Language="F#" Value="abstract member AddDesignerRegions : System.Web.UI.Design.DesignerRegionCollection -&gt; unit&#xA;override this.AddDesignerRegions : System.Web.UI.Design.DesignerRegionCollection -&gt; unit" Usage="wizardDesigner.AddDesignerRegions regions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WizardDesigner.AutoFormats" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.WebControls.WizardDesigner.AutoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.ConvertToCustomNavigationTemplate" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConvertToCustomNavigationTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConvertToCustomNavigationTemplate();" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToCustomNavigationTemplate : unit -&gt; unit&#xA;override this.ConvertToCustomNavigationTemplate : unit -&gt; unit" Usage="wizardDesigner.ConvertToCustomNavigationTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.ConvertToTemplate(System.String,System.ComponentModel.IComponent,System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ConvertToTemplate (description As String, component As IComponent, templateName As String, keys As String())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ConvertToTemplate(System::String ^ description, System::ComponentModel::IComponent ^ component, System::String ^ templateName, cli::array &lt;System::String ^&gt; ^ keys);" />
+      <MemberSignature Language="F#" Value="member this.ConvertToTemplate : string * System.ComponentModel.IComponent * string * string[] -&gt; unit" Usage="wizardDesigner.ConvertToTemplate (description, component, templateName, keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateChildControls();" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="wizardDesigner.CreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WizardDesigner.DisplaySideBar" />
       <MemberSignature Language="VB.NET" Value="Protected Property DisplaySideBar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool DisplaySideBar { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplaySideBar : bool with get, set" Usage="System.Web.UI.Design.WebControls.WizardDesigner.DisplaySideBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="wizardDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -228,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string" Usage="wizardDesigner.GetDesignTimeHtml regions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditableDesignerRegionContent (region As EditableDesignerRegion) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="override this.GetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion -&gt; string" Usage="wizardDesigner.GetEditableDesignerRegionContent region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -281,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="wizardDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -304,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick (e As DesignerRegionMouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick(System::Web::UI::Design::DesignerRegionMouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnClick : System.Web.UI.Design.DesignerRegionMouseEventArgs -&gt; unit" Usage="wizardDesigner.OnClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -327,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
+      <MemberSignature Language="F#" Value="override this.OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="wizardDesigner.OnComponentChanged (sender, ce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -364,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="wizardDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -387,6 +402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.ResetTemplate(System.String,System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ResetTemplate (description As String, component As IComponent, templateName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ResetTemplate(System::String ^ description, System::ComponentModel::IComponent ^ component, System::String ^ templateName);" />
+      <MemberSignature Language="F#" Value="member this.ResetTemplate : string * System.ComponentModel.IComponent * string -&gt; unit" Usage="wizardDesigner.ResetTemplate (description, component, templateName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -414,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetEditableDesignerRegionContent (region As EditableDesignerRegion, content As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
+      <MemberSignature Language="F#" Value="override this.SetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit" Usage="wizardDesigner.SetEditableDesignerRegionContent (region, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -443,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WizardDesigner.TemplateGroups" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TemplateGroups As TemplateGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::TemplateGroupCollection ^ TemplateGroups { System::Web::UI::Design::TemplateGroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplateGroups : System.Web.UI.Design.TemplateGroupCollection" Usage="System.Web.UI.Design.WebControls.WizardDesigner.TemplateGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -463,6 +481,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WizardDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.WizardDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

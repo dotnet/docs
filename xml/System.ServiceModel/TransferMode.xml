@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransferMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransferMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransferMode" />
+  <TypeSignature Language="F#" Value="type TransferMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -85,6 +86,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.Buffered" />
       <MemberSignature Language="VB.NET" Value="Buffered" />
       <MemberSignature Language="C++ CLI" Value="Buffered" />
+      <MemberSignature Language="F#" Value="Buffered = 0" Usage="System.ServiceModel.TransferMode.Buffered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +113,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.Streamed" />
       <MemberSignature Language="VB.NET" Value="Streamed" />
       <MemberSignature Language="C++ CLI" Value="Streamed" />
+      <MemberSignature Language="F#" Value="Streamed = 1" Usage="System.ServiceModel.TransferMode.Streamed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +140,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.StreamedRequest" />
       <MemberSignature Language="VB.NET" Value="StreamedRequest" />
       <MemberSignature Language="C++ CLI" Value="StreamedRequest" />
+      <MemberSignature Language="F#" Value="StreamedRequest = 2" Usage="System.ServiceModel.TransferMode.StreamedRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +167,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.StreamedResponse" />
       <MemberSignature Language="VB.NET" Value="StreamedResponse" />
       <MemberSignature Language="C++ CLI" Value="StreamedResponse" />
+      <MemberSignature Language="F#" Value="StreamedResponse = 3" Usage="System.ServiceModel.TransferMode.StreamedResponse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

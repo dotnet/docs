@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.ZipFile" />
   <TypeSignature Language="VB.NET" Value="Public Class ZipFile" />
   <TypeSignature Language="C++ CLI" Value="public ref class ZipFile abstract sealed" />
+  <TypeSignature Language="F#" Value="type ZipFile = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateFromDirectory (sourceDirectoryName As String, destinationArchiveFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateFromDirectory(System::String ^ sourceDirectoryName, System::String ^ destinationArchiveFileName);" />
+      <MemberSignature Language="F#" Value="static member CreateFromDirectory : string * string -&gt; unit" Usage="System.IO.Compression.ZipFile.CreateFromDirectory (sourceDirectoryName, destinationArchiveFileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -165,6 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, valuetype System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,System.IO.Compression.CompressionLevel,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateFromDirectory(System::String ^ sourceDirectoryName, System::String ^ destinationArchiveFileName, System::IO::Compression::CompressionLevel compressionLevel, bool includeBaseDirectory);" />
+      <MemberSignature Language="F#" Value="static member CreateFromDirectory : string * string * System.IO.Compression.CompressionLevel * bool -&gt; unit" Usage="System.IO.Compression.ZipFile.CreateFromDirectory (sourceDirectoryName, destinationArchiveFileName, compressionLevel, includeBaseDirectory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -249,6 +252,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, valuetype System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory, class System.Text.Encoding entryNameEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,System.IO.Compression.CompressionLevel,System.Boolean,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateFromDirectory(System::String ^ sourceDirectoryName, System::String ^ destinationArchiveFileName, System::IO::Compression::CompressionLevel compressionLevel, bool includeBaseDirectory, System::Text::Encoding ^ entryNameEncoding);" />
+      <MemberSignature Language="F#" Value="static member CreateFromDirectory : string * string * System.IO.Compression.CompressionLevel * bool * System.Text.Encoding -&gt; unit" Usage="System.IO.Compression.ZipFile.CreateFromDirectory (sourceDirectoryName, destinationArchiveFileName, compressionLevel, includeBaseDirectory, entryNameEncoding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -350,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractToDirectory (sourceArchiveFileName As String, destinationDirectoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExtractToDirectory(System::String ^ sourceArchiveFileName, System::String ^ destinationDirectoryName);" />
+      <MemberSignature Language="F#" Value="static member ExtractToDirectory : string * string -&gt; unit" Usage="System.IO.Compression.ZipFile.ExtractToDirectory (sourceArchiveFileName, destinationDirectoryName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -434,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractToDirectory (sourceArchiveFileName As String, destinationDirectoryName As String, overwriteFiles As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExtractToDirectory(System::String ^ sourceArchiveFileName, System::String ^ destinationDirectoryName, bool overwriteFiles);" />
+      <MemberSignature Language="F#" Value="static member ExtractToDirectory : string * string * bool -&gt; unit" Usage="System.IO.Compression.ZipFile.ExtractToDirectory (sourceArchiveFileName, destinationDirectoryName, overwriteFiles)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -462,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractToDirectory (sourceArchiveFileName As String, destinationDirectoryName As String, entryNameEncoding As Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExtractToDirectory(System::String ^ sourceArchiveFileName, System::String ^ destinationDirectoryName, System::Text::Encoding ^ entryNameEncoding);" />
+      <MemberSignature Language="F#" Value="static member ExtractToDirectory : string * string * System.Text.Encoding -&gt; unit" Usage="System.IO.Compression.ZipFile.ExtractToDirectory (sourceArchiveFileName, destinationDirectoryName, entryNameEncoding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -556,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractToDirectory (sourceArchiveFileName As String, destinationDirectoryName As String, entryNameEncoding As Encoding, overwriteFiles As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExtractToDirectory(System::String ^ sourceArchiveFileName, System::String ^ destinationDirectoryName, System::Text::Encoding ^ entryNameEncoding, bool overwriteFiles);" />
+      <MemberSignature Language="F#" Value="static member ExtractToDirectory : string * string * System.Text.Encoding * bool -&gt; unit" Usage="System.IO.Compression.ZipFile.ExtractToDirectory (sourceArchiveFileName, destinationDirectoryName, entryNameEncoding, overwriteFiles)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -596,6 +604,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.Open(System.String,System.IO.Compression.ZipArchiveMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (archiveFileName As String, mode As ZipArchiveMode) As ZipArchive" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Compression::ZipArchive ^ Open(System::String ^ archiveFileName, System::IO::Compression::ZipArchiveMode mode);" />
+      <MemberSignature Language="F#" Value="static member Open : string * System.IO.Compression.ZipArchiveMode -&gt; System.IO.Compression.ZipArchive" Usage="System.IO.Compression.ZipFile.Open (archiveFileName, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -687,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.Open(System.String,System.IO.Compression.ZipArchiveMode,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (archiveFileName As String, mode As ZipArchiveMode, entryNameEncoding As Encoding) As ZipArchive" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Compression::ZipArchive ^ Open(System::String ^ archiveFileName, System::IO::Compression::ZipArchiveMode mode, System::Text::Encoding ^ entryNameEncoding);" />
+      <MemberSignature Language="F#" Value="static member Open : string * System.IO.Compression.ZipArchiveMode * System.Text.Encoding -&gt; System.IO.Compression.ZipArchive" Usage="System.IO.Compression.ZipFile.Open (archiveFileName, mode, entryNameEncoding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -796,6 +806,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.OpenRead(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenRead (archiveFileName As String) As ZipArchive" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Compression::ZipArchive ^ OpenRead(System::String ^ archiveFileName);" />
+      <MemberSignature Language="F#" Value="static member OpenRead : string -&gt; System.IO.Compression.ZipArchive" Usage="System.IO.Compression.ZipFile.OpenRead archiveFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentChangingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComponentChangingEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentChangingEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ComponentChangingEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentChangingEventArgs.#ctor(System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (component As Object, member As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentChangingEventArgs(System::Object ^ component, System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ComponentChangingEventArgs : obj * System.ComponentModel.MemberDescriptor -&gt; System.ComponentModel.Design.ComponentChangingEventArgs" Usage="new System.ComponentModel.Design.ComponentChangingEventArgs (component, member)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentChangingEventArgs.Component" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Component As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Component { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Component : obj" Usage="System.ComponentModel.Design.ComponentChangingEventArgs.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentChangingEventArgs.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::MemberDescriptor ^ Member { System::ComponentModel::MemberDescriptor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.ComponentModel.MemberDescriptor" Usage="System.ComponentModel.Design.ComponentChangingEventArgs.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

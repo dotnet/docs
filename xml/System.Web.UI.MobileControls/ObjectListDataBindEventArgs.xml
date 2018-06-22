@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectListDataBindEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectListDataBindEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ObjectListDataBindEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListDataBindEventArgs.#ctor(System.Web.UI.MobileControls.ObjectListItem,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As ObjectListItem, dataItem As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectListDataBindEventArgs(System::Web::UI::MobileControls::ObjectListItem ^ item, System::Object ^ dataItem);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ObjectListDataBindEventArgs : System.Web.UI.MobileControls.ObjectListItem * obj -&gt; System.Web.UI.MobileControls.ObjectListDataBindEventArgs" Usage="new System.Web.UI.MobileControls.ObjectListDataBindEventArgs (item, dataItem)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListDataBindEventArgs.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj" Usage="System.Web.UI.MobileControls.ObjectListDataBindEventArgs.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListDataBindEventArgs.ListItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListItem As ObjectListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ObjectListItem ^ ListItem { System::Web::UI::MobileControls::ObjectListItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListItem : System.Web.UI.MobileControls.ObjectListItem" Usage="System.Web.UI.MobileControls.ObjectListDataBindEventArgs.ListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

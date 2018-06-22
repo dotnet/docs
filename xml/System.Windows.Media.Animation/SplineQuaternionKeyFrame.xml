@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineQuaternionKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class SplineQuaternionKeyFrame&#xA;Inherits QuaternionKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class SplineQuaternionKeyFrame : System::Windows::Media::Animation::QuaternionKeyFrame" />
+  <TypeSignature Language="F#" Value="type SplineQuaternionKeyFrame = class&#xA;    inherit QuaternionKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineQuaternionKeyFrame(System::Windows::Media::Media3D::Quaternion value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineQuaternionKeyFrame : System.Windows.Media.Media3D.Quaternion -&gt; System.Windows.Media.Animation.SplineQuaternionKeyFrame" Usage="new System.Windows.Media.Animation.SplineQuaternionKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineQuaternionKeyFrame(System::Windows::Media::Media3D::Quaternion value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineQuaternionKeyFrame : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.SplineQuaternionKeyFrame" Usage="new System.Windows.Media.Animation.SplineQuaternionKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.KeySpline keySpline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineQuaternionKeyFrame(System::Windows::Media::Media3D::Quaternion value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::KeySpline ^ keySpline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineQuaternionKeyFrame : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.KeySpline -&gt; System.Windows.Media.Animation.SplineQuaternionKeyFrame" Usage="new System.Windows.Media.Animation.SplineQuaternionKeyFrame (value, keyTime, keySpline)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineQuaternionKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="splineQuaternionKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Quaternion, keyFrameProgress As Double) As Quaternion" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Quaternion InterpolateValueCore(System::Windows::Media::Media3D::Quaternion baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Media.Media3D.Quaternion * double -&gt; System.Windows.Media.Media3D.Quaternion" Usage="splineQuaternionKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SplineQuaternionKeyFrame.KeySpline" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySpline As KeySpline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeySpline ^ KeySpline { System::Windows::Media::Animation::KeySpline ^ get(); void set(System::Windows::Media::Animation::KeySpline ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySpline : System.Windows.Media.Animation.KeySpline with get, set" Usage="System.Windows.Media.Animation.SplineQuaternionKeyFrame.KeySpline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SplineQuaternionKeyFrame.KeySplineProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeySplineProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeySplineProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeySplineProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SplineQuaternionKeyFrame.KeySplineProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SplineQuaternionKeyFrame.UseShortestPath" />
       <MemberSignature Language="VB.NET" Value="Public Property UseShortestPath As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseShortestPath { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseShortestPath : bool with get, set" Usage="System.Windows.Media.Animation.SplineQuaternionKeyFrame.UseShortestPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SplineQuaternionKeyFrame.UseShortestPathProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UseShortestPathProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UseShortestPathProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UseShortestPathProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SplineQuaternionKeyFrame.UseShortestPathProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

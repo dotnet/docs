@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.SetIteratorResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum SetIteratorResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class SetIteratorResult" />
+  <TypeSignature Language="F#" Value="type SetIteratorResult = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.HaveCurrentNode" />
       <MemberSignature Language="VB.NET" Value="HaveCurrentNode" />
       <MemberSignature Language="C++ CLI" Value="HaveCurrentNode" />
+      <MemberSignature Language="F#" Value="HaveCurrentNode = 4" Usage="System.Xml.Xsl.Runtime.SetIteratorResult.HaveCurrentNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.InitRightIterator" />
       <MemberSignature Language="VB.NET" Value="InitRightIterator" />
       <MemberSignature Language="C++ CLI" Value="InitRightIterator" />
+      <MemberSignature Language="F#" Value="InitRightIterator = 1" Usage="System.Xml.Xsl.Runtime.SetIteratorResult.InitRightIterator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NeedLeftNode" />
       <MemberSignature Language="VB.NET" Value="NeedLeftNode" />
       <MemberSignature Language="C++ CLI" Value="NeedLeftNode" />
+      <MemberSignature Language="F#" Value="NeedLeftNode = 2" Usage="System.Xml.Xsl.Runtime.SetIteratorResult.NeedLeftNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NeedRightNode" />
       <MemberSignature Language="VB.NET" Value="NeedRightNode" />
       <MemberSignature Language="C++ CLI" Value="NeedRightNode" />
+      <MemberSignature Language="F#" Value="NeedRightNode = 3" Usage="System.Xml.Xsl.Runtime.SetIteratorResult.NeedRightNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NoMoreNodes" />
       <MemberSignature Language="VB.NET" Value="NoMoreNodes" />
       <MemberSignature Language="C++ CLI" Value="NoMoreNodes" />
+      <MemberSignature Language="F#" Value="NoMoreNodes = 0" Usage="System.Xml.Xsl.Runtime.SetIteratorResult.NoMoreNodes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

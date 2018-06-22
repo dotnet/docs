@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleMonthSpan" />
   <TypeSignature Language="VB.NET" Value="Public Structure OracleMonthSpan&#xA;Implements IComparable, INullable" />
   <TypeSignature Language="C++ CLI" Value="public value class OracleMonthSpan : IComparable, System::Data::SqlTypes::INullable" />
+  <TypeSignature Language="F#" Value="type OracleMonthSpan = struct&#xA;    interface INullable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.#ctor(System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (from As OracleMonthSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleMonthSpan(System::Data::OracleClient::OracleMonthSpan from);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleMonthSpan : System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleMonthSpan" Usage="new System.Data.OracleClient.OracleMonthSpan from" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (months As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleMonthSpan(int months);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleMonthSpan : int -&gt; System.Data.OracleClient.OracleMonthSpan" Usage="new System.Data.OracleClient.OracleMonthSpan months" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (years As Integer, months As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleMonthSpan(int years, int months);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleMonthSpan : int * int -&gt; System.Data.OracleClient.OracleMonthSpan" Usage="new System.Data.OracleClient.OracleMonthSpan (years, months)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="oracleMonthSpan.CompareTo obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="oracleMonthSpan.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.Equals(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean Equals(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleMonthSpan.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="oracleMonthSpan.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.GreaterThan(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThan(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleMonthSpan.GreaterThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.GreaterThanOrEqual(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThanOrEqual(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleMonthSpan.GreaterThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleMonthSpan.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.OracleClient.OracleMonthSpan.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -318,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.LessThan(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThan(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleMonthSpan.LessThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -344,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.LessThanOrEqual(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThanOrEqual(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleMonthSpan.LessThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -370,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleMonthSpan.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As OracleMonthSpan " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleMonthSpan MaxValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxValue : System.Data.OracleClient.OracleMonthSpan" Usage="System.Data.OracleClient.OracleMonthSpan.MaxValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -396,6 +410,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleMonthSpan.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As OracleMonthSpan " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleMonthSpan MinValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinValue : System.Data.OracleClient.OracleMonthSpan" Usage="System.Data.OracleClient.OracleMonthSpan.MinValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -422,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.NotEquals(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean NotEquals(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleMonthSpan.NotEquals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -448,6 +464,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleMonthSpan.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As OracleMonthSpan " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleMonthSpan Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.OracleClient.OracleMonthSpan" Usage="System.Data.OracleClient.OracleMonthSpan.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -474,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.op_Equality(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator ==(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -512,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.op_Explicit(System.Data.OracleClient.OracleMonthSpan)~System.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As OracleMonthSpan) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator int(System::Data::OracleClient::OracleMonthSpan x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.OracleClient.OracleMonthSpan -&gt; int" Usage="System.Data.OracleClient.OracleMonthSpan.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -536,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.op_Explicit(System.String)~System.Data.OracleClient.OracleMonthSpan" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As String) As OracleMonthSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::OracleClient::OracleMonthSpan(System::String ^ x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : string -&gt; System.Data.OracleClient.OracleMonthSpan" Usage="System.Data.OracleClient.OracleMonthSpan.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -560,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.op_GreaterThan(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -588,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.op_GreaterThanOrEqual(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;=(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -616,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.op_Inequality(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator !=(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleMonthSpan.op_Inequality (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -644,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.op_LessThan(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -672,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.op_LessThanOrEqual(System.Data.OracleClient.OracleMonthSpan,System.Data.OracleClient.OracleMonthSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As OracleMonthSpan, y As OracleMonthSpan) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;=(System::Data::OracleClient::OracleMonthSpan x, System::Data::OracleClient::OracleMonthSpan y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.OracleClient.OracleMonthSpan * System.Data.OracleClient.OracleMonthSpan -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -700,6 +725,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As OracleMonthSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleMonthSpan Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Data.OracleClient.OracleMonthSpan" Usage="System.Data.OracleClient.OracleMonthSpan.Parse s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -724,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleMonthSpan.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="oracleMonthSpan.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -745,6 +772,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleMonthSpan.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int" Usage="System.Data.OracleClient.OracleMonthSpan.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

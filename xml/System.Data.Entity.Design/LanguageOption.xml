@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.LanguageOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum LanguageOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class LanguageOption" />
+  <TypeSignature Language="F#" Value="type LanguageOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.LanguageOption.GenerateCSharpCode" />
       <MemberSignature Language="VB.NET" Value="GenerateCSharpCode" />
       <MemberSignature Language="C++ CLI" Value="GenerateCSharpCode" />
+      <MemberSignature Language="F#" Value="GenerateCSharpCode = 0" Usage="System.Data.Entity.Design.LanguageOption.GenerateCSharpCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.LanguageOption.GenerateVBCode" />
       <MemberSignature Language="VB.NET" Value="GenerateVBCode" />
       <MemberSignature Language="C++ CLI" Value="GenerateVBCode" />
+      <MemberSignature Language="F#" Value="GenerateVBCode = 1" Usage="System.Data.Entity.Design.LanguageOption.GenerateVBCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

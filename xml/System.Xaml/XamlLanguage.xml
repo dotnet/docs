@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlLanguage" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlLanguage" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlLanguage abstract sealed" />
+  <TypeSignature Language="F#" Value="type XamlLanguage = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.AllDirectives" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AllDirectives As ReadOnlyCollection(Of XamlDirective)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Xaml::XamlDirective ^&gt; ^ AllDirectives { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Xaml::XamlDirective ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllDirectives : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Xaml.XamlDirective&gt;" Usage="System.Xaml.XamlLanguage.AllDirectives" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.AllTypes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AllTypes As ReadOnlyCollection(Of XamlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Xaml::XamlType ^&gt; ^ AllTypes { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Xaml::XamlType ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllTypes : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Xaml.XamlType&gt;" Usage="System.Xaml.XamlLanguage.AllTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Arguments As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Arguments { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Array" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Array As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Array { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Array : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Array" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.AsyncRecords" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AsyncRecords As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ AsyncRecords { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncRecords : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.AsyncRecords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Base" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Base As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Base { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Base : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Base" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Boolean As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Boolean { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Boolean : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Byte" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Byte As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Byte { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Byte : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Byte" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -241,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Char" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Char As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Char { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Char : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Char" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -268,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Class" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Class As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Class { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Class : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Class" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -295,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.ClassAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClassAttributes As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ ClassAttributes { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassAttributes : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.ClassAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -322,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.ClassModifier" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClassModifier As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ ClassModifier { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassModifier : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.ClassModifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -349,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Code" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Code As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Code { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Code : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Code" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -376,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.ConnectionId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ConnectionId As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ ConnectionId { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionId : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.ConnectionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -396,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Decimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Decimal As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Decimal { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Decimal : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Decimal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -423,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Double" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Double As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Double { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Double : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Double" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -450,6 +467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.FactoryMethod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FactoryMethod As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ FactoryMethod { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FactoryMethod : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.FactoryMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -477,6 +495,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.FieldModifier" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FieldModifier As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ FieldModifier { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldModifier : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.FieldModifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -504,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Initialization" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Initialization As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Initialization { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Initialization : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Initialization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -533,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Int16" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Int16 As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Int16 { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Int16 : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Int16" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -560,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Int32 As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Int32 { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Int32 : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Int32" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -587,6 +609,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Int64" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Int64 As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Int64 { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Int64 : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Int64" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -614,6 +637,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Items" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Items As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Items { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -643,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Key" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Key As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Key { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -670,6 +695,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Lang" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lang As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Lang { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lang : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Lang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -697,6 +723,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Member" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Member As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Member { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -724,6 +751,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Members" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Members As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Members { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Members : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Members" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -751,6 +779,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Name" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Name { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -780,6 +809,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Null As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Null { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Null : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Null" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -807,6 +837,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Object" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Object As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Object { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Object : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -834,6 +865,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.PositionalParameters" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PositionalParameters As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ PositionalParameters { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PositionalParameters : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.PositionalParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -863,6 +895,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Property As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Property { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -890,6 +923,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Reference" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Reference As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Reference { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reference : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Reference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -917,6 +951,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Shared" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shared As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Shared { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shared : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Shared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -944,6 +979,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Single" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Single As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Single { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Single : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Single" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -971,6 +1007,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Space" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Space As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Space { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Space : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Space" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -998,6 +1035,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Static" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Static As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Static { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Static : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Static" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1025,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property String As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ String { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.String : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.String" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1052,6 +1091,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Subclass" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Subclass As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Subclass { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Subclass : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Subclass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1079,6 +1119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.SynchronousMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SynchronousMode As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ SynchronousMode { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SynchronousMode : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.SynchronousMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1106,6 +1147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.TimeSpan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TimeSpan As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ TimeSpan { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeSpan : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.TimeSpan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1133,6 +1175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Type" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Type As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1160,6 +1203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.TypeArguments" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TypeArguments As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ TypeArguments { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeArguments : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.TypeArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1187,6 +1231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Uid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Uid As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ Uid { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uid : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.Uid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1214,6 +1259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.UnknownContent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnknownContent As XamlDirective" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlDirective ^ UnknownContent { System::Xaml::XamlDirective ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnknownContent : System.Xaml.XamlDirective" Usage="System.Xaml.XamlLanguage.UnknownContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1243,6 +1289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Uri As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ Uri { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1270,6 +1317,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlLanguage.Xaml2006Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Const Xaml2006Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Xaml2006Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Xaml2006Namespace : string" Usage="System.Xaml.XamlLanguage.Xaml2006Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1289,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.XamlNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XamlNamespaces As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IList&lt;System::String ^&gt; ^ XamlNamespaces { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XamlNamespaces : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Xaml.XamlLanguage.XamlNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1316,6 +1365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.XData" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XData As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::XamlType ^ XData { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XData : System.Xaml.XamlType" Usage="System.Xaml.XamlLanguage.XData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1337,6 +1387,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlLanguage.Xml1998Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Const Xml1998Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Xml1998Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Xml1998Namespace : string" Usage="System.Xaml.XamlLanguage.Xml1998Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1356,6 +1407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlLanguage.XmlNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XmlNamespaces As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IList&lt;System::String ^&gt; ^ XmlNamespaces { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlNamespaces : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Xaml.XamlLanguage.XmlNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

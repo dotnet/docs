@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.DebugDirectoryEntryType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DebugDirectoryEntryType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DebugDirectoryEntryType" />
+  <TypeSignature Language="F#" Value="type DebugDirectoryEntryType = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.DebugDirectoryEntryType.CodeView" />
       <MemberSignature Language="VB.NET" Value="CodeView" />
       <MemberSignature Language="C++ CLI" Value="CodeView" />
+      <MemberSignature Language="F#" Value="CodeView = 2" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntryType.CodeView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.DebugDirectoryEntryType.Coff" />
       <MemberSignature Language="VB.NET" Value="Coff" />
       <MemberSignature Language="C++ CLI" Value="Coff" />
+      <MemberSignature Language="F#" Value="Coff = 1" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntryType.Coff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.DebugDirectoryEntryType.EmbeddedPortablePdb" />
       <MemberSignature Language="VB.NET" Value="EmbeddedPortablePdb" />
       <MemberSignature Language="C++ CLI" Value="EmbeddedPortablePdb" />
+      <MemberSignature Language="F#" Value="EmbeddedPortablePdb = 17" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntryType.EmbeddedPortablePdb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.DebugDirectoryEntryType.PdbChecksum" />
       <MemberSignature Language="VB.NET" Value="PdbChecksum" />
       <MemberSignature Language="C++ CLI" Value="PdbChecksum" />
+      <MemberSignature Language="F#" Value="PdbChecksum = 19" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntryType.PdbChecksum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.DebugDirectoryEntryType.Reproducible" />
       <MemberSignature Language="VB.NET" Value="Reproducible" />
       <MemberSignature Language="C++ CLI" Value="Reproducible" />
+      <MemberSignature Language="F#" Value="Reproducible = 16" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntryType.Reproducible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.DebugDirectoryEntryType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntryType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

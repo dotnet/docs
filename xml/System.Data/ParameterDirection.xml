@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ParameterDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum ParameterDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class ParameterDirection" />
+  <TypeSignature Language="F#" Value="type ParameterDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ParameterDirection.Input" />
       <MemberSignature Language="VB.NET" Value="Input" />
       <MemberSignature Language="C++ CLI" Value="Input" />
+      <MemberSignature Language="F#" Value="Input = 1" Usage="System.Data.ParameterDirection.Input" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ParameterDirection.InputOutput" />
       <MemberSignature Language="VB.NET" Value="InputOutput" />
       <MemberSignature Language="C++ CLI" Value="InputOutput" />
+      <MemberSignature Language="F#" Value="InputOutput = 3" Usage="System.Data.ParameterDirection.InputOutput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ParameterDirection.Output" />
       <MemberSignature Language="VB.NET" Value="Output" />
       <MemberSignature Language="C++ CLI" Value="Output" />
+      <MemberSignature Language="F#" Value="Output = 2" Usage="System.Data.ParameterDirection.Output" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ParameterDirection.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="ReturnValue" />
       <MemberSignature Language="C++ CLI" Value="ReturnValue" />
+      <MemberSignature Language="F#" Value="ReturnValue = 6" Usage="System.Data.ParameterDirection.ReturnValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

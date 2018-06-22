@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.LocalizedName" />
   <TypeSignature Language="VB.NET" Value="Public Class LocalizedName&#xA;Inherits LocalizedEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalizedName : System::IdentityModel::Metadata::LocalizedEntry" />
+  <TypeSignature Language="F#" Value="type LocalizedName = class&#xA;    inherit LocalizedEntry" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedName.#ctor(System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, language As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizedName(System::String ^ name, System::Globalization::CultureInfo ^ language);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.LocalizedName : string * System.Globalization.CultureInfo -&gt; System.IdentityModel.Metadata.LocalizedName" Usage="new System.IdentityModel.Metadata.LocalizedName (name, language)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.LocalizedName.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.IdentityModel.Metadata.LocalizedName.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

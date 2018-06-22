@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ResourcePool.TransactionEndDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ResourcePool.TransactionEndDelegate(resource As Object)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ResourcePool::TransactionEndDelegate(System::Object ^ resource);" />
+  <TypeSignature Language="F#" Value="type ResourcePool.TransactionEndDelegate = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

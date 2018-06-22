@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IReadOnlySessionState" />
   <TypeSignature Language="VB.NET" Value="Public Interface IReadOnlySessionState&#xA;Implements IRequiresSessionState" />
   <TypeSignature Language="C++ CLI" Value="public interface class IReadOnlySessionState : System::Web::SessionState::IRequiresSessionState" />
+  <TypeSignature Language="F#" Value="type IReadOnlySessionState = interface&#xA;    interface IRequiresSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

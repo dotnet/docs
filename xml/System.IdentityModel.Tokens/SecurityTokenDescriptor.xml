@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenDescriptor" />
+  <TypeSignature Language="F#" Value="type SecurityTokenDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenDescriptor.AddAuthenticationClaims(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAuthenticationClaims (authType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuthenticationClaims(System::String ^ authType);" />
+      <MemberSignature Language="F#" Value="member this.AddAuthenticationClaims : string -&gt; unit" Usage="securityTokenDescriptor.AddAuthenticationClaims authType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenDescriptor.AddAuthenticationClaims(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAuthenticationClaims (authType As String, time As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuthenticationClaims(System::String ^ authType, DateTime time);" />
+      <MemberSignature Language="F#" Value="member this.AddAuthenticationClaims : string * DateTime -&gt; unit" Usage="securityTokenDescriptor.AddAuthenticationClaims (authType, time)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.AppliesToAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property AppliesToAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppliesToAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AppliesToAddress : string with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.AppliesToAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ApplyTo (response As RequestSecurityTokenResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyTo(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyTo : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse -&gt; unit&#xA;override this.ApplyTo : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse -&gt; unit" Usage="securityTokenDescriptor.ApplyTo response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.AttachedReference" />
       <MemberSignature Language="VB.NET" Value="Public Property AttachedReference As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ AttachedReference { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(); void set(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttachedReference : System.IdentityModel.Tokens.SecurityKeyIdentifierClause with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.AttachedReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.AuthenticationInfo" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationInfo As AuthenticationInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::AuthenticationInformation ^ AuthenticationInfo { System::Security::Claims::AuthenticationInformation ^ get(); void set(System::Security::Claims::AuthenticationInformation ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationInfo : System.Security.Claims.AuthenticationInformation with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.AuthenticationInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.EncryptingCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptingCredentials As EncryptingCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::EncryptingCredentials ^ EncryptingCredentials { System::IdentityModel::Tokens::EncryptingCredentials ^ get(); void set(System::IdentityModel::Tokens::EncryptingCredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptingCredentials : System.IdentityModel.Tokens.EncryptingCredentials with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.EncryptingCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -217,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.Lifetime" />
       <MemberSignature Language="VB.NET" Value="Public Property Lifetime As Lifetime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::Lifetime ^ Lifetime { System::IdentityModel::Protocols::WSTrust::Lifetime ^ get(); void set(System::IdentityModel::Protocols::WSTrust::Lifetime ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Lifetime : System.IdentityModel.Protocols.WSTrust.Lifetime with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.Lifetime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.Proof" />
       <MemberSignature Language="VB.NET" Value="Public Property Proof As ProofDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::ProofDescriptor ^ Proof { System::IdentityModel::Tokens::ProofDescriptor ^ get(); void set(System::IdentityModel::Tokens::ProofDescriptor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Proof : System.IdentityModel.Tokens.ProofDescriptor with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.Proof" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As Dictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.ReplyToAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplyToAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReplyToAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplyToAddress : string with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.ReplyToAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -297,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.SigningCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property SigningCredentials As SigningCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SigningCredentials ^ SigningCredentials { System::IdentityModel::Tokens::SigningCredentials ^ get(); void set(System::IdentityModel::Tokens::SigningCredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SigningCredentials : System.IdentityModel.Tokens.SigningCredentials with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.SigningCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -317,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.Subject" />
       <MemberSignature Language="VB.NET" Value="Public Property Subject As ClaimsIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsIdentity ^ Subject { System::Security::Claims::ClaimsIdentity ^ get(); void set(System::Security::Claims::ClaimsIdentity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : System.Security.Claims.ClaimsIdentity with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -337,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.Token" />
       <MemberSignature Language="VB.NET" Value="Public Property Token As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ Token { System::IdentityModel::Tokens::SecurityToken ^ get(); void set(System::IdentityModel::Tokens::SecurityToken ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Token : System.IdentityModel.Tokens.SecurityToken with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.Token" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -357,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenIssuerName" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenIssuerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TokenIssuerName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TokenIssuerName : string with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenIssuerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -377,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenType" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TokenType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TokenType : string with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -397,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.UnattachedReference" />
       <MemberSignature Language="VB.NET" Value="Public Property UnattachedReference As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ UnattachedReference { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(); void set(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UnattachedReference : System.IdentityModel.Tokens.SecurityKeyIdentifierClause with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenDescriptor.UnattachedReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

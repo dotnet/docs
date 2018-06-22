@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientVBArrayPrototype" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientVBArrayPrototype&#xA;Inherits VBArrayPrototype" />
   <TypeSignature Language="C++ CLI" Value="public ref class LenientVBArrayPrototype sealed : Microsoft::JScript::VBArrayPrototype" />
+  <TypeSignature Language="F#" Value="type LenientVBArrayPrototype = class&#xA;    inherit VBArrayPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientVBArrayPrototype.constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.dimensions" />
       <MemberSignature Language="VB.NET" Value="Public dimensions As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ dimensions;" />
+      <MemberSignature Language="F#" Value="val mutable dimensions : obj" Usage="Microsoft.JScript.LenientVBArrayPrototype.dimensions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.getItem" />
       <MemberSignature Language="VB.NET" Value="Public getItem As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getItem;" />
+      <MemberSignature Language="F#" Value="val mutable getItem : obj" Usage="Microsoft.JScript.LenientVBArrayPrototype.getItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.lbound" />
       <MemberSignature Language="VB.NET" Value="Public lbound As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ lbound;" />
+      <MemberSignature Language="F#" Value="val mutable lbound : obj" Usage="Microsoft.JScript.LenientVBArrayPrototype.lbound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.toArray" />
       <MemberSignature Language="VB.NET" Value="Public toArray As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toArray;" />
+      <MemberSignature Language="F#" Value="val mutable toArray : obj" Usage="Microsoft.JScript.LenientVBArrayPrototype.toArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.ubound" />
       <MemberSignature Language="VB.NET" Value="Public ubound As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ ubound;" />
+      <MemberSignature Language="F#" Value="val mutable ubound : obj" Usage="Microsoft.JScript.LenientVBArrayPrototype.ubound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

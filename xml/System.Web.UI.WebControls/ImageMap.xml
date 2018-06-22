@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ImageMap" />
   <TypeSignature Language="VB.NET" Value="Public Class ImageMap&#xA;Inherits Image&#xA;Implements IPostBackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageMap : System::Web::UI::WebControls::Image, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type ImageMap = class&#xA;    inherit Image&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -210,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageMap.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="imageMap.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +244,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ImageMap.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As ImageMapEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ImageMapEventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : System.Web.UI.WebControls.ImageMapEventHandler " Usage="member this.Click : System.Web.UI.WebControls.ImageMapEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -288,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageMap.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.WebControls.ImageMap.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HotSpotMode As HotSpotMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HotSpotMode HotSpotMode { System::Web::UI::WebControls::HotSpotMode get(); void set(System::Web::UI::WebControls::HotSpotMode value); };" />
+      <MemberSignature Language="F#" Value="member this.HotSpotMode : System.Web.UI.WebControls.HotSpotMode with get, set" Usage="System.Web.UI.WebControls.ImageMap.HotSpotMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageMap.HotSpots" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HotSpots As HotSpotCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::HotSpotCollection ^ HotSpots { System::Web::UI::WebControls::HotSpotCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HotSpots : System.Web.UI.WebControls.HotSpotCollection" Usage="System.Web.UI.WebControls.ImageMap.HotSpots" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -459,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageMap.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="imageMap.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -492,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClick (e As ImageMapEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClick(System::Web::UI::WebControls::ImageMapEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClick : System.Web.UI.WebControls.ImageMapEventArgs -&gt; unit&#xA;override this.OnClick : System.Web.UI.WebControls.ImageMapEventArgs -&gt; unit" Usage="imageMap.OnClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -531,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageMap.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="imageMap.RaisePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
@@ -568,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageMap.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="imageMap.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -599,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageMap.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="imageMap.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -671,6 +682,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageMap.Target" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.WebControls.ImageMap.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -730,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageMap.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="imageMap.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

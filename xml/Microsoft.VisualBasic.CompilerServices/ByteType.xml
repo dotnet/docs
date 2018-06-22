@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.ByteType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ByteType" />
   <TypeSignature Language="C++ CLI" Value="public ref class ByteType sealed" />
+  <TypeSignature Language="F#" Value="type ByteType = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ByteType.FromObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte FromObject(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj -&gt; byte" Usage="Microsoft.VisualBasic.CompilerServices.ByteType.FromObject Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ByteType.FromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte FromString(System::String ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; byte" Usage="Microsoft.VisualBasic.CompilerServices.ByteType.FromString Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

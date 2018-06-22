@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IDispatchImplType" />
   <TypeSignature Language="VB.NET" Value="Public Enum IDispatchImplType" />
   <TypeSignature Language="C++ CLI" Value="public enum class IDispatchImplType" />
+  <TypeSignature Language="F#" Value="type IDispatchImplType = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.CompatibleImpl" />
       <MemberSignature Language="VB.NET" Value="CompatibleImpl" />
       <MemberSignature Language="C++ CLI" Value="CompatibleImpl" />
+      <MemberSignature Language="F#" Value="CompatibleImpl = 2" Usage="System.Runtime.InteropServices.IDispatchImplType.CompatibleImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.InternalImpl" />
       <MemberSignature Language="VB.NET" Value="InternalImpl" />
       <MemberSignature Language="C++ CLI" Value="InternalImpl" />
+      <MemberSignature Language="F#" Value="InternalImpl = 1" Usage="System.Runtime.InteropServices.IDispatchImplType.InternalImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.SystemDefinedImpl" />
       <MemberSignature Language="VB.NET" Value="SystemDefinedImpl" />
       <MemberSignature Language="C++ CLI" Value="SystemDefinedImpl" />
+      <MemberSignature Language="F#" Value="SystemDefinedImpl = 0" Usage="System.Runtime.InteropServices.IDispatchImplType.SystemDefinedImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityDataSourceContextDisposingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceContextDisposingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type EntityDataSourceContextDisposingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ObjectContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectContext ^ Context { System::Data::Objects::ObjectContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Objects.ObjectContext" Usage="System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintDriverProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintDriverProperty&#xA;Inherits PrintProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintDriverProperty sealed : System::Printing::IndexedProperties::PrintProperty" />
+  <TypeSignature Language="F#" Value="type PrintDriverProperty = class&#xA;    inherit PrintProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDriverProperty.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintDriverProperty(System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintDriverProperty : string -&gt; System.Printing.IndexedProperties.PrintDriverProperty" Usage="new System.Printing.IndexedProperties.PrintDriverProperty attributeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDriverProperty.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String, attributeValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintDriverProperty(System::String ^ attributeName, System::Object ^ attributeValue);" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintDriverProperty : string * obj -&gt; System.Printing.IndexedProperties.PrintDriverProperty" Usage="new System.Printing.IndexedProperties.PrintDriverProperty (attributeName, attributeValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDriverProperty.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printDriverProperty.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDriverProperty.op_Implicit(System.Printing.IndexedProperties.PrintDriverProperty)~System.Printing.PrintDriver" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintDriverProperty) As PrintDriver" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintDriver ^(System::Printing::IndexedProperties::PrintDriverProperty ^ attribRef);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintDriverProperty -&gt; System.Printing.PrintDriver" Usage="System.Printing.IndexedProperties.PrintDriverProperty.op_Implicit attribRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -143,36 +148,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintDriver (System.Printing.IndexedProperties.PrintDriverProperty attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintDriver op_Implicit(class System.Printing.IndexedProperties.PrintDriverProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDriverProperty.op_Implicit(System.Printing.IndexedProperties.PrintDriverProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintDriver" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintDriverProperty) As PrintDriver" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintDriver ^(System::Printing::IndexedProperties::PrintDriverProperty ^ attribRef);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Printing.PrintDriver</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDriverProperty" />
-      </Parameters>
-      <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintDriverProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Printing.IndexedProperties.PrintDriverProperty.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

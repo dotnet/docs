@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingChangingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SettingChangingEventHandler(sender As Object, e As SettingChangingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SettingChangingEventHandler(System::Object ^ sender, SettingChangingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SettingChangingEventHandler = delegate of obj * SettingChangingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

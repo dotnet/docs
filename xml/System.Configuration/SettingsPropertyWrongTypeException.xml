@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsPropertyWrongTypeException" />
   <TypeSignature Language="VB.NET" Value="Public Class SettingsPropertyWrongTypeException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsPropertyWrongTypeException : Exception" />
+  <TypeSignature Language="F#" Value="type SettingsPropertyWrongTypeException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyWrongTypeException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsPropertyWrongTypeException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsPropertyWrongTypeException : string -&gt; System.Configuration.SettingsPropertyWrongTypeException" Usage="new System.Configuration.SettingsPropertyWrongTypeException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyWrongTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SettingsPropertyWrongTypeException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsPropertyWrongTypeException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Configuration.SettingsPropertyWrongTypeException" Usage="new System.Configuration.SettingsPropertyWrongTypeException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyWrongTypeException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsPropertyWrongTypeException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsPropertyWrongTypeException : string * Exception -&gt; System.Configuration.SettingsPropertyWrongTypeException" Usage="new System.Configuration.SettingsPropertyWrongTypeException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

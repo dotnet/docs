@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileGroupSettingsCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileGroupSettingsCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type ProfileGroupSettingsCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.Add(System.Web.Configuration.ProfileGroupSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (group As ProfileGroupSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::ProfileGroupSettings ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.ProfileGroupSettings -&gt; unit" Usage="profileGroupSettingsCollection.Add group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileGroupSettingsCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Web.Configuration.ProfileGroupSettingsCollection.AllKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="profileGroupSettingsCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="profileGroupSettingsCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As ProfileGroupSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::ProfileGroupSettings ^ Get(int index);" />
+      <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.Configuration.ProfileGroupSettings" Usage="profileGroupSettingsCollection.Get index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (name As String) As ProfileGroupSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::ProfileGroupSettings ^ Get(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Web.Configuration.ProfileGroupSettings" Usage="profileGroupSettingsCollection.Get name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="profileGroupSettingsCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="profileGroupSettingsCollection.GetKey index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.IndexOf(System.Web.Configuration.ProfileGroupSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (group As ProfileGroupSettings) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Configuration::ProfileGroupSettings ^ group);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Configuration.ProfileGroupSettings -&gt; int" Usage="profileGroupSettingsCollection.IndexOf group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -356,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsModified();" />
+      <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="profileGroupSettingsCollection.IsModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -389,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileGroupSettingsCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ProfileGroupSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProfileGroupSettings ^ default[int] { System::Web::Configuration::ProfileGroupSettings ^ get(int index); void set(int index, System::Web::Configuration::ProfileGroupSettings ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.ProfileGroupSettings with get, set" Usage="System.Web.Configuration.ProfileGroupSettingsCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -415,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileGroupSettingsCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ProfileGroupSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProfileGroupSettings ^ default[System::String ^] { System::Web::Configuration::ProfileGroupSettings ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.ProfileGroupSettings" Usage="System.Web.Configuration.ProfileGroupSettingsCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -441,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileGroupSettingsCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ProfileGroupSettingsCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -461,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="profileGroupSettingsCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -502,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="profileGroupSettingsCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -535,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.ResetModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ResetModified ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ResetModified();" />
+      <MemberSignature Language="F#" Value="override this.ResetModified : unit -&gt; unit" Usage="profileGroupSettingsCollection.ResetModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -555,6 +572,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileGroupSettingsCollection.Set(System.Web.Configuration.ProfileGroupSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (group As ProfileGroupSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Web::Configuration::ProfileGroupSettings ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Set : System.Web.Configuration.ProfileGroupSettings -&gt; unit" Usage="profileGroupSettingsCollection.Set group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

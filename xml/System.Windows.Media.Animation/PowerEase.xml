@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PowerEase" />
   <TypeSignature Language="VB.NET" Value="Public Class PowerEase&#xA;Inherits EasingFunctionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class PowerEase : System::Windows::Media::Animation::EasingFunctionBase" />
+  <TypeSignature Language="F#" Value="type PowerEase = class&#xA;    inherit EasingFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PowerEase.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="powerEase.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PowerEase.EaseInCore(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EaseInCore (normalizedTime As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double EaseInCore(double normalizedTime);" />
+      <MemberSignature Language="F#" Value="override this.EaseInCore : double -&gt; double" Usage="powerEase.EaseInCore normalizedTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.PowerEase.Power" />
       <MemberSignature Language="VB.NET" Value="Public Property Power As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Power { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Power : double with get, set" Usage="System.Windows.Media.Animation.PowerEase.Power" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.PowerEase.PowerProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PowerProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PowerProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PowerProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.PowerEase.PowerProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

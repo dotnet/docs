@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Validation.ValidationState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationState" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValidationState" />
+  <TypeSignature Language="F#" Value="type ValidationState = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Validation.ValidationState.ChildInvalid" />
       <MemberSignature Language="VB.NET" Value="ChildInvalid" />
       <MemberSignature Language="C++ CLI" Value="ChildInvalid" />
+      <MemberSignature Language="F#" Value="ChildInvalid = 1" Usage="System.Activities.Presentation.Validation.ValidationState.ChildInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Validation.ValidationState.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 3" Usage="System.Activities.Presentation.Validation.ValidationState.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Validation.ValidationState.Valid" />
       <MemberSignature Language="VB.NET" Value="Valid" />
       <MemberSignature Language="C++ CLI" Value="Valid" />
+      <MemberSignature Language="F#" Value="Valid = 0" Usage="System.Activities.Presentation.Validation.ValidationState.Valid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Validation.ValidationState.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 2" Usage="System.Activities.Presentation.Validation.ValidationState.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

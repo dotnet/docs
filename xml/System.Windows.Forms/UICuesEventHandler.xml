@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UICuesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub UICuesEventHandler(sender As Object, e As UICuesEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void UICuesEventHandler(System::Object ^ sender, UICuesEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type UICuesEventHandler = delegate of obj * UICuesEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

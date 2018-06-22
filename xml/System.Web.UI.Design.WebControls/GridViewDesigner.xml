@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.GridViewDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewDesigner&#xA;Inherits DataBoundControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewDesigner : System::Web::UI::Design::WebControls::DataBoundControlDesigner" />
+  <TypeSignature Language="F#" Value="type GridViewDesigner = class&#xA;    inherit DataBoundControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.GridViewDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.GridViewDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.GridViewDesigner.AutoFormats" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.WebControls.GridViewDesigner.AutoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DataBind (dataBoundControl As BaseDataBoundControl)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DataBind(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
+      <MemberSignature Language="F#" Value="override this.DataBind : System.Web.UI.WebControls.BaseDataBoundControl -&gt; unit" Usage="gridViewDesigner.DataBind dataBoundControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="gridViewDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string" Usage="gridViewDesigner.GetDesignTimeHtml regions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -298,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditableDesignerRegionContent (region As EditableDesignerRegion) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="override this.GetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion -&gt; string" Usage="gridViewDesigner.GetEditableDesignerRegionContent region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -331,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="gridViewDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -368,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick (e As DesignerRegionMouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick(System::Web::UI::Design::DesignerRegionMouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnClick : System.Web.UI.Design.DesignerRegionMouseEventArgs -&gt; unit" Usage="gridViewDesigner.OnClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -402,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.OnSchemaRefreshed" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSchemaRefreshed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSchemaRefreshed();" />
+      <MemberSignature Language="F#" Value="override this.OnSchemaRefreshed : unit -&gt; unit" Usage="gridViewDesigner.OnSchemaRefreshed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -432,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="gridViewDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -482,6 +493,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.GridViewDesigner.SampleRowCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SampleRowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int SampleRowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SampleRowCount : int" Usage="System.Web.UI.Design.WebControls.GridViewDesigner.SampleRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -511,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.GridViewDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetEditableDesignerRegionContent (region As EditableDesignerRegion, content As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
+      <MemberSignature Language="F#" Value="override this.SetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit" Usage="gridViewDesigner.SetEditableDesignerRegionContent (region, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -544,6 +557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.GridViewDesigner.TemplateGroups" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TemplateGroups As TemplateGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::TemplateGroupCollection ^ TemplateGroups { System::Web::UI::Design::TemplateGroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplateGroups : System.Web.UI.Design.TemplateGroupCollection" Usage="System.Web.UI.Design.WebControls.GridViewDesigner.TemplateGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -576,6 +590,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.GridViewDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.GridViewDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

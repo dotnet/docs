@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectDataSourceFilteringEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectDataSourceFilteringEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ObjectDataSourceFilteringEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.#ctor(System.Collections.Specialized.IOrderedDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameterValues As IOrderedDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDataSourceFilteringEventArgs(System::Collections::Specialized::IOrderedDictionary ^ parameterValues);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs : System.Collections.Specialized.IOrderedDictionary -&gt; System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs" Usage="new System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs parameterValues" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.ParameterValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterValues As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ ParameterValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.ParameterValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

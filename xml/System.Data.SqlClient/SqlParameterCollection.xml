@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlParameterCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlParameterCollection&#xA;Inherits DbParameterCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlParameterCollection sealed : System::Data::Common::DbParameterCollection, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type SqlParameterCollection = class&#xA;    inherit DbParameterCollection&#xA;    interface IDataParameterCollection&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Add(System.Data.SqlClient.SqlParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As SqlParameter) As SqlParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlParameter ^ Add(System::Data::SqlClient::SqlParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Data.SqlClient.SqlParameter -&gt; System.Data.SqlClient.SqlParameter" Usage="sqlParameterCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Add(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Add : obj -&gt; int" Usage="sqlParameterCollection.Add value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -158,6 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlParameter Add(string parameterName, valuetype System.Data.SqlDbType sqlDbType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Add(System.String,System.Data.SqlDbType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlParameter ^ Add(System::String ^ parameterName, System::Data::SqlDbType sqlDbType);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * System.Data.SqlDbType -&gt; System.Data.SqlClient.SqlParameter" Usage="sqlParameterCollection.Add (parameterName, sqlDbType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (parameterName As String, value As Object) As SqlParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlParameter ^ Add(System::String ^ parameterName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * obj -&gt; System.Data.SqlClient.SqlParameter" Usage="sqlParameterCollection.Add (parameterName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -254,6 +259,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlParameter Add(string parameterName, valuetype System.Data.SqlDbType sqlDbType, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Add(System.String,System.Data.SqlDbType,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlParameter ^ Add(System::String ^ parameterName, System::Data::SqlDbType sqlDbType, int size);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * System.Data.SqlDbType * int -&gt; System.Data.SqlClient.SqlParameter" Usage="sqlParameterCollection.Add (parameterName, sqlDbType, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -304,6 +310,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlParameter Add(string parameterName, valuetype System.Data.SqlDbType sqlDbType, int32 size, string sourceColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Add(System.String,System.Data.SqlDbType,System.Int32,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlParameter ^ Add(System::String ^ parameterName, System::Data::SqlDbType sqlDbType, int size, System::String ^ sourceColumn);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * System.Data.SqlDbType * int * string -&gt; System.Data.SqlClient.SqlParameter" Usage="sqlParameterCollection.Add (parameterName, sqlDbType, size, sourceColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -353,6 +360,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.AddRange(System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddRange (values As Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddRange(Array ^ values);" />
+      <MemberSignature Language="F#" Value="override this.AddRange : Array -&gt; unit" Usage="sqlParameterCollection.AddRange values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -386,6 +394,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.AddRange(System.Data.SqlClient.SqlParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As SqlParameter())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Data::SqlClient::SqlParameter ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.AddRange : System.Data.SqlClient.SqlParameter[] -&gt; unit" Usage="sqlParameterCollection.AddRange values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -419,6 +428,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddWithValue (parameterName As String, value As Object) As SqlParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlParameter ^ AddWithValue(System::String ^ parameterName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddWithValue : string * obj -&gt; System.Data.SqlClient.SqlParameter" Usage="sqlParameterCollection.AddWithValue (parameterName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -472,6 +482,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="sqlParameterCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -515,6 +526,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Contains(System.Data.SqlClient.SqlParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As SqlParameter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Data::SqlClient::SqlParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Contains : System.Data.SqlClient.SqlParameter -&gt; bool" Usage="sqlParameterCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -550,6 +562,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Contains(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Contains : obj -&gt; bool" Usage="sqlParameterCollection.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -588,6 +601,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Contains(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Contains : string -&gt; bool" Usage="sqlParameterCollection.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataParameterCollection.Contains(System.String)</InterfaceMember>
@@ -635,6 +649,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : Array * int -&gt; unit" Usage="sqlParameterCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -673,6 +688,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.CopyTo(System.Data.SqlClient.SqlParameter[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As SqlParameter(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::SqlClient::SqlParameter ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.SqlClient.SqlParameter[] * int -&gt; unit" Usage="sqlParameterCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -708,6 +724,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameterCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.SqlClient.SqlParameterCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -741,6 +758,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="sqlParameterCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -775,6 +793,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.GetParameter(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameter (index As Integer) As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ GetParameter(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetParameter : int -&gt; System.Data.Common.DbParameter" Usage="sqlParameterCollection.GetParameter index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -809,6 +828,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.GetParameter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameter (parameterName As String) As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ GetParameter(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="override this.GetParameter : string -&gt; System.Data.Common.DbParameter" Usage="sqlParameterCollection.GetParameter parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -853,6 +873,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.IndexOf(System.Data.SqlClient.SqlParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As SqlParameter) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Data::SqlClient::SqlParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : System.Data.SqlClient.SqlParameter -&gt; int" Usage="sqlParameterCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -887,6 +908,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IndexOf (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int IndexOf(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : obj -&gt; int" Usage="sqlParameterCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -924,6 +946,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IndexOf (parameterName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int IndexOf(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : string -&gt; int" Usage="sqlParameterCollection.IndexOf parameterName" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataParameterCollection.IndexOf(System.String)</InterfaceMember>
@@ -971,6 +994,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Insert(System.Int32,System.Data.SqlClient.SqlParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As SqlParameter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Data::SqlClient::SqlParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * System.Data.SqlClient.SqlParameter -&gt; unit" Usage="sqlParameterCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1006,6 +1030,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Insert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Insert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * obj -&gt; unit" Usage="sqlParameterCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -1044,6 +1069,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameterCollection.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Data.SqlClient.SqlParameterCollection.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1068,6 +1094,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameterCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.SqlClient.SqlParameterCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1092,6 +1119,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameterCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Data.SqlClient.SqlParameterCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1126,6 +1154,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameterCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As SqlParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlParameter ^ default[int] { System::Data::SqlClient::SqlParameter ^ get(int index); void set(int index, System::Data::SqlClient::SqlParameter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.SqlClient.SqlParameter with get, set" Usage="System.Data.SqlClient.SqlParameterCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1178,6 +1207,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameterCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(parameterName As String) As SqlParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlParameter ^ default[System::String ^] { System::Data::SqlClient::SqlParameter ^ get(System::String ^ parameterName); void set(System::String ^ parameterName, System::Data::SqlClient::SqlParameter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Data.SqlClient.SqlParameter with get, set" Usage="System.Data.SqlClient.SqlParameterCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1238,6 +1268,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Remove(System.Data.SqlClient.SqlParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As SqlParameter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::SqlClient::SqlParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Remove : System.Data.SqlClient.SqlParameter -&gt; unit" Usage="sqlParameterCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1283,6 +1314,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Remove : obj -&gt; unit" Usage="sqlParameterCollection.Remove value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
@@ -1329,6 +1361,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : int -&gt; unit" Usage="sqlParameterCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -1365,6 +1398,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.RemoveAt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (parameterName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : string -&gt; unit" Usage="sqlParameterCollection.RemoveAt parameterName" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataParameterCollection.RemoveAt(System.String)</InterfaceMember>
@@ -1401,6 +1435,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.SetParameter(System.Int32,System.Data.Common.DbParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParameter (index As Integer, value As DbParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParameter(int index, System::Data::Common::DbParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.SetParameter : int * System.Data.Common.DbParameter -&gt; unit" Usage="sqlParameterCollection.SetParameter (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1436,6 +1471,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameterCollection.SetParameter(System.String,System.Data.Common.DbParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParameter (parameterName As String, value As DbParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParameter(System::String ^ parameterName, System::Data::Common::DbParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.SetParameter : string * System.Data.Common.DbParameter -&gt; unit" Usage="sqlParameterCollection.SetParameter (parameterName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1471,6 +1507,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameterCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Data.SqlClient.SqlParameterCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

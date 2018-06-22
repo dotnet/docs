@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlLiteralTextAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class WmlLiteralTextAdapter&#xA;Inherits WmlControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class WmlLiteralTextAdapter : System::Web::UI::MobileControls::Adapters::WmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type WmlLiteralTextAdapter = class&#xA;    inherit WmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlLiteralTextAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As LiteralText" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::LiteralText ^ Control { System::Web::UI::MobileControls::LiteralText ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.LiteralText" Usage="System.Web.UI.MobileControls.Adapters.WmlLiteralTextAdapter.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlLiteralTextAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As WmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit" Usage="wmlLiteralTextAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

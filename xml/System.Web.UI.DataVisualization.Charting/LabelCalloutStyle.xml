@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LabelCalloutStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum LabelCalloutStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class LabelCalloutStyle" />
+  <TypeSignature Language="F#" Value="type LabelCalloutStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelCalloutStyle.Box" />
       <MemberSignature Language="VB.NET" Value="Box" />
       <MemberSignature Language="C++ CLI" Value="Box" />
+      <MemberSignature Language="F#" Value="Box = 2" Usage="System.Web.UI.DataVisualization.Charting.LabelCalloutStyle.Box" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelCalloutStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.LabelCalloutStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelCalloutStyle.Underlined" />
       <MemberSignature Language="VB.NET" Value="Underlined" />
       <MemberSignature Language="C++ CLI" Value="Underlined" />
+      <MemberSignature Language="F#" Value="Underlined = 1" Usage="System.Web.UI.DataVisualization.Charting.LabelCalloutStyle.Underlined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

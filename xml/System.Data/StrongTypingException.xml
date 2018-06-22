@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.StrongTypingException" />
   <TypeSignature Language="VB.NET" Value="Public Class StrongTypingException&#xA;Inherits DataException" />
   <TypeSignature Language="C++ CLI" Value="public ref class StrongTypingException : System::Data::DataException" />
+  <TypeSignature Language="F#" Value="type StrongTypingException = class&#xA;    inherit DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.StrongTypingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongTypingException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.StrongTypingException : string -&gt; System.Data.StrongTypingException" Usage="new System.Data.StrongTypingException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.StrongTypingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; StrongTypingException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Data.StrongTypingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.StrongTypingException" Usage="new System.Data.StrongTypingException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.StrongTypingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongTypingException(System::String ^ s, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.StrongTypingException : string * Exception -&gt; System.Data.StrongTypingException" Usage="new System.Data.StrongTypingException (s, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

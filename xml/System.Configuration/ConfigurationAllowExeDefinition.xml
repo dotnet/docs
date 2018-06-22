@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationAllowExeDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationAllowExeDefinition" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationAllowExeDefinition" />
+  <TypeSignature Language="F#" Value="type ConfigurationAllowExeDefinition = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowExeDefinition.MachineOnly" />
       <MemberSignature Language="VB.NET" Value="MachineOnly" />
       <MemberSignature Language="C++ CLI" Value="MachineOnly" />
+      <MemberSignature Language="F#" Value="MachineOnly = 0" Usage="System.Configuration.ConfigurationAllowExeDefinition.MachineOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowExeDefinition.MachineToApplication" />
       <MemberSignature Language="VB.NET" Value="MachineToApplication" />
       <MemberSignature Language="C++ CLI" Value="MachineToApplication" />
+      <MemberSignature Language="F#" Value="MachineToApplication = 100" Usage="System.Configuration.ConfigurationAllowExeDefinition.MachineToApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowExeDefinition.MachineToLocalUser" />
       <MemberSignature Language="VB.NET" Value="MachineToLocalUser" />
       <MemberSignature Language="C++ CLI" Value="MachineToLocalUser" />
+      <MemberSignature Language="F#" Value="MachineToLocalUser = 300" Usage="System.Configuration.ConfigurationAllowExeDefinition.MachineToLocalUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowExeDefinition.MachineToRoamingUser" />
       <MemberSignature Language="VB.NET" Value="MachineToRoamingUser" />
       <MemberSignature Language="C++ CLI" Value="MachineToRoamingUser" />
+      <MemberSignature Language="F#" Value="MachineToRoamingUser = 200" Usage="System.Configuration.ConfigurationAllowExeDefinition.MachineToRoamingUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

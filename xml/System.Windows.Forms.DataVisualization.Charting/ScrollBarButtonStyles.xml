@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollBarButtonStyles" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollBarButtonStyles" />
+  <TypeSignature Language="F#" Value="type ScrollBarButtonStyles = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.ResetZoom" />
       <MemberSignature Language="VB.NET" Value="ResetZoom" />
       <MemberSignature Language="C++ CLI" Value="ResetZoom" />
+      <MemberSignature Language="F#" Value="ResetZoom = 2" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.ResetZoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll" />
       <MemberSignature Language="VB.NET" Value="SmallScroll" />
       <MemberSignature Language="C++ CLI" Value="SmallScroll" />
+      <MemberSignature Language="F#" Value="SmallScroll = 1" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

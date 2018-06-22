@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeTransmissionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PipeTransmissionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PipeTransmissionMode" />
+  <TypeSignature Language="F#" Value="type PipeTransmissionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeTransmissionMode.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
       <MemberSignature Language="C++ CLI" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 0" Usage="System.IO.Pipes.PipeTransmissionMode.Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeTransmissionMode.Message" />
       <MemberSignature Language="VB.NET" Value="Message" />
       <MemberSignature Language="C++ CLI" Value="Message" />
+      <MemberSignature Language="F#" Value="Message = 1" Usage="System.IO.Pipes.PipeTransmissionMode.Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>

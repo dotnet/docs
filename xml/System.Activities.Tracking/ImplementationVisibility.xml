@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.ImplementationVisibility" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImplementationVisibility" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImplementationVisibility" />
+  <TypeSignature Language="F#" Value="type ImplementationVisibility = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.ImplementationVisibility.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1" Usage="System.Activities.Tracking.ImplementationVisibility.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.ImplementationVisibility.RootScope" />
       <MemberSignature Language="VB.NET" Value="RootScope" />
       <MemberSignature Language="C++ CLI" Value="RootScope" />
+      <MemberSignature Language="F#" Value="RootScope = 0" Usage="System.Activities.Tracking.ImplementationVisibility.RootScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

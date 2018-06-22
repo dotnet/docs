@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.PropertyItem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyItem sealed" />
+  <TypeSignature Language="F#" Value="type PropertyItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.PropertyItem.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int with get, set" Usage="System.Drawing.Imaging.PropertyItem.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -292,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.PropertyItem.Len" />
       <MemberSignature Language="VB.NET" Value="Public Property Len As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Len { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Len : int with get, set" Usage="System.Drawing.Imaging.PropertyItem.Len" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -312,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.PropertyItem.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Type { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : int16 with get, set" Usage="System.Drawing.Imaging.PropertyItem.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -352,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.PropertyItem.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Value { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : byte[] with get, set" Usage="System.Drawing.Imaging.PropertyItem.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

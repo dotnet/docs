@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalServiceSecuritySettingsElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalServiceSecuritySettingsElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type LocalServiceSecuritySettingsElement = class&#xA;    inherit ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.DetectReplays" />
       <MemberSignature Language="VB.NET" Value="Public Property DetectReplays As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DetectReplays { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DetectReplays : bool with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.DetectReplays" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.InactivityTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property InactivityTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan InactivityTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.InactivityTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.InactivityTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.IssuedCookieLifetime" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuedCookieLifetime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IssuedCookieLifetime { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.IssuedCookieLifetime : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.IssuedCookieLifetime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.MaxCachedCookies" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxCachedCookies As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxCachedCookies { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCachedCookies : int with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.MaxCachedCookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.MaxClockSkew" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxClockSkew As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxClockSkew { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxClockSkew : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.MaxClockSkew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.MaxPendingSessions" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingSessions As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingSessions { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingSessions : int with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.MaxPendingSessions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.MaxStatefulNegotiations" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxStatefulNegotiations As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxStatefulNegotiations { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxStatefulNegotiations : int with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.MaxStatefulNegotiations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.NegotiationTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property NegotiationTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan NegotiationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.NegotiationTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.NegotiationTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -298,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.ReconnectTransportOnFailure" />
       <MemberSignature Language="VB.NET" Value="Public Property ReconnectTransportOnFailure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReconnectTransportOnFailure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReconnectTransportOnFailure : bool with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.ReconnectTransportOnFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -351,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.ReplayCacheSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplayCacheSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReplayCacheSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplayCacheSize : int with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.ReplayCacheSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -386,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.ReplayWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplayWindow As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReplayWindow { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplayWindow : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.ReplayWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -421,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.SessionKeyRenewalInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionKeyRenewalInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SessionKeyRenewalInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionKeyRenewalInterval : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.SessionKeyRenewalInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -449,6 +463,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.SessionKeyRolloverInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionKeyRolloverInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SessionKeyRolloverInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionKeyRolloverInterval : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.SessionKeyRolloverInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -484,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.TimestampValidityDuration" />
       <MemberSignature Language="VB.NET" Value="Public Property TimestampValidityDuration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimestampValidityDuration { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.TimestampValidityDuration : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement.TimestampValidityDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

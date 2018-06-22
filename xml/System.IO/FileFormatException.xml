@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileFormatException" />
   <TypeSignature Language="VB.NET" Value="Public Class FileFormatException&#xA;Inherits FormatException" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileFormatException : FormatException" />
+  <TypeSignature Language="F#" Value="type FileFormatException = class&#xA;    inherit FormatException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : string -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(Uri ^ sourceUri);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : Uri -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException sourceUri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FileFormatException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : string * Exception -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Uri,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(Uri ^ sourceUri, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : Uri * Exception -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (sourceUri, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(Uri ^ sourceUri, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : Uri * string -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (sourceUri, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -254,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Uri,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(Uri ^ sourceUri, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : Uri * string * Exception -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (sourceUri, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -292,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="fileFormatException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -325,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileFormatException.SourceUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : Uri" Usage="System.IO.FileFormatException.SourceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

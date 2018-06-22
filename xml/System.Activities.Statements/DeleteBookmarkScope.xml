@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.DeleteBookmarkScope" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeleteBookmarkScope&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeleteBookmarkScope sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type DeleteBookmarkScope = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DeleteBookmarkScope.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="deleteBookmarkScope.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.DeleteBookmarkScope.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="deleteBookmarkScope.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.DeleteBookmarkScope.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As InArgument(Of BookmarkScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::Activities::BookmarkScope ^&gt; ^ Scope { System::Activities::InArgument&lt;System::Activities::BookmarkScope ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::Activities::BookmarkScope ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Activities.InArgument&lt;System.Activities.BookmarkScope&gt; with get, set" Usage="System.Activities.Statements.DeleteBookmarkScope.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

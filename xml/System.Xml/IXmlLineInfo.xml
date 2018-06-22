@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlLineInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXmlLineInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXmlLineInfo" />
+  <TypeSignature Language="F#" Value="type IXmlLineInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlLineInfo.HasLineInfo" />
       <MemberSignature Language="VB.NET" Value="Public Function HasLineInfo () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasLineInfo();" />
+      <MemberSignature Language="F#" Value="abstract member HasLineInfo : unit -&gt; bool" Usage="iXmlLineInfo.HasLineInfo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.IXmlLineInfo.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Xml.IXmlLineInfo.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.IXmlLineInfo.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Xml.IXmlLineInfo.LinePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ProtectedData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtectedData" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProtectedData sealed" />
+  <TypeSignature Language="F#" Value="type ProtectedData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedData.Protect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Protect (userData As Byte(), optionalEntropy As Byte(), scope As DataProtectionScope) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Protect(cli::array &lt;System::Byte&gt; ^ userData, cli::array &lt;System::Byte&gt; ^ optionalEntropy, System::Security::Cryptography::DataProtectionScope scope);" />
+      <MemberSignature Language="F#" Value="static member Protect : byte[] * byte[] * System.Security.Cryptography.DataProtectionScope -&gt; byte[]" Usage="System.Security.Cryptography.ProtectedData.Protect (userData, optionalEntropy, scope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedData.Unprotect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Unprotect (encryptedData As Byte(), optionalEntropy As Byte(), scope As DataProtectionScope) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Unprotect(cli::array &lt;System::Byte&gt; ^ encryptedData, cli::array &lt;System::Byte&gt; ^ optionalEntropy, System::Security::Cryptography::DataProtectionScope scope);" />
+      <MemberSignature Language="F#" Value="static member Unprotect : byte[] * byte[] * System.Security.Cryptography.DataProtectionScope -&gt; byte[]" Usage="System.Security.Cryptography.ProtectedData.Unprotect (encryptedData, optionalEntropy, scope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>

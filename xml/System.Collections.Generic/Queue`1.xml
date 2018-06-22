@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Queue`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Queue(Of T)&#xA;Implements ICollection, IEnumerable(Of T), IReadOnlyCollection(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Queue : System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type Queue&lt;'T&gt; = class&#xA;    interface seq&lt;'T&gt;&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -163,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Queue(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.Queue&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Collections.Generic.Queue&lt;'T&gt;" Usage="new System.Collections.Generic.Queue&lt;'T&gt; collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -226,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Queue(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.Queue&lt;'T&gt; : int -&gt; System.Collections.Generic.Queue&lt;'T&gt;" Usage="new System.Collections.Generic.Queue&lt;'T&gt; capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -273,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="queue.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -333,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(T item);" />
+      <MemberSignature Language="F#" Value="member this.Contains : 'T -&gt; bool" Usage="queue.Contains item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -395,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] * int -&gt; unit" Usage="queue.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -446,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Queue`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.Queue&lt;'T&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -509,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Dequeue" />
       <MemberSignature Language="VB.NET" Value="Public Function Dequeue () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Dequeue();" />
+      <MemberSignature Language="F#" Value="member this.Dequeue : unit -&gt; 'T" Usage="queue.Dequeue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -572,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Enqueue(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enqueue (item As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enqueue(T item);" />
+      <MemberSignature Language="F#" Value="member this.Enqueue : 'T -&gt; unit" Usage="queue.Enqueue item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -634,6 +643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As Queue(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::Queue&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.Queue&lt;'T&gt;.Enumerator" Usage="queue.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -708,6 +718,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Function Peek () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Peek();" />
+      <MemberSignature Language="F#" Value="member this.Peek : unit -&gt; 'T" Usage="queue.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -901,6 +912,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Queue`1.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.Queue&lt;'T&gt;.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -951,6 +963,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Queue`1.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.Queue&lt;'T&gt;.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1087,6 +1100,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; 'T[]" Usage="queue.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1145,6 +1159,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.TrimExcess" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrimExcess ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimExcess();" />
+      <MemberSignature Language="F#" Value="member this.TrimExcess : unit -&gt; unit" Usage="queue.TrimExcess " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1190,6 +1205,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.TryDequeue(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryDequeue (ByRef result As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryDequeue([Runtime::InteropServices::Out] T % result);" />
+      <MemberSignature Language="F#" Value="member this.TryDequeue :  -&gt; bool" Usage="queue.TryDequeue result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1215,6 +1231,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.TryPeek(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryPeek (ByRef result As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryPeek([Runtime::InteropServices::Out] T % result);" />
+      <MemberSignature Language="F#" Value="member this.TryPeek :  -&gt; bool" Usage="queue.TryPeek result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>

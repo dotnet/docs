@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialog" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FileDialog&#xA;Inherits CommonDialog" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileDialog abstract : System::Windows::Forms::CommonDialog" />
+  <TypeSignature Language="F#" Value="type FileDialog = class&#xA;    inherit CommonDialog" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.AddExtension" />
       <MemberSignature Language="VB.NET" Value="Public Property AddExtension As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AddExtension { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AddExtension : bool with get, set" Usage="System.Windows.Forms.FileDialog.AddExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.AutoUpgradeEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoUpgradeEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoUpgradeEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoUpgradeEnabled : bool with get, set" Usage="System.Windows.Forms.FileDialog.AutoUpgradeEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.CheckFileExists" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CheckFileExists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CheckFileExists { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckFileExists : bool with get, set" Usage="System.Windows.Forms.FileDialog.CheckFileExists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.CheckPathExists" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckPathExists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckPathExists { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckPathExists : bool with get, set" Usage="System.Windows.Forms.FileDialog.CheckPathExists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -221,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.CustomPlaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomPlaces As FileDialogCustomPlacesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FileDialogCustomPlacesCollection ^ CustomPlaces { System::Windows::Forms::FileDialogCustomPlacesCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomPlaces : System.Windows.Forms.FileDialogCustomPlacesCollection" Usage="System.Windows.Forms.FileDialog.CustomPlaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.DefaultExt" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultExt As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultExt { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultExt : string with get, set" Usage="System.Windows.Forms.FileDialog.DefaultExt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -307,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.DereferenceLinks" />
       <MemberSignature Language="VB.NET" Value="Public Property DereferenceLinks As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DereferenceLinks { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DereferenceLinks : bool with get, set" Usage="System.Windows.Forms.FileDialog.DereferenceLinks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FileDialog.EventFileOk" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly EventFileOk As Object " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Object ^ EventFileOk;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EventFileOk : obj" Usage="System.Windows.Forms.FileDialog.EventFileOk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -353,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.Windows.Forms.FileDialog.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -404,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.FileNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ FileNames { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileNames : string[]" Usage="System.Windows.Forms.FileDialog.FileNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -449,6 +460,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.FileDialog.FileOk" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FileOk As CancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ FileOk;" />
+      <MemberSignature Language="F#" Value="member this.FileOk : System.ComponentModel.CancelEventHandler " Usage="member this.FileOk : System.ComponentModel.CancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -485,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.Windows.Forms.FileDialog.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -543,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.FilterIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilterIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterIndex : int with get, set" Usage="System.Windows.Forms.FileDialog.FilterIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -589,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HookProc (hWnd As IntPtr, msg As Integer, wparam As IntPtr, lparam As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IntPtr HookProc(IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
+      <MemberSignature Language="F#" Value="override this.HookProc : nativeint * int * nativeint * nativeint -&gt; nativeint" Usage="fileDialog.HookProc (hWnd, msg, wparam, lparam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -631,6 +646,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.InitialDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitialDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialDirectory : string with get, set" Usage="System.Windows.Forms.FileDialog.InitialDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -690,6 +706,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.Instance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Instance As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property IntPtr Instance { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Instance : nativeint" Usage="System.Windows.Forms.FileDialog.Instance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -710,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.OnFileOk(System.ComponentModel.CancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnFileOk (e As CancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnFileOk(System::ComponentModel::CancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnFileOk : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="fileDialog.OnFileOk e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -734,6 +752,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.Options" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Options As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Options { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Options : int" Usage="System.Windows.Forms.FileDialog.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -761,6 +780,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="fileDialog.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -784,6 +804,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.RestoreDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property RestoreDirectory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RestoreDirectory { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RestoreDirectory : bool with get, set" Usage="System.Windows.Forms.FileDialog.RestoreDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -823,6 +844,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.RunDialog(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RunDialog (hWndOwner As IntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool RunDialog(IntPtr hWndOwner);" />
+      <MemberSignature Language="F#" Value="override this.RunDialog : nativeint -&gt; bool" Usage="fileDialog.RunDialog hWndOwner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -857,6 +879,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.ShowHelp" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowHelp As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowHelp { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowHelp : bool with get, set" Usage="System.Windows.Forms.FileDialog.ShowHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -890,6 +913,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.SupportMultiDottedExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportMultiDottedExtensions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportMultiDottedExtensions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportMultiDottedExtensions : bool with get, set" Usage="System.Windows.Forms.FileDialog.SupportMultiDottedExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -934,6 +958,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Windows.Forms.FileDialog.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -979,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="fileDialog.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1000,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.ValidateNames" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateNames As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateNames { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateNames : bool with get, set" Usage="System.Windows.Forms.FileDialog.ValidateNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

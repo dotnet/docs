@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ICriticalNotifyCompletion" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICriticalNotifyCompletion&#xA;Implements INotifyCompletion" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICriticalNotifyCompletion : System::Runtime::CompilerServices::INotifyCompletion" />
+  <TypeSignature Language="F#" Value="type ICriticalNotifyCompletion = interface&#xA;    interface INotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnsafeOnCompleted (continuation As Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnsafeOnCompleted(Action ^ continuation);" />
+      <MemberSignature Language="F#" Value="abstract member UnsafeOnCompleted : Action -&gt; unit" Usage="iCriticalNotifyCompletion.UnsafeOnCompleted continuation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

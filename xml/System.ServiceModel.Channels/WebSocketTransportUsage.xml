@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebSocketTransportUsage" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebSocketTransportUsage" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebSocketTransportUsage" />
+  <TypeSignature Language="F#" Value="type WebSocketTransportUsage = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebSocketTransportUsage.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 1" Usage="System.ServiceModel.Channels.WebSocketTransportUsage.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebSocketTransportUsage.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 2" Usage="System.ServiceModel.Channels.WebSocketTransportUsage.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebSocketTransportUsage.WhenDuplex" />
       <MemberSignature Language="VB.NET" Value="WhenDuplex" />
       <MemberSignature Language="C++ CLI" Value="WhenDuplex" />
+      <MemberSignature Language="F#" Value="WhenDuplex = 0" Usage="System.ServiceModel.Channels.WebSocketTransportUsage.WhenDuplex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

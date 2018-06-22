@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbExpressionBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbExpressionBinding sealed" />
+  <TypeSignature Language="F#" Value="type DbExpressionBinding = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpressionBinding.Expression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Expression { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbExpressionBinding.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpressionBinding.Variable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variable As DbVariableReferenceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbVariableReferenceExpression ^ Variable { System::Data::Common::CommandTrees::DbVariableReferenceExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Variable : System.Data.Common.CommandTrees.DbVariableReferenceExpression" Usage="System.Data.Common.CommandTrees.DbExpressionBinding.Variable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpressionBinding.VariableName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VariableName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VariableName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VariableName : string" Usage="System.Data.Common.CommandTrees.DbExpressionBinding.VariableName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpressionBinding.VariableType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VariableType As TypeUsage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::TypeUsage ^ VariableType { System::Data::Metadata::Edm::TypeUsage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VariableType : System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Common.CommandTrees.DbExpressionBinding.VariableType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

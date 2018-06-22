@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.ReadOnlyPermissionSet" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReadOnlyPermissionSet&#xA;Inherits PermissionSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyPermissionSet sealed : System::Security::PermissionSet" />
+  <TypeSignature Language="F#" Value="type ReadOnlyPermissionSet = class&#xA;    inherit PermissionSet" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.#ctor(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionSetXml As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyPermissionSet(System::Security::SecurityElement ^ permissionSetXml);" />
+      <MemberSignature Language="F#" Value="new System.Security.ReadOnlyPermissionSet : System.Security.SecurityElement -&gt; System.Security.ReadOnlyPermissionSet" Usage="new System.Security.ReadOnlyPermissionSet permissionSetXml" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.AddPermissionImpl(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function AddPermissionImpl (perm As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Security::IPermission ^ AddPermissionImpl(System::Security::IPermission ^ perm);" />
+      <MemberSignature Language="F#" Value="override this.AddPermissionImpl : System.Security.IPermission -&gt; System.Security.IPermission" Usage="readOnlyPermissionSet.AddPermissionImpl perm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::PermissionSet ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.PermissionSet" Usage="readOnlyPermissionSet.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (et As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ et);" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="readOnlyPermissionSet.FromXml et" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.GetEnumeratorImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEnumeratorImpl () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IEnumerator ^ GetEnumeratorImpl();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumeratorImpl : unit -&gt; System.Collections.IEnumerator" Usage="readOnlyPermissionSet.GetEnumeratorImpl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.GetPermissionImpl(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetPermissionImpl (permClass As Type) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Security::IPermission ^ GetPermissionImpl(Type ^ permClass);" />
+      <MemberSignature Language="F#" Value="override this.GetPermissionImpl : Type -&gt; System.Security.IPermission" Usage="readOnlyPermissionSet.GetPermissionImpl permClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.ReadOnlyPermissionSet.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Security.ReadOnlyPermissionSet.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.RemovePermissionImpl(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RemovePermissionImpl (permClass As Type) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Security::IPermission ^ RemovePermissionImpl(Type ^ permClass);" />
+      <MemberSignature Language="F#" Value="override this.RemovePermissionImpl : Type -&gt; System.Security.IPermission" Usage="readOnlyPermissionSet.RemovePermissionImpl permClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.SetPermissionImpl(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SetPermissionImpl (perm As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Security::IPermission ^ SetPermissionImpl(System::Security::IPermission ^ perm);" />
+      <MemberSignature Language="F#" Value="override this.SetPermissionImpl : System.Security.IPermission -&gt; System.Security.IPermission" Usage="readOnlyPermissionSet.SetPermissionImpl perm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.ReadOnlyPermissionSet.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="readOnlyPermissionSet.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

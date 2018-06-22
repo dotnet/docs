@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeNamespaceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeNamespaceCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeNamespaceCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CodeNamespaceCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.#ctor(System.CodeDom.CodeNamespace[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeNamespace())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNamespaceCollection(cli::array &lt;System::CodeDom::CodeNamespace ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeNamespaceCollection : System.CodeDom.CodeNamespace[] -&gt; System.CodeDom.CodeNamespaceCollection" Usage="new System.CodeDom.CodeNamespaceCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.#ctor(System.CodeDom.CodeNamespaceCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeNamespaceCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNamespaceCollection(System::CodeDom::CodeNamespaceCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeNamespaceCollection : System.CodeDom.CodeNamespaceCollection -&gt; System.CodeDom.CodeNamespaceCollection" Usage="new System.CodeDom.CodeNamespaceCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.Add(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeNamespace) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeNamespace ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.CodeNamespace -&gt; int" Usage="codeNamespaceCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.AddRange(System.CodeDom.CodeNamespace[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeNamespace())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeNamespace ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeNamespace[] -&gt; unit" Usage="codeNamespaceCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.AddRange(System.CodeDom.CodeNamespaceCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeNamespaceCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeNamespaceCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeNamespaceCollection -&gt; unit" Usage="codeNamespaceCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.Contains(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeNamespace) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeNamespace ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.CodeNamespace -&gt; bool" Usage="codeNamespaceCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -316,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.CopyTo(System.CodeDom.CodeNamespace[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeNamespace(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeNamespace ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.CodeNamespace[] * int -&gt; unit" Usage="codeNamespaceCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -364,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.IndexOf(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeNamespace) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeNamespace ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.CodeNamespace -&gt; int" Usage="codeNamespaceCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -404,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.Insert(System.Int32,System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeNamespace)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeNamespace ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.CodeNamespace -&gt; unit" Usage="codeNamespaceCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -445,6 +455,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespaceCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeNamespace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeNamespace ^ default[int] { System::CodeDom::CodeNamespace ^ get(int index); void set(int index, System::CodeDom::CodeNamespace ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.CodeNamespace with get, set" Usage="System.CodeDom.CodeNamespaceCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -482,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.Remove(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeNamespace)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeNamespace ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.CodeNamespace -&gt; unit" Usage="codeNamespaceCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

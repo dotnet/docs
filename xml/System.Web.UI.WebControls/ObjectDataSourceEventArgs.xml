@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectDataSourceEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectDataSourceEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ObjectDataSourceEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (objectInstance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDataSourceEventArgs(System::Object ^ objectInstance);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ObjectDataSourceEventArgs : obj -&gt; System.Web.UI.WebControls.ObjectDataSourceEventArgs" Usage="new System.Web.UI.WebControls.ObjectDataSourceEventArgs objectInstance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property ObjectInstance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectInstance { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectInstance : obj with get, set" Usage="System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

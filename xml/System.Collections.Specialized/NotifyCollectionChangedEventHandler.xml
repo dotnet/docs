@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NotifyCollectionChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub NotifyCollectionChangedEventHandler(sender As Object, e As NotifyCollectionChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void NotifyCollectionChangedEventHandler(System::Object ^ sender, NotifyCollectionChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type NotifyCollectionChangedEventHandler = delegate of obj * NotifyCollectionChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

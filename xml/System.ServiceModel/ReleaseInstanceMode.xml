@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReleaseInstanceMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReleaseInstanceMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReleaseInstanceMode" />
+  <TypeSignature Language="F#" Value="type ReleaseInstanceMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ReleaseInstanceMode.AfterCall" />
       <MemberSignature Language="VB.NET" Value="AfterCall" />
       <MemberSignature Language="C++ CLI" Value="AfterCall" />
+      <MemberSignature Language="F#" Value="AfterCall = 2" Usage="System.ServiceModel.ReleaseInstanceMode.AfterCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ReleaseInstanceMode.BeforeAndAfterCall" />
       <MemberSignature Language="VB.NET" Value="BeforeAndAfterCall" />
       <MemberSignature Language="C++ CLI" Value="BeforeAndAfterCall" />
+      <MemberSignature Language="F#" Value="BeforeAndAfterCall = 3" Usage="System.ServiceModel.ReleaseInstanceMode.BeforeAndAfterCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ReleaseInstanceMode.BeforeCall" />
       <MemberSignature Language="VB.NET" Value="BeforeCall" />
       <MemberSignature Language="C++ CLI" Value="BeforeCall" />
+      <MemberSignature Language="F#" Value="BeforeCall = 1" Usage="System.ServiceModel.ReleaseInstanceMode.BeforeCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ReleaseInstanceMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.ReleaseInstanceMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

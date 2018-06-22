@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataSourceBooleanViewSchemaConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class DataSourceBooleanViewSchemaConverter&#xA;Inherits DataSourceViewSchemaConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSourceBooleanViewSchemaConverter : System::Web::UI::Design::DataSourceViewSchemaConverter" />
+  <TypeSignature Language="F#" Value="type DataSourceBooleanViewSchemaConverter = class&#xA;    inherit DataSourceViewSchemaConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceBooleanViewSchemaConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataSourceBooleanViewSchemaConverter.GetStandardValues context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

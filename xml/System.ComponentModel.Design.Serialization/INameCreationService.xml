@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.INameCreationService" />
   <TypeSignature Language="VB.NET" Value="Public Interface INameCreationService" />
   <TypeSignature Language="C++ CLI" Value="public interface class INameCreationService" />
+  <TypeSignature Language="F#" Value="type INameCreationService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.CreateName(System.ComponentModel.IContainer,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateName (container As IContainer, dataType As Type) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateName(System::ComponentModel::IContainer ^ container, Type ^ dataType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateName : System.ComponentModel.IContainer * Type -&gt; string" Usage="iNameCreationService.CreateName (container, dataType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsValidName (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsValidName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidName : string -&gt; bool" Usage="iNameCreationService.IsValidName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.ValidateName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ValidateName (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateName : string -&gt; unit" Usage="iNameCreationService.ValidateName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

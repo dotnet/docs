@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ExponentialEase" />
   <TypeSignature Language="VB.NET" Value="Public Class ExponentialEase&#xA;Inherits EasingFunctionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExponentialEase : System::Windows::Media::Animation::EasingFunctionBase" />
+  <TypeSignature Language="F#" Value="type ExponentialEase = class&#xA;    inherit EasingFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ExponentialEase.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="exponentialEase.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ExponentialEase.EaseInCore(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EaseInCore (normalizedTime As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double EaseInCore(double normalizedTime);" />
+      <MemberSignature Language="F#" Value="override this.EaseInCore : double -&gt; double" Usage="exponentialEase.EaseInCore normalizedTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ExponentialEase.Exponent" />
       <MemberSignature Language="VB.NET" Value="Public Property Exponent As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Exponent { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Exponent : double with get, set" Usage="System.Windows.Media.Animation.ExponentialEase.Exponent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ExponentialEase.ExponentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExponentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExponentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExponentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ExponentialEase.ExponentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

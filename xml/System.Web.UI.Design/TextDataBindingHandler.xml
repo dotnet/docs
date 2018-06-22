@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TextDataBindingHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class TextDataBindingHandler&#xA;Inherits DataBindingHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextDataBindingHandler : System::Web::UI::Design::DataBindingHandler" />
+  <TypeSignature Language="F#" Value="type TextDataBindingHandler = class&#xA;    inherit DataBindingHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DataBindControl(class System.ComponentModel.Design.IDesignerHost designerHost, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TextDataBindingHandler.DataBindControl(System.ComponentModel.Design.IDesignerHost,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBindControl(System::ComponentModel::Design::IDesignerHost ^ designerHost, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.DataBindControl : System.ComponentModel.Design.IDesignerHost * System.Web.UI.Control -&gt; unit" Usage="textDataBindingHandler.DataBindControl (designerHost, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

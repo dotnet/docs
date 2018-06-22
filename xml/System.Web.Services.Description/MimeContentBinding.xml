@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeContentBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeContentBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class MimeContentBinding sealed : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type MimeContentBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.MimeContentBinding.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Description.MimeContentBinding.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeContentBinding.Part" />
       <MemberSignature Language="VB.NET" Value="Public Property Part As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Part { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Part : string with get, set" Usage="System.Web.Services.Description.MimeContentBinding.Part" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeContentBinding.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Web.Services.Description.MimeContentBinding.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

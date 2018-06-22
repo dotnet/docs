@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum X509KeyStorageFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class X509KeyStorageFlags" />
+  <TypeSignature Language="F#" Value="type X509KeyStorageFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.DefaultKeySet" />
       <MemberSignature Language="VB.NET" Value="DefaultKeySet" />
       <MemberSignature Language="C++ CLI" Value="DefaultKeySet" />
+      <MemberSignature Language="F#" Value="DefaultKeySet = 0" Usage="System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.DefaultKeySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.EphemeralKeySet" />
       <MemberSignature Language="VB.NET" Value="EphemeralKeySet" />
       <MemberSignature Language="C++ CLI" Value="EphemeralKeySet" />
+      <MemberSignature Language="F#" Value="EphemeralKeySet = 32" Usage="System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.EphemeralKeySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.Exportable" />
       <MemberSignature Language="VB.NET" Value="Exportable" />
       <MemberSignature Language="C++ CLI" Value="Exportable" />
+      <MemberSignature Language="F#" Value="Exportable = 4" Usage="System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.Exportable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.MachineKeySet" />
       <MemberSignature Language="VB.NET" Value="MachineKeySet" />
       <MemberSignature Language="C++ CLI" Value="MachineKeySet" />
+      <MemberSignature Language="F#" Value="MachineKeySet = 2" Usage="System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.MachineKeySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.PersistKeySet" />
       <MemberSignature Language="VB.NET" Value="PersistKeySet" />
       <MemberSignature Language="C++ CLI" Value="PersistKeySet" />
+      <MemberSignature Language="F#" Value="PersistKeySet = 16" Usage="System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.PersistKeySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserKeySet" />
       <MemberSignature Language="VB.NET" Value="UserKeySet" />
       <MemberSignature Language="C++ CLI" Value="UserKeySet" />
+      <MemberSignature Language="F#" Value="UserKeySet = 1" Usage="System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserKeySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserProtected" />
       <MemberSignature Language="VB.NET" Value="UserProtected" />
       <MemberSignature Language="C++ CLI" Value="UserProtected" />
+      <MemberSignature Language="F#" Value="UserProtected = 8" Usage="System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserProtected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

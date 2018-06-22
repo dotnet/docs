@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.SearchOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum SearchOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class SearchOption" />
+  <TypeSignature Language="F#" Value="type SearchOption = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.SearchOption.SearchAllSubDirectories" />
       <MemberSignature Language="VB.NET" Value="SearchAllSubDirectories" />
       <MemberSignature Language="C++ CLI" Value="SearchAllSubDirectories" />
+      <MemberSignature Language="F#" Value="SearchAllSubDirectories = 3" Usage="Microsoft.VisualBasic.FileIO.SearchOption.SearchAllSubDirectories" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.SearchOption.SearchTopLevelOnly" />
       <MemberSignature Language="VB.NET" Value="SearchTopLevelOnly" />
       <MemberSignature Language="C++ CLI" Value="SearchTopLevelOnly" />
+      <MemberSignature Language="F#" Value="SearchTopLevelOnly = 2" Usage="Microsoft.VisualBasic.FileIO.SearchOption.SearchTopLevelOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

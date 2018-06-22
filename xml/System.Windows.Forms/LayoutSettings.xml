@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LayoutSettings" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class LayoutSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class LayoutSettings abstract" />
+  <TypeSignature Language="F#" Value="type LayoutSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LayoutSettings.LayoutEngine" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LayoutEngine As LayoutEngine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Layout::LayoutEngine ^ LayoutEngine { System::Windows::Forms::Layout::LayoutEngine ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutEngine : System.Windows.Forms.Layout.LayoutEngine" Usage="System.Windows.Forms.LayoutSettings.LayoutEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeaderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapHeaderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapHeaderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SoapHeaderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderAttribute(System::String ^ memberName);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderAttribute : string -&gt; System.Web.Services.Protocols.SoapHeaderAttribute" Usage="new System.Web.Services.Protocols.SoapHeaderAttribute memberName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderAttribute.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Property Direction As SoapHeaderDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapHeaderDirection Direction { System::Web::Services::Protocols::SoapHeaderDirection get(); void set(System::Web::Services::Protocols::SoapHeaderDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Web.Services.Protocols.SoapHeaderDirection with get, set" Usage="System.Web.Services.Protocols.SoapHeaderAttribute.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderAttribute.MemberName" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="System.Web.Services.Protocols.SoapHeaderAttribute.MemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderAttribute.Required" />
       <MemberSignature Language="VB.NET" Value="Public Property Required As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Required { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Required : bool with get, set" Usage="System.Web.Services.Protocols.SoapHeaderAttribute.Required" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.DependentCloneOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum DependentCloneOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class DependentCloneOption" />
+  <TypeSignature Language="F#" Value="type DependentCloneOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.DependentCloneOption.BlockCommitUntilComplete" />
       <MemberSignature Language="VB.NET" Value="BlockCommitUntilComplete" />
       <MemberSignature Language="C++ CLI" Value="BlockCommitUntilComplete" />
+      <MemberSignature Language="F#" Value="BlockCommitUntilComplete = 0" Usage="System.Transactions.DependentCloneOption.BlockCommitUntilComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.DependentCloneOption.RollbackIfNotComplete" />
       <MemberSignature Language="VB.NET" Value="RollbackIfNotComplete" />
       <MemberSignature Language="C++ CLI" Value="RollbackIfNotComplete" />
+      <MemberSignature Language="F#" Value="RollbackIfNotComplete = 1" Usage="System.Transactions.DependentCloneOption.RollbackIfNotComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

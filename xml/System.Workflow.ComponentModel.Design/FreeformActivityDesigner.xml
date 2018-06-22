@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class FreeformActivityDesigner&#xA;Inherits CompositeActivityDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class FreeformActivityDesigner : System::Workflow::ComponentModel::Design::CompositeActivityDesigner" />
+  <TypeSignature Language="F#" Value="type FreeformActivityDesigner = class&#xA;    inherit CompositeActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AccessibilityObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessibilityObject As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ AccessibilityObject { System::Windows::Forms::AccessibleObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessibilityObject : System.Windows.Forms.AccessibleObject" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AccessibilityObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AddConnector(System.Workflow.ComponentModel.Design.ConnectionPoint,System.Workflow.ComponentModel.Design.ConnectionPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddConnector (source As ConnectionPoint, target As ConnectionPoint) As Connector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Design::Connector ^ AddConnector(System::Workflow::ComponentModel::Design::ConnectionPoint ^ source, System::Workflow::ComponentModel::Design::ConnectionPoint ^ target);" />
+      <MemberSignature Language="F#" Value="member this.AddConnector : System.Workflow.ComponentModel.Design.ConnectionPoint * System.Workflow.ComponentModel.Design.ConnectionPoint -&gt; System.Workflow.ComponentModel.Design.Connector" Usage="freeformActivityDesigner.AddConnector (source, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMargin" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSizeMargin As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoSizeMargin { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeMargin : System.Drawing.Size with get, set" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSizeMode As AutoSizeMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AutoSizeMode AutoSizeMode { System::Windows::Forms::AutoSizeMode get(); void set(System::Windows::Forms::AutoSizeMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeMode : System.Windows.Forms.AutoSizeMode with get, set" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.BringToFront(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BringToFront (containedDesigner As ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BringToFront(System::Workflow::ComponentModel::Design::ActivityDesigner ^ containedDesigner);" />
+      <MemberSignature Language="F#" Value="member this.BringToFront : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; unit" Usage="freeformActivityDesigner.BringToFront containedDesigner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.CanConnectContainedDesigners(System.Workflow.ComponentModel.Design.ConnectionPoint,System.Workflow.ComponentModel.Design.ConnectionPoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CanConnectContainedDesigners (source As ConnectionPoint, target As ConnectionPoint) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool CanConnectContainedDesigners(System::Workflow::ComponentModel::Design::ConnectionPoint ^ source, System::Workflow::ComponentModel::Design::ConnectionPoint ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member CanConnectContainedDesigners : System.Workflow.ComponentModel.Design.ConnectionPoint * System.Workflow.ComponentModel.Design.ConnectionPoint -&gt; bool&#xA;override this.CanConnectContainedDesigners : System.Workflow.ComponentModel.Design.ConnectionPoint * System.Workflow.ComponentModel.Design.ConnectionPoint -&gt; bool" Usage="freeformActivityDesigner.CanConnectContainedDesigners (source, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -300,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.CanExpandCollapse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanExpandCollapse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanExpandCollapse { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanExpandCollapse : bool" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.CanExpandCollapse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -328,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.CanResizeContainedDesigner(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CanResizeContainedDesigner (containedDesigner As ActivityDesigner) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool CanResizeContainedDesigner(System::Workflow::ComponentModel::Design::ActivityDesigner ^ containedDesigner);" />
+      <MemberSignature Language="F#" Value="abstract member CanResizeContainedDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; bool&#xA;override this.CanResizeContainedDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; bool" Usage="freeformActivityDesigner.CanResizeContainedDesigner containedDesigner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -360,6 +370,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorAdded" />
       <MemberSignature Language="VB.NET" Value="Public Event ConnectorAdded As ConnectorEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Workflow::ComponentModel::Design::ConnectorEventHandler ^ ConnectorAdded;" />
+      <MemberSignature Language="F#" Value="member this.ConnectorAdded : System.Workflow.ComponentModel.Design.ConnectorEventHandler " Usage="member this.ConnectorAdded : System.Workflow.ComponentModel.Design.ConnectorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -386,6 +397,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ConnectorChanged As ConnectorEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Workflow::ComponentModel::Design::ConnectorEventHandler ^ ConnectorChanged;" />
+      <MemberSignature Language="F#" Value="member this.ConnectorChanged : System.Workflow.ComponentModel.Design.ConnectorEventHandler " Usage="member this.ConnectorChanged : System.Workflow.ComponentModel.Design.ConnectorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -414,6 +426,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorRemoved" />
       <MemberSignature Language="VB.NET" Value="Public Event ConnectorRemoved As ConnectorEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Workflow::ComponentModel::Design::ConnectorEventHandler ^ ConnectorRemoved;" />
+      <MemberSignature Language="F#" Value="member this.ConnectorRemoved : System.Workflow.ComponentModel.Design.ConnectorEventHandler " Usage="member this.ConnectorRemoved : System.Workflow.ComponentModel.Design.ConnectorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Connectors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connectors As ReadOnlyCollection(Of Connector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::Connector ^&gt; ^ Connectors { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::Connector ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connectors : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.Connector&gt;" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Connectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -467,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.CreateConnector(System.Workflow.ComponentModel.Design.ConnectionPoint,System.Workflow.ComponentModel.Design.ConnectionPoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateConnector (source As ConnectionPoint, target As ConnectionPoint) As Connector" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Workflow::ComponentModel::Design::Connector ^ CreateConnector(System::Workflow::ComponentModel::Design::ConnectionPoint ^ source, System::Workflow::ComponentModel::Design::ConnectionPoint ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member CreateConnector : System.Workflow.ComponentModel.Design.ConnectionPoint * System.Workflow.ComponentModel.Design.ConnectionPoint -&gt; System.Workflow.ComponentModel.Design.Connector&#xA;override this.CreateConnector : System.Workflow.ComponentModel.Design.ConnectionPoint * System.Workflow.ComponentModel.Design.ConnectionPoint -&gt; System.Workflow.ComponentModel.Design.Connector" Usage="freeformActivityDesigner.CreateConnector (source, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -493,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="freeformActivityDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -517,6 +533,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.EnableUserDrawnConnectors" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableUserDrawnConnectors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUserDrawnConnectors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableUserDrawnConnectors : bool with get, set" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.EnableUserDrawnConnectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -543,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.EnableVisualResizing" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property EnableVisualResizing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool EnableVisualResizing { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnableVisualResizing : bool" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.EnableVisualResizing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -571,6 +589,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.FirstSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FirstSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ FirstSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.FirstSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -598,6 +617,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.GetNextSelectableObject(System.Object,System.Workflow.ComponentModel.Design.DesignerNavigationDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextSelectableObject (current As Object, navigate As DesignerNavigationDirection) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetNextSelectableObject(System::Object ^ current, System::Workflow::ComponentModel::Design::DesignerNavigationDirection navigate);" />
+      <MemberSignature Language="F#" Value="override this.GetNextSelectableObject : obj * System.Workflow.ComponentModel.Design.DesignerNavigationDirection -&gt; obj" Usage="freeformActivityDesigner.GetNextSelectableObject (current, navigate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -624,6 +644,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Glyphs" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Glyphs As ActivityDesignerGlyphCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Workflow::ComponentModel::Design::ActivityDesignerGlyphCollection ^ Glyphs { System::Workflow::ComponentModel::Design::ActivityDesignerGlyphCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Glyphs : System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Glyphs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -650,6 +671,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Design.HitTestInfo HitTest(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.HitTest(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Design::HitTestInfo ^ HitTest(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="override this.HitTest : System.Drawing.Point -&gt; System.Workflow.ComponentModel.Design.HitTestInfo" Usage="freeformActivityDesigner.HitTest point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -680,6 +702,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Initialize(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Initialize(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="freeformActivityDesigner.Initialize activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -710,6 +733,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.InsertActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub InsertActivities (insertLocation As HitTestInfo, activitiesToInsert As ReadOnlyCollection(Of Activity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InsertActivities(System::Workflow::ComponentModel::Design::HitTestInfo ^ insertLocation, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activitiesToInsert);" />
+      <MemberSignature Language="F#" Value="override this.InsertActivities : System.Workflow.ComponentModel.Design.HitTestInfo * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; unit" Usage="freeformActivityDesigner.InsertActivities (insertLocation, activitiesToInsert)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -735,6 +759,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.LastSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LastSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ LastSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.LastSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -762,6 +787,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Location" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Location As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point with get, set" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -789,6 +815,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.MinimumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinimumSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MinimumSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumSize : System.Drawing.Size" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.MinimumSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -809,6 +836,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.MoveActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub MoveActivities (moveLocation As HitTestInfo, activitiesToMove As ReadOnlyCollection(Of Activity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MoveActivities(System::Workflow::ComponentModel::Design::HitTestInfo ^ moveLocation, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activitiesToMove);" />
+      <MemberSignature Language="F#" Value="override this.MoveActivities : System.Workflow.ComponentModel.Design.HitTestInfo * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; unit" Usage="freeformActivityDesigner.MoveActivities (moveLocation, activitiesToMove)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -834,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.MoveContainedDesigner(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveContainedDesigner (containedDesigner As ActivityDesigner, newLocation As Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveContainedDesigner(System::Workflow::ComponentModel::Design::ActivityDesigner ^ containedDesigner, System::Drawing::Point newLocation);" />
+      <MemberSignature Language="F#" Value="member this.MoveContainedDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner * System.Drawing.Point -&gt; unit" Usage="freeformActivityDesigner.MoveContainedDesigner (containedDesigner, newLocation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -872,6 +901,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnConnectorAdded(System.Workflow.ComponentModel.Design.ConnectorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnConnectorAdded (e As ConnectorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnConnectorAdded(System::Workflow::ComponentModel::Design::ConnectorEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnConnectorAdded : System.Workflow.ComponentModel.Design.ConnectorEventArgs -&gt; unit&#xA;override this.OnConnectorAdded : System.Workflow.ComponentModel.Design.ConnectorEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnConnectorAdded e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -895,6 +925,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnConnectorChanged(System.Workflow.ComponentModel.Design.ConnectorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnConnectorChanged (e As ConnectorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnConnectorChanged(System::Workflow::ComponentModel::Design::ConnectorEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnConnectorChanged : System.Workflow.ComponentModel.Design.ConnectorEventArgs -&gt; unit&#xA;override this.OnConnectorChanged : System.Workflow.ComponentModel.Design.ConnectorEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnConnectorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -925,6 +956,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnConnectorRemoved(System.Workflow.ComponentModel.Design.ConnectorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnConnectorRemoved (e As ConnectorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnConnectorRemoved(System::Workflow::ComponentModel::Design::ConnectorEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnConnectorRemoved : System.Workflow.ComponentModel.Design.ConnectorEventArgs -&gt; unit&#xA;override this.OnConnectorRemoved : System.Workflow.ComponentModel.Design.ConnectorEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnConnectorRemoved e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -948,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnContainedActivitiesChanging(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContainedActivitiesChanging (listChangeArgs As ActivityCollectionChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContainedActivitiesChanging(System::Workflow::ComponentModel::ActivityCollectionChangeEventArgs ^ listChangeArgs);" />
+      <MemberSignature Language="F#" Value="override this.OnContainedActivitiesChanging : System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnContainedActivitiesChanging listChangeArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -971,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnContainedDesignersConnected(System.Workflow.ComponentModel.Design.ConnectionPoint,System.Workflow.ComponentModel.Design.ConnectionPoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnContainedDesignersConnected (source As ConnectionPoint, target As ConnectionPoint)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnContainedDesignersConnected(System::Workflow::ComponentModel::Design::ConnectionPoint ^ source, System::Workflow::ComponentModel::Design::ConnectionPoint ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member OnContainedDesignersConnected : System.Workflow.ComponentModel.Design.ConnectionPoint * System.Workflow.ComponentModel.Design.ConnectionPoint -&gt; unit&#xA;override this.OnContainedDesignersConnected : System.Workflow.ComponentModel.Design.ConnectionPoint * System.Workflow.ComponentModel.Design.ConnectionPoint -&gt; unit" Usage="freeformActivityDesigner.OnContainedDesignersConnected (source, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1003,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnDragDrop(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragDrop (e As ActivityDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragDrop(System::Workflow::ComponentModel::Design::ActivityDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragDrop : System.Workflow.ComponentModel.Design.ActivityDragEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnDragDrop e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1026,6 +1061,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnDragOver(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragOver (e As ActivityDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Workflow::ComponentModel::Design::ActivityDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragOver : System.Workflow.ComponentModel.Design.ActivityDragEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnDragOver e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1049,6 +1085,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1072,6 +1109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnLayoutPosition(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayoutPosition (e As ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayoutPosition(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutPosition : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnLayoutPosition e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1095,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnLayoutSize(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnLayoutSize (e As ActivityDesignerLayoutEventArgs) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size OnLayoutSize(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutSize : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; System.Drawing.Size" Usage="freeformActivityDesigner.OnLayoutSize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1126,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnResizing(System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResizing (e As ActivityDesignerResizeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResizing(System::Workflow::ComponentModel::Design::ActivityDesignerResizeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnResizing : System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs -&gt; unit" Usage="freeformActivityDesigner.OnResizing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1156,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnThemeChange(System.Workflow.ComponentModel.Design.ActivityDesignerTheme)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnThemeChange (newTheme As ActivityDesignerTheme)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnThemeChange(System::Workflow::ComponentModel::Design::ActivityDesignerTheme ^ newTheme);" />
+      <MemberSignature Language="F#" Value="override this.OnThemeChange : System.Workflow.ComponentModel.Design.ActivityDesignerTheme -&gt; unit" Usage="freeformActivityDesigner.OnThemeChange newTheme" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1187,6 +1228,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveConnector(class System.Workflow.ComponentModel.Design.Connector connector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.RemoveConnector(System.Workflow.ComponentModel.Design.Connector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveConnector(System::Workflow::ComponentModel::Design::Connector ^ connector);" />
+      <MemberSignature Language="F#" Value="member this.RemoveConnector : System.Workflow.ComponentModel.Design.Connector -&gt; unit" Usage="freeformActivityDesigner.RemoveConnector connector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1219,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ResizeContainedDesigner(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResizeContainedDesigner (containedDesigner As ActivityDesigner, newSize As Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResizeContainedDesigner(System::Workflow::ComponentModel::Design::ActivityDesigner ^ containedDesigner, System::Drawing::Size newSize);" />
+      <MemberSignature Language="F#" Value="member this.ResizeContainedDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner * System.Drawing.Size -&gt; unit" Usage="freeformActivityDesigner.ResizeContainedDesigner (containedDesigner, newSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1257,6 +1300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.SendToBack(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendToBack (containedDesigner As ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendToBack(System::Workflow::ComponentModel::Design::ActivityDesigner ^ containedDesigner);" />
+      <MemberSignature Language="F#" Value="member this.SendToBack : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; unit" Usage="freeformActivityDesigner.SendToBack containedDesigner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1293,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ShowConnectorsInForeground" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ShowConnectorsInForeground As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ShowConnectorsInForeground { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowConnectorsInForeground : bool" Usage="System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ShowConnectorsInForeground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

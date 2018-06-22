@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyNameFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum AssemblyNameFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class AssemblyNameFlags" />
+  <TypeSignature Language="F#" Value="type AssemblyNameFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyNameFlags.EnableJITcompileOptimizer" />
       <MemberSignature Language="VB.NET" Value="EnableJITcompileOptimizer" />
       <MemberSignature Language="C++ CLI" Value="EnableJITcompileOptimizer" />
+      <MemberSignature Language="F#" Value="EnableJITcompileOptimizer = 16384" Usage="System.Reflection.AssemblyNameFlags.EnableJITcompileOptimizer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyNameFlags.EnableJITcompileTracking" />
       <MemberSignature Language="VB.NET" Value="EnableJITcompileTracking" />
       <MemberSignature Language="C++ CLI" Value="EnableJITcompileTracking" />
+      <MemberSignature Language="F#" Value="EnableJITcompileTracking = 32768" Usage="System.Reflection.AssemblyNameFlags.EnableJITcompileTracking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyNameFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.AssemblyNameFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyNameFlags.PublicKey" />
       <MemberSignature Language="VB.NET" Value="PublicKey" />
       <MemberSignature Language="C++ CLI" Value="PublicKey" />
+      <MemberSignature Language="F#" Value="PublicKey = 1" Usage="System.Reflection.AssemblyNameFlags.PublicKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyNameFlags.Retargetable" />
       <MemberSignature Language="VB.NET" Value="Retargetable" />
       <MemberSignature Language="C++ CLI" Value="Retargetable" />
+      <MemberSignature Language="F#" Value="Retargetable = 256" Usage="System.Reflection.AssemblyNameFlags.Retargetable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

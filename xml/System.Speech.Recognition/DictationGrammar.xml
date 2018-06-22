@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.DictationGrammar" />
   <TypeSignature Language="VB.NET" Value="Public Class DictationGrammar&#xA;Inherits Grammar" />
   <TypeSignature Language="C++ CLI" Value="public ref class DictationGrammar : System::Speech::Recognition::Grammar" />
+  <TypeSignature Language="F#" Value="type DictationGrammar = class&#xA;    inherit Grammar" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@ private SpeechRecognitionEngine LoadDictationGrammars()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.DictationGrammar.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (topic As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DictationGrammar(System::String ^ topic);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.DictationGrammar : string -&gt; System.Speech.Recognition.DictationGrammar" Usage="new System.Speech.Recognition.DictationGrammar topic" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -137,6 +139,7 @@ private SpeechRecognitionEngine LoadDictationGrammars()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.DictationGrammar.SetDictationContext(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDictationContext (precedingText As String, subsequentText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDictationContext(System::String ^ precedingText, System::String ^ subsequentText);" />
+      <MemberSignature Language="F#" Value="member this.SetDictationContext : string * string -&gt; unit" Usage="dictationGrammar.SetDictationContext (precedingText, subsequentText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

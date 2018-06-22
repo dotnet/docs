@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.ContentIterator" />
   <TypeSignature Language="VB.NET" Value="Public Structure ContentIterator" />
   <TypeSignature Language="C++ CLI" Value="public value class ContentIterator" />
+  <TypeSignature Language="F#" Value="type ContentIterator = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.ContentIterator.Create(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Create (context As XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create(System::Xml::XPath::XPathNavigator ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Create : System.Xml.XPath.XPathNavigator -&gt; unit" Usage="contentIterator.Create context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.ContentIterator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XPath::XPathNavigator ^ Current { System::Xml::XPath::XPathNavigator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Xml.XPath.XPathNavigator" Usage="System.Xml.Xsl.Runtime.ContentIterator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.ContentIterator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
+      <MemberSignature Language="F#" Value="member this.MoveNext : unit -&gt; bool" Usage="contentIterator.MoveNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectCollection.ProjectAddedToProjectCollectionEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ProjectCollection::ProjectAddedToProjectCollectionEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ProjectCollection.ProjectAddedToProjectCollectionEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs.#ctor(Microsoft.Build.Construction.ProjectRootElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (element As ProjectRootElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectAddedToProjectCollectionEventArgs(Microsoft::Build::Construction::ProjectRootElement ^ element);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs : Microsoft.Build.Construction.ProjectRootElement -&gt; Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs" Usage="new Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs element" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs.ProjectRootElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectRootElement As ProjectRootElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectRootElement ^ ProjectRootElement { Microsoft::Build::Construction::ProjectRootElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectRootElement : Microsoft.Build.Construction.ProjectRootElement" Usage="Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs.ProjectRootElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.IActivationFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IActivationFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IActivationFactory" />
+  <TypeSignature Language="F#" Value="type IActivationFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.IActivationFactory.ActivateInstance" />
       <MemberSignature Language="VB.NET" Value="Public Function ActivateInstance () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ActivateInstance();" />
+      <MemberSignature Language="F#" Value="abstract member ActivateInstance : unit -&gt; obj" Usage="iActivationFactory.ActivateInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>

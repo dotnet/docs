@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymDocumentType" />
   <TypeSignature Language="VB.NET" Value="Public Class SymDocumentType" />
   <TypeSignature Language="C++ CLI" Value="public ref class SymDocumentType" />
+  <TypeSignature Language="F#" Value="type SymDocumentType = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymDocumentType.Text" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Text As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Text;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Text : Guid" Usage="System.Diagnostics.SymbolStore.SymDocumentType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

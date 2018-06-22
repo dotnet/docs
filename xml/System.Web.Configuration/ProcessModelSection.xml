@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProcessModelSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProcessModelSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessModelSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type ProcessModelSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.AutoConfig" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoConfig As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoConfig { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoConfig : bool with get, set" Usage="System.Web.Configuration.ProcessModelSection.AutoConfig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.ClientConnectedCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientConnectedCheck As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ClientConnectedCheck { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientConnectedCheck : TimeSpan with get, set" Usage="System.Web.Configuration.ProcessModelSection.ClientConnectedCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.ComAuthenticationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ComAuthenticationLevel As ProcessModelComAuthenticationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProcessModelComAuthenticationLevel ComAuthenticationLevel { System::Web::Configuration::ProcessModelComAuthenticationLevel get(); void set(System::Web::Configuration::ProcessModelComAuthenticationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ComAuthenticationLevel : System.Web.Configuration.ProcessModelComAuthenticationLevel with get, set" Usage="System.Web.Configuration.ProcessModelSection.ComAuthenticationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.ComImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ComImpersonationLevel As ProcessModelComImpersonationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProcessModelComImpersonationLevel ComImpersonationLevel { System::Web::Configuration::ProcessModelComImpersonationLevel get(); void set(System::Web::Configuration::ProcessModelComImpersonationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ComImpersonationLevel : System.Web.Configuration.ProcessModelComImpersonationLevel with get, set" Usage="System.Web.Configuration.ProcessModelSection.ComImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.CpuMask" />
       <MemberSignature Language="VB.NET" Value="Public Property CpuMask As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CpuMask { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CpuMask : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.CpuMask" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.ElementProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementProperty : System.Configuration.ConfigurationElementProperty" Usage="System.Web.Configuration.ProcessModelSection.ElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -321,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.Enable" />
       <MemberSignature Language="VB.NET" Value="Public Property Enable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enable : bool with get, set" Usage="System.Web.Configuration.ProcessModelSection.Enable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -365,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.ProcessModelSection.IdleTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -408,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.LogLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property LogLevel As ProcessModelLogLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProcessModelLogLevel LogLevel { System::Web::Configuration::ProcessModelLogLevel get(); void set(System::Web::Configuration::ProcessModelLogLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.LogLevel : System.Web.Configuration.ProcessModelLogLevel with get, set" Usage="System.Web.Configuration.ProcessModelSection.LogLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -449,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.MaxAppDomains" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxAppDomains As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxAppDomains { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxAppDomains : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.MaxAppDomains" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -492,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.MaxIOThreads" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxIOThreads As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxIOThreads { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxIOThreads : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.MaxIOThreads" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -545,6 +557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.MaxWorkerThreads" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxWorkerThreads As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxWorkerThreads { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxWorkerThreads : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.MaxWorkerThreads" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -598,6 +611,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.MemoryLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property MemoryLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MemoryLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MemoryLimit : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.MemoryLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -638,6 +652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.MinIOThreads" />
       <MemberSignature Language="VB.NET" Value="Public Property MinIOThreads As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinIOThreads { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinIOThreads : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.MinIOThreads" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -676,6 +691,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.MinWorkerThreads" />
       <MemberSignature Language="VB.NET" Value="Public Property MinWorkerThreads As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinWorkerThreads { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinWorkerThreads : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.MinWorkerThreads" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -714,6 +730,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.Web.Configuration.ProcessModelSection.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -756,6 +773,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.PingFrequency" />
       <MemberSignature Language="VB.NET" Value="Public Property PingFrequency As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PingFrequency { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.PingFrequency : TimeSpan with get, set" Usage="System.Web.Configuration.ProcessModelSection.PingFrequency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -799,6 +817,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.PingTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property PingTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PingTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.PingTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.ProcessModelSection.PingTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -842,6 +861,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ProcessModelSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -862,6 +882,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.RequestLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RequestLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestLimit : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.RequestLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -908,6 +929,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.RequestQueueLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestQueueLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RequestQueueLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestQueueLimit : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.RequestQueueLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -954,6 +976,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.ResponseDeadlockInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseDeadlockInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ResponseDeadlockInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseDeadlockInterval : TimeSpan with get, set" Usage="System.Web.Configuration.ProcessModelSection.ResponseDeadlockInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1000,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.ResponseRestartDeadlockInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseRestartDeadlockInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ResponseRestartDeadlockInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseRestartDeadlockInterval : TimeSpan with get, set" Usage="System.Web.Configuration.ProcessModelSection.ResponseRestartDeadlockInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1043,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.RestartQueueLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property RestartQueueLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RestartQueueLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RestartQueueLimit : int with get, set" Usage="System.Web.Configuration.ProcessModelSection.RestartQueueLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1089,6 +1114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.ServerErrorMessageFile" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerErrorMessageFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerErrorMessageFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerErrorMessageFile : string with get, set" Usage="System.Web.Configuration.ProcessModelSection.ServerErrorMessageFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1131,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.ShutdownTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ShutdownTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ShutdownTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ShutdownTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.ProcessModelSection.ShutdownTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1177,6 +1204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Timeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.Web.Configuration.ProcessModelSection.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1220,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string with get, set" Usage="System.Web.Configuration.ProcessModelSection.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1269,6 +1298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProcessModelSection.WebGarden" />
       <MemberSignature Language="VB.NET" Value="Public Property WebGarden As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WebGarden { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WebGarden : bool with get, set" Usage="System.Web.Configuration.ProcessModelSection.WebGarden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

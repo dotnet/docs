@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SayAs" />
   <TypeSignature Language="VB.NET" Value="Public Enum SayAs" />
   <TypeSignature Language="C++ CLI" Value="public enum class SayAs" />
+  <TypeSignature Language="F#" Value="type SayAs = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 3" Usage="System.Speech.Synthesis.SayAs.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Day" />
       <MemberSignature Language="VB.NET" Value="Day" />
       <MemberSignature Language="C++ CLI" Value="Day" />
+      <MemberSignature Language="F#" Value="Day = 13" Usage="System.Speech.Synthesis.SayAs.Day" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.DayMonth" />
       <MemberSignature Language="VB.NET" Value="DayMonth" />
       <MemberSignature Language="C++ CLI" Value="DayMonth" />
+      <MemberSignature Language="F#" Value="DayMonth = 10" Usage="System.Speech.Synthesis.SayAs.DayMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.DayMonthYear" />
       <MemberSignature Language="VB.NET" Value="DayMonthYear" />
       <MemberSignature Language="C++ CLI" Value="DayMonthYear" />
+      <MemberSignature Language="F#" Value="DayMonthYear = 4" Usage="System.Speech.Synthesis.SayAs.DayMonthYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Month" />
       <MemberSignature Language="VB.NET" Value="Month" />
       <MemberSignature Language="C++ CLI" Value="Month" />
+      <MemberSignature Language="F#" Value="Month = 12" Usage="System.Speech.Synthesis.SayAs.Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.MonthDay" />
       <MemberSignature Language="VB.NET" Value="MonthDay" />
       <MemberSignature Language="C++ CLI" Value="MonthDay" />
+      <MemberSignature Language="F#" Value="MonthDay = 9" Usage="System.Speech.Synthesis.SayAs.MonthDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.MonthDayYear" />
       <MemberSignature Language="VB.NET" Value="MonthDayYear" />
       <MemberSignature Language="C++ CLI" Value="MonthDayYear" />
+      <MemberSignature Language="F#" Value="MonthDayYear = 5" Usage="System.Speech.Synthesis.SayAs.MonthDayYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.MonthYear" />
       <MemberSignature Language="VB.NET" Value="MonthYear" />
       <MemberSignature Language="C++ CLI" Value="MonthYear" />
+      <MemberSignature Language="F#" Value="MonthYear = 8" Usage="System.Speech.Synthesis.SayAs.MonthYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.NumberCardinal" />
       <MemberSignature Language="VB.NET" Value="NumberCardinal" />
       <MemberSignature Language="C++ CLI" Value="NumberCardinal" />
+      <MemberSignature Language="F#" Value="NumberCardinal = 2" Usage="System.Speech.Synthesis.SayAs.NumberCardinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -200,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.NumberOrdinal" />
       <MemberSignature Language="VB.NET" Value="NumberOrdinal" />
       <MemberSignature Language="C++ CLI" Value="NumberOrdinal" />
+      <MemberSignature Language="F#" Value="NumberOrdinal = 1" Usage="System.Speech.Synthesis.SayAs.NumberOrdinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.SpellOut" />
       <MemberSignature Language="VB.NET" Value="SpellOut" />
       <MemberSignature Language="C++ CLI" Value="SpellOut" />
+      <MemberSignature Language="F#" Value="SpellOut = 0" Usage="System.Speech.Synthesis.SayAs.SpellOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -238,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Telephone" />
       <MemberSignature Language="VB.NET" Value="Telephone" />
       <MemberSignature Language="C++ CLI" Value="Telephone" />
+      <MemberSignature Language="F#" Value="Telephone = 17" Usage="System.Speech.Synthesis.SayAs.Telephone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -257,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 18" Usage="System.Speech.Synthesis.SayAs.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -276,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Time" />
       <MemberSignature Language="VB.NET" Value="Time" />
       <MemberSignature Language="C++ CLI" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 14" Usage="System.Speech.Synthesis.SayAs.Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -295,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Time12" />
       <MemberSignature Language="VB.NET" Value="Time12" />
       <MemberSignature Language="C++ CLI" Value="Time12" />
+      <MemberSignature Language="F#" Value="Time12 = 16" Usage="System.Speech.Synthesis.SayAs.Time12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -314,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Time24" />
       <MemberSignature Language="VB.NET" Value="Time24" />
       <MemberSignature Language="C++ CLI" Value="Time24" />
+      <MemberSignature Language="F#" Value="Time24 = 15" Usage="System.Speech.Synthesis.SayAs.Time24" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -333,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.Year" />
       <MemberSignature Language="VB.NET" Value="Year" />
       <MemberSignature Language="C++ CLI" Value="Year" />
+      <MemberSignature Language="F#" Value="Year = 11" Usage="System.Speech.Synthesis.SayAs.Year" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -352,6 +370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.YearMonth" />
       <MemberSignature Language="VB.NET" Value="YearMonth" />
       <MemberSignature Language="C++ CLI" Value="YearMonth" />
+      <MemberSignature Language="F#" Value="YearMonth = 7" Usage="System.Speech.Synthesis.SayAs.YearMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -371,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SayAs.YearMonthDay" />
       <MemberSignature Language="VB.NET" Value="YearMonthDay" />
       <MemberSignature Language="C++ CLI" Value="YearMonthDay" />
+      <MemberSignature Language="F#" Value="YearMonthDay = 6" Usage="System.Speech.Synthesis.SayAs.YearMonthDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

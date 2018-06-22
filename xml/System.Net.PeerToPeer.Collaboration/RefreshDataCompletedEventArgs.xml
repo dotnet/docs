@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RefreshDataCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RefreshDataCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type RefreshDataCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs.PeerEndPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerEndPoint As PeerEndPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ PeerEndPoint { System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerEndPoint : System.Net.PeerToPeer.Collaboration.PeerEndPoint" Usage="System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs.PeerEndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

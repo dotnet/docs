@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.IPv6MulticastOption" />
   <TypeSignature Language="VB.NET" Value="Public Class IPv6MulticastOption" />
   <TypeSignature Language="C++ CLI" Value="public ref class IPv6MulticastOption" />
+  <TypeSignature Language="F#" Value="type IPv6MulticastOption = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPv6MulticastOption.#ctor(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (group As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IPv6MulticastOption(System::Net::IPAddress ^ group);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.IPv6MulticastOption : System.Net.IPAddress -&gt; System.Net.Sockets.IPv6MulticastOption" Usage="new System.Net.Sockets.IPv6MulticastOption group" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPv6MulticastOption.#ctor(System.Net.IPAddress,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (group As IPAddress, ifindex As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IPv6MulticastOption(System::Net::IPAddress ^ group, long ifindex);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.IPv6MulticastOption : System.Net.IPAddress * int64 -&gt; System.Net.Sockets.IPv6MulticastOption" Usage="new System.Net.Sockets.IPv6MulticastOption (group, ifindex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.IPv6MulticastOption.Group" />
       <MemberSignature Language="VB.NET" Value="Public Property Group As IPAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ Group { System::Net::IPAddress ^ get(); void set(System::Net::IPAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Group : System.Net.IPAddress with get, set" Usage="System.Net.Sockets.IPv6MulticastOption.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.IPv6MulticastOption.InterfaceIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property InterfaceIndex As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long InterfaceIndex { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.InterfaceIndex : int64 with get, set" Usage="System.Net.Sockets.IPv6MulticastOption.InterfaceIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

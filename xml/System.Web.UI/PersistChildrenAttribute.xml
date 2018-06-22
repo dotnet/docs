@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PersistChildrenAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PersistChildrenAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistChildrenAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type PersistChildrenAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (persist As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistChildrenAttribute(bool persist);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.PersistChildrenAttribute : bool -&gt; System.Web.UI.PersistChildrenAttribute" Usage="new System.Web.UI.PersistChildrenAttribute persist" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (persist As Boolean, usesCustomPersistence As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistChildrenAttribute(bool persist, bool usesCustomPersistence);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.PersistChildrenAttribute : bool * bool -&gt; System.Web.UI.PersistChildrenAttribute" Usage="new System.Web.UI.PersistChildrenAttribute (persist, usesCustomPersistence)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistChildrenAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As PersistChildrenAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::PersistChildrenAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.PersistChildrenAttribute" Usage="System.Web.UI.PersistChildrenAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="persistChildrenAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="persistChildrenAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="persistChildrenAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistChildrenAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As PersistChildrenAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::PersistChildrenAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.Web.UI.PersistChildrenAttribute" Usage="System.Web.UI.PersistChildrenAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PersistChildrenAttribute.Persist" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Persist As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Persist { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Persist : bool" Usage="System.Web.UI.PersistChildrenAttribute.Persist" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -289,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PersistChildrenAttribute.UsesCustomPersistence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsesCustomPersistence As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UsesCustomPersistence { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsesCustomPersistence : bool" Usage="System.Web.UI.PersistChildrenAttribute.UsesCustomPersistence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -328,6 +338,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistChildrenAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As PersistChildrenAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::PersistChildrenAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.Web.UI.PersistChildrenAttribute" Usage="System.Web.UI.PersistChildrenAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

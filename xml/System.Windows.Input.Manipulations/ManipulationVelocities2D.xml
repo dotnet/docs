@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.ManipulationVelocities2D" />
   <TypeSignature Language="VB.NET" Value="Public Class ManipulationVelocities2D" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManipulationVelocities2D" />
+  <TypeSignature Language="F#" Value="type ManipulationVelocities2D = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationVelocities2D.AngularVelocity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AngularVelocity As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float AngularVelocity { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.AngularVelocity : single" Usage="System.Windows.Input.Manipulations.ManipulationVelocities2D.AngularVelocity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationVelocities2D.ExpansionVelocityX" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpansionVelocityX As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ExpansionVelocityX { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpansionVelocityX : single" Usage="System.Windows.Input.Manipulations.ManipulationVelocities2D.ExpansionVelocityX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationVelocities2D.ExpansionVelocityY" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpansionVelocityY As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ExpansionVelocityY { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpansionVelocityY : single" Usage="System.Windows.Input.Manipulations.ManipulationVelocities2D.ExpansionVelocityY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationVelocities2D.LinearVelocityX" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinearVelocityX As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LinearVelocityX { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinearVelocityX : single" Usage="System.Windows.Input.Manipulations.ManipulationVelocities2D.LinearVelocityX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationVelocities2D.LinearVelocityY" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinearVelocityY As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LinearVelocityY { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinearVelocityY : single" Usage="System.Windows.Input.Manipulations.ManipulationVelocities2D.LinearVelocityY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.ManipulationVelocities2D.Zero" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Zero As ManipulationVelocities2D " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::Manipulations::ManipulationVelocities2D ^ Zero;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Zero : System.Windows.Input.Manipulations.ManipulationVelocities2D" Usage="System.Windows.Input.Manipulations.ManipulationVelocities2D.Zero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectInstance" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectInstance" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectInstance" />
+  <TypeSignature Language="F#" Value="type ProjectInstance = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.#ctor(Microsoft.Build.Construction.ProjectRootElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xml As ProjectRootElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectInstance(Microsoft::Build::Construction::ProjectRootElement ^ xml);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.ProjectInstance : Microsoft.Build.Construction.ProjectRootElement -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="new Microsoft.Build.Execution.ProjectInstance xml" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (projectFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectInstance(System::String ^ projectFile);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.ProjectInstance : string -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="new Microsoft.Build.Execution.ProjectInstance projectFile" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (projectFile As String, globalProperties As IDictionary(Of String, String), toolsVersion As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectInstance(System::String ^ projectFile, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ globalProperties, System::String ^ toolsVersion);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.ProjectInstance : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="new Microsoft.Build.Execution.ProjectInstance (projectFile, globalProperties, toolsVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Construction.ProjectRootElement xml, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; globalProperties, string toolsVersion, class Microsoft.Build.Evaluation.ProjectCollection projectCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.#ctor(Microsoft.Build.Construction.ProjectRootElement,System.Collections.Generic.IDictionary{System.String,System.String},System.String,Microsoft.Build.Evaluation.ProjectCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectInstance(Microsoft::Build::Construction::ProjectRootElement ^ xml, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ globalProperties, System::String ^ toolsVersion, Microsoft::Build::Evaluation::ProjectCollection ^ projectCollection);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.ProjectInstance : Microsoft.Build.Construction.ProjectRootElement * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Microsoft.Build.Evaluation.ProjectCollection -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="new Microsoft.Build.Execution.ProjectInstance (xml, globalProperties, toolsVersion, projectCollection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string projectFile, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; globalProperties, string toolsVersion, class Microsoft.Build.Evaluation.ProjectCollection projectCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,Microsoft.Build.Evaluation.ProjectCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectInstance(System::String ^ projectFile, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ globalProperties, System::String ^ toolsVersion, Microsoft::Build::Evaluation::ProjectCollection ^ projectCollection);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.ProjectInstance : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Microsoft.Build.Evaluation.ProjectCollection -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="new Microsoft.Build.Execution.ProjectInstance (projectFile, globalProperties, toolsVersion, projectCollection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Construction.ProjectRootElement xml, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; globalProperties, string toolsVersion, string subToolsetVersion, class Microsoft.Build.Evaluation.ProjectCollection projectCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.#ctor(Microsoft.Build.Construction.ProjectRootElement,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Microsoft.Build.Evaluation.ProjectCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectInstance(Microsoft::Build::Construction::ProjectRootElement ^ xml, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ globalProperties, System::String ^ toolsVersion, System::String ^ subToolsetVersion, Microsoft::Build::Evaluation::ProjectCollection ^ projectCollection);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.ProjectInstance : Microsoft.Build.Construction.ProjectRootElement * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * Microsoft.Build.Evaluation.ProjectCollection -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="new Microsoft.Build.Execution.ProjectInstance (xml, globalProperties, toolsVersion, subToolsetVersion, projectCollection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string projectFile, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; globalProperties, string toolsVersion, string subToolsetVersion, class Microsoft.Build.Evaluation.ProjectCollection projectCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Microsoft.Build.Evaluation.ProjectCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectInstance(System::String ^ projectFile, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ globalProperties, System::String ^ toolsVersion, System::String ^ subToolsetVersion, Microsoft::Build::Evaluation::ProjectCollection ^ projectCollection);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.ProjectInstance : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * Microsoft.Build.Evaluation.ProjectCollection -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="new Microsoft.Build.Execution.ProjectInstance (projectFile, globalProperties, toolsVersion, subToolsetVersion, projectCollection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -276,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.AddItem(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddItem (itemType As String, evaluatedInclude As String) As ProjectItemInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::ProjectItemInstance ^ AddItem(System::String ^ itemType, System::String ^ evaluatedInclude);" />
+      <MemberSignature Language="F#" Value="member this.AddItem : string * string -&gt; Microsoft.Build.Execution.ProjectItemInstance" Usage="projectInstance.AddItem (itemType, evaluatedInclude)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.AddItem(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddItem (itemType As String, evaluatedInclude As String, metadata As IEnumerable(Of KeyValuePair(Of String, String))) As ProjectItemInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::ProjectItemInstance ^ AddItem(System::String ^ itemType, System::String ^ evaluatedInclude, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ metadata);" />
+      <MemberSignature Language="F#" Value="member this.AddItem : string * string * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; -&gt; Microsoft.Build.Execution.ProjectItemInstance" Usage="projectInstance.AddItem (itemType, evaluatedInclude, metadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -353,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build" />
       <MemberSignature Language="VB.NET" Value="Public Function Build () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build();" />
+      <MemberSignature Language="F#" Value="member this.Build : unit -&gt; bool" Usage="projectInstance.Build " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -374,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build(System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger})" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (loggers As IEnumerable(Of ILogger)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Framework::ILogger ^&gt; ^ loggers);" />
+      <MemberSignature Language="F#" Value="member this.Build : seq&lt;Microsoft.Build.Framework.ILogger&gt; -&gt; bool" Usage="projectInstance.Build loggers" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -405,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build(System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger},System.Collections.Generic.IEnumerable{Microsoft.Build.Logging.ForwardingLoggerRecord})" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (loggers As IEnumerable(Of ILogger), remoteLoggers As IEnumerable(Of ForwardingLoggerRecord)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Framework::ILogger ^&gt; ^ loggers, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Logging::ForwardingLoggerRecord ^&gt; ^ remoteLoggers);" />
+      <MemberSignature Language="F#" Value="member this.Build : seq&lt;Microsoft.Build.Framework.ILogger&gt; * seq&lt;Microsoft.Build.Logging.ForwardingLoggerRecord&gt; -&gt; bool" Usage="projectInstance.Build (loggers, remoteLoggers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -438,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build(System.String,System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger})" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (target As String, loggers As IEnumerable(Of ILogger)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(System::String ^ target, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Framework::ILogger ^&gt; ^ loggers);" />
+      <MemberSignature Language="F#" Value="member this.Build : string * seq&lt;Microsoft.Build.Framework.ILogger&gt; -&gt; bool" Usage="projectInstance.Build (target, loggers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -471,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build(System.String[],System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger})" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (targets As String(), loggers As IEnumerable(Of ILogger)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targets, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Framework::ILogger ^&gt; ^ loggers);" />
+      <MemberSignature Language="F#" Value="member this.Build : string[] * seq&lt;Microsoft.Build.Framework.ILogger&gt; -&gt; bool" Usage="projectInstance.Build (targets, loggers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -504,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build(System.String,System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger},System.Collections.Generic.IEnumerable{Microsoft.Build.Logging.ForwardingLoggerRecord})" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (target As String, loggers As IEnumerable(Of ILogger), remoteLoggers As IEnumerable(Of ForwardingLoggerRecord)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(System::String ^ target, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Framework::ILogger ^&gt; ^ loggers, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Logging::ForwardingLoggerRecord ^&gt; ^ remoteLoggers);" />
+      <MemberSignature Language="F#" Value="member this.Build : string * seq&lt;Microsoft.Build.Framework.ILogger&gt; * seq&lt;Microsoft.Build.Logging.ForwardingLoggerRecord&gt; -&gt; bool" Usage="projectInstance.Build (target, loggers, remoteLoggers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -539,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build(System.String[],System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger},System.Collections.Generic.IDictionary{System.String,Microsoft.Build.Execution.TargetResult}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (targets As String(), loggers As IEnumerable(Of ILogger), ByRef targetOutputs As IDictionary(Of String, TargetResult)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targets, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Framework::ILogger ^&gt; ^ loggers, [Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::TargetResult ^&gt; ^ % targetOutputs);" />
+      <MemberSignature Language="F#" Value="member this.Build : string[] * seq&lt;Microsoft.Build.Framework.ILogger&gt; *  -&gt; bool" Usage="projectInstance.Build (targets, loggers, targetOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -574,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build(System.String[],System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger},System.Collections.Generic.IEnumerable{Microsoft.Build.Logging.ForwardingLoggerRecord})" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (targets As String(), loggers As IEnumerable(Of ILogger), remoteLoggers As IEnumerable(Of ForwardingLoggerRecord)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targets, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Framework::ILogger ^&gt; ^ loggers, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Logging::ForwardingLoggerRecord ^&gt; ^ remoteLoggers);" />
+      <MemberSignature Language="F#" Value="member this.Build : string[] * seq&lt;Microsoft.Build.Framework.ILogger&gt; * seq&lt;Microsoft.Build.Logging.ForwardingLoggerRecord&gt; -&gt; bool" Usage="projectInstance.Build (targets, loggers, remoteLoggers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -609,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.Build(System.String[],System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger},System.Collections.Generic.IEnumerable{Microsoft.Build.Logging.ForwardingLoggerRecord},System.Collections.Generic.IDictionary{System.String,Microsoft.Build.Execution.TargetResult}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (targets As String(), loggers As IEnumerable(Of ILogger), remoteLoggers As IEnumerable(Of ForwardingLoggerRecord), ByRef targetOutputs As IDictionary(Of String, TargetResult)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targets, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Framework::ILogger ^&gt; ^ loggers, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Logging::ForwardingLoggerRecord ^&gt; ^ remoteLoggers, [Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::TargetResult ^&gt; ^ % targetOutputs);" />
+      <MemberSignature Language="F#" Value="member this.Build : string[] * seq&lt;Microsoft.Build.Framework.ILogger&gt; * seq&lt;Microsoft.Build.Logging.ForwardingLoggerRecord&gt; *  -&gt; bool" Usage="projectInstance.Build (targets, loggers, remoteLoggers, targetOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -655,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.DeepCopy" />
       <MemberSignature Language="VB.NET" Value="Public Function DeepCopy () As ProjectInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::ProjectInstance ^ DeepCopy();" />
+      <MemberSignature Language="F#" Value="member this.DeepCopy : unit -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="projectInstance.DeepCopy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -676,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.DeepCopy(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function DeepCopy (isImmutable As Boolean) As ProjectInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::ProjectInstance ^ DeepCopy(bool isImmutable);" />
+      <MemberSignature Language="F#" Value="member this.DeepCopy : bool -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="projectInstance.DeepCopy isImmutable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -700,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.DefaultTargets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultTargets As List(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ DefaultTargets { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultTargets : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.Build.Execution.ProjectInstance.DefaultTargets" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Evaluation.IEvaluatorData`4.DefaultTargets</InterfaceMember>
@@ -730,6 +752,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.Directory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Directory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Directory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Directory : string" Usage="Microsoft.Build.Execution.ProjectInstance.Directory" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Evaluation.IEvaluatorData`4.Directory</InterfaceMember>
@@ -758,6 +781,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.EvaluateCondition(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function EvaluateCondition (condition As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EvaluateCondition(System::String ^ condition);" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateCondition : string -&gt; bool&#xA;override this.EvaluateCondition : string -&gt; bool" Usage="projectInstance.EvaluateCondition condition" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Evaluation.IEvaluatorData`4.EvaluateCondition(System.String)</InterfaceMember>
@@ -794,6 +818,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.ExpandString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExpandString (unexpandedValue As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ExpandString(System::String ^ unexpandedValue);" />
+      <MemberSignature Language="F#" Value="abstract member ExpandString : string -&gt; string&#xA;override this.ExpandString : string -&gt; string" Usage="projectInstance.ExpandString unexpandedValue" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Evaluation.IEvaluatorData`4.ExpandString(System.String)</InterfaceMember>
@@ -830,6 +855,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.FullPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullPath : string" Usage="Microsoft.Build.Execution.ProjectInstance.FullPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -864,6 +890,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetEvaluatedItemIncludeEscaped(Microsoft.Build.Execution.ProjectItemDefinitionInstance)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEvaluatedItemIncludeEscaped (item As ProjectItemDefinitionInstance) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetEvaluatedItemIncludeEscaped(Microsoft::Build::Execution::ProjectItemDefinitionInstance ^ item);" />
+      <MemberSignature Language="F#" Value="static member GetEvaluatedItemIncludeEscaped : Microsoft.Build.Execution.ProjectItemDefinitionInstance -&gt; string" Usage="Microsoft.Build.Execution.ProjectInstance.GetEvaluatedItemIncludeEscaped item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -888,6 +915,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetEvaluatedItemIncludeEscaped(Microsoft.Build.Execution.ProjectItemInstance)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEvaluatedItemIncludeEscaped (item As ProjectItemInstance) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetEvaluatedItemIncludeEscaped(Microsoft::Build::Execution::ProjectItemInstance ^ item);" />
+      <MemberSignature Language="F#" Value="static member GetEvaluatedItemIncludeEscaped : Microsoft.Build.Execution.ProjectItemInstance -&gt; string" Usage="Microsoft.Build.Execution.ProjectInstance.GetEvaluatedItemIncludeEscaped item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -912,6 +940,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetItems(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItems (itemType As String) As ICollection(Of ProjectItemInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectItemInstance ^&gt; ^ GetItems(System::String ^ itemType);" />
+      <MemberSignature Language="F#" Value="member this.GetItems : string -&gt; System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectItemInstance&gt;" Usage="projectInstance.GetItems itemType" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Evaluation.IItemProvider`1.GetItems(System.String)</InterfaceMember>
@@ -939,6 +968,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetItemsByItemTypeAndEvaluatedInclude(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItemsByItemTypeAndEvaluatedInclude (itemType As String, evaluatedInclude As String) As IEnumerable(Of ProjectItemInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Execution::ProjectItemInstance ^&gt; ^ GetItemsByItemTypeAndEvaluatedInclude(System::String ^ itemType, System::String ^ evaluatedInclude);" />
+      <MemberSignature Language="F#" Value="member this.GetItemsByItemTypeAndEvaluatedInclude : string * string -&gt; seq&lt;Microsoft.Build.Execution.ProjectItemInstance&gt;" Usage="projectInstance.GetItemsByItemTypeAndEvaluatedInclude (itemType, evaluatedInclude)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -974,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetMetadataValueEscaped(Microsoft.Build.Execution.ProjectMetadataInstance)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMetadataValueEscaped (metadatum As ProjectMetadataInstance) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetMetadataValueEscaped(Microsoft::Build::Execution::ProjectMetadataInstance ^ metadatum);" />
+      <MemberSignature Language="F#" Value="static member GetMetadataValueEscaped : Microsoft.Build.Execution.ProjectMetadataInstance -&gt; string" Usage="Microsoft.Build.Execution.ProjectInstance.GetMetadataValueEscaped metadatum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -998,6 +1029,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetMetadataValueEscaped(Microsoft.Build.Execution.ProjectItemDefinitionInstance,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMetadataValueEscaped (item As ProjectItemDefinitionInstance, name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetMetadataValueEscaped(Microsoft::Build::Execution::ProjectItemDefinitionInstance ^ item, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetMetadataValueEscaped : Microsoft.Build.Execution.ProjectItemDefinitionInstance * string -&gt; string" Usage="Microsoft.Build.Execution.ProjectInstance.GetMetadataValueEscaped (item, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1024,6 +1056,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetMetadataValueEscaped(Microsoft.Build.Execution.ProjectItemInstance,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMetadataValueEscaped (item As ProjectItemInstance, name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetMetadataValueEscaped(Microsoft::Build::Execution::ProjectItemInstance ^ item, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetMetadataValueEscaped : Microsoft.Build.Execution.ProjectItemInstance * string -&gt; string" Usage="Microsoft.Build.Execution.ProjectInstance.GetMetadataValueEscaped (item, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1050,6 +1083,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String) As ProjectPropertyInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Build::Execution::ProjectPropertyInstance ^ GetProperty(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string -&gt; Microsoft.Build.Execution.ProjectPropertyInstance&#xA;override this.GetProperty : string -&gt; Microsoft.Build.Execution.ProjectPropertyInstance" Usage="projectInstance.GetProperty name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Evaluation.IPropertyProvider`1.GetProperty(System.String)</InterfaceMember>
@@ -1082,6 +1116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetPropertyValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValue (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPropertyValue(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyValue : string -&gt; string" Usage="projectInstance.GetPropertyValue name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1113,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.GetPropertyValueEscaped(Microsoft.Build.Execution.ProjectPropertyInstance)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertyValueEscaped (property As ProjectPropertyInstance) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetPropertyValueEscaped(Microsoft::Build::Execution::ProjectPropertyInstance ^ property);" />
+      <MemberSignature Language="F#" Value="static member GetPropertyValueEscaped : Microsoft.Build.Execution.ProjectPropertyInstance -&gt; string" Usage="Microsoft.Build.Execution.ProjectInstance.GetPropertyValueEscaped property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1137,6 +1173,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.GlobalProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlobalProperties As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GlobalProperties { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlobalProperties : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.Build.Execution.ProjectInstance.GlobalProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1173,6 +1210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.InitialTargets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitialTargets As List(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ InitialTargets { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InitialTargets : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.Build.Execution.ProjectInstance.InitialTargets" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Evaluation.IEvaluatorData`4.InitialTargets</InterfaceMember>
@@ -1196,6 +1234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.IsImmutable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImmutable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImmutable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImmutable : bool" Usage="Microsoft.Build.Execution.ProjectInstance.IsImmutable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1216,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.ItemDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemDefinitions As IDictionary(Of String, ProjectItemDefinitionInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::ProjectItemDefinitionInstance ^&gt; ^ ItemDefinitions { System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::ProjectItemDefinitionInstance ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemDefinitions : System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Execution.ProjectItemDefinitionInstance&gt;" Usage="Microsoft.Build.Execution.ProjectInstance.ItemDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1241,6 +1281,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ICollection(Of ProjectItemInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectItemInstance ^&gt; ^ Items { System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectItemInstance ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectItemInstance&gt;" Usage="Microsoft.Build.Execution.ProjectInstance.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1266,6 +1307,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.ItemTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemTypes As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ ItemTypes { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTypes : System.Collections.Generic.ICollection&lt;string&gt;" Usage="Microsoft.Build.Execution.ProjectInstance.ItemTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1291,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.ProjectFileLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFileLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ProjectFileLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectFileLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectInstance.ProjectFileLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1311,6 +1354,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As ICollection(Of ProjectPropertyInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectPropertyInstance ^&gt; ^ Properties { System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectPropertyInstance ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectPropertyInstance&gt;" Usage="Microsoft.Build.Execution.ProjectInstance.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1336,6 +1380,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.RemoveItem(Microsoft.Build.Execution.ProjectItemInstance)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveItem (item As ProjectItemInstance) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveItem(Microsoft::Build::Execution::ProjectItemInstance ^ item);" />
+      <MemberSignature Language="F#" Value="member this.RemoveItem : Microsoft.Build.Execution.ProjectItemInstance -&gt; bool" Usage="projectInstance.RemoveItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1360,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.RemoveProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveProperty (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveProperty(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.RemoveProperty : string -&gt; bool" Usage="projectInstance.RemoveProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1384,6 +1430,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.SetProperty(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetProperty (name As String, evaluatedValue As String) As ProjectPropertyInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::ProjectPropertyInstance ^ SetProperty(System::String ^ name, System::String ^ evaluatedValue);" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : string * string -&gt; Microsoft.Build.Execution.ProjectPropertyInstance" Usage="projectInstance.SetProperty (name, evaluatedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1417,6 +1464,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.Targets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Targets As IDictionary(Of String, ProjectTargetInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::ProjectTargetInstance ^&gt; ^ Targets { System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::ProjectTargetInstance ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Targets : System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Execution.ProjectTargetInstance&gt;" Usage="Microsoft.Build.Execution.ProjectInstance.Targets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1442,6 +1490,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectInstance.ToolsVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolsVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolsVersion : string" Usage="Microsoft.Build.Execution.ProjectInstance.ToolsVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1469,6 +1518,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.ToProjectRootElement" />
       <MemberSignature Language="VB.NET" Value="Public Function ToProjectRootElement () As ProjectRootElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectRootElement ^ ToProjectRootElement();" />
+      <MemberSignature Language="F#" Value="member this.ToProjectRootElement : unit -&gt; Microsoft.Build.Construction.ProjectRootElement" Usage="projectInstance.ToProjectRootElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -1490,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectInstance.UpdateStateFrom(Microsoft.Build.Execution.ProjectInstance)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateStateFrom (projectState As ProjectInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateStateFrom(Microsoft::Build::Execution::ProjectInstance ^ projectState);" />
+      <MemberSignature Language="F#" Value="member this.UpdateStateFrom : Microsoft.Build.Execution.ProjectInstance -&gt; unit" Usage="projectInstance.UpdateStateFrom projectState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

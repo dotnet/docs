@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.Cer" />
   <TypeSignature Language="VB.NET" Value="Public Enum Cer" />
   <TypeSignature Language="C++ CLI" Value="public enum class Cer" />
+  <TypeSignature Language="F#" Value="type Cer = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Cer.MayFail" />
       <MemberSignature Language="VB.NET" Value="MayFail" />
       <MemberSignature Language="C++ CLI" Value="MayFail" />
+      <MemberSignature Language="F#" Value="MayFail = 1" Usage="System.Runtime.ConstrainedExecution.Cer.MayFail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Cer.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Runtime.ConstrainedExecution.Cer.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Cer.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="C++ CLI" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 2" Usage="System.Runtime.ConstrainedExecution.Cer.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

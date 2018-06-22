@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.EventResetMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventResetMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventResetMode" />
+  <TypeSignature Language="F#" Value="type EventResetMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.EventResetMode.AutoReset" />
       <MemberSignature Language="VB.NET" Value="AutoReset" />
       <MemberSignature Language="C++ CLI" Value="AutoReset" />
+      <MemberSignature Language="F#" Value="AutoReset = 0" Usage="System.Threading.EventResetMode.AutoReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.EventResetMode.ManualReset" />
       <MemberSignature Language="VB.NET" Value="ManualReset" />
       <MemberSignature Language="C++ CLI" Value="ManualReset" />
+      <MemberSignature Language="F#" Value="ManualReset = 1" Usage="System.Threading.EventResetMode.ManualReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

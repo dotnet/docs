@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSLocalField" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JSLocalField&#xA;Inherits JSVariableField" />
   <TypeSignature Language="C++ CLI" Value="public ref class JSLocalField sealed : Microsoft::JScript::JSVariableField" />
+  <TypeSignature Language="F#" Value="type JSLocalField = class&#xA;    inherit JSVariableField" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSLocalField.#ctor(System.String,System.RuntimeTypeHandle,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, handle As RuntimeTypeHandle, slotNumber As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSLocalField(System::String ^ name, RuntimeTypeHandle handle, int slotNumber);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JSLocalField : string * RuntimeTypeHandle * int -&gt; Microsoft.JScript.JSLocalField" Usage="new Microsoft.JScript.JSLocalField (name, handle, slotNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSLocalField.FieldType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ FieldType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldType : Type" Usage="Microsoft.JScript.JSLocalField.FieldType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSLocalField.GetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (obj As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : obj -&gt; obj" Usage="jSLocalField.GetValue obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object obj, object value, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, class System.Globalization.CultureInfo locale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSLocalField.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(System::Object ^ obj, System::Object ^ value, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Globalization::CultureInfo ^ locale);" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj * obj * System.Reflection.BindingFlags * System.Reflection.Binder * System.Globalization.CultureInfo -&gt; unit" Usage="jSLocalField.SetValue (obj, value, invokeAttr, binder, locale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

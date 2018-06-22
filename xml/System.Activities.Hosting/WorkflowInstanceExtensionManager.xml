@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstanceExtensionManager" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowInstanceExtensionManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstanceExtensionManager" />
+  <TypeSignature Language="F#" Value="type WorkflowInstanceExtensionManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (singletonExtension As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Object ^ singletonExtension);" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; unit&#xA;override this.Add : obj -&gt; unit" Usage="workflowInstanceExtensionManager.Add singletonExtension" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add``1(System.Func{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add(Of T As Class) (extensionCreationFunction As Func(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual void Add(Func&lt;T&gt; ^ extensionCreationFunction);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Func&lt;'T (requires 'T : null)&gt; -&gt; unit (requires 'T : null)&#xA;override this.Add : Func&lt;'T (requires 'T : null)&gt; -&gt; unit (requires 'T : null)" Usage="workflowInstanceExtensionManager.Add extensionCreationFunction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstanceExtensionManager.MakeReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.MakeReadOnly : unit -&gt; unit" Usage="workflowInstanceExtensionManager.MakeReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

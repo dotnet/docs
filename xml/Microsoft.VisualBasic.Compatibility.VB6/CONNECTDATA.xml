@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA" />
   <TypeSignature Language="VB.NET" Value="Public Structure CONNECTDATA" />
   <TypeSignature Language="C++ CLI" Value="public value class CONNECTDATA" />
+  <TypeSignature Language="F#" Value="type CONNECTDATA = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA.cookie" />
       <MemberSignature Language="VB.NET" Value="Public cookie As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int cookie;" />
+      <MemberSignature Language="F#" Value="val mutable cookie : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA.cookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA.pUnk" />
       <MemberSignature Language="VB.NET" Value="Public pUnk As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr pUnk;" />
+      <MemberSignature Language="F#" Value="val mutable pUnk : nativeint" Usage="Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA.pUnk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

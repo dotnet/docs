@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ChannelEndpointElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelEndpointElementCollection&#xA;Inherits ServiceModelEnhancedConfigurationElementCollection(Of ChannelEndpointElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelEndpointElementCollection sealed : System::ServiceModel::Configuration::ServiceModelEnhancedConfigurationElementCollection&lt;System::ServiceModel::Configuration::ChannelEndpointElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type ChannelEndpointElementCollection = class&#xA;    inherit ServiceModelEnhancedConfigurationElementCollection&lt;ChannelEndpointElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="channelEndpointElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

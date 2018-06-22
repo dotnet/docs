@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormattingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextFormattingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextFormattingMode" />
+  <TypeSignature Language="F#" Value="type TextFormattingMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormattingMode.Display" />
       <MemberSignature Language="VB.NET" Value="Display" />
       <MemberSignature Language="C++ CLI" Value="Display" />
+      <MemberSignature Language="F#" Value="Display = 1" Usage="System.Windows.Media.TextFormattingMode.Display" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormattingMode.Ideal" />
       <MemberSignature Language="VB.NET" Value="Ideal" />
       <MemberSignature Language="C++ CLI" Value="Ideal" />
+      <MemberSignature Language="F#" Value="Ideal = 0" Usage="System.Windows.Media.TextFormattingMode.Ideal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

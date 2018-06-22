@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ClientTarget" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientTarget&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientTarget sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ClientTarget = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ClientTarget.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (alias As String, userAgent As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientTarget(System::String ^ alias, System::String ^ userAgent);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.ClientTarget : string * string -&gt; System.Web.Configuration.ClientTarget" Usage="new System.Web.Configuration.ClientTarget (alias, userAgent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ClientTarget.Alias" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Alias As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Alias { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Alias : string" Usage="System.Web.Configuration.ClientTarget.Alias" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ClientTarget.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ClientTarget.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ClientTarget.UserAgent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserAgent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserAgent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserAgent : string" Usage="System.Web.Configuration.ClientTarget.UserAgent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

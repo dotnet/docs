@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventWrittenEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EventWrittenEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventWrittenEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type EventWrittenEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ActivityId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityId : Guid" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Channel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Channel As EventChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventChannel Channel { System::Diagnostics::Tracing::EventChannel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Channel : System.Diagnostics.Tracing.EventChannel" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Channel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.EventId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventId : int" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.EventId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.EventName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventName : string" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.EventName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.EventSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventSource As EventSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventSource ^ EventSource { System::Diagnostics::Tracing::EventSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventSource : System.Diagnostics.Tracing.EventSource" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.EventSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Keywords" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keywords As EventKeywords" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventKeywords Keywords { System::Diagnostics::Tracing::EventKeywords get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keywords : System.Diagnostics.Tracing.EventKeywords" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As EventLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventLevel Level { System::Diagnostics::Tracing::EventLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Diagnostics.Tracing.EventLevel" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -285,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -319,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Opcode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Opcode As EventOpcode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventOpcode Opcode { System::Diagnostics::Tracing::EventOpcode get(); };" />
+      <MemberSignature Language="F#" Value="member this.Opcode : System.Diagnostics.Tracing.EventOpcode" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Opcode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -353,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Payload" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Payload As ReadOnlyCollection(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ Payload { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Payload : System.Collections.ObjectModel.ReadOnlyCollection&lt;obj&gt;" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Payload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -387,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.PayloadNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PayloadNames As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ PayloadNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PayloadNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.PayloadNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -419,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.RelatedActivityId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedActivityId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid RelatedActivityId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedActivityId : Guid" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.RelatedActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -463,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Tags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tags As EventTags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventTags Tags { System::Diagnostics::Tracing::EventTags get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tags : System.Diagnostics.Tracing.EventTags" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Tags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -495,6 +509,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Task" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As EventTask" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventTask Task { System::Diagnostics::Tracing::EventTask get(); };" />
+      <MemberSignature Language="F#" Value="member this.Task : System.Diagnostics.Tracing.EventTask" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -529,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventWrittenEventArgs.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Version { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : byte" Usage="System.Diagnostics.Tracing.EventWrittenEventArgs.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

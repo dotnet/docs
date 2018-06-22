@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ArrowStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ArrowStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ArrowStyle" />
+  <TypeSignature Language="F#" Value="type ArrowStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ArrowStyle.DoubleArrow" />
       <MemberSignature Language="VB.NET" Value="DoubleArrow" />
       <MemberSignature Language="C++ CLI" Value="DoubleArrow" />
+      <MemberSignature Language="F#" Value="DoubleArrow = 1" Usage="System.Web.UI.DataVisualization.Charting.ArrowStyle.DoubleArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ArrowStyle.Simple" />
       <MemberSignature Language="VB.NET" Value="Simple" />
       <MemberSignature Language="C++ CLI" Value="Simple" />
+      <MemberSignature Language="F#" Value="Simple = 0" Usage="System.Web.UI.DataVisualization.Charting.ArrowStyle.Simple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ArrowStyle.Tailed" />
       <MemberSignature Language="VB.NET" Value="Tailed" />
       <MemberSignature Language="C++ CLI" Value="Tailed" />
+      <MemberSignature Language="F#" Value="Tailed = 2" Usage="System.Web.UI.DataVisualization.Charting.ArrowStyle.Tailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

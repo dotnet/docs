@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.IConfigurationSystem" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConfigurationSystem" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConfigurationSystem" />
+  <TypeSignature Language="F#" Value="type IConfigurationSystem = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IConfigurationSystem.GetConfig(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConfig (configKey As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetConfig(System::String ^ configKey);" />
+      <MemberSignature Language="F#" Value="abstract member GetConfig : string -&gt; obj" Usage="iConfigurationSystem.GetConfig configKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IConfigurationSystem.Init" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init();" />
+      <MemberSignature Language="F#" Value="abstract member Init : unit -&gt; unit" Usage="iConfigurationSystem.Init " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

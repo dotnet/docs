@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.NtlmFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum NtlmFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class NtlmFlags" />
+  <TypeSignature Language="F#" Value="type NtlmFlags = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.Negotiate128" />
       <MemberSignature Language="VB.NET" Value="Negotiate128" />
       <MemberSignature Language="C++ CLI" Value="Negotiate128" />
+      <MemberSignature Language="F#" Value="Negotiate128 = 536870912" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.Negotiate128" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.Negotiate56" />
       <MemberSignature Language="VB.NET" Value="Negotiate56" />
       <MemberSignature Language="C++ CLI" Value="Negotiate56" />
+      <MemberSignature Language="F#" Value="Negotiate56 = -2147483648" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.Negotiate56" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateAlwaysSign" />
       <MemberSignature Language="VB.NET" Value="NegotiateAlwaysSign" />
       <MemberSignature Language="C++ CLI" Value="NegotiateAlwaysSign" />
+      <MemberSignature Language="F#" Value="NegotiateAlwaysSign = 32768" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateAlwaysSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateDomainSupplied" />
       <MemberSignature Language="VB.NET" Value="NegotiateDomainSupplied" />
       <MemberSignature Language="C++ CLI" Value="NegotiateDomainSupplied" />
+      <MemberSignature Language="F#" Value="NegotiateDomainSupplied = 4096" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateDomainSupplied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateNtlm" />
       <MemberSignature Language="VB.NET" Value="NegotiateNtlm" />
       <MemberSignature Language="C++ CLI" Value="NegotiateNtlm" />
+      <MemberSignature Language="F#" Value="NegotiateNtlm = 512" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateNtlm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateNtlm2Key" />
       <MemberSignature Language="VB.NET" Value="NegotiateNtlm2Key" />
       <MemberSignature Language="C++ CLI" Value="NegotiateNtlm2Key" />
+      <MemberSignature Language="F#" Value="NegotiateNtlm2Key = 524288" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateNtlm2Key" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateOem" />
       <MemberSignature Language="VB.NET" Value="NegotiateOem" />
       <MemberSignature Language="C++ CLI" Value="NegotiateOem" />
+      <MemberSignature Language="F#" Value="NegotiateOem = 2" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateOem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateUnicode" />
       <MemberSignature Language="VB.NET" Value="NegotiateUnicode" />
       <MemberSignature Language="C++ CLI" Value="NegotiateUnicode" />
+      <MemberSignature Language="F#" Value="NegotiateUnicode = 1" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateUnicode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateWorkstationSupplied" />
       <MemberSignature Language="VB.NET" Value="NegotiateWorkstationSupplied" />
       <MemberSignature Language="C++ CLI" Value="NegotiateWorkstationSupplied" />
+      <MemberSignature Language="F#" Value="NegotiateWorkstationSupplied = 8192" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.NegotiateWorkstationSupplied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmFlags.RequestTarget" />
       <MemberSignature Language="VB.NET" Value="RequestTarget" />
       <MemberSignature Language="C++ CLI" Value="RequestTarget" />
+      <MemberSignature Language="F#" Value="RequestTarget = 4" Usage="Mono.Security.Protocol.Ntlm.NtlmFlags.RequestTarget" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

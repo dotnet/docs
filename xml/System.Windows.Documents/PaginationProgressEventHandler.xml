@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.PaginationProgressEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PaginationProgressEventHandler(sender As Object, e As PaginationProgressEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PaginationProgressEventHandler(System::Object ^ sender, PaginationProgressEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PaginationProgressEventHandler = delegate of obj * PaginationProgressEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

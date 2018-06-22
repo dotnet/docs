@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebItemClosingTagNotFound" />
   <TypeSignature Language="VB.NET" Value="Public Class WebItemClosingTagNotFound&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebItemClosingTagNotFound : Exception" />
+  <TypeSignature Language="F#" Value="type WebItemClosingTagNotFound = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebItemClosingTagNotFound.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (TagName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebItemClosingTagNotFound(System::String ^ TagName);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.WebItemClosingTagNotFound : string -&gt; Microsoft.VisualBasic.Compatibility.VB6.WebItemClosingTagNotFound" Usage="new Microsoft.VisualBasic.Compatibility.VB6.WebItemClosingTagNotFound TagName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

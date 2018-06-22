@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataBindingSchemaProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataBindingSchemaProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataBindingSchemaProvider" />
+  <TypeSignature Language="F#" Value="type IDataBindingSchemaProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRefreshSchema As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRefreshSchema : bool" Usage="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshSchema (preferSilent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshSchema(bool preferSilent);" />
+      <MemberSignature Language="F#" Value="abstract member RefreshSchema : bool -&gt; unit" Usage="iDataBindingSchemaProvider.RefreshSchema preferSilent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As IDataSourceViewSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IDataSourceViewSchema ^ Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Web.UI.Design.IDataSourceViewSchema" Usage="System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

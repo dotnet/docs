@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum DiskSpaceExhaustedOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class DiskSpaceExhaustedOption" />
+  <TypeSignature Language="F#" Value="type DiskSpaceExhaustedOption = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.DiscardMessages" />
       <MemberSignature Language="VB.NET" Value="DiscardMessages" />
       <MemberSignature Language="C++ CLI" Value="DiscardMessages" />
+      <MemberSignature Language="F#" Value="DiscardMessages = 1" Usage="Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.DiscardMessages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.ThrowException" />
       <MemberSignature Language="VB.NET" Value="ThrowException" />
       <MemberSignature Language="C++ CLI" Value="ThrowException" />
+      <MemberSignature Language="F#" Value="ThrowException = 0" Usage="Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.ThrowException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

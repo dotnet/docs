@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Conditions" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2Conditions" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2Conditions" />
+  <TypeSignature Language="F#" Value="type Saml2Conditions = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Conditions.AudienceRestrictions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudienceRestrictions As Collection(Of Saml2AudienceRestriction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2AudienceRestriction ^&gt; ^ AudienceRestrictions { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2AudienceRestriction ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AudienceRestrictions : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2AudienceRestriction&gt;" Usage="System.IdentityModel.Tokens.Saml2Conditions.AudienceRestrictions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Conditions.NotBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property NotBefore As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NotBefore { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.NotBefore : Nullable&lt;DateTime&gt; with get, set" Usage="System.IdentityModel.Tokens.Saml2Conditions.NotBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Conditions.NotOnOrAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property NotOnOrAfter As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NotOnOrAfter { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.NotOnOrAfter : Nullable&lt;DateTime&gt; with get, set" Usage="System.IdentityModel.Tokens.Saml2Conditions.NotOnOrAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Conditions.OneTimeUse" />
       <MemberSignature Language="VB.NET" Value="Public Property OneTimeUse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OneTimeUse { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OneTimeUse : bool with get, set" Usage="System.IdentityModel.Tokens.Saml2Conditions.OneTimeUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Conditions.ProxyRestriction" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyRestriction As Saml2ProxyRestriction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2ProxyRestriction ^ ProxyRestriction { System::IdentityModel::Tokens::Saml2ProxyRestriction ^ get(); void set(System::IdentityModel::Tokens::Saml2ProxyRestriction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProxyRestriction : System.IdentityModel.Tokens.Saml2ProxyRestriction with get, set" Usage="System.IdentityModel.Tokens.Saml2Conditions.ProxyRestriction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

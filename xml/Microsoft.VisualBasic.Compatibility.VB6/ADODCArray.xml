@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray" />
   <TypeSignature Language="VB.NET" Value="Public Class ADODCArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ADODCArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type ADODCArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ADODCArray(System::ComponentModel::IContainer ^ Container);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.ADODCArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.ADODCArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.ADODCArray Container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.BackColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event BackColorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.BindingContextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event BindingContextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
+      <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="aDODCArray.CanExtend target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.CausesValidationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.ChangeUICues" />
       <MemberSignature Language="VB.NET" Value="Public Event ChangeUICues As UICuesEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
+      <MemberSignature Language="F#" Value="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " Usage="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -307,6 +315,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Click" />
       <MemberSignature Language="VB.NET" Value="Public Event Click As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.ContextMenuChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.CtlLoad" />
       <MemberSignature Language="VB.NET" Value="Public Event CtlLoad As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CtlLoad;" />
+      <MemberSignature Language="F#" Value="member this.CtlLoad : EventHandler " Usage="member this.CtlLoad : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -400,6 +411,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.CursorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event CursorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
+      <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -431,6 +443,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.DockChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
+      <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -462,6 +475,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.DoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Event DoubleClick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -491,6 +505,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.DragDrop" />
       <MemberSignature Language="VB.NET" Value="Public Event DragDrop As DragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
+      <MemberSignature Language="F#" Value="member this.DragDrop : System.Windows.Forms.DragEventHandler " Usage="member this.DragDrop : System.Windows.Forms.DragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -521,6 +536,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.DragEnter" />
       <MemberSignature Language="VB.NET" Value="Public Event DragEnter As DragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
+      <MemberSignature Language="F#" Value="member this.DragEnter : System.Windows.Forms.DragEventHandler " Usage="member this.DragEnter : System.Windows.Forms.DragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -553,6 +569,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.DragLeave" />
       <MemberSignature Language="VB.NET" Value="Public Event DragLeave As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
+      <MemberSignature Language="F#" Value="member this.DragLeave : EventHandler " Usage="member this.DragLeave : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -585,6 +602,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.DragOver" />
       <MemberSignature Language="VB.NET" Value="Public Event DragOver As DragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
+      <MemberSignature Language="F#" Value="member this.DragOver : System.Windows.Forms.DragEventHandler " Usage="member this.DragOver : System.Windows.Forms.DragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -617,6 +635,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.EnabledChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event EnabledChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
+      <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -648,6 +667,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.EndOfRecordset" />
       <MemberSignature Language="VB.NET" Value="Public Event EndOfRecordset As ADODC.EndOfRecordsetDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::EndOfRecordsetDelegate ^ EndOfRecordset;" />
+      <MemberSignature Language="F#" Value="member this.EndOfRecordset : Microsoft.VisualBasic.Compatibility.VB6.ADODC.EndOfRecordsetDelegate " Usage="member this.EndOfRecordset : Microsoft.VisualBasic.Compatibility.VB6.ADODC.EndOfRecordsetDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -684,6 +704,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Enter" />
       <MemberSignature Language="VB.NET" Value="Public Event Enter As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
+      <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -733,6 +754,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Error" />
       <MemberSignature Language="VB.NET" Value="Public Event Error As ADODC.ErrorDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::ErrorDelegate ^ Error;" />
+      <MemberSignature Language="F#" Value="member this.Error : Microsoft.VisualBasic.Compatibility.VB6.ADODC.ErrorDelegate " Usage="member this.Error : Microsoft.VisualBasic.Compatibility.VB6.ADODC.ErrorDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -762,6 +784,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.FetchComplete" />
       <MemberSignature Language="VB.NET" Value="Public Event FetchComplete As ADODC.FetchCompleteDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::FetchCompleteDelegate ^ FetchComplete;" />
+      <MemberSignature Language="F#" Value="member this.FetchComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchCompleteDelegate " Usage="member this.FetchComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchCompleteDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -796,6 +819,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.FetchProgress" />
       <MemberSignature Language="VB.NET" Value="Public Event FetchProgress As ADODC.FetchProgressDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::FetchProgressDelegate ^ FetchProgress;" />
+      <MemberSignature Language="F#" Value="member this.FetchProgress : Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchProgressDelegate " Usage="member this.FetchProgress : Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchProgressDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -830,6 +854,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.FieldChangeComplete" />
       <MemberSignature Language="VB.NET" Value="Public Event FieldChangeComplete As ADODC.FieldChangeCompleteDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::FieldChangeCompleteDelegate ^ FieldChangeComplete;" />
+      <MemberSignature Language="F#" Value="member this.FieldChangeComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.FieldChangeCompleteDelegate " Usage="member this.FieldChangeComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.FieldChangeCompleteDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -864,6 +889,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event FontChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
+      <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -895,6 +921,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -926,6 +953,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
+      <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="aDODCArray.GetControlInstanceType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -957,6 +985,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.GetIndex(Microsoft.VisualBasic.Compatibility.VB6.ADODC)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As ADODC) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(Microsoft::VisualBasic::Compatibility::VB6::ADODC ^ o);" />
+      <MemberSignature Language="F#" Value="member this.GetIndex : Microsoft.VisualBasic.Compatibility.VB6.ADODC -&gt; int16" Usage="aDODCArray.GetIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -991,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.GiveFeedback" />
       <MemberSignature Language="VB.NET" Value="Public Event GiveFeedback As GiveFeedbackEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
+      <MemberSignature Language="F#" Value="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " Usage="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1023,6 +1053,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.HelpRequested" />
       <MemberSignature Language="VB.NET" Value="Public Event HelpRequested As HelpEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
+      <MemberSignature Language="F#" Value="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " Usage="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1055,6 +1086,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="aDODCArray.HookUpControlEvents o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1088,6 +1120,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.ImeModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ImeModeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1118,6 +1151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As ADODC" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::ADODC ^ default[short] { Microsoft::VisualBasic::Compatibility::VB6::ADODC ^ get(short Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int16) : Microsoft.VisualBasic.Compatibility.VB6.ADODC" Usage="Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1157,6 +1191,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.KeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyDown As KeyEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
+      <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1197,6 +1232,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.KeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyPress As KeyPressEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
+      <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1241,6 +1277,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.KeyUp" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyUp As KeyEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
+      <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1281,6 +1318,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Layout" />
       <MemberSignature Language="VB.NET" Value="Public Event Layout As LayoutEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
+      <MemberSignature Language="F#" Value="member this.Layout : System.Windows.Forms.LayoutEventHandler " Usage="member this.Layout : System.Windows.Forms.LayoutEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1313,6 +1351,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Leave" />
       <MemberSignature Language="VB.NET" Value="Public Event Leave As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
+      <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1363,6 +1402,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.LocationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1394,6 +1434,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.MouseDown" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseDown As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
+      <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1440,6 +1481,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.MouseEnter" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseEnter As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
+      <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1482,6 +1524,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.MouseHover" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseHover As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
+      <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1530,6 +1573,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseLeave As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
+      <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1572,6 +1616,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.MouseMove" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseMove As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
+      <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1614,6 +1659,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.MouseUp" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseUp As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
+      <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1656,6 +1702,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Move" />
       <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
+      <MemberSignature Language="F#" Value="member this.Move : EventHandler " Usage="member this.Move : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1686,6 +1733,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.MoveComplete" />
       <MemberSignature Language="VB.NET" Value="Public Event MoveComplete As ADODC.MoveCompleteDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::MoveCompleteDelegate ^ MoveComplete;" />
+      <MemberSignature Language="F#" Value="member this.MoveComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.MoveCompleteDelegate " Usage="member this.MoveComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.MoveCompleteDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1720,6 +1768,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Paint" />
       <MemberSignature Language="VB.NET" Value="Public Event Paint As PaintEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1752,6 +1801,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.ParentChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
+      <MemberSignature Language="F#" Value="member this.ParentChanged : EventHandler " Usage="member this.ParentChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1783,6 +1833,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.QueryAccessibilityHelp" />
       <MemberSignature Language="VB.NET" Value="Public Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
+      <MemberSignature Language="F#" Value="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " Usage="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1815,6 +1866,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.QueryContinueDrag" />
       <MemberSignature Language="VB.NET" Value="Public Event QueryContinueDrag As QueryContinueDragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
+      <MemberSignature Language="F#" Value="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " Usage="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1845,6 +1897,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.RecordChangeComplete" />
       <MemberSignature Language="VB.NET" Value="Public Event RecordChangeComplete As ADODC.RecordChangeCompleteDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::RecordChangeCompleteDelegate ^ RecordChangeComplete;" />
+      <MemberSignature Language="F#" Value="member this.RecordChangeComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordChangeCompleteDelegate " Usage="member this.RecordChangeComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordChangeCompleteDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1879,6 +1932,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.RecordsetChangeComplete" />
       <MemberSignature Language="VB.NET" Value="Public Event RecordsetChangeComplete As ADODC.RecordsetChangeCompleteDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::RecordsetChangeCompleteDelegate ^ RecordsetChangeComplete;" />
+      <MemberSignature Language="F#" Value="member this.RecordsetChangeComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordsetChangeCompleteDelegate " Usage="member this.RecordsetChangeComplete : Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordsetChangeCompleteDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1913,6 +1967,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.ResetIndex(Microsoft.VisualBasic.Compatibility.VB6.ADODC)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As ADODC)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(Microsoft::VisualBasic::Compatibility::VB6::ADODC ^ o);" />
+      <MemberSignature Language="F#" Value="member this.ResetIndex : Microsoft.VisualBasic.Compatibility.VB6.ADODC -&gt; unit" Usage="aDODCArray.ResetIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1951,6 +2006,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Resize" />
       <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
+      <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -1985,6 +2041,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.RightToLeftChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event RightToLeftChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2016,6 +2073,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.SetIndex(Microsoft.VisualBasic.Compatibility.VB6.ADODC,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As ADODC, Index As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(Microsoft::VisualBasic::Compatibility::VB6::ADODC ^ o, short Index);" />
+      <MemberSignature Language="F#" Value="member this.SetIndex : Microsoft.VisualBasic.Compatibility.VB6.ADODC * int16 -&gt; unit" Usage="aDODCArray.SetIndex (o, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2056,6 +2114,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.ShouldSerializeIndex(Microsoft.VisualBasic.Compatibility.VB6.ADODC)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As ADODC) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(Microsoft::VisualBasic::Compatibility::VB6::ADODC ^ o);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : Microsoft.VisualBasic.Compatibility.VB6.ADODC -&gt; bool" Usage="aDODCArray.ShouldSerializeIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2094,6 +2153,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.SizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2125,6 +2185,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.StyleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event StyleChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
+      <MemberSignature Language="F#" Value="member this.StyleChanged : EventHandler " Usage="member this.StyleChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2158,6 +2219,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.SystemColorsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
+      <MemberSignature Language="F#" Value="member this.SystemColorsChanged : EventHandler " Usage="member this.SystemColorsChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2190,6 +2252,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.TabIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TabIndexChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
+      <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2221,6 +2284,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.TabStopChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TabStopChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
+      <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2252,6 +2316,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Validated" />
       <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
+      <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2314,6 +2379,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.Validating" />
       <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
+      <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2376,6 +2442,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.VisibleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
+      <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2407,6 +2474,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.WillChangeField" />
       <MemberSignature Language="VB.NET" Value="Public Event WillChangeField As ADODC.WillChangeFieldDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::WillChangeFieldDelegate ^ WillChangeField;" />
+      <MemberSignature Language="F#" Value="member this.WillChangeField : Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeFieldDelegate " Usage="member this.WillChangeField : Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeFieldDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2441,6 +2509,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.WillChangeRecord" />
       <MemberSignature Language="VB.NET" Value="Public Event WillChangeRecord As ADODC.WillChangeRecordDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::WillChangeRecordDelegate ^ WillChangeRecord;" />
+      <MemberSignature Language="F#" Value="member this.WillChangeRecord : Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordDelegate " Usage="member this.WillChangeRecord : Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2475,6 +2544,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.WillChangeRecordset" />
       <MemberSignature Language="VB.NET" Value="Public Event WillChangeRecordset As ADODC.WillChangeRecordsetDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::WillChangeRecordsetDelegate ^ WillChangeRecordset;" />
+      <MemberSignature Language="F#" Value="member this.WillChangeRecordset : Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordsetDelegate " Usage="member this.WillChangeRecordset : Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordsetDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -2509,6 +2579,7 @@ MsgBox(CStr(ADODCArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ADODCArray.WillMove" />
       <MemberSignature Language="VB.NET" Value="Public Event WillMove As ADODC.WillMoveDelegate " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Compatibility::VB6::ADODC::WillMoveDelegate ^ WillMove;" />
+      <MemberSignature Language="F#" Value="member this.WillMove : Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillMoveDelegate " Usage="member this.WillMove : Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillMoveDelegate " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

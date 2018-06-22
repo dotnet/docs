@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" />
   <TypeSignature Language="VB.NET" Value="Public Class SequentialWorkflowHeaderFooter" />
   <TypeSignature Language="C++ CLI" Value="public ref class SequentialWorkflowHeaderFooter" />
+  <TypeSignature Language="F#" Value="type SequentialWorkflowHeaderFooter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.#ctor(System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parent As SequentialWorkflowRootDesigner, isHeader As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SequentialWorkflowHeaderFooter(System::Workflow::ComponentModel::Design::SequentialWorkflowRootDesigner ^ parent, bool isHeader);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter : System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner * bool -&gt; System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" Usage="new System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter (parent, isHeader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.AssociatedDesigner" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property AssociatedDesigner As SequentialWorkflowRootDesigner" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::ComponentModel::Design::SequentialWorkflowRootDesigner ^ AssociatedDesigner { System::Workflow::ComponentModel::Design::SequentialWorkflowRootDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssociatedDesigner : System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner" Usage="System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.AssociatedDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Image" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Image As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Image with get, set" Usage="System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImageRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle ImageRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageRectangle : System.Drawing.Rectangle" Usage="System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.OnLayout(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnLayout (e As ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnLayout(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLayout : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit&#xA;override this.OnLayout : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit" Usage="sequentialWorkflowHeaderFooter.OnLayout e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnPaint (e As ActivityDesignerPaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnPaint(System::Workflow::ComponentModel::Design::ActivityDesignerPaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPaint : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs -&gt; unit&#xA;override this.OnPaint : System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs -&gt; unit" Usage="sequentialWorkflowHeaderFooter.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -220,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.TextRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TextRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle TextRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextRectangle : System.Drawing.Rectangle" Usage="System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.TextRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

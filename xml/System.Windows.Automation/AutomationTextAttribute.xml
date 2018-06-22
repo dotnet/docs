@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationTextAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class AutomationTextAttribute&#xA;Inherits AutomationIdentifier" />
   <TypeSignature Language="C++ CLI" Value="public ref class AutomationTextAttribute : System::Windows::Automation::AutomationIdentifier" />
+  <TypeSignature Language="F#" Value="type AutomationTextAttribute = class&#xA;    inherit AutomationIdentifier" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationTextAttribute.LookupById(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LookupById (id As Integer) As AutomationTextAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::AutomationTextAttribute ^ LookupById(int id);" />
+      <MemberSignature Language="F#" Value="static member LookupById : int -&gt; System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.AutomationTextAttribute.LookupById id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServicedComponentException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServicedComponentException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServicedComponentException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type ServicedComponentException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponentException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServicedComponentException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ServicedComponentException : string -&gt; System.EnterpriseServices.ServicedComponentException" Usage="new System.EnterpriseServices.ServicedComponentException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponentException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServicedComponentException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ServicedComponentException : string * Exception -&gt; System.EnterpriseServices.ServicedComponentException" Usage="new System.EnterpriseServices.ServicedComponentException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

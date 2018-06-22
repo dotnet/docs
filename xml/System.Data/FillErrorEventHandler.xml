@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.FillErrorEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FillErrorEventHandler(sender As Object, e As FillErrorEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FillErrorEventHandler(System::Object ^ sender, FillErrorEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FillErrorEventHandler = delegate of obj * FillErrorEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

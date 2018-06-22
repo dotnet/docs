@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.Duplexing" />
   <TypeSignature Language="VB.NET" Value="Public Enum Duplexing" />
   <TypeSignature Language="C++ CLI" Value="public enum class Duplexing" />
+  <TypeSignature Language="F#" Value="type Duplexing = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.OneSided" />
       <MemberSignature Language="VB.NET" Value="OneSided" />
       <MemberSignature Language="C++ CLI" Value="OneSided" />
+      <MemberSignature Language="F#" Value="OneSided = 1" Usage="System.Printing.Duplexing.OneSided" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.TwoSidedLongEdge" />
       <MemberSignature Language="VB.NET" Value="TwoSidedLongEdge" />
       <MemberSignature Language="C++ CLI" Value="TwoSidedLongEdge" />
+      <MemberSignature Language="F#" Value="TwoSidedLongEdge = 3" Usage="System.Printing.Duplexing.TwoSidedLongEdge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.TwoSidedShortEdge" />
       <MemberSignature Language="VB.NET" Value="TwoSidedShortEdge" />
       <MemberSignature Language="C++ CLI" Value="TwoSidedShortEdge" />
+      <MemberSignature Language="F#" Value="TwoSidedShortEdge = 2" Usage="System.Printing.Duplexing.TwoSidedShortEdge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.Duplexing.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

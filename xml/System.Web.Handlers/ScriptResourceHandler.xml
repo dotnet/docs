@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Handlers.ScriptResourceHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceHandler&#xA;Implements IHttpHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceHandler : System::Web::IHttpHandler" />
+  <TypeSignature Language="F#" Value="type ScriptResourceHandler = class&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Handlers.ScriptResourceHandler.IsReusable" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsReusable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.Handlers.ScriptResourceHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.ScriptResourceHandler.ProcessRequest(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ProcessRequest (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="scriptResourceHandler.ProcessRequest context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Handlers.ScriptResourceHandler.System#Web#IHttpHandler#IsReusable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.Handlers.ScriptResourceHandler.System.Web.IHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

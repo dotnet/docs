@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewPageEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DetailsViewPageEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DetailsViewPageEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type DetailsViewPageEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewPageEventArgs.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newPageIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DetailsViewPageEventArgs(int newPageIndex);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DetailsViewPageEventArgs : int -&gt; System.Web.UI.WebControls.DetailsViewPageEventArgs" Usage="new System.Web.UI.WebControls.DetailsViewPageEventArgs newPageIndex" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewPageEventArgs.NewPageIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property NewPageIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewPageIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NewPageIndex : int with get, set" Usage="System.Web.UI.WebControls.DetailsViewPageEventArgs.NewPageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

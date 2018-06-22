@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" />
   <TypeSignature Language="VB.NET" Value="Public Class ForeignKeyReferenceAlreadyHasValueException&#xA;Inherits InvalidOperationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ForeignKeyReferenceAlreadyHasValueException : InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type ForeignKeyReferenceAlreadyHasValueException = class&#xA;    inherit InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyReferenceAlreadyHasValueException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException : string -&gt; System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" Usage="new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyReferenceAlreadyHasValueException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException : string * Exception -&gt; System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" Usage="new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

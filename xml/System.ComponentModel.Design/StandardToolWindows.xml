@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.StandardToolWindows" />
   <TypeSignature Language="VB.NET" Value="Public Class StandardToolWindows" />
   <TypeSignature Language="C++ CLI" Value="public ref class StandardToolWindows" />
+  <TypeSignature Language="F#" Value="type StandardToolWindows = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardToolWindows.ObjectBrowser" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ObjectBrowser As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid ObjectBrowser;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ObjectBrowser : Guid" Usage="System.ComponentModel.Design.StandardToolWindows.ObjectBrowser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardToolWindows.OutputWindow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OutputWindow As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid OutputWindow;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OutputWindow : Guid" Usage="System.ComponentModel.Design.StandardToolWindows.OutputWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardToolWindows.ProjectExplorer" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProjectExplorer As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid ProjectExplorer;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ProjectExplorer : Guid" Usage="System.ComponentModel.Design.StandardToolWindows.ProjectExplorer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardToolWindows.PropertyBrowser" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PropertyBrowser As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid PropertyBrowser;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PropertyBrowser : Guid" Usage="System.ComponentModel.Design.StandardToolWindows.PropertyBrowser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardToolWindows.RelatedLinks" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RelatedLinks As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid RelatedLinks;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RelatedLinks : Guid" Usage="System.ComponentModel.Design.StandardToolWindows.RelatedLinks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardToolWindows.ServerExplorer" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ServerExplorer As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid ServerExplorer;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ServerExplorer : Guid" Usage="System.ComponentModel.Design.StandardToolWindows.ServerExplorer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardToolWindows.TaskList" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TaskList As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid TaskList;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TaskList : Guid" Usage="System.ComponentModel.Design.StandardToolWindows.TaskList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -300,6 +308,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardToolWindows.Toolbox" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Toolbox As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Toolbox;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Toolbox : Guid" Usage="System.ComponentModel.Design.StandardToolWindows.Toolbox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

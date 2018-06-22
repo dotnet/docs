@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewClipboardCopyMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewClipboardCopyMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewClipboardCopyMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewClipboardCopyMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewClipboardCopyMode.Disable" />
       <MemberSignature Language="VB.NET" Value="Disable" />
       <MemberSignature Language="C++ CLI" Value="Disable" />
+      <MemberSignature Language="F#" Value="Disable = 0" Usage="System.Windows.Forms.DataGridViewClipboardCopyMode.Disable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText" />
       <MemberSignature Language="VB.NET" Value="EnableAlwaysIncludeHeaderText" />
       <MemberSignature Language="C++ CLI" Value="EnableAlwaysIncludeHeaderText" />
+      <MemberSignature Language="F#" Value="EnableAlwaysIncludeHeaderText = 3" Usage="System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithAutoHeaderText" />
       <MemberSignature Language="VB.NET" Value="EnableWithAutoHeaderText" />
       <MemberSignature Language="C++ CLI" Value="EnableWithAutoHeaderText" />
+      <MemberSignature Language="F#" Value="EnableWithAutoHeaderText = 1" Usage="System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithAutoHeaderText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText" />
       <MemberSignature Language="VB.NET" Value="EnableWithoutHeaderText" />
       <MemberSignature Language="C++ CLI" Value="EnableWithoutHeaderText" />
+      <MemberSignature Language="F#" Value="EnableWithoutHeaderText = 2" Usage="System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

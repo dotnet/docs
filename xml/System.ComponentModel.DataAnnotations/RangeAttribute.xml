@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.RangeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class RangeAttribute&#xA;Inherits ValidationAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RangeAttribute : System::ComponentModel::DataAnnotations::ValidationAttribute" />
+  <TypeSignature Language="F#" Value="type RangeAttribute = class&#xA;    inherit ValidationAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minimum As Double, maximum As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeAttribute(double minimum, double maximum);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.RangeAttribute : double * double -&gt; System.ComponentModel.DataAnnotations.RangeAttribute" Usage="new System.ComponentModel.DataAnnotations.RangeAttribute (minimum, maximum)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minimum As Integer, maximum As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeAttribute(int minimum, int maximum);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.RangeAttribute : int * int -&gt; System.ComponentModel.DataAnnotations.RangeAttribute" Usage="new System.ComponentModel.DataAnnotations.RangeAttribute (minimum, maximum)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string minimum, string maximum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Type,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeAttribute(Type ^ type, System::String ^ minimum, System::String ^ maximum);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.RangeAttribute : Type * string * string -&gt; System.ComponentModel.DataAnnotations.RangeAttribute" Usage="new System.ComponentModel.DataAnnotations.RangeAttribute (type, minimum, maximum)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RangeAttribute.ConvertValueInInvariantCulture" />
       <MemberSignature Language="VB.NET" Value="Public Property ConvertValueInInvariantCulture As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertValueInInvariantCulture { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ConvertValueInInvariantCulture : bool with get, set" Usage="System.ComponentModel.DataAnnotations.RangeAttribute.ConvertValueInInvariantCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RangeAttribute.FormatErrorMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatErrorMessage (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ FormatErrorMessage(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.FormatErrorMessage : string -&gt; string" Usage="rangeAttribute.FormatErrorMessage name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RangeAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="rangeAttribute.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -276,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RangeAttribute.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Maximum { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : obj" Usage="System.ComponentModel.DataAnnotations.RangeAttribute.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RangeAttribute.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minimum As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Minimum { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Minimum : obj" Usage="System.ComponentModel.DataAnnotations.RangeAttribute.Minimum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -335,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RangeAttribute.OperandType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperandType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ OperandType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OperandType : Type" Usage="System.ComponentModel.DataAnnotations.RangeAttribute.OperandType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -368,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RangeAttribute.ParseLimitsInInvariantCulture" />
       <MemberSignature Language="VB.NET" Value="Public Property ParseLimitsInInvariantCulture As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ParseLimitsInInvariantCulture { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ParseLimitsInInvariantCulture : bool with get, set" Usage="System.ComponentModel.DataAnnotations.RangeAttribute.ParseLimitsInInvariantCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

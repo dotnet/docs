@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.InvalidExpressionException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidExpressionException&#xA;Inherits DataException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidExpressionException : System::Data::DataException" />
+  <TypeSignature Language="F#" Value="type InvalidExpressionException = class&#xA;    inherit DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidExpressionException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidExpressionException(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="new System.Data.InvalidExpressionException : string -&gt; System.Data.InvalidExpressionException" Usage="new System.Data.InvalidExpressionException s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidExpressionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidExpressionException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Data.InvalidExpressionException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.InvalidExpressionException" Usage="new System.Data.InvalidExpressionException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidExpressionException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidExpressionException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.InvalidExpressionException : string * Exception -&gt; System.Data.InvalidExpressionException" Usage="new System.Data.InvalidExpressionException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

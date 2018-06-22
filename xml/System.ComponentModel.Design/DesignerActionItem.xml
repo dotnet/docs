@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerActionItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionItem abstract" />
+  <TypeSignature Language="F#" Value="type DesignerActionItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItem.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, category As String, description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionItem(System::String ^ displayName, System::String ^ category, System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionItem : string * string * string -&gt; System.ComponentModel.Design.DesignerActionItem" Usage="new System.ComponentModel.Design.DesignerActionItem (displayName, category, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowAssociate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowAssociate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowAssociate : bool with get, set" Usage="System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionItem.Category" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Category As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Category { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.ComponentModel.Design.DesignerActionItem.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionItem.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.ComponentModel.Design.DesignerActionItem.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionItem.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.ComponentModel.Design.DesignerActionItem.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionItem.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.ComponentModel.Design.DesignerActionItem.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionItem.ShowInSourceView" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowInSourceView As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInSourceView { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowInSourceView : bool with get, set" Usage="System.ComponentModel.Design.DesignerActionItem.ShowInSourceView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

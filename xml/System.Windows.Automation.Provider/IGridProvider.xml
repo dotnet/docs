@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IGridProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IGridProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IGridProvider" />
+  <TypeSignature Language="F#" Value="type IGridProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnCount : int" Usage="System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IGridProvider.GetItem(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItem (row As Integer, column As Integer) As IRawElementProviderSimple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderSimple ^ GetItem(int row, int column);" />
+      <MemberSignature Language="F#" Value="abstract member GetItem : int * int -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="iGridProvider.GetItem (row, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -125,6 +128,7 @@ Example of a Grid Control with Empty Coordinates
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IGridProvider.RowCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowCount : int" Usage="System.Windows.Automation.Provider.IGridProvider.RowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

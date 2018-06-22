@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateTimePickerFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum DateTimePickerFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class DateTimePickerFormat" />
+  <TypeSignature Language="F#" Value="type DateTimePickerFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePickerFormat.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 8" Usage="System.Windows.Forms.DateTimePickerFormat.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePickerFormat.Long" />
       <MemberSignature Language="VB.NET" Value="Long" />
       <MemberSignature Language="C++ CLI" Value="Long" />
+      <MemberSignature Language="F#" Value="Long = 1" Usage="System.Windows.Forms.DateTimePickerFormat.Long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePickerFormat.Short" />
       <MemberSignature Language="VB.NET" Value="Short" />
       <MemberSignature Language="C++ CLI" Value="Short" />
+      <MemberSignature Language="F#" Value="Short = 2" Usage="System.Windows.Forms.DateTimePickerFormat.Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePickerFormat.Time" />
       <MemberSignature Language="VB.NET" Value="Time" />
       <MemberSignature Language="C++ CLI" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 4" Usage="System.Windows.Forms.DateTimePickerFormat.Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

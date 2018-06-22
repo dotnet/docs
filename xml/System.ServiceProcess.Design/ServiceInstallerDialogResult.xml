@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.Design.ServiceInstallerDialogResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum ServiceInstallerDialogResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class ServiceInstallerDialogResult" />
+  <TypeSignature Language="F#" Value="type ServiceInstallerDialogResult = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.Design.ServiceInstallerDialogResult.Canceled" />
       <MemberSignature Language="VB.NET" Value="Canceled" />
       <MemberSignature Language="C++ CLI" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 2" Usage="System.ServiceProcess.Design.ServiceInstallerDialogResult.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.Design.ServiceInstallerDialogResult.OK" />
       <MemberSignature Language="VB.NET" Value="OK" />
       <MemberSignature Language="C++ CLI" Value="OK" />
+      <MemberSignature Language="F#" Value="OK = 0" Usage="System.ServiceProcess.Design.ServiceInstallerDialogResult.OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.Design.ServiceInstallerDialogResult.UseSystem" />
       <MemberSignature Language="VB.NET" Value="UseSystem" />
       <MemberSignature Language="C++ CLI" Value="UseSystem" />
+      <MemberSignature Language="F#" Value="UseSystem = 1" Usage="System.ServiceProcess.Design.ServiceInstallerDialogResult.UseSystem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>

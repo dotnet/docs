@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserNavigatedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WebBrowserNavigatedEventHandler(sender As Object, e As WebBrowserNavigatedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WebBrowserNavigatedEventHandler(System::Object ^ sender, WebBrowserNavigatedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WebBrowserNavigatedEventHandler = delegate of obj * WebBrowserNavigatedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

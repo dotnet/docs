@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityDataSourceSelectedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceSelectedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type EntityDataSourceSelectedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ObjectContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectContext ^ Context { System::Data::Objects::ObjectContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Objects.ObjectContext" Usage="System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Results" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Results As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Results { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Results : System.Collections.IEnumerable" Usage="System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Results" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.SelectArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectArguments As DataSourceSelectArguments" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceSelectArguments ^ SelectArguments { System::Web::UI::DataSourceSelectArguments ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectArguments : System.Web.UI.DataSourceSelectArguments" Usage="System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.SelectArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.TotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalRowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalRowCount : int" Usage="System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.TotalRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>

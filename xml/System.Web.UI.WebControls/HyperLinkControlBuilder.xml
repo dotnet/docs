@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HyperLinkControlBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class HyperLinkControlBuilder&#xA;Inherits ControlBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class HyperLinkControlBuilder : System::Web::UI::ControlBuilder" />
+  <TypeSignature Language="F#" Value="type HyperLinkControlBuilder = class&#xA;    inherit ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkControlBuilder.AllowWhitespaceLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
+      <MemberSignature Language="F#" Value="override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="hyperLinkControlBuilder.AllowWhitespaceLiterals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

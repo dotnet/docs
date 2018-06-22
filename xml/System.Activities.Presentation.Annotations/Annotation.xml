@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Annotations.Annotation" />
   <TypeSignature Language="VB.NET" Value="Public Class Annotation" />
   <TypeSignature Language="C++ CLI" Value="public ref class Annotation abstract sealed" />
+  <TypeSignature Language="F#" Value="type Annotation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Annotations.Annotation.AnnotationTextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AnnotationTextProperty As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ AnnotationTextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AnnotationTextProperty : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Presentation.Annotations.Annotation.AnnotationTextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Annotations.Annotation.AnnotationTextPropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AnnotationTextPropertyName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AnnotationTextPropertyName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AnnotationTextPropertyName : string" Usage="System.Activities.Presentation.Annotations.Annotation.AnnotationTextPropertyName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Annotations.Annotation.GetAnnotationText(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAnnotationText (instance As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetAnnotationText(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetAnnotationText : obj -&gt; string" Usage="System.Activities.Presentation.Annotations.Annotation.GetAnnotationText instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Annotations.Annotation.SetAnnotationText(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAnnotationText (instance As Object, annotationText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAnnotationText(System::Object ^ instance, System::String ^ annotationText);" />
+      <MemberSignature Language="F#" Value="static member SetAnnotationText : obj * string -&gt; unit" Usage="System.Activities.Presentation.Annotations.Annotation.SetAnnotationText (instance, annotationText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

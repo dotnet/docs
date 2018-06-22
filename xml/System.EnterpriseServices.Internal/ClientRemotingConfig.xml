@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ClientRemotingConfig" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientRemotingConfig" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientRemotingConfig" />
+  <TypeSignature Language="F#" Value="type ClientRemotingConfig = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClientRemotingConfig.Write(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Write (DestinationDirectory As String, VRoot As String, BaseUrl As String, AssemblyName As String, TypeName As String, ProgId As String, Mode As String, Transport As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Write(System::String ^ DestinationDirectory, System::String ^ VRoot, System::String ^ BaseUrl, System::String ^ AssemblyName, System::String ^ TypeName, System::String ^ ProgId, System::String ^ Mode, System::String ^ Transport);" />
+      <MemberSignature Language="F#" Value="static member Write : string * string * string * string * string * string * string * string -&gt; bool" Usage="System.EnterpriseServices.Internal.ClientRemotingConfig.Write (DestinationDirectory, VRoot, BaseUrl, AssemblyName, TypeName, ProgId, Mode, Transport)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

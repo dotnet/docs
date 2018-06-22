@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IUserControlTypeResolutionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IUserControlTypeResolutionService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IUserControlTypeResolutionService" />
+  <TypeSignature Language="F#" Value="type IUserControlTypeResolutionService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IUserControlTypeResolutionService.GetType(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (tagPrefix As String, tagName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ tagPrefix, System::String ^ tagName);" />
+      <MemberSignature Language="F#" Value="abstract member GetType : string * string -&gt; Type" Usage="iUserControlTypeResolutionService.GetType (tagPrefix, tagName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

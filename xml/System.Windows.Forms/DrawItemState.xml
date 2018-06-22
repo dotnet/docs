@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemState" />
   <TypeSignature Language="VB.NET" Value="Public Enum DrawItemState" />
   <TypeSignature Language="C++ CLI" Value="public enum class DrawItemState" />
+  <TypeSignature Language="F#" Value="type DrawItemState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Checked" />
       <MemberSignature Language="VB.NET" Value="Checked" />
       <MemberSignature Language="C++ CLI" Value="Checked" />
+      <MemberSignature Language="F#" Value="Checked = 8" Usage="System.Windows.Forms.DrawItemState.Checked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.ComboBoxEdit" />
       <MemberSignature Language="VB.NET" Value="ComboBoxEdit" />
       <MemberSignature Language="C++ CLI" Value="ComboBoxEdit" />
+      <MemberSignature Language="F#" Value="ComboBoxEdit = 4096" Usage="System.Windows.Forms.DrawItemState.ComboBoxEdit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 32" Usage="System.Windows.Forms.DrawItemState.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 4" Usage="System.Windows.Forms.DrawItemState.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Focus" />
       <MemberSignature Language="VB.NET" Value="Focus" />
       <MemberSignature Language="C++ CLI" Value="Focus" />
+      <MemberSignature Language="F#" Value="Focus = 16" Usage="System.Windows.Forms.DrawItemState.Focus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Grayed" />
       <MemberSignature Language="VB.NET" Value="Grayed" />
       <MemberSignature Language="C++ CLI" Value="Grayed" />
+      <MemberSignature Language="F#" Value="Grayed = 2" Usage="System.Windows.Forms.DrawItemState.Grayed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.HotLight" />
       <MemberSignature Language="VB.NET" Value="HotLight" />
       <MemberSignature Language="C++ CLI" Value="HotLight" />
+      <MemberSignature Language="F#" Value="HotLight = 64" Usage="System.Windows.Forms.DrawItemState.HotLight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Inactive" />
       <MemberSignature Language="VB.NET" Value="Inactive" />
       <MemberSignature Language="C++ CLI" Value="Inactive" />
+      <MemberSignature Language="F#" Value="Inactive = 128" Usage="System.Windows.Forms.DrawItemState.Inactive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -196,6 +205,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.NoAccelerator" />
       <MemberSignature Language="VB.NET" Value="NoAccelerator" />
       <MemberSignature Language="C++ CLI" Value="NoAccelerator" />
+      <MemberSignature Language="F#" Value="NoAccelerator = 256" Usage="System.Windows.Forms.DrawItemState.NoAccelerator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -215,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.NoFocusRect" />
       <MemberSignature Language="VB.NET" Value="NoFocusRect" />
       <MemberSignature Language="C++ CLI" Value="NoFocusRect" />
+      <MemberSignature Language="F#" Value="NoFocusRect = 512" Usage="System.Windows.Forms.DrawItemState.NoFocusRect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DrawItemState.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -253,6 +265,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Selected" />
       <MemberSignature Language="VB.NET" Value="Selected" />
       <MemberSignature Language="C++ CLI" Value="Selected" />
+      <MemberSignature Language="F#" Value="Selected = 1" Usage="System.Windows.Forms.DrawItemState.Selected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

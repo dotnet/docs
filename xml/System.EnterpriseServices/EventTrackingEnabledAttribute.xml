@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.EventTrackingEnabledAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventTrackingEnabledAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventTrackingEnabledAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EventTrackingEnabledAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.EventTrackingEnabledAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventTrackingEnabledAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.EventTrackingEnabledAttribute : bool -&gt; System.EnterpriseServices.EventTrackingEnabledAttribute" Usage="new System.EnterpriseServices.EventTrackingEnabledAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.EventTrackingEnabledAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.EnterpriseServices.EventTrackingEnabledAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

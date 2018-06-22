@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TransformCollection.Enumerator" />
   <TypeSignature Language="VB.NET" Value="Public Structure TransformCollection.Enumerator&#xA;Implements IEnumerator(Of Transform)" />
   <TypeSignature Language="C++ CLI" Value="public: value class TransformCollection::Enumerator : System::Collections::Generic::IEnumerator&lt;System::Windows::Media::Transform ^&gt;" />
+  <TypeSignature Language="F#" Value="type TransformCollection.Enumerator = struct&#xA;    interface IEnumerator&#xA;    interface IEnumerator&lt;Transform&gt;&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.Enumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Transform ^ Current { System::Windows::Media::Transform ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Media.Transform" Usage="System.Windows.Media.TransformCollection.Enumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.Enumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.Enumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="enumerator.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.Enumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.TransformCollection.Enumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

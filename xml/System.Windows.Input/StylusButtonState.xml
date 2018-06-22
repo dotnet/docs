@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusButtonState" />
   <TypeSignature Language="VB.NET" Value="Public Enum StylusButtonState" />
   <TypeSignature Language="C++ CLI" Value="public enum class StylusButtonState" />
+  <TypeSignature Language="F#" Value="type StylusButtonState = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusButtonState.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 1" Usage="System.Windows.Input.StylusButtonState.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusButtonState.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 0" Usage="System.Windows.Input.StylusButtonState.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

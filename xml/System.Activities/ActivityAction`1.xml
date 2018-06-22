@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityAction`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityAction(Of T)&#xA;Inherits ActivityDelegate" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ActivityAction sealed : System::Activities::ActivityDelegate" />
+  <TypeSignature Language="F#" Value="type ActivityAction&lt;'T&gt; = class&#xA;    inherit ActivityDelegate" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`1.Argument" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument As DelegateInArgument(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T&gt; ^ Argument { System::Activities::DelegateInArgument&lt;T&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument : System.Activities.DelegateInArgument&lt;'T&gt; with get, set" Usage="System.Activities.ActivityAction&lt;'T&gt;.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

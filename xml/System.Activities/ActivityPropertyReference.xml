@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityPropertyReference" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityPropertyReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityPropertyReference" />
+  <TypeSignature Language="F#" Value="type ActivityPropertyReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityPropertyReference.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceProperty { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceProperty : string with get, set" Usage="System.Activities.ActivityPropertyReference.SourceProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityPropertyReference.TargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetProperty { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetProperty : string with get, set" Usage="System.Activities.ActivityPropertyReference.TargetProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

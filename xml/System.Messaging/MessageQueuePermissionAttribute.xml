@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueuePermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQueuePermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQueuePermissionAttribute : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type MessageQueuePermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueuePermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueuePermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Messaging.MessageQueuePermissionAttribute" Usage="new System.Messaging.MessageQueuePermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionAttribute.Category" />
       <MemberSignature Language="VB.NET" Value="Public Property Category As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Category : string with get, set" Usage="System.Messaging.MessageQueuePermissionAttribute.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="messageQueuePermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionAttribute.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Messaging.MessageQueuePermissionAttribute.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionAttribute.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Messaging.MessageQueuePermissionAttribute.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionAttribute.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Messaging.MessageQueuePermissionAttribute.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionAttribute.PermissionAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property PermissionAccess As MessageQueuePermissionAccess" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::MessageQueuePermissionAccess PermissionAccess { System::Messaging::MessageQueuePermissionAccess get(); void set(System::Messaging::MessageQueuePermissionAccess value); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.Messaging.MessageQueuePermissionAccess with get, set" Usage="System.Messaging.MessageQueuePermissionAttribute.PermissionAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

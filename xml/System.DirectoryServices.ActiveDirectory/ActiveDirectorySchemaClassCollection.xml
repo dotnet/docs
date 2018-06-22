@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySchemaClassCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySchemaClassCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type ActiveDirectorySchemaClassCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.Add(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (schemaClass As ActiveDirectorySchemaClass) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ schemaClass);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass -&gt; int" Usage="activeDirectorySchemaClassCollection.Add schemaClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.AddRange(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (schemaClasses As ActiveDirectorySchemaClass())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^&gt; ^ schemaClasses);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass[] -&gt; unit" Usage="activeDirectorySchemaClassCollection.AddRange schemaClasses" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.AddRange(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (schemaClasses As ActiveDirectorySchemaClassCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClassCollection ^ schemaClasses);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection -&gt; unit" Usage="activeDirectorySchemaClassCollection.AddRange schemaClasses" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.AddRange(System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (schemaClasses As ReadOnlyActiveDirectorySchemaClassCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaClassCollection ^ schemaClasses);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection -&gt; unit" Usage="activeDirectorySchemaClassCollection.AddRange schemaClasses" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (schemaClass As ActiveDirectorySchemaClass) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ schemaClass);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass -&gt; bool" Usage="activeDirectorySchemaClassCollection.Contains schemaClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (schemaClasses As ActiveDirectorySchemaClass(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^&gt; ^ schemaClasses, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass[] * int -&gt; unit" Usage="activeDirectorySchemaClassCollection.CopyTo (schemaClasses, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (schemaClass As ActiveDirectorySchemaClass) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ schemaClass);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass -&gt; int" Usage="activeDirectorySchemaClassCollection.IndexOf schemaClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.Insert(System.Int32,System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, schemaClass As ActiveDirectorySchemaClass)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ schemaClass);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass -&gt; unit" Usage="activeDirectorySchemaClassCollection.Insert (index, schemaClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ActiveDirectorySchemaClass" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ default[int] { System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ get(int index); void set(int index, System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.OnClearComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
+      <MemberSignature Language="F#" Value="abstract member OnClearComplete : unit -&gt; unit&#xA;override this.OnClearComplete : unit -&gt; unit" Usage="activeDirectorySchemaClassCollection.OnClearComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -333,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsertComplete : int * obj -&gt; unit&#xA;override this.OnInsertComplete : int * obj -&gt; unit" Usage="activeDirectorySchemaClassCollection.OnInsertComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -360,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.OnRemoveComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemoveComplete : int * obj -&gt; unit&#xA;override this.OnRemoveComplete : int * obj -&gt; unit" Usage="activeDirectorySchemaClassCollection.OnRemoveComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -387,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.OnSetComplete(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSetComplete (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSetComplete(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSetComplete : int * obj * obj -&gt; unit&#xA;override this.OnSetComplete : int * obj * obj -&gt; unit" Usage="activeDirectorySchemaClassCollection.OnSetComplete (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -416,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="activeDirectorySchemaClassCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -441,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClassCollection.Remove(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (schemaClass As ActiveDirectorySchemaClass)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ schemaClass);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass -&gt; unit" Usage="activeDirectorySchemaClassCollection.Remove schemaClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

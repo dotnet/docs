@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcType" />
   <TypeSignature Language="VB.NET" Value="Public Enum OdbcType" />
   <TypeSignature Language="C++ CLI" Value="public enum class OdbcType" />
+  <TypeSignature Language="F#" Value="type OdbcType = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.BigInt" />
       <MemberSignature Language="VB.NET" Value="BigInt" />
       <MemberSignature Language="C++ CLI" Value="BigInt" />
+      <MemberSignature Language="F#" Value="BigInt = 1" Usage="System.Data.Odbc.OdbcType.BigInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 2" Usage="System.Data.Odbc.OdbcType.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Bit" />
       <MemberSignature Language="VB.NET" Value="Bit" />
       <MemberSignature Language="C++ CLI" Value="Bit" />
+      <MemberSignature Language="F#" Value="Bit = 3" Usage="System.Data.Odbc.OdbcType.Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Char" />
       <MemberSignature Language="VB.NET" Value="Char" />
       <MemberSignature Language="C++ CLI" Value="Char" />
+      <MemberSignature Language="F#" Value="Char = 4" Usage="System.Data.Odbc.OdbcType.Char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 23" Usage="System.Data.Odbc.OdbcType.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.DateTime" />
       <MemberSignature Language="VB.NET" Value="DateTime" />
       <MemberSignature Language="C++ CLI" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 5" Usage="System.Data.Odbc.OdbcType.DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="C++ CLI" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 6" Usage="System.Data.Odbc.OdbcType.Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -194,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 8" Usage="System.Data.Odbc.OdbcType.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -217,6 +226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Image" />
       <MemberSignature Language="VB.NET" Value="Image" />
       <MemberSignature Language="C++ CLI" Value="Image" />
+      <MemberSignature Language="F#" Value="Image = 9" Usage="System.Data.Odbc.OdbcType.Image" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -240,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Int" />
       <MemberSignature Language="VB.NET" Value="Int" />
       <MemberSignature Language="C++ CLI" Value="Int" />
+      <MemberSignature Language="F#" Value="Int = 10" Usage="System.Data.Odbc.OdbcType.Int" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -263,6 +274,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.NChar" />
       <MemberSignature Language="VB.NET" Value="NChar" />
       <MemberSignature Language="C++ CLI" Value="NChar" />
+      <MemberSignature Language="F#" Value="NChar = 11" Usage="System.Data.Odbc.OdbcType.NChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -286,6 +298,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.NText" />
       <MemberSignature Language="VB.NET" Value="NText" />
       <MemberSignature Language="C++ CLI" Value="NText" />
+      <MemberSignature Language="F#" Value="NText = 12" Usage="System.Data.Odbc.OdbcType.NText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -309,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Numeric" />
       <MemberSignature Language="VB.NET" Value="Numeric" />
       <MemberSignature Language="C++ CLI" Value="Numeric" />
+      <MemberSignature Language="F#" Value="Numeric = 7" Usage="System.Data.Odbc.OdbcType.Numeric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -332,6 +346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.NVarChar" />
       <MemberSignature Language="VB.NET" Value="NVarChar" />
       <MemberSignature Language="C++ CLI" Value="NVarChar" />
+      <MemberSignature Language="F#" Value="NVarChar = 13" Usage="System.Data.Odbc.OdbcType.NVarChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -355,6 +370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Real" />
       <MemberSignature Language="VB.NET" Value="Real" />
       <MemberSignature Language="C++ CLI" Value="Real" />
+      <MemberSignature Language="F#" Value="Real = 14" Usage="System.Data.Odbc.OdbcType.Real" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -378,6 +394,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.SmallDateTime" />
       <MemberSignature Language="VB.NET" Value="SmallDateTime" />
       <MemberSignature Language="C++ CLI" Value="SmallDateTime" />
+      <MemberSignature Language="F#" Value="SmallDateTime = 16" Usage="System.Data.Odbc.OdbcType.SmallDateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -401,6 +418,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.SmallInt" />
       <MemberSignature Language="VB.NET" Value="SmallInt" />
       <MemberSignature Language="C++ CLI" Value="SmallInt" />
+      <MemberSignature Language="F#" Value="SmallInt = 17" Usage="System.Data.Odbc.OdbcType.SmallInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -424,6 +442,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 18" Usage="System.Data.Odbc.OdbcType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -447,6 +466,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Time" />
       <MemberSignature Language="VB.NET" Value="Time" />
       <MemberSignature Language="C++ CLI" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 24" Usage="System.Data.Odbc.OdbcType.Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -470,6 +490,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Timestamp" />
       <MemberSignature Language="C++ CLI" Value="Timestamp" />
+      <MemberSignature Language="F#" Value="Timestamp = 19" Usage="System.Data.Odbc.OdbcType.Timestamp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -493,6 +514,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.TinyInt" />
       <MemberSignature Language="VB.NET" Value="TinyInt" />
       <MemberSignature Language="C++ CLI" Value="TinyInt" />
+      <MemberSignature Language="F#" Value="TinyInt = 20" Usage="System.Data.Odbc.OdbcType.TinyInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -516,6 +538,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.UniqueIdentifier" />
       <MemberSignature Language="VB.NET" Value="UniqueIdentifier" />
       <MemberSignature Language="C++ CLI" Value="UniqueIdentifier" />
+      <MemberSignature Language="F#" Value="UniqueIdentifier = 15" Usage="System.Data.Odbc.OdbcType.UniqueIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -539,6 +562,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.VarBinary" />
       <MemberSignature Language="VB.NET" Value="VarBinary" />
       <MemberSignature Language="C++ CLI" Value="VarBinary" />
+      <MemberSignature Language="F#" Value="VarBinary = 21" Usage="System.Data.Odbc.OdbcType.VarBinary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -562,6 +586,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcType.VarChar" />
       <MemberSignature Language="VB.NET" Value="VarChar" />
       <MemberSignature Language="C++ CLI" Value="VarChar" />
+      <MemberSignature Language="F#" Value="VarChar = 22" Usage="System.Data.Odbc.OdbcType.VarChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

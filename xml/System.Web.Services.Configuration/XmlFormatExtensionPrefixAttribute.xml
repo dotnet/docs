@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlFormatExtensionPrefixAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlFormatExtensionPrefixAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlFormatExtensionPrefixAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prefix As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionPrefixAttribute(System::String ^ prefix, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute : string * string -&gt; System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute (prefix, ns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public Property Prefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

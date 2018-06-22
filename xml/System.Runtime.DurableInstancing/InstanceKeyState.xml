@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceKeyState" />
   <TypeSignature Language="VB.NET" Value="Public Enum InstanceKeyState" />
   <TypeSignature Language="C++ CLI" Value="public enum class InstanceKeyState" />
+  <TypeSignature Language="F#" Value="type InstanceKeyState = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceKeyState.Associated" />
       <MemberSignature Language="VB.NET" Value="Associated" />
       <MemberSignature Language="C++ CLI" Value="Associated" />
+      <MemberSignature Language="F#" Value="Associated = 1" Usage="System.Runtime.DurableInstancing.InstanceKeyState.Associated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceKeyState.Completed" />
       <MemberSignature Language="VB.NET" Value="Completed" />
       <MemberSignature Language="C++ CLI" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 2" Usage="System.Runtime.DurableInstancing.InstanceKeyState.Completed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceKeyState.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Runtime.DurableInstancing.InstanceKeyState.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HotSpot" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HotSpot&#xA;Implements IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class HotSpot abstract : System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type HotSpot = class&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.AccessKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AccessKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AccessKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AccessKey : string with get, set" Usage="System.Web.UI.WebControls.HotSpot.AccessKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.AlternateText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AlternateText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AlternateText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternateText : string with get, set" Usage="System.Web.UI.WebControls.HotSpot.AlternateText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.GetCoordinates" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCoordinates () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetCoordinates();" />
+      <MemberSignature Language="F#" Value="abstract member GetCoordinates : unit -&gt; string" Usage="hotSpot.GetCoordinates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HotSpotMode As HotSpotMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HotSpotMode HotSpotMode { System::Web::UI::WebControls::HotSpotMode get(); void set(System::Web::UI::WebControls::HotSpotMode value); };" />
+      <MemberSignature Language="F#" Value="member this.HotSpotMode : System.Web.UI.WebControls.HotSpotMode with get, set" Usage="System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -275,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -307,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="hotSpot.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -345,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.MarkupName" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property MarkupName As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property System::String ^ MarkupName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MarkupName : string" Usage="System.Web.UI.WebControls.HotSpot.MarkupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -377,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.NavigateUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.WebControls.HotSpot.NavigateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -422,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.PostBackValue" />
       <MemberSignature Language="VB.NET" Value="Public Property PostBackValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PostBackValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PostBackValue : string with get, set" Usage="System.Web.UI.WebControls.HotSpot.PostBackValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -463,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="hotSpot.SaveViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -501,6 +512,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.HotSpot.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -654,6 +666,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.TabIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TabIndex As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property short TabIndex { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.TabIndex : int16 with get, set" Usage="System.Web.UI.WebControls.HotSpot.TabIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -698,6 +711,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.Target" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.WebControls.HotSpot.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -756,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="hotSpot.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -784,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="hotSpot.TrackViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -819,6 +835,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.ViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ViewState As StateBag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::StateBag ^ ViewState { System::Web::UI::StateBag ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewState : System.Web.UI.StateBag" Usage="System.Web.UI.WebControls.HotSpot.ViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

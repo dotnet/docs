@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.CancelRequestedQuery" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CancelRequestedQuery&#xA;Inherits TrackingQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class CancelRequestedQuery sealed : System::Activities::Tracking::TrackingQuery" />
+  <TypeSignature Language="F#" Value="type CancelRequestedQuery = class&#xA;    inherit TrackingQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.CancelRequestedQuery.ActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityName : string with get, set" Usage="System.Activities.Tracking.CancelRequestedQuery.ActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.CancelRequestedQuery.ChildActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property ChildActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChildActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChildActivityName : string with get, set" Usage="System.Activities.Tracking.CancelRequestedQuery.ChildActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

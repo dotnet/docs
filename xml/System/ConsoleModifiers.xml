@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ConsoleModifiers" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConsoleModifiers" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConsoleModifiers" />
+  <TypeSignature Language="F#" Value="type ConsoleModifiers = " />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Alt" />
       <MemberSignature Language="VB.NET" Value="Alt" />
       <MemberSignature Language="C++ CLI" Value="Alt" />
+      <MemberSignature Language="F#" Value="Alt = 1" Usage="System.ConsoleModifiers.Alt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Control" />
       <MemberSignature Language="VB.NET" Value="Control" />
       <MemberSignature Language="C++ CLI" Value="Control" />
+      <MemberSignature Language="F#" Value="Control = 4" Usage="System.ConsoleModifiers.Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Shift" />
       <MemberSignature Language="VB.NET" Value="Shift" />
       <MemberSignature Language="C++ CLI" Value="Shift" />
+      <MemberSignature Language="F#" Value="Shift = 2" Usage="System.ConsoleModifiers.Shift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>

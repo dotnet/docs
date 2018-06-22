@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.Roles" />
   <TypeSignature Language="VB.NET" Value="Public Class Roles" />
   <TypeSignature Language="C++ CLI" Value="public ref class Roles abstract sealed" />
+  <TypeSignature Language="F#" Value="type Roles = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -152,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.AddUsersToRole(System.String[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddUsersToRole (usernames As String(), roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddUsersToRole(cli::array &lt;System::String ^&gt; ^ usernames, System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member AddUsersToRole : string[] * string -&gt; unit" Usage="System.Web.Security.Roles.AddUsersToRole (usernames, roleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -214,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.AddUsersToRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddUsersToRoles (usernames As String(), roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddUsersToRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="static member AddUsersToRoles : string[] * string[] -&gt; unit" Usage="System.Web.Security.Roles.AddUsersToRoles (usernames, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.AddUserToRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddUserToRole (username As String, roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddUserToRole(System::String ^ username, System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member AddUserToRole : string * string -&gt; unit" Usage="System.Web.Security.Roles.AddUserToRole (username, roleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -338,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.AddUserToRoles(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddUserToRoles (username As String, roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddUserToRoles(System::String ^ username, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="static member AddUserToRoles : string * string[] -&gt; unit" Usage="System.Web.Security.Roles.AddUserToRoles (username, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.Security.Roles.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -455,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.CacheRolesInCookie" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CacheRolesInCookie As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CacheRolesInCookie { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheRolesInCookie : bool" Usage="System.Web.Security.Roles.CacheRolesInCookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -513,6 +520,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.CookieName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookieName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CookieName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CookieName : string" Usage="System.Web.Security.Roles.CookieName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -565,6 +573,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.CookiePath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookiePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CookiePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CookiePath : string" Usage="System.Web.Security.Roles.CookiePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -617,6 +626,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.CookieProtectionValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookieProtectionValue As CookieProtection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Security::CookieProtection CookieProtectionValue { System::Web::Security::CookieProtection get(); };" />
+      <MemberSignature Language="F#" Value="member this.CookieProtectionValue : System.Web.Security.CookieProtection" Usage="System.Web.Security.Roles.CookieProtectionValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -669,6 +679,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.CookieRequireSSL" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookieRequireSSL As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CookieRequireSSL { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CookieRequireSSL : bool" Usage="System.Web.Security.Roles.CookieRequireSSL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -722,6 +733,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.CookieSlidingExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookieSlidingExpiration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CookieSlidingExpiration { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CookieSlidingExpiration : bool" Usage="System.Web.Security.Roles.CookieSlidingExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -775,6 +787,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.CookieTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookieTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CookieTimeout { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CookieTimeout : int" Usage="System.Web.Security.Roles.CookieTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -829,6 +842,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.CreatePersistentCookie" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CreatePersistentCookie As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CreatePersistentCookie { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreatePersistentCookie : bool" Usage="System.Web.Security.Roles.CreatePersistentCookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -859,6 +873,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.CreateRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateRole (roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member CreateRole : string -&gt; unit" Usage="System.Web.Security.Roles.CreateRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -912,6 +927,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.DeleteCookie" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DeleteCookie ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeleteCookie();" />
+      <MemberSignature Language="F#" Value="static member DeleteCookie : unit -&gt; unit" Usage="System.Web.Security.Roles.DeleteCookie " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -960,6 +976,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.DeleteRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteRole (roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeleteRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member DeleteRole : string -&gt; bool" Usage="System.Web.Security.Roles.DeleteRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1012,6 +1029,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.DeleteRole(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteRole (roleName As String, throwOnPopulatedRole As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeleteRole(System::String ^ roleName, bool throwOnPopulatedRole);" />
+      <MemberSignature Language="F#" Value="static member DeleteRole : string * bool -&gt; bool" Usage="System.Web.Security.Roles.DeleteRole (roleName, throwOnPopulatedRole)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1066,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Domain { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string" Usage="System.Web.Security.Roles.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1095,6 +1114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.Security.Roles.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1143,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.FindUsersInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindUsersInRole (roleName As String, usernameToMatch As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ FindUsersInRole(System::String ^ roleName, System::String ^ usernameToMatch);" />
+      <MemberSignature Language="F#" Value="static member FindUsersInRole : string * string -&gt; string[]" Usage="System.Web.Security.Roles.FindUsersInRole (roleName, usernameToMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1202,6 +1223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.GetAllRoles" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllRoles () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetAllRoles();" />
+      <MemberSignature Language="F#" Value="static member GetAllRoles : unit -&gt; string[]" Usage="System.Web.Security.Roles.GetAllRoles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1251,6 +1273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.GetRolesForUser" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRolesForUser () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetRolesForUser();" />
+      <MemberSignature Language="F#" Value="static member GetRolesForUser : unit -&gt; string[]" Usage="System.Web.Security.Roles.GetRolesForUser " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1291,6 +1314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.GetRolesForUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRolesForUser (username As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetRolesForUser(System::String ^ username);" />
+      <MemberSignature Language="F#" Value="static member GetRolesForUser : string -&gt; string[]" Usage="System.Web.Security.Roles.GetRolesForUser username" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1337,6 +1361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.GetUsersInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUsersInRole (roleName As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetUsersInRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member GetUsersInRole : string -&gt; string[]" Usage="System.Web.Security.Roles.GetUsersInRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1390,6 +1415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.IsUserInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsUserInRole (roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsUserInRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member IsUserInRole : string -&gt; bool" Usage="System.Web.Security.Roles.IsUserInRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1441,6 +1467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.IsUserInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsUserInRole (username As String, roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsUserInRole(System::String ^ username, System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member IsUserInRole : string * string -&gt; bool" Usage="System.Web.Security.Roles.IsUserInRole (username, roleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1498,6 +1525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.MaxCachedResults" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaxCachedResults As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MaxCachedResults { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCachedResults : int" Usage="System.Web.Security.Roles.MaxCachedResults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1543,6 +1571,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Provider As RoleProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Security::RoleProvider ^ Provider { System::Web::Security::RoleProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.Security.RoleProvider" Usage="System.Web.Security.Roles.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1583,6 +1612,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.Roles.Providers" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As RoleProviderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Security::RoleProviderCollection ^ Providers { System::Web::Security::RoleProviderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.Security.RoleProviderCollection" Usage="System.Web.Security.Roles.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1656,6 +1686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.RemoveUserFromRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveUserFromRole (username As String, roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveUserFromRole(System::String ^ username, System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member RemoveUserFromRole : string * string -&gt; unit" Usage="System.Web.Security.Roles.RemoveUserFromRole (username, roleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1707,6 +1738,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.RemoveUserFromRoles(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveUserFromRoles (username As String, roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveUserFromRoles(System::String ^ username, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="static member RemoveUserFromRoles : string * string[] -&gt; unit" Usage="System.Web.Security.Roles.RemoveUserFromRoles (username, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1764,6 +1796,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.RemoveUsersFromRole(System.String[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveUsersFromRole (usernames As String(), roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveUsersFromRole(cli::array &lt;System::String ^&gt; ^ usernames, System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member RemoveUsersFromRole : string[] * string -&gt; unit" Usage="System.Web.Security.Roles.RemoveUsersFromRole (usernames, roleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1823,6 +1856,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.RemoveUsersFromRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveUsersFromRoles (usernames As String(), roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveUsersFromRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="static member RemoveUsersFromRoles : string[] * string[] -&gt; unit" Usage="System.Web.Security.Roles.RemoveUsersFromRoles (usernames, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1884,6 +1918,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Roles.RoleExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RoleExists (roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RoleExists(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="static member RoleExists : string -&gt; bool" Usage="System.Web.Security.Roles.RoleExists roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

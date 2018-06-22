@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EntityContainer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityContainer&#xA;Inherits GlobalItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityContainer sealed : System::Data::Metadata::Edm::GlobalItem" />
+  <TypeSignature Language="F#" Value="type EntityContainer = class&#xA;    inherit GlobalItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -226,6 +227,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityContainer.BaseEntitySets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseEntitySets As ReadOnlyMetadataCollection(Of EntitySetBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EntitySetBase ^&gt; ^ BaseEntitySets { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EntitySetBase ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseEntitySets : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EntitySetBase&gt;" Usage="System.Data.Metadata.Edm.EntityContainer.BaseEntitySets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -246,6 +248,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityContainer.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.EntityContainer.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -266,6 +269,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityContainer.FunctionImports" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FunctionImports As ReadOnlyMetadataCollection(Of EdmFunction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmFunction ^&gt; ^ FunctionImports { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmFunction ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FunctionImports : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;" Usage="System.Data.Metadata.Edm.EntityContainer.FunctionImports" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -286,6 +290,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EntityContainer.GetEntitySetByName(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEntitySetByName (name As String, ignoreCase As Boolean) As EntitySet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::EntitySet ^ GetEntitySetByName(System::String ^ name, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="member this.GetEntitySetByName : string * bool -&gt; System.Data.Metadata.Edm.EntitySet" Usage="entityContainer.GetEntitySetByName (name, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -313,6 +318,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EntityContainer.GetRelationshipSetByName(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipSetByName (name As String, ignoreCase As Boolean) As RelationshipSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::RelationshipSet ^ GetRelationshipSetByName(System::String ^ name, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationshipSetByName : string * bool -&gt; System.Data.Metadata.Edm.RelationshipSet" Usage="entityContainer.GetRelationshipSetByName (name, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -340,6 +346,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityContainer.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Metadata.Edm.EntityContainer.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -360,6 +367,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EntityContainer.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="entityContainer.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -381,6 +389,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EntityContainer.TryGetEntitySetByName(System.String,System.Boolean,System.Data.Metadata.Edm.EntitySet@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetEntitySetByName (name As String, ignoreCase As Boolean, ByRef entitySet As EntitySet) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetEntitySetByName(System::String ^ name, bool ignoreCase, [Runtime::InteropServices::Out] System::Data::Metadata::Edm::EntitySet ^ % entitySet);" />
+      <MemberSignature Language="F#" Value="member this.TryGetEntitySetByName : string * bool *  -&gt; bool" Usage="entityContainer.TryGetEntitySetByName (name, ignoreCase, entitySet)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -411,6 +420,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EntityContainer.TryGetRelationshipSetByName(System.String,System.Boolean,System.Data.Metadata.Edm.RelationshipSet@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetRelationshipSetByName (name As String, ignoreCase As Boolean, ByRef relationshipSet As RelationshipSet) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetRelationshipSetByName(System::String ^ name, bool ignoreCase, [Runtime::InteropServices::Out] System::Data::Metadata::Edm::RelationshipSet ^ % relationshipSet);" />
+      <MemberSignature Language="F#" Value="member this.TryGetRelationshipSetByName : string * bool *  -&gt; bool" Usage="entityContainer.TryGetRelationshipSetByName (name, ignoreCase, relationshipSet)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

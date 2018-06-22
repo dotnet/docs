@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewHitTestLocations" />
   <TypeSignature Language="VB.NET" Value="Public Enum TreeViewHitTestLocations" />
   <TypeSignature Language="C++ CLI" Value="public enum class TreeViewHitTestLocations" />
+  <TypeSignature Language="F#" Value="type TreeViewHitTestLocations = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.AboveClientArea" />
       <MemberSignature Language="VB.NET" Value="AboveClientArea" />
       <MemberSignature Language="C++ CLI" Value="AboveClientArea" />
+      <MemberSignature Language="F#" Value="AboveClientArea = 256" Usage="System.Windows.Forms.TreeViewHitTestLocations.AboveClientArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.BelowClientArea" />
       <MemberSignature Language="VB.NET" Value="BelowClientArea" />
       <MemberSignature Language="C++ CLI" Value="BelowClientArea" />
+      <MemberSignature Language="F#" Value="BelowClientArea = 512" Usage="System.Windows.Forms.TreeViewHitTestLocations.BelowClientArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.Image" />
       <MemberSignature Language="VB.NET" Value="Image" />
       <MemberSignature Language="C++ CLI" Value="Image" />
+      <MemberSignature Language="F#" Value="Image = 2" Usage="System.Windows.Forms.TreeViewHitTestLocations.Image" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.Indent" />
       <MemberSignature Language="VB.NET" Value="Indent" />
       <MemberSignature Language="C++ CLI" Value="Indent" />
+      <MemberSignature Language="F#" Value="Indent = 8" Usage="System.Windows.Forms.TreeViewHitTestLocations.Indent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.Label" />
       <MemberSignature Language="VB.NET" Value="Label" />
       <MemberSignature Language="C++ CLI" Value="Label" />
+      <MemberSignature Language="F#" Value="Label = 4" Usage="System.Windows.Forms.TreeViewHitTestLocations.Label" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.LeftOfClientArea" />
       <MemberSignature Language="VB.NET" Value="LeftOfClientArea" />
       <MemberSignature Language="C++ CLI" Value="LeftOfClientArea" />
+      <MemberSignature Language="F#" Value="LeftOfClientArea = 2048" Usage="System.Windows.Forms.TreeViewHitTestLocations.LeftOfClientArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -159,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Windows.Forms.TreeViewHitTestLocations.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.PlusMinus" />
       <MemberSignature Language="VB.NET" Value="PlusMinus" />
       <MemberSignature Language="C++ CLI" Value="PlusMinus" />
+      <MemberSignature Language="F#" Value="PlusMinus = 16" Usage="System.Windows.Forms.TreeViewHitTestLocations.PlusMinus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.RightOfClientArea" />
       <MemberSignature Language="VB.NET" Value="RightOfClientArea" />
       <MemberSignature Language="C++ CLI" Value="RightOfClientArea" />
+      <MemberSignature Language="F#" Value="RightOfClientArea = 1024" Usage="System.Windows.Forms.TreeViewHitTestLocations.RightOfClientArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,6 +226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.RightOfLabel" />
       <MemberSignature Language="VB.NET" Value="RightOfLabel" />
       <MemberSignature Language="C++ CLI" Value="RightOfLabel" />
+      <MemberSignature Language="F#" Value="RightOfLabel = 32" Usage="System.Windows.Forms.TreeViewHitTestLocations.RightOfLabel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -235,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.StateImage" />
       <MemberSignature Language="VB.NET" Value="StateImage" />
       <MemberSignature Language="C++ CLI" Value="StateImage" />
+      <MemberSignature Language="F#" Value="StateImage = 64" Usage="System.Windows.Forms.TreeViewHitTestLocations.StateImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

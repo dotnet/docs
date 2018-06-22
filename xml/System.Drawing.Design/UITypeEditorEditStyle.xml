@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.UITypeEditorEditStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum UITypeEditorEditStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class UITypeEditorEditStyle" />
+  <TypeSignature Language="F#" Value="type UITypeEditorEditStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Design.UITypeEditorEditStyle.DropDown" />
       <MemberSignature Language="VB.NET" Value="DropDown" />
       <MemberSignature Language="C++ CLI" Value="DropDown" />
+      <MemberSignature Language="F#" Value="DropDown = 3" Usage="System.Drawing.Design.UITypeEditorEditStyle.DropDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Design.UITypeEditorEditStyle.Modal" />
       <MemberSignature Language="VB.NET" Value="Modal" />
       <MemberSignature Language="C++ CLI" Value="Modal" />
+      <MemberSignature Language="F#" Value="Modal = 2" Usage="System.Drawing.Design.UITypeEditorEditStyle.Modal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Design.UITypeEditorEditStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Drawing.Design.UITypeEditorEditStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebSocketException&#xA;Inherits Win32Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebSocketException sealed : System::ComponentModel::Win32Exception" />
+  <TypeSignature Language="F#" Value="type WebSocketException = class&#xA;    inherit Win32Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nativeError As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(int nativeError);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : int -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException nativeError" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As WebSocketError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::Net::WebSockets::WebSocketError error);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : System.Net.WebSockets.WebSocketError -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException error" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : string -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Int32,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nativeError As Integer, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(int nativeError, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : int * Exception -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (nativeError, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nativeError As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(int nativeError, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : int * string -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (nativeError, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As WebSocketError, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::Net::WebSockets::WebSocketError error, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : System.Net.WebSockets.WebSocketError * Exception -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (error, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -264,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As WebSocketError, nativeError As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::Net::WebSockets::WebSocketError error, int nativeError);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : System.Net.WebSockets.WebSocketError * int -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (error, nativeError)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As WebSocketError, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::Net::WebSockets::WebSocketError error, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : System.Net.WebSockets.WebSocketError * string -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (error, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : string * Exception -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -363,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As WebSocketError, nativeError As Integer, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::Net::WebSockets::WebSocketError error, int nativeError, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : System.Net.WebSockets.WebSocketError * int * Exception -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (error, nativeError, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -398,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As WebSocketError, nativeError As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::Net::WebSockets::WebSocketError error, int nativeError, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : System.Net.WebSockets.WebSocketError * int * string -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (error, nativeError, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -433,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As WebSocketError, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::Net::WebSockets::WebSocketError error, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : System.Net.WebSockets.WebSocketError * string * Exception -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (error, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -468,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As WebSocketError, nativeError As Integer, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebSocketException(System::Net::WebSockets::WebSocketError error, int nativeError, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebSockets.WebSocketException : System.Net.WebSockets.WebSocketError * int * string * Exception -&gt; System.Net.WebSockets.WebSocketException" Usage="new System.Net.WebSockets.WebSocketException (error, nativeError, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -505,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.WebSocketException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.Net.WebSockets.WebSocketException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -535,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocketException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webSocketException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -569,6 +585,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.WebSocketException.WebSocketErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebSocketErrorCode As WebSocketError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebSockets::WebSocketError WebSocketErrorCode { System::Net::WebSockets::WebSocketError get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebSocketErrorCode : System.Net.WebSockets.WebSocketError" Usage="System.Net.WebSockets.WebSocketException.WebSocketErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>

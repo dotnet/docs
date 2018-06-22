@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.IconEffect" />
   <TypeSignature Language="VB.NET" Value="Public Enum IconEffect" />
   <TypeSignature Language="C++ CLI" Value="public enum class IconEffect" />
+  <TypeSignature Language="F#" Value="type IconEffect = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IconEffect.Alpha" />
       <MemberSignature Language="VB.NET" Value="Alpha" />
       <MemberSignature Language="C++ CLI" Value="Alpha" />
+      <MemberSignature Language="F#" Value="Alpha = 4" Usage="System.Windows.Forms.VisualStyles.IconEffect.Alpha" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IconEffect.Glow" />
       <MemberSignature Language="VB.NET" Value="Glow" />
       <MemberSignature Language="C++ CLI" Value="Glow" />
+      <MemberSignature Language="F#" Value="Glow = 1" Usage="System.Windows.Forms.VisualStyles.IconEffect.Glow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IconEffect.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.VisualStyles.IconEffect.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IconEffect.Pulse" />
       <MemberSignature Language="VB.NET" Value="Pulse" />
       <MemberSignature Language="C++ CLI" Value="Pulse" />
+      <MemberSignature Language="F#" Value="Pulse = 3" Usage="System.Windows.Forms.VisualStyles.IconEffect.Pulse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.IconEffect.Shadow" />
       <MemberSignature Language="VB.NET" Value="Shadow" />
       <MemberSignature Language="C++ CLI" Value="Shadow" />
+      <MemberSignature Language="F#" Value="Shadow = 2" Usage="System.Windows.Forms.VisualStyles.IconEffect.Shadow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

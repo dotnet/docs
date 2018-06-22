@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.UpdateManifest" />
   <TypeSignature Language="VB.NET" Value="Public Class UpdateManifest&#xA;Inherits Task" />
   <TypeSignature Language="C++ CLI" Value="public ref class UpdateManifest : Microsoft::Build::Utilities::Task" />
+  <TypeSignature Language="F#" Value="type UpdateManifest = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.UpdateManifest.ApplicationManifest" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationManifest As ITaskItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ ApplicationManifest { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationManifest : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.UpdateManifest.ApplicationManifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.UpdateManifest.ApplicationPath" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationPath : string with get, set" Usage="Microsoft.Build.Tasks.UpdateManifest.ApplicationPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.UpdateManifest.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="updateManifest.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.UpdateManifest.InputManifest" />
       <MemberSignature Language="VB.NET" Value="Public Property InputManifest As ITaskItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ InputManifest { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InputManifest : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.UpdateManifest.InputManifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.UpdateManifest.OutputManifest" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputManifest As ITaskItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ OutputManifest { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutputManifest : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.UpdateManifest.OutputManifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.UpdateManifest.TargetFrameworkVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkVersion : string with get, set" Usage="Microsoft.Build.Tasks.UpdateManifest.TargetFrameworkVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

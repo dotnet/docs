@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapFrame" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BitmapFrame&#xA;Inherits BitmapSource&#xA;Implements IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapFrame abstract : System::Windows::Media::Imaging::BitmapSource, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type BitmapFrame = class&#xA;    inherit BitmapSource&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Windows.Media.Imaging.BitmapFrame.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.ColorContexts" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ColorContexts As ReadOnlyCollection(Of ColorContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ ColorContexts { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColorContexts : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt;" Usage="System.Windows.Media.Imaging.BitmapFrame.ColorContexts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapStream As Stream) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::IO::Stream ^ bitmapStream);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create bitmapStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapUri As Uri) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(Uri ^ bitmapUri);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create bitmapUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (source As BitmapSource) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::Windows::Media::Imaging::BitmapSource ^ source);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Windows.Media.Imaging.BitmapSource -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Net.Cache.RequestCachePolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapUri As Uri, uriCachePolicy As RequestCachePolicy) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(Uri ^ bitmapUri, System::Net::Cache::RequestCachePolicy ^ uriCachePolicy);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri * System.Net.Cache.RequestCachePolicy -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create (bitmapUri, uriCachePolicy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (source As BitmapSource, thumbnail As BitmapSource) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::Windows::Media::Imaging::BitmapSource ^ source, System::Windows::Media::Imaging::BitmapSource ^ thumbnail);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Windows.Media.Imaging.BitmapSource * System.Windows.Media.Imaging.BitmapSource -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create (source, thumbnail)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -273,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.IO.Stream,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapStream As Stream, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::IO::Stream ^ bitmapStream, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.Windows.Media.Imaging.BitmapCreateOptions * System.Windows.Media.Imaging.BitmapCacheOption -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create (bitmapStream, createOptions, cacheOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -308,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapUri As Uri, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(Uri ^ bitmapUri, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri * System.Windows.Media.Imaging.BitmapCreateOptions * System.Windows.Media.Imaging.BitmapCacheOption -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create (bitmapUri, createOptions, cacheOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -336,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption,System.Net.Cache.RequestCachePolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (bitmapUri As Uri, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption, uriCachePolicy As RequestCachePolicy) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(Uri ^ bitmapUri, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption, System::Net::Cache::RequestCachePolicy ^ uriCachePolicy);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri * System.Windows.Media.Imaging.BitmapCreateOptions * System.Windows.Media.Imaging.BitmapCacheOption * System.Net.Cache.RequestCachePolicy -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create (bitmapUri, createOptions, cacheOption, uriCachePolicy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -373,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.Create(System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Imaging.BitmapMetadata,System.Collections.ObjectModel.ReadOnlyCollection{System.Windows.Media.ColorContext})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (source As BitmapSource, thumbnail As BitmapSource, metadata As BitmapMetadata, colorContexts As ReadOnlyCollection(Of ColorContext)) As BitmapFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapFrame ^ Create(System::Windows::Media::Imaging::BitmapSource ^ source, System::Windows::Media::Imaging::BitmapSource ^ thumbnail, System::Windows::Media::Imaging::BitmapMetadata ^ metadata, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ colorContexts);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Windows.Media.Imaging.BitmapSource * System.Windows.Media.Imaging.BitmapSource * System.Windows.Media.Imaging.BitmapMetadata * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt; -&gt; System.Windows.Media.Imaging.BitmapFrame" Usage="System.Windows.Media.Imaging.BitmapFrame.Create (source, thumbnail, metadata, colorContexts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -403,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapFrame.CreateInPlaceBitmapMetadataWriter" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateInPlaceBitmapMetadataWriter () As InPlaceBitmapMetadataWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::Imaging::InPlaceBitmapMetadataWriter ^ CreateInPlaceBitmapMetadataWriter();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInPlaceBitmapMetadataWriter : unit -&gt; System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" Usage="bitmapFrame.CreateInPlaceBitmapMetadataWriter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -441,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.Decoder" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Decoder As BitmapDecoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Imaging::BitmapDecoder ^ Decoder { System::Windows::Media::Imaging::BitmapDecoder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Decoder : System.Windows.Media.Imaging.BitmapDecoder" Usage="System.Windows.Media.Imaging.BitmapFrame.Decoder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -462,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapFrame.Thumbnail" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Thumbnail As BitmapSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Imaging::BitmapSource ^ Thumbnail { System::Windows::Media::Imaging::BitmapSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Thumbnail : System.Windows.Media.Imaging.BitmapSource" Usage="System.Windows.Media.Imaging.BitmapFrame.Thumbnail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

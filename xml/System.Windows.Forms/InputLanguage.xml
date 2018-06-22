@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguage" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InputLanguage" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputLanguage sealed" />
+  <TypeSignature Language="F#" Value="type InputLanguage = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.Culture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo" Usage="System.Windows.Forms.InputLanguage.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.CurrentInputLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentInputLanguage As InputLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::InputLanguage ^ CurrentInputLanguage { System::Windows::Forms::InputLanguage ^ get(); void set(System::Windows::Forms::InputLanguage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentInputLanguage : System.Windows.Forms.InputLanguage with get, set" Usage="System.Windows.Forms.InputLanguage.CurrentInputLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.DefaultInputLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultInputLanguage As InputLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::InputLanguage ^ DefaultInputLanguage { System::Windows::Forms::InputLanguage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultInputLanguage : System.Windows.Forms.InputLanguage" Usage="System.Windows.Forms.InputLanguage.DefaultInputLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguage.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="inputLanguage.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguage.FromCulture(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromCulture (culture As CultureInfo) As InputLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::InputLanguage ^ FromCulture(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member FromCulture : System.Globalization.CultureInfo -&gt; System.Windows.Forms.InputLanguage" Usage="System.Windows.Forms.InputLanguage.FromCulture culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguage.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="inputLanguage.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Forms.InputLanguage.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.InstalledInputLanguages" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InstalledInputLanguages As InputLanguageCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::InputLanguageCollection ^ InstalledInputLanguages { System::Windows::Forms::InputLanguageCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstalledInputLanguages : System.Windows.Forms.InputLanguageCollection" Usage="System.Windows.Forms.InputLanguage.InstalledInputLanguages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -322,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.LayoutName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LayoutName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LayoutName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutName : string" Usage="System.Windows.Forms.InputLanguage.LayoutName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

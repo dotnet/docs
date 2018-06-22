@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.RsaKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class RsaKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class RsaKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type RsaKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.RSA rsa) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.#ctor(System.Security.Cryptography.RSA)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaKeyIdentifierClause(System::Security::Cryptography::RSA ^ rsa);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.RsaKeyIdentifierClause : System.Security.Cryptography.RSA -&gt; System.IdentityModel.Tokens.RsaKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.RsaKeyIdentifierClause rsa" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.RsaKeyIdentifierClause.CanCreateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanCreateKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCreateKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanCreateKey : bool" Usage="System.IdentityModel.Tokens.RsaKeyIdentifierClause.CanCreateKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.CreateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKey () As SecurityKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityKey ^ CreateKey();" />
+      <MemberSignature Language="F#" Value="override this.CreateKey : unit -&gt; System.IdentityModel.Tokens.SecurityKey" Usage="rsaKeyIdentifierClause.CreateKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetExponent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExponent () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetExponent();" />
+      <MemberSignature Language="F#" Value="member this.GetExponent : unit -&gt; byte[]" Usage="rsaKeyIdentifierClause.GetExponent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetModulus" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModulus () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetModulus();" />
+      <MemberSignature Language="F#" Value="member this.GetModulus : unit -&gt; byte[]" Usage="rsaKeyIdentifierClause.GetModulus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Security.Cryptography.RSA rsa) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.Matches(System.Security.Cryptography.RSA)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Security::Cryptography::RSA ^ rsa);" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.Security.Cryptography.RSA -&gt; bool" Usage="rsaKeyIdentifierClause.Matches rsa" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="rsaKeyIdentifierClause.Matches clause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.RsaKeyIdentifierClause.Rsa" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rsa As RSA" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::RSA ^ Rsa { System::Security::Cryptography::RSA ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rsa : System.Security.Cryptography.RSA" Usage="System.IdentityModel.Tokens.RsaKeyIdentifierClause.Rsa" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -226,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rsaKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -254,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.WriteExponentAsBase64(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteExponentAsBase64 (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteExponentAsBase64(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteExponentAsBase64 : System.Xml.XmlWriter -&gt; unit" Usage="rsaKeyIdentifierClause.WriteExponentAsBase64 writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.WriteModulusAsBase64(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteModulusAsBase64 (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteModulusAsBase64(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteModulusAsBase64 : System.Xml.XmlWriter -&gt; unit" Usage="rsaKeyIdentifierClause.WriteModulusAsBase64 writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

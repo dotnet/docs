@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearVector3DKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class LinearVector3DKeyFrame&#xA;Inherits Vector3DKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinearVector3DKeyFrame : System::Windows::Media::Animation::Vector3DKeyFrame" />
+  <TypeSignature Language="F#" Value="type LinearVector3DKeyFrame = class&#xA;    inherit Vector3DKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearVector3DKeyFrame.#ctor(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearVector3DKeyFrame(System::Windows::Media::Media3D::Vector3D value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearVector3DKeyFrame : System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Animation.LinearVector3DKeyFrame" Usage="new System.Windows.Media.Animation.LinearVector3DKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Vector3D value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearVector3DKeyFrame.#ctor(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearVector3DKeyFrame(System::Windows::Media::Media3D::Vector3D value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearVector3DKeyFrame : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.LinearVector3DKeyFrame" Usage="new System.Windows.Media.Animation.LinearVector3DKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearVector3DKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="linearVector3DKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearVector3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Vector3D,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Vector3D, keyFrameProgress As Double) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Vector3D InterpolateValueCore(System::Windows::Media::Media3D::Vector3D baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Media.Media3D.Vector3D * double -&gt; System.Windows.Media.Media3D.Vector3D" Usage="linearVector3DKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

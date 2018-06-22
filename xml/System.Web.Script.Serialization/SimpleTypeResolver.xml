@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.SimpleTypeResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class SimpleTypeResolver&#xA;Inherits JavaScriptTypeResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class SimpleTypeResolver : System::Web::Script::Serialization::JavaScriptTypeResolver" />
+  <TypeSignature Language="F#" Value="type SimpleTypeResolver = class&#xA;    inherit JavaScriptTypeResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.SimpleTypeResolver.ResolveType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ResolveType (id As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ ResolveType(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="override this.ResolveType : string -&gt; Type" Usage="simpleTypeResolver.ResolveType id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ResolveTypeId(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.SimpleTypeResolver.ResolveTypeId(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ResolveTypeId(Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.ResolveTypeId : Type -&gt; string" Usage="simpleTypeResolver.ResolveTypeId type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

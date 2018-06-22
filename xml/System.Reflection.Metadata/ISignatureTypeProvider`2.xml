@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISignatureTypeProvider`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISignatureTypeProvider(Of TType, TGenericContext)&#xA;Implements IConstructedTypeProvider(Of TType), ISimpleTypeProvider(Of TType), ISZArrayTypeProvider(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType, typename TGenericContext&gt;&#xA;public interface class ISignatureTypeProvider : System::Reflection::Metadata::IConstructedTypeProvider&lt;TType&gt;, System::Reflection::Metadata::ISimpleTypeProvider&lt;TType&gt;, System::Reflection::Metadata::ISZArrayTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="F#" Value="type ISignatureTypeProvider&lt;'ype, 'GenericContext&gt; = interface&#xA;    interface IConstructedTypeProvider&lt;'ype&gt;&#xA;    interface ISZArrayTypeProvider&lt;'ype&gt;&#xA;    interface ISimpleTypeProvider&lt;'ype&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetFunctionPointerType(System.Reflection.Metadata.MethodSignature{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFunctionPointerType (signature As MethodSignature(Of TType)) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetFunctionPointerType(System::Reflection::Metadata::MethodSignature&lt;TType&gt; signature);" />
+      <MemberSignature Language="F#" Value="abstract member GetFunctionPointerType : System.Reflection.Metadata.MethodSignature&lt;'ype&gt; -&gt; 'ype" Usage="iSignatureTypeProvider.GetFunctionPointerType signature" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetGenericMethodParameter(`1,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGenericMethodParameter (genericContext As TGenericContext, index As Integer) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetGenericMethodParameter(TGenericContext genericContext, int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericMethodParameter : 'GenericContext * int -&gt; 'ype" Usage="iSignatureTypeProvider.GetGenericMethodParameter (genericContext, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetGenericTypeParameter(`1,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGenericTypeParameter (genericContext As TGenericContext, index As Integer) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetGenericTypeParameter(TGenericContext genericContext, int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericTypeParameter : 'GenericContext * int -&gt; 'ype" Usage="iSignatureTypeProvider.GetGenericTypeParameter (genericContext, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetModifiedType(`0,`0,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModifiedType (modifier As TType, unmodifiedType As TType, isRequired As Boolean) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetModifiedType(TType modifier, TType unmodifiedType, bool isRequired);" />
+      <MemberSignature Language="F#" Value="abstract member GetModifiedType : 'ype * 'ype * bool -&gt; 'ype" Usage="iSignatureTypeProvider.GetModifiedType (modifier, unmodifiedType, isRequired)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetPinnedType(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPinnedType (elementType As TType) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetPinnedType(TType elementType);" />
+      <MemberSignature Language="F#" Value="abstract member GetPinnedType : 'ype -&gt; 'ype" Usage="iSignatureTypeProvider.GetPinnedType elementType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetTypeFromSpecification(System.Reflection.Metadata.MetadataReader,`1,System.Reflection.Metadata.TypeSpecificationHandle,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeFromSpecification (reader As MetadataReader, genericContext As TGenericContext, handle As TypeSpecificationHandle, rawTypeKind As Byte) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetTypeFromSpecification(System::Reflection::Metadata::MetadataReader ^ reader, TGenericContext genericContext, System::Reflection::Metadata::TypeSpecificationHandle handle, System::Byte rawTypeKind);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeFromSpecification : System.Reflection.Metadata.MetadataReader * 'GenericContext * System.Reflection.Metadata.TypeSpecificationHandle * byte -&gt; 'ype" Usage="iSignatureTypeProvider.GetTypeFromSpecification (reader, genericContext, handle, rawTypeKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

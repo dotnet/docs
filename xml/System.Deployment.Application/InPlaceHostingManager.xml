@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.InPlaceHostingManager" />
   <TypeSignature Language="VB.NET" Value="Public Class InPlaceHostingManager&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class InPlaceHostingManager : IDisposable" />
+  <TypeSignature Language="F#" Value="type InPlaceHostingManager = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (deploymentManifest As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InPlaceHostingManager(Uri ^ deploymentManifest);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.InPlaceHostingManager : Uri -&gt; System.Deployment.Application.InPlaceHostingManager" Usage="new System.Deployment.Application.InPlaceHostingManager deploymentManifest" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.#ctor(System.Uri,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (deploymentManifest As Uri, launchInHostProcess As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InPlaceHostingManager(Uri ^ deploymentManifest, bool launchInHostProcess);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.InPlaceHostingManager : Uri * bool -&gt; System.Deployment.Application.InPlaceHostingManager" Usage="new System.Deployment.Application.InPlaceHostingManager (deploymentManifest, launchInHostProcess)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssertApplicationRequirements ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssertApplicationRequirements();" />
+      <MemberSignature Language="F#" Value="member this.AssertApplicationRequirements : unit -&gt; unit" Usage="inPlaceHostingManager.AssertApplicationRequirements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssertApplicationRequirements (grantApplicationTrust As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssertApplicationRequirements(bool grantApplicationTrust);" />
+      <MemberSignature Language="F#" Value="member this.AssertApplicationRequirements : bool -&gt; unit" Usage="inPlaceHostingManager.AssertApplicationRequirements grantApplicationTrust" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.CancelAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync();" />
+      <MemberSignature Language="F#" Value="member this.CancelAsync : unit -&gt; unit" Usage="inPlaceHostingManager.CancelAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="inPlaceHostingManager.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.DownloadApplicationAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadApplicationAsync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadApplicationAsync();" />
+      <MemberSignature Language="F#" Value="member this.DownloadApplicationAsync : unit -&gt; unit" Usage="inPlaceHostingManager.DownloadApplicationAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.InPlaceHostingManager.DownloadApplicationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event DownloadApplicationCompleted As EventHandler(Of DownloadApplicationCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Deployment::Application::DownloadApplicationCompletedEventArgs ^&gt; ^ DownloadApplicationCompleted;" />
+      <MemberSignature Language="F#" Value="member this.DownloadApplicationCompleted : EventHandler&lt;System.Deployment.Application.DownloadApplicationCompletedEventArgs&gt; " Usage="member this.DownloadApplicationCompleted : System.EventHandler&lt;System.Deployment.Application.DownloadApplicationCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -337,6 +346,7 @@
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.InPlaceHostingManager.DownloadProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event DownloadProgressChanged As EventHandler(Of DownloadProgressChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Deployment::Application::DownloadProgressChangedEventArgs ^&gt; ^ DownloadProgressChanged;" />
+      <MemberSignature Language="F#" Value="member this.DownloadProgressChanged : EventHandler&lt;System.Deployment.Application.DownloadProgressChangedEventArgs&gt; " Usage="member this.DownloadProgressChanged : System.EventHandler&lt;System.Deployment.Application.DownloadProgressChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Function Execute () As ObjectHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::ObjectHandle ^ Execute();" />
+      <MemberSignature Language="F#" Value="member this.Execute : unit -&gt; System.Runtime.Remoting.ObjectHandle" Usage="inPlaceHostingManager.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -399,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.GetManifestAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetManifestAsync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetManifestAsync();" />
+      <MemberSignature Language="F#" Value="member this.GetManifestAsync : unit -&gt; unit" Usage="inPlaceHostingManager.GetManifestAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -438,6 +450,7 @@
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.InPlaceHostingManager.GetManifestCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event GetManifestCompleted As EventHandler(Of GetManifestCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Deployment::Application::GetManifestCompletedEventArgs ^&gt; ^ GetManifestCompleted;" />
+      <MemberSignature Language="F#" Value="member this.GetManifestCompleted : EventHandler&lt;System.Deployment.Application.GetManifestCompletedEventArgs&gt; " Usage="member this.GetManifestCompleted : System.EventHandler&lt;System.Deployment.Application.GetManifestCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -477,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.UninstallCustomAddIn(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallCustomAddIn (subscriptionId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallCustomAddIn(System::String ^ subscriptionId);" />
+      <MemberSignature Language="F#" Value="static member UninstallCustomAddIn : string -&gt; unit" Usage="System.Deployment.Application.InPlaceHostingManager.UninstallCustomAddIn subscriptionId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -504,6 +518,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallCustomUXApplication (subscriptionId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallCustomUXApplication(System::String ^ subscriptionId);" />
+      <MemberSignature Language="F#" Value="static member UninstallCustomUXApplication : string -&gt; unit" Usage="System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication subscriptionId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSDualHttpSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WSDualHttpSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSDualHttpSecurity sealed" />
+  <TypeSignature Language="F#" Value="type WSDualHttpSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpSecurity.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As MessageSecurityOverHttp" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageSecurityOverHttp ^ Message { System::ServiceModel::MessageSecurityOverHttp ^ get(); void set(System::ServiceModel::MessageSecurityOverHttp ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.MessageSecurityOverHttp with get, set" Usage="System.ServiceModel.WSDualHttpSecurity.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As WSDualHttpSecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WSDualHttpSecurityMode Mode { System::ServiceModel::WSDualHttpSecurityMode get(); void set(System::ServiceModel::WSDualHttpSecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.WSDualHttpSecurityMode with get, set" Usage="System.ServiceModel.WSDualHttpSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpSecurity.ShouldSerializeMessage" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessage () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMessage();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessage : unit -&gt; bool" Usage="wSDualHttpSecurity.ShouldSerializeMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpSecurity.ShouldSerializeMode" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMode () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMode();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMode : unit -&gt; bool" Usage="wSDualHttpSecurity.ShouldSerializeMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

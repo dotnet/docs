@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeFor" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeFor&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeFor : Mono::CodeGeneration::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeFor = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFor.#ctor(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initExp As CodeExpression, conditionExp As CodeExpression, nextExp As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeFor(Mono::CodeGeneration::CodeExpression ^ initExp, Mono::CodeGeneration::CodeExpression ^ conditionExp, Mono::CodeGeneration::CodeExpression ^ nextExp);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeFor : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeFor" Usage="new Mono.CodeGeneration.CodeFor (initExp, conditionExp, nextExp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeFor.ForBlock" />
       <MemberSignature Language="VB.NET" Value="Public Property ForBlock As CodeBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeBlock ^ ForBlock { Mono::CodeGeneration::CodeBlock ^ get(); void set(Mono::CodeGeneration::CodeBlock ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ForBlock : Mono.CodeGeneration.CodeBlock with get, set" Usage="Mono.CodeGeneration.CodeFor.ForBlock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFor.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeFor.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeFor.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeFor.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

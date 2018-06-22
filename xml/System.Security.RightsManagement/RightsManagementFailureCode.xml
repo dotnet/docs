@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.RightsManagementFailureCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RightsManagementFailureCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class RightsManagementFailureCode" />
+  <TypeSignature Language="F#" Value="type RightsManagementFailureCode = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.Aborted" />
       <MemberSignature Language="VB.NET" Value="Aborted" />
       <MemberSignature Language="C++ CLI" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = -2147168447" Usage="System.Security.RightsManagement.RightsManagementFailureCode.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ActivationFailed" />
       <MemberSignature Language="VB.NET" Value="ActivationFailed" />
       <MemberSignature Language="C++ CLI" Value="ActivationFailed" />
+      <MemberSignature Language="F#" Value="ActivationFailed = -2147168448" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ActivationFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.AdEntryNotFound" />
       <MemberSignature Language="VB.NET" Value="AdEntryNotFound" />
       <MemberSignature Language="C++ CLI" Value="AdEntryNotFound" />
+      <MemberSignature Language="F#" Value="AdEntryNotFound = -2147168419" Usage="System.Security.RightsManagement.RightsManagementFailureCode.AdEntryNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.AlreadyInProgress" />
       <MemberSignature Language="VB.NET" Value="AlreadyInProgress" />
       <MemberSignature Language="C++ CLI" Value="AlreadyInProgress" />
+      <MemberSignature Language="F#" Value="AlreadyInProgress = -2147168456" Usage="System.Security.RightsManagement.RightsManagementFailureCode.AlreadyInProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.AuthenticationFailed" />
       <MemberSignature Language="VB.NET" Value="AuthenticationFailed" />
       <MemberSignature Language="C++ CLI" Value="AuthenticationFailed" />
+      <MemberSignature Language="F#" Value="AuthenticationFailed = -2147168445" Usage="System.Security.RightsManagement.RightsManagementFailureCode.AuthenticationFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BadGetInfoQuery" />
       <MemberSignature Language="VB.NET" Value="BadGetInfoQuery" />
       <MemberSignature Language="C++ CLI" Value="BadGetInfoQuery" />
+      <MemberSignature Language="F#" Value="BadGetInfoQuery = -2147168494" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BadGetInfoQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -148,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindAccessPrincipalNotEnabling" />
       <MemberSignature Language="VB.NET" Value="BindAccessPrincipalNotEnabling" />
       <MemberSignature Language="C++ CLI" Value="BindAccessPrincipalNotEnabling" />
+      <MemberSignature Language="F#" Value="BindAccessPrincipalNotEnabling = -2147168478" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindAccessPrincipalNotEnabling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -167,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindAccessUnsatisfied" />
       <MemberSignature Language="VB.NET" Value="BindAccessUnsatisfied" />
       <MemberSignature Language="C++ CLI" Value="BindAccessUnsatisfied" />
+      <MemberSignature Language="F#" Value="BindAccessUnsatisfied = -2147168477" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindAccessUnsatisfied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -186,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindContentNotInEndUseLicense" />
       <MemberSignature Language="VB.NET" Value="BindContentNotInEndUseLicense" />
       <MemberSignature Language="C++ CLI" Value="BindContentNotInEndUseLicense" />
+      <MemberSignature Language="F#" Value="BindContentNotInEndUseLicense = -2147168479" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindContentNotInEndUseLicense" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -205,6 +215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindIndicatedPrincipalMissing" />
       <MemberSignature Language="VB.NET" Value="BindIndicatedPrincipalMissing" />
       <MemberSignature Language="C++ CLI" Value="BindIndicatedPrincipalMissing" />
+      <MemberSignature Language="F#" Value="BindIndicatedPrincipalMissing = -2147168476" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindIndicatedPrincipalMissing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -224,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindIntervalTimeViolated" />
       <MemberSignature Language="VB.NET" Value="BindIntervalTimeViolated" />
       <MemberSignature Language="C++ CLI" Value="BindIntervalTimeViolated" />
+      <MemberSignature Language="F#" Value="BindIntervalTimeViolated = -2147168465" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindIntervalTimeViolated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -243,6 +255,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindMachineNotFoundInGroupIdentity" />
       <MemberSignature Language="VB.NET" Value="BindMachineNotFoundInGroupIdentity" />
       <MemberSignature Language="C++ CLI" Value="BindMachineNotFoundInGroupIdentity" />
+      <MemberSignature Language="F#" Value="BindMachineNotFoundInGroupIdentity = -2147168475" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindMachineNotFoundInGroupIdentity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -262,6 +275,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindNoApplicableRevocationList" />
       <MemberSignature Language="VB.NET" Value="BindNoApplicableRevocationList" />
       <MemberSignature Language="C++ CLI" Value="BindNoApplicableRevocationList" />
+      <MemberSignature Language="F#" Value="BindNoApplicableRevocationList = -2147168472" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindNoApplicableRevocationList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -281,6 +295,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindNoSatisfiedRightsGroup" />
       <MemberSignature Language="VB.NET" Value="BindNoSatisfiedRightsGroup" />
       <MemberSignature Language="C++ CLI" Value="BindNoSatisfiedRightsGroup" />
+      <MemberSignature Language="F#" Value="BindNoSatisfiedRightsGroup = -2147168464" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindNoSatisfiedRightsGroup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -300,6 +315,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindPolicyViolation" />
       <MemberSignature Language="VB.NET" Value="BindPolicyViolation" />
       <MemberSignature Language="C++ CLI" Value="BindPolicyViolation" />
+      <MemberSignature Language="F#" Value="BindPolicyViolation = -2147168485" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindPolicyViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -319,6 +335,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindRevocationListStale" />
       <MemberSignature Language="VB.NET" Value="BindRevocationListStale" />
       <MemberSignature Language="C++ CLI" Value="BindRevocationListStale" />
+      <MemberSignature Language="F#" Value="BindRevocationListStale = -2147168473" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindRevocationListStale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -338,6 +355,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedIssuer" />
       <MemberSignature Language="VB.NET" Value="BindRevokedIssuer" />
       <MemberSignature Language="C++ CLI" Value="BindRevokedIssuer" />
+      <MemberSignature Language="F#" Value="BindRevokedIssuer = -2147168483" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedIssuer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -357,6 +375,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedLicense" />
       <MemberSignature Language="VB.NET" Value="BindRevokedLicense" />
       <MemberSignature Language="C++ CLI" Value="BindRevokedLicense" />
+      <MemberSignature Language="F#" Value="BindRevokedLicense = -2147168484" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedLicense" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -376,6 +395,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedModule" />
       <MemberSignature Language="VB.NET" Value="BindRevokedModule" />
       <MemberSignature Language="C++ CLI" Value="BindRevokedModule" />
+      <MemberSignature Language="F#" Value="BindRevokedModule = -2147168480" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedModule" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -395,6 +415,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedPrincipal" />
       <MemberSignature Language="VB.NET" Value="BindRevokedPrincipal" />
       <MemberSignature Language="C++ CLI" Value="BindRevokedPrincipal" />
+      <MemberSignature Language="F#" Value="BindRevokedPrincipal = -2147168482" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedPrincipal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -414,6 +435,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedResource" />
       <MemberSignature Language="VB.NET" Value="BindRevokedResource" />
       <MemberSignature Language="C++ CLI" Value="BindRevokedResource" />
+      <MemberSignature Language="F#" Value="BindRevokedResource = -2147168481" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindRevokedResource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -433,6 +455,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindSpecifiedWorkMissing" />
       <MemberSignature Language="VB.NET" Value="BindSpecifiedWorkMissing" />
       <MemberSignature Language="C++ CLI" Value="BindSpecifiedWorkMissing" />
+      <MemberSignature Language="F#" Value="BindSpecifiedWorkMissing = -2147168463" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindSpecifiedWorkMissing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -452,6 +475,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BindValidityTimeViolated" />
       <MemberSignature Language="VB.NET" Value="BindValidityTimeViolated" />
       <MemberSignature Language="C++ CLI" Value="BindValidityTimeViolated" />
+      <MemberSignature Language="F#" Value="BindValidityTimeViolated = -2147168488" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BindValidityTimeViolated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -471,6 +495,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.BrokenCertChain" />
       <MemberSignature Language="VB.NET" Value="BrokenCertChain" />
       <MemberSignature Language="C++ CLI" Value="BrokenCertChain" />
+      <MemberSignature Language="F#" Value="BrokenCertChain = -2147168487" Usage="System.Security.RightsManagement.RightsManagementFailureCode.BrokenCertChain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -490,6 +515,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ClockRollbackDetected" />
       <MemberSignature Language="VB.NET" Value="ClockRollbackDetected" />
       <MemberSignature Language="C++ CLI" Value="ClockRollbackDetected" />
+      <MemberSignature Language="F#" Value="ClockRollbackDetected = -2147168491" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ClockRollbackDetected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -509,6 +535,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.CryptoOperationUnsupported" />
       <MemberSignature Language="VB.NET" Value="CryptoOperationUnsupported" />
       <MemberSignature Language="C++ CLI" Value="CryptoOperationUnsupported" />
+      <MemberSignature Language="F#" Value="CryptoOperationUnsupported = -2147168492" Usage="System.Security.RightsManagement.RightsManagementFailureCode.CryptoOperationUnsupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -528,6 +555,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.DebuggerDetected" />
       <MemberSignature Language="VB.NET" Value="DebuggerDetected" />
       <MemberSignature Language="C++ CLI" Value="DebuggerDetected" />
+      <MemberSignature Language="F#" Value="DebuggerDetected = -2147168416" Usage="System.Security.RightsManagement.RightsManagementFailureCode.DebuggerDetected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -547,6 +575,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.EmailNotVerified" />
       <MemberSignature Language="VB.NET" Value="EmailNotVerified" />
       <MemberSignature Language="C++ CLI" Value="EmailNotVerified" />
+      <MemberSignature Language="F#" Value="EmailNotVerified = -2147168422" Usage="System.Security.RightsManagement.RightsManagementFailureCode.EmailNotVerified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -566,6 +595,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.EnablingPrincipalFailure" />
       <MemberSignature Language="VB.NET" Value="EnablingPrincipalFailure" />
       <MemberSignature Language="C++ CLI" Value="EnablingPrincipalFailure" />
+      <MemberSignature Language="F#" Value="EnablingPrincipalFailure = -2147168496" Usage="System.Security.RightsManagement.RightsManagementFailureCode.EnablingPrincipalFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -585,6 +615,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.EncryptionNotPermitted" />
       <MemberSignature Language="VB.NET" Value="EncryptionNotPermitted" />
       <MemberSignature Language="C++ CLI" Value="EncryptionNotPermitted" />
+      <MemberSignature Language="F#" Value="EncryptionNotPermitted = -2147168508" Usage="System.Security.RightsManagement.RightsManagementFailureCode.EncryptionNotPermitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -604,6 +635,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.EnvironmentCannotLoad" />
       <MemberSignature Language="VB.NET" Value="EnvironmentCannotLoad" />
       <MemberSignature Language="C++ CLI" Value="EnvironmentCannotLoad" />
+      <MemberSignature Language="F#" Value="EnvironmentCannotLoad = -2147168501" Usage="System.Security.RightsManagement.RightsManagementFailureCode.EnvironmentCannotLoad" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -623,6 +655,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.EnvironmentNotLoaded" />
       <MemberSignature Language="VB.NET" Value="EnvironmentNotLoaded" />
       <MemberSignature Language="C++ CLI" Value="EnvironmentNotLoaded" />
+      <MemberSignature Language="F#" Value="EnvironmentNotLoaded = -2147168502" Usage="System.Security.RightsManagement.RightsManagementFailureCode.EnvironmentNotLoaded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -642,6 +675,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ExpiredOfficialIssuanceLicenseTemplate" />
       <MemberSignature Language="VB.NET" Value="ExpiredOfficialIssuanceLicenseTemplate" />
       <MemberSignature Language="C++ CLI" Value="ExpiredOfficialIssuanceLicenseTemplate" />
+      <MemberSignature Language="F#" Value="ExpiredOfficialIssuanceLicenseTemplate = -2147168425" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ExpiredOfficialIssuanceLicenseTemplate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -661,6 +695,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.GlobalOptionAlreadySet" />
       <MemberSignature Language="VB.NET" Value="GlobalOptionAlreadySet" />
       <MemberSignature Language="C++ CLI" Value="GlobalOptionAlreadySet" />
+      <MemberSignature Language="F#" Value="GlobalOptionAlreadySet = -2147168396" Usage="System.Security.RightsManagement.RightsManagementFailureCode.GlobalOptionAlreadySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -680,6 +715,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.GroupIdentityNotSet" />
       <MemberSignature Language="VB.NET" Value="GroupIdentityNotSet" />
       <MemberSignature Language="C++ CLI" Value="GroupIdentityNotSet" />
+      <MemberSignature Language="F#" Value="GroupIdentityNotSet = -2147168455" Usage="System.Security.RightsManagement.RightsManagementFailureCode.GroupIdentityNotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -699,6 +735,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.HidCorrupted" />
       <MemberSignature Language="VB.NET" Value="HidCorrupted" />
       <MemberSignature Language="C++ CLI" Value="HidCorrupted" />
+      <MemberSignature Language="F#" Value="HidCorrupted = -2147168442" Usage="System.Security.RightsManagement.RightsManagementFailureCode.HidCorrupted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -718,6 +755,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.HidInvalid" />
       <MemberSignature Language="VB.NET" Value="HidInvalid" />
       <MemberSignature Language="C++ CLI" Value="HidInvalid" />
+      <MemberSignature Language="F#" Value="HidInvalid = -2147168423" Usage="System.Security.RightsManagement.RightsManagementFailureCode.HidInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -737,6 +775,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.IdMismatch" />
       <MemberSignature Language="VB.NET" Value="IdMismatch" />
       <MemberSignature Language="C++ CLI" Value="IdMismatch" />
+      <MemberSignature Language="F#" Value="IdMismatch = -2147168459" Usage="System.Security.RightsManagement.RightsManagementFailureCode.IdMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -756,6 +795,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.IncompatibleObjects" />
       <MemberSignature Language="VB.NET" Value="IncompatibleObjects" />
       <MemberSignature Language="C++ CLI" Value="IncompatibleObjects" />
+      <MemberSignature Language="F#" Value="IncompatibleObjects = -2147168498" Usage="System.Security.RightsManagement.RightsManagementFailureCode.IncompatibleObjects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -775,6 +815,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InfoNotInLicense" />
       <MemberSignature Language="VB.NET" Value="InfoNotInLicense" />
       <MemberSignature Language="C++ CLI" Value="InfoNotInLicense" />
+      <MemberSignature Language="F#" Value="InfoNotInLicense = -2147168511" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InfoNotInLicense" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -794,6 +835,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InfoNotPresent" />
       <MemberSignature Language="VB.NET" Value="InfoNotPresent" />
       <MemberSignature Language="C++ CLI" Value="InfoNotPresent" />
+      <MemberSignature Language="F#" Value="InfoNotPresent = -2147168495" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InfoNotPresent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -813,6 +855,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InstallationFailed" />
       <MemberSignature Language="VB.NET" Value="InstallationFailed" />
       <MemberSignature Language="C++ CLI" Value="InstallationFailed" />
+      <MemberSignature Language="F#" Value="InstallationFailed = -2147168443" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InstallationFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -832,6 +875,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidAlgorithmType" />
       <MemberSignature Language="VB.NET" Value="InvalidAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="InvalidAlgorithmType" />
+      <MemberSignature Language="F#" Value="InvalidAlgorithmType = -2147168503" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidAlgorithmType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -851,6 +895,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidClientLicensorCertificate" />
       <MemberSignature Language="VB.NET" Value="InvalidClientLicensorCertificate" />
       <MemberSignature Language="C++ CLI" Value="InvalidClientLicensorCertificate" />
+      <MemberSignature Language="F#" Value="InvalidClientLicensorCertificate = -2147168424" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidClientLicensorCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -870,6 +915,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidEmail" />
       <MemberSignature Language="VB.NET" Value="InvalidEmail" />
       <MemberSignature Language="C++ CLI" Value="InvalidEmail" />
+      <MemberSignature Language="F#" Value="InvalidEmail = -2147168437" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidEmail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -889,6 +935,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidEncodingType" />
       <MemberSignature Language="VB.NET" Value="InvalidEncodingType" />
       <MemberSignature Language="C++ CLI" Value="InvalidEncodingType" />
+      <MemberSignature Language="F#" Value="InvalidEncodingType = -2147168505" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidEncodingType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -908,6 +955,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidHandle" />
       <MemberSignature Language="VB.NET" Value="InvalidHandle" />
       <MemberSignature Language="C++ CLI" Value="InvalidHandle" />
+      <MemberSignature Language="F#" Value="InvalidHandle = -2147168468" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -927,6 +975,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidIssuanceLicenseTemplate" />
       <MemberSignature Language="VB.NET" Value="InvalidIssuanceLicenseTemplate" />
       <MemberSignature Language="C++ CLI" Value="InvalidIssuanceLicenseTemplate" />
+      <MemberSignature Language="F#" Value="InvalidIssuanceLicenseTemplate = -2147168428" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidIssuanceLicenseTemplate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -946,6 +995,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidKeyLength" />
       <MemberSignature Language="VB.NET" Value="InvalidKeyLength" />
       <MemberSignature Language="C++ CLI" Value="InvalidKeyLength" />
+      <MemberSignature Language="F#" Value="InvalidKeyLength = -2147168427" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidKeyLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -965,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidLicense" />
       <MemberSignature Language="VB.NET" Value="InvalidLicense" />
       <MemberSignature Language="C++ CLI" Value="InvalidLicense" />
+      <MemberSignature Language="F#" Value="InvalidLicense = -2147168512" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidLicense" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -984,6 +1035,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidLicenseSignature" />
       <MemberSignature Language="VB.NET" Value="InvalidLicenseSignature" />
       <MemberSignature Language="C++ CLI" Value="InvalidLicenseSignature" />
+      <MemberSignature Language="F#" Value="InvalidLicenseSignature = -2147168510" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidLicenseSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1003,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidLockboxPath" />
       <MemberSignature Language="VB.NET" Value="InvalidLockboxPath" />
       <MemberSignature Language="C++ CLI" Value="InvalidLockboxPath" />
+      <MemberSignature Language="F#" Value="InvalidLockboxPath = -2147168399" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidLockboxPath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1022,6 +1075,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidLockboxType" />
       <MemberSignature Language="VB.NET" Value="InvalidLockboxType" />
       <MemberSignature Language="C++ CLI" Value="InvalidLockboxType" />
+      <MemberSignature Language="F#" Value="InvalidLockboxType = -2147168400" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidLockboxType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1041,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidNumericalValue" />
       <MemberSignature Language="VB.NET" Value="InvalidNumericalValue" />
       <MemberSignature Language="C++ CLI" Value="InvalidNumericalValue" />
+      <MemberSignature Language="F#" Value="InvalidNumericalValue = -2147168504" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidNumericalValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1060,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidRegistryPath" />
       <MemberSignature Language="VB.NET" Value="InvalidRegistryPath" />
       <MemberSignature Language="C++ CLI" Value="InvalidRegistryPath" />
+      <MemberSignature Language="F#" Value="InvalidRegistryPath = -2147168398" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidRegistryPath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1079,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidServerResponse" />
       <MemberSignature Language="VB.NET" Value="InvalidServerResponse" />
       <MemberSignature Language="C++ CLI" Value="InvalidServerResponse" />
+      <MemberSignature Language="F#" Value="InvalidServerResponse = -2147168441" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidServerResponse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1098,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidTimeInfo" />
       <MemberSignature Language="VB.NET" Value="InvalidTimeInfo" />
       <MemberSignature Language="C++ CLI" Value="InvalidTimeInfo" />
+      <MemberSignature Language="F#" Value="InvalidTimeInfo = -2147168431" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidTimeInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1117,6 +1175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.InvalidVersion" />
       <MemberSignature Language="VB.NET" Value="InvalidVersion" />
       <MemberSignature Language="C++ CLI" Value="InvalidVersion" />
+      <MemberSignature Language="F#" Value="InvalidVersion = -2147168506" Usage="System.Security.RightsManagement.RightsManagementFailureCode.InvalidVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1136,6 +1195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.KeyTypeUnsupported" />
       <MemberSignature Language="VB.NET" Value="KeyTypeUnsupported" />
       <MemberSignature Language="C++ CLI" Value="KeyTypeUnsupported" />
+      <MemberSignature Language="F#" Value="KeyTypeUnsupported = -2147168493" Usage="System.Security.RightsManagement.RightsManagementFailureCode.KeyTypeUnsupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1155,6 +1215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.LibraryFail" />
       <MemberSignature Language="VB.NET" Value="LibraryFail" />
       <MemberSignature Language="C++ CLI" Value="LibraryFail" />
+      <MemberSignature Language="F#" Value="LibraryFail = -2147168497" Usage="System.Security.RightsManagement.RightsManagementFailureCode.LibraryFail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1174,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.LibraryUnsupportedPlugIn" />
       <MemberSignature Language="VB.NET" Value="LibraryUnsupportedPlugIn" />
       <MemberSignature Language="C++ CLI" Value="LibraryUnsupportedPlugIn" />
+      <MemberSignature Language="F#" Value="LibraryUnsupportedPlugIn = -2147168474" Usage="System.Security.RightsManagement.RightsManagementFailureCode.LibraryUnsupportedPlugIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1193,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.LicenseAcquisitionFailed" />
       <MemberSignature Language="VB.NET" Value="LicenseAcquisitionFailed" />
       <MemberSignature Language="C++ CLI" Value="LicenseAcquisitionFailed" />
+      <MemberSignature Language="F#" Value="LicenseAcquisitionFailed = -2147168460" Usage="System.Security.RightsManagement.RightsManagementFailureCode.LicenseAcquisitionFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1212,6 +1275,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.LicenseBindingToWindowsIdentityFailed" />
       <MemberSignature Language="VB.NET" Value="LicenseBindingToWindowsIdentityFailed" />
       <MemberSignature Language="C++ CLI" Value="LicenseBindingToWindowsIdentityFailed" />
+      <MemberSignature Language="F#" Value="LicenseBindingToWindowsIdentityFailed = -2147168429" Usage="System.Security.RightsManagement.RightsManagementFailureCode.LicenseBindingToWindowsIdentityFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1231,6 +1295,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ManifestPolicyViolation" />
       <MemberSignature Language="VB.NET" Value="ManifestPolicyViolation" />
       <MemberSignature Language="C++ CLI" Value="ManifestPolicyViolation" />
+      <MemberSignature Language="F#" Value="ManifestPolicyViolation = -2147183860" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ManifestPolicyViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1250,6 +1315,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.MetadataNotSet" />
       <MemberSignature Language="VB.NET" Value="MetadataNotSet" />
       <MemberSignature Language="C++ CLI" Value="MetadataNotSet" />
+      <MemberSignature Language="F#" Value="MetadataNotSet = -2147168433" Usage="System.Security.RightsManagement.RightsManagementFailureCode.MetadataNotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1269,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NeedsGroupIdentityActivation" />
       <MemberSignature Language="VB.NET" Value="NeedsGroupIdentityActivation" />
       <MemberSignature Language="C++ CLI" Value="NeedsGroupIdentityActivation" />
+      <MemberSignature Language="F#" Value="NeedsGroupIdentityActivation = -2147168450" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NeedsGroupIdentityActivation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1288,6 +1355,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NeedsMachineActivation" />
       <MemberSignature Language="VB.NET" Value="NeedsMachineActivation" />
       <MemberSignature Language="C++ CLI" Value="NeedsMachineActivation" />
+      <MemberSignature Language="F#" Value="NeedsMachineActivation = -2147168451" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NeedsMachineActivation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1307,6 +1375,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NoAesCryptoProvider" />
       <MemberSignature Language="VB.NET" Value="NoAesCryptoProvider" />
       <MemberSignature Language="C++ CLI" Value="NoAesCryptoProvider" />
+      <MemberSignature Language="F#" Value="NoAesCryptoProvider = -2147168397" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NoAesCryptoProvider" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1326,6 +1395,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NoConnect" />
       <MemberSignature Language="VB.NET" Value="NoConnect" />
       <MemberSignature Language="C++ CLI" Value="NoConnect" />
+      <MemberSignature Language="F#" Value="NoConnect = -2147168453" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NoConnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1345,6 +1415,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NoDistributionPointUrlFound" />
       <MemberSignature Language="VB.NET" Value="NoDistributionPointUrlFound" />
       <MemberSignature Language="C++ CLI" Value="NoDistributionPointUrlFound" />
+      <MemberSignature Language="F#" Value="NoDistributionPointUrlFound = -2147168457" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NoDistributionPointUrlFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1364,6 +1435,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NoLicense" />
       <MemberSignature Language="VB.NET" Value="NoLicense" />
       <MemberSignature Language="C++ CLI" Value="NoLicense" />
+      <MemberSignature Language="F#" Value="NoLicense = -2147168452" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NoLicense" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1383,6 +1455,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NoMoreData" />
       <MemberSignature Language="VB.NET" Value="NoMoreData" />
       <MemberSignature Language="C++ CLI" Value="NoMoreData" />
+      <MemberSignature Language="F#" Value="NoMoreData = -2147168461" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NoMoreData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1402,6 +1475,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NotAChain" />
       <MemberSignature Language="VB.NET" Value="NotAChain" />
       <MemberSignature Language="C++ CLI" Value="NotAChain" />
+      <MemberSignature Language="F#" Value="NotAChain = -2147168418" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NotAChain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1421,6 +1495,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = -2147168434" Usage="System.Security.RightsManagement.RightsManagementFailureCode.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1440,6 +1515,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.OutdatedModule" />
       <MemberSignature Language="VB.NET" Value="OutdatedModule" />
       <MemberSignature Language="C++ CLI" Value="OutdatedModule" />
+      <MemberSignature Language="F#" Value="OutdatedModule = -2147168435" Usage="System.Security.RightsManagement.RightsManagementFailureCode.OutdatedModule" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1459,6 +1535,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.OutOfQuota" />
       <MemberSignature Language="VB.NET" Value="OutOfQuota" />
       <MemberSignature Language="C++ CLI" Value="OutOfQuota" />
+      <MemberSignature Language="F#" Value="OutOfQuota = -2147168446" Usage="System.Security.RightsManagement.RightsManagementFailureCode.OutOfQuota" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1478,6 +1555,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.OwnerLicenseNotFound" />
       <MemberSignature Language="VB.NET" Value="OwnerLicenseNotFound" />
       <MemberSignature Language="C++ CLI" Value="OwnerLicenseNotFound" />
+      <MemberSignature Language="F#" Value="OwnerLicenseNotFound = -2147168395" Usage="System.Security.RightsManagement.RightsManagementFailureCode.OwnerLicenseNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1497,6 +1575,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.QueryReportsNoResults" />
       <MemberSignature Language="VB.NET" Value="QueryReportsNoResults" />
       <MemberSignature Language="C++ CLI" Value="QueryReportsNoResults" />
+      <MemberSignature Language="F#" Value="QueryReportsNoResults = -2147168490" Usage="System.Security.RightsManagement.RightsManagementFailureCode.QueryReportsNoResults" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1516,6 +1595,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.RecordNotFound" />
       <MemberSignature Language="VB.NET" Value="RecordNotFound" />
       <MemberSignature Language="C++ CLI" Value="RecordNotFound" />
+      <MemberSignature Language="F#" Value="RecordNotFound = -2147168454" Usage="System.Security.RightsManagement.RightsManagementFailureCode.RecordNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1535,6 +1615,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.RequestDenied" />
       <MemberSignature Language="VB.NET" Value="RequestDenied" />
       <MemberSignature Language="C++ CLI" Value="RequestDenied" />
+      <MemberSignature Language="F#" Value="RequestDenied = -2147168417" Usage="System.Security.RightsManagement.RightsManagementFailureCode.RequestDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1554,6 +1635,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.RevocationInfoNotSet" />
       <MemberSignature Language="VB.NET" Value="RevocationInfoNotSet" />
       <MemberSignature Language="C++ CLI" Value="RevocationInfoNotSet" />
+      <MemberSignature Language="F#" Value="RevocationInfoNotSet = -2147168432" Usage="System.Security.RightsManagement.RightsManagementFailureCode.RevocationInfoNotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1573,6 +1655,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.RightNotGranted" />
       <MemberSignature Language="VB.NET" Value="RightNotGranted" />
       <MemberSignature Language="C++ CLI" Value="RightNotGranted" />
+      <MemberSignature Language="F#" Value="RightNotGranted = -2147168507" Usage="System.Security.RightsManagement.RightsManagementFailureCode.RightNotGranted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1592,6 +1675,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.RightNotSet" />
       <MemberSignature Language="VB.NET" Value="RightNotSet" />
       <MemberSignature Language="C++ CLI" Value="RightNotSet" />
+      <MemberSignature Language="F#" Value="RightNotSet = -2147168430" Usage="System.Security.RightsManagement.RightsManagementFailureCode.RightNotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1611,6 +1695,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ServerError" />
       <MemberSignature Language="VB.NET" Value="ServerError" />
       <MemberSignature Language="C++ CLI" Value="ServerError" />
+      <MemberSignature Language="F#" Value="ServerError = -2147168444" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ServerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1630,6 +1715,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ServerNotFound" />
       <MemberSignature Language="VB.NET" Value="ServerNotFound" />
       <MemberSignature Language="C++ CLI" Value="ServerNotFound" />
+      <MemberSignature Language="F#" Value="ServerNotFound = -2147168438" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ServerNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1649,6 +1735,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ServiceGone" />
       <MemberSignature Language="VB.NET" Value="ServiceGone" />
       <MemberSignature Language="C++ CLI" Value="ServiceGone" />
+      <MemberSignature Language="F#" Value="ServiceGone = -2147168420" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ServiceGone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1668,6 +1755,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ServiceMoved" />
       <MemberSignature Language="VB.NET" Value="ServiceMoved" />
       <MemberSignature Language="C++ CLI" Value="ServiceMoved" />
+      <MemberSignature Language="F#" Value="ServiceMoved = -2147168421" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ServiceMoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1687,6 +1775,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ServiceNotFound" />
       <MemberSignature Language="VB.NET" Value="ServiceNotFound" />
       <MemberSignature Language="C++ CLI" Value="ServiceNotFound" />
+      <MemberSignature Language="F#" Value="ServiceNotFound = -2147168440" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ServiceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1706,6 +1795,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="C++ CLI" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.Security.RightsManagement.RightsManagementFailureCode.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1725,6 +1815,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.TooManyCertificates" />
       <MemberSignature Language="VB.NET" Value="TooManyCertificates" />
       <MemberSignature Language="C++ CLI" Value="TooManyCertificates" />
+      <MemberSignature Language="F#" Value="TooManyCertificates = -2147168458" Usage="System.Security.RightsManagement.RightsManagementFailureCode.TooManyCertificates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1744,6 +1835,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.TooManyLoadedEnvironments" />
       <MemberSignature Language="VB.NET" Value="TooManyLoadedEnvironments" />
       <MemberSignature Language="C++ CLI" Value="TooManyLoadedEnvironments" />
+      <MemberSignature Language="F#" Value="TooManyLoadedEnvironments = -2147168500" Usage="System.Security.RightsManagement.RightsManagementFailureCode.TooManyLoadedEnvironments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1763,6 +1855,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.UnexpectedException" />
       <MemberSignature Language="VB.NET" Value="UnexpectedException" />
       <MemberSignature Language="C++ CLI" Value="UnexpectedException" />
+      <MemberSignature Language="F#" Value="UnexpectedException = -2147168489" Usage="System.Security.RightsManagement.RightsManagementFailureCode.UnexpectedException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1782,6 +1875,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.UseDefault" />
       <MemberSignature Language="VB.NET" Value="UseDefault" />
       <MemberSignature Language="C++ CLI" Value="UseDefault" />
+      <MemberSignature Language="F#" Value="UseDefault = -2147168439" Usage="System.Security.RightsManagement.RightsManagementFailureCode.UseDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1801,6 +1895,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.RightsManagementFailureCode.ValidityTimeViolation" />
       <MemberSignature Language="VB.NET" Value="ValidityTimeViolation" />
       <MemberSignature Language="C++ CLI" Value="ValidityTimeViolation" />
+      <MemberSignature Language="F#" Value="ValidityTimeViolation = -2147168436" Usage="System.Security.RightsManagement.RightsManagementFailureCode.ValidityTimeViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

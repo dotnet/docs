@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.PropertyTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyTypes" />
+  <TypeSignature Language="F#" Value="type PropertyTypes = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.PropertyTypes.Indexed" />
       <MemberSignature Language="VB.NET" Value="Indexed" />
       <MemberSignature Language="C++ CLI" Value="Indexed" />
+      <MemberSignature Language="F#" Value="Indexed = 2" Usage="System.DirectoryServices.ActiveDirectory.PropertyTypes.Indexed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.PropertyTypes.InGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="InGlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="InGlobalCatalog" />
+      <MemberSignature Language="F#" Value="InGlobalCatalog = 4" Usage="System.DirectoryServices.ActiveDirectory.PropertyTypes.InGlobalCatalog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

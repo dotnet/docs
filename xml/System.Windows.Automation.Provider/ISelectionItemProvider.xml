@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ISelectionItemProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISelectionItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISelectionItemProvider" />
+  <TypeSignature Language="F#" Value="type ISelectionItemProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddToSelection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToSelection();" />
+      <MemberSignature Language="F#" Value="abstract member AddToSelection : unit -&gt; unit" Usage="iSelectionItemProvider.AddToSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSelected : bool" Usage="System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFromSelection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFromSelection();" />
+      <MemberSignature Language="F#" Value="abstract member RemoveFromSelection : unit -&gt; unit" Usage="iSelectionItemProvider.RemoveFromSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionItemProvider.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="iSelectionItemProvider.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionContainer As IRawElementProviderSimple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Provider::IRawElementProviderSimple ^ SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionContainer : System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

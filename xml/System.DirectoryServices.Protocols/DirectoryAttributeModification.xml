@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryAttributeModification" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryAttributeModification&#xA;Inherits DirectoryAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryAttributeModification : System::DirectoryServices::Protocols::DirectoryAttribute" />
+  <TypeSignature Language="F#" Value="type DirectoryAttributeModification = class&#xA;    inherit DirectoryAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryAttributeModification.Operation" />
       <MemberSignature Language="VB.NET" Value="Public Property Operation As DirectoryAttributeOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DirectoryAttributeOperation Operation { System::DirectoryServices::Protocols::DirectoryAttributeOperation get(); void set(System::DirectoryServices::Protocols::DirectoryAttributeOperation value); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : System.DirectoryServices.Protocols.DirectoryAttributeOperation with get, set" Usage="System.DirectoryServices.Protocols.DirectoryAttributeModification.Operation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

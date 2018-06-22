@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XCData" />
   <TypeSignature Language="VB.NET" Value="Public Class XCData&#xA;Inherits XText" />
   <TypeSignature Language="C++ CLI" Value="public ref class XCData : System::Xml::Linq::XText" />
+  <TypeSignature Language="F#" Value="type XCData = class&#xA;    inherit XText" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XCData.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XCData(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XCData : string -&gt; System.Xml.Linq.XCData" Usage="new System.Xml.Linq.XCData value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -114,6 +116,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XCData.#ctor(System.Xml.Linq.XCData)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As XCData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XCData(System::Xml::Linq::XCData ^ other);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XCData : System.Xml.Linq.XCData -&gt; System.Xml.Linq.XCData" Usage="new System.Xml.Linq.XCData other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -153,6 +156,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XCData.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.Linq.XCData.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -261,6 +265,7 @@ Text
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XCData.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xCData.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -302,6 +307,7 @@ Text
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XCData.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.WriteToAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xCData.WriteToAsync (writer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

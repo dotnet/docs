@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.StringContent" />
   <TypeSignature Language="VB.NET" Value="Public Class StringContent&#xA;Inherits ByteArrayContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringContent : System::Net::Http::ByteArrayContent" />
+  <TypeSignature Language="F#" Value="type StringContent = class&#xA;    inherit ByteArrayContent" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StringContent.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringContent(System::String ^ content);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StringContent : string -&gt; System.Net.Http.StringContent" Usage="new System.Net.Http.StringContent content" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string content, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StringContent.#ctor(System.String,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringContent(System::String ^ content, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StringContent : string * System.Text.Encoding -&gt; System.Net.Http.StringContent" Usage="new System.Net.Http.StringContent (content, encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string content, class System.Text.Encoding encoding, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StringContent.#ctor(System.String,System.Text.Encoding,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringContent(System::String ^ content, System::Text::Encoding ^ encoding, System::String ^ mediaType);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StringContent : string * System.Text.Encoding * string -&gt; System.Net.Http.StringContent" Usage="new System.Net.Http.StringContent (content, encoding, mediaType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

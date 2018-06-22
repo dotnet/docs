@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContextMenu" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextMenu&#xA;Inherits MenuBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextMenu : System::Windows::Controls::Primitives::MenuBase" />
+  <TypeSignature Language="F#" Value="type ContextMenu = class&#xA;    inherit MenuBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ContextMenu.Closed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Closed;" />
+      <MemberSignature Language="F#" Value="member this.Closed : System.Windows.RoutedEventHandler " Usage="member this.Closed : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.ClosedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClosedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ClosedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClosedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ContextMenu.ClosedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.CustomPopupPlacementCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomPopupPlacementCallback As CustomPopupPlacementCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ CustomPopupPlacementCallback { System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ get(); void set(System::Windows::Controls::Primitives::CustomPopupPlacementCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomPopupPlacementCallback : System.Windows.Controls.Primitives.CustomPopupPlacementCallback with get, set" Usage="System.Windows.Controls.ContextMenu.CustomPopupPlacementCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.CustomPopupPlacementCallbackProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CustomPopupPlacementCallbackProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CustomPopupPlacementCallbackProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomPopupPlacementCallbackProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.CustomPopupPlacementCallbackProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.HandlesScrolling" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HandlesScrolling As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HandlesScrolling { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandlesScrolling : bool" Usage="System.Windows.Controls.ContextMenu.HandlesScrolling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.HasDropShadow" />
       <MemberSignature Language="VB.NET" Value="Public Property HasDropShadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDropShadow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasDropShadow : bool with get, set" Usage="System.Windows.Controls.ContextMenu.HasDropShadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -293,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.HasDropShadowProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasDropShadowProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasDropShadowProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasDropShadowProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.HasDropShadowProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -312,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double with get, set" Usage="System.Windows.Controls.ContextMenu.HorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -397,6 +406,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.HorizontalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.HorizontalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -416,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.IsOpen" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool with get, set" Usage="System.Windows.Controls.ContextMenu.IsOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -475,6 +486,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.IsOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOpenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.IsOpenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -494,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenu.OnClosed(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosed (e As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosed(System::Windows::RoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClosed : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnClosed : System.Windows.RoutedEventArgs -&gt; unit" Usage="contextMenu.OnClosed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -517,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenu.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="contextMenu.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -538,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenu.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsKeyboardFocusWithinChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsKeyboardFocusWithinChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnIsKeyboardFocusWithinChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="contextMenu.OnIsKeyboardFocusWithinChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -561,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenu.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="contextMenu.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -584,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenu.OnKeyUp(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="contextMenu.OnKeyUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -607,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenu.OnOpened(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnOpened (e As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnOpened(System::Windows::RoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnOpened : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnOpened : System.Windows.RoutedEventArgs -&gt; unit" Usage="contextMenu.OnOpened e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -630,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenu.OnVisualParentChanged(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnVisualParentChanged (oldParent As DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualParentChanged(System::Windows::DependencyObject ^ oldParent);" />
+      <MemberSignature Language="F#" Value="override this.OnVisualParentChanged : System.Windows.DependencyObject -&gt; unit" Usage="contextMenu.OnVisualParentChanged oldParent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -653,6 +672,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ContextMenu.Opened" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Opened As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Opened;" />
+      <MemberSignature Language="F#" Value="member this.Opened : System.Windows.RoutedEventHandler " Usage="member this.Opened : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -698,6 +718,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.OpenedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OpenedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ OpenedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OpenedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ContextMenu.OpenedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -717,6 +738,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.Placement" />
       <MemberSignature Language="VB.NET" Value="Public Property Placement As PlacementMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::PlacementMode Placement { System::Windows::Controls::Primitives::PlacementMode get(); void set(System::Windows::Controls::Primitives::PlacementMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Placement : System.Windows.Controls.Primitives.PlacementMode with get, set" Usage="System.Windows.Controls.ContextMenu.Placement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -770,6 +792,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.PlacementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.PlacementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -789,6 +812,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.PlacementRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Property PlacementRectangle As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect PlacementRectangle { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
+      <MemberSignature Language="F#" Value="member this.PlacementRectangle : System.Windows.Rect with get, set" Usage="System.Windows.Controls.ContextMenu.PlacementRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -840,6 +864,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.PlacementRectangleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementRectangleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementRectangleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementRectangleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.PlacementRectangleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -859,6 +884,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.PlacementTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property PlacementTarget As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ PlacementTarget { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PlacementTarget : System.Windows.UIElement with get, set" Usage="System.Windows.Controls.ContextMenu.PlacementTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -917,6 +943,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.PlacementTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementTargetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementTargetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PlacementTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.PlacementTargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -936,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenu.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="contextMenu.PrepareContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -968,6 +996,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.StaysOpen" />
       <MemberSignature Language="VB.NET" Value="Public Property StaysOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StaysOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.StaysOpen : bool with get, set" Usage="System.Windows.Controls.ContextMenu.StaysOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1019,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.StaysOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StaysOpenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StaysOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StaysOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.StaysOpenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1038,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenu.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double with get, set" Usage="System.Windows.Controls.ContextMenu.VerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1122,6 +1153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenu.VerticalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenu.VerticalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

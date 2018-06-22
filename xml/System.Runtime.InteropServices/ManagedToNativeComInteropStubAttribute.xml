@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagedToNativeComInteropStubAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagedToNativeComInteropStubAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ManagedToNativeComInteropStubAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -95,6 +96,7 @@ class TestStubClass
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.#ctor(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (classType As Type, methodName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagedToNativeComInteropStubAttribute(Type ^ classType, System::String ^ methodName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute : Type * string -&gt; System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute" Usage="new System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute (classType, methodName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +136,7 @@ class TestStubClass
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.ClassType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ClassType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassType : Type" Usage="System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.ClassType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,6 +163,7 @@ class TestStubClass
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string" Usage="System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

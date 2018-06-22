@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DataGridRowHeader" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridRowHeader&#xA;Inherits ButtonBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridRowHeader : System::Windows::Controls::Primitives::ButtonBase" />
+  <TypeSignature Language="F#" Value="type DataGridRowHeader = class&#xA;    inherit ButtonBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridRowHeader.IsRowSelected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRowSelected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRowSelected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRowSelected : bool" Usage="System.Windows.Controls.Primitives.DataGridRowHeader.IsRowSelected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridRowHeader.IsRowSelectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsRowSelectedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsRowSelectedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsRowSelectedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridRowHeader.IsRowSelectedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowHeader.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="dataGridRowHeader.MeasureOverride availableSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowHeader.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="dataGridRowHeader.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowHeader.OnClick" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick();" />
+      <MemberSignature Language="F#" Value="override this.OnClick : unit -&gt; unit" Usage="dataGridRowHeader.OnClick " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridRowHeader.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="dataGridRowHeader.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property SeparatorBrush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ SeparatorBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SeparatorBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SeparatorBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SeparatorBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SeparatorBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -257,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property SeparatorVisibility As Visibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility SeparatorVisibility { System::Windows::Visibility get(); void set(System::Windows::Visibility value); };" />
+      <MemberSignature Language="F#" Value="member this.SeparatorVisibility : System.Windows.Visibility with get, set" Usage="System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SeparatorVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SeparatorVisibilityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SeparatorVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorVisibilityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

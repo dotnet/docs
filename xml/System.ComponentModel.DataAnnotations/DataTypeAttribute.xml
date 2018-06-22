@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DataTypeAttribute&#xA;Inherits ValidationAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTypeAttribute : System::ComponentModel::DataAnnotations::ValidationAttribute" />
+  <TypeSignature Language="F#" Value="type DataTypeAttribute = class&#xA;    inherit ValidationAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.DataAnnotations.DataType dataType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DataTypeAttribute.#ctor(System.ComponentModel.DataAnnotations.DataType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTypeAttribute(System::ComponentModel::DataAnnotations::DataType dataType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.DataTypeAttribute : System.ComponentModel.DataAnnotations.DataType -&gt; System.ComponentModel.DataAnnotations.DataTypeAttribute" Usage="new System.ComponentModel.DataAnnotations.DataTypeAttribute dataType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -139,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DataTypeAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (customDataType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTypeAttribute(System::String ^ customDataType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.DataTypeAttribute : string -&gt; System.ComponentModel.DataAnnotations.DataTypeAttribute" Usage="new System.ComponentModel.DataAnnotations.DataTypeAttribute customDataType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DataTypeAttribute.CustomDataType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomDataType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomDataType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomDataType : string" Usage="System.ComponentModel.DataAnnotations.DataTypeAttribute.CustomDataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DataTypeAttribute.DataType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataType As DataType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DataAnnotations::DataType DataType { System::ComponentModel::DataAnnotations::DataType get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : System.ComponentModel.DataAnnotations.DataType" Usage="System.ComponentModel.DataAnnotations.DataTypeAttribute.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -226,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DataTypeAttribute.DisplayFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayFormat As DisplayFormatAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::ComponentModel::DataAnnotations::DisplayFormatAttribute ^ DisplayFormat {  public:&#xA;System::ComponentModel::DataAnnotations::DisplayFormatAttribute ^ get(); protected:&#xA; void set(System::ComponentModel::DataAnnotations::DisplayFormatAttribute ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayFormat : System.ComponentModel.DataAnnotations.DisplayFormatAttribute with get, set" Usage="System.ComponentModel.DataAnnotations.DataTypeAttribute.DisplayFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DataTypeAttribute.GetDataTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataTypeName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetDataTypeName();" />
+      <MemberSignature Language="F#" Value="abstract member GetDataTypeName : unit -&gt; string&#xA;override this.GetDataTypeName : unit -&gt; string" Usage="dataTypeAttribute.GetDataTypeName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -287,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DataTypeAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="dataTypeAttribute.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

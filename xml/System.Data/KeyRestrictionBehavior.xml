@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.KeyRestrictionBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum KeyRestrictionBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class KeyRestrictionBehavior" />
+  <TypeSignature Language="F#" Value="type KeyRestrictionBehavior = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.KeyRestrictionBehavior.AllowOnly" />
       <MemberSignature Language="VB.NET" Value="AllowOnly" />
       <MemberSignature Language="C++ CLI" Value="AllowOnly" />
+      <MemberSignature Language="F#" Value="AllowOnly = 0" Usage="System.Data.KeyRestrictionBehavior.AllowOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.KeyRestrictionBehavior.PreventUsage" />
       <MemberSignature Language="VB.NET" Value="PreventUsage" />
       <MemberSignature Language="C++ CLI" Value="PreventUsage" />
+      <MemberSignature Language="F#" Value="PreventUsage = 1" Usage="System.Data.KeyRestrictionBehavior.PreventUsage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

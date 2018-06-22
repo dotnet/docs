@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Query.Dynamic.ParseException" />
   <TypeSignature Language="VB.NET" Value="Public Class ParseException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParseException : Exception" />
+  <TypeSignature Language="F#" Value="type ParseException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Query.Dynamic.ParseException.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, position As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ParseException(System::String ^ message, int position);" />
+      <MemberSignature Language="F#" Value="new System.Web.Query.Dynamic.ParseException : string * int -&gt; System.Web.Query.Dynamic.ParseException" Usage="new System.Web.Query.Dynamic.ParseException (message, position)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Query.Dynamic.ParseException.Position" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Position { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : int" Usage="System.Web.Query.Dynamic.ParseException.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Query.Dynamic.ParseException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="parseException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

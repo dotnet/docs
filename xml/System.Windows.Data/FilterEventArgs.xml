@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.FilterEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FilterEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilterEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type FilterEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.FilterEventArgs.Accepted" />
       <MemberSignature Language="VB.NET" Value="Public Property Accepted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Accepted { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Accepted : bool with get, set" Usage="System.Windows.Data.FilterEventArgs.Accepted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.FilterEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : obj" Usage="System.Windows.Data.FilterEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

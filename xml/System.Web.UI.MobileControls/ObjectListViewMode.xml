@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListViewMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ObjectListViewMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ObjectListViewMode" />
+  <TypeSignature Language="F#" Value="type ObjectListViewMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ObjectListViewMode.Commands" />
       <MemberSignature Language="VB.NET" Value="Commands" />
       <MemberSignature Language="C++ CLI" Value="Commands" />
+      <MemberSignature Language="F#" Value="Commands = 1" Usage="System.Web.UI.MobileControls.ObjectListViewMode.Commands" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ObjectListViewMode.Details" />
       <MemberSignature Language="VB.NET" Value="Details" />
       <MemberSignature Language="C++ CLI" Value="Details" />
+      <MemberSignature Language="F#" Value="Details = 2" Usage="System.Web.UI.MobileControls.ObjectListViewMode.Details" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ObjectListViewMode.List" />
       <MemberSignature Language="VB.NET" Value="List" />
       <MemberSignature Language="C++ CLI" Value="List" />
+      <MemberSignature Language="F#" Value="List = 0" Usage="System.Web.UI.MobileControls.ObjectListViewMode.List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

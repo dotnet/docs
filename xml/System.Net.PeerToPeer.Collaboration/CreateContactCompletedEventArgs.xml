@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CreateContactCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CreateContactCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type CreateContactCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs.PeerContact" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerContact As PeerContact" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerContact ^ PeerContact { System::Net::PeerToPeer::Collaboration::PeerContact ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerContact : System.Net.PeerToPeer.Collaboration.PeerContact" Usage="System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs.PeerContact" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

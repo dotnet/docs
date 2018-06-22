@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class XhtmlControlAdapter&#xA;Inherits ControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XhtmlControlAdapter : System::Web::UI::MobileControls::Adapters::ControlAdapter" />
+  <TypeSignature Language="F#" Value="type XhtmlControlAdapter = class&#xA;    inherit ControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ClearPendingBreakIfDeviceBreaksOnBlockLevel(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ClearPendingBreakIfDeviceBreaksOnBlockLevel (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ClearPendingBreakIfDeviceBreaksOnBlockLevel(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ClearPendingBreakIfDeviceBreaksOnBlockLevel : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ClearPendingBreakIfDeviceBreaksOnBlockLevel : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ClearPendingBreakIfDeviceBreaksOnBlockLevel writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalClearCachedEndTag(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalClearCachedEndTag (writer As XhtmlMobileTextWriter, s As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalClearCachedEndTag(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ s);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalClearCachedEndTag : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit&#xA;override this.ConditionalClearCachedEndTag : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit" Usage="xhtmlControlAdapter.ConditionalClearCachedEndTag (writer, s)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalClearPendingBreak(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalClearPendingBreak (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalClearPendingBreak(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalClearPendingBreak : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalClearPendingBreak : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalClearPendingBreak writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConditionalEnterFormat(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalEnterFormat(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalEnterFormat(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalEnterFormat : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.ConditionalEnterFormat : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit" Usage="xhtmlControlAdapter.ConditionalEnterFormat (writer, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConditionalEnterLayout(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalEnterLayout(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalEnterLayout(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalEnterLayout : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.ConditionalEnterLayout : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit" Usage="xhtmlControlAdapter.ConditionalEnterLayout (writer, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConditionalEnterStyle(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalEnterStyle(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalEnterStyle(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalEnterStyle : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.ConditionalEnterStyle : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit" Usage="xhtmlControlAdapter.ConditionalEnterStyle (writer, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -300,6 +307,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConditionalEnterStyle(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, class System.Web.UI.MobileControls.Style style, string tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalEnterStyle(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style,System.String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalEnterStyle(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Style ^ style, System::String ^ tag);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalEnterStyle : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style * string -&gt; unit&#xA;override this.ConditionalEnterStyle : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style * string -&gt; unit" Usage="xhtmlControlAdapter.ConditionalEnterStyle (writer, style, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -343,6 +351,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConditionalExitFormat(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalExitFormat(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalExitFormat(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalExitFormat : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.ConditionalExitFormat : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit" Usage="xhtmlControlAdapter.ConditionalExitFormat (writer, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -386,6 +395,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConditionalExitLayout(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalExitLayout(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalExitLayout(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalExitLayout : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.ConditionalExitLayout : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit" Usage="xhtmlControlAdapter.ConditionalExitLayout (writer, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -428,6 +438,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConditionalExitStyle(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalExitStyle(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalExitStyle(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalExitStyle : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit&#xA;override this.ConditionalExitStyle : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.MobileControls.Style -&gt; unit" Usage="xhtmlControlAdapter.ConditionalExitStyle (writer, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -470,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalPopPhysicalCssClass(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalPopPhysicalCssClass (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalPopPhysicalCssClass(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalPopPhysicalCssClass : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalPopPhysicalCssClass : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalPopPhysicalCssClass writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -503,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderClassAttribute(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalRenderClassAttribute (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalRenderClassAttribute(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalRenderClassAttribute : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalRenderClassAttribute : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalRenderClassAttribute writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -544,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderClosingDivElement(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalRenderClosingDivElement (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalRenderClosingDivElement(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalRenderClosingDivElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalRenderClosingDivElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalRenderClosingDivElement writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -582,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderClosingSpanElement(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalRenderClosingSpanElement (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalRenderClosingSpanElement(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalRenderClosingSpanElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalRenderClosingSpanElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalRenderClosingSpanElement writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -629,6 +644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderCustomAttribute(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalRenderCustomAttribute (writer As XhtmlMobileTextWriter, attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalRenderCustomAttribute(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalRenderCustomAttribute : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit&#xA;override this.ConditionalRenderCustomAttribute : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit" Usage="xhtmlControlAdapter.ConditionalRenderCustomAttribute (writer, attributeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -663,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderCustomAttribute(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalRenderCustomAttribute (writer As XhtmlMobileTextWriter, attributeName As String, markupAttributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalRenderCustomAttribute(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ attributeName, System::String ^ markupAttributeName);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalRenderCustomAttribute : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string -&gt; unit&#xA;override this.ConditionalRenderCustomAttribute : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string -&gt; unit" Usage="xhtmlControlAdapter.ConditionalRenderCustomAttribute (writer, attributeName, markupAttributeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -699,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderOpeningDivElement(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalRenderOpeningDivElement (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalRenderOpeningDivElement(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalRenderOpeningDivElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalRenderOpeningDivElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalRenderOpeningDivElement writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -739,6 +757,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalRenderOpeningSpanElement(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalRenderOpeningSpanElement (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalRenderOpeningSpanElement(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalRenderOpeningSpanElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalRenderOpeningSpanElement : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalRenderOpeningSpanElement writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -780,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalSetPendingBreak(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalSetPendingBreak (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalSetPendingBreak(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalSetPendingBreak : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalSetPendingBreak : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalSetPendingBreak writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -814,6 +834,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalSetPendingBreakAfterInline(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConditionalSetPendingBreakAfterInline (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConditionalSetPendingBreakAfterInline(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member ConditionalSetPendingBreakAfterInline : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.ConditionalSetPendingBreakAfterInline : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.ConditionalSetPendingBreakAfterInline writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -853,6 +874,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property CssLocation As StyleSheetLocation" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::MobileControls::Adapters::XhtmlAdapters::StyleSheetLocation CssLocation { System::Web::UI::MobileControls::Adapters::XhtmlAdapters::StyleSheetLocation get(); };" />
+      <MemberSignature Language="F#" Value="member this.CssLocation : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.CssLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -881,6 +903,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.DocumentType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DocumentType As Doctype" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::MobileControls::Adapters::XhtmlAdapters::Doctype DocumentType { System::Web::UI::MobileControls::Adapters::XhtmlAdapters::Doctype get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentType : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.DocumentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -909,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ExitSecondaryUIMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ExitSecondaryUIMode ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ExitSecondaryUIMode();" />
+      <MemberSignature Language="F#" Value="abstract member ExitSecondaryUIMode : unit -&gt; unit&#xA;override this.ExitSecondaryUIMode : unit -&gt; unit" Usage="xhtmlControlAdapter.ExitSecondaryUIMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -949,6 +973,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.GetCustomAttributeValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCustomAttributeValue (attributeName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetCustomAttributeValue(System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributeValue : string -&gt; string&#xA;override this.GetCustomAttributeValue : string -&gt; string" Usage="xhtmlControlAdapter.GetCustomAttributeValue attributeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -975,6 +1000,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.GetCustomAttributeValue(System.Web.UI.MobileControls.MobileControl,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCustomAttributeValue (control As MobileControl, attributeName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetCustomAttributeValue(System::Web::UI::MobileControls::MobileControl ^ control, System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributeValue : System.Web.UI.MobileControls.MobileControl * string -&gt; string&#xA;override this.GetCustomAttributeValue : System.Web.UI.MobileControls.MobileControl * string -&gt; string" Usage="xhtmlControlAdapter.GetCustomAttributeValue (control, attributeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1008,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.LoadAdapterState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadAdapterState (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadAdapterState(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.LoadAdapterState : obj -&gt; unit" Usage="xhtmlControlAdapter.LoadAdapterState state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1044,6 +1071,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.NotSecondaryUI" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly NotSecondaryUI As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly int NotSecondaryUI;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NotSecondaryUI : int" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.NotSecondaryUI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1072,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.PageAdapter" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property PageAdapter As XhtmlPageAdapter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlPageAdapter ^ PageAdapter { System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlPageAdapter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageAdapter : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.PageAdapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1100,6 +1129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.PreprocessQueryString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function PreprocessQueryString (queryString As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ PreprocessQueryString(System::String ^ queryString);" />
+      <MemberSignature Language="F#" Value="member this.PreprocessQueryString : string -&gt; string" Usage="xhtmlControlAdapter.PreprocessQueryString queryString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1154,6 +1184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="xhtmlControlAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1191,6 +1222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Render (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1225,6 +1257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderAsHiddenInputField(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderAsHiddenInputField (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderAsHiddenInputField(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderAsHiddenInputField : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.RenderAsHiddenInputField : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.RenderAsHiddenInputField writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1266,6 +1299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderBeginLink (writer As XhtmlMobileTextWriter, target As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBeginLink(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginLink : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit&#xA;override this.RenderBeginLink : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit" Usage="xhtmlControlAdapter.RenderBeginLink (writer, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1300,6 +1334,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBeginLink(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, string target, string accessKey, class System.Web.UI.MobileControls.Style style, string cssClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String,System.String,System.Web.UI.MobileControls.Style,System.String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBeginLink(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ target, System::String ^ accessKey, System::Web::UI::MobileControls::Style ^ style, System::String ^ cssClass);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginLink : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string * System.Web.UI.MobileControls.Style * string -&gt; unit&#xA;override this.RenderBeginLink : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string * System.Web.UI.MobileControls.Style * string -&gt; unit" Usage="xhtmlControlAdapter.RenderBeginLink (writer, target, accessKey, style, cssClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1340,6 +1375,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBeginLink(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, string target, string accessKey, class System.Web.UI.MobileControls.Style style, string cssClass, string title) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String,System.String,System.Web.UI.MobileControls.Style,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBeginLink(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ target, System::String ^ accessKey, System::Web::UI::MobileControls::Style ^ style, System::String ^ cssClass, System::String ^ title);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginLink : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string * System.Web.UI.MobileControls.Style * string * string -&gt; unit&#xA;override this.RenderBeginLink : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string * System.Web.UI.MobileControls.Style * string * string -&gt; unit" Usage="xhtmlControlAdapter.RenderBeginLink (writer, target, accessKey, style, cssClass, title)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1381,6 +1417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderClosingListTag(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderClosingListTag (writer As XhtmlMobileTextWriter, tagName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderClosingListTag(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ tagName);" />
+      <MemberSignature Language="F#" Value="abstract member RenderClosingListTag : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit&#xA;override this.RenderClosingListTag : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit" Usage="xhtmlControlAdapter.RenderClosingListTag (writer, tagName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1414,6 +1451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderEndLink (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderEndLink(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndLink : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.RenderEndLink : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlControlAdapter.RenderEndLink writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1444,6 +1482,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderOffPageVariables(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, class System.Web.UI.Control control, int32 page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderOffPageVariables(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderOffPageVariables(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::Web::UI::Control ^ control, int page);" />
+      <MemberSignature Language="F#" Value="member this.RenderOffPageVariables : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * System.Web.UI.Control * int -&gt; unit" Usage="xhtmlControlAdapter.RenderOffPageVariables (writer, control, page)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1482,6 +1521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderOpeningListTag(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderOpeningListTag (writer As XhtmlMobileTextWriter, tagName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderOpeningListTag(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ tagName);" />
+      <MemberSignature Language="F#" Value="abstract member RenderOpeningListTag : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit&#xA;override this.RenderOpeningListTag : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string -&gt; unit" Usage="xhtmlControlAdapter.RenderOpeningListTag (writer, tagName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1527,6 +1567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderPostBackEventAsAnchor(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderPostBackEventAsAnchor (writer As XhtmlMobileTextWriter, argument As String, linkText As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderPostBackEventAsAnchor(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ argument, System::String ^ linkText);" />
+      <MemberSignature Language="F#" Value="abstract member RenderPostBackEventAsAnchor : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string -&gt; unit&#xA;override this.RenderPostBackEventAsAnchor : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string -&gt; unit" Usage="xhtmlControlAdapter.RenderPostBackEventAsAnchor (writer, argument, linkText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1564,6 +1605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderPostBackEventAsAnchor(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderPostBackEventAsAnchor (writer As XhtmlMobileTextWriter, argument As String, linkText As String, accessKey As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderPostBackEventAsAnchor(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ argument, System::String ^ linkText, System::String ^ accessKey);" />
+      <MemberSignature Language="F#" Value="abstract member RenderPostBackEventAsAnchor : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string * string -&gt; unit&#xA;override this.RenderPostBackEventAsAnchor : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string * string -&gt; unit" Usage="xhtmlControlAdapter.RenderPostBackEventAsAnchor (writer, argument, linkText, accessKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1601,6 +1643,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderPostBackEventAsAnchor(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer, string argument, string linkText, string accessKey, class System.Web.UI.MobileControls.Style style, string cssClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.RenderPostBackEventAsAnchor(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String,System.String,System.String,System.Web.UI.MobileControls.Style,System.String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderPostBackEventAsAnchor(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ argument, System::String ^ linkText, System::String ^ accessKey, System::Web::UI::MobileControls::Style ^ style, System::String ^ cssClass);" />
+      <MemberSignature Language="F#" Value="abstract member RenderPostBackEventAsAnchor : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string * string * System.Web.UI.MobileControls.Style * string -&gt; unit&#xA;override this.RenderPostBackEventAsAnchor : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string * string * System.Web.UI.MobileControls.Style * string -&gt; unit" Usage="xhtmlControlAdapter.RenderPostBackEventAsAnchor (writer, argument, linkText, accessKey, style, cssClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1643,6 +1686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SaveAdapterState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SaveAdapterState () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ SaveAdapterState();" />
+      <MemberSignature Language="F#" Value="override this.SaveAdapterState : unit -&gt; obj" Usage="xhtmlControlAdapter.SaveAdapterState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1676,6 +1720,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property SecondaryUIMode As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int SecondaryUIMode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SecondaryUIMode : int with get, set" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1712,6 +1757,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.StyleSheetLocationAttributeValue" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property StyleSheetLocationAttributeValue As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ StyleSheetLocationAttributeValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StyleSheetLocationAttributeValue : string" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.StyleSheetLocationAttributeValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1740,6 +1786,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.StyleSheetStorageApplicationSetting" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property StyleSheetStorageApplicationSetting As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ StyleSheetStorageApplicationSetting { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StyleSheetStorageApplicationSetting : string" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.StyleSheetStorageApplicationSetting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

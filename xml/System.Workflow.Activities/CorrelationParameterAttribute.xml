@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CorrelationParameterAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CorrelationParameterAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class CorrelationParameterAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type CorrelationParameterAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CorrelationParameterAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CorrelationParameterAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.CorrelationParameterAttribute : string -&gt; System.Workflow.Activities.CorrelationParameterAttribute" Usage="new System.Workflow.Activities.CorrelationParameterAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.CorrelationParameterAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Workflow.Activities.CorrelationParameterAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.TargetFrameworkAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TargetFrameworkAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TargetFrameworkAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TargetFrameworkAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.TargetFrameworkAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (frameworkName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetFrameworkAttribute(System::String ^ frameworkName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Versioning.TargetFrameworkAttribute : string -&gt; System.Runtime.Versioning.TargetFrameworkAttribute" Usage="new System.Runtime.Versioning.TargetFrameworkAttribute frameworkName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameworkDisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FrameworkDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameworkDisplayName : string with get, set" Usage="System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameworkName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FrameworkName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FrameworkName : string" Usage="System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

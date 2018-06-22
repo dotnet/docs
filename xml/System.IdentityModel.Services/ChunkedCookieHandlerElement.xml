@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ChunkedCookieHandlerElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ChunkedCookieHandlerElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChunkedCookieHandlerElement : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ChunkedCookieHandlerElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.ChunkedCookieHandlerElement.ChunkSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ChunkSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChunkSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ChunkSize : int with get, set" Usage="System.IdentityModel.Services.ChunkedCookieHandlerElement.ChunkSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

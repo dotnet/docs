@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" />
   <TypeSignature Language="VB.NET" Value="Public Class DsmlSoapHttpConnection&#xA;Inherits DsmlSoapConnection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DsmlSoapHttpConnection : System::DirectoryServices::Protocols::DsmlSoapConnection" />
+  <TypeSignature Language="F#" Value="type DsmlSoapHttpConnection = class&#xA;    inherit DsmlSoapConnection" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identifier As DsmlDirectoryIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DsmlSoapHttpConnection(System::DirectoryServices::Protocols::DsmlDirectoryIdentifier ^ identifier);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DsmlSoapHttpConnection : System.DirectoryServices.Protocols.DsmlDirectoryIdentifier -&gt; System.DirectoryServices.Protocols.DsmlSoapHttpConnection" Usage="new System.DirectoryServices.Protocols.DsmlSoapHttpConnection identifier" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DsmlSoapHttpConnection(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DsmlSoapHttpConnection : Uri -&gt; System.DirectoryServices.Protocols.DsmlSoapHttpConnection" Usage="new System.DirectoryServices.Protocols.DsmlSoapHttpConnection uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier,System.Net.NetworkCredential)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identifier As DsmlDirectoryIdentifier, credential As NetworkCredential)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DsmlSoapHttpConnection(System::DirectoryServices::Protocols::DsmlDirectoryIdentifier ^ identifier, System::Net::NetworkCredential ^ credential);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DsmlSoapHttpConnection : System.DirectoryServices.Protocols.DsmlDirectoryIdentifier * System.Net.NetworkCredential -&gt; System.DirectoryServices.Protocols.DsmlSoapHttpConnection" Usage="new System.DirectoryServices.Protocols.DsmlSoapHttpConnection (identifier, credential)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.DsmlDirectoryIdentifier identifier, class System.Net.NetworkCredential credential, valuetype System.DirectoryServices.Protocols.AuthType authType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier,System.Net.NetworkCredential,System.DirectoryServices.Protocols.AuthType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DsmlSoapHttpConnection(System::DirectoryServices::Protocols::DsmlDirectoryIdentifier ^ identifier, System::Net::NetworkCredential ^ credential, System::DirectoryServices::Protocols::AuthType authType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DsmlSoapHttpConnection : System.DirectoryServices.Protocols.DsmlDirectoryIdentifier * System.Net.NetworkCredential * System.DirectoryServices.Protocols.AuthType -&gt; System.DirectoryServices.Protocols.DsmlSoapHttpConnection" Usage="new System.DirectoryServices.Protocols.DsmlSoapHttpConnection (identifier, credential, authType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.Abort(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.Abort : IAsyncResult -&gt; unit" Usage="dsmlSoapHttpConnection.Abort asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.AuthType" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthType As AuthType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::AuthType AuthType { System::DirectoryServices::Protocols::AuthType get(); void set(System::DirectoryServices::Protocols::AuthType value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthType : System.DirectoryServices.Protocols.AuthType with get, set" Usage="System.DirectoryServices.Protocols.DsmlSoapHttpConnection.AuthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSendRequest(System.DirectoryServices.Protocols.DsmlRequestDocument,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSendRequest (request As DsmlRequestDocument, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendRequest(System::DirectoryServices::Protocols::DsmlRequestDocument ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSendRequest : System.DirectoryServices.Protocols.DsmlRequestDocument * AsyncCallback * obj -&gt; IAsyncResult" Usage="dsmlSoapHttpConnection.BeginSendRequest (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -215,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSession" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginSession ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginSession();" />
+      <MemberSignature Language="F#" Value="override this.BeginSession : unit -&gt; unit" Usage="dsmlSoapHttpConnection.BeginSession " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -248,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.EndSendRequest(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndSendRequest (asyncResult As IAsyncResult) As DsmlResponseDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::Protocols::DsmlResponseDocument ^ EndSendRequest(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndSendRequest : IAsyncResult -&gt; System.DirectoryServices.Protocols.DsmlResponseDocument" Usage="dsmlSoapHttpConnection.EndSendRequest asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -277,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.EndSession" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndSession ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndSession();" />
+      <MemberSignature Language="F#" Value="override this.EndSession : unit -&gt; unit" Usage="dsmlSoapHttpConnection.EndSession " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -320,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SendRequest(System.DirectoryServices.Protocols.DirectoryRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SendRequest (request As DirectoryRequest) As DirectoryResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::Protocols::DirectoryResponse ^ SendRequest(System::DirectoryServices::Protocols::DirectoryRequest ^ request);" />
+      <MemberSignature Language="F#" Value="override this.SendRequest : System.DirectoryServices.Protocols.DirectoryRequest -&gt; System.DirectoryServices.Protocols.DirectoryResponse" Usage="dsmlSoapHttpConnection.SendRequest request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -351,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SendRequest(System.DirectoryServices.Protocols.DsmlRequestDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendRequest (request As DsmlRequestDocument) As DsmlResponseDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::Protocols::DsmlResponseDocument ^ SendRequest(System::DirectoryServices::Protocols::DsmlRequestDocument ^ request);" />
+      <MemberSignature Language="F#" Value="override this.SendRequest : System.DirectoryServices.Protocols.DsmlRequestDocument -&gt; System.DirectoryServices.Protocols.DsmlResponseDocument" Usage="dsmlSoapHttpConnection.SendRequest request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -380,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SessionId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SessionId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionId : string" Usage="System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -400,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SoapActionHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapActionHeader As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoapActionHeader { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapActionHeader : string with get, set" Usage="System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SoapActionHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -427,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Timeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property TimeSpan Timeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.DirectoryServices.Protocols.DsmlSoapHttpConnection.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

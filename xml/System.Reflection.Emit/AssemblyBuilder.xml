@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.AssemblyBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyBuilder&#xA;Inherits Assembly&#xA;Implements _AssemblyBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyBuilder sealed : System::Reflection::Assembly, System::Runtime::InteropServices::_AssemblyBuilder" />
+  <TypeSignature Language="F#" Value="type AssemblyBuilder = class&#xA;    inherit Assembly&#xA;    interface _AssemblyBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.AddResourceFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddResourceFile (name As String, fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResourceFile(System::String ^ name, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.AddResourceFile : string * string -&gt; unit" Usage="assemblyBuilder.AddResourceFile (name, fileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.AddResourceFile(System.String,System.String,System.Reflection.ResourceAttributes)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddResourceFile (name As String, fileName As String, attribute As ResourceAttributes)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResourceFile(System::String ^ name, System::String ^ fileName, System::Reflection::ResourceAttributes attribute);" />
+      <MemberSignature Language="F#" Value="member this.AddResourceFile : string * string * System.Reflection.ResourceAttributes -&gt; unit" Usage="assemblyBuilder.AddResourceFile (name, fileName, attribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -269,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.CodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CodeBase As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CodeBase { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeBase : string" Usage="System.Reflection.Emit.AssemblyBuilder.CodeBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -300,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.DefinedTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefinedTypes As IEnumerable(Of TypeInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::TypeInfo ^&gt; ^ DefinedTypes { System::Collections::Generic::IEnumerable&lt;System::Reflection::TypeInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefinedTypes : seq&lt;System.Reflection.TypeInfo&gt;" Usage="System.Reflection.Emit.AssemblyBuilder.DefinedTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -330,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DefineDynamicAssembly (name As AssemblyName, access As AssemblyBuilderAccess) As AssemblyBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access);" />
+      <MemberSignature Language="F#" Value="static member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly (name, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -363,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.Collections.Generic.IEnumerable{System.Reflection.Emit.CustomAttributeBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DefineDynamicAssembly (name As AssemblyName, access As AssemblyBuilderAccess, assemblyAttributes As IEnumerable(Of CustomAttributeBuilder)) As AssemblyBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::Collections::Generic::IEnumerable&lt;System::Reflection::Emit::CustomAttributeBuilder ^&gt; ^ assemblyAttributes);" />
+      <MemberSignature Language="F#" Value="static member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * seq&lt;System.Reflection.Emit.CustomAttributeBuilder&gt; -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly (name, access, assemblyAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -408,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDynamicModule (name As String) As ModuleBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ModuleBuilder ^ DefineDynamicModule(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.DefineDynamicModule : string -&gt; System.Reflection.Emit.ModuleBuilder" Usage="assemblyBuilder.DefineDynamicModule name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -484,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDynamicModule (name As String, emitSymbolInfo As Boolean) As ModuleBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ModuleBuilder ^ DefineDynamicModule(System::String ^ name, bool emitSymbolInfo);" />
+      <MemberSignature Language="F#" Value="member this.DefineDynamicModule : string * bool -&gt; System.Reflection.Emit.ModuleBuilder" Usage="assemblyBuilder.DefineDynamicModule (name, emitSymbolInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -557,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDynamicModule (name As String, fileName As String) As ModuleBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ModuleBuilder ^ DefineDynamicModule(System::String ^ name, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.DefineDynamicModule : string * string -&gt; System.Reflection.Emit.ModuleBuilder" Usage="assemblyBuilder.DefineDynamicModule (name, fileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -637,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDynamicModule (name As String, fileName As String, emitSymbolInfo As Boolean) As ModuleBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ModuleBuilder ^ DefineDynamicModule(System::String ^ name, System::String ^ fileName, bool emitSymbolInfo);" />
+      <MemberSignature Language="F#" Value="member this.DefineDynamicModule : string * string * bool -&gt; System.Reflection.Emit.ModuleBuilder" Usage="assemblyBuilder.DefineDynamicModule (name, fileName, emitSymbolInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -729,6 +740,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineResource(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineResource (name As String, description As String, fileName As String) As IResourceWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceWriter ^ DefineResource(System::String ^ name, System::String ^ description, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.DefineResource : string * string * string -&gt; System.Resources.IResourceWriter" Usage="assemblyBuilder.DefineResource (name, description, fileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -804,6 +816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineResource(System.String,System.String,System.String,System.Reflection.ResourceAttributes)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineResource (name As String, description As String, fileName As String, attribute As ResourceAttributes) As IResourceWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceWriter ^ DefineResource(System::String ^ name, System::String ^ description, System::String ^ fileName, System::Reflection::ResourceAttributes attribute);" />
+      <MemberSignature Language="F#" Value="member this.DefineResource : string * string * string * System.Reflection.ResourceAttributes -&gt; System.Resources.IResourceWriter" Usage="assemblyBuilder.DefineResource (name, description, fileName, attribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -878,6 +891,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineUnmanagedResource (resource As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineUnmanagedResource(cli::array &lt;System::Byte&gt; ^ resource);" />
+      <MemberSignature Language="F#" Value="member this.DefineUnmanagedResource : byte[] -&gt; unit" Usage="assemblyBuilder.DefineUnmanagedResource resource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -923,6 +937,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineUnmanagedResource (resourceFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineUnmanagedResource(System::String ^ resourceFileName);" />
+      <MemberSignature Language="F#" Value="member this.DefineUnmanagedResource : string -&gt; unit" Usage="assemblyBuilder.DefineUnmanagedResource resourceFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -996,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineVersionInfoResource ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineVersionInfoResource();" />
+      <MemberSignature Language="F#" Value="member this.DefineVersionInfoResource : unit -&gt; unit" Usage="assemblyBuilder.DefineVersionInfoResource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1047,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineVersionInfoResource (product As String, productVersion As String, company As String, copyright As String, trademark As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineVersionInfoResource(System::String ^ product, System::String ^ productVersion, System::String ^ company, System::String ^ copyright, System::String ^ trademark);" />
+      <MemberSignature Language="F#" Value="member this.DefineVersionInfoResource : string * string * string * string * string -&gt; unit" Usage="assemblyBuilder.DefineVersionInfoResource (product, productVersion, company, copyright, trademark)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1109,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.EntryPoint" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EntryPoint As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodInfo ^ EntryPoint { System::Reflection::MethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntryPoint : System.Reflection.MethodInfo" Usage="System.Reflection.Emit.AssemblyBuilder.EntryPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1132,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="assemblyBuilder.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1164,6 +1183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.Evidence" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Evidence As Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Policy::Evidence ^ Evidence { System::Security::Policy::Evidence ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Evidence : System.Security.Policy.Evidence" Usage="System.Reflection.Emit.AssemblyBuilder.Evidence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1184,6 +1204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.FullName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.Reflection.Emit.AssemblyBuilder.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1228,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="assemblyBuilder.GetCustomAttributes inherit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1253,6 +1275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="assemblyBuilder.GetCustomAttributes (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1284,6 +1307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetCustomAttributesData" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributesData () As IList(Of CustomAttributeData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeData ^&gt; ^ GetCustomAttributesData();" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributesData : unit -&gt; System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt;" Usage="assemblyBuilder.GetCustomAttributesData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1312,6 +1336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetDynamicModule(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDynamicModule (name As String) As ModuleBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ModuleBuilder ^ GetDynamicModule(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetDynamicModule : string -&gt; System.Reflection.Emit.ModuleBuilder" Usage="assemblyBuilder.GetDynamicModule name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1348,6 +1373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetExportedTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExportedTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;Type ^&gt; ^ GetExportedTypes();" />
+      <MemberSignature Language="F#" Value="override this.GetExportedTypes : unit -&gt; Type[]" Usage="assemblyBuilder.GetExportedTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1373,6 +1399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFile (name As String) As FileStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::FileStream ^ GetFile(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetFile : string -&gt; System.IO.FileStream" Usage="assemblyBuilder.GetFile name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1408,6 +1435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetFiles(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFiles (getResourceModules As Boolean) As FileStream()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::IO::FileStream ^&gt; ^ GetFiles(bool getResourceModules);" />
+      <MemberSignature Language="F#" Value="override this.GetFiles : bool -&gt; System.IO.FileStream[]" Usage="assemblyBuilder.GetFiles getResourceModules" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1437,6 +1465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="assemblyBuilder.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1465,6 +1494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetLoadedModules(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLoadedModules (getResourceModules As Boolean) As Module()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::Module ^&gt; ^ GetLoadedModules(bool getResourceModules);" />
+      <MemberSignature Language="F#" Value="override this.GetLoadedModules : bool -&gt; System.Reflection.Module[]" Usage="assemblyBuilder.GetLoadedModules getResourceModules" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1491,6 +1521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetManifestResourceInfo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetManifestResourceInfo (resourceName As String) As ManifestResourceInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::ManifestResourceInfo ^ GetManifestResourceInfo(System::String ^ resourceName);" />
+      <MemberSignature Language="F#" Value="override this.GetManifestResourceInfo : string -&gt; System.Reflection.ManifestResourceInfo" Usage="assemblyBuilder.GetManifestResourceInfo resourceName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1526,6 +1557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetManifestResourceNames" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetManifestResourceNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetManifestResourceNames();" />
+      <MemberSignature Language="F#" Value="override this.GetManifestResourceNames : unit -&gt; string[]" Usage="assemblyBuilder.GetManifestResourceNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1567,6 +1599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetManifestResourceStream(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetManifestResourceStream (name As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetManifestResourceStream(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetManifestResourceStream : string -&gt; System.IO.Stream" Usage="assemblyBuilder.GetManifestResourceStream name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1600,6 +1633,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetManifestResourceStream(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetManifestResourceStream(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetManifestResourceStream(Type ^ type, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetManifestResourceStream : Type * string -&gt; System.IO.Stream" Usage="assemblyBuilder.GetManifestResourceStream (type, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1642,6 +1676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetModule(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetModule (name As String) As Module" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::Module ^ GetModule(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetModule : string -&gt; System.Reflection.Module" Usage="assemblyBuilder.GetModule name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1667,6 +1702,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetModules(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetModules (getResourceModules As Boolean) As Module()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::Module ^&gt; ^ GetModules(bool getResourceModules);" />
+      <MemberSignature Language="F#" Value="override this.GetModules : bool -&gt; System.Reflection.Module[]" Usage="assemblyBuilder.GetModules getResourceModules" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1693,6 +1729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetName(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (copiedName As Boolean) As AssemblyName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::AssemblyName ^ GetName(bool copiedName);" />
+      <MemberSignature Language="F#" Value="override this.GetName : bool -&gt; System.Reflection.AssemblyName" Usage="assemblyBuilder.GetName copiedName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1719,6 +1756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetReferencedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReferencedAssemblies () As AssemblyName()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::AssemblyName ^&gt; ^ GetReferencedAssemblies();" />
+      <MemberSignature Language="F#" Value="override this.GetReferencedAssemblies : unit -&gt; System.Reflection.AssemblyName[]" Usage="assemblyBuilder.GetReferencedAssemblies " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1760,6 +1798,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetSatelliteAssembly(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSatelliteAssembly (culture As CultureInfo) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::Assembly ^ GetSatelliteAssembly(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.GetSatelliteAssembly : System.Globalization.CultureInfo -&gt; System.Reflection.Assembly" Usage="assemblyBuilder.GetSatelliteAssembly culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1798,6 +1837,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.Assembly GetSatelliteAssembly(class System.Globalization.CultureInfo culture, class System.Version version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetSatelliteAssembly(System.Globalization.CultureInfo,System.Version)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::Assembly ^ GetSatelliteAssembly(System::Globalization::CultureInfo ^ culture, Version ^ version);" />
+      <MemberSignature Language="F#" Value="override this.GetSatelliteAssembly : System.Globalization.CultureInfo * Version -&gt; System.Reflection.Assembly" Usage="assemblyBuilder.GetSatelliteAssembly (culture, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1839,6 +1879,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.GetType(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetType (name As String, throwOnError As Boolean, ignoreCase As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetType(System::String ^ name, bool throwOnError, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string * bool * bool -&gt; Type" Usage="assemblyBuilder.GetType (name, throwOnError, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1877,6 +1918,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.GlobalAssemblyCache" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property GlobalAssemblyCache As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool GlobalAssemblyCache { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlobalAssemblyCache : bool" Usage="System.Reflection.Emit.AssemblyBuilder.GlobalAssemblyCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1905,6 +1947,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.HostContext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HostContext As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long HostContext { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.HostContext : int64" Usage="System.Reflection.Emit.AssemblyBuilder.HostContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1925,6 +1968,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.ImageRuntimeVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ImageRuntimeVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ImageRuntimeVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageRuntimeVersion : string" Usage="System.Reflection.Emit.AssemblyBuilder.ImageRuntimeVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1948,6 +1992,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="assemblyBuilder.IsDefined (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1976,6 +2021,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.IsDynamic" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDynamic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDynamic { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDynamic : bool" Usage="System.Reflection.Emit.AssemblyBuilder.IsDynamic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -2010,6 +2056,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.Location" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Location As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Location { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : string" Usage="System.Reflection.Emit.AssemblyBuilder.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2034,6 +2081,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.ManifestModule" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ManifestModule As Module" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Module ^ ManifestModule { System::Reflection::Module ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManifestModule : System.Reflection.Module" Usage="System.Reflection.Emit.AssemblyBuilder.ManifestModule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -2061,6 +2109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.Modules" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Modules As IEnumerable(Of Module)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::Module ^&gt; ^ Modules { System::Collections::Generic::IEnumerable&lt;System::Reflection::Module ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Modules : seq&lt;System.Reflection.Module&gt;" Usage="System.Reflection.Emit.AssemblyBuilder.Modules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -2081,6 +2130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.PermissionSet" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PermissionSet As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::PermissionSet ^ PermissionSet { System::Security::PermissionSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionSet : System.Security.PermissionSet" Usage="System.Reflection.Emit.AssemblyBuilder.PermissionSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2114,6 +2164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.ReflectionOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectionOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReflectionOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReflectionOnly : bool" Usage="System.Reflection.Emit.AssemblyBuilder.ReflectionOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2158,6 +2209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.Save(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (assemblyFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ assemblyFileName);" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="assemblyBuilder.Save assemblyFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2232,6 +2284,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string assemblyFileName, valuetype System.Reflection.PortableExecutableKinds portableExecutableKind, valuetype System.Reflection.ImageFileMachine imageFileMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.Save(System.String,System.Reflection.PortableExecutableKinds,System.Reflection.ImageFileMachine)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ assemblyFileName, System::Reflection::PortableExecutableKinds portableExecutableKind, System::Reflection::ImageFileMachine imageFileMachine);" />
+      <MemberSignature Language="F#" Value="member this.Save : string * System.Reflection.PortableExecutableKinds * System.Reflection.ImageFileMachine -&gt; unit" Usage="assemblyBuilder.Save (assemblyFileName, portableExecutableKind, imageFileMachine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2302,6 +2355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.AssemblyBuilder.SecurityRuleSet" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecurityRuleSet As SecurityRuleSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::SecurityRuleSet SecurityRuleSet { System::Security::SecurityRuleSet get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityRuleSet : System.Security.SecurityRuleSet" Usage="System.Reflection.Emit.AssemblyBuilder.SecurityRuleSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2339,6 +2393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (customBuilder As CustomAttributeBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::Emit::CustomAttributeBuilder ^ customBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.Emit.CustomAttributeBuilder -&gt; unit" Usage="assemblyBuilder.SetCustomAttribute customBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -2394,6 +2449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (con As ConstructorInfo, binaryAttribute As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Byte&gt; ^ binaryAttribute);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.ConstructorInfo * byte[] -&gt; unit" Usage="assemblyBuilder.SetCustomAttribute (con, binaryAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -2471,6 +2527,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.SetEntryPoint(System.Reflection.MethodInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEntryPoint (entryMethod As MethodInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEntryPoint(System::Reflection::MethodInfo ^ entryMethod);" />
+      <MemberSignature Language="F#" Value="member this.SetEntryPoint : System.Reflection.MethodInfo -&gt; unit" Usage="assemblyBuilder.SetEntryPoint entryMethod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2501,6 +2558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.AssemblyBuilder.SetEntryPoint(System.Reflection.MethodInfo,System.Reflection.Emit.PEFileKinds)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEntryPoint (entryMethod As MethodInfo, fileKind As PEFileKinds)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEntryPoint(System::Reflection::MethodInfo ^ entryMethod, System::Reflection::Emit::PEFileKinds fileKind);" />
+      <MemberSignature Language="F#" Value="member this.SetEntryPoint : System.Reflection.MethodInfo * System.Reflection.Emit.PEFileKinds -&gt; unit" Usage="assemblyBuilder.SetEntryPoint (entryMethod, fileKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

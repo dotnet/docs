@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.HandleScope`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HandleScope(Of THandle)&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename THandle&gt;&#xA; where THandle : Handlepublic ref class HandleScope sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type HandleScope&lt;'Handle (requires 'Handle :&gt; Handle)&gt; = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.HandleScope`1.Body" />
       <MemberSignature Language="VB.NET" Value="Public Property Body As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Body { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Activities.Activity with get, set" Usage="System.Activities.Statements.HandleScope&lt;'Handle (requires 'Handle :&gt; System.Activities.Handle)&gt;.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.HandleScope`1.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="handleScope.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.HandleScope`1.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="handleScope.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.HandleScope`1.Handle" />
       <MemberSignature Language="VB.NET" Value="Public Property Handle As InArgument(Of THandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;THandle&gt; ^ Handle { System::Activities::InArgument&lt;THandle&gt; ^ get(); void set(System::Activities::InArgument&lt;THandle&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : System.Activities.InArgument&lt;'Handle (requires 'Handle :&gt; System.Activities.Handle)&gt; with get, set" Usage="System.Activities.Statements.HandleScope&lt;'Handle (requires 'Handle :&gt; System.Activities.Handle)&gt;.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

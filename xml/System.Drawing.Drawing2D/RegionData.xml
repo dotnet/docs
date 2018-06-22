@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.RegionData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegionData" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegionData sealed" />
+  <TypeSignature Language="F#" Value="type RegionData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.RegionData.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Data { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : byte[] with get, set" Usage="System.Drawing.Drawing2D.RegionData.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

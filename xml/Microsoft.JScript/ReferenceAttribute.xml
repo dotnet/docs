@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ReferenceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ReferenceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReferenceAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type ReferenceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ReferenceAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reference As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReferenceAttribute(System::String ^ reference);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.ReferenceAttribute : string -&gt; Microsoft.JScript.ReferenceAttribute" Usage="new Microsoft.JScript.ReferenceAttribute reference" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ReferenceAttribute.reference" />
       <MemberSignature Language="VB.NET" Value="Public reference As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ reference;" />
+      <MemberSignature Language="F#" Value="val mutable reference : string" Usage="Microsoft.JScript.ReferenceAttribute.reference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

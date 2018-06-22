@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.MessageProtectionOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageProtectionOrder" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageProtectionOrder" />
+  <TypeSignature Language="F#" Value="type MessageProtectionOrder = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.MessageProtectionOrder.EncryptBeforeSign" />
       <MemberSignature Language="VB.NET" Value="EncryptBeforeSign" />
       <MemberSignature Language="C++ CLI" Value="EncryptBeforeSign" />
+      <MemberSignature Language="F#" Value="EncryptBeforeSign = 2" Usage="System.ServiceModel.Security.MessageProtectionOrder.EncryptBeforeSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt" />
       <MemberSignature Language="VB.NET" Value="SignBeforeEncrypt" />
       <MemberSignature Language="C++ CLI" Value="SignBeforeEncrypt" />
+      <MemberSignature Language="F#" Value="SignBeforeEncrypt = 0" Usage="System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature" />
       <MemberSignature Language="VB.NET" Value="SignBeforeEncryptAndEncryptSignature" />
       <MemberSignature Language="C++ CLI" Value="SignBeforeEncryptAndEncryptSignature" />
+      <MemberSignature Language="F#" Value="SignBeforeEncryptAndEncryptSignature = 1" Usage="System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAssignStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeAssignStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeAssignStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeAssignStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAssignStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (left As CodeExpression, right As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAssignStatement(System::CodeDom::CodeExpression ^ left, System::CodeDom::CodeExpression ^ right);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAssignStatement : System.CodeDom.CodeExpression * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAssignStatement" Usage="new System.CodeDom.CodeAssignStatement (left, right)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAssignStatement.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Left { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeAssignStatement.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAssignStatement.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Right { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Right : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeAssignStatement.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

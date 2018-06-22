@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Sources.IValueTaskSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IValueTaskSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IValueTaskSource" />
+  <TypeSignature Language="F#" Value="type IValueTaskSource = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Sources.IValueTaskSource.GetResult(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetResult (token As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetResult(short token);" />
+      <MemberSignature Language="F#" Value="abstract member GetResult : int16 -&gt; unit" Usage="iValueTaskSource.GetResult token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Sources.IValueTaskSource.GetStatus(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStatus (token As Short) As ValueTaskSourceStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Sources::ValueTaskSourceStatus GetStatus(short token);" />
+      <MemberSignature Language="F#" Value="abstract member GetStatus : int16 -&gt; System.Threading.Tasks.Sources.ValueTaskSourceStatus" Usage="iValueTaskSource.GetStatus token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Sources.IValueTaskSource.OnCompleted(System.Action{System.Object},System.Object,System.Int16,System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted (continuation As Action(Of Object), state As Object, token As Short, flags As ValueTaskSourceOnCompletedFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnCompleted(Action&lt;System::Object ^&gt; ^ continuation, System::Object ^ state, short token, System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags flags);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : Action&lt;obj&gt; * obj * int16 * System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags -&gt; unit" Usage="iValueTaskSource.OnCompleted (continuation, state, token, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

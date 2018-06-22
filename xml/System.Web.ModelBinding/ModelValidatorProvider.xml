@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidatorProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelValidatorProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelValidatorProvider abstract" />
+  <TypeSignature Language="F#" Value="type ModelValidatorProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProvider.GetValidators(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValidators (metadata As ModelMetadata, context As ModelBindingExecutionContext) As IEnumerable(Of ModelValidator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelValidator ^&gt; ^ GetValidators(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetValidators : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext -&gt; seq&lt;System.Web.ModelBinding.ModelValidator&gt;" Usage="modelValidatorProvider.GetValidators (metadata, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

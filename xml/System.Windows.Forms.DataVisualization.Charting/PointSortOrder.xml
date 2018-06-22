@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.PointSortOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum PointSortOrder" />
   <TypeSignature Language="C++ CLI" Value="public enum class PointSortOrder" />
+  <TypeSignature Language="F#" Value="type PointSortOrder = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.PointSortOrder.Ascending" />
       <MemberSignature Language="VB.NET" Value="Ascending" />
       <MemberSignature Language="C++ CLI" Value="Ascending" />
+      <MemberSignature Language="F#" Value="Ascending = 0" Usage="System.Windows.Forms.DataVisualization.Charting.PointSortOrder.Ascending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.PointSortOrder.Descending" />
       <MemberSignature Language="VB.NET" Value="Descending" />
       <MemberSignature Language="C++ CLI" Value="Descending" />
+      <MemberSignature Language="F#" Value="Descending = 1" Usage="System.Windows.Forms.DataVisualization.Charting.PointSortOrder.Descending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsAttributeDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class SettingsAttributeDictionary&#xA;Inherits Hashtable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsAttributeDictionary : System::Collections::Hashtable" />
+  <TypeSignature Language="F#" Value="type SettingsAttributeDictionary = class&#xA;    inherit Hashtable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsAttributeDictionary.#ctor(System.Configuration.SettingsAttributeDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributes As SettingsAttributeDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsAttributeDictionary(System::Configuration::SettingsAttributeDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsAttributeDictionary : System.Configuration.SettingsAttributeDictionary -&gt; System.Configuration.SettingsAttributeDictionary" Usage="new System.Configuration.SettingsAttributeDictionary attributes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

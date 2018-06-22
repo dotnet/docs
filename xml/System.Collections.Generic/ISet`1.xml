@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.ISet`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISet(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class ISet : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ISet&lt;'T&gt; = interface&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Add(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; bool" Usage="iSet.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExceptWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member ExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="iSet.ExceptWith other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub IntersectWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IntersectWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IntersectWith : seq&lt;'T&gt; -&gt; unit" Usage="iSet.IntersectWith other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsProperSubsetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsProperSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="iSet.IsProperSubsetOf other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsProperSupersetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsProperSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="iSet.IsProperSupersetOf other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -287,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="iSet.IsSubsetOf other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -337,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSupersetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="iSet.IsSupersetOf other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -387,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Overlaps (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Overlaps(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member Overlaps : seq&lt;'T&gt; -&gt; bool" Usage="iSet.Overlaps other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -435,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function SetEquals (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetEquals(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member SetEquals : seq&lt;'T&gt; -&gt; bool" Usage="iSet.SetEquals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -483,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SymmetricExceptWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SymmetricExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="iSet.SymmetricExceptWith other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -529,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnionWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnionWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member UnionWith : seq&lt;'T&gt; -&gt; unit" Usage="iSet.UnionWith other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

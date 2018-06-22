@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NonDualMessageSecurityOverHttpElement&#xA;Inherits MessageSecurityOverHttpElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class NonDualMessageSecurityOverHttpElement sealed : System::ServiceModel::Configuration::MessageSecurityOverHttpElement" />
+  <TypeSignature Language="F#" Value="type NonDualMessageSecurityOverHttpElement = class&#xA;    inherit MessageSecurityOverHttpElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.EstablishSecurityContext" />
       <MemberSignature Language="VB.NET" Value="Public Property EstablishSecurityContext As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EstablishSecurityContext { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EstablishSecurityContext : bool with get, set" Usage="System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.EstablishSecurityContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

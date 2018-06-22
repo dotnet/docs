@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.ScriptIgnoreAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptIgnoreAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptIgnoreAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ScriptIgnoreAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Serialization.ScriptIgnoreAttribute.ApplyToOverrides" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyToOverrides As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyToOverrides { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyToOverrides : bool with get, set" Usage="System.Web.Script.Serialization.ScriptIgnoreAttribute.ApplyToOverrides" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

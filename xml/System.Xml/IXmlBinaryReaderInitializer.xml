@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlBinaryReaderInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXmlBinaryReaderInitializer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXmlBinaryReaderInitializer" />
+  <TypeSignature Language="F#" Value="type IXmlBinaryReaderInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInput(class System.IO.Stream stream, class System.Xml.IXmlDictionary dictionary, class System.Xml.XmlDictionaryReaderQuotas quotas, class System.Xml.XmlBinaryReaderSession session, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlBinaryReaderInitializer.SetInput(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession,System.Xml.OnXmlDictionaryReaderClose)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInput(System::IO::Stream ^ stream, System::Xml::IXmlDictionary ^ dictionary, System::Xml::XmlDictionaryReaderQuotas ^ quotas, System::Xml::XmlBinaryReaderSession ^ session, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
+      <MemberSignature Language="F#" Value="abstract member SetInput : System.IO.Stream * System.Xml.IXmlDictionary * System.Xml.XmlDictionaryReaderQuotas * System.Xml.XmlBinaryReaderSession * System.Xml.OnXmlDictionaryReaderClose -&gt; unit" Usage="iXmlBinaryReaderInitializer.SetInput (stream, dictionary, quotas, session, onClose)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlBinaryReaderInitializer.SetInput(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession,System.Xml.OnXmlDictionaryReaderClose)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetInput (buffer As Byte(), offset As Integer, count As Integer, dictionary As IXmlDictionary, quotas As XmlDictionaryReaderQuotas, session As XmlBinaryReaderSession, onClose As OnXmlDictionaryReaderClose)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInput(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Xml::IXmlDictionary ^ dictionary, System::Xml::XmlDictionaryReaderQuotas ^ quotas, System::Xml::XmlBinaryReaderSession ^ session, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
+      <MemberSignature Language="F#" Value="abstract member SetInput : byte[] * int * int * System.Xml.IXmlDictionary * System.Xml.XmlDictionaryReaderQuotas * System.Xml.XmlBinaryReaderSession * System.Xml.OnXmlDictionaryReaderClose -&gt; unit" Usage="iXmlBinaryReaderInitializer.SetInput (buffer, offset, count, dictionary, quotas, session, onClose)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

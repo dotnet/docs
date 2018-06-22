@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonTabHeaderItemsControlAutomationPeer&#xA;Inherits ItemsControlAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonTabHeaderItemsControlAutomationPeer : System::Windows::Automation::Peers::ItemsControlAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonTabHeaderItemsControlAutomationPeer = class&#xA;    inherit ItemsControlAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonTabHeaderItemsControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonTabHeaderItemsControlAutomationPeer(System::Windows::Controls::Ribbon::RibbonTabHeaderItemsControl ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer : System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl -&gt; System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="ribbonTabHeaderItemsControlAutomationPeer.CreateItemAutomationPeer item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

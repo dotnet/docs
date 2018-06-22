@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpWorkerRequest.EndOfSendNotification" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub HttpWorkerRequest.EndOfSendNotification(wr As HttpWorkerRequest, extraData As Object)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void HttpWorkerRequest::EndOfSendNotification(HttpWorkerRequest ^ wr, System::Object ^ extraData);" />
+  <TypeSignature Language="F#" Value="type HttpWorkerRequest.EndOfSendNotification = delegate of HttpWorkerRequest * obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

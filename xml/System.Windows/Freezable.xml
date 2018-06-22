@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Freezable" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Freezable&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class Freezable abstract : System::Windows::DependencyObject" />
+  <TypeSignature Language="F#" Value="type Freezable = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Freezable.CanFreeze" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanFreeze As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanFreeze { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanFreeze : bool" Usage="System.Windows.Freezable.CanFreeze" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Freezable.Changed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Changed;" />
+      <MemberSignature Language="F#" Value="member this.Changed : EventHandler " Usage="member this.Changed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Freezable ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Freezable" Usage="freezable.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="freezable.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Freezable ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Freezable" Usage="freezable.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="freezable.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -341,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CreateInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateInstance () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Freezable ^ CreateInstance();" />
+      <MemberSignature Language="F#" Value="member this.CreateInstance : unit -&gt; System.Windows.Freezable" Usage="freezable.CreateInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -370,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="freezable.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -419,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.Freeze" />
       <MemberSignature Language="VB.NET" Value="Public Sub Freeze ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Freeze();" />
+      <MemberSignature Language="F#" Value="member this.Freeze : unit -&gt; unit" Usage="freezable.Freeze " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -450,6 +460,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig bool Freeze(class System.Windows.Freezable freezable, bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.Freeze(System.Windows.Freezable,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static bool Freeze(System::Windows::Freezable ^ freezable, bool isChecking);" />
+      <MemberSignature Language="F#" Value="static member Freeze : System.Windows.Freezable * bool -&gt; bool" Usage="System.Windows.Freezable.Freeze (freezable, isChecking)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -491,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool FreezeCore(bool isChecking);" />
+      <MemberSignature Language="F#" Value="abstract member FreezeCore : bool -&gt; bool&#xA;override this.FreezeCore : bool -&gt; bool" Usage="freezable.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -531,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.GetAsFrozen" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAsFrozen () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Freezable ^ GetAsFrozen();" />
+      <MemberSignature Language="F#" Value="member this.GetAsFrozen : unit -&gt; System.Windows.Freezable" Usage="freezable.GetAsFrozen " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -577,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="freezable.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -625,6 +639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.GetCurrentValueAsFrozen" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentValueAsFrozen () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Freezable ^ GetCurrentValueAsFrozen();" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentValueAsFrozen : unit -&gt; System.Windows.Freezable" Usage="freezable.GetCurrentValueAsFrozen " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -671,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="freezable.GetCurrentValueAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -719,6 +735,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Freezable.IsFrozen" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFrozen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFrozen { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFrozen : bool" Usage="System.Windows.Freezable.IsFrozen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -749,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.OnChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnChanged : unit -&gt; unit&#xA;override this.OnChanged : unit -&gt; unit" Usage="freezable.OnChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -789,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnFreezablePropertyChanged (oldValue As DependencyObject, newValue As DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnFreezablePropertyChanged(System::Windows::DependencyObject ^ oldValue, System::Windows::DependencyObject ^ newValue);" />
+      <MemberSignature Language="F#" Value="member this.OnFreezablePropertyChanged : System.Windows.DependencyObject * System.Windows.DependencyObject -&gt; unit" Usage="freezable.OnFreezablePropertyChanged (oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -823,6 +842,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnFreezablePropertyChanged (oldValue As DependencyObject, newValue As DependencyObject, property As DependencyProperty)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnFreezablePropertyChanged(System::Windows::DependencyObject ^ oldValue, System::Windows::DependencyObject ^ newValue, System::Windows::DependencyProperty ^ property);" />
+      <MemberSignature Language="F#" Value="member this.OnFreezablePropertyChanged : System.Windows.DependencyObject * System.Windows.DependencyObject * System.Windows.DependencyProperty -&gt; unit" Usage="freezable.OnFreezablePropertyChanged (oldValue, newValue, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -850,6 +870,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="freezable.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -880,6 +901,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.ReadPreamble" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ReadPreamble ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ReadPreamble();" />
+      <MemberSignature Language="F#" Value="member this.ReadPreamble : unit -&gt; unit" Usage="freezable.ReadPreamble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -906,6 +928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.WritePostscript" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WritePostscript ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WritePostscript();" />
+      <MemberSignature Language="F#" Value="member this.WritePostscript : unit -&gt; unit" Usage="freezable.WritePostscript " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -929,6 +952,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Freezable.WritePreamble" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WritePreamble ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WritePreamble();" />
+      <MemberSignature Language="F#" Value="member this.WritePreamble : unit -&gt; unit" Usage="freezable.WritePreamble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

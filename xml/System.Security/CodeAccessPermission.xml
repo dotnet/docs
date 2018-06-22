@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.CodeAccessPermission" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeAccessPermission&#xA;Implements IPermission, IStackWalk" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeAccessPermission abstract : System::Security::IPermission, System::Security::IStackWalk" />
+  <TypeSignature Language="F#" Value="type CodeAccessPermission = class&#xA;    interface IPermission&#xA;    interface ISecurityEncodable&#xA;    interface IStackWalk" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.Assert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Assert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Assert();" />
+      <MemberSignature Language="F#" Value="abstract member Assert : unit -&gt; unit&#xA;override this.Assert : unit -&gt; unit" Usage="codeAccessPermission.Assert " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IStackWalk.Assert</InterfaceMember>
@@ -150,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission" Usage="codeAccessPermission.Copy " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IPermission.Copy</InterfaceMember>
@@ -198,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.Demand" />
       <MemberSignature Language="VB.NET" Value="Public Sub Demand ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Demand();" />
+      <MemberSignature Language="F#" Value="abstract member Demand : unit -&gt; unit&#xA;override this.Demand : unit -&gt; unit" Usage="codeAccessPermission.Demand " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IPermission.Demand</InterfaceMember>
@@ -244,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.Deny" />
       <MemberSignature Language="VB.NET" Value="Public Sub Deny ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Deny();" />
+      <MemberSignature Language="F#" Value="abstract member Deny : unit -&gt; unit&#xA;override this.Deny : unit -&gt; unit" Usage="codeAccessPermission.Deny " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IStackWalk.Deny</InterfaceMember>
@@ -291,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="codeAccessPermission.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -333,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub FromXml (elem As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void FromXml(System::Security::SecurityElement ^ elem);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit" Usage="codeAccessPermission.FromXml elem" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
@@ -389,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="codeAccessPermission.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -427,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="codeAccessPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IPermission.Intersect(System.Security.IPermission)</InterfaceMember>
@@ -479,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="codeAccessPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IPermission.IsSubsetOf(System.Security.IPermission)</InterfaceMember>
@@ -548,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.PermitOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub PermitOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PermitOnly();" />
+      <MemberSignature Language="F#" Value="abstract member PermitOnly : unit -&gt; unit&#xA;override this.PermitOnly : unit -&gt; unit" Usage="codeAccessPermission.PermitOnly " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IStackWalk.PermitOnly</InterfaceMember>
@@ -595,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.RevertAll" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RevertAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RevertAll();" />
+      <MemberSignature Language="F#" Value="static member RevertAll : unit -&gt; unit" Usage="System.Security.CodeAccessPermission.RevertAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -628,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.RevertAssert" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RevertAssert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RevertAssert();" />
+      <MemberSignature Language="F#" Value="static member RevertAssert : unit -&gt; unit" Usage="System.Security.CodeAccessPermission.RevertAssert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -661,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.RevertDeny" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RevertDeny ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RevertDeny();" />
+      <MemberSignature Language="F#" Value="static member RevertDeny : unit -&gt; unit" Usage="System.Security.CodeAccessPermission.RevertDeny " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -694,6 +708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.RevertPermitOnly" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RevertPermitOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RevertPermitOnly();" />
+      <MemberSignature Language="F#" Value="static member RevertPermitOnly : unit -&gt; unit" Usage="System.Security.CodeAccessPermission.RevertPermitOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -842,6 +857,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="codeAccessPermission.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -875,6 +891,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement" Usage="codeAccessPermission.ToXml " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
@@ -923,6 +940,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.CodeAccessPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Union (other As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="codeAccessPermission.Union other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IPermission.Union(System.Security.IPermission)</InterfaceMember>

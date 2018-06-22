@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceController" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceController&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceController : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type ServiceController = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceController(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceController : string -&gt; System.ServiceProcess.ServiceController" Usage="new System.ServiceProcess.ServiceController name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, machineName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceController(System::String ^ name, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceController : string * string -&gt; System.ServiceProcess.ServiceController" Usage="new System.ServiceProcess.ServiceController (name, machineName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanPauseAndContinue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanPauseAndContinue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanPauseAndContinue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanPauseAndContinue : bool" Usage="System.ServiceProcess.ServiceController.CanPauseAndContinue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -215,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanShutdown" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanShutdown As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanShutdown { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanShutdown : bool" Usage="System.ServiceProcess.ServiceController.CanShutdown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -261,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.CanStop" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanStop As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanStop { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanStop : bool" Usage="System.ServiceProcess.ServiceController.CanStop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -307,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="serviceController.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -334,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Continue" />
       <MemberSignature Language="VB.NET" Value="Public Sub Continue ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Continue();" />
+      <MemberSignature Language="F#" Value="member this.Continue : unit -&gt; unit" Usage="serviceController.Continue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -383,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.DependentServices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependentServices As ServiceController()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ DependentServices { cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DependentServices : System.ServiceProcess.ServiceController[]" Usage="System.ServiceProcess.ServiceController.DependentServices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -435,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.ServiceProcess.ServiceController.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -490,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="serviceController.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -514,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="serviceController.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -558,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.ExecuteCommand(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExecuteCommand (command As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecuteCommand(int command);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteCommand : int -&gt; unit" Usage="serviceController.ExecuteCommand command" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -611,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetDevices" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDevices () As ServiceController()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ GetDevices();" />
+      <MemberSignature Language="F#" Value="static member GetDevices : unit -&gt; System.ServiceProcess.ServiceController[]" Usage="System.ServiceProcess.ServiceController.GetDevices " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -655,6 +669,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetDevices(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDevices (machineName As String) As ServiceController()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ GetDevices(System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member GetDevices : string -&gt; System.ServiceProcess.ServiceController[]" Usage="System.ServiceProcess.ServiceController.GetDevices machineName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -704,6 +719,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetServices" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetServices () As ServiceController()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ GetServices();" />
+      <MemberSignature Language="F#" Value="static member GetServices : unit -&gt; System.ServiceProcess.ServiceController[]" Usage="System.ServiceProcess.ServiceController.GetServices " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -748,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.GetServices(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetServices (machineName As String) As ServiceController()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ GetServices(System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member GetServices : string -&gt; System.ServiceProcess.ServiceController[]" Usage="System.ServiceProcess.ServiceController.GetServices machineName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -787,6 +804,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.ServiceProcess.ServiceController.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -834,6 +852,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Pause" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
+      <MemberSignature Language="F#" Value="member this.Pause : unit -&gt; unit" Usage="serviceController.Pause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -881,6 +900,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="serviceController.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -921,6 +941,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceHandle As SafeHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::SafeHandle ^ ServiceHandle { System::Runtime::InteropServices::SafeHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceHandle : System.Runtime.InteropServices.SafeHandle" Usage="System.ServiceProcess.ServiceController.ServiceHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -956,6 +977,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceName" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceName : string with get, set" Usage="System.ServiceProcess.ServiceController.ServiceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1012,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServicesDependedOn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicesDependedOn As ServiceController()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ ServicesDependedOn { cli::array &lt;System::ServiceProcess::ServiceController ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServicesDependedOn : System.ServiceProcess.ServiceController[]" Usage="System.ServiceProcess.ServiceController.ServicesDependedOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1064,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.ServiceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceType As ServiceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceType ServiceType { System::ServiceProcess::ServiceType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceType : System.ServiceProcess.ServiceType" Usage="System.ServiceProcess.ServiceController.ServiceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1126,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="serviceController.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1173,6 +1198,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Start(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start (args As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(cli::array &lt;System::String ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.Start : string[] -&gt; unit" Usage="serviceController.Start args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1220,6 +1246,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.StartType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartType As ServiceStartMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceStartMode StartType { System::ServiceProcess::ServiceStartMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartType : System.ServiceProcess.ServiceStartMode" Usage="System.ServiceProcess.ServiceController.StartType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1256,6 +1283,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceController.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As ServiceControllerStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceControllerStatus Status { System::ServiceProcess::ServiceControllerStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.ServiceProcess.ServiceControllerStatus" Usage="System.ServiceProcess.ServiceController.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1307,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="serviceController.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1367,6 +1396,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WaitForStatus (desiredStatus As ServiceControllerStatus)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WaitForStatus(System::ServiceProcess::ServiceControllerStatus desiredStatus);" />
+      <MemberSignature Language="F#" Value="member this.WaitForStatus : System.ServiceProcess.ServiceControllerStatus -&gt; unit" Usage="serviceController.WaitForStatus desiredStatus" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -1416,6 +1446,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WaitForStatus (desiredStatus As ServiceControllerStatus, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WaitForStatus(System::ServiceProcess::ServiceControllerStatus desiredStatus, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.WaitForStatus : System.ServiceProcess.ServiceControllerStatus * TimeSpan -&gt; unit" Usage="serviceController.WaitForStatus (desiredStatus, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>

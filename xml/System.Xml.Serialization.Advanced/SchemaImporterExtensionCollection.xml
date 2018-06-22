@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SchemaImporterExtensionCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class SchemaImporterExtensionCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type SchemaImporterExtensionCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Add(System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (extension As SchemaImporterExtension) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Xml.Serialization.Advanced.SchemaImporterExtension -&gt; int" Usage="schemaImporterExtensionCollection.Add extension" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(string name, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Add(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ name, Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * Type -&gt; int" Usage="schemaImporterExtensionCollection.Add (name, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="schemaImporterExtensionCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Contains(System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (extension As SchemaImporterExtension) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Xml.Serialization.Advanced.SchemaImporterExtension -&gt; bool" Usage="schemaImporterExtensionCollection.Contains extension" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.CopyTo(System.Xml.Serialization.Advanced.SchemaImporterExtension[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As SchemaImporterExtension(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Xml::Serialization::Advanced::SchemaImporterExtension ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Xml.Serialization.Advanced.SchemaImporterExtension[] * int -&gt; unit" Usage="schemaImporterExtensionCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.IndexOf(System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (extension As SchemaImporterExtension) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Xml.Serialization.Advanced.SchemaImporterExtension -&gt; int" Usage="schemaImporterExtensionCollection.IndexOf extension" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Insert(System.Int32,System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, extension As SchemaImporterExtension)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Xml.Serialization.Advanced.SchemaImporterExtension -&gt; unit" Usage="schemaImporterExtensionCollection.Insert (index, extension)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As SchemaImporterExtension" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Advanced::SchemaImporterExtension ^ default[int] { System::Xml::Serialization::Advanced::SchemaImporterExtension ^ get(int index); void set(int index, System::Xml::Serialization::Advanced::SchemaImporterExtension ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Xml.Serialization.Advanced.SchemaImporterExtension with get, set" Usage="System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="schemaImporterExtensionCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -281,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Remove(System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (extension As SchemaImporterExtension)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Xml.Serialization.Advanced.SchemaImporterExtension -&gt; unit" Usage="schemaImporterExtensionCollection.Remove extension" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

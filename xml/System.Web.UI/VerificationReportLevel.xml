@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationReportLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum VerificationReportLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class VerificationReportLevel" />
+  <TypeSignature Language="F#" Value="type VerificationReportLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationReportLevel.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 0" Usage="System.Web.UI.VerificationReportLevel.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationReportLevel.Guideline" />
       <MemberSignature Language="VB.NET" Value="Guideline" />
       <MemberSignature Language="C++ CLI" Value="Guideline" />
+      <MemberSignature Language="F#" Value="Guideline = 2" Usage="System.Web.UI.VerificationReportLevel.Guideline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationReportLevel.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 1" Usage="System.Web.UI.VerificationReportLevel.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

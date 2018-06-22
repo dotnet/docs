@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.GrammarBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class GrammarBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class GrammarBuilder" />
+  <TypeSignature Language="F#" Value="type GrammarBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -191,6 +192,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.#ctor(System.Speech.Recognition.Choices)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (alternateChoices As Choices)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GrammarBuilder(System::Speech::Recognition::Choices ^ alternateChoices);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.GrammarBuilder : System.Speech.Recognition.Choices -&gt; System.Speech.Recognition.GrammarBuilder" Usage="new System.Speech.Recognition.GrammarBuilder alternateChoices" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -256,6 +258,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.#ctor(System.Speech.Recognition.SemanticResultKey)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As SemanticResultKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GrammarBuilder(System::Speech::Recognition::SemanticResultKey ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.GrammarBuilder : System.Speech.Recognition.SemanticResultKey -&gt; System.Speech.Recognition.GrammarBuilder" Usage="new System.Speech.Recognition.GrammarBuilder key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -345,6 +348,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.#ctor(System.Speech.Recognition.SemanticResultValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SemanticResultValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GrammarBuilder(System::Speech::Recognition::SemanticResultValue ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.GrammarBuilder : System.Speech.Recognition.SemanticResultValue -&gt; System.Speech.Recognition.GrammarBuilder" Usage="new System.Speech.Recognition.GrammarBuilder value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -434,6 +438,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (phrase As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GrammarBuilder(System::String ^ phrase);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.GrammarBuilder : string -&gt; System.Speech.Recognition.GrammarBuilder" Usage="new System.Speech.Recognition.GrammarBuilder phrase" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -499,6 +504,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.#ctor(System.String,System.Speech.Recognition.SubsetMatchingMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (phrase As String, subsetMatchingCriteria As SubsetMatchingMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GrammarBuilder(System::String ^ phrase, System::Speech::Recognition::SubsetMatchingMode subsetMatchingCriteria);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.GrammarBuilder : string * System.Speech.Recognition.SubsetMatchingMode -&gt; System.Speech.Recognition.GrammarBuilder" Usage="new System.Speech.Recognition.GrammarBuilder (phrase, subsetMatchingCriteria)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -589,6 +595,7 @@ private static string BreakAtCaps(string item)
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.#ctor(System.Speech.Recognition.GrammarBuilder,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As GrammarBuilder, minRepeat As Integer, maxRepeat As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GrammarBuilder(System::Speech::Recognition::GrammarBuilder ^ builder, int minRepeat, int maxRepeat);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.GrammarBuilder : System.Speech.Recognition.GrammarBuilder * int * int -&gt; System.Speech.Recognition.GrammarBuilder" Usage="new System.Speech.Recognition.GrammarBuilder (builder, minRepeat, maxRepeat)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -660,6 +667,7 @@ private static Grammar CreatePizzaGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.#ctor(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (phrase As String, minRepeat As Integer, maxRepeat As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GrammarBuilder(System::String ^ phrase, int minRepeat, int maxRepeat);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.GrammarBuilder : string * int * int -&gt; System.Speech.Recognition.GrammarBuilder" Usage="new System.Speech.Recognition.GrammarBuilder (phrase, minRepeat, maxRepeat)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -751,6 +759,7 @@ private static Grammar CreatePizzaGrammar()
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Speech.Recognition.GrammarBuilder Add(class System.Speech.Recognition.Choices choices, class System.Speech.Recognition.GrammarBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ Add(System::Speech::Recognition::Choices ^ choices, System::Speech::Recognition::GrammarBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Speech.Recognition.Choices * System.Speech.Recognition.GrammarBuilder -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.Add (choices, builder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -801,6 +810,7 @@ private static Grammar CreatePizzaGrammar()
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Speech.Recognition.GrammarBuilder Add(class System.Speech.Recognition.GrammarBuilder builder, class System.Speech.Recognition.Choices choices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.GrammarBuilder,System.Speech.Recognition.Choices)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ Add(System::Speech::Recognition::GrammarBuilder ^ builder, System::Speech::Recognition::Choices ^ choices);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Speech.Recognition.GrammarBuilder * System.Speech.Recognition.Choices -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.Add (builder, choices)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -882,6 +892,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.GrammarBuilder,System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (builder1 As GrammarBuilder, builder2 As GrammarBuilder) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ Add(System::Speech::Recognition::GrammarBuilder ^ builder1, System::Speech::Recognition::GrammarBuilder ^ builder2);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Speech.Recognition.GrammarBuilder * System.Speech.Recognition.GrammarBuilder -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.Add (builder1, builder2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -963,6 +974,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.GrammarBuilder,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (builder As GrammarBuilder, phrase As String) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ Add(System::Speech::Recognition::GrammarBuilder ^ builder, System::String ^ phrase);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Speech.Recognition.GrammarBuilder * string -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.Add (builder, phrase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1041,6 +1053,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Add(System.String,System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (phrase As String, builder As GrammarBuilder) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ Add(System::String ^ phrase, System::Speech::Recognition::GrammarBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="static member Add : string * System.Speech.Recognition.GrammarBuilder -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.Add (phrase, builder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1143,6 +1156,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (alternateChoices As Choices)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::Speech::Recognition::Choices ^ alternateChoices);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Speech.Recognition.Choices -&gt; unit" Usage="grammarBuilder.Append alternateChoices" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1218,6 +1232,7 @@ public static Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (builder As GrammarBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::Speech::Recognition::GrammarBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Speech.Recognition.GrammarBuilder -&gt; unit" Usage="grammarBuilder.Append builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1296,6 +1311,7 @@ public static Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.SemanticResultKey)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (key As SemanticResultKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::Speech::Recognition::SemanticResultKey ^ key);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Speech.Recognition.SemanticResultKey -&gt; unit" Usage="grammarBuilder.Append key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1413,6 +1429,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.SemanticResultValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (value As SemanticResultValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::Speech::Recognition::SemanticResultValue ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Speech.Recognition.SemanticResultValue -&gt; unit" Usage="grammarBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1542,6 +1559,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Append(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (phrase As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::String ^ phrase);" />
+      <MemberSignature Language="F#" Value="member this.Append : string -&gt; unit" Usage="grammarBuilder.Append phrase" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1575,6 +1593,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Append(System.String,System.Speech.Recognition.SubsetMatchingMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (phrase As String, subsetMatchingCriteria As SubsetMatchingMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::String ^ phrase, System::Speech::Recognition::SubsetMatchingMode subsetMatchingCriteria);" />
+      <MemberSignature Language="F#" Value="member this.Append : string * System.Speech.Recognition.SubsetMatchingMode -&gt; unit" Usage="grammarBuilder.Append (phrase, subsetMatchingCriteria)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1639,6 +1658,7 @@ private Grammar[] CreateSubsetMatchTest()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.GrammarBuilder,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (builder As GrammarBuilder, minRepeat As Integer, maxRepeat As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::Speech::Recognition::GrammarBuilder ^ builder, int minRepeat, int maxRepeat);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Speech.Recognition.GrammarBuilder * int * int -&gt; unit" Usage="grammarBuilder.Append (builder, minRepeat, maxRepeat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1721,6 +1741,7 @@ public static Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.Append(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (phrase As String, minRepeat As Integer, maxRepeat As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::String ^ phrase, int minRepeat, int maxRepeat);" />
+      <MemberSignature Language="F#" Value="member this.Append : string * int * int -&gt; unit" Usage="grammarBuilder.Append (phrase, minRepeat, maxRepeat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1819,6 +1840,7 @@ public static Grammar CreatePhonePhrase()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendDictation ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendDictation();" />
+      <MemberSignature Language="F#" Value="member this.AppendDictation : unit -&gt; unit" Usage="grammarBuilder.AppendDictation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1862,6 +1884,7 @@ grammarWithDictation.Name = "Grammar with Dictation";
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.AppendDictation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendDictation (category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendDictation(System::String ^ category);" />
+      <MemberSignature Language="F#" Value="member this.AppendDictation : string -&gt; unit" Usage="grammarBuilder.AppendDictation category" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1935,6 +1958,7 @@ grammarWithDictation.Name = "Grammar with Dictation";
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendRuleReference (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendRuleReference(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.AppendRuleReference : string -&gt; unit" Usage="grammarBuilder.AppendRuleReference path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2019,6 +2043,7 @@ private static Grammar CreateCitiesGrammar1()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendRuleReference (path As String, rule As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendRuleReference(System::String ^ path, System::String ^ rule);" />
+      <MemberSignature Language="F#" Value="member this.AppendRuleReference : string * string -&gt; unit" Usage="grammarBuilder.AppendRuleReference (path, rule)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2107,6 +2132,7 @@ private static Grammar CreateCitiesGrammar2()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendWildcard ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendWildcard();" />
+      <MemberSignature Language="F#" Value="member this.AppendWildcard : unit -&gt; unit" Usage="grammarBuilder.AppendWildcard " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2206,6 +2232,7 @@ private bool IsValidPassword(RecognizedAudio passwordAudio)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.GrammarBuilder.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.Speech.Recognition.GrammarBuilder.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2290,6 +2317,7 @@ private static Grammar CreatePizzaGrammar()
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.GrammarBuilder.DebugShowPhrases" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebugShowPhrases As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DebugShowPhrases { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DebugShowPhrases : string" Usage="System.Speech.Recognition.GrammarBuilder.DebugShowPhrases" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2371,6 +2399,7 @@ private static Grammar CreatePizzaGrammar()
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Speech.Recognition.GrammarBuilder op_Addition(class System.Speech.Recognition.Choices choices, class System.Speech.Recognition.GrammarBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ operator +(System::Speech::Recognition::Choices ^ choices, System::Speech::Recognition::GrammarBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Speech.Recognition.Choices * System.Speech.Recognition.GrammarBuilder -&gt; System.Speech.Recognition.GrammarBuilder" Usage="choices + builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2418,6 +2447,7 @@ private static Grammar CreatePizzaGrammar()
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Speech.Recognition.GrammarBuilder op_Addition(class System.Speech.Recognition.GrammarBuilder builder, class System.Speech.Recognition.Choices choices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.GrammarBuilder,System.Speech.Recognition.Choices)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ operator +(System::Speech::Recognition::GrammarBuilder ^ builder, System::Speech::Recognition::Choices ^ choices);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Speech.Recognition.GrammarBuilder * System.Speech.Recognition.Choices -&gt; System.Speech.Recognition.GrammarBuilder" Usage="builder + choices" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2496,6 +2526,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.GrammarBuilder,System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (builder1 As GrammarBuilder, builder2 As GrammarBuilder) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ operator +(System::Speech::Recognition::GrammarBuilder ^ builder1, System::Speech::Recognition::GrammarBuilder ^ builder2);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Speech.Recognition.GrammarBuilder * System.Speech.Recognition.GrammarBuilder -&gt; System.Speech.Recognition.GrammarBuilder" Usage="builder1 + builder2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2544,6 +2575,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.GrammarBuilder,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (builder As GrammarBuilder, phrase As String) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ operator +(System::Speech::Recognition::GrammarBuilder ^ builder, System::String ^ phrase);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Speech.Recognition.GrammarBuilder * string -&gt; System.Speech.Recognition.GrammarBuilder" Usage="builder + phrase" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2589,6 +2621,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.String,System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (phrase As String, builder As GrammarBuilder) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::GrammarBuilder ^ operator +(System::String ^ phrase, System::Speech::Recognition::GrammarBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : string * System.Speech.Recognition.GrammarBuilder -&gt; System.Speech.Recognition.GrammarBuilder" Usage="phrase + builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2691,6 +2724,7 @@ private Grammar CreateColorGrammar()
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Speech.Recognition.GrammarBuilder op_Implicit(class System.Speech.Recognition.Choices choices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Speech::Recognition::GrammarBuilder ^(System::Speech::Recognition::Choices ^ choices);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Speech.Recognition.Choices -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.op_Implicit choices" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2744,6 +2778,7 @@ yesnoGrammar.Name = "yesno";
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.SemanticResultKey)~System.Speech.Recognition.GrammarBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (semanticKey As SemanticResultKey) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Speech::Recognition::GrammarBuilder ^(System::Speech::Recognition::SemanticResultKey ^ semanticKey);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Speech.Recognition.SemanticResultKey -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.op_Implicit semanticKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2798,6 +2833,7 @@ yesnoGrammar.Name = "yesno";
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.SemanticResultValue)~System.Speech.Recognition.GrammarBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (semanticValue As SemanticResultValue) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Speech::Recognition::GrammarBuilder ^(System::Speech::Recognition::SemanticResultValue ^ semanticValue);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Speech.Recognition.SemanticResultValue -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.op_Implicit semanticValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -2852,6 +2888,7 @@ yesnoGrammar.Name = "yesno";
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.String)~System.Speech.Recognition.GrammarBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (phrase As String) As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Speech::Recognition::GrammarBuilder ^(System::String ^ phrase);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; System.Speech.Recognition.GrammarBuilder" Usage="System.Speech.Recognition.GrammarBuilder.op_Implicit phrase" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

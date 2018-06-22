@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementNameAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ManagementNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@ static public int PrintValue([ManagementName("The Value")]int i)
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementNameAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.ManagementNameAttribute : string -&gt; System.Management.Instrumentation.ManagementNameAttribute" Usage="new System.Management.Instrumentation.ManagementNameAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -71,6 +73,7 @@ static public int PrintValue([ManagementName("The Value")]int i)
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementNameAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Management.Instrumentation.ManagementNameAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SignatureVerificationResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum SignatureVerificationResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class SignatureVerificationResult" />
+  <TypeSignature Language="F#" Value="type SignatureVerificationResult = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.AssemblyIdentityMismatch" />
       <MemberSignature Language="VB.NET" Value="AssemblyIdentityMismatch" />
       <MemberSignature Language="C++ CLI" Value="AssemblyIdentityMismatch" />
+      <MemberSignature Language="F#" Value="AssemblyIdentityMismatch = 1" Usage="System.Security.Cryptography.SignatureVerificationResult.AssemblyIdentityMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.BadDigest" />
       <MemberSignature Language="VB.NET" Value="BadDigest" />
       <MemberSignature Language="C++ CLI" Value="BadDigest" />
+      <MemberSignature Language="F#" Value="BadDigest = -2146869232" Usage="System.Security.Cryptography.SignatureVerificationResult.BadDigest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.BadSignatureFormat" />
       <MemberSignature Language="VB.NET" Value="BadSignatureFormat" />
       <MemberSignature Language="C++ CLI" Value="BadSignatureFormat" />
+      <MemberSignature Language="F#" Value="BadSignatureFormat = -2146762749" Usage="System.Security.Cryptography.SignatureVerificationResult.BadSignatureFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.BasicConstraintsNotObserved" />
       <MemberSignature Language="VB.NET" Value="BasicConstraintsNotObserved" />
       <MemberSignature Language="C++ CLI" Value="BasicConstraintsNotObserved" />
+      <MemberSignature Language="F#" Value="BasicConstraintsNotObserved = -2146869223" Usage="System.Security.Cryptography.SignatureVerificationResult.BasicConstraintsNotObserved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateExpired" />
       <MemberSignature Language="VB.NET" Value="CertificateExpired" />
       <MemberSignature Language="C++ CLI" Value="CertificateExpired" />
+      <MemberSignature Language="F#" Value="CertificateExpired = -2146762495" Usage="System.Security.Cryptography.SignatureVerificationResult.CertificateExpired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateExplicitlyDistrusted" />
       <MemberSignature Language="VB.NET" Value="CertificateExplicitlyDistrusted" />
       <MemberSignature Language="C++ CLI" Value="CertificateExplicitlyDistrusted" />
+      <MemberSignature Language="F#" Value="CertificateExplicitlyDistrusted = -2146762479" Usage="System.Security.Cryptography.SignatureVerificationResult.CertificateExplicitlyDistrusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateMalformed" />
       <MemberSignature Language="VB.NET" Value="CertificateMalformed" />
       <MemberSignature Language="C++ CLI" Value="CertificateMalformed" />
+      <MemberSignature Language="F#" Value="CertificateMalformed = -2146762488" Usage="System.Security.Cryptography.SignatureVerificationResult.CertificateMalformed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateNotExplicitlyTrusted" />
       <MemberSignature Language="VB.NET" Value="CertificateNotExplicitlyTrusted" />
       <MemberSignature Language="C++ CLI" Value="CertificateNotExplicitlyTrusted" />
+      <MemberSignature Language="F#" Value="CertificateNotExplicitlyTrusted = -2146762748" Usage="System.Security.Cryptography.SignatureVerificationResult.CertificateNotExplicitlyTrusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -183,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateRevoked" />
       <MemberSignature Language="VB.NET" Value="CertificateRevoked" />
       <MemberSignature Language="C++ CLI" Value="CertificateRevoked" />
+      <MemberSignature Language="F#" Value="CertificateRevoked = -2146762484" Usage="System.Security.Cryptography.SignatureVerificationResult.CertificateRevoked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -202,6 +212,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateUsageNotAllowed" />
       <MemberSignature Language="VB.NET" Value="CertificateUsageNotAllowed" />
       <MemberSignature Language="C++ CLI" Value="CertificateUsageNotAllowed" />
+      <MemberSignature Language="F#" Value="CertificateUsageNotAllowed = -2146762490" Usage="System.Security.Cryptography.SignatureVerificationResult.CertificateUsageNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -221,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.ContainingSignatureInvalid" />
       <MemberSignature Language="VB.NET" Value="ContainingSignatureInvalid" />
       <MemberSignature Language="C++ CLI" Value="ContainingSignatureInvalid" />
+      <MemberSignature Language="F#" Value="ContainingSignatureInvalid = 2" Usage="System.Security.Cryptography.SignatureVerificationResult.ContainingSignatureInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -240,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CouldNotBuildChain" />
       <MemberSignature Language="VB.NET" Value="CouldNotBuildChain" />
       <MemberSignature Language="C++ CLI" Value="CouldNotBuildChain" />
+      <MemberSignature Language="F#" Value="CouldNotBuildChain = -2146762486" Usage="System.Security.Cryptography.SignatureVerificationResult.CouldNotBuildChain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -259,6 +272,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.GenericTrustFailure" />
       <MemberSignature Language="VB.NET" Value="GenericTrustFailure" />
       <MemberSignature Language="C++ CLI" Value="GenericTrustFailure" />
+      <MemberSignature Language="F#" Value="GenericTrustFailure = -2146762485" Usage="System.Security.Cryptography.SignatureVerificationResult.GenericTrustFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -278,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateName" />
       <MemberSignature Language="VB.NET" Value="InvalidCertificateName" />
       <MemberSignature Language="C++ CLI" Value="InvalidCertificateName" />
+      <MemberSignature Language="F#" Value="InvalidCertificateName = -2146762476" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -297,6 +312,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificatePolicy" />
       <MemberSignature Language="VB.NET" Value="InvalidCertificatePolicy" />
       <MemberSignature Language="C++ CLI" Value="InvalidCertificatePolicy" />
+      <MemberSignature Language="F#" Value="InvalidCertificatePolicy = -2146762477" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidCertificatePolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -316,6 +332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateRole" />
       <MemberSignature Language="VB.NET" Value="InvalidCertificateRole" />
       <MemberSignature Language="C++ CLI" Value="InvalidCertificateRole" />
+      <MemberSignature Language="F#" Value="InvalidCertificateRole = -2146762493" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -335,6 +352,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateSignature" />
       <MemberSignature Language="VB.NET" Value="InvalidCertificateSignature" />
       <MemberSignature Language="C++ CLI" Value="InvalidCertificateSignature" />
+      <MemberSignature Language="F#" Value="InvalidCertificateSignature = -2146869244" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -354,6 +372,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateUsage" />
       <MemberSignature Language="VB.NET" Value="InvalidCertificateUsage" />
       <MemberSignature Language="C++ CLI" Value="InvalidCertificateUsage" />
+      <MemberSignature Language="F#" Value="InvalidCertificateUsage = -2146762480" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateUsage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -373,6 +392,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCountersignature" />
       <MemberSignature Language="VB.NET" Value="InvalidCountersignature" />
       <MemberSignature Language="C++ CLI" Value="InvalidCountersignature" />
+      <MemberSignature Language="F#" Value="InvalidCountersignature = -2146869245" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidCountersignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -392,6 +412,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidSignerCertificate" />
       <MemberSignature Language="VB.NET" Value="InvalidSignerCertificate" />
       <MemberSignature Language="C++ CLI" Value="InvalidSignerCertificate" />
+      <MemberSignature Language="F#" Value="InvalidSignerCertificate = -2146869246" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidSignerCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -411,6 +432,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidTimePeriodNesting" />
       <MemberSignature Language="VB.NET" Value="InvalidTimePeriodNesting" />
       <MemberSignature Language="C++ CLI" Value="InvalidTimePeriodNesting" />
+      <MemberSignature Language="F#" Value="InvalidTimePeriodNesting = -2146762494" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidTimePeriodNesting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -430,6 +452,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidTimestamp" />
       <MemberSignature Language="VB.NET" Value="InvalidTimestamp" />
       <MemberSignature Language="C++ CLI" Value="InvalidTimestamp" />
+      <MemberSignature Language="F#" Value="InvalidTimestamp = -2146869243" Usage="System.Security.Cryptography.SignatureVerificationResult.InvalidTimestamp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -449,6 +472,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.IssuerChainingError" />
       <MemberSignature Language="VB.NET" Value="IssuerChainingError" />
       <MemberSignature Language="C++ CLI" Value="IssuerChainingError" />
+      <MemberSignature Language="F#" Value="IssuerChainingError = -2146762489" Usage="System.Security.Cryptography.SignatureVerificationResult.IssuerChainingError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -468,6 +492,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.MissingSignature" />
       <MemberSignature Language="VB.NET" Value="MissingSignature" />
       <MemberSignature Language="C++ CLI" Value="MissingSignature" />
+      <MemberSignature Language="F#" Value="MissingSignature = -2146762496" Usage="System.Security.Cryptography.SignatureVerificationResult.MissingSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -487,6 +512,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.PathLengthConstraintViolated" />
       <MemberSignature Language="VB.NET" Value="PathLengthConstraintViolated" />
       <MemberSignature Language="C++ CLI" Value="PathLengthConstraintViolated" />
+      <MemberSignature Language="F#" Value="PathLengthConstraintViolated = -2146762492" Usage="System.Security.Cryptography.SignatureVerificationResult.PathLengthConstraintViolated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -506,6 +532,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.PublicKeyTokenMismatch" />
       <MemberSignature Language="VB.NET" Value="PublicKeyTokenMismatch" />
       <MemberSignature Language="C++ CLI" Value="PublicKeyTokenMismatch" />
+      <MemberSignature Language="F#" Value="PublicKeyTokenMismatch = 3" Usage="System.Security.Cryptography.SignatureVerificationResult.PublicKeyTokenMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -525,6 +552,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.PublisherMismatch" />
       <MemberSignature Language="VB.NET" Value="PublisherMismatch" />
       <MemberSignature Language="C++ CLI" Value="PublisherMismatch" />
+      <MemberSignature Language="F#" Value="PublisherMismatch = 4" Usage="System.Security.Cryptography.SignatureVerificationResult.PublisherMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -544,6 +572,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.RevocationCheckFailure" />
       <MemberSignature Language="VB.NET" Value="RevocationCheckFailure" />
       <MemberSignature Language="C++ CLI" Value="RevocationCheckFailure" />
+      <MemberSignature Language="F#" Value="RevocationCheckFailure = -2146762482" Usage="System.Security.Cryptography.SignatureVerificationResult.RevocationCheckFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -563,6 +592,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.SystemError" />
       <MemberSignature Language="VB.NET" Value="SystemError" />
       <MemberSignature Language="C++ CLI" Value="SystemError" />
+      <MemberSignature Language="F#" Value="SystemError = -2146869247" Usage="System.Security.Cryptography.SignatureVerificationResult.SystemError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -582,6 +612,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UnknownCriticalExtension" />
       <MemberSignature Language="VB.NET" Value="UnknownCriticalExtension" />
       <MemberSignature Language="C++ CLI" Value="UnknownCriticalExtension" />
+      <MemberSignature Language="F#" Value="UnknownCriticalExtension = -2146762491" Usage="System.Security.Cryptography.SignatureVerificationResult.UnknownCriticalExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -601,6 +632,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UnknownTrustProvider" />
       <MemberSignature Language="VB.NET" Value="UnknownTrustProvider" />
       <MemberSignature Language="C++ CLI" Value="UnknownTrustProvider" />
+      <MemberSignature Language="F#" Value="UnknownTrustProvider = -2146762751" Usage="System.Security.Cryptography.SignatureVerificationResult.UnknownTrustProvider" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -620,6 +652,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UnknownVerificationAction" />
       <MemberSignature Language="VB.NET" Value="UnknownVerificationAction" />
       <MemberSignature Language="C++ CLI" Value="UnknownVerificationAction" />
+      <MemberSignature Language="F#" Value="UnknownVerificationAction = -2146762750" Usage="System.Security.Cryptography.SignatureVerificationResult.UnknownVerificationAction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -639,6 +672,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UntrustedCertificationAuthority" />
       <MemberSignature Language="VB.NET" Value="UntrustedCertificationAuthority" />
       <MemberSignature Language="C++ CLI" Value="UntrustedCertificationAuthority" />
+      <MemberSignature Language="F#" Value="UntrustedCertificationAuthority = -2146762478" Usage="System.Security.Cryptography.SignatureVerificationResult.UntrustedCertificationAuthority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -658,6 +692,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UntrustedRootCertificate" />
       <MemberSignature Language="VB.NET" Value="UntrustedRootCertificate" />
       <MemberSignature Language="C++ CLI" Value="UntrustedRootCertificate" />
+      <MemberSignature Language="F#" Value="UntrustedRootCertificate = -2146762487" Usage="System.Security.Cryptography.SignatureVerificationResult.UntrustedRootCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -677,6 +712,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UntrustedTestRootCertificate" />
       <MemberSignature Language="VB.NET" Value="UntrustedTestRootCertificate" />
       <MemberSignature Language="C++ CLI" Value="UntrustedTestRootCertificate" />
+      <MemberSignature Language="F#" Value="UntrustedTestRootCertificate = -2146762483" Usage="System.Security.Cryptography.SignatureVerificationResult.UntrustedTestRootCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -696,6 +732,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.Valid" />
       <MemberSignature Language="VB.NET" Value="Valid" />
       <MemberSignature Language="C++ CLI" Value="Valid" />
+      <MemberSignature Language="F#" Value="Valid = 0" Usage="System.Security.Cryptography.SignatureVerificationResult.Valid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

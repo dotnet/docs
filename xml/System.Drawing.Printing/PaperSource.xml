@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperSource" />
   <TypeSignature Language="VB.NET" Value="Public Class PaperSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class PaperSource" />
+  <TypeSignature Language="F#" Value="type PaperSource = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As PaperSourceKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PaperSourceKind Kind { System::Drawing::Printing::PaperSourceKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : System.Drawing.Printing.PaperSourceKind" Usage="System.Drawing.Printing.PaperSource.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.RawKind" />
       <MemberSignature Language="VB.NET" Value="Public Property RawKind As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RawKind { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RawKind : int with get, set" Usage="System.Drawing.Printing.PaperSource.RawKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.SourceName" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceName : string with get, set" Usage="System.Drawing.Printing.PaperSource.SourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSource.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="paperSource.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

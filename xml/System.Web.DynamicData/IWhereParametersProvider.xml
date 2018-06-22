@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IWhereParametersProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWhereParametersProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWhereParametersProvider" />
+  <TypeSignature Language="F#" Value="type IWhereParametersProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IWhereParametersProvider.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWhereParameters (dataSource As IDynamicDataSource) As IEnumerable(Of Parameter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::UI::WebControls::Parameter ^&gt; ^ GetWhereParameters(System::Web::DynamicData::IDynamicDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="abstract member GetWhereParameters : System.Web.DynamicData.IDynamicDataSource -&gt; seq&lt;System.Web.UI.WebControls.Parameter&gt;" Usage="iWhereParametersProvider.GetWhereParameters dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

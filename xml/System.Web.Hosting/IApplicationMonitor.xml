@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IApplicationMonitor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IApplicationMonitor&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IApplicationMonitor : IDisposable" />
+  <TypeSignature Language="F#" Value="type IApplicationMonitor = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationMonitor.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="abstract member Start : unit -&gt; unit" Usage="iApplicationMonitor.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationMonitor.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit" Usage="iApplicationMonitor.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

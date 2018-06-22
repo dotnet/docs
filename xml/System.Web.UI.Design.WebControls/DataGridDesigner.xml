@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataGridDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridDesigner&#xA;Inherits BaseDataListDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridDesigner : System::Web::UI::Design::WebControls::BaseDataListDesigner" />
+  <TypeSignature Language="F#" Value="type DataGridDesigner = class&#xA;    inherit BaseDataListDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataGridDesigner.AutoFormats" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.WebControls.DataGridDesigner.AutoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.CreateTemplateEditingFrame(System.Web.UI.Design.TemplateEditingVerb)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateTemplateEditingFrame (verb As TemplateEditingVerb) As ITemplateEditingFrame" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::Design::ITemplateEditingFrame ^ CreateTemplateEditingFrame(System::Web::UI::Design::TemplateEditingVerb ^ verb);" />
+      <MemberSignature Language="F#" Value="override this.CreateTemplateEditingFrame : System.Web.UI.Design.TemplateEditingVerb -&gt; System.Web.UI.Design.ITemplateEditingFrame" Usage="dataGridDesigner.CreateTemplateEditingFrame verb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dataGridDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetCachedTemplateEditingVerbs" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCachedTemplateEditingVerbs () As TemplateEditingVerb()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Web::UI::Design::TemplateEditingVerb ^&gt; ^ GetCachedTemplateEditingVerbs();" />
+      <MemberSignature Language="F#" Value="override this.GetCachedTemplateEditingVerbs : unit -&gt; System.Web.UI.Design.TemplateEditingVerb[]" Usage="dataGridDesigner.GetCachedTemplateEditingVerbs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="dataGridDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetEmptyDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEmptyDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetEmptyDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetEmptyDesignTimeHtml : unit -&gt; string" Usage="dataGridDesigner.GetEmptyDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetErrorDesignTimeHtml (e As Exception) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetErrorDesignTimeHtml(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="override this.GetErrorDesignTimeHtml : Exception -&gt; string" Usage="dataGridDesigner.GetErrorDesignTimeHtml e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplateContainerDataItemProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTemplateContainerDataItemProperty (templateName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetTemplateContainerDataItemProperty(System::String ^ templateName);" />
+      <MemberSignature Language="F#" Value="override this.GetTemplateContainerDataItemProperty : string -&gt; string" Usage="dataGridDesigner.GetTemplateContainerDataItemProperty templateName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTemplateContent (editingFrame As ITemplateEditingFrame, templateName As String, ByRef allowEditing As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetTemplateContent(System::Web::UI::Design::ITemplateEditingFrame ^ editingFrame, System::String ^ templateName, [Runtime::InteropServices::Out] bool % allowEditing);" />
+      <MemberSignature Language="F#" Value="override this.GetTemplateContent : System.Web.UI.Design.ITemplateEditingFrame * string *  -&gt; string" Usage="dataGridDesigner.GetTemplateContent (editingFrame, templateName, allowEditing)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -339,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplatePropertyParentType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTemplatePropertyParentType (templateName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetTemplatePropertyParentType(System::String ^ templateName);" />
+      <MemberSignature Language="F#" Value="override this.GetTemplatePropertyParentType : string -&gt; Type" Usage="dataGridDesigner.GetTemplatePropertyParentType templateName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -376,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="dataGridDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -411,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.OnColumnsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnColumnsChanged ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnColumnsChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnColumnsChanged : unit -&gt; unit&#xA;override this.OnColumnsChanged : unit -&gt; unit" Usage="dataGridDesigner.OnColumnsChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -431,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.OnTemplateEditingVerbsChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTemplateEditingVerbsChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTemplateEditingVerbsChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnTemplateEditingVerbsChanged : unit -&gt; unit" Usage="dataGridDesigner.OnTemplateEditingVerbsChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -451,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.SetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetTemplateContent (editingFrame As ITemplateEditingFrame, templateName As String, templateContent As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetTemplateContent(System::Web::UI::Design::ITemplateEditingFrame ^ editingFrame, System::String ^ templateName, System::String ^ templateContent);" />
+      <MemberSignature Language="F#" Value="override this.SetTemplateContent : System.Web.UI.Design.ITemplateEditingFrame * string * string -&gt; unit" Usage="dataGridDesigner.SetTemplateContent (editingFrame, templateName, templateContent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

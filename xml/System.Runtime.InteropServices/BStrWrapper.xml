@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.BStrWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BStrWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class BStrWrapper sealed" />
+  <TypeSignature Language="F#" Value="type BStrWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.BStrWrapper.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BStrWrapper(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.BStrWrapper : obj -&gt; System.Runtime.InteropServices.BStrWrapper" Usage="new System.Runtime.InteropServices.BStrWrapper value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.BStrWrapper.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BStrWrapper(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.BStrWrapper : string -&gt; System.Runtime.InteropServices.BStrWrapper" Usage="new System.Runtime.InteropServices.BStrWrapper value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.BStrWrapper.WrappedObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrappedObject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WrappedObject { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WrappedObject : string" Usage="System.Runtime.InteropServices.BStrWrapper.WrappedObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DateTimeFormat" />
   <TypeSignature Language="VB.NET" Value="Public Class DateTimeFormat" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateTimeFormat" />
+  <TypeSignature Language="F#" Value="type DateTimeFormat = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DateTimeFormat.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (formatString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeFormat(System::String ^ formatString);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.DateTimeFormat : string -&gt; System.Runtime.Serialization.DateTimeFormat" Usage="new System.Runtime.Serialization.DateTimeFormat formatString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DateTimeFormat.#ctor(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (formatString As String, formatProvider As IFormatProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeFormat(System::String ^ formatString, IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.DateTimeFormat : string * IFormatProvider -&gt; System.Runtime.Serialization.DateTimeFormat" Usage="new System.Runtime.Serialization.DateTimeFormat (formatString, formatProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DateTimeFormat.DateTimeStyles" />
       <MemberSignature Language="VB.NET" Value="Public Property DateTimeStyles As DateTimeStyles" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::DateTimeStyles DateTimeStyles { System::Globalization::DateTimeStyles get(); void set(System::Globalization::DateTimeStyles value); };" />
+      <MemberSignature Language="F#" Value="member this.DateTimeStyles : System.Globalization.DateTimeStyles with get, set" Usage="System.Runtime.Serialization.DateTimeFormat.DateTimeStyles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DateTimeFormat.FormatProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatProvider As IFormatProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IFormatProvider ^ FormatProvider { IFormatProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormatProvider : IFormatProvider" Usage="System.Runtime.Serialization.DateTimeFormat.FormatProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DateTimeFormat.FormatString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormatString : string" Usage="System.Runtime.Serialization.DateTimeFormat.FormatString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>

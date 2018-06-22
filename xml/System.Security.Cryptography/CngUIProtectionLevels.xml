@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngUIProtectionLevels" />
   <TypeSignature Language="VB.NET" Value="Public Enum CngUIProtectionLevels" />
   <TypeSignature Language="C++ CLI" Value="public enum class CngUIProtectionLevels" />
+  <TypeSignature Language="F#" Value="type CngUIProtectionLevels = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngUIProtectionLevels.ForceHighProtection" />
       <MemberSignature Language="VB.NET" Value="ForceHighProtection" />
       <MemberSignature Language="C++ CLI" Value="ForceHighProtection" />
+      <MemberSignature Language="F#" Value="ForceHighProtection = 2" Usage="System.Security.Cryptography.CngUIProtectionLevels.ForceHighProtection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngUIProtectionLevels.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.CngUIProtectionLevels.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngUIProtectionLevels.ProtectKey" />
       <MemberSignature Language="VB.NET" Value="ProtectKey" />
       <MemberSignature Language="C++ CLI" Value="ProtectKey" />
+      <MemberSignature Language="F#" Value="ProtectKey = 1" Usage="System.Security.Cryptography.CngUIProtectionLevels.ProtectKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

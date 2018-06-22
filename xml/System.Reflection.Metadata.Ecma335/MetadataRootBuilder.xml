@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MetadataRootBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataRootBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataRootBuilder sealed" />
+  <TypeSignature Language="F#" Value="type MetadataRootBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.Ecma335.MetadataBuilder tablesAndHeaps, string metadataVersion, bool suppressValidation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.#ctor(System.Reflection.Metadata.Ecma335.MetadataBuilder,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tablesAndHeaps As MetadataBuilder, Optional metadataVersion As String = null, Optional suppressValidation As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.MetadataRootBuilder : System.Reflection.Metadata.Ecma335.MetadataBuilder * string * bool -&gt; System.Reflection.Metadata.Ecma335.MetadataRootBuilder" Usage="new System.Reflection.Metadata.Ecma335.MetadataRootBuilder (tablesAndHeaps, metadataVersion, suppressValidation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.MetadataVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MetadataVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataVersion : string" Usage="System.Reflection.Metadata.Ecma335.MetadataRootBuilder.MetadataVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.Serialize(System.Reflection.Metadata.BlobBuilder,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (builder As BlobBuilder, methodBodyStreamRva As Integer, mappedFieldDataStreamRva As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::Reflection::Metadata::BlobBuilder ^ builder, int methodBodyStreamRva, int mappedFieldDataStreamRva);" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.Reflection.Metadata.BlobBuilder * int * int -&gt; unit" Usage="metadataRootBuilder.Serialize (builder, methodBodyStreamRva, mappedFieldDataStreamRva)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.Sizes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sizes As MetadataSizes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::Ecma335::MetadataSizes ^ Sizes { System::Reflection::Metadata::Ecma335::MetadataSizes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sizes : System.Reflection.Metadata.Ecma335.MetadataSizes" Usage="System.Reflection.Metadata.Ecma335.MetadataRootBuilder.Sizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.SuppressValidation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SuppressValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressValidation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressValidation : bool" Usage="System.Reflection.Metadata.Ecma335.MetadataRootBuilder.SuppressValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

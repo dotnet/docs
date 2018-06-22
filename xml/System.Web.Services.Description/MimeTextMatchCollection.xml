@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeTextMatchCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeTextMatchCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MimeTextMatchCollection sealed : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type MimeTextMatchCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.Add(System.Web.Services.Description.MimeTextMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (match As MimeTextMatch) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Description::MimeTextMatch ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Description.MimeTextMatch -&gt; int" Usage="mimeTextMatchCollection.Add match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.Contains(System.Web.Services.Description.MimeTextMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (match As MimeTextMatch) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::MimeTextMatch ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Services.Description.MimeTextMatch -&gt; bool" Usage="mimeTextMatchCollection.Contains match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.CopyTo(System.Web.Services.Description.MimeTextMatch[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MimeTextMatch(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::MimeTextMatch ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Services.Description.MimeTextMatch[] * int -&gt; unit" Usage="mimeTextMatchCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.IndexOf(System.Web.Services.Description.MimeTextMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (match As MimeTextMatch) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::MimeTextMatch ^ match);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Description.MimeTextMatch -&gt; int" Usage="mimeTextMatchCollection.IndexOf match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.Insert(System.Int32,System.Web.Services.Description.MimeTextMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, match As MimeTextMatch)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::MimeTextMatch ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.Services.Description.MimeTextMatch -&gt; unit" Usage="mimeTextMatchCollection.Insert (index, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -255,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatchCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As MimeTextMatch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::MimeTextMatch ^ default[int] { System::Web::Services::Description::MimeTextMatch ^ get(int index); void set(int index, System::Web::Services::Description::MimeTextMatch ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Description.MimeTextMatch with get, set" Usage="System.Web.Services.Description.MimeTextMatchCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.Remove(System.Web.Services.Description.MimeTextMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (match As MimeTextMatch)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::MimeTextMatch ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Description.MimeTextMatch -&gt; unit" Usage="mimeTextMatchCollection.Remove match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

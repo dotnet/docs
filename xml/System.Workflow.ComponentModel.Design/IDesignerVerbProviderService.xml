@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerVerbProviderService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerVerbProviderService" />
+  <TypeSignature Language="F#" Value="type IDesignerVerbProviderService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.AddVerbProvider(System.Workflow.ComponentModel.Design.IDesignerVerbProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddVerbProvider (verbProvider As IDesignerVerbProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddVerbProvider(System::Workflow::ComponentModel::Design::IDesignerVerbProvider ^ verbProvider);" />
+      <MemberSignature Language="F#" Value="abstract member AddVerbProvider : System.Workflow.ComponentModel.Design.IDesignerVerbProvider -&gt; unit" Usage="iDesignerVerbProviderService.AddVerbProvider verbProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.RemoveVerbProvider(System.Workflow.ComponentModel.Design.IDesignerVerbProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveVerbProvider (verbProvider As IDesignerVerbProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveVerbProvider(System::Workflow::ComponentModel::Design::IDesignerVerbProvider ^ verbProvider);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveVerbProvider : System.Workflow.ComponentModel.Design.IDesignerVerbProvider -&gt; unit" Usage="iDesignerVerbProviderService.RemoveVerbProvider verbProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.VerbProviders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerbProviders As ReadOnlyCollection(Of IDesignerVerbProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::IDesignerVerbProvider ^&gt; ^ VerbProviders { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::IDesignerVerbProvider ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerbProviders : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.IDesignerVerbProvider&gt;" Usage="System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.VerbProviders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

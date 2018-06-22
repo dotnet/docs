@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceLockQueryResult" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InstanceLockQueryResult&#xA;Inherits InstanceStoreQueryResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceLockQueryResult sealed : System::Runtime::DurableInstancing::InstanceStoreQueryResult" />
+  <TypeSignature Language="F#" Value="type InstanceLockQueryResult = class&#xA;    inherit InstanceStoreQueryResult" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Guid,System.Guid})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceOwnerIds As IDictionary(Of Guid, Guid))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceLockQueryResult(System::Collections::Generic::IDictionary&lt;Guid, Guid&gt; ^ instanceOwnerIds);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceLockQueryResult : System.Collections.Generic.IDictionary&lt;Guid, Guid&gt; -&gt; System.Runtime.DurableInstancing.InstanceLockQueryResult" Usage="new System.Runtime.DurableInstancing.InstanceLockQueryResult instanceOwnerIds" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor(System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, instanceOwnerId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceLockQueryResult(Guid instanceId, Guid instanceOwnerId);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceLockQueryResult : Guid * Guid -&gt; System.Runtime.DurableInstancing.InstanceLockQueryResult" Usage="new System.Runtime.DurableInstancing.InstanceLockQueryResult (instanceId, instanceOwnerId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceOwnerIds As IDictionary(Of Guid, Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;Guid, Guid&gt; ^ InstanceOwnerIds { System::Collections::Generic::IDictionary&lt;Guid, Guid&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceOwnerIds : System.Collections.Generic.IDictionary&lt;Guid, Guid&gt;" Usage="System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

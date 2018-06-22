@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.IMessageFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMessageFormatter&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMessageFormatter : ICloneable" />
+  <TypeSignature Language="F#" Value="type IMessageFormatter = interface&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanRead(class System.Messaging.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.IMessageFormatter.CanRead(System.Messaging.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanRead(System::Messaging::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member CanRead : System.Messaging.Message -&gt; bool" Usage="iMessageFormatter.CanRead message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Read(class System.Messaging.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.IMessageFormatter.Read(System.Messaging.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Read(System::Messaging::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Read : System.Messaging.Message -&gt; obj" Usage="iMessageFormatter.Read message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.Messaging.Message message, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.IMessageFormatter.Write(System.Messaging.Message,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::Messaging::Message ^ message, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Write : System.Messaging.Message * obj -&gt; unit" Usage="iMessageFormatter.Write (message, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

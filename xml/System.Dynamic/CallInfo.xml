@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.CallInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CallInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class CallInfo sealed" />
+  <TypeSignature Language="F#" Value="type CallInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (argCount As Integer, argNames As IEnumerable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CallInfo(int argCount, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ argNames);" />
+      <MemberSignature Language="F#" Value="new System.Dynamic.CallInfo : int * seq&lt;string&gt; -&gt; System.Dynamic.CallInfo" Usage="new System.Dynamic.CallInfo (argCount, argNames)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.#ctor(System.Int32,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (argCount As Integer, ParamArray argNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CallInfo(int argCount, ... cli::array &lt;System::String ^&gt; ^ argNames);" />
+      <MemberSignature Language="F#" Value="new System.Dynamic.CallInfo : int * string[] -&gt; System.Dynamic.CallInfo" Usage="new System.Dynamic.CallInfo (argCount, argNames)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.CallInfo.ArgumentCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgumentCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ArgumentCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArgumentCount : int" Usage="System.Dynamic.CallInfo.ArgumentCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.CallInfo.ArgumentNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgumentNames As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ ArgumentNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArgumentNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Dynamic.CallInfo.ArgumentNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="callInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -246,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="callInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

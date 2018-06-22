@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeNodeMouseHoverEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TreeNodeMouseHoverEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TreeNodeMouseHoverEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type TreeNodeMouseHoverEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNodeMouseHoverEventArgs.#ctor(System.Windows.Forms.TreeNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (node As TreeNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNodeMouseHoverEventArgs(System::Windows::Forms::TreeNode ^ node);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TreeNodeMouseHoverEventArgs : System.Windows.Forms.TreeNode -&gt; System.Windows.Forms.TreeNodeMouseHoverEventArgs" Usage="new System.Windows.Forms.TreeNodeMouseHoverEventArgs node" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNodeMouseHoverEventArgs.Node" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Node As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ Node { System::Windows::Forms::TreeNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Node : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNodeMouseHoverEventArgs.Node" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

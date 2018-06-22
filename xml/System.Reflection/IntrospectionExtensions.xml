@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.IntrospectionExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module IntrospectionExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class IntrospectionExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type IntrospectionExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.TypeInfo GetTypeInfo(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.IntrospectionExtensions.GetTypeInfo(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::TypeInfo ^ GetTypeInfo(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetTypeInfo : Type -&gt; System.Reflection.TypeInfo" Usage="System.Reflection.IntrospectionExtensions.GetTypeInfo type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

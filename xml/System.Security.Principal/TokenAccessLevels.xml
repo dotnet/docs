@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.TokenAccessLevels" />
   <TypeSignature Language="VB.NET" Value="Public Enum TokenAccessLevels" />
   <TypeSignature Language="C++ CLI" Value="public enum class TokenAccessLevels" />
+  <TypeSignature Language="F#" Value="type TokenAccessLevels = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustDefault" />
       <MemberSignature Language="VB.NET" Value="AdjustDefault" />
       <MemberSignature Language="C++ CLI" Value="AdjustDefault" />
+      <MemberSignature Language="F#" Value="AdjustDefault = 128" Usage="System.Security.Principal.TokenAccessLevels.AdjustDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustGroups" />
       <MemberSignature Language="VB.NET" Value="AdjustGroups" />
       <MemberSignature Language="C++ CLI" Value="AdjustGroups" />
+      <MemberSignature Language="F#" Value="AdjustGroups = 64" Usage="System.Security.Principal.TokenAccessLevels.AdjustGroups" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustPrivileges" />
       <MemberSignature Language="VB.NET" Value="AdjustPrivileges" />
       <MemberSignature Language="C++ CLI" Value="AdjustPrivileges" />
+      <MemberSignature Language="F#" Value="AdjustPrivileges = 32" Usage="System.Security.Principal.TokenAccessLevels.AdjustPrivileges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustSessionId" />
       <MemberSignature Language="VB.NET" Value="AdjustSessionId" />
       <MemberSignature Language="C++ CLI" Value="AdjustSessionId" />
+      <MemberSignature Language="F#" Value="AdjustSessionId = 256" Usage="System.Security.Principal.TokenAccessLevels.AdjustSessionId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AllAccess" />
       <MemberSignature Language="VB.NET" Value="AllAccess" />
       <MemberSignature Language="C++ CLI" Value="AllAccess" />
+      <MemberSignature Language="F#" Value="AllAccess = 983551" Usage="System.Security.Principal.TokenAccessLevels.AllAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AssignPrimary" />
       <MemberSignature Language="VB.NET" Value="AssignPrimary" />
       <MemberSignature Language="C++ CLI" Value="AssignPrimary" />
+      <MemberSignature Language="F#" Value="AssignPrimary = 1" Usage="System.Security.Principal.TokenAccessLevels.AssignPrimary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Duplicate" />
       <MemberSignature Language="VB.NET" Value="Duplicate" />
       <MemberSignature Language="C++ CLI" Value="Duplicate" />
+      <MemberSignature Language="F#" Value="Duplicate = 2" Usage="System.Security.Principal.TokenAccessLevels.Duplicate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Impersonate" />
       <MemberSignature Language="VB.NET" Value="Impersonate" />
       <MemberSignature Language="C++ CLI" Value="Impersonate" />
+      <MemberSignature Language="F#" Value="Impersonate = 4" Usage="System.Security.Principal.TokenAccessLevels.Impersonate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.MaximumAllowed" />
       <MemberSignature Language="VB.NET" Value="MaximumAllowed" />
       <MemberSignature Language="C++ CLI" Value="MaximumAllowed" />
+      <MemberSignature Language="F#" Value="MaximumAllowed = 33554432" Usage="System.Security.Principal.TokenAccessLevels.MaximumAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -261,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Query" />
       <MemberSignature Language="VB.NET" Value="Query" />
       <MemberSignature Language="C++ CLI" Value="Query" />
+      <MemberSignature Language="F#" Value="Query = 8" Usage="System.Security.Principal.TokenAccessLevels.Query" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -286,6 +297,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.QuerySource" />
       <MemberSignature Language="VB.NET" Value="QuerySource" />
       <MemberSignature Language="C++ CLI" Value="QuerySource" />
+      <MemberSignature Language="F#" Value="QuerySource = 16" Usage="System.Security.Principal.TokenAccessLevels.QuerySource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -311,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 131080" Usage="System.Security.Principal.TokenAccessLevels.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -336,6 +349,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 131296" Usage="System.Security.Principal.TokenAccessLevels.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>

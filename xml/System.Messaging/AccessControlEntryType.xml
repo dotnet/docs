@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.AccessControlEntryType" />
   <TypeSignature Language="VB.NET" Value="Public Enum AccessControlEntryType" />
   <TypeSignature Language="C++ CLI" Value="public enum class AccessControlEntryType" />
+  <TypeSignature Language="F#" Value="type AccessControlEntryType = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AccessControlEntryType.Allow" />
       <MemberSignature Language="VB.NET" Value="Allow" />
       <MemberSignature Language="C++ CLI" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 1" Usage="System.Messaging.AccessControlEntryType.Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AccessControlEntryType.Deny" />
       <MemberSignature Language="VB.NET" Value="Deny" />
       <MemberSignature Language="C++ CLI" Value="Deny" />
+      <MemberSignature Language="F#" Value="Deny = 3" Usage="System.Messaging.AccessControlEntryType.Deny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AccessControlEntryType.Revoke" />
       <MemberSignature Language="VB.NET" Value="Revoke" />
       <MemberSignature Language="C++ CLI" Value="Revoke" />
+      <MemberSignature Language="F#" Value="Revoke = 4" Usage="System.Messaging.AccessControlEntryType.Revoke" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AccessControlEntryType.Set" />
       <MemberSignature Language="VB.NET" Value="Set" />
       <MemberSignature Language="C++ CLI" Value="Set" />
+      <MemberSignature Language="F#" Value="Set = 2" Usage="System.Messaging.AccessControlEntryType.Set" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

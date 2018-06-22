@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.AdditionalContext" />
   <TypeSignature Language="VB.NET" Value="Public Class AdditionalContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class AdditionalContext" />
+  <TypeSignature Language="F#" Value="type AdditionalContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Protocols.WSTrust.ContextItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (items As IEnumerable(Of ContextItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AdditionalContext(System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Protocols::WSTrust::ContextItem ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.AdditionalContext : seq&lt;System.IdentityModel.Protocols.WSTrust.ContextItem&gt; -&gt; System.IdentityModel.Protocols.WSTrust.AdditionalContext" Usage="new System.IdentityModel.Protocols.WSTrust.AdditionalContext items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.AdditionalContext.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IList(Of ContextItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::IdentityModel::Protocols::WSTrust::ContextItem ^&gt; ^ Items { System::Collections::Generic::IList&lt;System::IdentityModel::Protocols::WSTrust::ContextItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;System.IdentityModel.Protocols.WSTrust.ContextItem&gt;" Usage="System.IdentityModel.Protocols.WSTrust.AdditionalContext.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

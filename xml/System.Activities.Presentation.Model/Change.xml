@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.Change" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Change" />
   <TypeSignature Language="C++ CLI" Value="public ref class Change abstract" />
+  <TypeSignature Language="F#" Value="type Change = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.Change.Apply" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Apply () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Apply();" />
+      <MemberSignature Language="F#" Value="abstract member Apply : unit -&gt; bool" Usage="change.Apply " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.Change.Description" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Activities.Presentation.Model.Change.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.Change.GetInverse" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInverse () As Change" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::Change ^ GetInverse();" />
+      <MemberSignature Language="F#" Value="abstract member GetInverse : unit -&gt; System.Activities.Presentation.Model.Change" Usage="change.GetInverse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

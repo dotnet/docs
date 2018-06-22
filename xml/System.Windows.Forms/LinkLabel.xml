@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkLabel" />
   <TypeSignature Language="VB.NET" Value="Public Class LinkLabel&#xA;Inherits Label&#xA;Implements IButtonControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinkLabel : System::Windows::Forms::Label, System::Windows::Forms::IButtonControl" />
+  <TypeSignature Language="F#" Value="type LinkLabel = class&#xA;    inherit Label&#xA;    interface IButtonControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -107,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.ActiveLinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveLinkColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ActiveLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveLinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.LinkLabel.ActiveLinkColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -152,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="linkLabel.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.CreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="linkLabel.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.DisabledLinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property DisabledLinkColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color DisabledLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.DisabledLinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.LinkLabel.DisabledLinkColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.FlatStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FlatStyle As FlatStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FlatStyle FlatStyle { System::Windows::Forms::FlatStyle get(); void set(System::Windows::Forms::FlatStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.FlatStyle : System.Windows.Forms.FlatStyle with get, set" Usage="System.Windows.Forms.LinkLabel.FlatStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -284,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.LinkArea" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkArea As LinkArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::LinkArea LinkArea { System::Windows::Forms::LinkArea get(); void set(System::Windows::Forms::LinkArea value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkArea : System.Windows.Forms.LinkArea with get, set" Usage="System.Windows.Forms.LinkLabel.LinkArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -347,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.LinkBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkBehavior As LinkBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::LinkBehavior LinkBehavior { System::Windows::Forms::LinkBehavior get(); void set(System::Windows::Forms::LinkBehavior value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkBehavior : System.Windows.Forms.LinkBehavior with get, set" Usage="System.Windows.Forms.LinkLabel.LinkBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -390,6 +398,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.LinkLabel.LinkClicked" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LinkClicked As LinkLabelLinkClickedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LinkLabelLinkClickedEventHandler ^ LinkClicked;" />
+      <MemberSignature Language="F#" Value="member this.LinkClicked : System.Windows.Forms.LinkLabelLinkClickedEventHandler " Usage="member this.LinkClicked : System.Windows.Forms.LinkLabelLinkClickedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -434,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.LinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.LinkLabel.LinkColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -479,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Links" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Links As LinkLabel.LinkCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::LinkLabel::LinkCollection ^ Links { System::Windows::Forms::LinkLabel::LinkCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Links : System.Windows.Forms.LinkLabel.LinkCollection" Usage="System.Windows.Forms.LinkLabel.Links" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -528,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.LinkVisited" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkVisited As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LinkVisited { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkVisited : bool with get, set" Usage="System.Windows.Forms.LinkLabel.LinkVisited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -573,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnAutoSizeChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAutoSizeChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAutoSizeChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnAutoSizeChanged : EventArgs -&gt; unit" Usage="linkLabel.OnAutoSizeChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -608,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnEnabledChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnabledChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEnabledChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnEnabledChanged : EventArgs -&gt; unit" Usage="linkLabel.OnEnabledChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -643,6 +657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="linkLabel.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -666,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnGotFocus(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnGotFocus : EventArgs -&gt; unit" Usage="linkLabel.OnGotFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -703,6 +719,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="linkLabel.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -739,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnLinkClicked(System.Windows.Forms.LinkLabelLinkClickedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLinkClicked (e As LinkLabelLinkClickedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLinkClicked(System::Windows::Forms::LinkLabelLinkClickedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLinkClicked : System.Windows.Forms.LinkLabelLinkClickedEventArgs -&gt; unit&#xA;override this.OnLinkClicked : System.Windows.Forms.LinkLabelLinkClickedEventArgs -&gt; unit" Usage="linkLabel.OnLinkClicked e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -776,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnLostFocus(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostFocus (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostFocus(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLostFocus : EventArgs -&gt; unit" Usage="linkLabel.OnLostFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -813,6 +832,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="linkLabel.OnMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -849,6 +869,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnMouseLeave(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="linkLabel.OnMouseLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -885,6 +906,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="linkLabel.OnMouseMove e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -921,6 +943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="linkLabel.OnMouseUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -957,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnPaddingChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaddingChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaddingChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaddingChanged : EventArgs -&gt; unit" Usage="linkLabel.OnPaddingChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -992,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="linkLabel.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1028,6 +1053,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintBackground(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaintBackground : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="linkLabel.OnPaintBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1051,6 +1077,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnTextAlignChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextAlignChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextAlignChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnTextAlignChanged : EventArgs -&gt; unit" Usage="linkLabel.OnTextAlignChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1075,6 +1102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.OnTextChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnTextChanged : EventArgs -&gt; unit" Usage="linkLabel.OnTextChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1098,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.OverrideCursor" />
       <MemberSignature Language="VB.NET" Value="Protected Property OverrideCursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::Cursor ^ OverrideCursor { System::Windows::Forms::Cursor ^ get(); void set(System::Windows::Forms::Cursor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OverrideCursor : System.Windows.Forms.Cursor with get, set" Usage="System.Windows.Forms.LinkLabel.OverrideCursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1118,6 +1147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.LinkLabel.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1144,6 +1174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.PointInLink(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function PointInLink (x As Integer, y As Integer) As LinkLabel.Link" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Forms::LinkLabel::Link ^ PointInLink(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.PointInLink : int * int -&gt; System.Windows.Forms.LinkLabel.Link" Usage="linkLabel.PointInLink (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1178,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.ProcessDialogKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessDialogKey : System.Windows.Forms.Keys -&gt; bool" Usage="linkLabel.ProcessDialogKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1210,6 +1242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.Select(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Select (directed As Boolean, forward As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Select(bool directed, bool forward);" />
+      <MemberSignature Language="F#" Value="override this.Select : bool * bool -&gt; unit" Usage="linkLabel.Select (directed, forward)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1238,6 +1271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="linkLabel.SetBoundsCore (x, y, width, height, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1276,6 +1310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.System#Windows#Forms#IButtonControl#DialogResult" />
       <MemberSignature Language="VB.NET" Value=" Property DialogResult As DialogResult Implements IButtonControl.DialogResult" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Forms::DialogResult System.Windows.Forms.IButtonControl.DialogResult { System::Windows::Forms::DialogResult get(); void set(System::Windows::Forms::DialogResult value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.LinkLabel.System.Windows.Forms.IButtonControl.DialogResult" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IButtonControl.DialogResult</InterfaceMember>
@@ -1370,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.TabStop" />
       <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.LinkLabel.TabStop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1406,6 +1442,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.LinkLabel.TabStopChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TabStopChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
+      <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1450,6 +1487,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.LinkLabel.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1475,6 +1513,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.UseCompatibleTextRendering" />
       <MemberSignature Language="VB.NET" Value="Public Property UseCompatibleTextRendering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCompatibleTextRendering { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseCompatibleTextRendering : bool with get, set" Usage="System.Windows.Forms.LinkLabel.UseCompatibleTextRendering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1518,6 +1557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.VisitedLinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property VisitedLinkColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color VisitedLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.VisitedLinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.LinkLabel.VisitedLinkColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1563,6 +1603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef msg As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % msg);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="linkLabel.WndProc msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

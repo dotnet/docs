@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.UIPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UIPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class UIPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type UIPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.UIPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.UIPermissionAttribute" Usage="new System.Security.Permissions.UIPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.UIPermissionAttribute.Clipboard" />
       <MemberSignature Language="VB.NET" Value="Public Property Clipboard As UIPermissionClipboard" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::UIPermissionClipboard Clipboard { System::Security::Permissions::UIPermissionClipboard get(); void set(System::Security::Permissions::UIPermissionClipboard value); };" />
+      <MemberSignature Language="F#" Value="member this.Clipboard : System.Security.Permissions.UIPermissionClipboard with get, set" Usage="System.Security.Permissions.UIPermissionAttribute.Clipboard" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="uIPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.UIPermissionAttribute.Window" />
       <MemberSignature Language="VB.NET" Value="Public Property Window As UIPermissionWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::UIPermissionWindow Window { System::Security::Permissions::UIPermissionWindow get(); void set(System::Security::Permissions::UIPermissionWindow value); };" />
+      <MemberSignature Language="F#" Value="member this.Window : System.Security.Permissions.UIPermissionWindow with get, set" Usage="System.Security.Permissions.UIPermissionAttribute.Window" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

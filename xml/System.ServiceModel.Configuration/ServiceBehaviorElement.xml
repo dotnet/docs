@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceBehaviorElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceBehaviorElement&#xA;Inherits NamedServiceModelExtensionCollectionElement(Of BehaviorExtensionElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceBehaviorElement : System::ServiceModel::Configuration::NamedServiceModelExtensionCollectionElement&lt;System::ServiceModel::Configuration::BehaviorExtensionElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceBehaviorElement = class&#xA;    inherit NamedServiceModelExtensionCollectionElement&lt;BehaviorExtensionElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceBehaviorElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceBehaviorElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ServiceBehaviorElement : string -&gt; System.ServiceModel.Configuration.ServiceBehaviorElement" Usage="new System.ServiceModel.Configuration.ServiceBehaviorElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceBehaviorElement.Add(System.ServiceModel.Configuration.BehaviorExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (element As BehaviorExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::ServiceModel::Configuration::BehaviorExtensionElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.ServiceModel.Configuration.BehaviorExtensionElement -&gt; unit" Usage="serviceBehaviorElement.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceBehaviorElement.CanAdd(System.ServiceModel.Configuration.BehaviorExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanAdd (element As BehaviorExtensionElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanAdd(System::ServiceModel::Configuration::BehaviorExtensionElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.CanAdd : System.ServiceModel.Configuration.BehaviorExtensionElement -&gt; bool" Usage="serviceBehaviorElement.CanAdd element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceBehaviorElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="serviceBehaviorElement.DeserializeElement (reader, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceHostingEnvironment" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceHostingEnvironment" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceHostingEnvironment abstract sealed" />
+  <TypeSignature Language="F#" Value="type ServiceHostingEnvironment = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AspNetCompatibilityEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AspNetCompatibilityEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AspNetCompatibilityEnabled : bool" Usage="System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostingEnvironment.EnsureInitialized" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnsureInitialized ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnsureInitialized();" />
+      <MemberSignature Language="F#" Value="static member EnsureInitialized : unit -&gt; unit" Usage="System.ServiceModel.ServiceHostingEnvironment.EnsureInitialized " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostingEnvironment.EnsureServiceAvailable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnsureServiceAvailable (virtualPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnsureServiceAvailable(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="static member EnsureServiceAvailable : string -&gt; unit" Usage="System.ServiceModel.ServiceHostingEnvironment.EnsureServiceAvailable virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MultipleSiteBindingsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MultipleSiteBindingsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MultipleSiteBindingsEnabled : bool" Usage="System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>

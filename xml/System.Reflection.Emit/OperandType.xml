@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.OperandType" />
   <TypeSignature Language="VB.NET" Value="Public Enum OperandType" />
   <TypeSignature Language="C++ CLI" Value="public enum class OperandType" />
+  <TypeSignature Language="F#" Value="type OperandType = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineBrTarget" />
       <MemberSignature Language="VB.NET" Value="InlineBrTarget" />
       <MemberSignature Language="C++ CLI" Value="InlineBrTarget" />
+      <MemberSignature Language="F#" Value="InlineBrTarget = 0" Usage="System.Reflection.Emit.OperandType.InlineBrTarget" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineField" />
       <MemberSignature Language="VB.NET" Value="InlineField" />
       <MemberSignature Language="C++ CLI" Value="InlineField" />
+      <MemberSignature Language="F#" Value="InlineField = 1" Usage="System.Reflection.Emit.OperandType.InlineField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineI" />
       <MemberSignature Language="VB.NET" Value="InlineI" />
       <MemberSignature Language="C++ CLI" Value="InlineI" />
+      <MemberSignature Language="F#" Value="InlineI = 2" Usage="System.Reflection.Emit.OperandType.InlineI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineI8" />
       <MemberSignature Language="VB.NET" Value="InlineI8" />
       <MemberSignature Language="C++ CLI" Value="InlineI8" />
+      <MemberSignature Language="F#" Value="InlineI8 = 3" Usage="System.Reflection.Emit.OperandType.InlineI8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineMethod" />
       <MemberSignature Language="VB.NET" Value="InlineMethod" />
       <MemberSignature Language="C++ CLI" Value="InlineMethod" />
+      <MemberSignature Language="F#" Value="InlineMethod = 4" Usage="System.Reflection.Emit.OperandType.InlineMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineNone" />
       <MemberSignature Language="VB.NET" Value="InlineNone" />
       <MemberSignature Language="C++ CLI" Value="InlineNone" />
+      <MemberSignature Language="F#" Value="InlineNone = 5" Usage="System.Reflection.Emit.OperandType.InlineNone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlinePhi" />
       <MemberSignature Language="VB.NET" Value="InlinePhi" />
       <MemberSignature Language="C++ CLI" Value="InlinePhi" />
+      <MemberSignature Language="F#" Value="InlinePhi = 6" Usage="System.Reflection.Emit.OperandType.InlinePhi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineR" />
       <MemberSignature Language="VB.NET" Value="InlineR" />
       <MemberSignature Language="C++ CLI" Value="InlineR" />
+      <MemberSignature Language="F#" Value="InlineR = 7" Usage="System.Reflection.Emit.OperandType.InlineR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineSig" />
       <MemberSignature Language="VB.NET" Value="InlineSig" />
       <MemberSignature Language="C++ CLI" Value="InlineSig" />
+      <MemberSignature Language="F#" Value="InlineSig = 9" Usage="System.Reflection.Emit.OperandType.InlineSig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -322,6 +332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineString" />
       <MemberSignature Language="VB.NET" Value="InlineString" />
       <MemberSignature Language="C++ CLI" Value="InlineString" />
+      <MemberSignature Language="F#" Value="InlineString = 10" Usage="System.Reflection.Emit.OperandType.InlineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -353,6 +364,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineSwitch" />
       <MemberSignature Language="VB.NET" Value="InlineSwitch" />
       <MemberSignature Language="C++ CLI" Value="InlineSwitch" />
+      <MemberSignature Language="F#" Value="InlineSwitch = 11" Usage="System.Reflection.Emit.OperandType.InlineSwitch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -384,6 +396,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineTok" />
       <MemberSignature Language="VB.NET" Value="InlineTok" />
       <MemberSignature Language="C++ CLI" Value="InlineTok" />
+      <MemberSignature Language="F#" Value="InlineTok = 12" Usage="System.Reflection.Emit.OperandType.InlineTok" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -415,6 +428,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineType" />
       <MemberSignature Language="VB.NET" Value="InlineType" />
       <MemberSignature Language="C++ CLI" Value="InlineType" />
+      <MemberSignature Language="F#" Value="InlineType = 13" Usage="System.Reflection.Emit.OperandType.InlineType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -446,6 +460,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineVar" />
       <MemberSignature Language="VB.NET" Value="InlineVar" />
       <MemberSignature Language="C++ CLI" Value="InlineVar" />
+      <MemberSignature Language="F#" Value="InlineVar = 14" Usage="System.Reflection.Emit.OperandType.InlineVar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -477,6 +492,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.ShortInlineBrTarget" />
       <MemberSignature Language="VB.NET" Value="ShortInlineBrTarget" />
       <MemberSignature Language="C++ CLI" Value="ShortInlineBrTarget" />
+      <MemberSignature Language="F#" Value="ShortInlineBrTarget = 15" Usage="System.Reflection.Emit.OperandType.ShortInlineBrTarget" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -508,6 +524,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.ShortInlineI" />
       <MemberSignature Language="VB.NET" Value="ShortInlineI" />
       <MemberSignature Language="C++ CLI" Value="ShortInlineI" />
+      <MemberSignature Language="F#" Value="ShortInlineI = 16" Usage="System.Reflection.Emit.OperandType.ShortInlineI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -539,6 +556,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.ShortInlineR" />
       <MemberSignature Language="VB.NET" Value="ShortInlineR" />
       <MemberSignature Language="C++ CLI" Value="ShortInlineR" />
+      <MemberSignature Language="F#" Value="ShortInlineR = 17" Usage="System.Reflection.Emit.OperandType.ShortInlineR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -570,6 +588,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.ShortInlineVar" />
       <MemberSignature Language="VB.NET" Value="ShortInlineVar" />
       <MemberSignature Language="C++ CLI" Value="ShortInlineVar" />
+      <MemberSignature Language="F#" Value="ShortInlineVar = 18" Usage="System.Reflection.Emit.OperandType.ShortInlineVar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

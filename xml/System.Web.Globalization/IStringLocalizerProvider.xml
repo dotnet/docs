@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Globalization.IStringLocalizerProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStringLocalizerProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStringLocalizerProvider" />
+  <TypeSignature Language="F#" Value="type IStringLocalizerProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Globalization.IStringLocalizerProvider.GetLocalizedString(System.Globalization.CultureInfo,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalizedString (culture As CultureInfo, name As String, ParamArray arguments As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLocalizedString(System::Globalization::CultureInfo ^ culture, System::String ^ name, ... cli::array &lt;System::Object ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalizedString : System.Globalization.CultureInfo * string * obj[] -&gt; string" Usage="iStringLocalizerProvider.GetLocalizedString (culture, name, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

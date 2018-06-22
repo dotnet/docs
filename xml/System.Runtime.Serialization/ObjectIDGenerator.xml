@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ObjectIDGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectIDGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectIDGenerator" />
+  <TypeSignature Language="F#" Value="type ObjectIDGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectIDGenerator.GetId(System.Object,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetId (obj As Object, ByRef firstTime As Boolean) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetId(System::Object ^ obj, [Runtime::InteropServices::Out] bool % firstTime);" />
+      <MemberSignature Language="F#" Value="abstract member GetId : obj *  -&gt; int64&#xA;override this.GetId : obj *  -&gt; int64" Usage="objectIDGenerator.GetId (obj, firstTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectIDGenerator.HasId(System.Object,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HasId (obj As Object, ByRef firstTime As Boolean) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long HasId(System::Object ^ obj, [Runtime::InteropServices::Out] bool % firstTime);" />
+      <MemberSignature Language="F#" Value="abstract member HasId : obj *  -&gt; int64&#xA;override this.HasId : obj *  -&gt; int64" Usage="objectIDGenerator.HasId (obj, firstTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

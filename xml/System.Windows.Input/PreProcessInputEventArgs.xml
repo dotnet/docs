@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.PreProcessInputEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PreProcessInputEventArgs&#xA;Inherits ProcessInputEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PreProcessInputEventArgs sealed : System::Windows::Input::ProcessInputEventArgs" />
+  <TypeSignature Language="F#" Value="type PreProcessInputEventArgs = class&#xA;    inherit ProcessInputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.PreProcessInputEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; unit" Usage="preProcessInputEventArgs.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.PreProcessInputEventArgs.Canceled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Canceled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Canceled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Canceled : bool" Usage="System.Windows.Input.PreProcessInputEventArgs.Canceled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

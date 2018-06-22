@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataFormat" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataFormat" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataFormat sealed" />
+  <TypeSignature Language="F#" Value="type DataFormat = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataFormat.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, id As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataFormat(System::String ^ name, int id);" />
+      <MemberSignature Language="F#" Value="new System.Windows.DataFormat : string * int -&gt; System.Windows.DataFormat" Usage="new System.Windows.DataFormat (name, id)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataFormat.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Windows.DataFormat.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataFormat.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.DataFormat.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

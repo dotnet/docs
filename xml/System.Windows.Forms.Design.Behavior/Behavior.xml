@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.Behavior" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Behavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class Behavior abstract" />
+  <TypeSignature Language="F#" Value="type Behavior = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool callParentBehavior, class System.Windows.Forms.Design.Behavior.BehaviorService behaviorService) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.#ctor(System.Boolean,System.Windows.Forms.Design.Behavior.BehaviorService)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Behavior(bool callParentBehavior, System::Windows::Forms::Design::Behavior::BehaviorService ^ behaviorService);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.Behavior : bool * System.Windows.Forms.Design.Behavior.BehaviorService -&gt; System.Windows.Forms.Design.Behavior.Behavior" Usage="new System.Windows.Forms.Design.Behavior.Behavior (callParentBehavior, behaviorService)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Behavior.Cursor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ Cursor { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cursor : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Design.Behavior.Behavior.Cursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Behavior.DisableAllCommands" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisableAllCommands As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DisableAllCommands { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisableAllCommands : bool" Usage="System.Windows.Forms.Design.Behavior.Behavior.DisableAllCommands" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.MenuCommand FindCommand(class System.ComponentModel.Design.CommandID commandId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.FindCommand(System.ComponentModel.Design.CommandID)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::Design::MenuCommand ^ FindCommand(System::ComponentModel::Design::CommandID ^ commandId);" />
+      <MemberSignature Language="F#" Value="abstract member FindCommand : System.ComponentModel.Design.CommandID -&gt; System.ComponentModel.Design.MenuCommand&#xA;override this.FindCommand : System.ComponentModel.Design.CommandID -&gt; System.ComponentModel.Design.MenuCommand" Usage="behavior.FindCommand commandId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnDragDrop(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDragDrop (g As Glyph, e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDragDrop(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDragDrop : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.DragEventArgs -&gt; unit&#xA;override this.OnDragDrop : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.DragEventArgs -&gt; unit" Usage="behavior.OnDragDrop (g, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnDragEnter(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDragEnter (g As Glyph, e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDragEnter(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDragEnter : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.DragEventArgs -&gt; unit&#xA;override this.OnDragEnter : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.DragEventArgs -&gt; unit" Usage="behavior.OnDragEnter (g, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnDragLeave(System.Windows.Forms.Design.Behavior.Glyph,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDragLeave (g As Glyph, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDragLeave(System::Windows::Forms::Design::Behavior::Glyph ^ g, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDragLeave : System.Windows.Forms.Design.Behavior.Glyph * EventArgs -&gt; unit&#xA;override this.OnDragLeave : System.Windows.Forms.Design.Behavior.Glyph * EventArgs -&gt; unit" Usage="behavior.OnDragLeave (g, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -309,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnDragOver(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDragOver (g As Glyph, e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDragOver(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDragOver : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.DragEventArgs -&gt; unit&#xA;override this.OnDragOver : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.DragEventArgs -&gt; unit" Usage="behavior.OnDragOver (g, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnGiveFeedback(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.GiveFeedbackEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnGiveFeedback (g As Glyph, e As GiveFeedbackEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnGiveFeedback(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::GiveFeedbackEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnGiveFeedback : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.GiveFeedbackEventArgs -&gt; unit&#xA;override this.OnGiveFeedback : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.GiveFeedbackEventArgs -&gt; unit" Usage="behavior.OnGiveFeedback (g, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnLoseCapture(System.Windows.Forms.Design.Behavior.Glyph,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnLoseCapture (g As Glyph, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnLoseCapture(System::Windows::Forms::Design::Behavior::Glyph ^ g, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoseCapture : System.Windows.Forms.Design.Behavior.Glyph * EventArgs -&gt; unit&#xA;override this.OnLoseCapture : System.Windows.Forms.Design.Behavior.Glyph * EventArgs -&gt; unit" Usage="behavior.OnLoseCapture (g, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -414,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnMouseDoubleClick(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.MouseButtons,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnMouseDoubleClick (g As Glyph, button As MouseButtons, mouseLoc As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool OnMouseDoubleClick(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::MouseButtons button, System::Drawing::Point mouseLoc);" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseDoubleClick : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.MouseButtons * System.Drawing.Point -&gt; bool&#xA;override this.OnMouseDoubleClick : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.MouseButtons * System.Drawing.Point -&gt; bool" Usage="behavior.OnMouseDoubleClick (g, button, mouseLoc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -461,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnMouseDown(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.MouseButtons,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnMouseDown (g As Glyph, button As MouseButtons, mouseLoc As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool OnMouseDown(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::MouseButtons button, System::Drawing::Point mouseLoc);" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseDown : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.MouseButtons * System.Drawing.Point -&gt; bool&#xA;override this.OnMouseDown : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.MouseButtons * System.Drawing.Point -&gt; bool" Usage="behavior.OnMouseDown (g, button, mouseLoc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -500,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnMouseEnter(System.Windows.Forms.Design.Behavior.Glyph)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnMouseEnter (g As Glyph) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool OnMouseEnter(System::Windows::Forms::Design::Behavior::Glyph ^ g);" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseEnter : System.Windows.Forms.Design.Behavior.Glyph -&gt; bool&#xA;override this.OnMouseEnter : System.Windows.Forms.Design.Behavior.Glyph -&gt; bool" Usage="behavior.OnMouseEnter g" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -537,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnMouseHover(System.Windows.Forms.Design.Behavior.Glyph,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnMouseHover (g As Glyph, mouseLoc As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool OnMouseHover(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Drawing::Point mouseLoc);" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseHover : System.Windows.Forms.Design.Behavior.Glyph * System.Drawing.Point -&gt; bool&#xA;override this.OnMouseHover : System.Windows.Forms.Design.Behavior.Glyph * System.Drawing.Point -&gt; bool" Usage="behavior.OnMouseHover (g, mouseLoc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -574,6 +589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnMouseLeave(System.Windows.Forms.Design.Behavior.Glyph)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnMouseLeave (g As Glyph) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool OnMouseLeave(System::Windows::Forms::Design::Behavior::Glyph ^ g);" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseLeave : System.Windows.Forms.Design.Behavior.Glyph -&gt; bool&#xA;override this.OnMouseLeave : System.Windows.Forms.Design.Behavior.Glyph -&gt; bool" Usage="behavior.OnMouseLeave g" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -611,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnMouseMove(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.MouseButtons,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnMouseMove (g As Glyph, button As MouseButtons, mouseLoc As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool OnMouseMove(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::MouseButtons button, System::Drawing::Point mouseLoc);" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseMove : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.MouseButtons * System.Drawing.Point -&gt; bool&#xA;override this.OnMouseMove : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.MouseButtons * System.Drawing.Point -&gt; bool" Usage="behavior.OnMouseMove (g, button, mouseLoc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -650,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnMouseUp(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.MouseButtons)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnMouseUp (g As Glyph, button As MouseButtons) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool OnMouseUp(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::MouseButtons button);" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseUp : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.MouseButtons -&gt; bool&#xA;override this.OnMouseUp : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.MouseButtons -&gt; bool" Usage="behavior.OnMouseUp (g, button)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -687,6 +705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Behavior.OnQueryContinueDrag(System.Windows.Forms.Design.Behavior.Glyph,System.Windows.Forms.QueryContinueDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnQueryContinueDrag (g As Glyph, e As QueryContinueDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnQueryContinueDrag(System::Windows::Forms::Design::Behavior::Glyph ^ g, System::Windows::Forms::QueryContinueDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnQueryContinueDrag : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.QueryContinueDragEventArgs -&gt; unit&#xA;override this.OnQueryContinueDrag : System.Windows.Forms.Design.Behavior.Glyph * System.Windows.Forms.QueryContinueDragEventArgs -&gt; unit" Usage="behavior.OnQueryContinueDrag (g, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

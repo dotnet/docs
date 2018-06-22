@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.RuleFiringRecord" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleFiringRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleFiringRecord sealed" />
+  <TypeSignature Language="F#" Value="type RuleFiringRecord = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.RuleFiringRecord.LastFired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastFired As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastFired { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastFired : DateTime" Usage="System.Web.Management.RuleFiringRecord.LastFired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.RuleFiringRecord.TimesRaised" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimesRaised As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimesRaised { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimesRaised : int" Usage="System.Web.Management.RuleFiringRecord.TimesRaised" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

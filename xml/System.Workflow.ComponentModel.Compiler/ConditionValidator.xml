@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ConditionValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class ConditionValidator&#xA;Inherits DependencyObjectValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConditionValidator : System::Workflow::ComponentModel::Compiler::DependencyObjectValidator" />
+  <TypeSignature Language="F#" Value="type ConditionValidator = class&#xA;    inherit DependencyObjectValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ConditionValidator.Validate(System.Workflow.ComponentModel.Compiler.ValidationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Validate (manager As ValidationManager, obj As Object) As ValidationErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Validate(System::Workflow::ComponentModel::Compiler::ValidationManager ^ manager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Workflow.ComponentModel.Compiler.ValidationManager * obj -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="conditionValidator.Validate (manager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

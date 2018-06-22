@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TreeScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum TreeScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class TreeScope" />
+  <TypeSignature Language="F#" Value="type TreeScope = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeScope.Ancestors" />
       <MemberSignature Language="VB.NET" Value="Ancestors" />
       <MemberSignature Language="C++ CLI" Value="Ancestors" />
+      <MemberSignature Language="F#" Value="Ancestors = 16" Usage="System.Windows.Automation.TreeScope.Ancestors" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeScope.Children" />
       <MemberSignature Language="VB.NET" Value="Children" />
       <MemberSignature Language="C++ CLI" Value="Children" />
+      <MemberSignature Language="F#" Value="Children = 2" Usage="System.Windows.Automation.TreeScope.Children" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeScope.Descendants" />
       <MemberSignature Language="VB.NET" Value="Descendants" />
       <MemberSignature Language="C++ CLI" Value="Descendants" />
+      <MemberSignature Language="F#" Value="Descendants = 4" Usage="System.Windows.Automation.TreeScope.Descendants" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeScope.Element" />
       <MemberSignature Language="VB.NET" Value="Element" />
       <MemberSignature Language="C++ CLI" Value="Element" />
+      <MemberSignature Language="F#" Value="Element = 1" Usage="System.Windows.Automation.TreeScope.Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeScope.Parent" />
       <MemberSignature Language="VB.NET" Value="Parent" />
       <MemberSignature Language="C++ CLI" Value="Parent" />
+      <MemberSignature Language="F#" Value="Parent = 8" Usage="System.Windows.Automation.TreeScope.Parent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeScope.Subtree" />
       <MemberSignature Language="VB.NET" Value="Subtree" />
       <MemberSignature Language="C++ CLI" Value="Subtree" />
+      <MemberSignature Language="F#" Value="Subtree = 7" Usage="System.Windows.Automation.TreeScope.Subtree" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

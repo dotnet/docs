@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.MemberInfoExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module MemberInfoExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberInfoExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type MemberInfoExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MemberInfoExtensions.GetMetadataToken(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMetadataToken (member As MemberInfo) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetMetadataToken(System::Reflection::MemberInfo ^ member);" />
+      <MemberSignature Language="F#" Value="static member GetMetadataToken : System.Reflection.MemberInfo -&gt; int" Usage="System.Reflection.MemberInfoExtensions.GetMetadataToken member" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MemberInfoExtensions.HasMetadataToken(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HasMetadataToken (member As MemberInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasMetadataToken(System::Reflection::MemberInfo ^ member);" />
+      <MemberSignature Language="F#" Value="static member HasMetadataToken : System.Reflection.MemberInfo -&gt; bool" Usage="System.Reflection.MemberInfoExtensions.HasMetadataToken member" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>

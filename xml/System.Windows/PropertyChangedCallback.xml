@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.PropertyChangedCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyChangedCallback(d As DependencyObject, e As DependencyPropertyChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PropertyChangedCallback(DependencyObject ^ d, DependencyPropertyChangedEventArgs e);" />
+  <TypeSignature Language="F#" Value="type PropertyChangedCallback = delegate of DependencyObject * DependencyPropertyChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.IRegiisUtility" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRegiisUtility" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRegiisUtility" />
+  <TypeSignature Language="F#" Value="type IRegiisUtility = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.IRegiisUtility.ProtectedConfigAction(System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProtectedConfigAction (actionToPerform As Long, firstArgument As String, secondArgument As String, providerName As String, appPath As String, site As String, cspOrLocation As String, keySize As Integer, ByRef exception As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProtectedConfigAction(long actionToPerform, System::String ^ firstArgument, System::String ^ secondArgument, System::String ^ providerName, System::String ^ appPath, System::String ^ site, System::String ^ cspOrLocation, int keySize, [Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member ProtectedConfigAction : int64 * string * string * string * string * string * string * int *  -&gt; unit" Usage="iRegiisUtility.ProtectedConfigAction (actionToPerform, firstArgument, secondArgument, providerName, appPath, site, cspOrLocation, keySize, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.IRegiisUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterAsnetMmcAssembly (doReg As Integer, assemblyName As String, binaryDirectory As String, ByRef exception As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterAsnetMmcAssembly(int doReg, System::String ^ assemblyName, System::String ^ binaryDirectory, [Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit" Usage="iRegiisUtility.RegisterAsnetMmcAssembly (doReg, assemblyName, binaryDirectory, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.IRegiisUtility.RegisterSystemWebAssembly(System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterSystemWebAssembly (doReg As Integer, ByRef exception As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterSystemWebAssembly(int doReg, [Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterSystemWebAssembly : int *  -&gt; unit" Usage="iRegiisUtility.RegisterSystemWebAssembly (doReg, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.IRegiisUtility.RemoveBrowserCaps(System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveBrowserCaps (ByRef exception As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveBrowserCaps([Runtime::InteropServices::Out] IntPtr % exception);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveBrowserCaps :  -&gt; unit" Usage="iRegiisUtility.RemoveBrowserCaps exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

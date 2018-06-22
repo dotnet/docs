@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IHelpService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHelpService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHelpService" />
+  <TypeSignature Language="F#" Value="type IHelpService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IHelpService.AddContextAttribute(System.String,System.String,System.ComponentModel.Design.HelpKeywordType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddContextAttribute (name As String, value As String, keywordType As HelpKeywordType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddContextAttribute(System::String ^ name, System::String ^ value, System::ComponentModel::Design::HelpKeywordType keywordType);" />
+      <MemberSignature Language="F#" Value="abstract member AddContextAttribute : string * string * System.ComponentModel.Design.HelpKeywordType -&gt; unit" Usage="iHelpService.AddContextAttribute (name, value, keywordType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IHelpService.ClearContextAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearContextAttributes ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearContextAttributes();" />
+      <MemberSignature Language="F#" Value="abstract member ClearContextAttributes : unit -&gt; unit" Usage="iHelpService.ClearContextAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IHelpService.CreateLocalContext(System.ComponentModel.Design.HelpContextType)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateLocalContext (contextType As HelpContextType) As IHelpService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::IHelpService ^ CreateLocalContext(System::ComponentModel::Design::HelpContextType contextType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateLocalContext : System.ComponentModel.Design.HelpContextType -&gt; System.ComponentModel.Design.IHelpService" Usage="iHelpService.CreateLocalContext contextType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IHelpService.RemoveContextAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveContextAttribute (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveContextAttribute(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveContextAttribute : string * string -&gt; unit" Usage="iHelpService.RemoveContextAttribute (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IHelpService.RemoveLocalContext(System.ComponentModel.Design.IHelpService)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveLocalContext (localContext As IHelpService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveLocalContext(System::ComponentModel::Design::IHelpService ^ localContext);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveLocalContext : System.ComponentModel.Design.IHelpService -&gt; unit" Usage="iHelpService.RemoveLocalContext localContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IHelpService.ShowHelpFromKeyword(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowHelpFromKeyword (helpKeyword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowHelpFromKeyword(System::String ^ helpKeyword);" />
+      <MemberSignature Language="F#" Value="abstract member ShowHelpFromKeyword : string -&gt; unit" Usage="iHelpService.ShowHelpFromKeyword helpKeyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IHelpService.ShowHelpFromUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowHelpFromUrl (helpUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowHelpFromUrl(System::String ^ helpUrl);" />
+      <MemberSignature Language="F#" Value="abstract member ShowHelpFromUrl : string -&gt; unit" Usage="iHelpService.ShowHelpFromUrl helpUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

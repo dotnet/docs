@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleChainingBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum RuleChainingBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class RuleChainingBehavior" />
+  <TypeSignature Language="F#" Value="type RuleChainingBehavior = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleChainingBehavior.Full" />
       <MemberSignature Language="VB.NET" Value="Full" />
       <MemberSignature Language="C++ CLI" Value="Full" />
+      <MemberSignature Language="F#" Value="Full = 2" Usage="System.Workflow.Activities.Rules.RuleChainingBehavior.Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleChainingBehavior.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Workflow.Activities.Rules.RuleChainingBehavior.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleChainingBehavior.UpdateOnly" />
       <MemberSignature Language="VB.NET" Value="UpdateOnly" />
       <MemberSignature Language="C++ CLI" Value="UpdateOnly" />
+      <MemberSignature Language="F#" Value="UpdateOnly = 1" Usage="System.Workflow.Activities.Rules.RuleChainingBehavior.UpdateOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

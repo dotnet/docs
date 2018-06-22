@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.LdapSessionOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class LdapSessionOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class LdapSessionOptions" />
+  <TypeSignature Language="F#" Value="type LdapSessionOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.AutoReconnect" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoReconnect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoReconnect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoReconnect : bool with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.AutoReconnect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.DomainName" />
       <MemberSignature Language="VB.NET" Value="Public Property DomainName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DomainName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DomainName : string with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.DomainName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapSessionOptions.FastConcurrentBind" />
       <MemberSignature Language="VB.NET" Value="Public Sub FastConcurrentBind ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FastConcurrentBind();" />
+      <MemberSignature Language="F#" Value="member this.FastConcurrentBind : unit -&gt; unit" Usage="ldapSessionOptions.FastConcurrentBind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.HostName" />
       <MemberSignature Language="VB.NET" Value="Public Property HostName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HostName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HostName : string with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.HostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.HostReachable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostReachable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HostReachable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HostReachable : bool" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.HostReachable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.LocatorFlag" />
       <MemberSignature Language="VB.NET" Value="Public Property LocatorFlag As LocatorFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::LocatorFlags LocatorFlag { System::DirectoryServices::Protocols::LocatorFlags get(); void set(System::DirectoryServices::Protocols::LocatorFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.LocatorFlag : System.DirectoryServices.Protocols.LocatorFlags with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.LocatorFlag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingKeepAliveTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property PingKeepAliveTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PingKeepAliveTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.PingKeepAliveTimeout : TimeSpan with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.PingKeepAliveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property PingLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PingLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PingLimit : int with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.PingLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -204,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingWaitTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property PingWaitTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PingWaitTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.PingWaitTimeout : TimeSpan with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.PingWaitTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -227,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.ProtocolVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtocolVersion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProtocolVersion { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtocolVersion : int with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.ProtocolVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -249,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.QueryClientCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Property QueryClientCertificate As QueryClientCertificateCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::QueryClientCertificateCallback ^ QueryClientCertificate { System::DirectoryServices::Protocols::QueryClientCertificateCallback ^ get(); void set(System::DirectoryServices::Protocols::QueryClientCertificateCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QueryClientCertificate : System.DirectoryServices.Protocols.QueryClientCertificateCallback with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.QueryClientCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -278,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferralCallback As ReferralCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::ReferralCallback ^ ReferralCallback { System::DirectoryServices::Protocols::ReferralCallback ^ get(); void set(System::DirectoryServices::Protocols::ReferralCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferralCallback : System.DirectoryServices.Protocols.ReferralCallback with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.ReferralCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -300,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralChasing" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferralChasing As ReferralChasingOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::ReferralChasingOptions ReferralChasing { System::DirectoryServices::Protocols::ReferralChasingOptions get(); void set(System::DirectoryServices::Protocols::ReferralChasingOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferralChasing : System.DirectoryServices.Protocols.ReferralChasingOptions with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.ReferralChasing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -323,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralHopLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferralHopLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReferralHopLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferralHopLimit : int with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.ReferralHopLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -346,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.RootDseCache" />
       <MemberSignature Language="VB.NET" Value="Public Property RootDseCache As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RootDseCache { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RootDseCache : bool with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.RootDseCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -368,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SaslMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property SaslMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SaslMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SaslMethod : string with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.SaslMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -390,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.Sealing" />
       <MemberSignature Language="VB.NET" Value="Public Property Sealing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sealing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Sealing : bool with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.Sealing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -412,6 +430,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SecureSocketLayer" />
       <MemberSignature Language="VB.NET" Value="Public Property SecureSocketLayer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SecureSocketLayer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SecureSocketLayer : bool with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.SecureSocketLayer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -434,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SecurityContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityContext As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SecurityContext { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityContext : obj" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.SecurityContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -456,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SendTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property SendTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SendTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.SendTimeout : TimeSpan with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.SendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -479,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.Signing" />
       <MemberSignature Language="VB.NET" Value="Public Property Signing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Signing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Signing : bool with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.Signing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -501,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SslInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SslInformation As SecurityPackageContextConnectionInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::SecurityPackageContextConnectionInformation ^ SslInformation { System::DirectoryServices::Protocols::SecurityPackageContextConnectionInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SslInformation : System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.SslInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -523,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SspiFlag" />
       <MemberSignature Language="VB.NET" Value="Public Property SspiFlag As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SspiFlag { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SspiFlag : int with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.SspiFlag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -545,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapSessionOptions.StartTransportLayerSecurity(System.DirectoryServices.Protocols.DirectoryControlCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartTransportLayerSecurity (controls As DirectoryControlCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartTransportLayerSecurity(System::DirectoryServices::Protocols::DirectoryControlCollection ^ controls);" />
+      <MemberSignature Language="F#" Value="member this.StartTransportLayerSecurity : System.DirectoryServices.Protocols.DirectoryControlCollection -&gt; unit" Usage="ldapSessionOptions.StartTransportLayerSecurity controls" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -572,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapSessionOptions.StopTransportLayerSecurity" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopTransportLayerSecurity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopTransportLayerSecurity();" />
+      <MemberSignature Language="F#" Value="member this.StopTransportLayerSecurity : unit -&gt; unit" Usage="ldapSessionOptions.StopTransportLayerSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -595,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.TcpKeepAlive" />
       <MemberSignature Language="VB.NET" Value="Public Property TcpKeepAlive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TcpKeepAlive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TcpKeepAlive : bool with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.TcpKeepAlive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -617,6 +644,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.VerifyServerCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Property VerifyServerCertificate As VerifyServerCertificateCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::VerifyServerCertificateCallback ^ VerifyServerCertificate { System::DirectoryServices::Protocols::VerifyServerCertificateCallback ^ get(); void set(System::DirectoryServices::Protocols::VerifyServerCertificateCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VerifyServerCertificate : System.DirectoryServices.Protocols.VerifyServerCertificateCallback with get, set" Usage="System.DirectoryServices.Protocols.LdapSessionOptions.VerifyServerCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

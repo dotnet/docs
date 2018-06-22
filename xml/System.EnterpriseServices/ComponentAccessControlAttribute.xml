@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ComponentAccessControlAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComponentAccessControlAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentAccessControlAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ComponentAccessControlAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ComponentAccessControlAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentAccessControlAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ComponentAccessControlAttribute : bool -&gt; System.EnterpriseServices.ComponentAccessControlAttribute" Usage="new System.EnterpriseServices.ComponentAccessControlAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ComponentAccessControlAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.EnterpriseServices.ComponentAccessControlAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISourceBlock(Of Out TOutput)&#xA;Implements IDataflowBlock" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TOutput&gt;&#xA;public interface class ISourceBlock : System::Threading::Tasks::Dataflow::IDataflowBlock" />
+  <TypeSignature Language="F#" Value="type ISourceBlock&lt;'Output&gt; = interface&#xA;    interface IDataflowBlock" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TOutput ConsumeMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TOutput&gt; target, [out] bool&amp; messageConsumed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConsumeMessage (messageHeader As DataflowMessageHeader, target As ITargetBlock(Of Out TOutput), ByRef messageConsumed As Boolean) As TOutput" />
+      <MemberSignature Language="F#" Value="abstract member ConsumeMessage : System.Threading.Tasks.Dataflow.DataflowMessageHeader * System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; *  -&gt; 'Output" Usage="iSourceBlock.ConsumeMessage (messageHeader, target, messageConsumed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function LinkTo (target As ITargetBlock(Of Out TOutput), linkOptions As DataflowLinkOptions) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ LinkTo(System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target, System::Threading::Tasks::Dataflow::DataflowLinkOptions ^ linkOptions);" />
+      <MemberSignature Language="F#" Value="abstract member LinkTo : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; * System.Threading.Tasks.Dataflow.DataflowLinkOptions -&gt; IDisposable" Usage="iSourceBlock.LinkTo (target, linkOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseReservation (messageHeader As DataflowMessageHeader, target As ITargetBlock(Of Out TOutput))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseReservation(System::Threading::Tasks::Dataflow::DataflowMessageHeader messageHeader, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseReservation : System.Threading.Tasks.Dataflow.DataflowMessageHeader * System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; -&gt; unit" Usage="iSourceBlock.ReleaseReservation (messageHeader, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function ReserveMessage (messageHeader As DataflowMessageHeader, target As ITargetBlock(Of Out TOutput)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ReserveMessage(System::Threading::Tasks::Dataflow::DataflowMessageHeader messageHeader, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member ReserveMessage : System.Threading.Tasks.Dataflow.DataflowMessageHeader * System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; -&gt; bool" Usage="iSourceBlock.ReserveMessage (messageHeader, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

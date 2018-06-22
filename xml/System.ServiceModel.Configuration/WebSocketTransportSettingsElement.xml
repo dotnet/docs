@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebSocketTransportSettingsElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WebSocketTransportSettingsElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebSocketTransportSettingsElement : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WebSocketTransportSettingsElement = class&#xA;    inherit ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.ApplyConfiguration(System.ServiceModel.Channels.WebSocketTransportSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyConfiguration (settings As WebSocketTransportSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyConfiguration(System::ServiceModel::Channels::WebSocketTransportSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="member this.ApplyConfiguration : System.ServiceModel.Channels.WebSocketTransportSettings -&gt; unit" Usage="webSocketTransportSettingsElement.ApplyConfiguration settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.CreateNotificationOnConnection" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateNotificationOnConnection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateNotificationOnConnection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateNotificationOnConnection : bool with get, set" Usage="System.ServiceModel.Configuration.WebSocketTransportSettingsElement.CreateNotificationOnConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.DisablePayloadMasking" />
       <MemberSignature Language="VB.NET" Value="Public Property DisablePayloadMasking As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisablePayloadMasking { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisablePayloadMasking : bool with get, set" Usage="System.ServiceModel.Configuration.WebSocketTransportSettingsElement.DisablePayloadMasking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.InitializeFrom(System.ServiceModel.Channels.WebSocketTransportSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitializeFrom (settings As WebSocketTransportSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeFrom(System::ServiceModel::Channels::WebSocketTransportSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="member this.InitializeFrom : System.ServiceModel.Channels.WebSocketTransportSettings -&gt; unit" Usage="webSocketTransportSettingsElement.InitializeFrom settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.KeepAliveInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepAliveInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan KeepAliveInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepAliveInterval : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.WebSocketTransportSettingsElement.KeepAliveInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.MaxPendingConnections" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingConnections As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingConnections { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingConnections : int with get, set" Usage="System.ServiceModel.Configuration.WebSocketTransportSettingsElement.MaxPendingConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WebSocketTransportSettingsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.SubProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SubProtocol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SubProtocol { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SubProtocol : string with get, set" Usage="System.ServiceModel.Configuration.WebSocketTransportSettingsElement.SubProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -242,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebSocketTransportSettingsElement.TransportUsage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TransportUsage As WebSocketTransportUsage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Channels::WebSocketTransportUsage TransportUsage { System::ServiceModel::Channels::WebSocketTransportUsage get(); void set(System::ServiceModel::Channels::WebSocketTransportUsage value); };" />
+      <MemberSignature Language="F#" Value="member this.TransportUsage : System.ServiceModel.Channels.WebSocketTransportUsage with get, set" Usage="System.ServiceModel.Configuration.WebSocketTransportSettingsElement.TransportUsage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

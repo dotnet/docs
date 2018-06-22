@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.EnvironmentLocationValue`1" />
   <TypeSignature Language="VB.NET" Value="Public Class EnvironmentLocationValue(Of T)&#xA;Inherits CodeActivity(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class EnvironmentLocationValue : System::Activities::CodeActivity&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type EnvironmentLocationValue&lt;'T&gt; = class&#xA;    inherit CodeActivity&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.EnvironmentLocationValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="environmentLocationValue.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.EnvironmentLocationValue`1.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As T" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override T Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'T" Usage="environmentLocationValue.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.EnvironmentLocationValue`1.LocationReference" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LocationReference As LocationReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Activities::LocationReference ^ LocationReference { System::Activities::LocationReference ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocationReference : System.Activities.LocationReference" Usage="System.Activities.Expressions.EnvironmentLocationValue&lt;'T&gt;.LocationReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

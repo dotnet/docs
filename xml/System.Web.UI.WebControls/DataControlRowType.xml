@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlRowType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataControlRowType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataControlRowType" />
+  <TypeSignature Language="F#" Value="type DataControlRowType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.DataRow" />
       <MemberSignature Language="VB.NET" Value="DataRow" />
       <MemberSignature Language="C++ CLI" Value="DataRow" />
+      <MemberSignature Language="F#" Value="DataRow = 2" Usage="System.Web.UI.WebControls.DataControlRowType.DataRow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.EmptyDataRow" />
       <MemberSignature Language="VB.NET" Value="EmptyDataRow" />
       <MemberSignature Language="C++ CLI" Value="EmptyDataRow" />
+      <MemberSignature Language="F#" Value="EmptyDataRow = 5" Usage="System.Web.UI.WebControls.DataControlRowType.EmptyDataRow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.Footer" />
       <MemberSignature Language="VB.NET" Value="Footer" />
       <MemberSignature Language="C++ CLI" Value="Footer" />
+      <MemberSignature Language="F#" Value="Footer = 1" Usage="System.Web.UI.WebControls.DataControlRowType.Footer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.Header" />
       <MemberSignature Language="VB.NET" Value="Header" />
       <MemberSignature Language="C++ CLI" Value="Header" />
+      <MemberSignature Language="F#" Value="Header = 0" Usage="System.Web.UI.WebControls.DataControlRowType.Header" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.Pager" />
       <MemberSignature Language="VB.NET" Value="Pager" />
       <MemberSignature Language="C++ CLI" Value="Pager" />
+      <MemberSignature Language="F#" Value="Pager = 4" Usage="System.Web.UI.WebControls.DataControlRowType.Pager" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.Separator" />
       <MemberSignature Language="VB.NET" Value="Separator" />
       <MemberSignature Language="C++ CLI" Value="Separator" />
+      <MemberSignature Language="F#" Value="Separator = 3" Usage="System.Web.UI.WebControls.DataControlRowType.Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

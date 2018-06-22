@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnSortMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewColumnSortMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewColumnSortMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnSortMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnSortMode.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Windows.Forms.DataGridViewColumnSortMode.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable" />
       <MemberSignature Language="VB.NET" Value="NotSortable" />
       <MemberSignature Language="C++ CLI" Value="NotSortable" />
+      <MemberSignature Language="F#" Value="NotSortable = 0" Usage="System.Windows.Forms.DataGridViewColumnSortMode.NotSortable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic" />
       <MemberSignature Language="VB.NET" Value="Programmatic" />
       <MemberSignature Language="C++ CLI" Value="Programmatic" />
+      <MemberSignature Language="F#" Value="Programmatic = 2" Usage="System.Windows.Forms.DataGridViewColumnSortMode.Programmatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

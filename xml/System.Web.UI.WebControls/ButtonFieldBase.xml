@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonFieldBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ButtonFieldBase&#xA;Inherits DataControlField" />
   <TypeSignature Language="C++ CLI" Value="public ref class ButtonFieldBase abstract : System::Web::UI::WebControls::DataControlField" />
+  <TypeSignature Language="F#" Value="type ButtonFieldBase = class&#xA;    inherit DataControlField" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ButtonType As ButtonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType ButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.WebControls.ButtonFieldBase.CausesValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyProperties (newField As DataControlField)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CopyProperties(System::Web::UI::WebControls::DataControlField ^ newField);" />
+      <MemberSignature Language="F#" Value="override this.CopyProperties : System.Web.UI.WebControls.DataControlField -&gt; unit" Usage="buttonFieldBase.CopyProperties newField" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ShowHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowHeader : bool with get, set" Usage="System.Web.UI.WebControls.ButtonFieldBase.ShowHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

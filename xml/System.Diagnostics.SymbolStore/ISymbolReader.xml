@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolReader" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISymbolReader" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISymbolReader" />
+  <TypeSignature Language="F#" Value="type ISymbolReader = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetDocument(System.String,System.Guid,System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDocument (url As String, language As Guid, languageVendor As Guid, documentType As Guid) As ISymbolDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolDocument ^ GetDocument(System::String ^ url, Guid language, Guid languageVendor, Guid documentType);" />
+      <MemberSignature Language="F#" Value="abstract member GetDocument : string * Guid * Guid * Guid -&gt; System.Diagnostics.SymbolStore.ISymbolDocument" Usage="iSymbolReader.GetDocument (url, language, languageVendor, documentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetDocuments" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDocuments () As ISymbolDocument()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolDocument ^&gt; ^ GetDocuments();" />
+      <MemberSignature Language="F#" Value="abstract member GetDocuments : unit -&gt; System.Diagnostics.SymbolStore.ISymbolDocument[]" Usage="iSymbolReader.GetDocuments " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetGlobalVariables" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGlobalVariables () As ISymbolVariable()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetGlobalVariables();" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalVariables : unit -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]" Usage="iSymbolReader.GetGlobalVariables " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethod (method As SymbolToken) As ISymbolMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolMethod ^ GetMethod(System::Diagnostics::SymbolStore::SymbolToken method);" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : System.Diagnostics.SymbolStore.SymbolToken -&gt; System.Diagnostics.SymbolStore.ISymbolMethod" Usage="iSymbolReader.GetMethod method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethod (method As SymbolToken, version As Integer) As ISymbolMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolMethod ^ GetMethod(System::Diagnostics::SymbolStore::SymbolToken method, int version);" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : System.Diagnostics.SymbolStore.SymbolToken * int -&gt; System.Diagnostics.SymbolStore.ISymbolMethod" Usage="iSymbolReader.GetMethod (method, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetMethodFromDocumentPosition(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodFromDocumentPosition (document As ISymbolDocument, line As Integer, column As Integer) As ISymbolMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolMethod ^ GetMethodFromDocumentPosition(System::Diagnostics::SymbolStore::ISymbolDocument ^ document, int line, int column);" />
+      <MemberSignature Language="F#" Value="abstract member GetMethodFromDocumentPosition : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; System.Diagnostics.SymbolStore.ISymbolMethod" Usage="iSymbolReader.GetMethodFromDocumentPosition (document, line, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespaces () As ISymbolNamespace()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolNamespace ^&gt; ^ GetNamespaces();" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespaces : unit -&gt; System.Diagnostics.SymbolStore.ISymbolNamespace[]" Usage="iSymbolReader.GetNamespaces " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSymAttribute (parent As SymbolToken, name As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetSymAttribute(System::Diagnostics::SymbolStore::SymbolToken parent, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetSymAttribute : System.Diagnostics.SymbolStore.SymbolToken * string -&gt; byte[]" Usage="iSymbolReader.GetSymAttribute (parent, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolReader.GetVariables(System.Diagnostics.SymbolStore.SymbolToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetVariables (parent As SymbolToken) As ISymbolVariable()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetVariables(System::Diagnostics::SymbolStore::SymbolToken parent);" />
+      <MemberSignature Language="F#" Value="abstract member GetVariables : System.Diagnostics.SymbolStore.SymbolToken -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]" Usage="iSymbolReader.GetVariables parent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -374,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolReader.UserEntryPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserEntryPoint As SymbolToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SymbolStore::SymbolToken UserEntryPoint { System::Diagnostics::SymbolStore::SymbolToken get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserEntryPoint : System.Diagnostics.SymbolStore.SymbolToken" Usage="System.Diagnostics.SymbolStore.ISymbolReader.UserEntryPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

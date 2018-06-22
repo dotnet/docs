@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DiagnosticListener" />
   <TypeSignature Language="VB.NET" Value="Public Class DiagnosticListener&#xA;Inherits DiagnosticSource&#xA;Implements IDisposable, IObservable(Of KeyValuePair(Of String, Object))" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiagnosticListener : System::Diagnostics::DiagnosticSource, IDisposable, IObservable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;" />
+  <TypeSignature Language="F#" Value="type DiagnosticListener = class&#xA;    inherit DiagnosticSource&#xA;    interface IDisposable&#xA;    interface IObservable&lt;KeyValuePair&lt;string, obj&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiagnosticListener(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DiagnosticListener : string -&gt; System.Diagnostics.DiagnosticListener" Usage="new System.Diagnostics.DiagnosticListener name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DiagnosticListener.AllListeners" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AllListeners As IObservable(Of DiagnosticListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property IObservable&lt;System::Diagnostics::DiagnosticListener ^&gt; ^ AllListeners { IObservable&lt;System::Diagnostics::DiagnosticListener ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllListeners : IObservable&lt;System.Diagnostics.DiagnosticListener&gt;" Usage="System.Diagnostics.DiagnosticListener.AllListeners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="diagnosticListener.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEnabled () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEnabled();" />
+      <MemberSignature Language="F#" Value="override this.IsEnabled : unit -&gt; bool" Usage="diagnosticListener.IsEnabled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.IsEnabled(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEnabled (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEnabled(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.IsEnabled : string -&gt; bool" Usage="diagnosticListener.IsEnabled name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsEnabled(string name, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.IsEnabled(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEnabled (name As String, arg1 As Object, Optional arg2 As Object = null) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsEnabled : string * obj * obj -&gt; bool" Usage="diagnosticListener.IsEnabled (name, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -189,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DiagnosticListener.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.DiagnosticListener.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Subscribe(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Subscribe (observer As IObserver(Of KeyValuePair(Of String, Object))) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ Subscribe(IObserver&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ observer);" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; IDisposable&#xA;override this.Subscribe : IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; IDisposable" Usage="diagnosticListener.Subscribe observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IObservable`1.Subscribe(System.IObserver{`0})</InterfaceMember>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Subscribe(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Func{System.String,System.Object,System.Object,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Subscribe (observer As IObserver(Of KeyValuePair(Of String, Object)), isEnabled As Func(Of String, Object, Object, Boolean)) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ Subscribe(IObserver&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ observer, Func&lt;System::String ^, System::Object ^, System::Object ^, bool&gt; ^ isEnabled);" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; * Func&lt;string, obj, obj, bool&gt; -&gt; IDisposable&#xA;override this.Subscribe : IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; * Func&lt;string, obj, obj, bool&gt; -&gt; IDisposable" Usage="diagnosticListener.Subscribe (observer, isEnabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -272,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Subscribe(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Predicate{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Subscribe (observer As IObserver(Of KeyValuePair(Of String, Object)), isEnabled As Predicate(Of String)) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ Subscribe(IObserver&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ observer, Predicate&lt;System::String ^&gt; ^ isEnabled);" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; * Predicate&lt;string&gt; -&gt; IDisposable&#xA;override this.Subscribe : IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; * Predicate&lt;string&gt; -&gt; IDisposable" Usage="diagnosticListener.Subscribe (observer, isEnabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -302,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="diagnosticListener.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -328,6 +340,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object parameters) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, parameters As Object)" FrameworkAlternate="netcore-2.0;netcore-2.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>

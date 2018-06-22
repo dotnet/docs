@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadOnlySiteLinkBridgeCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlySiteLinkBridgeCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReadOnlySiteLinkBridgeCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (bridge As ActiveDirectorySiteLinkBridge) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLinkBridge ^ bridge);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge -&gt; bool" Usage="readOnlySiteLinkBridgeCollection.Contains bridge" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (bridges As ActiveDirectorySiteLinkBridge(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLinkBridge ^&gt; ^ bridges, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge[] * int -&gt; unit" Usage="readOnlySiteLinkBridgeCollection.CopyTo (bridges, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (bridge As ActiveDirectorySiteLinkBridge) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLinkBridge ^ bridge);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge -&gt; int" Usage="readOnlySiteLinkBridgeCollection.IndexOf bridge" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ActiveDirectorySiteLinkBridge" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLinkBridge ^ default[int] { System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLinkBridge ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" Usage="System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkBridgeCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

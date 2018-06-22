@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class TextOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextOptions abstract sealed" />
+  <TypeSignature Language="F#" Value="type TextOptions = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.GetTextFormattingMode(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTextFormattingMode (element As DependencyObject) As TextFormattingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::TextFormattingMode GetTextFormattingMode(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTextFormattingMode : System.Windows.DependencyObject -&gt; System.Windows.Media.TextFormattingMode" Usage="System.Windows.Media.TextOptions.GetTextFormattingMode element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.GetTextHintingMode(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTextHintingMode (element As DependencyObject) As TextHintingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::TextHintingMode GetTextHintingMode(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTextHintingMode : System.Windows.DependencyObject -&gt; System.Windows.Media.TextHintingMode" Usage="System.Windows.Media.TextOptions.GetTextHintingMode element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.GetTextRenderingMode(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTextRenderingMode (element As DependencyObject) As TextRenderingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::TextRenderingMode GetTextRenderingMode(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTextRenderingMode : System.Windows.DependencyObject -&gt; System.Windows.Media.TextRenderingMode" Usage="System.Windows.Media.TextOptions.GetTextRenderingMode element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.SetTextFormattingMode(System.Windows.DependencyObject,System.Windows.Media.TextFormattingMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTextFormattingMode (element As DependencyObject, value As TextFormattingMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTextFormattingMode(System::Windows::DependencyObject ^ element, System::Windows::Media::TextFormattingMode value);" />
+      <MemberSignature Language="F#" Value="static member SetTextFormattingMode : System.Windows.DependencyObject * System.Windows.Media.TextFormattingMode -&gt; unit" Usage="System.Windows.Media.TextOptions.SetTextFormattingMode (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.SetTextHintingMode(System.Windows.DependencyObject,System.Windows.Media.TextHintingMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTextHintingMode (element As DependencyObject, value As TextHintingMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTextHintingMode(System::Windows::DependencyObject ^ element, System::Windows::Media::TextHintingMode value);" />
+      <MemberSignature Language="F#" Value="static member SetTextHintingMode : System.Windows.DependencyObject * System.Windows.Media.TextHintingMode -&gt; unit" Usage="System.Windows.Media.TextOptions.SetTextHintingMode (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.SetTextRenderingMode(System.Windows.DependencyObject,System.Windows.Media.TextRenderingMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTextRenderingMode (element As DependencyObject, value As TextRenderingMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTextRenderingMode(System::Windows::DependencyObject ^ element, System::Windows::Media::TextRenderingMode value);" />
+      <MemberSignature Language="F#" Value="static member SetTextRenderingMode : System.Windows.DependencyObject * System.Windows.Media.TextRenderingMode -&gt; unit" Usage="System.Windows.Media.TextOptions.SetTextRenderingMode (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value="see GetTextFormattingMode, and SetTextFormattingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextOptions.TextFormattingMode" />
       <MemberSignature Language="VB.NET" Value="see GetTextFormattingMode, and SetTextFormattingMode" />
+      <MemberSignature Language="F#" Value="see GetTextFormattingMode, and SetTextFormattingMode" Usage="see GetTextFormattingMode, and SetTextFormattingMode" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextOptions.TextFormattingModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextFormattingModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextFormattingModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextFormattingModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TextOptions.TextFormattingModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +234,7 @@
       <MemberSignature Language="ILAsm" Value="see GetTextHintingMode, and SetTextHintingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextOptions.TextHintingMode" />
       <MemberSignature Language="VB.NET" Value="see GetTextHintingMode, and SetTextHintingMode" />
+      <MemberSignature Language="F#" Value="see GetTextHintingMode, and SetTextHintingMode" Usage="see GetTextHintingMode, and SetTextHintingMode" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -241,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextOptions.TextHintingModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextHintingModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextHintingModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextHintingModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TextOptions.TextHintingModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -259,6 +270,7 @@
       <MemberSignature Language="ILAsm" Value="see GetTextRenderingMode, and SetTextRenderingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextOptions.TextRenderingMode" />
       <MemberSignature Language="VB.NET" Value="see GetTextRenderingMode, and SetTextRenderingMode" />
+      <MemberSignature Language="F#" Value="see GetTextRenderingMode, and SetTextRenderingMode" Usage="see GetTextRenderingMode, and SetTextRenderingMode" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -275,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextOptions.TextRenderingModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextRenderingModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextRenderingModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextRenderingModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TextOptions.TextRenderingModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.ColumnAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColumnAttribute&#xA;Inherits DataAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ColumnAttribute sealed : System::Data::Linq::Mapping::DataAttribute" />
+  <TypeSignature Language="F#" Value="type ColumnAttribute = class&#xA;    inherit DataAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.AutoSync" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSync As AutoSync" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Linq::Mapping::AutoSync AutoSync { System::Data::Linq::Mapping::AutoSync get(); void set(System::Data::Linq::Mapping::AutoSync value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSync : System.Data.Linq.Mapping.AutoSync with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.AutoSync" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -138,6 +140,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.CanBeNull" />
       <MemberSignature Language="VB.NET" Value="Public Property CanBeNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanBeNull { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanBeNull : bool with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.CanBeNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -174,6 +177,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.DbType" />
       <MemberSignature Language="VB.NET" Value="Public Property DbType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DbType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DbType : string with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.DbType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -209,6 +213,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Expression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : string with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -247,6 +252,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDbGenerated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDbGenerated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDbGenerated : bool with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -283,6 +289,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.IsDiscriminator" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDiscriminator As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDiscriminator { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDiscriminator : bool with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.IsDiscriminator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -318,6 +325,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPrimaryKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrimaryKey { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsPrimaryKey : bool with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -356,6 +364,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.IsVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property IsVersion As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVersion { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsVersion : bool with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.IsVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -395,6 +404,7 @@ public class Employees
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateCheck As UpdateCheck" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Linq::Mapping::UpdateCheck UpdateCheck { System::Data::Linq::Mapping::UpdateCheck get(); void set(System::Data::Linq::Mapping::UpdateCheck value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateCheck : System.Data.Linq.Mapping.UpdateCheck with get, set" Usage="System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

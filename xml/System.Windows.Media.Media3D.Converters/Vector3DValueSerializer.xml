@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Converters.Vector3DValueSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class Vector3DValueSerializer&#xA;Inherits ValueSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class Vector3DValueSerializer : System::Windows::Markup::ValueSerializer" />
+  <TypeSignature Language="F#" Value="type Vector3DValueSerializer = class&#xA;    inherit ValueSerializer" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.Vector3DValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFromString (value As String, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="vector3DValueSerializer.CanConvertFromString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.Vector3DValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertToString (value As Object, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="vector3DValueSerializer.CanConvertToString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.Vector3DValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFromString (value As String, context As IValueSerializerContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; obj" Usage="vector3DValueSerializer.ConvertFromString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.Vector3DValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertToString (value As Object, context As IValueSerializerContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="vector3DValueSerializer.ConvertToString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

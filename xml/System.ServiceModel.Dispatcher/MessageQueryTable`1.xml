@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.MessageQueryTable`1" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQueryTable(Of TItem)&#xA;Implements ICollection(Of KeyValuePair(Of MessageQuery, TItem)), IDictionary(Of MessageQuery, TItem), IEnumerable(Of KeyValuePair(Of MessageQuery, TItem))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TItem&gt;&#xA;public ref class MessageQueryTable : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TItem&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TItem&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TItem&gt;&gt;" />
+  <TypeSignature Language="F#" Value="type MessageQueryTable&lt;'Item&gt; = class&#xA;    interface IDictionary&lt;MessageQuery, 'Item&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;MessageQuery, 'Item&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;MessageQuery, 'Item&gt;&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.Add(System.Collections.Generic.KeyValuePair{System.ServiceModel.Dispatcher.MessageQuery,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As KeyValuePair(Of MessageQuery, TItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TItem&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt; -&gt; unit&#xA;override this.Add : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt; -&gt; unit" Usage="messageQueryTable.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.Add(System.ServiceModel.Dispatcher.MessageQuery,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As MessageQuery, value As TItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::ServiceModel::Dispatcher::MessageQuery ^ key, TItem value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.ServiceModel.Dispatcher.MessageQuery * 'Item -&gt; unit&#xA;override this.Add : System.ServiceModel.Dispatcher.MessageQuery * 'Item -&gt; unit" Usage="messageQueryTable.Add (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="messageQueryTable.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.Contains(System.Collections.Generic.KeyValuePair{System.ServiceModel.Dispatcher.MessageQuery,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As KeyValuePair(Of MessageQuery, TItem)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TItem&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt; -&gt; bool&#xA;override this.Contains : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt; -&gt; bool" Usage="messageQueryTable.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.ContainsKey(System.ServiceModel.Dispatcher.MessageQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As MessageQuery) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::ServiceModel::Dispatcher::MessageQuery ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : System.ServiceModel.Dispatcher.MessageQuery -&gt; bool&#xA;override this.ContainsKey : System.ServiceModel.Dispatcher.MessageQuery -&gt; bool" Usage="messageQueryTable.ContainsKey key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.CopyTo(System.Collections.Generic.KeyValuePair{System.ServiceModel.Dispatcher.MessageQuery,`0}[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As KeyValuePair(Of MessageQuery, TItem)(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TItem&gt;&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt;[] * int -&gt; unit&#xA;override this.CopyTo : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt;[] * int -&gt; unit" Usage="messageQueryTable.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.MessageQueryTable`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ServiceModel.Dispatcher.MessageQueryTable&lt;'Item&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -264,6 +272,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.ServiceModel.Dispatcher.MessageQuery, !!TResult&gt;&gt; Evaluate&lt;TResult&gt;(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.Evaluate``1(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TResult&gt;&gt; ^ Evaluate(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="member this.Evaluate : System.ServiceModel.Channels.Message -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Result&gt;&gt;" Usage="messageQueryTable.Evaluate message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -295,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.Evaluate``1(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="VB.NET" Value="Public Function Evaluate(Of TResult) (buffer As MessageBuffer) As IEnumerable(Of KeyValuePair(Of MessageQuery, TResult))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TResult&gt;&gt; ^ Evaluate(System::ServiceModel::Channels::MessageBuffer ^ buffer);" />
+      <MemberSignature Language="F#" Value="member this.Evaluate : System.ServiceModel.Channels.MessageBuffer -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Result&gt;&gt;" Usage="messageQueryTable.Evaluate buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -326,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of MessageQuery, TItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TItem&gt;&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt;&gt;" Usage="messageQueryTable.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -353,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.MessageQueryTable`1.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ServiceModel.Dispatcher.MessageQueryTable&lt;'Item&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -378,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.MessageQueryTable`1.Item(System.ServiceModel.Dispatcher.MessageQuery)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As MessageQuery) As TItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TItem default[System::ServiceModel::Dispatcher::MessageQuery ^] { TItem get(System::ServiceModel::Dispatcher::MessageQuery ^ key); void set(System::ServiceModel::Dispatcher::MessageQuery ^ key, TItem value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(System.ServiceModel.Dispatcher.MessageQuery) : 'Item with get, set" Usage="System.ServiceModel.Dispatcher.MessageQueryTable&lt;'Item&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -405,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.MessageQueryTable`1.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of MessageQuery)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::MessageQuery ^&gt; ^ Keys { System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::MessageQuery ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageQuery&gt;" Usage="System.ServiceModel.Dispatcher.MessageQueryTable&lt;'Item&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -440,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.Remove(System.Collections.Generic.KeyValuePair{System.ServiceModel.Dispatcher.MessageQuery,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As KeyValuePair(Of MessageQuery, TItem)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Collections::Generic::KeyValuePair&lt;System::ServiceModel::Dispatcher::MessageQuery ^, TItem&gt; item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt; -&gt; bool&#xA;override this.Remove : System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageQuery, 'Item&gt; -&gt; bool" Usage="messageQueryTable.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -469,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.Remove(System.ServiceModel.Dispatcher.MessageQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (key As MessageQuery) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::ServiceModel::Dispatcher::MessageQuery ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.ServiceModel.Dispatcher.MessageQuery -&gt; bool&#xA;override this.Remove : System.ServiceModel.Dispatcher.MessageQuery -&gt; bool" Usage="messageQueryTable.Remove key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
@@ -525,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageQueryTable`1.TryGetValue(System.ServiceModel.Dispatcher.MessageQuery,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As MessageQuery, ByRef value As TItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::ServiceModel::Dispatcher::MessageQuery ^ key, [Runtime::InteropServices::Out] TItem % value);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : System.ServiceModel.Dispatcher.MessageQuery *  -&gt; bool&#xA;override this.TryGetValue : System.ServiceModel.Dispatcher.MessageQuery *  -&gt; bool" Usage="messageQueryTable.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -553,6 +570,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.MessageQueryTable`1.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of TItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;TItem&gt; ^ Values { System::Collections::Generic::ICollection&lt;TItem&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.ICollection&lt;'Item&gt;" Usage="System.ServiceModel.Dispatcher.MessageQueryTable&lt;'Item&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebActionable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebActionable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebActionable" />
+  <TypeSignature Language="F#" Value="type IWebActionable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Verbs As WebPartVerbCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ Verbs { System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : System.Web.UI.WebControls.WebParts.WebPartVerbCollection" Usage="System.Web.UI.WebControls.WebParts.IWebActionable.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

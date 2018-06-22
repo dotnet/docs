@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridCellsPanel" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridCellsPanel&#xA;Inherits VirtualizingPanel" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridCellsPanel : System::Windows::Controls::VirtualizingPanel" />
+  <TypeSignature Language="F#" Value="type DataGridCellsPanel = class&#xA;    inherit VirtualizingPanel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="dataGridCellsPanel.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub BringIndexIntoView (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void BringIndexIntoView(int index);" />
+      <MemberSignature Language="F#" Value="override this.BringIndexIntoView : int -&gt; unit" Usage="dataGridCellsPanel.BringIndexIntoView index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="dataGridCellsPanel.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.OnClearChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearChildren ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearChildren();" />
+      <MemberSignature Language="F#" Value="override this.OnClearChildren : unit -&gt; unit" Usage="dataGridCellsPanel.OnClearChildren " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.OnIsItemsHostChanged(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsItemsHostChanged (oldIsItemsHost As Boolean, newIsItemsHost As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsItemsHostChanged(bool oldIsItemsHost, bool newIsItemsHost);" />
+      <MemberSignature Language="F#" Value="override this.OnIsItemsHostChanged : bool * bool -&gt; unit" Usage="dataGridCellsPanel.OnIsItemsHostChanged (oldIsItemsHost, newIsItemsHost)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellsPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (sender As Object, args As ItemsChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Object ^ sender, System::Windows::Controls::Primitives::ItemsChangedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="override this.OnItemsChanged : obj * System.Windows.Controls.Primitives.ItemsChangedEventArgs -&gt; unit" Usage="dataGridCellsPanel.OnItemsChanged (sender, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

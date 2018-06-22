@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateActivityValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class StateActivityValidator&#xA;Inherits CompositeActivityValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateActivityValidator : System::Workflow::ComponentModel::Compiler::CompositeActivityValidator" />
+  <TypeSignature Language="F#" Value="type StateActivityValidator = class&#xA;    inherit CompositeActivityValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateActivityValidator.Validate(System.Workflow.ComponentModel.Compiler.ValidationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Validate (manager As ValidationManager, obj As Object) As ValidationErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Validate(System::Workflow::ComponentModel::Compiler::ValidationManager ^ manager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Workflow.ComponentModel.Compiler.ValidationManager * obj -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="stateActivityValidator.Validate (manager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationError ValidateActivityChange(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.ComponentModel.ActivityChangeAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateActivityValidator.ValidateActivityChange(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.ActivityChangeAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationError ^ ValidateActivityChange(System::Workflow::ComponentModel::Activity ^ activity, System::Workflow::ComponentModel::ActivityChangeAction ^ action);" />
+      <MemberSignature Language="F#" Value="override this.ValidateActivityChange : System.Workflow.ComponentModel.Activity * System.Workflow.ComponentModel.ActivityChangeAction -&gt; System.Workflow.ComponentModel.Compiler.ValidationError" Usage="stateActivityValidator.ValidateActivityChange (activity, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

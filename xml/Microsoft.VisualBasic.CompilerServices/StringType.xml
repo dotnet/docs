@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.StringType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringType" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringType sealed" />
+  <TypeSignature Language="F#" Value="type StringType = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromBoolean(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromBoolean (Value As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromBoolean(bool Value);" />
+      <MemberSignature Language="F#" Value="static member FromBoolean : bool -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromBoolean Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromByte(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromByte (Value As Byte) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromByte(System::Byte Value);" />
+      <MemberSignature Language="F#" Value="static member FromByte : byte -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromByte Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromChar (Value As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromChar(char Value);" />
+      <MemberSignature Language="F#" Value="static member FromChar : char -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromChar Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromDate (Value As DateTime) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromDate(DateTime Value);" />
+      <MemberSignature Language="F#" Value="static member FromDate : DateTime -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromDate Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromDecimal(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromDecimal (Value As Decimal) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromDecimal(System::Decimal Value);" />
+      <MemberSignature Language="F#" Value="static member FromDecimal : decimal -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromDecimal Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromDecimal(System.Decimal,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromDecimal (Value As Decimal, NumberFormat As NumberFormatInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromDecimal(System::Decimal Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member FromDecimal : decimal * System.Globalization.NumberFormatInfo -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromDecimal (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -264,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromDouble(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromDouble (Value As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromDouble(double Value);" />
+      <MemberSignature Language="F#" Value="static member FromDouble : double -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromDouble Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromDouble(System.Double,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromDouble (Value As Double, NumberFormat As NumberFormatInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromDouble(double Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member FromDouble : double * System.Globalization.NumberFormatInfo -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromDouble (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromInteger(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromInteger (Value As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromInteger(int Value);" />
+      <MemberSignature Language="F#" Value="static member FromInteger : int -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromInteger Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -362,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromLong(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromLong (Value As Long) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromLong(long Value);" />
+      <MemberSignature Language="F#" Value="static member FromLong : int64 -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromLong Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -394,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromObject(System::Object ^ Value);" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromObject Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -426,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromShort(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromShort (Value As Short) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromShort(short Value);" />
+      <MemberSignature Language="F#" Value="static member FromShort : int16 -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromShort Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -475,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromSingle(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromSingle (Value As Single) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromSingle(float Value);" />
+      <MemberSignature Language="F#" Value="static member FromSingle : single -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromSingle Value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -507,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.FromSingle(System.Single,System.Globalization.NumberFormatInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromSingle (Value As Single, NumberFormat As NumberFormatInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FromSingle(float Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
+      <MemberSignature Language="F#" Value="static member FromSingle : single * System.Globalization.NumberFormatInfo -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.StringType.FromSingle (Value, NumberFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -541,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.MidStmtStr(System.String@,System.Int32,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MidStmtStr (ByRef sDest As String, StartPosition As Integer, MaxInsertLength As Integer, sInsert As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MidStmtStr(System::String ^ % sDest, int StartPosition, int MaxInsertLength, System::String ^ sInsert);" />
+      <MemberSignature Language="F#" Value="static member MidStmtStr :  * int * int * string -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.StringType.MidStmtStr (sDest, StartPosition, MaxInsertLength, sInsert)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -578,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.StrCmp(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StrCmp (sLeft As String, sRight As String, TextCompare As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int StrCmp(System::String ^ sLeft, System::String ^ sRight, bool TextCompare);" />
+      <MemberSignature Language="F#" Value="static member StrCmp : string * string * bool -&gt; int" Usage="Microsoft.VisualBasic.CompilerServices.StringType.StrCmp (sLeft, sRight, TextCompare)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -651,6 +668,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.StrLike(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StrLike (Source As String, Pattern As String, CompareOption As CompareMethod) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool StrLike(System::String ^ Source, System::String ^ Pattern, Microsoft::VisualBasic::CompareMethod CompareOption);" />
+      <MemberSignature Language="F#" Value="static member StrLike : string * string * Microsoft.VisualBasic.CompareMethod -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.StringType.StrLike (Source, Pattern, CompareOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -687,6 +705,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.StrLikeBinary(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StrLikeBinary (Source As String, Pattern As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool StrLikeBinary(System::String ^ Source, System::String ^ Pattern);" />
+      <MemberSignature Language="F#" Value="static member StrLikeBinary : string * string -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.StringType.StrLikeBinary (Source, Pattern)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -723,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.StrLikeText(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StrLikeText (Source As String, Pattern As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool StrLikeText(System::String ^ Source, System::String ^ Pattern);" />
+      <MemberSignature Language="F#" Value="static member StrLikeText : string * string -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.StringType.StrLikeText (Source, Pattern)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

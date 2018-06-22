@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientChannelSinkStack" />
   <TypeSignature Language="VB.NET" Value="Public Interface IClientChannelSinkStack&#xA;Implements IClientResponseChannelSinkStack" />
   <TypeSignature Language="C++ CLI" Value="public interface class IClientChannelSinkStack : System::Runtime::Remoting::Channels::IClientResponseChannelSinkStack" />
+  <TypeSignature Language="F#" Value="type IClientChannelSinkStack = interface&#xA;    interface IClientResponseChannelSinkStack" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IClientChannelSinkStack.Pop(System.Runtime.Remoting.Channels.IClientChannelSink)" />
       <MemberSignature Language="VB.NET" Value="Public Function Pop (sink As IClientChannelSink) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Pop(System::Runtime::Remoting::Channels::IClientChannelSink ^ sink);" />
+      <MemberSignature Language="F#" Value="abstract member Pop : System.Runtime.Remoting.Channels.IClientChannelSink -&gt; obj" Usage="iClientChannelSinkStack.Pop sink" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Push (sink As IClientChannelSink, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Push(System::Runtime::Remoting::Channels::IClientChannelSink ^ sink, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Push : System.Runtime.Remoting.Channels.IClientChannelSink * obj -&gt; unit" Usage="iClientChannelSinkStack.Push (sink, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

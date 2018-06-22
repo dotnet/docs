@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsRuleRef&#xA;Inherits SrgsElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsRuleRef : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
+  <TypeSignature Language="F#" Value="type SrgsRuleRef = class&#xA;    inherit SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rule As SrgsRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRuleRef(System::Speech::Recognition::SrgsGrammar::SrgsRule ^ rule);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef : System.Speech.Recognition.SrgsGrammar.SrgsRule -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef rule" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -165,6 +167,7 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRuleRef(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef : Uri -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -233,6 +236,7 @@ private SrgsDocument CreateGrammarForRoute()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsRule,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rule As SrgsRule, semanticKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRuleRef(System::Speech::Recognition::SrgsGrammar::SrgsRule ^ rule, System::String ^ semanticKey);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef : System.Speech.Recognition.SrgsGrammar.SrgsRule * string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef (rule, semanticKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -350,6 +354,7 @@ namespace SampleRecognition
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, string rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRuleRef(Uri ^ uri, System::String ^ rule);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef : Uri * string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef (uri, rule)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -391,6 +396,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsRule,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rule As SrgsRule, semanticKey As String, parameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRuleRef(System::Speech::Recognition::SrgsGrammar::SrgsRule ^ rule, System::String ^ semanticKey, System::String ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef : System.Speech.Recognition.SrgsGrammar.SrgsRule * string * string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef (rule, semanticKey, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -429,6 +435,7 @@ namespace SampleRecognition
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, string rule, string semanticKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRuleRef(Uri ^ uri, System::String ^ rule, System::String ^ semanticKey);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef : Uri * string * string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef (uri, rule, semanticKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -471,6 +478,7 @@ namespace SampleRecognition
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, string rule, string semanticKey, string parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.String,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRuleRef(Uri ^ uri, System::String ^ rule, System::String ^ semanticKey, System::String ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef : Uri * string * string * string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsRuleRef (uri, rule, semanticKey, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -510,6 +518,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Dictation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Dictation As SrgsRuleRef " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Speech::Recognition::SrgsGrammar::SrgsRuleRef ^ Dictation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Dictation : System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Dictation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -529,6 +538,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Garbage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Garbage As SrgsRuleRef " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Speech::Recognition::SrgsGrammar::SrgsRuleRef ^ Garbage;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Garbage : System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Garbage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -548,6 +558,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.MnemonicSpelling" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MnemonicSpelling As SrgsRuleRef " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Speech::Recognition::SrgsGrammar::SrgsRuleRef ^ MnemonicSpelling;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MnemonicSpelling : System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.MnemonicSpelling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -567,6 +578,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SrgsRuleRef " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Speech::Recognition::SrgsGrammar::SrgsRuleRef ^ Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -586,6 +598,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Params" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Params As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Params { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Params : string" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Params" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -606,6 +619,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.SemanticKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SemanticKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SemanticKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SemanticKey : string" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.SemanticKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -626,6 +640,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -646,6 +661,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Void" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Void As SrgsRuleRef " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Speech::Recognition::SrgsGrammar::SrgsRuleRef ^ Void;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Void : System.Speech.Recognition.SrgsGrammar.SrgsRuleRef" Usage="System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Void" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

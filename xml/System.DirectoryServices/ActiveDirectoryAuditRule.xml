@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectoryAuditRule" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectoryAuditRule&#xA;Inherits ObjectAuditRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryAuditRule : System::Security::AccessControl::ObjectAuditRule" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryAuditRule = class&#xA;    inherit ObjectAuditRule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAuditRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AuditFlags auditFlags);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAuditRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AuditFlags -&gt; System.DirectoryServices.ActiveDirectoryAuditRule" Usage="new System.DirectoryServices.ActiveDirectoryAuditRule (identity, adRights, auditFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAuditRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AuditFlags auditFlags, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAuditRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AuditFlags * System.DirectoryServices.ActiveDirectorySecurityInheritance -&gt; System.DirectoryServices.ActiveDirectoryAuditRule" Usage="new System.DirectoryServices.ActiveDirectoryAuditRule (identity, adRights, auditFlags, inheritanceType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.Guid objectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAuditRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AuditFlags auditFlags, Guid objectType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAuditRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AuditFlags * Guid -&gt; System.DirectoryServices.ActiveDirectoryAuditRule" Usage="new System.DirectoryServices.ActiveDirectoryAuditRule (identity, adRights, auditFlags, objectType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAuditRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AuditFlags auditFlags, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAuditRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AuditFlags * System.DirectoryServices.ActiveDirectorySecurityInheritance * Guid -&gt; System.DirectoryServices.ActiveDirectoryAuditRule" Usage="new System.DirectoryServices.ActiveDirectoryAuditRule (identity, adRights, auditFlags, inheritanceType, inheritedObjectType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.Guid objectType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAuditRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AuditFlags auditFlags, Guid objectType, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAuditRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AuditFlags * Guid * System.DirectoryServices.ActiveDirectorySecurityInheritance -&gt; System.DirectoryServices.ActiveDirectoryAuditRule" Usage="new System.DirectoryServices.ActiveDirectoryAuditRule (identity, adRights, auditFlags, objectType, inheritanceType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.Guid objectType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectoryAuditRule(System::Security::Principal::IdentityReference ^ identity, System::DirectoryServices::ActiveDirectoryRights adRights, System::Security::AccessControl::AuditFlags auditFlags, Guid objectType, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectoryAuditRule : System.Security.Principal.IdentityReference * System.DirectoryServices.ActiveDirectoryRights * System.Security.AccessControl.AuditFlags * Guid * System.DirectoryServices.ActiveDirectorySecurityInheritance * Guid -&gt; System.DirectoryServices.ActiveDirectoryAuditRule" Usage="new System.DirectoryServices.ActiveDirectoryAuditRule (identity, adRights, auditFlags, objectType, inheritanceType, inheritedObjectType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectoryAuditRule.ActiveDirectoryRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveDirectoryRights As ActiveDirectoryRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectoryRights ActiveDirectoryRights { System::DirectoryServices::ActiveDirectoryRights get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveDirectoryRights : System.DirectoryServices.ActiveDirectoryRights" Usage="System.DirectoryServices.ActiveDirectoryAuditRule.ActiveDirectoryRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -217,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectoryAuditRule.InheritanceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritanceType As ActiveDirectorySecurityInheritance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectorySecurityInheritance InheritanceType { System::DirectoryServices::ActiveDirectorySecurityInheritance get(); };" />
+      <MemberSignature Language="F#" Value="member this.InheritanceType : System.DirectoryServices.ActiveDirectorySecurityInheritance" Usage="System.DirectoryServices.ActiveDirectoryAuditRule.InheritanceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

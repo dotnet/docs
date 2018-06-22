@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IResourceUrlGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IResourceUrlGenerator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IResourceUrlGenerator" />
+  <TypeSignature Language="F#" Value="type IResourceUrlGenerator = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetResourceUrl(class System.Type type, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IResourceUrlGenerator.GetResourceUrl(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetResourceUrl(Type ^ type, System::String ^ resourceName);" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceUrl : Type * string -&gt; string" Usage="iResourceUrlGenerator.GetResourceUrl (type, resourceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

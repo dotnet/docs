@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub HelpEventHandler(sender As Object, hlpevent As HelpEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void HelpEventHandler(System::Object ^ sender, HelpEventArgs ^ hlpevent);" />
+  <TypeSignature Language="F#" Value="type HelpEventHandler = delegate of obj * HelpEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

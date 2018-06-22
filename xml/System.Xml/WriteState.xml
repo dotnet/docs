@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.WriteState" />
   <TypeSignature Language="VB.NET" Value="Public Enum WriteState" />
   <TypeSignature Language="C++ CLI" Value="public enum class WriteState" />
+  <TypeSignature Language="F#" Value="type WriteState = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WriteState.Attribute" />
       <MemberSignature Language="VB.NET" Value="Attribute" />
       <MemberSignature Language="C++ CLI" Value="Attribute" />
+      <MemberSignature Language="F#" Value="Attribute = 3" Usage="System.Xml.WriteState.Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WriteState.Closed" />
       <MemberSignature Language="VB.NET" Value="Closed" />
       <MemberSignature Language="C++ CLI" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 5" Usage="System.Xml.WriteState.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WriteState.Content" />
       <MemberSignature Language="VB.NET" Value="Content" />
       <MemberSignature Language="C++ CLI" Value="Content" />
+      <MemberSignature Language="F#" Value="Content = 4" Usage="System.Xml.WriteState.Content" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WriteState.Element" />
       <MemberSignature Language="VB.NET" Value="Element" />
       <MemberSignature Language="C++ CLI" Value="Element" />
+      <MemberSignature Language="F#" Value="Element = 2" Usage="System.Xml.WriteState.Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WriteState.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 6" Usage="System.Xml.WriteState.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WriteState.Prolog" />
       <MemberSignature Language="VB.NET" Value="Prolog" />
       <MemberSignature Language="C++ CLI" Value="Prolog" />
+      <MemberSignature Language="F#" Value="Prolog = 1" Usage="System.Xml.WriteState.Prolog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WriteState.Start" />
       <MemberSignature Language="VB.NET" Value="Start" />
       <MemberSignature Language="C++ CLI" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 0" Usage="System.Xml.WriteState.Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

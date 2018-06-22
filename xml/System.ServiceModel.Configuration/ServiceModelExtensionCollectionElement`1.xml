@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceModelExtensionCollectionElement(Of TServiceModelExtensionElement)&#xA;Inherits ConfigurationElement&#xA;Implements ICollection(Of TServiceModelExtensionElement), IEnumerable(Of TServiceModelExtensionElement)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TServiceModelExtensionElement&gt;&#xA; where TServiceModelExtensionElement : ServiceModelExtensionElementpublic ref class ServiceModelExtensionCollectionElement abstract : System::Configuration::ConfigurationElement, System::Collections::Generic::ICollection&lt;TServiceModelExtensionElement&gt;, System::Collections::Generic::IEnumerable&lt;TServiceModelExtensionElement&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; ServiceModelExtensionElement)&gt; = class&#xA;    inherit ConfigurationElement&#xA;    interface ICollection&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; ServiceModelExtensionElement)&gt;&#xA;    interface seq&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; ServiceModelExtensionElement)&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (element As TServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(TServiceModelExtensionElement element);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'ServiceModelExtensionElement -&gt; unit&#xA;override this.Add : 'ServiceModelExtensionElement -&gt; unit" Usage="serviceModelExtensionCollectionElement.Add element" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.CanAdd(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanAdd (element As TServiceModelExtensionElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanAdd(TServiceModelExtensionElement element);" />
+      <MemberSignature Language="F#" Value="abstract member CanAdd : 'ServiceModelExtensionElement -&gt; bool&#xA;override this.CanAdd : 'ServiceModelExtensionElement -&gt; bool" Usage="serviceModelExtensionCollectionElement.CanAdd element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="serviceModelExtensionCollectionElement.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (element As TServiceModelExtensionElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(TServiceModelExtensionElement element);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'ServiceModelExtensionElement -&gt; bool&#xA;override this.Contains : 'ServiceModelExtensionElement -&gt; bool" Usage="serviceModelExtensionCollectionElement.Contains element" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (elementName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(System::String ^ elementName);" />
+      <MemberSignature Language="F#" Value="member this.ContainsKey : string -&gt; bool" Usage="serviceModelExtensionCollectionElement.ContainsKey elementName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.ContainsKey(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (elementType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(Type ^ elementType);" />
+      <MemberSignature Language="F#" Value="member this.ContainsKey : Type -&gt; bool" Usage="serviceModelExtensionCollectionElement.ContainsKey elementType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (elements As TServiceModelExtensionElement(), start As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;TServiceModelExtensionElement&gt; ^ elements, int start);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'ServiceModelExtensionElement[] * int -&gt; unit&#xA;override this.CopyTo : 'ServiceModelExtensionElement[] * int -&gt; unit" Usage="serviceModelExtensionCollectionElement.CopyTo (elements, start)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="serviceModelExtensionCollectionElement.DeserializeElement (reader, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetEnumerator () As IEnumerator(Of TServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;TServiceModelExtensionElement&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;" Usage="serviceModelExtensionCollectionElement.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -336,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsModified();" />
+      <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="serviceModelExtensionCollectionElement.IsModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -378,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As TServiceModelExtensionElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TServiceModelExtensionElement default[int] { TServiceModelExtensionElement get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'ServiceModelExtensionElement" Usage="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -402,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Item(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(extensionType As Type) As TServiceModelExtensionElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TServiceModelExtensionElement default[Type ^] { TServiceModelExtensionElement get(Type ^ extensionType); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Type) : 'ServiceModelExtensionElement" Usage="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -430,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedElement (elementName As String, reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedElement(System::String ^ elementName, System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool" Usage="serviceModelExtensionCollectionElement.OnDeserializeUnrecognizedElement (elementName, reader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -457,6 +472,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -477,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (element As TServiceModelExtensionElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(TServiceModelExtensionElement element);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'ServiceModelExtensionElement -&gt; bool&#xA;override this.Remove : 'ServiceModelExtensionElement -&gt; bool" Usage="serviceModelExtensionCollectionElement.Remove element" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -507,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="serviceModelExtensionCollectionElement.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -542,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.ResetModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ResetModified ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ResetModified();" />
+      <MemberSignature Language="F#" Value="override this.ResetModified : unit -&gt; unit" Usage="serviceModelExtensionCollectionElement.ResetModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -569,6 +588,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.SetIsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetIsModified ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetIsModified();" />
+      <MemberSignature Language="F#" Value="member this.SetIsModified : unit -&gt; unit" Usage="serviceModelExtensionCollectionElement.SetIsModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -589,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.SetReadOnly" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetReadOnly();" />
+      <MemberSignature Language="F#" Value="override this.SetReadOnly : unit -&gt; unit" Usage="serviceModelExtensionCollectionElement.SetReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -609,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.System#Collections#Generic#ICollection&lt;TServiceModelExtensionElement&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of TServiceModelExtensionElement).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;TServiceModelExtensionElement&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.System.Collections.Generic.ICollection&lt;TServiceModelExtensionElement&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -664,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" />
+      <MemberSignature Language="F#" Value="override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="serviceModelExtensionCollectionElement.Unmerge (sourceElement, parentElement, saveMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

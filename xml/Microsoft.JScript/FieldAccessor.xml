@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.FieldAccessor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FieldAccessor" />
   <TypeSignature Language="C++ CLI" Value="public ref class FieldAccessor abstract" />
+  <TypeSignature Language="F#" Value="type FieldAccessor = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FieldAccessor.GetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (thisob As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetValue(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : obj -&gt; obj" Usage="fieldAccessor.GetValue thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FieldAccessor.SetValue(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetValue (thisob As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(System::Object ^ thisob, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj -&gt; unit" Usage="fieldAccessor.SetValue (thisob, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SimpleMailWebEventProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SimpleMailWebEventProvider&#xA;Inherits MailWebEventProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SimpleMailWebEventProvider sealed : System::Web::Management::MailWebEventProvider" />
+  <TypeSignature Language="F#" Value="type SimpleMailWebEventProvider = class&#xA;    inherit MailWebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SimpleMailWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="simpleMailWebEventProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

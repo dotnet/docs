@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuntimeCompatibilityAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuntimeCompatibilityAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type RuntimeCompatibilityAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute.WrapNonExceptionThrows" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapNonExceptionThrows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrapNonExceptionThrows { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapNonExceptionThrows : bool with get, set" Usage="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute.WrapNonExceptionThrows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

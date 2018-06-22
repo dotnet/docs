@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActivityExecutionStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class ActivityExecutionStatus" />
+  <TypeSignature Language="F#" Value="type ActivityExecutionStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Canceling" />
       <MemberSignature Language="VB.NET" Value="Canceling" />
       <MemberSignature Language="C++ CLI" Value="Canceling" />
+      <MemberSignature Language="F#" Value="Canceling = 2" Usage="System.Workflow.ComponentModel.ActivityExecutionStatus.Canceling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Closed" />
       <MemberSignature Language="VB.NET" Value="Closed" />
       <MemberSignature Language="C++ CLI" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 3" Usage="System.Workflow.ComponentModel.ActivityExecutionStatus.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Compensating" />
       <MemberSignature Language="VB.NET" Value="Compensating" />
       <MemberSignature Language="C++ CLI" Value="Compensating" />
+      <MemberSignature Language="F#" Value="Compensating = 4" Usage="System.Workflow.ComponentModel.ActivityExecutionStatus.Compensating" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Executing" />
       <MemberSignature Language="VB.NET" Value="Executing" />
       <MemberSignature Language="C++ CLI" Value="Executing" />
+      <MemberSignature Language="F#" Value="Executing = 1" Usage="System.Workflow.ComponentModel.ActivityExecutionStatus.Executing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Faulting" />
       <MemberSignature Language="VB.NET" Value="Faulting" />
       <MemberSignature Language="C++ CLI" Value="Faulting" />
+      <MemberSignature Language="F#" Value="Faulting = 5" Usage="System.Workflow.ComponentModel.ActivityExecutionStatus.Faulting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Initialized" />
       <MemberSignature Language="VB.NET" Value="Initialized" />
       <MemberSignature Language="C++ CLI" Value="Initialized" />
+      <MemberSignature Language="F#" Value="Initialized = 0" Usage="System.Workflow.ComponentModel.ActivityExecutionStatus.Initialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

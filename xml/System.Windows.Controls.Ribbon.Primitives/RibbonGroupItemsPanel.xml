@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonGroupItemsPanel&#xA;Inherits Panel&#xA;Implements IProvideStarLayoutInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonGroupItemsPanel : System::Windows::Controls::Panel, System::Windows::Controls::Ribbon::Primitives::IProvideStarLayoutInfo" />
+  <TypeSignature Language="F#" Value="type RibbonGroupItemsPanel = class&#xA;    inherit Panel&#xA;    interface IProvideStarLayoutInfo&#xA;    interface IProvideStarLayoutInfoBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="ribbonGroupItemsPanel.ArrangeOverride finalSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="ribbonGroupItemsPanel.MeasureOverride availableSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.OnInitializeLayout" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnInitializeLayout ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnInitializeLayout();" />
+      <MemberSignature Language="F#" Value="abstract member OnInitializeLayout : unit -&gt; unit&#xA;override this.OnInitializeLayout : unit -&gt; unit" Usage="ribbonGroupItemsPanel.OnInitializeLayout " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.OnInitializeLayout</InterfaceMember>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.OnStarSizeAllocationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnStarSizeAllocationCompleted ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnStarSizeAllocationCompleted();" />
+      <MemberSignature Language="F#" Value="abstract member OnStarSizeAllocationCompleted : unit -&gt; unit&#xA;override this.OnStarSizeAllocationCompleted : unit -&gt; unit" Usage="ribbonGroupItemsPanel.OnStarSizeAllocationCompleted " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.OnStarSizeAllocationCompleted</InterfaceMember>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.StarLayoutCombinations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StarLayoutCombinations As IEnumerable(Of StarLayoutInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::Ribbon::Primitives::StarLayoutInfo ^&gt; ^ StarLayoutCombinations { System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::Ribbon::Primitives::StarLayoutInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StarLayoutCombinations : seq&lt;System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt;" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.StarLayoutCombinations" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.StarLayoutCombinations</InterfaceMember>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.TargetElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetElement As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ TargetElement { System::Windows::UIElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetElement : System.Windows.UIElement" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.TargetElement" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.TargetElement</InterfaceMember>

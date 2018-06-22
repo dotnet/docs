@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleConnectionStringBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OracleConnectionStringBuilder&#xA;Inherits DbConnectionStringBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class OracleConnectionStringBuilder sealed : System::Data::Common::DbConnectionStringBuilder" />
+  <TypeSignature Language="F#" Value="type OracleConnectionStringBuilder = class&#xA;    inherit DbConnectionStringBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleConnectionStringBuilder(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleConnectionStringBuilder : string -&gt; System.Data.OracleClient.OracleConnectionStringBuilder" Usage="new System.Data.OracleClient.OracleConnectionStringBuilder connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -150,6 +152,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="oracleConnectionStringBuilder.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -185,6 +188,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ContainsKey (keyword As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ContainsKey(System::String ^ keyword);" />
+      <MemberSignature Language="F#" Value="override this.ContainsKey : string -&gt; bool" Usage="oracleConnectionStringBuilder.ContainsKey keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -227,6 +231,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSource { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : string with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -270,6 +275,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Enlist" />
       <MemberSignature Language="VB.NET" Value="Public Property Enlist As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enlist { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enlist : bool with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.Enlist" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -305,6 +311,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.GetProperties(System.Collections.Hashtable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetProperties (propertyDescriptors As Hashtable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetProperties(System::Collections::Hashtable ^ propertyDescriptors);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.Collections.Hashtable -&gt; unit" Usage="oracleConnectionStringBuilder.GetProperties propertyDescriptors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -328,6 +335,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.IntegratedSecurity" />
       <MemberSignature Language="VB.NET" Value="Public Property IntegratedSecurity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IntegratedSecurity { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IntegratedSecurity : bool with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.IntegratedSecurity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -374,6 +382,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.IsFixedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -395,6 +404,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(keyword As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ keyword); void set(System::String ^ keyword, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -453,6 +463,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -490,6 +501,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.LoadBalanceTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadBalanceTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LoadBalanceTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadBalanceTimeout : int with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.LoadBalanceTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -525,6 +537,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.MaxPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPoolSize : int with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.MaxPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -560,6 +573,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.MinPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinPoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinPoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinPoolSize : int with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.MinPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -595,6 +609,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.OmitOracleConnectionName" />
       <MemberSignature Language="VB.NET" Value="Public Property OmitOracleConnectionName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OmitOracleConnectionName { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OmitOracleConnectionName : bool with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.OmitOracleConnectionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -631,6 +646,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -674,6 +690,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.PersistSecurityInfo" />
       <MemberSignature Language="VB.NET" Value="Public Property PersistSecurityInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistSecurityInfo { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PersistSecurityInfo : bool with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.PersistSecurityInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -709,6 +726,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Pooling" />
       <MemberSignature Language="VB.NET" Value="Public Property Pooling As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Pooling { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Pooling : bool with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.Pooling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -744,6 +762,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Remove (keyword As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Remove(System::String ^ keyword);" />
+      <MemberSignature Language="F#" Value="override this.Remove : string -&gt; bool" Usage="oracleConnectionStringBuilder.Remove keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -808,6 +827,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.ShouldSerialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldSerialize (keyword As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldSerialize(System::String ^ keyword);" />
+      <MemberSignature Language="F#" Value="override this.ShouldSerialize : string -&gt; bool" Usage="oracleConnectionStringBuilder.ShouldSerialize keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -840,6 +860,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetValue (keyword As String, ByRef value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryGetValue(System::String ^ keyword, [Runtime::InteropServices::Out] System::Object ^ % value);" />
+      <MemberSignature Language="F#" Value="override this.TryGetValue : string *  -&gt; bool" Usage="oracleConnectionStringBuilder.TryGetValue (keyword, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -882,6 +903,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Unicode" />
       <MemberSignature Language="VB.NET" Value="Public Property Unicode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Unicode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Unicode : bool with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.Unicode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -917,6 +939,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.UserID" />
       <MemberSignature Language="VB.NET" Value="Public Property UserID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserID : string with get, set" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.UserID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -954,6 +977,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnectionStringBuilder.Values" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Values As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Data.OracleClient.OracleConnectionStringBuilder.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

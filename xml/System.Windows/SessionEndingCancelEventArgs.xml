@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SessionEndingCancelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SessionEndingCancelEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionEndingCancelEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SessionEndingCancelEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReasonSessionEnding As ReasonSessionEnding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ReasonSessionEnding ReasonSessionEnding { System::Windows::ReasonSessionEnding get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReasonSessionEnding : System.Windows.ReasonSessionEnding" Usage="System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

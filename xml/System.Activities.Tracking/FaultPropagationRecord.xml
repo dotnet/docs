@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.FaultPropagationRecord" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FaultPropagationRecord&#xA;Inherits TrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultPropagationRecord sealed : System::Activities::Tracking::TrackingRecord" />
+  <TypeSignature Language="F#" Value="type FaultPropagationRecord = class&#xA;    inherit TrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.FaultPropagationRecord.#ctor(System.Guid,System.Int64,System.Activities.Tracking.ActivityInfo,System.Activities.Tracking.ActivityInfo,System.Boolean,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, faultSource As ActivityInfo, faultHandler As ActivityInfo, isFaultSource As Boolean, fault As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultPropagationRecord(Guid instanceId, long recordNumber, System::Activities::Tracking::ActivityInfo ^ faultSource, System::Activities::Tracking::ActivityInfo ^ faultHandler, bool isFaultSource, Exception ^ fault);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.FaultPropagationRecord : Guid * int64 * System.Activities.Tracking.ActivityInfo * System.Activities.Tracking.ActivityInfo * bool * Exception -&gt; System.Activities.Tracking.FaultPropagationRecord" Usage="new System.Activities.Tracking.FaultPropagationRecord (instanceId, recordNumber, faultSource, faultHandler, isFaultSource, fault)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.FaultPropagationRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="faultPropagationRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationRecord.Fault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fault As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Fault { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fault : Exception" Usage="System.Activities.Tracking.FaultPropagationRecord.Fault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationRecord.FaultHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FaultHandler As ActivityInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Tracking::ActivityInfo ^ FaultHandler { System::Activities::Tracking::ActivityInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FaultHandler : System.Activities.Tracking.ActivityInfo" Usage="System.Activities.Tracking.FaultPropagationRecord.FaultHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationRecord.FaultSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FaultSource As ActivityInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Tracking::ActivityInfo ^ FaultSource { System::Activities::Tracking::ActivityInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FaultSource : System.Activities.Tracking.ActivityInfo" Usage="System.Activities.Tracking.FaultPropagationRecord.FaultSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationRecord.IsFaultSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFaultSource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFaultSource { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFaultSource : bool" Usage="System.Activities.Tracking.FaultPropagationRecord.IsFaultSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.FaultPropagationRecord.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="faultPropagationRecord.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

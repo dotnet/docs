@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.PhoneCall" />
   <TypeSignature Language="VB.NET" Value="Public Class PhoneCall&#xA;Inherits TextControl&#xA;Implements IPostBackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class PhoneCall : System::Web::UI::MobileControls::TextControl, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type PhoneCall = class&#xA;    inherit TextControl&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PhoneCall.AddLinkedForms(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddLinkedForms (linkedForms As IList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddLinkedForms(System::Collections::IList ^ linkedForms);" />
+      <MemberSignature Language="F#" Value="override this.AddLinkedForms : System.Collections.IList -&gt; unit" Usage="phoneCall.AddLinkedForms linkedForms" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PhoneCall.AlternateFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternateFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternateFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternateFormat : string with get, set" Usage="System.Web.UI.MobileControls.PhoneCall.AlternateFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PhoneCall.AlternateUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternateUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternateUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternateUrl : string with get, set" Usage="System.Web.UI.MobileControls.PhoneCall.AlternateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PhoneCall.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="phoneCall.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PhoneCall.PhoneNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property PhoneNumber As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PhoneNumber { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PhoneNumber : string with get, set" Usage="System.Web.UI.MobileControls.PhoneCall.PhoneNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -296,6 +302,7 @@ decoration_character ::= "(" | ")" | "." | "-" | {space}
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PhoneCall.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaisePostBackEvent (argument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostBackEvent(System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="member this.RaisePostBackEvent : string -&gt; unit" Usage="phoneCall.RaisePostBackEvent argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -319,6 +326,7 @@ decoration_character ::= "(" | ")" | "." | "-" | {space}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PhoneCall.SoftkeyLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property SoftkeyLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoftkeyLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoftkeyLabel : string with get, set" Usage="System.Web.UI.MobileControls.PhoneCall.SoftkeyLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

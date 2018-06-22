@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoTlsConnectionInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class MonoTlsConnectionInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class MonoTlsConnectionInfo" />
+  <TypeSignature Language="F#" Value="type MonoTlsConnectionInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.CipherAlgorithmType" />
       <MemberSignature Language="VB.NET" Value="Public Property CipherAlgorithmType As CipherAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::CipherAlgorithmType CipherAlgorithmType { Mono::Security::Interface::CipherAlgorithmType get(); void set(Mono::Security::Interface::CipherAlgorithmType value); };" />
+      <MemberSignature Language="F#" Value="member this.CipherAlgorithmType : Mono.Security.Interface.CipherAlgorithmType with get, set" Usage="Mono.Security.Interface.MonoTlsConnectionInfo.CipherAlgorithmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.CipherSuiteCode" />
       <MemberSignature Language="VB.NET" Value="Public Property CipherSuiteCode As CipherSuiteCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::CipherSuiteCode CipherSuiteCode { Mono::Security::Interface::CipherSuiteCode get(); void set(Mono::Security::Interface::CipherSuiteCode value); };" />
+      <MemberSignature Language="F#" Value="member this.CipherSuiteCode : Mono.Security.Interface.CipherSuiteCode with get, set" Usage="Mono.Security.Interface.MonoTlsConnectionInfo.CipherSuiteCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.ExchangeAlgorithmType" />
       <MemberSignature Language="VB.NET" Value="Public Property ExchangeAlgorithmType As ExchangeAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::ExchangeAlgorithmType ExchangeAlgorithmType { Mono::Security::Interface::ExchangeAlgorithmType get(); void set(Mono::Security::Interface::ExchangeAlgorithmType value); };" />
+      <MemberSignature Language="F#" Value="member this.ExchangeAlgorithmType : Mono.Security.Interface.ExchangeAlgorithmType with get, set" Usage="Mono.Security.Interface.MonoTlsConnectionInfo.ExchangeAlgorithmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.HashAlgorithmType" />
       <MemberSignature Language="VB.NET" Value="Public Property HashAlgorithmType As HashAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::HashAlgorithmType HashAlgorithmType { Mono::Security::Interface::HashAlgorithmType get(); void set(Mono::Security::Interface::HashAlgorithmType value); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithmType : Mono.Security.Interface.HashAlgorithmType with get, set" Usage="Mono.Security.Interface.MonoTlsConnectionInfo.HashAlgorithmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.PeerDomainName" />
       <MemberSignature Language="VB.NET" Value="Public Property PeerDomainName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PeerDomainName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PeerDomainName : string with get, set" Usage="Mono.Security.Interface.MonoTlsConnectionInfo.PeerDomainName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.ProtocolVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtocolVersion As TlsProtocols" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::TlsProtocols ProtocolVersion { Mono::Security::Interface::TlsProtocols get(); void set(Mono::Security::Interface::TlsProtocols value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtocolVersion : Mono.Security.Interface.TlsProtocols with get, set" Usage="Mono.Security.Interface.MonoTlsConnectionInfo.ProtocolVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsConnectionInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="monoTlsConnectionInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

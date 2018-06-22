@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SerializerOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum SerializerOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class SerializerOption" />
+  <TypeSignature Language="F#" Value="type SerializerOption = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.SerializerOption.DataContractSerializer" />
       <MemberSignature Language="VB.NET" Value="DataContractSerializer" />
       <MemberSignature Language="C++ CLI" Value="DataContractSerializer" />
+      <MemberSignature Language="F#" Value="DataContractSerializer = 0" Usage="System.ServiceModel.Activities.SerializerOption.DataContractSerializer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.SerializerOption.XmlSerializer" />
       <MemberSignature Language="VB.NET" Value="XmlSerializer" />
       <MemberSignature Language="C++ CLI" Value="XmlSerializer" />
+      <MemberSignature Language="F#" Value="XmlSerializer = 1" Usage="System.ServiceModel.Activities.SerializerOption.XmlSerializer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.StringEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public Class StringEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringEnumerator" />
+  <TypeSignature Language="F#" Value="type StringEnumerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Specialized</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.StringEnumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Current { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : string" Usage="System.Collections.Specialized.StringEnumerator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringEnumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
+      <MemberSignature Language="F#" Value="member this.MoveNext : unit -&gt; bool" Usage="stringEnumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -182,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.StringEnumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="stringEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>

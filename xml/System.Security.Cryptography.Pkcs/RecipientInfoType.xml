@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.RecipientInfoType" />
   <TypeSignature Language="VB.NET" Value="Public Enum RecipientInfoType" />
   <TypeSignature Language="C++ CLI" Value="public enum class RecipientInfoType" />
+  <TypeSignature Language="F#" Value="type RecipientInfoType = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.RecipientInfoType.KeyAgreement" />
       <MemberSignature Language="VB.NET" Value="KeyAgreement" />
       <MemberSignature Language="C++ CLI" Value="KeyAgreement" />
+      <MemberSignature Language="F#" Value="KeyAgreement = 2" Usage="System.Security.Cryptography.Pkcs.RecipientInfoType.KeyAgreement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.RecipientInfoType.KeyTransport" />
       <MemberSignature Language="VB.NET" Value="KeyTransport" />
       <MemberSignature Language="C++ CLI" Value="KeyTransport" />
+      <MemberSignature Language="F#" Value="KeyTransport = 1" Usage="System.Security.Cryptography.Pkcs.RecipientInfoType.KeyTransport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.RecipientInfoType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Security.Cryptography.Pkcs.RecipientInfoType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

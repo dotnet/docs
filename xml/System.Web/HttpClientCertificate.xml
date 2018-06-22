@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpClientCertificate" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpClientCertificate&#xA;Inherits NameValueCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpClientCertificate : System::Collections::Specialized::NameValueCollection" />
+  <TypeSignature Language="F#" Value="type HttpClientCertificate = class&#xA;    inherit NameValueCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.BinaryIssuer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BinaryIssuer As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ BinaryIssuer { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinaryIssuer : byte[]" Usage="System.Web.HttpClientCertificate.BinaryIssuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.CertEncoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertEncoding As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CertEncoding { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CertEncoding : int" Usage="System.Web.HttpClientCertificate.CertEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.Certificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Certificate { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Certificate : byte[]" Usage="System.Web.HttpClientCertificate.Certificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.Cookie" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cookie As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Cookie { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cookie : string" Usage="System.Web.HttpClientCertificate.Cookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.Flags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Flags As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Flags { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : int" Usage="System.Web.HttpClientCertificate.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpClientCertificate.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (field As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Get(System::String ^ field);" />
+      <MemberSignature Language="F#" Value="abstract member Get : string -&gt; string&#xA;override this.Get : string -&gt; string" Usage="httpClientCertificate.Get field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.IsPresent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPresent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPresent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPresent : bool" Usage="System.Web.HttpClientCertificate.IsPresent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.Issuer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Issuer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Issuer { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Issuer : string" Usage="System.Web.HttpClientCertificate.Issuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Web.HttpClientCertificate.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeySize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeySize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeySize : int" Usage="System.Web.HttpClientCertificate.KeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -266,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ PublicKey { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : byte[]" Usage="System.Web.HttpClientCertificate.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -286,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.SecretKeySize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecretKeySize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SecretKeySize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecretKeySize : int" Usage="System.Web.HttpClientCertificate.SecretKeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -306,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.SerialNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerialNumber As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerialNumber { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerialNumber : string" Usage="System.Web.HttpClientCertificate.SerialNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.ServerIssuer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerIssuer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerIssuer { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerIssuer : string" Usage="System.Web.HttpClientCertificate.ServerIssuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -346,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.ServerSubject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerSubject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerSubject { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerSubject : string" Usage="System.Web.HttpClientCertificate.ServerSubject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -366,6 +382,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.Subject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Subject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : string" Usage="System.Web.HttpClientCertificate.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -393,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.ValidFrom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidFrom As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ValidFrom { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidFrom : DateTime" Usage="System.Web.HttpClientCertificate.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -413,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpClientCertificate.ValidUntil" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidUntil As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ValidUntil { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidUntil : DateTime" Usage="System.Web.HttpClientCertificate.ValidUntil" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

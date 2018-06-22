@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ContextDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContextDataSourceView&#xA;Inherits QueryableDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextDataSourceView abstract : System::Web::UI::WebControls::QueryableDataSourceView" />
+  <TypeSignature Language="F#" Value="type ContextDataSourceView = class&#xA;    inherit QueryableDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.#ctor(System.Web.UI.DataSourceControl,System.String,System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As DataSourceControl, viewName As String, context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ContextDataSourceView(System::Web::UI::DataSourceControl ^ owner, System::String ^ viewName, System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ContextDataSourceView : System.Web.UI.DataSourceControl * string * System.Web.HttpContext -&gt; System.Web.UI.WebControls.ContextDataSourceView" Usage="new System.Web.UI.WebControls.ContextDataSourceView (owner, viewName, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.Context" />
       <MemberSignature Language="VB.NET" Value="Protected Property Context As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ Context { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : obj with get, set" Usage="System.Web.UI.WebControls.ContextDataSourceView.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.ContextType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContextType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ContextType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextType : Type" Usage="System.Web.UI.WebControls.ContextDataSourceView.ContextType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.ContextTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContextTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextTypeName : string with get, set" Usage="System.Web.UI.WebControls.ContextDataSourceView.ContextTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.CreateContext(System.Web.UI.DataSourceOperation)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateContext (operation As DataSourceOperation) As ContextDataSourceContextData" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ContextDataSourceContextData ^ CreateContext(System::Web::UI::DataSourceOperation operation);" />
+      <MemberSignature Language="F#" Value="abstract member CreateContext : System.Web.UI.DataSourceOperation -&gt; System.Web.UI.WebControls.ContextDataSourceContextData&#xA;override this.CreateContext : System.Web.UI.DataSourceOperation -&gt; System.Web.UI.WebControls.ContextDataSourceContextData" Usage="contextDataSourceView.CreateContext operation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.DisposeContext" />
       <MemberSignature Language="VB.NET" Value="Protected Sub DisposeContext ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DisposeContext();" />
+      <MemberSignature Language="F#" Value="member this.DisposeContext : unit -&gt; unit" Usage="contextDataSourceView.DisposeContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.DisposeContext(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DisposeContext (dataContext As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DisposeContext(System::Object ^ dataContext);" />
+      <MemberSignature Language="F#" Value="abstract member DisposeContext : obj -&gt; unit&#xA;override this.DisposeContext : obj -&gt; unit" Usage="contextDataSourceView.DisposeContext dataContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -183,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntitySet" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property EntitySet As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ EntitySet { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySet : obj" Usage="System.Web.UI.WebControls.ContextDataSourceView.EntitySet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -203,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntitySetName" />
       <MemberSignature Language="VB.NET" Value="Public Property EntitySetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntitySetName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySetName : string with get, set" Usage="System.Web.UI.WebControls.ContextDataSourceView.EntitySetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntitySetType" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property EntitySetType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ EntitySetType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySetType : Type" Usage="System.Web.UI.WebControls.ContextDataSourceView.EntitySetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -243,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntityType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property EntityType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ EntityType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityType : Type" Usage="System.Web.UI.WebControls.ContextDataSourceView.EntityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -263,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceView.EntityTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntityTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntityTypeName : string with get, set" Usage="System.Web.UI.WebControls.ContextDataSourceView.EntityTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -283,6 +296,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ContextDataSourceView.EventContextCreated" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly EventContextCreated As Object " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Object ^ EventContextCreated;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EventContextCreated : obj" Usage="System.Web.UI.WebControls.ContextDataSourceView.EventContextCreated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -302,6 +316,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ContextDataSourceView.EventContextCreating" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly EventContextCreating As Object " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Object ^ EventContextCreating;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EventContextCreating : obj" Usage="System.Web.UI.WebControls.ContextDataSourceView.EventContextCreating" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -321,6 +336,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ContextDataSourceView.EventContextDisposing" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly EventContextDisposing As Object " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Object ^ EventContextDisposing;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EventContextDisposing : obj" Usage="System.Web.UI.WebControls.ContextDataSourceView.EventContextDisposing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -340,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDelete (keys As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteDelete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteDelete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="contextDataSourceView.ExecuteDelete (keys, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -366,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteInsert (values As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteInsert(System::Collections::IDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteInsert : System.Collections.IDictionary -&gt; int" Usage="contextDataSourceView.ExecuteInsert values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -390,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteUpdate (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteUpdate(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteUpdate : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="contextDataSourceView.ExecuteUpdate (keys, values, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -417,6 +436,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type GetDataObjectType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.GetDataObjectType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetDataObjectType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataObjectType : Type -&gt; Type&#xA;override this.GetDataObjectType : Type -&gt; Type" Usage="contextDataSourceView.GetDataObjectType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -441,6 +461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.GetEntitySetType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetEntitySetType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetEntitySetType();" />
+      <MemberSignature Language="F#" Value="abstract member GetEntitySetType : unit -&gt; Type&#xA;override this.GetEntitySetType : unit -&gt; Type" Usage="contextDataSourceView.GetEntitySetType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -462,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceView.GetSource(System.Web.UI.WebControls.QueryContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSource (context As QueryContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetSource(System::Web::UI::WebControls::QueryContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetSource : System.Web.UI.WebControls.QueryContext -&gt; obj" Usage="contextDataSourceView.GetSource context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

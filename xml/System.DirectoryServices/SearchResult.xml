@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SearchResult" />
   <TypeSignature Language="VB.NET" Value="Public Class SearchResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class SearchResult" />
+  <TypeSignature Language="F#" Value="type SearchResult = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -230,6 +231,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SearchResult.GetDirectoryEntry" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDirectoryEntry () As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ GetDirectoryEntry();" />
+      <MemberSignature Language="F#" Value="member this.GetDirectoryEntry : unit -&gt; System.DirectoryServices.DirectoryEntry" Usage="searchResult.GetDirectoryEntry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -298,6 +300,7 @@ Console::WriteLine(
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SearchResult.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.DirectoryServices.SearchResult.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -352,6 +355,7 @@ Console::WriteLine("The path for the 'mySearchResult' search result is : {0}\n",
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SearchResult.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As ResultPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ResultPropertyCollection ^ Properties { System::DirectoryServices::ResultPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.DirectoryServices.ResultPropertyCollection" Usage="System.DirectoryServices.SearchResult.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecific" />
   <TypeSignature Language="VB.NET" Value="Public Class DeviceSpecific&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeviceSpecific : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type DeviceSpecific = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecific.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member AddParsedSubObject : obj -&gt; unit&#xA;override this.AddParsedSubObject : obj -&gt; unit" Usage="deviceSpecific.AddParsedSubObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecific.Choices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Choices As DeviceSpecificChoiceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::DeviceSpecificChoiceCollection ^ Choices { System::Web::UI::MobileControls::DeviceSpecificChoiceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Choices : System.Web.UI.MobileControls.DeviceSpecificChoiceCollection" Usage="System.Web.UI.MobileControls.DeviceSpecific.Choices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.DeviceSpecific.DataBinding" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataBinding As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataBinding;" />
+      <MemberSignature Language="F#" Value="member this.DataBinding : EventHandler " Usage="member this.DataBinding : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.DeviceSpecific.Disposed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Disposed;" />
+      <MemberSignature Language="F#" Value="member this.Disposed : EventHandler " Usage="member this.Disposed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecific.EnableViewState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableViewState { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableViewState : bool with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecific.EnableViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -257,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecific.GetTemplate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTemplate (templateName As String) As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ITemplate ^ GetTemplate(System::String ^ templateName);" />
+      <MemberSignature Language="F#" Value="member this.GetTemplate : string -&gt; System.Web.UI.ITemplate" Usage="deviceSpecific.GetTemplate templateName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -288,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecific.HasTemplates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasTemplates As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTemplates { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasTemplates : bool" Usage="System.Web.UI.MobileControls.DeviceSpecific.HasTemplates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -317,6 +325,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.DeviceSpecific.Init" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Init As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Init;" />
+      <MemberSignature Language="F#" Value="member this.Init : EventHandler " Usage="member this.Init : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -341,6 +350,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.DeviceSpecific.Load" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Load As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Load;" />
+      <MemberSignature Language="F#" Value="member this.Load : EventHandler " Usage="member this.Load : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -365,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecific.MobilePage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MobilePage As MobilePage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobilePage ^ MobilePage { System::Web::UI::MobileControls::MobilePage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MobilePage : System.Web.UI.MobileControls.MobilePage" Usage="System.Web.UI.MobileControls.DeviceSpecific.MobilePage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -401,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecific.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Owner { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : obj" Usage="System.Web.UI.MobileControls.DeviceSpecific.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -429,6 +441,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.DeviceSpecific.PreRender" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PreRender As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreRender;" />
+      <MemberSignature Language="F#" Value="member this.PreRender : EventHandler " Usage="member this.PreRender : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -453,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecific.SelectedChoice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedChoice As DeviceSpecificChoice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::DeviceSpecificChoice ^ SelectedChoice { System::Web::UI::MobileControls::DeviceSpecificChoice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedChoice : System.Web.UI.MobileControls.DeviceSpecificChoice" Usage="System.Web.UI.MobileControls.DeviceSpecific.SelectedChoice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -496,6 +510,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.DeviceSpecific.Unload" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unload As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Unload;" />
+      <MemberSignature Language="F#" Value="member this.Unload : EventHandler " Usage="member this.Unload : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -520,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecific.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.MobileControls.DeviceSpecific.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

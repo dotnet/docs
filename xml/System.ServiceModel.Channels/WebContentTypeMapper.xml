@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebContentTypeMapper" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebContentTypeMapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebContentTypeMapper abstract" />
+  <TypeSignature Language="F#" Value="type WebContentTypeMapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebContentTypeMapper.GetMessageFormatForContentType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMessageFormatForContentType (contentType As String) As WebContentFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::WebContentFormat GetMessageFormatForContentType(System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="abstract member GetMessageFormatForContentType : string -&gt; System.ServiceModel.Channels.WebContentFormat" Usage="webContentTypeMapper.GetMessageFormatForContentType contentType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.AuthenticationOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationOption" />
+  <TypeSignature Language="F#" Value="type AuthenticationOption = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AuthenticationOption.Call" />
       <MemberSignature Language="VB.NET" Value="Call" />
       <MemberSignature Language="C++ CLI" Value="Call" />
+      <MemberSignature Language="F#" Value="Call = 3" Usage="System.EnterpriseServices.AuthenticationOption.Call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AuthenticationOption.Connect" />
       <MemberSignature Language="VB.NET" Value="Connect" />
       <MemberSignature Language="C++ CLI" Value="Connect" />
+      <MemberSignature Language="F#" Value="Connect = 2" Usage="System.EnterpriseServices.AuthenticationOption.Connect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AuthenticationOption.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.EnterpriseServices.AuthenticationOption.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AuthenticationOption.Integrity" />
       <MemberSignature Language="VB.NET" Value="Integrity" />
       <MemberSignature Language="C++ CLI" Value="Integrity" />
+      <MemberSignature Language="F#" Value="Integrity = 5" Usage="System.EnterpriseServices.AuthenticationOption.Integrity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AuthenticationOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.EnterpriseServices.AuthenticationOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AuthenticationOption.Packet" />
       <MemberSignature Language="VB.NET" Value="Packet" />
       <MemberSignature Language="C++ CLI" Value="Packet" />
+      <MemberSignature Language="F#" Value="Packet = 4" Usage="System.EnterpriseServices.AuthenticationOption.Packet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AuthenticationOption.Privacy" />
       <MemberSignature Language="VB.NET" Value="Privacy" />
       <MemberSignature Language="C++ CLI" Value="Privacy" />
+      <MemberSignature Language="F#" Value="Privacy = 6" Usage="System.EnterpriseServices.AuthenticationOption.Privacy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

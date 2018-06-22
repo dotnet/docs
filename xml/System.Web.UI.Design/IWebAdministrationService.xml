@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebAdministrationService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebAdministrationService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebAdministrationService" />
+  <TypeSignature Language="F#" Value="type IWebAdministrationService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebAdministrationService.Start(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start (arguments As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(System::Collections::IDictionary ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member Start : System.Collections.IDictionary -&gt; unit" Usage="iWebAdministrationService.Start arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

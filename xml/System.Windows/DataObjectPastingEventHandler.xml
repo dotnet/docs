@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectPastingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataObjectPastingEventHandler(sender As Object, e As DataObjectPastingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataObjectPastingEventHandler(System::Object ^ sender, DataObjectPastingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataObjectPastingEventHandler = delegate of obj * DataObjectPastingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

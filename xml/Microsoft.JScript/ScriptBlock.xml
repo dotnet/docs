@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ScriptBlock" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptBlock&#xA;Inherits AST" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptBlock : Microsoft::JScript::AST" />
+  <TypeSignature Language="F#" Value="type ScriptBlock = class&#xA;    inherit AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

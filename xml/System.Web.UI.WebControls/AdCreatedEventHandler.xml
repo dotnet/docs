@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AdCreatedEventHandler(sender As Object, e As AdCreatedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AdCreatedEventHandler(System::Object ^ sender, AdCreatedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AdCreatedEventHandler = delegate of obj * AdCreatedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.PartBuilder`1" />
   <TypeSignature Language="VB.NET" Value="Public Class PartBuilder(Of T)&#xA;Inherits PartBuilder" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class PartBuilder : System::ComponentModel::Composition::Registration::PartBuilder" />
+  <TypeSignature Language="F#" Value="type PartBuilder&lt;'T&gt; = class&#xA;    inherit PartBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ExportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperty (propertyFilter As Expression(Of Func(Of T, Object))) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ExportProperty(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperty : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.ExportProperty propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ExportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.ComponentModel.Composition.Registration.ExportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperty (propertyFilter As Expression(Of Func(Of T, Object)), exportConfiguration As Action(Of ExportBuilder)) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ExportProperty(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ propertyFilter, Action&lt;System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperty : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; * Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.ExportProperty (propertyFilter, exportConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ExportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperty(Of TContract) (propertyFilter As Expression(Of Func(Of T, Object))) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContract&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ExportProperty(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperty : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.ExportProperty propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ExportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.ComponentModel.Composition.Registration.ExportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperty(Of TContract) (propertyFilter As Expression(Of Func(Of T, Object)), exportConfiguration As Action(Of ExportBuilder)) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContract&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ExportProperty(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ propertyFilter, Action&lt;System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperty : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; * Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.ExportProperty (propertyFilter, exportConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ImportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperty (propertyFilter As Expression(Of Func(Of T, Object))) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ImportProperty(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperty : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.ImportProperty propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ImportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.ComponentModel.Composition.Registration.ImportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperty (propertyFilter As Expression(Of Func(Of T, Object)), importConfiguration As Action(Of ImportBuilder)) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ImportProperty(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ propertyFilter, Action&lt;System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ importConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperty : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; * Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.ImportProperty (propertyFilter, importConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ImportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperty(Of TContract) (propertyFilter As Expression(Of Func(Of T, Object))) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContract&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ImportProperty(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperty : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.ImportProperty propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ImportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.ComponentModel.Composition.Registration.ImportBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperty(Of TContract) (propertyFilter As Expression(Of Func(Of T, Object)), importConfiguration As Action(Of ImportBuilder)) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContract&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ ImportProperty(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ propertyFilter, Action&lt;System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ importConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperty : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; * Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.ImportProperty (propertyFilter, importConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -277,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.SelectConstructor(System.Linq.Expressions.Expression{System.Func{System.ComponentModel.Composition.Registration.ParameterImportBuilder,`0}})" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectConstructor (constructorFilter As Expression(Of Func(Of ParameterImportBuilder, T))) As PartBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder&lt;T&gt; ^ SelectConstructor(System::Linq::Expressions::Expression&lt;Func&lt;System::ComponentModel::Composition::Registration::ParameterImportBuilder ^, T&gt; ^&gt; ^ constructorFilter);" />
+      <MemberSignature Language="F#" Value="override this.SelectConstructor : System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Registration.ParameterImportBuilder, 'T&gt;&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder&lt;'T&gt;" Usage="partBuilder.SelectConstructor constructorFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>

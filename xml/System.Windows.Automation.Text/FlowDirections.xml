@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.FlowDirections" />
   <TypeSignature Language="VB.NET" Value="Public Enum FlowDirections" />
   <TypeSignature Language="C++ CLI" Value="public enum class FlowDirections" />
+  <TypeSignature Language="F#" Value="type FlowDirections = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.BottomToTop" />
       <MemberSignature Language="VB.NET" Value="BottomToTop" />
       <MemberSignature Language="C++ CLI" Value="BottomToTop" />
+      <MemberSignature Language="F#" Value="BottomToTop = 2" Usage="System.Windows.Automation.Text.FlowDirections.BottomToTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Automation.Text.FlowDirections.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="RightToLeft" />
       <MemberSignature Language="C++ CLI" Value="RightToLeft" />
+      <MemberSignature Language="F#" Value="RightToLeft = 1" Usage="System.Windows.Automation.Text.FlowDirections.RightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.Vertical" />
       <MemberSignature Language="VB.NET" Value="Vertical" />
       <MemberSignature Language="C++ CLI" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 4" Usage="System.Windows.Automation.Text.FlowDirections.Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

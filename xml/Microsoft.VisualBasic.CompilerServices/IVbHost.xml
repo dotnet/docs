@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.IVbHost" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVbHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IVbHost" />
+  <TypeSignature Language="F#" Value="type IVbHost = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.IVbHost.GetParentWindow" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentWindow () As IWin32Window" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::IWin32Window ^ GetParentWindow();" />
+      <MemberSignature Language="F#" Value="abstract member GetParentWindow : unit -&gt; System.Windows.Forms.IWin32Window" Usage="iVbHost.GetParentWindow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.IVbHost.GetWindowTitle" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWindowTitle () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetWindowTitle();" />
+      <MemberSignature Language="F#" Value="abstract member GetWindowTitle : unit -&gt; string" Usage="iVbHost.GetWindowTitle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

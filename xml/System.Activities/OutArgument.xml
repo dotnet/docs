@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.OutArgument" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class OutArgument&#xA;Inherits Argument" />
   <TypeSignature Language="C++ CLI" Value="public ref class OutArgument abstract : System::Activities::Argument" />
+  <TypeSignature Language="F#" Value="type OutArgument = class&#xA;    inherit Argument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument.CreateReference(System.Activities.InOutArgument,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReference (argumentToReference As InOutArgument, referencedArgumentName As String) As OutArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::OutArgument ^ CreateReference(System::Activities::InOutArgument ^ argumentToReference, System::String ^ referencedArgumentName);" />
+      <MemberSignature Language="F#" Value="static member CreateReference : System.Activities.InOutArgument * string -&gt; System.Activities.OutArgument" Usage="System.Activities.OutArgument.CreateReference (argumentToReference, referencedArgumentName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument.CreateReference(System.Activities.OutArgument,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReference (argumentToReference As OutArgument, referencedArgumentName As String) As OutArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::OutArgument ^ CreateReference(System::Activities::OutArgument ^ argumentToReference, System::String ^ referencedArgumentName);" />
+      <MemberSignature Language="F#" Value="static member CreateReference : System.Activities.OutArgument * string -&gt; System.Activities.OutArgument" Usage="System.Activities.OutArgument.CreateReference (argumentToReference, referencedArgumentName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

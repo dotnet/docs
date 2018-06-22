@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHierarchicalDataSourceDesigner" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHierarchicalDataSourceDesigner" />
+  <TypeSignature Language="F#" Value="type IHierarchicalDataSourceDesigner = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanConfigure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanConfigure { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanConfigure : bool" Usage="System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRefreshSchema As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRefreshSchema : bool" Usage="System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" />
       <MemberSignature Language="VB.NET" Value="Public Sub Configure ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Configure();" />
+      <MemberSignature Language="F#" Value="abstract member Configure : unit -&gt; unit" Usage="iHierarchicalDataSourceDesigner.Configure " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.DataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Event DataSourceChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetView (viewPath As String) As DesignerHierarchicalDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::DesignerHierarchicalDataSourceView ^ GetView(System::String ^ viewPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetView : string -&gt; System.Web.UI.Design.DesignerHierarchicalDataSourceView" Usage="iHierarchicalDataSourceDesigner.GetView viewPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshSchema (preferSilent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshSchema(bool preferSilent);" />
+      <MemberSignature Language="F#" Value="abstract member RefreshSchema : bool -&gt; unit" Usage="iHierarchicalDataSourceDesigner.RefreshSchema preferSilent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResumeDataSourceEvents ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResumeDataSourceEvents();" />
+      <MemberSignature Language="F#" Value="abstract member ResumeDataSourceEvents : unit -&gt; unit" Usage="iHierarchicalDataSourceDesigner.ResumeDataSourceEvents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SchemaRefreshed" />
       <MemberSignature Language="VB.NET" Value="Event SchemaRefreshed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SchemaRefreshed;" />
+      <MemberSignature Language="F#" Value="member this.SchemaRefreshed : EventHandler " Usage="member this.SchemaRefreshed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" />
       <MemberSignature Language="VB.NET" Value="Public Sub SuppressDataSourceEvents ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SuppressDataSourceEvents();" />
+      <MemberSignature Language="F#" Value="abstract member SuppressDataSourceEvents : unit -&gt; unit" Usage="iHierarchicalDataSourceDesigner.SuppressDataSourceEvents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

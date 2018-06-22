@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.HttpMethodConstraint" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpMethodConstraint&#xA;Implements IRouteConstraint" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpMethodConstraint : System::Web::Routing::IRouteConstraint" />
+  <TypeSignature Language="F#" Value="type HttpMethodConstraint = class&#xA;    interface IRouteConstraint" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.HttpMethodConstraint.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray allowedMethods As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpMethodConstraint(... cli::array &lt;System::String ^&gt; ^ allowedMethods);" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.HttpMethodConstraint : string[] -&gt; System.Web.Routing.HttpMethodConstraint" Usage="new System.Web.Routing.HttpMethodConstraint allowedMethods" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.HttpMethodConstraint.AllowedMethods" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedMethods As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ AllowedMethods { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedMethods : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.Web.Routing.HttpMethodConstraint.AllowedMethods" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool Match(class System.Web.HttpContextBase httpContext, class System.Web.Routing.Route route, string parameterName, class System.Web.Routing.RouteValueDictionary values, valuetype System.Web.Routing.RouteDirection routeDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.HttpMethodConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool Match(System::Web::HttpContextBase ^ httpContext, System::Web::Routing::Route ^ route, System::String ^ parameterName, System::Web::Routing::RouteValueDictionary ^ values, System::Web::Routing::RouteDirection routeDirection);" />
+      <MemberSignature Language="F#" Value="abstract member Match : System.Web.HttpContextBase * System.Web.Routing.Route * string * System.Web.Routing.RouteValueDictionary * System.Web.Routing.RouteDirection -&gt; bool&#xA;override this.Match : System.Web.HttpContextBase * System.Web.Routing.Route * string * System.Web.Routing.RouteValueDictionary * System.Web.Routing.RouteDirection -&gt; bool" Usage="httpMethodConstraint.Match (httpContext, route, parameterName, values, routeDirection)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Routing.IRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)</InterfaceMember>

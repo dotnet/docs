@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AdCreatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AdCreatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AdCreatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdCreatedEventArgs.#ctor(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (adProperties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AdCreatedEventArgs(System::Collections::IDictionary ^ adProperties);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.AdCreatedEventArgs : System.Collections.IDictionary -&gt; System.Web.UI.WebControls.AdCreatedEventArgs" Usage="new System.Web.UI.WebControls.AdCreatedEventArgs adProperties" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdProperties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ AdProperties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdProperties : System.Collections.IDictionary" Usage="System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdCreatedEventArgs.AlternateText" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternateText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternateText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternateText : string with get, set" Usage="System.Web.UI.WebControls.AdCreatedEventArgs.AlternateText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -240,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -306,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

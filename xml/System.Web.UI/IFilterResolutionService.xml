@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IFilterResolutionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFilterResolutionService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFilterResolutionService" />
+  <TypeSignature Language="F#" Value="type IFilterResolutionService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IFilterResolutionService.CompareFilters(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareFilters (filter1 As String, filter2 As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareFilters(System::String ^ filter1, System::String ^ filter2);" />
+      <MemberSignature Language="F#" Value="abstract member CompareFilters : string * string -&gt; int" Usage="iFilterResolutionService.CompareFilters (filter1, filter2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function EvaluateFilter (filterName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EvaluateFilter(System::String ^ filterName);" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateFilter : string -&gt; bool" Usage="iFilterResolutionService.EvaluateFilter filterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

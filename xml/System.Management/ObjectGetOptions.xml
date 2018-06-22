@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectGetOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectGetOptions&#xA;Inherits ManagementOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectGetOptions : System::Management::ManagementOptions" />
+  <TypeSignature Language="F#" Value="type ObjectGetOptions = class&#xA;    inherit ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectGetOptions.#ctor(System.Management.ManagementNamedValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectGetOptions(System::Management::ManagementNamedValueCollection ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Management.ObjectGetOptions : System.Management.ManagementNamedValueCollection -&gt; System.Management.ObjectGetOptions" Usage="new System.Management.ObjectGetOptions context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectGetOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection, timeout As TimeSpan, useAmendedQualifiers As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectGetOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout, bool useAmendedQualifiers);" />
+      <MemberSignature Language="F#" Value="new System.Management.ObjectGetOptions : System.Management.ManagementNamedValueCollection * TimeSpan * bool -&gt; System.Management.ObjectGetOptions" Usage="new System.Management.ObjectGetOptions (context, timeout, useAmendedQualifiers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectGetOptions.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="objectGetOptions.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ObjectGetOptions.UseAmendedQualifiers" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAmendedQualifiers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAmendedQualifiers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseAmendedQualifiers : bool with get, set" Usage="System.Management.ObjectGetOptions.UseAmendedQualifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

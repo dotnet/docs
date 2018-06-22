@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapSchemaMember" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapSchemaMember" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapSchemaMember" />
+  <TypeSignature Language="F#" Value="type SoapSchemaMember = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapSchemaMember.MemberName" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="System.Xml.Serialization.SoapSchemaMember.MemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapSchemaMember.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberType As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ MemberType { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Serialization.SoapSchemaMember.MemberType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

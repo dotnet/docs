@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ClientBuildManagerParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientBuildManagerParameter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientBuildManagerParameter" />
+  <TypeSignature Language="F#" Value="type ClientBuildManagerParameter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManagerParameter.ExcludedVirtualPaths" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExcludedVirtualPaths As List(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ ExcludedVirtualPaths { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExcludedVirtualPaths : System.Collections.Generic.List&lt;string&gt;" Usage="System.Web.Compilation.ClientBuildManagerParameter.ExcludedVirtualPaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManagerParameter.PrecompilationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property PrecompilationFlags As PrecompilationFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Compilation::PrecompilationFlags PrecompilationFlags { System::Web::Compilation::PrecompilationFlags get(); void set(System::Web::Compilation::PrecompilationFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.PrecompilationFlags : System.Web.Compilation.PrecompilationFlags with get, set" Usage="System.Web.Compilation.ClientBuildManagerParameter.PrecompilationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property StrongNameKeyContainer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StrongNameKeyContainer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StrongNameKeyContainer : string with get, set" Usage="System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyFile" />
       <MemberSignature Language="VB.NET" Value="Public Property StrongNameKeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StrongNameKeyFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StrongNameKeyFile : string with get, set" Usage="System.Web.Compilation.ClientBuildManagerParameter.StrongNameKeyFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.HttpMethodAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpMethodAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpMethodAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type HttpMethodAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpMethodAttribute.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (returnFormatter As Type, parameterFormatter As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpMethodAttribute(Type ^ returnFormatter, Type ^ parameterFormatter);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.HttpMethodAttribute : Type * Type -&gt; System.Web.Services.Protocols.HttpMethodAttribute" Usage="new System.Web.Services.Protocols.HttpMethodAttribute (returnFormatter, parameterFormatter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpMethodAttribute.ParameterFormatter" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterFormatter As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ParameterFormatter { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterFormatter : Type with get, set" Usage="System.Web.Services.Protocols.HttpMethodAttribute.ParameterFormatter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnFormatter As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnFormatter { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnFormatter : Type with get, set" Usage="System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

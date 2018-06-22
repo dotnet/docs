@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ScrollType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollType" />
+  <TypeSignature Language="F#" Value="type ScrollType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.First" />
       <MemberSignature Language="VB.NET" Value="First" />
       <MemberSignature Language="C++ CLI" Value="First" />
+      <MemberSignature Language="F#" Value="First = 4" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.First" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.LargeDecrement" />
       <MemberSignature Language="VB.NET" Value="LargeDecrement" />
       <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 2" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.LargeIncrement" />
       <MemberSignature Language="VB.NET" Value="LargeIncrement" />
       <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 3" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.Last" />
       <MemberSignature Language="VB.NET" Value="Last" />
       <MemberSignature Language="C++ CLI" Value="Last" />
+      <MemberSignature Language="F#" Value="Last = 5" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.Last" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.SmallDecrement" />
       <MemberSignature Language="VB.NET" Value="SmallDecrement" />
       <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 0" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.SmallIncrement" />
       <MemberSignature Language="VB.NET" Value="SmallIncrement" />
       <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 1" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

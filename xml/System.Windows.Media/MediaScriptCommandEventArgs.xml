@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.MediaScriptCommandEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MediaScriptCommandEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class MediaScriptCommandEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type MediaScriptCommandEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaScriptCommandEventArgs.ParameterType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterType : string" Usage="System.Windows.Media.MediaScriptCommandEventArgs.ParameterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaScriptCommandEventArgs.ParameterValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterValue : string" Usage="System.Windows.Media.MediaScriptCommandEventArgs.ParameterValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

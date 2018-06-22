@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICompositeControlDesignerAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICompositeControlDesignerAccessor" />
+  <TypeSignature Language="F#" Value="type ICompositeControlDesignerAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Public Sub RecreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RecreateChildControls();" />
+      <MemberSignature Language="F#" Value="abstract member RecreateChildControls : unit -&gt; unit" Usage="iCompositeControlDesignerAccessor.RecreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

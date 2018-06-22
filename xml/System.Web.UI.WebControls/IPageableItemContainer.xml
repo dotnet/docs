@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IPageableItemContainer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPageableItemContainer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPageableItemContainer" />
+  <TypeSignature Language="F#" Value="type IPageableItemContainer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumRows As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumRows { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumRows : int" Usage="System.Web.UI.WebControls.IPageableItemContainer.MaximumRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPageProperties (startRowIndex As Integer, maximumRows As Integer, databind As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPageProperties(int startRowIndex, int maximumRows, bool databind);" />
+      <MemberSignature Language="F#" Value="abstract member SetPageProperties : int * int * bool -&gt; unit" Usage="iPageableItemContainer.SetPageProperties (startRowIndex, maximumRows, databind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartRowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartRowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartRowIndex : int" Usage="System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable" />
       <MemberSignature Language="VB.NET" Value="Event TotalRowCountAvailable As EventHandler(Of PageEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::PageEventArgs ^&gt; ^ TotalRowCountAvailable;" />
+      <MemberSignature Language="F#" Value="member this.TotalRowCountAvailable : EventHandler&lt;System.Web.UI.WebControls.PageEventArgs&gt; " Usage="member this.TotalRowCountAvailable : System.EventHandler&lt;System.Web.UI.WebControls.PageEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

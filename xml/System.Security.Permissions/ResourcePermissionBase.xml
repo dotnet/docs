@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.ResourcePermissionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResourcePermissionBase&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourcePermissionBase abstract : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type ResourcePermissionBase = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ResourcePermissionBase(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.ResourcePermissionBase : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.ResourcePermissionBase" Usage="new System.Security.Permissions.ResourcePermissionBase state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.AddPermissionAccess(System.Security.Permissions.ResourcePermissionBaseEntry)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddPermissionAccess (entry As ResourcePermissionBaseEntry)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddPermissionAccess(System::Security::Permissions::ResourcePermissionBaseEntry ^ entry);" />
+      <MemberSignature Language="F#" Value="member this.AddPermissionAccess : System.Security.Permissions.ResourcePermissionBaseEntry -&gt; unit" Usage="resourcePermissionBase.AddPermissionAccess entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.ResourcePermissionBase.Any" />
       <MemberSignature Language="VB.NET" Value="Public Const Any As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Any;" />
+      <MemberSignature Language="F#" Value="val mutable Any : string" Usage="System.Security.Permissions.ResourcePermissionBase.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.Clear" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="resourcePermissionBase.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission&#xA;override this.Copy : unit -&gt; System.Security.IPermission" Usage="resourcePermissionBase.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="resourcePermissionBase.FromXml securityElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.GetPermissionEntries" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetPermissionEntries () As ResourcePermissionBaseEntry()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Security::Permissions::ResourcePermissionBaseEntry ^&gt; ^ GetPermissionEntries();" />
+      <MemberSignature Language="F#" Value="member this.GetPermissionEntries : unit -&gt; System.Security.Permissions.ResourcePermissionBaseEntry[]" Usage="resourcePermissionBase.GetPermissionEntries " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="resourcePermissionBase.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -347,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool&#xA;override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="resourcePermissionBase.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -385,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="resourcePermissionBase.IsUnrestricted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -418,6 +429,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.ResourcePermissionBase.Local" />
       <MemberSignature Language="VB.NET" Value="Public Const Local As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Local;" />
+      <MemberSignature Language="F#" Value="val mutable Local : string" Usage="System.Security.Permissions.ResourcePermissionBase.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -448,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ResourcePermissionBase.PermissionAccessType" />
       <MemberSignature Language="VB.NET" Value="Protected Property PermissionAccessType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ PermissionAccessType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccessType : Type with get, set" Usage="System.Security.Permissions.ResourcePermissionBase.PermissionAccessType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -477,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.RemovePermissionAccess(System.Security.Permissions.ResourcePermissionBaseEntry)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemovePermissionAccess (entry As ResourcePermissionBaseEntry)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemovePermissionAccess(System::Security::Permissions::ResourcePermissionBaseEntry ^ entry);" />
+      <MemberSignature Language="F#" Value="member this.RemovePermissionAccess : System.Security.Permissions.ResourcePermissionBaseEntry -&gt; unit" Usage="resourcePermissionBase.RemovePermissionAccess entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -511,6 +525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ResourcePermissionBase.TagNames" />
       <MemberSignature Language="VB.NET" Value="Protected Property TagNames As String()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property cli::array &lt;System::String ^&gt; ^ TagNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TagNames : string[] with get, set" Usage="System.Security.Permissions.ResourcePermissionBase.TagNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -540,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="resourcePermissionBase.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -565,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ResourcePermissionBase.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="resourcePermissionBase.Union target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

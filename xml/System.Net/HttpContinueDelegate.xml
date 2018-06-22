@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.HttpContinueDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub HttpContinueDelegate(StatusCode As Integer, httpHeaders As WebHeaderCollection)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void HttpContinueDelegate(int StatusCode, WebHeaderCollection ^ httpHeaders);" />
+  <TypeSignature Language="F#" Value="type HttpContinueDelegate = delegate of int * WebHeaderCollection -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

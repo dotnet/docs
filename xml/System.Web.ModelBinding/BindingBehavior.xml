@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.BindingBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum BindingBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class BindingBehavior" />
+  <TypeSignature Language="F#" Value="type BindingBehavior = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ModelBinding.BindingBehavior.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 1" Usage="System.Web.ModelBinding.BindingBehavior.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ModelBinding.BindingBehavior.Optional" />
       <MemberSignature Language="VB.NET" Value="Optional" />
       <MemberSignature Language="C++ CLI" Value="Optional" />
+      <MemberSignature Language="F#" Value="Optional = 0" Usage="System.Web.ModelBinding.BindingBehavior.Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ModelBinding.BindingBehavior.Required" />
       <MemberSignature Language="VB.NET" Value="Required" />
       <MemberSignature Language="C++ CLI" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 2" Usage="System.Web.ModelBinding.BindingBehavior.Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

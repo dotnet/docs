@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.BoolProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BoolProperty&#xA;Inherits BaseProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class BoolProperty sealed : Microsoft::Build::Framework::XamlTypes::BaseProperty" />
+  <TypeSignature Language="F#" Value="type BoolProperty = class&#xA;    inherit BaseProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BoolProperty.ReverseSwitch" />
       <MemberSignature Language="VB.NET" Value="Public Property ReverseSwitch As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReverseSwitch { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReverseSwitch : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.BoolProperty.ReverseSwitch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

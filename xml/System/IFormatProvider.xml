@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IFormatProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFormatProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFormatProvider" />
+  <TypeSignature Language="F#" Value="type IFormatProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.IFormatProvider.GetFormat(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFormat (formatType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetFormat(Type ^ formatType);" />
+      <MemberSignature Language="F#" Value="abstract member GetFormat : Type -&gt; obj" Usage="iFormatProvider.GetFormat formatType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

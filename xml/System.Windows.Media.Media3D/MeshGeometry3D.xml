@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.MeshGeometry3D" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MeshGeometry3D&#xA;Inherits Geometry3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class MeshGeometry3D sealed : System::Windows::Media::Media3D::Geometry3D" />
+  <TypeSignature Language="F#" Value="type MeshGeometry3D = class&#xA;    inherit Geometry3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MeshGeometry3D.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Media3D::Rect3D Bounds { System::Windows::Media::Media3D::Rect3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.MeshGeometry3D.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MeshGeometry3D.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As MeshGeometry3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::MeshGeometry3D ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.MeshGeometry3D" Usage="meshGeometry3D.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MeshGeometry3D.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As MeshGeometry3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::MeshGeometry3D ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.MeshGeometry3D" Usage="meshGeometry3D.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MeshGeometry3D.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="meshGeometry3D.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MeshGeometry3D.Normals" />
       <MemberSignature Language="VB.NET" Value="Public Property Normals As Vector3DCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3DCollection ^ Normals { System::Windows::Media::Media3D::Vector3DCollection ^ get(); void set(System::Windows::Media::Media3D::Vector3DCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Normals : System.Windows.Media.Media3D.Vector3DCollection with get, set" Usage="System.Windows.Media.Media3D.MeshGeometry3D.Normals" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.MeshGeometry3D.NormalsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NormalsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NormalsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NormalsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.MeshGeometry3D.NormalsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MeshGeometry3D.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="meshGeometry3D.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MeshGeometry3D.Positions" />
       <MemberSignature Language="VB.NET" Value="Public Property Positions As Point3DCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Point3DCollection ^ Positions { System::Windows::Media::Media3D::Point3DCollection ^ get(); void set(System::Windows::Media::Media3D::Point3DCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Positions : System.Windows.Media.Media3D.Point3DCollection with get, set" Usage="System.Windows.Media.Media3D.MeshGeometry3D.Positions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -295,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.MeshGeometry3D.PositionsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PositionsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PositionsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PositionsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.MeshGeometry3D.PositionsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -314,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureCoordinates As PointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PointCollection ^ TextureCoordinates { System::Windows::Media::PointCollection ^ get(); void set(System::Windows::Media::PointCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureCoordinates : System.Windows.Media.PointCollection with get, set" Usage="System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -357,6 +368,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinatesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextureCoordinatesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextureCoordinatesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextureCoordinatesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinatesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -376,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices" />
       <MemberSignature Language="VB.NET" Value="Public Property TriangleIndices As Int32Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Int32Collection ^ TriangleIndices { System::Windows::Media::Int32Collection ^ get(); void set(System::Windows::Media::Int32Collection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TriangleIndices : System.Windows.Media.Int32Collection with get, set" Usage="System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -420,6 +433,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndicesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TriangleIndicesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TriangleIndicesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TriangleIndicesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndicesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

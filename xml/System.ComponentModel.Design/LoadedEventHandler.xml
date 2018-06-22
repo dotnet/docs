@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.LoadedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub LoadedEventHandler(sender As Object, e As LoadedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void LoadedEventHandler(System::Object ^ sender, LoadedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LoadedEventHandler = delegate of obj * LoadedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

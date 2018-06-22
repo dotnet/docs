@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IInstanceProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInstanceProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInstanceProvider" />
+  <TypeSignature Language="F#" Value="type IInstanceProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetInstance(class System.ServiceModel.InstanceContext instanceContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance(System.ServiceModel.InstanceContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetInstance(System::ServiceModel::InstanceContext ^ instanceContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetInstance : System.ServiceModel.InstanceContext -&gt; obj" Usage="iInstanceProvider.GetInstance instanceContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetInstance(class System.ServiceModel.InstanceContext instanceContext, class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetInstance(System::ServiceModel::InstanceContext ^ instanceContext, System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member GetInstance : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Message -&gt; obj" Usage="iInstanceProvider.GetInstance (instanceContext, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseInstance(class System.ServiceModel.InstanceContext instanceContext, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance(System.ServiceModel.InstanceContext,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseInstance(System::ServiceModel::InstanceContext ^ instanceContext, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseInstance : System.ServiceModel.InstanceContext * obj -&gt; unit" Usage="iInstanceProvider.ReleaseInstance (instanceContext, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

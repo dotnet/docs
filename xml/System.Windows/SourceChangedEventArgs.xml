@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SourceChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SourceChangedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SourceChangedEventArgs sealed : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type SourceChangedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SourceChangedEventArgs.#ctor(System.Windows.PresentationSource,System.Windows.PresentationSource)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oldSource As PresentationSource, newSource As PresentationSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceChangedEventArgs(System::Windows::PresentationSource ^ oldSource, System::Windows::PresentationSource ^ newSource);" />
+      <MemberSignature Language="F#" Value="new System.Windows.SourceChangedEventArgs : System.Windows.PresentationSource * System.Windows.PresentationSource -&gt; System.Windows.SourceChangedEventArgs" Usage="new System.Windows.SourceChangedEventArgs (oldSource, newSource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SourceChangedEventArgs.#ctor(System.Windows.PresentationSource,System.Windows.PresentationSource,System.Windows.IInputElement,System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oldSource As PresentationSource, newSource As PresentationSource, element As IInputElement, oldParent As IInputElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceChangedEventArgs(System::Windows::PresentationSource ^ oldSource, System::Windows::PresentationSource ^ newSource, System::Windows::IInputElement ^ element, System::Windows::IInputElement ^ oldParent);" />
+      <MemberSignature Language="F#" Value="new System.Windows.SourceChangedEventArgs : System.Windows.PresentationSource * System.Windows.PresentationSource * System.Windows.IInputElement * System.Windows.IInputElement -&gt; System.Windows.SourceChangedEventArgs" Usage="new System.Windows.SourceChangedEventArgs (oldSource, newSource, element, oldParent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SourceChangedEventArgs.Element" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Element As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ Element { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Element : System.Windows.IInputElement" Usage="System.Windows.SourceChangedEventArgs.Element" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SourceChangedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="sourceChangedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SourceChangedEventArgs.NewSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewSource As PresentationSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::PresentationSource ^ NewSource { System::Windows::PresentationSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewSource : System.Windows.PresentationSource" Usage="System.Windows.SourceChangedEventArgs.NewSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SourceChangedEventArgs.OldParent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldParent As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ OldParent { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldParent : System.Windows.IInputElement" Usage="System.Windows.SourceChangedEventArgs.OldParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SourceChangedEventArgs.OldSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldSource As PresentationSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::PresentationSource ^ OldSource { System::Windows::PresentationSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldSource : System.Windows.PresentationSource" Usage="System.Windows.SourceChangedEventArgs.OldSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

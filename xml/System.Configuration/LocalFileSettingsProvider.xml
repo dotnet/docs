@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.LocalFileSettingsProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class LocalFileSettingsProvider&#xA;Inherits SettingsProvider&#xA;Implements IApplicationSettingsProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalFileSettingsProvider : System::Configuration::SettingsProvider, System::Configuration::IApplicationSettingsProvider" />
+  <TypeSignature Language="F#" Value="type LocalFileSettingsProvider = class&#xA;    inherit SettingsProvider&#xA;    interface IApplicationSettingsProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.LocalFileSettingsProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Configuration.LocalFileSettingsProvider.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPreviousVersion (context As SettingsContext, property As SettingsProperty) As SettingsPropertyValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Configuration::SettingsPropertyValue ^ GetPreviousVersion(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsProperty ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member GetPreviousVersion : System.Configuration.SettingsContext * System.Configuration.SettingsProperty -&gt; System.Configuration.SettingsPropertyValue&#xA;override this.GetPreviousVersion : System.Configuration.SettingsContext * System.Configuration.SettingsProperty -&gt; System.Configuration.SettingsPropertyValue" Usage="localFileSettingsProvider.GetPreviousVersion (context, property)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)</InterfaceMember>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.GetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertyValues (context As SettingsContext, properties As SettingsPropertyCollection) As SettingsPropertyValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Configuration::SettingsPropertyValueCollection ^ GetPropertyValues(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyCollection ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.GetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; System.Configuration.SettingsPropertyValueCollection" Usage="localFileSettingsProvider.GetPropertyValues (context, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, values As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ values);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="localFileSettingsProvider.Initialize (name, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.Reset(System.Configuration.SettingsContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset (context As SettingsContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset(System::Configuration::SettingsContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Reset : System.Configuration.SettingsContext -&gt; unit&#xA;override this.Reset : System.Configuration.SettingsContext -&gt; unit" Usage="localFileSettingsProvider.Reset context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.Reset(System.Configuration.SettingsContext)</InterfaceMember>
@@ -295,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetPropertyValues (context As SettingsContext, values As SettingsPropertyValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetPropertyValues(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyValueCollection ^ values);" />
+      <MemberSignature Language="F#" Value="override this.SetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyValueCollection -&gt; unit" Usage="localFileSettingsProvider.SetPropertyValues (context, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -360,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Upgrade (context As SettingsContext, properties As SettingsPropertyCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Upgrade(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyCollection ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member Upgrade : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; unit&#xA;override this.Upgrade : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; unit" Usage="localFileSettingsProvider.Upgrade (context, properties)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)</InterfaceMember>

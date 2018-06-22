@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IRemoteDispatch" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteDispatch" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteDispatch" />
+  <TypeSignature Language="F#" Value="type IRemoteDispatch = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IRemoteDispatch.RemoteDispatchAutoDone(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoteDispatchAutoDone (s As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ RemoteDispatchAutoDone(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="abstract member RemoteDispatchAutoDone : string -&gt; string" Usage="iRemoteDispatch.RemoteDispatchAutoDone s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IRemoteDispatch.RemoteDispatchNotAutoDone(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoteDispatchNotAutoDone (s As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ RemoteDispatchNotAutoDone(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="abstract member RemoteDispatchNotAutoDone : string -&gt; string" Usage="iRemoteDispatch.RemoteDispatchNotAutoDone s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

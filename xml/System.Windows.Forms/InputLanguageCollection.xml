@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguageCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class InputLanguageCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputLanguageCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type InputLanguageCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguageCollection.Contains(System.Windows.Forms.InputLanguage)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As InputLanguage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::InputLanguage ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.InputLanguage -&gt; bool" Usage="inputLanguageCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguageCollection.CopyTo(System.Windows.Forms.InputLanguage[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As InputLanguage(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Forms::InputLanguage ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Windows.Forms.InputLanguage[] * int -&gt; unit" Usage="inputLanguageCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguageCollection.IndexOf(System.Windows.Forms.InputLanguage)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As InputLanguage) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::InputLanguage ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.InputLanguage -&gt; int" Usage="inputLanguageCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguageCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As InputLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::InputLanguage ^ default[int] { System::Windows::Forms::InputLanguage ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.InputLanguage" Usage="System.Windows.Forms.InputLanguageCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

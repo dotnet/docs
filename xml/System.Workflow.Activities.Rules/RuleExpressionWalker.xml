@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExpressionWalker" />
   <TypeSignature Language="VB.NET" Value="Public Class RuleExpressionWalker" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleExpressionWalker abstract sealed" />
+  <TypeSignature Language="F#" Value="type RuleExpressionWalker = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.AnalyzeUsage(System.Workflow.Activities.Rules.RuleAnalysis,System.CodeDom.CodeExpression,System.Boolean,System.Boolean,System.Workflow.Activities.Rules.RulePathQualifier)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AnalyzeUsage (analysis As RuleAnalysis, expression As CodeExpression, isRead As Boolean, isWritten As Boolean, qualifier As RulePathQualifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AnalyzeUsage(System::Workflow::Activities::Rules::RuleAnalysis ^ analysis, System::CodeDom::CodeExpression ^ expression, bool isRead, bool isWritten, System::Workflow::Activities::Rules::RulePathQualifier ^ qualifier);" />
+      <MemberSignature Language="F#" Value="static member AnalyzeUsage : System.Workflow.Activities.Rules.RuleAnalysis * System.CodeDom.CodeExpression * bool * bool * System.Workflow.Activities.Rules.RulePathQualifier -&gt; unit" Usage="System.Workflow.Activities.Rules.RuleExpressionWalker.AnalyzeUsage (analysis, expression, isRead, isWritten, qualifier)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Clone(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clone (originalExpression As CodeExpression) As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeExpression ^ Clone(System::CodeDom::CodeExpression ^ originalExpression);" />
+      <MemberSignature Language="F#" Value="static member Clone : System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeExpression" Usage="System.Workflow.Activities.Rules.RuleExpressionWalker.Clone originalExpression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Decompile(class System.Text.StringBuilder stringBuilder, class System.CodeDom.CodeExpression expression, class System.CodeDom.CodeExpression parentExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Decompile(System.Text.StringBuilder,System.CodeDom.CodeExpression,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Decompile(System::Text::StringBuilder ^ stringBuilder, System::CodeDom::CodeExpression ^ expression, System::CodeDom::CodeExpression ^ parentExpression);" />
+      <MemberSignature Language="F#" Value="static member Decompile : System.Text.StringBuilder * System.CodeDom.CodeExpression * System.CodeDom.CodeExpression -&gt; unit" Usage="System.Workflow.Activities.Rules.RuleExpressionWalker.Decompile (stringBuilder, expression, parentExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Evaluate(System.Workflow.Activities.Rules.RuleExecution,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Evaluate (execution As RuleExecution, expression As CodeExpression) As RuleExpressionResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::Activities::Rules::RuleExpressionResult ^ Evaluate(System::Workflow::Activities::Rules::RuleExecution ^ execution, System::CodeDom::CodeExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="static member Evaluate : System.Workflow.Activities.Rules.RuleExecution * System.CodeDom.CodeExpression -&gt; System.Workflow.Activities.Rules.RuleExpressionResult" Usage="System.Workflow.Activities.Rules.RuleExpressionWalker.Evaluate (execution, expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Match(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Match (firstExpression As CodeExpression, secondExpression As CodeExpression) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Match(System::CodeDom::CodeExpression ^ firstExpression, System::CodeDom::CodeExpression ^ secondExpression);" />
+      <MemberSignature Language="F#" Value="static member Match : System.CodeDom.CodeExpression * System.CodeDom.CodeExpression -&gt; bool" Usage="System.Workflow.Activities.Rules.RuleExpressionWalker.Match (firstExpression, secondExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Validate(System.Workflow.Activities.Rules.RuleValidation,System.CodeDom.CodeExpression,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Validate (validation As RuleValidation, expression As CodeExpression, isWritten As Boolean) As RuleExpressionInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::Activities::Rules::RuleExpressionInfo ^ Validate(System::Workflow::Activities::Rules::RuleValidation ^ validation, System::CodeDom::CodeExpression ^ expression, bool isWritten);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Workflow.Activities.Rules.RuleValidation * System.CodeDom.CodeExpression * bool -&gt; System.Workflow.Activities.Rules.RuleExpressionInfo" Usage="System.Workflow.Activities.Rules.RuleExpressionWalker.Validate (validation, expression, isWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

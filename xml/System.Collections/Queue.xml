@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Queue" />
   <TypeSignature Language="VB.NET" Value="Public Class Queue&#xA;Implements ICloneable, ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class Queue : ICloneable, System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type Queue = class&#xA;    interface ICollection&#xA;    interface ICloneable&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -141,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (col As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Queue(System::Collections::ICollection ^ col);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Queue : System.Collections.ICollection -&gt; System.Collections.Queue" Usage="new System.Collections.Queue col" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -188,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Queue(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Queue : int -&gt; System.Collections.Queue" Usage="new System.Collections.Queue capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -234,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.#ctor(System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, growFactor As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Queue(int capacity, float growFactor);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Queue : int * single -&gt; System.Collections.Queue" Usage="new System.Collections.Queue (capacity, growFactor)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -286,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="queue.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -338,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="queue.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -384,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="queue.Contains obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -430,6 +437,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="queue.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -498,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Queue.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Queue.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -545,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.Dequeue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Dequeue () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Dequeue();" />
+      <MemberSignature Language="F#" Value="abstract member Dequeue : unit -&gt; obj&#xA;override this.Dequeue : unit -&gt; obj" Usage="queue.Dequeue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -600,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.Enqueue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Enqueue (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Enqueue(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Enqueue : obj -&gt; unit&#xA;override this.Enqueue : obj -&gt; unit" Usage="queue.Enqueue obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -656,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="queue.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -713,6 +725,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Queue.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Collections.Queue.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -774,6 +787,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Peek () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Peek();" />
+      <MemberSignature Language="F#" Value="abstract member Peek : unit -&gt; obj&#xA;override this.Peek : unit -&gt; obj" Usage="queue.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -828,6 +842,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Queue Synchronized(class System.Collections.Queue queue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.Synchronized(System.Collections.Queue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Queue ^ Synchronized(System::Collections::Queue ^ queue);" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Collections.Queue -&gt; System.Collections.Queue" Usage="System.Collections.Queue.Synchronized queue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -893,6 +908,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Queue.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Collections.Queue.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -947,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToArray () As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Object ^&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="abstract member ToArray : unit -&gt; obj[]&#xA;override this.ToArray : unit -&gt; obj[]" Usage="queue.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -997,6 +1014,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Queue.TrimToSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TrimToSize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TrimToSize();" />
+      <MemberSignature Language="F#" Value="abstract member TrimToSize : unit -&gt; unit&#xA;override this.TrimToSize : unit -&gt; unit" Usage="queue.TrimToSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>

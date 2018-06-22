@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.IPrimitiveTypeProvider`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPrimitiveTypeProvider(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public interface class IPrimitiveTypeProvider" />
+  <TypeSignature Language="F#" Value="type IPrimitiveTypeProvider&lt;'ype&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IPrimitiveTypeProvider`1.GetPrimitiveType(System.Reflection.Metadata.PrimitiveTypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrimitiveType (typeCode As PrimitiveTypeCode) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetPrimitiveType(System::Reflection::Metadata::PrimitiveTypeCode typeCode);" />
+      <MemberSignature Language="F#" Value="abstract member GetPrimitiveType : System.Reflection.Metadata.PrimitiveTypeCode -&gt; 'ype" Usage="iPrimitiveTypeProvider.GetPrimitiveType typeCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

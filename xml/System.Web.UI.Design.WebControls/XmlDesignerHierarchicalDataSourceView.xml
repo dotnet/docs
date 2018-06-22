@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.XmlDesignerHierarchicalDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDesignerHierarchicalDataSourceView&#xA;Inherits DesignerHierarchicalDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDesignerHierarchicalDataSourceView : System::Web::UI::Design::DesignerHierarchicalDataSourceView" />
+  <TypeSignature Language="F#" Value="type XmlDesignerHierarchicalDataSourceView = class&#xA;    inherit DesignerHierarchicalDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDesignerHierarchicalDataSourceView.#ctor(System.Web.UI.Design.WebControls.XmlDataSourceDesigner,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As XmlDataSourceDesigner, viewPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDesignerHierarchicalDataSourceView(System::Web::UI::Design::WebControls::XmlDataSourceDesigner ^ owner, System::String ^ viewPath);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.XmlDesignerHierarchicalDataSourceView : System.Web.UI.Design.WebControls.XmlDataSourceDesigner * string -&gt; System.Web.UI.Design.WebControls.XmlDesignerHierarchicalDataSourceView" Usage="new System.Web.UI.Design.WebControls.XmlDesignerHierarchicalDataSourceView (owner, viewPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDesignerHierarchicalDataSourceView.GetDesignTimeData(System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeData (ByRef isSampleData As Boolean) As IHierarchicalEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::IHierarchicalEnumerable ^ GetDesignTimeData([Runtime::InteropServices::Out] bool % isSampleData);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeData :  -&gt; System.Web.UI.IHierarchicalEnumerable" Usage="xmlDesignerHierarchicalDataSourceView.GetDesignTimeData isSampleData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDesignerHierarchicalDataSourceView.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Schema As IDataSourceSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::IDataSourceSchema ^ Schema { System::Web::UI::Design::IDataSourceSchema ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Web.UI.Design.IDataSourceSchema" Usage="System.Web.UI.Design.WebControls.XmlDesignerHierarchicalDataSourceView.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

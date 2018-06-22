@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.CompoundAce" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompoundAce&#xA;Inherits KnownAce" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompoundAce sealed : System::Security::AccessControl::KnownAce" />
+  <TypeSignature Language="F#" Value="type CompoundAce = class&#xA;    inherit KnownAce" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.AccessControl.AceFlags flags, int32 accessMask, valuetype System.Security.AccessControl.CompoundAceType compoundAceType, class System.Security.Principal.SecurityIdentifier sid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CompoundAce.#ctor(System.Security.AccessControl.AceFlags,System.Int32,System.Security.AccessControl.CompoundAceType,System.Security.Principal.SecurityIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompoundAce(System::Security::AccessControl::AceFlags flags, int accessMask, System::Security::AccessControl::CompoundAceType compoundAceType, System::Security::Principal::SecurityIdentifier ^ sid);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.CompoundAce : System.Security.AccessControl.AceFlags * int * System.Security.AccessControl.CompoundAceType * System.Security.Principal.SecurityIdentifier -&gt; System.Security.AccessControl.CompoundAce" Usage="new System.Security.AccessControl.CompoundAce (flags, accessMask, compoundAceType, sid)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CompoundAce.BinaryLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BinaryLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BinaryLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinaryLength : int" Usage="System.Security.AccessControl.CompoundAce.BinaryLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CompoundAce.CompoundAceType" />
       <MemberSignature Language="VB.NET" Value="Public Property CompoundAceType As CompoundAceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::CompoundAceType CompoundAceType { System::Security::AccessControl::CompoundAceType get(); void set(System::Security::AccessControl::CompoundAceType value); };" />
+      <MemberSignature Language="F#" Value="member this.CompoundAceType : System.Security.AccessControl.CompoundAceType with get, set" Usage="System.Security.AccessControl.CompoundAce.CompoundAceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CompoundAce.GetBinaryForm(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetBinaryForm (binaryForm As Byte(), offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
+      <MemberSignature Language="F#" Value="override this.GetBinaryForm : byte[] * int -&gt; unit" Usage="compoundAce.GetBinaryForm (binaryForm, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

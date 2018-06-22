@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveAssemblyReference" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveAssemblyReference&#xA;Inherits TaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveAssemblyReference : Microsoft::Build::Tasks::TaskExtension" />
+  <TypeSignature Language="F#" Value="type ResolveAssemblyReference = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AllowedAssemblyExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowedAssemblyExtensions As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllowedAssemblyExtensions { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedAssemblyExtensions : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.AllowedAssemblyExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AllowedRelatedFileExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowedRelatedFileExtensions As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllowedRelatedFileExtensions { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedRelatedFileExtensions : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.AllowedRelatedFileExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" />
       <MemberSignature Language="VB.NET" Value="Public Property AppConfigFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppConfigFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AppConfigFile : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.Assemblies" />
       <MemberSignature Language="VB.NET" Value="Public Property Assemblies As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Assemblies { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Assemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.Assemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AssemblyFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ AssemblyFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.AssemblyFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AutoUnify" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoUnify As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoUnify { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoUnify : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.AutoUnify" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.CandidateAssemblyFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property CandidateAssemblyFiles As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ CandidateAssemblyFiles { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CandidateAssemblyFiles : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.CandidateAssemblyFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.CopyLocalDependenciesWhenParentReferenceInGac" />
       <MemberSignature Language="VB.NET" Value="Public Property CopyLocalDependenciesWhenParentReferenceInGac As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CopyLocalDependenciesWhenParentReferenceInGac { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CopyLocalDependenciesWhenParentReferenceInGac : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.CopyLocalDependenciesWhenParentReferenceInGac" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.CopyLocalFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CopyLocalFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CopyLocalFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CopyLocalFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.CopyLocalFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -296,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveAssemblyReference.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="resolveAssemblyReference.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -319,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FilesWritten" />
       <MemberSignature Language="VB.NET" Value="Public Property FilesWritten As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ FilesWritten { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FilesWritten : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.FilesWritten" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -345,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FindDependencies" />
       <MemberSignature Language="VB.NET" Value="Public Property FindDependencies As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FindDependencies { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FindDependencies : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.FindDependencies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -374,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FindRelatedFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property FindRelatedFiles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FindRelatedFiles { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FindRelatedFiles : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.FindRelatedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -403,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FindSatellites" />
       <MemberSignature Language="VB.NET" Value="Public Property FindSatellites As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FindSatellites { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FindSatellites : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.FindSatellites" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -432,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FindSerializationAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public Property FindSerializationAssemblies As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FindSerializationAssemblies { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FindSerializationAssemblies : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.FindSerializationAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -461,6 +477,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FullFrameworkAssemblyTables" />
       <MemberSignature Language="VB.NET" Value="Public Property FullFrameworkAssemblyTables As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ FullFrameworkAssemblyTables { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FullFrameworkAssemblyTables : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.FullFrameworkAssemblyTables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -503,6 +520,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FullFrameworkFolders" />
       <MemberSignature Language="VB.NET" Value="Public Property FullFrameworkFolders As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ FullFrameworkFolders { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FullFrameworkFolders : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.FullFrameworkFolders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -524,6 +542,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FullTargetFrameworkSubsetNames" />
       <MemberSignature Language="VB.NET" Value="Public Property FullTargetFrameworkSubsetNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ FullTargetFrameworkSubsetNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FullTargetFrameworkSubsetNames : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.FullTargetFrameworkSubsetNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -552,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreDefaultInstalledAssemblySubsetTables" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreDefaultInstalledAssemblySubsetTables As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreDefaultInstalledAssemblySubsetTables { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreDefaultInstalledAssemblySubsetTables : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreDefaultInstalledAssemblySubsetTables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -574,6 +594,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreDefaultInstalledAssemblyTables" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreDefaultInstalledAssemblyTables As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreDefaultInstalledAssemblyTables { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreDefaultInstalledAssemblyTables : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreDefaultInstalledAssemblyTables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -603,6 +624,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreTargetFrameworkAttributeVersionMismatch" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreTargetFrameworkAttributeVersionMismatch As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreTargetFrameworkAttributeVersionMismatch { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreTargetFrameworkAttributeVersionMismatch : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreTargetFrameworkAttributeVersionMismatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -624,6 +646,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreVersionForFrameworkReferences" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreVersionForFrameworkReferences As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreVersionForFrameworkReferences { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreVersionForFrameworkReferences : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreVersionForFrameworkReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -645,6 +668,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.InstalledAssemblySubsetTables" />
       <MemberSignature Language="VB.NET" Value="Public Property InstalledAssemblySubsetTables As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ InstalledAssemblySubsetTables { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstalledAssemblySubsetTables : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.InstalledAssemblySubsetTables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -685,6 +709,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.InstalledAssemblyTables" />
       <MemberSignature Language="VB.NET" Value="Public Property InstalledAssemblyTables As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ InstalledAssemblyTables { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstalledAssemblyTables : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.InstalledAssemblyTables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -706,6 +731,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.LatestTargetFrameworkDirectories" />
       <MemberSignature Language="VB.NET" Value="Public Property LatestTargetFrameworkDirectories As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ LatestTargetFrameworkDirectories { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LatestTargetFrameworkDirectories : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.LatestTargetFrameworkDirectories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -727,6 +753,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ProfileName" />
       <MemberSignature Language="VB.NET" Value="Public Property ProfileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProfileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProfileName : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.ProfileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -748,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.RelatedFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ RelatedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.RelatedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -774,6 +802,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedDependencyFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedDependencyFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResolvedDependencyFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedDependencyFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedDependencyFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -800,6 +829,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResolvedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -826,6 +856,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedSDKReferences" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedSDKReferences As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResolvedSDKReferences { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedSDKReferences : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedSDKReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -849,6 +880,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SatelliteFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SatelliteFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SatelliteFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SatelliteFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.SatelliteFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -882,6 +914,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ScatterFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScatterFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ScatterFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScatterFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.ScatterFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -908,6 +941,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SearchPaths" />
       <MemberSignature Language="VB.NET" Value="Public Property SearchPaths As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ SearchPaths { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SearchPaths : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.SearchPaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -934,6 +968,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SerializationAssemblyFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationAssemblyFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SerializationAssemblyFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationAssemblyFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.SerializationAssemblyFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -960,6 +995,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.Silent" />
       <MemberSignature Language="VB.NET" Value="Public Property Silent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Silent { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Silent : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.Silent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -989,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.StateFile" />
       <MemberSignature Language="VB.NET" Value="Public Property StateFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StateFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StateFile : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.StateFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1010,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SuggestedRedirects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SuggestedRedirects As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SuggestedRedirects { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedRedirects : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.SuggestedRedirects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1043,6 +1081,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetedRuntimeVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetedRuntimeVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetedRuntimeVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetedRuntimeVersion : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.TargetedRuntimeVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1064,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkDirectories" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkDirectories As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ TargetFrameworkDirectories { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkDirectories : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkDirectories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1094,6 +1134,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkMoniker" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkMoniker As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMoniker { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMoniker : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkMoniker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1122,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkMonikerDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkMonikerDisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMonikerDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMonikerDisplayName : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkMonikerDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1150,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkSubsets" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkSubsets As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ TargetFrameworkSubsets { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkSubsets : string[] with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkSubsets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1171,6 +1214,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkVersion : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1199,6 +1243,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetProcessorArchitecture" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetProcessorArchitecture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetProcessorArchitecture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetProcessorArchitecture : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.TargetProcessorArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1220,6 +1265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.WarnOrErrorOnTargetArchitectureMismatch" />
       <MemberSignature Language="VB.NET" Value="Public Property WarnOrErrorOnTargetArchitectureMismatch As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WarnOrErrorOnTargetArchitectureMismatch { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WarnOrErrorOnTargetArchitectureMismatch : string with get, set" Usage="Microsoft.Build.Tasks.ResolveAssemblyReference.WarnOrErrorOnTargetArchitectureMismatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebServiceParser" />
   <TypeSignature Language="VB.NET" Value="Public Class WebServiceParser&#xA;Inherits SimpleWebHandlerParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebServiceParser : System::Web::UI::SimpleWebHandlerParser" />
+  <TypeSignature Language="F#" Value="type WebServiceParser = class&#xA;    inherit SimpleWebHandlerParser" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebServiceParser.DefaultDirectiveName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultDirectiveName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ DefaultDirectiveName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultDirectiveName : string" Usage="System.Web.UI.WebServiceParser.DefaultDirectiveName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebServiceParser.GetCompiledType(System.String,System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompiledType (inputFile As String, context As HttpContext) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetCompiledType(System::String ^ inputFile, System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetCompiledType : string * System.Web.HttpContext -&gt; Type" Usage="System.Web.UI.WebServiceParser.GetCompiledType (inputFile, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

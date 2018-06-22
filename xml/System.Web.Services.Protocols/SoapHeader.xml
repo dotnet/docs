@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SoapHeader" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapHeader abstract" />
+  <TypeSignature Language="F#" Value="type SoapHeader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeader.Actor" />
       <MemberSignature Language="VB.NET" Value="Public Property Actor As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Actor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Actor : string with get, set" Usage="System.Web.Services.Protocols.SoapHeader.Actor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeader.DidUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public Property DidUnderstand As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DidUnderstand { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DidUnderstand : bool with get, set" Usage="System.Web.Services.Protocols.SoapHeader.DidUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeader.EncodedMustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public Property EncodedMustUnderstand As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EncodedMustUnderstand { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncodedMustUnderstand : string with get, set" Usage="System.Web.Services.Protocols.SoapHeader.EncodedMustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -226,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeader.EncodedMustUnderstand12" />
       <MemberSignature Language="VB.NET" Value="Public Property EncodedMustUnderstand12 As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EncodedMustUnderstand12 { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncodedMustUnderstand12 : string with get, set" Usage="System.Web.Services.Protocols.SoapHeader.EncodedMustUnderstand12" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -270,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeader.EncodedRelay" />
       <MemberSignature Language="VB.NET" Value="Public Property EncodedRelay As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EncodedRelay { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncodedRelay : string with get, set" Usage="System.Web.Services.Protocols.SoapHeader.EncodedRelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -312,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeader.MustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public Property MustUnderstand As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustUnderstand { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MustUnderstand : bool with get, set" Usage="System.Web.Services.Protocols.SoapHeader.MustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -364,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeader.Relay" />
       <MemberSignature Language="VB.NET" Value="Public Property Relay As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Relay { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Relay : bool with get, set" Usage="System.Web.Services.Protocols.SoapHeader.Relay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -404,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeader.Role" />
       <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Role { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Role : string with get, set" Usage="System.Web.Services.Protocols.SoapHeader.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

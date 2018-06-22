@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextCollapsingStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextCollapsingStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextCollapsingStyle" />
+  <TypeSignature Language="F#" Value="type TextCollapsingStyle = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.TextCollapsingStyle.TrailingCharacter" />
       <MemberSignature Language="VB.NET" Value="TrailingCharacter" />
       <MemberSignature Language="C++ CLI" Value="TrailingCharacter" />
+      <MemberSignature Language="F#" Value="TrailingCharacter = 0" Usage="System.Windows.Media.TextFormatting.TextCollapsingStyle.TrailingCharacter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.TextCollapsingStyle.TrailingWord" />
       <MemberSignature Language="VB.NET" Value="TrailingWord" />
       <MemberSignature Language="C++ CLI" Value="TrailingWord" />
+      <MemberSignature Language="F#" Value="TrailingWord = 1" Usage="System.Windows.Media.TextFormatting.TextCollapsingStyle.TrailingWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

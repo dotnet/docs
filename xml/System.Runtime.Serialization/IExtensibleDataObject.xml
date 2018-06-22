@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IExtensibleDataObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtensibleDataObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExtensibleDataObject" />
+  <TypeSignature Language="F#" Value="type IExtensibleDataObject = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtensionData As ExtensionDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ExtensionDataObject ^ ExtensionData { System::Runtime::Serialization::ExtensionDataObject ^ get(); void set(System::Runtime::Serialization::ExtensionDataObject ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExtensionData : System.Runtime.Serialization.ExtensionDataObject with get, set" Usage="System.Runtime.Serialization.IExtensibleDataObject.ExtensionData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

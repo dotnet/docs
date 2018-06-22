@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FigureUnitType" />
   <TypeSignature Language="VB.NET" Value="Public Enum FigureUnitType" />
   <TypeSignature Language="C++ CLI" Value="public enum class FigureUnitType" />
+  <TypeSignature Language="F#" Value="type FigureUnitType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureUnitType.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.FigureUnitType.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureUnitType.Column" />
       <MemberSignature Language="VB.NET" Value="Column" />
       <MemberSignature Language="C++ CLI" Value="Column" />
+      <MemberSignature Language="F#" Value="Column = 2" Usage="System.Windows.FigureUnitType.Column" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureUnitType.Content" />
       <MemberSignature Language="VB.NET" Value="Content" />
       <MemberSignature Language="C++ CLI" Value="Content" />
+      <MemberSignature Language="F#" Value="Content = 3" Usage="System.Windows.FigureUnitType.Content" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureUnitType.Page" />
       <MemberSignature Language="VB.NET" Value="Page" />
       <MemberSignature Language="C++ CLI" Value="Page" />
+      <MemberSignature Language="F#" Value="Page = 4" Usage="System.Windows.FigureUnitType.Page" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureUnitType.Pixel" />
       <MemberSignature Language="VB.NET" Value="Pixel" />
       <MemberSignature Language="C++ CLI" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 1" Usage="System.Windows.FigureUnitType.Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

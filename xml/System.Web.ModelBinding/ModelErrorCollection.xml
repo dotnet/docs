@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelErrorCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelErrorCollection&#xA;Inherits Collection(Of ModelError)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelErrorCollection : System::Collections::ObjectModel::Collection&lt;System::Web::ModelBinding::ModelError ^&gt;" />
+  <TypeSignature Language="F#" Value="type ModelErrorCollection = class&#xA;    inherit Collection&lt;ModelError&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelErrorCollection.Add(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="override this.Add : Exception -&gt; unit" Usage="modelErrorCollection.Add exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelErrorCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (errorMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; unit" Usage="modelErrorCollection.Add errorMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

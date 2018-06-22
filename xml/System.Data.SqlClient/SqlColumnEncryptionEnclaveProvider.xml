@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SqlColumnEncryptionEnclaveProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlColumnEncryptionEnclaveProvider abstract" />
+  <TypeSignature Language="F#" Value="type SqlColumnEncryptionEnclaveProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider.CreateEnclaveSession(System.Byte[],System.Security.Cryptography.ECDiffieHellmanCng,System.String,System.String,System.Data.SqlClient.SqlEnclaveSession@,System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CreateEnclaveSession (enclaveAttestationInfo As Byte(), clientDiffieHellmanKey As ECDiffieHellmanCng, attestationUrl As String, servername As String, ByRef sqlEnclaveSession As SqlEnclaveSession, ByRef counter As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CreateEnclaveSession(cli::array &lt;System::Byte&gt; ^ enclaveAttestationInfo, System::Security::Cryptography::ECDiffieHellmanCng ^ clientDiffieHellmanKey, System::String ^ attestationUrl, System::String ^ servername, [Runtime::InteropServices::Out] System::Data::SqlClient::SqlEnclaveSession ^ % sqlEnclaveSession, [Runtime::InteropServices::Out] long % counter);" />
+      <MemberSignature Language="F#" Value="abstract member CreateEnclaveSession : byte[] * System.Security.Cryptography.ECDiffieHellmanCng * string * string *  *  -&gt; unit" Usage="sqlColumnEncryptionEnclaveProvider.CreateEnclaveSession (enclaveAttestationInfo, clientDiffieHellmanKey, attestationUrl, servername, sqlEnclaveSession, counter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider.GetAttestationParameters" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAttestationParameters () As SqlEnclaveAttestationParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::SqlClient::SqlEnclaveAttestationParameters ^ GetAttestationParameters();" />
+      <MemberSignature Language="F#" Value="abstract member GetAttestationParameters : unit -&gt; System.Data.SqlClient.SqlEnclaveAttestationParameters" Usage="sqlColumnEncryptionEnclaveProvider.GetAttestationParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider.GetEnclaveSession(System.String,System.String,System.Data.SqlClient.SqlEnclaveSession@,System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub GetEnclaveSession (serverName As String, attestationUrl As String, ByRef sqlEnclaveSession As SqlEnclaveSession, ByRef counter As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GetEnclaveSession(System::String ^ serverName, System::String ^ attestationUrl, [Runtime::InteropServices::Out] System::Data::SqlClient::SqlEnclaveSession ^ % sqlEnclaveSession, [Runtime::InteropServices::Out] long % counter);" />
+      <MemberSignature Language="F#" Value="abstract member GetEnclaveSession : string * string *  *  -&gt; unit" Usage="sqlColumnEncryptionEnclaveProvider.GetEnclaveSession (serverName, attestationUrl, sqlEnclaveSession, counter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider.InvalidateEnclaveSession(System.String,System.String,System.Data.SqlClient.SqlEnclaveSession)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub InvalidateEnclaveSession (serverName As String, enclaveAttestationUrl As String, enclaveSession As SqlEnclaveSession)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void InvalidateEnclaveSession(System::String ^ serverName, System::String ^ enclaveAttestationUrl, System::Data::SqlClient::SqlEnclaveSession ^ enclaveSession);" />
+      <MemberSignature Language="F#" Value="abstract member InvalidateEnclaveSession : string * string * System.Data.SqlClient.SqlEnclaveSession -&gt; unit" Usage="sqlColumnEncryptionEnclaveProvider.InvalidateEnclaveSession (serverName, enclaveAttestationUrl, enclaveSession)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

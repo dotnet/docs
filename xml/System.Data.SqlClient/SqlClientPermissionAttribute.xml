@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlClientPermissionAttribute&#xA;Inherits DBDataPermissionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlClientPermissionAttribute sealed : System::Data::Common::DBDataPermissionAttribute" />
+  <TypeSignature Language="F#" Value="type SqlClientPermissionAttribute = class&#xA;    inherit DBDataPermissionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlClientPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlClientPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Data.SqlClient.SqlClientPermissionAttribute" Usage="new System.Data.SqlClient.SqlClientPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="sqlClientPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

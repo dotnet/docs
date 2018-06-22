@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderExceptionFallback" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecoderExceptionFallback&#xA;Inherits DecoderFallback" />
   <TypeSignature Language="C++ CLI" Value="public ref class DecoderExceptionFallback sealed : System::Text::DecoderFallback" />
+  <TypeSignature Language="F#" Value="type DecoderExceptionFallback = class&#xA;    inherit DecoderFallback" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallback.CreateFallbackBuffer" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateFallbackBuffer () As DecoderFallbackBuffer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::DecoderFallbackBuffer ^ CreateFallbackBuffer();" />
+      <MemberSignature Language="F#" Value="override this.CreateFallbackBuffer : unit -&gt; System.Text.DecoderFallbackBuffer" Usage="decoderExceptionFallback.CreateFallbackBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallback.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="decoderExceptionFallback.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -171,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallback.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="decoderExceptionFallback.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -213,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderExceptionFallback.MaxCharCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxCharCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxCharCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCharCount : int" Usage="System.Text.DecoderExceptionFallback.MaxCharCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>

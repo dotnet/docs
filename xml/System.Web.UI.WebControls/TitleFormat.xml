@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TitleFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum TitleFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class TitleFormat" />
+  <TypeSignature Language="F#" Value="type TitleFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TitleFormat.Month" />
       <MemberSignature Language="VB.NET" Value="Month" />
       <MemberSignature Language="C++ CLI" Value="Month" />
+      <MemberSignature Language="F#" Value="Month = 0" Usage="System.Web.UI.WebControls.TitleFormat.Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TitleFormat.MonthYear" />
       <MemberSignature Language="VB.NET" Value="MonthYear" />
       <MemberSignature Language="C++ CLI" Value="MonthYear" />
+      <MemberSignature Language="F#" Value="MonthYear = 1" Usage="System.Web.UI.WebControls.TitleFormat.MonthYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

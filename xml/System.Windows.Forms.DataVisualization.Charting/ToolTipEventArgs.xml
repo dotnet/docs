@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolTipEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolTipEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ToolTipEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.#ctor(System.Int32,System.Int32,System.String,System.Windows.Forms.DataVisualization.Charting.HitTestResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer, text As String, result As HitTestResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolTipEventArgs(int x, int y, System::String ^ text, System::Windows::Forms::DataVisualization::Charting::HitTestResult ^ result);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs : int * int * string * System.Windows.Forms.DataVisualization.Charting.HitTestResult -&gt; System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs" Usage="new System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs (x, y, text, result)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.HitTestResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HitTestResult As HitTestResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::HitTestResult ^ HitTestResult { System::Windows::Forms::DataVisualization::Charting::HitTestResult ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HitTestResult : System.Windows.Forms.DataVisualization.Charting.HitTestResult" Usage="System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.HitTestResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.X" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property X As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.X : int" Usage="System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Y" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Y As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Y : int" Usage="System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

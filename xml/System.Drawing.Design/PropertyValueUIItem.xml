@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIItem" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyValueUIItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyValueUIItem" />
+  <TypeSignature Language="F#" Value="type PropertyValueUIItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.PropertyValueUIItem.#ctor(System.Drawing.Image,System.Drawing.Design.PropertyValueUIItemInvokeHandler,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uiItemImage As Image, handler As PropertyValueUIItemInvokeHandler, tooltip As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyValueUIItem(System::Drawing::Image ^ uiItemImage, System::Drawing::Design::PropertyValueUIItemInvokeHandler ^ handler, System::String ^ tooltip);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Design.PropertyValueUIItem : System.Drawing.Image * System.Drawing.Design.PropertyValueUIItemInvokeHandler * string -&gt; System.Drawing.Design.PropertyValueUIItem" Usage="new System.Drawing.Design.PropertyValueUIItem (uiItemImage, handler, tooltip)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.PropertyValueUIItem.Image" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Image As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Image" Usage="System.Drawing.Design.PropertyValueUIItem.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.PropertyValueUIItem.InvokeHandler" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InvokeHandler As PropertyValueUIItemInvokeHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Design::PropertyValueUIItemInvokeHandler ^ InvokeHandler { System::Drawing::Design::PropertyValueUIItemInvokeHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvokeHandler : System.Drawing.Design.PropertyValueUIItemInvokeHandler" Usage="System.Drawing.Design.PropertyValueUIItem.InvokeHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.PropertyValueUIItem.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="propertyValueUIItem.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.PropertyValueUIItem.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ToolTip { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string" Usage="System.Drawing.Design.PropertyValueUIItem.ToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

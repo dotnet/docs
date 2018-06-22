@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Globals" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Globals" />
   <TypeSignature Language="C++ CLI" Value="public ref class Globals sealed" />
+  <TypeSignature Language="F#" Value="type Globals = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Globals.ConstructArray(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConstructArray (ParamArray args As Object()) As ArrayObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ ConstructArray(... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member ConstructArray : obj[] -&gt; Microsoft.JScript.ArrayObject" Usage="Microsoft.JScript.Globals.ConstructArray args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Globals.ConstructArrayLiteral(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConstructArrayLiteral (args As Object()) As ArrayObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ ConstructArrayLiteral(cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member ConstructArrayLiteral : obj[] -&gt; Microsoft.JScript.ArrayObject" Usage="Microsoft.JScript.Globals.ConstructArrayLiteral args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Globals.contextEngine" />
       <MemberSignature Language="VB.NET" Value="Public Shared contextEngine As VsaEngine " />
       <MemberSignature Language="C++ CLI" Value="public: static Microsoft::JScript::Vsa::VsaEngine ^ contextEngine;" />
+      <MemberSignature Language="F#" Value=" staticval mutable contextEngine : Microsoft.JScript.Vsa.VsaEngine" Usage="Microsoft.JScript.Globals.contextEngine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

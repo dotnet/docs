@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelMemberCollection`2" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelMemberCollection(Of TItemType, TFindType)&#xA;Implements IEnumerable(Of TItemType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TItemType, typename TFindType&gt;&#xA;public ref class ModelMemberCollection abstract : System::Collections::Generic::IEnumerable&lt;TItemType&gt;" />
+  <TypeSignature Language="F#" Value="type ModelMemberCollection&lt;'ItemType, 'FindType&gt; = class&#xA;    interface seq&lt;'ItemType&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.Find(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (name As String) As TItemType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TItemType Find(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Find : string -&gt; 'ItemType" Usage="modelMemberCollection.Find name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.Find(`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (value As TFindType) As TItemType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TItemType Find(TFindType value);" />
+      <MemberSignature Language="F#" Value="member this.Find : 'FindType -&gt; 'ItemType" Usage="modelMemberCollection.Find value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.Find(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function Find (name As String, throwOnError As Boolean) As TItemType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TItemType Find(System::String ^ name, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="abstract member Find : string * bool -&gt; 'ItemType" Usage="modelMemberCollection.Find (name, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.Find(`1,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function Find (value As TFindType, throwOnError As Boolean) As TItemType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TItemType Find(TFindType value, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="abstract member Find : 'FindType * bool -&gt; 'ItemType" Usage="modelMemberCollection.Find (value, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEnumerator () As IEnumerator(Of TItemType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerator&lt;TItemType&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'ItemType&gt;" Usage="modelMemberCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelMemberCollection`2.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As TItemType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TItemType default[System::String ^] { TItemType get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : 'ItemType" Usage="System.Activities.Presentation.Model.ModelMemberCollection&lt;'ItemType, 'FindType&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelMemberCollection`2.Item(`1)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(value As TFindType) As TItemType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TItemType default[TFindType] { TItemType get(TFindType value); };" />
+      <MemberSignature Language="F#" Value="member this.Item('FindType) : 'ItemType" Usage="System.Activities.Presentation.Model.ModelMemberCollection&lt;'ItemType, 'FindType&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

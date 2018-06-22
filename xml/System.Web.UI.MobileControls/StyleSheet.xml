@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.StyleSheet" />
   <TypeSignature Language="VB.NET" Value="Public Class StyleSheet&#xA;Inherits MobileControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class StyleSheet : System::Web::UI::MobileControls::MobileControl" />
+  <TypeSignature Language="F#" Value="type StyleSheet = class&#xA;    inherit MobileControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.AddParsedSubObject : obj -&gt; unit" Usage="styleSheet.AddParsedSubObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Alignment As Alignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::Alignment Alignment { System::Web::UI::MobileControls::Alignment get(); void set(System::Web::UI::MobileControls::Alignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Web.UI.MobileControls.Alignment with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -203,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.BreakAfter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BreakAfter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool BreakAfter { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BreakAfter : bool with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.BreakAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="styleSheet.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -276,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As StyleSheet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::MobileControls::StyleSheet ^ Default { System::Web::UI::MobileControls::StyleSheet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Web.UI.MobileControls.StyleSheet" Usage="System.Web.UI.MobileControls.StyleSheet.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -304,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.EnableViewState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableViewState { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableViewState : bool with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.EnableViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -337,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Font As FontInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::FontInfo ^ Font { System::Web::UI::MobileControls::FontInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Web.UI.MobileControls.FontInfo" Usage="System.Web.UI.MobileControls.StyleSheet.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -374,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -422,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Style ^ default[System::String ^] { System::Web::UI::MobileControls::Style ^ get(System::String ^ name); void set(System::String ^ name, System::Web::UI::MobileControls::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.MobileControls.Style with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -448,6 +459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="styleSheet.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -472,6 +484,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.ReferencePath" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferencePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReferencePath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencePath : string with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.ReferencePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -511,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="styleSheet.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -540,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="styleSheet.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -562,6 +577,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.StyleReference" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property StyleReference As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StyleReference { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StyleReference : string with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.StyleReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -610,6 +626,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Styles As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Styles { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Styles : System.Collections.ICollection" Usage="System.Web.UI.MobileControls.StyleSheet.Styles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -639,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="styleSheet.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -659,6 +677,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -692,6 +711,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Wrapping" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Wrapping As Wrapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::Wrapping Wrapping { System::Web::UI::MobileControls::Wrapping get(); void set(System::Web::UI::MobileControls::Wrapping value); };" />
+      <MemberSignature Language="F#" Value="member this.Wrapping : System.Web.UI.MobileControls.Wrapping with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.Wrapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

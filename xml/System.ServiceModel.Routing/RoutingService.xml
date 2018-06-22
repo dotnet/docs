@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.RoutingService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoutingService&#xA;Implements IDisposable, IDuplexSessionRouter, IRequestReplyRouter, ISimplexDatagramRouter, ISimplexSessionRouter" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoutingService sealed : IDisposable, System::ServiceModel::Routing::IDuplexSessionRouter, System::ServiceModel::Routing::IRequestReplyRouter, System::ServiceModel::Routing::ISimplexDatagramRouter, System::ServiceModel::Routing::ISimplexSessionRouter" />
+  <TypeSignature Language="F#" Value="type RoutingService = class&#xA;    interface ISimplexDatagramRouter&#xA;    interface ISimplexSessionRouter&#xA;    interface IRequestReplyRouter&#xA;    interface IDuplexSessionRouter&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

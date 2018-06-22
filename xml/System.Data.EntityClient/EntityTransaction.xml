@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityTransaction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityTransaction&#xA;Inherits DbTransaction" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityTransaction sealed : System::Data::Common::DbTransaction" />
+  <TypeSignature Language="F#" Value="type EntityTransaction = class&#xA;    inherit DbTransaction" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityTransaction.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="entityTransaction.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityTransaction.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As EntityConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::EntityClient::EntityConnection ^ Connection { System::Data::EntityClient::EntityConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.EntityClient.EntityConnection" Usage="System.Data.EntityClient.EntityTransaction.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityTransaction.DbConnection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbConnection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection" Usage="System.Data.EntityClient.EntityTransaction.DbConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityTransaction.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="entityTransaction.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityTransaction.IsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::IsolationLevel IsolationLevel { System::Data::IsolationLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Data.IsolationLevel" Usage="System.Data.EntityClient.EntityTransaction.IsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityTransaction.Rollback" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback();" />
+      <MemberSignature Language="F#" Value="override this.Rollback : unit -&gt; unit" Usage="entityTransaction.Rollback " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

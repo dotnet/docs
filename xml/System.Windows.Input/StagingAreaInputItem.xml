@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StagingAreaInputItem" />
   <TypeSignature Language="VB.NET" Value="Public Class StagingAreaInputItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class StagingAreaInputItem" />
+  <TypeSignature Language="F#" Value="type StagingAreaInputItem = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StagingAreaInputItem.GetData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (key As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="member this.GetData : obj -&gt; obj" Usage="stagingAreaInputItem.GetData key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StagingAreaInputItem.Input" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Input As InputEventArgs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputEventArgs ^ Input { System::Windows::Input::InputEventArgs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Input : System.Windows.Input.InputEventArgs" Usage="System.Windows.Input.StagingAreaInputItem.Input" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StagingAreaInputItem.SetData(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (key As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::Object ^ key, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetData : obj * obj -&gt; unit" Usage="stagingAreaInputItem.SetData (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

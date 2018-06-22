@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IConfigurationManagerHelper" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConfigurationManagerHelper" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConfigurationManagerHelper" />
+  <TypeSignature Language="F#" Value="type IConfigurationManagerHelper = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IConfigurationManagerHelper.EnsureNetConfigLoaded" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnsureNetConfigLoaded ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnsureNetConfigLoaded();" />
+      <MemberSignature Language="F#" Value="abstract member EnsureNetConfigLoaded : unit -&gt; unit" Usage="iConfigurationManagerHelper.EnsureNetConfigLoaded " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

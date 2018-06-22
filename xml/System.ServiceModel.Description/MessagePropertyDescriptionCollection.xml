@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessagePropertyDescriptionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class MessagePropertyDescriptionCollection&#xA;Inherits KeyedCollection(Of String, MessagePropertyDescription)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessagePropertyDescriptionCollection : System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::ServiceModel::Description::MessagePropertyDescription ^&gt;" />
+  <TypeSignature Language="F#" Value="type MessagePropertyDescriptionCollection = class&#xA;    inherit KeyedCollection&lt;string, MessagePropertyDescription&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessagePropertyDescriptionCollection.GetKeyForItem(System.ServiceModel.Description.MessagePropertyDescription)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As MessagePropertyDescription) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::ServiceModel::Description::MessagePropertyDescription ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.ServiceModel.Description.MessagePropertyDescription -&gt; string&#xA;override this.GetKeyForItem : System.ServiceModel.Description.MessagePropertyDescription -&gt; string" Usage="messagePropertyDescriptionCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

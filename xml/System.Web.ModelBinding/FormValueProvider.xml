@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.FormValueProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormValueProvider&#xA;Inherits NameValueCollectionValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormValueProvider sealed : System::Web::ModelBinding::NameValueCollectionValueProvider" />
+  <TypeSignature Language="F#" Value="type FormValueProvider = class&#xA;    inherit NameValueCollectionValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.FormValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.FormValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.FormValueProvider" Usage="new System.Web.ModelBinding.FormValueProvider modelBindingExecutionContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

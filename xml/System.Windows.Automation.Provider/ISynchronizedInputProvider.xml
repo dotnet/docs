@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ISynchronizedInputProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISynchronizedInputProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISynchronizedInputProvider" />
+  <TypeSignature Language="F#" Value="type ISynchronizedInputProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISynchronizedInputProvider.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit" Usage="iSynchronizedInputProvider.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISynchronizedInputProvider.StartListening(System.Windows.Automation.SynchronizedInputType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartListening (inputType As SynchronizedInputType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartListening(System::Windows::Automation::SynchronizedInputType inputType);" />
+      <MemberSignature Language="F#" Value="abstract member StartListening : System.Windows.Automation.SynchronizedInputType -&gt; unit" Usage="iSynchronizedInputProvider.StartListening inputType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

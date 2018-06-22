@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceCacheExpiry" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataSourceCacheExpiry" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataSourceCacheExpiry" />
+  <TypeSignature Language="F#" Value="type DataSourceCacheExpiry = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceCacheExpiry.Absolute" />
       <MemberSignature Language="VB.NET" Value="Absolute" />
       <MemberSignature Language="C++ CLI" Value="Absolute" />
+      <MemberSignature Language="F#" Value="Absolute = 0" Usage="System.Web.UI.DataSourceCacheExpiry.Absolute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceCacheExpiry.Sliding" />
       <MemberSignature Language="VB.NET" Value="Sliding" />
       <MemberSignature Language="C++ CLI" Value="Sliding" />
+      <MemberSignature Language="F#" Value="Sliding = 1" Usage="System.Web.UI.DataSourceCacheExpiry.Sliding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlXapResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlXapResolver&#xA;Inherits XmlResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlXapResolver : System::Xml::XmlResolver" />
+  <TypeSignature Language="F#" Value="type XmlXapResolver = class&#xA;    inherit XmlResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlXapResolver.GetEntity(System.Uri,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEntity (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetEntity(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
+      <MemberSignature Language="F#" Value="override this.GetEntity : Uri * string * Type -&gt; obj" Usage="xmlXapResolver.GetEntity (absoluteUri, role, ofObjectToReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlXapResolver.RegisterApplicationResourceStreamResolver(System.Xml.IApplicationResourceStreamResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterApplicationResourceStreamResolver (appStreamResolver As IApplicationResourceStreamResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterApplicationResourceStreamResolver(System::Xml::IApplicationResourceStreamResolver ^ appStreamResolver);" />
+      <MemberSignature Language="F#" Value="static member RegisterApplicationResourceStreamResolver : System.Xml.IApplicationResourceStreamResolver -&gt; unit" Usage="System.Xml.XmlXapResolver.RegisterApplicationResourceStreamResolver appStreamResolver" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

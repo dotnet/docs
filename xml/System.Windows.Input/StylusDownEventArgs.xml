@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusDownEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StylusDownEventArgs&#xA;Inherits StylusEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusDownEventArgs : System::Windows::Input::StylusEventArgs" />
+  <TypeSignature Language="F#" Value="type StylusDownEventArgs = class&#xA;    inherit StylusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusDevice stylusDevice, int32 timestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDownEventArgs.#ctor(System.Windows.Input.StylusDevice,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusDownEventArgs(System::Windows::Input::StylusDevice ^ stylusDevice, int timestamp);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.StylusDownEventArgs : System.Windows.Input.StylusDevice * int -&gt; System.Windows.Input.StylusDownEventArgs" Usage="new System.Windows.Input.StylusDownEventArgs (stylusDevice, timestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDownEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="stylusDownEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDownEventArgs.TapCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TapCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TapCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TapCount : int" Usage="System.Windows.Input.StylusDownEventArgs.TapCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CaptionButton" />
   <TypeSignature Language="VB.NET" Value="Public Enum CaptionButton" />
   <TypeSignature Language="C++ CLI" Value="public enum class CaptionButton" />
+  <TypeSignature Language="F#" Value="type CaptionButton = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CaptionButton.Close" />
       <MemberSignature Language="VB.NET" Value="Close" />
       <MemberSignature Language="C++ CLI" Value="Close" />
+      <MemberSignature Language="F#" Value="Close = 0" Usage="System.Windows.Forms.CaptionButton.Close" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CaptionButton.Help" />
       <MemberSignature Language="VB.NET" Value="Help" />
       <MemberSignature Language="C++ CLI" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 4" Usage="System.Windows.Forms.CaptionButton.Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CaptionButton.Maximize" />
       <MemberSignature Language="VB.NET" Value="Maximize" />
       <MemberSignature Language="C++ CLI" Value="Maximize" />
+      <MemberSignature Language="F#" Value="Maximize = 2" Usage="System.Windows.Forms.CaptionButton.Maximize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CaptionButton.Minimize" />
       <MemberSignature Language="VB.NET" Value="Minimize" />
       <MemberSignature Language="C++ CLI" Value="Minimize" />
+      <MemberSignature Language="F#" Value="Minimize = 1" Usage="System.Windows.Forms.CaptionButton.Minimize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CaptionButton.Restore" />
       <MemberSignature Language="VB.NET" Value="Restore" />
       <MemberSignature Language="C++ CLI" Value="Restore" />
+      <MemberSignature Language="F#" Value="Restore = 3" Usage="System.Windows.Forms.CaptionButton.Restore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngPropertyOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum CngPropertyOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class CngPropertyOptions" />
+  <TypeSignature Language="F#" Value="type CngPropertyOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.CustomProperty" />
       <MemberSignature Language="VB.NET" Value="CustomProperty" />
       <MemberSignature Language="C++ CLI" Value="CustomProperty" />
+      <MemberSignature Language="F#" Value="CustomProperty = 1073741824" Usage="System.Security.Cryptography.CngPropertyOptions.CustomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.CngPropertyOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.Persist" />
       <MemberSignature Language="VB.NET" Value="Persist" />
       <MemberSignature Language="C++ CLI" Value="Persist" />
+      <MemberSignature Language="F#" Value="Persist = -2147483648" Usage="System.Security.Cryptography.CngPropertyOptions.Persist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

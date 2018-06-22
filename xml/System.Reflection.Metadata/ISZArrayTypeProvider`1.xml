@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISZArrayTypeProvider`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISZArrayTypeProvider(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public interface class ISZArrayTypeProvider" />
+  <TypeSignature Language="F#" Value="type ISZArrayTypeProvider&lt;'ype&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISZArrayTypeProvider`1.GetSZArrayType(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSZArrayType (elementType As TType) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetSZArrayType(TType elementType);" />
+      <MemberSignature Language="F#" Value="abstract member GetSZArrayType : 'ype -&gt; 'ype" Usage="iSZArrayTypeProvider.GetSZArrayType elementType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

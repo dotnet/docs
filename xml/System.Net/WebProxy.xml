@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebProxy" />
   <TypeSignature Language="VB.NET" Value="Public Class WebProxy&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebProxy : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type WebProxy = class&#xA;    interface ISerializable&#xA;    interface IWebProxy" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -123,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Address As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(System::String ^ Address);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : string -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy Address" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Address As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(Uri ^ Address);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : Uri -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy Address" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -214,6 +217,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebProxy(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -253,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Address As String, BypassOnLocal As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(System::String ^ Address, bool BypassOnLocal);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : string * bool -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy (Address, BypassOnLocal)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -304,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Host As String, Port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(System::String ^ Host, int Port);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : string * int -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy (Host, Port)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -352,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.Uri,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Address As Uri, BypassOnLocal As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(Uri ^ Address, bool BypassOnLocal);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : Uri * bool -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy (Address, BypassOnLocal)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -400,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.String,System.Boolean,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Address As String, BypassOnLocal As Boolean, BypassList As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(System::String ^ Address, bool BypassOnLocal, cli::array &lt;System::String ^&gt; ^ BypassList);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : string * bool * string[] -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy (Address, BypassOnLocal, BypassList)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -454,6 +462,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.Uri,System.Boolean,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Address As Uri, BypassOnLocal As Boolean, BypassList As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(Uri ^ Address, bool BypassOnLocal, cli::array &lt;System::String ^&gt; ^ BypassList);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : Uri * bool * string[] -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy (Address, BypassOnLocal, BypassList)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -504,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.String,System.Boolean,System.String[],System.Net.ICredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Address As String, BypassOnLocal As Boolean, BypassList As String(), Credentials As ICredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(System::String ^ Address, bool BypassOnLocal, cli::array &lt;System::String ^&gt; ^ BypassList, System::Net::ICredentials ^ Credentials);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : string * bool * string[] * System.Net.ICredentials -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy (Address, BypassOnLocal, BypassList, Credentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -560,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.#ctor(System.Uri,System.Boolean,System.String[],System.Net.ICredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Address As Uri, BypassOnLocal As Boolean, BypassList As String(), Credentials As ICredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxy(Uri ^ Address, bool BypassOnLocal, cli::array &lt;System::String ^&gt; ^ BypassList, System::Net::ICredentials ^ Credentials);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebProxy : Uri * bool * string[] * System.Net.ICredentials -&gt; System.Net.WebProxy" Usage="new System.Net.WebProxy (Address, BypassOnLocal, BypassList, Credentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -612,6 +623,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebProxy.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Address { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : Uri with get, set" Usage="System.Net.WebProxy.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -659,6 +671,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebProxy.BypassArrayList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BypassArrayList As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ BypassArrayList { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BypassArrayList : System.Collections.ArrayList" Usage="System.Net.WebProxy.BypassArrayList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -696,6 +709,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebProxy.BypassList" />
       <MemberSignature Language="VB.NET" Value="Public Property BypassList As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ BypassList { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BypassList : string[] with get, set" Usage="System.Net.WebProxy.BypassList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -742,6 +756,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebProxy.BypassProxyOnLocal" />
       <MemberSignature Language="VB.NET" Value="Public Property BypassProxyOnLocal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BypassProxyOnLocal { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BypassProxyOnLocal : bool with get, set" Usage="System.Net.WebProxy.BypassProxyOnLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -793,6 +808,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.CreateDefaultProxy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefaultProxy () As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IWebProxy ^ CreateDefaultProxy();" />
+      <MemberSignature Language="F#" Value="static member CreateDefaultProxy : unit -&gt; System.Net.IWebProxy" Usage="System.Net.WebProxy.CreateDefaultProxy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -815,6 +831,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebProxy.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Property Credentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.WebProxy.Credentials" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Net.IWebProxy.Credentials</InterfaceMember>
@@ -859,6 +876,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.GetDefaultProxy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultProxy () As WebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebProxy ^ GetDefaultProxy();" />
+      <MemberSignature Language="F#" Value="static member GetDefaultProxy : unit -&gt; System.Net.WebProxy" Usage="System.Net.WebProxy.GetDefaultProxy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -914,6 +932,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webProxy.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -959,6 +978,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.GetProxy(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProxy (destination As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Uri ^ GetProxy(Uri ^ destination);" />
+      <MemberSignature Language="F#" Value="abstract member GetProxy : Uri -&gt; Uri&#xA;override this.GetProxy : Uri -&gt; Uri" Usage="webProxy.GetProxy destination" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Net.IWebProxy.GetProxy(System.Uri)</InterfaceMember>
@@ -1016,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebProxy.IsBypassed(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsBypassed (host As Uri) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsBypassed(Uri ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member IsBypassed : Uri -&gt; bool&#xA;override this.IsBypassed : Uri -&gt; bool" Usage="webProxy.IsBypassed host" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Net.IWebProxy.IsBypassed(System.Uri)</InterfaceMember>
@@ -1126,6 +1147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebProxy.UseDefaultCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property UseDefaultCredentials As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.Net.WebProxy.UseDefaultCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

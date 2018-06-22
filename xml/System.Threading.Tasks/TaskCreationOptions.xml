@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCreationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum TaskCreationOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class TaskCreationOptions" />
+  <TypeSignature Language="F#" Value="type TaskCreationOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" />
       <MemberSignature Language="VB.NET" Value="AttachedToParent" />
       <MemberSignature Language="C++ CLI" Value="AttachedToParent" />
+      <MemberSignature Language="F#" Value="AttachedToParent = 4" Usage="System.Threading.Tasks.TaskCreationOptions.AttachedToParent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach" />
       <MemberSignature Language="VB.NET" Value="DenyChildAttach" />
       <MemberSignature Language="C++ CLI" Value="DenyChildAttach" />
+      <MemberSignature Language="F#" Value="DenyChildAttach = 8" Usage="System.Threading.Tasks.TaskCreationOptions.DenyChildAttach" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.HideScheduler" />
       <MemberSignature Language="VB.NET" Value="HideScheduler" />
       <MemberSignature Language="C++ CLI" Value="HideScheduler" />
+      <MemberSignature Language="F#" Value="HideScheduler = 16" Usage="System.Threading.Tasks.TaskCreationOptions.HideScheduler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.LongRunning" />
       <MemberSignature Language="VB.NET" Value="LongRunning" />
       <MemberSignature Language="C++ CLI" Value="LongRunning" />
+      <MemberSignature Language="F#" Value="LongRunning = 2" Usage="System.Threading.Tasks.TaskCreationOptions.LongRunning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Threading.Tasks.TaskCreationOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.PreferFairness" />
       <MemberSignature Language="VB.NET" Value="PreferFairness" />
       <MemberSignature Language="C++ CLI" Value="PreferFairness" />
+      <MemberSignature Language="F#" Value="PreferFairness = 1" Usage="System.Threading.Tasks.TaskCreationOptions.PreferFairness" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously" />
       <MemberSignature Language="VB.NET" Value="RunContinuationsAsynchronously" />
       <MemberSignature Language="C++ CLI" Value="RunContinuationsAsynchronously" />
+      <MemberSignature Language="F#" Value="RunContinuationsAsynchronously = 64" Usage="System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

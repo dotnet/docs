@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ControllableStoryboardAction" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ControllableStoryboardAction&#xA;Inherits TriggerAction" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControllableStoryboardAction abstract : System::Windows::TriggerAction" />
+  <TypeSignature Language="F#" Value="type ControllableStoryboardAction = class&#xA;    inherit TriggerAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ControllableStoryboardAction.BeginStoryboardName" />
       <MemberSignature Language="VB.NET" Value="Public Property BeginStoryboardName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BeginStoryboardName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BeginStoryboardName : string with get, set" Usage="System.Windows.Media.Animation.ControllableStoryboardAction.BeginStoryboardName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingCancelledEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WritingCancelledEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WritingCancelledEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WritingCancelledEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.WritingCancelledEventArgs.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WritingCancelledEventArgs(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Serialization.WritingCancelledEventArgs : Exception -&gt; System.Windows.Documents.Serialization.WritingCancelledEventArgs" Usage="new System.Windows.Documents.Serialization.WritingCancelledEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingCancelledEventArgs.Error" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Error As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Error { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Error : Exception" Usage="System.Windows.Documents.Serialization.WritingCancelledEventArgs.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

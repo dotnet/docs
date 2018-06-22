@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Panel" />
   <TypeSignature Language="VB.NET" Value="Public Class Panel&#xA;Inherits MobileControl&#xA;Implements ITemplateable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Panel : System::Web::UI::MobileControls::MobileControl, System::Web::UI::MobileControls::ITemplateable" />
+  <TypeSignature Language="F#" Value="type Panel = class&#xA;    inherit MobileControl&#xA;    interface ITemplateable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.AddLinkedForms(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddLinkedForms (linkedForms As IList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddLinkedForms(System::Collections::IList ^ linkedForms);" />
+      <MemberSignature Language="F#" Value="override this.AddLinkedForms : System.Collections.IList -&gt; unit" Usage="panel.AddLinkedForms linkedForms" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Panel.BreakAfter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BreakAfter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool BreakAfter { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BreakAfter : bool with get, set" Usage="System.Web.UI.MobileControls.Panel.BreakAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Panel.Content" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As Panel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Panel ^ Content { System::Web::UI::MobileControls::Panel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Web.UI.MobileControls.Panel" Usage="System.Web.UI.MobileControls.Panel.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.CreateDefaultTemplatedUI(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateDefaultTemplatedUI (doDataBind As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateDefaultTemplatedUI(bool doDataBind);" />
+      <MemberSignature Language="F#" Value="override this.CreateDefaultTemplatedUI : bool -&gt; unit" Usage="panel.CreateDefaultTemplatedUI doDataBind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="panel.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Panel.Paginate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Paginate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Paginate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Paginate : bool with get, set" Usage="System.Web.UI.MobileControls.Panel.Paginate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -301,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Panel.PaginateChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property PaginateChildren As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool PaginateChildren { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaginateChildren : bool" Usage="System.Web.UI.MobileControls.Panel.PaginateChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -323,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaginateRecursive (pager As ControlPager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaginateRecursive(System::Web::UI::MobileControls::ControlPager ^ pager);" />
+      <MemberSignature Language="F#" Value="override this.PaginateRecursive : System.Web.UI.MobileControls.ControlPager -&gt; unit" Usage="panel.PaginateRecursive pager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

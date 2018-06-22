@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray" />
   <TypeSignature Language="VB.NET" Value="Public Class ColorDialogArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ColorDialogArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type ColorDialogArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorDialogArray(System::ComponentModel::IContainer ^ Container);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray Container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="colorDialogArray.CanExtend target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
+      <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="colorDialogArray.GetControlInstanceType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.GetIndex(System.Windows.Forms.ColorDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As ColorDialog) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::ColorDialog ^ o);" />
+      <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.ColorDialog -&gt; int16" Usage="colorDialogArray.GetIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.HelpRequest" />
       <MemberSignature Language="VB.NET" Value="Public Event HelpRequest As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HelpRequest;" />
+      <MemberSignature Language="F#" Value="member this.HelpRequest : EventHandler " Usage="member this.HelpRequest : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -248,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="colorDialogArray.HookUpControlEvents o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As ColorDialog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ColorDialog ^ default[short] { System::Windows::Forms::ColorDialog ^ get(short Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.ColorDialog" Usage="Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -320,6 +328,7 @@ MsgBox(CStr(ColorDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.ResetIndex(System.Windows.Forms.ColorDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As ColorDialog)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::ColorDialog ^ o);" />
+      <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.ColorDialog -&gt; unit" Usage="colorDialogArray.ResetIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -358,6 +367,7 @@ MsgBox(CStr(ColorDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.SetIndex(System.Windows.Forms.ColorDialog,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As ColorDialog, Index As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::ColorDialog ^ o, short Index);" />
+      <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.ColorDialog * int16 -&gt; unit" Usage="colorDialogArray.SetIndex (o, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -398,6 +408,7 @@ MsgBox(CStr(ColorDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.ShouldSerializeIndex(System.Windows.Forms.ColorDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As ColorDialog) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::ColorDialog ^ o);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.ColorDialog -&gt; bool" Usage="colorDialogArray.ShouldSerializeIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

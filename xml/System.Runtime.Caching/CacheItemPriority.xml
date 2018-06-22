@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheItemPriority" />
   <TypeSignature Language="VB.NET" Value="Public Enum CacheItemPriority" />
   <TypeSignature Language="C++ CLI" Value="public enum class CacheItemPriority" />
+  <TypeSignature Language="F#" Value="type CacheItemPriority = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheItemPriority.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Runtime.Caching.CacheItemPriority.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheItemPriority.NotRemovable" />
       <MemberSignature Language="VB.NET" Value="NotRemovable" />
       <MemberSignature Language="C++ CLI" Value="NotRemovable" />
+      <MemberSignature Language="F#" Value="NotRemovable = 1" Usage="System.Runtime.Caching.CacheItemPriority.NotRemovable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

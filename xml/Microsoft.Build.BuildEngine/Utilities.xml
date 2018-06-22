@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Utilities" />
   <TypeSignature Language="VB.NET" Value="Public Class Utilities" />
   <TypeSignature Language="C++ CLI" Value="public ref class Utilities abstract sealed" />
+  <TypeSignature Language="F#" Value="type Utilities = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Utilities.Escape(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Escape (unescapedExpression As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Escape(System::String ^ unescapedExpression);" />
+      <MemberSignature Language="F#" Value="static member Escape : string -&gt; string" Usage="Microsoft.Build.BuildEngine.Utilities.Escape unescapedExpression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

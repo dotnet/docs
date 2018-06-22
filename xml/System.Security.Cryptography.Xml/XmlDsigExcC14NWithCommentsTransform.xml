@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDsigExcC14NWithCommentsTransform&#xA;Inherits XmlDsigExcC14NTransform" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDsigExcC14NWithCommentsTransform : System::Security::Cryptography::Xml::XmlDsigExcC14NTransform" />
+  <TypeSignature Language="F#" Value="type XmlDsigExcC14NWithCommentsTransform = class&#xA;    inherit XmlDsigExcC14NTransform" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inclusiveNamespacesPrefixList As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NWithCommentsTransform(System::String ^ inclusiveNamespacesPrefixList);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform : string -&gt; System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform" Usage="new System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform inclusiveNamespacesPrefixList" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ListSortDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum ListSortDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class ListSortDirection" />
+  <TypeSignature Language="F#" Value="type ListSortDirection = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListSortDirection.Ascending" />
       <MemberSignature Language="VB.NET" Value="Ascending" />
       <MemberSignature Language="C++ CLI" Value="Ascending" />
+      <MemberSignature Language="F#" Value="Ascending = 0" Usage="System.ComponentModel.ListSortDirection.Ascending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListSortDirection.Descending" />
       <MemberSignature Language="VB.NET" Value="Descending" />
       <MemberSignature Language="C++ CLI" Value="Descending" />
+      <MemberSignature Language="F#" Value="Descending = 1" Usage="System.ComponentModel.ListSortDirection.Descending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

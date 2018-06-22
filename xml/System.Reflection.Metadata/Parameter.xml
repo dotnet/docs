@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Parameter" />
   <TypeSignature Language="VB.NET" Value="Public Structure Parameter" />
   <TypeSignature Language="C++ CLI" Value="public value class Parameter" />
+  <TypeSignature Language="F#" Value="type Parameter = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Parameter.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As ParameterAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ParameterAttributes Attributes { System::Reflection::ParameterAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.ParameterAttributes" Usage="System.Reflection.Metadata.Parameter.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Parameter.GetCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : unit -&gt; System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="parameter.GetCustomAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Parameter.GetDefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDefaultValue () As ConstantHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ConstantHandle GetDefaultValue();" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultValue : unit -&gt; System.Reflection.Metadata.ConstantHandle" Usage="parameter.GetDefaultValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Parameter.GetMarshallingDescriptor" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMarshallingDescriptor () As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobHandle GetMarshallingDescriptor();" />
+      <MemberSignature Language="F#" Value="member this.GetMarshallingDescriptor : unit -&gt; System.Reflection.Metadata.BlobHandle" Usage="parameter.GetMarshallingDescriptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Parameter.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Reflection.Metadata.StringHandle" Usage="System.Reflection.Metadata.Parameter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Parameter.SequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SequenceNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SequenceNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SequenceNumber : int" Usage="System.Reflection.Metadata.Parameter.SequenceNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

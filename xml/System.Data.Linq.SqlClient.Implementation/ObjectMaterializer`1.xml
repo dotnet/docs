@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObjectMaterializer(Of TDataReader)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TDataReader&gt;&#xA; where TDataReader : DbDataReaderpublic ref class ObjectMaterializer abstract" />
+  <TypeSignature Language="F#" Value="type ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; DbDataReader)&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public Arguments As Object() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Object ^&gt; ^ Arguments;" />
+      <MemberSignature Language="F#" Value="val mutable Arguments : obj[]" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.Arguments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.BufferReader" />
       <MemberSignature Language="VB.NET" Value="Public BufferReader As DbDataReader " />
       <MemberSignature Language="C++ CLI" Value="public: System::Data::Common::DbDataReader ^ BufferReader;" />
+      <MemberSignature Language="F#" Value="val mutable BufferReader : System.Data.Common.DbDataReader" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.BufferReader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.CanDeferLoad" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CanDeferLoad As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool CanDeferLoad { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanDeferLoad : bool" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.CanDeferLoad" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.Convert``1(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert(Of TOutput) (source As IEnumerable) As IEnumerable(Of TOutput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA; static System::Collections::Generic::IEnumerable&lt;TOutput&gt; ^ Convert(System::Collections::IEnumerable ^ source);" />
+      <MemberSignature Language="F#" Value="static member Convert : System.Collections.IEnumerable -&gt; seq&lt;'Output&gt;" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.Convert source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.CreateGroup``2(``0,System.Collections.Generic.IEnumerable{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateGroup(Of TKey, TElement) (key As TKey, items As IEnumerable(Of TElement)) As IGrouping(Of TKey, TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TElement&gt;&#xA; static System::Linq::IGrouping&lt;TKey, TElement&gt; ^ CreateGroup(TKey key, System::Collections::Generic::IEnumerable&lt;TElement&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateGroup : 'Key * seq&lt;'Element&gt; -&gt; System.Linq.IGrouping&lt;'Key, 'Element&gt;" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.CreateGroup (key, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.CreateOrderedEnumerable``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOrderedEnumerable(Of TElement) (items As IEnumerable(Of TElement)) As IOrderedEnumerable(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; static System::Linq::IOrderedEnumerable&lt;TElement&gt; ^ CreateOrderedEnumerable(System::Collections::Generic::IEnumerable&lt;TElement&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateOrderedEnumerable : seq&lt;'Element&gt; -&gt; System.Linq.IOrderedEnumerable&lt;'Element&gt;" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.CreateOrderedEnumerable items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.DataReader" />
       <MemberSignature Language="VB.NET" Value="Public DataReader As TDataReader " />
       <MemberSignature Language="C++ CLI" Value="public: TDataReader DataReader;" />
+      <MemberSignature Language="F#" Value="val mutable DataReader : 'DataReader" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.DataReader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Exception ErrorAssignmentToNull(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.ErrorAssignmentToNull(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Exception ^ ErrorAssignmentToNull(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member ErrorAssignmentToNull : Type -&gt; Exception" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.ErrorAssignmentToNull type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -247,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.ExecuteSubQuery(System.Int32,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ExecuteSubQuery (iSubQuery As Integer, args As Object()) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::IEnumerable ^ ExecuteSubQuery(int iSubQuery, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteSubQuery : int * obj[] -&gt; System.Collections.IEnumerable" Usage="objectMaterializer.ExecuteSubQuery (iSubQuery, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -274,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.GetLinkSource``1(System.Int32,System.Int32,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLinkSource(Of T) (globalLink As Integer, localFactory As Integer, keyValues As Object()) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; abstract System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetLinkSource(int globalLink, int localFactory, cli::array &lt;System::Object ^&gt; ^ keyValues);" />
+      <MemberSignature Language="F#" Value="abstract member GetLinkSource : int * int * obj[] -&gt; seq&lt;'T&gt;" Usage="objectMaterializer.GetLinkSource (globalLink, localFactory, keyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -307,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.GetNestedLinkSource``1(System.Int32,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNestedLinkSource(Of T) (globalLink As Integer, localFactory As Integer, instance As Object) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; abstract System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetNestedLinkSource(int globalLink, int localFactory, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetNestedLinkSource : int * int * obj -&gt; seq&lt;'T&gt;" Usage="objectMaterializer.GetNestedLinkSource (globalLink, localFactory, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -340,6 +352,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.Globals" />
       <MemberSignature Language="VB.NET" Value="Public Globals As Object() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Object ^&gt; ^ Globals;" />
+      <MemberSignature Language="F#" Value="val mutable Globals : obj[]" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.Globals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -360,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.InsertLookup(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function InsertLookup (globalMetaType As Integer, instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ InsertLookup(int globalMetaType, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member InsertLookup : int * obj -&gt; obj" Usage="objectMaterializer.InsertLookup (globalMetaType, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -387,6 +401,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.Locals" />
       <MemberSignature Language="VB.NET" Value="Public Locals As Object() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Object ^&gt; ^ Locals;" />
+      <MemberSignature Language="F#" Value="val mutable Locals : obj[]" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.Locals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -407,6 +422,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.Ordinals" />
       <MemberSignature Language="VB.NET" Value="Public Ordinals As Integer() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;int&gt; ^ Ordinals;" />
+      <MemberSignature Language="F#" Value="val mutable Ordinals : int[]" Usage="System.Data.Linq.SqlClient.Implementation.ObjectMaterializer&lt;'DataReader (requires 'DataReader :&gt; System.Data.Common.DbDataReader)&gt;.Ordinals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -427,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.Read" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Read();" />
+      <MemberSignature Language="F#" Value="abstract member Read : unit -&gt; bool" Usage="objectMaterializer.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -450,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1.SendEntityMaterialized(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SendEntityMaterialized (globalMetaType As Integer, instance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SendEntityMaterialized(int globalMetaType, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member SendEntityMaterialized : int * obj -&gt; unit" Usage="objectMaterializer.SendEntityMaterialized (globalMetaType, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

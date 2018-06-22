@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementReferenceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementReferenceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementReferenceAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ManagementReferenceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -199,6 +200,7 @@ namespace AssocExample
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementReferenceAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Management.Instrumentation.ManagementReferenceAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

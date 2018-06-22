@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.BasicSecurityProfileVersion" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BasicSecurityProfileVersion" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicSecurityProfileVersion abstract" />
+  <TypeSignature Language="F#" Value="type BasicSecurityProfileVersion = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.BasicSecurityProfileVersion.BasicSecurityProfile10" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BasicSecurityProfile10 As BasicSecurityProfileVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::BasicSecurityProfileVersion ^ BasicSecurityProfile10 { System::ServiceModel::Security::BasicSecurityProfileVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BasicSecurityProfile10 : System.ServiceModel.Security.BasicSecurityProfileVersion" Usage="System.ServiceModel.Security.BasicSecurityProfileVersion.BasicSecurityProfile10" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

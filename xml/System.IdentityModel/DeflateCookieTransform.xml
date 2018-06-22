@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.DeflateCookieTransform" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeflateCookieTransform&#xA;Inherits CookieTransform" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeflateCookieTransform sealed : System::IdentityModel::CookieTransform" />
+  <TypeSignature Language="F#" Value="type DeflateCookieTransform = class&#xA;    inherit CookieTransform" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DeflateCookieTransform.Decode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decode (encoded As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Decode(cli::array &lt;System::Byte&gt; ^ encoded);" />
+      <MemberSignature Language="F#" Value="override this.Decode : byte[] -&gt; byte[]" Usage="deflateCookieTransform.Decode encoded" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.DeflateCookieTransform.Encode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encode (value As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Encode(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Encode : byte[] -&gt; byte[]" Usage="deflateCookieTransform.Encode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.DeflateCookieTransform.MaxDecompressedSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxDecompressedSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDecompressedSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDecompressedSize : int with get, set" Usage="System.IdentityModel.DeflateCookieTransform.MaxDecompressedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class GenericXmlSecurityKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenericXmlSecurityKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type GenericXmlSecurityKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.#ctor(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (referenceXml As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericXmlSecurityKeyIdentifierClause(System::Xml::XmlElement ^ referenceXml);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause : System.Xml.XmlElement -&gt; System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause referenceXml" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.#ctor(System.Xml.XmlElement,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (referenceXml As XmlElement, derivationNonce As Byte(), derivationLength As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericXmlSecurityKeyIdentifierClause(System::Xml::XmlElement ^ referenceXml, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause : System.Xml.XmlElement * byte[] * int -&gt; System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause (referenceXml, derivationNonce, derivationLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="genericXmlSecurityKeyIdentifierClause.Matches keyIdentifierClause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferenceXml As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ ReferenceXml { System::Xml::XmlElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceXml : System.Xml.XmlElement" Usage="System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

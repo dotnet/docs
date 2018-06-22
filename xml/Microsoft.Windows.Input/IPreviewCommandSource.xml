@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Input.IPreviewCommandSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPreviewCommandSource&#xA;Implements ICommandSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPreviewCommandSource : System::Windows::Input::ICommandSource" />
+  <TypeSignature Language="F#" Value="type IPreviewCommandSource = interface&#xA;    interface ICommandSource" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Input.IPreviewCommandSource.PreviewCommandParameter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviewCommandParameter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PreviewCommandParameter { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviewCommandParameter : obj" Usage="Microsoft.Windows.Input.IPreviewCommandSource.PreviewCommandParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

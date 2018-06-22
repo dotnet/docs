@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
   <TypeSignature Language="VB.NET" Value="Public Structure DataflowMessageHeader&#xA;Implements IEquatable(Of DataflowMessageHeader)" />
   <TypeSignature Language="C++ CLI" Value="public value class DataflowMessageHeader : IEquatable&lt;System::Threading::Tasks::Dataflow::DataflowMessageHeader&gt;" />
+  <TypeSignature Language="F#" Value="type DataflowMessageHeader = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataflowMessageHeader(long id);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.DataflowMessageHeader : int64 -&gt; System.Threading.Tasks.Dataflow.DataflowMessageHeader" Usage="new System.Threading.Tasks.Dataflow.DataflowMessageHeader id" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataflowMessageHeader.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Threading.Tasks.Dataflow.DataflowMessageHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As DataflowMessageHeader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Threading::Tasks::Dataflow::DataflowMessageHeader other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Threading.Tasks.Dataflow.DataflowMessageHeader -&gt; bool" Usage="dataflowMessageHeader.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataflowMessageHeader.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowMessageHeader.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Id { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int64" Usage="System.Threading.Tasks.Dataflow.DataflowMessageHeader.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowMessageHeader.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Threading.Tasks.Dataflow.DataflowMessageHeader.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Equality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As DataflowMessageHeader, right As DataflowMessageHeader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Threading::Tasks::Dataflow::DataflowMessageHeader left, System::Threading::Tasks::Dataflow::DataflowMessageHeader right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Threading.Tasks.Dataflow.DataflowMessageHeader * System.Threading.Tasks.Dataflow.DataflowMessageHeader -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Inequality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As DataflowMessageHeader, right As DataflowMessageHeader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Threading::Tasks::Dataflow::DataflowMessageHeader left, System::Threading::Tasks::Dataflow::DataflowMessageHeader right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Threading.Tasks.Dataflow.DataflowMessageHeader * System.Threading.Tasks.Dataflow.DataflowMessageHeader -&gt; bool" Usage="System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

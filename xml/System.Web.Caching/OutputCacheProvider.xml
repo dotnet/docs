@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.OutputCacheProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class OutputCacheProvider&#xA;Inherits ProviderBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheProvider abstract : System::Configuration::Provider::ProviderBase" />
+  <TypeSignature Language="F#" Value="type OutputCacheProvider = class&#xA;    inherit ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Add(System.String,System.Object,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Add (key As String, entry As Object, utcExpiry As DateTime) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Add(System::String ^ key, System::Object ^ entry, DateTime utcExpiry);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj * DateTime -&gt; obj" Usage="outputCacheProvider.Add (key, entry, utcExpiry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Get (key As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Get(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Get : string -&gt; obj" Usage="outputCacheProvider.Get key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Remove (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit" Usage="outputCacheProvider.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Set(System.String,System.Object,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Set (key As String, entry As Object, utcExpiry As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Set(System::String ^ key, System::Object ^ entry, DateTime utcExpiry);" />
+      <MemberSignature Language="F#" Value="abstract member Set : string * obj * DateTime -&gt; unit" Usage="outputCacheProvider.Set (key, entry, utcExpiry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

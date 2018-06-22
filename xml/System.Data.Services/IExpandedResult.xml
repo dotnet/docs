@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IExpandedResult" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExpandedResult" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExpandedResult" />
+  <TypeSignature Language="F#" Value="type IExpandedResult = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IExpandedResult.ExpandedElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpandedElement As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ExpandedElement { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpandedElement : obj" Usage="System.Data.Services.IExpandedResult.ExpandedElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IExpandedResult.GetExpandedPropertyValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExpandedPropertyValue (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetExpandedPropertyValue(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetExpandedPropertyValue : string -&gt; obj" Usage="iExpandedResult.GetExpandedPropertyValue name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SessionSecurityTokenReceivedEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionSecurityTokenReceivedEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SessionSecurityTokenReceivedEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.#ctor(System.IdentityModel.Tokens.SessionSecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sessionToken As SessionSecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSecurityTokenReceivedEventArgs(System::IdentityModel::Tokens::SessionSecurityToken ^ sessionToken);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs : System.IdentityModel.Tokens.SessionSecurityToken -&gt; System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs" Usage="new System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs sessionToken" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.ReissueCookie" />
       <MemberSignature Language="VB.NET" Value="Public Property ReissueCookie As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReissueCookie { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReissueCookie : bool with get, set" Usage="System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.ReissueCookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.SessionToken" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionToken As SessionSecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SessionSecurityToken ^ SessionToken { System::IdentityModel::Tokens::SessionSecurityToken ^ get(); void set(System::IdentityModel::Tokens::SessionSecurityToken ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionToken : System.IdentityModel.Tokens.SessionSecurityToken with get, set" Usage="System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.SessionToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

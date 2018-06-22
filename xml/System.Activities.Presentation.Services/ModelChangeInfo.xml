@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelChangeInfo" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelChangeInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelChangeInfo abstract" />
+  <TypeSignature Language="F#" Value="type ModelChangeInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangeInfo.Key" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Key As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ Key { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Services.ModelChangeInfo.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangeInfo.ModelChangeType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ModelChangeType As ModelChangeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Services::ModelChangeType ModelChangeType { System::Activities::Presentation::Services::ModelChangeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelChangeType : System.Activities.Presentation.Services.ModelChangeType" Usage="System.Activities.Presentation.Services.ModelChangeInfo.ModelChangeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangeInfo.OldValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OldValue As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ OldValue { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldValue : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Services.ModelChangeInfo.OldValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangeInfo.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Activities.Presentation.Services.ModelChangeInfo.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangeInfo.Subject" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Subject As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ Subject { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Services.ModelChangeInfo.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangeInfo.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ Value { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Services.ModelChangeInfo.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

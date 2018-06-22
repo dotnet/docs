@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebViewStateFailureAuditEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class WebViewStateFailureAuditEvent&#xA;Inherits WebFailureAuditEvent" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebViewStateFailureAuditEvent : System::Web::Management::WebFailureAuditEvent" />
+  <TypeSignature Language="F#" Value="type WebViewStateFailureAuditEvent = class&#xA;    inherit WebFailureAuditEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, class System.Web.UI.ViewStateException viewStateException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebViewStateFailureAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Web.UI.ViewStateException)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebViewStateFailureAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, System::Web::UI::ViewStateException ^ viewStateException);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebViewStateFailureAuditEvent : string * obj * int * System.Web.UI.ViewStateException -&gt; System.Web.Management.WebViewStateFailureAuditEvent" Usage="new System.Web.Management.WebViewStateFailureAuditEvent (message, eventSource, eventCode, viewStateException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode, class System.Web.UI.ViewStateException viewStateException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebViewStateFailureAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Int32,System.Web.UI.ViewStateException)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebViewStateFailureAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode, System::Web::UI::ViewStateException ^ viewStateException);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebViewStateFailureAuditEvent : string * obj * int * int * System.Web.UI.ViewStateException -&gt; System.Web.Management.WebViewStateFailureAuditEvent" Usage="new System.Web.Management.WebViewStateFailureAuditEvent (message, eventSource, eventCode, eventDetailCode, viewStateException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebViewStateFailureAuditEvent.ViewStateException" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewStateException As ViewStateException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ViewStateException ^ ViewStateException { System::Web::UI::ViewStateException ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewStateException : System.Web.UI.ViewStateException" Usage="System.Web.Management.WebViewStateFailureAuditEvent.ViewStateException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

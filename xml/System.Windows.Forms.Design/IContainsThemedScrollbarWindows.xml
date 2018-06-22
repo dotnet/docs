@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IContainsThemedScrollbarWindows" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContainsThemedScrollbarWindows" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContainsThemedScrollbarWindows" />
+  <TypeSignature Language="F#" Value="type IContainsThemedScrollbarWindows = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IContainsThemedScrollbarWindows.ThemedScrollbarWindows" />
       <MemberSignature Language="VB.NET" Value="Public Function ThemedScrollbarWindows () As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ ThemedScrollbarWindows();" />
+      <MemberSignature Language="F#" Value="abstract member ThemedScrollbarWindows : unit -&gt; System.Collections.IEnumerable" Usage="iContainsThemedScrollbarWindows.ThemedScrollbarWindows " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

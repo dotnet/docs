@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ConnectorEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ConnectorEventHandler(sender As Object, e As ConnectorEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ConnectorEventHandler(System::Object ^ sender, ConnectorEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ConnectorEventHandler = delegate of obj * ConnectorEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

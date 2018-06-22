@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DateFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum DateFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class DateFormat" />
+  <TypeSignature Language="F#" Value="type DateFormat = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateFormat.GeneralDate" />
       <MemberSignature Language="VB.NET" Value="GeneralDate" />
       <MemberSignature Language="C++ CLI" Value="GeneralDate" />
+      <MemberSignature Language="F#" Value="GeneralDate = 0" Usage="Microsoft.VisualBasic.DateFormat.GeneralDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateFormat.LongDate" />
       <MemberSignature Language="VB.NET" Value="LongDate" />
       <MemberSignature Language="C++ CLI" Value="LongDate" />
+      <MemberSignature Language="F#" Value="LongDate = 1" Usage="Microsoft.VisualBasic.DateFormat.LongDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateFormat.LongTime" />
       <MemberSignature Language="VB.NET" Value="LongTime" />
       <MemberSignature Language="C++ CLI" Value="LongTime" />
+      <MemberSignature Language="F#" Value="LongTime = 3" Usage="Microsoft.VisualBasic.DateFormat.LongTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateFormat.ShortDate" />
       <MemberSignature Language="VB.NET" Value="ShortDate" />
       <MemberSignature Language="C++ CLI" Value="ShortDate" />
+      <MemberSignature Language="F#" Value="ShortDate = 2" Usage="Microsoft.VisualBasic.DateFormat.ShortDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateFormat.ShortTime" />
       <MemberSignature Language="VB.NET" Value="ShortTime" />
       <MemberSignature Language="C++ CLI" Value="ShortTime" />
+      <MemberSignature Language="F#" Value="ShortTime = 4" Usage="Microsoft.VisualBasic.DateFormat.ShortTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

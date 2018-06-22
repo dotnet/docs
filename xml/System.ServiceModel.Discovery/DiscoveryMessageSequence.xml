@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscoveryMessageSequence&#xA;Implements IComparable(Of DiscoveryMessageSequence), IEquatable(Of DiscoveryMessageSequence)" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryMessageSequence : IComparable&lt;System::ServiceModel::Discovery::DiscoveryMessageSequence ^&gt;, IEquatable&lt;System::ServiceModel::Discovery::DiscoveryMessageSequence ^&gt;" />
+  <TypeSignature Language="F#" Value="type DiscoveryMessageSequence = class&#xA;    interface IComparable&lt;DiscoveryMessageSequence&gt;&#xA;    interface IEquatable&lt;DiscoveryMessageSequence&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.CanCompareTo(System.ServiceModel.Discovery.DiscoveryMessageSequence)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanCompareTo (other As DiscoveryMessageSequence) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanCompareTo(System::ServiceModel::Discovery::DiscoveryMessageSequence ^ other);" />
+      <MemberSignature Language="F#" Value="member this.CanCompareTo : System.ServiceModel.Discovery.DiscoveryMessageSequence -&gt; bool" Usage="discoveryMessageSequence.CanCompareTo other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.CompareTo(System.ServiceModel.Discovery.DiscoveryMessageSequence)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As DiscoveryMessageSequence) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::ServiceModel::Discovery::DiscoveryMessageSequence ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : System.ServiceModel.Discovery.DiscoveryMessageSequence -&gt; int&#xA;override this.CompareTo : System.ServiceModel.Discovery.DiscoveryMessageSequence -&gt; int" Usage="discoveryMessageSequence.CompareTo other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="discoveryMessageSequence.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.Equals(System.ServiceModel.Discovery.DiscoveryMessageSequence)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As DiscoveryMessageSequence) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::ServiceModel::Discovery::DiscoveryMessageSequence ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.ServiceModel.Discovery.DiscoveryMessageSequence -&gt; bool" Usage="discoveryMessageSequence.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="discoveryMessageSequence.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryMessageSequence.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long InstanceId { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : int64" Usage="System.ServiceModel.Discovery.DiscoveryMessageSequence.InstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryMessageSequence.MessageNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageNumber As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MessageNumber { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageNumber : int64" Usage="System.ServiceModel.Discovery.DiscoveryMessageSequence.MessageNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.op_Equality(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.DiscoveryMessageSequence)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (messageSequence1 As DiscoveryMessageSequence, messageSequence2 As DiscoveryMessageSequence) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::ServiceModel::Discovery::DiscoveryMessageSequence ^ messageSequence1, System::ServiceModel::Discovery::DiscoveryMessageSequence ^ messageSequence2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.ServiceModel.Discovery.DiscoveryMessageSequence * System.ServiceModel.Discovery.DiscoveryMessageSequence -&gt; bool" Usage="messageSequence1 = messageSequence2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.op_Inequality(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.DiscoveryMessageSequence)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (messageSequence1 As DiscoveryMessageSequence, messageSequence2 As DiscoveryMessageSequence) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::ServiceModel::Discovery::DiscoveryMessageSequence ^ messageSequence1, System::ServiceModel::Discovery::DiscoveryMessageSequence ^ messageSequence2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.ServiceModel.Discovery.DiscoveryMessageSequence * System.ServiceModel.Discovery.DiscoveryMessageSequence -&gt; bool" Usage="System.ServiceModel.Discovery.DiscoveryMessageSequence.op_Inequality (messageSequence1, messageSequence2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -279,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryMessageSequence.SequenceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SequenceId As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SequenceId { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SequenceId : Uri" Usage="System.ServiceModel.Discovery.DiscoveryMessageSequence.SequenceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -306,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="discoveryMessageSequence.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

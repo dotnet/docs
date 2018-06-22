@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlIndexingReader" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlIndexingReader" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlIndexingReader" />
+  <TypeSignature Language="F#" Value="type IXamlIndexingReader = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlIndexingReader.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Xaml.IXamlIndexingReader.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlIndexingReader.CurrentIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentIndex : int with get, set" Usage="System.Xaml.IXamlIndexingReader.CurrentIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlTypeException" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlTypeException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlTypeException : SystemException" />
+  <TypeSignature Language="F#" Value="type SqlTypeException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypeException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTypeException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTypeException : string -&gt; System.Data.SqlTypes.SqlTypeException" Usage="new System.Data.SqlTypes.SqlTypeException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (si As SerializationInfo, sc As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SqlTypeException(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext sc);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTypeException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.SqlTypes.SqlTypeException" Usage="new System.Data.SqlTypes.SqlTypeException (si, sc)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypeException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTypeException(System::String ^ message, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTypeException : string * Exception -&gt; System.Data.SqlTypes.SqlTypeException" Usage="new System.Data.SqlTypes.SqlTypeException (message, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

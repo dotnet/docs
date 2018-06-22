@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum StatusBarPanelStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class StatusBarPanelStyle" />
+  <TypeSignature Language="F#" Value="type StatusBarPanelStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelStyle.OwnerDraw" />
       <MemberSignature Language="VB.NET" Value="OwnerDraw" />
       <MemberSignature Language="C++ CLI" Value="OwnerDraw" />
+      <MemberSignature Language="F#" Value="OwnerDraw = 2" Usage="System.Windows.Forms.StatusBarPanelStyle.OwnerDraw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelStyle.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Windows.Forms.StatusBarPanelStyle.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderProviderOptionsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ModelBinderProviderOptionsAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelBinderProviderOptionsAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ModelBinderProviderOptionsAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderProviderOptionsAttribute.FrontOfList" />
       <MemberSignature Language="VB.NET" Value="Public Property FrontOfList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FrontOfList { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FrontOfList : bool with get, set" Usage="System.Web.ModelBinding.ModelBinderProviderOptionsAttribute.FrontOfList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

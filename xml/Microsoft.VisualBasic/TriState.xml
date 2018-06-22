@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.TriState" />
   <TypeSignature Language="VB.NET" Value="Public Enum TriState" />
   <TypeSignature Language="C++ CLI" Value="public enum class TriState" />
+  <TypeSignature Language="F#" Value="type TriState = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.False" />
       <MemberSignature Language="VB.NET" Value="False" />
       <MemberSignature Language="C++ CLI" Value="False" />
+      <MemberSignature Language="F#" Value="False = 0" Usage="Microsoft.VisualBasic.TriState.False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.True" />
       <MemberSignature Language="VB.NET" Value="True" />
       <MemberSignature Language="C++ CLI" Value="True" />
+      <MemberSignature Language="F#" Value="True = -1" Usage="Microsoft.VisualBasic.TriState.True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.UseDefault" />
       <MemberSignature Language="VB.NET" Value="UseDefault" />
       <MemberSignature Language="C++ CLI" Value="UseDefault" />
+      <MemberSignature Language="F#" Value="UseDefault = -2" Usage="Microsoft.VisualBasic.TriState.UseDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

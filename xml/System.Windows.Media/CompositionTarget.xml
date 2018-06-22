@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.CompositionTarget" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CompositionTarget&#xA;Inherits DispatcherObject&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionTarget abstract : System::Windows::Threading::DispatcherObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type CompositionTarget = class&#xA;    inherit DispatcherObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CompositionTarget.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="compositionTarget.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.CompositionTarget.Rendering" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event Rendering As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ Rendering;" />
+      <MemberSignature Language="F#" Value="member this.Rendering : EventHandler " Usage="member this.Rendering : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CompositionTarget.RootVisual" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RootVisual As Visual" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Visual ^ RootVisual { System::Windows::Media::Visual ^ get(); void set(System::Windows::Media::Visual ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootVisual : System.Windows.Media.Visual with get, set" Usage="System.Windows.Media.CompositionTarget.RootVisual" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CompositionTarget.TransformFromDevice" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TransformFromDevice As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Matrix TransformFromDevice { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformFromDevice : System.Windows.Media.Matrix" Usage="System.Windows.Media.CompositionTarget.TransformFromDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CompositionTarget.TransformToDevice" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TransformToDevice As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Matrix TransformToDevice { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformToDevice : System.Windows.Media.Matrix" Usage="System.Windows.Media.CompositionTarget.TransformToDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

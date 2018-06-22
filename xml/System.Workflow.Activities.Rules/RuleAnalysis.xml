@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleAnalysis" />
   <TypeSignature Language="VB.NET" Value="Public Class RuleAnalysis" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleAnalysis" />
+  <TypeSignature Language="F#" Value="type RuleAnalysis = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAnalysis.#ctor(System.Workflow.Activities.Rules.RuleValidation,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (validation As RuleValidation, forWrites As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleAnalysis(System::Workflow::Activities::Rules::RuleValidation ^ validation, bool forWrites);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleAnalysis : System.Workflow.Activities.Rules.RuleValidation * bool -&gt; System.Workflow.Activities.Rules.RuleAnalysis" Usage="new System.Workflow.Activities.Rules.RuleAnalysis (validation, forWrites)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAnalysis.AddSymbol(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSymbol (symbol As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSymbol(System::String ^ symbol);" />
+      <MemberSignature Language="F#" Value="member this.AddSymbol : string -&gt; unit" Usage="ruleAnalysis.AddSymbol symbol" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleAnalysis.ForWrites" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForWrites As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ForWrites { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForWrites : bool" Usage="System.Workflow.Activities.Rules.RuleAnalysis.ForWrites" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAnalysis.GetSymbols" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSymbols () As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ GetSymbols();" />
+      <MemberSignature Language="F#" Value="member this.GetSymbols : unit -&gt; System.Collections.Generic.ICollection&lt;string&gt;" Usage="ruleAnalysis.GetSymbols " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

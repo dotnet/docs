@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.UpdateMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum UpdateMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class UpdateMode" />
+  <TypeSignature Language="F#" Value="type UpdateMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.UpdateMode.vbUpdateWhenPropertyChanges" />
       <MemberSignature Language="VB.NET" Value="vbUpdateWhenPropertyChanges" />
       <MemberSignature Language="C++ CLI" Value="vbUpdateWhenPropertyChanges" />
+      <MemberSignature Language="F#" Value="vbUpdateWhenPropertyChanges = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.UpdateMode.vbUpdateWhenPropertyChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.UpdateMode.vbUpdateWhenRowChanges" />
       <MemberSignature Language="VB.NET" Value="vbUpdateWhenRowChanges" />
       <MemberSignature Language="C++ CLI" Value="vbUpdateWhenRowChanges" />
+      <MemberSignature Language="F#" Value="vbUpdateWhenRowChanges = 2" Usage="Microsoft.VisualBasic.Compatibility.VB6.UpdateMode.vbUpdateWhenRowChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.UpdateMode.vbUsePropertyAttributes" />
       <MemberSignature Language="VB.NET" Value="vbUsePropertyAttributes" />
       <MemberSignature Language="C++ CLI" Value="vbUsePropertyAttributes" />
+      <MemberSignature Language="F#" Value="vbUsePropertyAttributes = 0" Usage="Microsoft.VisualBasic.Compatibility.VB6.UpdateMode.vbUsePropertyAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

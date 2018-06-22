@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasSelectionChangingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InkCanvasSelectionChangingEventHandler(sender As Object, e As InkCanvasSelectionChangingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InkCanvasSelectionChangingEventHandler(System::Object ^ sender, InkCanvasSelectionChangingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InkCanvasSelectionChangingEventHandler = delegate of obj * InkCanvasSelectionChangingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

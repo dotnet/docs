@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ExternalProjectFinishedEventArgs&#xA;Inherits CustomBuildEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExternalProjectFinishedEventArgs : Microsoft::Build::Framework::CustomBuildEventArgs" />
+  <TypeSignature Language="F#" Value="type ExternalProjectFinishedEventArgs = class&#xA;    inherit CustomBuildEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, senderName As String, projectFile As String, succeeded As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalProjectFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, System::String ^ projectFile, bool succeeded);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ExternalProjectFinishedEventArgs : string * string * string * string * bool -&gt; Microsoft.Build.Framework.ExternalProjectFinishedEventArgs" Usage="new Microsoft.Build.Framework.ExternalProjectFinishedEventArgs (message, helpKeyword, senderName, projectFile, succeeded)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.Boolean,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, senderName As String, projectFile As String, succeeded As Boolean, eventTimestamp As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalProjectFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, System::String ^ projectFile, bool succeeded, DateTime eventTimestamp);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ExternalProjectFinishedEventArgs : string * string * string * string * bool * DateTime -&gt; Microsoft.Build.Framework.ExternalProjectFinishedEventArgs" Usage="new Microsoft.Build.Framework.ExternalProjectFinishedEventArgs (message, helpKeyword, senderName, projectFile, succeeded, eventTimestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.ProjectFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectFile : string" Usage="Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.ProjectFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Succeeded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Succeeded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Succeeded : bool" Usage="Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.Succeeded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

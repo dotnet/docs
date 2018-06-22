@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.EnumerablePartitionerOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum EnumerablePartitionerOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class EnumerablePartitionerOptions" />
+  <TypeSignature Language="F#" Value="type EnumerablePartitionerOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Collections.Concurrent.EnumerablePartitionerOptions.NoBuffering" />
       <MemberSignature Language="VB.NET" Value="NoBuffering" />
       <MemberSignature Language="C++ CLI" Value="NoBuffering" />
+      <MemberSignature Language="F#" Value="NoBuffering = 1" Usage="System.Collections.Concurrent.EnumerablePartitionerOptions.NoBuffering" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Collections.Concurrent.EnumerablePartitionerOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Collections.Concurrent.EnumerablePartitionerOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>

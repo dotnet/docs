@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ThemeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThemeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ThemeType" />
+  <TypeSignature Language="F#" Value="type ThemeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.ThemeType.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Workflow.ComponentModel.Design.ThemeType.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.ThemeType.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 1" Usage="System.Workflow.ComponentModel.Design.ThemeType.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.ThemeType.UserDefined" />
       <MemberSignature Language="VB.NET" Value="UserDefined" />
       <MemberSignature Language="C++ CLI" Value="UserDefined" />
+      <MemberSignature Language="F#" Value="UserDefined = 2" Usage="System.Workflow.ComponentModel.Design.ThemeType.UserDefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

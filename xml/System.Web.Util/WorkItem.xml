@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.WorkItem" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkItem" />
+  <TypeSignature Language="F#" Value="type WorkItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.WorkItem.Post(System.Web.Util.WorkItemCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Post (callback As WorkItemCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Post(System::Web::Util::WorkItemCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="static member Post : System.Web.Util.WorkItemCallback -&gt; unit" Usage="System.Web.Util.WorkItem.Post callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

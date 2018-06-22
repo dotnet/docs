@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IExecutorExtensionContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExecutorExtensionContract&#xA;Implements IContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExecutorExtensionContract : System::AddIn::Contract::IContract" />
+  <TypeSignature Language="F#" Value="type IExecutorExtensionContract = interface&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoaded(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoaded (assemblyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoaded(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member AssemblyLoaded : string -&gt; unit" Usage="iExecutorExtensionContract.AssemblyLoaded assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoadedFrom(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoadedFrom (assemblyFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoadedFrom(System::String ^ assemblyFile);" />
+      <MemberSignature Language="F#" Value="abstract member AssemblyLoadedFrom : string -&gt; unit" Usage="iExecutorExtensionContract.AssemblyLoadedFrom assemblyFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoading(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoading (assemblyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoading(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member AssemblyLoading : string -&gt; unit" Usage="iExecutorExtensionContract.AssemblyLoading assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoadingFrom(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoadingFrom (assemblyFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoadingFrom(System::String ^ assemblyFile);" />
+      <MemberSignature Language="F#" Value="abstract member AssemblyLoadingFrom : string -&gt; unit" Usage="iExecutorExtensionContract.AssemblyLoadingFrom assemblyFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.EntryPointStarted(System.AddIn.Contract.IContract)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EntryPointStarted (entryPoint As IContract)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EntryPointStarted(System::AddIn::Contract::IContract ^ entryPoint);" />
+      <MemberSignature Language="F#" Value="abstract member EntryPointStarted : System.AddIn.Contract.IContract -&gt; unit" Usage="iExecutorExtensionContract.EntryPointStarted entryPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.EntryPointStarting(System.String,System.String,System.AddIn.Contract.Collections.IRemoteArgumentArrayContract)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EntryPointStarting (assemblyName As String, startupClass As String, initArgs As IRemoteArgumentArrayContract)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EntryPointStarting(System::String ^ assemblyName, System::String ^ startupClass, System::AddIn::Contract::Collections::IRemoteArgumentArrayContract ^ initArgs);" />
+      <MemberSignature Language="F#" Value="abstract member EntryPointStarting : string * string * System.AddIn.Contract.Collections.IRemoteArgumentArrayContract -&gt; unit" Usage="iExecutorExtensionContract.EntryPointStarting (assemblyName, startupClass, initArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.ExecutorCreated" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExecutorCreated ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecutorCreated();" />
+      <MemberSignature Language="F#" Value="abstract member ExecutorCreated : unit -&gt; unit" Usage="iExecutorExtensionContract.ExecutorCreated " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

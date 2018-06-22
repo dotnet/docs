@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceUpdateEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceUpdateEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type LinqDataSourceUpdateEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.#ctor(System.Web.UI.WebControls.LinqDataSourceValidationException)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exception As LinqDataSourceValidationException)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceUpdateEventArgs(System::Web::UI::WebControls::LinqDataSourceValidationException ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs : System.Web.UI.WebControls.LinqDataSourceValidationException -&gt; System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -106,6 +108,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.#ctor(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (originalObject As Object, newObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceUpdateEventArgs(System::Object ^ originalObject, System::Object ^ newObject);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs : obj * obj -&gt; System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs (originalObject, newObject)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -128,6 +131,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As LinqDataSourceValidationException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::LinqDataSourceValidationException ^ Exception { System::Web::UI::WebControls::LinqDataSourceValidationException ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : System.Web.UI.WebControls.LinqDataSourceValidationException" Usage="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -191,6 +195,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -255,6 +260,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewObject : obj" Usage="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -290,6 +296,7 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OriginalObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalObject : obj" Usage="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

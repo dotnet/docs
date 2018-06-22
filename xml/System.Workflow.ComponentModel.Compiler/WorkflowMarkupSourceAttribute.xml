@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowMarkupSourceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowMarkupSourceAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type WorkflowMarkupSourceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, md5Digest As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowMarkupSourceAttribute(System::String ^ fileName, System::String ^ md5Digest);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute : string * string -&gt; System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute" Usage="new System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute (fileName, md5Digest)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.MD5Digest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MD5Digest As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MD5Digest { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MD5Digest : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.MD5Digest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

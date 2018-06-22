@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005" />
   <TypeSignature Language="VB.NET" Value="Public Class FindCriteriaApril2005&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class FindCriteriaApril2005 : System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type FindCriteriaApril2005 = class&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005 FromFindCriteria(class System.ServiceModel.Discovery.FindCriteria findCriteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005.FromFindCriteria(System.ServiceModel.Discovery.FindCriteria)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Discovery::VersionApril2005::FindCriteriaApril2005 ^ FromFindCriteria(System::ServiceModel::Discovery::FindCriteria ^ findCriteria);" />
+      <MemberSignature Language="F#" Value="static member FromFindCriteria : System.ServiceModel.Discovery.FindCriteria -&gt; System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005" Usage="System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005.FromFindCriteria findCriteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchema () As XmlSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
+      <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="findCriteriaApril2005.GetSchema " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005.GetSchema(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSchema (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetSchema(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetSchema : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005.GetSchema schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005.ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXml (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="findCriteriaApril2005.ReadXml reader" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005.ToFindCriteria" />
       <MemberSignature Language="VB.NET" Value="Public Function ToFindCriteria () As FindCriteria" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Discovery::FindCriteria ^ ToFindCriteria();" />
+      <MemberSignature Language="F#" Value="member this.ToFindCriteria : unit -&gt; System.ServiceModel.Discovery.FindCriteria" Usage="findCriteriaApril2005.ToFindCriteria " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.VersionApril2005.FindCriteriaApril2005.WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="findCriteriaApril2005.WriteXml writer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ErrorType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ErrorType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ErrorType" />
+  <TypeSignature Language="F#" Value="type ErrorType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.EvalError" />
       <MemberSignature Language="VB.NET" Value="EvalError" />
       <MemberSignature Language="C++ CLI" Value="EvalError" />
+      <MemberSignature Language="F#" Value="EvalError = 1" Usage="Microsoft.JScript.ErrorType.EvalError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.OtherError" />
       <MemberSignature Language="VB.NET" Value="OtherError" />
       <MemberSignature Language="C++ CLI" Value="OtherError" />
+      <MemberSignature Language="F#" Value="OtherError = 0" Usage="Microsoft.JScript.ErrorType.OtherError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.RangeError" />
       <MemberSignature Language="VB.NET" Value="RangeError" />
       <MemberSignature Language="C++ CLI" Value="RangeError" />
+      <MemberSignature Language="F#" Value="RangeError = 2" Usage="Microsoft.JScript.ErrorType.RangeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.ReferenceError" />
       <MemberSignature Language="VB.NET" Value="ReferenceError" />
       <MemberSignature Language="C++ CLI" Value="ReferenceError" />
+      <MemberSignature Language="F#" Value="ReferenceError = 3" Usage="Microsoft.JScript.ErrorType.ReferenceError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.SyntaxError" />
       <MemberSignature Language="VB.NET" Value="SyntaxError" />
       <MemberSignature Language="C++ CLI" Value="SyntaxError" />
+      <MemberSignature Language="F#" Value="SyntaxError = 4" Usage="Microsoft.JScript.ErrorType.SyntaxError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.TypeError" />
       <MemberSignature Language="VB.NET" Value="TypeError" />
       <MemberSignature Language="C++ CLI" Value="TypeError" />
+      <MemberSignature Language="F#" Value="TypeError = 5" Usage="Microsoft.JScript.ErrorType.TypeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -146,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.URIError" />
       <MemberSignature Language="VB.NET" Value="URIError" />
       <MemberSignature Language="C++ CLI" Value="URIError" />
+      <MemberSignature Language="F#" Value="URIError = 6" Usage="Microsoft.JScript.ErrorType.URIError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

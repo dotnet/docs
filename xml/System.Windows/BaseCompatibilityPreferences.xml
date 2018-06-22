@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.BaseCompatibilityPreferences" />
   <TypeSignature Language="VB.NET" Value="Public Class BaseCompatibilityPreferences" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseCompatibilityPreferences abstract sealed" />
+  <TypeSignature Language="F#" Value="type BaseCompatibilityPreferences = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.FlowDispatcherSynchronizationContextPriority" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property FlowDispatcherSynchronizationContextPriority As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool FlowDispatcherSynchronizationContextPriority { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDispatcherSynchronizationContextPriority : bool with get, set" Usage="System.Windows.BaseCompatibilityPreferences.FlowDispatcherSynchronizationContextPriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailure" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property HandleDispatcherRequestProcessingFailure As BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::BaseCompatibilityPreferences::HandleDispatcherRequestProcessingFailureOptions HandleDispatcherRequestProcessingFailure { System::Windows::BaseCompatibilityPreferences::HandleDispatcherRequestProcessingFailureOptions get(); void set(System::Windows::BaseCompatibilityPreferences::HandleDispatcherRequestProcessingFailureOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.HandleDispatcherRequestProcessingFailure : System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions with get, set" Usage="System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -84,6 +87,7 @@ This property value can be changed at any time. If it is changed from multiple t
       <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.InlineDispatcherSynchronizationContextSend" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property InlineDispatcherSynchronizationContextSend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool InlineDispatcherSynchronizationContextSend { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InlineDispatcherSynchronizationContextSend : bool with get, set" Usage="System.Windows.BaseCompatibilityPreferences.InlineDispatcherSynchronizationContextSend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -112,6 +116,7 @@ This property value can be changed at any time. If it is changed from multiple t
       <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.ReuseDispatcherSynchronizationContextInstance" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ReuseDispatcherSynchronizationContextInstance As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ReuseDispatcherSynchronizationContextInstance { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReuseDispatcherSynchronizationContextInstance : bool with get, set" Usage="System.Windows.BaseCompatibilityPreferences.ReuseDispatcherSynchronizationContextInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

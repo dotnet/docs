@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProducerConsumerCollection(Of T)&#xA;Implements ICollection, IEnumerable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IProducerConsumerCollection : System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type IProducerConsumerCollection&lt;'T&gt; = interface&#xA;    interface seq&lt;'T&gt;&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit" Usage="iProducerConsumerCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="abstract member ToArray : unit -&gt; 'T[]" Usage="iProducerConsumerCollection.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.TryAdd(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAdd (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAdd(T item);" />
+      <MemberSignature Language="F#" Value="abstract member TryAdd : 'T -&gt; bool" Usage="iProducerConsumerCollection.TryAdd item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.TryTake(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryTake (ByRef item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryTake([Runtime::InteropServices::Out] T % item);" />
+      <MemberSignature Language="F#" Value="abstract member TryTake :  -&gt; bool" Usage="iProducerConsumerCollection.TryTake item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>

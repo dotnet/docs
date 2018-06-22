@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.EventsTab" />
   <TypeSignature Language="VB.NET" Value="Public Class EventsTab&#xA;Inherits PropertyTab" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventsTab : System::Windows::Forms::Design::PropertyTab" />
+  <TypeSignature Language="F#" Value="type EventsTab = class&#xA;    inherit PropertyTab" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sp As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventsTab(IServiceProvider ^ sp);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.EventsTab : IServiceProvider -&gt; System.Windows.Forms.Design.EventsTab" Usage="new System.Windows.Forms.Design.EventsTab sp" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanExtend (extendee As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanExtend(System::Object ^ extendee);" />
+      <MemberSignature Language="F#" Value="override this.CanExtend : obj -&gt; bool" Usage="eventsTab.CanExtend extendee" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.GetDefaultProperty(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultProperty (obj As Object) As PropertyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetDefaultProperty : obj -&gt; System.ComponentModel.PropertyDescriptor" Usage="eventsTab.GetDefaultProperty obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.GetProperties(System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="eventsTab.GetProperties (component, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="eventsTab.GetProperties (context, component, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.EventsTab.HelpKeyword" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HelpKeyword As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpKeyword { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="System.Windows.Forms.Design.EventsTab.HelpKeyword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.EventsTab.TabName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TabName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TabName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabName : string" Usage="System.Windows.Forms.Design.EventsTab.TabName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

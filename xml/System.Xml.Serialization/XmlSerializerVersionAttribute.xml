@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializerVersionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSerializerVersionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerVersionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlSerializerVersionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerVersionAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerVersionAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializerVersionAttribute : Type -&gt; System.Xml.Serialization.XmlSerializerVersionAttribute" Usage="new System.Xml.Serialization.XmlSerializerVersionAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerVersionAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.XmlSerializerVersionAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerVersionAttribute.ParentAssemblyId" />
       <MemberSignature Language="VB.NET" Value="Public Property ParentAssemblyId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParentAssemblyId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParentAssemblyId : string with get, set" Usage="System.Xml.Serialization.XmlSerializerVersionAttribute.ParentAssemblyId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerVersionAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Xml.Serialization.XmlSerializerVersionAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerVersionAttribute.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.Xml.Serialization.XmlSerializerVersionAttribute.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorationLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextDecorationLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextDecorationLocation" />
+  <TypeSignature Language="F#" Value="type TextDecorationLocation = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@ Text decoration types
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationLocation.Baseline" />
       <MemberSignature Language="VB.NET" Value="Baseline" />
       <MemberSignature Language="C++ CLI" Value="Baseline" />
+      <MemberSignature Language="F#" Value="Baseline = 3" Usage="System.Windows.TextDecorationLocation.Baseline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +62,7 @@ Text decoration types
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationLocation.OverLine" />
       <MemberSignature Language="VB.NET" Value="OverLine" />
       <MemberSignature Language="C++ CLI" Value="OverLine" />
+      <MemberSignature Language="F#" Value="OverLine = 1" Usage="System.Windows.TextDecorationLocation.OverLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +82,7 @@ Text decoration types
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationLocation.Strikethrough" />
       <MemberSignature Language="VB.NET" Value="Strikethrough" />
       <MemberSignature Language="C++ CLI" Value="Strikethrough" />
+      <MemberSignature Language="F#" Value="Strikethrough = 2" Usage="System.Windows.TextDecorationLocation.Strikethrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +102,7 @@ Text decoration types
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationLocation.Underline" />
       <MemberSignature Language="VB.NET" Value="Underline" />
       <MemberSignature Language="C++ CLI" Value="Underline" />
+      <MemberSignature Language="F#" Value="Underline = 0" Usage="System.Windows.TextDecorationLocation.Underline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

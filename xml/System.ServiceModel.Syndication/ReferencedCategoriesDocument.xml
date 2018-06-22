@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class ReferencedCategoriesDocument&#xA;Inherits CategoriesDocument" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReferencedCategoriesDocument : System::ServiceModel::Syndication::CategoriesDocument" />
+  <TypeSignature Language="F#" Value="type ReferencedCategoriesDocument = class&#xA;    inherit CategoriesDocument" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ReferencedCategoriesDocument.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (link As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReferencedCategoriesDocument(Uri ^ link);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.ReferencedCategoriesDocument : Uri -&gt; System.ServiceModel.Syndication.ReferencedCategoriesDocument" Usage="new System.ServiceModel.Syndication.ReferencedCategoriesDocument link" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ReferencedCategoriesDocument.Link" />
       <MemberSignature Language="VB.NET" Value="Public Property Link As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Link { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Link : Uri with get, set" Usage="System.ServiceModel.Syndication.ReferencedCategoriesDocument.Link" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

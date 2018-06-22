@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XsltLibrary" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XsltLibrary" />
   <TypeSignature Language="C++ CLI" Value="public ref class XsltLibrary sealed" />
+  <TypeSignature Language="F#" Value="type XsltLibrary = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.CheckScriptNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CheckScriptNamespace (nsUri As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CheckScriptNamespace(System::String ^ nsUri);" />
+      <MemberSignature Language="F#" Value="member this.CheckScriptNamespace : string -&gt; int" Usage="xsltLibrary.CheckScriptNamespace nsUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.ElementAvailable(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function ElementAvailable (name As XmlQualifiedName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ElementAvailable(System::Xml::XmlQualifiedName ^ name);" />
+      <MemberSignature Language="F#" Value="member this.ElementAvailable : System.Xml.XmlQualifiedName -&gt; bool" Usage="xsltLibrary.ElementAvailable name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.EqualityOperator(System.Double,System.Collections.Generic.IList{System.Xml.XPath.XPathItem},System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
       <MemberSignature Language="VB.NET" Value="Public Function EqualityOperator (opCode As Double, left As IList(Of XPathItem), right As IList(Of XPathItem)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EqualityOperator(double opCode, System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ left, System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ right);" />
+      <MemberSignature Language="F#" Value="member this.EqualityOperator : double * System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; * System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; -&gt; bool" Usage="xsltLibrary.EqualityOperator (opCode, left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.FormatMessage(System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function FormatMessage (res As String, args As IList(Of String)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ FormatMessage(System::String ^ res, System::Collections::Generic::IList&lt;System::String ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.FormatMessage : string * System.Collections.Generic.IList&lt;string&gt; -&gt; string" Usage="xsltLibrary.FormatMessage (res, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.FormatNumberDynamic(System.Double,System.String,System.Xml.XmlQualifiedName,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FormatNumberDynamic (value As Double, formatPicture As String, decimalFormatName As XmlQualifiedName, errorMessageName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ FormatNumberDynamic(double value, System::String ^ formatPicture, System::Xml::XmlQualifiedName ^ decimalFormatName, System::String ^ errorMessageName);" />
+      <MemberSignature Language="F#" Value="member this.FormatNumberDynamic : double * string * System.Xml.XmlQualifiedName * string -&gt; string" Usage="xsltLibrary.FormatNumberDynamic (value, formatPicture, decimalFormatName, errorMessageName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.FormatNumberStatic(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function FormatNumberStatic (value As Double, decimalFormatterIndex As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ FormatNumberStatic(double value, double decimalFormatterIndex);" />
+      <MemberSignature Language="F#" Value="member this.FormatNumberStatic : double * double -&gt; string" Usage="xsltLibrary.FormatNumberStatic (value, decimalFormatterIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.FunctionAvailable(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function FunctionAvailable (name As XmlQualifiedName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FunctionAvailable(System::Xml::XmlQualifiedName ^ name);" />
+      <MemberSignature Language="F#" Value="member this.FunctionAvailable : System.Xml.XmlQualifiedName -&gt; bool" Usage="xsltLibrary.FunctionAvailable name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.IsSameNodeSort(System.Xml.XPath.XPathNavigator,System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSameNodeSort (nav1 As XPathNavigator, nav2 As XPathNavigator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSameNodeSort(System::Xml::XPath::XPathNavigator ^ nav1, System::Xml::XPath::XPathNavigator ^ nav2);" />
+      <MemberSignature Language="F#" Value="member this.IsSameNodeSort : System.Xml.XPath.XPathNavigator * System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xsltLibrary.IsSameNodeSort (nav1, nav2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -313,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.LangToLcid(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function LangToLcid (lang As String, forwardCompatibility As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LangToLcid(System::String ^ lang, bool forwardCompatibility);" />
+      <MemberSignature Language="F#" Value="member this.LangToLcid : string * bool -&gt; int" Usage="xsltLibrary.LangToLcid (lang, forwardCompatibility)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -344,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.NumberFormat(System.Collections.Generic.IList{System.Xml.XPath.XPathItem},System.String,System.Double,System.String,System.String,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function NumberFormat (value As IList(Of XPathItem), formatString As String, lang As Double, letterValue As String, groupingSeparator As String, groupingSize As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ NumberFormat(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ value, System::String ^ formatString, double lang, System::String ^ letterValue, System::String ^ groupingSeparator, double groupingSize);" />
+      <MemberSignature Language="F#" Value="member this.NumberFormat : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; * string * double * string * string * double -&gt; string" Usage="xsltLibrary.NumberFormat (value, formatString, lang, letterValue, groupingSeparator, groupingSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -387,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.RegisterDecimalFormat(System.Xml.XmlQualifiedName,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RegisterDecimalFormat (name As XmlQualifiedName, infinitySymbol As String, nanSymbol As String, characters As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int RegisterDecimalFormat(System::Xml::XmlQualifiedName ^ name, System::String ^ infinitySymbol, System::String ^ nanSymbol, System::String ^ characters);" />
+      <MemberSignature Language="F#" Value="member this.RegisterDecimalFormat : System.Xml.XmlQualifiedName * string * string * string -&gt; int" Usage="xsltLibrary.RegisterDecimalFormat (name, infinitySymbol, nanSymbol, characters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -423,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.RegisterDecimalFormatter(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RegisterDecimalFormatter (formatPicture As String, infinitySymbol As String, nanSymbol As String, characters As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double RegisterDecimalFormatter(System::String ^ formatPicture, System::String ^ infinitySymbol, System::String ^ nanSymbol, System::String ^ characters);" />
+      <MemberSignature Language="F#" Value="member this.RegisterDecimalFormatter : string * string * string * string -&gt; double" Usage="xsltLibrary.RegisterDecimalFormatter (formatPicture, infinitySymbol, nanSymbol, characters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -458,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltLibrary.RelationalOperator(System.Double,System.Collections.Generic.IList{System.Xml.XPath.XPathItem},System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
       <MemberSignature Language="VB.NET" Value="Public Function RelationalOperator (opCode As Double, left As IList(Of XPathItem), right As IList(Of XPathItem)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RelationalOperator(double opCode, System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ left, System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ right);" />
+      <MemberSignature Language="F#" Value="member this.RelationalOperator : double * System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; * System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; -&gt; bool" Usage="xsltLibrary.RelationalOperator (opCode, left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

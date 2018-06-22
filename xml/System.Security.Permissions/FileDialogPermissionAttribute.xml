@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileDialogPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileDialogPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileDialogPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type FileDialogPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileDialogPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.FileDialogPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.FileDialogPermissionAttribute" Usage="new System.Security.Permissions.FileDialogPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileDialogPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="fileDialogPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.FileDialogPermissionAttribute.Open" />
       <MemberSignature Language="VB.NET" Value="Public Property Open As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Open { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Open : bool with get, set" Usage="System.Security.Permissions.FileDialogPermissionAttribute.Open" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.FileDialogPermissionAttribute.Save" />
       <MemberSignature Language="VB.NET" Value="Public Property Save As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Save { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Save : bool with get, set" Usage="System.Security.Permissions.FileDialogPermissionAttribute.Save" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

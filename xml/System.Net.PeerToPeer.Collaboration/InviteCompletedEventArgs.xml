@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InviteCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InviteCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type InviteCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs.InviteResponse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InviteResponse As PeerInvitationResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerInvitationResponse ^ InviteResponse { System::Net::PeerToPeer::Collaboration::PeerInvitationResponse ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InviteResponse : System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" Usage="System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs.InviteResponse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

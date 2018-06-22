@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectImportGroupElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectImportGroupElement&#xA;Inherits ProjectElementContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectImportGroupElement : Microsoft::Build::Construction::ProjectElementContainer" />
+  <TypeSignature Language="F#" Value="type ProjectImportGroupElement = class&#xA;    inherit ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectImportGroupElement.AddImport(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddImport (project As String) As ProjectImportElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectImportElement ^ AddImport(System::String ^ project);" />
+      <MemberSignature Language="F#" Value="member this.AddImport : string -&gt; Microsoft.Build.Construction.ProjectImportElement" Usage="projectImportGroupElement.AddImport project" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectImportGroupElement.Imports" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Imports As ICollection(Of ProjectImportElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectImportElement ^&gt; ^ Imports { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectImportElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Imports : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectImportElement&gt;" Usage="Microsoft.Build.Construction.ProjectImportGroupElement.Imports" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

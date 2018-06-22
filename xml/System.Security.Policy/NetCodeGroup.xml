@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.NetCodeGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetCodeGroup&#xA;Inherits CodeGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetCodeGroup sealed : System::Security::Policy::CodeGroup" />
+  <TypeSignature Language="F#" Value="type NetCodeGroup = class&#xA;    inherit CodeGroup" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.#ctor(System.Security.Policy.IMembershipCondition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (membershipCondition As IMembershipCondition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NetCodeGroup(System::Security::Policy::IMembershipCondition ^ membershipCondition);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.NetCodeGroup : System.Security.Policy.IMembershipCondition -&gt; System.Security.Policy.NetCodeGroup" Usage="new System.Security.Policy.NetCodeGroup membershipCondition" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.NetCodeGroup.AbsentOriginScheme" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AbsentOriginScheme As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AbsentOriginScheme;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AbsentOriginScheme : string" Usage="System.Security.Policy.NetCodeGroup.AbsentOriginScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.AddConnectAccess(System.String,System.Security.Policy.CodeConnectAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddConnectAccess (originScheme As String, connectAccess As CodeConnectAccess)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddConnectAccess(System::String ^ originScheme, System::Security::Policy::CodeConnectAccess ^ connectAccess);" />
+      <MemberSignature Language="F#" Value="member this.AddConnectAccess : string * System.Security.Policy.CodeConnectAccess -&gt; unit" Usage="netCodeGroup.AddConnectAccess (originScheme, connectAccess)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AnyOtherOriginScheme As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AnyOtherOriginScheme;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AnyOtherOriginScheme : string" Usage="System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -236,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.NetCodeGroup.AttributeString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AttributeString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AttributeString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeString : string" Usage="System.Security.Policy.NetCodeGroup.AttributeString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -261,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As CodeGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.Policy.CodeGroup" Usage="netCodeGroup.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -294,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.CreateXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateXml (element As SecurityElement, level As PolicyLevel)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateXml(System::Security::SecurityElement ^ element, System::Security::Policy::PolicyLevel ^ level);" />
+      <MemberSignature Language="F#" Value="override this.CreateXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit" Usage="netCodeGroup.CreateXml (element, level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -324,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="netCodeGroup.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -367,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.GetConnectAccessRules" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConnectAccessRules () As DictionaryEntry()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Collections::DictionaryEntry&gt; ^ GetConnectAccessRules();" />
+      <MemberSignature Language="F#" Value="member this.GetConnectAccessRules : unit -&gt; System.Collections.DictionaryEntry[]" Usage="netCodeGroup.GetConnectAccessRules " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -408,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="netCodeGroup.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -435,6 +446,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.NetCodeGroup.MergeLogic" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MergeLogic As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MergeLogic { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MergeLogic : string" Usage="System.Security.Policy.NetCodeGroup.MergeLogic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -460,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.ParseXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ParseXml (e As SecurityElement, level As PolicyLevel)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ParseXml(System::Security::SecurityElement ^ e, System::Security::Policy::PolicyLevel ^ level);" />
+      <MemberSignature Language="F#" Value="override this.ParseXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit" Usage="netCodeGroup.ParseXml (e, level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -490,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.NetCodeGroup.PermissionSetName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PermissionSetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PermissionSetName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionSetName : string" Usage="System.Security.Policy.NetCodeGroup.PermissionSetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -515,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.ResetConnectAccess" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetConnectAccess ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetConnectAccess();" />
+      <MemberSignature Language="F#" Value="member this.ResetConnectAccess : unit -&gt; unit" Usage="netCodeGroup.ResetConnectAccess " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -562,6 +577,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.Resolve(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="override this.Resolve : System.Security.Policy.Evidence -&gt; System.Security.Policy.PolicyStatement" Usage="netCodeGroup.Resolve evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -603,6 +619,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.NetCodeGroup.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="override this.ResolveMatchingCodeGroups : System.Security.Policy.Evidence -&gt; System.Security.Policy.CodeGroup" Usage="netCodeGroup.ResolveMatchingCodeGroups evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

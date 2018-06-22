@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IQueryableDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IQueryableDataSource&#xA;Implements IDataSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IQueryableDataSource : System::Web::UI::IDataSource" />
+  <TypeSignature Language="F#" Value="type IQueryableDataSource = interface&#xA;    interface IDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.IQueryableDataSource.QueryCreated" />
       <MemberSignature Language="VB.NET" Value="Event QueryCreated As EventHandler(Of QueryCreatedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::QueryCreatedEventArgs ^&gt; ^ QueryCreated;" />
+      <MemberSignature Language="F#" Value="member this.QueryCreated : EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt; " Usage="member this.QueryCreated : System.EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseViewChanged ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseViewChanged();" />
+      <MemberSignature Language="F#" Value="abstract member RaiseViewChanged : unit -&gt; unit" Usage="iQueryableDataSource.RaiseViewChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

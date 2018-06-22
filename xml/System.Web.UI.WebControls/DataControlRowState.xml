@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlRowState" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataControlRowState" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataControlRowState" />
+  <TypeSignature Language="F#" Value="type DataControlRowState = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Alternate" />
       <MemberSignature Language="VB.NET" Value="Alternate" />
       <MemberSignature Language="C++ CLI" Value="Alternate" />
+      <MemberSignature Language="F#" Value="Alternate = 1" Usage="System.Web.UI.WebControls.DataControlRowState.Alternate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Edit" />
       <MemberSignature Language="VB.NET" Value="Edit" />
       <MemberSignature Language="C++ CLI" Value="Edit" />
+      <MemberSignature Language="F#" Value="Edit = 4" Usage="System.Web.UI.WebControls.DataControlRowState.Edit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 8" Usage="System.Web.UI.WebControls.DataControlRowState.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Web.UI.WebControls.DataControlRowState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Selected" />
       <MemberSignature Language="VB.NET" Value="Selected" />
       <MemberSignature Language="C++ CLI" Value="Selected" />
+      <MemberSignature Language="F#" Value="Selected = 2" Usage="System.Web.UI.WebControls.DataControlRowState.Selected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

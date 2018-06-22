@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SignOutRequestMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class SignOutRequestMessage&#xA;Inherits WSFederationMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignOutRequestMessage : System::IdentityModel::Services::WSFederationMessage" />
+  <TypeSignature Language="F#" Value="type SignOutRequestMessage = class&#xA;    inherit WSFederationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutRequestMessage.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignOutRequestMessage(Uri ^ baseUrl);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SignOutRequestMessage : Uri -&gt; System.IdentityModel.Services.SignOutRequestMessage" Usage="new System.IdentityModel.Services.SignOutRequestMessage baseUrl" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutRequestMessage.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, reply As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignOutRequestMessage(Uri ^ baseUrl, System::String ^ reply);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SignOutRequestMessage : Uri * string -&gt; System.IdentityModel.Services.SignOutRequestMessage" Usage="new System.IdentityModel.Services.SignOutRequestMessage (baseUrl, reply)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignOutRequestMessage.Reply" />
       <MemberSignature Language="VB.NET" Value="Public Property Reply As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reply { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Reply : string with get, set" Usage="System.IdentityModel.Services.SignOutRequestMessage.Reply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutRequestMessage.Validate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Validate();" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="signOutRequestMessage.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutRequestMessage.Write(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Write : System.IO.TextWriter -&gt; unit" Usage="signOutRequestMessage.Write writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

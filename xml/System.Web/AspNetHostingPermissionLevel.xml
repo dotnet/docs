@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.AspNetHostingPermissionLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum AspNetHostingPermissionLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class AspNetHostingPermissionLevel" />
+  <TypeSignature Language="F#" Value="type AspNetHostingPermissionLevel = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.AspNetHostingPermissionLevel.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 500" Usage="System.Web.AspNetHostingPermissionLevel.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.AspNetHostingPermissionLevel.Low" />
       <MemberSignature Language="VB.NET" Value="Low" />
       <MemberSignature Language="C++ CLI" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = 300" Usage="System.Web.AspNetHostingPermissionLevel.Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.AspNetHostingPermissionLevel.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = 400" Usage="System.Web.AspNetHostingPermissionLevel.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.AspNetHostingPermissionLevel.Minimal" />
       <MemberSignature Language="VB.NET" Value="Minimal" />
       <MemberSignature Language="C++ CLI" Value="Minimal" />
+      <MemberSignature Language="F#" Value="Minimal = 200" Usage="System.Web.AspNetHostingPermissionLevel.Minimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.AspNetHostingPermissionLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 100" Usage="System.Web.AspNetHostingPermissionLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.AspNetHostingPermissionLevel.Unrestricted" />
       <MemberSignature Language="VB.NET" Value="Unrestricted" />
       <MemberSignature Language="C++ CLI" Value="Unrestricted" />
+      <MemberSignature Language="F#" Value="Unrestricted = 600" Usage="System.Web.AspNetHostingPermissionLevel.Unrestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

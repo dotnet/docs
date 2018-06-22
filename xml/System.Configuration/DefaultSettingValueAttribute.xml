@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.DefaultSettingValueAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultSettingValueAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultSettingValueAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DefaultSettingValueAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.DefaultSettingValueAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultSettingValueAttribute(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.DefaultSettingValueAttribute : string -&gt; System.Configuration.DefaultSettingValueAttribute" Usage="new System.Configuration.DefaultSettingValueAttribute value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.DefaultSettingValueAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Configuration.DefaultSettingValueAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

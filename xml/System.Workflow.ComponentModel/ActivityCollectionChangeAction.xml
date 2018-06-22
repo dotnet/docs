@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActivityCollectionChangeAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class ActivityCollectionChangeAction" />
+  <TypeSignature Language="F#" Value="type ActivityCollectionChangeAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 0" Usage="System.Workflow.ComponentModel.ActivityCollectionChangeAction.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
       <MemberSignature Language="C++ CLI" Value="Remove" />
+      <MemberSignature Language="F#" Value="Remove = 1" Usage="System.Workflow.ComponentModel.ActivityCollectionChangeAction.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
       <MemberSignature Language="C++ CLI" Value="Replace" />
+      <MemberSignature Language="F#" Value="Replace = 2" Usage="System.Workflow.ComponentModel.ActivityCollectionChangeAction.Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

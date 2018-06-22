@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInterfaceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum NetworkInterfaceType" />
   <TypeSignature Language="C++ CLI" Value="public enum class NetworkInterfaceType" />
+  <TypeSignature Language="F#" Value="type NetworkInterfaceType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.AsymmetricDsl" />
       <MemberSignature Language="VB.NET" Value="AsymmetricDsl" />
       <MemberSignature Language="C++ CLI" Value="AsymmetricDsl" />
+      <MemberSignature Language="F#" Value="AsymmetricDsl = 94" Usage="System.Net.NetworkInformation.NetworkInterfaceType.AsymmetricDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Atm" />
       <MemberSignature Language="VB.NET" Value="Atm" />
       <MemberSignature Language="C++ CLI" Value="Atm" />
+      <MemberSignature Language="F#" Value="Atm = 37" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Atm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.BasicIsdn" />
       <MemberSignature Language="VB.NET" Value="BasicIsdn" />
       <MemberSignature Language="C++ CLI" Value="BasicIsdn" />
+      <MemberSignature Language="F#" Value="BasicIsdn = 20" Usage="System.Net.NetworkInformation.NetworkInterfaceType.BasicIsdn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Ethernet" />
       <MemberSignature Language="VB.NET" Value="Ethernet" />
       <MemberSignature Language="C++ CLI" Value="Ethernet" />
+      <MemberSignature Language="F#" Value="Ethernet = 6" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Ethernet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Ethernet3Megabit" />
       <MemberSignature Language="VB.NET" Value="Ethernet3Megabit" />
       <MemberSignature Language="C++ CLI" Value="Ethernet3Megabit" />
+      <MemberSignature Language="F#" Value="Ethernet3Megabit = 26" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Ethernet3Megabit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.FastEthernetFx" />
       <MemberSignature Language="VB.NET" Value="FastEthernetFx" />
       <MemberSignature Language="C++ CLI" Value="FastEthernetFx" />
+      <MemberSignature Language="F#" Value="FastEthernetFx = 69" Usage="System.Net.NetworkInformation.NetworkInterfaceType.FastEthernetFx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.FastEthernetT" />
       <MemberSignature Language="VB.NET" Value="FastEthernetT" />
       <MemberSignature Language="C++ CLI" Value="FastEthernetT" />
+      <MemberSignature Language="F#" Value="FastEthernetT = 62" Usage="System.Net.NetworkInformation.NetworkInterfaceType.FastEthernetT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Fddi" />
       <MemberSignature Language="VB.NET" Value="Fddi" />
       <MemberSignature Language="C++ CLI" Value="Fddi" />
+      <MemberSignature Language="F#" Value="Fddi = 15" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Fddi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.GenericModem" />
       <MemberSignature Language="VB.NET" Value="GenericModem" />
       <MemberSignature Language="C++ CLI" Value="GenericModem" />
+      <MemberSignature Language="F#" Value="GenericModem = 48" Usage="System.Net.NetworkInformation.NetworkInterfaceType.GenericModem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.GigabitEthernet" />
       <MemberSignature Language="VB.NET" Value="GigabitEthernet" />
       <MemberSignature Language="C++ CLI" Value="GigabitEthernet" />
+      <MemberSignature Language="F#" Value="GigabitEthernet = 117" Usage="System.Net.NetworkInformation.NetworkInterfaceType.GigabitEthernet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -342,6 +353,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.HighPerformanceSerialBus" />
       <MemberSignature Language="VB.NET" Value="HighPerformanceSerialBus" />
       <MemberSignature Language="C++ CLI" Value="HighPerformanceSerialBus" />
+      <MemberSignature Language="F#" Value="HighPerformanceSerialBus = 144" Usage="System.Net.NetworkInformation.NetworkInterfaceType.HighPerformanceSerialBus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -372,6 +384,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.IPOverAtm" />
       <MemberSignature Language="VB.NET" Value="IPOverAtm" />
       <MemberSignature Language="C++ CLI" Value="IPOverAtm" />
+      <MemberSignature Language="F#" Value="IPOverAtm = 114" Usage="System.Net.NetworkInformation.NetworkInterfaceType.IPOverAtm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -402,6 +415,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Isdn" />
       <MemberSignature Language="VB.NET" Value="Isdn" />
       <MemberSignature Language="C++ CLI" Value="Isdn" />
+      <MemberSignature Language="F#" Value="Isdn = 63" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Isdn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -432,6 +446,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Loopback" />
       <MemberSignature Language="VB.NET" Value="Loopback" />
       <MemberSignature Language="C++ CLI" Value="Loopback" />
+      <MemberSignature Language="F#" Value="Loopback = 24" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Loopback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -462,6 +477,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.MultiRateSymmetricDsl" />
       <MemberSignature Language="VB.NET" Value="MultiRateSymmetricDsl" />
       <MemberSignature Language="C++ CLI" Value="MultiRateSymmetricDsl" />
+      <MemberSignature Language="F#" Value="MultiRateSymmetricDsl = 143" Usage="System.Net.NetworkInformation.NetworkInterfaceType.MultiRateSymmetricDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -492,6 +508,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Ppp" />
       <MemberSignature Language="VB.NET" Value="Ppp" />
       <MemberSignature Language="C++ CLI" Value="Ppp" />
+      <MemberSignature Language="F#" Value="Ppp = 23" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Ppp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -522,6 +539,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.PrimaryIsdn" />
       <MemberSignature Language="VB.NET" Value="PrimaryIsdn" />
       <MemberSignature Language="C++ CLI" Value="PrimaryIsdn" />
+      <MemberSignature Language="F#" Value="PrimaryIsdn = 21" Usage="System.Net.NetworkInformation.NetworkInterfaceType.PrimaryIsdn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -552,6 +570,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.RateAdaptDsl" />
       <MemberSignature Language="VB.NET" Value="RateAdaptDsl" />
       <MemberSignature Language="C++ CLI" Value="RateAdaptDsl" />
+      <MemberSignature Language="F#" Value="RateAdaptDsl = 95" Usage="System.Net.NetworkInformation.NetworkInterfaceType.RateAdaptDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -582,6 +601,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Slip" />
       <MemberSignature Language="VB.NET" Value="Slip" />
       <MemberSignature Language="C++ CLI" Value="Slip" />
+      <MemberSignature Language="F#" Value="Slip = 28" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Slip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -612,6 +632,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.SymmetricDsl" />
       <MemberSignature Language="VB.NET" Value="SymmetricDsl" />
       <MemberSignature Language="C++ CLI" Value="SymmetricDsl" />
+      <MemberSignature Language="F#" Value="SymmetricDsl = 96" Usage="System.Net.NetworkInformation.NetworkInterfaceType.SymmetricDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -642,6 +663,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.TokenRing" />
       <MemberSignature Language="VB.NET" Value="TokenRing" />
       <MemberSignature Language="C++ CLI" Value="TokenRing" />
+      <MemberSignature Language="F#" Value="TokenRing = 9" Usage="System.Net.NetworkInformation.NetworkInterfaceType.TokenRing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -672,6 +694,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Tunnel" />
       <MemberSignature Language="VB.NET" Value="Tunnel" />
       <MemberSignature Language="C++ CLI" Value="Tunnel" />
+      <MemberSignature Language="F#" Value="Tunnel = 131" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Tunnel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -702,6 +725,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 1" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -732,6 +756,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.VeryHighSpeedDsl" />
       <MemberSignature Language="VB.NET" Value="VeryHighSpeedDsl" />
       <MemberSignature Language="C++ CLI" Value="VeryHighSpeedDsl" />
+      <MemberSignature Language="F#" Value="VeryHighSpeedDsl = 97" Usage="System.Net.NetworkInformation.NetworkInterfaceType.VeryHighSpeedDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -762,6 +787,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Wireless80211" />
       <MemberSignature Language="VB.NET" Value="Wireless80211" />
       <MemberSignature Language="C++ CLI" Value="Wireless80211" />
+      <MemberSignature Language="F#" Value="Wireless80211 = 71" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Wireless80211" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -792,6 +818,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Wman" />
       <MemberSignature Language="VB.NET" Value="Wman" />
       <MemberSignature Language="C++ CLI" Value="Wman" />
+      <MemberSignature Language="F#" Value="Wman = 237" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Wman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -822,6 +849,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Wwanpp" />
       <MemberSignature Language="VB.NET" Value="Wwanpp" />
       <MemberSignature Language="C++ CLI" Value="Wwanpp" />
+      <MemberSignature Language="F#" Value="Wwanpp = 243" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Wwanpp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -852,6 +880,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Wwanpp2" />
       <MemberSignature Language="VB.NET" Value="Wwanpp2" />
       <MemberSignature Language="C++ CLI" Value="Wwanpp2" />
+      <MemberSignature Language="F#" Value="Wwanpp2 = 244" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Wwanpp2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

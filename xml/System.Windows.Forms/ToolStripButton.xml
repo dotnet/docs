@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripButton" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripButton&#xA;Inherits ToolStripItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripButton : System::Windows::Forms::ToolStripItem" />
+  <TypeSignature Language="F#" Value="type ToolStripButton = class&#xA;    inherit ToolStripItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.#ctor(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripButton(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripButton : System.Drawing.Image -&gt; System.Windows.Forms.ToolStripButton" Usage="new System.Windows.Forms.ToolStripButton image" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripButton(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripButton : string -&gt; System.Windows.Forms.ToolStripButton" Usage="new System.Windows.Forms.ToolStripButton text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.#ctor(System.String,System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripButton(System::String ^ text, System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripButton : string * System.Drawing.Image -&gt; System.Windows.Forms.ToolStripButton" Usage="new System.Windows.Forms.ToolStripButton (text, image)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.#ctor(System.String,System.Drawing.Image,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripButton(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripButton : string * System.Drawing.Image * EventHandler -&gt; System.Windows.Forms.ToolStripButton" Usage="new System.Windows.Forms.ToolStripButton (text, image, onClick)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.EventHandler onClick, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.#ctor(System.String,System.Drawing.Image,System.EventHandler,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripButton(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripButton : string * System.Drawing.Image * EventHandler * string -&gt; System.Windows.Forms.ToolStripButton" Usage="new System.Windows.Forms.ToolStripButton (text, image, onClick, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripButton.AutoToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoToolTip As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoToolTip { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoToolTip : bool with get, set" Usage="System.Windows.Forms.ToolStripButton.AutoToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripButton.CanSelect" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSelect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSelect { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSelect : bool" Usage="System.Windows.Forms.ToolStripButton.CanSelect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripButton.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Windows.Forms.ToolStripButton.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -317,6 +326,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripButton.CheckedChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CheckedChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CheckedChanged;" />
+      <MemberSignature Language="F#" Value="member this.CheckedChanged : EventHandler " Usage="member this.CheckedChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -352,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripButton.CheckOnClick" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckOnClick As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckOnClick { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckOnClick : bool with get, set" Usage="System.Windows.Forms.ToolStripButton.CheckOnClick" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -389,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripButton.CheckState" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckState As CheckState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::CheckState CheckState { System::Windows::Forms::CheckState get(); void set(System::Windows::Forms::CheckState value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckState : System.Windows.Forms.CheckState with get, set" Usage="System.Windows.Forms.ToolStripButton.CheckState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -422,6 +434,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripButton.CheckStateChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CheckStateChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CheckStateChanged;" />
+      <MemberSignature Language="F#" Value="member this.CheckStateChanged : EventHandler " Usage="member this.CheckStateChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -458,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStripButton.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -495,6 +509,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripButton.DefaultAutoToolTip" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultAutoToolTip As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DefaultAutoToolTip { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAutoToolTip : bool" Usage="System.Windows.Forms.ToolStripButton.DefaultAutoToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -516,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.GetPreferredSize(System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreferredSize (constrainingSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Size constrainingSize);" />
+      <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Size -&gt; System.Drawing.Size" Usage="toolStripButton.GetPreferredSize constrainingSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -540,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.OnCheckedChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCheckedChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCheckedChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCheckedChanged : EventArgs -&gt; unit&#xA;override this.OnCheckedChanged : EventArgs -&gt; unit" Usage="toolStripButton.OnCheckedChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -575,6 +592,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.OnCheckStateChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCheckStateChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCheckStateChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCheckStateChanged : EventArgs -&gt; unit&#xA;override this.OnCheckStateChanged : EventArgs -&gt; unit" Usage="toolStripButton.OnCheckStateChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -610,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.OnClick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnClick : EventArgs -&gt; unit" Usage="toolStripButton.OnClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -645,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripButton.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStripButton.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

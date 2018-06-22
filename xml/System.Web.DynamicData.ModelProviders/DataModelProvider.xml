@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ModelProviders.DataModelProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataModelProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataModelProvider abstract" />
+  <TypeSignature Language="F#" Value="type DataModelProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.DataModelProvider.ContextType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContextType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property Type ^ ContextType {  public:&#xA;Type ^ get(); protected:&#xA; void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextType : Type with get, set" Usage="System.Web.DynamicData.ModelProviders.DataModelProvider.ContextType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.DataModelProvider.CreateContext" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateContext () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ CreateContext();" />
+      <MemberSignature Language="F#" Value="abstract member CreateContext : unit -&gt; obj" Usage="dataModelProvider.CreateContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.DataModelProvider.Tables" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Tables As ReadOnlyCollection(Of TableProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::DynamicData::ModelProviders::TableProvider ^&gt; ^ Tables { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::DynamicData::ModelProviders::TableProvider ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tables : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.DynamicData.ModelProviders.TableProvider&gt;" Usage="System.Web.DynamicData.ModelProviders.DataModelProvider.Tables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

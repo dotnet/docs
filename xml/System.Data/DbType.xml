@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DbType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DbType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DbType" />
+  <TypeSignature Language="F#" Value="type DbType = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.AnsiString" />
       <MemberSignature Language="VB.NET" Value="AnsiString" />
       <MemberSignature Language="C++ CLI" Value="AnsiString" />
+      <MemberSignature Language="F#" Value="AnsiString = 0" Usage="System.Data.DbType.AnsiString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.AnsiStringFixedLength" />
       <MemberSignature Language="VB.NET" Value="AnsiStringFixedLength" />
       <MemberSignature Language="C++ CLI" Value="AnsiStringFixedLength" />
+      <MemberSignature Language="F#" Value="AnsiStringFixedLength = 22" Usage="System.Data.DbType.AnsiStringFixedLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 1" Usage="System.Data.DbType.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 3" Usage="System.Data.DbType.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
       <MemberSignature Language="C++ CLI" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 2" Usage="System.Data.DbType.Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Currency" />
       <MemberSignature Language="VB.NET" Value="Currency" />
       <MemberSignature Language="C++ CLI" Value="Currency" />
+      <MemberSignature Language="F#" Value="Currency = 4" Usage="System.Data.DbType.Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 5" Usage="System.Data.DbType.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.DateTime" />
       <MemberSignature Language="VB.NET" Value="DateTime" />
       <MemberSignature Language="C++ CLI" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 6" Usage="System.Data.DbType.DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -284,6 +293,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.DateTime2" />
       <MemberSignature Language="VB.NET" Value="DateTime2" />
       <MemberSignature Language="C++ CLI" Value="DateTime2" />
+      <MemberSignature Language="F#" Value="DateTime2 = 26" Usage="System.Data.DbType.DateTime2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -314,6 +324,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.DateTimeOffset" />
       <MemberSignature Language="VB.NET" Value="DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="DateTimeOffset" />
+      <MemberSignature Language="F#" Value="DateTimeOffset = 27" Usage="System.Data.DbType.DateTimeOffset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="C++ CLI" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 7" Usage="System.Data.DbType.Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -374,6 +386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 8" Usage="System.Data.DbType.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -404,6 +417,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Guid" />
       <MemberSignature Language="VB.NET" Value="Guid" />
       <MemberSignature Language="C++ CLI" Value="Guid" />
+      <MemberSignature Language="F#" Value="Guid = 9" Usage="System.Data.DbType.Guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -434,6 +448,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Int16" />
       <MemberSignature Language="VB.NET" Value="Int16" />
       <MemberSignature Language="C++ CLI" Value="Int16" />
+      <MemberSignature Language="F#" Value="Int16 = 10" Usage="System.Data.DbType.Int16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -464,6 +479,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Int32" />
       <MemberSignature Language="VB.NET" Value="Int32" />
       <MemberSignature Language="C++ CLI" Value="Int32" />
+      <MemberSignature Language="F#" Value="Int32 = 11" Usage="System.Data.DbType.Int32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -494,6 +510,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Int64" />
       <MemberSignature Language="VB.NET" Value="Int64" />
       <MemberSignature Language="C++ CLI" Value="Int64" />
+      <MemberSignature Language="F#" Value="Int64 = 12" Usage="System.Data.DbType.Int64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -524,6 +541,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Object" />
       <MemberSignature Language="VB.NET" Value="Object" />
       <MemberSignature Language="C++ CLI" Value="Object" />
+      <MemberSignature Language="F#" Value="Object = 13" Usage="System.Data.DbType.Object" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -554,6 +572,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.SByte" />
       <MemberSignature Language="VB.NET" Value="SByte" />
       <MemberSignature Language="C++ CLI" Value="SByte" />
+      <MemberSignature Language="F#" Value="SByte = 14" Usage="System.Data.DbType.SByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -584,6 +603,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 15" Usage="System.Data.DbType.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -614,6 +634,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 16" Usage="System.Data.DbType.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -644,6 +665,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.StringFixedLength" />
       <MemberSignature Language="VB.NET" Value="StringFixedLength" />
       <MemberSignature Language="C++ CLI" Value="StringFixedLength" />
+      <MemberSignature Language="F#" Value="StringFixedLength = 23" Usage="System.Data.DbType.StringFixedLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -674,6 +696,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Time" />
       <MemberSignature Language="VB.NET" Value="Time" />
       <MemberSignature Language="C++ CLI" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 17" Usage="System.Data.DbType.Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -704,6 +727,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.UInt16" />
       <MemberSignature Language="VB.NET" Value="UInt16" />
       <MemberSignature Language="C++ CLI" Value="UInt16" />
+      <MemberSignature Language="F#" Value="UInt16 = 18" Usage="System.Data.DbType.UInt16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -734,6 +758,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.UInt32" />
       <MemberSignature Language="VB.NET" Value="UInt32" />
       <MemberSignature Language="C++ CLI" Value="UInt32" />
+      <MemberSignature Language="F#" Value="UInt32 = 19" Usage="System.Data.DbType.UInt32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -764,6 +789,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.UInt64" />
       <MemberSignature Language="VB.NET" Value="UInt64" />
       <MemberSignature Language="C++ CLI" Value="UInt64" />
+      <MemberSignature Language="F#" Value="UInt64 = 20" Usage="System.Data.DbType.UInt64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -794,6 +820,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.VarNumeric" />
       <MemberSignature Language="VB.NET" Value="VarNumeric" />
       <MemberSignature Language="C++ CLI" Value="VarNumeric" />
+      <MemberSignature Language="F#" Value="VarNumeric = 21" Usage="System.Data.DbType.VarNumeric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -824,6 +851,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DbType.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 25" Usage="System.Data.DbType.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

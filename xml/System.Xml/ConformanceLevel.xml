@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.ConformanceLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConformanceLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConformanceLevel" />
+  <TypeSignature Language="F#" Value="type ConformanceLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.ConformanceLevel.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Xml.ConformanceLevel.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.ConformanceLevel.Document" />
       <MemberSignature Language="VB.NET" Value="Document" />
       <MemberSignature Language="C++ CLI" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 2" Usage="System.Xml.ConformanceLevel.Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.ConformanceLevel.Fragment" />
       <MemberSignature Language="VB.NET" Value="Fragment" />
       <MemberSignature Language="C++ CLI" Value="Fragment" />
+      <MemberSignature Language="F#" Value="Fragment = 1" Usage="System.Xml.ConformanceLevel.Fragment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

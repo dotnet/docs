@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ResultPropertyCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ResultPropertyCollection&#xA;Inherits DictionaryBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResultPropertyCollection : System::Collections::DictionaryBase" />
+  <TypeSignature Language="F#" Value="type ResultPropertyCollection = class&#xA;    inherit DictionaryBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (propertyName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="resultPropertyCollection.Contains propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyCollection.CopyTo(System.DirectoryServices.ResultPropertyValueCollection[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ResultPropertyValueCollection(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ResultPropertyValueCollection ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ResultPropertyValueCollection[] * int -&gt; unit" Usage="resultPropertyCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ResultPropertyCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ResultPropertyValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ResultPropertyValueCollection ^ default[System::String ^] { System::DirectoryServices::ResultPropertyValueCollection ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.DirectoryServices.ResultPropertyValueCollection" Usage="System.DirectoryServices.ResultPropertyCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ResultPropertyCollection.PropertyNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyNames As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ PropertyNames { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyNames : System.Collections.ICollection" Usage="System.DirectoryServices.ResultPropertyCollection.PropertyNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ResultPropertyCollection.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.DirectoryServices.ResultPropertyCollection.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

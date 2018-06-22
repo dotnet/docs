@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitMonitor" />
   <TypeSignature Language="VB.NET" Value="Public Class RecycleLimitMonitor&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class RecycleLimitMonitor : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type RecycleLimitMonitor = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="member this.Dispose : unit -&gt; unit" Usage="recycleLimitMonitor.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="recycleLimitMonitor.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

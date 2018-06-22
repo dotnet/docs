@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncUpdateCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function SyncUpdateCallback(eventType As SyncFromAllServersEvent, targetServer As String, sourceServer As String, exception As SyncFromAllServersOperationException) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public delegate bool SyncUpdateCallback(SyncFromAllServersEvent eventType, System::String ^ targetServer, System::String ^ sourceServer, SyncFromAllServersOperationException ^ exception);" />
+  <TypeSignature Language="F#" Value="type SyncUpdateCallback = delegate of SyncFromAllServersEvent * string * string * SyncFromAllServersOperationException -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

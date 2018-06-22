@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientEnumeratorPrototype" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientEnumeratorPrototype&#xA;Inherits EnumeratorPrototype" />
   <TypeSignature Language="C++ CLI" Value="public ref class LenientEnumeratorPrototype sealed : Microsoft::JScript::EnumeratorPrototype" />
+  <TypeSignature Language="F#" Value="type LenientEnumeratorPrototype = class&#xA;    inherit EnumeratorPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientEnumeratorPrototype.atEnd" />
       <MemberSignature Language="VB.NET" Value="Public atEnd As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ atEnd;" />
+      <MemberSignature Language="F#" Value="val mutable atEnd : obj" Usage="Microsoft.JScript.LenientEnumeratorPrototype.atEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientEnumeratorPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientEnumeratorPrototype.constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientEnumeratorPrototype.item" />
       <MemberSignature Language="VB.NET" Value="Public item As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ item;" />
+      <MemberSignature Language="F#" Value="val mutable item : obj" Usage="Microsoft.JScript.LenientEnumeratorPrototype.item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientEnumeratorPrototype.moveFirst" />
       <MemberSignature Language="VB.NET" Value="Public moveFirst As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ moveFirst;" />
+      <MemberSignature Language="F#" Value="val mutable moveFirst : obj" Usage="Microsoft.JScript.LenientEnumeratorPrototype.moveFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientEnumeratorPrototype.moveNext" />
       <MemberSignature Language="VB.NET" Value="Public moveNext As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ moveNext;" />
+      <MemberSignature Language="F#" Value="val mutable moveNext : obj" Usage="Microsoft.JScript.LenientEnumeratorPrototype.moveNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

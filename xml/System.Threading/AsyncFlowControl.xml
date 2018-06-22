@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.AsyncFlowControl" />
   <TypeSignature Language="VB.NET" Value="Public Structure AsyncFlowControl&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public value class AsyncFlowControl : IDisposable" />
+  <TypeSignature Language="F#" Value="type AsyncFlowControl = struct&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="asyncFlowControl.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="asyncFlowControl.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.Equals(System.Threading.AsyncFlowControl)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As AsyncFlowControl) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Threading::AsyncFlowControl obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Threading.AsyncFlowControl -&gt; bool" Usage="asyncFlowControl.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="asyncFlowControl.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.op_Equality(System.Threading.AsyncFlowControl,System.Threading.AsyncFlowControl)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As AsyncFlowControl, b As AsyncFlowControl) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Threading::AsyncFlowControl a, System::Threading::AsyncFlowControl b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Threading.AsyncFlowControl * System.Threading.AsyncFlowControl -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.op_Inequality(System.Threading.AsyncFlowControl,System.Threading.AsyncFlowControl)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As AsyncFlowControl, b As AsyncFlowControl) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Threading::AsyncFlowControl a, System::Threading::AsyncFlowControl b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Threading.AsyncFlowControl * System.Threading.AsyncFlowControl -&gt; bool" Usage="System.Threading.AsyncFlowControl.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.Undo" />
       <MemberSignature Language="VB.NET" Value="Public Sub Undo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Undo();" />
+      <MemberSignature Language="F#" Value="member this.Undo : unit -&gt; unit" Usage="asyncFlowControl.Undo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.ChallengeResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class ChallengeResponse&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChallengeResponse : IDisposable" />
+  <TypeSignature Language="F#" Value="type ChallengeResponse = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.ChallengeResponse.#ctor(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (password As String, challenge As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChallengeResponse(System::String ^ password, cli::array &lt;System::Byte&gt; ^ challenge);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Protocol.Ntlm.ChallengeResponse : string * byte[] -&gt; Mono.Security.Protocol.Ntlm.ChallengeResponse" Usage="new Mono.Security.Protocol.Ntlm.ChallengeResponse (password, challenge)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.ChallengeResponse.Challenge" />
       <MemberSignature Language="VB.NET" Value="Public Property Challenge As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Challenge { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Challenge : byte[] with get, set" Usage="Mono.Security.Protocol.Ntlm.ChallengeResponse.Challenge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.ChallengeResponse.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="challengeResponse.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.ChallengeResponse.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ChallengeResponse ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="challengeResponse.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.ChallengeResponse.LM" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LM As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ LM { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LM : byte[]" Usage="Mono.Security.Protocol.Ntlm.ChallengeResponse.LM" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.ChallengeResponse.NT" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NT As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ NT { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NT : byte[]" Usage="Mono.Security.Protocol.Ntlm.ChallengeResponse.NT" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.ChallengeResponse.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="Mono.Security.Protocol.Ntlm.ChallengeResponse.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

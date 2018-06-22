@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.TrustManagerUIContext" />
   <TypeSignature Language="VB.NET" Value="Public Enum TrustManagerUIContext" />
   <TypeSignature Language="C++ CLI" Value="public enum class TrustManagerUIContext" />
+  <TypeSignature Language="F#" Value="type TrustManagerUIContext = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.TrustManagerUIContext.Install" />
       <MemberSignature Language="VB.NET" Value="Install" />
       <MemberSignature Language="C++ CLI" Value="Install" />
+      <MemberSignature Language="F#" Value="Install = 0" Usage="System.Security.Policy.TrustManagerUIContext.Install" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.TrustManagerUIContext.Run" />
       <MemberSignature Language="VB.NET" Value="Run" />
       <MemberSignature Language="C++ CLI" Value="Run" />
+      <MemberSignature Language="F#" Value="Run = 2" Usage="System.Security.Policy.TrustManagerUIContext.Run" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.TrustManagerUIContext.Upgrade" />
       <MemberSignature Language="VB.NET" Value="Upgrade" />
       <MemberSignature Language="C++ CLI" Value="Upgrade" />
+      <MemberSignature Language="F#" Value="Upgrade = 1" Usage="System.Security.Policy.TrustManagerUIContext.Upgrade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

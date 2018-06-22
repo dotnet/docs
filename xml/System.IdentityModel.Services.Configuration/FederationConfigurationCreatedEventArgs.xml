@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FederationConfigurationCreatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederationConfigurationCreatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type FederationConfigurationCreatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.#ctor(System.IdentityModel.Services.Configuration.FederationConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (config As FederationConfiguration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederationConfigurationCreatedEventArgs(System::IdentityModel::Services::Configuration::FederationConfiguration ^ config);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs : System.IdentityModel.Services.Configuration.FederationConfiguration -&gt; System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs" Usage="new System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs config" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property FederationConfiguration As FederationConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::Configuration::FederationConfiguration ^ FederationConfiguration { System::IdentityModel::Services::Configuration::FederationConfiguration ^ get(); void set(System::IdentityModel::Services::Configuration::FederationConfiguration ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FederationConfiguration : System.IdentityModel.Services.Configuration.FederationConfiguration with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

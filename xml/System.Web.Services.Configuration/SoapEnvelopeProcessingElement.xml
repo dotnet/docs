@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.SoapEnvelopeProcessingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapEnvelopeProcessingElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapEnvelopeProcessingElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SoapEnvelopeProcessingElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (readTimeout As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapEnvelopeProcessingElement(int readTimeout);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.SoapEnvelopeProcessingElement : int -&gt; System.Web.Services.Configuration.SoapEnvelopeProcessingElement" Usage="new System.Web.Services.Configuration.SoapEnvelopeProcessingElement readTimeout" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.#ctor(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (readTimeout As Integer, strict As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapEnvelopeProcessingElement(int readTimeout, bool strict);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.SoapEnvelopeProcessingElement : int * bool -&gt; System.Web.Services.Configuration.SoapEnvelopeProcessingElement" Usage="new System.Web.Services.Configuration.SoapEnvelopeProcessingElement (readTimeout, strict)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.IsStrict" />
       <MemberSignature Language="VB.NET" Value="Public Property IsStrict As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStrict { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsStrict : bool with get, set" Usage="System.Web.Services.Configuration.SoapEnvelopeProcessingElement.IsStrict" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Services.Configuration.SoapEnvelopeProcessingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.ReadTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReadTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadTimeout : int with get, set" Usage="System.Web.Services.Configuration.SoapEnvelopeProcessingElement.ReadTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

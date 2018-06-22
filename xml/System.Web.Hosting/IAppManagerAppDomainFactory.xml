@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAppManagerAppDomainFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAppManagerAppDomainFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAppManagerAppDomainFactory" />
+  <TypeSignature Language="F#" Value="type IAppManagerAppDomainFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppManagerAppDomainFactory.Create(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (appId As String, appPath As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Create(System::String ^ appId, System::String ^ appPath);" />
+      <MemberSignature Language="F#" Value="abstract member Create : string * string -&gt; obj" Usage="iAppManagerAppDomainFactory.Create (appId, appPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppManagerAppDomainFactory.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit" Usage="iAppManagerAppDomainFactory.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

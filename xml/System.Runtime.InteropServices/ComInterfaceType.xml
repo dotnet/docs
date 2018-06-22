@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComInterfaceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ComInterfaceType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ComInterfaceType" />
+  <TypeSignature Language="F#" Value="type ComInterfaceType = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" />
       <MemberSignature Language="VB.NET" Value="InterfaceIsDual" />
       <MemberSignature Language="C++ CLI" Value="InterfaceIsDual" />
+      <MemberSignature Language="F#" Value="InterfaceIsDual = 0" Usage="System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch" />
       <MemberSignature Language="VB.NET" Value="InterfaceIsIDispatch" />
       <MemberSignature Language="C++ CLI" Value="InterfaceIsIDispatch" />
+      <MemberSignature Language="F#" Value="InterfaceIsIDispatch = 2" Usage="System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable" />
       <MemberSignature Language="VB.NET" Value="InterfaceIsIInspectable" />
       <MemberSignature Language="C++ CLI" Value="InterfaceIsIInspectable" />
+      <MemberSignature Language="F#" Value="InterfaceIsIInspectable = 3" Usage="System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown" />
       <MemberSignature Language="VB.NET" Value="InterfaceIsIUnknown" />
       <MemberSignature Language="C++ CLI" Value="InterfaceIsIUnknown" />
+      <MemberSignature Language="F#" Value="InterfaceIsIUnknown = 1" Usage="System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

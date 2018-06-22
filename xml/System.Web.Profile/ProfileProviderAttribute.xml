@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileProviderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileProviderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileProviderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ProfileProviderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProviderAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileProviderAttribute(System::String ^ providerName);" />
+      <MemberSignature Language="F#" Value="new System.Web.Profile.ProfileProviderAttribute : string -&gt; System.Web.Profile.ProfileProviderAttribute" Usage="new System.Web.Profile.ProfileProviderAttribute providerName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileProviderAttribute.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string" Usage="System.Web.Profile.ProfileProviderAttribute.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

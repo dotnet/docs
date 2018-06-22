@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.SystemGesture" />
   <TypeSignature Language="VB.NET" Value="Public Enum SystemGesture" />
   <TypeSignature Language="C++ CLI" Value="public enum class SystemGesture" />
+  <TypeSignature Language="F#" Value="type SystemGesture = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.Drag" />
       <MemberSignature Language="VB.NET" Value="Drag" />
       <MemberSignature Language="C++ CLI" Value="Drag" />
+      <MemberSignature Language="F#" Value="Drag = 19" Usage="System.Windows.Input.SystemGesture.Drag" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.Flick" />
       <MemberSignature Language="VB.NET" Value="Flick" />
       <MemberSignature Language="C++ CLI" Value="Flick" />
+      <MemberSignature Language="F#" Value="Flick = 31" Usage="System.Windows.Input.SystemGesture.Flick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.HoldEnter" />
       <MemberSignature Language="VB.NET" Value="HoldEnter" />
       <MemberSignature Language="C++ CLI" Value="HoldEnter" />
+      <MemberSignature Language="F#" Value="HoldEnter = 21" Usage="System.Windows.Input.SystemGesture.HoldEnter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.HoldLeave" />
       <MemberSignature Language="VB.NET" Value="HoldLeave" />
       <MemberSignature Language="C++ CLI" Value="HoldLeave" />
+      <MemberSignature Language="F#" Value="HoldLeave = 22" Usage="System.Windows.Input.SystemGesture.HoldLeave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.HoverEnter" />
       <MemberSignature Language="VB.NET" Value="HoverEnter" />
       <MemberSignature Language="C++ CLI" Value="HoverEnter" />
+      <MemberSignature Language="F#" Value="HoverEnter = 23" Usage="System.Windows.Input.SystemGesture.HoverEnter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.HoverLeave" />
       <MemberSignature Language="VB.NET" Value="HoverLeave" />
       <MemberSignature Language="C++ CLI" Value="HoverLeave" />
+      <MemberSignature Language="F#" Value="HoverLeave = 24" Usage="System.Windows.Input.SystemGesture.HoverLeave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Input.SystemGesture.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.RightDrag" />
       <MemberSignature Language="VB.NET" Value="RightDrag" />
       <MemberSignature Language="C++ CLI" Value="RightDrag" />
+      <MemberSignature Language="F#" Value="RightDrag = 20" Usage="System.Windows.Input.SystemGesture.RightDrag" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -189,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.RightTap" />
       <MemberSignature Language="VB.NET" Value="RightTap" />
       <MemberSignature Language="C++ CLI" Value="RightTap" />
+      <MemberSignature Language="F#" Value="RightTap = 18" Usage="System.Windows.Input.SystemGesture.RightTap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.Tap" />
       <MemberSignature Language="VB.NET" Value="Tap" />
       <MemberSignature Language="C++ CLI" Value="Tap" />
+      <MemberSignature Language="F#" Value="Tap = 16" Usage="System.Windows.Input.SystemGesture.Tap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.TwoFingerTap" />
       <MemberSignature Language="VB.NET" Value="TwoFingerTap" />
       <MemberSignature Language="C++ CLI" Value="TwoFingerTap" />
+      <MemberSignature Language="F#" Value="TwoFingerTap = 4352" Usage="System.Windows.Input.SystemGesture.TwoFingerTap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

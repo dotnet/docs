@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.DefaultTypeArgumentAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultTypeArgumentAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultTypeArgumentAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DefaultTypeArgumentAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DefaultTypeArgumentAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultTypeArgumentAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.DefaultTypeArgumentAttribute : Type -&gt; System.Activities.Presentation.DefaultTypeArgumentAttribute" Usage="new System.Activities.Presentation.DefaultTypeArgumentAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DefaultTypeArgumentAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Activities.Presentation.DefaultTypeArgumentAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

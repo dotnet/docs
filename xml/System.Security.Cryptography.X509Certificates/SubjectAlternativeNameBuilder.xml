@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SubjectAlternativeNameBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class SubjectAlternativeNameBuilder sealed" />
+  <TypeSignature Language="F#" Value="type SubjectAlternativeNameBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder.AddDnsName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDnsName (dnsName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDnsName(System::String ^ dnsName);" />
+      <MemberSignature Language="F#" Value="member this.AddDnsName : string -&gt; unit" Usage="subjectAlternativeNameBuilder.AddDnsName dnsName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder.AddEmailAddress(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddEmailAddress (emailAddress As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEmailAddress(System::String ^ emailAddress);" />
+      <MemberSignature Language="F#" Value="member this.AddEmailAddress : string -&gt; unit" Usage="subjectAlternativeNameBuilder.AddEmailAddress emailAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddIpAddress(class System.Net.IPAddress ipAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder.AddIpAddress(System.Net.IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddIpAddress(System::Net::IPAddress ^ ipAddress);" />
+      <MemberSignature Language="F#" Value="member this.AddIpAddress : System.Net.IPAddress -&gt; unit" Usage="subjectAlternativeNameBuilder.AddIpAddress ipAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddUri(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder.AddUri(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddUri(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="member this.AddUri : Uri -&gt; unit" Usage="subjectAlternativeNameBuilder.AddUri uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder.AddUserPrincipalName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddUserPrincipalName (upn As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddUserPrincipalName(System::String ^ upn);" />
+      <MemberSignature Language="F#" Value="member this.AddUserPrincipalName : string -&gt; unit" Usage="subjectAlternativeNameBuilder.AddUserPrincipalName upn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.X509Certificates.X509Extension Build(bool critical) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder.Build(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (Optional critical As Boolean = false) As X509Extension" />
+      <MemberSignature Language="F#" Value="member this.Build : bool -&gt; System.Security.Cryptography.X509Certificates.X509Extension" Usage="subjectAlternativeNameBuilder.Build critical" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

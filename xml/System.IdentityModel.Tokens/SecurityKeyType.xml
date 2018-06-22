@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityKeyType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityKeyType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityKeyType" />
+  <TypeSignature Language="F#" Value="type SecurityKeyType = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityKeyType.AsymmetricKey" />
       <MemberSignature Language="VB.NET" Value="AsymmetricKey" />
       <MemberSignature Language="C++ CLI" Value="AsymmetricKey" />
+      <MemberSignature Language="F#" Value="AsymmetricKey = 1" Usage="System.IdentityModel.Tokens.SecurityKeyType.AsymmetricKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityKeyType.BearerKey" />
       <MemberSignature Language="VB.NET" Value="BearerKey" />
       <MemberSignature Language="C++ CLI" Value="BearerKey" />
+      <MemberSignature Language="F#" Value="BearerKey = 2" Usage="System.IdentityModel.Tokens.SecurityKeyType.BearerKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityKeyType.SymmetricKey" />
       <MemberSignature Language="VB.NET" Value="SymmetricKey" />
       <MemberSignature Language="C++ CLI" Value="SymmetricKey" />
+      <MemberSignature Language="F#" Value="SymmetricKey = 0" Usage="System.IdentityModel.Tokens.SecurityKeyType.SymmetricKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

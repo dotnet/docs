@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyIdentity sealed" />
+  <TypeSignature Language="F#" Value="type AssemblyIdentity = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.#ctor(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As AssemblyIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyIdentity(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyIdentity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, version As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyIdentity(System::String ^ name, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity : string * string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity (name, version)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, version As String, publicKeyToken As String, culture As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyIdentity(System::String ^ name, System::String ^ version, System::String ^ publicKeyToken, System::String ^ culture);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity : string * string * string * string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity (name, version, publicKeyToken, culture)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, version As String, publicKeyToken As String, culture As String, processorArchitecture As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyIdentity(System::String ^ name, System::String ^ version, System::String ^ publicKeyToken, System::String ^ culture, System::String ^ processorArchitecture);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity : string * string * string * string * string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity (name, version, publicKeyToken, culture, processorArchitecture)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, version As String, publicKeyToken As String, culture As String, processorArchitecture As String, type As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyIdentity(System::String ^ name, System::String ^ version, System::String ^ publicKeyToken, System::String ^ culture, System::String ^ processorArchitecture, System::String ^ type);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity : string * string * string * string * string * string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity (name, version, publicKeyToken, culture, processorArchitecture, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Culture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromAssemblyName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromAssemblyName (assemblyName As String) As AssemblyIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ FromAssemblyName(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="static member FromAssemblyName : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromAssemblyName assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromFile (path As String) As AssemblyIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ FromFile(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member FromFile : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromFile path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -276,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromManagedAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromManagedAssembly (path As String) As AssemblyIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ FromManagedAssembly(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member FromManagedAssembly : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromManagedAssembly path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -300,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromManifest(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromManifest (path As String) As AssemblyIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ FromManifest(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member FromManifest : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromManifest path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -324,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromNativeAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromNativeAssembly (path As String) As AssemblyIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ FromNativeAssembly(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member FromNativeAssembly : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FromNativeAssembly path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -348,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.GetFullName(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FullNameFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFullName (flags As AssemblyIdentity.FullNameFlags) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetFullName(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity::FullNameFlags flags);" />
+      <MemberSignature Language="F#" Value="member this.GetFullName : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FullNameFlags -&gt; string" Usage="assemblyIdentity.GetFullName flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -372,6 +386,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.IsFrameworkAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFrameworkAssembly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFrameworkAssembly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFrameworkAssembly : bool" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.IsFrameworkAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -397,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.IsNeutralPlatform" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNeutralPlatform As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNeutralPlatform { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNeutralPlatform : bool" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.IsNeutralPlatform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -422,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.IsStrongName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStrongName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStrongName { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsStrongName : bool" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.IsStrongName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -447,6 +464,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -472,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.ProcessorArchitecture" />
       <MemberSignature Language="VB.NET" Value="Public Property ProcessorArchitecture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProcessorArchitecture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessorArchitecture : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.ProcessorArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -504,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.PublicKeyToken" />
       <MemberSignature Language="VB.NET" Value="Public Property PublicKeyToken As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublicKeyToken { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKeyToken : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.PublicKeyToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -529,6 +549,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="assemblyIdentity.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -550,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -582,6 +604,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -607,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlCulture" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlCulture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlCulture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlCulture : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -638,6 +662,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlName" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -669,6 +694,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlProcessorArchitecture" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlProcessorArchitecture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlProcessorArchitecture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlProcessorArchitecture : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlProcessorArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -700,6 +726,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlPublicKeyToken" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlPublicKeyToken As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlPublicKeyToken { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlPublicKeyToken : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlPublicKeyToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -731,6 +758,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlType" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlType : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -762,6 +790,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlVersion : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.XmlVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

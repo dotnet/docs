@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FlowDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum FlowDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class FlowDirection" />
+  <TypeSignature Language="F#" Value="type FlowDirection = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FlowDirection.LeftToRight" />
       <MemberSignature Language="VB.NET" Value="LeftToRight" />
       <MemberSignature Language="C++ CLI" Value="LeftToRight" />
+      <MemberSignature Language="F#" Value="LeftToRight = 0" Usage="System.Windows.FlowDirection.LeftToRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FlowDirection.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="RightToLeft" />
       <MemberSignature Language="C++ CLI" Value="RightToLeft" />
+      <MemberSignature Language="F#" Value="RightToLeft = 1" Usage="System.Windows.FlowDirection.RightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

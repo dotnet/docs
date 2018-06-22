@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IListContract`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IListContract(Of C)&#xA;Implements ICollectionContract(Of C), IEnumerableContract(Of C)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename C&gt;&#xA; where C : IContractpublic interface class IListContract : System::AddIn::Contract::Collections::ICollectionContract&lt;C&gt;, System::AddIn::Contract::Collections::IEnumerableContract&lt;C&gt;" />
+  <TypeSignature Language="F#" Value="type IListContract&lt;'C (requires 'C :&gt; IContract)&gt; = interface&#xA;    interface ICollectionContract&lt;'C (requires 'C :&gt; IContract)&gt;&#xA;    interface IEnumerableContract&lt;'C (requires 'C :&gt; IContract)&gt;&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.GetItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItem (index As Integer) As C" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; C GetItem(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetItem : int -&gt; 'C" Usage="iListContract.GetItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.IndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As C) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(C item);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : 'C -&gt; int" Usage="iListContract.IndexOf item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.Insert(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As C)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, C item);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * 'C -&gt; unit" Usage="iListContract.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit" Usage="iListContract.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.SetItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetItem (index As Integer, value As C)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(int index, C value);" />
+      <MemberSignature Language="F#" Value="abstract member SetItem : int * 'C -&gt; unit" Usage="iListContract.SetItem (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

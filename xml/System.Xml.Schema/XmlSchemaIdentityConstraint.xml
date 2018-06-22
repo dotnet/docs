@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaIdentityConstraint" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaIdentityConstraint&#xA;Inherits XmlSchemaAnnotated" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaIdentityConstraint : System::Xml::Schema::XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaIdentityConstraint = class&#xA;    inherit XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaIdentityConstraint.Fields" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fields As XmlSchemaObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectCollection ^ Fields { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fields : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaIdentityConstraint.Fields" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaIdentityConstraint.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Xml.Schema.XmlSchemaIdentityConstraint.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaIdentityConstraint.QualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QualifiedName As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ QualifiedName { System::Xml::XmlQualifiedName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QualifiedName : System.Xml.XmlQualifiedName" Usage="System.Xml.Schema.XmlSchemaIdentityConstraint.QualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaIdentityConstraint.Selector" />
       <MemberSignature Language="VB.NET" Value="Public Property Selector As XmlSchemaXPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaXPath ^ Selector { System::Xml::Schema::XmlSchemaXPath ^ get(); void set(System::Xml::Schema::XmlSchemaXPath ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Selector : System.Xml.Schema.XmlSchemaXPath with get, set" Usage="System.Xml.Schema.XmlSchemaIdentityConstraint.Selector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

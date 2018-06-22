@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListItemType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ListItemType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ListItemType" />
+  <TypeSignature Language="F#" Value="type ListItemType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.AlternatingItem" />
       <MemberSignature Language="VB.NET" Value="AlternatingItem" />
       <MemberSignature Language="C++ CLI" Value="AlternatingItem" />
+      <MemberSignature Language="F#" Value="AlternatingItem = 3" Usage="System.Web.UI.WebControls.ListItemType.AlternatingItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.EditItem" />
       <MemberSignature Language="VB.NET" Value="EditItem" />
       <MemberSignature Language="C++ CLI" Value="EditItem" />
+      <MemberSignature Language="F#" Value="EditItem = 5" Usage="System.Web.UI.WebControls.ListItemType.EditItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Footer" />
       <MemberSignature Language="VB.NET" Value="Footer" />
       <MemberSignature Language="C++ CLI" Value="Footer" />
+      <MemberSignature Language="F#" Value="Footer = 1" Usage="System.Web.UI.WebControls.ListItemType.Footer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Header" />
       <MemberSignature Language="VB.NET" Value="Header" />
       <MemberSignature Language="C++ CLI" Value="Header" />
+      <MemberSignature Language="F#" Value="Header = 0" Usage="System.Web.UI.WebControls.ListItemType.Header" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Item" />
       <MemberSignature Language="VB.NET" Value="Item" />
       <MemberSignature Language="C++ CLI" Value="Item" />
+      <MemberSignature Language="F#" Value="Item = 2" Usage="System.Web.UI.WebControls.ListItemType.Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Pager" />
       <MemberSignature Language="VB.NET" Value="Pager" />
       <MemberSignature Language="C++ CLI" Value="Pager" />
+      <MemberSignature Language="F#" Value="Pager = 7" Usage="System.Web.UI.WebControls.ListItemType.Pager" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.SelectedItem" />
       <MemberSignature Language="VB.NET" Value="SelectedItem" />
       <MemberSignature Language="C++ CLI" Value="SelectedItem" />
+      <MemberSignature Language="F#" Value="SelectedItem = 4" Usage="System.Web.UI.WebControls.ListItemType.SelectedItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Separator" />
       <MemberSignature Language="VB.NET" Value="Separator" />
       <MemberSignature Language="C++ CLI" Value="Separator" />
+      <MemberSignature Language="F#" Value="Separator = 6" Usage="System.Web.UI.WebControls.ListItemType.Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

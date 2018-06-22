@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintDriver" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintDriver&#xA;Inherits PrintFilter" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintDriver sealed : System::Printing::PrintFilter" />
+  <TypeSignature Language="F#" Value="type PrintDriver = class&#xA;    inherit PrintFilter" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintDriver.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="printDriver.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintDriver.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printDriver.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintDriver.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="printDriver.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

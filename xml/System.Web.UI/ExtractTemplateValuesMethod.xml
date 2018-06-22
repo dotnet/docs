@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ExtractTemplateValuesMethod" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ExtractTemplateValuesMethod(control As Control) As IOrderedDictionary " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Collections::Specialized::IOrderedDictionary ^ ExtractTemplateValuesMethod(Control ^ control);" />
+  <TypeSignature Language="F#" Value="type ExtractTemplateValuesMethod = delegate of Control -&gt; IOrderedDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IScriptControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IScriptControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IScriptControl" />
+  <TypeSignature Language="F#" Value="type IScriptControl = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IScriptControl.GetScriptDescriptors" />
       <MemberSignature Language="VB.NET" Value="Public Function GetScriptDescriptors () As IEnumerable(Of ScriptDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ GetScriptDescriptors();" />
+      <MemberSignature Language="F#" Value="abstract member GetScriptDescriptors : unit -&gt; seq&lt;System.Web.UI.ScriptDescriptor&gt;" Usage="iScriptControl.GetScriptDescriptors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IScriptControl.GetScriptReferences" />
       <MemberSignature Language="VB.NET" Value="Public Function GetScriptReferences () As IEnumerable(Of ScriptReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ GetScriptReferences();" />
+      <MemberSignature Language="F#" Value="abstract member GetScriptReferences : unit -&gt; seq&lt;System.Web.UI.ScriptReference&gt;" Usage="iScriptControl.GetScriptReferences " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

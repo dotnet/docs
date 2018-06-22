@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Form" />
   <TypeSignature Language="VB.NET" Value="Public Class Form&#xA;Inherits ContainerControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class Form : System::Windows::Forms::ContainerControl" />
+  <TypeSignature Language="F#" Value="type Form = class&#xA;    inherit ContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.AcceptButton" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptButton As IButtonControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::IButtonControl ^ AcceptButton { System::Windows::Forms::IButtonControl ^ get(); void set(System::Windows::Forms::IButtonControl ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptButton : System.Windows.Forms.IButtonControl with get, set" Usage="System.Windows.Forms.Form.AcceptButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="member this.Activate : unit -&gt; unit" Usage="form.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +200,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.Activated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Activated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activated;" />
+      <MemberSignature Language="F#" Value="member this.Activated : EventHandler " Usage="member this.Activated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +242,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ActivateMdiChild(class System.Windows.Forms.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ActivateMdiChild(System.Windows.Forms.Form)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ActivateMdiChild(System::Windows::Forms::Form ^ form);" />
+      <MemberSignature Language="F#" Value="member this.ActivateMdiChild : System.Windows.Forms.Form -&gt; unit" Usage="form.ActivateMdiChild form" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -273,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.ActiveForm" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ActiveForm As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Form ^ ActiveForm { System::Windows::Forms::Form ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveForm : System.Windows.Forms.Form" Usage="System.Windows.Forms.Form.ActiveForm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.ActiveMdiChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveMdiChild As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Form ^ ActiveMdiChild { System::Windows::Forms::Form ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveMdiChild : System.Windows.Forms.Form" Usage="System.Windows.Forms.Form.ActiveMdiChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -360,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.AddOwnedForm(System.Windows.Forms.Form)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOwnedForm (ownedForm As Form)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOwnedForm(System::Windows::Forms::Form ^ ownedForm);" />
+      <MemberSignature Language="F#" Value="member this.AddOwnedForm : System.Windows.Forms.Form -&gt; unit" Usage="form.AddOwnedForm ownedForm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -407,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.AdjustFormScrollbars(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AdjustFormScrollbars (displayScrollbars As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AdjustFormScrollbars(bool displayScrollbars);" />
+      <MemberSignature Language="F#" Value="override this.AdjustFormScrollbars : bool -&gt; unit" Usage="form.AdjustFormScrollbars displayScrollbars" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -436,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.AllowTransparency" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowTransparency As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowTransparency { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowTransparency : bool with get, set" Usage="System.Windows.Forms.Form.AllowTransparency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -472,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ApplyAutoScaling" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ApplyAutoScaling ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ApplyAutoScaling();" />
+      <MemberSignature Language="F#" Value="member this.ApplyAutoScaling : unit -&gt; unit" Usage="form.ApplyAutoScaling " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -507,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.AutoScale" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScale As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoScale { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScale : bool with get, set" Usage="System.Windows.Forms.Form.AutoScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -555,6 +567,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.AutoScaleBaseSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoScaleBaseSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size AutoScaleBaseSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleBaseSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.Form.AutoScaleBaseSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -605,6 +618,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.AutoScroll" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScroll As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.Form.AutoScroll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -649,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.Form.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -702,6 +717,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -729,6 +745,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.AutoSizeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSizeMode As AutoSizeMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AutoSizeMode AutoSizeMode { System::Windows::Forms::AutoSizeMode get(); void set(System::Windows::Forms::AutoSizeMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeMode : System.Windows.Forms.AutoSizeMode with get, set" Usage="System.Windows.Forms.Form.AutoSizeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -781,6 +798,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.AutoValidate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoValidate As AutoValidate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AutoValidate AutoValidate { System::Windows::Forms::AutoValidate get(); void set(System::Windows::Forms::AutoValidate value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoValidate : System.Windows.Forms.AutoValidate with get, set" Usage="System.Windows.Forms.Form.AutoValidate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -810,6 +828,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.AutoValidateChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoValidateChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoValidateChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoValidateChanged : EventHandler " Usage="member this.AutoValidateChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -837,6 +856,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.Form.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -858,6 +878,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.CancelButton" />
       <MemberSignature Language="VB.NET" Value="Public Property CancelButton As IButtonControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::IButtonControl ^ CancelButton { System::Windows::Forms::IButtonControl ^ get(); void set(System::Windows::Forms::IButtonControl ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelButton : System.Windows.Forms.IButtonControl with get, set" Usage="System.Windows.Forms.Form.CancelButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -907,6 +928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.CenterToParent" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CenterToParent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CenterToParent();" />
+      <MemberSignature Language="F#" Value="member this.CenterToParent : unit -&gt; unit" Usage="form.CenterToParent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -938,6 +960,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.CenterToScreen" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CenterToScreen ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CenterToScreen();" />
+      <MemberSignature Language="F#" Value="member this.CenterToScreen : unit -&gt; unit" Usage="form.CenterToScreen " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -975,6 +998,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.ClientSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size ClientSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.Form.ClientSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1025,6 +1049,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="form.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1065,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.Closed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Closed;" />
+      <MemberSignature Language="F#" Value="member this.Closed : EventHandler " Usage="member this.Closed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1124,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.Closing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closing As CancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Closing;" />
+      <MemberSignature Language="F#" Value="member this.Closing : System.ComponentModel.CancelEventHandler " Usage="member this.Closing : System.ComponentModel.CancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1185,6 +1212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.ControlBox" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlBox As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlBox { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlBox : bool with get, set" Usage="System.Windows.Forms.Form.ControlBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1237,6 +1265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.CreateControlsInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlsInstance () As Control.ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::Control::ControlCollection ^ CreateControlsInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlsInstance : unit -&gt; System.Windows.Forms.Control.ControlCollection" Usage="form.CreateControlsInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1264,6 +1293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.CreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="form.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1291,6 +1321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.Form.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1312,6 +1343,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.Deactivate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deactivate As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivate;" />
+      <MemberSignature Language="F#" Value="member this.Deactivate : EventHandler " Usage="member this.Deactivate : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1353,6 +1385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.DefaultImeMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultImeMode As ImeMode" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::ImeMode DefaultImeMode { System::Windows::Forms::ImeMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultImeMode : System.Windows.Forms.ImeMode" Usage="System.Windows.Forms.Form.DefaultImeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1383,6 +1416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.Form.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1404,6 +1438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.DefWndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefWndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DefWndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.DefWndProc :  -&gt; unit" Usage="form.DefWndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1433,6 +1468,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.DesktopBounds" />
       <MemberSignature Language="VB.NET" Value="Public Property DesktopBounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle DesktopBounds { System::Drawing::Rectangle get(); void set(System::Drawing::Rectangle value); };" />
+      <MemberSignature Language="F#" Value="member this.DesktopBounds : System.Drawing.Rectangle with get, set" Usage="System.Windows.Forms.Form.DesktopBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1480,6 +1516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.DesktopLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property DesktopLocation As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point DesktopLocation { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.DesktopLocation : System.Drawing.Point with get, set" Usage="System.Windows.Forms.Form.DesktopLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1531,6 +1568,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.DialogResult" />
       <MemberSignature Language="VB.NET" Value="Public Property DialogResult As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DialogResult DialogResult { System::Windows::Forms::DialogResult get(); void set(System::Windows::Forms::DialogResult value); };" />
+      <MemberSignature Language="F#" Value="member this.DialogResult : System.Windows.Forms.DialogResult with get, set" Usage="System.Windows.Forms.Form.DialogResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1588,6 +1626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="form.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1629,6 +1668,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.DpiChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DpiChanged As DpiChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DpiChangedEventHandler ^ DpiChanged;" />
+      <MemberSignature Language="F#" Value="member this.DpiChanged : System.Windows.Forms.DpiChangedEventHandler " Usage="member this.DpiChanged : System.Windows.Forms.DpiChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1648,6 +1688,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.FormBorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FormBorderStyle As FormBorderStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FormBorderStyle FormBorderStyle { System::Windows::Forms::FormBorderStyle get(); void set(System::Windows::Forms::FormBorderStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.FormBorderStyle : System.Windows.Forms.FormBorderStyle with get, set" Usage="System.Windows.Forms.Form.FormBorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1697,6 +1738,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.FormClosed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FormClosed As FormClosedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::FormClosedEventHandler ^ FormClosed;" />
+      <MemberSignature Language="F#" Value="member this.FormClosed : System.Windows.Forms.FormClosedEventHandler " Usage="member this.FormClosed : System.Windows.Forms.FormClosedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1748,6 +1790,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.FormClosing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FormClosing As FormClosingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::FormClosingEventHandler ^ FormClosing;" />
+      <MemberSignature Language="F#" Value="member this.FormClosing : System.Windows.Forms.FormClosingEventHandler " Usage="member this.FormClosing : System.Windows.Forms.FormClosingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1800,6 +1843,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.SizeF GetAutoScaleSize(class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.GetAutoScaleSize(System.Drawing.Font)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::SizeF GetAutoScaleSize(System::Drawing::Font ^ font);" />
+      <MemberSignature Language="F#" Value="static member GetAutoScaleSize : System.Drawing.Font -&gt; System.Drawing.SizeF" Usage="System.Windows.Forms.Form.GetAutoScaleSize font" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1844,6 +1888,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetScaledBounds (bounds As Rectangle, factor As SizeF, specified As BoundsSpecified) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Rectangle GetScaledBounds(System::Drawing::Rectangle bounds, System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.GetScaledBounds : System.Drawing.Rectangle * System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; System.Drawing.Rectangle" Usage="form.GetScaledBounds (bounds, factor, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1878,6 +1923,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.HelpButton" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HelpButton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpButton : bool with get, set" Usage="System.Windows.Forms.Form.HelpButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1930,6 +1976,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.HelpButtonClicked" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event HelpButtonClicked As CancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ HelpButtonClicked;" />
+      <MemberSignature Language="F#" Value="member this.HelpButtonClicked : System.ComponentModel.CancelEventHandler " Usage="member this.HelpButtonClicked : System.ComponentModel.CancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1980,6 +2027,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Icon" />
       <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Icon ^ Icon { System::Drawing::Icon ^ get(); void set(System::Drawing::Icon ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Drawing.Icon with get, set" Usage="System.Windows.Forms.Form.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2018,6 +2066,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.InputLanguageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event InputLanguageChanged As InputLanguageChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::InputLanguageChangedEventHandler ^ InputLanguageChanged;" />
+      <MemberSignature Language="F#" Value="member this.InputLanguageChanged : System.Windows.Forms.InputLanguageChangedEventHandler " Usage="member this.InputLanguageChanged : System.Windows.Forms.InputLanguageChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2058,6 +2107,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.InputLanguageChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event InputLanguageChanging As InputLanguageChangingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::InputLanguageChangingEventHandler ^ InputLanguageChanging;" />
+      <MemberSignature Language="F#" Value="member this.InputLanguageChanging : System.Windows.Forms.InputLanguageChangingEventHandler " Usage="member this.InputLanguageChanging : System.Windows.Forms.InputLanguageChangingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2098,6 +2148,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.IsMdiChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMdiChild As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMdiChild { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMdiChild : bool" Usage="System.Windows.Forms.Form.IsMdiChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2142,6 +2193,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.IsMdiContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMdiContainer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMdiContainer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsMdiContainer : bool with get, set" Usage="System.Windows.Forms.Form.IsMdiContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2191,6 +2243,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.IsRestrictedWindow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRestrictedWindow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRestrictedWindow { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRestrictedWindow : bool" Usage="System.Windows.Forms.Form.IsRestrictedWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2227,6 +2280,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.KeyPreview" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyPreview As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeyPreview { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyPreview : bool with get, set" Usage="System.Windows.Forms.Form.KeyPreview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2280,6 +2334,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.LayoutMdi(System.Windows.Forms.MdiLayout)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LayoutMdi (value As MdiLayout)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LayoutMdi(System::Windows::Forms::MdiLayout value);" />
+      <MemberSignature Language="F#" Value="member this.LayoutMdi : System.Windows.Forms.MdiLayout -&gt; unit" Usage="form.LayoutMdi value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2320,6 +2375,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.Load" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Load As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Load;" />
+      <MemberSignature Language="F#" Value="member this.Load : EventHandler " Usage="member this.Load : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2359,6 +2415,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point with get, set" Usage="System.Windows.Forms.Form.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2396,6 +2453,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MainMenuStrip" />
       <MemberSignature Language="VB.NET" Value="Public Property MainMenuStrip As MenuStrip" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MenuStrip ^ MainMenuStrip { System::Windows::Forms::MenuStrip ^ get(); void set(System::Windows::Forms::MenuStrip ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MainMenuStrip : System.Windows.Forms.MenuStrip with get, set" Usage="System.Windows.Forms.Form.MainMenuStrip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2435,6 +2493,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Margin" />
       <MemberSignature Language="VB.NET" Value="Public Property Margin As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Margin { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Margin : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.Form.Margin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2463,6 +2522,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.MarginChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MarginChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MarginChanged;" />
+      <MemberSignature Language="F#" Value="member this.MarginChanged : EventHandler " Usage="member this.MarginChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2490,6 +2550,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MaximizeBox" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximizeBox As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaximizeBox { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximizeBox : bool with get, set" Usage="System.Windows.Forms.Form.MaximizeBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2540,6 +2601,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MaximizedBounds" />
       <MemberSignature Language="VB.NET" Value="Protected Property MaximizedBounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Drawing::Rectangle MaximizedBounds { System::Drawing::Rectangle get(); void set(System::Drawing::Rectangle value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximizedBounds : System.Drawing.Rectangle with get, set" Usage="System.Windows.Forms.Form.MaximizedBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2570,6 +2632,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.MaximizedBoundsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MaximizedBoundsChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MaximizedBoundsChanged;" />
+      <MemberSignature Language="F#" Value="member this.MaximizedBoundsChanged : EventHandler " Usage="member this.MaximizedBoundsChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2608,6 +2671,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MaximumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property MaximumSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MaximumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.Form.MaximumSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2659,6 +2723,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.MaximumSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MaximumSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MaximumSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.MaximumSizeChanged : EventHandler " Usage="member this.MaximumSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2697,6 +2762,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.MdiChildActivate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MdiChildActivate As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MdiChildActivate;" />
+      <MemberSignature Language="F#" Value="member this.MdiChildActivate : EventHandler " Usage="member this.MdiChildActivate : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2736,6 +2802,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MdiChildren" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MdiChildren As Form()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Windows::Forms::Form ^&gt; ^ MdiChildren { cli::array &lt;System::Windows::Forms::Form ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MdiChildren : System.Windows.Forms.Form[]" Usage="System.Windows.Forms.Form.MdiChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2785,6 +2852,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MdiParent" />
       <MemberSignature Language="VB.NET" Value="Public Property MdiParent As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Form ^ MdiParent { System::Windows::Forms::Form ^ get(); void set(System::Windows::Forms::Form ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MdiParent : System.Windows.Forms.Form with get, set" Usage="System.Windows.Forms.Form.MdiParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2845,6 +2913,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Menu" />
       <MemberSignature Language="VB.NET" Value="Public Property Menu As MainMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MainMenu ^ Menu { System::Windows::Forms::MainMenu ^ get(); void set(System::Windows::Forms::MainMenu ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Menu : System.Windows.Forms.MainMenu with get, set" Usage="System.Windows.Forms.Form.Menu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2895,6 +2964,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.MenuComplete" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MenuComplete As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MenuComplete;" />
+      <MemberSignature Language="F#" Value="member this.MenuComplete : EventHandler " Usage="member this.MenuComplete : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2939,6 +3009,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.MenuStart" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MenuStart As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MenuStart;" />
+      <MemberSignature Language="F#" Value="member this.MenuStart : EventHandler " Usage="member this.MenuStart : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2983,6 +3054,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MergedMenu" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MergedMenu As MainMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MainMenu ^ MergedMenu { System::Windows::Forms::MainMenu ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MergedMenu : System.Windows.Forms.MainMenu" Usage="System.Windows.Forms.Form.MergedMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3024,6 +3096,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MinimizeBox" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimizeBox As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MinimizeBox { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizeBox : bool with get, set" Usage="System.Windows.Forms.Form.MinimizeBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3071,6 +3144,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.MinimumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property MinimumSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MinimumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.Form.MinimumSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3107,6 +3181,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.MinimumSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MinimumSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MinimumSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.MinimumSizeChanged : EventHandler " Usage="member this.MinimumSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3145,6 +3220,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Modal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Modal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Modal : bool" Usage="System.Windows.Forms.Form.Modal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3195,6 +3271,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnActivated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivated : EventArgs -&gt; unit&#xA;override this.OnActivated : EventArgs -&gt; unit" Usage="form.OnActivated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3237,6 +3314,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnBackgroundImageChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackgroundImageChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackgroundImageChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBackgroundImageChanged : EventArgs -&gt; unit" Usage="form.OnBackgroundImageChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3272,6 +3350,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnBackgroundImageLayoutChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackgroundImageLayoutChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackgroundImageLayoutChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBackgroundImageLayoutChanged : EventArgs -&gt; unit" Usage="form.OnBackgroundImageLayoutChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3307,6 +3386,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnClosed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosed (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosed(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClosed : EventArgs -&gt; unit&#xA;override this.OnClosed : EventArgs -&gt; unit" Usage="form.OnClosed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3365,6 +3445,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnClosing(System.ComponentModel.CancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosing (e As CancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosing(System::ComponentModel::CancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClosing : System.ComponentModel.CancelEventArgs -&gt; unit&#xA;override this.OnClosing : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="form.OnClosing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3423,6 +3504,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnCreateControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateControl ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateControl();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateControl : unit -&gt; unit" Usage="form.OnCreateControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3458,6 +3540,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnDeactivate(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeactivate (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeactivate(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeactivate : EventArgs -&gt; unit&#xA;override this.OnDeactivate : EventArgs -&gt; unit" Usage="form.OnDeactivate e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3500,6 +3583,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnDpiChanged(System.Windows.Forms.DpiChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDpiChanged (e As DpiChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDpiChanged(System::Windows::Forms::DpiChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDpiChanged : System.Windows.Forms.DpiChangedEventArgs -&gt; unit&#xA;override this.OnDpiChanged : System.Windows.Forms.DpiChangedEventArgs -&gt; unit" Usage="form.OnDpiChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3534,6 +3618,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnEnabledChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnabledChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEnabledChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnEnabledChanged : EventArgs -&gt; unit" Usage="form.OnEnabledChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3563,6 +3648,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnEnter(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnter (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEnter(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnEnter : EventArgs -&gt; unit" Usage="form.OnEnter e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3603,6 +3689,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="form.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3632,6 +3719,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFormClosed (e As FormClosedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFormClosed(System::Windows::Forms::FormClosedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnFormClosed : System.Windows.Forms.FormClosedEventArgs -&gt; unit&#xA;override this.OnFormClosed : System.Windows.Forms.FormClosedEventArgs -&gt; unit" Usage="form.OnFormClosed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3679,6 +3767,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFormClosing (e As FormClosingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFormClosing(System::Windows::Forms::FormClosingEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnFormClosing : System.Windows.Forms.FormClosingEventArgs -&gt; unit&#xA;override this.OnFormClosing : System.Windows.Forms.FormClosingEventArgs -&gt; unit" Usage="form.OnFormClosing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3724,6 +3813,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnGetDpiScaledSize(System.Int32,System.Int32,System.Drawing.Size@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetDpiScaledSize (deviceDpiOld As Integer, deviceDpiNew As Integer, ByRef desiredSize As Size) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnGetDpiScaledSize(int deviceDpiOld, int deviceDpiNew, System::Drawing::Size % desiredSize);" />
+      <MemberSignature Language="F#" Value="abstract member OnGetDpiScaledSize : int * int *  -&gt; bool&#xA;override this.OnGetDpiScaledSize : int * int *  -&gt; bool" Usage="form.OnGetDpiScaledSize (deviceDpiOld, deviceDpiNew, desiredSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3761,6 +3851,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="form.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3790,6 +3881,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnHandleDestroyed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="form.OnHandleDestroyed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3819,6 +3911,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnHelpButtonClicked(System.ComponentModel.CancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHelpButtonClicked (e As CancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHelpButtonClicked(System::ComponentModel::CancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnHelpButtonClicked : System.ComponentModel.CancelEventArgs -&gt; unit&#xA;override this.OnHelpButtonClicked : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="form.OnHelpButtonClicked e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3862,6 +3955,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnInputLanguageChanged(System.Windows.Forms.InputLanguageChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInputLanguageChanged (e As InputLanguageChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInputLanguageChanged(System::Windows::Forms::InputLanguageChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInputLanguageChanged : System.Windows.Forms.InputLanguageChangedEventArgs -&gt; unit&#xA;override this.OnInputLanguageChanged : System.Windows.Forms.InputLanguageChangedEventArgs -&gt; unit" Usage="form.OnInputLanguageChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3904,6 +3998,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnInputLanguageChanging(System.Windows.Forms.InputLanguageChangingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInputLanguageChanging (e As InputLanguageChangingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInputLanguageChanging(System::Windows::Forms::InputLanguageChangingEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInputLanguageChanging : System.Windows.Forms.InputLanguageChangingEventArgs -&gt; unit&#xA;override this.OnInputLanguageChanging : System.Windows.Forms.InputLanguageChangingEventArgs -&gt; unit" Usage="form.OnInputLanguageChanging e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3946,6 +4041,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (levent As LayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ levent);" />
+      <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="form.OnLayout levent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3969,6 +4065,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="form.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4011,6 +4108,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnMaximizedBoundsChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMaximizedBoundsChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMaximizedBoundsChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMaximizedBoundsChanged : EventArgs -&gt; unit&#xA;override this.OnMaximizedBoundsChanged : EventArgs -&gt; unit" Usage="form.OnMaximizedBoundsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4054,6 +4152,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnMaximumSizeChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMaximumSizeChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMaximumSizeChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMaximumSizeChanged : EventArgs -&gt; unit&#xA;override this.OnMaximumSizeChanged : EventArgs -&gt; unit" Usage="form.OnMaximumSizeChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4097,6 +4196,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnMdiChildActivate(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMdiChildActivate (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMdiChildActivate(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMdiChildActivate : EventArgs -&gt; unit&#xA;override this.OnMdiChildActivate : EventArgs -&gt; unit" Usage="form.OnMdiChildActivate e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4139,6 +4239,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnMenuComplete(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMenuComplete (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMenuComplete(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMenuComplete : EventArgs -&gt; unit&#xA;override this.OnMenuComplete : EventArgs -&gt; unit" Usage="form.OnMenuComplete e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4181,6 +4282,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnMenuStart(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMenuStart (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMenuStart(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMenuStart : EventArgs -&gt; unit&#xA;override this.OnMenuStart : EventArgs -&gt; unit" Usage="form.OnMenuStart e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4223,6 +4325,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnMinimumSizeChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMinimumSizeChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMinimumSizeChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMinimumSizeChanged : EventArgs -&gt; unit&#xA;override this.OnMinimumSizeChanged : EventArgs -&gt; unit" Usage="form.OnMinimumSizeChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4265,6 +4368,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="form.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4294,6 +4398,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnResize(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="form.OnResize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4323,6 +4428,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnResizeBegin(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnResizeBegin (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnResizeBegin(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnResizeBegin : EventArgs -&gt; unit&#xA;override this.OnResizeBegin : EventArgs -&gt; unit" Usage="form.OnResizeBegin e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4369,6 +4475,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnResizeEnd(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnResizeEnd (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnResizeEnd(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnResizeEnd : EventArgs -&gt; unit&#xA;override this.OnResizeEnd : EventArgs -&gt; unit" Usage="form.OnResizeEnd e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4415,6 +4522,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnRightToLeftLayoutChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRightToLeftLayoutChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRightToLeftLayoutChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRightToLeftLayoutChanged : EventArgs -&gt; unit&#xA;override this.OnRightToLeftLayoutChanged : EventArgs -&gt; unit" Usage="form.OnRightToLeftLayoutChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4462,6 +4570,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnShown(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnShown (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnShown(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnShown : EventArgs -&gt; unit&#xA;override this.OnShown : EventArgs -&gt; unit" Usage="form.OnShown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4510,6 +4619,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnStyleChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStyleChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnStyleChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnStyleChanged : EventArgs -&gt; unit" Usage="form.OnStyleChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4539,6 +4649,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnTextChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnTextChanged : EventArgs -&gt; unit" Usage="form.OnTextChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4568,6 +4679,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnVisibleChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnVisibleChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnVisibleChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnVisibleChanged : EventArgs -&gt; unit" Usage="form.OnVisibleChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4611,6 +4723,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Opacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Opacity As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Opacity { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Opacity : double with get, set" Usage="System.Windows.Forms.Form.Opacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4663,6 +4776,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.OwnedForms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnedForms As Form()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Windows::Forms::Form ^&gt; ^ OwnedForms { cli::array &lt;System::Windows::Forms::Form ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OwnedForms : System.Windows.Forms.Form[]" Usage="System.Windows.Forms.Form.OwnedForms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4715,6 +4829,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Owner" />
       <MemberSignature Language="VB.NET" Value="Public Property Owner As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Form ^ Owner { System::Windows::Forms::Form ^ get(); void set(System::Windows::Forms::Form ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Windows.Forms.Form with get, set" Usage="System.Windows.Forms.Form.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4756,6 +4871,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="form.ProcessCmdKey (msg, keyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4799,6 +4915,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessDialogChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogChar (charCode As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogChar(char charCode);" />
+      <MemberSignature Language="F#" Value="override this.ProcessDialogChar : char -&gt; bool" Usage="form.ProcessDialogChar charCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4829,6 +4946,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessDialogKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessDialogKey : System.Windows.Forms.Keys -&gt; bool" Usage="form.ProcessDialogKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4865,6 +4983,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessKeyPreview(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessKeyPreview (ByRef m As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessKeyPreview(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.ProcessKeyPreview :  -&gt; bool" Usage="form.ProcessKeyPreview m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4891,6 +5010,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessMnemonic(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
+      <MemberSignature Language="F#" Value="override this.ProcessMnemonic : char -&gt; bool" Usage="form.ProcessMnemonic charCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4916,6 +5036,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessTabKey(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessTabKey (forward As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessTabKey(bool forward);" />
+      <MemberSignature Language="F#" Value="override this.ProcessTabKey : bool -&gt; bool" Usage="form.ProcessTabKey forward" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4943,6 +5064,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.RemoveOwnedForm(System.Windows.Forms.Form)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveOwnedForm (ownedForm As Form)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveOwnedForm(System::Windows::Forms::Form ^ ownedForm);" />
+      <MemberSignature Language="F#" Value="member this.RemoveOwnedForm : System.Windows.Forms.Form -&gt; unit" Usage="form.RemoveOwnedForm ownedForm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4976,6 +5098,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.ResizeBegin" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ResizeBegin As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ResizeBegin;" />
+      <MemberSignature Language="F#" Value="member this.ResizeBegin : EventHandler " Usage="member this.ResizeBegin : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5039,6 +5162,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.ResizeEnd" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ResizeEnd As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ResizeEnd;" />
+      <MemberSignature Language="F#" Value="member this.ResizeEnd : EventHandler " Usage="member this.ResizeEnd : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5093,6 +5217,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.RestoreBounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RestoreBounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle RestoreBounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.RestoreBounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.Form.RestoreBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5131,6 +5256,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.RightToLeftLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeftLayout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RightToLeftLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayout : bool with get, set" Usage="System.Windows.Forms.Form.RightToLeftLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5184,6 +5310,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.RightToLeftLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5222,6 +5349,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleControl (factor As SizeF, specified As BoundsSpecified)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleControl(System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.ScaleControl : System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="form.ScaleControl (factor, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5252,6 +5380,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ScaleCore(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleCore (x As Single, y As Single)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleCore(float x, float y);" />
+      <MemberSignature Language="F#" Value="override this.ScaleCore : single * single -&gt; unit" Usage="form.ScaleCore (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5283,6 +5412,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.Select(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Select (directed As Boolean, forward As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Select(bool directed, bool forward);" />
+      <MemberSignature Language="F#" Value="override this.Select : bool * bool -&gt; unit" Usage="form.Select (directed, forward)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5309,6 +5439,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="form.SetBoundsCore (x, y, width, height, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5346,6 +5477,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.SetClientSizeCore(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetClientSizeCore (x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetClientSizeCore(int x, int y);" />
+      <MemberSignature Language="F#" Value="override this.SetClientSizeCore : int * int -&gt; unit" Usage="form.SetClientSizeCore (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5377,6 +5509,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.SetDesktopBounds(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDesktopBounds (x As Integer, y As Integer, width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDesktopBounds(int x, int y, int width, int height);" />
+      <MemberSignature Language="F#" Value="member this.SetDesktopBounds : int * int * int * int -&gt; unit" Usage="form.SetDesktopBounds (x, y, width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5423,6 +5556,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.SetDesktopLocation(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDesktopLocation (x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDesktopLocation(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.SetDesktopLocation : int * int -&gt; unit" Usage="form.SetDesktopLocation (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5466,6 +5600,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.SetVisibleCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetVisibleCore (value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetVisibleCore(bool value);" />
+      <MemberSignature Language="F#" Value="override this.SetVisibleCore : bool -&gt; unit" Usage="form.SetVisibleCore value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5496,6 +5631,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.Show(System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Show (owner As IWin32Window)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::Windows::Forms::IWin32Window ^ owner);" />
+      <MemberSignature Language="F#" Value="override this.Show : System.Windows.Forms.IWin32Window -&gt; unit" Usage="form.Show owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5564,6 +5700,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ShowDialog" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowDialog () As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DialogResult ShowDialog();" />
+      <MemberSignature Language="F#" Value="member this.ShowDialog : unit -&gt; System.Windows.Forms.DialogResult" Usage="form.ShowDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5623,6 +5760,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ShowDialog(System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowDialog (owner As IWin32Window) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DialogResult ShowDialog(System::Windows::Forms::IWin32Window ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.ShowDialog : System.Windows.Forms.IWin32Window -&gt; System.Windows.Forms.DialogResult" Usage="form.ShowDialog owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5686,6 +5824,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.ShowIcon" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowIcon As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowIcon { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowIcon : bool with get, set" Usage="System.Windows.Forms.Form.ShowIcon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5727,6 +5866,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.ShowInTaskbar" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowInTaskbar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInTaskbar { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowInTaskbar : bool with get, set" Usage="System.Windows.Forms.Form.ShowInTaskbar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5773,6 +5913,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.Shown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Shown As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Shown;" />
+      <MemberSignature Language="F#" Value="member this.Shown : EventHandler " Usage="member this.Shown : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5822,6 +5963,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.ShowWithoutActivation" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ShowWithoutActivation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ShowWithoutActivation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowWithoutActivation : bool" Usage="System.Windows.Forms.Form.ShowWithoutActivation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5860,6 +6002,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size with get, set" Usage="System.Windows.Forms.Form.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5914,6 +6057,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.SizeGripStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeGripStyle As SizeGripStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SizeGripStyle SizeGripStyle { System::Windows::Forms::SizeGripStyle get(); void set(System::Windows::Forms::SizeGripStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeGripStyle : System.Windows.Forms.SizeGripStyle with get, set" Usage="System.Windows.Forms.Form.SizeGripStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5958,6 +6102,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.StartPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property StartPosition As FormStartPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FormStartPosition StartPosition { System::Windows::Forms::FormStartPosition get(); void set(System::Windows::Forms::FormStartPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.StartPosition : System.Windows.Forms.FormStartPosition with get, set" Usage="System.Windows.Forms.Form.StartPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6006,6 +6151,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.TabIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property TabIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="System.Windows.Forms.Form.TabIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6044,6 +6190,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.TabIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TabIndexChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
+      <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6071,6 +6218,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.TabStop" />
       <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.Form.TabStop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6106,6 +6254,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Form.TabStopChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TabStopChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
+      <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6133,6 +6282,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.Form.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6159,6 +6309,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.TopLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property TopLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TopLevel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TopLevel : bool with get, set" Usage="System.Windows.Forms.Form.TopLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6209,6 +6360,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.TopMost" />
       <MemberSignature Language="VB.NET" Value="Public Property TopMost As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TopMost { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TopMost : bool with get, set" Usage="System.Windows.Forms.Form.TopMost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6252,6 +6404,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="form.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6273,6 +6426,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.TransparencyKey" />
       <MemberSignature Language="VB.NET" Value="Public Property TransparencyKey As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color TransparencyKey { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.TransparencyKey : System.Drawing.Color with get, set" Usage="System.Windows.Forms.Form.TransparencyKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6311,6 +6465,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.UpdateDefaultButton" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateDefaultButton ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateDefaultButton();" />
+      <MemberSignature Language="F#" Value="override this.UpdateDefaultButton : unit -&gt; unit" Usage="form.UpdateDefaultButton " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6353,6 +6508,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ValidateChildren" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateChildren () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ValidateChildren();" />
+      <MemberSignature Language="F#" Value="override this.ValidateChildren : unit -&gt; bool" Usage="form.ValidateChildren " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6383,6 +6539,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ValidateChildren(valuetype System.Windows.Forms.ValidationConstraints validationConstraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ValidateChildren(System.Windows.Forms.ValidationConstraints)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ValidateChildren(System::Windows::Forms::ValidationConstraints validationConstraints);" />
+      <MemberSignature Language="F#" Value="override this.ValidateChildren : System.Windows.Forms.ValidationConstraints -&gt; bool" Usage="form.ValidateChildren validationConstraints" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6417,6 +6574,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Form.WindowState" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowState As FormWindowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FormWindowState WindowState { System::Windows::Forms::FormWindowState get(); void set(System::Windows::Forms::FormWindowState value); };" />
+      <MemberSignature Language="F#" Value="member this.WindowState : System.Windows.Forms.FormWindowState with get, set" Usage="System.Windows.Forms.Form.WindowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -6469,6 +6627,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="form.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

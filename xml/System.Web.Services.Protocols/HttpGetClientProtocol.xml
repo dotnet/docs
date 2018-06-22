@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.HttpGetClientProtocol" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpGetClientProtocol&#xA;Inherits HttpSimpleClientProtocol" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpGetClientProtocol : System::Web::Services::Protocols::HttpSimpleClientProtocol" />
+  <TypeSignature Language="F#" Value="type HttpGetClientProtocol = class&#xA;    inherit HttpSimpleClientProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebRequest GetWebRequest(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpGetClientProtocol.GetWebRequest(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Net::WebRequest ^ GetWebRequest(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="override this.GetWebRequest : Uri -&gt; System.Net.WebRequest" Usage="httpGetClientProtocol.GetWebRequest uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

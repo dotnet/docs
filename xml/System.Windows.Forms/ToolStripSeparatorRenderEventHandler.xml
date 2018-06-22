@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSeparatorRenderEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolStripSeparatorRenderEventHandler(sender As Object, e As ToolStripSeparatorRenderEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ToolStripSeparatorRenderEventHandler(System::Object ^ sender, ToolStripSeparatorRenderEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ToolStripSeparatorRenderEventHandler = delegate of obj * ToolStripSeparatorRenderEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

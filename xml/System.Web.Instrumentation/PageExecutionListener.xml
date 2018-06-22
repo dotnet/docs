@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Instrumentation.PageExecutionListener" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PageExecutionListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageExecutionListener abstract" />
+  <TypeSignature Language="F#" Value="type PageExecutionListener = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Instrumentation.PageExecutionListener.BeginContext(System.Web.Instrumentation.PageExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginContext (context As PageExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginContext(System::Web::Instrumentation::PageExecutionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member BeginContext : System.Web.Instrumentation.PageExecutionContext -&gt; unit" Usage="pageExecutionListener.BeginContext context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Instrumentation.PageExecutionListener.EndContext(System.Web.Instrumentation.PageExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndContext (context As PageExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndContext(System::Web::Instrumentation::PageExecutionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member EndContext : System.Web.Instrumentation.PageExecutionContext -&gt; unit" Usage="pageExecutionListener.EndContext context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

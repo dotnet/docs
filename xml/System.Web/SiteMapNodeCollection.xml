@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SiteMapNodeCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteMapNodeCollection&#xA;Implements IHierarchicalEnumerable, IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class SiteMapNodeCollection : System::Collections::IList, System::Web::UI::IHierarchicalEnumerable" />
+  <TypeSignature Language="F#" Value="type SiteMapNodeCollection = class&#xA;    interface IHierarchicalEnumerable&#xA;    interface IEnumerable&#xA;    interface IList&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapNodeCollection(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Web.SiteMapNodeCollection : int -&gt; System.Web.SiteMapNodeCollection" Usage="new System.Web.SiteMapNodeCollection capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor(System.Web.SiteMapNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SiteMapNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapNodeCollection(System::Web::SiteMapNode ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Web.SiteMapNodeCollection : System.Web.SiteMapNode -&gt; System.Web.SiteMapNodeCollection" Usage="new System.Web.SiteMapNodeCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor(System.Web.SiteMapNode[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SiteMapNode())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapNodeCollection(cli::array &lt;System::Web::SiteMapNode ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Web.SiteMapNodeCollection : System.Web.SiteMapNode[] -&gt; System.Web.SiteMapNodeCollection" Usage="new System.Web.SiteMapNodeCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor(System.Web.SiteMapNodeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SiteMapNodeCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapNodeCollection(System::Web::SiteMapNodeCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Web.SiteMapNodeCollection : System.Web.SiteMapNodeCollection -&gt; System.Web.SiteMapNodeCollection" Usage="new System.Web.SiteMapNodeCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -248,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Add(System.Web.SiteMapNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (value As SiteMapNode) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Web::SiteMapNode ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Web.SiteMapNode -&gt; int&#xA;override this.Add : System.Web.SiteMapNode -&gt; int" Usage="siteMapNodeCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -312,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.AddRange(System.Web.SiteMapNode[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (value As SiteMapNode())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(cli::array &lt;System::Web::SiteMapNode ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Web.SiteMapNode[] -&gt; unit&#xA;override this.AddRange : System.Web.SiteMapNode[] -&gt; unit" Usage="siteMapNodeCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.AddRange(System.Web.SiteMapNodeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (value As SiteMapNodeCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(System::Web::SiteMapNodeCollection ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Web.SiteMapNodeCollection -&gt; unit&#xA;override this.AddRange : System.Web.SiteMapNodeCollection -&gt; unit" Usage="siteMapNodeCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -396,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="siteMapNodeCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -432,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Contains(System.Web.SiteMapNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (value As SiteMapNode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Web::SiteMapNode ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Web.SiteMapNode -&gt; bool&#xA;override this.Contains : System.Web.SiteMapNode -&gt; bool" Usage="siteMapNodeCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -474,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.CopyTo(System.Web.SiteMapNode[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyTo (array As SiteMapNode(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Web::SiteMapNode ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Web.SiteMapNode[] * int -&gt; unit&#xA;override this.CopyTo : System.Web.SiteMapNode[] * int -&gt; unit" Usage="siteMapNodeCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -518,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.SiteMapNodeCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -544,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.GetDataSourceView(System.Web.UI.WebControls.SiteMapDataSource,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataSourceView (owner As SiteMapDataSource, viewName As String) As SiteMapDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::SiteMapDataSourceView ^ GetDataSourceView(System::Web::UI::WebControls::SiteMapDataSource ^ owner, System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="member this.GetDataSourceView : System.Web.UI.WebControls.SiteMapDataSource * string -&gt; System.Web.UI.WebControls.SiteMapDataSourceView" Usage="siteMapNodeCollection.GetDataSourceView (owner, viewName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -571,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="siteMapNodeCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -597,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.GetHierarchicalDataSourceView" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHierarchicalDataSourceView () As SiteMapHierarchicalDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::SiteMapHierarchicalDataSourceView ^ GetHierarchicalDataSourceView();" />
+      <MemberSignature Language="F#" Value="member this.GetHierarchicalDataSourceView : unit -&gt; System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" Usage="siteMapNodeCollection.GetHierarchicalDataSourceView " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -619,6 +634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.GetHierarchyData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHierarchyData (enumeratedItem As Object) As IHierarchyData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::IHierarchyData ^ GetHierarchyData(System::Object ^ enumeratedItem);" />
+      <MemberSignature Language="F#" Value="abstract member GetHierarchyData : obj -&gt; System.Web.UI.IHierarchyData&#xA;override this.GetHierarchyData : obj -&gt; System.Web.UI.IHierarchyData" Usage="siteMapNodeCollection.GetHierarchyData enumeratedItem" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData(System.Object)</InterfaceMember>
@@ -648,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.IndexOf(System.Web.SiteMapNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As SiteMapNode) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Web::SiteMapNode ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Web.SiteMapNode -&gt; int&#xA;override this.IndexOf : System.Web.SiteMapNode -&gt; int" Usage="siteMapNodeCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -687,6 +704,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Insert(System.Int32,System.Web.SiteMapNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Insert (index As Integer, value As SiteMapNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Web::SiteMapNode ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Web.SiteMapNode -&gt; unit&#xA;override this.Insert : int * System.Web.SiteMapNode -&gt; unit" Usage="siteMapNodeCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -734,6 +752,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Web.SiteMapNodeCollection.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -759,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.SiteMapNodeCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -784,6 +804,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.SiteMapNodeCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -808,6 +829,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As SiteMapNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::SiteMapNode ^ default[int] { System::Web::SiteMapNode ^ get(int index); void set(int index, System::Web::SiteMapNode ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.SiteMapNode with get, set" Usage="System.Web.SiteMapNodeCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -857,6 +879,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValidate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="siteMapNodeCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -887,6 +910,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.ReadOnly(System.Web.SiteMapNodeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadOnly (collection As SiteMapNodeCollection) As SiteMapNodeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::SiteMapNodeCollection ^ ReadOnly(System::Web::SiteMapNodeCollection ^ collection);" />
+      <MemberSignature Language="F#" Value="static member ReadOnly : System.Web.SiteMapNodeCollection -&gt; System.Web.SiteMapNodeCollection" Usage="System.Web.SiteMapNodeCollection.ReadOnly collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -931,6 +955,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (value As SiteMapNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Web::SiteMapNode ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Web.SiteMapNode -&gt; unit&#xA;override this.Remove : System.Web.SiteMapNode -&gt; unit" Usage="siteMapNodeCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -982,6 +1007,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="siteMapNodeCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -1031,6 +1057,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.SiteMapNodeCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1101,6 +1128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.SiteMapNodeCollection.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -1126,6 +1154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.SiteMapNodeCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1152,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.SiteMapNodeCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1346,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.SiteMapNodeCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1370,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.SiteMapNodeCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1394,6 +1426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.SiteMapNodeCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

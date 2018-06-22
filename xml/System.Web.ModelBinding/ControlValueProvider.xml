@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ControlValueProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlValueProvider&#xA;Inherits SimpleValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlValueProvider sealed : System::Web::ModelBinding::SimpleValueProvider" />
+  <TypeSignature Language="F#" Value="type ControlValueProvider = class&#xA;    inherit SimpleValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ControlValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ControlValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext * string -&gt; System.Web.ModelBinding.ControlValueProvider" Usage="new System.Web.ModelBinding.ControlValueProvider (modelBindingExecutionContext, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ControlValueProvider.FetchValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FetchValue (controlId As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ FetchValue(System::String ^ controlId);" />
+      <MemberSignature Language="F#" Value="override this.FetchValue : string -&gt; obj" Usage="controlValueProvider.FetchValue controlId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ControlValueProvider.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Web.ModelBinding.ControlValueProvider.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

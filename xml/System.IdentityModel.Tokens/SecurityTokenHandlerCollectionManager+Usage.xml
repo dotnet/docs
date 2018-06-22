@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenHandlerCollectionManager.Usage" />
   <TypeSignature Language="C++ CLI" Value="public: ref class SecurityTokenHandlerCollectionManager::Usage abstract sealed" />
+  <TypeSignature Language="F#" Value="type SecurityTokenHandlerCollectionManager.Usage = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.ActAs" />
       <MemberSignature Language="VB.NET" Value="Public Const ActAs As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ActAs;" />
+      <MemberSignature Language="F#" Value="val mutable ActAs : string" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.ActAs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.Default" />
       <MemberSignature Language="VB.NET" Value="Public Const Default As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Default;" />
+      <MemberSignature Language="F#" Value="val mutable Default : string" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.OnBehalfOf" />
       <MemberSignature Language="VB.NET" Value="Public Const OnBehalfOf As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ OnBehalfOf;" />
+      <MemberSignature Language="F#" Value="val mutable OnBehalfOf : string" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.OnBehalfOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

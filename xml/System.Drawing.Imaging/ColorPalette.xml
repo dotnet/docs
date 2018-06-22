@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorPalette" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorPalette" />
   <TypeSignature Language="C++ CLI" Value="public ref class ColorPalette sealed" />
+  <TypeSignature Language="F#" Value="type ColorPalette = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorPalette.Entries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entries As Color()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::Color&gt; ^ Entries { cli::array &lt;System::Drawing::Color&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Entries : System.Drawing.Color[]" Usage="System.Drawing.Imaging.ColorPalette.Entries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorPalette.Flags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Flags As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Flags { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : int" Usage="System.Drawing.Imaging.ColorPalette.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

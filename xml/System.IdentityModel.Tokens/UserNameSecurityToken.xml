@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.UserNameSecurityToken" />
   <TypeSignature Language="VB.NET" Value="Public Class UserNameSecurityToken&#xA;Inherits SecurityToken" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserNameSecurityToken : System::IdentityModel::Tokens::SecurityToken" />
+  <TypeSignature Language="F#" Value="type UserNameSecurityToken = class&#xA;    inherit SecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.UserNameSecurityToken.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (userName As String, password As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserNameSecurityToken(System::String ^ userName, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.UserNameSecurityToken : string * string -&gt; System.IdentityModel.Tokens.UserNameSecurityToken" Usage="new System.IdentityModel.Tokens.UserNameSecurityToken (userName, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.UserNameSecurityToken.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (userName As String, password As String, id As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserNameSecurityToken(System::String ^ userName, System::String ^ password, System::String ^ id);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.UserNameSecurityToken : string * string * string -&gt; System.IdentityModel.Tokens.UserNameSecurityToken" Usage="new System.IdentityModel.Tokens.UserNameSecurityToken (userName, password, id)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.Id" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.IdentityModel.Tokens.UserNameSecurityToken.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.Password" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string" Usage="System.IdentityModel.Tokens.UserNameSecurityToken.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.SecurityKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecurityKeys As ReadOnlyCollection(Of SecurityKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ SecurityKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityKeys : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;" Usage="System.IdentityModel.Tokens.UserNameSecurityToken.SecurityKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.UserName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.IdentityModel.Tokens.UserNameSecurityToken.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidFrom As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidFrom { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidFrom : DateTime" Usage="System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidTo As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidTo { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidTo : DateTime" Usage="System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

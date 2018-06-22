@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathNodeIterator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XPathNodeIterator&#xA;Implements ICloneable, IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class XPathNodeIterator abstract : ICloneable, System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type XPathNodeIterator = class&#xA;    interface ICloneable&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -165,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathNodeIterator.Clone" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As XPathNodeIterator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XPath::XPathNodeIterator ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Xml.XPath.XPathNodeIterator" Usage="xPathNodeIterator.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -208,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathNodeIterator.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Xml.XPath.XPathNodeIterator.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -249,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathNodeIterator.Current" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Current As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::XPath::XPathNavigator ^ Current { System::Xml::XPath::XPathNavigator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Xml.XPath.XPathNavigator" Usage="System.Xml.XPath.XPathNodeIterator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -344,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathNodeIterator.CurrentPosition" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CurrentPosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int CurrentPosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPosition : int" Usage="System.Xml.XPath.XPathNodeIterator.CurrentPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -385,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathNodeIterator.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xPathNodeIterator.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -447,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathNodeIterator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool" Usage="xPathNodeIterator.MoveNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>

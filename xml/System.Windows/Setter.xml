@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Setter" />
   <TypeSignature Language="VB.NET" Value="Public Class Setter&#xA;Inherits SetterBase&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class Setter : System::Windows::SetterBase, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type Setter = class&#xA;    inherit SetterBase&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (property As DependencyProperty, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Setter(System::Windows::DependencyProperty ^ property, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Setter : System.Windows.DependencyProperty * obj -&gt; System.Windows.Setter" Usage="new System.Windows.Setter (property, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (property As DependencyProperty, value As Object, targetName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Setter(System::Windows::DependencyProperty ^ property, System::Object ^ value, System::String ^ targetName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Setter : System.Windows.DependencyProperty * obj * string -&gt; System.Windows.Setter" Usage="new System.Windows.Setter (property, value, targetName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Setter.Property" />
       <MemberSignature Language="VB.NET" Value="Public Property Property As DependencyProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); void set(System::Windows::DependencyProperty ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty with get, set" Usage="System.Windows.Setter.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.ReceiveMarkupExtension(System.Object,System.Windows.Markup.XamlSetMarkupExtensionEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ReceiveMarkupExtension (targetObject As Object, eventArgs As XamlSetMarkupExtensionEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReceiveMarkupExtension(System::Object ^ targetObject, System::Windows::Markup::XamlSetMarkupExtensionEventArgs ^ eventArgs);" />
+      <MemberSignature Language="F#" Value="static member ReceiveMarkupExtension : obj * System.Windows.Markup.XamlSetMarkupExtensionEventArgs -&gt; unit" Usage="System.Windows.Setter.ReceiveMarkupExtension (targetObject, eventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.ReceiveTypeConverter(System.Object,System.Windows.Markup.XamlSetTypeConverterEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ReceiveTypeConverter (targetObject As Object, eventArgs As XamlSetTypeConverterEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReceiveTypeConverter(System::Object ^ targetObject, System::Windows::Markup::XamlSetTypeConverterEventArgs ^ eventArgs);" />
+      <MemberSignature Language="F#" Value="static member ReceiveTypeConverter : obj * System.Windows.Markup.XamlSetTypeConverterEventArgs -&gt; unit" Usage="System.Windows.Setter.ReceiveTypeConverter (targetObject, eventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -306,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Setter.TargetName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetName : string with get, set" Usage="System.Windows.Setter.TargetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -350,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Setter.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Windows.Setter.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.VARDESC.DESCUNION" />
   <TypeSignature Language="VB.NET" Value="Public Structure VARDESC.DESCUNION" />
   <TypeSignature Language="C++ CLI" Value="public: value class VARDESC::DESCUNION" />
+  <TypeSignature Language="F#" Value="type VARDESC.DESCUNION = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.DESCUNION.lpvarValue" />
       <MemberSignature Language="VB.NET" Value="Public lpvarValue As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr lpvarValue;" />
+      <MemberSignature Language="F#" Value="val mutable lpvarValue : nativeint" Usage="System.Runtime.InteropServices.VARDESC.DESCUNION.lpvarValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.DESCUNION.oInst" />
       <MemberSignature Language="VB.NET" Value="Public oInst As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int oInst;" />
+      <MemberSignature Language="F#" Value="val mutable oInst : int" Usage="System.Runtime.InteropServices.VARDESC.DESCUNION.oInst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

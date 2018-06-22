@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HtmlElementEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlElementEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type HtmlElementEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.AltKeyPressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AltKeyPressed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AltKeyPressed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AltKeyPressed : bool" Usage="System.Windows.Forms.HtmlElementEventArgs.AltKeyPressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.BubbleEvent" />
       <MemberSignature Language="VB.NET" Value="Public Property BubbleEvent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BubbleEvent { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BubbleEvent : bool with get, set" Usage="System.Windows.Forms.HtmlElementEventArgs.BubbleEvent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientMousePosition As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point ClientMousePosition { System::Drawing::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientMousePosition : System.Drawing.Point" Usage="System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.CtrlKeyPressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CtrlKeyPressed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CtrlKeyPressed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CtrlKeyPressed : bool" Usage="System.Windows.Forms.HtmlElementEventArgs.CtrlKeyPressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.EventType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventType : string" Usage="System.Windows.Forms.HtmlElementEventArgs.EventType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.FromElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromElement As HtmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ FromElement { System::Windows::Forms::HtmlElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FromElement : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElementEventArgs.FromElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.KeyPressedCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyPressedCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyPressedCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyPressedCode : int" Usage="System.Windows.Forms.HtmlElementEventArgs.KeyPressedCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.MouseButtonsPressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MouseButtonsPressed As MouseButtons" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MouseButtons MouseButtonsPressed { System::Windows::Forms::MouseButtons get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseButtonsPressed : System.Windows.Forms.MouseButtons" Usage="System.Windows.Forms.HtmlElementEventArgs.MouseButtonsPressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.MousePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MousePosition As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point MousePosition { System::Drawing::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.MousePosition : System.Drawing.Point" Usage="System.Windows.Forms.HtmlElementEventArgs.MousePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -401,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OffsetMousePosition As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point OffsetMousePosition { System::Drawing::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetMousePosition : System.Drawing.Point" Usage="System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -455,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnValue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnValue : bool with get, set" Usage="System.Windows.Forms.HtmlElementEventArgs.ReturnValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -488,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.ShiftKeyPressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShiftKeyPressed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShiftKeyPressed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShiftKeyPressed : bool" Usage="System.Windows.Forms.HtmlElementEventArgs.ShiftKeyPressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -521,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.ToElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToElement As HtmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ ToElement { System::Windows::Forms::HtmlElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToElement : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElementEventArgs.ToElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

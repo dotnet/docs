@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewCancelMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ListViewCancelMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ListViewCancelMode" />
+  <TypeSignature Language="F#" Value="type ListViewCancelMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewCancelMode.CancelingEdit" />
       <MemberSignature Language="VB.NET" Value="CancelingEdit" />
       <MemberSignature Language="C++ CLI" Value="CancelingEdit" />
+      <MemberSignature Language="F#" Value="CancelingEdit = 0" Usage="System.Web.UI.WebControls.ListViewCancelMode.CancelingEdit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewCancelMode.CancelingInsert" />
       <MemberSignature Language="VB.NET" Value="CancelingInsert" />
       <MemberSignature Language="C++ CLI" Value="CancelingInsert" />
+      <MemberSignature Language="F#" Value="CancelingInsert = 1" Usage="System.Web.UI.WebControls.ListViewCancelMode.CancelingInsert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

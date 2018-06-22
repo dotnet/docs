@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />
   <TypeSignature Language="VB.NET" Value="Public Class AssemblyManifest&#xA;Inherits Manifest" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyManifest : Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest" />
+  <TypeSignature Language="F#" Value="type AssemblyManifest = class&#xA;    inherit Manifest" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest.ExternalProxyStubs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExternalProxyStubs As ProxyStub()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ ExternalProxyStubs { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExternalProxyStubs : Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub[]" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest.ExternalProxyStubs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest.XmlExternalProxyStubs" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlExternalProxyStubs As ProxyStub()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ XmlExternalProxyStubs { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlExternalProxyStubs : Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub[] with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest.XmlExternalProxyStubs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

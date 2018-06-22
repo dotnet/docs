@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationSettings sealed" />
+  <TypeSignature Language="F#" Value="type ConfigurationSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSettings.AppSettings" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppSettings As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Specialized::NameValueCollection ^ AppSettings { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppSettings : System.Collections.Specialized.NameValueCollection" Usage="System.Configuration.ConfigurationSettings.AppSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSettings.GetConfig(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetConfig (sectionName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetConfig(System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="static member GetConfig : string -&gt; obj" Usage="System.Configuration.ConfigurationSettings.GetConfig sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

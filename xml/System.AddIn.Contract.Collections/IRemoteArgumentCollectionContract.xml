@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteArgumentCollectionContract&#xA;Implements IRemoteArgumentEnumerableContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteArgumentCollectionContract : System::AddIn::Contract::Collections::IRemoteArgumentEnumerableContract" />
+  <TypeSignature Language="F#" Value="type IRemoteArgumentCollectionContract = interface&#xA;    interface IRemoteArgumentEnumerableContract&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCount();" />
+      <MemberSignature Language="F#" Value="abstract member GetCount : unit -&gt; int" Usage="iRemoteArgumentCollectionContract.GetCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

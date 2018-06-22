@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceRequest" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataServiceRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceRequest abstract" />
+  <TypeSignature Language="F#" Value="type DataServiceRequest = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequest.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementType : Type" Usage="System.Data.Services.Client.DataServiceRequest.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequest.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RequestUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Uri ^ RequestUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.Data.Services.Client.DataServiceRequest.RequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceRequest.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataServiceRequest.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.DebugDirectoryEntry" />
   <TypeSignature Language="VB.NET" Value="Public Structure DebugDirectoryEntry" />
   <TypeSignature Language="C++ CLI" Value="public value class DebugDirectoryEntry" />
+  <TypeSignature Language="F#" Value="type DebugDirectoryEntry = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.DebugDirectoryEntry.#ctor(System.UInt32,System.UInt16,System.UInt16,System.Reflection.PortableExecutable.DebugDirectoryEntryType,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (stamp As UInteger, majorVersion As UShort, minorVersion As UShort, type As DebugDirectoryEntryType, dataSize As Integer, dataRelativeVirtualAddress As Integer, dataPointer As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebugDirectoryEntry(System::UInt32 stamp, System::UInt16 majorVersion, System::UInt16 minorVersion, System::Reflection::PortableExecutable::DebugDirectoryEntryType type, int dataSize, int dataRelativeVirtualAddress, int dataPointer);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.DebugDirectoryEntry : uint32 * uint16 * uint16 * System.Reflection.PortableExecutable.DebugDirectoryEntryType * int * int * int -&gt; System.Reflection.PortableExecutable.DebugDirectoryEntry" Usage="new System.Reflection.PortableExecutable.DebugDirectoryEntry (stamp, majorVersion, minorVersion, type, dataSize, dataRelativeVirtualAddress, dataPointer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.DebugDirectoryEntry.DataPointer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataPointer As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DataPointer { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataPointer : int" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntry.DataPointer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.DebugDirectoryEntry.DataRelativeVirtualAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataRelativeVirtualAddress As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DataRelativeVirtualAddress { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataRelativeVirtualAddress : int" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntry.DataRelativeVirtualAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.DebugDirectoryEntry.DataSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DataSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSize : int" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntry.DataSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.DebugDirectoryEntry.IsPortableCodeView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPortableCodeView As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPortableCodeView { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPortableCodeView : bool" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntry.IsPortableCodeView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.DebugDirectoryEntry.MajorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorVersion As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MajorVersion { System::UInt16 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MajorVersion : uint16" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntry.MajorVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.DebugDirectoryEntry.MinorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorVersion As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MinorVersion { System::UInt16 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinorVersion : uint16" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntry.MinorVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -203,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.DebugDirectoryEntry.Stamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stamp As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 Stamp { System::UInt32 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Stamp : uint32" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntry.Stamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -226,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.DebugDirectoryEntry.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As DebugDirectoryEntryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DebugDirectoryEntryType Type { System::Reflection::PortableExecutable::DebugDirectoryEntryType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Reflection.PortableExecutable.DebugDirectoryEntryType" Usage="System.Reflection.PortableExecutable.DebugDirectoryEntry.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

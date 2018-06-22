@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.RegistryAuditRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistryAuditRule&#xA;Inherits AuditRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistryAuditRule sealed : System::Security::AccessControl::AuditRule" />
+  <TypeSignature Language="F#" Value="type RegistryAuditRule = class&#xA;    inherit AuditRule" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.RegistryRights registryRights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryAuditRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::RegistryRights registryRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RegistryAuditRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.RegistryRights * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.RegistryAuditRule" Usage="new System.Security.AccessControl.RegistryAuditRule (identity, registryRights, inheritanceFlags, propagationFlags, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.RegistryRights registryRights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistryAuditRule.#ctor(System.String,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryAuditRule(System::String ^ identity, System::Security::AccessControl::RegistryRights registryRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RegistryAuditRule : string * System.Security.AccessControl.RegistryRights * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.RegistryAuditRule" Usage="new System.Security.AccessControl.RegistryAuditRule (identity, registryRights, inheritanceFlags, propagationFlags, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -229,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RegistryAuditRule.RegistryRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistryRights As RegistryRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::RegistryRights RegistryRights { System::Security::AccessControl::RegistryRights get(); };" />
+      <MemberSignature Language="F#" Value="member this.RegistryRights : System.Security.AccessControl.RegistryRights" Usage="System.Security.AccessControl.RegistryAuditRule.RegistryRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>

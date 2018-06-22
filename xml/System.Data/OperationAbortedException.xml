@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OperationAbortedException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationAbortedException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class OperationAbortedException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type OperationAbortedException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

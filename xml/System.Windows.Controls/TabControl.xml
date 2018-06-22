@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TabControl" />
   <TypeSignature Language="VB.NET" Value="Public Class TabControl&#xA;Inherits Selector" />
   <TypeSignature Language="C++ CLI" Value="public ref class TabControl : System::Windows::Controls::Primitives::Selector" />
+  <TypeSignature Language="F#" Value="type TabControl = class&#xA;    inherit Selector" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabControl.ContentStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentStringFormat : string with get, set" Usage="System.Windows.Controls.TabControl.ContentStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabControl.ContentStringFormatProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentStringFormatProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentStringFormatProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabControl.ContentStringFormatProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabControl.ContentTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ ContentTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.TabControl.ContentTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabControl.ContentTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabControl.ContentTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabControl.ContentTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ ContentTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.TabControl.ContentTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +297,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabControl.ContentTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabControl.ContentTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -310,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabControl.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
+      <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="tabControl.GetContainerForItemOverride " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -331,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabControl.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="tabControl.IsItemItsOwnContainerOverride item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabControl.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="tabControl.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabControl.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="tabControl.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -403,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabControl.OnInitialized(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInitialized : EventArgs -&gt; unit" Usage="tabControl.OnInitialized e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -436,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabControl.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="tabControl.OnItemsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -459,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabControl.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="tabControl.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -492,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabControl.OnSelectionChanged(System.Windows.Controls.SelectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectionChanged (e As SelectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectionChanged(System::Windows::Controls::SelectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnSelectionChanged : System.Windows.Controls.SelectionChangedEventArgs -&gt; unit" Usage="tabControl.OnSelectionChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -527,6 +542,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabControl.SelectedContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedContent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedContent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedContent : obj" Usage="System.Windows.Controls.TabControl.SelectedContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -592,6 +608,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabControl.SelectedContentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedContentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedContentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabControl.SelectedContentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -611,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabControl.SelectedContentStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedContentStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedContentStringFormat { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedContentStringFormat : string" Usage="System.Windows.Controls.TabControl.SelectedContentStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -631,6 +649,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabControl.SelectedContentStringFormatProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedContentStringFormatProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedContentStringFormatProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedContentStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabControl.SelectedContentStringFormatProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -650,6 +669,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabControl.SelectedContentTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedContentTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ SelectedContentTemplate { System::Windows::DataTemplate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedContentTemplate : System.Windows.DataTemplate" Usage="System.Windows.Controls.TabControl.SelectedContentTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -710,6 +730,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabControl.SelectedContentTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedContentTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedContentTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedContentTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabControl.SelectedContentTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -729,6 +750,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabControl.SelectedContentTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedContentTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ SelectedContentTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedContentTemplateSelector : System.Windows.Controls.DataTemplateSelector" Usage="System.Windows.Controls.TabControl.SelectedContentTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -789,6 +811,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabControl.SelectedContentTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedContentTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedContentTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedContentTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabControl.SelectedContentTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -808,6 +831,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabControl.TabStripPlacement" />
       <MemberSignature Language="VB.NET" Value="Public Property TabStripPlacement As Dock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Dock TabStripPlacement { System::Windows::Controls::Dock get(); void set(System::Windows::Controls::Dock value); };" />
+      <MemberSignature Language="F#" Value="member this.TabStripPlacement : System.Windows.Controls.Dock with get, set" Usage="System.Windows.Controls.TabControl.TabStripPlacement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -857,6 +881,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabControl.TabStripPlacementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabStripPlacementProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TabStripPlacementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabStripPlacementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabControl.TabStripPlacementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

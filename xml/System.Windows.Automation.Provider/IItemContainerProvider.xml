@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IItemContainerProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IItemContainerProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IItemContainerProvider" />
+  <TypeSignature Language="F#" Value="type IItemContainerProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindItemByProperty (startAfter As IRawElementProviderSimple, propertyId As Integer, value As Object) As IRawElementProviderSimple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderSimple ^ FindItemByProperty(System::Windows::Automation::Provider::IRawElementProviderSimple ^ startAfter, int propertyId, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member FindItemByProperty : System.Windows.Automation.Provider.IRawElementProviderSimple * int * obj -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="iItemContainerProvider.FindItemByProperty (startAfter, propertyId, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

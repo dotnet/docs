@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewRowCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewRowCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewRowCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type GridViewRowCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRowCollection.#ctor(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rows As ArrayList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewRowCollection(System::Collections::ArrayList ^ rows);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.GridViewRowCollection : System.Collections.ArrayList -&gt; System.Web.UI.WebControls.GridViewRowCollection" Usage="new System.Web.UI.WebControls.GridViewRowCollection rows" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRowCollection.CopyTo(System.Web.UI.WebControls.GridViewRow[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As GridViewRow(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::GridViewRow ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.GridViewRow[] * int -&gt; unit" Usage="gridViewRowCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRowCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.WebControls.GridViewRowCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRowCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="gridViewRowCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -221,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRowCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.WebControls.GridViewRowCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRowCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.UI.WebControls.GridViewRowCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -289,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRowCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As GridViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::GridViewRow ^ default[int] { System::Web::UI::WebControls::GridViewRow ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.GridViewRow" Usage="System.Web.UI.WebControls.GridViewRowCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -333,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRowCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.WebControls.GridViewRowCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

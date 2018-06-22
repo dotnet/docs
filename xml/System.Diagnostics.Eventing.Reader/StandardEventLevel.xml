@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.StandardEventLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum StandardEventLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class StandardEventLevel" />
+  <TypeSignature Language="F#" Value="type StandardEventLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Critical" />
       <MemberSignature Language="VB.NET" Value="Critical" />
       <MemberSignature Language="C++ CLI" Value="Critical" />
+      <MemberSignature Language="F#" Value="Critical = 1" Usage="System.Diagnostics.Eventing.Reader.StandardEventLevel.Critical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 2" Usage="System.Diagnostics.Eventing.Reader.StandardEventLevel.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Informational" />
       <MemberSignature Language="VB.NET" Value="Informational" />
       <MemberSignature Language="C++ CLI" Value="Informational" />
+      <MemberSignature Language="F#" Value="Informational = 4" Usage="System.Diagnostics.Eventing.Reader.StandardEventLevel.Informational" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.LogAlways" />
       <MemberSignature Language="VB.NET" Value="LogAlways" />
       <MemberSignature Language="C++ CLI" Value="LogAlways" />
+      <MemberSignature Language="F#" Value="LogAlways = 0" Usage="System.Diagnostics.Eventing.Reader.StandardEventLevel.LogAlways" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Verbose" />
       <MemberSignature Language="VB.NET" Value="Verbose" />
       <MemberSignature Language="C++ CLI" Value="Verbose" />
+      <MemberSignature Language="F#" Value="Verbose = 5" Usage="System.Diagnostics.Eventing.Reader.StandardEventLevel.Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 3" Usage="System.Diagnostics.Eventing.Reader.StandardEventLevel.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

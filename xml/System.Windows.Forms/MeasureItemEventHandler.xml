@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MeasureItemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub MeasureItemEventHandler(sender As Object, e As MeasureItemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void MeasureItemEventHandler(System::Object ^ sender, MeasureItemEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type MeasureItemEventHandler = delegate of obj * MeasureItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

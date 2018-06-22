@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CreatingModelDataSourceEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CreatingModelDataSourceEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CreatingModelDataSourceEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CreatingModelDataSourceEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CreatingModelDataSourceEventArgs.ModelDataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ModelDataSource As ModelDataSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ModelDataSource ^ ModelDataSource { System::Web::UI::WebControls::ModelDataSource ^ get(); void set(System::Web::UI::WebControls::ModelDataSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ModelDataSource : System.Web.UI.WebControls.ModelDataSource with get, set" Usage="System.Web.UI.WebControls.CreatingModelDataSourceEventArgs.ModelDataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

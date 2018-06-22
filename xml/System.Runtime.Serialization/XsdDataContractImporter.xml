@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XsdDataContractImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class XsdDataContractImporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XsdDataContractImporter" />
+  <TypeSignature Language="F#" Value="type XsdDataContractImporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeCompileUnit codeCompileUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.#ctor(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XsdDataContractImporter(System::CodeDom::CodeCompileUnit ^ codeCompileUnit);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.XsdDataContractImporter : System.CodeDom.CodeCompileUnit -&gt; System.Runtime.Serialization.XsdDataContractImporter" Usage="new System.Runtime.Serialization.XsdDataContractImporter codeCompileUnit" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.CanImport(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanImport (schemas As XmlSchemaSet) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanImport(System::Xml::Schema::XmlSchemaSet ^ schemas);" />
+      <MemberSignature Language="F#" Value="member this.CanImport : System.Xml.Schema.XmlSchemaSet -&gt; bool" Usage="xsdDataContractImporter.CanImport schemas" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.CanImport(System.Xml.Schema.XmlSchemaSet,System.Collections.Generic.ICollection{System.Xml.XmlQualifiedName})" />
       <MemberSignature Language="VB.NET" Value="Public Function CanImport (schemas As XmlSchemaSet, typeNames As ICollection(Of XmlQualifiedName)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanImport(System::Xml::Schema::XmlSchemaSet ^ schemas, System::Collections::Generic::ICollection&lt;System::Xml::XmlQualifiedName ^&gt; ^ typeNames);" />
+      <MemberSignature Language="F#" Value="member this.CanImport : System.Xml.Schema.XmlSchemaSet * System.Collections.Generic.ICollection&lt;System.Xml.XmlQualifiedName&gt; -&gt; bool" Usage="xsdDataContractImporter.CanImport (schemas, typeNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.CanImport(System.Xml.Schema.XmlSchemaSet,System.Xml.Schema.XmlSchemaElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanImport (schemas As XmlSchemaSet, element As XmlSchemaElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanImport(System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::Schema::XmlSchemaElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.CanImport : System.Xml.Schema.XmlSchemaSet * System.Xml.Schema.XmlSchemaElement -&gt; bool" Usage="xsdDataContractImporter.CanImport (schemas, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.CanImport(System.Xml.Schema.XmlSchemaSet,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanImport (schemas As XmlSchemaSet, typeName As XmlQualifiedName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanImport(System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::XmlQualifiedName ^ typeName);" />
+      <MemberSignature Language="F#" Value="member this.CanImport : System.Xml.Schema.XmlSchemaSet * System.Xml.XmlQualifiedName -&gt; bool" Usage="xsdDataContractImporter.CanImport (schemas, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeCompileUnit As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeCompileUnit ^ CodeCompileUnit { System::CodeDom::CodeCompileUnit ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeCompileUnit : System.CodeDom.CodeCompileUnit" Usage="System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -305,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.GetCodeTypeReference(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCodeTypeReference (typeName As XmlQualifiedName) As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeTypeReference ^ GetCodeTypeReference(System::Xml::XmlQualifiedName ^ typeName);" />
+      <MemberSignature Language="F#" Value="member this.GetCodeTypeReference : System.Xml.XmlQualifiedName -&gt; System.CodeDom.CodeTypeReference" Usage="xsdDataContractImporter.GetCodeTypeReference typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -336,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.GetCodeTypeReference(System.Xml.XmlQualifiedName,System.Xml.Schema.XmlSchemaElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCodeTypeReference (typeName As XmlQualifiedName, element As XmlSchemaElement) As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeTypeReference ^ GetCodeTypeReference(System::Xml::XmlQualifiedName ^ typeName, System::Xml::Schema::XmlSchemaElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.GetCodeTypeReference : System.Xml.XmlQualifiedName * System.Xml.Schema.XmlSchemaElement -&gt; System.CodeDom.CodeTypeReference" Usage="xsdDataContractImporter.GetCodeTypeReference (typeName, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -371,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.GetKnownTypeReferences(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKnownTypeReferences (typeName As XmlQualifiedName) As ICollection(Of CodeTypeReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::ICollection&lt;System::CodeDom::CodeTypeReference ^&gt; ^ GetKnownTypeReferences(System::Xml::XmlQualifiedName ^ typeName);" />
+      <MemberSignature Language="F#" Value="member this.GetKnownTypeReferences : System.Xml.XmlQualifiedName -&gt; System.Collections.Generic.ICollection&lt;System.CodeDom.CodeTypeReference&gt;" Usage="xsdDataContractImporter.GetKnownTypeReferences typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -414,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.Import(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (schemas As XmlSchemaSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(System::Xml::Schema::XmlSchemaSet ^ schemas);" />
+      <MemberSignature Language="F#" Value="member this.Import : System.Xml.Schema.XmlSchemaSet -&gt; unit" Usage="xsdDataContractImporter.Import schemas" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -448,6 +459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.Import(System.Xml.Schema.XmlSchemaSet,System.Collections.Generic.ICollection{System.Xml.XmlQualifiedName})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (schemas As XmlSchemaSet, typeNames As ICollection(Of XmlQualifiedName))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(System::Xml::Schema::XmlSchemaSet ^ schemas, System::Collections::Generic::ICollection&lt;System::Xml::XmlQualifiedName ^&gt; ^ typeNames);" />
+      <MemberSignature Language="F#" Value="member this.Import : System.Xml.Schema.XmlSchemaSet * System.Collections.Generic.ICollection&lt;System.Xml.XmlQualifiedName&gt; -&gt; unit" Usage="xsdDataContractImporter.Import (schemas, typeNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -473,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.Import(System.Xml.Schema.XmlSchemaSet,System.Xml.Schema.XmlSchemaElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function Import (schemas As XmlSchemaSet, element As XmlSchemaElement) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlQualifiedName ^ Import(System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::Schema::XmlSchemaElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Import : System.Xml.Schema.XmlSchemaSet * System.Xml.Schema.XmlSchemaElement -&gt; System.Xml.XmlQualifiedName" Usage="xsdDataContractImporter.Import (schemas, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -500,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XsdDataContractImporter.Import(System.Xml.Schema.XmlSchemaSet,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (schemas As XmlSchemaSet, typeName As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::XmlQualifiedName ^ typeName);" />
+      <MemberSignature Language="F#" Value="member this.Import : System.Xml.Schema.XmlSchemaSet * System.Xml.XmlQualifiedName -&gt; unit" Usage="xsdDataContractImporter.Import (schemas, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -526,6 +540,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.XsdDataContractImporter.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As ImportOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ImportOptions ^ Options { System::Runtime::Serialization::ImportOptions ^ get(); void set(System::Runtime::Serialization::ImportOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Runtime.Serialization.ImportOptions with get, set" Usage="System.Runtime.Serialization.XsdDataContractImporter.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsManageability" />
   <TypeSignature Language="VB.NET" Value="Public Enum SettingsManageability" />
   <TypeSignature Language="C++ CLI" Value="public enum class SettingsManageability" />
+  <TypeSignature Language="F#" Value="type SettingsManageability = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.SettingsManageability.Roaming" />
       <MemberSignature Language="VB.NET" Value="Roaming" />
       <MemberSignature Language="C++ CLI" Value="Roaming" />
+      <MemberSignature Language="F#" Value="Roaming = 0" Usage="System.Configuration.SettingsManageability.Roaming" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

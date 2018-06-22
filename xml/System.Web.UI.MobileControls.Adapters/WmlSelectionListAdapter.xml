@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class WmlSelectionListAdapter&#xA;Inherits WmlControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class WmlSelectionListAdapter : System::Web::UI::MobileControls::Adapters::WmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type WmlSelectionListAdapter = class&#xA;    inherit WmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As SelectionList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::SelectionList ^ Control { System::Web::UI::MobileControls::SelectionList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.SelectionList" Usage="System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter.GetPostBackValue" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetPostBackValue () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetPostBackValue();" />
+      <MemberSignature Language="F#" Value="override this.GetPostBackValue : unit -&gt; string" Usage="wmlSelectionListAdapter.GetPostBackValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function LoadPostData (key As String, data As NameValueCollection, controlPrivateData As Object, ByRef dataChanged As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool LoadPostData(System::String ^ key, System::Collections::Specialized::NameValueCollection ^ data, System::Object ^ controlPrivateData, [Runtime::InteropServices::Out] bool % dataChanged);" />
+      <MemberSignature Language="F#" Value="override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection * obj *  -&gt; bool" Usage="wmlSelectionListAdapter.LoadPostData (key, data, controlPrivateData, dataChanged)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="wmlSelectionListAdapter.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="wmlSelectionListAdapter.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As WmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit" Usage="wmlSelectionListAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

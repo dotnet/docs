@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearInt16KeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class LinearInt16KeyFrame&#xA;Inherits Int16KeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinearInt16KeyFrame : System::Windows::Media::Animation::Int16KeyFrame" />
+  <TypeSignature Language="F#" Value="type LinearInt16KeyFrame = class&#xA;    inherit Int16KeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt16KeyFrame.#ctor(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearInt16KeyFrame(short value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearInt16KeyFrame : int16 -&gt; System.Windows.Media.Animation.LinearInt16KeyFrame" Usage="new System.Windows.Media.Animation.LinearInt16KeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt16KeyFrame.#ctor(System.Int16,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearInt16KeyFrame(short value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearInt16KeyFrame : int16 * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.LinearInt16KeyFrame" Usage="new System.Windows.Media.Animation.LinearInt16KeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt16KeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="linearInt16KeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearInt16KeyFrame.InterpolateValueCore(System.Int16,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Short, keyFrameProgress As Double) As Short" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override short InterpolateValueCore(short baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : int16 * double -&gt; int16" Usage="linearInt16KeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

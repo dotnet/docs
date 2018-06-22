@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.GeneralTransform3DTo2D" />
   <TypeSignature Language="VB.NET" Value="Public Class GeneralTransform3DTo2D&#xA;Inherits Freezable" />
   <TypeSignature Language="C++ CLI" Value="public ref class GeneralTransform3DTo2D : System::Windows::Freezable" />
+  <TypeSignature Language="F#" Value="type GeneralTransform3DTo2D = class&#xA;    inherit Freezable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform3DTo2D.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform3DTo2D.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="generalTransform3DTo2D.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DTo2D.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform3DTo2D.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DTo2D.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform3DTo2D.GetCurrentValueAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point Transform(valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DTo2D.Transform(System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point Transform(System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Point" Usage="generalTransform3DTo2D.Transform point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect TransformBounds(valuetype System.Windows.Media.Media3D.Rect3D rect3D) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DTo2D.TransformBounds(System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect TransformBounds(System::Windows::Media::Media3D::Rect3D rect3D);" />
+      <MemberSignature Language="F#" Value="member this.TransformBounds : System.Windows.Media.Media3D.Rect3D -&gt; System.Windows.Rect" Usage="generalTransform3DTo2D.TransformBounds rect3D" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DTo2D.TryTransform(System.Windows.Media.Media3D.Point3D,System.Windows.Point@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryTransform (inPoint As Point3D, ByRef result As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryTransform(System::Windows::Media::Media3D::Point3D inPoint, [Runtime::InteropServices::Out] System::Windows::Point % result);" />
+      <MemberSignature Language="F#" Value="member this.TryTransform : System.Windows.Media.Media3D.Point3D *  -&gt; bool" Usage="generalTransform3DTo2D.TryTransform (inPoint, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

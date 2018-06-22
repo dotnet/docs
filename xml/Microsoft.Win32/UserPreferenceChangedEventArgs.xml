@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.UserPreferenceChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class UserPreferenceChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserPreferenceChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type UserPreferenceChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.UserPreferenceChangedEventArgs.#ctor(Microsoft.Win32.UserPreferenceCategory)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As UserPreferenceCategory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserPreferenceChangedEventArgs(Microsoft::Win32::UserPreferenceCategory category);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.UserPreferenceChangedEventArgs : Microsoft.Win32.UserPreferenceCategory -&gt; Microsoft.Win32.UserPreferenceChangedEventArgs" Usage="new Microsoft.Win32.UserPreferenceChangedEventArgs category" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.UserPreferenceChangedEventArgs.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As UserPreferenceCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::UserPreferenceCategory Category { Microsoft::Win32::UserPreferenceCategory get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : Microsoft.Win32.UserPreferenceCategory" Usage="Microsoft.Win32.UserPreferenceChangedEventArgs.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectCollectionChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectCollectionChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectCollectionChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ProjectCollectionChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectCollectionChangedEventArgs.Changed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Changed As ProjectCollectionChangedState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Evaluation::ProjectCollectionChangedState Changed { Microsoft::Build::Evaluation::ProjectCollectionChangedState get(); };" />
+      <MemberSignature Language="F#" Value="member this.Changed : Microsoft.Build.Evaluation.ProjectCollectionChangedState" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedEventArgs.Changed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

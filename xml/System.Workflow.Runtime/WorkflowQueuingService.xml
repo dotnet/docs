@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueuingService" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowQueuingService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowQueuingService" />
+  <TypeSignature Language="F#" Value="type WorkflowQueuingService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue(System.IComparable,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateWorkflowQueue (queueName As IComparable, transactional As Boolean) As WorkflowQueue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowQueue ^ CreateWorkflowQueue(IComparable ^ queueName, bool transactional);" />
+      <MemberSignature Language="F#" Value="member this.CreateWorkflowQueue : IComparable * bool -&gt; System.Workflow.Runtime.WorkflowQueue" Usage="workflowQueuingService.CreateWorkflowQueue (queueName, transactional)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.DeleteWorkflowQueue(System.IComparable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteWorkflowQueue (queueName As IComparable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteWorkflowQueue(IComparable ^ queueName);" />
+      <MemberSignature Language="F#" Value="member this.DeleteWorkflowQueue : IComparable -&gt; unit" Usage="workflowQueuingService.DeleteWorkflowQueue queueName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.Exists(System.IComparable)" />
       <MemberSignature Language="VB.NET" Value="Public Function Exists (queueName As IComparable) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(IComparable ^ queueName);" />
+      <MemberSignature Language="F#" Value="member this.Exists : IComparable -&gt; bool" Usage="workflowQueuingService.Exists queueName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue(System.IComparable)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWorkflowQueue (queueName As IComparable) As WorkflowQueue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowQueue ^ GetWorkflowQueue(IComparable ^ queueName);" />
+      <MemberSignature Language="F#" Value="member this.GetWorkflowQueue : IComparable -&gt; System.Workflow.Runtime.WorkflowQueue" Usage="workflowQueuingService.GetWorkflowQueue queueName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.WorkflowQueuingService.PendingMessagesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PendingMessagesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ PendingMessagesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PendingMessagesProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Runtime.WorkflowQueuingService.PendingMessagesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

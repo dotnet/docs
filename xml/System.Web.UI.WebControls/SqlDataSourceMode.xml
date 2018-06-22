@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SqlDataSourceMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SqlDataSourceMode" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SqlDataSourceMode.DataReader" />
       <MemberSignature Language="VB.NET" Value="DataReader" />
       <MemberSignature Language="C++ CLI" Value="DataReader" />
+      <MemberSignature Language="F#" Value="DataReader = 0" Usage="System.Web.UI.WebControls.SqlDataSourceMode.DataReader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SqlDataSourceMode.DataSet" />
       <MemberSignature Language="VB.NET" Value="DataSet" />
       <MemberSignature Language="C++ CLI" Value="DataSet" />
+      <MemberSignature Language="F#" Value="DataSet = 1" Usage="System.Web.UI.WebControls.SqlDataSourceMode.DataSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

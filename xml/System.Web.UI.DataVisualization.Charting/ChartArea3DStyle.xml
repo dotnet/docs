@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class ChartArea3DStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChartArea3DStyle" />
+  <TypeSignature Language="F#" Value="type ChartArea3DStyle = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataVisualization.Charting.ChartArea chartArea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.#ctor(System.Web.UI.DataVisualization.Charting.ChartArea)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChartArea3DStyle(System::Web::UI::DataVisualization::Charting::ChartArea ^ chartArea);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.ChartArea3DStyle : System.Web.UI.DataVisualization.Charting.ChartArea -&gt; System.Web.UI.DataVisualization.Charting.ChartArea3DStyle" Usage="new System.Web.UI.DataVisualization.Charting.ChartArea3DStyle chartArea" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Enable3D" />
       <MemberSignature Language="VB.NET" Value="Public Property Enable3D As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enable3D { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enable3D : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Enable3D" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Inclination" />
       <MemberSignature Language="VB.NET" Value="Public Property Inclination As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Inclination { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Inclination : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Inclination" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsClustered" />
       <MemberSignature Language="VB.NET" Value="Public Property IsClustered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClustered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsClustered : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsClustered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes" />
       <MemberSignature Language="VB.NET" Value="Public Property IsRightAngleAxes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRightAngleAxes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsRightAngleAxes : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.LightStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LightStyle As LightStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::LightStyle LightStyle { System::Web::UI::DataVisualization::Charting::LightStyle get(); void set(System::Web::UI::DataVisualization::Charting::LightStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.LightStyle : System.Web.UI.DataVisualization.Charting.LightStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.LightStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Perspective" />
       <MemberSignature Language="VB.NET" Value="Public Property Perspective As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Perspective { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Perspective : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Perspective" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -321,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property PointDepth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PointDepth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -365,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property PointGapDepth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointGapDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PointGapDepth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -409,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Rotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Rotation As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rotation { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Rotation : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -440,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.WallWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property WallWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WallWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WallWidth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.WallWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

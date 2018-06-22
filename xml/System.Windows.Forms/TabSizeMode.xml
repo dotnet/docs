@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabSizeMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TabSizeMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TabSizeMode" />
+  <TypeSignature Language="F#" Value="type TabSizeMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabSizeMode.FillToRight" />
       <MemberSignature Language="VB.NET" Value="FillToRight" />
       <MemberSignature Language="C++ CLI" Value="FillToRight" />
+      <MemberSignature Language="F#" Value="FillToRight = 1" Usage="System.Windows.Forms.TabSizeMode.FillToRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabSizeMode.Fixed" />
       <MemberSignature Language="VB.NET" Value="Fixed" />
       <MemberSignature Language="C++ CLI" Value="Fixed" />
+      <MemberSignature Language="F#" Value="Fixed = 2" Usage="System.Windows.Forms.TabSizeMode.Fixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabSizeMode.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.TabSizeMode.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

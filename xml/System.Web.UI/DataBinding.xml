@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataBinding sealed" />
+  <TypeSignature Language="F#" Value="type DataBinding = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinding.#ctor(System.String,System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, propertyType As Type, expression As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataBinding(System::String ^ propertyName, Type ^ propertyType, System::String ^ expression);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataBinding : string * Type * string -&gt; System.Web.UI.DataBinding" Usage="new System.Web.UI.DataBinding (propertyName, propertyType, expression)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinding.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataBinding.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBinding.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Expression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : string with get, set" Usage="System.Web.UI.DataBinding.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinding.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataBinding.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBinding.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Web.UI.DataBinding.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBinding.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.Web.UI.DataBinding.PropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

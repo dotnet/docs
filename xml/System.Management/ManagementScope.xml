@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementScope" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementScope&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementScope : ICloneable" />
+  <TypeSignature Language="F#" Value="type ManagementScope = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor(System.Management.ManagementPath)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As ManagementPath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementScope(System::Management::ManagementPath ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementScope : System.Management.ManagementPath -&gt; System.Management.ManagementScope" Usage="new System.Management.ManagementScope path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementScope(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementScope : string -&gt; System.Management.ManagementScope" Usage="new System.Management.ManagementScope path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor(System.Management.ManagementPath,System.Management.ConnectionOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As ManagementPath, options As ConnectionOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementScope(System::Management::ManagementPath ^ path, System::Management::ConnectionOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementScope : System.Management.ManagementPath * System.Management.ConnectionOptions -&gt; System.Management.ManagementScope" Usage="new System.Management.ManagementScope (path, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor(System.String,System.Management.ConnectionOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, options As ConnectionOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementScope(System::String ^ path, System::Management::ConnectionOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementScope : string * System.Management.ConnectionOptions -&gt; System.Management.ManagementScope" Usage="new System.Management.ManagementScope (path, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ManagementScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementScope ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Management.ManagementScope" Usage="managementScope.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.Connect" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect();" />
+      <MemberSignature Language="F#" Value="member this.Connect : unit -&gt; unit" Usage="managementScope.Connect " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -282,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementScope.IsConnected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConnected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConnected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConnected : bool" Usage="System.Management.ManagementScope.IsConnected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -315,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementScope.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As ConnectionOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ConnectionOptions ^ Options { System::Management::ConnectionOptions ^ get(); void set(System::Management::ConnectionOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Management.ConnectionOptions with get, set" Usage="System.Management.ManagementScope.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -347,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementScope.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementPath ^ Path { System::Management::ManagementPath ^ get(); void set(System::Management::ManagementPath ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : System.Management.ManagementPath with get, set" Usage="System.Management.ManagementScope.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

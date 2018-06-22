@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.ParameterBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class ParameterBuilder&#xA;Implements _ParameterBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParameterBuilder : System::Runtime::InteropServices::_ParameterBuilder" />
+  <TypeSignature Language="F#" Value="type ParameterBuilder = class&#xA;    interface _ParameterBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ParameterBuilder.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Attributes As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Attributes { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : int" Usage="System.Reflection.Emit.ParameterBuilder.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterBuilder.GetToken" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetToken () As ParameterToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::Emit::ParameterToken GetToken();" />
+      <MemberSignature Language="F#" Value="abstract member GetToken : unit -&gt; System.Reflection.Emit.ParameterToken&#xA;override this.GetToken : unit -&gt; System.Reflection.Emit.ParameterToken" Usage="parameterBuilder.GetToken " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ParameterBuilder.IsIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIn { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsIn : bool" Usage="System.Reflection.Emit.ParameterBuilder.IsIn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ParameterBuilder.IsOptional" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool" Usage="System.Reflection.Emit.ParameterBuilder.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ParameterBuilder.IsOut" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOut As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOut { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOut : bool" Usage="System.Reflection.Emit.ParameterBuilder.IsOut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ParameterBuilder.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Emit.ParameterBuilder.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ParameterBuilder.Position" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Position As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Position { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : int" Usage="System.Reflection.Emit.ParameterBuilder.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterBuilder.SetConstant(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetConstant (defaultValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetConstant(System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetConstant : obj -&gt; unit&#xA;override this.SetConstant : obj -&gt; unit" Usage="parameterBuilder.SetConstant defaultValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (customBuilder As CustomAttributeBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::Emit::CustomAttributeBuilder ^ customBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.Emit.CustomAttributeBuilder -&gt; unit" Usage="parameterBuilder.SetCustomAttribute customBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -340,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (con As ConstructorInfo, binaryAttribute As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Byte&gt; ^ binaryAttribute);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.ConstructorInfo * byte[] -&gt; unit" Usage="parameterBuilder.SetCustomAttribute (con, binaryAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -384,6 +395,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMarshal(class System.Reflection.Emit.UnmanagedMarshal unmanagedMarshal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterBuilder.SetMarshal(System.Reflection.Emit.UnmanagedMarshal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetMarshal(System::Reflection::Emit::UnmanagedMarshal ^ unmanagedMarshal);" />
+      <MemberSignature Language="F#" Value="abstract member SetMarshal : System.Reflection.Emit.UnmanagedMarshal -&gt; unit&#xA;override this.SetMarshal : System.Reflection.Emit.UnmanagedMarshal -&gt; unit" Usage="parameterBuilder.SetMarshal unmanagedMarshal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

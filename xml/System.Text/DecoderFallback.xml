@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderFallback" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DecoderFallback" />
   <TypeSignature Language="C++ CLI" Value="public ref class DecoderFallback abstract" />
+  <TypeSignature Language="F#" Value="type DecoderFallback = class" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderFallback.CreateFallbackBuffer" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateFallbackBuffer () As DecoderFallbackBuffer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Text::DecoderFallbackBuffer ^ CreateFallbackBuffer();" />
+      <MemberSignature Language="F#" Value="abstract member CreateFallbackBuffer : unit -&gt; System.Text.DecoderFallbackBuffer" Usage="decoderFallback.CreateFallbackBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderFallback.ExceptionFallback" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExceptionFallback As DecoderFallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::DecoderFallback ^ ExceptionFallback { System::Text::DecoderFallback ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionFallback : System.Text.DecoderFallback" Usage="System.Text.DecoderFallback.ExceptionFallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -177,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderFallback.MaxCharCount" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MaxCharCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int MaxCharCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCharCount : int" Usage="System.Text.DecoderFallback.MaxCharCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderFallback.ReplacementFallback" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ReplacementFallback As DecoderFallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::DecoderFallback ^ ReplacementFallback { System::Text::DecoderFallback ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReplacementFallback : System.Text.DecoderFallback" Usage="System.Text.DecoderFallback.ReplacementFallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DataReceivedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataReceivedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataReceivedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataReceivedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DataReceivedEventArgs.Data" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Data { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Data : string" Usage="System.Diagnostics.DataReceivedEventArgs.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>

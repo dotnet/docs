@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.RemoteFieldData" />
   <TypeSignature Language="VB.NET" Value="Public Structure RemoteFieldData" />
   <TypeSignature Language="C++ CLI" Value="public value class RemoteFieldData" />
+  <TypeSignature Language="F#" Value="type RemoteFieldData = struct" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteFieldData.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Attributes As FieldAttributes " />
       <MemberSignature Language="C++ CLI" Value="public: System::Reflection::FieldAttributes Attributes;" />
+      <MemberSignature Language="F#" Value="val mutable Attributes : System.Reflection.FieldAttributes" Usage="System.AddIn.Contract.Automation.RemoteFieldData.Attributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteFieldData.FieldType" />
       <MemberSignature Language="VB.NET" Value="Public FieldType As IRemoteTypeContract " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::IRemoteTypeContract ^ FieldType;" />
+      <MemberSignature Language="F#" Value="val mutable FieldType : System.AddIn.Contract.Automation.IRemoteTypeContract" Usage="System.AddIn.Contract.Automation.RemoteFieldData.FieldType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteFieldData.MemberData" />
       <MemberSignature Language="VB.NET" Value="Public MemberData As RemoteMemberData " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::RemoteMemberData MemberData;" />
+      <MemberSignature Language="F#" Value="val mutable MemberData : System.AddIn.Contract.Automation.RemoteMemberData" Usage="System.AddIn.Contract.Automation.RemoteFieldData.MemberData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

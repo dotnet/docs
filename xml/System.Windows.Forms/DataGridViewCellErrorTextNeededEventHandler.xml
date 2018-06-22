@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellErrorTextNeededEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellErrorTextNeededEventHandler(sender As Object, e As DataGridViewCellErrorTextNeededEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellErrorTextNeededEventHandler(System::Object ^ sender, DataGridViewCellErrorTextNeededEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellErrorTextNeededEventHandler = delegate of obj * DataGridViewCellErrorTextNeededEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

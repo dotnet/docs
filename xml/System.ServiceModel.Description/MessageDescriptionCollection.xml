@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessageDescriptionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageDescriptionCollection&#xA;Inherits Collection(Of MessageDescription)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageDescriptionCollection : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MessageDescription ^&gt;" />
+  <TypeSignature Language="F#" Value="type MessageDescriptionCollection = class&#xA;    inherit Collection&lt;MessageDescription&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessageDescriptionCollection.Find(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (action As String) As MessageDescription" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::MessageDescription ^ Find(System::String ^ action);" />
+      <MemberSignature Language="F#" Value="member this.Find : string -&gt; System.ServiceModel.Description.MessageDescription" Usage="messageDescriptionCollection.Find action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessageDescriptionCollection.FindAll(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (action As String) As Collection(Of MessageDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MessageDescription ^&gt; ^ FindAll(System::String ^ action);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : string -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MessageDescription&gt;" Usage="messageDescriptionCollection.FindAll action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

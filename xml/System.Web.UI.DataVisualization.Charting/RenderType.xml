@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.RenderType" />
   <TypeSignature Language="VB.NET" Value="Public Enum RenderType" />
   <TypeSignature Language="C++ CLI" Value="public enum class RenderType" />
+  <TypeSignature Language="F#" Value="type RenderType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.RenderType.BinaryStreaming" />
       <MemberSignature Language="VB.NET" Value="BinaryStreaming" />
       <MemberSignature Language="C++ CLI" Value="BinaryStreaming" />
+      <MemberSignature Language="F#" Value="BinaryStreaming = 1" Usage="System.Web.UI.DataVisualization.Charting.RenderType.BinaryStreaming" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.RenderType.ImageMap" />
       <MemberSignature Language="VB.NET" Value="ImageMap" />
       <MemberSignature Language="C++ CLI" Value="ImageMap" />
+      <MemberSignature Language="F#" Value="ImageMap = 2" Usage="System.Web.UI.DataVisualization.Charting.RenderType.ImageMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag" />
       <MemberSignature Language="VB.NET" Value="ImageTag" />
       <MemberSignature Language="C++ CLI" Value="ImageTag" />
+      <MemberSignature Language="F#" Value="ImageTag = 0" Usage="System.Web.UI.DataVisualization.Charting.RenderType.ImageTag" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

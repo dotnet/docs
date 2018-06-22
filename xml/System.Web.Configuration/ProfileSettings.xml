@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfileSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileSettings&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileSettings sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ProfileSettings = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileSettings.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileSettings(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.ProfileSettings : string -&gt; System.Web.Configuration.ProfileSettings" Usage="new System.Web.Configuration.ProfileSettings name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileSettings.#ctor(System.String,System.Int32,System.Int32,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, minInstances As Integer, maxLimit As Integer, minInterval As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileSettings(System::String ^ name, int minInstances, int maxLimit, TimeSpan minInterval);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.ProfileSettings : string * int * int * TimeSpan -&gt; System.Web.Configuration.ProfileSettings" Usage="new System.Web.Configuration.ProfileSettings (name, minInstances, maxLimit, minInterval)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileSettings.#ctor(System.String,System.Int32,System.Int32,System.TimeSpan,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, minInstances As Integer, maxLimit As Integer, minInterval As TimeSpan, custom As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileSettings(System::String ^ name, int minInstances, int maxLimit, TimeSpan minInterval, System::String ^ custom);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.ProfileSettings : string * int * int * TimeSpan * string -&gt; System.Web.Configuration.ProfileSettings" Usage="new System.Web.Configuration.ProfileSettings (name, minInstances, maxLimit, minInterval, custom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.Custom" />
       <MemberSignature Language="VB.NET" Value="Public Property Custom As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Custom { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Custom : string with get, set" Usage="System.Web.Configuration.ProfileSettings.Custom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.MaxLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLimit : int with get, set" Usage="System.Web.Configuration.ProfileSettings.MaxLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -291,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.MinInstances" />
       <MemberSignature Language="VB.NET" Value="Public Property MinInstances As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinInstances { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinInstances : int with get, set" Usage="System.Web.Configuration.ProfileSettings.MinInstances" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -338,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.MinInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property MinInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MinInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MinInterval : TimeSpan with get, set" Usage="System.Web.Configuration.ProfileSettings.MinInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -385,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.ProfileSettings.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -430,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ProfileSettings.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

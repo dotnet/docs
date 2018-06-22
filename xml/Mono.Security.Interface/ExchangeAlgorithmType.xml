@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.ExchangeAlgorithmType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExchangeAlgorithmType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ExchangeAlgorithmType" />
+  <TypeSignature Language="F#" Value="type ExchangeAlgorithmType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.Dhe" />
       <MemberSignature Language="VB.NET" Value="Dhe" />
       <MemberSignature Language="C++ CLI" Value="Dhe" />
+      <MemberSignature Language="F#" Value="Dhe = 1" Usage="Mono.Security.Interface.ExchangeAlgorithmType.Dhe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.EcDhe" />
       <MemberSignature Language="VB.NET" Value="EcDhe" />
       <MemberSignature Language="C++ CLI" Value="EcDhe" />
+      <MemberSignature Language="F#" Value="EcDhe = 3" Usage="Mono.Security.Interface.ExchangeAlgorithmType.EcDhe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Mono.Security.Interface.ExchangeAlgorithmType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.Rsa" />
       <MemberSignature Language="VB.NET" Value="Rsa" />
       <MemberSignature Language="C++ CLI" Value="Rsa" />
+      <MemberSignature Language="F#" Value="Rsa = 2" Usage="Mono.Security.Interface.ExchangeAlgorithmType.Rsa" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

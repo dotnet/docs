@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ISubscriptionToken" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISubscriptionToken" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISubscriptionToken" />
+  <TypeSignature Language="F#" Value="type ISubscriptionToken = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ISubscriptionToken.IsActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsActive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsActive : bool" Usage="System.Web.ISubscriptionToken.IsActive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ISubscriptionToken.Unsubscribe" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unsubscribe ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unsubscribe();" />
+      <MemberSignature Language="F#" Value="abstract member Unsubscribe : unit -&gt; unit" Usage="iSubscriptionToken.Unsubscribe " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

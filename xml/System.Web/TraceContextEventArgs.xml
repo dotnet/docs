@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.TraceContextEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TraceContextEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraceContextEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type TraceContextEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContextEventArgs.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (records As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceContextEventArgs(System::Collections::ICollection ^ records);" />
+      <MemberSignature Language="F#" Value="new System.Web.TraceContextEventArgs : System.Collections.ICollection -&gt; System.Web.TraceContextEventArgs" Usage="new System.Web.TraceContextEventArgs records" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.TraceContextEventArgs.TraceRecords" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceRecords As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ TraceRecords { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TraceRecords : System.Collections.ICollection" Usage="System.Web.TraceContextEventArgs.TraceRecords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AutomationEventHandler(sender As Object, e As AutomationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AutomationEventHandler(System::Object ^ sender, AutomationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AutomationEventHandler = delegate of obj * AutomationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnotationSmartLabelStyle&#xA;Inherits SmartLabelStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnotationSmartLabelStyle : System::Windows::Forms::DataVisualization::Charting::SmartLabelStyle" />
+  <TypeSignature Language="F#" Value="type AnnotationSmartLabelStyle = class&#xA;    inherit SmartLabelStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (chartElement As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationSmartLabelStyle(System::Object ^ chartElement);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle : obj -&gt; System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle" Usage="new System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle chartElement" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CalloutBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutLineAnchorCapStyle As LineAnchorCapStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle CalloutLineAnchorCapStyle { System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineAnchorCapStyle : System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutLineColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CalloutLineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutLineDashStyle As ChartDashStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle CalloutLineDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -248,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutLineWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CalloutLineWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -286,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutStyle As LabelCalloutStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle CalloutStyle { System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutStyle : System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

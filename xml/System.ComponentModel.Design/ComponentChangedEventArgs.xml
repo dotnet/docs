@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComponentChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentChangedEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ComponentChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentChangedEventArgs.#ctor(System.Object,System.ComponentModel.MemberDescriptor,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (component As Object, member As MemberDescriptor, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentChangedEventArgs(System::Object ^ component, System::ComponentModel::MemberDescriptor ^ member, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ComponentChangedEventArgs : obj * System.ComponentModel.MemberDescriptor * obj * obj -&gt; System.ComponentModel.Design.ComponentChangedEventArgs" Usage="new System.ComponentModel.Design.ComponentChangedEventArgs (component, member, oldValue, newValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentChangedEventArgs.Component" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Component As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Component { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Component : obj" Usage="System.ComponentModel.Design.ComponentChangedEventArgs.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentChangedEventArgs.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::MemberDescriptor ^ Member { System::ComponentModel::MemberDescriptor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.ComponentModel.MemberDescriptor" Usage="System.ComponentModel.Design.ComponentChangedEventArgs.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentChangedEventArgs.NewValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewValue : obj" Usage="System.ComponentModel.Design.ComponentChangedEventArgs.NewValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentChangedEventArgs.OldValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OldValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldValue : obj" Usage="System.ComponentModel.Design.ComponentChangedEventArgs.OldValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceProcessingPipelineEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceProcessingPipelineEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceProcessingPipelineEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataServiceProcessingPipelineEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceProcessingPipelineEventArgs.OperationContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationContext As DataServiceOperationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::DataServiceOperationContext ^ OperationContext { System::Data::Services::DataServiceOperationContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OperationContext : System.Data.Services.DataServiceOperationContext" Usage="System.Data.Services.DataServiceProcessingPipelineEventArgs.OperationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

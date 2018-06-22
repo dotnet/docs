@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryStringParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class QueryStringParameter&#xA;Inherits Parameter" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryStringParameter : System::Web::UI::WebControls::Parameter" />
+  <TypeSignature Language="F#" Value="type QueryStringParameter = class&#xA;    inherit Parameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryStringParameter.#ctor(System.Web.UI.WebControls.QueryStringParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (original As QueryStringParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; QueryStringParameter(System::Web::UI::WebControls::QueryStringParameter ^ original);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.QueryStringParameter : System.Web.UI.WebControls.QueryStringParameter -&gt; System.Web.UI.WebControls.QueryStringParameter" Usage="new System.Web.UI.WebControls.QueryStringParameter original" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryStringParameter.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, queryStringField As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryStringParameter(System::String ^ name, System::String ^ queryStringField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.QueryStringParameter : string * string -&gt; System.Web.UI.WebControls.QueryStringParameter" Usage="new System.Web.UI.WebControls.QueryStringParameter (name, queryStringField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string queryStringField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryStringParameter.#ctor(System.String,System.Data.DbType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryStringParameter(System::String ^ name, System::Data::DbType dbType, System::String ^ queryStringField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.QueryStringParameter : string * System.Data.DbType * string -&gt; System.Web.UI.WebControls.QueryStringParameter" Usage="new System.Web.UI.WebControls.QueryStringParameter (name, dbType, queryStringField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryStringParameter.#ctor(System.String,System.TypeCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, queryStringField As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryStringParameter(System::String ^ name, TypeCode type, System::String ^ queryStringField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.QueryStringParameter : string * TypeCode * string -&gt; System.Web.UI.WebControls.QueryStringParameter" Usage="new System.Web.UI.WebControls.QueryStringParameter (name, type, queryStringField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryStringParameter.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As Parameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Parameter ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Web.UI.WebControls.Parameter" Usage="queryStringParameter.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryStringParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="queryStringParameter.Evaluate (context, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -313,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryStringParameter.QueryStringField" />
       <MemberSignature Language="VB.NET" Value="Public Property QueryStringField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueryStringField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QueryStringField : string with get, set" Usage="System.Web.UI.WebControls.QueryStringParameter.QueryStringField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryStringParameter.ValidateInput" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateInput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateInput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateInput : bool with get, set" Usage="System.Web.UI.WebControls.QueryStringParameter.ValidateInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

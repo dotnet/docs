@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleNavigation" />
   <TypeSignature Language="VB.NET" Value="Public Enum AccessibleNavigation" />
   <TypeSignature Language="C++ CLI" Value="public enum class AccessibleNavigation" />
+  <TypeSignature Language="F#" Value="type AccessibleNavigation = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 2" Usage="System.Windows.Forms.AccessibleNavigation.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.FirstChild" />
       <MemberSignature Language="VB.NET" Value="FirstChild" />
       <MemberSignature Language="C++ CLI" Value="FirstChild" />
+      <MemberSignature Language="F#" Value="FirstChild = 7" Usage="System.Windows.Forms.AccessibleNavigation.FirstChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.LastChild" />
       <MemberSignature Language="VB.NET" Value="LastChild" />
       <MemberSignature Language="C++ CLI" Value="LastChild" />
+      <MemberSignature Language="F#" Value="LastChild = 8" Usage="System.Windows.Forms.AccessibleNavigation.LastChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 3" Usage="System.Windows.Forms.AccessibleNavigation.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Next" />
       <MemberSignature Language="VB.NET" Value="Next" />
       <MemberSignature Language="C++ CLI" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 5" Usage="System.Windows.Forms.AccessibleNavigation.Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Previous" />
       <MemberSignature Language="VB.NET" Value="Previous" />
       <MemberSignature Language="C++ CLI" Value="Previous" />
+      <MemberSignature Language="F#" Value="Previous = 6" Usage="System.Windows.Forms.AccessibleNavigation.Previous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 4" Usage="System.Windows.Forms.AccessibleNavigation.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -182,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 1" Usage="System.Windows.Forms.AccessibleNavigation.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

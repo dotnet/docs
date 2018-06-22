@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsPartBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XpsPartBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsPartBase abstract" />
+  <TypeSignature Language="F#" Value="type XpsPartBase = class" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsPartBase.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri with get, set" Usage="System.Windows.Xps.Packaging.XpsPartBase.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

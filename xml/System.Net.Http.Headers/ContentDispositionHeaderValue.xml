@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentDispositionHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentDispositionHeaderValue : ICloneable" />
+  <TypeSignature Language="F#" Value="type ContentDispositionHeaderValue = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(System.Net.Http.Headers.ContentDispositionHeaderValue)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (source As ContentDispositionHeaderValue)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ContentDispositionHeaderValue(System::Net::Http::Headers::ContentDispositionHeaderValue ^ source);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.ContentDispositionHeaderValue : System.Net.Http.Headers.ContentDispositionHeaderValue -&gt; System.Net.Http.Headers.ContentDispositionHeaderValue" Usage="new System.Net.Http.Headers.ContentDispositionHeaderValue source" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dispositionType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentDispositionHeaderValue(System::String ^ dispositionType);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.ContentDispositionHeaderValue : string -&gt; System.Net.Http.Headers.ContentDispositionHeaderValue" Usage="new System.Net.Http.Headers.ContentDispositionHeaderValue dispositionType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.CreationDate" />
       <MemberSignature Language="VB.NET" Value="Public Property CreationDate As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; CreationDate { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.CreationDate : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.CreationDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType" />
       <MemberSignature Language="VB.NET" Value="Public Property DispositionType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DispositionType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DispositionType : string with get, set" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="contentDispositionHeaderValue.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar" />
       <MemberSignature Language="VB.NET" Value="Public Property FileNameStar As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileNameStar { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileNameStar : string with get, set" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="contentDispositionHeaderValue.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -320,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.ModificationDate" />
       <MemberSignature Language="VB.NET" Value="Public Property ModificationDate As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; ModificationDate { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ModificationDate : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.ModificationDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -348,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -376,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ICollection(Of NameValueHeaderValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ Parameters { System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.ICollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt;" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -404,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As ContentDispositionHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::ContentDispositionHeaderValue ^ Parse(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.ContentDispositionHeaderValue" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.ReadDate" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadDate As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; ReadDate { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadDate : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.ReadDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -468,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; Size { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : Nullable&lt;int64&gt; with get, set" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -526,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="contentDispositionHeaderValue.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -555,6 +571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentDispositionHeaderValue.TryParse(System.String,System.Net.Http.Headers.ContentDispositionHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As ContentDispositionHeaderValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::ContentDispositionHeaderValue ^ % parsedValue);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.ContentDispositionHeaderValue.TryParse (input, parsedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

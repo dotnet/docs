@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectQuery`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectQuery(Of T)&#xA;Inherits ObjectQuery&#xA;Implements IEnumerable(Of T), IOrderedQueryable(Of T), IQueryable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ObjectQuery : System::Data::Objects::ObjectQuery, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Linq::IOrderedQueryable&lt;T&gt;, System::Linq::IQueryable&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ObjectQuery&lt;'T&gt; = class&#xA;    inherit ObjectQuery&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IQueryable&lt;'T&gt;&#xA;    interface IQueryable&#xA;    interface IOrderedQueryable&lt;'T&gt;&#xA;    interface IOrderedQueryable&#xA;    interface IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.#ctor(System.String,System.Data.Objects.ObjectContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandText As String, context As ObjectContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectQuery(System::String ^ commandText, System::Data::Objects::ObjectContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.ObjectQuery&lt;'T&gt; : string * System.Data.Objects.ObjectContext -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="new System.Data.Objects.ObjectQuery&lt;'T&gt; (commandText, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandText, class System.Data.Objects.ObjectContext context, valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.#ctor(System.String,System.Data.Objects.ObjectContext,System.Data.Objects.MergeOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectQuery(System::String ^ commandText, System::Data::Objects::ObjectContext ^ context, System::Data::Objects::MergeOption mergeOption);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.ObjectQuery&lt;'T&gt; : string * System.Data.Objects.ObjectContext * System.Data.Objects.MergeOption -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="new System.Data.Objects.ObjectQuery&lt;'T&gt; (commandText, context, mergeOption)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Distinct" />
       <MemberSignature Language="VB.NET" Value="Public Function Distinct () As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Distinct();" />
+      <MemberSignature Language="F#" Value="member this.Distinct : unit -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.Distinct " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Except(System.Data.Objects.ObjectQuery{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Except (query As ObjectQuery(Of T)) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Except(System::Data::Objects::ObjectQuery&lt;T&gt; ^ query);" />
+      <MemberSignature Language="F#" Value="member this.Except : System.Data.Objects.ObjectQuery&lt;'T&gt; -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.Except query" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!T&gt; Execute(valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Execute(System.Data.Objects.MergeOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectResult&lt;T&gt; ^ Execute(System::Data::Objects::MergeOption mergeOption);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Data.Objects.MergeOption -&gt; System.Data.Objects.ObjectResult&lt;'T&gt;" Usage="objectQuery.Execute mergeOption" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.GroupBy(System.String,System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GroupBy (keys As String, projection As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of DbDataRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;System::Data::Common::DbDataRecord ^&gt; ^ GroupBy(System::String ^ keys, System::String ^ projection, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.GroupBy : string * string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectQuery&lt;System.Data.Common.DbDataRecord&gt;" Usage="objectQuery.GroupBy (keys, projection, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -339,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Include(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Include (path As String) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Include(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.Include : string -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.Include path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -389,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Intersect(System.Data.Objects.ObjectQuery{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Intersect (query As ObjectQuery(Of T)) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Intersect(System::Data::Objects::ObjectQuery&lt;T&gt; ^ query);" />
+      <MemberSignature Language="F#" Value="member this.Intersect : System.Data.Objects.ObjectQuery&lt;'T&gt; -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.Intersect query" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -433,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery`1.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Data.Objects.ObjectQuery&lt;'T&gt;.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -473,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.OfType``1" />
       <MemberSignature Language="VB.NET" Value="Public Function OfType(Of TResultType) () As ObjectQuery(Of TResultType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; System::Data::Objects::ObjectQuery&lt;TResultType&gt; ^ OfType();" />
+      <MemberSignature Language="F#" Value="member this.OfType : unit -&gt; System.Data.Objects.ObjectQuery&lt;'ResultType&gt;" Usage="objectQuery.OfType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -508,6 +519,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.OrderBy(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function OrderBy (keys As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ OrderBy(System::String ^ keys, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.OrderBy : string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.OrderBy (keys, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -559,6 +571,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Select(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Select (projection As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of DbDataRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;System::Data::Common::DbDataRecord ^&gt; ^ Select(System::String ^ projection, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.Select : string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectQuery&lt;System.Data.Common.DbDataRecord&gt;" Usage="objectQuery.Select (projection, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -615,6 +628,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.SelectValue``1(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectValue(Of TResultType) (projection As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of TResultType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; System::Data::Objects::ObjectQuery&lt;TResultType&gt; ^ SelectValue(System::String ^ projection, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.SelectValue : string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectQuery&lt;'ResultType&gt;" Usage="objectQuery.SelectValue (projection, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -675,6 +689,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Skip(System.String,System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Skip (keys As String, count As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Skip(System::String ^ keys, System::String ^ count, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.Skip : string * string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.Skip (keys, count, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -762,6 +777,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Top(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Top (count As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Top(System::String ^ count, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.Top : string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.Top (count, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -822,6 +838,7 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Union(System.Data.Objects.ObjectQuery{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Union (query As ObjectQuery(Of T)) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Union(System::Data::Objects::ObjectQuery&lt;T&gt; ^ query);" />
+      <MemberSignature Language="F#" Value="member this.Union : System.Data.Objects.ObjectQuery&lt;'T&gt; -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.Union query" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -880,6 +897,7 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.UnionAll(System.Data.Objects.ObjectQuery{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function UnionAll (query As ObjectQuery(Of T)) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ UnionAll(System::Data::Objects::ObjectQuery&lt;T&gt; ^ query);" />
+      <MemberSignature Language="F#" Value="member this.UnionAll : System.Data.Objects.ObjectQuery&lt;'T&gt; -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.UnionAll query" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -938,6 +956,7 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Where(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Where (predicate As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Where(System::String ^ predicate, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.Where : string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectQuery.Where (predicate, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

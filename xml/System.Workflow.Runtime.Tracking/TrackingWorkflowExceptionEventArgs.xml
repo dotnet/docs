@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingWorkflowExceptionEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingWorkflowExceptionEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type TrackingWorkflowExceptionEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.ContextGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ContextGuid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextGuid : Guid" Usage="System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.ContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.CurrentActivityPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentActivityPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentActivityPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentActivityPath : string" Usage="System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.CurrentActivityPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.OriginalActivityPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalActivityPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OriginalActivityPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalActivityPath : string" Usage="System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.OriginalActivityPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.ParentContextGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentContextGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ParentContextGuid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentContextGuid : Guid" Usage="System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.ParentContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

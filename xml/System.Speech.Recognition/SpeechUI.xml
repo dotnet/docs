@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SpeechUI" />
   <TypeSignature Language="VB.NET" Value="Public Class SpeechUI" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpeechUI" />
+  <TypeSignature Language="F#" Value="type SpeechUI = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@ delegate(object sender, SpeechRecognizedEventArgs eventArgs)
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SpeechUI.SendTextFeedback(System.Speech.Recognition.RecognitionResult,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SendTextFeedback (result As RecognitionResult, feedback As String, isSuccessfulAction As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SendTextFeedback(System::Speech::Recognition::RecognitionResult ^ result, System::String ^ feedback, bool isSuccessfulAction);" />
+      <MemberSignature Language="F#" Value="static member SendTextFeedback : System.Speech.Recognition.RecognitionResult * string * bool -&gt; bool" Usage="System.Speech.Recognition.SpeechUI.SendTextFeedback (result, feedback, isSuccessfulAction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

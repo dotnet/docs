@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ResponseFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResponseFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class ResponseFormat" />
+  <TypeSignature Language="F#" Value="type ResponseFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Script.Services.ResponseFormat.Json" />
       <MemberSignature Language="VB.NET" Value="Json" />
       <MemberSignature Language="C++ CLI" Value="Json" />
+      <MemberSignature Language="F#" Value="Json = 0" Usage="System.Web.Script.Services.ResponseFormat.Json" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Script.Services.ResponseFormat.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 1" Usage="System.Web.Script.Services.ResponseFormat.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

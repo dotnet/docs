@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IInputChannel" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInputChannel&#xA;Implements IChannel" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInputChannel : System::ServiceModel::Channels::IChannel" />
+  <TypeSignature Language="F#" Value="type IInputChannel = interface&#xA;    interface IChannel&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.BeginReceive(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginReceive : AsyncCallback * obj -&gt; IAsyncResult" Usage="iInputChannel.BeginReceive (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.BeginReceive(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginReceive : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iInputChannel.BeginReceive (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.BeginTryReceive(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTryReceive (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTryReceive(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTryReceive : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iInputChannel.BeginTryReceive (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginWaitForMessage (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWaitForMessage(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginWaitForMessage : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iInputChannel.BeginWaitForMessage (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -281,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.EndReceive(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndReceive (result As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndReceive(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndReceive : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iInputChannel.EndReceive result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -321,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.EndTryReceive(System.IAsyncResult,System.ServiceModel.Channels.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndTryReceive (result As IAsyncResult, ByRef message As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndTryReceive(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::ServiceModel::Channels::Message ^ % message);" />
+      <MemberSignature Language="F#" Value="abstract member EndTryReceive : IAsyncResult *  -&gt; bool" Usage="iInputChannel.EndTryReceive (result, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -364,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.EndWaitForMessage(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndWaitForMessage (result As IAsyncResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndWaitForMessage(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndWaitForMessage : IAsyncResult -&gt; bool" Usage="iInputChannel.EndWaitForMessage result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -405,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IInputChannel.LocalAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalAddress As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ LocalAddress { System::ServiceModel::EndpointAddress ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalAddress : System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.Channels.IInputChannel.LocalAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -474,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.Receive" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive () As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ Receive();" />
+      <MemberSignature Language="F#" Value="abstract member Receive : unit -&gt; System.ServiceModel.Channels.Message" Usage="iInputChannel.Receive " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -522,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.Receive(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive (timeout As TimeSpan) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ Receive(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Receive : TimeSpan -&gt; System.ServiceModel.Channels.Message" Usage="iInputChannel.Receive timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -575,6 +586,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.TryReceive(System.TimeSpan,System.ServiceModel.Channels.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReceive (timeout As TimeSpan, ByRef message As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryReceive(TimeSpan timeout, [Runtime::InteropServices::Out] System::ServiceModel::Channels::Message ^ % message);" />
+      <MemberSignature Language="F#" Value="abstract member TryReceive : TimeSpan *  -&gt; bool" Usage="iInputChannel.TryReceive (timeout, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -627,6 +639,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.WaitForMessage(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitForMessage (timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WaitForMessage(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member WaitForMessage : TimeSpan -&gt; bool" Usage="iInputChannel.WaitForMessage timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

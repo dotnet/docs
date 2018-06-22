@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Globalization.ResourceFileStringLocalizerProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourceFileStringLocalizerProvider&#xA;Implements IStringLocalizerProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceFileStringLocalizerProvider sealed : System::Web::Globalization::IStringLocalizerProvider" />
+  <TypeSignature Language="F#" Value="type ResourceFileStringLocalizerProvider = class&#xA;    interface IStringLocalizerProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Globalization.ResourceFileStringLocalizerProvider.GetLocalizedString(System.Globalization.CultureInfo,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalizedString (culture As CultureInfo, name As String, ParamArray arguments As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetLocalizedString(System::Globalization::CultureInfo ^ culture, System::String ^ name, ... cli::array &lt;System::Object ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalizedString : System.Globalization.CultureInfo * string * obj[] -&gt; string&#xA;override this.GetLocalizedString : System.Globalization.CultureInfo * string * obj[] -&gt; string" Usage="resourceFileStringLocalizerProvider.GetLocalizedString (culture, name, arguments)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Globalization.IStringLocalizerProvider.GetLocalizedString(System.Globalization.CultureInfo,System.String,System.Object[])</InterfaceMember>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Globalization.ResourceFileStringLocalizerProvider.ResourceFileName" />
       <MemberSignature Language="VB.NET" Value="Public Const ResourceFileName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ResourceFileName;" />
+      <MemberSignature Language="F#" Value="val mutable ResourceFileName : string" Usage="System.Web.Globalization.ResourceFileStringLocalizerProvider.ResourceFileName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

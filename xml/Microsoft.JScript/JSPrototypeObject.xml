@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSPrototypeObject" />
   <TypeSignature Language="VB.NET" Value="Public Class JSPrototypeObject&#xA;Inherits JSObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class JSPrototypeObject : Microsoft::JScript::JSObject" />
+  <TypeSignature Language="F#" Value="type JSPrototypeObject = class&#xA;    inherit JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSPrototypeObject.constructor" />
       <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.JSPrototypeObject.constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

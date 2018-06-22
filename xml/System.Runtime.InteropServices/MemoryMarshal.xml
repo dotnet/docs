@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.MemoryMarshal" />
   <TypeSignature Language="VB.NET" Value="Public Class MemoryMarshal" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemoryMarshal abstract sealed" />
+  <TypeSignature Language="F#" Value="type MemoryMarshal = class" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsBytes``1(System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsBytes(Of T As Structure) (span As ReadOnlySpan(Of T)) As ReadOnlySpan(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static ReadOnlySpan&lt;System::Byte&gt; AsBytes(ReadOnlySpan&lt;T&gt; span);" />
+      <MemberSignature Language="F#" Value="static member AsBytes : ReadOnlySpan&lt;'T (requires 'T : struct)&gt; -&gt; ReadOnlySpan&lt;byte&gt; (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.AsBytes span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsBytes``1(System.Span{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsBytes(Of T As Structure) (span As Span(Of T)) As Span(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static Span&lt;System::Byte&gt; AsBytes(Span&lt;T&gt; span);" />
+      <MemberSignature Language="F#" Value="static member AsBytes : Span&lt;'T (requires 'T : struct)&gt; -&gt; Span&lt;byte&gt; (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.AsBytes span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsMemory``1(System.ReadOnlyMemory{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsMemory(Of T) (memory As ReadOnlyMemory(Of T)) As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static Memory&lt;T&gt; AsMemory(ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : ReadOnlyMemory&lt;'T&gt; -&gt; Memory&lt;'T&gt;" Usage="System.Runtime.InteropServices.MemoryMarshal.AsMemory memory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.Cast``2(System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cast(Of TFrom As Structure, TTo As Structure) (span As ReadOnlySpan(Of TFrom)) As ReadOnlySpan(Of TTo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TFrom, typename TTo&gt;&#xA; where TFrom : value class where TTo : value class static ReadOnlySpan&lt;TTo&gt; Cast(ReadOnlySpan&lt;TFrom&gt; span);" />
+      <MemberSignature Language="F#" Value="static member Cast : ReadOnlySpan&lt;'From (requires 'From : struct)&gt; -&gt; ReadOnlySpan&lt;'o (requires 'o : struct)&gt; (requires 'From : struct and 'o : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.Cast span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.Cast``2(System.Span{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cast(Of TFrom As Structure, TTo As Structure) (span As Span(Of TFrom)) As Span(Of TTo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TFrom, typename TTo&gt;&#xA; where TFrom : value class where TTo : value class static Span&lt;TTo&gt; Cast(Span&lt;TFrom&gt; span);" />
+      <MemberSignature Language="F#" Value="static member Cast : Span&lt;'From (requires 'From : struct)&gt; -&gt; Span&lt;'o (requires 'o : struct)&gt; (requires 'From : struct and 'o : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.Cast span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.CreateFromPinnedArray``1(``0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromPinnedArray(Of T) (array As T(), start As Integer, length As Integer) As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static Memory&lt;T&gt; CreateFromPinnedArray(cli::array &lt;T&gt; ^ array, int start, int length);" />
+      <MemberSignature Language="F#" Value="static member CreateFromPinnedArray : 'T[] * int * int -&gt; Memory&lt;'T&gt;" Usage="System.Runtime.InteropServices.MemoryMarshal.CreateFromPinnedArray (array, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.CreateReadOnlySpan``1(``0@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReadOnlySpan(Of T) (ByRef reference As T, length As Integer) As ReadOnlySpan(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static ReadOnlySpan&lt;T&gt; CreateReadOnlySpan(T % reference, int length);" />
+      <MemberSignature Language="F#" Value="static member CreateReadOnlySpan :  * int -&gt; ReadOnlySpan&lt;'T&gt;" Usage="System.Runtime.InteropServices.MemoryMarshal.CreateReadOnlySpan (reference, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -272,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.CreateSpan``1(``0@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSpan(Of T) (ByRef reference As T, length As Integer) As Span(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static Span&lt;T&gt; CreateSpan(T % reference, int length);" />
+      <MemberSignature Language="F#" Value="static member CreateSpan :  * int -&gt; Span&lt;'T&gt;" Usage="System.Runtime.InteropServices.MemoryMarshal.CreateSpan (reference, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReference(Of T) (span As ReadOnlySpan(Of T)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % GetReference(ReadOnlySpan&lt;T&gt; span);" />
+      <MemberSignature Language="F#" Value="static member GetReference : ReadOnlySpan&lt;'T&gt; -&gt; " Usage="System.Runtime.InteropServices.MemoryMarshal.GetReference span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -332,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.Span{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReference(Of T) (span As Span(Of T)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % GetReference(Span&lt;T&gt; span);" />
+      <MemberSignature Language="F#" Value="static member GetReference : Span&lt;'T&gt; -&gt; " Usage="System.Runtime.InteropServices.MemoryMarshal.GetReference span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.Read``1(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read(Of T As Structure) (source As ReadOnlySpan(Of Byte)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static T Read(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member Read : ReadOnlySpan&lt;byte&gt; -&gt; 'T (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.Read source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -396,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.ToEnumerable``1(System.ReadOnlyMemory{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToEnumerable(Of T) (memory As ReadOnlyMemory(Of T)) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ ToEnumerable(ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberSignature Language="F#" Value="static member ToEnumerable : ReadOnlyMemory&lt;'T&gt; -&gt; seq&lt;'T&gt;" Usage="System.Runtime.InteropServices.MemoryMarshal.ToEnumerable memory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -425,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetArray``1(System.ReadOnlyMemory{``0},System.ArraySegment{``0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetArray(Of T) (memory As ReadOnlyMemory(Of T), ByRef segment As ArraySegment(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetArray(ReadOnlyMemory&lt;T&gt; memory, [Runtime::InteropServices::Out] ArraySegment&lt;T&gt; % segment);" />
+      <MemberSignature Language="F#" Value="static member TryGetArray : ReadOnlyMemory&lt;'T&gt; *  -&gt; bool" Usage="System.Runtime.InteropServices.MemoryMarshal.TryGetArray (memory, segment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -456,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetMemoryManager``2(System.ReadOnlyMemory{``0},``1@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetMemoryManager(Of T, TManager) (memory As ReadOnlyMemory(Of T), ByRef manager As TManager) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TManager&gt;&#xA; where TManager : System::Buffers::MemoryManager&lt;T&gt; static bool TryGetMemoryManager(ReadOnlyMemory&lt;T&gt; memory, [Runtime::InteropServices::Out] TManager % manager);" />
+      <MemberSignature Language="F#" Value="static member TryGetMemoryManager : ReadOnlyMemory&lt;'T&gt; *  -&gt; bool (requires 'Manager :&gt; System.Buffers.MemoryManager&lt;'T&gt;)" Usage="System.Runtime.InteropServices.MemoryMarshal.TryGetMemoryManager (memory, manager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -493,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetMemoryManager``2(System.ReadOnlyMemory{``0},``1@,System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetMemoryManager(Of T, TManager) (memory As ReadOnlyMemory(Of T), ByRef manager As TManager, ByRef start As Integer, ByRef length As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TManager&gt;&#xA; where TManager : System::Buffers::MemoryManager&lt;T&gt; static bool TryGetMemoryManager(ReadOnlyMemory&lt;T&gt; memory, [Runtime::InteropServices::Out] TManager % manager, [Runtime::InteropServices::Out] int % start, [Runtime::InteropServices::Out] int % length);" />
+      <MemberSignature Language="F#" Value="static member TryGetMemoryManager : ReadOnlyMemory&lt;'T&gt; *  *  *  -&gt; bool (requires 'Manager :&gt; System.Buffers.MemoryManager&lt;'T&gt;)" Usage="System.Runtime.InteropServices.MemoryMarshal.TryGetMemoryManager (memory, manager, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -534,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryGetString(System.ReadOnlyMemory{System.Char},System.String@,System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetString (memory As ReadOnlyMemory(Of Char), ByRef text As String, ByRef start As Integer, ByRef length As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetString(ReadOnlyMemory&lt;char&gt; memory, [Runtime::InteropServices::Out] System::String ^ % text, [Runtime::InteropServices::Out] int % start, [Runtime::InteropServices::Out] int % length);" />
+      <MemberSignature Language="F#" Value="static member TryGetString : ReadOnlyMemory&lt;char&gt; *  *  *  -&gt; bool" Usage="System.Runtime.InteropServices.MemoryMarshal.TryGetString (memory, text, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -565,6 +582,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryRead``1(System.ReadOnlySpan{System.Byte},``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryRead(Of T As Structure) (source As ReadOnlySpan(Of Byte), ByRef value As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool TryRead(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] T % value);" />
+      <MemberSignature Language="F#" Value="static member TryRead : ReadOnlySpan&lt;byte&gt; *  -&gt; bool (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.TryRead (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -602,6 +620,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.TryWrite``1(System.Span{System.Byte},``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWrite(Of T As Structure) (destination As Span(Of Byte), ByRef value As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool TryWrite(Span&lt;System::Byte&gt; destination, T % value);" />
+      <MemberSignature Language="F#" Value="static member TryWrite : Span&lt;byte&gt; *  -&gt; bool (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.TryWrite (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -639,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.Write``1(System.Span{System.Byte},``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write(Of T As Structure) (destination As Span(Of Byte), ByRef value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static void Write(Span&lt;System::Byte&gt; destination, T % value);" />
+      <MemberSignature Language="F#" Value="static member Write : Span&lt;byte&gt; *  -&gt; unit (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.Write (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

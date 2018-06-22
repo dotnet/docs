@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerLoader" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerLoader abstract" />
+  <TypeSignature Language="F#" Value="type DesignerLoader = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerLoader.BeginLoad(System.ComponentModel.Design.Serialization.IDesignerLoaderHost)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginLoad (host As IDesignerLoaderHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginLoad(System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member BeginLoad : System.ComponentModel.Design.Serialization.IDesignerLoaderHost -&gt; unit" Usage="designerLoader.BeginLoad host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerLoader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit" Usage="designerLoader.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerLoader.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="designerLoader.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerLoader.Loading" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Loading As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Loading { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Loading : bool" Usage="System.ComponentModel.Design.Serialization.DesignerLoader.Loading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

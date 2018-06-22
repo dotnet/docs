@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.MembershipSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MembershipSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MembershipSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type MembershipSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MembershipSection.DefaultProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProvider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Web.Configuration.MembershipSection.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MembershipSection.HashAlgorithmType" />
       <MemberSignature Language="VB.NET" Value="Public Property HashAlgorithmType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashAlgorithmType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithmType : string with get, set" Usage="System.Web.Configuration.MembershipSection.HashAlgorithmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MembershipSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.MembershipSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MembershipSection.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.MembershipSection.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -240,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MembershipSection.UserIsOnlineTimeWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property UserIsOnlineTimeWindow As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan UserIsOnlineTimeWindow { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.UserIsOnlineTimeWindow : TimeSpan with get, set" Usage="System.Web.Configuration.MembershipSection.UserIsOnlineTimeWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TreeNodeStyleCollection&#xA;Inherits StateManagedCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class TreeNodeStyleCollection sealed : System::Web::UI::StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type TreeNodeStyleCollection = class&#xA;    inherit StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.Add(System.Web.UI.WebControls.TreeNodeStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (style As TreeNodeStyle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::TreeNodeStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.TreeNodeStyle -&gt; int" Usage="treeNodeStyleCollection.Add style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.Contains(System.Web.UI.WebControls.TreeNodeStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (style As TreeNodeStyle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::TreeNodeStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.TreeNodeStyle -&gt; bool" Usage="treeNodeStyleCollection.Contains style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.CopyTo(System.Web.UI.WebControls.TreeNodeStyle[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (styleArray As TreeNodeStyle(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::TreeNodeStyle ^&gt; ^ styleArray, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.UI.WebControls.TreeNodeStyle[] * int -&gt; unit" Usage="treeNodeStyleCollection.CopyTo (styleArray, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.CreateKnownType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="treeNodeStyleCollection.CreateKnownType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.GetKnownTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="treeNodeStyleCollection.GetKnownTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.IndexOf(System.Web.UI.WebControls.TreeNodeStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (style As TreeNodeStyle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::TreeNodeStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.TreeNodeStyle -&gt; int" Usage="treeNodeStyleCollection.IndexOf style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.Insert(System.Int32,System.Web.UI.WebControls.TreeNodeStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, style As TreeNodeStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::TreeNodeStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.TreeNodeStyle -&gt; unit" Usage="treeNodeStyleCollection.Insert (index, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeStyleCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(i As Integer) As TreeNodeStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TreeNodeStyle ^ default[int] { System::Web::UI::WebControls::TreeNodeStyle ^ get(int i); void set(int i, System::Web::UI::WebControls::TreeNodeStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.TreeNodeStyle with get, set" Usage="System.Web.UI.WebControls.TreeNodeStyleCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -304,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.OnInsert : int * obj -&gt; unit" Usage="treeNodeStyleCollection.OnInsert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.Remove(System.Web.UI.WebControls.TreeNodeStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (style As TreeNodeStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::TreeNodeStyle ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.TreeNodeStyle -&gt; unit" Usage="treeNodeStyleCollection.Remove style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -366,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="treeNodeStyleCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -403,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyleCollection.SetDirtyObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="treeNodeStyleCollection.SetDirtyObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventRecordWrittenEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventRecordWrittenEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type EventRecordWrittenEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.EventException" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventException As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ EventException { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventException : Exception" Usage="System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.EventException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.EventRecord" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventRecord As EventRecord" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventRecord ^ EventRecord { System::Diagnostics::Eventing::Reader::EventRecord ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventRecord : System.Diagnostics.Eventing.Reader.EventRecord" Usage="System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.EventRecord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

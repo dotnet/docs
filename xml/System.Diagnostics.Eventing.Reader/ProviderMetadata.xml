@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class ProviderMetadata&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProviderMetadata : IDisposable" />
+  <TypeSignature Language="F#" Value="type ProviderMetadata = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderMetadata(System::String ^ providerName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.ProviderMetadata : string -&gt; System.Diagnostics.Eventing.Reader.ProviderMetadata" Usage="new System.Diagnostics.Eventing.Reader.ProviderMetadata providerName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor(System.String,System.Diagnostics.Eventing.Reader.EventLogSession,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String, session As EventLogSession, targetCultureInfo As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderMetadata(System::String ^ providerName, System::Diagnostics::Eventing::Reader::EventLogSession ^ session, System::Globalization::CultureInfo ^ targetCultureInfo);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.ProviderMetadata : string * System.Diagnostics.Eventing.Reader.EventLogSession * System.Globalization.CultureInfo -&gt; System.Diagnostics.Eventing.Reader.ProviderMetadata" Usage="new System.Diagnostics.Eventing.Reader.ProviderMetadata (providerName, session, targetCultureInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="providerMetadata.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="providerMetadata.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Events" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Events As IEnumerable(Of EventMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventMetadata ^&gt; ^ Events { System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventMetadata ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Events : seq&lt;System.Diagnostics.Eventing.Reader.EventMetadata&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Events" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.HelpLink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpLink As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ HelpLink { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpLink : Uri" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.HelpLink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -238,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Keywords" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keywords As IList(Of EventKeyword)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ Keywords { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keywords : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventKeyword&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -258,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Levels" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Levels As IList(Of EventLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLevel ^&gt; ^ Levels { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLevel ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Levels : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventLevel&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Levels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -278,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.LogLinks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogLinks As IList(Of EventLogLink)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLogLink ^&gt; ^ LogLinks { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLogLink ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogLinks : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventLogLink&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.LogLinks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.MessageFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageFilePath : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.MessageFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -323,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -343,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Opcodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Opcodes As IList(Of EventOpcode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventOpcode ^&gt; ^ Opcodes { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventOpcode ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Opcodes : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventOpcode&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Opcodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -363,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.ParameterFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterFilePath : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.ParameterFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -383,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.ResourceFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceFilePath : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.ResourceFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -403,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Tasks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tasks As IList(Of EventTask)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventTask ^&gt; ^ Tasks { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventTask ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tasks : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventTask&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Tasks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

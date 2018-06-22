@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlNodeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XamlNodeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XamlNodeType" />
+  <TypeSignature Language="F#" Value="type XamlNodeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.EndMember" />
       <MemberSignature Language="VB.NET" Value="EndMember" />
       <MemberSignature Language="C++ CLI" Value="EndMember" />
+      <MemberSignature Language="F#" Value="EndMember = 5" Usage="System.Xaml.XamlNodeType.EndMember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.EndObject" />
       <MemberSignature Language="VB.NET" Value="EndObject" />
       <MemberSignature Language="C++ CLI" Value="EndObject" />
+      <MemberSignature Language="F#" Value="EndObject = 3" Usage="System.Xaml.XamlNodeType.EndObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.GetObject" />
       <MemberSignature Language="VB.NET" Value="GetObject" />
       <MemberSignature Language="C++ CLI" Value="GetObject" />
+      <MemberSignature Language="F#" Value="GetObject = 2" Usage="System.Xaml.XamlNodeType.GetObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.NamespaceDeclaration" />
       <MemberSignature Language="VB.NET" Value="NamespaceDeclaration" />
       <MemberSignature Language="C++ CLI" Value="NamespaceDeclaration" />
+      <MemberSignature Language="F#" Value="NamespaceDeclaration = 7" Usage="System.Xaml.XamlNodeType.NamespaceDeclaration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -100,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xaml.XamlNodeType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -119,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.StartMember" />
       <MemberSignature Language="VB.NET" Value="StartMember" />
       <MemberSignature Language="C++ CLI" Value="StartMember" />
+      <MemberSignature Language="F#" Value="StartMember = 4" Usage="System.Xaml.XamlNodeType.StartMember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -138,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.StartObject" />
       <MemberSignature Language="VB.NET" Value="StartObject" />
       <MemberSignature Language="C++ CLI" Value="StartObject" />
+      <MemberSignature Language="F#" Value="StartObject = 1" Usage="System.Xaml.XamlNodeType.StartObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -157,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.Value" />
       <MemberSignature Language="VB.NET" Value="Value" />
       <MemberSignature Language="C++ CLI" Value="Value" />
+      <MemberSignature Language="F#" Value="Value = 6" Usage="System.Xaml.XamlNodeType.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

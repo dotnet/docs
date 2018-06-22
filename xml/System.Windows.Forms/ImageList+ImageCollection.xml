@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImageList.ImageCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageList.ImageCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ImageList::ImageCollection sealed : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type ImageList.ImageCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.Add(System.Drawing.Icon)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As Icon)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Drawing::Icon ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Drawing.Icon -&gt; unit" Usage="imageCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.Add(System.Drawing.Image)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Drawing::Image ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Drawing.Image -&gt; unit" Usage="imageCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.Add(System.Drawing.Image,System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As Image, transparentColor As Color) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Drawing::Image ^ value, System::Drawing::Color transparentColor);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Drawing.Image * System.Drawing.Color -&gt; int" Usage="imageCollection.Add (value, transparentColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, class System.Drawing.Icon icon) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.Add(System.String,System.Drawing.Icon)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::Drawing::Icon ^ icon);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Drawing.Icon -&gt; unit" Usage="imageCollection.Add (key, icon)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.Add(System.String,System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Drawing.Image -&gt; unit" Usage="imageCollection.Add (key, image)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.AddRange(System.Drawing.Image[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (images As Image())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Drawing::Image ^&gt; ^ images);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Drawing.Image[] -&gt; unit" Usage="imageCollection.AddRange images" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.AddStrip(System.Drawing.Image)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddStrip (value As Image) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int AddStrip(System::Drawing::Image ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddStrip : System.Drawing.Image -&gt; int" Usage="imageCollection.AddStrip value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="imageCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -331,6 +340,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.Contains(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Drawing.Image -&gt; bool" Usage="imageCollection.Contains image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -370,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.ContainsKey : string -&gt; bool" Usage="imageCollection.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -402,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.ImageList.ImageCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -438,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Empty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Empty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : bool" Usage="System.Windows.Forms.ImageList.ImageCollection.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -466,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="imageCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -489,6 +503,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.IndexOf(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Drawing.Image -&gt; int" Usage="imageCollection.IndexOf image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -526,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.IndexOfKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOfKey (key As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.IndexOfKey : string -&gt; int" Usage="imageCollection.IndexOfKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -559,6 +575,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.ImageList.ImageCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -592,6 +609,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ default[int] { System::Drawing::Image ^ get(int index); void set(int index, System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Drawing.Image with get, set" Usage="System.Windows.Forms.ImageList.ImageCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -636,6 +654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ default[System::String ^] { System::Drawing::Image ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Drawing.Image" Usage="System.Windows.Forms.ImageList.ImageCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -669,6 +688,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Keys { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.StringCollection" Usage="System.Windows.Forms.ImageList.ImageCollection.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -697,6 +717,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.Remove(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Drawing.Image -&gt; unit" Usage="imageCollection.Remove image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -735,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="imageCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -769,6 +791,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.RemoveByKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveByKey (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveByKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.RemoveByKey : string -&gt; unit" Usage="imageCollection.RemoveByKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -799,6 +822,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ImageCollection.SetKeyName(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetKeyName (index As Integer, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetKeyName(int index, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.SetKeyName : int * string -&gt; unit" Usage="imageCollection.SetKeyName (index, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -871,6 +895,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ImageList.ImageCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -895,6 +920,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ImageList.ImageCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1041,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ImageList.ImageCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1065,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ImageList.ImageCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

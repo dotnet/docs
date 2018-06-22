@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.ISimpleTransactionSuperior" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISimpleTransactionSuperior&#xA;Implements ITransactionPromoter" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISimpleTransactionSuperior : System::Transactions::ITransactionPromoter" />
+  <TypeSignature Language="F#" Value="type ISimpleTransactionSuperior = interface&#xA;    interface ITransactionPromoter" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.ISimpleTransactionSuperior.Rollback" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rollback ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rollback();" />
+      <MemberSignature Language="F#" Value="abstract member Rollback : unit -&gt; unit" Usage="iSimpleTransactionSuperior.Rollback " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

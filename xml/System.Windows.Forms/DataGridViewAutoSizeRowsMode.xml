@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeRowsMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewAutoSizeRowsMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewAutoSizeRowsMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewAutoSizeRowsMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells" />
       <MemberSignature Language="VB.NET" Value="AllCells" />
       <MemberSignature Language="C++ CLI" Value="AllCells" />
+      <MemberSignature Language="F#" Value="AllCells = 7" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders" />
       <MemberSignature Language="VB.NET" Value="AllCellsExceptHeaders" />
       <MemberSignature Language="C++ CLI" Value="AllCellsExceptHeaders" />
+      <MemberSignature Language="F#" Value="AllCellsExceptHeaders = 6" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders" />
       <MemberSignature Language="VB.NET" Value="AllHeaders" />
       <MemberSignature Language="C++ CLI" Value="AllHeaders" />
+      <MemberSignature Language="F#" Value="AllHeaders = 5" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells" />
       <MemberSignature Language="VB.NET" Value="DisplayedCells" />
       <MemberSignature Language="C++ CLI" Value="DisplayedCells" />
+      <MemberSignature Language="F#" Value="DisplayedCells = 11" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders" />
       <MemberSignature Language="VB.NET" Value="DisplayedCellsExceptHeaders" />
       <MemberSignature Language="C++ CLI" Value="DisplayedCellsExceptHeaders" />
+      <MemberSignature Language="F#" Value="DisplayedCellsExceptHeaders = 10" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders" />
       <MemberSignature Language="VB.NET" Value="DisplayedHeaders" />
       <MemberSignature Language="C++ CLI" Value="DisplayedHeaders" />
+      <MemberSignature Language="F#" Value="DisplayedHeaders = 9" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PopupEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PopupEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PopupEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type PopupEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.IWin32Window associatedWindow, class System.Windows.Forms.Control associatedControl, bool isBalloon, valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PopupEventArgs.#ctor(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.Boolean,System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PopupEventArgs(System::Windows::Forms::IWin32Window ^ associatedWindow, System::Windows::Forms::Control ^ associatedControl, bool isBalloon, System::Drawing::Size size);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.PopupEventArgs : System.Windows.Forms.IWin32Window * System.Windows.Forms.Control * bool * System.Drawing.Size -&gt; System.Windows.Forms.PopupEventArgs" Usage="new System.Windows.Forms.PopupEventArgs (associatedWindow, associatedControl, isBalloon, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PopupEventArgs.AssociatedControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssociatedControl As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ AssociatedControl { System::Windows::Forms::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssociatedControl : System.Windows.Forms.Control" Usage="System.Windows.Forms.PopupEventArgs.AssociatedControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PopupEventArgs.AssociatedWindow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssociatedWindow As IWin32Window" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::IWin32Window ^ AssociatedWindow { System::Windows::Forms::IWin32Window ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssociatedWindow : System.Windows.Forms.IWin32Window" Usage="System.Windows.Forms.PopupEventArgs.AssociatedWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PopupEventArgs.IsBalloon" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBalloon As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBalloon { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBalloon : bool" Usage="System.Windows.Forms.PopupEventArgs.IsBalloon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PopupEventArgs.ToolTipSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size ToolTipSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.PopupEventArgs.ToolTipSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

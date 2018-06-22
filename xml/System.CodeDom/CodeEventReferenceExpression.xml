@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeEventReferenceExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeEventReferenceExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeEventReferenceExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeEventReferenceExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeEventReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, eventName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeEventReferenceExpression(System::CodeDom::CodeExpression ^ targetObject, System::String ^ eventName);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeEventReferenceExpression : System.CodeDom.CodeExpression * string -&gt; System.CodeDom.CodeEventReferenceExpression" Usage="new System.CodeDom.CodeEventReferenceExpression (targetObject, eventName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeEventReferenceExpression.EventName" />
       <MemberSignature Language="VB.NET" Value="Public Property EventName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EventName : string with get, set" Usage="System.CodeDom.CodeEventReferenceExpression.EventName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeEventReferenceExpression.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeEventReferenceExpression.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

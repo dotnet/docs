@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceException&#xA;Inherits InvalidOperationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceException sealed : InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type DataServiceException = class&#xA;    inherit InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.DataServiceException : string -&gt; System.Data.Services.DataServiceException" Usage="new System.Data.Services.DataServiceException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceException.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceException(int statusCode, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.DataServiceException : int * string -&gt; System.Data.Services.DataServiceException" Usage="new System.Data.Services.DataServiceException (statusCode, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataServiceException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.DataServiceException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.Services.DataServiceException" Usage="new System.Data.Services.DataServiceException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.DataServiceException : string * Exception -&gt; System.Data.Services.DataServiceException" Usage="new System.Data.Services.DataServiceException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceException.#ctor(System.Int32,System.String,System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As Integer, errorCode As String, message As String, messageXmlLang As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceException(int statusCode, System::String ^ errorCode, System::String ^ message, System::String ^ messageXmlLang, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.DataServiceException : int * string * string * string * Exception -&gt; System.Data.Services.DataServiceException" Usage="new System.Data.Services.DataServiceException (statusCode, errorCode, message, messageXmlLang, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorCode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : string" Usage="System.Data.Services.DataServiceException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="dataServiceException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceException.MessageLanguage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageLanguage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageLanguage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageLanguage : string" Usage="System.Data.Services.DataServiceException.MessageLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceException.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StatusCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : int" Usage="System.Data.Services.DataServiceException.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

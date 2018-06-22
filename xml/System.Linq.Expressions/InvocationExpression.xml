@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.InvocationExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvocationExpression&#xA;Inherits Expression&#xA;Implements IArgumentProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvocationExpression sealed : System::Linq::Expressions::Expression, System::Linq::Expressions::IArgumentProvider" />
+  <TypeSignature Language="F#" Value="type InvocationExpression = class&#xA;    inherit Expression&#xA;    interface IArgumentProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.InvocationExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="invocationExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As ReadOnlyCollection(Of Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ Arguments { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="System.Linq.Expressions.InvocationExpression.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.Expression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.InvocationExpression.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.InvocationExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.System#Linq#Expressions#IArgumentProvider#ArgumentCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ArgumentCount As Integer Implements IArgumentProvider.ArgumentCount" />
       <MemberSignature Language="C++ CLI" Value="property int System.Linq.Expressions.IArgumentProvider.ArgumentCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.Expressions.InvocationExpression.System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.Expressions.IArgumentProvider.ArgumentCount</InterfaceMember>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.InvocationExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.InvocationExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -304,6 +311,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.InvocationExpression Update(class System.Linq.Expressions.Expression expression, class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.Expression&gt; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.InvocationExpression.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::InvocationExpression ^ Update(System::Linq::Expressions::Expression ^ expression, System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.Expression * seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.InvocationExpression" Usage="invocationExpression.Update (expression, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

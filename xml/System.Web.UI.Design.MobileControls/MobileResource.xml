@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MobileControls.MobileResource" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MobileResource" />
   <TypeSignature Language="C++ CLI" Value="public ref class MobileResource sealed" />
+  <TypeSignature Language="F#" Value="type MobileResource = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.MobileResource.GetString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetString (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetString(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetString : string -&gt; string" Usage="System.Web.UI.Design.MobileControls.MobileResource.GetString name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

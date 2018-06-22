@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Tuple`8" />
   <TypeSignature Language="VB.NET" Value="Public Class Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest)&#xA;Implements IComparable, IStructuralComparable, IStructuralEquatable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename TRest&gt;&#xA;public ref class Tuple : IComparable, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt; = class&#xA;    interface IStructuralEquatable&#xA;    interface IStructuralComparable&#xA;    interface IComparable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5, item6 As T6, item7 As T7, rest As TRest)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Tuple(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7, TRest rest);" />
+      <MemberSignature Language="F#" Value="new Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt; : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7 * 'Rest -&gt; Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;" Usage="new System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt; (item1, item2, item3, item4, item5, item6, item7, rest)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -198,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple`8.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="tuple.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -258,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple`8.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="tuple.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -293,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.Item1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item1 As T1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T1 Item1 { T1 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item1 : 'T1" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.Item1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -346,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.Item2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item2 As T2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T2 Item2 { T2 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item2 : 'T2" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.Item2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -399,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.Item3" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item3 As T3" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T3 Item3 { T3 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item3 : 'T3" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.Item3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -452,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.Item4" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item4 As T4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T4 Item4 { T4 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item4 : 'T4" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.Item4" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -505,6 +513,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.Item5" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item5 As T5" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T5 Item5 { T5 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item5 : 'T5" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.Item5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -558,6 +567,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.Item6" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item6 As T6" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T6 Item6 { T6 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item6 : 'T6" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.Item6" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -611,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.Item7" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item7 As T7" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T7 Item7 { T7 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item7 : 'T7" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.Item7" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -664,6 +675,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.Rest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rest As TRest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TRest Rest { TRest get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rest : 'Rest" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.Rest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -994,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.System#Runtime#CompilerServices#ITuple#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As Object Implements ITuple.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.ITuple.Item[int] { System::Object ^ get(int index); };" />
+      <MemberSignature Language="F#" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.System.Runtime.CompilerServices.ITuple.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Item(System.Int32)</InterfaceMember>
@@ -1039,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="P:System.Tuple`8.System#Runtime#CompilerServices#ITuple#Length" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Length As Integer Implements ITuple.Length" />
       <MemberSignature Language="C++ CLI" Value="property int System.Runtime.CompilerServices.ITuple.Length { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Tuple&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'Rest&gt;.System.Runtime.CompilerServices.ITuple.Length" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Length</InterfaceMember>
@@ -1074,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple`8.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="tuple.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

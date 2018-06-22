@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.SearchType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SearchType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SearchType" />
+  <TypeSignature Language="F#" Value="type SearchType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.SearchType.Contains" />
       <MemberSignature Language="VB.NET" Value="Contains" />
       <MemberSignature Language="C++ CLI" Value="Contains" />
+      <MemberSignature Language="F#" Value="Contains = 0" Usage="System.Web.UI.WebControls.Expressions.SearchType.Contains" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.SearchType.EndsWith" />
       <MemberSignature Language="VB.NET" Value="EndsWith" />
       <MemberSignature Language="C++ CLI" Value="EndsWith" />
+      <MemberSignature Language="F#" Value="EndsWith = 2" Usage="System.Web.UI.WebControls.Expressions.SearchType.EndsWith" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.SearchType.StartsWith" />
       <MemberSignature Language="VB.NET" Value="StartsWith" />
       <MemberSignature Language="C++ CLI" Value="StartsWith" />
+      <MemberSignature Language="F#" Value="StartsWith = 1" Usage="System.Web.UI.WebControls.Expressions.SearchType.StartsWith" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

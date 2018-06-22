@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.CompiledExpressionInvoker" />
   <TypeSignature Language="VB.NET" Value="Public Class CompiledExpressionInvoker" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompiledExpressionInvoker" />
+  <TypeSignature Language="F#" Value="type CompiledExpressionInvoker = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.#ctor(System.Activities.Expressions.ITextExpression,System.Boolean,System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As ITextExpression, isReference As Boolean, metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompiledExpressionInvoker(System::Activities::Expressions::ITextExpression ^ expression, bool isReference, System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Expressions.CompiledExpressionInvoker : System.Activities.Expressions.ITextExpression * bool * System.Activities.CodeActivityMetadata -&gt; System.Activities.Expressions.CompiledExpressionInvoker" Usage="new System.Activities.Expressions.CompiledExpressionInvoker (expression, isReference, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.GetCompiledExpressionRoot(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompiledExpressionRoot (target As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetCompiledExpressionRoot(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetCompiledExpressionRoot : obj -&gt; obj" Usage="System.Activities.Expressions.CompiledExpressionInvoker.GetCompiledExpressionRoot target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.GetCompiledExpressionRootForImplementation(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompiledExpressionRootForImplementation (target As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetCompiledExpressionRootForImplementation(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetCompiledExpressionRootForImplementation : obj -&gt; obj" Usage="System.Activities.Expressions.CompiledExpressionInvoker.GetCompiledExpressionRootForImplementation target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeExpression(class System.Activities.ActivityContext activityContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.InvokeExpression(System.Activities.ActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeExpression(System::Activities::ActivityContext ^ activityContext);" />
+      <MemberSignature Language="F#" Value="member this.InvokeExpression : System.Activities.ActivityContext -&gt; obj" Usage="compiledExpressionInvoker.InvokeExpression activityContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.CompiledExpressionInvoker.IsStaticallyCompiled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStaticallyCompiled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStaticallyCompiled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsStaticallyCompiled : bool" Usage="System.Activities.Expressions.CompiledExpressionInvoker.IsStaticallyCompiled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.SetCompiledExpressionRoot(System.Object,System.Activities.XamlIntegration.ICompiledExpressionRoot)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCompiledExpressionRoot (target As Object, compiledExpressionRoot As ICompiledExpressionRoot)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCompiledExpressionRoot(System::Object ^ target, System::Activities::XamlIntegration::ICompiledExpressionRoot ^ compiledExpressionRoot);" />
+      <MemberSignature Language="F#" Value="static member SetCompiledExpressionRoot : obj * System.Activities.XamlIntegration.ICompiledExpressionRoot -&gt; unit" Usage="System.Activities.Expressions.CompiledExpressionInvoker.SetCompiledExpressionRoot (target, compiledExpressionRoot)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.SetCompiledExpressionRootForImplementation(System.Object,System.Activities.XamlIntegration.ICompiledExpressionRoot)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCompiledExpressionRootForImplementation (target As Object, compiledExpressionRoot As ICompiledExpressionRoot)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCompiledExpressionRootForImplementation(System::Object ^ target, System::Activities::XamlIntegration::ICompiledExpressionRoot ^ compiledExpressionRoot);" />
+      <MemberSignature Language="F#" Value="static member SetCompiledExpressionRootForImplementation : obj * System.Activities.XamlIntegration.ICompiledExpressionRoot -&gt; unit" Usage="System.Activities.Expressions.CompiledExpressionInvoker.SetCompiledExpressionRootForImplementation (target, compiledExpressionRoot)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

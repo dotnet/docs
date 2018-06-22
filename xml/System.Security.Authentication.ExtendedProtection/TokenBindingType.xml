@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.TokenBindingType" />
   <TypeSignature Language="VB.NET" Value="Public Enum TokenBindingType" />
   <TypeSignature Language="C++ CLI" Value="public enum class TokenBindingType" />
+  <TypeSignature Language="F#" Value="type TokenBindingType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.TokenBindingType.Provided" />
       <MemberSignature Language="VB.NET" Value="Provided" />
       <MemberSignature Language="C++ CLI" Value="Provided" />
+      <MemberSignature Language="F#" Value="Provided = 0" Usage="System.Security.Authentication.ExtendedProtection.TokenBindingType.Provided" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.TokenBindingType.Referred" />
       <MemberSignature Language="VB.NET" Value="Referred" />
       <MemberSignature Language="C++ CLI" Value="Referred" />
+      <MemberSignature Language="F#" Value="Referred = 1" Usage="System.Security.Authentication.ExtendedProtection.TokenBindingType.Referred" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

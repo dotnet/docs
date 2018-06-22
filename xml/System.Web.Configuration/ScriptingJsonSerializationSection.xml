@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingJsonSerializationSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptingJsonSerializationSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptingJsonSerializationSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type ScriptingJsonSerializationSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingJsonSerializationSection.Converters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Converters As ConvertersCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ConvertersCollection ^ Converters { System::Web::Configuration::ConvertersCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Converters : System.Web.Configuration.ConvertersCollection" Usage="System.Web.Configuration.ScriptingJsonSerializationSection.Converters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingJsonSerializationSection.MaxJsonLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxJsonLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxJsonLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxJsonLength : int with get, set" Usage="System.Web.Configuration.ScriptingJsonSerializationSection.MaxJsonLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingJsonSerializationSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ScriptingJsonSerializationSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingJsonSerializationSection.RecursionLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property RecursionLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RecursionLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RecursionLimit : int with get, set" Usage="System.Web.Configuration.ScriptingJsonSerializationSection.RecursionLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

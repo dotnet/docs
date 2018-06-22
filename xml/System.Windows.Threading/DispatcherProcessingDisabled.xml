@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherProcessingDisabled" />
   <TypeSignature Language="VB.NET" Value="Public Structure DispatcherProcessingDisabled&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public value class DispatcherProcessingDisabled : IDisposable" />
+  <TypeSignature Language="F#" Value="type DispatcherProcessingDisabled = struct&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherProcessingDisabled.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="dispatcherProcessingDisabled.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherProcessingDisabled.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dispatcherProcessingDisabled.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherProcessingDisabled.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dispatcherProcessingDisabled.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherProcessingDisabled.op_Equality(System.Windows.Threading.DispatcherProcessingDisabled,System.Windows.Threading.DispatcherProcessingDisabled)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As DispatcherProcessingDisabled, right As DispatcherProcessingDisabled) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Threading::DispatcherProcessingDisabled left, System::Windows::Threading::DispatcherProcessingDisabled right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Threading.DispatcherProcessingDisabled * System.Windows.Threading.DispatcherProcessingDisabled -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherProcessingDisabled.op_Inequality(System.Windows.Threading.DispatcherProcessingDisabled,System.Windows.Threading.DispatcherProcessingDisabled)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As DispatcherProcessingDisabled, right As DispatcherProcessingDisabled) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Threading::DispatcherProcessingDisabled left, System::Windows::Threading::DispatcherProcessingDisabled right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Threading.DispatcherProcessingDisabled * System.Windows.Threading.DispatcherProcessingDisabled -&gt; bool" Usage="System.Windows.Threading.DispatcherProcessingDisabled.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

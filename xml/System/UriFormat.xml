@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum UriFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class UriFormat" />
+  <TypeSignature Language="F#" Value="type UriFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriFormat.SafeUnescaped" />
       <MemberSignature Language="VB.NET" Value="SafeUnescaped" />
       <MemberSignature Language="C++ CLI" Value="SafeUnescaped" />
+      <MemberSignature Language="F#" Value="SafeUnescaped = 3" Usage="System.UriFormat.SafeUnescaped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriFormat.Unescaped" />
       <MemberSignature Language="VB.NET" Value="Unescaped" />
       <MemberSignature Language="C++ CLI" Value="Unescaped" />
+      <MemberSignature Language="F#" Value="Unescaped = 2" Usage="System.UriFormat.Unescaped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriFormat.UriEscaped" />
       <MemberSignature Language="VB.NET" Value="UriEscaped" />
       <MemberSignature Language="C++ CLI" Value="UriEscaped" />
+      <MemberSignature Language="F#" Value="UriEscaped = 1" Usage="System.UriFormat.UriEscaped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

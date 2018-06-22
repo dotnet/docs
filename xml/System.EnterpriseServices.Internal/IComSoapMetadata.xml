@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IComSoapMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComSoapMetadata" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComSoapMetadata" />
+  <TypeSignature Language="F#" Value="type IComSoapMetadata = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapMetadata.Generate(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Generate (SrcTypeLibFileName As String, OutPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Generate(System::String ^ SrcTypeLibFileName, System::String ^ OutPath);" />
+      <MemberSignature Language="F#" Value="abstract member Generate : string * string -&gt; string" Usage="iComSoapMetadata.Generate (SrcTypeLibFileName, OutPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateSigned (SrcTypeLibFileName As String, OutPath As String, InstallGac As Boolean, ByRef Error As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateSigned(System::String ^ SrcTypeLibFileName, System::String ^ OutPath, bool InstallGac, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateSigned : string * string * bool *  -&gt; string" Usage="iComSoapMetadata.GenerateSigned (SrcTypeLibFileName, OutPath, InstallGac, Error)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

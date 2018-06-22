@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlCommands" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataControlCommands" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataControlCommands sealed" />
+  <TypeSignature Language="F#" Value="type DataControlCommands = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.CancelCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const CancelCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ CancelCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable CancelCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.CancelCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.DeleteCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const DeleteCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ DeleteCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable DeleteCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.DeleteCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.EditCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const EditCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ EditCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable EditCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.EditCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.FirstPageCommandArgument" />
       <MemberSignature Language="VB.NET" Value="Public Const FirstPageCommandArgument As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ FirstPageCommandArgument;" />
+      <MemberSignature Language="F#" Value="val mutable FirstPageCommandArgument : string" Usage="System.Web.UI.WebControls.DataControlCommands.FirstPageCommandArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.InsertCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const InsertCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ InsertCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable InsertCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.InsertCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.LastPageCommandArgument" />
       <MemberSignature Language="VB.NET" Value="Public Const LastPageCommandArgument As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ LastPageCommandArgument;" />
+      <MemberSignature Language="F#" Value="val mutable LastPageCommandArgument : string" Usage="System.Web.UI.WebControls.DataControlCommands.LastPageCommandArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.NewCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const NewCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ NewCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable NewCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.NewCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument" />
       <MemberSignature Language="VB.NET" Value="Public Const NextPageCommandArgument As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ NextPageCommandArgument;" />
+      <MemberSignature Language="F#" Value="val mutable NextPageCommandArgument : string" Usage="System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,6 +212,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.PageCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const PageCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ PageCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable PageCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.PageCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument" />
       <MemberSignature Language="VB.NET" Value="Public Const PreviousPageCommandArgument As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ PreviousPageCommandArgument;" />
+      <MemberSignature Language="F#" Value="val mutable PreviousPageCommandArgument : string" Usage="System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.SelectCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const SelectCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SelectCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable SelectCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.SelectCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,6 +272,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.SortCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const SortCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SortCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable SortCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.SortCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.UpdateCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const UpdateCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ UpdateCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable UpdateCommandName : string" Usage="System.Web.UI.WebControls.DataControlCommands.UpdateCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

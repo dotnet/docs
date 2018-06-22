@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ICustomFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICustomFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICustomFactory" />
+  <TypeSignature Language="F#" Value="type ICustomFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomFactory.CreateInstance(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (serverType As Type) As MarshalByRefObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MarshalByRefObject ^ CreateInstance(Type ^ serverType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : Type -&gt; MarshalByRefObject" Usage="iCustomFactory.CreateInstance serverType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

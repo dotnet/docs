@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ViewState.WorkflowViewState" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowViewState" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowViewState abstract sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowViewState = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.WorkflowViewState.GetIdRef(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIdRef (instance As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetIdRef(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetIdRef : obj -&gt; string" Usage="System.Activities.Presentation.ViewState.WorkflowViewState.GetIdRef instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.WorkflowViewState.GetViewStateManager(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetViewStateManager (instance As Object) As ViewStateManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::ViewState::ViewStateManager ^ GetViewStateManager(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetViewStateManager : obj -&gt; System.Activities.Presentation.ViewState.ViewStateManager" Usage="System.Activities.Presentation.ViewState.WorkflowViewState.GetViewStateManager instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.ViewState.WorkflowViewState.IdRefProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IdRefProperty As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ IdRefProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IdRefProperty : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Presentation.ViewState.WorkflowViewState.IdRefProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.WorkflowViewState.SetIdRef(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIdRef (instance As Object, idRef As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIdRef(System::Object ^ instance, System::String ^ idRef);" />
+      <MemberSignature Language="F#" Value="static member SetIdRef : obj * string -&gt; unit" Usage="System.Activities.Presentation.ViewState.WorkflowViewState.SetIdRef (instance, idRef)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetViewStateManager(object instance, class System.Activities.Presentation.ViewState.ViewStateManager viewStateManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.WorkflowViewState.SetViewStateManager(System.Object,System.Activities.Presentation.ViewState.ViewStateManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetViewStateManager(System::Object ^ instance, System::Activities::Presentation::ViewState::ViewStateManager ^ viewStateManager);" />
+      <MemberSignature Language="F#" Value="static member SetViewStateManager : obj * System.Activities.Presentation.ViewState.ViewStateManager -&gt; unit" Usage="System.Activities.Presentation.ViewState.WorkflowViewState.SetViewStateManager (instance, viewStateManager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -139,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.ViewState.WorkflowViewState.ViewStateManagerProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewStateManagerProperty As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ ViewStateManagerProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewStateManagerProperty : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Presentation.ViewState.WorkflowViewState.ViewStateManagerProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

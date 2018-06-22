@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.ZipFileExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module ZipFileExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ZipFileExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type ZipFileExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateEntryFromFile (destination As ZipArchive, sourceFileName As String, entryName As String) As ZipArchiveEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Compression::ZipArchiveEntry ^ CreateEntryFromFile(System::IO::Compression::ZipArchive ^ destination, System::String ^ sourceFileName, System::String ^ entryName);" />
+      <MemberSignature Language="F#" Value="static member CreateEntryFromFile : System.IO.Compression.ZipArchive * string * string -&gt; System.IO.Compression.ZipArchiveEntry" Usage="System.IO.Compression.ZipFileExtensions.CreateEntryFromFile (destination, sourceFileName, entryName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -159,6 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Compression.ZipArchiveEntry CreateEntryFromFile(class System.IO.Compression.ZipArchive destination, string sourceFileName, string entryName, valuetype System.IO.Compression.CompressionLevel compressionLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String,System.IO.Compression.CompressionLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Compression::ZipArchiveEntry ^ CreateEntryFromFile(System::IO::Compression::ZipArchive ^ destination, System::String ^ sourceFileName, System::String ^ entryName, System::IO::Compression::CompressionLevel compressionLevel);" />
+      <MemberSignature Language="F#" Value="static member CreateEntryFromFile : System.IO.Compression.ZipArchive * string * string * System.IO.Compression.CompressionLevel -&gt; System.IO.Compression.ZipArchiveEntry" Usage="System.IO.Compression.ZipFileExtensions.CreateEntryFromFile (destination, sourceFileName, entryName, compressionLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -240,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFileExtensions.ExtractToDirectory(System.IO.Compression.ZipArchive,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ExtractToDirectory (source As ZipArchive, destinationDirectoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ExtractToDirectory(System::IO::Compression::ZipArchive ^ source, System::String ^ destinationDirectoryName);" />
+      <MemberSignature Language="F#" Value="static member ExtractToDirectory : System.IO.Compression.ZipArchive * string -&gt; unit" Usage="System.IO.Compression.ZipFileExtensions.ExtractToDirectory (source, destinationDirectoryName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -318,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFileExtensions.ExtractToDirectory(System.IO.Compression.ZipArchive,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ExtractToDirectory (source As ZipArchive, destinationDirectoryName As String, overwriteFiles As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ExtractToDirectory(System::IO::Compression::ZipArchive ^ source, System::String ^ destinationDirectoryName, bool overwriteFiles);" />
+      <MemberSignature Language="F#" Value="static member ExtractToDirectory : System.IO.Compression.ZipArchive * string * bool -&gt; unit" Usage="System.IO.Compression.ZipFileExtensions.ExtractToDirectory (source, destinationDirectoryName, overwriteFiles)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -356,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ExtractToFile (source As ZipArchiveEntry, destinationFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ExtractToFile(System::IO::Compression::ZipArchiveEntry ^ source, System::String ^ destinationFileName);" />
+      <MemberSignature Language="F#" Value="static member ExtractToFile : System.IO.Compression.ZipArchiveEntry * string -&gt; unit" Usage="System.IO.Compression.ZipFileExtensions.ExtractToFile (source, destinationFileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -448,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ExtractToFile (source As ZipArchiveEntry, destinationFileName As String, overwrite As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ExtractToFile(System::IO::Compression::ZipArchiveEntry ^ source, System::String ^ destinationFileName, bool overwrite);" />
+      <MemberSignature Language="F#" Value="static member ExtractToFile : System.IO.Compression.ZipArchiveEntry * string * bool -&gt; unit" Usage="System.IO.Compression.ZipFileExtensions.ExtractToFile (source, destinationFileName, overwrite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogConfiguration&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogConfiguration : IDisposable" />
+  <TypeSignature Language="F#" Value="type EventLogConfiguration = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (logName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogConfiguration(System::String ^ logName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogConfiguration : string -&gt; System.Diagnostics.Eventing.Reader.EventLogConfiguration" Usage="new System.Diagnostics.Eventing.Reader.EventLogConfiguration logName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String,System.Diagnostics.Eventing.Reader.EventLogSession)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (logName As String, session As EventLogSession)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogConfiguration(System::String ^ logName, System::Diagnostics::Eventing::Reader::EventLogSession ^ session);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogConfiguration : string * System.Diagnostics.Eventing.Reader.EventLogSession -&gt; System.Diagnostics.Eventing.Reader.EventLogConfiguration" Usage="new System.Diagnostics.Eventing.Reader.EventLogConfiguration (logName, session)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventLogConfiguration.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eventLogConfiguration.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.IsClassicLog" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClassicLog As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClassicLog { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClassicLog : bool" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.IsClassicLog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Property LogFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogFilePath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LogFilePath : string with get, set" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -230,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogIsolation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogIsolation As EventLogIsolation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLogIsolation LogIsolation { System::Diagnostics::Eventing::Reader::EventLogIsolation get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogIsolation : System.Diagnostics.Eventing.Reader.EventLogIsolation" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogIsolation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -250,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogMode" />
       <MemberSignature Language="VB.NET" Value="Public Property LogMode As EventLogMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLogMode LogMode { System::Diagnostics::Eventing::Reader::EventLogMode get(); void set(System::Diagnostics::Eventing::Reader::EventLogMode value); };" />
+      <MemberSignature Language="F#" Value="member this.LogMode : System.Diagnostics.Eventing.Reader.EventLogMode with get, set" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -277,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -297,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogType As EventLogType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLogType LogType { System::Diagnostics::Eventing::Reader::EventLogType get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogType : System.Diagnostics.Eventing.Reader.EventLogType" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -317,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.MaximumSizeInBytes" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumSizeInBytes As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumSizeInBytes { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumSizeInBytes : int64 with get, set" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.MaximumSizeInBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -344,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.OwningProviderName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwningProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OwningProviderName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OwningProviderName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.OwningProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -364,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderBufferSize As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ProviderBufferSize { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderBufferSize : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -384,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderControlGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderControlGuid As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Guid&gt; ProviderControlGuid { Nullable&lt;Guid&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderControlGuid : Nullable&lt;Guid&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderControlGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -404,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderKeywords" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderKeywords As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; ProviderKeywords { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderKeywords : Nullable&lt;int64&gt; with get, set" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderKeywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -431,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLatency" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderLatency As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ProviderLatency { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderLatency : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLatency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -451,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderLevel As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ProviderLevel { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderLevel : Nullable&lt;int&gt; with get, set" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -478,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMaximumNumberOfBuffers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderMaximumNumberOfBuffers As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ProviderMaximumNumberOfBuffers { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderMaximumNumberOfBuffers : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMaximumNumberOfBuffers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -498,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMinimumNumberOfBuffers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderMinimumNumberOfBuffers As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ProviderMinimumNumberOfBuffers { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderMinimumNumberOfBuffers : Nullable&lt;int&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMinimumNumberOfBuffers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -518,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderNames As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ProviderNames { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderNames : seq&lt;string&gt;" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -538,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveChanges();" />
+      <MemberSignature Language="F#" Value="member this.SaveChanges : unit -&gt; unit" Usage="eventLogConfiguration.SaveChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -558,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SecurityDescriptor" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityDescriptor As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecurityDescriptor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityDescriptor : string with get, set" Usage="System.Diagnostics.Eventing.Reader.EventLogConfiguration.SecurityDescriptor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

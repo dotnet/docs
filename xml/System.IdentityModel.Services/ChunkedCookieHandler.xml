@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ChunkedCookieHandler" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChunkedCookieHandler&#xA;Inherits CookieHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChunkedCookieHandler sealed : System::IdentityModel::Services::CookieHandler" />
+  <TypeSignature Language="F#" Value="type ChunkedCookieHandler = class&#xA;    inherit CookieHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (chunkSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChunkedCookieHandler(int chunkSize);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.ChunkedCookieHandler : int -&gt; System.IdentityModel.Services.ChunkedCookieHandler" Usage="new System.IdentityModel.Services.ChunkedCookieHandler chunkSize" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.ChunkedCookieHandler.ChunkSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChunkSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChunkSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChunkSize : int" Usage="System.IdentityModel.Services.ChunkedCookieHandler.ChunkSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultChunkSize As Integer  = 2000" />
       <MemberSignature Language="C++ CLI" Value="public: int DefaultChunkSize = 2000;" />
+      <MemberSignature Language="F#" Value="val mutable DefaultChunkSize : int" Usage="System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.DeleteCore(System.String,System.String,System.String,System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeleteCore (name As String, path As String, domain As String, context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeleteCore(System::String ^ name, System::String ^ path, System::String ^ domain, System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.DeleteCore : string * string * string * System.Web.HttpContext -&gt; unit" Usage="chunkedCookieHandler.DeleteCore (name, path, domain, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.ChunkedCookieHandler.MinimumChunkSize" />
       <MemberSignature Language="VB.NET" Value="Public Const MinimumChunkSize As Integer  = 1000" />
       <MemberSignature Language="C++ CLI" Value="public: int MinimumChunkSize = 1000;" />
+      <MemberSignature Language="F#" Value="val mutable MinimumChunkSize : int" Usage="System.IdentityModel.Services.ChunkedCookieHandler.MinimumChunkSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.ReadCore(System.String,System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReadCore (name As String, context As HttpContext) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ ReadCore(System::String ^ name, System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ReadCore : string * System.Web.HttpContext -&gt; byte[]" Usage="chunkedCookieHandler.ReadCore (name, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.WriteCore(System.Byte[],System.String,System.String,System.String,System.DateTime,System.Boolean,System.Boolean,System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WriteCore (value As Byte(), name As String, path As String, domain As String, expirationTime As DateTime, secure As Boolean, httpOnly As Boolean, context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WriteCore(cli::array &lt;System::Byte&gt; ^ value, System::String ^ name, System::String ^ path, System::String ^ domain, DateTime expirationTime, bool secure, bool httpOnly, System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.WriteCore : byte[] * string * string * string * DateTime * bool * bool * System.Web.HttpContext -&gt; unit" Usage="chunkedCookieHandler.WriteCore (value, name, path, domain, expirationTime, secure, httpOnly, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

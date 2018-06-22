@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.DateTimeSerializationSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DateTimeSerializationSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateTimeSerializationSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type DateTimeSerializationSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.DateTimeSerializationSection.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As DateTimeSerializationSection.DateTimeSerializationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode Mode { System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode get(); void set(System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode with get, set" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.DateTimeSerializationSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

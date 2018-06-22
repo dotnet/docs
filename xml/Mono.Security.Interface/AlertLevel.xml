@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.AlertLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum AlertLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class AlertLevel" />
+  <TypeSignature Language="F#" Value="type AlertLevel = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertLevel.Fatal" />
       <MemberSignature Language="VB.NET" Value="Fatal" />
       <MemberSignature Language="C++ CLI" Value="Fatal" />
+      <MemberSignature Language="F#" Value="Fatal = 2" Usage="Mono.Security.Interface.AlertLevel.Fatal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertLevel.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 1" Usage="Mono.Security.Interface.AlertLevel.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

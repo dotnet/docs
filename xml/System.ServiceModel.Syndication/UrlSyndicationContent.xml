@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.UrlSyndicationContent" />
   <TypeSignature Language="VB.NET" Value="Public Class UrlSyndicationContent&#xA;Inherits SyndicationContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class UrlSyndicationContent : System::ServiceModel::Syndication::SyndicationContent" />
+  <TypeSignature Language="F#" Value="type UrlSyndicationContent = class&#xA;    inherit SyndicationContent" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.UrlSyndicationContent.#ctor(System.ServiceModel.Syndication.UrlSyndicationContent)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (source As UrlSyndicationContent)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; UrlSyndicationContent(System::ServiceModel::Syndication::UrlSyndicationContent ^ source);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.UrlSyndicationContent : System.ServiceModel.Syndication.UrlSyndicationContent -&gt; System.ServiceModel.Syndication.UrlSyndicationContent" Usage="new System.ServiceModel.Syndication.UrlSyndicationContent source" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.UrlSyndicationContent.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As Uri, mediaType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UrlSyndicationContent(Uri ^ url, System::String ^ mediaType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.UrlSyndicationContent : Uri * string -&gt; System.ServiceModel.Syndication.UrlSyndicationContent" Usage="new System.ServiceModel.Syndication.UrlSyndicationContent (url, mediaType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.UrlSyndicationContent.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As SyndicationContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Syndication::SyndicationContent ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationContent" Usage="urlSyndicationContent.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.UrlSyndicationContent.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Type { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.ServiceModel.Syndication.UrlSyndicationContent.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.UrlSyndicationContent.Url" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Url { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.ServiceModel.Syndication.UrlSyndicationContent.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.UrlSyndicationContent.WriteContentsTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WriteContentsTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WriteContentsTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteContentsTo : System.Xml.XmlWriter -&gt; unit" Usage="urlSyndicationContent.WriteContentsTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

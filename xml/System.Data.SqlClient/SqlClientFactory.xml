@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlClientFactory&#xA;Inherits DbProviderFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlClientFactory sealed : System::Data::Common::DbProviderFactory" />
+  <TypeSignature Language="F#" Value="type SqlClientFactory = class&#xA;    inherit DbProviderFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlClientFactory.CanCreateDataSourceEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanCreateDataSourceEnumerator As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCreateDataSourceEnumerator { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanCreateDataSourceEnumerator : bool" Usage="System.Data.SqlClient.SqlClientFactory.CanCreateDataSourceEnumerator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbCommand ^ CreateCommand();" />
+      <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="sqlClientFactory.CreateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -118,6 +121,7 @@ DbCommand cmd = newFactory.CreateCommand();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateCommandBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommandBuilder () As DbCommandBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbCommandBuilder ^ CreateCommandBuilder();" />
+      <MemberSignature Language="F#" Value="override this.CreateCommandBuilder : unit -&gt; System.Data.Common.DbCommandBuilder" Usage="sqlClientFactory.CreateCommandBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -157,6 +161,7 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnection () As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbConnection ^ CreateConnection();" />
+      <MemberSignature Language="F#" Value="override this.CreateConnection : unit -&gt; System.Data.Common.DbConnection" Usage="sqlClientFactory.CreateConnection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -206,6 +211,7 @@ DbConnection cmd = newFactory.CreateConnection();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateConnectionStringBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnectionStringBuilder () As DbConnectionStringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbConnectionStringBuilder ^ CreateConnectionStringBuilder();" />
+      <MemberSignature Language="F#" Value="override this.CreateConnectionStringBuilder : unit -&gt; System.Data.Common.DbConnectionStringBuilder" Usage="sqlClientFactory.CreateConnectionStringBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -256,6 +262,7 @@ DbConnectionStringBuilder cmd =
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDataAdapter () As DbDataAdapter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbDataAdapter ^ CreateDataAdapter();" />
+      <MemberSignature Language="F#" Value="override this.CreateDataAdapter : unit -&gt; System.Data.Common.DbDataAdapter" Usage="sqlClientFactory.CreateDataAdapter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -299,6 +306,7 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateDataSourceEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDataSourceEnumerator () As DbDataSourceEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbDataSourceEnumerator ^ CreateDataSourceEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.CreateDataSourceEnumerator : unit -&gt; System.Data.Common.DbDataSourceEnumerator" Usage="sqlClientFactory.CreateDataSourceEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -331,6 +339,7 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateParameter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateParameter () As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbParameter ^ CreateParameter();" />
+      <MemberSignature Language="F#" Value="override this.CreateParameter : unit -&gt; System.Data.Common.DbParameter" Usage="sqlClientFactory.CreateParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -379,6 +388,7 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission (state As PermissionState) As CodeAccessPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::CodeAccessPermission ^ CreatePermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="sqlClientFactory.CreatePermission state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -404,6 +414,7 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientFactory.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As SqlClientFactory " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlClient::SqlClientFactory ^ Instance;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : System.Data.SqlClient.SqlClientFactory" Usage="System.Data.SqlClient.SqlClientFactory.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.HostSecurityPolicyResults" />
   <TypeSignature Language="VB.NET" Value="Public Enum HostSecurityPolicyResults" />
   <TypeSignature Language="C++ CLI" Value="public enum class HostSecurityPolicyResults" />
+  <TypeSignature Language="F#" Value="type HostSecurityPolicyResults = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Hosting.HostSecurityPolicyResults.AppDomainTrust" />
       <MemberSignature Language="VB.NET" Value="AppDomainTrust" />
       <MemberSignature Language="C++ CLI" Value="AppDomainTrust" />
+      <MemberSignature Language="F#" Value="AppDomainTrust = 2" Usage="System.Web.Hosting.HostSecurityPolicyResults.AppDomainTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Hosting.HostSecurityPolicyResults.DefaultPolicy" />
       <MemberSignature Language="VB.NET" Value="DefaultPolicy" />
       <MemberSignature Language="C++ CLI" Value="DefaultPolicy" />
+      <MemberSignature Language="F#" Value="DefaultPolicy = 0" Usage="System.Web.Hosting.HostSecurityPolicyResults.DefaultPolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Hosting.HostSecurityPolicyResults.FullTrust" />
       <MemberSignature Language="VB.NET" Value="FullTrust" />
       <MemberSignature Language="C++ CLI" Value="FullTrust" />
+      <MemberSignature Language="F#" Value="FullTrust = 1" Usage="System.Web.Hosting.HostSecurityPolicyResults.FullTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Hosting.HostSecurityPolicyResults.Nothing" />
       <MemberSignature Language="VB.NET" Value="Nothing" />
       <MemberSignature Language="C++ CLI" Value="Nothing" />
+      <MemberSignature Language="F#" Value="Nothing = 3" Usage="System.Web.Hosting.HostSecurityPolicyResults.Nothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RibbonGroupSizeDefinitionBase&#xA;Inherits Freezable" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonGroupSizeDefinitionBase abstract : System::Windows::Freezable" />
+  <TypeSignature Language="F#" Value="type RibbonGroupSizeDefinitionBase = class&#xA;    inherit Freezable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase.IsCollapsed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCollapsed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCollapsed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCollapsed : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase.IsCollapsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase.IsCollapsedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCollapsedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCollapsedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsCollapsedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase.IsCollapsedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

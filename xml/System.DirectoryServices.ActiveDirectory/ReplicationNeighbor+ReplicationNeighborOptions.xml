@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReplicationNeighbor.ReplicationNeighborOptions" />
   <TypeSignature Language="C++ CLI" Value="public: enum class ReplicationNeighbor::ReplicationNeighborOptions" />
+  <TypeSignature Language="F#" Value="type ReplicationNeighbor.ReplicationNeighborOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.CompressChanges" />
       <MemberSignature Language="VB.NET" Value="CompressChanges" />
       <MemberSignature Language="C++ CLI" Value="CompressChanges" />
+      <MemberSignature Language="F#" Value="CompressChanges = 268435456" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.CompressChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.DisableScheduledSync" />
       <MemberSignature Language="VB.NET" Value="DisableScheduledSync" />
       <MemberSignature Language="C++ CLI" Value="DisableScheduledSync" />
+      <MemberSignature Language="F#" Value="DisableScheduledSync = 134217728" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.DisableScheduledSync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.FullSyncInProgress" />
       <MemberSignature Language="VB.NET" Value="FullSyncInProgress" />
       <MemberSignature Language="C++ CLI" Value="FullSyncInProgress" />
+      <MemberSignature Language="F#" Value="FullSyncInProgress = 65536" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.FullSyncInProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.FullSyncNextPacket" />
       <MemberSignature Language="VB.NET" Value="FullSyncNextPacket" />
       <MemberSignature Language="C++ CLI" Value="FullSyncNextPacket" />
+      <MemberSignature Language="F#" Value="FullSyncNextPacket = 131072" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.FullSyncNextPacket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.IgnoreChangeNotifications" />
       <MemberSignature Language="VB.NET" Value="IgnoreChangeNotifications" />
       <MemberSignature Language="C++ CLI" Value="IgnoreChangeNotifications" />
+      <MemberSignature Language="F#" Value="IgnoreChangeNotifications = 67108864" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.IgnoreChangeNotifications" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.NeverSynced" />
       <MemberSignature Language="VB.NET" Value="NeverSynced" />
       <MemberSignature Language="C++ CLI" Value="NeverSynced" />
+      <MemberSignature Language="F#" Value="NeverSynced = 2097152" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.NeverSynced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.NoChangeNotifications" />
       <MemberSignature Language="VB.NET" Value="NoChangeNotifications" />
       <MemberSignature Language="C++ CLI" Value="NoChangeNotifications" />
+      <MemberSignature Language="F#" Value="NoChangeNotifications = 536870912" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.NoChangeNotifications" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.PartialAttributeSet" />
       <MemberSignature Language="VB.NET" Value="PartialAttributeSet" />
       <MemberSignature Language="C++ CLI" Value="PartialAttributeSet" />
+      <MemberSignature Language="F#" Value="PartialAttributeSet = 1073741824" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.PartialAttributeSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.Preempted" />
       <MemberSignature Language="VB.NET" Value="Preempted" />
       <MemberSignature Language="C++ CLI" Value="Preempted" />
+      <MemberSignature Language="F#" Value="Preempted = 16777216" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.Preempted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -210,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.ReturnObjectParent" />
       <MemberSignature Language="VB.NET" Value="ReturnObjectParent" />
       <MemberSignature Language="C++ CLI" Value="ReturnObjectParent" />
+      <MemberSignature Language="F#" Value="ReturnObjectParent = 2048" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.ReturnObjectParent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -230,6 +241,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.ScheduledSync" />
       <MemberSignature Language="VB.NET" Value="ScheduledSync" />
       <MemberSignature Language="C++ CLI" Value="ScheduledSync" />
+      <MemberSignature Language="F#" Value="ScheduledSync = 64" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.ScheduledSync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -250,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.SyncOnStartup" />
       <MemberSignature Language="VB.NET" Value="SyncOnStartup" />
       <MemberSignature Language="C++ CLI" Value="SyncOnStartup" />
+      <MemberSignature Language="F#" Value="SyncOnStartup = 32" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.SyncOnStartup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -270,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.TwoWaySync" />
       <MemberSignature Language="VB.NET" Value="TwoWaySync" />
       <MemberSignature Language="C++ CLI" Value="TwoWaySync" />
+      <MemberSignature Language="F#" Value="TwoWaySync = 512" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.TwoWaySync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -290,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.UseInterSiteTransport" />
       <MemberSignature Language="VB.NET" Value="UseInterSiteTransport" />
       <MemberSignature Language="C++ CLI" Value="UseInterSiteTransport" />
+      <MemberSignature Language="F#" Value="UseInterSiteTransport = 128" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.UseInterSiteTransport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -310,6 +325,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.Writeable" />
       <MemberSignature Language="VB.NET" Value="Writeable" />
       <MemberSignature Language="C++ CLI" Value="Writeable" />
+      <MemberSignature Language="F#" Value="Writeable = 16" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighbor.ReplicationNeighborOptions.Writeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

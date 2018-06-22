@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.DirectorySecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectorySecurity&#xA;Inherits FileSystemSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectorySecurity sealed : System::Security::AccessControl::FileSystemSecurity" />
+  <TypeSignature Language="F#" Value="type DirectorySecurity = class&#xA;    inherit FileSystemSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectorySecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, includeSections As AccessControlSections)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySecurity(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.DirectorySecurity : string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.DirectorySecurity" Usage="new System.Security.AccessControl.DirectorySecurity (name, includeSections)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>

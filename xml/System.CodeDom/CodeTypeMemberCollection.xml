@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeMemberCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeTypeMemberCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeMemberCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CodeTypeMemberCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.#ctor(System.CodeDom.CodeTypeMember[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeTypeMember())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeMemberCollection(cli::array &lt;System::CodeDom::CodeTypeMember ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeMemberCollection : System.CodeDom.CodeTypeMember[] -&gt; System.CodeDom.CodeTypeMemberCollection" Usage="new System.CodeDom.CodeTypeMemberCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.#ctor(System.CodeDom.CodeTypeMemberCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeTypeMemberCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeMemberCollection(System::CodeDom::CodeTypeMemberCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeMemberCollection : System.CodeDom.CodeTypeMemberCollection -&gt; System.CodeDom.CodeTypeMemberCollection" Usage="new System.CodeDom.CodeTypeMemberCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.Add(System.CodeDom.CodeTypeMember)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeTypeMember) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeTypeMember ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.CodeTypeMember -&gt; int" Usage="codeTypeMemberCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.AddRange(System.CodeDom.CodeTypeMember[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeTypeMember())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeTypeMember ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeTypeMember[] -&gt; unit" Usage="codeTypeMemberCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.AddRange(System.CodeDom.CodeTypeMemberCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeTypeMemberCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeTypeMemberCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeTypeMemberCollection -&gt; unit" Usage="codeTypeMemberCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.Contains(System.CodeDom.CodeTypeMember)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeTypeMember) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeTypeMember ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.CodeTypeMember -&gt; bool" Usage="codeTypeMemberCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -313,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.CopyTo(System.CodeDom.CodeTypeMember[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeTypeMember(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeTypeMember ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.CodeTypeMember[] * int -&gt; unit" Usage="codeTypeMemberCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -361,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.IndexOf(System.CodeDom.CodeTypeMember)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeTypeMember) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeTypeMember ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.CodeTypeMember -&gt; int" Usage="codeTypeMemberCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -401,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.Insert(System.Int32,System.CodeDom.CodeTypeMember)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeTypeMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeTypeMember ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.CodeTypeMember -&gt; unit" Usage="codeTypeMemberCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -442,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMemberCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeTypeMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeMember ^ default[int] { System::CodeDom::CodeTypeMember ^ get(int index); void set(int index, System::CodeDom::CodeTypeMember ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.CodeTypeMember with get, set" Usage="System.CodeDom.CodeTypeMemberCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -478,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.Remove(System.CodeDom.CodeTypeMember)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeTypeMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeTypeMember ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.CodeTypeMember -&gt; unit" Usage="codeTypeMemberCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

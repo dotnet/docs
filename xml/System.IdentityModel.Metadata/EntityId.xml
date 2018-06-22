@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.EntityId" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityId" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityId" />
+  <TypeSignature Language="F#" Value="type EntityId = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.EntityId.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityId(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.EntityId : string -&gt; System.IdentityModel.Metadata.EntityId" Usage="new System.IdentityModel.Metadata.EntityId id" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntityId.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.IdentityModel.Metadata.EntityId.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileModule sealed : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type ProfileModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="profileModule.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (app As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="profileModule.Init app" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>
@@ -167,6 +170,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Profile.ProfileModule.MigrateAnonymous" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MigrateAnonymous As ProfileMigrateEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileMigrateEventHandler ^ MigrateAnonymous;" />
+      <MemberSignature Language="F#" Value="member this.MigrateAnonymous : System.Web.Profile.ProfileMigrateEventHandler " Usage="member this.MigrateAnonymous : System.Web.Profile.ProfileMigrateEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -227,6 +231,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Profile.ProfileModule.Personalize" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Personalize As ProfileEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileEventHandler ^ Personalize;" />
+      <MemberSignature Language="F#" Value="member this.Personalize : System.Web.Profile.ProfileEventHandler " Usage="member this.Personalize : System.Web.Profile.ProfileEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -263,6 +268,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Profile.ProfileModule.ProfileAutoSaving" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ProfileAutoSaving As ProfileAutoSaveEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileAutoSaveEventHandler ^ ProfileAutoSaving;" />
+      <MemberSignature Language="F#" Value="member this.ProfileAutoSaving : System.Web.Profile.ProfileAutoSaveEventHandler " Usage="member this.ProfileAutoSaving : System.Web.Profile.ProfileAutoSaveEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

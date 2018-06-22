@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventArgs" />
+  <TypeSignature Language="F#" Value="type EventArgs = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.EventArgs.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As EventArgs " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly EventArgs ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : EventArgs" Usage="System.EventArgs.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

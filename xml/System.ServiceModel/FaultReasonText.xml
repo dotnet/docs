@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultReasonText" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultReasonText" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultReasonText" />
+  <TypeSignature Language="F#" Value="type FaultReasonText = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReasonText.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultReasonText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultReasonText : string -&gt; System.ServiceModel.FaultReasonText" Usage="new System.ServiceModel.FaultReasonText text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReasonText.#ctor(System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultReasonText(System::String ^ text, System::Globalization::CultureInfo ^ cultureInfo);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultReasonText : string * System.Globalization.CultureInfo -&gt; System.ServiceModel.FaultReasonText" Usage="new System.ServiceModel.FaultReasonText (text, cultureInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReasonText.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, xmlLang As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultReasonText(System::String ^ text, System::String ^ xmlLang);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultReasonText : string * string -&gt; System.ServiceModel.FaultReasonText" Usage="new System.ServiceModel.FaultReasonText (text, xmlLang)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReasonText.Matches(System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Globalization::CultureInfo ^ cultureInfo);" />
+      <MemberSignature Language="F#" Value="member this.Matches : System.Globalization.CultureInfo -&gt; bool" Usage="faultReasonText.Matches cultureInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultReasonText.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.ServiceModel.FaultReasonText.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultReasonText.XmlLang" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlLang As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlLang { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlLang : string" Usage="System.ServiceModel.FaultReasonText.XmlLang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

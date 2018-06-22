@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractSerializerExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module DataContractSerializerExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type DataContractSerializerExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializerExtensions.GetSerializationSurrogateProvider(System.Runtime.Serialization.DataContractSerializer)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSerializationSurrogateProvider (serializer As DataContractSerializer) As ISerializationSurrogateProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Runtime::Serialization::ISerializationSurrogateProvider ^ GetSerializationSurrogateProvider(System::Runtime::Serialization::DataContractSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="static member GetSerializationSurrogateProvider : System.Runtime.Serialization.DataContractSerializer -&gt; System.Runtime.Serialization.ISerializationSurrogateProvider" Usage="System.Runtime.Serialization.DataContractSerializerExtensions.GetSerializationSurrogateProvider serializer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializerExtensions.SetSerializationSurrogateProvider(System.Runtime.Serialization.DataContractSerializer,System.Runtime.Serialization.ISerializationSurrogateProvider)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetSerializationSurrogateProvider (serializer As DataContractSerializer, provider As ISerializationSurrogateProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetSerializationSurrogateProvider(System::Runtime::Serialization::DataContractSerializer ^ serializer, System::Runtime::Serialization::ISerializationSurrogateProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member SetSerializationSurrogateProvider : System.Runtime.Serialization.DataContractSerializer * System.Runtime.Serialization.ISerializationSurrogateProvider -&gt; unit" Usage="System.Runtime.Serialization.DataContractSerializerExtensions.SetSerializationSurrogateProvider (serializer, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>

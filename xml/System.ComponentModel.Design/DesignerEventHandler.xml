@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DesignerEventHandler(sender As Object, e As DesignerEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DesignerEventHandler(System::Object ^ sender, DesignerEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DesignerEventHandler = delegate of obj * DesignerEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

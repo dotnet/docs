@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PageScalingFactorRange" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageScalingFactorRange" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageScalingFactorRange sealed" />
+  <TypeSignature Language="F#" Value="type PageScalingFactorRange = class" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PageScalingFactorRange.MaximumScale" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumScale As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumScale { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumScale : int" Usage="System.Printing.PageScalingFactorRange.MaximumScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PageScalingFactorRange.MinimumScale" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumScale As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumScale { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumScale : int" Usage="System.Printing.PageScalingFactorRange.MinimumScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageScalingFactorRange.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="pageScalingFactorRange.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

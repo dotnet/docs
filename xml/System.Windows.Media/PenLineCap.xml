@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PenLineCap" />
   <TypeSignature Language="VB.NET" Value="Public Enum PenLineCap" />
   <TypeSignature Language="C++ CLI" Value="public enum class PenLineCap" />
+  <TypeSignature Language="F#" Value="type PenLineCap = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@ Line caps
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Flat" />
       <MemberSignature Language="VB.NET" Value="Flat" />
       <MemberSignature Language="C++ CLI" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 0" Usage="System.Windows.Media.PenLineCap.Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@ Line caps
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Round" />
       <MemberSignature Language="VB.NET" Value="Round" />
       <MemberSignature Language="C++ CLI" Value="Round" />
+      <MemberSignature Language="F#" Value="Round = 2" Usage="System.Windows.Media.PenLineCap.Round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@ Line caps
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Square" />
       <MemberSignature Language="VB.NET" Value="Square" />
       <MemberSignature Language="C++ CLI" Value="Square" />
+      <MemberSignature Language="F#" Value="Square = 1" Usage="System.Windows.Media.PenLineCap.Square" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +93,7 @@ Line caps
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Triangle" />
       <MemberSignature Language="VB.NET" Value="Triangle" />
       <MemberSignature Language="C++ CLI" Value="Triangle" />
+      <MemberSignature Language="F#" Value="Triangle = 3" Usage="System.Windows.Media.PenLineCap.Triangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

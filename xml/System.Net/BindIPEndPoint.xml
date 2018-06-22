@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.BindIPEndPoint" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function BindIPEndPoint(servicePoint As ServicePoint, remoteEndPoint As IPEndPoint, retryCount As Integer) As IPEndPoint " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Net::IPEndPoint ^ BindIPEndPoint(ServicePoint ^ servicePoint, IPEndPoint ^ remoteEndPoint, int retryCount);" />
+  <TypeSignature Language="F#" Value="type BindIPEndPoint = delegate of ServicePoint * IPEndPoint * int -&gt; IPEndPoint" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.OverflowMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum OverflowMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class OverflowMode" />
+  <TypeSignature Language="F#" Value="type OverflowMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.OverflowMode.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 1" Usage="System.Windows.Controls.OverflowMode.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.OverflowMode.AsNeeded" />
       <MemberSignature Language="VB.NET" Value="AsNeeded" />
       <MemberSignature Language="C++ CLI" Value="AsNeeded" />
+      <MemberSignature Language="F#" Value="AsNeeded = 0" Usage="System.Windows.Controls.OverflowMode.AsNeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.OverflowMode.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 2" Usage="System.Windows.Controls.OverflowMode.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

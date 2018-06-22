@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.AspNetMemoryMonitor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetMemoryMonitor&#xA;Implements IApplicationMonitor, IDisposable, IObservable(Of LowPhysicalMemoryInfo), IObservable(Of RecycleLimitInfo)" />
   <TypeSignature Language="C++ CLI" Value="public ref class AspNetMemoryMonitor sealed : IDisposable, IObservable&lt;System::Web::Hosting::LowPhysicalMemoryInfo ^&gt;, IObservable&lt;System::Web::Hosting::RecycleLimitInfo ^&gt;, System::Web::Hosting::IApplicationMonitor" />
+  <TypeSignature Language="F#" Value="type AspNetMemoryMonitor = class&#xA;    interface IApplicationMonitor&#xA;    interface IDisposable&#xA;    interface IObservable&lt;RecycleLimitInfo&gt;&#xA;    interface IObservable&lt;LowPhysicalMemoryInfo&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.AspNetMemoryMonitor.DefaultLowPhysicalMemoryObserver" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultLowPhysicalMemoryObserver As IObserver(Of LowPhysicalMemoryInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IObserver&lt;System::Web::Hosting::LowPhysicalMemoryInfo ^&gt; ^ DefaultLowPhysicalMemoryObserver { IObserver&lt;System::Web::Hosting::LowPhysicalMemoryInfo ^&gt; ^ get(); void set(IObserver&lt;System::Web::Hosting::LowPhysicalMemoryInfo ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultLowPhysicalMemoryObserver : IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt; with get, set" Usage="System.Web.Hosting.AspNetMemoryMonitor.DefaultLowPhysicalMemoryObserver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.AspNetMemoryMonitor.DefaultRecycleLimitObserver" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultRecycleLimitObserver As IObserver(Of RecycleLimitInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IObserver&lt;System::Web::Hosting::RecycleLimitInfo ^&gt; ^ DefaultRecycleLimitObserver { IObserver&lt;System::Web::Hosting::RecycleLimitInfo ^&gt; ^ get(); void set(IObserver&lt;System::Web::Hosting::RecycleLimitInfo ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultRecycleLimitObserver : IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt; with get, set" Usage="System.Web.Hosting.AspNetMemoryMonitor.DefaultRecycleLimitObserver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="aspNetMemoryMonitor.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Start();" />
+      <MemberSignature Language="F#" Value="abstract member Start : unit -&gt; unit&#xA;override this.Start : unit -&gt; unit" Usage="aspNetMemoryMonitor.Start " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IApplicationMonitor.Start</InterfaceMember>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Stop();" />
+      <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit&#xA;override this.Stop : unit -&gt; unit" Usage="aspNetMemoryMonitor.Stop " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IApplicationMonitor.Stop</InterfaceMember>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Subscribe(System.IObserver{System.Web.Hosting.LowPhysicalMemoryInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function Subscribe (observer As IObserver(Of LowPhysicalMemoryInfo)) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ Subscribe(IObserver&lt;System::Web::Hosting::LowPhysicalMemoryInfo ^&gt; ^ observer);" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt; -&gt; IDisposable&#xA;override this.Subscribe : IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt; -&gt; IDisposable" Usage="aspNetMemoryMonitor.Subscribe observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IObservable`1.Subscribe(System.IObserver{`0})</InterfaceMember>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Subscribe(System.IObserver{System.Web.Hosting.RecycleLimitInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function Subscribe (observer As IObserver(Of RecycleLimitInfo)) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ Subscribe(IObserver&lt;System::Web::Hosting::RecycleLimitInfo ^&gt; ^ observer);" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt; -&gt; IDisposable&#xA;override this.Subscribe : IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt; -&gt; IDisposable" Usage="aspNetMemoryMonitor.Subscribe observer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IObservable`1.Subscribe(System.IObserver{`0})</InterfaceMember>

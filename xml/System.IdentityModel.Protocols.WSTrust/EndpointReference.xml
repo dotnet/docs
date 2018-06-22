@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.EndpointReference" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointReference" />
+  <TypeSignature Language="F#" Value="type EndpointReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.EndpointReference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointReference(System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.EndpointReference : string -&gt; System.IdentityModel.Protocols.WSTrust.EndpointReference" Usage="new System.IdentityModel.Protocols.WSTrust.EndpointReference uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Details As Collection(Of XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ Details { System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Details : System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;" Usage="System.IdentityModel.Protocols.WSTrust.EndpointReference.Details" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom(System.Xml.XmlDictionaryReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadFrom (reader As XmlDictionaryReader) As EndpointReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Protocols::WSTrust::EndpointReference ^ ReadFrom(System::Xml::XmlDictionaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.Xml.XmlDictionaryReader -&gt; System.IdentityModel.Protocols.WSTrust.EndpointReference" Usage="System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadFrom (reader As XmlReader) As EndpointReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Protocols::WSTrust::EndpointReference ^ ReadFrom(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.Xml.XmlReader -&gt; System.IdentityModel.Protocols.WSTrust.EndpointReference" Usage="System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.EndpointReference.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="endpointReference.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

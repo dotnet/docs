@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowCommandExtensionItem&#xA;Inherits ContextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowCommandExtensionItem sealed : System::Activities::Presentation::ContextItem" />
+  <TypeSignature Language="F#" Value="type WorkflowCommandExtensionItem = class&#xA;    inherit ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem.#ctor(System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callback As IWorkflowCommandExtensionCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowCommandExtensionItem(System::Activities::Presentation::Hosting::IWorkflowCommandExtensionCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem : System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback -&gt; System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem" Usage="new System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem callback" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

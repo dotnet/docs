@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol" />
   <TypeSignature Language="VB.NET" Value="Public Enum BinaryServerFormatterSink.Protocol" />
   <TypeSignature Language="C++ CLI" Value="public: enum class BinaryServerFormatterSink::Protocol" />
+  <TypeSignature Language="F#" Value="type BinaryServerFormatterSink.Protocol = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol.Http" />
       <MemberSignature Language="VB.NET" Value="Http" />
       <MemberSignature Language="C++ CLI" Value="Http" />
+      <MemberSignature Language="F#" Value="Http = 0" Usage="System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol.Http" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol.Other" />
       <MemberSignature Language="VB.NET" Value="Other" />
       <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 1" Usage="System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol.Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

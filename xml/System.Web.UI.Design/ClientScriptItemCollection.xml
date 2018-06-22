@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ClientScriptItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientScriptItemCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientScriptItemCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ClientScriptItemCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ClientScriptItemCollection.#ctor(System.Web.UI.Design.ClientScriptItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (clientScriptItems As ClientScriptItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientScriptItemCollection(cli::array &lt;System::Web::UI::Design::ClientScriptItem ^&gt; ^ clientScriptItems);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.ClientScriptItemCollection : System.Web.UI.Design.ClientScriptItem[] -&gt; System.Web.UI.Design.ClientScriptItemCollection" Usage="new System.Web.UI.Design.ClientScriptItemCollection clientScriptItems" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

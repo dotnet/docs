@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IVirtualizedItemProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVirtualizedItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IVirtualizedItemProvider" />
+  <TypeSignature Language="F#" Value="type IVirtualizedItemProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Realize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Realize();" />
+      <MemberSignature Language="F#" Value="abstract member Realize : unit -&gt; unit" Usage="iVirtualizedItemProvider.Realize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

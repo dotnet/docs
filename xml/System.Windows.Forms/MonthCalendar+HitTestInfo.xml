@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar.HitTestInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MonthCalendar.HitTestInfo" />
   <TypeSignature Language="C++ CLI" Value="public: ref class MonthCalendar::HitTestInfo sealed" />
+  <TypeSignature Language="F#" Value="type MonthCalendar.HitTestInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.HitArea" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HitArea As MonthCalendar.HitArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MonthCalendar::HitArea HitArea { System::Windows::Forms::MonthCalendar::HitArea get(); };" />
+      <MemberSignature Language="F#" Value="member this.HitArea : System.Windows.Forms.MonthCalendar.HitArea" Usage="System.Windows.Forms.MonthCalendar.HitTestInfo.HitArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Point" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Point As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Point { System::Drawing::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.Point : System.Drawing.Point" Usage="System.Windows.Forms.MonthCalendar.HitTestInfo.Point" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Time As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Time { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Time : DateTime" Usage="System.Windows.Forms.MonthCalendar.HitTestInfo.Time" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowTrackingLocation" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTrackingLocation sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowTrackingLocation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.#ctor(System.Collections.Generic.IList{System.Workflow.Runtime.Tracking.TrackingWorkflowEvent})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (events As IList(Of TrackingWorkflowEvent))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTrackingLocation(System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::TrackingWorkflowEvent&gt; ^ events);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.WorkflowTrackingLocation : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingWorkflowEvent&gt; -&gt; System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" Usage="new System.Workflow.Runtime.Tracking.WorkflowTrackingLocation events" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.Events" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Events As IList(Of TrackingWorkflowEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::TrackingWorkflowEvent&gt; ^ Events { System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::TrackingWorkflowEvent&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Events : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingWorkflowEvent&gt;" Usage="System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.Events" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

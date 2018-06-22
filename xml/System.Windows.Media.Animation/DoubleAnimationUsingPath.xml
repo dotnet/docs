@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DoubleAnimationUsingPath" />
   <TypeSignature Language="VB.NET" Value="Public Class DoubleAnimationUsingPath&#xA;Inherits DoubleAnimationBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DoubleAnimationUsingPath : System::Windows::Media::Animation::DoubleAnimationBase" />
+  <TypeSignature Language="F#" Value="type DoubleAnimationUsingPath = class&#xA;    inherit DoubleAnimationBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As DoubleAnimationUsingPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::DoubleAnimationUsingPath ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.DoubleAnimationUsingPath" Usage="doubleAnimationUsingPath.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="doubleAnimationUsingPath.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 GetCurrentValueCore(float64 defaultOriginValue, float64 defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.GetCurrentValueCore(System.Double,System.Double,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double GetCurrentValueCore(double defaultOriginValue, double defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueCore : double * double * System.Windows.Media.Animation.AnimationClock -&gt; double" Usage="doubleAnimationUsingPath.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.IsAdditive" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAdditive : bool with get, set" Usage="System.Windows.Media.Animation.DoubleAnimationUsingPath.IsAdditive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.IsCumulative" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCumulative : bool with get, set" Usage="System.Windows.Media.Animation.DoubleAnimationUsingPath.IsCumulative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.OnChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnChanged : unit -&gt; unit&#xA;override this.OnChanged : unit -&gt; unit" Usage="doubleAnimationUsingPath.OnChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry" />
       <MemberSignature Language="VB.NET" Value="Public Property PathGeometry As PathGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PathGeometry ^ PathGeometry { System::Windows::Media::PathGeometry ^ get(); void set(System::Windows::Media::PathGeometry ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PathGeometry : System.Windows.Media.PathGeometry with get, set" Usage="System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometryProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PathGeometryProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PathGeometryProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PathGeometryProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometryProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As PathAnimationSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::PathAnimationSource Source { System::Windows::Media::Animation::PathAnimationSource get(); void set(System::Windows::Media::Animation::PathAnimationSource value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : System.Windows.Media.Animation.PathAnimationSource with get, set" Usage="System.Windows.Media.Animation.DoubleAnimationUsingPath.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -344,6 +354,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.DoubleAnimationUsingPath.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.DoubleAnimationUsingPath.SourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

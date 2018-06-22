@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.ListItemStructure" />
   <TypeSignature Language="VB.NET" Value="Public Class ListItemStructure&#xA;Inherits SemanticBasicElement&#xA;Implements IAddChild, IEnumerable(Of BlockElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListItemStructure : System::Windows::Documents::DocumentStructures::SemanticBasicElement, System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::BlockElement ^&gt;, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type ListItemStructure = class&#xA;    inherit SemanticBasicElement&#xA;    interface IAddChild&#xA;    interface seq&lt;BlockElement&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.ListItemStructure.Add(System.Windows.Documents.DocumentStructures.BlockElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As BlockElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::BlockElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.BlockElement -&gt; unit" Usage="listItemStructure.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentStructures.ListItemStructure.Marker" />
       <MemberSignature Language="VB.NET" Value="Public Property Marker As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Marker { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Marker : string with get, set" Usage="System.Windows.Documents.DocumentStructures.ListItemStructure.Marker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

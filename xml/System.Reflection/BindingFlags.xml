@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.BindingFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum BindingFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class BindingFlags" />
+  <TypeSignature Language="F#" Value="type BindingFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -123,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.CreateInstance" />
       <MemberSignature Language="VB.NET" Value="CreateInstance" />
       <MemberSignature Language="C++ CLI" Value="CreateInstance" />
+      <MemberSignature Language="F#" Value="CreateInstance = 512" Usage="System.Reflection.BindingFlags.CreateInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.DeclaredOnly" />
       <MemberSignature Language="VB.NET" Value="DeclaredOnly" />
       <MemberSignature Language="C++ CLI" Value="DeclaredOnly" />
+      <MemberSignature Language="F#" Value="DeclaredOnly = 2" Usage="System.Reflection.BindingFlags.DeclaredOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Reflection.BindingFlags.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -224,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.DoNotWrapExceptions" />
       <MemberSignature Language="VB.NET" Value="DoNotWrapExceptions" />
       <MemberSignature Language="C++ CLI" Value="DoNotWrapExceptions" />
+      <MemberSignature Language="F#" Value="DoNotWrapExceptions = 33554432" Usage="System.Reflection.BindingFlags.DoNotWrapExceptions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.ExactBinding" />
       <MemberSignature Language="VB.NET" Value="ExactBinding" />
       <MemberSignature Language="C++ CLI" Value="ExactBinding" />
+      <MemberSignature Language="F#" Value="ExactBinding = 65536" Usage="System.Reflection.BindingFlags.ExactBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.FlattenHierarchy" />
       <MemberSignature Language="VB.NET" Value="FlattenHierarchy" />
       <MemberSignature Language="C++ CLI" Value="FlattenHierarchy" />
+      <MemberSignature Language="F#" Value="FlattenHierarchy = 64" Usage="System.Reflection.BindingFlags.FlattenHierarchy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -317,6 +324,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.GetField" />
       <MemberSignature Language="VB.NET" Value="GetField" />
       <MemberSignature Language="C++ CLI" Value="GetField" />
+      <MemberSignature Language="F#" Value="GetField = 1024" Usage="System.Reflection.BindingFlags.GetField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -352,6 +360,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.GetProperty" />
       <MemberSignature Language="VB.NET" Value="GetProperty" />
       <MemberSignature Language="C++ CLI" Value="GetProperty" />
+      <MemberSignature Language="F#" Value="GetProperty = 4096" Usage="System.Reflection.BindingFlags.GetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -387,6 +396,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="IgnoreCase" />
       <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
+      <MemberSignature Language="F#" Value="IgnoreCase = 1" Usage="System.Reflection.BindingFlags.IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -420,6 +430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.IgnoreReturn" />
       <MemberSignature Language="VB.NET" Value="IgnoreReturn" />
       <MemberSignature Language="C++ CLI" Value="IgnoreReturn" />
+      <MemberSignature Language="F#" Value="IgnoreReturn = 16777216" Usage="System.Reflection.BindingFlags.IgnoreReturn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -449,6 +460,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.Instance" />
       <MemberSignature Language="VB.NET" Value="Instance" />
       <MemberSignature Language="C++ CLI" Value="Instance" />
+      <MemberSignature Language="F#" Value="Instance = 4" Usage="System.Reflection.BindingFlags.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -482,6 +494,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.InvokeMethod" />
       <MemberSignature Language="VB.NET" Value="InvokeMethod" />
       <MemberSignature Language="C++ CLI" Value="InvokeMethod" />
+      <MemberSignature Language="F#" Value="InvokeMethod = 256" Usage="System.Reflection.BindingFlags.InvokeMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -517,6 +530,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.NonPublic" />
       <MemberSignature Language="VB.NET" Value="NonPublic" />
       <MemberSignature Language="C++ CLI" Value="NonPublic" />
+      <MemberSignature Language="F#" Value="NonPublic = 32" Usage="System.Reflection.BindingFlags.NonPublic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -550,6 +564,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.OptionalParamBinding" />
       <MemberSignature Language="VB.NET" Value="OptionalParamBinding" />
       <MemberSignature Language="C++ CLI" Value="OptionalParamBinding" />
+      <MemberSignature Language="F#" Value="OptionalParamBinding = 262144" Usage="System.Reflection.BindingFlags.OptionalParamBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -587,6 +602,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.Public" />
       <MemberSignature Language="VB.NET" Value="Public" />
       <MemberSignature Language="C++ CLI" Value="Public" />
+      <MemberSignature Language="F#" Value="Public = 16" Usage="System.Reflection.BindingFlags.Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -620,6 +636,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.PutDispProperty" />
       <MemberSignature Language="VB.NET" Value="PutDispProperty" />
       <MemberSignature Language="C++ CLI" Value="PutDispProperty" />
+      <MemberSignature Language="F#" Value="PutDispProperty = 16384" Usage="System.Reflection.BindingFlags.PutDispProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -649,6 +666,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.PutRefDispProperty" />
       <MemberSignature Language="VB.NET" Value="PutRefDispProperty" />
       <MemberSignature Language="C++ CLI" Value="PutRefDispProperty" />
+      <MemberSignature Language="F#" Value="PutRefDispProperty = 32768" Usage="System.Reflection.BindingFlags.PutRefDispProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -678,6 +696,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.SetField" />
       <MemberSignature Language="VB.NET" Value="SetField" />
       <MemberSignature Language="C++ CLI" Value="SetField" />
+      <MemberSignature Language="F#" Value="SetField = 2048" Usage="System.Reflection.BindingFlags.SetField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -713,6 +732,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.SetProperty" />
       <MemberSignature Language="VB.NET" Value="SetProperty" />
       <MemberSignature Language="C++ CLI" Value="SetProperty" />
+      <MemberSignature Language="F#" Value="SetProperty = 8192" Usage="System.Reflection.BindingFlags.SetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -748,6 +768,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.Static" />
       <MemberSignature Language="VB.NET" Value="Static" />
       <MemberSignature Language="C++ CLI" Value="Static" />
+      <MemberSignature Language="F#" Value="Static = 8" Usage="System.Reflection.BindingFlags.Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -781,6 +802,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.SuppressChangeType" />
       <MemberSignature Language="VB.NET" Value="SuppressChangeType" />
       <MemberSignature Language="C++ CLI" Value="SuppressChangeType" />
+      <MemberSignature Language="F#" Value="SuppressChangeType = 131072" Usage="System.Reflection.BindingFlags.SuppressChangeType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

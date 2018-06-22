@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyValueUIItemInvokeHandler(context As ITypeDescriptorContext, descriptor As PropertyDescriptor, invokedItem As PropertyValueUIItem)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PropertyValueUIItemInvokeHandler(ITypeDescriptorContext ^ context, PropertyDescriptor ^ descriptor, PropertyValueUIItem ^ invokedItem);" />
+  <TypeSignature Language="F#" Value="type PropertyValueUIItemInvokeHandler = delegate of ITypeDescriptorContext * PropertyDescriptor * PropertyValueUIItem -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

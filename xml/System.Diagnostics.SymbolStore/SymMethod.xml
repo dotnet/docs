@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymMethod" />
   <TypeSignature Language="VB.NET" Value="Public Class SymMethod&#xA;Inherits SymMethodBase&#xA;Implements IDisposable, ISymbolMethod" />
   <TypeSignature Language="C++ CLI" Value="public ref class SymMethod : System::Diagnostics::SymbolStore::SymMethodBase, IDisposable, System::Diagnostics::SymbolStore::ISymbolMethod" />
+  <TypeSignature Language="F#" Value="type SymMethod = class&#xA;    inherit SymMethodBase&#xA;    interface ISymbolMethod&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedMethod* pMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.#ctor(System.Diagnostics.SymbolStore.Private.ISymUnmanagedMethod*)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymMethod(System::Diagnostics::SymbolStore::Private::ISymUnmanagedMethod* pMethod);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SymbolStore.SymMethod : nativeptr&lt;System.Diagnostics.SymbolStore.Private.ISymUnmanagedMethod&gt; -&gt; System.Diagnostics.SymbolStore.SymMethod" Usage="new System.Diagnostics.SymbolStore.SymMethod pMethod" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="symMethod.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="symMethod.Dispose A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!SymMethod ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="symMethod.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.GetNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNamespace () As ISymbolNamespace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolNamespace ^ GetNamespace();" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespace : unit -&gt; System.Diagnostics.SymbolStore.ISymbolNamespace&#xA;override this.GetNamespace : unit -&gt; System.Diagnostics.SymbolStore.ISymbolNamespace" Usage="symMethod.GetNamespace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.GetOffset(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOffset (document As ISymbolDocument, line As Integer, column As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetOffset(System::Diagnostics::SymbolStore::ISymbolDocument ^ document, int line, int column);" />
+      <MemberSignature Language="F#" Value="abstract member GetOffset : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; int&#xA;override this.GetOffset : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; int" Usage="symMethod.GetOffset (document, line, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.GetParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetParameters () As ISymbolVariable()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetParameters();" />
+      <MemberSignature Language="F#" Value="abstract member GetParameters : unit -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]&#xA;override this.GetParameters : unit -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]" Usage="symMethod.GetParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.GetRanges(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRanges (document As ISymbolDocument, line As Integer, column As Integer) As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;int&gt; ^ GetRanges(System::Diagnostics::SymbolStore::ISymbolDocument ^ document, int line, int column);" />
+      <MemberSignature Language="F#" Value="abstract member GetRanges : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; int[]&#xA;override this.GetRanges : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; int[]" Usage="symMethod.GetRanges (document, line, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.GetScope(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScope (offset As Integer) As ISymbolScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolScope ^ GetScope(int offset);" />
+      <MemberSignature Language="F#" Value="abstract member GetScope : int -&gt; System.Diagnostics.SymbolStore.ISymbolScope&#xA;override this.GetScope : int -&gt; System.Diagnostics.SymbolStore.ISymbolScope" Usage="symMethod.GetScope offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.GetSequencePoints(System.Int32[],System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetSequencePoints (offsets As Integer(), documents As ISymbolDocument(), lines As Integer(), columns As Integer(), endLines As Integer(), endColumns As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetSequencePoints(cli::array &lt;int&gt; ^ offsets, cli::array &lt;System::Diagnostics::SymbolStore::ISymbolDocument ^&gt; ^ documents, cli::array &lt;int&gt; ^ lines, cli::array &lt;int&gt; ^ columns, cli::array &lt;int&gt; ^ endLines, cli::array &lt;int&gt; ^ endColumns);" />
+      <MemberSignature Language="F#" Value="abstract member GetSequencePoints : int[] * System.Diagnostics.SymbolStore.ISymbolDocument[] * int[] * int[] * int[] * int[] -&gt; unit&#xA;override this.GetSequencePoints : int[] * System.Diagnostics.SymbolStore.ISymbolDocument[] * int[] * int[] * int[] * int[] -&gt; unit" Usage="symMethod.GetSequencePoints (offsets, documents, lines, columns, endLines, endColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.GetSourceStartEnd(System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSourceStartEnd (docs As ISymbolDocument(), lines As Integer(), columns As Integer()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetSourceStartEnd(cli::array &lt;System::Diagnostics::SymbolStore::ISymbolDocument ^&gt; ^ docs, cli::array &lt;int&gt; ^ lines, cli::array &lt;int&gt; ^ columns);" />
+      <MemberSignature Language="F#" Value="abstract member GetSourceStartEnd : System.Diagnostics.SymbolStore.ISymbolDocument[] * int[] * int[] -&gt; bool&#xA;override this.GetSourceStartEnd : System.Diagnostics.SymbolStore.ISymbolDocument[] * int[] * int[] -&gt; bool" Usage="symMethod.GetSourceStartEnd (docs, lines, columns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -369,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymMethod.RootScope" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RootScope As ISymbolScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Diagnostics::SymbolStore::ISymbolScope ^ RootScope { System::Diagnostics::SymbolStore::ISymbolScope ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootScope : System.Diagnostics.SymbolStore.ISymbolScope" Usage="System.Diagnostics.SymbolStore.SymMethod.RootScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -389,6 +402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethod.RootScopeInternal" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function RootScopeInternal () As ISymbolScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolScope ^ RootScopeInternal();" />
+      <MemberSignature Language="F#" Value="abstract member RootScopeInternal : unit -&gt; System.Diagnostics.SymbolStore.ISymbolScope&#xA;override this.RootScopeInternal : unit -&gt; System.Diagnostics.SymbolStore.ISymbolScope" Usage="symMethod.RootScopeInternal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -410,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymMethod.SequencePointCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SequencePointCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SequencePointCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SequencePointCount : int" Usage="System.Diagnostics.SymbolStore.SymMethod.SequencePointCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -430,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymMethod.Token" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Token As SymbolToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Diagnostics::SymbolStore::SymbolToken Token { System::Diagnostics::SymbolStore::SymbolToken get(); };" />
+      <MemberSignature Language="F#" Value="member this.Token : System.Diagnostics.SymbolStore.SymbolToken" Usage="System.Diagnostics.SymbolStore.SymMethod.Token" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>

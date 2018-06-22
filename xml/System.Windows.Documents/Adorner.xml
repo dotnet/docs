@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Adorner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Adorner&#xA;Inherits FrameworkElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Adorner abstract : System::Windows::FrameworkElement" />
+  <TypeSignature Language="F#" Value="type Adorner = class&#xA;    inherit FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Adorner.#ctor(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (adornedElement As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Adorner(System::Windows::UIElement ^ adornedElement);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Adorner : System.Windows.UIElement -&gt; System.Windows.Documents.Adorner" Usage="new System.Windows.Documents.Adorner adornedElement" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Adorner.AdornedElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdornedElement As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ AdornedElement { System::Windows::UIElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdornedElement : System.Windows.UIElement" Usage="System.Windows.Documents.Adorner.AdornedElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Adorner.GetDesiredTransform(System.Windows.Media.GeneralTransform)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDesiredTransform (transform As GeneralTransform) As GeneralTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Media::GeneralTransform ^ GetDesiredTransform(System::Windows::Media::GeneralTransform ^ transform);" />
+      <MemberSignature Language="F#" Value="abstract member GetDesiredTransform : System.Windows.Media.GeneralTransform -&gt; System.Windows.Media.GeneralTransform&#xA;override this.GetDesiredTransform : System.Windows.Media.GeneralTransform -&gt; System.Windows.Media.GeneralTransform" Usage="adorner.GetDesiredTransform transform" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Adorner.GetLayoutClip(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLayoutClip (layoutSlotSize As Size) As Geometry" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Geometry ^ GetLayoutClip(System::Windows::Size layoutSlotSize);" />
+      <MemberSignature Language="F#" Value="override this.GetLayoutClip : System.Windows.Size -&gt; System.Windows.Media.Geometry" Usage="adorner.GetLayoutClip layoutSlotSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Adorner.IsClipEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsClipEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClipEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsClipEnabled : bool with get, set" Usage="System.Windows.Documents.Adorner.IsClipEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Adorner.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="adorner.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

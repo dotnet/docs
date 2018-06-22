@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.TrackingParticipant" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingParticipant" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingParticipant abstract" />
+  <TypeSignature Language="F#" Value="type TrackingParticipant = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingParticipant.BeginTrack(System.Activities.Tracking.TrackingRecord,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function BeginTrack (record As TrackingRecord, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual IAsyncResult ^ BeginTrack(System::Activities::Tracking::TrackingRecord ^ record, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTrack : System.Activities.Tracking.TrackingRecord * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTrack : System.Activities.Tracking.TrackingRecord * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="trackingParticipant.BeginTrack (record, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingParticipant.EndTrack(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub EndTrack (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void EndTrack(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndTrack : IAsyncResult -&gt; unit&#xA;override this.EndTrack : IAsyncResult -&gt; unit" Usage="trackingParticipant.EndTrack result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingParticipant.Track(System.Activities.Tracking.TrackingRecord,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Track (record As TrackingRecord, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Track(System::Activities::Tracking::TrackingRecord ^ record, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Track : System.Activities.Tracking.TrackingRecord * TimeSpan -&gt; unit" Usage="trackingParticipant.Track (record, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingParticipant.TrackingProfile" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TrackingProfile As TrackingProfile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Activities::Tracking::TrackingProfile ^ TrackingProfile { System::Activities::Tracking::TrackingProfile ^ get(); void set(System::Activities::Tracking::TrackingProfile ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TrackingProfile : System.Activities.Tracking.TrackingProfile with get, set" Usage="System.Activities.Tracking.TrackingParticipant.TrackingProfile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

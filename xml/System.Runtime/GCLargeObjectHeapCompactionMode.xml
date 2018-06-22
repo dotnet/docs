@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.GCLargeObjectHeapCompactionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum GCLargeObjectHeapCompactionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class GCLargeObjectHeapCompactionMode" />
+  <TypeSignature Language="F#" Value="type GCLargeObjectHeapCompactionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce" />
       <MemberSignature Language="VB.NET" Value="CompactOnce" />
       <MemberSignature Language="C++ CLI" Value="CompactOnce" />
+      <MemberSignature Language="F#" Value="CompactOnce = 2" Usage="System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLargeObjectHeapCompactionMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 1" Usage="System.Runtime.GCLargeObjectHeapCompactionMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ImplicitResourceKey" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImplicitResourceKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImplicitResourceKey sealed" />
+  <TypeSignature Language="F#" Value="type ImplicitResourceKey = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ImplicitResourceKey.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filter As String, keyPrefix As String, property As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImplicitResourceKey(System::String ^ filter, System::String ^ keyPrefix, System::String ^ property);" />
+      <MemberSignature Language="F#" Value="new System.Web.Compilation.ImplicitResourceKey : string * string * string -&gt; System.Web.Compilation.ImplicitResourceKey" Usage="new System.Web.Compilation.ImplicitResourceKey (filter, keyPrefix, property)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.Web.Compilation.ImplicitResourceKey.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.KeyPrefix" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyPrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyPrefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyPrefix : string with get, set" Usage="System.Web.Compilation.ImplicitResourceKey.KeyPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.Property" />
       <MemberSignature Language="VB.NET" Value="Public Property Property As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Property { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Property : string with get, set" Usage="System.Web.Compilation.ImplicitResourceKey.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebRequest" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebRequest&#xA;Inherits MarshalByRefObject&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebRequest abstract : MarshalByRefObject, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type WebRequest = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -125,6 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebRequest(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebRequest : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.WebRequest" Usage="new System.Net.WebRequest (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -167,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Abort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" />
+      <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="webRequest.Abort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -209,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.AuthenticationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationLevel As AuthenticationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::AuthenticationLevel AuthenticationLevel { System::Net::Security::AuthenticationLevel get(); void set(System::Net::Security::AuthenticationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationLevel : System.Net.Security.AuthenticationLevel with get, set" Usage="System.Net.WebRequest.AuthenticationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginGetRequestStream (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginGetRequestStream(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginGetRequestStream : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginGetRequestStream : AsyncCallback * obj -&gt; IAsyncResult" Usage="webRequest.BeginGetRequestStream (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -313,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginGetResponse (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginGetResponse(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginGetResponse : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginGetResponse : AsyncCallback * obj -&gt; IAsyncResult" Usage="webRequest.BeginGetResponse (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -375,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.CachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CachePolicy As RequestCachePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Cache::RequestCachePolicy ^ CachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CachePolicy : System.Net.Cache.RequestCachePolicy with get, set" Usage="System.Net.WebRequest.CachePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -429,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.ConnectionGroupName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectionGroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionGroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionGroupName : string with get, set" Usage="System.Net.WebRequest.ConnectionGroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -475,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int64 with get, set" Usage="System.Net.WebRequest.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -526,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Net.WebRequest.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -588,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (requestUriString As String) As WebRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ Create(System::String ^ requestUriString);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Net.WebRequest" Usage="System.Net.WebRequest.Create requestUriString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -671,6 +682,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.Create(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (requestUri As Uri) As WebRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ Create(Uri ^ requestUri);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri -&gt; System.Net.WebRequest" Usage="System.Net.WebRequest.Create requestUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -747,6 +759,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.CreateDefault(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefault (requestUri As Uri) As WebRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ CreateDefault(Uri ^ requestUri);" />
+      <MemberSignature Language="F#" Value="static member CreateDefault : Uri -&gt; System.Net.WebRequest" Usage="System.Net.WebRequest.CreateDefault requestUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -807,6 +820,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.CreateHttp(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHttp (requestUriString As String) As HttpWebRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::HttpWebRequest ^ CreateHttp(System::String ^ requestUriString);" />
+      <MemberSignature Language="F#" Value="static member CreateHttp : string -&gt; System.Net.HttpWebRequest" Usage="System.Net.WebRequest.CreateHttp requestUriString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -860,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.CreateHttp(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHttp (requestUri As Uri) As HttpWebRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::HttpWebRequest ^ CreateHttp(Uri ^ requestUri);" />
+      <MemberSignature Language="F#" Value="static member CreateHttp : Uri -&gt; System.Net.HttpWebRequest" Usage="System.Net.WebRequest.CreateHttp requestUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -913,6 +928,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.CreatorInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CreatorInstance As IWebRequestCreate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::IWebRequestCreate ^ CreatorInstance { System::Net::IWebRequestCreate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreatorInstance : System.Net.IWebRequestCreate" Usage="System.Net.WebRequest.CreatorInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -949,6 +965,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Credentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.WebRequest.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1003,6 +1020,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.DefaultCachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultCachePolicy As RequestCachePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::Cache::RequestCachePolicy ^ DefaultCachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultCachePolicy : System.Net.Cache.RequestCachePolicy with get, set" Usage="System.Net.WebRequest.DefaultCachePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1062,6 +1080,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.DefaultWebProxy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultWebProxy As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::IWebProxy ^ DefaultWebProxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultWebProxy : System.Net.IWebProxy with get, set" Usage="System.Net.WebRequest.DefaultWebProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1105,6 +1124,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.EndGetRequestStream(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EndGetRequestStream (asyncResult As IAsyncResult) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ EndGetRequestStream(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="abstract member EndGetRequestStream : IAsyncResult -&gt; System.IO.Stream&#xA;override this.EndGetRequestStream : IAsyncResult -&gt; System.IO.Stream" Usage="webRequest.EndGetRequestStream asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1164,6 +1184,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EndGetResponse (asyncResult As IAsyncResult) As WebResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::WebResponse ^ EndGetResponse(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="abstract member EndGetResponse : IAsyncResult -&gt; System.Net.WebResponse&#xA;override this.EndGetResponse : IAsyncResult -&gt; System.Net.WebResponse" Usage="webRequest.EndGetResponse asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1219,6 +1240,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webRequest.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -1264,6 +1286,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetRequestStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRequestStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetRequestStream();" />
+      <MemberSignature Language="F#" Value="abstract member GetRequestStream : unit -&gt; System.IO.Stream&#xA;override this.GetRequestStream : unit -&gt; System.IO.Stream" Usage="webRequest.GetRequestStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1318,6 +1341,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetRequestStreamAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRequestStreamAsync () As Task(Of Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ GetRequestStreamAsync();" />
+      <MemberSignature Language="F#" Value="abstract member GetRequestStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetRequestStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="webRequest.GetRequestStreamAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1359,6 +1383,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResponse () As WebResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::WebResponse ^ GetResponse();" />
+      <MemberSignature Language="F#" Value="abstract member GetResponse : unit -&gt; System.Net.WebResponse&#xA;override this.GetResponse : unit -&gt; System.Net.WebResponse" Usage="webRequest.GetResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1417,6 +1442,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetResponseAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResponseAsync () As Task(Of WebResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Net::WebResponse ^&gt; ^ GetResponseAsync();" />
+      <MemberSignature Language="F#" Value="abstract member GetResponseAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.WebResponse&gt;&#xA;override this.GetResponseAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.WebResponse&gt;" Usage="webRequest.GetResponseAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1456,6 +1482,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetSystemWebProxy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSystemWebProxy () As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IWebProxy ^ GetSystemWebProxy();" />
+      <MemberSignature Language="F#" Value="static member GetSystemWebProxy : unit -&gt; System.Net.IWebProxy" Usage="System.Net.WebRequest.GetSystemWebProxy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1497,6 +1524,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Headers As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); void set(System::Net::WebHeaderCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection with get, set" Usage="System.Net.WebRequest.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1550,6 +1578,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.ImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ImpersonationLevel As TokenImpersonationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel ImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); void set(System::Security::Principal::TokenImpersonationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ImpersonationLevel : System.Security.Principal.TokenImpersonationLevel with get, set" Usage="System.Net.WebRequest.ImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1587,6 +1616,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Method" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Method As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.Net.WebRequest.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1642,6 +1672,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.PreAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PreAuthenticate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool PreAuthenticate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreAuthenticate : bool with get, set" Usage="System.Net.WebRequest.PreAuthenticate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1694,6 +1725,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Proxy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Proxy As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.Net.WebRequest.Proxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1748,6 +1780,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.RegisterPortableWebRequestCreator(System.Net.IWebRequestCreate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterPortableWebRequestCreator (creator As IWebRequestCreate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterPortableWebRequestCreator(System::Net::IWebRequestCreate ^ creator);" />
+      <MemberSignature Language="F#" Value="static member RegisterPortableWebRequestCreator : System.Net.IWebRequestCreate -&gt; unit" Usage="System.Net.WebRequest.RegisterPortableWebRequestCreator creator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1780,6 +1813,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.RegisterPrefix(System.String,System.Net.IWebRequestCreate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterPrefix (prefix As String, creator As IWebRequestCreate) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RegisterPrefix(System::String ^ prefix, System::Net::IWebRequestCreate ^ creator);" />
+      <MemberSignature Language="F#" Value="static member RegisterPrefix : string * System.Net.IWebRequestCreate -&gt; bool" Usage="System.Net.WebRequest.RegisterPrefix (prefix, creator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1848,6 +1882,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequestUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.Net.WebRequest.RequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1943,6 +1978,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Net.WebRequest.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1997,6 +2033,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.UseDefaultCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UseDefaultCredentials As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.Net.WebRequest.UseDefaultCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>

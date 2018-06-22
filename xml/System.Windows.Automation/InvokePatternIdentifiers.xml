@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.InvokePatternIdentifiers" />
   <TypeSignature Language="VB.NET" Value="Public Class InvokePatternIdentifiers" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvokePatternIdentifiers abstract sealed" />
+  <TypeSignature Language="F#" Value="type InvokePatternIdentifiers = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvokedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InvokedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InvokedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.InvokePatternIdentifiers.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.InvokePatternIdentifiers.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

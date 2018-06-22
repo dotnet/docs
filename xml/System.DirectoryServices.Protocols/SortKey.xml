@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SortKey" />
   <TypeSignature Language="VB.NET" Value="Public Class SortKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class SortKey" />
+  <TypeSignature Language="F#" Value="type SortKey = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortKey.#ctor(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String, matchingRule As String, reverseOrder As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortKey(System::String ^ attributeName, System::String ^ matchingRule, bool reverseOrder);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.SortKey : string * string * bool -&gt; System.DirectoryServices.Protocols.SortKey" Usage="new System.DirectoryServices.Protocols.SortKey (attributeName, matchingRule, reverseOrder)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.AttributeName" />
       <MemberSignature Language="VB.NET" Value="Public Property AttributeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeName : string with get, set" Usage="System.DirectoryServices.Protocols.SortKey.AttributeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.MatchingRule" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchingRule As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MatchingRule { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchingRule : string with get, set" Usage="System.DirectoryServices.Protocols.SortKey.MatchingRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.ReverseOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property ReverseOrder As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReverseOrder { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReverseOrder : bool with get, set" Usage="System.DirectoryServices.Protocols.SortKey.ReverseOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

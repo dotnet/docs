@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataRowCollection&#xA;Inherits InternalDataCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataRowCollection sealed : System::Data::InternalDataCollectionBase" />
+  <TypeSignature Language="F#" Value="type DataRowCollection = class&#xA;    inherit InternalDataCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Add(System.Data.DataRow)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (row As DataRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Data::DataRow ^ row);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Data.DataRow -&gt; unit" Usage="dataRowCollection.Add row" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Add(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (ParamArray values As Object()) As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ Add(... cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.Add : obj[] -&gt; System.Data.DataRow" Usage="dataRowCollection.Add values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="dataRowCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (key As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="member this.Contains : obj -&gt; bool" Usage="dataRowCollection.Contains key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -288,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Contains(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (keys As Object()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(cli::array &lt;System::Object ^&gt; ^ keys);" />
+      <MemberSignature Language="F#" Value="member this.Contains : obj[] -&gt; bool" Usage="dataRowCollection.Contains keys" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -352,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyTo (ar As Array, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyTo(Array ^ ar, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : Array * int -&gt; unit" Usage="dataRowCollection.CopyTo (ar, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -387,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.CopyTo(System.Data.DataRow[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataRow(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::DataRow ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.DataRow[] * int -&gt; unit" Usage="dataRowCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -422,6 +430,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.DataRowCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -462,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Find(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (key As Object) As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ Find(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="member this.Find : obj -&gt; System.Data.DataRow" Usage="dataRowCollection.Find key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -515,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Find(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (keys As Object()) As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ Find(cli::array &lt;System::Object ^&gt; ^ keys);" />
+      <MemberSignature Language="F#" Value="member this.Find : obj[] -&gt; System.Data.DataRow" Usage="dataRowCollection.Find keys" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -569,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="dataRowCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -600,6 +612,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.IndexOf(System.Data.DataRow)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (row As DataRow) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Data::DataRow ^ row);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Data.DataRow -&gt; int" Usage="dataRowCollection.IndexOf row" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -634,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.InsertAt(System.Data.DataRow,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InsertAt (row As DataRow, pos As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertAt(System::Data::DataRow ^ row, int pos);" />
+      <MemberSignature Language="F#" Value="member this.InsertAt : System.Data.DataRow * int -&gt; unit" Usage="dataRowCollection.InsertAt (row, pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -678,6 +692,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ default[int] { System::Data::DataRow ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.DataRow" Usage="System.Data.DataRowCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -729,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Remove(System.Data.DataRow)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (row As DataRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::DataRow ^ row);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Data.DataRow -&gt; unit" Usage="dataRowCollection.Remove row" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -784,6 +800,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="dataRowCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

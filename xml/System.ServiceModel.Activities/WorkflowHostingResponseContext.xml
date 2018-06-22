@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowHostingResponseContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowHostingResponseContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowHostingResponseContext sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowHostingResponseContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendResponse (returnValue As Object, outputs As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendResponse(System::Object ^ returnValue, cli::array &lt;System::Object ^&gt; ^ outputs);" />
+      <MemberSignature Language="F#" Value="member this.SendResponse : obj * obj[] -&gt; unit" Usage="workflowHostingResponseContext.SendResponse (returnValue, outputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

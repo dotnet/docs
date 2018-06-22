@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.ICertificatePolicy" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICertificatePolicy" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICertificatePolicy" />
+  <TypeSignature Language="F#" Value="type ICertificatePolicy = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.ICertificatePolicy.CheckValidationResult(System.Net.ServicePoint,System.Security.Cryptography.X509Certificates.X509Certificate,System.Net.WebRequest,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function CheckValidationResult (srvPoint As ServicePoint, certificate As X509Certificate, request As WebRequest, certificateProblem As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckValidationResult(System::Net::ServicePoint ^ srvPoint, System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate, System::Net::WebRequest ^ request, int certificateProblem);" />
+      <MemberSignature Language="F#" Value="abstract member CheckValidationResult : System.Net.ServicePoint * System.Security.Cryptography.X509Certificates.X509Certificate * System.Net.WebRequest * int -&gt; bool" Usage="iCertificatePolicy.CheckValidationResult (srvPoint, certificate, request, certificateProblem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

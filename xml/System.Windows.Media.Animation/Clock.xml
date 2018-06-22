@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Clock" />
   <TypeSignature Language="VB.NET" Value="Public Class Clock&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class Clock : System::Windows::Threading::DispatcherObject" />
+  <TypeSignature Language="F#" Value="type Clock = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Animation.Timeline timeline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Clock.#ctor(System.Windows.Media.Animation.Timeline)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; Clock(System::Windows::Media::Animation::Timeline ^ timeline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.Clock : System.Windows.Media.Animation.Timeline -&gt; System.Windows.Media.Animation.Clock" Usage="new System.Windows.Media.Animation.Clock timeline" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Clock.Completed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Completed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Completed;" />
+      <MemberSignature Language="F#" Value="member this.Completed : EventHandler " Usage="member this.Completed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.Controller" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controller As ClockController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::ClockController ^ Controller { System::Windows::Media::Animation::ClockController ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controller : System.Windows.Media.Animation.ClockController" Usage="System.Windows.Media.Animation.Clock.Controller" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentGlobalSpeed As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; CurrentGlobalSpeed { Nullable&lt;double&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentGlobalSpeed : Nullable&lt;double&gt;" Usage="System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Clock.CurrentGlobalSpeedInvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentGlobalSpeedInvalidated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentGlobalSpeedInvalidated;" />
+      <MemberSignature Language="F#" Value="member this.CurrentGlobalSpeedInvalidated : EventHandler " Usage="member this.CurrentGlobalSpeedInvalidated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.CurrentGlobalTime" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentGlobalTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property TimeSpan CurrentGlobalTime { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentGlobalTime : TimeSpan" Usage="System.Windows.Media.Animation.Clock.CurrentGlobalTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.CurrentIteration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentIteration As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; CurrentIteration { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentIteration : Nullable&lt;int&gt;" Usage="System.Windows.Media.Animation.Clock.CurrentIteration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.CurrentProgress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentProgress As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; CurrentProgress { Nullable&lt;double&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentProgress : Nullable&lt;double&gt;" Usage="System.Windows.Media.Animation.Clock.CurrentProgress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.CurrentState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentState As ClockState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::ClockState CurrentState { System::Windows::Media::Animation::ClockState get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : System.Windows.Media.Animation.ClockState" Usage="System.Windows.Media.Animation.Clock.CurrentState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Clock.CurrentStateInvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentStateInvalidated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentStateInvalidated;" />
+      <MemberSignature Language="F#" Value="member this.CurrentStateInvalidated : EventHandler " Usage="member this.CurrentStateInvalidated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.CurrentTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentTime As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; CurrentTime { Nullable&lt;TimeSpan&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentTime : Nullable&lt;TimeSpan&gt;" Usage="System.Windows.Media.Animation.Clock.CurrentTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -364,6 +376,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Clock.CurrentTimeInvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentTimeInvalidated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentTimeInvalidated;" />
+      <MemberSignature Language="F#" Value="member this.CurrentTimeInvalidated : EventHandler " Usage="member this.CurrentTimeInvalidated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Clock.DiscontinuousTimeMovement" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DiscontinuousTimeMovement ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DiscontinuousTimeMovement();" />
+      <MemberSignature Language="F#" Value="abstract member DiscontinuousTimeMovement : unit -&gt; unit&#xA;override this.DiscontinuousTimeMovement : unit -&gt; unit" Usage="clock.DiscontinuousTimeMovement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -410,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Clock.GetCanSlip" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCanSlip () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool GetCanSlip();" />
+      <MemberSignature Language="F#" Value="abstract member GetCanSlip : unit -&gt; bool&#xA;override this.GetCanSlip : unit -&gt; bool" Usage="clock.GetCanSlip " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -438,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Clock.GetCurrentTimeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCurrentTimeCore () As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual TimeSpan GetCurrentTimeCore();" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentTimeCore : unit -&gt; TimeSpan&#xA;override this.GetCurrentTimeCore : unit -&gt; TimeSpan" Usage="clock.GetCurrentTimeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -470,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.HasControllableRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasControllableRoot As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasControllableRoot { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasControllableRoot : bool" Usage="System.Windows.Media.Animation.Clock.HasControllableRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -491,6 +508,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.IsPaused" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPaused As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPaused { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPaused : bool" Usage="System.Windows.Media.Animation.Clock.IsPaused" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -513,6 +531,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.NaturalDuration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NaturalDuration As Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Duration NaturalDuration { System::Windows::Duration get(); };" />
+      <MemberSignature Language="F#" Value="member this.NaturalDuration : System.Windows.Duration" Usage="System.Windows.Media.Animation.Clock.NaturalDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -541,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Clock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Clock ^ Parent { System::Windows::Media::Animation::Clock ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Media.Animation.Clock" Usage="System.Windows.Media.Animation.Clock.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -561,6 +581,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Animation.Clock.RemoveRequested" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RemoveRequested As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RemoveRequested;" />
+      <MemberSignature Language="F#" Value="member this.RemoveRequested : EventHandler " Usage="member this.RemoveRequested : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -580,6 +601,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Clock.SpeedChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SpeedChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SpeedChanged();" />
+      <MemberSignature Language="F#" Value="abstract member SpeedChanged : unit -&gt; unit&#xA;override this.SpeedChanged : unit -&gt; unit" Usage="clock.SpeedChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -600,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Clock.Stopped" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Stopped ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Stopped();" />
+      <MemberSignature Language="F#" Value="abstract member Stopped : unit -&gt; unit&#xA;override this.Stopped : unit -&gt; unit" Usage="clock.Stopped " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -620,6 +643,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Clock.Timeline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeline As Timeline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Timeline ^ Timeline { System::Windows::Media::Animation::Timeline ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timeline : System.Windows.Media.Animation.Timeline" Usage="System.Windows.Media.Animation.Clock.Timeline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

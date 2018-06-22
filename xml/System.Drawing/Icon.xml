@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Icon" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Icon&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IDisposable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Icon sealed : MarshalByRefObject, ICloneable, IDisposable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type Icon = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISerializable&#xA;    interface ICloneable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : System.IO.Stream -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : string -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Icon original, valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.Drawing.Icon,System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(System::Drawing::Icon ^ original, System::Drawing::Size size);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : System.Drawing.Icon * System.Drawing.Size -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon (original, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.IO.Stream,System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(System::IO::Stream ^ stream, System::Drawing::Size size);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : System.IO.Stream * System.Drawing.Size -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon (stream, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.String,System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(System::String ^ fileName, System::Drawing::Size size);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : string * System.Drawing.Size -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon (fileName, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string resource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(Type ^ type, System::String ^ resource);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : Type * string -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon (type, resource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.Drawing.Icon,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (original As Icon, width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(System::Drawing::Icon ^ original, int width, int height);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : System.Drawing.Icon * int * int -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon (original, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.IO.Stream,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(System::IO::Stream ^ stream, int width, int height);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : System.IO.Stream * int * int -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon (stream, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.#ctor(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Icon(System::String ^ fileName, int width, int height);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Icon : string * int * int -&gt; System.Drawing.Icon" Usage="new System.Drawing.Icon (fileName, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -364,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="icon.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -388,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="icon.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -418,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.ExtractAssociatedIcon(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ExtractAssociatedIcon (filePath As String) As Icon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Icon ^ ExtractAssociatedIcon(System::String ^ filePath);" />
+      <MemberSignature Language="F#" Value="static member ExtractAssociatedIcon : string -&gt; System.Drawing.Icon" Usage="System.Drawing.Icon.ExtractAssociatedIcon filePath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -464,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!Icon ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="icon.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -484,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.FromHandle(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromHandle (handle As IntPtr) As Icon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Icon ^ FromHandle(IntPtr handle);" />
+      <MemberSignature Language="F#" Value="static member FromHandle : nativeint -&gt; System.Drawing.Icon" Usage="System.Drawing.Icon.FromHandle handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -535,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Icon.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Drawing.Icon.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -573,6 +589,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Icon.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="System.Drawing.Icon.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -598,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.Save(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (outputStream As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ outputStream);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream -&gt; unit" Usage="icon.Save outputStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -621,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Icon.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size" Usage="System.Drawing.Icon.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -670,6 +689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.ToBitmap" />
       <MemberSignature Language="VB.NET" Value="Public Function ToBitmap () As Bitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Bitmap ^ ToBitmap();" />
+      <MemberSignature Language="F#" Value="member this.ToBitmap : unit -&gt; System.Drawing.Bitmap" Usage="icon.ToBitmap " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -710,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Icon.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="icon.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -731,6 +752,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Icon.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int" Usage="System.Drawing.Icon.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

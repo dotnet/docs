@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IServiceProviderContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IServiceProviderContract&#xA;Implements IContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IServiceProviderContract : System::AddIn::Contract::IContract" />
+  <TypeSignature Language="F#" Value="type IServiceProviderContract = interface&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IServiceProviderContract.QueryService(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function QueryService (serviceIdentifier As String, serviceContractIdentifier As String) As IContract" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::IContract ^ QueryService(System::String ^ serviceIdentifier, System::String ^ serviceContractIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member QueryService : string * string -&gt; System.AddIn.Contract.IContract" Usage="iServiceProviderContract.QueryService (serviceIdentifier, serviceContractIdentifier)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

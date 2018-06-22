@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchPoint" />
   <TypeSignature Language="VB.NET" Value="Public Class TouchPoint&#xA;Implements IEquatable(Of TouchPoint)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TouchPoint : IEquatable&lt;System::Windows::Input::TouchPoint ^&gt;" />
+  <TypeSignature Language="F#" Value="type TouchPoint = class&#xA;    interface IEquatable&lt;TouchPoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchPoint.#ctor(System.Windows.Input.TouchDevice,System.Windows.Point,System.Windows.Rect,System.Windows.Input.TouchAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (device As TouchDevice, position As Point, bounds As Rect, action As TouchAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TouchPoint(System::Windows::Input::TouchDevice ^ device, System::Windows::Point position, System::Windows::Rect bounds, System::Windows::Input::TouchAction action);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.TouchPoint : System.Windows.Input.TouchDevice * System.Windows.Point * System.Windows.Rect * System.Windows.Input.TouchAction -&gt; System.Windows.Input.TouchPoint" Usage="new System.Windows.Input.TouchPoint (device, position, bounds, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As TouchAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::TouchAction Action { System::Windows::Input::TouchAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Windows.Input.TouchAction" Usage="System.Windows.Input.TouchPoint.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Bounds { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Windows.Rect" Usage="System.Windows.Input.TouchPoint.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.Position" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Position { System::Windows::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Windows.Point" Usage="System.Windows.Input.TouchPoint.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size Size { System::Windows::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Windows.Size" Usage="System.Windows.Input.TouchPoint.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.TouchDevice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TouchDevice As TouchDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::TouchDevice ^ TouchDevice { System::Windows::Input::TouchDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TouchDevice : System.Windows.Input.TouchDevice" Usage="System.Windows.Input.TouchPoint.TouchDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

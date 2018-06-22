@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasEditingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum InkCanvasEditingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class InkCanvasEditingMode" />
+  <TypeSignature Language="F#" Value="type InkCanvasEditingMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint" />
       <MemberSignature Language="VB.NET" Value="EraseByPoint" />
       <MemberSignature Language="C++ CLI" Value="EraseByPoint" />
+      <MemberSignature Language="F#" Value="EraseByPoint = 5" Usage="System.Windows.Controls.InkCanvasEditingMode.EraseByPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasEditingMode.EraseByStroke" />
       <MemberSignature Language="VB.NET" Value="EraseByStroke" />
       <MemberSignature Language="C++ CLI" Value="EraseByStroke" />
+      <MemberSignature Language="F#" Value="EraseByStroke = 6" Usage="System.Windows.Controls.InkCanvasEditingMode.EraseByStroke" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasEditingMode.GestureOnly" />
       <MemberSignature Language="VB.NET" Value="GestureOnly" />
       <MemberSignature Language="C++ CLI" Value="GestureOnly" />
+      <MemberSignature Language="F#" Value="GestureOnly = 2" Usage="System.Windows.Controls.InkCanvasEditingMode.GestureOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasEditingMode.Ink" />
       <MemberSignature Language="VB.NET" Value="Ink" />
       <MemberSignature Language="C++ CLI" Value="Ink" />
+      <MemberSignature Language="F#" Value="Ink = 1" Usage="System.Windows.Controls.InkCanvasEditingMode.Ink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasEditingMode.InkAndGesture" />
       <MemberSignature Language="VB.NET" Value="InkAndGesture" />
       <MemberSignature Language="C++ CLI" Value="InkAndGesture" />
+      <MemberSignature Language="F#" Value="InkAndGesture = 3" Usage="System.Windows.Controls.InkCanvasEditingMode.InkAndGesture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasEditingMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.InkCanvasEditingMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasEditingMode.Select" />
       <MemberSignature Language="VB.NET" Value="Select" />
       <MemberSignature Language="C++ CLI" Value="Select" />
+      <MemberSignature Language="F#" Value="Select = 4" Usage="System.Windows.Controls.InkCanvasEditingMode.Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

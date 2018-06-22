@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeConditionStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeConditionStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeConditionStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeConditionStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeStatement[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (condition As CodeExpression, ParamArray trueStatements As CodeStatement())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeConditionStatement(System::CodeDom::CodeExpression ^ condition, ... cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ trueStatements);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeConditionStatement : System.CodeDom.CodeExpression * System.CodeDom.CodeStatement[] -&gt; System.CodeDom.CodeConditionStatement" Usage="new System.CodeDom.CodeConditionStatement (condition, trueStatements)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeStatement[],System.CodeDom.CodeStatement[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (condition As CodeExpression, trueStatements As CodeStatement(), falseStatements As CodeStatement())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeConditionStatement(System::CodeDom::CodeExpression ^ condition, cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ trueStatements, cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ falseStatements);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeConditionStatement : System.CodeDom.CodeExpression * System.CodeDom.CodeStatement[] * System.CodeDom.CodeStatement[] -&gt; System.CodeDom.CodeConditionStatement" Usage="new System.CodeDom.CodeConditionStatement (condition, trueStatements, falseStatements)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Property Condition As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Condition { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeConditionStatement.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.FalseStatements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FalseStatements As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ FalseStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FalseStatements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeConditionStatement.FalseStatements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.TrueStatements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrueStatements As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ TrueStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrueStatements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeConditionStatement.TrueStatements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

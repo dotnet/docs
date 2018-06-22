@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusButton" />
   <TypeSignature Language="VB.NET" Value="Public Class StylusButton" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusButton" />
+  <TypeSignature Language="F#" Value="type StylusButton = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusButton.Guid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Guid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Guid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Guid : Guid" Usage="System.Windows.Input.StylusButton.Guid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusButton.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Input.StylusButton.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusButton.StylusButtonState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StylusButtonState As StylusButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusButtonState StylusButtonState { System::Windows::Input::StylusButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.StylusButtonState : System.Windows.Input.StylusButtonState" Usage="System.Windows.Input.StylusButton.StylusButtonState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusButton.StylusDevice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StylusDevice As StylusDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusDevice ^ StylusDevice { System::Windows::Input::StylusDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StylusDevice : System.Windows.Input.StylusDevice" Usage="System.Windows.Input.StylusButton.StylusDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusButton.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stylusButton.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

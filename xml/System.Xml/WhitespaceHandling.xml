@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.WhitespaceHandling" />
   <TypeSignature Language="VB.NET" Value="Public Enum WhitespaceHandling" />
   <TypeSignature Language="C++ CLI" Value="public enum class WhitespaceHandling" />
+  <TypeSignature Language="F#" Value="type WhitespaceHandling = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WhitespaceHandling.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Xml.WhitespaceHandling.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WhitespaceHandling.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Xml.WhitespaceHandling.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.WhitespaceHandling.Significant" />
       <MemberSignature Language="VB.NET" Value="Significant" />
       <MemberSignature Language="C++ CLI" Value="Significant" />
+      <MemberSignature Language="F#" Value="Significant = 1" Usage="System.Xml.WhitespaceHandling.Significant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

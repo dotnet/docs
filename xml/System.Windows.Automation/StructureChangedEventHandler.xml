@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.StructureChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StructureChangedEventHandler(sender As Object, e As StructureChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StructureChangedEventHandler(System::Object ^ sender, StructureChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StructureChangedEventHandler = delegate of obj * StructureChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

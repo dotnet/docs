@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.LogicalCallContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LogicalCallContext&#xA;Implements ICloneable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class LogicalCallContext sealed : ICloneable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type LogicalCallContext = class&#xA;    interface ISerializable&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.LogicalCallContext.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="logicalCallContext.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.LogicalCallContext.FreeNamedDataSlot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FreeNamedDataSlot (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FreeNamedDataSlot(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.FreeNamedDataSlot : string -&gt; unit" Usage="logicalCallContext.FreeNamedDataSlot name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.LogicalCallContext.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetData : string -&gt; obj" Usage="logicalCallContext.GetData name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.LogicalCallContext.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="logicalCallContext.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.LogicalCallContext.HasInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasInfo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasInfo : bool" Usage="System.Runtime.Remoting.Messaging.LogicalCallContext.HasInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.LogicalCallContext.SetData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (name As String, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::String ^ name, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="member this.SetData : string * obj -&gt; unit" Usage="logicalCallContext.SetData (name, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

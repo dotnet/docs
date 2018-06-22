@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ContactType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContactType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContactType" />
+  <TypeSignature Language="F#" Value="type ContactType = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Administrative" />
       <MemberSignature Language="VB.NET" Value="Administrative" />
       <MemberSignature Language="C++ CLI" Value="Administrative" />
+      <MemberSignature Language="F#" Value="Administrative = 3" Usage="System.IdentityModel.Metadata.ContactType.Administrative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Billing" />
       <MemberSignature Language="VB.NET" Value="Billing" />
       <MemberSignature Language="C++ CLI" Value="Billing" />
+      <MemberSignature Language="F#" Value="Billing = 4" Usage="System.IdentityModel.Metadata.ContactType.Billing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Other" />
       <MemberSignature Language="VB.NET" Value="Other" />
       <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 5" Usage="System.IdentityModel.Metadata.ContactType.Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Support" />
       <MemberSignature Language="VB.NET" Value="Support" />
       <MemberSignature Language="C++ CLI" Value="Support" />
+      <MemberSignature Language="F#" Value="Support = 2" Usage="System.IdentityModel.Metadata.ContactType.Support" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Technical" />
       <MemberSignature Language="VB.NET" Value="Technical" />
       <MemberSignature Language="C++ CLI" Value="Technical" />
+      <MemberSignature Language="F#" Value="Technical = 1" Usage="System.IdentityModel.Metadata.ContactType.Technical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.IdentityModel.Metadata.ContactType.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

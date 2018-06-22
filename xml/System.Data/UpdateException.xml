@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.UpdateException" />
   <TypeSignature Language="VB.NET" Value="Public Class UpdateException&#xA;Inherits DataException" />
   <TypeSignature Language="C++ CLI" Value="public ref class UpdateException : System::Data::DataException" />
+  <TypeSignature Language="F#" Value="type UpdateException = class&#xA;    inherit DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.UpdateException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdateException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.UpdateException : string -&gt; System.Data.UpdateException" Usage="new System.Data.UpdateException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.UpdateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; UpdateException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Data.UpdateException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.UpdateException" Usage="new System.Data.UpdateException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.UpdateException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdateException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.UpdateException : string * Exception -&gt; System.Data.UpdateException" Usage="new System.Data.UpdateException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.UpdateException.#ctor(System.String,System.Exception,System.Collections.Generic.IEnumerable{System.Data.Objects.ObjectStateEntry})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, stateEntries As IEnumerable(Of ObjectStateEntry))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdateException(System::String ^ message, Exception ^ innerException, System::Collections::Generic::IEnumerable&lt;System::Data::Objects::ObjectStateEntry ^&gt; ^ stateEntries);" />
+      <MemberSignature Language="F#" Value="new System.Data.UpdateException : string * Exception * seq&lt;System.Data.Objects.ObjectStateEntry&gt; -&gt; System.Data.UpdateException" Usage="new System.Data.UpdateException (message, innerException, stateEntries)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.UpdateException.StateEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateEntries As ReadOnlyCollection(Of ObjectStateEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Objects::ObjectStateEntry ^&gt; ^ StateEntries { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Objects::ObjectStateEntry ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StateEntries : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Objects.ObjectStateEntry&gt;" Usage="System.Data.UpdateException.StateEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

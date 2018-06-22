@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.Publish" />
   <TypeSignature Language="VB.NET" Value="Public Class Publish&#xA;Implements IComSoapPublisher" />
   <TypeSignature Language="C++ CLI" Value="public ref class Publish : System::EnterpriseServices::Internal::IComSoapPublisher" />
+  <TypeSignature Language="F#" Value="type Publish = class&#xA;    interface IComSoapPublisher" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.CreateMailBox(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateMailBox (RootMailServer As String, MailBox As String, ByRef SmtpName As String, ByRef Domain As String, ByRef PhysicalPath As String, ByRef Error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CreateMailBox(System::String ^ RootMailServer, System::String ^ MailBox, [Runtime::InteropServices::Out] System::String ^ % SmtpName, [Runtime::InteropServices::Out] System::String ^ % Domain, [Runtime::InteropServices::Out] System::String ^ % PhysicalPath, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member CreateMailBox : string * string *  *  *  *  -&gt; unit&#xA;override this.CreateMailBox : string * string *  *  *  *  -&gt; unit" Usage="publish.CreateMailBox (RootMailServer, MailBox, SmtpName, Domain, PhysicalPath, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateMailBox(System.String,System.String,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateVirtualRoot (Operation As String, FullUrl As String, ByRef BaseUrl As String, ByRef VirtualRoot As String, ByRef PhysicalPath As String, ByRef Error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CreateVirtualRoot(System::String ^ Operation, System::String ^ FullUrl, [Runtime::InteropServices::Out] System::String ^ % BaseUrl, [Runtime::InteropServices::Out] System::String ^ % VirtualRoot, [Runtime::InteropServices::Out] System::String ^ % PhysicalPath, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member CreateVirtualRoot : string * string *  *  *  *  -&gt; unit&#xA;override this.CreateVirtualRoot : string * string *  *  *  *  -&gt; unit" Usage="publish.CreateVirtualRoot (Operation, FullUrl, BaseUrl, VirtualRoot, PhysicalPath, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)</InterfaceMember>
@@ -175,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.DeleteMailBox(System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteMailBox (RootMailServer As String, MailBox As String, ByRef Error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteMailBox(System::String ^ RootMailServer, System::String ^ MailBox, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteMailBox : string * string *  -&gt; unit&#xA;override this.DeleteMailBox : string * string *  -&gt; unit" Usage="publish.DeleteMailBox (RootMailServer, MailBox, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteMailBox(System.String,System.String,System.String@)</InterfaceMember>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.DeleteVirtualRoot(System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteVirtualRoot (RootWebServer As String, FullUrl As String, ByRef Error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteVirtualRoot(System::String ^ RootWebServer, System::String ^ FullUrl, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteVirtualRoot : string * string *  -&gt; unit&#xA;override this.DeleteVirtualRoot : string * string *  -&gt; unit" Usage="publish.DeleteVirtualRoot (RootWebServer, FullUrl, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot(System.String,System.String,System.String@)</InterfaceMember>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.GacInstall(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GacInstall (AssemblyPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GacInstall(System::String ^ AssemblyPath);" />
+      <MemberSignature Language="F#" Value="abstract member GacInstall : string -&gt; unit&#xA;override this.GacInstall : string -&gt; unit" Usage="publish.GacInstall AssemblyPath" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.GacInstall(System.String)</InterfaceMember>
@@ -286,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.GacRemove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GacRemove (AssemblyPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GacRemove(System::String ^ AssemblyPath);" />
+      <MemberSignature Language="F#" Value="abstract member GacRemove : string -&gt; unit&#xA;override this.GacRemove : string -&gt; unit" Usage="publish.GacRemove AssemblyPath" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.GacRemove(System.String)</InterfaceMember>
@@ -327,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.GetAssemblyNameForCache(System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAssemblyNameForCache (TypeLibPath As String, ByRef CachePath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetAssemblyNameForCache(System::String ^ TypeLibPath, [Runtime::InteropServices::Out] System::String ^ % CachePath);" />
+      <MemberSignature Language="F#" Value="abstract member GetAssemblyNameForCache : string *  -&gt; unit&#xA;override this.GetAssemblyNameForCache : string *  -&gt; unit" Usage="publish.GetAssemblyNameForCache (TypeLibPath, CachePath)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.GetAssemblyNameForCache(System.String,System.String@)</InterfaceMember>
@@ -371,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.GetClientPhysicalPath(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetClientPhysicalPath (CreateDir As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetClientPhysicalPath(bool CreateDir);" />
+      <MemberSignature Language="F#" Value="static member GetClientPhysicalPath : bool -&gt; string" Usage="System.EnterpriseServices.Internal.Publish.GetClientPhysicalPath CreateDir" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -403,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.GetTypeNameFromProgId(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeNameFromProgId (AssemblyPath As String, ProgId As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetTypeNameFromProgId(System::String ^ AssemblyPath, System::String ^ ProgId);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeNameFromProgId : string * string -&gt; string&#xA;override this.GetTypeNameFromProgId : string * string -&gt; string" Usage="publish.GetTypeNameFromProgId (AssemblyPath, ProgId)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.GetTypeNameFromProgId(System.String,System.String)</InterfaceMember>
@@ -434,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.ParseUrl(System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ParseUrl (FullUrl As String, ByRef BaseUrl As String, ByRef VirtualRoot As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ParseUrl(System::String ^ FullUrl, [Runtime::InteropServices::Out] System::String ^ % BaseUrl, [Runtime::InteropServices::Out] System::String ^ % VirtualRoot);" />
+      <MemberSignature Language="F#" Value="static member ParseUrl : string *  *  -&gt; unit" Usage="System.EnterpriseServices.Internal.Publish.ParseUrl (FullUrl, BaseUrl, VirtualRoot)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -487,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.ProcessClientTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessClientTlb (ProgId As String, SrcTlbPath As String, PhysicalPath As String, VRoot As String, BaseUrl As String, Mode As String, Transport As String, ByRef AssemblyName As String, ByRef TypeName As String, ByRef Error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessClientTlb(System::String ^ ProgId, System::String ^ SrcTlbPath, System::String ^ PhysicalPath, System::String ^ VRoot, System::String ^ BaseUrl, System::String ^ Mode, System::String ^ Transport, [Runtime::InteropServices::Out] System::String ^ % AssemblyName, [Runtime::InteropServices::Out] System::String ^ % TypeName, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessClientTlb : string * string * string * string * string * string * string *  *  *  -&gt; unit&#xA;override this.ProcessClientTlb : string * string * string * string * string * string * string *  *  *  -&gt; unit" Usage="publish.ProcessClientTlb (ProgId, SrcTlbPath, PhysicalPath, VRoot, BaseUrl, Mode, Transport, AssemblyName, TypeName, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessClientTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
@@ -544,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.ProcessServerTlb(System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessServerTlb (ProgId As String, SrcTlbPath As String, PhysicalPath As String, Operation As String, ByRef strAssemblyName As String, ByRef TypeName As String, ByRef Error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessServerTlb(System::String ^ ProgId, System::String ^ SrcTlbPath, System::String ^ PhysicalPath, System::String ^ Operation, [Runtime::InteropServices::Out] System::String ^ % strAssemblyName, [Runtime::InteropServices::Out] System::String ^ % TypeName, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessServerTlb : string * string * string * string *  *  *  -&gt; unit&#xA;override this.ProcessServerTlb : string * string * string * string *  *  *  -&gt; unit" Usage="publish.ProcessServerTlb (ProgId, SrcTlbPath, PhysicalPath, Operation, strAssemblyName, TypeName, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.ProcessServerTlb(System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)</InterfaceMember>
@@ -594,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.RegisterAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterAssembly (AssemblyPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterAssembly(System::String ^ AssemblyPath);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterAssembly : string -&gt; unit&#xA;override this.RegisterAssembly : string -&gt; unit" Usage="publish.RegisterAssembly AssemblyPath" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.RegisterAssembly(System.String)</InterfaceMember>
@@ -653,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.Publish.UnRegisterAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnRegisterAssembly (AssemblyPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnRegisterAssembly(System::String ^ AssemblyPath);" />
+      <MemberSignature Language="F#" Value="abstract member UnRegisterAssembly : string -&gt; unit&#xA;override this.UnRegisterAssembly : string -&gt; unit" Usage="publish.UnRegisterAssembly AssemblyPath" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapPublisher.UnRegisterAssembly(System.String)</InterfaceMember>

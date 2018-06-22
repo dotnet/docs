@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildFinishedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub BuildFinishedEventHandler(sender As Object, e As BuildFinishedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void BuildFinishedEventHandler(System::Object ^ sender, BuildFinishedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type BuildFinishedEventHandler = delegate of obj * BuildFinishedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

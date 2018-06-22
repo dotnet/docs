@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar" />
   <TypeSignature Language="VB.NET" Value="Public Class MonthCalendar&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class MonthCalendar : System::Windows::Forms::Control" />
+  <TypeSignature Language="F#" Value="type MonthCalendar = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.AddAnnuallyBoldedDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAnnuallyBoldedDate (date As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAnnuallyBoldedDate(DateTime date);" />
+      <MemberSignature Language="F#" Value="member this.AddAnnuallyBoldedDate : DateTime -&gt; unit" Usage="monthCalendar.AddAnnuallyBoldedDate date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.AddBoldedDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBoldedDate (date As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBoldedDate(DateTime date);" />
+      <MemberSignature Language="F#" Value="member this.AddBoldedDate : DateTime -&gt; unit" Usage="monthCalendar.AddBoldedDate date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.AddMonthlyBoldedDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddMonthlyBoldedDate (date As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMonthlyBoldedDate(DateTime date);" />
+      <MemberSignature Language="F#" Value="member this.AddMonthlyBoldedDate : DateTime -&gt; unit" Usage="monthCalendar.AddMonthlyBoldedDate date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -225,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.AnnuallyBoldedDates" />
       <MemberSignature Language="VB.NET" Value="Public Property AnnuallyBoldedDates As DateTime()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;DateTime&gt; ^ AnnuallyBoldedDates { cli::array &lt;DateTime&gt; ^ get(); void set(cli::array &lt;DateTime&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AnnuallyBoldedDates : DateTime[] with get, set" Usage="System.Windows.Forms.MonthCalendar.AnnuallyBoldedDates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -268,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.MonthCalendar.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.MonthCalendar.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -348,6 +355,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -375,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.MonthCalendar.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -410,6 +419,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -437,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.BoldedDates" />
       <MemberSignature Language="VB.NET" Value="Public Property BoldedDates As DateTime()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;DateTime&gt; ^ BoldedDates { cli::array &lt;DateTime&gt; ^ get(); void set(cli::array &lt;DateTime&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BoldedDates : DateTime[] with get, set" Usage="System.Windows.Forms.MonthCalendar.BoldedDates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -478,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.CalendarDimensions" />
       <MemberSignature Language="VB.NET" Value="Public Property CalendarDimensions As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size CalendarDimensions { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.CalendarDimensions : System.Drawing.Size with get, set" Usage="System.Windows.Forms.MonthCalendar.CalendarDimensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -521,6 +533,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -555,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="monthCalendar.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -584,6 +598,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.CreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="monthCalendar.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -604,6 +619,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.MonthCalendar.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -632,6 +648,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.DateChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DateChanged As DateRangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DateRangeEventHandler ^ DateChanged;" />
+      <MemberSignature Language="F#" Value="member this.DateChanged : System.Windows.Forms.DateRangeEventHandler " Usage="member this.DateChanged : System.Windows.Forms.DateRangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -676,6 +693,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.DateSelected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DateSelected As DateRangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DateRangeEventHandler ^ DateSelected;" />
+      <MemberSignature Language="F#" Value="member this.DateSelected : System.Windows.Forms.DateRangeEventHandler " Usage="member this.DateSelected : System.Windows.Forms.DateRangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -714,6 +732,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.DefaultImeMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultImeMode As ImeMode" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::ImeMode DefaultImeMode { System::Windows::Forms::ImeMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultImeMode : System.Windows.Forms.ImeMode" Usage="System.Windows.Forms.MonthCalendar.DefaultImeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -734,6 +753,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.DefaultMargin" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultMargin As Padding" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::Padding DefaultMargin { System::Windows::Forms::Padding get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.MonthCalendar.DefaultMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -754,6 +774,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.MonthCalendar.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -782,6 +803,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.DefWndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefWndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DefWndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.DefWndProc :  -&gt; unit" Usage="monthCalendar.DefWndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -811,6 +833,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="monthCalendar.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -850,6 +873,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.DoubleBuffered" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property DoubleBuffered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DoubleBuffered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleBuffered : bool with get, set" Usage="System.Windows.Forms.MonthCalendar.DoubleBuffered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -883,6 +907,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.DoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -917,6 +942,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.FirstDayOfWeek" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstDayOfWeek As Day" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Day FirstDayOfWeek { System::Windows::Forms::Day get(); void set(System::Windows::Forms::Day value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstDayOfWeek : System.Windows.Forms.Day with get, set" Usage="System.Windows.Forms.MonthCalendar.FirstDayOfWeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -958,6 +984,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.MonthCalendar.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1002,6 +1029,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.GetDisplayRange(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDisplayRange (visible As Boolean) As SelectionRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::SelectionRange ^ GetDisplayRange(bool visible);" />
+      <MemberSignature Language="F#" Value="member this.GetDisplayRange : bool -&gt; System.Windows.Forms.SelectionRange" Usage="monthCalendar.GetDisplayRange visible" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1044,6 +1072,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.MonthCalendar/HitTestInfo HitTest(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.HitTest(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::MonthCalendar::HitTestInfo ^ HitTest(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : System.Drawing.Point -&gt; System.Windows.Forms.MonthCalendar.HitTestInfo" Usage="monthCalendar.HitTest point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1069,6 +1098,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.HitTest(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function HitTest (x As Integer, y As Integer) As MonthCalendar.HitTestInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::MonthCalendar::HitTestInfo ^ HitTest(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : int * int -&gt; System.Windows.Forms.MonthCalendar.HitTestInfo" Usage="monthCalendar.HitTest (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1097,6 +1127,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.ImeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ImeMode As ImeMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImeMode ImeMode { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ImeMode : System.Windows.Forms.ImeMode with get, set" Usage="System.Windows.Forms.MonthCalendar.ImeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1132,6 +1163,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.ImeModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ImeModeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1159,6 +1191,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.IsInputKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.IsInputKey : System.Windows.Forms.Keys -&gt; bool" Usage="monthCalendar.IsInputKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1185,6 +1218,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.MaxDate" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MaxDate { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDate : DateTime with get, set" Usage="System.Windows.Forms.MonthCalendar.MaxDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1218,6 +1252,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.MaxSelectionCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxSelectionCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSelectionCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxSelectionCount : int with get, set" Usage="System.Windows.Forms.MonthCalendar.MaxSelectionCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1266,6 +1301,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.MinDate" />
       <MemberSignature Language="VB.NET" Value="Public Property MinDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MinDate { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.MinDate : DateTime with get, set" Usage="System.Windows.Forms.MonthCalendar.MinDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1302,6 +1338,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.MonthlyBoldedDates" />
       <MemberSignature Language="VB.NET" Value="Public Property MonthlyBoldedDates As DateTime()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;DateTime&gt; ^ MonthlyBoldedDates { cli::array &lt;DateTime&gt; ^ get(); void set(cli::array &lt;DateTime&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MonthlyBoldedDates : DateTime[] with get, set" Usage="System.Windows.Forms.MonthCalendar.MonthlyBoldedDates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1343,6 +1380,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.MouseClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
+      <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1370,6 +1408,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.MouseDoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
+      <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1397,6 +1436,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.OnBackColorChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBackColorChanged : EventArgs -&gt; unit" Usage="monthCalendar.OnBackColorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1421,6 +1461,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.OnDateChanged(System.Windows.Forms.DateRangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDateChanged (drevent As DateRangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDateChanged(System::Windows::Forms::DateRangeEventArgs ^ drevent);" />
+      <MemberSignature Language="F#" Value="abstract member OnDateChanged : System.Windows.Forms.DateRangeEventArgs -&gt; unit&#xA;override this.OnDateChanged : System.Windows.Forms.DateRangeEventArgs -&gt; unit" Usage="monthCalendar.OnDateChanged drevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1457,6 +1498,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.OnDateSelected(System.Windows.Forms.DateRangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDateSelected (drevent As DateRangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDateSelected(System::Windows::Forms::DateRangeEventArgs ^ drevent);" />
+      <MemberSignature Language="F#" Value="abstract member OnDateSelected : System.Windows.Forms.DateRangeEventArgs -&gt; unit&#xA;override this.OnDateSelected : System.Windows.Forms.DateRangeEventArgs -&gt; unit" Usage="monthCalendar.OnDateSelected drevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1493,6 +1535,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="monthCalendar.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1530,6 +1573,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.OnForeColorChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnForeColorChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnForeColorChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnForeColorChanged : EventArgs -&gt; unit" Usage="monthCalendar.OnForeColorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1554,6 +1598,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="monthCalendar.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1578,6 +1623,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.OnHandleDestroyed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="monthCalendar.OnHandleDestroyed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1613,6 +1659,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.OnRightToLeftLayoutChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRightToLeftLayoutChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRightToLeftLayoutChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRightToLeftLayoutChanged : EventArgs -&gt; unit&#xA;override this.OnRightToLeftLayoutChanged : EventArgs -&gt; unit" Usage="monthCalendar.OnRightToLeftLayoutChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1653,6 +1700,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.MonthCalendar.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1692,6 +1740,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1728,6 +1777,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.Paint" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1762,6 +1812,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.RemoveAllAnnuallyBoldedDates" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllAnnuallyBoldedDates ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllAnnuallyBoldedDates();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAllAnnuallyBoldedDates : unit -&gt; unit" Usage="monthCalendar.RemoveAllAnnuallyBoldedDates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1791,6 +1842,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.RemoveAllBoldedDates" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllBoldedDates ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllBoldedDates();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAllBoldedDates : unit -&gt; unit" Usage="monthCalendar.RemoveAllBoldedDates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1829,6 +1881,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.RemoveAllMonthlyBoldedDates" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllMonthlyBoldedDates ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllMonthlyBoldedDates();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAllMonthlyBoldedDates : unit -&gt; unit" Usage="monthCalendar.RemoveAllMonthlyBoldedDates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1858,6 +1911,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.RemoveAnnuallyBoldedDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAnnuallyBoldedDate (date As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAnnuallyBoldedDate(DateTime date);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAnnuallyBoldedDate : DateTime -&gt; unit" Usage="monthCalendar.RemoveAnnuallyBoldedDate date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1889,6 +1943,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.RemoveBoldedDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveBoldedDate (date As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveBoldedDate(DateTime date);" />
+      <MemberSignature Language="F#" Value="member this.RemoveBoldedDate : DateTime -&gt; unit" Usage="monthCalendar.RemoveBoldedDate date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1929,6 +1984,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.RemoveMonthlyBoldedDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveMonthlyBoldedDate (date As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveMonthlyBoldedDate(DateTime date);" />
+      <MemberSignature Language="F#" Value="member this.RemoveMonthlyBoldedDate : DateTime -&gt; unit" Usage="monthCalendar.RemoveMonthlyBoldedDate date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1960,6 +2016,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.RescaleConstantsForDpi(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RescaleConstantsForDpi (deviceDpiOld As Integer, deviceDpiNew As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RescaleConstantsForDpi(int deviceDpiOld, int deviceDpiNew);" />
+      <MemberSignature Language="F#" Value="override this.RescaleConstantsForDpi : int * int -&gt; unit" Usage="monthCalendar.RescaleConstantsForDpi (deviceDpiOld, deviceDpiNew)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1985,6 +2042,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.RightToLeftLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeftLayout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RightToLeftLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayout : bool with get, set" Usage="System.Windows.Forms.MonthCalendar.RightToLeftLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2023,6 +2081,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.RightToLeftLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2059,6 +2118,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.ScrollChange" />
       <MemberSignature Language="VB.NET" Value="Public Property ScrollChange As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollChange { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollChange : int with get, set" Usage="System.Windows.Forms.MonthCalendar.ScrollChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2105,6 +2165,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.SelectionEnd" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionEnd As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime SelectionEnd { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionEnd : DateTime with get, set" Usage="System.Windows.Forms.MonthCalendar.SelectionEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2165,6 +2226,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.SelectionRange" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionRange As SelectionRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SelectionRange ^ SelectionRange { System::Windows::Forms::SelectionRange ^ get(); void set(System::Windows::Forms::SelectionRange ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionRange : System.Windows.Forms.SelectionRange with get, set" Usage="System.Windows.Forms.MonthCalendar.SelectionRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2222,6 +2284,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.SelectionStart" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionStart As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime SelectionStart { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionStart : DateTime with get, set" Usage="System.Windows.Forms.MonthCalendar.SelectionStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2282,6 +2345,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="monthCalendar.SetBoundsCore (x, y, width, height, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2313,6 +2377,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.SetCalendarDimensions(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCalendarDimensions (x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCalendarDimensions(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.SetCalendarDimensions : int * int -&gt; unit" Usage="monthCalendar.SetCalendarDimensions (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2348,6 +2413,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.SetDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDate (date As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDate(DateTime date);" />
+      <MemberSignature Language="F#" Value="member this.SetDate : DateTime -&gt; unit" Usage="monthCalendar.SetDate date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2385,6 +2451,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.SetSelectionRange(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSelectionRange (date1 As DateTime, date2 As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectionRange(DateTime date1, DateTime date2);" />
+      <MemberSignature Language="F#" Value="member this.SetSelectionRange : DateTime * DateTime -&gt; unit" Usage="monthCalendar.SetSelectionRange (date1, date2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2444,6 +2511,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.ShowToday" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowToday As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowToday { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowToday : bool with get, set" Usage="System.Windows.Forms.MonthCalendar.ShowToday" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2487,6 +2555,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.ShowTodayCircle" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowTodayCircle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowTodayCircle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowTodayCircle : bool with get, set" Usage="System.Windows.Forms.MonthCalendar.ShowTodayCircle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2530,6 +2599,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.ShowWeekNumbers" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowWeekNumbers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowWeekNumbers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowWeekNumbers : bool with get, set" Usage="System.Windows.Forms.MonthCalendar.ShowWeekNumbers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2570,6 +2640,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.SingleMonthSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingleMonthSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size SingleMonthSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingleMonthSize : System.Drawing.Size" Usage="System.Windows.Forms.MonthCalendar.SingleMonthSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2608,6 +2679,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size with get, set" Usage="System.Windows.Forms.MonthCalendar.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2636,6 +2708,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.MonthCalendar.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2678,6 +2751,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MonthCalendar.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2705,6 +2779,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.TitleBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property TitleBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color TitleBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.TitleBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.MonthCalendar.TitleBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2744,6 +2819,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.TitleForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property TitleForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color TitleForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.TitleForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.MonthCalendar.TitleForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2781,6 +2857,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.TodayDate" />
       <MemberSignature Language="VB.NET" Value="Public Property TodayDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TodayDate { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.TodayDate : DateTime with get, set" Usage="System.Windows.Forms.MonthCalendar.TodayDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2824,6 +2901,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.TodayDateSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TodayDateSet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TodayDateSet { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TodayDateSet : bool" Usage="System.Windows.Forms.MonthCalendar.TodayDateSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2854,6 +2932,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="monthCalendar.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2882,6 +2961,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.TrailingForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property TrailingForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color TrailingForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.TrailingForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.MonthCalendar.TrailingForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2921,6 +3001,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.UpdateBoldedDates" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateBoldedDates ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateBoldedDates();" />
+      <MemberSignature Language="F#" Value="member this.UpdateBoldedDates : unit -&gt; unit" Usage="monthCalendar.UpdateBoldedDates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2948,6 +3029,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MonthCalendar.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="monthCalendar.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

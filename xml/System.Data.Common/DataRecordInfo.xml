@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataRecordInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class DataRecordInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataRecordInfo" />
+  <TypeSignature Language="F#" Value="type DataRecordInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataRecordInfo.#ctor(System.Data.Metadata.Edm.TypeUsage,System.Collections.Generic.IEnumerable{System.Data.Metadata.Edm.EdmMember})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As TypeUsage, memberInfo As IEnumerable(Of EdmMember))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataRecordInfo(System::Data::Metadata::Edm::TypeUsage ^ metadata, System::Collections::Generic::IEnumerable&lt;System::Data::Metadata::Edm::EdmMember ^&gt; ^ memberInfo);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DataRecordInfo : System.Data.Metadata.Edm.TypeUsage * seq&lt;System.Data.Metadata.Edm.EdmMember&gt; -&gt; System.Data.Common.DataRecordInfo" Usage="new System.Data.Common.DataRecordInfo (metadata, memberInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataRecordInfo.FieldMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldMetadata As ReadOnlyCollection(Of FieldMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Common::FieldMetadata&gt; ^ FieldMetadata { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Common::FieldMetadata&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldMetadata : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.FieldMetadata&gt;" Usage="System.Data.Common.DataRecordInfo.FieldMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataRecordInfo.RecordType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecordType As TypeUsage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::TypeUsage ^ RecordType { System::Data::Metadata::Edm::TypeUsage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecordType : System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Common.DataRecordInfo.RecordType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterUnit" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrinterUnit" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrinterUnit" />
+  <TypeSignature Language="F#" Value="type PrinterUnit = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterUnit.Display" />
       <MemberSignature Language="VB.NET" Value="Display" />
       <MemberSignature Language="C++ CLI" Value="Display" />
+      <MemberSignature Language="F#" Value="Display = 0" Usage="System.Drawing.Printing.PrinterUnit.Display" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterUnit.HundredthsOfAMillimeter" />
       <MemberSignature Language="VB.NET" Value="HundredthsOfAMillimeter" />
       <MemberSignature Language="C++ CLI" Value="HundredthsOfAMillimeter" />
+      <MemberSignature Language="F#" Value="HundredthsOfAMillimeter = 2" Usage="System.Drawing.Printing.PrinterUnit.HundredthsOfAMillimeter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterUnit.TenthsOfAMillimeter" />
       <MemberSignature Language="VB.NET" Value="TenthsOfAMillimeter" />
       <MemberSignature Language="C++ CLI" Value="TenthsOfAMillimeter" />
+      <MemberSignature Language="F#" Value="TenthsOfAMillimeter = 3" Usage="System.Drawing.Printing.PrinterUnit.TenthsOfAMillimeter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterUnit.ThousandthsOfAnInch" />
       <MemberSignature Language="VB.NET" Value="ThousandthsOfAnInch" />
       <MemberSignature Language="C++ CLI" Value="ThousandthsOfAnInch" />
+      <MemberSignature Language="F#" Value="ThousandthsOfAnInch = 1" Usage="System.Drawing.Printing.PrinterUnit.ThousandthsOfAnInch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

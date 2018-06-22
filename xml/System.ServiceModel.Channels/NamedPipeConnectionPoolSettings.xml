@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeConnectionPoolSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamedPipeConnectionPoolSettings sealed" />
+  <TypeSignature Language="F#" Value="type NamedPipeConnectionPoolSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.GroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.IdleTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.MaxOutboundConnectionsPerEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxOutboundConnectionsPerEndpoint As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxOutboundConnectionsPerEndpoint { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxOutboundConnectionsPerEndpoint : int with get, set" Usage="System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.MaxOutboundConnectionsPerEndpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

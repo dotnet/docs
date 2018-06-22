@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveSDKReference" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveSDKReference&#xA;Inherits TaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveSDKReference : Microsoft::Build::Tasks::TaskExtension" />
+  <TypeSignature Language="F#" Value="type ResolveSDKReference = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveSDKReference.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="resolveSDKReference.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveSDKReference.InstalledSDKs" />
       <MemberSignature Language="VB.NET" Value="Public Property InstalledSDKs As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ InstalledSDKs { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstalledSDKs : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveSDKReference.InstalledSDKs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveSDKReference.LogResolutionErrorsAsWarnings" />
       <MemberSignature Language="VB.NET" Value="Public Property LogResolutionErrorsAsWarnings As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogResolutionErrorsAsWarnings { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogResolutionErrorsAsWarnings : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveSDKReference.LogResolutionErrorsAsWarnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveSDKReference.Prefer32Bit" />
       <MemberSignature Language="VB.NET" Value="Public Property Prefer32Bit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Prefer32Bit { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Prefer32Bit : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveSDKReference.Prefer32Bit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveSDKReference.References" />
       <MemberSignature Language="VB.NET" Value="Public Property References As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ References { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.References : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveSDKReference.References" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveSDKReference.ResolvedSDKReferences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedSDKReferences As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResolvedSDKReferences { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedSDKReferences : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.ResolveSDKReference.ResolvedSDKReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveSDKReference.SDKReferences" />
       <MemberSignature Language="VB.NET" Value="Public Property SDKReferences As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SDKReferences { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SDKReferences : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveSDKReference.SDKReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveSDKReference.TargetedSDKArchitecture" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetedSDKArchitecture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetedSDKArchitecture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetedSDKArchitecture : string with get, set" Usage="Microsoft.Build.Tasks.ResolveSDKReference.TargetedSDKArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -220,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveSDKReference.TargetedSDKConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetedSDKConfiguration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetedSDKConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetedSDKConfiguration : string with get, set" Usage="Microsoft.Build.Tasks.ResolveSDKReference.TargetedSDKConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ISoapUtility" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISoapUtility" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISoapUtility" />
+  <TypeSignature Language="F#" Value="type ISoapUtility = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapUtility.GetServerBinPath(System.String,System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetServerBinPath (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef binPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetServerBinPath(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % binPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetServerBinPath : string * string * string *  -&gt; unit" Usage="iSoapUtility.GetServerBinPath (rootWebServer, inBaseUrl, inVirtualRoot, binPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(System.String,System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetServerPhysicalPath (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef physicalPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetServerPhysicalPath(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % physicalPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetServerPhysicalPath : string * string * string *  -&gt; unit" Usage="iSoapUtility.GetServerPhysicalPath (rootWebServer, inBaseUrl, inVirtualRoot, physicalPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapUtility.Present" />
       <MemberSignature Language="VB.NET" Value="Public Sub Present ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Present();" />
+      <MemberSignature Language="F#" Value="abstract member Present : unit -&gt; unit" Usage="iSoapUtility.Present " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

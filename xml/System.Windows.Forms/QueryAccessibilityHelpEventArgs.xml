@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryAccessibilityHelpEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class QueryAccessibilityHelpEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryAccessibilityHelpEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type QueryAccessibilityHelpEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QueryAccessibilityHelpEventArgs.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (helpNamespace As String, helpString As String, helpKeyword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryAccessibilityHelpEventArgs(System::String ^ helpNamespace, System::String ^ helpString, System::String ^ helpKeyword);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.QueryAccessibilityHelpEventArgs : string * string * string -&gt; System.Windows.Forms.QueryAccessibilityHelpEventArgs" Usage="new System.Windows.Forms.QueryAccessibilityHelpEventArgs (helpNamespace, helpString, helpKeyword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpKeyword" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpKeyword As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string with get, set" Usage="System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpKeyword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpNamespace : string with get, set" Usage="System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpString" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpString : string with get, set" Usage="System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

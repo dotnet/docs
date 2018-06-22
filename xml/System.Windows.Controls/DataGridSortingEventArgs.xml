@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridSortingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridSortingEventArgs&#xA;Inherits DataGridColumnEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridSortingEventArgs : System::Windows::Controls::DataGridColumnEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridSortingEventArgs = class&#xA;    inherit DataGridColumnEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridSortingEventArgs.#ctor(System.Windows.Controls.DataGridColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (column As DataGridColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridSortingEventArgs(System::Windows::Controls::DataGridColumn ^ column);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridSortingEventArgs : System.Windows.Controls.DataGridColumn -&gt; System.Windows.Controls.DataGridSortingEventArgs" Usage="new System.Windows.Controls.DataGridSortingEventArgs column" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridSortingEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Controls.DataGridSortingEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

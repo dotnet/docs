@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ResourceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResourceType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ResourceType" />
+  <TypeSignature Language="F#" Value="type ResourceType = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.DSObject" />
       <MemberSignature Language="VB.NET" Value="DSObject" />
       <MemberSignature Language="C++ CLI" Value="DSObject" />
+      <MemberSignature Language="F#" Value="DSObject = 8" Usage="System.Security.AccessControl.ResourceType.DSObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.DSObjectAll" />
       <MemberSignature Language="VB.NET" Value="DSObjectAll" />
       <MemberSignature Language="C++ CLI" Value="DSObjectAll" />
+      <MemberSignature Language="F#" Value="DSObjectAll = 9" Usage="System.Security.AccessControl.ResourceType.DSObjectAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.FileObject" />
       <MemberSignature Language="VB.NET" Value="FileObject" />
       <MemberSignature Language="C++ CLI" Value="FileObject" />
+      <MemberSignature Language="F#" Value="FileObject = 1" Usage="System.Security.AccessControl.ResourceType.FileObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.KernelObject" />
       <MemberSignature Language="VB.NET" Value="KernelObject" />
       <MemberSignature Language="C++ CLI" Value="KernelObject" />
+      <MemberSignature Language="F#" Value="KernelObject = 6" Usage="System.Security.AccessControl.ResourceType.KernelObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.LMShare" />
       <MemberSignature Language="VB.NET" Value="LMShare" />
       <MemberSignature Language="C++ CLI" Value="LMShare" />
+      <MemberSignature Language="F#" Value="LMShare = 5" Usage="System.Security.AccessControl.ResourceType.LMShare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Printer" />
       <MemberSignature Language="VB.NET" Value="Printer" />
       <MemberSignature Language="C++ CLI" Value="Printer" />
+      <MemberSignature Language="F#" Value="Printer = 3" Usage="System.Security.AccessControl.ResourceType.Printer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.ProviderDefined" />
       <MemberSignature Language="VB.NET" Value="ProviderDefined" />
       <MemberSignature Language="C++ CLI" Value="ProviderDefined" />
+      <MemberSignature Language="F#" Value="ProviderDefined = 10" Usage="System.Security.AccessControl.ResourceType.ProviderDefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -203,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.RegistryKey" />
       <MemberSignature Language="VB.NET" Value="RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="RegistryKey" />
+      <MemberSignature Language="F#" Value="RegistryKey = 4" Usage="System.Security.AccessControl.ResourceType.RegistryKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -228,6 +237,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.RegistryWow6432Key" />
       <MemberSignature Language="VB.NET" Value="RegistryWow6432Key" />
       <MemberSignature Language="C++ CLI" Value="RegistryWow6432Key" />
+      <MemberSignature Language="F#" Value="RegistryWow6432Key = 12" Usage="System.Security.AccessControl.ResourceType.RegistryWow6432Key" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Service" />
       <MemberSignature Language="VB.NET" Value="Service" />
       <MemberSignature Language="C++ CLI" Value="Service" />
+      <MemberSignature Language="F#" Value="Service = 2" Usage="System.Security.AccessControl.ResourceType.Service" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -278,6 +289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Security.AccessControl.ResourceType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.WindowObject" />
       <MemberSignature Language="VB.NET" Value="WindowObject" />
       <MemberSignature Language="C++ CLI" Value="WindowObject" />
+      <MemberSignature Language="F#" Value="WindowObject = 7" Usage="System.Security.AccessControl.ResourceType.WindowObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -328,6 +341,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.WmiGuidObject" />
       <MemberSignature Language="VB.NET" Value="WmiGuidObject" />
       <MemberSignature Language="C++ CLI" Value="WmiGuidObject" />
+      <MemberSignature Language="F#" Value="WmiGuidObject = 11" Usage="System.Security.AccessControl.ResourceType.WmiGuidObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.PipelineStoreLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum PipelineStoreLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class PipelineStoreLocation" />
+  <TypeSignature Language="F#" Value="type PipelineStoreLocation = " />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.PipelineStoreLocation.ApplicationBase" />
       <MemberSignature Language="VB.NET" Value="ApplicationBase" />
       <MemberSignature Language="C++ CLI" Value="ApplicationBase" />
+      <MemberSignature Language="F#" Value="ApplicationBase = 0" Usage="System.AddIn.Hosting.PipelineStoreLocation.ApplicationBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

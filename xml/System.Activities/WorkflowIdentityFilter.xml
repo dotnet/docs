@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowIdentityFilter" />
   <TypeSignature Language="VB.NET" Value="Public Enum WorkflowIdentityFilter" />
   <TypeSignature Language="C++ CLI" Value="public enum class WorkflowIdentityFilter" />
+  <TypeSignature Language="F#" Value="type WorkflowIdentityFilter = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.WorkflowIdentityFilter.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="C++ CLI" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 1" Usage="System.Activities.WorkflowIdentityFilter.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.WorkflowIdentityFilter.AnyRevision" />
       <MemberSignature Language="VB.NET" Value="AnyRevision" />
       <MemberSignature Language="C++ CLI" Value="AnyRevision" />
+      <MemberSignature Language="F#" Value="AnyRevision = 2" Usage="System.Activities.WorkflowIdentityFilter.AnyRevision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.WorkflowIdentityFilter.Exact" />
       <MemberSignature Language="VB.NET" Value="Exact" />
       <MemberSignature Language="C++ CLI" Value="Exact" />
+      <MemberSignature Language="F#" Value="Exact = 0" Usage="System.Activities.WorkflowIdentityFilter.Exact" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

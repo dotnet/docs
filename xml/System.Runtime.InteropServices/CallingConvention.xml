@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CallingConvention" />
   <TypeSignature Language="VB.NET" Value="Public Enum CallingConvention" />
   <TypeSignature Language="C++ CLI" Value="public enum class CallingConvention" />
+  <TypeSignature Language="F#" Value="type CallingConvention = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CallingConvention.Cdecl" />
       <MemberSignature Language="VB.NET" Value="Cdecl" />
       <MemberSignature Language="C++ CLI" Value="Cdecl" />
+      <MemberSignature Language="F#" Value="Cdecl = 2" Usage="System.Runtime.InteropServices.CallingConvention.Cdecl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CallingConvention.FastCall" />
       <MemberSignature Language="VB.NET" Value="FastCall" />
       <MemberSignature Language="C++ CLI" Value="FastCall" />
+      <MemberSignature Language="F#" Value="FastCall = 5" Usage="System.Runtime.InteropServices.CallingConvention.FastCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CallingConvention.StdCall" />
       <MemberSignature Language="VB.NET" Value="StdCall" />
       <MemberSignature Language="C++ CLI" Value="StdCall" />
+      <MemberSignature Language="F#" Value="StdCall = 3" Usage="System.Runtime.InteropServices.CallingConvention.StdCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CallingConvention.ThisCall" />
       <MemberSignature Language="VB.NET" Value="ThisCall" />
       <MemberSignature Language="C++ CLI" Value="ThisCall" />
+      <MemberSignature Language="F#" Value="ThisCall = 4" Usage="System.Runtime.InteropServices.CallingConvention.ThisCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CallingConvention.Winapi" />
       <MemberSignature Language="VB.NET" Value="Winapi" />
       <MemberSignature Language="C++ CLI" Value="Winapi" />
+      <MemberSignature Language="F#" Value="Winapi = 1" Usage="System.Runtime.InteropServices.CallingConvention.Winapi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

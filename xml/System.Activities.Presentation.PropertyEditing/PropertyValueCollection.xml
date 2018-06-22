@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyValueCollection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PropertyValueCollection&#xA;Implements IEnumerable(Of PropertyValue), INotifyCollectionChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyValueCollection abstract : System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::PropertyEditing::PropertyValue ^&gt;, System::Collections::Specialized::INotifyCollectionChanged" />
+  <TypeSignature Language="F#" Value="type PropertyValueCollection = class&#xA;    interface seq&lt;PropertyValue&gt;&#xA;    interface IEnumerable&#xA;    interface INotifyCollectionChanged" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.#ctor(System.Activities.Presentation.PropertyEditing.PropertyValue)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (parentValue As PropertyValue)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PropertyValueCollection(System::Activities::Presentation::PropertyEditing::PropertyValue ^ parentValue);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.PropertyEditing.PropertyValueCollection : System.Activities.Presentation.PropertyEditing.PropertyValue -&gt; System.Activities.Presentation.PropertyEditing.PropertyValueCollection" Usage="new System.Activities.Presentation.PropertyEditing.PropertyValueCollection parentValue" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Add (value As Object) As PropertyValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::PropertyEditing::PropertyValue ^ Add(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; System.Activities.Presentation.PropertyEditing.PropertyValue" Usage="propertyValueCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event CollectionChanged As NotifyCollectionChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Activities.Presentation.PropertyEditing.PropertyValueCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEnumerator () As IEnumerator(Of PropertyValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerator&lt;System::Activities::Presentation::PropertyEditing::PropertyValue ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Activities.Presentation.PropertyEditing.PropertyValue&gt;" Usage="propertyValueCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.Insert(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Insert (value As Object, index As Integer) As PropertyValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::PropertyEditing::PropertyValue ^ Insert(System::Object ^ value, int index);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : obj * int -&gt; System.Activities.Presentation.PropertyEditing.PropertyValue" Usage="propertyValueCollection.Insert (value, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -163,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(index As Integer) As PropertyValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::PropertyEditing::PropertyValue ^ default[int] { System::Activities::Presentation::PropertyEditing::PropertyValue ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Activities.Presentation.PropertyEditing.PropertyValue" Usage="System.Activities.Presentation.PropertyEditing.PropertyValueCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -187,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="propertyValueCollection.OnCollectionChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -210,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.ParentValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentValue As PropertyValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::PropertyEditing::PropertyValue ^ ParentValue { System::Activities::Presentation::PropertyEditing::PropertyValue ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentValue : System.Activities.Presentation.PropertyEditing.PropertyValue" Usage="System.Activities.Presentation.PropertyEditing.PropertyValueCollection.ParentValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -229,6 +239,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Activities.Presentation.PropertyEditing.PropertyValue propertyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.Remove(System.Activities.Presentation.PropertyEditing.PropertyValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Remove(System::Activities::Presentation::PropertyEditing::PropertyValue ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Activities.Presentation.PropertyEditing.PropertyValue -&gt; bool" Usage="propertyValueCollection.Remove propertyValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -261,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit" Usage="propertyValueCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -284,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueCollection.SetIndex(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetIndex (currentIndex As Integer, newIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetIndex(int currentIndex, int newIndex);" />
+      <MemberSignature Language="F#" Value="abstract member SetIndex : int * int -&gt; unit" Usage="propertyValueCollection.SetIndex (currentIndex, newIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

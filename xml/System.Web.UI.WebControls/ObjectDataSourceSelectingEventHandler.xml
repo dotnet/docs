@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceSelectingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectDataSourceSelectingEventHandler(sender As Object, e As ObjectDataSourceSelectingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ObjectDataSourceSelectingEventHandler(System::Object ^ sender, ObjectDataSourceSelectingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ObjectDataSourceSelectingEventHandler = delegate of obj * ObjectDataSourceSelectingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

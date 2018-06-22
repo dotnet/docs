@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.EncryptionMethod" />
   <TypeSignature Language="VB.NET" Value="Public Class EncryptionMethod" />
   <TypeSignature Language="C++ CLI" Value="public ref class EncryptionMethod" />
+  <TypeSignature Language="F#" Value="type EncryptionMethod = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.EncryptionMethod.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (algorithm As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptionMethod(Uri ^ algorithm);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.EncryptionMethod : Uri -&gt; System.IdentityModel.Metadata.EncryptionMethod" Usage="new System.IdentityModel.Metadata.EncryptionMethod algorithm" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EncryptionMethod.Algorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property Algorithm As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Algorithm { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Algorithm : Uri with get, set" Usage="System.IdentityModel.Metadata.EncryptionMethod.Algorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

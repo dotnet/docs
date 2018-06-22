@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DynamicDocumentPaginator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DynamicDocumentPaginator&#xA;Inherits DocumentPaginator" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicDocumentPaginator abstract : System::Windows::Documents::DocumentPaginator" />
+  <TypeSignature Language="F#" Value="type DynamicDocumentPaginator = class&#xA;    inherit DocumentPaginator" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DynamicDocumentPaginator.GetObjectPosition(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetObjectPosition (value As Object) As ContentPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Documents::ContentPosition ^ GetObjectPosition(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectPosition : obj -&gt; System.Windows.Documents.ContentPosition" Usage="dynamicDocumentPaginator.GetObjectPosition value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetPageNumber(class System.Windows.Documents.ContentPosition contentPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumber(System.Windows.Documents.ContentPosition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetPageNumber(System::Windows::Documents::ContentPosition ^ contentPosition);" />
+      <MemberSignature Language="F#" Value="abstract member GetPageNumber : System.Windows.Documents.ContentPosition -&gt; int" Usage="dynamicDocumentPaginator.GetPageNumber contentPosition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPageNumberAsync(class System.Windows.Documents.ContentPosition contentPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPageNumberAsync(System::Windows::Documents::ContentPosition ^ contentPosition);" />
+      <MemberSignature Language="F#" Value="abstract member GetPageNumberAsync : System.Windows.Documents.ContentPosition -&gt; unit&#xA;override this.GetPageNumberAsync : System.Windows.Documents.ContentPosition -&gt; unit" Usage="dynamicDocumentPaginator.GetPageNumberAsync contentPosition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPageNumberAsync(class System.Windows.Documents.ContentPosition contentPosition, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPageNumberAsync(System::Windows::Documents::ContentPosition ^ contentPosition, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="abstract member GetPageNumberAsync : System.Windows.Documents.ContentPosition * obj -&gt; unit&#xA;override this.GetPageNumberAsync : System.Windows.Documents.ContentPosition * obj -&gt; unit" Usage="dynamicDocumentPaginator.GetPageNumberAsync (contentPosition, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event GetPageNumberCompleted As GetPageNumberCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Documents::GetPageNumberCompletedEventHandler ^ GetPageNumberCompleted;" />
+      <MemberSignature Language="F#" Value="member this.GetPageNumberCompleted : System.Windows.Documents.GetPageNumberCompletedEventHandler " Usage="member this.GetPageNumberCompleted : System.Windows.Documents.GetPageNumberCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DynamicDocumentPaginator.GetPagePosition(System.Windows.Documents.DocumentPage)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPagePosition (page As DocumentPage) As ContentPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Documents::ContentPosition ^ GetPagePosition(System::Windows::Documents::DocumentPage ^ page);" />
+      <MemberSignature Language="F#" Value="abstract member GetPagePosition : System.Windows.Documents.DocumentPage -&gt; System.Windows.Documents.ContentPosition" Usage="dynamicDocumentPaginator.GetPagePosition page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DynamicDocumentPaginator.IsBackgroundPaginationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsBackgroundPaginationEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsBackgroundPaginationEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsBackgroundPaginationEnabled : bool with get, set" Usage="System.Windows.Documents.DynamicDocumentPaginator.IsBackgroundPaginationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DynamicDocumentPaginator.OnGetPageNumberCompleted(System.Windows.Documents.GetPageNumberCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnGetPageNumberCompleted (e As GetPageNumberCompletedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGetPageNumberCompleted(System::Windows::Documents::GetPageNumberCompletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnGetPageNumberCompleted : System.Windows.Documents.GetPageNumberCompletedEventArgs -&gt; unit&#xA;override this.OnGetPageNumberCompleted : System.Windows.Documents.GetPageNumberCompletedEventArgs -&gt; unit" Usage="dynamicDocumentPaginator.OnGetPageNumberCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -304,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DynamicDocumentPaginator.OnPaginationCompleted(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPaginationCompleted (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPaginationCompleted(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPaginationCompleted : EventArgs -&gt; unit&#xA;override this.OnPaginationCompleted : EventArgs -&gt; unit" Usage="dynamicDocumentPaginator.OnPaginationCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -327,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DynamicDocumentPaginator.OnPaginationProgress(System.Windows.Documents.PaginationProgressEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPaginationProgress (e As PaginationProgressEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPaginationProgress(System::Windows::Documents::PaginationProgressEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPaginationProgress : System.Windows.Documents.PaginationProgressEventArgs -&gt; unit&#xA;override this.OnPaginationProgress : System.Windows.Documents.PaginationProgressEventArgs -&gt; unit" Usage="dynamicDocumentPaginator.OnPaginationProgress e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +361,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event PaginationCompleted As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaginationCompleted;" />
+      <MemberSignature Language="F#" Value="member this.PaginationCompleted : EventHandler " Usage="member this.PaginationCompleted : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -376,6 +388,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress" />
       <MemberSignature Language="VB.NET" Value="Public Event PaginationProgress As PaginationProgressEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Documents::PaginationProgressEventHandler ^ PaginationProgress;" />
+      <MemberSignature Language="F#" Value="member this.PaginationProgress : System.Windows.Documents.PaginationProgressEventHandler " Usage="member this.PaginationProgress : System.Windows.Documents.PaginationProgressEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IDbTransaction" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDbTransaction&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDbTransaction : IDisposable" />
+  <TypeSignature Language="F#" Value="type IDbTransaction = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbTransaction.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
+      <MemberSignature Language="F#" Value="abstract member Commit : unit -&gt; unit" Usage="iDbTransaction.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbTransaction.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As IDbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbConnection ^ Connection { System::Data::IDbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.IDbConnection" Usage="System.Data.IDbTransaction.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbTransaction.IsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IsolationLevel IsolationLevel { System::Data::IsolationLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Data.IsolationLevel" Usage="System.Data.IDbTransaction.IsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbTransaction.Rollback" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rollback ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rollback();" />
+      <MemberSignature Language="F#" Value="abstract member Rollback : unit -&gt; unit" Usage="iDbTransaction.Rollback " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

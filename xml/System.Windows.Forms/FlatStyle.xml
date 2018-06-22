@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlatStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum FlatStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class FlatStyle" />
+  <TypeSignature Language="F#" Value="type FlatStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Flat" />
       <MemberSignature Language="VB.NET" Value="Flat" />
       <MemberSignature Language="C++ CLI" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 0" Usage="System.Windows.Forms.FlatStyle.Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Popup" />
       <MemberSignature Language="VB.NET" Value="Popup" />
       <MemberSignature Language="C++ CLI" Value="Popup" />
+      <MemberSignature Language="F#" Value="Popup = 1" Usage="System.Windows.Forms.FlatStyle.Popup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Standard" />
       <MemberSignature Language="VB.NET" Value="Standard" />
       <MemberSignature Language="C++ CLI" Value="Standard" />
+      <MemberSignature Language="F#" Value="Standard = 2" Usage="System.Windows.Forms.FlatStyle.Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 3" Usage="System.Windows.Forms.FlatStyle.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

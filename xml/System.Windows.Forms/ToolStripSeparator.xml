@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSeparator" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripSeparator&#xA;Inherits ToolStripItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripSeparator : System::Windows::Forms::ToolStripItem" />
+  <TypeSignature Language="F#" Value="type ToolStripSeparator = class&#xA;    inherit ToolStripItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.AutoToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoToolTip As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoToolTip { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoToolTip : bool with get, set" Usage="System.Windows.Forms.ToolStripSeparator.AutoToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.ToolStripSeparator.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.ToolStripSeparator.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.CanSelect" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSelect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSelect { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSelect : bool" Usage="System.Windows.Forms.ToolStripSeparator.CanSelect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSeparator.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStripSeparator.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.DefaultMargin" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultMargin As Padding" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Windows::Forms::Padding DefaultMargin { System::Windows::Forms::Padding get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStripSeparator.DefaultMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.ToolStripSeparator.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.DisplayStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayStyle As ToolStripItemDisplayStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItemDisplayStyle DisplayStyle { System::Windows::Forms::ToolStripItemDisplayStyle get(); void set(System::Windows::Forms::ToolStripItemDisplayStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayStyle : System.Windows.Forms.ToolStripItemDisplayStyle with get, set" Usage="System.Windows.Forms.ToolStripSeparator.DisplayStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -294,6 +303,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripSeparator.DisplayStyleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DisplayStyleChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DisplayStyleChanged;" />
+      <MemberSignature Language="F#" Value="member this.DisplayStyleChanged : EventHandler " Usage="member this.DisplayStyleChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -328,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.DoubleClickEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property DoubleClickEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DoubleClickEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleClickEnabled : bool with get, set" Usage="System.Windows.Forms.ToolStripSeparator.DoubleClickEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -367,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.ToolStripSeparator.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -406,6 +418,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripSeparator.EnabledChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event EnabledChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
+      <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.ToolStripSeparator.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -478,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSeparator.GetPreferredSize(System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreferredSize (constrainingSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Size constrainingSize);" />
+      <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Size -&gt; System.Drawing.Size" Usage="toolStripSeparator.GetPreferredSize constrainingSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -502,6 +517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.Image" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Image As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Image with get, set" Usage="System.Windows.Forms.ToolStripSeparator.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -540,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.ImageAlign" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageAlign As ContentAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::ContentAlignment ImageAlign { System::Drawing::ContentAlignment get(); void set(System::Drawing::ContentAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageAlign : System.Drawing.ContentAlignment with get, set" Usage="System.Windows.Forms.ToolStripSeparator.ImageAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -578,6 +595,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.ImageIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ImageIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageIndex : int with get, set" Usage="System.Windows.Forms.ToolStripSeparator.ImageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -619,6 +637,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.ImageKey" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageKey : string with get, set" Usage="System.Windows.Forms.ToolStripSeparator.ImageKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -657,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.ImageScaling" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageScaling As ToolStripItemImageScaling" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItemImageScaling ImageScaling { System::Windows::Forms::ToolStripItemImageScaling get(); void set(System::Windows::Forms::ToolStripItemImageScaling value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageScaling : System.Windows.Forms.ToolStripItemImageScaling with get, set" Usage="System.Windows.Forms.ToolStripSeparator.ImageScaling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -695,6 +715,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.ImageTransparentColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageTransparentColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ImageTransparentColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolStripSeparator.ImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -733,6 +754,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSeparator.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="toolStripSeparator.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -768,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSeparator.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStripSeparator.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -791,6 +814,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.RightToLeftAutoMirrorImage" />
       <MemberSignature Language="VB.NET" Value="Public Property RightToLeftAutoMirrorImage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RightToLeftAutoMirrorImage { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftAutoMirrorImage : bool with get, set" Usage="System.Windows.Forms.ToolStripSeparator.RightToLeftAutoMirrorImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -830,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSeparator.SetBounds(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub SetBounds (rect As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void SetBounds(System::Drawing::Rectangle rect);" />
+      <MemberSignature Language="F#" Value="override this.SetBounds : System.Drawing.Rectangle -&gt; unit" Usage="toolStripSeparator.SetBounds rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -853,6 +878,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.ToolStripSeparator.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -891,6 +917,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.TextAlign" />
       <MemberSignature Language="VB.NET" Value="Public Property TextAlign As ContentAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::ContentAlignment TextAlign { System::Drawing::ContentAlignment get(); void set(System::Drawing::ContentAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.TextAlign : System.Drawing.ContentAlignment with get, set" Usage="System.Windows.Forms.ToolStripSeparator.TextAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -929,6 +956,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripSeparator.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -963,6 +991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.TextDirection" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property TextDirection As ToolStripTextDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ToolStripTextDirection TextDirection { System::Windows::Forms::ToolStripTextDirection get(); void set(System::Windows::Forms::ToolStripTextDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.TextDirection : System.Windows.Forms.ToolStripTextDirection with get, set" Usage="System.Windows.Forms.ToolStripSeparator.TextDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1001,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.TextImageRelation" />
       <MemberSignature Language="VB.NET" Value="Public Property TextImageRelation As TextImageRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TextImageRelation TextImageRelation { System::Windows::Forms::TextImageRelation get(); void set(System::Windows::Forms::TextImageRelation value); };" />
+      <MemberSignature Language="F#" Value="member this.TextImageRelation : System.Windows.Forms.TextImageRelation with get, set" Usage="System.Windows.Forms.ToolStripSeparator.TextImageRelation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1039,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparator.ToolTipText" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipText : string with get, set" Usage="System.Windows.Forms.ToolStripSeparator.ToolTipText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

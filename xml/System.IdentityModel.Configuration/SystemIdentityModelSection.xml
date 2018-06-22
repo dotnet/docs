@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.SystemIdentityModelSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemIdentityModelSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemIdentityModelSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type SystemIdentityModelSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As SystemIdentityModelSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Configuration::SystemIdentityModelSection ^ Current { System::IdentityModel::Configuration::SystemIdentityModelSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.IdentityModel.Configuration.SystemIdentityModelSection" Usage="System.IdentityModel.Configuration.SystemIdentityModelSection.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.DefaultIdentityConfigurationElement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultIdentityConfigurationElement As IdentityConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Configuration::IdentityConfigurationElement ^ DefaultIdentityConfigurationElement { System::IdentityModel::Configuration::IdentityConfigurationElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultIdentityConfigurationElement : System.IdentityModel.Configuration.IdentityConfigurationElement" Usage="System.IdentityModel.Configuration.SystemIdentityModelSection.DefaultIdentityConfigurationElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.IdentityConfigurationElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdentityConfigurationElements As IdentityConfigurationElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::IdentityConfigurationElementCollection ^ IdentityConfigurationElements { System::IdentityModel::Configuration::IdentityConfigurationElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IdentityConfigurationElements : System.IdentityModel.Configuration.IdentityConfigurationElementCollection" Usage="System.IdentityModel.Configuration.SystemIdentityModelSection.IdentityConfigurationElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Configuration.SystemIdentityModelSection.SectionName" />
       <MemberSignature Language="VB.NET" Value="Public Const SectionName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SectionName;" />
+      <MemberSignature Language="F#" Value="val mutable SectionName : string" Usage="System.IdentityModel.Configuration.SystemIdentityModelSection.SectionName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

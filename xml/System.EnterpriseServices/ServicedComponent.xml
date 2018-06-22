@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServicedComponent" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServicedComponent&#xA;Inherits ContextBoundObject&#xA;Implements IDisposable, IRemoteDispatch, IServicedComponentInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServicedComponent abstract : ContextBoundObject, IDisposable, System::EnterpriseServices::IRemoteDispatch, System::EnterpriseServices::IServicedComponentInfo" />
+  <TypeSignature Language="F#" Value="type ServicedComponent = class&#xA;    inherit ContextBoundObject&#xA;    interface IRemoteDispatch&#xA;    interface IDisposable&#xA;    interface IServicedComponentInfo" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@ regsvcs Calculator.dll
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Activate" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit&#xA;override this.Activate : unit -&gt; unit" Usage="servicedComponent.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -114,6 +116,7 @@ regsvcs Calculator.dll
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.CanBePooled" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CanBePooled () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool CanBePooled();" />
+      <MemberSignature Language="F#" Value="abstract member CanBePooled : unit -&gt; bool&#xA;override this.CanBePooled : unit -&gt; bool" Usage="servicedComponent.CanBePooled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -147,6 +150,7 @@ regsvcs Calculator.dll
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Construct(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Construct (s As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Construct(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="abstract member Construct : string -&gt; unit&#xA;override this.Construct : string -&gt; unit" Usage="servicedComponent.Construct s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -170,6 +174,7 @@ regsvcs Calculator.dll
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Deactivate" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Deactivate ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Deactivate();" />
+      <MemberSignature Language="F#" Value="abstract member Deactivate : unit -&gt; unit&#xA;override this.Deactivate : unit -&gt; unit" Usage="servicedComponent.Deactivate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -210,6 +215,7 @@ regsvcs Calculator.dll
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="servicedComponent.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -247,6 +253,7 @@ regsvcs Calculator.dll
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="servicedComponent.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -286,6 +293,7 @@ regsvcs Calculator.dll
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.DisposeObject(System.EnterpriseServices.ServicedComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DisposeObject (sc As ServicedComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisposeObject(System::EnterpriseServices::ServicedComponent ^ sc);" />
+      <MemberSignature Language="F#" Value="static member DisposeObject : System.EnterpriseServices.ServicedComponent -&gt; unit" Usage="System.EnterpriseServices.ServicedComponent.DisposeObject sc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

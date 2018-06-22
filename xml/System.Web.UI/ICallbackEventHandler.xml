@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ICallbackEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICallbackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICallbackEventHandler" />
+  <TypeSignature Language="F#" Value="type ICallbackEventHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ICallbackEventHandler.GetCallbackResult" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCallbackResult () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCallbackResult();" />
+      <MemberSignature Language="F#" Value="abstract member GetCallbackResult : unit -&gt; string" Usage="iCallbackEventHandler.GetCallbackResult " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseCallbackEvent (eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseCallbackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member RaiseCallbackEvent : string -&gt; unit" Usage="iCallbackEventHandler.RaiseCallbackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

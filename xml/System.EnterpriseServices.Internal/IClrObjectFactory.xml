@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IClrObjectFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IClrObjectFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IClrObjectFactory" />
+  <TypeSignature Language="F#" Value="type IClrObjectFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromAssembly(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFromAssembly (assembly As String, type As String, mode As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateFromAssembly(System::String ^ assembly, System::String ^ type, System::String ^ mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFromAssembly : string * string * string -&gt; obj" Usage="iClrObjectFactory.CreateFromAssembly (assembly, type, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromMailbox(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFromMailbox (Mailbox As String, Mode As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateFromMailbox(System::String ^ Mailbox, System::String ^ Mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFromMailbox : string * string -&gt; obj" Usage="iClrObjectFactory.CreateFromMailbox (Mailbox, Mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromVroot(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFromVroot (VrootUrl As String, Mode As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateFromVroot(System::String ^ VrootUrl, System::String ^ Mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFromVroot : string * string -&gt; obj" Usage="iClrObjectFactory.CreateFromVroot (VrootUrl, Mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromWsdl(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFromWsdl (WsdlUrl As String, Mode As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateFromWsdl(System::String ^ WsdlUrl, System::String ^ Mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFromWsdl : string * string -&gt; obj" Usage="iClrObjectFactory.CreateFromWsdl (WsdlUrl, Mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

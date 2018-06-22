@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.InstallationFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum InstallationFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class InstallationFlags" />
+  <TypeSignature Language="F#" Value="type InstallationFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.Configure" />
       <MemberSignature Language="VB.NET" Value="Configure" />
       <MemberSignature Language="C++ CLI" Value="Configure" />
+      <MemberSignature Language="F#" Value="Configure = 1024" Usage="System.EnterpriseServices.InstallationFlags.Configure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.ConfigureComponentsOnly" />
       <MemberSignature Language="VB.NET" Value="ConfigureComponentsOnly" />
       <MemberSignature Language="C++ CLI" Value="ConfigureComponentsOnly" />
+      <MemberSignature Language="F#" Value="ConfigureComponentsOnly = 16" Usage="System.EnterpriseServices.InstallationFlags.ConfigureComponentsOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.CreateTargetApplication" />
       <MemberSignature Language="VB.NET" Value="CreateTargetApplication" />
       <MemberSignature Language="C++ CLI" Value="CreateTargetApplication" />
+      <MemberSignature Language="F#" Value="CreateTargetApplication = 2" Usage="System.EnterpriseServices.InstallationFlags.CreateTargetApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.EnterpriseServices.InstallationFlags.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.ExpectExistingTypeLib" />
       <MemberSignature Language="VB.NET" Value="ExpectExistingTypeLib" />
       <MemberSignature Language="C++ CLI" Value="ExpectExistingTypeLib" />
+      <MemberSignature Language="F#" Value="ExpectExistingTypeLib = 1" Usage="System.EnterpriseServices.InstallationFlags.ExpectExistingTypeLib" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.FindOrCreateTargetApplication" />
       <MemberSignature Language="VB.NET" Value="FindOrCreateTargetApplication" />
       <MemberSignature Language="C++ CLI" Value="FindOrCreateTargetApplication" />
+      <MemberSignature Language="F#" Value="FindOrCreateTargetApplication = 4" Usage="System.EnterpriseServices.InstallationFlags.FindOrCreateTargetApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.Install" />
       <MemberSignature Language="VB.NET" Value="Install" />
       <MemberSignature Language="C++ CLI" Value="Install" />
+      <MemberSignature Language="F#" Value="Install = 512" Usage="System.EnterpriseServices.InstallationFlags.Install" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -160,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.ReconfigureExistingApplication" />
       <MemberSignature Language="VB.NET" Value="ReconfigureExistingApplication" />
       <MemberSignature Language="C++ CLI" Value="ReconfigureExistingApplication" />
+      <MemberSignature Language="F#" Value="ReconfigureExistingApplication = 8" Usage="System.EnterpriseServices.InstallationFlags.ReconfigureExistingApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -179,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.Register" />
       <MemberSignature Language="VB.NET" Value="Register" />
       <MemberSignature Language="C++ CLI" Value="Register" />
+      <MemberSignature Language="F#" Value="Register = 256" Usage="System.EnterpriseServices.InstallationFlags.Register" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -198,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.ReportWarningsToConsole" />
       <MemberSignature Language="VB.NET" Value="ReportWarningsToConsole" />
       <MemberSignature Language="C++ CLI" Value="ReportWarningsToConsole" />
+      <MemberSignature Language="F#" Value="ReportWarningsToConsole = 32" Usage="System.EnterpriseServices.InstallationFlags.ReportWarningsToConsole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

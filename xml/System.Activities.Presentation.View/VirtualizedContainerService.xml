@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.VirtualizedContainerService" />
   <TypeSignature Language="VB.NET" Value="Public Class VirtualizedContainerService" />
   <TypeSignature Language="C++ CLI" Value="public ref class VirtualizedContainerService" />
+  <TypeSignature Language="F#" Value="type VirtualizedContainerService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.#ctor(System.Activities.Presentation.EditingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As EditingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualizedContainerService(System::Activities::Presentation::EditingContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.VirtualizedContainerService : System.Activities.Presentation.EditingContext -&gt; System.Activities.Presentation.View.VirtualizedContainerService" Usage="new System.Activities.Presentation.View.VirtualizedContainerService context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.UIElement GetContainer(class System.Activities.Presentation.Model.ModelItem modelItem, class System.Activities.Presentation.ICompositeView sourceContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.GetContainer(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.ICompositeView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::UIElement ^ GetContainer(System::Activities::Presentation::Model::ModelItem ^ modelItem, System::Activities::Presentation::ICompositeView ^ sourceContainer);" />
+      <MemberSignature Language="F#" Value="member this.GetContainer : System.Activities.Presentation.Model.ModelItem * System.Activities.Presentation.ICompositeView -&gt; System.Windows.UIElement" Usage="virtualizedContainerService.GetContainer (modelItem, sourceContainer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.GetHintSize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHintSize (instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetHintSize(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetHintSize : obj -&gt; obj" Usage="System.Activities.Presentation.View.VirtualizedContainerService.GetHintSize instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.WorkflowViewElement GetViewElement(class System.Activities.Presentation.Model.ModelItem modelItem, class System.Activities.Presentation.ICompositeView sourceContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.GetViewElement(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.ICompositeView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::WorkflowViewElement ^ GetViewElement(System::Activities::Presentation::Model::ModelItem ^ modelItem, System::Activities::Presentation::ICompositeView ^ sourceContainer);" />
+      <MemberSignature Language="F#" Value="member this.GetViewElement : System.Activities.Presentation.Model.ModelItem * System.Activities.Presentation.ICompositeView -&gt; System.Activities.Presentation.WorkflowViewElement" Usage="virtualizedContainerService.GetViewElement (modelItem, sourceContainer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.VirtualizedContainerService.HintSizeName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HintSizeName As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ HintSizeName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HintSizeName : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Presentation.View.VirtualizedContainerService.HintSizeName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.SetHintSize(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHintSize (instance As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHintSize(System::Object ^ instance, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetHintSize : obj * obj -&gt; unit" Usage="System.Activities.Presentation.View.VirtualizedContainerService.SetHintSize (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

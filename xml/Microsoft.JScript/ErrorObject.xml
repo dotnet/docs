@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ErrorObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorObject&#xA;Inherits JSObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorObject : Microsoft::JScript::JSObject" />
+  <TypeSignature Language="F#" Value="type ErrorObject = class&#xA;    inherit JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.description" />
       <MemberSignature Language="VB.NET" Value="Public description As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ description;" />
+      <MemberSignature Language="F#" Value="val mutable description : obj" Usage="Microsoft.JScript.ErrorObject.description" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.message" />
       <MemberSignature Language="VB.NET" Value="Public message As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ message;" />
+      <MemberSignature Language="F#" Value="val mutable message : obj" Usage="Microsoft.JScript.ErrorObject.message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.number" />
       <MemberSignature Language="VB.NET" Value="Public number As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ number;" />
+      <MemberSignature Language="F#" Value="val mutable number : obj" Usage="Microsoft.JScript.ErrorObject.number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorObject.op_Explicit(Microsoft.JScript.ErrorObject)~System.Exception" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (err As ErrorObject) As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Exception ^(Microsoft::JScript::ErrorObject ^ err);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : Microsoft.JScript.ErrorObject -&gt; Exception" Usage="Microsoft.JScript.ErrorObject.op_Explicit err" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorObject.ToException(Microsoft.JScript.ErrorObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToException (err As ErrorObject) As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Exception ^ ToException(Microsoft::JScript::ErrorObject ^ err);" />
+      <MemberSignature Language="F#" Value="static member ToException : Microsoft.JScript.ErrorObject -&gt; Exception" Usage="Microsoft.JScript.ErrorObject.ToException err" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

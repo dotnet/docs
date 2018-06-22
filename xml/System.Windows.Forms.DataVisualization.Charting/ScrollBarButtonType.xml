@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollBarButtonType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollBarButtonType" />
+  <TypeSignature Language="F#" Value="type ScrollBarButtonType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.LargeDecrement" />
       <MemberSignature Language="VB.NET" Value="LargeDecrement" />
       <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 3" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.LargeIncrement" />
       <MemberSignature Language="VB.NET" Value="LargeIncrement" />
       <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 4" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.SmallDecrement" />
       <MemberSignature Language="VB.NET" Value="SmallDecrement" />
       <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 1" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.SmallIncrement" />
       <MemberSignature Language="VB.NET" Value="SmallIncrement" />
       <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 2" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.ThumbTracker" />
       <MemberSignature Language="VB.NET" Value="ThumbTracker" />
       <MemberSignature Language="C++ CLI" Value="ThumbTracker" />
+      <MemberSignature Language="F#" Value="ThumbTracker = 0" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.ThumbTracker" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.ZoomReset" />
       <MemberSignature Language="VB.NET" Value="ZoomReset" />
       <MemberSignature Language="C++ CLI" Value="ZoomReset" />
+      <MemberSignature Language="F#" Value="ZoomReset = 5" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.ZoomReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

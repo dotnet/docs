@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IBindableTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBindableTemplate&#xA;Implements ITemplate" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBindableTemplate : System::Web::UI::ITemplate" />
+  <TypeSignature Language="F#" Value="type IBindableTemplate = interface&#xA;    interface ITemplate" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IBindableTemplate.ExtractValues(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExtractValues (container As Control) As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Specialized::IOrderedDictionary ^ ExtractValues(System::Web::UI::Control ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member ExtractValues : System.Web.UI.Control -&gt; System.Collections.Specialized.IOrderedDictionary" Usage="iBindableTemplate.ExtractValues container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

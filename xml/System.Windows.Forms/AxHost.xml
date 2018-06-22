@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AxHost&#xA;Inherits Control&#xA;Implements ICustomTypeDescriptor, ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class AxHost abstract : System::Windows::Forms::Control, System::ComponentModel::ICustomTypeDescriptor, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type AxHost = class&#xA;    inherit Control&#xA;    interface ISupportInitialize&#xA;    interface ICustomTypeDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (clsid As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AxHost(System::String ^ clsid);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.AxHost : string -&gt; System.Windows.Forms.AxHost" Usage="new System.Windows.Forms.AxHost clsid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (clsid As String, flags As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AxHost(System::String ^ clsid, int flags);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.AxHost : string * int -&gt; System.Windows.Forms.AxHost" Usage="new System.Windows.Forms.AxHost (clsid, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.AttachInterfaces" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AttachInterfaces ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AttachInterfaces();" />
+      <MemberSignature Language="F#" Value="abstract member AttachInterfaces : unit -&gt; unit&#xA;override this.AttachInterfaces : unit -&gt; unit" Usage="axHost.AttachInterfaces " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.AxHost.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.BackColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackColorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.AxHost.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.AxHost.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -327,6 +336,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -354,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="axHost.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -387,6 +398,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.BindingContextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BindingContextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
+      <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -421,6 +433,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.ChangeUICues" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ChangeUICues As UICuesEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
+      <MemberSignature Language="F#" Value="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " Usage="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -455,6 +468,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -489,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.ContainingControl" />
       <MemberSignature Language="VB.NET" Value="Public Property ContainingControl As ContainerControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ContainerControl ^ ContainingControl { System::Windows::Forms::ContainerControl ^ get(); void set(System::Windows::Forms::ContainerControl ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContainingControl : System.Windows.Forms.ContainerControl with get, set" Usage="System.Windows.Forms.AxHost.ContainingControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -529,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.ContextMenu" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextMenu As ContextMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenu ^ ContextMenu { System::Windows::Forms::ContextMenu ^ get(); void set(System::Windows::Forms::ContextMenu ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenu : System.Windows.Forms.ContextMenu with get, set" Usage="System.Windows.Forms.AxHost.ContextMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -557,6 +573,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.ContextMenuChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextMenuChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -591,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.CreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="axHost.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -612,6 +630,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.CreateInstanceCore(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateInstanceCore (clsid As Guid) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ CreateInstanceCore(Guid clsid);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : Guid -&gt; obj&#xA;override this.CreateInstanceCore : Guid -&gt; obj" Usage="axHost.CreateInstanceCore clsid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -636,6 +655,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.AxHost.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -657,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.CreateSink" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateSink ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateSink();" />
+      <MemberSignature Language="F#" Value="abstract member CreateSink : unit -&gt; unit&#xA;override this.CreateSink : unit -&gt; unit" Usage="axHost.CreateSink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -689,6 +710,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.Cursor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Cursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ Cursor { System::Windows::Forms::Cursor ^ get(); void set(System::Windows::Forms::Cursor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Cursor : System.Windows.Forms.Cursor with get, set" Usage="System.Windows.Forms.AxHost.Cursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -717,6 +739,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.CursorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CursorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
+      <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -751,6 +774,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.AxHost.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -772,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.DestroyHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DestroyHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DestroyHandle();" />
+      <MemberSignature Language="F#" Value="override this.DestroyHandle : unit -&gt; unit" Usage="axHost.DestroyHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -793,6 +818,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.DetachSink" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DetachSink ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DetachSink();" />
+      <MemberSignature Language="F#" Value="abstract member DetachSink : unit -&gt; unit&#xA;override this.DetachSink : unit -&gt; unit" Usage="axHost.DetachSink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -825,6 +851,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="axHost.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -850,6 +877,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.DoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -884,6 +912,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.DoVerb(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoVerb (verb As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoVerb(int verb);" />
+      <MemberSignature Language="F#" Value="member this.DoVerb : int -&gt; unit" Usage="axHost.DoVerb verb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -914,6 +943,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.DragDrop" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DragDrop As DragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
+      <MemberSignature Language="F#" Value="member this.DragDrop : System.Windows.Forms.DragEventHandler " Usage="member this.DragDrop : System.Windows.Forms.DragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -948,6 +978,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.DragEnter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DragEnter As DragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
+      <MemberSignature Language="F#" Value="member this.DragEnter : System.Windows.Forms.DragEventHandler " Usage="member this.DragEnter : System.Windows.Forms.DragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -982,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.DragLeave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DragLeave As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
+      <MemberSignature Language="F#" Value="member this.DragLeave : EventHandler " Usage="member this.DragLeave : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1016,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.DragOver" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DragOver As DragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
+      <MemberSignature Language="F#" Value="member this.DragOver : System.Windows.Forms.DragEventHandler " Usage="member this.DragOver : System.Windows.Forms.DragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1049,6 +1082,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawToBitmap(class System.Drawing.Bitmap bitmap, valuetype System.Drawing.Rectangle targetBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.DrawToBitmap(System.Drawing.Bitmap,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawToBitmap(System::Drawing::Bitmap ^ bitmap, System::Drawing::Rectangle targetBounds);" />
+      <MemberSignature Language="F#" Value="override this.DrawToBitmap : System.Drawing.Bitmap * System.Drawing.Rectangle -&gt; unit" Usage="axHost.DrawToBitmap (bitmap, targetBounds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1080,6 +1114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.EditMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EditMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditMode : bool" Usage="System.Windows.Forms.AxHost.EditMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1112,6 +1147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.AxHost.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1140,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.EnabledChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event EnabledChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
+      <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1174,6 +1211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="axHost.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1207,6 +1245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.AxHost.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1235,6 +1274,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FontChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
+      <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1269,6 +1309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.AxHost.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1297,6 +1338,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1330,6 +1372,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig valuetype System.Drawing.Color GetColorFromOleColor(unsigned int32 color) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetColorFromOleColor(System.UInt32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Drawing::Color GetColorFromOleColor(System::UInt32 color);" />
+      <MemberSignature Language="F#" Value="static member GetColorFromOleColor : uint32 -&gt; System.Drawing.Color" Usage="System.Windows.Forms.AxHost.GetColorFromOleColor color" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1362,6 +1405,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Drawing.Font GetFontFromIFont(object font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetFontFromIFont(System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Drawing::Font ^ GetFontFromIFont(System::Object ^ font);" />
+      <MemberSignature Language="F#" Value="static member GetFontFromIFont : obj -&gt; System.Drawing.Font" Usage="System.Windows.Forms.AxHost.GetFontFromIFont font" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1392,6 +1436,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Drawing.Font GetFontFromIFontDisp(object font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetFontFromIFontDisp(System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Drawing::Font ^ GetFontFromIFontDisp(System::Object ^ font);" />
+      <MemberSignature Language="F#" Value="static member GetFontFromIFontDisp : obj -&gt; System.Drawing.Font" Usage="System.Windows.Forms.AxHost.GetFontFromIFontDisp font" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1422,6 +1467,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig object GetIFontDispFromFont(class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetIFontDispFromFont(System.Drawing.Font)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Object ^ GetIFontDispFromFont(System::Drawing::Font ^ font);" />
+      <MemberSignature Language="F#" Value="static member GetIFontDispFromFont : System.Drawing.Font -&gt; obj" Usage="System.Windows.Forms.AxHost.GetIFontDispFromFont font" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1452,6 +1498,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig object GetIFontFromFont(class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetIFontFromFont(System.Drawing.Font)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Object ^ GetIFontFromFont(System::Drawing::Font ^ font);" />
+      <MemberSignature Language="F#" Value="static member GetIFontFromFont : System.Drawing.Font -&gt; obj" Usage="System.Windows.Forms.AxHost.GetIFontFromFont font" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1482,6 +1529,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig object GetIPictureDispFromPicture(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetIPictureDispFromPicture(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Object ^ GetIPictureDispFromPicture(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="static member GetIPictureDispFromPicture : System.Drawing.Image -&gt; obj" Usage="System.Windows.Forms.AxHost.GetIPictureDispFromPicture image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1510,6 +1558,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig object GetIPictureFromCursor(class System.Windows.Forms.Cursor cursor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetIPictureFromCursor(System.Windows.Forms.Cursor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Object ^ GetIPictureFromCursor(System::Windows::Forms::Cursor ^ cursor);" />
+      <MemberSignature Language="F#" Value="static member GetIPictureFromCursor : System.Windows.Forms.Cursor -&gt; obj" Usage="System.Windows.Forms.AxHost.GetIPictureFromCursor cursor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1538,6 +1587,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig object GetIPictureFromPicture(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetIPictureFromPicture(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Object ^ GetIPictureFromPicture(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="static member GetIPictureFromPicture : System.Drawing.Image -&gt; obj" Usage="System.Windows.Forms.AxHost.GetIPictureFromPicture image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1567,6 +1617,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetOADateFromTime(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetOADateFromTime (time As DateTime) As Double" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static double GetOADateFromTime(DateTime time);" />
+      <MemberSignature Language="F#" Value="static member GetOADateFromTime : DateTime -&gt; double" Usage="System.Windows.Forms.AxHost.GetOADateFromTime time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1608,6 +1659,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetOcx" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOcx () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOcx();" />
+      <MemberSignature Language="F#" Value="member this.GetOcx : unit -&gt; obj" Usage="axHost.GetOcx " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1643,6 +1695,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig unsigned int32 GetOleColorFromColor(valuetype System.Drawing.Color color) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetOleColorFromColor(System.Drawing.Color)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::UInt32 GetOleColorFromColor(System::Drawing::Color color);" />
+      <MemberSignature Language="F#" Value="static member GetOleColorFromColor : System.Drawing.Color -&gt; uint32" Usage="System.Windows.Forms.AxHost.GetOleColorFromColor color" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1676,6 +1729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetPictureFromIPicture(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetPictureFromIPicture (picture As Object) As Image" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Drawing::Image ^ GetPictureFromIPicture(System::Object ^ picture);" />
+      <MemberSignature Language="F#" Value="static member GetPictureFromIPicture : obj -&gt; System.Drawing.Image" Usage="System.Windows.Forms.AxHost.GetPictureFromIPicture picture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1712,6 +1766,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetPictureFromIPictureDisp(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetPictureFromIPictureDisp (picture As Object) As Image" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Drawing::Image ^ GetPictureFromIPictureDisp(System::Object ^ picture);" />
+      <MemberSignature Language="F#" Value="static member GetPictureFromIPictureDisp : obj -&gt; System.Drawing.Image" Usage="System.Windows.Forms.AxHost.GetPictureFromIPictureDisp picture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1749,6 +1804,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetScaledBounds (bounds As Rectangle, factor As SizeF, specified As BoundsSpecified) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Rectangle GetScaledBounds(System::Drawing::Rectangle bounds, System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.GetScaledBounds : System.Drawing.Rectangle * System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; System.Drawing.Rectangle" Usage="axHost.GetScaledBounds (bounds, factor, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1789,6 +1845,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.GetTimeFromOADate(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetTimeFromOADate (date As Double) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static DateTime GetTimeFromOADate(double date);" />
+      <MemberSignature Language="F#" Value="static member GetTimeFromOADate : double -&gt; DateTime" Usage="System.Windows.Forms.AxHost.GetTimeFromOADate date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1830,6 +1887,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.GiveFeedback" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event GiveFeedback As GiveFeedbackEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
+      <MemberSignature Language="F#" Value="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " Usage="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1864,6 +1922,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.HasAboutBox" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasAboutBox As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasAboutBox { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasAboutBox : bool" Usage="System.Windows.Forms.AxHost.HasAboutBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1913,6 +1972,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.HasPropertyPages" />
       <MemberSignature Language="VB.NET" Value="Public Function HasPropertyPages () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasPropertyPages();" />
+      <MemberSignature Language="F#" Value="member this.HasPropertyPages : unit -&gt; bool" Usage="axHost.HasPropertyPages " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1943,6 +2003,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.HelpRequested" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event HelpRequested As HelpEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
+      <MemberSignature Language="F#" Value="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " Usage="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1977,6 +2038,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.ImeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ImeMode As ImeMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImeMode ImeMode { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ImeMode : System.Windows.Forms.ImeMode with get, set" Usage="System.Windows.Forms.AxHost.ImeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2008,6 +2070,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.ImeModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ImeModeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2042,6 +2105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.InvokeEditMode" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeEditMode ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeEditMode();" />
+      <MemberSignature Language="F#" Value="member this.InvokeEditMode : unit -&gt; unit" Usage="axHost.InvokeEditMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2067,6 +2131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.IsInputChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputChar (charCode As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputChar(char charCode);" />
+      <MemberSignature Language="F#" Value="override this.IsInputChar : char -&gt; bool" Usage="axHost.IsInputChar charCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2103,6 +2168,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.KeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyDown As KeyEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
+      <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2137,6 +2203,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.KeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyPress As KeyPressEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
+      <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2171,6 +2238,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.KeyUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyUp As KeyEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
+      <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2205,6 +2273,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.Layout" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Layout As LayoutEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
+      <MemberSignature Language="F#" Value="member this.Layout : System.Windows.Forms.LayoutEventHandler " Usage="member this.Layout : System.Windows.Forms.LayoutEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2239,6 +2308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.MakeDirty" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeDirty ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeDirty();" />
+      <MemberSignature Language="F#" Value="member this.MakeDirty : unit -&gt; unit" Usage="axHost.MakeDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2264,6 +2334,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseClick;" />
+      <MemberSignature Language="F#" Value="member this.MouseClick : EventHandler " Usage="member this.MouseClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2291,6 +2362,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseDoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseDoubleClick;" />
+      <MemberSignature Language="F#" Value="member this.MouseDoubleClick : EventHandler " Usage="member this.MouseDoubleClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2318,6 +2390,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDown As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
+      <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2352,6 +2425,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseEnter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseEnter As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
+      <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2386,6 +2460,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseHover" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseHover As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
+      <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2420,6 +2495,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseLeave As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
+      <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2454,6 +2530,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseMove" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseMove As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
+      <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2488,6 +2565,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseUp As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
+      <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2522,6 +2600,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.MouseWheel" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseWheel As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseWheel;" />
+      <MemberSignature Language="F#" Value="member this.MouseWheel : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseWheel : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2556,6 +2635,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.OcxState" />
       <MemberSignature Language="VB.NET" Value="Public Property OcxState As AxHost.State" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AxHost::State ^ OcxState { System::Windows::Forms::AxHost::State ^ get(); void set(System::Windows::Forms::AxHost::State ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OcxState : System.Windows.Forms.AxHost.State with get, set" Usage="System.Windows.Forms.AxHost.OcxState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2600,6 +2680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.OnBackColorChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBackColorChanged : EventArgs -&gt; unit" Usage="axHost.OnBackColorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2624,6 +2705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="axHost.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2648,6 +2730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.OnForeColorChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnForeColorChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnForeColorChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnForeColorChanged : EventArgs -&gt; unit" Usage="axHost.OnForeColorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2672,6 +2755,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="axHost.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2696,6 +2780,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.OnInPlaceActive" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInPlaceActive ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInPlaceActive();" />
+      <MemberSignature Language="F#" Value="abstract member OnInPlaceActive : unit -&gt; unit&#xA;override this.OnInPlaceActive : unit -&gt; unit" Usage="axHost.OnInPlaceActive " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2723,6 +2808,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.OnLostFocus(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostFocus (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostFocus(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLostFocus : EventArgs -&gt; unit" Usage="axHost.OnLostFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2752,6 +2838,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.Paint" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2786,6 +2873,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.PreProcessMessage(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function PreProcessMessage (ByRef msg As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool PreProcessMessage(System::Windows::Forms::Message % msg);" />
+      <MemberSignature Language="F#" Value="override this.PreProcessMessage :  -&gt; bool" Usage="axHost.PreProcessMessage msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2811,6 +2899,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ProcessDialogKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessDialogKey : System.Windows.Forms.Keys -&gt; bool" Usage="axHost.ProcessDialogKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2837,6 +2926,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ProcessMnemonic(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
+      <MemberSignature Language="F#" Value="override this.ProcessMnemonic : char -&gt; bool" Usage="axHost.ProcessMnemonic charCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2863,6 +2953,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.PropsValid" />
       <MemberSignature Language="VB.NET" Value="Protected Function PropsValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool PropsValid();" />
+      <MemberSignature Language="F#" Value="member this.PropsValid : unit -&gt; bool" Usage="axHost.PropsValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2890,6 +2981,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.QueryAccessibilityHelp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
+      <MemberSignature Language="F#" Value="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " Usage="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2924,6 +3016,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.QueryContinueDrag" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event QueryContinueDrag As QueryContinueDragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
+      <MemberSignature Language="F#" Value="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " Usage="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2967,6 +3060,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseDown(System.Int16,System.Int16,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseDown (button As Short, shift As Short, x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseDown(short button, short shift, int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseDown : int16 * int16 * int * int -&gt; unit" Usage="axHost.RaiseOnMouseDown (button, shift, x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3001,6 +3095,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseDown(System.Int16,System.Int16,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseDown (button As Short, shift As Short, x As Single, y As Single)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseDown(short button, short shift, float x, float y);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseDown : int16 * int16 * single * single -&gt; unit" Usage="axHost.RaiseOnMouseDown (button, shift, x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3035,6 +3130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseDown(System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseDown (o1 As Object, o2 As Object, o3 As Object, o4 As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseDown(System::Object ^ o1, System::Object ^ o2, System::Object ^ o3, System::Object ^ o4);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseDown : obj * obj * obj * obj -&gt; unit" Usage="axHost.RaiseOnMouseDown (o1, o2, o3, o4)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3078,6 +3174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseMove(System.Int16,System.Int16,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseMove (button As Short, shift As Short, x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseMove(short button, short shift, int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseMove : int16 * int16 * int * int -&gt; unit" Usage="axHost.RaiseOnMouseMove (button, shift, x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3112,6 +3209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseMove(System.Int16,System.Int16,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseMove (button As Short, shift As Short, x As Single, y As Single)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseMove(short button, short shift, float x, float y);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseMove : int16 * int16 * single * single -&gt; unit" Usage="axHost.RaiseOnMouseMove (button, shift, x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3146,6 +3244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseMove(System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseMove (o1 As Object, o2 As Object, o3 As Object, o4 As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseMove(System::Object ^ o1, System::Object ^ o2, System::Object ^ o3, System::Object ^ o4);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseMove : obj * obj * obj * obj -&gt; unit" Usage="axHost.RaiseOnMouseMove (o1, o2, o3, o4)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3189,6 +3288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseUp(System.Int16,System.Int16,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseUp (button As Short, shift As Short, x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseUp(short button, short shift, int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseUp : int16 * int16 * int * int -&gt; unit" Usage="axHost.RaiseOnMouseUp (button, shift, x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3223,6 +3323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseUp(System.Int16,System.Int16,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseUp (button As Short, shift As Short, x As Single, y As Single)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseUp(short button, short shift, float x, float y);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseUp : int16 * int16 * single * single -&gt; unit" Usage="axHost.RaiseOnMouseUp (button, shift, x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3257,6 +3358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.RaiseOnMouseUp(System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseOnMouseUp (o1 As Object, o2 As Object, o3 As Object, o4 As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseOnMouseUp(System::Object ^ o1, System::Object ^ o2, System::Object ^ o3, System::Object ^ o4);" />
+      <MemberSignature Language="F#" Value="member this.RaiseOnMouseUp : obj * obj * obj * obj -&gt; unit" Usage="axHost.RaiseOnMouseUp (o1, o2, o3, o4)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3291,6 +3393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeft As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RightToLeft { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeft : bool with get, set" Usage="System.Windows.Forms.AxHost.RightToLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3322,6 +3425,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.RightToLeftChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3356,6 +3460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.SetAboutBoxDelegate(System.Windows.Forms.AxHost.AboutBoxDelegate)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetAboutBoxDelegate (d As AxHost.AboutBoxDelegate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAboutBoxDelegate(System::Windows::Forms::AxHost::AboutBoxDelegate ^ d);" />
+      <MemberSignature Language="F#" Value="member this.SetAboutBoxDelegate : System.Windows.Forms.AxHost.AboutBoxDelegate -&gt; unit" Usage="axHost.SetAboutBoxDelegate d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3399,6 +3504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="axHost.SetBoundsCore (x, y, width, height, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3431,6 +3537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.SetVisibleCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetVisibleCore (value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetVisibleCore(bool value);" />
+      <MemberSignature Language="F#" Value="override this.SetVisibleCore : bool -&gt; unit" Usage="axHost.SetVisibleCore value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3456,6 +3563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ShowAboutBox" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowAboutBox ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowAboutBox();" />
+      <MemberSignature Language="F#" Value="member this.ShowAboutBox : unit -&gt; unit" Usage="axHost.ShowAboutBox " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3495,6 +3603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ShowPropertyPages" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowPropertyPages ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowPropertyPages();" />
+      <MemberSignature Language="F#" Value="member this.ShowPropertyPages : unit -&gt; unit" Usage="axHost.ShowPropertyPages " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3524,6 +3633,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowPropertyPages(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ShowPropertyPages(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowPropertyPages(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.ShowPropertyPages : System.Windows.Forms.Control -&gt; unit" Usage="axHost.ShowPropertyPages control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3558,6 +3668,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.Site" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site {  void set(System::ComponentModel::ISite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite" Usage="System.Windows.Forms.AxHost.Site" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3579,6 +3690,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.StyleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event StyleChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
+      <MemberSignature Language="F#" Value="member this.StyleChanged : EventHandler " Usage="member this.StyleChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3976,6 +4088,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.AxHost.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4004,6 +4117,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.AxHost.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4038,6 +4152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="axHost.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

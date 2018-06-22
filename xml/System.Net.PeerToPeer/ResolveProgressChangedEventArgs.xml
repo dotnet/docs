@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.ResolveProgressChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveProgressChangedEventArgs&#xA;Inherits ProgressChangedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveProgressChangedEventArgs : System::ComponentModel::ProgressChangedEventArgs" />
+  <TypeSignature Language="F#" Value="type ResolveProgressChangedEventArgs = class&#xA;    inherit ProgressChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.PeerToPeer.PeerNameRecord peerNameRecord, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.ResolveProgressChangedEventArgs.#ctor(System.Net.PeerToPeer.PeerNameRecord,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveProgressChangedEventArgs(System::Net::PeerToPeer::PeerNameRecord ^ peerNameRecord, System::Object ^ userToken);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.ResolveProgressChangedEventArgs : System.Net.PeerToPeer.PeerNameRecord * obj -&gt; System.Net.PeerToPeer.ResolveProgressChangedEventArgs" Usage="new System.Net.PeerToPeer.ResolveProgressChangedEventArgs (peerNameRecord, userToken)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.ResolveProgressChangedEventArgs.PeerNameRecord" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerNameRecord As PeerNameRecord" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::PeerNameRecord ^ PeerNameRecord { System::Net::PeerToPeer::PeerNameRecord ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerNameRecord : System.Net.PeerToPeer.PeerNameRecord" Usage="System.Net.PeerToPeer.ResolveProgressChangedEventArgs.PeerNameRecord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

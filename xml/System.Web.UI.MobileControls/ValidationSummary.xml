@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ValidationSummary" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidationSummary&#xA;Inherits MobileControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationSummary : System::Web::UI::MobileControls::MobileControl" />
+  <TypeSignature Language="F#" Value="type ValidationSummary = class&#xA;    inherit MobileControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.BackLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property BackLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackLabel : string with get, set" Usage="System.Web.UI.MobileControls.ValidationSummary.BackLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.FormToValidate" />
       <MemberSignature Language="VB.NET" Value="Public Property FormToValidate As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormToValidate { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormToValidate : string with get, set" Usage="System.Web.UI.MobileControls.ValidationSummary.FormToValidate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ValidationSummary.GetErrorMessages" />
       <MemberSignature Language="VB.NET" Value="Public Function GetErrorMessages () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetErrorMessages();" />
+      <MemberSignature Language="F#" Value="member this.GetErrorMessages : unit -&gt; string[]" Usage="validationSummary.GetErrorMessages " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.HeaderText" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Web.UI.MobileControls.ValidationSummary.HeaderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -221,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ValidationSummary.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="validationSummary.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.StyleReference" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property StyleReference As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StyleReference { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StyleReference : string with get, set" Usage="System.Web.UI.MobileControls.ValidationSummary.StyleReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

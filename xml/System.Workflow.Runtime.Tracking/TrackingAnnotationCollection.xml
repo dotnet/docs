@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingAnnotationCollection&#xA;Inherits List(Of String)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingAnnotationCollection : System::Collections::Generic::List&lt;System::String ^&gt;" />
+  <TypeSignature Language="F#" Value="type TrackingAnnotationCollection = class&#xA;    inherit List&lt;string&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection.#ctor(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (annotations As IEnumerable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingAnnotationCollection(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ annotations);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.TrackingAnnotationCollection : seq&lt;string&gt; -&gt; System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" Usage="new System.Workflow.Runtime.Tracking.TrackingAnnotationCollection annotations" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

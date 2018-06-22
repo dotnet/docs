@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateRangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DateRangeEventHandler(sender As Object, e As DateRangeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DateRangeEventHandler(System::Object ^ sender, DateRangeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DateRangeEventHandler = delegate of obj * DateRangeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

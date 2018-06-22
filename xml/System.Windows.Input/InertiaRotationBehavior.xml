@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InertiaRotationBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class InertiaRotationBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class InertiaRotationBehavior" />
+  <TypeSignature Language="F#" Value="type InertiaRotationBehavior = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration" />
       <MemberSignature Language="VB.NET" Value="Public Property DesiredDeceleration As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DesiredDeceleration { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.DesiredDeceleration : double with get, set" Usage="System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.DesiredRotation" />
       <MemberSignature Language="VB.NET" Value="Public Property DesiredRotation As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DesiredRotation { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.DesiredRotation : double with get, set" Usage="System.Windows.Input.InertiaRotationBehavior.DesiredRotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.InitialVelocity" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialVelocity As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InitialVelocity { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialVelocity : double with get, set" Usage="System.Windows.Input.InertiaRotationBehavior.InitialVelocity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

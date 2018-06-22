@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowServiceHost" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowServiceHost&#xA;Inherits ServiceHostBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowServiceHost : System::ServiceModel::ServiceHostBase" />
+  <TypeSignature Language="F#" Value="type WorkflowServiceHost = class&#xA;    inherit ServiceHostBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity activity, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.#ctor(System.Activities.Activity,System.Uri[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::Activities::Activity ^ activity, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowServiceHost : System.Activities.Activity * Uri[] -&gt; System.ServiceModel.Activities.WorkflowServiceHost" Usage="new System.ServiceModel.Activities.WorkflowServiceHost (activity, baseAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.#ctor(System.Object,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceImplementation As Object, ParamArray baseAddresses As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::Object ^ serviceImplementation, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowServiceHost : obj * Uri[] -&gt; System.ServiceModel.Activities.WorkflowServiceHost" Usage="new System.ServiceModel.Activities.WorkflowServiceHost (serviceImplementation, baseAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.#ctor(System.ServiceModel.Activities.WorkflowService,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceDefinition As WorkflowService, ParamArray baseAddresses As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::ServiceModel::Activities::WorkflowService ^ serviceDefinition, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowServiceHost : System.ServiceModel.Activities.WorkflowService * Uri[] -&gt; System.ServiceModel.Activities.WorkflowServiceHost" Usage="new System.ServiceModel.Activities.WorkflowServiceHost (serviceDefinition, baseAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowServiceHost.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Activity { System::Activities::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Activities.Activity" Usage="System.ServiceModel.Activities.WorkflowServiceHost.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddServiceEndpoint (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddServiceEndpoint(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="workflowServiceHost.AddServiceEndpoint endpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, string address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(System::String ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, System::String ^ address);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : string * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (implementedContract, binding, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -243,6 +250,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(System::String ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, Uri ^ address);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : string * System.ServiceModel.Channels.Binding * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (implementedContract, binding, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -278,6 +286,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, string address, class System.Uri listenUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.String,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(System::String ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, System::String ^ address, Uri ^ listenUri);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : string * System.ServiceModel.Channels.Binding * string * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (implementedContract, binding, address, listenUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -315,6 +324,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address, class System.Uri listenUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.Uri,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(System::String ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, Uri ^ address, Uri ^ listenUri);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : string * System.ServiceModel.Channels.Binding * Uri * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (implementedContract, binding, address, listenUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -351,6 +361,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint (System.Xml.Linq.XName serviceContractName, System.ServiceModel.Channels.Binding binding, string address, Uri listenUri = null, string behaviorConfigurationName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Xml.Linq.XName serviceContractName, class System.ServiceModel.Channels.Binding binding, string address, class System.Uri listenUri, string behaviorConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.Xml.Linq.XName,System.ServiceModel.Channels.Binding,System.String,System.Uri,System.String)" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : System.Xml.Linq.XName * System.ServiceModel.Channels.Binding * string * Uri * string -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (serviceContractName, binding, address, listenUri, behaviorConfigurationName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -389,6 +400,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint (System.Xml.Linq.XName serviceContractName, System.ServiceModel.Channels.Binding binding, Uri address, Uri listenUri = null, string behaviorConfigurationName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Xml.Linq.XName serviceContractName, class System.ServiceModel.Channels.Binding binding, class System.Uri address, class System.Uri listenUri, string behaviorConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.Xml.Linq.XName,System.ServiceModel.Channels.Binding,System.Uri,System.Uri,System.String)" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : System.Xml.Linq.XName * System.ServiceModel.Channels.Binding * Uri * Uri * string -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (serviceContractName, binding, address, listenUri, behaviorConfigurationName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -429,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.CreateDescription(System.Collections.Generic.IDictionary{System.String,System.ServiceModel.Description.ContractDescription}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDescription (ByRef implementedContracts As IDictionary(Of String, ContractDescription)) As ServiceDescription" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Description::ServiceDescription ^ CreateDescription([Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::String ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ % implementedContracts);" />
+      <MemberSignature Language="F#" Value="override this.CreateDescription :  -&gt; System.ServiceModel.Description.ServiceDescription" Usage="workflowServiceHost.CreateDescription implementedContracts" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -460,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowServiceHost.DurableInstancingOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DurableInstancingOptions As DurableInstancingOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::DurableInstancingOptions ^ DurableInstancingOptions { System::ServiceModel::Activities::DurableInstancingOptions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DurableInstancingOptions : System.ServiceModel.Activities.DurableInstancingOptions" Usage="System.ServiceModel.Activities.WorkflowServiceHost.DurableInstancingOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -480,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.InitializeRuntime" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeRuntime ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeRuntime();" />
+      <MemberSignature Language="F#" Value="override this.InitializeRuntime : unit -&gt; unit" Usage="workflowServiceHost.InitializeRuntime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -500,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.OnAbort" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAbort ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAbort();" />
+      <MemberSignature Language="F#" Value="override this.OnAbort : unit -&gt; unit" Usage="workflowServiceHost.OnAbort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -520,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.OnBeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowServiceHost.OnBeginClose (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -548,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.OnClose(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClose (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClose(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.OnClose : TimeSpan -&gt; unit" Usage="workflowServiceHost.OnClose timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -578,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.OnEndClose(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndClose (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndClose(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="override this.OnEndClose : IAsyncResult -&gt; unit" Usage="workflowServiceHost.OnEndClose result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -601,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowServiceHost.SupportedVersions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedVersions As ICollection(Of WorkflowService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::ServiceModel::Activities::WorkflowService ^&gt; ^ SupportedVersions { System::Collections::Generic::ICollection&lt;System::ServiceModel::Activities::WorkflowService ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedVersions : System.Collections.Generic.ICollection&lt;System.ServiceModel.Activities.WorkflowService&gt;" Usage="System.ServiceModel.Activities.WorkflowServiceHost.SupportedVersions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -621,6 +641,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowServiceHost.WorkflowExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowExtensions As WorkflowInstanceExtensionManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Hosting::WorkflowInstanceExtensionManager ^ WorkflowExtensions { System::Activities::Hosting::WorkflowInstanceExtensionManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowExtensions : System.Activities.Hosting.WorkflowInstanceExtensionManager" Usage="System.ServiceModel.Activities.WorkflowServiceHost.WorkflowExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

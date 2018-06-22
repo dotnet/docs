@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StorePermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StorePermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class StorePermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type StorePermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StorePermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.StorePermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.StorePermissionAttribute" Usage="new System.Security.Permissions.StorePermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermissionAttribute.AddToStore" />
       <MemberSignature Language="VB.NET" Value="Public Property AddToStore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AddToStore { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AddToStore : bool with get, set" Usage="System.Security.Permissions.StorePermissionAttribute.AddToStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="storePermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermissionAttribute.CreateStore" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateStore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateStore { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateStore : bool with get, set" Usage="System.Security.Permissions.StorePermissionAttribute.CreateStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermissionAttribute.DeleteStore" />
       <MemberSignature Language="VB.NET" Value="Public Property DeleteStore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DeleteStore { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteStore : bool with get, set" Usage="System.Security.Permissions.StorePermissionAttribute.DeleteStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermissionAttribute.EnumerateCertificates" />
       <MemberSignature Language="VB.NET" Value="Public Property EnumerateCertificates As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnumerateCertificates { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnumerateCertificates : bool with get, set" Usage="System.Security.Permissions.StorePermissionAttribute.EnumerateCertificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermissionAttribute.EnumerateStores" />
       <MemberSignature Language="VB.NET" Value="Public Property EnumerateStores As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnumerateStores { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnumerateStores : bool with get, set" Usage="System.Security.Permissions.StorePermissionAttribute.EnumerateStores" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -261,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermissionAttribute.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Property Flags As StorePermissionFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::StorePermissionFlags Flags { System::Security::Permissions::StorePermissionFlags get(); void set(System::Security::Permissions::StorePermissionFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.Permissions.StorePermissionFlags with get, set" Usage="System.Security.Permissions.StorePermissionAttribute.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermissionAttribute.OpenStore" />
       <MemberSignature Language="VB.NET" Value="Public Property OpenStore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OpenStore { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OpenStore : bool with get, set" Usage="System.Security.Permissions.StorePermissionAttribute.OpenStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -328,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermissionAttribute.RemoveFromStore" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoveFromStore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RemoveFromStore { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RemoveFromStore : bool with get, set" Usage="System.Security.Permissions.StorePermissionAttribute.RemoveFromStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ScrollViewerAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollViewerAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer&#xA;Implements IScrollProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollViewerAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer, System::Windows::Automation::Provider::IScrollProvider" />
+  <TypeSignature Language="F#" Value="type ScrollViewerAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer&#xA;    interface IScrollProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.#ctor(System.Windows.Controls.ScrollViewer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ScrollViewer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollViewerAutomationPeer(System::Windows::Controls::ScrollViewer ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ScrollViewerAutomationPeer : System.Windows.Controls.ScrollViewer -&gt; System.Windows.Automation.Peers.ScrollViewerAutomationPeer" Usage="new System.Windows.Automation.Peers.ScrollViewerAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="scrollViewerAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="scrollViewerAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="scrollViewerAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.IsControlElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsControlElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsControlElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsControlElementCore : unit -&gt; bool" Usage="scrollViewerAutomationPeer.IsControlElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#HorizontallyScrollable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HorizontallyScrollable As Boolean Implements IScrollProvider.HorizontallyScrollable" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable</InterfaceMember>
@@ -156,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#HorizontalScrollPercent" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HorizontalScrollPercent As Double Implements IScrollProvider.HorizontalScrollPercent" />
       <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent</InterfaceMember>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#HorizontalViewSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HorizontalViewSize As Double Implements IScrollProvider.HorizontalViewSize" />
       <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize</InterfaceMember>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#VerticallyScrollable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property VerticallyScrollable As Boolean Implements IScrollProvider.VerticallyScrollable" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable</InterfaceMember>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#VerticalScrollPercent" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property VerticalScrollPercent As Double Implements IScrollProvider.VerticalScrollPercent" />
       <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent</InterfaceMember>
@@ -305,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System#Windows#Automation#Provider#IScrollProvider#VerticalViewSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property VerticalViewSize As Double Implements IScrollProvider.VerticalViewSize" />
       <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ScrollViewerAutomationPeer.System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair" />
   <TypeSignature Language="VB.NET" Value="Public Class ConcurrentExclusiveSchedulerPair" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConcurrentExclusiveSchedulerPair" />
+  <TypeSignature Language="F#" Value="type ConcurrentExclusiveSchedulerPair = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.TaskScheduler taskScheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentExclusiveSchedulerPair(System::Threading::Tasks::TaskScheduler ^ taskScheduler);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.ConcurrentExclusiveSchedulerPair : System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.ConcurrentExclusiveSchedulerPair" Usage="new System.Threading.Tasks.ConcurrentExclusiveSchedulerPair taskScheduler" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.TaskScheduler taskScheduler, int32 maxConcurrencyLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentExclusiveSchedulerPair(System::Threading::Tasks::TaskScheduler ^ taskScheduler, int maxConcurrencyLevel);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.ConcurrentExclusiveSchedulerPair : System.Threading.Tasks.TaskScheduler * int -&gt; System.Threading.Tasks.ConcurrentExclusiveSchedulerPair" Usage="new System.Threading.Tasks.ConcurrentExclusiveSchedulerPair (taskScheduler, maxConcurrencyLevel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.TaskScheduler taskScheduler, int32 maxConcurrencyLevel, int32 maxItemsPerTask) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentExclusiveSchedulerPair(System::Threading::Tasks::TaskScheduler ^ taskScheduler, int maxConcurrencyLevel, int maxItemsPerTask);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.ConcurrentExclusiveSchedulerPair : System.Threading.Tasks.TaskScheduler * int * int -&gt; System.Threading.Tasks.ConcurrentExclusiveSchedulerPair" Usage="new System.Threading.Tasks.ConcurrentExclusiveSchedulerPair (taskScheduler, maxConcurrencyLevel, maxItemsPerTask)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
+      <MemberSignature Language="F#" Value="member this.Complete : unit -&gt; unit" Usage="concurrentExclusiveSchedulerPair.Complete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -241,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Completion As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task ^ Completion { System::Threading::Tasks::Task ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Completion : System.Threading.Tasks.Task" Usage="System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConcurrentScheduler As TaskScheduler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskScheduler ^ ConcurrentScheduler { System::Threading::Tasks::TaskScheduler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConcurrentScheduler : System.Threading.Tasks.TaskScheduler" Usage="System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -315,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExclusiveScheduler As TaskScheduler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskScheduler ^ ExclusiveScheduler { System::Threading::Tasks::TaskScheduler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExclusiveScheduler : System.Threading.Tasks.TaskScheduler" Usage="System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

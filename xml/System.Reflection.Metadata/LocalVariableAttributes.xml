@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.LocalVariableAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum LocalVariableAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class LocalVariableAttributes" />
+  <TypeSignature Language="F#" Value="type LocalVariableAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.LocalVariableAttributes.DebuggerHidden" />
       <MemberSignature Language="VB.NET" Value="DebuggerHidden" />
       <MemberSignature Language="C++ CLI" Value="DebuggerHidden" />
+      <MemberSignature Language="F#" Value="DebuggerHidden = 1" Usage="System.Reflection.Metadata.LocalVariableAttributes.DebuggerHidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.LocalVariableAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.Metadata.LocalVariableAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

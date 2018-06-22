@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.ISimplexDatagramRouter" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISimplexDatagramRouter" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISimplexDatagramRouter" />
+  <TypeSignature Language="F#" Value="type ISimplexDatagramRouter = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginProcessMessage(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.ISimplexDatagramRouter.BeginProcessMessage(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginProcessMessage(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginProcessMessage : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iSimplexDatagramRouter.BeginProcessMessage (message, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.ISimplexDatagramRouter.EndProcessMessage(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndProcessMessage (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndProcessMessage(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndProcessMessage : IAsyncResult -&gt; unit" Usage="iSimplexDatagramRouter.EndProcessMessage result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

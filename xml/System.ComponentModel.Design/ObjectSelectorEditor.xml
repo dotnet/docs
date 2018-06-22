@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ObjectSelectorEditor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObjectSelectorEditor&#xA;Inherits UITypeEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectSelectorEditor abstract : System::Drawing::Design::UITypeEditor" />
+  <TypeSignature Language="F#" Value="type ObjectSelectorEditor = class&#xA;    inherit UITypeEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subObjectSelector As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectSelectorEditor(bool subObjectSelector);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ObjectSelectorEditor : bool -&gt; System.ComponentModel.Design.ObjectSelectorEditor" Usage="new System.ComponentModel.Design.ObjectSelectorEditor subObjectSelector" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ObjectSelectorEditor.currValue" />
       <MemberSignature Language="VB.NET" Value="Protected currValue As Object " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Object ^ currValue;" />
+      <MemberSignature Language="F#" Value="val mutable currValue : obj" Usage="System.ComponentModel.Design.ObjectSelectorEditor.currValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj&#xA;override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="objectSelectorEditor.EditValue (context, provider, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.EqualsToValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function EqualsToValue (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EqualsToValue(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.EqualsToValue : obj -&gt; bool" Usage="objectSelectorEditor.EqualsToValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FillTreeWithData(class System.ComponentModel.Design.ObjectSelectorEditor/Selector selector, class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.FillTreeWithData(System.ComponentModel.Design.ObjectSelectorEditor.Selector,System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FillTreeWithData(System::ComponentModel::Design::ObjectSelectorEditor::Selector ^ selector, System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member FillTreeWithData : System.ComponentModel.Design.ObjectSelectorEditor.Selector * System.ComponentModel.ITypeDescriptorContext * IServiceProvider -&gt; unit&#xA;override this.FillTreeWithData : System.ComponentModel.Design.ObjectSelectorEditor.Selector * System.ComponentModel.ITypeDescriptorContext * IServiceProvider -&gt; unit" Usage="objectSelectorEditor.FillTreeWithData (selector, context, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditStyle (context As ITypeDescriptorContext) As UITypeEditorEditStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Design::UITypeEditorEditStyle GetEditStyle(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle&#xA;override this.GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle" Usage="objectSelectorEditor.GetEditStyle context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ObjectSelectorEditor.prevValue" />
       <MemberSignature Language="VB.NET" Value="Protected prevValue As Object " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Object ^ prevValue;" />
+      <MemberSignature Language="F#" Value="val mutable prevValue : obj" Usage="System.ComponentModel.Design.ObjectSelectorEditor.prevValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -217,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.SetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetValue (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetValue(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : obj -&gt; unit&#xA;override this.SetValue : obj -&gt; unit" Usage="objectSelectorEditor.SetValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -240,6 +249,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ObjectSelectorEditor.SubObjectSelector" />
       <MemberSignature Language="VB.NET" Value="Public SubObjectSelector As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool SubObjectSelector;" />
+      <MemberSignature Language="F#" Value="val mutable SubObjectSelector : bool" Usage="System.ComponentModel.Design.ObjectSelectorEditor.SubObjectSelector" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

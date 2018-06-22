@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildRequestDataFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum BuildRequestDataFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class BuildRequestDataFlags" />
+  <TypeSignature Language="F#" Value="type BuildRequestDataFlags = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildRequestDataFlags.IgnoreExistingProjectState" />
       <MemberSignature Language="VB.NET" Value="IgnoreExistingProjectState" />
       <MemberSignature Language="C++ CLI" Value="IgnoreExistingProjectState" />
+      <MemberSignature Language="F#" Value="IgnoreExistingProjectState = 4" Usage="Microsoft.Build.Execution.BuildRequestDataFlags.IgnoreExistingProjectState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildRequestDataFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Build.Execution.BuildRequestDataFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildRequestDataFlags.ProvideProjectStateAfterBuild" />
       <MemberSignature Language="VB.NET" Value="ProvideProjectStateAfterBuild" />
       <MemberSignature Language="C++ CLI" Value="ProvideProjectStateAfterBuild" />
+      <MemberSignature Language="F#" Value="ProvideProjectStateAfterBuild = 2" Usage="Microsoft.Build.Execution.BuildRequestDataFlags.ProvideProjectStateAfterBuild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildRequestDataFlags.ReplaceExistingProjectInstance" />
       <MemberSignature Language="VB.NET" Value="ReplaceExistingProjectInstance" />
       <MemberSignature Language="C++ CLI" Value="ReplaceExistingProjectInstance" />
+      <MemberSignature Language="F#" Value="ReplaceExistingProjectInstance = 1" Usage="Microsoft.Build.Execution.BuildRequestDataFlags.ReplaceExistingProjectInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

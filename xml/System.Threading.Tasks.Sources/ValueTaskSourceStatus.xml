@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Sources.ValueTaskSourceStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValueTaskSourceStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValueTaskSourceStatus" />
+  <TypeSignature Language="F#" Value="type ValueTaskSourceStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceStatus.Canceled" />
       <MemberSignature Language="VB.NET" Value="Canceled" />
       <MemberSignature Language="C++ CLI" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 3" Usage="System.Threading.Tasks.Sources.ValueTaskSourceStatus.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceStatus.Faulted" />
       <MemberSignature Language="VB.NET" Value="Faulted" />
       <MemberSignature Language="C++ CLI" Value="Faulted" />
+      <MemberSignature Language="F#" Value="Faulted = 2" Usage="System.Threading.Tasks.Sources.ValueTaskSourceStatus.Faulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceStatus.Pending" />
       <MemberSignature Language="VB.NET" Value="Pending" />
       <MemberSignature Language="C++ CLI" Value="Pending" />
+      <MemberSignature Language="F#" Value="Pending = 0" Usage="System.Threading.Tasks.Sources.ValueTaskSourceStatus.Pending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Sources.ValueTaskSourceStatus.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Succeeded" />
       <MemberSignature Language="C++ CLI" Value="Succeeded" />
+      <MemberSignature Language="F#" Value="Succeeded = 1" Usage="System.Threading.Tasks.Sources.ValueTaskSourceStatus.Succeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

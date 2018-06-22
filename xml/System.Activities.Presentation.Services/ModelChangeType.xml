@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelChangeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ModelChangeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ModelChangeType" />
+  <TypeSignature Language="F#" Value="type ModelChangeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.CollectionItemAdded" />
       <MemberSignature Language="VB.NET" Value="CollectionItemAdded" />
       <MemberSignature Language="C++ CLI" Value="CollectionItemAdded" />
+      <MemberSignature Language="F#" Value="CollectionItemAdded = 2" Usage="System.Activities.Presentation.Services.ModelChangeType.CollectionItemAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.CollectionItemRemoved" />
       <MemberSignature Language="VB.NET" Value="CollectionItemRemoved" />
       <MemberSignature Language="C++ CLI" Value="CollectionItemRemoved" />
+      <MemberSignature Language="F#" Value="CollectionItemRemoved = 3" Usage="System.Activities.Presentation.Services.ModelChangeType.CollectionItemRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueAdded" />
       <MemberSignature Language="VB.NET" Value="DictionaryKeyValueAdded" />
       <MemberSignature Language="C++ CLI" Value="DictionaryKeyValueAdded" />
+      <MemberSignature Language="F#" Value="DictionaryKeyValueAdded = 4" Usage="System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueRemoved" />
       <MemberSignature Language="VB.NET" Value="DictionaryKeyValueRemoved" />
       <MemberSignature Language="C++ CLI" Value="DictionaryKeyValueRemoved" />
+      <MemberSignature Language="F#" Value="DictionaryKeyValueRemoved = 5" Usage="System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryValueChanged" />
       <MemberSignature Language="VB.NET" Value="DictionaryValueChanged" />
       <MemberSignature Language="C++ CLI" Value="DictionaryValueChanged" />
+      <MemberSignature Language="F#" Value="DictionaryValueChanged = 6" Usage="System.Activities.Presentation.Services.ModelChangeType.DictionaryValueChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Activities.Presentation.Services.ModelChangeType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="PropertyChanged" />
       <MemberSignature Language="C++ CLI" Value="PropertyChanged" />
+      <MemberSignature Language="F#" Value="PropertyChanged = 1" Usage="System.Activities.Presentation.Services.ModelChangeType.PropertyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

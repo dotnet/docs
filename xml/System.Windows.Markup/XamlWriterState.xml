@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlWriterState" />
   <TypeSignature Language="VB.NET" Value="Public Enum XamlWriterState" />
   <TypeSignature Language="C++ CLI" Value="public enum class XamlWriterState" />
+  <TypeSignature Language="F#" Value="type XamlWriterState = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XamlWriterState.Finished" />
       <MemberSignature Language="VB.NET" Value="Finished" />
       <MemberSignature Language="C++ CLI" Value="Finished" />
+      <MemberSignature Language="F#" Value="Finished = 1" Usage="System.Windows.Markup.XamlWriterState.Finished" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XamlWriterState.Starting" />
       <MemberSignature Language="VB.NET" Value="Starting" />
       <MemberSignature Language="C++ CLI" Value="Starting" />
+      <MemberSignature Language="F#" Value="Starting = 0" Usage="System.Windows.Markup.XamlWriterState.Starting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.Interop.BaseDevModeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum BaseDevModeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class BaseDevModeType" />
+  <TypeSignature Language="F#" Value="type BaseDevModeType = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Interop.BaseDevModeType.PrinterDefault" />
       <MemberSignature Language="VB.NET" Value="PrinterDefault" />
       <MemberSignature Language="C++ CLI" Value="PrinterDefault" />
+      <MemberSignature Language="F#" Value="PrinterDefault = 1" Usage="System.Printing.Interop.BaseDevModeType.PrinterDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.Interop.BaseDevModeType.UserDefault" />
       <MemberSignature Language="VB.NET" Value="UserDefault" />
       <MemberSignature Language="C++ CLI" Value="UserDefault" />
+      <MemberSignature Language="F#" Value="UserDefault = 0" Usage="System.Printing.Interop.BaseDevModeType.UserDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

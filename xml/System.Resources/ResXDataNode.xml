@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXDataNode" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResXDataNode&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResXDataNode sealed : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type ResXDataNode = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXDataNode(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXDataNode : string * obj -&gt; System.Resources.ResXDataNode" Usage="new System.Resources.ResXDataNode (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.#ctor(System.String,System.Resources.ResXFileRef)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, fileRef As ResXFileRef)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXDataNode(System::String ^ name, System::Resources::ResXFileRef ^ fileRef);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXDataNode : string * System.Resources.ResXFileRef -&gt; System.Resources.ResXDataNode" Usage="new System.Resources.ResXDataNode (name, fileRef)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.#ctor(System.String,System.Object,System.Func{System.Type,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object, typeNameConverter As Func(Of Type, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXDataNode(System::String ^ name, System::Object ^ value, Func&lt;Type ^, System::String ^&gt; ^ typeNameConverter);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXDataNode : string * obj * Func&lt;Type, string&gt; -&gt; System.Resources.ResXDataNode" Usage="new System.Resources.ResXDataNode (name, value, typeNameConverter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.#ctor(System.String,System.Resources.ResXFileRef,System.Func{System.Type,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, fileRef As ResXFileRef, typeNameConverter As Func(Of Type, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXDataNode(System::String ^ name, System::Resources::ResXFileRef ^ fileRef, Func&lt;Type ^, System::String ^&gt; ^ typeNameConverter);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXDataNode : string * System.Resources.ResXFileRef * Func&lt;Type, string&gt; -&gt; System.Resources.ResXDataNode" Usage="new System.Resources.ResXDataNode (name, fileRef, typeNameConverter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXDataNode.Comment" />
       <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Comment : string with get, set" Usage="System.Resources.ResXDataNode.Comment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXDataNode.FileRef" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileRef As ResXFileRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Resources::ResXFileRef ^ FileRef { System::Resources::ResXFileRef ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileRef : System.Resources.ResXFileRef" Usage="System.Resources.ResXDataNode.FileRef" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetNodePosition" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNodePosition () As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point GetNodePosition();" />
+      <MemberSignature Language="F#" Value="member this.GetNodePosition : unit -&gt; System.Drawing.Point" Usage="resXDataNode.GetNodePosition " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetValue(System.ComponentModel.Design.ITypeResolutionService)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (typeResolver As ITypeResolutionService) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::ComponentModel::Design::ITypeResolutionService ^ typeResolver);" />
+      <MemberSignature Language="F#" Value="member this.GetValue : System.ComponentModel.Design.ITypeResolutionService -&gt; obj" Usage="resXDataNode.GetValue typeResolver" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetValue(System.Reflection.AssemblyName[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (names As AssemblyName()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(cli::array &lt;System::Reflection::AssemblyName ^&gt; ^ names);" />
+      <MemberSignature Language="F#" Value="member this.GetValue : System.Reflection.AssemblyName[] -&gt; obj" Usage="resXDataNode.GetValue names" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -329,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetValueTypeName(System.ComponentModel.Design.ITypeResolutionService)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueTypeName (typeResolver As ITypeResolutionService) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetValueTypeName(System::ComponentModel::Design::ITypeResolutionService ^ typeResolver);" />
+      <MemberSignature Language="F#" Value="member this.GetValueTypeName : System.ComponentModel.Design.ITypeResolutionService -&gt; string" Usage="resXDataNode.GetValueTypeName typeResolver" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -354,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetValueTypeName(System.Reflection.AssemblyName[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueTypeName (names As AssemblyName()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetValueTypeName(cli::array &lt;System::Reflection::AssemblyName ^&gt; ^ names);" />
+      <MemberSignature Language="F#" Value="member this.GetValueTypeName : System.Reflection.AssemblyName[] -&gt; string" Usage="resXDataNode.GetValueTypeName names" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -379,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXDataNode.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Resources.ResXDataNode.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

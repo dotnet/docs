@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ImageStorageMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImageStorageMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImageStorageMode" />
+  <TypeSignature Language="F#" Value="type ImageStorageMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler" />
       <MemberSignature Language="VB.NET" Value="UseHttpHandler" />
       <MemberSignature Language="C++ CLI" Value="UseHttpHandler" />
+      <MemberSignature Language="F#" Value="UseHttpHandler = 0" Usage="System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseImageLocation" />
       <MemberSignature Language="VB.NET" Value="UseImageLocation" />
       <MemberSignature Language="C++ CLI" Value="UseImageLocation" />
+      <MemberSignature Language="F#" Value="UseImageLocation = 1" Usage="System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseImageLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CompositingQuality" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompositingQuality" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompositingQuality" />
+  <TypeSignature Language="F#" Value="type CompositingQuality = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.AssumeLinear" />
       <MemberSignature Language="VB.NET" Value="AssumeLinear" />
       <MemberSignature Language="C++ CLI" Value="AssumeLinear" />
+      <MemberSignature Language="F#" Value="AssumeLinear = 4" Usage="System.Drawing.Drawing2D.CompositingQuality.AssumeLinear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Drawing.Drawing2D.CompositingQuality.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.GammaCorrected" />
       <MemberSignature Language="VB.NET" Value="GammaCorrected" />
       <MemberSignature Language="C++ CLI" Value="GammaCorrected" />
+      <MemberSignature Language="F#" Value="GammaCorrected = 3" Usage="System.Drawing.Drawing2D.CompositingQuality.GammaCorrected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.HighQuality" />
       <MemberSignature Language="VB.NET" Value="HighQuality" />
       <MemberSignature Language="C++ CLI" Value="HighQuality" />
+      <MemberSignature Language="F#" Value="HighQuality = 2" Usage="System.Drawing.Drawing2D.CompositingQuality.HighQuality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.HighSpeed" />
       <MemberSignature Language="VB.NET" Value="HighSpeed" />
       <MemberSignature Language="C++ CLI" Value="HighSpeed" />
+      <MemberSignature Language="F#" Value="HighSpeed = 1" Usage="System.Drawing.Drawing2D.CompositingQuality.HighSpeed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = -1" Usage="System.Drawing.Drawing2D.CompositingQuality.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.LingerOption" />
   <TypeSignature Language="VB.NET" Value="Public Class LingerOption" />
   <TypeSignature Language="C++ CLI" Value="public ref class LingerOption" />
+  <TypeSignature Language="F#" Value="type LingerOption = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.LingerOption.#ctor(System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enable As Boolean, seconds As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LingerOption(bool enable, int seconds);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.LingerOption : bool * int -&gt; System.Net.Sockets.LingerOption" Usage="new System.Net.Sockets.LingerOption (enable, seconds)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.LingerOption.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Net.Sockets.LingerOption.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.LingerOption.LingerTime" />
       <MemberSignature Language="VB.NET" Value="Public Property LingerTime As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LingerTime { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LingerTime : int with get, set" Usage="System.Net.Sockets.LingerOption.LingerTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

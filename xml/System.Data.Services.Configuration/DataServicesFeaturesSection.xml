@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Configuration.DataServicesFeaturesSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServicesFeaturesSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServicesFeaturesSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type DataServicesFeaturesSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Configuration.DataServicesFeaturesSection.ReplaceFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplaceFunction As DataServicesReplaceFunctionFeature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Configuration::DataServicesReplaceFunctionFeature ^ ReplaceFunction { System::Data::Services::Configuration::DataServicesReplaceFunctionFeature ^ get(); void set(System::Data::Services::Configuration::DataServicesReplaceFunctionFeature ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplaceFunction : System.Data.Services.Configuration.DataServicesReplaceFunctionFeature with get, set" Usage="System.Data.Services.Configuration.DataServicesFeaturesSection.ReplaceFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

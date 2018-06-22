@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeviceElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeviceElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type DeviceElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElement.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, inheritsFrom As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceElement(System::String ^ name, System::String ^ inheritsFrom);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.DeviceElement : string * string -&gt; System.Web.UI.MobileControls.DeviceElement" Usage="new System.Web.UI.MobileControls.DeviceElement (name, inheritsFrom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElement.#ctor(System.String,System.Type,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, predicateClass As Type, predicateMethod As String, pageAdapter As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceElement(System::String ^ name, Type ^ predicateClass, System::String ^ predicateMethod, Type ^ pageAdapter);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.DeviceElement : string * Type * string * Type -&gt; System.Web.UI.MobileControls.DeviceElement" Usage="new System.Web.UI.MobileControls.DeviceElement (name, predicateClass, predicateMethod, pageAdapter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElement.#ctor(System.String,System.String,System.Type,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, inheritsFrom As String, predicateClass As Type, predicateMethod As String, pageAdapter As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceElement(System::String ^ name, System::String ^ inheritsFrom, Type ^ predicateClass, System::String ^ predicateMethod, Type ^ pageAdapter);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.DeviceElement : string * string * Type * string * Type -&gt; System.Web.UI.MobileControls.DeviceElement" Usage="new System.Web.UI.MobileControls.DeviceElement (name, inheritsFrom, predicateClass, predicateMethod, pageAdapter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.Controls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As ControlElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ControlElementCollection ^ Controls { System::Web::UI::MobileControls::ControlElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.MobileControls.ControlElementCollection" Usage="System.Web.UI.MobileControls.DeviceElement.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.ElementProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementProperty : System.Configuration.ConfigurationElementProperty" Usage="System.Web.UI.MobileControls.DeviceElement.ElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.InheritsFrom" />
       <MemberSignature Language="VB.NET" Value="Public Property InheritsFrom As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InheritsFrom { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InheritsFrom : string with get, set" Usage="System.Web.UI.MobileControls.DeviceElement.InheritsFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.MobileControls.DeviceElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.PageAdapter" />
       <MemberSignature Language="VB.NET" Value="Public Property PageAdapter As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PageAdapter { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PageAdapter : Type with get, set" Usage="System.Web.UI.MobileControls.DeviceElement.PageAdapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.PredicateClass" />
       <MemberSignature Language="VB.NET" Value="Public Property PredicateClass As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PredicateClass { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PredicateClass : Type with get, set" Usage="System.Web.UI.MobileControls.DeviceElement.PredicateClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.PredicateMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property PredicateMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PredicateMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PredicateMethod : string with get, set" Usage="System.Web.UI.MobileControls.DeviceElement.PredicateMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -308,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.UI.MobileControls.DeviceElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.CalendarItem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CalendarItem&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class CalendarItem sealed : System::Windows::Controls::Control" />
+  <TypeSignature Language="F#" Value="type CalendarItem = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.CalendarItem.DayTitleTemplateResourceKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DayTitleTemplateResourceKey As ComponentResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ComponentResourceKey ^ DayTitleTemplateResourceKey { System::Windows::ComponentResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DayTitleTemplateResourceKey : System.Windows.ComponentResourceKey" Usage="System.Windows.Controls.Primitives.CalendarItem.DayTitleTemplateResourceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CalendarItem.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="calendarItem.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CalendarItem.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostMouseCapture (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostMouseCapture(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLostMouseCapture : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="calendarItem.OnLostMouseCapture e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CalendarItem.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="calendarItem.OnMouseUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

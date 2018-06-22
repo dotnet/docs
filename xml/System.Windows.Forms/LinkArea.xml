@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkArea" />
   <TypeSignature Language="VB.NET" Value="Public Structure LinkArea" />
   <TypeSignature Language="C++ CLI" Value="public value class LinkArea" />
+  <TypeSignature Language="F#" Value="type LinkArea = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkArea(int start, int length);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.LinkArea : int * int -&gt; System.Windows.Forms.LinkArea" Usage="new System.Windows.Forms.LinkArea (start, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="linkArea.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="linkArea.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkArea.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.Forms.LinkArea.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkArea.Length" />
       <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int with get, set" Usage="System.Windows.Forms.LinkArea.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.op_Equality(System.Windows.Forms.LinkArea,System.Windows.Forms.LinkArea)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (linkArea1 As LinkArea, linkArea2 As LinkArea) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::LinkArea linkArea1, System::Windows::Forms::LinkArea linkArea2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.LinkArea * System.Windows.Forms.LinkArea -&gt; bool" Usage="linkArea1 = linkArea2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.op_Inequality(System.Windows.Forms.LinkArea,System.Windows.Forms.LinkArea)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (linkArea1 As LinkArea, linkArea2 As LinkArea) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::LinkArea linkArea1, System::Windows::Forms::LinkArea linkArea2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.LinkArea * System.Windows.Forms.LinkArea -&gt; bool" Usage="System.Windows.Forms.LinkArea.op_Inequality (linkArea1, linkArea2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkArea.Start" />
       <MemberSignature Language="VB.NET" Value="Public Property Start As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Start { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Start : int with get, set" Usage="System.Windows.Forms.LinkArea.Start" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="linkArea.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

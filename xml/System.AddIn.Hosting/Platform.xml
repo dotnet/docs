@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.Platform" />
   <TypeSignature Language="VB.NET" Value="Public Enum Platform" />
   <TypeSignature Language="C++ CLI" Value="public enum class Platform" />
+  <TypeSignature Language="F#" Value="type Platform = " />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.AnyCpu" />
       <MemberSignature Language="VB.NET" Value="AnyCpu" />
       <MemberSignature Language="C++ CLI" Value="AnyCpu" />
+      <MemberSignature Language="F#" Value="AnyCpu = 1" Usage="System.AddIn.Hosting.Platform.AnyCpu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.ARM" />
       <MemberSignature Language="VB.NET" Value="ARM" />
       <MemberSignature Language="C++ CLI" Value="ARM" />
+      <MemberSignature Language="F#" Value="ARM = 4" Usage="System.AddIn.Hosting.Platform.ARM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.Host" />
       <MemberSignature Language="VB.NET" Value="Host" />
       <MemberSignature Language="C++ CLI" Value="Host" />
+      <MemberSignature Language="F#" Value="Host = 0" Usage="System.AddIn.Hosting.Platform.Host" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.X64" />
       <MemberSignature Language="VB.NET" Value="X64" />
       <MemberSignature Language="C++ CLI" Value="X64" />
+      <MemberSignature Language="F#" Value="X64 = 3" Usage="System.AddIn.Hosting.Platform.X64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.X86" />
       <MemberSignature Language="VB.NET" Value="X86" />
       <MemberSignature Language="C++ CLI" Value="X86" />
+      <MemberSignature Language="F#" Value="X86 = 2" Usage="System.AddIn.Hosting.Platform.X86" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

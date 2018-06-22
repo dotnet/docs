@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlConnection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlConnection&#xA;Inherits DbConnection&#xA;Implements ICloneable, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlConnection sealed : System::Data::Common::DbConnection, ICloneable, IDisposable" />
+  <TypeSignature Language="F#" Value="type SqlConnection = class&#xA;    inherit DbConnection&#xA;    interface IDbConnection&#xA;    interface ICloneable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -160,6 +161,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlConnection(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlConnection : string -&gt; System.Data.SqlClient.SqlConnection" Usage="new System.Data.SqlClient.SqlConnection connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -218,6 +220,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, class System.Data.SqlClient.SqlCredential cred) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String, cred As SqlCredential)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlConnection(System::String ^ connectionString, System::Data::SqlClient::SqlCredential ^ cred);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlConnection : string * System.Data.SqlClient.SqlCredential -&gt; System.Data.SqlClient.SqlConnection" Usage="new System.Data.SqlClient.SqlConnection (connectionString, cred)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -243,6 +246,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.AccessToken" />
       <MemberSignature Language="VB.NET" Value="Public Property AccessToken As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccessToken { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AccessToken : string with get, set" Usage="System.Data.SqlClient.SqlConnection.AccessToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -270,6 +274,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbTransaction ^ BeginDbTransaction(System::Data::IsolationLevel isolationLevel);" />
+      <MemberSignature Language="F#" Value="override this.BeginDbTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction" Usage="sqlConnection.BeginDbTransaction isolationLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -314,6 +319,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As SqlTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlTransaction ^ BeginTransaction();" />
+      <MemberSignature Language="F#" Value="override this.BeginTransaction : unit -&gt; System.Data.SqlClient.SqlTransaction" Usage="sqlConnection.BeginTransaction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -375,6 +381,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.BeginTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction (iso As IsolationLevel) As SqlTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlTransaction ^ BeginTransaction(System::Data::IsolationLevel iso);" />
+      <MemberSignature Language="F#" Value="override this.BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.SqlClient.SqlTransaction" Usage="sqlConnection.BeginTransaction iso" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -436,6 +443,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.BeginTransaction(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction (transactionName As String) As SqlTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlTransaction ^ BeginTransaction(System::String ^ transactionName);" />
+      <MemberSignature Language="F#" Value="override this.BeginTransaction : string -&gt; System.Data.SqlClient.SqlTransaction" Usage="sqlConnection.BeginTransaction transactionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -498,6 +506,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.BeginTransaction(System.Data.IsolationLevel,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction (iso As IsolationLevel, transactionName As String) As SqlTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlTransaction ^ BeginTransaction(System::Data::IsolationLevel iso, System::String ^ transactionName);" />
+      <MemberSignature Language="F#" Value="override this.BeginTransaction : System.Data.IsolationLevel * string -&gt; System.Data.SqlClient.SqlTransaction" Usage="sqlConnection.BeginTransaction (iso, transactionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -563,6 +572,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.ChangeDatabase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ChangeDatabase (database As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ChangeDatabase(System::String ^ database);" />
+      <MemberSignature Language="F#" Value="override this.ChangeDatabase : string -&gt; unit" Usage="sqlConnection.ChangeDatabase database" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.ChangeDatabase(System.String)</InterfaceMember>
@@ -627,6 +637,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.ChangePassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ChangePassword (connectionString As String, newPassword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChangePassword(System::String ^ connectionString, System::String ^ newPassword);" />
+      <MemberSignature Language="F#" Value="static member ChangePassword : string * string -&gt; unit" Usage="System.Data.SqlClient.SqlConnection.ChangePassword (connectionString, newPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -704,6 +715,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.ChangePassword(System.String,System.Data.SqlClient.SqlCredential,System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ChangePassword (connectionString As String, credential As SqlCredential, newSecurePassword As SecureString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChangePassword(System::String ^ connectionString, System::Data::SqlClient::SqlCredential ^ credential, System::Security::SecureString ^ newSecurePassword);" />
+      <MemberSignature Language="F#" Value="static member ChangePassword : string * System.Data.SqlClient.SqlCredential * System.Security.SecureString -&gt; unit" Usage="System.Data.SqlClient.SqlConnection.ChangePassword (connectionString, credential, newSecurePassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -741,6 +753,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.ClearAllPools" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearAllPools ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearAllPools();" />
+      <MemberSignature Language="F#" Value="static member ClearAllPools : unit -&gt; unit" Usage="System.Data.SqlClient.SqlConnection.ClearAllPools " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -778,6 +791,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.ClearPool(System.Data.SqlClient.SqlConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearPool (connection As SqlConnection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearPool(System::Data::SqlClient::SqlConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="static member ClearPool : System.Data.SqlClient.SqlConnection -&gt; unit" Usage="System.Data.SqlClient.SqlConnection.ClearPool connection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -818,6 +832,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.ClientConnectionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientConnectionId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ClientConnectionId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientConnectionId : Guid" Usage="System.Data.SqlClient.SqlConnection.ClientConnectionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -857,6 +872,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="sqlConnection.Close " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.Close</InterfaceMember>
@@ -919,6 +935,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.ColumnEncryptionKeyCacheTtl" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ColumnEncryptionKeyCacheTtl As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeSpan ColumnEncryptionKeyCacheTtl { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnEncryptionKeyCacheTtl : TimeSpan with get, set" Usage="System.Data.SqlClient.SqlConnection.ColumnEncryptionKeyCacheTtl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -944,6 +961,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.ColumnEncryptionQueryMetadataCacheEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ColumnEncryptionQueryMetadataCacheEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ColumnEncryptionQueryMetadataCacheEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnEncryptionQueryMetadataCacheEnabled : bool with get, set" Usage="System.Data.SqlClient.SqlConnection.ColumnEncryptionQueryMetadataCacheEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -978,6 +996,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.ColumnEncryptionTrustedMasterKeyPaths" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ColumnEncryptionTrustedMasterKeyPaths As IDictionary(Of String, IList(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IDictionary&lt;System::String ^, System::Collections::Generic::IList&lt;System::String ^&gt; ^&gt; ^ ColumnEncryptionTrustedMasterKeyPaths { System::Collections::Generic::IDictionary&lt;System::String ^, System::Collections::Generic::IList&lt;System::String ^&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnEncryptionTrustedMasterKeyPaths : System.Collections.Generic.IDictionary&lt;string, System.Collections.Generic.IList&lt;string&gt;&gt;" Usage="System.Data.SqlClient.SqlConnection.ColumnEncryptionTrustedMasterKeyPaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1003,6 +1022,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.SqlClient.SqlConnection.ConnectionString" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbConnection.ConnectionString</InterfaceMember>
@@ -1113,6 +1133,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.ConnectionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConnectionTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ConnectionTimeout { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionTimeout : int" Usage="System.Data.SqlClient.SqlConnection.ConnectionTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbConnection.ConnectionTimeout</InterfaceMember>
@@ -1167,6 +1188,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As SqlCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlCommand ^ CreateCommand();" />
+      <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.SqlClient.SqlCommand" Usage="sqlConnection.CreateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1206,6 +1228,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.CreateDbCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbCommand ^ CreateDbCommand();" />
+      <MemberSignature Language="F#" Value="override this.CreateDbCommand : unit -&gt; System.Data.Common.DbCommand" Usage="sqlConnection.CreateDbCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1237,6 +1260,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.Credential" />
       <MemberSignature Language="VB.NET" Value="Public Property Credential As SqlCredential" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlCredential ^ Credential { System::Data::SqlClient::SqlCredential ^ get(); void set(System::Data::SqlClient::SqlCredential ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credential : System.Data.SqlClient.SqlCredential with get, set" Usage="System.Data.SqlClient.SqlConnection.Credential" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1286,6 +1310,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Property Credentials As SqlCredential" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlCredential ^ Credentials { System::Data::SqlClient::SqlCredential ^ get(); void set(System::Data::SqlClient::SqlCredential ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Data.SqlClient.SqlCredential with get, set" Usage="System.Data.SqlClient.SqlConnection.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1307,6 +1332,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.Database" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Database As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Database { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Database : string" Usage="System.Data.SqlClient.SqlConnection.Database" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbConnection.Database</InterfaceMember>
@@ -1360,6 +1386,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DataSource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataSource { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : string" Usage="System.Data.SqlClient.SqlConnection.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1415,6 +1442,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.DbProviderFactory" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbProviderFactory As DbProviderFactory" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbProviderFactory ^ DbProviderFactory { System::Data::Common::DbProviderFactory ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbProviderFactory : System.Data.Common.DbProviderFactory" Usage="System.Data.SqlClient.SqlConnection.DbProviderFactory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1436,6 +1464,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="sqlConnection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1469,6 +1498,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnlistDistributedTransaction (transaction As ITransaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnlistDistributedTransaction(System::EnterpriseServices::ITransaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.EnlistDistributedTransaction : System.EnterpriseServices.ITransaction -&gt; unit" Usage="sqlConnection.EnlistDistributedTransaction transaction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1502,6 +1532,7 @@ End Module
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.EnlistTransaction(System.Transactions.Transaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnlistTransaction(System::Transactions::Transaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="override this.EnlistTransaction : System.Transactions.Transaction -&gt; unit" Usage="sqlConnection.EnlistTransaction transaction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1532,6 +1563,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.FireInfoMessageEventOnUserErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property FireInfoMessageEventOnUserErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FireInfoMessageEventOnUserErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FireInfoMessageEventOnUserErrors : bool with get, set" Usage="System.Data.SqlClient.SqlConnection.FireInfoMessageEventOnUserErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1593,6 +1625,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema();" />
+      <MemberSignature Language="F#" Value="override this.GetSchema : unit -&gt; System.Data.DataTable" Usage="sqlConnection.GetSchema " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1615,6 +1648,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.GetSchema(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName);" />
+      <MemberSignature Language="F#" Value="override this.GetSchema : string -&gt; System.Data.DataTable" Usage="sqlConnection.GetSchema collectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1884,6 +1918,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.GetSchema(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String, restrictionValues As String()) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName, cli::array &lt;System::String ^&gt; ^ restrictionValues);" />
+      <MemberSignature Language="F#" Value="override this.GetSchema : string * string[] -&gt; System.Data.DataTable" Usage="sqlConnection.GetSchema (collectionName, restrictionValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1925,6 +1960,7 @@ class Program {
       <MemberSignature Language="DocId" Value="E:System.Data.SqlClient.SqlConnection.InfoMessage" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event InfoMessage As SqlInfoMessageEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::SqlClient::SqlInfoMessageEventHandler ^ InfoMessage;" />
+      <MemberSignature Language="F#" Value="member this.InfoMessage : System.Data.SqlClient.SqlInfoMessageEventHandler " Usage="member this.InfoMessage : System.Data.SqlClient.SqlInfoMessageEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1965,6 +2001,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.Open" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Open();" />
+      <MemberSignature Language="F#" Value="override this.Open : unit -&gt; unit" Usage="sqlConnection.Open " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.Open</InterfaceMember>
@@ -2030,6 +2067,7 @@ class Program {
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task OpenAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ OpenAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.OpenAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sqlConnection.OpenAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2080,6 +2118,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.PacketSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PacketSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PacketSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PacketSize : int" Usage="System.Data.SqlClient.SqlConnection.PacketSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2134,6 +2173,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.RegisterColumnEncryptionKeyStoreProviders(System.Collections.Generic.IDictionary{System.String,System.Data.SqlClient.SqlColumnEncryptionKeyStoreProvider})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterColumnEncryptionKeyStoreProviders (customProviders As IDictionary(Of String, SqlColumnEncryptionKeyStoreProvider))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterColumnEncryptionKeyStoreProviders(System::Collections::Generic::IDictionary&lt;System::String ^, System::Data::SqlClient::SqlColumnEncryptionKeyStoreProvider ^&gt; ^ customProviders);" />
+      <MemberSignature Language="F#" Value="static member RegisterColumnEncryptionKeyStoreProviders : System.Collections.Generic.IDictionary&lt;string, System.Data.SqlClient.SqlColumnEncryptionKeyStoreProvider&gt; -&gt; unit" Usage="System.Data.SqlClient.SqlConnection.RegisterColumnEncryptionKeyStoreProviders customProviders" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2157,6 +2197,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.ResetStatistics" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetStatistics ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetStatistics();" />
+      <MemberSignature Language="F#" Value="member this.ResetStatistics : unit -&gt; unit" Usage="sqlConnection.ResetStatistics " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2194,6 +2235,7 @@ class Program {
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.RetrieveStatistics" />
       <MemberSignature Language="VB.NET" Value="Public Function RetrieveStatistics () As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ RetrieveStatistics();" />
+      <MemberSignature Language="F#" Value="member this.RetrieveStatistics : unit -&gt; System.Collections.IDictionary" Usage="sqlConnection.RetrieveStatistics " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2232,6 +2274,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.ServerVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ServerVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ServerVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerVersion : string" Usage="System.Data.SqlClient.SqlConnection.ServerVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2290,6 +2333,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As ConnectionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Data.ConnectionState" Usage="System.Data.SqlClient.SqlConnection.State" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbConnection.State</InterfaceMember>
@@ -2338,6 +2382,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.StatisticsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property StatisticsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StatisticsEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.StatisticsEnabled : bool with get, set" Usage="System.Data.SqlClient.SqlConnection.StatisticsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2418,6 +2463,7 @@ class Program {
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlConnection.WorkstationId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkstationId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WorkstationId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkstationId : string" Usage="System.Data.SqlClient.SqlConnection.WorkstationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

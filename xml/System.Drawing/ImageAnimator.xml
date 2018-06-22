@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.ImageAnimator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageAnimator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageAnimator sealed" />
+  <TypeSignature Language="F#" Value="type ImageAnimator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Animate(class System.Drawing.Image image, class System.EventHandler onFrameChangedHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.Animate(System.Drawing.Image,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Animate(System::Drawing::Image ^ image, EventHandler ^ onFrameChangedHandler);" />
+      <MemberSignature Language="F#" Value="static member Animate : System.Drawing.Image * EventHandler -&gt; unit" Usage="System.Drawing.ImageAnimator.Animate (image, onFrameChangedHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanAnimate(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.CanAnimate(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CanAnimate(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="static member CanAnimate : System.Drawing.Image -&gt; bool" Usage="System.Drawing.ImageAnimator.CanAnimate image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StopAnimate(class System.Drawing.Image image, class System.EventHandler onFrameChangedHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.StopAnimate(System.Drawing.Image,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StopAnimate(System::Drawing::Image ^ image, EventHandler ^ onFrameChangedHandler);" />
+      <MemberSignature Language="F#" Value="static member StopAnimate : System.Drawing.Image * EventHandler -&gt; unit" Usage="System.Drawing.ImageAnimator.StopAnimate (image, onFrameChangedHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.UpdateFrames" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UpdateFrames ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UpdateFrames();" />
+      <MemberSignature Language="F#" Value="static member UpdateFrames : unit -&gt; unit" Usage="System.Drawing.ImageAnimator.UpdateFrames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateFrames(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.UpdateFrames(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UpdateFrames(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="static member UpdateFrames : System.Drawing.Image -&gt; unit" Usage="System.Drawing.ImageAnimator.UpdateFrames image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

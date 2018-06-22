@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TextBox" />
   <TypeSignature Language="VB.NET" Value="Public Class TextBox&#xA;Inherits TextBoxBase&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextBox : System::Windows::Controls::Primitives::TextBoxBase, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type TextBox = class&#xA;    inherit TextBoxBase&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +112,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.CaretIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property CaretIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CaretIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CaretIndex : int with get, set" Usage="System.Windows.Controls.TextBox.CaretIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +148,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.CharacterCasing" />
       <MemberSignature Language="VB.NET" Value="Public Property CharacterCasing As CharacterCasing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::CharacterCasing CharacterCasing { System::Windows::Controls::CharacterCasing get(); void set(System::Windows::Controls::CharacterCasing value); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterCasing : System.Windows.Controls.CharacterCasing with get, set" Usage="System.Windows.Controls.TextBox.CharacterCasing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +194,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextBox.CharacterCasingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CharacterCasingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CharacterCasingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CharacterCasingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TextBox.CharacterCasingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +214,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="textBox.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -231,6 +236,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetCharacterIndexFromLineIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCharacterIndexFromLineIndex (lineIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCharacterIndexFromLineIndex(int lineIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetCharacterIndexFromLineIndex : int -&gt; int" Usage="textBox.GetCharacterIndexFromLineIndex lineIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -260,6 +266,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetCharacterIndexFromPoint(valuetype System.Windows.Point point, bool snapToText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetCharacterIndexFromPoint(System.Windows.Point,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCharacterIndexFromPoint(System::Windows::Point point, bool snapToText);" />
+      <MemberSignature Language="F#" Value="member this.GetCharacterIndexFromPoint : System.Windows.Point * bool -&gt; int" Usage="textBox.GetCharacterIndexFromPoint (point, snapToText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -292,6 +299,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFirstVisibleLineIndex () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetFirstVisibleLineIndex();" />
+      <MemberSignature Language="F#" Value="member this.GetFirstVisibleLineIndex : unit -&gt; int" Usage="textBox.GetFirstVisibleLineIndex " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -318,6 +326,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastVisibleLineIndex () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetLastVisibleLineIndex();" />
+      <MemberSignature Language="F#" Value="member this.GetLastVisibleLineIndex : unit -&gt; int" Usage="textBox.GetLastVisibleLineIndex " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -344,6 +353,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetLineIndexFromCharacterIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLineIndexFromCharacterIndex (charIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetLineIndexFromCharacterIndex(int charIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetLineIndexFromCharacterIndex : int -&gt; int" Usage="textBox.GetLineIndexFromCharacterIndex charIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -373,6 +383,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetLineLength(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLineLength (lineIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetLineLength(int lineIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetLineLength : int -&gt; int" Usage="textBox.GetLineLength lineIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -400,6 +411,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetLineText(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLineText (lineIndex As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLineText(int lineIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetLineText : int -&gt; string" Usage="textBox.GetLineText lineIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -427,6 +439,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetNextSpellingErrorCharacterIndex(System.Int32,System.Windows.Documents.LogicalDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextSpellingErrorCharacterIndex (charIndex As Integer, direction As LogicalDirection) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetNextSpellingErrorCharacterIndex(int charIndex, System::Windows::Documents::LogicalDirection direction);" />
+      <MemberSignature Language="F#" Value="member this.GetNextSpellingErrorCharacterIndex : int * System.Windows.Documents.LogicalDirection -&gt; int" Usage="textBox.GetNextSpellingErrorCharacterIndex (charIndex, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -465,6 +478,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetRectFromCharacterIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRectFromCharacterIndex (charIndex As Integer) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect GetRectFromCharacterIndex(int charIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetRectFromCharacterIndex : int -&gt; System.Windows.Rect" Usage="textBox.GetRectFromCharacterIndex charIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -496,6 +510,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetRectFromCharacterIndex(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRectFromCharacterIndex (charIndex As Integer, trailingEdge As Boolean) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect GetRectFromCharacterIndex(int charIndex, bool trailingEdge);" />
+      <MemberSignature Language="F#" Value="member this.GetRectFromCharacterIndex : int * bool -&gt; System.Windows.Rect" Usage="textBox.GetRectFromCharacterIndex (charIndex, trailingEdge)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -532,6 +547,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetSpellingError(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSpellingError (charIndex As Integer) As SpellingError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Controls::SpellingError ^ GetSpellingError(int charIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetSpellingError : int -&gt; System.Windows.Controls.SpellingError" Usage="textBox.GetSpellingError charIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -559,6 +575,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetSpellingErrorLength(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSpellingErrorLength (charIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetSpellingErrorLength(int charIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetSpellingErrorLength : int -&gt; int" Usage="textBox.GetSpellingErrorLength charIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -583,6 +600,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.GetSpellingErrorStart(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSpellingErrorStart (charIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetSpellingErrorStart(int charIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetSpellingErrorStart : int -&gt; int" Usage="textBox.GetSpellingErrorStart charIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -607,6 +625,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.LineCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineCount : int" Usage="System.Windows.Controls.TextBox.LineCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -650,6 +669,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.TextBox.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -677,6 +697,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLength : int with get, set" Usage="System.Windows.Controls.TextBox.MaxLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -735,6 +756,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextBox.MaxLengthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxLengthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxLengthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxLengthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TextBox.MaxLengthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -754,6 +776,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.MaxLines" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLines As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLines { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLines : int with get, set" Usage="System.Windows.Controls.TextBox.MaxLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -812,6 +835,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextBox.MaxLinesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxLinesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxLinesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxLinesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TextBox.MaxLinesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -831,6 +855,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="textBox.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -862,6 +887,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.MinLines" />
       <MemberSignature Language="VB.NET" Value="Public Property MinLines As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinLines { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinLines : int with get, set" Usage="System.Windows.Controls.TextBox.MinLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -918,6 +944,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextBox.MinLinesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinLinesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinLinesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinLinesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TextBox.MinLinesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -937,6 +964,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="textBox.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -965,6 +993,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="textBox.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -996,6 +1025,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.ScrollToLine(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToLine (lineIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToLine(int lineIndex);" />
+      <MemberSignature Language="F#" Value="member this.ScrollToLine : int -&gt; unit" Usage="textBox.ScrollToLine lineIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1029,6 +1059,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.Select(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select (start As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select(int start, int length);" />
+      <MemberSignature Language="F#" Value="member this.Select : int * int -&gt; unit" Usage="textBox.Select (start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1059,6 +1090,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.SelectedText" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedText : string with get, set" Usage="System.Windows.Controls.TextBox.SelectedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1094,6 +1126,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.SelectionLength" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionLength : int with get, set" Usage="System.Windows.Controls.TextBox.SelectionLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1136,6 +1169,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.SelectionStart" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionStart As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionStart { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionStart : int with get, set" Usage="System.Windows.Controls.TextBox.SelectionStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1176,6 +1210,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextBox.ShouldSerializeText(System.Windows.Markup.XamlDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeText (manager As XamlDesignerSerializationManager) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeText(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeText : System.Windows.Markup.XamlDesignerSerializationManager -&gt; bool" Usage="textBox.ShouldSerializeText manager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1277,6 +1312,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Controls.TextBox.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1335,6 +1371,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.TextAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TextAlignment As TextAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextAlignment TextAlignment { System::Windows::TextAlignment get(); void set(System::Windows::TextAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.TextAlignment : System.Windows.TextAlignment with get, set" Usage="System.Windows.Controls.TextBox.TextAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1384,6 +1421,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextBox.TextAlignmentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextAlignmentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextAlignmentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextAlignmentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TextBox.TextAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1403,6 +1441,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.TextDecorations" />
       <MemberSignature Language="VB.NET" Value="Public Property TextDecorations As TextDecorationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationCollection ^ TextDecorations { System::Windows::TextDecorationCollection ^ get(); void set(System::Windows::TextDecorationCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextDecorations : System.Windows.TextDecorationCollection with get, set" Usage="System.Windows.Controls.TextBox.TextDecorations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1462,6 +1501,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextBox.TextDecorationsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextDecorationsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextDecorationsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextDecorationsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TextBox.TextDecorationsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1488,6 +1528,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextBox.TextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TextBox.TextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1507,6 +1548,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.TextWrapping" />
       <MemberSignature Language="VB.NET" Value="Public Property TextWrapping As TextWrapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextWrapping TextWrapping { System::Windows::TextWrapping get(); void set(System::Windows::TextWrapping value); };" />
+      <MemberSignature Language="F#" Value="member this.TextWrapping : System.Windows.TextWrapping with get, set" Usage="System.Windows.Controls.TextBox.TextWrapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1550,6 +1592,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextBox.TextWrappingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextWrappingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextWrappingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextWrappingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TextBox.TextWrappingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1576,6 +1619,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextBox.Typography" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Typography As Typography" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Typography ^ Typography { System::Windows::Documents::Typography ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Typography : System.Windows.Documents.Typography" Usage="System.Windows.Controls.TextBox.Typography" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

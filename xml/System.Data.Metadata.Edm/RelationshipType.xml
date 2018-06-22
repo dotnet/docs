@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RelationshipType" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RelationshipType&#xA;Inherits EntityTypeBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RelationshipType abstract : System::Data::Metadata::Edm::EntityTypeBase" />
+  <TypeSignature Language="F#" Value="type RelationshipType = class&#xA;    inherit EntityTypeBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RelationshipType.RelationshipEndMembers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipEndMembers As ReadOnlyMetadataCollection(Of RelationshipEndMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::RelationshipEndMember ^&gt; ^ RelationshipEndMembers { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::RelationshipEndMember ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelationshipEndMembers : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.RelationshipEndMember&gt;" Usage="System.Data.Metadata.Edm.RelationshipType.RelationshipEndMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

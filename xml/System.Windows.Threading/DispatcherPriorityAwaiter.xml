@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherPriorityAwaiter" />
   <TypeSignature Language="VB.NET" Value="Public Structure DispatcherPriorityAwaiter&#xA;Implements INotifyCompletion" />
   <TypeSignature Language="C++ CLI" Value="public value class DispatcherPriorityAwaiter : System::Runtime::CompilerServices::INotifyCompletion" />
+  <TypeSignature Language="F#" Value="type DispatcherPriorityAwaiter = struct&#xA;    interface INotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherPriorityAwaiter.GetResult" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetResult ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetResult();" />
+      <MemberSignature Language="F#" Value="member this.GetResult : unit -&gt; unit" Usage="dispatcherPriorityAwaiter.GetResult " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherPriorityAwaiter.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.Windows.Threading.DispatcherPriorityAwaiter.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherPriorityAwaiter.OnCompleted(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted (continuation As Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnCompleted(Action ^ continuation);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : Action -&gt; unit&#xA;override this.OnCompleted : Action -&gt; unit" Usage="dispatcherPriorityAwaiter.OnCompleted continuation" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)</InterfaceMember>

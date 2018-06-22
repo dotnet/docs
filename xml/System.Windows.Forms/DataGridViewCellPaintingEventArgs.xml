@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellPaintingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCellPaintingEventArgs&#xA;Inherits HandledEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCellPaintingEventArgs : System::ComponentModel::HandledEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellPaintingEventArgs = class&#xA;    inherit HandledEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridView dataGridView, class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle cellBounds, int32 rowIndex, int32 columnIndex, valuetype System.Windows.Forms.DataGridViewElementStates cellState, object value, object formattedValue, string errorText, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.Windows.Forms.DataGridViewAdvancedBorderStyle advancedBorderStyle, valuetype System.Windows.Forms.DataGridViewPaintParts paintParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellPaintingEventArgs.#ctor(System.Windows.Forms.DataGridView,System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCellPaintingEventArgs(System::Windows::Forms::DataGridView ^ dataGridView, System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipBounds, System::Drawing::Rectangle cellBounds, int rowIndex, int columnIndex, System::Windows::Forms::DataGridViewElementStates cellState, System::Object ^ value, System::Object ^ formattedValue, System::String ^ errorText, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ advancedBorderStyle, System::Windows::Forms::DataGridViewPaintParts paintParts);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewCellPaintingEventArgs : System.Windows.Forms.DataGridView * System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * int * System.Windows.Forms.DataGridViewElementStates * obj * obj * string * System.Windows.Forms.DataGridViewCellStyle * System.Windows.Forms.DataGridViewAdvancedBorderStyle * System.Windows.Forms.DataGridViewPaintParts -&gt; System.Windows.Forms.DataGridViewCellPaintingEventArgs" Usage="new System.Windows.Forms.DataGridViewCellPaintingEventArgs (dataGridView, graphics, clipBounds, cellBounds, rowIndex, columnIndex, cellState, value, formattedValue, errorText, cellStyle, advancedBorderStyle, paintParts)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.AdvancedBorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdvancedBorderStyle As DataGridViewAdvancedBorderStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ AdvancedBorderStyle { System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdvancedBorderStyle : System.Windows.Forms.DataGridViewAdvancedBorderStyle" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.AdvancedBorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.CellBounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellBounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle CellBounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.CellBounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.CellBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.CellStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellStyle As DataGridViewCellStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewCellStyle ^ CellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CellStyle : System.Windows.Forms.DataGridViewCellStyle" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.CellStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ClipBounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClipBounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ClipBounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClipBounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.ClipBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorText : string" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.FormattedValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormattedValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ FormattedValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormattedValue : obj" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.FormattedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -373,6 +382,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -406,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellPaintingEventArgs.Paint(System.Drawing.Rectangle,System.Windows.Forms.DataGridViewPaintParts)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Paint (clipBounds As Rectangle, paintParts As DataGridViewPaintParts)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Paint(System::Drawing::Rectangle clipBounds, System::Windows::Forms::DataGridViewPaintParts paintParts);" />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Drawing.Rectangle * System.Windows.Forms.DataGridViewPaintParts -&gt; unit" Usage="dataGridViewCellPaintingEventArgs.Paint (clipBounds, paintParts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -438,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellPaintingEventArgs.PaintBackground(System.Drawing.Rectangle,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PaintBackground (clipBounds As Rectangle, cellsPaintSelectionBackground As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PaintBackground(System::Drawing::Rectangle clipBounds, bool cellsPaintSelectionBackground);" />
+      <MemberSignature Language="F#" Value="member this.PaintBackground : System.Drawing.Rectangle * bool -&gt; unit" Usage="dataGridViewCellPaintingEventArgs.PaintBackground (clipBounds, cellsPaintSelectionBackground)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -471,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellPaintingEventArgs.PaintContent(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PaintContent (clipBounds As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PaintContent(System::Drawing::Rectangle clipBounds);" />
+      <MemberSignature Language="F#" Value="member this.PaintContent : System.Drawing.Rectangle -&gt; unit" Usage="dataGridViewCellPaintingEventArgs.PaintContent clipBounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -501,6 +514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.PaintParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PaintParts As DataGridViewPaintParts" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewPaintParts PaintParts { System::Windows::Forms::DataGridViewPaintParts get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaintParts : System.Windows.Forms.DataGridViewPaintParts" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.PaintParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -534,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.RowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -571,6 +586,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As DataGridViewElementStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewElementStates State { System::Windows::Forms::DataGridViewElementStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.DataGridViewElementStates" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -606,6 +622,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Windows.Forms.DataGridViewCellPaintingEventArgs.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

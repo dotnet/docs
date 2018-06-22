@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.IRecordSequence" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRecordSequence&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRecordSequence : IDisposable" />
+  <TypeSignature Language="F#" Value="type IRecordSequence = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.AdvanceBaseSequenceNumber(System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AdvanceBaseSequenceNumber (newBaseSequenceNumber As SequenceNumber)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdvanceBaseSequenceNumber(System::IO::Log::SequenceNumber newBaseSequenceNumber);" />
+      <MemberSignature Language="F#" Value="abstract member AdvanceBaseSequenceNumber : System.IO.Log.SequenceNumber -&gt; unit" Usage="iRecordSequence.AdvanceBaseSequenceNumber newBaseSequenceNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.Append(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber Append(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions);" />
+      <MemberSignature Language="F#" Value="abstract member Append : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.Append (data, nextUndoRecord, previousRecord, recordAppendOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.Append(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber Append(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions);" />
+      <MemberSignature Language="F#" Value="abstract member Append : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.Append (data, nextUndoRecord, previousRecord, recordAppendOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.Append(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber Append(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, System::IO::Log::ReservationCollection ^ reservations);" />
+      <MemberSignature Language="F#" Value="abstract member Append : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * System.IO.Log.ReservationCollection -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.Append (data, nextUndoRecord, previousRecord, recordAppendOptions, reservations)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -240,6 +245,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.Append(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber Append(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, System::IO::Log::ReservationCollection ^ reservations);" />
+      <MemberSignature Language="F#" Value="abstract member Append : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * System.IO.Log.ReservationCollection -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.Append (data, nextUndoRecord, previousRecord, recordAppendOptions, reservations)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -287,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.IRecordSequence.BaseSequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseSequenceNumber As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber BaseSequenceNumber { System::IO::Log::SequenceNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseSequenceNumber : System.IO.Log.SequenceNumber" Usage="System.IO.Log.IRecordSequence.BaseSequenceNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -325,6 +332,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAppend(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginAppend(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAppend(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAppend : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginAppend (data, nextUndoRecord, previousRecord, recordAppendOptions, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -373,6 +381,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAppend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAppend(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAppend : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginAppend (data, nextUndoRecord, previousRecord, recordAppendOptions, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -421,6 +430,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAppend(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservations, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginAppend(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAppend(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, System::IO::Log::ReservationCollection ^ reservations, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAppend : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * System.IO.Log.ReservationCollection * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginAppend (data, nextUndoRecord, previousRecord, recordAppendOptions, reservations, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -473,6 +483,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAppend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousUndoRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservations, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAppend(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousUndoRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, System::IO::Log::ReservationCollection ^ reservations, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginAppend : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * System.IO.Log.ReservationCollection * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginAppend (data, nextUndoRecord, previousUndoRecord, recordAppendOptions, reservations, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -525,6 +536,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginFlush(valuetype System.IO.Log.SequenceNumber sequenceNumber, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginFlush(System.IO.Log.SequenceNumber,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFlush(System::IO::Log::SequenceNumber sequenceNumber, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginFlush : System.IO.Log.SequenceNumber * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginFlush (sequenceNumber, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -575,6 +587,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReserveAndAppend(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservationCollection, int64[] reservations, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginReserveAndAppend(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.Int64[],System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReserveAndAppend(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, System::IO::Log::ReservationCollection ^ reservationCollection, cli::array &lt;long&gt; ^ reservations, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginReserveAndAppend : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * System.IO.Log.ReservationCollection * int64[] * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginReserveAndAppend (data, nextUndoRecord, previousRecord, recordAppendOptions, reservationCollection, reservations, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -631,6 +644,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReserveAndAppend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservationCollection, int64[] reservations, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginReserveAndAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.Int64[],System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReserveAndAppend(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, System::IO::Log::ReservationCollection ^ reservationCollection, cli::array &lt;long&gt; ^ reservations, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginReserveAndAppend : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * System.IO.Log.ReservationCollection * int64[] * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginReserveAndAppend (data, nextUndoRecord, previousRecord, recordAppendOptions, reservationCollection, reservations, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -697,6 +711,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginWriteRestartArea(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginWriteRestartArea (data As ArraySegment(Of Byte), newBaseSequenceNumber As SequenceNumber, reservation As ReservationCollection, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWriteRestartArea(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber newBaseSequenceNumber, System::IO::Log::ReservationCollection ^ reservation, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginWriteRestartArea : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber * System.IO.Log.ReservationCollection * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginWriteRestartArea (data, newBaseSequenceNumber, reservation, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -744,6 +759,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.BeginWriteRestartArea(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginWriteRestartArea (data As IList(Of ArraySegment(Of Byte)), newBaseSequenceNumber As SequenceNumber, reservation As ReservationCollection, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWriteRestartArea(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber newBaseSequenceNumber, System::IO::Log::ReservationCollection ^ reservation, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginWriteRestartArea : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber * System.IO.Log.ReservationCollection * AsyncCallback * obj -&gt; IAsyncResult" Usage="iRecordSequence.BeginWriteRestartArea (data, newBaseSequenceNumber, reservation, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -795,6 +811,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.CreateReservationCollection" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateReservationCollection () As ReservationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::ReservationCollection ^ CreateReservationCollection();" />
+      <MemberSignature Language="F#" Value="abstract member CreateReservationCollection : unit -&gt; System.IO.Log.ReservationCollection" Usage="iRecordSequence.CreateReservationCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -817,6 +834,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.EndAppend(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndAppend (result As IAsyncResult) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber EndAppend(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndAppend : IAsyncResult -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.EndAppend result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -852,6 +870,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.EndFlush(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndFlush (result As IAsyncResult) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber EndFlush(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndFlush : IAsyncResult -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.EndFlush result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -887,6 +906,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.EndReserveAndAppend(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndReserveAndAppend (result As IAsyncResult) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber EndReserveAndAppend(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndReserveAndAppend : IAsyncResult -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.EndReserveAndAppend result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -922,6 +942,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.EndWriteRestartArea(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndWriteRestartArea (result As IAsyncResult) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber EndWriteRestartArea(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndWriteRestartArea : IAsyncResult -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.EndWriteRestartArea result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -966,6 +987,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Function Flush () As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -995,6 +1017,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Flush(valuetype System.IO.Log.SequenceNumber sequenceNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.Flush(System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber Flush(System::IO::Log::SequenceNumber sequenceNumber);" />
+      <MemberSignature Language="F#" Value="abstract member Flush : System.IO.Log.SequenceNumber -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.Flush sequenceNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1029,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.IRecordSequence.LastSequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSequenceNumber As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber LastSequenceNumber { System::IO::Log::SequenceNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSequenceNumber : System.IO.Log.SequenceNumber" Usage="System.IO.Log.IRecordSequence.LastSequenceNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1060,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.IRecordSequence.MaximumRecordLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumRecordLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumRecordLength { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumRecordLength : int64" Usage="System.IO.Log.IRecordSequence.MaximumRecordLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1081,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.ReadLogRecords(System.IO.Log.SequenceNumber,System.IO.Log.LogRecordEnumeratorType)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadLogRecords (start As SequenceNumber, logRecordEnum As LogRecordEnumeratorType) As IEnumerable(Of LogRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::Log::LogRecord ^&gt; ^ ReadLogRecords(System::IO::Log::SequenceNumber start, System::IO::Log::LogRecordEnumeratorType logRecordEnum);" />
+      <MemberSignature Language="F#" Value="abstract member ReadLogRecords : System.IO.Log.SequenceNumber * System.IO.Log.LogRecordEnumeratorType -&gt; seq&lt;System.IO.Log.LogRecord&gt;" Usage="iRecordSequence.ReadLogRecords (start, logRecordEnum)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1211,6 +1237,7 @@ using System;
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.ReadRestartAreas" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadRestartAreas () As IEnumerable(Of LogRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::IO::Log::LogRecord ^&gt; ^ ReadRestartAreas();" />
+      <MemberSignature Language="F#" Value="abstract member ReadRestartAreas : unit -&gt; seq&lt;System.IO.Log.LogRecord&gt;" Usage="iRecordSequence.ReadRestartAreas " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1253,6 +1280,7 @@ using System;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber ReserveAndAppend(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservationCollection, int64[] reservations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.ReserveAndAppend(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.Int64[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber ReserveAndAppend(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, System::IO::Log::ReservationCollection ^ reservationCollection, ... cli::array &lt;long&gt; ^ reservations);" />
+      <MemberSignature Language="F#" Value="abstract member ReserveAndAppend : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * System.IO.Log.ReservationCollection * int64[] -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.ReserveAndAppend (data, nextUndoRecord, previousRecord, recordAppendOptions, reservationCollection, reservations)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1307,6 +1335,7 @@ using System;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber ReserveAndAppend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservationCollection, int64[] reservations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.ReserveAndAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.Int64[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber ReserveAndAppend(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber nextUndoRecord, System::IO::Log::SequenceNumber previousRecord, System::IO::Log::RecordAppendOptions recordAppendOptions, System::IO::Log::ReservationCollection ^ reservationCollection, ... cli::array &lt;long&gt; ^ reservations);" />
+      <MemberSignature Language="F#" Value="abstract member ReserveAndAppend : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber * System.IO.Log.RecordAppendOptions * System.IO.Log.ReservationCollection * int64[] -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.ReserveAndAppend (data, nextUndoRecord, previousRecord, recordAppendOptions, reservationCollection, reservations)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1362,6 +1391,7 @@ using System;
       <MemberSignature Language="DocId" Value="P:System.IO.Log.IRecordSequence.ReservedBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReservedBytes As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ReservedBytes { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReservedBytes : int64" Usage="System.IO.Log.IRecordSequence.ReservedBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1383,6 +1413,7 @@ using System;
       <MemberSignature Language="DocId" Value="P:System.IO.Log.IRecordSequence.RestartSequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RestartSequenceNumber As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber RestartSequenceNumber { System::IO::Log::SequenceNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.RestartSequenceNumber : System.IO.Log.SequenceNumber" Usage="System.IO.Log.IRecordSequence.RestartSequenceNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1411,6 +1442,7 @@ using System;
       <MemberSignature Language="DocId" Value="P:System.IO.Log.IRecordSequence.RetryAppend" />
       <MemberSignature Language="VB.NET" Value="Public Property RetryAppend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RetryAppend { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RetryAppend : bool with get, set" Usage="System.IO.Log.IRecordSequence.RetryAppend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1440,6 +1472,7 @@ using System;
       <MemberSignature Language="DocId" Value="E:System.IO.Log.IRecordSequence.TailPinned" />
       <MemberSignature Language="VB.NET" Value="Event TailPinned As EventHandler(Of TailPinnedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IO::Log::TailPinnedEventArgs ^&gt; ^ TailPinned;" />
+      <MemberSignature Language="F#" Value="member this.TailPinned : EventHandler&lt;System.IO.Log.TailPinnedEventArgs&gt; " Usage="member this.TailPinned : System.EventHandler&lt;System.IO.Log.TailPinnedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1483,6 +1516,7 @@ using System;
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.WriteRestartArea(System.ArraySegment{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteRestartArea (data As ArraySegment(Of Byte)) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber WriteRestartArea(ArraySegment&lt;System::Byte&gt; data);" />
+      <MemberSignature Language="F#" Value="abstract member WriteRestartArea : ArraySegment&lt;byte&gt; -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.WriteRestartArea data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1522,6 +1556,7 @@ using System;
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.WriteRestartArea(System.Collections.Generic.IList{System.ArraySegment{System.Byte}})" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteRestartArea (data As IList(Of ArraySegment(Of Byte))) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber WriteRestartArea(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member WriteRestartArea : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.WriteRestartArea data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1559,6 +1594,7 @@ using System;
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.WriteRestartArea(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteRestartArea (data As ArraySegment(Of Byte), newBaseSequenceNumber As SequenceNumber) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber WriteRestartArea(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber newBaseSequenceNumber);" />
+      <MemberSignature Language="F#" Value="abstract member WriteRestartArea : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.WriteRestartArea (data, newBaseSequenceNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1600,6 +1636,7 @@ using System;
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.WriteRestartArea(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteRestartArea (data As IList(Of ArraySegment(Of Byte)), newBaseSequenceNumber As SequenceNumber) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber WriteRestartArea(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber newBaseSequenceNumber);" />
+      <MemberSignature Language="F#" Value="abstract member WriteRestartArea : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.WriteRestartArea (data, newBaseSequenceNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1641,6 +1678,7 @@ using System;
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.WriteRestartArea(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.ReservationCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteRestartArea (data As ArraySegment(Of Byte), newBaseSequenceNumber As SequenceNumber, reservation As ReservationCollection) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber WriteRestartArea(ArraySegment&lt;System::Byte&gt; data, System::IO::Log::SequenceNumber newBaseSequenceNumber, System::IO::Log::ReservationCollection ^ reservation);" />
+      <MemberSignature Language="F#" Value="abstract member WriteRestartArea : ArraySegment&lt;byte&gt; * System.IO.Log.SequenceNumber * System.IO.Log.ReservationCollection -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.WriteRestartArea (data, newBaseSequenceNumber, reservation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -1688,6 +1726,7 @@ using System;
       <MemberSignature Language="DocId" Value="M:System.IO.Log.IRecordSequence.WriteRestartArea(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.ReservationCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteRestartArea (data As IList(Of ArraySegment(Of Byte)), newBaseSequenceNumber As SequenceNumber, reservation As ReservationCollection) As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Log::SequenceNumber WriteRestartArea(System::Collections::Generic::IList&lt;ArraySegment&lt;System::Byte&gt;&gt; ^ data, System::IO::Log::SequenceNumber newBaseSequenceNumber, System::IO::Log::ReservationCollection ^ reservation);" />
+      <MemberSignature Language="F#" Value="abstract member WriteRestartArea : System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; * System.IO.Log.SequenceNumber * System.IO.Log.ReservationCollection -&gt; System.IO.Log.SequenceNumber" Usage="iRecordSequence.WriteRestartArea (data, newBaseSequenceNumber, reservation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

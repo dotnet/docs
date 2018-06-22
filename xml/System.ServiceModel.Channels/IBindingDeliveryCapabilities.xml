@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IBindingDeliveryCapabilities" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBindingDeliveryCapabilities" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBindingDeliveryCapabilities" />
+  <TypeSignature Language="F#" Value="type IBindingDeliveryCapabilities = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -105,6 +106,7 @@ class CalculatorService: ICalculatorService
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IBindingDeliveryCapabilities.AssuresOrderedDelivery" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssuresOrderedDelivery As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AssuresOrderedDelivery { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssuresOrderedDelivery : bool" Usage="System.ServiceModel.Channels.IBindingDeliveryCapabilities.AssuresOrderedDelivery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +213,7 @@ class CalculatorService: ICalculatorService
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IBindingDeliveryCapabilities.QueuedDelivery" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueuedDelivery As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QueuedDelivery { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueuedDelivery : bool" Usage="System.ServiceModel.Channels.IBindingDeliveryCapabilities.QueuedDelivery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

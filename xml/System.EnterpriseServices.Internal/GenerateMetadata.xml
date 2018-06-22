@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.GenerateMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class GenerateMetadata&#xA;Implements IComSoapMetadata" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenerateMetadata : System::EnterpriseServices::Internal::IComSoapMetadata" />
+  <TypeSignature Language="F#" Value="type GenerateMetadata = class&#xA;    interface IComSoapMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.Generate(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Generate (strSrcTypeLib As String, outPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Generate(System::String ^ strSrcTypeLib, System::String ^ outPath);" />
+      <MemberSignature Language="F#" Value="abstract member Generate : string * string -&gt; string&#xA;override this.Generate : string * string -&gt; string" Usage="generateMetadata.Generate (strSrcTypeLib, outPath)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapMetadata.Generate(System.String,System.String)</InterfaceMember>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.GenerateMetaData(System.String,System.String,System.Byte[],System.Reflection.StrongNameKeyPair)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateMetaData (strSrcTypeLib As String, outPath As String, PublicKey As Byte(), KeyPair As StrongNameKeyPair) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateMetaData(System::String ^ strSrcTypeLib, System::String ^ outPath, cli::array &lt;System::Byte&gt; ^ PublicKey, System::Reflection::StrongNameKeyPair ^ KeyPair);" />
+      <MemberSignature Language="F#" Value="member this.GenerateMetaData : string * string * byte[] * System.Reflection.StrongNameKeyPair -&gt; string" Usage="generateMetadata.GenerateMetaData (strSrcTypeLib, outPath, PublicKey, KeyPair)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateSigned (strSrcTypeLib As String, outPath As String, InstallGac As Boolean, ByRef Error As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GenerateSigned(System::String ^ strSrcTypeLib, System::String ^ outPath, bool InstallGac, [Runtime::InteropServices::Out] System::String ^ % Error);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateSigned : string * string * bool *  -&gt; string&#xA;override this.GenerateSigned : string * string * bool *  -&gt; string" Usage="generateMetadata.GenerateSigned (strSrcTypeLib, outPath, InstallGac, Error)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)</InterfaceMember>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.SearchPath(System.String,System.String,System.String,System.Int32,System.String,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SearchPath (path As String, fileName As String, extension As String, numBufferChars As Integer, buffer As String, filePart As Integer()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int SearchPath(System::String ^ path, System::String ^ fileName, System::String ^ extension, int numBufferChars, System::String ^ buffer, cli::array &lt;int&gt; ^ filePart);" />
+      <MemberSignature Language="F#" Value="static member SearchPath : string * string * string * int * string * int[] -&gt; int" Usage="System.EnterpriseServices.Internal.GenerateMetadata.SearchPath (path, fileName, extension, numBufferChars, buffer, filePart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

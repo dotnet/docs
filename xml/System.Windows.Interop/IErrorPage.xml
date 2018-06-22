@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.IErrorPage" />
   <TypeSignature Language="VB.NET" Value="Public Interface IErrorPage" />
   <TypeSignature Language="C++ CLI" Value="public interface class IErrorPage" />
+  <TypeSignature Language="F#" Value="type IErrorPage = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IErrorPage.DeploymentPath" />
       <MemberSignature Language="VB.NET" Value="Public Property DeploymentPath As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ DeploymentPath { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeploymentPath : Uri with get, set" Usage="System.Windows.Interop.IErrorPage.DeploymentPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IErrorPage.ErrorFlag" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorFlag As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ErrorFlag { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorFlag : bool with get, set" Usage="System.Windows.Interop.IErrorPage.ErrorFlag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IErrorPage.ErrorText" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorText : string with get, set" Usage="System.Windows.Interop.IErrorPage.ErrorText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IErrorPage.ErrorTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorTitle : string with get, set" Usage="System.Windows.Interop.IErrorPage.ErrorTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IErrorPage.GetWinFxCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property GetWinFxCallback As DispatcherOperationCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::DispatcherOperationCallback ^ GetWinFxCallback { System::Windows::Threading::DispatcherOperationCallback ^ get(); void set(System::Windows::Threading::DispatcherOperationCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GetWinFxCallback : System.Windows.Threading.DispatcherOperationCallback with get, set" Usage="System.Windows.Interop.IErrorPage.GetWinFxCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IErrorPage.LogFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Property LogFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogFilePath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LogFilePath : string with get, set" Usage="System.Windows.Interop.IErrorPage.LogFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IErrorPage.RefreshCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property RefreshCallback As DispatcherOperationCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::DispatcherOperationCallback ^ RefreshCallback { System::Windows::Threading::DispatcherOperationCallback ^ get(); void set(System::Windows::Threading::DispatcherOperationCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RefreshCallback : System.Windows.Threading.DispatcherOperationCallback with get, set" Usage="System.Windows.Interop.IErrorPage.RefreshCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IErrorPage.SupportUri" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SupportUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportUri : Uri with get, set" Usage="System.Windows.Interop.IErrorPage.SupportUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

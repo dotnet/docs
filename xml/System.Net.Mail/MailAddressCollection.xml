@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.MailAddressCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class MailAddressCollection&#xA;Inherits Collection(Of MailAddress)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MailAddressCollection : System::Collections::ObjectModel::Collection&lt;System::Net::Mail::MailAddress ^&gt;" />
+  <TypeSignature Language="F#" Value="type MailAddressCollection = class&#xA;    inherit Collection&lt;MailAddress&gt;" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddressCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (addresses As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ addresses);" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; unit" Usage="mailAddressCollection.Add addresses" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddressCollection.InsertItem(System.Int32,System.Net.Mail.MailAddress)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As MailAddress)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::Mail::MailAddress ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.Mail.MailAddress -&gt; unit" Usage="mailAddressCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddressCollection.SetItem(System.Int32,System.Net.Mail.MailAddress)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As MailAddress)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::Mail::MailAddress ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.Mail.MailAddress -&gt; unit" Usage="mailAddressCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddressCollection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="mailAddressCollection.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

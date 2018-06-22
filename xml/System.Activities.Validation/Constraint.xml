@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Validation.Constraint" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Constraint&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class Constraint abstract : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type Constraint = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint.AddValidationError(System.Activities.NativeActivityContext,System.Activities.Validation.ValidationError)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddValidationError (context As NativeActivityContext, error As ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddValidationError(System::Activities::NativeActivityContext ^ context, System::Activities::Validation::ValidationError ^ error);" />
+      <MemberSignature Language="F#" Value="static member AddValidationError : System.Activities.NativeActivityContext * System.Activities.Validation.ValidationError -&gt; unit" Usage="System.Activities.Validation.Constraint.AddValidationError (context, error)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="constraint.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="constraint.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint.OnExecute(System.Activities.NativeActivityContext,System.Object,System.Activities.Validation.ValidationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnExecute (context As NativeActivityContext, objectToValidate As Object, objectToValidateContext As ValidationContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnExecute(System::Activities::NativeActivityContext ^ context, System::Object ^ objectToValidate, System::Activities::Validation::ValidationContext ^ objectToValidateContext);" />
+      <MemberSignature Language="F#" Value="abstract member OnExecute : System.Activities.NativeActivityContext * obj * System.Activities.Validation.ValidationContext -&gt; unit" Usage="constraint.OnExecute (context, objectToValidate, objectToValidateContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Validation.Constraint.ValidationErrorListPropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Const ValidationErrorListPropertyName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ValidationErrorListPropertyName;" />
+      <MemberSignature Language="F#" Value="val mutable ValidationErrorListPropertyName : string" Usage="System.Activities.Validation.Constraint.ValidationErrorListPropertyName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

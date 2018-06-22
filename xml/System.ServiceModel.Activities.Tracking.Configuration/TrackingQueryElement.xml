@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingQueryElement&#xA;Inherits TrackingConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingQueryElement abstract : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationElement" />
+  <TypeSignature Language="F#" Value="type TrackingQueryElement = class&#xA;    inherit TrackingConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.Annotations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotations As AnnotationElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::AnnotationElementCollection ^ Annotations { System::ServiceModel::Activities::Tracking::Configuration::AnnotationElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Annotations : System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.Annotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.ElementKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ElementKey As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ElementKey { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementKey : obj" Usage="System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.ElementKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.NewTrackingQuery" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function NewTrackingQuery () As TrackingQuery" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Activities::Tracking::TrackingQuery ^ NewTrackingQuery();" />
+      <MemberSignature Language="F#" Value="abstract member NewTrackingQuery : unit -&gt; System.Activities.Tracking.TrackingQuery" Usage="trackingQueryElement.NewTrackingQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateTrackingQuery(class System.Activities.Tracking.TrackingQuery trackingQuery) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.UpdateTrackingQuery(System.Activities.Tracking.TrackingQuery)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UpdateTrackingQuery(System::Activities::Tracking::TrackingQuery ^ trackingQuery);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTrackingQuery : System.Activities.Tracking.TrackingQuery -&gt; unit&#xA;override this.UpdateTrackingQuery : System.Activities.Tracking.TrackingQuery -&gt; unit" Usage="trackingQueryElement.UpdateTrackingQuery trackingQuery" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
   <TypeSignature Language="VB.NET" Value="Public Class ConsumerConnectionPoint&#xA;Inherits ConnectionPoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConsumerConnectionPoint : System::Web::UI::WebControls::WebParts::ConnectionPoint" />
+  <TypeSignature Language="F#" Value="type ConsumerConnectionPoint = class&#xA;    inherit ConnectionPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint.#ctor(System.Reflection.MethodInfo,System.Type,System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackMethod As MethodInfo, interfaceType As Type, controlType As Type, displayName As String, id As String, allowsMultipleConnections As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsumerConnectionPoint(System::Reflection::MethodInfo ^ callbackMethod, Type ^ interfaceType, Type ^ controlType, System::String ^ displayName, System::String ^ id, bool allowsMultipleConnections);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint : System.Reflection.MethodInfo * Type * Type * string * string * bool -&gt; System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" Usage="new System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint (callbackMethod, interfaceType, controlType, displayName, id, allowsMultipleConnections)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetObject(class System.Web.UI.Control control, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint.SetObject(System.Web.UI.Control,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetObject(System::Web::UI::Control ^ control, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member SetObject : System.Web.UI.Control * obj -&gt; unit&#xA;override this.SetObject : System.Web.UI.Control * obj -&gt; unit" Usage="consumerConnectionPoint.SetObject (control, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsConnection(class System.Web.UI.Control control, class System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection secondaryInterfaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint.SupportsConnection(System.Web.UI.Control,System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SupportsConnection(System::Web::UI::Control ^ control, System::Web::UI::WebControls::WebParts::ConnectionInterfaceCollection ^ secondaryInterfaces);" />
+      <MemberSignature Language="F#" Value="abstract member SupportsConnection : System.Web.UI.Control * System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection -&gt; bool&#xA;override this.SupportsConnection : System.Web.UI.Control * System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection -&gt; bool" Usage="consumerConnectionPoint.SupportsConnection (control, secondaryInterfaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

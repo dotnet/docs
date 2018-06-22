@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2ProxyRestriction" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2ProxyRestriction" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2ProxyRestriction" />
+  <TypeSignature Language="F#" Value="type Saml2ProxyRestriction = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2ProxyRestriction.Audiences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Audiences As Collection(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ Audiences { System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Audiences : System.Collections.ObjectModel.Collection&lt;Uri&gt;" Usage="System.IdentityModel.Tokens.Saml2ProxyRestriction.Audiences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2ProxyRestriction.Count" />
       <MemberSignature Language="VB.NET" Value="Public Property Count As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Count { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Count : Nullable&lt;int&gt; with get, set" Usage="System.IdentityModel.Tokens.Saml2ProxyRestriction.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

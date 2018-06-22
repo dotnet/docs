@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" />
   <TypeSignature Language="VB.NET" Value="Public Enum DesignerContentAlignment" />
   <TypeSignature Language="C++ CLI" Value="public enum class DesignerContentAlignment" />
+  <TypeSignature Language="F#" Value="type DesignerContentAlignment = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 8" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomCenter" />
       <MemberSignature Language="VB.NET" Value="BottomCenter" />
       <MemberSignature Language="C++ CLI" Value="BottomCenter" />
+      <MemberSignature Language="F#" Value="BottomCenter = 24" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomLeft" />
       <MemberSignature Language="VB.NET" Value="BottomLeft" />
       <MemberSignature Language="C++ CLI" Value="BottomLeft" />
+      <MemberSignature Language="F#" Value="BottomLeft = 9" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomRight" />
       <MemberSignature Language="VB.NET" Value="BottomRight" />
       <MemberSignature Language="C++ CLI" Value="BottomRight" />
+      <MemberSignature Language="F#" Value="BottomRight = 12" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Center" />
       <MemberSignature Language="VB.NET" Value="Center" />
       <MemberSignature Language="C++ CLI" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 16" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.CenterLeft" />
       <MemberSignature Language="VB.NET" Value="CenterLeft" />
       <MemberSignature Language="C++ CLI" Value="CenterLeft" />
+      <MemberSignature Language="F#" Value="CenterLeft = 17" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.CenterLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.CenterRight" />
       <MemberSignature Language="VB.NET" Value="CenterRight" />
       <MemberSignature Language="C++ CLI" Value="CenterRight" />
+      <MemberSignature Language="F#" Value="CenterRight = 20" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.CenterRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -169,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Fill" />
       <MemberSignature Language="VB.NET" Value="Fill" />
       <MemberSignature Language="C++ CLI" Value="Fill" />
+      <MemberSignature Language="F#" Value="Fill = 32" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Fill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -188,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 1" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -207,6 +217,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 4" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -226,6 +237,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 2" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -245,6 +257,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopCenter" />
       <MemberSignature Language="VB.NET" Value="TopCenter" />
       <MemberSignature Language="C++ CLI" Value="TopCenter" />
+      <MemberSignature Language="F#" Value="TopCenter = 18" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -264,6 +277,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopLeft" />
       <MemberSignature Language="VB.NET" Value="TopLeft" />
       <MemberSignature Language="C++ CLI" Value="TopLeft" />
+      <MemberSignature Language="F#" Value="TopLeft = 3" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -283,6 +297,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopRight" />
       <MemberSignature Language="VB.NET" Value="TopRight" />
       <MemberSignature Language="C++ CLI" Value="TopRight" />
+      <MemberSignature Language="F#" Value="TopRight = 6" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

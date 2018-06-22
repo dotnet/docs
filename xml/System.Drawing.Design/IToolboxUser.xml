@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.IToolboxUser" />
   <TypeSignature Language="VB.NET" Value="Public Interface IToolboxUser" />
   <TypeSignature Language="C++ CLI" Value="public interface class IToolboxUser" />
+  <TypeSignature Language="F#" Value="type IToolboxUser = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxUser.GetToolSupported(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetToolSupported (tool As ToolboxItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetToolSupported(System::Drawing::Design::ToolboxItem ^ tool);" />
+      <MemberSignature Language="F#" Value="abstract member GetToolSupported : System.Drawing.Design.ToolboxItem -&gt; bool" Usage="iToolboxUser.GetToolSupported tool" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxUser.ToolPicked(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ToolPicked (tool As ToolboxItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ToolPicked(System::Drawing::Design::ToolboxItem ^ tool);" />
+      <MemberSignature Language="F#" Value="abstract member ToolPicked : System.Drawing.Design.ToolboxItem -&gt; unit" Usage="iToolboxUser.ToolPicked tool" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

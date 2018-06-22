@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.PageContent" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageContent&#xA;Inherits FrameworkElement&#xA;Implements IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageContent sealed : System::Windows::FrameworkElement, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type PageContent = class&#xA;    inherit FrameworkElement&#xA;    interface IAddChild&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.Child" />
       <MemberSignature Language="VB.NET" Value="Public Property Child As FixedPage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::FixedPage ^ Child { System::Windows::Documents::FixedPage ^ get(); void set(System::Windows::Documents::FixedPage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Child : System.Windows.Documents.FixedPage with get, set" Usage="System.Windows.Documents.PageContent.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.GetPageRoot(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPageRoot (forceReload As Boolean) As FixedPage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::FixedPage ^ GetPageRoot(bool forceReload);" />
+      <MemberSignature Language="F#" Value="member this.GetPageRoot : bool -&gt; System.Windows.Documents.FixedPage" Usage="pageContent.GetPageRoot forceReload" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetPageRootAsync (forceReload As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPageRootAsync(bool forceReload);" />
+      <MemberSignature Language="F#" Value="member this.GetPageRootAsync : bool -&gt; unit" Usage="pageContent.GetPageRootAsync forceReload" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.GetPageRootAsyncCancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetPageRootAsyncCancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPageRootAsyncCancel();" />
+      <MemberSignature Language="F#" Value="member this.GetPageRootAsyncCancel : unit -&gt; unit" Usage="pageContent.GetPageRootAsyncCancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.PageContent.GetPageRootCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event GetPageRootCompleted As GetPageRootCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Documents::GetPageRootCompletedEventHandler ^ GetPageRootCompleted;" />
+      <MemberSignature Language="F#" Value="member this.GetPageRootCompleted : System.Windows.Documents.GetPageRootCompletedEventHandler " Usage="member this.GetPageRootCompleted : System.Windows.Documents.GetPageRootCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.LinkTargets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkTargets As LinkTargetCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::LinkTargetCollection ^ LinkTargets { System::Windows::Documents::LinkTargetCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinkTargets : System.Windows.Documents.LinkTargetCollection" Usage="System.Windows.Documents.PageContent.LinkTargets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -303,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Documents.PageContent.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -323,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.ShouldSerializeChild(System.Windows.Markup.XamlDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeChild (manager As XamlDesignerSerializationManager) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeChild(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeChild : System.Windows.Markup.XamlDesignerSerializationManager -&gt; bool" Usage="pageContent.ShouldSerializeChild manager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -353,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Documents.PageContent.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -389,6 +399,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.PageContent.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.PageContent.SourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -474,6 +485,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
       <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Documents.PageContent.System.Windows.Markup.IUriContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>

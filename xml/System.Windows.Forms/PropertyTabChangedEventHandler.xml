@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyTabChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyTabChangedEventHandler(s As Object, e As PropertyTabChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PropertyTabChangedEventHandler(System::Object ^ s, PropertyTabChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PropertyTabChangedEventHandler = delegate of obj * PropertyTabChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

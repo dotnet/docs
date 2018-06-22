@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProduct" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProduct" />
+  <TypeSignature Language="F#" Value="type IProduct = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.Includes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Includes As ProductCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductCollection ^ Includes { Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Includes : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.Includes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.ProductBuilder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductBuilder As ProductBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductBuilder ^ ProductBuilder { Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProductBuilder : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.ProductBuilder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.ProductCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductCode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductCode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProductCode : string" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.ProductCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

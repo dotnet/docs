@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InputEventHandler(sender As Object, e As InputEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InputEventHandler(System::Object ^ sender, InputEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InputEventHandler = delegate of obj * InputEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

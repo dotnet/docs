@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceRequestArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataServiceRequestArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceRequestArgs" />
+  <TypeSignature Language="F#" Value="type DataServiceRequestArgs = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequestArgs.AcceptContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptContentType : string with get, set" Usage="System.Data.Services.Client.DataServiceRequestArgs.AcceptContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequestArgs.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Data.Services.Client.DataServiceRequestArgs.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequestArgs.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As Dictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ Headers { System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="System.Data.Services.Client.DataServiceRequestArgs.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequestArgs.Slug" />
       <MemberSignature Language="VB.NET" Value="Public Property Slug As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Slug { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Slug : string with get, set" Usage="System.Data.Services.Client.DataServiceRequestArgs.Slug" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class DataAnnotationsModelMetadataProvider&#xA;Inherits AssociatedMetadataProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataAnnotationsModelMetadataProvider : System::Web::ModelBinding::AssociatedMetadataProvider" />
+  <TypeSignature Language="F#" Value="type DataAnnotationsModelMetadataProvider = class&#xA;    inherit AssociatedMetadataProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider.CreateMetadata(System.Collections.Generic.IEnumerable{System.Attribute},System.Type,System.Func{System.Object},System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateMetadata (attributes As IEnumerable(Of Attribute), containerType As Type, modelAccessor As Func(Of Object), modelType As Type, propertyName As String) As ModelMetadata" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::ModelBinding::ModelMetadata ^ CreateMetadata(System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ attributes, Type ^ containerType, Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ modelType, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="override this.CreateMetadata : seq&lt;Attribute&gt; * Type * Func&lt;obj&gt; * Type * string -&gt; System.Web.ModelBinding.ModelMetadata" Usage="dataAnnotationsModelMetadataProvider.CreateMetadata (attributes, containerType, modelAccessor, modelType, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

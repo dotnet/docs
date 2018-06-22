@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripItemImageRenderEventArgs&#xA;Inherits ToolStripItemRenderEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripItemImageRenderEventArgs : System::Windows::Forms::ToolStripItemRenderEventArgs" />
+  <TypeSignature Language="F#" Value="type ToolStripItemImageRenderEventArgs = class&#xA;    inherit ToolStripItemRenderEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemImageRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (g As Graphics, item As ToolStripItem, imageRectangle As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemImageRenderEventArgs(System::Drawing::Graphics ^ g, System::Windows::Forms::ToolStripItem ^ item, System::Drawing::Rectangle imageRectangle);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripItemImageRenderEventArgs : System.Drawing.Graphics * System.Windows.Forms.ToolStripItem * System.Drawing.Rectangle -&gt; System.Windows.Forms.ToolStripItemImageRenderEventArgs" Usage="new System.Windows.Forms.ToolStripItemImageRenderEventArgs (g, item, imageRectangle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStripItem item, class System.Drawing.Image image, valuetype System.Drawing.Rectangle imageRectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemImageRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem,System.Drawing.Image,System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemImageRenderEventArgs(System::Drawing::Graphics ^ g, System::Windows::Forms::ToolStripItem ^ item, System::Drawing::Image ^ image, System::Drawing::Rectangle imageRectangle);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripItemImageRenderEventArgs : System.Drawing.Graphics * System.Windows.Forms.ToolStripItem * System.Drawing.Image * System.Drawing.Rectangle -&gt; System.Windows.Forms.ToolStripItemImageRenderEventArgs" Usage="new System.Windows.Forms.ToolStripItemImageRenderEventArgs (g, item, image, imageRectangle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemImageRenderEventArgs.Image" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Image As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Image" Usage="System.Windows.Forms.ToolStripItemImageRenderEventArgs.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemImageRenderEventArgs.ImageRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImageRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ImageRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.ToolStripItemImageRenderEventArgs.ImageRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

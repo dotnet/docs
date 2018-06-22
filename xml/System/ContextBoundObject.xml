@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ContextBoundObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContextBoundObject&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextBoundObject abstract : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type ContextBoundObject = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

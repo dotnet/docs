@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerErrorCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CompilerErrorCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompilerErrorCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CompilerErrorCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.#ctor(System.CodeDom.Compiler.CompilerError[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CompilerError())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerErrorCollection(cli::array &lt;System::CodeDom::Compiler::CompilerError ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.CompilerErrorCollection : System.CodeDom.Compiler.CompilerError[] -&gt; System.CodeDom.Compiler.CompilerErrorCollection" Usage="new System.CodeDom.Compiler.CompilerErrorCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.#ctor(System.CodeDom.Compiler.CompilerErrorCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CompilerErrorCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerErrorCollection(System::CodeDom::Compiler::CompilerErrorCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.CompilerErrorCollection : System.CodeDom.Compiler.CompilerErrorCollection -&gt; System.CodeDom.Compiler.CompilerErrorCollection" Usage="new System.CodeDom.Compiler.CompilerErrorCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.Add(System.CodeDom.Compiler.CompilerError)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CompilerError) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::Compiler::CompilerError ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.Compiler.CompilerError -&gt; int" Usage="compilerErrorCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.AddRange(System.CodeDom.Compiler.CompilerError[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CompilerError())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::Compiler::CompilerError ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.Compiler.CompilerError[] -&gt; unit" Usage="compilerErrorCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.AddRange(System.CodeDom.Compiler.CompilerErrorCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CompilerErrorCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::Compiler::CompilerErrorCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.Compiler.CompilerErrorCollection -&gt; unit" Usage="compilerErrorCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.Contains(System.CodeDom.Compiler.CompilerError)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CompilerError) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::Compiler::CompilerError ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.Compiler.CompilerError -&gt; bool" Usage="compilerErrorCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -313,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.CopyTo(System.CodeDom.Compiler.CompilerError[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CompilerError(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::Compiler::CompilerError ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.Compiler.CompilerError[] * int -&gt; unit" Usage="compilerErrorCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -361,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerErrorCollection.HasErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasErrors : bool" Usage="System.CodeDom.Compiler.CompilerErrorCollection.HasErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -386,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerErrorCollection.HasWarnings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasWarnings As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasWarnings { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasWarnings : bool" Usage="System.CodeDom.Compiler.CompilerErrorCollection.HasWarnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -411,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.IndexOf(System.CodeDom.Compiler.CompilerError)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CompilerError) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::Compiler::CompilerError ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.Compiler.CompilerError -&gt; int" Usage="compilerErrorCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -451,6 +462,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.Insert(System.Int32,System.CodeDom.Compiler.CompilerError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CompilerError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::Compiler::CompilerError ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.Compiler.CompilerError -&gt; unit" Usage="compilerErrorCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -492,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerErrorCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CompilerError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::CompilerError ^ default[int] { System::CodeDom::Compiler::CompilerError ^ get(int index); void set(int index, System::CodeDom::Compiler::CompilerError ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.Compiler.CompilerError with get, set" Usage="System.CodeDom.Compiler.CompilerErrorCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -521,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerErrorCollection.Remove(System.CodeDom.Compiler.CompilerError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CompilerError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::Compiler::CompilerError ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.Compiler.CompilerError -&gt; unit" Usage="compilerErrorCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

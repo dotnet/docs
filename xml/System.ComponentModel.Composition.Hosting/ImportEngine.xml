@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ImportEngine" />
   <TypeSignature Language="VB.NET" Value="Public Class ImportEngine&#xA;Implements ICompositionService, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImportEngine : IDisposable, System::ComponentModel::Composition::ICompositionService" />
+  <TypeSignature Language="F#" Value="type ImportEngine = class&#xA;    interface ICompositionService&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.#ctor(System.ComponentModel.Composition.Hosting.ExportProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceProvider As ExportProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportEngine(System::ComponentModel::Composition::Hosting::ExportProvider ^ sourceProvider);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.ImportEngine : System.ComponentModel.Composition.Hosting.ExportProvider -&gt; System.ComponentModel.Composition.Hosting.ImportEngine" Usage="new System.ComponentModel.Composition.Hosting.ImportEngine sourceProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.#ctor(System.ComponentModel.Composition.Hosting.ExportProvider,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceProvider As ExportProvider, isThreadSafe As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportEngine(System::ComponentModel::Composition::Hosting::ExportProvider ^ sourceProvider, bool isThreadSafe);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.ImportEngine : System.ComponentModel.Composition.Hosting.ExportProvider * bool -&gt; System.ComponentModel.Composition.Hosting.ImportEngine" Usage="new System.ComponentModel.Composition.Hosting.ImportEngine (sourceProvider, isThreadSafe)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Hosting.ExportProvider sourceProvider, valuetype System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.#ctor(System.ComponentModel.Composition.Hosting.ExportProvider,System.ComponentModel.Composition.Hosting.CompositionOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportEngine(System::ComponentModel::Composition::Hosting::ExportProvider ^ sourceProvider, System::ComponentModel::Composition::Hosting::CompositionOptions compositionOptions);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.ImportEngine : System.ComponentModel.Composition.Hosting.ExportProvider * System.ComponentModel.Composition.Hosting.CompositionOptions -&gt; System.ComponentModel.Composition.Hosting.ImportEngine" Usage="new System.ComponentModel.Composition.Hosting.ImportEngine (sourceProvider, compositionOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="importEngine.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="importEngine.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PreviewImports(class System.ComponentModel.Composition.Primitives.ComposablePart part, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.PreviewImports(System.ComponentModel.Composition.Primitives.ComposablePart,System.ComponentModel.Composition.Hosting.AtomicComposition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PreviewImports(System::ComponentModel::Composition::Primitives::ComposablePart ^ part, System::ComponentModel::Composition::Hosting::AtomicComposition ^ atomicComposition);" />
+      <MemberSignature Language="F#" Value="member this.PreviewImports : System.ComponentModel.Composition.Primitives.ComposablePart * System.ComponentModel.Composition.Hosting.AtomicComposition -&gt; unit" Usage="importEngine.PreviewImports (part, atomicComposition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseImports(class System.ComponentModel.Composition.Primitives.ComposablePart part, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.ReleaseImports(System.ComponentModel.Composition.Primitives.ComposablePart,System.ComponentModel.Composition.Hosting.AtomicComposition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseImports(System::ComponentModel::Composition::Primitives::ComposablePart ^ part, System::ComponentModel::Composition::Hosting::AtomicComposition ^ atomicComposition);" />
+      <MemberSignature Language="F#" Value="member this.ReleaseImports : System.ComponentModel.Composition.Primitives.ComposablePart * System.ComponentModel.Composition.Hosting.AtomicComposition -&gt; unit" Usage="importEngine.ReleaseImports (part, atomicComposition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.SatisfyImports(System.ComponentModel.Composition.Primitives.ComposablePart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SatisfyImports (part As ComposablePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SatisfyImports(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
+      <MemberSignature Language="F#" Value="member this.SatisfyImports : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit" Usage="importEngine.SatisfyImports part" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ImportEngine.SatisfyImportsOnce(System.ComponentModel.Composition.Primitives.ComposablePart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SatisfyImportsOnce (part As ComposablePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SatisfyImportsOnce(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
+      <MemberSignature Language="F#" Value="abstract member SatisfyImportsOnce : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit&#xA;override this.SatisfyImportsOnce : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit" Usage="importEngine.SatisfyImportsOnce part" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Composition.ICompositionService.SatisfyImportsOnce(System.ComponentModel.Composition.Primitives.ComposablePart)</InterfaceMember>

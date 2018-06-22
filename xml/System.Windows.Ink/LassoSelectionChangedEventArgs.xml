@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.LassoSelectionChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LassoSelectionChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LassoSelectionChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type LassoSelectionChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.LassoSelectionChangedEventArgs.DeselectedStrokes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeselectedStrokes As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ DeselectedStrokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeselectedStrokes : System.Windows.Ink.StrokeCollection" Usage="System.Windows.Ink.LassoSelectionChangedEventArgs.DeselectedStrokes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.LassoSelectionChangedEventArgs.SelectedStrokes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedStrokes As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ SelectedStrokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedStrokes : System.Windows.Ink.StrokeCollection" Usage="System.Windows.Ink.LassoSelectionChangedEventArgs.SelectedStrokes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

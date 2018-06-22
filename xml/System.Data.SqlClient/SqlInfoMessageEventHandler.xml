@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlInfoMessageEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SqlInfoMessageEventHandler(sender As Object, e As SqlInfoMessageEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SqlInfoMessageEventHandler(System::Object ^ sender, SqlInfoMessageEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SqlInfoMessageEventHandler = delegate of obj * SqlInfoMessageEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

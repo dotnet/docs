@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ServiceOperation" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceOperation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceOperation" />
+  <TypeSignature Language="F#" Value="type ServiceOperation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ServiceOperation.#ctor(System.String,System.Data.Services.Providers.ServiceOperationResultKind,System.Data.Services.Providers.ResourceType,System.Data.Services.Providers.ResourceSet,System.String,System.Collections.Generic.IEnumerable{System.Data.Services.Providers.ServiceOperationParameter})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, resultKind As ServiceOperationResultKind, resultType As ResourceType, resultSet As ResourceSet, method As String, parameters As IEnumerable(Of ServiceOperationParameter))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceOperation(System::String ^ name, System::Data::Services::Providers::ServiceOperationResultKind resultKind, System::Data::Services::Providers::ResourceType ^ resultType, System::Data::Services::Providers::ResourceSet ^ resultSet, System::String ^ method, System::Collections::Generic::IEnumerable&lt;System::Data::Services::Providers::ServiceOperationParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Providers.ServiceOperation : string * System.Data.Services.Providers.ServiceOperationResultKind * System.Data.Services.Providers.ResourceType * System.Data.Services.Providers.ResourceSet * string * seq&lt;System.Data.Services.Providers.ServiceOperationParameter&gt; -&gt; System.Data.Services.Providers.ServiceOperation" Usage="new System.Data.Services.Providers.ServiceOperation (name, resultKind, resultType, resultSet, method, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.CustomState" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomState As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CustomState { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomState : obj with get, set" Usage="System.Data.Services.Providers.ServiceOperation.CustomState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Services.Providers.ServiceOperation.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Method" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Method : string" Usage="System.Data.Services.Providers.ServiceOperation.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.MimeType" />
       <MemberSignature Language="VB.NET" Value="Public Property MimeType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MimeType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MimeType : string with get, set" Usage="System.Data.Services.Providers.ServiceOperation.MimeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Services.Providers.ServiceOperation.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ReadOnlyCollection(Of ServiceOperationParameter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Services::Providers::ServiceOperationParameter ^&gt; ^ Parameters { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Services::Providers::ServiceOperationParameter ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ServiceOperationParameter&gt;" Usage="System.Data.Services.Providers.ServiceOperation.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResourceSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceSet As ResourceSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourceSet ^ ResourceSet { System::Data::Services::Providers::ResourceSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceSet : System.Data.Services.Providers.ResourceSet" Usage="System.Data.Services.Providers.ServiceOperation.ResourceSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResultKind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultKind As ServiceOperationResultKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ServiceOperationResultKind ResultKind { System::Data::Services::Providers::ServiceOperationResultKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResultKind : System.Data.Services.Providers.ServiceOperationResultKind" Usage="System.Data.Services.Providers.ServiceOperation.ResultKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -222,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResultType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultType As ResourceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourceType ^ ResultType { System::Data::Services::Providers::ResourceType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResultType : System.Data.Services.Providers.ResourceType" Usage="System.Data.Services.Providers.ServiceOperation.ResultType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -242,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ServiceOperation.SetReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.SetReadOnly : unit -&gt; unit" Usage="serviceOperation.SetReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
